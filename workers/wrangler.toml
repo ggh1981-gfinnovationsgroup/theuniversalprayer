@@ -1,0 +1,11 @@
+name = "theuniversalprayer-subdomain-proxy"
+main = "subdomain-proxy.js"
+compatibility_date = "2025-01-01"
+
+# Replace YOUR_ACCOUNT_ID with your Cloudflare account ID
+# Find it at: dash.cloudflare.com → right sidebar
+account_id = "YOUR_ACCOUNT_ID"
+
+[[routes]]
+pattern = "*.theuniversalprayer.com/*"
+zone_name = "theuniversalprayer.com"

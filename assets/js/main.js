@@ -153,7 +153,15 @@ function buildCard(data, meta) {
 }
 
 function buildIntercessorUrl(subdomain) {
-  return `/intercesor/?intercesor=${subdomain}`;
+  const host = window.location.hostname;
+  // Local dev: use query params
+  if (host === 'localhost' || host === '127.0.0.1') {
+    return `/intercesor/?intercesor=${subdomain}`;
+  }
+  // Production: use subdomains (proxied via Cloudflare Worker with SSL)
+  const parts = host.split('.');
+  const baseDomain = parts.length >= 3 ? parts.slice(1).join('.') : host;
+  return `https://${subdomain}.${baseDomain}`;
 }
 
 // ── INTERCESSOR PAGE ───────────────────────────────

@@ -1,6 +1,15 @@
 # =============================================================
 # DNS Configurator for theuniversalprayer.com via Namecheap API
 # =============================================================
+# IMPORTANT: This script sets up the INITIAL DNS before migrating
+# to Cloudflare. Once Cloudflare nameservers are active, manage
+# DNS directly in the Cloudflare dashboard.
+#
+# Architecture:
+#   - Root domain: GitHub Pages (A records)
+#   - Subdomains: Cloudflare CNAME + Worker proxy (SSL handled by Cloudflare)
+#   - Worker: workers/subdomain-proxy.js
+#
 # Prerequisites:
 #   1. Enable Namecheap API: namecheap.com > Profile > Tools > API
 #   2. Whitelist your public IP in that same page
@@ -29,9 +38,15 @@ $records = @(
     @{ Host="@";             Type="A";     Address="185.199.110.153"; TTL=1800 },
     @{ Host="@";             Type="A";     Address="185.199.111.153"; TTL=1800 },
     # www
-    @{ Host="www";           Type="CNAME"; Address=$GitHubPages;      TTL=1800 }
-    # NOTE: subdomain CNAMEs removed — intercessors use query params (?intercesor=xxx)
-    # e.g. https://theuniversalprayer.com/intercesor/?intercesor=misericordia
+    @{ Host="www";           Type="CNAME"; Address=$GitHubPages;      TTL=1800 },
+    # Intercessor subdomains — CNAME to main domain, proxied via Cloudflare Worker
+    # The Worker (workers/subdomain-proxy.js) handles SSL and routes to correct content
+    @{ Host="padrepio";      Type="CNAME"; Address="theuniversalprayer.com"; TTL=1800 },
+    @{ Host="misericordia";  Type="CNAME"; Address="theuniversalprayer.com"; TTL=1800 },
+    @{ Host="guadalupe";     Type="CNAME"; Address="theuniversalprayer.com"; TTL=1800 },
+    @{ Host="sagradocorazon";Type="CNAME"; Address="theuniversalprayer.com"; TTL=1800 },
+    @{ Host="sanjose";       Type="CNAME"; Address="theuniversalprayer.com"; TTL=1800 },
+    @{ Host="fatima";        Type="CNAME"; Address="theuniversalprayer.com"; TTL=1800 }
 )
 
 # Build query parameters
