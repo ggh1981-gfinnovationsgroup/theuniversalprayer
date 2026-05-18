@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a1530"/>
+      <stop offset="100%" stop-color="#0a0d14"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="42%" r="35%">
+      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#glow)"/>
+  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.35"/>
+  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.2"/>
+  <!-- rays from center -->
+  <line x1="400" y1="160" x2="400" y2="80"  stroke="#c9a84c" stroke-width="2" stroke-opacity="0.25"/>
+  <line x1="400" y1="160" x2="480" y2="100" stroke="#c9a84c" stroke-width="1.5" stroke-opacity="0.18"/>
+  <line x1="400" y1="160" x2="320" y2="100" stroke="#c9a84c" stroke-width="1.5" stroke-opacity="0.18"/>
+  <!-- heart shape approximate with a circle + text -->
+  <circle cx="400" cy="190" r="72" fill="none" stroke="#c9a84c" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="400" y="208" text-anchor="middle" font-family="Georgia,serif" font-size="72" fill="#c9a84c" opacity="0.85">♱</text>
+  <text x="400" y="338" text-anchor="middle" font-family="Georgia,serif" font-size="32" fill="#e8c97a" letter-spacing="1">Divina Misericordia</text>
+  <text x="400" y="380" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#c9a84c" opacity="0.7" font-style="italic">Divine Mercy</text>
+  <text x="400" y="414" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#c9a84c" opacity="0.8" font-style="italic">«Jesús, en Ti confío»</text>
+  <line x1="290" y1="438" x2="510" y2="438" stroke="#c9a84c" stroke-width="0.6" stroke-opacity="0.4"/>
+  <text x="400" y="472" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#8a6e2f" letter-spacing="3">2ND SUNDAY OF EASTER</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a1e10"/>
+      <stop offset="100%" stop-color="#0a0d14"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="38%" r="38%">
+      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#glow)"/>
+  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.35"/>
+  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.2"/>
+  <!-- halo -->
+  <ellipse cx="400" cy="175" rx="80" ry="16" fill="none" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.5"/>
+  <!-- star-like rays -->
+  <circle cx="400" cy="175" r="55" fill="none" stroke="#c9a84c" stroke-width="0.8" stroke-opacity="0.3" stroke-dasharray="4 6"/>
+  <!-- silhouette -->
+  <text x="400" y="240" text-anchor="middle" font-family="Georgia,serif" font-size="80" fill="#c9a84c" opacity="0.8">☽</text>
+  <text x="400" y="342" text-anchor="middle" font-family="Georgia,serif" font-size="30" fill="#e8c97a" letter-spacing="1">Virgen de Guadalupe</text>
+  <text x="400" y="384" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#c9a84c" opacity="0.7" font-style="italic">Our Lady of Guadalupe</text>
+  <text x="400" y="416" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#c9a84c" opacity="0.6" font-style="italic">Emperatriz de las Américas</text>
+  <line x1="290" y1="440" x2="510" y2="440" stroke="#c9a84c" stroke-width="0.6" stroke-opacity="0.4"/>
+  <text x="400" y="474" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#8a6e2f" letter-spacing="3">FEAST DAY · DECEMBER 12</text>
+</svg>

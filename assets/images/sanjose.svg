@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#121a20"/>
+      <stop offset="100%" stop-color="#0a0d14"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="42%" r="35%">
+      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#glow)"/>
+  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.35"/>
+  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.2"/>
+  <!-- lily / staff symbol -->
+  <text x="400" y="235" text-anchor="middle" font-family="Georgia,serif" font-size="90" fill="#c9a84c" opacity="0.8">⚘</text>
+  <text x="400" y="340" text-anchor="middle" font-family="Georgia,serif" font-size="38" fill="#e8c97a" letter-spacing="2">San José</text>
+  <text x="400" y="383" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#c9a84c" opacity="0.7" font-style="italic">Saint Joseph</text>
+  <text x="400" y="415" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#c9a84c" opacity="0.6" font-style="italic">Custodio del Redentor</text>
+  <line x1="310" y1="440" x2="490" y2="440" stroke="#c9a84c" stroke-width="0.6" stroke-opacity="0.4"/>
+  <text x="400" y="474" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#8a6e2f" letter-spacing="3">FEAST DAY · MARCH 19</text>
+</svg>

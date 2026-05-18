@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#200d0d"/>
+      <stop offset="100%" stop-color="#0a0d14"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="42%" r="38%">
+      <stop offset="0%" stop-color="#c9404c" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#glow)"/>
+  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.35"/>
+  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.2"/>
+  <!-- Heart with flames suggestion -->
+  <circle cx="400" cy="185" r="70" fill="none" stroke="#c9404c" stroke-width="1.8" stroke-opacity="0.55"/>
+  <circle cx="400" cy="185" r="54" fill="none" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.3"/>
+  <!-- cross on top of heart -->
+  <text x="400" y="215" text-anchor="middle" font-family="Georgia,serif" font-size="80" fill="#c9404c" opacity="0.75">♡</text>
+  <text x="400" y="185" text-anchor="middle" font-family="Georgia,serif" font-size="38" fill="#c9a84c" opacity="0.9">✝</text>
+  <text x="400" y="338" text-anchor="middle" font-family="Georgia,serif" font-size="28" fill="#e8c97a" letter-spacing="1">Sagrado Corazón de Jesús</text>
+  <text x="400" y="380" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#c9a84c" opacity="0.7" font-style="italic">Sacred Heart of Jesus</text>
+  <text x="400" y="414" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#c9a84c" opacity="0.65" font-style="italic">«Sagrado Corazón de Jesús, confío en Ti»</text>
+  <line x1="250" y1="440" x2="550" y2="440" stroke="#c9a84c" stroke-width="0.6" stroke-opacity="0.4"/>
+  <text x="400" y="474" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#8a6e2f" letter-spacing="3">FRIDAY AFTER CORPUS CHRISTI</text>
+</svg>
