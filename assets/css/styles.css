@@ -451,6 +451,76 @@ body {
 }
 .btn-home:hover { background: var(--gold); color: var(--bg); }
 
+/* ── UNIVERSAL PRAYER SECTION ─────────────────────── */
+.universal-prayer-section {
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-surface) 50%, var(--bg) 100%);
+  padding: 3rem 1.25rem 4rem;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.universal-prayer-inner {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.universal-prayer-dedication {
+  text-align: center;
+  font-style: italic;
+  color: var(--white-dim);
+  font-size: 0.95rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.02em;
+}
+
+.universal-prayer-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2.5rem 2rem;
+  line-height: 1.9;
+  font-size: 1.05rem;
+  color: var(--white);
+}
+
+.universal-prayer-card p {
+  margin-bottom: 1.2rem;
+}
+
+.prayer-pause {
+  text-align: center;
+  color: var(--gold-dim);
+  font-size: 0.95rem;
+  margin: 1.5rem 0 !important;
+}
+
+.prayer-scripture {
+  border-left: 3px solid var(--gold-dim);
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  margin: 1.5rem 0;
+  color: var(--gold-light);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.prayer-closing {
+  text-align: center;
+  font-weight: 400;
+  color: var(--white-dim);
+  margin-bottom: 0.8rem !important;
+}
+
+.prayer-amen {
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--gold-light);
+  margin-top: 1.5rem !important;
+  letter-spacing: 0.04em;
+}
+
 /* ── FOOTER ───────────────────────────────────────── */
 .site-footer {
   border-top: 1px solid var(--border);

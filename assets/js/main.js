@@ -22,7 +22,9 @@ const i18n = {
     not_found_title:    'Intercessor not found',
     not_found_text:     'We could not find this intercessor. Please return to the home page.',
     go_home:            'Go Home',
-    footer_text:        'A free Catholic devotional resource. No ads. No tracking.',
+    footer_text:             'A free Catholic devotional resource. No ads. No tracking.',
+    universal_prayer_title:  'The Universal and Definitive Prayer',
+    universal_prayer_dedication: 'For every person who prays it — alone, as a couple, as a family or in a group',
   },
   es: {
     site_title:         'La Oración Universal',
@@ -39,7 +41,9 @@ const i18n = {
     not_found_title:    'Intercesor no encontrado',
     not_found_text:     'No pudimos encontrar este intercesor. Por favor regresa a la página principal.',
     go_home:            'Ir al inicio',
-    footer_text:        'Un recurso devocional católico gratuito. Sin anuncios. Sin rastreo.',
+    footer_text:             'Un recurso devocional católico gratuito. Sin anuncios. Sin rastreo.',
+    universal_prayer_title:  'La Oración Universal y Definitiva',
+    universal_prayer_dedication: 'Para toda persona que la rece — solo, en pareja, en familia o en grupo',
   },
 };
 
@@ -80,6 +84,11 @@ function setLanguage(lang) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (i18n[lang] && i18n[lang][key]) el.textContent = i18n[lang][key];
+  });
+
+  // Toggle bilingual prayer blocks
+  document.querySelectorAll('[data-lang]').forEach(el => {
+    el.style.display = el.getAttribute('data-lang') === lang ? 'block' : 'none';
   });
 
   // If intercessor is loaded, refresh dynamic content
