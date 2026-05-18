@@ -88,12 +88,15 @@ function setLanguage(lang) {
 
 // ── SUBDOMAIN DETECTION ────────────────────────────
 function getSubdomain() {
-  const host = window.location.hostname;                  // e.g. padrepio.theuniversalprayer.com
-  const parts = host.split('.');
-  if (parts.length >= 3) return parts[0].toLowerCase();  // 'padrepio'
-  // Dev shortcut: ?intercesor=padrepio
+  // Primary: query param ?intercesor=padrepio (GitHub Pages compatible)
   const params = new URLSearchParams(window.location.search);
-  return params.get('intercesor') || null;
+  const param = params.get('intercesor');
+  if (param) return param.toLowerCase();
+  // Fallback: true subdomain (e.g. padrepio.theuniversalprayer.com)
+  const host = window.location.hostname;
+  const parts = host.split('.');
+  if (parts.length >= 3) return parts[0].toLowerCase();
+  return null;
 }
 
 // ── PAGE DETECTION ────────────────────────────────
@@ -151,14 +154,12 @@ function buildCard(data, meta) {
 
 function buildIntercessorUrl(subdomain) {
   const host = window.location.hostname;
-  // Localhost / file dev
   if (host === 'localhost' || host === '127.0.0.1') {
     return `/intercesor/?intercesor=${subdomain}`;
   }
   const parts = host.split('.');
-  // Already on a subdomainpage — keep domain
   const baseDomain = parts.length >= 3 ? parts.slice(1).join('.') : host;
-  return `https://${subdomain}.${baseDomain}`;
+  return `https://${baseDomain}/intercesor/?intercesor=${subdomain}`;
 }
 
 // ── INTERCESSOR PAGE ───────────────────────────────
