@@ -1,0 +1,72 @@
+{
+  "id": "guadalupe",
+  "name": {
+    "es": "Virgen de Guadalupe",
+    "en": "Our Lady of Guadalupe"
+  },
+  "feast_day": {
+    "es": "12 de diciembre",
+    "en": "December 12"
+  },
+  "image": "../assets/images/guadalupe.jpg",
+  "prayer": {
+    "es": "Oh Virgen Inmaculada de Guadalupe, Madre del verdadero Dios, Madre nuestra, desde tu sagrado trono del Tepeyac extiendes tu protección a todos los que te invocan.\n\nEscucha nuestras oraciones, ampáranos en nuestras necesidades, consuélanos en nuestras tristezas y guíanos por el camino de tu amado Hijo Jesucristo.\n\nSantísima Virgen de Guadalupe, tú que te dignaste dejar tu imagen milagrosa en la tilma de Juan Diego, permanece siempre con nosotros y sé nuestra Madre. Amén.\n\nSanta María de Guadalupe, Emperatriz de las Américas, ruega por nosotros.",
+    "en": "O Immaculate Virgin of Guadalupe, Mother of the true God, our Mother, from your sacred throne at Tepeyac you extend your protection to all who call upon you.\n\nHear our prayers, help us in our needs, console us in our sorrows, and guide us on the path of your beloved Son Jesus Christ.\n\nMost Holy Virgin of Guadalupe, you who deigned to leave your miraculous image on the tilma of Juan Diego, remain always with us and be our Mother. Amen.\n\nHoly Mary of Guadalupe, Empress of the Americas, pray for us."
+  },
+  "history": {
+    "es": "En diciembre de 1531, apenas diez años después de la conquista española de México, la Virgen María se apareció cuatro veces a Juan Diego, un indígena chichimeca converso al cristianismo, en el cerro del Tepeyac, cerca de la Ciudad de México.\n\nEn la cuarta aparición, el 12 de diciembre, María le pidió que recogiera rosas en el cerro (un milagro, pues era invierno) y las llevara al obispo Juan de Zumárraga. Cuando Juan Diego abrió su tilma —la capa indígena— para mostrar las rosas al obispo, quedó impresa en ella la imagen de la Virgen con rasgos mestizos, vestida con los símbolos del cosmos azteca y cristiano.\n\nLa imagen original se conserva en la Basílica de Nuestra Señora de Guadalupe en México, la más visitada del mundo después de San Pedro en Roma. Nuestra Señora de Guadalupe es patrona de México, de toda América Latina y de las Américas. Es considerada la advocación mariana más popular del mundo con más de 20 millones de peregrinos anuales.",
+    "en": "In December 1531, just ten years after the Spanish conquest of Mexico, the Virgin Mary appeared four times to Juan Diego, an indigenous Chichimec convert to Christianity, on the hill of Tepeyac near present-day Mexico City.\n\nOn the fourth apparition, December 12th, Mary asked him to gather roses on the hill (a miracle, as it was winter) and bring them to Bishop Juan de Zumárraga. When Juan Diego opened his tilma — his indigenous cloak — to show the roses to the bishop, the image of the Virgin was imprinted on it, bearing mestizo features and dressed with symbols of both the Aztec cosmos and Christianity.\n\nThe original image is preserved at the Basilica of Our Lady of Guadalupe in Mexico City, the most visited in the world after St. Peter's in Rome. Our Lady of Guadalupe is patroness of Mexico, all of Latin America, and the Americas. She is considered the most popular Marian apparition in the world, drawing over 20 million pilgrims annually."
+  },
+  "novena": [
+    {
+      "day": 1,
+      "es": "Día 1 — Fe en Tu Intercesión\n\nVirgen de Guadalupe, Madre de todos los pueblos de América, acudo a ti con fe y confianza. Tú que dijiste a Juan Diego: «¿No estoy yo aquí que soy tu madre?», recuérdame en mis momentos de duda que nunca estoy solo.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 1 — Faith in Your Intercession\n\nVirgin of Guadalupe, Mother of all the peoples of the Americas, I come to you with faith and confidence. You who said to Juan Diego: 'Am I not here, who am your mother?', remind me in my moments of doubt that I am never alone.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 2,
+      "es": "Día 2 — Protección de la Familia\n\nSanta Madre de Guadalupe, protege a mi familia. Tú que eres Madre de todos, cubre con tu manto a cada uno de mis seres queridos. Que ninguno se aleje del amor de Dios.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 2 — Protection of the Family\n\nHoly Mother of Guadalupe, protect my family. You who are Mother of all, cover each of my loved ones with your mantle. May none of them stray from the love of God.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 3,
+      "es": "Día 3 — Los Pobres y Los que Sufren\n\nVirgen Morena, tú te apareciste a un indio pobre y humilde, mostrando Tu amor por los más pequeños. Intercede por los pobres, los enfermos y todos los que sufren en este mundo.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 3 — The Poor and Those Who Suffer\n\nDark Virgin, you appeared to a poor and humble Indian, showing Your love for the least ones. Intercede for the poor, the sick, and all who suffer in this world.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 4,
+      "es": "Día 4 — La Conversión de los Corazones\n\nNuestra Señora de Guadalupe, así como tu aparición convirtió millones de almas, intercede para que los corazones endurecidos se abran a Dios. Que tu imagen siga siendo fuente de conversión.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 4 — Conversion of Hearts\n\nOur Lady of Guadalupe, just as your apparition converted millions of souls, intercede that hardened hearts may open themselves to God. May your image continue to be a source of conversion.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 5,
+      "es": "Día 5 — La Paz\n\nMadre de Guadalupe, en un mundo lleno de conflictos, intercede por la paz. Que como tu aparición unió a españoles e indígenas en la fe, tu intercesión siga uniendo a los pueblos del mundo.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 5 — Peace\n\nMother of Guadalupe, in a world full of conflict, intercede for peace. Just as your apparition united Spaniards and indigenous peoples in faith, may your intercession continue to unite the peoples of the world.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 6,
+      "es": "Día 6 — Los Niños\n\nVirgen Santísima, patrona de los no nacidos y de todos los niños, protege a los más pequeños e inocentes. Que todo niño sea recibido con amor y que crezca en el conocimiento de Dios.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 6 — Children\n\nBlessed Virgin, patroness of the unborn and of all children, protect the smallest and most innocent. May every child be received with love and grow in the knowledge of God.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 7,
+      "es": "Día 7 — La Iglesia\n\nNuestra Señora de Guadalupe, Emperatriz de las Américas, protege a la Santa Iglesia. Intercede por el Papa, los obispos, sacerdotes y todos los consagrados a Dios. Que la Iglesia siga siendo luz del mundo.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 7 — The Church\n\nOur Lady of Guadalupe, Empress of the Americas, protect the Holy Church. Intercede for the Pope, bishops, priests, and all those consecrated to God. May the Church continue to be a light to the world.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 8,
+      "es": "Día 8 — Los Migrantes y Viajeros\n\nVirgen de Guadalupe, patrona de los que cruzan fronteras, protege a todos los migrantes y viajeros. Tú que comprendes el dolor del desplazamiento, acompaña a quienes buscan una vida mejor.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 8 — Migrants and Travelers\n\nVirgin of Guadalupe, patroness of those who cross borders, protect all migrants and travelers. You who understand the pain of displacement, accompany those who seek a better life.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 9,
+      "es": "Día 9 — La Gracia Pedida\n\nAmada Virgen de Guadalupe, en este último día de novena te presento mi petición especial. Tú que dijiste a Juan Diego que eres nuestra Madre, escucha el clamor de tu hijo/hija que te pide con humildad. Si es la voluntad de Dios, concédenos la gracia que hemos pedido.\n\nNuestra Señora de Guadalupe, ruega por nosotros.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 9 — The Grace We Seek\n\nBeloved Virgin of Guadalupe, on this last day of the novena I present my special petition to you. You who told Juan Diego that you are our Mother, hear the cry of your son/daughter who humbly asks you. If it is God's will, grant us the grace we have asked for.\n\nOur Lady of Guadalupe, pray for us.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    }
+  ],
+  "chaplet": {
+    "available": false,
+    "es": "",
+    "en": ""
+  }
+}

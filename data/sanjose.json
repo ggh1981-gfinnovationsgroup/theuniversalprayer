@@ -1,0 +1,72 @@
+{
+  "id": "sanjose",
+  "name": {
+    "es": "San José",
+    "en": "Saint Joseph"
+  },
+  "feast_day": {
+    "es": "19 de marzo (y 1 de mayo)",
+    "en": "March 19 (and May 1)"
+  },
+  "image": "../assets/images/sanjose.jpg",
+  "prayer": {
+    "es": "Oh San José, custodio del Redentor y esposo de la Virgen María, a ti que fuiste escogido entre todos los hombres para ser el padre adoptivo del Hijo de Dios en la tierra, te imploro con confianza.\n\nFuiste el hombre de silencio, de trabajo y de oración. En ti confió el Padre Celestial su mayor tesoro. Intercede por nosotros ante Jesús, tu Hijo adoptivo, y pídele que nos conceda lo que necesitamos.\n\nSan José, patrono de la Iglesia universal, de los trabajadores, de los moribundos y de la familia, acompáñanos en este camino de la vida. Amén.",
+    "en": "O Saint Joseph, guardian of the Redeemer and spouse of the Virgin Mary, you who were chosen above all men to be the adoptive father of the Son of God on earth, I implore you with confidence.\n\nYou were a man of silence, work and prayer. The Heavenly Father entrusted to you His greatest treasure. Intercede for us before Jesus, your adoptive Son, and ask Him to grant us what we need.\n\nSaint Joseph, patron of the universal Church, of workers, of the dying, and of the family, accompany us on this journey of life. Amen."
+  },
+  "history": {
+    "es": "San José es una de las figuras más veneradas del catolicismo, aunque el Evangelio no recoge ninguna de sus palabras. Todo lo que sabemos de él proviene de los relatos de la infancia de Jesús en Mateo y Lucas.\n\nEra carpintero de Nazaret, descendiente de la casa de David. Estaba desposado con María cuando supo por el ángel que ella estaba embarazada del Espíritu Santo. En lugar de repudiarla, decidió protegerla y aceptó el plan de Dios con plena confianza y obediencia.\n\nLlevó a la Sagrada Familia a Egipto para huir de Herodes, la trajo de regreso a Nazaret y encontró al niño Jesús en el Templo. Es el custodio y protector del Hijo de Dios.\n\nEl Papa Francisco le dedicó el año especial 2020-2021, publicando la exhortación apostólica «Patris Corde» (Con corazón de padre). San José tiene dos fiestas litúrgicas: el 19 de marzo (San José Esposo de María) y el 1 de mayo (San José Obrero).",
+    "en": "Saint Joseph is one of the most venerated figures in Catholicism, though the Gospels record none of his words. Everything we know about him comes from the infancy narratives in Matthew and Luke.\n\nHe was a carpenter from Nazareth, a descendant of the house of David. He was betrothed to Mary when he learned through the angel that she was with child by the Holy Spirit. Rather than divorce her, he chose to protect her and accepted God's plan with complete trust and obedience.\n\nHe led the Holy Family to Egypt to escape Herod, brought them back to Nazareth, and found the boy Jesus in the Temple. He is the guardian and protector of the Son of God.\n\nPope Francis dedicated the special year 2020–2021 to him, publishing the apostolic exhortation 'Patris Corde' (With a Father's Heart). Saint Joseph has two liturgical feasts: March 19 (Saint Joseph, Husband of Mary) and May 1 (Saint Joseph the Worker)."
+  },
+  "novena": [
+    {
+      "day": 1,
+      "es": "Día 1 — San José, Hombre de Fe\n\nSan José, que creíste en la palabra del ángel sin ver ni comprender todo, fortalece mi fe cuando enfrento lo que no entiendo. Enseñame a confiar en Dios incluso en la oscuridad.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 1 — Saint Joseph, Man of Faith\n\nSaint Joseph, who believed the word of the angel without seeing or understanding everything, strengthen my faith when I face what I do not understand. Teach me to trust in God even in the darkness.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 2,
+      "es": "Día 2 — Protección del Hogar y la Familia\n\nSan José, custodio de la Sagrada Familia, extiende tu protección sobre mi hogar y mi familia. Que en nuestra casa reine la paz, el amor y la presencia de Dios.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 2 — Protection of the Home and Family\n\nSaint Joseph, guardian of the Holy Family, extend your protection over my home and family. May peace, love, and the presence of God reign in our house.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 3,
+      "es": "Día 3 — El Trabajo Digno\n\nSan José Obrero, patrono de todos los trabajadores, intercede por quienes buscan trabajo y por quienes lo tienen pero sufren en él. Que el trabajo de cada persona sea digno y sirva al bien común.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 3 — Dignified Work\n\nSaint Joseph the Worker, patron of all workers, intercede for those who seek employment and for those who have work but suffer in it. May every person's work be dignified and serve the common good.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 4,
+      "es": "Día 4 — El Silencio y la Escucha\n\nSan José, maestro del silencio interior, enseñame a callar mis propios pensamientos para poder escuchar la voz de Dios. Que aprenda a orar no sólo con palabras sino con el corazón atento.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 4 — Silence and Listening\n\nSaint Joseph, master of interior silence, teach me to still my own thoughts so I can hear the voice of God. May I learn to pray not only with words but with an attentive heart.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 5,
+      "es": "Día 5 — La Obediencia a Dios\n\nSan José, que obedeciste inmediatamente cada mensaje del ángel, intercede para que yo también sea pronto a obedecerla voluntad de Dios, incluso cuando no la entiendo completamente.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 5 — Obedience to God\n\nSaint Joseph, who immediately obeyed every message of the angel, intercede that I too may be quick to obey the will of God, even when I do not fully understand it.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 6,
+      "es": "Día 6 — Los Padres y Madres\n\nSan José, modelo perfecto de padre, intercede por todos los padres y madres del mundo. Que con tu ejemplo aprendan a amar, proteger y guiar a sus hijos hacia Dios.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 6 — Fathers and Mothers\n\nSaint Joseph, perfect model of a father, intercede for all fathers and mothers in the world. May they learn from your example to love, protect, and guide their children toward God.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 7,
+      "es": "Día 7 — Los Moribundos\n\nSan José, patrono de la buena muerte, que exhalaste tu último aliento rodeado de Jesús y María, intercede por los moribundos. Que en su última hora sientan la paz de Dios y la presencia amorosa de María.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 7 — The Dying\n\nSaint Joseph, patron of a happy death, who breathed your last breath surrounded by Jesus and Mary, intercede for the dying. May in their final hour they feel the peace of God and the loving presence of Mary.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 8,
+      "es": "Día 8 — La Iglesia\n\nSan José, patrono de la Iglesia universal, protege a la Iglesia de Cristo en el mundo. Que con tu fortaleza silenciosa la Iglesia siga siendo fiel a su misión de llevar a Jesús a todas las almas.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 8 — The Church\n\nSaint Joseph, patron of the universal Church, protect the Church of Christ in the world. May with your silent strength the Church continue to be faithful to its mission of bringing Jesus to every soul.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 9,
+      "es": "Día 9 — La Gracia Pedida\n\nGlorioso San José, en este último día te confío mi petición más profunda. Tú que fuiste el hombre en quien Dios depositó la mayor confianza, presenta ante Jesús mi necesidad. Que si es la voluntad de Dios, me sea concedida esta gracia.\n\nSan José, ruega por nosotros.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 9 — The Grace We Seek\n\nGlorious Saint Joseph, on this last day I entrust to you my deepest petition. You who were the man in whom God placed His greatest trust, present my need before Jesus. If it is God's will, may this grace be granted to me.\n\nSaint Joseph, pray for us.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    }
+  ],
+  "chaplet": {
+    "available": false,
+    "es": "",
+    "en": ""
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "id": "sagradocorazon",
+  "name": {
+    "es": "Sagrado Corazón de Jesús",
+    "en": "Sacred Heart of Jesus"
+  },
+  "feast_day": {
+    "es": "Viernes después del Corpus Christi",
+    "en": "Friday after Corpus Christi"
+  },
+  "image": "../assets/images/sagradocorazon.jpg",
+  "prayer": {
+    "es": "Oh dulcísimo Jesús, cuyo desbordante amor por los hombres es todavía tan incomprensiblemente ignorado, ven a mis labios esta sencilla oración de consagración y reparación.\n\nSagrado Corazón de Jesús, humildemente postrado ante Ti, vengo a hacerte reparación de todas las indiferencias e injurias con que los hombres ofenden a Tu amante Corazón. Contrito de mis propias culpas y principalmente movido de gran amor hacia Ti, propongo firmemente nunca más ofenderte.\n\nTe ofrezco, juntamente con mis pobres satisfacciones, las que Te ofreció la Virgen Santísima María y todos los Santos y Justos; prometiéndote sinceramente que, con Tu ayuda y gracia, procuraré en lo futuro dar buen ejemplo de cristiano y hacer todo lo posible por la salvación de las almas. Amén.",
+    "en": "O most sweet Jesus, Whose overflowing charity for men is so little known and appreciated, come before us in this simple prayer of consecration and reparation.\n\nSacred Heart of Jesus, humbly prostrate before You, I come to make reparation for all the coldness and neglect with which men repay Your loving Heart. Contrite for my own sins and moved by great love for You, I firmly resolve never to offend You again.\n\nI offer You, together with my poor acts of reparation, those which the most holy Virgin Mary and all the Saints and Just have offered You; sincerely promising that, with Your help and grace, I will in future strive to give a good Christian example and do all that lies in my power for the salvation of souls. Amen."
+  },
+  "history": {
+    "es": "La devoción al Sagrado Corazón de Jesús es una de las más arraigadas en el catolicismo. Aunque tiene antecedentes medievales, su forma moderna fue promovida por Santa Margarita María Alacoque (1647–1690), religiosa de la Orden de la Visitación en Paray-le-Monial, Francia.\n\nEntre 1673 y 1675, Jesús se apareció a Margarita María y le reveló Su Sagrado Corazón, símbolo de Su amor infinito por la humanidad. Le pidió que propagara esta devoción, que incluyera la Comunión del primer viernes de mes, la Hora Santa del jueves y la Consagración al Sagrado Corazón.\n\nEl Papa Pío IX estableció la fiesta del Sagrado Corazón en 1856 para toda la Iglesia. Santa Margarita María fue canonizada en 1920. El Acto de Consagración de la humanidad al Sagrado Corazón fue promovido por el Papa León XIII en 1899 con la encíclica «Annum Sacrum».\n\nHoy el Sagrado Corazón es uno de los símbolos más universalmente reconocidos de la fe católica, representando el amor misericordioso de Cristo por cada persona.",
+    "en": "Devotion to the Sacred Heart of Jesus is one of the most deep-rooted in Catholicism. While it has medieval antecedents, its modern form was promoted by Saint Margaret Mary Alacoque (1647–1690), a religious of the Order of the Visitation in Paray-le-Monial, France.\n\nBetween 1673 and 1675, Jesus appeared to Margaret Mary and revealed to her His Sacred Heart, symbol of His infinite love for humanity. He asked her to spread this devotion, which included Communion on the first Friday of the month, the Holy Hour on Thursdays, and Consecration to the Sacred Heart.\n\nPope Pius IX established the feast of the Sacred Heart in 1856 for the whole Church. Saint Margaret Mary was canonized in 1920. The Act of Consecration of humanity to the Sacred Heart was promoted by Pope Leo XIII in 1899 with the encyclical 'Annum Sacrum.'\n\nToday the Sacred Heart is one of the most universally recognized symbols of the Catholic faith, representing Christ's merciful love for every person."
+  },
+  "novena": [
+    {
+      "day": 1,
+      "es": "Día 1 — El Amor del Sagrado Corazón\n\nAmado Jesús, fuente de todo amor, hoy medito en Tu Sagrado Corazón que arde con amor infinito por cada uno de nosotros. Ayúdame a comprender, aunque sea una pequeña fracción, de la profundidad de Tu amor.\n\nSagrado Corazón de Jesús, infunde en mí ese mismo amor con el que Tú amas al Padre y a cada alma humana. Amén.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 1 — The Love of the Sacred Heart\n\nDear Jesus, source of all love, today I meditate on Your Sacred Heart that burns with infinite love for each one of us. Help me to understand, even if only a tiny fraction, of the depth of Your love.\n\nSacred Heart of Jesus, pour into me that same love with which You love the Father and every human soul. Amen.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 2,
+      "es": "Día 2 — La Reparación\n\nSagrado Corazón de Jesús, me duele saber que Tu amor es tan frecuentemente ignorado y rechazado. Hoy quiero hacer reparación por todas las ofensas cometidas contra Ti. Acepta mi amor como pequeño consuelo de Tu Corazón herido.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 2 — Reparation\n\nSacred Heart of Jesus, it pains me to know that Your love is so often ignored and rejected. Today I wish to make reparation for all the offenses committed against You. Accept my love as a small consolation for Your wounded Heart.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 3,
+      "es": "Día 3 — La Humildad\n\nJesús manso y humilde de Corazón, enséñame Tu humildad. Que aprenda de Ti a no buscar honores sino a servir, a no buscar poder sino a amar. Que mi corazón cada día se parezca más al Tuyo.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 3 — Humility\n\nJesus, meek and humble of Heart, teach me Your humility. May I learn from You not to seek honors but to serve, not to seek power but to love. May my heart each day become more like Yours.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 4,
+      "es": "Día 4 — La Eucaristía\n\nSagrado Corazón de Jesús, que nos das Tu Cuerpo y Sangre en la Eucaristía, aumenta mi devoción al Santísimo Sacramento. Que cada vez que Te reciba en la Comunión, mi corazón se encienda más en Tu amor.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 4 — The Eucharist\n\nSacred Heart of Jesus, who give us Your Body and Blood in the Eucharist, increase my devotion to the Most Blessed Sacrament. May each time I receive You in Communion, my heart be set more ablaze with Your love.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 5,
+      "es": "Día 5 — El Perdón\n\nJesús misericordioso, que perdonaste a tus verdugos desde la Cruz, enseñame a perdonar a quienes me han herido. Que el amor de Tu Sagrado Corazón ablande mi corazón y lo libere del resentimiento.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 5 — Forgiveness\n\nMerciful Jesus, who forgave Your executioners from the Cross, teach me to forgive those who have hurt me. May the love of Your Sacred Heart soften my heart and free it from resentment.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 6,
+      "es": "Día 6 — Las Familias\n\nSagrado Corazón de Jesús, que santificaste el hogar de Nazaret, santifica también los hogares de nuestras familias. Que Tu amor reine en cada familia, trayendo paz, unidad y santidad.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 6 — Families\n\nSacred Heart of Jesus, who sanctified the home of Nazareth, sanctify also the homes of our families. May Your love reign in every family, bringing peace, unity, and holiness.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 7,
+      "es": "Día 7 — Los Sacerdotes\n\nSagrado Corazón de Jesús, sumo y eterno Sacerdote, protege y santifica a todos los sacerdotes. Que su corazón se encienda en amor hacia Ti y que sean auténticos pastores de almas según Tu Corazón.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 7 — Priests\n\nSacred Heart of Jesus, supreme and eternal Priest, protect and sanctify all priests. May their hearts be set ablaze with love for You and may they be true shepherds of souls according to Your Heart.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 8,
+      "es": "Día 8 — Los Enfermos y Moribundos\n\nSagrado Corazón de Jesús, que sanaste a los enfermos y consolaste a los que sufrían, ten piedad de los enfermos y moribundos. Que en su hora más difícil sientan el calor de Tu amor y la cercanía de Tu presencia.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 8 — The Sick and Dying\n\nSacred Heart of Jesus, who healed the sick and consoled those who suffered, have mercy on the sick and dying. May in their most difficult hour they feel the warmth of Your love and the nearness of Your presence.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 9,
+      "es": "Día 9 — La Consagración\n\nSagrado Corazón de Jesús, en este último día me consagro a Ti. Me doy enteramente: mi corazón, mi mente, mi voluntad y todo mi ser. Que ya no viva yo, sino que sea Tú quien vivas en mí.\n\nSagrado Corazón de Jesús, confío en Ti.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 9 — Consecration\n\nSacred Heart of Jesus, on this last day I consecrate myself to You. I give myself entirely: my heart, my mind, my will, and my whole being. May it no longer be I who live, but You who live in me.\n\nSacred Heart of Jesus, I trust in You.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    }
+  ],
+  "chaplet": {
+    "available": true,
+    "es": "Coronilla del Sagrado Corazón de Jesús\n\nSe reza usando un rosario o una sencilla corona de 33 cuentas (en honor a los 33 años de la vida de Jesús).\n\nComienza:\n«Venid, adoremos y postrémonos ante Dios; lloremos ante el Señor que nos creó.»\n\nEn las cuentas grandes (6 veces):\n«Sagrado Corazón de Jesús, en Ti confío.»\n\nEn las cuentas pequeñas (10 veces cada decena):\n«Jesús manso y humilde de Corazón, haz mi corazón semejante al Tuyo.»\n\nFinaliza:\n«Oh dulcísimo Corazón de Jesús, haz que Te ame cada vez más.» (3 veces)\n\n«Sagrado Corazón de Jesús, que Tú reines.»",
+    "en": "Chaplet of the Sacred Heart of Jesus\n\nPrayed using a rosary or a simple crown of 33 beads (in honor of the 33 years of Jesus's life).\n\nBegin:\n'Come, let us worship and bow down; let us kneel before the Lord our Maker.'\n\nOn the large beads (6 times):\n'Sacred Heart of Jesus, I trust in You.'\n\nOn the small beads (10 times each decade):\n'Jesus, meek and humble of Heart, make my heart like unto Yours.'\n\nConclude:\n'O most sweet Heart of Jesus, grant that I may ever love You more and more.' (3 times)\n\n'Sacred Heart of Jesus, may You reign.'"
+  }
+}

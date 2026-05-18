@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found | The Universal Prayer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body style="display:flex;flex-direction:column;min-height:100dvh;align-items:center;justify-content:center;text-align:center;padding:2rem;">
+  <span style="font-size:3.5rem;color:#c9a84c;">✝</span>
+  <h1 style="font-family:'Playfair Display',Georgia,serif;font-size:2.5rem;color:#e8c97a;margin:1rem 0 0.5rem;">404</h1>
+  <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:1.4rem;color:#c9a84c;margin-bottom:1rem;">Page Not Found</h2>
+  <p style="color:#a09890;max-width:400px;margin-bottom:2rem;">
+    The page you are looking for does not exist or has been moved.<br />
+    <em>La página que buscas no existe o fue movida.</em>
+  </p>
+  <a href="/" style="border:1px solid #c9a84c;color:#c9a84c;text-decoration:none;padding:0.65rem 1.75rem;border-radius:99px;font-size:0.9rem;letter-spacing:0.06em;transition:all 0.25s ease;">
+    ← Return Home / Volver al Inicio
+  </a>
+  <script>
+    // GitHub Pages SPA redirect: if ?p= is set, navigate to that path
+    (function() {
+      const p = new URLSearchParams(window.location.search).get('p');
+      if (p) window.location.replace('/' + p);
+    })();
+  </script>
+</body>
+</html>

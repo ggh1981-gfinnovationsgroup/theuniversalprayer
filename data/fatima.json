@@ -1,0 +1,72 @@
+{
+  "id": "fatima",
+  "name": {
+    "es": "Virgen de Fátima",
+    "en": "Our Lady of Fátima"
+  },
+  "feast_day": {
+    "es": "13 de mayo",
+    "en": "May 13"
+  },
+  "image": "../assets/images/fatima.jpg",
+  "prayer": {
+    "es": "Oh Virgen de Fátima, Reina del Santo Rosario, Reina de la Paz, desde el Cielo desciendes a visitarnos y a guiarnos al Corazón de tu Hijo Jesús.\n\nTú que en Fátima pediste la oración, la penitencia y la consagración, acepta nuestra plegaria humilde. Convierte los corazones de los pecadores, trae la paz al mundo, protege a tu Iglesia.\n\nOh Señora de Fátima, que anunciaste las victorias que el Inmaculado Corazón alcanzaría en el mundo, apresura ese tiempo en que el Corazón de tu Hijo y el tuyo triunfen en las almas. Amén.",
+    "en": "O Virgin of Fatima, Queen of the Holy Rosary, Queen of Peace, from Heaven you come down to visit us and to lead us to the Heart of your Son Jesus.\n\nYou who at Fatima asked for prayer, penance, and consecration, accept our humble petition. Convert the hearts of sinners, bring peace to the world, protect your Church.\n\nO Lady of Fatima, who announced the victories that the Immaculate Heart would achieve in the world, hasten the time when the Heart of your Son and yours will triumph in souls. Amen."
+  },
+  "history": {
+    "es": "Entre el 13 de mayo y el 13 de octubre de 1917, la Virgen María se apareció seis veces a tres niños pastores en Fátima, Portugal: Lucía dos Santos (10 años) y sus primos Francisco (9) y Jacinta Marto (7).\n\nMaría se presentó como la «Señora del Rosario» y pidió la oración del Rosario, la penitencia por los pecadores y la consagración de Rusia a su Inmaculado Corazón. Reveló tres secretos: una visión del infierno, la predicción de la Segunda Guerra Mundial y el intento de asesinato de un obispo vestido de blanco (interpretado como el Papa Juan Pablo II).\n\nEl 13 de octubre de 1917, unos 70.000 peregrinos presenciaron el llamado «Milagro del Sol», un fenómeno solar extraordinario verificado por testigos laicos, periodistas y escépticos.\n\nFrancisco y Jacinta fueron beatificados en 2000 y canonizados en 2017 por el Papa Francisco. Lucía ingresó al convento y murió en 2005. La devoción a Nuestra Señora de Fátima se extendió por todo el mundo católico y es una de las más importantes apariciones marianas aprobadas por la Iglesia.",
+    "en": "Between May 13 and October 13, 1917, the Virgin Mary appeared six times to three young shepherds in Fátima, Portugal: Lúcia dos Santos (age 10) and her cousins Francisco (9) and Jacinta Marto (7).\n\nMary presented herself as the 'Lady of the Rosary' and asked for the prayer of the Rosary, penance for sinners, and the consecration of Russia to her Immaculate Heart. She revealed three secrets: a vision of Hell, a prediction of World War II, and an attempted assassination of a bishop dressed in white (interpreted as Pope John Paul II).\n\nOn October 13, 1917, approximately 70,000 pilgrims witnessed the so-called 'Miracle of the Sun,' an extraordinary solar phenomenon verified by secular witnesses, journalists, and skeptics.\n\nFrancisco and Jacinta were beatified in 2000 and canonized in 2017 by Pope Francis. Lúcia entered the convent and died in 2005. Devotion to Our Lady of Fátima spread throughout the Catholic world and is one of the most important Marian apparitions approved by the Church."
+  },
+  "novena": [
+    {
+      "day": 1,
+      "es": "Día 1 — El Mensaje de Fátima\n\nVirgen de Fátima, en este primer día medito en el mensaje que trajiste al mundo: oración, penitencia y conversión. Ayúdame a abrir mi corazón a este mensaje y a vivirlo cada día.\n\nReza el Santo Rosario o al menos una decena.",
+      "en": "Day 1 — The Message of Fátima\n\nVirgin of Fátima, on this first day I meditate on the message you brought to the world: prayer, penance, and conversion. Help me to open my heart to this message and to live it every day.\n\nPray the Holy Rosary or at least one decade."
+    },
+    {
+      "day": 2,
+      "es": "Día 2 — La Oración del Rosario\n\nNuestra Señora del Rosario, que pediste con insistencia este rezo, ayúdame a descubrir la belleza y el poder del Rosario. Que esta oración sencilla y profunda se convierta en parte central de mi vida.\n\nReza el Santo Rosario o al menos una decena.",
+      "en": "Day 2 — The Prayer of the Rosary\n\nOur Lady of the Rosary, who insisted on this prayer, help me to discover the beauty and power of the Rosary. May this simple yet profound prayer become a central part of my life.\n\nPray the Holy Rosary or at least one decade."
+    },
+    {
+      "day": 3,
+      "es": "Día 3 — La Penitencia\n\nVirgen de Fátima, que pediste penitencia por los pecadores, ayúdame a ofrecer mis sacrificios cotidianos al Señor en reparación por mis pecados y los del mundo. Que mis sufrimientos sean útiles para la salvación de las almas.\n\nReza el Santo Rosario o al menos una decena.",
+      "en": "Day 3 — Penance\n\nVirgin of Fátima, who asked for penance for sinners, help me to offer my daily sacrifices to the Lord in reparation for my sins and those of the world. May my sufferings be useful for the salvation of souls.\n\nPray the Holy Rosary or at least one decade."
+    },
+    {
+      "day": 4,
+      "es": "Día 4 — Tu Inmaculado Corazón\n\nSantísima Virgen, tú prometiste que al final tu Inmaculado Corazón triunfaría. Consagro mi corazón al tuyo. Que bajo tu manto materno me proteja del mal y crezca en el amor a Dios.\n\nReza el Santo Rosario o al menos una decena.",
+      "en": "Day 4 — Your Immaculate Heart\n\nMost Holy Virgin, you promised that in the end your Immaculate Heart would triumph. I consecrate my heart to yours. May under your maternal mantle I be protected from evil and grow in love for God.\n\nPray the Holy Rosary or at least one decade."
+    },
+    {
+      "day": 5,
+      "es": "Día 5 — La Paz en el Mundo\n\nSeñora de Fátima, que traes mensajes de paz, intercede por el mundo convulsionado en conflictos. Que los corazones de los líderes se ablanden y busquen la paz. Que Tu Corazón Inmaculado sea el refugio de todos.\n\nReza el Santo Rosario o al menos una decena.",
+      "en": "Day 5 — Peace in the World\n\nLady of Fátima, who bring messages of peace, intercede for a world convulsed in conflicts. May the hearts of leaders be softened and seek peace. May Your Immaculate Heart be the refuge of all.\n\nPray the Holy Rosary or at least one decade."
+    },
+    {
+      "day": 6,
+      "es": "Día 6 — Los Niños y Jóvenes\n\nVirgen de Fátima, que te apareciste a tres niños pequeños y los hiciste mensajeros del cielo, protege a los niños y jóvenes del mundo. Que crezcan en la fe y se conviertan en apóstoles de amor.\n\nReza el Santo Rosario o al menos una decena.",
+      "en": "Day 6 — Children and Youth\n\nVirgin of Fátima, who appeared to three young children and made them messengers of Heaven, protect the children and youth of the world. May they grow in faith and become apostles of love.\n\nPray the Holy Rosary or at least one decade."
+    },
+    {
+      "day": 7,
+      "es": "Día 7 — La Conversión de los Pecadores\n\nMadre misericordiosa, que mostraste el infierno a los pastorcillos para que rezaran por los pecadores, intercede por todos los que se han alejado de Dios. Que tu amor maternal los traiga de regreso al corazón del Padre.\n\nReza el Santo Rosario o al menos una decena.",
+      "en": "Day 7 — Conversion of Sinners\n\nMerciful Mother, who showed Hell to the little shepherds so they would pray for sinners, intercede for all those who have strayed from God. May your maternal love bring them back to the heart of the Father.\n\nPray the Holy Rosary or at least one decade."
+    },
+    {
+      "day": 8,
+      "es": "Día 8 — La Iglesia y el Papa\n\nNuestra Señora de Fátima, que mostraste el sufrimiento de la Iglesia y del Papa, intercede por la Iglesia en este tiempo. Que el Papa tenga sabiduría, fortaleza y protección divina en su misión pastoral.\n\nReza el Santo Rosario o al menos una decena.",
+      "en": "Day 8 — The Church and the Pope\n\nOur Lady of Fátima, who showed the suffering of the Church and the Pope, intercede for the Church in this time. May the Pope have wisdom, strength, and divine protection in his pastoral mission.\n\nPray the Holy Rosary or at least one decade."
+    },
+    {
+      "day": 9,
+      "es": "Día 9 — El Triunfo Final\n\nVirgen Santísima de Fátima, en este último día te pido que tu promesa se cumpla pronto: que tu Corazón Inmaculado triunfe. Te presento también mi petición especial, confiando en tu amor de Madre.\n\nNuestra Señora de Fátima, ruega por nosotros.\n\nReza el Santo Rosario o al menos una decena.",
+      "en": "Day 9 — The Final Triumph\n\nMost Holy Virgin of Fátima, on this last day I ask that your promise be fulfilled soon: that your Immaculate Heart will triumph. I also present to you my special petition, trusting in your Mother's love.\n\nOur Lady of Fátima, pray for us.\n\nPray the Holy Rosary or at least one decade."
+    }
+  ],
+  "chaplet": {
+    "available": true,
+    "es": "El Santo Rosario — Pedido por Nuestra Señora de Fátima\n\nNuestra Señora de Fátima pidió específicamente la oración del Santo Rosario en cada una de sus apariciones. Este es el chaplet que Ella misma recomendó.\n\nCómo rezarlo:\n1. Comienza con el Credo de los Apóstoles.\n2. Reza 1 Padre Nuestro.\n3. Reza 3 Ave Marías (por las virtudes de fe, esperanza y caridad).\n4. Reza 1 Gloria.\n5. Anuncia el primer misterio y reza 1 Padre Nuestro.\n6. Reza 10 Ave Marías meditando en el misterio.\n7. Reza 1 Gloria y la Oración de Fátima:\n   «Oh Jesús mío, perdona nuestros pecados, líbranos del fuego del infierno, lleva al Cielo a todas las almas, especialmente a las más necesitadas de tu Misericordia.»\n8. Repite los pasos 5-7 para cada uno de los 5 misterios.\n9. Al final: «Dios te salve, Reina y Madre de misericordia...»\n\nLos 20 Misterios del Rosario:\nGozosos: Anunciación, Visitación, Nacimiento, Presentación, Hallazgo en el Templo.\nLuminosos: Bautismo, Bodas de Caná, Anuncio del Reino, Transfiguración, Institución de la Eucaristía.\nDolorosos: Agonía en el Huerto, Flagelación, Coronación de Espinas, Camino al Calvario, Crucifixión.\nGloriosos: Resurrección, Ascensión, Pentecostés, Asunción, Coronación de María.",
+    "en": "The Holy Rosary — Requested by Our Lady of Fátima\n\nOur Lady of Fátima specifically asked for the prayer of the Holy Rosary in each of her apparitions. This is the chaplet She Herself recommended.\n\nHow to pray it:\n1. Begin with the Apostles' Creed.\n2. Pray 1 Our Father.\n3. Pray 3 Hail Marys (for the virtues of faith, hope, and charity).\n4. Pray 1 Glory Be.\n5. Announce the first mystery and pray 1 Our Father.\n6. Pray 10 Hail Marys while meditating on the mystery.\n7. Pray 1 Glory Be and the Fatima Prayer:\n   'O my Jesus, forgive us our sins, save us from the fires of hell, lead all souls to Heaven, especially those most in need of Your Mercy.'\n8. Repeat steps 5-7 for each of the 5 mysteries.\n9. At the end: 'Hail, Holy Queen, Mother of Mercy...'\n\nThe 20 Mysteries of the Rosary:\nJoyful: Annunciation, Visitation, Nativity, Presentation, Finding in the Temple.\nLuminous: Baptism, Wedding at Cana, Proclamation of the Kingdom, Transfiguration, Institution of the Eucharist.\nSorrowful: Agony in the Garden, Scourging, Crowning with Thorns, Carrying of the Cross, Crucifixion.\nGlorious: Resurrection, Ascension, Pentecost, Assumption, Coronation of Mary."
+  }
+}

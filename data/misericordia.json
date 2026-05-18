@@ -1,0 +1,72 @@
+{
+  "id": "misericordia",
+  "name": {
+    "es": "Divina Misericordia",
+    "en": "Divine Mercy"
+  },
+  "feast_day": {
+    "es": "Segundo domingo de Pascua",
+    "en": "Second Sunday of Easter"
+  },
+  "image": "../assets/images/misericordia.jpg",
+  "prayer": {
+    "es": "Oh Sangre y Agua que brotaste del Corazón de Jesús como fuente de Misericordia para nosotros, confío en Ti.\n\nJesús, Rey de Misericordia, eres la esperanza de las almas que buscan refugio en Tu amor. En Ti confiamos, pues eres la fuente de toda gracia y misericordia.\n\nJesús misericordioso, que dijiste: «El que venga a Mí no lo rechazaré», ten piedad de nosotros y del mundo entero. Que Tu misericordia sea glorificada en todas las almas. Amén.",
+    "en": "O Blood and Water which gushed forth from the Heart of Jesus as a fount of mercy for us, I trust in You.\n\nJesus, King of Mercy, You are the hope of souls seeking refuge in Your love. In You we trust, for You are the source of all grace and mercy.\n\nMerciful Jesus, who said: 'Whoever comes to Me I will not reject,' have mercy on us and on the whole world. May Your mercy be glorified in every soul. Amen."
+  },
+  "history": {
+    "es": "Santa Faustina Kowalska (1905–1938), religiosa polaca de las Hermanas de la Virgen de la Misericordia, recibió visiones de Jesús misericordioso a partir de 1931. En ellas, Jesús le pidió que propagara la devoción a Su Divina Misericordia y que pintara la imagen del Señor con los rayos rojo y blanco, con la inscripción: «Jesús, en Ti confío».\n\nLe dictó el rezo de la Coronilla de la Divina Misericordia, pidiéndole que se rezara especialmente a las tres de la tarde —la Hora de la Misericordia— en recuerdo de su agonía en la Cruz.\n\nSanta Faustina fue canonizada en el año 2000 por Juan Pablo II, quien también estableció el Domingo de la Divina Misericordia como el segundo domingo de Pascua. Él mismo fue llamado «el Papa de la Misericordia».",
+    "en": "Saint Faustina Kowalska (1905–1938), a Polish nun of the Sisters of Our Lady of Mercy, received visions of the merciful Jesus beginning in 1931. In them, Jesus asked her to spread the devotion to His Divine Mercy and to have the image of the Lord painted with red and white rays, bearing the inscription: 'Jesus, I trust in You.'\n\nHe dictated to her the Chaplet of Divine Mercy, asking that it be prayed especially at three in the afternoon — the Hour of Mercy — in remembrance of His agony on the Cross.\n\nSaint Faustina was canonized in 2000 by John Paul II, who also established Divine Mercy Sunday as the second Sunday of Easter. He himself was called 'the Pope of Mercy.'"
+  },
+  "novena": [
+    {
+      "day": 1,
+      "es": "Día 1 — Los Pecadores\n\nHoy tráeme a toda la humanidad, especialmente a todos los pecadores, y sumérgelos en el océano de Mi Misericordia. De esta manera Me consolarás con la amarga tristeza que Me sumerge cuando contemplo la pérdida de las almas.\n\nPadre Eterno, vuelve Tu mirada misericordiosa hacia toda la humanidad y especialmente hacia los pobres pecadores, que están incluidos en el misericordioso Corazón de Jesús. Por la dolorosa Pasión de Jesús, muéstrales Tu misericordia, para que glorifiquen el poder de Tu misericordia por toda la eternidad. Amén.",
+      "en": "Day 1 — All of Mankind, Especially Sinners\n\nToday bring to Me all mankind, especially all sinners, and immerse them in the ocean of My mercy. In this way you will console Me in the bitter grief into which the loss of souls plunges Me.\n\nEternal Father, turn Your merciful gaze upon all mankind and especially upon poor sinners, all enclosed in the Most Compassionate Heart of Jesus. For the sake of His sorrowful Passion, show them Your mercy, that they may praise the omnipotence of Your mercy forever and ever. Amen."
+    },
+    {
+      "day": 2,
+      "es": "Día 2 — Las Almas de los Sacerdotes y Religiosos\n\nHoy tráeme las almas de los sacerdotes y religiosos, y sumérgelas en Mi insondable misericordia. Fueron ellos quienes me dieron la fortaleza para soportar Mi amarga Pasión; a través de ellos, como a través de canales, Mi misericordia fluye a la humanidad.\n\nPadre Eterno, vuelve Tu mirada misericordiosa hacia la grey de los sacerdotes y religiosos. Bendícelos con Tu amor infinito; para estos elegidos Tuyos, dales la fortaleza de Tu gracia. Amén.",
+      "en": "Day 2 — The Souls of Priests and Religious\n\nToday bring to Me the souls of priests and religious, and immerse them in My unfathomable mercy. It was they who gave Me the strength to endure My bitter Passion; through them, as through channels, My mercy flows out upon mankind.\n\nEternal Father, turn Your merciful gaze upon the company of chosen ones in Your vineyard — upon the souls of priests and religious; and endow them with the strength of Your blessing. Amen."
+    },
+    {
+      "day": 3,
+      "es": "Día 3 — Las Almas Devotas y Fieles\n\nHoy tráeme todas las almas devotas y fieles, y sumérgelas en el océano de Mi misericordia. Estas almas me consolaron en la vía dolorosa; eran una gota de consuelo en medio del mar de amargura.\n\nPadre Eterno, vuelve Tu mirada misericordiosa hacia las almas fieles como herencia de Tu Hijo. Por la dolorosa Pasión de Jesús, concédeles Tu bendición y rodéalas con Tu cuidado continuo, para que nunca pierdan Tu amor ni Tu gracia. Amén.",
+      "en": "Day 3 — All Devout and Faithful Souls\n\nToday bring to Me all devout and faithful souls, and immerse them in the ocean of My mercy. These souls brought Me consolation on the Way of the Cross. They were a drop of consolation in the midst of an ocean of bitterness.\n\nEternal Father, turn Your merciful gaze upon faithful souls, as upon the inheritance of Your Son. For the sake of His sorrowful Passion, grant them Your blessing and surround them with Your constant care. Amen."
+    },
+    {
+      "day": 4,
+      "es": "Día 4 — Los Que No Creen en Dios y Los que No Me Conocen\n\nHoy tráeme a los que no creen en Dios y a los que aún no me conocen. También pensé en ellos durante Mi amarga Pasión, y su futuro celo consoló Mi Corazón. Sumérgelos en el océano de Mi misericordia.\n\nPadre Eterno, vuelve Tu mirada misericordiosa hacia aquellos que no creen en Ti, y sobre los que aún no Te conocen; pero que también están incluidos en el misericordioso Corazón de Jesús. Atráelos a la luz de Tu Evangelio. Amén.",
+      "en": "Day 4 — Those Who Do Not Believe in God\n\nToday bring to Me those who do not believe in God and those who do not yet know Me. I was thinking also of them during My bitter Passion, and their future zeal consoled My Heart. Immerse them in the ocean of My mercy.\n\nEternal Father, turn Your merciful gaze upon those who do not believe in You, and upon those who do not yet know You, but who are also enclosed in the Most Compassionate Heart of Jesus. Draw them to the light of the Gospel. Amen."
+    },
+    {
+      "day": 5,
+      "es": "Día 5 — Las Almas de Los Herejes y Apóstatas\n\nHoy tráeme las almas de los herejes y apóstatas, y sumérgelas en el abismo de Mi misericordia. Durante Mi amarga Pasión se desgarraron Mi Cuerpo y Mi Corazón, es decir, Mi Iglesia. A medida que regresan a la unidad de la Iglesia, Mis heridas sanan.\n\nPadre Eterno, vuelve Tu mirada misericordiosa hacia las almas de los herejes y apóstatas. No mires sus errores, sino el amor de Tu propio Hijo y Su amarga Pasión. Amén.",
+      "en": "Day 5 — The Souls of Heretics and Schismatics\n\nToday bring to Me the souls of heretics and schismatics, and immerse them in the abyss of My mercy. During My bitter Passion they tore at My Body and Heart, that is, My Church. As they return to unity with the Church, My wounds heal.\n\nEternal Father, turn Your merciful gaze upon the souls of heretics and schismatics. Do not look upon their errors, but upon the love of Your own Son and upon His bitter Passion. Amen."
+    },
+    {
+      "day": 6,
+      "es": "Día 6 — Las Almas Mansas y Humildes, y Las Almas de los Niños\n\nHoy tráeme las almas mansas y humildes y las almas de los niños, y sumérgelas en Mi misericordia. Estas almas se parecen más a Mi Corazón; ellas me fortalecieron durante Mi amarga agonía. Las contemplé como ángeles terrenos que vigilarán Mis altares.\n\nPadre Eterno, vuelve Tu mirada misericordiosa hacia las almas mansas, humildes y hacia las almas de los niños. Amén.",
+      "en": "Day 6 — The Meek and Humble Souls and the Souls of Children\n\nToday bring to Me the meek and humble souls and the souls of little children, and immerse them in My mercy. These souls most closely resemble My Heart. They strengthened Me during My bitter agony. I saw them as earthly Angels who would keep vigil at My altars.\n\nEternal Father, turn Your merciful gaze upon meek souls, upon humble souls, and upon little children. Amen."
+    },
+    {
+      "day": 7,
+      "es": "Día 7 — Las Almas que Veneran y Glorifican Mi Misericordia\n\nHoy tráeme las almas que especialmente veneran y glorifican Mi misericordia, y sumérgelas en Mi misericordia. Estas almas me condolieron más en Mi Pasión y en el más profundo sentido agradaron Mi Corazón.\n\nPadre Eterno, vuelve Tu mirada misericordiosa hacia las almas que glorifican y veneran Tu mayor atributo, es decir, Tu insondable misericordia. Amén.",
+      "en": "Day 7 — Souls Who Especially Venerate and Glorify My Mercy\n\nToday bring to Me the souls who especially venerate and glorify My mercy, and immerse them in My mercy. These souls sorrowed most over My Passion and entered most deeply into My spirit. They are living reflections of My compassionate Heart.\n\nEternal Father, turn Your merciful gaze upon the souls who glorify and venerate Your greatest attribute, that of Your fathomless mercy. Amen."
+    },
+    {
+      "day": 8,
+      "es": "Día 8 — Las Almas del Purgatorio\n\nHoy tráeme las almas que están en la prisión del purgatorio, y sumérgelas en el abismo de Mi misericordia. Que los torrentes de Mi Sangre refresquen su ardiente sed. Todas estas almas son muy amadas por Mí; están pagando su deuda con Mi justicia.\n\nPadre Eterno, vuelve Tu mirada misericordiosa hacia las almas del purgatorio, que están encerradas en Tu misericordioso Corazón. Aplica sobre ellas la expiación de Jesús. Amén.",
+      "en": "Day 8 — The Souls Detained in Purgatory\n\nToday bring to Me the souls who are in the prison of Purgatory, and immerse them in the abyss of My mercy. Let the torrents of My Blood cool down their scorching flames. All these souls are greatly loved by Me; they are making retribution to My justice.\n\nEternal Father, turn Your merciful gaze upon the souls suffering in Purgatory, who are enfolded in the Most Compassionate Heart of Jesus. Apply to them the atonement of Jesus. Amen."
+    },
+    {
+      "day": 9,
+      "es": "Día 9 — Las Almas Tibias\n\nHoy tráeme las almas tibias, y sumérgelas en el abismo de Mi misericordia. Estas almas herían más amargamente Mi Corazón. Mi alma sufrió la más horrible náusea en el Getsemaní a causa de las almas tibias.\n\nPadre Eterno, vuelve Tu mirada misericordiosa hacia las almas tibias que están encerradas en el misericordioso Corazón de Jesús. Padre, ten misericordia de ellas. Amén.",
+      "en": "Day 9 — Lukewarm Souls\n\nToday bring to Me the lukewarm souls, and immerse them in the abyss of My mercy. These souls wound My Heart most painfully. My soul suffered the most dreadful loathing in the Garden of Olives because of lukewarm souls.\n\nEternal Father, turn Your merciful gaze upon lukewarm souls, who are nonetheless enclosed in the Most Compassionate Heart of Jesus. Father, have mercy upon them. Amen."
+    }
+  ],
+  "chaplet": {
+    "available": true,
+    "es": "Coronilla de la Divina Misericordia\n\nSe reza con el rosario normal. Jesús se la dictó a Santa Faustina en 1935.\n\nComienza:\nUn Padre Nuestro, un Ave María y el Credo.\n\nEn las cuentas del Padre Nuestro (5 veces):\n«Padre Eterno, Te ofrezco el Cuerpo y la Sangre, el Alma y la Divinidad de Tu amadísimo Hijo, Nuestro Señor Jesucristo, en expiación de nuestros pecados y los del mundo entero.»\n\nEn las cuentas del Ave María (10 veces cada decena):\n«Por Su dolorosa Pasión, ten misericordia de nosotros y del mundo entero.»\n\nFinaliza (3 veces):\n«Dios Santo, Dios Poderoso, Dios Eterno, ten misericordia de nosotros y del mundo entero.»\n\nOración final (opcional):\n«Oh Sangre y Agua que brotaste del Corazón de Jesús como fuente de misericordia para nosotros, confío en Ti.»",
+    "en": "Chaplet of Divine Mercy\n\nPrayed on a regular rosary. Jesus dictated it to Saint Faustina in 1935.\n\nBegin:\nOne Our Father, one Hail Mary, and the Apostles' Creed.\n\nOn the Our Father beads (5 times):\n'Eternal Father, I offer You the Body and Blood, Soul and Divinity of Your dearly beloved Son, Our Lord Jesus Christ, in atonement for our sins and those of the whole world.'\n\nOn the Hail Mary beads (10 times each decade):\n'For the sake of His sorrowful Passion, have mercy on us and on the whole world.'\n\nConclude (3 times):\n'Holy God, Holy Mighty One, Holy Immortal One, have mercy on us and on the whole world.'\n\nClosing prayer (optional):\n'O Blood and Water, which gushed forth from the Heart of Jesus as a fount of mercy for us, I trust in You.'"
+  }
+}

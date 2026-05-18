@@ -1,0 +1,72 @@
+{
+  "id": "padrepio",
+  "name": {
+    "es": "Padre Pío",
+    "en": "Padre Pio"
+  },
+  "feast_day": {
+    "es": "23 de septiembre",
+    "en": "September 23"
+  },
+  "image": "../assets/images/padrepio.jpg",
+  "prayer": {
+    "es": "Oh Jesús, pleno de gracia y amor, víctima por los pecadores, golpeado sin piedad por nuestras iniquidades, acepta la oración de quien Te implora humildemente, que seas exaltado en el corazón de todos.\n\nSanto Padre Pío de Pietrelcina, intercede por nosotros ante el trono de la Divina Misericordia. Tú que llevaste las llagas de Cristo en tu propio cuerpo, que sufriste con amor, que oraste sin descanso: eleva nuestras súplicas al Señor.\n\nPor tus intercesiones y méritos, alcánzanos la gracia que con humildad pedimos, si es conforme a la santa voluntad de Dios. Amén.",
+    "en": "O Jesus, full of grace and love, victim for sinners, struck mercilessly for our iniquities, accept the prayer of one who humbly implores You to be exalted in every heart.\n\nHoly Padre Pio of Pietrelcina, intercede for us before the throne of Divine Mercy. You who bore the wounds of Christ in your own body, who suffered with love, who prayed without ceasing: lift our petitions to the Lord.\n\nThrough your intercessions and merits, obtain for us the grace we humbly ask, if it is in accord with the holy will of God. Amen."
+  },
+  "history": {
+    "es": "Francesco Forgione nació el 25 de mayo de 1887 en Pietrelcina, Italia. Desde niño mostró una vida de oración extraordinaria. A los 15 años ingresó a los Capuchinos, tomando el nombre de fray Pío.\n\nEl 20 de septiembre de 1918, mientras rezaba ante un crucifijo, recibió los estigmas —las llagas de Cristo en manos, pies y costado— que llevaría por 50 años. Su vida estuvo marcada por la oración, la confesión y el sufrimiento ofrecido.\n\nFundó la Casa de Alivio del Sufrimiento, un hospital en San Giovanni Rotondo. Millones de peregrinos acudieron a él en vida. Falleció el 23 de septiembre de 1968.\n\nFue canonizado por el Papa Juan Pablo II el 16 de junio de 2002. Su intercesión sigue siendo una de las más invocadas en el mundo católico.",
+    "en": "Francesco Forgione was born on May 25, 1887, in Pietrelcina, Italy. From childhood he showed an extraordinary life of prayer. At 15 he entered the Capuchins, taking the name Friar Pio.\n\nOn September 20, 1918, while praying before a crucifix, he received the stigmata — the wounds of Christ on hands, feet and side — which he would bear for 50 years. His life was marked by prayer, the confessional, and suffering offered to God.\n\nHe founded the Casa Sollievo della Sofferenza, a hospital in San Giovanni Rotondo. Millions of pilgrims sought him out during his lifetime. He died on September 23, 1968.\n\nHe was canonized by Pope John Paul II on June 16, 2002. His intercession remains one of the most invoked in the Catholic world."
+  },
+  "novena": [
+    {
+      "day": 1,
+      "es": "Día 1 — La Confianza en Dios\n\nAmado Padre Pío, maestro de oración y confianza en Dios, te pido que intercedas por mí en este primer día de novena. Ayúdame a abandonarme completamente en los brazos de la Divina Providencia.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 1 — Trust in God\n\nDear Padre Pio, master of prayer and trust in God, I ask you to intercede for me on this first day of the novena. Help me to abandon myself completely into the arms of Divine Providence.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 2,
+      "es": "Día 2 — La Paciencia en el Sufrimiento\n\nPadre Pío, que llevaste las llagas de Cristo con amor y paciencia, enséñame a ofrecer mis sufrimientos como ofrenda a Dios. Que cada dolor que experimente sea unido al sacrificio de Jesús.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 2 — Patience in Suffering\n\nPadre Pio, who bore the wounds of Christ with love and patience, teach me to offer my sufferings as an offering to God. May every pain I experience be united to the sacrifice of Jesus.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 3,
+      "es": "Día 3 — La Humildad\n\nSanto Padre Pío, que siendo tan grande te considerabas el más pequeño, intercede para que yo también aprenda la verdadera humildad. Que busque la gloria de Dios y no la mía propia.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 3 — Humility\n\nHoly Padre Pio, who being so great considered yourself the least, intercede that I too may learn true humility. May I seek the glory of God and not my own.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 4,
+      "es": "Día 4 — La Fe Viva\n\nPadre Pío, cuya fe movía montañas y curaba enfermos, fortalece mi fe. En los momentos de duda y oscuridad, recuérdame que Dios nunca nos abandona y que Su amor es infinito.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 4 — Living Faith\n\nPadre Pio, whose faith moved mountains and healed the sick, strengthen my faith. In moments of doubt and darkness, remind me that God never abandons us and that His love is infinite.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 5,
+      "es": "Día 5 — El Amor a la Eucaristía\n\nAmado Padre Pío, que celebrabas la Misa con lágrimas y profunda devoción, ayúdame a acercarme con mayor reverencia y amor al Santísimo Sacramento. Que Jesús Eucarístico sea el centro de mi vida.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 5 — Love for the Eucharist\n\nDear Padre Pio, who celebrated Mass with tears and deep devotion, help me to approach the Most Blessed Sacrament with greater reverence and love. May the Eucharistic Jesus be the center of my life.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 6,
+      "es": "Día 6 — La Conversión de los Pecadores\n\nPadre Pío, que pasaste horas y horas en el confesionario devolviendo almas a Dios, intercede por los pecadores que se han alejado del Señor. Que tu ejemplo de misericordia inspire conversiones.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 6 — Conversion of Sinners\n\nPadre Pio, who spent hours and hours in the confessional returning souls to God, intercede for sinners who have strayed from the Lord. May your example of mercy inspire conversions.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 7,
+      "es": "Día 7 — La Devoción a María\n\nPadre Pío, que amabas a la Virgen María con ternura de hijo, enséñame a acercarme a Nuestra Señora. Que a través de María me acerque más a su Hijo Jesús.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 7 — Devotion to Mary\n\nPadre Pio, who loved the Virgin Mary with a son's tenderness, teach me to draw closer to Our Lady. May through Mary I draw ever nearer to her Son Jesus.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 8,
+      "es": "Día 8 — La Caridad con el Prójimo\n\nSanto Padre Pío, que fundaste el hospital para aliviar el sufrimiento humano, intercede para que yo también sea instrumento de caridad y alivio para quienes me rodean.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 8 — Charity toward Others\n\nHoly Padre Pio, who founded a hospital to relieve human suffering, intercede that I too may be an instrument of charity and relief to those around me.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 9,
+      "es": "Día 9 — La Gracia Pedida\n\nAmado Padre Pío, en este último día de nuestra novena te presento con toda confianza la gracia especial que deseo obtener. Sabes lo que mi corazón necesita. Si es conforme a la voluntad de Dios, intercede para que me sea concedida.\n\nPadre Pío, reza por nosotros.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 9 — The Grace We Seek\n\nDear Padre Pio, on this last day of our novena I present to you with full confidence the special grace I desire to obtain. You know what my heart needs. If it is in accord with the will of God, intercede that it may be granted to me.\n\nPadre Pio, pray for us.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    }
+  ],
+  "chaplet": {
+    "available": true,
+    "es": "Coronilla de las Llagas de Padre Pío\n\nEsta coronilla se reza usando un rosario normal. Comienza con el Credo de los Apóstoles.\n\nEn las cuentas del Padre Nuestro:\n«Por tus sagradas llagas, Padre Pío, aleja de nosotros el dolor y la tristeza.»\n\nEn las cuentas del Ave María:\n«Padre Pío, cubierto de las llagas de Cristo, sana nuestras almas.»\n\nAl final de cada decena:\n«Padre Pío de Pietrelcina, ruega por nosotros que recurrimos a ti.»\n\nFinaliza con 3 veces:\n«Gracias, Padre Pío, por tu intercesión y tu amor por las almas.»",
+    "en": "Chaplet of the Wounds of Padre Pio\n\nThis chaplet is prayed using a regular rosary. Begin with the Apostles' Creed.\n\nOn the Our Father beads:\n'Through your sacred wounds, Padre Pio, take from us pain and sorrow.'\n\nOn the Hail Mary beads:\n'Padre Pio, covered in the wounds of Christ, heal our souls.'\n\nAt the end of each decade:\n'Padre Pio of Pietrelcina, pray for us who have recourse to you.'\n\nConclude with 3 times:\n'Thank you, Padre Pio, for your intercession and your love for souls.'"
+  }
+}
