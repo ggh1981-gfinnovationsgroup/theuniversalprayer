@@ -153,13 +153,7 @@ function buildCard(data, meta) {
 }
 
 function buildIntercessorUrl(subdomain) {
-  const host = window.location.hostname;
-  if (host === 'localhost' || host === '127.0.0.1') {
-    return `/intercesor/?intercesor=${subdomain}`;
-  }
-  const parts = host.split('.');
-  const baseDomain = parts.length >= 3 ? parts.slice(1).join('.') : host;
-  return `https://${baseDomain}/intercesor/?intercesor=${subdomain}`;
+  return `/intercesor/?intercesor=${subdomain}`;
 }
 
 // ── INTERCESSOR PAGE ───────────────────────────────
