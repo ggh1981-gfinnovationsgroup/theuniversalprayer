@@ -968,3 +968,180 @@ body {
   color: var(--gold-light);
   font-size: 1rem;
 }
+
+/* ── CHAPLET PLAYER ─────────────────────────────── */
+.chaplet-player {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.75rem 1.5rem;
+}
+.cp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+.cp-step-label {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--gold-light);
+  letter-spacing: 0.04em;
+  flex: 1;
+}
+.cp-step-count {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+.cp-progress {
+  height: 3px;
+  background: rgba(201,168,76,0.15);
+  border-radius: 99px;
+  overflow: hidden;
+}
+.cp-progress-fill {
+  height: 100%;
+  background: var(--gold);
+  border-radius: 99px;
+  transition: width 0.35s ease;
+}
+.cp-body {
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+.cp-count-badge {
+  display: inline-block;
+  background: rgba(201,168,76,0.12);
+  border: 1px solid rgba(201,168,76,0.32);
+  color: var(--gold);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  padding: 0.18rem 0.9rem;
+  border-radius: 99px;
+}
+.cp-text {
+  font-size: 1.08rem;
+  color: var(--text);
+  line-height: 1.75;
+  max-width: 580px;
+  margin: 0 auto;
+}
+.cp-text br + br { display: block; content: ''; margin-top: 0.5rem; }
+.cp-nav {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  padding-top: 0.25rem;
+}
+.cp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(201,168,76,0.1);
+  border: 1px solid rgba(201,168,76,0.35);
+  color: var(--gold-light);
+  padding: 0.55rem 1.4rem;
+  border-radius: 99px;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: all var(--transition);
+  font-family: var(--font-sans);
+}
+.cp-btn:hover:not(:disabled) {
+  background: rgba(201,168,76,0.22);
+  border-color: rgba(201,168,76,0.6);
+  color: var(--white);
+}
+.cp-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+.cp-btn.cp-next {
+  background: rgba(201,168,76,0.18);
+  border-color: rgba(201,168,76,0.5);
+  font-weight: 600;
+}
+@media (max-width: 480px) {
+  .chaplet-player { padding: 1.25rem 1rem; }
+  .cp-text { font-size: 1rem; }
+  .cp-btn { padding: 0.5rem 1rem; font-size: 0.82rem; }
+}
+
+/* ── SEGUNDA DEVOCIÓN DEL DÍA — dinámica ── */
+.featured-second {
+  --sec-rgb: 30, 140, 30;
+  --sec-light: #a0e8a0;
+  background: linear-gradient(135deg, rgba(var(--sec-rgb), 0.12) 0%, rgba(10,13,20,0) 60%);
+  border-top: 1px solid rgba(var(--sec-rgb), 0.18);
+  border-bottom: 1px solid rgba(var(--sec-rgb), 0.13);
+  padding: 2rem 1.25rem;
+}
+.featured-second-image-wrap {
+  flex-shrink: 0;
+  width: 130px;
+  height: 195px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(var(--sec-rgb), 0.32);
+  box-shadow: 0 4px 24px rgba(var(--sec-rgb), 0.18);
+}
+.featured-second-badge {
+  display: inline-block;
+  background: rgba(var(--sec-rgb), 0.16);
+  border: 1px solid rgba(var(--sec-rgb), 0.38);
+  color: var(--sec-light);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.75rem;
+  border-radius: 99px;
+  width: fit-content;
+}
+.featured-second-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: var(--sec-light);
+  line-height: 1.2;
+}
+.featured-second-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(var(--sec-rgb), 0.14);
+  border: 1px solid rgba(var(--sec-rgb), 0.45);
+  color: var(--sec-light);
+  text-decoration: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 99px;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  margin-top: 0.4rem;
+  width: fit-content;
+  transition: all var(--transition);
+}
+.featured-second-btn:hover {
+  background: rgba(var(--sec-rgb), 0.28);
+  color: var(--white);
+  border-color: rgba(var(--sec-rgb), 0.65);
+}
+@media (max-width: 600px) {
+  .featured-second .featured-mercy-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+  .featured-second-image-wrap {
+    width: 100%;
+    height: 200px;
+    align-self: stretch;
+  }
+}

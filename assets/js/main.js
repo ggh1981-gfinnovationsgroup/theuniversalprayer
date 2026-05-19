@@ -171,6 +171,8 @@ async function initHomePage() {
   const grid = document.getElementById('intercessorsGrid');
   if (!grid) return;
 
+  initFeaturedSecond(); // fire independently, no await
+
   for (const meta of INTERCESSORS) {
     try {
       const data = await loadIntercessorData(meta.id);
@@ -178,6 +180,89 @@ async function initHomePage() {
     } catch {
       // Skip intercessors whose JSON isn't ready yet
     }
+  }
+}
+
+// ── SEGUNDA DEVOCIÓN DEL DÍA ───────────────────────
+function hexToRgb(hex) {
+  const m = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  return m ? `${parseInt(m[1], 16)}, ${parseInt(m[2], 16)}, ${parseInt(m[3], 16)}` : '30, 140, 30';
+}
+
+function lightenColor(hex, amount = 120) {
+  const m = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  if (!m) return '#a0e8a0';
+  const r = Math.min(255, parseInt(m[1], 16) + amount);
+  const g = Math.min(255, parseInt(m[2], 16) + amount);
+  const b = Math.min(255, parseInt(m[3], 16) + amount);
+  return `rgb(${r}, ${g}, ${b})`;
+}
+
+function firstSentences(text, maxLen) {
+  const para = (text || '').split(/\n\n/)[0] || text || '';
+  if (para.length <= maxLen) return para;
+  const trimmed = para.substring(0, maxLen);
+  const lastSpace = trimmed.lastIndexOf(' ');
+  return (lastSpace > 0 ? trimmed.substring(0, lastSpace) : trimmed) + '…';
+}
+
+async function initFeaturedSecond() {
+  const section = document.getElementById('featuredSecond');
+  if (!section) return;
+
+  // All intercessors except the primary (misericordia)
+  const candidates = INTERCESSORS.filter(i => i.id !== 'misericordia');
+
+  // Rotate by calendar day — changes each day
+  const dayIndex = Math.floor(Date.now() / 86400000);
+  const meta = candidates[dayIndex % candidates.length];
+
+  try {
+    const data = await loadIntercessorData(meta.id);
+    const lang = currentLang;
+
+    // Dynamic color theming
+    const rgb   = hexToRgb(meta.color);
+    const light = lightenColor(meta.color, 120);
+    section.style.setProperty('--sec-rgb', rgb);
+    section.style.setProperty('--sec-light', light);
+
+    const hasChaplet = meta.chaplet && data.chaplet && data.chaplet.available;
+    const btnEs = hasChaplet ? '📿 Rezar la Coronilla ahora' : '🙏 Rezar la Novena ahora';
+    const btnEn = hasChaplet ? '📿 Pray the Chaplet now'    : '🙏 Pray the Novena now';
+
+    const descEs = firstSentences(data.history.es, 190);
+    const descEn = firstSentences(data.history.en, 190);
+
+    section.innerHTML = `
+      <div class="featured-mercy-inner">
+        <div class="featured-second-image-wrap">
+          <img src="${data.image}" alt="${data.name.es}" class="featured-mercy-img" loading="eager"/>
+        </div>
+        <div class="featured-mercy-content">
+          <span class="featured-second-badge" data-lang="es">✦ Devoción del Día</span>
+          <span class="featured-second-badge" data-lang="en" style="display:none">✦ Today's Devotion</span>
+          <h2 class="featured-second-title" data-lang="es">${data.name.es}</h2>
+          <h2 class="featured-second-title" data-lang="en" style="display:none">${data.name.en}</h2>
+          <p class="featured-mercy-quote" data-lang="es">✦ Fiesta: ${data.feast_day.es}</p>
+          <p class="featured-mercy-quote" data-lang="en" style="display:none">✦ Feast: ${data.feast_day.en}</p>
+          <p class="featured-mercy-text" data-lang="es">${descEs}</p>
+          <p class="featured-mercy-text" data-lang="en" style="display:none">${descEn}</p>
+          <a href="/intercesor/?intercesor=${meta.id}" class="featured-second-btn">
+            <span data-lang="es">${btnEs}</span>
+            <span data-lang="en" style="display:none">${btnEn}</span>
+          </a>
+        </div>
+      </div>`;
+
+    // Apply active language visibility
+    section.querySelectorAll('[data-lang]').forEach(el => {
+      el.style.display = el.getAttribute('data-lang') === currentLang ? '' : 'none';
+    });
+
+    section.style.display = '';
+  } catch {
+    // If load fails, leave section hidden
   }
 }
 
@@ -303,19 +388,8 @@ function renderIntercessorContent(data) {
     renderNovenaDay(data, currentDay);
   }
 
-  // Chaplet
-  const chapletTextEl  = document.getElementById('chapletText');
-  const noChapletEl    = document.getElementById('noChaplet');
-  if (chapletTextEl && noChapletEl) {
-    if (data.chaplet && data.chaplet.available && data.chaplet[lang]) {
-      chapletTextEl.innerHTML = paragraphify(data.chaplet[lang]);
-      chapletTextEl.style.display = 'block';
-      noChapletEl.style.display = 'none';
-    } else {
-      chapletTextEl.style.display = 'none';
-      noChapletEl.style.display = 'block';
-    }
-  }
+  // Chaplet player
+  initChapletPlayer(data);
 
   // Novena support panel (prayers accordion)
   renderNovenaSupportPanel(data);
@@ -326,6 +400,289 @@ function paragraphify(text) {
     .split(/\n{2,}/)
     .map(p => `<p>${p.replace(/\n/g, '<br />')}</p>`)
     .join('');
+}
+
+// ── CHAPLET PLAYER ─────────────────────────────────
+let chapletSteps = [];
+let chapletCurrentStep = 0;
+
+function getChapletSteps(id, lang) {
+  const p = PRAYERS[lang];
+  const L = lang === 'es';
+
+  const pn    = { label: L ? 'Padre Nuestro'       : 'Our Father',        text: p.pn,    count: 1,  bead: 'large' };
+  const am    = { label: L ? 'Ave María'            : 'Hail Mary',         text: p.am,    count: 1,  bead: 'small' };
+  const am3   = { label: L ? 'Ave María × 3'        : 'Hail Mary × 3',     text: p.am,    count: 3,  bead: 'small' };
+  const am10  = { label: L ? 'Ave María × 10'       : 'Hail Mary × 10',    text: p.am,    count: 10, bead: 'small' };
+  const gloria= { label: L ? 'Gloria'               : 'Glory Be',          text: p.gloria,count: 1,  bead: 'none'  };
+  const credo = { label: L ? 'Credo'                : "Apostles' Creed",   text: p.credo, count: 1,  bead: 'none'  };
+  const cruz  = { label: L ? 'Señal de la Cruz'     : 'Sign of the Cross',
+    text: L ? 'En el nombre del Padre, del Hijo y del Espíritu Santo. Amén.'
+            : 'In the name of the Father, and of the Son, and of the Holy Spirit. Amen.',
+    count: 1, bead: 'none' };
+
+  // ── DIVINA MISERICORDIA ───────────────────────
+  if (id === 'misericordia') {
+    const large = { label: '', text: L
+      ? '«Padre Eterno, Te ofrezco el Cuerpo y la Sangre, el Alma y la Divinidad de Tu amadísimo Hijo, Nuestro Señor Jesucristo, en expiación de nuestros pecados y los del mundo entero.»'
+      : '«Eternal Father, I offer You the Body and Blood, Soul and Divinity of Your dearly beloved Son, Our Lord Jesus Christ, in atonement for our sins and those of the whole world.»', count: 1, bead: 'large' };
+    const small = { label: '', text: L
+      ? '«Por Su dolorosa Pasión,\nten misericordia de nosotros\ny del mundo entero.»'
+      : '«For the sake of His sorrowful Passion,\nhave mercy on us\nand on the whole world.»', count: 10, bead: 'small' };
+    const closing = { label: L ? 'Oración Final × 3' : 'Closing Prayer × 3', text: L
+      ? '«Dios Santo, Dios Poderoso, Dios Eterno,\nten misericordia de nosotros\ny del mundo entero.»'
+      : '«Holy God, Holy Mighty One, Holy Immortal One,\nhave mercy on us\nand on the whole world.»', count: 3, bead: 'none' };
+    const optional = { label: L ? 'Oración Opcional' : 'Optional Prayer', text: L
+      ? '«Oh Sangre y Agua que brotaste del Corazón de Jesús como fuente de misericordia para nosotros, confío en Ti.»'
+      : '«O Blood and Water, which gushed forth from the Heart of Jesus as a fount of mercy for us, I trust in You.»', count: 1, bead: 'none' };
+    const steps = [pn, am, credo];
+    for (let d = 1; d <= 5; d++) {
+      steps.push({ ...large, label: L ? `Cuenta Grande · Decena ${d}` : `Large Bead · Decade ${d}` });
+      steps.push({ ...small, label: L ? `Cuentas Pequeñas · Decena ${d}` : `Small Beads · Decade ${d}` });
+    }
+    steps.push(closing, optional);
+    return steps;
+  }
+
+  // ── SAGRADO CORAZÓN ───────────────────────────
+  if (id === 'sagradocorazon') {
+    const opening = { label: L ? 'Oración de Apertura' : 'Opening Prayer', text: L
+      ? '«Venid, adoremos y postremos ante Dios;\nlloremos ante el Señor que nos creó.»'
+      : '«Come, let us adore and bow down before God;\nlet us weep before the Lord who made us.»', count: 1, bead: 'none' };
+    const large = { label: '', text: L
+      ? '«Sagrado Corazón de Jesús, en Ti confío.»'
+      : '«Sacred Heart of Jesus, in You I trust.»', count: 1, bead: 'large' };
+    const small = { label: '', text: L
+      ? '«Jesús manso y humilde de Corazón,\nhaz mi corazón semejante al Tuyo.»'
+      : '«Jesus, meek and humble of Heart,\nmake my heart like unto Thine.»', count: 10, bead: 'small' };
+    const closing = { label: L ? 'Oración Final × 3' : 'Closing Prayer × 3', text: L
+      ? '«Oh dulcísimo Corazón de Jesús,\nhaz que Te ame cada vez más.»'
+      : '«O most sweet Heart of Jesus,\ngrant that I may ever love Thee more and more.»', count: 3, bead: 'none' };
+    const final = { label: L ? 'Consagración' : 'Consecration', text: L
+      ? '«Sagrado Corazón de Jesús, que Tú reines.»'
+      : '«Sacred Heart of Jesus, may You reign.»', count: 1, bead: 'none' };
+    const steps = [opening];
+    for (let d = 1; d <= 6; d++) {
+      steps.push({ ...large, label: L ? `Cuenta Grande ${d}` : `Large Bead ${d}` });
+      steps.push({ ...small, label: L ? `Cuentas Pequeñas · Grupo ${d}` : `Small Beads · Group ${d}` });
+    }
+    steps.push(closing, final);
+    return steps;
+  }
+
+  // ── VIRGEN DE FÁTIMA (Santo Rosario) ──────────
+  if (id === 'fatima') {
+    const fatimaOration = { label: L ? 'Oración de Fátima' : 'Fátima Prayer', text: L
+      ? '«Oh Jesús mío, perdona nuestros pecados, líbranos del fuego del infierno, lleva al Cielo a todas las almas, especialmente a las más necesitadas de tu Misericordia.»'
+      : '«O my Jesus, forgive us our sins, save us from the fire of hell, lead all souls to Heaven, especially those most in need of Thy mercy.»', count: 1, bead: 'none' };
+    const salve = { label: L ? 'Salve Regina' : 'Hail Holy Queen', text: L
+      ? 'Dios te salve, Reina y Madre de misericordia,\nvida, dulzura y esperanza nuestra, Dios te salve.\nA Ti llamamos los desterrados hijos de Eva;\na Ti suspiramos gimiendo y llorando\nen este valle de lágrimas.\nEa, pues, Señora, abogada nuestra,\nvuelve a nosotros esos tus ojos misericordiosos.\nY después de este destierro,\nmuéstranos a Jesús, fruto bendito de tu vientre.\n¡Oh clementísima, oh piadosa, oh dulce Virgen María! Amén.'
+      : 'Hail, holy Queen, Mother of mercy,\nour life, our sweetness and our hope.\nTo thee do we cry, poor banished children of Eve.\nTo thee do we send up our sighs,\nmourning and weeping in this valley of tears.\nTurn then, most gracious advocate,\nthine eyes of mercy toward us.\nAnd after this our exile,\nshow unto us the blessed fruit of thy womb, Jesus.\nO clement, O loving, O sweet Virgin Mary! Amen.', count: 1, bead: 'none' };
+    const mysteries = L
+      ? ['La Anunciación del Ángel a María', 'La Visitación de María a Isabel', 'El Nacimiento de Jesús en Belén', 'La Presentación de Jesús en el Templo', 'El Hallazgo de Jesús en el Templo']
+      : ['The Annunciation of the Angel to Mary', 'The Visitation of Mary to Elizabeth', 'The Birth of Jesus in Bethlehem', 'The Presentation of Jesus in the Temple', 'The Finding of Jesus in the Temple'];
+    const ordinals = L ? ['1°', '2°', '3°', '4°', '5°'] : ['1st', '2nd', '3rd', '4th', '5th'];
+    const steps = [credo, pn, am3, gloria];
+    mysteries.forEach((mystery, i) => {
+      steps.push({ label: L ? `${ordinals[i]} Misterio Gozoso` : `${ordinals[i]} Joyful Mystery`, text: mystery, count: 1, bead: 'none' });
+      steps.push({ ...pn, label: L ? `Padre Nuestro · Misterio ${i+1}` : `Our Father · Mystery ${i+1}` });
+      steps.push({ ...am10, label: L ? `Ave María × 10 · Misterio ${i+1}` : `Hail Mary × 10 · Mystery ${i+1}` });
+      steps.push({ ...gloria });
+      steps.push(fatimaOration);
+    });
+    steps.push(salve);
+    return steps;
+  }
+
+  // ── PADRE PÍO ─────────────────────────────────
+  if (id === 'padrepio') {
+    const large = { label: '', text: L
+      ? '«Por tus sagradas llagas, Padre Pío,\naleja de nosotros el dolor y la tristeza.»'
+      : '«Through your sacred wounds, Padre Pio,\nkeep us from pain and sadness.»', count: 1, bead: 'large' };
+    const small = { label: '', text: L
+      ? '«Padre Pío, cubierto de las llagas de Cristo,\nsana nuestras almas.»'
+      : '«Padre Pio, covered with the wounds of Christ,\nheal our souls.»', count: 10, bead: 'small' };
+    const decadeEnd = { label: '', text: L
+      ? '«Padre Pío de Pietrelcina,\nruega por nosotros que recurrimos a ti.»'
+      : '«Padre Pio of Pietrelcina,\npray for us who have recourse to thee.»', count: 1, bead: 'none' };
+    const closing = { label: L ? 'Oración Final × 3' : 'Closing Prayer × 3', text: L
+      ? '«Gracias, Padre Pío,\npor tu intercesión y tu amor por las almas.»'
+      : '«Thank you, Padre Pio,\nfor your intercession and your love for souls.»', count: 3, bead: 'none' };
+    const steps = [credo];
+    for (let d = 1; d <= 5; d++) {
+      steps.push({ ...large, label: L ? `Cuenta Grande · Decena ${d}` : `Large Bead · Decade ${d}` });
+      steps.push({ ...small, label: L ? `Cuentas Pequeñas · Decena ${d}` : `Small Beads · Decade ${d}` });
+      steps.push({ ...decadeEnd, label: L ? `Final de la Decena ${d}` : `End of Decade ${d}` });
+    }
+    steps.push(closing);
+    return steps;
+  }
+
+  // ── SAN JUDAS TADEO (13 cuentas) ─────────────
+  if (id === 'sanjudas') {
+    const invocation = { label: L ? 'Invocación al Espíritu Santo' : 'Invocation to the Holy Spirit', text: L
+      ? '«Ven, Espíritu Santo, ilumina mi mente y enciende mi corazón.\nSan Judas Tadeo, apóstol que recibiste el fuego de Pentecostés,\nintercede por mí ante Dios Padre.»'
+      : '«Come, Holy Spirit, enlighten my mind and inflame my heart.\nSaint Jude Thaddaeus, apostle who received the fire of Pentecost,\nintercede for me before God the Father.»', count: 1, bead: 'none' };
+    const bead = { label: '', text: L
+      ? '«San Judas Tadeo, apóstol y mártir,\npatrono de las causas imposibles: ruega por nosotros.»\n\n(Añade en silencio la petición de tu corazón.)'
+      : '«Saint Jude Thaddaeus, apostle and martyr,\npatron of impossible causes: pray for us.»\n\n(Add silently the intention of your heart.)', count: 1, bead: 'small' };
+    const final = { label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«Glorioso San Judas Tadeo, tú que eres pariente de Nuestro Señor Jesucristo y que proclamaste Su Evangelio con valentía hasta dar tu propia sangre:\n\nTe presento hoy mi causa. Sé que para Dios no hay nada imposible. Intercede por mí para que, si es Su santa voluntad, me sea concedida esta gracia.\n\nAmén.»'
+      : '«Glorious Saint Jude Thaddaeus, relative of Our Lord Jesus Christ, who proclaimed His Gospel with courage until shedding your own blood:\n\nI present my cause to you today. I know that for God nothing is impossible. Intercede for me so that, if it is His holy will, this grace may be granted to me.\n\nAmen.»', count: 1, bead: 'none' };
+    const steps = [cruz, invocation];
+    for (let i = 1; i <= 13; i++) {
+      steps.push({ ...bead, label: L ? `Cuenta ${i} de 13` : `Bead ${i} of 13` });
+    }
+    steps.push(final, { ...cruz, label: L ? 'Señal de la Cruz final' : 'Final Sign of the Cross' });
+    return steps;
+  }
+
+  // ── SAN ANTONIO DE PADUA (13 peticiones) ──────
+  if (id === 'sanantonio') {
+    const petitions = L ? [
+      'Por el milagro de su predicación que convirtió a los más endurecidos.',
+      'Por su amor a la Sagrada Escritura y su sabiduría de Doctor.',
+      'Por su abandono del mundo para seguir a Cristo franciscano.',
+      'Por su defensa de los pobres y los deudores injustamente encarcelados.',
+      'Por los milagros que obró en vida — entre ellos el pez que escuchó su predicación.',
+      'Por su amor y devoción a la Virgen María.',
+      'Por la aparición del Niño Jesús sobre sus brazos.',
+      'Por su paciencia en las tentaciones y tribulaciones.',
+      'Por su amor ardiente a la Sagrada Eucaristía.',
+      'Por su celo apostólico que encendió toda Europa.',
+      'Por su muerte santa y su rápida canonización.',
+      'Por los innumerables milagros obrados después de su muerte.',
+      'Por su intercesión poderosa como patrono de las cosas perdidas.',
+    ] : [
+      'For the miracle of his preaching that converted the most hardened hearts.',
+      'For his love of Sacred Scripture and his wisdom as a Doctor.',
+      'For his abandonment of the world to follow Christ as a Franciscan.',
+      'For his defense of the poor and those unjustly imprisoned.',
+      'For the miracles he worked during his life — including the fish that heard his preaching.',
+      'For his love and devotion to the Virgin Mary.',
+      'For the apparition of the Child Jesus in his arms.',
+      'For his patience in temptations and tribulations.',
+      'For his ardent love of the Holy Eucharist.',
+      'For his apostolic zeal that set all of Europe on fire.',
+      'For his holy death and swift canonization.',
+      'For the countless miracles worked after his death.',
+      'For his powerful intercession as patron of lost things.',
+    ];
+    const final = { label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '¡Oh San Antonio, glorioso confesor y Doctor de la Iglesia!\nPor tu intercesión, que Dios me conceda lo que necesito y busco.\nAmén.'
+      : 'O Saint Anthony, glorious confessor and Doctor of the Church!\nThrough your intercession, may God grant me what I need and seek.\nAmen.', count: 1, bead: 'none' };
+    const steps = [cruz];
+    petitions.forEach((petition, i) => {
+      steps.push({ label: L ? `Petición ${i+1} · Padre Nuestro` : `Petition ${i+1} · Our Father`, text: p.pn, count: 1, bead: 'large' });
+      steps.push({ label: L ? `Petición ${i+1} · Ave María` : `Petition ${i+1} · Hail Mary`, text: p.am, count: 1, bead: 'small' });
+      steps.push({ label: L ? `Petición ${i+1} · Intención` : `Petition ${i+1} · Intention`, text: petition, count: 1, bead: 'none' });
+    });
+    steps.push(final);
+    return steps;
+  }
+
+  // ── SAN MIGUEL ARCÁNGEL (9 salutaciones) ──────
+  if (id === 'sanmiguel') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«Oh Dios, ven en mi auxilio.\nSeñor, date prisa en socorrerme.»'
+      : '«O God, come to my assistance.\nLord, make haste to help me.»', count: 1, bead: 'none' };
+    const salutations = L ? [
+      { choir: 'Serafines',     text: 'Por la intercesión de San Miguel y los Serafines:\nque arda en mí el fuego de la perfecta caridad.' },
+      { choir: 'Querubines',    text: 'Por la intercesión de San Miguel y los Querubines:\nque abandone el camino del pecado.' },
+      { choir: 'Tronos',        text: 'Por la intercesión de San Miguel y los Tronos:\nque Dios infunda en mí el espíritu de la verdadera humildad.' },
+      { choir: 'Dominaciones',  text: 'Por la intercesión de San Miguel y las Dominaciones:\nque domine mis sentidos y corrija mis malas pasiones.' },
+      { choir: 'Poderes',       text: 'Por la intercesión de San Miguel y los Poderes:\nque Dios proteja mi alma contra las tentaciones del demonio.' },
+      { choir: 'Virtudes',      text: 'Por la intercesión de San Miguel y las Virtudes:\nque no caiga en la tentación, sino que sea librado del mal.' },
+      { choir: 'Principados',   text: 'Por la intercesión de San Miguel y los Principados:\nque Dios llene mi alma del espíritu de obediencia verdadera.' },
+      { choir: 'Arcángeles',    text: 'Por la intercesión de San Miguel y los Arcángeles:\nque reciba el don de la perseverancia en la fe y en las buenas obras.' },
+      { choir: 'Ángeles',       text: 'Por la intercesión de San Miguel y los Ángeles:\nque sea guardado por ellos y conducido al reino eterno.' },
+    ] : [
+      { choir: 'Seraphim',       text: 'Through the intercession of Saint Michael and the Seraphim:\nmay the fire of perfect charity be enkindled in me.' },
+      { choir: 'Cherubim',       text: 'Through the intercession of Saint Michael and the Cherubim:\nmay I leave the path of sin.' },
+      { choir: 'Thrones',        text: 'Through the intercession of Saint Michael and the Thrones:\nmay God infuse in me the spirit of true humility.' },
+      { choir: 'Dominations',    text: 'Through the intercession of Saint Michael and the Dominations:\nmay I master my senses and correct my evil passions.' },
+      { choir: 'Powers',         text: 'Through the intercession of Saint Michael and the Powers:\nmay God protect my soul against the snares of the devil.' },
+      { choir: 'Virtues',        text: 'Through the intercession of Saint Michael and the Virtues:\nmay I not fall into temptation but be delivered from evil.' },
+      { choir: 'Principalities', text: 'Through the intercession of Saint Michael and the Principalities:\nmay God fill my soul with the spirit of true obedience.' },
+      { choir: 'Archangels',     text: 'Through the intercession of Saint Michael and the Archangels:\nmay I receive the gift of perseverance in faith and good works.' },
+      { choir: 'Angels',         text: 'Through the intercession of Saint Michael and the Angels:\nmay they guard me on this pilgrimage and lead me to the eternal kingdom.' },
+    ];
+    const final = { label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? 'San Miguel Arcángel, ilustre príncipe y guardián del alma, ruega por nosotros.\nAmén.'
+      : 'Saint Michael the Archangel, illustrious prince and guardian of souls, pray for us.\nAmen.', count: 1, bead: 'none' };
+    const steps = [cruz, opening];
+    salutations.forEach((s, i) => {
+      steps.push({ label: L ? `Salutación ${i+1} · ${s.choir} · Padre Nuestro` : `Salutation ${i+1} · ${s.choir} · Our Father`, text: p.pn, count: 1, bead: 'large' });
+      steps.push({ label: L ? `Salutación ${i+1} · ${s.choir} · Ave Marías` : `Salutation ${i+1} · ${s.choir} · Hail Marys`, text: p.am, count: 3, bead: 'small' });
+      steps.push({ label: L ? `Salutación ${i+1} · ${s.choir}` : `Salutation ${i+1} · ${s.choir}`, text: s.text, count: 1, bead: 'none' });
+    });
+    steps.push(final);
+    return steps;
+  }
+
+  return [];
+}
+
+function initChapletPlayer(data) {
+  const player    = document.getElementById('chapletPlayer');
+  const noChaplet = document.getElementById('noChaplet');
+  if (!player || !noChaplet) return;
+
+  if (data.chaplet && data.chaplet.available) {
+    chapletSteps = getChapletSteps(data.id, currentLang);
+    chapletCurrentStep = 0;
+    if (chapletSteps.length > 0) {
+      player.style.display = '';
+      noChaplet.style.display = 'none';
+      renderChapletStep();
+      // Clone buttons to remove old listeners before re-wiring
+      ['cpPrev', 'cpNext'].forEach(id => {
+        const old = document.getElementById(id);
+        const clone = old.cloneNode(true);
+        old.parentNode.replaceChild(clone, old);
+      });
+      document.getElementById('cpPrev').addEventListener('click', () => {
+        if (chapletCurrentStep > 0) { chapletCurrentStep--; renderChapletStep(); }
+      });
+      document.getElementById('cpNext').addEventListener('click', () => {
+        if (chapletCurrentStep < chapletSteps.length - 1) { chapletCurrentStep++; renderChapletStep(); }
+      });
+      return;
+    }
+  }
+  player.style.display = 'none';
+  noChaplet.style.display = 'block';
+}
+
+function renderChapletStep() {
+  const step  = chapletSteps[chapletCurrentStep];
+  const total = chapletSteps.length;
+  const cur   = chapletCurrentStep + 1;
+  const L     = currentLang === 'es';
+
+  document.getElementById('cpLabel').textContent = step.label;
+  document.getElementById('cpStepCount').textContent = `${cur} / ${total}`;
+  document.getElementById('cpProgressFill').style.width = `${(cur / total) * 100}%`;
+  document.getElementById('cpText').innerHTML = step.text.replace(/\n/g, '<br>');
+
+  const badge = document.getElementById('cpCountBadge');
+  if (step.count > 1) { badge.textContent = `× ${step.count}`; badge.style.display = ''; }
+  else { badge.style.display = 'none'; }
+
+  const prevBtn = document.getElementById('cpPrev');
+  const nextBtn = document.getElementById('cpNext');
+  prevBtn.disabled = chapletCurrentStep === 0;
+  nextBtn.disabled = chapletCurrentStep === total - 1;
+
+  const isLast = chapletCurrentStep === total - 1;
+  nextBtn.querySelector('[data-lang="es"]').textContent = isLast ? '✓ Amén' : 'Siguiente →';
+  nextBtn.querySelector('[data-lang="en"]').textContent = isLast ? '✓ Amen' : 'Next →';
+  // Apply active language
+  [prevBtn, nextBtn].forEach(btn => {
+    btn.querySelectorAll('[data-lang]').forEach(el => {
+      el.style.display = el.getAttribute('data-lang') === currentLang ? '' : 'none';
+    });
+  });
 }
 
 // ── NOVENA SUPPORT PANEL ───────────────────────────

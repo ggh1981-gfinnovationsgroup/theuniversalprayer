@@ -114,9 +114,31 @@
         </div>
       </section>
 
-      <!-- CHAPLET -->
+      <!-- CHAPLET PLAYER -->
       <section class="tab-panel" id="tab-chaplet" role="tabpanel">
-        <div class="chaplet-text content-card" id="chapletText"></div>
+        <div class="chaplet-player content-card" id="chapletPlayer" style="display:none">
+          <div class="cp-header">
+            <span class="cp-step-label" id="cpLabel"></span>
+            <span class="cp-step-count" id="cpStepCount"></span>
+          </div>
+          <div class="cp-progress">
+            <div class="cp-progress-fill" id="cpProgressFill"></div>
+          </div>
+          <div class="cp-body">
+            <div class="cp-count-badge" id="cpCountBadge" style="display:none"></div>
+            <div class="cp-text" id="cpText"></div>
+          </div>
+          <div class="cp-nav">
+            <button class="cp-btn cp-prev" id="cpPrev" disabled>
+              <span data-lang="es">← Anterior</span>
+              <span data-lang="en" style="display:none">← Previous</span>
+            </button>
+            <button class="cp-btn cp-next" id="cpNext">
+              <span data-lang="es">Siguiente →</span>
+              <span data-lang="en" style="display:none">Next →</span>
+            </button>
+          </div>
+        </div>
         <div class="no-chaplet content-card" id="noChaplet" style="display:none">
           <p data-i18n="no_chaplet">No chaplet available for this intercessor.</p>
         </div>
