@@ -130,13 +130,17 @@ async function loadIntercessorData(id) {
 
 // ── HOME PAGE ──────────────────────────────────────
 async function initHomePage() {
-  const grid = document.getElementById('intercessorsGrid');
-  if (!grid) return;
+  const leftCol  = document.getElementById('intercessorsLeft');
+  const rightCol = document.getElementById('intercessorsRight');
+  if (!leftCol || !rightCol) return;
 
-  for (const meta of INTERCESSORS) {
+  const half = Math.ceil(INTERCESSORS.length / 2);
+  for (let i = 0; i < INTERCESSORS.length; i++) {
+    const meta = INTERCESSORS[i];
     try {
       const data = await loadIntercessorData(meta.id);
-      grid.appendChild(buildCard(data, meta));
+      const target = i < half ? leftCol : rightCol;
+      target.appendChild(buildCard(data, meta));
     } catch {
       // Skip intercessors whose JSON isn't ready yet
     }
