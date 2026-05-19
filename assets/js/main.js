@@ -19,6 +19,8 @@ const i18n = {
     tab_chaplet:        'Chaplet',
     day:                'Day',
     no_chaplet:         'No chaplet available for this intercessor.',
+    novena_prayers:     '📿 Prayers to pray',
+    chaplet_lbl:        'Chaplet',
     not_found_title:    'Intercessor not found',
     not_found_text:     'We could not find this intercessor. Please return to the home page.',
     go_home:            'Go Home',
@@ -30,15 +32,17 @@ const i18n = {
   es: {
     site_title:         'La Oración Universal',
     hero_title:         'La Oración Universal',
-    hero_subtitle:      'Novenas, chaplets y oraciones para cada intercesor — gratis, siempre.',
+    hero_subtitle:      'Novenas, coronillas y oraciones para cada intercesor — gratis, siempre.',
     choose_intercessor: 'Elige tu intercesor',
     feast_day:          'Día festivo:',
     tab_prayer:         'Oración',
     tab_history:        'Historia',
     tab_novena:         'Novena',
-    tab_chaplet:        'Chaplet',
+    tab_chaplet:        'Coronilla',
     day:                'Día',
-    no_chaplet:         'No hay chaplet disponible para este intercesor.',
+    no_chaplet:         'No hay coronilla disponible para este intercesor.',
+    novena_prayers:     '📿 Oraciones para rezar',
+    chaplet_lbl:        'Coronilla',
     not_found_title:    'Intercesor no encontrado',
     not_found_text:     'No pudimos encontrar este intercesor. Por favor regresa a la página principal.',
     go_home:            'Ir al inicio',
@@ -46,6 +50,30 @@ const i18n = {
     universal_prayer_title:  'La Oración Universal y Definitiva',
     universal_prayer_dedication: 'Para toda persona que la rece — solo, en pareja, en familia o en grupo',
     menu_title:              'Intercesores',
+  },
+};
+
+// ── PRAYER TEXTS (for novena support panel) ────────
+const PRAYERS = {
+  es: {
+    pn_title:    'Padre Nuestro',
+    pn:          'Padre nuestro, que estás en el cielo,\nsantificado sea tu nombre;\nvenga a nosotros tu reino;\nhágase tu voluntad\nen la tierra como en el cielo.\nDanos hoy nuestro pan de cada día;\nperdona nuestras ofensas,\ncomo también nosotros perdonamos\na los que nos ofenden;\nno nos dejes caer en tentación,\ny líbranos del mal. Amén.',
+    am_title:    'Ave María',
+    am:          'Dios te salve, María,\nllena eres de gracia,\nel Señor es contigo;\nbendita tú eres entre todas las mujeres,\ny bendito es el fruto de tu vientre, Jesús.\nSanta María, Madre de Dios,\nruega por nosotros, pecadores,\nahora y en la hora de nuestra muerte. Amén.',
+    gloria_title:'Gloria',
+    gloria:      'Gloria al Padre,\ny al Hijo,\ny al Espíritu Santo.\nComo era en el principio,\nahora y siempre,\npor los siglos de los siglos. Amén.',
+    credo_title: 'Credo de los Apóstoles',
+    credo:       'Creo en Dios,\nPadre todopoderoso,\nCreador del cielo y de la tierra.\nCreo en Jesucristo, su único Hijo,\nNuestro Señor,\nque fue concebido por obra y gracia\ndel Espíritu Santo,\nnació de Santa María Virgen,\npadeció bajo el poder de Poncio Pilato,\nfue crucificado, muerto y sepultado,\ndescendió a los infiernos,\nal tercer día resucitó de entre los muertos,\nsubió a los cielos y está sentado\na la derecha de Dios Padre todopoderoso.\nDesde allí ha de venir a juzgar\na vivos y muertos.\nCreo en el Espíritu Santo,\nla santa Iglesia católica,\nla comunión de los santos,\nel perdón de los pecados,\nla resurrección de la carne\ny la vida eterna. Amén.',
+  },
+  en: {
+    pn_title:    'Our Father',
+    pn:          'Our Father, who art in heaven,\nhallowed be Thy name;\nThy kingdom come;\nThy will be done\non earth as it is in heaven.\nGive us this day our daily bread;\nand forgive us our trespasses,\nas we forgive those\nwho trespass against us;\nand lead us not into temptation,\nbut deliver us from evil. Amen.',
+    am_title:    'Hail Mary',
+    am:          'Hail Mary, full of grace,\nthe Lord is with thee;\nblessed art thou among women,\nand blessed is the fruit\nof thy womb, Jesus.\nHoly Mary, Mother of God,\npray for us sinners,\nnow and at the hour\nof our death. Amen.',
+    gloria_title:'Glory Be',
+    gloria:      'Glory be to the Father,\nand to the Son,\nand to the Holy Spirit.\nAs it was in the beginning,\nis now, and ever shall be,\nworld without end. Amen.',
+    credo_title: "Apostles' Creed",
+    credo:       'I believe in God,\nthe Father almighty,\nCreator of heaven and earth,\nand in Jesus Christ,\nhis only Son, our Lord,\nwho was conceived by the Holy Spirit,\nborn of the Virgin Mary,\nsuffered under Pontius Pilate,\nwas crucified, died and was buried;\nhe descended into hell;\non the third day he rose again;\nhe ascended into heaven,\nand is seated at the right hand\nof God the Father almighty;\nfrom there he will come\nto judge the living and the dead.\nI believe in the Holy Spirit,\nthe holy catholic Church,\nthe communion of saints,\nthe forgiveness of sins,\nthe resurrection of the body,\nand life everlasting. Amen.',
   },
 };
 
@@ -165,7 +193,7 @@ function buildCard(data, meta) {
 
   const badges = [];
   if (meta.novena)  badges.push(`<span class="badge">${lang === 'en' ? 'Novena' : 'Novena'}</span>`);
-  if (meta.chaplet) badges.push(`<span class="badge">${lang === 'en' ? 'Chaplet' : 'Chaplet'}</span>`);
+  if (meta.chaplet) badges.push(`<span class="badge">${lang === 'en' ? 'Chaplet' : 'Coronilla'}</span>`);
 
   card.innerHTML = `
     <div class="card-image-wrap">${imgHtml}</div>
@@ -288,6 +316,9 @@ function renderIntercessorContent(data) {
       noChapletEl.style.display = 'block';
     }
   }
+
+  // Novena support panel (prayers accordion)
+  renderNovenaSupportPanel(data);
 }
 
 function paragraphify(text) {
@@ -295,6 +326,60 @@ function paragraphify(text) {
     .split(/\n{2,}/)
     .map(p => `<p>${p.replace(/\n/g, '<br />')}</p>`)
     .join('');
+}
+
+// ── NOVENA SUPPORT PANEL ───────────────────────────
+function renderNovenaSupportPanel(data) {
+  const panel   = document.getElementById('novenaSupportPanel');
+  const toggle  = document.getElementById('novenaSupportToggle');
+  const content = document.getElementById('novenaSupportContent');
+  const arrow   = document.getElementById('novenaSupportArrow');
+  if (!panel || !toggle || !content) return;
+
+  const lang = currentLang;
+  const p    = PRAYERS[lang];
+  const t    = i18n[lang];
+
+  // Update toggle label text
+  toggle.querySelector('.support-label-es').style.display = lang === 'es' ? '' : 'none';
+  toggle.querySelector('.support-label-en').style.display = lang === 'en' ? '' : 'none';
+
+  function prayerBlock(title, text) {
+    return `<div class="support-prayer">
+      <div class="support-prayer-title">${title}</div>
+      <div class="support-prayer-text">${text.replace(/\n/g, '<br>')}</div>
+    </div>`;
+  }
+
+  let html = prayerBlock(p.pn_title, p.pn)
+    + '<hr class="support-prayer-divider">'
+    + prayerBlock(p.am_title, p.am)
+    + '<hr class="support-prayer-divider">'
+    + prayerBlock(p.gloria_title, p.gloria)
+    + '<hr class="support-prayer-divider">'
+    + prayerBlock(p.credo_title, p.credo);
+
+  if (data.chaplet && data.chaplet.available && data.chaplet[lang]) {
+    const chapletTitle = `${data.name[lang]} — ${t.chaplet_lbl}`;
+    html += '<hr class="support-prayer-divider">'
+      + `<div class="support-prayer support-chaplet">`
+      + `<div class="support-prayer-title">${chapletTitle}</div>`
+      + `<div class="support-prayer-text">${paragraphify(data.chaplet[lang])}</div>`
+      + `</div>`;
+  }
+
+  content.innerHTML = html;
+
+  // Wire toggle (only once — replace to avoid duplicates)
+  const newToggle = toggle.cloneNode(true);
+  toggle.parentNode.replaceChild(newToggle, toggle);
+  document.getElementById('novenaSupportToggle').addEventListener('click', function() {
+    const isOpen = !content.hidden;
+    content.hidden = isOpen;
+    this.setAttribute('aria-expanded', String(!isOpen));
+    const ar = document.getElementById('novenaSupportArrow');
+    if (ar) ar.style.transform = isOpen ? '' : 'rotate(180deg)';
+  });
 }
 
 // ── TABS ───────────────────────────────────────────

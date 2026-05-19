@@ -72,9 +72,13 @@
   <circle cx="300" cy="480" r="1.2" fill="#c8d8f0" opacity="0.30"/>
   <circle cx="500" cy="470" r="1.2" fill="#c8d8f0" opacity="0.30"/>
 
+  <!-- Name -->
+  <text x="400" y="490" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#e8c97a" letter-spacing="1">San Miguel Arc&#xE1;ngel</text>
+  <text x="400" y="511" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#8ab4d8" font-style="italic" opacity="0.85">Saint Michael the Archangel</text>
+
   <!-- "Quis ut Deus?" inscription -->
-  <text x="400" y="518" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-style="italic" fill="#5a7aaa" opacity="0.65" letter-spacing="2">Quis ut Deus?</text>
+  <text x="400" y="535" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-style="italic" fill="#5a7aaa" opacity="0.55" letter-spacing="2">Quis ut Deus?</text>
 
   <!-- Feast day -->
-  <text x="400" y="568" text-anchor="middle" font-family="Lato, sans-serif" font-size="13" fill="#4a6a8a" letter-spacing="2.5">29 DE SEPTIEMBRE · SEPTEMBER 29</text>
+  <text x="400" y="574" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#4a6a8a" letter-spacing="2">29 DE SEPTIEMBRE · SEPTEMBER 29</text>
 </svg>

@@ -100,6 +100,18 @@
           <button class="arrow-btn" id="prevDay" aria-label="Previous day">&#8592;</button>
           <button class="arrow-btn" id="nextDay" aria-label="Next day">&#8594;</button>
         </div>
+
+        <!-- PRAYER SUPPORT PANEL — oraciones de apoyo / supporting prayers -->
+        <div class="novena-support-panel" id="novenaSupportPanel">
+          <button class="novena-support-toggle" id="novenaSupportToggle" aria-expanded="false">
+            <span class="support-label-es">📿 Oraciones para rezar</span>
+            <span class="support-label-en" style="display:none">📿 Prayers to pray</span>
+            <span class="support-toggle-arrow" id="novenaSupportArrow">▾</span>
+          </button>
+          <div class="novena-support-content" id="novenaSupportContent" hidden>
+            <!-- Populated by JS: Padre Nuestro, Ave María, Gloria, Credo, Coronilla (if available) -->
+          </div>
+        </div>
       </section>
 
       <!-- CHAPLET -->

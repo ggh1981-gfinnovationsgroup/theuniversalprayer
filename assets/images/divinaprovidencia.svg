@@ -87,6 +87,8 @@
   <circle cx="185" cy="500" r="1.4" fill="#d4af37" opacity="0.35"/>
   <circle cx="615" cy="490" r="1.4" fill="#d4af37" opacity="0.35"/>
 
-  <!-- Feast day -->
-  <text x="400" y="568" text-anchor="middle" font-family="Lato, sans-serif" font-size="13" fill="#7a6020" letter-spacing="2.5">19 DE NOVIEMBRE · NOVEMBER 19</text>
+  <!-- Name + Feast day -->
+  <text x="400" y="528" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#e8c97a" letter-spacing="1">Divina Providencia</text>
+  <text x="400" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#c9a84c" font-style="italic" opacity="0.85">Divine Providence</text>
+  <text x="400" y="574" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#7a6020" letter-spacing="2.5">19 DE NOVIEMBRE · NOVEMBER 19</text>
 </svg>

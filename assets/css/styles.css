@@ -805,3 +805,166 @@ body {
   .intercessors-grid { grid-template-columns: 1fr 1fr; }
   .support-col { flex-direction: column; }
 }
+
+/* ── DIVINA MISERICORDIA — SECCIÓN DESTACADA ────── */
+.featured-mercy {
+  background: linear-gradient(135deg, rgba(140,26,26,0.12) 0%, rgba(10,13,20,0) 60%);
+  border-top: 1px solid rgba(192,18,18,0.2);
+  border-bottom: 1px solid rgba(192,18,18,0.15);
+  padding: 2rem 1.25rem;
+}
+.featured-mercy-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.featured-mercy-image-wrap {
+  flex-shrink: 0;
+  width: 130px;
+  height: 195px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(192,18,18,0.35);
+  box-shadow: 0 4px 24px rgba(192,18,18,0.2);
+}
+.featured-mercy-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+.featured-mercy-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.featured-mercy-badge {
+  display: inline-block;
+  background: rgba(192,18,18,0.18);
+  border: 1px solid rgba(192,18,18,0.4);
+  color: #e08080;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.75rem;
+  border-radius: 99px;
+  width: fit-content;
+}
+.featured-mercy-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: var(--gold-light);
+  line-height: 1.2;
+}
+.featured-mercy-quote {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: #e8c8a0;
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
+.featured-mercy-text {
+  font-size: 0.95rem;
+  color: var(--white-dim);
+  line-height: 1.7;
+  max-width: 500px;
+}
+.featured-mercy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(192,18,18,0.15);
+  border: 1px solid rgba(192,18,18,0.5);
+  color: #e09090;
+  text-decoration: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 99px;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  margin-top: 0.4rem;
+  width: fit-content;
+  transition: all var(--transition);
+}
+.featured-mercy-btn:hover {
+  background: rgba(192,18,18,0.3);
+  color: var(--white);
+  border-color: rgba(192,18,18,0.7);
+}
+@media (max-width: 600px) {
+  .featured-mercy-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+  .featured-mercy-image-wrap {
+    width: 100%;
+    height: 200px;
+    align-self: stretch;
+  }
+}
+
+/* ── NOVENA PRAYER SUPPORT PANEL ────────────────── */
+.novena-support-panel {
+  margin-top: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.novena-support-toggle {
+  width: 100%;
+  background: var(--bg-surface);
+  border: none;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--gold);
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: left;
+  transition: background var(--transition);
+}
+.novena-support-toggle:hover { background: rgba(201,168,76,0.08); }
+.support-toggle-arrow {
+  font-size: 1.1rem;
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+}
+.novena-support-content {
+  background: var(--bg-card);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.novena-support-content[hidden] { display: none; }
+.support-prayer {
+  border-left: 2px solid var(--gold-dim);
+  padding-left: 1rem;
+}
+.support-prayer-title {
+  font-family: var(--font-serif);
+  color: var(--gold);
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+}
+.support-prayer-text {
+  font-size: 0.88rem;
+  line-height: 1.9;
+  color: var(--white-dim);
+}
+.support-prayer-text p { margin-bottom: 0.75rem; }
+.support-prayer-text p:last-child { margin-bottom: 0; }
+.support-prayer-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0;
+}
+.support-chaplet .support-prayer-title {
+  color: var(--gold-light);
+  font-size: 1rem;
+}

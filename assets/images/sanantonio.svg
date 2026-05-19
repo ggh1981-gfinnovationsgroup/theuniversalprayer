@@ -64,6 +64,8 @@
   <circle cx="185" cy="430" r="1.4" fill="#d4a017" opacity="0.3"/>
   <circle cx="615" cy="400" r="1.4" fill="#d4a017" opacity="0.3"/>
 
-  <!-- Feast day -->
-  <text x="400" y="568" text-anchor="middle" font-family="Lato, sans-serif" font-size="13" fill="#7a5a30" letter-spacing="2.5">13 DE JUNIO · JUNE 13</text>
+  <!-- Name + Feast day -->
+  <text x="400" y="528" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#e8c97a" letter-spacing="1">San Antonio de Padua</text>
+  <text x="400" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#c9a84c" font-style="italic" opacity="0.85">Saint Anthony of Padua</text>
+  <text x="400" y="574" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#7a5a30" letter-spacing="2.5">13 DE JUNIO · JUNE 13</text>
 </svg>
