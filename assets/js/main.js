@@ -56,7 +56,8 @@ const INTERCESSORS = [
   { id: 'guadalupe',     subdomain: 'guadalupe',     chaplet: false, novena: true,  name: { en: 'Our Lady of Guadalupe', es: 'Virgen de Guadalupe' } },
   { id: 'sagradocorazon',subdomain: 'sagradocorazon',chaplet: true,  novena: true,  name: { en: 'Sacred Heart',       es: 'Sagrado Corazón'      } },
   { id: 'sanjose',       subdomain: 'sanjose',       chaplet: false, novena: true,  name: { en: 'Saint Joseph',       es: 'San José'             } },
-  { id: 'fatima',        subdomain: 'fatima',        chaplet: true,  novena: true,  name: { en: 'Our Lady of Fatima', es: 'Virgen de Fátima'     } },
+  { id: 'fatima',        subdomain: 'fatima',        chaplet: true,  novena: true,  name: { en: 'Our Lady of Fatima',     es: 'Virgen de Fátima'          } },
+  { id: 'sanjudas',      subdomain: 'sanjudas',      chaplet: true,  novena: true,  name: { en: 'Saint Jude Thaddaeus',  es: 'San Judas Tadeo'           } },
 ];
 
 // ── STATE ──────────────────────────────────────────
@@ -167,15 +168,7 @@ function buildCard(data, meta) {
 }
 
 function buildIntercessorUrl(subdomain) {
-  const host = window.location.hostname;
-  // Local dev: use query params
-  if (host === 'localhost' || host === '127.0.0.1') {
-    return `/intercesor/?intercesor=${subdomain}`;
-  }
-  // Production: use subdomains (proxied via Cloudflare Worker with SSL)
-  const parts = host.split('.');
-  const baseDomain = parts.length >= 3 ? parts.slice(1).join('.') : host;
-  return `https://${subdomain}.${baseDomain}`;
+  return `/intercesor/?intercesor=${subdomain}`;
 }
 
 // ── INTERCESSOR PAGE ───────────────────────────────
