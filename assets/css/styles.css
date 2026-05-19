@@ -311,6 +311,10 @@ body {
 }
 .tab-btn.chaplet-tab { display: none; }
 .tab-btn.chaplet-tab.visible { display: block; }
+.tab-btn.litany-tab { display: none; }
+.tab-btn.litany-tab.visible { display: block; }
+.tab-btn.consecration-tab { display: none; }
+.tab-btn.consecration-tab.visible { display: block; }
 
 /* ── TABS CONTENT ─────────────────────────────────── */
 .tabs-content {

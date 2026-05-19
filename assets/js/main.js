@@ -17,8 +17,12 @@ const i18n = {
     tab_history:        'History',
     tab_novena:         'Novena',
     tab_chaplet:        'Chaplet',
+    tab_litany:         'Litany',
+    tab_consecration:   'Consecration',
     day:                'Day',
     no_chaplet:         'No chaplet available for this intercessor.',
+    no_litany:          'No litany available for this intercessor.',
+    no_consecration:    'No consecration available for this intercessor.',
     novena_prayers:     '📿 Prayers to pray',
     chaplet_lbl:        'Chaplet',
     not_found_title:    'Intercessor not found',
@@ -39,8 +43,12 @@ const i18n = {
     tab_history:        'Historia',
     tab_novena:         'Novena',
     tab_chaplet:        'Coronilla',
+    tab_litany:         'Letanías',
+    tab_consecration:   'Consagración',
     day:                'Día',
     no_chaplet:         'No hay coronilla disponible para este intercesor.',
+    no_litany:          'No hay letanías disponibles para este intercesor.',
+    no_consecration:    'No hay consagración disponible para este intercesor.',
     novena_prayers:     '📿 Oraciones para rezar',
     chaplet_lbl:        'Coronilla',
     not_found_title:    'Intercesor no encontrado',
@@ -80,13 +88,13 @@ const PRAYERS = {
 // ── ALL KNOWN INTERCESSORS ─────────────────────────
 const INTERCESSORS = [
   { id: 'misericordia',      subdomain: 'misericordia',      chaplet: true,  novena: true,  color: '#a01818', short: { es: 'D. Misericordia', en: 'Divine Mercy'     }, name: { en: 'Divine Mercy',                          es: 'Divina Misericordia'                      } },
-  { id: 'inmaculadocorazon', subdomain: 'inmaculadocorazon', chaplet: false, novena: true,  color: '#1a5fa0', short: { es: 'Inm. Corazón',    en: 'Imm. Heart'       }, name: { en: 'Immaculate Heart of Mary',               es: 'Inmaculado Corazón de María'               } },
+  { id: 'inmaculadocorazon', subdomain: 'inmaculadocorazon', chaplet: true,  novena: true,  color: '#1a5fa0', short: { es: 'Inm. Corazón',    en: 'Imm. Heart'       }, name: { en: 'Immaculate Heart of Mary',               es: 'Inmaculado Corazón de María'               } },
   { id: 'sagradocorazon',    subdomain: 'sagradocorazon',    chaplet: true,  novena: true,  color: '#7a1515', short: { es: 'S. Corazón',      en: 'Sacred Heart'     }, name: { en: 'Sacred Heart',                          es: 'Sagrado Corazón'                          } },
   { id: 'providencia',       subdomain: 'providencia',       chaplet: false, novena: true,  color: '#6b4800', short: { es: 'Div. Providencia', en: 'Div. Providence'  }, name: { en: 'Divine Providence',                     es: 'La Divina Providencia'                    } },
-  { id: 'guadalupe',         subdomain: 'guadalupe',         chaplet: false, novena: true,  color: '#7a6010', short: { es: 'Guadalupe',        en: 'Guadalupe'        }, name: { en: 'Our Lady of Guadalupe',                 es: 'Virgen de Guadalupe'                      } },
+  { id: 'guadalupe',         subdomain: 'guadalupe',         chaplet: true,  novena: true,  color: '#7a6010', short: { es: 'Guadalupe',        en: 'Guadalupe'        }, name: { en: 'Our Lady of Guadalupe',                 es: 'Virgen de Guadalupe'                      } },
   { id: 'fatima',            subdomain: 'fatima',            chaplet: true,  novena: true,  color: '#1a4a7a', short: { es: 'Fátima',           en: 'Fátima'           }, name: { en: 'Our Lady of Fatima',                    es: 'Virgen de Fátima'                         } },
   { id: 'padrepio',          subdomain: 'padrepio',          chaplet: true,  novena: true,  color: '#5a3828', short: { es: 'Padre Pío',        en: 'Padre Pio'        }, name: { en: 'Padre Pio',                             es: 'Padre Pío'                                } },
-  { id: 'sanjose',           subdomain: 'sanjose',           chaplet: false, novena: true,  color: '#7a5e18', short: { es: 'San José',         en: 'St. Joseph'       }, name: { en: 'Saint Joseph',                          es: 'San José'                                 } },
+  { id: 'sanjose',           subdomain: 'sanjose',           chaplet: true,  novena: true,  color: '#7a5e18', short: { es: 'San José',         en: 'St. Joseph'       }, name: { en: 'Saint Joseph',                          es: 'San José'                                 } },
   { id: 'sanjudas',          subdomain: 'sanjudas',          chaplet: true,  novena: true,  color: '#1a6a3a', short: { es: 'San Judas',        en: 'St. Jude'         }, name: { en: 'Saint Jude Thaddaeus',                  es: 'San Judas Tadeo'                          } },
   { id: 'juanpablo',         subdomain: 'juanpablo',         chaplet: false, novena: true,  color: '#2a3a5a', short: { es: 'Juan Pablo II',    en: 'John Paul II'     }, name: { en: 'Saint John Paul II',                    es: 'San Juan Pablo II'                        } },
   { id: 'sanantonio',        subdomain: 'sanantonio',        chaplet: true,  novena: true,  color: '#6a3018', short: { es: 'San Antonio',      en: 'St. Anthony'      }, name: { en: 'Saint Anthony of Padua',                es: 'San Antonio de Padua'                     } },
@@ -391,7 +399,33 @@ function renderIntercessorContent(data) {
   // Chaplet player
   initChapletPlayer(data);
 
-  // Novena support panel (prayers accordion)
+  // Litany
+  const litanyEl = document.getElementById('litanyText');
+  const noLitanyEl = document.getElementById('noLitany');
+  if (litanyEl && noLitanyEl) {
+    if (data.litany && data.litany.available && data.litany[lang]) {
+      litanyEl.innerHTML = paragraphify(data.litany[lang]);
+      litanyEl.style.display = '';
+      noLitanyEl.style.display = 'none';
+    } else {
+      litanyEl.style.display = 'none';
+      noLitanyEl.style.display = '';
+    }
+  }
+
+  // Consecration
+  const consecrationEl = document.getElementById('consecrationText');
+  const noConsecrationEl = document.getElementById('noConsecration');
+  if (consecrationEl && noConsecrationEl) {
+    if (data.consecration && data.consecration.available && data.consecration[lang]) {
+      consecrationEl.innerHTML = paragraphify(data.consecration[lang]);
+      consecrationEl.style.display = '';
+      noConsecrationEl.style.display = 'none';
+    } else {
+      consecrationEl.style.display = 'none';
+      noConsecrationEl.style.display = '';
+    }
+  }
   renderNovenaSupportPanel(data);
 }
 
@@ -620,6 +654,112 @@ function getChapletSteps(id, lang) {
     return steps;
   }
 
+  // ── VIRGEN DE GUADALUPE (4 apariciones) ──────
+  if (id === 'guadalupe') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«Oh Virgen de Guadalupe, Madre del verdadero Dios por quien se vive:\nte apareciste a Juan Diego en el cerro del Tepeyac para traernos a todos tu amor maternal.\nAcudo a ti con fe y te pido que intercedas por mí ante tu amado Hijo Jesús.»'
+      : '«O Virgin of Guadalupe, Mother of the true God through whom one lives:\nyou appeared to Juan Diego at Tepeyac Hill to bring us all your maternal love.\nI come to you with faith and ask you to intercede for me before your beloved Son Jesus.»',
+      count: 1, bead: 'none' };
+    const apariciones = L ? [
+      { nombre: 'Primera Aparición', desc: 'Sábado 9 de diciembre, mañana.\nMaría se aparece a Juan Diego y le pide que solicite al obispo la construcción de una ermita en el Tepeyac.', inv: '«Virgen de Guadalupe, que en tu primera aparición te revelaste como Madre del verdadero Dios:\nhaz que sintamos siempre tu presencia maternal.»' },
+      { nombre: 'Segunda Aparición', desc: 'Sábado 9 de diciembre, tarde.\nAnte la negativa del obispo, la Virgen anima a Juan Diego y le pide que regrese con la misma petición.', inv: '«Virgen de Guadalupe, que persististe en tu amor con paciencia:\nenséñanos a no rendirnos y a confiar siempre en Dios.»' },
+      { nombre: 'Tercera Aparición', desc: 'Domingo 10 de diciembre.\nLa Virgen consuela a Juan Diego y le asegura: "¿Acaso no estoy yo aquí que soy tu Madre?"', inv: '«Virgen de Guadalupe, que consolaste a Juan Diego en su duda:\nconsuela también nuestra debilidad y fortalece nuestra fe.»' },
+      { nombre: 'Cuarta Aparición', desc: 'Martes 12 de diciembre.\nLa Virgen envía a Juan Diego a recoger rosas en el cerro. Al abrirse la tilma ante el obispo, aparece su imagen milagrosa.', inv: '«Virgen de Guadalupe, que dejaste tu imagen como señal de amor eterno:\npermanece siempre con nosotros y llévanos a tu Hijo Jesús.»' },
+    ] : [
+      { nombre: 'First Apparition', desc: 'Saturday, December 9, morning.\nMary appears to Juan Diego and asks him to request the bishop to build a chapel at Tepeyac.', inv: '«Virgin of Guadalupe, who revealed yourself as Mother of the true God:\nmay we always feel your maternal presence beside us.»' },
+      { nombre: 'Second Apparition', desc: 'Saturday, December 9, afternoon.\nAfter the bishop refuses, the Virgin encourages Juan Diego and asks him to return the following day.', inv: '«Virgin of Guadalupe, who persisted in your love with patience:\nteach us not to give up and to always trust in God.»' },
+      { nombre: 'Third Apparition', desc: 'Sunday, December 10.\nThe Virgin consoles Juan Diego and assures him: "Am I not here who am your Mother?"', inv: '«Virgin of Guadalupe, who consoled Juan Diego in his doubt:\nconsole our weakness too and strengthen our faith.»' },
+      { nombre: 'Fourth Apparition', desc: 'Tuesday, December 12.\nThe Virgin sends Juan Diego to gather roses on the hill. When his tilma is opened before the bishop, the miraculous image appears.', inv: '«Virgin of Guadalupe, who left your image as a sign of eternal love:\nremain always with us and lead us to your Son Jesus.»' },
+    ];
+    const closing = { label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«Oh Santísima Virgen de Guadalupe, Emperatriz de las Américas, Madre de todos los pueblos:\nTe presentamos nuestras necesidades y nuestras esperanzas.\nTú que dijiste ser la Madre del género humano,\nsé nuestra Madre también a nosotros.\nIntercede ante tu Hijo por nuestra intención.\nSanta María de Guadalupe, ruega por nosotros. Amén.»'
+      : '«O Most Holy Virgin of Guadalupe, Empress of the Americas, Mother of all peoples:\nWe present to you our needs and our hopes.\nYou who declared yourself Mother of all humanity,\nbe our Mother too.\nIntercede before your Son for our intention.\nHoly Mary of Guadalupe, pray for us. Amen.»',
+      count: 1, bead: 'none' };
+    const steps = [cruz, opening];
+    apariciones.forEach((ap, i) => {
+      steps.push({ label: ap.nombre, text: ap.desc, count: 1, bead: 'none' });
+      steps.push({ ...pn, label: L ? `Padre Nuestro · Aparición ${i+1}` : `Our Father · Apparition ${i+1}` });
+      steps.push({ ...am, label: L ? `Ave María · Aparición ${i+1}` : `Hail Mary · Apparition ${i+1}` });
+      steps.push({ label: L ? `Invocación · ${ap.nombre}` : `Invocation · ${ap.nombre}`, text: ap.inv, count: 1, bead: 'none' });
+    });
+    steps.push(closing, { ...cruz, label: L ? 'Señal de la Cruz final' : 'Final Sign of the Cross' });
+    return steps;
+  }
+
+  // ── INMACULADO CORAZÓN DE MARÍA ───────────────
+  if (id === 'inmaculadocorazon') {
+    const opening = { label: L ? 'Oración de Apertura' : 'Opening Prayer', text: L
+      ? '«Oh María, te ofrezco esta coronilla en reparación de las ofensas cometidas contra tu Inmaculado Corazón, y en unión con todos los actos de amor y reparación del mundo entero.»'
+      : '«O Mary, I offer you this chaplet in reparation for all offenses against your Immaculate Heart, and in union with every act of love and reparation throughout the world.»',
+      count: 1, bead: 'none' };
+    const large = { label: '', text: L
+      ? '«Oh Dios mío, Te amo sobre todas las cosas. Perdona a los que no Te aman ni creen en Ti. Lleva al Cielo a todas las almas, especialmente a las más necesitadas de Tu misericordia.»'
+      : '«O my God, I love You above all things. Forgive those who do not love You or believe in You. Lead all souls to Heaven, especially those most in need of Your mercy.»',
+      count: 1, bead: 'large' };
+    const small = { label: '', text: L
+      ? '«Inmaculado Corazón de María, ruega por nosotros y por los pobres pecadores.»'
+      : '«Immaculate Heart of Mary, pray for us and for poor sinners.»',
+      count: 10, bead: 'small' };
+    const fatimaOration = { label: L ? 'Oración de Fátima' : 'Fátima Prayer', text: L
+      ? '«Oh Jesús mío, perdona nuestros pecados, líbranos del fuego del infierno, lleva al Cielo a todas las almas, especialmente a las más necesitadas de Tu misericordia.»'
+      : '«O my Jesus, forgive us our sins, save us from the fire of hell, lead all souls to Heaven, especially those most in need of Thy mercy.»',
+      count: 1, bead: 'none' };
+    const closing = { label: L ? 'Oración Final × 3' : 'Closing Prayer × 3', text: L
+      ? '«Virgen Purísima, que sin mancha fuiste concebida,\nruega a Dios por nosotros que recurrimos a Ti.»'
+      : '«Most Pure Virgin, conceived without stain,\npray to God for us who have recourse to Thee.»',
+      count: 3, bead: 'none' };
+    const final = { label: L ? 'Acto de Consagración' : 'Act of Consecration', text: L
+      ? '«Inmaculado Corazón de María, sé mi salvación.»'
+      : '«Immaculate Heart of Mary, be my salvation.»',
+      count: 1, bead: 'none' };
+    const steps = [opening];
+    for (let d = 1; d <= 5; d++) {
+      steps.push({ ...large, label: L ? `Cuenta Grande · Decena ${d}` : `Large Bead · Decade ${d}` });
+      steps.push({ ...small, label: L ? `Cuentas Pequeñas · Decena ${d}` : `Small Beads · Decade ${d}` });
+      steps.push({ ...fatimaOration, label: L ? `Oración de Fátima · Decena ${d}` : `Fátima Prayer · Decade ${d}` });
+    }
+    steps.push(closing, final);
+    return steps;
+  }
+
+  // ── SAN JOSÉ (7 Dolores y Gozos) ──────────────
+  if (id === 'sanjose') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«Oh San José, esposo castísimo de la Virgen María y padre adoptivo de Jesús:\ncon esta coronilla te honramos meditando tus dolores y tus gozos.\nIntercede por nosotros ante Dios Padre.»'
+      : '«O Saint Joseph, most chaste spouse of the Virgin Mary and adoptive father of Jesus:\nwith this chaplet we honor you by meditating on your sorrows and joys.\nIntercede for us before God the Father.»',
+      count: 1, bead: 'none' };
+    const grupos = L ? [
+      { nombre: '1° Dolor y Gozo', texto: 'Dolor: Tu turbación al conocer el misterioso embarazo de María.\nGozo: La revelación del ángel que te confió el misterio de la Encarnación.', inv: '«San José, que en tu turbación recibiste luz del cielo:\nilumínanos en nuestras dudas y ayúdanos a confiar en Dios.»' },
+      { nombre: '2° Dolor y Gozo', texto: 'Dolor: La pobreza del nacimiento de Jesús en Belén, sin casa ni calor.\nGozo: El nacimiento del Salvador del mundo, al que pudiste tener en tus brazos.', inv: '«San José, que acogiste al Hijo de Dios con amor de padre:\nenséñanos a recibir a Jesús con humildad y gratitud.»' },
+      { nombre: '3° Dolor y Gozo', texto: 'Dolor: La sangre derramada por Jesús en la Circuncisión al octavo día.\nGozo: La imposición del Santo Nombre de Jesús, que fuiste honrado en proclamar.', inv: '«San José, guardián del Santo Nombre:\nayúdanos a honrar siempre el Nombre de Jesús.»' },
+      { nombre: '4° Dolor y Gozo', texto: 'Dolor: La profecía de Simeón sobre la espada que traspasaría el alma de María.\nGozo: La Presentación de Jesús en el Templo y el reconocimiento del Mesías.', inv: '«San José, que ofreciste al Hijo de Dios al Padre celestial:\nayúdanos a ofrecernos también nosotros al Señor con generosidad.»' },
+      { nombre: '5° Dolor y Gozo', texto: 'Dolor: La angustiosa huida a Egipto para salvar la vida del Niño Jesús.\nGozo: Haber sido elegido por Dios para proteger al Salvador del mundo.', inv: '«San José, protector de la Sagrada Familia:\nprotégenos a nosotros y a nuestras familias.»' },
+      { nombre: '6° Dolor y Gozo', texto: 'Dolor: El temor al regresar de Egipto al enterarse del reinado de Arquelao.\nGozo: Los años de vida santa y tranquila junto a Jesús y María en Nazaret.', inv: '«San José, padre del hogar de Nazaret:\nsantifica nuestros hogares y consagra nuestras familias al Señor.»' },
+      { nombre: '7° Dolor y Gozo', texto: 'Dolor: La angustia de tres días buscando a Jesús perdido en Jerusalén.\nGozo: El hallazgo de Jesús en el Templo, sentado entre los doctores de la Ley.', inv: '«San José, que buscaste a Jesús con angustia y lo encontraste con gozo:\nayúdanos a buscar siempre a Jesús en nuestra vida.»' },
+    ] : [
+      { nombre: '1st Sorrow & Joy', texto: 'Sorrow: Your distress upon learning of Mary\'s mysterious pregnancy.\nJoy: The angel\'s revelation entrusting you with the mystery of the Incarnation.', inv: '«Saint Joseph, who received heavenly light in your distress:\nilluminate us in our doubts and help us trust in God.»' },
+      { nombre: '2nd Sorrow & Joy', texto: 'Sorrow: The poverty of Jesus\'s birth in Bethlehem, without shelter or warmth.\nJoy: The birth of the Savior of the world, whom you were privileged to hold in your arms.', inv: '«Saint Joseph, who welcomed the Son of God with a father\'s love:\nteach us to receive Jesus with humility and gratitude.»' },
+      { nombre: '3rd Sorrow & Joy', texto: 'Sorrow: The blood shed by Jesus at the Circumcision on the eighth day.\nJoy: The imposition of the Holy Name of Jesus, which you were honored to proclaim.', inv: '«Saint Joseph, guardian of the Holy Name:\nhelp us always to honor the Name of Jesus.»' },
+      { nombre: '4th Sorrow & Joy', texto: 'Sorrow: Simeon\'s prophecy about the sword that would pierce Mary\'s soul.\nJoy: The Presentation of Jesus in the Temple and the recognition of the Messiah.', inv: '«Saint Joseph, who offered the Son of God to the heavenly Father:\nhelp us to offer ourselves to the Lord with generosity.»' },
+      { nombre: '5th Sorrow & Joy', texto: 'Sorrow: The anguished flight into Egypt to save the life of the Child Jesus.\nJoy: Having been chosen by God to protect the Savior of the world.', inv: '«Saint Joseph, protector of the Holy Family:\nprotect us and our families from all danger.»' },
+      { nombre: '6th Sorrow & Joy', texto: 'Sorrow: The fear upon returning from Egypt upon learning of Archelaus\' reign.\nJoy: The years of holy and peaceful life alongside Jesus and Mary in Nazareth.', inv: '«Saint Joseph, father of the home of Nazareth:\nsanctify our homes and consecrate our families to the Lord.»' },
+      { nombre: '7th Sorrow & Joy', texto: 'Sorrow: The anguish of three days searching for the lost Jesus in Jerusalem.\nJoy: Finding Jesus in the Temple, seated among the doctors of the Law.', inv: '«Saint Joseph, who searched for Jesus in anguish and found him with joy:\nhelp us to always seek Jesus in our lives.»' },
+    ];
+    const closing = { label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«Oh gloriosísimo San José,\ncuyas siete dolores y gozos hemos meditado:\nobtén para nosotros de tu divino Hijo\ntodas las gracias necesarias para nuestra salvación.\nSé nuestro abogado en la hora de la muerte\ny alcánzanos una muerte santa,\ncomo la tuya, en los brazos de Jesús y María.\nAmén.»'
+      : '«O most glorious Saint Joseph,\nwhose seven sorrows and joys we have meditated:\nobtain for us from your divine Son\nall the graces we need for our salvation.\nBe our advocate in the hour of death\nand obtain for us a holy death,\nlike yours, in the arms of Jesus and Mary.\nAmen.»',
+      count: 1, bead: 'none' };
+    const steps = [cruz, opening];
+    grupos.forEach((g, i) => {
+      steps.push({ label: g.nombre, text: g.texto, count: 1, bead: 'none' });
+      steps.push({ ...pn, label: L ? `Padre Nuestro · ${g.nombre}` : `Our Father · ${g.nombre}` });
+      steps.push({ label: L ? `Ave María × 7 · ${g.nombre}` : `Hail Mary × 7 · ${g.nombre}`, text: p.am, count: 7, bead: 'small' });
+      steps.push({ label: L ? `Invocación · ${g.nombre}` : `Invocation · ${g.nombre}`, text: g.inv, count: 1, bead: 'none' });
+    });
+    steps.push(closing, { ...cruz, label: L ? 'Señal de la Cruz final' : 'Final Sign of the Cross' });
+    return steps;
+  }
+
   return [];
 }
 
@@ -743,6 +883,14 @@ function renderNovenaSupportPanel(data) {
 function initTabs(meta) {
   const chapletBtn = document.querySelector('.chaplet-tab');
   if (chapletBtn && meta.chaplet) chapletBtn.classList.add('visible');
+
+  const litanyBtn = document.querySelector('.litany-tab');
+  if (litanyBtn && intercessorData && intercessorData.litany && intercessorData.litany.available)
+    litanyBtn.classList.add('visible');
+
+  const consecrationBtn = document.querySelector('.consecration-tab');
+  if (consecrationBtn && intercessorData && intercessorData.consecration && intercessorData.consecration.available)
+    consecrationBtn.classList.add('visible');
 
   document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => {

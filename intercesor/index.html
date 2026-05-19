@@ -64,6 +64,8 @@
       <button class="tab-btn" data-tab="history" role="tab" data-i18n="tab_history">History</button>
       <button class="tab-btn" data-tab="novena" role="tab" data-i18n="tab_novena">Novena</button>
       <button class="tab-btn chaplet-tab" data-tab="chaplet" role="tab" data-i18n="tab_chaplet">Chaplet</button>
+      <button class="tab-btn litany-tab" data-tab="litany" role="tab" data-i18n="tab_litany">Litany</button>
+      <button class="tab-btn consecration-tab" data-tab="consecration" role="tab" data-i18n="tab_consecration">Consecration</button>
     </nav>
 
     <!-- TAB PANELS -->
@@ -141,6 +143,22 @@
         </div>
         <div class="no-chaplet content-card" id="noChaplet" style="display:none">
           <p data-i18n="no_chaplet">No chaplet available for this intercessor.</p>
+        </div>
+      </section>
+
+      <!-- LITANY -->
+      <section class="tab-panel" id="tab-litany" role="tabpanel">
+        <div class="litany-text content-card" id="litanyText" style="display:none"></div>
+        <div class="no-litany content-card" id="noLitany" style="display:none">
+          <p data-i18n="no_litany">No litany available for this intercessor.</p>
+        </div>
+      </section>
+
+      <!-- CONSECRATION -->
+      <section class="tab-panel" id="tab-consecration" role="tabpanel">
+        <div class="consecration-text content-card" id="consecrationText" style="display:none"></div>
+        <div class="no-consecration content-card" id="noConsecration" style="display:none">
+          <p data-i18n="no_consecration">No consecration available for this intercessor.</p>
         </div>
       </section>
 
