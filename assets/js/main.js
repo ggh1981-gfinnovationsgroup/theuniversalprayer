@@ -9,7 +9,7 @@
 const i18n = {
   en: {
     site_title:         'The Universal Prayer',
-    hero_title:         'Pray with the Saints',
+    hero_title:         'The Universal Prayer',
     hero_subtitle:      'Novenas, chaplets and prayers for every intercessor — free, always.',
     choose_intercessor: 'Choose your intercessor',
     feast_day:          'Feast Day:',
@@ -29,7 +29,7 @@ const i18n = {
   },
   es: {
     site_title:         'La Oración Universal',
-    hero_title:         'Reza con los Santos',
+    hero_title:         'La Oración Universal',
     hero_subtitle:      'Novenas, chaplets y oraciones para cada intercesor — gratis, siempre.',
     choose_intercessor: 'Elige tu intercesor',
     feast_day:          'Día festivo:',
@@ -51,17 +51,19 @@ const i18n = {
 
 // ── ALL KNOWN INTERCESSORS ─────────────────────────
 const INTERCESSORS = [
-  { id: 'padrepio',      subdomain: 'padrepio',      chaplet: true,  novena: true,  name: { en: 'Padre Pio',             es: 'Padre Pío'            } },
-  { id: 'misericordia',  subdomain: 'misericordia',  chaplet: true,  novena: true,  name: { en: 'Divine Mercy',          es: 'Divina Misericordia'  } },
-  { id: 'guadalupe',     subdomain: 'guadalupe',     chaplet: false, novena: true,  name: { en: 'Our Lady of Guadalupe', es: 'Virgen de Guadalupe'  } },
-  { id: 'sagradocorazon',subdomain: 'sagradocorazon',chaplet: true,  novena: true,  name: { en: 'Sacred Heart',          es: 'Sagrado Corazón'      } },
-  { id: 'sanjose',       subdomain: 'sanjose',       chaplet: false, novena: true,  name: { en: 'Saint Joseph',          es: 'San José'             } },
-  { id: 'fatima',        subdomain: 'fatima',        chaplet: true,  novena: true,  name: { en: 'Our Lady of Fatima',    es: 'Virgen de Fátima'          } },
-  { id: 'sanjudas',      subdomain: 'sanjudas',      chaplet: true,  novena: true,  name: { en: 'Saint Jude Thaddaeus',  es: 'San Judas Tadeo'           } },
-  { id: 'juanpablo',     subdomain: 'juanpablo',     chaplet: false, novena: true,  name: { en: 'Saint John Paul II',    es: 'San Juan Pablo II'         } },
-  { id: 'sanantonio',    subdomain: 'sanantonio',    chaplet: true,  novena: true,  name: { en: 'Saint Anthony of Padua',es: 'San Antonio de Padua'      } },
-  { id: 'teresacalcuta', subdomain: 'teresacalcuta', chaplet: false, novena: true,  name: { en: 'Saint Teresa of Calcutta', es: 'Santa Teresa de Calcuta' } },
-  { id: 'sanmiguel',     subdomain: 'sanmiguel',     chaplet: true,  novena: true,  name: { en: 'Saint Michael the Archangel', es: 'San Miguel Arcángel' } },
+  { id: 'misericordia',      subdomain: 'misericordia',      chaplet: true,  novena: true,  color: '#a01818', short: { es: 'D. Misericordia', en: 'Divine Mercy'     }, name: { en: 'Divine Mercy',                          es: 'Divina Misericordia'                      } },
+  { id: 'inmaculadocorazon', subdomain: 'inmaculadocorazon', chaplet: false, novena: true,  color: '#1a5fa0', short: { es: 'Inm. Corazón',    en: 'Imm. Heart'       }, name: { en: 'Immaculate Heart of Mary',               es: 'Inmaculado Corazón de María'               } },
+  { id: 'sagradocorazon',    subdomain: 'sagradocorazon',    chaplet: true,  novena: true,  color: '#7a1515', short: { es: 'S. Corazón',      en: 'Sacred Heart'     }, name: { en: 'Sacred Heart',                          es: 'Sagrado Corazón'                          } },
+  { id: 'guadalupe',         subdomain: 'guadalupe',         chaplet: false, novena: true,  color: '#7a6010', short: { es: 'Guadalupe',        en: 'Guadalupe'        }, name: { en: 'Our Lady of Guadalupe',                 es: 'Virgen de Guadalupe'                      } },
+  { id: 'fatima',            subdomain: 'fatima',            chaplet: true,  novena: true,  color: '#1a4a7a', short: { es: 'Fátima',           en: 'Fátima'           }, name: { en: 'Our Lady of Fatima',                    es: 'Virgen de Fátima'                         } },
+  { id: 'padrepio',          subdomain: 'padrepio',          chaplet: true,  novena: true,  color: '#5a3828', short: { es: 'Padre Pío',        en: 'Padre Pio'        }, name: { en: 'Padre Pio',                             es: 'Padre Pío'                                } },
+  { id: 'sanjose',           subdomain: 'sanjose',           chaplet: false, novena: true,  color: '#7a5e18', short: { es: 'San José',         en: 'St. Joseph'       }, name: { en: 'Saint Joseph',                          es: 'San José'                                 } },
+  { id: 'sanjudas',          subdomain: 'sanjudas',          chaplet: true,  novena: true,  color: '#1a6a3a', short: { es: 'San Judas',        en: 'St. Jude'         }, name: { en: 'Saint Jude Thaddaeus',                  es: 'San Judas Tadeo'                          } },
+  { id: 'juanpablo',         subdomain: 'juanpablo',         chaplet: false, novena: true,  color: '#2a3a5a', short: { es: 'Juan Pablo II',    en: 'John Paul II'     }, name: { en: 'Saint John Paul II',                    es: 'San Juan Pablo II'                        } },
+  { id: 'sanantonio',        subdomain: 'sanantonio',        chaplet: true,  novena: true,  color: '#6a3018', short: { es: 'San Antonio',      en: 'St. Anthony'      }, name: { en: 'Saint Anthony of Padua',                es: 'San Antonio de Padua'                     } },
+  { id: 'teresacalcuta',     subdomain: 'teresacalcuta',     chaplet: false, novena: true,  color: '#1a3a7a', short: { es: 'Sta. Teresa',      en: 'St. Teresa'       }, name: { en: 'Saint Teresa of Calcutta',              es: 'Santa Teresa de Calcuta'                  } },
+  { id: 'sanmiguel',         subdomain: 'sanmiguel',         chaplet: true,  novena: true,  color: '#253070', short: { es: 'San Miguel',       en: 'St. Michael'      }, name: { en: 'Saint Michael the Archangel',           es: 'San Miguel Arcángel'                      } },
+  { id: 'divinaprovidencia', subdomain: 'divinaprovidencia', chaplet: false, novena: true,  color: '#7a5a00', short: { es: 'D. Providencia',   en: 'D. Providence'    }, name: { en: 'Our Lady of Divine Providence',         es: 'Nuestra Señora de la Divina Providencia'  } },
 ];
 
 // ── STATE ──────────────────────────────────────────
@@ -100,6 +102,9 @@ function setLanguage(lang) {
 
   // Re-render menu items in new language
   if (window._renderMenuItems) window._renderMenuItems();
+
+  // Re-render quick nav labels in new language
+  if (window._renderQuickNav) window._renderQuickNav();
 
   // If intercessor is loaded, refresh dynamic content
   if (intercessorData) renderIntercessorContent(intercessorData);
@@ -173,6 +178,38 @@ function buildCard(data, meta) {
 
 function buildIntercessorUrl(subdomain) {
   return `/intercesor/?intercesor=${subdomain}`;
+}
+
+// ── QUICK NAV ──────────────────────────────────────
+function renderQuickNav() {
+  const nav = document.getElementById('quickNav');
+  if (!nav) return;
+
+  const inner = document.createElement('div');
+  inner.className = 'quick-nav-inner';
+
+  for (const m of INTERCESSORS) {
+    const item = document.createElement('a');
+    item.className = 'quick-nav-item';
+    item.href = buildIntercessorUrl(m.subdomain);
+    if (m.color) item.style.setProperty('--item-color', m.color);
+
+    const circle = document.createElement('div');
+    circle.className = 'quick-nav-circle';
+    circle.style.backgroundImage = `url('/assets/images/${m.id}.svg')`;
+    if (m.color) circle.style.backgroundColor = m.color;
+
+    const label = document.createElement('span');
+    label.className = 'quick-nav-label';
+    label.textContent = (m.short && m.short[currentLang]) || m.name[currentLang];
+
+    item.appendChild(circle);
+    item.appendChild(label);
+    inner.appendChild(item);
+  }
+
+  nav.innerHTML = '';
+  nav.appendChild(inner);
 }
 
 // ── INTERCESSOR PAGE ───────────────────────────────
@@ -370,12 +407,15 @@ function initMenu() {
     if (!isIntercessorPage()) {
       const grid = document.getElementById('intercessorsGrid');
       if (grid) { grid.innerHTML = ''; initHomePage(); }
+      renderQuickNav();
     }
   });
 
   if (isIntercessorPage()) {
     initIntercessorPage();
   } else {
+    renderQuickNav();
+    window._renderQuickNav = renderQuickNav;
     initHomePage();
   }
 
