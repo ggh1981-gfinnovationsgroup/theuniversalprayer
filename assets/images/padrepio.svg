@@ -1,21 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
   <defs>
-    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
-      <stop offset="0%" stop-color="#1e2540"/>
-      <stop offset="100%" stop-color="#0a0d14"/>
+    <radialGradient id="pp-bg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#1e0d05"/>
+      <stop offset="100%" stop-color="#0a0602"/>
     </radialGradient>
-    <radialGradient id="glow" cx="50%" cy="42%" r="35%">
-      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    <radialGradient id="pp-glow" cx="50%" cy="38%" r="40%">
+      <stop offset="0%" stop-color="#cd853f" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#cd853f" stop-opacity="0"/>
     </radialGradient>
   </defs>
-  <rect width="800" height="600" fill="url(#bg)"/>
-  <rect width="800" height="600" fill="url(#glow)"/>
-  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.35"/>
-  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.2"/>
-  <text x="400" y="230" text-anchor="middle" font-family="Georgia,serif" font-size="96" fill="#c9a84c" opacity="0.9">✝</text>
-  <text x="400" y="338" text-anchor="middle" font-family="Georgia,serif" font-size="38" fill="#e8c97a" letter-spacing="2">Padre Pío</text>
-  <text x="400" y="384" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#c9a84c" opacity="0.7" font-style="italic">Padre Pio of Pietrelcina</text>
-  <line x1="310" y1="412" x2="490" y2="412" stroke="#c9a84c" stroke-width="0.6" stroke-opacity="0.4"/>
-  <text x="400" y="448" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#8a6e2f" letter-spacing="3">FEAST DAY · SEPTEMBER 23</text>
+  <rect width="800" height="600" fill="url(#pp-bg)"/>
+  <rect width="800" height="600" fill="url(#pp-glow)"/>
+  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#cd853f" stroke-width="1" stroke-opacity="0.4"/>
+  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#cd853f" stroke-width="0.5" stroke-opacity="0.2"/>
+  <!-- Capuchin brown accent strips -->
+  <rect x="28" y="28" width="6" height="544" rx="3" fill="#8b4513" opacity="0.65"/>
+  <rect x="766" y="28" width="6" height="544" rx="3" fill="#8b4513" opacity="0.65"/>
+  <!-- Cross vertical bar -->
+  <rect x="389" y="88" width="22" height="200" rx="4" fill="#cd853f" opacity="0.9"/>
+  <!-- Cross horizontal bar -->
+  <rect x="326" y="152" width="148" height="22" rx="4" fill="#cd853f" opacity="0.9"/>
+  <!-- Stigmata — top -->
+  <circle cx="400" cy="91" r="13" fill="#4a0000" opacity="0.9"/>
+  <circle cx="400" cy="91" r="7" fill="#c0392b" opacity="0.85"/>
+  <!-- bottom -->
+  <circle cx="400" cy="285" r="13" fill="#4a0000" opacity="0.9"/>
+  <circle cx="400" cy="285" r="7" fill="#c0392b" opacity="0.85"/>
+  <!-- left -->
+  <circle cx="329" cy="163" r="13" fill="#4a0000" opacity="0.9"/>
+  <circle cx="329" cy="163" r="7" fill="#c0392b" opacity="0.85"/>
+  <!-- right -->
+  <circle cx="471" cy="163" r="13" fill="#4a0000" opacity="0.9"/>
+  <circle cx="471" cy="163" r="7" fill="#c0392b" opacity="0.85"/>
+  <!-- Capuchin cord — 3 knots: poverty, chastity, obedience -->
+  <path d="M 314 330 Q 357 308 400 317 Q 443 308 486 330" stroke="#cd853f" stroke-width="3" fill="none" stroke-opacity="0.65"/>
+  <line x1="314" y1="330" x2="306" y2="364" stroke="#cd853f" stroke-width="2.5" stroke-opacity="0.5"/>
+  <circle cx="344" cy="317" r="8" fill="none" stroke="#cd853f" stroke-width="2" stroke-opacity="0.75"/>
+  <circle cx="400" cy="311" r="8" fill="none" stroke="#cd853f" stroke-width="2" stroke-opacity="0.75"/>
+  <circle cx="456" cy="317" r="8" fill="none" stroke="#cd853f" stroke-width="2" stroke-opacity="0.75"/>
+  <!-- Name -->
+  <text x="400" y="410" text-anchor="middle" font-family="Georgia,serif" font-size="38" fill="#e8c97a" letter-spacing="2">Padre Pío</text>
+  <text x="400" y="450" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#cd853f" opacity="0.85" font-style="italic">Padre Pio of Pietrelcina</text>
+  <line x1="300" y1="474" x2="500" y2="474" stroke="#cd853f" stroke-width="0.6" stroke-opacity="0.4"/>
+  <text x="400" y="506" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#8a6e2f" letter-spacing="3">FEAST DAY · SEPTEMBER 23</text>
 </svg>

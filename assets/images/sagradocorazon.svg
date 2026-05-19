@@ -1,27 +1,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
   <defs>
-    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
-      <stop offset="0%" stop-color="#200d0d"/>
-      <stop offset="100%" stop-color="#0a0d14"/>
+    <radialGradient id="sc-bg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#180508"/>
+      <stop offset="100%" stop-color="#0a0304"/>
     </radialGradient>
-    <radialGradient id="glow" cx="50%" cy="42%" r="38%">
-      <stop offset="0%" stop-color="#c9404c" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    <radialGradient id="sc-glow" cx="50%" cy="42%" r="44%">
+      <stop offset="0%" stop-color="#e74c3c" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#e74c3c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sc-flame" cx="50%" cy="75%" r="55%">
+      <stop offset="0%" stop-color="#f39c12" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#e74c3c" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#c0392b" stop-opacity="0"/>
     </radialGradient>
   </defs>
-  <rect width="800" height="600" fill="url(#bg)"/>
-  <rect width="800" height="600" fill="url(#glow)"/>
-  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.35"/>
-  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.2"/>
-  <!-- Heart with flames suggestion -->
-  <circle cx="400" cy="185" r="70" fill="none" stroke="#c9404c" stroke-width="1.8" stroke-opacity="0.55"/>
-  <circle cx="400" cy="185" r="54" fill="none" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.3"/>
-  <!-- cross on top of heart -->
-  <text x="400" y="215" text-anchor="middle" font-family="Georgia,serif" font-size="80" fill="#c9404c" opacity="0.75">♡</text>
-  <text x="400" y="185" text-anchor="middle" font-family="Georgia,serif" font-size="38" fill="#c9a84c" opacity="0.9">✝</text>
-  <text x="400" y="338" text-anchor="middle" font-family="Georgia,serif" font-size="28" fill="#e8c97a" letter-spacing="1">Sagrado Corazón de Jesús</text>
-  <text x="400" y="380" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#c9a84c" opacity="0.7" font-style="italic">Sacred Heart of Jesus</text>
-  <text x="400" y="414" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#c9a84c" opacity="0.65" font-style="italic">«Sagrado Corazón de Jesús, confío en Ti»</text>
-  <line x1="250" y1="440" x2="550" y2="440" stroke="#c9a84c" stroke-width="0.6" stroke-opacity="0.4"/>
-  <text x="400" y="474" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#8a6e2f" letter-spacing="3">FRIDAY AFTER CORPUS CHRISTI</text>
+  <rect width="800" height="600" fill="url(#sc-bg)"/>
+  <rect width="800" height="600" fill="url(#sc-glow)"/>
+  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#e74c3c" stroke-width="1" stroke-opacity="0.4"/>
+  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#e74c3c" stroke-width="0.5" stroke-opacity="0.2"/>
+  <!-- Crimson accent strips -->
+  <rect x="28" y="28" width="6" height="544" rx="3" fill="#c0392b" opacity="0.7"/>
+  <rect x="766" y="28" width="6" height="544" rx="3" fill="#c0392b" opacity="0.7"/>
+  <!-- Crown of thorns ring -->
+  <circle cx="400" cy="200" r="105" fill="none" stroke="#6b3510" stroke-width="3" stroke-dasharray="5,7" stroke-opacity="0.55"/>
+  <!-- Thorn spikes -->
+  <line x1="400" y1="95"  x2="400" y2="84"  stroke="#6b3510" stroke-width="2" stroke-opacity="0.65"/>
+  <line x1="466" y1="110" x2="473" y2="101" stroke="#6b3510" stroke-width="2" stroke-opacity="0.6"/>
+  <line x1="505" y1="161" x2="514" y2="155" stroke="#6b3510" stroke-width="2" stroke-opacity="0.6"/>
+  <line x1="334" y1="110" x2="327" y2="101" stroke="#6b3510" stroke-width="2" stroke-opacity="0.6"/>
+  <line x1="295" y1="161" x2="286" y2="155" stroke="#6b3510" stroke-width="2" stroke-opacity="0.6"/>
+  <line x1="295" y1="240" x2="286" y2="246" stroke="#6b3510" stroke-width="2" stroke-opacity="0.55"/>
+  <line x1="505" y1="240" x2="514" y2="246" stroke="#6b3510" stroke-width="2" stroke-opacity="0.55"/>
+  <!-- Heart body -->
+  <path d="M 400 290 C 400 290 308 236 308 178 C 308 134 352 120 400 158 C 448 120 492 134 492 178 C 492 236 400 290 400 290 Z" fill="#8e0c0c" stroke="#e74c3c" stroke-width="2" stroke-opacity="0.65"/>
+  <!-- Heart inner glow -->
+  <path d="M 400 264 C 400 264 330 220 330 178 C 330 145 362 133 400 162 C 438 133 470 145 470 178 C 470 220 400 264 400 264 Z" fill="#c0392b" opacity="0.5"/>
+  <!-- Flame above heart -->
+  <ellipse cx="400" cy="132" rx="18" ry="32" fill="url(#sc-flame)" opacity="0.55"/>
+  <path d="M 400 102 C 393 116 384 130 389 142 C 393 152 407 152 411 142 C 416 130 407 116 400 102Z" fill="#f39c12" opacity="0.9"/>
+  <path d="M 400 110 C 396 122 391 133 394 142 C 396 149 404 149 406 142 C 409 133 404 122 400 110Z" fill="#fffde7" opacity="0.8"/>
+  <!-- Gold cross above flame -->
+  <rect x="395" y="82" width="10" height="32" fill="#e8c97a" opacity="0.95"/>
+  <rect x="382" y="93" width="36" height="10" fill="#e8c97a" opacity="0.95"/>
+  <!-- Name -->
+  <text x="400" y="378" text-anchor="middle" font-family="Georgia,serif" font-size="34" fill="#e8c97a" letter-spacing="1">Sagrado Corazón</text>
+  <text x="400" y="418" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#e74c3c" opacity="0.85" font-style="italic">Sacred Heart of Jesus</text>
+  <line x1="290" y1="444" x2="510" y2="444" stroke="#e74c3c" stroke-width="0.6" stroke-opacity="0.4"/>
+  <text x="400" y="476" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#8a6e2f" letter-spacing="2">FRIDAY AFTER CORPUS CHRISTI</text>
 </svg>

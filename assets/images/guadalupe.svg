@@ -1,27 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
   <defs>
-    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
-      <stop offset="0%" stop-color="#1a1e10"/>
-      <stop offset="100%" stop-color="#0a0d14"/>
+    <radialGradient id="gd-bg" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#071018"/>
+      <stop offset="100%" stop-color="#040a10"/>
     </radialGradient>
-    <radialGradient id="glow" cx="50%" cy="38%" r="38%">
-      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.20"/>
-      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    <radialGradient id="gd-glow" cx="50%" cy="42%" r="42%">
+      <stop offset="0%" stop-color="#16a085" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#16a085" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gd-rose" cx="50%" cy="60%" r="28%">
+      <stop offset="0%" stop-color="#e91e8c" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#e91e8c" stop-opacity="0"/>
     </radialGradient>
   </defs>
-  <rect width="800" height="600" fill="url(#bg)"/>
-  <rect width="800" height="600" fill="url(#glow)"/>
-  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.35"/>
-  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.2"/>
-  <!-- halo -->
-  <ellipse cx="400" cy="175" rx="80" ry="16" fill="none" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.5"/>
-  <!-- star-like rays -->
-  <circle cx="400" cy="175" r="55" fill="none" stroke="#c9a84c" stroke-width="0.8" stroke-opacity="0.3" stroke-dasharray="4 6"/>
-  <!-- silhouette -->
-  <text x="400" y="240" text-anchor="middle" font-family="Georgia,serif" font-size="80" fill="#c9a84c" opacity="0.8">☽</text>
-  <text x="400" y="342" text-anchor="middle" font-family="Georgia,serif" font-size="30" fill="#e8c97a" letter-spacing="1">Virgen de Guadalupe</text>
-  <text x="400" y="384" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#c9a84c" opacity="0.7" font-style="italic">Our Lady of Guadalupe</text>
-  <text x="400" y="416" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#c9a84c" opacity="0.6" font-style="italic">Emperatriz de las Américas</text>
-  <line x1="290" y1="440" x2="510" y2="440" stroke="#c9a84c" stroke-width="0.6" stroke-opacity="0.4"/>
-  <text x="400" y="474" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#8a6e2f" letter-spacing="3">FEAST DAY · DECEMBER 12</text>
+  <rect width="800" height="600" fill="url(#gd-bg)"/>
+  <rect width="800" height="600" fill="url(#gd-glow)"/>
+  <rect width="800" height="600" fill="url(#gd-rose)"/>
+  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#1abc9c" stroke-width="1" stroke-opacity="0.4"/>
+  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#1abc9c" stroke-width="0.5" stroke-opacity="0.2"/>
+  <rect x="28" y="28" width="6" height="544" rx="3" fill="#16a085" opacity="0.6"/>
+  <rect x="766" y="28" width="6" height="544" rx="3" fill="#16a085" opacity="0.6"/>
+  <!-- Sun rays behind figure (12 golden rays) -->
+  <line x1="400" y1="193" x2="400" y2="64"  stroke="#d4a017" stroke-width="2" stroke-opacity="0.4"/>
+  <line x1="400" y1="193" x2="467" y2="82"  stroke="#d4a017" stroke-width="1.5" stroke-opacity="0.35"/>
+  <line x1="400" y1="193" x2="514" y2="130" stroke="#d4a017" stroke-width="1.5" stroke-opacity="0.3"/>
+  <line x1="400" y1="193" x2="535" y2="193" stroke="#d4a017" stroke-width="1.5" stroke-opacity="0.3"/>
+  <line x1="400" y1="193" x2="514" y2="256" stroke="#d4a017" stroke-width="1.5" stroke-opacity="0.3"/>
+  <line x1="400" y1="193" x2="467" y2="304" stroke="#d4a017" stroke-width="1.5" stroke-opacity="0.35"/>
+  <line x1="400" y1="193" x2="400" y2="322" stroke="#d4a017" stroke-width="2" stroke-opacity="0.4"/>
+  <line x1="400" y1="193" x2="333" y2="304" stroke="#d4a017" stroke-width="1.5" stroke-opacity="0.35"/>
+  <line x1="400" y1="193" x2="286" y2="256" stroke="#d4a017" stroke-width="1.5" stroke-opacity="0.3"/>
+  <line x1="400" y1="193" x2="265" y2="193" stroke="#d4a017" stroke-width="1.5" stroke-opacity="0.3"/>
+  <line x1="400" y1="193" x2="286" y2="130" stroke="#d4a017" stroke-width="1.5" stroke-opacity="0.3"/>
+  <line x1="400" y1="193" x2="333" y2="82"  stroke="#d4a017" stroke-width="1.5" stroke-opacity="0.35"/>
+  <!-- Crescent moon at feet (gold disc + offset dark circle) -->
+  <circle cx="400" cy="298" r="43" fill="#c9a84c" opacity="0.72"/>
+  <circle cx="416" cy="285" r="35" fill="#040a10" opacity="0.93"/>
+  <!-- Stars on mantle (scattered gold stars) -->
+  <text x="388" y="92"  font-family="Arial" font-size="16" fill="#d4a017" opacity="0.88" text-anchor="middle">★</text>
+  <text x="428" y="104" font-family="Arial" font-size="12" fill="#d4a017" opacity="0.75" text-anchor="middle">★</text>
+  <text x="348" y="122" font-family="Arial" font-size="13" fill="#d4a017" opacity="0.8"  text-anchor="middle">★</text>
+  <text x="460" y="138" font-family="Arial" font-size="14" fill="#d4a017" opacity="0.72" text-anchor="middle">★</text>
+  <text x="320" y="168" font-family="Arial" font-size="11" fill="#d4a017" opacity="0.68" text-anchor="middle">★</text>
+  <text x="480" y="174" font-family="Arial" font-size="12" fill="#d4a017" opacity="0.68" text-anchor="middle">★</text>
+  <text x="307" y="212" font-family="Arial" font-size="10" fill="#d4a017" opacity="0.6"  text-anchor="middle">★</text>
+  <text x="493" y="216" font-family="Arial" font-size="11" fill="#d4a017" opacity="0.6"  text-anchor="middle">★</text>
+  <text x="316" y="256" font-family="Arial" font-size="12" fill="#d4a017" opacity="0.65" text-anchor="middle">★</text>
+  <text x="484" y="260" font-family="Arial" font-size="10" fill="#d4a017" opacity="0.6"  text-anchor="middle">★</text>
+  <text x="344" y="286" font-family="Arial" font-size="11" fill="#d4a017" opacity="0.62" text-anchor="middle">★</text>
+  <text x="455" y="280" font-family="Arial" font-size="12" fill="#d4a017" opacity="0.62" text-anchor="middle">★</text>
+  <!-- Name -->
+  <text x="400" y="372" text-anchor="middle" font-family="Georgia,serif" font-size="30" fill="#e8c97a" letter-spacing="1">Virgen de Guadalupe</text>
+  <text x="400" y="412" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#1abc9c" opacity="0.85" font-style="italic">Our Lady of Guadalupe</text>
+  <line x1="280" y1="438" x2="520" y2="438" stroke="#1abc9c" stroke-width="0.6" stroke-opacity="0.4"/>
+  <text x="400" y="470" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#8a6e2f" letter-spacing="2">FEAST DAY · DECEMBER 12</text>
 </svg>
