@@ -25,6 +25,7 @@ const i18n = {
     footer_text:             'A free Catholic devotional resource. No ads. No tracking.',
     universal_prayer_title:  'The Universal and Definitive Prayer',
     universal_prayer_dedication: 'For every person who prays it — alone, as a couple, as a family or in a group',
+    menu_title:              'Intercessors',
   },
   es: {
     site_title:         'La Oración Universal',
@@ -44,17 +45,18 @@ const i18n = {
     footer_text:             'Un recurso devocional católico gratuito. Sin anuncios. Sin rastreo.',
     universal_prayer_title:  'La Oración Universal y Definitiva',
     universal_prayer_dedication: 'Para toda persona que la rece — solo, en pareja, en familia o en grupo',
+    menu_title:              'Intercesores',
   },
 };
 
 // ── ALL KNOWN INTERCESSORS ─────────────────────────
 const INTERCESSORS = [
-  { id: 'padrepio',      subdomain: 'padrepio',      chaplet: true,  novena: true  },
-  { id: 'misericordia',  subdomain: 'misericordia',  chaplet: true,  novena: true  },
-  { id: 'guadalupe',     subdomain: 'guadalupe',     chaplet: false, novena: true  },
-  { id: 'sagradocorazon',subdomain: 'sagradocorazon',chaplet: true,  novena: true  },
-  { id: 'sanjose',       subdomain: 'sanjose',       chaplet: false, novena: true  },
-  { id: 'fatima',        subdomain: 'fatima',        chaplet: true,  novena: true  },
+  { id: 'padrepio',      subdomain: 'padrepio',      chaplet: true,  novena: true,  name: { en: 'Padre Pio',          es: 'Padre Pío'            } },
+  { id: 'misericordia',  subdomain: 'misericordia',  chaplet: true,  novena: true,  name: { en: 'Divine Mercy',       es: 'Divina Misericordia'  } },
+  { id: 'guadalupe',     subdomain: 'guadalupe',     chaplet: false, novena: true,  name: { en: 'Our Lady of Guadalupe', es: 'Virgen de Guadalupe' } },
+  { id: 'sagradocorazon',subdomain: 'sagradocorazon',chaplet: true,  novena: true,  name: { en: 'Sacred Heart',       es: 'Sagrado Corazón'      } },
+  { id: 'sanjose',       subdomain: 'sanjose',       chaplet: false, novena: true,  name: { en: 'Saint Joseph',       es: 'San José'             } },
+  { id: 'fatima',        subdomain: 'fatima',        chaplet: true,  novena: true,  name: { en: 'Our Lady of Fatima', es: 'Virgen de Fátima'     } },
 ];
 
 // ── STATE ──────────────────────────────────────────
@@ -90,6 +92,9 @@ function setLanguage(lang) {
   document.querySelectorAll('[data-lang]').forEach(el => {
     el.style.display = el.getAttribute('data-lang') === lang ? 'block' : 'none';
   });
+
+  // Re-render menu items in new language
+  if (window._renderMenuItems) window._renderMenuItems();
 
   // If intercessor is loaded, refresh dynamic content
   if (intercessorData) renderIntercessorContent(intercessorData);
@@ -313,6 +318,38 @@ function showNotFound() {
   if (notFound) notFound.style.display = 'flex';
 }
 
+// ── HAMBURGER MENU ────────────────────────────────
+function initMenu() {
+  const btn     = document.getElementById('hamburgerBtn');
+  const nav     = document.getElementById('sideNav');
+  const overlay = document.getElementById('sideNavOverlay');
+  const close   = document.getElementById('sideNavClose');
+  const list    = document.getElementById('sideNavList');
+  if (!btn || !nav || !list) return;
+
+  // Populate list
+  function renderMenuItems() {
+    list.innerHTML = INTERCESSORS.map(m => `
+      <li>
+        <a class="side-nav-link" href="${buildIntercessorUrl(m.subdomain)}">
+          ${m.name[currentLang]}
+        </a>
+      </li>`).join('');
+  }
+  renderMenuItems();
+
+  // Re-render when language changes (called from setLanguage)
+  window._renderMenuItems = renderMenuItems;
+
+  const open  = () => { nav.classList.add('open'); overlay.classList.add('open'); };
+  const close_ = () => { nav.classList.remove('open'); overlay.classList.remove('open'); };
+
+  btn.addEventListener('click', open);
+  close.addEventListener('click', close_);
+  overlay.addEventListener('click', close_);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') close_(); });
+}
+
 // ── BOOT ───────────────────────────────────────────
 (function init() {
   currentLang = detectLanguage();
@@ -333,4 +370,6 @@ function showNotFound() {
   } else {
     initHomePage();
   }
+
+  initMenu();
 })();
