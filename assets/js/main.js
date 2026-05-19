@@ -51,13 +51,17 @@ const i18n = {
 
 // ── ALL KNOWN INTERCESSORS ─────────────────────────
 const INTERCESSORS = [
-  { id: 'padrepio',      subdomain: 'padrepio',      chaplet: true,  novena: true,  name: { en: 'Padre Pio',          es: 'Padre Pío'            } },
-  { id: 'misericordia',  subdomain: 'misericordia',  chaplet: true,  novena: true,  name: { en: 'Divine Mercy',       es: 'Divina Misericordia'  } },
-  { id: 'guadalupe',     subdomain: 'guadalupe',     chaplet: false, novena: true,  name: { en: 'Our Lady of Guadalupe', es: 'Virgen de Guadalupe' } },
-  { id: 'sagradocorazon',subdomain: 'sagradocorazon',chaplet: true,  novena: true,  name: { en: 'Sacred Heart',       es: 'Sagrado Corazón'      } },
-  { id: 'sanjose',       subdomain: 'sanjose',       chaplet: false, novena: true,  name: { en: 'Saint Joseph',       es: 'San José'             } },
-  { id: 'fatima',        subdomain: 'fatima',        chaplet: true,  novena: true,  name: { en: 'Our Lady of Fatima',     es: 'Virgen de Fátima'          } },
+  { id: 'padrepio',      subdomain: 'padrepio',      chaplet: true,  novena: true,  name: { en: 'Padre Pio',             es: 'Padre Pío'            } },
+  { id: 'misericordia',  subdomain: 'misericordia',  chaplet: true,  novena: true,  name: { en: 'Divine Mercy',          es: 'Divina Misericordia'  } },
+  { id: 'guadalupe',     subdomain: 'guadalupe',     chaplet: false, novena: true,  name: { en: 'Our Lady of Guadalupe', es: 'Virgen de Guadalupe'  } },
+  { id: 'sagradocorazon',subdomain: 'sagradocorazon',chaplet: true,  novena: true,  name: { en: 'Sacred Heart',          es: 'Sagrado Corazón'      } },
+  { id: 'sanjose',       subdomain: 'sanjose',       chaplet: false, novena: true,  name: { en: 'Saint Joseph',          es: 'San José'             } },
+  { id: 'fatima',        subdomain: 'fatima',        chaplet: true,  novena: true,  name: { en: 'Our Lady of Fatima',    es: 'Virgen de Fátima'          } },
   { id: 'sanjudas',      subdomain: 'sanjudas',      chaplet: true,  novena: true,  name: { en: 'Saint Jude Thaddaeus',  es: 'San Judas Tadeo'           } },
+  { id: 'juanpablo',     subdomain: 'juanpablo',     chaplet: false, novena: true,  name: { en: 'Saint John Paul II',    es: 'San Juan Pablo II'         } },
+  { id: 'sanantonio',    subdomain: 'sanantonio',    chaplet: true,  novena: true,  name: { en: 'Saint Anthony of Padua',es: 'San Antonio de Padua'      } },
+  { id: 'teresacalcuta', subdomain: 'teresacalcuta', chaplet: false, novena: true,  name: { en: 'Saint Teresa of Calcutta', es: 'Santa Teresa de Calcuta' } },
+  { id: 'sanmiguel',     subdomain: 'sanmiguel',     chaplet: true,  novena: true,  name: { en: 'Saint Michael the Archangel', es: 'San Miguel Arcángel' } },
 ];
 
 // ── STATE ──────────────────────────────────────────
@@ -322,7 +326,18 @@ function initMenu() {
 
   // Populate list
   function renderMenuItems() {
-    list.innerHTML = INTERCESSORS.map(m => `
+    const homeHref   = isIntercessorPage() ? '/' : '#top';
+    const prayerHref = isIntercessorPage() ? '/#oracion-universal' : '#oracion-universal';
+    const homeLabel   = currentLang === 'es' ? '← Inicio' : '← Home';
+    const prayerLabel = currentLang === 'es' ? '✝ Oración Universal' : '✝ Universal Prayer';
+    const dividerLabel = currentLang === 'es' ? 'Intercesores' : 'Intercessors';
+
+    const topLinks = `
+      <li><a class="side-nav-link side-nav-home" href="${homeHref}">${homeLabel}</a></li>
+      <li><a class="side-nav-link side-nav-prayer" href="${prayerHref}">${prayerLabel}</a></li>
+      <li class="side-nav-divider"><span>${dividerLabel}</span></li>`;
+
+    list.innerHTML = topLinks + INTERCESSORS.map(m => `
       <li>
         <a class="side-nav-link" href="${buildIntercessorUrl(m.subdomain)}">
           ${m.name[currentLang]}

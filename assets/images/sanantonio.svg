@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="antBg" cx="50%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#1e0c00"/>
+      <stop offset="100%" stop-color="#0a0500"/>
+    </radialGradient>
+    <radialGradient id="antGlow" cx="50%" cy="35%" r="42%">
+      <stop offset="0%" stop-color="rgba(212,160,23,0.22)"/>
+      <stop offset="100%" stop-color="rgba(212,160,23,0)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background: dark Franciscan brown -->
+  <rect width="800" height="600" fill="url(#antBg)"/>
+  <rect width="800" height="600" fill="url(#antGlow)"/>
+
+  <!-- Accent strips: Franciscan brown + gold -->
+  <rect x="0" y="0" width="7" height="600" fill="#8b5e2a" opacity="0.8"/>
+  <rect x="7" y="0" width="3" height="600" fill="#d4a017" opacity="0.6"/>
+  <rect x="790" y="0" width="7" height="600" fill="#8b5e2a" opacity="0.8"/>
+  <rect x="787" y="0" width="3" height="600" fill="#d4a017" opacity="0.6"/>
+
+  <!-- Stem of lily -->
+  <line x1="400" y1="490" x2="400" y2="220" stroke="#3a7a3a" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Left branch -->
+  <line x1="395" y1="355" x2="295" y2="255" stroke="#3a7a3a" stroke-width="7" stroke-linecap="round"/>
+  <!-- Right branch -->
+  <line x1="405" y1="320" x2="505" y2="220" stroke="#3a7a3a" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Center bloom (top) — gold/white lily -->
+  <ellipse cx="400" cy="175" rx="28" ry="50" fill="#d4a017" opacity="0.92" transform="rotate(-5 400 175)"/>
+  <ellipse cx="413" cy="168" rx="18" ry="40" fill="#f0e68c" opacity="0.65" transform="rotate(8 413 168)"/>
+  <ellipse cx="388" cy="168" rx="18" ry="40" fill="#f0e68c" opacity="0.55" transform="rotate(-8 388 168)"/>
+  <!-- Center stamen -->
+  <ellipse cx="400" cy="185" rx="6" ry="9" fill="#fff9d4" opacity="0.9"/>
+
+  <!-- Left bloom -->
+  <ellipse cx="268" cy="218" rx="24" ry="44" fill="#d4a017" opacity="0.88" transform="rotate(-40 268 218)"/>
+  <ellipse cx="278" cy="210" rx="15" ry="34" fill="#f0e68c" opacity="0.55" transform="rotate(-28 278 210)"/>
+  <ellipse cx="260" cy="225" rx="5" ry="8" fill="#fff9d4" opacity="0.85"/>
+
+  <!-- Right bloom -->
+  <ellipse cx="532" cy="188" rx="24" ry="44" fill="#d4a017" opacity="0.88" transform="rotate(35 532 188)"/>
+  <ellipse cx="520" cy="195" rx="15" ry="34" fill="#f0e68c" opacity="0.55" transform="rotate(24 520 195)"/>
+  <ellipse cx="538" cy="183" rx="5" ry="8" fill="#fff9d4" opacity="0.85"/>
+
+  <!-- Franciscan cord (3 knots = poverty, chastity, obedience) -->
+  <path d="M 260 490 Q 350 510 400 490 Q 450 470 540 490" stroke="#8b5e2a" stroke-width="4" fill="none" opacity="0.7" stroke-linecap="round"/>
+  <circle cx="310" cy="497" r="6" fill="#8b5e2a" opacity="0.75"/>
+  <circle cx="400" cy="490" r="6" fill="#8b5e2a" opacity="0.75"/>
+  <circle cx="490" cy="487" r="6" fill="#8b5e2a" opacity="0.75"/>
+
+  <!-- Book outline (Bible) -->
+  <rect x="330" y="415" width="140" height="95" rx="6" fill="#1a0900" stroke="#8b5e2a" stroke-width="2.5" opacity="0.85"/>
+  <line x1="400" y1="415" x2="400" y2="510" stroke="#8b5e2a" stroke-width="1.5" opacity="0.6"/>
+  <!-- Cross on cover -->
+  <line x1="400" y1="432" x2="400" y2="494" stroke="#d4a017" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <line x1="375" y1="458" x2="425" y2="458" stroke="#d4a017" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Subtle dots / stars -->
+  <circle cx="155" cy="130" r="1.8" fill="#d4a017" opacity="0.4"/>
+  <circle cx="645" cy="150" r="1.8" fill="#d4a017" opacity="0.4"/>
+  <circle cx="185" cy="430" r="1.4" fill="#d4a017" opacity="0.3"/>
+  <circle cx="615" cy="400" r="1.4" fill="#d4a017" opacity="0.3"/>
+
+  <!-- Feast day -->
+  <text x="400" y="568" text-anchor="middle" font-family="Lato, sans-serif" font-size="13" fill="#7a5a30" letter-spacing="2.5">13 DE JUNIO · JUNE 13</text>
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="smBg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#06101e"/>
+      <stop offset="100%" stop-color="#020810"/>
+    </radialGradient>
+    <radialGradient id="smGlow" cx="50%" cy="38%" r="48%">
+      <stop offset="0%" stop-color="rgba(100,160,230,0.22)"/>
+      <stop offset="100%" stop-color="rgba(100,160,230,0)"/>
+    </radialGradient>
+    <radialGradient id="smSwordGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(220,230,255,0.30)"/>
+      <stop offset="100%" stop-color="rgba(220,230,255,0)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#smBg)"/>
+  <rect width="800" height="600" fill="url(#smGlow)"/>
+
+  <!-- Accent strips: silver-blue -->
+  <rect x="0"   y="0" width="7" height="600" fill="#7ab0d8" opacity="0.6"/>
+  <rect x="7"   y="0" width="3" height="600" fill="#c8d8f0" opacity="0.35"/>
+  <rect x="790" y="0" width="7" height="600" fill="#7ab0d8" opacity="0.6"/>
+  <rect x="787" y="0" width="3" height="600" fill="#c8d8f0" opacity="0.35"/>
+
+  <!-- Radiating light behind sword -->
+  <rect width="800" height="600" fill="url(#smSwordGlow)"/>
+
+  <!-- Blue light rays from center (8 rays) -->
+  <g opacity="0.18" fill="#5ba3d9">
+    <polygon points="400,300 370,100 400,120 430,100"/>
+    <polygon points="400,300 600,260 585,290 600,320"/>
+    <polygon points="400,300 430,500 400,480 370,500"/>
+    <polygon points="400,300 200,340 215,310 200,280"/>
+    <polygon points="400,300 540,140 545,175 575,155"/>
+    <polygon points="400,300 565,450 535,440 550,470"/>
+    <polygon points="400,300 265,455 280,425 250,430"/>
+    <polygon points="400,300 235,160 255,185 230,205"/>
+  </g>
+
+  <!-- Shield outline -->
+  <path d="M 320 220 L 480 220 L 480 370 Q 480 420 400 460 Q 320 420 320 370 Z"
+        fill="none" stroke="#7ab0d8" stroke-width="3" opacity="0.55"/>
+  <path d="M 334 232 L 466 232 L 466 368 Q 466 410 400 445 Q 334 410 334 368 Z"
+        fill="#06101e" opacity="0.45"/>
+  <!-- Cross on shield -->
+  <line x1="400" y1="248" x2="400" y2="430" stroke="#c8d8f0" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+  <line x1="348" y1="300" x2="452" y2="300" stroke="#c8d8f0" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- Sword — pointing upward -->
+  <!-- Blade -->
+  <polygon points="400,75 392,290 408,290" fill="#c8d8f0" opacity="0.92"/>
+  <!-- Blade highlight -->
+  <polygon points="400,75 399,290 403,290" fill="#ffffff" opacity="0.35"/>
+  <!-- Guard (cross-guard) -->
+  <rect x="350" y="285" width="100" height="14" rx="4" fill="#d4af37" opacity="0.88"/>
+  <!-- Grip -->
+  <rect x="393" y="299" width="14" height="60" rx="4" fill="#8b5e2a" opacity="0.85"/>
+  <!-- Pommel -->
+  <ellipse cx="400" cy="368" rx="16" ry="12" fill="#d4af37" opacity="0.88"/>
+
+  <!-- Stars scattered -->
+  <circle cx="170" cy="130" r="2"   fill="#c8d8f0" opacity="0.50"/>
+  <circle cx="220" cy="80"  r="1.5" fill="#c8d8f0" opacity="0.40"/>
+  <circle cx="630" cy="115" r="2"   fill="#c8d8f0" opacity="0.50"/>
+  <circle cx="660" cy="195" r="1.5" fill="#c8d8f0" opacity="0.40"/>
+  <circle cx="140" cy="380" r="1.8" fill="#c8d8f0" opacity="0.38"/>
+  <circle cx="660" cy="400" r="1.8" fill="#c8d8f0" opacity="0.38"/>
+  <circle cx="185" cy="500" r="1.3" fill="#7ab0d8" opacity="0.40"/>
+  <circle cx="615" cy="490" r="1.3" fill="#7ab0d8" opacity="0.40"/>
+  <circle cx="300" cy="480" r="1.2" fill="#c8d8f0" opacity="0.30"/>
+  <circle cx="500" cy="470" r="1.2" fill="#c8d8f0" opacity="0.30"/>
+
+  <!-- "Quis ut Deus?" inscription -->
+  <text x="400" y="518" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-style="italic" fill="#5a7aaa" opacity="0.65" letter-spacing="2">Quis ut Deus?</text>
+
+  <!-- Feast day -->
+  <text x="400" y="568" text-anchor="middle" font-family="Lato, sans-serif" font-size="13" fill="#4a6a8a" letter-spacing="2.5">29 DE SEPTIEMBRE · SEPTEMBER 29</text>
+</svg>

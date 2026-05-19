@@ -545,6 +545,20 @@ body {
   background: rgba(201,168,76,0.06);
   border-left-color: var(--gold);
 }
+.side-nav-home { color: var(--white-dim); }
+.side-nav-prayer { color: var(--gold-dim); font-style: italic; }
+.side-nav-prayer:hover { color: var(--gold-light); }
+.side-nav-divider {
+  padding: 0.4rem 1.5rem 0.2rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  opacity: 0.7;
+  border-top: 1px solid var(--border);
+  margin-top: 0.25rem;
+}
+.side-nav-divider span { display: block; padding-top: 0.5rem; }
 
 /* ── HOME: 3-COLUMN LAYOUT ─────────────────────────── */
 .home-layout {
