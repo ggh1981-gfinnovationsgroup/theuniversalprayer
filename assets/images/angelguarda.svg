@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="ag-bg" cx="50%" cy="40%" r="62%">
+      <stop offset="0%" stop-color="#10102a"/>
+      <stop offset="100%" stop-color="#080814"/>
+    </radialGradient>
+    <radialGradient id="ag-glow" cx="50%" cy="36%" r="50%">
+      <stop offset="0%" stop-color="rgba(200,200,255,0.18)"/>
+      <stop offset="100%" stop-color="rgba(200,200,255,0)"/>
+    </radialGradient>
+    <radialGradient id="ag-wing-glow" cx="50%" cy="55%" r="55%">
+      <stop offset="0%" stop-color="rgba(220,230,255,0.14)"/>
+      <stop offset="100%" stop-color="rgba(220,230,255,0)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#ag-bg)"/>
+  <rect width="800" height="600" fill="url(#ag-glow)"/>
+  <rect width="800" height="600" fill="url(#ag-wing-glow)"/>
+
+  <!-- Border -->
+  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#8888cc" stroke-width="1" stroke-opacity="0.45"/>
+  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#8888cc" stroke-width="0.5" stroke-opacity="0.20"/>
+
+  <!-- Side accent strips -->
+  <rect x="28" y="28" width="6" height="544" rx="3" fill="#4a4a88" opacity="0.60"/>
+  <rect x="766" y="28" width="6" height="544" rx="3" fill="#4a4a88" opacity="0.60"/>
+
+  <!-- Stars scattered -->
+  <circle cx="162" cy="112" r="2"   fill="#ccccff" opacity="0.40"/>
+  <circle cx="218" cy="78"  r="1.5" fill="#ccccff" opacity="0.32"/>
+  <circle cx="638" cy="102" r="2"   fill="#ccccff" opacity="0.40"/>
+  <circle cx="665" cy="182" r="1.5" fill="#ccccff" opacity="0.35"/>
+  <circle cx="142" cy="358" r="1.8" fill="#ccccff" opacity="0.28"/>
+  <circle cx="660" cy="392" r="1.8" fill="#ccccff" opacity="0.28"/>
+  <circle cx="185" cy="488" r="1.3" fill="#aaaadd" opacity="0.35"/>
+  <circle cx="615" cy="478" r="1.3" fill="#aaaadd" opacity="0.35"/>
+
+  <!-- Soft light rays -->
+  <g opacity="0.10" fill="#8888cc">
+    <polygon points="400,300 376,102 400,120 424,102"/>
+    <polygon points="400,300 592,266 579,293 594,321"/>
+    <polygon points="400,300 424,498 400,480 376,498"/>
+    <polygon points="400,300 208,334 221,307 205,280"/>
+    <polygon points="400,300 542,143 546,175 575,153"/>
+    <polygon points="400,300 556,449 526,439 542,468"/>
+    <polygon points="400,300 263,449 279,421 251,427"/>
+    <polygon points="400,300 241,161 261,186 235,203"/>
+  </g>
+
+  <!-- Large protective wings (outstretched, sheltering) -->
+  <!-- Left wing -->
+  <path d="M 400 300
+           C 380 280 340 240 290 200
+           C 250 170 200 158 168 165
+           C 200 175 240 195 270 225
+           C 300 255 330 285 350 310
+           C 360 320 375 330 390 335
+           Z"
+        fill="#4a4a88" opacity="0.65"/>
+  <path d="M 400 300
+           C 382 275 344 230 295 186
+           C 258 156 208 140 172 145
+           C 204 155 248 178 278 210
+           C 308 242 336 278 355 308
+           Z"
+        fill="none" stroke="#aaaaee" stroke-width="1.2" opacity="0.38"/>
+  <!-- Left wing feathers -->
+  <path d="M 300 230 C 310 250 330 268 348 280" fill="none" stroke="#ccccff" stroke-width="1" opacity="0.25"/>
+  <path d="M 268 252 C 280 270 304 288 324 298" fill="none" stroke="#ccccff" stroke-width="1" opacity="0.22"/>
+  <path d="M 242 280 C 256 296 278 310 296 318" fill="none" stroke="#ccccff" stroke-width="1" opacity="0.20"/>
+
+  <!-- Right wing (mirror) -->
+  <path d="M 400 300
+           C 420 280 460 240 510 200
+           C 550 170 600 158 632 165
+           C 600 175 560 195 530 225
+           C 500 255 470 285 450 310
+           C 440 320 425 330 410 335
+           Z"
+        fill="#4a4a88" opacity="0.65"/>
+  <path d="M 400 300
+           C 418 275 456 230 505 186
+           C 542 156 592 140 628 145
+           C 596 155 552 178 522 210
+           C 492 242 464 278 445 308
+           Z"
+        fill="none" stroke="#aaaaee" stroke-width="1.2" opacity="0.38"/>
+  <!-- Right wing feathers -->
+  <path d="M 500 230 C 490 250 470 268 452 280" fill="none" stroke="#ccccff" stroke-width="1" opacity="0.25"/>
+  <path d="M 532 252 C 520 270 496 288 476 298" fill="none" stroke="#ccccff" stroke-width="1" opacity="0.22"/>
+  <path d="M 558 280 C 544 296 522 310 504 318" fill="none" stroke="#ccccff" stroke-width="1" opacity="0.20"/>
+
+  <!-- Child silhouette (small, protected) -->
+  <!-- Child head -->
+  <circle cx="400" cy="390" r="18" fill="#2a2a50" stroke="#8888cc" stroke-width="1.5" stroke-opacity="0.50"/>
+  <!-- Child body -->
+  <path d="M 384 408 Q 400 416 416 408 L 420 444 Q 400 448 380 444 Z"
+        fill="#2a2a50" stroke="#8888cc" stroke-width="1" stroke-opacity="0.40"/>
+  <!-- Child arms up (joyful) -->
+  <line x1="384" y1="422" x2="370" y2="436" stroke="#8888cc" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+  <line x1="416" y1="422" x2="430" y2="436" stroke="#8888cc" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+  <!-- Star above child's head (divine protection) -->
+  <polygon points="400,358 403,368 413,368 405,374 408,384 400,378 392,384 395,374 387,368 397,368"
+           fill="#d4af37" opacity="0.85"/>
+
+  <!-- Main halo/icon circle -->
+  <circle cx="400" cy="194" r="60" fill="#080814" stroke="#8888cc" stroke-width="2" stroke-opacity="0.68"/>
+  <circle cx="400" cy="194" r="54" fill="none" stroke="#ccccff" stroke-width="0.8" stroke-opacity="0.28"/>
+
+  <!-- Cross inside circle -->
+  <line x1="400" y1="152" x2="400" y2="236" stroke="#ccccff" stroke-width="2.5" stroke-opacity="0.70"/>
+  <line x1="368" y1="176" x2="432" y2="176" stroke="#ccccff" stroke-width="2.5" stroke-opacity="0.70"/>
+
+  <!-- IHS -->
+  <text x="400" y="203" text-anchor="middle" font-family="Georgia,serif" font-size="20"
+        fill="#ccccff" opacity="0.85" letter-spacing="2">IHS</text>
+
+  <!-- Name -->
+  <text x="400" y="490" text-anchor="middle" font-family="Georgia,serif" font-size="22"
+        fill="#d4af37" letter-spacing="1">Ángel de la Guarda</text>
+  <text x="400" y="511" text-anchor="middle" font-family="Georgia,serif" font-size="14"
+        fill="#9999cc" font-style="italic" opacity="0.85">Guardian Angel</text>
+
+  <!-- Feast day -->
+  <text x="400" y="536" text-anchor="middle" font-family="Georgia,serif" font-size="13"
+        fill="#ccccff" opacity="0.50" letter-spacing="1">2 de octubre · October 2</text>
+</svg>

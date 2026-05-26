@@ -79,9 +79,11 @@
   <line x1="336" y1="194" x2="300" y2="194" stroke="#e67e22" stroke-width="0.9" stroke-opacity="0.18"/>
 
   <!-- Name -->
-  <text x="400" y="312" text-anchor="middle" font-family="Georgia,serif" font-size="36"
+  <text x="400" y="308" text-anchor="middle" font-family="Georgia,serif" font-size="34"
         fill="#f0d090" letter-spacing="2">San Felipe Neri</text>
-  <text x="400" y="352" text-anchor="middle" font-family="Georgia,serif" font-size="15"
+  <text x="400" y="330" text-anchor="middle" font-family="Georgia,serif" font-size="14"
+        fill="#f0d090" font-style="italic" opacity="0.75">Saint Philip Neri</text>
+  <text x="400" y="354" text-anchor="middle" font-family="Georgia,serif" font-size="15"
         fill="#e67e22" letter-spacing="3" opacity="0.8">APÓSTOL DE ROMA</text>
 
   <!-- Feast day -->

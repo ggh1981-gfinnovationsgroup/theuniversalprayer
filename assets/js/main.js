@@ -100,9 +100,12 @@ const INTERCESSORS = [
   { id: 'sanantonio',        subdomain: 'sanantonio',        chaplet: true,  novena: true,  color: '#6a3018', short: { es: 'San Antonio',      en: 'St. Anthony'      }, name: { en: 'Saint Anthony of Padua',                es: 'San Antonio de Padua'                     } },
   { id: 'teresacalcuta',     subdomain: 'teresacalcuta',     chaplet: false, novena: true,  color: '#1a3a7a', short: { es: 'Sta. Teresa',      en: 'St. Teresa'       }, name: { en: 'Saint Teresa of Calcutta',              es: 'Santa Teresa de Calcuta'                  } },
   { id: 'sanmiguel',         subdomain: 'sanmiguel',         chaplet: true,  novena: true,  color: '#253070', short: { es: 'San Miguel',       en: 'St. Michael'      }, name: { en: 'Saint Michael the Archangel',           es: 'San Miguel Arcángel'                      } },
+  { id: 'sangabriel',        subdomain: 'sangabriel',        chaplet: true,  novena: true,  color: '#1a3a6b', short: { es: 'San Gabriel',      en: 'St. Gabriel'      }, name: { en: 'Saint Gabriel the Archangel',           es: 'San Gabriel Arcángel'                     } },
+  { id: 'sanrafael',         subdomain: 'sanrafael',         chaplet: true,  novena: true,  color: '#1a5c3a', short: { es: 'San Rafael',       en: 'St. Raphael'      }, name: { en: 'Saint Raphael the Archangel',           es: 'San Rafael Arcángel'                      } },
+  { id: 'angelguarda',       subdomain: 'angelguarda',       chaplet: false, novena: true,  color: '#4a4a70', short: { es: 'Ángel Custodio',   en: 'Guardian Angel'   }, name: { en: 'Guardian Angel',                        es: 'Ángel de la Guarda'                       } },
   { id: 'divinaprovidencia', subdomain: 'divinaprovidencia', chaplet: false, novena: true,  color: '#7a5a00', short: { es: 'N.S. Providencia', en: 'Lady Providence'  }, name: { en: 'Our Lady of Divine Providence',         es: 'Nuestra Señora de la Divina Providencia'  } },
-  { id: 'santarita',        subdomain: 'santarita',        chaplet: false, novena: true,  color: '#7a1520', short: { es: 'Santa Rita',      en: 'St. Rita'         }, name: { en: 'Saint Rita of Cascia',                  es: 'Santa Rita de Casia'                      } },
-  { id: 'sanfelipeneri',    subdomain: 'sanfelipeneri',    chaplet: false, novena: true,  color: '#8a4a10', short: { es: 'S. Felipe Neri',  en: 'St. Philip Neri'  }, name: { en: 'Saint Philip Neri',                     es: 'San Felipe Neri'                          } },
+  { id: 'santarita',         subdomain: 'santarita',         chaplet: true,  novena: true,  color: '#7a1520', short: { es: 'Santa Rita',       en: 'St. Rita'         }, name: { en: 'Saint Rita of Cascia',                  es: 'Santa Rita de Casia'                      } },
+  { id: 'sanfelipeneri',     subdomain: 'sanfelipeneri',     chaplet: true,  novena: true,  color: '#8a4a10', short: { es: 'S. Felipe Neri',   en: 'St. Philip Neri'  }, name: { en: 'Saint Philip Neri',                     es: 'San Felipe Neri'                          } },
 ];
 
 // ── STATE ──────────────────────────────────────────
@@ -759,6 +762,146 @@ function getChapletSteps(id, lang) {
       steps.push({ label: L ? `Invocación · ${g.nombre}` : `Invocation · ${g.nombre}`, text: g.inv, count: 1, bead: 'none' });
     });
     steps.push(closing, { ...cruz, label: L ? 'Señal de la Cruz final' : 'Final Sign of the Cross' });
+    return steps;
+  }
+
+  // ── SANTA RITA DE CASIA (7 peticiones) ────────
+  if (id === 'santarita') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«Santa Rita de Casia, patrona de los casos imposibles:\nPresento ante ti mi causa y mi corazón.\nComo tú perseveraste en la fe en medio de lo imposible,\nque yo también confíe en que Dios puede hacer todo.»'
+      : '«Saint Rita of Cascia, patron of impossible cases:\nI present before you my cause and my heart.\nAs you persevered in faith amid the impossible,\nmay I also trust that God can do all things.»', count: 1, bead: 'none' };
+    const peticiones = L ? [
+      { nombre: '1ª Petición · Su Matrimonio',   texto: 'Por tu paciencia y amor en medio de un matrimonio difícil:\nque yo también transforme mis sufrimientos en caminos de gracia.' },
+      { nombre: '2ª Petición · El Perdón',        texto: 'Por el perdón sobrenatural que diste a los asesinos de tu esposo:\nque yo también pueda perdonar a quienes me han herido.' },
+      { nombre: '3ª Petición · La Viudez',        texto: 'Por los años que viviste como viuda entregada a la oración:\nque en mi soledad también encuentre a Dios como compañía.' },
+      { nombre: '4ª Petición · La Puerta Cerrada', texto: 'Por las tres veces que llamaste al convento sin rendirte:\nque yo también persevere en mis peticiones y en mi fe.' },
+      { nombre: '5ª Petición · La Espina',        texto: 'Por la llaga de la espina que llevaste en tu frente por amor a la Pasión:\nque yo acepte mis cruces y las una a las de Cristo.' },
+      { nombre: '6ª Petición · La Rosa',          texto: 'Por el milagro de la rosa que floreció en invierno a tu pedido:\nque la esperanza florezca también en mis inviernos.' },
+      { nombre: '7ª Petición · Lo Imposible',     texto: 'Por tu intercesión especial en los casos imposibles:\nque Dios, para quien nada es imposible, escuche mi causa.' },
+    ] : [
+      { nombre: '1st Petition · Her Marriage',    texto: 'For your patience and love amid a difficult marriage:\nmay I too transform my sufferings into paths of grace.' },
+      { nombre: '2nd Petition · Forgiveness',     texto: 'For the supernatural forgiveness you gave your husband\'s killers:\nmay I also be able to forgive those who have hurt me.' },
+      { nombre: '3rd Petition · Widowhood',       texto: 'For the years you lived as a widow devoted to prayer:\nmay I also find God as companion in my loneliness.' },
+      { nombre: '4th Petition · Perseverance',    texto: 'For the three times you knocked at the convent without giving up:\nmay I also persevere in my petitions and in my faith.' },
+      { nombre: '5th Petition · The Thorn',       texto: 'For the wound of the thorn you bore on your forehead from love of the Passion:\nmay I accept my crosses and unite them to Christ\'s.' },
+      { nombre: '6th Petition · The Rose',        texto: 'For the miracle of the rose that bloomed in winter at your request:\nmay hope also bloom in my winters.' },
+      { nombre: '7th Petition · The Impossible',  texto: 'For your special intercession in impossible cases:\nmay God, for whom nothing is impossible, hear my cause.' },
+    ];
+    const final = { label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«Oh Santa Rita, patrona de los imposibles y de los que sufren:\nTe presento hoy todo lo que en mi vida parece sin salida.\nIntercede ante Dios para que, si es Su santa voluntad,\nlo imposible se vuelva posible.\nSanta Rita de Casia, ruega por nosotros. Amén.»'
+      : '«O Saint Rita, patron of the impossible and of those who suffer:\nI present to you today all that in my life seems without way out.\nIntercede before God that, if it is His holy will,\nthe impossible may become possible.\nSaint Rita of Cascia, pray for us. Amen.»', count: 1, bead: 'none' };
+    const steps = [cruz, opening];
+    peticiones.forEach(pet => {
+      steps.push({ label: L ? `${pet.nombre} · Padre Nuestro` : `${pet.nombre} · Our Father`, text: p.pn, count: 1, bead: 'large' });
+      steps.push({ label: L ? `${pet.nombre} · Ave María` : `${pet.nombre} · Hail Mary`, text: p.am, count: 1, bead: 'small' });
+      steps.push({ label: pet.nombre, text: pet.texto, count: 1, bead: 'none' });
+    });
+    steps.push(final, { ...cruz, label: L ? 'Señal de la Cruz final' : 'Final Sign of the Cross' });
+    return steps;
+  }
+
+  // ── SAN FELIPE NERI (7 gracias del Espíritu) ──
+  if (id === 'sanfelipeneri') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«San Felipe Neri, apóstol de Roma y maestro de la alegría:\nVen en mi auxilio con tu alegría y tu amor a Dios.\nIntercedeante el Espíritu Santo para que yo también\narda en el fuego del amor divino.»'
+      : '«Saint Philip Neri, apostle of Rome and teacher of joy:\nCome to my aid with your joy and love for God.\nIntercede before the Holy Spirit that I too\nmay burn with the fire of divine love.»', count: 1, bead: 'none' };
+    const gracias = L ? [
+      { nombre: '1ª Gracia · La Alegría',          texto: 'Por la alegría cristiana con que viviste la fe:\nque yo también encuentre en Dios mi alegría más profunda.' },
+      { nombre: '2ª Gracia · El Fuego del Espíritu', texto: 'Por el fuego del Espíritu Santo que ardió en tu corazón:\nque ese mismo fuego encienda el mío en el amor de Dios.' },
+      { nombre: '3ª Gracia · La Oración',          texto: 'Por tus largas horas de oración ante el Santísimo:\nque yo también aprenda a hacer silencio y escuchar a Dios.' },
+      { nombre: '4ª Gracia · La Caridad',          texto: 'Por tu servicio a los pobres, enfermos y peregrinos de Roma:\nque mi fe se traduzca siempre en obras de caridad.' },
+      { nombre: '5ª Gracia · La Humildad',         texto: 'Por la humildad con que rechazaste honores y dignidades:\nque yo también sirva a Dios sin buscar reconocimiento.' },
+      { nombre: '6ª Gracia · La Música Sagrada',   texto: 'Por el Oratorio que fundaste uniendo oración, música y belleza:\nque yo también busque a Dios a través de lo bello.' },
+      { nombre: '7ª Gracia · Los Jóvenes',         texto: 'Por tu amor especial a los jóvenes y tu paciencia con sus errores:\nque tú intercedas por todos los jóvenes del mundo.' },
+    ] : [
+      { nombre: '1st Grace · Joy',                 texto: 'For the Christian joy with which you lived your faith:\nmay I too find in God my deepest joy.' },
+      { nombre: '2nd Grace · Fire of the Spirit',  texto: 'For the fire of the Holy Spirit that burned in your heart:\nmay that same fire kindle mine in the love of God.' },
+      { nombre: '3rd Grace · Prayer',              texto: 'For your long hours of prayer before the Blessed Sacrament:\nmay I also learn to make silence and listen to God.' },
+      { nombre: '4th Grace · Charity',             texto: 'For your service to the poor, sick, and pilgrims of Rome:\nmay my faith always translate into works of charity.' },
+      { nombre: '5th Grace · Humility',            texto: 'For the humility with which you refused honors and dignities:\nmay I too serve God without seeking recognition.' },
+      { nombre: '6th Grace · Sacred Music',        texto: 'For the Oratory you founded uniting prayer, music, and beauty:\nmay I too seek God through the beautiful.' },
+      { nombre: '7th Grace · Youth',               texto: 'For your special love for young people and your patience with their failings:\nmay you intercede for all the young people of the world.' },
+    ];
+    const final = { label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«Oh glorioso San Felipe Neri,\nque la alegría del Espíritu Santo que colmó tu vida\nse derrame también en la mía.\nQue yo sirva a Dios con el corazón libre,\ncon amor sin miedo y con alegría sin fin.\nSan Felipe Neri, ruega por nosotros. Amén.»'
+      : '«O glorious Saint Philip Neri,\nmay the joy of the Holy Spirit that filled your life\nspill over into mine as well.\nMay I serve God with a free heart,\nwith love without fear and with joy without end.\nSaint Philip Neri, pray for us. Amen.»', count: 1, bead: 'none' };
+    const steps = [cruz, opening];
+    gracias.forEach(g => {
+      steps.push({ label: L ? `${g.nombre} · Padre Nuestro` : `${g.nombre} · Our Father`, text: p.pn, count: 1, bead: 'large' });
+      steps.push({ label: L ? `${g.nombre} · Ave María` : `${g.nombre} · Hail Mary`, text: p.am, count: 1, bead: 'small' });
+      steps.push({ label: g.nombre, text: g.texto, count: 1, bead: 'none' });
+    });
+    steps.push(final, { ...cruz, label: L ? 'Señal de la Cruz final' : 'Final Sign of the Cross' });
+    return steps;
+  }
+
+  // ── SAN GABRIEL ARCÁNGEL (7 mensajes) ─────────
+  if (id === 'sangabriel') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«San Gabriel Arcángel, mensajero de Dios y heraldo de la Encarnación:\ntú que dijiste a María "no temas" y "el Señor está contigo",\ndime también a mí esas palabras de aliento\ny sé mensajero de paz para mi vida.»'
+      : '«Saint Gabriel the Archangel, messenger of God and herald of the Incarnation:\nyou who said to Mary "fear not" and "the Lord is with you",\nsay also to me those words of encouragement\nand be a messenger of peace for my life.»', count: 1, bead: 'none' };
+    const mensajes = L ? [
+      { nombre: '1° Mensaje · La Visión de Daniel',  texto: 'San Gabriel, que apareciste a Daniel para revelar el misterio de los tiempos:\nilumina mi mente para comprender los caminos de Dios en mi vida.' },
+      { nombre: '2° Mensaje · Las 70 Semanas',       texto: 'San Gabriel, que anunciaste a Daniel el tiempo de la venida del Mesías:\nayúdame a vivir en espera activa del regreso de Cristo.' },
+      { nombre: '3° Mensaje · El Precursor',         texto: 'San Gabriel, que anunciaste a Zacarías el nacimiento de Juan el Bautista:\nque yo también prepare el camino del Señor en mi corazón.' },
+      { nombre: '4° Mensaje · La Anunciación',       texto: 'San Gabriel, que dijiste a María "el Señor está contigo" y ella respondió "sí":\nayúdame a recibir la voluntad de Dios con la misma fe que ella.' },
+      { nombre: '5° Mensaje · "No Temas"',           texto: 'San Gabriel, mensajero que traes siempre paz, diciendo "no temas":\ndisipa mis miedos y llena mi corazón de la paz que Dios da.' },
+      { nombre: '6° Mensaje · Ante el Trono',        texto: 'San Gabriel, que dijiste "yo soy Gabriel, el que está ante Dios":\npresenta mis oraciones al Señor e intercede por mí.' },
+      { nombre: '7° Mensaje · La Encarnación',       texto: 'San Gabriel, heraldo de la Encarnación del Verbo:\nayúdame a decir también mi "sí" a la voluntad de Dios.' },
+    ] : [
+      { nombre: '1st Message · Daniel\'s Vision',   texto: 'Saint Gabriel, who appeared to Daniel to reveal the mystery of the times:\nilluminate my mind to understand God\'s ways in my life.' },
+      { nombre: '2nd Message · The 70 Weeks',        texto: 'Saint Gabriel, who announced to Daniel the time of the Messiah\'s coming:\nhelp me to live in active expectation of Christ\'s return.' },
+      { nombre: '3rd Message · The Forerunner',      texto: 'Saint Gabriel, who announced to Zechariah the birth of John the Baptist:\nmay I also prepare the way of the Lord in my heart.' },
+      { nombre: '4th Message · The Annunciation',    texto: 'Saint Gabriel, who said to Mary "the Lord is with you" and she answered "yes":\nhelp me to receive God\'s will with the same faith she had.' },
+      { nombre: '5th Message · "Fear Not"',          texto: 'Saint Gabriel, messenger who always brings peace, saying "fear not":\ndispel my fears and fill my heart with the peace that God gives.' },
+      { nombre: '6th Message · Before the Throne',   texto: 'Saint Gabriel, who said "I am Gabriel, who stands before God":\npresent my prayers to the Lord and intercede for me.' },
+      { nombre: '7th Message · The Incarnation',     texto: 'Saint Gabriel, herald of the Incarnation of the Word:\nhelp me also to say my "yes" to the will of God.' },
+    ];
+    const final = { label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«Oh San Gabriel Arcángel, mensajero del Altísimo:\ntú que llevaste el mensaje más importante de la historia,\nlleva también a Dios mis oraciones y mis necesidades.\nSé para mí mensajero de esperanza en los momentos difíciles.\nSan Gabriel Arcángel, ruega por nosotros. Amén.»'
+      : '«O Saint Gabriel the Archangel, messenger of the Most High:\nyou who carried the most important message in history,\ncarry also my prayers and my needs to God.\nBe for me a messenger of hope in difficult moments.\nSaint Gabriel the Archangel, pray for us. Amen.»', count: 1, bead: 'none' };
+    const steps = [cruz, opening];
+    mensajes.forEach(m => {
+      steps.push({ label: L ? `${m.nombre} · Padre Nuestro` : `${m.nombre} · Our Father`, text: p.pn, count: 1, bead: 'large' });
+      steps.push({ label: L ? `${m.nombre} · Ave María` : `${m.nombre} · Hail Mary`, text: p.am, count: 1, bead: 'small' });
+      steps.push({ label: m.nombre, text: m.texto, count: 1, bead: 'none' });
+    });
+    steps.push(final, { ...cruz, label: L ? 'Señal de la Cruz final' : 'Final Sign of the Cross' });
+    return steps;
+  }
+
+  // ── SAN RAFAEL ARCÁNGEL (7 dones de sanación) ─
+  if (id === 'sanrafael') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«San Rafael Arcángel, "medicina de Dios", guía de Tobías y sanador de Tobit:\ntú que conoces el camino incluso cuando nosotros estamos perdidos,\nguíame en este camino y sana en mí lo que esté enfermo.»'
+      : '«Saint Raphael the Archangel, "medicine of God", guide of Tobias and healer of Tobit:\nyou who know the way even when we are lost,\nguide me on this journey and heal in me what is sick.»', count: 1, bead: 'none' };
+    const dones = L ? [
+      { nombre: '1° Don · Guía del Camino',        texto: 'San Rafael, que guiaste a Tobías por el camino desconocido:\nguíame también a mí por los caminos que no conozco.' },
+      { nombre: '2° Don · La Medicina de Dios',    texto: 'San Rafael, cuyo nombre significa "Dios sana":\nintercede para que Dios sane lo que en mí está enfermo, cuerpo y alma.' },
+      { nombre: '3° Don · Liberación del Mal',     texto: 'San Rafael, que liberaste a Sara del demonio Asmodeo:\ndefiéndeme de las influencias malignas y de todo espíritu del mal.' },
+      { nombre: '4° Don · Los Matrimonios',        texto: 'San Rafael, que uniste a Tobías y Sara en matrimonio bendecido:\nintercede por los matrimonios del mundo y por quienes buscan pareja.' },
+      { nombre: '5° Don · Oración ante Dios',      texto: 'San Rafael, que dijiste "yo presentaba ante Dios la memoria de vuestras oraciones":\npresenta también mis oraciones al Señor.' },
+      { nombre: '6° Don · Los Viajeros',           texto: 'San Rafael, patrono de los viajeros y peregrinos:\nacompaña a los que están de camino y protege sus viajes.' },
+      { nombre: '7° Don · La Restauración',        texto: 'San Rafael, que devolviste la vista a Tobit y la alegría a toda la familia:\nque Dios restaure lo que se ha perdido en mi vida.' },
+    ] : [
+      { nombre: '1st Gift · Guide of the Way',     texto: 'Saint Raphael, who guided Tobias along the unknown road:\nguide me also along the ways I do not know.' },
+      { nombre: '2nd Gift · God\'s Medicine',      texto: 'Saint Raphael, whose name means "God heals":\nintercede that God may heal what is sick in me, body and soul.' },
+      { nombre: '3rd Gift · Freedom from Evil',    texto: 'Saint Raphael, who freed Sarah from the demon Asmodeus:\ndefend me from evil influences and from every spirit of evil.' },
+      { nombre: '4th Gift · Marriage',             texto: 'Saint Raphael, who united Tobias and Sarah in blessed marriage:\nintercede for the marriages of the world and for those seeking a spouse.' },
+      { nombre: '5th Gift · Prayer Before God',    texto: 'Saint Raphael, who said "I presented before God the memory of your prayers":\npresent my prayers also to the Lord.' },
+      { nombre: '6th Gift · Travelers',            texto: 'Saint Raphael, patron of travelers and pilgrims:\naccompany those who are on a journey and protect their travels.' },
+      { nombre: '7th Gift · Restoration',          texto: 'Saint Raphael, who restored Tobit\'s sight and joy to the whole family:\nmay God restore what has been lost in my life.' },
+    ];
+    const final = { label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«Oh San Rafael Arcángel, compañero fiel de los peregrinos:\ntú que te revelaste diciendo "yo soy Rafael, uno de los siete ángeles que están ante la gloria de Dios":\npresenta mis oraciones ante el trono de Dios\ny sana lo que está roto en mi vida.\nSan Rafael Arcángel, ruega por nosotros. Amén.»'
+      : '«O Saint Raphael the Archangel, faithful companion of pilgrims:\nyou who revealed yourself saying "I am Raphael, one of the seven angels who stand before the glory of God":\npresent my prayers before the throne of God\nand heal what is broken in my life.\nSaint Raphael the Archangel, pray for us. Amen.»', count: 1, bead: 'none' };
+    const steps = [cruz, opening];
+    dones.forEach(d => {
+      steps.push({ label: L ? `${d.nombre} · Padre Nuestro` : `${d.nombre} · Our Father`, text: p.pn, count: 1, bead: 'large' });
+      steps.push({ label: L ? `${d.nombre} · Ave María` : `${d.nombre} · Hail Mary`, text: p.am, count: 1, bead: 'small' });
+      steps.push({ label: d.nombre, text: d.texto, count: 1, bead: 'none' });
+    });
+    steps.push(final, { ...cruz, label: L ? 'Señal de la Cruz final' : 'Final Sign of the Cross' });
     return steps;
   }
 
