@@ -101,6 +101,8 @@ const INTERCESSORS = [
   { id: 'teresacalcuta',     subdomain: 'teresacalcuta',     chaplet: false, novena: true,  color: '#1a3a7a', short: { es: 'Sta. Teresa',      en: 'St. Teresa'       }, name: { en: 'Saint Teresa of Calcutta',              es: 'Santa Teresa de Calcuta'                  } },
   { id: 'sanmiguel',         subdomain: 'sanmiguel',         chaplet: true,  novena: true,  color: '#253070', short: { es: 'San Miguel',       en: 'St. Michael'      }, name: { en: 'Saint Michael the Archangel',           es: 'San Miguel Arcángel'                      } },
   { id: 'divinaprovidencia', subdomain: 'divinaprovidencia', chaplet: false, novena: true,  color: '#7a5a00', short: { es: 'N.S. Providencia', en: 'Lady Providence'  }, name: { en: 'Our Lady of Divine Providence',         es: 'Nuestra Señora de la Divina Providencia'  } },
+  { id: 'santarita',        subdomain: 'santarita',        chaplet: false, novena: true,  color: '#7a1520', short: { es: 'Santa Rita',      en: 'St. Rita'         }, name: { en: 'Saint Rita of Cascia',                  es: 'Santa Rita de Casia'                      } },
+  { id: 'sanfelipeneri',    subdomain: 'sanfelipeneri',    chaplet: false, novena: true,  color: '#8a4a10', short: { es: 'S. Felipe Neri',  en: 'St. Philip Neri'  }, name: { en: 'Saint Philip Neri',                     es: 'San Felipe Neri'                          } },
 ];
 
 // ── STATE ──────────────────────────────────────────

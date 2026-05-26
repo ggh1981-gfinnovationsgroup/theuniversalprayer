@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="sfn-bg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#0d1318"/>
+      <stop offset="100%" stop-color="#080b10"/>
+    </radialGradient>
+    <radialGradient id="sfn-glow" cx="50%" cy="38%" r="38%">
+      <stop offset="0%" stop-color="#e67e22" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#e67e22" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sfn-flame-glow" cx="50%" cy="55%" r="42%">
+      <stop offset="0%" stop-color="#f39c12" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#f39c12" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#sfn-bg)"/>
+  <rect width="800" height="600" fill="url(#sfn-glow)"/>
+  <rect width="800" height="600" fill="url(#sfn-flame-glow)"/>
+
+  <!-- Decorative border -->
+  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#e67e22" stroke-width="1" stroke-opacity="0.45"/>
+  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#e67e22" stroke-width="0.5" stroke-opacity="0.2"/>
+
+  <!-- Side accent strips (warm orange) -->
+  <rect x="28" y="28" width="6" height="544" rx="3" fill="#d35400" opacity="0.6"/>
+  <rect x="766" y="28" width="6" height="544" rx="3" fill="#d35400" opacity="0.6"/>
+
+  <!-- Dove / Holy Spirit above circle -->
+  <!-- Dove body -->
+  <ellipse cx="400" cy="102" rx="16" ry="10" fill="#f5f5f0" opacity="0.85"/>
+  <!-- Dove head -->
+  <circle cx="416" cy="98" r="7" fill="#f5f5f0" opacity="0.85"/>
+  <!-- Dove beak -->
+  <polygon points="422,97 428,99 422,101" fill="#e8b86d" opacity="0.9"/>
+  <!-- Dove wing left -->
+  <ellipse cx="390" cy="100" rx="18" ry="7" fill="#ddd" opacity="0.70" transform="rotate(-15 390 100)"/>
+  <!-- Dove wing right -->
+  <ellipse cx="404" cy="96" rx="14" ry="6" fill="#eee" opacity="0.65" transform="rotate(10 404 96)"/>
+  <!-- Dove tail -->
+  <polygon points="384,104 376,112 386,108" fill="#f0f0ea" opacity="0.75"/>
+  <!-- Flame on dove -->
+  <path d="M400 85 C396 92 392 100 396 107 C398 112 402 112 404 107 C408 100 404 92 400 85Z"
+        fill="#f39c12" opacity="0.85"/>
+  <path d="M400 90 C398 96 395 103 397 108 C399 112 401 112 403 108 C405 103 402 96 400 90Z"
+        fill="#fffde7" opacity="0.80"/>
+
+  <!-- Main circle (halo/icon) -->
+  <circle cx="400" cy="194" r="64" fill="#0b1015" stroke="#e67e22" stroke-width="2" stroke-opacity="0.7"/>
+  <circle cx="400" cy="194" r="58" fill="none" stroke="#f0d090" stroke-width="0.8" stroke-opacity="0.35"/>
+
+  <!-- Cross inside circle -->
+  <line x1="400" y1="150" x2="400" y2="238" stroke="#f0d090" stroke-width="2.5" stroke-opacity="0.75"/>
+  <line x1="366" y1="176" x2="434" y2="176" stroke="#f0d090" stroke-width="2.5" stroke-opacity="0.75"/>
+
+  <!-- IHS monogram -->
+  <text x="400" y="204" text-anchor="middle" font-family="Georgia,serif" font-size="20"
+        fill="#f0d090" opacity="0.85" letter-spacing="2">IHS</text>
+
+  <!-- Heart with flame (symbol of Philip's mystical heart) -->
+  <!-- Heart shape -->
+  <path d="M400 430 C388 418 368 406 368 390 C368 378 378 370 390 374 C394 376 397 379 400 382 C403 379 406 376 410 374 C422 370 432 378 432 390 C432 406 412 418 400 430Z"
+        fill="#c0392b" opacity="0.80"/>
+  <!-- Flame on heart -->
+  <path d="M400 382 C396 390 392 398 395 408 C397 414 403 414 405 408 C408 398 404 390 400 382Z"
+        fill="#f39c12" opacity="0.90"/>
+  <path d="M400 386 C397 393 394 401 396 407 C398 412 402 412 404 407 C406 401 403 393 400 386Z"
+        fill="#fffde7" opacity="0.82"/>
+  <!-- Small cross on heart -->
+  <line x1="400" y1="396" x2="400" y2="424" stroke="#f0d090" stroke-width="1.5" stroke-opacity="0.6"/>
+  <line x1="386" y1="408" x2="414" y2="408" stroke="#f0d090" stroke-width="1.5" stroke-opacity="0.6"/>
+
+  <!-- Rays from halo -->
+  <line x1="400" y1="130" x2="400" y2="96"  stroke="#e67e22" stroke-width="1.2" stroke-opacity="0.3"/>
+  <line x1="444" y1="150" x2="470" y2="122" stroke="#e67e22" stroke-width="0.9" stroke-opacity="0.22"/>
+  <line x1="356" y1="150" x2="330" y2="122" stroke="#e67e22" stroke-width="0.9" stroke-opacity="0.22"/>
+  <line x1="464" y1="194" x2="500" y2="194" stroke="#e67e22" stroke-width="0.9" stroke-opacity="0.18"/>
+  <line x1="336" y1="194" x2="300" y2="194" stroke="#e67e22" stroke-width="0.9" stroke-opacity="0.18"/>
+
+  <!-- Name -->
+  <text x="400" y="312" text-anchor="middle" font-family="Georgia,serif" font-size="36"
+        fill="#f0d090" letter-spacing="2">San Felipe Neri</text>
+  <text x="400" y="352" text-anchor="middle" font-family="Georgia,serif" font-size="15"
+        fill="#e67e22" letter-spacing="3" opacity="0.8">APÓSTOL DE ROMA</text>
+
+  <!-- Feast day -->
+  <text x="400" y="520" text-anchor="middle" font-family="Georgia,serif" font-size="13"
+        fill="#f0d090" opacity="0.55" letter-spacing="1">26 de Mayo · May 26</text>
+</svg>

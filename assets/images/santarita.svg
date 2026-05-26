@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="sr-bg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#1a0a10"/>
+      <stop offset="100%" stop-color="#0d080c"/>
+    </radialGradient>
+    <radialGradient id="sr-glow" cx="50%" cy="38%" r="38%">
+      <stop offset="0%" stop-color="#c0392b" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#c0392b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sr-rose-glow" cx="50%" cy="70%" r="40%">
+      <stop offset="0%" stop-color="#e74c3c" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#e74c3c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#sr-bg)"/>
+  <rect width="800" height="600" fill="url(#sr-glow)"/>
+  <rect width="800" height="600" fill="url(#sr-rose-glow)"/>
+
+  <!-- Decorative border -->
+  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#c0392b" stroke-width="1" stroke-opacity="0.45"/>
+  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#c0392b" stroke-width="0.5" stroke-opacity="0.2"/>
+
+  <!-- Side accent strips -->
+  <rect x="28" y="28" width="6" height="544" rx="3" fill="#922b21" opacity="0.6"/>
+  <rect x="766" y="28" width="6" height="544" rx="3" fill="#922b21" opacity="0.6"/>
+
+  <!-- Thorn / wound symbol above circle -->
+  <!-- Thorn shape: a small diagonal thorn pointing downward -->
+  <line x1="400" y1="88" x2="400" y2="124" stroke="#c0392b" stroke-width="3" stroke-opacity="0.8"/>
+  <line x1="392" y1="96" x2="400" y2="88" stroke="#c0392b" stroke-width="2" stroke-opacity="0.7"/>
+  <line x1="408" y1="104" x2="400" y2="96" stroke="#c0392b" stroke-width="2" stroke-opacity="0.7"/>
+  <!-- Wound glow on forehead position -->
+  <circle cx="400" cy="128" r="7" fill="#c0392b" opacity="0.6"/>
+  <circle cx="400" cy="128" r="4" fill="#e74c3c" opacity="0.9"/>
+
+  <!-- Main circle (halo/icon) -->
+  <circle cx="400" cy="196" r="64" fill="#120508" stroke="#c0392b" stroke-width="2" stroke-opacity="0.7"/>
+  <circle cx="400" cy="196" r="58" fill="none" stroke="#e8b4b8" stroke-width="0.8" stroke-opacity="0.35"/>
+
+  <!-- Cross inside circle -->
+  <line x1="400" y1="152" x2="400" y2="240" stroke="#e8b4b8" stroke-width="2.5" stroke-opacity="0.75"/>
+  <line x1="366" y1="178" x2="434" y2="178" stroke="#e8b4b8" stroke-width="2.5" stroke-opacity="0.75"/>
+
+  <!-- IHS -->
+  <text x="400" y="206" text-anchor="middle" font-family="Georgia,serif" font-size="20"
+        fill="#e8b4b8" opacity="0.85" letter-spacing="2">IHS</text>
+
+  <!-- Rose petals (bottom center, symbolic) -->
+  <!-- Outer petals -->
+  <ellipse cx="400" cy="418" rx="22" ry="32" fill="#c0392b" opacity="0.70" transform="rotate(-30 400 418)"/>
+  <ellipse cx="400" cy="418" rx="22" ry="32" fill="#c0392b" opacity="0.70" transform="rotate(30 400 418)"/>
+  <ellipse cx="400" cy="418" rx="22" ry="32" fill="#c0392b" opacity="0.70" transform="rotate(90 400 418)"/>
+  <ellipse cx="400" cy="418" rx="22" ry="32" fill="#c0392b" opacity="0.70" transform="rotate(150 400 418)"/>
+  <ellipse cx="400" cy="418" rx="22" ry="32" fill="#c0392b" opacity="0.70" transform="rotate(210 400 418)"/>
+  <ellipse cx="400" cy="418" rx="22" ry="32" fill="#c0392b" opacity="0.70" transform="rotate(270 400 418)"/>
+  <!-- Inner petals -->
+  <ellipse cx="400" cy="418" rx="14" ry="20" fill="#e74c3c" opacity="0.80" transform="rotate(-60 400 418)"/>
+  <ellipse cx="400" cy="418" rx="14" ry="20" fill="#e74c3c" opacity="0.80" transform="rotate(0 400 418)"/>
+  <ellipse cx="400" cy="418" rx="14" ry="20" fill="#e74c3c" opacity="0.80" transform="rotate(60 400 418)"/>
+  <ellipse cx="400" cy="418" rx="14" ry="20" fill="#e74c3c" opacity="0.80" transform="rotate(120 400 418)"/>
+  <ellipse cx="400" cy="418" rx="14" ry="20" fill="#e74c3c" opacity="0.80" transform="rotate(180 400 418)"/>
+  <ellipse cx="400" cy="418" rx="14" ry="20" fill="#e74c3c" opacity="0.80" transform="rotate(240 400 418)"/>
+  <!-- Rose center -->
+  <circle cx="400" cy="418" r="10" fill="#f1948a" opacity="0.9"/>
+
+  <!-- Rose stem -->
+  <line x1="400" y1="450" x2="400" y2="490" stroke="#5d8a5e" stroke-width="2.5" stroke-opacity="0.7"/>
+  <!-- Small leaf -->
+  <ellipse cx="390" cy="468" rx="10" ry="5" fill="#5d8a5e" opacity="0.65" transform="rotate(-30 390 468)"/>
+
+  <!-- Rays from halo -->
+  <line x1="400" y1="132" x2="400" y2="96"  stroke="#c0392b" stroke-width="1.2" stroke-opacity="0.3"/>
+  <line x1="444" y1="152" x2="470" y2="124" stroke="#c0392b" stroke-width="0.9" stroke-opacity="0.22"/>
+  <line x1="356" y1="152" x2="330" y2="124" stroke="#c0392b" stroke-width="0.9" stroke-opacity="0.22"/>
+  <line x1="464" y1="196" x2="500" y2="196" stroke="#c0392b" stroke-width="0.9" stroke-opacity="0.18"/>
+  <line x1="336" y1="196" x2="300" y2="196" stroke="#c0392b" stroke-width="0.9" stroke-opacity="0.18"/>
+
+  <!-- Name -->
+  <text x="400" y="314" text-anchor="middle" font-family="Georgia,serif" font-size="36"
+        fill="#e8b4b8" letter-spacing="2">Santa Rita de Casia</text>
+  <text x="400" y="354" text-anchor="middle" font-family="Georgia,serif" font-size="15"
+        fill="#c0392b" letter-spacing="3" opacity="0.8">PATRONA DE LOS IMPOSIBLES</text>
+
+  <!-- Feast day -->
+  <text x="400" y="520" text-anchor="middle" font-family="Georgia,serif" font-size="13"
+        fill="#e8b4b8" opacity="0.55" letter-spacing="1">22 de Mayo · May 22</text>
+</svg>
