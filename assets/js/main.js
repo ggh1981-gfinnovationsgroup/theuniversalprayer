@@ -105,26 +105,28 @@ const BASE_PRAYERS = [
 
 // ── ALL KNOWN INTERCESSORS ─────────────────────────
 const INTERCESSORS = [
-  { id: 'misericordia',      subdomain: 'misericordia',      chaplet: true,  novena: true,  color: '#a01818', short: { es: 'D. Misericordia', en: 'Divine Mercy'     }, name: { en: 'Divine Mercy',                          es: 'Divina Misericordia'                      } },
-  { id: 'inmaculadocorazon', subdomain: 'inmaculadocorazon', chaplet: true,  novena: true,  color: '#1a5fa0', short: { es: 'Inm. Corazón',    en: 'Imm. Heart'       }, name: { en: 'Immaculate Heart of Mary',               es: 'Inmaculado Corazón de María'               } },
-  { id: 'sagradocorazon',    subdomain: 'sagradocorazon',    chaplet: true,  novena: true,  color: '#7a1515', short: { es: 'S. Corazón',      en: 'Sacred Heart'     }, name: { en: 'Sacred Heart',                          es: 'Sagrado Corazón'                          } },
-  { id: 'providencia',       subdomain: 'providencia',       chaplet: false, novena: true,  color: '#6b4800', short: { es: 'Div. Providencia', en: 'Div. Providence'  }, name: { en: 'Divine Providence',                     es: 'La Divina Providencia'                    } },
-  { id: 'guadalupe',         subdomain: 'guadalupe',         chaplet: true,  novena: true,  color: '#7a6010', short: { es: 'Guadalupe',        en: 'Guadalupe'        }, name: { en: 'Our Lady of Guadalupe',                 es: 'Virgen de Guadalupe'                      } },
-  { id: 'fatima',            subdomain: 'fatima',            chaplet: true,  novena: true,  color: '#1a4a7a', short: { es: 'Fátima',           en: 'Fátima'           }, name: { en: 'Our Lady of Fatima',                    es: 'Virgen de Fátima'                         } },
-  { id: 'padrepio',          subdomain: 'padrepio',          chaplet: true,  novena: true,  color: '#5a3828', short: { es: 'Padre Pío',        en: 'Padre Pio'        }, name: { en: 'Padre Pio',                             es: 'Padre Pío'                                } },
-  { id: 'sanjose',           subdomain: 'sanjose',           chaplet: true,  novena: true,  color: '#7a5e18', short: { es: 'San José',         en: 'St. Joseph'       }, name: { en: 'Saint Joseph',                          es: 'San José'                                 } },
-  { id: 'sanjudas',          subdomain: 'sanjudas',          chaplet: true,  novena: true,  color: '#1a6a3a', short: { es: 'San Judas',        en: 'St. Jude'         }, name: { en: 'Saint Jude Thaddaeus',                  es: 'San Judas Tadeo'                          } },
-  { id: 'juanpablo',         subdomain: 'juanpablo',         chaplet: false, novena: true,  color: '#2a3a5a', short: { es: 'Juan Pablo II',    en: 'John Paul II'     }, name: { en: 'Saint John Paul II',                    es: 'San Juan Pablo II'                        } },
-  { id: 'sanantonio',        subdomain: 'sanantonio',        chaplet: true,  novena: true,  color: '#6a3018', short: { es: 'San Antonio',      en: 'St. Anthony'      }, name: { en: 'Saint Anthony of Padua',                es: 'San Antonio de Padua'                     } },
-  { id: 'teresacalcuta',     subdomain: 'teresacalcuta',     chaplet: false, novena: true,  color: '#1a3a7a', short: { es: 'Sta. Teresa',      en: 'St. Teresa'       }, name: { en: 'Saint Teresa of Calcutta',              es: 'Santa Teresa de Calcuta'                  } },
-  { id: 'sanmiguel',         subdomain: 'sanmiguel',         chaplet: true,  novena: true,  color: '#253070', short: { es: 'San Miguel',       en: 'St. Michael'      }, name: { en: 'Saint Michael the Archangel',           es: 'San Miguel Arcángel'                      } },
-  { id: 'sangabriel',        subdomain: 'sangabriel',        chaplet: true,  novena: true,  color: '#1a3a6b', short: { es: 'San Gabriel',      en: 'St. Gabriel'      }, name: { en: 'Saint Gabriel the Archangel',           es: 'San Gabriel Arcángel'                     } },
-  { id: 'sanrafael',         subdomain: 'sanrafael',         chaplet: true,  novena: true,  color: '#1a5c3a', short: { es: 'San Rafael',       en: 'St. Raphael'      }, name: { en: 'Saint Raphael the Archangel',           es: 'San Rafael Arcángel'                      } },
-  { id: 'angelguarda',       subdomain: 'angelguarda',       chaplet: false, novena: true,  color: '#4a4a70', short: { es: 'Ángel Custodio',   en: 'Guardian Angel'   }, name: { en: 'Guardian Angel',                        es: 'Ángel de la Guarda'                       } },
-  { id: 'divinaprovidencia', subdomain: 'divinaprovidencia', chaplet: false, novena: true,  color: '#7a5a00', short: { es: 'N.S. Providencia', en: 'Lady Providence'  }, name: { en: 'Our Lady of Divine Providence',         es: 'Nuestra Señora de la Divina Providencia'  } },
-  { id: 'santarita',         subdomain: 'santarita',         chaplet: true,  novena: true,  color: '#7a1520', short: { es: 'Santa Rita',       en: 'St. Rita'         }, name: { en: 'Saint Rita of Cascia',                  es: 'Santa Rita de Casia'                      } },
-  { id: 'sanfelipeneri',     subdomain: 'sanfelipeneri',     chaplet: true,  novena: true,  color: '#8a4a10', short: { es: 'S. Felipe Neri',   en: 'St. Philip Neri'  }, name: { en: 'Saint Philip Neri',                     es: 'San Felipe Neri'                          } },
-  { id: 'schoenstatt',       subdomain: 'schoenstatt',       chaplet: false, novena: true,  color: '#1a3070', short: { es: 'Schoenstatt',      en: 'Schoenstatt'      }, name: { en: 'Our Lady of Schoenstatt',                es: 'Virgen de Schoenstatt'                    } },
+  { id: 'misericordia',      subdomain: 'misericordia',      chaplet: true,  novena: true,  color: '#a01818', short: { es: 'D. Misericordia', en: 'Divine Mercy'     }, name: { en: 'Divine Mercy',                          es: 'Divina Misericordia'                      }, specialty: { es: 'Misericordia y perdón',       en: 'Mercy & forgiveness'         } },
+  { id: 'inmaculadocorazon', subdomain: 'inmaculadocorazon', chaplet: true,  novena: true,  color: '#1a5fa0', short: { es: 'Inm. Corazón',    en: 'Imm. Heart'       }, name: { en: 'Immaculate Heart of Mary',               es: 'Inmaculado Corazón de María'               }, specialty: { es: 'Consagración y refugio',      en: 'Consecration & refuge'       } },
+  { id: 'sagradocorazon',    subdomain: 'sagradocorazon',    chaplet: true,  novena: true,  color: '#7a1515', short: { es: 'S. Corazón',      en: 'Sacred Heart'     }, name: { en: 'Sacred Heart',                          es: 'Sagrado Corazón'                          }, specialty: { es: 'Amor y reparación',           en: 'Love & reparation'           } },
+  { id: 'providencia',       subdomain: 'providencia',       chaplet: false, novena: true,  color: '#6b4800', short: { es: 'Div. Providencia', en: 'Div. Providence'  }, name: { en: 'Divine Providence',                     es: 'La Divina Providencia'                    }, specialty: { es: 'Confianza y provisión',       en: 'Trust & provision'           } },
+  { id: 'guadalupe',         subdomain: 'guadalupe',         chaplet: true,  novena: true,  color: '#7a6010', short: { es: 'Guadalupe',        en: 'Guadalupe'        }, name: { en: 'Our Lady of Guadalupe',                 es: 'Virgen de Guadalupe'                      }, specialty: { es: 'Pueblos y familias',          en: 'Peoples & families'          } },
+  { id: 'fatima',            subdomain: 'fatima',            chaplet: true,  novena: true,  color: '#1a4a7a', short: { es: 'Fátima',           en: 'Fátima'           }, name: { en: 'Our Lady of Fatima',                    es: 'Virgen de Fátima'                         }, specialty: { es: 'Paz y conversión',            en: 'Peace & conversion'          } },
+  { id: 'padrepio',          subdomain: 'padrepio',          chaplet: true,  novena: true,  color: '#5a3828', short: { es: 'Padre Pío',        en: 'Padre Pio'        }, name: { en: 'Padre Pio',                             es: 'Padre Pío'                                }, specialty: { es: 'Confesión y sanación',        en: 'Confession & healing'        } },
+  { id: 'sanjose',           subdomain: 'sanjose',           chaplet: true,  novena: true,  color: '#7a5e18', short: { es: 'San José',         en: 'St. Joseph'       }, name: { en: 'Saint Joseph',                          es: 'San José'                                 }, specialty: { es: 'Hogares y trabajadores',      en: 'Homes & workers'             } },
+  { id: 'sanjudas',          subdomain: 'sanjudas',          chaplet: true,  novena: true,  color: '#1a6a3a', short: { es: 'San Judas',        en: 'St. Jude'         }, name: { en: 'Saint Jude Thaddaeus',                  es: 'San Judas Tadeo'                          }, specialty: { es: 'Causas imposibles',           en: 'Impossible causes'           } },
+  { id: 'juanpablo',         subdomain: 'juanpablo',         chaplet: false, novena: true,  color: '#2a3a5a', short: { es: 'Juan Pablo II',    en: 'John Paul II'     }, name: { en: 'Saint John Paul II',                    es: 'San Juan Pablo II'                        }, specialty: { es: 'Jóvenes y familias',          en: 'Youth & families'            } },
+  { id: 'sanantonio',        subdomain: 'sanantonio',        chaplet: true,  novena: true,  color: '#6a3018', short: { es: 'San Antonio',      en: 'St. Anthony'      }, name: { en: 'Saint Anthony of Padua',                es: 'San Antonio de Padua'                     }, specialty: { es: 'Lo perdido y los pobres',     en: 'Lost things & the poor'      } },
+  { id: 'teresacalcuta',     subdomain: 'teresacalcuta',     chaplet: false, novena: true,  color: '#1a3a7a', short: { es: 'Sta. Teresa',      en: 'St. Teresa'       }, name: { en: 'Saint Teresa of Calcutta',              es: 'Santa Teresa de Calcuta'                  }, specialty: { es: 'Los más pobres',              en: 'The poorest of the poor'     } },
+  { id: 'sanmiguel',         subdomain: 'sanmiguel',         chaplet: true,  novena: true,  color: '#253070', short: { es: 'San Miguel',       en: 'St. Michael'      }, name: { en: 'Saint Michael the Archangel',           es: 'San Miguel Arcángel'                      }, specialty: { es: 'Protección espiritual',       en: 'Spiritual protection'        } },
+  { id: 'sangabriel',        subdomain: 'sangabriel',        chaplet: true,  novena: true,  color: '#1a3a6b', short: { es: 'San Gabriel',      en: 'St. Gabriel'      }, name: { en: 'Saint Gabriel the Archangel',           es: 'San Gabriel Arcángel'                     }, specialty: { es: 'Mensajes divinos',            en: 'Divine messages'             } },
+  { id: 'sanrafael',         subdomain: 'sanrafael',         chaplet: true,  novena: true,  color: '#1a5c3a', short: { es: 'San Rafael',       en: 'St. Raphael'      }, name: { en: 'Saint Raphael the Archangel',           es: 'San Rafael Arcángel'                      }, specialty: { es: 'Sanación y viajeros',         en: 'Healing & travelers'         } },
+  { id: 'angelguarda',       subdomain: 'angelguarda',       chaplet: false, novena: true,  color: '#4a4a70', short: { es: 'Ángel Custodio',   en: 'Guardian Angel'   }, name: { en: 'Guardian Angel',                        es: 'Ángel de la Guarda'                       }, specialty: { es: 'Custodia personal',           en: 'Personal guardian'           } },
+  { id: 'divinaprovidencia', subdomain: 'divinaprovidencia', chaplet: false, novena: true,  color: '#7a5a00', short: { es: 'N.S. Providencia', en: 'Lady Providence'  }, name: { en: 'Our Lady of Divine Providence',         es: 'Nuestra Señora de la Divina Providencia'  }, specialty: { es: 'Necesidades cotidianas',      en: 'Daily needs & trust'         } },
+  { id: 'santarita',         subdomain: 'santarita',         chaplet: true,  novena: true,  color: '#7a1520', short: { es: 'Santa Rita',       en: 'St. Rita'         }, name: { en: 'Saint Rita of Cascia',                  es: 'Santa Rita de Casia'                      }, specialty: { es: 'Causas imposibles',           en: 'Impossible causes'           } },
+  { id: 'sanfelipeneri',     subdomain: 'sanfelipeneri',     chaplet: true,  novena: true,  color: '#8a4a10', short: { es: 'S. Felipe Neri',   en: 'St. Philip Neri'  }, name: { en: 'Saint Philip Neri',                     es: 'San Felipe Neri'                          }, specialty: { es: 'Alegría y conversión',        en: 'Joy & conversion'            } },
+  { id: 'schoenstatt',       subdomain: 'schoenstatt',       chaplet: false, novena: true,  color: '#1a3070', short: { es: 'Schoenstatt',      en: 'Schoenstatt'      }, name: { en: 'Our Lady of Schoenstatt',                es: 'Virgen de Schoenstatt'                    }, specialty: { es: 'Alianza de amor y familia',   en: 'Covenant of love & family'   } },
+  { id: 'santadymphna',      subdomain: 'santadymphna',      chaplet: false, novena: true,  color: '#4a2a7a', short: { es: 'Sta. Dymphna',     en: 'St. Dymphna'      }, name: { en: 'Saint Dymphna',                         es: 'Santa Dymphna'                            }, specialty: { es: 'Salud mental y paz',          en: 'Mental health & peace'       } },
+  { id: 'santateresita',     subdomain: 'santateresita',     chaplet: true,  novena: true,  color: '#8a2050', short: { es: 'Sta. Teresita',    en: 'St. Thérèse'      }, name: { en: 'Saint Thérèse of the Child Jesus',      es: 'Santa Teresita del Niño Jesús'            }, specialty: { es: 'El camino pequeño',           en: 'The Little Way'              } },
 ];
 
 // ── STATE ──────────────────────────────────────────
@@ -338,11 +340,14 @@ function buildCard(data, meta) {
   if (meta.novena)  badges.push(`<span class="badge">${lang === 'en' ? 'Novena' : 'Novena'}</span>`);
   if (meta.chaplet) badges.push(`<span class="badge">${lang === 'en' ? 'Chaplet' : 'Coronilla'}</span>`);
 
+  const specialty = meta.specialty ? meta.specialty[lang] : '';
+
   card.innerHTML = `
     <div class="card-image-wrap">${imgHtml}</div>
     <div class="card-body">
       <div class="card-name">${data.name[lang]}</div>
       <div class="card-feast">${i18n[lang].feast_day} ${data.feast_day[lang]}</div>
+      ${specialty ? `<div class="card-specialty">✦ ${specialty}</div>` : ''}
       <div class="card-badges">${badges.join('')}</div>
     </div>`;
   return card;
@@ -945,6 +950,38 @@ function getChapletSteps(id, lang) {
       steps.push({ label: L ? `${d.nombre} · Padre Nuestro` : `${d.nombre} · Our Father`, text: p.pn, count: 1, bead: 'large' });
       steps.push({ label: L ? `${d.nombre} · Ave María` : `${d.nombre} · Hail Mary`, text: p.am, count: 1, bead: 'small' });
       steps.push({ label: d.nombre, text: d.texto, count: 1, bead: 'none' });
+    });
+    steps.push(final, { ...cruz, label: L ? 'Señal de la Cruz final' : 'Final Sign of the Cross' });
+    return steps;
+  }
+
+  // ── SANTA TERESITA DEL NIÑO JESÚS (5 rosas) ───────────
+  if (id === 'santateresita') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«Santa Teresita del Niño Jesús, la pequeña flor de Lisieux:\ntTú que prometiste pasar tu cielo haciendo bien en la tierra,\nrecíbeme como uno de tus hermánúsimos. Intercede hoy por mí.\nEnséñame tu camino pequeño: la confianza total en Dios como niño.\u00bb'
+      : '«Saint Thérèse of the Child Jesus, the little flower of Lisieux:\nyou who promised to spend your heaven doing good on earth,\nreceive me as one of your little ones. Intercede for me today.\nTeach me your Little Way: total confidence in God as a child.\u00bb', count: 1, bead: 'none' };
+    const rosas = L ? [
+      { nombre: '1ª Rosa · La Pequeñez',     texto: 'Oh Teresita, que foundáste la santidad en las pequeñas cosas,\nenséñame a ofrecer cada momento ordinario a Dios con amor.' },
+      { nombre: '2ª Rosa · La Confianza',     texto: 'Oh Teresita, que confiaste como niña en los brazos del Padre,\nayuda mi corazón ansioso a descansar en Dios sin miedo.' },
+      { nombre: '3ª Rosa · El Sufrimiento',   texto: 'Oh Teresita, que ofreciste tu tuberculosis con amor heroico,\nuna mis dolores a los de Cristo para que tengan sentido.' },
+      { nombre: '4ª Rosa · Las Misiones',     texto: 'Oh Teresita, patrona de los misioneros,\nintercéde por quienes llevan el Evangelio a los rincones del mundo.' },
+      { nombre: '5ª Rosa · La Promesa',       texto: 'Oh Teresita, que prometiste una lluvia de rosas desde el cielo,\nenvía hoy tus rosas de gracia sobre todos los que te invocan.' },
+    ] : [
+      { nombre: '1st Rose · Littleness',        texto: 'O Thérèse, who found holiness in little things,\nteach me to offer every ordinary moment to God with love.' },
+      { nombre: '2nd Rose · Trust',              texto: 'O Thérèse, who trusted like a child in the Father’s arms,\nhelp my anxious heart to rest in God without fear.' },
+      { nombre: '3rd Rose · Suffering',          texto: 'O Thérèse, who offered your tuberculosis with heroic love,\nunite my pains to Christ’s so that they may have meaning.' },
+      { nombre: '4th Rose · Missions',            texto: 'O Thérèse, patroness of missionaries,\nintercede for those who carry the Gospel to the ends of the earth.' },
+      { nombre: '5th Rose · The Promise',        texto: 'O Thérèse, who promised a shower of roses from heaven,\nsend today your roses of grace upon all who call upon you.' },
+    ];
+    const final = { label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«Dios mío, te doy gracias por haber dado a la Iglesia\na la pequeña Santa Teresita del Niño Jesús.\nQue su camino de confianza y amor me inspire a vivir\ncada día como si fuera el último,\nen la certeza de Tu amor. Amén.»'
+      : '«O God, I thank You for having given to the Church\nthe little Saint Thérèse of the Child Jesus.\nMay her way of trust and love inspire me to live\neach day as if it were the last,\nin the certainty of Your love. Amen.»', count: 1, bead: 'none' };
+    const steps = [cruz, opening];
+    rosas.forEach(r => {
+      steps.push({ label: L ? `${r.nombre} · Padre Nuestro` : `${r.nombre} · Our Father`, text: p.pn, count: 1, bead: 'large' });
+      steps.push({ label: L ? `${r.nombre} · Ave María × 10` : `${r.nombre} · Hail Mary × 10`, text: p.am, count: 10, bead: 'small' });
+      steps.push({ label: r.nombre, text: r.texto, count: 1, bead: 'none' });
+      steps.push({ ...gloria });
     });
     steps.push(final, { ...cruz, label: L ? 'Señal de la Cruz final' : 'Final Sign of the Cross' });
     return steps;

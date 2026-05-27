@@ -390,6 +390,13 @@ body {
   color: var(--white-dim);
   letter-spacing: 0.03em;
 }
+.card-specialty {
+  font-size: 0.78rem;
+  color: var(--gold-dim);
+  font-style: italic;
+  letter-spacing: 0.02em;
+  margin-top: 0.1rem;
+}
 .card-badges {
   display: flex;
   gap: 0.4rem;

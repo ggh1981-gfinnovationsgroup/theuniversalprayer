@@ -1,0 +1,141 @@
+{
+  "name": {
+    "es": "Santa Dymphna",
+    "en": "Saint Dymphna"
+  },
+  "feast_day": {
+    "es": "15 de mayo",
+    "en": "May 15"
+  },
+  "image": "/assets/images/santadymphna.svg",
+  "chaplet": { "available": false },
+  "color": "#4a2a7a",
+  "short_bio": {
+    "es": "Princesa irlandesa mártir del siglo VII, patrona de los enfermos mentales, la ansiedad y la depresión. Su santuario en Geel, Bélgica, es centro mundial de sanación espiritual.",
+    "en": "7th-century Irish martyr princess, patron of the mentally ill, anxiety, and depression. Her shrine in Geel, Belgium is a world center of spiritual healing."
+  },
+  "history": {
+    "es": "Santa Dymphna nació en Irlanda en el siglo VII, hija de un pequeño rey pagano llamado Daman y de una madre cristiana de gran virtud y belleza. Cuando Dymphna era aún niña, su madre murió, y el padre, enloquecido de dolor, comenzó a buscar por todo el reino a alguien que se pareciera a su esposa. Al ver que Dymphna, ya adolescente, se parecía cada vez más a su madre, su mente perturbada lo llevó a querer casarse con ella.\n\nDymphna, consagrada a Dios desde joven y guiada por su confesor el sacerdote San Gerebern, huyó de Irlanda junto a él, a un bufón de la corte y su esposa. Llegaron a Amberes y luego se adentraron en los bosques belgas, estableciéndose en el lugar llamado hoy Geel.\n\nSu padre, sin embargo, los encontró. Cuando Dymphna se negó a regresar con él y rechazó su propuesta ilícita, Daman ordenó decapitar al sacerdote Gerebern. Luego, al ver que ni sus soldados ni su bufón se atrevían a matar a la joven, él mismo le cortó la cabeza con su espada. Era alrededor del año 620 d.C. y Dymphna contaba apenas quince años.\n\nSu cuerpo fue enterrado en Geel. Con el paso del tiempo, numerosas personas con enfermedades mentales que peregrinaban a su santuario fueron curadas milagrosamente. La ciudad de Geel se volvió famosa en toda Europa por su hospitalidad hacia los enfermos mentales: las familias locales los recibían en sus hogares, un modelo de atención comunitaria que persiste hasta hoy.\n\nFue canonizada y su culto se extendió por todo el mundo. Es invocada por quienes sufren ansiedad, depresión, trastornos mentales, epilepsia, y también por las víctimas de incesto y abuso. Su corona de espinas es la locura del mundo; su victoria, la paz interior que Dios da.",
+    "en": "Saint Dymphna was born in Ireland in the 7th century, the daughter of a petty pagan king named Damon and a deeply Christian mother of great virtue and beauty. When Dymphna was still a child, her mother died, and her father, maddened by grief, began searching his kingdom for someone who resembled his late wife. When Dymphna, now a teenager, grew to look more and more like her mother, his disturbed mind led him to desire to marry her.\n\nDymphna, consecrated to God from youth and guided by her confessor the priest Saint Gerebern, fled Ireland with him, a court jester, and his wife. They sailed to Antwerp and made their way into the Belgian forests, settling in the place now called Geel.\n\nHer father, however, tracked them down. When Dymphna refused to return with him and rejected his sinful proposal, Damon ordered the beheading of the priest Gerebern. Then, seeing that neither his soldiers nor his jester dared kill the young woman, he drew his sword and cut off her head himself. It was around the year 620 AD, and Dymphna was barely fifteen years old.\n\nHer body was buried in Geel. Over time, many people with mental illness who pilgrimaged to her shrine were miraculously healed. The town of Geel became famous throughout Europe for its hospitality toward the mentally ill: local families welcomed them into their homes, a model of community care that persists to this day.\n\nCanonicalized over time, her cult spread throughout the world. She is invoked by those suffering from anxiety, depression, mental disorders, epilepsy, and also by victims of incest and abuse. Her crown of thorns is the world's madness; her victory, the inner peace that God gives."
+  },
+  "prayer": {
+    "es": "Oh Santa Dymphna, flor pura y mártir valiente,\nque en medio de la oscuridad de la locura y la violencia\nbrillaaste como luz de Dios:\nvuelve tus ojos hacia quienes hoy luchan en la oscuridad interior,\nlos que sienten el peso de la ansiedad, la depresión y el miedo.\n\nTú conoces el horror de una mente perturbada.\nTú conoces el dolor de quien es perseguido por quienes debían amarlo.\nPor eso eres tan cercana a los que sufren.\n\nIntercedeante el Señor por todos los enfermos mentales,\npor los que no tienen paz interior,\npor los que temen su propia mente.\nQue encuentren refugio en el amor de Dios,\nfortaleza en su debilidad,\ny la luz que supera toda oscuridad.\n\nSanta Dymphna, patrona de la salud mental,\nruega por nosotros. Amén.",
+    "en": "O Saint Dymphna, pure flower and courageous martyr,\nwho in the midst of the darkness of madness and violence\nshone as a light of God:\nturn your eyes toward those who today struggle in interior darkness,\nthose who feel the weight of anxiety, depression, and fear.\n\nYou know the horror of a disturbed mind.\nYou know the pain of one pursued by those who should have loved them.\nThat is why you are so close to those who suffer.\n\nIntercede before the Lord for all the mentally ill,\nfor those who have no inner peace,\nfor those who fear their own minds.\nMay they find refuge in God's love,\nstrength in their weakness,\nand the light that overcomes all darkness.\n\nSaint Dymphna, patron of mental health,\npray for us. Amen."
+  },
+  "novena": {
+    "title": {
+      "es": "Novena a Santa Dymphna",
+      "en": "Novena to Saint Dymphna"
+    },
+    "days": [
+      {
+        "day": 1,
+        "title": { "es": "Día 1: La Fortaleza en la Debilidad", "en": "Day 1: Strength in Weakness" },
+        "reflection": {
+          "es": "Santa Dymphna enfrentó la prueba más terrible: la traición de su propio padre. En su debilidad humana, Dios le dio una fortaleza sobrenatural. Hoy contemplamos que Dios no nos abandona cuando nos sentimos más frágiles.",
+          "en": "Saint Dymphna faced the most terrible trial: betrayal by her own father. In her human weakness, God gave her supernatural strength. Today we contemplate that God does not abandon us when we feel most fragile."
+        },
+        "prayer": {
+          "es": "Santa Dymphna, que encontraste fortaleza en Dios cuando todo lo humano fallaba: intercede por mí hoy, especialmente en mis momentos de mayor debilidad. Que el Señor sea mi fortaleza. Amén.",
+          "en": "Saint Dymphna, who found strength in God when all human support failed: intercede for me today, especially in my moments of greatest weakness. May the Lord be my strength. Amen."
+        }
+      },
+      {
+        "day": 2,
+        "title": { "es": "Día 2: La Paz que Dios Da", "en": "Day 2: The Peace That God Gives" },
+        "reflection": {
+          "es": "Jesús dijo: 'Mi paz os doy; no como el mundo la da.' Santa Dymphna vivió esta paz que supera todo entendimiento, incluso al borde de la muerte. Ella puede alcanzarla para nosotros.",
+          "en": "Jesus said: 'My peace I give you; not as the world gives.' Saint Dymphna lived this peace that surpasses all understanding, even at the edge of death. She can obtain it for us."
+        },
+        "prayer": {
+          "es": "Santa Dymphna, alcánzame la paz verdadera, la que solo Dios puede dar. Calma la tormenta de mi mente y llena mi corazón de la serenidad que viene del Cielo. Amén.",
+          "en": "Saint Dymphna, obtain for me true peace, the kind only God can give. Calm the storm of my mind and fill my heart with the serenity that comes from Heaven. Amen."
+        }
+      },
+      {
+        "day": 3,
+        "title": { "es": "Día 3: Sanación del Pasado", "en": "Day 3: Healing of the Past" },
+        "reflection": {
+          "es": "Dymphna fue víctima de violencia familiar y persecución. Muchos heridos llevan en su interior cicatrices de su pasado. Cristo vino a sanar al quebrantado de corazón y a Santa Dymphna se le ha dado ese ministerio de sanación.",
+          "en": "Dymphna was a victim of family violence and persecution. Many wounded people carry scars from their past. Christ came to heal the brokenhearted, and Saint Dymphna has been given that healing ministry."
+        },
+        "prayer": {
+          "es": "Santa Dymphna, intercede por quienes cargan heridas del pasado que envenenan su presente. Que Cristo, el médico del alma, sane lo que está roto y restaure lo que fue destruido. Amén.",
+          "en": "Saint Dymphna, intercede for those who carry wounds from the past that poison their present. May Christ, the physician of the soul, heal what is broken and restore what was destroyed. Amen."
+        }
+      },
+      {
+        "day": 4,
+        "title": { "es": "Día 4: El Don de la Pureza", "en": "Day 4: The Gift of Purity" },
+        "reflection": {
+          "es": "Santa Dymphna eligió la muerte antes que comprometer su consagración a Dios. Su pureza fue su fortaleza. En un mundo que confunde amor y posesión, su testimonio es luz.",
+          "en": "Saint Dymphna chose death rather than compromise her consecration to God. Her purity was her strength. In a world that confuses love and possession, her witness is a light."
+        },
+        "prayer": {
+          "es": "Santa Dymphna, guarda mi corazón en la pureza que agrada a Dios. Protege especialmente a los jóvenes vulnerables y a quienes son víctimas de quienes debían protegerlos. Amén.",
+          "en": "Saint Dymphna, keep my heart in the purity that pleases God. Protect especially the vulnerable young and those who are victims of those who should have protected them. Amen."
+        }
+      },
+      {
+        "day": 5,
+        "title": { "es": "Día 5: Esperanza para los que Sufren", "en": "Day 5: Hope for Those Who Suffer" },
+        "reflection": {
+          "es": "El santuario de Geel se convirtió en lugar de esperanza para los que el mundo rechazaba. Santa Dymphna nos enseña que nadie está más allá de la misericordia y la sanación de Dios.",
+          "en": "The shrine of Geel became a place of hope for those whom the world rejected. Saint Dymphna teaches us that no one is beyond God's mercy and healing."
+        },
+        "prayer": {
+          "es": "Santa Dymphna, patrona de los que no tienen esperanza: enciende en sus corazones la llama que solo Dios puede encender. Que sepan que son amados y que Dios tiene un plan para ellos. Amén.",
+          "en": "Saint Dymphna, patron of the hopeless: light in their hearts the flame that only God can kindle. May they know they are loved and that God has a plan for them. Amen."
+        }
+      },
+      {
+        "day": 6,
+        "title": { "es": "Día 6: Protección de la Familia", "en": "Day 6: Protection of the Family" },
+        "reflection": {
+          "es": "La familia es el primer lugar de amor pero también puede convertirse en fuente de herida. Dymphna nos muestra que Dios puede convertir incluso el mayor sufrimiento familiar en testimonio de su gracia.",
+          "en": "The family is the first place of love but can also become a source of wounds. Dymphna shows us that God can turn even the greatest family suffering into a testimony of His grace."
+        },
+        "prayer": {
+          "es": "Santa Dymphna, intercede por las familias rotas, por los hijos que sufren, por los padres que han perdido el camino. Que Dios restaure lo quebrado y traiga su luz a los hogares oscurecidos. Amén.",
+          "en": "Saint Dymphna, intercede for broken families, for suffering children, for parents who have lost their way. May God restore what is broken and bring His light to darkened homes. Amen."
+        }
+      },
+      {
+        "day": 7,
+        "title": { "es": "Día 7: La Salud Mental como Don", "en": "Day 7: Mental Health as a Gift" },
+        "reflection": {
+          "es": "Dios creó la mente humana a Su imagen. La salud mental no es un lujo: es una necesidad sagrada. Santa Dymphna intercede especialmente por quienes cuidan de los enfermos mentales: médicos, familias, terapeutas.",
+          "en": "God created the human mind in His image. Mental health is not a luxury: it is a sacred necessity. Saint Dymphna intercedes especially for those who care for the mentally ill: doctors, families, therapists."
+        },
+        "prayer": {
+          "es": "Santa Dymphna, bendice a todos los que trabajan por la salud mental: los médicos, los psicólogos, los familiares que con amor acompañan. Que su obra sea sagrada a los ojos de Dios. Amén.",
+          "en": "Saint Dymphna, bless all who work for mental health: doctors, psychologists, family members who lovingly accompany. May their work be sacred in God's eyes. Amen."
+        }
+      },
+      {
+        "day": 8,
+        "title": { "es": "Día 8: Valentía ante el Mal", "en": "Day 8: Courage Before Evil" },
+        "reflection": {
+          "es": "Dymphna se negó a ceder ante el mal aunque le costara la vida. Su martirio nos recuerda que hay cosas por las que vale la pena morir, y que Dios siempre tiene la última palabra.",
+          "en": "Dymphna refused to give in to evil even at the cost of her life. Her martyrdom reminds us that there are things worth dying for, and that God always has the last word."
+        },
+        "prayer": {
+          "es": "Santa Dymphna, dame valentía para decir no al mal y sí a Dios, incluso cuando el costo sea alto. Que tu testimonio me inspire a mantenerme firme en la fe. Amén.",
+          "en": "Saint Dymphna, give me courage to say no to evil and yes to God, even when the cost is high. May your witness inspire me to stand firm in faith. Amen."
+        }
+      },
+      {
+        "day": 9,
+        "title": { "es": "Día 9: La Lluvia de Gracias", "en": "Day 9: The Shower of Graces" },
+        "reflection": {
+          "es": "Los peregrinos a Geel por siglos han experimentado la intercesión poderosa de Santa Dymphna. Hoy terminamos nuestra novena confiando en que ella lleva nuestras peticiones al trono de Dios.",
+          "en": "Pilgrims to Geel for centuries have experienced the powerful intercession of Saint Dymphna. Today we end our novena trusting that she carries our petitions to God's throne."
+        },
+        "prayer": {
+          "es": "Santa Dymphna, flor de la pureza y mártir del amor:\nllevaste tu vida entera como ofrenda al Señor.\nHoy te presento mis necesidades más profundas:\n[momento de silencio personal]\nIntercede por mí ante Cristo, el único que puede sanar cuerpo, mente y alma.\nQue tu santa intercesión traiga a mi vida la gracia que necesito.\nSanta Dymphna, ruega por nosotros. Amén.",
+          "en": "Saint Dymphna, flower of purity and martyr of love:\nyou offered your entire life to the Lord.\nToday I present to you my deepest needs:\n[moment of personal silence]\nIntercede for me before Christ, the only One who can heal body, mind, and soul.\nMay your holy intercession bring to my life the grace I need.\nSaint Dymphna, pray for us. Amen."
+        }
+      }
+    ]
+  }
+}
