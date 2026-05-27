@@ -140,10 +140,10 @@ body {
 
 .hero-god-name {
   font-family: var(--font-serif);
-  font-size: clamp(3.8rem, 11vw, 7.5rem);
+  font-size: clamp(1.8rem, 9vw, 7.5rem);
   color: var(--gold-light);
-  line-height: 1.0;
-  letter-spacing: 0.05em;
+  line-height: 1.05;
+  letter-spacing: 0.04em;
   font-weight: 700;
   margin-bottom: 1.75rem;
   text-shadow:
@@ -976,6 +976,8 @@ body {
   }
   .support-col .support-card { flex: 1 1 220px; }
   .prayer-col { order: -1; }
+  .hero { padding: 4rem 1.25rem 3.5rem; }
+  .hero-god-name { letter-spacing: 0.01em; }
 }
 
 @media (max-width: 600px) {

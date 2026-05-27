@@ -72,6 +72,10 @@ const PRAYERS = {
     gloria:      'Gloria al Padre,\ny al Hijo,\ny al Espíritu Santo.\nComo era en el principio,\nahora y siempre,\npor los siglos de los siglos. Amén.',
     credo_title: 'Credo de los Apóstoles',
     credo:       'Creo en Dios,\nPadre todopoderoso,\nCreador del cielo y de la tierra.\nCreo en Jesucristo, su único Hijo,\nNuestro Señor,\nque fue concebido por obra y gracia\ndel Espíritu Santo,\nnació de Santa María Virgen,\npadeció bajo el poder de Poncio Pilato,\nfue crucificado, muerto y sepultado,\ndescendió a los infiernos,\nal tercer día resucitó de entre los muertos,\nsubió a los cielos y está sentado\na la derecha de Dios Padre todopoderoso.\nDesde allí ha de venir a juzgar\na vivos y muertos.\nCreo en el Espíritu Santo,\nla santa Iglesia católica,\nla comunión de los santos,\nel perdón de los pecados,\nla resurrección de la carne\ny la vida eterna. Amén.',
+    senial_title: 'Señal de la Cruz',
+    senial:       'En el nombre del Padre,\ny del Hijo,\ny del Espíritu Santo.\nAmén.',
+    salve_title:  'Salve Regina',
+    salve:        'Dios te salve, Reina y Madre\nde misericordia,\nvida, dulzura y esperanza nuestra;\nDios te salve.\nA Ti llamamos los desterrados\nhijos de Eva;\na Ti suspiramos, gimiendo y llorando\nen este valle de lágrimas.\nEa, pues, Señora, abogada nuestra,\nvuelve a nosotros esos tus ojos\nmisericordiosos;\ny después de este destierro,\nmuéstranos a Jesús,\nfruto bendito de tu vientre.\n¡Oh clementísima, oh piadosa,\noh dulce Virgen María!',
   },
   en: {
     pn_title:    'Our Father',
@@ -82,8 +86,22 @@ const PRAYERS = {
     gloria:      'Glory be to the Father,\nand to the Son,\nand to the Holy Spirit.\nAs it was in the beginning,\nis now, and ever shall be,\nworld without end. Amen.',
     credo_title: "Apostles' Creed",
     credo:       'I believe in God,\nthe Father almighty,\nCreator of heaven and earth,\nand in Jesus Christ,\nhis only Son, our Lord,\nwho was conceived by the Holy Spirit,\nborn of the Virgin Mary,\nsuffered under Pontius Pilate,\nwas crucified, died and was buried;\nhe descended into hell;\non the third day he rose again;\nhe ascended into heaven,\nand is seated at the right hand\nof God the Father almighty;\nfrom there he will come\nto judge the living and the dead.\nI believe in the Holy Spirit,\nthe holy catholic Church,\nthe communion of saints,\nthe forgiveness of sins,\nthe resurrection of the body,\nand life everlasting. Amen.',
+    senial_title: 'Sign of the Cross',
+    senial:       'In the name of the Father,\nand of the Son,\nand of the Holy Spirit.\nAmen.',
+    salve_title:  'Hail, Holy Queen',
+    salve:        'Hail, Holy Queen,\nMother of Mercy,\nour life, our sweetness\nand our hope.\nTo thee do we cry,\npoor banished children of Eve.\nTo thee do we send up our sighs,\nmourning and weeping\nin this valley of tears.\nTurn then, most gracious advocate,\nthine eyes of mercy toward us,\nand after this our exile,\nshow unto us the blessed fruit\nof thy womb, Jesus.\nO clement, O loving,\nO sweet Virgin Mary.',
   },
 };
+
+// ── BASE PRAYERS CONFIG ───────────────────────────
+const BASE_PRAYERS = [
+  { id: 'senial', titleKey: 'senial_title', textKey: 'senial' },
+  { id: 'pn',     titleKey: 'pn_title',     textKey: 'pn'     },
+  { id: 'am',     titleKey: 'am_title',     textKey: 'am'     },
+  { id: 'gloria', titleKey: 'gloria_title', textKey: 'gloria' },
+  { id: 'credo',  titleKey: 'credo_title',  textKey: 'credo'  },
+  { id: 'salve',  titleKey: 'salve_title',  textKey: 'salve'  },
+];
 
 // ── ALL KNOWN INTERCESSORS ─────────────────────────
 const INTERCESSORS = [
@@ -177,6 +195,32 @@ async function loadIntercessorData(id) {
   const resp = await fetch(url);
   if (!resp.ok) throw new Error(`Not found: ${url}`);
   return resp.json();
+}
+
+// ── BASE PRAYERS RENDERER ────────────────────────
+function renderBasePrayers() {
+  const grid = document.getElementById('basePrayersGrid');
+  if (!grid) return;
+  grid.innerHTML = '';
+  for (const prayer of BASE_PRAYERS) {
+    const tile = document.createElement('div');
+    tile.className = 'base-prayer-tile';
+    ['es', 'en'].forEach(lang => {
+      const h4 = document.createElement('h4');
+      h4.className = 'bpt-title';
+      h4.setAttribute('data-lang', lang);
+      h4.textContent = PRAYERS[lang][prayer.titleKey];
+      if (lang !== currentLang) h4.style.display = 'none';
+      const p = document.createElement('p');
+      p.className = 'bpt-text';
+      p.setAttribute('data-lang', lang);
+      p.innerHTML = PRAYERS[lang][prayer.textKey].replace(/\n/g, '<br>');
+      if (lang !== currentLang) p.style.display = 'none';
+      tile.appendChild(h4);
+      tile.appendChild(p);
+    });
+    grid.appendChild(tile);
+  }
 }
 
 // ── HOME PAGE ──────────────────────────────────────
@@ -1151,6 +1195,7 @@ function initMenu() {
     initIntercessorPage();
   } else {
     renderQuickNav();
+    renderBasePrayers();
     window._renderQuickNav = renderQuickNav;
     initHomePage();
   }
