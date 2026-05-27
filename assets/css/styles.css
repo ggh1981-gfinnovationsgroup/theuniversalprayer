@@ -102,7 +102,7 @@ body {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 5rem 1.25rem 4rem;
+  padding: 7rem 1.25rem 5.5rem;
   text-align: center;
 }
 
@@ -111,12 +111,58 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 600px;
-  height: 400px;
-  background: radial-gradient(ellipse at center, rgba(201,168,76,0.12) 0%, transparent 70%);
+  width: 900px;
+  height: 700px;
+  background: radial-gradient(ellipse at center, rgba(201,168,76,0.20) 0%, transparent 65%);
   pointer-events: none;
 }
 
+/* ── HERO: GOD NAME ───────────────────────────────── */
+.hero-cross-icon {
+  display: block;
+  font-size: 2.2rem;
+  color: var(--gold);
+  margin-bottom: 0.6rem;
+  opacity: 0.80;
+  filter: drop-shadow(0 0 18px rgba(201,168,76,0.55));
+  position: relative;
+}
+
+.hero-site-label {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  margin-bottom: 1.1rem;
+  position: relative;
+}
+
+.hero-god-name {
+  font-family: var(--font-serif);
+  font-size: clamp(3.8rem, 11vw, 7.5rem);
+  color: var(--gold-light);
+  line-height: 1.0;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  margin-bottom: 1.75rem;
+  text-shadow:
+    0 0 80px rgba(201,168,76,0.45),
+    0 0 30px rgba(201,168,76,0.28),
+    0 2px 4px rgba(0,0,0,0.6);
+  position: relative;
+}
+
+.hero-tagline {
+  font-family: var(--font-serif);
+  font-size: clamp(0.95rem, 2.2vw, 1.15rem);
+  color: var(--white-dim);
+  font-style: italic;
+  letter-spacing: 0.04em;
+  position: relative;
+}
+
+/* Legacy hero styles (kept for other pages) */
 .hero-title {
   font-family: var(--font-serif);
   font-size: clamp(2.2rem, 5vw, 3.5rem);
@@ -131,6 +177,135 @@ body {
   max-width: 540px;
   margin: 0 auto;
   position: relative;
+}
+
+/* ── SHORT PRAYER SECTION ─────────────────────────── */
+.short-prayer-section {
+  padding: 4rem 1.25rem 4.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+.short-prayer-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center 40%, rgba(201,168,76,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.short-prayer-wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.short-prayer-label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.short-prayer-text {
+  font-family: var(--font-serif);
+  font-size: clamp(1.2rem, 2.8vw, 1.5rem);
+  line-height: 2.0;
+  color: var(--white);
+  font-style: italic;
+  padding: 2.5rem 3rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--gold-dim);
+  border-radius: var(--radius);
+  margin: 0;
+  position: relative;
+  text-align: center;
+}
+
+.short-prayer-text::before {
+  content: '\275D';
+  position: absolute;
+  top: 0.6rem;
+  left: 1.2rem;
+  font-size: 2.8rem;
+  color: var(--gold-dim);
+  opacity: 0.30;
+  line-height: 1;
+  font-style: normal;
+}
+
+.short-prayer-amen {
+  display: block;
+  margin-top: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.05em;
+  color: var(--gold-light);
+  letter-spacing: 0.08em;
+}
+
+/* ── SECTION SUBTITLE ─────────────────────────────── */
+.section-subtitle {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.92rem;
+  color: var(--white-dim);
+  margin-top: -1.4rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.02em;
+}
+
+/* ── BASE PRAYERS SECTION ─────────────────────────── */
+.base-prayers-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+  border-top: 1px solid var(--border);
+}
+
+.base-prayers-title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--gold-dim);
+  text-align: center;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.75rem;
+  font-weight: 400;
+}
+
+.base-prayers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 1rem;
+}
+
+.base-prayer-tile {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.4rem;
+}
+
+.bpt-title {
+  font-family: var(--font-serif);
+  font-size: 0.88rem;
+  color: var(--gold);
+  letter-spacing: 0.06em;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--border);
+  font-weight: 400;
+}
+
+.bpt-text {
+  font-size: 0.8rem;
+  line-height: 1.85;
+  color: var(--white-dim);
 }
 
 /* ── HOME: INTERCESSORS GRID ──────────────────────── */
