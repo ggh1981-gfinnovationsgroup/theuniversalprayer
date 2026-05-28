@@ -262,9 +262,7 @@ body {
 
 /* ── BASE PRAYERS SECTION ─────────────────────────── */
 .base-prayers-section {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 3rem 1.25rem 4rem;
+  padding: 3rem 2rem 4rem;
   border-top: 1px solid var(--border);
 }
 
@@ -280,8 +278,12 @@ body {
 
 .base-prayers-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 1rem;
+}
+@media (max-width: 600px) {
+  .base-prayers-section { padding: 2.5rem 1rem 3rem; }
+  .base-prayers-grid { grid-template-columns: 1fr 1fr; }
 }
 
 .base-prayer-tile {
