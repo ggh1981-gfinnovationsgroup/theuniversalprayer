@@ -262,6 +262,8 @@ body {
 
 /* ── BASE PRAYERS SECTION ─────────────────────────── */
 .base-prayers-section {
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 3rem 2rem 4rem;
   border-top: 1px solid var(--border);
 }
