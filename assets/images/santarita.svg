@@ -83,8 +83,10 @@
         fill="#e8b4b8" letter-spacing="2">Santa Rita de Casia</text>
   <text x="400" y="332" text-anchor="middle" font-family="Georgia,serif" font-size="14"
         fill="#e8b4b8" font-style="italic" opacity="0.75">Saint Rita of Cascia</text>
-  <text x="400" y="356" text-anchor="middle" font-family="Georgia,serif" font-size="15"
-        fill="#c0392b" letter-spacing="3" opacity="0.8">PATRONA DE LOS IMPOSIBLES</text>
+  <text x="400" y="353" text-anchor="middle" font-family="Georgia,serif" font-size="14"
+        fill="#c0392b" letter-spacing="2" opacity="0.8">PATRONA DE LOS IMPOSIBLES</text>
+  <text x="400" y="370" text-anchor="middle" font-family="Georgia,serif" font-size="12"
+        fill="#c0392b" letter-spacing="1" opacity="0.55" font-style="italic">Patron of the Impossible</text>
 
   <!-- Feast day -->
   <text x="400" y="520" text-anchor="middle" font-family="Georgia,serif" font-size="13"
