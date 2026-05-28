@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#0e1e38"/>
+      <stop offset="100%" stop-color="#050a14"/>
+    </radialGradient>
+    <radialGradient id="glowHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5a88c0" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#1a3a6a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="robeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="collarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0f0f0"/>
+      <stop offset="100%" stop-color="#d8d8d8"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Subtle cross motif in background -->
+  <line x1="200" y1="30" x2="200" y2="470" stroke="#1a3a6a" stroke-width="1" opacity="0.25"/>
+  <line x1="30" y1="250" x2="370" y2="250" stroke="#1a3a6a" stroke-width="1" opacity="0.25"/>
+
+  <!-- Halo glow -->
+  <ellipse cx="200" cy="142" rx="68" ry="68" fill="url(#glowHalo)"/>
+
+  <!-- Halo ring -->
+  <circle cx="200" cy="142" r="58" fill="none" stroke="#c9a84c" stroke-width="2" opacity="0.85" filter="url(#glow)"/>
+  <circle cx="200" cy="142" r="54" fill="none" stroke="#c9a84c" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Halo cross at top -->
+  <g filter="url(#glow)" opacity="0.8">
+    <line x1="200" y1="85" x2="200" y2="105" stroke="#c9a84c" stroke-width="2"/>
+    <line x1="193" y1="92" x2="207" y2="92" stroke="#c9a84c" stroke-width="2"/>
+  </g>
+
+  <!-- Face area -->
+  <ellipse cx="200" cy="146" rx="40" ry="46" fill="#f0e0cc"/>
+
+  <!-- Simple black priest cap/tonsure suggestion -->
+  <ellipse cx="200" cy="112" rx="42" ry="22" fill="#1a1a1a"/>
+  <ellipse cx="200" cy="122" rx="40" ry="16" fill="#f0e0cc"/>
+
+  <!-- Older priest features (Vicente died at 79) -->
+  <!-- Eyes: wise, kind, slightly tired -->
+  <ellipse cx="188" cy="143" rx="5" ry="5" fill="#3a2010" opacity="0.75"/>
+  <ellipse cx="212" cy="143" rx="5" ry="5" fill="#3a2010" opacity="0.75"/>
+  <ellipse cx="188" cy="143" rx="2.5" ry="2.5" fill="#1a0808"/>
+  <ellipse cx="212" cy="143" rx="2.5" ry="2.5" fill="#1a0808"/>
+  <circle cx="189" cy="142" r="1" fill="white" opacity="0.5"/>
+  <circle cx="213" cy="142" r="1" fill="white" opacity="0.5"/>
+  <!-- Gentle wrinkles suggestion -->
+  <path d="M182,140 Q188,137 194,139" fill="none" stroke="#3a2010" stroke-width="1" opacity="0.5"/>
+  <path d="M206,139 Q212,137 218,140" fill="none" stroke="#3a2010" stroke-width="1" opacity="0.5"/>
+  <!-- Nose (older, more prominent) -->
+  <path d="M200,152 Q197,158 195,160 Q200,163 205,160 Q203,158 200,152" fill="none" stroke="#c4956a" stroke-width="1" opacity="0.6"/>
+  <!-- Kind smile -->
+  <path d="M193,170 Q200,176 207,170" fill="none" stroke="#c4956a" stroke-width="1.5" opacity="0.65"/>
+  <!-- Age lines on face -->
+  <path d="M183,157 Q185,162 183,167" fill="none" stroke="#c4956a" stroke-width="0.8" opacity="0.3"/>
+  <path d="M217,157 Q215,162 217,167" fill="none" stroke="#c4956a" stroke-width="0.8" opacity="0.3"/>
+
+  <!-- White clerical collar -->
+  <path d="M185,185 Q200,192 215,185 L218,200 Q200,208 182,200 Z" fill="url(#collarGrad)"/>
+
+  <!-- Neck -->
+  <rect x="190" y="180" width="20" height="14" rx="4" fill="#f0e0cc"/>
+
+  <!-- Black soutane/cassock body -->
+  <path d="M155,192 Q143,228 138,360 L262,360 Q257,228 245,192 Z" fill="url(#robeGrad)"/>
+
+  <!-- Soutane buttons down center -->
+  <g fill="#2a2a2a">
+    <circle cx="200" cy="215" r="2.5"/>
+    <circle cx="200" cy="232" r="2.5"/>
+    <circle cx="200" cy="249" r="2.5"/>
+    <circle cx="200" cy="266" r="2.5"/>
+    <circle cx="200" cy="283" r="2.5"/>
+    <circle cx="200" cy="300" r="2.5"/>
+    <circle cx="200" cy="317" r="2.5"/>
+    <circle cx="200" cy="334" r="2.5"/>
+  </g>
+
+  <!-- LEFT ARM: extended toward a poor figure / holding bread -->
+  <path d="M155,210 Q138,250 128,295" fill="none" stroke="#1a1a1a" stroke-width="22" stroke-linecap="round" opacity="0.9"/>
+  <path d="M155,210 Q138,250 128,295" fill="none" stroke="#2a2a2a" stroke-width="20" stroke-linecap="round"/>
+
+  <!-- Bread / loaf in left hand (symbol of feeding the poor) -->
+  <g transform="translate(110,280)">
+    <ellipse cx="10" cy="10" rx="18" ry="10" fill="#c8903a"/>
+    <ellipse cx="10" cy="8" rx="16" ry="8" fill="#daa84a"/>
+    <!-- Bread texture lines -->
+    <path d="M4,6 Q10,4 16,6" fill="none" stroke="#c8903a" stroke-width="1" opacity="0.7"/>
+    <path d="M2,10 Q10,8 18,10" fill="none" stroke="#c8903a" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- RIGHT ARM: holding or gesturing toward small kneeling figure -->
+  <path d="M245,210 Q260,248 266,290" fill="none" stroke="#1a1a1a" stroke-width="22" stroke-linecap="round" opacity="0.9"/>
+  <path d="M245,210 Q260,248 266,290" fill="none" stroke="#2a2a2a" stroke-width="20" stroke-linecap="round"/>
+
+  <!-- Small poor figure (ragged, kneeling) at right hand -->
+  <g transform="translate(258,280)" opacity="0.75">
+    <!-- kneeling body -->
+    <ellipse cx="10" cy="20" rx="10" ry="14" fill="#5a4a30"/>
+    <!-- head -->
+    <circle cx="10" cy="6" r="8" fill="#d4a870"/>
+    <!-- raised hands -->
+    <path d="M2,18 Q-4,12 -2,8" fill="none" stroke="#5a4a30" stroke-width="4" stroke-linecap="round"/>
+    <path d="M18,18 Q24,12 22,8" fill="none" stroke="#5a4a30" stroke-width="4" stroke-linecap="round"/>
+    <!-- kneeling legs -->
+    <path d="M4,30 Q4,40 6,44" fill="none" stroke="#5a4a30" stroke-width="5" stroke-linecap="round"/>
+    <path d="M16,30 Q16,40 14,44" fill="none" stroke="#5a4a30" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Cross / crucifix on chest -->
+  <g transform="translate(200,230)" opacity="0.6">
+    <rect x="-2" y="-10" width="4" height="20" rx="1" fill="#4a4a4a"/>
+    <rect x="-7" y="-4" width="14" height="4" rx="1" fill="#4a4a4a"/>
+  </g>
+
+  <!-- Vincentian cross (flared cross symbol used by Vincentians) in background -->
+  <g transform="translate(200,430)" filter="url(#glow)" opacity="0.3">
+    <path d="M-16,0 L-6,-6 L0,-18 L6,-6 L16,0 L6,6 L0,18 L-6,6 Z" fill="#c9a84c"/>
+  </g>
+
+  <!-- Decorative gold stars -->
+  <g filter="url(#glow)" opacity="0.6">
+    <text x="55" y="175" font-size="12" fill="#c9a84c">✦</text>
+    <text x="325" y="160" font-size="11" fill="#c9a84c">✦</text>
+    <text x="65" y="420" font-size="9" fill="#5a88c0">✦</text>
+    <text x="322" y="415" font-size="9" fill="#5a88c0">✦</text>
+  </g>
+
+  <!-- Charity heart symbol -->
+  <g transform="translate(200,405)" opacity="0.5" filter="url(#glow)">
+    <path d="M0,-10 C-3,-16 -12,-16 -12,-8 C-12,0 0,10 0,10 C0,10 12,0 12,-8 C12,-16 3,-16 0,-10 Z" fill="#c9a84c"/>
+  </g>
+
+  <!-- Bottom label -->
+  <rect x="55" y="440" width="290" height="44" rx="6" fill="#050a14" opacity="0.9"/>
+  <text x="200" y="459" text-anchor="middle" font-family="'Palatino Linotype', Georgia, serif" font-size="13" fill="#c9a84c" letter-spacing="1.5">SAN VICENTE DE PAÚL</text>
+  <text x="200" y="477" text-anchor="middle" font-family="'Palatino Linotype', Georgia, serif" font-size="10" fill="#5a88c0" letter-spacing="1">PATRÓN DE LAS OBRAS DE CARIDAD · 27 SEP</text>
+</svg>

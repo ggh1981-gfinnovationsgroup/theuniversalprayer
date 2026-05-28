@@ -127,6 +127,7 @@ const INTERCESSORS = [
   { id: 'schoenstatt',       subdomain: 'schoenstatt',       chaplet: false, novena: true,  color: '#1a3070', short: { es: 'Schoenstatt',      en: 'Schoenstatt'      }, name: { en: 'Our Lady of Schoenstatt',                es: 'Virgen de Schoenstatt'                    }, specialty: { es: 'Alianza de amor y familia',   en: 'Covenant of love & family'   } },
   { id: 'santadymphna',      subdomain: 'santadymphna',      chaplet: false, novena: true,  color: '#4a2a7a', short: { es: 'Sta. Dymphna',     en: 'St. Dymphna'      }, name: { en: 'Saint Dymphna',                         es: 'Santa Dymphna'                            }, specialty: { es: 'Salud mental y paz',          en: 'Mental health & peace'       } },
   { id: 'santateresita',     subdomain: 'santateresita',     chaplet: true,  novena: true,  color: '#8a2050', short: { es: 'Sta. Teresita',    en: 'St. Thérèse'      }, name: { en: 'Saint Thérèse of the Child Jesus',      es: 'Santa Teresita del Niño Jesús'            }, specialty: { es: 'El camino pequeño',           en: 'The Little Way'              } },
+  { id: 'sanvicente',        subdomain: 'sanvicente',        chaplet: true,  novena: true,  color: '#1a3a6a', short: { es: 'S. Vicente',       en: 'St. Vincent'      }, name: { en: 'Saint Vincent de Paul',                 es: 'San Vicente de Paúl'                      }, specialty: { es: 'Caridad y los pobres',        en: 'Charity and the poor'        } },
 ];
 
 // ── STATE ──────────────────────────────────────────
@@ -336,9 +337,12 @@ function buildCard(data, meta) {
     ? `<img src="${data.image}" alt="${data.name[lang]}" loading="lazy" />`
     : `<div class="card-image-placeholder">✝</div>`;
 
+  const hasChaplet = data.chaplet?.available === true;
+  const hasNovena  = Array.isArray(data.novena?.days) && data.novena.days.length > 0;
+
   const badges = [];
-  if (meta.novena)  badges.push(`<span class="badge">${lang === 'en' ? 'Novena' : 'Novena'}</span>`);
-  if (meta.chaplet) badges.push(`<span class="badge">${lang === 'en' ? 'Chaplet' : 'Coronilla'}</span>`);
+  if (hasNovena)  badges.push(`<span class="badge">${lang === 'en' ? 'Novena' : 'Novena'}</span>`);
+  if (hasChaplet) badges.push(`<span class="badge">${lang === 'en' ? 'Chaplet' : 'Coronilla'}</span>`);
 
   const specialty = meta.specialty ? meta.specialty[lang] : '';
 
