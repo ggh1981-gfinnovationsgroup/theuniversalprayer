@@ -242,6 +242,23 @@ async function initHomePage() {
       // Skip intercessors whose JSON isn't ready yet
     }
   }
+
+  // Card entrance animations via IntersectionObserver
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('card-in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.05 });
+    grid.querySelectorAll('.intercessor-card').forEach((card, i) => {
+      card.style.setProperty('--card-delay', `${Math.min(i, 8) * 55}ms`);
+      card.classList.add('card-anim');
+      io.observe(card);
+    });
+  }
 }
 
 // ── SEGUNDA DEVOCIÓN DEL DÍA ───────────────────────
@@ -332,6 +349,7 @@ function buildCard(data, meta) {
   const card = document.createElement('a');
   card.className = 'intercessor-card';
   card.href = buildIntercessorUrl(meta.subdomain);
+  if (meta.color) card.style.setProperty('--card-color', meta.color);
 
   const imgHtml = data.image
     ? `<img src="${data.image}" alt="${data.name[lang]}" loading="lazy" />`
