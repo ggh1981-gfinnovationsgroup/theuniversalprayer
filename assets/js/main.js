@@ -170,6 +170,10 @@ function setLanguage(lang) {
   // Re-render quick nav labels in new language
   if (window._renderQuickNav) window._renderQuickNav();
 
+  // Update search placeholder (bilingual)
+  const _searchInput = document.getElementById('intercessorSearch');
+  if (_searchInput) _searchInput.placeholder = lang === 'es' ? 'Buscar intercesor...' : 'Search intercessor...';
+
   // If intercessor is loaded, refresh dynamic content
   if (intercessorData) renderIntercessorContent(intercessorData);
 }
@@ -257,6 +261,18 @@ async function initHomePage() {
       card.style.setProperty('--card-delay', `${Math.min(i, 8) * 55}ms`);
       card.classList.add('card-anim');
       io.observe(card);
+    });
+  }
+
+  // Search / filter intercessors
+  const searchInput = document.getElementById('intercessorSearch');
+  if (searchInput) {
+    searchInput.placeholder = currentLang === 'es' ? 'Buscar intercesor...' : 'Search intercessor...';
+    searchInput.addEventListener('input', () => {
+      const q = searchInput.value.toLowerCase().trim();
+      grid.querySelectorAll('.intercessor-card').forEach(card => {
+        card.style.display = (q === '' || card.textContent.toLowerCase().includes(q)) ? '' : 'none';
+      });
     });
   }
 }
@@ -387,9 +403,13 @@ function renderQuickNav() {
   const inner = document.createElement('div');
   inner.className = 'quick-nav-inner';
 
+  const _todayCandidates = INTERCESSORS.filter(i => i.id !== 'misericordia');
+  const _todayMeta = _todayCandidates[Math.floor(Date.now() / 86400000) % _todayCandidates.length];
+
   for (const m of INTERCESSORS) {
     const item = document.createElement('a');
     item.className = 'quick-nav-item';
+    if (m.id === _todayMeta.id) item.classList.add('today-saint');
     item.href = buildIntercessorUrl(m.subdomain);
     if (m.color) item.style.setProperty('--item-color', m.color);
 
@@ -1261,4 +1281,56 @@ function initMenu() {
   }
 
   initMenu();
+
+  // ── SCROLL PROGRESS BAR ──────────────────────────
+  const _sb = document.getElementById('scrollProgress');
+  if (_sb) {
+    window.addEventListener('scroll', () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      _sb.style.width = max > 0 ? `${(window.scrollY / max) * 100}%` : '0%';
+    }, { passive: true });
+  }
+
+  // ── SCROLL TO TOP ─────────────────────────────────
+  const _b2t = document.getElementById('backToTop');
+  if (_b2t) {
+    window.addEventListener('scroll', () => {
+      _b2t.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+    _b2t.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  }
+
+  // ── SHARE BUTTON ──────────────────────────────────
+  const _share = document.getElementById('heroShareBtn');
+  if (_share) {
+    if (navigator.share) {
+      _share.addEventListener('click', () => {
+        navigator.share({
+          title: currentLang === 'es' ? 'La Oración Universal' : 'The Universal Prayer',
+          text: currentLang === 'es'
+            ? 'Oraciones, novenas y coronillas para cada intercesor. Gratis, siempre.'
+            : 'Prayers, novenas and chaplets for every intercessor. Free, always.',
+          url: window.location.href,
+        }).catch(() => {});
+      });
+    } else {
+      _share.style.display = 'none';
+    }
+  }
+
+  // ── TODAY’S SAINT PILL ───────────────────────────
+  if (!isIntercessorPage()) {
+    const _pill     = document.getElementById('heroTodayPill');
+    const _nameEs   = document.getElementById('heroTodayNameEs');
+    const _nameEn   = document.getElementById('heroTodayNameEn');
+    const _todayLnk = document.getElementById('heroTodayLink');
+    if (_pill && _nameEs && _nameEn && _todayLnk) {
+      const _cands = INTERCESSORS.filter(i => i.id !== 'misericordia');
+      const _today = _cands[Math.floor(Date.now() / 86400000) % _cands.length];
+      _nameEs.textContent = _today.name.es;
+      _nameEn.textContent = _today.name.en;
+      _todayLnk.href = buildIntercessorUrl(_today.subdomain);
+      _pill.style.display = 'flex';
+    }
+  }
 })();

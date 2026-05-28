@@ -1518,3 +1518,189 @@ body {
   background: var(--gold);
   color: var(--bg);
 }
+
+/* ── SKIP TO CONTENT (accessibility) ─────────────── */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: 1rem;
+  background: var(--gold);
+  color: var(--bg);
+  padding: 0.6rem 1.4rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  z-index: 10000;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.skip-to-content:focus { left: 1rem; }
+
+/* ── SCROLL PROGRESS BAR ──────────────────────────── */
+.scroll-progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--gold-dim), var(--gold), var(--gold-light));
+  z-index: 9999;
+  pointer-events: none;
+  transition: width 0.08s linear;
+}
+
+/* ── STATS STRIP ─────────────────────────────────── */
+.stats-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.6rem;
+  padding: 0.5rem 1.5rem;
+  background: rgba(201,168,76,0.05);
+  border-bottom: 1px solid var(--border);
+  font-size: 0.72rem;
+  color: var(--gold-dim);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.stats-dot { opacity: 0.35; }
+
+/* ── HERO TODAY PILL ─────────────────────────────── */
+.hero-today-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 1.25rem;
+  font-size: 0.78rem;
+  color: rgba(201,168,76,0.6);
+  letter-spacing: 0.04em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.htp-link {
+  color: var(--gold);
+  text-decoration: none;
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  border-bottom: 1px dotted var(--gold-dim);
+  transition: color var(--transition);
+}
+.htp-link:hover { color: var(--gold-light); }
+
+/* ── HERO ACTIONS ────────────────────────────────── */
+.hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.hero-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.65rem 1.75rem;
+  background: var(--gold);
+  color: var(--bg);
+  border-radius: 99px;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: background var(--transition), transform var(--transition);
+}
+.hero-cta-btn:hover { background: var(--gold-light); transform: translateY(-2px); }
+.hero-share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.65rem 1.2rem;
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid var(--gold-dim);
+  border-radius: 99px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  transition: background var(--transition), color var(--transition);
+}
+.hero-share-btn:hover { background: rgba(201,168,76,0.1); }
+
+/* ── SEARCH BAR ──────────────────────────────────── */
+.search-wrap {
+  max-width: 480px;
+  margin: 0 auto 2.5rem;
+}
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  color: var(--white);
+  font-size: 0.9rem;
+  font-family: var(--font-sans);
+  outline: none;
+  transition: border-color var(--transition), box-shadow var(--transition);
+  box-sizing: border-box;
+}
+.search-input:focus {
+  border-color: var(--gold-dim);
+  box-shadow: 0 0 0 3px rgba(201,168,76,0.1);
+}
+.search-input::placeholder { color: var(--gold-dim); opacity: 0.6; }
+
+/* ── SCROLL TO TOP ───────────────────────────────── */
+.back-to-top {
+  position: fixed;
+  bottom: 1.75rem;
+  right: 1.5rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--gold-dim);
+  color: var(--bg);
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s;
+  z-index: 100;
+  line-height: 44px;
+  text-align: center;
+}
+.back-to-top.visible { opacity: 1; transform: translateY(0); }
+.back-to-top:hover { background: var(--gold); }
+
+/* ── FOOTER NAV ──────────────────────────────────── */
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1.25rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+.footer-nav a {
+  font-size: 0.78rem;
+  color: var(--gold-dim);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: color var(--transition);
+}
+.footer-nav a:hover { color: var(--gold-light); }
+
+/* ── FOCUS RINGS (accessibility) ─────────────────── */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ── QUICK NAV TODAY HIGHLIGHT ───────────────────── */
+.quick-nav-item.today-saint .quick-nav-circle {
+  box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--gold);
+}
+.quick-nav-item.today-saint .quick-nav-label {
+  color: var(--gold);
+}
