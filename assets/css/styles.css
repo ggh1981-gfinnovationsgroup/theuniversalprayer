@@ -1685,9 +1685,36 @@ body {
 .ios-step-body strong { color: var(--white); }
 .ios-step-visual {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
   margin-top: 0.5rem;
+}
+/* Simulates Safari's bottom bar to show where the share button is */
+.ios-phone-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem;
+  width: fit-content;
+}
+.ios-phone-bar-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+}
+.ios-safari-share-svg--highlight {
+  filter: drop-shadow(0 0 6px rgba(0,122,255,0.7));
+  animation: ios-pulse 1.5s ease-in-out infinite alternate;
+}
+@keyframes ios-pulse {
+  from { filter: drop-shadow(0 0 4px rgba(0,122,255,0.5)); }
+  to   { filter: drop-shadow(0 0 10px rgba(0,122,255,0.9)); }
 }
 .ios-safari-share-svg {
   width: 36px;

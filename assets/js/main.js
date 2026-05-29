@@ -1417,22 +1417,10 @@ function initMenu() {
 
     if (!isInStandaloneMode) {
       if (isIos) {
-        // iOS: tap opens native share sheet automatically; modal is fallback
+        // iOS: show step-by-step modal (navigator.share does NOT include Add to Home Screen)
         _installBtn.style.display = '';
-        _installBtn.addEventListener('click', async () => {
-          if (navigator.share) {
-            try {
-              await navigator.share({
-                title: currentLang === 'es' ? 'La Oración Universal' : 'The Universal Prayer',
-                url: window.location.href,
-              });
-            } catch (_) {
-              // User dismissed or error — show manual modal as fallback
-              if (_iosModal) _iosModal.style.display = 'flex';
-            }
-          } else if (_iosModal) {
-            _iosModal.style.display = 'flex';
-          }
+        _installBtn.addEventListener('click', () => {
+          if (_iosModal) _iosModal.style.display = 'flex';
         });
       } else {
         // Android / desktop Chrome: wait for beforeinstallprompt
