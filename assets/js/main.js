@@ -591,12 +591,13 @@ function renderIntercessorContent(data) {
   const prayerEl = document.getElementById('prayerText');
   if (prayerEl) prayerEl.innerHTML = paragraphify(data.prayer[lang]);
 
-  // History — split bio from numbered anecdotes
-  const { bio, anecdotes } = splitHistory(data.history[lang]);
+  // History — bio paragraphs only
   const historyEl = document.getElementById('historyText');
-  if (historyEl) historyEl.innerHTML = paragraphify(bio);
+  if (historyEl) historyEl.innerHTML = paragraphify(data.history[lang]);
+  // Miracles — from independent miracles field
   const miraclesEl = document.getElementById('miraclesText');
-  if (miraclesEl) miraclesEl.innerHTML = anecdotes ? miraclify(anecdotes) : '';
+  const miraclesText = data.miracles && data.miracles.available && data.miracles[lang];
+  if (miraclesEl) miraclesEl.innerHTML = miraclesText ? miraclify(miraclesText) : '';
 
   // Novena
   if (data.novena && data.novena.length > 0) {
