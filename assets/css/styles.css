@@ -1708,6 +1708,30 @@ body {
   border-radius: 50%;
   background: rgba(255,255,255,0.15);
 }
+.ios-three-dots {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+  line-height: 1;
+}
+.ios-three-dots--highlight {
+  color: #007aff;
+  text-shadow: 0 0 8px rgba(0,122,255,0.8);
+  animation: ios-pulse 1.5s ease-in-out infinite alternate;
+}
+.ios-menu-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.45rem;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.13);
+  border-radius: 8px;
+  padding: 0.3rem 0.65rem;
+  font-size: 0.85rem;
+  color: var(--white);
+}
 .ios-safari-share-svg--highlight {
   filter: drop-shadow(0 0 6px rgba(0,122,255,0.7));
   animation: ios-pulse 1.5s ease-in-out infinite alternate;
