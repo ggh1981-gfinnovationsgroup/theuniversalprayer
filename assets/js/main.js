@@ -139,6 +139,42 @@ const INTERCESSORS = [
   { id: 'santacelina',      subdomain: 'santacelina',      chaplet: false, novena: true,  color: '#2a4a7a', short: { es: 'Sta. Celina',    en: 'St. Céline'       }, name: { en: 'Saint Céline',                          es: 'Santa Celina'                             }, specialty: { es: 'Madres y familias',           en: 'Mothers & families'          } },
 ];
 
+// ── KEYWORD MAP — synonyms for prayer-intent search ──────
+// Each value is a space-separated string of extra search terms (ES + EN)
+const KEYWORD_MAP = {
+  misericordia:      'estres angustia pecado culpa dolor sufrimiento consolacion perdida duelo stress guilt pain suffering anguish comfort grief loss death dying',
+  santadymphna:      'estres ansiedad depresion salud mental nervios agotamiento panico trastorno burnout stress anxiety depression mental health nerves panic disorder exhaustion burnout',
+  sanfelipeneri:     'alegria tristeza depresion agotamiento burnout gozo humor estres joy sadness depression burnout exhaustion stress humour',
+  providencia:       'dinero deudas economia preocupacion provision necesidad money debt finances worry provision need',
+  divinaprovidencia: 'dinero economia necesidades cotidianas preocupacion estres provision money needs daily worry stress provision finances',
+  sanjudas:          'imposible esperanza desesperacion deudas crisis economica impossible hope desperation hopeless debt economic crisis',
+  santarita:         'imposible matrimonio violencia abuso divorcio causa dificil impossible abuse marriage violence divorce difficult cause',
+  sanjose:           'trabajo desempleo empleo laboral carpintero padre esposo casa money dinero workers job unemployment work husband father home',
+  sanmiguel:         'proteccion espiritual mal demonio tentacion miedo guerra espiritual spiritual protection evil demon temptation fear spiritual warfare battle',
+  angelguarda:       'ninos proteccion custodia viaje peligro miedo children protection custody travel danger fear guardian',
+  sanrafael:         'sanacion curacion enfermedad viaje salud medicina hospital healing illness travel health medicine hospital',
+  padrepio:          'sanacion curacion enfermedad confesion culpa sanacion fisica spiritual healing illness sickness confession guilt physical healing',
+  santafabiola:      'enfermos hospital sanacion enfermedad divorciados sick hospital healing illness divorced',
+  fatima:            'paz guerra conflicto rosario conversion mundo peace war conflict rosary conversion world russia',
+  guadalupe:         'mexico america latina hispanos familia inmigrantes naciones family immigrants nations latinoamerica',
+  sanantonio:        'perdido objetos cosas encontrar pobres lost objects things find poor misplaced',
+  teresacalcuta:     'pobres abandono soledad pobreza marginados poverty poor loneliness abandoned marginalized',
+  juanpablo:         'jovenes universitarios adolescentes vocacion juventud matrimonio trabajo youth teenagers vocation family work',
+  sagradocorazon:    'amor consagracion reparacion consolacion tristeza pecado love consecration reparation sadness sin comfort',
+  inmaculadocorazon: 'refugio proteccion miedo angustia estres devocion mariana shelter fear anguish stress marian devotion',
+  santacatalina:     'estudios examenes universidad teologia doctora inteligencia studies exams university theology intelligence wisdom',
+  santacelina:       'madres maternidad hijos familia embarazo motherhood mothers children family pregnancy',
+  schoenstatt:       'familia consagracion matrimonio educacion hijos amor conyugal family consecration marriage education children conjugal love',
+  sangabriel:        'comunicacion mensajes revelacion vocacion oracion communication messages revelation vocation prayer',
+  sanvicente:        'pobres caridad obras sociales voluntarios charity poor social work volunteers giving',
+  sanjuanapostol:    'amor contemplacion teologia mistica evangelio love contemplation theology mysticism gospel',
+  santaclara:        'pobreza sencillez milagros television clausura poverty simplicity miracles cloistered',
+  santabarbara:      'rayo tormenta muerte repentina militares mineros thunder storm sudden death military miners',
+  sanbrendan:        'navegantes marineros viaje mar aventura sailors travel sea adventure ocean voyage',
+  sanguillermo:      'ermitanos peregrinos soledad contemplacion vida sencilla hermits pilgrims solitude contemplation simple life',
+  sancarlos:         'sacerdotes seminarios formacion disciplina iglesia priests seminarians formation discipline church',
+};
+
 // ── STATE ──────────────────────────────────────────
 let currentLang = 'en';
 let intercessorData = null;
@@ -397,9 +433,10 @@ function buildCard(data, meta) {
   card.className = 'intercessor-card';
   card.href = buildIntercessorUrl(meta.subdomain);
   if (meta.color) card.style.setProperty('--card-color', meta.color);
-  // Store both-language specialty for cross-language search
+  // Store both-language specialty + keyword synonyms for search
   if (meta.specialty) {
-    card.dataset.specialty = `${meta.specialty.es || ''} ${meta.specialty.en || ''}`.toLowerCase();
+    const extraTags = KEYWORD_MAP[meta.id] || '';
+    card.dataset.specialty = `${meta.specialty.es || ''} ${meta.specialty.en || ''} ${extraTags}`.toLowerCase();
   }
 
   const imgHtml = data.image
@@ -464,7 +501,8 @@ function renderQuickNav() {
     // data attributes for filtering
     item.dataset.name = `${m.name.es} ${m.name.en}`.toLowerCase();
     if (m.specialty) {
-      item.dataset.specialty = `${m.specialty.es || ''} ${m.specialty.en || ''}`.toLowerCase();
+      const extraTags = KEYWORD_MAP[m.id] || '';
+      item.dataset.specialty = `${m.specialty.es || ''} ${m.specialty.en || ''} ${extraTags}`.toLowerCase();
     }
 
     item.appendChild(circle);
