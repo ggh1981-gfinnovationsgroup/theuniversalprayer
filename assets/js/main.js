@@ -181,7 +181,7 @@ function setLanguage(lang) {
 
   // Update search placeholder (bilingual)
   const _searchInput = document.getElementById('intercessorSearch');
-  if (_searchInput) _searchInput.placeholder = lang === 'es' ? 'Buscar intercesor...' : 'Search intercessor...';
+  if (_searchInput) _searchInput.placeholder = lang === 'es' ? 'Buscar por nombre o intención...' : 'Search by name or intention...';
 
   // If intercessor is loaded, refresh dynamic content
   if (intercessorData) renderIntercessorContent(intercessorData);
@@ -247,7 +247,11 @@ async function initHomePage() {
 
   initFeaturedSecond(); // fire independently, no await
 
-  for (const meta of INTERCESSORS) {
+  const sortedIntercessors = [...INTERCESSORS].sort((a, b) =>
+    a.name[currentLang].localeCompare(b.name[currentLang], currentLang === 'es' ? 'es' : 'en', { sensitivity: 'base' })
+  );
+
+  for (const meta of sortedIntercessors) {
     try {
       const data = await loadIntercessorData(meta.id);
       grid.appendChild(buildCard(data, meta));
@@ -276,11 +280,13 @@ async function initHomePage() {
   // Search / filter intercessors
   const searchInput = document.getElementById('intercessorSearch');
   if (searchInput) {
-    searchInput.placeholder = currentLang === 'es' ? 'Buscar intercesor...' : 'Search intercessor...';
+    searchInput.placeholder = currentLang === 'es' ? 'Buscar por nombre o intención...' : 'Search by name or intention...';
     searchInput.addEventListener('input', () => {
       const q = searchInput.value.toLowerCase().trim();
       grid.querySelectorAll('.intercessor-card').forEach(card => {
-        card.style.display = (q === '' || card.textContent.toLowerCase().includes(q)) ? '' : 'none';
+        const matchesText     = card.textContent.toLowerCase().includes(q);
+        const matchesSpecialty = (card.dataset.specialty || '').includes(q);
+        card.style.display = (q === '' || matchesText || matchesSpecialty) ? '' : 'none';
       });
     });
   }
@@ -375,6 +381,10 @@ function buildCard(data, meta) {
   card.className = 'intercessor-card';
   card.href = buildIntercessorUrl(meta.subdomain);
   if (meta.color) card.style.setProperty('--card-color', meta.color);
+  // Store both-language specialty for cross-language search
+  if (meta.specialty) {
+    card.dataset.specialty = `${meta.specialty.es || ''} ${meta.specialty.en || ''}`.toLowerCase();
+  }
 
   const imgHtml = data.image
     ? `<img src="${data.image}" alt="${data.name[lang]}" loading="lazy" />`
