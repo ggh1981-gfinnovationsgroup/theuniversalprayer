@@ -28,15 +28,18 @@
   <path d="M145,285 Q200,296 255,285" stroke="#f0e8d0" stroke-width="5" fill="none" stroke-opacity="0.7" stroke-linecap="round"/>
   <!-- Left arm holding lily stem -->
   <path d="M138,212 Q110,252 102,292" stroke="#7a4a28" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.88"/>
-  <!-- Right arm with Child Jesus seated on book -->
-  <path d="M262,212 Q290,252 298,292" stroke="#7a4a28" stroke-width="17" fill="none" stroke-linecap="round" opacity="0.85"/>
-  <!-- Open book in right arm -->
-  <rect x="280" y="290" width="30" height="22" rx="2" fill="#e8d0a0" opacity="0.85"/>
-  <line x1="295" y1="290" x2="295" y2="312" stroke="#8a6030" stroke-width="1" opacity="0.5"/>
-  <!-- Child Jesus on book (tiny) -->
-  <ellipse cx="295" cy="283" rx="7" ry="8" fill="#d4a06a" opacity="0.88"/>
-  <circle  cx="295" cy="274" r="6" fill="#d4a06a" opacity="0.84"/>
-  <circle  cx="295" cy="274" r="8" fill="none" stroke="#e8c97a" stroke-width="0.8" stroke-opacity="0.5"/>
+  <!-- Right arm cradling Child Jesus -->
+  <path d="M262,212 Q284,242 282,272" stroke="#7a4a28" stroke-width="17" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <!-- Open book as support -->
+  <rect x="268" y="268" width="36" height="24" rx="2" fill="#e8d0a0" opacity="0.82"/>
+  <line x1="286" y1="268" x2="286" y2="292" stroke="#8a6030" stroke-width="1" opacity="0.45"/>
+  <!-- Child Jesus in arms (clearly visible) -->
+  <path d="M274,254 Q271,272 286,276 Q301,272 298,254 Z" fill="#f8f4e8" opacity="0.92"/>
+  <rect x="282" y="244" width="8" height="12" rx="2" fill="#d4a06a" opacity="0.88"/>
+  <circle cx="286" cy="238" r="12" fill="#d4a06a" opacity="0.90"/>
+  <circle cx="286" cy="238" r="16" fill="none" stroke="#e8c97a" stroke-width="1.4" stroke-opacity="0.75"/>
+  <!-- Child's hand raised in blessing -->
+  <line x1="299" y1="255" x2="308" y2="244" stroke="#d4a06a" stroke-width="4" stroke-linecap="round" opacity="0.78"/>
   <!-- White lily on left (symbol of purity) -->
   <line x1="102" y1="292" x2="102" y2="240" stroke="#7aaa40" stroke-width="2.5" opacity="0.8"/>
   <ellipse cx="102" cy="236" rx="6" ry="10" fill="#f8f4e8" opacity="0.88"/>
