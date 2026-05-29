@@ -466,7 +466,6 @@ body {
 /* ── TABS NAVIGATION ──────────────────────────────── */
 .tabs-nav {
   display: flex;
-  justify-content: center;
   gap: 0;
   border-bottom: 1px solid var(--border);
   background: var(--bg-surface);
@@ -474,7 +473,10 @@ body {
   top: 57px;
   z-index: 90;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
+.tabs-nav::-webkit-scrollbar { display: none; }
 
 .tab-btn {
   background: transparent;
@@ -489,6 +491,7 @@ body {
   cursor: pointer;
   transition: all var(--transition);
   white-space: nowrap;
+  flex-shrink: 0;
 }
 .tab-btn:hover { color: var(--gold); }
 .tab-btn.active {
