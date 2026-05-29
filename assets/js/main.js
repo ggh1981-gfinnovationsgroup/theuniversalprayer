@@ -179,9 +179,11 @@ function setLanguage(lang) {
   // Re-render quick nav labels in new language
   if (window._renderQuickNav) window._renderQuickNav();
 
-  // Update search placeholder (bilingual)
-  const _searchInput = document.getElementById('intercessorSearch');
-  if (_searchInput) _searchInput.placeholder = lang === 'es' ? 'Buscar por nombre o intención...' : 'Search by name or intention...';
+  // Update search placeholders (bilingual)
+  const _qnSearch = document.getElementById('quickNavSearch');
+  if (_qnSearch) _qnSearch.placeholder = lang === 'es' ? 'Buscar intercesor...' : 'Search intercessor...';
+  const _cSearch = document.getElementById('cardsSearch');
+  if (_cSearch) _cSearch.placeholder = lang === 'es' ? 'Buscar por nombre o intención...' : 'Search by name or intention...';
 
   // If intercessor is loaded, refresh dynamic content
   if (intercessorData) renderIntercessorContent(intercessorData);
@@ -277,23 +279,30 @@ async function initHomePage() {
     });
   }
 
-  // Search / filter intercessors + quick nav
-  const searchInput = document.getElementById('intercessorSearch');
-  if (searchInput) {
-    searchInput.placeholder = currentLang === 'es' ? 'Buscar por nombre o intención...' : 'Search by name or intention...';
-    searchInput.addEventListener('input', () => {
-      const q = searchInput.value.toLowerCase().trim();
-      // Filter intercessor cards
+  // Search quick nav icons
+  const quickNavSearch = document.getElementById('quickNavSearch');
+  if (quickNavSearch) {
+    quickNavSearch.placeholder = currentLang === 'es' ? 'Buscar intercesor...' : 'Search intercessor...';
+    quickNavSearch.addEventListener('input', () => {
+      const q = quickNavSearch.value.toLowerCase().trim();
+      document.querySelectorAll('.quick-nav-item').forEach(item => {
+        const matchesName      = (item.dataset.name      || '').includes(q);
+        const matchesSpecialty = (item.dataset.specialty || '').includes(q);
+        item.style.display = (q === '' || matchesName || matchesSpecialty) ? '' : 'none';
+      });
+    });
+  }
+
+  // Search intercessor cards
+  const cardsSearch = document.getElementById('cardsSearch');
+  if (cardsSearch) {
+    cardsSearch.placeholder = currentLang === 'es' ? 'Buscar por nombre o intención...' : 'Search by name or intention...';
+    cardsSearch.addEventListener('input', () => {
+      const q = cardsSearch.value.toLowerCase().trim();
       grid.querySelectorAll('.intercessor-card').forEach(card => {
         const matchesText      = card.textContent.toLowerCase().includes(q);
         const matchesSpecialty = (card.dataset.specialty || '').includes(q);
         card.style.display = (q === '' || matchesText || matchesSpecialty) ? '' : 'none';
-      });
-      // Filter quick nav items
-      document.querySelectorAll('.quick-nav-item').forEach(item => {
-        const matchesName      = (item.dataset.name     || '').includes(q);
-        const matchesSpecialty = (item.dataset.specialty || '').includes(q);
-        item.style.display = (q === '' || matchesName || matchesSpecialty) ? '' : 'none';
       });
     });
   }
