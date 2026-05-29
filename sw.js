@@ -1,0 +1,130 @@
+/* =====================================================
+   THE UNIVERSAL PRAYER — Service Worker
+   Cache-first strategy: works fully offline after first load
+   ===================================================== */
+
+const CACHE = 'tup-v1';
+
+// All files to pre-cache on install
+const PRECACHE_URLS = [
+  '/',
+  '/index.html',
+  '/intercesor/',
+  '/intercesor/index.html',
+  '/404.html',
+  '/manifest.json',
+  '/assets/css/styles.css',
+  '/assets/js/main.js',
+  '/assets/images/icon.svg',
+  // Intercessor images
+  '/assets/images/angelguarda.svg',
+  '/assets/images/divinaprovidencia.svg',
+  '/assets/images/fatima.svg',
+  '/assets/images/guadalupe.svg',
+  '/assets/images/inmaculadocorazon.svg',
+  '/assets/images/juanpablo.svg',
+  '/assets/images/misericordia.svg',
+  '/assets/images/padrepio.svg',
+  '/assets/images/providencia.svg',
+  '/assets/images/sagradocorazon.svg',
+  '/assets/images/sanantonio.svg',
+  '/assets/images/sanbrendan.svg',
+  '/assets/images/sancarlos.svg',
+  '/assets/images/sanfelipeneri.svg',
+  '/assets/images/sangabriel.svg',
+  '/assets/images/sanguillermo.svg',
+  '/assets/images/sanjose.svg',
+  '/assets/images/sanjuanapostol.svg',
+  '/assets/images/sanjudas.svg',
+  '/assets/images/sanmiguel.svg',
+  '/assets/images/sanrafael.svg',
+  '/assets/images/santabarbara.svg',
+  '/assets/images/santacatalina.svg',
+  '/assets/images/santacelina.svg',
+  '/assets/images/santaclara.svg',
+  '/assets/images/santadymphna.svg',
+  '/assets/images/santafabiola.svg',
+  '/assets/images/santarita.svg',
+  '/assets/images/santateresita.svg',
+  '/assets/images/sanvicente.svg',
+  '/assets/images/schoenstatt.svg',
+  '/assets/images/teresacalcuta.svg',
+  // Intercessor data (JSON)
+  '/data/angelguarda.json',
+  '/data/divinaprovidencia.json',
+  '/data/fatima.json',
+  '/data/guadalupe.json',
+  '/data/inmaculadocorazon.json',
+  '/data/juanpablo.json',
+  '/data/misericordia.json',
+  '/data/padrepio.json',
+  '/data/providencia.json',
+  '/data/sagradocorazon.json',
+  '/data/sanantonio.json',
+  '/data/sanbrendan.json',
+  '/data/sancarlos.json',
+  '/data/sanfelipeneri.json',
+  '/data/sangabriel.json',
+  '/data/sanguillermo.json',
+  '/data/sanjose.json',
+  '/data/sanjuanapostol.json',
+  '/data/sanjudas.json',
+  '/data/sanmiguel.json',
+  '/data/sanrafael.json',
+  '/data/santabarbara.json',
+  '/data/santacatalina.json',
+  '/data/santacelina.json',
+  '/data/santaclara.json',
+  '/data/santadymphna.json',
+  '/data/santafabiola.json',
+  '/data/santarita.json',
+  '/data/santateresita.json',
+  '/data/sanvicente.json',
+  '/data/schoenstatt.json',
+  '/data/teresacalcuta.json',
+];
+
+// ── INSTALL: pre-cache everything ─────────────────
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open(CACHE)
+      .then(cache => cache.addAll(PRECACHE_URLS))
+      .then(() => self.skipWaiting())
+  );
+});
+
+// ── ACTIVATE: remove old caches ───────────────────
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys().then(keys =>
+      Promise.all(
+        keys.filter(key => key !== CACHE).map(key => caches.delete(key))
+      )
+    ).then(() => self.clients.claim())
+  );
+});
+
+// ── FETCH: cache-first, fall back to network ──────
+self.addEventListener('fetch', event => {
+  // Only handle GET requests for same origin or fonts/CDN
+  if (event.request.method !== 'GET') return;
+
+  event.respondWith(
+    caches.match(event.request).then(cached => {
+      if (cached) return cached;
+
+      // Not in cache: fetch from network and cache for next time
+      return fetch(event.request).then(response => {
+        if (!response || response.status !== 200) return response;
+        const clone = response.clone();
+        caches.open(CACHE).then(cache => cache.put(event.request, clone));
+        return response;
+      }).catch(() => {
+        // Offline and not in cache: return offline page for navigations
+        if (event.request.mode === 'navigate') {
+          return caches.match('/');
+        }
+      });
+    })
+  );
+});

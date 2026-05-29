@@ -1,0 +1,22 @@
+{
+  "name": "La Oración Universal",
+  "short_name": "Oración",
+  "description": "Novenas, coronillas y oraciones católicas para cada intercesor — gratis, siempre.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0a0d14",
+  "theme_color": "#c9a84c",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "/assets/images/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "categories": ["lifestyle", "religion", "education"]
+}
