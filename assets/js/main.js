@@ -277,16 +277,23 @@ async function initHomePage() {
     });
   }
 
-  // Search / filter intercessors
+  // Search / filter intercessors + quick nav
   const searchInput = document.getElementById('intercessorSearch');
   if (searchInput) {
     searchInput.placeholder = currentLang === 'es' ? 'Buscar por nombre o intención...' : 'Search by name or intention...';
     searchInput.addEventListener('input', () => {
       const q = searchInput.value.toLowerCase().trim();
+      // Filter intercessor cards
       grid.querySelectorAll('.intercessor-card').forEach(card => {
-        const matchesText     = card.textContent.toLowerCase().includes(q);
+        const matchesText      = card.textContent.toLowerCase().includes(q);
         const matchesSpecialty = (card.dataset.specialty || '').includes(q);
         card.style.display = (q === '' || matchesText || matchesSpecialty) ? '' : 'none';
+      });
+      // Filter quick nav items
+      document.querySelectorAll('.quick-nav-item').forEach(item => {
+        const matchesName      = (item.dataset.name     || '').includes(q);
+        const matchesSpecialty = (item.dataset.specialty || '').includes(q);
+        item.style.display = (q === '' || matchesName || matchesSpecialty) ? '' : 'none';
       });
     });
   }
@@ -440,6 +447,12 @@ function renderQuickNav() {
     const label = document.createElement('span');
     label.className = 'quick-nav-label';
     label.textContent = (m.short && m.short[currentLang]) || m.name[currentLang];
+
+    // data attributes for filtering
+    item.dataset.name = `${m.name.es} ${m.name.en}`.toLowerCase();
+    if (m.specialty) {
+      item.dataset.specialty = `${m.specialty.es || ''} ${m.specialty.en || ''}`.toLowerCase();
+    }
 
     item.appendChild(circle);
     item.appendChild(label);

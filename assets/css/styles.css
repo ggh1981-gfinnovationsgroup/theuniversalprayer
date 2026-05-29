@@ -1587,6 +1587,17 @@ body {
 .hero-share-btn:hover { background: rgba(201,168,76,0.1); }
 
 /* ── SEARCH BAR ──────────────────────────────────── */
+.quick-search-wrap {
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+.quick-search-input {
+  flex: 0 1 480px;
+  width: 100%;
+}
 .search-wrap {
   max-width: 480px;
   margin: 0 auto 2.5rem;
