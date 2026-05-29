@@ -441,7 +441,11 @@ function renderQuickNav() {
   const _todayCandidates = INTERCESSORS.filter(i => i.id !== 'misericordia');
   const _todayMeta = _todayCandidates[Math.floor(Date.now() / 86400000) % _todayCandidates.length];
 
-  for (const m of INTERCESSORS) {
+  const sortedNav = [...INTERCESSORS].sort((a, b) =>
+    a.name[currentLang].localeCompare(b.name[currentLang], currentLang === 'es' ? 'es' : 'en', { sensitivity: 'base' })
+  );
+
+  for (const m of sortedNav) {
     const item = document.createElement('a');
     item.className = 'quick-nav-item';
     if (m.id === _todayMeta.id) item.classList.add('today-saint');
@@ -1275,7 +1279,11 @@ function initMenu() {
       <li><a class="side-nav-link side-nav-prayer" href="${prayerHref}">${prayerLabel}</a></li>
       <li class="side-nav-divider"><span>${dividerLabel}</span></li>`;
 
-    list.innerHTML = topLinks + INTERCESSORS.map(m => `
+    const sorted = [...INTERCESSORS].sort((a, b) =>
+      a.name[currentLang].localeCompare(b.name[currentLang], currentLang === 'es' ? 'es' : 'en', { sensitivity: 'base' })
+    );
+
+    list.innerHTML = topLinks + sorted.map(m => `
       <li>
         <a class="side-nav-link" href="${buildIntercessorUrl(m.subdomain)}">
           ${m.name[currentLang]}
