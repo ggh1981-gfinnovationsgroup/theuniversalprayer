@@ -1645,16 +1645,87 @@ body {
   font-family: var(--font-serif);
   font-size: 1.1rem;
   color: var(--gold);
-  margin: 0 0 1.1rem;
+  margin: 0 0 1.25rem;
 }
-.ios-install-steps {
-  margin: 0;
-  padding-left: 1.4rem;
+/* Steps */
+.ios-step {
+  display: flex;
+  gap: 0.85rem;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+}
+.ios-step-num {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--gold-dim);
+  color: var(--bg);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+.ios-step-body {
   color: var(--white-dim);
-  font-size: 0.9rem;
-  line-height: 2;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  flex: 1;
 }
-.ios-install-steps strong { color: var(--white); }
+.ios-step-body strong { color: var(--white); }
+.ios-step-visual {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.ios-safari-share-svg {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+.ios-step-hint {
+  color: var(--gold-dim);
+  font-size: 0.78rem;
+  font-style: italic;
+}
+.ios-scroll-hint {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+  color: #007aff;
+  font-size: 0.85rem;
+}
+.ios-scroll-arrow {
+  font-size: 1rem;
+  animation: ios-bounce 1s ease-in-out infinite alternate;
+}
+@keyframes ios-bounce {
+  from { transform: translateY(-2px); }
+  to   { transform: translateY(2px); }
+}
+.ios-scroll-label {
+  font-style: italic;
+  font-size: 0.78rem;
+  color: var(--white-dim);
+}
+.ios-option-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.45rem;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.13);
+  border-radius: 8px;
+  padding: 0.3rem 0.65rem;
+  font-size: 0.82rem;
+  color: var(--white);
+}
 .ios-share-icon {
   display: inline-block;
   background: #007aff;

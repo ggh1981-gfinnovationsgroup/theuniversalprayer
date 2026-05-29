@@ -103,18 +103,69 @@
   <div class="ios-install-modal" id="iosInstallModal" style="display:none" role="dialog" aria-modal="true">
     <div class="ios-install-box">
       <button class="ios-install-close" id="iosInstallClose" aria-label="Cerrar">✕</button>
+
       <p class="ios-install-title" data-lang="es">Instalar en iPhone / iPad</p>
       <p class="ios-install-title" data-lang="en" style="display:none">Install on iPhone / iPad</p>
-      <ol class="ios-install-steps">
-        <li data-lang="es">Abre esta página en <strong>Safari</strong></li>
-        <li data-lang="en" style="display:none">Open this page in <strong>Safari</strong></li>
-        <li data-lang="es">Toca el botón <strong>Compartir</strong> <span class="ios-share-icon">⬆</span></li>
-        <li data-lang="en" style="display:none">Tap the <strong>Share</strong> button <span class="ios-share-icon">⬆</span></li>
-        <li data-lang="es">Elige <strong>"Agregar a pantalla de inicio"</strong></li>
-        <li data-lang="en" style="display:none">Choose <strong>"Add to Home Screen"</strong></li>
-        <li data-lang="es">Toca <strong>Agregar</strong> — ¡listo!</li>
-        <li data-lang="en" style="display:none">Tap <strong>Add</strong> — done!</li>
-      </ol>
+
+      <!-- Step 1 -->
+      <div class="ios-step">
+        <div class="ios-step-num">1</div>
+        <div class="ios-step-body">
+          <span data-lang="es">Toca el botón <strong>Compartir</strong> en Safari — el ícono de la flecha que sale de una caja, abajo en el centro</span>
+          <span data-lang="en" style="display:none">Tap the <strong>Share</strong> button in Safari — the arrow-in-a-box icon at the bottom center</span>
+          <div class="ios-step-visual">
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" class="ios-safari-share-svg" aria-hidden="true">
+              <rect width="44" height="44" rx="10" fill="#007aff"/>
+              <path d="M22 7v18M15 14l7-7 7 7" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="12" y="21" width="20" height="15" rx="3" stroke="white" stroke-width="2" fill="none"/>
+            </svg>
+            <span class="ios-step-hint" data-lang="es">← este botón, en la barra inferior de Safari</span>
+            <span class="ios-step-hint" data-lang="en" style="display:none">← this button, in Safari's bottom bar</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="ios-step">
+        <div class="ios-step-num">2</div>
+        <div class="ios-step-body">
+          <span data-lang="es"><strong>Baja despacio</strong> en la lista que aparece — la opción no siempre es visible de entrada</span>
+          <span data-lang="en" style="display:none"><strong>Scroll down</strong> in the sheet that appears — the option isn't always visible at first</span>
+          <div class="ios-scroll-hint">
+            <span class="ios-scroll-arrow">↓</span>
+            <span data-lang="es" class="ios-scroll-label">desliza hacia abajo</span>
+            <span data-lang="en" class="ios-scroll-label" style="display:none">scroll down</span>
+            <span class="ios-scroll-arrow">↓</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="ios-step">
+        <div class="ios-step-num">3</div>
+        <div class="ios-step-body">
+          <span data-lang="es">Busca y toca <strong>"Agregar a pantalla de inicio"</strong></span>
+          <span data-lang="en" style="display:none">Find and tap <strong>"Add to Home Screen"</strong></span>
+          <div class="ios-option-pill">
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" width="18" height="18" aria-hidden="true">
+              <rect x="3" y="3" width="14" height="14" rx="3" fill="#e5e5ea"/>
+              <path d="M10 6.5v7M6.5 10h7" stroke="#007aff" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span data-lang="es">Agregar a pantalla de inicio</span>
+            <span data-lang="en" style="display:none">Add to Home Screen</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="ios-step">
+        <div class="ios-step-num">4</div>
+        <div class="ios-step-body">
+          <span data-lang="es">Toca <strong>Agregar</strong> (arriba a la derecha) — ¡listo!</span>
+          <span data-lang="en" style="display:none">Tap <strong>Add</strong> (top right) — done!</span>
+        </div>
+      </div>
+
     </div>
   </div>
     </div>
