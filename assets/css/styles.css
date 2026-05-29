@@ -477,6 +477,9 @@ body {
   scrollbar-width: none;
 }
 .tabs-nav::-webkit-scrollbar { display: none; }
+/* Center tabs when they fit; on overflow they start from left (no clipping) */
+.tabs-nav::before,
+.tabs-nav::after { content: ''; margin: auto; }
 
 .tab-btn {
   background: transparent;
