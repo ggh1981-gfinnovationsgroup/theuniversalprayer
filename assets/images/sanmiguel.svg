@@ -1,84 +1,68 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
   <defs>
-    <radialGradient id="smBg" cx="50%" cy="40%" r="60%">
-      <stop offset="0%" stop-color="#06101e"/>
-      <stop offset="100%" stop-color="#020810"/>
+    <radialGradient id="sm-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#0c1020"/><stop offset="100%" stop-color="#060810"/>
     </radialGradient>
-    <radialGradient id="smGlow" cx="50%" cy="38%" r="48%">
-      <stop offset="0%" stop-color="rgba(100,160,230,0.22)"/>
-      <stop offset="100%" stop-color="rgba(100,160,230,0)"/>
+    <radialGradient id="sm-atm" cx="50%" cy="38%" r="46%">
+      <stop offset="0%" stop-color="#203070" stop-opacity="0.30"/><stop offset="100%" stop-color="#c0c0d8" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="smSwordGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="rgba(220,230,255,0.30)"/>
-      <stop offset="100%" stop-color="rgba(220,230,255,0)"/>
-    </radialGradient>
+    <linearGradient id="sm-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#4868d0" stop-opacity="1"/><stop offset="100%" stop-color="#101848" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="sm-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#d0dce8" stop-opacity="1"/><stop offset="100%" stop-color="#9090b8" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="sm-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sm-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
-
-  <!-- Background -->
-  <rect width="800" height="600" fill="url(#smBg)"/>
-  <rect width="800" height="600" fill="url(#smGlow)"/>
-
-  <!-- Accent strips: silver-blue -->
-  <rect x="0"   y="0" width="7" height="600" fill="#7ab0d8" opacity="0.6"/>
-  <rect x="7"   y="0" width="3" height="600" fill="#c8d8f0" opacity="0.35"/>
-  <rect x="790" y="0" width="7" height="600" fill="#7ab0d8" opacity="0.6"/>
-  <rect x="787" y="0" width="3" height="600" fill="#c8d8f0" opacity="0.35"/>
-
-  <!-- Radiating light behind sword -->
-  <rect width="800" height="600" fill="url(#smSwordGlow)"/>
-
-  <!-- Blue light rays from center (8 rays) -->
-  <g opacity="0.18" fill="#5ba3d9">
-    <polygon points="400,300 370,100 400,120 430,100"/>
-    <polygon points="400,300 600,260 585,290 600,320"/>
-    <polygon points="400,300 430,500 400,480 370,500"/>
-    <polygon points="400,300 200,340 215,310 200,280"/>
-    <polygon points="400,300 540,140 545,175 575,155"/>
-    <polygon points="400,300 565,450 535,440 550,470"/>
-    <polygon points="400,300 265,455 280,425 250,430"/>
-    <polygon points="400,300 235,160 255,185 230,205"/>
-  </g>
-
-  <!-- Shield outline -->
-  <path d="M 320 220 L 480 220 L 480 370 Q 480 420 400 460 Q 320 420 320 370 Z"
-        fill="none" stroke="#7ab0d8" stroke-width="3" opacity="0.55"/>
-  <path d="M 334 232 L 466 232 L 466 368 Q 466 410 400 445 Q 334 410 334 368 Z"
-        fill="#06101e" opacity="0.45"/>
-  <!-- Cross on shield -->
-  <line x1="400" y1="248" x2="400" y2="430" stroke="#c8d8f0" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
-  <line x1="348" y1="300" x2="452" y2="300" stroke="#c8d8f0" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
-
-  <!-- Sword — pointing upward -->
-  <!-- Blade -->
-  <polygon points="400,75 392,290 408,290" fill="#c8d8f0" opacity="0.92"/>
-  <!-- Blade highlight -->
-  <polygon points="400,75 399,290 403,290" fill="#ffffff" opacity="0.35"/>
-  <!-- Guard (cross-guard) -->
-  <rect x="350" y="285" width="100" height="14" rx="4" fill="#d4af37" opacity="0.88"/>
-  <!-- Grip -->
-  <rect x="393" y="299" width="14" height="60" rx="4" fill="#8b5e2a" opacity="0.85"/>
-  <!-- Pommel -->
-  <ellipse cx="400" cy="368" rx="16" ry="12" fill="#d4af37" opacity="0.88"/>
-
-  <!-- Stars scattered -->
-  <circle cx="170" cy="130" r="2"   fill="#c8d8f0" opacity="0.50"/>
-  <circle cx="220" cy="80"  r="1.5" fill="#c8d8f0" opacity="0.40"/>
-  <circle cx="630" cy="115" r="2"   fill="#c8d8f0" opacity="0.50"/>
-  <circle cx="660" cy="195" r="1.5" fill="#c8d8f0" opacity="0.40"/>
-  <circle cx="140" cy="380" r="1.8" fill="#c8d8f0" opacity="0.38"/>
-  <circle cx="660" cy="400" r="1.8" fill="#c8d8f0" opacity="0.38"/>
-  <circle cx="185" cy="500" r="1.3" fill="#7ab0d8" opacity="0.40"/>
-  <circle cx="615" cy="490" r="1.3" fill="#7ab0d8" opacity="0.40"/>
-  <circle cx="300" cy="480" r="1.2" fill="#c8d8f0" opacity="0.30"/>
-  <circle cx="500" cy="470" r="1.2" fill="#c8d8f0" opacity="0.30"/>
-
-  <!-- Name -->
-  <text x="400" y="490" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#e8c97a" letter-spacing="1">San Miguel Arc&#xE1;ngel</text>
-  <text x="400" y="511" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#8ab4d8" font-style="italic" opacity="0.85">Saint Michael the Archangel</text>
-
-  <!-- "Quis ut Deus?" inscription -->
-  <text x="400" y="535" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-style="italic" fill="#5a7aaa" opacity="0.55" letter-spacing="2">Quis ut Deus?</text>
-
-  <!-- Feast day -->
-  <text x="400" y="574" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#4a6a8a" letter-spacing="2">29 DE SEPTIEMBRE · SEPTEMBER 29</text>
+  <rect width="400" height="600" fill="url(#sm-bg)"/>
+  <rect width="400" height="600" fill="url(#sm-atm)"/>
+  <!-- Rays: steel blue left, silver right -->
+  <polygon points="198,265 -25,610 115,610" fill="url(#sm-r1)" filter="url(#sm-gl)" opacity="0.75"/>
+  <polygon points="198,265 20,600  85,600"  fill="#4868d0" opacity="0.40"/>
+  <polygon points="202,265 425,610 285,610" fill="url(#sm-r2)" filter="url(#sm-gl)" opacity="0.72"/>
+  <polygon points="202,265 375,600 315,600" fill="#d0dce8" opacity="0.36"/>
+  <!-- Silver armor (breastplate) -->
+  <path d="M172,155 Q148,200 140,350 Q200,368 260,350 Q252,200 228,155 Z" fill="#9090a8" opacity="0.78"/>
+  <!-- Red/purple battle cape over shoulder -->
+  <path d="M168,155 Q122,192 108,318 Q122,330 148,312 Q148,228 175,165 Z" fill="#7a1030" opacity="0.86"/>
+  <path d="M232,155 Q262,198 268,318 Q290,322 296,300 Q288,198 246,160 Z" fill="#7a1030" opacity="0.78"/>
+  <!-- Left arm raised with sword -->
+  <path d="M145,200 Q115,240 105,270" stroke="#9090a8" stroke-width="20" fill="none" stroke-linecap="round" opacity="0.88"/>
+  <!-- Right arm with shield -->
+  <path d="M255,200 Q285,235 292,268" stroke="#9090a8" stroke-width="20" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <!-- Shield (right) -->
+  <path d="M278,265 L310,265 L310,298 L294,312 L278,298 Z" fill="#4868d0" opacity="0.75"/>
+  <line x1="294" y1="265" x2="294" y2="312" stroke="#d0dce8" stroke-width="1" opacity="0.5"/>
+  <line x1="278" y1="282" x2="310" y2="282" stroke="#d0dce8" stroke-width="1" opacity="0.5"/>
+  <!-- Sword (left, upraised) -->
+  <line x1="104" y1="270" x2="104" y2="180" stroke="#d0dce8" stroke-width="5" stroke-opacity="0.9"/>
+  <line x1="94"  y1="215" x2="114" y2="215" stroke="#d0dce8" stroke-width="4" stroke-opacity="0.9"/>
+  <!-- Hand (right) -->
+  <ellipse cx="293" cy="272" rx="13" ry="16" fill="#d4a06a" opacity="0.9"/>
+  <!-- Hand (left on sword) -->
+  <ellipse cx="104" cy="274" rx="12" ry="14" fill="#d4a06a" opacity="0.9"/>
+  <!-- Belt armor -->
+  <rect x="165" y="295" width="70" height="12" rx="3" fill="#c9a84c" opacity="0.6"/>
+  <!-- Neck -->
+  <rect x="193" y="142" width="14" height="18" rx="4" fill="#d4a06a" opacity="0.9"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="108" rx="26" ry="30" fill="#d4a06a" opacity="0.92"/>
+  <!-- Helmet (warrior helm) removed, showing glowing head -->
+  <path d="M174,107 Q176,72 200,68 Q224,72 226,107 Q218,87 200,85 Q182,87 174,107 Z" fill="#2a2048" opacity="0.85"/>
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#sm-g2)"/>
+  <circle cx="200" cy="108" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Wings suggestion (faint) -->
+  <path d="M168,155 Q110,190 88,260 Q108,255 130,220 Q148,185 168,170 Z" fill="#d0dce8" opacity="0.18"/>
+  <path d="M232,155 Q290,190 312,260 Q292,255 270,220 Q252,185 232,170 Z" fill="#d0dce8" opacity="0.18"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#060810" opacity="0.86"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">SAN MIGUEL ARCANGEL  ·  SAINT MICHAEL</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#b0c8f8" font-style="italic">«San Miguel Arcángel»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#d0dce8" font-style="italic" opacity="0.8">«Saint Michael the Archangel»</text>
 </svg>

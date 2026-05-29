@@ -1,57 +1,68 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
   <defs>
-    <radialGradient id="gd-bg" cx="50%" cy="45%" r="65%">
-      <stop offset="0%" stop-color="#071018"/>
-      <stop offset="100%" stop-color="#040a10"/>
+    <radialGradient id="gu-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#1a1400"/><stop offset="100%" stop-color="#080600"/>
     </radialGradient>
-    <radialGradient id="gd-glow" cx="50%" cy="42%" r="42%">
-      <stop offset="0%" stop-color="#16a085" stop-opacity="0.22"/>
-      <stop offset="100%" stop-color="#16a085" stop-opacity="0"/>
+    <radialGradient id="gu-atm" cx="50%" cy="38%" r="46%">
+      <stop offset="0%" stop-color="#a08020" stop-opacity="0.28"/><stop offset="100%" stop-color="#1a6040" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="gd-rose" cx="50%" cy="60%" r="28%">
-      <stop offset="0%" stop-color="#e91e8c" stop-opacity="0.14"/>
-      <stop offset="100%" stop-color="#e91e8c" stop-opacity="0"/>
-    </radialGradient>
+    <linearGradient id="gu-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#e8b030" stop-opacity="1"/><stop offset="100%" stop-color="#6a4000" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="gu-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#60d090" stop-opacity="1"/><stop offset="100%" stop-color="#1a6040" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="gu-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="gu-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
-  <rect width="800" height="600" fill="url(#gd-bg)"/>
-  <rect width="800" height="600" fill="url(#gd-glow)"/>
-  <rect width="800" height="600" fill="url(#gd-rose)"/>
-  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#1abc9c" stroke-width="1" stroke-opacity="0.4"/>
-  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#1abc9c" stroke-width="0.5" stroke-opacity="0.2"/>
-  <rect x="28" y="28" width="6" height="544" rx="3" fill="#16a085" opacity="0.6"/>
-  <rect x="766" y="28" width="6" height="544" rx="3" fill="#16a085" opacity="0.6"/>
-  <!-- Sun rays behind figure (12 golden rays) -->
-  <line x1="400" y1="193" x2="400" y2="64"  stroke="#d4a017" stroke-width="2" stroke-opacity="0.4"/>
-  <line x1="400" y1="193" x2="467" y2="82"  stroke="#d4a017" stroke-width="1.5" stroke-opacity="0.35"/>
-  <line x1="400" y1="193" x2="514" y2="130" stroke="#d4a017" stroke-width="1.5" stroke-opacity="0.3"/>
-  <line x1="400" y1="193" x2="535" y2="193" stroke="#d4a017" stroke-width="1.5" stroke-opacity="0.3"/>
-  <line x1="400" y1="193" x2="514" y2="256" stroke="#d4a017" stroke-width="1.5" stroke-opacity="0.3"/>
-  <line x1="400" y1="193" x2="467" y2="304" stroke="#d4a017" stroke-width="1.5" stroke-opacity="0.35"/>
-  <line x1="400" y1="193" x2="400" y2="322" stroke="#d4a017" stroke-width="2" stroke-opacity="0.4"/>
-  <line x1="400" y1="193" x2="333" y2="304" stroke="#d4a017" stroke-width="1.5" stroke-opacity="0.35"/>
-  <line x1="400" y1="193" x2="286" y2="256" stroke="#d4a017" stroke-width="1.5" stroke-opacity="0.3"/>
-  <line x1="400" y1="193" x2="265" y2="193" stroke="#d4a017" stroke-width="1.5" stroke-opacity="0.3"/>
-  <line x1="400" y1="193" x2="286" y2="130" stroke="#d4a017" stroke-width="1.5" stroke-opacity="0.3"/>
-  <line x1="400" y1="193" x2="333" y2="82"  stroke="#d4a017" stroke-width="1.5" stroke-opacity="0.35"/>
-  <!-- Crescent moon at feet (gold disc + offset dark circle) -->
-  <circle cx="400" cy="298" r="43" fill="#c9a84c" opacity="0.72"/>
-  <circle cx="416" cy="285" r="35" fill="#040a10" opacity="0.93"/>
-  <!-- Stars on mantle (scattered gold stars) -->
-  <text x="388" y="92"  font-family="Arial" font-size="16" fill="#d4a017" opacity="0.88" text-anchor="middle">★</text>
-  <text x="428" y="104" font-family="Arial" font-size="12" fill="#d4a017" opacity="0.75" text-anchor="middle">★</text>
-  <text x="348" y="122" font-family="Arial" font-size="13" fill="#d4a017" opacity="0.8"  text-anchor="middle">★</text>
-  <text x="460" y="138" font-family="Arial" font-size="14" fill="#d4a017" opacity="0.72" text-anchor="middle">★</text>
-  <text x="320" y="168" font-family="Arial" font-size="11" fill="#d4a017" opacity="0.68" text-anchor="middle">★</text>
-  <text x="480" y="174" font-family="Arial" font-size="12" fill="#d4a017" opacity="0.68" text-anchor="middle">★</text>
-  <text x="307" y="212" font-family="Arial" font-size="10" fill="#d4a017" opacity="0.6"  text-anchor="middle">★</text>
-  <text x="493" y="216" font-family="Arial" font-size="11" fill="#d4a017" opacity="0.6"  text-anchor="middle">★</text>
-  <text x="316" y="256" font-family="Arial" font-size="12" fill="#d4a017" opacity="0.65" text-anchor="middle">★</text>
-  <text x="484" y="260" font-family="Arial" font-size="10" fill="#d4a017" opacity="0.6"  text-anchor="middle">★</text>
-  <text x="344" y="286" font-family="Arial" font-size="11" fill="#d4a017" opacity="0.62" text-anchor="middle">★</text>
-  <text x="455" y="280" font-family="Arial" font-size="12" fill="#d4a017" opacity="0.62" text-anchor="middle">★</text>
-  <!-- Name -->
-  <text x="400" y="372" text-anchor="middle" font-family="Georgia,serif" font-size="30" fill="#e8c97a" letter-spacing="1">Virgen de Guadalupe</text>
-  <text x="400" y="412" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#1abc9c" opacity="0.85" font-style="italic">Our Lady of Guadalupe</text>
-  <line x1="280" y1="438" x2="520" y2="438" stroke="#1abc9c" stroke-width="0.6" stroke-opacity="0.4"/>
-  <text x="400" y="470" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#8a6e2f" letter-spacing="2">FEAST DAY · DECEMBER 12</text>
+  <rect width="400" height="600" fill="url(#gu-bg)"/>
+  <rect width="400" height="600" fill="url(#gu-atm)"/>
+  <!-- Rays: gold left, green right -->
+  <polygon points="198,265 -25,610 115,610" fill="url(#gu-r1)" filter="url(#gu-gl)" opacity="0.75"/>
+  <polygon points="198,265 20,600  85,600"  fill="#e8b030" opacity="0.40"/>
+  <polygon points="202,265 425,610 285,610" fill="url(#gu-r2)" filter="url(#gu-gl)" opacity="0.72"/>
+  <polygon points="202,265 375,600 315,600" fill="#60d090" opacity="0.36"/>
+  <!-- Tilma/robe (rose) -->
+  <path d="M168,155 Q140,205 126,388 Q200,412 274,388 Q260,205 232,155 Z" fill="#d8785a" opacity="0.82"/>
+  <!-- Blue mantle -->
+  <path d="M160,148 Q118,185 100,320 Q118,335 148,318 Q148,228 172,162 Z" fill="#1a3a8a" opacity="0.88"/>
+  <path d="M240,148 Q265,195 275,320 Q298,328 300,305 Q290,198 250,160 Z" fill="#1a3a8a" opacity="0.82"/>
+  <!-- Arms folded -->
+  <path d="M142,215 Q162,248 170,272" stroke="#d8785a" stroke-width="16" fill="none" stroke-linecap="round" opacity="0.82"/>
+  <path d="M258,215 Q238,248 230,272" stroke="#1a3a8a" stroke-width="15" fill="none" stroke-linecap="round" opacity="0.78"/>
+  <!-- Hands folded -->
+  <ellipse cx="200" cy="278" rx="22" ry="12" fill="#c89060" opacity="0.85"/>
+  <!-- Neck -->
+  <rect x="193" y="142" width="14" height="18" rx="4" fill="#c89060" opacity="0.9"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="110" rx="26" ry="30" fill="#b07840" opacity="0.92"/>
+  <!-- Black hair -->
+  <path d="M174,108 Q176,70 200,65 Q224,70 226,108 Q218,86 200,84 Q182,86 174,108 Z" fill="#1a0a00" opacity="0.9"/>
+  <!-- Blue mantle on head -->
+  <path d="M174,105 Q172,65 200,62 Q228,65 226,105" fill="none" stroke="#1a3a8a" stroke-width="3" opacity="0.88"/>
+  <!-- Black veil -->
+  <path d="M174,108 Q154,130 148,170 L168,155 Z" fill="#1a0a00" opacity="0.85"/>
+  <path d="M226,108 Q246,130 252,170 L232,155 Z" fill="#1a0a00" opacity="0.8"/>
+  <!-- Halo (sun rays) -->
+  <circle cx="200" cy="108" r="52" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#gu-g2)"/>
+  <circle cx="200" cy="108" r="46" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Sun glow behind -->
+  <circle cx="200" cy="200" r="120" fill="#e8b030" opacity="0.06" filter="url(#gu-gl)"/>
+  <!-- Crescent moon at feet -->
+  <path d="M170,415 Q200,408 230,415 Q210,428 200,430 Q190,428 170,415 Z" fill="#c8a040" opacity="0.7"/>
+  <!-- Stars on mantle -->
+  <text x="128" y="230" font-family="Arial" font-size="7" fill="#e8c97a" opacity="0.7">★</text>
+  <text x="262" y="245" font-family="Arial" font-size="7" fill="#e8c97a" opacity="0.65">★</text>
+  <text x="118" y="275" font-family="Arial" font-size="6" fill="#e8c97a" opacity="0.6">★</text>
+  <text x="272" y="290" font-family="Arial" font-size="6" fill="#e8c97a" opacity="0.6">★</text>
+  <text x="135" y="320" font-family="Arial" font-size="6" fill="#e8c97a" opacity="0.55">★</text>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#080600" opacity="0.86"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">VIRGEN DE GUADALUPE  ·  OUR LADY OF GUADALUPE</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="13.5" fill="#f5e060" font-style="italic">«Nuestra Señora de Guadalupe»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#60d090" font-style="italic" opacity="0.8">«Our Lady of Guadalupe»</text>
 </svg>

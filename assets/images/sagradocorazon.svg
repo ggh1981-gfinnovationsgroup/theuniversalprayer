@@ -1,50 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
   <defs>
-    <radialGradient id="sc-bg" cx="50%" cy="40%" r="65%">
-      <stop offset="0%" stop-color="#180508"/>
-      <stop offset="100%" stop-color="#0a0304"/>
+    <radialGradient id="sc-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#280808"/><stop offset="100%" stop-color="#0d0203"/>
     </radialGradient>
-    <radialGradient id="sc-glow" cx="50%" cy="42%" r="44%">
-      <stop offset="0%" stop-color="#e74c3c" stop-opacity="0.26"/>
-      <stop offset="100%" stop-color="#e74c3c" stop-opacity="0"/>
+    <radialGradient id="sc-atm" cx="50%" cy="38%" r="46%">
+      <stop offset="0%" stop-color="#c0392b" stop-opacity="0.28"/><stop offset="100%" stop-color="#c0392b" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="sc-flame" cx="50%" cy="75%" r="55%">
-      <stop offset="0%" stop-color="#f39c12" stop-opacity="0.9"/>
-      <stop offset="60%" stop-color="#e74c3c" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#c0392b" stop-opacity="0"/>
-    </radialGradient>
+    <linearGradient id="sc-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#e74c3c" stop-opacity="1"/><stop offset="100%" stop-color="#8b0000" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="sc-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f5e060" stop-opacity="1"/><stop offset="100%" stop-color="#c9a84c" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="sc-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sc-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
-  <rect width="800" height="600" fill="url(#sc-bg)"/>
-  <rect width="800" height="600" fill="url(#sc-glow)"/>
-  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#e74c3c" stroke-width="1" stroke-opacity="0.4"/>
-  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#e74c3c" stroke-width="0.5" stroke-opacity="0.2"/>
-  <!-- Crimson accent strips -->
-  <rect x="28" y="28" width="6" height="544" rx="3" fill="#c0392b" opacity="0.7"/>
-  <rect x="766" y="28" width="6" height="544" rx="3" fill="#c0392b" opacity="0.7"/>
-  <!-- Crown of thorns ring -->
-  <circle cx="400" cy="200" r="105" fill="none" stroke="#6b3510" stroke-width="3" stroke-dasharray="5,7" stroke-opacity="0.55"/>
-  <!-- Thorn spikes -->
-  <line x1="400" y1="95"  x2="400" y2="84"  stroke="#6b3510" stroke-width="2" stroke-opacity="0.65"/>
-  <line x1="466" y1="110" x2="473" y2="101" stroke="#6b3510" stroke-width="2" stroke-opacity="0.6"/>
-  <line x1="505" y1="161" x2="514" y2="155" stroke="#6b3510" stroke-width="2" stroke-opacity="0.6"/>
-  <line x1="334" y1="110" x2="327" y2="101" stroke="#6b3510" stroke-width="2" stroke-opacity="0.6"/>
-  <line x1="295" y1="161" x2="286" y2="155" stroke="#6b3510" stroke-width="2" stroke-opacity="0.6"/>
-  <line x1="295" y1="240" x2="286" y2="246" stroke="#6b3510" stroke-width="2" stroke-opacity="0.55"/>
-  <line x1="505" y1="240" x2="514" y2="246" stroke="#6b3510" stroke-width="2" stroke-opacity="0.55"/>
-  <!-- Heart body -->
-  <path d="M 400 290 C 400 290 308 236 308 178 C 308 134 352 120 400 158 C 448 120 492 134 492 178 C 492 236 400 290 400 290 Z" fill="#8e0c0c" stroke="#e74c3c" stroke-width="2" stroke-opacity="0.65"/>
-  <!-- Heart inner glow -->
-  <path d="M 400 264 C 400 264 330 220 330 178 C 330 145 362 133 400 162 C 438 133 470 145 470 178 C 470 220 400 264 400 264 Z" fill="#c0392b" opacity="0.5"/>
-  <!-- Flame above heart -->
-  <ellipse cx="400" cy="132" rx="18" ry="32" fill="url(#sc-flame)" opacity="0.55"/>
-  <path d="M 400 102 C 393 116 384 130 389 142 C 393 152 407 152 411 142 C 416 130 407 116 400 102Z" fill="#f39c12" opacity="0.9"/>
-  <path d="M 400 110 C 396 122 391 133 394 142 C 396 149 404 149 406 142 C 409 133 404 122 400 110Z" fill="#fffde7" opacity="0.8"/>
-  <!-- Gold cross above flame -->
-  <rect x="395" y="82" width="10" height="32" fill="#e8c97a" opacity="0.95"/>
-  <rect x="382" y="93" width="36" height="10" fill="#e8c97a" opacity="0.95"/>
-  <!-- Name -->
-  <text x="400" y="378" text-anchor="middle" font-family="Georgia,serif" font-size="34" fill="#e8c97a" letter-spacing="1">Sagrado Corazón</text>
-  <text x="400" y="418" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#e74c3c" opacity="0.85" font-style="italic">Sacred Heart of Jesus</text>
-  <line x1="290" y1="444" x2="510" y2="444" stroke="#e74c3c" stroke-width="0.6" stroke-opacity="0.4"/>
-  <text x="400" y="476" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#8a6e2f" letter-spacing="2">FRIDAY AFTER CORPUS CHRISTI</text>
+  <rect width="400" height="600" fill="url(#sc-bg)"/>
+  <rect width="400" height="600" fill="url(#sc-atm)"/>
+  <!-- Rays from chest -->
+  <polygon points="198,262 -25,610 115,610" fill="url(#sc-r1)" filter="url(#sc-gl)" opacity="0.78"/>
+  <polygon points="198,262 20,600  85,600"  fill="#e74c3c" opacity="0.45"/>
+  <polygon points="202,262 425,610 285,610" fill="url(#sc-r2)" filter="url(#sc-gl)" opacity="0.72"/>
+  <polygon points="202,262 375,600 315,600" fill="#f5e060" opacity="0.38"/>
+  <!-- Robe white -->
+  <path d="M168,155 Q140,205 126,388 Q200,412 274,388 Q260,205 232,155 Z" fill="#f0ece4" opacity="0.88"/>
+  <!-- Red mantle left -->
+  <path d="M168,155 Q128,190 108,310 Q120,325 145,308 Q150,225 178,168 Z" fill="#c0392b" opacity="0.86"/>
+  <!-- Red mantle right -->
+  <path d="M232,155 Q258,195 268,310 Q285,318 292,295 Q285,195 248,158 Z" fill="#c0392b" opacity="0.78"/>
+  <!-- Left arm (blessing raised) -->
+  <path d="M138,212 Q108,255 102,298" stroke="#f0ece4" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.84"/>
+  <!-- Right arm (pointing to heart) -->
+  <path d="M262,218 Q292,258 296,298" stroke="#c0392b" stroke-width="16" fill="none" stroke-linecap="round" opacity="0.78"/>
+  <!-- Hands -->
+  <ellipse cx="101" cy="303" rx="12" ry="15" fill="#d4a06a" opacity="0.9"/>
+  <ellipse cx="296" cy="303" rx="12" ry="15" fill="#d4a06a" opacity="0.9"/>
+  <!-- Neck -->
+  <rect x="193" y="142" width="14" height="18" rx="4" fill="#d4a06a" opacity="0.9"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="110" rx="27" ry="31" fill="#d4a06a" opacity="0.92"/>
+  <!-- Hair -->
+  <path d="M173,107 Q176,72 200,68 Q224,72 227,107 Q219,88 200,86 Q181,88 173,107 Z" fill="#4a2808" opacity="0.88"/>
+  <!-- Beard -->
+  <path d="M183,132 Q186,148 200,152 Q214,148 217,132 Q209,142 200,143 Q191,142 183,132 Z" fill="#4a2808" opacity="0.72"/>
+  <!-- Halo -->
+  <circle cx="200" cy="110" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#sc-g2)"/>
+  <circle cx="200" cy="110" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Halo cross -->
+  <line x1="200" y1="57" x2="200" y2="74" stroke="#f0d848" stroke-width="3.5" stroke-linecap="round" stroke-opacity="0.82"/>
+  <line x1="187" y1="66" x2="213" y2="66" stroke="#f0d848" stroke-width="3.5" stroke-linecap="round" stroke-opacity="0.82"/>
+  <!-- Sacred Heart -->
+  <path d="M200,254 C188,241 172,241 172,257 C172,274 200,287 200,287 C200,287 228,274 228,257 C228,241 212,241 200,254 Z" fill="#c0392b" opacity="0.92" filter="url(#sc-g2)"/>
+  <!-- Crown of thorns -->
+  <circle cx="200" cy="250" r="17" fill="none" stroke="#5a3010" stroke-width="2.5" stroke-opacity="0.85"/>
+  <!-- Cross on top -->
+  <rect x="197" y="232" width="6" height="14" rx="2" fill="#e8c97a" opacity="0.92"/>
+  <!-- Flames -->
+  <path d="M196,248 C194,240 190,235 193,229 C195,224 198,229 198,234 C199,229 201,224 203,229 C206,235 202,240 200,248 Z" fill="#f39c12" opacity="0.9"/>
+  <!-- Heart glow -->
+  <circle cx="200" cy="267" r="24" fill="#c0392b" opacity="0.12" filter="url(#sc-gl)"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#0d0203" opacity="0.86"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">SAGRADO CORAZON  ·  SACRED HEART</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14.5" fill="#f5e060" font-style="italic">«Sagrado Corazón de Jesús»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#d4c040" font-style="italic" opacity="0.8">«Sacred Heart of Jesus»</text>
 </svg>

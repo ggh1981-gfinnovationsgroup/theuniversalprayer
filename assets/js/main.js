@@ -137,6 +137,16 @@ const INTERCESSORS = [
   { id: 'sanguillermo',     subdomain: 'sanguillermo',     chaplet: false, novena: true,  color: '#1a5a2a', short: { es: 'San Guillermo',  en: 'St. William'      }, name: { en: 'Saint William of Vercelli',             es: 'San Guillermo de Vercelli'                }, specialty: { es: 'Ermitaños y peregrinos',      en: 'Hermits & pilgrims'          } },
   { id: 'sancarlos',        subdomain: 'sancarlos',        chaplet: false, novena: true,  color: '#8a2a1a', short: { es: 'San Carlos',     en: 'St. Charles'      }, name: { en: 'Saint Charles Borromeo',                es: 'San Carlos Borromeo'                      }, specialty: { es: 'Reforma de la Iglesia',       en: 'Church reform & seminaries'  } },
   { id: 'santacelina',      subdomain: 'santacelina',      chaplet: false, novena: true,  color: '#2a4a7a', short: { es: 'Sta. Celina',    en: 'St. Céline'       }, name: { en: 'Saint Céline',                          es: 'Santa Celina'                             }, specialty: { es: 'Madres y familias',           en: 'Mothers & families'          } },
+  { id: 'sanagustin',        subdomain: 'sanagustin',        chaplet: false, novena: true,  color: '#5a3010', short: { es: 'San Agustín',      en: 'St. Augustine'    }, name: { en: 'Saint Augustine of Hippo',               es: 'San Agustín de Hipona'                    }, specialty: { es: 'Conversión y sabiduría',       en: 'Conversion & wisdom'         } },
+  { id: 'sancristobal',      subdomain: 'sancristobal',      chaplet: false, novena: true,  color: '#1a5a3a', short: { es: 'San Cristóbal',    en: 'St. Christopher'  }, name: { en: 'Saint Christopher',                      es: 'San Cristóbal'                            }, specialty: { es: 'Viajeros y conductores',       en: 'Travelers & drivers'         } },
+  { id: 'sanexpedito',       subdomain: 'sanexpedito',       chaplet: false, novena: true,  color: '#8a2010', short: { es: 'San Expedito',     en: 'St. Expeditus'    }, name: { en: 'Saint Expeditus',                        es: 'San Expedito'                             }, specialty: { es: 'Causas urgentes',              en: 'Urgent causes'               } },
+  { id: 'sanfrancisco',      subdomain: 'sanfrancisco',      chaplet: true,  novena: true,  color: '#6b4226', short: { es: 'San Francisco',    en: 'St. Francis'      }, name: { en: 'Saint Francis of Assisi',                es: 'San Francisco de Asís'                    }, specialty: { es: 'Paz y creación',               en: 'Peace & creation'            } },
+  { id: 'sanlorenzo',        subdomain: 'sanlorenzo',        chaplet: false, novena: true,  color: '#8a4a00', short: { es: 'San Lorenzo',      en: 'St. Lawrence'     }, name: { en: 'Saint Lawrence',                         es: 'San Lorenzo'                              }, specialty: { es: 'Pobres y libreros',            en: 'Poor & librarians'           } },
+  { id: 'sannicolas',        subdomain: 'sannicolas',        chaplet: false, novena: true,  color: '#1a3a8a', short: { es: 'San Nicolás',      en: 'St. Nicholas'     }, name: { en: 'Saint Nicholas',                         es: 'San Nicolás'                              }, specialty: { es: 'Niños y generosidad',          en: 'Children & generosity'       } },
+  { id: 'santaines',         subdomain: 'santaines',         chaplet: false, novena: true,  color: '#8a1a5a', short: { es: 'Santa Inés',      en: 'St. Agnes'        }, name: { en: 'Saint Agnes',                            es: 'Santa Inés'                               }, specialty: { es: 'Pureza y jóvenes',             en: 'Purity & youth'              } },
+  { id: 'santalucia',        subdomain: 'santalucia',        chaplet: false, novena: true,  color: '#8a1a3a', short: { es: 'Santa Lucía',     en: 'St. Lucy'         }, name: { en: 'Saint Lucy',                             es: 'Santa Lucía'                              }, specialty: { es: 'Vista y enfermos',             en: 'Eyesight & the sick'         } },
+  { id: 'santamonica',       subdomain: 'santamonica',       chaplet: false, novena: true,  color: '#1a3a6a', short: { es: 'Santa Mónica',    en: 'St. Monica'       }, name: { en: 'Saint Monica',                           es: 'Santa Mónica'                             }, specialty: { es: 'Madres y conversión',          en: 'Mothers & conversion'        } },
+  { id: 'perpetuosocorro',   subdomain: 'perpetuosocorro',   chaplet: false, novena: true,  color: '#1a3a7a', short: { es: 'P. Socorro',      en: 'Perp. Help'       }, name: { en: 'Our Lady of Perpetual Help',              es: 'Virgen del Perpetuo Socorro'               }, specialty: { es: 'Auxilio y esperanza',          en: 'Help & hope'                 } },
 ];
 
 // ── KEYWORD MAP — synonyms for prayer-intent search ──────
@@ -173,6 +183,16 @@ const KEYWORD_MAP = {
   sanbrendan:        'navegantes marineros viaje mar aventura sailors travel sea adventure ocean voyage',
   sanguillermo:      'ermitanos peregrinos soledad contemplacion vida sencilla hermits pilgrims solitude contemplation simple life',
   sancarlos:         'sacerdotes seminarios formacion disciplina iglesia priests seminarians formation discipline church',
+  sanfrancisco:      'paz ecologia animales naturaleza pobreza estigmas franciscanos paz interior poverty peace ecology animals nature stigmata',
+  santamonica:       'madres conversion hijos alejados matrimonio dificil lagrimas perseverancia oracion mothers conversion children strayed difficult marriage tears perseverance prayer',
+  sanagustin:        'conversion intelectuales teologia sabiduria duda fe estudios filosofia conversion intellectuals theology wisdom doubt faith studies philosophy',
+  santalucia:        'ojos vista problemas oculares ciegos martires eyesight eyes blindness vision martyrs sick',
+  perpetuosocorro:   'auxilio ayuda esperanza dificultades socorro urgente help hope difficulties urgent aid assistance',
+  sanexpedito:       'urgente rapido inmediato causas dificiles celeridad urgent fast immediate difficult causes speed',
+  sanlorenzo:        'pobres libreros archivistas cocineros diaconos poor librarians archivists cooks deacons',
+  santaines:         'pureza castidad jovenes virgenes purity chastity youth virgins girls',
+  sannicolas:        'ninos generosidad regalos navidad pobres deudas children generosity gifts christmas poor debts sailors',
+  sancristobal:      'viajeros conductores autos viaje transporte peligro travelers drivers cars travel transport danger',
 };
 
 // ── STATE ──────────────────────────────────────────

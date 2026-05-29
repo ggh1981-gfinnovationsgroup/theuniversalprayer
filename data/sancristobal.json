@@ -1,0 +1,106 @@
+﻿{
+  "id": "sancristobal",
+  "name": { "es": "San Cristóbal", "en": "Saint Christopher" },
+  "color": "#1a5a3a",
+  "image": "assets/images/sancristobal.svg",
+  "specialty": { "es": "Viajeros y conductores", "en": "Travelers & drivers" },
+  "shortPrayer": {
+    "es": "San Cristóbal, protector de los viajeros, intercede por nosotros.",
+    "en": "Saint Christopher, protector of travelers, intercede for us."
+  },
+  "history": {
+    "es": "Cristóbal es venerado como mártir cristiano del siglo III, posiblemente de origen cananeo. Su nombre significa 'portador de Cristo'. Según la popular leyenda medieval, era un hombre de gran estatura que se dedicaba a ayudar a los viajeros a cruzar un río peligroso. Un día, un niño le pidió que lo pasara al otro lado. Durante el cruce, el niño se volvió cada vez más pesado. Al llegar a la otra orilla, el niño se reveló como Jesucristo, diciéndole: 'No solo llevas el mundo sobre tus hombros, sino a Aquel que lo creó.' Fue martirizado por su fe hacia el año 250. Es uno de los Catorce Santos Auxiliadores. Patrono de los viajeros, conductores, deportistas y marineros.",
+    "en": "Christopher is venerated as a Christian martyr of the 3rd century, possibly of Canaanite origin. His name means 'bearer of Christ.' According to popular medieval legend, he was a man of great stature who dedicated himself to helping travelers cross a dangerous river. One day, a child asked him to carry him to the other side. During the crossing, the child became increasingly heavy. Upon reaching the other bank, the child revealed himself as Jesus Christ, saying: 'You not only bore the world on your shoulders, but the One who created it.' He was martyred for his faith around 250. He is one of the Fourteen Holy Helpers. Patron of travelers, drivers, athletes, and sailors."
+  },
+  "novena": {
+    "title": { "es": "Novena a San Cristóbal", "en": "Novena to Saint Christopher" },
+    "days": [
+      {
+        "day": 1,
+        "intention": { "es": "Por la protección en los viajes", "en": "For protection while traveling" },
+        "prayer": {
+          "es": "San Cristóbal, que cargaste a Cristo en tus hombros al cruzar el río, intercede por todos los que viajan hoy por tierra, mar o aire. Que lleguen a su destino sanos y salvos bajo la protección divina. Amén.",
+          "en": "Saint Christopher, who carried Christ on your shoulders crossing the river, intercede for all who travel today by land, sea, or air. May they arrive safely at their destination under divine protection. Amen."
+        }
+      },
+      {
+        "day": 2,
+        "intention": { "es": "Por los conductores y transportistas", "en": "For drivers and transport workers" },
+        "prayer": {
+          "es": "San Cristóbal, patrono de los conductores, intercede por todos los que conducen vehículos cada día. Que conduzcan con prudencia, respeto y responsabilidad, y que sus rutas estén protegidas por Dios. Amén.",
+          "en": "Saint Christopher, patron of drivers, intercede for all who drive vehicles each day. May they drive with prudence, respect, and responsibility, and may their routes be protected by God. Amen."
+        }
+      },
+      {
+        "day": 3,
+        "intention": { "es": "Por los que sirven a los demás", "en": "For those who serve others" },
+        "prayer": {
+          "es": "Cristóbal servidor, que dedicaste tu vida a ayudar a otros a cruzar el río, intercede por todos los que se entregan al servicio de los demás. Que en cada persona que ayudan encuentren el rostro de Cristo. Amén.",
+          "en": "Christopher the servant, who dedicated your life to helping others cross the river, intercede for all who give themselves to serving others. May they find in every person they help the face of Christ. Amen."
+        }
+      },
+      {
+        "day": 4,
+        "intention": { "es": "Por los deportistas y aventureros", "en": "For athletes and adventurers" },
+        "prayer": {
+          "es": "San Cristóbal de gran estatura y fortaleza, intercede por todos los deportistas, montañistas, exploradores y aventureros. Que pongan su fortaleza física al servicio del bien y encuentren en Cristo su verdadero campeón. Amén.",
+          "en": "Saint Christopher of great stature and strength, intercede for all athletes, mountaineers, explorers, and adventurers. May they put their physical strength at the service of good and find in Christ their true champion. Amen."
+        }
+      },
+      {
+        "day": 5,
+        "intention": { "es": "Por los emigrantes y refugiados", "en": "For migrants and refugees" },
+        "prayer": {
+          "es": "San Cristóbal, que ayudaste a los más vulnerables a cruzar las aguas peligrosas, intercede por todos los emigrantes y refugiados que arriesgan su vida buscando un futuro mejor. Que sean acogidos con dignidad. Amén.",
+          "en": "Saint Christopher, who helped the most vulnerable cross dangerous waters, intercede for all migrants and refugees who risk their lives seeking a better future. May they be received with dignity. Amen."
+        }
+      },
+      {
+        "day": 6,
+        "intention": { "es": "Por los bomberos, policías y rescatistas", "en": "For firefighters, police, and rescue workers" },
+        "prayer": {
+          "es": "San Cristóbal, que arriesgaste tu propia seguridad para ayudar a otros, intercede por todos los que trabajan como bomberos, policías, socorristas y rescatistas. Que vuelvan sanos a sus hogares cada día. Amén.",
+          "en": "Saint Christopher, who risked your own safety to help others, intercede for all who work as firefighters, police, paramedics, and rescue workers. May they return home safe each day. Amen."
+        }
+      },
+      {
+        "day": 7,
+        "intention": { "es": "Por las misiones y misioneros", "en": "For missions and missionaries" },
+        "prayer": {
+          "es": "Portador de Cristo, que llevaste literalmente a Cristo en tus hombros, intercede por todos los misioneros que llevan a Cristo en sus palabras y en sus obras a los rincones más lejanos del mundo. Amén.",
+          "en": "Bearer of Christ, who literally carried Christ on your shoulders, intercede for all missionaries who carry Christ in their words and deeds to the farthest corners of the world. Amen."
+        }
+      },
+      {
+        "day": 8,
+        "intention": { "es": "Por los que sienten el peso de la vida", "en": "For those who feel the weight of life" },
+        "prayer": {
+          "es": "San Cristóbal, que conociste el peso aplastante del Niño que era el Señor del universo, intercede por todos los que sienten el peso de la vida aplastante. Que comprendan que Cristo los acompaña y lleva sus cargas con ellos. Amén.",
+          "en": "Saint Christopher, who experienced the crushing weight of the Child who was the Lord of the universe, intercede for all who feel the crushing weight of life. May they understand that Christ accompanies them and carries their burdens with them. Amen."
+        }
+      },
+      {
+        "day": 9,
+        "intention": { "es": "Por ser portadores de Cristo a los demás", "en": "For being bearers of Christ to others" },
+        "prayer": {
+          "es": "San Cristóbal, Christóforos, portador de Cristo, enséñanos a ser también nosotros portadores de Cristo: en nuestra sonrisa, en nuestra ayuda, en nuestra oración por los demás, hasta que todos los que nos rodean puedan encontrar a Cristo a través de nosotros. Amén.",
+          "en": "Saint Christopher, Christophoros, bearer of Christ, teach us to also be bearers of Christ: in our smile, in our help, in our prayer for others, until all around us may find Christ through us. Amen."
+        }
+      }
+    ]
+  },
+  "litany": {
+    "title": { "es": "Letanía de San Cristóbal", "en": "Litany of Saint Christopher" },
+    "invocations": [
+      { "es": "San Cristóbal, portador de Cristo,", "en": "Saint Christopher, bearer of Christ," },
+      { "es": "San Cristóbal, protector de los viajeros,", "en": "Saint Christopher, protector of travelers," },
+      { "es": "San Cristóbal, patrono de los conductores,", "en": "Saint Christopher, patron of drivers," },
+      { "es": "San Cristóbal, auxiliador en el peligro,", "en": "Saint Christopher, helper in danger," },
+      { "es": "San Cristóbal, uno de los catorce santos auxiliadores,", "en": "Saint Christopher, one of the Fourteen Holy Helpers," },
+      { "es": "San Cristóbal, que reconociste a Cristo en el niño,", "en": "Saint Christopher, who recognized Christ in the child," },
+      { "es": "San Cristóbal, mártir valiente,", "en": "Saint Christopher, brave martyr," },
+      { "es": "San Cristóbal, patrono de los emigrantes,", "en": "Saint Christopher, patron of migrants," }
+    ],
+    "response": { "es": "Ruega por nosotros.", "en": "Pray for us." }
+  }
+}

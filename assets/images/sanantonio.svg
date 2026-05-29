@@ -1,71 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
   <defs>
-    <radialGradient id="antBg" cx="50%" cy="38%" r="58%">
-      <stop offset="0%" stop-color="#1e0c00"/>
-      <stop offset="100%" stop-color="#0a0500"/>
+    <radialGradient id="sa-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#1e0e08"/><stop offset="100%" stop-color="#0a0400"/>
     </radialGradient>
-    <radialGradient id="antGlow" cx="50%" cy="35%" r="42%">
-      <stop offset="0%" stop-color="rgba(212,160,23,0.22)"/>
-      <stop offset="100%" stop-color="rgba(212,160,23,0)"/>
+    <radialGradient id="sa-atm" cx="50%" cy="38%" r="46%">
+      <stop offset="0%" stop-color="#8a4018" stop-opacity="0.28"/><stop offset="100%" stop-color="#8a4018" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="sa-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#c07030" stop-opacity="1"/><stop offset="100%" stop-color="#5a2808" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="sa-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f5e060" stop-opacity="1"/><stop offset="100%" stop-color="#c9a84c" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="sa-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sa-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
-
-  <!-- Background: dark Franciscan brown -->
-  <rect width="800" height="600" fill="url(#antBg)"/>
-  <rect width="800" height="600" fill="url(#antGlow)"/>
-
-  <!-- Accent strips: Franciscan brown + gold -->
-  <rect x="0" y="0" width="7" height="600" fill="#8b5e2a" opacity="0.8"/>
-  <rect x="7" y="0" width="3" height="600" fill="#d4a017" opacity="0.6"/>
-  <rect x="790" y="0" width="7" height="600" fill="#8b5e2a" opacity="0.8"/>
-  <rect x="787" y="0" width="3" height="600" fill="#d4a017" opacity="0.6"/>
-
-  <!-- Stem of lily -->
-  <line x1="400" y1="490" x2="400" y2="220" stroke="#3a7a3a" stroke-width="10" stroke-linecap="round"/>
-
-  <!-- Left branch -->
-  <line x1="395" y1="355" x2="295" y2="255" stroke="#3a7a3a" stroke-width="7" stroke-linecap="round"/>
-  <!-- Right branch -->
-  <line x1="405" y1="320" x2="505" y2="220" stroke="#3a7a3a" stroke-width="7" stroke-linecap="round"/>
-
-  <!-- Center bloom (top) — gold/white lily -->
-  <ellipse cx="400" cy="175" rx="28" ry="50" fill="#d4a017" opacity="0.92" transform="rotate(-5 400 175)"/>
-  <ellipse cx="413" cy="168" rx="18" ry="40" fill="#f0e68c" opacity="0.65" transform="rotate(8 413 168)"/>
-  <ellipse cx="388" cy="168" rx="18" ry="40" fill="#f0e68c" opacity="0.55" transform="rotate(-8 388 168)"/>
-  <!-- Center stamen -->
-  <ellipse cx="400" cy="185" rx="6" ry="9" fill="#fff9d4" opacity="0.9"/>
-
-  <!-- Left bloom -->
-  <ellipse cx="268" cy="218" rx="24" ry="44" fill="#d4a017" opacity="0.88" transform="rotate(-40 268 218)"/>
-  <ellipse cx="278" cy="210" rx="15" ry="34" fill="#f0e68c" opacity="0.55" transform="rotate(-28 278 210)"/>
-  <ellipse cx="260" cy="225" rx="5" ry="8" fill="#fff9d4" opacity="0.85"/>
-
-  <!-- Right bloom -->
-  <ellipse cx="532" cy="188" rx="24" ry="44" fill="#d4a017" opacity="0.88" transform="rotate(35 532 188)"/>
-  <ellipse cx="520" cy="195" rx="15" ry="34" fill="#f0e68c" opacity="0.55" transform="rotate(24 520 195)"/>
-  <ellipse cx="538" cy="183" rx="5" ry="8" fill="#fff9d4" opacity="0.85"/>
-
-  <!-- Franciscan cord (3 knots = poverty, chastity, obedience) -->
-  <path d="M 260 490 Q 350 510 400 490 Q 450 470 540 490" stroke="#8b5e2a" stroke-width="4" fill="none" opacity="0.7" stroke-linecap="round"/>
-  <circle cx="310" cy="497" r="6" fill="#8b5e2a" opacity="0.75"/>
-  <circle cx="400" cy="490" r="6" fill="#8b5e2a" opacity="0.75"/>
-  <circle cx="490" cy="487" r="6" fill="#8b5e2a" opacity="0.75"/>
-
-  <!-- Book outline (Bible) -->
-  <rect x="330" y="415" width="140" height="95" rx="6" fill="#1a0900" stroke="#8b5e2a" stroke-width="2.5" opacity="0.85"/>
-  <line x1="400" y1="415" x2="400" y2="510" stroke="#8b5e2a" stroke-width="1.5" opacity="0.6"/>
-  <!-- Cross on cover -->
-  <line x1="400" y1="432" x2="400" y2="494" stroke="#d4a017" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
-  <line x1="375" y1="458" x2="425" y2="458" stroke="#d4a017" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
-
-  <!-- Subtle dots / stars -->
-  <circle cx="155" cy="130" r="1.8" fill="#d4a017" opacity="0.4"/>
-  <circle cx="645" cy="150" r="1.8" fill="#d4a017" opacity="0.4"/>
-  <circle cx="185" cy="430" r="1.4" fill="#d4a017" opacity="0.3"/>
-  <circle cx="615" cy="400" r="1.4" fill="#d4a017" opacity="0.3"/>
-
-  <!-- Name + Feast day -->
-  <text x="400" y="528" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#e8c97a" letter-spacing="1">San Antonio de Padua</text>
-  <text x="400" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#c9a84c" font-style="italic" opacity="0.85">Saint Anthony of Padua</text>
-  <text x="400" y="574" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#7a5a30" letter-spacing="2.5">13 DE JUNIO · JUNE 13</text>
+  <rect width="400" height="600" fill="url(#sa-bg)"/>
+  <rect width="400" height="600" fill="url(#sa-atm)"/>
+  <!-- Rays: brown left, gold right -->
+  <polygon points="198,265 -25,610 115,610" fill="url(#sa-r1)" filter="url(#sa-gl)" opacity="0.75"/>
+  <polygon points="198,265 20,600  85,600"  fill="#c07030" opacity="0.40"/>
+  <polygon points="202,265 425,610 285,610" fill="url(#sa-r2)" filter="url(#sa-gl)" opacity="0.72"/>
+  <polygon points="202,265 375,600 315,600" fill="#f5e060" opacity="0.36"/>
+  <!-- Brown Franciscan habit -->
+  <path d="M168,155 Q140,205 126,390 Q200,415 274,390 Q260,205 232,155 Z" fill="#7a4a28" opacity="0.90"/>
+  <!-- White rope cord -->
+  <path d="M145,285 Q200,296 255,285" stroke="#f0e8d0" stroke-width="5" fill="none" stroke-opacity="0.7" stroke-linecap="round"/>
+  <!-- Left arm holding lily stem -->
+  <path d="M138,212 Q110,252 102,292" stroke="#7a4a28" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.88"/>
+  <!-- Right arm with Child Jesus seated on book -->
+  <path d="M262,212 Q290,252 298,292" stroke="#7a4a28" stroke-width="17" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <!-- Open book in right arm -->
+  <rect x="280" y="290" width="30" height="22" rx="2" fill="#e8d0a0" opacity="0.85"/>
+  <line x1="295" y1="290" x2="295" y2="312" stroke="#8a6030" stroke-width="1" opacity="0.5"/>
+  <!-- Child Jesus on book (tiny) -->
+  <ellipse cx="295" cy="283" rx="7" ry="8" fill="#d4a06a" opacity="0.88"/>
+  <circle  cx="295" cy="274" r="6" fill="#d4a06a" opacity="0.84"/>
+  <circle  cx="295" cy="274" r="8" fill="none" stroke="#e8c97a" stroke-width="0.8" stroke-opacity="0.5"/>
+  <!-- White lily on left (symbol of purity) -->
+  <line x1="102" y1="292" x2="102" y2="240" stroke="#7aaa40" stroke-width="2.5" opacity="0.8"/>
+  <ellipse cx="102" cy="236" rx="6" ry="10" fill="#f8f4e8" opacity="0.88"/>
+  <ellipse cx="95"  cy="248" rx="5" ry="9"  fill="#f8f4e8" opacity="0.75"/>
+  <!-- Hand -->
+  <ellipse cx="103" cy="296" rx="13" ry="16" fill="#d4a06a" opacity="0.9"/>
+  <!-- Neck -->
+  <rect x="193" y="142" width="14" height="18" rx="4" fill="#d4a06a" opacity="0.9"/>
+  <!-- Head (young, beardless Franciscan friar) -->
+  <ellipse cx="200" cy="108" rx="26" ry="30" fill="#d4a06a" opacity="0.92"/>
+  <!-- Brown tonsure/hood -->
+  <path d="M174,106 Q176,72 200,68 Q224,72 226,106 Q219,86 200,84 Q181,86 174,106 Z" fill="#5a3218" opacity="0.82"/>
+  <!-- Hood back over shoulders -->
+  <path d="M168,155 Q148,162 142,180 L166,170 Z" fill="#6a3818" opacity="0.8"/>
+  <path d="M232,155 Q252,162 258,180 L234,170 Z" fill="#6a3818" opacity="0.8"/>
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#sa-g2)"/>
+  <circle cx="200" cy="108" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#0a0400" opacity="0.86"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">SAN ANTONIO DE PADUA  ·  SAINT ANTHONY</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#f5e060" font-style="italic">«San Antonio de Padua»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#d4c040" font-style="italic" opacity="0.8">«Saint Anthony of Padua»</text>
 </svg>

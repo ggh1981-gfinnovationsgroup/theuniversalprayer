@@ -1,0 +1,106 @@
+﻿{
+  "id": "sanagustin",
+  "name": { "es": "San Agustín de Hipona", "en": "Saint Augustine of Hippo" },
+  "color": "#5a3010",
+  "image": "assets/images/sanagustin.svg",
+  "specialty": { "es": "Conversión y sabiduría", "en": "Conversion & wisdom" },
+  "shortPrayer": {
+    "es": "San Agustín de Hipona, Doctor de la Gracia, intercede por nosotros.",
+    "en": "Saint Augustine of Hippo, Doctor of Grace, intercede for us."
+  },
+  "history": {
+    "es": "Aurelio Agustín nació en Tagaste, África del Norte, en 354. Hijo de Santa Mónica y del pagano Patricio, fue un brillante estudiante que llevó una vida desordenada en su juventud. En Milán, los sermones de San Ambrosio y la lectura de San Pablo precipitaron su conversión en 386. Fue bautizado en la Vigilia Pascual de 387. Regresó a África, fundó una comunidad monástica y fue ordenado sacerdote. En 396 fue consagrado obispo de Hipona. Sus obras filosóficas y teológicas, entre ellas las Confesiones y La Ciudad de Dios, son fundacionales para la teología occidental. Murió en 430 mientras los vándalos asediaban Hipona. Sus reliquias reposan en Pavía.",
+    "en": "Aurelius Augustine was born in Thagaste, North Africa, in 354. Son of Saint Monica and the pagan Patricius, he was a brilliant student who led a disordered youth. In Milan, the sermons of Saint Ambrose and the reading of Saint Paul precipitated his conversion in 386. He was baptized at the Easter Vigil of 387. He returned to Africa, founded a monastic community, and was ordained priest. In 396 he was consecrated bishop of Hippo. His philosophical and theological works, including the Confessions and The City of God, are foundational for Western theology. He died in 430 while the Vandals besieged Hippo. His relics rest in Pavia."
+  },
+  "novena": {
+    "title": { "es": "Novena a San Agustín de Hipona", "en": "Novena to Saint Augustine of Hippo" },
+    "days": [
+      {
+        "day": 1,
+        "intention": { "es": "Por la conversión de los que se han alejado", "en": "For the conversion of those who have strayed" },
+        "prayer": {
+          "es": "San Agustín, que conociste el poder de la gracia de Dios para transformar el corazón más extraviado, intercede por todos los que viven lejos de Dios. Que encuentren, como tú, que el corazón está inquieto hasta que descansa en Él. Amén.",
+          "en": "Saint Augustine, who knew the power of God's grace to transform the most wayward heart, intercede for all who live far from God. May they find, as you did, that our heart is restless until it rests in Him. Amen."
+        }
+      },
+      {
+        "day": 2,
+        "intention": { "es": "Por el amor a la verdad", "en": "For love of truth" },
+        "prayer": {
+          "es": "Doctor de la Gracia, que buscaste la verdad con toda la fuerza de tu inteligencia y la encontraste en Cristo, intercede por todos los que buscan el sentido de la vida para que sean conducidos a la Verdad que es Dios. Amén.",
+          "en": "Doctor of Grace, who sought truth with all the force of your intellect and found it in Christ, intercede for all who seek life's meaning that they may be led to the Truth who is God. Amen."
+        }
+      },
+      {
+        "day": 3,
+        "intention": { "es": "Por los intelectuales y estudiantes", "en": "For intellectuals and students" },
+        "prayer": {
+          "es": "San Agustín, patrono de los teólogos y filósofos, intercede para que todos los que cultivan la inteligencia la pongan al servicio de la fe y nunca la contrapongan al amor de Dios. Amén.",
+          "en": "Saint Augustine, patron of theologians and philosophers, intercede that all who cultivate the intellect may put it at the service of faith and never pit it against the love of God. Amen."
+        }
+      },
+      {
+        "day": 4,
+        "intention": { "es": "Por el don de la gracia", "en": "For the gift of grace" },
+        "prayer": {
+          "es": "Agustín, Doctor de la Gracia, que comprendiste que sin Dios nada podemos hacer, intercede para que reconozcamos nuestra necesidad de la gracia divina y nos abramos plenamente a su acción en nosotros. Amén.",
+          "en": "Augustine, Doctor of Grace, who understood that without God we can do nothing, intercede that we may recognize our need for divine grace and fully open ourselves to its action in us. Amen."
+        }
+      },
+      {
+        "day": 5,
+        "intention": { "es": "Por la Iglesia universal", "en": "For the universal Church" },
+        "prayer": {
+          "es": "San Agustín, que diste tu vida como pastor de la Iglesia de Hipona y la defendiste con tu pluma y tu voz, intercede por la Iglesia universal, especialmente en sus momentos de crisis y persecución. Amén.",
+          "en": "Saint Augustine, who gave your life as pastor of the Church of Hippo and defended her with your pen and voice, intercede for the universal Church, especially in her moments of crisis and persecution. Amen."
+        }
+      },
+      {
+        "day": 6,
+        "intention": { "es": "Por los que dudan en la fe", "en": "For those who doubt in faith" },
+        "prayer": {
+          "es": "Agustín, que pasaste por largos años de duda y búsqueda, intercede por todos los que atraviesan crisis de fe para que no se rindan sino que, como tú, sigan buscando hasta encontrar la luz. Amén.",
+          "en": "Augustine, who spent long years of doubt and searching, intercede for all going through faith crises that they may not give up but, like you, keep seeking until they find the light. Amen."
+        }
+      },
+      {
+        "day": 7,
+        "intention": { "es": "Por la pureza del corazón", "en": "For purity of heart" },
+        "prayer": {
+          "es": "San Agustín, que experimentaste el poder esclavizante de los vicios y la libertad que trae la gracia, intercede por todos los que luchan contra sus pasiones para que encuentren en Dios la fuerza de la verdadera libertad. Amén.",
+          "en": "Saint Augustine, who experienced the enslaving power of vices and the freedom grace brings, intercede for all who struggle against their passions that they may find in God the strength of true freedom. Amen."
+        }
+      },
+      {
+        "day": 8,
+        "intention": { "es": "Por los que sufren el peso del pecado", "en": "For those burdened by sin" },
+        "prayer": {
+          "es": "Misericordioso Agustín, que experimentaste la infinita misericordia de Dios, proclama ante el trono divino la causa de todos los pecadores arrepentidos. Que nadie desespere de la misericordia de Dios. Amén.",
+          "en": "Merciful Augustine, who experienced the infinite mercy of God, proclaim before the divine throne the cause of all repentant sinners. May no one despair of God's mercy. Amen."
+        }
+      },
+      {
+        "day": 9,
+        "intention": { "es": "Por el descanso en Dios", "en": "For rest in God" },
+        "prayer": {
+          "es": "San Agustín, que escribiste: 'Nos hiciste para Ti, Señor, y nuestro corazón está inquieto hasta que descanse en Ti', ayúdanos a orientar toda nuestra vida hacia Dios, que es nuestro único descanso verdadero y nuestra patria definitiva. Amén.",
+          "en": "Saint Augustine, who wrote: 'You made us for Yourself, O Lord, and our heart is restless until it rests in You', help us to direct our entire life toward God, who is our only true rest and our ultimate homeland. Amen."
+        }
+      }
+    ]
+  },
+  "litany": {
+    "title": { "es": "Letanía de San Agustín de Hipona", "en": "Litany of Saint Augustine of Hippo" },
+    "invocations": [
+      { "es": "San Agustín, Doctor de la Gracia,", "en": "Saint Augustine, Doctor of Grace," },
+      { "es": "San Agustín, luz de la teología occidental,", "en": "Saint Augustine, light of Western theology," },
+      { "es": "San Agustín, modelo de conversión,", "en": "Saint Augustine, model of conversion," },
+      { "es": "San Agustín, hijo agradecido de Santa Mónica,", "en": "Saint Augustine, grateful son of Saint Monica," },
+      { "es": "San Agustín, buscador incansable de la verdad,", "en": "Saint Augustine, tireless seeker of truth," },
+      { "es": "San Agustín, pastor solícito de Hipona,", "en": "Saint Augustine, solicitous pastor of Hippo," },
+      { "es": "San Agustín, defensor de la fe ortodoxa,", "en": "Saint Augustine, defender of orthodox faith," },
+      { "es": "San Agustín, corazón inquieto que descansó en Dios,", "en": "Saint Augustine, restless heart that found rest in God," }
+    ],
+    "response": { "es": "Ruega por nosotros.", "en": "Pray for us." }
+  }
+}

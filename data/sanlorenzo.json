@@ -1,0 +1,106 @@
+﻿{
+  "id": "sanlorenzo",
+  "name": { "es": "San Lorenzo", "en": "Saint Lawrence" },
+  "color": "#8a4a00",
+  "image": "assets/images/sanlorenzo.svg",
+  "specialty": { "es": "Pobres y libreros", "en": "Poor & librarians" },
+  "shortPrayer": {
+    "es": "San Lorenzo, diácono y mártir, intercede por nosotros.",
+    "en": "Saint Lawrence, deacon and martyr, intercede for us."
+  },
+  "history": {
+    "es": "Lorenzo nació en Huesca, España, hacia el año 225. Fue uno de los siete diáconos de Roma bajo el Papa Sixto II. Cuando el emperador Valeriano ordenó la ejecución del Papa, el prefecto romano exigió a Lorenzo que entregara los tesoros de la Iglesia. Lorenzo reunió a los pobres, enfermos, ciegos y cojos, y los presentó ante el prefecto diciendo: 'Estos son los tesoros de la Iglesia.' Fue condenado a ser quemado vivo sobre una parrilla en el año 258. Según la tradición, durante el martirio dijo a sus verdugos: 'Ya estoy asado por este lado, dadme la vuelta.' Es patrono de los pobres, cocineros, libreros, archivistas y estudiantes.",
+    "en": "Lawrence was born in Huesca, Spain, around 225. He was one of the seven deacons of Rome under Pope Sixtus II. When Emperor Valerian ordered the Pope's execution, the Roman prefect demanded that Lawrence hand over the Church's treasures. Lawrence gathered the poor, sick, blind, and lame, and presented them to the prefect saying: 'These are the treasures of the Church.' He was condemned to be burned alive on a gridiron in 258. According to tradition, during his martyrdom he said to his torturers: 'Turn me over, I am done on this side.' He is patron of the poor, cooks, librarians, archivists, and students."
+  },
+  "novena": {
+    "title": { "es": "Novena a San Lorenzo", "en": "Novena to Saint Lawrence" },
+    "days": [
+      {
+        "day": 1,
+        "intention": { "es": "Por los pobres y los más vulnerables", "en": "For the poor and most vulnerable" },
+        "prayer": {
+          "es": "San Lorenzo, que proclamaste que los pobres son los tesoros de la Iglesia, intercede por todos los que viven en pobreza extrema. Que la sociedad los vea como te enseñaste tú: como joyas de Cristo. Amén.",
+          "en": "Saint Lawrence, who proclaimed that the poor are the treasures of the Church, intercede for all who live in extreme poverty. May society see them as you taught us: as the jewels of Christ. Amen."
+        }
+      },
+      {
+        "day": 2,
+        "intention": { "es": "Por el servicio generoso a los necesitados", "en": "For generous service to those in need" },
+        "prayer": {
+          "es": "Diácono Lorenzo, que sirviste a los pobres con toda tu energía, intercede para que seamos generosos servidores de los necesitados y encontremos en ellos el rostro de Cristo. Amén.",
+          "en": "Deacon Lawrence, who served the poor with all your energy, intercede that we may be generous servants of the needy and find in them the face of Christ. Amen."
+        }
+      },
+      {
+        "day": 3,
+        "intention": { "es": "Por los libreros, archivistas y custodios del saber", "en": "For booksellers, archivists, and custodians of knowledge" },
+        "prayer": {
+          "es": "San Lorenzo, patrono de los que guardan el saber humano, intercede por todos los bibliotecarios, archivistas y libreros para que su trabajo de preservar y transmitir el conocimiento sea siempre un acto de amor a la humanidad. Amén.",
+          "en": "Saint Lawrence, patron of those who preserve human knowledge, intercede for all librarians, archivists, and booksellers that their work of preserving and transmitting knowledge may always be an act of love for humanity. Amen."
+        }
+      },
+      {
+        "day": 4,
+        "intention": { "es": "Por la valentía en la fe", "en": "For courage in faith" },
+        "prayer": {
+          "es": "Lorenzo valeroso, que enfrentaste el martirio con serenidad y hasta con humor, intercede por todos los cristianos que atraviesan persecución o prueba por su fe. Que tengan tu fortaleza y paz. Amén.",
+          "en": "Brave Lorenzo, who faced martyrdom with serenity and even humor, intercede for all Christians undergoing persecution or trial for their faith. May they have your strength and peace. Amen."
+        }
+      },
+      {
+        "day": 5,
+        "intention": { "es": "Por los cocineros y quienes nutren a otros", "en": "For cooks and those who nourish others" },
+        "prayer": {
+          "es": "San Lorenzo, patrono de los cocineros, intercede por todos los que preparan alimentos para otros, especialmente por los que alimentan a los más pobres en comedores sociales y misiones. Que su trabajo sea bendecido. Amén.",
+          "en": "Saint Lawrence, patron of cooks, intercede for all who prepare food for others, especially those who feed the poorest in soup kitchens and missions. May their work be blessed. Amen."
+        }
+      },
+      {
+        "day": 6,
+        "intention": { "es": "Por la fidelidad al Evangelio", "en": "For fidelity to the Gospel" },
+        "prayer": {
+          "es": "San Lorenzo, que preferiste el martirio a traicionar a la Iglesia, intercede para que seamos fieles al Evangelio en nuestras decisiones cotidianas, incluso cuando sea costoso. Amén.",
+          "en": "Saint Lawrence, who preferred martyrdom to betraying the Church, intercede that we may be faithful to the Gospel in our daily decisions, even when it is costly. Amen."
+        }
+      },
+      {
+        "day": 7,
+        "intention": { "es": "Por la alegría cristiana en el sufrimiento", "en": "For Christian joy in suffering" },
+        "prayer": {
+          "es": "Lorenzo alegre en el martirio, que hablaste con humor en medio del fuego, enseña a todos los que sufren a encontrar en Cristo la fuente de paz y alegría que ninguna tribulación puede apagar. Amén.",
+          "en": "Lawrence joyful in martyrdom, who spoke with humor amid the fire, teach all who suffer to find in Christ the source of peace and joy that no tribulation can extinguish. Amen."
+        }
+      },
+      {
+        "day": 8,
+        "intention": { "es": "Por la solidaridad con los que sufren", "en": "For solidarity with those who suffer" },
+        "prayer": {
+          "es": "San Lorenzo, intercede para que no seamos indiferentes ante el sufrimiento ajeno, sino que, como tú, hagamos de los que sufren nuestra prioridad y nuestro tesoro. Amén.",
+          "en": "Saint Lawrence, intercede that we may not be indifferent to the suffering of others, but that, like you, we make those who suffer our priority and our treasure. Amen."
+        }
+      },
+      {
+        "day": 9,
+        "intention": { "es": "Por compartir los bienes de la Iglesia con los pobres", "en": "For sharing the Church's goods with the poor" },
+        "prayer": {
+          "es": "Lorenzo, diácono de los pobres, intercede por la Iglesia para que sea siempre fiel a su misión de servicio a los más necesitados y que sus bienes sean verdaderamente los tesoros que son: el rostro de Cristo en los pobres. Amén.",
+          "en": "Lawrence, deacon of the poor, intercede for the Church that she may always be faithful to her mission of service to the most needy and that her goods may truly be the treasures they are: the face of Christ in the poor. Amen."
+        }
+      }
+    ]
+  },
+  "litany": {
+    "title": { "es": "Letanía de San Lorenzo", "en": "Litany of Saint Lawrence" },
+    "invocations": [
+      { "es": "San Lorenzo, diácono y mártir,", "en": "Saint Lawrence, deacon and martyr," },
+      { "es": "San Lorenzo, servidor de los pobres,", "en": "Saint Lawrence, servant of the poor," },
+      { "es": "San Lorenzo, tesoro de la Iglesia,", "en": "Saint Lawrence, treasure of the Church," },
+      { "es": "San Lorenzo, patrono de los cocineros,", "en": "Saint Lawrence, patron of cooks," },
+      { "es": "San Lorenzo, patrono de los libreros,", "en": "Saint Lawrence, patron of librarians," },
+      { "es": "San Lorenzo, valiente en el martirio,", "en": "Saint Lawrence, brave in martyrdom," },
+      { "es": "San Lorenzo, alegre en el sufrimiento,", "en": "Saint Lawrence, joyful in suffering," },
+      { "es": "San Lorenzo, custodio de los más débiles,", "en": "Saint Lawrence, custodian of the weakest," }
+    ],
+    "response": { "es": "Ruega por nosotros.", "en": "Pray for us." }
+  }
+}

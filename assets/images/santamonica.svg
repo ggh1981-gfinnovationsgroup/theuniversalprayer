@@ -1,0 +1,54 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="stm-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#080c1a"/><stop offset="100%" stop-color="#040810"/>
+    </radialGradient>
+    <linearGradient id="stm-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#3060a0" stop-opacity="1"/><stop offset="100%" stop-color="#102040" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="stm-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#c0c8d8" stop-opacity="1"/><stop offset="100%" stop-color="#8090a8" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="stm-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="stm-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#stm-bg)"/>
+  <rect width="400" height="600" fill="#102048" opacity="0.10"/>
+  <polygon points="198,265 -25,610 115,610" fill="url(#stm-r1)" filter="url(#stm-gl)" opacity="0.70"/>
+  <polygon points="198,265 20,600  85,600"  fill="#3060a0" opacity="0.34"/>
+  <polygon points="202,265 425,610 285,610" fill="url(#stm-r2)" filter="url(#stm-gl)" opacity="0.65"/>
+  <polygon points="202,265 375,600 315,600" fill="#c0c8d8" opacity="0.30"/>
+  <!-- Dark blue dress -->
+  <path d="M168,155 Q140,205 126,390 Q200,415 274,390 Q260,205 232,155 Z" fill="#304878" opacity="0.88"/>
+  <!-- Dark blue veil/mantle -->
+  <path d="M168,155 Q124,192 108,318 Q122,330 148,312 Q150,228 178,168 Z" fill="#1a3060" opacity="0.85"/>
+  <path d="M232,155 Q260,198 270,318 Q290,322 296,300 Q286,198 248,158 Z" fill="#1a3060" opacity="0.78"/>
+  <!-- Hands folded in prayer -->
+  <path d="M140,215 Q128,258 126,295" stroke="#304878" stroke-width="17" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <path d="M260,215 Q270,258 272,295" stroke="#1a3060" stroke-width="16" fill="none" stroke-linecap="round" opacity="0.80"/>
+  <!-- Joined hands (prayer) -->
+  <ellipse cx="126" cy="298" rx="12" ry="15" fill="#c8a878" opacity="0.9"/>
+  <ellipse cx="272" cy="298" rx="12" ry="15" fill="#c8a878" opacity="0.9"/>
+  <!-- Tear drops on cheeks (Monica wept for Augustine) -->
+  <ellipse cx="189" cy="116" rx="3" ry="5" fill="#6888c0" opacity="0.72"/>
+  <ellipse cx="211" cy="116" rx="3" ry="5" fill="#6888c0" opacity="0.72"/>
+  <!-- Dark blue veil over head -->
+  <path d="M168,155 Q142,142 136,126 Q152,112 176,118 Q184,135 188,152 Z" fill="#1a3060" opacity="0.88"/>
+  <path d="M232,155 Q258,142 264,126 Q248,112 224,118 Q216,135 212,152 Z" fill="#1a3060" opacity="0.84"/>
+  <!-- Neck + head (middle-aged woman) -->
+  <rect x="193" y="142" width="14" height="16" rx="4" fill="#c8a878" opacity="0.9"/>
+  <ellipse cx="200" cy="108" rx="25" ry="29" fill="#c8a878" opacity="0.92"/>
+  <path d="M175,107 Q177,73 200,69 Q223,73 225,107 Q218,87 200,85 Q182,87 175,107 Z" fill="#5a3820" opacity="0.80"/>
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#stm-g2)"/>
+  <circle cx="200" cy="108" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#040810" opacity="0.86"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">SANTA MONICA  ·  SAINT MONICA</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#80a0d8" font-style="italic">«Santa Mónica, Madre y Orante»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#c0c8d8" font-style="italic" opacity="0.8">«Saint Monica, Mother of Augustine»</text>
+</svg>

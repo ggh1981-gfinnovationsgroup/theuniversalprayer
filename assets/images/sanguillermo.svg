@@ -1,76 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
   <defs>
-    <radialGradient id="guill-bg" cx="50%" cy="38%" r="60%">
-      <stop offset="0%" stop-color="#001508"/>
-      <stop offset="100%" stop-color="#000602"/>
+    <radialGradient id="sgw-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#071008"/><stop offset="100%" stop-color="#040804"/>
     </radialGradient>
-    <radialGradient id="guill-glow" cx="50%" cy="40%" r="55%">
-      <stop offset="0%" stop-color="rgba(20,100,40,0.22)"/>
-      <stop offset="100%" stop-color="rgba(20,100,40,0)"/>
-    </radialGradient>
+    <linearGradient id="sgw-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#389040" stop-opacity="1"/><stop offset="100%" stop-color="#103818" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="sgw-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f5e060" stop-opacity="1"/><stop offset="100%" stop-color="#c9a84c" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="sgw-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sgw-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
-
-  <!-- Background: forest green -->
-  <rect width="800" height="600" fill="url(#guill-bg)"/>
-  <rect width="800" height="600" fill="url(#guill-glow)"/>
-
-  <!-- Border -->
-  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#2a7a3a" stroke-width="1" stroke-opacity="0.55"/>
-  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#2a7a3a" stroke-width="0.5" stroke-opacity="0.25"/>
-
-  <!-- Side accent strips -->
-  <rect x="28" y="28" width="6" height="544" rx="3" fill="#1a5a2a" opacity="0.75"/>
-  <rect x="766" y="28" width="6" height="544" rx="3" fill="#1a5a2a" opacity="0.75"/>
-
-  <!-- Mountain silhouette -->
-  <path d="M 60 440 L 200 230 L 280 310 L 400 145 L 520 310 L 600 230 L 740 440 Z" fill="#0a1a0a" stroke="#2a7a3a" stroke-width="1.5" opacity="0.85"/>
-  <!-- Snow cap on peak -->
-  <path d="M 400 145 L 375 190 L 400 185 L 425 190 Z" fill="#e0e8e0" opacity="0.75"/>
-
-  <!-- Star above mountain peak — guiding star -->
-  <circle cx="400" cy="115" r="5" fill="#e8c97a" opacity="0.90"/>
-  <!-- Star rays -->
-  <line x1="400" y1="100" x2="400" y2="90" stroke="#e8c97a" stroke-width="1.5" opacity="0.70"/>
-  <line x1="400" y1="130" x2="400" y2="140" stroke="#e8c97a" stroke-width="1.5" opacity="0.70"/>
-  <line x1="385" y1="115" x2="375" y2="115" stroke="#e8c97a" stroke-width="1.5" opacity="0.70"/>
-  <line x1="415" y1="115" x2="425" y2="115" stroke="#e8c97a" stroke-width="1.5" opacity="0.70"/>
-  <line x1="389" y1="104" x2="382" y2="97" stroke="#e8c97a" stroke-width="1.2" opacity="0.55"/>
-  <line x1="411" y1="126" x2="418" y2="133" stroke="#e8c97a" stroke-width="1.2" opacity="0.55"/>
-  <line x1="411" y1="104" x2="418" y2="97" stroke="#e8c97a" stroke-width="1.2" opacity="0.55"/>
-  <line x1="389" y1="126" x2="382" y2="133" stroke="#e8c97a" stroke-width="1.2" opacity="0.55"/>
-
-  <!-- Pilgrim staff leaning against mountain -->
-  <line x1="350" y1="430" x2="310" y2="210" stroke="#6a4020" stroke-width="5" stroke-linecap="round" opacity="0.80"/>
-  <!-- Crooked top of staff -->
-  <path d="M 310 210 Q 295 195 298 180 Q 305 168 318 172 Q 326 178 320 190 Q 315 200 310 210" fill="none" stroke="#6a4020" stroke-width="4" stroke-linecap="round" opacity="0.78"/>
-  <!-- Gourd hanging from staff -->
-  <ellipse cx="298" cy="210" rx="9" ry="11" fill="#4a3010" stroke="#8a6020" stroke-width="1.2" opacity="0.80"/>
-  <line x1="307" y1="200" x2="314" y2="208" stroke="#8a6020" stroke-width="1.2" opacity="0.70"/>
-
-  <!-- Small church at base of mountain (Montevergine) -->
-  <rect x="435" y="368" width="55" height="50" rx="3" fill="#0a1a0a" stroke="#2a7a3a" stroke-width="1.2" opacity="0.88"/>
-  <!-- Church roof / triangle -->
-  <path d="M 430 368 L 462 348 L 495 368 Z" fill="#0a1a0a" stroke="#2a7a3a" stroke-width="1.2" opacity="0.88"/>
-  <!-- Bell tower -->
-  <rect x="451" y="318" width="22" height="32" rx="2" fill="#0a1a0a" stroke="#2a7a3a" stroke-width="1.2" opacity="0.88"/>
-  <!-- Bell tower cap -->
-  <path d="M 447 318 L 462 305 L 477 318 Z" fill="#0a1a0a" stroke="#2a7a3a" stroke-width="1.2" opacity="0.88"/>
-  <!-- Small cross on tower -->
-  <line x1="462" y1="298" x2="462" y2="308" stroke="#c9a84c" stroke-width="2" opacity="0.80"/>
-  <line x1="457" y1="302" x2="467" y2="302" stroke="#c9a84c" stroke-width="2" opacity="0.80"/>
-  <!-- Church window -->
-  <rect x="454" y="382" width="16" height="22" rx="7" fill="#c9a84c" opacity="0.18"/>
-
-  <!-- Background stars -->
-  <circle cx="155" cy="85" r="1.5" fill="#e8e8ff" opacity="0.45"/>
-  <circle cx="645" cy="95" r="1.5" fill="#e8e8ff" opacity="0.45"/>
-  <circle cx="200" cy="160" r="1.2" fill="#e8e8ff" opacity="0.35"/>
-  <circle cx="600" cy="175" r="1.2" fill="#e8e8ff" opacity="0.35"/>
-  <circle cx="130" cy="310" r="1.3" fill="#2a7a3a" opacity="0.40"/>
-  <circle cx="670" cy="330" r="1.3" fill="#2a7a3a" opacity="0.40"/>
-
-  <!-- Name text -->
-  <text x="400" y="498" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#e8c97a" letter-spacing="1">San Guillermo de Vercelli</text>
-  <text x="400" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#c9a84c" font-style="italic" opacity="0.85">Saint William of Vercelli</text>
-  <text x="400" y="546" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#2a5a3a" letter-spacing="2.5">25 DE JUN · JUN 25</text>
+  <rect width="400" height="600" fill="url(#sgw-bg)"/>
+  <rect width="400" height="600" fill="#103020" opacity="0.12"/>
+  <polygon points="198,265 -25,610 115,610" fill="url(#sgw-r1)" filter="url(#sgw-gl)" opacity="0.72"/>
+  <polygon points="198,265 20,600  85,600"  fill="#389040" opacity="0.36"/>
+  <polygon points="202,265 425,610 285,610" fill="url(#sgw-r2)" filter="url(#sgw-gl)" opacity="0.70"/>
+  <polygon points="202,265 375,600 315,600" fill="#f5e060" opacity="0.34"/>
+  <!-- Forest green tunic -->
+  <path d="M168,155 Q140,205 126,390 Q200,415 274,390 Q260,205 232,155 Z" fill="#2a5a28" opacity="0.84"/>
+  <!-- Brown pilgrim cloak -->
+  <path d="M168,155 Q124,192 108,318 Q122,330 148,312 Q150,228 178,168 Z" fill="#6a4818" opacity="0.84"/>
+  <path d="M232,155 Q260,198 270,318 Q290,322 296,300 Q286,198 248,158 Z" fill="#6a4818" opacity="0.78"/>
+  <!-- Pilgrim staff (left) -->
+  <path d="M140,215 Q112,255 104,295" stroke="#2a5a28" stroke-width="17" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <line x1="104" y1="295" x2="104" y2="450" stroke="#6a4818" stroke-width="5" stroke-opacity="0.82"/>
+  <!-- Right arm open in prayer -->
+  <path d="M260,215 Q285,252 292,292" stroke="#6a4818" stroke-width="16" fill="none" stroke-linecap="round" opacity="0.80"/>
+  <!-- Hands -->
+  <ellipse cx="104" cy="298" rx="12" ry="15" fill="#c8a06a" opacity="0.9"/>
+  <ellipse cx="292" cy="296" rx="12" ry="15" fill="#c8a06a" opacity="0.9"/>
+  <!-- Pilgrim hat (broad brim) suggestion -->
+  <ellipse cx="200" cy="78"  rx="42" ry="8"  fill="#6a4818" opacity="0.58"/>
+  <!-- Neck + head -->
+  <rect x="193" y="142" width="14" height="18" rx="4" fill="#c8a06a" opacity="0.9"/>
+  <ellipse cx="200" cy="108" rx="27" ry="31" fill="#c8a06a" opacity="0.92"/>
+  <path d="M173,107 Q176,72 200,68 Q224,72 227,107 Q219,88 200,86 Q181,88 173,107 Z" fill="#3a2810" opacity="0.85"/>
+  <path d="M181,132 Q184,149 200,154 Q216,149 219,132 Q211,143 200,144 Q189,143 181,132 Z" fill="#3a2810" opacity="0.70"/>
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#sgw-g2)"/>
+  <circle cx="200" cy="108" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#040804" opacity="0.86"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">SAN GUILLERMO  ·  SAINT WILLIAM</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#90d870" font-style="italic">«San Guillermo»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#f5e060" font-style="italic" opacity="0.8">«Saint William»</text>
 </svg>

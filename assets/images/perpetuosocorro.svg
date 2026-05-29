@@ -1,0 +1,70 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="ps-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#080e1a"/><stop offset="100%" stop-color="#040810"/>
+    </radialGradient>
+    <linearGradient id="ps-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#3060c0" stop-opacity="1"/><stop offset="100%" stop-color="#102050" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="ps-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f5e060" stop-opacity="1"/><stop offset="100%" stop-color="#c9a84c" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="ps-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="ps-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#ps-bg)"/>
+  <rect width="400" height="600" fill="#102048" opacity="0.10"/>
+  <polygon points="198,265 -25,610 115,610" fill="url(#ps-r1)" filter="url(#ps-gl)" opacity="0.72"/>
+  <polygon points="198,265 20,600  85,600"  fill="#3060c0" opacity="0.36"/>
+  <polygon points="202,265 425,610 285,610" fill="url(#ps-r2)" filter="url(#ps-gl)" opacity="0.70"/>
+  <polygon points="202,265 375,600 315,600" fill="#f5e060" opacity="0.34"/>
+  <!-- Dark Byzantine mantle -->
+  <path d="M168,155 Q140,205 126,390 Q200,415 274,390 Q260,205 232,155 Z" fill="#1a2860" opacity="0.90"/>
+  <!-- Dark blue outer mantle -->
+  <path d="M168,155 Q124,192 108,318 Q122,330 148,312 Q150,228 178,168 Z" fill="#102048" opacity="0.88"/>
+  <path d="M232,155 Q260,198 270,318 Q290,322 296,300 Q286,198 248,158 Z" fill="#102048" opacity="0.80"/>
+  <!-- Gold ornate trim at edges -->
+  <path d="M168,155 Q124,192 108,318" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.45"/>
+  <path d="M232,155 Q260,198 270,318" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.40"/>
+  <!-- Left arm: holds Child Jesus figure -->
+  <path d="M140,215 Q120,258 112,298" stroke="#1a2860" stroke-width="17" fill="none" stroke-linecap="round" opacity="0.88"/>
+  <!-- Right arm: gestures downward (mercy) -->
+  <path d="M260,215 Q275,252 280,282" stroke="#102048" stroke-width="16" fill="none" stroke-linecap="round" opacity="0.82"/>
+  <!-- Hands -->
+  <ellipse cx="112" cy="301" rx="12" ry="15" fill="#c8a070" opacity="0.9"/>
+  <ellipse cx="280" cy="285" rx="12" ry="15" fill="#c8a070" opacity="0.9"/>
+  <!-- Child Jesus on left arm (Byzantine style, small scroll) -->
+  <ellipse cx="108" cy="322" rx="12" ry="15" fill="#c8a070" opacity="0.82"/>
+  <circle  cx="108" cy="307" r="8" fill="#c8a070" opacity="0.82"/>
+  <!-- Child halo -->
+  <circle  cx="108" cy="307" r="11" fill="none" stroke="#e8c97a" stroke-width="0.8" opacity="0.45"/>
+  <!-- Small scroll in Child's hand -->
+  <rect x="116" y="318" width="10" height="6" rx="2" fill="#f0e8d0" opacity="0.65"/>
+  <!-- Two small archangel shapes (Perpetual Help iconography) -->
+  <ellipse cx="72"  cy="185" rx="8" ry="12" fill="#c8b860" opacity="0.55"/>
+  <path d="M62,178 Q72,168 82,178 Q72,172 62,178 Z" fill="#c8b860" opacity="0.45"/>
+  <ellipse cx="328" cy="185" rx="8" ry="12" fill="#c8b860" opacity="0.55"/>
+  <path d="M318,178 Q328,168 338,178 Q328,172 318,178 Z" fill="#c8b860" opacity="0.45"/>
+  <!-- Dark blue/gold head covering (Byzantine Theotokos veil) -->
+  <path d="M168,155 Q142,142 136,126 Q152,112 176,118 Q184,135 188,152 Z" fill="#102048" opacity="0.92"/>
+  <path d="M232,155 Q258,142 264,126 Q248,112 224,118 Q216,135 212,152 Z" fill="#102048" opacity="0.88"/>
+  <!-- Gold star on veil -->
+  <circle cx="180" cy="130" r="4" fill="#e8c060" opacity="0.65"/>
+  <circle cx="220" cy="130" r="4" fill="#e8c060" opacity="0.65"/>
+  <!-- Neck + head -->
+  <rect x="193" y="142" width="14" height="16" rx="4" fill="#c8a070" opacity="0.9"/>
+  <ellipse cx="200" cy="108" rx="25" ry="29" fill="#c8a070" opacity="0.92"/>
+  <path d="M175,107 Q177,73 200,69 Q223,73 225,107 Q218,87 200,85 Q182,87 175,107 Z" fill="#9a7858" opacity="0.60"/>
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#ps-g2)"/>
+  <circle cx="200" cy="108" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#040810" opacity="0.86"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" fill="#c9a84c" letter-spacing="2" opacity="0.9">VIRGEN DEL PERPETUO SOCORRO  ·  OUR LADY OF PERPETUAL HELP</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="#80a0e8" font-style="italic">«Virgen del Perpetuo Socorro»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#f5e060" font-style="italic" opacity="0.8">«Our Lady of Perpetual Help»</text>
+</svg>

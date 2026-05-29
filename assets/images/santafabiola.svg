@@ -1,57 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
   <defs>
-    <radialGradient id="fab-bg" cx="50%" cy="38%" r="60%">
-      <stop offset="0%" stop-color="#1e0e00"/>
-      <stop offset="100%" stop-color="#0a0500"/>
+    <radialGradient id="stf-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#180e08"/><stop offset="100%" stop-color="#0c0804"/>
     </radialGradient>
-    <radialGradient id="fab-glow" cx="50%" cy="35%" r="48%">
-      <stop offset="0%" stop-color="rgba(200,120,30,0.22)"/>
-      <stop offset="100%" stop-color="rgba(200,120,30,0)"/>
-    </radialGradient>
+    <linearGradient id="stf-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#c06820" stop-opacity="1"/><stop offset="100%" stop-color="#603008" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="stf-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f5e060" stop-opacity="1"/><stop offset="100%" stop-color="#c9a84c" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="stf-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="stf-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
-
-  <!-- Background: warm amber-brown -->
-  <rect width="800" height="600" fill="url(#fab-bg)"/>
-  <rect width="800" height="600" fill="url(#fab-glow)"/>
-
-  <!-- Border -->
-  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#c87820" stroke-width="1" stroke-opacity="0.55"/>
-  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#c87820" stroke-width="0.5" stroke-opacity="0.25"/>
-
-  <!-- Side accent strips -->
-  <rect x="28" y="28" width="6" height="544" rx="3" fill="#8a5010" opacity="0.75"/>
-  <rect x="766" y="28" width="6" height="544" rx="3" fill="#8a5010" opacity="0.75"/>
-
-  <!-- Cross — large central symbol -->
-  <line x1="400" y1="120" x2="400" y2="450" stroke="#c87820" stroke-width="8" stroke-linecap="round" opacity="0.88"/>
-  <line x1="270" y1="220" x2="530" y2="220" stroke="#c87820" stroke-width="8" stroke-linecap="round" opacity="0.88"/>
-  <!-- Cross highlight -->
-  <line x1="400" y1="122" x2="400" y2="448" stroke="#f0c060" stroke-width="2" stroke-linecap="round" opacity="0.30"/>
-  <line x1="272" y1="220" x2="528" y2="220" stroke="#f0c060" stroke-width="2" stroke-linecap="round" opacity="0.30"/>
-
-  <!-- Oil lamp — symbol of charity -->
-  <!-- Lamp base -->
-  <ellipse cx="400" cy="370" rx="44" ry="14" fill="#8a5010" opacity="0.85"/>
-  <!-- Lamp body -->
-  <path d="M 358 370 Q 352 340 360 318 Q 368 300 400 295 Q 432 300 440 318 Q 448 340 442 370 Z" fill="#6a3808" stroke="#c87820" stroke-width="1.5" opacity="0.90"/>
-  <!-- Lamp spout -->
-  <path d="M 440 338 Q 468 330 475 318 Q 468 310 458 315 Q 452 328 442 330 Z" fill="#6a3808" stroke="#c87820" stroke-width="1" opacity="0.85"/>
-  <!-- Flame -->
-  <ellipse cx="475" cy="308" rx="7" ry="12" fill="#f0a030" opacity="0.9"/>
-  <ellipse cx="475" cy="304" rx="4" ry="7" fill="#ffe080" opacity="0.85"/>
-  <!-- Handle -->
-  <path d="M 358 355 Q 338 340 340 320 Q 342 305 358 310" fill="none" stroke="#c87820" stroke-width="3" stroke-linecap="round" opacity="0.75"/>
-
-  <!-- Decorative stars -->
-  <circle cx="160" cy="110" r="2" fill="#c87820" opacity="0.45"/>
-  <circle cx="640" cy="130" r="2" fill="#c87820" opacity="0.45"/>
-  <circle cx="185" cy="440" r="1.5" fill="#c87820" opacity="0.35"/>
-  <circle cx="615" cy="420" r="1.5" fill="#c87820" opacity="0.35"/>
-  <circle cx="200" cy="270" r="1.3" fill="#c87820" opacity="0.30"/>
-  <circle cx="600" cy="290" r="1.3" fill="#c87820" opacity="0.30"/>
-
-  <!-- Name text -->
-  <text x="400" y="498" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#e8c97a" letter-spacing="1">Santa Fabiola de Roma</text>
-  <text x="400" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#c9a84c" font-style="italic" opacity="0.85">Saint Fabiola of Rome</text>
-  <text x="400" y="546" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#7a5a30" letter-spacing="2.5">27 DE DIC · DEC 27</text>
+  <rect width="400" height="600" fill="url(#stf-bg)"/>
+  <rect width="400" height="600" fill="#602810" opacity="0.10"/>
+  <polygon points="198,265 -25,610 115,610" fill="url(#stf-r1)" filter="url(#stf-gl)" opacity="0.72"/>
+  <polygon points="198,265 20,600  85,600"  fill="#c06820" opacity="0.36"/>
+  <polygon points="202,265 425,610 285,610" fill="url(#stf-r2)" filter="url(#stf-gl)" opacity="0.70"/>
+  <polygon points="202,265 375,600 315,600" fill="#f5e060" opacity="0.34"/>
+  <!-- Rich Roman dress + red mantle (noble Roman matron) -->
+  <path d="M168,155 Q140,205 126,390 Q200,415 274,390 Q260,205 232,155 Z" fill="#c06820" opacity="0.82"/>
+  <!-- Red mantle -->
+  <path d="M168,155 Q124,192 108,318 Q122,330 148,312 Q150,228 178,168 Z" fill="#a04010" opacity="0.80"/>
+  <path d="M232,155 Q260,198 270,318 Q290,322 296,300 Q286,198 248,158 Z" fill="#a04010" opacity="0.75"/>
+  <!-- Both arms extended caring gesture (founder of hospitals) -->
+  <path d="M140,215 Q104,248 92,278" stroke="#c06820" stroke-width="17" fill="none" stroke-linecap="round" opacity="0.86"/>
+  <path d="M260,215 Q296,248 308,278" stroke="#a04010" stroke-width="16" fill="none" stroke-linecap="round" opacity="0.82"/>
+  <!-- Hands open/caring -->
+  <ellipse cx="91"  cy="281" rx="13" ry="16" fill="#c8a070" opacity="0.9"/>
+  <ellipse cx="309" cy="281" rx="13" ry="16" fill="#c8a070" opacity="0.9"/>
+  <!-- Small cross on garment -->
+  <line x1="200" y1="200" x2="200" y2="230" stroke="#f5e060" stroke-width="2.5" opacity="0.55"/>
+  <line x1="192" y1="212" x2="208" y2="212" stroke="#f5e060" stroke-width="2.5" opacity="0.55"/>
+  <!-- Head veil (Roman matron) -->
+  <path d="M168,155 Q142,142 136,128 Q152,114 176,120 Q184,136 188,152 Z" fill="#f0e8d8" opacity="0.82"/>
+  <path d="M232,155 Q258,142 264,128 Q248,114 224,120 Q216,136 212,152 Z" fill="#f0e8d8" opacity="0.78"/>
+  <!-- Neck + head (older woman) -->
+  <rect x="193" y="142" width="14" height="16" rx="4" fill="#c8a070" opacity="0.9"/>
+  <ellipse cx="200" cy="108" rx="26" ry="30" fill="#c8a070" opacity="0.92"/>
+  <path d="M174,107 Q176,72 200,68 Q224,72 226,107 Q219,86 200,84 Q181,86 174,107 Z" fill="#6a4820" opacity="0.78"/>
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#stf-g2)"/>
+  <circle cx="200" cy="108" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#0c0804" opacity="0.86"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">SANTA FABIOLA  ·  SAINT FABIOLA</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#f0a060" font-style="italic">«Santa Fabiola de Roma»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#f5e060" font-style="italic" opacity="0.8">«Saint Fabiola of Rome»</text>
 </svg>

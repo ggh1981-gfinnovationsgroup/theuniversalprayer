@@ -1,0 +1,106 @@
+﻿{
+  "id": "santaines",
+  "name": { "es": "Santa Inés de Roma", "en": "Saint Agnes of Rome" },
+  "color": "#8a1a5a",
+  "image": "assets/images/santaines.svg",
+  "specialty": { "es": "Pureza y jóvenes", "en": "Purity & youth" },
+  "shortPrayer": {
+    "es": "Santa Inés, virgen y mártir, guarda nuestra pureza.",
+    "en": "Saint Agnes, virgin and martyr, guard our purity."
+  },
+  "history": {
+    "es": "Inés nació en Roma hacia el año 291 en una familia noble cristiana. A los doce o trece años, fue pedida en matrimonio por el hijo del prefecto romano. Ella rechazó la propuesta, diciendo que se había consagrado a Cristo. Denunciada ante el prefecto, fue condenada a un burdel para ser deshonrada. Según la tradición, un ángel la protegió y nadie pudo tocarla. El hijo del prefecto intentó hacerle daño y cayó muerto, aunque Inés oró por él y fue resucitado. Finalmente fue ejecutada por decapitación hacia el año 304. Se la representa con un cordero blanco, símbolo de inocencia. Es patrona de las jóvenes, vírgenes y prometidas.",
+    "en": "Agnes was born in Rome around 291 to a noble Christian family. At age twelve or thirteen, she was proposed to by the son of the Roman prefect. She rejected the proposal, saying she had consecrated herself to Christ. Denounced before the prefect, she was condemned to a brothel to be dishonored. According to tradition, an angel protected her and no one could touch her. The prefect's son tried to harm her and fell dead, though Agnes prayed for him and he was revived. She was finally executed by beheading around 304. She is depicted with a white lamb, symbol of innocence. She is patron of young women, virgins, and engaged couples."
+  },
+  "novena": {
+    "title": { "es": "Novena a Santa Inés de Roma", "en": "Novena to Saint Agnes of Rome" },
+    "days": [
+      {
+        "day": 1,
+        "intention": { "es": "Por la pureza de corazón de los jóvenes", "en": "For the purity of heart of young people" },
+        "prayer": {
+          "es": "Santa Inés, que consagraste tu virginidad a Cristo a tan temprana edad, intercede por todos los jóvenes del mundo para que encuentren en Cristo el amor que sacia el corazón y que la pureza sea vista como don y no como carga. Amén.",
+          "en": "Saint Agnes, who consecrated your virginity to Christ at such a young age, intercede for all young people in the world that they may find in Christ the love that satisfies the heart and that purity may be seen as gift rather than burden. Amen."
+        }
+      },
+      {
+        "day": 2,
+        "intention": { "es": "Por la valentía ante la presión del mundo", "en": "For courage under the world's pressure" },
+        "prayer": {
+          "es": "Inés valerosa, que no cediste ante el poder ni ante las amenazas por vivir tu fe, intercede por todos los jóvenes que son presionados por la sociedad, sus amigos o sus familias a abandonar sus convicciones cristianas. Amén.",
+          "en": "Brave Agnes, who did not yield to power or threats for living your faith, intercede for all young people pressured by society, friends, or families to abandon their Christian convictions. Amen."
+        }
+      },
+      {
+        "day": 3,
+        "intention": { "es": "Por las prometidas y los noviazgos santos", "en": "For engaged couples and holy courtships" },
+        "prayer": {
+          "es": "Santa Inés, patrona de las prometidas, intercede por todos los noviazgos y compromisos matrimoniales para que estén fundados en el respeto, el amor puro y la búsqueda de Dios. Amén.",
+          "en": "Saint Agnes, patron of engaged women, intercede for all courtships and marriage engagements that they may be founded on respect, pure love, and the seeking of God. Amen."
+        }
+      },
+      {
+        "day": 4,
+        "intention": { "es": "Por los que sufren violencia y explotación", "en": "For those suffering violence and exploitation" },
+        "prayer": {
+          "es": "Santa Inés, que fuiste amenazada con la peor forma de violencia, intercede por todas las víctimas de abuso, explotación sexual y trata de personas. Que Dios las libere, las sane y las restaure en su dignidad. Amén.",
+          "en": "Saint Agnes, who were threatened with the worst form of violence, intercede for all victims of abuse, sexual exploitation, and human trafficking. May God free them, heal them, and restore their dignity. Amen."
+        }
+      },
+      {
+        "day": 5,
+        "intention": { "es": "Por la inocencia de los niños", "en": "For the innocence of children" },
+        "prayer": {
+          "es": "Dulce Inés, símbolo de inocencia representada con el blanco cordero, intercede por todos los niños del mundo. Que sean protegidos de todo mal y que crezcan en la gracia de Dios. Amén.",
+          "en": "Sweet Agnes, symbol of innocence depicted with the white lamb, intercede for all children in the world. May they be protected from all evil and grow in the grace of God. Amen."
+        }
+      },
+      {
+        "day": 6,
+        "intention": { "es": "Por los mártires de hoy", "en": "For today's martyrs" },
+        "prayer": {
+          "es": "Santa Inés mártir, que diste la vida antes de traicionar tu consagración a Cristo, intercede por todos los cristianos que hoy son perseguidos y martirizados por su fe en el mundo. Amén.",
+          "en": "Saint Agnes martyr, who gave your life before betraying your consecration to Christ, intercede for all Christians today who are persecuted and martyred for their faith in the world. Amen."
+        }
+      },
+      {
+        "day": 7,
+        "intention": { "es": "Por las religiosas consagradas", "en": "For consecrated religious women" },
+        "prayer": {
+          "es": "Santa Inés, primera entre las consagradas en Roma, intercede por todas las mujeres que han dado su vida a Dios en la vida consagrada. Que su entrega sea fecunda y su amor a Cristo sea testimonio luminoso. Amén.",
+          "en": "Saint Agnes, first among the consecrated in Rome, intercede for all women who have given their lives to God in consecrated life. May their gift be fruitful and their love for Christ be a luminous witness. Amen."
+        }
+      },
+      {
+        "day": 8,
+        "intention": { "es": "Por el perdón de los enemigos", "en": "For forgiveness of enemies" },
+        "prayer": {
+          "es": "Santa Inés misericordiosa, que intercediste por el hijo del prefecto y fue resucitado, enséñanos a orar por los que nos hacen daño y a responder al mal con la fuerza del bien. Amén.",
+          "en": "Merciful Saint Agnes, who interceded for the prefect's son and he was revived, teach us to pray for those who harm us and to respond to evil with the strength of good. Amen."
+        }
+      },
+      {
+        "day": 9,
+        "intention": { "es": "Por vivir consagrados a Cristo en el mundo", "en": "For living consecrated to Christ in the world" },
+        "prayer": {
+          "es": "Santa Inés, que siendo una adolescente viviste con la nobleza de quien pertenece totalmente a Cristo, intercede para que todos los bautizados, en el lugar donde estamos, vivamos como perteneciendo enteramente a Dios. Amén.",
+          "en": "Saint Agnes, who as a teenager lived with the nobility of one who belongs totally to Christ, intercede that all the baptized, wherever we are, may live as belonging entirely to God. Amen."
+        }
+      }
+    ]
+  },
+  "litany": {
+    "title": { "es": "Letanía de Santa Inés", "en": "Litany of Saint Agnes" },
+    "invocations": [
+      { "es": "Santa Inés, virgen y mártir,", "en": "Saint Agnes, virgin and martyr," },
+      { "es": "Santa Inés, esposa de Cristo,", "en": "Saint Agnes, spouse of Christ," },
+      { "es": "Santa Inés, modelo de pureza,", "en": "Saint Agnes, model of purity," },
+      { "es": "Santa Inés, valiente ante los tiranos,", "en": "Saint Agnes, brave before tyrants," },
+      { "es": "Santa Inés, protectora de las jóvenes,", "en": "Saint Agnes, protector of young women," },
+      { "es": "Santa Inés, patrona de las prometidas,", "en": "Saint Agnes, patron of engaged women," },
+      { "es": "Santa Inés, símbolo de inocencia,", "en": "Saint Agnes, symbol of innocence," },
+      { "es": "Santa Inés, mártir de doce años,", "en": "Saint Agnes, martyr of twelve years," }
+    ],
+    "response": { "es": "Ruega por nosotros.", "en": "Pray for us." }
+  }
+}

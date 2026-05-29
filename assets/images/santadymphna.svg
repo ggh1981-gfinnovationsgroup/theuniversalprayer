@@ -1,136 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
   <defs>
-    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
-      <stop offset="0%" stop-color="#2a1050"/>
-      <stop offset="100%" stop-color="#0d0518"/>
+    <radialGradient id="std-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#0e0818"/><stop offset="100%" stop-color="#080410"/>
     </radialGradient>
-    <radialGradient id="glowHalo" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#9b6dcc" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#4a2a7a" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="robeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#e8e0f0"/>
-      <stop offset="100%" stop-color="#c8bce0"/>
+    <linearGradient id="std-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#8858c8" stop-opacity="1"/><stop offset="100%" stop-color="#3a1860" stop-opacity="0.4"/>
     </linearGradient>
-    <linearGradient id="mantleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#5a3090"/>
-      <stop offset="100%" stop-color="#3a1a68"/>
+    <linearGradient id="std-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#e0e0ff" stop-opacity="1"/><stop offset="100%" stop-color="#a0a0e0" stop-opacity="0.4"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <filter id="std-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="std-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
-
-  <!-- Background -->
-  <rect width="400" height="500" fill="url(#bgGrad)"/>
-
-  <!-- Subtle cross pattern in background -->
-  <line x1="200" y1="20" x2="200" y2="480" stroke="#3a1a68" stroke-width="1" opacity="0.3"/>
-  <line x1="20" y1="250" x2="380" y2="250" stroke="#3a1a68" stroke-width="1" opacity="0.3"/>
-
-  <!-- Halo glow -->
-  <ellipse cx="200" cy="145" rx="70" ry="70" fill="url(#glowHalo)"/>
-
-  <!-- Halo ring -->
-  <circle cx="200" cy="145" r="58" fill="none" stroke="#c9a84c" stroke-width="2" opacity="0.8" filter="url(#glow)"/>
-  <circle cx="200" cy="145" r="54" fill="none" stroke="#c9a84c" stroke-width="0.5" opacity="0.4"/>
-
-  <!-- Crown (martyr crown) -->
-  <g transform="translate(200,93)" opacity="0.95">
-    <path d="M-30,0 L-22,-18 L-10,-8 L0,-22 L10,-8 L22,-18 L30,0 Z" fill="#c9a84c"/>
-    <rect x="-30" y="0" width="60" height="10" rx="2" fill="#c9a84c"/>
-    <!-- Crown gems -->
-    <circle cx="-10" cy="-6" r="3" fill="#9b6dcc"/>
-    <circle cx="0" cy="-12" r="3.5" fill="#e8e0f0"/>
-    <circle cx="10" cy="-6" r="3" fill="#9b6dcc"/>
-  </g>
-
-  <!-- Face area -->
-  <ellipse cx="200" cy="145" rx="40" ry="46" fill="#f5e8d8"/>
-
-  <!-- Simple peaceful face features -->
-  <ellipse cx="188" cy="138" rx="5" ry="6" fill="#3a1a68" opacity="0.7"/>
-  <ellipse cx="212" cy="138" rx="5" ry="6" fill="#3a1a68" opacity="0.7"/>
-  <!-- Peaceful closed eyes (downcast, serene) -->
-  <path d="M183,138 Q188,143 193,138" fill="none" stroke="#3a1a68" stroke-width="1.5" opacity="0.8"/>
-  <path d="M207,138 Q212,143 217,138" fill="none" stroke="#3a1a68" stroke-width="1.5" opacity="0.8"/>
-  <!-- Nose -->
-  <path d="M200,146 Q198,152 196,154 Q200,156 204,154 Q202,152 200,146" fill="none" stroke="#c4956a" stroke-width="1" opacity="0.6"/>
-  <!-- Gentle smile -->
-  <path d="M194,162 Q200,167 206,162" fill="none" stroke="#c4956a" stroke-width="1.5" opacity="0.7"/>
-
-  <!-- Hair (long, flowing slightly) -->
-  <ellipse cx="200" cy="120" rx="42" ry="20" fill="#4a2a10"/>
-  <path d="M158,130 Q150,200 160,280" fill="none" stroke="#3a1a08" stroke-width="14" stroke-linecap="round" opacity="0.8"/>
-  <path d="M242,130 Q250,200 240,280" fill="none" stroke="#3a1a08" stroke-width="14" stroke-linecap="round" opacity="0.8"/>
-
-  <!-- Body / White robe -->
-  <path d="M155,185 Q145,220 140,340 L260,340 Q255,220 245,185 Z" fill="url(#robeGrad)"/>
-
-  <!-- Purple/violet mantle -->
-  <path d="M160,185 Q130,210 120,360 L165,360 Q155,280 165,230 Z" fill="url(#mantleGrad)"/>
-  <path d="M240,185 Q270,210 280,360 L235,360 Q245,280 235,230 Z" fill="url(#mantleGrad)"/>
-  <!-- Mantle over shoulders -->
-  <path d="M160,185 Q200,195 240,185 Q230,175 200,178 Q170,175 160,185 Z" fill="#5a3090"/>
-
-  <!-- Neck -->
-  <rect x="190" y="178" width="20" height="15" rx="4" fill="#f5e8d8"/>
-
-  <!-- LEFT HAND: Lily (symbol of purity) -->
-  <g transform="translate(128,285)">
-    <!-- Stem -->
-    <line x1="0" y1="60" x2="0" y2="0" stroke="#3a7a2a" stroke-width="2"/>
-    <!-- Leaves -->
-    <ellipse cx="-8" cy="40" rx="10" ry="5" fill="#3a7a2a" transform="rotate(-30,-8,40)"/>
-    <ellipse cx="8" cy="28" rx="10" ry="5" fill="#3a7a2a" transform="rotate(30,8,28)"/>
-    <!-- Lily flower -->
-    <ellipse cx="0" cy="-6" rx="7" ry="15" fill="white" transform="rotate(-15)"/>
-    <ellipse cx="0" cy="-6" rx="7" ry="15" fill="white" transform="rotate(15)"/>
-    <ellipse cx="0" cy="-8" rx="7" ry="15" fill="white"/>
-    <!-- Stamen -->
-    <line x1="0" y1="-18" x2="-4" y2="-28" stroke="#c9a84c" stroke-width="1.5"/>
-    <line x1="0" y1="-18" x2="0" y2="-30" stroke="#c9a84c" stroke-width="1.5"/>
-    <line x1="0" y1="-18" x2="4" y2="-28" stroke="#c9a84c" stroke-width="1.5"/>
-    <circle cx="-4" cy="-28" r="2" fill="#c9a84c"/>
-    <circle cx="0" cy="-30" r="2" fill="#c9a84c"/>
-    <circle cx="4" cy="-28" r="2" fill="#c9a84c"/>
-  </g>
-
-  <!-- LEFT ARM holding lily -->
-  <path d="M155,210 Q140,255 130,300" fill="none" stroke="#e8e0f0" stroke-width="22" stroke-linecap="round" opacity="0.9"/>
-  <path d="M155,210 Q140,255 130,300" fill="none" stroke="#c8bce0" stroke-width="20" stroke-linecap="round"/>
-
-  <!-- RIGHT HAND: Palm branch (martyrdom) -->
-  <g transform="translate(262,270)">
-    <!-- Main stem -->
-    <path d="M10,65 Q5,30 0,0" fill="none" stroke="#5a7a2a" stroke-width="2.5"/>
-    <!-- Palm fronds -->
-    <path d="M5,50 Q-12,42 -15,30" fill="none" stroke="#4a6a1a" stroke-width="2"/>
-    <path d="M6,42 Q-10,30 -10,18" fill="none" stroke="#4a6a1a" stroke-width="2"/>
-    <path d="M5,34 Q-8,22 -6,10" fill="none" stroke="#4a6a1a" stroke-width="2"/>
-    <path d="M4,26 Q-4,15 0,5" fill="none" stroke="#4a6a1a" stroke-width="2"/>
-    <path d="M5,50 Q22,42 25,30" fill="none" stroke="#4a6a1a" stroke-width="2"/>
-    <path d="M6,42 Q20,30 20,18" fill="none" stroke="#4a6a1a" stroke-width="2"/>
-    <path d="M5,34 Q16,22 14,10" fill="none" stroke="#4a6a1a" stroke-width="2"/>
-    <path d="M4,26 Q12,15 8,5" fill="none" stroke="#4a6a1a" stroke-width="2"/>
-  </g>
-
-  <!-- RIGHT ARM holding palm -->
-  <path d="M245,210 Q260,255 268,295" fill="none" stroke="#e8e0f0" stroke-width="22" stroke-linecap="round" opacity="0.9"/>
-  <path d="M245,210 Q260,255 268,295" fill="none" stroke="#c8bce0" stroke-width="20" stroke-linecap="round"/>
-
-  <!-- Decorative stars -->
-  <g filter="url(#glow)" opacity="0.7">
-    <text x="60" y="190" font-size="14" fill="#c9a84c">✦</text>
-    <text x="318" y="170" font-size="12" fill="#c9a84c">✦</text>
-    <text x="75" y="390" font-size="10" fill="#9b6dcc">✦</text>
-    <text x="305" y="400" font-size="11" fill="#9b6dcc">✦</text>
-  </g>
-
-  <!-- Bottom label -->
-  <rect x="60" y="430" width="280" height="62" rx="6" fill="#1a0a30" opacity="0.85"/>
-  <text x="200" y="447" text-anchor="middle" font-family="'Palatino Linotype', Georgia, serif" font-size="13" fill="#c9a84c" letter-spacing="2">SANTA DYMPHNA</text>
-  <text x="200" y="463" text-anchor="middle" font-family="'Palatino Linotype', Georgia, serif" font-size="9.5" fill="#9b6dcc" letter-spacing="0.8">PATRONA DE LA SALUD MENTAL · 15 MAYO</text>
-  <text x="200" y="478" text-anchor="middle" font-family="'Palatino Linotype', Georgia, serif" font-size="8.5" fill="#9b6dcc" letter-spacing="0.5" font-style="italic" opacity="0.75">Patron of Mental Health · May 15</text>
+  <rect width="400" height="600" fill="url(#std-bg)"/>
+  <rect width="400" height="600" fill="#381860" opacity="0.10"/>
+  <polygon points="198,265 -25,610 115,610" fill="url(#std-r1)" filter="url(#std-gl)" opacity="0.72"/>
+  <polygon points="198,265 20,600  85,600"  fill="#8858c8" opacity="0.36"/>
+  <polygon points="202,265 425,610 285,610" fill="url(#std-r2)" filter="url(#std-gl)" opacity="0.68"/>
+  <polygon points="202,265 375,600 315,600" fill="#e0e0ff" opacity="0.32"/>
+  <!-- White dress -->
+  <path d="M168,155 Q140,205 126,390 Q200,415 274,390 Q260,205 232,155 Z" fill="#f0ece0" opacity="0.90"/>
+  <!-- Lilac mantle -->
+  <path d="M168,155 Q124,192 108,318 Q122,330 148,312 Q150,228 178,168 Z" fill="#8858c8" opacity="0.65"/>
+  <path d="M232,155 Q260,198 270,318 Q290,322 296,300 Q286,198 248,158 Z" fill="#8858c8" opacity="0.58"/>
+  <!-- Left arm with lily -->
+  <path d="M140,215 Q112,252 104,294" stroke="#f0ece0" stroke-width="17" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <!-- Right arm with palm branch + small sword (martyr) -->
+  <path d="M260,215 Q285,252 292,292" stroke="#8858c8" stroke-width="16" fill="none" stroke-linecap="round" opacity="0.80"/>
+  <!-- Hands -->
+  <ellipse cx="104" cy="297" rx="12" ry="15" fill="#d4b090" opacity="0.9"/>
+  <ellipse cx="292" cy="296" rx="12" ry="15" fill="#d4b090" opacity="0.9"/>
+  <!-- Lily (left) -->
+  <line x1="104" y1="297" x2="104" y2="240" stroke="#7aaa40" stroke-width="2.5" opacity="0.8"/>
+  <ellipse cx="104" cy="236" rx="6" ry="10" fill="#f8f4e8" opacity="0.88"/>
+  <!-- Palm branch (right) -->
+  <path d="M292,296 Q285,272 280,250" stroke="#6aaa30" stroke-width="3" fill="none" opacity="0.78"/>
+  <!-- Crown (Dymphna was princess) -->
+  <path d="M178,80 L185,70 L192,78 L200,68 L208,78 L215,70 L222,80" fill="none" stroke="#c9a84c" stroke-width="2" opacity="0.75"/>
+  <path d="M178,80 L222,80" stroke="#c9a84c" stroke-width="1.5" opacity="0.65"/>
+  <!-- White veil -->
+  <path d="M168,155 Q142,142 136,126 Q152,112 176,118 Q184,135 188,152 Z" fill="#f0ece0" opacity="0.90"/>
+  <path d="M232,155 Q258,142 264,126 Q248,112 224,118 Q216,135 212,152 Z" fill="#f0ece0" opacity="0.86"/>
+  <!-- Neck + head -->
+  <rect x="193" y="142" width="14" height="16" rx="4" fill="#d4b090" opacity="0.9"/>
+  <ellipse cx="200" cy="108" rx="25" ry="29" fill="#d4b090" opacity="0.92"/>
+  <path d="M175,107 Q177,73 200,69 Q223,73 225,107 Q218,87 200,85 Q182,87 175,107 Z" fill="#9a7858" opacity="0.60"/>
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#std-g2)"/>
+  <circle cx="200" cy="108" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#080410" opacity="0.86"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">SANTA DYMPHNA  ·  SAINT DYMPHNA</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#c090f0" font-style="italic">«Santa Dymphna, Patrona de la Salud Mental»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#e0e0ff" font-style="italic" opacity="0.8">«Saint Dymphna, Patron of Mental Health»</text>
 </svg>

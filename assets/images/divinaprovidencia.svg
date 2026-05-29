@@ -1,94 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
   <defs>
-    <radialGradient id="dpBg" cx="50%" cy="42%" r="62%">
-      <stop offset="0%" stop-color="#1a1200"/>
-      <stop offset="100%" stop-color="#080600"/>
+    <radialGradient id="dp-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#141008"/><stop offset="100%" stop-color="#080600"/>
     </radialGradient>
-    <radialGradient id="dpGlow" cx="50%" cy="38%" r="50%">
-      <stop offset="0%" stop-color="rgba(212,175,55,0.30)"/>
-      <stop offset="100%" stop-color="rgba(212,175,55,0)"/>
+    <radialGradient id="dp-atm" cx="50%" cy="38%" r="46%">
+      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.28"/><stop offset="100%" stop-color="#16a085" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="dpGlow2" cx="50%" cy="38%" r="28%">
-      <stop offset="0%" stop-color="rgba(248,220,100,0.28)"/>
-      <stop offset="100%" stop-color="rgba(248,220,100,0)"/>
-    </radialGradient>
+    <linearGradient id="dp-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#e8c050" stop-opacity="1"/><stop offset="100%" stop-color="#8a6000" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="dp-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#50d8b0" stop-opacity="1"/><stop offset="100%" stop-color="#16a085" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="dp-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="dp-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
-
-  <!-- Background -->
-  <rect width="800" height="600" fill="url(#dpBg)"/>
-  <rect width="800" height="600" fill="url(#dpGlow)"/>
-  <rect width="800" height="600" fill="url(#dpGlow2)"/>
-
-  <!-- Accent strips: gold + warm amber -->
-  <rect x="0"   y="0" width="7" height="600" fill="#d4af37" opacity="0.75"/>
-  <rect x="7"   y="0" width="3" height="600" fill="#f5e06a" opacity="0.35"/>
-  <rect x="790" y="0" width="7" height="600" fill="#d4af37" opacity="0.75"/>
-  <rect x="787" y="0" width="3" height="600" fill="#f5e06a" opacity="0.35"/>
-
-  <!-- Radiating gold rays (Divine Providence light) -->
-  <g opacity="0.14" fill="#d4af37">
-    <polygon points="400,310 370,90  400,110 430,90"/>
-    <polygon points="400,310 590,260 578,288 592,316"/>
-    <polygon points="400,310 430,515 400,495 370,515"/>
-    <polygon points="400,310 210,360 222,332 208,304"/>
-    <polygon points="400,310 545,130 548,165 578,148"/>
-    <polygon points="400,310 568,470 538,460 555,488"/>
-    <polygon points="400,310 258,468 272,440 245,445"/>
-    <polygon points="400,310 232,152 252,175 228,192"/>
-  </g>
-  <g opacity="0.09" fill="#f5e06a">
-    <polygon points="400,310 385,80  400,100 415,80"/>
-    <polygon points="400,310 600,285 590,305 605,325"/>
-    <polygon points="400,310 415,530 400,510 385,530"/>
-    <polygon points="400,310 200,335 212,315 198,295"/>
-  </g>
-
-  <!-- Outer golden halo ring -->
-  <circle cx="400" cy="290" r="148" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.30"/>
-  <circle cx="400" cy="290" r="130" fill="none" stroke="#d4af37" stroke-width="1" opacity="0.18"/>
-
-  <!-- Mother silhouette — robed figure holding child -->
-  <!-- Outer robe / mantle -->
-  <path d="M 400 160 C 355 160 315 185 290 220 C 265 255 255 295 255 335 C 255 375 268 415 290 445 L 510 445 C 532 415 545 375 545 335 C 545 295 535 255 510 220 C 485 185 445 160 400 160 Z"
-        fill="#d4af37" opacity="0.70"/>
-  <!-- Inner dress -->
-  <path d="M 400 165 C 362 165 328 188 307 220 C 286 253 278 292 278 330 C 278 368 290 408 310 438 L 490 438 C 510 408 522 368 522 330 C 522 292 514 253 493 220 C 472 188 438 165 400 165 Z"
-        fill="#f5e06a" opacity="0.40"/>
-
-  <!-- Head with halo -->
-  <circle cx="400" cy="152" r="42" fill="#d4af37" opacity="0.75"/>
-  <circle cx="400" cy="152" r="35" fill="#f5e095" opacity="0.55"/>
-  <!-- Face suggestion (very minimal) -->
-  <circle cx="400" cy="152" r="28" fill="#c8a060" opacity="0.70"/>
-  <!-- Halo ring -->
-  <circle cx="400" cy="152" r="50" fill="none" stroke="#f5e06a" stroke-width="2.5" opacity="0.55"/>
-  <circle cx="400" cy="152" r="54" fill="none" stroke="#d4af37" stroke-width="1.5" opacity="0.35"/>
-
-  <!-- Arms cradling child -->
-  <path d="M 330 270 C 315 285 308 305 315 325 C 322 345 345 355 365 360 L 435 360 C 455 355 478 345 485 325 C 492 305 485 285 470 270 C 455 255 435 250 415 255 L 385 255 C 365 250 345 255 330 270 Z"
-        fill="#d4af37" opacity="0.65"/>
-
-  <!-- Baby / Child Jesus in arms -->
-  <circle cx="400" cy="300" r="32" fill="#f5e095" opacity="0.80"/>
-  <circle cx="400" cy="295" r="22" fill="#e8c870" opacity="0.70"/>
-  <!-- Baby halo -->
-  <circle cx="400" cy="295" r="30" fill="none" stroke="#f5e06a" stroke-width="1.5" opacity="0.50"/>
-  <!-- Tiny cross over baby -->
-  <line x1="400" y1="280" x2="400" y2="312" stroke="#d4af37" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
-  <line x1="386" y1="294" x2="414" y2="294" stroke="#d4af37" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
-
-  <!-- Small stars scattered -->
-  <circle cx="160" cy="130" r="2"   fill="#f5e06a" opacity="0.5"/>
-  <circle cx="215" cy="80"  r="1.5" fill="#f5e06a" opacity="0.4"/>
-  <circle cx="630" cy="118" r="2"   fill="#f5e06a" opacity="0.5"/>
-  <circle cx="665" cy="185" r="1.5" fill="#f5e06a" opacity="0.4"/>
-  <circle cx="140" cy="400" r="1.8" fill="#d4af37" opacity="0.4"/>
-  <circle cx="660" cy="405" r="1.8" fill="#d4af37" opacity="0.4"/>
-  <circle cx="185" cy="500" r="1.4" fill="#d4af37" opacity="0.35"/>
-  <circle cx="615" cy="490" r="1.4" fill="#d4af37" opacity="0.35"/>
-
-  <!-- Name + Feast day -->
-  <text x="400" y="528" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#e8c97a" letter-spacing="1">Divina Providencia</text>
-  <text x="400" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#c9a84c" font-style="italic" opacity="0.85">Divine Providence</text>
-  <text x="400" y="574" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#7a6020" letter-spacing="2.5">19 DE NOVIEMBRE · NOVEMBER 19</text>
+  <rect width="400" height="600" fill="url(#dp-bg)"/>
+  <rect width="400" height="600" fill="url(#dp-atm)"/>
+  <!-- Rays: gold left, teal right -->
+  <polygon points="198,262 -25,610 115,610" fill="url(#dp-r1)" filter="url(#dp-gl)" opacity="0.75"/>
+  <polygon points="198,262 20,600  85,600"  fill="#e8c050" opacity="0.40"/>
+  <polygon points="202,262 425,610 285,610" fill="url(#dp-r2)" filter="url(#dp-gl)" opacity="0.72"/>
+  <polygon points="202,262 375,600 315,600" fill="#50d8b0" opacity="0.36"/>
+  <!-- White robe -->
+  <path d="M168,155 Q140,205 126,388 Q200,412 274,388 Q260,205 232,155 Z" fill="#f8f4e8" opacity="0.88"/>
+  <!-- Teal mantle left -->
+  <path d="M168,155 Q122,192 106,318 Q120,330 146,312 Q150,228 178,168 Z" fill="#16a085" opacity="0.82"/>
+  <!-- Teal mantle right -->
+  <path d="M232,155 Q260,200 270,318 Q290,322 296,300 Q288,200 248,158 Z" fill="#16a085" opacity="0.76"/>
+  <!-- Arms slightly open -->
+  <path d="M138,212 Q110,252 100,292" stroke="#f8f4e8" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.84"/>
+  <path d="M262,212 Q290,252 300,292" stroke="#16a085" stroke-width="16" fill="none" stroke-linecap="round" opacity="0.78"/>
+  <!-- Hands -->
+  <ellipse cx="98"  cy="297" rx="13" ry="16" fill="#d4a06a" opacity="0.9"/>
+  <ellipse cx="301" cy="297" rx="13" ry="16" fill="#d4a06a" opacity="0.9"/>
+  <!-- Child Jesus in arms (small figure) -->
+  <ellipse cx="88" cy="290" rx="8" ry="9" fill="#d4a06a" opacity="0.85"/>
+  <circle  cx="88" cy="280" r="7"          fill="#d4a06a" opacity="0.82"/>
+  <circle  cx="88" cy="280" r="10" fill="none" stroke="#e8c97a" stroke-width="1" stroke-opacity="0.5"/>
+  <!-- Neck -->
+  <rect x="193" y="142" width="14" height="18" rx="4" fill="#d4a06a" opacity="0.9"/>
+  <!-- Head (Mary) -->
+  <ellipse cx="200" cy="110" rx="26" ry="30" fill="#d4a06a" opacity="0.92"/>
+  <!-- Veil (teal) -->
+  <path d="M174,100 Q172,65 200,60 Q228,65 226,100 Q220,78 200,76 Q180,78 174,100 Z" fill="#16a085" opacity="0.86"/>
+  <path d="M174,100 Q154,128 150,168 L168,155 Z" fill="#16a085" opacity="0.78"/>
+  <path d="M226,100 Q246,128 250,168 L232,155 Z" fill="#16a085" opacity="0.72"/>
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="52" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.62" filter="url(#dp-g2)"/>
+  <circle cx="200" cy="108" r="46" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Stars -->
+  <text x="145" y="200" font-family="Arial" font-size="9" fill="#e8c97a" opacity="0.7">★</text>
+  <text x="248" y="215" font-family="Arial" font-size="8" fill="#e8c97a" opacity="0.65">★</text>
+  <text x="132" y="260" font-family="Arial" font-size="8" fill="#e8c97a" opacity="0.6">★</text>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#080600" opacity="0.86"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="547" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" fill="#c9a84c" letter-spacing="2" opacity="0.9">NTRA. SRA. DIVINA PROVIDENCIA  ·  OUR LADY OF DIVINE PROVIDENCE</text>
+  <text x="200" y="566" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="#f5e060" font-style="italic">«Nuestra Señora de la Divina Providencia»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#50d8b0" font-style="italic" opacity="0.8">«Our Lady of Divine Providence»</text>
 </svg>

@@ -1,77 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
   <defs>
-    <radialGradient id="bren-bg" cx="50%" cy="38%" r="60%">
-      <stop offset="0%" stop-color="#00101e"/>
-      <stop offset="100%" stop-color="#000508"/>
+    <radialGradient id="sb-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#071018"/><stop offset="100%" stop-color="#040810"/>
     </radialGradient>
-    <radialGradient id="bren-glow" cx="50%" cy="50%" r="55%">
-      <stop offset="0%" stop-color="rgba(10,80,160,0.22)"/>
-      <stop offset="100%" stop-color="rgba(10,80,160,0)"/>
-    </radialGradient>
+    <linearGradient id="sb-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#2870c8" stop-opacity="1"/><stop offset="100%" stop-color="#082050" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="sb-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#40d0c8" stop-opacity="1"/><stop offset="100%" stop-color="#1090a0" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="sb-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sb-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
-
-  <!-- Background: ocean night blue -->
-  <rect width="800" height="600" fill="url(#bren-bg)"/>
-  <rect width="800" height="600" fill="url(#bren-glow)"/>
-
-  <!-- Border -->
-  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#2a6aaa" stroke-width="1" stroke-opacity="0.55"/>
-  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#2a6aaa" stroke-width="0.5" stroke-opacity="0.25"/>
-
-  <!-- Side accent strips -->
-  <rect x="28" y="28" width="6" height="544" rx="3" fill="#1a4a6a" opacity="0.75"/>
-  <rect x="766" y="28" width="6" height="544" rx="3" fill="#1a4a6a" opacity="0.75"/>
-
-  <!-- Ocean waves -->
-  <path d="M 60 420 Q 100 400 140 420 Q 180 440 220 420 Q 260 400 300 420 Q 340 440 380 420 Q 420 400 460 420 Q 500 440 540 420 Q 580 400 620 420 Q 660 440 700 420 Q 730 410 750 420" fill="none" stroke="#2a6aaa" stroke-width="2" opacity="0.60"/>
-  <path d="M 60 440 Q 100 420 140 440 Q 180 460 220 440 Q 260 420 300 440 Q 340 460 380 440 Q 420 420 460 440 Q 500 460 540 440 Q 580 420 620 440 Q 660 460 700 440 Q 730 430 750 440" fill="none" stroke="#2a6aaa" stroke-width="1.5" opacity="0.45"/>
-  <path d="M 60 460 Q 100 440 140 460 Q 180 480 220 460 Q 260 440 300 460 Q 340 480 380 460 Q 420 440 460 460 Q 500 480 540 460 Q 580 440 620 460 Q 660 480 700 460 Q 730 450 750 460" fill="none" stroke="#2a6aaa" stroke-width="1.2" opacity="0.30"/>
-
-  <!-- Curragh — leather boat -->
-  <!-- Hull -->
-  <path d="M 270 380 Q 300 410 400 415 Q 500 410 530 380 Q 510 375 400 378 Q 290 375 270 380 Z" fill="#4a2a10" stroke="#8a5020" stroke-width="1.5" opacity="0.90"/>
-  <!-- Prow curve left -->
-  <path d="M 270 380 Q 258 370 260 355 Q 268 345 285 358 Q 290 368 300 375" fill="#4a2a10" stroke="#8a5020" stroke-width="1.5" opacity="0.88"/>
-  <!-- Stern curve right -->
-  <path d="M 530 380 Q 542 370 540 355 Q 532 345 515 358 Q 510 368 500 375" fill="#4a2a10" stroke="#8a5020" stroke-width="1.5" opacity="0.88"/>
-  <!-- Hull ribs (leather framework) -->
-  <line x1="320" y1="378" x2="320" y2="412" stroke="#8a5020" stroke-width="1" opacity="0.50"/>
-  <line x1="360" y1="378" x2="360" y2="414" stroke="#8a5020" stroke-width="1" opacity="0.50"/>
-  <line x1="400" y1="378" x2="400" y2="415" stroke="#8a5020" stroke-width="1" opacity="0.50"/>
-  <line x1="440" y1="378" x2="440" y2="414" stroke="#8a5020" stroke-width="1" opacity="0.50"/>
-  <line x1="480" y1="378" x2="480" y2="412" stroke="#8a5020" stroke-width="1" opacity="0.50"/>
-
-  <!-- Mast -->
-  <line x1="400" y1="378" x2="400" y2="220" stroke="#6a4020" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
-  <!-- Crossbar -->
-  <line x1="340" y1="248" x2="460" y2="248" stroke="#6a4020" stroke-width="3" stroke-linecap="round" opacity="0.80"/>
-
-  <!-- Sail with cross -->
-  <path d="M 345 248 L 345 350 L 455 350 L 455 248 Z" fill="#e8d8b0" opacity="0.80" stroke="#8a5020" stroke-width="1"/>
-  <!-- Cross on sail -->
-  <line x1="400" y1="255" x2="400" y2="345" stroke="#8a1a1a" stroke-width="3" opacity="0.85"/>
-  <line x1="355" y1="290" x2="445" y2="290" stroke="#8a1a1a" stroke-width="3" opacity="0.85"/>
-
-  <!-- Stars in night sky -->
-  <circle cx="160" cy="100" r="2.5" fill="#c9a84c" opacity="0.75"/>
-  <circle cx="640" cy="120" r="2.5" fill="#c9a84c" opacity="0.75"/>
-  <circle cx="220" cy="145" r="1.8" fill="#e8e8ff" opacity="0.55"/>
-  <circle cx="580" cy="90" r="1.8" fill="#e8e8ff" opacity="0.55"/>
-  <circle cx="300" cy="105" r="1.5" fill="#e8e8ff" opacity="0.45"/>
-  <circle cx="500" cy="140" r="1.5" fill="#e8e8ff" opacity="0.45"/>
-  <circle cx="180" cy="200" r="1.2" fill="#2a6aaa" opacity="0.50"/>
-  <circle cx="620" cy="220" r="1.2" fill="#2a6aaa" opacity="0.50"/>
-  <circle cx="130" cy="300" r="1.3" fill="#2a6aaa" opacity="0.35"/>
-  <circle cx="670" cy="280" r="1.3" fill="#2a6aaa" opacity="0.35"/>
-  <!-- North Star (guiding star) larger -->
-  <circle cx="400" cy="75" r="4" fill="#e8c97a" opacity="0.85"/>
-  <line x1="400" y1="62" x2="400" y2="55" stroke="#e8c97a" stroke-width="1.5" opacity="0.60"/>
-  <line x1="400" y1="88" x2="400" y2="95" stroke="#e8c97a" stroke-width="1.5" opacity="0.60"/>
-  <line x1="387" y1="75" x2="380" y2="75" stroke="#e8c97a" stroke-width="1.5" opacity="0.60"/>
-  <line x1="413" y1="75" x2="420" y2="75" stroke="#e8c97a" stroke-width="1.5" opacity="0.60"/>
-
-  <!-- Name text -->
-  <text x="400" y="498" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#e8c97a" letter-spacing="1">San Brendán Navegante</text>
-  <text x="400" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#c9a84c" font-style="italic" opacity="0.85">Saint Brendan the Navigator</text>
-  <text x="400" y="546" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#2a4a6a" letter-spacing="2.5">16 DE MAY · MAY 16</text>
+  <rect width="400" height="600" fill="url(#sb-bg)"/>
+  <rect width="400" height="600" fill="#104060" opacity="0.12"/>
+  <polygon points="198,265 -25,610 115,610" fill="url(#sb-r1)" filter="url(#sb-gl)" opacity="0.72"/>
+  <polygon points="198,265 20,600  85,600"  fill="#2870c8" opacity="0.36"/>
+  <polygon points="202,265 425,610 285,610" fill="url(#sb-r2)" filter="url(#sb-gl)" opacity="0.68"/>
+  <polygon points="202,265 375,600 315,600" fill="#40d0c8" opacity="0.34"/>
+  <!-- Blue monastic habit -->
+  <path d="M168,155 Q140,205 126,390 Q200,415 274,390 Q260,205 232,155 Z" fill="#1a4a88" opacity="0.84"/>
+  <!-- Darker blue mantle -->
+  <path d="M168,155 Q124,192 108,318 Q122,330 148,312 Q150,228 178,168 Z" fill="#102050" opacity="0.85"/>
+  <path d="M232,155 Q260,198 270,318 Q290,322 296,300 Q286,198 248,158 Z" fill="#102050" opacity="0.78"/>
+  <!-- Left arm with oar -->
+  <path d="M140,215 Q112,255 104,295" stroke="#1a4a88" stroke-width="17" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <!-- Right arm open -->
+  <path d="M260,215 Q288,255 296,295" stroke="#102050" stroke-width="16" fill="none" stroke-linecap="round" opacity="0.80"/>
+  <!-- Hands -->
+  <ellipse cx="104" cy="298" rx="12" ry="15" fill="#c8a06a" opacity="0.9"/>
+  <ellipse cx="296" cy="298" rx="12" ry="15" fill="#c8a06a" opacity="0.9"/>
+  <!-- Oar -->
+  <line x1="104" y1="298" x2="80"  y2="180" stroke="#6a4a28" stroke-width="5" stroke-opacity="0.82"/>
+  <rect  x="74" y="174" width="12" height="26" rx="2" fill="#5a3a18" opacity="0.75"/>
+  <!-- Small boat silhouette -->
+  <path d="M130,460 Q200,445 270,460 Q270,475 130,475 Z" fill="#1a4a88" opacity="0.55"/>
+  <path d="M145,460 L145,447" stroke="#6a4a28" stroke-width="2.5" opacity="0.6"/>
+  <path d="M255,460 L255,447" stroke="#6a4a28" stroke-width="2.5" opacity="0.6"/>
+  <!-- Neck + head (elder, white beard) -->
+  <rect x="193" y="142" width="14" height="18" rx="4" fill="#c8a06a" opacity="0.9"/>
+  <ellipse cx="200" cy="108" rx="27" ry="31" fill="#c8a06a" opacity="0.92"/>
+  <path d="M173,107 Q176,72 200,68 Q224,72 227,107 Q219,88 200,86 Q181,88 173,107 Z" fill="#d8d8e0" opacity="0.75"/>
+  <path d="M180,132 Q184,150 200,155 Q216,150 220,132 Q212,143 200,144 Q188,143 180,132 Z" fill="#d0d0d8" opacity="0.65"/>
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#sb-g2)"/>
+  <circle cx="200" cy="108" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#040810" opacity="0.86"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">SAN BRENDAN  ·  SAINT BRENDAN THE NAVIGATOR</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#60c0d8" font-style="italic">«San Brendan el Navegante»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#40d0c8" font-style="italic" opacity="0.8">«Saint Brendan the Navigator»</text>
 </svg>

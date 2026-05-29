@@ -1,58 +1,69 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
   <defs>
-    <radialGradient id="ft-bg" cx="50%" cy="40%" r="65%">
-      <stop offset="0%" stop-color="#050d1f"/>
-      <stop offset="100%" stop-color="#030810"/>
+    <radialGradient id="ft-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#060e20"/><stop offset="100%" stop-color="#020810"/>
     </radialGradient>
-    <radialGradient id="ft-glow" cx="50%" cy="38%" r="40%">
-      <stop offset="0%" stop-color="#2980b9" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#2980b9" stop-opacity="0"/>
+    <radialGradient id="ft-atm" cx="50%" cy="38%" r="46%">
+      <stop offset="0%" stop-color="#1a4a8a" stop-opacity="0.28"/><stop offset="100%" stop-color="#1a4a8a" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="ft-sun" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#fffde7" stop-opacity="1"/>
-      <stop offset="40%" stop-color="#f7dc6f" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#f39c12" stop-opacity="0"/>
-    </radialGradient>
+    <linearGradient id="ft-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#3a7ad8" stop-opacity="1"/><stop offset="100%" stop-color="#0d2860" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="ft-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f0f8ff" stop-opacity="1"/><stop offset="100%" stop-color="#a0c0f0" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="ft-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="ft-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
-  <rect width="800" height="600" fill="url(#ft-bg)"/>
-  <rect width="800" height="600" fill="url(#ft-glow)"/>
-  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#3498db" stroke-width="1" stroke-opacity="0.4"/>
-  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#3498db" stroke-width="0.5" stroke-opacity="0.2"/>
-  <!-- Blue accent strips -->
-  <rect x="28" y="28" width="6" height="544" rx="3" fill="#2471a3" opacity="0.65"/>
-  <rect x="766" y="28" width="6" height="544" rx="3" fill="#2471a3" opacity="0.65"/>
-  <!-- Miracle of the Sun — rotating sunburst (24 rays alternating long/short) -->
-  <line x1="400" y1="195" x2="400" y2="62"  stroke="#f7dc6f" stroke-width="3" stroke-opacity="0.7"/>
-  <line x1="400" y1="195" x2="460" y2="72"  stroke="#f7dc6f" stroke-width="2" stroke-opacity="0.55"/>
-  <line x1="400" y1="195" x2="510" y2="110" stroke="#f7dc6f" stroke-width="3" stroke-opacity="0.65"/>
-  <line x1="400" y1="195" x2="538" y2="155" stroke="#f7dc6f" stroke-width="2" stroke-opacity="0.5"/>
-  <line x1="400" y1="195" x2="540" y2="195" stroke="#f7dc6f" stroke-width="3" stroke-opacity="0.65"/>
-  <line x1="400" y1="195" x2="536" y2="238" stroke="#f7dc6f" stroke-width="2" stroke-opacity="0.5"/>
-  <line x1="400" y1="195" x2="510" y2="280" stroke="#f7dc6f" stroke-width="3" stroke-opacity="0.65"/>
-  <line x1="400" y1="195" x2="460" y2="318" stroke="#f7dc6f" stroke-width="2" stroke-opacity="0.55"/>
-  <line x1="400" y1="195" x2="400" y2="328" stroke="#f7dc6f" stroke-width="3" stroke-opacity="0.7"/>
-  <line x1="400" y1="195" x2="340" y2="318" stroke="#f7dc6f" stroke-width="2" stroke-opacity="0.55"/>
-  <line x1="400" y1="195" x2="290" y2="280" stroke="#f7dc6f" stroke-width="3" stroke-opacity="0.65"/>
-  <line x1="400" y1="195" x2="264" y2="238" stroke="#f7dc6f" stroke-width="2" stroke-opacity="0.5"/>
-  <line x1="400" y1="195" x2="260" y2="195" stroke="#f7dc6f" stroke-width="3" stroke-opacity="0.65"/>
-  <line x1="400" y1="195" x2="264" y2="155" stroke="#f7dc6f" stroke-width="2" stroke-opacity="0.5"/>
-  <line x1="400" y1="195" x2="290" y2="110" stroke="#f7dc6f" stroke-width="3" stroke-opacity="0.65"/>
-  <line x1="400" y1="195" x2="340" y2="72"  stroke="#f7dc6f" stroke-width="2" stroke-opacity="0.55"/>
-  <!-- Sun concentric circles -->
-  <circle cx="400" cy="195" r="80" fill="none" stroke="#f7dc6f" stroke-width="1" stroke-opacity="0.25"/>
-  <circle cx="400" cy="195" r="55" fill="none" stroke="#f7dc6f" stroke-width="1.5" stroke-opacity="0.35"/>
-  <!-- Sun disc -->
-  <circle cx="400" cy="195" r="40" fill="url(#ft-sun)"/>
-  <circle cx="400" cy="195" r="24" fill="#fffde7" opacity="0.95"/>
-  <!-- Rosary decade beads (5 small circles around the sun) -->
-  <circle cx="400" cy="120" r="5" fill="#3498db" opacity="0.7"/>
-  <circle cx="469" cy="148" r="5" fill="#3498db" opacity="0.65"/>
-  <circle cx="444" cy="226" r="5" fill="#3498db" opacity="0.65"/>
-  <circle cx="356" cy="226" r="5" fill="#3498db" opacity="0.65"/>
-  <circle cx="331" cy="148" r="5" fill="#3498db" opacity="0.65"/>
-  <!-- Name -->
-  <text x="400" y="376" text-anchor="middle" font-family="Georgia,serif" font-size="32" fill="#e8c97a" letter-spacing="1">Virgen de Fátima</text>
-  <text x="400" y="416" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#3498db" opacity="0.9" font-style="italic">Our Lady of Fátima — Reina del Rosario</text>
-  <line x1="284" y1="442" x2="516" y2="442" stroke="#3498db" stroke-width="0.6" stroke-opacity="0.4"/>
-  <text x="400" y="474" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#8a6e2f" letter-spacing="3">FEAST DAY · MAY 13</text>
+  <rect width="400" height="600" fill="url(#ft-bg)"/>
+  <rect width="400" height="600" fill="url(#ft-atm)"/>
+  <!-- Rays: blue left, white right -->
+  <polygon points="198,262 -25,610 115,610" fill="url(#ft-r1)" filter="url(#ft-gl)" opacity="0.75"/>
+  <polygon points="198,262 20,600  85,600"  fill="#3a7ad8" opacity="0.42"/>
+  <polygon points="202,262 425,610 285,610" fill="url(#ft-r2)" filter="url(#ft-gl)" opacity="0.72"/>
+  <polygon points="202,262 375,600 315,600" fill="#f0f8ff" opacity="0.38"/>
+  <!-- White robe -->
+  <path d="M168,155 Q140,205 126,388 Q200,412 274,388 Q260,205 232,155 Z" fill="#f0f4ff" opacity="0.88"/>
+  <!-- Blue mantle -->
+  <path d="M168,155 Q124,192 108,318 Q122,330 148,312 Q150,228 178,168 Z" fill="#1a4a8a" opacity="0.88"/>
+  <path d="M232,155 Q260,198 270,318 Q290,322 296,300 Q286,198 248,158 Z" fill="#1a4a8a" opacity="0.82"/>
+  <!-- Arms: left holding rosary, right open -->
+  <path d="M142,215 Q115,255 105,295" stroke="#f0f4ff" stroke-width="17" fill="none" stroke-linecap="round" opacity="0.84"/>
+  <path d="M258,215 Q285,255 295,295" stroke="#1a4a8a" stroke-width="15" fill="none" stroke-linecap="round" opacity="0.78"/>
+  <!-- Hands -->
+  <ellipse cx="103" cy="300" rx="12" ry="15" fill="#c89070" opacity="0.9"/>
+  <ellipse cx="296" cy="300" rx="12" ry="15" fill="#c89070" opacity="0.9"/>
+  <!-- Rosary in left hand (simple beads) -->
+  <circle cx="110" cy="312" r="3" fill="#e8c97a" opacity="0.8"/>
+  <circle cx="118" cy="320" r="3" fill="#e8c97a" opacity="0.8"/>
+  <circle cx="126" cy="326" r="3" fill="#e8c97a" opacity="0.8"/>
+  <line x1="110" y1="312" x2="118" y2="320" stroke="#e8c97a" stroke-width="1" opacity="0.6"/>
+  <line x1="118" y1="320" x2="126" y2="326" stroke="#e8c97a" stroke-width="1" opacity="0.6"/>
+  <!-- Cross at end of rosary -->
+  <line x1="126" y1="326" x2="126" y2="340" stroke="#e8c97a" stroke-width="2" opacity="0.7"/>
+  <line x1="120" y1="332" x2="132" y2="332" stroke="#e8c97a" stroke-width="2" opacity="0.7"/>
+  <!-- Neck -->
+  <rect x="193" y="142" width="14" height="18" rx="4" fill="#c89070" opacity="0.9"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="110" rx="26" ry="30" fill="#c89070" opacity="0.92"/>
+  <!-- White veil -->
+  <path d="M174,100 Q172,65 200,60 Q228,65 226,100 Q220,78 200,76 Q180,78 174,100 Z" fill="#f0f4ff" opacity="0.82"/>
+  <path d="M174,100 Q154,128 148,168 L168,155 Z" fill="#f0f4ff" opacity="0.72"/>
+  <path d="M226,100 Q246,128 250,168 L232,155 Z" fill="#f0f4ff" opacity="0.68"/>
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="52" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.62" filter="url(#ft-g2)"/>
+  <circle cx="200" cy="108" r="46" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Stars (Fatima apparitions x3) -->
+  <text x="140" y="400" font-family="Arial" font-size="16" fill="#f5e060" opacity="0.6">★</text>
+  <text x="188" y="390" font-family="Arial" font-size="16" fill="#f5e060" opacity="0.65">★</text>
+  <text x="236" y="400" font-family="Arial" font-size="16" fill="#f5e060" opacity="0.6">★</text>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#020810" opacity="0.86"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">NUESTRA SEÑORA DE FATIMA  ·  OUR LADY OF FATIMA</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="13.5" fill="#b8d8f8" font-style="italic">«Nuestra Señora de Fátima»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#90b8e0" font-style="italic" opacity="0.8">«Our Lady of Fatima»</text>
 </svg>

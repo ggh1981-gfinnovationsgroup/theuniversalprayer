@@ -1,61 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
   <defs>
-    <radialGradient id="jpBg" cx="50%" cy="38%" r="60%">
-      <stop offset="0%" stop-color="#0f1c35"/>
-      <stop offset="100%" stop-color="#050b18"/>
+    <radialGradient id="jp-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#101828"/><stop offset="100%" stop-color="#060a10"/>
     </radialGradient>
-    <radialGradient id="jpGlow" cx="50%" cy="38%" r="45%">
-      <stop offset="0%" stop-color="rgba(220,190,80,0.18)"/>
-      <stop offset="100%" stop-color="rgba(220,190,80,0)"/>
+    <radialGradient id="jp-atm" cx="50%" cy="38%" r="46%">
+      <stop offset="0%" stop-color="#2a3a5a" stop-opacity="0.28"/><stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="jp-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#4060c0" stop-opacity="1"/><stop offset="100%" stop-color="#101848" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="jp-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f5e060" stop-opacity="1"/><stop offset="100%" stop-color="#c9a84c" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="jp-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="jp-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
-
-  <!-- Background -->
-  <rect width="800" height="600" fill="url(#jpBg)"/>
-  <rect width="800" height="600" fill="url(#jpGlow)"/>
-
-  <!-- Accent strips: white (papal) -->
-  <rect x="0" y="0" width="7" height="600" fill="#f0ece4" opacity="0.65"/>
-  <rect x="7" y="0" width="3" height="600" fill="#d4af37" opacity="0.5"/>
-  <rect x="790" y="0" width="7" height="600" fill="#f0ece4" opacity="0.65"/>
-  <rect x="787" y="0" width="3" height="600" fill="#d4af37" opacity="0.5"/>
-
-  <!-- Papal Cross (Ferula) — 3 horizontal bars -->
-  <!-- Vertical shaft -->
-  <rect x="385" y="85" width="30" height="390" rx="5" fill="#d4af37"/>
-  <!-- Top bar (shortest) -->
-  <rect x="345" y="125" width="110" height="20" rx="5" fill="#d4af37"/>
-  <!-- Middle bar -->
-  <rect x="305" y="210" width="190" height="22" rx="5" fill="#d4af37"/>
-  <!-- Bottom bar (longest) -->
-  <rect x="265" y="305" width="270" height="24" rx="5" fill="#d4af37"/>
-
-  <!-- Inner gold highlight lines -->
-  <rect x="395" y="85" width="8" height="390" rx="2" fill="#f5d97a" opacity="0.35"/>
-
-  <!-- Tiara (3 stacked crowns) at top of cross -->
-  <ellipse cx="400" cy="84" rx="58" ry="24" fill="none" stroke="#f0ece4" stroke-width="2.5" opacity="0.75"/>
-  <ellipse cx="400" cy="68" rx="48" ry="19" fill="none" stroke="#f0ece4" stroke-width="2" opacity="0.65"/>
-  <ellipse cx="400" cy="55" rx="35" ry="14" fill="none" stroke="#f0ece4" stroke-width="2" opacity="0.55"/>
-  <!-- Small cross atop tiara -->
-  <line x1="400" y1="43" x2="400" y2="30" stroke="#d4af37" stroke-width="3" stroke-linecap="round"/>
-  <line x1="393" y1="37" x2="407" y2="37" stroke="#d4af37" stroke-width="3" stroke-linecap="round"/>
-
-  <!-- "M" — Totus Tuus Marian monogram beneath cross -->
-  <text x="400" y="505" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-style="italic" fill="#d4af37" opacity="0.55" letter-spacing="3">Totus Tuus</text>
-
-  <!-- Subtle star field -->
-  <circle cx="160" cy="140" r="1.8" fill="#ffd700" opacity="0.45"/>
-  <circle cx="210" cy="85"  r="1.3" fill="#ffd700" opacity="0.35"/>
-  <circle cx="620" cy="120" r="1.8" fill="#ffd700" opacity="0.45"/>
-  <circle cx="665" cy="195" r="1.3" fill="#ffd700" opacity="0.35"/>
-  <circle cx="130" cy="360" r="1.5" fill="#ffd700" opacity="0.35"/>
-  <circle cx="670" cy="390" r="1.5" fill="#ffd700" opacity="0.35"/>
-  <circle cx="300" cy="460" r="1.3" fill="#ffd700" opacity="0.28"/>
-  <circle cx="520" cy="450" r="1.3" fill="#ffd700" opacity="0.28"/>
-
-  <!-- Name + Feast day -->
-  <text x="400" y="528" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#e8c97a" letter-spacing="1">San Juan Pablo II</text>
-  <text x="400" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#c9a84c" font-style="italic" opacity="0.85">Saint John Paul II</text>
-  <text x="400" y="574" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#8a7a60" letter-spacing="2.5">22 DE OCTUBRE · OCTOBER 22</text>
+  <rect width="400" height="600" fill="url(#jp-bg)"/>
+  <rect width="400" height="600" fill="url(#jp-atm)"/>
+  <!-- Rays -->
+  <polygon points="198,265 -25,610 115,610" fill="url(#jp-r1)" filter="url(#jp-gl)" opacity="0.72"/>
+  <polygon points="198,265 20,600  85,600"  fill="#4060c0" opacity="0.38"/>
+  <polygon points="202,265 425,610 285,610" fill="url(#jp-r2)" filter="url(#jp-gl)" opacity="0.72"/>
+  <polygon points="202,265 375,600 315,600" fill="#f5e060" opacity="0.36"/>
+  <!-- White papal cassock -->
+  <path d="M168,155 Q140,205 126,392 Q200,415 274,392 Q260,205 232,155 Z" fill="#f8f4f0" opacity="0.92"/>
+  <!-- White sash -->
+  <rect x="178" y="290" width="44" height="8" rx="3" fill="#f8f4f0" opacity="0.6"/>
+  <!-- Papal stole (gold on white) -->
+  <path d="M190,160 L188,340" stroke="#c9a84c" stroke-width="6" stroke-opacity="0.6"/>
+  <path d="M210,160 L212,340" stroke="#c9a84c" stroke-width="6" stroke-opacity="0.6"/>
+  <!-- Left arm holding papal staff -->
+  <path d="M138,215 Q115,258 108,295" stroke="#f8f4f0" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.88"/>
+  <!-- Right arm raised blessing -->
+  <path d="M262,215 Q288,250 295,285" stroke="#f8f4f0" stroke-width="17" fill="none" stroke-linecap="round" opacity="0.88"/>
+  <!-- Right hand blessing -->
+  <ellipse cx="296" cy="290" rx="13" ry="16" fill="#d4a06a" opacity="0.9"/>
+  <!-- Papal staff (ferula) -->
+  <line x1="107" y1="295" x2="107" y2="430" stroke="#c9a84c" stroke-width="4" stroke-opacity="0.8"/>
+  <!-- Cross on top of staff -->
+  <line x1="107" y1="295" x2="107" y2="310" stroke="#c9a84c" stroke-width="5" stroke-opacity="0.9"/>
+  <line x1="99"  y1="302" x2="115" y2="302" stroke="#c9a84c" stroke-width="4" stroke-opacity="0.9"/>
+  <!-- Hand on staff -->
+  <ellipse cx="107" cy="300" rx="13" ry="16" fill="#d4a06a" opacity="0.9"/>
+  <!-- Neck -->
+  <rect x="193" y="142" width="14" height="18" rx="4" fill="#d4a06a" opacity="0.9"/>
+  <!-- Head (JP2 - older Polish features) -->
+  <ellipse cx="200" cy="108" rx="27" ry="30" fill="#d0a080" opacity="0.92"/>
+  <!-- White papal zucchetto (skullcap) -->
+  <path d="M173,107 Q176,74 200,70 Q224,74 227,107 Q220,88 200,86 Q180,88 173,107 Z" fill="#f8f4f0" opacity="0.88"/>
+  <!-- White hair at sides -->
+  <path d="M173,108 Q168,118 172,128" stroke="#d8d0c8" stroke-width="5" fill="none" stroke-opacity="0.7"/>
+  <path d="M227,108 Q232,118 228,128" stroke="#d8d0c8" stroke-width="5" fill="none" stroke-opacity="0.7"/>
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="52" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#jp-g2)"/>
+  <circle cx="200" cy="108" r="46" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Cross in halo -->
+  <line x1="200" y1="56" x2="200" y2="73" stroke="#f0d848" stroke-width="3.5" stroke-linecap="round" stroke-opacity="0.82"/>
+  <line x1="187" y1="65" x2="213" y2="65" stroke="#f0d848" stroke-width="3.5" stroke-linecap="round" stroke-opacity="0.82"/>
+  <!-- "Totus Tuus" gold text near heart -->
+  <text x="200" y="258" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="#e8c97a" opacity="0.75" font-style="italic">Totus Tuus</text>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#060a10" opacity="0.86"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">JUAN PABLO II  ·  JOHN PAUL II</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#f5e060" font-style="italic">«San Juan Pablo II»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#d4c040" font-style="italic" opacity="0.8">«Saint John Paul II»</text>
 </svg>

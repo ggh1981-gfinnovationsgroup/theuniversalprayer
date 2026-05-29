@@ -1,0 +1,58 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="sni-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#0e0410"/><stop offset="100%" stop-color="#080208"/>
+    </radialGradient>
+    <linearGradient id="sni-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#a00020" stop-opacity="1"/><stop offset="100%" stop-color="#500010" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="sni-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f5e060" stop-opacity="1"/><stop offset="100%" stop-color="#c9a84c" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="sni-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sni-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#sni-bg)"/>
+  <rect width="400" height="600" fill="#280008" opacity="0.10"/>
+  <polygon points="198,265 -25,610 115,610" fill="url(#sni-r1)" filter="url(#sni-gl)" opacity="0.72"/>
+  <polygon points="198,265 20,600  85,600"  fill="#a00020" opacity="0.36"/>
+  <polygon points="202,265 425,610 285,610" fill="url(#sni-r2)" filter="url(#sni-gl)" opacity="0.70"/>
+  <polygon points="202,265 375,600 315,600" fill="#f5e060" opacity="0.34"/>
+  <!-- Bishop vestments (red/white) -->
+  <path d="M168,155 Q140,205 126,390 Q200,415 274,390 Q260,205 232,155 Z" fill="#e0e8f8" opacity="0.90"/>
+  <!-- Red bishop mantle (Nicholas was bishop) -->
+  <path d="M168,155 Q124,192 108,318 Q122,330 148,312 Q150,228 178,168 Z" fill="#a00020" opacity="0.82"/>
+  <path d="M232,155 Q260,198 270,318 Q290,322 296,300 Q286,198 248,158 Z" fill="#a00020" opacity="0.75"/>
+  <!-- Right arm blessing -->
+  <path d="M260,215 Q285,248 292,282" stroke="#a00020" stroke-width="16" fill="none" stroke-linecap="round" opacity="0.82"/>
+  <!-- Left arm holding 3 gold balls/bags (Nicholas's attribute) -->
+  <path d="M140,215 Q112,252 104,292" stroke="#e0e8f8" stroke-width="17" fill="none" stroke-linecap="round" opacity="0.86"/>
+  <!-- Hands -->
+  <ellipse cx="104" cy="295" rx="12" ry="15" fill="#c8a070" opacity="0.9"/>
+  <ellipse cx="292" cy="285" rx="12" ry="15" fill="#c8a070" opacity="0.9"/>
+  <!-- Three gold balls (Nicholas's symbol) -->
+  <circle cx="95"  cy="318" r="10" fill="#d4a830" opacity="0.88"/>
+  <circle cx="80"  cy="330" r="10" fill="#d4a830" opacity="0.86"/>
+  <circle cx="110" cy="330" r="10" fill="#d4a830" opacity="0.84"/>
+  <!-- Bishop miter above halo -->
+  <path d="M178,62 Q185,40 192,32 Q200,28 208,32 Q215,40 222,62 Q210,56 200,55 Q190,56 178,62 Z" fill="#a00020" opacity="0.78"/>
+  <!-- White alb band/pallium on vestment -->
+  <path d="M190,162 L190,380 Q200,390 210,380 L210,162" stroke="#f8f8f0" stroke-width="8" fill="none" opacity="0.30"/>
+  <!-- Neck + head (bishop, white beard) -->
+  <rect x="193" y="142" width="14" height="16" rx="4" fill="#c8a070" opacity="0.9"/>
+  <ellipse cx="200" cy="108" rx="26" ry="30" fill="#c8a070" opacity="0.92"/>
+  <path d="M174,107 Q176,72 200,68 Q224,72 226,107 Q219,86 200,84 Q181,86 174,107 Z" fill="#4a2c10" opacity="0.80"/>
+  <path d="M180,128 Q190,140 200,142 Q210,140 220,128 Q210,134 200,136 Q190,134 180,128 Z" fill="#e8e4e0" opacity="0.80"/>
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#sni-g2)"/>
+  <circle cx="200" cy="108" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#080208" opacity="0.86"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">SAN NICOLAS DE BARI  ·  SAINT NICHOLAS OF BARI</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#e04050" font-style="italic">«San Nicolás de Bari»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#f5e060" font-style="italic" opacity="0.8">«Saint Nicholas of Bari»</text>
+</svg>

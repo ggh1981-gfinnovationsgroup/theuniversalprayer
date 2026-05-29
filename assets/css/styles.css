@@ -162,6 +162,69 @@ body {
   position: relative;
 }
 
+/* ── PADRE NUESTRO in hero ─────────────────────── */
+.hero-pater {
+  position: relative;
+  margin: 0.5rem auto 2rem;
+  max-width: 520px;
+  padding: 1.5rem 1.75rem;
+  border-left: 3px solid var(--gold);
+  border-right: 3px solid var(--gold);
+  text-align: center;
+  background: linear-gradient(180deg,
+    rgba(201,168,76,0.06) 0%,
+    rgba(201,168,76,0.03) 50%,
+    rgba(201,168,76,0.06) 100%);
+}
+.hero-pater::before,
+.hero-pater::after {
+  content: '✦';
+  display: block;
+  color: var(--gold);
+  font-size: 0.75rem;
+  letter-spacing: 6px;
+  opacity: 0.7;
+  margin-bottom: 0.75rem;
+}
+.hero-pater::after {
+  margin-bottom: 0;
+  margin-top: 0.75rem;
+}
+.hero-pater-line {
+  font-family: var(--font-serif);
+  font-size: clamp(0.88rem, 2vw, 1.05rem);
+  font-style: italic;
+  color: var(--gold-light);
+  line-height: 1.8;
+  margin: 0;
+  text-shadow: 0 0 18px rgba(201,168,76,0.35), 0 1px 2px rgba(0,0,0,0.5);
+}
+.hero-pater-line--dim {
+  color: var(--gold-dim);
+  font-size: clamp(0.82rem, 1.8vw, 0.97rem);
+  opacity: 0.85;
+}
+.hero-pater-line--accent {
+  color: var(--gold-light);
+  font-weight: 700;
+  font-style: normal;
+  font-size: clamp(0.92rem, 2.1vw, 1.08rem);
+  letter-spacing: 0.04em;
+  text-shadow: 0 0 24px rgba(201,168,76,0.5), 0 1px 3px rgba(0,0,0,0.6);
+}
+.hero-pater-amen {
+  font-family: var(--font-serif);
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.15em;
+  margin: 0.5rem 0 0;
+  text-shadow:
+    0 0 30px rgba(201,168,76,0.6),
+    0 0 10px rgba(201,168,76,0.4),
+    0 2px 4px rgba(0,0,0,0.5);
+}
+
 /* Legacy hero styles (kept for other pages) */
 .hero-title {
   font-family: var(--font-serif);

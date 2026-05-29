@@ -3,7 +3,7 @@
    Cache-first strategy: works fully offline after first load
    ===================================================== */
 
-const CACHE = 'tup-v1';
+const CACHE = 'tup-v2';
 
 // All files to pre-cache on install
 const PRECACHE_URLS = [
@@ -49,6 +49,16 @@ const PRECACHE_URLS = [
   '/assets/images/sanvicente.svg',
   '/assets/images/schoenstatt.svg',
   '/assets/images/teresacalcuta.svg',
+  '/assets/images/sanfrancisco.svg',
+  '/assets/images/santamonica.svg',
+  '/assets/images/sanagustin.svg',
+  '/assets/images/santalucia.svg',
+  '/assets/images/perpetuosocorro.svg',
+  '/assets/images/sanexpedito.svg',
+  '/assets/images/sanlorenzo.svg',
+  '/assets/images/santaines.svg',
+  '/assets/images/sannicolas.svg',
+  '/assets/images/sancristobal.svg',
   // Intercessor data (JSON)
   '/data/angelguarda.json',
   '/data/divinaprovidencia.json',
@@ -82,6 +92,16 @@ const PRECACHE_URLS = [
   '/data/sanvicente.json',
   '/data/schoenstatt.json',
   '/data/teresacalcuta.json',
+  '/data/sanfrancisco.json',
+  '/data/santamonica.json',
+  '/data/sanagustin.json',
+  '/data/santalucia.json',
+  '/data/perpetuosocorro.json',
+  '/data/sanexpedito.json',
+  '/data/sanlorenzo.json',
+  '/data/santaines.json',
+  '/data/sannicolas.json',
+  '/data/sancristobal.json',
 ];
 
 // ── INSTALL: pre-cache everything ─────────────────

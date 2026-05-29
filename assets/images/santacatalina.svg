@@ -1,72 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
   <defs>
-    <radialGradient id="cat-bg" cx="50%" cy="38%" r="60%">
-      <stop offset="0%" stop-color="#130820"/>
-      <stop offset="100%" stop-color="#040208"/>
+    <radialGradient id="sca-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#080c18"/><stop offset="100%" stop-color="#040810"/>
     </radialGradient>
-    <radialGradient id="cat-glow" cx="50%" cy="35%" r="50%">
-      <stop offset="0%" stop-color="rgba(120,30,180,0.22)"/>
-      <stop offset="100%" stop-color="rgba(120,30,180,0)"/>
-    </radialGradient>
+    <linearGradient id="sca-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#2858b8" stop-opacity="1"/><stop offset="100%" stop-color="#0c2050" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="sca-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f5e060" stop-opacity="1"/><stop offset="100%" stop-color="#c9a84c" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="sca-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sca-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
-
-  <!-- Background: deep purple/Dominican -->
-  <rect width="800" height="600" fill="url(#cat-bg)"/>
-  <rect width="800" height="600" fill="url(#cat-glow)"/>
-
-  <!-- Border -->
-  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#8a3ab2" stroke-width="1" stroke-opacity="0.55"/>
-  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#8a3ab2" stroke-width="0.5" stroke-opacity="0.25"/>
-
-  <!-- Side accent strips -->
-  <rect x="28" y="28" width="6" height="544" rx="3" fill="#5a1a8a" opacity="0.75"/>
-  <rect x="766" y="28" width="6" height="544" rx="3" fill="#5a1a8a" opacity="0.75"/>
-
-  <!-- Lily — symbol of Catherine's purity -->
-  <!-- Stem -->
-  <line x1="400" y1="430" x2="400" y2="200" stroke="#4a8a30" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
-  <!-- Left leaf -->
-  <path d="M 400 340 Q 365 320 350 295 Q 375 310 400 330 Z" fill="#4a8a30" opacity="0.70"/>
-  <!-- Right leaf -->
-  <path d="M 400 340 Q 435 320 450 295 Q 425 310 400 330 Z" fill="#4a8a30" opacity="0.70"/>
-  <!-- Main flower petals -->
-  <ellipse cx="400" cy="188" rx="18" ry="30" fill="#e8e0f8" opacity="0.90"/>
-  <ellipse cx="400" cy="188" rx="18" ry="30" fill="none" stroke="#8a3ab2" stroke-width="1" opacity="0.60"/>
-  <!-- Side petal left -->
-  <ellipse cx="375" cy="198" rx="12" ry="24" fill="#e8e0f8" opacity="0.80" transform="rotate(-30 375 198)"/>
-  <!-- Side petal right -->
-  <ellipse cx="425" cy="198" rx="12" ry="24" fill="#e8e0f8" opacity="0.80" transform="rotate(30 425 198)"/>
-  <!-- Stamen -->
-  <line x1="400" y1="175" x2="400" y2="195" stroke="#c9a84c" stroke-width="2" opacity="0.85"/>
-  <circle cx="400" cy="173" r="3" fill="#c9a84c" opacity="0.90"/>
-
-  <!-- Crown of thorns ring — central symbol below lily -->
-  <!-- Thorns ring -->
-  <circle cx="400" cy="320" r="45" fill="none" stroke="#4a2a10" stroke-width="6" opacity="0.75"/>
-  <!-- Individual thorns -->
-  <line x1="400" y1="275" x2="400" y2="260" stroke="#4a2a10" stroke-width="2" opacity="0.70"/>
-  <line x1="432" y1="288" x2="442" y2="276" stroke="#4a2a10" stroke-width="2" opacity="0.70"/>
-  <line x1="445" y1="320" x2="460" y2="320" stroke="#4a2a10" stroke-width="2" opacity="0.70"/>
-  <line x1="432" y1="352" x2="442" y2="364" stroke="#4a2a10" stroke-width="2" opacity="0.70"/>
-  <line x1="400" y1="365" x2="400" y2="380" stroke="#4a2a10" stroke-width="2" opacity="0.70"/>
-  <line x1="368" y1="352" x2="358" y2="364" stroke="#4a2a10" stroke-width="2" opacity="0.70"/>
-  <line x1="355" y1="320" x2="340" y2="320" stroke="#4a2a10" stroke-width="2" opacity="0.70"/>
-  <line x1="368" y1="288" x2="358" y2="276" stroke="#4a2a10" stroke-width="2" opacity="0.70"/>
-  <!-- Red mark in center — stigmata dot -->
-  <circle cx="400" cy="320" r="6" fill="#8a1a1a" opacity="0.80"/>
-
-  <!-- Stars / sparks of inspiration -->
-  <circle cx="155" cy="105" r="2" fill="#8a3ab2" opacity="0.50"/>
-  <circle cx="645" cy="125" r="2" fill="#8a3ab2" opacity="0.50"/>
-  <circle cx="175" cy="450" r="1.5" fill="#8a3ab2" opacity="0.35"/>
-  <circle cx="625" cy="430" r="1.5" fill="#8a3ab2" opacity="0.35"/>
-  <circle cx="190" cy="280" r="1.3" fill="#c9a84c" opacity="0.40"/>
-  <circle cx="610" cy="300" r="1.3" fill="#c9a84c" opacity="0.40"/>
-  <circle cx="128" cy="330" r="1.5" fill="#8a3ab2" opacity="0.30"/>
-  <circle cx="672" cy="260" r="1.5" fill="#8a3ab2" opacity="0.30"/>
-
-  <!-- Name text -->
-  <text x="400" y="498" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#e8c97a" letter-spacing="1">Santa Catalina de Siena</text>
-  <text x="400" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#c9a84c" font-style="italic" opacity="0.85">Saint Catherine of Siena</text>
-  <text x="400" y="546" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#5a3a7a" letter-spacing="2.5">29 DE ABR · APR 29</text>
+  <rect width="400" height="600" fill="url(#sca-bg)"/>
+  <rect width="400" height="600" fill="#1a2860" opacity="0.12"/>
+  <polygon points="198,265 -25,610 115,610" fill="url(#sca-r1)" filter="url(#sca-gl)" opacity="0.72"/>
+  <polygon points="198,265 20,600  85,600"  fill="#2858b8" opacity="0.36"/>
+  <polygon points="202,265 425,610 285,610" fill="url(#sca-r2)" filter="url(#sca-gl)" opacity="0.70"/>
+  <polygon points="202,265 375,600 315,600" fill="#f5e060" opacity="0.34"/>
+  <!-- Black Dominican habit -->
+  <path d="M168,155 Q140,205 126,390 Q200,415 274,390 Q260,205 232,155 Z" fill="#f0ece0" opacity="0.90"/>
+  <!-- Black mantle over white (Dominican) -->
+  <path d="M168,155 Q124,192 108,318 Q122,330 148,312 Q150,228 178,168 Z" fill="#1a1810" opacity="0.88"/>
+  <path d="M232,155 Q260,198 270,318 Q290,322 296,300 Q286,198 248,158 Z" fill="#1a1810" opacity="0.82"/>
+  <!-- Left arm with lily + book -->
+  <path d="M140,215 Q112,252 104,294" stroke="#f0ece0" stroke-width="17" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <!-- Right arm pointing upward (Doctor of the Church) -->
+  <path d="M260,215 Q278,240 282,262" stroke="#1a1810" stroke-width="16" fill="none" stroke-linecap="round" opacity="0.80"/>
+  <!-- Hands -->
+  <ellipse cx="104" cy="297" rx="12" ry="15" fill="#d4b090" opacity="0.9"/>
+  <ellipse cx="283" cy="264" rx="12" ry="15" fill="#d4b090" opacity="0.9"/>
+  <!-- Lily -->
+  <line x1="104" y1="297" x2="104" y2="240" stroke="#7aaa40" stroke-width="2.5" opacity="0.8"/>
+  <ellipse cx="104" cy="236" rx="6" ry="10" fill="#f8f4e8" opacity="0.88"/>
+  <!-- Book (right) -->
+  <rect x="271" y="252" width="24" height="18" rx="2" fill="#f8f0d8" opacity="0.88"/>
+  <path d="M273,258 L293,258" stroke="#c8a870" stroke-width="1" opacity="0.5"/>
+  <!-- White veil / Dominican wimple -->
+  <path d="M168,155 Q142,142 134,126 Q150,112 176,118 Q184,135 188,152 Z" fill="#f0ece0" opacity="0.90"/>
+  <path d="M232,155 Q258,142 266,126 Q250,112 224,118 Q216,135 212,152 Z" fill="#f0ece0" opacity="0.86"/>
+  <!-- Neck + head -->
+  <rect x="193" y="142" width="14" height="16" rx="4" fill="#d4b090" opacity="0.9"/>
+  <ellipse cx="200" cy="108" rx="25" ry="29" fill="#d4b090" opacity="0.92"/>
+  <path d="M175,107 Q177,73 200,69 Q223,73 225,107 Q218,87 200,85 Q182,87 175,107 Z" fill="#9a7858" opacity="0.62"/>
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#sca-g2)"/>
+  <circle cx="200" cy="108" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#040810" opacity="0.86"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">SANTA CATALINA DE SIENA  ·  SAINT CATHERINE</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#80a8f8" font-style="italic">«Santa Catalina de Siena»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#f5e060" font-style="italic" opacity="0.8">«Saint Catherine of Siena»</text>
 </svg>

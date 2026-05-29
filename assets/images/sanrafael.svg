@@ -1,97 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
   <defs>
-    <radialGradient id="sr2-bg" cx="50%" cy="40%" r="62%">
-      <stop offset="0%" stop-color="#0a1e14"/>
-      <stop offset="100%" stop-color="#050f0a"/>
+    <radialGradient id="sr-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#081208"/><stop offset="100%" stop-color="#040804"/>
     </radialGradient>
-    <radialGradient id="sr2-glow" cx="50%" cy="38%" r="46%">
-      <stop offset="0%" stop-color="rgba(60,180,120,0.22)"/>
-      <stop offset="100%" stop-color="rgba(60,180,120,0)"/>
-    </radialGradient>
-    <radialGradient id="sr2-fish-glow" cx="50%" cy="68%" r="36%">
-      <stop offset="0%" stop-color="rgba(100,210,160,0.16)"/>
-      <stop offset="100%" stop-color="rgba(100,210,160,0)"/>
-    </radialGradient>
+    <linearGradient id="sr-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#40a870" stop-opacity="1"/><stop offset="100%" stop-color="#104020" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="sr-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f5e060" stop-opacity="1"/><stop offset="100%" stop-color="#c9a84c" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="sr-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sr-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
-
-  <!-- Background -->
-  <rect width="800" height="600" fill="url(#sr2-bg)"/>
-  <rect width="800" height="600" fill="url(#sr2-glow)"/>
-  <rect width="800" height="600" fill="url(#sr2-fish-glow)"/>
-
-  <!-- Border -->
-  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#2e7a50" stroke-width="1" stroke-opacity="0.52"/>
-  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#2e7a50" stroke-width="0.5" stroke-opacity="0.24"/>
-
-  <!-- Side accent strips -->
-  <rect x="28" y="28" width="6" height="544" rx="3" fill="#1a5c3a" opacity="0.68"/>
-  <rect x="766" y="28" width="6" height="544" rx="3" fill="#1a5c3a" opacity="0.68"/>
-
-  <!-- Stars -->
-  <circle cx="155" cy="105" r="2"   fill="#88ddbb" opacity="0.42"/>
-  <circle cx="215" cy="72"  r="1.5" fill="#88ddbb" opacity="0.34"/>
-  <circle cx="645" cy="98"  r="2"   fill="#88ddbb" opacity="0.42"/>
-  <circle cx="668" cy="178" r="1.5" fill="#88ddbb" opacity="0.36"/>
-  <circle cx="138" cy="365" r="1.8" fill="#88ddbb" opacity="0.30"/>
-  <circle cx="665" cy="385" r="1.8" fill="#88ddbb" opacity="0.30"/>
-
-  <!-- Light rays -->
-  <g opacity="0.11" fill="#3a9a60">
-    <polygon points="400,300 376,100 400,120 424,100"/>
-    <polygon points="400,300 594,268 580,295 596,322"/>
-    <polygon points="400,300 424,498 400,480 376,498"/>
-    <polygon points="400,300 206,332 220,306 203,278"/>
-    <polygon points="400,300 543,142 546,174 576,152"/>
-    <polygon points="400,300 557,448 527,438 543,467"/>
-    <polygon points="400,300 262,448 278,420 250,426"/>
-    <polygon points="400,300 240,160 260,185 234,202"/>
-  </g>
-
-  <!-- Walking staff -->
-  <line x1="355" y1="100" x2="365" y2="440" stroke="#a0784a" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
-  <!-- Staff top hook -->
-  <path d="M 355 100 Q 340 84 352 72 Q 366 62 374 78" fill="none" stroke="#a0784a" stroke-width="6" stroke-linecap="round" opacity="0.80"/>
-  <!-- Staff highlight -->
-  <line x1="358" y1="108" x2="368" y2="430" stroke="#d4a870" stroke-width="2" stroke-linecap="round" opacity="0.28"/>
-
-  <!-- Main halo/icon circle -->
-  <circle cx="400" cy="194" r="64" fill="#060e0a" stroke="#2e7a50" stroke-width="2" stroke-opacity="0.72"/>
-  <circle cx="400" cy="194" r="58" fill="none" stroke="#88ddbb" stroke-width="0.8" stroke-opacity="0.30"/>
-
-  <!-- Cross inside circle -->
-  <line x1="400" y1="150" x2="400" y2="238" stroke="#88ddbb" stroke-width="2.5" stroke-opacity="0.72"/>
-  <line x1="366" y1="176" x2="434" y2="176" stroke="#88ddbb" stroke-width="2.5" stroke-opacity="0.72"/>
-
-  <!-- IHS monogram -->
-  <text x="400" y="203" text-anchor="middle" font-family="Georgia,serif" font-size="20"
-        fill="#88ddbb" opacity="0.85" letter-spacing="2">IHS</text>
-
-  <!-- Fish (symbol of Tobias/Book of Tobit) -->
-  <!-- Fish body -->
-  <ellipse cx="430" cy="390" rx="52" ry="26" fill="#1a5c3a" stroke="#3ab870" stroke-width="2" opacity="0.90"/>
-  <!-- Fish tail -->
-  <path d="M 378 390 L 354 370 L 350 390 L 354 410 Z" fill="#1a5c3a" stroke="#3ab870" stroke-width="1.5" opacity="0.85"/>
-  <!-- Fish scales (simple arcs) -->
-  <path d="M 400 374 Q 412 380 400 386" fill="none" stroke="#3ab870" stroke-width="1.2" opacity="0.50"/>
-  <path d="M 414 370 Q 426 376 414 382" fill="none" stroke="#3ab870" stroke-width="1.2" opacity="0.50"/>
-  <path d="M 428 368 Q 440 374 428 380" fill="none" stroke="#3ab870" stroke-width="1.2" opacity="0.50"/>
-  <path d="M 402 382 Q 414 388 402 394" fill="none" stroke="#3ab870" stroke-width="1.2" opacity="0.50"/>
-  <path d="M 416 378 Q 428 384 416 390" fill="none" stroke="#3ab870" stroke-width="1.2" opacity="0.50"/>
-  <!-- Fish eye -->
-  <circle cx="464" cy="385" r="6" fill="#0a1e14"/>
-  <circle cx="466" cy="383" r="3" fill="#88ddbb" opacity="0.90"/>
-  <!-- Fish mouth -->
-  <path d="M 480 390 Q 484 386 482 382" fill="none" stroke="#3ab870" stroke-width="2" stroke-linecap="round" opacity="0.70"/>
-  <!-- Fish fin -->
-  <path d="M 430 364 Q 426 348 418 342 Q 432 350 440 364 Z" fill="#2e7a50" opacity="0.80"/>
-
-  <!-- Name -->
-  <text x="400" y="490" text-anchor="middle" font-family="Georgia,serif" font-size="22"
-        fill="#a0ddb8" letter-spacing="1">San Rafael Arcángel</text>
-  <text x="400" y="511" text-anchor="middle" font-family="Georgia,serif" font-size="14"
-        fill="#5aaa88" font-style="italic" opacity="0.85">Saint Raphael the Archangel</text>
-
-  <!-- Motto -->
-  <text x="400" y="536" text-anchor="middle" font-family="Georgia,serif" font-size="12"
-        font-style="italic" fill="#2e7a50" opacity="0.60" letter-spacing="2">Rāfāʾēl — Dios sana</text>
+  <rect width="400" height="600" fill="url(#sr-bg)"/>
+  <rect width="400" height="600" fill="#105030" opacity="0.10"/>
+  <polygon points="198,265 -25,610 115,610" fill="url(#sr-r1)" filter="url(#sr-gl)" opacity="0.72"/>
+  <polygon points="198,265 20,600  85,600"  fill="#40a870" opacity="0.38"/>
+  <polygon points="202,265 425,610 285,610" fill="url(#sr-r2)" filter="url(#sr-gl)" opacity="0.70"/>
+  <polygon points="202,265 375,600 315,600" fill="#f5e060" opacity="0.34"/>
+  <!-- Green robe -->
+  <path d="M168,155 Q140,205 126,390 Q200,415 274,390 Q260,205 232,155 Z" fill="#2a7848" opacity="0.84"/>
+  <!-- Gold mantle -->
+  <path d="M168,155 Q124,192 108,318 Q122,330 148,312 Q150,228 178,168 Z" fill="#b08828" opacity="0.80"/>
+  <path d="M232,155 Q260,198 270,318 Q290,322 296,300 Q286,198 248,158 Z" fill="#b08828" opacity="0.74"/>
+  <!-- Wings -->
+  <path d="M168,155 Q108,185 82,255 Q108,248 132,215 Q150,185 168,168 Z" fill="#e0e8d0" opacity="0.20"/>
+  <path d="M232,155 Q292,185 318,255 Q292,248 268,215 Q250,185 232,168 Z" fill="#e0e8d0" opacity="0.20"/>
+  <!-- Left arm holding walking staff + fish -->
+  <path d="M140,215 Q112,255 104,295" stroke="#2a7848" stroke-width="17" fill="none" stroke-linecap="round" opacity="0.86"/>
+  <!-- Right arm open -->
+  <path d="M260,215 Q288,255 296,295" stroke="#b08828" stroke-width="16" fill="none" stroke-linecap="round" opacity="0.80"/>
+  <!-- Pilgrim staff -->
+  <line x1="104" y1="295" x2="104" y2="440" stroke="#7a5a28" stroke-width="5" stroke-opacity="0.82"/>
+  <!-- Fish (Raphael symbol of healing travel) -->
+  <path d="M92,308 Q84,315 92,322 Q100,315 92,308 Z" fill="#4090c0" opacity="0.78"/>
+  <path d="M98,315 L92,315" stroke="#4090c0" stroke-width="1.5" opacity="0.6"/>
+  <!-- Hands -->
+  <ellipse cx="104" cy="298" rx="12" ry="15" fill="#d4a06a" opacity="0.9"/>
+  <ellipse cx="296" cy="298" rx="12" ry="15" fill="#d4a06a" opacity="0.9"/>
+  <!-- Medicine gourd in right hand -->
+  <ellipse cx="296" cy="310" rx="10" ry="12" fill="#c08020" opacity="0.80"/>
+  <path d="M296,298 L296,306" stroke="#c08020" stroke-width="3" opacity="0.7"/>
+  <!-- Neck + head -->
+  <rect x="193" y="142" width="14" height="18" rx="4" fill="#d4a06a" opacity="0.9"/>
+  <ellipse cx="200" cy="108" rx="26" ry="30" fill="#d4c0a0" opacity="0.92"/>
+  <path d="M174,106 Q176,72 200,68 Q224,72 226,106 Q218,86 200,84 Q182,86 174,106 Z" fill="#b09050" opacity="0.62"/>
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#sr-g2)"/>
+  <circle cx="200" cy="108" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#040804" opacity="0.86"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">SAN RAFAEL ARCANGEL  ·  SAINT RAPHAEL</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#90e8a8" font-style="italic">«San Rafael Arcángel»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#f5e060" font-style="italic" opacity="0.8">«Saint Raphael the Archangel»</text>
 </svg>

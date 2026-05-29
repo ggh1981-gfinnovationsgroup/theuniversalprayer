@@ -1,0 +1,58 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="slr-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#1a0a00"/><stop offset="100%" stop-color="#0e0600"/>
+    </radialGradient>
+    <linearGradient id="slr-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#c06000" stop-opacity="1"/><stop offset="100%" stop-color="#603000" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="slr-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#e03020" stop-opacity="1"/><stop offset="100%" stop-color="#701008" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="slr-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="slr-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#slr-bg)"/>
+  <rect width="400" height="600" fill="#402008" opacity="0.10"/>
+  <polygon points="198,265 -25,610 115,610" fill="url(#slr-r1)" filter="url(#slr-gl)" opacity="0.72"/>
+  <polygon points="198,265 20,600  85,600"  fill="#c06000" opacity="0.36"/>
+  <polygon points="202,265 425,610 285,610" fill="url(#slr-r2)" filter="url(#slr-gl)" opacity="0.70"/>
+  <polygon points="202,265 375,600 315,600" fill="#e03020" opacity="0.34"/>
+  <!-- Deacon dalmatic vestment (golden-orange) -->
+  <path d="M168,155 Q140,205 126,390 Q200,415 274,390 Q260,205 232,155 Z" fill="#d08020" opacity="0.85"/>
+  <!-- Red mantle (martyr) -->
+  <path d="M168,155 Q124,192 108,318 Q122,330 148,312 Q150,228 178,168 Z" fill="#c03018" opacity="0.80"/>
+  <path d="M232,155 Q260,198 270,318 Q290,322 296,300 Q286,198 248,158 Z" fill="#c03018" opacity="0.74"/>
+  <!-- Left arm: holds gridiron -->
+  <path d="M140,215 Q112,252 104,295" stroke="#d08020" stroke-width="17" fill="none" stroke-linecap="round" opacity="0.86"/>
+  <!-- Right arm: palm branch -->
+  <path d="M260,215 Q285,252 292,292" stroke="#c03018" stroke-width="16" fill="none" stroke-linecap="round" opacity="0.80"/>
+  <!-- Hands -->
+  <ellipse cx="104" cy="298" rx="12" ry="15" fill="#c8a070" opacity="0.9"/>
+  <ellipse cx="292" cy="295" rx="12" ry="15" fill="#c8a070" opacity="0.9"/>
+  <!-- Gridiron (Lawrence's attribute) -->
+  <rect x="78" y="308" width="36" height="24" rx="2" fill="none" stroke="#c8a050" stroke-width="2.5" opacity="0.72"/>
+  <line x1="88" y1="308" x2="88" y2="332" stroke="#c8a050" stroke-width="1.5" opacity="0.62"/>
+  <line x1="98" y1="308" x2="98" y2="332" stroke="#c8a050" stroke-width="1.5" opacity="0.62"/>
+  <line x1="108" y1="308" x2="108" y2="332" stroke="#c8a050" stroke-width="1.5" opacity="0.62"/>
+  <!-- Palm branch -->
+  <path d="M292,295 Q285,268 280,244" stroke="#6aaa30" stroke-width="3" fill="none" opacity="0.78"/>
+  <!-- Gold collar (deacon) -->
+  <rect x="188" y="152" width="24" height="6" rx="2" fill="#d08020" opacity="0.60"/>
+  <!-- Neck + head -->
+  <rect x="193" y="142" width="14" height="16" rx="4" fill="#c8a070" opacity="0.9"/>
+  <ellipse cx="200" cy="108" rx="26" ry="30" fill="#c8a070" opacity="0.92"/>
+  <path d="M174,107 Q176,72 200,68 Q224,72 226,107 Q219,86 200,84 Q181,86 174,107 Z" fill="#5a3018" opacity="0.70"/>
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#slr-g2)"/>
+  <circle cx="200" cy="108" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#0e0600" opacity="0.86"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">SAN LORENZO  ·  SAINT LAWRENCE</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#e08030" font-style="italic">«San Lorenzo, Diácono y Mártir»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#e03020" font-style="italic" opacity="0.8">«Saint Lawrence, Deacon and Martyr»</text>
+</svg>

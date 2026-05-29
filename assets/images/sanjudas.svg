@@ -1,75 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
   <defs>
-    <radialGradient id="sj-bg" cx="50%" cy="40%" r="65%">
-      <stop offset="0%" stop-color="#112218"/>
-      <stop offset="100%" stop-color="#0a0d14"/>
+    <radialGradient id="jd-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#061408"/><stop offset="100%" stop-color="#020a04"/>
     </radialGradient>
-    <radialGradient id="sj-glow" cx="50%" cy="38%" r="38%">
-      <stop offset="0%" stop-color="#2ecc71" stop-opacity="0.22"/>
-      <stop offset="100%" stop-color="#2ecc71" stop-opacity="0"/>
+    <radialGradient id="jd-atm" cx="50%" cy="38%" r="46%">
+      <stop offset="0%" stop-color="#1a6a3a" stop-opacity="0.28"/><stop offset="100%" stop-color="#1a6a3a" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="sj-flame" cx="50%" cy="80%" r="60%">
-      <stop offset="0%" stop-color="#f39c12" stop-opacity="0.9"/>
-      <stop offset="60%" stop-color="#e74c3c" stop-opacity="0.7"/>
-      <stop offset="100%" stop-color="#c0392b" stop-opacity="0"/>
-    </radialGradient>
+    <linearGradient id="jd-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#28a860" stop-opacity="1"/><stop offset="100%" stop-color="#0a4020" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="jd-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f5e060" stop-opacity="1"/><stop offset="100%" stop-color="#c9a84c" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="jd-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="jd-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
-
-  <!-- Background -->
-  <rect width="800" height="600" fill="url(#sj-bg)"/>
-  <rect width="800" height="600" fill="url(#sj-glow)"/>
-
-  <!-- Decorative border -->
-  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#2ecc71" stroke-width="1" stroke-opacity="0.4"/>
-  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#2ecc71" stroke-width="0.5" stroke-opacity="0.2"/>
-
-  <!-- Green robe accent strip (left) -->
-  <rect x="28" y="28" width="6" height="544" rx="3" fill="#27ae60" opacity="0.6"/>
-  <!-- Green robe accent strip (right) -->
-  <rect x="766" y="28" width="6" height="544" rx="3" fill="#27ae60" opacity="0.6"/>
-
-  <!-- Flame of the Holy Spirit (Pentecost) above medallion -->
-  <!-- outer glow -->
-  <ellipse cx="400" cy="128" rx="28" ry="46" fill="url(#sj-flame)" opacity="0.5"/>
-  <!-- flame body -->
-  <path d="M400 84 C394 98 386 112 390 126 C393 136 407 136 410 126 C414 112 406 98 400 84Z"
-        fill="#f39c12" opacity="0.9"/>
-  <path d="M400 94 C397 104 393 114 396 123 C398 130 402 130 404 123 C407 114 403 104 400 94Z"
-        fill="#fffde7" opacity="0.85"/>
-
-  <!-- Medallion circle (image of Jesus) -->
-  <circle cx="400" cy="185" r="64" fill="#0d1a10" stroke="#2ecc71" stroke-width="2" stroke-opacity="0.7"/>
-  <circle cx="400" cy="185" r="58" fill="none" stroke="#f1c40f" stroke-width="1" stroke-opacity="0.4"/>
-  <!-- Cross inside medallion -->
-  <line x1="400" y1="148" x2="400" y2="222" stroke="#f1c40f" stroke-width="2.5" stroke-opacity="0.8"/>
-  <line x1="372" y1="173" x2="428" y2="173" stroke="#f1c40f" stroke-width="2.5" stroke-opacity="0.8"/>
-  <!-- IHS monogram -->
-  <text x="400" y="194" text-anchor="middle" font-family="Georgia,serif" font-size="22"
-        fill="#f1c40f" opacity="0.9" letter-spacing="2">IHS</text>
-
-  <!-- Green rays emanating from medallion -->
-  <line x1="400" y1="121" x2="400" y2="84"  stroke="#2ecc71" stroke-width="1.5" stroke-opacity="0.3"/>
-  <line x1="445" y1="140" x2="472" y2="112" stroke="#2ecc71" stroke-width="1" stroke-opacity="0.25"/>
-  <line x1="355" y1="140" x2="328" y2="112" stroke="#2ecc71" stroke-width="1" stroke-opacity="0.25"/>
-  <line x1="464" y1="185" x2="500" y2="185" stroke="#2ecc71" stroke-width="1" stroke-opacity="0.2"/>
-  <line x1="336" y1="185" x2="300" y2="185" stroke="#2ecc71" stroke-width="1" stroke-opacity="0.2"/>
-
-  <!-- Name -->
-  <text x="400" y="308" text-anchor="middle" font-family="Georgia,serif" font-size="38"
-        fill="#2ecc71" letter-spacing="2">San Judas Tadeo</text>
-  <text x="400" y="350" text-anchor="middle" font-family="Georgia,serif" font-size="16"
-        fill="#27ae60" opacity="0.85" font-style="italic">Saint Jude Thaddaeus</text>
-
-  <!-- Subtitle -->
-  <text x="400" y="386" text-anchor="middle" font-family="Georgia,serif" font-size="14"
-        fill="#2ecc71" opacity="0.7" font-style="italic">Patrono de las Causas Imposibles</text>
-  <text x="400" y="408" text-anchor="middle" font-family="Georgia,serif" font-size="13"
-        fill="#2ecc71" opacity="0.5" font-style="italic">Patron of Impossible Causes</text>
-
-  <!-- Divider -->
-  <line x1="280" y1="432" x2="520" y2="432" stroke="#2ecc71" stroke-width="0.6" stroke-opacity="0.45"/>
-
-  <!-- Feast day -->
-  <text x="400" y="466" text-anchor="middle" font-family="Arial,sans-serif" font-size="12"
-        fill="#27ae60" letter-spacing="3">FEAST DAY · OCTOBER 28</text>
+  <rect width="400" height="600" fill="url(#jd-bg)"/>
+  <rect width="400" height="600" fill="url(#jd-atm)"/>
+  <!-- Rays: green left, gold right -->
+  <polygon points="198,265 -25,610 115,610" fill="url(#jd-r1)" filter="url(#jd-gl)" opacity="0.75"/>
+  <polygon points="198,265 20,600  85,600"  fill="#28a860" opacity="0.40"/>
+  <polygon points="202,265 425,610 285,610" fill="url(#jd-r2)" filter="url(#jd-gl)" opacity="0.72"/>
+  <polygon points="202,265 375,600 315,600" fill="#f5e060" opacity="0.36"/>
+  <!-- Green robe -->
+  <path d="M168,155 Q140,205 126,390 Q200,415 274,390 Q260,205 232,155 Z" fill="#1a6a3a" opacity="0.84"/>
+  <!-- Blue mantle/cloak -->
+  <path d="M168,155 Q124,192 108,318 Q122,330 148,312 Q150,228 178,168 Z" fill="#1a3a8a" opacity="0.82"/>
+  <path d="M232,155 Q260,198 270,318 Q290,322 296,300 Q286,198 248,158 Z" fill="#1a3a8a" opacity="0.76"/>
+  <!-- Left arm with club (martyrdom) -->
+  <path d="M138,212 Q110,252 105,295" stroke="#1a6a3a" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.88"/>
+  <!-- Right arm with medal/image -->
+  <path d="M262,212 Q290,252 298,295" stroke="#1a3a8a" stroke-width="17" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <!-- Hands -->
+  <ellipse cx="104" cy="300" rx="13" ry="16" fill="#d4a06a" opacity="0.9"/>
+  <ellipse cx="298" cy="300" rx="13" ry="16" fill="#d4a06a" opacity="0.9"/>
+  <!-- Club (martyrdom symbol) -->
+  <line x1="104" y1="300" x2="104" y2="430" stroke="#7a5a28" stroke-width="5" stroke-opacity="0.8"/>
+  <ellipse cx="104" cy="435" rx="8" ry="10" fill="#7a5a28" opacity="0.75"/>
+  <!-- Medal of Jude (image of Christ on chest) -->
+  <circle cx="298" cy="310" r="12" fill="#c9a84c" opacity="0.75"/>
+  <circle cx="298" cy="310" r="9"  fill="#1a6a3a" opacity="0.5"/>
+  <text x="298" y="314" text-anchor="middle" font-family="Arial" font-size="8" fill="#e8c97a" opacity="0.9">JD</text>
+  <!-- Neck -->
+  <rect x="193" y="142" width="14" height="18" rx="4" fill="#d4a06a" opacity="0.9"/>
+  <!-- Head (dark bearded) -->
+  <ellipse cx="200" cy="108" rx="27" ry="31" fill="#c89060" opacity="0.92"/>
+  <!-- Dark hair -->
+  <path d="M173,107 Q176,72 200,68 Q224,72 227,107 Q219,88 200,86 Q181,88 173,107 Z" fill="#2a1408" opacity="0.9"/>
+  <!-- Beard -->
+  <path d="M182,132 Q185,149 200,154 Q215,149 218,132 Q210,143 200,144 Q190,143 182,132 Z" fill="#2a1408" opacity="0.75"/>
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#jd-g2)"/>
+  <circle cx="200" cy="108" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#020a04" opacity="0.86"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">SAN JUDAS TADEO  ·  SAINT JUDE THADDAEUS</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#70e890" font-style="italic">«San Judas Tadeo»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#f5e060" font-style="italic" opacity="0.8">«Saint Jude Thaddaeus»</text>
 </svg>

@@ -1,0 +1,59 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="sai-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#180810"/><stop offset="100%" stop-color="#0e0408"/>
+    </radialGradient>
+    <linearGradient id="sai-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#c02060" stop-opacity="1"/><stop offset="100%" stop-color="#600820" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="sai-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f8f0f8" stop-opacity="1"/><stop offset="100%" stop-color="#c8b0c8" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="sai-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sai-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#sai-bg)"/>
+  <rect width="400" height="600" fill="#380818" opacity="0.10"/>
+  <polygon points="198,265 -25,610 115,610" fill="url(#sai-r1)" filter="url(#sai-gl)" opacity="0.72"/>
+  <polygon points="198,265 20,600  85,600"  fill="#c02060" opacity="0.36"/>
+  <polygon points="202,265 425,610 285,610" fill="url(#sai-r2)" filter="url(#sai-gl)" opacity="0.65"/>
+  <polygon points="202,265 375,600 315,600" fill="#f8f0f8" opacity="0.30"/>
+  <!-- White dress (Agnes — virgin martyr) -->
+  <path d="M168,155 Q140,205 126,390 Q200,415 274,390 Q260,205 232,155 Z" fill="#f4eeec" opacity="0.92"/>
+  <!-- No heavy mantle — flowing white sleeves -->
+  <path d="M168,155 Q124,192 108,318 Q122,330 148,312 Q150,228 178,168 Z" fill="#e8e0dc" opacity="0.75"/>
+  <path d="M232,155 Q260,198 270,318 Q290,322 296,300 Q286,198 248,158 Z" fill="#e8e0dc" opacity="0.68"/>
+  <!-- Left arm: holds small white lamb -->
+  <path d="M140,215 Q112,252 102,295" stroke="#f4eeec" stroke-width="17" fill="none" stroke-linecap="round" opacity="0.86"/>
+  <!-- Right arm: palm branch -->
+  <path d="M260,215 Q285,252 292,292" stroke="#e8e0dc" stroke-width="16" fill="none" stroke-linecap="round" opacity="0.80"/>
+  <!-- Hands -->
+  <ellipse cx="102" cy="298" rx="12" ry="15" fill="#d4b090" opacity="0.9"/>
+  <ellipse cx="292" cy="295" rx="12" ry="15" fill="#d4b090" opacity="0.9"/>
+  <!-- Small white lamb (Agnes's symbol) -->
+  <ellipse cx="95"  cy="322" rx="17" ry="12" fill="#f0eeea" opacity="0.85"/>
+  <circle  cx="82"  cy="316" r="9" fill="#f0eeea" opacity="0.85"/>
+  <ellipse cx="85"  cy="316" rx="4" ry="3" fill="#3a2818" opacity="0.45"/>
+  <circle  cx="87"  cy="315" r="2" fill="#181818" opacity="0.65"/>
+  <!-- Palm branch -->
+  <path d="M292,295 Q285,268 280,244" stroke="#6aaa30" stroke-width="3" fill="none" opacity="0.78"/>
+  <!-- Long flowing hair -->
+  <path d="M175,107 Q155,130 148,165 Q168,155 178,168" fill="#c8905a" opacity="0.65"/>
+  <path d="M225,107 Q245,130 252,165 Q232,155 222,168" fill="#c8905a" opacity="0.60"/>
+  <!-- Neck + head -->
+  <rect x="193" y="142" width="14" height="16" rx="4" fill="#d4b090" opacity="0.9"/>
+  <ellipse cx="200" cy="108" rx="25" ry="29" fill="#d4b090" opacity="0.92"/>
+  <path d="M175,107 Q177,73 200,69 Q223,73 225,107 Q218,87 200,85 Q182,87 175,107 Z" fill="#c8905a" opacity="0.62"/>
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#sai-g2)"/>
+  <circle cx="200" cy="108" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#0e0408" opacity="0.86"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">SANTA INES  ·  SAINT AGNES</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#e06090" font-style="italic">«Santa Inés, Virgen y Mártir»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#f8f0f8" font-style="italic" opacity="0.8">«Saint Agnes, Virgin and Martyr»</text>
+</svg>
