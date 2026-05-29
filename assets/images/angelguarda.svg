@@ -18,14 +18,24 @@
   <polygon points="198,265 20,600  85,600"  fill="#8060e0" opacity="0.36"/>
   <polygon points="202,265 425,610 285,610" fill="url(#ag-r2)" filter="url(#ag-gl)" opacity="0.70"/>
   <polygon points="202,265 375,600 315,600" fill="#f8f8f0" opacity="0.34"/>
+  <!-- Wings -->
+  <path d="M168,173 Q118,140 48,62 Q22,44 14,70 Q58,94 112,138 Q144,162 168,182 Z" fill="#a898e8" opacity="0.74"/>
+  <path d="M168,178 Q128,158 72,108 Q52,94 52,116 Q92,138 132,168 Q152,180 168,188 Z" fill="#c8b8ff" opacity="0.66"/>
+  <path d="M168,184 Q138,176 104,160 Q88,152 92,168 Q120,172 150,185 Q162,189 168,194 Z" fill="#8878d8" opacity="0.58"/>
+  <path d="M168,179 Q122,152 65,98" stroke="#8060e0" stroke-width="0.9" fill="none" opacity="0.42"/>
+  <path d="M168,181 Q118,158 68,112" stroke="#8060e0" stroke-width="0.9" fill="none" opacity="0.36"/>
+  <path d="M168,183 Q124,164 82,132" stroke="#8060e0" stroke-width="0.9" fill="none" opacity="0.28"/>
+  <path d="M232,173 Q282,140 352,62 Q378,44 386,70 Q342,94 288,138 Q256,162 232,182 Z" fill="#a898e8" opacity="0.74"/>
+  <path d="M232,178 Q272,158 328,108 Q348,94 348,116 Q308,138 268,168 Q248,180 232,188 Z" fill="#c8b8ff" opacity="0.66"/>
+  <path d="M232,184 Q262,176 296,160 Q312,152 308,168 Q280,172 250,185 Q238,189 232,194 Z" fill="#8878d8" opacity="0.58"/>
+  <path d="M232,179 Q278,152 335,98" stroke="#8060e0" stroke-width="0.9" fill="none" opacity="0.42"/>
+  <path d="M232,181 Q282,158 332,112" stroke="#8060e0" stroke-width="0.9" fill="none" opacity="0.36"/>
+  <path d="M232,183 Q276,164 318,132" stroke="#8060e0" stroke-width="0.9" fill="none" opacity="0.28"/>
   <!-- White robe -->
   <path d="M168,155 Q140,205 126,390 Q200,415 274,390 Q260,205 232,155 Z" fill="#fffff0" opacity="0.88"/>
   <!-- Violet/purple mantle -->
   <path d="M168,155 Q124,192 108,318 Q122,330 148,312 Q150,228 178,168 Z" fill="#5030a0" opacity="0.82"/>
   <path d="M232,155 Q260,198 270,318 Q290,322 296,300 Q286,198 248,158 Z" fill="#5030a0" opacity="0.76"/>
-  <!-- Large wings (guardian angel prominent) -->
-  <path d="M168,155 Q98,175 68,265 Q100,255 130,215 Q148,185 168,170 Z" fill="#e8e8ff" opacity="0.30"/>
-  <path d="M232,155 Q302,175 332,265 Q300,255 270,215 Q252,185 232,170 Z" fill="#e8e8ff" opacity="0.30"/>
   <!-- Small child figure (the guarded soul) -->
   <ellipse cx="200" cy="430" rx="12" ry="14" fill="#f0d8a0" opacity="0.80"/>
   <circle  cx="200" cy="415" r="10" fill="#f0d8a0" opacity="0.78"/>
