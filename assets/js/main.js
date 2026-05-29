@@ -1405,6 +1405,61 @@ function initMenu() {
     }
   }
 
+  // ── INSTALL BUTTON (PWA) ──────────────────────────
+  const _installBtn = document.getElementById('heroInstallBtn');
+  const _iosModal   = document.getElementById('iosInstallModal');
+  const _iosClose   = document.getElementById('iosInstallClose');
+
+  if (_installBtn) {
+    const isIos = /iphone|ipad|ipod/i.test(navigator.userAgent);
+    const isInStandaloneMode = window.matchMedia('(display-mode: standalone)').matches
+      || window.navigator.standalone === true;
+
+    if (!isInStandaloneMode) {
+      if (isIos) {
+        // iOS: always show button, tap opens instructions
+        _installBtn.style.display = '';
+        _installBtn.addEventListener('click', () => {
+          if (_iosModal) {
+            _iosModal.style.display = 'flex';
+            // Sync language visibility
+            _iosModal.querySelectorAll('[data-lang]').forEach(el => {
+              el.style.display = el.getAttribute('data-lang') === currentLang ? '' : 'none';
+            });
+          }
+        });
+      } else {
+        // Android / desktop Chrome: wait for beforeinstallprompt
+        let _deferredPrompt = null;
+        window.addEventListener('beforeinstallprompt', e => {
+          e.preventDefault();
+          _deferredPrompt = e;
+          _installBtn.style.display = '';
+        });
+        _installBtn.addEventListener('click', () => {
+          if (_deferredPrompt) {
+            _deferredPrompt.prompt();
+            _deferredPrompt.userChoice.then(() => {
+              _deferredPrompt = null;
+              _installBtn.style.display = 'none';
+            });
+          }
+        });
+        // Hide button once installed
+        window.addEventListener('appinstalled', () => {
+          _installBtn.style.display = 'none';
+        });
+      }
+    }
+  }
+
+  if (_iosClose && _iosModal) {
+    _iosClose.addEventListener('click', () => { _iosModal.style.display = 'none'; });
+    _iosModal.addEventListener('click', e => {
+      if (e.target === _iosModal) _iosModal.style.display = 'none';
+    });
+  }
+
   // ── TODAY’S SAINT PILL ───────────────────────────
   if (!isIntercessorPage()) {
     const _pill     = document.getElementById('heroTodayPill');

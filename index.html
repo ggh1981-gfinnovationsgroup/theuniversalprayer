@@ -93,7 +93,30 @@
           <span data-lang="es">Compartir ↗</span>
           <span data-lang="en" style="display:none">Share ↗</span>
         </button>
+        <button class="hero-install-btn" id="heroInstallBtn" aria-label="Instalar app" style="display:none">
+          <span data-lang="es">📲 Instalar app</span>
+          <span data-lang="en" style="display:none">📲 Install app</span>
+        </button>
       </div>
+
+  <!-- iOS install instructions modal -->
+  <div class="ios-install-modal" id="iosInstallModal" style="display:none" role="dialog" aria-modal="true">
+    <div class="ios-install-box">
+      <button class="ios-install-close" id="iosInstallClose" aria-label="Cerrar">✕</button>
+      <p class="ios-install-title" data-lang="es">Instalar en iPhone / iPad</p>
+      <p class="ios-install-title" data-lang="en" style="display:none">Install on iPhone / iPad</p>
+      <ol class="ios-install-steps">
+        <li data-lang="es">Abre esta página en <strong>Safari</strong></li>
+        <li data-lang="en" style="display:none">Open this page in <strong>Safari</strong></li>
+        <li data-lang="es">Toca el botón <strong>Compartir</strong> <span class="ios-share-icon">⬆</span></li>
+        <li data-lang="en" style="display:none">Tap the <strong>Share</strong> button <span class="ios-share-icon">⬆</span></li>
+        <li data-lang="es">Elige <strong>"Agregar a pantalla de inicio"</strong></li>
+        <li data-lang="en" style="display:none">Choose <strong>"Add to Home Screen"</strong></li>
+        <li data-lang="es">Toca <strong>Agregar</strong> — ¡listo!</li>
+        <li data-lang="en" style="display:none">Tap <strong>Add</strong> — done!</li>
+      </ol>
+    </div>
+  </div>
     </div>
     <div class="hero-glow"></div>
   </section>
