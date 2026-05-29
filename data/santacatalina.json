@@ -1,0 +1,82 @@
+{
+  "id": "santacatalina",
+  "name": {
+    "es": "Santa Catalina de Siena",
+    "en": "Saint Catherine of Siena"
+  },
+  "feast_day": {
+    "es": "29 de abril",
+    "en": "April 29"
+  },
+  "image": "/assets/images/santacatalina.svg",
+  "prayer": {
+    "es": "Santa Catalina de Siena, Doctora de la Iglesia y mística dominica, cuyo amor ardiente por Dios y por la Iglesia transformó el mundo de tu tiempo — a ti acudo en mi necesidad.\n\nTú que no tenías estudios pero conocías a Dios mejor que los teólogos, intercede para que yo también lo busque con todo el corazón. Tú que obtuviste del Señor la reforma del papado y la paz de la Iglesia, intercede hoy por la unidad de los cristianos y por la santidad de nuestra Iglesia.\n\nSanta Catalina, que dijiste: 'Si eres lo que debes ser, prenderás fuego en Italia y en el mundo entero' — intercede para que yo también sea lo que Dios quiere que sea.\n\n¡Santa Catalina de Siena, ruega por nosotros!\nAmén.",
+    "en": "Saint Catherine of Siena, Doctor of the Church and Dominican mystic, whose ardent love for God and for the Church transformed the world of your time — to you I come in my need.\n\nYou who had no formal studies yet knew God better than theologians, intercede that I too may seek Him with all my heart. You who obtained from the Lord the reform of the papacy and the peace of the Church, intercede today for the unity of Christians and for the holiness of our Church.\n\nSaint Catherine, who said: 'If you are who you ought to be, you will set Italy and the whole world on fire' — intercede that I too may be what God wants me to be.\n\nSaint Catherine of Siena, pray for us!\nAmen."
+  },
+  "history": {
+    "es": "Catalina Benincasa nació en Siena en 1347, la vigésima tercera de los veinticinco hijos de un tintorero. Desde muy niña experimentó visiones y a los siete años consagró su virginidad a Cristo. A los dieciséis años se afilió a las Mantellate, terceras dominicas que vivían en el siglo, y pasó tres años en reclusión y oración en su habitación, durante los cuales experimentó esponsales místicos con Cristo.\n\nA los veinte años recibió el mandato interior de salir al mundo. Comenzó a cuidar enfermos en los hospitales, leprosos, y condenados a muerte. Su fama de santidad atrajo a un grupo de seguidores que le llamaban 'mamma'. Alrededor de 1375, durante una visita a Pisa, recibió los estigmas, que pidió que permanecieran invisibles hasta su muerte.\n\nEra analfabeta hasta pasados los veinte años, cuando aprendió a leer milagrosamente. Dictó a sus secretarios un vasto corpus de cartas — 382 cartas sobreviven — dirigidas a papas, reyes, reinas, cardenales y personas humildes por igual, exhortando a todos con extraordinaria valentía.\n\nEn 1376, a los veintinueve años, viajó a Aviñón y convenció al papa Gregorio XI de regresar a Roma, poniendo fin al exilio de los papas en Francia que había durado setenta años. Fue un logro político y eclesiástico sin precedentes para una mujer laica de su tiempo.\n\nMurió en Roma en 1380, con solo treinta y tres años, agotada por sus penitencias y su trabajo. Fue canonizada en 1461 y declarada Doctora de la Iglesia en 1970 por Pablo VI, junto con Teresa de Ávila. En 1999 Juan Pablo II la proclamó Copatrona de Europa.",
+    "en": "Caterina Benincasa was born in Siena in 1347, the twenty-third of twenty-five children of a dyer. From early childhood she experienced visions and at age seven consecrated her virginity to Christ. At sixteen she joined the Mantellate, Dominican tertiaries living in the world, and spent three years in reclusion and prayer in her room, during which she experienced mystical espousals with Christ.\n\nAt twenty she received an interior command to go out into the world. She began caring for the sick in hospitals, lepers, and the condemned. Her reputation for holiness attracted a group of followers who called her 'mamma'. Around 1375, during a visit to Pisa, she received the stigmata, which she asked to remain invisible until her death.\n\nShe was illiterate until past age twenty, when she miraculously learned to read. She dictated to her secretaries a vast corpus of letters — 382 letters survive — addressed to popes, kings, queens, cardinals, and humble people alike, exhorting all with extraordinary boldness.\n\nIn 1376, at twenty-nine, she traveled to Avignon and convinced Pope Gregory XI to return to Rome, ending the exile of the popes in France that had lasted seventy years. It was an unprecedented political and ecclesiastical achievement for a laywoman of her time.\n\nShe died in Rome in 1380, only thirty-three years old, exhausted by her penances and her work. She was canonized in 1461 and declared Doctor of the Church in 1970 by Paul VI, together with Teresa of Ávila. In 1999 John Paul II proclaimed her Co-Patroness of Europe."
+  },
+  "novena": [
+    {
+      "day": 1,
+      "es": "Día 1 — La Búsqueda de Dios\n\nSanta Catalina, que buscaste a Dios con todo tu ser desde la infancia y recibiste el don de los esponsales místicos con Cristo, intercede para que yo también anhele a Dios por encima de todo. Que mi oración sea sincera y perseverante.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 1 — The Search for God\n\nSaint Catherine, who sought God with your whole being from childhood and received the gift of mystical espousals with Christ, intercede that I too may long for God above all things. May my prayer be sincere and persevering.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 2,
+      "es": "Día 2 — El Servicio a los Pobres\n\nSanta Catalina, que saliste de tu clausura familiar para servir a los enfermos, leprosos y condenados con amor sin reservas, intercede por los más pobres y descartados de nuestra sociedad.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 2 — Service to the Poor\n\nSaint Catherine, who left your domestic enclosure to serve the sick, lepers, and condemned with unreserved love, intercede for the poorest and most discarded in our society.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 3,
+      "es": "Día 3 — La Valentía Profética\n\nSanta Catalina, que escribiste con audacia a papas y reyes llamándoles a la conversión y a la fidelidad, intercede por los líderes de la Iglesia y del mundo. Que tengan la valentía de la verdad y de la justicia.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 3 — Prophetic Courage\n\nSaint Catherine, who wrote boldly to popes and kings calling them to conversion and fidelity, intercede for Church and world leaders. May they have the courage of truth and justice.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 4,
+      "es": "Día 4 — Los Estigmas y la Cruz\n\nSanta Catalina, que recibiste los estigmas de Cristo y compartiste su pasión en cuerpo y alma, intercede por los que sufren enfermedades crónicas, dolores invisibles y cargas que nadie ve.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 4 — The Stigmata and the Cross\n\nSaint Catherine, who received the stigmata of Christ and shared His passion in body and soul, intercede for those suffering chronic illness, invisible pain, and burdens no one sees.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 5,
+      "es": "Día 5 — La Unidad de la Iglesia\n\nSanta Catalina, que convenciste al Papa de volver a Roma y lloraste la división entre los cristianos, intercede por la unidad de la Iglesia y el ecumenismo. Que todos los que creen en Cristo estén un día plenamente unidos.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 5 — The Unity of the Church\n\nSaint Catherine, who convinced the Pope to return to Rome and wept over the division among Christians, intercede for the unity of the Church and ecumenism. May all who believe in Christ one day be fully united.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 6,
+      "es": "Día 6 — La Sabiduría Sin Estudios\n\nSanta Catalina, que eras analfabeta y sin embargo dictaste textos de profunda teología mística, intercede por los sencillos, los poco instruidos, los que se sienten insuficientes. Que Dios les ilumine con su Espíritu.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 6 — Wisdom Without Study\n\nSaint Catherine, who were illiterate and yet dictated texts of deep mystical theology, intercede for the simple, the poorly educated, those who feel inadequate. May God enlighten them with His Spirit.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 7,
+      "es": "Día 7 — La Paz\n\nSanta Catalina, artesana de la paz entre ciudades en guerra y Copatrona de Europa, intercede por la paz en las naciones, en las familias y en los corazones divididos.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 7 — Peace\n\nSaint Catherine, artisan of peace between warring cities and Co-Patroness of Europe, intercede for peace among nations, in families, and in divided hearts.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 8,
+      "es": "Día 8 — La Santidad Laical\n\nSanta Catalina, laica dominica que alcanzaste la más alta santidad sin ser sacerdote ni monja de clausura, intercede por todos los laicos del mundo que buscan santificarse en medio del siglo.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 8 — Lay Holiness\n\nSaint Catherine, Dominican laywoman who attained the highest holiness without being a priest or cloistered nun, intercede for all laypeople in the world seeking to be sanctified in the midst of secular life.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 9,
+      "es": "Día 9 — La Petición Final\n\nSanta Catalina de Siena, Doctora de la Iglesia y llama viva del amor de Dios, en este noveno día te confío mi petición más urgente (pausa y presenta tu intención). Tú que dijiste 'sé lo que debes ser y prenderás fuego al mundo', intercede para que yo sea fiel a mi vocación.\n\n¡Santa Catalina de Siena, ruega por nosotros!\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 9 — The Final Petition\n\nSaint Catherine of Siena, Doctor of the Church and living flame of God's love, on this ninth day I entrust to you my most urgent petition (pause and present your intention). You who said 'be who you ought to be and you will set the world on fire', intercede that I may be faithful to my vocation.\n\nSaint Catherine of Siena, pray for us!\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    }
+  ],
+  "chaplet": {
+    "available": true,
+    "es": "Coronilla de Santa Catalina de Siena\n\nIntroducción:\nEn el nombre del Padre, del Hijo y del Espíritu Santo. Amén.\n\nVen, Espíritu de sabiduría, que iluminaste a Santa Catalina sin que tuviera estudios.\n\nEn cada uno de los 5 grupos (uno por cada llaga de Cristo):\n1 Padre Nuestro y 3 Ave Marías\n\nLos 5 misterios:\n1. Los esponsales místicos — Cristo entregó a Catalina su corazón por el suyo.\n2. El servicio a los leprosos — el amor que no retrocede ante ninguna fealdad.\n3. La carta al Papa — la valentía de decir la verdad al poder.\n4. El regreso de Roma — la Iglesia reunida de nuevo en su sede.\n5. La muerte a los 33 años — el agotamiento de quien lo dio todo por amor.\n\nOración final:\nSanta Catalina, enciende en mi corazón el mismo fuego que ardió en el tuyo. Que tu lema sea el mío: 'Al que dije sí, le diré sí para siempre.' Amén.",
+    "en": "Chaplet of Saint Catherine of Siena\n\nIntroduction:\nIn the name of the Father, and of the Son, and of the Holy Spirit. Amen.\n\nCome, Spirit of wisdom, who enlightened Saint Catherine without formal learning.\n\nFor each of the 5 groups (one for each wound of Christ):\n1 Our Father and 3 Hail Marys\n\nThe 5 mysteries:\n1. The mystical espousals — Christ gave Catherine His heart in exchange for hers.\n2. Service to lepers — the love that does not recoil before any ugliness.\n3. The letter to the Pope — the courage to speak truth to power.\n4. The return to Rome — the Church reunited once more in her see.\n5. Death at 33 — the exhaustion of one who gave everything for love.\n\nFinal prayer:\nSaint Catherine, kindle in my heart the same fire that burned in yours. May your motto be mine: 'To the One I said yes to, I will say yes forever.' Amen."
+  },
+  "litany": {
+    "available": true,
+    "es": "Letanías de Santa Catalina de Siena\n\nSeñor, ten piedad. Señor, ten piedad.\nCristo, ten piedad. Cristo, ten piedad.\nSeñor, ten piedad. Señor, ten piedad.\n\nSanta Catalina, esposa mística de Cristo, ruega por nosotros.\nSanta Catalina, Doctora de la Iglesia, ruega por nosotros.\nSanta Catalina, mensajera del amor de Dios, ruega por nosotros.\nSanta Catalina, valiente reformadora de la Iglesia, ruega por nosotros.\nSanta Catalina, que llevaste los estigmas del Señor, ruega por nosotros.\nSanta Catalina, que escribiste con fuego al Papa, ruega por nosotros.\nSanta Catalina, madre de los pobres y enfermos, ruega por nosotros.\nSanta Catalina, Copatrona de Europa, ruega por nosotros.\nSanta Catalina, que ardiste de amor a los treinta y tres años, ruega por nosotros.\n\nCordero de Dios, que quitas el pecado del mundo, perdónanos, Señor.\nCordero de Dios, que quitas el pecado del mundo, escúchanos, Señor.\nCordero de Dios, que quitas el pecado del mundo, ten piedad de nosotros.\n\nOremos: Oh Dios, que encendiste a Santa Catalina de Siena con el amor divino para que contemplara tu pasión y trabajara por la paz y la unidad de la Iglesia: concédenos, por su intercesión, participar en los misterios de tu amor. Por Jesucristo Nuestro Señor. Amén.",
+    "en": "Litany of Saint Catherine of Siena\n\nLord, have mercy. Lord, have mercy.\nChrist, have mercy. Christ, have mercy.\nLord, have mercy. Lord, have mercy.\n\nSaint Catherine, mystical spouse of Christ, pray for us.\nSaint Catherine, Doctor of the Church, pray for us.\nSaint Catherine, messenger of God's love, pray for us.\nSaint Catherine, courageous reformer of the Church, pray for us.\nSaint Catherine, who bore the stigmata of the Lord, pray for us.\nSaint Catherine, who wrote with fire to the Pope, pray for us.\nSaint Catherine, mother of the poor and sick, pray for us.\nSaint Catherine, Co-Patroness of Europe, pray for us.\nSaint Catherine, who burned with love at thirty-three, pray for us.\n\nLamb of God, who takes away the sins of the world, spare us, O Lord.\nLamb of God, who takes away the sins of the world, graciously hear us, O Lord.\nLamb of God, who takes away the sins of the world, have mercy on us.\n\nLet us pray: O God, who set Saint Catherine of Siena aflame with divine love to contemplate Your passion and labor for the peace and unity of the Church: grant us, through her intercession, to share in the mysteries of Your love. Through Jesus Christ Our Lord. Amen."
+  },
+  "consecration": {
+    "available": true,
+    "es": "Consagración a Santa Catalina de Siena\n\nSanta Catalina de Siena, Doctora de la Iglesia, hoy me consagro a tu intercesión y a tu ejemplo.\n\nEnséñame tu valentía: la que escribe cartas difíciles, la que dice la verdad cuando es incómoda, la que no abandona la Iglesia aunque sufra por ella.\n\nEnséñame tu amor: el que cuida al leproso, el que busca al condenado, el que no pregunta si merece ser amado.\n\nEnséñame tu oración: la que escucha más que habla, la que permanece en silencio hasta recibir luz.\n\nQue tu fuego sea mi fuego. Amén.",
+    "en": "Consecration to Saint Catherine of Siena\n\nSaint Catherine of Siena, Doctor of the Church, today I consecrate myself to your intercession and your example.\n\nTeach me your courage: the kind that writes difficult letters, speaks truth when it is uncomfortable, does not abandon the Church even while suffering for her.\n\nTeach me your love: the kind that tends the leper, seeks out the condemned, does not ask whether one deserves to be loved.\n\nTeach me your prayer: the kind that listens more than it speaks, that remains in silence until receiving light.\n\nMay your fire be my fire. Amen."
+  }
+}

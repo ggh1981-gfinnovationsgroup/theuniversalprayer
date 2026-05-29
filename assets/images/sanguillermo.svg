@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="guill-bg" cx="50%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#001508"/>
+      <stop offset="100%" stop-color="#000602"/>
+    </radialGradient>
+    <radialGradient id="guill-glow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="rgba(20,100,40,0.22)"/>
+      <stop offset="100%" stop-color="rgba(20,100,40,0)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background: forest green -->
+  <rect width="800" height="600" fill="url(#guill-bg)"/>
+  <rect width="800" height="600" fill="url(#guill-glow)"/>
+
+  <!-- Border -->
+  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#2a7a3a" stroke-width="1" stroke-opacity="0.55"/>
+  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#2a7a3a" stroke-width="0.5" stroke-opacity="0.25"/>
+
+  <!-- Side accent strips -->
+  <rect x="28" y="28" width="6" height="544" rx="3" fill="#1a5a2a" opacity="0.75"/>
+  <rect x="766" y="28" width="6" height="544" rx="3" fill="#1a5a2a" opacity="0.75"/>
+
+  <!-- Mountain silhouette -->
+  <path d="M 60 440 L 200 230 L 280 310 L 400 145 L 520 310 L 600 230 L 740 440 Z" fill="#0a1a0a" stroke="#2a7a3a" stroke-width="1.5" opacity="0.85"/>
+  <!-- Snow cap on peak -->
+  <path d="M 400 145 L 375 190 L 400 185 L 425 190 Z" fill="#e0e8e0" opacity="0.75"/>
+
+  <!-- Star above mountain peak — guiding star -->
+  <circle cx="400" cy="115" r="5" fill="#e8c97a" opacity="0.90"/>
+  <!-- Star rays -->
+  <line x1="400" y1="100" x2="400" y2="90" stroke="#e8c97a" stroke-width="1.5" opacity="0.70"/>
+  <line x1="400" y1="130" x2="400" y2="140" stroke="#e8c97a" stroke-width="1.5" opacity="0.70"/>
+  <line x1="385" y1="115" x2="375" y2="115" stroke="#e8c97a" stroke-width="1.5" opacity="0.70"/>
+  <line x1="415" y1="115" x2="425" y2="115" stroke="#e8c97a" stroke-width="1.5" opacity="0.70"/>
+  <line x1="389" y1="104" x2="382" y2="97" stroke="#e8c97a" stroke-width="1.2" opacity="0.55"/>
+  <line x1="411" y1="126" x2="418" y2="133" stroke="#e8c97a" stroke-width="1.2" opacity="0.55"/>
+  <line x1="411" y1="104" x2="418" y2="97" stroke="#e8c97a" stroke-width="1.2" opacity="0.55"/>
+  <line x1="389" y1="126" x2="382" y2="133" stroke="#e8c97a" stroke-width="1.2" opacity="0.55"/>
+
+  <!-- Pilgrim staff leaning against mountain -->
+  <line x1="350" y1="430" x2="310" y2="210" stroke="#6a4020" stroke-width="5" stroke-linecap="round" opacity="0.80"/>
+  <!-- Crooked top of staff -->
+  <path d="M 310 210 Q 295 195 298 180 Q 305 168 318 172 Q 326 178 320 190 Q 315 200 310 210" fill="none" stroke="#6a4020" stroke-width="4" stroke-linecap="round" opacity="0.78"/>
+  <!-- Gourd hanging from staff -->
+  <ellipse cx="298" cy="210" rx="9" ry="11" fill="#4a3010" stroke="#8a6020" stroke-width="1.2" opacity="0.80"/>
+  <line x1="307" y1="200" x2="314" y2="208" stroke="#8a6020" stroke-width="1.2" opacity="0.70"/>
+
+  <!-- Small church at base of mountain (Montevergine) -->
+  <rect x="435" y="368" width="55" height="50" rx="3" fill="#0a1a0a" stroke="#2a7a3a" stroke-width="1.2" opacity="0.88"/>
+  <!-- Church roof / triangle -->
+  <path d="M 430 368 L 462 348 L 495 368 Z" fill="#0a1a0a" stroke="#2a7a3a" stroke-width="1.2" opacity="0.88"/>
+  <!-- Bell tower -->
+  <rect x="451" y="318" width="22" height="32" rx="2" fill="#0a1a0a" stroke="#2a7a3a" stroke-width="1.2" opacity="0.88"/>
+  <!-- Bell tower cap -->
+  <path d="M 447 318 L 462 305 L 477 318 Z" fill="#0a1a0a" stroke="#2a7a3a" stroke-width="1.2" opacity="0.88"/>
+  <!-- Small cross on tower -->
+  <line x1="462" y1="298" x2="462" y2="308" stroke="#c9a84c" stroke-width="2" opacity="0.80"/>
+  <line x1="457" y1="302" x2="467" y2="302" stroke="#c9a84c" stroke-width="2" opacity="0.80"/>
+  <!-- Church window -->
+  <rect x="454" y="382" width="16" height="22" rx="7" fill="#c9a84c" opacity="0.18"/>
+
+  <!-- Background stars -->
+  <circle cx="155" cy="85" r="1.5" fill="#e8e8ff" opacity="0.45"/>
+  <circle cx="645" cy="95" r="1.5" fill="#e8e8ff" opacity="0.45"/>
+  <circle cx="200" cy="160" r="1.2" fill="#e8e8ff" opacity="0.35"/>
+  <circle cx="600" cy="175" r="1.2" fill="#e8e8ff" opacity="0.35"/>
+  <circle cx="130" cy="310" r="1.3" fill="#2a7a3a" opacity="0.40"/>
+  <circle cx="670" cy="330" r="1.3" fill="#2a7a3a" opacity="0.40"/>
+
+  <!-- Name text -->
+  <text x="400" y="498" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#e8c97a" letter-spacing="1">San Guillermo de Vercelli</text>
+  <text x="400" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#c9a84c" font-style="italic" opacity="0.85">Saint William of Vercelli</text>
+  <text x="400" y="546" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#2a5a3a" letter-spacing="2.5">25 DE JUN · JUN 25</text>
+</svg>

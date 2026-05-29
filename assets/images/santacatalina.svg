@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="cat-bg" cx="50%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#130820"/>
+      <stop offset="100%" stop-color="#040208"/>
+    </radialGradient>
+    <radialGradient id="cat-glow" cx="50%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="rgba(120,30,180,0.22)"/>
+      <stop offset="100%" stop-color="rgba(120,30,180,0)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background: deep purple/Dominican -->
+  <rect width="800" height="600" fill="url(#cat-bg)"/>
+  <rect width="800" height="600" fill="url(#cat-glow)"/>
+
+  <!-- Border -->
+  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#8a3ab2" stroke-width="1" stroke-opacity="0.55"/>
+  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#8a3ab2" stroke-width="0.5" stroke-opacity="0.25"/>
+
+  <!-- Side accent strips -->
+  <rect x="28" y="28" width="6" height="544" rx="3" fill="#5a1a8a" opacity="0.75"/>
+  <rect x="766" y="28" width="6" height="544" rx="3" fill="#5a1a8a" opacity="0.75"/>
+
+  <!-- Lily — symbol of Catherine's purity -->
+  <!-- Stem -->
+  <line x1="400" y1="430" x2="400" y2="200" stroke="#4a8a30" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+  <!-- Left leaf -->
+  <path d="M 400 340 Q 365 320 350 295 Q 375 310 400 330 Z" fill="#4a8a30" opacity="0.70"/>
+  <!-- Right leaf -->
+  <path d="M 400 340 Q 435 320 450 295 Q 425 310 400 330 Z" fill="#4a8a30" opacity="0.70"/>
+  <!-- Main flower petals -->
+  <ellipse cx="400" cy="188" rx="18" ry="30" fill="#e8e0f8" opacity="0.90"/>
+  <ellipse cx="400" cy="188" rx="18" ry="30" fill="none" stroke="#8a3ab2" stroke-width="1" opacity="0.60"/>
+  <!-- Side petal left -->
+  <ellipse cx="375" cy="198" rx="12" ry="24" fill="#e8e0f8" opacity="0.80" transform="rotate(-30 375 198)"/>
+  <!-- Side petal right -->
+  <ellipse cx="425" cy="198" rx="12" ry="24" fill="#e8e0f8" opacity="0.80" transform="rotate(30 425 198)"/>
+  <!-- Stamen -->
+  <line x1="400" y1="175" x2="400" y2="195" stroke="#c9a84c" stroke-width="2" opacity="0.85"/>
+  <circle cx="400" cy="173" r="3" fill="#c9a84c" opacity="0.90"/>
+
+  <!-- Crown of thorns ring — central symbol below lily -->
+  <!-- Thorns ring -->
+  <circle cx="400" cy="320" r="45" fill="none" stroke="#4a2a10" stroke-width="6" opacity="0.75"/>
+  <!-- Individual thorns -->
+  <line x1="400" y1="275" x2="400" y2="260" stroke="#4a2a10" stroke-width="2" opacity="0.70"/>
+  <line x1="432" y1="288" x2="442" y2="276" stroke="#4a2a10" stroke-width="2" opacity="0.70"/>
+  <line x1="445" y1="320" x2="460" y2="320" stroke="#4a2a10" stroke-width="2" opacity="0.70"/>
+  <line x1="432" y1="352" x2="442" y2="364" stroke="#4a2a10" stroke-width="2" opacity="0.70"/>
+  <line x1="400" y1="365" x2="400" y2="380" stroke="#4a2a10" stroke-width="2" opacity="0.70"/>
+  <line x1="368" y1="352" x2="358" y2="364" stroke="#4a2a10" stroke-width="2" opacity="0.70"/>
+  <line x1="355" y1="320" x2="340" y2="320" stroke="#4a2a10" stroke-width="2" opacity="0.70"/>
+  <line x1="368" y1="288" x2="358" y2="276" stroke="#4a2a10" stroke-width="2" opacity="0.70"/>
+  <!-- Red mark in center — stigmata dot -->
+  <circle cx="400" cy="320" r="6" fill="#8a1a1a" opacity="0.80"/>
+
+  <!-- Stars / sparks of inspiration -->
+  <circle cx="155" cy="105" r="2" fill="#8a3ab2" opacity="0.50"/>
+  <circle cx="645" cy="125" r="2" fill="#8a3ab2" opacity="0.50"/>
+  <circle cx="175" cy="450" r="1.5" fill="#8a3ab2" opacity="0.35"/>
+  <circle cx="625" cy="430" r="1.5" fill="#8a3ab2" opacity="0.35"/>
+  <circle cx="190" cy="280" r="1.3" fill="#c9a84c" opacity="0.40"/>
+  <circle cx="610" cy="300" r="1.3" fill="#c9a84c" opacity="0.40"/>
+  <circle cx="128" cy="330" r="1.5" fill="#8a3ab2" opacity="0.30"/>
+  <circle cx="672" cy="260" r="1.5" fill="#8a3ab2" opacity="0.30"/>
+
+  <!-- Name text -->
+  <text x="400" y="498" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#e8c97a" letter-spacing="1">Santa Catalina de Siena</text>
+  <text x="400" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#c9a84c" font-style="italic" opacity="0.85">Saint Catherine of Siena</text>
+  <text x="400" y="546" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#5a3a7a" letter-spacing="2.5">29 DE ABR · APR 29</text>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="clara-bg" cx="50%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#140e00"/>
+      <stop offset="100%" stop-color="#060400"/>
+    </radialGradient>
+    <radialGradient id="clara-glow" cx="50%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="rgba(160,110,10,0.22)"/>
+      <stop offset="100%" stop-color="rgba(160,110,10,0)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background: Franciscan warm brown/gold -->
+  <rect width="800" height="600" fill="url(#clara-bg)"/>
+  <rect width="800" height="600" fill="url(#clara-glow)"/>
+
+  <!-- Border -->
+  <rect x="28" y="28" width="744" height="544" rx="6" fill="none" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.55"/>
+  <rect x="36" y="36" width="728" height="528" rx="4" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.25"/>
+
+  <!-- Side accent strips -->
+  <rect x="28" y="28" width="6" height="544" rx="3" fill="#8a6020" opacity="0.75"/>
+  <rect x="766" y="28" width="6" height="544" rx="3" fill="#8a6020" opacity="0.75"/>
+
+  <!-- Monstrance — central symbol (Eucharist driving away enemies) -->
+  <!-- Monstrance base -->
+  <rect x="388" y="400" width="24" height="10" rx="4" fill="#8a6020" stroke="#c9a84c" stroke-width="1" opacity="0.90"/>
+  <!-- Monstrance stem -->
+  <rect x="397" y="340" width="6" height="60" fill="#8a6020" stroke="#c9a84c" stroke-width="1" opacity="0.88"/>
+  <!-- Monstrance luna (inner disc) -->
+  <circle cx="400" cy="285" r="34" fill="#0a0800" stroke="#c9a84c" stroke-width="2" opacity="0.90"/>
+  <!-- Host in luna -->
+  <circle cx="400" cy="285" r="18" fill="#e8d080" opacity="0.90"/>
+  <!-- Cross on host -->
+  <line x1="400" y1="270" x2="400" y2="300" stroke="#8a6020" stroke-width="1.5" opacity="0.80"/>
+  <line x1="385" y1="285" x2="415" y2="285" stroke="#8a6020" stroke-width="1.5" opacity="0.80"/>
+  <!-- Monstrance rays -->
+  <line x1="400" y1="251" x2="400" y2="232" stroke="#c9a84c" stroke-width="2.5" opacity="0.80"/>
+  <line x1="400" y1="319" x2="400" y2="338" stroke="#c9a84c" stroke-width="2.5" opacity="0.80"/>
+  <line x1="366" y1="285" x2="347" y2="285" stroke="#c9a84c" stroke-width="2.5" opacity="0.80"/>
+  <line x1="434" y1="285" x2="453" y2="285" stroke="#c9a84c" stroke-width="2.5" opacity="0.80"/>
+  <line x1="376" y1="261" x2="362" y2="247" stroke="#c9a84c" stroke-width="2" opacity="0.65"/>
+  <line x1="424" y1="261" x2="438" y2="247" stroke="#c9a84c" stroke-width="2" opacity="0.65"/>
+  <line x1="376" y1="309" x2="362" y2="323" stroke="#c9a84c" stroke-width="2" opacity="0.65"/>
+  <line x1="424" y1="309" x2="438" y2="323" stroke="#c9a84c" stroke-width="2" opacity="0.65"/>
+  <!-- Outer ring -->
+  <circle cx="400" cy="285" r="50" fill="none" stroke="#c9a84c" stroke-width="1" opacity="0.35"/>
+
+  <!-- Lily — purity symbol, left side -->
+  <!-- Stem -->
+  <line x1="285" y1="420" x2="285" y2="260" stroke="#4a8a30" stroke-width="2.5" stroke-linecap="round" opacity="0.80"/>
+  <!-- Leaf -->
+  <path d="M 285 340 Q 260 320 252 295 Q 272 308 285 328 Z" fill="#4a8a30" opacity="0.65"/>
+  <!-- Petals -->
+  <ellipse cx="285" cy="248" rx="13" ry="22" fill="#e8e0f8" opacity="0.85"/>
+  <ellipse cx="271" cy="256" rx="9" ry="18" fill="#e8e0f8" opacity="0.70" transform="rotate(-25 271 256)"/>
+  <ellipse cx="299" cy="256" rx="9" ry="18" fill="#e8e0f8" opacity="0.70" transform="rotate(25 299 256)"/>
+
+  <!-- Decorative dots / stars -->
+  <circle cx="155" cy="105" r="2" fill="#c9a84c" opacity="0.45"/>
+  <circle cx="645" cy="125" r="2" fill="#c9a84c" opacity="0.45"/>
+  <circle cx="175" cy="450" r="1.5" fill="#c9a84c" opacity="0.35"/>
+  <circle cx="625" cy="430" r="1.5" fill="#c9a84c" opacity="0.35"/>
+  <circle cx="192" cy="290" r="1.2" fill="#c9a84c" opacity="0.40"/>
+  <circle cx="608" cy="305" r="1.2" fill="#c9a84c" opacity="0.40"/>
+
+  <!-- Glow behind monstrance -->
+  <circle cx="400" cy="285" r="70" fill="none" stroke="#e8c97a" stroke-width="0.8" opacity="0.15"/>
+  <circle cx="400" cy="285" r="90" fill="none" stroke="#e8c97a" stroke-width="0.5" opacity="0.08"/>
+
+  <!-- Name text -->
+  <text x="400" y="498" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#e8c97a" letter-spacing="1">Santa Clara de Asís</text>
+  <text x="400" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#c9a84c" font-style="italic" opacity="0.85">Saint Clare of Assisi</text>
+  <text x="400" y="546" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#7a5a20" letter-spacing="2.5">11 DE AGO · AUG 11</text>
+</svg>

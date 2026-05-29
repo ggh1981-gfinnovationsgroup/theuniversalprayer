@@ -1,0 +1,80 @@
+{
+  "id": "santabarbara",
+  "name": {
+    "es": "Santa Bárbara",
+    "en": "Saint Barbara"
+  },
+  "feast_day": {
+    "es": "4 de diciembre",
+    "en": "December 4"
+  },
+  "image": "/assets/images/santabarbara.svg",
+  "prayer": {
+    "es": "Santa Bárbara, mártir valerosa que prefiriste la muerte a la apostasía, y en cuyo honor se abre el cielo con los sacramentos para los que parten repentinamente — a ti acudo en mi necesidad.\n\nTú que llevas la torre como símbolo de tu cautiverio convertido en fortaleza, intercede para que quienes estamos prisioneros de miedos, vicios o situaciones sin salida encontremos la fuerza de romper nuestras cadenas.\n\nTú que eres invocada en las tormentas y ante la muerte repentina, intercede para que nadie de los que amo parta de este mundo sin haber recibido los últimos sacramentos.\n\n¡Santa Bárbara, ruega por nosotros!\nAmén.",
+    "en": "Saint Barbara, valiant martyr who chose death over apostasy, and in whose honor heaven opens with the sacraments for those who depart suddenly — to you I come in my need.\n\nYou who carry the tower as a symbol of your captivity turned into a fortress, intercede that those of us imprisoned by fears, vices, or hopeless situations may find the strength to break our chains.\n\nYou who are invoked in storms and before sudden death, intercede that no one I love departs this world without having received the last sacraments.\n\nSaint Barbara, pray for us!\nAmen."
+  },
+  "history": {
+    "es": "Los datos históricos sobre Santa Bárbara son limitados, lo que ha llevado a su nombre a ser suprimido del Calendario Romano General en 1969, aunque permanece en muchas iglesias locales y sigue siendo venerada ampliamente en todo el mundo. Según la tradición, vivió en el siglo III o IV.\n\nLa leyenda cuenta que Bárbara era hija de Dióscoro, un rico pagano de Nicomedia o Heliópolis. Ante el temor de que los pretendientes la alejaran de su casa, su padre la encerró en una torre. Durante su cautiverio, Bárbara se instruyó en la fe cristiana y se bautizó secretamente. Al ordenar la construcción de una torre con dos ventanas, ella pidió que se abriera una tercera en honor a la Trinidad — gesto que delató su fe a su padre.\n\nDióscoro, furioso, la denunció ante las autoridades romanas. Fue torturada y condenada a muerte. Según la leyenda, su propio padre la decapitó, y murió pidiendo que quienes la invocaran al momento de su muerte recibieran los santos sacramentos. Inmediatamente después, un rayo mató a su padre.\n\nSanta Bárbara es una de los Catorce Santos Auxiliadores, grupo de santos muy venerados en la Edad Media cuya intercesión se consideraba especialmente eficaz en casos graves. Es patrona de los artilleros, mineros, armeros, presos y todos los que trabajan con explosivos o peligros repentinos. También es patrona de los que mueren sin sacramentos.\n\nSu torre con tres ventanas se convirtió en símbolo de su devoción trinitaria. En muchas tradiciones populares del mundo hispano, la noche del 4 de diciembre se encienden luces en su honor. En Venezuela, el 'Tamunangue' es la gran fiesta folklórica en su honor.",
+    "en": "Historical data on Saint Barbara is limited, which led to her name being suppressed from the General Roman Calendar in 1969, though she remains in many local calendars and continues to be widely venerated worldwide. According to tradition, she lived in the 3rd or 4th century.\n\nLegend holds that Barbara was the daughter of Dioscorus, a wealthy pagan from Nicomedia or Heliopolis. Fearing that suitors would take her away from home, her father locked her in a tower. During her captivity, Barbara learned about the Christian faith and was secretly baptized. When ordering a tower to be built with two windows, she asked for a third to be opened in honor of the Trinity — a gesture that betrayed her faith to her father.\n\nDioscorus, enraged, denounced her to the Roman authorities. She was tortured and condemned to death. According to legend, her own father beheaded her, and she died praying that those who invoked her at the moment of death would receive the holy sacraments. Immediately afterward, a bolt of lightning killed her father.\n\nSaint Barbara is one of the Fourteen Holy Helpers, a group of saints greatly venerated in the Middle Ages whose intercession was considered especially effective in serious cases. She is patron of artillerymen, miners, armorers, prisoners, and all who work with explosives or sudden dangers. She is also patroness of those who die without sacraments.\n\nHer tower with three windows became a symbol of her Trinitarian devotion. In many folk traditions of the Hispanic world, lights are lit in her honor on the night of December 4. In Venezuela, the 'Tamunangue' is the great folkloric feast in her honor."
+  },
+  "novena": [
+    {
+      "day": 1,
+      "es": "Día 1 — La Fe en el Cautiverio\n\nSanta Bárbara, que encontraste a Dios en la soledad de tu torre, intercede por los que están solos, aislados o prisioneros — de muros físicos o de situaciones que parecen sin salida. Que encuentren a Dios en el silencio.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 1 — Faith in Captivity\n\nSaint Barbara, who found God in the solitude of your tower, intercede for those who are alone, isolated, or imprisoned — by physical walls or by situations that seem hopeless. May they find God in the silence.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 2,
+      "es": "Día 2 — La Devoción Trinitaria\n\nSanta Bárbara, que pediste la tercera ventana en honor a la Santísima Trinidad, intercede para que mi fe trinitaria sea viva: que conozca al Padre, al Hijo y al Espíritu Santo no como dogma abstracto sino como personas amadas.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 2 — Trinitarian Devotion\n\nSaint Barbara, who asked for the third window in honor of the Blessed Trinity, intercede that my Trinitarian faith may be living: that I may know the Father, Son, and Holy Spirit not as abstract dogma but as beloved Persons.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 3,
+      "es": "Día 3 — La Valentía ante la Persecución\n\nSanta Bárbara, que fuiste denunciada por tu propio padre y elegiste la muerte antes que negar a Cristo, intercede por los cristianos perseguidos en el mundo. Que no flaqueen en su fe cuando el precio sea alto.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 3 — Courage before Persecution\n\nSaint Barbara, who were denounced by your own father and chose death rather than denying Christ, intercede for persecuted Christians in the world. May they not waver in their faith when the cost is high.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 4,
+      "es": "Día 4 — La Muerte Bien Preparada\n\nSanta Bárbara, patrona de los que mueren repentinamente, intercede para que ningún ser querido parta de este mundo sin haberse reconciliado con Dios. Que los sacramentos de los enfermos lleguen a tiempo.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 4 — A Well-Prepared Death\n\nSaint Barbara, patroness of those who die suddenly, intercede that no beloved person may depart this world without having been reconciled with God. May the sacraments of the sick arrive in time.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 5,
+      "es": "Día 5 — Los Trabajadores de Riesgo\n\nSanta Bárbara, patrona de mineros, artilleros y bomberos, intercede por todos los que trabajan en profesiones de riesgo. Que regresen sanos y salvos a sus hogares cada día.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 5 — Workers in Dangerous Jobs\n\nSaint Barbara, patron of miners, artillerymen, and firefighters, intercede for all who work in dangerous professions. May they return safely home each day.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 6,
+      "es": "Día 6 — Los Prisioneros\n\nSanta Bárbara, que conociste el cautiverio y la injusticia, intercede por los que están presos injustamente, por los que cumplen condenas merecidas y necesitan rehabilitación, y por sus familias que también sufren.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 6 — Prisoners\n\nSaint Barbara, who knew captivity and injustice, intercede for those unjustly imprisoned, for those serving deserved sentences who need rehabilitation, and for their families who also suffer.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 7,
+      "es": "Día 7 — La Ruptura con las Cadenas\n\nSanta Bárbara, que rompiste las cadenas del paganismo heredado y elegiste a Cristo, intercede por los que están atados por tradiciones familiares de pecado, adicciones heredadas o ambientes que destruyen la fe. Que encuentren la libertad de los hijos de Dios.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 7 — Breaking Chains\n\nSaint Barbara, who broke the chains of inherited paganism and chose Christ, intercede for those bound by family traditions of sin, inherited addictions, or environments that destroy faith. May they find the freedom of God's children.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 8,
+      "es": "Día 8 — Las Tormentas de la Vida\n\nSanta Bárbara, invocada ante las tormentas y los peligros súbitos, intercede en las tormentas de mi vida: las crisis económicas, las rupturas familiares, los diagnósticos que llegan sin aviso. Que Cristo calme también estas tempestades.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 8 — The Storms of Life\n\nSaint Barbara, invoked before storms and sudden dangers, intercede in the storms of my life: financial crises, family ruptures, diagnoses that arrive without warning. May Christ calm these tempests too.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 9,
+      "es": "Día 9 — La Petición Final\n\nSanta Bárbara, mártir valiente, en este noveno día te presento mi petición más urgente (pausa y presenta tu intención). Tú que moriste con la certeza del cielo, intercede para que yo viva con esa misma certeza.\n\n¡Santa Bárbara, ruega por nosotros!\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
+      "en": "Day 9 — The Final Petition\n\nSaint Barbara, valiant martyr, on this ninth day I present to you my most urgent petition (pause and present your intention). You who died with the certainty of heaven, intercede that I may live with that same certainty.\n\nSaint Barbara, pray for us!\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    }
+  ],
+  "chaplet": {
+    "available": false
+  },
+  "litany": {
+    "available": true,
+    "es": "Letanías de Santa Bárbara\n\nSeñor, ten piedad. Señor, ten piedad.\nCristo, ten piedad. Cristo, ten piedad.\nSeñor, ten piedad. Señor, ten piedad.\n\nSanta Bárbara, mártir de Cristo, ruega por nosotros.\nSanta Bárbara, que preferiste la muerte a la apostasía, ruega por nosotros.\nSanta Bárbara, que descubriste la Trinidad en tu cautiverio, ruega por nosotros.\nSanta Bárbara, torre de fortaleza para los débiles, ruega por nosotros.\nSanta Bárbara, intercesora de los que mueren repentinamente, ruega por nosotros.\nSanta Bárbara, patrona de mineros y artilleros, ruega por nosotros.\nSanta Bárbara, refugio en las tormentas y los peligros, ruega por nosotros.\nSanta Bárbara, defensora de los prisioneros, ruega por nosotros.\nSanta Bárbara, de los Catorce Santos Auxiliadores, ruega por nosotros.\n\nCordero de Dios, que quitas el pecado del mundo, perdónanos, Señor.\nCordero de Dios, que quitas el pecado del mundo, escúchanos, Señor.\nCordero de Dios, que quitas el pecado del mundo, ten piedad de nosotros.\n\nOremos: Señor Dios, que concediste a Santa Bárbara la fuerza de confesar tu nombre ante las persecuciones: por su intercesión, concede que permanezcamos firmes en la fe hasta nuestra última hora. Por Jesucristo Nuestro Señor. Amén.",
+    "en": "Litany of Saint Barbara\n\nLord, have mercy. Lord, have mercy.\nChrist, have mercy. Christ, have mercy.\nLord, have mercy. Lord, have mercy.\n\nSaint Barbara, martyr of Christ, pray for us.\nSaint Barbara, who preferred death to apostasy, pray for us.\nSaint Barbara, who discovered the Trinity in your captivity, pray for us.\nSaint Barbara, tower of strength for the weak, pray for us.\nSaint Barbara, intercessor for those who die suddenly, pray for us.\nSaint Barbara, patron of miners and artillerymen, pray for us.\nSaint Barbara, refuge in storms and dangers, pray for us.\nSaint Barbara, defender of prisoners, pray for us.\nSaint Barbara, of the Fourteen Holy Helpers, pray for us.\n\nLamb of God, who takes away the sins of the world, spare us, O Lord.\nLamb of God, who takes away the sins of the world, graciously hear us, O Lord.\nLamb of God, who takes away the sins of the world, have mercy on us.\n\nLet us pray: Lord God, who granted Saint Barbara the strength to confess Your name before persecutions: through her intercession, grant that we may remain firm in faith until our last hour. Through Jesus Christ Our Lord. Amen."
+  },
+  "consecration": {
+    "available": true,
+    "es": "Consagración a Santa Bárbara\n\nSanta Bárbara, torre de la fe en medio de las tormentas, hoy me pongo bajo tu protección y tu intercesión.\n\nPido que intercedas por mí y por todos los que amo en el momento de nuestra muerte: que lleguen los sacramentos, que no nos sorprenda la eternidad sin habernos reconciliado con Dios.\n\nPido también que intercedas por los que trabajan en peligro, por los encarcelados, y por los que sufren a manos de quienes deberían protegerlos.\n\nQue tu valentía sea mi modelo y que tu fe trinitaria sea mi fortaleza. Amén.",
+    "en": "Consecration to Saint Barbara\n\nSaint Barbara, tower of faith in the midst of storms, today I place myself under your protection and intercession.\n\nI ask you to intercede for me and all those I love at the moment of our death: may the sacraments arrive, may eternity not surprise us without having been reconciled with God.\n\nI also ask you to intercede for those working in danger, for the imprisoned, and for those suffering at the hands of those who should protect them.\n\nMay your courage be my model and may your Trinitarian faith be my fortress. Amen."
+  }
+}
