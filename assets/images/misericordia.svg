@@ -1,119 +1,274 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
   <defs>
-    <radialGradient id="bg-grd" cx="50%" cy="28%" r="72%">
-      <stop offset="0%"   stop-color="#16246e"/>
-      <stop offset="55%"  stop-color="#0b1438"/>
-      <stop offset="100%" stop-color="#03060d"/>
+    <radialGradient id="dm-bg1" cx="50%" cy="28%" r="75%">
+      <stop offset="0%"   stop-color="#1a2880"/>
+      <stop offset="45%"  stop-color="#0c1848"/>
+      <stop offset="100%" stop-color="#020510"/>
     </radialGradient>
-    <radialGradient id="atm-glow" cx="50%" cy="38%" r="46%">
-      <stop offset="0%"   stop-color="#3a4eb8" stop-opacity="0.22"/>
-      <stop offset="100%" stop-color="#0b1438" stop-opacity="0"/>
+    <radialGradient id="dm-bg2" cx="50%" cy="18%" r="55%">
+      <stop offset="0%"   stop-color="#3040b8" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#0c1848" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="ray-red-lg" x1="50%" y1="0%" x2="10%" y2="100%">
-      <stop offset="0%"   stop-color="#ff2020" stop-opacity="1"/>
-      <stop offset="35%"  stop-color="#e81010" stop-opacity="0.92"/>
-      <stop offset="100%" stop-color="#aa0808" stop-opacity="0.55"/>
+    <radialGradient id="dm-bg3" cx="50%" cy="85%" r="40%">
+      <stop offset="0%"   stop-color="#080c30" stop-opacity="0.60"/>
+      <stop offset="100%" stop-color="#020510" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="dm-red1" x1="50%" y1="12%" x2="4%" y2="100%">
+      <stop offset="0%"   stop-color="#ff3820" stop-opacity="1"/>
+      <stop offset="30%"  stop-color="#e81010" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#900808" stop-opacity="0.48"/>
     </linearGradient>
-    <linearGradient id="ray-blue-lg" x1="50%" y1="0%" x2="90%" y2="100%">
-      <stop offset="0%"   stop-color="#e8f6ff" stop-opacity="1"/>
-      <stop offset="35%"  stop-color="#b4dcff" stop-opacity="0.92"/>
-      <stop offset="100%" stop-color="#6ab8f5" stop-opacity="0.55"/>
+    <linearGradient id="dm-red2" x1="50%" y1="12%" x2="8%" y2="100%">
+      <stop offset="0%"   stop-color="#ff6848" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#cc1010" stop-opacity="0.40"/>
     </linearGradient>
-    <filter id="glow-red" x="-40%" y="-20%" width="180%" height="140%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="b1"/>
-      <feGaussianBlur in="SourceGraphic" stdDeviation="4"  result="b2"/>
-      <feMerge>
-        <feMergeNode in="b1"/>
-        <feMergeNode in="b1"/>
-        <feMergeNode in="b2"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <linearGradient id="dm-wht1" x1="50%" y1="12%" x2="96%" y2="100%">
+      <stop offset="0%"   stop-color="#f0f8ff" stop-opacity="1"/>
+      <stop offset="30%"  stop-color="#b8d8f8" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#4880d0" stop-opacity="0.48"/>
+    </linearGradient>
+    <linearGradient id="dm-wht2" x1="50%" y1="12%" x2="92%" y2="100%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#78b0e8" stop-opacity="0.40"/>
+    </linearGradient>
+    <linearGradient id="dm-robe" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%"   stop-color="#f8f5f2"/>
+      <stop offset="100%" stop-color="#e0d8d2"/>
+    </linearGradient>
+    <linearGradient id="dm-sash" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#c01820"/>
+      <stop offset="100%" stop-color="#800810"/>
+    </linearGradient>
+    <radialGradient id="dm-heart" cx="50%" cy="40%" r="60%">
+      <stop offset="0%"   stop-color="#ff9040"/>
+      <stop offset="40%"  stop-color="#e82018"/>
+      <stop offset="100%" stop-color="#b00c0c"/>
+    </radialGradient>
+    <radialGradient id="dm-face" cx="42%" cy="38%" r="62%">
+      <stop offset="0%"   stop-color="#fce0c8"/>
+      <stop offset="100%" stop-color="#e8b898"/>
+    </radialGradient>
+    <radialGradient id="dm-halo-fill" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#fff8c8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#e8c820" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="dm-glow-r" x="-55%" y="-35%" width="210%" height="170%">
+      <feGaussianBlur stdDeviation="13" result="b1"/>
+      <feGaussianBlur stdDeviation="5"  result="b2"/>
+      <feMerge><feMergeNode in="b1"/><feMergeNode in="b1"/><feMergeNode in="b2"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <filter id="glow-blue" x="-40%" y="-20%" width="180%" height="140%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="b1"/>
-      <feGaussianBlur in="SourceGraphic" stdDeviation="4"  result="b2"/>
-      <feMerge>
-        <feMergeNode in="b1"/>
-        <feMergeNode in="b1"/>
-        <feMergeNode in="b2"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <filter id="dm-glow-w" x="-55%" y="-35%" width="210%" height="170%">
+      <feGaussianBlur stdDeviation="13" result="b1"/>
+      <feGaussianBlur stdDeviation="5"  result="b2"/>
+      <feMerge><feMergeNode in="b1"/><feMergeNode in="b1"/><feMergeNode in="b2"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <filter id="glow-center" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="16" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <filter id="dm-glow-c" x="-90%" y="-90%" width="280%" height="280%">
+      <feGaussianBlur stdDeviation="22" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <filter id="glow-gold" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <filter id="dm-glow-g" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="dm-glow-s" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="dm-soft" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+    <filter id="dm-blur-fig" x="-20%" y="-10%" width="140%" height="120%">
+      <feGaussianBlur stdDeviation="1"/>
     </filter>
   </defs>
 
-  <!-- BACKGROUNDS -->
-  <rect width="400" height="600" fill="#03060d"/>
-  <rect width="400" height="600" fill="url(#bg-grd)"/>
-  <ellipse cx="200" cy="230" rx="200" ry="230" fill="url(#atm-glow)"/>
+  <!-- ── BACKGROUNDS ─────────────────────────────── -->
+  <rect width="400" height="600" fill="#020510"/>
+  <rect width="400" height="600" fill="url(#dm-bg1)"/>
+  <rect width="400" height="600" fill="url(#dm-bg2)"/>
+  <rect width="400" height="600" fill="url(#dm-bg3)"/>
 
-  <!-- RED RAY left of frame (blood / mercy) -->
-  <polygon points="198,252 -30,610 140,610" fill="url(#ray-red-lg)" filter="url(#glow-red)" opacity="0.75"/>
-  <polygon points="198,252 10,600  110,600" fill="#ff2828" opacity="0.65"/>
-  <polygon points="198,252 50,600  95,600"  fill="#ff5040" opacity="0.80"/>
-  <polygon points="198,252 -30,520 -30,610 20,610" fill="#dd1010" opacity="0.30"/>
+  <!-- Atmospheric depth halos -->
+  <ellipse cx="200" cy="160" rx="190" ry="195" fill="#3040b8" opacity="0.07"/>
+  <ellipse cx="200" cy="240" rx="155" ry="175" fill="#2030a0" opacity="0.06"/>
+  <ellipse cx="200" cy="300" rx="120" ry="150" fill="#1828a0" opacity="0.05"/>
 
-  <!-- PALE-BLUE RAY right of frame (water / grace) -->
-  <polygon points="202,252 430,610 260,610" fill="url(#ray-blue-lg)" filter="url(#glow-blue)" opacity="0.75"/>
-  <polygon points="202,252 390,600 290,600" fill="#c8e8ff" opacity="0.65"/>
-  <polygon points="202,252 350,600 305,600" fill="#e4f4ff" opacity="0.80"/>
-  <polygon points="202,252 430,520 430,610 380,610" fill="#88c8f0" opacity="0.30"/>
+  <!-- ── DIVINE MERCY RAYS ─────────────────────────────── -->
+  <!-- RED RAY — outermost diffuse glow -->
+  <polygon points="200,268 -80,625 180,625" fill="#aa0000" filter="url(#dm-glow-r)" opacity="0.22"/>
+  <!-- RED RAY — wide base -->
+  <polygon points="200,268 -35,612 148,612" fill="url(#dm-red1)" filter="url(#dm-glow-r)" opacity="0.80"/>
+  <!-- RED RAY — core -->
+  <polygon points="200,268 10,602  122,602" fill="url(#dm-red2)" opacity="0.72"/>
+  <!-- RED RAY — bright inner streak -->
+  <polygon points="200,268 52,600  105,600" fill="#ff6040" opacity="0.58"/>
+  <!-- RED RAY — central hot streak -->
+  <polygon points="200,268 68,600   96,600" fill="#ff9878" opacity="0.42"/>
+  <!-- RED RAY — specular highlight -->
+  <polygon points="200,268 76,600   92,600" fill="#ffcab8" opacity="0.28"/>
+  <!-- Red heart glow at origin -->
+  <circle cx="194" cy="270" r="32" fill="#ff1808" opacity="0.13" filter="url(#dm-glow-c)"/>
 
-  <!-- ABSTRACT FIGURE (luminous silhouette) -->
-  <ellipse cx="200" cy="340" rx="44" ry="130" fill="#ffffff" opacity="0.025"/>
-  <ellipse cx="200" cy="230" rx="62" ry="20"  fill="#ffffff" opacity="0.025"/>
+  <!-- WHITE RAY — outermost diffuse glow -->
+  <polygon points="200,268 480,625 220,625" fill="#6090d8" filter="url(#dm-glow-w)" opacity="0.22"/>
+  <!-- WHITE RAY — wide base -->
+  <polygon points="200,268 435,612 252,612" fill="url(#dm-wht1)" filter="url(#dm-glow-w)" opacity="0.80"/>
+  <!-- WHITE RAY — core -->
+  <polygon points="200,268 390,602 278,602" fill="url(#dm-wht2)" opacity="0.72"/>
+  <!-- WHITE RAY — bright inner streak -->
+  <polygon points="200,268 348,600 296,600" fill="#e8f5ff" opacity="0.62"/>
+  <!-- WHITE RAY — central bright streak -->
+  <polygon points="200,268 332,600 308,600" fill="#ffffff" opacity="0.50"/>
+  <!-- WHITE RAY — specular -->
+  <polygon points="200,268 322,600 312,600" fill="#ffffff" opacity="0.30"/>
+  <!-- White glow at origin -->
+  <circle cx="206" cy="270" r="32" fill="#c0e0ff" opacity="0.13" filter="url(#dm-glow-c)"/>
 
-  <!-- SOURCE POINT: heart / chest level -->
-  <circle cx="200" cy="252" r="32" fill="#ffffff" opacity="0.08" filter="url(#glow-center)"/>
-  <circle cx="200" cy="252" r="14" fill="#fff8e8" opacity="0.14" filter="url(#glow-center)"/>
-  <circle cx="200" cy="252" r="6"  fill="#ffffff" opacity="0.35"/>
+  <!-- ── FIGURE OF CHRIST ─────────────────────────────── -->
+  <!-- Luminous aura around whole figure -->
+  <ellipse cx="200" cy="330" rx="62" ry="172" fill="#f0f4ff" opacity="0.038" filter="url(#dm-glow-c)"/>
+  <ellipse cx="200" cy="300" rx="48" ry="145" fill="#ffffff" opacity="0.028" filter="url(#dm-soft)"/>
 
-  <!-- HALO + CROSS (abstract, golden) -->
-  <circle cx="200" cy="100" r="56" fill="none" stroke="#e8d040" stroke-width="0.5" stroke-opacity="0.20" filter="url(#glow-gold)"/>
-  <circle cx="200" cy="100" r="48" fill="none" stroke="#e8c830" stroke-width="1.8" stroke-opacity="0.60"/>
-  <circle cx="200" cy="100" r="41" fill="none" stroke="#e8c830" stroke-width="0.6" stroke-opacity="0.22"/>
-  <circle cx="200" cy="100" r="40" fill="#fffbdc" opacity="0.045" filter="url(#glow-gold)"/>
-  <line x1="200" y1="56"  x2="200" y2="78"  stroke="#f0d848" stroke-width="3.5" stroke-linecap="round" stroke-opacity="0.80"/>
-  <line x1="186" y1="66"  x2="214" y2="66"  stroke="#f0d848" stroke-width="3.5" stroke-linecap="round" stroke-opacity="0.80"/>
-  <line x1="200" y1="52"  x2="200" y2="38"  stroke="#e8c830" stroke-width="1" stroke-opacity="0.30"/>
-  <line x1="234" y1="63"  x2="248" y2="49"  stroke="#e8c830" stroke-width="1" stroke-opacity="0.25"/>
-  <line x1="166" y1="63"  x2="152" y2="49"  stroke="#e8c830" stroke-width="1" stroke-opacity="0.25"/>
-  <line x1="248" y1="100" x2="265" y2="100" stroke="#e8c830" stroke-width="1" stroke-opacity="0.22"/>
-  <line x1="152" y1="100" x2="135" y2="100" stroke="#e8c830" stroke-width="1" stroke-opacity="0.22"/>
-  <line x1="234" y1="137" x2="248" y2="151" stroke="#e8c830" stroke-width="1" stroke-opacity="0.20"/>
-  <line x1="166" y1="137" x2="152" y2="151" stroke="#e8c830" stroke-width="1" stroke-opacity="0.20"/>
+  <!-- WHITE ROBE — main body -->
+  <path d="M168,160 Q136,215 122,398 Q200,426 278,398 Q264,215 232,160 Z" fill="url(#dm-robe)" opacity="0.93"/>
+  <!-- Robe fold lines (subtle) -->
+  <path d="M183,168 Q178,248 174,398" stroke="#c4bdb5" stroke-width="1.4" fill="none" opacity="0.18"/>
+  <path d="M200,165 Q200,250 200,402" stroke="#c4bdb5" stroke-width="0.9" fill="none" opacity="0.12"/>
+  <path d="M217,168 Q222,248 226,398" stroke="#c4bdb5" stroke-width="1.4" fill="none" opacity="0.18"/>
+  <!-- Robe centre highlight -->
+  <path d="M197,164 Q198,250 198,402" stroke="#ffffff" stroke-width="3.5" fill="none" opacity="0.16"/>
+  <!-- Robe hem glow -->
+  <path d="M122,398 Q200,426 278,398" stroke="#e8d8c8" stroke-width="2" fill="none" opacity="0.28"/>
 
-  <!-- HEAD GLOW (abstract presence) -->
-  <ellipse cx="200" cy="100" rx="22" ry="26" fill="#fffbe0" opacity="0.05" filter="url(#glow-center)"/>
+  <!-- CRIMSON MANTLE — over left shoulder -->
+  <path d="M168,160 Q128,208 115,335 Q130,348 156,330 Q150,238 180,175 Z" fill="url(#dm-sash)" opacity="0.86"/>
+  <path d="M155,172 Q132,225 126,340" stroke="#e03028" stroke-width="1.8" fill="none" opacity="0.30"/>
 
-  <!-- DECORATIVE FRAME -->
-  <rect x="6"  y="6"  width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.3" stroke-opacity="0.50"/>
-  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- LEFT ARM raised in blessing -->
+  <path d="M148,208 Q116,256 106,296" stroke="#ecc09c" stroke-width="23" fill="none" stroke-linecap="round" opacity="0.90"/>
+  <!-- RIGHT ARM lowered toward heart -->
+  <path d="M252,218 Q280,256 285,284" stroke="#ecc09c" stroke-width="21" fill="none" stroke-linecap="round" opacity="0.88"/>
 
-  <!-- INSCRIPTION PANEL -->
-  <rect x="18" y="528" width="364" height="66" rx="6" fill="#020508" opacity="0.82"/>
-  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <!-- HANDS -->
+  <ellipse cx="106" cy="300" rx="15" ry="18" fill="#f2c8a2" opacity="0.93"/>
+  <ellipse cx="285" cy="288" rx="14" ry="17" fill="#f2c8a2" opacity="0.92"/>
+  <!-- Wound marks (stigmata) -->
+  <ellipse cx="106" cy="296" rx="3.5" ry="4.5" fill="#c02818" opacity="0.62"/>
+  <ellipse cx="285" cy="284" rx="3.5" ry="4.5" fill="#c02818" opacity="0.62"/>
+  <!-- Blessing fingers suggestion -->
+  <path d="M98,287 Q100,277 106,275 Q111,277 112,287" stroke="#e0b088" stroke-width="1.2" fill="none" opacity="0.50"/>
 
-  <!-- Title: bilingual -->
-  <text x="200" y="547" text-anchor="middle" font-family="Arial, sans-serif" font-size="8.5" fill="#c9a84c" letter-spacing="3.5" opacity="0.90">DIVINA MISERICORDIA  ·  DIVINE MERCY</text>
+  <!-- SACRED HEART — left chest, glowing -->
+  <!-- Outer glow -->
+  <circle cx="186" cy="262" r="28" fill="#ff3010" opacity="0.11" filter="url(#dm-glow-c)"/>
+  <!-- Heart shape -->
+  <path d="M177,254 Q177,244 186,244 Q195,244 195,254 Q200,244 196,258 Q192,268 186,272 Q180,268 176,258 Z" fill="url(#dm-heart)" opacity="0.88"/>
+  <!-- Heart inner glow -->
+  <circle cx="186" cy="258" r="11" fill="#ff9050" opacity="0.42" filter="url(#dm-glow-s)"/>
+  <!-- Flames from heart -->
+  <path d="M182,244 Q180,237 186,234 Q192,237 190,244" stroke="#ffaa30" stroke-width="1.6" fill="none" opacity="0.68"/>
+  <path d="M178,248 Q174,241 179,238" stroke="#ff8820" stroke-width="1.2" fill="none" opacity="0.45"/>
+  <path d="M194,248 Q198,241 193,238" stroke="#ff8820" stroke-width="1.2" fill="none" opacity="0.45"/>
+  <!-- Cross on heart -->
+  <line x1="186" y1="247" x2="186" y2="257" stroke="#f0e030" stroke-width="1.4" opacity="0.82"/>
+  <line x1="181" y1="251" x2="191" y2="251" stroke="#f0e030" stroke-width="1.4" opacity="0.82"/>
+  <!-- Ray origin point — bright pulse -->
+  <circle cx="200" cy="268" r="10" fill="#ffffff" opacity="0.40" filter="url(#dm-glow-s)"/>
+  <circle cx="200" cy="268" r="5"  fill="#ffffff" opacity="0.68"/>
 
-  <!-- Spanish inscription -->
-  <text x="200" y="566" text-anchor="middle" font-family="Georgia, serif" font-size="14.5" fill="#f5e060" letter-spacing="0.4" font-style="italic">&#x00AB;Jes&#x00FA;s, en Ti conf&#x00ED;o&#x00BB;</text>
+  <!-- NECK -->
+  <rect x="192" y="146" width="16" height="19" rx="5" fill="#f2c8a2" opacity="0.93"/>
 
-  <!-- English inscription -->
-  <text x="200" y="585" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#d4c040" letter-spacing="0.3" font-style="italic" opacity="0.80">&#x00AB;Jesus, I trust in You&#x00BB;</text>
+  <!-- HEAD -->
+  <ellipse cx="200" cy="110" rx="28" ry="33" fill="url(#dm-face)" opacity="0.95"/>
+
+  <!-- LONG HAIR flowing -->
+  <path d="M172,118 Q166,76 200,68 Q234,76 228,118 Q221,90 200,88 Q179,90 172,118 Z" fill="#4e2a0a" opacity="0.90"/>
+  <path d="M172,118 Q160,144 163,165" stroke="#4e2a0a" stroke-width="9" fill="none" stroke-linecap="round" opacity="0.74"/>
+  <path d="M228,118 Q240,144 237,165" stroke="#4e2a0a" stroke-width="9" fill="none" stroke-linecap="round" opacity="0.74"/>
+  <!-- Hair highlight -->
+  <path d="M192,72 Q200,68 208,72" stroke="#7a4818" stroke-width="2" fill="none" opacity="0.30"/>
+
+  <!-- BEARD -->
+  <path d="M184,132 Q183,150 200,155 Q217,150 216,132 Q209,144 200,145 Q191,144 184,132 Z" fill="#4e2a0a" opacity="0.80"/>
+
+  <!-- EYES — compassionate gaze -->
+  <ellipse cx="190" cy="108" rx="5.5" ry="4.5" fill="#1e1008" opacity="0.90"/>
+  <ellipse cx="210" cy="108" rx="5.5" ry="4.5" fill="#1e1008" opacity="0.90"/>
+  <circle cx="191.5" cy="107" r="1.4" fill="#ffffff" opacity="0.65"/>
+  <circle cx="211.5" cy="107" r="1.4" fill="#ffffff" opacity="0.65"/>
+  <!-- Iris (warm brown) -->
+  <circle cx="190" cy="108" r="3" fill="#5a3010" opacity="0.55"/>
+  <circle cx="210" cy="108" r="3" fill="#5a3010" opacity="0.55"/>
+
+  <!-- Eyebrows (gentle) -->
+  <path d="M184,103 Q190,100 196,102" stroke="#3e2008" stroke-width="1.6" fill="none" opacity="0.68"/>
+  <path d="M204,102 Q210,100 216,103" stroke="#3e2008" stroke-width="1.6" fill="none" opacity="0.68"/>
+
+  <!-- NOSE -->
+  <path d="M198,110 Q196,118 195,120 Q200,122 205,120 Q204,118 202,110" stroke="#d8a882" stroke-width="1.3" fill="none" opacity="0.48"/>
+
+  <!-- LIPS — gentle, half-open -->
+  <path d="M193,126 Q200,129 207,126" stroke="#bc7868" stroke-width="2.0" fill="none" stroke-linecap="round" opacity="0.58"/>
+  <path d="M194,127 Q200,131 206,127" stroke="#c88070" stroke-width="1.0" fill="none" opacity="0.32"/>
+
+  <!-- ── GOLDEN SUNBURST HALO ─────────────────────────────── -->
+  <!-- Halo fill glow -->
+  <circle cx="200" cy="110" r="68" fill="url(#dm-halo-fill)" filter="url(#dm-glow-g)"/>
+
+  <!-- Sunburst rays (16 rays) -->
+  <g opacity="0.28" stroke="#e8d838" stroke-width="0.7">
+    <line x1="200" y1="110" x2="200" y2="26"/>
+    <line x1="200" y1="110" x2="248" y2="40"/>
+    <line x1="200" y1="110" x2="283" y2="68"/>
+    <line x1="200" y1="110" x2="294" y2="110"/>
+    <line x1="200" y1="110" x2="283" y2="152"/>
+    <line x1="200" y1="110" x2="248" y2="180"/>
+    <line x1="200" y1="110" x2="200" y2="194"/>
+    <line x1="200" y1="110" x2="152" y2="180"/>
+    <line x1="200" y1="110" x2="117" y2="152"/>
+    <line x1="200" y1="110" x2="106" y2="110"/>
+    <line x1="200" y1="110" x2="117" y2="68"/>
+    <line x1="200" y1="110" x2="152" y2="40"/>
+    <line x1="200" y1="110" x2="228" y2="32"/>
+    <line x1="200" y1="110" x2="172" y2="32"/>
+    <line x1="200" y1="110" x2="270" y2="52"/>
+    <line x1="200" y1="110" x2="130" y2="52"/>
+  </g>
+
+  <!-- Main halo rings with glow -->
+  <circle cx="200" cy="110" r="62" fill="none" stroke="#f2e058" stroke-width="2.5" stroke-opacity="0.75" filter="url(#dm-glow-g)"/>
+  <circle cx="200" cy="110" r="55" fill="none" stroke="#e8c828" stroke-width="1.2" stroke-opacity="0.48"/>
+  <circle cx="200" cy="110" r="49" fill="none" stroke="#e8d040" stroke-width="0.5" stroke-opacity="0.24"/>
+
+  <!-- Crown of Thorns (subtle) -->
+  <path d="M172,96 Q180,89 200,87 Q220,89 228,96" stroke="#5e3008" stroke-width="2.2" fill="none" opacity="0.42"/>
+  <path d="M174,92 Q177,85 181,88" stroke="#5e3008" stroke-width="1.5" fill="none" opacity="0.36"/>
+  <path d="M196,86 Q199,79 203,85" stroke="#5e3008" stroke-width="1.5" fill="none" opacity="0.36"/>
+  <path d="M219,92 Q222,85 226,88" stroke="#5e3008" stroke-width="1.5" fill="none" opacity="0.36"/>
+
+  <!-- Cross atop halo — golden -->
+  <line x1="200" y1="44" x2="200" y2="64"  stroke="#f2e050" stroke-width="4"   stroke-linecap="round" stroke-opacity="0.85"/>
+  <line x1="189" y1="54" x2="211" y2="54"  stroke="#f2e050" stroke-width="4"   stroke-linecap="round" stroke-opacity="0.85"/>
+  <line x1="200" y1="40" x2="200" y2="28"  stroke="#e8c830" stroke-width="1.2" stroke-opacity="0.35"/>
+  <line x1="230" y1="62" x2="245" y2="47"  stroke="#e8c830" stroke-width="1"   stroke-opacity="0.28"/>
+  <line x1="170" y1="62" x2="155" y2="47"  stroke="#e8c830" stroke-width="1"   stroke-opacity="0.28"/>
+
+  <!-- ── ORNATE TRIPLE FRAME ─────────────────────────────── -->
+  <rect x="4"  y="4"  width="392" height="592" rx="10" fill="none" stroke="#e8c830" stroke-width="1.8" stroke-opacity="0.58"/>
+  <rect x="10" y="10" width="380" height="580" rx="7"  fill="none" stroke="#c9a84c" stroke-width="0.9" stroke-opacity="0.32"/>
+  <rect x="16" y="16" width="368" height="568" rx="5"  fill="none" stroke="#c9a84c" stroke-width="0.4" stroke-opacity="0.15"/>
+  <!-- Corner gold dots -->
+  <circle cx="14"  cy="14"  r="3.5" fill="#c9a84c" opacity="0.50"/>
+  <circle cx="386" cy="14"  r="3.5" fill="#c9a84c" opacity="0.50"/>
+  <circle cx="14"  cy="586" r="3.5" fill="#c9a84c" opacity="0.50"/>
+  <circle cx="386" cy="586" r="3.5" fill="#c9a84c" opacity="0.50"/>
+
+  <!-- ── INSCRIPTION PANEL ─────────────────────────────── -->
+  <rect x="18" y="524" width="364" height="70" rx="7" fill="#010408" opacity="0.90"/>
+  <line x1="40" y1="532" x2="360" y2="532" stroke="#c9a84c" stroke-width="0.7" stroke-opacity="0.35"/>
+  <line x1="40" y1="591" x2="360" y2="591" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.22"/>
+  <text x="200" y="546" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" fill="#c9a84c" letter-spacing="3.5" opacity="0.94">DIVINA MISERICORDIA  ·  DIVINE MERCY</text>
+  <text x="200" y="566" text-anchor="middle" font-family="Georgia,serif" font-size="14.5" fill="#f5e060" letter-spacing="0.5" font-style="italic">&#xAB;Jes&#xFA;s, en Ti conf&#xED;o&#xBB;</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#d4c040" letter-spacing="0.3" font-style="italic" opacity="0.84">&#xAB;Jesus, I trust in You&#xBB;</text>
 </svg>

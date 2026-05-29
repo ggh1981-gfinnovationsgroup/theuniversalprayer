@@ -1,106 +1,172 @@
 ﻿{
-  "id": "sanfrancisco",
-  "name": { "es": "San Francisco de Asís", "en": "Saint Francis of Assisi" },
-  "color": "#6b4226",
-  "image": "assets/images/sanfrancisco.svg",
-  "specialty": { "es": "Paz y ecología", "en": "Peace & ecology" },
-  "shortPrayer": {
-    "es": "San Francisco de Asís, patrono de la paz y los animales, intercede por nosotros.",
-    "en": "Saint Francis of Assisi, patron of peace and animals, intercede for us."
-  },
-  "history": {
-    "es": "Giovanni di Pietro di Bernardone, conocido como Francisco, nació en Asís en 1182. Hijo de un rico comerciante, llevó una juventud despreocupada hasta que una serie de experiencias espirituales lo transformaron. Renunció a su herencia paterna, abrazó la pobreza radical y fundó la Orden de los Hermanos Menores. Recibió los estigmas de Cristo en el monte Alvernia en 1224. Murió en 1226 y fue canonizado en 1228. Escribió el Cántico de las Criaturas, primer poema en lengua italiana.",
-    "en": "Giovanni di Pietro di Bernardone, known as Francis, was born in Assisi in 1182. Son of a wealthy merchant, he lived a carefree youth until a series of spiritual experiences transformed him. He renounced his paternal inheritance, embraced radical poverty, and founded the Order of Friars Minor. He received the stigmata of Christ on Mount La Verna in 1224. He died in 1226 and was canonized in 1228. He wrote the Canticle of the Creatures, the first poem in the Italian language."
-  },
-  "novena": {
-    "title": { "es": "Novena a San Francisco de Asís", "en": "Novena to Saint Francis of Assisi" },
-    "days": [
-      {
-        "day": 1,
-        "intention": { "es": "Por el don de la paz", "en": "For the gift of peace" },
-        "prayer": {
-          "es": "Oh San Francisco, instrumento de paz del Señor, que predicaste la reconciliación en un mundo dividido, te pedimos intercedas por nosotros para que encontremos la paz en nuestros corazones y la extendamos a quienes nos rodean. Amén.",
-          "en": "O Saint Francis, instrument of the Lord's peace, who preached reconciliation in a divided world, we ask you to intercede for us that we may find peace in our hearts and extend it to those around us. Amen."
-        }
-      },
-      {
-        "day": 2,
-        "intention": { "es": "Por el amor a la pobreza evangélica", "en": "For love of evangelical poverty" },
-        "prayer": {
-          "es": "San Francisco, que renunciaste a todas las riquezas para seguir a Cristo pobre, ayúdanos a desprendernos de todo lo que nos aleja de Dios y a encontrar en Él nuestra única riqueza. Amén.",
-          "en": "Saint Francis, who renounced all riches to follow poor Christ, help us to detach from everything that distances us from God and to find in Him our only treasure. Amen."
-        }
-      },
-      {
-        "day": 3,
-        "intention": { "es": "Por el cuidado de la creación", "en": "For care of creation" },
-        "prayer": {
-          "es": "Hermano Francisco, que cantaste la belleza del hermano sol y la hermana luna, intercede para que seamos buenos custodios de la creación de Dios y vivamos en armonía con la naturaleza. Amén.",
-          "en": "Brother Francis, who sang of the beauty of brother sun and sister moon, intercede that we may be good stewards of God's creation and live in harmony with nature. Amen."
-        }
-      },
-      {
-        "day": 4,
-        "intention": { "es": "Por la humildad de espíritu", "en": "For humility of spirit" },
-        "prayer": {
-          "es": "San Francisco humilde, que te llamabas a ti mismo el mayor de los pecadores, pide a Dios por nosotros para que nos despojemos de toda soberbia y caminemos con corazón humilde ante el Señor. Amén.",
-          "en": "Humble Saint Francis, who called yourself the greatest of sinners, ask God for us that we may shed all pride and walk with humble hearts before the Lord. Amen."
-        }
-      },
-      {
-        "day": 5,
-        "intention": { "es": "Por los enfermos y moribundos", "en": "For the sick and dying" },
-        "prayer": {
-          "es": "Francisco, que cuidaste con ternura a los leprosos y rechazados, intercede por todos los enfermos y por quienes se encuentran cerca de la muerte, para que sientan la presencia consoladora de Cristo. Amén.",
-          "en": "Francis, who tenderly cared for lepers and outcasts, intercede for all the sick and for those near death, that they may feel the comforting presence of Christ. Amen."
-        }
-      },
-      {
-        "day": 6,
-        "intention": { "es": "Por la reconciliación familiar", "en": "For family reconciliation" },
-        "prayer": {
-          "es": "San Francisco, que sufriste el rechazo de tu propio padre pero lo perdonaste con amor, intercede por todas las familias divididas y por la reconciliación entre padres e hijos. Amén.",
-          "en": "Saint Francis, who suffered rejection by your own father but forgave him with love, intercede for all divided families and for reconciliation between parents and children. Amen."
-        }
-      },
-      {
-        "day": 7,
-        "intention": { "es": "Por la evangelización del mundo", "en": "For the evangelization of the world" },
-        "prayer": {
-          "es": "Francisco misionero, que fuiste hasta el sultán a predicar el Evangelio sin miedo, intercede por todos los misioneros del mundo y por la conversión de los alejados de Dios. Amén.",
-          "en": "Missionary Francis, who went fearlessly to the sultan to preach the Gospel, intercede for all missionaries in the world and for the conversion of those far from God. Amen."
-        }
-      },
-      {
-        "day": 8,
-        "intention": { "es": "Por los que sufren los estigmas del dolor", "en": "For those bearing the stigmata of suffering" },
-        "prayer": {
-          "es": "San Francisco estigmatizado, que llevaste en tu cuerpo las llagas de Cristo, intercede por todos los que sufren enfermedades dolorosas o cargas pesadas, para que las unan al misterio redentor de la Cruz. Amén.",
-          "en": "Stigmatized Saint Francis, who bore in your body the wounds of Christ, intercede for all who suffer painful illnesses or heavy burdens, that they may unite them to the redeeming mystery of the Cross. Amen."
-        }
-      },
-      {
-        "day": 9,
-        "intention": { "es": "Por la alegría en el Señor", "en": "For joy in the Lord" },
-        "prayer": {
-          "es": "Alegre hermano Francisco, que llamabas a tus frailes hermanos juglares de Dios, intercede por nosotros para que vivamos con la alegría del Evangelio y seamos testigos luminosos de la bondad de Dios en el mundo. Amén.",
-          "en": "Joyful Brother Francis, who called your friars God's jesters, intercede for us that we may live with Gospel joy and be radiant witnesses of God's goodness in the world. Amen."
-        }
-      }
-    ]
-  },
-  "litany": {
-    "title": { "es": "Letanía de San Francisco de Asís", "en": "Litany of Saint Francis of Assisi" },
-    "invocations": [
-      { "es": "San Francisco, amigo de los pobres,", "en": "Saint Francis, friend of the poor," },
-      { "es": "San Francisco, instrumento de paz,", "en": "Saint Francis, instrument of peace," },
-      { "es": "San Francisco, hermano de todos los seres vivientes,", "en": "Saint Francis, brother of all living beings," },
-      { "es": "San Francisco, portador de los estigmas de Cristo,", "en": "Saint Francis, bearer of the stigmata of Christ," },
-      { "es": "San Francisco, reformador de la Iglesia,", "en": "Saint Francis, reformer of the Church," },
-      { "es": "San Francisco, trovador de la creación,", "en": "Saint Francis, troubadour of creation," },
-      { "es": "San Francisco, espejo de pobreza evangélica,", "en": "Saint Francis, mirror of evangelical poverty," },
-      { "es": "San Francisco, patrono de Italia y de los ecologistas,", "en": "Saint Francis, patron of Italy and of ecologists," }
-    ],
-    "response": { "es": "Ruega por nosotros.", "en": "Pray for us." }
-  }
+    "id":  "sanfrancisco",
+    "name":  {
+                 "es":  "San Francisco de Asís",
+                 "en":  "Saint Francis of Assisi"
+             },
+    "color":  "#6b4226",
+    "image":  "assets/images/sanfrancisco.svg",
+    "specialty":  {
+                      "es":  "Paz y ecología",
+                      "en":  "Peace \u0026 ecology"
+                  },
+    "shortPrayer":  {
+                        "es":  "San Francisco de Asís, patrono de la paz y los animales, intercede por nosotros.",
+                        "en":  "Saint Francis of Assisi, patron of peace and animals, intercede for us."
+                    },
+    "history":  {
+                    "es":  "San Francisco de Asis fue el «segundo Cristo» de la historia: el poverello de Umbria que renuncio a todo para poseer a Dios, que hablo a los lobos y recibio en su carne las llagas del Calvario.\n\n1. EL LOBO DE GUBBIO: LA PAZ DEL CIELO SOBRE LA TIERRA\nLa ciudad de Gubbio vivia aterrorizada por un lobo feroz que habia devorado hombres y ganado. Nadie se atrevia a salir de las murallas. Francisco salio solo, sin armas, haciendo la senal de la cruz. El lobo corrio hacia el con las fauces abiertas; Francisco le hablo con calma: «Hermano lobo, haces mucho mal en esta region. Pero quiero hacer la paz entre ti y los habitantes». El lobo cerro la boca, bajo la cabeza y se acosto a los pies del santo como un cordero. Francisco lo llevo al mercado de la plaza y concertó un trato: el pueblo alimentaria al lobo; el lobo no volveria a atacar. El animal vivia entre los ciudadanos durante dos anos, visitando casa por casa, hasta que murio de vejez. Cuando murio, la ciudad entera lloro.\n\n2. LOS ESTIGMAS EN EL MONTE ALVERNIA (14 de septiembre de 1224)\nEn el retiro del monte Alvernia, durante la fiesta de la Exaltacion de la Santa Cruz, Francisco oraba con una intensidad sobrenatural cuando vio descender del cielo un serafin con seis alas, crucificado. Cuando la vision desaparecio, Francisco tenía en sus manos y pies unas prominencias de carne que imitaban los clavos de la cruz: negras por fuera, puntiagudas por dentro como clavos doblados, y en el costado derecho una herida de la que manaba sangre. Era el primer estigmatizado de la historia documentada. Durante los dos anos que vivio con las llagas, Francisco sufria al caminar, al escribir y al celebrar la misa, pero su alegria no cesaba. Sus companeros describieron el olor de las heridas como de flores.\n\n3. LA CONVERSION DEL LEPROSO Y LA RECONSTRUCCION DE SAN DAMIAN\nEl joven Francisco, hijo del rico tejedor Bernardone, pasaba en su caballo junto a un leproso que le extendio la mano. Francisco, que sentia un horror instintivo ante la lepra, detuvo el caballo, descendio, beso la mano del leproso y le dio dinero. Cuando se volvio para mirarlo, el camino estaba vacio. Francisco nunca supo si fue Cristo disfrazado de leproso o un leproso real. Ese beso cambio su vida para siempre. Poco despues, orando ante el crucifijo de San Damian, escucho a Cristo decirle: «Francisco, repara mi Iglesia en ruinas». Francisco vendio los tejidos de su padre para comprar piedras y reconstruyo con sus propias manos la capilla derrumbada. Su padre lo denuncio ante el obispo. Francisco, ante toda la ciudad, se quito hasta la ropa y se la devolvio: «Ahora puedo llamar a Dios mi unico Padre».",
+                    "en":  "Saint Francis of Assisi was the \"second Christ\" of history: the poverello of Umbria who renounced everything to possess God, who spoke to wolves and received in his flesh the wounds of Calvary.\n\n1. THE WOLF OF GUBBIO: THE PEACE OF HEAVEN UPON THE EARTH\nThe city of Gubbio lived in terror of a ferocious wolf that had devoured men and livestock. No one dared venture beyond the walls. Francis went out alone, unarmed, making the sign of the cross. The wolf rushed at him with open jaws; Francis spoke to it calmly: \"Brother wolf, you have done great harm in this region. But I wish to make peace between you and the inhabitants.\" The wolf closed its mouth, lowered its head, and lay down at the saint\u0027s feet like a lamb. Francis led it to the marketplace and brokered a deal: the townspeople would feed the wolf; the wolf would not attack again. The animal lived among the citizens for two years, going from house to house, until it died of old age. When it died, the entire city wept.\n\n2. THE STIGMATA ON MOUNT LA VERNA (September 14, 1224)\nOn the retreat of Mount La Verna, during the feast of the Exaltation of the Holy Cross, Francis was praying with supernatural intensity when he saw descend from the sky a crucified seraph with six wings. When the vision disappeared, Francis bore in his hands and feet projections of flesh that imitated the nails of the cross: dark on the outside, sharp on the inside like bent nails, and on his right side a wound from which blood flowed. He was the first stigmatized person in documented history. During the two years he lived with the wounds, Francis suffered when walking, writing, and celebrating Mass — but his joy never ceased. His companions described the smell of the wounds as of flowers.\n\n3. THE CONVERSION BY THE LEPER AND THE REBUILDING OF SAN DAMIANO\nThe young Francis, son of the wealthy cloth merchant Bernardone, was riding past a leper who extended his hand. Francis, who felt an instinctive horror of leprosy, stopped his horse, dismounted, kissed the leper\u0027s hand, and gave him money. When he turned to look, the road was empty. Francis never knew whether it was Christ disguised as a leper or a real leper. That kiss changed his life forever. Shortly after, praying before the crucifix of San Damiano, he heard Christ tell him: \"Francis, repair my Church in ruins.\" Francis sold his father\u0027s cloth to buy stones and rebuilt the ruined chapel with his own hands. His father denounced him before the bishop. Francis, before the whole city, removed even his clothes and returned them: \"Now I can call God my only Father.\""
+                },
+    "novena":  {
+                   "title":  {
+                                 "es":  "Novena a San Francisco de Asís",
+                                 "en":  "Novena to Saint Francis of Assisi"
+                             },
+                   "days":  [
+                                {
+                                    "day":  1,
+                                    "intention":  {
+                                                      "es":  "Por el don de la paz",
+                                                      "en":  "For the gift of peace"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "Oh San Francisco, instrumento de paz del Señor, que predicaste la reconciliación en un mundo dividido, te pedimos intercedas por nosotros para que encontremos la paz en nuestros corazones y la extendamos a quienes nos rodean. Amén.",
+                                                   "en":  "O Saint Francis, instrument of the Lord\u0027s peace, who preached reconciliation in a divided world, we ask you to intercede for us that we may find peace in our hearts and extend it to those around us. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  2,
+                                    "intention":  {
+                                                      "es":  "Por el amor a la pobreza evangélica",
+                                                      "en":  "For love of evangelical poverty"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "San Francisco, que renunciaste a todas las riquezas para seguir a Cristo pobre, ayúdanos a desprendernos de todo lo que nos aleja de Dios y a encontrar en Él nuestra única riqueza. Amén.",
+                                                   "en":  "Saint Francis, who renounced all riches to follow poor Christ, help us to detach from everything that distances us from God and to find in Him our only treasure. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  3,
+                                    "intention":  {
+                                                      "es":  "Por el cuidado de la creación",
+                                                      "en":  "For care of creation"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "Hermano Francisco, que cantaste la belleza del hermano sol y la hermana luna, intercede para que seamos buenos custodios de la creación de Dios y vivamos en armonía con la naturaleza. Amén.",
+                                                   "en":  "Brother Francis, who sang of the beauty of brother sun and sister moon, intercede that we may be good stewards of God\u0027s creation and live in harmony with nature. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  4,
+                                    "intention":  {
+                                                      "es":  "Por la humildad de espíritu",
+                                                      "en":  "For humility of spirit"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "San Francisco humilde, que te llamabas a ti mismo el mayor de los pecadores, pide a Dios por nosotros para que nos despojemos de toda soberbia y caminemos con corazón humilde ante el Señor. Amén.",
+                                                   "en":  "Humble Saint Francis, who called yourself the greatest of sinners, ask God for us that we may shed all pride and walk with humble hearts before the Lord. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  5,
+                                    "intention":  {
+                                                      "es":  "Por los enfermos y moribundos",
+                                                      "en":  "For the sick and dying"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "Francisco, que cuidaste con ternura a los leprosos y rechazados, intercede por todos los enfermos y por quienes se encuentran cerca de la muerte, para que sientan la presencia consoladora de Cristo. Amén.",
+                                                   "en":  "Francis, who tenderly cared for lepers and outcasts, intercede for all the sick and for those near death, that they may feel the comforting presence of Christ. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  6,
+                                    "intention":  {
+                                                      "es":  "Por la reconciliación familiar",
+                                                      "en":  "For family reconciliation"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "San Francisco, que sufriste el rechazo de tu propio padre pero lo perdonaste con amor, intercede por todas las familias divididas y por la reconciliación entre padres e hijos. Amén.",
+                                                   "en":  "Saint Francis, who suffered rejection by your own father but forgave him with love, intercede for all divided families and for reconciliation between parents and children. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  7,
+                                    "intention":  {
+                                                      "es":  "Por la evangelización del mundo",
+                                                      "en":  "For the evangelization of the world"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "Francisco misionero, que fuiste hasta el sultán a predicar el Evangelio sin miedo, intercede por todos los misioneros del mundo y por la conversión de los alejados de Dios. Amén.",
+                                                   "en":  "Missionary Francis, who went fearlessly to the sultan to preach the Gospel, intercede for all missionaries in the world and for the conversion of those far from God. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  8,
+                                    "intention":  {
+                                                      "es":  "Por los que sufren los estigmas del dolor",
+                                                      "en":  "For those bearing the stigmata of suffering"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "San Francisco estigmatizado, que llevaste en tu cuerpo las llagas de Cristo, intercede por todos los que sufren enfermedades dolorosas o cargas pesadas, para que las unan al misterio redentor de la Cruz. Amén.",
+                                                   "en":  "Stigmatized Saint Francis, who bore in your body the wounds of Christ, intercede for all who suffer painful illnesses or heavy burdens, that they may unite them to the redeeming mystery of the Cross. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  9,
+                                    "intention":  {
+                                                      "es":  "Por la alegría en el Señor",
+                                                      "en":  "For joy in the Lord"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "Alegre hermano Francisco, que llamabas a tus frailes hermanos juglares de Dios, intercede por nosotros para que vivamos con la alegría del Evangelio y seamos testigos luminosos de la bondad de Dios en el mundo. Amén.",
+                                                   "en":  "Joyful Brother Francis, who called your friars God\u0027s jesters, intercede for us that we may live with Gospel joy and be radiant witnesses of God\u0027s goodness in the world. Amen."
+                                               }
+                                }
+                            ]
+               },
+    "litany":  {
+                   "title":  {
+                                 "es":  "Letanía de San Francisco de Asís",
+                                 "en":  "Litany of Saint Francis of Assisi"
+                             },
+                   "invocations":  [
+                                       {
+                                           "es":  "San Francisco, amigo de los pobres,",
+                                           "en":  "Saint Francis, friend of the poor,"
+                                       },
+                                       {
+                                           "es":  "San Francisco, instrumento de paz,",
+                                           "en":  "Saint Francis, instrument of peace,"
+                                       },
+                                       {
+                                           "es":  "San Francisco, hermano de todos los seres vivientes,",
+                                           "en":  "Saint Francis, brother of all living beings,"
+                                       },
+                                       {
+                                           "es":  "San Francisco, portador de los estigmas de Cristo,",
+                                           "en":  "Saint Francis, bearer of the stigmata of Christ,"
+                                       },
+                                       {
+                                           "es":  "San Francisco, reformador de la Iglesia,",
+                                           "en":  "Saint Francis, reformer of the Church,"
+                                       },
+                                       {
+                                           "es":  "San Francisco, trovador de la creación,",
+                                           "en":  "Saint Francis, troubadour of creation,"
+                                       },
+                                       {
+                                           "es":  "San Francisco, espejo de pobreza evangélica,",
+                                           "en":  "Saint Francis, mirror of evangelical poverty,"
+                                       },
+                                       {
+                                           "es":  "San Francisco, patrono de Italia y de los ecologistas,",
+                                           "en":  "Saint Francis, patron of Italy and of ecologists,"
+                                       }
+                                   ],
+                   "response":  {
+                                    "es":  "Ruega por nosotros.",
+                                    "en":  "Pray for us."
+                                }
+               }
 }

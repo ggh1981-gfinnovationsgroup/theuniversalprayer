@@ -1,80 +1,80 @@
-{
-  "id": "sanguillermo",
-  "name": {
-    "es": "San Guillermo de Vercelli",
-    "en": "Saint William of Vercelli"
-  },
-  "feast_day": {
-    "es": "25 de junio",
-    "en": "June 25"
-  },
-  "image": "/assets/images/sanguillermo.svg",
-  "prayer": {
-    "es": "San Guillermo de Vercelli, ermitaño del Monte Vergine y fundador de la Congregación de Montevergine — a ti acudo en mi oración con humildad y confianza.\n\nTú que en tu juventud peregrinaste a pie a Santiago de Compostela y a Tierra Santa, y que subiste después a la montaña en busca de Dios en el silencio y la soledad, intercede para que yo también encuentre los desiertos interiores que Dios me pide recorrer.\n\nTú que viviste entre el mundo y la soledad, sirviendo a reyes y refugiándote luego en la oración, intercede para que yo sepa integrar acción y contemplación, servicio y silencio.\n\n¡San Guillermo de Vercelli, ruega por nosotros!\nAmén.",
-    "en": "Saint William of Vercelli, hermit of Monte Vergine and founder of the Congregation of Montevergine — to you I come in prayer with humility and trust.\n\nYou who in your youth made pilgrimages on foot to Santiago de Compostela and the Holy Land, and who then climbed the mountain in search of God in silence and solitude, intercede that I too may find the inner deserts God asks me to traverse.\n\nYou who lived between the world and solitude, serving kings and then retreating to prayer, intercede that I may know how to integrate action and contemplation, service and silence.\n\nSaint William of Vercelli, pray for us!\nAmen."
-  },
-  "history": {
-    "es": "Guillermo nació hacia el año 1085 en Vercelli, Piamonte, en el norte de Italia. Quedó huérfano muy pequeño y fue educado por sus parientes. A los quince años comenzó una vida penitente y viajó como peregrino, a pie y con los pies descalzos, hasta Santiago de Compostela en España. Intentó también peregrinar a Tierra Santa, pero las circunstancias lo impidieron.\n\nDe regreso a Italia, se retiró como ermitaño al Monte Solicoli, cerca de Nola en Campania. Allí reunió a varios discípulos, pero los conflictos entre ellos lo impulsaron a subir más alto, al Monte Vergine — el Monte de la Virgen — en la región de Aviñón, Campania, donde se estableció definitivamente hacia el año 1118-1119.\n\nEn el Monte Vergine construyó una iglesia dedicada a la Virgen María y fundó una comunidad que adoptó la Regla de San Benito. Esta fundación se convirtió en la Congregación de Montevergine, que subsiste hasta nuestros días y que cuenta con la famosa imagen de la Virgen de Montevergine — conocida en el sur de Italia como 'Mamma Schiavona' — que es uno de los santuarios marianos más visitados de Italia.\n\nGuillermo fue consejero espiritual del rey Roger II de Sicilia, aunque siempre regresó al monasterio. Fundó también otros establecimientos religiosos en el sur de Italia. Murió el 25 de junio de 1142 en Guglieto, provincia de Avellino. Fue canonizado por el papa Clemente XI en 1727.",
-    "en": "William was born around 1085 in Vercelli, Piedmont, in northern Italy. He was orphaned very young and was raised by relatives. At fifteen he began a penitential life and traveled as a pilgrim, on foot and barefoot, to Santiago de Compostela in Spain. He also attempted a pilgrimage to the Holy Land, but circumstances prevented him.\n\nReturning to Italy, he withdrew as a hermit to Monte Solicoli, near Nola in Campania. There he gathered several disciples, but conflicts among them prompted him to climb higher, to Monte Vergine — the Mountain of the Virgin — in the Avellino region of Campania, where he settled definitively around 1118-1119.\n\nOn Monte Vergine he built a church dedicated to the Virgin Mary and founded a community that adopted the Rule of Saint Benedict. This foundation became the Congregation of Montevergine, which survives to this day and holds the famous image of Our Lady of Montevergine — known in southern Italy as 'Mamma Schiavona' — one of the most visited Marian shrines in Italy.\n\nWilliam was spiritual adviser to King Roger II of Sicily, though he always returned to the monastery. He also founded other religious establishments in southern Italy. He died on June 25, 1142, at Guglieto, Province of Avellino. He was canonized by Pope Clement XI in 1727."
-  },
-  "novena": [
-    {
-      "day": 1,
-      "es": "Día 1 — La Peregrinación Interior\n\nSan Guillermo, que peregrinaste a pie hasta los confines de Europa en busca de Dios, intercede para que yo también emprenda las peregrinaciones interiores que Dios me pide. Que cada sacrificio del camino me acerque más a Él.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 1 — The Inner Pilgrimage\n\nSaint William, who pilgrimaged on foot to the ends of Europe in search of God, intercede that I too may undertake the inner pilgrimages God asks of me. May every sacrifice of the journey bring me closer to Him.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 2,
-      "es": "Día 2 — El Desierto Interior\n\nSan Guillermo, que subiste a la montaña para encontrar a Dios en el silencio, intercede por los que buscan momentos de recogimiento en una sociedad ruidosa. Que encontremos nuestros 'Montes Vergine' personales.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 2 — The Inner Desert\n\nSaint William, who climbed the mountain to find God in silence, intercede for those seeking moments of recollection in a noisy society. May we find our personal 'Monte Vergine'.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 3,
-      "es": "Día 3 — La Devoción Mariana\n\nSan Guillermo, que construiste tu santuario en honor a la Virgen María en la cima de la montaña, intercede para que nuestra devoción a María sea viva y constante. Que ella nos lleve siempre hacia su Hijo.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 3 — Marian Devotion\n\nSaint William, who built your sanctuary in honor of the Virgin Mary at the mountain top, intercede that our devotion to Mary may be living and constant. May she always lead us to her Son.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 4,
-      "es": "Día 4 — La Fundación de Comunidades\n\nSan Guillermo, fundador de la Congregación de Montevergine que ha sobrevivido casi nueve siglos, intercede por todos los que fundan o sostienen comunidades religiosas, parroquiales y apostólicas.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 4 — The Founding of Communities\n\nSaint William, founder of the Congregation of Montevergine which has survived almost nine centuries, intercede for all who found or sustain religious, parish, and apostolic communities.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 5,
-      "es": "Día 5 — El Consejero Espiritual\n\nSan Guillermo, que fuiste consejero espiritual del rey Roger II de Sicilia, intercede por los asesores, directores espirituales y acompañantes que guían almas. Que tengan sabiduría, humildad y discernimiento.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 5 — The Spiritual Counselor\n\nSaint William, who were spiritual counselor to King Roger II of Sicily, intercede for advisers, spiritual directors, and companions who guide souls. May they have wisdom, humility, and discernment.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 6,
-      "es": "Día 6 — La Soledad Elegida\n\nSan Guillermo, que elegiste libremente la soledad de la montaña cuando el mundo te ofrecía honores, intercede por los consagrados y consagradas que han dejado el mundo por amor a Dios. Que su vocación sea fuente de alegría.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 6 — Chosen Solitude\n\nSaint William, who freely chose the solitude of the mountain when the world offered you honors, intercede for consecrated men and women who have left the world out of love for God. May their vocation be a source of joy.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 7,
-      "es": "Día 7 — La Reconciliación con los Conflictos\n\nSan Guillermo, que cuando surgieron conflictos en tu primera comunidad no los resolviste con autoridad sino retirándote y comenzando de nuevo, intercede por las comunidades que atraviesan conflictos internos. Que aprendan a comenzar siempre de nuevo.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 7 — Reconciliation with Conflicts\n\nSaint William, who when conflicts arose in your first community did not resolve them with authority but by withdrawing and beginning again, intercede for communities going through internal conflicts. May they always learn to begin again.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 8,
-      "es": "Día 8 — El Patrimonio Espiritual\n\nSan Guillermo, cuyo santuario del Monte Vergine es hoy uno de los más visitados de Italia, intercede para que los lugares santos del mundo sean fuentes de conversión y encuentro con Dios para millones de peregrinos.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 8 — Spiritual Heritage\n\nSaint William, whose shrine of Monte Vergine is today one of the most visited in Italy, intercede that the holy places of the world may be sources of conversion and encounter with God for millions of pilgrims.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 9,
-      "es": "Día 9 — La Petición Final\n\nSan Guillermo de Vercelli, ermitaño del Monte Vergine, en este noveno día te presento mi petición más profunda (pausa y presenta tu intención). Tú que subiste la montaña para acercarte a Dios, intercede para que yo también encuentre el camino de subida.\n\n¡San Guillermo de Vercelli, ruega por nosotros!\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 9 — The Final Petition\n\nSaint William of Vercelli, hermit of Monte Vergine, on this ninth day I present to you my deepest petition (pause and present your intention). You who climbed the mountain to draw closer to God, intercede that I too may find the way upward.\n\nSaint William of Vercelli, pray for us!\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    }
-  ],
-  "chaplet": {
-    "available": false
-  },
-  "litany": {
-    "available": true,
-    "es": "Letanías de San Guillermo de Vercelli\n\nSeñor, ten piedad. Señor, ten piedad.\nCristo, ten piedad. Cristo, ten piedad.\nSeñor, ten piedad. Señor, ten piedad.\n\nSan Guillermo, peregrino penitente desde la infancia, ruega por nosotros.\nSan Guillermo, ermitaño del Monte Vergine, ruega por nosotros.\nSan Guillermo, fundador de la Congregación de Montevergine, ruega por nosotros.\nSan Guillermo, servidor de la Virgen María, ruega por nosotros.\nSan Guillermo, consejero de reyes y refugiado del mundo, ruega por nosotros.\nSan Guillermo, que comenzaste de nuevo cuantas veces fue necesario, ruega por nosotros.\nSan Guillermo, patrono de los peregrinos y solitarios, ruega por nosotros.\nSan Guillermo, que encontraste a Dios en la montaña, ruega por nosotros.\n\nCordero de Dios, que quitas el pecado del mundo, perdónanos, Señor.\nCordero de Dios, que quitas el pecado del mundo, escúchanos, Señor.\nCordero de Dios, que quitas el pecado del mundo, ten piedad de nosotros.\n\nOremos: Señor Dios, que llamaste a San Guillermo a alejarse del mundo para buscarte en la soledad de la montaña: concede que, inspirados por su ejemplo, encontremos en medio de nuestras ocupaciones los espacios de silencio que nos unen a Ti. Por Jesucristo Nuestro Señor. Amén.",
-    "en": "Litany of Saint William of Vercelli\n\nLord, have mercy. Lord, have mercy.\nChrist, have mercy. Christ, have mercy.\nLord, have mercy. Lord, have mercy.\n\nSaint William, penitent pilgrim from childhood, pray for us.\nSaint William, hermit of Monte Vergine, pray for us.\nSaint William, founder of the Congregation of Montevergine, pray for us.\nSaint William, servant of the Virgin Mary, pray for us.\nSaint William, counselor of kings and recluse from the world, pray for us.\nSaint William, who began again as many times as necessary, pray for us.\nSaint William, patron of pilgrims and solitaries, pray for us.\nSaint William, who found God on the mountain, pray for us.\n\nLamb of God, who takes away the sins of the world, spare us, O Lord.\nLamb of God, who takes away the sins of the world, graciously hear us, O Lord.\nLamb of God, who takes away the sins of the world, have mercy on us.\n\nLet us pray: Lord God, who called Saint William to withdraw from the world to seek You in the solitude of the mountain: grant that, inspired by his example, we may find amid our occupations the spaces of silence that unite us to You. Through Jesus Christ Our Lord. Amen."
-  },
-  "consecration": {
-    "available": true,
-    "es": "Consagración a San Guillermo de Vercelli\n\nSan Guillermo, peregrino y ermitaño, hoy me pongo bajo tu intercesión.\n\nEnséñame a peregrinar: a moverme con ligereza, sin acumular lo que no necesito, confiando en que Dios proveerá en cada etapa del camino.\n\nEnséñame a subir la montaña: a buscar, en medio del ruido del mundo, los momentos de silencio donde Dios habla al corazón. Que yo también construya mi 'Monte Vergine' personal — un lugar de silencio donde María me lleve a su Hijo.\n\nAmén.",
-    "en": "Consecration to Saint William of Vercelli\n\nSaint William, pilgrim and hermit, today I place myself under your intercession.\n\nTeach me to pilgrimage: to move with lightness, without accumulating what I do not need, trusting that God will provide at every stage of the journey.\n\nTeach me to climb the mountain: to seek, amid the noise of the world, the moments of silence where God speaks to the heart. May I too build my personal 'Monte Vergine' — a place of silence where Mary leads me to her Son.\n\nAmen."
-  }
+﻿{
+    "id":  "sanguillermo",
+    "name":  {
+                 "es":  "San Guillermo de Vercelli",
+                 "en":  "Saint William of Vercelli"
+             },
+    "feast_day":  {
+                      "es":  "25 de junio",
+                      "en":  "June 25"
+                  },
+    "image":  "/assets/images/sanguillermo.svg",
+    "prayer":  {
+                   "es":  "San Guillermo de Vercelli, ermitaÃ±o del Monte Vergine y fundador de la CongregaciÃ³n de Montevergine â€” a ti acudo en mi oraciÃ³n con humildad y confianza.\n\nTÃº que en tu juventud peregrinaste a pie a Santiago de Compostela y a Tierra Santa, y que subiste despuÃ©s a la montaÃ±a en busca de Dios en el silencio y la soledad, intercede para que yo tambiÃ©n encuentre los desiertos interiores que Dios me pide recorrer.\n\nTÃº que viviste entre el mundo y la soledad, sirviendo a reyes y refugiÃ¡ndote luego en la oraciÃ³n, intercede para que yo sepa integrar acciÃ³n y contemplaciÃ³n, servicio y silencio.\n\nÂ¡San Guillermo de Vercelli, ruega por nosotros!\nAmÃ©n.",
+                   "en":  "Saint William of Vercelli, hermit of Monte Vergine and founder of the Congregation of Montevergine â€” to you I come in prayer with humility and trust.\n\nYou who in your youth made pilgrimages on foot to Santiago de Compostela and the Holy Land, and who then climbed the mountain in search of God in silence and solitude, intercede that I too may find the inner deserts God asks me to traverse.\n\nYou who lived between the world and solitude, serving kings and then retreating to prayer, intercede that I may know how to integrate action and contemplation, service and silence.\n\nSaint William of Vercelli, pray for us!\nAmen."
+               },
+    "history":  {
+                    "es":  "San Guillermo de Gellone fue el paladín de Carlomagno que abandono la espada por el habito monastico y convirtio su escudo de guerra en altar de oracion.\n\n1. EL GUERRERO QUE PUSO LA ESPADA ANTE LA CRUZ\nGuillermo de Gellone era el primo de Carlomagno y uno de sus mas valerosos generales: habia combatido contra los moros en el sur de Francia y en Cataluna, y su nombre era temido en toda la frontera. Despues de anos de batallas, algo cambio en su interior durante una conversacion con San Benedicto de Aniano. «¿Para quien luchas?», le pregunto el monje. «Para el rey de Francia», respondio Guillermo. «Y cuando el rey muera, ¿para quien luchara tu espada?». Guillermo no respondio. Esa noche sono que entregaba su espada a Cristo y recibia a cambio un habito de lana. Cuatro anos despues, en 804, fundo el monasterio de Gellone en el valle del Herault con sus propias manos.\n\n2. EL MILAGRO DEL MANANTIAL\nMientras construia el monasterio, los trabajadores sufrieron una crisis aguda de sed: no habia agua en el valle seco del Herault. Guillermo se retiro a orar en solitario. Segun las cronicas carolingias, clavo su bordón en la tierra y rezó en silencio. Cuando abrio los ojos, el basto estaba rodeado de agua que brotaba del suelo: un manantial de agua cristalina que riego el huerto del monasterio durante siglos. Los monjes lo llamaron «la fuente de Guillermo» y la usaron como agua bendita para curas de enfermedades de la piel durante la Edad Media. El manantial sigue fluyendo en el lugar donde esta hoy el pueblo de Saint-Guilhem-le-Desert.\n\n3. EL SANTUARIO EN EL DESIERTO Y EL CAMINO DE SANTIAGO\nEl monasterio de Gellone, fundado por Guillermo, recibio del propio Carlomagno una reliquia de la Vera Cruz, que se convirtio en destino de peregrinacion desde toda Europa. El camino de peregrinacion a Gellone fue uno de los primeros itinerarios espirituales de Francia: los peregrinos que iban a Santiago de Compostela pasaban por Gellone y veneraban la reliquia. La tradicion afirma que Guillermo murio en el monasterio el 28 de mayo de 812, despues de anos de vida monastica en absoluta austeridad. Sus restos obraron numerosos milagros de curacion, y su culto se extendio por toda la Europa medieval desde Normandia hasta Cataluna.",
+                    "en":  "Saint William of Gellone was Charlemagne\u0027s paladin who laid down his sword for a monastic habit and turned his battle shield into an altar of prayer.\n\n1. THE WARRIOR WHO LAID HIS SWORD BEFORE THE CROSS\nWilliam of Gellone was Charlemagne\u0027s cousin and one of his most valiant generals: he had fought the Moors in southern France and Catalonia, and his name was feared along the entire frontier. After years of battles, something changed within him during a conversation with Saint Benedict of Aniane. \"For whom do you fight?\" asked the monk. \"For the king of France,\" replied William. \"And when the king dies, for whom will your sword fight?\" William did not answer. That night he dreamed he gave his sword to Christ and received in exchange a woolen habit. Four years later, in 804, he founded the monastery of Gellone in the Herault valley with his own hands.\n\n2. THE MIRACLE OF THE SPRING\nWhile building the monastery, the workers suffered an acute crisis of thirst: there was no water in the dry Herault valley. William retired to pray alone. According to Carolingian chronicles, he planted his staff in the ground and prayed in silence. When he opened his eyes, the staff was surrounded by water welling up from the ground: a crystal-clear spring that watered the monastery\u0027s garden for centuries. The monks called it \"William\u0027s spring\" and used it as holy water for curing skin diseases throughout the Middle Ages. The spring still flows at the site of what is now the village of Saint-Guilhem-le-Desert.\n\n3. THE SANCTUARY IN THE DESERT AND THE CAMINO DE SANTIAGO\nThe monastery of Gellone, founded by William, received from Charlemagne himself a relic of the True Cross, which became a pilgrimage destination from across Europe. The pilgrimage route to Gellone was one of the first spiritual itineraries of France: pilgrims traveling to Santiago de Compostela passed through Gellone and venerated the relic. Tradition holds that William died in the monastery on May 28, 812, after years of monastic life in absolute austerity. His remains worked numerous healing miracles, and his cult spread throughout medieval Europe from Normandy to Catalonia."
+                },
+    "novena":  [
+                   {
+                       "day":  1,
+                       "es":  "DÃ­a 1 â€” La PeregrinaciÃ³n Interior\n\nSan Guillermo, que peregrinaste a pie hasta los confines de Europa en busca de Dios, intercede para que yo tambiÃ©n emprenda las peregrinaciones interiores que Dios me pide. Que cada sacrificio del camino me acerque mÃ¡s a Ã‰l.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 1 â€” The Inner Pilgrimage\n\nSaint William, who pilgrimaged on foot to the ends of Europe in search of God, intercede that I too may undertake the inner pilgrimages God asks of me. May every sacrifice of the journey bring me closer to Him.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  2,
+                       "es":  "DÃ­a 2 â€” El Desierto Interior\n\nSan Guillermo, que subiste a la montaÃ±a para encontrar a Dios en el silencio, intercede por los que buscan momentos de recogimiento en una sociedad ruidosa. Que encontremos nuestros \u0027Montes Vergine\u0027 personales.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 2 â€” The Inner Desert\n\nSaint William, who climbed the mountain to find God in silence, intercede for those seeking moments of recollection in a noisy society. May we find our personal \u0027Monte Vergine\u0027.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  3,
+                       "es":  "DÃ­a 3 â€” La DevociÃ³n Mariana\n\nSan Guillermo, que construiste tu santuario en honor a la Virgen MarÃ­a en la cima de la montaÃ±a, intercede para que nuestra devociÃ³n a MarÃ­a sea viva y constante. Que ella nos lleve siempre hacia su Hijo.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 3 â€” Marian Devotion\n\nSaint William, who built your sanctuary in honor of the Virgin Mary at the mountain top, intercede that our devotion to Mary may be living and constant. May she always lead us to her Son.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  4,
+                       "es":  "DÃ­a 4 â€” La FundaciÃ³n de Comunidades\n\nSan Guillermo, fundador de la CongregaciÃ³n de Montevergine que ha sobrevivido casi nueve siglos, intercede por todos los que fundan o sostienen comunidades religiosas, parroquiales y apostÃ³licas.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 4 â€” The Founding of Communities\n\nSaint William, founder of the Congregation of Montevergine which has survived almost nine centuries, intercede for all who found or sustain religious, parish, and apostolic communities.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  5,
+                       "es":  "DÃ­a 5 â€” El Consejero Espiritual\n\nSan Guillermo, que fuiste consejero espiritual del rey Roger II de Sicilia, intercede por los asesores, directores espirituales y acompaÃ±antes que guÃ­an almas. Que tengan sabidurÃ­a, humildad y discernimiento.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 5 â€” The Spiritual Counselor\n\nSaint William, who were spiritual counselor to King Roger II of Sicily, intercede for advisers, spiritual directors, and companions who guide souls. May they have wisdom, humility, and discernment.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  6,
+                       "es":  "DÃ­a 6 â€” La Soledad Elegida\n\nSan Guillermo, que elegiste libremente la soledad de la montaÃ±a cuando el mundo te ofrecÃ­a honores, intercede por los consagrados y consagradas que han dejado el mundo por amor a Dios. Que su vocaciÃ³n sea fuente de alegrÃ­a.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 6 â€” Chosen Solitude\n\nSaint William, who freely chose the solitude of the mountain when the world offered you honors, intercede for consecrated men and women who have left the world out of love for God. May their vocation be a source of joy.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  7,
+                       "es":  "DÃ­a 7 â€” La ReconciliaciÃ³n con los Conflictos\n\nSan Guillermo, que cuando surgieron conflictos en tu primera comunidad no los resolviste con autoridad sino retirÃ¡ndote y comenzando de nuevo, intercede por las comunidades que atraviesan conflictos internos. Que aprendan a comenzar siempre de nuevo.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 7 â€” Reconciliation with Conflicts\n\nSaint William, who when conflicts arose in your first community did not resolve them with authority but by withdrawing and beginning again, intercede for communities going through internal conflicts. May they always learn to begin again.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  8,
+                       "es":  "DÃ­a 8 â€” El Patrimonio Espiritual\n\nSan Guillermo, cuyo santuario del Monte Vergine es hoy uno de los mÃ¡s visitados de Italia, intercede para que los lugares santos del mundo sean fuentes de conversiÃ³n y encuentro con Dios para millones de peregrinos.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 8 â€” Spiritual Heritage\n\nSaint William, whose shrine of Monte Vergine is today one of the most visited in Italy, intercede that the holy places of the world may be sources of conversion and encounter with God for millions of pilgrims.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  9,
+                       "es":  "DÃ­a 9 â€” La PeticiÃ³n Final\n\nSan Guillermo de Vercelli, ermitaÃ±o del Monte Vergine, en este noveno dÃ­a te presento mi peticiÃ³n mÃ¡s profunda (pausa y presenta tu intenciÃ³n). TÃº que subiste la montaÃ±a para acercarte a Dios, intercede para que yo tambiÃ©n encuentre el camino de subida.\n\nÂ¡San Guillermo de Vercelli, ruega por nosotros!\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 9 â€” The Final Petition\n\nSaint William of Vercelli, hermit of Monte Vergine, on this ninth day I present to you my deepest petition (pause and present your intention). You who climbed the mountain to draw closer to God, intercede that I too may find the way upward.\n\nSaint William of Vercelli, pray for us!\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   }
+               ],
+    "chaplet":  {
+                    "available":  false
+                },
+    "litany":  {
+                   "available":  true,
+                   "es":  "LetanÃ­as de San Guillermo de Vercelli\n\nSeÃ±or, ten piedad. SeÃ±or, ten piedad.\nCristo, ten piedad. Cristo, ten piedad.\nSeÃ±or, ten piedad. SeÃ±or, ten piedad.\n\nSan Guillermo, peregrino penitente desde la infancia, ruega por nosotros.\nSan Guillermo, ermitaÃ±o del Monte Vergine, ruega por nosotros.\nSan Guillermo, fundador de la CongregaciÃ³n de Montevergine, ruega por nosotros.\nSan Guillermo, servidor de la Virgen MarÃ­a, ruega por nosotros.\nSan Guillermo, consejero de reyes y refugiado del mundo, ruega por nosotros.\nSan Guillermo, que comenzaste de nuevo cuantas veces fue necesario, ruega por nosotros.\nSan Guillermo, patrono de los peregrinos y solitarios, ruega por nosotros.\nSan Guillermo, que encontraste a Dios en la montaÃ±a, ruega por nosotros.\n\nCordero de Dios, que quitas el pecado del mundo, perdÃ³nanos, SeÃ±or.\nCordero de Dios, que quitas el pecado del mundo, escÃºchanos, SeÃ±or.\nCordero de Dios, que quitas el pecado del mundo, ten piedad de nosotros.\n\nOremos: SeÃ±or Dios, que llamaste a San Guillermo a alejarse del mundo para buscarte en la soledad de la montaÃ±a: concede que, inspirados por su ejemplo, encontremos en medio de nuestras ocupaciones los espacios de silencio que nos unen a Ti. Por Jesucristo Nuestro SeÃ±or. AmÃ©n.",
+                   "en":  "Litany of Saint William of Vercelli\n\nLord, have mercy. Lord, have mercy.\nChrist, have mercy. Christ, have mercy.\nLord, have mercy. Lord, have mercy.\n\nSaint William, penitent pilgrim from childhood, pray for us.\nSaint William, hermit of Monte Vergine, pray for us.\nSaint William, founder of the Congregation of Montevergine, pray for us.\nSaint William, servant of the Virgin Mary, pray for us.\nSaint William, counselor of kings and recluse from the world, pray for us.\nSaint William, who began again as many times as necessary, pray for us.\nSaint William, patron of pilgrims and solitaries, pray for us.\nSaint William, who found God on the mountain, pray for us.\n\nLamb of God, who takes away the sins of the world, spare us, O Lord.\nLamb of God, who takes away the sins of the world, graciously hear us, O Lord.\nLamb of God, who takes away the sins of the world, have mercy on us.\n\nLet us pray: Lord God, who called Saint William to withdraw from the world to seek You in the solitude of the mountain: grant that, inspired by his example, we may find amid our occupations the spaces of silence that unite us to You. Through Jesus Christ Our Lord. Amen."
+               },
+    "consecration":  {
+                         "available":  true,
+                         "es":  "ConsagraciÃ³n a San Guillermo de Vercelli\n\nSan Guillermo, peregrino y ermitaÃ±o, hoy me pongo bajo tu intercesiÃ³n.\n\nEnsÃ©Ã±ame a peregrinar: a moverme con ligereza, sin acumular lo que no necesito, confiando en que Dios proveerÃ¡ en cada etapa del camino.\n\nEnsÃ©Ã±ame a subir la montaÃ±a: a buscar, en medio del ruido del mundo, los momentos de silencio donde Dios habla al corazÃ³n. Que yo tambiÃ©n construya mi \u0027Monte Vergine\u0027 personal â€” un lugar de silencio donde MarÃ­a me lleve a su Hijo.\n\nAmÃ©n.",
+                         "en":  "Consecration to Saint William of Vercelli\n\nSaint William, pilgrim and hermit, today I place myself under your intercession.\n\nTeach me to pilgrimage: to move with lightness, without accumulating what I do not need, trusting that God will provide at every stage of the journey.\n\nTeach me to climb the mountain: to seek, amid the noise of the world, the moments of silence where God speaks to the heart. May I too build my personal \u0027Monte Vergine\u0027 â€” a place of silence where Mary leads me to her Son.\n\nAmen."
+                     }
 }

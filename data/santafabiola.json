@@ -1,82 +1,82 @@
-{
-  "id": "santafabiola",
-  "name": {
-    "es": "Santa Fabiola de Roma",
-    "en": "Saint Fabiola of Rome"
-  },
-  "feast_day": {
-    "es": "27 de diciembre",
-    "en": "December 27"
-  },
-  "image": "/assets/images/santafabiola.svg",
-  "prayer": {
-    "es": "Santa Fabiola de Roma, mujer que supo levantarse de sus errores y convertirse en instrumento de misericordia — a ti acudo con el corazón humilde.\n\nTú que abriste las primeras puertas de la caridad organizada fundando el primer hospital público de Occidente, intercede por todos los enfermos, los médicos, las enfermeras y quienes cuidan de los más vulnerables.\n\nEnséñame que la misericordia de Dios siempre supera nuestras faltas, y que de cada caída puede surgir una vida nueva consagrada al servicio de los demás.\n\n¡Santa Fabiola, ruega por nosotros!\nAmén.",
-    "en": "Saint Fabiola of Rome, woman who knew how to rise from her mistakes and become an instrument of mercy — to you I come with a humble heart.\n\nYou who opened the first doors of organized charity by founding the first public hospital in the West, intercede for all the sick, doctors, nurses, and those who care for the most vulnerable.\n\nTeach me that God's mercy always surpasses our failures, and that from every fall a new life consecrated to the service of others can arise.\n\nSaint Fabiola, pray for us!\nAmen."
-  },
-  "history": {
-    "es": "Fabiola fue una noble matrona romana del siglo IV, perteneciente a la gens Fabia, una de las familias más antiguas de Roma. Casada con un hombre de vida disoluta, lo dejó y contrajo un segundo matrimonio antes de la muerte del primero, situación que la alejó temporalmente de la plena comunión con la Iglesia.\n\nTras la muerte de su segundo esposo, Fabiola hizo una penitencia pública extraordinaria: se presentó ante el obispo con ropas de cilicio en la basílica de Letrán, entre la multitud reunida. La Iglesia la recibió nuevamente con los brazos abiertos.\n\nConvertida y penitente, vendió todos sus bienes y dedicó lo obtenido a obras de caridad. Alrededor del año 390 fundó en Roma el primer hospital público de Occidente, donde ella misma atendía a los pobres y enfermos más abandonados, recogiendo a los necesitados de las calles de la ciudad.\n\nViajó a Belén para estudiar las Escrituras bajo la guía de San Jerónimo, quien la alabó en sus cartas por su humildad, inteligencia e incansable caridad. Regresó a Roma y continuó su obra, fundando también un hospicio para peregrinos en Ostia junto a su amigo San Pamaquio.\n\nMurió en Roma alrededor del año 399. Su funeral fue multitudinario. San Jerónimo escribió: 'Roma entera salió a su encuentro; todos querían verla; todos la amaban.' Es patrona de los enfermos, de los médicos y de quienes buscan la reconciliación con Dios.",
-    "en": "Fabiola was a noble Roman matron of the 4th century, belonging to the gens Fabia, one of the oldest families in Rome. Married to a man of dissolute life, she left him and contracted a second marriage before his death — a situation that temporarily separated her from full communion with the Church.\n\nAfter her second husband's death, Fabiola made an extraordinary public penance: she presented herself before the bishop in sackcloth at the Lateran basilica, among the assembled crowd. The Church received her once again with open arms.\n\nConverted and penitent, she sold all her goods and devoted the proceeds to works of charity. Around the year 390 she founded in Rome the first public hospital in the West, where she herself cared for the poorest and most abandoned sick, gathering the needy from the streets of the city.\n\nShe traveled to Bethlehem to study the Scriptures under Saint Jerome, who praised her in his letters for her humility, intelligence, and tireless charity. She returned to Rome and continued her work, also founding a hospice for pilgrims in Ostia with her friend Saint Pammachius.\n\nShe died in Rome around the year 399. Her funeral was attended by multitudes. Saint Jerome wrote: 'All of Rome came out to meet her; everyone wanted to see her; everyone loved her.' She is patron of the sick, of doctors, and of those seeking reconciliation with God."
-  },
-  "novena": [
-    {
-      "day": 1,
-      "es": "Día 1 — La Misericordia Que Perdona\n\nSanta Fabiola, que experimentaste la misericordia de Dios después de tus errores, intercede por todos los que se sienten lejos de Dios por sus pecados. Que nadie dude del amor perdonador del Señor.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 1 — The Mercy That Forgives\n\nSaint Fabiola, who experienced God's mercy after your mistakes, intercede for all who feel far from God because of their sins. May no one doubt the forgiving love of the Lord.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 2,
-      "es": "Día 2 — Los Enfermos\n\nSanta Fabiola, fundadora del primer hospital de Occidente, intercede por todos los enfermos — los que están en camas de hospital, los que sufren en soledad, los que no tienen acceso a atención médica.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 2 — The Sick\n\nSaint Fabiola, founder of the first hospital in the West, intercede for all the sick — those in hospital beds, those who suffer in solitude, those without access to medical care.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 3,
-      "es": "Día 3 — Médicos y Enfermeras\n\nSanta Fabiola, que atendiste con tus propias manos a los más abandonados, intercede por todos los profesionales de la salud. Que su trabajo sea siempre un acto de amor y servicio.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 3 — Doctors and Nurses\n\nSaint Fabiola, who with your own hands cared for the most abandoned, intercede for all health professionals. May their work always be an act of love and service.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 4,
-      "es": "Día 4 — La Penitencia y Conversión\n\nSanta Fabiola, que no tuviste miedo de hacer penitencia pública y comenzar de nuevo, intercede por los que buscan reconciliarse con Dios. Que encuentren la valentía para volver a Él sin vergüenza.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 4 — Penance and Conversion\n\nSaint Fabiola, who were not afraid to do public penance and start over, intercede for those seeking reconciliation with God. May they find the courage to return to Him without shame.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 5,
-      "es": "Día 5 — Los Pobres\n\nSanta Fabiola, que vendiste tu fortuna para servir a los pobres, intercede por los más vulnerables de nuestra sociedad. Que los que tienen bienes encuentren el espíritu de generosidad.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 5 — The Poor\n\nSaint Fabiola, who sold your fortune to serve the poor, intercede for the most vulnerable in our society. May those with goods find the spirit of generosity.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 6,
-      "es": "Día 6 — Las Mujeres\n\nSanta Fabiola, que siendo mujer encontraste tu vocación en la caridad y el estudio de las Escrituras, intercede por todas las mujeres que buscan su lugar en la Iglesia y en el mundo.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 6 — Women\n\nSaint Fabiola, who as a woman found your vocation in charity and the study of Scripture, intercede for all women seeking their place in the Church and in the world.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 7,
-      "es": "Día 7 — Los Peregrinos\n\nSanta Fabiola, que fundaste un hospicio para peregrinos, intercede por los que viajan y los que buscan a Dios en su camino de fe.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 7 — Pilgrims\n\nSaint Fabiola, who founded a hospice for pilgrims, intercede for those who travel and for those seeking God on their journey of faith.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 8,
-      "es": "Día 8 — El Estudio de las Escrituras\n\nSanta Fabiola, que fuiste a Belén para aprender las Escrituras de San Jerónimo, intercede por los que estudian la Palabra de Dios. Que la Biblia sea siempre alimento de vida.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 8 — Study of Scripture\n\nSaint Fabiola, who went to Bethlehem to learn the Scriptures from Saint Jerome, intercede for those who study the Word of God. May the Bible always be nourishment for life.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 9,
-      "es": "Día 9 — La Petición Final\n\nSanta Fabiola de Roma, en este noveno día te presento mi necesidad más urgente (presenta tu intención). Tú que conociste la misericordia de Dios de modo tan especial, intercede por mí ante Él.\n\n¡Santa Fabiola, ruega por nosotros!\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 9 — The Final Petition\n\nSaint Fabiola of Rome, on this ninth day I present to you my most urgent need (present your intention). You who knew God's mercy in such a special way, intercede for me before Him.\n\nSaint Fabiola, pray for us!\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    }
-  ],
-  "chaplet": {
-    "available": false,
-    "es": "No se conoce una coronilla propia de Santa Fabiola. Se recomienda rezar la Coronilla de la Divina Misericordia en su honor, recordando la misericordia que ella misma experimentó y practicó.",
-    "en": "No chaplet specific to Saint Fabiola is widely known. It is recommended to pray the Divine Mercy Chaplet in her honor, recalling the mercy she herself experienced and practiced."
-  },
-  "litany": {
-    "available": true,
-    "es": "Letanías de Santa Fabiola\n\nSeñor, ten piedad. Señor, ten piedad.\nCristo, ten piedad. Cristo, ten piedad.\nSeñor, ten piedad. Señor, ten piedad.\n\nSanta Fabiola, penitente convertida, ruega por nosotros.\nSanta Fabiola, fundadora del primer hospital de Occidente, ruega por nosotros.\nSanta Fabiola, servidora de los pobres y enfermos, ruega por nosotros.\nSanta Fabiola, discípula de San Jerónimo, ruega por nosotros.\nSanta Fabiola, que buscaste la misericordia de Dios con toda tu alma, ruega por nosotros.\nSanta Fabiola, que atendiste con tus manos a los más abandonados, ruega por nosotros.\nSanta Fabiola, patrona de los hospitales y del personal médico, ruega por nosotros.\nSanta Fabiola, modelo de caridad cristiana organizada, ruega por nosotros.\n\nCordero de Dios, que quitas el pecado del mundo, perdónanos, Señor.\nCordero de Dios, que quitas el pecado del mundo, escúchanos, Señor.\nCordero de Dios, que quitas el pecado del mundo, ten piedad de nosotros.\n\nOremos: Dios misericordioso, que transformaste a Santa Fabiola de pecadora en servidora heroica de los enfermos y los pobres: concédenos, por su intercesión, la gracia de levantarnos siempre de nuestras caídas y ver en todo prójimo que sufre el rostro de Cristo. Amén.",
-    "en": "Litany of Saint Fabiola\n\nLord, have mercy. Lord, have mercy.\nChrist, have mercy. Christ, have mercy.\nLord, have mercy. Lord, have mercy.\n\nSaint Fabiola, converted penitent, pray for us.\nSaint Fabiola, founder of the first hospital in the West, pray for us.\nSaint Fabiola, servant of the poor and sick, pray for us.\nSaint Fabiola, disciple of Saint Jerome, pray for us.\nSaint Fabiola, who sought the mercy of God with all your soul, pray for us.\nSaint Fabiola, who with your hands cared for the most abandoned, pray for us.\nSaint Fabiola, patron of hospitals and medical personnel, pray for us.\nSaint Fabiola, model of organized Christian charity, pray for us.\n\nLamb of God, who takes away the sins of the world, spare us, O Lord.\nLamb of God, who takes away the sins of the world, graciously hear us, O Lord.\nLamb of God, who takes away the sins of the world, have mercy on us.\n\nLet us pray: Merciful God, who transformed Saint Fabiola from a sinner into a heroic servant of the sick and poor: grant us, through her intercession, the grace to always rise from our falls and to see in every suffering neighbor the face of Christ. Amen."
-  },
-  "consecration": {
-    "available": true,
-    "es": "Encomendación a Santa Fabiola\n\nSanta Fabiola, que supiste comenzar de nuevo después del error y convertir tu vida en un don para los demás, hoy me encomiendo a ti.\n\nTú que fundaste el primer hospital del mundo occidental con tus propias manos, intercede por todos los que sufren en sus cuerpos y en sus almas.\n\nEnséñame que la misericordia de Dios no tiene límites, y que de cada pecado perdonado puede nacer una vocación de caridad más grande. Amén.",
-    "en": "Entrustment to Saint Fabiola\n\nSaint Fabiola, who knew how to begin again after failure and turn your life into a gift for others, today I entrust myself to you.\n\nYou who founded the first hospital of the Western world with your own hands, intercede for all who suffer in their bodies and souls.\n\nTeach me that God's mercy has no limits, and that from every forgiven sin a greater vocation of charity can be born. Amen."
-  }
+﻿{
+    "id":  "santafabiola",
+    "name":  {
+                 "es":  "Santa Fabiola de Roma",
+                 "en":  "Saint Fabiola of Rome"
+             },
+    "feast_day":  {
+                      "es":  "27 de diciembre",
+                      "en":  "December 27"
+                  },
+    "image":  "/assets/images/santafabiola.svg",
+    "prayer":  {
+                   "es":  "Santa Fabiola de Roma, mujer que supo levantarse de sus errores y convertirse en instrumento de misericordia â€” a ti acudo con el corazÃ³n humilde.\n\nTÃº que abriste las primeras puertas de la caridad organizada fundando el primer hospital pÃºblico de Occidente, intercede por todos los enfermos, los mÃ©dicos, las enfermeras y quienes cuidan de los mÃ¡s vulnerables.\n\nEnsÃ©Ã±ame que la misericordia de Dios siempre supera nuestras faltas, y que de cada caÃ­da puede surgir una vida nueva consagrada al servicio de los demÃ¡s.\n\nÂ¡Santa Fabiola, ruega por nosotros!\nAmÃ©n.",
+                   "en":  "Saint Fabiola of Rome, woman who knew how to rise from her mistakes and become an instrument of mercy â€” to you I come with a humble heart.\n\nYou who opened the first doors of organized charity by founding the first public hospital in the West, intercede for all the sick, doctors, nurses, and those who care for the most vulnerable.\n\nTeach me that God\u0027s mercy always surpasses our failures, and that from every fall a new life consecrated to the service of others can arise.\n\nSaint Fabiola, pray for us!\nAmen."
+               },
+    "history":  {
+                    "es":  "Santa Fabiola fue la aristócrata romana que escandalizó a Roma con su penitencia publica, fundo el primer hospital publico de Occidente y se convirtio en amiga de San Jeronimo en Belen.\n\n1. LA PENITENCIA PUBLICA EN ROMA (393 d.C.)\nFabiola pertenecia a la ilustre familia Fabia de Roma. Se habia divorciado de su primer esposo —lo cual estaba permitido por la ley romana pero no por el canon cristiano— y contraido un segundo matrimonio. Cuando envejudio y se convirtio profundamente, el obispo de Roma le nego la Eucaristia a causa del segundo matrimonio. Fabiola tomo entonces la decision mas escandalosa de la epoca: el dia de Pascua del 393, se presento en la basilica de Letrán vestida con saco, cubierta de ceniza, con el cabello suelto, y pidio penitencia publica ante toda la asamblea cristiana de Roma. Era la mujer mas rica y conocida de la ciudad. El acto de humillacion voluntaria de una patricia romana ante el obispo y el pueblo fue un suceso sin precedentes. Roma hablo de ello durante decadas. San Jeronimo, que lo narro, escribio: «¿Quien habia en Roma que no se enterara de la penitencia de Fabiola?».\n\n2. EL PRIMER HOSPITAL PUBLICO DE OCCIDENTE (394 d.C.)\nAl ano siguiente de su penitencia, Fabiola derramo su inmensa fortuna en la creacion del primer nosokomeion —hospital publico— de la ciudad de Roma, junto con su amigo San Panfilio. El hospital atendia a cualquier persona, libre o esclava, sin distincion de raza ni religion. Fabiola no solo pago la construccion: recorria personalmente las calles de Roma buscando enfermos, mendigos y moribundos, los cargaba sobre sus propios hombros y los llevaba al hospital. San Jeronimo escribio que ella misma lavaba las llagas de los enfermos, hacia sus curas y los alimentaba con sus propias manos. Este gesto —una patrician romana tocando con sus manos las ulceras de los mendigos— fue considerado un prodigio de caridad sin precedentes en la historia de Roma.\n\n3. LA PEREGRINACION A BELEN Y LA AMISTAD CON SAN JERONIMO\nDespues de la muerte de San Panfilio, Fabiola peregrinó a Tierra Santa y se instalo en Belen, donde San Jeronimo trabajaba en la traduccion de la Biblia —la Vulgata latina—. Durante ese tiempo, Fabiola estudió los textos sagrados con el, aprendio hebreo y se convirtiò en su discipula y colaboradora. San Jeronimo le dedico varios de sus escritos y dijo de ella: «Su devocion nos avergüenza a todos». Cuando finalmente regreso a Roma, trajo consigo el amor a la Escritura y la conviccion de que la Biblia era el mapa del camino a Dios. Murio en Roma el 27 de diciembre del 399. El pueblo acudio en masa a su entierro: «Toda Roma la lloro», escribio Jeronimo.",
+                    "en":  "Saint Fabiola was the Roman aristocrat who scandalized Rome with her public penance, founded the first public hospital of the West, and became a friend of Saint Jerome in Bethlehem.\n\n1. PUBLIC PENANCE IN ROME (393 AD)\nFabiola belonged to the illustrious Fabian family of Rome. She had divorced her first husband — which was permitted by Roman law but not by Christian canon — and contracted a second marriage. When she grew older and converted deeply, the Bishop of Rome denied her the Eucharist on account of the second marriage. Fabiola then made the most scandalous decision of the era: on Easter of 393, she presented herself at the Basilica of the Lateran clothed in sackcloth, covered in ashes, with her hair loose, and asked for public penance before the entire Christian assembly of Rome. She was the wealthiest and most prominent woman in the city. The act of voluntary humiliation by a Roman patrician before the bishop and the people was an unprecedented event. Rome spoke of it for decades. Saint Jerome, who recorded it, wrote: \"Who in Rome did not hear of the penance of Fabiola?\"\n\n2. THE FIRST PUBLIC HOSPITAL OF THE WEST (394 AD)\nThe year after her penance, Fabiola poured her immense fortune into creating the first nosocomium — public hospital — in the city of Rome, together with her friend Saint Pamphilus. The hospital attended anyone, free or slave, without distinction of race or religion. Fabiola not only paid for the construction: she personally walked the streets of Rome searching for the sick, beggars, and the dying, carried them on her own shoulders, and brought them to the hospital. Saint Jerome wrote that she herself washed the wounds of the sick, dressed them, and fed them with her own hands. This gesture — a Roman patrician touching with her own hands the ulcers of beggars — was considered a prodigy of charity without precedent in the history of Rome.\n\n3. THE PILGRIMAGE TO BETHLEHEM AND THE FRIENDSHIP WITH SAINT JEROME\nAfter the death of Saint Pamphilus, Fabiola pilgrimaged to the Holy Land and settled in Bethlehem, where Saint Jerome was working on the translation of the Bible — the Latin Vulgate. During that time, Fabiola studied the sacred texts with him, learned Hebrew, and became his disciple and collaborator. Saint Jerome dedicated several of his writings to her and said of her: \"Her devotion puts us all to shame.\" When she finally returned to Rome, she brought with her a love of Scripture and the conviction that the Bible was the map of the road to God. She died in Rome on December 27, 399. The people flocked to her funeral: \"All Rome wept for her,\" wrote Jerome."
+                },
+    "novena":  [
+                   {
+                       "day":  1,
+                       "es":  "DÃ­a 1 â€” La Misericordia Que Perdona\n\nSanta Fabiola, que experimentaste la misericordia de Dios despuÃ©s de tus errores, intercede por todos los que se sienten lejos de Dios por sus pecados. Que nadie dude del amor perdonador del SeÃ±or.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 1 â€” The Mercy That Forgives\n\nSaint Fabiola, who experienced God\u0027s mercy after your mistakes, intercede for all who feel far from God because of their sins. May no one doubt the forgiving love of the Lord.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  2,
+                       "es":  "DÃ­a 2 â€” Los Enfermos\n\nSanta Fabiola, fundadora del primer hospital de Occidente, intercede por todos los enfermos â€” los que estÃ¡n en camas de hospital, los que sufren en soledad, los que no tienen acceso a atenciÃ³n mÃ©dica.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 2 â€” The Sick\n\nSaint Fabiola, founder of the first hospital in the West, intercede for all the sick â€” those in hospital beds, those who suffer in solitude, those without access to medical care.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  3,
+                       "es":  "DÃ­a 3 â€” MÃ©dicos y Enfermeras\n\nSanta Fabiola, que atendiste con tus propias manos a los mÃ¡s abandonados, intercede por todos los profesionales de la salud. Que su trabajo sea siempre un acto de amor y servicio.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 3 â€” Doctors and Nurses\n\nSaint Fabiola, who with your own hands cared for the most abandoned, intercede for all health professionals. May their work always be an act of love and service.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  4,
+                       "es":  "DÃ­a 4 â€” La Penitencia y ConversiÃ³n\n\nSanta Fabiola, que no tuviste miedo de hacer penitencia pÃºblica y comenzar de nuevo, intercede por los que buscan reconciliarse con Dios. Que encuentren la valentÃ­a para volver a Ã‰l sin vergÃ¼enza.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 4 â€” Penance and Conversion\n\nSaint Fabiola, who were not afraid to do public penance and start over, intercede for those seeking reconciliation with God. May they find the courage to return to Him without shame.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  5,
+                       "es":  "DÃ­a 5 â€” Los Pobres\n\nSanta Fabiola, que vendiste tu fortuna para servir a los pobres, intercede por los mÃ¡s vulnerables de nuestra sociedad. Que los que tienen bienes encuentren el espÃ­ritu de generosidad.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 5 â€” The Poor\n\nSaint Fabiola, who sold your fortune to serve the poor, intercede for the most vulnerable in our society. May those with goods find the spirit of generosity.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  6,
+                       "es":  "DÃ­a 6 â€” Las Mujeres\n\nSanta Fabiola, que siendo mujer encontraste tu vocaciÃ³n en la caridad y el estudio de las Escrituras, intercede por todas las mujeres que buscan su lugar en la Iglesia y en el mundo.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 6 â€” Women\n\nSaint Fabiola, who as a woman found your vocation in charity and the study of Scripture, intercede for all women seeking their place in the Church and in the world.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  7,
+                       "es":  "DÃ­a 7 â€” Los Peregrinos\n\nSanta Fabiola, que fundaste un hospicio para peregrinos, intercede por los que viajan y los que buscan a Dios en su camino de fe.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 7 â€” Pilgrims\n\nSaint Fabiola, who founded a hospice for pilgrims, intercede for those who travel and for those seeking God on their journey of faith.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  8,
+                       "es":  "DÃ­a 8 â€” El Estudio de las Escrituras\n\nSanta Fabiola, que fuiste a BelÃ©n para aprender las Escrituras de San JerÃ³nimo, intercede por los que estudian la Palabra de Dios. Que la Biblia sea siempre alimento de vida.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 8 â€” Study of Scripture\n\nSaint Fabiola, who went to Bethlehem to learn the Scriptures from Saint Jerome, intercede for those who study the Word of God. May the Bible always be nourishment for life.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  9,
+                       "es":  "DÃ­a 9 â€” La PeticiÃ³n Final\n\nSanta Fabiola de Roma, en este noveno dÃ­a te presento mi necesidad mÃ¡s urgente (presenta tu intenciÃ³n). TÃº que conociste la misericordia de Dios de modo tan especial, intercede por mÃ­ ante Ã‰l.\n\nÂ¡Santa Fabiola, ruega por nosotros!\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 9 â€” The Final Petition\n\nSaint Fabiola of Rome, on this ninth day I present to you my most urgent need (present your intention). You who knew God\u0027s mercy in such a special way, intercede for me before Him.\n\nSaint Fabiola, pray for us!\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   }
+               ],
+    "chaplet":  {
+                    "available":  false,
+                    "es":  "No se conoce una coronilla propia de Santa Fabiola. Se recomienda rezar la Coronilla de la Divina Misericordia en su honor, recordando la misericordia que ella misma experimentÃ³ y practicÃ³.",
+                    "en":  "No chaplet specific to Saint Fabiola is widely known. It is recommended to pray the Divine Mercy Chaplet in her honor, recalling the mercy she herself experienced and practiced."
+                },
+    "litany":  {
+                   "available":  true,
+                   "es":  "LetanÃ­as de Santa Fabiola\n\nSeÃ±or, ten piedad. SeÃ±or, ten piedad.\nCristo, ten piedad. Cristo, ten piedad.\nSeÃ±or, ten piedad. SeÃ±or, ten piedad.\n\nSanta Fabiola, penitente convertida, ruega por nosotros.\nSanta Fabiola, fundadora del primer hospital de Occidente, ruega por nosotros.\nSanta Fabiola, servidora de los pobres y enfermos, ruega por nosotros.\nSanta Fabiola, discÃ­pula de San JerÃ³nimo, ruega por nosotros.\nSanta Fabiola, que buscaste la misericordia de Dios con toda tu alma, ruega por nosotros.\nSanta Fabiola, que atendiste con tus manos a los mÃ¡s abandonados, ruega por nosotros.\nSanta Fabiola, patrona de los hospitales y del personal mÃ©dico, ruega por nosotros.\nSanta Fabiola, modelo de caridad cristiana organizada, ruega por nosotros.\n\nCordero de Dios, que quitas el pecado del mundo, perdÃ³nanos, SeÃ±or.\nCordero de Dios, que quitas el pecado del mundo, escÃºchanos, SeÃ±or.\nCordero de Dios, que quitas el pecado del mundo, ten piedad de nosotros.\n\nOremos: Dios misericordioso, que transformaste a Santa Fabiola de pecadora en servidora heroica de los enfermos y los pobres: concÃ©denos, por su intercesiÃ³n, la gracia de levantarnos siempre de nuestras caÃ­das y ver en todo prÃ³jimo que sufre el rostro de Cristo. AmÃ©n.",
+                   "en":  "Litany of Saint Fabiola\n\nLord, have mercy. Lord, have mercy.\nChrist, have mercy. Christ, have mercy.\nLord, have mercy. Lord, have mercy.\n\nSaint Fabiola, converted penitent, pray for us.\nSaint Fabiola, founder of the first hospital in the West, pray for us.\nSaint Fabiola, servant of the poor and sick, pray for us.\nSaint Fabiola, disciple of Saint Jerome, pray for us.\nSaint Fabiola, who sought the mercy of God with all your soul, pray for us.\nSaint Fabiola, who with your hands cared for the most abandoned, pray for us.\nSaint Fabiola, patron of hospitals and medical personnel, pray for us.\nSaint Fabiola, model of organized Christian charity, pray for us.\n\nLamb of God, who takes away the sins of the world, spare us, O Lord.\nLamb of God, who takes away the sins of the world, graciously hear us, O Lord.\nLamb of God, who takes away the sins of the world, have mercy on us.\n\nLet us pray: Merciful God, who transformed Saint Fabiola from a sinner into a heroic servant of the sick and poor: grant us, through her intercession, the grace to always rise from our falls and to see in every suffering neighbor the face of Christ. Amen."
+               },
+    "consecration":  {
+                         "available":  true,
+                         "es":  "EncomendaciÃ³n a Santa Fabiola\n\nSanta Fabiola, que supiste comenzar de nuevo despuÃ©s del error y convertir tu vida en un don para los demÃ¡s, hoy me encomiendo a ti.\n\nTÃº que fundaste el primer hospital del mundo occidental con tus propias manos, intercede por todos los que sufren en sus cuerpos y en sus almas.\n\nEnsÃ©Ã±ame que la misericordia de Dios no tiene lÃ­mites, y que de cada pecado perdonado puede nacer una vocaciÃ³n de caridad mÃ¡s grande. AmÃ©n.",
+                         "en":  "Entrustment to Saint Fabiola\n\nSaint Fabiola, who knew how to begin again after failure and turn your life into a gift for others, today I entrust myself to you.\n\nYou who founded the first hospital of the Western world with your own hands, intercede for all who suffer in their bodies and souls.\n\nTeach me that God\u0027s mercy has no limits, and that from every forgiven sin a greater vocation of charity can be born. Amen."
+                     }
 }

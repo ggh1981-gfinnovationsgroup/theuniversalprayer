@@ -1,144 +1,171 @@
-{
-  "name": {
-    "es": "San Vicente de Paúl",
-    "en": "Saint Vincent de Paul"
-  },
-  "feast_day": {
-    "es": "27 de septiembre",
-    "en": "September 27"
-  },
-  "image": "/assets/images/sanvicente.svg",
-  "chaplet": {
-    "available": true,
-    "es": "Coronilla de San Vicente de Paúl\n\nEsta coronilla se reza en honor de San Vicente de Paúl, apóstol de la caridad, pidiéndole que interceda por los pobres y necesitados.\n\nSeñal de la Cruz:\nEn el nombre del Padre, del Hijo y del Espíritu Santo. Amén.\n\nOración Inicial:\nOh San Vicente de Paúl, espejo de caridad y padre de los pobres: tú que convertiste cada encuentro con un necesitado en un encuentro con Cristo, enséñame a verte a ti y a ver a Cristo en el rostro de los que sufren. Amén.\n\nPor cada grupo de 1 Padre Nuestro y 7 Ave Marías, una obra de misericordia:\n\n1. Por la visita a los enfermos y los más pobres.\n2. Por la liberación de los esclavos en Argelia.\n3. Por la fundación de las Hijas de la Caridad.\n4. Por la organización de la caridad en las parroquias.\n5. Por la formación de sacerdotes para servir a los pobres.\n6. Por el socorro a los heridos de guerra y los prisioneros.\n7. Por la atención a los niños abandonados.\n\nOración Final:\nSan Vicente de Paúl, padre de los pobres e instrumento de la divina Providencia:\nno dejes de interceder por todos los que sufren hambre, enfermedad y abandono.\nQue yo, inspirado por tu ejemplo, sirva a Cristo en los pobres\ny encuentre en ellos al Señor que se entregó por nosotros. Amén.",
-    "en": "Chaplet of Saint Vincent de Paul\n\nThis chaplet is prayed in honor of Saint Vincent de Paul, apostle of charity, asking him to intercede for the poor and the needy.\n\nSign of the Cross:\nIn the name of the Father, and of the Son, and of the Holy Spirit. Amen.\n\nOpening Prayer:\nO Saint Vincent de Paul, mirror of charity and father of the poor: you who turned every encounter with a person in need into an encounter with Christ, teach me to see you — and to see Christ — in the face of those who suffer. Amen.\n\nFor each group of 1 Our Father and 7 Hail Marys, one work of mercy:\n\n1. For the visitation of the sick and the very poor.\n2. For the liberation of slaves in Algeria.\n3. For the founding of the Daughters of Charity.\n4. For the organization of charity in parishes.\n5. For the formation of priests to serve the poor.\n6. For the relief of the wounded in war and of prisoners.\n7. For the care of abandoned children.\n\nClosing Prayer:\nSaint Vincent de Paul, father of the poor and instrument of divine Providence:\nnever cease to intercede for all who suffer hunger, illness, and abandonment.\nMay I, inspired by your example, serve Christ in the poor\nand find in them the Lord who gave himself up for us. Amen."
-  },
-  "short_bio": {
-    "es": "Sacerdote francés (1581–1660), fundador de los Lazaristas y de las Hijas de la Caridad. Organizó la caridad cristiana de forma sistemática, liberó esclavos y atendió a los más pobres de Francia y Europa.",
-    "en": "French priest (1581–1660), founder of the Vincentians and the Daughters of Charity. He organized Christian charity systematically, freed galley slaves, and cared for the poorest in France and Europe."
-  },
-  "history": {
-    "es": "Vicente de Paúl nació el 24 de abril de 1581 en Pouy (hoy Saint-Vincent-de-Paul), en las Landas de Francia, hijo de una familia campesina. Estudió teología con la ayuda de un benefactor y fue ordenado sacerdote en 1600. Sus primeros años fueron marcados por la ambición: buscaba una posición cómoda en la Iglesia. Sin embargo, una serie de experiencias transformadoras cambiaron su vida para siempre.\n\nTouch el punto de inflexión llegó en 1617, en Folleville y Châtillon-les-Dombes, cuando Vicente comprendió la miseria espiritual y material de los campesinos franceses. La imagen de un moribundo al que se acercó para escuchar su confesión —y que le reveló que nunca en su vida había confesado bien— lo marcó profundamente. A partir de ese momento, consagró toda su energía a la evangelización de los pobres.\n\nEn 1625 fundó la Congregación de la Misión (los Padres Vicentinos o Lazaristas), dedicada a evangelizar a los pobres del campo y a formar al clero. En 1633, junto con Luisa de Marillac, fundó las Hijas de la Caridad —la primera congregación de hermanas religiosas que no vivían encerradas en un convento, sino que salían a las calles, hospitales y hogares para servir a los pobres—.\n\nVicente organizó la caridad de manera sistemática: Cofradías de la Caridad en las parroquias, fondos para los pobres, hogares para niños abandonados (los llamados 'enfants trouvés'), hospitales para los enfermos, socorro para los heridos de las guerras que asolaban Francia en aquella época.\n\nEn 1643, logró que la Corona francesa financiara la redención de galleotes y esclavos en el norte de África. Sus organizaciones de socorro llegaron a Polonia, Irlanda y Escocia, devastadas por las guerras religiosas.\n\nMurió el 27 de septiembre de 1660, a los 79 años. Fue canonizado en 1737 por Clemente XII. En 1885, León XIII lo proclamó Patrón Universal de las Obras de Caridad. Su nombre fue tomado por la Sociedad de San Vicente de Paúl, fundada en 1833 por Federico Ozanam, que hoy es una de las mayores organizaciones caritativas del mundo.\n\nSu espiritualidad se resume en su lema: 'Servir a los pobres es servir a Cristo.' Para Vicente, el rostro de Cristo estaba especialmente en los más pobres y abandonados, y la caridad no era un lujo ni una opción: era el corazón del Evangelio.",
-    "en": "Vincent de Paul was born on April 24, 1581 in Pouy (today Saint-Vincent-de-Paul), in the Landes region of France, the son of a peasant family. He studied theology with the help of a benefactor and was ordained a priest in 1600. His early years were marked by ambition: he sought a comfortable position in the Church. However, a series of transformative experiences changed his life forever.\n\nThe turning point came in 1617, in Folleville and Châtillon-les-Dombes, when Vincent grasped the spiritual and material misery of the French peasantry. The image of a dying man whose confession he heard — and who revealed that he had never in his life made a proper confession — marked him deeply. From that moment, he devoted all his energy to the evangelization of the poor.\n\nIn 1625 he founded the Congregation of the Mission (the Vincentian Fathers or Lazarists), dedicated to evangelizing the rural poor and forming the clergy. In 1633, together with Louise de Marillac, he founded the Daughters of Charity — the first congregation of women religious who did not live enclosed in a convent, but went out into the streets, hospitals, and homes to serve the poor.\n\nVincent organized charity systematically: Confraternities of Charity in parishes, funds for the poor, homes for abandoned children (the so-called 'enfants trouvés'), hospitals for the sick, relief for those wounded in the wars ravaging France at that time.\n\nIn 1643 he persuaded the French Crown to finance the redemption of galley slaves and captives in North Africa. His relief organizations reached Poland, Ireland, and Scotland, devastated by the wars of religion.\n\nHe died on September 27, 1660, at the age of 79. He was canonized in 1737 by Clement XII. In 1885, Leo XIII proclaimed him the Universal Patron of Works of Charity. His name was adopted by the Society of Saint Vincent de Paul, founded in 1833 by Frédéric Ozanam, today one of the largest charitable organizations in the world.\n\nHis spirituality is summed up in his motto: 'To serve the poor is to serve Christ.' For Vincent, the face of Christ was found especially in the poorest and most abandoned, and charity was not a luxury or an option: it was the heart of the Gospel."
-  },
-  "prayer": {
-    "es": "Oh San Vicente de Paúl,\npadre de los pobres y espejo de la caridad de Cristo:\ntú que encontraste al Señor en el rostro de los enfermos,\nde los esclavos, de los niños abandonados y de los campesinos olvidados,\nayúdame a abrir los ojos y el corazón\npara ver también yo a Cristo en los que sufren.\n\nTú que organizaste la caridad como ciencia y como arte,\nque formaste sacerdotes y hermanas para servir sin condiciones,\nque dijiste que 'los pobres son nuestros señores y maestros':\ninfunde en mi corazón ese amor audaz y concreto\nque no se contenta con buenas intenciones\nsino que se convierte en obras.\n\nSan Vicente de Paúl, intercede por los pobres del mundo,\npor los que no tienen nadie,\npor los que trabajan para servirlos,\ny por la Iglesia, para que nunca olvide\nque la caridad es su señal más verdadera.\nAmén.",
-    "en": "O Saint Vincent de Paul,\nfather of the poor and mirror of the charity of Christ:\nyou who found the Lord in the face of the sick,\nthe enslaved, the abandoned children, and the forgotten peasants,\nhelp me to open my eyes and my heart\nto see Christ also in those who suffer.\n\nYou who organized charity as a science and an art,\nwho formed priests and sisters to serve without conditions,\nwho said that 'the poor are our lords and masters':\ninfuse into my heart that bold and concrete love\nwhich is not content with good intentions\nbut becomes deeds.\n\nSaint Vincent de Paul, intercede for the poor of the world,\nfor those who have no one,\nfor those who labor to serve them,\nand for the Church, that she may never forget\nthat charity is her truest sign.\nAmen."
-  },
-  "novena": {
-    "title": {
-      "es": "Novena a San Vicente de Paúl",
-      "en": "Novena to Saint Vincent de Paul"
-    },
-    "days": [
-      {
-        "day": 1,
-        "title": { "es": "Día 1: El Encuentro con los Pobres", "en": "Day 1: The Encounter with the Poor" },
-        "reflection": {
-          "es": "El día que Vicente escuchó la confesión del campesino moribundo cambió toda su vida. Comprendió que los pobres son también 'señores y maestros'. ¿Cómo me desafía esa mirada hoy?",
-          "en": "The day Vincent heard the dying peasant's confession changed his entire life. He understood that the poor are also 'our lords and masters.' How does that perspective challenge me today?"
-        },
-        "prayer": {
-          "es": "San Vicente, abre mis ojos para ver a Cristo en los pobres que me rodean, aunque sean los más invisibles para el mundo. Amén.",
-          "en": "Saint Vincent, open my eyes to see Christ in the poor who surround me, even the most invisible to the world. Amen."
-        }
-      },
-      {
-        "day": 2,
-        "title": { "es": "Día 2: La Caridad Organizada", "en": "Day 2: Organized Charity" },
-        "reflection": {
-          "es": "Vicente no se contentó con dar limosna: organizó la caridad para que fuera sostenible y efectiva. La caridad inteligente multiplica sus frutos. Dios quiere que usemos también nuestro ingenio para servir.",
-          "en": "Vincent was not content with giving alms: he organized charity so that it would be sustainable and effective. Intelligent charity multiplies its fruits. God wants us to use our ingenuity to serve as well."
-        },
-        "prayer": {
-          "es": "San Vicente, ayúdame a servir a los demás no solo con el corazón sino también con la cabeza, con creatividad, constancia y organización. Amén.",
-          "en": "Saint Vincent, help me to serve others not only with the heart but also with the mind, with creativity, perseverance, and organization. Amen."
-        }
-      },
-      {
-        "day": 3,
-        "title": { "es": "Día 3: La Formación del Clero", "en": "Day 3: The Formation of the Clergy" },
-        "reflection": {
-          "es": "Vicente entendió que los pobres sufrían también por la ignorancia y la mediocridad del clero. Fundó seminarios para formar sacerdotes santos y capaces. La calidad de quien sirve importa para la calidad del servicio.",
-          "en": "Vincent understood that the poor also suffered from the ignorance and mediocrity of the clergy. He founded seminaries to form holy and capable priests. The quality of those who serve matters for the quality of service."
-        },
-        "prayer": {
-          "es": "San Vicente, intercede por todos los sacerdotes y seminaristas, para que se formen con santidad y dedicación al servicio de Dios y de los pobres. Amén.",
-          "en": "Saint Vincent, intercede for all priests and seminarians, that they may be formed with holiness and dedication to the service of God and the poor. Amen."
-        }
-      },
-      {
-        "day": 4,
-        "title": { "es": "Día 4: Las Hijas de la Caridad", "en": "Day 4: The Daughters of Charity" },
-        "reflection": {
-          "es": "Con Luisa de Marillac, Vicente creó una nueva forma de vida religiosa: hermanas que vivían en el mundo para servir al mundo. 'Su convento es la casa del enfermo; su celda, un cuarto de alquiler; su capilla, la iglesia parroquial.' La caridad sacó a las religiosas al mundo.",
-          "en": "With Louise de Marillac, Vincent created a new form of religious life: sisters who lived in the world to serve the world. 'Their convent is the house of the sick; their cell, a rented room; their chapel, the parish church.' Charity brought religious women out into the world."
-        },
-        "prayer": {
-          "es": "San Vicente, bendice a todas las personas consagradas que trabajan en hospitales, escuelas y hogares de acogida. Que su servicio sea santificado por el amor. Amén.",
-          "en": "Saint Vincent, bless all consecrated persons working in hospitals, schools, and shelters. May their service be sanctified by love. Amen."
-        }
-      },
-      {
-        "day": 5,
-        "title": { "es": "Día 5: La Liberación de los Esclavos", "en": "Day 5: The Liberation of Slaves" },
-        "reflection": {
-          "es": "Vicente llegó a estar entre los esclavos en Argelia para llevarles consuelo y dignidad. No aceptó la esclavitud como realidad inmutable: actuó para cambiarla. La defensa de la dignidad humana es siempre una obligación cristiana.",
-          "en": "Vincent went to be among the slaves in Algeria to bring them comfort and dignity. He did not accept slavery as an immutable reality: he acted to change it. The defense of human dignity is always a Christian obligation."
-        },
-        "prayer": {
-          "es": "San Vicente, intercede por todos los que hoy viven esclavizados — por la trata de personas, la pobreza extrema o la injusticia. Que su dignidad sea reconocida y defendida. Amén.",
-          "en": "Saint Vincent, intercede for all who today live enslaved — by human trafficking, extreme poverty, or injustice. May their dignity be recognized and defended. Amen."
-        }
-      },
-      {
-        "day": 6,
-        "title": { "es": "Día 6: Los Niños Abandonados", "en": "Day 6: Abandoned Children" },
-        "reflection": {
-          "es": "Vicente organizó el cuidado de los 'enfants trouvés' — bebés abandonados en las calles de París. Convenció a las señoras de la corte de que la misericordia no era degradante sino noble. Los más indefensos merecen la primera mirada de la caridad.",
-          "en": "Vincent organized the care of the 'enfants trouvés' — babies abandoned in the streets of Paris. He convinced the ladies of the court that mercy was not degrading but noble. The most defenseless deserve the first gaze of charity."
-        },
-        "prayer": {
-          "es": "San Vicente, intercede por todos los niños sin hogar, abandonados o maltratados. Que la sociedad y la Iglesia los proteja con amor y firmeza. Amén.",
-          "en": "Saint Vincent, intercede for all homeless, abandoned, or mistreated children. May society and the Church protect them with love and firmness. Amen."
-        }
-      },
-      {
-        "day": 7,
-        "title": { "es": "Día 7: La Providencia Divina", "en": "Day 7: Divine Providence" },
-        "reflection": {
-          "es": "Vicente confiaba plenamente en la Divina Providencia. Comenzaba obras sin saber cómo se financiarían, convencido de que Dios proveería. Esa confianza fue la base de todo su apostolado. La Providencia siempre acompaña la caridad audaz.",
-          "en": "Vincent trusted fully in Divine Providence. He began works without knowing how they would be funded, convinced that God would provide. That trust was the foundation of all his apostolate. Providence always accompanies bold charity."
-        },
-        "prayer": {
-          "es": "San Vicente, dame tu confianza en la Providencia para emprender obras buenas sin dejarse paralizarse por el miedo al fracaso. Dios proveerá para lo que Él mismo inspira. Amén.",
-          "en": "Saint Vincent, give me your trust in Providence to undertake good works without being paralyzed by fear of failure. God will provide for what He Himself inspires. Amen."
-        }
-      },
-      {
-        "day": 8,
-        "title": { "es": "Día 8: Patrón Universal de las Obras de Caridad", "en": "Day 8: Universal Patron of Works of Charity" },
-        "reflection": {
-          "es": "León XIII proclamó a Vicente Patrón Universal de todas las Obras de Caridad Católicas. Su ejemplo ha inspirado hospitales, escuelas, hogares de acogida y sociedades de caridad en todo el mundo. La caridad de Cristo no tiene fronteras.",
-          "en": "Leo XIII proclaimed Vincent the Universal Patron of all Catholic Works of Charity. His example has inspired hospitals, schools, shelters, and charitable societies throughout the world. The charity of Christ knows no borders."
-        },
-        "prayer": {
-          "es": "San Vicente, bendice a todos los que trabajan en obras de caridad en el mundo entero: voluntarios, trabajadores sociales, misioneros. Que su servicio lleve el amor de Cristo a todos los rincones. Amén.",
-          "en": "Saint Vincent, bless all who work in works of charity throughout the world: volunteers, social workers, missionaries. May their service bring the love of Christ to every corner. Amen."
-        }
-      },
-      {
-        "day": 9,
-        "title": { "es": "Día 9: Servir a Cristo en los Pobres", "en": "Day 9: Serving Christ in the Poor" },
-        "reflection": {
-          "es": "La frase más celebre de Vicente es también la más exigente: 'Los pobres son nuestros señores y maestros.' No son objetos de lástima sino maestros de vida, portadores del rostro de Cristo. Esta mirada transforma la caridad en adoración.",
-          "en": "Vincent's most celebrated phrase is also his most demanding: 'The poor are our lords and masters.' They are not objects of pity but teachers of life, bearers of the face of Christ. This perspective transforms charity into worship."
-        },
-        "prayer": {
-          "es": "San Vicente de Paúl, apóstol de la caridad y padre de los pobres:\nhoy te presento mis necesidades y las necesidades de los más pobres:\n[momento de silencio personal]\nIntercede por mí ante Dios, para que yo nunca pierda\nla capacidad de ver a Cristo en los que sufren,\ny para que mi vida sea, como la tuya, una ofrenda de amor.\nSan Vicente de Paúl, ruega por nosotros. Amén.",
-          "en": "Saint Vincent de Paul, apostle of charity and father of the poor:\ntoday I present to you my needs and the needs of the very poor:\n[moment of personal silence]\nIntercede for me before God, that I may never lose\nthe ability to see Christ in those who suffer,\nand that my life may be, like yours, an offering of love.\nSaint Vincent de Paul, pray for us. Amen."
-        }
-      }
-    ]
-  }
+﻿{
+    "name":  {
+                 "es":  "San Vicente de PaÃºl",
+                 "en":  "Saint Vincent de Paul"
+             },
+    "feast_day":  {
+                      "es":  "27 de septiembre",
+                      "en":  "September 27"
+                  },
+    "image":  "/assets/images/sanvicente.svg",
+    "chaplet":  {
+                    "available":  true,
+                    "es":  "Coronilla de San Vicente de PaÃºl\n\nEsta coronilla se reza en honor de San Vicente de PaÃºl, apÃ³stol de la caridad, pidiÃ©ndole que interceda por los pobres y necesitados.\n\nSeÃ±al de la Cruz:\nEn el nombre del Padre, del Hijo y del EspÃ­ritu Santo. AmÃ©n.\n\nOraciÃ³n Inicial:\nOh San Vicente de PaÃºl, espejo de caridad y padre de los pobres: tÃº que convertiste cada encuentro con un necesitado en un encuentro con Cristo, ensÃ©Ã±ame a verte a ti y a ver a Cristo en el rostro de los que sufren. AmÃ©n.\n\nPor cada grupo de 1 Padre Nuestro y 7 Ave MarÃ­as, una obra de misericordia:\n\n1. Por la visita a los enfermos y los mÃ¡s pobres.\n2. Por la liberaciÃ³n de los esclavos en Argelia.\n3. Por la fundaciÃ³n de las Hijas de la Caridad.\n4. Por la organizaciÃ³n de la caridad en las parroquias.\n5. Por la formaciÃ³n de sacerdotes para servir a los pobres.\n6. Por el socorro a los heridos de guerra y los prisioneros.\n7. Por la atenciÃ³n a los niÃ±os abandonados.\n\nOraciÃ³n Final:\nSan Vicente de PaÃºl, padre de los pobres e instrumento de la divina Providencia:\nno dejes de interceder por todos los que sufren hambre, enfermedad y abandono.\nQue yo, inspirado por tu ejemplo, sirva a Cristo en los pobres\ny encuentre en ellos al SeÃ±or que se entregÃ³ por nosotros. AmÃ©n.",
+                    "en":  "Chaplet of Saint Vincent de Paul\n\nThis chaplet is prayed in honor of Saint Vincent de Paul, apostle of charity, asking him to intercede for the poor and the needy.\n\nSign of the Cross:\nIn the name of the Father, and of the Son, and of the Holy Spirit. Amen.\n\nOpening Prayer:\nO Saint Vincent de Paul, mirror of charity and father of the poor: you who turned every encounter with a person in need into an encounter with Christ, teach me to see you â€” and to see Christ â€” in the face of those who suffer. Amen.\n\nFor each group of 1 Our Father and 7 Hail Marys, one work of mercy:\n\n1. For the visitation of the sick and the very poor.\n2. For the liberation of slaves in Algeria.\n3. For the founding of the Daughters of Charity.\n4. For the organization of charity in parishes.\n5. For the formation of priests to serve the poor.\n6. For the relief of the wounded in war and of prisoners.\n7. For the care of abandoned children.\n\nClosing Prayer:\nSaint Vincent de Paul, father of the poor and instrument of divine Providence:\nnever cease to intercede for all who suffer hunger, illness, and abandonment.\nMay I, inspired by your example, serve Christ in the poor\nand find in them the Lord who gave himself up for us. Amen."
+                },
+    "short_bio":  {
+                      "es":  "Sacerdote francÃ©s (1581â€“1660), fundador de los Lazaristas y de las Hijas de la Caridad. OrganizÃ³ la caridad cristiana de forma sistemÃ¡tica, liberÃ³ esclavos y atendiÃ³ a los mÃ¡s pobres de Francia y Europa.",
+                      "en":  "French priest (1581â€“1660), founder of the Vincentians and the Daughters of Charity. He organized Christian charity systematically, freed galley slaves, and cared for the poorest in France and Europe."
+                  },
+    "history":  {
+                    "es":  "San Vicente de Paul fue el apostol de la caridad organizada: el sacerdote gascones que transformo el sufrimiento de los pobres en fuerza espiritual y fundo las obras de misericordia mas influyentes de la historia occidental.\n\n1. LA LIBERACION DE LOS ESCLAVOS EN ARGEL (1605-1607)\nCuando Vicente tenia 25 anos, fue capturado por piratas turcos frente a las costas de Marsella y vendido como esclavo en Tunez. Cambio tres veces de amo. El ultimo era un renegado cristiano convertido al Islam cuya esposa, al conocer a Vicente, pidio a su marido que le contara de su antigua fe. La joven recordo las canciones de su infancia cristiana. Vicente comenzo a cantar el Salmo 136 («Junto a los rios de Babilonia»). La mujer quedo conmocionada. Ella convencio a su marido de que huyera con Vicente a Francia. Cruzaron el Mediterraneo en una barca y llegaron a Aigues-Mortes. Vicente volvio a casa convertido para siempre en un hombre que habia sufrido la esclavitud y cuya mision sería liberar a los que sufrian.\n\n2. EL MILAGRO DE CHATILLON: EL NACIMIENTO DE LA CARIDAD ORGANIZADA (1617)\nVicente, ya sacerdote, predicaba en Chatillon-les-Dombes cuando durante una misa supo que una familia entera estaba enferma y moribunda de hambre. Improviso una exhortacion a la caridad que encendio a toda la congregacion. El problema fue inesperado: tal fue la generosidad que la familia quedo desbordada de comida; buena parte se estropeo. Vicente comprendio que la caridad improvisada no basta: hay que organizarla. Esa tarde, reunio a las damas de la parroquia y fundo la primera «Confraternidad de la Caridad» de la historia. Este dia —el 23 de agosto de 1617— es considerado el nacimiento de la accion social organizada en el mundo occidental.\n\n3. LA MISION ENTRE LOS GALEOTES: CRISTO EN LOS CONDENADOS\nVicente visito las galeras reales de Paris y quedo destrozado por lo que vio: hombres encadenados, enfermos, cubiertos de llagas, tratados como animales. Consiguio del rey Luis XIII el permiso para ser nombrado capellan de las galeras. Durante anos celebro misa para los galeotes, los cuido, conseguio que se les diera comida y ropa. En una ocasion, para liberar a un galeote casado y padre de familia, se ofrecio a ocupar su lugar y fue encadenado en su puesto. El rey, al saberlo, ordeno su liberacion inmediata, pero el acto conmovio a toda la corte. Vicente decia: «La caridad es el cemento que une a Dios con los hombres y a los hombres entre si».",
+                    "en":  "Saint Vincent de Paul was the apostle of organized charity: the Gascon priest who transformed the suffering of the poor into spiritual force and founded the most influential works of mercy in Western history.\n\n1. THE LIBERATION FROM SLAVERY IN ALGIERS (1605-1607)\nWhen Vincent was 25, he was captured by Turkish pirates off the coast of Marseille and sold as a slave in Tunis. He changed hands three times. His last master was a Christian renegade converted to Islam whose wife, upon meeting Vincent, asked her husband to tell her about his former faith. The young woman remembered the songs of her Christian childhood. Vincent began to sing Psalm 136 (\"By the rivers of Babylon\"). The woman was shaken. She persuaded her husband to flee with Vincent to France. They crossed the Mediterranean in a small boat and arrived at Aigues-Mortes. Vincent returned home forever transformed into a man who had endured slavery and whose mission would be to liberate those who suffered.\n\n2. THE MIRACLE OF CHATILLON: THE BIRTH OF ORGANIZED CHARITY (1617)\nVincent, already a priest, was preaching at Chatillon-les-Dombes when during a Mass he learned that an entire family was ill and dying of hunger. He improvised an exhortation to charity that set the whole congregation on fire. The problem was unexpected: the generosity was so great that the family was overwhelmed with food; much of it spoiled. Vincent understood that improvised charity is not enough — it must be organized. That afternoon, he gathered the women of the parish and founded the first \"Confraternity of Charity\" in history. That day — August 23, 1617 — is considered the birth of organized social action in the Western world.\n\n3. THE MISSION AMONG THE GALLEY SLAVES: CHRIST IN THE CONDEMNED\nVincent visited the royal galleys of Paris and was devastated by what he saw: men chained, sick, covered with sores, treated like animals. He obtained from King Louis XIII permission to be appointed chaplain of the galleys. For years he celebrated Mass for the galley slaves, cared for them, secured food and clothing for them. On one occasion, to free a galley slave who was married with children, he offered to take his place and was chained in his position. The king, upon learning of it, ordered his immediate release, but the act moved the entire court. Vincent said: \"Charity is the cement that unites God with men and men with each other.\""
+                },
+    "prayer":  {
+                   "es":  "Oh San Vicente de PaÃºl,\npadre de los pobres y espejo de la caridad de Cristo:\ntÃº que encontraste al SeÃ±or en el rostro de los enfermos,\nde los esclavos, de los niÃ±os abandonados y de los campesinos olvidados,\nayÃºdame a abrir los ojos y el corazÃ³n\npara ver tambiÃ©n yo a Cristo en los que sufren.\n\nTÃº que organizaste la caridad como ciencia y como arte,\nque formaste sacerdotes y hermanas para servir sin condiciones,\nque dijiste que \u0027los pobres son nuestros seÃ±ores y maestros\u0027:\ninfunde en mi corazÃ³n ese amor audaz y concreto\nque no se contenta con buenas intenciones\nsino que se convierte en obras.\n\nSan Vicente de PaÃºl, intercede por los pobres del mundo,\npor los que no tienen nadie,\npor los que trabajan para servirlos,\ny por la Iglesia, para que nunca olvide\nque la caridad es su seÃ±al mÃ¡s verdadera.\nAmÃ©n.",
+                   "en":  "O Saint Vincent de Paul,\nfather of the poor and mirror of the charity of Christ:\nyou who found the Lord in the face of the sick,\nthe enslaved, the abandoned children, and the forgotten peasants,\nhelp me to open my eyes and my heart\nto see Christ also in those who suffer.\n\nYou who organized charity as a science and an art,\nwho formed priests and sisters to serve without conditions,\nwho said that \u0027the poor are our lords and masters\u0027:\ninfuse into my heart that bold and concrete love\nwhich is not content with good intentions\nbut becomes deeds.\n\nSaint Vincent de Paul, intercede for the poor of the world,\nfor those who have no one,\nfor those who labor to serve them,\nand for the Church, that she may never forget\nthat charity is her truest sign.\nAmen."
+               },
+    "novena":  {
+                   "title":  {
+                                 "es":  "Novena a San Vicente de PaÃºl",
+                                 "en":  "Novena to Saint Vincent de Paul"
+                             },
+                   "days":  [
+                                {
+                                    "day":  1,
+                                    "title":  {
+                                                  "es":  "DÃ­a 1: El Encuentro con los Pobres",
+                                                  "en":  "Day 1: The Encounter with the Poor"
+                                              },
+                                    "reflection":  {
+                                                       "es":  "El dÃ­a que Vicente escuchÃ³ la confesiÃ³n del campesino moribundo cambiÃ³ toda su vida. ComprendiÃ³ que los pobres son tambiÃ©n \u0027seÃ±ores y maestros\u0027. Â¿CÃ³mo me desafÃ­a esa mirada hoy?",
+                                                       "en":  "The day Vincent heard the dying peasant\u0027s confession changed his entire life. He understood that the poor are also \u0027our lords and masters.\u0027 How does that perspective challenge me today?"
+                                                   },
+                                    "prayer":  {
+                                                   "es":  "San Vicente, abre mis ojos para ver a Cristo en los pobres que me rodean, aunque sean los mÃ¡s invisibles para el mundo. AmÃ©n.",
+                                                   "en":  "Saint Vincent, open my eyes to see Christ in the poor who surround me, even the most invisible to the world. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  2,
+                                    "title":  {
+                                                  "es":  "DÃ­a 2: La Caridad Organizada",
+                                                  "en":  "Day 2: Organized Charity"
+                                              },
+                                    "reflection":  {
+                                                       "es":  "Vicente no se contentÃ³ con dar limosna: organizÃ³ la caridad para que fuera sostenible y efectiva. La caridad inteligente multiplica sus frutos. Dios quiere que usemos tambiÃ©n nuestro ingenio para servir.",
+                                                       "en":  "Vincent was not content with giving alms: he organized charity so that it would be sustainable and effective. Intelligent charity multiplies its fruits. God wants us to use our ingenuity to serve as well."
+                                                   },
+                                    "prayer":  {
+                                                   "es":  "San Vicente, ayÃºdame a servir a los demÃ¡s no solo con el corazÃ³n sino tambiÃ©n con la cabeza, con creatividad, constancia y organizaciÃ³n. AmÃ©n.",
+                                                   "en":  "Saint Vincent, help me to serve others not only with the heart but also with the mind, with creativity, perseverance, and organization. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  3,
+                                    "title":  {
+                                                  "es":  "DÃ­a 3: La FormaciÃ³n del Clero",
+                                                  "en":  "Day 3: The Formation of the Clergy"
+                                              },
+                                    "reflection":  {
+                                                       "es":  "Vicente entendiÃ³ que los pobres sufrÃ­an tambiÃ©n por la ignorancia y la mediocridad del clero. FundÃ³ seminarios para formar sacerdotes santos y capaces. La calidad de quien sirve importa para la calidad del servicio.",
+                                                       "en":  "Vincent understood that the poor also suffered from the ignorance and mediocrity of the clergy. He founded seminaries to form holy and capable priests. The quality of those who serve matters for the quality of service."
+                                                   },
+                                    "prayer":  {
+                                                   "es":  "San Vicente, intercede por todos los sacerdotes y seminaristas, para que se formen con santidad y dedicaciÃ³n al servicio de Dios y de los pobres. AmÃ©n.",
+                                                   "en":  "Saint Vincent, intercede for all priests and seminarians, that they may be formed with holiness and dedication to the service of God and the poor. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  4,
+                                    "title":  {
+                                                  "es":  "DÃ­a 4: Las Hijas de la Caridad",
+                                                  "en":  "Day 4: The Daughters of Charity"
+                                              },
+                                    "reflection":  {
+                                                       "es":  "Con Luisa de Marillac, Vicente creÃ³ una nueva forma de vida religiosa: hermanas que vivÃ­an en el mundo para servir al mundo. \u0027Su convento es la casa del enfermo; su celda, un cuarto de alquiler; su capilla, la iglesia parroquial.\u0027 La caridad sacÃ³ a las religiosas al mundo.",
+                                                       "en":  "With Louise de Marillac, Vincent created a new form of religious life: sisters who lived in the world to serve the world. \u0027Their convent is the house of the sick; their cell, a rented room; their chapel, the parish church.\u0027 Charity brought religious women out into the world."
+                                                   },
+                                    "prayer":  {
+                                                   "es":  "San Vicente, bendice a todas las personas consagradas que trabajan en hospitales, escuelas y hogares de acogida. Que su servicio sea santificado por el amor. AmÃ©n.",
+                                                   "en":  "Saint Vincent, bless all consecrated persons working in hospitals, schools, and shelters. May their service be sanctified by love. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  5,
+                                    "title":  {
+                                                  "es":  "DÃ­a 5: La LiberaciÃ³n de los Esclavos",
+                                                  "en":  "Day 5: The Liberation of Slaves"
+                                              },
+                                    "reflection":  {
+                                                       "es":  "Vicente llegÃ³ a estar entre los esclavos en Argelia para llevarles consuelo y dignidad. No aceptÃ³ la esclavitud como realidad inmutable: actuÃ³ para cambiarla. La defensa de la dignidad humana es siempre una obligaciÃ³n cristiana.",
+                                                       "en":  "Vincent went to be among the slaves in Algeria to bring them comfort and dignity. He did not accept slavery as an immutable reality: he acted to change it. The defense of human dignity is always a Christian obligation."
+                                                   },
+                                    "prayer":  {
+                                                   "es":  "San Vicente, intercede por todos los que hoy viven esclavizados â€” por la trata de personas, la pobreza extrema o la injusticia. Que su dignidad sea reconocida y defendida. AmÃ©n.",
+                                                   "en":  "Saint Vincent, intercede for all who today live enslaved â€” by human trafficking, extreme poverty, or injustice. May their dignity be recognized and defended. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  6,
+                                    "title":  {
+                                                  "es":  "DÃ­a 6: Los NiÃ±os Abandonados",
+                                                  "en":  "Day 6: Abandoned Children"
+                                              },
+                                    "reflection":  {
+                                                       "es":  "Vicente organizÃ³ el cuidado de los \u0027enfants trouvÃ©s\u0027 â€” bebÃ©s abandonados en las calles de ParÃ­s. ConvenciÃ³ a las seÃ±oras de la corte de que la misericordia no era degradante sino noble. Los mÃ¡s indefensos merecen la primera mirada de la caridad.",
+                                                       "en":  "Vincent organized the care of the \u0027enfants trouvÃ©s\u0027 â€” babies abandoned in the streets of Paris. He convinced the ladies of the court that mercy was not degrading but noble. The most defenseless deserve the first gaze of charity."
+                                                   },
+                                    "prayer":  {
+                                                   "es":  "San Vicente, intercede por todos los niÃ±os sin hogar, abandonados o maltratados. Que la sociedad y la Iglesia los proteja con amor y firmeza. AmÃ©n.",
+                                                   "en":  "Saint Vincent, intercede for all homeless, abandoned, or mistreated children. May society and the Church protect them with love and firmness. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  7,
+                                    "title":  {
+                                                  "es":  "DÃ­a 7: La Providencia Divina",
+                                                  "en":  "Day 7: Divine Providence"
+                                              },
+                                    "reflection":  {
+                                                       "es":  "Vicente confiaba plenamente en la Divina Providencia. Comenzaba obras sin saber cÃ³mo se financiarÃ­an, convencido de que Dios proveerÃ­a. Esa confianza fue la base de todo su apostolado. La Providencia siempre acompaÃ±a la caridad audaz.",
+                                                       "en":  "Vincent trusted fully in Divine Providence. He began works without knowing how they would be funded, convinced that God would provide. That trust was the foundation of all his apostolate. Providence always accompanies bold charity."
+                                                   },
+                                    "prayer":  {
+                                                   "es":  "San Vicente, dame tu confianza en la Providencia para emprender obras buenas sin dejarse paralizarse por el miedo al fracaso. Dios proveerÃ¡ para lo que Ã‰l mismo inspira. AmÃ©n.",
+                                                   "en":  "Saint Vincent, give me your trust in Providence to undertake good works without being paralyzed by fear of failure. God will provide for what He Himself inspires. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  8,
+                                    "title":  {
+                                                  "es":  "DÃ­a 8: PatrÃ³n Universal de las Obras de Caridad",
+                                                  "en":  "Day 8: Universal Patron of Works of Charity"
+                                              },
+                                    "reflection":  {
+                                                       "es":  "LeÃ³n XIII proclamÃ³ a Vicente PatrÃ³n Universal de todas las Obras de Caridad CatÃ³licas. Su ejemplo ha inspirado hospitales, escuelas, hogares de acogida y sociedades de caridad en todo el mundo. La caridad de Cristo no tiene fronteras.",
+                                                       "en":  "Leo XIII proclaimed Vincent the Universal Patron of all Catholic Works of Charity. His example has inspired hospitals, schools, shelters, and charitable societies throughout the world. The charity of Christ knows no borders."
+                                                   },
+                                    "prayer":  {
+                                                   "es":  "San Vicente, bendice a todos los que trabajan en obras de caridad en el mundo entero: voluntarios, trabajadores sociales, misioneros. Que su servicio lleve el amor de Cristo a todos los rincones. AmÃ©n.",
+                                                   "en":  "Saint Vincent, bless all who work in works of charity throughout the world: volunteers, social workers, missionaries. May their service bring the love of Christ to every corner. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  9,
+                                    "title":  {
+                                                  "es":  "DÃ­a 9: Servir a Cristo en los Pobres",
+                                                  "en":  "Day 9: Serving Christ in the Poor"
+                                              },
+                                    "reflection":  {
+                                                       "es":  "La frase mÃ¡s celebre de Vicente es tambiÃ©n la mÃ¡s exigente: \u0027Los pobres son nuestros seÃ±ores y maestros.\u0027 No son objetos de lÃ¡stima sino maestros de vida, portadores del rostro de Cristo. Esta mirada transforma la caridad en adoraciÃ³n.",
+                                                       "en":  "Vincent\u0027s most celebrated phrase is also his most demanding: \u0027The poor are our lords and masters.\u0027 They are not objects of pity but teachers of life, bearers of the face of Christ. This perspective transforms charity into worship."
+                                                   },
+                                    "prayer":  {
+                                                   "es":  "San Vicente de PaÃºl, apÃ³stol de la caridad y padre de los pobres:\nhoy te presento mis necesidades y las necesidades de los mÃ¡s pobres:\n[momento de silencio personal]\nIntercede por mÃ­ ante Dios, para que yo nunca pierda\nla capacidad de ver a Cristo en los que sufren,\ny para que mi vida sea, como la tuya, una ofrenda de amor.\nSan Vicente de PaÃºl, ruega por nosotros. AmÃ©n.",
+                                                   "en":  "Saint Vincent de Paul, apostle of charity and father of the poor:\ntoday I present to you my needs and the needs of the very poor:\n[moment of personal silence]\nIntercede for me before God, that I may never lose\nthe ability to see Christ in those who suffer,\nand that my life may be, like yours, an offering of love.\nSaint Vincent de Paul, pray for us. Amen."
+                                               }
+                                }
+                            ]
+               }
 }

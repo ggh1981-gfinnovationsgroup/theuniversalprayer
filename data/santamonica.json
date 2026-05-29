@@ -1,106 +1,172 @@
 ﻿{
-  "id": "santamonica",
-  "name": { "es": "Santa Mónica", "en": "Saint Monica" },
-  "color": "#1a3a6a",
-  "image": "assets/images/santamonica.svg",
-  "specialty": { "es": "Madres y conversión", "en": "Mothers & conversion" },
-  "shortPrayer": {
-    "es": "Santa Mónica, madre perseverante en la oración, intercede por nosotros.",
-    "en": "Saint Monica, mother persevering in prayer, intercede for us."
-  },
-  "history": {
-    "es": "Mónica nació en el norte de África hacia el año 331. Casada con Patricio, un pagano irascible, lo convirtió al cristianismo antes de su muerte. Su hijo Agustín llevó una vida disipada por años, causando el sufrimiento de su madre. Ella lo siguió a Roma y Milán, llorando y orando sin cesar por su conversión. Un obispo le dijo: 'Es imposible que se pierda el hijo de tantas lágrimas.' Agustín se convirtió en 387 y fue bautizado por San Ambrosio. Mónica murió en Ostia en 387, en paz, habiendo visto la conversión de su hijo. Es patrona de las madres y de los hijos pródigos.",
-    "en": "Monica was born in North Africa around 331. Married to Patricius, an irascible pagan, she converted him to Christianity before his death. Her son Augustine led a dissolute life for years, causing his mother's suffering. She followed him to Rome and Milan, weeping and praying ceaselessly for his conversion. A bishop told her: 'It is impossible that the son of so many tears should perish.' Augustine converted in 387 and was baptized by Saint Ambrose. Monica died at Ostia in 387, at peace, having witnessed her son's conversion. She is patron of mothers and prodigal children."
-  },
-  "novena": {
-    "title": { "es": "Novena a Santa Mónica", "en": "Novena to Saint Monica" },
-    "days": [
-      {
-        "day": 1,
-        "intention": { "es": "Por los hijos alejados de la fe", "en": "For children far from faith" },
-        "prayer": {
-          "es": "Santa Mónica, que lloraste por tu hijo Agustín durante años sin perder la esperanza, intercede por todos los padres que tienen hijos alejados de Dios. Que nunca dejen de orar y confíen en que Dios escucha cada lágrima. Amén.",
-          "en": "Saint Monica, who wept for your son Augustine for years without losing hope, intercede for all parents with children far from God. May they never stop praying and trust that God hears every tear. Amen."
-        }
-      },
-      {
-        "day": 2,
-        "intention": { "es": "Por los matrimonios difíciles", "en": "For difficult marriages" },
-        "prayer": {
-          "es": "Santa Mónica, que soportaste con paciencia y oración a un esposo difícil y lo viste convertirse, intercede por todos los matrimonios en crisis. Que la gracia de Dios transforme los corazones endurecidos. Amén.",
-          "en": "Saint Monica, who patiently and prayerfully endured a difficult husband and saw him convert, intercede for all marriages in crisis. May God's grace transform hardened hearts. Amen."
-        }
-      },
-      {
-        "day": 3,
-        "intention": { "es": "Por la perseverancia en la oración", "en": "For perseverance in prayer" },
-        "prayer": {
-          "es": "Santa Mónica, que oraste durante décadas sin ver el fruto inmediato de tus oraciones, enséñanos a perseverar en la oración aunque el cielo parezca estar callado. Amén.",
-          "en": "Saint Monica, who prayed for decades without seeing immediate fruit from your prayers, teach us to persevere in prayer even when heaven seems silent. Amen."
-        }
-      },
-      {
-        "day": 4,
-        "intention": { "es": "Por las madres que sufren", "en": "For suffering mothers" },
-        "prayer": {
-          "es": "Dulce Mónica, que conociste el dolor de ver sufrir a un hijo amado, acompaña a todas las madres que hoy sufren por sus hijos y llévalas a los pies de María, Madre de Dolores. Amén.",
-          "en": "Sweet Monica, who knew the pain of watching a beloved son suffer, accompany all mothers who suffer for their children today and lead them to the feet of Mary, Mother of Sorrows. Amen."
-        }
-      },
-      {
-        "day": 5,
-        "intention": { "es": "Por los convertidos y los que buscan a Dios", "en": "For converts and those seeking God" },
-        "prayer": {
-          "es": "Santa Mónica, madre espiritual de los convertidos, intercede por todos los que buscan a Dios con el corazón abierto. Que encuentren, como Agustín, que el corazón está inquieto hasta que descansa en Él. Amén.",
-          "en": "Saint Monica, spiritual mother of converts, intercede for all who seek God with an open heart. May they find, like Augustine, that our heart is restless until it rests in Him. Amen."
-        }
-      },
-      {
-        "day": 6,
-        "intention": { "es": "Por la familia cristiana", "en": "For the Christian family" },
-        "prayer": {
-          "es": "Santa Mónica, modelo de familia cristiana, intercede por todas las familias para que sean pequeñas iglesias domésticas donde Dios sea conocido, amado y servido. Amén.",
-          "en": "Saint Monica, model of the Christian family, intercede for all families that they may be little domestic churches where God is known, loved, and served. Amen."
-        }
-      },
-      {
-        "day": 7,
-        "intention": { "es": "Por los que han perdido la esperanza", "en": "For those who have lost hope" },
-        "prayer": {
-          "es": "Santa Mónica esperanzada, que nunca abandonaste la fe en la conversión de tu hijo, intercede por todos los que han perdido la esperanza en sus situaciones imposibles. Que Dios les revele que nada es imposible para Él. Amén.",
-          "en": "Hopeful Saint Monica, who never abandoned faith in your son's conversion, intercede for all who have lost hope in their impossible situations. May God reveal to them that nothing is impossible for Him. Amen."
-        }
-      },
-      {
-        "day": 8,
-        "intention": { "es": "Por una muerte en paz", "en": "For a peaceful death" },
-        "prayer": {
-          "es": "Santa Mónica, que moriste en paz en Ostia habiendo visto cumplida tu mayor petición, intercede para que todos los que amamos puedan morir en la gracia de Dios y con el corazón en paz. Amén.",
-          "en": "Saint Monica, who died peacefully in Ostia having seen your greatest request fulfilled, intercede that all our loved ones may die in God's grace and with peaceful hearts. Amen."
-        }
-      },
-      {
-        "day": 9,
-        "intention": { "es": "Por la confianza en Dios", "en": "For trust in God" },
-        "prayer": {
-          "es": "Santa Mónica, tu vida entera fue un acto de confianza en Dios. Enséñanos a confiar en Su providencia cuando no entendemos Sus caminos, seguros de que Él escucha cada oración hecha desde el amor. Amén.",
-          "en": "Saint Monica, your entire life was an act of trust in God. Teach us to trust in His providence when we do not understand His ways, certain that He hears every prayer made from love. Amen."
-        }
-      }
-    ]
-  },
-  "litany": {
-    "title": { "es": "Letanía de Santa Mónica", "en": "Litany of Saint Monica" },
-    "invocations": [
-      { "es": "Santa Mónica, madre perseverante en la oración,", "en": "Saint Monica, mother persevering in prayer," },
-      { "es": "Santa Mónica, consoladora de los afligidos,", "en": "Saint Monica, consoler of the afflicted," },
-      { "es": "Santa Mónica, modelo de paciencia conyugal,", "en": "Saint Monica, model of conjugal patience," },
-      { "es": "Santa Mónica, esperanza de los padres angustiados,", "en": "Saint Monica, hope of anguished parents," },
-      { "es": "Santa Mónica, que lloraste por la conversión de tu hijo,", "en": "Saint Monica, who wept for your son's conversion," },
-      { "es": "Santa Mónica, que alcanzaste la gracia para los tuyos,", "en": "Saint Monica, who obtained grace for your loved ones," },
-      { "es": "Santa Mónica, patrona de las madres,", "en": "Saint Monica, patron of mothers," },
-      { "es": "Santa Mónica, intercesora de los matrimonios difíciles,", "en": "Saint Monica, intercessor of difficult marriages," }
-    ],
-    "response": { "es": "Ruega por nosotros.", "en": "Pray for us." }
-  }
+    "id":  "santamonica",
+    "name":  {
+                 "es":  "Santa Mónica",
+                 "en":  "Saint Monica"
+             },
+    "color":  "#1a3a6a",
+    "image":  "assets/images/santamonica.svg",
+    "specialty":  {
+                      "es":  "Madres y conversión",
+                      "en":  "Mothers \u0026 conversion"
+                  },
+    "shortPrayer":  {
+                        "es":  "Santa Mónica, madre perseverante en la oración, intercede por nosotros.",
+                        "en":  "Saint Monica, mother persevering in prayer, intercede for us."
+                    },
+    "history":  {
+                    "es":  "Santa Monica es la madre que oro treinta anos por la conversion de su hijo Agustin, cuyas lagrimas fueron llamadas «mas preciosas que el oro» por un obispo, y cuya muerte en Ostia fue la mas serena de la historia de la Iglesia.\n\n1. LAS LAGRIMAS DE TREINTA ANOS: EL OBISPO Y LA PROMESA\nMonica era una mujer de fe ardiente casada con Patricio, un pagano violento y de caracter dificil. Pero su mayor dolor no era su marido: era Agustin, su hijo mas brillante, que se habia sumergido en el maniqueismo, los placeres y la disolucion intelectual. Monica lo seguia, lo oraba, lo lloraba. Cuando fue a ver a un obispo anciano —cuyo nombre no ha llegado a la historia— y le pidio que hablara con Agustin para convertirlo, el obispo le respondio: «Vete, no es posible que el hijo de tantas lagrimas se pierda». Esta frase se convirtio en la promesa que sostuvo a Monica durante decadas. San Agustin mismo la recoge en las Confesiones con reverencia: fue la palabra de Dios a traves de un hombre.\n\n2. EL SUEÑO DEL TABLON: «DONDE TU ESTAS, ESTARA EL»\nEn uno de los momentos mas oscuros, cuando Agustin se habia marchado a Roma sin decirle —engañandola deliberadamente para que no lo siguiera—, Monica tuvo un sueño. Estaba de pie sobre un tablon de madera, llorando. Un ser resplandeciente se le acerco y le pregunto por que lloraba. Ella le explico. El ser le dijo: «Donde estas tu, estara el». Monica interpreto el sueno como promesa de que Agustin volveria a la fe. Cuando mas tarde le conto el sueno a Agustin, el intento convencerla de que significaba que ella se volveria como el. Monica le respondio sin vacilar: «No. No me dijo que donde el estuviera estaria yo, sino que donde yo estuviera estaria el». San Agustin escribio que esa respuesta le impresiono mas que cualquier argumento filosofico.\n\n3. LA MUERTE EN OSTIA: LA ULTIMA CONVERSACION CON AGUSTIN\nAgustin se bautizo en Milan en la Pascua del 387, a los 32 anos. Monica tenia entonces 55. Viajaron juntos hacia Africa para regresar a su tierra. En Ostia, el puerto de Roma, se detuvieron a descansar. Una tarde, sentados juntos junto a una ventana que daba al jardin, madre e hijo tuvieron una conversacion mistica en la que ascendieron juntos, segun Agustin, «hasta tocar brevemente con todo el impulso de nuestro corazon la Sabiduria eterna». Dias despues, Monica enfermo y dijo a sus hijos: «Enterradme aqui. No importa donde este mi cuerpo. Dios lo sabe encontrar». Murio cinco dias mas tarde, en paz completa, a los 56 años. Agustin escribio: «Cerre sus ojos y un dolor inmenso inundo mi corazon. Pero me consolé en El que es nuestra vida».",
+                    "en":  "Saint Monica is the mother who prayed thirty years for her son Augustine\u0027s conversion, whose tears were called \"more precious than gold\" by a bishop, and whose death in Ostia was the most serene in the history of the Church.\n\n1. THIRTY YEARS OF TEARS: THE BISHOP AND THE PROMISE\nMonica was a woman of ardent faith married to Patricius, a violent and difficult pagan. But her greatest sorrow was not her husband: it was Augustine, her most brilliant son, who had plunged into Manichaeism, pleasures, and intellectual dissolution. Monica followed him, prayed for him, wept for him. When she went to see an elderly bishop — whose name has not come down to history — and asked him to speak with Augustine to convert him, the bishop replied: \"Go, it is not possible that the son of so many tears should perish.\" This phrase became the promise that sustained Monica for decades. Saint Augustine himself records it in the Confessions with reverence: it was God\u0027s word through a man.\n\n2. THE DREAM OF THE PLANK: \"WHERE YOU ARE, HE WILL BE\"\nAt one of the darkest moments, when Augustine had left for Rome without telling her — deliberately deceiving her so she would not follow him — Monica had a dream. She was standing on a wooden plank, weeping. A radiant being approached her and asked why she wept. She explained. The being told her: \"Where you are, he will be.\" Monica interpreted the dream as a promise that Augustine would return to the faith. When she later recounted the dream to Augustine, he tried to convince her it meant she would become like him. Monica replied without hesitation: \"He did not say that where he was I would be, but that where I was he would be.\" Saint Augustine wrote that this reply impressed him more than any philosophical argument.\n\n3. DEATH IN OSTIA: THE LAST CONVERSATION WITH AUGUSTINE\nAugustine was baptized in Milan at Easter of 387, at age 32. Monica was then 55. They traveled together toward Africa to return home. At Ostia, the port of Rome, they stopped to rest. One afternoon, seated together by a window overlooking the garden, mother and son had a mystical conversation in which they ascended together, according to Augustine, \"to touch briefly with the full impulse of our heart the eternal Wisdom.\" Days later, Monica fell ill and said to her children: \"Bury me here. It does not matter where my body rests. God knows how to find it.\" She died five days later, in complete peace, at age 56. Augustine wrote: \"I closed her eyes and an immense grief flooded my heart. But I was consoled in Him who is our life.\""
+                },
+    "novena":  {
+                   "title":  {
+                                 "es":  "Novena a Santa Mónica",
+                                 "en":  "Novena to Saint Monica"
+                             },
+                   "days":  [
+                                {
+                                    "day":  1,
+                                    "intention":  {
+                                                      "es":  "Por los hijos alejados de la fe",
+                                                      "en":  "For children far from faith"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "Santa Mónica, que lloraste por tu hijo Agustín durante años sin perder la esperanza, intercede por todos los padres que tienen hijos alejados de Dios. Que nunca dejen de orar y confíen en que Dios escucha cada lágrima. Amén.",
+                                                   "en":  "Saint Monica, who wept for your son Augustine for years without losing hope, intercede for all parents with children far from God. May they never stop praying and trust that God hears every tear. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  2,
+                                    "intention":  {
+                                                      "es":  "Por los matrimonios difíciles",
+                                                      "en":  "For difficult marriages"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "Santa Mónica, que soportaste con paciencia y oración a un esposo difícil y lo viste convertirse, intercede por todos los matrimonios en crisis. Que la gracia de Dios transforme los corazones endurecidos. Amén.",
+                                                   "en":  "Saint Monica, who patiently and prayerfully endured a difficult husband and saw him convert, intercede for all marriages in crisis. May God\u0027s grace transform hardened hearts. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  3,
+                                    "intention":  {
+                                                      "es":  "Por la perseverancia en la oración",
+                                                      "en":  "For perseverance in prayer"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "Santa Mónica, que oraste durante décadas sin ver el fruto inmediato de tus oraciones, enséñanos a perseverar en la oración aunque el cielo parezca estar callado. Amén.",
+                                                   "en":  "Saint Monica, who prayed for decades without seeing immediate fruit from your prayers, teach us to persevere in prayer even when heaven seems silent. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  4,
+                                    "intention":  {
+                                                      "es":  "Por las madres que sufren",
+                                                      "en":  "For suffering mothers"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "Dulce Mónica, que conociste el dolor de ver sufrir a un hijo amado, acompaña a todas las madres que hoy sufren por sus hijos y llévalas a los pies de María, Madre de Dolores. Amén.",
+                                                   "en":  "Sweet Monica, who knew the pain of watching a beloved son suffer, accompany all mothers who suffer for their children today and lead them to the feet of Mary, Mother of Sorrows. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  5,
+                                    "intention":  {
+                                                      "es":  "Por los convertidos y los que buscan a Dios",
+                                                      "en":  "For converts and those seeking God"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "Santa Mónica, madre espiritual de los convertidos, intercede por todos los que buscan a Dios con el corazón abierto. Que encuentren, como Agustín, que el corazón está inquieto hasta que descansa en Él. Amén.",
+                                                   "en":  "Saint Monica, spiritual mother of converts, intercede for all who seek God with an open heart. May they find, like Augustine, that our heart is restless until it rests in Him. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  6,
+                                    "intention":  {
+                                                      "es":  "Por la familia cristiana",
+                                                      "en":  "For the Christian family"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "Santa Mónica, modelo de familia cristiana, intercede por todas las familias para que sean pequeñas iglesias domésticas donde Dios sea conocido, amado y servido. Amén.",
+                                                   "en":  "Saint Monica, model of the Christian family, intercede for all families that they may be little domestic churches where God is known, loved, and served. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  7,
+                                    "intention":  {
+                                                      "es":  "Por los que han perdido la esperanza",
+                                                      "en":  "For those who have lost hope"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "Santa Mónica esperanzada, que nunca abandonaste la fe en la conversión de tu hijo, intercede por todos los que han perdido la esperanza en sus situaciones imposibles. Que Dios les revele que nada es imposible para Él. Amén.",
+                                                   "en":  "Hopeful Saint Monica, who never abandoned faith in your son\u0027s conversion, intercede for all who have lost hope in their impossible situations. May God reveal to them that nothing is impossible for Him. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  8,
+                                    "intention":  {
+                                                      "es":  "Por una muerte en paz",
+                                                      "en":  "For a peaceful death"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "Santa Mónica, que moriste en paz en Ostia habiendo visto cumplida tu mayor petición, intercede para que todos los que amamos puedan morir en la gracia de Dios y con el corazón en paz. Amén.",
+                                                   "en":  "Saint Monica, who died peacefully in Ostia having seen your greatest request fulfilled, intercede that all our loved ones may die in God\u0027s grace and with peaceful hearts. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  9,
+                                    "intention":  {
+                                                      "es":  "Por la confianza en Dios",
+                                                      "en":  "For trust in God"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "Santa Mónica, tu vida entera fue un acto de confianza en Dios. Enséñanos a confiar en Su providencia cuando no entendemos Sus caminos, seguros de que Él escucha cada oración hecha desde el amor. Amén.",
+                                                   "en":  "Saint Monica, your entire life was an act of trust in God. Teach us to trust in His providence when we do not understand His ways, certain that He hears every prayer made from love. Amen."
+                                               }
+                                }
+                            ]
+               },
+    "litany":  {
+                   "title":  {
+                                 "es":  "Letanía de Santa Mónica",
+                                 "en":  "Litany of Saint Monica"
+                             },
+                   "invocations":  [
+                                       {
+                                           "es":  "Santa Mónica, madre perseverante en la oración,",
+                                           "en":  "Saint Monica, mother persevering in prayer,"
+                                       },
+                                       {
+                                           "es":  "Santa Mónica, consoladora de los afligidos,",
+                                           "en":  "Saint Monica, consoler of the afflicted,"
+                                       },
+                                       {
+                                           "es":  "Santa Mónica, modelo de paciencia conyugal,",
+                                           "en":  "Saint Monica, model of conjugal patience,"
+                                       },
+                                       {
+                                           "es":  "Santa Mónica, esperanza de los padres angustiados,",
+                                           "en":  "Saint Monica, hope of anguished parents,"
+                                       },
+                                       {
+                                           "es":  "Santa Mónica, que lloraste por la conversión de tu hijo,",
+                                           "en":  "Saint Monica, who wept for your son\u0027s conversion,"
+                                       },
+                                       {
+                                           "es":  "Santa Mónica, que alcanzaste la gracia para los tuyos,",
+                                           "en":  "Saint Monica, who obtained grace for your loved ones,"
+                                       },
+                                       {
+                                           "es":  "Santa Mónica, patrona de las madres,",
+                                           "en":  "Saint Monica, patron of mothers,"
+                                       },
+                                       {
+                                           "es":  "Santa Mónica, intercesora de los matrimonios difíciles,",
+                                           "en":  "Saint Monica, intercessor of difficult marriages,"
+                                       }
+                                   ],
+                   "response":  {
+                                    "es":  "Ruega por nosotros.",
+                                    "en":  "Pray for us."
+                                }
+               }
 }

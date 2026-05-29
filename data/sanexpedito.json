@@ -1,106 +1,172 @@
 ﻿{
-  "id": "sanexpedito",
-  "name": { "es": "San Expedito", "en": "Saint Expeditus" },
-  "color": "#8a2010",
-  "image": "assets/images/sanexpedito.svg",
-  "specialty": { "es": "Causas urgentes", "en": "Urgent causes" },
-  "shortPrayer": {
-    "es": "San Expedito, patrón de las causas urgentes, intercede por nosotros.",
-    "en": "Saint Expeditus, patron of urgent causes, intercede for us."
-  },
-  "history": {
-    "es": "San Expedito es venerado como mártir cristiano que vivió en el siglo III o IV, posiblemente en Armenia o en la región de Capadocia. Según la tradición, era oficial del ejército romano cuando se convirtió al cristianismo. El día de su bautismo, el demonio se le apareció bajo la forma de un cuervo que gritaba 'cras, cras' (mañana, mañana en latín), instándolo a posponer su conversión. San Expedito aplastó al cuervo gritando 'Hodie!' (¡Hoy!) y fue martirizado por su fe. Se le invoca especialmente para causas urgentes e inmediatas. Su iconografía lo muestra como soldado romano con una cruz que dice HODIE y aplastando a un cuervo.",
-    "en": "Saint Expeditus is venerated as a Christian martyr who lived in the 3rd or 4th century, possibly in Armenia or the Cappadocia region. According to tradition, he was a Roman army officer when he converted to Christianity. On the day of his baptism, the devil appeared to him in the form of a crow crying 'cras, cras' (tomorrow, tomorrow in Latin), urging him to postpone his conversion. Saint Expeditus crushed the crow crying 'Hodie!' (Today!) and was martyred for his faith. He is invoked especially for urgent and immediate causes. His iconography shows him as a Roman soldier with a cross saying HODIE and crushing a crow."
-  },
-  "novena": {
-    "title": { "es": "Novena a San Expedito", "en": "Novena to Saint Expeditus" },
-    "days": [
-      {
-        "day": 1,
-        "intention": { "es": "Por las causas urgentes", "en": "For urgent causes" },
-        "prayer": {
-          "es": "San Expedito, patrón de las causas urgentes, te presento hoy mi necesidad apremiante. Tú que aplastaste la tentación de la demora con tu grito de ¡Hoy!, intercede para que Dios atienda rápidamente mi petición según su santa voluntad. Amén.",
-          "en": "Saint Expeditus, patron of urgent causes, I present to you today my pressing need. You who crushed the temptation of delay with your cry of Today!, intercede that God may quickly attend to my petition according to His holy will. Amen."
-        }
-      },
-      {
-        "day": 2,
-        "intention": { "es": "Por vencer la procrastinación y la demora", "en": "For overcoming procrastination and delay" },
-        "prayer": {
-          "es": "San Expedito valiente, que respondiste al llamado de Dios sin demora, intercede para que yo también actúe con prontitud en mis compromisos con Dios y con los demás, sin dejar para mañana lo que debo hacer hoy. Amén.",
-          "en": "Brave Saint Expeditus, who responded to God's call without delay, intercede that I too may act promptly in my commitments to God and others, not leaving for tomorrow what I must do today. Amen."
-        }
-      },
-      {
-        "day": 3,
-        "intention": { "es": "Por la conversión sin demora", "en": "For conversion without delay" },
-        "prayer": {
-          "es": "Mártir del ¡Hoy!, intercede por todos los que sienten el llamado de la gracia pero lo posponen. Que no esperen más para abrazar la fe y que el demonio del 'mañana' nunca triunfe sobre ellos. Amén.",
-          "en": "Martyr of Today!, intercede for all who feel the call of grace but postpone it. May they wait no longer to embrace the faith and may the devil of 'tomorrow' never triumph over them. Amen."
-        }
-      },
-      {
-        "day": 4,
-        "intention": { "es": "Por los que atraviesan crisis económicas urgentes", "en": "For those facing urgent financial crises" },
-        "prayer": {
-          "es": "San Expedito, que provees ayuda oportuna en momentos de necesidad, intercede por todos los que hoy enfrentan crisis económicas urgentes. Que Dios abra caminos donde parece no haber salida. Amén.",
-          "en": "Saint Expeditus, who provides timely help in moments of need, intercede for all who today face urgent financial crises. May God open paths where there seems to be no way out. Amen."
-        }
-      },
-      {
-        "day": 5,
-        "intention": { "es": "Por la resolución rápida de conflictos legales", "en": "For swift resolution of legal conflicts" },
-        "prayer": {
-          "es": "San Expedito, intercede por todos los que están envueltos en procesos legales o conflictos que necesitan resolución urgente. Que la justicia sea rápida y que la verdad prevalezca. Amén.",
-          "en": "Saint Expeditus, intercede for all involved in legal proceedings or conflicts needing urgent resolution. May justice be swift and truth prevail. Amen."
-        }
-      },
-      {
-        "day": 6,
-        "intention": { "es": "Por la valentía en la fe", "en": "For courage in faith" },
-        "prayer": {
-          "es": "Soldado de Cristo, que no temiste al martirio por tu fe, intercede por todos los que tienen miedo de confesar su fe públicamente. Que tengan tu valentía y griten con sus vidas: ¡Hoy soy cristiano! Amén.",
-          "en": "Soldier of Christ, who did not fear martyrdom for your faith, intercede for all who are afraid to confess their faith publicly. May they have your courage and shout with their lives: Today I am a Christian! Amen."
-        }
-      },
-      {
-        "day": 7,
-        "intention": { "es": "Por las decisiones importantes que no pueden esperar", "en": "For important decisions that cannot wait" },
-        "prayer": {
-          "es": "San Expedito, acompaña a todos los que deben tomar hoy decisiones importantes que no pueden posponerse. Que el Espíritu Santo los ilumine para elegir bien y con prontitud. Amén.",
-          "en": "Saint Expeditus, accompany all who must today make important decisions that cannot be postponed. May the Holy Spirit illuminate them to choose well and promptly. Amen."
-        }
-      },
-      {
-        "day": 8,
-        "intention": { "es": "Por los que buscan trabajo urgentemente", "en": "For those urgently seeking work" },
-        "prayer": {
-          "es": "San Expedito, intercede por todos los que buscan trabajo urgentemente para sostener a su familia. Que encuentren pronto una oportunidad justa y digna. Amén.",
-          "en": "Saint Expeditus, intercede for all who urgently seek work to support their family. May they soon find a fair and dignified opportunity. Amen."
-        }
-      },
-      {
-        "day": 9,
-        "intention": { "es": "Por vivir el presente con Dios", "en": "For living the present with God" },
-        "prayer": {
-          "es": "San Expedito del ¡Hoy!, enséñame a no desperdiciar el tiempo que Dios me da, a vivir plenamente el presente, y a no posponer mi conversión, mi oración ni mi amor. Que cada día sea para mí un ¡Hoy! entregado a Dios. Amén.",
-          "en": "Saint Expeditus of Today!, teach me not to waste the time God gives me, to live the present fully, and not to postpone my conversion, my prayer, or my love. May each day be for me a Today! given to God. Amen."
-        }
-      }
-    ]
-  },
-  "litany": {
-    "title": { "es": "Letanía de San Expedito", "en": "Litany of Saint Expeditus" },
-    "invocations": [
-      { "es": "San Expedito, patrón de las causas urgentes,", "en": "Saint Expeditus, patron of urgent causes," },
-      { "es": "San Expedito, soldado valeroso de Cristo,", "en": "Saint Expeditus, brave soldier of Christ," },
-      { "es": "San Expedito, mártir del ¡Hoy!,", "en": "Saint Expeditus, martyr of Today!," },
-      { "es": "San Expedito, vencedor de la procrastinación,", "en": "Saint Expeditus, conqueror of procrastination," },
-      { "es": "San Expedito, intercesor de los que sufren,", "en": "Saint Expeditus, intercessor of the suffering," },
-      { "es": "San Expedito, auxiliador en las crisis,", "en": "Saint Expeditus, helper in crises," },
-      { "es": "San Expedito, promotor de la decisión rápida y santa,", "en": "Saint Expeditus, promoter of swift and holy decision," },
-      { "es": "San Expedito, que aplastaste al demonio de la demora,", "en": "Saint Expeditus, who crushed the demon of delay," }
-    ],
-    "response": { "es": "Ruega por nosotros.", "en": "Pray for us." }
-  }
+    "id":  "sanexpedito",
+    "name":  {
+                 "es":  "San Expedito",
+                 "en":  "Saint Expeditus"
+             },
+    "color":  "#8a2010",
+    "image":  "assets/images/sanexpedito.svg",
+    "specialty":  {
+                      "es":  "Causas urgentes",
+                      "en":  "Urgent causes"
+                  },
+    "shortPrayer":  {
+                        "es":  "San Expedito, patrón de las causas urgentes, intercede por nosotros.",
+                        "en":  "Saint Expeditus, patron of urgent causes, intercede for us."
+                    },
+    "history":  {
+                    "es":  "San Expedito es el patron de las causas urgentes y las necesidades inmediatas: el soldado romano que eligio a Cristo en un instante y rechazo al demonio con una sola palabra.\n\n1. EL CUERVO Y EL INSTANTE DE LA CONVERSION\nSegun la tradicion, Expedito era un oficial romano que habia decidido convertirse al cristianismo. En el preciso instante en que iba a aceptar el bautismo, un cuervo negro voló ante él graznando: «Cras! Cras!» —«¡Mañana! ¡Mañana!» en latin—. Era la voz del demonio que intentaba disuadirlo con la procrastinacion. Expedito pisó al cuervo y gritó: «¡Hodie! ¡Hoy!». Fue bautizado ese mismo dia. Su nombre en latin —Expeditus— significa «el que actua sin demora». La leyenda se convirtio en el simbolo de la decision inmediata y de la victoria sobre la pereza espiritual. Expedito es invocado por quienes necesitan una respuesta urgente del cielo cuando el tiempo apremia.\n\n2. EL MARTIR QUE MURIO DICIENDO «¡HOY!»\nExpedito fue detenido por las autoridades romanas en Melitene, Armenia, bajo el emperador Diocleciano, alrededor del ano 303. Se le ordeno renunciar al cristianismo. Se nego en terminos que se hicieron legendarios: «¡Hoy soy cristiano, hoy moriré por Cristo, hoy estare en el Paraiso!». Fue ejecutado. Sus companeros de regiment, impresionados por su valentia y convicciones, se convirtieron en masa al ver la serenidad con que Expedito afrontó el martirio. La Iglesia lo venera como martir, y su fiesta se celebra el 19 de abril. Su iconografia lo muestra pisando un cuervo con la palabra CRAS en la boca, mientras él alza una palma y un reloj o una cruz con la inscripcion HODIE.\n\n3. EL MILAGRO DE NUEVA ORLEANS Y LA DEVOCION UNIVERSAL\nLa devocion a San Expedito alcanzo dimension popular enorme en Nueva Orleans, Louisiana, en el siglo XIX, y desde alli se difundio a Brasil, Argentina, Italia, Alemania y Africa. En el año 1884, la iglesia de la Sagrada Familia en Nueva Orleans recibio una caja con reliquias. Sin indicacion alguna de su contenido, la caja tenia escrita solo la palabra «EXPEDITO». Los fieles comenzaron a invocarlo. Los milagros se multiplicaron. Hoy la pequena iglesia de Santa Expedita en el Barrio Frances de Nueva Orleans —donde una enorme estatua del santo preside el altar— es uno de los santuarios mas visitados del sur de Estados Unidos, recibiendo miles de ofrendas de flores rojas en accion de gracias.",
+                    "en":  "Saint Expeditus is the patron of urgent causes and immediate needs: the Roman soldier who chose Christ in an instant and rejected the devil with a single word.\n\n1. THE RAVEN AND THE MOMENT OF CONVERSION\nAccording to tradition, Expeditus was a Roman officer who had decided to convert to Christianity. At the very moment he was about to receive baptism, a black raven flew before him cawing: \"Cras! Cras!\" — \"Tomorrow! Tomorrow!\" in Latin. It was the voice of the devil attempting to dissuade him with procrastination. Expeditus crushed the raven underfoot and shouted: \"Hodie! Today!\" He was baptized that same day. His name in Latin — Expeditus — means \"the one who acts without delay.\" The legend became the symbol of immediate decision and victory over spiritual sloth. Expeditus is invoked by those who need an urgent answer from heaven when time is short.\n\n2. THE MARTYR WHO DIED SAYING \"TODAY!\"\nExpeditus was arrested by Roman authorities in Melitene, Armenia, under Emperor Diocletian, around the year 303. He was ordered to renounce Christianity. He refused in terms that became legendary: \"Today I am a Christian, today I will die for Christ, today I will be in Paradise!\" He was executed. His fellow soldiers, impressed by his courage and convictions, converted en masse upon witnessing the serenity with which Expeditus faced martyrdom. The Church venerates him as a martyr, and his feast is celebrated on April 19th. His iconography shows him treading on a raven with the word CRAS in its beak, while he raises a palm and a clock or a cross inscribed HODIE.\n\n3. THE MIRACLE OF NEW ORLEANS AND UNIVERSAL DEVOTION\nDevotion to Saint Expeditus reached enormous popular dimension in New Orleans, Louisiana, in the nineteenth century, and from there spread to Brazil, Argentina, Italy, Germany, and Africa. In 1884, the Church of the Holy Family in New Orleans received a box of relics. With no indication of its contents, the box had only the word \"EXPEDITO\" written on it. The faithful began invoking him. Miracles multiplied. Today the small Church of Saint Expedite in the French Quarter of New Orleans — where an enormous statue of the saint presides over the altar — is one of the most visited shrines in the American South, receiving thousands of offerings of red flowers in thanksgiving."
+                },
+    "novena":  {
+                   "title":  {
+                                 "es":  "Novena a San Expedito",
+                                 "en":  "Novena to Saint Expeditus"
+                             },
+                   "days":  [
+                                {
+                                    "day":  1,
+                                    "intention":  {
+                                                      "es":  "Por las causas urgentes",
+                                                      "en":  "For urgent causes"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "San Expedito, patrón de las causas urgentes, te presento hoy mi necesidad apremiante. Tú que aplastaste la tentación de la demora con tu grito de ¡Hoy!, intercede para que Dios atienda rápidamente mi petición según su santa voluntad. Amén.",
+                                                   "en":  "Saint Expeditus, patron of urgent causes, I present to you today my pressing need. You who crushed the temptation of delay with your cry of Today!, intercede that God may quickly attend to my petition according to His holy will. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  2,
+                                    "intention":  {
+                                                      "es":  "Por vencer la procrastinación y la demora",
+                                                      "en":  "For overcoming procrastination and delay"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "San Expedito valiente, que respondiste al llamado de Dios sin demora, intercede para que yo también actúe con prontitud en mis compromisos con Dios y con los demás, sin dejar para mañana lo que debo hacer hoy. Amén.",
+                                                   "en":  "Brave Saint Expeditus, who responded to God\u0027s call without delay, intercede that I too may act promptly in my commitments to God and others, not leaving for tomorrow what I must do today. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  3,
+                                    "intention":  {
+                                                      "es":  "Por la conversión sin demora",
+                                                      "en":  "For conversion without delay"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "Mártir del ¡Hoy!, intercede por todos los que sienten el llamado de la gracia pero lo posponen. Que no esperen más para abrazar la fe y que el demonio del \u0027mañana\u0027 nunca triunfe sobre ellos. Amén.",
+                                                   "en":  "Martyr of Today!, intercede for all who feel the call of grace but postpone it. May they wait no longer to embrace the faith and may the devil of \u0027tomorrow\u0027 never triumph over them. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  4,
+                                    "intention":  {
+                                                      "es":  "Por los que atraviesan crisis económicas urgentes",
+                                                      "en":  "For those facing urgent financial crises"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "San Expedito, que provees ayuda oportuna en momentos de necesidad, intercede por todos los que hoy enfrentan crisis económicas urgentes. Que Dios abra caminos donde parece no haber salida. Amén.",
+                                                   "en":  "Saint Expeditus, who provides timely help in moments of need, intercede for all who today face urgent financial crises. May God open paths where there seems to be no way out. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  5,
+                                    "intention":  {
+                                                      "es":  "Por la resolución rápida de conflictos legales",
+                                                      "en":  "For swift resolution of legal conflicts"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "San Expedito, intercede por todos los que están envueltos en procesos legales o conflictos que necesitan resolución urgente. Que la justicia sea rápida y que la verdad prevalezca. Amén.",
+                                                   "en":  "Saint Expeditus, intercede for all involved in legal proceedings or conflicts needing urgent resolution. May justice be swift and truth prevail. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  6,
+                                    "intention":  {
+                                                      "es":  "Por la valentía en la fe",
+                                                      "en":  "For courage in faith"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "Soldado de Cristo, que no temiste al martirio por tu fe, intercede por todos los que tienen miedo de confesar su fe públicamente. Que tengan tu valentía y griten con sus vidas: ¡Hoy soy cristiano! Amén.",
+                                                   "en":  "Soldier of Christ, who did not fear martyrdom for your faith, intercede for all who are afraid to confess their faith publicly. May they have your courage and shout with their lives: Today I am a Christian! Amen."
+                                               }
+                                },
+                                {
+                                    "day":  7,
+                                    "intention":  {
+                                                      "es":  "Por las decisiones importantes que no pueden esperar",
+                                                      "en":  "For important decisions that cannot wait"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "San Expedito, acompaña a todos los que deben tomar hoy decisiones importantes que no pueden posponerse. Que el Espíritu Santo los ilumine para elegir bien y con prontitud. Amén.",
+                                                   "en":  "Saint Expeditus, accompany all who must today make important decisions that cannot be postponed. May the Holy Spirit illuminate them to choose well and promptly. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  8,
+                                    "intention":  {
+                                                      "es":  "Por los que buscan trabajo urgentemente",
+                                                      "en":  "For those urgently seeking work"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "San Expedito, intercede por todos los que buscan trabajo urgentemente para sostener a su familia. Que encuentren pronto una oportunidad justa y digna. Amén.",
+                                                   "en":  "Saint Expeditus, intercede for all who urgently seek work to support their family. May they soon find a fair and dignified opportunity. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  9,
+                                    "intention":  {
+                                                      "es":  "Por vivir el presente con Dios",
+                                                      "en":  "For living the present with God"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "San Expedito del ¡Hoy!, enséñame a no desperdiciar el tiempo que Dios me da, a vivir plenamente el presente, y a no posponer mi conversión, mi oración ni mi amor. Que cada día sea para mí un ¡Hoy! entregado a Dios. Amén.",
+                                                   "en":  "Saint Expeditus of Today!, teach me not to waste the time God gives me, to live the present fully, and not to postpone my conversion, my prayer, or my love. May each day be for me a Today! given to God. Amen."
+                                               }
+                                }
+                            ]
+               },
+    "litany":  {
+                   "title":  {
+                                 "es":  "Letanía de San Expedito",
+                                 "en":  "Litany of Saint Expeditus"
+                             },
+                   "invocations":  [
+                                       {
+                                           "es":  "San Expedito, patrón de las causas urgentes,",
+                                           "en":  "Saint Expeditus, patron of urgent causes,"
+                                       },
+                                       {
+                                           "es":  "San Expedito, soldado valeroso de Cristo,",
+                                           "en":  "Saint Expeditus, brave soldier of Christ,"
+                                       },
+                                       {
+                                           "es":  "San Expedito, mártir del ¡Hoy!,",
+                                           "en":  "Saint Expeditus, martyr of Today!,"
+                                       },
+                                       {
+                                           "es":  "San Expedito, vencedor de la procrastinación,",
+                                           "en":  "Saint Expeditus, conqueror of procrastination,"
+                                       },
+                                       {
+                                           "es":  "San Expedito, intercesor de los que sufren,",
+                                           "en":  "Saint Expeditus, intercessor of the suffering,"
+                                       },
+                                       {
+                                           "es":  "San Expedito, auxiliador en las crisis,",
+                                           "en":  "Saint Expeditus, helper in crises,"
+                                       },
+                                       {
+                                           "es":  "San Expedito, promotor de la decisión rápida y santa,",
+                                           "en":  "Saint Expeditus, promoter of swift and holy decision,"
+                                       },
+                                       {
+                                           "es":  "San Expedito, que aplastaste al demonio de la demora,",
+                                           "en":  "Saint Expeditus, who crushed the demon of delay,"
+                                       }
+                                   ],
+                   "response":  {
+                                    "es":  "Ruega por nosotros.",
+                                    "en":  "Pray for us."
+                                }
+               }
 }

@@ -1,80 +1,80 @@
-{
-  "id": "sanbrendan",
-  "name": {
-    "es": "San Brendán Navegante",
-    "en": "Saint Brendan the Navigator"
-  },
-  "feast_day": {
-    "es": "16 de mayo",
-    "en": "May 16"
-  },
-  "image": "/assets/images/sanbrendan.svg",
-  "prayer": {
-    "es": "San Brendán Navegante, monje irlandés que surcaste el océano en frágil barca de cuero en busca de la Tierra Prometida de los Santos — a ti acudo con fe y confianza.\n\nTú que no te dejaste vencer por la tempestad ni por los años de incertidumbre en el mar, intercede por los que atraviesan travesías difíciles: las migraciones, los viajes sin retorno, los cambios de vida que asustan.\n\nTú que confiaste en Dios incluso cuando la tierra firme desapareció en el horizonte, intercede para que yo aprenda a navegar con fe cuando no veo el destino.\n\n¡San Brendán Navegante, ruega por nosotros!\nAmén.",
-    "en": "Saint Brendan the Navigator, Irish monk who sailed the ocean in a fragile leather boat in search of the Promised Land of the Saints — to you I come with faith and trust.\n\nYou who were not overcome by the storm nor by years of uncertainty at sea, intercede for those crossing difficult passages: migrations, journeys of no return, life changes that frighten.\n\nYou who trusted God even when solid ground disappeared on the horizon, intercede that I may learn to navigate by faith when I cannot see the destination.\n\nSaint Brendan the Navigator, pray for us!\nAmen."
-  },
-  "history": {
-    "es": "Brendán de Clonfert nació hacia el año 484 en Tralee, en el condado de Kerry, Irlanda. Fue bautizado y educado por Santa Ita de Killeedy, a quien consideró siempre como su madre espiritual. Estudió con el obispo Erc de Slane y fue ordenado sacerdote. Fundó varios monasterios en Irlanda, siendo el más importante el de Clonfert, en el condado de Galway, que llegó a albergar a más de tres mil monjes.\n\nSu fama internacional se debe a la 'Navigatio Sancti Brendani' ('El viaje de San Brendán'), un texto latino del siglo IX que narra su legendaria travesía por el Atlántico Norte en busca de la 'Tierra Prometida de los Santos'. Según el texto, Brendán y catorce monjes navegaron durante siete años en un curragh — embarcación de armazón de madera cubierta con pieles curtidas de buey — y visitaron islas maravillosas, algunas de las cuales han sido identificadas especulativamente con las Islas Feroe, Islandia, o incluso América del Norte.\n\nLa Navigatio es una de las obras más influyentes de la literatura medieval europea. Fue traducida a todos los idiomas importantes de la Edad Media y circuló por toda Europa, influyendo posiblemente en la cosmovisía de los exploradores medievales y renacentistas. Algunos estudiosos han propuesto que Brendán pudo haber llegado realmente a América del Norte, cinco siglos antes de Colón. En 1976, Tim Severin construyó y navegó un curragh tradicional desde Irlanda hasta Terranova, demostrando que tal travesía era materialmente posible.\n\nBrendán murió hacia el año 577 o 583, con casi cien años de edad, en Annaghdown mientras visitaba a su hermana. Es considerado uno de los Doce Apóstoles de Irlanda. Su fiesta se celebra el 16 de mayo. Es patrono de los marineros, marinos, viajeros, ballenas, y de la República de Kiribati.",
-    "en": "Brendan of Clonfert was born around 484 in Tralee, County Kerry, Ireland. He was baptized and raised by Saint Ita of Killeedy, whom he always considered his spiritual mother. He studied under Bishop Erc of Slane and was ordained a priest. He founded several monasteries in Ireland, the most important being Clonfert in County Galway, which came to house more than three thousand monks.\n\nHis international fame rests on the 'Navigatio Sancti Brendani' ('The Voyage of Saint Brendan'), a 9th-century Latin text narrating his legendary Atlantic crossing in search of the 'Promised Land of the Saints'. According to the text, Brendan and fourteen monks sailed for seven years in a curragh — a wooden-framed boat covered with tanned oxhide — and visited wonderful islands, some of which have been speculatively identified with the Faroe Islands, Iceland, or even North America.\n\nThe Navigatio is one of the most influential works of medieval European literature. It was translated into all major languages of the Middle Ages and circulated throughout Europe, possibly influencing the worldview of medieval and Renaissance explorers. Some scholars have proposed that Brendan may have actually reached North America, five centuries before Columbus. In 1976, Tim Severin built and sailed a traditional curragh from Ireland to Newfoundland, demonstrating that such a crossing was materially possible.\n\nBrendan died around 577 or 583, nearly a hundred years old, at Annaghdown while visiting his sister. He is considered one of the Twelve Apostles of Ireland. His feast is celebrated on May 16. He is patron of sailors, mariners, travelers, whales, and the Republic of Kiribati."
-  },
-  "novena": [
-    {
-      "day": 1,
-      "es": "Día 1 — El Llamado a la Aventura\n\nSan Brendán, que escuchaste la voz de Dios llamándote a zarpar hacia lo desconocido y obedeciste, intercede por los que sienten un llamado en su interior y no saben si atreverse a seguirlo. Que Dios les dé discernimiento y valentía.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 1 — The Call to Adventure\n\nSaint Brendan, who heard God's voice calling you to set sail toward the unknown and obeyed, intercede for those who feel a calling within and do not know whether to dare follow it. May God grant them discernment and courage.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 2,
-      "es": "Día 2 — La Confianza en Dios en el Mar Abierto\n\nSan Brendán, que navegaste durante siete años confiando en la Providencia sin saber cuándo llegarías a puerto, intercede por los que atraviesan períodos largos de incertidumbre. Que aprendan a confiar en Dios en medio de la niebla.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 2 — Trust in God on the Open Sea\n\nSaint Brendan, who sailed for seven years trusting Providence without knowing when you would reach port, intercede for those going through long periods of uncertainty. May they learn to trust God in the midst of fog.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 3,
-      "es": "Día 3 — La Comunidad en el Camino\n\nSan Brendán, que no navegaste solo sino con catorce hermanos, intercede por las comunidades que emprenden proyectos de fe juntas: grupos parroquiales, movimientos eclesiales, comunidades de base. Que el amor mutuo sea su ancla.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 3 — Community on the Journey\n\nSaint Brendan, who did not sail alone but with fourteen brothers, intercede for communities undertaking faith projects together: parish groups, ecclesial movements, base communities. May mutual love be their anchor.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 4,
-      "es": "Día 4 — Los Migrantes y Viajeros\n\nSan Brendán, patrono de los navegantes y viajeros, intercede por los migrantes que cruzan mares peligrosos en busca de vida mejor. Que lleguen a salvo, que sean recibidos con dignidad, que nunca se sientan solos en el camino.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 4 — Migrants and Travelers\n\nSaint Brendan, patron of sailors and travelers, intercede for migrants who cross dangerous seas in search of a better life. May they arrive safely, be received with dignity, and never feel alone on the journey.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 5,
-      "es": "Día 5 — La Liturgia en el Mar\n\nSan Brendán, que celebraste la Eucaristía en las islas milagrosas y en el lomo de ballenas, intercede para que la liturgia sea siempre para mí un encuentro vivo con el Resucitado, en cualquier circunstancia.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 5 — Liturgy at Sea\n\nSaint Brendan, who celebrated the Eucharist on miraculous islands and on the backs of whales, intercede that the liturgy may always be for me a living encounter with the Risen One, in any circumstance.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 6,
-      "es": "Día 6 — La Búsqueda de la Tierra Prometida\n\nSan Brendán, que buscaste la Tierra Prometida de los Santos, intercede para que yo no pierda de vista el cielo como destino final. Que el deseo del cielo oriente todas mis decisiones aquí en la tierra.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 6 — The Search for the Promised Land\n\nSaint Brendan, who sought the Promised Land of the Saints, intercede that I may not lose sight of heaven as my final destination. May the longing for heaven guide all my decisions here on earth.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 7,
-      "es": "Día 7 — El Cuidado de la Creación\n\nSan Brendán, que encontraste a Dios en las ballenas, los pájaros y las maravillas del océano, intercede por el cuidado del medio ambiente. Que veamos en la creación una revelación del Creador.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 7 — Care for Creation\n\nSaint Brendan, who found God in whales, birds, and the wonders of the ocean, intercede for the care of the environment. May we see in creation a revelation of the Creator.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 8,
-      "es": "Día 8 — La Herencia Monástica\n\nSan Brendán, que fundaste Clonfert y otros monasterios donde miles encontraron a Dios, intercede por las comunidades monásticas del mundo. Que sigan siendo faros de oración, hospitality y sabiduría.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 8 — The Monastic Heritage\n\nSaint Brendan, who founded Clonfert and other monasteries where thousands found God, intercede for monastic communities throughout the world. May they continue to be beacons of prayer, hospitality, and wisdom.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    },
-    {
-      "day": 9,
-      "es": "Día 9 — La Petición Final\n\nSan Brendán Navegante, explorador de océanos y de los misterios de Dios, en este noveno día te presento mi petición más profunda (pausa y presenta tu intención). Tú que navegaste siete años con fe, intercede para que yo persevere en mi camino hasta llegar a la patria.\n\n¡San Brendán Navegante, ruega por nosotros!\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.",
-      "en": "Day 9 — The Final Petition\n\nSaint Brendan the Navigator, explorer of oceans and the mysteries of God, on this ninth day I present to you my deepest petition (pause and present your intention). You who sailed seven years in faith, intercede that I may persevere on my journey until reaching the homeland.\n\nSaint Brendan the Navigator, pray for us!\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
-    }
-  ],
-  "chaplet": {
-    "available": false
-  },
-  "litany": {
-    "available": true,
-    "es": "Letanías de San Brendán Navegante\n\nSeñor, ten piedad. Señor, ten piedad.\nCristo, ten piedad. Cristo, ten piedad.\nSeñor, ten piedad. Señor, ten piedad.\n\nSan Brendán, monje y explorador, ruega por nosotros.\nSan Brendán, que navegaste en busca de Dios, ruega por nosotros.\nSan Brendán, de los Doce Apóstoles de Irlanda, ruega por nosotros.\nSan Brendán, guía de marineros en el peligro, ruega por nosotros.\nSan Brendán, fundador de Clonfert, ruega por nosotros.\nSan Brendán, que hallaste a Dios en las maravillas del mar, ruega por nosotros.\nSan Brendán, patrono de los migrantes y viajeros, ruega por nosotros.\nSan Brendán, que celebraste la Eucaristía en tierra ignota, ruega por nosotros.\nSan Brendán, que buscaste la Tierra Prometida de los Santos, ruega por nosotros.\n\nCordero de Dios, que quitas el pecado del mundo, perdónanos, Señor.\nCordero de Dios, que quitas el pecado del mundo, escúchanos, Señor.\nCordero de Dios, que quitas el pecado del mundo, ten piedad de nosotros.\n\nOremos: Señor Dios, que inspiraste a San Brendán a buscar tus maravillas en los confines de la tierra: concede que nosotros, peregrinos de este mundo, naveguemos con fe hacia la patria definitiva. Por Jesucristo Nuestro Señor. Amén.",
-    "en": "Litany of Saint Brendan the Navigator\n\nLord, have mercy. Lord, have mercy.\nChrist, have mercy. Christ, have mercy.\nLord, have mercy. Lord, have mercy.\n\nSaint Brendan, monk and explorer, pray for us.\nSaint Brendan, who sailed in search of God, pray for us.\nSaint Brendan, of the Twelve Apostles of Ireland, pray for us.\nSaint Brendan, guide of sailors in danger, pray for us.\nSaint Brendan, founder of Clonfert, pray for us.\nSaint Brendan, who found God in the wonders of the sea, pray for us.\nSaint Brendan, patron of migrants and travelers, pray for us.\nSaint Brendan, who celebrated the Eucharist on unknown land, pray for us.\nSaint Brendan, who sought the Promised Land of the Saints, pray for us.\n\nLamb of God, who takes away the sins of the world, spare us, O Lord.\nLamb of God, who takes away the sins of the world, graciously hear us, O Lord.\nLamb of God, who takes away the sins of the world, have mercy on us.\n\nLet us pray: Lord God, who inspired Saint Brendan to seek Your wonders at the ends of the earth: grant that we, pilgrims of this world, may sail with faith toward the final homeland. Through Jesus Christ Our Lord. Amen."
-  },
-  "consecration": {
-    "available": true,
-    "es": "Consagración a San Brendán Navegante\n\nSan Brendán, navegante de los mares y de los misterios de Dios, hoy me consagro a tu intercesión.\n\nMi vida es también una travesía en barca frágil: hay tormentas que no elegí, nieblas que no veo disiparse, horizontes que me asustan. Ayúdame a navegar con la misma fe con la que tú lo hiciste.\n\nQue yo también celebre la Eucaristía con gozo en cada etapa del viaje. Que nunca pierda el norte, porque el norte es Cristo.\n\nNavega conmigo. Amén.",
-    "en": "Consecration to Saint Brendan the Navigator\n\nSaint Brendan, navigator of seas and the mysteries of God, today I consecrate myself to your intercession.\n\nMy life is also a crossing in a fragile boat: there are storms I did not choose, fogs I cannot see lifting, horizons that frighten me. Help me to navigate with the same faith with which you did.\n\nMay I also celebrate the Eucharist with joy at every stage of the journey. May I never lose my bearing, because the bearing is Christ.\n\nSail with me. Amen."
-  }
+﻿{
+    "id":  "sanbrendan",
+    "name":  {
+                 "es":  "San BrendÃ¡n Navegante",
+                 "en":  "Saint Brendan the Navigator"
+             },
+    "feast_day":  {
+                      "es":  "16 de mayo",
+                      "en":  "May 16"
+                  },
+    "image":  "/assets/images/sanbrendan.svg",
+    "prayer":  {
+                   "es":  "San BrendÃ¡n Navegante, monje irlandÃ©s que surcaste el ocÃ©ano en frÃ¡gil barca de cuero en busca de la Tierra Prometida de los Santos â€” a ti acudo con fe y confianza.\n\nTÃº que no te dejaste vencer por la tempestad ni por los aÃ±os de incertidumbre en el mar, intercede por los que atraviesan travesÃ­as difÃ­ciles: las migraciones, los viajes sin retorno, los cambios de vida que asustan.\n\nTÃº que confiaste en Dios incluso cuando la tierra firme desapareciÃ³ en el horizonte, intercede para que yo aprenda a navegar con fe cuando no veo el destino.\n\nÂ¡San BrendÃ¡n Navegante, ruega por nosotros!\nAmÃ©n.",
+                   "en":  "Saint Brendan the Navigator, Irish monk who sailed the ocean in a fragile leather boat in search of the Promised Land of the Saints â€” to you I come with faith and trust.\n\nYou who were not overcome by the storm nor by years of uncertainty at sea, intercede for those crossing difficult passages: migrations, journeys of no return, life changes that frighten.\n\nYou who trusted God even when solid ground disappeared on the horizon, intercede that I may learn to navigate by faith when I cannot see the destination.\n\nSaint Brendan the Navigator, pray for us!\nAmen."
+               },
+    "history":  {
+                    "es":  "San Brendan el Navegante fue el monje irlandes que surco los mares del norte en busca del Paraiso terrenal, y cuyas aventuras oceanicas prefiguraron el descubrimiento de America mil anos antes que Colon.\n\n1. LA MISA SOBRE EL LOMO DE UNA BALLENA\nSegun la «Navigatio Sancti Brendani», el relato mas copiado de la Edad Media, Brendan y sus monjes desembarcaron en lo que creyeron ser una isla para celebrar la Misa de Pascua. Encendieron el fuego, cantaron el oficio y comenzaron a comer. De pronto, la «isla» comenzo a moverse. Era Jasconius, la ballena mas grande del ocean. Aterrados, corrieron a la barca. Brendan los tranquilizo: «No temais. Dios lo ha permitido para Su gloria». La ballena los llevo manso sobre su lomo durante un trecho y luego se sumergio lentamente. Brendan celebro la Misa de Pascua sobre la espalda de ese animal cada ano durante siete anos de navegacion.\n\n2. LA COLUMNA DE CRISTAL EN EL MAR\nLos monjes navegaron hasta llegar a una columna de plata o cristal puro que emergía del mar, tan alta que su cima se perdia entre las nubes. Desde la barca pudieron ver a traves de ella como si fuera vidrio transparente. Brendan y sus monjes rodearon la columna entonando salmos durante cuatro dias. Los estudiosos modernos han identificado este relato con el primer avistamiento documentado de un iceberg en el Atlantico Norte. La descripcion del Navigatio —escrita antes del ano 900— coincide con la apariencia y comportamiento de un iceberg a la deriva con una precision asombrosa.\n\n3. LA TIERRA DE PROMISION Y EL LEGADO DEL NAVEGANTE\nDespues de siete anos de aventuras epicas, Brendan y sus monjes llegaron finalmente a la «Terra Repromissionis Sanctorum» —la Tierra de Promision de los Santos—, un lugar de luz eterna, flores que nunca se marchitan y frutas que nunca se pudren. Un joven los recibio diciendoles que habian llegado al lugar que Dios habia preparado para Sus elegidos y que debian regresar, pero que Brendan volveria despues de su muerte. El explorador Tim Severin, en 1976, navego en un curach de cuero identico al de Brendan desde Irlanda hasta Terranova, demostrando que la travesia era oceanograficamente posible. La Tierra de Promision de Brendan puede haber sido las costas de America del Norte.",
+                    "en":  "Saint Brendan the Navigator was the Irish monk who sailed the northern seas in search of the Earthly Paradise, whose oceanic adventures prefigured the discovery of America a thousand years before Columbus.\n\n1. MASS ON THE BACK OF A WHALE\nAccording to the \"Navigatio Sancti Brendani,\" the most copied text of the Middle Ages, Brendan and his monks landed on what they believed to be an island to celebrate Easter Mass. They lit a fire, sang the office, and began to eat. Suddenly, the \"island\" began to move. It was Jasconius, the greatest whale in the ocean. Terrified, they ran to the boat. Brendan calmed them: \"Do not be afraid. God has permitted this for His glory.\" The whale carried them gently on its back for a while, then slowly submerged. Brendan celebrated Easter Mass on the back of that animal every year for seven years of navigation.\n\n2. THE CRYSTAL COLUMN IN THE SEA\nThe monks sailed until they reached a column of pure silver or crystal rising from the sea, so tall that its summit was lost in the clouds. From the boat they could see through it as through transparent glass. Brendan and his monks circled the column chanting psalms for four days. Modern scholars have identified this account with the first documented sighting of an iceberg in the North Atlantic. The Navigatio\u0027s description — written before the year 900 — matches the appearance and behavior of a drifting iceberg with astonishing precision.\n\n3. THE LAND OF PROMISE AND THE NAVIGATOR\u0027S LEGACY\nAfter seven years of epic adventures, Brendan and his monks finally reached the \"Terra Repromissionis Sanctorum\" — the Land of Promise of the Saints — a place of eternal light, flowers that never wither, and fruits that never rot. A young man received them, telling them they had arrived at the place God had prepared for His chosen ones and that they must return, but that Brendan would come back after his death. The explorer Tim Severin, in 1976, sailed in a leather currach identical to Brendan\u0027s from Ireland to Newfoundland, demonstrating that the crossing was oceanographically possible. Brendan\u0027s Land of Promise may well have been the coasts of North America."
+                },
+    "novena":  [
+                   {
+                       "day":  1,
+                       "es":  "DÃ­a 1 â€” El Llamado a la Aventura\n\nSan BrendÃ¡n, que escuchaste la voz de Dios llamÃ¡ndote a zarpar hacia lo desconocido y obedeciste, intercede por los que sienten un llamado en su interior y no saben si atreverse a seguirlo. Que Dios les dÃ© discernimiento y valentÃ­a.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 1 â€” The Call to Adventure\n\nSaint Brendan, who heard God\u0027s voice calling you to set sail toward the unknown and obeyed, intercede for those who feel a calling within and do not know whether to dare follow it. May God grant them discernment and courage.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  2,
+                       "es":  "DÃ­a 2 â€” La Confianza en Dios en el Mar Abierto\n\nSan BrendÃ¡n, que navegaste durante siete aÃ±os confiando en la Providencia sin saber cuÃ¡ndo llegarÃ­as a puerto, intercede por los que atraviesan perÃ­odos largos de incertidumbre. Que aprendan a confiar en Dios en medio de la niebla.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 2 â€” Trust in God on the Open Sea\n\nSaint Brendan, who sailed for seven years trusting Providence without knowing when you would reach port, intercede for those going through long periods of uncertainty. May they learn to trust God in the midst of fog.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  3,
+                       "es":  "DÃ­a 3 â€” La Comunidad en el Camino\n\nSan BrendÃ¡n, que no navegaste solo sino con catorce hermanos, intercede por las comunidades que emprenden proyectos de fe juntas: grupos parroquiales, movimientos eclesiales, comunidades de base. Que el amor mutuo sea su ancla.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 3 â€” Community on the Journey\n\nSaint Brendan, who did not sail alone but with fourteen brothers, intercede for communities undertaking faith projects together: parish groups, ecclesial movements, base communities. May mutual love be their anchor.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  4,
+                       "es":  "DÃ­a 4 â€” Los Migrantes y Viajeros\n\nSan BrendÃ¡n, patrono de los navegantes y viajeros, intercede por los migrantes que cruzan mares peligrosos en busca de vida mejor. Que lleguen a salvo, que sean recibidos con dignidad, que nunca se sientan solos en el camino.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 4 â€” Migrants and Travelers\n\nSaint Brendan, patron of sailors and travelers, intercede for migrants who cross dangerous seas in search of a better life. May they arrive safely, be received with dignity, and never feel alone on the journey.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  5,
+                       "es":  "DÃ­a 5 â€” La Liturgia en el Mar\n\nSan BrendÃ¡n, que celebraste la EucaristÃ­a en las islas milagrosas y en el lomo de ballenas, intercede para que la liturgia sea siempre para mÃ­ un encuentro vivo con el Resucitado, en cualquier circunstancia.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 5 â€” Liturgy at Sea\n\nSaint Brendan, who celebrated the Eucharist on miraculous islands and on the backs of whales, intercede that the liturgy may always be for me a living encounter with the Risen One, in any circumstance.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  6,
+                       "es":  "DÃ­a 6 â€” La BÃºsqueda de la Tierra Prometida\n\nSan BrendÃ¡n, que buscaste la Tierra Prometida de los Santos, intercede para que yo no pierda de vista el cielo como destino final. Que el deseo del cielo oriente todas mis decisiones aquÃ­ en la tierra.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 6 â€” The Search for the Promised Land\n\nSaint Brendan, who sought the Promised Land of the Saints, intercede that I may not lose sight of heaven as my final destination. May the longing for heaven guide all my decisions here on earth.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  7,
+                       "es":  "DÃ­a 7 â€” El Cuidado de la CreaciÃ³n\n\nSan BrendÃ¡n, que encontraste a Dios en las ballenas, los pÃ¡jaros y las maravillas del ocÃ©ano, intercede por el cuidado del medio ambiente. Que veamos en la creaciÃ³n una revelaciÃ³n del Creador.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 7 â€” Care for Creation\n\nSaint Brendan, who found God in whales, birds, and the wonders of the ocean, intercede for the care of the environment. May we see in creation a revelation of the Creator.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  8,
+                       "es":  "DÃ­a 8 â€” La Herencia MonÃ¡stica\n\nSan BrendÃ¡n, que fundaste Clonfert y otros monasterios donde miles encontraron a Dios, intercede por las comunidades monÃ¡sticas del mundo. Que sigan siendo faros de oraciÃ³n, hospitality y sabidurÃ­a.\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 8 â€” The Monastic Heritage\n\nSaint Brendan, who founded Clonfert and other monasteries where thousands found God, intercede for monastic communities throughout the world. May they continue to be beacons of prayer, hospitality, and wisdom.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   },
+                   {
+                       "day":  9,
+                       "es":  "DÃ­a 9 â€” La PeticiÃ³n Final\n\nSan BrendÃ¡n Navegante, explorador de ocÃ©anos y de los misterios de Dios, en este noveno dÃ­a te presento mi peticiÃ³n mÃ¡s profunda (pausa y presenta tu intenciÃ³n). TÃº que navegaste siete aÃ±os con fe, intercede para que yo persevere en mi camino hasta llegar a la patria.\n\nÂ¡San BrendÃ¡n Navegante, ruega por nosotros!\n\nReza: 1 Padre Nuestro, 1 Ave MarÃ­a, 1 Gloria.",
+                       "en":  "Day 9 â€” The Final Petition\n\nSaint Brendan the Navigator, explorer of oceans and the mysteries of God, on this ninth day I present to you my deepest petition (pause and present your intention). You who sailed seven years in faith, intercede that I may persevere on my journey until reaching the homeland.\n\nSaint Brendan the Navigator, pray for us!\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+                   }
+               ],
+    "chaplet":  {
+                    "available":  false
+                },
+    "litany":  {
+                   "available":  true,
+                   "es":  "LetanÃ­as de San BrendÃ¡n Navegante\n\nSeÃ±or, ten piedad. SeÃ±or, ten piedad.\nCristo, ten piedad. Cristo, ten piedad.\nSeÃ±or, ten piedad. SeÃ±or, ten piedad.\n\nSan BrendÃ¡n, monje y explorador, ruega por nosotros.\nSan BrendÃ¡n, que navegaste en busca de Dios, ruega por nosotros.\nSan BrendÃ¡n, de los Doce ApÃ³stoles de Irlanda, ruega por nosotros.\nSan BrendÃ¡n, guÃ­a de marineros en el peligro, ruega por nosotros.\nSan BrendÃ¡n, fundador de Clonfert, ruega por nosotros.\nSan BrendÃ¡n, que hallaste a Dios en las maravillas del mar, ruega por nosotros.\nSan BrendÃ¡n, patrono de los migrantes y viajeros, ruega por nosotros.\nSan BrendÃ¡n, que celebraste la EucaristÃ­a en tierra ignota, ruega por nosotros.\nSan BrendÃ¡n, que buscaste la Tierra Prometida de los Santos, ruega por nosotros.\n\nCordero de Dios, que quitas el pecado del mundo, perdÃ³nanos, SeÃ±or.\nCordero de Dios, que quitas el pecado del mundo, escÃºchanos, SeÃ±or.\nCordero de Dios, que quitas el pecado del mundo, ten piedad de nosotros.\n\nOremos: SeÃ±or Dios, que inspiraste a San BrendÃ¡n a buscar tus maravillas en los confines de la tierra: concede que nosotros, peregrinos de este mundo, naveguemos con fe hacia la patria definitiva. Por Jesucristo Nuestro SeÃ±or. AmÃ©n.",
+                   "en":  "Litany of Saint Brendan the Navigator\n\nLord, have mercy. Lord, have mercy.\nChrist, have mercy. Christ, have mercy.\nLord, have mercy. Lord, have mercy.\n\nSaint Brendan, monk and explorer, pray for us.\nSaint Brendan, who sailed in search of God, pray for us.\nSaint Brendan, of the Twelve Apostles of Ireland, pray for us.\nSaint Brendan, guide of sailors in danger, pray for us.\nSaint Brendan, founder of Clonfert, pray for us.\nSaint Brendan, who found God in the wonders of the sea, pray for us.\nSaint Brendan, patron of migrants and travelers, pray for us.\nSaint Brendan, who celebrated the Eucharist on unknown land, pray for us.\nSaint Brendan, who sought the Promised Land of the Saints, pray for us.\n\nLamb of God, who takes away the sins of the world, spare us, O Lord.\nLamb of God, who takes away the sins of the world, graciously hear us, O Lord.\nLamb of God, who takes away the sins of the world, have mercy on us.\n\nLet us pray: Lord God, who inspired Saint Brendan to seek Your wonders at the ends of the earth: grant that we, pilgrims of this world, may sail with faith toward the final homeland. Through Jesus Christ Our Lord. Amen."
+               },
+    "consecration":  {
+                         "available":  true,
+                         "es":  "ConsagraciÃ³n a San BrendÃ¡n Navegante\n\nSan BrendÃ¡n, navegante de los mares y de los misterios de Dios, hoy me consagro a tu intercesiÃ³n.\n\nMi vida es tambiÃ©n una travesÃ­a en barca frÃ¡gil: hay tormentas que no elegÃ­, nieblas que no veo disiparse, horizontes que me asustan. AyÃºdame a navegar con la misma fe con la que tÃº lo hiciste.\n\nQue yo tambiÃ©n celebre la EucaristÃ­a con gozo en cada etapa del viaje. Que nunca pierda el norte, porque el norte es Cristo.\n\nNavega conmigo. AmÃ©n.",
+                         "en":  "Consecration to Saint Brendan the Navigator\n\nSaint Brendan, navigator of seas and the mysteries of God, today I consecrate myself to your intercession.\n\nMy life is also a crossing in a fragile boat: there are storms I did not choose, fogs I cannot see lifting, horizons that frighten me. Help me to navigate with the same faith with which you did.\n\nMay I also celebrate the Eucharist with joy at every stage of the journey. May I never lose my bearing, because the bearing is Christ.\n\nSail with me. Amen."
+                     }
 }

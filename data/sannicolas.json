@@ -1,106 +1,172 @@
 ﻿{
-  "id": "sannicolas",
-  "name": { "es": "San Nicolás de Bari", "en": "Saint Nicholas of Bari" },
-  "color": "#1a3a8a",
-  "image": "assets/images/sannicolas.svg",
-  "specialty": { "es": "Niños y generosidad", "en": "Children & generosity" },
-  "shortPrayer": {
-    "es": "San Nicolás de Bari, patrono de los niños y los más necesitados, intercede por nosotros.",
-    "en": "Saint Nicholas of Bari, patron of children and the most needy, intercede for us."
-  },
-  "history": {
-    "es": "Nicolás nació en Patara, Licia (actual Turquía), hacia el año 270, en una familia cristiana adinerada. Al quedar huérfano joven, distribuyó su herencia entre los pobres. Se hizo sacerdote y luego obispo de Mira. Era conocido por su caridad secreta: según la leyenda, lanzó por la noche bolsas de oro por la ventana de una familia pobre para dotar a sus tres hijas y salvarlas de la trata. Sus reliquias fueron trasladadas a Bari, Italia, en 1087. Fue el origen histórico del personaje de Santa Claus (San Nicolás). Es patrono de los niños, marineros, viajeros, panaderos, prestamistas y estudiantes. Su fiesta es el 6 de diciembre.",
-    "en": "Nicholas was born in Patara, Lycia (modern Turkey), around 270, to a wealthy Christian family. Orphaned young, he distributed his inheritance to the poor. He became a priest and then bishop of Myra. He was known for his secret charity: according to legend, he threw bags of gold through the window at night into a poor family's home to provide dowries for their three daughters and save them from trafficking. His relics were transferred to Bari, Italy, in 1087. He was the historical origin of the character of Santa Claus (Saint Nicholas). He is patron of children, sailors, travelers, bakers, moneylenders, and students. His feast is December 6."
-  },
-  "novena": {
-    "title": { "es": "Novena a San Nicolás de Bari", "en": "Novena to Saint Nicholas of Bari" },
-    "days": [
-      {
-        "day": 1,
-        "intention": { "es": "Por los niños del mundo", "en": "For the children of the world" },
-        "prayer": {
-          "es": "San Nicolás, amigo y protector de los niños, intercede por todos los niños del mundo, especialmente los más vulnerables. Que cada niño sea cuidado, amado y protegido, y que pueda crecer en la alegría y la gracia de Dios. Amén.",
-          "en": "Saint Nicholas, friend and protector of children, intercede for all children in the world, especially the most vulnerable. May every child be cared for, loved, and protected, and be able to grow in the joy and grace of God. Amen."
-        }
-      },
-      {
-        "day": 2,
-        "intention": { "es": "Por la generosidad secreta", "en": "For secret generosity" },
-        "prayer": {
-          "es": "Nicolás caritativo, que dabas sin esperar reconocimiento, intercede para que seamos generosos con los necesitados sin buscar aplausos ni recompensas, siguiendo el ejemplo de Cristo que da en lo secreto. Amén.",
-          "en": "Charitable Nicholas, who gave without expecting recognition, intercede that we may be generous with those in need without seeking applause or reward, following the example of Christ who gives in secret. Amen."
-        }
-      },
-      {
-        "day": 3,
-        "intention": { "es": "Por los marineros y viajeros en peligro", "en": "For sailors and travelers in danger" },
-        "prayer": {
-          "es": "San Nicolás, patrono de los marineros y viajeros, intercede por todos los que afrontan peligros en el mar, en el aire o en la tierra. Que lleguen a buen puerto y regresen sanos y salvos a sus hogares. Amén.",
-          "en": "Saint Nicholas, patron of sailors and travelers, intercede for all who face dangers at sea, in the air, or on land. May they reach safe harbor and return home safe and sound. Amen."
-        }
-      },
-      {
-        "day": 4,
-        "intention": { "es": "Por los que sufren deudas y necesidades económicas", "en": "For those suffering debts and financial needs" },
-        "prayer": {
-          "es": "San Nicolás, que salvaste a tres doncellas de la miseria con tu generosidad secreta, intercede por todos los que sufren agobio económico, deudas aplastantes o pobreza extrema. Que Dios provea su socorro. Amén.",
-          "en": "Saint Nicholas, who saved three maidens from misery with your secret generosity, intercede for all who suffer economic hardship, crushing debts, or extreme poverty. May God provide for their relief. Amen."
-        }
-      },
-      {
-        "day": 5,
-        "intention": { "es": "Por los estudiantes y jóvenes en formación", "en": "For students and young people in formation" },
-        "prayer": {
-          "es": "San Nicolás, patrono de los estudiantes, intercede por todos los jóvenes que estudian y se forman. Que tengan sabiduría para aprender, generosidad para compartir su saber, y fe para orientarlo todo hacia Dios. Amén.",
-          "en": "Saint Nicholas, patron of students, intercede for all young people who study and are in formation. May they have wisdom to learn, generosity to share their knowledge, and faith to orient it all toward God. Amen."
-        }
-      },
-      {
-        "day": 6,
-        "intention": { "es": "Por los niños en riesgo de explotación", "en": "For children at risk of exploitation" },
-        "prayer": {
-          "es": "Nicolás, que salvaste a jóvenes de la explotación, intercede por todos los niños y adolescentes amenazados por la trata de personas, el trabajo infantil y cualquier forma de abuso. Que Dios sea su protector. Amén.",
-          "en": "Nicholas, who saved young people from exploitation, intercede for all children and adolescents threatened by human trafficking, child labor, and any form of abuse. May God be their protector. Amen."
-        }
-      },
-      {
-        "day": 7,
-        "intention": { "es": "Por los pastores y obispos de la Iglesia", "en": "For pastors and bishops of the Church" },
-        "prayer": {
-          "es": "San Nicolás, obispo fiel de Mira, intercede por todos los obispos y pastores de la Iglesia. Que tengan tu generosidad, tu valentía para defender la fe y tu amor paternal por el pueblo que se les ha confiado. Amén.",
-          "en": "Saint Nicholas, faithful bishop of Myra, intercede for all bishops and pastors of the Church. May they have your generosity, your courage to defend the faith, and your fatherly love for the people entrusted to them. Amen."
-        }
-      },
-      {
-        "day": 8,
-        "intention": { "es": "Por la alegría de dar", "en": "For the joy of giving" },
-        "prayer": {
-          "es": "San Nicolás, padre del espíritu de la generosidad navideña, intercede para que redescubramos la alegría de dar sin calcular, especialmente en la Navidad, que es ante todo el regalo de Dios a la humanidad. Amén.",
-          "en": "Saint Nicholas, father of the spirit of Christmas generosity, intercede that we may rediscover the joy of giving without calculating, especially at Christmas, which is above all God's gift to humanity. Amen."
-        }
-      },
-      {
-        "day": 9,
-        "intention": { "es": "Por la fe viva y la caridad activa", "en": "For living faith and active charity" },
-        "prayer": {
-          "es": "San Nicolás, que tradujiste tu fe en obras concretas de amor, intercede para que nuestra fe no sea solo palabras sino vida, que nuestra caridad no sea solo sentimiento sino acción, y que amemos como Cristo amó. Amén.",
-          "en": "Saint Nicholas, who translated your faith into concrete works of love, intercede that our faith may not be mere words but life, that our charity may not be mere sentiment but action, and that we may love as Christ loved. Amen."
-        }
-      }
-    ]
-  },
-  "litany": {
-    "title": { "es": "Letanía de San Nicolás de Bari", "en": "Litany of Saint Nicholas of Bari" },
-    "invocations": [
-      { "es": "San Nicolás, obispo de Mira,", "en": "Saint Nicholas, bishop of Myra," },
-      { "es": "San Nicolás, padre de los pobres,", "en": "Saint Nicholas, father of the poor," },
-      { "es": "San Nicolás, protector de los niños,", "en": "Saint Nicholas, protector of children," },
-      { "es": "San Nicolás, patrono de los marineros,", "en": "Saint Nicholas, patron of sailors," },
-      { "es": "San Nicolás, auxiliador de los endeudados,", "en": "Saint Nicholas, helper of the indebted," },
-      { "es": "San Nicolás, patrono de los estudiantes,", "en": "Saint Nicholas, patron of students," },
-      { "es": "San Nicolás, modelo de generosidad secreta,", "en": "Saint Nicholas, model of secret generosity," },
-      { "es": "San Nicolás, alegría de la Navidad,", "en": "Saint Nicholas, joy of Christmas," }
-    ],
-    "response": { "es": "Ruega por nosotros.", "en": "Pray for us." }
-  }
+    "id":  "sannicolas",
+    "name":  {
+                 "es":  "San Nicolás de Bari",
+                 "en":  "Saint Nicholas of Bari"
+             },
+    "color":  "#1a3a8a",
+    "image":  "assets/images/sannicolas.svg",
+    "specialty":  {
+                      "es":  "Niños y generosidad",
+                      "en":  "Children \u0026 generosity"
+                  },
+    "shortPrayer":  {
+                        "es":  "San Nicolás de Bari, patrono de los niños y los más necesitados, intercede por nosotros.",
+                        "en":  "Saint Nicholas of Bari, patron of children and the most needy, intercede for us."
+                    },
+    "history":  {
+                    "es":  "San Nicolas de Mira es el obispo del corazon generoso: el pastor turco del siglo IV cuya caridad secreta se convirtio en el mayor simbolo de dadivosidad de la historia humana.\n\n1. LAS TRES BOLSAS DE ORO Y LAS DONCELLAS SALVADAS\nUn noble empobrecido de Mira tenia tres hijas hermosas a quienes no podia dotar para el matrimonio. Desesperado, estaba considerando venderlas como esclavas. Nicolas se entero de su situacion y, tres noches consecutivas, arrojo en secreto una bolsa de oro por la ventana de la casa. Con la primera dote se caso la hija mayor; con la segunda, la mediana. La tercera noche, el padre velaba para descubrir al benefactor. Nicolas corrio, pero el padre lo alcanzo y se arrojo a sus pies dando gracias. Nicolas le pidio que no lo revelara mientras viviera. La imagen de las tres bolsas de oro se convirtio en el simbolo del monte de piedad, y las bolas doradas adornan aun hoy los escaparates de las casas de empenos en todo el mundo.\n\n2. LA RESURRECCION DE LOS TRES NINOS EN LA SALMUERA\nSegun la tradicion hagiografica, durante una epoca de hambre terrible, un carnicero sin escrúpulos habia asesinado a tres ninos peregrinos, troceado sus cuerpos y puesto los restos en un tonel de salmuera para venderlos como carne de cerdo. Nicolas, guiado por una revelacion divina, llego a la posada, descubrio el tonel y, haciendo la senal de la cruz sobre el, oro en voz alta. Los tres ninos emergieron del tonel completamente restaurados, sanos y vivos, como si solo hubieran dormido. El prodigio recorrio todo el Oriente Medio y el Mediteraneo. Nicolas es invocado desde entonces como protector de los ninos. Este milagro es el que mas claramente preanuncia su transformacion en el amado San Nicolas —Santa Claus— de la tradicion navidena.\n\n3. SAN NICOLAS Y LOS MARINEROS DE MIRA\nSegun numerosos testimonios recogidos por los hagiografos medievales, Nicolas se aparecia en persona a los marineros en peligro de naufragio en el Mediterraneo. En una de las narraciones mas documentadas, una tormenta furiosa estaba a punto de hundir una nave cargada de peregrinos que iban a visitar su tumba en Mira. En el momento en que las olas parecian ya irresistibles, un hombre vestido de obispo aparecio a bordo, tomo el timon y maniobro la embarcacion hasta puerto seguro. Cuando los marineros intentaron buscar a su salvador, el hombre habia desaparecido. Al llegar a la basilica de Mira y ver el icono de Nicolas, lo reconocieron al instante. Es el patron de los marineros, los viajeros y los ninos: el angel con mitra y báculo.",
+                    "en":  "Saint Nicholas of Myra is the bishop of the generous heart: the Turkish pastor of the fourth century whose secret charity became the greatest symbol of giving in human history.\n\n1. THE THREE BAGS OF GOLD AND THE RESCUED MAIDENS\nAn impoverished nobleman of Myra had three beautiful daughters he could not provide dowries for. In despair, he was considering selling them into slavery. Nicholas learned of their situation and, on three consecutive nights, secretly threw a bag of gold through the window of the house. With the first dowry the eldest daughter was married; with the second, the middle one. On the third night the father kept watch to discover the benefactor. Nicholas ran, but the father caught up with him and threw himself at his feet in gratitude. Nicholas asked that it not be revealed while he lived. The image of the three bags of gold became the symbol of the pawnshop, and golden balls still adorn pawnshop signs around the world today.\n\n2. THE RESURRECTION OF THE THREE BOYS IN THE BRINE\nAccording to hagiographic tradition, during a time of terrible famine, an unscrupulous butcher had murdered three young pilgrim boys, cut up their bodies, and placed the remains in a barrel of brine to sell as pork. Nicholas, guided by divine revelation, arrived at the inn, discovered the barrel, and making the sign of the cross over it, prayed aloud. The three boys emerged from the barrel completely restored, healthy and alive, as if they had only been sleeping. The prodigy spread across all of the Middle East and the Mediterranean. Nicholas has been invoked ever since as the protector of children. This miracle most clearly foreshadows his transformation into the beloved Saint Nicholas — Santa Claus — of the Christmas tradition.\n\n3. SAINT NICHOLAS AND THE SAILORS OF MYRA\nAccording to numerous testimonies gathered by medieval hagiographers, Nicholas appeared in person to sailors in danger of shipwreck on the Mediterranean. In one of the most documented accounts, a furious storm was about to sink a vessel loaded with pilgrims traveling to visit his tomb in Myra. At the moment when the waves seemed already irresistible, a man dressed as a bishop appeared on board, took the helm, and navigated the vessel to safe harbor. When the sailors tried to find their rescuer, the man had vanished. Upon arriving at the basilica of Myra and seeing the icon of Nicholas, they recognized him instantly. He is the patron of sailors, travelers, and children: the angel with miter and staff."
+                },
+    "novena":  {
+                   "title":  {
+                                 "es":  "Novena a San Nicolás de Bari",
+                                 "en":  "Novena to Saint Nicholas of Bari"
+                             },
+                   "days":  [
+                                {
+                                    "day":  1,
+                                    "intention":  {
+                                                      "es":  "Por los niños del mundo",
+                                                      "en":  "For the children of the world"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "San Nicolás, amigo y protector de los niños, intercede por todos los niños del mundo, especialmente los más vulnerables. Que cada niño sea cuidado, amado y protegido, y que pueda crecer en la alegría y la gracia de Dios. Amén.",
+                                                   "en":  "Saint Nicholas, friend and protector of children, intercede for all children in the world, especially the most vulnerable. May every child be cared for, loved, and protected, and be able to grow in the joy and grace of God. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  2,
+                                    "intention":  {
+                                                      "es":  "Por la generosidad secreta",
+                                                      "en":  "For secret generosity"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "Nicolás caritativo, que dabas sin esperar reconocimiento, intercede para que seamos generosos con los necesitados sin buscar aplausos ni recompensas, siguiendo el ejemplo de Cristo que da en lo secreto. Amén.",
+                                                   "en":  "Charitable Nicholas, who gave without expecting recognition, intercede that we may be generous with those in need without seeking applause or reward, following the example of Christ who gives in secret. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  3,
+                                    "intention":  {
+                                                      "es":  "Por los marineros y viajeros en peligro",
+                                                      "en":  "For sailors and travelers in danger"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "San Nicolás, patrono de los marineros y viajeros, intercede por todos los que afrontan peligros en el mar, en el aire o en la tierra. Que lleguen a buen puerto y regresen sanos y salvos a sus hogares. Amén.",
+                                                   "en":  "Saint Nicholas, patron of sailors and travelers, intercede for all who face dangers at sea, in the air, or on land. May they reach safe harbor and return home safe and sound. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  4,
+                                    "intention":  {
+                                                      "es":  "Por los que sufren deudas y necesidades económicas",
+                                                      "en":  "For those suffering debts and financial needs"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "San Nicolás, que salvaste a tres doncellas de la miseria con tu generosidad secreta, intercede por todos los que sufren agobio económico, deudas aplastantes o pobreza extrema. Que Dios provea su socorro. Amén.",
+                                                   "en":  "Saint Nicholas, who saved three maidens from misery with your secret generosity, intercede for all who suffer economic hardship, crushing debts, or extreme poverty. May God provide for their relief. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  5,
+                                    "intention":  {
+                                                      "es":  "Por los estudiantes y jóvenes en formación",
+                                                      "en":  "For students and young people in formation"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "San Nicolás, patrono de los estudiantes, intercede por todos los jóvenes que estudian y se forman. Que tengan sabiduría para aprender, generosidad para compartir su saber, y fe para orientarlo todo hacia Dios. Amén.",
+                                                   "en":  "Saint Nicholas, patron of students, intercede for all young people who study and are in formation. May they have wisdom to learn, generosity to share their knowledge, and faith to orient it all toward God. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  6,
+                                    "intention":  {
+                                                      "es":  "Por los niños en riesgo de explotación",
+                                                      "en":  "For children at risk of exploitation"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "Nicolás, que salvaste a jóvenes de la explotación, intercede por todos los niños y adolescentes amenazados por la trata de personas, el trabajo infantil y cualquier forma de abuso. Que Dios sea su protector. Amén.",
+                                                   "en":  "Nicholas, who saved young people from exploitation, intercede for all children and adolescents threatened by human trafficking, child labor, and any form of abuse. May God be their protector. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  7,
+                                    "intention":  {
+                                                      "es":  "Por los pastores y obispos de la Iglesia",
+                                                      "en":  "For pastors and bishops of the Church"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "San Nicolás, obispo fiel de Mira, intercede por todos los obispos y pastores de la Iglesia. Que tengan tu generosidad, tu valentía para defender la fe y tu amor paternal por el pueblo que se les ha confiado. Amén.",
+                                                   "en":  "Saint Nicholas, faithful bishop of Myra, intercede for all bishops and pastors of the Church. May they have your generosity, your courage to defend the faith, and your fatherly love for the people entrusted to them. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  8,
+                                    "intention":  {
+                                                      "es":  "Por la alegría de dar",
+                                                      "en":  "For the joy of giving"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "San Nicolás, padre del espíritu de la generosidad navideña, intercede para que redescubramos la alegría de dar sin calcular, especialmente en la Navidad, que es ante todo el regalo de Dios a la humanidad. Amén.",
+                                                   "en":  "Saint Nicholas, father of the spirit of Christmas generosity, intercede that we may rediscover the joy of giving without calculating, especially at Christmas, which is above all God\u0027s gift to humanity. Amen."
+                                               }
+                                },
+                                {
+                                    "day":  9,
+                                    "intention":  {
+                                                      "es":  "Por la fe viva y la caridad activa",
+                                                      "en":  "For living faith and active charity"
+                                                  },
+                                    "prayer":  {
+                                                   "es":  "San Nicolás, que tradujiste tu fe en obras concretas de amor, intercede para que nuestra fe no sea solo palabras sino vida, que nuestra caridad no sea solo sentimiento sino acción, y que amemos como Cristo amó. Amén.",
+                                                   "en":  "Saint Nicholas, who translated your faith into concrete works of love, intercede that our faith may not be mere words but life, that our charity may not be mere sentiment but action, and that we may love as Christ loved. Amen."
+                                               }
+                                }
+                            ]
+               },
+    "litany":  {
+                   "title":  {
+                                 "es":  "Letanía de San Nicolás de Bari",
+                                 "en":  "Litany of Saint Nicholas of Bari"
+                             },
+                   "invocations":  [
+                                       {
+                                           "es":  "San Nicolás, obispo de Mira,",
+                                           "en":  "Saint Nicholas, bishop of Myra,"
+                                       },
+                                       {
+                                           "es":  "San Nicolás, padre de los pobres,",
+                                           "en":  "Saint Nicholas, father of the poor,"
+                                       },
+                                       {
+                                           "es":  "San Nicolás, protector de los niños,",
+                                           "en":  "Saint Nicholas, protector of children,"
+                                       },
+                                       {
+                                           "es":  "San Nicolás, patrono de los marineros,",
+                                           "en":  "Saint Nicholas, patron of sailors,"
+                                       },
+                                       {
+                                           "es":  "San Nicolás, auxiliador de los endeudados,",
+                                           "en":  "Saint Nicholas, helper of the indebted,"
+                                       },
+                                       {
+                                           "es":  "San Nicolás, patrono de los estudiantes,",
+                                           "en":  "Saint Nicholas, patron of students,"
+                                       },
+                                       {
+                                           "es":  "San Nicolás, modelo de generosidad secreta,",
+                                           "en":  "Saint Nicholas, model of secret generosity,"
+                                       },
+                                       {
+                                           "es":  "San Nicolás, alegría de la Navidad,",
+                                           "en":  "Saint Nicholas, joy of Christmas,"
+                                       }
+                                   ],
+                   "response":  {
+                                    "es":  "Ruega por nosotros.",
+                                    "en":  "Pray for us."
+                                }
+               }
 }
