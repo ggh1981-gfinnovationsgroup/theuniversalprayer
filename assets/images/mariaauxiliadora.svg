@@ -1,0 +1,342 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="400" height="560">
+  <defs>
+    <!-- Deep celestial background gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a2d5a"/>
+      <stop offset="60%" stop-color="#0d1a3a"/>
+      <stop offset="100%" stop-color="#060e20"/>
+    </radialGradient>
+    <!-- Golden glory halo -->
+    <radialGradient id="gloryHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff8e0" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#f5c842" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#c9900a" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#7a5000" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Mary's mantle gradient — deep Marian blue with gold edge -->
+    <linearGradient id="mantleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a3a7a"/>
+      <stop offset="50%" stop-color="#0d2456"/>
+      <stop offset="100%" stop-color="#091840"/>
+    </linearGradient>
+    <!-- Mantle shadow fold -->
+    <linearGradient id="mantleShadow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#091840" stop-opacity="0.8"/>
+      <stop offset="30%" stop-color="#1a3a7a" stop-opacity="0"/>
+      <stop offset="70%" stop-color="#1a3a7a" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#091840" stop-opacity="0.8"/>
+    </linearGradient>
+    <!-- Dress/tunic gradient — warm cream/gold -->
+    <linearGradient id="tunicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5e8c0"/>
+      <stop offset="50%" stop-color="#e8d090"/>
+      <stop offset="100%" stop-color="#c8a840"/>
+    </linearGradient>
+    <!-- Crown gold gradient -->
+    <linearGradient id="crownGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff0a0"/>
+      <stop offset="40%" stop-color="#f5c842"/>
+      <stop offset="100%" stop-color="#a07010"/>
+    </linearGradient>
+    <!-- Skin gradient warm -->
+    <radialGradient id="skinGrad" cx="50%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#fde8c8"/>
+      <stop offset="60%" stop-color="#f0c898"/>
+      <stop offset="100%" stop-color="#d4a060"/>
+    </radialGradient>
+    <!-- Child Jesus skin -->
+    <radialGradient id="childSkinGrad" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#fdeedd"/>
+      <stop offset="60%" stop-color="#f5d4a8"/>
+      <stop offset="100%" stop-color="#e0b070"/>
+    </radialGradient>
+    <!-- Star sparkle filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Soft glow for halo -->
+    <filter id="haloGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Banner texture -->
+    <linearGradient id="bannerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c9900a"/>
+      <stop offset="50%" stop-color="#f5c842"/>
+      <stop offset="100%" stop-color="#a07010"/>
+    </linearGradient>
+    <!-- Pedestal -->
+    <linearGradient id="pedestalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c8b060"/>
+      <stop offset="50%" stop-color="#9a7830"/>
+      <stop offset="100%" stop-color="#5a4010"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ── BACKGROUND ── -->
+  <rect width="400" height="560" fill="url(#bgGrad)"/>
+
+  <!-- Stars scattered in background -->
+  <g opacity="0.7" filter="url(#glow)">
+    <circle cx="30" cy="40" r="1.2" fill="#fff8e0"/>
+    <circle cx="65" cy="20" r="0.8" fill="#f5c842"/>
+    <circle cx="90" cy="55" r="1.0" fill="#fff8e0"/>
+    <circle cx="130" cy="18" r="1.4" fill="#fff8e0"/>
+    <circle cx="160" cy="35" r="0.7" fill="#f5c842"/>
+    <circle cx="240" cy="18" r="1.2" fill="#fff8e0"/>
+    <circle cx="270" cy="42" r="0.9" fill="#f5c842"/>
+    <circle cx="310" cy="25" r="1.1" fill="#fff8e0"/>
+    <circle cx="350" cy="50" r="1.3" fill="#fff8e0"/>
+    <circle cx="380" cy="30" r="0.8" fill="#f5c842"/>
+    <circle cx="22" cy="120" r="0.7" fill="#fff8e0"/>
+    <circle cx="375" cy="110" r="0.9" fill="#fff8e0"/>
+    <circle cx="15" cy="200" r="1.0" fill="#f5c842"/>
+    <circle cx="385" cy="190" r="0.8" fill="#fff8e0"/>
+    <circle cx="18" cy="320" r="1.1" fill="#fff8e0"/>
+    <circle cx="382" cy="300" r="0.9" fill="#f5c842"/>
+    <circle cx="55" cy="420" r="0.7" fill="#fff8e0"/>
+    <circle cx="345" cy="410" r="1.0" fill="#fff8e0"/>
+  </g>
+
+  <!-- ── MAIN GLORY — radiating golden light behind Mary ── -->
+  <ellipse cx="200" cy="230" rx="155" ry="190" fill="url(#gloryHalo)" opacity="0.45"/>
+
+  <!-- Radiate rays -->
+  <g opacity="0.18" stroke="#f5c842" stroke-width="1">
+    <line x1="200" y1="230" x2="40" y2="60"/>
+    <line x1="200" y1="230" x2="80" y2="30"/>
+    <line x1="200" y1="230" x2="130" y2="15"/>
+    <line x1="200" y1="230" x2="200" y2="10"/>
+    <line x1="200" y1="230" x2="270" y2="15"/>
+    <line x1="200" y1="230" x2="320" y2="30"/>
+    <line x1="200" y1="230" x2="360" y2="60"/>
+    <line x1="200" y1="230" x2="30" y2="200"/>
+    <line x1="200" y1="230" x2="370" y2="200"/>
+    <line x1="200" y1="230" x2="30" y2="350"/>
+    <line x1="200" y1="230" x2="370" y2="350"/>
+  </g>
+
+  <!-- ── MARY'S BODY — full figure ── -->
+
+  <!-- Mantle flowing wide — back layer -->
+  <path d="M 105 170 Q 60 220 45 380 Q 80 460 130 490 Q 200 510 270 490 Q 320 460 355 380 Q 340 220 295 170 Q 260 155 200 152 Q 140 155 105 170 Z" 
+        fill="url(#mantleGrad)" stroke="#c9900a" stroke-width="0.5"/>
+
+  <!-- Mantle shadow overlay for depth -->
+  <path d="M 105 170 Q 60 220 45 380 Q 80 460 130 490 Q 200 510 270 490 Q 320 460 355 380 Q 340 220 295 170 Q 260 155 200 152 Q 140 155 105 170 Z" 
+        fill="url(#mantleShadow)" opacity="0.5"/>
+
+  <!-- Mantle gold border/trim -->
+  <path d="M 110 172 Q 65 225 50 378 Q 83 455 132 486 Q 200 506 268 486 Q 317 455 350 378 Q 335 225 290 172" 
+        fill="none" stroke="#f5c842" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Tunic / dress body -->
+  <path d="M 148 220 Q 130 280 128 380 Q 145 430 170 460 Q 200 475 230 460 Q 255 430 272 380 Q 270 280 252 220 Q 230 200 200 198 Q 170 200 148 220 Z" 
+        fill="url(#tunicGrad)"/>
+
+  <!-- Tunic shadow -->
+  <path d="M 165 230 Q 150 285 150 375 Q 160 420 175 450 Q 164 420 162 375 Q 162 285 178 230 Z" 
+        fill="#b8941a" opacity="0.25"/>
+
+  <!-- Belt — gold sash -->
+  <ellipse cx="200" cy="298" rx="52" ry="8" fill="#c9900a" opacity="0.7"/>
+  <ellipse cx="200" cy="296" rx="50" ry="5" fill="#f5c842" opacity="0.5"/>
+
+  <!-- ── HEAD AND FACE ── -->
+  <!-- Mantle over head — hood effect -->
+  <path d="M 148 155 Q 140 130 145 115 Q 160 95 200 92 Q 240 95 255 115 Q 260 130 252 155 Q 230 145 200 143 Q 170 145 148 155 Z" 
+        fill="url(#mantleGrad)"/>
+
+  <!-- Neck -->
+  <rect x="188" y="168" width="24" height="22" rx="8" fill="url(#skinGrad)"/>
+
+  <!-- Face -->
+  <ellipse cx="200" cy="148" rx="38" ry="44" fill="url(#skinGrad)"/>
+
+  <!-- Face shadow/shading — subtle depth -->
+  <ellipse cx="185" cy="152" rx="14" ry="20" fill="#c88040" opacity="0.12"/>
+
+  <!-- Eyes — almond shaped, serene downcast gaze -->
+  <ellipse cx="187" cy="142" rx="7" ry="4.5" fill="#2a1a0a"/>
+  <ellipse cx="213" cy="142" rx="7" ry="4.5" fill="#2a1a0a"/>
+  <!-- Iris highlight -->
+  <ellipse cx="188" cy="141" rx="5" ry="3.5" fill="#4a2e10"/>
+  <ellipse cx="214" cy="141" rx="5" ry="3.5" fill="#4a2e10"/>
+  <!-- Pupils -->
+  <ellipse cx="188" cy="142" rx="3" ry="2.5" fill="#0d0808"/>
+  <ellipse cx="214" cy="142" rx="3" ry="2.5" fill="#0d0808"/>
+  <!-- Eye shine -->
+  <circle cx="190" cy="140.5" r="1.2" fill="white" opacity="0.7"/>
+  <circle cx="216" cy="140.5" r="1.2" fill="white" opacity="0.7"/>
+  <!-- Eyelids / eyebrows -->
+  <path d="M 181 137 Q 188 133 195 137" fill="none" stroke="#5a3010" stroke-width="1.5"/>
+  <path d="M 207 137 Q 214 133 221 137" fill="none" stroke="#5a3010" stroke-width="1.5"/>
+
+  <!-- Nose — subtle -->
+  <path d="M 197 152 Q 195 162 193 165 Q 197 168 200 167 Q 203 168 207 165 Q 205 162 203 152" 
+        fill="none" stroke="#c08050" stroke-width="1.2" opacity="0.6"/>
+
+  <!-- Lips — gentle smile -->
+  <path d="M 191 172 Q 200 177 209 172" fill="none" stroke="#c07050" stroke-width="2"/>
+  <path d="M 193 172 Q 200 175 207 172" fill="#d08060" opacity="0.4"/>
+
+  <!-- Halo — radiant gold circle behind head -->
+  <circle cx="200" cy="148" r="50" fill="none" stroke="#f5c842" stroke-width="2.5" opacity="0.8" filter="url(#haloGlow)"/>
+  <circle cx="200" cy="148" r="54" fill="none" stroke="#c9900a" stroke-width="1" opacity="0.5"/>
+  <!-- Twelve stars on halo -->
+  <g fill="#f5c842" filter="url(#glow)">
+    <polygon points="200,92 202,99 209,99 203,103 206,110 200,106 194,110 197,103 191,99 198,99" transform="rotate(0, 200, 148)" opacity="0.9"/>
+    <polygon points="200,92 202,99 209,99 203,103 206,110 200,106 194,110 197,103 191,99 198,99" transform="rotate(30, 200, 148)" opacity="0.9"/>
+    <polygon points="200,92 202,99 209,99 203,103 206,110 200,106 194,110 197,103 191,99 198,99" transform="rotate(60, 200, 148)" opacity="0.9"/>
+    <polygon points="200,92 202,99 209,99 203,103 206,110 200,106 194,110 197,103 191,99 198,99" transform="rotate(90, 200, 148)" opacity="0.9"/>
+    <polygon points="200,92 202,99 209,99 203,103 206,110 200,106 194,110 197,103 191,99 198,99" transform="rotate(120, 200, 148)" opacity="0.9"/>
+    <polygon points="200,92 202,99 209,99 203,103 206,110 200,106 194,110 197,103 191,99 198,99" transform="rotate(150, 200, 148)" opacity="0.9"/>
+    <polygon points="200,92 202,99 209,99 203,103 206,110 200,106 194,110 197,103 191,99 198,99" transform="rotate(180, 200, 148)" opacity="0.9"/>
+    <polygon points="200,92 202,99 209,99 203,103 206,110 200,106 194,110 197,103 191,99 198,99" transform="rotate(210, 200, 148)" opacity="0.9"/>
+    <polygon points="200,92 202,99 209,99 203,103 206,110 200,106 194,110 197,103 191,99 198,99" transform="rotate(240, 200, 148)" opacity="0.9"/>
+    <polygon points="200,92 202,99 209,99 203,103 206,110 200,106 194,110 197,103 191,99 198,99" transform="rotate(270, 200, 148)" opacity="0.9"/>
+    <polygon points="200,92 202,99 209,99 203,103 206,110 200,106 194,110 197,103 191,99 198,99" transform="rotate(300, 200, 148)" opacity="0.9"/>
+    <polygon points="200,92 202,99 209,99 203,103 206,110 200,106 194,110 197,103 191,99 198,99" transform="rotate(330, 200, 148)" opacity="0.9"/>
+  </g>
+
+  <!-- ── CROWN — ornate royal crown ── -->
+  <!-- Crown base band -->
+  <rect x="165" y="98" width="70" height="14" rx="3" fill="url(#crownGrad)" stroke="#a07010" stroke-width="0.8"/>
+  <!-- Crown points — 5 fleur-de-lis style -->
+  <polygon points="172,98 175,78 178,98" fill="url(#crownGrad)" stroke="#a07010" stroke-width="0.6"/>
+  <polygon points="183,98 186,72 189,98" fill="url(#crownGrad)" stroke="#a07010" stroke-width="0.6"/>
+  <polygon points="196,98 200,68 204,98" fill="url(#crownGrad)" stroke="#a07010" stroke-width="0.6"/>
+  <polygon points="211,98 214,72 217,98" fill="url(#crownGrad)" stroke="#a07010" stroke-width="0.6"/>
+  <polygon points="222,98 225,78 228,98" fill="url(#crownGrad)" stroke="#a07010" stroke-width="0.6"/>
+  <!-- Crown jewels -->
+  <circle cx="176" cy="106" r="3.5" fill="#d42020" stroke="#f5c842" stroke-width="0.8"/>
+  <circle cx="188" cy="104" r="3" fill="#2050d0" stroke="#f5c842" stroke-width="0.8"/>
+  <circle cx="200" cy="103" r="4" fill="#20a020" stroke="#f5c842" stroke-width="0.8"/>
+  <circle cx="212" cy="104" r="3" fill="#d42020" stroke="#f5c842" stroke-width="0.8"/>
+  <circle cx="224" cy="106" r="3.5" fill="#2050d0" stroke="#f5c842" stroke-width="0.8"/>
+  <!-- Crown top ball finials -->
+  <circle cx="175.5" cy="78" r="3" fill="#f5c842" stroke="#a07010" stroke-width="0.5"/>
+  <circle cx="186.5" cy="72" r="3" fill="#f5c842" stroke="#a07010" stroke-width="0.5"/>
+  <circle cx="200" cy="68" r="3.5" fill="#f5c842" stroke="#a07010" stroke-width="0.5"/>
+  <circle cx="213.5" cy="72" r="3" fill="#f5c842" stroke="#a07010" stroke-width="0.5"/>
+  <circle cx="224.5" cy="78" r="3" fill="#f5c842" stroke="#a07010" stroke-width="0.5"/>
+
+  <!-- ── CHILD JESUS — held in left arm ── -->
+  <!-- Jesus body/wrap — white garment with red stole -->
+  <path d="M 118 240 Q 108 270 112 310 Q 125 340 148 345 Q 165 342 170 320 Q 172 290 165 255 Q 155 228 138 225 Q 125 224 118 240 Z" 
+        fill="#f0f0e8" stroke="#c0b890" stroke-width="0.8"/>
+  <!-- Red sash on Jesus -->
+  <path d="M 115 270 Q 125 265 160 275 Q 160 285 125 282 Z" fill="#c02020" opacity="0.7"/>
+  <!-- Jesus head -->
+  <ellipse cx="140" cy="215" rx="22" ry="25" fill="url(#childSkinGrad)"/>
+  <!-- Jesus halo — small gold circle -->
+  <circle cx="140" cy="215" r="28" fill="none" stroke="#f5c842" stroke-width="1.5" opacity="0.7"/>
+  <!-- Jesus cross on halo -->
+  <line x1="140" y1="186" x2="140" y2="200" stroke="#f5c842" stroke-width="1.5" opacity="0.7"/>
+  <line x1="133" y1="192" x2="147" y2="192" stroke="#f5c842" stroke-width="1.5" opacity="0.7"/>
+  <!-- Jesus eyes — open, looking forward -->
+  <ellipse cx="134" cy="212" rx="4.5" ry="3.5" fill="#2a1a0a"/>
+  <ellipse cx="146" cy="212" rx="4.5" ry="3.5" fill="#2a1a0a"/>
+  <circle cx="135" cy="211" r="0.9" fill="white" opacity="0.7"/>
+  <circle cx="147" cy="211" r="0.9" fill="white" opacity="0.7"/>
+  <!-- Jesus nose and mouth -->
+  <path d="M 138 218 Q 140 221 142 218" fill="none" stroke="#c08050" stroke-width="1.2" opacity="0.7"/>
+  <!-- Jesus raised right hand blessing gesture -->
+  <path d="M 155 255 Q 168 245 172 238 Q 170 230 163 232 Q 160 238 155 248 Z" 
+        fill="url(#childSkinGrad)" stroke="#c08050" stroke-width="0.6"/>
+  <!-- Fingers indication -->
+  <path d="M 165 233 Q 170 225 167 222" fill="none" stroke="#c08050" stroke-width="1.2"/>
+  <path d="M 168 235 Q 174 228 171 225" fill="none" stroke="#c08050" stroke-width="1.2"/>
+  <!-- Jesus orb/globe in left hand -->
+  <circle cx="128" cy="300" r="13" fill="none" stroke="#f5c842" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="128" cy="300" r="11" fill="#1a2d5a" stroke="#c9900a" stroke-width="0.8"/>
+  <line x1="128" y1="289" x2="128" y2="311" stroke="#f5c842" stroke-width="1" opacity="0.6"/>
+  <line x1="117" y1="300" x2="139" y2="300" stroke="#f5c842" stroke-width="1" opacity="0.6"/>
+  <circle cx="128" cy="300" r="2.5" fill="#f5c842" opacity="0.8"/>
+
+  <!-- ── MARY'S ARMS ── -->
+  <!-- Left arm holding Child Jesus -->
+  <path d="M 148 220 Q 128 230 115 265 Q 110 290 118 310 Q 128 330 148 320 Q 160 310 165 290 Q 168 265 160 240 Z" 
+        fill="url(#tunicGrad)" opacity="0.9"/>
+  <!-- Mantle fold over left arm -->
+  <path d="M 110 260 Q 95 280 98 320 Q 105 355 130 365 Q 108 345 106 310 Q 104 280 118 258 Z" 
+        fill="url(#mantleGrad)" opacity="0.8"/>
+
+  <!-- Right arm extended outward — gesture of welcome -->
+  <path d="M 252 220 Q 270 235 285 265 Q 295 290 290 320 Q 280 345 262 350 Q 274 335 278 305 Q 282 278 270 255 Q 260 235 250 222 Z" 
+        fill="url(#tunicGrad)" opacity="0.9"/>
+  <!-- Right hand open palm -->
+  <ellipse cx="291" cy="328" rx="14" ry="10" fill="url(#skinGrad)"/>
+  <path d="M 282 320 Q 278 310 283 305 Q 290 302 295 308 Q 299 315 297 325" 
+        fill="none" stroke="#c08050" stroke-width="1"/>
+
+  <!-- ── STARS ON MANTLE (Salesian tradition) ── -->
+  <g fill="#f5c842" opacity="0.55" filter="url(#glow)">
+    <circle cx="75" cy="250" r="2.5"/>
+    <circle cx="88" cy="310" r="2"/>
+    <circle cx="70" cy="360" r="2.5"/>
+    <circle cx="325" cy="255" r="2.5"/>
+    <circle cx="312" cy="320" r="2"/>
+    <circle cx="330" cy="368" r="2.5"/>
+    <circle cx="95" cy="420" r="2"/>
+    <circle cx="305" cy="418" r="2"/>
+    <circle cx="160" cy="480" r="2.5"/>
+    <circle cx="240" cy="482" r="2.5"/>
+  </g>
+
+  <!-- ── PEDESTAL ── -->
+  <rect x="130" y="490" width="140" height="18" rx="5" fill="url(#pedestalGrad)" stroke="#c9900a" stroke-width="0.8"/>
+  <rect x="120" y="505" width="160" height="12" rx="4" fill="url(#pedestalGrad)" stroke="#c9900a" stroke-width="0.8"/>
+  <rect x="110" y="515" width="180" height="10" rx="3" fill="#7a5a20" stroke="#c9900a" stroke-width="0.5"/>
+
+  <!-- ── BANNER WITH TITLE ── -->
+  <!-- Ribbon/banner at bottom -->
+  <path d="M 60 538 Q 80 530 200 532 Q 320 530 340 538 Q 320 548 200 546 Q 80 548 60 538 Z" 
+        fill="url(#bannerGrad)" stroke="#7a5000" stroke-width="0.5"/>
+  <!-- Banner left curl -->
+  <path d="M 60 538 Q 48 534 50 540 Q 52 546 62 544" fill="#a07010" stroke="#7a5000" stroke-width="0.5"/>
+  <!-- Banner right curl -->
+  <path d="M 340 538 Q 352 534 350 540 Q 348 546 338 544" fill="#a07010" stroke="#7a5000" stroke-width="0.5"/>
+
+  <!-- ── TEXT ── -->
+  <!-- Subtitle AUXILIUM CHRISTIANORUM on banner -->
+  <text x="200" y="542" 
+        font-family="Georgia, 'Times New Roman', serif" 
+        font-size="9.5" 
+        font-style="italic"
+        font-weight="bold"
+        fill="#0d1a3a" 
+        text-anchor="middle"
+        letter-spacing="1.5">AUXILIUM CHRISTIANORUM</text>
+
+  <!-- Main title -->
+  <text x="200" y="525" 
+        font-family="Georgia, 'Times New Roman', serif" 
+        font-size="0" 
+        fill="#f5c842" 
+        text-anchor="middle"/>
+
+  <!-- TOP decorative title -->
+  <text x="200" y="30" 
+        font-family="Georgia, 'Times New Roman', serif" 
+        font-size="13" 
+        font-weight="bold"
+        fill="#f5c842" 
+        text-anchor="middle"
+        letter-spacing="2"
+        opacity="0.85">MARÍA AUXILIADORA</text>
+  <text x="200" y="46" 
+        font-family="Georgia, 'Times New Roman', serif" 
+        font-size="9" 
+        font-style="italic"
+        fill="#c9c0a0" 
+        text-anchor="middle"
+        letter-spacing="1"
+        opacity="0.75">AUXILIO DE LOS CRISTIANOS</text>
+
+  <!-- Decorative horizontal rule under top text -->
+  <line x1="100" y1="52" x2="300" y2="52" stroke="#c9900a" stroke-width="0.6" opacity="0.5"/>
+  <circle cx="200" cy="52" r="2" fill="#f5c842" opacity="0.7"/>
+
+</svg>

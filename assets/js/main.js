@@ -147,6 +147,7 @@ const INTERCESSORS = [
   { id: 'santalucia',        subdomain: 'santalucia',        chaplet: false, novena: true,  color: '#8a1a3a', short: { es: 'Santa Lucía',     en: 'St. Lucy'         }, name: { en: 'Saint Lucy',                             es: 'Santa Lucía'                              }, specialty: { es: 'Vista y enfermos',             en: 'Eyesight & the sick'         } },
   { id: 'santamonica',       subdomain: 'santamonica',       chaplet: false, novena: true,  color: '#1a3a6a', short: { es: 'Santa Mónica',    en: 'St. Monica'       }, name: { en: 'Saint Monica',                           es: 'Santa Mónica'                             }, specialty: { es: 'Madres y conversión',          en: 'Mothers & conversion'        } },
   { id: 'perpetuosocorro',   subdomain: 'perpetuosocorro',   chaplet: false, novena: true,  color: '#1a3a7a', short: { es: 'P. Socorro',      en: 'Perp. Help'       }, name: { en: 'Our Lady of Perpetual Help',              es: 'Virgen del Perpetuo Socorro'               }, specialty: { es: 'Auxilio y esperanza',          en: 'Help & hope'                 } },
+  { id: 'mariaauxiliadora',  subdomain: 'mariaauxiliadora',  chaplet: false, novena: true,  color: '#1a3a7a', short: { es: 'M. Auxiliadora',  en: 'Mary Help'        }, name: { en: 'Mary Help of Christians',               es: 'María Auxiliadora'                        }, specialty: { es: 'Auxilio y juventud salesiana', en: 'Help & Salesian youth'       } },
 ];
 
 // ── KEYWORD MAP — synonyms for prayer-intent search ──────
@@ -188,6 +189,7 @@ const KEYWORD_MAP = {
   sanagustin:        'conversion intelectuales teologia sabiduria duda fe estudios filosofia conversion intellectuals theology wisdom doubt faith studies philosophy',
   santalucia:        'ojos vista problemas oculares ciegos martires eyesight eyes blindness vision martyrs sick',
   perpetuosocorro:   'auxilio ayuda esperanza dificultades socorro urgente help hope difficulties urgent aid assistance',
+  mariaauxiliadora:  'don bosco salesianos juventud familia auxilio necesidades ayuda cholera milagro salesian youth family help needs miracle protection',
   sanexpedito:       'urgente rapido inmediato causas dificiles celeridad urgent fast immediate difficult causes speed',
   sanlorenzo:        'pobres libreros archivistas cocineros diaconos poor librarians archivists cooks deacons',
   santaines:         'pureza castidad jovenes virgenes purity chastity youth virgins girls',
