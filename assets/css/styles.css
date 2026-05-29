@@ -754,7 +754,7 @@ body {
 .quick-nav {
   background: var(--bg-surface);
   border-bottom: 1px solid var(--border);
-  padding: 0.7rem 0 0.85rem;
+  padding: 0.5rem 0 0.6rem;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
@@ -762,16 +762,18 @@ body {
 .quick-nav::-webkit-scrollbar { display: none; }
 
 .quick-nav-inner {
-  display: flex;
-  gap: 0.5rem;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-auto-flow: column;
+  gap: 0.25rem 0.45rem;
   padding: 0.2rem 1rem;
   width: max-content;
   margin: 0 auto;
 }
 @media (min-width: 940px) {
   .quick-nav-inner {
-    justify-content: center;
-    width: auto;
+    width: fit-content;
+    margin: 0 auto;
   }
 }
 
