@@ -23,18 +23,18 @@
   <polygon points="202,265 425,610 285,610" fill="url(#sm-r2)" filter="url(#sm-gl)" opacity="0.72"/>
   <polygon points="202,265 375,600 315,600" fill="#d0dce8" opacity="0.36"/>
   <!-- Wings -->
-  <path d="M168,173 Q118,140 48,62 Q22,44 14,70 Q58,94 112,138 Q144,162 168,182 Z" fill="#8898d8" opacity="0.74"/>
-  <path d="M168,178 Q128,158 72,108 Q52,94 52,116 Q92,138 132,168 Q152,180 168,188 Z" fill="#b8c8e8" opacity="0.64"/>
-  <path d="M168,184 Q138,176 104,160 Q88,152 92,168 Q120,172 150,185 Q162,189 168,194 Z" fill="#6878c0" opacity="0.58"/>
-  <path d="M168,179 Q122,152 65,98" stroke="#4868d0" stroke-width="0.9" fill="none" opacity="0.42"/>
-  <path d="M168,181 Q118,158 68,112" stroke="#4868d0" stroke-width="0.9" fill="none" opacity="0.36"/>
-  <path d="M168,183 Q124,164 82,132" stroke="#4868d0" stroke-width="0.9" fill="none" opacity="0.28"/>
-  <path d="M232,173 Q282,140 352,62 Q378,44 386,70 Q342,94 288,138 Q256,162 232,182 Z" fill="#8898d8" opacity="0.74"/>
-  <path d="M232,178 Q272,158 328,108 Q348,94 348,116 Q308,138 268,168 Q248,180 232,188 Z" fill="#b8c8e8" opacity="0.64"/>
-  <path d="M232,184 Q262,176 296,160 Q312,152 308,168 Q280,172 250,185 Q238,189 232,194 Z" fill="#6878c0" opacity="0.58"/>
-  <path d="M232,179 Q278,152 335,98" stroke="#4868d0" stroke-width="0.9" fill="none" opacity="0.42"/>
-  <path d="M232,181 Q282,158 332,112" stroke="#4868d0" stroke-width="0.9" fill="none" opacity="0.36"/>
-  <path d="M232,183 Q276,164 318,132" stroke="#4868d0" stroke-width="0.9" fill="none" opacity="0.28"/>
+  <path d="M168,178 Q100,115 12,10 Q-2,-2 8,32 Q55,62 118,145 Q148,168 168,192 Z" fill="#8898d8" opacity="0.74"/>
+  <path d="M168,183 Q108,138 30,38 Q12,24 24,52 Q72,80 128,158 Q152,175 168,195 Z" fill="#b8c8e8" opacity="0.64"/>
+  <path d="M168,188 Q128,162 68,105 Q50,92 58,118 Q100,135 148,178 Q162,187 168,200 Z" fill="#6878c0" opacity="0.58"/>
+  <path d="M168,183 Q105,132 18,18" stroke="#4868d0" stroke-width="1.0" fill="none" opacity="0.44"/>
+  <path d="M168,185 Q112,145 38,52" stroke="#4868d0" stroke-width="1.0" fill="none" opacity="0.37"/>
+  <path d="M168,187 Q122,158 72,108" stroke="#4868d0" stroke-width="1.0" fill="none" opacity="0.28"/>
+  <path d="M232,178 Q300,115 388,10 Q402,-2 392,32 Q345,62 282,145 Q252,168 232,192 Z" fill="#8898d8" opacity="0.74"/>
+  <path d="M232,183 Q292,138 370,38 Q388,24 376,52 Q328,80 272,158 Q248,175 232,195 Z" fill="#b8c8e8" opacity="0.64"/>
+  <path d="M232,188 Q272,162 332,105 Q350,92 342,118 Q300,135 252,178 Q238,187 232,200 Z" fill="#6878c0" opacity="0.58"/>
+  <path d="M232,183 Q295,132 382,18" stroke="#4868d0" stroke-width="1.0" fill="none" opacity="0.44"/>
+  <path d="M232,185 Q288,145 362,52" stroke="#4868d0" stroke-width="1.0" fill="none" opacity="0.37"/>
+  <path d="M232,187 Q278,158 328,108" stroke="#4868d0" stroke-width="1.0" fill="none" opacity="0.28"/>
   <!-- Silver armor (breastplate) -->
   <path d="M172,155 Q148,200 140,350 Q200,368 260,350 Q252,200 228,155 Z" fill="#9090a8" opacity="0.78"/>
   <!-- Red/purple battle cape over shoulder -->
