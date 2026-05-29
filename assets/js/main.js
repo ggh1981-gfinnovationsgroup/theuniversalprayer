@@ -15,6 +15,7 @@ const i18n = {
     feast_day:          'Feast Day:',
     tab_prayer:         'Prayer',
     tab_history:        'History',
+    tab_miracles:       'Miracles',
     tab_novena:         'Novena',
     tab_chaplet:        'Chaplet',
     tab_litany:         'Litany',
@@ -41,6 +42,7 @@ const i18n = {
     feast_day:          'Día festivo:',
     tab_prayer:         'Oración',
     tab_history:        'Historia',
+    tab_miracles:       'Milagros',
     tab_novena:         'Novena',
     tab_chaplet:        'Coronilla',
     tab_litany:         'Letanías',
@@ -589,9 +591,12 @@ function renderIntercessorContent(data) {
   const prayerEl = document.getElementById('prayerText');
   if (prayerEl) prayerEl.innerHTML = paragraphify(data.prayer[lang]);
 
-  // History
+  // History — split bio from numbered anecdotes
+  const { bio, anecdotes } = splitHistory(data.history[lang]);
   const historyEl = document.getElementById('historyText');
-  if (historyEl) historyEl.innerHTML = paragraphify(data.history[lang]);
+  if (historyEl) historyEl.innerHTML = paragraphify(bio);
+  const miraclesEl = document.getElementById('miraclesText');
+  if (miraclesEl) miraclesEl.innerHTML = anecdotes ? miraclify(anecdotes) : '';
 
   // Novena
   if (data.novena && data.novena.length > 0) {
@@ -636,6 +641,41 @@ function paragraphify(text) {
     .split(/\n{2,}/)
     .map(p => `<p>${p.replace(/\n/g, '<br />')}</p>`)
     .join('');
+}
+
+// Splits history text into biographical paragraphs + numbered anecdotes
+function splitHistory(text) {
+  const parts = text.split(/\n\n/);
+  let bioEnd = parts.length;
+  for (let i = 0; i < parts.length; i++) {
+    if (/^\d+\.\s/.test(parts[i].trim())) {
+      bioEnd = i;
+      break;
+    }
+  }
+  return {
+    bio: parts.slice(0, bioEnd).join('\n\n'),
+    anecdotes: parts.slice(bioEnd).join('\n\n')
+  };
+}
+
+// Renders numbered anecdotes with styled header per item
+function miraclify(text) {
+  return text.split(/\n\n/).map(block => {
+    const trimmed = block.trim();
+    // Match "1. Title: body" or "1. Title\nbody"
+    const m = trimmed.match(/^(\d+)\.\s+([^:\n]+)(?::([\s\S]*))?$/);
+    if (m) {
+      const num = m[1];
+      const title = m[2].trim();
+      const body = (m[3] || '').trim();
+      return `<div class="miracle-item">`
+        + `<div class="miracle-header"><span class="miracle-num">${num}</span><span class="miracle-title">${title}</span></div>`
+        + (body ? `<p class="miracle-body">${body.replace(/\n/g, '<br />')}</p>` : '')
+        + `</div>`;
+    }
+    return `<p>${trimmed.replace(/\n/g, '<br />')}</p>`;
+  }).join('');
 }
 
 // ── CHAPLET PLAYER ─────────────────────────────────
