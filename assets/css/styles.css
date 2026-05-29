@@ -1654,6 +1654,13 @@ body {
   margin-bottom: 1rem;
   align-items: flex-start;
 }
+.ios-step-intro {
+  background: rgba(0,122,255,0.08);
+  border: 1px solid rgba(0,122,255,0.2);
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 1.1rem;
+}
 .ios-step-num {
   flex-shrink: 0;
   width: 24px;

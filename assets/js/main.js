@@ -1417,15 +1417,21 @@ function initMenu() {
 
     if (!isInStandaloneMode) {
       if (isIos) {
-        // iOS: always show button, tap opens instructions
+        // iOS: tap opens native share sheet automatically; modal is fallback
         _installBtn.style.display = '';
-        _installBtn.addEventListener('click', () => {
-          if (_iosModal) {
+        _installBtn.addEventListener('click', async () => {
+          if (navigator.share) {
+            try {
+              await navigator.share({
+                title: currentLang === 'es' ? 'La Oración Universal' : 'The Universal Prayer',
+                url: window.location.href,
+              });
+            } catch (_) {
+              // User dismissed or error — show manual modal as fallback
+              if (_iosModal) _iosModal.style.display = 'flex';
+            }
+          } else if (_iosModal) {
             _iosModal.style.display = 'flex';
-            // Sync language visibility
-            _iosModal.querySelectorAll('[data-lang]').forEach(el => {
-              el.style.display = el.getAttribute('data-lang') === currentLang ? '' : 'none';
-            });
           }
         });
       } else {
