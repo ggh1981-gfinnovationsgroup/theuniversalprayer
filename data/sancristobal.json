@@ -1,177 +1,121 @@
 {
-    "id":  "sancristobal",
-    "name":  {
-                 "es":  "San Crist�bal",
-                 "en":  "Saint Christopher"
-             },
-    "color":  "#1a5a3a",
-    "image":  "assets/images/sancristobal.svg",
-    "specialty":  {
-                      "es":  "Viajeros y conductores",
-                      "en":  "Travelers \u0026 drivers"
-                  },
-    "shortPrayer":  {
-                        "es":  "San Crist�bal, protector de los viajeros, intercede por nosotros.",
-                        "en":  "Saint Christopher, protector of travelers, intercede for us."
-                    },
-    "history":  {
-                    "es":  "Cristobal, cuyo nombre significa \u0027el que lleva a Cristo\u0027, es uno de los santos mas venerados de la tradicion cristiana, aunque su existencia historica es debatida. Segun la leyenda mas difundida, era un hombre de enorme estatura y fuerza fisica que decidio ponerse al servicio del rey mas poderoso del mundo; tras descubrir que ese rey temblaba ante el diablo, y que el diablo huia de la Cruz, busco finalmente a Cristo. Un ermitano le sugirió que sirviera a Dios ayudando a los viajeros a cruzar un peligroso vado de un rio.\n\nSegun el relato hagiografico mas conocido, un dia un nino se presento en la orilla y pidio ser llevado al otro lado. Cristobal lo tomo sobre sus hombros, pero en medio del rio el nino se fue haciendo cada vez mas pesado, hasta que el gigante creyó que iba a ahogarse. Al llegar a la otra orilla, el nino le revelo su identidad: era Jesucristo, y su peso era el peso del mundo entero. El nino le ordeno plantar su baston en tierra; al dia siguiente habia brotado como un arbol cargado de frutos. Este relato simbolico dio origen al nombre de Cristoforo: el portador de Cristo.\n\nAunque el papa Pablo VI lo reemovio del calendario romano universal en 1969 por la incertidumbre historica sobre su existencia, San Cristobal sigue siendo ampliamente venerado en la Iglesia local y no fue \u0027descanonizado\u0027: simplemente su celebracion quedo a discrecion de las Iglesias locales. Su imagen —un gigante con un nino sobre los hombros cruzando un rio— es uno de los iconos mas reconocibles del arte cristiano popular y adornas el interior de millones de automoviles en todo el mundo.\n\nSan Cristobal es el patron universal de los viajeros, los conductores de automovil, los camioneros, los motoristas y todos los que recorren caminos peligrosos. En los paises de tradicion hispana y en Brasil su medalla y su estampita se encuentran en casi todo vehiculo, tienda y hogar. La devocion persiste con fuerza porque responde a una necesidad humana perenne: saber que hay una presencia protectora junto al viajero en los caminos inciertos de la vida.",
-                    "en":  "Christopher, whose name means \u0027the one who carries Christ,\u0027 is one of the most venerated saints in Christian tradition, though his historical existence is debated. According to the most widespread legend, he was a man of enormous stature and physical strength who decided to place himself in the service of the most powerful king in the world; upon discovering that this king trembled before the devil, and that the devil fled before the Cross, he finally sought Christ. A hermit suggested that he serve God by helping travelers cross a dangerous ford in a river.\n\nAccording to the best-known hagiographic account, one day a child presented himself on the bank and asked to be carried across. Christopher lifted him onto his shoulders, but in the middle of the river the child grew heavier and heavier, until the giant thought he would drown. Upon reaching the other bank, the child revealed his identity: he was Jesus Christ, and his weight was the weight of the entire world. The child ordered him to plant his staff in the ground; by the next day it had sprouted as a tree laden with fruit. This symbolic account gave rise to the name Christophoros: the bearer of Christ.\n\nAlthough Pope Paul VI removed him from the universal Roman calendar in 1969 due to historical uncertainty about his existence, Saint Christopher remains widely venerated in the local Church and was not \u0027decanonized\u0027: his celebration was simply left to the discretion of local Churches. His image — a giant with a child on his shoulders crossing a river — is one of the most recognizable icons of popular Christian art and adorns the interior of millions of automobiles worldwide.\n\nSaint Christopher is the universal patron of travelers, automobile drivers, truck drivers, motorcyclists, and all who travel dangerous roads. In Spanish-speaking countries and Brazil, his medal and holy card are found in almost every vehicle, shop, and home. The devotion persists strongly because it answers a perennial human need: to know that a protective presence accompanies the traveler on the uncertain roads of life."
-                },
-    "novena":  {
-                   "title":  {
-                                 "es":  "Novena a San Crist�bal",
-                                 "en":  "Novena to Saint Christopher"
-                             },
-                   "days":  [
-                                {
-                                    "day":  1,
-                                    "intention":  {
-                                                      "es":  "Por la protecci�n en los viajes",
-                                                      "en":  "For protection while traveling"
-                                                  },
-                                    "prayer":  {
-                                                   "es":  "San Crist�bal, que cargaste a Cristo en tus hombros al cruzar el r�o, intercede por todos los que viajan hoy por tierra, mar o aire. Que lleguen a su destino sanos y salvos bajo la protecci�n divina. Am�n.",
-                                                   "en":  "Saint Christopher, who carried Christ on your shoulders crossing the river, intercede for all who travel today by land, sea, or air. May they arrive safely at their destination under divine protection. Amen."
-                                               }
-                                },
-                                {
-                                    "day":  2,
-                                    "intention":  {
-                                                      "es":  "Por los conductores y transportistas",
-                                                      "en":  "For drivers and transport workers"
-                                                  },
-                                    "prayer":  {
-                                                   "es":  "San Crist�bal, patrono de los conductores, intercede por todos los que conducen veh�culos cada d�a. Que conduzcan con prudencia, respeto y responsabilidad, y que sus rutas est�n protegidas por Dios. Am�n.",
-                                                   "en":  "Saint Christopher, patron of drivers, intercede for all who drive vehicles each day. May they drive with prudence, respect, and responsibility, and may their routes be protected by God. Amen."
-                                               }
-                                },
-                                {
-                                    "day":  3,
-                                    "intention":  {
-                                                      "es":  "Por los que sirven a los dem�s",
-                                                      "en":  "For those who serve others"
-                                                  },
-                                    "prayer":  {
-                                                   "es":  "Crist�bal servidor, que dedicaste tu vida a ayudar a otros a cruzar el r�o, intercede por todos los que se entregan al servicio de los dem�s. Que en cada persona que ayudan encuentren el rostro de Cristo. Am�n.",
-                                                   "en":  "Christopher the servant, who dedicated your life to helping others cross the river, intercede for all who give themselves to serving others. May they find in every person they help the face of Christ. Amen."
-                                               }
-                                },
-                                {
-                                    "day":  4,
-                                    "intention":  {
-                                                      "es":  "Por los deportistas y aventureros",
-                                                      "en":  "For athletes and adventurers"
-                                                  },
-                                    "prayer":  {
-                                                   "es":  "San Crist�bal de gran estatura y fortaleza, intercede por todos los deportistas, monta�istas, exploradores y aventureros. Que pongan su fortaleza f�sica al servicio del bien y encuentren en Cristo su verdadero campe�n. Am�n.",
-                                                   "en":  "Saint Christopher of great stature and strength, intercede for all athletes, mountaineers, explorers, and adventurers. May they put their physical strength at the service of good and find in Christ their true champion. Amen."
-                                               }
-                                },
-                                {
-                                    "day":  5,
-                                    "intention":  {
-                                                      "es":  "Por los emigrantes y refugiados",
-                                                      "en":  "For migrants and refugees"
-                                                  },
-                                    "prayer":  {
-                                                   "es":  "San Crist�bal, que ayudaste a los m�s vulnerables a cruzar las aguas peligrosas, intercede por todos los emigrantes y refugiados que arriesgan su vida buscando un futuro mejor. Que sean acogidos con dignidad. Am�n.",
-                                                   "en":  "Saint Christopher, who helped the most vulnerable cross dangerous waters, intercede for all migrants and refugees who risk their lives seeking a better future. May they be received with dignity. Amen."
-                                               }
-                                },
-                                {
-                                    "day":  6,
-                                    "intention":  {
-                                                      "es":  "Por los bomberos, polic�as y rescatistas",
-                                                      "en":  "For firefighters, police, and rescue workers"
-                                                  },
-                                    "prayer":  {
-                                                   "es":  "San Crist�bal, que arriesgaste tu propia seguridad para ayudar a otros, intercede por todos los que trabajan como bomberos, polic�as, socorristas y rescatistas. Que vuelvan sanos a sus hogares cada d�a. Am�n.",
-                                                   "en":  "Saint Christopher, who risked your own safety to help others, intercede for all who work as firefighters, police, paramedics, and rescue workers. May they return home safe each day. Amen."
-                                               }
-                                },
-                                {
-                                    "day":  7,
-                                    "intention":  {
-                                                      "es":  "Por las misiones y misioneros",
-                                                      "en":  "For missions and missionaries"
-                                                  },
-                                    "prayer":  {
-                                                   "es":  "Portador de Cristo, que llevaste literalmente a Cristo en tus hombros, intercede por todos los misioneros que llevan a Cristo en sus palabras y en sus obras a los rincones m�s lejanos del mundo. Am�n.",
-                                                   "en":  "Bearer of Christ, who literally carried Christ on your shoulders, intercede for all missionaries who carry Christ in their words and deeds to the farthest corners of the world. Amen."
-                                               }
-                                },
-                                {
-                                    "day":  8,
-                                    "intention":  {
-                                                      "es":  "Por los que sienten el peso de la vida",
-                                                      "en":  "For those who feel the weight of life"
-                                                  },
-                                    "prayer":  {
-                                                   "es":  "San Crist�bal, que conociste el peso aplastante del Ni�o que era el Se�or del universo, intercede por todos los que sienten el peso de la vida aplastante. Que comprendan que Cristo los acompa�a y lleva sus cargas con ellos. Am�n.",
-                                                   "en":  "Saint Christopher, who experienced the crushing weight of the Child who was the Lord of the universe, intercede for all who feel the crushing weight of life. May they understand that Christ accompanies them and carries their burdens with them. Amen."
-                                               }
-                                },
-                                {
-                                    "day":  9,
-                                    "intention":  {
-                                                      "es":  "Por ser portadores de Cristo a los dem�s",
-                                                      "en":  "For being bearers of Christ to others"
-                                                  },
-                                    "prayer":  {
-                                                   "es":  "San Crist�bal, Christ�foros, portador de Cristo, ens��anos a ser tambi�n nosotros portadores de Cristo: en nuestra sonrisa, en nuestra ayuda, en nuestra oraci�n por los dem�s, hasta que todos los que nos rodean puedan encontrar a Cristo a trav�s de nosotros. Am�n.",
-                                                   "en":  "Saint Christopher, Christophoros, bearer of Christ, teach us to also be bearers of Christ: in our smile, in our help, in our prayer for others, until all around us may find Christ through us. Amen."
-                                               }
-                                }
-                            ]
-               },
-    "litany":  {
-                   "title":  {
-                                 "es":  "Letan�a de San Crist�bal",
-                                 "en":  "Litany of Saint Christopher"
-                             },
-                   "invocations":  [
-                                       {
-                                           "es":  "San Crist�bal, portador de Cristo,",
-                                           "en":  "Saint Christopher, bearer of Christ,"
-                                       },
-                                       {
-                                           "es":  "San Crist�bal, protector de los viajeros,",
-                                           "en":  "Saint Christopher, protector of travelers,"
-                                       },
-                                       {
-                                           "es":  "San Crist�bal, patrono de los conductores,",
-                                           "en":  "Saint Christopher, patron of drivers,"
-                                       },
-                                       {
-                                           "es":  "San Crist�bal, auxiliador en el peligro,",
-                                           "en":  "Saint Christopher, helper in danger,"
-                                       },
-                                       {
-                                           "es":  "San Crist�bal, uno de los catorce santos auxiliadores,",
-                                           "en":  "Saint Christopher, one of the Fourteen Holy Helpers,"
-                                       },
-                                       {
-                                           "es":  "San Crist�bal, que reconociste a Cristo en el ni�o,",
-                                           "en":  "Saint Christopher, who recognized Christ in the child,"
-                                       },
-                                       {
-                                           "es":  "San Crist�bal, m�rtir valiente,",
-                                           "en":  "Saint Christopher, brave martyr,"
-                                       },
-                                       {
-                                           "es":  "San Crist�bal, patrono de los emigrantes,",
-                                           "en":  "Saint Christopher, patron of migrants,"
-                                       }
-                                   ],
-                   "response":  {
-                                    "es":  "Ruega por nosotros.",
-                                    "en":  "Pray for us."
-                                }
-               },
-    "miracles":  {
-                     "available":  true,
-                     "es":  "1. EL GIGANTE QUE CARGO AL NINO JESUS\nSegun la leyenda hagiografica, un hombre de tamano y fuerza extraordinarios llamado Reprobus decidio servir solo al ser mas poderoso del mundo. Primero sirvio a un rey, hasta que vio que el rey temblaba ante el demonio. Luego busco al demonio, hasta que vio que el demonio temblaba ante la cruz. Un ermitano le aconsejo que sirviera a Cristo ayudando a los viajeros a cruzar un rio peligroso. Cierta noche, un nino le pidio que lo cruzara. A mitad del rio, el peso del nino se volvio insoportable, como si cargara el mundo entero. Al llegar a la orilla, el nino le dijo: «No te maravilles: cargaste al que sostiene el mundo. Yo soy Jesucristo, a quien sirves». Y desaparecio.\n\n2. LA VARA QUE FLORECE: EL SIGNO DE DIOS\nAntes de desaparecer, el Nino Jesus le habia dado a Reprobus una instruccion: «Clava tu vara en la tierra junto al rio». A la manana siguiente, la vara —un tronco seco y cortado— habia brotado raices, ramas y frutos. El milagro confirmo la identidad del Nino. Reprobus tomo el nombre de Cristobal —«el que lleva a Cristo»— y predico el Evangelio con fervor hasta ser arrestado por el gobernador romano Dagno en Licia. Se dice que dos mil paganos se convirtieron al ver los milagros de Cristobal y que el gobernador envio a cuatrocientos soldados a arrestarlo, pero estos cayeron a sus pies pidiendo el bautismo.\n\n3. EL PATRON CONTRA LAS TORMENTAS Y LOS PELIGROS DEL CAMINO\nDesde la Edad Media, la devocion a San Cristobal se difundio por toda Europa como el protector de los viajeros contra los peligros del camino, las tormentas y los accidentes. La tradicion afirmaba que quien viera su imagen no moriria de muerte subita ese dia. Las estatuas de San Cristobal se colocaron en los cruces de los caminos medievales, en los puentes y en los umbrales de los pueblos. Hoy su imagen viaja en millones de automoviles y aviones en todo el mundo. Millones de testimonios de personas protegidas en accidentes, tormentas y naufragios han mantenido viva la devocion al «portador de Cristo» a traves de los siglos.",
-                     "en":  "1. THE GIANT WHO CARRIED THE CHILD JESUS\nAccording to hagiographic legend, a man of extraordinary size and strength named Reprobus decided to serve only the most powerful being in the world. He first served a king, until he saw the king tremble before the devil. He then sought the devil, until he saw the devil tremble before the cross. A hermit advised him to serve Christ by helping travelers cross a dangerous river. One night, a child asked him to carry him across. Midway through the river, the child\u0027s weight became unbearable, as if he were carrying the entire world. On reaching the far bank, the child told him: \"Do not marvel: you have carried the one who sustains the world. I am Jesus Christ, whom you serve.\" And he disappeared.\n\n2. THE FLOWERING STAFF: THE SIGN OF GOD\nBefore disappearing, the Child Jesus had given Reprobus an instruction: \"Plant your staff in the ground beside the river.\" The next morning, the staff — a dry, cut log — had sprouted roots, branches, and fruit. The miracle confirmed the child\u0027s identity. Reprobus took the name Christopher — \"the one who carries Christ\" — and preached the Gospel with fervor until being arrested by the Roman governor Dagno in Lycia. It is said that two thousand pagans converted upon seeing Christopher\u0027s miracles, and that the governor sent four hundred soldiers to arrest him, but these fell at his feet asking for baptism.\n\n3. THE PATRON AGAINST STORMS AND THE DANGERS OF THE ROAD\nFrom the Middle Ages, devotion to Saint Christopher spread throughout Europe as the protector of travelers against the perils of the road, storms, and accidents. Tradition held that whoever saw his image would not die of sudden death that day. Statues of Saint Christopher were placed at medieval crossroads, on bridges, and at village entrances. Today his image travels in millions of automobiles and airplanes worldwide. Millions of testimonies from people protected in accidents, storms, and shipwrecks have kept the devotion to the \"Christ-bearer\" alive through the centuries."
-                 }
+  "id": "sancristobal",
+  "name": {
+    "es": "San Crist�bal",
+    "en": "Saint Christopher"
+  },
+  "color": "#1a5a3a",
+  "image": "assets/images/sancristobal.svg",
+  "specialty": {
+    "es": "Viajeros y conductores",
+    "en": "Travelers & drivers"
+  },
+  "prayer": {
+    "es": "San Crist�bal, protector de los viajeros, intercede por nosotros.",
+    "en": "Saint Christopher, protector of travelers, intercede for us."
+  },
+  "history": {
+    "es": "Cristobal, cuyo nombre significa 'el que lleva a Cristo', es uno de los santos mas venerados de la tradicion cristiana, aunque su existencia historica es debatida. Segun la leyenda mas difundida, era un hombre de enorme estatura y fuerza fisica que decidio ponerse al servicio del rey mas poderoso del mundo; tras descubrir que ese rey temblaba ante el diablo, y que el diablo huia de la Cruz, busco finalmente a Cristo. Un ermitano le sugirió que sirviera a Dios ayudando a los viajeros a cruzar un peligroso vado de un rio.\n\nSegun el relato hagiografico mas conocido, un dia un nino se presento en la orilla y pidio ser llevado al otro lado. Cristobal lo tomo sobre sus hombros, pero en medio del rio el nino se fue haciendo cada vez mas pesado, hasta que el gigante creyó que iba a ahogarse. Al llegar a la otra orilla, el nino le revelo su identidad: era Jesucristo, y su peso era el peso del mundo entero. El nino le ordeno plantar su baston en tierra; al dia siguiente habia brotado como un arbol cargado de frutos. Este relato simbolico dio origen al nombre de Cristoforo: el portador de Cristo.\n\nAunque el papa Pablo VI lo reemovio del calendario romano universal en 1969 por la incertidumbre historica sobre su existencia, San Cristobal sigue siendo ampliamente venerado en la Iglesia local y no fue 'descanonizado': simplemente su celebracion quedo a discrecion de las Iglesias locales. Su imagen —un gigante con un nino sobre los hombros cruzando un rio— es uno de los iconos mas reconocibles del arte cristiano popular y adornas el interior de millones de automoviles en todo el mundo.\n\nSan Cristobal es el patron universal de los viajeros, los conductores de automovil, los camioneros, los motoristas y todos los que recorren caminos peligrosos. En los paises de tradicion hispana y en Brasil su medalla y su estampita se encuentran en casi todo vehiculo, tienda y hogar. La devocion persiste con fuerza porque responde a una necesidad humana perenne: saber que hay una presencia protectora junto al viajero en los caminos inciertos de la vida.",
+    "en": "Christopher, whose name means 'the one who carries Christ,' is one of the most venerated saints in Christian tradition, though his historical existence is debated. According to the most widespread legend, he was a man of enormous stature and physical strength who decided to place himself in the service of the most powerful king in the world; upon discovering that this king trembled before the devil, and that the devil fled before the Cross, he finally sought Christ. A hermit suggested that he serve God by helping travelers cross a dangerous ford in a river.\n\nAccording to the best-known hagiographic account, one day a child presented himself on the bank and asked to be carried across. Christopher lifted him onto his shoulders, but in the middle of the river the child grew heavier and heavier, until the giant thought he would drown. Upon reaching the other bank, the child revealed his identity: he was Jesus Christ, and his weight was the weight of the entire world. The child ordered him to plant his staff in the ground; by the next day it had sprouted as a tree laden with fruit. This symbolic account gave rise to the name Christophoros: the bearer of Christ.\n\nAlthough Pope Paul VI removed him from the universal Roman calendar in 1969 due to historical uncertainty about his existence, Saint Christopher remains widely venerated in the local Church and was not 'decanonized': his celebration was simply left to the discretion of local Churches. His image — a giant with a child on his shoulders crossing a river — is one of the most recognizable icons of popular Christian art and adorns the interior of millions of automobiles worldwide.\n\nSaint Christopher is the universal patron of travelers, automobile drivers, truck drivers, motorcyclists, and all who travel dangerous roads. In Spanish-speaking countries and Brazil, his medal and holy card are found in almost every vehicle, shop, and home. The devotion persists strongly because it answers a perennial human need: to know that a protective presence accompanies the traveler on the uncertain roads of life."
+  },
+  "novena": [
+    {
+      "day": 1,
+      "es": "Por la protecci�n en los viajes\n\nSan Crist�bal, que cargaste a Cristo en tus hombros al cruzar el r�o, intercede por todos los que viajan hoy por tierra, mar o aire. Que lleguen a su destino sanos y salvos bajo la protecci�n divina. Am�n.",
+      "en": "For protection while traveling\n\nSaint Christopher, who carried Christ on your shoulders crossing the river, intercede for all who travel today by land, sea, or air. May they arrive safely at their destination under divine protection. Amen."
+    },
+    {
+      "day": 2,
+      "es": "Por los conductores y transportistas\n\nSan Crist�bal, patrono de los conductores, intercede por todos los que conducen veh�culos cada d�a. Que conduzcan con prudencia, respeto y responsabilidad, y que sus rutas est�n protegidas por Dios. Am�n.",
+      "en": "For drivers and transport workers\n\nSaint Christopher, patron of drivers, intercede for all who drive vehicles each day. May they drive with prudence, respect, and responsibility, and may their routes be protected by God. Amen."
+    },
+    {
+      "day": 3,
+      "es": "Por los que sirven a los dem�s\n\nCrist�bal servidor, que dedicaste tu vida a ayudar a otros a cruzar el r�o, intercede por todos los que se entregan al servicio de los dem�s. Que en cada persona que ayudan encuentren el rostro de Cristo. Am�n.",
+      "en": "For those who serve others\n\nChristopher the servant, who dedicated your life to helping others cross the river, intercede for all who give themselves to serving others. May they find in every person they help the face of Christ. Amen."
+    },
+    {
+      "day": 4,
+      "es": "Por los deportistas y aventureros\n\nSan Crist�bal de gran estatura y fortaleza, intercede por todos los deportistas, monta�istas, exploradores y aventureros. Que pongan su fortaleza f�sica al servicio del bien y encuentren en Cristo su verdadero campe�n. Am�n.",
+      "en": "For athletes and adventurers\n\nSaint Christopher of great stature and strength, intercede for all athletes, mountaineers, explorers, and adventurers. May they put their physical strength at the service of good and find in Christ their true champion. Amen."
+    },
+    {
+      "day": 5,
+      "es": "Por los emigrantes y refugiados\n\nSan Crist�bal, que ayudaste a los m�s vulnerables a cruzar las aguas peligrosas, intercede por todos los emigrantes y refugiados que arriesgan su vida buscando un futuro mejor. Que sean acogidos con dignidad. Am�n.",
+      "en": "For migrants and refugees\n\nSaint Christopher, who helped the most vulnerable cross dangerous waters, intercede for all migrants and refugees who risk their lives seeking a better future. May they be received with dignity. Amen."
+    },
+    {
+      "day": 6,
+      "es": "Por los bomberos, polic�as y rescatistas\n\nSan Crist�bal, que arriesgaste tu propia seguridad para ayudar a otros, intercede por todos los que trabajan como bomberos, polic�as, socorristas y rescatistas. Que vuelvan sanos a sus hogares cada d�a. Am�n.",
+      "en": "For firefighters, police, and rescue workers\n\nSaint Christopher, who risked your own safety to help others, intercede for all who work as firefighters, police, paramedics, and rescue workers. May they return home safe each day. Amen."
+    },
+    {
+      "day": 7,
+      "es": "Por las misiones y misioneros\n\nPortador de Cristo, que llevaste literalmente a Cristo en tus hombros, intercede por todos los misioneros que llevan a Cristo en sus palabras y en sus obras a los rincones m�s lejanos del mundo. Am�n.",
+      "en": "For missions and missionaries\n\nBearer of Christ, who literally carried Christ on your shoulders, intercede for all missionaries who carry Christ in their words and deeds to the farthest corners of the world. Amen."
+    },
+    {
+      "day": 8,
+      "es": "Por los que sienten el peso de la vida\n\nSan Crist�bal, que conociste el peso aplastante del Ni�o que era el Se�or del universo, intercede por todos los que sienten el peso de la vida aplastante. Que comprendan que Cristo los acompa�a y lleva sus cargas con ellos. Am�n.",
+      "en": "For those who feel the weight of life\n\nSaint Christopher, who experienced the crushing weight of the Child who was the Lord of the universe, intercede for all who feel the crushing weight of life. May they understand that Christ accompanies them and carries their burdens with them. Amen."
+    },
+    {
+      "day": 9,
+      "es": "Por ser portadores de Cristo a los dem�s\n\nSan Crist�bal, Christ�foros, portador de Cristo, ens��anos a ser tambi�n nosotros portadores de Cristo: en nuestra sonrisa, en nuestra ayuda, en nuestra oraci�n por los dem�s, hasta que todos los que nos rodean puedan encontrar a Cristo a trav�s de nosotros. Am�n.",
+      "en": "For being bearers of Christ to others\n\nSaint Christopher, Christophoros, bearer of Christ, teach us to also be bearers of Christ: in our smile, in our help, in our prayer for others, until all around us may find Christ through us. Amen."
+    }
+  ],
+  "litany": {
+    "title": {
+      "es": "Letan�a de San Crist�bal",
+      "en": "Litany of Saint Christopher"
+    },
+    "invocations": [
+      {
+        "es": "San Crist�bal, portador de Cristo,",
+        "en": "Saint Christopher, bearer of Christ,"
+      },
+      {
+        "es": "San Crist�bal, protector de los viajeros,",
+        "en": "Saint Christopher, protector of travelers,"
+      },
+      {
+        "es": "San Crist�bal, patrono de los conductores,",
+        "en": "Saint Christopher, patron of drivers,"
+      },
+      {
+        "es": "San Crist�bal, auxiliador en el peligro,",
+        "en": "Saint Christopher, helper in danger,"
+      },
+      {
+        "es": "San Crist�bal, uno de los catorce santos auxiliadores,",
+        "en": "Saint Christopher, one of the Fourteen Holy Helpers,"
+      },
+      {
+        "es": "San Crist�bal, que reconociste a Cristo en el ni�o,",
+        "en": "Saint Christopher, who recognized Christ in the child,"
+      },
+      {
+        "es": "San Crist�bal, m�rtir valiente,",
+        "en": "Saint Christopher, brave martyr,"
+      },
+      {
+        "es": "San Crist�bal, patrono de los emigrantes,",
+        "en": "Saint Christopher, patron of migrants,"
+      }
+    ],
+    "response": {
+      "es": "Ruega por nosotros.",
+      "en": "Pray for us."
+    }
+  },
+  "miracles": {
+    "available": true,
+    "es": "1. EL GIGANTE QUE CARGO AL NINO JESUS\nSegun la leyenda hagiografica, un hombre de tamano y fuerza extraordinarios llamado Reprobus decidio servir solo al ser mas poderoso del mundo. Primero sirvio a un rey, hasta que vio que el rey temblaba ante el demonio. Luego busco al demonio, hasta que vio que el demonio temblaba ante la cruz. Un ermitano le aconsejo que sirviera a Cristo ayudando a los viajeros a cruzar un rio peligroso. Cierta noche, un nino le pidio que lo cruzara. A mitad del rio, el peso del nino se volvio insoportable, como si cargara el mundo entero. Al llegar a la orilla, el nino le dijo: «No te maravilles: cargaste al que sostiene el mundo. Yo soy Jesucristo, a quien sirves». Y desaparecio.\n\n2. LA VARA QUE FLORECE: EL SIGNO DE DIOS\nAntes de desaparecer, el Nino Jesus le habia dado a Reprobus una instruccion: «Clava tu vara en la tierra junto al rio». A la manana siguiente, la vara —un tronco seco y cortado— habia brotado raices, ramas y frutos. El milagro confirmo la identidad del Nino. Reprobus tomo el nombre de Cristobal —«el que lleva a Cristo»— y predico el Evangelio con fervor hasta ser arrestado por el gobernador romano Dagno en Licia. Se dice que dos mil paganos se convirtieron al ver los milagros de Cristobal y que el gobernador envio a cuatrocientos soldados a arrestarlo, pero estos cayeron a sus pies pidiendo el bautismo.\n\n3. EL PATRON CONTRA LAS TORMENTAS Y LOS PELIGROS DEL CAMINO\nDesde la Edad Media, la devocion a San Cristobal se difundio por toda Europa como el protector de los viajeros contra los peligros del camino, las tormentas y los accidentes. La tradicion afirmaba que quien viera su imagen no moriria de muerte subita ese dia. Las estatuas de San Cristobal se colocaron en los cruces de los caminos medievales, en los puentes y en los umbrales de los pueblos. Hoy su imagen viaja en millones de automoviles y aviones en todo el mundo. Millones de testimonios de personas protegidas en accidentes, tormentas y naufragios han mantenido viva la devocion al «portador de Cristo» a traves de los siglos.",
+    "en": "1. THE GIANT WHO CARRIED THE CHILD JESUS\nAccording to hagiographic legend, a man of extraordinary size and strength named Reprobus decided to serve only the most powerful being in the world. He first served a king, until he saw the king tremble before the devil. He then sought the devil, until he saw the devil tremble before the cross. A hermit advised him to serve Christ by helping travelers cross a dangerous river. One night, a child asked him to carry him across. Midway through the river, the child's weight became unbearable, as if he were carrying the entire world. On reaching the far bank, the child told him: \"Do not marvel: you have carried the one who sustains the world. I am Jesus Christ, whom you serve.\" And he disappeared.\n\n2. THE FLOWERING STAFF: THE SIGN OF GOD\nBefore disappearing, the Child Jesus had given Reprobus an instruction: \"Plant your staff in the ground beside the river.\" The next morning, the staff — a dry, cut log — had sprouted roots, branches, and fruit. The miracle confirmed the child's identity. Reprobus took the name Christopher — \"the one who carries Christ\" — and preached the Gospel with fervor until being arrested by the Roman governor Dagno in Lycia. It is said that two thousand pagans converted upon seeing Christopher's miracles, and that the governor sent four hundred soldiers to arrest him, but these fell at his feet asking for baptism.\n\n3. THE PATRON AGAINST STORMS AND THE DANGERS OF THE ROAD\nFrom the Middle Ages, devotion to Saint Christopher spread throughout Europe as the protector of travelers against the perils of the road, storms, and accidents. Tradition held that whoever saw his image would not die of sudden death that day. Statues of Saint Christopher were placed at medieval crossroads, on bridges, and at village entrances. Today his image travels in millions of automobiles and airplanes worldwide. Millions of testimonies from people protected in accidents, storms, and shipwrecks have kept the devotion to the \"Christ-bearer\" alive through the centuries."
+  },
+  "feast_day": {
+    "es": "25 de julio",
+    "en": "July 25"
+  }
 }

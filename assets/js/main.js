@@ -579,7 +579,7 @@ function renderIntercessorContent(data) {
   if (nameEl) nameEl.textContent = data.name[lang];
 
   const feastEl = document.getElementById('feastDay');
-  if (feastEl) feastEl.textContent = data.feast_day[lang];
+  if (feastEl) feastEl.textContent = data.feast_day ? data.feast_day[lang] : '';
 
   const imgEl = document.getElementById('intercessorImg');
   if (imgEl && data.image) {

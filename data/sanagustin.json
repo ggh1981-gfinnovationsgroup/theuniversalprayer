@@ -1,177 +1,121 @@
 {
-    "id":  "sanagustin",
-    "name":  {
-                 "es":  "San Agust�n de Hipona",
-                 "en":  "Saint Augustine of Hippo"
-             },
-    "color":  "#5a3010",
-    "image":  "assets/images/sanagustin.svg",
-    "specialty":  {
-                      "es":  "Conversi�n y sabidur�a",
-                      "en":  "Conversion \u0026 wisdom"
-                  },
-    "shortPrayer":  {
-                        "es":  "San Agust�n de Hipona, Doctor de la Gracia, intercede por nosotros.",
-                        "en":  "Saint Augustine of Hippo, Doctor of Grace, intercede for us."
-                    },
-    "history":  {
-                    "es":  "Aurelio Agustin nacio el 13 de noviembre del ano 354 en Tagaste, una pequena ciudad de la provincia romana de Numidia, hoy territorio de Argelia. Su madre, Monica, era cristiana fervorosa; su padre, Patricio, pagano. Desde joven manifesto una inteligencia prodigiosa y una pasion ardiente por la verdad que lo llevo durante anos a buscarla en el placer, la ambicion y las doctrinas filosoficas de su epoca, sin encontrar en ninguna la paz que anhelaba.\n\nDurante su juventud tuvo una relacion estable con una mujer y un hijo, Adeodato, y se adhirio durante nueve anos a la secta del maniqueismo, creyendo haber hallado la respuesta al problema del mal. Mas tarde se traslado a Milan, donde las predicas del obispo Ambrosio comenzaron a disolver sus objeciones intelectuales contra el cristianismo. En agosto del ano 386, leyendo una carta de San Pablo en un jardin de Milan, escucho una voz infantil que le decia \u0027Toma y lee\u0027 y experimento una conversion radical que transformo para siempre su vida.\n\nBautizado por Ambrosio en la vigilia pascual del ano 387, Agustin regreso a Africa con el proposito de fundar una comunidad de vida consagrada. Fue ordenado sacerdote en 391 y obispo de Hipona en 395, cargo que ejercio hasta su muerte en el ano 430 mientras la ciudad estaba sitiada por los barbaros vandalos. En esos treinta y cinco anos de episcopado escribio mas de cien obras, entre ellas las Confesiones, La Ciudad de Dios y el tratado Sobre la Trinidad, que definieron el pensamiento cristiano occidental durante mas de mil anos.\n\nLa conversion de Agustin es el arquetipo de toda conversion autentica: un hombre que busco a Dios en todos los lugares equivocados hasta descubrir que Dios lo habia estado buscando a el. La frase mas celebre de las Confesiones es tambien su autobiografia espiritual completa: \u0027Nos hiciste para Ti, Senor, y nuestro corazon esta inquieto hasta que descanse en Ti.\u0027 Fue declarado Doctor de la Iglesia y su fiesta se celebra el 28 de agosto.",
-                    "en":  "Aurelius Augustine was born on November 13, 354, in Thagaste, a small city in the Roman province of Numidia, in present-day Algeria. His mother, Monica, was a fervent Christian; his father, Patricius, a pagan. From youth he showed a prodigious intelligence and an ardent passion for truth that led him for years to seek it in pleasure, ambition, and the philosophical doctrines of his age, without finding in any of them the peace he longed for.\n\nIn his youth he had a stable relationship with a woman and a son, Adeodatus, and adhered for nine years to the Manichaean sect, believing he had found the answer to the problem of evil. Later he moved to Milan, where the preaching of Bishop Ambrose began to dissolve his intellectual objections to Christianity. In August of 386, reading a letter of Saint Paul in a garden in Milan, he heard a childlike voice saying \u0027Take and read\u0027 and experienced a radical conversion that transformed his life forever.\n\nBaptized by Ambrose at the Easter Vigil of 387, Augustine returned to Africa with the intention of founding a community of consecrated life. He was ordained a priest in 391 and bishop of Hippo in 395, a position he held until his death in 430 while the city was besieged by the Vandal barbarians. In those thirty-five years of episcopate he wrote more than a hundred works, among them the Confessions, The City of God, and the treatise On the Trinity, which defined Western Christian thought for more than a thousand years.\n\nThe conversion of Augustine is the archetype of every authentic conversion: a man who sought God in all the wrong places until he discovered that God had been seeking him. The most celebrated phrase of the Confessions is also his complete spiritual autobiography: \u0027You made us for yourself, Lord, and our heart is restless until it rests in you.\u0027 He was declared a Doctor of the Church and his feast is celebrated on August 28."
-                },
-    "novena":  {
-                   "title":  {
-                                 "es":  "Novena a San Agust�n de Hipona",
-                                 "en":  "Novena to Saint Augustine of Hippo"
-                             },
-                   "days":  [
-                                {
-                                    "day":  1,
-                                    "intention":  {
-                                                      "es":  "Por la conversi�n de los que se han alejado",
-                                                      "en":  "For the conversion of those who have strayed"
-                                                  },
-                                    "prayer":  {
-                                                   "es":  "San Agust�n, que conociste el poder de la gracia de Dios para transformar el coraz�n m�s extraviado, intercede por todos los que viven lejos de Dios. Que encuentren, como t�, que el coraz�n est� inquieto hasta que descansa en �l. Am�n.",
-                                                   "en":  "Saint Augustine, who knew the power of God\u0027s grace to transform the most wayward heart, intercede for all who live far from God. May they find, as you did, that our heart is restless until it rests in Him. Amen."
-                                               }
-                                },
-                                {
-                                    "day":  2,
-                                    "intention":  {
-                                                      "es":  "Por el amor a la verdad",
-                                                      "en":  "For love of truth"
-                                                  },
-                                    "prayer":  {
-                                                   "es":  "Doctor de la Gracia, que buscaste la verdad con toda la fuerza de tu inteligencia y la encontraste en Cristo, intercede por todos los que buscan el sentido de la vida para que sean conducidos a la Verdad que es Dios. Am�n.",
-                                                   "en":  "Doctor of Grace, who sought truth with all the force of your intellect and found it in Christ, intercede for all who seek life\u0027s meaning that they may be led to the Truth who is God. Amen."
-                                               }
-                                },
-                                {
-                                    "day":  3,
-                                    "intention":  {
-                                                      "es":  "Por los intelectuales y estudiantes",
-                                                      "en":  "For intellectuals and students"
-                                                  },
-                                    "prayer":  {
-                                                   "es":  "San Agust�n, patrono de los te�logos y fil�sofos, intercede para que todos los que cultivan la inteligencia la pongan al servicio de la fe y nunca la contrapongan al amor de Dios. Am�n.",
-                                                   "en":  "Saint Augustine, patron of theologians and philosophers, intercede that all who cultivate the intellect may put it at the service of faith and never pit it against the love of God. Amen."
-                                               }
-                                },
-                                {
-                                    "day":  4,
-                                    "intention":  {
-                                                      "es":  "Por el don de la gracia",
-                                                      "en":  "For the gift of grace"
-                                                  },
-                                    "prayer":  {
-                                                   "es":  "Agust�n, Doctor de la Gracia, que comprendiste que sin Dios nada podemos hacer, intercede para que reconozcamos nuestra necesidad de la gracia divina y nos abramos plenamente a su acci�n en nosotros. Am�n.",
-                                                   "en":  "Augustine, Doctor of Grace, who understood that without God we can do nothing, intercede that we may recognize our need for divine grace and fully open ourselves to its action in us. Amen."
-                                               }
-                                },
-                                {
-                                    "day":  5,
-                                    "intention":  {
-                                                      "es":  "Por la Iglesia universal",
-                                                      "en":  "For the universal Church"
-                                                  },
-                                    "prayer":  {
-                                                   "es":  "San Agust�n, que diste tu vida como pastor de la Iglesia de Hipona y la defendiste con tu pluma y tu voz, intercede por la Iglesia universal, especialmente en sus momentos de crisis y persecuci�n. Am�n.",
-                                                   "en":  "Saint Augustine, who gave your life as pastor of the Church of Hippo and defended her with your pen and voice, intercede for the universal Church, especially in her moments of crisis and persecution. Amen."
-                                               }
-                                },
-                                {
-                                    "day":  6,
-                                    "intention":  {
-                                                      "es":  "Por los que dudan en la fe",
-                                                      "en":  "For those who doubt in faith"
-                                                  },
-                                    "prayer":  {
-                                                   "es":  "Agust�n, que pasaste por largos a�os de duda y b�squeda, intercede por todos los que atraviesan crisis de fe para que no se rindan sino que, como t�, sigan buscando hasta encontrar la luz. Am�n.",
-                                                   "en":  "Augustine, who spent long years of doubt and searching, intercede for all going through faith crises that they may not give up but, like you, keep seeking until they find the light. Amen."
-                                               }
-                                },
-                                {
-                                    "day":  7,
-                                    "intention":  {
-                                                      "es":  "Por la pureza del coraz�n",
-                                                      "en":  "For purity of heart"
-                                                  },
-                                    "prayer":  {
-                                                   "es":  "San Agust�n, que experimentaste el poder esclavizante de los vicios y la libertad que trae la gracia, intercede por todos los que luchan contra sus pasiones para que encuentren en Dios la fuerza de la verdadera libertad. Am�n.",
-                                                   "en":  "Saint Augustine, who experienced the enslaving power of vices and the freedom grace brings, intercede for all who struggle against their passions that they may find in God the strength of true freedom. Amen."
-                                               }
-                                },
-                                {
-                                    "day":  8,
-                                    "intention":  {
-                                                      "es":  "Por los que sufren el peso del pecado",
-                                                      "en":  "For those burdened by sin"
-                                                  },
-                                    "prayer":  {
-                                                   "es":  "Misericordioso Agust�n, que experimentaste la infinita misericordia de Dios, proclama ante el trono divino la causa de todos los pecadores arrepentidos. Que nadie desespere de la misericordia de Dios. Am�n.",
-                                                   "en":  "Merciful Augustine, who experienced the infinite mercy of God, proclaim before the divine throne the cause of all repentant sinners. May no one despair of God\u0027s mercy. Amen."
-                                               }
-                                },
-                                {
-                                    "day":  9,
-                                    "intention":  {
-                                                      "es":  "Por el descanso en Dios",
-                                                      "en":  "For rest in God"
-                                                  },
-                                    "prayer":  {
-                                                   "es":  "San Agust�n, que escribiste: \u0027Nos hiciste para Ti, Se�or, y nuestro coraz�n est� inquieto hasta que descanse en Ti\u0027, ay�danos a orientar toda nuestra vida hacia Dios, que es nuestro �nico descanso verdadero y nuestra patria definitiva. Am�n.",
-                                                   "en":  "Saint Augustine, who wrote: \u0027You made us for Yourself, O Lord, and our heart is restless until it rests in You\u0027, help us to direct our entire life toward God, who is our only true rest and our ultimate homeland. Amen."
-                                               }
-                                }
-                            ]
-               },
-    "litany":  {
-                   "title":  {
-                                 "es":  "Letan�a de San Agust�n de Hipona",
-                                 "en":  "Litany of Saint Augustine of Hippo"
-                             },
-                   "invocations":  [
-                                       {
-                                           "es":  "San Agust�n, Doctor de la Gracia,",
-                                           "en":  "Saint Augustine, Doctor of Grace,"
-                                       },
-                                       {
-                                           "es":  "San Agust�n, luz de la teolog�a occidental,",
-                                           "en":  "Saint Augustine, light of Western theology,"
-                                       },
-                                       {
-                                           "es":  "San Agust�n, modelo de conversi�n,",
-                                           "en":  "Saint Augustine, model of conversion,"
-                                       },
-                                       {
-                                           "es":  "San Agust�n, hijo agradecido de Santa M�nica,",
-                                           "en":  "Saint Augustine, grateful son of Saint Monica,"
-                                       },
-                                       {
-                                           "es":  "San Agust�n, buscador incansable de la verdad,",
-                                           "en":  "Saint Augustine, tireless seeker of truth,"
-                                       },
-                                       {
-                                           "es":  "San Agust�n, pastor sol�cito de Hipona,",
-                                           "en":  "Saint Augustine, solicitous pastor of Hippo,"
-                                       },
-                                       {
-                                           "es":  "San Agust�n, defensor de la fe ortodoxa,",
-                                           "en":  "Saint Augustine, defender of orthodox faith,"
-                                       },
-                                       {
-                                           "es":  "San Agust�n, coraz�n inquieto que descans� en Dios,",
-                                           "en":  "Saint Augustine, restless heart that found rest in God,"
-                                       }
-                                   ],
-                   "response":  {
-                                    "es":  "Ruega por nosotros.",
-                                    "en":  "Pray for us."
-                                }
-               },
-    "miracles":  {
-                     "available":  true,
-                     "es":  "1. «TARDE TE AME» — LA GRAN CONVERSION DE MILAN (386 d.C.)\nEn el jardin de Milan, Agustin escucho la voz de un nino que cantaba repetidamente: «Toma y lee, toma y lee». Abrio las cartas de Pablo y sus ojos cayeron en Romanos 13:13-14: «No en comilonas y embriagueces... sino revestios del Senor Jesucristo». Mas tarde escribio: «No quise leer mas ni habia necesidad: al instante, al terminar esa frase, como si una luz de certeza se hubiera vertido en mi corazon, se disiparon todas las tinieblas de la duda». Tenia 32 anos. Habia pasado diecisiete anos persiguiendo la verdad en el placer, en la filosofia maniquea, en el escepticismo. En ese instante, todo ceso. Su madre Monica, al saberlo, derramo lagrimas de gozo que eran el fruto de treinta anos de oraciones incansables.\n\n2. LA VISION DEL NINO EN LA PLAYA Y EL MISTERIO DE LA TRINIDAD\nSegun la tradicion, Agustin paseaba por la orilla del mar mientras meditaba el misterio de la Trinidad Santisima para su tratado «De Trinitate». Vio a un nino que habia hecho un hoyo en la arena y corria con una conchita al mar, traía agua y la vaciaba en el hoyo. «¿Que haces?», le pregunto Agustin. «Quiero meter todo el mar en este hoyo», respondio el nino. «Pero es imposible», dijo el obispo. El nino lo miro y le dijo: «Y tu pretendes comprender el misterio de la Trinidad Santisima con tu pequeño entendimiento humano». Cuando Agustin quiso responder, el nino habia desaparecido. Agustin se postro en la arena y lloro. La escena ha sido considerada por los teologos como una de las mas hermosas teofanias de la tradicion cristiana.\n\n3. LA MUERTE ENTRE LAS MURALLAS Y EL LEGADO ETERNO (430 d.C.)\nCuando los vandalos asediaban Hipona, la ciudad de la que era obispo, Agustin no huyo. Se encerro con sus sacerdotes y paso los ultimos noventa dias de su vida en ayuno, oracion y lagrimas, rezando los Salmos penitenciales que habia mandado escribir en las paredes de su celda. Murio el 28 de agosto de 430, a los 75 anos, mientras la ciudad ardia. Pero su legado era imperecedero: 232 libros, 500 cartas, 500 sermones. La «Ciudad de Dios» y las «Confesiones» siguen siendo hoy los libros no bíblicos mas leidos de la historia del cristianismo. Un filosofo pagano y lujurioso se habia convertido en el pilar intelectual de toda la civilizacion occidental.",
-                     "en":  "1. \"LATE HAVE I LOVED YOU\" — THE GREAT CONVERSION IN MILAN (386 AD)\nIn a garden in Milan, Augustine heard the voice of a child singing repeatedly: \"Take and read, take and read.\" He opened Paul\u0027s letters and his eyes fell on Romans 13:13-14: \"Not in carousing and drunkenness... but put on the Lord Jesus Christ.\" He later wrote: \"I had no wish to read more and no need to do so. At that instant, as I reached the end of that sentence, a light of certainty flooded my heart and all the darkness of doubt was dispelled.\" He was 32 years old. He had spent seventeen years pursuing truth in pleasure, in Manichaean philosophy, in skepticism. In that instant, everything ceased. His mother Monica, upon hearing the news, wept with a joy that was the fruit of thirty years of tireless prayer.\n\n2. THE VISION OF THE CHILD ON THE BEACH AND THE MYSTERY OF THE TRINITY\nAccording to tradition, Augustine was walking along the seashore meditating on the mystery of the Most Holy Trinity for his treatise \"De Trinitate.\" He saw a child who had dug a hole in the sand and was running with a little shell to the sea, bringing water and pouring it into the hole. \"What are you doing?\" Augustine asked. \"I want to put the whole sea into this hole,\" answered the child. \"But that is impossible,\" said the bishop. The child looked at him and said: \"And you presume to comprehend the mystery of the Most Holy Trinity with your small human understanding.\" When Augustine tried to respond, the child had vanished. Augustine prostrated himself on the sand and wept. The scene has been regarded by theologians as one of the most beautiful theophanies in Christian tradition.\n\n3. DEATH WITHIN THE WALLS AND THE ETERNAL LEGACY (430 AD)\nWhen the Vandals were besieging Hippo, the city of which he was bishop, Augustine did not flee. He shut himself in with his priests and spent the last ninety days of his life in fasting, prayer, and tears, reciting the penitential Psalms he had ordered written on the walls of his cell. He died on August 28, 430, at the age of 75, while the city burned. But his legacy was imperishable: 232 books, 500 letters, 500 sermons. \"The City of God\" and the \"Confessions\" remain to this day the most widely read non-biblical books in the history of Christianity. A pagan, lustful philosopher had become the intellectual pillar of all Western civilization."
-                 }
+  "id": "sanagustin",
+  "name": {
+    "es": "San Agust�n de Hipona",
+    "en": "Saint Augustine of Hippo"
+  },
+  "color": "#5a3010",
+  "image": "assets/images/sanagustin.svg",
+  "specialty": {
+    "es": "Conversi�n y sabidur�a",
+    "en": "Conversion & wisdom"
+  },
+  "prayer": {
+    "es": "San Agust�n de Hipona, Doctor de la Gracia, intercede por nosotros.",
+    "en": "Saint Augustine of Hippo, Doctor of Grace, intercede for us."
+  },
+  "history": {
+    "es": "Aurelio Agustin nacio el 13 de noviembre del ano 354 en Tagaste, una pequena ciudad de la provincia romana de Numidia, hoy territorio de Argelia. Su madre, Monica, era cristiana fervorosa; su padre, Patricio, pagano. Desde joven manifesto una inteligencia prodigiosa y una pasion ardiente por la verdad que lo llevo durante anos a buscarla en el placer, la ambicion y las doctrinas filosoficas de su epoca, sin encontrar en ninguna la paz que anhelaba.\n\nDurante su juventud tuvo una relacion estable con una mujer y un hijo, Adeodato, y se adhirio durante nueve anos a la secta del maniqueismo, creyendo haber hallado la respuesta al problema del mal. Mas tarde se traslado a Milan, donde las predicas del obispo Ambrosio comenzaron a disolver sus objeciones intelectuales contra el cristianismo. En agosto del ano 386, leyendo una carta de San Pablo en un jardin de Milan, escucho una voz infantil que le decia 'Toma y lee' y experimento una conversion radical que transformo para siempre su vida.\n\nBautizado por Ambrosio en la vigilia pascual del ano 387, Agustin regreso a Africa con el proposito de fundar una comunidad de vida consagrada. Fue ordenado sacerdote en 391 y obispo de Hipona en 395, cargo que ejercio hasta su muerte en el ano 430 mientras la ciudad estaba sitiada por los barbaros vandalos. En esos treinta y cinco anos de episcopado escribio mas de cien obras, entre ellas las Confesiones, La Ciudad de Dios y el tratado Sobre la Trinidad, que definieron el pensamiento cristiano occidental durante mas de mil anos.\n\nLa conversion de Agustin es el arquetipo de toda conversion autentica: un hombre que busco a Dios en todos los lugares equivocados hasta descubrir que Dios lo habia estado buscando a el. La frase mas celebre de las Confesiones es tambien su autobiografia espiritual completa: 'Nos hiciste para Ti, Senor, y nuestro corazon esta inquieto hasta que descanse en Ti.' Fue declarado Doctor de la Iglesia y su fiesta se celebra el 28 de agosto.",
+    "en": "Aurelius Augustine was born on November 13, 354, in Thagaste, a small city in the Roman province of Numidia, in present-day Algeria. His mother, Monica, was a fervent Christian; his father, Patricius, a pagan. From youth he showed a prodigious intelligence and an ardent passion for truth that led him for years to seek it in pleasure, ambition, and the philosophical doctrines of his age, without finding in any of them the peace he longed for.\n\nIn his youth he had a stable relationship with a woman and a son, Adeodatus, and adhered for nine years to the Manichaean sect, believing he had found the answer to the problem of evil. Later he moved to Milan, where the preaching of Bishop Ambrose began to dissolve his intellectual objections to Christianity. In August of 386, reading a letter of Saint Paul in a garden in Milan, he heard a childlike voice saying 'Take and read' and experienced a radical conversion that transformed his life forever.\n\nBaptized by Ambrose at the Easter Vigil of 387, Augustine returned to Africa with the intention of founding a community of consecrated life. He was ordained a priest in 391 and bishop of Hippo in 395, a position he held until his death in 430 while the city was besieged by the Vandal barbarians. In those thirty-five years of episcopate he wrote more than a hundred works, among them the Confessions, The City of God, and the treatise On the Trinity, which defined Western Christian thought for more than a thousand years.\n\nThe conversion of Augustine is the archetype of every authentic conversion: a man who sought God in all the wrong places until he discovered that God had been seeking him. The most celebrated phrase of the Confessions is also his complete spiritual autobiography: 'You made us for yourself, Lord, and our heart is restless until it rests in you.' He was declared a Doctor of the Church and his feast is celebrated on August 28."
+  },
+  "novena": [
+    {
+      "day": 1,
+      "es": "Por la conversi�n de los que se han alejado\n\nSan Agust�n, que conociste el poder de la gracia de Dios para transformar el coraz�n m�s extraviado, intercede por todos los que viven lejos de Dios. Que encuentren, como t�, que el coraz�n est� inquieto hasta que descansa en �l. Am�n.",
+      "en": "For the conversion of those who have strayed\n\nSaint Augustine, who knew the power of God's grace to transform the most wayward heart, intercede for all who live far from God. May they find, as you did, that our heart is restless until it rests in Him. Amen."
+    },
+    {
+      "day": 2,
+      "es": "Por el amor a la verdad\n\nDoctor de la Gracia, que buscaste la verdad con toda la fuerza de tu inteligencia y la encontraste en Cristo, intercede por todos los que buscan el sentido de la vida para que sean conducidos a la Verdad que es Dios. Am�n.",
+      "en": "For love of truth\n\nDoctor of Grace, who sought truth with all the force of your intellect and found it in Christ, intercede for all who seek life's meaning that they may be led to the Truth who is God. Amen."
+    },
+    {
+      "day": 3,
+      "es": "Por los intelectuales y estudiantes\n\nSan Agust�n, patrono de los te�logos y fil�sofos, intercede para que todos los que cultivan la inteligencia la pongan al servicio de la fe y nunca la contrapongan al amor de Dios. Am�n.",
+      "en": "For intellectuals and students\n\nSaint Augustine, patron of theologians and philosophers, intercede that all who cultivate the intellect may put it at the service of faith and never pit it against the love of God. Amen."
+    },
+    {
+      "day": 4,
+      "es": "Por el don de la gracia\n\nAgust�n, Doctor de la Gracia, que comprendiste que sin Dios nada podemos hacer, intercede para que reconozcamos nuestra necesidad de la gracia divina y nos abramos plenamente a su acci�n en nosotros. Am�n.",
+      "en": "For the gift of grace\n\nAugustine, Doctor of Grace, who understood that without God we can do nothing, intercede that we may recognize our need for divine grace and fully open ourselves to its action in us. Amen."
+    },
+    {
+      "day": 5,
+      "es": "Por la Iglesia universal\n\nSan Agust�n, que diste tu vida como pastor de la Iglesia de Hipona y la defendiste con tu pluma y tu voz, intercede por la Iglesia universal, especialmente en sus momentos de crisis y persecuci�n. Am�n.",
+      "en": "For the universal Church\n\nSaint Augustine, who gave your life as pastor of the Church of Hippo and defended her with your pen and voice, intercede for the universal Church, especially in her moments of crisis and persecution. Amen."
+    },
+    {
+      "day": 6,
+      "es": "Por los que dudan en la fe\n\nAgust�n, que pasaste por largos a�os de duda y b�squeda, intercede por todos los que atraviesan crisis de fe para que no se rindan sino que, como t�, sigan buscando hasta encontrar la luz. Am�n.",
+      "en": "For those who doubt in faith\n\nAugustine, who spent long years of doubt and searching, intercede for all going through faith crises that they may not give up but, like you, keep seeking until they find the light. Amen."
+    },
+    {
+      "day": 7,
+      "es": "Por la pureza del coraz�n\n\nSan Agust�n, que experimentaste el poder esclavizante de los vicios y la libertad que trae la gracia, intercede por todos los que luchan contra sus pasiones para que encuentren en Dios la fuerza de la verdadera libertad. Am�n.",
+      "en": "For purity of heart\n\nSaint Augustine, who experienced the enslaving power of vices and the freedom grace brings, intercede for all who struggle against their passions that they may find in God the strength of true freedom. Amen."
+    },
+    {
+      "day": 8,
+      "es": "Por los que sufren el peso del pecado\n\nMisericordioso Agust�n, que experimentaste la infinita misericordia de Dios, proclama ante el trono divino la causa de todos los pecadores arrepentidos. Que nadie desespere de la misericordia de Dios. Am�n.",
+      "en": "For those burdened by sin\n\nMerciful Augustine, who experienced the infinite mercy of God, proclaim before the divine throne the cause of all repentant sinners. May no one despair of God's mercy. Amen."
+    },
+    {
+      "day": 9,
+      "es": "Por el descanso en Dios\n\nSan Agust�n, que escribiste: 'Nos hiciste para Ti, Se�or, y nuestro coraz�n est� inquieto hasta que descanse en Ti', ay�danos a orientar toda nuestra vida hacia Dios, que es nuestro �nico descanso verdadero y nuestra patria definitiva. Am�n.",
+      "en": "For rest in God\n\nSaint Augustine, who wrote: 'You made us for Yourself, O Lord, and our heart is restless until it rests in You', help us to direct our entire life toward God, who is our only true rest and our ultimate homeland. Amen."
+    }
+  ],
+  "litany": {
+    "title": {
+      "es": "Letan�a de San Agust�n de Hipona",
+      "en": "Litany of Saint Augustine of Hippo"
+    },
+    "invocations": [
+      {
+        "es": "San Agust�n, Doctor de la Gracia,",
+        "en": "Saint Augustine, Doctor of Grace,"
+      },
+      {
+        "es": "San Agust�n, luz de la teolog�a occidental,",
+        "en": "Saint Augustine, light of Western theology,"
+      },
+      {
+        "es": "San Agust�n, modelo de conversi�n,",
+        "en": "Saint Augustine, model of conversion,"
+      },
+      {
+        "es": "San Agust�n, hijo agradecido de Santa M�nica,",
+        "en": "Saint Augustine, grateful son of Saint Monica,"
+      },
+      {
+        "es": "San Agust�n, buscador incansable de la verdad,",
+        "en": "Saint Augustine, tireless seeker of truth,"
+      },
+      {
+        "es": "San Agust�n, pastor sol�cito de Hipona,",
+        "en": "Saint Augustine, solicitous pastor of Hippo,"
+      },
+      {
+        "es": "San Agust�n, defensor de la fe ortodoxa,",
+        "en": "Saint Augustine, defender of orthodox faith,"
+      },
+      {
+        "es": "San Agust�n, coraz�n inquieto que descans� en Dios,",
+        "en": "Saint Augustine, restless heart that found rest in God,"
+      }
+    ],
+    "response": {
+      "es": "Ruega por nosotros.",
+      "en": "Pray for us."
+    }
+  },
+  "miracles": {
+    "available": true,
+    "es": "1. «TARDE TE AME» — LA GRAN CONVERSION DE MILAN (386 d.C.)\nEn el jardin de Milan, Agustin escucho la voz de un nino que cantaba repetidamente: «Toma y lee, toma y lee». Abrio las cartas de Pablo y sus ojos cayeron en Romanos 13:13-14: «No en comilonas y embriagueces... sino revestios del Senor Jesucristo». Mas tarde escribio: «No quise leer mas ni habia necesidad: al instante, al terminar esa frase, como si una luz de certeza se hubiera vertido en mi corazon, se disiparon todas las tinieblas de la duda». Tenia 32 anos. Habia pasado diecisiete anos persiguiendo la verdad en el placer, en la filosofia maniquea, en el escepticismo. En ese instante, todo ceso. Su madre Monica, al saberlo, derramo lagrimas de gozo que eran el fruto de treinta anos de oraciones incansables.\n\n2. LA VISION DEL NINO EN LA PLAYA Y EL MISTERIO DE LA TRINIDAD\nSegun la tradicion, Agustin paseaba por la orilla del mar mientras meditaba el misterio de la Trinidad Santisima para su tratado «De Trinitate». Vio a un nino que habia hecho un hoyo en la arena y corria con una conchita al mar, traía agua y la vaciaba en el hoyo. «¿Que haces?», le pregunto Agustin. «Quiero meter todo el mar en este hoyo», respondio el nino. «Pero es imposible», dijo el obispo. El nino lo miro y le dijo: «Y tu pretendes comprender el misterio de la Trinidad Santisima con tu pequeño entendimiento humano». Cuando Agustin quiso responder, el nino habia desaparecido. Agustin se postro en la arena y lloro. La escena ha sido considerada por los teologos como una de las mas hermosas teofanias de la tradicion cristiana.\n\n3. LA MUERTE ENTRE LAS MURALLAS Y EL LEGADO ETERNO (430 d.C.)\nCuando los vandalos asediaban Hipona, la ciudad de la que era obispo, Agustin no huyo. Se encerro con sus sacerdotes y paso los ultimos noventa dias de su vida en ayuno, oracion y lagrimas, rezando los Salmos penitenciales que habia mandado escribir en las paredes de su celda. Murio el 28 de agosto de 430, a los 75 anos, mientras la ciudad ardia. Pero su legado era imperecedero: 232 libros, 500 cartas, 500 sermones. La «Ciudad de Dios» y las «Confesiones» siguen siendo hoy los libros no bíblicos mas leidos de la historia del cristianismo. Un filosofo pagano y lujurioso se habia convertido en el pilar intelectual de toda la civilizacion occidental.",
+    "en": "1. \"LATE HAVE I LOVED YOU\" — THE GREAT CONVERSION IN MILAN (386 AD)\nIn a garden in Milan, Augustine heard the voice of a child singing repeatedly: \"Take and read, take and read.\" He opened Paul's letters and his eyes fell on Romans 13:13-14: \"Not in carousing and drunkenness... but put on the Lord Jesus Christ.\" He later wrote: \"I had no wish to read more and no need to do so. At that instant, as I reached the end of that sentence, a light of certainty flooded my heart and all the darkness of doubt was dispelled.\" He was 32 years old. He had spent seventeen years pursuing truth in pleasure, in Manichaean philosophy, in skepticism. In that instant, everything ceased. His mother Monica, upon hearing the news, wept with a joy that was the fruit of thirty years of tireless prayer.\n\n2. THE VISION OF THE CHILD ON THE BEACH AND THE MYSTERY OF THE TRINITY\nAccording to tradition, Augustine was walking along the seashore meditating on the mystery of the Most Holy Trinity for his treatise \"De Trinitate.\" He saw a child who had dug a hole in the sand and was running with a little shell to the sea, bringing water and pouring it into the hole. \"What are you doing?\" Augustine asked. \"I want to put the whole sea into this hole,\" answered the child. \"But that is impossible,\" said the bishop. The child looked at him and said: \"And you presume to comprehend the mystery of the Most Holy Trinity with your small human understanding.\" When Augustine tried to respond, the child had vanished. Augustine prostrated himself on the sand and wept. The scene has been regarded by theologians as one of the most beautiful theophanies in Christian tradition.\n\n3. DEATH WITHIN THE WALLS AND THE ETERNAL LEGACY (430 AD)\nWhen the Vandals were besieging Hippo, the city of which he was bishop, Augustine did not flee. He shut himself in with his priests and spent the last ninety days of his life in fasting, prayer, and tears, reciting the penitential Psalms he had ordered written on the walls of his cell. He died on August 28, 430, at the age of 75, while the city burned. But his legacy was imperishable: 232 books, 500 letters, 500 sermons. \"The City of God\" and the \"Confessions\" remain to this day the most widely read non-biblical books in the history of Christianity. A pagan, lustful philosopher had become the intellectual pillar of all Western civilization."
+  },
+  "feast_day": {
+    "es": "28 de agosto",
+    "en": "August 28"
+  }
 }
