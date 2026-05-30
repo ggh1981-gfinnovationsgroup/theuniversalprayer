@@ -665,7 +665,7 @@ function miraclify(text) {
   return text.split(/\n\n/).map(block => {
     const trimmed = block.trim();
     // Match "1. Title: body" or "1. Title\nbody"
-    const m = trimmed.match(/^(\d+)\.\s+([^:\n]+)(?::([\s\S]*))?$/);
+    const m = trimmed.match(/^(\d+)\.\s+([^:\n]+)(?:[:\n]([\s\S]*))?$/);
     if (m) {
       const num = m[1];
       const title = m[2].trim();
