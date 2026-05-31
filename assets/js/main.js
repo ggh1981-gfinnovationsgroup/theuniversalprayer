@@ -150,6 +150,7 @@ const INTERCESSORS = [
   { id: 'santamonica',       subdomain: 'santamonica',       chaplet: false, novena: true,  color: '#1a3a6a', short: { es: 'Santa Mónica',    en: 'St. Monica'       }, name: { en: 'Saint Monica',                           es: 'Santa Mónica'                             }, specialty: { es: 'Madres y conversión',          en: 'Mothers & conversion'        } },
   { id: 'perpetuosocorro',   subdomain: 'perpetuosocorro',   chaplet: false, novena: true,  color: '#1a3a7a', short: { es: 'P. Socorro',      en: 'Perp. Help'       }, name: { en: 'Our Lady of Perpetual Help',              es: 'Virgen del Perpetuo Socorro'               }, specialty: { es: 'Auxilio y esperanza',          en: 'Help & hope'                 } },
   { id: 'mariaauxiliadora',  subdomain: 'mariaauxiliadora',  chaplet: false, novena: true,  color: '#1a3a7a', short: { es: 'M. Auxiliadora',  en: 'Mary Help'        }, name: { en: 'Mary Help of Christians',               es: 'María Auxiliadora'                        }, specialty: { es: 'Auxilio y juventud salesiana', en: 'Help & Salesian youth'       } },
+  { id: 'santarosa',         subdomain: 'santarosa',         chaplet: false, novena: true,  color: '#7a1a3a', short: { es: 'Sta. Rosa',       en: 'St. Rose'         }, name: { en: 'Saint Rose of Lima',                    es: 'Santa Rosa de Lima'                       }, specialty: { es: 'Primera santa de América',     en: 'First saint of the Americas' } },
 ];
 
 // ── KEYWORD MAP — synonyms for prayer-intent search ──────
@@ -197,6 +198,7 @@ const KEYWORD_MAP = {
   santaines:         'pureza castidad jovenes virgenes purity chastity youth virgins girls',
   sannicolas:        'ninos generosidad regalos navidad pobres deudas children generosity gifts christmas poor debts sailors',
   sancristobal:      'viajeros conductores autos viaje transporte peligro travelers drivers cars travel transport danger',
+  santarosa:         'rosa flores rosas america latina penitencia contemplacion sufrimiento patron patrona lima peru dominica roses latin america penance contemplation suffering peru dominican',
 };
 
 // ── STATE ──────────────────────────────────────────
@@ -1369,27 +1371,18 @@ function initMenu() {
 
   // Populate list
   function renderMenuItems() {
-    const homeHref   = isIntercessorPage() ? '/' : '#top';
-    const prayerHref = isIntercessorPage() ? '/#oracion-universal' : '#oracion-universal';
-    const homeLabel   = currentLang === 'es' ? '← Inicio' : '← Home';
-    const prayerLabel = currentLang === 'es' ? '✝ Oración Universal' : '✝ Universal Prayer';
-    const dividerLabel = currentLang === 'es' ? 'Intercesores' : 'Intercessors';
+    const homeHref       = isIntercessorPage() ? '/' : '#top';
+    const familyHref     = isIntercessorPage() ? '/#oraciones-familia' : '#oraciones-familia';
+    const intercesorsHref = isIntercessorPage() ? '/#intercessorsGrid' : '#intercessorsGrid';
 
-    const topLinks = `
-      <li><a class="side-nav-link side-nav-home" href="${homeHref}">${homeLabel}</a></li>
-      <li><a class="side-nav-link side-nav-prayer" href="${prayerHref}">${prayerLabel}</a></li>
-      <li class="side-nav-divider"><span>${dividerLabel}</span></li>`;
+    const homeLabel       = currentLang === 'es' ? '← Inicio'              : '← Home';
+    const familyLabel     = currentLang === 'es' ? '🙏 Oraciones en Familia' : '🙏 Family Prayers';
+    const intercesorsLabel = currentLang === 'es' ? '✨ Intercesores'        : '✨ Intercessors';
 
-    const sorted = [...INTERCESSORS].sort((a, b) =>
-      a.name[currentLang].localeCompare(b.name[currentLang], currentLang === 'es' ? 'es' : 'en', { sensitivity: 'base' })
-    );
-
-    list.innerHTML = topLinks + sorted.map(m => `
-      <li>
-        <a class="side-nav-link" href="${buildIntercessorUrl(m.subdomain)}">
-          ${m.name[currentLang]}
-        </a>
-      </li>`).join('');
+    list.innerHTML = `
+      <li><a class="side-nav-link side-nav-home"   href="${homeHref}">${homeLabel}</a></li>
+      <li><a class="side-nav-link side-nav-family" href="${familyHref}">${familyLabel}</a></li>
+      <li><a class="side-nav-link side-nav-saints" href="${intercesorsHref}">${intercesorsLabel}</a></li>`;
   }
   renderMenuItems();
 

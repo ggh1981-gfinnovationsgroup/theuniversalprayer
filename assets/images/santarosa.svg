@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="sr-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#1a0810"/><stop offset="100%" stop-color="#0a0306"/>
+    </radialGradient>
+    <linearGradient id="sr-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#8a1a40" stop-opacity="1"/><stop offset="100%" stop-color="#3a0815" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="sr-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f0c0d0" stop-opacity="1"/><stop offset="100%" stop-color="#c07090" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="sr-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sr-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sr-g3"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="600" fill="url(#sr-bg)"/>
+  <rect width="400" height="600" fill="#4a0a20" opacity="0.12"/>
+
+  <!-- Light rays from halo -->
+  <polygon points="198,255 -30,620 110,620" fill="url(#sr-r1)" filter="url(#sr-gl)" opacity="0.65"/>
+  <polygon points="198,255 15,610  80,610" fill="#8a1a40" opacity="0.30"/>
+  <polygon points="202,255 430,620 290,620" fill="url(#sr-r2)" filter="url(#sr-gl)" opacity="0.60"/>
+  <polygon points="202,255 375,605 320,605" fill="#f0c0d0" opacity="0.28"/>
+
+  <!-- Dominican white habit (body) -->
+  <path d="M168,152 Q138,205 124,400 Q200,428 276,400 Q262,205 232,152 Z" fill="#e8e4da" opacity="0.93"/>
+
+  <!-- Dominican black mantle (scapular over shoulders) -->
+  <path d="M168,152 Q122,192 106,320 Q120,332 146,315 Q148,228 176,166 Z" fill="#1a1610" opacity="0.92"/>
+  <path d="M232,152 Q258,196 268,320 Q288,325 296,305 Q284,196 248,156 Z" fill="#1a1610" opacity="0.88"/>
+
+  <!-- White veil sides -->
+  <path d="M168,152 Q142,140 136,126 Q152,113 178,120 Q185,134 188,150 Z" fill="#f0ece2" opacity="0.92"/>
+  <path d="M232,152 Q258,140 264,126 Q248,113 222,120 Q215,134 212,150 Z" fill="#f0ece2" opacity="0.88"/>
+
+  <!-- Neck -->
+  <rect x="193" y="140" width="14" height="16" rx="4" fill="#c8a070" opacity="0.92"/>
+
+  <!-- Head / face -->
+  <ellipse cx="200" cy="108" rx="26" ry="30" fill="#c8a070" opacity="0.94"/>
+  <path d="M174,108 Q176,72 200,68 Q224,72 226,108 Q218,86 200,84 Q182,86 174,108 Z" fill="#2a1808" opacity="0.75"/>
+
+  <!-- Eyes (serene) -->
+  <ellipse cx="191" cy="108" rx="4" ry="3" fill="#2a1808" opacity="0.88"/>
+  <ellipse cx="209" cy="108" rx="4" ry="3" fill="#2a1808" opacity="0.88"/>
+
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="55" fill="none" stroke="#e8c07a" stroke-width="1.8" stroke-opacity="0.60" filter="url(#sr-g2)"/>
+  <circle cx="200" cy="108" r="49" fill="none" stroke="#e8c07a" stroke-width="0.6" stroke-opacity="0.22"/>
+
+  <!-- Crown of roses (5 roses around head) -->
+  <!-- Rose petals - center top -->
+  <circle cx="200" cy="56" r="7" fill="#c03060" opacity="0.90" filter="url(#sr-g3)"/>
+  <circle cx="200" cy="56" r="4" fill="#e05080" opacity="0.80"/>
+  <circle cx="200" cy="52" r="2.5" fill="#f08090" opacity="0.70"/>
+  <!-- Rose petals - upper left -->
+  <circle cx="174" cy="66" r="6.5" fill="#c03060" opacity="0.88" filter="url(#sr-g3)"/>
+  <circle cx="174" cy="66" r="3.5" fill="#e05080" opacity="0.78"/>
+  <!-- Rose petals - upper right -->
+  <circle cx="226" cy="66" r="6.5" fill="#c03060" opacity="0.88" filter="url(#sr-g3)"/>
+  <circle cx="226" cy="66" r="3.5" fill="#e05080" opacity="0.78"/>
+  <!-- Smaller buds -->
+  <circle cx="157" cy="81" r="5" fill="#b02858" opacity="0.82" filter="url(#sr-g3)"/>
+  <circle cx="243" cy="81" r="5" fill="#b02858" opacity="0.82" filter="url(#sr-g3)"/>
+  <!-- Rose leaves -->
+  <ellipse cx="186" cy="60" rx="5" ry="3" fill="#2a6020" opacity="0.70" transform="rotate(-30 186 60)"/>
+  <ellipse cx="214" cy="60" rx="5" ry="3" fill="#2a6020" opacity="0.70" transform="rotate(30 214 60)"/>
+  <ellipse cx="163" cy="74" rx="4" ry="2.5" fill="#2a6020" opacity="0.65" transform="rotate(-45 163 74)"/>
+  <ellipse cx="237" cy="74" rx="4" ry="2.5" fill="#2a6020" opacity="0.65" transform="rotate(45 237 74)"/>
+
+  <!-- Left arm folded in prayer -->
+  <path d="M140,210 Q114,248 110,290" stroke="#e8e4da" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.90"/>
+  <!-- Right arm folded in prayer -->
+  <path d="M260,210 Q286,248 290,290" stroke="#e8e4da" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.86"/>
+
+  <!-- Black mantle over arms -->
+  <path d="M140,210 Q114,248 110,290" stroke="#1a1610" stroke-width="17" fill="none" stroke-linecap="round" opacity="0.72"/>
+  <path d="M260,210 Q286,248 290,290" stroke="#1a1610" stroke-width="16" fill="none" stroke-linecap="round" opacity="0.68"/>
+
+  <!-- Clasped hands (prayer) -->
+  <ellipse cx="110" cy="295" rx="13" ry="16" fill="#c8a070" opacity="0.92"/>
+  <ellipse cx="290" cy="294" rx="13" ry="16" fill="#c8a070" opacity="0.88"/>
+
+  <!-- Small lily / rose in left hand (attribute of Rose) -->
+  <line x1="110" y1="310" x2="110" y2="345" stroke="#3a7030" stroke-width="2.5" opacity="0.80"/>
+  <circle cx="110" cy="308" r="7" fill="#c83060" opacity="0.85" filter="url(#sr-g3)"/>
+  <circle cx="110" cy="308" r="4" fill="#e05075" opacity="0.75"/>
+  <ellipse cx="104" cy="316" rx="5" ry="3" fill="#2a6020" opacity="0.70" transform="rotate(-30 104 316)"/>
+  <ellipse cx="116" cy="316" rx="5" ry="3" fill="#2a6020" opacity="0.70" transform="rotate(30 116 316)"/>
+
+  <!-- Decorative frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c07090" stroke-width="1.2" stroke-opacity="0.55"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c07090" stroke-width="0.5" stroke-opacity="0.20"/>
+
+  <!-- Name panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#0a0306" opacity="0.88"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c07090" stroke-width="0.5" stroke-opacity="0.30"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c07090" letter-spacing="3" opacity="0.92">SANTA ROSA  ·  SAINT ROSE OF LIMA</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#f0c0d0" font-style="italic">«Santa Rosa de Lima»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#c07090" font-style="italic" opacity="0.82">«Patrona de América Latina»</text>
+</svg>
