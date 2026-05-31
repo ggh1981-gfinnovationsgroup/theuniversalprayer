@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="rx-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#180c00"/><stop offset="100%" stop-color="#0a0500"/>
+    </radialGradient>
+    <linearGradient id="rx-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#8a5000" stop-opacity="1"/><stop offset="100%" stop-color="#3a1800" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="rx-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f0d080" stop-opacity="1"/><stop offset="100%" stop-color="#c09020" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="rx-robe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9a6000"/><stop offset="100%" stop-color="#5a3000"/>
+    </linearGradient>
+    <linearGradient id="rx-mantle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c08020"/><stop offset="100%" stop-color="#805010"/>
+    </linearGradient>
+    <filter id="rx-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="rx-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="rx-g3"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="rx-star"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- Background — deep Eastern night sky -->
+  <rect width="400" height="600" fill="url(#rx-bg)"/>
+  <rect width="400" height="600" fill="#3a1800" opacity="0.15"/>
+
+  <!-- Stars in background (Persian night) -->
+  <circle cx="60"  cy="40"  r="1.5" fill="#f0d080" opacity="0.70" filter="url(#rx-star)"/>
+  <circle cx="340" cy="55"  r="1.2" fill="#f0d080" opacity="0.60" filter="url(#rx-star)"/>
+  <circle cx="80"  cy="90"  r="1.0" fill="#f0d080" opacity="0.50"/>
+  <circle cx="320" cy="80"  r="1.5" fill="#f0d080" opacity="0.65" filter="url(#rx-star)"/>
+  <circle cx="50"  cy="130" r="1.0" fill="#f0d080" opacity="0.45"/>
+  <circle cx="355" cy="110" r="1.2" fill="#f0d080" opacity="0.55"/>
+  <circle cx="30"  cy="70"  r="0.8" fill="#f0d080" opacity="0.40"/>
+  <circle cx="370" cy="35"  r="1.0" fill="#f0d080" opacity="0.50"/>
+
+  <!-- Light rays -->
+  <polygon points="198,258 -30,620 110,620" fill="url(#rx-r1)" filter="url(#rx-gl)" opacity="0.62"/>
+  <polygon points="198,258 18,612  80,612" fill="#8a5000" opacity="0.28"/>
+  <polygon points="202,258 430,620 290,620" fill="url(#rx-r2)" filter="url(#rx-gl)" opacity="0.60"/>
+  <polygon points="202,258 378,610 318,610" fill="#f0d080" opacity="0.26"/>
+
+  <!-- Persian outer robe (rich amber/gold) -->
+  <path d="M164,158 Q132,212 120,412 Q200,440 280,412 Q268,212 236,158 Z" fill="url(#rx-robe)" opacity="0.95"/>
+
+  <!-- Decorative border on robe (Persian geometric pattern) -->
+  <path d="M164,158 Q132,212 120,412" fill="none" stroke="#f0d080" stroke-width="2.5" stroke-opacity="0.40" stroke-dasharray="6,4"/>
+  <path d="M236,158 Q268,212 280,412" fill="none" stroke="#f0d080" stroke-width="2.5" stroke-opacity="0.36" stroke-dasharray="6,4"/>
+
+  <!-- Mantle / outer wrap (gold/amber) -->
+  <path d="M164,158 Q118,196 104,322 Q120,336 148,316 Q150,232 178,170 Z" fill="url(#rx-mantle)" opacity="0.78"/>
+  <path d="M236,158 Q260,200 272,322 Q292,328 300,306 Q288,202 250,162 Z" fill="url(#rx-mantle)" opacity="0.72"/>
+
+  <!-- Veil (Eastern style — covers top of head, not sides) -->
+  <ellipse cx="200" cy="88" rx="38" ry="20" fill="#c08020" opacity="0.55"/>
+  <path d="M162,96 Q168,76 200,72 Q232,76 238,96" fill="#c08020" opacity="0.40"/>
+
+  <!-- Neck -->
+  <rect x="193" y="142" width="14" height="16" rx="4" fill="#c8a070" opacity="0.92"/>
+
+  <!-- Head / face (Persian complexion) -->
+  <ellipse cx="200" cy="110" rx="26" ry="30" fill="#c09060" opacity="0.95"/>
+  <!-- Dark hair (Eastern, visible at sides) -->
+  <path d="M174,110 Q176,72 200,68 Q224,72 226,110 Q218,88 200,86 Q182,88 174,110 Z" fill="#1a1008" opacity="0.82"/>
+  <!-- Hair braid hints at sides -->
+  <path d="M174,110 Q168,118 166,138" stroke="#1a1008" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.70"/>
+  <path d="M226,110 Q232,118 234,138" stroke="#1a1008" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.65"/>
+
+  <!-- Eyes (dark, almond-shaped — Persian) -->
+  <ellipse cx="191" cy="110" rx="5" ry="3.5" fill="#1a0c04" opacity="0.90"/>
+  <ellipse cx="209" cy="110" rx="5" ry="3.5" fill="#1a0c04" opacity="0.90"/>
+  <!-- Eye highlights -->
+  <circle cx="193" cy="109" r="1" fill="#ffffff" opacity="0.35"/>
+  <circle cx="211" cy="109" r="1" fill="#ffffff" opacity="0.35"/>
+
+  <!-- Halo -->
+  <circle cx="200" cy="110" r="55" fill="none" stroke="#f0d080" stroke-width="1.8" stroke-opacity="0.62" filter="url(#rx-g2)"/>
+  <circle cx="200" cy="110" r="49" fill="none" stroke="#f0d080" stroke-width="0.6" stroke-opacity="0.22"/>
+
+  <!-- Persian crown / tiara (noble martyr) -->
+  <!-- Base band -->
+  <rect x="175" y="80" width="50" height="9" rx="3" fill="#d4a020" opacity="0.88"/>
+  <!-- Central jewel (star shape) -->
+  <polygon points="200,72 203,79 210,79 204,83 207,90 200,86 193,90 196,83 190,79 197,79" fill="#f0c030" opacity="0.90"/>
+  <circle cx="200" cy="81" r="3.5" fill="#c84020" opacity="0.85"/>
+  <!-- Side gems -->
+  <circle cx="186" cy="84" r="2.5" fill="#2080c0" opacity="0.80"/>
+  <circle cx="214" cy="84" r="2.5" fill="#2080c0" opacity="0.80"/>
+  <circle cx="179" cy="84" r="2" fill="#d4a020" opacity="0.72"/>
+  <circle cx="221" cy="84" r="2" fill="#d4a020" opacity="0.72"/>
+
+  <!-- Left arm — holding palm (martyr) -->
+  <path d="M146,214 Q120,254 112,298" stroke="url(#rx-robe)" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.92"/>
+  <path d="M146,214 Q120,254 112,298" stroke="#f0d080" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.25" stroke-dasharray="5,3"/>
+  <ellipse cx="112" cy="302" rx="13" ry="15" fill="#c09060" opacity="0.90"/>
+  <!-- Palm branch -->
+  <line x1="112" y1="317" x2="112" y2="368" stroke="#3a6818" stroke-width="2.5" opacity="0.82"/>
+  <line x1="112" y1="322" x2="102" y2="342" stroke="#3a6818" stroke-width="1.8" opacity="0.72"/>
+  <line x1="112" y1="332" x2="122" y2="352" stroke="#3a6818" stroke-width="1.8" opacity="0.72"/>
+  <line x1="112" y1="342" x2="104" y2="360" stroke="#3a6818" stroke-width="1.5" opacity="0.65"/>
+  <line x1="112" y1="350" x2="120" y2="366" stroke="#3a6818" stroke-width="1.5" opacity="0.65"/>
+  <ellipse cx="106" cy="337" rx="7" ry="3" fill="#2a5812" opacity="0.68" transform="rotate(-40 106 337)"/>
+  <ellipse cx="118" cy="347" rx="7" ry="3" fill="#2a5812" opacity="0.68" transform="rotate(40 118 347)"/>
+
+  <!-- Right arm — open, raised slightly (witnessing gesture) -->
+  <path d="M254,214 Q280,254 288,298" stroke="url(#rx-robe)" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.88"/>
+  <path d="M254,214 Q280,254 288,298" stroke="#f0d080" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.22" stroke-dasharray="5,3"/>
+  <ellipse cx="288" cy="302" rx="13" ry="15" fill="#c09060" opacity="0.88"/>
+  <!-- Open fingers -->
+  <line x1="282" y1="293" x2="278" y2="283" stroke="#c09060" stroke-width="3" stroke-linecap="round" opacity="0.78"/>
+  <line x1="287" y1="292" x2="285" y2="281" stroke="#c09060" stroke-width="3" stroke-linecap="round" opacity="0.78"/>
+  <line x1="292" y1="293" x2="292" y2="282" stroke="#c09060" stroke-width="3" stroke-linecap="round" opacity="0.78"/>
+  <line x1="296" y1="295" x2="298" y2="284" stroke="#c09060" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+
+  <!-- Bright star symbol (name meaning: bright star) near halo top -->
+  <polygon points="200,43 202,49 208,49 203,53 205,59 200,55 195,59 197,53 192,49 198,49" fill="#f0d080" opacity="0.75" filter="url(#rx-g3)"/>
+
+  <!-- Decorative frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c09020" stroke-width="1.2" stroke-opacity="0.55"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c09020" stroke-width="0.5" stroke-opacity="0.20"/>
+
+  <!-- Name panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#0a0500" opacity="0.90"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c09020" stroke-width="0.5" stroke-opacity="0.32"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c09020" letter-spacing="3" opacity="0.92">SANTA ROXANA  ·  ST. ROXANA OF PERSIA</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#f0d080" font-style="italic">«Santa Roxana de Persia»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#c09020" font-style="italic" opacity="0.82">«Roshanak — Estrella Brillante»</text>
+</svg>

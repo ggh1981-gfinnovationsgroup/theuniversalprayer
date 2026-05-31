@@ -152,6 +152,7 @@ const INTERCESSORS = [
   { id: 'mariaauxiliadora',  subdomain: 'mariaauxiliadora',  chaplet: false, novena: true,  color: '#1a3a7a', short: { es: 'M. Auxiliadora',  en: 'Mary Help'        }, name: { en: 'Mary Help of Christians',               es: 'María Auxiliadora'                        }, specialty: { es: 'Auxilio y juventud salesiana', en: 'Help & Salesian youth'       } },
   { id: 'santarosa',         subdomain: 'santarosa',         chaplet: false, novena: true,  color: '#7a1a3a', short: { es: 'Sta. Rosa',       en: 'St. Rose'         }, name: { en: 'Saint Rose of Lima',                    es: 'Santa Rosa de Lima'                       }, specialty: { es: 'Primera santa de América',     en: 'First saint of the Americas' } },
   { id: 'santaalejandra',    subdomain: 'santaalejandra',    chaplet: false, novena: true,  color: '#3a1a6a', short: { es: 'Sta. Alejandra',  en: 'St. Alexandra'    }, name: { en: 'Saint Alexandra of Rome',               es: 'Santa Alejandra de Roma'                  }, specialty: { es: 'Fe y valentía ante el mundo',  en: 'Faith & courage before the world' } },
+  { id: 'santaroxana',       subdomain: 'santaroxana',       chaplet: false, novena: true,  color: '#7a4800', short: { es: 'Sta. Roxana',    en: 'St. Roxana'       }, name: { en: 'Saint Roxana of Persia',                es: 'Santa Roxana de Persia'                   }, specialty: { es: 'Mártir persa, estrella brillante', en: 'Persian martyr, bright star' } },
 ];
 
 // ── KEYWORD MAP — synonyms for prayer-intent search ──────
@@ -201,6 +202,7 @@ const KEYWORD_MAP = {
   sancristobal:      'viajeros conductores autos viaje transporte peligro travelers drivers cars travel transport danger',
   santarosa:         'rosa flores rosas america latina penitencia contemplacion sufrimiento patron patrona lima peru dominica roses latin america penance contemplation suffering peru dominican',
   santaalejandra:    'alejandra sandra alessandra alexandra roma martir conversion valentia fe nombre onomastica rome martyr courage faith name patron',
+  santaroxana:       'roxana persia persa mártir estrella brillante oriente sasanida sapor fe valentía convertida roshanak persia martyr bright star east courage converted',
 };
 
 // ── STATE ──────────────────────────────────────────
