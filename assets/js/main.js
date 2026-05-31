@@ -151,6 +151,7 @@ const INTERCESSORS = [
   { id: 'perpetuosocorro',   subdomain: 'perpetuosocorro',   chaplet: false, novena: true,  color: '#1a3a7a', short: { es: 'P. Socorro',      en: 'Perp. Help'       }, name: { en: 'Our Lady of Perpetual Help',              es: 'Virgen del Perpetuo Socorro'               }, specialty: { es: 'Auxilio y esperanza',          en: 'Help & hope'                 } },
   { id: 'mariaauxiliadora',  subdomain: 'mariaauxiliadora',  chaplet: false, novena: true,  color: '#1a3a7a', short: { es: 'M. Auxiliadora',  en: 'Mary Help'        }, name: { en: 'Mary Help of Christians',               es: 'María Auxiliadora'                        }, specialty: { es: 'Auxilio y juventud salesiana', en: 'Help & Salesian youth'       } },
   { id: 'santarosa',         subdomain: 'santarosa',         chaplet: false, novena: true,  color: '#7a1a3a', short: { es: 'Sta. Rosa',       en: 'St. Rose'         }, name: { en: 'Saint Rose of Lima',                    es: 'Santa Rosa de Lima'                       }, specialty: { es: 'Primera santa de América',     en: 'First saint of the Americas' } },
+  { id: 'santaalejandra',    subdomain: 'santaalejandra',    chaplet: false, novena: true,  color: '#3a1a6a', short: { es: 'Sta. Alejandra',  en: 'St. Alexandra'    }, name: { en: 'Saint Alexandra of Rome',               es: 'Santa Alejandra de Roma'                  }, specialty: { es: 'Fe y valentía ante el mundo',  en: 'Faith & courage before the world' } },
 ];
 
 // ── KEYWORD MAP — synonyms for prayer-intent search ──────
@@ -199,6 +200,7 @@ const KEYWORD_MAP = {
   sannicolas:        'ninos generosidad regalos navidad pobres deudas children generosity gifts christmas poor debts sailors',
   sancristobal:      'viajeros conductores autos viaje transporte peligro travelers drivers cars travel transport danger',
   santarosa:         'rosa flores rosas america latina penitencia contemplacion sufrimiento patron patrona lima peru dominica roses latin america penance contemplation suffering peru dominican',
+  santaalejandra:    'alejandra sandra alessandra alexandra roma martir conversion valentia fe nombre onomastica rome martyr courage faith name patron',
 };
 
 // ── STATE ──────────────────────────────────────────

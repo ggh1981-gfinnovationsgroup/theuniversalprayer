@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="sa-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#0f0818"/><stop offset="100%" stop-color="#06030e"/>
+    </radialGradient>
+    <linearGradient id="sa-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#4a1a8a" stop-opacity="1"/><stop offset="100%" stop-color="#1a0838" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="sa-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#c0a0e0" stop-opacity="1"/><stop offset="100%" stop-color="#7050a0" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="sa-robe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5a2090"/><stop offset="100%" stop-color="#3a1060"/>
+    </linearGradient>
+    <filter id="sa-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sa-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sa-g3"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="600" fill="url(#sa-bg)"/>
+  <rect width="400" height="600" fill="#200840" opacity="0.14"/>
+
+  <!-- Light rays -->
+  <polygon points="198,255 -30,620 110,620" fill="url(#sa-r1)" filter="url(#sa-gl)" opacity="0.62"/>
+  <polygon points="198,255 20,610  82,610" fill="#4a1a8a" opacity="0.28"/>
+  <polygon points="202,255 430,620 290,620" fill="url(#sa-r2)" filter="url(#sa-gl)" opacity="0.56"/>
+  <polygon points="202,255 378,608 318,608" fill="#c0a0e0" opacity="0.25"/>
+
+  <!-- Roman stola (outer garment, rich purple) -->
+  <path d="M162,155 Q130,210 118,408 Q200,436 282,408 Q270,210 238,155 Z" fill="url(#sa-robe)" opacity="0.95"/>
+
+  <!-- Lighter tunica visible at edges -->
+  <path d="M238,155 Q262,200 272,360 L282,408 Q270,380 265,300 Q258,210 242,160 Z" fill="#8050c0" opacity="0.50"/>
+  <path d="M162,155 Q138,200 128,360 L118,408 Q130,380 135,300 Q142,210 158,160 Z" fill="#8050c0" opacity="0.45"/>
+
+  <!-- Neck -->
+  <rect x="193" y="140" width="14" height="16" rx="4" fill="#c8a070" opacity="0.92"/>
+
+  <!-- Head / face -->
+  <ellipse cx="200" cy="107" rx="26" ry="30" fill="#c8a070" opacity="0.94"/>
+  <!-- Hair (dark, Roman style, center part) -->
+  <path d="M174,107 Q176,70 200,66 Q224,70 226,107 Q218,84 200,82 Q182,84 174,107 Z" fill="#2a1808" opacity="0.80"/>
+  <!-- Bun/updo at back — Roman hairstyle hint -->
+  <ellipse cx="200" cy="72" rx="14" ry="8" fill="#2a1808" opacity="0.60"/>
+
+  <!-- Eyes -->
+  <ellipse cx="191" cy="107" rx="4" ry="3" fill="#2a1808" opacity="0.88"/>
+  <ellipse cx="209" cy="107" rx="4" ry="3" fill="#2a1808" opacity="0.88"/>
+
+  <!-- Halo -->
+  <circle cx="200" cy="107" r="55" fill="none" stroke="#c0a0e0" stroke-width="1.8" stroke-opacity="0.62" filter="url(#sa-g2)"/>
+  <circle cx="200" cy="107" r="49" fill="none" stroke="#c0a0e0" stroke-width="0.6" stroke-opacity="0.22"/>
+
+  <!-- Roman diadem / crown (noble martyr) -->
+  <rect x="178" y="77" width="44" height="7" rx="3" fill="#d4af40" opacity="0.85"/>
+  <!-- Diadem gems -->
+  <circle cx="200" cy="80" r="4" fill="#8040c0" opacity="0.90"/>
+  <circle cx="188" cy="80" r="2.5" fill="#c080e0" opacity="0.80"/>
+  <circle cx="212" cy="80" r="2.5" fill="#c080e0" opacity="0.80"/>
+  <circle cx="182" cy="80" r="2" fill="#d4af40" opacity="0.75"/>
+  <circle cx="218" cy="80" r="2" fill="#d4af40" opacity="0.75"/>
+
+  <!-- Left arm: holding palm branch (martyr symbol) -->
+  <path d="M148,210 Q122,250 114,295" stroke="url(#sa-robe)" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.90"/>
+  <path d="M148,210 Q122,250 114,295" stroke="#8050c0" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <!-- Hand left -->
+  <ellipse cx="114" cy="299" rx="13" ry="15" fill="#c8a070" opacity="0.90"/>
+  <!-- Palm branch in left hand -->
+  <line x1="114" y1="314" x2="114" y2="365" stroke="#3a7020" stroke-width="2.5" opacity="0.82"/>
+  <line x1="114" y1="320" x2="104" y2="340" stroke="#3a7020" stroke-width="1.8" opacity="0.72"/>
+  <line x1="114" y1="330" x2="124" y2="350" stroke="#3a7020" stroke-width="1.8" opacity="0.72"/>
+  <line x1="114" y1="340" x2="106" y2="358" stroke="#3a7020" stroke-width="1.5" opacity="0.65"/>
+  <line x1="114" y1="348" x2="122" y2="364" stroke="#3a7020" stroke-width="1.5" opacity="0.65"/>
+  <!-- Palm leaves -->
+  <ellipse cx="108" cy="335" rx="7" ry="3" fill="#2a6018" opacity="0.68" transform="rotate(-40 108 335)"/>
+  <ellipse cx="120" cy="345" rx="7" ry="3" fill="#2a6018" opacity="0.68" transform="rotate(40 120 345)"/>
+
+  <!-- Right arm: slightly extended, open hand (gesture of witness) -->
+  <path d="M252,210 Q278,250 286,295" stroke="url(#sa-robe)" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.86"/>
+  <path d="M252,210 Q278,250 286,295" stroke="#8050c0" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.32"/>
+  <!-- Hand right -->
+  <ellipse cx="286" cy="299" rx="13" ry="15" fill="#c8a070" opacity="0.88"/>
+  <!-- Fingers (open hand, witnessing gesture) -->
+  <line x1="280" y1="290" x2="276" y2="280" stroke="#c8a070" stroke-width="3" stroke-linecap="round" opacity="0.75"/>
+  <line x1="285" y1="289" x2="283" y2="278" stroke="#c8a070" stroke-width="3" stroke-linecap="round" opacity="0.75"/>
+  <line x1="290" y1="290" x2="290" y2="279" stroke="#c8a070" stroke-width="3" stroke-linecap="round" opacity="0.75"/>
+  <line x1="294" y1="292" x2="296" y2="281" stroke="#c8a070" stroke-width="3" stroke-linecap="round" opacity="0.70"/>
+
+  <!-- Decorative frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#8050c0" stroke-width="1.2" stroke-opacity="0.55"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#8050c0" stroke-width="0.5" stroke-opacity="0.20"/>
+
+  <!-- Name panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#06030e" opacity="0.90"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#8050c0" stroke-width="0.5" stroke-opacity="0.32"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#a070d0" letter-spacing="3" opacity="0.92">STA. ALEJANDRA  ·  ST. ALEXANDRA OF ROME</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#c0a0e0" font-style="italic">«Santa Alejandra de Roma»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#a070d0" font-style="italic" opacity="0.82">«Alejandra · Sandra · Alessandra»</text>
+</svg>
