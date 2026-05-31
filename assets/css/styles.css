@@ -481,17 +481,25 @@ body {
 
 /* ── INTERCESSOR PAGE: HERO ───────────────────────── */
 .intercessor-hero {
-  position: relative;
-  height: clamp(340px, 50vw, 520px);
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.intercessor-hero-text {
+  width: 100%;
+  text-align: center;
+  padding: 1.25rem 1.25rem 0.75rem;
+  background: var(--bg-surface);
 }
 
 .intercessor-image-wrap {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  height: clamp(280px, 45vw, 480px);
+  position: relative;
+  overflow: hidden;
 }
 .intercessor-img {
   width: 100%;
@@ -502,17 +510,7 @@ body {
 .intercessor-img-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(10,13,20,0.2) 0%, rgba(10,13,20,0.85) 100%);
-}
-
-.intercessor-hero-text {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  width: 100%;
-  padding: 0 1.25rem;
+  background: linear-gradient(to bottom, rgba(10,13,20,0) 60%, rgba(10,13,20,0.4) 100%);
 }
 
 .intercessor-name {
