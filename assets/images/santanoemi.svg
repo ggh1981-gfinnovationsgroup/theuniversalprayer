@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <!-- Background: warm earthy ancient Near Eastern tones -->
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#8a6020"/>
+      <stop offset="100%" stop-color="#2d1a00"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f0d870" stop-opacity="0.9"/>
+      <stop offset="65%" stop-color="#c8a030" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#c8a030" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background fill -->
+  <rect width="400" height="500" fill="url(#bg)"/>
+
+  <!-- Ancient grain field silhouette (background) -->
+  <g opacity="0.25" fill="#d4a040">
+    <ellipse cx="60" cy="420" rx="12" ry="30"/>
+    <ellipse cx="80" cy="415" rx="10" ry="25"/>
+    <ellipse cx="100" cy="425" rx="11" ry="28"/>
+    <ellipse cx="300" cy="418" rx="12" ry="30"/>
+    <ellipse cx="320" cy="412" rx="10" ry="25"/>
+    <ellipse cx="340" cy="422" rx="11" ry="28"/>
+    <ellipse cx="360" cy="416" rx="10" ry="24"/>
+  </g>
+
+  <!-- Decorative border: ancient Near Eastern geometric style -->
+  <g stroke="#c89030" stroke-width="2" fill="none" opacity="0.85">
+    <rect x="12" y="12" width="376" height="476" rx="4"/>
+    <rect x="18" y="18" width="364" height="464" rx="3"/>
+    <!-- geometric diamond pattern top -->
+    <path d="M30,15 L45,24 L60,15 L75,24 L90,15 L105,24 L120,15 L135,24 L150,15 L165,24 L180,15 L195,24 L210,15 L225,24 L240,15 L255,24 L270,15 L285,24 L300,15 L315,24 L330,15 L345,24 L360,15 L375,24"/>
+    <path d="M30,481 L45,472 L60,481 L75,472 L90,481 L105,472 L120,481 L135,472 L150,481 L165,472 L180,481 L195,472 L210,481 L225,472 L240,481 L255,472 L270,481 L285,472 L300,481 L315,472 L330,481 L345,472 L360,481 L375,472"/>
+  </g>
+
+  <!-- Stars (night sky in Moab/Bethlehem) -->
+  <g fill="#f8e8a0" opacity="0.65">
+    <circle cx="55" cy="50" r="2"/>
+    <circle cx="90" cy="38" r="1.2"/>
+    <circle cx="140" cy="55" r="1.8"/>
+    <circle cx="260" cy="42" r="1.2"/>
+    <circle cx="320" cy="52" r="2"/>
+    <circle cx="350" cy="35" r="1.5"/>
+    <circle cx="75" cy="70" r="1"/>
+    <circle cx="180" cy="48" r="1.5"/>
+    <!-- Bright star of Bethlehem -->
+    <path d="M200,35 L202,42 L209,42 L203,47 L205,54 L200,49 L195,54 L197,47 L191,42 L198,42 Z" fill="#ffe060" filter="url(#glow)" opacity="0.8"/>
+  </g>
+
+  <!-- Halo -->
+  <ellipse cx="200" cy="148" rx="62" ry="62" fill="url(#halo)"/>
+  <circle cx="200" cy="148" r="58" fill="none" stroke="#c8a030" stroke-width="2.5" opacity="0.9"/>
+  <circle cx="200" cy="148" r="48" fill="none" stroke="#c8a030" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Sheaf of wheat arcing over halo (symbol of Ruth & Naomi — gleaning) -->
+  <g stroke="#c8a040" stroke-width="1.5" fill="none" opacity="0.6">
+    <path d="M145,148 Q148,120 200,110 Q252,120 255,148"/>
+  </g>
+  <g fill="#d4a020" opacity="0.7">
+    <!-- wheat heads along the arc -->
+    <ellipse cx="155" cy="135" rx="5" ry="8" transform="rotate(-30,155,135)"/>
+    <ellipse cx="168" cy="118" rx="5" ry="8" transform="rotate(-15,168,118)"/>
+    <ellipse cx="184" cy="110" rx="5" ry="8"/>
+    <ellipse cx="200" cy="108" rx="5" ry="8"/>
+    <ellipse cx="216" cy="110" rx="5" ry="8"/>
+    <ellipse cx="232" cy="118" rx="5" ry="8" transform="rotate(15,232,118)"/>
+    <ellipse cx="245" cy="135" rx="5" ry="8" transform="rotate(30,245,135)"/>
+  </g>
+
+  <!-- Body: ancient Near Eastern earth-toned robes -->
+  <!-- Base robe (amber/ochre) -->
+  <ellipse cx="200" cy="365" rx="100" ry="128" fill="#8a5c1a"/>
+  <!-- Outer wrap/mantle (deep amber with darker shade) -->
+  <path d="M110,250 Q90,370 95,490 L145,490 Q125,375 135,262 Z" fill="#6a3c08"/>
+  <path d="M290,250 Q310,370 305,490 L255,490 Q275,375 265,262 Z" fill="#6a3c08"/>
+  <!-- Inner tunic visible at chest -->
+  <ellipse cx="200" cy="270" rx="55" ry="42" fill="#c8862a"/>
+  <!-- Mantle over shoulders -->
+  <path d="M140,230 Q160,225 200,228 Q240,225 260,230 Q250,280 240,310 Q220,320 200,322 Q180,320 160,310 Q150,280 140,230 Z" fill="#6a3c08"/>
+
+  <!-- Veil/head covering: traditional Near Eastern -->
+  <ellipse cx="200" cy="165" rx="68" ry="55" fill="#c8962a"/>
+  <!-- Veil draping down -->
+  <path d="M134,150 Q130,200 138,250 Q160,260 200,262 Q240,260 262,250 Q270,200 266,150 Q240,165 200,167 Q160,165 134,150 Z" fill="#b07820"/>
+
+  <!-- Neck -->
+  <ellipse cx="200" cy="220" rx="20" ry="25" fill="#c89870"/>
+
+  <!-- Head/face skin -->
+  <ellipse cx="200" cy="178" rx="42" ry="48" fill="#c89870"/>
+
+  <!-- Face details -->
+  <!-- Eyes: warm brown, wise and gentle -->
+  <ellipse cx="186" cy="175" rx="7" ry="5.5" fill="white"/>
+  <ellipse cx="214" cy="175" rx="7" ry="5.5" fill="white"/>
+  <ellipse cx="187" cy="176" rx="4.5" ry="4.5" fill="#3a1a00"/>
+  <ellipse cx="215" cy="176" rx="4.5" ry="4.5" fill="#3a1a00"/>
+  <circle cx="188" cy="175" r="1.5" fill="black"/>
+  <circle cx="216" cy="175" r="1.5" fill="black"/>
+  <circle cx="189" cy="174" r="1" fill="white"/>
+  <circle cx="217" cy="174" r="1" fill="white"/>
+  <!-- Gentle older woman — slight wrinkles at eyes -->
+  <path d="M178,171 Q183,170 188,172" stroke="#a07050" stroke-width="0.8" fill="none"/>
+  <path d="M212,172 Q217,170 222,171" stroke="#a07050" stroke-width="0.8" fill="none"/>
+  <!-- Eyebrows -->
+  <path d="M179,169 Q186,166 193,168" stroke="#4a2a10" stroke-width="1.5" fill="none"/>
+  <path d="M207,168 Q214,166 221,169" stroke="#4a2a10" stroke-width="1.5" fill="none"/>
+  <!-- Nose -->
+  <path d="M197,183 Q200,190 203,183" stroke="#a07050" stroke-width="1.2" fill="none"/>
+  <!-- Mouth: warm, peaceful smile of a woman who has found joy again -->
+  <path d="M190,197 Q200,205 210,197" stroke="#904030" stroke-width="2" fill="none"/>
+  <!-- Lines of age and wisdom -->
+  <path d="M177,182 Q175,190 177,198" stroke="#a07050" stroke-width="0.7" fill="none" opacity="0.5"/>
+  <path d="M223,182 Q225,190 223,198" stroke="#a07050" stroke-width="0.7" fill="none" opacity="0.5"/>
+
+  <!-- Silver hair visible at veil edge (older woman) -->
+  <path d="M160,165 Q158,180 162,200" stroke="#c8c0b0" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M240,165 Q242,180 238,200" stroke="#c8c0b0" stroke-width="3" fill="none" opacity="0.6"/>
+
+  <!-- Sheaf of wheat in right hand (gleaning — Book of Ruth) -->
+  <g transform="translate(258,320)">
+    <line x1="0" y1="0" x2="5" y2="-60" stroke="#8a6010" stroke-width="3"/>
+    <line x1="5" y1="-60" x2="-5" y2="-90" stroke="#8a6010" stroke-width="2"/>
+    <line x1="5" y1="-60" x2="5" y2="-90" stroke="#8a6010" stroke-width="2"/>
+    <line x1="5" y1="-60" x2="15" y2="-88" stroke="#8a6010" stroke-width="2"/>
+    <!-- wheat heads -->
+    <ellipse cx="-5" cy="-94" rx="4" ry="7" fill="#d4a020"/>
+    <ellipse cx="5" cy="-96" rx="4" ry="7" fill="#d4a020"/>
+    <ellipse cx="15" cy="-92" rx="4" ry="7" fill="#d4a020"/>
+    <!-- wheat awns -->
+    <line x1="-5" y1="-101" x2="-7" y2="-110" stroke="#c8a020" stroke-width="0.8"/>
+    <line x1="5" y1="-103" x2="5" y2="-112" stroke="#c8a020" stroke-width="0.8"/>
+    <line x1="15" y1="-99" x2="17" y2="-108" stroke="#c8a020" stroke-width="0.8"/>
+  </g>
+
+  <!-- Walking staff in left hand (woman of the road) -->
+  <g transform="translate(142,280)">
+    <line x1="0" y1="0" x2="-5" y2="-100" stroke="#6a3c10" stroke-width="5" stroke-linecap="round"/>
+    <line x1="-5" y1="-100" x2="-7" y2="-140" stroke="#6a3c10" stroke-width="4" stroke-linecap="round"/>
+    <!-- hook at top -->
+    <path d="M-7,-140 Q-18,-148 -16,-135" stroke="#6a3c10" stroke-width="3.5" fill="none"/>
+  </g>
+
+  <!-- Robe decoration: geometric border at hem, biblical style -->
+  <g stroke="#c8a030" stroke-width="1.2" fill="none" opacity="0.65">
+    <!-- collar -->
+    <path d="M175,228 Q200,238 225,228"/>
+    <!-- chest panel edge -->
+    <path d="M165,245 Q200,252 235,245"/>
+    <!-- hem geometric border -->
+    <path d="M115,450 Q200,462 285,450"/>
+    <path d="M118,458 Q200,470 282,458"/>
+    <!-- geometric diamonds along hem -->
+    <path d="M130,454 L140,448 L150,454 L140,460 Z" fill="#c8a030" opacity="0.4"/>
+    <path d="M160,454 L170,448 L180,454 L170,460 Z" fill="#c8a030" opacity="0.4"/>
+    <path d="M210,454 L220,448 L230,454 L220,460 Z" fill="#c8a030" opacity="0.4"/>
+    <path d="M240,454 L250,448 L260,454 L250,460 Z" fill="#c8a030" opacity="0.4"/>
+  </g>
+
+  <!-- Label panel -->
+  <rect x="45" y="452" width="310" height="42" rx="8" fill="#1a0d00" opacity="0.88"/>
+  <text x="200" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="13.5" fill="#f0d870" font-weight="bold">Santa Noemí — Naomi</text>
+  <text x="200" y="487" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#c8a050">Matrona del Libro de Rut — Fe y esperanza</text>
+</svg>

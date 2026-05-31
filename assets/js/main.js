@@ -153,6 +153,8 @@ const INTERCESSORS = [
   { id: 'santarosa',         subdomain: 'santarosa',         chaplet: false, novena: true,  color: '#7a1a3a', short: { es: 'Sta. Rosa',       en: 'St. Rose'         }, name: { en: 'Saint Rose of Lima',                    es: 'Santa Rosa de Lima'                       }, specialty: { es: 'Primera santa de América',     en: 'First saint of the Americas' } },
   { id: 'santaalejandra',    subdomain: 'santaalejandra',    chaplet: false, novena: true,  color: '#3a1a6a', short: { es: 'Sta. Alejandra',  en: 'St. Alexandra'    }, name: { en: 'Saint Alexandra of Rome',               es: 'Santa Alejandra de Roma'                  }, specialty: { es: 'Fe y valentía ante el mundo',  en: 'Faith & courage before the world' } },
   { id: 'santaroxana',       subdomain: 'santaroxana',       chaplet: false, novena: true,  color: '#7a4800', short: { es: 'Sta. Roxana',    en: 'St. Roxana'       }, name: { en: 'Saint Roxana of Persia',                es: 'Santa Roxana de Persia'                   }, specialty: { es: 'Mártir persa, estrella brillante', en: 'Persian martyr, bright star' } },
+  { id: 'santagwendolina',   subdomain: 'santagwendolina',   chaplet: false, novena: true,  color: '#1a5a3a', short: { es: 'Sta. Gwendolina', en: 'St. Gwendoline'   }, name: { en: 'Saint Gwendoline',                      es: 'Santa Gwendolina'                         }, specialty: { es: 'Mártir galesa, pureza y fe celta', en: 'Welsh martyr, Celtic faith and purity' } },
+  { id: 'santanoemi',        subdomain: 'santanoemi',        chaplet: false, novena: true,  color: '#5a3800', short: { es: 'Sta. Noemí',     en: 'St. Naomi'        }, name: { en: 'Saint Naomi',                           es: 'Santa Noemí'                              }, specialty: { es: 'Matrona bíblica del Libro de Rut', en: 'Biblical matriarch from the Book of Ruth' } },
 ];
 
 // ── KEYWORD MAP — synonyms for prayer-intent search ──────
@@ -203,6 +205,8 @@ const KEYWORD_MAP = {
   santarosa:         'rosa flores rosas america latina penitencia contemplacion sufrimiento patron patrona lima peru dominica roses latin america penance contemplation suffering peru dominican',
   santaalejandra:    'alejandra sandra alessandra alexandra roma martir conversion valentia fe nombre onomastica rome martyr courage faith name patron',
   santaroxana:       'roxana persia persa mártir estrella brillante oriente sasanida sapor fe valentía convertida roshanak persia martyr bright star east courage converted',
+  santagwendolina:   'wendy gwen gwyneth gwendoline gwendolina gales wales celta celtic mártir pureza virginidad nombre peter pan blanca pura fidelidad vocacion martyr purity celtic faith vocation white blessed',
+  santanoemi:        'noemi naomi noemí rut ruth biblia biblica belen belen judea moab viuda fidelidad matrona esperanza providencia familia suegra nuera gleaning wheat boaz obed david biblical widow faithfulness matriarch hope providence family mother-in-law',
 };
 
 // ── STATE ──────────────────────────────────────────

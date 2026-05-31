@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <!-- Background: deep green Celtic sky -->
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#2a7a4a"/>
+      <stop offset="100%" stop-color="#0d2d1a"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f0e89a" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#d4b840" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#d4b840" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="500" fill="url(#bg)"/>
+
+  <!-- Celtic knotwork border top -->
+  <g stroke="#c8a040" stroke-width="2" fill="none" opacity="0.8">
+    <!-- top bar -->
+    <rect x="10" y="10" width="380" height="18" rx="3" stroke-width="1.5"/>
+    <!-- Celtic knot repeating pattern top -->
+    <path d="M20,10 Q30,19 40,10 Q50,19 60,10 Q70,19 80,10 Q90,19 100,10 Q110,19 120,10 Q130,19 140,10 Q150,19 160,10 Q170,19 180,10 Q190,19 200,10 Q210,19 220,10 Q230,19 240,10 Q250,19 260,10 Q270,19 280,10 Q290,19 300,10 Q310,19 320,10 Q330,19 340,10 Q350,19 360,10 Q370,19 380,10"/>
+    <!-- bottom bar -->
+    <rect x="10" y="472" width="380" height="18" rx="3" stroke-width="1.5"/>
+    <path d="M20,490 Q30,481 40,490 Q50,481 60,490 Q70,481 80,490 Q90,481 100,490 Q110,481 120,490 Q130,481 140,490 Q150,481 160,490 Q170,481 180,490 Q190,481 200,490 Q210,481 220,490 Q230,481 240,490 Q250,481 260,490 Q270,481 280,490 Q290,481 300,490 Q310,481 320,490 Q330,481 340,490 Q350,481 360,490 Q370,481 380,490"/>
+    <!-- left bar -->
+    <rect x="10" y="10" width="18" height="480" rx="3" stroke-width="1.5"/>
+    <!-- right bar -->
+    <rect x="372" y="10" width="18" height="480" rx="3" stroke-width="1.5"/>
+  </g>
+
+  <!-- Stars (Celtic night) -->
+  <g fill="#f0e8b0" opacity="0.7">
+    <circle cx="60" cy="55" r="1.5"/>
+    <circle cx="100" cy="40" r="1"/>
+    <circle cx="150" cy="60" r="1.5"/>
+    <circle cx="250" cy="45" r="1"/>
+    <circle cx="310" cy="55" r="1.5"/>
+    <circle cx="340" cy="70" r="1"/>
+    <circle cx="80" cy="75" r="1"/>
+    <circle cx="360" cy="40" r="1.5"/>
+  </g>
+
+  <!-- Halo -->
+  <ellipse cx="200" cy="140" rx="65" ry="65" fill="url(#halo)"/>
+  <circle cx="200" cy="140" r="60" fill="none" stroke="#d4b840" stroke-width="2.5" opacity="0.9"/>
+
+  <!-- Celtic cross halo inner detail -->
+  <g stroke="#d4b840" stroke-width="1" fill="none" opacity="0.6">
+    <circle cx="200" cy="140" r="50"/>
+    <line x1="150" y1="140" x2="250" y2="140"/>
+    <line x1="200" y1="90" x2="200" y2="190"/>
+    <circle cx="200" cy="140" r="20"/>
+  </g>
+
+  <!-- Body/robe: white and green Celtic -->
+  <!-- Outer mantle (forest green) -->
+  <ellipse cx="200" cy="360" rx="105" ry="130" fill="#1a5a2a"/>
+  <!-- Inner robe (cream white) -->
+  <ellipse cx="200" cy="360" rx="75" ry="120" fill="#f0ece0"/>
+  <!-- Green mantle sides -->
+  <path d="M95,270 Q80,380 90,490 L140,490 Q120,390 130,290 Z" fill="#1a5a2a"/>
+  <path d="M305,270 Q320,380 310,490 L260,490 Q280,390 270,290 Z" fill="#1a5a2a"/>
+
+  <!-- Neck -->
+  <ellipse cx="200" cy="215" rx="22" ry="28" fill="#e8c8a0"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="170" rx="45" ry="52" fill="#e8c8a0"/>
+
+  <!-- Hair (dark reddish-brown, flowing) -->
+  <path d="M160,150 Q155,120 158,100 Q170,80 200,75 Q230,80 242,100 Q245,120 240,150 Q230,160 200,162 Q170,160 160,150 Z" fill="#4a1a00"/>
+  <!-- Hair sides flowing -->
+  <path d="M158,140 Q145,170 148,210 Q155,220 165,215 Q160,180 162,155 Z" fill="#4a1a00"/>
+  <path d="M242,140 Q255,170 252,210 Q245,220 235,215 Q240,180 238,155 Z" fill="#4a1a00"/>
+
+  <!-- Crown of white flowers (Celtic/lily style) -->
+  <g fill="#f8f0e0" stroke="#d4b840" stroke-width="0.8">
+    <!-- flower petals left -->
+    <ellipse cx="163" cy="115" rx="8" ry="5" transform="rotate(-30,163,115)"/>
+    <ellipse cx="163" cy="115" rx="8" ry="5" transform="rotate(30,163,115)"/>
+    <ellipse cx="163" cy="115" rx="8" ry="5" transform="rotate(90,163,115)"/>
+    <circle cx="163" cy="115" r="5" fill="#f8e060"/>
+    <!-- flower petals center -->
+    <ellipse cx="200" cy="105" rx="9" ry="5" transform="rotate(-30,200,105)"/>
+    <ellipse cx="200" cy="105" rx="9" ry="5" transform="rotate(30,200,105)"/>
+    <ellipse cx="200" cy="105" rx="9" ry="5" transform="rotate(90,200,105)"/>
+    <circle cx="200" cy="105" r="5" fill="#f8e060"/>
+    <!-- flower petals right -->
+    <ellipse cx="237" cy="115" rx="8" ry="5" transform="rotate(-30,237,115)"/>
+    <ellipse cx="237" cy="115" rx="8" ry="5" transform="rotate(30,237,115)"/>
+    <ellipse cx="237" cy="115" rx="8" ry="5" transform="rotate(90,237,115)"/>
+    <circle cx="237" cy="115" r="5" fill="#f8e060"/>
+  </g>
+  <!-- Crown band -->
+  <path d="M158,120 Q200,108 242,120" stroke="#c8a040" stroke-width="2.5" fill="none"/>
+
+  <!-- Face -->
+  <!-- Eyes -->
+  <ellipse cx="186" cy="168" rx="7" ry="5" fill="white"/>
+  <ellipse cx="214" cy="168" rx="7" ry="5" fill="white"/>
+  <ellipse cx="187" cy="169" rx="4" ry="4" fill="#2a4a00"/>
+  <ellipse cx="215" cy="169" rx="4" ry="4" fill="#2a4a00"/>
+  <circle cx="188" cy="168" r="1.5" fill="black"/>
+  <circle cx="216" cy="168" r="1.5" fill="black"/>
+  <circle cx="189" cy="167" r="1" fill="white"/>
+  <circle cx="217" cy="167" r="1" fill="white"/>
+  <!-- Eyebrows -->
+  <path d="M180,161 Q187,158 194,160" stroke="#4a2a00" stroke-width="1.5" fill="none"/>
+  <path d="M206,160 Q213,158 220,161" stroke="#4a2a00" stroke-width="1.5" fill="none"/>
+  <!-- Nose -->
+  <path d="M198,175 Q200,182 202,175" stroke="#c8a080" stroke-width="1.2" fill="none"/>
+  <!-- Mouth -->
+  <path d="M191,190 Q200,197 209,190" stroke="#b06040" stroke-width="1.8" fill="none"/>
+  <!-- Gentle smile -->
+  <path d="M193,192 Q200,198 207,192" stroke="#b06040" stroke-width="1" fill="none" opacity="0.5"/>
+
+  <!-- Celtic cross held in right hand -->
+  <g transform="translate(255,310)">
+    <!-- cross shaft -->
+    <rect x="-4" y="-40" width="8" height="80" fill="#c8a040" rx="2"/>
+    <rect x="-25" y="-15" width="50" height="8" fill="#c8a040" rx="2"/>
+    <!-- circle at crossing -->
+    <circle cx="0" cy="-12" r="18" fill="none" stroke="#c8a040" stroke-width="3"/>
+    <!-- knotwork hint -->
+    <circle cx="0" cy="-12" r="12" fill="none" stroke="#c8a040" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Lily in left hand -->
+  <g transform="translate(148,305)">
+    <!-- stem -->
+    <line x1="0" y1="0" x2="-8" y2="-50" stroke="#2a5a1a" stroke-width="2.5"/>
+    <line x1="-8" y1="-50" x2="-6" y2="-85" stroke="#2a5a1a" stroke-width="2"/>
+    <!-- lily petals -->
+    <ellipse cx="-6" cy="-88" rx="9" ry="6" transform="rotate(-20,-6,-88)" fill="white" stroke="#d4d0c0" stroke-width="0.8"/>
+    <ellipse cx="-6" cy="-88" rx="9" ry="6" transform="rotate(20,-6,-88)" fill="white" stroke="#d4d0c0" stroke-width="0.8"/>
+    <ellipse cx="-6" cy="-88" rx="9" ry="6" transform="rotate(60,-6,-88)" fill="white" stroke="#d4d0c0" stroke-width="0.8"/>
+    <ellipse cx="-6" cy="-92" rx="4" ry="4" fill="#f8e060"/>
+  </g>
+
+  <!-- Robe Celtic border details -->
+  <g stroke="#c8a040" stroke-width="1" fill="none" opacity="0.7">
+    <!-- collar -->
+    <path d="M175,222 Q200,232 225,222"/>
+    <!-- hem decoration -->
+    <path d="M130,450 Q200,460 270,450"/>
+    <path d="M135,458 Q200,468 265,458"/>
+    <!-- Celtic interlace on chest -->
+    <path d="M180,270 Q190,260 200,270 Q210,280 220,270 Q230,260 240,270" opacity="0.5"/>
+  </g>
+
+  <!-- Label panel -->
+  <rect x="50" y="450" width="300" height="42" rx="8" fill="#0d2d1a" opacity="0.85"/>
+  <text x="200" y="468" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#f0e8a0" font-weight="bold">Santa Gwendolina · Wendy · Gwen</text>
+  <text x="200" y="485" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#a0c890">18 de enero — Mártir de Gales</text>
+</svg>
