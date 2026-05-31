@@ -1,17 +1,17 @@
 {
   "id": "santamonica",
   "name": {
-    "es": "Santa M�nica",
+    "es": "Santa Mónica",
     "en": "Saint Monica"
   },
   "color": "#1a3a6a",
   "image": "assets/images/santamonica.svg",
   "specialty": {
-    "es": "Madres y conversi�n",
+    "es": "Madres y conversión",
     "en": "Mothers & conversion"
   },
   "prayer": {
-    "es": "Santa M�nica, madre perseverante en la oraci�n, intercede por nosotros.",
+    "es": "Santa Mónica, madre perseverante en la oración, intercede por nosotros.",
     "en": "Saint Monica, mother persevering in prayer, intercede for us."
   },
   "history": {
@@ -21,47 +21,47 @@
   "novena": [
     {
       "day": 1,
-      "es": "Por los hijos alejados de la fe\n\nSanta M�nica, que lloraste por tu hijo Agust�n durante a�os sin perder la esperanza, intercede por todos los padres que tienen hijos alejados de Dios. Que nunca dejen de orar y conf�en en que Dios escucha cada l�grima. Am�n.",
+      "es": "Por los hijos alejados de la fe\n\nSanta Mónica, que lloraste por tu hijo Agustín durante años sin perder la esperanza, intercede por todos los padres que tienen hijos alejados de Dios. Que nunca dejen de orar y confíen en que Dios escucha cada lágrima. Amén.",
       "en": "For children far from faith\n\nSaint Monica, who wept for your son Augustine for years without losing hope, intercede for all parents with children far from God. May they never stop praying and trust that God hears every tear. Amen."
     },
     {
       "day": 2,
-      "es": "Por los matrimonios dif�ciles\n\nSanta M�nica, que soportaste con paciencia y oraci�n a un esposo dif�cil y lo viste convertirse, intercede por todos los matrimonios en crisis. Que la gracia de Dios transforme los corazones endurecidos. Am�n.",
+      "es": "Por los matrimonios difíciles\n\nSanta Mónica, que soportaste con paciencia y oración a un esposo difícil y lo viste convertirse, intercede por todos los matrimonios en crisis. Que la gracia de Dios transforme los corazones endurecidos. Amén.",
       "en": "For difficult marriages\n\nSaint Monica, who patiently and prayerfully endured a difficult husband and saw him convert, intercede for all marriages in crisis. May God's grace transform hardened hearts. Amen."
     },
     {
       "day": 3,
-      "es": "Por la perseverancia en la oraci�n\n\nSanta M�nica, que oraste durante d�cadas sin ver el fruto inmediato de tus oraciones, ens��anos a perseverar en la oraci�n aunque el cielo parezca estar callado. Am�n.",
+      "es": "Por la perseverancia en la oración\n\nSanta Mónica, que oraste durante décadas sin ver el fruto inmediato de tus oraciones, enséñanos a perseverar en la oración aunque el cielo parezca estar callado. Amén.",
       "en": "For perseverance in prayer\n\nSaint Monica, who prayed for decades without seeing immediate fruit from your prayers, teach us to persevere in prayer even when heaven seems silent. Amen."
     },
     {
       "day": 4,
-      "es": "Por las madres que sufren\n\nDulce M�nica, que conociste el dolor de ver sufrir a un hijo amado, acompa�a a todas las madres que hoy sufren por sus hijos y ll�valas a los pies de Mar�a, Madre de Dolores. Am�n.",
+      "es": "Por las madres que sufren\n\nDulce Mónica, que conociste el dolor de ver sufrir a un hijo amado, acompaña a todas las madres que hoy sufren por sus hijos y llévalas a los pies de María, Madre de Dolores. Amén.",
       "en": "For suffering mothers\n\nSweet Monica, who knew the pain of watching a beloved son suffer, accompany all mothers who suffer for their children today and lead them to the feet of Mary, Mother of Sorrows. Amen."
     },
     {
       "day": 5,
-      "es": "Por los convertidos y los que buscan a Dios\n\nSanta M�nica, madre espiritual de los convertidos, intercede por todos los que buscan a Dios con el coraz�n abierto. Que encuentren, como Agust�n, que el coraz�n est� inquieto hasta que descansa en �l. Am�n.",
+      "es": "Por los convertidos y los que buscan a Dios\n\nSanta Mónica, madre espiritual de los convertidos, intercede por todos los que buscan a Dios con el corazón abierto. Que encuentren, como Agustín, que el corazón está inquieto hasta que descansa en Él. Amén.",
       "en": "For converts and those seeking God\n\nSaint Monica, spiritual mother of converts, intercede for all who seek God with an open heart. May they find, like Augustine, that our heart is restless until it rests in Him. Amen."
     },
     {
       "day": 6,
-      "es": "Por la familia cristiana\n\nSanta M�nica, modelo de familia cristiana, intercede por todas las familias para que sean peque�as iglesias dom�sticas donde Dios sea conocido, amado y servido. Am�n.",
+      "es": "Por la familia cristiana\n\nSanta Mónica, modelo de familia cristiana, intercede por todas las familias para que sean pequeñas iglesias domésticas donde Dios sea conocido, amado y servido. Amén.",
       "en": "For the Christian family\n\nSaint Monica, model of the Christian family, intercede for all families that they may be little domestic churches where God is known, loved, and served. Amen."
     },
     {
       "day": 7,
-      "es": "Por los que han perdido la esperanza\n\nSanta M�nica esperanzada, que nunca abandonaste la fe en la conversi�n de tu hijo, intercede por todos los que han perdido la esperanza en sus situaciones imposibles. Que Dios les revele que nada es imposible para �l. Am�n.",
+      "es": "Por los que han perdido la esperanza\n\nSanta Mónica esperanzada, que nunca abandonaste la fe en la conversión de tu hijo, intercede por todos los que han perdido la esperanza en sus situaciones imposibles. Que Dios les revele que nada es imposible para Él. Amén.",
       "en": "For those who have lost hope\n\nHopeful Saint Monica, who never abandoned faith in your son's conversion, intercede for all who have lost hope in their impossible situations. May God reveal to them that nothing is impossible for Him. Amen."
     },
     {
       "day": 8,
-      "es": "Por una muerte en paz\n\nSanta M�nica, que moriste en paz en Ostia habiendo visto cumplida tu mayor petici�n, intercede para que todos los que amamos puedan morir en la gracia de Dios y con el coraz�n en paz. Am�n.",
+      "es": "Por una muerte en paz\n\nSanta Mónica, que moriste en paz en Ostia habiendo visto cumplida tu mayor petición, intercede para que todos los que amamos puedan morir en la gracia de Dios y con el corazón en paz. Amén.",
       "en": "For a peaceful death\n\nSaint Monica, who died peacefully in Ostia having seen your greatest request fulfilled, intercede that all our loved ones may die in God's grace and with peaceful hearts. Amen."
     },
     {
       "day": 9,
-      "es": "Por la confianza en Dios\n\nSanta M�nica, tu vida entera fue un acto de confianza en Dios. Ens��anos a confiar en Su providencia cuando no entendemos Sus caminos, seguros de que �l escucha cada oraci�n hecha desde el amor. Am�n.",
+      "es": "Por la confianza en Dios\n\nSanta Mónica, tu vida entera fue un acto de confianza en Dios. Enséñanos a confiar en Su providencia cuando no entendemos Sus caminos, seguros de que Él escucha cada oración hecha desde el amor. Amén.",
       "en": "For trust in God\n\nSaint Monica, your entire life was an act of trust in God. Teach us to trust in His providence when we do not understand His ways, certain that He hears every prayer made from love. Amen."
     }
   ],

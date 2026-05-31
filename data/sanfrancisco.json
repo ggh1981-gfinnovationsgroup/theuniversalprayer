@@ -1,17 +1,17 @@
 {
   "id": "sanfrancisco",
   "name": {
-    "es": "San Francisco de As�s",
+    "es": "San Francisco de Asís",
     "en": "Saint Francis of Assisi"
   },
   "color": "#6b4226",
   "image": "assets/images/sanfrancisco.svg",
   "specialty": {
-    "es": "Paz y ecolog�a",
+    "es": "Paz y ecología",
     "en": "Peace & ecology"
   },
   "prayer": {
-    "es": "San Francisco de As�s, patrono de la paz y los animales, intercede por nosotros.",
+    "es": "San Francisco de Asís, patrono de la paz y los animales, intercede por nosotros.",
     "en": "Saint Francis of Assisi, patron of peace and animals, intercede for us."
   },
   "history": {
@@ -21,47 +21,47 @@
   "novena": [
     {
       "day": 1,
-      "es": "Por el don de la paz\n\nOh San Francisco, instrumento de paz del Se�or, que predicaste la reconciliaci�n en un mundo dividido, te pedimos intercedas por nosotros para que encontremos la paz en nuestros corazones y la extendamos a quienes nos rodean. Am�n.",
+      "es": "Por el don de la paz\n\nOh San Francisco, instrumento de paz del Señor, que predicaste la reconciliación en un mundo dividido, te pedimos intercedas por nosotros para que encontremos la paz en nuestros corazones y la extendamos a quienes nos rodean. Amén.",
       "en": "For the gift of peace\n\nO Saint Francis, instrument of the Lord's peace, who preached reconciliation in a divided world, we ask you to intercede for us that we may find peace in our hearts and extend it to those around us. Amen."
     },
     {
       "day": 2,
-      "es": "Por el amor a la pobreza evang�lica\n\nSan Francisco, que renunciaste a todas las riquezas para seguir a Cristo pobre, ay�danos a desprendernos de todo lo que nos aleja de Dios y a encontrar en �l nuestra �nica riqueza. Am�n.",
+      "es": "Por el amor a la pobreza evangélica\n\nSan Francisco, que renunciaste a todas las riquezas para seguir a Cristo pobre, ayúdanos a desprendernos de todo lo que nos aleja de Dios y a encontrar en Él nuestra única riqueza. Amén.",
       "en": "For love of evangelical poverty\n\nSaint Francis, who renounced all riches to follow poor Christ, help us to detach from everything that distances us from God and to find in Him our only treasure. Amen."
     },
     {
       "day": 3,
-      "es": "Por el cuidado de la creaci�n\n\nHermano Francisco, que cantaste la belleza del hermano sol y la hermana luna, intercede para que seamos buenos custodios de la creaci�n de Dios y vivamos en armon�a con la naturaleza. Am�n.",
+      "es": "Por el cuidado de la creación\n\nHermano Francisco, que cantaste la belleza del hermano sol y la hermana luna, intercede para que seamos buenos custodios de la creación de Dios y vivamos en armonía con la naturaleza. Amén.",
       "en": "For care of creation\n\nBrother Francis, who sang of the beauty of brother sun and sister moon, intercede that we may be good stewards of God's creation and live in harmony with nature. Amen."
     },
     {
       "day": 4,
-      "es": "Por la humildad de esp�ritu\n\nSan Francisco humilde, que te llamabas a ti mismo el mayor de los pecadores, pide a Dios por nosotros para que nos despojemos de toda soberbia y caminemos con coraz�n humilde ante el Se�or. Am�n.",
+      "es": "Por la humildad de espíritu\n\nSan Francisco humilde, que te llamabas a ti mismo el mayor de los pecadores, pide a Dios por nosotros para que nos despojemos de toda soberbia y caminemos con corazón humilde ante el Señor. Amén.",
       "en": "For humility of spirit\n\nHumble Saint Francis, who called yourself the greatest of sinners, ask God for us that we may shed all pride and walk with humble hearts before the Lord. Amen."
     },
     {
       "day": 5,
-      "es": "Por los enfermos y moribundos\n\nFrancisco, que cuidaste con ternura a los leprosos y rechazados, intercede por todos los enfermos y por quienes se encuentran cerca de la muerte, para que sientan la presencia consoladora de Cristo. Am�n.",
+      "es": "Por los enfermos y moribundos\n\nFrancisco, que cuidaste con ternura a los leprosos y rechazados, intercede por todos los enfermos y por quienes se encuentran cerca de la muerte, para que sientan la presencia consoladora de Cristo. Amén.",
       "en": "For the sick and dying\n\nFrancis, who tenderly cared for lepers and outcasts, intercede for all the sick and for those near death, that they may feel the comforting presence of Christ. Amen."
     },
     {
       "day": 6,
-      "es": "Por la reconciliaci�n familiar\n\nSan Francisco, que sufriste el rechazo de tu propio padre pero lo perdonaste con amor, intercede por todas las familias divididas y por la reconciliaci�n entre padres e hijos. Am�n.",
+      "es": "Por la reconciliación familiar\n\nSan Francisco, que sufriste el rechazo de tu propio padre pero lo perdonaste con amor, intercede por todas las familias divididas y por la reconciliación entre padres e hijos. Amén.",
       "en": "For family reconciliation\n\nSaint Francis, who suffered rejection by your own father but forgave him with love, intercede for all divided families and for reconciliation between parents and children. Amen."
     },
     {
       "day": 7,
-      "es": "Por la evangelizaci�n del mundo\n\nFrancisco misionero, que fuiste hasta el sult�n a predicar el Evangelio sin miedo, intercede por todos los misioneros del mundo y por la conversi�n de los alejados de Dios. Am�n.",
+      "es": "Por la evangelización del mundo\n\nFrancisco misionero, que fuiste hasta el sultán a predicar el Evangelio sin miedo, intercede por todos los misioneros del mundo y por la conversión de los alejados de Dios. Amén.",
       "en": "For the evangelization of the world\n\nMissionary Francis, who went fearlessly to the sultan to preach the Gospel, intercede for all missionaries in the world and for the conversion of those far from God. Amen."
     },
     {
       "day": 8,
-      "es": "Por los que sufren los estigmas del dolor\n\nSan Francisco estigmatizado, que llevaste en tu cuerpo las llagas de Cristo, intercede por todos los que sufren enfermedades dolorosas o cargas pesadas, para que las unan al misterio redentor de la Cruz. Am�n.",
+      "es": "Por los que sufren los estigmas del dolor\n\nSan Francisco estigmatizado, que llevaste en tu cuerpo las llagas de Cristo, intercede por todos los que sufren enfermedades dolorosas o cargas pesadas, para que las unan al misterio redentor de la Cruz. Amén.",
       "en": "For those bearing the stigmata of suffering\n\nStigmatized Saint Francis, who bore in your body the wounds of Christ, intercede for all who suffer painful illnesses or heavy burdens, that they may unite them to the redeeming mystery of the Cross. Amen."
     },
     {
       "day": 9,
-      "es": "Por la alegr�a en el Se�or\n\nAlegre hermano Francisco, que llamabas a tus frailes hermanos juglares de Dios, intercede por nosotros para que vivamos con la alegr�a del Evangelio y seamos testigos luminosos de la bondad de Dios en el mundo. Am�n.",
+      "es": "Por la alegría en el Señor\n\nAlegre hermano Francisco, que llamabas a tus frailes hermanos juglares de Dios, intercede por nosotros para que vivamos con la alegría del Evangelio y seamos testigos luminosos de la bondad de Dios en el mundo. Amén.",
       "en": "For joy in the Lord\n\nJoyful Brother Francis, who called your friars God's jesters, intercede for us that we may live with Gospel joy and be radiant witnesses of God's goodness in the world. Amen."
     }
   ],
