@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="pageTitle">Historia para Niños | The Universal Prayer</title>
+  <meta name="description" id="pageDesc" content="Historia del santo para niños." />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Oración" />
+  <link rel="apple-touch-icon" href="/assets/images/icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
+    }
+  </script>
+</head>
+<body class="historias-page">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link">
+        <span class="cross">✝</span>
+        <span class="logo-text" data-i18n="site_title">The Universal Prayer</span>
+      </a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span id="langLabel">ES</span>
+      </button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- SIDE NAV -->
+  <div class="side-nav-overlay" id="sideNavOverlay"></div>
+  <nav class="side-nav" id="sideNav" aria-label="Menu">
+    <div class="side-nav-header">
+      <span class="side-nav-title" data-i18n="menu_title">Intercessors</span>
+      <button class="side-nav-close" id="sideNavClose" aria-label="Close menu">✕</button>
+    </div>
+    <ul class="side-nav-list" id="sideNavList"></ul>
+  </nav>
+
+  <!-- LOADING -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-cross">✝</div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div id="historiasWrapper" style="display:none">
+
+    <!-- HERO -->
+    <div class="historias-hero">
+      <img id="historiasImg" src="" alt="" class="historias-img" />
+      <div class="historias-hero-text">
+        <p class="historias-subtitle" id="historiasSubtitle">📖 Historia para Niños</p>
+        <h1 class="historias-name" id="historiasName"></h1>
+        <a id="historiasBack" href="/" class="historias-back-link">← Volver</a>
+      </div>
+    </div>
+
+    <!-- TTS PLAYER -->
+    <div class="tts-player" id="ttsPlayer">
+      <button id="ttsPlay"  class="tts-btn tts-play">▶ Leer en voz alta</button>
+      <button id="ttsPause" class="tts-btn tts-pause" style="display:none">⏸ Pausar</button>
+      <button id="ttsStop"  class="tts-btn tts-stop"  style="display:none">⏹ Detener</button>
+      <span class="tts-no-support" id="ttsNoSupport" style="display:none">
+        ⚠️ Tu navegador no soporta lectura en voz alta.
+      </span>
+    </div>
+
+    <!-- STORY TEXT -->
+    <div class="historias-story-text" id="historiasText"></div>
+
+    <!-- BACK BUTTON BOTTOM -->
+    <div class="historias-footer-nav">
+      <a id="historiasBackBottom" href="/" class="kids-story-btn">← Volver al santo</a>
+    </div>
+
+  </div>
+
+  <!-- NOT FOUND -->
+  <div class="not-found" id="historiasNotFound" style="display:none">
+    <div class="not-found-inner">
+      <span class="cross large">✝</span>
+      <h2>Santo no encontrado</h2>
+      <p>No pudimos encontrar este intercesor.</p>
+      <a href="/" class="btn-home">← Inicio</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p data-i18n="footer_text">A free Catholic devotional resource. No ads. No tracking.</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

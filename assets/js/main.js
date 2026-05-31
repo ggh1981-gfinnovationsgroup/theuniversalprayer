@@ -277,9 +277,13 @@ function isIntercessorPage() {
   return document.body.classList.contains('intercessor-page');
 }
 
+function isHistoriasPage() {
+  return document.body.classList.contains('historias-page');
+}
+
 // ── FETCH INTERCESSOR DATA ─────────────────────────
 async function loadIntercessorData(id) {
-  const basePath = isIntercessorPage() ? '../data/' : 'data/';
+  const basePath = (isIntercessorPage() || isHistoriasPage()) ? '../data/' : 'data/';
   const url = `${basePath}${id}.json`;
   const resp = await fetch(url);
   if (!resp.ok) throw new Error(`Not found: ${url}`);
@@ -645,6 +649,15 @@ function renderIntercessorContent(data) {
     }
   }
   renderNovenaSupportPanel(data);
+
+  // Kids story banner
+  const kidsEl = document.getElementById('kidsStoryBanner');
+  if (kidsEl) {
+    const label = lang === 'es'
+      ? '📖 Historia para Niños — Escuchar en voz alta'
+      : '📖 Children\'s Story — Listen aloud';
+    kidsEl.innerHTML = `<a href="/historias/?santo=${data.id}" class="kids-story-btn">${label} →</a>`;
+  }
 }
 
 function paragraphify(text) {
@@ -1368,6 +1381,149 @@ function showNotFound() {
   if (notFound) notFound.style.display = 'flex';
 }
 
+// ── TTS (WEB SPEECH API) ─────────────────────────
+let _ttsState = 'stopped'; // 'stopped' | 'playing' | 'paused'
+let _historiasData = null;
+let _historiasMeta = null;
+
+function ttsSpeak(text, lang) {
+  if (!window.speechSynthesis) return;
+  window.speechSynthesis.cancel();
+  const clean = text.replace(/\*[^*]+\*/g, '').replace(/#+\s/g, '');
+  const utt = new SpeechSynthesisUtterance(clean);
+  utt.lang  = lang === 'es' ? 'es-MX' : 'en-US';
+  utt.rate  = 0.88;
+  utt.pitch = 1.05;
+  const voices = window.speechSynthesis.getVoices();
+  const voice  = voices.find(v => v.lang.startsWith(lang === 'es' ? 'es-MX' : 'en-US'))
+              || voices.find(v => v.lang.startsWith(lang === 'es' ? 'es'    : 'en'))
+              || null;
+  if (voice) utt.voice = voice;
+  utt.onend = utt.onerror = () => { _ttsState = 'stopped';  _ttsUpdateButtons(); };
+  utt.onpause  = () => { _ttsState = 'paused';  _ttsUpdateButtons(); };
+  utt.onresume = () => { _ttsState = 'playing'; _ttsUpdateButtons(); };
+  window.speechSynthesis.speak(utt);
+  _ttsState = 'playing';
+  _ttsUpdateButtons();
+}
+
+function ttsPauseToggle() {
+  if (!window.speechSynthesis) return;
+  if (_ttsState === 'playing') {
+    window.speechSynthesis.pause();
+    _ttsState = 'paused';
+  } else if (_ttsState === 'paused') {
+    window.speechSynthesis.resume();
+    _ttsState = 'playing';
+  }
+  _ttsUpdateButtons();
+}
+
+function ttsStop() {
+  if (!window.speechSynthesis) return;
+  window.speechSynthesis.cancel();
+  _ttsState = 'stopped';
+  _ttsUpdateButtons();
+}
+
+function _ttsUpdateButtons() {
+  const play  = document.getElementById('ttsPlay');
+  const pause = document.getElementById('ttsPause');
+  const stop  = document.getElementById('ttsStop');
+  if (!play) return;
+  const isEs = currentLang === 'es';
+  if (_ttsState === 'stopped') {
+    play.style.display  = '';
+    if (pause) pause.style.display = 'none';
+    if (stop)  stop.style.display  = 'none';
+  } else if (_ttsState === 'playing') {
+    play.style.display  = 'none';
+    if (pause) { pause.style.display = ''; pause.textContent = isEs ? '⏸ Pausar' : '⏸ Pause'; }
+    if (stop)  { stop.style.display  = ''; stop.textContent  = isEs ? '⏹ Detener' : '⏹ Stop'; }
+  } else {
+    play.style.display  = 'none';
+    if (pause) { pause.style.display = ''; pause.textContent = isEs ? '▶ Continuar' : '▶ Continue'; }
+    if (stop)  { stop.style.display  = ''; stop.textContent  = isEs ? '⏹ Detener' : '⏹ Stop'; }
+  }
+}
+
+async function initHistoriasPage() {
+  const params   = new URLSearchParams(window.location.search);
+  const id       = params.get('santo');
+  const loading  = document.getElementById('loadingScreen');
+  const wrapper  = document.getElementById('historiasWrapper');
+  const notFound = document.getElementById('historiasNotFound');
+
+  if (!id) {
+    if (loading)  loading.style.display  = 'none';
+    if (notFound) notFound.style.display = '';
+    return;
+  }
+  const meta = INTERCESSORS.find(i => i.id === id);
+  if (!meta) {
+    if (loading)  loading.style.display  = 'none';
+    if (notFound) notFound.style.display = '';
+    return;
+  }
+  try {
+    const data = await loadIntercessorData(id);
+    _historiasData = data;
+    _historiasMeta = meta;
+    if (loading)  loading.style.display  = 'none';
+    if (wrapper)  wrapper.style.display  = '';
+    renderHistoriasPage(data, meta);
+  } catch {
+    if (loading)  loading.style.display  = 'none';
+    if (notFound) notFound.style.display = '';
+  }
+}
+
+function renderHistoriasPage(data, meta) {
+  const lang = currentLang;
+  document.title = (lang === 'es' ? 'Historia de ' : 'Story of ') + data.name[lang] + ' | The Universal Prayer';
+
+  const imgEl = document.getElementById('historiasImg');
+  if (imgEl) { imgEl.src = data.image || ''; imgEl.alt = data.name[lang]; }
+
+  const nameEl = document.getElementById('historiasName');
+  if (nameEl) nameEl.textContent = data.name[lang];
+
+  const subEl = document.getElementById('historiasSubtitle');
+  if (subEl) subEl.textContent = lang === 'es' ? '📖 Historia para Niños' : '📖 Children\'s Story';
+
+  const backHref = `/intercesor/?intercesor=${meta.id}`;
+  const backLabel = lang === 'es' ? `← Volver a ${data.name[lang]}` : `← Back to ${data.name[lang]}`;
+  const backEl = document.getElementById('historiasBack');
+  if (backEl) { backEl.href = backHref; backEl.textContent = backLabel; }
+  const backBotEl = document.getElementById('historiasBackBottom');
+  if (backBotEl) { backBotEl.href = backHref; backBotEl.textContent = backLabel; }
+
+  const textEl = document.getElementById('historiasText');
+  if (textEl) textEl.innerHTML = paragraphify(data.history[lang]);
+
+  const noSupport = document.getElementById('ttsNoSupport');
+  if (!window.speechSynthesis) {
+    if (noSupport) noSupport.style.display = '';
+    const ttsPlayer = document.getElementById('ttsPlayer');
+    if (ttsPlayer) { document.getElementById('ttsPlay').style.display = 'none'; }
+  }
+
+  // Wire up buttons (only once, use dataset flag)
+  const btnPlay = document.getElementById('ttsPlay');
+  if (btnPlay && !btnPlay.dataset.wired) {
+    btnPlay.dataset.wired = '1';
+    btnPlay.addEventListener('click', () => ttsSpeak(data.history[currentLang], currentLang));
+    const btnPause = document.getElementById('ttsPause');
+    if (btnPause) btnPause.addEventListener('click', ttsPauseToggle);
+    const btnStop = document.getElementById('ttsStop');
+    if (btnStop) btnStop.addEventListener('click', ttsStop);
+  }
+
+  // Update play button label
+  if (btnPlay) btnPlay.textContent = lang === 'es' ? '▶ Leer en voz alta' : '▶ Read aloud';
+  _ttsUpdateButtons();
+}
+
 // ── HAMBURGER MENU ────────────────────────────────
 function initMenu() {
   const btn     = document.getElementById('hamburgerBtn');
@@ -1379,9 +1535,10 @@ function initMenu() {
 
   // Populate list
   function renderMenuItems() {
-    const homeHref       = isIntercessorPage() ? '/' : '#top';
-    const familyHref     = isIntercessorPage() ? '/#oraciones-familia' : '#oraciones-familia';
-    const intercesorsHref = isIntercessorPage() ? '/#intercessorsGrid' : '#intercessorsGrid';
+    const isSubPage      = isIntercessorPage() || isHistoriasPage();
+    const homeHref        = isSubPage ? '/' : '#top';
+    const familyHref      = isSubPage ? '/#oraciones-familia' : '#oraciones-familia';
+    const intercesorsHref = isSubPage ? '/#intercessorsGrid'  : '#intercessorsGrid';
 
     const homeLabel       = currentLang === 'es' ? '← Inicio'              : '← Home';
     const familyLabel     = currentLang === 'es' ? '🙏 Oraciones en Familia' : '🙏 Family Prayers';
@@ -1414,15 +1571,20 @@ function initMenu() {
   // Language toggle
   document.getElementById('langToggle')?.addEventListener('click', () => {
     setLanguage(currentLang === 'en' ? 'es' : 'en');
-    // Reload home grid in new language
-    if (!isIntercessorPage()) {
+    if (isHistoriasPage()) {
+      ttsStop();
+      if (_historiasData && _historiasMeta) renderHistoriasPage(_historiasData, _historiasMeta);
+    } else if (!isIntercessorPage()) {
       const grid = document.getElementById('intercessorsGrid');
       if (grid) { grid.innerHTML = ''; initHomePage(); }
       renderQuickNav();
     }
   });
 
-  if (isIntercessorPage()) {
+  if (isHistoriasPage()) {
+    if (window.speechSynthesis) window.speechSynthesis.getVoices();
+    initHistoriasPage();
+  } else if (isIntercessorPage()) {
     initIntercessorPage();
   } else {
     renderQuickNav();

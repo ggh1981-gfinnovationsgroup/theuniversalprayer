@@ -1985,3 +1985,136 @@ body {
 .quick-nav-item.today-saint .quick-nav-label {
   color: var(--gold);
 }
+
+/* ── KIDS STORY BANNER (intercessor page) ───────── */
+.kids-story-banner {
+  text-align: center;
+  padding: 0.6rem 1.25rem 0;
+}
+.kids-story-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #3a2a0a, #5a4010);
+  color: #f0d878;
+  text-decoration: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 2rem;
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  border: 1px solid #c8a040;
+  transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+}
+.kids-story-btn:hover {
+  background: linear-gradient(135deg, #5a4010, #7a5a20);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(200,160,40,0.2);
+}
+
+/* ── HISTORIAS PAGE ─────────────────────────────── */
+.historias-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1.25rem 1.25rem;
+  text-align: center;
+}
+.historias-img {
+  width: 180px;
+  height: 215px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: var(--radius);
+  border: 2px solid var(--border);
+  margin-bottom: 1rem;
+}
+.historias-subtitle {
+  font-size: 0.85rem;
+  color: var(--gold-dim);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 0.3rem;
+}
+.historias-name {
+  font-family: var(--font-serif);
+  font-size: 1.9rem;
+  color: var(--gold);
+  margin: 0 0 0.6rem;
+  line-height: 1.2;
+}
+.historias-back-link {
+  color: var(--white-dim);
+  font-size: 0.88rem;
+  text-decoration: none;
+  opacity: 0.7;
+}
+.historias-back-link:hover { opacity: 1; color: var(--gold-dim); }
+
+/* TTS Player */
+.tts-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+.tts-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.65rem 1.35rem;
+  border-radius: 2rem;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-family: var(--font-body);
+  transition: all var(--transition);
+  background: var(--bg-card);
+  color: var(--white);
+}
+.tts-btn.tts-play {
+  background: linear-gradient(135deg, #1a5a2a, #2a7a3a);
+  border-color: #3a9a4a;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.tts-btn.tts-play:hover {
+  background: linear-gradient(135deg, #2a7a3a, #3a9a4a);
+  transform: scale(1.04);
+}
+.tts-btn:hover:not(.tts-play) { border-color: var(--gold-dim); color: var(--gold-dim); }
+.tts-no-support {
+  font-size: 0.85rem;
+  color: var(--white-dim);
+}
+
+/* Story text — large, comfortable for reading aloud */
+.historias-story-text {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.75rem 1.25rem 1rem;
+}
+.historias-story-text p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #ddd8d0;
+  margin-bottom: 1.35rem;
+}
+.historias-story-text em { color: var(--gold-dim); font-style: italic; }
+.historias-story-text strong { color: var(--gold-light); }
+
+.historias-footer-nav {
+  text-align: center;
+  padding: 1rem 1.25rem 3rem;
+}
+
+@media (max-width: 600px) {
+  .historias-name { font-size: 1.5rem; }
+  .historias-story-text p { font-size: 1rem; line-height: 1.8; }
+  .tts-btn { padding: 0.55rem 1.1rem; font-size: 0.9rem; }
+}
