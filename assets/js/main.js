@@ -649,6 +649,15 @@ function renderIntercessorContent(data) {
     }
   }
   renderNovenaSupportPanel(data);
+
+  // Kids story banner
+  const kidsEl = document.getElementById('kidsStoryBanner');
+  if (kidsEl) {
+    const label = lang === 'es'
+      ? '📖 Historia para Niños — Escuchar en voz alta'
+      : '📖 Children\'s Story — Listen aloud';
+    kidsEl.innerHTML = `<a href="/historias/?santo=${data.id}" class="kids-story-btn">${label} →</a>`;
+  }
 }
 
 function paragraphify(text) {
