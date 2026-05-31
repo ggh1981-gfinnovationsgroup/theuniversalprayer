@@ -567,6 +567,8 @@ body {
   color: var(--gold);
   border-bottom-color: var(--gold);
 }
+.tab-btn.story-tab { display: none; }
+.tab-btn.story-tab.visible { display: block; }
 .tab-btn.chaplet-tab { display: none; }
 .tab-btn.chaplet-tab.visible { display: block; }
 .tab-btn.litany-tab { display: none; }
@@ -2093,6 +2095,15 @@ body {
 .tts-no-support {
   font-size: 0.85rem;
   color: var(--white-dim);
+}
+
+.story-section-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--gold);
+  margin: 2rem 0 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
 }
 
 /* Story text — large, comfortable for reading aloud */
