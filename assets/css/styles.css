@@ -3075,31 +3075,22 @@ body {
 .ador-live-credit-link:hover { border-bottom-color: var(--gold); }
 
 /* ── Floating live player ───────────────────────────── */
-#adorLiveFloat {
-  display: none;
+#adorLiveFrameWrap.is-floating {
   position: fixed;
   bottom: 1.25rem;
   right: 1.25rem;
   width: 280px;
+  max-width: none;
+  margin: 0;
   aspect-ratio: 16 / 9;
   border-radius: 10px;
   border: 1px solid rgba(201,168,76,.4);
   background: #000;
   z-index: 9000;
   box-shadow: 0 8px 32px rgba(0,0,0,.7);
-  overflow: hidden;
-}
-#adorLiveFloatInner {
-  width: 100%;
-  height: 100%;
-}
-#adorLiveFloat .ador-live-iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-  display: block;
 }
 #adorLiveFloatClose {
+  display: none;
   position: absolute;
   top: 5px;
   right: 6px;
@@ -3116,9 +3107,10 @@ body {
   z-index: 1;
   padding: 0;
 }
+#adorLiveFrameWrap.is-floating #adorLiveFloatClose { display: block; }
 #adorLiveFloatClose:hover { background: rgba(255,255,255,.2); }
 @media (max-width: 480px) {
-  #adorLiveFloat { width: 200px; }
+  #adorLiveFrameWrap.is-floating { width: 190px; }
 }
 
 /* ── Adoracion — 33 días sección integrada ─────────── */

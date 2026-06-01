@@ -129,6 +129,7 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
+      <button id="adorLiveFloatClose" aria-label="Cerrar">✕</button>
     </div>
     <p class="ador-live-credit" data-lang="es">
       📺 Transmisión en vivo compartida con permiso de 
@@ -143,12 +144,6 @@
       May God bless them for sharing this grace with the world.
     </p>
   </section>
-
-  <!-- FLOATING LIVE PLAYER -->
-  <div id="adorLiveFloat">
-    <div id="adorLiveFloatInner"></div>
-    <button id="adorLiveFloatClose" aria-label="Cerrar">✕</button>
-  </div>
 
   <!-- MOMENTS CONTENT -->
   <main class="ador-content">
@@ -694,21 +689,15 @@
   (function() {
     const liveSec   = document.querySelector('.ador-live-section');
     const frameWrap = document.getElementById('adorLiveFrameWrap');
-    const floatBox  = document.getElementById('adorLiveFloat');
-    const floatIn   = document.getElementById('adorLiveFloatInner');
     const floatClose= document.getElementById('adorLiveFloatClose');
     let dismissed   = false;
 
     const obs = new IntersectionObserver(entries => {
       const visible = entries[0].isIntersecting;
-      const iframe  = document.getElementById('adorLiveIframe');
-      if (!iframe) return;
       if (!visible && !dismissed) {
-        floatIn.appendChild(iframe);
-        floatBox.style.display = '';
+        frameWrap.classList.add('is-floating');
       } else if (visible) {
-        frameWrap.appendChild(iframe);
-        floatBox.style.display = 'none';
+        frameWrap.classList.remove('is-floating');
         dismissed = false;
       }
     }, { threshold: 0.1 });
@@ -717,9 +706,7 @@
 
     floatClose.addEventListener('click', () => {
       dismissed = true;
-      floatBox.style.display = 'none';
-      const iframe = document.getElementById('adorLiveIframe');
-      if (iframe) frameWrap.appendChild(iframe);
+      frameWrap.classList.remove('is-floating');
     });
   })();
   </script>
