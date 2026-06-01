@@ -1,0 +1,75 @@
+{
+  "id": "espiritu",
+  "name": {
+    "es": "Espíritu Santo",
+    "en": "Holy Spirit"
+  },
+  "image": "/assets/images/espiritu.svg",
+  "prayer": {
+    "es": "Ven, Espíritu Santo, llena los corazones de Tus fieles y enciende en ellos el fuego de Tu amor. Envía Tu Espíritu y serán creadas todas las cosas, y renovarás la faz de la tierra.",
+    "en": "Come, Holy Spirit, fill the hearts of Your faithful and kindle in them the fire of Your love. Send forth Your Spirit and they shall be created, and You shall renew the face of the earth."
+  },
+  "invocation": {
+    "es": "Ven, Espíritu Santo,\nrayo de luz celestial;\nDios de amor, en Ti confío,\nguía mis pasos en verdad.\n\nEres el Consolador prometido,\nDefensor del alma fiel,\nfuego que purifica y renueva,\nagua viva de todo bien.\n\nVen a mí con Tus siete dones,\nabre mi mente y mi corazón,\nconcédeme la gracia santa\nde vivir en Tu comunión.\n\nAmén.",
+    "en": "Come, Holy Spirit,\nray of heavenly light;\nGod of love, in You I trust,\nguide my steps in truth and right.\n\nYou are the promised Consoler,\nDefender of the faithful soul,\nfire that purifies and renews,\nliving water making whole.\n\nCome to me with Your seven gifts,\nopen my mind and heart to Thee,\ngrant me the holy grace to live\nin Your communion, ever free.\n\nAmen."
+  },
+  "gifts": [
+    {
+      "name": { "es": "Sabiduría", "en": "Wisdom" },
+      "desc": {
+        "es": "El don de ver las cosas como las ve Dios: con amor, eternidad y verdad. Nos hace gustar las cosas divinas y orientar la vida hacia lo que verdaderamente importa.",
+        "en": "The gift of seeing things as God sees them: with love, eternity, and truth. It makes us savor divine things and orient our lives toward what truly matters."
+      }
+    },
+    {
+      "name": { "es": "Entendimiento", "en": "Understanding" },
+      "desc": {
+        "es": "La capacidad de penetrar más profundamente en las verdades de la fe. No es solo conocer la doctrina, sino captarla con el corazón y dejarse transformar por ella.",
+        "en": "The capacity to penetrate more deeply into the truths of faith. Not merely knowing doctrine, but grasping it with the heart and allowing oneself to be transformed by it."
+      }
+    },
+    {
+      "name": { "es": "Consejo", "en": "Counsel" },
+      "desc": {
+        "es": "El don de discernir con rectitud qué hacer en cada situación, especialmente ante las encrucijadas morales de la vida. Es la luz práctica del Espíritu para obrar bien.",
+        "en": "The gift of discerning rightly what to do in every situation, especially at the moral crossroads of life. It is the Spirit's practical light for acting well."
+      }
+    },
+    {
+      "name": { "es": "Fortaleza", "en": "Fortitude" },
+      "desc": {
+        "es": "La valentía sobrenatural para mantenerse firme en el bien, afrontar las dificultades sin rendirse y testimoniar la fe aunque cueste. Es el don de los mártires y los perseverantes.",
+        "en": "The supernatural courage to remain firm in goodness, face difficulties without surrendering, and witness to the faith even when it costs. It is the gift of martyrs and the perseverant."
+      }
+    },
+    {
+      "name": { "es": "Ciencia", "en": "Knowledge" },
+      "desc": {
+        "es": "El don que nos permite juzgar rectamente las realidades del mundo a la luz de Dios: ver las criaturas como caminos hacia el Creador y no como fines en sí mismas.",
+        "en": "The gift that enables us to judge the realities of the world rightly in the light of God: to see creatures as paths toward the Creator and not as ends in themselves."
+      }
+    },
+    {
+      "name": { "es": "Piedad", "en": "Piety" },
+      "desc": {
+        "es": "El don de la filial devoción a Dios Padre y de la caridad fraterna hacia todos los hombres. Nos hace tratar a Dios con ternura de hijos y a los demás con amor de hermanos.",
+        "en": "The gift of filial devotion to God the Father and fraternal charity toward all people. It makes us approach God with a child's tenderness and others with brotherly love."
+      }
+    },
+    {
+      "name": { "es": "Temor de Dios", "en": "Fear of the Lord" },
+      "desc": {
+        "es": "No el miedo que esclaviza, sino la reverencia filial ante la grandeza de Dios y el horror al pecado que nos separa de Él. Es el comienzo de la sabiduría y la raíz de la santidad.",
+        "en": "Not the fear that enslaves, but the filial reverence before God's greatness and the horror of sin that separates us from Him. It is the beginning of wisdom and the root of holiness."
+      }
+    }
+  ],
+  "charisms": {
+    "es": "Además de los siete dones, el Espíritu Santo distribuye carimas para el bien de la Iglesia: la palabra de sabiduría, la palabra de conocimiento, la fe extraordinaria, los dones de sanación, el obrar milagros, la profecía, el discernimiento de espíritus, el don de lenguas y la interpretación de lenguas (cf. 1 Cor 12, 8-10). Todos estos dones y carismas tienen un solo origen y un solo fin: el amor que edifica el Cuerpo de Cristo.",
+    "en": "In addition to the seven gifts, the Holy Spirit distributes charisms for the good of the Church: the word of wisdom, the word of knowledge, extraordinary faith, gifts of healing, the working of miracles, prophecy, discernment of spirits, the gift of tongues and interpretation of tongues (cf. 1 Cor 12:8-10). All these gifts and charisms have a single origin and a single end: the love that builds up the Body of Christ."
+  },
+  "closing_prayer": {
+    "es": "Espíritu Santo, Señor y dador de vida:\nconcédeme los dones que necesito para cumplir Tu voluntad.\nDame sabiduría para conocerte,\nentendimiento para amarte,\nconsejo para seguirte,\nfortaleza para no abandonarte,\nciencia para encontrarte en todo,\npiedad para servirte con amor\ny temor santo para no ofenderte jamás.\n\nEnciende en mí el fuego de Tu amor.\nHaz de mí una morada digna de Tu presencia.\nAmén.",
+    "en": "Holy Spirit, Lord and giver of life:\ngrant me the gifts I need to fulfill Your will.\nGive me wisdom to know You,\nunderstanding to love You,\ncounsel to follow You,\nfortitude never to forsake You,\nknowledge to find You in all things,\npiety to serve You with love,\nand holy fear never to offend You.\n\nKindle in me the fire of Your love.\nMake of me a dwelling worthy of Your presence.\nAmen."
+  }
+}

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Espíritu Santo – paloma con llamas">
+  <defs>
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff8dc" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="flameGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff3a0"/>
+      <stop offset="50%" stop-color="#f5a623"/>
+      <stop offset="100%" stop-color="#c0392b"/>
+    </linearGradient>
+    <linearGradient id="doveGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e8dfc0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Glow halo -->
+  <circle cx="50" cy="42" r="30" fill="url(#glowGrad)"/>
+
+  <!-- Rays -->
+  <g stroke="#c9a84c" stroke-width="0.8" opacity="0.45" stroke-linecap="round">
+    <line x1="50" y1="12" x2="50" y2="4"/>
+    <line x1="50" y1="12" x2="57" y2="5" transform="rotate(20,50,12)"/>
+    <line x1="50" y1="12" x2="57" y2="5" transform="rotate(-20,50,12)"/>
+    <line x1="50" y1="12" x2="57" y2="5" transform="rotate(42,50,12)"/>
+    <line x1="50" y1="12" x2="57" y2="5" transform="rotate(-42,50,12)"/>
+    <line x1="50" y1="12" x2="57" y2="5" transform="rotate(65,50,12)"/>
+    <line x1="50" y1="12" x2="57" y2="5" transform="rotate(-65,50,12)"/>
+  </g>
+
+  <!-- Dove body -->
+  <ellipse cx="50" cy="48" rx="16" ry="10" fill="url(#doveGrad)" opacity="0.95"/>
+
+  <!-- Dove head -->
+  <circle cx="64" cy="42" r="6" fill="url(#doveGrad)" opacity="0.95"/>
+
+  <!-- Beak -->
+  <polygon points="70,41 74,43 70,45" fill="#c9a84c" opacity="0.9"/>
+
+  <!-- Eye -->
+  <circle cx="66" cy="41" r="1.2" fill="#5a4010"/>
+
+  <!-- Left wing (spread) -->
+  <path d="M50,44 C40,34 24,30 18,38 C24,40 34,42 50,52 Z"
+        fill="url(#doveGrad)" opacity="0.88"/>
+  <!-- Wing detail -->
+  <path d="M50,44 C40,34 24,30 18,38"
+        fill="none" stroke="#c9a84c" stroke-width="0.6" opacity="0.5"/>
+  <path d="M50,46 C38,38 26,36 20,42"
+        fill="none" stroke="#c9a84c" stroke-width="0.5" opacity="0.35"/>
+
+  <!-- Right wing (folded) -->
+  <path d="M50,44 C56,36 66,34 68,40 C62,42 56,44 50,52 Z"
+        fill="url(#doveGrad)" opacity="0.80"/>
+
+  <!-- Tail feathers -->
+  <path d="M44,56 C38,60 34,66 36,70 C40,64 46,60 50,58 Z"
+        fill="url(#doveGrad)" opacity="0.85"/>
+  <path d="M50,58 C50,64 50,68 52,70 C52,64 52,60 50,58 Z"
+        fill="url(#doveGrad)" opacity="0.80"/>
+
+  <!-- Flames (7 – one per don) around the dove -->
+  <!-- Central flame above head -->
+  <path d="M50,20 C49,15 47,11 50,8 C53,11 51,15 50,20 Z"
+        fill="url(#flameGrad)" opacity="0.9"/>
+
+  <!-- Flame left 1 -->
+  <path d="M32,36 C30,31 28,27 31,25 C34,28 33,32 32,36 Z"
+        fill="url(#flameGrad)" opacity="0.75"/>
+  <!-- Flame left 2 -->
+  <path d="M24,46 C21,41 19,37 22,35 C25,38 25,42 24,46 Z"
+        fill="url(#flameGrad)" opacity="0.65"/>
+  <!-- Flame right 1 -->
+  <path d="M68,36 C70,31 72,27 69,25 C66,28 67,32 68,36 Z"
+        fill="url(#flameGrad)" opacity="0.75"/>
+  <!-- Flame right 2 -->
+  <path d="M76,46 C79,41 81,37 78,35 C75,38 75,42 76,46 Z"
+        fill="url(#flameGrad)" opacity="0.65"/>
+  <!-- Flame lower left -->
+  <path d="M34,64 C31,59 29,55 32,53 C35,56 35,60 34,64 Z"
+        fill="url(#flameGrad)" opacity="0.60"/>
+  <!-- Flame lower right -->
+  <path d="M66,64 C69,59 71,55 68,53 C65,56 65,60 66,64 Z"
+        fill="url(#flameGrad)" opacity="0.60"/>
+
+  <!-- Scripture reference -->
+  <text x="50" y="82" text-anchor="middle"
+        font-family="Georgia, serif" font-size="5.5" fill="#c9a84c" opacity="0.75">
+    1 Cor 12
+  </text>
+</svg>

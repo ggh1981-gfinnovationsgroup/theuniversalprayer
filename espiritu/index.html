@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dones del Espíritu Santo | The Universal Prayer</title>
+  <meta name="description" content="Invocación al Espíritu Santo y oración por sus siete dones y carismas. Sabiduría, entendimiento, consejo, fortaleza, ciencia, piedad y temor de Dios." />
+  <meta name="theme-color" content="#c9a84c" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dones del Espíritu Santo" />
+  <meta property="og:description" content="Invocación al Espíritu Santo y oración por sus siete dones y carismas." />
+  <meta property="og:url" content="https://www.theuniversalprayer.com/espiritu/" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="apple-touch-icon" href="/assets/images/icon.svg" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23c9a84c'>✝</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    /* ── Page-specific overrides ── */
+    .esp-hero {
+      text-align: center;
+      padding: 5rem 1.5rem 3rem;
+      background: radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.12) 0%, transparent 70%);
+    }
+    .esp-dove {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 1.5rem;
+      display: block;
+      filter: drop-shadow(0 0 18px rgba(201,168,76,0.45));
+      animation: esp-float 4s ease-in-out infinite;
+    }
+    @keyframes esp-float {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(-7px); }
+    }
+    .esp-badge {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(201,168,76,0.3);
+      padding: 0.3em 0.9em;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+    }
+    .esp-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      color: #fff;
+      margin: 0 0 0.75rem;
+      line-height: 1.15;
+    }
+    .esp-subtitle {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.6);
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .esp-content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+    .esp-section {
+      margin-bottom: 3rem;
+    }
+    .esp-section-title {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      color: var(--gold-light);
+      margin: 0 0 1.25rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+    }
+    .esp-invocation {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.88);
+      line-height: 2;
+      white-space: pre-line;
+    }
+    .esp-gifts-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 560px) {
+      .esp-gifts-grid { grid-template-columns: 1fr; }
+    }
+    .esp-gift-card {
+      background: rgba(201,168,76,0.06);
+      border: 1px solid rgba(201,168,76,0.18);
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+    }
+    .esp-gift-name {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      color: var(--gold-light);
+      margin: 0 0 0.5rem;
+    }
+    .esp-gift-desc {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.65;
+      margin: 0;
+    }
+    .esp-charisms-text {
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.8;
+      margin: 0;
+    }
+    .esp-scripture {
+      border-left: 3px solid rgba(201,168,76,0.45);
+      padding: 0.75rem 1.25rem;
+      margin: 1.5rem 0;
+      font-family: var(--font-serif);
+      font-style: italic;
+      color: rgba(255,255,255,0.8);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+    .esp-scripture cite {
+      display: block;
+      font-size: 0.75rem;
+      font-style: normal;
+      color: var(--gold);
+      margin-top: 0.4rem;
+    }
+    .esp-closing-prayer {
+      background: rgba(201,168,76,0.07);
+      border: 1px solid rgba(201,168,76,0.22);
+      border-radius: 12px;
+      padding: 1.75rem 1.5rem;
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      color: rgba(255,255,255,0.88);
+      line-height: 1.9;
+      white-space: pre-line;
+    }
+    .esp-amen {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      font-size: 1.05rem;
+    }
+    .esp-footer-links {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    .esp-home-link {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--gold);
+      text-decoration: none;
+      opacity: 0.75;
+      transition: opacity 0.2s;
+    }
+    .esp-home-link:hover { opacity: 1; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link">
+        <span class="cross">✝</span>
+        <span class="logo-text">The Universal Prayer</span>
+      </a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span id="langLabel">EN</span>
+      </button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- SIDE NAV -->
+  <div class="side-nav-overlay" id="sideNavOverlay"></div>
+  <nav class="side-nav" id="sideNav" aria-label="Site menu">
+    <div class="side-nav-header">
+      <span class="side-nav-title" data-lang="es">Menú</span>
+      <span class="side-nav-title" data-lang="en" style="display:none">Menu</span>
+      <button class="side-nav-close" id="sideNavClose" aria-label="Close menu">✕</button>
+    </div>
+    <ul class="side-nav-list" id="sideNavList"></ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="esp-hero">
+    <a href="/" class="ador-back-link" id="backLink" data-lang="es">← Inicio</a>
+    <a href="/" class="ador-back-link" data-lang="en" style="display:none">← Home</a>
+
+    <img src="/assets/images/espiritu.svg" alt="Espíritu Santo" class="esp-dove" />
+
+    <div class="esp-badge" data-lang="es">🕊 Dones y Carismas</div>
+    <div class="esp-badge" data-lang="en" style="display:none">🕊 Gifts &amp; Charisms</div>
+
+    <h1 class="esp-title" data-lang="es">Espíritu Santo</h1>
+    <h1 class="esp-title" data-lang="en" style="display:none">Holy Spirit</h1>
+
+    <p class="esp-subtitle" data-lang="es">Invocación al Espíritu Santo y oración por sus siete dones y carismas para tu vida.</p>
+    <p class="esp-subtitle" data-lang="en" style="display:none">Invocation to the Holy Spirit and prayer for His seven gifts and charisms for your life.</p>
+  </section>
+
+  <!-- CONTENT -->
+  <main class="esp-content">
+
+    <!-- Invocación -->
+    <section class="esp-section">
+      <h2 class="esp-section-title" data-lang="es">Invocación</h2>
+      <h2 class="esp-section-title" data-lang="en" style="display:none">Invocation</h2>
+
+      <blockquote class="esp-scripture" data-lang="es">
+        «Ven, Espíritu Santo, llena los corazones de Tus fieles y enciende en ellos el fuego de Tu amor.»
+        <cite>— Secuencia de Pentecostés</cite>
+      </blockquote>
+      <blockquote class="esp-scripture" data-lang="en" style="display:none">
+        "Come, Holy Spirit, fill the hearts of Your faithful and kindle in them the fire of Your love."
+        <cite>— Pentecost Sequence</cite>
+      </blockquote>
+
+      <p class="esp-invocation" data-lang="es">Ven, Espíritu Santo,
+rayo de luz celestial;
+Dios de amor, en Ti confío,
+guía mis pasos en verdad.
+
+Eres el Consolador prometido,
+Defensor del alma fiel,
+fuego que purifica y renueva,
+agua viva de todo bien.
+
+Ven a mí con Tus siete dones,
+abre mi mente y mi corazón,
+concédeme la gracia santa
+de vivir en Tu comunión.
+
+Amén.</p>
+      <p class="esp-invocation" data-lang="en" style="display:none">Come, Holy Spirit,
+ray of heavenly light;
+God of love, in You I trust,
+guide my steps in truth and right.
+
+You are the promised Consoler,
+Defender of the faithful soul,
+fire that purifies and renews,
+living water making whole.
+
+Come to me with Your seven gifts,
+open my mind and heart to Thee,
+grant me the holy grace to live
+in Your communion, ever free.
+
+Amen.</p>
+    </section>
+
+    <!-- Los 7 Dones -->
+    <section class="esp-section">
+      <h2 class="esp-section-title" data-lang="es">Los Siete Dones</h2>
+      <h2 class="esp-section-title" data-lang="en" style="display:none">The Seven Gifts</h2>
+
+      <blockquote class="esp-scripture" data-lang="es">
+        «Reposará sobre él el Espíritu del Señor: espíritu de sabiduría e inteligencia, espíritu de consejo y fortaleza, espíritu de ciencia y temor del Señor.»
+        <cite>— Isaías 11, 2</cite>
+      </blockquote>
+      <blockquote class="esp-scripture" data-lang="en" style="display:none">
+        "The Spirit of the LORD will rest on him — the Spirit of wisdom and of understanding, the Spirit of counsel and of might, the Spirit of the knowledge and fear of the LORD."
+        <cite>— Isaiah 11:2</cite>
+      </blockquote>
+
+      <div class="esp-gifts-grid" id="giftsGrid">
+        <!-- filled by JS -->
+      </div>
+    </section>
+
+    <!-- Carismas -->
+    <section class="esp-section">
+      <h2 class="esp-section-title" data-lang="es">Los Carismas</h2>
+      <h2 class="esp-section-title" data-lang="en" style="display:none">The Charisms</h2>
+
+      <blockquote class="esp-scripture" data-lang="es">
+        «A cada uno se le da la manifestación del Espíritu para provecho de todos.»
+        <cite>— 1 Corintios 12, 7</cite>
+      </blockquote>
+      <blockquote class="esp-scripture" data-lang="en" style="display:none">
+        "To each one the manifestation of the Spirit is given for the common good."
+        <cite>— 1 Corinthians 12:7</cite>
+      </blockquote>
+
+      <p class="esp-charisms-text" id="charismsText"></p>
+    </section>
+
+    <!-- Oración de Cierre -->
+    <section class="esp-section">
+      <h2 class="esp-section-title" data-lang="es">Oración por los Dones</h2>
+      <h2 class="esp-section-title" data-lang="en" style="display:none">Prayer for the Gifts</h2>
+
+      <div class="esp-closing-prayer" id="closingPrayer"></div>
+    </section>
+
+    <div class="esp-footer-links">
+      <a href="/" class="esp-home-link" data-lang="es">← Volver al inicio</a>
+      <a href="/" class="esp-home-link" data-lang="en" style="display:none">← Back to home</a>
+    </div>
+
+  </main>
+
+  <script>
+  (function () {
+    'use strict';
+
+    const LANG_KEY = 'universalPrayerLang';
+    let lang = localStorage.getItem(LANG_KEY) || 'es';
+
+    // ── Load JSON data ────────────────────────────────
+    fetch('/data/espiritu.json')
+      .then(r => r.json())
+      .then(data => {
+        renderGifts(data.gifts);
+        renderCharisms(data.charisms);
+        renderClosingPrayer(data.closing_prayer);
+        applyLang(lang);
+      });
+
+    function renderGifts(gifts) {
+      const grid = document.getElementById('giftsGrid');
+      grid.innerHTML = gifts.map(g => `
+        <div class="esp-gift-card">
+          <h3 class="esp-gift-name" data-gift-name>
+            <span data-lang="es">${g.name.es}</span>
+            <span data-lang="en" style="display:none">${g.name.en}</span>
+          </h3>
+          <p class="esp-gift-desc" data-gift-desc>
+            <span data-lang="es">${g.desc.es}</span>
+            <span data-lang="en" style="display:none">${g.desc.en}</span>
+          </p>
+        </div>
+      `).join('');
+    }
+
+    function renderCharisms(charisms) {
+      const el = document.getElementById('charismsText');
+      el.innerHTML = `
+        <span data-lang="es">${charisms.es}</span>
+        <span data-lang="en" style="display:none">${charisms.en}</span>
+      `;
+    }
+
+    function renderClosingPrayer(prayer) {
+      const el = document.getElementById('closingPrayer');
+      el.innerHTML = `
+        <span data-lang="es" style="white-space:pre-line">${prayer.es}</span>
+        <span data-lang="en" style="display:none;white-space:pre-line">${prayer.en}</span>
+      `;
+    }
+
+    // ── Language ──────────────────────────────────────
+    function applyLang(l) {
+      lang = l;
+      localStorage.setItem(LANG_KEY, l);
+      document.documentElement.lang = l === 'en' ? 'en' : 'es';
+      document.getElementById('langLabel').textContent = l === 'en' ? 'ES' : 'EN';
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.dataset.lang === l ? '' : 'none';
+      });
+    }
+
+    document.getElementById('langToggle').addEventListener('click', () => {
+      applyLang(lang === 'es' ? 'en' : 'es');
+    });
+
+    // ── Hamburger menu ────────────────────────────────
+    const btn     = document.getElementById('hamburgerBtn');
+    const nav     = document.getElementById('sideNav');
+    const overlay = document.getElementById('sideNavOverlay');
+    const close   = document.getElementById('sideNavClose');
+    const list    = document.getElementById('sideNavList');
+
+    function renderMenu() {
+      const homeLabel       = lang === 'es' ? '← Inicio'              : '← Home';
+      const familyLabel     = lang === 'es' ? '🙏 Oraciones en Familia' : '🙏 Family Prayers';
+      const intercesorsLabel = lang === 'es' ? '✨ Intercesores'        : '✨ Intercessors';
+      const adoracionLabel  = lang === 'es' ? '✝ Adoración'            : '✝ Adoration';
+      const espirituLabel   = lang === 'es' ? '🕊 Espíritu Santo'       : '🕊 Holy Spirit';
+      list.innerHTML = `
+        <li><a class="side-nav-link side-nav-home"      href="/">${homeLabel}</a></li>
+        <li><a class="side-nav-link side-nav-family"    href="/#oraciones-familia">${familyLabel}</a></li>
+        <li><a class="side-nav-link side-nav-saints"    href="/#intercessorsGrid">${intercesorsLabel}</a></li>
+        <li><a class="side-nav-link side-nav-adoracion" href="/adoracion/">${adoracionLabel}</a></li>
+        <li><a class="side-nav-link side-nav-espiritu"  href="/espiritu/">${espirituLabel}</a></li>`;
+    }
+    renderMenu();
+
+    const openNav  = () => { nav.classList.add('open'); overlay.classList.add('open'); };
+    const closeNav = () => { nav.classList.remove('open'); overlay.classList.remove('open'); };
+
+    btn.addEventListener('click', openNav);
+    close.addEventListener('click', closeNav);
+    overlay.addEventListener('click', closeNav);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeNav(); });
+
+    // ── Init ──────────────────────────────────────────
+    applyLang(lang);
+
+  })();
+  </script>
+
+</body>
+</html>

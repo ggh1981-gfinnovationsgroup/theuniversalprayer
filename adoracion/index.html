@@ -20,33 +20,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/styles.css" />
-  <script>
-  (function() {
-    'use strict';
-
-    // ── Language ──────────────────────────────────────
-    const LANG_KEY = 'universalPrayerLang';
-    let lang = localStorage.getItem(LANG_KEY) || 'es';
-
-    function applyLang(l) {
-      lang = l;
-      localStorage.setItem(LANG_KEY, l);
-      document.documentElement.lang = l === 'en' ? 'en' : 'es';
-      document.getElementById('langLabel').textContent = l === 'en' ? 'ES' : 'EN';
-      document.querySelectorAll('[data-lang]').forEach(el => {
-        el.style.display = el.dataset.lang === l ? '' : 'none';
-      });
-    }
-
-    document.getElementById('langToggle').addEventListener('click', () => {
-      applyLang(lang === 'es' ? 'en' : 'es');
-    });
-
-    // ── Init ──────────────────────────────────────────
-    applyLang(lang);
-
-  })();
-  </script>
 </head>
 <body class="adoracion-page">
 
@@ -60,8 +33,22 @@
       <button class="lang-toggle" id="langToggle" aria-label="Switch language">
         <span id="langLabel">EN</span>
       </button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
+
+  <!-- SIDE NAV -->
+  <div class="side-nav-overlay" id="sideNavOverlay"></div>
+  <nav class="side-nav" id="sideNav" aria-label="Site menu">
+    <div class="side-nav-header">
+      <span class="side-nav-title" data-lang="es">Menú</span>
+      <span class="side-nav-title" data-lang="en" style="display:none">Menu</span>
+      <button class="side-nav-close" id="sideNavClose" aria-label="Close menu">✕</button>
+    </div>
+    <ul class="side-nav-list" id="sideNavList"></ul>
+  </nav>
 
   <!-- HERO -->
   <section class="ador-hero">
@@ -375,7 +362,37 @@
 
     document.getElementById('langToggle').addEventListener('click', () => {
       applyLang(lang === 'es' ? 'en' : 'es');
+      renderMenu();
     });
+
+    // ── Hamburger menu ────────────────────────────────
+    const btn     = document.getElementById('hamburgerBtn');
+    const sideNav = document.getElementById('sideNav');
+    const overlay = document.getElementById('sideNavOverlay');
+    const closeBtn= document.getElementById('sideNavClose');
+    const list    = document.getElementById('sideNavList');
+
+    function renderMenu() {
+      const homeLabel        = lang === 'es' ? '← Inicio'              : '← Home';
+      const familyLabel      = lang === 'es' ? '🙏 Oraciones en Familia' : '🙏 Family Prayers';
+      const intercesorsLabel = lang === 'es' ? '✨ Intercesores'        : '✨ Intercessors';
+      const adoracionLabel   = lang === 'es' ? '✝ Adoración'            : '✝ Adoration';
+      const espirituLabel    = lang === 'es' ? '🕊 Espíritu Santo'       : '🕊 Holy Spirit';
+      list.innerHTML = `
+        <li><a class="side-nav-link side-nav-home"      href="/">${homeLabel}</a></li>
+        <li><a class="side-nav-link side-nav-family"    href="/#oraciones-familia">${familyLabel}</a></li>
+        <li><a class="side-nav-link side-nav-saints"    href="/#intercessorsGrid">${intercesorsLabel}</a></li>
+        <li><a class="side-nav-link side-nav-adoracion" href="/adoracion/">${adoracionLabel}</a></li>
+        <li><a class="side-nav-link side-nav-espiritu"  href="/espiritu/">${espirituLabel}</a></li>`;
+    }
+    renderMenu();
+
+    const openNav  = () => { sideNav.classList.add('open'); overlay.classList.add('open'); };
+    const closeNav = () => { sideNav.classList.remove('open'); overlay.classList.remove('open'); };
+    btn.addEventListener('click', openNav);
+    closeBtn.addEventListener('click', closeNav);
+    overlay.addEventListener('click', closeNav);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeNav(); });
 
     // ── Init ──────────────────────────────────────────
     applyLang(lang);
