@@ -1,0 +1,49 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="d5glow" cx="50%" cy="45%" r="48%">
+      <stop offset="0%" stop-color="#8b1a1a" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#8b1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="d5drop1" cx="40%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#e05050"/>
+      <stop offset="100%" stop-color="#6b0f0f"/>
+    </radialGradient>
+    <radialGradient id="d5drop2" cx="40%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#d04040"/>
+      <stop offset="100%" stop-color="#5a0a0a"/>
+    </radialGradient>
+    <radialGradient id="d5host" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fffde8"/>
+      <stop offset="100%" stop-color="#f0d87a"/>
+    </radialGradient>
+  </defs>
+  <!-- Ambient glow -->
+  <circle cx="50" cy="50" r="46" fill="url(#d5glow)"/>
+  <!-- Central large drop -->
+  <path d="M50,18 C50,18 38,38 38,50 C38,57 43.5,63 50,63 C56.5,63 62,57 62,50 C62,38 50,18 50,18 Z"
+        fill="url(#d5drop1)" opacity="0.92"/>
+  <!-- Highlight inside drop -->
+  <ellipse cx="45" cy="42" rx="3.5" ry="6" fill="#fff" opacity="0.2" transform="rotate(-15 45 42)"/>
+  <!-- Left small drop -->
+  <path d="M26,38 C26,38 20,48 20,54 C20,58 22.7,61 26,61 C29.3,61 32,58 32,54 C32,48 26,38 26,38 Z"
+        fill="url(#d5drop2)" opacity="0.75"/>
+  <ellipse cx="23" cy="48" rx="2" ry="3.5" fill="#fff" opacity="0.18" transform="rotate(-15 23 48)"/>
+  <!-- Right small drop -->
+  <path d="M74,38 C74,38 68,48 68,54 C68,58 70.7,61 74,61 C77.3,61 80,58 80,54 C80,48 74,38 74,38 Z"
+        fill="url(#d5drop2)" opacity="0.75"/>
+  <ellipse cx="71" cy="48" rx="2" ry="3.5" fill="#fff" opacity="0.18" transform="rotate(-15 71 48)"/>
+  <!-- Tiny accent drops falling -->
+  <path d="M39,72 C39,72 36,78 36,81 C36,83 37.3,84.5 39,84.5 C40.7,84.5 42,83 42,81 C42,78 39,72 39,72 Z"
+        fill="#c0392b" opacity="0.55"/>
+  <path d="M61,70 C61,70 58,76 58,79 C58,81 59.3,82.5 61,82.5 C62.7,82.5 64,81 64,79 C64,76 61,70 61,70 Z"
+        fill="#c0392b" opacity="0.5"/>
+  <!-- Small host at bottom center -->
+  <circle cx="50" cy="88" r="7" fill="url(#d5host)" opacity="0.85"/>
+  <circle cx="50" cy="88" r="7" fill="none" stroke="#c9a84c" stroke-width="1" opacity="0.6"/>
+  <line x1="50" y1="83" x2="50" y2="93" stroke="#c9a84c" stroke-width="0.9" opacity="0.45"/>
+  <line x1="45" y1="88" x2="55" y2="88" stroke="#c9a84c" stroke-width="0.9" opacity="0.45"/>
+  <!-- Rays at top -->
+  <line x1="50" y1="10" x2="50" y2="5"  stroke="#c9a84c" stroke-width="1.2" stroke-linecap="round" opacity="0.4"/>
+  <line x1="57" y1="13" x2="61" y2="8"  stroke="#c9a84c" stroke-width="1"   stroke-linecap="round" opacity="0.3"/>
+  <line x1="43" y1="13" x2="39" y2="8"  stroke="#c9a84c" stroke-width="1"   stroke-linecap="round" opacity="0.3"/>
+</svg>
