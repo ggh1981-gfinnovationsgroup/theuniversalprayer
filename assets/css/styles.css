@@ -2963,7 +2963,7 @@ body {
 .a33-footer-link:hover { color: var(--gold); }
 
 @media (max-width: 440px) {
-  .a33-list { grid-template-columns: repeat(2, 1fr); }
+  .a33-list { grid-template-columns: 1fr; }
   .a33-modal-scroll { padding: 1.5rem 1.1rem 2rem; }
 }
 
@@ -3154,6 +3154,6 @@ body {
 @media (max-width: 480px) {
   .ador-33dias-header { padding: 1rem 1rem; }
   .ador-33dias-body   { padding: 0 .5rem 1rem; }
-  .a33-list           { padding: 1rem .5rem 2rem; grid-template-columns: repeat(2, 1fr); }
+  .a33-list           { padding: 1rem .5rem 2rem; grid-template-columns: 1fr; }
   .a33-hero-inner     { padding: .75rem 0 .5rem !important; }
 }
