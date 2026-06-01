@@ -2713,15 +2713,18 @@ body {
   border: 1px solid rgba(201,168,76,.2);
   border-radius: 22px 22px 0 0;
   width: 100%;
-  max-width: 660px;
+  max-width: 100%;
   max-height: 92dvh;
   display: flex;
   flex-direction: column;
   position: relative;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 @media (min-width: 600px) {
   .a33-modal {
     border-radius: 22px;
+    max-width: 660px;
     max-height: 88dvh;
   }
 }
@@ -2743,8 +2746,11 @@ body {
 .a33-modal-close:hover { background: rgba(255,255,255,.14); color: #fff; }
 .a33-modal-scroll {
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 2rem 1.5rem 2.5rem;
   flex: 1;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 /* Modal header */
@@ -3156,4 +3162,7 @@ body {
   .ador-33dias-body   { padding: 0 .5rem 1rem; }
   .a33-list           { padding: 1rem .5rem 2rem; grid-template-columns: 1fr; }
   .a33-hero-inner     { padding: .75rem 0 .5rem !important; }
+  .a33-modal-scroll   { padding: 1.25rem 1rem 2rem; }
+  .a33-modal-icon     { width: 80px; height: 80px; }
+  .a33-modal-icon svg { width: 80px; height: 80px; }
 }
