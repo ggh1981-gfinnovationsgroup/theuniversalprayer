@@ -2625,7 +2625,7 @@ body {
   margin: 0 auto;
   padding: 1.75rem 1.25rem 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
   gap: .9rem;
 }
 
@@ -2961,7 +2961,7 @@ body {
 .a33-footer-link:hover { color: var(--gold); }
 
 @media (max-width: 440px) {
-  .a33-list { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+  .a33-list { grid-template-columns: repeat(auto-fill, minmax(min(140px, 100%), 1fr)); }
   .a33-modal-scroll { padding: 1.5rem 1.1rem 2rem; }
 }
 
@@ -3142,4 +3142,5 @@ body {
 .ador-33dias-body {
   padding: 0 1.5rem 1.5rem;
   border-top: 1px solid rgba(201,168,76,.12);
+  overflow-x: hidden;
 }
