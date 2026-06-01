@@ -1,0 +1,28 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="d26glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e8c97a" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#e8c97a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="50" cy="50" r="46" fill="url(#d26glow)"/>
+  <!-- Folded praying hands, fingers pointing upward -->
+  <!-- Left hand outline -->
+  <path d="M50,22 C48,22 44,24 42,28 L38,48 C38,52 40,55 43,55
+           L45,75 C45,77 47,78 50,78"
+        fill="none" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  <!-- Right hand outline (mirror) -->
+  <path d="M50,22 C52,22 56,24 58,28 L62,48 C62,52 60,55 57,55
+           L55,75 C55,77 53,78 50,78"
+        fill="none" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  <!-- Finger lines (left side) -->
+  <line x1="44" y1="22" x2="42" y2="54" stroke="#e8c97a" stroke-width="0.8" stroke-linecap="round" opacity="0.4"/>
+  <line x1="46.5" y1="21" x2="44.5" y2="54" stroke="#e8c97a" stroke-width="0.8" stroke-linecap="round" opacity="0.4"/>
+  <!-- Finger lines (right side) -->
+  <line x1="56" y1="22" x2="58" y2="54" stroke="#e8c97a" stroke-width="0.8" stroke-linecap="round" opacity="0.4"/>
+  <line x1="53.5" y1="21" x2="55.5" y2="54" stroke="#e8c97a" stroke-width="0.8" stroke-linecap="round" opacity="0.4"/>
+  <!-- Small glow at fingertips -->
+  <circle cx="50" cy="20" r="3.5" fill="#e8c97a" opacity="0.3"/>
+  <!-- Crosshatch wrists at bottom -->
+  <path d="M45,75 C47,78 53,78 55,75" fill="none" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+</svg>
