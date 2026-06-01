@@ -1,0 +1,52 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="d9glow" cx="50%" cy="42%" r="50%">
+      <stop offset="0%" stop-color="#e8c97a" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#c9a84c" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="d9flame" cx="50%" cy="70%" r="60%">
+      <stop offset="0%" stop-color="#fffde8"/>
+      <stop offset="40%" stop-color="#e8c97a"/>
+      <stop offset="100%" stop-color="#c0392b"/>
+    </radialGradient>
+    <radialGradient id="d9base" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8a6e2f"/>
+      <stop offset="100%" stop-color="#5a4510"/>
+    </radialGradient>
+  </defs>
+  <!-- Rays of light radiating outward -->
+  <circle cx="50" cy="42" r="44" fill="url(#d9glow)"/>
+  <g transform="translate(50,42)">
+    <line y2="-38" stroke="#e8c97a" stroke-width="1"   opacity="0.3" stroke-linecap="round"/>
+    <g transform="rotate(22.5)"><line y2="-38" stroke="#e8c97a" stroke-width="0.8" opacity="0.25" stroke-linecap="round"/></g>
+    <g transform="rotate(45)"><line y2="-38"   stroke="#e8c97a" stroke-width="1"   opacity="0.3" stroke-linecap="round"/></g>
+    <g transform="rotate(67.5)"><line y2="-38" stroke="#e8c97a" stroke-width="0.8" opacity="0.25" stroke-linecap="round"/></g>
+    <g transform="rotate(90)"><line y2="-38"   stroke="#e8c97a" stroke-width="1"   opacity="0.3" stroke-linecap="round"/></g>
+    <g transform="rotate(112.5)"><line y2="-38" stroke="#e8c97a" stroke-width="0.8" opacity="0.25" stroke-linecap="round"/></g>
+    <g transform="rotate(135)"><line y2="-38"  stroke="#e8c97a" stroke-width="1"   opacity="0.3" stroke-linecap="round"/></g>
+    <g transform="rotate(157.5)"><line y2="-38" stroke="#e8c97a" stroke-width="0.8" opacity="0.25" stroke-linecap="round"/></g>
+    <g transform="rotate(180)"><line y2="-38"  stroke="#e8c97a" stroke-width="1"   opacity="0.3" stroke-linecap="round"/></g>
+    <g transform="rotate(202.5)"><line y2="-38" stroke="#e8c97a" stroke-width="0.8" opacity="0.25" stroke-linecap="round"/></g>
+    <g transform="rotate(225)"><line y2="-38"  stroke="#e8c97a" stroke-width="1"   opacity="0.3" stroke-linecap="round"/></g>
+    <g transform="rotate(247.5)"><line y2="-38" stroke="#e8c97a" stroke-width="0.8" opacity="0.25" stroke-linecap="round"/></g>
+    <g transform="rotate(270)"><line y2="-38"  stroke="#e8c97a" stroke-width="1"   opacity="0.3" stroke-linecap="round"/></g>
+    <g transform="rotate(292.5)"><line y2="-38" stroke="#e8c97a" stroke-width="0.8" opacity="0.25" stroke-linecap="round"/></g>
+    <g transform="rotate(315)"><line y2="-38"  stroke="#e8c97a" stroke-width="1"   opacity="0.3" stroke-linecap="round"/></g>
+    <g transform="rotate(337.5)"><line y2="-38" stroke="#e8c97a" stroke-width="0.8" opacity="0.25" stroke-linecap="round"/></g>
+  </g>
+  <!-- Candle body -->
+  <rect x="43" y="60" width="14" height="24" rx="3" fill="url(#d9base)"/>
+  <!-- Wax drip -->
+  <path d="M43,64 Q40,66 41,70 L43,70 Z" fill="#e8c97a" opacity="0.4"/>
+  <!-- Candle top -->
+  <ellipse cx="50" cy="60" rx="7" ry="2.5" fill="#c9a84c" opacity="0.9"/>
+  <!-- Wick -->
+  <line x1="50" y1="60" x2="50" y2="54" stroke="#5a4510" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Flame -->
+  <path d="M50,54 C50,54 44,46 46,40 C47,36 50,32 50,28 C50,28 54,36 54,40 C56,46 50,54 50,54 Z"
+        fill="url(#d9flame)" opacity="0.95"/>
+  <!-- Inner flame highlight -->
+  <path d="M50,52 C50,52 47,46 48.5,41 C49,38 50,35 50,35 C50,35 51.5,40 52,43 C53,47 50,52 50,52 Z"
+        fill="#fffde8" opacity="0.6"/>
+</svg>
