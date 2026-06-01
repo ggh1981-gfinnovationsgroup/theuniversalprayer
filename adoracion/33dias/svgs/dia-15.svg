@@ -1,0 +1,38 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="d15glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e8c97a" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#e8c97a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="d15arm" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d4b87a"/>
+      <stop offset="100%" stop-color="#8a6e2f"/>
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="46" fill="url(#d15glow)"/>
+  <!-- Left arm outstretched -->
+  <path d="M50,50 C44,46 34,44 20,46" fill="none" stroke="url(#d15arm)" stroke-width="5" stroke-linecap="round"/>
+  <!-- Left hand open -->
+  <circle cx="18" cy="46" r="4" fill="url(#d15arm)" opacity="0.85"/>
+  <line x1="15" y1="43" x2="14" y2="40" stroke="#d4b87a" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="17" y1="42" x2="16" y2="38" stroke="#d4b87a" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="19" y1="42" x2="19" y2="38" stroke="#d4b87a" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="21" y1="42" x2="22" y2="39" stroke="#d4b87a" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Right arm outstretched -->
+  <path d="M50,50 C56,46 66,44 80,46" fill="none" stroke="url(#d15arm)" stroke-width="5" stroke-linecap="round"/>
+  <!-- Right hand open -->
+  <circle cx="82" cy="46" r="4" fill="url(#d15arm)" opacity="0.85"/>
+  <line x1="79" y1="43" x2="78" y2="40" stroke="#d4b87a" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="81" y1="42" x2="80" y2="38" stroke="#d4b87a" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="83" y1="42" x2="83" y2="38" stroke="#d4b87a" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="85" y1="42" x2="86" y2="39" stroke="#d4b87a" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Body (torso suggestion) -->
+  <path d="M46,46 C46,50 46,62 47,72 L53,72 C54,62 54,50 54,46 Z" fill="url(#d15arm)" opacity="0.6"/>
+  <!-- Head -->
+  <circle cx="50" cy="38" r="8" fill="url(#d15arm)" opacity="0.7"/>
+  <!-- Light/glow between arms -->
+  <ellipse cx="50" cy="50" rx="28" ry="10" fill="#e8c97a" opacity="0.08"/>
+  <!-- Small light at center of chest -->
+  <circle cx="50" cy="53" r="3" fill="#e8c97a" opacity="0.4"/>
+  <circle cx="50" cy="53" r="1.5" fill="#fffde8" opacity="0.7"/>
+</svg>
