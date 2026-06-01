@@ -1,0 +1,52 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="d8glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4a7c3f" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#4a7c3f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="d8vine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8c97a"/>
+      <stop offset="100%" stop-color="#8a6e2f"/>
+    </linearGradient>
+    <radialGradient id="d8grape" cx="35%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#9b59b6"/>
+      <stop offset="100%" stop-color="#4a235a"/>
+    </radialGradient>
+  </defs>
+  <circle cx="50" cy="50" r="46" fill="url(#d8glow)"/>
+  <!-- Main vine stem -->
+  <path d="M50,88 C50,88 48,72 50,58 C52,44 46,34 40,22"
+        fill="none" stroke="url(#d8vine)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Branch left -->
+  <path d="M48,65 C40,62 30,65 22,58"
+        fill="none" stroke="url(#d8vine)" stroke-width="2" stroke-linecap="round"/>
+  <!-- Branch right -->
+  <path d="M50,52 C58,48 68,52 76,46"
+        fill="none" stroke="url(#d8vine)" stroke-width="2" stroke-linecap="round"/>
+  <!-- Branch upper left -->
+  <path d="M44,38 C36,34 28,38 20,32"
+        fill="none" stroke="url(#d8vine)" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Leaf left -->
+  <path d="M22,58 C18,52 20,44 28,46 C24,50 24,56 22,58 Z" fill="#4a7c3f" opacity="0.7"/>
+  <!-- Leaf right -->
+  <path d="M76,46 C80,40 78,32 70,34 C74,38 74,44 76,46 Z" fill="#4a7c3f" opacity="0.7"/>
+  <!-- Leaf upper -->
+  <path d="M20,32 C16,26 18,18 26,20 C22,24 22,30 20,32 Z" fill="#4a7c3f" opacity="0.6"/>
+  <!-- Tendrils -->
+  <path d="M50,58 C56,56 60,52 58,48" fill="none" stroke="#4a7c3f" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+  <path d="M48,65 C44,68 40,66 38,70" fill="none" stroke="#4a7c3f" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+  <!-- Grape cluster left -->
+  <circle cx="26" cy="68" r="3.5" fill="url(#d8grape)" opacity="0.85"/>
+  <circle cx="22" cy="72" r="3.5" fill="url(#d8grape)" opacity="0.85"/>
+  <circle cx="30" cy="72" r="3.5" fill="url(#d8grape)" opacity="0.85"/>
+  <circle cx="26" cy="76" r="3"   fill="url(#d8grape)" opacity="0.8"/>
+  <circle cx="22" cy="64" r="3"   fill="url(#d8grape)" opacity="0.75"/>
+  <!-- Grape cluster right -->
+  <circle cx="78" cy="54" r="3"   fill="url(#d8grape)" opacity="0.8"/>
+  <circle cx="74" cy="58" r="3.5" fill="url(#d8grape)" opacity="0.85"/>
+  <circle cx="82" cy="58" r="3"   fill="url(#d8grape)" opacity="0.8"/>
+  <circle cx="78" cy="62" r="3"   fill="url(#d8grape)" opacity="0.8"/>
+  <!-- Grape highlights -->
+  <circle cx="24.5" cy="66.5" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="76.5" cy="52.5" r="0.8" fill="#fff" opacity="0.3"/>
+</svg>
