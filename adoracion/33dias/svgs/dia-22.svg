@@ -1,0 +1,23 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="d22glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#e8c97a" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#e8c97a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="50" cy="50" r="46" fill="url(#d22glow)"/>
+  <!-- Ear shape -->
+  <path d="M55,25 C70,25 78,35 78,50 C78,65 70,75 55,75
+           C48,75 44,70 44,63 C44,58 47,55 50,55
+           C53,55 55,52 55,49 C55,44 50,40 50,35 C50,28 52,25 55,25 Z"
+        fill="none" stroke="#c9a84c" stroke-width="2" opacity="0.75"/>
+  <!-- Inner ear canal -->
+  <path d="M55,38 C60,38 64,43 64,50 C64,57 60,62 55,62"
+        fill="none" stroke="#e8c97a" stroke-width="1.5" opacity="0.55"/>
+  <!-- Sound waves radiating outward (left side of ear) -->
+  <path d="M38,38 C33,43 33,57 38,62" fill="none" stroke="#e8c97a" stroke-width="2"   stroke-linecap="round" opacity="0.5"/>
+  <path d="M32,32 C24,38 24,62 32,68" fill="none" stroke="#e8c97a" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+  <path d="M26,26 C15,33 15,67 26,74" fill="none" stroke="#e8c97a" stroke-width="1"   stroke-linecap="round" opacity="0.2"/>
+  <!-- Small glow dot in the center of ear canal -->
+  <circle cx="59" cy="50" r="2.5" fill="#e8c97a" opacity="0.5"/>
+</svg>
