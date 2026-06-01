@@ -1,0 +1,32 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="d14center" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fffde8" stop-opacity="1"/>
+      <stop offset="30%" stop-color="#e8c97a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="d14red" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c0392b" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#e74c3c" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="d14white" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e8e8e8" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ffffff"  stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <!-- Background glow -->
+  <circle cx="50" cy="50" r="46" fill="url(#d14center)" opacity="0.35"/>
+  <!-- Red ray (left) -->
+  <path d="M50,50 L6,30 L6,50 Z"  fill="url(#d14red)"   opacity="0.7"/>
+  <!-- White ray (left-center) -->
+  <path d="M50,50 L6,50 L6,70 Z"  fill="url(#d14white)" opacity="0.65"/>
+  <!-- Large red ray spread -->
+  <path d="M50,50 L4,20 L6,30 Z"  fill="#c0392b" opacity="0.35"/>
+  <path d="M50,50 L6,70 L8,82 Z"  fill="#ddd"    opacity="0.3"/>
+  <!-- Central glow source -->
+  <circle cx="50" cy="50" r="14" fill="url(#d14center)" opacity="0.9"/>
+  <circle cx="50" cy="50" r="8"  fill="#fffde8"          opacity="0.95"/>
+  <!-- Cross in center -->
+  <line x1="50" y1="42" x2="50" y2="58" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"/>
+  <line x1="42" y1="50" x2="58" y2="50" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"/>
+</svg>
