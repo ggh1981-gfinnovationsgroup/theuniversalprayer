@@ -1,121 +1,125 @@
-﻿{
-    "id":  "santamonica",
-    "name":  {
-                 "es":  "Santa Mónica",
-                 "en":  "Saint Monica"
-             },
-    "color":  "#1a3a6a",
-    "image":  "/assets/images/santamonica.svg",
-    "specialty":  {
-                      "es":  "Madres y conversión",
-                      "en":  "Mothers \u0026 conversion"
-                  },
-    "prayer":  {
-                   "es":  "Santa Mónica, madre que durante diecisiete años regaste con lágrimas la conversión de tu hijo Agustín sin rendirte nunca, intercede hoy por todas las madres que sufren por sus hijos.\n\nTú conoces el dolor de ver alejarse a quien amas. Sabes lo que es orar sin ver resultados, llorar sin consuelo aparente, esperar sin señales visibles. Y sabes también que Dios escucha esas lágrimas — porque el día llegó, y Agustín se convirtió en uno de los más grandes santos de la Iglesia.\n\nAlcánzanos la perseverancia en la oración, especialmente por nuestros seres queridos que se han alejado de Dios. Que nunca dejemos de creer que la gracia puede más que cualquier pecado.\n\nSanta Mónica, madre perseverante en la oración, intercede por nosotros.\n\nAmén.",
-                   "en":  "Saint Monica, mother who for seventeen years watered with tears the conversion of your son Augustine without ever giving up, intercede today for all mothers who suffer for their children.\n\nYou know the pain of watching someone you love drift away. You know what it is to pray without seeing results, to weep without apparent consolation, to wait without visible signs. And you also know that God hears those tears — for the day came, and Augustine became one of the greatest saints of the Church.\n\nObtain for us perseverance in prayer, especially for our loved ones who have drifted from God. May we never stop believing that grace is more powerful than any sin.\n\nSaint Monica, mother persevering in prayer, intercede for us.\n\nAmen."
-               },
-    "history":  {
-                    "es":  "Mónica nació hacia el año 331 en Tagaste, ciudad del norte de África (actual Argelia), de familia cristiana. Fue casada con Patricio, un hombre pagano de carácter violento e infiel, con quien tuvo al menos tres hijos. La convivencia fue difícil, pero Mónica perseveró en la caridad y la oración, y finalmente logró la conversión de su esposo al cristianismo poco antes de la muerte de éste. Su suegra, igualmente difícil de carácter, también se convirtió gracias a su paciencia.\n\nPero la prueba central de la vida de Mónica fue su hijo mayor, Agustín. Desde que éste adoptó el maniqueísmo a los diecisiete años, Mónica lloró, rogó y luchó durante dieciséis años para que su hijo encontrara el camino de Dios. Un obispo africano, al que ella rogaba que argumentara con Agustín, le dijo una frase que se ha convertido en clásica de la esperanza materna: \u0027No es posible que el hijo de tantas lágrimas se pierda\u0027. Mónica no solo rezó: siguió a Agustín a Cartago, a Roma y a Milán, una determinación que exigía un coraje extraordinario para una mujer del siglo IV.\n\nEn Milán conoció a Ambrosio, el gran obispo que sería el instrumento de la conversión de Agustín. Las Confesiones de Agustín narran con una ternura incomparable la relación de madre e hijo en esos años cruciales: los debates nocturnos, las lágrimas de Mónica, la resistencia intelectual de Agustín, y finalmente la noche de Pascua del 387 en que Agustín fue bautizado por Ambrosio. Mónica tenía entonces cincuenta y cinco años y había luchado dieciséis por esta noche.\n\nPoco después, en Ostia, camino del regreso a África, Mónica tuvo con Agustín la famosa visión contemplativa descrita en las Confesiones (libro IX), una experiencia mística compartida de gran belleza. Días después cayó enferma y murió, diciendo a sus hijos que no importaba dónde fuera enterrada porque Dios la encontraría. Tenía cincuenta y cinco años. Agustín describe su muerte con una conmoción que atraviesa dieciséis siglos. Es patrona de las madres, las esposas que sufren, los alcohólicos y quienes tienen seres queridos alejados de la fe.",
-                    "en":  "Monica was born around 331 in Tagaste, a city in North Africa (present-day Algeria), to a Christian family. She was married to Patricius, a pagan man of violent and unfaithful character, with whom she had at least three children. The cohabitation was difficult, but Monica persevered in charity and prayer, and finally achieved her husband\u0027s conversion to Christianity shortly before his death. Her mother-in-law, equally difficult in character, also converted thanks to her patience.\n\nBut the central trial of Monica\u0027s life was her eldest son, Augustine. From the time he adopted Manichaeism at seventeen, Monica wept, prayed, and struggled for sixteen years for her son to find the path to God. An African bishop, whom she begged to argue with Augustine, said to her a phrase that has become a classic of maternal hope: \u0027It is not possible that the son of so many tears should perish.\u0027 Monica did not only pray: she followed Augustine to Carthage, to Rome, and to Milan, a determination that required extraordinary courage for a woman of the fourth century.\n\nIn Milan she met Ambrose, the great bishop who would be the instrument of Augustine\u0027s conversion. Augustine\u0027s Confessions narrates with incomparable tenderness the mother-son relationship in those crucial years: the nocturnal debates, Monica\u0027s tears, Augustine\u0027s intellectual resistance, and finally the Easter night of 387 when Augustine was baptized by Ambrose. Monica was then fifty-five years old and had fought sixteen years for this night.\n\nShortly afterward, in Ostia, on the way back to Africa, Monica shared with Augustine the famous contemplative vision described in the Confessions (book IX), a shared mystical experience of great beauty. Days later she fell ill and died, telling her sons that it did not matter where she was buried because God would find her. She was fifty-five years old. Augustine describes her death with an emotion that pierces sixteen centuries. She is patron of mothers, suffering wives, alcoholics, and those with loved ones away from the faith."
-                },
-    "novena":  [
-                   {
-                       "day":  1,
-                       "es":  "Por los hijos alejados de la fe\n\nSanta Mónica, que lloraste por tu hijo Agustín durante años sin perder la esperanza, intercede por todos los padres que tienen hijos alejados de Dios. Que nunca dejen de orar y confíen en que Dios escucha cada lágrima. Amén.",
-                       "en":  "For children far from faith\n\nSaint Monica, who wept for your son Augustine for years without losing hope, intercede for all parents with children far from God. May they never stop praying and trust that God hears every tear. Amen."
-                   },
-                   {
-                       "day":  2,
-                       "es":  "Por los matrimonios difíciles\n\nSanta Mónica, que soportaste con paciencia y oración a un esposo difícil y lo viste convertirse, intercede por todos los matrimonios en crisis. Que la gracia de Dios transforme los corazones endurecidos. Amén.",
-                       "en":  "For difficult marriages\n\nSaint Monica, who patiently and prayerfully endured a difficult husband and saw him convert, intercede for all marriages in crisis. May God\u0027s grace transform hardened hearts. Amen."
-                   },
-                   {
-                       "day":  3,
-                       "es":  "Por la perseverancia en la oración\n\nSanta Mónica, que oraste durante décadas sin ver el fruto inmediato de tus oraciones, enséñanos a perseverar en la oración aunque el cielo parezca estar callado. Amén.",
-                       "en":  "For perseverance in prayer\n\nSaint Monica, who prayed for decades without seeing immediate fruit from your prayers, teach us to persevere in prayer even when heaven seems silent. Amen."
-                   },
-                   {
-                       "day":  4,
-                       "es":  "Por las madres que sufren\n\nDulce Mónica, que conociste el dolor de ver sufrir a un hijo amado, acompaña a todas las madres que hoy sufren por sus hijos y llévalas a los pies de María, Madre de Dolores. Amén.",
-                       "en":  "For suffering mothers\n\nSweet Monica, who knew the pain of watching a beloved son suffer, accompany all mothers who suffer for their children today and lead them to the feet of Mary, Mother of Sorrows. Amen."
-                   },
-                   {
-                       "day":  5,
-                       "es":  "Por los convertidos y los que buscan a Dios\n\nSanta Mónica, madre espiritual de los convertidos, intercede por todos los que buscan a Dios con el corazón abierto. Que encuentren, como Agustín, que el corazón está inquieto hasta que descansa en Él. Amén.",
-                       "en":  "For converts and those seeking God\n\nSaint Monica, spiritual mother of converts, intercede for all who seek God with an open heart. May they find, like Augustine, that our heart is restless until it rests in Him. Amen."
-                   },
-                   {
-                       "day":  6,
-                       "es":  "Por la familia cristiana\n\nSanta Mónica, modelo de familia cristiana, intercede por todas las familias para que sean pequeñas iglesias domésticas donde Dios sea conocido, amado y servido. Amén.",
-                       "en":  "For the Christian family\n\nSaint Monica, model of the Christian family, intercede for all families that they may be little domestic churches where God is known, loved, and served. Amen."
-                   },
-                   {
-                       "day":  7,
-                       "es":  "Por los que han perdido la esperanza\n\nSanta Mónica esperanzada, que nunca abandonaste la fe en la conversión de tu hijo, intercede por todos los que han perdido la esperanza en sus situaciones imposibles. Que Dios les revele que nada es imposible para Él. Amén.",
-                       "en":  "For those who have lost hope\n\nHopeful Saint Monica, who never abandoned faith in your son\u0027s conversion, intercede for all who have lost hope in their impossible situations. May God reveal to them that nothing is impossible for Him. Amen."
-                   },
-                   {
-                       "day":  8,
-                       "es":  "Por una muerte en paz\n\nSanta Mónica, que moriste en paz en Ostia habiendo visto cumplida tu mayor petición, intercede para que todos los que amamos puedan morir en la gracia de Dios y con el corazón en paz. Amén.",
-                       "en":  "For a peaceful death\n\nSaint Monica, who died peacefully in Ostia having seen your greatest request fulfilled, intercede that all our loved ones may die in God\u0027s grace and with peaceful hearts. Amen."
-                   },
-                   {
-                       "day":  9,
-                       "es":  "Por la confianza en Dios\n\nSanta Mónica, tu vida entera fue un acto de confianza en Dios. Enséñanos a confiar en Su providencia cuando no entendemos Sus caminos, seguros de que Él escucha cada oración hecha desde el amor. Amén.",
-                       "en":  "For trust in God\n\nSaint Monica, your entire life was an act of trust in God. Teach us to trust in His providence when we do not understand His ways, certain that He hears every prayer made from love. Amen."
-                   }
-               ],
-    "litany":  {
-                   "title":  {
-                                 "es":  "Letan�a de Santa M�nica",
-                                 "en":  "Litany of Saint Monica"
-                             },
-                   "invocations":  [
-                                       {
-                                           "es":  "Santa M�nica, madre perseverante en la oraci�n,",
-                                           "en":  "Saint Monica, mother persevering in prayer,"
-                                       },
-                                       {
-                                           "es":  "Santa M�nica, consoladora de los afligidos,",
-                                           "en":  "Saint Monica, consoler of the afflicted,"
-                                       },
-                                       {
-                                           "es":  "Santa M�nica, modelo de paciencia conyugal,",
-                                           "en":  "Saint Monica, model of conjugal patience,"
-                                       },
-                                       {
-                                           "es":  "Santa M�nica, esperanza de los padres angustiados,",
-                                           "en":  "Saint Monica, hope of anguished parents,"
-                                       },
-                                       {
-                                           "es":  "Santa M�nica, que lloraste por la conversi�n de tu hijo,",
-                                           "en":  "Saint Monica, who wept for your son\u0027s conversion,"
-                                       },
-                                       {
-                                           "es":  "Santa M�nica, que alcanzaste la gracia para los tuyos,",
-                                           "en":  "Saint Monica, who obtained grace for your loved ones,"
-                                       },
-                                       {
-                                           "es":  "Santa M�nica, patrona de las madres,",
-                                           "en":  "Saint Monica, patron of mothers,"
-                                       },
-                                       {
-                                           "es":  "Santa M�nica, intercesora de los matrimonios dif�ciles,",
-                                           "en":  "Saint Monica, intercessor of difficult marriages,"
-                                       }
-                                   ],
-                   "response":  {
-                                    "es":  "Ruega por nosotros.",
-                                    "en":  "Pray for us."
-                                }
-               },
-    "miracles":  {
-                     "available":  true,
-                     "es":  "1. LAS LAGRIMAS DE TREINTA ANOS: EL OBISPO Y LA PROMESA\nMonica era una mujer de fe ardiente casada con Patricio, un pagano violento y de caracter dificil. Pero su mayor dolor no era su marido: era Agustin, su hijo mas brillante, que se habia sumergido en el maniqueismo, los placeres y la disolucion intelectual. Monica lo seguia, lo oraba, lo lloraba. Cuando fue a ver a un obispo anciano —cuyo nombre no ha llegado a la historia— y le pidio que hablara con Agustin para convertirlo, el obispo le respondio: «Vete, no es posible que el hijo de tantas lagrimas se pierda». Esta frase se convirtio en la promesa que sostuvo a Monica durante decadas. San Agustin mismo la recoge en las Confesiones con reverencia: fue la palabra de Dios a traves de un hombre.\n\n2. EL SUEÑO DEL TABLON: «DONDE TU ESTAS, ESTARA EL»\nEn uno de los momentos mas oscuros, cuando Agustin se habia marchado a Roma sin decirle —engañandola deliberadamente para que no lo siguiera—, Monica tuvo un sueño. Estaba de pie sobre un tablon de madera, llorando. Un ser resplandeciente se le acerco y le pregunto por que lloraba. Ella le explico. El ser le dijo: «Donde estas tu, estara el». Monica interpreto el sueno como promesa de que Agustin volveria a la fe. Cuando mas tarde le conto el sueno a Agustin, el intento convencerla de que significaba que ella se volveria como el. Monica le respondio sin vacilar: «No. No me dijo que donde el estuviera estaria yo, sino que donde yo estuviera estaria el». San Agustin escribio que esa respuesta le impresiono mas que cualquier argumento filosofico.\n\n3. LA MUERTE EN OSTIA: LA ULTIMA CONVERSACION CON AGUSTIN\nAgustin se bautizo en Milan en la Pascua del 387, a los 32 anos. Monica tenia entonces 55. Viajaron juntos hacia Africa para regresar a su tierra. En Ostia, el puerto de Roma, se detuvieron a descansar. Una tarde, sentados juntos junto a una ventana que daba al jardin, madre e hijo tuvieron una conversacion mistica en la que ascendieron juntos, segun Agustin, «hasta tocar brevemente con todo el impulso de nuestro corazon la Sabiduria eterna». Dias despues, Monica enfermo y dijo a sus hijos: «Enterradme aqui. No importa donde este mi cuerpo. Dios lo sabe encontrar». Murio cinco dias mas tarde, en paz completa, a los 56 años. Agustin escribio: «Cerre sus ojos y un dolor inmenso inundo mi corazon. Pero me consolé en El que es nuestra vida».",
-                     "en":  "1. THIRTY YEARS OF TEARS: THE BISHOP AND THE PROMISE\nMonica was a woman of ardent faith married to Patricius, a violent and difficult pagan. But her greatest sorrow was not her husband: it was Augustine, her most brilliant son, who had plunged into Manichaeism, pleasures, and intellectual dissolution. Monica followed him, prayed for him, wept for him. When she went to see an elderly bishop — whose name has not come down to history — and asked him to speak with Augustine to convert him, the bishop replied: \"Go, it is not possible that the son of so many tears should perish.\" This phrase became the promise that sustained Monica for decades. Saint Augustine himself records it in the Confessions with reverence: it was God\u0027s word through a man.\n\n2. THE DREAM OF THE PLANK: \"WHERE YOU ARE, HE WILL BE\"\nAt one of the darkest moments, when Augustine had left for Rome without telling her — deliberately deceiving her so she would not follow him — Monica had a dream. She was standing on a wooden plank, weeping. A radiant being approached her and asked why she wept. She explained. The being told her: \"Where you are, he will be.\" Monica interpreted the dream as a promise that Augustine would return to the faith. When she later recounted the dream to Augustine, he tried to convince her it meant she would become like him. Monica replied without hesitation: \"He did not say that where he was I would be, but that where I was he would be.\" Saint Augustine wrote that this reply impressed him more than any philosophical argument.\n\n3. DEATH IN OSTIA: THE LAST CONVERSATION WITH AUGUSTINE\nAugustine was baptized in Milan at Easter of 387, at age 32. Monica was then 55. They traveled together toward Africa to return home. At Ostia, the port of Rome, they stopped to rest. One afternoon, seated together by a window overlooking the garden, mother and son had a mystical conversation in which they ascended together, according to Augustine, \"to touch briefly with the full impulse of our heart the eternal Wisdom.\" Days later, Monica fell ill and said to her children: \"Bury me here. It does not matter where my body rests. God knows how to find it.\" She died five days later, in complete peace, at age 56. Augustine wrote: \"I closed her eyes and an immense grief flooded my heart. But I was consoled in Him who is our life.\""
-                 },
-    "feast_day":  {
-                      "es":  "27 de agosto",
-                      "en":  "August 27"
-                  }
+{
+  "id": "santamonica",
+  "name": {
+    "es": "Santa Mónica",
+    "en": "Saint Monica"
+  },
+  "color": "#1a3a6a",
+  "image": "/assets/images/santamonica.svg",
+  "specialty": {
+    "es": "Madres y conversión",
+    "en": "Mothers & conversion"
+  },
+  "prayer": {
+    "es": "Santa Mónica, madre que durante diecisiete años regaste con lágrimas la conversión de tu hijo Agustín sin rendirte nunca, intercede hoy por todas las madres que sufren por sus hijos.\n\nTú conoces el dolor de ver alejarse a quien amas. Sabes lo que es orar sin ver resultados, llorar sin consuelo aparente, esperar sin señales visibles. Y sabes también que Dios escucha esas lágrimas — porque el día llegó, y Agustín se convirtió en uno de los más grandes santos de la Iglesia.\n\nAlcánzanos la perseverancia en la oración, especialmente por nuestros seres queridos que se han alejado de Dios. Que nunca dejemos de creer que la gracia puede más que cualquier pecado.\n\nSanta Mónica, madre perseverante en la oración, intercede por nosotros.\n\nAmén.",
+    "en": "Saint Monica, mother who for seventeen years watered with tears the conversion of your son Augustine without ever giving up, intercede today for all mothers who suffer for their children.\n\nYou know the pain of watching someone you love drift away. You know what it is to pray without seeing results, to weep without apparent consolation, to wait without visible signs. And you also know that God hears those tears — for the day came, and Augustine became one of the greatest saints of the Church.\n\nObtain for us perseverance in prayer, especially for our loved ones who have drifted from God. May we never stop believing that grace is more powerful than any sin.\n\nSaint Monica, mother persevering in prayer, intercede for us.\n\nAmen."
+  },
+  "history": {
+    "es": "Mónica nació hacia el año 331 en Tagaste, ciudad del norte de África (actual Argelia), de familia cristiana. Fue casada con Patricio, un hombre pagano de carácter violento e infiel, con quien tuvo al menos tres hijos. La convivencia fue difícil, pero Mónica perseveró en la caridad y la oración, y finalmente logró la conversión de su esposo al cristianismo poco antes de la muerte de éste. Su suegra, igualmente difícil de carácter, también se convirtió gracias a su paciencia.\n\nPero la prueba central de la vida de Mónica fue su hijo mayor, Agustín. Desde que éste adoptó el maniqueísmo a los diecisiete años, Mónica lloró, rogó y luchó durante dieciséis años para que su hijo encontrara el camino de Dios. Un obispo africano, al que ella rogaba que argumentara con Agustín, le dijo una frase que se ha convertido en clásica de la esperanza materna: 'No es posible que el hijo de tantas lágrimas se pierda'. Mónica no solo rezó: siguió a Agustín a Cartago, a Roma y a Milán, una determinación que exigía un coraje extraordinario para una mujer del siglo IV.\n\nEn Milán conoció a Ambrosio, el gran obispo que sería el instrumento de la conversión de Agustín. Las Confesiones de Agustín narran con una ternura incomparable la relación de madre e hijo en esos años cruciales: los debates nocturnos, las lágrimas de Mónica, la resistencia intelectual de Agustín, y finalmente la noche de Pascua del 387 en que Agustín fue bautizado por Ambrosio. Mónica tenía entonces cincuenta y cinco años y había luchado dieciséis por esta noche.\n\nPoco después, en Ostia, camino del regreso a África, Mónica tuvo con Agustín la famosa visión contemplativa descrita en las Confesiones (libro IX), una experiencia mística compartida de gran belleza. Días después cayó enferma y murió, diciendo a sus hijos que no importaba dónde fuera enterrada porque Dios la encontraría. Tenía cincuenta y cinco años. Agustín describe su muerte con una conmoción que atraviesa dieciséis siglos. Es patrona de las madres, las esposas que sufren, los alcohólicos y quienes tienen seres queridos alejados de la fe.",
+    "en": "Monica was born around 331 in Tagaste, a city in North Africa (present-day Algeria), to a Christian family. She was married to Patricius, a pagan man of violent and unfaithful character, with whom she had at least three children. The cohabitation was difficult, but Monica persevered in charity and prayer, and finally achieved her husband's conversion to Christianity shortly before his death. Her mother-in-law, equally difficult in character, also converted thanks to her patience.\n\nBut the central trial of Monica's life was her eldest son, Augustine. From the time he adopted Manichaeism at seventeen, Monica wept, prayed, and struggled for sixteen years for her son to find the path to God. An African bishop, whom she begged to argue with Augustine, said to her a phrase that has become a classic of maternal hope: 'It is not possible that the son of so many tears should perish.' Monica did not only pray: she followed Augustine to Carthage, to Rome, and to Milan, a determination that required extraordinary courage for a woman of the fourth century.\n\nIn Milan she met Ambrose, the great bishop who would be the instrument of Augustine's conversion. Augustine's Confessions narrates with incomparable tenderness the mother-son relationship in those crucial years: the nocturnal debates, Monica's tears, Augustine's intellectual resistance, and finally the Easter night of 387 when Augustine was baptized by Ambrose. Monica was then fifty-five years old and had fought sixteen years for this night.\n\nShortly afterward, in Ostia, on the way back to Africa, Monica shared with Augustine the famous contemplative vision described in the Confessions (book IX), a shared mystical experience of great beauty. Days later she fell ill and died, telling her sons that it did not matter where she was buried because God would find her. She was fifty-five years old. Augustine describes her death with an emotion that pierces sixteen centuries. She is patron of mothers, suffering wives, alcoholics, and those with loved ones away from the faith."
+  },
+  "novena_prayers": {
+    "es": "Cada día de la novena:\n1. Reza 1 Rosario completo o al menos 5 decenas, ofreciéndolo por la conversión de un ser querido.\n2. Lee la meditación del día.\n3. Reza la Oración a Santa Mónica: «Santa Mónica, madre que no te rendiste, intercede por los hijos e hijas que se han alejado de Dios. Como Tú lloraste por Agustín, acoge las lágrimas de todos los que hoy lloran por los suyos.»\n4. Confía a Dios con confianza la persona que más te preocupa.",
+    "en": "Each day of the novena:\n1. Pray 1 full Rosary or at least 5 decades, offering it for the conversion of a loved one.\n2. Read the day's meditation.\n3. Pray the Prayer to Saint Monica: \"Saint Monica, mother who never gave up, intercede for the sons and daughters who have drifted from God. As you wept for Augustine, receive the tears of all who weep for their loved ones today.\"\n4. Entrust with confidence to God the person who concerns you most."
+  },
+  "novena": [
+    {
+      "day": 1,
+      "es": "Por los hijos alejados de la fe\n\nSanta Mónica, que lloraste por tu hijo Agustín durante años sin perder la esperanza, intercede por todos los padres que tienen hijos alejados de Dios. Que nunca dejen de orar y confíen en que Dios escucha cada lágrima. Amén.",
+      "en": "For children far from faith\n\nSaint Monica, who wept for your son Augustine for years without losing hope, intercede for all parents with children far from God. May they never stop praying and trust that God hears every tear. Amen."
+    },
+    {
+      "day": 2,
+      "es": "Por los matrimonios difíciles\n\nSanta Mónica, que soportaste con paciencia y oración a un esposo difícil y lo viste convertirse, intercede por todos los matrimonios en crisis. Que la gracia de Dios transforme los corazones endurecidos. Amén.",
+      "en": "For difficult marriages\n\nSaint Monica, who patiently and prayerfully endured a difficult husband and saw him convert, intercede for all marriages in crisis. May God's grace transform hardened hearts. Amen."
+    },
+    {
+      "day": 3,
+      "es": "Por la perseverancia en la oración\n\nSanta Mónica, que oraste durante décadas sin ver el fruto inmediato de tus oraciones, enséñanos a perseverar en la oración aunque el cielo parezca estar callado. Amén.",
+      "en": "For perseverance in prayer\n\nSaint Monica, who prayed for decades without seeing immediate fruit from your prayers, teach us to persevere in prayer even when heaven seems silent. Amen."
+    },
+    {
+      "day": 4,
+      "es": "Por las madres que sufren\n\nDulce Mónica, que conociste el dolor de ver sufrir a un hijo amado, acompaña a todas las madres que hoy sufren por sus hijos y llévalas a los pies de María, Madre de Dolores. Amén.",
+      "en": "For suffering mothers\n\nSweet Monica, who knew the pain of watching a beloved son suffer, accompany all mothers who suffer for their children today and lead them to the feet of Mary, Mother of Sorrows. Amen."
+    },
+    {
+      "day": 5,
+      "es": "Por los convertidos y los que buscan a Dios\n\nSanta Mónica, madre espiritual de los convertidos, intercede por todos los que buscan a Dios con el corazón abierto. Que encuentren, como Agustín, que el corazón está inquieto hasta que descansa en Él. Amén.",
+      "en": "For converts and those seeking God\n\nSaint Monica, spiritual mother of converts, intercede for all who seek God with an open heart. May they find, like Augustine, that our heart is restless until it rests in Him. Amen."
+    },
+    {
+      "day": 6,
+      "es": "Por la familia cristiana\n\nSanta Mónica, modelo de familia cristiana, intercede por todas las familias para que sean pequeñas iglesias domésticas donde Dios sea conocido, amado y servido. Amén.",
+      "en": "For the Christian family\n\nSaint Monica, model of the Christian family, intercede for all families that they may be little domestic churches where God is known, loved, and served. Amen."
+    },
+    {
+      "day": 7,
+      "es": "Por los que han perdido la esperanza\n\nSanta Mónica esperanzada, que nunca abandonaste la fe en la conversión de tu hijo, intercede por todos los que han perdido la esperanza en sus situaciones imposibles. Que Dios les revele que nada es imposible para Él. Amén.",
+      "en": "For those who have lost hope\n\nHopeful Saint Monica, who never abandoned faith in your son's conversion, intercede for all who have lost hope in their impossible situations. May God reveal to them that nothing is impossible for Him. Amen."
+    },
+    {
+      "day": 8,
+      "es": "Por una muerte en paz\n\nSanta Mónica, que moriste en paz en Ostia habiendo visto cumplida tu mayor petición, intercede para que todos los que amamos puedan morir en la gracia de Dios y con el corazón en paz. Amén.",
+      "en": "For a peaceful death\n\nSaint Monica, who died peacefully in Ostia having seen your greatest request fulfilled, intercede that all our loved ones may die in God's grace and with peaceful hearts. Amen."
+    },
+    {
+      "day": 9,
+      "es": "Por la confianza en Dios\n\nSanta Mónica, tu vida entera fue un acto de confianza en Dios. Enséñanos a confiar en Su providencia cuando no entendemos Sus caminos, seguros de que Él escucha cada oración hecha desde el amor. Amén.",
+      "en": "For trust in God\n\nSaint Monica, your entire life was an act of trust in God. Teach us to trust in His providence when we do not understand His ways, certain that He hears every prayer made from love. Amen."
+    }
+  ],
+  "litany": {
+    "title": {
+      "es": "Letan�a de Santa M�nica",
+      "en": "Litany of Saint Monica"
+    },
+    "invocations": [
+      {
+        "es": "Santa M�nica, madre perseverante en la oraci�n,",
+        "en": "Saint Monica, mother persevering in prayer,"
+      },
+      {
+        "es": "Santa M�nica, consoladora de los afligidos,",
+        "en": "Saint Monica, consoler of the afflicted,"
+      },
+      {
+        "es": "Santa M�nica, modelo de paciencia conyugal,",
+        "en": "Saint Monica, model of conjugal patience,"
+      },
+      {
+        "es": "Santa M�nica, esperanza de los padres angustiados,",
+        "en": "Saint Monica, hope of anguished parents,"
+      },
+      {
+        "es": "Santa M�nica, que lloraste por la conversi�n de tu hijo,",
+        "en": "Saint Monica, who wept for your son's conversion,"
+      },
+      {
+        "es": "Santa M�nica, que alcanzaste la gracia para los tuyos,",
+        "en": "Saint Monica, who obtained grace for your loved ones,"
+      },
+      {
+        "es": "Santa M�nica, patrona de las madres,",
+        "en": "Saint Monica, patron of mothers,"
+      },
+      {
+        "es": "Santa M�nica, intercesora de los matrimonios dif�ciles,",
+        "en": "Saint Monica, intercessor of difficult marriages,"
+      }
+    ],
+    "response": {
+      "es": "Ruega por nosotros.",
+      "en": "Pray for us."
+    }
+  },
+  "miracles": {
+    "available": true,
+    "es": "1. LAS LAGRIMAS DE TREINTA ANOS: EL OBISPO Y LA PROMESA\nMonica era una mujer de fe ardiente casada con Patricio, un pagano violento y de caracter dificil. Pero su mayor dolor no era su marido: era Agustin, su hijo mas brillante, que se habia sumergido en el maniqueismo, los placeres y la disolucion intelectual. Monica lo seguia, lo oraba, lo lloraba. Cuando fue a ver a un obispo anciano —cuyo nombre no ha llegado a la historia— y le pidio que hablara con Agustin para convertirlo, el obispo le respondio: «Vete, no es posible que el hijo de tantas lagrimas se pierda». Esta frase se convirtio en la promesa que sostuvo a Monica durante decadas. San Agustin mismo la recoge en las Confesiones con reverencia: fue la palabra de Dios a traves de un hombre.\n\n2. EL SUEÑO DEL TABLON: «DONDE TU ESTAS, ESTARA EL»\nEn uno de los momentos mas oscuros, cuando Agustin se habia marchado a Roma sin decirle —engañandola deliberadamente para que no lo siguiera—, Monica tuvo un sueño. Estaba de pie sobre un tablon de madera, llorando. Un ser resplandeciente se le acerco y le pregunto por que lloraba. Ella le explico. El ser le dijo: «Donde estas tu, estara el». Monica interpreto el sueno como promesa de que Agustin volveria a la fe. Cuando mas tarde le conto el sueno a Agustin, el intento convencerla de que significaba que ella se volveria como el. Monica le respondio sin vacilar: «No. No me dijo que donde el estuviera estaria yo, sino que donde yo estuviera estaria el». San Agustin escribio que esa respuesta le impresiono mas que cualquier argumento filosofico.\n\n3. LA MUERTE EN OSTIA: LA ULTIMA CONVERSACION CON AGUSTIN\nAgustin se bautizo en Milan en la Pascua del 387, a los 32 anos. Monica tenia entonces 55. Viajaron juntos hacia Africa para regresar a su tierra. En Ostia, el puerto de Roma, se detuvieron a descansar. Una tarde, sentados juntos junto a una ventana que daba al jardin, madre e hijo tuvieron una conversacion mistica en la que ascendieron juntos, segun Agustin, «hasta tocar brevemente con todo el impulso de nuestro corazon la Sabiduria eterna». Dias despues, Monica enfermo y dijo a sus hijos: «Enterradme aqui. No importa donde este mi cuerpo. Dios lo sabe encontrar». Murio cinco dias mas tarde, en paz completa, a los 56 años. Agustin escribio: «Cerre sus ojos y un dolor inmenso inundo mi corazon. Pero me consolé en El que es nuestra vida».",
+    "en": "1. THIRTY YEARS OF TEARS: THE BISHOP AND THE PROMISE\nMonica was a woman of ardent faith married to Patricius, a violent and difficult pagan. But her greatest sorrow was not her husband: it was Augustine, her most brilliant son, who had plunged into Manichaeism, pleasures, and intellectual dissolution. Monica followed him, prayed for him, wept for him. When she went to see an elderly bishop — whose name has not come down to history — and asked him to speak with Augustine to convert him, the bishop replied: \"Go, it is not possible that the son of so many tears should perish.\" This phrase became the promise that sustained Monica for decades. Saint Augustine himself records it in the Confessions with reverence: it was God's word through a man.\n\n2. THE DREAM OF THE PLANK: \"WHERE YOU ARE, HE WILL BE\"\nAt one of the darkest moments, when Augustine had left for Rome without telling her — deliberately deceiving her so she would not follow him — Monica had a dream. She was standing on a wooden plank, weeping. A radiant being approached her and asked why she wept. She explained. The being told her: \"Where you are, he will be.\" Monica interpreted the dream as a promise that Augustine would return to the faith. When she later recounted the dream to Augustine, he tried to convince her it meant she would become like him. Monica replied without hesitation: \"He did not say that where he was I would be, but that where I was he would be.\" Saint Augustine wrote that this reply impressed him more than any philosophical argument.\n\n3. DEATH IN OSTIA: THE LAST CONVERSATION WITH AUGUSTINE\nAugustine was baptized in Milan at Easter of 387, at age 32. Monica was then 55. They traveled together toward Africa to return home. At Ostia, the port of Rome, they stopped to rest. One afternoon, seated together by a window overlooking the garden, mother and son had a mystical conversation in which they ascended together, according to Augustine, \"to touch briefly with the full impulse of our heart the eternal Wisdom.\" Days later, Monica fell ill and said to her children: \"Bury me here. It does not matter where my body rests. God knows how to find it.\" She died five days later, in complete peace, at age 56. Augustine wrote: \"I closed her eyes and an immense grief flooded my heart. But I was consoled in Him who is our life.\""
+  },
+  "feast_day": {
+    "es": "27 de agosto",
+    "en": "August 27"
+  }
 }

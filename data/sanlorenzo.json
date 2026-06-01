@@ -1,121 +1,125 @@
-﻿{
-    "id":  "sanlorenzo",
-    "name":  {
-                 "es":  "San Lorenzo",
-                 "en":  "Saint Lawrence"
-             },
-    "color":  "#8a4a00",
-    "image":  "/assets/images/sanlorenzo.svg",
-    "specialty":  {
-                      "es":  "Pobres y libreros",
-                      "en":  "Poor \u0026 librarians"
-                  },
-    "prayer":  {
-                   "es":  "San Lorenzo, diácono y mártir que sirviste a los pobres como si fueran el tesoro verdadero de la Iglesia, y que en medio del martirio más cruel mantuviste la serenidad del que ya vive en Dios, intercede hoy por nosotros.\n\nTú que distribuiste los bienes de la Iglesia entre los indigentes antes de ser arrestado, enséñanos a ver en los pobres el rostro de Cristo. Que nunca confundamos los tesoros del mundo con los del cielo.\n\nAlcánzanos la gracia de servir con alegría, de sufrir con paciencia, y de morir —cuando llegue la hora— con la misma fe inquebrantable que tú mostraste en la parrilla.\n\nSan Lorenzo, diácono y mártir, intercede por nosotros.\n\nAmén.",
-                   "en":  "Saint Lawrence, deacon and martyr who served the poor as if they were the true treasure of the Church, and who in the midst of the cruelest martyrdom maintained the serenity of one already living in God, intercede for us today.\n\nYou who distributed the goods of the Church among the destitute before your arrest, teach us to see in the poor the face of Christ. May we never confuse the treasures of the world with those of heaven.\n\nObtain for us the grace to serve with joy, to suffer with patience, and to die — when the hour comes — with the same unshakable faith you showed upon the gridiron.\n\nSaint Lawrence, deacon and martyr, intercede for us.\n\nAmen."
-               },
-    "history":  {
-                    "es":  "Lorenzo fue uno de los siete diáconos de Roma bajo el papa Sixto II, ejecutado el 10 de agosto del año 258 durante la persecución del emperador Valeriano. Como diácono, tenía a su cargo la administración de los bienes de la Iglesia y la distribución de las limosnas a los pobres. Cuando el papa Sixto II fue arrestado y ejecutado, Lorenzo fue informado de que también él sería detenido en pocos días, y según la tradición corrió a reunir todos los bienes de la Iglesia y los distribuyó entre los pobres para que no cayeran en manos del Imperio.\n\nEl prefecto de Roma le exigió entonces que entregara los tesoros de la Iglesia. Lorenzo pidió tres días de plazo y en ellos reunió a todos los pobres, los enfermos, los lisiados y los indigentes que pudo encontrar, y se los presentó al prefecto diciendo: \u0027He aquí los tesoros de la Iglesia\u0027. Esta respuesta dramática y desafiante es uno de los gestos más memorables de toda la historia del martirio cristiano, y revela una teología profunda: los pobres son el tesoro auténtico de la Iglesia, no el oro ni la plata.\n\nFue condenado a morir sobre una parrilla ardiente, un suplicio particularmente cruel. La tradición refiere que, en medio del tormento, Lorenzo dijo a sus verdugos con serena ironía: \u0027Dadme vuelta, que ya estoy asado de este lado\u0027. Esta frase, la más célebre del martirologio, ha sido interpretada como expresión de la alegría del martirio, del dominio del espíritu sobre el cuerpo, y del humor cristiano ante la muerte. Independientemente de su historicidad literal, expresa algo genuino sobre el carácter de este mártir.\n\nSan Lorenzo es uno de los santos más venerados de la Iglesia latina, y su fiesta del 10 de agosto fue considerada durante siglos una de las mayores del año litúrgico. Es patrón de los cocineros, los asadores, los archiveros, los bibliotecarios y los pobres, y da nombre a innumerables iglesias, conventos y ciudades en todo el mundo. La Basílica de San Lorenzo Extramuros en Roma es una de las siete iglesias principales de la ciudad eterna y custodia sus reliquias.",
-                    "en":  "Lawrence was one of the seven deacons of Rome under Pope Sixtus II, executed on August 10 in the year 258 during the persecution of Emperor Valerian. As a deacon, he was responsible for administering the goods of the Church and distributing alms to the poor. When Pope Sixtus II was arrested and executed, Lawrence was informed that he too would be detained within a few days, and according to tradition he rushed to gather all the Church\u0027s goods and distributed them among the poor so that they would not fall into the hands of the Empire.\n\nThe prefect of Rome then demanded that he hand over the treasures of the Church. Lawrence asked for three days\u0027 delay and in that time gathered all the poor, the sick, the crippled, and the destitute he could find, and presented them to the prefect saying: \u0027Behold the treasures of the Church.\u0027 This dramatic and defiant gesture is one of the most memorable of all Christian martyrdom history, and reveals a profound theology: the poor are the authentic treasure of the Church, not gold or silver.\n\nHe was condemned to die on a burning gridiron, a particularly cruel torment. Tradition recounts that, in the midst of the torture, Lawrence said to his executioners with serene irony: \u0027Turn me over, for I am done on this side.\u0027 This phrase, the most celebrated in the martyrology, has been interpreted as an expression of the joy of martyrdom, the mastery of the spirit over the body, and Christian humor in the face of death. Regardless of its literal historicity, it expresses something genuine about the character of this martyr.\n\nSaint Lawrence is one of the most venerated saints of the Latin Church, and his feast of August 10 was considered for centuries one of the greatest of the liturgical year. He is patron of cooks, grillers, archivists, librarians, and the poor, and gives his name to countless churches, convents, and cities throughout the world. The Basilica of Saint Lawrence Outside the Walls in Rome is one of the seven principal churches of the Eternal City and houses his relics."
-                },
-    "novena":  [
-                   {
-                       "day":  1,
-                       "es":  "Por los pobres y los más vulnerables\n\nSan Lorenzo, que proclamaste que los pobres son los tesoros de la Iglesia, intercede por todos los que viven en pobreza extrema. Que la sociedad los vea como te enseñaste tú: como joyas de Cristo. Amén.",
-                       "en":  "For the poor and most vulnerable\n\nSaint Lawrence, who proclaimed that the poor are the treasures of the Church, intercede for all who live in extreme poverty. May society see them as you taught us: as the jewels of Christ. Amen."
-                   },
-                   {
-                       "day":  2,
-                       "es":  "Por el servicio generoso a los necesitados\n\nDiácono Lorenzo, que sirviste a los pobres con toda tu energía, intercede para que seamos generosos servidores de los necesitados y encontremos en ellos el rostro de Cristo. Amén.",
-                       "en":  "For generous service to those in need\n\nDeacon Lawrence, who served the poor with all your energy, intercede that we may be generous servants of the needy and find in them the face of Christ. Amen."
-                   },
-                   {
-                       "day":  3,
-                       "es":  "Por los libreros, archivistas y custodios del saber\n\nSan Lorenzo, patrono de los que guardan el saber humano, intercede por todos los bibliotecarios, archivistas y libreros para que su trabajo de preservar y transmitir el conocimiento sea siempre un acto de amor a la humanidad. Amén.",
-                       "en":  "For booksellers, archivists, and custodians of knowledge\n\nSaint Lawrence, patron of those who preserve human knowledge, intercede for all librarians, archivists, and booksellers that their work of preserving and transmitting knowledge may always be an act of love for humanity. Amen."
-                   },
-                   {
-                       "day":  4,
-                       "es":  "Por la valentía en la fe\n\nLorenzo valeroso, que enfrentaste el martirio con serenidad y hasta con humor, intercede por todos los cristianos que atraviesan persecución o prueba por su fe. Que tengan tu fortaleza y paz. Amén.",
-                       "en":  "For courage in faith\n\nBrave Lorenzo, who faced martyrdom with serenity and even humor, intercede for all Christians undergoing persecution or trial for their faith. May they have your strength and peace. Amen."
-                   },
-                   {
-                       "day":  5,
-                       "es":  "Por los cocineros y quienes nutren a otros\n\nSan Lorenzo, patrono de los cocineros, intercede por todos los que preparan alimentos para otros, especialmente por los que alimentan a los más pobres en comedores sociales y misiones. Que su trabajo sea bendecido. Amén.",
-                       "en":  "For cooks and those who nourish others\n\nSaint Lawrence, patron of cooks, intercede for all who prepare food for others, especially those who feed the poorest in soup kitchens and missions. May their work be blessed. Amen."
-                   },
-                   {
-                       "day":  6,
-                       "es":  "Por la fidelidad al Evangelio\n\nSan Lorenzo, que preferiste el martirio a traicionar a la Iglesia, intercede para que seamos fieles al Evangelio en nuestras decisiones cotidianas, incluso cuando sea costoso. Amén.",
-                       "en":  "For fidelity to the Gospel\n\nSaint Lawrence, who preferred martyrdom to betraying the Church, intercede that we may be faithful to the Gospel in our daily decisions, even when it is costly. Amen."
-                   },
-                   {
-                       "day":  7,
-                       "es":  "Por la alegría cristiana en el sufrimiento\n\nLorenzo alegre en el martirio, que hablaste con humor en medio del fuego, enseña a todos los que sufren a encontrar en Cristo la fuente de paz y alegría que ninguna tribulación puede apagar. Amén.",
-                       "en":  "For Christian joy in suffering\n\nLawrence joyful in martyrdom, who spoke with humor amid the fire, teach all who suffer to find in Christ the source of peace and joy that no tribulation can extinguish. Amen."
-                   },
-                   {
-                       "day":  8,
-                       "es":  "Por la solidaridad con los que sufren\n\nSan Lorenzo, intercede para que no seamos indiferentes ante el sufrimiento ajeno, sino que, como tú, hagamos de los que sufren nuestra prioridad y nuestro tesoro. Amén.",
-                       "en":  "For solidarity with those who suffer\n\nSaint Lawrence, intercede that we may not be indifferent to the suffering of others, but that, like you, we make those who suffer our priority and our treasure. Amen."
-                   },
-                   {
-                       "day":  9,
-                       "es":  "Por compartir los bienes de la Iglesia con los pobres\n\nLorenzo, diácono de los pobres, intercede por la Iglesia para que sea siempre fiel a su misión de servicio a los más necesitados y que sus bienes sean verdaderamente los tesoros que son: el rostro de Cristo en los pobres. Amén.",
-                       "en":  "For sharing the Church\u0027s goods with the poor\n\nLawrence, deacon of the poor, intercede for the Church that she may always be faithful to her mission of service to the most needy and that her goods may truly be the treasures they are: the face of Christ in the poor. Amen."
-                   }
-               ],
-    "litany":  {
-                   "title":  {
-                                 "es":  "Letan�a de San Lorenzo",
-                                 "en":  "Litany of Saint Lawrence"
-                             },
-                   "invocations":  [
-                                       {
-                                           "es":  "San Lorenzo, di�cono y m�rtir,",
-                                           "en":  "Saint Lawrence, deacon and martyr,"
-                                       },
-                                       {
-                                           "es":  "San Lorenzo, servidor de los pobres,",
-                                           "en":  "Saint Lawrence, servant of the poor,"
-                                       },
-                                       {
-                                           "es":  "San Lorenzo, tesoro de la Iglesia,",
-                                           "en":  "Saint Lawrence, treasure of the Church,"
-                                       },
-                                       {
-                                           "es":  "San Lorenzo, patrono de los cocineros,",
-                                           "en":  "Saint Lawrence, patron of cooks,"
-                                       },
-                                       {
-                                           "es":  "San Lorenzo, patrono de los libreros,",
-                                           "en":  "Saint Lawrence, patron of librarians,"
-                                       },
-                                       {
-                                           "es":  "San Lorenzo, valiente en el martirio,",
-                                           "en":  "Saint Lawrence, brave in martyrdom,"
-                                       },
-                                       {
-                                           "es":  "San Lorenzo, alegre en el sufrimiento,",
-                                           "en":  "Saint Lawrence, joyful in suffering,"
-                                       },
-                                       {
-                                           "es":  "San Lorenzo, custodio de los m�s d�biles,",
-                                           "en":  "Saint Lawrence, custodian of the weakest,"
-                                       }
-                                   ],
-                   "response":  {
-                                    "es":  "Ruega por nosotros.",
-                                    "en":  "Pray for us."
-                                }
-               },
-    "miracles":  {
-                     "available":  true,
-                     "es":  "1. «EL TESORO DE LA IGLESIA SON LOS POBRES»\nCuando el Papa Sixto II fue arrestado y ejecutado en el ano 258, el prefecto romano Cornelio Seculario exigio al diacono Lorenzo que le entregara todos los tesoros de la Iglesia en el plazo de tres dias. Lorenzo distribuyo todos los bienes entre los pobres de Roma, y al tercer dia se presento ante el prefecto con una multitud de cojos, ciegos, leprosos, viudas y huerfanos: «Aqui estan los tesoros de la Iglesia». El prefecto, furioso, ordeno su ejecucion. Lorenzo fue condenado a ser asado vivo sobre una parrilla de hierro al rojo vivo. Su valentia y su humor en el momento de la muerte lo inmortalizaron para siempre en el corazon de la Iglesia.\n\n2. «VUELVEME, ESTOY ASADO POR ESTE LADO»\nMientras Lorenzo estaba tendido sobre la parrilla ardiente, despues de varios minutos de tormento, se dirigio tranquilamente a su verdugo y le dijo: «Vuelveme. Ya estoy asado por este lado». Estas palabras, reportadas por los testigos y confirmadas por los antiguos martiriologios, se convirtieron en la expresion maxima de la paz que sobrepasa todo entendimiento. Los soldados romanos que lo ejecutaban quedaron desconcertados ante su serenidad. El propio prefecto, segun las cronicas, abandono el lugar perturbado y sin poder explicarse lo que habia visto. Tres de los soldados romanos que custodiaban la ejecucion se convirtieron al cristianismo en las horas siguientes.\n\n3. LA AURORA BOREAL QUE ILUMINO ROMA\nSegun Prudencio, el poeta cristiano del siglo IV que escribio el himno mas antiguo en honor a Lorenzo, en la noche de su martirio —el 10 de agosto del ano 258— una aurora boreal de intensidad inusual ilumino el cielo de Roma. Los romanos, que nunca habian visto ese fenomeno en aquellas latitudes, quedaron paralizados de asombro. Los cristianos lo interpretaron como el cielo entero encendiéndose para recibir al martir. La Basilica de San Lorenzo Extramuros, en Roma, fue construida por el emperador Constantino sobre el lugar de su martirio y es hoy uno de los siete santuarios peregrinos de Roma. Su nombre brilla en el Canon Romano de la Misa desde el siglo IV.",
-                     "en":  "1. \"THE TREASURE OF THE CHURCH IS THE POOR\"\nWhen Pope Sixtus II was arrested and executed in 258 AD, the Roman prefect Cornelius Secularius demanded that the deacon Lawrence hand over all the treasures of the Church within three days. Lawrence distributed all the goods among the poor of Rome, and on the third day appeared before the prefect with a multitude of the lame, blind, leprous, widows, and orphans: \"Here are the treasures of the Church.\" The prefect, furious, ordered his execution. Lawrence was condemned to be roasted alive on a red-hot iron grill. His courage and humor at the moment of death immortalized him forever in the heart of the Church.\n\n2. \"TURN ME OVER — I AM DONE ON THIS SIDE\"\nWhile Lawrence lay stretched on the burning grill, after several minutes of torment, he addressed his executioner calmly: \"Turn me over. I am already roasted on this side.\" These words, reported by witnesses and confirmed by ancient martyrologies, became the supreme expression of the peace that surpasses all understanding. The Roman soldiers carrying out the execution were bewildered by his serenity. The prefect himself, according to the chronicles, left the site disturbed and unable to explain what he had witnessed. Three of the Roman soldiers guarding the execution converted to Christianity in the following hours.\n\n3. THE NORTHERN LIGHTS THAT ILLUMINATED ROME\nAccording to Prudentius, the fourth-century Christian poet who wrote the oldest hymn in honor of Lawrence, on the night of his martyrdom — August 10, 258 AD — an unusually intense aurora borealis lit up the sky over Rome. The Romans, who had never witnessed that phenomenon at those latitudes, were frozen in astonishment. Christians interpreted it as the entire sky catching fire to receive the martyr. The Basilica of San Lorenzo Outside the Walls in Rome was built by Emperor Constantine over the site of his martyrdom and is today one of the seven pilgrimage shrines of Rome. His name has shone in the Roman Canon of the Mass since the fourth century."
-                 },
-    "feast_day":  {
-                      "es":  "10 de agosto",
-                      "en":  "August 10"
-                  }
+{
+  "id": "sanlorenzo",
+  "name": {
+    "es": "San Lorenzo",
+    "en": "Saint Lawrence"
+  },
+  "color": "#8a4a00",
+  "image": "/assets/images/sanlorenzo.svg",
+  "specialty": {
+    "es": "Pobres y libreros",
+    "en": "Poor & librarians"
+  },
+  "prayer": {
+    "es": "San Lorenzo, diácono y mártir que sirviste a los pobres como si fueran el tesoro verdadero de la Iglesia, y que en medio del martirio más cruel mantuviste la serenidad del que ya vive en Dios, intercede hoy por nosotros.\n\nTú que distribuiste los bienes de la Iglesia entre los indigentes antes de ser arrestado, enséñanos a ver en los pobres el rostro de Cristo. Que nunca confundamos los tesoros del mundo con los del cielo.\n\nAlcánzanos la gracia de servir con alegría, de sufrir con paciencia, y de morir —cuando llegue la hora— con la misma fe inquebrantable que tú mostraste en la parrilla.\n\nSan Lorenzo, diácono y mártir, intercede por nosotros.\n\nAmén.",
+    "en": "Saint Lawrence, deacon and martyr who served the poor as if they were the true treasure of the Church, and who in the midst of the cruelest martyrdom maintained the serenity of one already living in God, intercede for us today.\n\nYou who distributed the goods of the Church among the destitute before your arrest, teach us to see in the poor the face of Christ. May we never confuse the treasures of the world with those of heaven.\n\nObtain for us the grace to serve with joy, to suffer with patience, and to die — when the hour comes — with the same unshakable faith you showed upon the gridiron.\n\nSaint Lawrence, deacon and martyr, intercede for us.\n\nAmen."
+  },
+  "history": {
+    "es": "Lorenzo fue uno de los siete diáconos de Roma bajo el papa Sixto II, ejecutado el 10 de agosto del año 258 durante la persecución del emperador Valeriano. Como diácono, tenía a su cargo la administración de los bienes de la Iglesia y la distribución de las limosnas a los pobres. Cuando el papa Sixto II fue arrestado y ejecutado, Lorenzo fue informado de que también él sería detenido en pocos días, y según la tradición corrió a reunir todos los bienes de la Iglesia y los distribuyó entre los pobres para que no cayeran en manos del Imperio.\n\nEl prefecto de Roma le exigió entonces que entregara los tesoros de la Iglesia. Lorenzo pidió tres días de plazo y en ellos reunió a todos los pobres, los enfermos, los lisiados y los indigentes que pudo encontrar, y se los presentó al prefecto diciendo: 'He aquí los tesoros de la Iglesia'. Esta respuesta dramática y desafiante es uno de los gestos más memorables de toda la historia del martirio cristiano, y revela una teología profunda: los pobres son el tesoro auténtico de la Iglesia, no el oro ni la plata.\n\nFue condenado a morir sobre una parrilla ardiente, un suplicio particularmente cruel. La tradición refiere que, en medio del tormento, Lorenzo dijo a sus verdugos con serena ironía: 'Dadme vuelta, que ya estoy asado de este lado'. Esta frase, la más célebre del martirologio, ha sido interpretada como expresión de la alegría del martirio, del dominio del espíritu sobre el cuerpo, y del humor cristiano ante la muerte. Independientemente de su historicidad literal, expresa algo genuino sobre el carácter de este mártir.\n\nSan Lorenzo es uno de los santos más venerados de la Iglesia latina, y su fiesta del 10 de agosto fue considerada durante siglos una de las mayores del año litúrgico. Es patrón de los cocineros, los asadores, los archiveros, los bibliotecarios y los pobres, y da nombre a innumerables iglesias, conventos y ciudades en todo el mundo. La Basílica de San Lorenzo Extramuros en Roma es una de las siete iglesias principales de la ciudad eterna y custodia sus reliquias.",
+    "en": "Lawrence was one of the seven deacons of Rome under Pope Sixtus II, executed on August 10 in the year 258 during the persecution of Emperor Valerian. As a deacon, he was responsible for administering the goods of the Church and distributing alms to the poor. When Pope Sixtus II was arrested and executed, Lawrence was informed that he too would be detained within a few days, and according to tradition he rushed to gather all the Church's goods and distributed them among the poor so that they would not fall into the hands of the Empire.\n\nThe prefect of Rome then demanded that he hand over the treasures of the Church. Lawrence asked for three days' delay and in that time gathered all the poor, the sick, the crippled, and the destitute he could find, and presented them to the prefect saying: 'Behold the treasures of the Church.' This dramatic and defiant gesture is one of the most memorable of all Christian martyrdom history, and reveals a profound theology: the poor are the authentic treasure of the Church, not gold or silver.\n\nHe was condemned to die on a burning gridiron, a particularly cruel torment. Tradition recounts that, in the midst of the torture, Lawrence said to his executioners with serene irony: 'Turn me over, for I am done on this side.' This phrase, the most celebrated in the martyrology, has been interpreted as an expression of the joy of martyrdom, the mastery of the spirit over the body, and Christian humor in the face of death. Regardless of its literal historicity, it expresses something genuine about the character of this martyr.\n\nSaint Lawrence is one of the most venerated saints of the Latin Church, and his feast of August 10 was considered for centuries one of the greatest of the liturgical year. He is patron of cooks, grillers, archivists, librarians, and the poor, and gives his name to countless churches, convents, and cities throughout the world. The Basilica of Saint Lawrence Outside the Walls in Rome is one of the seven principal churches of the Eternal City and houses his relics."
+  },
+  "novena_prayers": {
+    "es": "Cada día de la novena:\n1. Reza 3 Padre Nuestros, 3 Ave Marías y 3 Glorias.\n2. Lee la meditación del día.\n3. Reza la Oración a San Lorenzo: «San Lorenzo, diácono que serviste a los pobres como al mismo Cristo y que en la hoguera no perdiste la paz del alma, enséñanos a servir con alegría y a sufrir con serenidad.»\n4. Realiza un acto de servicio hacia alguien necesitado.",
+    "en": "Each day of the novena:\n1. Pray 3 Our Fathers, 3 Hail Marys, and 3 Glorias.\n2. Read the day's meditation.\n3. Pray the Prayer to Saint Lawrence: \"Saint Lawrence, deacon who served the poor as Christ Himself and who on the gridiron did not lose the peace of your soul, teach us to serve with joy and to suffer with serenity.\"\n4. Perform an act of service toward someone in need."
+  },
+  "novena": [
+    {
+      "day": 1,
+      "es": "Por los pobres y los más vulnerables\n\nSan Lorenzo, que proclamaste que los pobres son los tesoros de la Iglesia, intercede por todos los que viven en pobreza extrema. Que la sociedad los vea como te enseñaste tú: como joyas de Cristo. Amén.",
+      "en": "For the poor and most vulnerable\n\nSaint Lawrence, who proclaimed that the poor are the treasures of the Church, intercede for all who live in extreme poverty. May society see them as you taught us: as the jewels of Christ. Amen."
+    },
+    {
+      "day": 2,
+      "es": "Por el servicio generoso a los necesitados\n\nDiácono Lorenzo, que sirviste a los pobres con toda tu energía, intercede para que seamos generosos servidores de los necesitados y encontremos en ellos el rostro de Cristo. Amén.",
+      "en": "For generous service to those in need\n\nDeacon Lawrence, who served the poor with all your energy, intercede that we may be generous servants of the needy and find in them the face of Christ. Amen."
+    },
+    {
+      "day": 3,
+      "es": "Por los libreros, archivistas y custodios del saber\n\nSan Lorenzo, patrono de los que guardan el saber humano, intercede por todos los bibliotecarios, archivistas y libreros para que su trabajo de preservar y transmitir el conocimiento sea siempre un acto de amor a la humanidad. Amén.",
+      "en": "For booksellers, archivists, and custodians of knowledge\n\nSaint Lawrence, patron of those who preserve human knowledge, intercede for all librarians, archivists, and booksellers that their work of preserving and transmitting knowledge may always be an act of love for humanity. Amen."
+    },
+    {
+      "day": 4,
+      "es": "Por la valentía en la fe\n\nLorenzo valeroso, que enfrentaste el martirio con serenidad y hasta con humor, intercede por todos los cristianos que atraviesan persecución o prueba por su fe. Que tengan tu fortaleza y paz. Amén.",
+      "en": "For courage in faith\n\nBrave Lorenzo, who faced martyrdom with serenity and even humor, intercede for all Christians undergoing persecution or trial for their faith. May they have your strength and peace. Amen."
+    },
+    {
+      "day": 5,
+      "es": "Por los cocineros y quienes nutren a otros\n\nSan Lorenzo, patrono de los cocineros, intercede por todos los que preparan alimentos para otros, especialmente por los que alimentan a los más pobres en comedores sociales y misiones. Que su trabajo sea bendecido. Amén.",
+      "en": "For cooks and those who nourish others\n\nSaint Lawrence, patron of cooks, intercede for all who prepare food for others, especially those who feed the poorest in soup kitchens and missions. May their work be blessed. Amen."
+    },
+    {
+      "day": 6,
+      "es": "Por la fidelidad al Evangelio\n\nSan Lorenzo, que preferiste el martirio a traicionar a la Iglesia, intercede para que seamos fieles al Evangelio en nuestras decisiones cotidianas, incluso cuando sea costoso. Amén.",
+      "en": "For fidelity to the Gospel\n\nSaint Lawrence, who preferred martyrdom to betraying the Church, intercede that we may be faithful to the Gospel in our daily decisions, even when it is costly. Amen."
+    },
+    {
+      "day": 7,
+      "es": "Por la alegría cristiana en el sufrimiento\n\nLorenzo alegre en el martirio, que hablaste con humor en medio del fuego, enseña a todos los que sufren a encontrar en Cristo la fuente de paz y alegría que ninguna tribulación puede apagar. Amén.",
+      "en": "For Christian joy in suffering\n\nLawrence joyful in martyrdom, who spoke with humor amid the fire, teach all who suffer to find in Christ the source of peace and joy that no tribulation can extinguish. Amen."
+    },
+    {
+      "day": 8,
+      "es": "Por la solidaridad con los que sufren\n\nSan Lorenzo, intercede para que no seamos indiferentes ante el sufrimiento ajeno, sino que, como tú, hagamos de los que sufren nuestra prioridad y nuestro tesoro. Amén.",
+      "en": "For solidarity with those who suffer\n\nSaint Lawrence, intercede that we may not be indifferent to the suffering of others, but that, like you, we make those who suffer our priority and our treasure. Amen."
+    },
+    {
+      "day": 9,
+      "es": "Por compartir los bienes de la Iglesia con los pobres\n\nLorenzo, diácono de los pobres, intercede por la Iglesia para que sea siempre fiel a su misión de servicio a los más necesitados y que sus bienes sean verdaderamente los tesoros que son: el rostro de Cristo en los pobres. Amén.",
+      "en": "For sharing the Church's goods with the poor\n\nLawrence, deacon of the poor, intercede for the Church that she may always be faithful to her mission of service to the most needy and that her goods may truly be the treasures they are: the face of Christ in the poor. Amen."
+    }
+  ],
+  "litany": {
+    "title": {
+      "es": "Letan�a de San Lorenzo",
+      "en": "Litany of Saint Lawrence"
+    },
+    "invocations": [
+      {
+        "es": "San Lorenzo, di�cono y m�rtir,",
+        "en": "Saint Lawrence, deacon and martyr,"
+      },
+      {
+        "es": "San Lorenzo, servidor de los pobres,",
+        "en": "Saint Lawrence, servant of the poor,"
+      },
+      {
+        "es": "San Lorenzo, tesoro de la Iglesia,",
+        "en": "Saint Lawrence, treasure of the Church,"
+      },
+      {
+        "es": "San Lorenzo, patrono de los cocineros,",
+        "en": "Saint Lawrence, patron of cooks,"
+      },
+      {
+        "es": "San Lorenzo, patrono de los libreros,",
+        "en": "Saint Lawrence, patron of librarians,"
+      },
+      {
+        "es": "San Lorenzo, valiente en el martirio,",
+        "en": "Saint Lawrence, brave in martyrdom,"
+      },
+      {
+        "es": "San Lorenzo, alegre en el sufrimiento,",
+        "en": "Saint Lawrence, joyful in suffering,"
+      },
+      {
+        "es": "San Lorenzo, custodio de los m�s d�biles,",
+        "en": "Saint Lawrence, custodian of the weakest,"
+      }
+    ],
+    "response": {
+      "es": "Ruega por nosotros.",
+      "en": "Pray for us."
+    }
+  },
+  "miracles": {
+    "available": true,
+    "es": "1. «EL TESORO DE LA IGLESIA SON LOS POBRES»\nCuando el Papa Sixto II fue arrestado y ejecutado en el ano 258, el prefecto romano Cornelio Seculario exigio al diacono Lorenzo que le entregara todos los tesoros de la Iglesia en el plazo de tres dias. Lorenzo distribuyo todos los bienes entre los pobres de Roma, y al tercer dia se presento ante el prefecto con una multitud de cojos, ciegos, leprosos, viudas y huerfanos: «Aqui estan los tesoros de la Iglesia». El prefecto, furioso, ordeno su ejecucion. Lorenzo fue condenado a ser asado vivo sobre una parrilla de hierro al rojo vivo. Su valentia y su humor en el momento de la muerte lo inmortalizaron para siempre en el corazon de la Iglesia.\n\n2. «VUELVEME, ESTOY ASADO POR ESTE LADO»\nMientras Lorenzo estaba tendido sobre la parrilla ardiente, despues de varios minutos de tormento, se dirigio tranquilamente a su verdugo y le dijo: «Vuelveme. Ya estoy asado por este lado». Estas palabras, reportadas por los testigos y confirmadas por los antiguos martiriologios, se convirtieron en la expresion maxima de la paz que sobrepasa todo entendimiento. Los soldados romanos que lo ejecutaban quedaron desconcertados ante su serenidad. El propio prefecto, segun las cronicas, abandono el lugar perturbado y sin poder explicarse lo que habia visto. Tres de los soldados romanos que custodiaban la ejecucion se convirtieron al cristianismo en las horas siguientes.\n\n3. LA AURORA BOREAL QUE ILUMINO ROMA\nSegun Prudencio, el poeta cristiano del siglo IV que escribio el himno mas antiguo en honor a Lorenzo, en la noche de su martirio —el 10 de agosto del ano 258— una aurora boreal de intensidad inusual ilumino el cielo de Roma. Los romanos, que nunca habian visto ese fenomeno en aquellas latitudes, quedaron paralizados de asombro. Los cristianos lo interpretaron como el cielo entero encendiéndose para recibir al martir. La Basilica de San Lorenzo Extramuros, en Roma, fue construida por el emperador Constantino sobre el lugar de su martirio y es hoy uno de los siete santuarios peregrinos de Roma. Su nombre brilla en el Canon Romano de la Misa desde el siglo IV.",
+    "en": "1. \"THE TREASURE OF THE CHURCH IS THE POOR\"\nWhen Pope Sixtus II was arrested and executed in 258 AD, the Roman prefect Cornelius Secularius demanded that the deacon Lawrence hand over all the treasures of the Church within three days. Lawrence distributed all the goods among the poor of Rome, and on the third day appeared before the prefect with a multitude of the lame, blind, leprous, widows, and orphans: \"Here are the treasures of the Church.\" The prefect, furious, ordered his execution. Lawrence was condemned to be roasted alive on a red-hot iron grill. His courage and humor at the moment of death immortalized him forever in the heart of the Church.\n\n2. \"TURN ME OVER — I AM DONE ON THIS SIDE\"\nWhile Lawrence lay stretched on the burning grill, after several minutes of torment, he addressed his executioner calmly: \"Turn me over. I am already roasted on this side.\" These words, reported by witnesses and confirmed by ancient martyrologies, became the supreme expression of the peace that surpasses all understanding. The Roman soldiers carrying out the execution were bewildered by his serenity. The prefect himself, according to the chronicles, left the site disturbed and unable to explain what he had witnessed. Three of the Roman soldiers guarding the execution converted to Christianity in the following hours.\n\n3. THE NORTHERN LIGHTS THAT ILLUMINATED ROME\nAccording to Prudentius, the fourth-century Christian poet who wrote the oldest hymn in honor of Lawrence, on the night of his martyrdom — August 10, 258 AD — an unusually intense aurora borealis lit up the sky over Rome. The Romans, who had never witnessed that phenomenon at those latitudes, were frozen in astonishment. Christians interpreted it as the entire sky catching fire to receive the martyr. The Basilica of San Lorenzo Outside the Walls in Rome was built by Emperor Constantine over the site of his martyrdom and is today one of the seven pilgrimage shrines of Rome. His name has shone in the Roman Canon of the Mass since the fourth century."
+  },
+  "feast_day": {
+    "es": "10 de agosto",
+    "en": "August 10"
+  }
 }

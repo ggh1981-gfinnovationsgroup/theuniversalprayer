@@ -1310,7 +1310,15 @@ function renderNovenaSupportPanel(data) {
     </div>`;
   }
 
-  let html = prayerBlock(p.pn_title, p.pn)
+  // ── Oraciones específicas de la novena (novena_prayers) ──
+  let html = '';
+  if (data.novena_prayers && data.novena_prayers[lang]) {
+    const npTitle = lang === 'es' ? '📿 Cómo rezar esta novena' : '📿 How to pray this novena';
+    html += prayerBlock(npTitle, data.novena_prayers[lang])
+      + '<hr class="support-prayer-divider">';
+  }
+
+  html += prayerBlock(p.pn_title, p.pn)
     + '<hr class="support-prayer-divider">'
     + prayerBlock(p.am_title, p.am)
     + '<hr class="support-prayer-divider">'
