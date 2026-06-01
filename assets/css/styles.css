@@ -3115,7 +3115,8 @@ body {
 
 /* ── Adoracion — 33 días sección integrada ─────────── */
 .ador-33dias-section {
-  margin-top: 2.5rem;
+  margin-top: 2.75rem;
+  margin-bottom: 2.75rem;
   border: 1px solid rgba(201,168,76,.22);
   border-radius: 16px;
   overflow: hidden;
