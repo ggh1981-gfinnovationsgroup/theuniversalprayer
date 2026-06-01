@@ -1,0 +1,30 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="d31glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#e8c97a" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#e8c97a" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#e8c97a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="50" cy="50" r="46" fill="url(#d31glow)"/>
+  <!-- Heart shape -->
+  <path d="M50,72 C50,72 18,52 18,34 C18,24 26,18 34,18 C40,18 46,22 50,28
+           C54,22 60,18 66,18 C74,18 82,24 82,34 C82,52 50,72 50,72 Z"
+        fill="none" stroke="#c9a84c" stroke-width="2.5" opacity="0.85"/>
+  <!-- Inner heart glow -->
+  <path d="M50,64 C50,64 26,48 26,34 C26,28 30,24 36,24 C41,24 46,27 50,33
+           C54,27 59,24 64,24 C70,24 74,28 74,34 C74,48 50,64 50,64 Z"
+        fill="#e8c97a" opacity="0.12"/>
+  <!-- Cross inside heart -->
+  <line x1="50" y1="30" x2="50" y2="56" stroke="#e8c97a" stroke-width="2.5" stroke-linecap="round" opacity="0.75"/>
+  <line x1="38" y1="40" x2="62" y2="40" stroke="#e8c97a" stroke-width="2.5" stroke-linecap="round" opacity="0.75"/>
+  <!-- Small flames at top of heart (Sacred Heart tradition) -->
+  <!-- Left flame -->
+  <path d="M40,18 C38,12 36,8 40,6 C38,10 42,12 40,18" fill="#e8c97a" opacity="0.5"/>
+  <!-- Center flame -->
+  <path d="M50,18 C48,10 46,5 50,3 C54,5 52,10 50,18" fill="#fffde8" opacity="0.7"/>
+  <!-- Right flame -->
+  <path d="M60,18 C62,12 64,8 60,6 C62,10 58,12 60,18" fill="#e8c97a" opacity="0.5"/>
+  <!-- Center glow on cross intersection -->
+  <circle cx="50" cy="40" r="4" fill="#fffde8" opacity="0.5"/>
+</svg>
