@@ -153,42 +153,6 @@
     <a href="/" class="a33-footer-link" data-lang="en" style="display:none">Home</a>
   </footer>
 
-  <!-- Data: array base + un archivo por día -->
-  <script src="dias.js"></script>
-  <script src="dia-01.js"></script>
-  <script src="dia-02.js"></script>
-  <script src="dia-03.js"></script>
-  <script src="dia-04.js"></script>
-  <script src="dia-05.js"></script>
-  <script src="dia-06.js"></script>
-  <script src="dia-07.js"></script>
-  <script src="dia-08.js"></script>
-  <script src="dia-09.js"></script>
-  <script src="dia-10.js"></script>
-  <script src="dia-11.js"></script>
-  <script src="dia-12.js"></script>
-  <script src="dia-13.js"></script>
-  <script src="dia-14.js"></script>
-  <script src="dia-15.js"></script>
-  <script src="dia-16.js"></script>
-  <script src="dia-17.js"></script>
-  <script src="dia-18.js"></script>
-  <script src="dia-19.js"></script>
-  <script src="dia-20.js"></script>
-  <script src="dia-21.js"></script>
-  <script src="dia-22.js"></script>
-  <script src="dia-23.js"></script>
-  <script src="dia-24.js"></script>
-  <script src="dia-25.js"></script>
-  <script src="dia-26.js"></script>
-  <script src="dia-27.js"></script>
-  <script src="dia-28.js"></script>
-  <script src="dia-29.js"></script>
-  <script src="dia-30.js"></script>
-  <script src="dia-31.js"></script>
-  <script src="dia-32.js"></script>
-  <script src="dia-33.js"></script>
-
   <script>
   (function () {
     'use strict';
@@ -205,6 +169,7 @@
     let doneDays    = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
     let currentDay  = null;   // object from DIAS_33
     let ttsSpeaking = false;
+    let DIAS_33     = {};
 
     /* ── DOM refs ─────────────────────────────────── */
     const $list          = document.getElementById('a33List');
@@ -267,14 +232,8 @@
     function renderList () {
       $list.innerHTML = '';
 
-      // Build a lookup for days that have data
-      const dataMap = {};
-      if (typeof DIAS_33 !== 'undefined') {
-        DIAS_33.forEach(d => { dataMap[d.n] = d; });
-      }
-
       for (let i = 1; i <= TOTAL; i++) {
-        const data  = dataMap[i] || null;
+        const data  = DIAS_33[i] || null;
         const done  = doneDays.has(i);
         const avail = data !== null;
 
@@ -310,7 +269,12 @@
         if (avail && data.svg) {
           const iconWrap = document.createElement('span');
           iconWrap.className = 'a33-card-icon';
-          iconWrap.innerHTML = data.svg;
+          const img = document.createElement('img');
+          img.src = data.svg;
+          img.alt = '';
+          img.width = 48;
+          img.height = 48;
+          iconWrap.appendChild(img);
           card.appendChild(iconWrap);
         }
 
@@ -330,7 +294,7 @@
       const l = lang;
       $mdDayNum.textContent  = (l === 'en' ? 'Day ' : 'Día ') + day.n;
       $mdTitle.textContent   = day.theme[l] || day.theme.es;
-      $mdIcon.innerHTML      = day.svg || '';
+      $mdIcon.innerHTML      = day.svg ? `<img src="${day.svg}" alt="" width="110" height="110" />` : '';
 
       // Verse
       const v = day.verse;
@@ -445,8 +409,25 @@
     $ringFill.style.strokeDasharray  = RING_C;
     $ringFill.style.strokeDashoffset = RING_C;
 
+    /* ── Init: fetch all day JSONs ────────────────── */
+    async function initDays () {
+      const fetches = [];
+      for (let i = 1; i <= TOTAL; i++) {
+        const n = String(i).padStart(2, '0');
+        fetches.push(
+          fetch(`dia-${n}.json`)
+            .then(r => r.ok ? r.json() : null)
+            .catch(() => null)
+        );
+      }
+      const results = await Promise.all(fetches);
+      DIAS_33 = {};
+      results.forEach(d => { if (d) DIAS_33[d.n] = d; });
+      applyLang(lang);
+    }
+
     /* ── Boot ─────────────────────────────────────── */
-    applyLang(lang);
+    initDays();
 
   })();
   </script>

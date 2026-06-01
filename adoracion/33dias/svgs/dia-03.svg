@@ -1,0 +1,40 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="d3glow" cx="50%" cy="42%" r="45%">
+      <stop offset="0%" stop-color="#8b1a1a" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#8b1a1a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="d3chalice" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#e8c97a"/>
+      <stop offset="55%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#8a6e2f"/>
+    </linearGradient>
+    <linearGradient id="d3wine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c0392b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#6b0f0f" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="44" r="40" fill="url(#d3glow)"/>
+  <path d="M30,22 Q28,42 35,52 Q42,60 50,61 Q58,60 65,52 Q72,42 70,22 Z"
+        fill="url(#d3chalice)" opacity="0.95"/>
+  <path d="M35,42 Q36,54 42,57 Q50,60 58,57 Q64,54 65,42 Z"
+        fill="url(#d3wine)"/>
+  <ellipse cx="47" cy="43" rx="5" ry="1.5" fill="#fff" opacity="0.15" transform="rotate(-15 47 43)"/>
+  <rect x="47" y="61" width="6" height="14" rx="2" fill="url(#d3chalice)"/>
+  <ellipse cx="50" cy="77" rx="14" ry="4" fill="url(#d3chalice)"/>
+  <line x1="50" y1="26" x2="50" y2="20" stroke="#fff" stroke-width="1.2" stroke-linecap="round" opacity="0.45"/>
+  <line x1="47" y1="23" x2="53" y2="23" stroke="#fff" stroke-width="1.2" stroke-linecap="round" opacity="0.45"/>
+  <circle cx="22" cy="58" r="4.5" fill="#6b0f0f" opacity="0.7"/>
+  <circle cx="26" cy="53" r="4"   fill="#8b1a1a" opacity="0.75"/>
+  <circle cx="21" cy="50" r="3.5" fill="#6b0f0f" opacity="0.65"/>
+  <circle cx="27" cy="62" r="3.5" fill="#8b1a1a" opacity="0.65"/>
+  <path d="M16,46 Q22,38 30,44" fill="none" stroke="#4a7c3f" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="78" cy="58" r="4.5" fill="#6b0f0f" opacity="0.7"/>
+  <circle cx="74" cy="53" r="4"   fill="#8b1a1a" opacity="0.75"/>
+  <circle cx="79" cy="50" r="3.5" fill="#6b0f0f" opacity="0.65"/>
+  <circle cx="73" cy="62" r="3.5" fill="#8b1a1a" opacity="0.65"/>
+  <path d="M84,46 Q78,38 70,44" fill="none" stroke="#4a7c3f" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="50" y1="20" x2="44" y2="10" stroke="#c9a84c" stroke-width="1" stroke-linecap="round" opacity="0.35"/>
+  <line x1="50" y1="20" x2="56" y2="10" stroke="#c9a84c" stroke-width="1" stroke-linecap="round" opacity="0.35"/>
+  <line x1="50" y1="20" x2="50" y2="8"  stroke="#c9a84c" stroke-width="1.2" stroke-linecap="round" opacity="0.4"/>
+</svg>
