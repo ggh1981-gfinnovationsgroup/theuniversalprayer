@@ -1,121 +1,121 @@
-{
-  "id": "santalucia",
-  "name": {
-    "es": "Santa Lucía de Siracusa",
-    "en": "Saint Lucy of Syracuse"
-  },
-  "color": "#8a1a3a",
-  "image": "/assets/images/santalucia.svg",
-  "specialty": {
-    "es": "Vista y enfermos",
-    "en": "Eyesight & the sick"
-  },
-  "prayer": {
-    "es": "Santa Lucía, portadora de luz en las tinieblas, intercede por nosotros.",
-    "en": "Saint Lucy, bearer of light in the darkness, intercede for us."
-  },
-  "history": {
-    "es": "Lucia de Siracusa fue martirizada en su ciudad natal, en Sicilia, durante la persecucion de Diocleciano, hacia el año 304. Su nombre latino, Lucia, deriva de lux (luz), y toda su hagiografia, su iconografia y su simbolismo estan penetrados por esta evocacion luminosa que la ha convertido en la patrona de los ciegos, los enfermos de la vista y todos los que buscan la luz en la oscuridad. Su fiesta el 13 de diciembre fue durante siglos el dia del solsticio de invierno en el calendario juliano, lo que refuerzo su simbolismo luminoso.\n\nSegun la hagiografia, Lucia era una noble siracusana que habia consagrado secretamente su virginidad a Cristo. Su madre, Eutiquiana, la habia prometido en matrimonio a un joven pagano, y cuando Lucia pidio a su madre que distribuyera su dote entre los pobres, el joven prometido la denuncio al gobernador romano como cristiana. El gobernador la condeno a ser llevada a un burdel para que perdiera su virginidad, pero el relato hagiografico afirma que una fuerza sobrenatural hizo que ni mil bueyes pudieran moverla del sitio.\n\nLa leyenda mas conocida de Lucia es la de sus ojos. Segun una version, el joven prometido estaba obsesionado con la belleza de sus ojos, y Lucia se los arranco y se los envio en un plato diciendole 'toma lo que quieres, y dejame en paz'. Segun otra version, sus ojos fueron arrancados como parte de su tormento antes del martirio. En ambos casos, sus ojos aparecen milagrosamente restaurados antes de la muerte. Esta leyenda es relativamente tardia (medieval) y no forma parte de las actas originales del martirio, pero ha marcado su iconografia con una imagen imborrable.\n\nFue ejecutada con una espada en la garganta. Desde muy pronto su culto se extendio por toda la Iglesia: su nombre aparece en el Canon Romano de la Misa, la lista mas antigua de santos especialmente venerados. Es especialmente popular en Suecia y Escandinavia, donde el 13 de diciembre se celebra con procesiones de jovenes vestidas de blanco con coronas de velas en la cabeza. Es patrona de los ciegos, los enfermos de la vista, los electricistas y la ciudad de Siracusa.",
-    "en": "Lucy of Syracuse was martyred in her native city, in Sicily, during the Diocletianic persecution, around the year 304. Her Latin name, Lucia, derives from lux (light), and all her hagiography, iconography, and symbolism are penetrated by this luminous evocation that has made her the patron of the blind, those with eye diseases, and all who seek light in the darkness. Her feast on December 13 was for centuries the day of the winter solstice in the Julian calendar, which reinforced her luminous symbolism.\n\nAccording to hagiography, Lucy was a Syracusan noblewoman who had secretly consecrated her virginity to Christ. Her mother, Eutychia, had betrothed her to a young pagan, and when Lucy asked her mother to distribute her dowry among the poor, the betrothed young man denounced her to the Roman governor as a Christian. The governor sentenced her to be taken to a brothel so she would lose her virginity, but the hagiographic account states that a supernatural force prevented even a thousand oxen from moving her from the spot.\n\nThe best-known legend of Lucy involves her eyes. According to one version, the betrothed young man was obsessed with the beauty of her eyes, and Lucy tore them out and sent them to him on a plate saying 'take what you want, and leave me in peace.' According to another version, her eyes were torn out as part of her torture before martyrdom. In both cases, her eyes are miraculously restored before her death. This legend is relatively late (medieval) and does not form part of the original acts of martyrdom, but has marked her iconography with an indelible image.\n\nShe was executed with a sword to the throat. From very early on her cult spread throughout the Church: her name appears in the Roman Canon of the Mass, the oldest list of specially venerated saints. She is especially popular in Sweden and Scandinavia, where December 13 is celebrated with processions of young women dressed in white with crowns of candles on their heads. She is patron of the blind, those with eye diseases, electricians, and the city of Syracuse."
-  },
-  "novena": [
-    {
-      "day": 1,
-      "es": "Por la salud de los ojos\n\nSanta Lucía, a quien se atribuye el don de proteger la vista, intercede por todos los que sufren enfermedades en sus ojos. Que Dios les conceda salud y los ilumine con la luz de su amor. Amén.",
-      "en": "For eye health\n\nSaint Lucy, to whom the gift of protecting sight is attributed, intercede for all who suffer from eye conditions. May God grant them health and illuminate them with the light of His love. Amen."
-    },
-    {
-      "day": 2,
-      "es": "Por los ciegos y con discapacidad visual\n\nLucía de la luz, intercede por todos los ciegos y personas con discapacidad visual para que experimenten la presencia de Dios en su vida y encuentren caminos de vida plena a pesar de sus limitaciones. Amén.",
-      "en": "For the blind and visually impaired\n\nLucy of light, intercede for all the blind and visually impaired that they may experience God's presence in their lives and find paths to full living despite their limitations. Amen."
-    },
-    {
-      "day": 3,
-      "es": "Por la pureza y la castidad\n\nSanta Lucía, virgen y mártir, que defendiste tu virginidad consagrada a Dios hasta dar la vida, intercede por todos los jóvenes que desean vivir en pureza y que el mundo presiona a abandonar sus convicciones. Amén.",
-      "en": "For purity and chastity\n\nSaint Lucy, virgin and martyr, who defended your virginity consecrated to God even to the point of death, intercede for all young people who desire to live in purity and whom the world pressures to abandon their convictions. Amen."
-    },
-    {
-      "day": 4,
-      "es": "Por los perseguidos por su fe\n\nMártir valerosa, que diste la vida antes que renunciar a Cristo, intercede por todos los cristianos perseguidos en el mundo. Que tengan la fortaleza y la paz que tú tuviste ante tus perseguidores. Amén.",
-      "en": "For those persecuted for their faith\n\nValiant martyr, who gave your life rather than deny Christ, intercede for all persecuted Christians in the world. May they have the strength and peace that you had before your persecutors. Amen."
-    },
-    {
-      "day": 5,
-      "es": "Por los pobres y necesitados\n\nSanta Lucía generosa, que diste toda tu herencia a los pobres, intercede para que los que tenemos bienes los compartamos con generosidad y que ningún necesitado carezca de lo esencial. Amén.",
-      "en": "For the poor and needy\n\nGenerous Saint Lucy, who gave all your inheritance to the poor, intercede that those of us with resources may share them generously and that no one in need may lack what is essential. Amen."
-    },
-    {
-      "day": 6,
-      "es": "Por la luz en las tinieblas del alma\n\nLucía, cuyo nombre significa luz, intercede por todos los que atraviesan noches oscuras del alma, depresión o desesperanza. Que la luz de Cristo, que tú reflejas, ilumine sus caminos. Amén.",
-      "en": "For light in the darkness of the soul\n\nLucy, whose name means light, intercede for all who traverse dark nights of the soul, depression, or despair. May the light of Christ, which you reflect, illuminate their paths. Amen."
-    },
-    {
-      "day": 7,
-      "es": "Por los jóvenes amenazados\n\nSanta Lucía joven, que enfrentaste con valentía las amenazas contra tu dignidad, protege a todos los jóvenes que son amenazados, explotados o presionados. Que Dios sea su defensor y fortaleza. Amén.",
-      "en": "For threatened young people\n\nYoung Saint Lucy, who bravely faced threats against your dignity, protect all young people who are threatened, exploited, or pressured. May God be their defender and strength. Amen."
-    },
-    {
-      "day": 8,
-      "es": "Por los escritores y periodistas\n\nSanta Lucía, patrona de los escritores, intercede por todos los que trabajan con la palabra escrita para que la usen como instrumento de verdad, belleza y bien. Amén.",
-      "en": "For writers and journalists\n\nSaint Lucy, patron of writers, intercede for all who work with the written word that they may use it as an instrument of truth, beauty, and goodness. Amen."
-    },
-    {
-      "day": 9,
-      "es": "Por ser portadores de luz en el mundo\n\nLuminosa Lucía, cuya luz brilló en la oscuridad del paganismo, intercede para que todos los bautizados seamos verdaderas luces del mundo, reflejando la luz de Cristo en cada rincón de nuestra vida cotidiana. Amén.",
-      "en": "For being bearers of light in the world\n\nLuminous Lucy, whose light shone in the darkness of paganism, intercede that all the baptized may be true lights of the world, reflecting Christ's light in every corner of our daily lives. Amen."
-    }
-  ],
-  "litany": {
-    "title": {
-      "es": "Letan�a de Santa Luc�a",
-      "en": "Litany of Saint Lucy"
-    },
-    "invocations": [
-      {
-        "es": "Santa Luc�a, portadora de luz,",
-        "en": "Saint Lucy, bearer of light,"
-      },
-      {
-        "es": "Santa Luc�a, virgen y m�rtir,",
-        "en": "Saint Lucy, virgin and martyr,"
-      },
-      {
-        "es": "Santa Luc�a, protectora de la vista,",
-        "en": "Saint Lucy, protector of sight,"
-      },
-      {
-        "es": "Santa Luc�a, patrona de los ciegos,",
-        "en": "Saint Lucy, patron of the blind,"
-      },
-      {
-        "es": "Santa Luc�a, valiente ante el tirano,",
-        "en": "Saint Lucy, brave before the tyrant,"
-      },
-      {
-        "es": "Santa Luc�a, generosa con los pobres,",
-        "en": "Saint Lucy, generous with the poor,"
-      },
-      {
-        "es": "Santa Luc�a, patrona de los escritores,",
-        "en": "Saint Lucy, patron of writers,"
-      },
-      {
-        "es": "Santa Luc�a, estrella del Adviento,",
-        "en": "Saint Lucy, star of Advent,"
-      }
-    ],
-    "response": {
-      "es": "Ruega por nosotros.",
-      "en": "Pray for us."
-    }
-  },
-  "miracles": {
-    "available": true,
-    "es": "1. LA CURACION DE EUTIQUIA CON LA SANGRE DE SANTA AGUEDA\nLa madre de Lucia, Eutiquia, padecia una hemorrhagia incurable que los medicos no habian podido tratar. Lucia convenció a su madre de que peregrinaran al santuario de Santa Agueda en Catania —Agueda habia muerto martir solo cincuenta anos antes—. Durante la vigilia de oracion en la tumba de Agueda, Lucia cayo en sueno y Agueda se le aparecio: «¿Por que me pides lo que puedes pedir tu misma? Tu fe ha curado a tu madre». Al despertar, Eutiquia estaba completamente sana. Lucia interpreto el milagro como la llamada definitiva a consagrar su vida a Cristo. Distribuyo entre los pobres de Siracusa la dote que le habian preparado sus padres —una fortuna inmensa para la epoca—. Su novio pagano la denuncia ante el gobernador Pascasio.\n\n2. LOS BUEYES QUE NO PUDIERON MOVERLA\nEl gobernador Pascasio condeno a Lucia a ser llevada a un burdel. Cuando los soldados intentaron moverla, Lucia quedó completamente inmovil, como enraizada en el suelo. Trajeron bueyes para arrastrarla. Los animales tiraron con toda su fuerza, pero no lograron moverla ni un centimetro. Pascasio trajo entonces a hechiceros para romper el «encantamiento». No lo lograron. Segun los martirologios mas antiguos, Lucia dijo: «Tengo al Espiritu Santo en mi, y El no permite que me muevan». Los soldados apilaron madera alrededor de ella y le prendieron fuego. Lucia permanecio cantando entre las llamas sin quemarse. Finalmente, un soldado le clavo una espada en la garganta.\n\n3. LOS OJOS ARRANCADOS Y RESTAURADOS: EL SIMBOLO DE LA LUZ\nLa tradicion mas extendida sobre Lucia —aunque algunos la atribuyen al arte medieval y no a los hechos historicos— cuenta que un pretendiente le elogiaba constantemente sus hermosos ojos. Lucia, para eliminar ese motivo de tentacion, se arrancó los propios ojos y se los envio en un plato. Cristo, en respuesta, le restauro dos ojos aun mas hermosos. Esta imagen —Lucia con sus ojos en un plato— se volvio el icono mas reconocido de su martirio y la razon por la que es patrona de los enfermos de los ojos y de la vista. Su nombre en latin, «Lux», significa luz. Su fiesta —13 de diciembre— marcaba originalmente el solsticio de invierno en el antiguo calendario juliano: el dia mas oscuro del año, iluminado por la virgen que lleva la luz de Cristo.",
-    "en": "1. THE HEALING OF EUTYCHIA WITH THE BLOOD OF SAINT AGATHA\nLucy's mother, Eutychia, suffered an incurable hemorrhage that doctors had been unable to treat. Lucy persuaded her mother to make a pilgrimage to the shrine of Saint Agatha in Catania — Agatha had died a martyr only fifty years before. During the prayer vigil at Agatha's tomb, Lucy fell asleep and Agatha appeared to her: \"Why do you ask of me what you yourself can ask? Your faith has healed your mother.\" Upon waking, Eutychia was completely well. Lucy interpreted the miracle as the definitive call to consecrate her life to Christ. She distributed among the poor of Syracuse the dowry her parents had prepared for her — an immense fortune for the time. Her pagan fiancé denounced her to the governor Paschasius.\n\n2. THE OXEN THAT COULD NOT MOVE HER\nGovernor Paschasius condemned Lucy to be taken to a brothel. When the soldiers tried to move her, Lucy became completely immovable, as if rooted to the ground. Oxen were brought to drag her. The animals pulled with all their strength but could not move her a single centimeter. Paschasius then brought sorcerers to break the \"spell.\" They failed. According to the oldest martyrologies, Lucy said: \"I have the Holy Spirit within me, and He will not allow me to be moved.\" Soldiers piled wood around her and set it alight. Lucy remained singing in the flames without burning. Finally, a soldier thrust a sword into her throat.\n\n3. THE EYES TORN OUT AND RESTORED: THE SYMBOL OF LIGHT\nThe most widespread tradition about Lucy — though some attribute it to medieval art rather than historical fact — recounts that a suitor constantly praised her beautiful eyes. Lucy, to remove that source of temptation, tore out her own eyes and sent them to him on a plate. Christ, in response, restored two even more beautiful eyes. This image — Lucy with her eyes on a plate — became the most recognized icon of her martyrdom and the reason she is patroness of those afflicted with eye and vision diseases. Her name in Latin, \"Lux,\" means light. Her feast day — December 13 — originally marked the winter solstice in the old Julian calendar: the darkest day of the year, illuminated by the virgin who carries the light of Christ."
-  },
-  "feast_day": {
-    "es": "13 de diciembre",
-    "en": "December 13"
-  }
+﻿{
+    "id":  "santalucia",
+    "name":  {
+                 "es":  "Santa Lucía de Siracusa",
+                 "en":  "Saint Lucy of Syracuse"
+             },
+    "color":  "#8a1a3a",
+    "image":  "/assets/images/santalucia.svg",
+    "specialty":  {
+                      "es":  "Vista y enfermos",
+                      "en":  "Eyesight \u0026 the sick"
+                  },
+    "prayer":  {
+                   "es":  "Santa Lucía, portadora de luz en las tinieblas, intercede por nosotros.",
+                   "en":  "Saint Lucy, bearer of light in the darkness, intercede for us."
+               },
+    "history":  {
+                    "es":  "Lucía de Siracusa fue martirizada en su ciudad natal, en Sicilia, durante la persecución de Diocleciano, hacia el año 304. Su nombre latino, Lucía, deriva de lux (luz), y toda su hagiografía, su iconografía y su simbolismo están penetrados por esta evocación luminosa que la ha convertido en la patrona de los ciegos, los enfermos de la vista y todos los que buscan la luz en la oscuridad. Su fiesta el 13 de diciembre fue durante siglos el día del solsticio de invierno en el calendario juliano, lo que reforzó su simbolismo luminoso.\n\nSegún la hagiografía, Lucía era una noble siracusana que había consagrado secretamente su virginidad a Cristo. Su madre, Eutiquiana, la había prometido en matrimonio a un joven pagano, y cuando Lucía pidió a su madre que distribuyera su dote entre los pobres, el joven prometido la denunció al gobernador romano como cristiana. El gobernador la condenó a ser llevada a un burdel para que perdiera su virginidad, pero el relato hagiográfico afirma que una fuerza sobrenatural hizo que ni mil bueyes pudieran moverla del sitio.\n\nLa leyenda más conocida de Lucía es la de sus ojos. Según una versión, el joven prometido estaba obsesionado con la belleza de sus ojos, y Lucía se los arrancó y se los envió en un plato diciéndole \u0027toma lo que quieres, y déjame en paz\u0027. Según otra versión, sus ojos fueron arrancados como parte de su tormento antes del martirio. En ambos casos, sus ojos aparecen milagrosamente restaurados antes de la muerte. Esta leyenda es relativamente tardía (medieval) y no forma parte de las actas originales del martirio, pero ha marcado su iconografía con una imagen imborrable.\n\nFue ejecutada con una espada en la garganta. Desde muy pronto su culto se extendió por toda la Iglesia: su nombre aparece en el Canon Romano de la Misa, la lista más antigua de santos especialmente venerados. Es especialmente popular en Suecia y Escandinavia, donde el 13 de diciembre se celebra con procesiones de jóvenes vestidas de blanco con coronas de velas en la cabeza. Es patrona de los ciegos, los enfermos de la vista, los electricistas y la ciudad de Siracusa.",
+                    "en":  "Lucy of Syracuse was martyred in her native city, in Sicily, during the Diocletianic persecution, around the year 304. Her Latin name, Lucia, derives from lux (light), and all her hagiography, iconography, and symbolism are penetrated by this luminous evocation that has made her the patron of the blind, those with eye diseases, and all who seek light in the darkness. Her feast on December 13 was for centuries the day of the winter solstice in the Julian calendar, which reinforced her luminous symbolism.\n\nAccording to hagiography, Lucy was a Syracusan noblewoman who had secretly consecrated her virginity to Christ. Her mother, Eutychia, had betrothed her to a young pagan, and when Lucy asked her mother to distribute her dowry among the poor, the betrothed young man denounced her to the Roman governor as a Christian. The governor sentenced her to be taken to a brothel so she would lose her virginity, but the hagiographic account states that a supernatural force prevented even a thousand oxen from moving her from the spot.\n\nThe best-known legend of Lucy involves her eyes. According to one version, the betrothed young man was obsessed with the beauty of her eyes, and Lucy tore them out and sent them to him on a plate saying \u0027take what you want, and leave me in peace.\u0027 According to another version, her eyes were torn out as part of her torture before martyrdom. In both cases, her eyes are miraculously restored before her death. This legend is relatively late (medieval) and does not form part of the original acts of martyrdom, but has marked her iconography with an indelible image.\n\nShe was executed with a sword to the throat. From very early on her cult spread throughout the Church: her name appears in the Roman Canon of the Mass, the oldest list of specially venerated saints. She is especially popular in Sweden and Scandinavia, where December 13 is celebrated with processions of young women dressed in white with crowns of candles on their heads. She is patron of the blind, those with eye diseases, electricians, and the city of Syracuse."
+                },
+    "novena":  [
+                   {
+                       "day":  1,
+                       "es":  "Por la salud de los ojos\n\nSanta Lucía, a quien se atribuye el don de proteger la vista, intercede por todos los que sufren enfermedades en sus ojos. Que Dios les conceda salud y los ilumine con la luz de su amor. Amén.",
+                       "en":  "For eye health\n\nSaint Lucy, to whom the gift of protecting sight is attributed, intercede for all who suffer from eye conditions. May God grant them health and illuminate them with the light of His love. Amen."
+                   },
+                   {
+                       "day":  2,
+                       "es":  "Por los ciegos y con discapacidad visual\n\nLucía de la luz, intercede por todos los ciegos y personas con discapacidad visual para que experimenten la presencia de Dios en su vida y encuentren caminos de vida plena a pesar de sus limitaciones. Amén.",
+                       "en":  "For the blind and visually impaired\n\nLucy of light, intercede for all the blind and visually impaired that they may experience God\u0027s presence in their lives and find paths to full living despite their limitations. Amen."
+                   },
+                   {
+                       "day":  3,
+                       "es":  "Por la pureza y la castidad\n\nSanta Lucía, virgen y mártir, que defendiste tu virginidad consagrada a Dios hasta dar la vida, intercede por todos los jóvenes que desean vivir en pureza y que el mundo presiona a abandonar sus convicciones. Amén.",
+                       "en":  "For purity and chastity\n\nSaint Lucy, virgin and martyr, who defended your virginity consecrated to God even to the point of death, intercede for all young people who desire to live in purity and whom the world pressures to abandon their convictions. Amen."
+                   },
+                   {
+                       "day":  4,
+                       "es":  "Por los perseguidos por su fe\n\nMártir valerosa, que diste la vida antes que renunciar a Cristo, intercede por todos los cristianos perseguidos en el mundo. Que tengan la fortaleza y la paz que tú tuviste ante tus perseguidores. Amén.",
+                       "en":  "For those persecuted for their faith\n\nValiant martyr, who gave your life rather than deny Christ, intercede for all persecuted Christians in the world. May they have the strength and peace that you had before your persecutors. Amen."
+                   },
+                   {
+                       "day":  5,
+                       "es":  "Por los pobres y necesitados\n\nSanta Lucía generosa, que diste toda tu herencia a los pobres, intercede para que los que tenemos bienes los compartamos con generosidad y que ningún necesitado carezca de lo esencial. Amén.",
+                       "en":  "For the poor and needy\n\nGenerous Saint Lucy, who gave all your inheritance to the poor, intercede that those of us with resources may share them generously and that no one in need may lack what is essential. Amen."
+                   },
+                   {
+                       "day":  6,
+                       "es":  "Por la luz en las tinieblas del alma\n\nLucía, cuyo nombre significa luz, intercede por todos los que atraviesan noches oscuras del alma, depresión o desesperanza. Que la luz de Cristo, que tú reflejas, ilumine sus caminos. Amén.",
+                       "en":  "For light in the darkness of the soul\n\nLucy, whose name means light, intercede for all who traverse dark nights of the soul, depression, or despair. May the light of Christ, which you reflect, illuminate their paths. Amen."
+                   },
+                   {
+                       "day":  7,
+                       "es":  "Por los jóvenes amenazados\n\nSanta Lucía joven, que enfrentaste con valentía las amenazas contra tu dignidad, protege a todos los jóvenes que son amenazados, explotados o presionados. Que Dios sea su defensor y fortaleza. Amén.",
+                       "en":  "For threatened young people\n\nYoung Saint Lucy, who bravely faced threats against your dignity, protect all young people who are threatened, exploited, or pressured. May God be their defender and strength. Amen."
+                   },
+                   {
+                       "day":  8,
+                       "es":  "Por los escritores y periodistas\n\nSanta Lucía, patrona de los escritores, intercede por todos los que trabajan con la palabra escrita para que la usen como instrumento de verdad, belleza y bien. Amén.",
+                       "en":  "For writers and journalists\n\nSaint Lucy, patron of writers, intercede for all who work with the written word that they may use it as an instrument of truth, beauty, and goodness. Amen."
+                   },
+                   {
+                       "day":  9,
+                       "es":  "Por ser portadores de luz en el mundo\n\nLuminosa Lucía, cuya luz brilló en la oscuridad del paganismo, intercede para que todos los bautizados seamos verdaderas luces del mundo, reflejando la luz de Cristo en cada rincón de nuestra vida cotidiana. Amén.",
+                       "en":  "For being bearers of light in the world\n\nLuminous Lucy, whose light shone in the darkness of paganism, intercede that all the baptized may be true lights of the world, reflecting Christ\u0027s light in every corner of our daily lives. Amen."
+                   }
+               ],
+    "litany":  {
+                   "title":  {
+                                 "es":  "Letan�a de Santa Luc�a",
+                                 "en":  "Litany of Saint Lucy"
+                             },
+                   "invocations":  [
+                                       {
+                                           "es":  "Santa Luc�a, portadora de luz,",
+                                           "en":  "Saint Lucy, bearer of light,"
+                                       },
+                                       {
+                                           "es":  "Santa Luc�a, virgen y m�rtir,",
+                                           "en":  "Saint Lucy, virgin and martyr,"
+                                       },
+                                       {
+                                           "es":  "Santa Luc�a, protectora de la vista,",
+                                           "en":  "Saint Lucy, protector of sight,"
+                                       },
+                                       {
+                                           "es":  "Santa Luc�a, patrona de los ciegos,",
+                                           "en":  "Saint Lucy, patron of the blind,"
+                                       },
+                                       {
+                                           "es":  "Santa Luc�a, valiente ante el tirano,",
+                                           "en":  "Saint Lucy, brave before the tyrant,"
+                                       },
+                                       {
+                                           "es":  "Santa Luc�a, generosa con los pobres,",
+                                           "en":  "Saint Lucy, generous with the poor,"
+                                       },
+                                       {
+                                           "es":  "Santa Luc�a, patrona de los escritores,",
+                                           "en":  "Saint Lucy, patron of writers,"
+                                       },
+                                       {
+                                           "es":  "Santa Luc�a, estrella del Adviento,",
+                                           "en":  "Saint Lucy, star of Advent,"
+                                       }
+                                   ],
+                   "response":  {
+                                    "es":  "Ruega por nosotros.",
+                                    "en":  "Pray for us."
+                                }
+               },
+    "miracles":  {
+                     "available":  true,
+                     "es":  "1. LA CURACION DE EUTIQUIA CON LA SANGRE DE SANTA AGUEDA\nLa madre de Lucia, Eutiquia, padecia una hemorrhagia incurable que los medicos no habian podido tratar. Lucia convenció a su madre de que peregrinaran al santuario de Santa Agueda en Catania —Agueda habia muerto martir solo cincuenta anos antes—. Durante la vigilia de oracion en la tumba de Agueda, Lucia cayo en sueno y Agueda se le aparecio: «¿Por que me pides lo que puedes pedir tu misma? Tu fe ha curado a tu madre». Al despertar, Eutiquia estaba completamente sana. Lucia interpreto el milagro como la llamada definitiva a consagrar su vida a Cristo. Distribuyo entre los pobres de Siracusa la dote que le habian preparado sus padres —una fortuna inmensa para la epoca—. Su novio pagano la denuncia ante el gobernador Pascasio.\n\n2. LOS BUEYES QUE NO PUDIERON MOVERLA\nEl gobernador Pascasio condeno a Lucia a ser llevada a un burdel. Cuando los soldados intentaron moverla, Lucia quedó completamente inmovil, como enraizada en el suelo. Trajeron bueyes para arrastrarla. Los animales tiraron con toda su fuerza, pero no lograron moverla ni un centimetro. Pascasio trajo entonces a hechiceros para romper el «encantamiento». No lo lograron. Segun los martirologios mas antiguos, Lucia dijo: «Tengo al Espiritu Santo en mi, y El no permite que me muevan». Los soldados apilaron madera alrededor de ella y le prendieron fuego. Lucia permanecio cantando entre las llamas sin quemarse. Finalmente, un soldado le clavo una espada en la garganta.\n\n3. LOS OJOS ARRANCADOS Y RESTAURADOS: EL SIMBOLO DE LA LUZ\nLa tradicion mas extendida sobre Lucia —aunque algunos la atribuyen al arte medieval y no a los hechos historicos— cuenta que un pretendiente le elogiaba constantemente sus hermosos ojos. Lucia, para eliminar ese motivo de tentacion, se arrancó los propios ojos y se los envio en un plato. Cristo, en respuesta, le restauro dos ojos aun mas hermosos. Esta imagen —Lucia con sus ojos en un plato— se volvio el icono mas reconocido de su martirio y la razon por la que es patrona de los enfermos de los ojos y de la vista. Su nombre en latin, «Lux», significa luz. Su fiesta —13 de diciembre— marcaba originalmente el solsticio de invierno en el antiguo calendario juliano: el dia mas oscuro del año, iluminado por la virgen que lleva la luz de Cristo.",
+                     "en":  "1. THE HEALING OF EUTYCHIA WITH THE BLOOD OF SAINT AGATHA\nLucy\u0027s mother, Eutychia, suffered an incurable hemorrhage that doctors had been unable to treat. Lucy persuaded her mother to make a pilgrimage to the shrine of Saint Agatha in Catania — Agatha had died a martyr only fifty years before. During the prayer vigil at Agatha\u0027s tomb, Lucy fell asleep and Agatha appeared to her: \"Why do you ask of me what you yourself can ask? Your faith has healed your mother.\" Upon waking, Eutychia was completely well. Lucy interpreted the miracle as the definitive call to consecrate her life to Christ. She distributed among the poor of Syracuse the dowry her parents had prepared for her — an immense fortune for the time. Her pagan fiancé denounced her to the governor Paschasius.\n\n2. THE OXEN THAT COULD NOT MOVE HER\nGovernor Paschasius condemned Lucy to be taken to a brothel. When the soldiers tried to move her, Lucy became completely immovable, as if rooted to the ground. Oxen were brought to drag her. The animals pulled with all their strength but could not move her a single centimeter. Paschasius then brought sorcerers to break the \"spell.\" They failed. According to the oldest martyrologies, Lucy said: \"I have the Holy Spirit within me, and He will not allow me to be moved.\" Soldiers piled wood around her and set it alight. Lucy remained singing in the flames without burning. Finally, a soldier thrust a sword into her throat.\n\n3. THE EYES TORN OUT AND RESTORED: THE SYMBOL OF LIGHT\nThe most widespread tradition about Lucy — though some attribute it to medieval art rather than historical fact — recounts that a suitor constantly praised her beautiful eyes. Lucy, to remove that source of temptation, tore out her own eyes and sent them to him on a plate. Christ, in response, restored two even more beautiful eyes. This image — Lucy with her eyes on a plate — became the most recognized icon of her martyrdom and the reason she is patroness of those afflicted with eye and vision diseases. Her name in Latin, \"Lux,\" means light. Her feast day — December 13 — originally marked the winter solstice in the old Julian calendar: the darkest day of the year, illuminated by the virgin who carries the light of Christ."
+                 },
+    "feast_day":  {
+                      "es":  "13 de diciembre",
+                      "en":  "December 13"
+                  }
 }

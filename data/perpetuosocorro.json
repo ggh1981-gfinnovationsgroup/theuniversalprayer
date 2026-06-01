@@ -1,121 +1,121 @@
-{
-  "id": "perpetuosocorro",
-  "name": {
-    "es": "Virgen del Perpetuo Socorro",
-    "en": "Our Lady of Perpetual Help"
-  },
-  "color": "#1a3a7a",
-  "image": "/assets/images/perpetuosocorro.svg",
-  "specialty": {
-    "es": "Auxilio y esperanza",
-    "en": "Help & hope"
-  },
-  "prayer": {
-    "es": "Virgen del Perpetuo Socorro, acude en nuestra ayuda.",
-    "en": "Our Lady of Perpetual Help, come to our aid."
-  },
-  "history": {
-    "es": "La imagen de la Virgen del Perpetuo Socorro es un antiguo icono de estilo bizantino que representa a la Virgen Maria sosteniendo al Nino Jesus mientras los arcangeles Miguel y Gabriel le muestran los instrumentos de la Pasion. Pintada probablemente en Creta entre los siglos XIII y XV, llego a Roma hacia el ano 1499 y fue venerada en la iglesia de San Mateo durante siglos.\n\nDurante la invasion napoleonica a finales del siglo XVIII, los religiosos que custodiaban la imagen fueron expulsados y el cuadro paso a manos privadas para preservarlo. Permanecio oculto casi cuarenta anos en hogares de fieles romanos, hasta que un redentorista, guiado por un nino que tuvo una aparicion de la Virgen, inicio las gestiones para recuperarlo y devolverlo a la veneracion publica.\n\nEn 1866 el papa Pio IX entrego la imagen a los Padres Redentoristas con el encargo expreso: 'Hacedla conocer en todo el mundo.' Los redentoristas la instalaron en la nueva iglesia de Sant'Alfonso en Roma y comenzaron una campana de difusion mundial. La novena del Perpetuo Socorro se rezo pronto en millones de hogares en todos los continentes, convirtiendose en una de las devociones marianas mas extendidas del catolicismo moderno.\n\nLa imagen fue coronada solemnemente en 1867 y declarada patrona de numerosas diocesis en el mundo entero. Su mensaje es el de la madre siempre presente, dispuesta a acudir en auxilio inmediato de sus hijos: la palabra 'perpetuo' no se refiere a una imagen antigua, sino a una promesa eterna. El Perpetuo Socorro es hoy especialmente venerado en America Latina, Asia y Africa, donde millones de fieles la invocan en sus necesidades mas urgentes.",
-    "en": "The image of Our Lady of Perpetual Help is an ancient Byzantine-style icon depicting the Virgin Mary holding the Child Jesus while the archangels Michael and Gabriel show him the instruments of the Passion. Likely painted in Crete between the thirteenth and fifteenth centuries, it arrived in Rome around 1499 and was venerated in the church of San Matteo for centuries.\n\nDuring the Napoleonic invasion at the end of the eighteenth century, the religious who guarded the image were expelled and the painting was transferred to private hands for safekeeping. It remained hidden for almost forty years in the homes of Roman faithful, until a Redemptorist priest, guided by a child who had an apparition of the Virgin, began the process of recovering it and returning it to public veneration.\n\nIn 1866 Pope Pius IX handed the image to the Redemptorist Fathers with the express commission: 'Make her known throughout the world.' The Redemptorists installed it in the new church of Sant'Alfonso in Rome and launched a worldwide campaign of devotion. The novena of Perpetual Help was soon prayed in millions of households on every continent, becoming one of the most widespread Marian devotions in modern Catholicism.\n\nThe image was solemnly crowned in 1867 and declared patroness of numerous dioceses worldwide. Its message is that of the ever-present mother, always ready to come immediately to the aid of her children: the word 'perpetual' refers not to an ancient image, but to an eternal promise. Our Lady of Perpetual Help is today especially venerated in Latin America, Asia, and Africa, where millions of faithful invoke her in their most urgent needs."
-  },
-  "novena": [
-    {
-      "day": 1,
-      "es": "Por los que sufren angustia y tribulación\n\nOh Madre del Perpetuo Socorro, en ti busco refugio en este momento de angustia. Tú que sostienes la mano de tu Hijo con amor eterno, sostén también mi mano y condúceme a través de esta prueba con tu auxilio perpetuo. Amén.",
-      "en": "For those suffering anguish and tribulation\n\nO Mother of Perpetual Help, in you I seek refuge in this moment of anguish. You who hold your Son's hand with eternal love, hold my hand too and lead me through this trial with your perpetual aid. Amen."
-    },
-    {
-      "day": 2,
-      "es": "Por la esperanza en momentos desesperados\n\nVirgen del Perpetuo Socorro, cuando todo parece perdido y la esperanza se desvanece, recuérdame que estás a mi lado. Tu icono sagrado me recuerda que ninguna necesidad es demasiado pequeña o demasiado grande para ti. Amén.",
-      "en": "For hope in desperate moments\n\nVirgin of Perpetual Help, when all seems lost and hope fades, remind me that you are at my side. Your sacred icon reminds me that no need is too small or too great for you. Amen."
-    },
-    {
-      "day": 3,
-      "es": "Por los enfermos y sus familias\n\nMaría Auxiliadora, que consolaste a tantos enfermos a lo largo de los siglos, intercede por todos los que hoy sufren enfermedades del cuerpo o del alma. Que sientan tu presencia materna y encuentren consuelo en tu mirada misericordiosa. Amén.",
-      "en": "For the sick and their families\n\nMary our Helper, who have consoled so many sick throughout the centuries, intercede for all who suffer today from bodily or spiritual illness. May they feel your motherly presence and find comfort in your merciful gaze. Amen."
-    },
-    {
-      "day": 4,
-      "es": "Por los pobres y los que no tienen hogar\n\nNuestra Señora del Perpetuo Socorro, que eres Madre de los pobres, intercede por todos los que carecen de techo, comida o trabajo. Que los que tenemos más seamos generosos instrumentos de tu socorro perpetuo. Amén.",
-      "en": "For the poor and homeless\n\nOur Lady of Perpetual Help, who are Mother of the poor, intercede for all who lack shelter, food, or work. May those of us who have more be generous instruments of your perpetual help. Amen."
-    },
-    {
-      "day": 5,
-      "es": "Por las familias en crisis\n\nSanta María, protege a todas las familias que atraviesan momentos difíciles: separaciones, violencia, pérdidas. Que tu manto materno las cubra y tu intercesión abra caminos donde solo hay obstáculos. Amén.",
-      "en": "For families in crisis\n\nHoly Mary, protect all families going through difficult times: separations, violence, losses. May your motherly mantle cover them and your intercession open paths where there are only obstacles. Amen."
-    },
-    {
-      "day": 6,
-      "es": "Por los que han perdido la fe\n\nVirgen fiel, intercede por los que han perdido la fe o se han alejado de la Iglesia. Que tu perpetuo socorro los alcance dondequiera que estén y los devuelva al corazón de tu Hijo. Amén.",
-      "en": "For those who have lost faith\n\nFaithful Virgin, intercede for those who have lost faith or drifted from the Church. May your perpetual help reach them wherever they are and bring them back to your Son's heart. Amen."
-    },
-    {
-      "day": 7,
-      "es": "Por los que enfrentan decisiones difíciles\n\nSeñora del Perpetuo Socorro, ilumina a todos los que hoy deben tomar decisiones cruciales para su vida. Que el Espíritu Santo, que te llenó de sabiduría, les conceda discernimiento y paz. Amén.",
-      "en": "For those facing difficult decisions\n\nOur Lady of Perpetual Help, illuminate all who today must make crucial decisions for their lives. May the Holy Spirit, who filled you with wisdom, grant them discernment and peace. Amen."
-    },
-    {
-      "day": 8,
-      "es": "Por la paz en el mundo\n\nReina de la Paz, ante tantos conflictos y guerras en el mundo, eleva tu voz de Madre ante el trono de tu Hijo para que cesen las violencias y se instaure la paz entre los pueblos. Amén.",
-      "en": "For peace in the world\n\nQueen of Peace, amid so many conflicts and wars in the world, raise your Mother's voice before your Son's throne that violence may cease and peace be established among peoples. Amen."
-    },
-    {
-      "day": 9,
-      "es": "Por la devoción a María y la vida eterna\n\nMadre del Perpetuo Socorro, acompáñame en el camino de esta vida y, sobre todo, en el momento de mi muerte. Que seas tú quien me presente ante tu Hijo Jesucristo para que yo pueda gozar de Él por toda la eternidad. Amén.",
-      "en": "For devotion to Mary and eternal life\n\nMother of Perpetual Help, accompany me on the path of this life and especially at the moment of my death. May you be the one who presents me to your Son Jesus Christ so that I may rejoice in Him for all eternity. Amen."
-    }
-  ],
-  "litany": {
-    "title": {
-      "es": "Letan�a de la Virgen del Perpetuo Socorro",
-      "en": "Litany of Our Lady of Perpetual Help"
-    },
-    "invocations": [
-      {
-        "es": "Virgen del Perpetuo Socorro, refugio de los afligidos,",
-        "en": "Virgin of Perpetual Help, refuge of the afflicted,"
-      },
-      {
-        "es": "Virgen del Perpetuo Socorro, consuelo de los que sufren,",
-        "en": "Virgin of Perpetual Help, consoler of the suffering,"
-      },
-      {
-        "es": "Virgen del Perpetuo Socorro, esperanza de los desesperados,",
-        "en": "Virgin of Perpetual Help, hope of the desperate,"
-      },
-      {
-        "es": "Virgen del Perpetuo Socorro, auxilio de los necesitados,",
-        "en": "Virgin of Perpetual Help, aid of the needy,"
-      },
-      {
-        "es": "Virgen del Perpetuo Socorro, madre de los pobres,",
-        "en": "Virgin of Perpetual Help, mother of the poor,"
-      },
-      {
-        "es": "Virgen del Perpetuo Socorro, gu�a de los perdidos,",
-        "en": "Virgin of Perpetual Help, guide of the lost,"
-      },
-      {
-        "es": "Virgen del Perpetuo Socorro, fortaleza de los d�biles,",
-        "en": "Virgin of Perpetual Help, strength of the weak,"
-      },
-      {
-        "es": "Virgen del Perpetuo Socorro, intercesora poderosa,",
-        "en": "Virgin of Perpetual Help, powerful intercessor,"
-      }
-    ],
-    "response": {
-      "es": "Ruega por nosotros.",
-      "en": "Pray for us."
-    }
-  },
-  "miracles": {
-    "available": true,
-    "es": "1. EL ORIGEN MILAGROSO DEL ICONO EN CRETA (siglo XIII-XIV)\nSegun la tradicion, el icono de Nuestra Senora del Perpetuo Socorro fue pintado en Creta, probablemente en el siglo XIII. Un comerciante cretense robo el icono de una iglesia y lo llevo consigo en su barco hacia Roma. Durante la travesia, una tormenta feroz asalto la nave; el comerciante imploro a la Virgen, prometiendo que si sobrevivian llevaria el icono a un lugar sagrado. La tormenta ceso al instante. Pero el comerciante no cumplio su promesa en Roma. Antes de morir, le confio el secreto a un amigo, suplicandole que llevara el icono a una iglesia. La Virgen misma aparecio en suenos al hombre dos veces para reclamar un lugar de honor. La imagen fue finalmente entronizada en Roma.\n\n2. LA TRASLACION A ROMA Y LOS MILAGROS (1499)\nEl icono fue entronizado en la iglesia de San Mateo de Roma en 1499, donde permanecio 300 anos obrando curaciones y prodigios catalogados por los agustinianos. Cuando el ejercito napoleonico derribo la iglesia en 1798, el icono desaparecio y permanecio oculto durante 64 anos. El Papa Pio IX, en 1866, recibio una peticion de los Redentoristas para recuperar el icono. Al investigar, fue encontrado en posesion de los agustinianos. Pio IX lo entrego a los Redentoristas con las palabras: «Hacedlo conocer por todo el mundo». En la solemne traslacion del 26 de abril de 1866, mas de veinte curaciones instantaneas fueron reportadas por los testigos.\n\n3. EL NINO QUE MURIO Y VOLVIO A LA VIDA\nEntre los centenares de milagros documentados ante el icono de la Via Merulana en Roma, el mas celebre del siglo XIX fue el de un nino romano de siete anos que murio de fiebre alta una manana de 1874. Su madre, inconsolable, fue corriendo al santuario y postrada ante el icono oro durante horas: «Madre, devuelveme a mi hijo». Al regresar a casa, el nino estaba sentado en la cama, hambriento y completamente sano. El medico que certifico la muerte y examino al nino horas despues declaro publicamente ante el parroco que no tenia explicacion. El caso fue incluido en el sumario de milagros presentado a la Santa Sede y contribuyo a la expansion de la devocion al Perpetuo Socorro por toda America Latina.",
-    "en": "1. THE MIRACULOUS ORIGIN OF THE ICON IN CRETE (13th-14th century)\nAccording to tradition, the icon of Our Lady of Perpetual Help was painted in Crete, probably in the thirteenth century. A Cretan merchant stole the icon from a church and took it with him on his ship toward Rome. During the crossing, a fierce storm assailed the vessel; the merchant implored the Virgin, promising that if they survived he would bring the icon to a sacred place. The storm ceased instantly. But the merchant did not keep his promise in Rome. Before dying, he confided the secret to a friend, begging him to bring the icon to a church. The Virgin herself appeared in dreams to the man twice to claim a place of honor. The image was finally enthroned in Rome.\n\n2. THE TRANSLATION TO ROME AND THE MIRACLES (1499)\nThe icon was enthroned in the church of Saint Matthew in Rome in 1499, where it remained 300 years working healings and wonders catalogued by the Augustinians. When Napoleon's army demolished the church in 1798, the icon disappeared and remained hidden for 64 years. Pope Pius IX, in 1866, received a petition from the Redemptorists to recover the icon. Upon investigation, it was found in the possession of the Augustinians. Pius IX entrusted it to the Redemptorists with the words: \"Make it known throughout the world.\" At the solemn translation of April 26, 1866, more than twenty instantaneous healings were reported by witnesses.\n\n3. THE CHILD WHO DIED AND CAME BACK TO LIFE\nAmong the hundreds of documented miracles before the icon on the Via Merulana in Rome, the most celebrated of the nineteenth century was that of a Roman boy of seven who died of high fever one morning in 1874. His inconsolable mother ran to the shrine and prostrate before the icon prayed for hours: \"Mother, give me back my son.\" On returning home, the boy was sitting up in bed, hungry and completely healthy. The doctor who had certified the death and examined the boy hours later declared publicly before the parish priest that he had no explanation. The case was included in the summary of miracles presented to the Holy See and contributed to the expansion of devotion to Our Lady of Perpetual Help throughout Latin America."
-  },
-  "feast_day": {
-    "es": "27 de junio",
-    "en": "June 27"
-  }
+﻿{
+    "id":  "perpetuosocorro",
+    "name":  {
+                 "es":  "Virgen del Perpetuo Socorro",
+                 "en":  "Our Lady of Perpetual Help"
+             },
+    "color":  "#1a3a7a",
+    "image":  "/assets/images/perpetuosocorro.svg",
+    "specialty":  {
+                      "es":  "Auxilio y esperanza",
+                      "en":  "Help \u0026 hope"
+                  },
+    "prayer":  {
+                   "es":  "Virgen del Perpetuo Socorro, acude en nuestra ayuda.",
+                   "en":  "Our Lady of Perpetual Help, come to our aid."
+               },
+    "history":  {
+                    "es":  "La imagen de la Virgen del Perpetuo Socorro es un antiguo icono de estilo bizantino que representa a la Virgen María sosteniendo al Niño Jesús mientras los arcángeles Miguel y Gabriel le muestran los instrumentos de la Pasión. Pintada probablemente en Creta entre los siglos XIII y XV, llegó a Roma hacia el año 1499 y fue venerada en la iglesia de San Mateo durante siglos.\n\nDurante la invasión napoleónica a finales del siglo XVIII, los religiosos que custodiaban la imagen fueron expulsados y el cuadro pasó a manos privadas para preservarlo. Permaneció oculto casi cuarenta años en hogares de fieles romanos, hasta que un redentorista, guiado por un niño que tuvo una aparición de la Virgen, inició las gestiones para recuperarlo y devolverlo a la veneración pública.\n\nEn 1866 el papa Pío IX entregó la imagen a los Padres Redentoristas con el encargo expreso: «Hacedla conocer en todo el mundo.» Los redentoristas la instalaron en la nueva iglesia de Sant\u0027Alfonso en Roma y comenzaron una campaña de difusión mundial. La novena del Perpetuo Socorro se rezó pronto en millones de hogares en todos los continentes, convirtiéndose en una de las devociones marianas más extendidas del catolicismo moderno.\n\nLa imagen fue coronada solemnemente en 1867 y declarada patrona de numerosas diócesis en el mundo entero. Su mensaje es el de la madre siempre presente, dispuesta a acudir en auxilio inmediato de sus hijos: la palabra \u0027perpetuo\u0027 no se refiere a una imagen antigua, sino a una promesa eterna. El Perpetuo Socorro es hoy especialmente venerado en América Latina, Asia y África, donde millones de fieles la invocan en sus necesidades más urgentes.",
+                    "en":  "The image of Our Lady of Perpetual Help is an ancient Byzantine-style icon depicting the Virgin Mary holding the Child Jesus while the archangels Michael and Gabriel show him the instruments of the Passion. Likely painted in Crete between the thirteenth and fifteenth centuries, it arrived in Rome around 1499 and was venerated in the church of San Matteo for centuries.\n\nDuring the Napoleonic invasion at the end of the eighteenth century, the religious who guarded the image were expelled and the painting was transferred to private hands for safekeeping. It remained hidden for almost forty years in the homes of Roman faithful, until a Redemptorist priest, guided by a child who had an apparition of the Virgin, began the process of recovering it and returning it to public veneration.\n\nIn 1866 Pope Pius IX handed the image to the Redemptorist Fathers with the express commission: \u0027Make her known throughout the world.\u0027 The Redemptorists installed it in the new church of Sant\u0027Alfonso in Rome and launched a worldwide campaign of devotion. The novena of Perpetual Help was soon prayed in millions of households on every continent, becoming one of the most widespread Marian devotions in modern Catholicism.\n\nThe image was solemnly crowned in 1867 and declared patroness of numerous dioceses worldwide. Its message is that of the ever-present mother, always ready to come immediately to the aid of her children: the word \u0027perpetual\u0027 refers not to an ancient image, but to an eternal promise. Our Lady of Perpetual Help is today especially venerated in Latin America, Asia, and Africa, where millions of faithful invoke her in their most urgent needs."
+                },
+    "novena":  [
+                   {
+                       "day":  1,
+                       "es":  "Por los que sufren angustia y tribulación\n\nOh Madre del Perpetuo Socorro, en ti busco refugio en este momento de angustia. Tú que sostienes la mano de tu Hijo con amor eterno, sostén también mi mano y condúceme a través de esta prueba con tu auxilio perpetuo. Amén.",
+                       "en":  "For those suffering anguish and tribulation\n\nO Mother of Perpetual Help, in you I seek refuge in this moment of anguish. You who hold your Son\u0027s hand with eternal love, hold my hand too and lead me through this trial with your perpetual aid. Amen."
+                   },
+                   {
+                       "day":  2,
+                       "es":  "Por la esperanza en momentos desesperados\n\nVirgen del Perpetuo Socorro, cuando todo parece perdido y la esperanza se desvanece, recuérdame que estás a mi lado. Tu icono sagrado me recuerda que ninguna necesidad es demasiado pequeña o demasiado grande para ti. Amén.",
+                       "en":  "For hope in desperate moments\n\nVirgin of Perpetual Help, when all seems lost and hope fades, remind me that you are at my side. Your sacred icon reminds me that no need is too small or too great for you. Amen."
+                   },
+                   {
+                       "day":  3,
+                       "es":  "Por los enfermos y sus familias\n\nMaría Auxiliadora, que consolaste a tantos enfermos a lo largo de los siglos, intercede por todos los que hoy sufren enfermedades del cuerpo o del alma. Que sientan tu presencia materna y encuentren consuelo en tu mirada misericordiosa. Amén.",
+                       "en":  "For the sick and their families\n\nMary our Helper, who have consoled so many sick throughout the centuries, intercede for all who suffer today from bodily or spiritual illness. May they feel your motherly presence and find comfort in your merciful gaze. Amen."
+                   },
+                   {
+                       "day":  4,
+                       "es":  "Por los pobres y los que no tienen hogar\n\nNuestra Señora del Perpetuo Socorro, que eres Madre de los pobres, intercede por todos los que carecen de techo, comida o trabajo. Que los que tenemos más seamos generosos instrumentos de tu socorro perpetuo. Amén.",
+                       "en":  "For the poor and homeless\n\nOur Lady of Perpetual Help, who are Mother of the poor, intercede for all who lack shelter, food, or work. May those of us who have more be generous instruments of your perpetual help. Amen."
+                   },
+                   {
+                       "day":  5,
+                       "es":  "Por las familias en crisis\n\nSanta María, protege a todas las familias que atraviesan momentos difíciles: separaciones, violencia, pérdidas. Que tu manto materno las cubra y tu intercesión abra caminos donde solo hay obstáculos. Amén.",
+                       "en":  "For families in crisis\n\nHoly Mary, protect all families going through difficult times: separations, violence, losses. May your motherly mantle cover them and your intercession open paths where there are only obstacles. Amen."
+                   },
+                   {
+                       "day":  6,
+                       "es":  "Por los que han perdido la fe\n\nVirgen fiel, intercede por los que han perdido la fe o se han alejado de la Iglesia. Que tu perpetuo socorro los alcance dondequiera que estén y los devuelva al corazón de tu Hijo. Amén.",
+                       "en":  "For those who have lost faith\n\nFaithful Virgin, intercede for those who have lost faith or drifted from the Church. May your perpetual help reach them wherever they are and bring them back to your Son\u0027s heart. Amen."
+                   },
+                   {
+                       "day":  7,
+                       "es":  "Por los que enfrentan decisiones difíciles\n\nSeñora del Perpetuo Socorro, ilumina a todos los que hoy deben tomar decisiones cruciales para su vida. Que el Espíritu Santo, que te llenó de sabiduría, les conceda discernimiento y paz. Amén.",
+                       "en":  "For those facing difficult decisions\n\nOur Lady of Perpetual Help, illuminate all who today must make crucial decisions for their lives. May the Holy Spirit, who filled you with wisdom, grant them discernment and peace. Amen."
+                   },
+                   {
+                       "day":  8,
+                       "es":  "Por la paz en el mundo\n\nReina de la Paz, ante tantos conflictos y guerras en el mundo, eleva tu voz de Madre ante el trono de tu Hijo para que cesen las violencias y se instaure la paz entre los pueblos. Amén.",
+                       "en":  "For peace in the world\n\nQueen of Peace, amid so many conflicts and wars in the world, raise your Mother\u0027s voice before your Son\u0027s throne that violence may cease and peace be established among peoples. Amen."
+                   },
+                   {
+                       "day":  9,
+                       "es":  "Por la devoción a María y la vida eterna\n\nMadre del Perpetuo Socorro, acompáñame en el camino de esta vida y, sobre todo, en el momento de mi muerte. Que seas tú quien me presente ante tu Hijo Jesucristo para que yo pueda gozar de Él por toda la eternidad. Amén.",
+                       "en":  "For devotion to Mary and eternal life\n\nMother of Perpetual Help, accompany me on the path of this life and especially at the moment of my death. May you be the one who presents me to your Son Jesus Christ so that I may rejoice in Him for all eternity. Amen."
+                   }
+               ],
+    "litany":  {
+                   "title":  {
+                                 "es":  "Letan�a de la Virgen del Perpetuo Socorro",
+                                 "en":  "Litany of Our Lady of Perpetual Help"
+                             },
+                   "invocations":  [
+                                       {
+                                           "es":  "Virgen del Perpetuo Socorro, refugio de los afligidos,",
+                                           "en":  "Virgin of Perpetual Help, refuge of the afflicted,"
+                                       },
+                                       {
+                                           "es":  "Virgen del Perpetuo Socorro, consuelo de los que sufren,",
+                                           "en":  "Virgin of Perpetual Help, consoler of the suffering,"
+                                       },
+                                       {
+                                           "es":  "Virgen del Perpetuo Socorro, esperanza de los desesperados,",
+                                           "en":  "Virgin of Perpetual Help, hope of the desperate,"
+                                       },
+                                       {
+                                           "es":  "Virgen del Perpetuo Socorro, auxilio de los necesitados,",
+                                           "en":  "Virgin of Perpetual Help, aid of the needy,"
+                                       },
+                                       {
+                                           "es":  "Virgen del Perpetuo Socorro, madre de los pobres,",
+                                           "en":  "Virgin of Perpetual Help, mother of the poor,"
+                                       },
+                                       {
+                                           "es":  "Virgen del Perpetuo Socorro, gu�a de los perdidos,",
+                                           "en":  "Virgin of Perpetual Help, guide of the lost,"
+                                       },
+                                       {
+                                           "es":  "Virgen del Perpetuo Socorro, fortaleza de los d�biles,",
+                                           "en":  "Virgin of Perpetual Help, strength of the weak,"
+                                       },
+                                       {
+                                           "es":  "Virgen del Perpetuo Socorro, intercesora poderosa,",
+                                           "en":  "Virgin of Perpetual Help, powerful intercessor,"
+                                       }
+                                   ],
+                   "response":  {
+                                    "es":  "Ruega por nosotros.",
+                                    "en":  "Pray for us."
+                                }
+               },
+    "miracles":  {
+                     "available":  true,
+                     "es":  "1. EL ORIGEN MILAGROSO DEL ICONO EN CRETA (siglo XIII-XIV)\nSegun la tradicion, el icono de Nuestra Senora del Perpetuo Socorro fue pintado en Creta, probablemente en el siglo XIII. Un comerciante cretense robo el icono de una iglesia y lo llevo consigo en su barco hacia Roma. Durante la travesia, una tormenta feroz asalto la nave; el comerciante imploro a la Virgen, prometiendo que si sobrevivian llevaria el icono a un lugar sagrado. La tormenta ceso al instante. Pero el comerciante no cumplio su promesa en Roma. Antes de morir, le confio el secreto a un amigo, suplicandole que llevara el icono a una iglesia. La Virgen misma aparecio en suenos al hombre dos veces para reclamar un lugar de honor. La imagen fue finalmente entronizada en Roma.\n\n2. LA TRASLACION A ROMA Y LOS MILAGROS (1499)\nEl icono fue entronizado en la iglesia de San Mateo de Roma en 1499, donde permanecio 300 anos obrando curaciones y prodigios catalogados por los agustinianos. Cuando el ejercito napoleonico derribo la iglesia en 1798, el icono desaparecio y permanecio oculto durante 64 anos. El Papa Pio IX, en 1866, recibio una peticion de los Redentoristas para recuperar el icono. Al investigar, fue encontrado en posesion de los agustinianos. Pio IX lo entrego a los Redentoristas con las palabras: «Hacedlo conocer por todo el mundo». En la solemne traslacion del 26 de abril de 1866, mas de veinte curaciones instantaneas fueron reportadas por los testigos.\n\n3. EL NINO QUE MURIO Y VOLVIO A LA VIDA\nEntre los centenares de milagros documentados ante el icono de la Via Merulana en Roma, el mas celebre del siglo XIX fue el de un nino romano de siete anos que murio de fiebre alta una manana de 1874. Su madre, inconsolable, fue corriendo al santuario y postrada ante el icono oro durante horas: «Madre, devuelveme a mi hijo». Al regresar a casa, el nino estaba sentado en la cama, hambriento y completamente sano. El medico que certifico la muerte y examino al nino horas despues declaro publicamente ante el parroco que no tenia explicacion. El caso fue incluido en el sumario de milagros presentado a la Santa Sede y contribuyo a la expansion de la devocion al Perpetuo Socorro por toda America Latina.",
+                     "en":  "1. THE MIRACULOUS ORIGIN OF THE ICON IN CRETE (13th-14th century)\nAccording to tradition, the icon of Our Lady of Perpetual Help was painted in Crete, probably in the thirteenth century. A Cretan merchant stole the icon from a church and took it with him on his ship toward Rome. During the crossing, a fierce storm assailed the vessel; the merchant implored the Virgin, promising that if they survived he would bring the icon to a sacred place. The storm ceased instantly. But the merchant did not keep his promise in Rome. Before dying, he confided the secret to a friend, begging him to bring the icon to a church. The Virgin herself appeared in dreams to the man twice to claim a place of honor. The image was finally enthroned in Rome.\n\n2. THE TRANSLATION TO ROME AND THE MIRACLES (1499)\nThe icon was enthroned in the church of Saint Matthew in Rome in 1499, where it remained 300 years working healings and wonders catalogued by the Augustinians. When Napoleon\u0027s army demolished the church in 1798, the icon disappeared and remained hidden for 64 years. Pope Pius IX, in 1866, received a petition from the Redemptorists to recover the icon. Upon investigation, it was found in the possession of the Augustinians. Pius IX entrusted it to the Redemptorists with the words: \"Make it known throughout the world.\" At the solemn translation of April 26, 1866, more than twenty instantaneous healings were reported by witnesses.\n\n3. THE CHILD WHO DIED AND CAME BACK TO LIFE\nAmong the hundreds of documented miracles before the icon on the Via Merulana in Rome, the most celebrated of the nineteenth century was that of a Roman boy of seven who died of high fever one morning in 1874. His inconsolable mother ran to the shrine and prostrate before the icon prayed for hours: \"Mother, give me back my son.\" On returning home, the boy was sitting up in bed, hungry and completely healthy. The doctor who had certified the death and examined the boy hours later declared publicly before the parish priest that he had no explanation. The case was included in the summary of miracles presented to the Holy See and contributed to the expansion of devotion to Our Lady of Perpetual Help throughout Latin America."
+                 },
+    "feast_day":  {
+                      "es":  "27 de junio",
+                      "en":  "June 27"
+                  }
 }
