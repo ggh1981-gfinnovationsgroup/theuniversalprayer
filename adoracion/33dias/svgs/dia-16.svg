@@ -1,0 +1,37 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="d16glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e8c97a" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#c9a84c" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="d16cross" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8c97a"/>
+      <stop offset="100%" stop-color="#8a6e2f"/>
+    </linearGradient>
+  </defs>
+  <!-- Background glow -->
+  <circle cx="50" cy="50" r="46" fill="url(#d16glow)" opacity="0.8"/>
+  <!-- Outer light ring -->
+  <circle cx="50" cy="50" r="36" fill="none" stroke="#e8c97a" stroke-width="0.5" opacity="0.2"/>
+  <circle cx="50" cy="50" r="28" fill="none" stroke="#e8c97a" stroke-width="0.5" opacity="0.15"/>
+  <!-- Cross vertical -->
+  <rect x="46" y="10" width="8" height="60" rx="3" fill="url(#d16cross)"/>
+  <!-- Cross horizontal -->
+  <rect x="24" y="28" width="52" height="8" rx="3" fill="url(#d16cross)"/>
+  <!-- Central glow at intersection -->
+  <circle cx="50" cy="32" r="12" fill="#e8c97a" opacity="0.3"/>
+  <circle cx="50" cy="32" r="7"  fill="#e8c97a" opacity="0.45"/>
+  <circle cx="50" cy="32" r="3"  fill="#fffde8" opacity="0.8"/>
+  <!-- Radiating lines from center -->
+  <g transform="translate(50,32)" stroke="#e8c97a" stroke-linecap="round" opacity="0.3">
+    <line y1="-18" y2="-24" stroke-width="1.5"/>
+    <g transform="rotate(45)"> <line y1="-18" y2="-24" stroke-width="1"/></g>
+    <g transform="rotate(90)"> <line y1="-18" y2="-24" stroke-width="1.5"/></g>
+    <g transform="rotate(135)"><line y1="-18" y2="-24" stroke-width="1"/></g>
+    <g transform="rotate(180)"><line y1="-18" y2="-24" stroke-width="1.5"/></g>
+    <g transform="rotate(225)"><line y1="-18" y2="-24" stroke-width="1"/></g>
+    <g transform="rotate(270)"><line y1="-18" y2="-24" stroke-width="1.5"/></g>
+    <g transform="rotate(315)"><line y1="-18" y2="-24" stroke-width="1"/></g>
+  </g>
+</svg>
