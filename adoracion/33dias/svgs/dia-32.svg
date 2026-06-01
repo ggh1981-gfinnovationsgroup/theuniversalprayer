@@ -1,0 +1,45 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="d32rays" cx="50%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#fffde8" stop-opacity="0.95"/>
+      <stop offset="25%" stop-color="#e8c97a" stop-opacity="0.55"/>
+      <stop offset="65%" stop-color="#c9a84c" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Radiant glow -->
+  <circle cx="50" cy="42" r="50" fill="url(#d32rays)" opacity="0.85"/>
+  <!-- Rays -->
+  <g transform="translate(50,42)" stroke="#e8c97a" stroke-linecap="round">
+    <line y1="-10" y2="-44" stroke-width="1.5" opacity="0.4"/>
+    <g transform="rotate(30)"> <line y1="-10" y2="-42" stroke-width="1.2" opacity="0.35"/></g>
+    <g transform="rotate(60)"> <line y1="-10" y2="-42" stroke-width="1.5" opacity="0.4"/></g>
+    <g transform="rotate(90)"> <line y1="-10" y2="-44" stroke-width="1.2" opacity="0.35"/></g>
+    <g transform="rotate(120)"><line y1="-10" y2="-42" stroke-width="1.5" opacity="0.4"/></g>
+    <g transform="rotate(150)"><line y1="-10" y2="-40" stroke-width="1.2" opacity="0.35"/></g>
+    <g transform="rotate(180)"><line y1="-10" y2="-44" stroke-width="1.5" opacity="0.4"/></g>
+    <g transform="rotate(210)"><line y1="-10" y2="-40" stroke-width="1.2" opacity="0.35"/></g>
+    <g transform="rotate(240)"><line y1="-10" y2="-42" stroke-width="1.5" opacity="0.4"/></g>
+    <g transform="rotate(270)"><line y1="-10" y2="-44" stroke-width="1.2" opacity="0.35"/></g>
+    <g transform="rotate(300)"><line y1="-10" y2="-42" stroke-width="1.5" opacity="0.4"/></g>
+    <g transform="rotate(330)"><line y1="-10" y2="-42" stroke-width="1.2" opacity="0.35"/></g>
+  </g>
+  <!-- Elevated Host (circle) -->
+  <circle cx="50" cy="32" r="14" fill="#fffde8" stroke="#e8c97a" stroke-width="2.5" opacity="0.95"/>
+  <circle cx="50" cy="32" r="11" fill="#fffde8" opacity="0.6"/>
+  <!-- IHS on host (simplified cross mark) -->
+  <line x1="50" y1="26" x2="50" y2="38" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+  <line x1="44" y1="32" x2="56" y2="32" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+  <!-- Priest's hands holding host (two horizontal lines below host) -->
+  <line x1="36" y1="48" x2="64" y2="48" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+  <!-- Chalice below -->
+  <!-- Chalice cup -->
+  <path d="M38,56 C38,56 36,68 42,72 L58,72 C64,68 62,56 62,56 Z"
+        fill="none" stroke="#c9a84c" stroke-width="2" opacity="0.85"/>
+  <!-- Chalice stem -->
+  <line x1="50" y1="72" x2="50" y2="82" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+  <!-- Chalice base -->
+  <line x1="40" y1="82" x2="60" y2="82" stroke="#c9a84c" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+  <!-- Gold glow inside chalice -->
+  <ellipse cx="50" cy="66" rx="9" ry="4" fill="#e8c97a" opacity="0.25"/>
+</svg>
