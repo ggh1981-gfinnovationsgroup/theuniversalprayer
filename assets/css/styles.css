@@ -2367,6 +2367,8 @@ body {
   max-width: 700px;
   margin: 0 auto;
   padding: 2.5rem 1.25rem 4rem;
+  box-sizing: border-box;
+  width: 100%;
 }
 .ador-moment-section {
   margin-bottom: 2.75rem;
@@ -3121,6 +3123,8 @@ body {
   border-radius: 16px;
   overflow: hidden;
   background: linear-gradient(135deg,#12204a 0%,#0c1530 100%);
+  width: 100%;
+  box-sizing: border-box;
 }
 .ador-33dias-header {
   display: flex;
@@ -3131,16 +3135,25 @@ body {
   user-select: none;
 }
 .ador-33dias-header:hover { background: rgba(201,168,76,.06); }
-.ador-33dias-header-left { flex: 1; }
+.ador-33dias-header-left { flex: 1; min-width: 0; }
 .ador-33dias-chevron {
   font-size: 1rem;
   color: var(--gold);
   transition: transform .3s ease;
   margin-left: 1rem;
+  flex-shrink: 0;
 }
 .ador-33dias-chevron.open { transform: rotate(180deg); }
 .ador-33dias-body {
   padding: 0 1.5rem 1.5rem;
   border-top: 1px solid rgba(201,168,76,.12);
   overflow-x: hidden;
+  box-sizing: border-box;
+  width: 100%;
+}
+@media (max-width: 480px) {
+  .ador-33dias-header { padding: 1rem 1rem; }
+  .ador-33dias-body   { padding: 0 .5rem 1rem; }
+  .a33-list           { padding: 1rem .5rem 2rem; grid-template-columns: repeat(auto-fill, minmax(min(130px, 100%), 1fr)); }
+  .a33-hero-inner     { padding: .75rem 0 .5rem !important; }
 }
