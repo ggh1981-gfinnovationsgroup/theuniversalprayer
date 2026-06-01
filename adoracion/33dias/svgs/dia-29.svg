@@ -1,0 +1,25 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="d29glow" cx="50%" cy="55%" r="50%">
+      <stop offset="0%" stop-color="#e8c97a" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#e8c97a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="50" cy="55" r="46" fill="url(#d29glow)"/>
+  <!-- Anchor shape -->
+  <!-- Vertical shaft -->
+  <line x1="50" y1="22" x2="50" y2="82" stroke="#c9a84c" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+  <!-- Ring at top -->
+  <circle cx="50" cy="18" r="6" fill="none" stroke="#c9a84c" stroke-width="2.5" opacity="0.85"/>
+  <!-- Crossbar -->
+  <line x1="32" y1="34" x2="68" y2="34" stroke="#c9a84c" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+  <!-- Flukes (bottom curved arms) -->
+  <path d="M50,80 C42,82 28,78 26,68" fill="none" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+  <path d="M50,80 C58,82 72,78 74,68" fill="none" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+  <!-- Crown on anchor top (cross shape) -->
+  <!-- Cross on the anchor shaft (symbol of hope in Christ) -->
+  <line x1="50" y1="36" x2="50" y2="56" stroke="#e8c97a" stroke-width="2"   stroke-linecap="round" opacity="0.7"/>
+  <line x1="42" y1="44" x2="58" y2="44" stroke="#e8c97a" stroke-width="2"   stroke-linecap="round" opacity="0.7"/>
+  <!-- Small glow at top ring -->
+  <circle cx="50" cy="18" r="3.5" fill="#e8c97a" opacity="0.35"/>
+</svg>
