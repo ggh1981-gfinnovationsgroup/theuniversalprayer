@@ -1569,11 +1569,13 @@ function initMenu() {
     const homeLabel       = currentLang === 'es' ? '← Inicio'              : '← Home';
     const familyLabel     = currentLang === 'es' ? '🙏 Oraciones en Familia' : '🙏 Family Prayers';
     const intercesorsLabel = currentLang === 'es' ? '✨ Intercesores'        : '✨ Intercessors';
+    const adoracionLabel  = currentLang === 'es' ? '✝ Adoración'            : '✝ Adoration';
 
     list.innerHTML = `
       <li><a class="side-nav-link side-nav-home"   href="${homeHref}">${homeLabel}</a></li>
       <li><a class="side-nav-link side-nav-family" href="${familyHref}">${familyLabel}</a></li>
-      <li><a class="side-nav-link side-nav-saints" href="${intercesorsHref}">${intercesorsLabel}</a></li>`;
+      <li><a class="side-nav-link side-nav-saints" href="${intercesorsHref}">${intercesorsLabel}</a></li>
+      <li><a class="side-nav-link side-nav-adoracion" href="/adoracion/">${adoracionLabel}</a></li>`;
   }
   renderMenuItems();
 

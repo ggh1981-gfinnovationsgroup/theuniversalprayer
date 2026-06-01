@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -21,9 +21,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/styles.css" />
   <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
+  (function() {
+    'use strict';
+
+    // ── Language ──────────────────────────────────────
+    const LANG_KEY = 'universalPrayerLang';
+    let lang = localStorage.getItem(LANG_KEY) || 'es';
+
+    function applyLang(l) {
+      lang = l;
+      localStorage.setItem(LANG_KEY, l);
+      document.documentElement.lang = l === 'en' ? 'en' : 'es';
+      document.getElementById('langLabel').textContent = l === 'en' ? 'ES' : 'EN';
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.dataset.lang === l ? '' : 'none';
+      });
     }
+
+    document.getElementById('langToggle').addEventListener('click', () => {
+      applyLang(lang === 'es' ? 'en' : 'es');
+    });
+
+    // ── Init ──────────────────────────────────────────
+    applyLang(lang);
+
+  })();
   </script>
 </head>
 <body class="adoracion-page">
@@ -103,56 +125,6 @@
     <p class="ador-subtitle" data-lang="en" style="display:none">A prayer guide for contemplating Jesus present in the Eucharist. Silence, adoration, petition and thanksgiving.</p>
   </section>
 
-  <!-- TIMER -->
-  <section class="ador-timer-section">
-    <div class="ador-timer-wrap">
-      <!-- Circle progress -->
-      <div class="ador-timer-circle-wrap">
-        <svg class="ador-timer-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="timerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#e8c97a"/>
-              <stop offset="100%" stop-color="#c9a84c"/>
-            </linearGradient>
-          </defs>
-          <circle cx="100" cy="100" r="90" class="ador-timer-track"/>
-          <circle cx="100" cy="100" r="90" class="ador-timer-progress" id="adTimerProgress"/>
-        </svg>
-        <div class="ador-timer-inner">
-          <span class="ador-timer-time" id="adTimerDisplay">15:00</span>
-          <span class="ador-timer-moment-num" id="adMomentNum" data-lang-es="Momento 1 / 7" data-lang-en="Moment 1 / 7">Momento 1 / 7</span>
-        </div>
-      </div>
-
-      <!-- Current moment name -->
-      <p class="ador-timer-moment-name" id="adCurrentMoment" data-lang="es">Llegada</p>
-
-      <!-- Controls -->
-      <div class="ador-timer-controls">
-        <button class="ador-ctrl-btn" id="adResetBtn" title="Reiniciar" aria-label="Reiniciar">↺</button>
-        <button class="ador-ctrl-btn ador-play-pause" id="adPlayPauseBtn" aria-label="Iniciar">▶</button>
-        <button class="ador-ctrl-btn" id="adTtsBtn" title="Leer en voz alta" aria-label="Leer en voz alta">🔊</button>
-      </div>
-      <p class="ador-timer-hint" id="adTimerHint" data-lang="es">Presiona ▶ para comenzar el temporizador</p>
-      <p class="ador-timer-hint" data-lang="en" style="display:none">Press ▶ to start the timer</p>
-    </div>
-
-    <!-- Moment dots strip -->
-    <div class="ador-moments-strip" id="adMomentsDots">
-      <div class="ador-moment-dot active" data-index="0" title="Llegada"></div>
-      <div class="ador-moment-dot" data-index="1" title="Adoración"></div>
-      <div class="ador-moment-dot" data-index="2" title="Contrición"></div>
-      <div class="ador-moment-dot" data-index="3" title="Meditación"></div>
-      <div class="ador-moment-dot" data-index="4" title="Peticiones"></div>
-      <div class="ador-moment-dot" data-index="5" title="Acción de gracias"></div>
-      <div class="ador-moment-dot" data-index="6" title="Despedida"></div>
-    </div>
-  </section>
-
-  <!-- TTS no-support message -->
-  <p class="ador-tts-nosupport" id="adTtsNoSupport" style="display:none" data-lang="es">Tu navegador no soporta lectura en voz alta.</p>
-  <p class="ador-tts-nosupport" id="adTtsNoSupportEn" style="display:none" data-lang="en">Your browser doesn't support text-to-speech.</p>
-
   <!-- MOMENTS CONTENT -->
   <main class="ador-content">
 
@@ -185,7 +157,7 @@
     </article>
 
     <!-- Moment 2 -->
-    <article class="ador-moment-section" id="ador-moment-1" data-moment="1">
+    <article class="ador-moment-section is-active" id="ador-moment-1" data-moment="1">
       <div class="ador-moment-header">
         <span class="ador-moment-badge">
           <span data-lang="es">2 min</span>
@@ -213,7 +185,7 @@
     </article>
 
     <!-- Moment 3 -->
-    <article class="ador-moment-section" id="ador-moment-2" data-moment="2">
+    <article class="ador-moment-section is-active" id="ador-moment-2" data-moment="2">
       <div class="ador-moment-header">
         <span class="ador-moment-badge">
           <span data-lang="es">1 min</span>
@@ -239,7 +211,7 @@
     </article>
 
     <!-- Moment 4 -->
-    <article class="ador-moment-section" id="ador-moment-3" data-moment="3">
+    <article class="ador-moment-section is-active" id="ador-moment-3" data-moment="3">
       <div class="ador-moment-header">
         <span class="ador-moment-badge">
           <span data-lang="es">4 min</span>
@@ -277,7 +249,7 @@
     </article>
 
     <!-- Moment 5 -->
-    <article class="ador-moment-section" id="ador-moment-4" data-moment="4">
+    <article class="ador-moment-section is-active" id="ador-moment-4" data-moment="4">
       <div class="ador-moment-header">
         <span class="ador-moment-badge">
           <span data-lang="es">3 min</span>
@@ -309,7 +281,7 @@
     </article>
 
     <!-- Moment 6 -->
-    <article class="ador-moment-section" id="ador-moment-5" data-moment="5">
+    <article class="ador-moment-section is-active" id="ador-moment-5" data-moment="5">
       <div class="ador-moment-header">
         <span class="ador-moment-badge">
           <span data-lang="es">2 min</span>
@@ -337,7 +309,7 @@
     </article>
 
     <!-- Moment 7 -->
-    <article class="ador-moment-section" id="ador-moment-6" data-moment="6">
+    <article class="ador-moment-section is-active" id="ador-moment-6" data-moment="6">
       <div class="ador-moment-header">
         <span class="ador-moment-badge">
           <span data-lang="es">1 min</span>
@@ -361,13 +333,6 @@
         <span class="ador-amen">Amen.</span>
       </div>
     </article>
-
-    <!-- End note -->
-    <div class="ador-end-note" id="adEndNote" style="display:none">
-      <div class="ador-end-cross">✝</div>
-      <p class="ador-end-text" data-lang="es">Has completado los 15 minutos de adoración.<br>Que Jesús Eucarístico te bendiga en el camino.</p>
-      <p class="ador-end-text" data-lang="en" style="display:none">You have completed 15 minutes of adoration.<br>May Jesus in the Eucharist bless you on your way.</p>
-    </div>
 
     <!-- 33 días banner -->
     <div class="ador-33dias-banner">
@@ -406,219 +371,14 @@
       document.querySelectorAll('[data-lang]').forEach(el => {
         el.style.display = el.dataset.lang === l ? '' : 'none';
       });
-      // Update moment labels
-      updateMomentLabel();
     }
 
     document.getElementById('langToggle').addEventListener('click', () => {
       applyLang(lang === 'es' ? 'en' : 'es');
     });
 
-    // ── Timer ─────────────────────────────────────────
-    const TOTAL = 900; // 15 min
-    const MOMENTS = [
-      { es: 'Llegada',           en: 'Arrival',      duration: 120 },
-      { es: 'Adoración',         en: 'Adoration',    duration: 120 },
-      { es: 'Contrición',        en: 'Contrition',   duration:  60 },
-      { es: 'Meditación',        en: 'Meditation',   duration: 240 },
-      { es: 'Peticiones',        en: 'Petitions',    duration: 180 },
-      { es: 'Acción de Gracias', en: 'Thanksgiving', duration: 120 },
-      { es: 'Despedida',         en: 'Farewell',     duration:  60 },
-    ];
-    const CIRCUMFERENCE = 2 * Math.PI * 90; // ≈ 565.49
-
-    let elapsed = 0;
-    let running = false;
-    let timerInterval = null;
-    let lastMoment = -1;
-
-    const $display   = document.getElementById('adTimerDisplay');
-    const $progress  = document.getElementById('adTimerProgress');
-    const $momentNum = document.getElementById('adMomentNum');
-    const $momentName= document.getElementById('adCurrentMoment');
-    const $playPause = document.getElementById('adPlayPauseBtn');
-    const $resetBtn  = document.getElementById('adResetBtn');
-    const $endNote   = document.getElementById('adEndNote');
-    const $hint      = document.getElementById('adTimerHint');
-
-    $progress.style.strokeDasharray  = CIRCUMFERENCE;
-    $progress.style.strokeDashoffset = 0;
-
-    function currentMomentIndex() {
-      let cum = 0;
-      for (let i = 0; i < MOMENTS.length; i++) {
-        cum += MOMENTS[i].duration;
-        if (elapsed < cum) return i;
-      }
-      return MOMENTS.length - 1;
-    }
-
-    function updateMomentLabel() {
-      const idx = currentMomentIndex();
-      $momentNum.textContent  = (lang === 'en' ? 'Moment ' : 'Momento ') + (idx + 1) + ' / 7';
-      $momentName.textContent = MOMENTS[idx][lang] || MOMENTS[idx]['es'];
-    }
-
-    function updateDisplay() {
-      const remaining = TOTAL - elapsed;
-      const m = Math.floor(remaining / 60);
-      const s = remaining % 60;
-      $display.textContent = String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0');
-      $progress.style.strokeDashoffset = CIRCUMFERENCE * (elapsed / TOTAL);
-
-      const idx = currentMomentIndex();
-      updateMomentLabel();
-
-      // Dots
-      document.querySelectorAll('.ador-moment-dot').forEach((dot, i) => {
-        dot.classList.toggle('adm-done',   i < idx);
-        dot.classList.toggle('adm-active', i === idx);
-      });
-
-      // Highlight active section
-      if (idx !== lastMoment) {
-        lastMoment = idx;
-        document.querySelectorAll('.ador-moment-section').forEach((sec, i) => {
-          sec.classList.toggle('is-active', i === idx);
-        });
-        // Scroll to active moment
-        const activeSec = document.getElementById('ador-moment-' + idx);
-        if (activeSec) {
-          activeSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }
-    }
-
-    function tick() {
-      elapsed++;
-      updateDisplay();
-      if (elapsed >= TOTAL) {
-        clearInterval(timerInterval);
-        running = false;
-        $playPause.textContent = '▶';
-        $endNote.style.display = '';
-        ttsStop();
-        return;
-      }
-    }
-
-    function startTimer() {
-      if (running) return;
-      running = true;
-      $playPause.textContent = '⏸';
-      if ($hint) $hint.style.display = 'none';
-      timerInterval = setInterval(tick, 1000);
-    }
-
-    function pauseTimer() {
-      if (!running) return;
-      running = false;
-      $playPause.textContent = '▶';
-      clearInterval(timerInterval);
-    }
-
-    function resetTimer() {
-      pauseTimer();
-      elapsed = 0;
-      lastMoment = -1;
-      $endNote.style.display = 'none';
-      if ($hint) $hint.style.display = '';
-      updateDisplay();
-      ttsStop();
-      // Reset dots
-      document.querySelectorAll('.ador-moment-dot').forEach((dot, i) => {
-        dot.classList.toggle('adm-active', i === 0);
-        dot.classList.remove('adm-done');
-      });
-      // Reset section highlights
-      document.querySelectorAll('.ador-moment-section').forEach((sec, i) => {
-        sec.classList.toggle('is-active', i === 0);
-      });
-    }
-
-    $playPause.addEventListener('click', () => {
-      if (elapsed >= TOTAL) { resetTimer(); return; }
-      running ? pauseTimer() : startTimer();
-    });
-    $resetBtn.addEventListener('click', resetTimer);
-
-    // Dot click navigation
-    document.querySelectorAll('.ador-moment-dot').forEach(dot => {
-      dot.addEventListener('click', () => {
-        pauseTimer();
-        const idx = parseInt(dot.dataset.index, 10);
-        // Set elapsed to start of clicked moment
-        let cum = 0;
-        for (let i = 0; i < idx; i++) cum += MOMENTS[i].duration;
-        elapsed = cum;
-        lastMoment = -1;
-        $endNote.style.display = 'none';
-        updateDisplay();
-      });
-    });
-
-    // ── TTS ───────────────────────────────────────────
-    let ttsUtterance = null;
-    let ttsSpeaking  = false;
-
-    const $ttsBtn = document.getElementById('adTtsBtn');
-
-    function getAllText() {
-      const texts = [];
-      document.querySelectorAll('.ador-moment-section').forEach(sec => {
-        // Get visible instruction
-        sec.querySelectorAll('.ador-moment-instruction').forEach(el => {
-          if (el.style.display !== 'none' && el.dataset.lang === lang) {
-            texts.push(el.textContent.trim());
-          }
-        });
-        // Get visible body text
-        sec.querySelectorAll('.ador-moment-text').forEach(el => {
-          if (el.style.display !== 'none') {
-            texts.push(el.textContent.trim());
-          }
-        });
-        // Scripture
-        sec.querySelectorAll('.ador-scripture').forEach(el => {
-          if (el.style.display !== 'none') {
-            texts.push(el.textContent.trim());
-          }
-        });
-      });
-      return texts.join(' ');
-    }
-
-    function ttsStop() {
-      if ('speechSynthesis' in window) window.speechSynthesis.cancel();
-      ttsSpeaking = false;
-      $ttsBtn.textContent = '🔊';
-    }
-
-    $ttsBtn.addEventListener('click', () => {
-      if (!('speechSynthesis' in window)) {
-        document.getElementById('adTtsNoSupport').style.display = '';
-        return;
-      }
-      if (ttsSpeaking) {
-        ttsStop();
-        return;
-      }
-      window.speechSynthesis.cancel();
-      const text = getAllText();
-      ttsUtterance = new SpeechSynthesisUtterance(text);
-      ttsUtterance.lang  = lang === 'en' ? 'en-US' : 'es-MX';
-      ttsUtterance.rate  = 0.82;
-      ttsUtterance.pitch = 1.0;
-      ttsUtterance.onend = () => { ttsSpeaking = false; $ttsBtn.textContent = '🔊'; };
-      ttsUtterance.onerror = () => { ttsSpeaking = false; $ttsBtn.textContent = '🔊'; };
-      window.speechSynthesis.speak(ttsUtterance);
-      ttsSpeaking = true;
-      $ttsBtn.textContent = '🔇';
-    });
-
     // ── Init ──────────────────────────────────────────
     applyLang(lang);
-    updateDisplay();
 
   })();
   </script>
