@@ -617,7 +617,7 @@ function renderIntercessorContent(data) {
   if (data.novena && data.novena.length > 0) {
     const saved = parseInt(localStorage.getItem('novena_day_' + data.id), 10);
     if (saved >= 1 && saved <= 9) currentDay = saved;
-    renderNovenaDay(data, currentDay);
+    setNovenaDay(data, currentDay);
   }
 
   // Chaplet player
