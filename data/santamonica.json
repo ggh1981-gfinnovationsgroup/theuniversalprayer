@@ -5,7 +5,7 @@
     "en": "Saint Monica"
   },
   "color": "#1a3a6a",
-  "image": "assets/images/santamonica.svg",
+  "image": "/assets/images/santamonica.svg",
   "specialty": {
     "es": "Madres y conversión",
     "en": "Mothers & conversion"

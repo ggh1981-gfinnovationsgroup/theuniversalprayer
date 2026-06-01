@@ -5,7 +5,7 @@
     "en": "Saint Francis of Assisi"
   },
   "color": "#6b4226",
-  "image": "assets/images/sanfrancisco.svg",
+  "image": "/assets/images/sanfrancisco.svg",
   "specialty": {
     "es": "Paz y ecología",
     "en": "Peace & ecology"

@@ -5,7 +5,7 @@
     "en": "Saint Nicholas of Bari"
   },
   "color": "#1a3a8a",
-  "image": "assets/images/sannicolas.svg",
+  "image": "/assets/images/sannicolas.svg",
   "specialty": {
     "es": "Niños y generosidad",
     "en": "Children & generosity"

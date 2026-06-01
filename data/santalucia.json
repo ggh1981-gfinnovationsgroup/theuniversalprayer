@@ -5,7 +5,7 @@
     "en": "Saint Lucy of Syracuse"
   },
   "color": "#8a1a3a",
-  "image": "assets/images/santalucia.svg",
+  "image": "/assets/images/santalucia.svg",
   "specialty": {
     "es": "Vista y enfermos",
     "en": "Eyesight & the sick"

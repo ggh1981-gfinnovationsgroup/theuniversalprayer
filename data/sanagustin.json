@@ -5,7 +5,7 @@
     "en": "Saint Augustine of Hippo"
   },
   "color": "#5a3010",
-  "image": "assets/images/sanagustin.svg",
+  "image": "/assets/images/sanagustin.svg",
   "specialty": {
     "es": "Conversión y sabiduría",
     "en": "Conversion & wisdom"

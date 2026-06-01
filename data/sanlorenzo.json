@@ -5,7 +5,7 @@
     "en": "Saint Lawrence"
   },
   "color": "#8a4a00",
-  "image": "assets/images/sanlorenzo.svg",
+  "image": "/assets/images/sanlorenzo.svg",
   "specialty": {
     "es": "Pobres y libreros",
     "en": "Poor & librarians"

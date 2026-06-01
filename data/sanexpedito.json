@@ -5,7 +5,7 @@
     "en": "Saint Expeditus"
   },
   "color": "#8a2010",
-  "image": "assets/images/sanexpedito.svg",
+  "image": "/assets/images/sanexpedito.svg",
   "specialty": {
     "es": "Causas urgentes",
     "en": "Urgent causes"

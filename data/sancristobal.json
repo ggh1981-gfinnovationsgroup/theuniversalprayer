@@ -5,7 +5,7 @@
     "en": "Saint Christopher"
   },
   "color": "#1a5a3a",
-  "image": "assets/images/sancristobal.svg",
+  "image": "/assets/images/sancristobal.svg",
   "specialty": {
     "es": "Viajeros y conductores",
     "en": "Travelers & drivers"

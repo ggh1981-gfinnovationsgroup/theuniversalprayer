@@ -5,7 +5,7 @@
     "en": "Our Lady of Perpetual Help"
   },
   "color": "#1a3a7a",
-  "image": "assets/images/perpetuosocorro.svg",
+  "image": "/assets/images/perpetuosocorro.svg",
   "specialty": {
     "es": "Auxilio y esperanza",
     "en": "Help & hope"
