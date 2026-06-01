@@ -3010,3 +3010,98 @@ body {
   transition: opacity .2s;
 }
 .ador-33dias-btn:hover { opacity: .85; }
+
+/* ── Adoracion — live stream section ───────────────── */
+.ador-live-section {
+  background: #0a0e1c;
+  border-bottom: 1px solid rgba(201,168,76,.12);
+  padding: 1.25rem 1rem 1rem;
+  text-align: center;
+}
+.ador-live-badge-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  font-family: var(--font-sans);
+  font-size: .72rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: .85rem;
+}
+.ador-live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #e04040;
+  box-shadow: 0 0 6px #e04040;
+  animation: livePulse 1.5s ease-in-out infinite;
+}
+@keyframes livePulse {
+  0%,100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: .45; transform: scale(.85); }
+}
+.ador-live-label { color: var(--gold); }
+.ador-live-frame-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto .85rem;
+  padding-bottom: min(56.25%, 405px);
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid rgba(201,168,76,.25);
+  background: #000;
+}
+.ador-live-iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 0;
+}
+.ador-live-credit {
+  font-family: var(--font-sans);
+  font-size: .8rem;
+  color: rgba(255,255,255,.45);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.55;
+  padding: 0 .5rem;
+}
+.ador-live-credit-link {
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(201,168,76,.5);
+}
+.ador-live-credit-link:hover { border-bottom-color: var(--gold); }
+
+/* ── Adoracion — 33 días sección integrada ─────────── */
+.ador-33dias-section {
+  margin-top: 2.5rem;
+  border: 1px solid rgba(201,168,76,.22);
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(135deg,#12204a 0%,#0c1530 100%);
+}
+.ador-33dias-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1.75rem;
+  cursor: pointer;
+  user-select: none;
+}
+.ador-33dias-header:hover { background: rgba(201,168,76,.06); }
+.ador-33dias-header-left { flex: 1; }
+.ador-33dias-chevron {
+  font-size: 1rem;
+  color: var(--gold);
+  transition: transform .3s ease;
+  margin-left: 1rem;
+}
+.ador-33dias-chevron.open { transform: rotate(180deg); }
+.ador-33dias-body {
+  padding: 0 1.5rem 1.5rem;
+  border-top: 1px solid rgba(201,168,76,.12);
+}
