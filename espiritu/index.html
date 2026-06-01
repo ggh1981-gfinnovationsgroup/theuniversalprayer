@@ -115,12 +115,13 @@
       line-height: 1.65;
       margin: 0;
     }
-    .esp-charisms-text {
-      font-family: var(--font-sans);
-      font-size: 0.9rem;
-      color: rgba(255,255,255,0.7);
-      line-height: 1.8;
-      margin: 0;
+    .esp-charisms-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 560px) {
+      .esp-charisms-grid { grid-template-columns: 1fr; }
     }
     .esp-scripture {
       border-left: 3px solid rgba(201,168,76,0.45);
@@ -302,7 +303,7 @@ Amen.</p>
         <cite>— 1 Corinthians 12:7</cite>
       </blockquote>
 
-      <p class="esp-charisms-text" id="charismsText"></p>
+      <div class="esp-charisms-grid" id="charismsGrid"></div>
     </section>
 
     <!-- Oración de Cierre -->
@@ -354,11 +355,19 @@ Amen.</p>
     }
 
     function renderCharisms(charisms) {
-      const el = document.getElementById('charismsText');
-      el.innerHTML = `
-        <span data-lang="es">${charisms.es}</span>
-        <span data-lang="en" style="display:none">${charisms.en}</span>
-      `;
+      const grid = document.getElementById('charismsGrid');
+      grid.innerHTML = charisms.map(c => `
+        <div class="esp-gift-card">
+          <h3 class="esp-gift-name">
+            <span data-lang="es">${c.name.es}</span>
+            <span data-lang="en" style="display:none">${c.name.en}</span>
+          </h3>
+          <p class="esp-gift-desc">
+            <span data-lang="es">${c.desc.es}</span>
+            <span data-lang="en" style="display:none">${c.desc.en}</span>
+          </p>
+        </div>
+      `).join('');
     }
 
     function renderClosingPrayer(prayer) {

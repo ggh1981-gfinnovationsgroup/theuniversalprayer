@@ -64,10 +64,71 @@
       }
     }
   ],
-  "charisms": {
-    "es": "Además de los siete dones, el Espíritu Santo distribuye carimas para el bien de la Iglesia: la palabra de sabiduría, la palabra de conocimiento, la fe extraordinaria, los dones de sanación, el obrar milagros, la profecía, el discernimiento de espíritus, el don de lenguas y la interpretación de lenguas (cf. 1 Cor 12, 8-10). Todos estos dones y carismas tienen un solo origen y un solo fin: el amor que edifica el Cuerpo de Cristo.",
-    "en": "In addition to the seven gifts, the Holy Spirit distributes charisms for the good of the Church: the word of wisdom, the word of knowledge, extraordinary faith, gifts of healing, the working of miracles, prophecy, discernment of spirits, the gift of tongues and interpretation of tongues (cf. 1 Cor 12:8-10). All these gifts and charisms have a single origin and a single end: the love that builds up the Body of Christ."
-  },
+  "charisms": [
+    {
+      "name": { "es": "Palabra de Sabiduría", "en": "Word of Wisdom" },
+      "desc": {
+        "es": "El carisma de pronunciar, en el momento preciso, las palabras que iluminan la voluntad de Dios en una situación concreta. No es la sabiduría adquirida por el estudio, sino una revelación sobrenatural que el Espíritu concede para guiar, consolar o discernir lo que ninguna experiencia humana podría alcanzar por sí sola.",
+        "en": "The charism of speaking, at the precise moment, words that illuminate God's will in a specific situation. It is not wisdom acquired through study, but a supernatural revelation the Spirit grants to guide, console, or discern what no human experience alone could reach."
+      }
+    },
+    {
+      "name": { "es": "Palabra de Conocimiento", "en": "Word of Knowledge" },
+      "desc": {
+        "es": "El don de conocer, por revelación divina, hechos o realidades ocultas que el receptor no podría saber por medios naturales. Permite ministrar con precisión asombrosa lo que Dios ya conoce sobre la situación interior de otra persona: su herida, su pecado, su necesidad más profunda.",
+        "en": "The gift of knowing, through divine revelation, facts or hidden realities that the recipient could not know through natural means. It enables ministering with remarkable precision what God already knows about another person's interior situation: their wound, their sin, their deepest need."
+      }
+    },
+    {
+      "name": { "es": "Fe Extraordinaria", "en": "Gift of Faith" },
+      "desc": {
+        "es": "No la fe ordinaria de todo bautizado, sino una confianza sobrenatural e incondicional en el poder de Dios para actuar ahora mismo. Es la fe que mueve montañas, que ora con plena certeza sin dudar ante lo humanamente imposible, sabiendo que nada escapa al poder del Señor.",
+        "en": "Not the ordinary faith of every baptized person, but an unconditional supernatural trust in God's power to act right now. It is the faith that moves mountains, that prays with complete certainty without doubting before the humanly impossible, knowing that nothing lies beyond the Lord's power."
+      }
+    },
+    {
+      "name": { "es": "Dones de Sanación", "en": "Gifts of Healing" },
+      "desc": {
+        "es": "La capacidad de ser instrumento de la sanación divina — física, emocional y espiritual — sobre otros. San Pablo lo llama en plural porque el Espíritu distribuye estas gracias según su voluntad, para manifestar la compasión sanadora de Cristo que sigue actuando en su Iglesia.",
+        "en": "The capacity to be an instrument of divine healing — physical, emotional, and spiritual — over others. Paul names it in the plural because the Spirit distributes these graces according to His will, to manifest the healing compassion of Christ who continues acting in His Church."
+      }
+    },
+    {
+      "name": { "es": "Obrar Milagros", "en": "Working of Miracles" },
+      "desc": {
+        "es": "El poder de Dios actuando visiblemente a través de un creyente para intervenir más allá de las leyes naturales. Los milagros son señales del Reino que anuncian que Cristo ha vencido al pecado, a la enfermedad y a la muerte — y que esa victoria tiene consecuencias hoy.",
+        "en": "The power of God acting visibly through a believer to intervene beyond the laws of nature. Miracles are signs of the Kingdom announcing that Christ has conquered sin, sickness, and death — and that this victory has consequences today."
+      }
+    },
+    {
+      "name": { "es": "Profecía", "en": "Prophecy" },
+      "desc": {
+        "es": "El don de hablar de parte de Dios para edificar, consolar o exhortar a la comunidad. No es necesariamente predecir el futuro: es proclamar la Palabra viva del Señor que transforma el presente. San Pablo lo considera el mayor de los carismas porque construye directamente el Cuerpo de Cristo.",
+        "en": "The gift of speaking on God's behalf to build up, console, or exhort the community. It is not necessarily predicting the future: it is proclaiming the living Word of the Lord that transforms the present. Paul considers it the greatest charism because it directly builds up the Body of Christ."
+      }
+    },
+    {
+      "name": { "es": "Discernimiento de Espíritus", "en": "Discernment of Spirits" },
+      "desc": {
+        "es": "La capacidad sobrenatural de reconocer si un movimiento interior, una enseñanza o una manifestación espiritual procede del Espíritu Santo, del espíritu humano o del espíritu del mal. Es el carisma del centinela que cuida la autenticidad de la experiencia espiritual en la Iglesia.",
+        "en": "The supernatural capacity to recognize whether an interior movement, a teaching, or a spiritual manifestation comes from the Holy Spirit, from the human spirit, or from the spirit of evil. It is the charism of the sentinel who guards the authenticity of spiritual experience in the Church."
+      }
+    },
+    {
+      "name": { "es": "Don de Lenguas", "en": "Gift of Tongues" },
+      "desc": {
+        "es": "El don de orar o alabar en un lenguaje no aprendido, entregando al Espíritu la expresión de realidades que la mente no puede formular. San Pablo lo valora especialmente para la oración personal: es el espíritu que ora directamente a Dios más allá de las palabras, en profundidad inefable.",
+        "en": "The gift of praying or praising in an unlearned language, surrendering to the Spirit the expression of realities the mind cannot formulate. Paul values it especially for personal prayer: it is the spirit praying directly to God beyond words, in ineffable depth."
+      }
+    },
+    {
+      "name": { "es": "Interpretación de Lenguas", "en": "Interpretation of Tongues" },
+      "desc": {
+        "es": "El carisma complementario que traduce para la comunidad el contenido de lo expresado en lenguas, convirtiéndolo en edificación para todos. Sin él, el don de lenguas permanece en la oración privada; con él, se convierte en profecía que nutre y unifica al Cuerpo de Cristo.",
+        "en": "The complementary charism that renders for the community the content of what was expressed in tongues, turning it into edification for all. Without it, the gift of tongues remains in private prayer; with it, it becomes prophecy that nourishes and unifies the Body of Christ."
+      }
+    }
+  ],
   "closing_prayer": {
     "es": "Espíritu Santo, Señor y dador de vida:\nconcédeme los dones que necesito para cumplir Tu voluntad.\nDame sabiduría para conocerte,\nentendimiento para amarte,\nconsejo para seguirte,\nfortaleza para no abandonarte,\nciencia para encontrarte en todo,\npiedad para servirte con amor\ny temor santo para no ofenderte jamás.\n\nEnciende en mí el fuego de Tu amor.\nHaz de mí una morada digna de Tu presencia.\nAmén.",
     "en": "Holy Spirit, Lord and giver of life:\ngrant me the gifts I need to fulfill Your will.\nGive me wisdom to know You,\nunderstanding to love You,\ncounsel to follow You,\nfortitude never to forsake You,\nknowledge to find You in all things,\npiety to serve You with love,\nand holy fear never to offend You.\n\nKindle in me the fire of Your love.\nMake of me a dwelling worthy of Your presence.\nAmen."
