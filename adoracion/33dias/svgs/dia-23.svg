@@ -1,0 +1,45 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="d23rays" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#fffde8" stop-opacity="0.9"/>
+      <stop offset="30%" stop-color="#e8c97a" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#c9a84c" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Radiant glow behind monstrance -->
+  <circle cx="50" cy="45" r="50" fill="url(#d23rays)" opacity="0.8"/>
+  <!-- Rays emanating from center -->
+  <g transform="translate(50,45)" stroke="#e8c97a" stroke-linecap="round">
+    <line y1="-8" y2="-40" stroke-width="1.5" opacity="0.4"/>
+    <g transform="rotate(22.5)"> <line y1="-8" y2="-38" stroke-width="1.2" opacity="0.35"/></g>
+    <g transform="rotate(45)">  <line y1="-8" y2="-36" stroke-width="1.5" opacity="0.4"/></g>
+    <g transform="rotate(67.5)"><line y1="-8" y2="-34" stroke-width="1.2" opacity="0.35"/></g>
+    <g transform="rotate(90)">  <line y1="-8" y2="-38" stroke-width="1.5" opacity="0.4"/></g>
+    <g transform="rotate(112.5)"><line y1="-8" y2="-34" stroke-width="1.2" opacity="0.35"/></g>
+    <g transform="rotate(135)"><line y1="-8" y2="-36" stroke-width="1.5" opacity="0.4"/></g>
+    <g transform="rotate(157.5)"><line y1="-8" y2="-34" stroke-width="1.2" opacity="0.35"/></g>
+    <g transform="rotate(180)"><line y1="-8" y2="-40" stroke-width="1.5" opacity="0.4"/></g>
+    <g transform="rotate(202.5)"><line y1="-8" y2="-34" stroke-width="1.2" opacity="0.35"/></g>
+    <g transform="rotate(225)"><line y1="-8" y2="-36" stroke-width="1.5" opacity="0.4"/></g>
+    <g transform="rotate(247.5)"><line y1="-8" y2="-34" stroke-width="1.2" opacity="0.35"/></g>
+    <g transform="rotate(270)"><line y1="-8" y2="-38" stroke-width="1.5" opacity="0.4"/></g>
+    <g transform="rotate(292.5)"><line y1="-8" y2="-34" stroke-width="1.2" opacity="0.35"/></g>
+    <g transform="rotate(315)"><line y1="-8" y2="-36" stroke-width="1.5" opacity="0.4"/></g>
+    <g transform="rotate(337.5)"><line y1="-8" y2="-38" stroke-width="1.2" opacity="0.35"/></g>
+  </g>
+  <!-- Monstrance luna (circle holding host) -->
+  <circle cx="50" cy="45" r="11" fill="#1a0a00" stroke="#e8c97a" stroke-width="2.5" opacity="0.9"/>
+  <!-- Host inside -->
+  <circle cx="50" cy="45" r="8.5" fill="#fffde8" opacity="0.95"/>
+  <circle cx="50" cy="45" r="7"   fill="#e8c97a" opacity="0.4"/>
+  <!-- Cross on top -->
+  <line x1="50" y1="20" x2="50" y2="32" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+  <line x1="44" y1="25" x2="56" y2="25" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+  <!-- Stem and base -->
+  <line x1="50" y1="56" x2="50" y2="75" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+  <!-- Node on stem -->
+  <ellipse cx="50" cy="64" rx="5" ry="3" fill="#8a6e2f" stroke="#c9a84c" stroke-width="1" opacity="0.8"/>
+  <!-- Base -->
+  <path d="M38,80 Q50,75 62,80" fill="none" stroke="#c9a84c" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+</svg>
