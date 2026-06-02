@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="68%">
+      <stop offset="0%" stop-color="#e0ecd8"/>
+      <stop offset="55%" stop-color="#8ab870"/>
+      <stop offset="100%" stop-color="#1a3a18"/>
+    </radialGradient>
+    <radialGradient id="haloGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe8a0" stop-opacity="0.92"/>
+      <stop offset="68%" stop-color="#b8c830" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#b8c830" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="600" fill="url(#bgGrad)"/>
+
+  <!-- Subtle nordic/celtic interlace border motif (simplified) -->
+  <rect x="20" y="20" width="360" height="500" rx="12" fill="none" stroke="#c8a060" stroke-width="1.2" opacity="0.3"/>
+  <rect x="26" y="26" width="348" height="488" rx="10" fill="none" stroke="#c8a060" stroke-width="0.6" opacity="0.2"/>
+
+  <!-- Halo -->
+  <ellipse cx="200" cy="152" rx="60" ry="60" fill="url(#haloGrad)"/>
+  <circle cx="200" cy="152" r="54" fill="none" stroke="#c8a030" stroke-width="1.8" opacity="0.65"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="154" rx="30" ry="34" fill="#f0d0a0"/>
+
+  <!-- Short hair (dark) -->
+  <path d="M 172 142 Q 175 118 200 112 Q 225 118 228 142 Q 222 130 200 128 Q 178 130 172 142 Z" fill="#3a2808"/>
+  <!-- Ear hints -->
+  <ellipse cx="170" cy="158" rx="5" ry="7" fill="#e8c898"/>
+  <ellipse cx="230" cy="158" rx="5" ry="7" fill="#e8c898"/>
+
+  <!-- Priest collar (white band) -->
+  <rect x="184" y="202" width="32" height="12" rx="3" fill="#f0ece8"/>
+  <!-- Dark clerical shirt -->
+  <rect x="170" y="210" width="60" height="20" rx="4" fill="#2a2a2a"/>
+
+  <!-- Cassock / dark robe body -->
+  <path d="M 158 225 Q 142 280 136 390 Q 160 400 200 402 Q 240 400 264 390 Q 258 280 242 225 Q 222 238 200 238 Q 178 238 158 225 Z"
+        fill="#2a2830"/>
+  <!-- Cassock highlight -->
+  <path d="M 172 228 Q 156 285 150 375 Q 172 385 200 386 Q 186 295 180 238 Z"
+        fill="#3a3840" opacity="0.5"/>
+  <!-- Cassock fold -->
+  <path d="M 228 228 Q 244 285 250 375 Q 228 385 200 386 Q 214 295 220 238 Z"
+        fill="#1a1828" opacity="0.5"/>
+
+  <!-- Stole (purple/violet — liturgical) -->
+  <path d="M 192 224 L 188 390" stroke="#6040a0" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
+  <path d="M 208 224 L 212 390" stroke="#6040a0" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
+  <!-- Stole cross embroidery -->
+  <rect x="186" y="270" width="10" height="2" rx="1" fill="#c8a0e0"/>
+  <rect x="189" y="267" width="4" height="8" rx="1" fill="#c8a0e0"/>
+  <rect x="207" y="270" width="10" height="2" rx="1" fill="#c8a0e0"/>
+  <rect x="210" y="267" width="4" height="8" rx="1" fill="#c8a0e0"/>
+
+  <!-- Open Bible in hands -->
+  <!-- Left arm -->
+  <path d="M 158 252 Q 128 270 118 318 Q 128 326 140 320 Q 146 285 158 268 Z" fill="#2a2830"/>
+  <!-- Right arm -->
+  <path d="M 242 252 Q 272 270 282 318 Q 272 326 260 320 Q 254 285 242 268 Z" fill="#2a2830"/>
+  <!-- Hands -->
+  <ellipse cx="124" cy="322" rx="14" ry="10" fill="#e8c080"/>
+  <ellipse cx="276" cy="322" rx="14" ry="10" fill="#e8c080"/>
+  <!-- Bible pages (open book) -->
+  <path d="M 130 310 Q 165 298 200 300 Q 235 298 270 310 L 268 340 Q 232 330 200 332 Q 168 330 132 340 Z"
+        fill="#f8f0e0"/>
+  <!-- Bible left page lines -->
+  <line x1="140" y1="316" x2="196" y2="312" stroke="#8a7040" stroke-width="1" opacity="0.5"/>
+  <line x1="140" y1="322" x2="196" y2="318" stroke="#8a7040" stroke-width="1" opacity="0.5"/>
+  <line x1="140" y1="328" x2="196" y2="324" stroke="#8a7040" stroke-width="1" opacity="0.5"/>
+  <!-- Bible right page lines -->
+  <line x1="204" y1="312" x2="260" y2="316" stroke="#8a7040" stroke-width="1" opacity="0.5"/>
+  <line x1="204" y1="318" x2="260" y2="322" stroke="#8a7040" stroke-width="1" opacity="0.5"/>
+  <line x1="204" y1="324" x2="260" y2="328" stroke="#8a7040" stroke-width="1" opacity="0.5"/>
+  <!-- Bible spine -->
+  <line x1="200" y1="300" x2="200" y2="332" stroke="#8a7040" stroke-width="2"/>
+  <!-- Bible cover (dark) -->
+  <path d="M 130 340 Q 165 335 200 337 Q 235 335 270 340 L 270 346 Q 235 342 200 344 Q 165 342 130 346 Z"
+        fill="#4a3820"/>
+
+  <!-- Small nordic cross emblem on chest -->
+  <rect x="196" y="248" width="8" height="22" rx="2" fill="#c8a030" opacity="0.8"/>
+  <rect x="190" y="256" width="20" height="7" rx="2" fill="#c8a030" opacity="0.8"/>
+
+  <!-- Stars (northern sky motif) -->
+  <g fill="#d4e070" opacity="0.6">
+    <circle cx="58" cy="68" r="3"/>
+    <circle cx="72" cy="52" r="2"/>
+    <circle cx="88" cy="70" r="2.5"/>
+    <circle cx="320" cy="60" r="2.5"/>
+    <circle cx="340" cy="78" r="2"/>
+    <circle cx="308" cy="82" r="3"/>
+  </g>
+
+  <!-- Name panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#1a2a18" opacity="0.90"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a030" letter-spacing="3" opacity="0.95">SAN GUSTAVO  ·  SAINT GUSTAVO</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#d8e890" font-style="italic">«Llamado por tu nombre»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#c8d870" font-style="italic" opacity="0.8">«Called by your name»</text>
+</svg>
