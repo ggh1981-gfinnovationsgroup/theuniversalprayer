@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="sc-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#0e0a16"/><stop offset="100%" stop-color="#04020a"/>
+    </radialGradient>
+    <radialGradient id="sc-atm" cx="50%" cy="40%" r="48%">
+      <stop offset="0%" stop-color="#c01830" stop-opacity="0.20"/><stop offset="100%" stop-color="#c01830" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sc-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#c01830" stop-opacity="1"/><stop offset="100%" stop-color="#6a0818" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="sc-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f0d060" stop-opacity="1"/><stop offset="100%" stop-color="#c09030" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="sc-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sc-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#sc-bg)"/>
+  <rect width="400" height="600" fill="url(#sc-atm)"/>
+  <!-- Rays: red left, gold right -->
+  <polygon points="198,268 -25,610 115,610" fill="url(#sc-r1)" filter="url(#sc-gl)" opacity="0.68"/>
+  <polygon points="198,268 15,600 80,600" fill="#c01830" opacity="0.32"/>
+  <polygon points="202,268 425,610 288,610" fill="url(#sc-r2)" filter="url(#sc-gl)" opacity="0.65"/>
+  <polygon points="202,268 375,600 318,600" fill="#f0d060" opacity="0.30"/>
+  <!-- Black habit body (Camillian) -->
+  <path d="M162,158 Q134,208 120,398 Q200,425 280,398 Q266,208 238,158 Z" fill="#161616" opacity="0.96"/>
+  <!-- RED CROSS on chest — the Camillian symbol -->
+  <rect x="185" y="220" width="30" height="8" rx="2" fill="#cc0000" opacity="0.92"/>
+  <rect x="196" y="209" width="8" height="30" rx="2" fill="#cc0000" opacity="0.92"/>
+  <!-- White collar -->
+  <path d="M183,160 Q200,172 217,160 Q212,178 200,181 Q188,178 183,160 Z" fill="#e8e0d0" opacity="0.55"/>
+  <!-- Shoulders/hood dark -->
+  <path d="M162,158 Q140,168 132,195 L160,178 Z" fill="#101010" opacity="0.9"/>
+  <path d="M238,158 Q260,168 268,195 L240,178 Z" fill="#101010" opacity="0.9"/>
+  <!-- Arms open, hands toward bed/patient (left arm lower, reaching) -->
+  <path d="M138,222 Q108,270 100,320" stroke="#161616" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.92"/>
+  <path d="M262,222 Q292,265 298,305" stroke="#161616" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.92"/>
+  <!-- Hands open, palms forward (caring gesture) -->
+  <ellipse cx="99" cy="326" rx="13" ry="17" fill="#c08a60" opacity="0.88"/>
+  <ellipse cx="299" cy="311" rx="13" ry="15" fill="#c08a60" opacity="0.88"/>
+  <!-- Neck -->
+  <rect x="193" y="142" width="14" height="18" rx="4" fill="#c08a60" opacity="0.9"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="108" rx="27" ry="31" fill="#c08a60" opacity="0.92"/>
+  <!-- Short dark hair, receding (mature man) -->
+  <path d="M174,108 Q176,76 200,72 Q224,76 226,108 Q220,88 200,86 Q180,88 174,108 Z" fill="#2a2018" opacity="0.75"/>
+  <!-- Short beard -->
+  <path d="M184,128 Q186,148 200,154 Q214,148 216,128 Q208,143 200,145 Q192,143 184,128 Z" fill="#2a2018" opacity="0.60"/>
+  <!-- Eyes — forward, compassionate -->
+  <ellipse cx="190" cy="108" rx="5" ry="4" fill="#1a1008" opacity="0.85"/>
+  <ellipse cx="210" cy="108" rx="5" ry="4" fill="#1a1008" opacity="0.85"/>
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#sc-g2)"/>
+  <circle cx="200" cy="108" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.20"/>
+  <!-- Sick patient suggestion — a bed/mat at the bottom -->
+  <rect x="80" y="440" width="240" height="12" rx="6" fill="#2a2a2a" opacity="0.5"/>
+  <ellipse cx="200" cy="440" rx="60" ry="8" fill="#3a2a1a" opacity="0.3"/>
+  <!-- Feet / sandals -->
+  <ellipse cx="182" cy="408" rx="14" ry="6" fill="#6a4828" opacity="0.55"/>
+  <ellipse cx="218" cy="408" rx="14" ry="6" fill="#6a4828" opacity="0.55"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c01830" stroke-width="1.2" stroke-opacity="0.45"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a030" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Name panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#04020a" opacity="0.88"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c01830" letter-spacing="3" opacity="0.95">SAN CAMILO DE LELIS  ·  SAINT CAMILLUS DE LELLIS</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#f0c0c0" font-style="italic">«San Camilo de Lelis»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#d09090" font-style="italic" opacity="0.8">«Saint Camillus de Lellis»</text>
+</svg>
