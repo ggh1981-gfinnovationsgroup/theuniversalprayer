@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <radialGradient id="skysim" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#0a1a2a"/>
+      <stop offset="55%" stop-color="#060e1a"/>
+      <stop offset="100%" stop-color="#020810"/>
+    </radialGradient>
+    <radialGradient id="glorysim" cx="50%" cy="42%" r="32%">
+      <stop offset="0%" stop-color="#3060a0" stop-opacity="0.28"/>
+      <stop offset="60%" stop-color="#1a3a6a" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#0a1a2a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="halosim" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c0d8f0"/>
+      <stop offset="60%" stop-color="#7ab0e0"/>
+      <stop offset="100%" stop-color="#3060a0"/>
+    </radialGradient>
+    <radialGradient id="facesim" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#e8c8a8"/>
+      <stop offset="100%" stop-color="#c8a070"/>
+    </radialGradient>
+    <linearGradient id="habitsim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a3a5a"/>
+      <stop offset="100%" stop-color="#0a1828"/>
+    </linearGradient>
+    <linearGradient id="cloaksim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a5a8a"/>
+      <stop offset="100%" stop-color="#1a2a4a"/>
+    </linearGradient>
+    <linearGradient id="panelsim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a1828"/>
+      <stop offset="100%" stop-color="#020810"/>
+    </linearGradient>
+    <linearGradient id="seagrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a3a6a"/>
+      <stop offset="100%" stop-color="#0a1a30"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background — Atlantic night sky -->
+  <rect width="400" height="600" fill="url(#skysim)"/>
+  <circle cx="200" cy="250" r="130" fill="url(#glorysim)"/>
+
+  <!-- Sea horizon (Wales / Irish Sea) -->
+  <path d="M0 430 Q80 420 160 428 Q240 436 320 424 Q370 418 400 425 L400 520 L0 520 Z" fill="url(#seagrad)" opacity="0.4"/>
+  <!-- Sea waves suggestion -->
+  <path d="M0 445 Q50 440 100 447 Q150 454 200 448 Q250 442 300 448 Q350 454 400 448" stroke="#3060a0" stroke-width="1" fill="none" opacity="0.3"/>
+  <path d="M0 458 Q60 453 120 460 Q180 467 240 460 Q300 453 360 460 Q380 463 400 460" stroke="#3060a0" stroke-width="1" fill="none" opacity="0.2"/>
+
+  <!-- Celtic knotwork hint — background watermark -->
+  <g opacity="0.06" transform="translate(200,310)">
+    <!-- Simple Celtic knot suggestion -->
+    <circle r="50" fill="none" stroke="#7ab0e0" stroke-width="2"/>
+    <circle r="35" fill="none" stroke="#7ab0e0" stroke-width="1.5"/>
+    <line x1="-50" y1="0" x2="50" y2="0" stroke="#7ab0e0" stroke-width="1.5"/>
+    <line x1="0" y1="-50" x2="0" y2="50" stroke="#7ab0e0" stroke-width="1.5"/>
+    <line x1="-35" y1="-35" x2="35" y2="35" stroke="#7ab0e0" stroke-width="1"/>
+    <line x1="35" y1="-35" x2="-35" y2="35" stroke="#7ab0e0" stroke-width="1"/>
+  </g>
+
+  <!-- Stars -->
+  <circle cx="50" cy="30" r="1.5" fill="#c0d8f0" opacity="0.9"/>
+  <circle cx="115" cy="18" r="1" fill="#c0d8f0" opacity="0.8"/>
+  <circle cx="195" cy="10" r="1.5" fill="#c0d8f0" opacity="0.9"/>
+  <circle cx="275" cy="22" r="1" fill="#c0d8f0" opacity="0.8"/>
+  <circle cx="355" cy="40" r="1.5" fill="#c0d8f0" opacity="0.8"/>
+  <circle cx="35" cy="80" r="1" fill="#c0d8f0" opacity="0.6"/>
+  <circle cx="375" cy="95" r="1" fill="#c0d8f0" opacity="0.6"/>
+  <circle cx="85" cy="115" r="0.8" fill="#c0d8f0" opacity="0.5"/>
+  <circle cx="330" cy="75" r="0.8" fill="#c0d8f0" opacity="0.5"/>
+
+  <!-- Halo with Celtic cross pattern -->
+  <circle cx="200" cy="145" r="55" fill="url(#halosim)" opacity="0.88"/>
+  <circle cx="200" cy="145" r="50" fill="none" stroke="#c0d8f0" stroke-width="2" opacity="0.6"/>
+  <!-- Celtic cross in halo -->
+  <line x1="200" y1="97" x2="200" y2="193" stroke="#c0d8f0" stroke-width="2" opacity="0.4"/>
+  <line x1="152" y1="145" x2="248" y2="145" stroke="#c0d8f0" stroke-width="2" opacity="0.4"/>
+  <circle cx="200" cy="145" r="20" fill="none" stroke="#c0d8f0" stroke-width="1.5" opacity="0.35"/>
+
+  <!-- Bishop's mitre (Celtic style — simple, pointed) -->
+  <!-- Mitre base -->
+  <path d="M168 88 Q200 65 232 88 L235 102 L165 102 Z" fill="#3060a0"/>
+  <!-- Mitre peak splits -->
+  <path d="M168 88 Q183 68 200 58" stroke="#3060a0" stroke-width="3" fill="none"/>
+  <path d="M232 88 Q217 68 200 58" stroke="#3060a0" stroke-width="3" fill="none"/>
+  <!-- Left peak -->
+  <path d="M163 100 Q170 75 178 60 L185 62 Q177 77 170 102 Z" fill="#4070b0"/>
+  <!-- Right peak -->
+  <path d="M237 100 Q230 75 222 60 L215 62 Q223 77 230 102 Z" fill="#4070b0"/>
+  <!-- Cross on mitre -->
+  <line x1="200" y1="58" x2="200" y2="88" stroke="#c0d8f0" stroke-width="2"/>
+  <line x1="192" y1="73" x2="208" y2="73" stroke="#c0d8f0" stroke-width="2"/>
+  <!-- Mitre band -->
+  <rect x="163" y="100" width="74" height="6" rx="2" fill="#5080c0"/>
+  <!-- Lappets (ribbons hanging from mitre) -->
+  <path d="M168 106 Q163 120 167 135" stroke="#3060a0" stroke-width="4" fill="none"/>
+  <path d="M232 106 Q237 120 233 135" stroke="#3060a0" stroke-width="4" fill="none"/>
+
+  <!-- Face -->
+  <ellipse cx="200" cy="158" rx="33" ry="38" fill="url(#facesim)"/>
+
+  <!-- Tonsure and hair hint -->
+  <path d="M175 128 Q200 120 225 128" stroke="#8a6040" stroke-width="2" fill="none" opacity="0.4"/>
+
+  <!-- Eyes — Celtic, attentive -->
+  <ellipse cx="188" cy="152" rx="5" ry="4" fill="#1a2840"/>
+  <ellipse cx="212" cy="152" rx="5" ry="4" fill="#1a2840"/>
+  <circle cx="189" cy="151" r="1.5" fill="#fff" opacity="0.55"/>
+  <circle cx="213" cy="151" r="1.5" fill="#fff" opacity="0.55"/>
+  <!-- Eyebrows -->
+  <path d="M182 145 Q188 142 194 145" stroke="#2a1810" stroke-width="2" fill="none"/>
+  <path d="M206 145 Q212 142 218 145" stroke="#2a1810" stroke-width="2" fill="none"/>
+  <!-- Nose -->
+  <path d="M198 157 Q196 166 198 170 Q200 172 202 170 Q204 166 202 157" fill="#c8a070" opacity="0.4"/>
+  <!-- Mouth -->
+  <path d="M191 177 Q200 181 209 177" stroke="#a07858" stroke-width="1.5" fill="none"/>
+  <!-- Short beard -->
+  <path d="M176 174 Q180 195 200 205 Q220 195 224 174" fill="#4a2810" opacity="0.5"/>
+
+  <!-- Monastic habit (dark blue/navy — Celtic monk) -->
+  <path d="M140 225 Q160 213 200 210 Q240 213 260 225 L268 385 Q200 400 132 385 Z" fill="url(#habitsim)"/>
+  <!-- Cloak over shoulders -->
+  <path d="M108 238 Q130 220 162 213 L158 368 Q118 378 104 348 Z" fill="url(#cloaksim)"/>
+  <path d="M292 238 Q270 220 238 213 L242 368 Q282 378 296 348 Z" fill="url(#cloaksim)"/>
+  <!-- Cloak trim (white/cream — Celtic) -->
+  <path d="M108 238 Q130 220 162 213" stroke="#c0d8f0" stroke-width="2" fill="none"/>
+  <path d="M292 238 Q270 220 238 213" stroke="#c0d8f0" stroke-width="2" fill="none"/>
+
+  <!-- Pectoral cross -->
+  <line x1="200" y1="255" x2="200" y2="295" stroke="#c0d8f0" stroke-width="3"/>
+  <line x1="186" y1="268" x2="214" y2="268" stroke="#c0d8f0" stroke-width="3"/>
+  <!-- Cross gem center -->
+  <circle cx="200" cy="268" r="4" fill="#7ab0e0"/>
+
+  <!-- Crozier (bishop's staff — Celtic style, simple curve) -->
+  <g transform="translate(250, 215)">
+    <!-- Staff -->
+    <line x1="30" y1="260" x2="30" y2="35" stroke="#6a4020" stroke-width="5"/>
+    <!-- Crook -->
+    <path d="M30 35 Q30 5 55 5 Q75 5 75 25 Q75 45 55 48 Q40 50 32 40" stroke="#6a4020" stroke-width="5" fill="none"/>
+    <!-- Tip -->
+    <circle cx="55" cy="5" r="5" fill="#6a4020"/>
+    <!-- Celtic interlace on crook (simple suggestion) -->
+    <path d="M38 25 Q45 18 55 22 Q65 26 60 35 Q55 44 45 42" stroke="#c0d8f0" stroke-width="1.5" fill="none" opacity="0.5"/>
+  </g>
+
+  <!-- Gospel book (left hand) -->
+  <g transform="translate(100, 278)">
+    <rect x="0" y="0" width="45" height="58" rx="3" fill="#3060a0"/>
+    <rect x="2" y="2" width="41" height="54" rx="2" fill="#4070b0"/>
+    <!-- Cross on cover -->
+    <line x1="22" y1="10" x2="22" y2="46" stroke="#c0d8f0" stroke-width="2"/>
+    <line x1="10" y1="28" x2="34" y2="28" stroke="#c0d8f0" stroke-width="2"/>
+    <!-- Celtic circle on cross -->
+    <circle cx="22" cy="28" r="8" fill="none" stroke="#c0d8f0" stroke-width="1.5"/>
+    <!-- Book clasp -->
+    <rect x="40" y="22" width="8" height="14" rx="2" fill="#5a3a10"/>
+  </g>
+
+  <!-- Lower habit -->
+  <path d="M158 372 L152 510 L178 510 L200 432 L222 510 L248 510 L242 372 Z" fill="#0a1828"/>
+  <!-- Habit folds -->
+  <line x1="172" y1="372" x2="168" y2="432" stroke="#1a2840" stroke-width="1" opacity="0.5"/>
+  <line x1="200" y1="372" x2="200" y2="440" stroke="#1a2840" stroke-width="1" opacity="0.5"/>
+  <line x1="228" y1="372" x2="232" y2="432" stroke="#1a2840" stroke-width="1" opacity="0.5"/>
+
+  <!-- Ground / coastal stone -->
+  <rect x="0" y="510" width="400" height="90" fill="#060e18" opacity="0.8"/>
+  <line x1="0" y1="520" x2="400" y2="520" stroke="#1a2840" stroke-width="1" opacity="0.4"/>
+  <!-- Stone texture -->
+  <path d="M0 525 Q40 522 80 526 Q120 530 160 525 Q200 520 240 525 Q280 530 320 525 Q360 520 400 524" stroke="#1a2840" stroke-width="1" fill="none" opacity="0.3"/>
+
+  <!-- Name panel (bilingual, required) -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="url(#panelsim)" opacity="0.93"/>
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="none" stroke="#7ab0e0" stroke-width="1" opacity="0.5"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a030" letter-spacing="3" opacity="0.95">SAN ISMAEL  ·  SAINT ISHMAEL</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#c0d8f0" font-style="italic">«De Gales, obispo céltico»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#7ab0e0" font-style="italic" opacity="0.85">«Of Wales, Celtic bishop»</text>
+</svg>
