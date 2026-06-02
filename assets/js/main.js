@@ -157,6 +157,7 @@ const INTERCESSORS = [
   { id: 'santaroxana',       subdomain: 'santaroxana',       chaplet: false, novena: true,  color: '#7a4800', short: { es: 'Sta. Roxana',    en: 'St. Roxana'       }, name: { en: 'Saint Roxana of Persia',                es: 'Santa Roxana de Persia'                   }, specialty: { es: 'Mártir persa, estrella brillante', en: 'Persian martyr, bright star' } },
   { id: 'santagwendolina',   subdomain: 'santagwendolina',   chaplet: false, novena: true,  color: '#1a5a3a', short: { es: 'Sta. Gwendolina', en: 'St. Gwendoline'   }, name: { en: 'Saint Gwendoline',                      es: 'Santa Gwendolina'                         }, specialty: { es: 'Mártir galesa, pureza y fe celta', en: 'Welsh martyr, Celtic faith and purity' } },
   { id: 'santanoemi',        subdomain: 'santanoemi',        chaplet: false, novena: true,  color: '#5a3800', short: { es: 'Sta. Noemí',     en: 'St. Naomi'        }, name: { en: 'Saint Naomi',                           es: 'Santa Noemí'                              }, specialty: { es: 'Matrona bíblica del Libro de Rut', en: 'Biblical matriarch from the Book of Ruth' } },
+  { id: 'sanperegrino',      subdomain: 'sanperegrino',      chaplet: false, novena: true,  color: '#8a1a3a', short: { es: 'San Peregrino',   en: 'St. Peregrine'    }, name: { en: 'Saint Peregrine Laziosi',               es: 'San Peregrino Laziosi'                    }, specialty: { es: 'Enfermos de cáncer',          en: 'Cancer patients'             } },
 ];
 
 // ── KEYWORD MAP — synonyms for prayer-intent search ──────
@@ -209,6 +210,7 @@ const KEYWORD_MAP = {
   santaroxana:       'roxana roshanak persia iran martir martyr nombre name fe courage valentia valentía estrella star oriente east convertida converted',
   santagwendolina:   'gwendolina wendy gwen gwyneth gales wales celta celtic martir martyr nombre name fe faith pureza purity virginidad virginity',
   santanoemi:        'noemi naomi rut ruth biblia bible viuda widow fidelidad faithfulness familia family suegra mother-in-law esperanza hope providencia providence regreso return tierra prometida promised land',
+  sanperegrino:      'peregrino laziosi cancer cancro tumor oncologia oncology quimioterapia chemotherapy quimio chemo radioterapia radiotherapy radiation leucemia leukemia linfoma lymphoma melanoma sarcoma metastasis carcinoma enfermedad grave serious illness enfermedad incurable incurable disease amputacion amputation cirugia surgery operacion operation hospitalizacion hospitalization diagnostico diagnosis biopsia biopsy estadio stage tratamiento treatment curación curacion milagro miracle sanacion healing pierna leg hueso bone siervos de maria servants of mary forli italy santo de los enfermos saint of the sick patron cancer patron esperanza hope enfermos terminales terminal patients dolor pain sufrimiento suffering miedo fear angustia anxiety fe faith confianza trust entrega surrender',
 };
 
 // ── STATE ──────────────────────────────────────────

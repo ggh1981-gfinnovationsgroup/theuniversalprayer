@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="sp-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#1a0a0e"/><stop offset="100%" stop-color="#060206"/>
+    </radialGradient>
+    <radialGradient id="sp-atm" cx="50%" cy="42%" r="48%">
+      <stop offset="0%" stop-color="#8a1a3a" stop-opacity="0.22"/><stop offset="100%" stop-color="#8a1a3a" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Healing glow on leg -->
+    <radialGradient id="sp-heal" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/><stop offset="60%" stop-color="#f5d070" stop-opacity="0.5"/><stop offset="100%" stop-color="#f5d070" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sp-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#c03050" stop-opacity="1"/><stop offset="100%" stop-color="#6a0818" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="sp-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f5d070" stop-opacity="1"/><stop offset="100%" stop-color="#c9a030" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="sp-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sp-g2"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sp-glow"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#sp-bg)"/>
+  <rect width="400" height="600" fill="url(#sp-atm)"/>
+  <!-- Rays: crimson left, gold right -->
+  <polygon points="198,270 -25,610 115,610" fill="url(#sp-r1)" filter="url(#sp-gl)" opacity="0.70"/>
+  <polygon points="198,270 20,600 80,600" fill="#c03050" opacity="0.35"/>
+  <polygon points="202,270 425,610 285,610" fill="url(#sp-r2)" filter="url(#sp-gl)" opacity="0.68"/>
+  <polygon points="202,270 375,600 318,600" fill="#f5d070" opacity="0.32"/>
+  <!-- Healing divine light on lower right — from Christ's hand -->
+  <ellipse cx="255" cy="420" rx="60" ry="55" fill="url(#sp-heal)" filter="url(#sp-glow)" opacity="0.85"/>
+  <!-- Servite black habit body -->
+  <path d="M164,158 Q136,208 122,400 Q200,428 278,400 Q264,208 236,158 Z" fill="#1a1a1a" opacity="0.95"/>
+  <!-- White collar detail -->
+  <path d="M185,158 Q200,170 215,158 Q210,175 200,178 Q190,175 185,158 Z" fill="#e8e0d0" opacity="0.55"/>
+  <!-- Black hood/scapular on shoulders -->
+  <path d="M164,158 Q144,168 136,192 L162,178 Z" fill="#121212" opacity="0.9"/>
+  <path d="M236,158 Q256,168 264,192 L238,178 Z" fill="#121212" opacity="0.9"/>
+  <!-- Arms reaching down/forward in prayer posture -->
+  <path d="M140,220 Q116,265 112,312" stroke="#1a1a1a" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.92"/>
+  <path d="M260,220 Q284,265 288,312" stroke="#1a1a1a" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.92"/>
+  <!-- Hands joined in prayer -->
+  <ellipse cx="200" cy="318" rx="20" ry="10" fill="#c8956a" opacity="0.88"/>
+  <path d="M186,312 Q200,306 214,312 L210,326 Q200,330 190,326 Z" fill="#c8956a" opacity="0.88"/>
+  <!-- Neck -->
+  <rect x="193" y="142" width="14" height="18" rx="4" fill="#c8956a" opacity="0.9"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="108" rx="27" ry="32" fill="#c8956a" opacity="0.92"/>
+  <!-- Hair and tonsure (medieval monk style) -->
+  <path d="M174,108 Q176,70 200,66 Q224,70 226,108 Q220,86 200,84 Q180,86 174,108 Z" fill="#4a3828" opacity="0.80"/>
+  <!-- Tonsure circle top of head -->
+  <circle cx="200" cy="78" r="12" fill="#c8956a" opacity="0.7"/>
+  <!-- Beard -->
+  <path d="M184,130 Q186,152 200,158 Q214,152 216,130 Q208,146 200,148 Q192,146 184,130 Z" fill="#4a3828" opacity="0.65"/>
+  <!-- Eyes (downcast in prayer/contemplation) -->
+  <ellipse cx="190" cy="108" rx="5" ry="3.5" fill="#2a1a10" opacity="0.8"/>
+  <ellipse cx="210" cy="108" rx="5" ry="3.5" fill="#2a1a10" opacity="0.8"/>
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="54" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#sp-g2)"/>
+  <circle cx="200" cy="108" r="48" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.20"/>
+  <!-- Healed right leg — illuminated with golden light -->
+  <path d="M222,395 Q230,420 232,460 Q238,470 242,490 L252,490 Q250,468 246,456 Q244,418 238,392 Z" fill="#2a2a2a" opacity="0.85"/>
+  <!-- Healing glow over right leg -->
+  <ellipse cx="240" cy="445" rx="22" ry="40" fill="#f5d070" opacity="0.25" filter="url(#sp-g2)"/>
+  <!-- Left leg -->
+  <path d="M178,395 Q170,420 168,460 Q162,470 158,490 L148,490 Q150,468 154,456 Q156,418 162,392 Z" fill="#1a1a1a" opacity="0.88"/>
+  <!-- Sandaled feet -->
+  <ellipse cx="199" cy="494" rx="24" ry="8" fill="#8a6040" opacity="0.6"/>
+  <ellipse cx="242" cy="494" rx="18" ry="7" fill="#c8a060" opacity="0.7"/>
+  <!-- Subtle cross detail on habit chest -->
+  <line x1="200" y1="220" x2="200" y2="280" stroke="#3a3a3a" stroke-width="3" opacity="0.5"/>
+  <line x1="182" y1="245" x2="218" y2="245" stroke="#3a3a3a" stroke-width="3" opacity="0.5"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a030" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a030" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Name panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#060206" opacity="0.88"/>
+  <text x="200" y="556" font-family="Georgia, serif" font-size="17" fill="#e8d0a0" text-anchor="middle" font-weight="bold">San Peregrino Laziosi</text>
+  <text x="200" y="578" font-family="Georgia, serif" font-size="12" fill="#c8a060" text-anchor="middle">Patrón de los enfermos de cáncer</text>
+</svg>
