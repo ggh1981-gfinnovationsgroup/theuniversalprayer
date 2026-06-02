@@ -1,102 +1,70 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
   <defs>
-    <radialGradient id="bgGrad" cx="50%" cy="35%" r="70%">
-      <stop offset="0%" stop-color="#d0c0a0"/>
-      <stop offset="55%" stop-color="#a08060"/>
-      <stop offset="100%" stop-color="#3a1010"/>
+    <radialGradient id="sj-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#1a0404"/><stop offset="100%" stop-color="#080102"/>
     </radialGradient>
-    <radialGradient id="haloGrad" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ffe8a0" stop-opacity="0.9"/>
-      <stop offset="65%" stop-color="#c88820" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#c88820" stop-opacity="0"/>
+    <radialGradient id="sj-atm" cx="50%" cy="38%" r="46%">
+      <stop offset="0%" stop-color="#8a1a1a" stop-opacity="0.28"/><stop offset="100%" stop-color="#8a1a1a" stop-opacity="0"/>
     </radialGradient>
-    <filter id="metalSheen" x="-5%" y="-5%" width="110%" height="110%">
-      <feGaussianBlur stdDeviation="1.5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <linearGradient id="sj-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#cc2020" stop-opacity="1"/><stop offset="100%" stop-color="#6a0808" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="sj-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f5e060" stop-opacity="1"/><stop offset="100%" stop-color="#c9a84c" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="sj-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sj-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
-
-  <!-- Background -->
-  <rect width="400" height="600" fill="url(#bgGrad)"/>
-
-  <!-- Ground / dragon area -->
-  <ellipse cx="200" cy="490" rx="160" ry="30" fill="#2a1008" opacity="0.5"/>
-
+  <rect width="400" height="600" fill="url(#sj-bg)"/>
+  <rect width="400" height="600" fill="url(#sj-atm)"/>
+  <!-- Rays: crimson left, gold right -->
+  <polygon points="198,268 -25,610 115,610" fill="url(#sj-r1)" filter="url(#sj-gl)" opacity="0.72"/>
+  <polygon points="198,268 20,600  85,600"  fill="#cc2020" opacity="0.38"/>
+  <polygon points="202,268 425,610 285,610" fill="url(#sj-r2)" filter="url(#sj-gl)" opacity="0.70"/>
+  <polygon points="202,268 375,600 315,600" fill="#f5e060" opacity="0.34"/>
+  <!-- White surcoat over chain mail -->
+  <path d="M168,158 Q140,205 126,395 Q200,418 274,395 Q260,205 232,158 Z" fill="#e8e4dc" opacity="0.90"/>
+  <!-- Red cross on surcoat (George's Cross) -->
+  <rect x="192" y="200" width="16" height="80" rx="3" fill="#cc1010" opacity="0.88"/>
+  <rect x="164" y="225" width="72" height="16" rx="3" fill="#cc1010" opacity="0.88"/>
+  <!-- Red battle cloak -->
+  <path d="M168,158 Q122,195 108,320 Q122,332 148,315 Q148,232 176,168 Z" fill="#a01818" opacity="0.86"/>
+  <path d="M232,158 Q262,198 268,320 Q290,324 296,302 Q286,200 248,162 Z" fill="#a01818" opacity="0.78"/>
+  <!-- Left arm holding shield -->
+  <path d="M142,215 Q108,252 100,285" stroke="#d0ccc4" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.90"/>
+  <!-- George's Cross shield -->
+  <path d="M78,275 L122,275 L122,315 L100,332 L78,315 Z" fill="#f0f0f0" opacity="0.95"/>
+  <rect x="98" y="275" width="8" height="57" rx="2" fill="#cc1010" opacity="0.90"/>
+  <rect x="78" y="295" width="44" height="8" rx="2" fill="#cc1010" opacity="0.90"/>
+  <rect x="80" y="278" width="14" height="14" rx="2" fill="#ffffff" opacity="0.35"/>
+  <!-- Right arm: lance raised -->
+  <path d="M258,215 Q280,245 288,268" stroke="#d0ccc4" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.88"/>
+  <line x1="286" y1="265" x2="350" y2="98" stroke="#8a6030" stroke-width="5" stroke-linecap="round"/>
+  <polygon points="350,98 356,88 362,98 350,110" fill="#c8c8c0"/>
+  <ellipse cx="289" cy="272" rx="13" ry="15" fill="#c0bcb4" opacity="0.92"/>
+  <ellipse cx="100" cy="332" rx="11" ry="13" fill="#d4a06a" opacity="0.90"/>
+  <!-- Belt -->
+  <rect x="162" y="295" width="76" height="11" rx="3" fill="#c9a84c" opacity="0.58"/>
+  <!-- Neck -->
+  <rect x="193" y="142" width="14" height="18" rx="4" fill="#d4a06a" opacity="0.90"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="108" rx="26" ry="30" fill="#d4a06a" opacity="0.92"/>
+  <path d="M174,108 Q176,72 200,68 Q224,72 226,108 Q219,87 200,85 Q181,87 174,108 Z" fill="#2a1a10" opacity="0.85"/>
   <!-- Halo -->
-  <ellipse cx="200" cy="130" rx="58" ry="58" fill="url(#haloGrad)"/>
-  <circle cx="200" cy="130" r="52" fill="none" stroke="#c88820" stroke-width="1.8" opacity="0.7"/>
-
-  <!-- Horse (simplified, dark chestnut) -->
-  <!-- Horse body -->
-  <ellipse cx="210" cy="400" rx="90" ry="45" fill="#5a2a10" transform="rotate(-10,210,400)"/>
-  <!-- Horse neck -->
-  <path d="M 155 368 Q 148 330 162 300 Q 175 285 190 290 Q 195 320 180 350 Q 168 365 155 368 Z" fill="#5a2a10"/>
-  <!-- Horse head -->
-  <path d="M 155 302 Q 148 285 152 270 Q 162 258 174 262 Q 182 275 178 292 Q 170 302 155 302 Z" fill="#4a2008"/>
-  <!-- Horse ear -->
-  <path d="M 164 262 L 160 250 L 168 256 Z" fill="#4a2008"/>
-  <!-- Mane -->
-  <path d="M 162 300 Q 156 280 160 260" fill="none" stroke="#2a1008" stroke-width="4" stroke-linecap="round"/>
-  <!-- Horse legs -->
-  <rect x="150" y="428" width="14" height="55" rx="5" fill="#5a2a10"/>
-  <rect x="175" y="432" width="14" height="52" rx="5" fill="#5a2a10"/>
-  <rect x="225" y="432" width="14" height="52" rx="5" fill="#5a2a10"/>
-  <rect x="248" y="428" width="14" height="55" rx="5" fill="#5a2a10"/>
-  <!-- Hooves -->
-  <rect x="150" y="480" width="14" height="8" rx="3" fill="#2a1008"/>
-  <rect x="175" y="480" width="14" height="8" rx="3" fill="#2a1008"/>
-  <rect x="225" y="480" width="14" height="8" rx="3" fill="#2a1008"/>
-  <rect x="248" y="480" width="14" height="8" rx="3" fill="#2a1008"/>
-  <!-- Tail -->
-  <path d="M 296 390 Q 320 380 310 420 Q 300 440 290 430" fill="none" stroke="#3a1a08" stroke-width="6" stroke-linecap="round"/>
-
-  <!-- Knight (rider) -->
-  <!-- Legs / armor lower -->
-  <rect x="185" y="360" width="28" height="55" rx="4" fill="#888880"/>
-  <!-- Body armor (chain mail / plate) -->
-  <rect x="172" y="270" width="56" height="95" rx="8" fill="#909090"/>
-  <!-- Shoulder guards -->
-  <ellipse cx="172" cy="280" rx="16" ry="10" fill="#a0a0a0"/>
-  <ellipse cx="228" cy="280" rx="16" ry="10" fill="#a0a0a0"/>
-  <!-- Shield arm (left) — George's Cross shield -->
-  <rect x="128" y="285" width="44" height="52" rx="5" fill="#f0f0f0"/>
-  <rect x="148" y="285" width="8" height="52" rx="2" fill="#cc1010"/>
-  <rect x="128" y="307" width="44" height="8" rx="2" fill="#cc1010"/>
-  <!-- Shield highlight -->
-  <rect x="130" y="288" width="15" height="15" rx="2" fill="#ffffff" opacity="0.4"/>
-  <!-- Lance arm (right) -->
-  <path d="M 228 278 L 310 180" stroke="#8a6030" stroke-width="5" stroke-linecap="round"/>
-  <!-- Lance tip (spearhead) -->
-  <polygon points="310,180 316,170 322,180 310,192" fill="#c0c0c0"/>
-  <!-- Right arm (gauntlet) -->
-  <ellipse cx="228" cy="280" rx="12" ry="8" fill="#909090"/>
-
-  <!-- Head (helmet) -->
-  <ellipse cx="200" cy="246" rx="24" ry="26" fill="#909090"/>
-  <!-- Visor -->
-  <path d="M 180 250 Q 200 262 220 250" fill="none" stroke="#606060" stroke-width="2"/>
-  <!-- Helmet crest / plume -->
-  <path d="M 200 222 Q 195 195 188 180 Q 200 185 210 175 Q 208 192 200 222" fill="#cc1010"/>
-  <!-- Helmet cross detail -->
-  <rect x="197" y="230" width="6" height="16" rx="1" fill="#c8a020" opacity="0.6"/>
-
-  <!-- Dragon (below horse hooves) -->
-  <!-- Dragon body -->
-  <path d="M 90 490 Q 130 470 175 475 Q 195 478 200 490 Q 195 505 170 510 Q 130 515 90 490 Z" fill="#2a5010"/>
-  <!-- Dragon head -->
-  <ellipse cx="88" cy="486" rx="22" ry="14" fill="#2a5010"/>
-  <!-- Dragon eye -->
-  <circle cx="82" cy="482" r="4" fill="#cc4010"/>
-  <!-- Dragon wing -->
-  <path d="M 140 470 Q 120 440 100 450 Q 110 460 130 465 Q 115 455 105 462 Q 125 462 140 470 Z" fill="#3a6018" opacity="0.85"/>
-  <!-- Dragon tail -->
-  <path d="M 200 490 Q 240 485 260 495 Q 250 508 230 505 Q 215 500 200 490 Z" fill="#2a5010"/>
-  <!-- Wound from lance (dramatic detail) -->
-  <ellipse cx="160" cy="475" rx="8" ry="5" fill="#8a1010" opacity="0.7"/>
-
-  <!-- Name panel -->
-  <rect x="18" y="528" width="364" height="66" rx="6" fill="#3a0808" opacity="0.90"/>
-  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a030" letter-spacing="3" opacity="0.95">SAN JORGE  ·  SAINT GEORGE</text>
-  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#f5c060" font-style="italic">«Vencedor del dragón»</text>
-  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#e8b850" font-style="italic" opacity="0.8">«Conqueror of the dragon»</text>
+  <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#sj-g2)"/>
+  <circle cx="200" cy="108" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Small dragon defeated at feet -->
+  <path d="M128,490 Q165,472 210,476 Q228,478 232,490 Q222,506 190,510 Q155,512 128,490 Z" fill="#1a3a08" opacity="0.80"/>
+  <ellipse cx="126" cy="488" rx="18" ry="11" fill="#1a3a08" opacity="0.80"/>
+  <circle cx="120" cy="484" r="4" fill="#cc4010" opacity="0.70"/>
+  <ellipse cx="210" cy="478" rx="8" ry="5" fill="#8a1010" opacity="0.65"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#080102" opacity="0.88"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">SAN JORGE  ·  SAINT GEORGE</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#f5c060" font-style="italic">«Mártir y caballero de Cristo»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#d4a840" font-style="italic" opacity="0.8">«Martyr and knight of Christ»</text>
 </svg>

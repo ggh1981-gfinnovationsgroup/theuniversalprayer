@@ -1,103 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
   <defs>
-    <radialGradient id="bgGrad" cx="50%" cy="40%" r="68%">
-      <stop offset="0%" stop-color="#e0ecd8"/>
-      <stop offset="55%" stop-color="#8ab870"/>
-      <stop offset="100%" stop-color="#1a3a18"/>
+    <radialGradient id="sgu-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#0c1808"/><stop offset="100%" stop-color="#040804"/>
     </radialGradient>
-    <radialGradient id="haloGrad" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ffe8a0" stop-opacity="0.92"/>
-      <stop offset="68%" stop-color="#b8c830" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#b8c830" stop-opacity="0"/>
+    <radialGradient id="sgu-atm" cx="50%" cy="38%" r="46%">
+      <stop offset="0%" stop-color="#2a5018" stop-opacity="0.28"/><stop offset="100%" stop-color="#2a5018" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="sgu-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#4a8030" stop-opacity="1"/><stop offset="100%" stop-color="#184010" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="sgu-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f5e060" stop-opacity="1"/><stop offset="100%" stop-color="#c9a84c" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="sgu-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sgu-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
-
-  <!-- Background -->
-  <rect width="400" height="600" fill="url(#bgGrad)"/>
-
-  <!-- Subtle nordic/celtic interlace border motif (simplified) -->
-  <rect x="20" y="20" width="360" height="500" rx="12" fill="none" stroke="#c8a060" stroke-width="1.2" opacity="0.3"/>
-  <rect x="26" y="26" width="348" height="488" rx="10" fill="none" stroke="#c8a060" stroke-width="0.6" opacity="0.2"/>
-
-  <!-- Halo -->
-  <ellipse cx="200" cy="152" rx="60" ry="60" fill="url(#haloGrad)"/>
-  <circle cx="200" cy="152" r="54" fill="none" stroke="#c8a030" stroke-width="1.8" opacity="0.65"/>
-
-  <!-- Head -->
-  <ellipse cx="200" cy="154" rx="30" ry="34" fill="#f0d0a0"/>
-
-  <!-- Short hair (dark) -->
-  <path d="M 172 142 Q 175 118 200 112 Q 225 118 228 142 Q 222 130 200 128 Q 178 130 172 142 Z" fill="#3a2808"/>
-  <!-- Ear hints -->
-  <ellipse cx="170" cy="158" rx="5" ry="7" fill="#e8c898"/>
-  <ellipse cx="230" cy="158" rx="5" ry="7" fill="#e8c898"/>
-
-  <!-- Priest collar (white band) -->
-  <rect x="184" y="202" width="32" height="12" rx="3" fill="#f0ece8"/>
-  <!-- Dark clerical shirt -->
-  <rect x="170" y="210" width="60" height="20" rx="4" fill="#2a2a2a"/>
-
-  <!-- Cassock / dark robe body -->
-  <path d="M 158 225 Q 142 280 136 390 Q 160 400 200 402 Q 240 400 264 390 Q 258 280 242 225 Q 222 238 200 238 Q 178 238 158 225 Z"
-        fill="#2a2830"/>
+  <rect width="400" height="600" fill="url(#sgu-bg)"/>
+  <rect width="400" height="600" fill="url(#sgu-atm)"/>
+  <!-- Rays: forest green left, gold right -->
+  <polygon points="198,262 -25,610 115,610" fill="url(#sgu-r1)" filter="url(#sgu-gl)" opacity="0.72"/>
+  <polygon points="198,262 20,600  85,600"  fill="#4a8030" opacity="0.38"/>
+  <polygon points="202,262 425,610 285,610" fill="url(#sgu-r2)" filter="url(#sgu-gl)" opacity="0.70"/>
+  <polygon points="202,262 375,600 315,600" fill="#f5e060" opacity="0.34"/>
+  <!-- Cassock (black) -->
+  <path d="M166,155 Q140,205 126,395 Q200,418 274,395 Q260,205 234,155 Z" fill="#1a1828" opacity="0.95"/>
   <!-- Cassock highlight -->
-  <path d="M 172 228 Q 156 285 150 375 Q 172 385 200 386 Q 186 295 180 238 Z"
-        fill="#3a3840" opacity="0.5"/>
-  <!-- Cassock fold -->
-  <path d="M 228 228 Q 244 285 250 375 Q 228 385 200 386 Q 214 295 220 238 Z"
-        fill="#1a1828" opacity="0.5"/>
-
-  <!-- Stole (purple/violet — liturgical) -->
-  <path d="M 192 224 L 188 390" stroke="#6040a0" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
-  <path d="M 208 224 L 212 390" stroke="#6040a0" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
-  <!-- Stole cross embroidery -->
-  <rect x="186" y="270" width="10" height="2" rx="1" fill="#c8a0e0"/>
-  <rect x="189" y="267" width="4" height="8" rx="1" fill="#c8a0e0"/>
-  <rect x="207" y="270" width="10" height="2" rx="1" fill="#c8a0e0"/>
-  <rect x="210" y="267" width="4" height="8" rx="1" fill="#c8a0e0"/>
-
-  <!-- Open Bible in hands -->
+  <path d="M178,160 Q158,215 150,378 Q172,395 200,396 Q188,222 182,163 Z" fill="#2a2838" opacity="0.45"/>
+  <!-- Purple stole -->
+  <path d="M192,168 L188,395" stroke="#6040a0" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
+  <path d="M208,168 L212,395" stroke="#6040a0" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
+  <!-- Cross embroidery on stole -->
+  <rect x="186" y="268" width="10" height="2" rx="1" fill="#c8a0e0"/>
+  <rect x="189" y="265" width="4" height="8" rx="1" fill="#c8a0e0"/>
+  <rect x="207" y="268" width="10" height="2" rx="1" fill="#c8a0e0"/>
+  <rect x="210" y="265" width="4" height="8" rx="1" fill="#c8a0e0"/>
+  <!-- White priest collar -->
+  <rect x="185" y="155" width="30" height="12" rx="3" fill="#f0ece8"/>
   <!-- Left arm -->
-  <path d="M 158 252 Q 128 270 118 318 Q 128 326 140 320 Q 146 285 158 268 Z" fill="#2a2830"/>
+  <path d="M162,215 Q126,248 116,305 Q126,314 138,308 Q146,272 162,232 Z" fill="#1a1828" opacity="0.95"/>
   <!-- Right arm -->
-  <path d="M 242 252 Q 272 270 282 318 Q 272 326 260 320 Q 254 285 242 268 Z" fill="#2a2830"/>
+  <path d="M238,215 Q274,248 284,305 Q274,314 262,308 Q254,272 238,232 Z" fill="#1a1828" opacity="0.95"/>
   <!-- Hands -->
-  <ellipse cx="124" cy="322" rx="14" ry="10" fill="#e8c080"/>
-  <ellipse cx="276" cy="322" rx="14" ry="10" fill="#e8c080"/>
-  <!-- Bible pages (open book) -->
-  <path d="M 130 310 Q 165 298 200 300 Q 235 298 270 310 L 268 340 Q 232 330 200 332 Q 168 330 132 340 Z"
-        fill="#f8f0e0"/>
-  <!-- Bible left page lines -->
-  <line x1="140" y1="316" x2="196" y2="312" stroke="#8a7040" stroke-width="1" opacity="0.5"/>
-  <line x1="140" y1="322" x2="196" y2="318" stroke="#8a7040" stroke-width="1" opacity="0.5"/>
-  <line x1="140" y1="328" x2="196" y2="324" stroke="#8a7040" stroke-width="1" opacity="0.5"/>
-  <!-- Bible right page lines -->
-  <line x1="204" y1="312" x2="260" y2="316" stroke="#8a7040" stroke-width="1" opacity="0.5"/>
-  <line x1="204" y1="318" x2="260" y2="322" stroke="#8a7040" stroke-width="1" opacity="0.5"/>
-  <line x1="204" y1="324" x2="260" y2="328" stroke="#8a7040" stroke-width="1" opacity="0.5"/>
-  <!-- Bible spine -->
-  <line x1="200" y1="300" x2="200" y2="332" stroke="#8a7040" stroke-width="2"/>
-  <!-- Bible cover (dark) -->
-  <path d="M 130 340 Q 165 335 200 337 Q 235 335 270 340 L 270 346 Q 235 342 200 344 Q 165 342 130 346 Z"
-        fill="#4a3820"/>
-
-  <!-- Small nordic cross emblem on chest -->
-  <rect x="196" y="248" width="8" height="22" rx="2" fill="#c8a030" opacity="0.8"/>
-  <rect x="190" y="256" width="20" height="7" rx="2" fill="#c8a030" opacity="0.8"/>
-
-  <!-- Stars (northern sky motif) -->
-  <g fill="#d4e070" opacity="0.6">
-    <circle cx="58" cy="68" r="3"/>
-    <circle cx="72" cy="52" r="2"/>
-    <circle cx="88" cy="70" r="2.5"/>
-    <circle cx="320" cy="60" r="2.5"/>
-    <circle cx="340" cy="78" r="2"/>
-    <circle cx="308" cy="82" r="3"/>
-  </g>
-
-  <!-- Name panel -->
-  <rect x="18" y="528" width="364" height="66" rx="6" fill="#1a2a18" opacity="0.90"/>
-  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a030" letter-spacing="3" opacity="0.95">SAN GUSTAVO  ·  SAINT GUSTAVO</text>
-  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#d8e890" font-style="italic">«Llamado por tu nombre»</text>
-  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#c8d870" font-style="italic" opacity="0.8">«Called by your name»</text>
+  <ellipse cx="122" cy="310" rx="14" ry="10" fill="#d4a06a" opacity="0.90"/>
+  <ellipse cx="278" cy="310" rx="14" ry="10" fill="#d4a06a" opacity="0.90"/>
+  <!-- Open Bible -->
+  <path d="M128,298 Q165,286 200,288 Q235,286 272,298 L270,328 Q234,318 200,320 Q166,318 130,328 Z" fill="#f8f0e0" opacity="0.95"/>
+  <line x1="138" y1="304" x2="196" y2="300" stroke="#8a7040" stroke-width="1" opacity="0.5"/>
+  <line x1="138" y1="310" x2="196" y2="306" stroke="#8a7040" stroke-width="1" opacity="0.5"/>
+  <line x1="138" y1="316" x2="196" y2="312" stroke="#8a7040" stroke-width="1" opacity="0.5"/>
+  <line x1="204" y1="300" x2="262" y2="304" stroke="#8a7040" stroke-width="1" opacity="0.5"/>
+  <line x1="204" y1="306" x2="262" y2="310" stroke="#8a7040" stroke-width="1" opacity="0.5"/>
+  <line x1="204" y1="312" x2="262" y2="316" stroke="#8a7040" stroke-width="1" opacity="0.5"/>
+  <line x1="200" y1="288" x2="200" y2="320" stroke="#8a7040" stroke-width="2"/>
+  <!-- Neck -->
+  <rect x="193" y="142" width="14" height="16" rx="4" fill="#d4a06a" opacity="0.90"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="108" rx="26" ry="30" fill="#d4a06a" opacity="0.92"/>
+  <path d="M174,108 Q176,72 200,68 Q224,72 226,108 Q219,87 200,85 Q181,87 174,108 Z" fill="#2a1a10" opacity="0.82"/>
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#sgu-g2)"/>
+  <circle cx="200" cy="108" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#040804" opacity="0.88"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">SAN GUSTAVO  ·  SAINT GUSTAVO</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#a0d870" font-style="italic">«Llamado por tu nombre»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#f5e060" font-style="italic" opacity="0.8">«Called by your name»</text>
 </svg>
