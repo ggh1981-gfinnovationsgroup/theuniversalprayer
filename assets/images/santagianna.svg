@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="gi-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#120408"/><stop offset="100%" stop-color="#060104"/>
+    </radialGradient>
+    <radialGradient id="gi-atm" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#c03060" stop-opacity="0.18"/><stop offset="100%" stop-color="#c03060" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gi-glow" cx="50%" cy="100%" r="55%">
+      <stop offset="0%" stop-color="#e070a0" stop-opacity="0.38"/><stop offset="55%" stop-color="#e070a0" stop-opacity="0.12"/><stop offset="100%" stop-color="#e070a0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gi-r1" x1="50%" y1="0%" x2="5%" y2="100%">
+      <stop offset="0%" stop-color="#c03060" stop-opacity="1"/><stop offset="100%" stop-color="#c03060" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="gi-r2" x1="50%" y1="0%" x2="95%" y2="100%">
+      <stop offset="0%" stop-color="#f5e8a0" stop-opacity="1"/><stop offset="100%" stop-color="#c0a030" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="gi-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="gi-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="gi-glow-f"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#gi-bg)"/>
+  <rect width="400" height="600" fill="url(#gi-atm)"/>
+  <!-- Rose glow from below -->
+  <ellipse cx="200" cy="530" rx="180" ry="100" fill="url(#gi-glow)" filter="url(#gi-glow-f)" opacity="0.85"/>
+  <!-- Rays -->
+  <polygon points="196,268 -30,610 110,610" fill="url(#gi-r1)" filter="url(#gi-gl)" opacity="0.42"/>
+  <polygon points="204,268 430,610 290,610" fill="url(#gi-r2)" filter="url(#gi-gl)" opacity="0.55"/>
+  <!-- Elegant dress — Italian professional woman (rose/burgundy) -->
+  <path d="M153,158 Q122,208 108,420 Q200,448 292,420 Q278,208 247,158 Z" fill="#1a0510" opacity="0.94"/>
+  <!-- Collar / doctor's coat hints -->
+  <path d="M172,158 Q180,175 200,178 Q220,175 228,158 Q220,168 200,170 Q180,168 172,158 Z" fill="#e8ddd0" opacity="0.55"/>
+  <!-- Stethoscope — symbol of her vocation -->
+  <path d="M178,195 Q170,225 174,245 Q178,258 185,260 Q192,262 194,252 Q196,242 190,238" stroke="#8a8080" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.68"/>
+  <circle cx="194" cy="238" r="7" fill="none" stroke="#8a8080" stroke-width="2.5" opacity="0.65"/>
+  <path d="M222,195 Q230,225 226,245 Q222,258 215,260 Q208,262 206,252 Q204,242 210,238" stroke="#8a8080" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.68"/>
+  <!-- Arms — both arms extended, one cradling baby visible at left -->
+  <path d="M152,170 Q125,228 112,315" stroke="#1a0510" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.90"/>
+  <!-- Baby Gianna Emanuela — small bundle at left arm -->
+  <ellipse cx="108" cy="328" rx="19" ry="14" fill="#e8d8c0" opacity="0.82"/>
+  <ellipse cx="105" cy="320" rx="11" ry="12" fill="#c09870" opacity="0.78"/>
+  <circle cx="105" cy="317" r="4.5" fill="#c09870" opacity="0.68"/>
+  <!-- Baby's tiny face -->
+  <ellipse cx="103" cy="316" rx="1.5" ry="1.3" fill="#2a1808" opacity="0.50"/>
+  <ellipse cx="107" cy="316" rx="1.5" ry="1.3" fill="#2a1808" opacity="0.50"/>
+  <!-- Right arm resting -->
+  <path d="M248,170 Q272,222 282,305" stroke="#1a0510" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.90"/>
+  <!-- Right hand — open, offering -->
+  <ellipse cx="283" cy="310" rx="11" ry="9" fill="#b07850" opacity="0.75"/>
+  <!-- Small rose/lily at feet — for April feast (spring) -->
+  <path d="M300,390 Q305,355 308,310" stroke="#3a5a20" stroke-width="2.5" fill="none" opacity="0.60"/>
+  <ellipse cx="308" cy="305" rx="9" ry="15" fill="#c03060" opacity="0.52" transform="rotate(-10,308,305)"/>
+  <ellipse cx="302" cy="299" rx="7" ry="12" fill="#c03060" opacity="0.40" transform="rotate(18,302,299)"/>
+  <!-- Second smaller rose -->
+  <path d="M92,400 Q88,365 86,320" stroke="#3a5a20" stroke-width="2" fill="none" opacity="0.50"/>
+  <ellipse cx="86" cy="315" rx="7" ry="11" fill="#c03060" opacity="0.42" transform="rotate(8,86,315)"/>
+  <!-- Neck -->
+  <rect x="194" y="142" width="12" height="16" rx="3" fill="#b07850" opacity="0.88"/>
+  <!-- Head — Italian woman, elegant, dark hair -->
+  <ellipse cx="200" cy="108" rx="27" ry="30" fill="#b07850" opacity="0.90"/>
+  <!-- Dark hair, elegant updo hint -->
+  <path d="M174,100 Q177,72 200,68 Q223,72 226,100" fill="#1a0810" opacity="0.85"/>
+  <path d="M173,105 Q175,95 180,98" fill="#1a0810" opacity="0.65"/>
+  <path d="M227,105 Q225,95 220,98" fill="#1a0810" opacity="0.65"/>
+  <!-- Eyes — warm, intelligent, strong -->
+  <ellipse cx="189" cy="106" rx="5" ry="4.5" fill="#2a1808" opacity="0.80"/>
+  <ellipse cx="211" cy="106" rx="5" ry="4.5" fill="#2a1808" opacity="0.80"/>
+  <!-- Eyebrows -->
+  <path d="M182,97 Q188,94 194,97" stroke="#2a1808" stroke-width="1.8" fill="none" opacity="0.68"/>
+  <path d="M206,97 Q212,94 218,97" stroke="#2a1808" stroke-width="1.8" fill="none" opacity="0.68"/>
+  <!-- Mouth — full, warm smile -->
+  <path d="M191,122 Q200,127 209,122" stroke="#8a4030" stroke-width="1.6" fill="none" stroke-linecap="round" opacity="0.62"/>
+  <!-- Halo — rose-gold -->
+  <circle cx="200" cy="108" r="51" fill="none" stroke="#e070a0" stroke-width="1.8" stroke-opacity="0.72" filter="url(#gi-g2)"/>
+  <circle cx="200" cy="108" r="45" fill="none" stroke="#f5e8a0" stroke-width="0.5" stroke-opacity="0.20"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c03060" stroke-width="1.2" stroke-opacity="0.45"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a030" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Name panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#060104" opacity="0.90"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" fill="#c9a030" letter-spacing="2.5" opacity="0.95">SANTA GIANNA BERETTA MOLLA  ·  SAINT GIANNA BERETTA MOLLA</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#d0c0a0" font-style="italic">«Santa Gianna Beretta Molla»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#b0a080" font-style="italic" opacity="0.8">«Saint Gianna Beretta Molla»</text>
+</svg>
