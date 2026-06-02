@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#f0e8d0"/>
+      <stop offset="55%" stop-color="#c8a870"/>
+      <stop offset="100%" stop-color="#5a2808"/>
+    </radialGradient>
+    <radialGradient id="haloGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe8a0" stop-opacity="0.95"/>
+      <stop offset="65%" stop-color="#d4a020" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#d4a020" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="600" fill="url(#bgGrad)"/>
+
+  <!-- Soft architectural arch -->
+  <path d="M 55 520 L 55 220 Q 55 130 200 110 Q 345 130 345 220 L 345 520 Z"
+        fill="none" stroke="#c8a060" stroke-width="1.2" opacity="0.3"/>
+
+  <!-- Halo -->
+  <ellipse cx="200" cy="148" rx="62" ry="62" fill="url(#haloGrad)"/>
+  <circle cx="200" cy="148" r="55" fill="none" stroke="#d4a020" stroke-width="1.8" opacity="0.65"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="150" rx="30" ry="34" fill="#f2d0a8"/>
+
+  <!-- Wimple / veil (white) -->
+  <path d="M 170 148 Q 170 112 200 104 Q 230 112 230 148 L 230 178 Q 215 184 200 184 Q 185 184 170 178 Z"
+        fill="#e8e4dc"/>
+  <!-- Veil edges -->
+  <path d="M 170 148 Q 158 152 154 175 Q 170 178 170 178 Z" fill="#dedad0"/>
+  <path d="M 230 148 Q 242 152 246 175 Q 230 178 230 178 Z" fill="#dedad0"/>
+
+  <!-- Franciscan habit (brown/grey) -->
+  <path d="M 154 188 Q 138 240 128 370 Q 148 385 200 388 Q 252 385 272 370 Q 262 240 246 188 Q 224 200 200 200 Q 176 200 154 188 Z"
+        fill="#8a6030"/>
+  <!-- Habit highlight -->
+  <path d="M 168 192 Q 152 248 144 355 Q 165 368 200 370 Q 188 258 182 200 Z"
+        fill="#a07840" opacity="0.5"/>
+  <!-- Habit fold shadow -->
+  <path d="M 232 192 Q 248 248 256 355 Q 235 368 200 370 Q 212 258 218 200 Z"
+        fill="#6a4820" opacity="0.4"/>
+
+  <!-- White cord/rope belt (Franciscan) -->
+  <path d="M 148 270 Q 200 278 252 270" fill="none" stroke="#e8e0d0" stroke-width="4" stroke-linecap="round"/>
+  <!-- Three knots -->
+  <circle cx="170" cy="272" r="5" fill="#e0d8c8"/>
+  <circle cx="200" cy="276" r="5" fill="#e0d8c8"/>
+  <circle cx="230" cy="272" r="5" fill="#e0d8c8"/>
+  <!-- Cord hanging down -->
+  <path d="M 200 276 Q 196 295 194 318 Q 198 328 200 332" fill="none" stroke="#e8e0d0" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Hands and bread/roses -->
+  <!-- Left arm -->
+  <path d="M 154 210 Q 122 240 112 295 Q 122 302 134 298 Q 140 258 154 230 Z" fill="#9a6835"/>
+  <!-- Left hand -->
+  <ellipse cx="118" cy="300" rx="16" ry="11" fill="#f0c898" transform="rotate(-15,118,300)"/>
+  <!-- Roses (3) in left hand -->
+  <circle cx="105" cy="285" r="9" fill="#cc2040"/>
+  <circle cx="118" cy="278" r="8" fill="#e03050"/>
+  <circle cx="130" cy="282" r="7" fill="#cc2040"/>
+  <!-- Rose petals detail -->
+  <circle cx="105" cy="285" r="5" fill="#e83060" opacity="0.7"/>
+  <circle cx="118" cy="278" r="4" fill="#f04070" opacity="0.7"/>
+  <!-- Stems -->
+  <line x1="105" y1="294" x2="112" y2="304" stroke="#3a6018" stroke-width="2"/>
+  <line x1="118" y1="286" x2="118" y2="300" stroke="#3a6018" stroke-width="2"/>
+  <line x1="130" y1="289" x2="122" y2="300" stroke="#3a6018" stroke-width="2"/>
+  <!-- Leaves -->
+  <path d="M 110 298 Q 106 291 112 289" fill="none" stroke="#4a7020" stroke-width="1.5"/>
+
+  <!-- Right arm + bread loaf -->
+  <path d="M 246 210 Q 278 240 288 295 Q 278 302 266 298 Q 260 258 246 230 Z" fill="#9a6835"/>
+  <!-- Right hand -->
+  <ellipse cx="282" cy="300" rx="16" ry="11" fill="#f0c898" transform="rotate(15,282,300)"/>
+  <!-- Bread -->
+  <ellipse cx="292" cy="292" rx="22" ry="14" fill="#d4a050"/>
+  <ellipse cx="292" cy="290" rx="18" ry="10" fill="#e8b860"/>
+  <!-- Bread scoring lines -->
+  <path d="M 280 290 Q 292 286 304 290" fill="none" stroke="#c89040" stroke-width="1.5"/>
+  <path d="M 285 295 Q 292 292 299 295" fill="none" stroke="#c89040" stroke-width="1"/>
+
+  <!-- Small crown (set aside, on the ground) -->
+  <g transform="translate(175, 388)">
+    <rect x="0" y="8" width="50" height="16" rx="3" fill="#c8a020"/>
+    <polygon points="0,8 8,0 16,8" fill="#c8a020"/>
+    <polygon points="16,8 25,0 34,8" fill="#c8a020"/>
+    <polygon points="34,8 42,0 50,8" fill="#c8a020"/>
+    <circle cx="8" cy="2" r="3" fill="#e8d060"/>
+    <circle cx="25" cy="1" r="3" fill="#e8d060"/>
+    <circle cx="42" cy="2" r="3" fill="#e8d060"/>
+  </g>
+
+  <!-- Name panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#4a1808" opacity="0.90"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" fill="#c9a030" letter-spacing="2.5" opacity="0.95">STA. ISABEL DE HUNGRÍA  ·  ST. ELIZABETH OF HUNGARY</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="#f5d070" font-style="italic">«Reina de los pobres»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#e8c858" font-style="italic" opacity="0.8">«Queen of the poor»</text>
+</svg>
