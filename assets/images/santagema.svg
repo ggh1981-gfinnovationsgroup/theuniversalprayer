@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="gg-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#100612"/><stop offset="100%" stop-color="#040208"/>
+    </radialGradient>
+    <radialGradient id="gg-atm" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#7a1a5a" stop-opacity="0.20"/><stop offset="100%" stop-color="#7a1a5a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gg-glow" cx="50%" cy="100%" r="55%">
+      <stop offset="0%" stop-color="#d080c0" stop-opacity="0.40"/><stop offset="60%" stop-color="#d080c0" stop-opacity="0.15"/><stop offset="100%" stop-color="#d080c0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gg-r1" x1="50%" y1="0%" x2="5%" y2="100%">
+      <stop offset="0%" stop-color="#7a1a5a" stop-opacity="1"/><stop offset="100%" stop-color="#7a1a5a" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="gg-r2" x1="50%" y1="0%" x2="95%" y2="100%">
+      <stop offset="0%" stop-color="#f5e0a0" stop-opacity="1"/><stop offset="100%" stop-color="#c09030" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="gg-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="gg-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="gg-glow-f"><feGaussianBlur stdDeviation="13" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="gg-wound"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#gg-bg)"/>
+  <rect width="400" height="600" fill="url(#gg-atm)"/>
+  <!-- Soft purple light from below -->
+  <ellipse cx="200" cy="530" rx="180" ry="100" fill="url(#gg-glow)" filter="url(#gg-glow-f)" opacity="0.85"/>
+  <!-- Rays -->
+  <polygon points="196,268 -30,610 110,610" fill="url(#gg-r1)" filter="url(#gg-gl)" opacity="0.50"/>
+  <polygon points="204,268 430,610 290,610" fill="url(#gg-r2)" filter="url(#gg-gl)" opacity="0.60"/>
+  <!-- Black Passionist-influenced habit/dress (she wanted to be a Passionist nun) -->
+  <path d="M153,158 Q122,208 108,415 Q200,445 292,415 Q278,208 247,158 Z" fill="#0a0810" opacity="0.96"/>
+  <!-- White collar -->
+  <path d="M175,158 Q185,172 200,175 Q215,172 225,158 Q215,165 200,168 Q185,165 175,158 Z" fill="#e8e0d8" opacity="0.60"/>
+  <!-- Small white cross/heart on chest (Passionist symbol) -->
+  <rect x="195" y="205" width="10" height="28" rx="2" fill="#e8e0d8" opacity="0.62"/>
+  <rect x="183" y="215" width="34" height="10" rx="2" fill="#e8e0d8" opacity="0.62"/>
+  <!-- Arms crossed over chest / stigmata pose — hands visible -->
+  <path d="M148,188 Q128,238 122,295" stroke="#0a0810" stroke-width="17" fill="none" stroke-linecap="round" opacity="0.90"/>
+  <path d="M252,188 Q272,238 278,295" stroke="#0a0810" stroke-width="17" fill="none" stroke-linecap="round" opacity="0.90"/>
+  <!-- Left hand with stigmata wound -->
+  <ellipse cx="122" cy="300" rx="12" ry="9" fill="#b07850" opacity="0.80"/>
+  <ellipse cx="122" cy="300" rx="4" ry="3" fill="#8a1020" opacity="0.85" filter="url(#gg-wound)"/>
+  <!-- Right hand with stigmata wound -->
+  <ellipse cx="278" cy="300" rx="12" ry="9" fill="#b07850" opacity="0.80"/>
+  <ellipse cx="278" cy="300" rx="4" ry="3" fill="#8a1020" opacity="0.85" filter="url(#gg-wound)"/>
+  <!-- Small drops of blood from hands -->
+  <circle cx="119" cy="308" r="1.8" fill="#8a1020" opacity="0.68"/>
+  <circle cx="125" cy="312" r="1.5" fill="#8a1020" opacity="0.55"/>
+  <circle cx="275" cy="308" r="1.8" fill="#8a1020" opacity="0.68"/>
+  <circle cx="281" cy="312" r="1.5" fill="#8a1020" opacity="0.55"/>
+  <!-- Side wound (barely visible, low left of torso) -->
+  <ellipse cx="148" cy="340" rx="5" ry="3" fill="#8a1020" opacity="0.35" filter="url(#gg-wound)"/>
+  <!-- White veil on head -->
+  <path d="M168,118 Q170,94 200,88 Q230,94 232,118 Q226,106 200,104 Q174,106 168,118 Z" fill="#e8e0d8" opacity="0.85"/>
+  <path d="M168,118 Q163,140 166,158" stroke="#e8e0d8" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.68"/>
+  <path d="M232,118 Q237,140 234,158" stroke="#e8e0d8" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.68"/>
+  <!-- Neck -->
+  <rect x="194" y="142" width="12" height="16" rx="3" fill="#b07850" opacity="0.88"/>
+  <!-- Head — young Italian woman, serene -->
+  <ellipse cx="200" cy="110" rx="26" ry="30" fill="#b07850" opacity="0.90"/>
+  <!-- Veil over hair -->
+  <path d="M175,102 Q177,78 200,72 Q223,78 225,102" fill="#e8e0d8" opacity="0.80"/>
+  <!-- Eyes — dark brown, deeply interior gaze -->
+  <ellipse cx="190" cy="108" rx="5" ry="4.5" fill="#2a1808" opacity="0.80"/>
+  <ellipse cx="210" cy="108" rx="5" ry="4.5" fill="#2a1808" opacity="0.80"/>
+  <!-- Eyebrows -->
+  <path d="M183,100 Q189,97 195,100" stroke="#2a1808" stroke-width="1.7" fill="none" opacity="0.68"/>
+  <path d="M205,100 Q211,97 217,100" stroke="#2a1808" stroke-width="1.7" fill="none" opacity="0.68"/>
+  <!-- Mouth — gentle, suffering -->
+  <path d="M193,124 Q200,127 207,124" stroke="#8a4030" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.60"/>
+  <!-- Halo — deep rose gold for mystic -->
+  <circle cx="200" cy="110" r="52" fill="none" stroke="#e8a0c0" stroke-width="1.8" stroke-opacity="0.72" filter="url(#gg-g2)"/>
+  <circle cx="200" cy="110" r="46" fill="none" stroke="#f5e0a0" stroke-width="0.5" stroke-opacity="0.20"/>
+  <!-- Crucifix — she always held one -->
+  <rect x="196" y="350" width="8" height="36" rx="3" fill="#8a6040" opacity="0.70"/>
+  <rect x="186" y="361" width="28" height="8" rx="3" fill="#8a6040" opacity="0.70"/>
+  <!-- Christ figure tiny suggestion on cross -->
+  <ellipse cx="200" cy="356" rx="4" ry="4.5" fill="#c09870" opacity="0.50"/>
+  <!-- Roses at feet — symbol of Lucca -->
+  <circle cx="155" cy="450" r="8" fill="#8a1040" opacity="0.55"/>
+  <circle cx="168" cy="460" r="7" fill="#8a1040" opacity="0.48"/>
+  <path d="M148,455 Q150,440 155,450" stroke="#4a6030" stroke-width="2" fill="none"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#7a1a5a" stroke-width="1.2" stroke-opacity="0.45"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a030" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Name panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#040208" opacity="0.90"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a030" letter-spacing="3" opacity="0.95">SANTA GEMA GALGANI  ·  SAINT GEMMA GALGANI</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#d0c0a0" font-style="italic">«Santa Gema Galgani»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#b0a080" font-style="italic" opacity="0.8">«Saint Gemma Galgani»</text>
+</svg>
