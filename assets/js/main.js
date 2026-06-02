@@ -253,7 +253,7 @@ function setLanguage(lang) {
 
   // Update search placeholders (bilingual)
   const _qnSearch = document.getElementById('quickNavSearch');
-  if (_qnSearch) _qnSearch.placeholder = lang === 'es' ? 'Buscar intercesor...' : 'Search intercessor...';
+  if (_qnSearch) _qnSearch.placeholder = lang === 'es' ? 'Buscar por nombre, motivo o situación...' : 'Search by name, intention or situation...';
   const _cSearch = document.getElementById('cardsSearch');
   if (_cSearch) _cSearch.placeholder = lang === 'es' ? 'Buscar por nombre, motivo o situación...' : 'Search by name, intention or situation...';
 
@@ -358,7 +358,7 @@ async function initHomePage() {
   // Search quick nav icons
   const quickNavSearch = document.getElementById('quickNavSearch');
   if (quickNavSearch) {
-    quickNavSearch.placeholder = currentLang === 'es' ? 'Buscar intercesor...' : 'Search intercessor...';
+    quickNavSearch.placeholder = currentLang === 'es' ? 'Buscar por nombre, motivo o situación...' : 'Search by name, intention or situation...';
     quickNavSearch.addEventListener('input', () => {
       const q = quickNavSearch.value.toLowerCase().trim();
       document.querySelectorAll('.quick-nav-item').forEach(item => {
