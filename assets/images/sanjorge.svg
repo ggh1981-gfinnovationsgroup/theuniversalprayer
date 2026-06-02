@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#d0c0a0"/>
+      <stop offset="55%" stop-color="#a08060"/>
+      <stop offset="100%" stop-color="#3a1010"/>
+    </radialGradient>
+    <radialGradient id="haloGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe8a0" stop-opacity="0.9"/>
+      <stop offset="65%" stop-color="#c88820" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#c88820" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="metalSheen" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="600" fill="url(#bgGrad)"/>
+
+  <!-- Ground / dragon area -->
+  <ellipse cx="200" cy="490" rx="160" ry="30" fill="#2a1008" opacity="0.5"/>
+
+  <!-- Halo -->
+  <ellipse cx="200" cy="130" rx="58" ry="58" fill="url(#haloGrad)"/>
+  <circle cx="200" cy="130" r="52" fill="none" stroke="#c88820" stroke-width="1.8" opacity="0.7"/>
+
+  <!-- Horse (simplified, dark chestnut) -->
+  <!-- Horse body -->
+  <ellipse cx="210" cy="400" rx="90" ry="45" fill="#5a2a10" transform="rotate(-10,210,400)"/>
+  <!-- Horse neck -->
+  <path d="M 155 368 Q 148 330 162 300 Q 175 285 190 290 Q 195 320 180 350 Q 168 365 155 368 Z" fill="#5a2a10"/>
+  <!-- Horse head -->
+  <path d="M 155 302 Q 148 285 152 270 Q 162 258 174 262 Q 182 275 178 292 Q 170 302 155 302 Z" fill="#4a2008"/>
+  <!-- Horse ear -->
+  <path d="M 164 262 L 160 250 L 168 256 Z" fill="#4a2008"/>
+  <!-- Mane -->
+  <path d="M 162 300 Q 156 280 160 260" fill="none" stroke="#2a1008" stroke-width="4" stroke-linecap="round"/>
+  <!-- Horse legs -->
+  <rect x="150" y="428" width="14" height="55" rx="5" fill="#5a2a10"/>
+  <rect x="175" y="432" width="14" height="52" rx="5" fill="#5a2a10"/>
+  <rect x="225" y="432" width="14" height="52" rx="5" fill="#5a2a10"/>
+  <rect x="248" y="428" width="14" height="55" rx="5" fill="#5a2a10"/>
+  <!-- Hooves -->
+  <rect x="150" y="480" width="14" height="8" rx="3" fill="#2a1008"/>
+  <rect x="175" y="480" width="14" height="8" rx="3" fill="#2a1008"/>
+  <rect x="225" y="480" width="14" height="8" rx="3" fill="#2a1008"/>
+  <rect x="248" y="480" width="14" height="8" rx="3" fill="#2a1008"/>
+  <!-- Tail -->
+  <path d="M 296 390 Q 320 380 310 420 Q 300 440 290 430" fill="none" stroke="#3a1a08" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Knight (rider) -->
+  <!-- Legs / armor lower -->
+  <rect x="185" y="360" width="28" height="55" rx="4" fill="#888880"/>
+  <!-- Body armor (chain mail / plate) -->
+  <rect x="172" y="270" width="56" height="95" rx="8" fill="#909090"/>
+  <!-- Shoulder guards -->
+  <ellipse cx="172" cy="280" rx="16" ry="10" fill="#a0a0a0"/>
+  <ellipse cx="228" cy="280" rx="16" ry="10" fill="#a0a0a0"/>
+  <!-- Shield arm (left) — George's Cross shield -->
+  <rect x="128" y="285" width="44" height="52" rx="5" fill="#f0f0f0"/>
+  <rect x="148" y="285" width="8" height="52" rx="2" fill="#cc1010"/>
+  <rect x="128" y="307" width="44" height="8" rx="2" fill="#cc1010"/>
+  <!-- Shield highlight -->
+  <rect x="130" y="288" width="15" height="15" rx="2" fill="#ffffff" opacity="0.4"/>
+  <!-- Lance arm (right) -->
+  <path d="M 228 278 L 310 180" stroke="#8a6030" stroke-width="5" stroke-linecap="round"/>
+  <!-- Lance tip (spearhead) -->
+  <polygon points="310,180 316,170 322,180 310,192" fill="#c0c0c0"/>
+  <!-- Right arm (gauntlet) -->
+  <ellipse cx="228" cy="280" rx="12" ry="8" fill="#909090"/>
+
+  <!-- Head (helmet) -->
+  <ellipse cx="200" cy="246" rx="24" ry="26" fill="#909090"/>
+  <!-- Visor -->
+  <path d="M 180 250 Q 200 262 220 250" fill="none" stroke="#606060" stroke-width="2"/>
+  <!-- Helmet crest / plume -->
+  <path d="M 200 222 Q 195 195 188 180 Q 200 185 210 175 Q 208 192 200 222" fill="#cc1010"/>
+  <!-- Helmet cross detail -->
+  <rect x="197" y="230" width="6" height="16" rx="1" fill="#c8a020" opacity="0.6"/>
+
+  <!-- Dragon (below horse hooves) -->
+  <!-- Dragon body -->
+  <path d="M 90 490 Q 130 470 175 475 Q 195 478 200 490 Q 195 505 170 510 Q 130 515 90 490 Z" fill="#2a5010"/>
+  <!-- Dragon head -->
+  <ellipse cx="88" cy="486" rx="22" ry="14" fill="#2a5010"/>
+  <!-- Dragon eye -->
+  <circle cx="82" cy="482" r="4" fill="#cc4010"/>
+  <!-- Dragon wing -->
+  <path d="M 140 470 Q 120 440 100 450 Q 110 460 130 465 Q 115 455 105 462 Q 125 462 140 470 Z" fill="#3a6018" opacity="0.85"/>
+  <!-- Dragon tail -->
+  <path d="M 200 490 Q 240 485 260 495 Q 250 508 230 505 Q 215 500 200 490 Z" fill="#2a5010"/>
+  <!-- Wound from lance (dramatic detail) -->
+  <ellipse cx="160" cy="475" rx="8" ry="5" fill="#8a1010" opacity="0.7"/>
+
+  <!-- Name panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#3a0808" opacity="0.90"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a030" letter-spacing="3" opacity="0.95">SAN JORGE  ·  SAINT GEORGE</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#f5c060" font-style="italic">«Vencedor del dragón»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#e8b850" font-style="italic" opacity="0.8">«Conqueror of the dragon»</text>
+</svg>
