@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="ch-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#080a0e"/><stop offset="100%" stop-color="#02020a"/>
+    </radialGradient>
+    <radialGradient id="ch-atm" cx="50%" cy="40%" r="48%">
+      <stop offset="0%" stop-color="#3a5a8a" stop-opacity="0.20"/><stop offset="100%" stop-color="#3a5a8a" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Tomb light glow from below -->
+    <radialGradient id="ch-tomb" cx="50%" cy="100%" r="55%">
+      <stop offset="0%" stop-color="#f5e0a0" stop-opacity="0.60"/><stop offset="60%" stop-color="#f5d070" stop-opacity="0.25"/><stop offset="100%" stop-color="#f5d070" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ch-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#3a5a8a" stop-opacity="1"/><stop offset="100%" stop-color="#1a2a5a" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="ch-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f5e0a0" stop-opacity="1"/><stop offset="100%" stop-color="#c09030" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="ch-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="ch-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="ch-glow"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#ch-bg)"/>
+  <rect width="400" height="600" fill="url(#ch-atm)"/>
+  <!-- Tomb light rising from below -->
+  <ellipse cx="200" cy="530" rx="180" ry="100" fill="url(#ch-tomb)" filter="url(#ch-glow)" opacity="0.9"/>
+  <!-- Rays: blue-grey left, gold right -->
+  <polygon points="198,268 -25,610 115,610" fill="url(#ch-r1)" filter="url(#ch-gl)" opacity="0.60"/>
+  <polygon points="198,268 15,600 80,600" fill="#3a5a8a" opacity="0.28"/>
+  <polygon points="202,268 425,610 288,610" fill="url(#ch-r2)" filter="url(#ch-gl)" opacity="0.65"/>
+  <polygon points="202,268 375,600 318,600" fill="#f5e0a0" opacity="0.30"/>
+  <!-- Black Maronite monastic habit -->
+  <path d="M162,158 Q134,208 120,400 Q200,426 280,400 Q266,208 238,158 Z" fill="#0a0a0a" opacity="0.97"/>
+  <!-- White hood/cowl (Maronite style — white inside) -->
+  <path d="M164,158 Q148,165 138,195 Q160,182 164,158 Z" fill="#2a2a2a" opacity="0.9"/>
+  <path d="M236,158 Q252,165 262,195 Q240,182 236,158 Z" fill="#2a2a2a" opacity="0.9"/>
+  <!-- Small white knotted belt/cord -->
+  <path d="M148,295 Q200,310 252,295" stroke="#e0d8c0" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.55"/>
+  <!-- Arms folded in contemplation / slight forward reach -->
+  <path d="M140,220 Q114,262 110,308" stroke="#0a0a0a" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.93"/>
+  <path d="M260,220 Q286,262 290,308" stroke="#0a0a0a" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.93"/>
+  <!-- Hands joined/folded in prayer -->
+  <ellipse cx="200" cy="320" rx="20" ry="10" fill="#b07a50" opacity="0.85"/>
+  <path d="M185,314 Q200,308 215,314 L212,328 Q200,333 188,328 Z" fill="#b07a50" opacity="0.85"/>
+  <!-- Neck -->
+  <rect x="193" y="141" width="14" height="18" rx="4" fill="#b07a50" opacity="0.90"/>
+  <!-- Head (Lebanese/Semitic features) -->
+  <ellipse cx="200" cy="106" rx="27" ry="31" fill="#b07a50" opacity="0.92"/>
+  <!-- Black monastic hood over head -->
+  <path d="M173,88 Q175,68 200,62 Q225,68 227,88 Q220,75 200,73 Q180,75 173,88 Z" fill="#101010" opacity="0.90"/>
+  <!-- Hood sides -->
+  <path d="M173,88 Q170,100 174,112" stroke="#101010" stroke-width="8" fill="none" opacity="0.85"/>
+  <path d="M227,88 Q230,100 226,112" stroke="#101010" stroke-width="8" fill="none" opacity="0.85"/>
+  <!-- Full dark beard (Maronite monastic style) -->
+  <path d="M183,126 Q182,155 200,162 Q218,155 217,126 Q208,148 200,150 Q192,148 183,126 Z" fill="#1a1208" opacity="0.78"/>
+  <!-- Eyes — closed or downcast (deep prayer) -->
+  <path d="M185,107 Q190,103 195,107" stroke="#1a1008" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.80"/>
+  <path d="M205,107 Q210,103 215,107" stroke="#1a1008" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.80"/>
+  <!-- Halo -->
+  <circle cx="200" cy="106" r="53" fill="none" stroke="#f5e0a0" stroke-width="1.8" stroke-opacity="0.70" filter="url(#ch-g2)"/>
+  <circle cx="200" cy="106" r="47" fill="none" stroke="#f5e0a0" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Cedar tree of Lebanon (small, symbolic, lower right) -->
+  <path d="M320,450 L320,510" stroke="#4a3820" stroke-width="5" stroke-linecap="round"/>
+  <path d="M295,480 Q320,455 345,480 Q320,460 295,480 Z" fill="#2a4a20" opacity="0.65"/>
+  <path d="M300,465 Q320,442 340,465 Q320,448 300,465 Z" fill="#2a4a20" opacity="0.55"/>
+  <path d="M308,452 Q320,434 332,452 Q320,440 308,452 Z" fill="#2a4a20" opacity="0.50"/>
+  <!-- Feet / sandals -->
+  <ellipse cx="184" cy="408" rx="14" ry="6" fill="#5a3820" opacity="0.55"/>
+  <ellipse cx="216" cy="408" rx="14" ry="6" fill="#5a3820" opacity="0.55"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#3a5a8a" stroke-width="1.2" stroke-opacity="0.45"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a030" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Name panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#02020a" opacity="0.90"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a030" letter-spacing="3" opacity="0.95">SAN CHARBEL MAKHLOUF  ·  SAINT CHARBEL MAKHLOUF</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#d0c0a0" font-style="italic">«San Charbel Makhlouf»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#b0a080" font-style="italic" opacity="0.8">«Saint Charbel Makhlouf»</text>
+</svg>
