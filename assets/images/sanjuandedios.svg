@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="jd-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#080c14"/><stop offset="100%" stop-color="#040408"/>
+    </radialGradient>
+    <radialGradient id="jd-glow" cx="50%" cy="38%" r="44%">
+      <stop offset="0%" stop-color="#1a3a7a" stop-opacity="0.25"/><stop offset="100%" stop-color="#1a3a7a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="jd-fire" cx="50%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#e0640a" stop-opacity="0.55"/><stop offset="60%" stop-color="#e0640a" stop-opacity="0.20"/><stop offset="100%" stop-color="#e0640a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="jd-r1" x1="50%" y1="0%" x2="5%" y2="100%">
+      <stop offset="0%" stop-color="#1a3a7a" stop-opacity="1"/><stop offset="100%" stop-color="#1a3a7a" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="jd-r2" x1="50%" y1="0%" x2="95%" y2="100%">
+      <stop offset="0%" stop-color="#f5e0a0" stop-opacity="1"/><stop offset="100%" stop-color="#c09030" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="jd-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="jd-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="jd-glow-f"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#jd-bg)"/>
+  <rect width="400" height="600" fill="url(#jd-glow)"/>
+  <!-- Fire glow from the hospital fire (below) -->
+  <ellipse cx="200" cy="500" rx="190" ry="130" fill="url(#jd-fire)" filter="url(#jd-glow-f)" opacity="0.85"/>
+  <!-- Rays -->
+  <polygon points="196,268 -30,610 110,610" fill="url(#jd-r1)" filter="url(#jd-gl)" opacity="0.50"/>
+  <polygon points="204,268 430,610 290,610" fill="url(#jd-r2)" filter="url(#jd-gl)" opacity="0.60"/>
+  <!-- Dark grey/brown hospitalero habit -->
+  <path d="M152,160 Q122,210 108,415 Q200,445 292,415 Q278,210 248,160 Z" fill="#1a1610" opacity="0.96"/>
+  <!-- White cross on chest (Order of Hospitaller) -->
+  <rect x="193" y="200" width="14" height="40" rx="3" fill="#e8e8e8" opacity="0.75"/>
+  <rect x="180" y="215" width="40" height="14" rx="3" fill="#e8e8e8" opacity="0.75"/>
+  <!-- Belt/rope cord -->
+  <path d="M140,295 Q200,312 260,295" stroke="#8a7040" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.60"/>
+  <!-- Left arm extended carrying sick person -->
+  <path d="M148,190 Q118,240 100,310" stroke="#1a1610" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.93"/>
+  <!-- Sick person being carried (abstract silhouette) -->
+  <ellipse cx="88" cy="292" rx="12" ry="9" fill="#b07a50" opacity="0.55"/>
+  <path d="M76,296 Q88,285 102,298 L96,316 Q88,322 80,316 Z" fill="#5a4030" opacity="0.50"/>
+  <!-- Right arm raised/prayer gesture -->
+  <path d="M252,190 Q272,240 278,285" stroke="#1a1610" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.93"/>
+  <ellipse cx="280" cy="290" rx="10" ry="8" fill="#b07a50" opacity="0.82"/>
+  <!-- Neck -->
+  <rect x="194" y="142" width="12" height="17" rx="3" fill="#b07a50" opacity="0.88"/>
+  <!-- Head — mature man, strong features, beard -->
+  <ellipse cx="200" cy="110" rx="27" ry="31" fill="#b07a50" opacity="0.90"/>
+  <!-- Short dark hair -->
+  <path d="M174,100 Q176,72 200,66 Q224,72 226,100" fill="#1a1208" opacity="0.82"/>
+  <!-- Short beard -->
+  <path d="M182,128 Q180,152 200,160 Q220,152 218,128 Q210,145 200,147 Q190,145 182,128 Z" fill="#1a1208" opacity="0.68"/>
+  <!-- Eyes — compassionate, forward gaze -->
+  <ellipse cx="190" cy="108" rx="5.5" ry="4.5" fill="#2a1808" opacity="0.80"/>
+  <ellipse cx="210" cy="108" rx="5.5" ry="4.5" fill="#2a1808" opacity="0.80"/>
+  <!-- Eyebrows -->
+  <path d="M183,100 Q190,97 195,100" stroke="#2a1808" stroke-width="1.8" fill="none" opacity="0.70"/>
+  <path d="M205,100 Q210,97 217,100" stroke="#2a1808" stroke-width="1.8" fill="none" opacity="0.70"/>
+  <!-- Halo -->
+  <circle cx="200" cy="110" r="53" fill="none" stroke="#f5e0a0" stroke-width="1.8" stroke-opacity="0.72" filter="url(#jd-g2)"/>
+  <circle cx="200" cy="110" r="46" fill="none" stroke="#f5e0a0" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Pomegranate — symbol of Granada — lower right -->
+  <circle cx="320" cy="465" r="18" fill="#8a1028" opacity="0.60"/>
+  <path d="M316,448 Q320,442 324,448" stroke="#4a3010" stroke-width="2.5" fill="none"/>
+  <!-- seeds suggestion -->
+  <circle cx="315" cy="462" r="2.5" fill="#f0c0b0" opacity="0.60"/>
+  <circle cx="322" cy="458" r="2.5" fill="#f0c0b0" opacity="0.60"/>
+  <circle cx="318" cy="470" r="2.5" fill="#f0c0b0" opacity="0.60"/>
+  <circle cx="325" cy="467" r="2.5" fill="#f0c0b0" opacity="0.60"/>
+  <!-- Heart (patrono del corazón) — lower left -->
+  <path d="M80,455 Q80,440 90,440 Q100,440 100,455 Q100,440 110,440 Q120,440 120,455 Q120,472 100,485 Q80,472 80,455 Z" fill="#8a0010" opacity="0.62" filter="url(#jd-g2)"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#1a3a7a" stroke-width="1.2" stroke-opacity="0.50"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a030" stroke-width="0.5" stroke-opacity="0.20"/>
+  <!-- Name panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#040408" opacity="0.90"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a030" letter-spacing="3" opacity="0.95">SAN JUAN DE DIOS  ·  SAINT JOHN OF GOD</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#d0c0a0" font-style="italic">«San Juan de Dios»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#b0a080" font-style="italic" opacity="0.8">«Saint John of God»</text>
+</svg>
