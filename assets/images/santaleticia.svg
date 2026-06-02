@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="ltc-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#120509"/><stop offset="100%" stop-color="#040103"/>
+    </radialGradient>
+    <radialGradient id="ltc-atm" cx="50%" cy="38%" r="46%">
+      <stop offset="0%" stop-color="#8a2a5a" stop-opacity="0.28"/><stop offset="100%" stop-color="#8a2a5a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ltc-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#a83878" stop-opacity="1"/><stop offset="100%" stop-color="#2a0818" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="ltc-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f5e060" stop-opacity="1"/><stop offset="100%" stop-color="#c9a84c" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="ltc-tunic" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c83870"/><stop offset="100%" stop-color="#680830"/>
+    </linearGradient>
+    <linearGradient id="ltc-him" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8e4d8"/><stop offset="100%" stop-color="#b8b4a8"/>
+    </linearGradient>
+    <filter id="ltc-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="ltc-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#ltc-bg)"/>
+  <rect width="400" height="600" fill="url(#ltc-atm)"/>
+  <!-- Stars -->
+  <circle cx="44"  cy="26"  r="1.5" fill="#e8b8d0" opacity="0.70"/>
+  <circle cx="108" cy="18"  r="1"   fill="#e8b8d0" opacity="0.58"/>
+  <circle cx="294" cy="22"  r="1"   fill="#e8b8d0" opacity="0.50"/>
+  <circle cx="356" cy="44"  r="1.5" fill="#e8b8d0" opacity="0.62"/>
+  <circle cx="32"  cy="72"  r="1"   fill="#e8b8d0" opacity="0.48"/>
+  <circle cx="376" cy="68"  r="1"   fill="#e8b8d0" opacity="0.52"/>
+  <!-- Gentle rose-gold ambient glow behind figure -->
+  <ellipse cx="200" cy="300" rx="120" ry="220" fill="#8a2a5a" opacity="0.08"/>
+  <!-- Rays: rose-crimson left, gold right -->
+  <polygon points="198,264 -20,610 112,610" fill="url(#ltc-r1)" filter="url(#ltc-gl)" opacity="0.72"/>
+  <polygon points="198,264  26,600  86,600" fill="#a83878" opacity="0.34"/>
+  <polygon points="202,264 420,610 288,610" fill="url(#ltc-r2)" filter="url(#ltc-gl)" opacity="0.70"/>
+  <polygon points="202,264 372,600 312,600" fill="#f5e060" opacity="0.32"/>
+  <!-- Himation / outer mantle (white-ivory, draped from left shoulder) -->
+  <path d="M110,215 Q132,205 164,200 L156,492 Q120,480 108,448 Z" fill="url(#ltc-him)" opacity="0.72"/>
+  <!-- Tunic (rose-crimson, early Christian) -->
+  <path d="M160,162 Q136,212 130,492 L270,492 Q264,212 240,162 Q220,178 200,180 Q180,178 160,162 Z" fill="url(#ltc-tunic)" opacity="0.84"/>
+  <!-- Tunic fold lines (subtle) -->
+  <path d="M176,168 Q158,228 152,488" stroke="#e04078" stroke-width="1" fill="none" opacity="0.28"/>
+  <path d="M224,168 Q242,228 248,488" stroke="#e04078" stroke-width="1" fill="none" opacity="0.28"/>
+  <!-- Left arm — holds white lily (purity) -->
+  <path d="M160,192 Q124,238 116,306 Q128,316 142,310 Q150,272 166,224 Z" fill="url(#ltc-tunic)" opacity="0.84"/>
+  <!-- Left hand -->
+  <ellipse cx="122" cy="310" rx="13" ry="9" fill="#d4a878" opacity="0.88"/>
+  <!-- Lily stem -->
+  <line x1="120" y1="490" x2="116" y2="200" stroke="#4a7018" stroke-width="4" stroke-linecap="round"/>
+  <!-- Lily bloom (three petals, white) -->
+  <ellipse cx="110" cy="196" rx="12" ry="5" fill="#f0ece0" opacity="0.90" transform="rotate(-35,110,196)"/>
+  <ellipse cx="124" cy="191" rx="12" ry="5" fill="#f0ece0" opacity="0.90" transform="rotate(-10,124,191)"/>
+  <ellipse cx="118" cy="186" rx="11" ry="5" fill="#f0ece0" opacity="0.85" transform="rotate(20,118,186)"/>
+  <!-- Lily center stamens -->
+  <circle cx="118" cy="192" r="4" fill="#f5e090" opacity="0.80"/>
+  <!-- Right arm — holds palm of martyrdom upright -->
+  <path d="M240,192 Q276,232 282,294 Q270,306 256,300 Q252,268 242,220 Z" fill="url(#ltc-tunic)" opacity="0.84"/>
+  <!-- Right hand -->
+  <ellipse cx="278" cy="300" rx="13" ry="9" fill="#d4a878" opacity="0.88"/>
+  <!-- Palm branch (right) -->
+  <line x1="276" y1="490" x2="272" y2="172" stroke="#5a8020" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="262" cy="186" rx="14" ry="5" fill="#6aaa28" opacity="0.88" transform="rotate(-28,262,186)"/>
+  <ellipse cx="274" cy="179" rx="14" ry="5" fill="#7ac030" opacity="0.84" transform="rotate(-6,274,179)"/>
+  <ellipse cx="284" cy="183" rx="13" ry="5" fill="#6aaa28" opacity="0.78" transform="rotate(18,284,183)"/>
+  <ellipse cx="268" cy="198" rx="12" ry="4" fill="#88c838" opacity="0.72" transform="rotate(-45,268,198)"/>
+  <!-- Neck -->
+  <rect x="193" y="144" width="14" height="18" rx="4" fill="#d4a878" opacity="0.88"/>
+  <!-- Head (young martyr, serene expression) -->
+  <ellipse cx="200" cy="108" rx="26" ry="29" fill="#d4a878" opacity="0.92"/>
+  <!-- Dark wavy hair with part in center -->
+  <path d="M174,101 Q176,64 200,58 Q224,64 226,101 Q218,76 200,74 Q182,76 174,101 Z" fill="#140808" opacity="0.90"/>
+  <!-- Eyes (young, serene, slightly raised — toward heaven) -->
+  <ellipse cx="189" cy="106" rx="5" ry="3.8" fill="#0e0808"/>
+  <ellipse cx="211" cy="106" rx="5" ry="3.8" fill="#0e0808"/>
+  <circle cx="190" cy="105" r="1.5" fill="#ffffff" opacity="0.42"/>
+  <circle cx="212" cy="105" r="1.5" fill="#ffffff" opacity="0.42"/>
+  <!-- Brow -->
+  <path d="M182,98 Q189,95 195,98"  stroke="#140808" stroke-width="1.8" fill="none"/>
+  <path d="M205,98 Q211,95 218,98" stroke="#140808" stroke-width="1.8" fill="none"/>
+  <!-- Serene young smile -->
+  <path d="M192,119 Q200,122 208,119" stroke="#c09070" stroke-width="1" fill="none" opacity="0.55"/>
+  <!-- Halo rings -->
+  <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#ltc-g2)"/>
+  <circle cx="200" cy="108" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Double golden frame -->
+  <rect x="6"  y="6"  width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Name panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#040103" opacity="0.88"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">SANTA LETICIA · SAINT LAETITIA</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="#d060a0" font-style="italic">«Virgen y Mártir, Alegría del Evangelio»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#f5e060" font-style="italic" opacity="0.8">«Virgin and Martyr, Joy of the Gospel»</text>
+</svg>

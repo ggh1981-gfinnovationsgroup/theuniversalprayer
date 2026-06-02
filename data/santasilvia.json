@@ -1,0 +1,86 @@
+{
+  "id": "santasilvia",
+  "name": {
+    "es": "Santa Silvia de Roma",
+    "en": "Saint Sylvia of Rome"
+  },
+  "feast_day": {
+    "es": "3 de noviembre",
+    "en": "November 3"
+  },
+  "image": "/assets/images/santasilvia.svg",
+  "prayer": {
+    "es": "Santa Silvia, madre del gran Papa Gregorio, patrona de las madres y de las familias santas: intercede por nosotros. Tú que criaste a tus hijos en la fe, que después de enviudar elegiste una vida de oración y penitencia, y cuya santidad floreció en silencio al servicio de Dios: ayúdanos a ser fieles a nuestra vocación familiar. Ruega por todas las madres que educan a sus hijos en la fe, por las viudas que enfrentan la soledad, y por todos los que llevan el nombre de Silvia. Santa Silvia, ruega por nosotros. Amén.",
+    "en": "Saint Sylvia, mother of the great Pope Gregory, patron of mothers and holy families: intercede for us. You who raised your children in the faith, who after widowhood chose a life of prayer and penance, and whose holiness blossomed in silence at God's service: help us to be faithful to our family vocation. Pray for all mothers who raise their children in the faith, for widows who face loneliness, and for all who bear the name Sylvia. Saint Sylvia, pray for us. Amen."
+  },
+  "history": {
+    "es": "Santa Silvia de Roma nació hacia el año 520, en el seno de una familia de la nobleza romana. Se casó con Gordiano, senador romano de la familia Gordiani —también venerado como santo por algunos— y de esta unión nacieron al menos dos hijos: Gregorio y Palatino. Silvia educó a sus hijos en la fe cristiana con esmero y devoción, y su influencia espiritual en la formación de Gregorio fue profunda y decisiva. El propio Gregorio, en sus escritos, hace referencia a la santidad de su madre y a su hogar como un ambiente propicio para la oración y el servicio a Dios. Tras la muerte de su esposo, Silvia abrazó una vida de recogimiento y ascesis. Se estableció en una pequeña celda o habitación junto a la iglesia de San Pablo Extramuros, en Roma, dedicando el resto de su vida a la oración, al ayuno y a la penitencia. La tradición cuenta que allí, en su pequeña morada, llevaba una vida de extrema austeridad. Su hijo Gregorio, convertido ya en monje y luego en papa (590-604), la mencionó con amor y veneración. Su imagen fue incluida en un antiguo mosaico de la iglesia de Sant'Andrea in Clivio Scauri, construida sobre la casa familiar de los Gordiani, donde se muestra a Silvia ofreciendo una bandeja de verduras a su hijo —símbolo de su austeridad. Santa Silvia murió alrededor del año 592, poco antes o durante el pontificado de su hijo. Su fiesta se celebra el 3 de noviembre y es reconocida en el Martirologio Romano. Es patrona de las madres que crían hijos consagrados al servicio de Dios, de las viudas, y de todos los que llevan el nombre de Silvia.",
+    "en": "Saint Sylvia of Rome was born around the year 520, into a family of Roman nobility. She married Gordianus, a Roman senator of the Gordiani family — also venerated as a saint by some — and from this union were born at least two sons: Gregory and Palatinus. Sylvia raised her children in the Christian faith with care and devotion, and her spiritual influence on Gregory's formation was profound and decisive. Gregory himself, in his writings, refers to his mother's holiness and to his home as an environment conducive to prayer and service to God. After her husband's death, Sylvia embraced a life of recollection and asceticism. She settled in a small cell or room next to the Church of Saint Paul Outside the Walls, in Rome, devoting the rest of her life to prayer, fasting, and penance. Tradition recounts that there, in her small dwelling, she lived a life of extreme austerity. Her son Gregory, already a monk and later a pope (590–604), mentioned her with love and veneration. Her image was included in an ancient mosaic of the Church of Sant'Andrea in Clivio Scauri, built on the family home of the Gordiani, which depicts Sylvia offering a tray of vegetables to her son — a symbol of her austerity. Saint Sylvia died around the year 592, shortly before or during her son's pontificate. Her feast is celebrated on November 3 and she is recognized in the Roman Martyrology. She is patron of mothers who raise children consecrated to God's service, of widows, and of all who bear the name Sylvia."
+  },
+  "novena_prayers": {
+    "es": "Dios padre y madre de todo bien, que en Santa Silvia nos diste un modelo de maternidad cristiana, de vida contemplativa y de entrega silenciosa: por su intercesión, concede a todas las madres la sabiduría de educar a sus hijos en la fe, y a todas las familias la gracia de ser espacios donde Dios sea amado. Amén.",
+    "en": "God, father and mother of all goodness, who in Saint Sylvia gave us a model of Christian motherhood, of contemplative life, and of silent self-giving: through her intercession, grant all mothers the wisdom to raise their children in the faith, and all families the grace of being spaces where God is loved. Amen."
+  },
+  "novena": [
+    {
+      "day": 1,
+      "es": "Santa Silvia, que dedicaste tu vida a formar a tus hijos en la fe: intercede por todos los padres y madres del mundo, para que descubran en su vocación familiar la más alta forma de santidad.",
+      "en": "Saint Sylvia, who dedicated your life to forming your children in the faith: intercede for all fathers and mothers in the world, that they may discover in their family vocation the highest form of holiness."
+    },
+    {
+      "day": 2,
+      "es": "Santa Silvia, cuyo hijo Gregorio se convirtió en uno de los más grandes papas y doctores de la Iglesia: ruega por los hijos de todos nosotros, para que Dios los llame a cumplir con plenitud su vocación, cualquiera que ella sea.",
+      "en": "Saint Sylvia, whose son Gregory became one of the greatest popes and doctors of the Church: pray for all our children, that God may call them to fulfill their vocation fully, whatever it may be."
+    },
+    {
+      "day": 3,
+      "es": "Santa Silvia, que tras enviudar elegiste la oración y la austeridad: intercede por todas las viudas y los viudos, para que encuentren en Dios su apoyo y su consuelo, y en la oración su nuevo propósito.",
+      "en": "Saint Sylvia, who after widowhood chose prayer and austerity: intercede for all widows and widowers, that they may find in God their support and consolation, and in prayer their new purpose."
+    },
+    {
+      "day": 4,
+      "es": "Santa Silvia, que vivías en simplicidad y austeridad mientras tu hijo gobernaba la Iglesia: ayúdame a vivir con sencillez, a no apegar mi corazón a las cosas materiales, y a buscar lo esencial.",
+      "en": "Saint Sylvia, who lived in simplicity and austerity while your son governed the Church: help me to live simply, not to attach my heart to material things, and to seek what is essential."
+    },
+    {
+      "day": 5,
+      "es": "Santa Silvia, cuya influencia en Gregorio fue profunda aunque silenciosa: intercede por todos los educadores, catequistas y padres espirituales que forman en la fe a niños y jóvenes, muchas veces sin ver los frutos de su trabajo.",
+      "en": "Saint Sylvia, whose influence on Gregory was profound though silent: intercede for all educators, catechists, and spiritual directors who form children and young people in faith, often without seeing the fruits of their work."
+    },
+    {
+      "day": 6,
+      "es": "Santa Silvia, que viviste cerca de la basílica de San Pablo para estar próxima a la oración: enséñame a hacer de la liturgia y los sacramentos el centro de mi vida, y a buscar la presencia de Dios en los lugares sagrados.",
+      "en": "Saint Sylvia, who lived near the Basilica of Saint Paul to remain close to prayer: teach me to make the liturgy and sacraments the center of my life, and to seek God's presence in sacred places."
+    },
+    {
+      "day": 7,
+      "es": "Santa Silvia, patrona de las familias cristianas: ruega para que en los hogares del mundo se viva la oración familiar, se lea la Escritura y los padres sean los primeros evangelizadores de sus hijos.",
+      "en": "Saint Sylvia, patron of Christian families: pray that in homes throughout the world family prayer may be lived, Scripture read, and parents may be the first evangelizers of their children."
+    },
+    {
+      "day": 8,
+      "es": "Santa Silvia, cuya santidad floreció en el silencio y la vida ordinaria: ayúdame a encontrar la santidad precisamente donde estoy, en mi vida de cada día, y a no buscar grandeza visible sino fidelidad invisible.",
+      "en": "Saint Sylvia, whose holiness blossomed in silence and ordinary life: help me to find holiness precisely where I am, in my daily life, and not to seek visible greatness but invisible faithfulness."
+    },
+    {
+      "day": 9,
+      "es": "Santa Silvia, cierro esta novena confiándote a mi familia y a todos los que amo. Intercede por nuestros hogares para que sean lugares de amor, fe y oración. Lleva mis intenciones ante el Señor. Amén.",
+      "en": "Saint Sylvia, I close this novena entrusting my family and all those I love to you. Intercede for our homes that they may be places of love, faith, and prayer. Carry my intentions before the Lord. Amen."
+    }
+  ],
+  "chaplet": {
+    "available": false,
+    "es": "",
+    "en": ""
+  },
+  "litany": {
+    "available": true,
+    "es": "Señor, ten piedad. Cristo, ten piedad. Señor, ten piedad.\nCristo, óyenos. Cristo, escúchanos.\nDios Padre celestial, ten misericordia de nosotros.\nDios Hijo, Redentor del mundo, ten misericordia de nosotros.\nDios Espíritu Santo, ten misericordia de nosotros.\nSantísima Trinidad, un solo Dios, ten misericordia de nosotros.\nSanta María, Madre de Dios, ruega por nosotros.\nSanta Silvia, madre de San Gregorio el Grande, ruega por nosotros.\nSanta Silvia, modelo de maternidad cristiana, ruega por nosotros.\nSanta Silvia, que criaste a tus hijos en la fe, ruega por nosotros.\nSanta Silvia, que abrazaste la austeridad y la penitencia, ruega por nosotros.\nSanta Silvia, viuda consagrada a Dios, ruega por nosotros.\nSanta Silvia, patrona de las madres y las familias santas, ruega por nosotros.\nSanta Silvia, patrona de las que llevan tu nombre, ruega por nosotros.\nCordero de Dios, que quitas el pecado del mundo, perdónanos, Señor.\nCordero de Dios, que quitas el pecado del mundo, escúchanos, Señor.\nCordero de Dios, que quitas el pecado del mundo, ten misericordia de nosotros.\nOremos. Señor Dios, que en Santa Silvia nos diste un ejemplo de vida familiar santa y de entrega silenciosa: concédenos, por su intercesión, crecer en la santidad de vida cotidiana y ayudar a que nuestra familia sea camino hacia Ti. Por Cristo nuestro Señor. Amén.",
+    "en": "Lord, have mercy. Christ, have mercy. Lord, have mercy.\nChrist, hear us. Christ, graciously hear us.\nGod the Father of Heaven, have mercy on us.\nGod the Son, Redeemer of the world, have mercy on us.\nGod the Holy Spirit, have mercy on us.\nHoly Trinity, one God, have mercy on us.\nHoly Mary, Mother of God, pray for us.\nSaint Sylvia, mother of Saint Gregory the Great, pray for us.\nSaint Sylvia, model of Christian motherhood, pray for us.\nSaint Sylvia, who raised your children in the faith, pray for us.\nSaint Sylvia, who embraced austerity and penance, pray for us.\nSaint Sylvia, widow consecrated to God, pray for us.\nSaint Sylvia, patron of mothers and holy families, pray for us.\nSaint Sylvia, patron of those who bear your name, pray for us.\nLamb of God, who takes away the sins of the world, spare us, O Lord.\nLamb of God, who takes away the sins of the world, graciously hear us, O Lord.\nLamb of God, who takes away the sins of the world, have mercy on us.\nLet us pray. Lord God, who in Saint Sylvia gave us an example of holy family life and silent self-giving: grant us, through her intercession, to grow in holiness in daily life and to help our family be a path toward you. Through Christ our Lord. Amen."
+  },
+  "miracles": {
+    "available": true,
+    "es": "Aunque el registro hagiográfico de Santa Silvia no incluye milagros extraordinarios individuales documentados con la misma precisión que los mártires, la tradición reconoce que su mayor milagro fue la santidad de su hijo Gregorio, quien se convirtió en uno de los cuatro grandes Doctores de la Iglesia latina y en el papa que transformó la liturgia, la evangelización y la organización de la Iglesia en un momento crucial de la historia. Las oraciones y el ejemplo de Silvia son considerados por la tradición el suelo espiritual en que creció esa santidad. Además, numerosos testimonios a lo largo de los siglos, especialmente de madres que llevan el nombre de Silvia y de familias que enfrentan dificultades en la educación de sus hijos, reportan gracias, consolaciones espirituales y situaciones de reconciliación familiar atribuidas a su intercesión. La antigua iglesia de Sant'Andrea in Clivio Scauri en Roma —transformada por Gregorio a partir de la casa familiar— ha sido lugar de veneración a su memoria desde el siglo VI.",
+    "en": "Although the hagiographic record of Saint Sylvia does not include individually documented extraordinary miracles with the same precision as martyrs, tradition recognizes that her greatest miracle was the holiness of her son Gregory, who became one of the four great Doctors of the Latin Church and the pope who transformed the liturgy, evangelization, and organization of the Church at a crucial moment in history. Sylvia's prayers and example are considered by tradition the spiritual soil in which that holiness grew. In addition, numerous testimonies over the centuries, especially from mothers who bear the name Sylvia and from families facing difficulties in raising their children, report graces, spiritual consolations, and situations of family reconciliation attributed to her intercession. The ancient Church of Sant'Andrea in Clivio Scauri in Rome — transformed by Gregory from the family home — has been a place of veneration to her memory since the sixth century."
+  }
+}

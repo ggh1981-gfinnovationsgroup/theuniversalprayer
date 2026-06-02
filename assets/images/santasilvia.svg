@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="sv-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#0b0812"/><stop offset="100%" stop-color="#020205"/>
+    </radialGradient>
+    <radialGradient id="sv-atm" cx="50%" cy="38%" r="46%">
+      <stop offset="0%" stop-color="#5a3a7a" stop-opacity="0.28"/><stop offset="100%" stop-color="#5a3a7a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sv-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#7a50a8" stop-opacity="1"/><stop offset="100%" stop-color="#1a0a30" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="sv-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f5e060" stop-opacity="1"/><stop offset="100%" stop-color="#c9a84c" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="sv-stola" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7a50a8"/><stop offset="100%" stop-color="#2e1050"/>
+    </linearGradient>
+    <linearGradient id="sv-palla" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a2870"/><stop offset="100%" stop-color="#1a0830"/>
+    </linearGradient>
+    <filter id="sv-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sv-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#sv-bg)"/>
+  <rect width="400" height="600" fill="url(#sv-atm)"/>
+  <!-- Stars -->
+  <circle cx="55"  cy="32"  r="1.5" fill="#c8b8e0" opacity="0.65"/>
+  <circle cx="118" cy="20"  r="1"   fill="#c8b8e0" opacity="0.55"/>
+  <circle cx="308" cy="26"  r="1"   fill="#c8b8e0" opacity="0.50"/>
+  <circle cx="362" cy="46"  r="1.5" fill="#c8b8e0" opacity="0.60"/>
+  <!-- Roman arch background (faint) -->
+  <path d="M100,520 L100,300 Q100,220 200,220 Q300,220 300,300 L300,520" fill="none" stroke="#2a1842" stroke-width="28" opacity="0.45"/>
+  <path d="M100,520 L100,300 Q100,220 200,220 Q300,220 300,300 L300,520" fill="none" stroke="#3a2252" stroke-width="14" opacity="0.30"/>
+  <!-- Rays: violet left, gold right -->
+  <polygon points="198,264 -20,610 112,610" fill="url(#sv-r1)" filter="url(#sv-gl)" opacity="0.72"/>
+  <polygon points="198,264  25,600  88,600" fill="#7a50a8" opacity="0.34"/>
+  <polygon points="202,264 420,610 288,610" fill="url(#sv-r2)" filter="url(#sv-gl)" opacity="0.70"/>
+  <polygon points="202,264 372,600 312,600" fill="#f5e060" opacity="0.32"/>
+  <!-- Palla (outer mantle, draped over head and shoulders) -->
+  <path d="M136,138 Q100,180 98,492 L302,492 Q300,180 264,138 Q232,182 200,184 Q168,182 136,138 Z" fill="url(#sv-palla)" opacity="0.82"/>
+  <!-- Stola (inner tunic, violet) -->
+  <path d="M156,162 Q138,216 136,480 L264,480 Q262,216 244,162 Q222,178 200,180 Q178,178 156,162 Z" fill="url(#sv-stola)" opacity="0.80"/>
+  <!-- Head covering (palla over head) -->
+  <path d="M158,126 Q170,98 200,92 Q230,98 242,126 Q228,148 200,150 Q172,148 158,126 Z" fill="url(#sv-palla)" opacity="0.75"/>
+  <!-- Closed book held in both hands at chest (dark leather cover, gold clasp) -->
+  <rect x="160" y="292" width="80" height="58" rx="5" fill="#2a1808" opacity="0.92"/>
+  <rect x="162" y="294" width="76" height="54" rx="4" fill="none" stroke="#c9a84c" stroke-width="1.5" stroke-opacity="0.70"/>
+  <!-- Book spine -->
+  <line x1="200" y1="292" x2="200" y2="350" stroke="#3a2210" stroke-width="6" opacity="0.60"/>
+  <!-- Book clasp (golden) -->
+  <rect x="196" y="318" width="8" height="6" rx="2" fill="#c9a84c" opacity="0.90"/>
+  <!-- Gold letter on book cover (Scriptura / monogram) -->
+  <text x="200" y="332" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#c9a84c" opacity="0.55" font-style="italic">S</text>
+  <!-- Left hand visible holding book -->
+  <ellipse cx="152" cy="325" rx="14" ry="9" fill="#d4a878" opacity="0.82"/>
+  <!-- Right hand visible holding book -->
+  <ellipse cx="248" cy="325" rx="14" ry="9" fill="#d4a878" opacity="0.82"/>
+  <!-- Neck area -->
+  <rect x="193" y="144" width="14" height="18" rx="4" fill="#d4a878" opacity="0.88"/>
+  <!-- Face (slightly older, serene matron) -->
+  <ellipse cx="200" cy="108" rx="26" ry="29" fill="#d4a878" opacity="0.92"/>
+  <!-- Simple head covering line -->
+  <path d="M175,95 Q200,84 225,95" stroke="#3a1a58" stroke-width="8" fill="none" opacity="0.45"/>
+  <!-- Eyes (serene, downcast slightly — contemplative) -->
+  <ellipse cx="189" cy="110" rx="5" ry="3.5" fill="#0e0808"/>
+  <ellipse cx="211" cy="110" rx="5" ry="3.5" fill="#0e0808"/>
+  <circle cx="190" cy="109" r="1.5" fill="#ffffff" opacity="0.35"/>
+  <circle cx="212" cy="109" r="1.5" fill="#ffffff" opacity="0.35"/>
+  <!-- Gentle smile lines -->
+  <path d="M190,120 Q200,124 210,120" stroke="#c09070" stroke-width="1" fill="none" opacity="0.50"/>
+  <!-- Halo rings -->
+  <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#sv-g2)"/>
+  <circle cx="200" cy="108" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Double golden frame -->
+  <rect x="6"  y="6"  width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Name panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#030205" opacity="0.88"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">SANTA SILVIA · SAINT SYLVIA OF ROME</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="#a080d0" font-style="italic">«Madre de San Gregorio el Grande»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#f5e060" font-style="italic" opacity="0.8">«Mother of Saint Gregory the Great»</text>
+</svg>

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="fj-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#060a12"/><stop offset="100%" stop-color="#020306"/>
+    </radialGradient>
+    <radialGradient id="fj-atm" cx="50%" cy="38%" r="46%">
+      <stop offset="0%" stop-color="#1a3a6a" stop-opacity="0.26"/><stop offset="100%" stop-color="#1a3a6a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fj-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#2848a0" stop-opacity="1"/><stop offset="100%" stop-color="#080c20" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="fj-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f5e060" stop-opacity="1"/><stop offset="100%" stop-color="#c9a84c" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="fj-cassock" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1a"/><stop offset="100%" stop-color="#080808"/>
+    </linearGradient>
+    <filter id="fj-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="fj-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#fj-bg)"/>
+  <rect width="400" height="600" fill="url(#fj-atm)"/>
+  <!-- Stars -->
+  <circle cx="50"  cy="30"  r="1.5" fill="#b0c0e0" opacity="0.70"/>
+  <circle cx="116" cy="18"  r="1"   fill="#b0c0e0" opacity="0.55"/>
+  <circle cx="302" cy="24"  r="1"   fill="#b0c0e0" opacity="0.52"/>
+  <circle cx="358" cy="46"  r="1.5" fill="#b0c0e0" opacity="0.65"/>
+  <circle cx="38"  cy="78"  r="1"   fill="#b0c0e0" opacity="0.48"/>
+  <circle cx="378" cy="72"  r="1"   fill="#b0c0e0" opacity="0.52"/>
+  <!-- Faint Asian coastal map silhouette (India / Japan coast) -->
+  <path d="M20,520 Q60,480 90,440 Q100,420 120,400 Q140,380 160,390 Q180,395 195,380" fill="none" stroke="#1a3060" stroke-width="2" opacity="0.20"/>
+  <path d="M380,520 Q360,488 340,456 Q320,428 300,400 Q280,380 260,390" fill="none" stroke="#1a3060" stroke-width="2" opacity="0.20"/>
+  <!-- Small ship silhouette (bottom right) -->
+  <path d="M308,480 L308,460 Q320,455 332,460 L332,480 Z" fill="#0e1830" opacity="0.28"/>
+  <line x1="320" y1="460" x2="320" y2="440" stroke="#0e1830" stroke-width="2" opacity="0.28"/>
+  <path d="M310,448 L320,440 L330,448 Z" fill="#0e1830" opacity="0.22"/>
+  <!-- Rays: navy left, gold right -->
+  <polygon points="198,264 -20,610 112,610" fill="url(#fj-r1)" filter="url(#fj-gl)" opacity="0.72"/>
+  <polygon points="198,264  25,600  88,600" fill="#2848a0" opacity="0.34"/>
+  <polygon points="202,264 420,610 288,610" fill="url(#fj-r2)" filter="url(#fj-gl)" opacity="0.70"/>
+  <polygon points="202,264 372,600 312,600" fill="#f5e060" opacity="0.32"/>
+  <!-- Black Jesuit cassock (main body, simple and austere) -->
+  <path d="M154,162 Q122,216 120,492 L280,492 Q278,216 246,162 Q222,178 200,180 Q178,178 154,162 Z" fill="url(#fj-cassock)" opacity="0.90"/>
+  <!-- Cassock button line (Jesuit: single row of buttons down front) -->
+  <line x1="200" y1="162" x2="200" y2="492" stroke="#282828" stroke-width="2" opacity="0.50"/>
+  <circle cx="200" cy="210" r="3" fill="#2a2a2a" opacity="0.70"/>
+  <circle cx="200" cy="248" r="3" fill="#2a2a2a" opacity="0.70"/>
+  <circle cx="200" cy="286" r="3" fill="#2a2a2a" opacity="0.70"/>
+  <!-- White collar (Jesuit collar band) -->
+  <rect x="188" y="154" width="24" height="10" rx="4" fill="#e8e8e0" opacity="0.82"/>
+  <!-- Left arm raised — holds large crucifix upright (primary symbol) -->
+  <path d="M154,192 Q110,226 102,310 Q118,324 136,318 Q138,274 158,216 Z" fill="url(#fj-cassock)" opacity="0.90"/>
+  <ellipse cx="108" cy="320" rx="14" ry="10" fill="#d4a878" opacity="0.88"/>
+  <!-- Crucifix (prominent, held upright by left hand) -->
+  <!-- Cross shaft -->
+  <line x1="104" y1="490" x2="104" y2="168" stroke="#8a6020" stroke-width="8" stroke-linecap="round"/>
+  <!-- Cross beam -->
+  <line x1="76"  y1="226" x2="132" y2="226" stroke="#8a6020" stroke-width="7" stroke-linecap="round"/>
+  <!-- Corpus Christi (Christ on the cross) -->
+  <ellipse cx="104" cy="210" rx="7" ry="8" fill="#d4a878" opacity="0.90"/>
+  <line x1="96"  y1="220" x2="90"  y2="240" stroke="#d4a878" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+  <line x1="112" y1="220" x2="118" y2="240" stroke="#d4a878" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+  <line x1="104" y1="218" x2="104" y2="258" stroke="#d4a878" stroke-width="4" stroke-linecap="round" opacity="0.80"/>
+  <!-- Right arm — holds baptismal shell (symbol of mass baptisms) -->
+  <path d="M246,192 Q282,226 290,302 Q274,316 258,310 Q260,268 248,218 Z" fill="url(#fj-cassock)" opacity="0.90"/>
+  <ellipse cx="286" cy="306" rx="14" ry="10" fill="#d4a878" opacity="0.88"/>
+  <!-- Baptismal shell (scallop) -->
+  <path d="M268,360 Q286,340 304,360 Q303,382 286,390 Q269,382 268,360 Z" fill="#d8c898" opacity="0.85"/>
+  <line x1="278" y1="362" x2="280" y2="388" stroke="#a89060" stroke-width="1.2" opacity="0.60"/>
+  <line x1="286" y1="360" x2="286" y2="390" stroke="#a89060" stroke-width="1.2" opacity="0.60"/>
+  <line x1="294" y1="362" x2="292" y2="388" stroke="#a89060" stroke-width="1.2" opacity="0.60"/>
+  <!-- Water drops from shell (baptism) -->
+  <ellipse cx="278" cy="395" rx="2" ry="3" fill="#a0c0e0" opacity="0.55"/>
+  <ellipse cx="286" cy="398" rx="2" ry="3" fill="#a0c0e0" opacity="0.50"/>
+  <ellipse cx="294" cy="395" rx="2" ry="3" fill="#a0c0e0" opacity="0.48"/>
+  <!-- Neck -->
+  <rect x="193" y="144" width="14" height="18" rx="4" fill="#d4a878" opacity="0.88"/>
+  <!-- Head (Xavier: Basque nobleman, strong features, dark hair) -->
+  <ellipse cx="200" cy="108" rx="27" ry="30" fill="#d4a878" opacity="0.92"/>
+  <!-- Dark Basque hair (medium length, swept back) -->
+  <path d="M173,100 Q174,63 200,57 Q226,63 227,100 Q218,74 200,72 Q182,74 173,100 Z" fill="#100808" opacity="0.92"/>
+  <!-- Eyes (intense, apostolic gaze — missionary fervor) -->
+  <ellipse cx="189" cy="108" rx="5" ry="4" fill="#0e0808"/>
+  <ellipse cx="211" cy="108" rx="5" ry="4" fill="#0e0808"/>
+  <circle cx="190" cy="107" r="1.5" fill="#ffffff" opacity="0.42"/>
+  <circle cx="212" cy="107" r="1.5" fill="#ffffff" opacity="0.42"/>
+  <!-- Strong brow -->
+  <path d="M181,100 Q188,96 195,100" stroke="#100808" stroke-width="2" fill="none"/>
+  <path d="M205,100 Q212,96 219,100" stroke="#100808" stroke-width="2" fill="none"/>
+  <!-- Short beard / mustache (Xavier is often shown with beard) -->
+  <path d="M188,122 Q200,128 212,122 Q210,132 200,134 Q190,132 188,122 Z" fill="#100808" opacity="0.72"/>
+  <!-- Halo rings -->
+  <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#fj-g2)"/>
+  <circle cx="200" cy="108" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Double golden frame -->
+  <rect x="6"  y="6"  width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Name panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#020306" opacity="0.88"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">S. FRANCISCO JAVIER · ST. FRANCIS XAVIER</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="#6888d0" font-style="italic">«Apóstol de las Indias y el Japón»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#f5e060" font-style="italic" opacity="0.8">«Apostle of the Indies and Japan»</text>
+</svg>
