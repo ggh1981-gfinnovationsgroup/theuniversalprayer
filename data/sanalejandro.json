@@ -1,0 +1,86 @@
+{
+  "id": "sanalejandro",
+  "name": {
+    "es": "San Alejandro de Bérgamo",
+    "en": "Saint Alexander of Bergamo"
+  },
+  "feast_day": {
+    "es": "26 de agosto",
+    "en": "August 26"
+  },
+  "image": "/assets/images/sanalejandro.svg",
+  "prayer": {
+    "es": "San Alejandro de Bérgamo, soldado de Roma que elegiste ser soldado de Cristo: intercede por nosotros ante Dios. Tú que serviste con honor en la Legión Tebana y, cuando te ordenaron renegar de tu fe, preferiste la muerte al silencio: ayúdanos a ser valientes en confesar a Cristo delante del mundo. Patrono de todos los que llevan el nombre de Alejandro, protege a los soldados, a los perseguidos por la fe y a todos los que enfrentan la presión de abandonar sus convicciones. San Alejandro, ruega por nosotros. Amén.",
+    "en": "Saint Alexander of Bergamo, soldier of Rome who chose to be a soldier of Christ: intercede for us before God. You who served with honor in the Theban Legion and, when ordered to renounce your faith, chose death over silence: help us to be courageous in confessing Christ before the world. Patron of all who bear the name Alexander, protect soldiers, those persecuted for their faith, and all who face pressure to abandon their convictions. Saint Alexander, pray for us. Amen."
+  },
+  "history": {
+    "es": "San Alejandro de Bérgamo fue un soldado cristiano de la Legión Tebana, la célebre unidad del ejército romano compuesta en gran parte por soldados procedentes de la región de Tebas, en el Egipto cristiano. En el año 286, el emperador Maximiano ordenó a la Legión Tebana participar en la represión de los rebeldes galos, pero también en ceremonias religiosas paganas y en la persecución de cristianos. El comandante de la legión, Mauricio —también mártir y santo—, condujo a sus hombres a una negativa colectiva. Ante esta desobediencia, la legión fue diezmada varias veces hasta su masacre en Agaunum (la actual Saint-Maurice, en Suiza). Alejandro, que había logrado escapar, huyó hacia el norte de Italia. Llegó a la ciudad de Milán, donde fue hecho prisionero y encarcelado. Según la tradición, un ángel abrió sus cadenas durante la noche y pudo escapar de nuevo, llegando a la ciudad de Bérgamo. Allí siguió proclamando el Evangelio abiertamente hasta que fue capturado por las autoridades romanas. Tras rechazar una última vez apostatar de la fe cristiana, fue decapitado en Bérgamo en el año 303, bajo la persecución del emperador Diocleciano. Sus restos fueron venerados desde el principio por la comunidad cristiana de Bérgamo. Sobre su tumba se construyó una basílica que lleva su nombre y que es, hasta hoy, uno de los principales monumentos de la ciudad. San Alejandro es el patrono principal de la diócesis y ciudad de Bérgamo, y su fiesta se celebra el 26 de agosto con gran solemnidad en toda la región de Lombardía.",
+    "en": "Saint Alexander of Bergamo was a Christian soldier of the Theban Legion, the celebrated Roman army unit largely composed of soldiers from the region of Thebes in Christian Egypt. In 286, Emperor Maximian ordered the Theban Legion to participate in suppressing Gallic rebels, but also in pagan religious ceremonies and the persecution of Christians. The legion's commander, Maurice—also a martyr and saint—led his men in a collective refusal. Faced with this disobedience, the legion was decimated multiple times before its massacre at Agaunum (present-day Saint-Maurice, Switzerland). Alexander, who had managed to escape, fled toward northern Italy. He reached the city of Milan, where he was captured and imprisoned. According to tradition, an angel broke his chains during the night and he was able to escape again, reaching the city of Bergamo. There he continued to proclaim the Gospel openly until he was captured by the Roman authorities. After refusing one final time to apostatize from the Christian faith, he was beheaded in Bergamo in 303, under the persecution of Emperor Diocletian. His remains were venerated from the beginning by the Christian community of Bergamo. A basilica bearing his name was built over his tomb and remains to this day one of the city's principal monuments. Saint Alexander is the principal patron of the diocese and city of Bergamo, and his feast is celebrated on August 26 with great solemnity throughout the Lombardy region."
+  },
+  "novena_prayers": {
+    "es": "Dios todopoderoso, que coronaste a San Alejandro con la palma del martirio por su valentía en confesar la fe: por su intercesión, concédenos la fortaleza de vivir y proclamar nuestra fe sin miedo, especialmente en los momentos en que el mundo nos presiona a callar o a ceder. Amén.",
+    "en": "Almighty God, who crowned Saint Alexander with the palm of martyrdom for his courage in confessing the faith: through his intercession, grant us the strength to live and proclaim our faith without fear, especially in the moments when the world pressures us to be silent or to yield. Amen."
+  },
+  "novena": [
+    {
+      "day": 1,
+      "es": "San Alejandro, soldado de Cristo que no temiste la muerte: intercede por todos los que enfrentan persecución por su fe, especialmente los cristianos que hoy sufren violencia en diversas partes del mundo.",
+      "en": "Saint Alexander, soldier of Christ who did not fear death: intercede for all who face persecution for their faith, especially Christians who today suffer violence in various parts of the world."
+    },
+    {
+      "day": 2,
+      "es": "San Alejandro, que elegiste la fidelidad a Cristo sobre la comodidad y la vida: ayúdame a hacer pequeños actos de valentía en mi vida cotidiana —confesar mi fe, actuar con justicia, no callar cuando debo hablar.",
+      "en": "Saint Alexander, who chose faithfulness to Christ over comfort and life: help me to make small acts of courage in my daily life—confessing my faith, acting with justice, not being silent when I should speak."
+    },
+    {
+      "day": 3,
+      "es": "San Alejandro, miembro de la gloriosa Legión Tebana: ruega por los militares y fuerzas de seguridad del mundo, para que en el cumplimiento de su deber tengan siempre presente la dignidad humana y la ley de Dios.",
+      "en": "Saint Alexander, member of the glorious Theban Legion: pray for the military and security forces of the world, that in the fulfillment of their duty they may always keep in mind human dignity and the law of God."
+    },
+    {
+      "day": 4,
+      "es": "San Alejandro, que escapaste milagrosamente de prisión por la intervención de un ángel: intercede por los presos injustamente encarcelados, para que encuentren libertad, y por todos los que sufren en prisión, para que no se pierdan en la desesperación.",
+      "en": "Saint Alexander, who miraculously escaped from prison through an angel's intervention: intercede for those unjustly imprisoned, that they may find freedom, and for all who suffer in prison, that they may not be lost in despair."
+    },
+    {
+      "day": 5,
+      "es": "San Alejandro, que proclamaste el Evangelio en Bérgamo hasta el fin: intercede por los evangelizadores, misioneros y catequistas, para que tengan valentía y sabiduría al anunciar a Cristo en sus comunidades.",
+      "en": "Saint Alexander, who proclaimed the Gospel in Bergamo until the end: intercede for evangelizers, missionaries, and catechists, that they may have courage and wisdom in announcing Christ in their communities."
+    },
+    {
+      "day": 6,
+      "es": "San Alejandro, patrono de la ciudad y diócesis de Bérgamo: ruega por la Iglesia en Italia y en toda Europa, para que recupere el fervor de los mártires y sea testimonio vivo de Cristo en una cultura que se aleja de la fe.",
+      "en": "Saint Alexander, patron of the city and diocese of Bergamo: pray for the Church in Italy and throughout Europe, that it may recover the fervor of the martyrs and be a living witness to Christ in a culture that is drifting from faith."
+    },
+    {
+      "day": 7,
+      "es": "San Alejandro, cuyo nombre significa 'defensor del pueblo': intercede por los líderes políticos y civiles que llevan tu nombre, para que sean verdaderos defensores de los más débiles y gobiernen con justicia y honradez.",
+      "en": "Saint Alexander, whose name means 'defender of the people': intercede for political and civil leaders who bear your name, that they may be true defenders of the weakest and govern with justice and honesty."
+    },
+    {
+      "day": 8,
+      "es": "San Alejandro, patrono de todos los Alejandros y Alejandras: sé el intercesor especial de quienes llevan tu nombre, que encuentren en tu valentía y fidelidad un modelo para vivir su vocación cristiana con generosidad.",
+      "en": "Saint Alexander, patron of all the Alexanders and Alexandras: be the special intercessor of those who bear your name, may they find in your courage and faithfulness a model for living their Christian vocation generously."
+    },
+    {
+      "day": 9,
+      "es": "San Alejandro, concluyo esta novena agradecido por tu ejemplo. Dame la valentía que a ti no te faltó. Lleva mis peticiones ante Dios y ayúdame a ser fiel a Cristo hasta el final de mi vida. Amén.",
+      "en": "Saint Alexander, I conclude this novena grateful for your example. Give me the courage that never failed you. Carry my petitions before God and help me to be faithful to Christ until the end of my life. Amen."
+    }
+  ],
+  "chaplet": {
+    "available": false,
+    "es": "",
+    "en": ""
+  },
+  "litany": {
+    "available": true,
+    "es": "Señor, ten piedad. Cristo, ten piedad. Señor, ten piedad.\nCristo, óyenos. Cristo, escúchanos.\nDios Padre celestial, ten misericordia de nosotros.\nDios Hijo, Redentor del mundo, ten misericordia de nosotros.\nDios Espíritu Santo, ten misericordia de nosotros.\nSantísima Trinidad, un solo Dios, ten misericordia de nosotros.\nSanta María, Reina de los Mártires, ruega por nosotros.\nSan Alejandro, glorioso mártir de Cristo, ruega por nosotros.\nSan Alejandro, soldado valeroso de la Legión Tebana, ruega por nosotros.\nSan Alejandro, que preferiste la muerte antes que renegar de la fe, ruega por nosotros.\nSan Alejandro, que proclamaste el Evangelio hasta el martirio, ruega por nosotros.\nSan Alejandro, patrono de Bérgamo y su diócesis, ruega por nosotros.\nSan Alejandro, defensor de los perseguidos por la fe, ruega por nosotros.\nSan Alejandro, modelo de fortaleza y fidelidad, ruega por nosotros.\nSan Alejandro, patrono de todos los que llevan tu nombre, ruega por nosotros.\nCordero de Dios, que quitas el pecado del mundo, perdónanos, Señor.\nCordero de Dios, que quitas el pecado del mundo, escúchanos, Señor.\nCordero de Dios, que quitas el pecado del mundo, ten misericordia de nosotros.\nOremos. Señor Dios, que en San Alejandro nos diste un ejemplo de valentía y fidelidad hasta la muerte: concédenos, por su intercesión, el valor de confesar nuestra fe en toda circunstancia y de ser fieles a Ti sin importar el precio. Por Cristo nuestro Señor. Amén.",
+    "en": "Lord, have mercy. Christ, have mercy. Lord, have mercy.\nChrist, hear us. Christ, graciously hear us.\nGod the Father of Heaven, have mercy on us.\nGod the Son, Redeemer of the world, have mercy on us.\nGod the Holy Spirit, have mercy on us.\nHoly Trinity, one God, have mercy on us.\nHoly Mary, Queen of Martyrs, pray for us.\nSaint Alexander, glorious martyr of Christ, pray for us.\nSaint Alexander, valiant soldier of the Theban Legion, pray for us.\nSaint Alexander, who chose death rather than deny the faith, pray for us.\nSaint Alexander, who proclaimed the Gospel until martyrdom, pray for us.\nSaint Alexander, patron of Bergamo and its diocese, pray for us.\nSaint Alexander, defender of those persecuted for the faith, pray for us.\nSaint Alexander, model of strength and faithfulness, pray for us.\nSaint Alexander, patron of all who bear your name, pray for us.\nLamb of God, who takes away the sins of the world, spare us, O Lord.\nLamb of God, who takes away the sins of the world, graciously hear us, O Lord.\nLamb of God, who takes away the sins of the world, have mercy on us.\nLet us pray. Lord God, who in Saint Alexander gave us an example of courage and faithfulness unto death: grant us, through his intercession, the boldness to confess our faith in every circumstance and to be faithful to you no matter the cost. Through Christ our Lord. Amen."
+  },
+  "miracles": {
+    "available": true,
+    "es": "La tradición más antigua relacionada con San Alejandro es el relato de su liberación milagrosa de la prisión de Milán, donde según los primeros hagiógrafos un ángel rompió sus cadenas durante la noche y le abrió las puertas, permitiéndole escapar y continuar su misión evangelizadora. Este hecho es recogido en las actas más antiguas de su martirio. A lo largo de los siglos, la basílica de San Alejandro en Bérgamo ha sido escenario de numerosos testimonios de curación y protección atribuidos a su intercesión, en particular entre soldados y militares que lo invocan como patrono. También son numerosos los testimonios de conversiones y retornos a la fe de personas que visitaron su sepulcro. En el siglo XVII, durante una epidemia de peste en Bérgamo, la ciudad organizó procesiones con sus reliquias, y los cronistas de la época recogen que la mortalidad disminuyó notablemente tras estos actos de devoción. La devoción a San Alejandro en la región de Lombardía es una de las más antiguas y constantes de Italia.",
+    "en": "The oldest tradition associated with Saint Alexander is the account of his miraculous release from the prison in Milan, where according to the earliest hagiographers an angel broke his chains during the night and opened the doors, allowing him to escape and continue his evangelizing mission. This is recorded in the oldest acts of his martyrdom. Over the centuries, the Basilica of Saint Alexander in Bergamo has been the setting for numerous testimonies of healing and protection attributed to his intercession, particularly among soldiers and military personnel who invoke him as patron. Testimonies of conversions and returns to the faith by people who visited his tomb are also numerous. In the seventeenth century, during a plague epidemic in Bergamo, the city organized processions with his relics, and the chroniclers of the time record that mortality decreased notably after these acts of devotion. Devotion to Saint Alexander in the Lombardy region is one of the oldest and most enduring in Italy."
+  }
+}
