@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <radialGradient id="skysem" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#1a0a2a"/>
+      <stop offset="55%" stop-color="#10061a"/>
+      <stop offset="100%" stop-color="#0a0410"/>
+    </radialGradient>
+    <radialGradient id="glorysem" cx="50%" cy="42%" r="32%">
+      <stop offset="0%" stop-color="#8a2a5a" stop-opacity="0.3"/>
+      <stop offset="60%" stop-color="#5a1a3a" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#1a0a2a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="halosem" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e8c0d0"/>
+      <stop offset="60%" stop-color="#c080a0"/>
+      <stop offset="100%" stop-color="#8a4060"/>
+    </radialGradient>
+    <radialGradient id="facesem" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#f0d8c8"/>
+      <stop offset="100%" stop-color="#d8b090"/>
+    </radialGradient>
+    <linearGradient id="robsem" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5a2a60"/>
+      <stop offset="100%" stop-color="#2a1030"/>
+    </linearGradient>
+    <linearGradient id="mantlesem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8a5a10"/>
+      <stop offset="100%" stop-color="#5a3800"/>
+    </linearGradient>
+    <linearGradient id="panelsem" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a0a2a"/>
+      <stop offset="100%" stop-color="#0a0410"/>
+    </linearGradient>
+    <linearGradient id="cathedralsem" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#3a2a40"/>
+      <stop offset="100%" stop-color="#6a4a70"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background — dark violet night -->
+  <rect width="400" height="600" fill="url(#skysem)"/>
+  <circle cx="200" cy="250" r="130" fill="url(#glorysem)"/>
+
+  <!-- Cathedral silhouette in background -->
+  <!-- Main nave -->
+  <rect x="140" y="350" width="120" height="170" fill="url(#cathedralsem)" opacity="0.25"/>
+  <!-- Towers -->
+  <rect x="132" y="300" width="35" height="220" fill="url(#cathedralsem)" opacity="0.2"/>
+  <rect x="233" y="300" width="35" height="220" fill="url(#cathedralsem)" opacity="0.2"/>
+  <!-- Tower spires -->
+  <polygon points="132,300 149,265 167,300" fill="#3a2a40" opacity="0.2"/>
+  <polygon points="233,300 250,265 268,300" fill="#3a2a40" opacity="0.2"/>
+  <!-- Rose window -->
+  <circle cx="200" cy="370" r="18" fill="none" stroke="#c080a0" stroke-width="1.5" opacity="0.15"/>
+  <circle cx="200" cy="370" r="10" fill="none" stroke="#c080a0" stroke-width="1" opacity="0.12"/>
+  <!-- Cathedral arched windows -->
+  <path d="M155 380 Q155 370 160 365 Q165 370 165 380 Z" fill="none" stroke="#c080a0" stroke-width="1" opacity="0.12"/>
+  <path d="M235 380 Q235 370 240 365 Q245 370 245 380 Z" fill="none" stroke="#c080a0" stroke-width="1" opacity="0.12"/>
+
+  <!-- Stars -->
+  <circle cx="55" cy="35" r="1.5" fill="#e8c0d0" opacity="0.8"/>
+  <circle cx="110" cy="20" r="1" fill="#e8c0d0" opacity="0.7"/>
+  <circle cx="210" cy="12" r="1.5" fill="#e8c0d0" opacity="0.8"/>
+  <circle cx="285" cy="28" r="1" fill="#e8c0d0" opacity="0.7"/>
+  <circle cx="355" cy="45" r="1.5" fill="#e8c0d0" opacity="0.8"/>
+  <circle cx="35" cy="85" r="1" fill="#e8c0d0" opacity="0.6"/>
+  <circle cx="370" cy="100" r="1" fill="#e8c0d0" opacity="0.6"/>
+
+  <!-- Halo -->
+  <circle cx="200" cy="145" r="55" fill="url(#halosem)" opacity="0.88"/>
+  <circle cx="200" cy="145" r="50" fill="none" stroke="#e8c0d0" stroke-width="2" opacity="0.6"/>
+  <!-- Cross on halo -->
+  <line x1="200" y1="97" x2="200" y2="193" stroke="#e8c0d0" stroke-width="1.5" opacity="0.35"/>
+  <line x1="152" y1="145" x2="248" y2="145" stroke="#e8c0d0" stroke-width="1.5" opacity="0.35"/>
+
+  <!-- Head veil (noblewoman / matron) -->
+  <ellipse cx="200" cy="138" rx="50" ry="38" fill="#f0e8f0" opacity="0.92"/>
+  <path d="M152 138 Q152 190 170 215 Q185 225 200 228 Q215 225 230 215 Q248 190 248 138" fill="#e8dae8" opacity="0.5"/>
+  <!-- Veil sides -->
+  <path d="M152 138 Q140 165 145 200" stroke="#d0c0d0" stroke-width="1.5" fill="none"/>
+  <path d="M248 138 Q260 165 255 200" stroke="#d0c0d0" stroke-width="1.5" fill="none"/>
+
+  <!-- Face -->
+  <ellipse cx="200" cy="158" rx="34" ry="38" fill="url(#facesem)"/>
+
+  <!-- Eyes — mature, sorrowful but peaceful -->
+  <ellipse cx="188" cy="152" rx="5" ry="4" fill="#2a1030"/>
+  <ellipse cx="212" cy="152" rx="5" ry="4" fill="#2a1030"/>
+  <circle cx="189" cy="151" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="213" cy="151" r="1.5" fill="#fff" opacity="0.5"/>
+  <!-- Eyebrows -->
+  <path d="M182 145 Q188 142 194 145" stroke="#2a1030" stroke-width="2" fill="none"/>
+  <path d="M206 145 Q212 142 218 145" stroke="#2a1030" stroke-width="2" fill="none"/>
+  <!-- Nose -->
+  <path d="M198 158 Q197 166 199 170 Q200 172 201 170 Q203 166 202 158" fill="#d8b090" opacity="0.4"/>
+  <!-- Mouth — gentle, closed -->
+  <path d="M191 178 Q200 182 209 178" stroke="#b88080" stroke-width="1.5" fill="none"/>
+  <!-- Tear marks (subtly suggesting grief) -->
+  <path d="M185 162 Q183 172 184 178" stroke="#c090a0" stroke-width="0.8" fill="none" opacity="0.3"/>
+
+  <!-- Noble robe (purple/violet — noblewoman) -->
+  <path d="M142 222 Q160 212 200 210 Q240 212 258 222 L265 380 Q200 395 135 380 Z" fill="url(#robsem)"/>
+  <!-- Mantle (gold/royal) -->
+  <path d="M112 235 Q132 218 162 212 L158 365 Q122 375 108 345 Z" fill="url(#mantlesem)"/>
+  <path d="M288 235 Q268 218 238 212 L242 365 Q278 375 292 345 Z" fill="url(#mantlesem)"/>
+  <!-- Mantle trim -->
+  <path d="M112 235 Q132 218 162 212" stroke="#c8a020" stroke-width="2" fill="none"/>
+  <path d="M288 235 Q268 218 238 212" stroke="#c8a020" stroke-width="2" fill="none"/>
+  <!-- Noble belt -->
+  <rect x="145" y="292" width="110" height="9" rx="4" fill="#c8a020" opacity="0.8"/>
+
+  <!-- Church/monastery model (left hand) — iconographic attribute of foundresses -->
+  <g transform="translate(96, 268)">
+    <!-- Church base -->
+    <rect x="0" y="38" width="50" height="32" fill="#6a4a70"/>
+    <!-- Church nave roof -->
+    <polygon points="0,38 25,20 50,38" fill="#8a6a8a"/>
+    <!-- Tower -->
+    <rect x="18" y="8" width="14" height="42" fill="#7a5a7a"/>
+    <!-- Spire -->
+    <polygon points="18,8 25,-5 32,8" fill="#9a7a9a"/>
+    <!-- Cross on spire -->
+    <line x1="25" y1="-5" x2="25" y2="5" stroke="#c8a020" stroke-width="1.5"/>
+    <line x1="21" y1="0" x2="29" y2="0" stroke="#c8a020" stroke-width="1.5"/>
+    <!-- Window -->
+    <path d="M22 20 Q25 16 28 20 L28 28 L22 28 Z" fill="#1a0a2a" opacity="0.5"/>
+    <!-- Door -->
+    <path d="M20 55 Q25 50 30 55 L30 70 L20 70 Z" fill="#1a0a2a" opacity="0.6"/>
+  </g>
+
+  <!-- Scroll / deed of foundation (right hand) -->
+  <g transform="translate(246, 278)">
+    <rect x="0" y="0" width="52" height="60" rx="3" fill="#e8d8a8"/>
+    <rect x="-4" y="-3" width="60" height="8" rx="4" fill="#c8a060"/>
+    <rect x="-4" y="55" width="60" height="8" rx="4" fill="#c8a060"/>
+    <!-- Text lines -->
+    <line x1="6" y1="14" x2="46" y2="14" stroke="#5a3010" stroke-width="1" opacity="0.5"/>
+    <line x1="6" y1="21" x2="46" y2="21" stroke="#5a3010" stroke-width="1" opacity="0.4"/>
+    <line x1="6" y1="28" x2="46" y2="28" stroke="#5a3010" stroke-width="1" opacity="0.4"/>
+    <line x1="6" y1="35" x2="46" y2="35" stroke="#5a3010" stroke-width="1" opacity="0.4"/>
+    <line x1="6" y1="42" x2="46" y2="42" stroke="#5a3010" stroke-width="1" opacity="0.3"/>
+    <text x="26" y="10" text-anchor="middle" font-family="Georgia,serif" font-size="5" fill="#3a2000" opacity="0.7">Gurk 1043</text>
+  </g>
+
+  <!-- Lower robe -->
+  <path d="M158 368 L152 510 L178 510 L200 428 L222 510 L248 510 L242 368 Z" fill="#2a1030"/>
+  <!-- Robe lines -->
+  <line x1="174" y1="368" x2="170" y2="430" stroke="#4a2050" stroke-width="1" opacity="0.4"/>
+  <line x1="200" y1="368" x2="200" y2="438" stroke="#4a2050" stroke-width="1" opacity="0.4"/>
+  <line x1="226" y1="368" x2="230" y2="430" stroke="#4a2050" stroke-width="1" opacity="0.4"/>
+
+  <!-- Ground -->
+  <rect x="0" y="510" width="400" height="90" fill="#10081a" opacity="0.75"/>
+  <line x1="0" y1="520" x2="400" y2="520" stroke="#2a1a30" stroke-width="1" opacity="0.4"/>
+
+  <!-- Name panel (bilingual, required) -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="url(#panelsem)" opacity="0.93"/>
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="none" stroke="#c080a0" stroke-width="1" opacity="0.5"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a030" letter-spacing="3" opacity="0.95">SANTA EMMA  ·  SAINT EMMA</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#e8c0d0" font-style="italic">«De Gurk, Carintia»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#c080a0" font-style="italic" opacity="0.85">«Of Gurk, Carinthia»</text>
+</svg>
