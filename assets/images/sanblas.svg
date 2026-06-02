@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="sb-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#0a0e18"/><stop offset="100%" stop-color="#02040a"/>
+    </radialGradient>
+    <radialGradient id="sb-atm" cx="50%" cy="40%" r="48%">
+      <stop offset="0%" stop-color="#1838a0" stop-opacity="0.18"/><stop offset="100%" stop-color="#1838a0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sb-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#1838a0" stop-opacity="1"/><stop offset="100%" stop-color="#0a1860" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="sb-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f0d060" stop-opacity="1"/><stop offset="100%" stop-color="#c09030" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="sb-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sb-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#sb-bg)"/>
+  <rect width="400" height="600" fill="url(#sb-atm)"/>
+  <!-- Rays: blue left, gold right -->
+  <polygon points="198,268 -25,610 115,610" fill="url(#sb-r1)" filter="url(#sb-gl)" opacity="0.65"/>
+  <polygon points="198,268 15,600 80,600" fill="#1838a0" opacity="0.30"/>
+  <polygon points="202,268 425,610 288,610" fill="url(#sb-r2)" filter="url(#sb-gl)" opacity="0.65"/>
+  <polygon points="202,268 375,600 318,600" fill="#f0d060" opacity="0.30"/>
+  <!-- Bishop vestment (blue/violet) body -->
+  <path d="M160,155 Q132,205 118,400 Q200,428 282,400 Q268,205 240,155 Z" fill="#1828a0" opacity="0.88"/>
+  <!-- Gold bishop chasuble stripe down center -->
+  <path d="M194,155 L194,400 Q200,408 206,400 L206,155 Z" fill="#c09030" opacity="0.5"/>
+  <!-- Bishop stole ends -->
+  <path d="M182,155 Q178,230 172,340" stroke="#c09030" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M218,155 Q222,230 228,340" stroke="#c09030" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <!-- White alb under -->
+  <path d="M175,380 Q200,410 225,380 L225,405 Q200,430 175,405 Z" fill="#e8e0d0" opacity="0.4"/>
+  <!-- Arms raised in blessing gesture with two crossed candles -->
+  <path d="M140,215 Q112,258 108,305" stroke="#1828a0" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.90"/>
+  <path d="M260,215 Q288,258 292,305" stroke="#1828a0" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.90"/>
+  <!-- Hands -->
+  <ellipse cx="107" cy="312" rx="13" ry="16" fill="#c09070" opacity="0.88"/>
+  <ellipse cx="293" cy="312" rx="13" ry="16" fill="#c09070" opacity="0.88"/>
+  <!-- Two crossed candles (blessing of throats symbol) -->
+  <line x1="160" y1="290" x2="240" y2="350" stroke="#f5e88a" stroke-width="5" stroke-linecap="round" opacity="0.80"/>
+  <line x1="240" y1="290" x2="160" y2="350" stroke="#f5e88a" stroke-width="5" stroke-linecap="round" opacity="0.80"/>
+  <!-- Candle flames -->
+  <ellipse cx="160" cy="286" rx="5" ry="8" fill="#ffcc00" opacity="0.85" filter="url(#sb-g2)"/>
+  <ellipse cx="240" cy="286" rx="5" ry="8" fill="#ffcc00" opacity="0.85" filter="url(#sb-g2)"/>
+  <!-- Neck -->
+  <rect x="193" y="140" width="14" height="18" rx="4" fill="#c09070" opacity="0.9"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="106" rx="27" ry="31" fill="#c09070" opacity="0.92"/>
+  <!-- Bishop miter -->
+  <path d="M174,88 L180,50 L200,72 L220,50 L226,88 Z" fill="#c09030" opacity="0.88"/>
+  <path d="M180,50 L200,72 L220,50" fill="none" stroke="#e8d070" stroke-width="2" opacity="0.6"/>
+  <!-- Miter band -->
+  <rect x="174" y="86" width="52" height="6" rx="2" fill="#8a6010" opacity="0.7"/>
+  <!-- Dark beard -->
+  <path d="M184,126 Q186,148 200,155 Q214,148 216,126 Q208,142 200,144 Q192,142 184,126 Z" fill="#2a2018" opacity="0.65"/>
+  <!-- Eyes — forward, compassionate -->
+  <ellipse cx="190" cy="108" rx="5" ry="4" fill="#1a1008" opacity="0.85"/>
+  <ellipse cx="210" cy="108" rx="5" ry="4" fill="#1a1008" opacity="0.85"/>
+  <!-- Halo (partially behind miter) -->
+  <circle cx="200" cy="106" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.60" filter="url(#sb-g2)"/>
+  <circle cx="200" cy="106" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Bishop crozier (staff) on right side -->
+  <path d="M295,195 Q310,150 295,120 Q280,100 270,115 Q260,130 275,140 Q285,148 282,162" stroke="#c09030" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.70"/>
+  <line x1="295" y1="195" x2="310" y2="440" stroke="#c09030" stroke-width="6" stroke-linecap="round" opacity="0.65"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#1838a0" stroke-width="1.2" stroke-opacity="0.45"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a030" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Name panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#02040a" opacity="0.88"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a030" letter-spacing="3" opacity="0.95">SAN BLAS DE SEBASTE  ·  SAINT BLAISE OF SEBASTE</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#b0c0f0" font-style="italic">«San Blas de Sebaste»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#90a0d0" font-style="italic" opacity="0.8">«Saint Blaise of Sebaste»</text>
+</svg>
