@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="aa-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#100805"/><stop offset="100%" stop-color="#06030a"/>
+    </radialGradient>
+    <radialGradient id="aa-glow" cx="50%" cy="38%" r="44%">
+      <stop offset="0%" stop-color="#c07830" stop-opacity="0.22"/><stop offset="100%" stop-color="#c07830" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aa-earth" cx="50%" cy="100%" r="55%">
+      <stop offset="0%" stop-color="#c08030" stop-opacity="0.45"/><stop offset="70%" stop-color="#c08030" stop-opacity="0.15"/><stop offset="100%" stop-color="#c08030" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="aa-r1" x1="50%" y1="0%" x2="5%" y2="100%">
+      <stop offset="0%" stop-color="#8a5a00" stop-opacity="1"/><stop offset="100%" stop-color="#8a5a00" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="aa-r2" x1="50%" y1="0%" x2="95%" y2="100%">
+      <stop offset="0%" stop-color="#f5e0a0" stop-opacity="1"/><stop offset="100%" stop-color="#c09030" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="aa-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="aa-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="aa-glow-f"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#aa-bg)"/>
+  <rect width="400" height="600" fill="url(#aa-glow)"/>
+  <!-- Warm earth light from below -->
+  <ellipse cx="200" cy="530" rx="180" ry="100" fill="url(#aa-earth)" filter="url(#aa-glow-f)" opacity="0.9"/>
+  <!-- Rays -->
+  <polygon points="196,268 -30,610 110,610" fill="url(#aa-r1)" filter="url(#aa-gl)" opacity="0.55"/>
+  <polygon points="204,268 430,610 290,610" fill="url(#aa-r2)" filter="url(#aa-gl)" opacity="0.65"/>
+  <!-- Cloak — deep blue-indigo, elderly matriarch -->
+  <path d="M150,160 Q118,210 105,410 Q200,440 295,410 Q282,210 250,160 Z" fill="#1a1840" opacity="0.95"/>
+  <!-- Inner tunic — warm ochre/gold -->
+  <path d="M175,160 Q165,200 160,310 L240,310 Q235,200 225,160 Z" fill="#8a5a00" opacity="0.72"/>
+  <!-- White veil over head and shoulders -->
+  <path d="M154,118 Q148,90 200,80 Q252,90 246,118 Q240,105 200,102 Q160,105 154,118 Z" fill="#e8dfc8" opacity="0.90"/>
+  <path d="M154,118 Q148,145 152,170" stroke="#e8dfc8" stroke-width="12" fill="none" opacity="0.75" stroke-linecap="round"/>
+  <path d="M246,118 Q252,145 248,170" stroke="#e8dfc8" stroke-width="12" fill="none" opacity="0.75" stroke-linecap="round"/>
+  <!-- Young Mary (small figure held/beside her, slightly left) -->
+  <!-- Mary's robe — light blue -->
+  <path d="M120,280 Q108,310 106,380 Q150,390 165,380 Q158,310 144,280 Z" fill="#2a4a8a" opacity="0.75"/>
+  <!-- Mary's veil -->
+  <path d="M130,236 Q128,222 132,218 Q146,212 150,218 Q152,224 150,236" stroke="#e0e8f0" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.80"/>
+  <!-- Mary's head (child) -->
+  <ellipse cx="140" cy="248" rx="14" ry="16" fill="#b07a50" opacity="0.88"/>
+  <!-- Mary's halo (small) -->
+  <circle cx="140" cy="248" r="22" fill="none" stroke="#f5e0a0" stroke-width="1.2" stroke-opacity="0.55" filter="url(#aa-g2)"/>
+  <!-- Ana's arm around Mary's shoulders -->
+  <path d="M160,195 Q148,240 136,268" stroke="#1a1840" stroke-width="14" fill="none" stroke-linecap="round" opacity="0.90"/>
+  <!-- Ana's right arm extended, pointing upward / blessing gesture -->
+  <path d="M240,195 Q260,240 268,272" stroke="#1a1840" stroke-width="14" fill="none" stroke-linecap="round" opacity="0.90"/>
+  <ellipse cx="270" cy="276" rx="9" ry="7" fill="#b07a50" opacity="0.82"/>
+  <!-- Ana's neck -->
+  <rect x="194" y="143" width="12" height="16" rx="3" fill="#b07a50" opacity="0.88"/>
+  <!-- Ana's head — elderly, serene face -->
+  <ellipse cx="200" cy="110" rx="26" ry="30" fill="#b07a50" opacity="0.90"/>
+  <!-- White veil tight on head -->
+  <path d="M176,100 Q178,80 200,74 Q222,80 224,100" fill="#e8dfc8" opacity="0.85"/>
+  <!-- Eyebrows (slight arc, elderly) -->
+  <path d="M185,101 Q190,98 194,101" stroke="#5a3010" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.75"/>
+  <path d="M206,101 Q210,98 215,101" stroke="#5a3010" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.75"/>
+  <!-- Eyes — warm, slightly downward gaze -->
+  <ellipse cx="190" cy="108" rx="5" ry="4" fill="#3a2010" opacity="0.78"/>
+  <ellipse cx="210" cy="108" rx="5" ry="4" fill="#3a2010" opacity="0.78"/>
+  <!-- Mouth — gentle smile -->
+  <path d="M192,124 Q200,128 208,124" stroke="#8a5030" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.65"/>
+  <!-- Halo — Ana -->
+  <circle cx="200" cy="110" r="52" fill="none" stroke="#f5e0a0" stroke-width="1.8" stroke-opacity="0.72" filter="url(#aa-g2)"/>
+  <circle cx="200" cy="110" r="46" fill="none" stroke="#f5e0a0" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Lily — symbol of purity/motherhood, lower center -->
+  <path d="M200,480 L200,420" stroke="#7a8a50" stroke-width="3" stroke-linecap="round"/>
+  <path d="M188,432 Q200,420 212,432 Q200,424 188,432 Z" fill="#e8e8e0" opacity="0.70"/>
+  <path d="M185,446 Q200,430 215,446 Q200,435 185,446 Z" fill="#e8e8e0" opacity="0.60"/>
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#8a5a00" stroke-width="1.2" stroke-opacity="0.50"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a030" stroke-width="0.5" stroke-opacity="0.20"/>
+  <!-- Name panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#06030a" opacity="0.90"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a030" letter-spacing="3" opacity="0.95">SANTA ANA  ·  SAINT ANNE</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#d0c0a0" font-style="italic">«Santa Ana»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#b0a080" font-style="italic" opacity="0.8">«Saint Anne»</text>
+</svg>
