@@ -266,6 +266,17 @@ const KEYWORD_MAP = {
   sanfranciscojavier: 'francisco javier francis xavier jesuita jesuit ignacio loyola loyola misionero missionary apostol apostle indias indies japon japan asia goa india bautismo baptism evangelizacion evangelization navarra navarre espana spain canonizado canonized cuerpo incorrupto incorrupt body misiones missions vocacion vocation francisco javier nombre name',
 };
 
+// ── FAVORITES (localStorage) ───────────────────────
+function getFavs() {
+  try { return JSON.parse(localStorage.getItem('tup_favs') || '[]'); } catch { return []; }
+}
+function toggleFav(id) {
+  const favs = getFavs();
+  const idx = favs.indexOf(id);
+  if (idx === -1) favs.push(id); else favs.splice(idx, 1);
+  localStorage.setItem('tup_favs', JSON.stringify(favs));
+}
+
 // ── STATE ──────────────────────────────────────────
 let currentLang = 'en';
 let intercessorData = null;
@@ -451,9 +462,23 @@ async function initHomePage() {
 
   initFeaturedSecond(); // fire independently, no await
 
-  const sortedIntercessors = [...INTERCESSORS].sort((a, b) =>
-    a.name[currentLang].localeCompare(b.name[currentLang], currentLang === 'es' ? 'es' : 'en', { sensitivity: 'base' })
-  );
+  const favs = getFavs();
+  const sortedIntercessors = [...INTERCESSORS].sort((a, b) => {
+    const aFav = favs.includes(a.id);
+    const bFav = favs.includes(b.id);
+    if (aFav !== bFav) return aFav ? -1 : 1;
+    return a.name[currentLang].localeCompare(b.name[currentLang], currentLang === 'es' ? 'es' : 'en', { sensitivity: 'base' });
+  });
+
+  // Fav toggle delegation (before the loop so it's ready when cards render)
+  grid.addEventListener('click', e => {
+    const btn = e.target.closest('.card-fav-btn');
+    if (!btn) return;
+    e.preventDefault();
+    e.stopPropagation();
+    toggleFav(btn.dataset.favId);
+    btn.classList.toggle('is-fav');
+  });
 
   for (const meta of sortedIntercessors) {
     try {
@@ -617,8 +642,12 @@ function buildCard(data, meta) {
 
   const specialty = meta.specialty ? meta.specialty[lang] : '';
 
+  const isFav = getFavs().includes(meta.id);
   card.innerHTML = `
-    <div class="card-image-wrap">${imgHtml}</div>
+    <div class="card-image-wrap">
+      ${imgHtml}
+      <button class="card-fav-btn${isFav ? ' is-fav' : ''}" data-fav-id="${meta.id}" aria-label="${lang === 'es' ? 'Favorito' : 'Favorite'}">★</button>
+    </div>
     <div class="card-body">
       <div class="card-name">${data.name[lang]}</div>
       <div class="card-feast">${i18n[lang].feast_day} ${data.feast_day[lang]}</div>
