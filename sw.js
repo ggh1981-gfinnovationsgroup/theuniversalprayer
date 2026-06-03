@@ -3,7 +3,7 @@
    Cache-first strategy: works fully offline after first load
    ===================================================== */
 
-const CACHE = 'tup-v2';
+const CACHE = 'tup-v4';
 
 // All files to pre-cache on install
 const PRECACHE_URLS = [
@@ -124,27 +124,52 @@ self.addEventListener('activate', event => {
   );
 });
 
-// ── FETCH: cache-first, fall back to network ──────
+// ── FETCH: stale-while-revalidate for core assets ─
+// Serve from cache instantly; always refresh cache in background.
+// Max staleness = 1 page load. Images/JSON: cache-first (rarely change).
 self.addEventListener('fetch', event => {
-  // Only handle GET requests for same origin or fonts/CDN
   if (event.request.method !== 'GET') return;
 
-  event.respondWith(
-    caches.match(event.request).then(cached => {
-      if (cached) return cached;
+  const url = new URL(event.request.url);
+  const isCore = /\.(html|js|css)$/.test(url.pathname) || url.pathname === '/' || url.pathname.endsWith('/');
+  const isStatic = /\.(svg|png|ico|webp|json|woff2?)$/.test(url.pathname);
 
-      // Not in cache: fetch from network and cache for next time
-      return fetch(event.request).then(response => {
-        if (!response || response.status !== 200) return response;
-        const clone = response.clone();
-        caches.open(CACHE).then(cache => cache.put(event.request, clone));
-        return response;
-      }).catch(() => {
-        // Offline and not in cache: return offline page for navigations
-        if (event.request.mode === 'navigate') {
-          return caches.match('/');
-        }
-      });
-    })
-  );
+  if (isCore) {
+    // Stale-while-revalidate: return cache immediately, update in background
+    event.respondWith(
+      caches.open(CACHE).then(cache =>
+        cache.match(event.request).then(cached => {
+          const networkFetch = fetch(event.request).then(response => {
+            if (response && response.status === 200) {
+              cache.put(event.request, response.clone());
+            }
+            return response;
+          }).catch(() => null);
+
+          return cached || networkFetch;
+        })
+      )
+    );
+  } else if (isStatic) {
+    // Cache-first for images and data: serve from cache, fetch if missing
+    event.respondWith(
+      caches.match(event.request).then(cached => {
+        if (cached) return cached;
+        return fetch(event.request).then(response => {
+          if (response && response.status === 200) {
+            const clone = response.clone();
+            caches.open(CACHE).then(cache => cache.put(event.request, clone));
+          }
+          return response;
+        }).catch(() => {
+          if (event.request.mode === 'navigate') return caches.match('/');
+        });
+      })
+    );
+  } else {
+    // Everything else: network-first
+    event.respondWith(
+      fetch(event.request).catch(() => caches.match(event.request))
+    );
+  }
 });
