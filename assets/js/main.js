@@ -184,6 +184,7 @@ const INTERCESSORS = [
   { id: 'santaleticia',        subdomain: 'santaleticia',        chaplet: false, novena: true,  color: '#8a2a5a', short: { es: 'Sta. Leticia',    en: 'St. Laetitia'     }, name: { en: 'Saint Laetitia (Leticia)',            es: 'Santa Leticia (Laetitia)'                }, specialty: { es: 'Alegría y fe en pruebas',   en: 'Joy & faith in trials'       } },
   { id: 'sanpedro',            subdomain: 'sanpedro',            chaplet: false, novena: true,  color: '#1a3a7a', short: { es: 'San Pedro',       en: 'St. Peter'        }, name: { en: 'Saint Peter the Apostle',            es: 'San Pedro Apóstol'                       }, specialty: { es: 'La Iglesia y el Papado',    en: 'The Church & the Papacy'     } },
   { id: 'sanfranciscojavier',  subdomain: 'sanfranciscojavier',  chaplet: false, novena: true,  color: '#1a3a6a', short: { es: 'S. Francisco Javier', en: 'St. Francis Xavier' }, name: { en: 'Saint Francis Xavier',             es: 'San Francisco Javier'                    }, specialty: { es: 'Misiones y Asia',           en: 'Missions & Asia'             } },
+  { id: 'sancarloslwanga',     subdomain: 'sancarloslwanga',     chaplet: false, novena: true,  color: '#4a1a08', short: { es: 'S. Carlos Lwanga',  en: 'St. Charles Lwanga' }, name: { en: 'Saint Charles Lwanga',             es: 'San Carlos Lwanga'                       }, specialty: { es: 'Jóvenes y mártires de África', en: 'Youth & Martyrs of Africa'  } },
 ];
 
 // ── KEYWORD MAP — synonyms for prayer-intent search ──────
@@ -264,6 +265,7 @@ const KEYWORD_MAP = {
   santaleticia:       'leticia laetitia alegria joy felicidad happiness virgen virgin martir martyr primitiva iglesia early church persecucion persecution martirologio romano roman martyrology diocleciano diocletian siglo tercero third century nombre leticia laetitia name pascua pasqua easter resurrection',
   sanpedro:           'pedro peter simon simon cefas cephas apostol apostle primer papa first pope pescador fisherman llaves keys reino heaven galilea galilee roma rome crucificado crucified invertida inverted upside down vaticano vatican basilica pescador fisherman pentecostes pentecost milagros miracles tabita tabitha eneas aeneas sombra shadow sanacion healing vicario vicar mision mission unidad unity iglesia church',
   sanfranciscojavier: 'francisco javier francis xavier jesuita jesuit ignacio loyola loyola misionero missionary apostol apostle indias indies japon japan asia goa india bautismo baptism evangelizacion evangelization navarra navarre espana spain canonizado canonized cuerpo incorrupto incorrupt body misiones missions vocacion vocation francisco javier nombre name',
+  sancarloslwanga:    'carlos lwanga charles uganda martires martyrs africa jovenes youth valentía courage pureza purity fe bajo presion faith under pressure mwanga fuego fire hoguera stake pajes pages corte real royal court conversion convertidos converts catequista catechist bautismo baptism namugongo padres blancos white fathers buganda kampala canonizados canonized pablo VI paul VI kizito companeros companions africa subsahariana sub-saharan africa presion pressure resistencia resistance dignidad dignity identidad cristiana christian identity',
 };
 
 // ── FAVORITES (localStorage) ───────────────────────
@@ -351,6 +353,7 @@ const FEAST_DAYS = {
   '05-22': ['santarita'],
   '05-24': ['mariaauxiliadora'],
   '05-26': ['sanfelipeneri'],
+  '06-03': ['sancarloslwanga'],
   '06-13': ['sanantonio'],
   '06-16': ['sanismael'],
   '06-25': ['sanguillermo'],

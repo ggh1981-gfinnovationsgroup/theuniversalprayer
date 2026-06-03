@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="scl-bg" cx="50%" cy="55%" r="70%">
+      <stop offset="0%" stop-color="#2a0d04"/><stop offset="60%" stop-color="#100500"/><stop offset="100%" stop-color="#060200"/>
+    </radialGradient>
+    <linearGradient id="scl-fire1" x1="40%" y1="100%" x2="20%" y2="0%">
+      <stop offset="0%" stop-color="#f07018" stop-opacity="1"/><stop offset="55%" stop-color="#d03808" stop-opacity="0.6"/><stop offset="100%" stop-color="#f8b040" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="scl-fire2" x1="60%" y1="100%" x2="80%" y2="0%">
+      <stop offset="0%" stop-color="#f8b040" stop-opacity="1"/><stop offset="55%" stop-color="#f07018" stop-opacity="0.5"/><stop offset="100%" stop-color="#f8d060" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="scl-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="scl-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="scl-ember"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#scl-bg)"/>
+  <!-- Ember glow -->
+  <ellipse cx="200" cy="440" rx="160" ry="80" fill="#f06010" opacity="0.18" filter="url(#scl-ember)"/>
+  <!-- Fire — left cluster -->
+  <path d="M108,470 Q88,400 118,365 Q102,402 136,372 Q118,408 152,388 Q133,425 158,410 Q142,445 128,470 Z" fill="url(#scl-fire1)" filter="url(#scl-gl)" opacity="0.88"/>
+  <!-- Fire — center tall -->
+  <path d="M172,475 Q155,390 192,348 Q174,392 208,360 Q190,400 224,378 Q203,418 228,400 Q210,448 200,475 Z" fill="#f8b040" filter="url(#scl-gl)" opacity="0.72"/>
+  <!-- Fire — right cluster -->
+  <path d="M272,468 Q292,398 262,362 Q278,400 244,370 Q262,406 228,386 Q248,424 222,408 Q238,444 252,468 Z" fill="url(#scl-fire2)" filter="url(#scl-gl)" opacity="0.84"/>
+  <!-- Small embers -->
+  <ellipse cx="148" cy="458" rx="7" ry="11" fill="#d04010" opacity="0.65"/>
+  <ellipse cx="252" cy="453" rx="6" ry="9"  fill="#f08030" opacity="0.60"/>
+  <ellipse cx="200" cy="462" rx="5" ry="8"  fill="#f8d060" opacity="0.55"/>
+  <!-- Robe / bark-cloth tunic — warm ochre-brown -->
+  <path d="M172,168 Q144,218 130,415 Q200,442 270,415 Q256,218 228,168 Z" fill="#8c4a1c" opacity="0.92"/>
+  <!-- Tunic highlight -->
+  <path d="M188,168 Q176,215 172,360 Q192,365 200,360 Q196,215 200,168 Z" fill="#b46828" opacity="0.32"/>
+  <!-- Left arm -->
+  <path d="M172,178 Q136,224 124,276" stroke="#8c4a1c" stroke-width="21" fill="none" stroke-linecap="round" opacity="0.90"/>
+  <!-- Right arm — raised, holding cross -->
+  <path d="M228,178 Q262,220 272,270" stroke="#8c4a1c" stroke-width="20" fill="none" stroke-linecap="round" opacity="0.88"/>
+  <!-- Hands -->
+  <ellipse cx="124" cy="280" rx="13" ry="15" fill="#6a3010" opacity="0.92"/>
+  <ellipse cx="272" cy="274" rx="13" ry="15" fill="#6a3010" opacity="0.92"/>
+  <!-- Cross held in right hand -->
+  <line x1="272" y1="240" x2="272" y2="322" stroke="#e8c97a" stroke-width="5.5" stroke-linecap="round" opacity="0.90"/>
+  <line x1="256" y1="258" x2="288" y2="258" stroke="#e8c97a" stroke-width="4"   stroke-linecap="round" opacity="0.90"/>
+  <!-- Neck -->
+  <rect x="194" y="150" width="12" height="20" rx="4" fill="#6a3010" opacity="0.92"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="118" rx="28" ry="32" fill="#6a3010" opacity="0.94"/>
+  <!-- Hair — short, close cropped -->
+  <path d="M172,114 Q175,82 200,78 Q225,82 228,114 Q220,92 200,90 Q180,92 172,114 Z" fill="#1e0c04" opacity="0.90"/>
+  <!-- Jaw shadow -->
+  <path d="M180,140 Q183,157 200,160 Q217,157 220,140 Q212,150 200,151 Q188,150 180,140 Z" fill="#1e0c04" opacity="0.58"/>
+  <!-- Halo -->
+  <circle cx="200" cy="118" r="54" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.68" filter="url(#scl-g2)"/>
+  <circle cx="200" cy="118" r="47" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Frame -->
+  <rect x="6"  y="6"  width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.50"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Name panel -->
+  <rect x="18" y="524" width="364" height="70" rx="6" fill="#060200" opacity="0.90"/>
+  <line x1="46" y1="531" x2="354" y2="531" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="545" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" fill="#c9a84c"  letter-spacing="2.5" opacity="0.92">SAN CARLOS LWANGA  ·  SAINT CHARLES LWANGA</text>
+  <text x="200" y="562" text-anchor="middle" font-family="Arial,sans-serif" font-size="7"   fill="#f08030" letter-spacing="2"   opacity="0.78">MÁRTIR DE UGANDA  ·  MARTYR OF UGANDA</text>
+  <text x="200" y="579" text-anchor="middle" font-family="Arial,sans-serif" font-size="6.5" fill="#c9a84c"  letter-spacing="2.5" opacity="0.52">3 DE JUNIO  ·  JUNE 3</text>
+</svg>
