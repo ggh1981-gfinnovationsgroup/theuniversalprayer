@@ -1,0 +1,286 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="400" height="560">
+  <defs>
+    <!-- Background: deep desert night, warm dark ochre-black -->
+    <linearGradient id="sjb-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0c0800"/>
+      <stop offset="100%" stop-color="#180e02"/>
+    </linearGradient>
+    <!-- Ray left: desert gold / sun -->
+    <linearGradient id="sjb-r1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4900a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#5a3800" stop-opacity="0.0"/>
+    </linearGradient>
+    <!-- Ray right: prophetic fire-amber -->
+    <linearGradient id="sjb-r2" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e85010" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#4a1800" stop-opacity="0.0"/>
+    </linearGradient>
+    <!-- Halo: brilliant gold, forerunner of the Light -->
+    <radialGradient id="sjb-halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff0a0" stop-opacity="0.75"/>
+      <stop offset="50%" stop-color="#e8b820" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#c09000" stop-opacity="0.0"/>
+    </radialGradient>
+    <!-- Ambient body glow: warm desert -->
+    <radialGradient id="sjb-glow" cx="50%" cy="46%" r="40%">
+      <stop offset="0%" stop-color="#382000" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#382000" stop-opacity="0.0"/>
+    </radialGradient>
+    <!-- Camel-skin mantle: rough amber-brown -->
+    <linearGradient id="sjb-skin" x1="0" y1="0" x2="0.2" y2="1">
+      <stop offset="0%" stop-color="#7a4e1a"/>
+      <stop offset="50%" stop-color="#5a3410"/>
+      <stop offset="100%" stop-color="#3a2008"/>
+    </linearGradient>
+    <!-- Camel-skin texture shadow -->
+    <linearGradient id="sjb-skindark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3a2008"/>
+      <stop offset="100%" stop-color="#5a3410"/>
+    </linearGradient>
+    <!-- Red mantle cord / belt -->
+    <linearGradient id="sjb-belt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8a1408"/>
+      <stop offset="100%" stop-color="#c02010"/>
+    </linearGradient>
+    <!-- Reed cross staff: natural wood -->
+    <linearGradient id="sjb-reed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8a6830"/>
+      <stop offset="100%" stop-color="#c09050"/>
+    </linearGradient>
+    <!-- Scroll: aged parchment -->
+    <linearGradient id="sjb-scroll" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8d890"/>
+      <stop offset="100%" stop-color="#c0a858"/>
+    </linearGradient>
+    <!-- Gold detail -->
+    <linearGradient id="sjb-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0d050"/>
+      <stop offset="100%" stop-color="#a07818"/>
+    </linearGradient>
+    <!-- Lamb white -->
+    <radialGradient id="sjb-lamb" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#f0ece8"/>
+      <stop offset="100%" stop-color="#c8c0b8"/>
+    </radialGradient>
+    <!-- Soft glow filter -->
+    <filter id="sjb-sg" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Scroll glow -->
+    <filter id="sjb-scrollg" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="560" fill="url(#sjb-bg)"/>
+
+  <!-- Ambient glow -->
+  <ellipse cx="200" cy="240" rx="155" ry="200" fill="url(#sjb-glow)"/>
+
+  <!-- 4 Polygon rays -->
+  <polygon points="198,265 0,560 0,400" fill="url(#sjb-r1)" opacity="0.72"/>
+  <polygon points="198,265 0,480 80,560" fill="url(#sjb-r1)" opacity="0.50"/>
+  <polygon points="202,265 400,480 320,560" fill="url(#sjb-r2)" opacity="0.50"/>
+  <polygon points="202,265 400,400 400,560" fill="url(#sjb-r2)" opacity="0.72"/>
+
+  <!-- Halo glow -->
+  <circle cx="200" cy="146" r="60" fill="url(#sjb-halo)" filter="url(#sjb-sg)"/>
+  <!-- Halo ring — brilliant gold -->
+  <circle cx="200" cy="146" r="49" fill="none" stroke="#e8c020" stroke-width="2.5" opacity="0.9"/>
+  <circle cx="200" cy="146" r="46" fill="none" stroke="#f8e840" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- ═══ BODY: Camel-skin garment (rough, shaggy) ═══ -->
+  <!-- Main body silhouette — wide at shoulders, narrowing -->
+  <path d="M133,215 Q118,238 112,298 L108,445 Q110,456 122,457 L278,457 Q290,456 292,445 L288,298 Q282,238 267,215 Z"
+        fill="url(#sjb-skin)" stroke="#4a2c08" stroke-width="1.5" opacity="0.97"/>
+
+  <!-- Camel-skin texture — rough hair bumps along edges (shaggy quality) -->
+  <path d="M133,215 Q126,228 120,248 Q114,268 112,298"
+        fill="none" stroke="#3a1e08" stroke-width="3" stroke-dasharray="4,3" opacity="0.45"/>
+  <path d="M267,215 Q274,228 280,248 Q286,268 288,298"
+        fill="none" stroke="#3a1e08" stroke-width="3" stroke-dasharray="4,3" opacity="0.40"/>
+  <!-- Skin texture folds -->
+  <path d="M145,235 Q142,270 142,330" stroke="#4a2c08" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M170,222 Q168,260 168,340" stroke="#4a2c08" stroke-width="1.5" fill="none" opacity="0.3"/>
+  <path d="M255,235 Q258,270 258,330" stroke="#4a2c08" stroke-width="2" fill="none" opacity="0.35"/>
+  <path d="M230,222 Q232,260 232,340" stroke="#4a2c08" stroke-width="1.5" fill="none" opacity="0.3"/>
+
+  <!-- Leather belt / cord around waist -->
+  <path d="M115,315 Q150,308 200,306 Q250,308 285,315 Q284,326 283,330 Q250,322 200,320 Q150,322 117,330 Q116,326 115,315 Z"
+        fill="url(#sjb-belt)" stroke="#5a0c06" stroke-width="0.8" opacity="0.88"/>
+
+  <!-- ═══ LEFT ARM — holding reed cross staff ═══ -->
+  <path d="M174,222 Q155,245 143,275 Q137,296 138,318 L150,318 Q152,300 156,282 Q164,256 172,238 Z"
+        fill="#5a3410" stroke="#3a1e08" stroke-width="1"/>
+  <!-- Left hand -->
+  <ellipse cx="143" cy="328" rx="12" ry="10" fill="#c09060" stroke="#9a7040" stroke-width="0.8"/>
+
+  <!-- Reed cross staff (tall, vertical, held in left hand) -->
+  <!-- Staff vertical pole -->
+  <rect x="136" y="140" width="6" height="340" rx="3" fill="url(#sjb-reed)" opacity="0.9"/>
+  <!-- Crosspiece of the reed cross -->
+  <rect x="114" y="220" width="50" height="5" rx="2" fill="url(#sjb-reed)" opacity="0.85"/>
+  <!-- Reed joints / knuckles on staff -->
+  <ellipse cx="139" cy="200" rx="5" ry="3.5" fill="#a07830" opacity="0.7"/>
+  <ellipse cx="139" cy="260" rx="5" ry="3.5" fill="#a07830" opacity="0.7"/>
+  <ellipse cx="139" cy="340" rx="5" ry="3.5" fill="#a07830" opacity="0.7"/>
+  <ellipse cx="139" cy="400" rx="5" ry="3.5" fill="#a07830" opacity="0.7"/>
+  <!-- Reed joints on crosspiece -->
+  <ellipse cx="125" cy="222" rx="3" ry="4" fill="#a07830" opacity="0.65"/>
+  <ellipse cx="155" cy="222" rx="3" ry="4" fill="#a07830" opacity="0.65"/>
+
+  <!-- ═══ RIGHT ARM — holding scroll open ═══ -->
+  <path d="M226,222 Q248,246 260,275 Q266,296 265,318 L253,318 Q251,300 247,282 Q238,256 228,238 Z"
+        fill="#5a3410" stroke="#3a1e08" stroke-width="1"/>
+  <!-- Right hand -->
+  <ellipse cx="260" cy="328" rx="12" ry="10" fill="#c09060" stroke="#9a7040" stroke-width="0.8"/>
+
+  <!-- Scroll / parchment in right hand (unrolled, showing text) -->
+  <g filter="url(#sjb-scrollg)">
+    <!-- Scroll body -->
+    <rect x="246" y="286" width="62" height="46" rx="3" fill="url(#sjb-scroll)" stroke="#a08838" stroke-width="1.2"/>
+    <!-- Scroll rolled ends -->
+    <ellipse cx="246" cy="309" rx="5" ry="23" fill="#d0b860" stroke="#a08838" stroke-width="0.8"/>
+    <ellipse cx="308" cy="309" rx="5" ry="23" fill="#d0b860" stroke="#a08838" stroke-width="0.8"/>
+    <!-- Text lines on scroll — ECCE AGNUS DEI -->
+    <text x="277" y="299" text-anchor="middle" font-family="Georgia, serif" font-size="6.5"
+          font-style="italic" fill="#3a2808" opacity="0.9">ECCE</text>
+    <text x="277" y="309" text-anchor="middle" font-family="Georgia, serif" font-size="6.5"
+          font-style="italic" fill="#3a2808" opacity="0.9">AGNUS</text>
+    <text x="277" y="319" text-anchor="middle" font-family="Georgia, serif" font-size="6.5"
+          font-style="italic" fill="#3a2808" opacity="0.9">DEI</text>
+    <!-- Decorative line above text -->
+    <line x1="253" y1="292" x2="301" y2="292" stroke="#8a6020" stroke-width="0.8" opacity="0.6"/>
+    <line x1="253" y1="324" x2="301" y2="324" stroke="#8a6020" stroke-width="0.8" opacity="0.6"/>
+  </g>
+
+  <!-- ═══ LAMB at base of staff (left foot area) ═══ -->
+  <!-- Small white lamb — symbol of Christ, "Behold the Lamb" -->
+  <!-- Lamb body -->
+  <ellipse cx="155" cy="440" rx="28" ry="18" fill="url(#sjb-lamb)" stroke="#b0a898" stroke-width="0.8" opacity="0.9"/>
+  <!-- Lamb head -->
+  <circle cx="182" cy="430" r="11" fill="#e8e4e0" stroke="#b0a898" stroke-width="0.8"/>
+  <!-- Lamb ear -->
+  <ellipse cx="190" cy="423" rx="5" ry="7" fill="#e0dcd8" stroke="#b0a898" stroke-width="0.6" opacity="0.8"/>
+  <!-- Lamb eye -->
+  <circle cx="186" cy="428" r="1.8" fill="#3a2810"/>
+  <circle cx="186" cy="428" r="0.8" fill="#0a0808"/>
+  <!-- Lamb legs (small) -->
+  <line x1="140" y1="456" x2="138" y2="472" stroke="#c0b8b0" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+  <line x1="153" y1="457" x2="153" y2="473" stroke="#c0b8b0" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+  <line x1="165" y1="456" x2="166" y2="472" stroke="#c0b8b0" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+  <line x1="176" y1="454" x2="178" y2="470" stroke="#c0b8b0" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+  <!-- Lamb wool texture dots -->
+  <circle cx="145" cy="434" r="3.5" fill="#f0ece8" opacity="0.6"/>
+  <circle cx="152" cy="429" r="4" fill="#f0ece8" opacity="0.55"/>
+  <circle cx="161" cy="427" r="3.5" fill="#f0ece8" opacity="0.6"/>
+  <circle cx="170" cy="428" r="3" fill="#f0ece8" opacity="0.55"/>
+  <circle cx="148" cy="443" r="3" fill="#f0ece8" opacity="0.5"/>
+  <circle cx="159" cy="440" r="3.5" fill="#f0ece8" opacity="0.55"/>
+  <!-- Lamb small halo (it is the Lamb of God) -->
+  <circle cx="182" cy="430" r="15" fill="none" stroke="#e8c020" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- ═══ NECK ═══ -->
+  <rect x="191" y="188" width="18" height="27" rx="4" fill="#b88858"/>
+
+  <!-- ═══ HEAD ═══ -->
+  <ellipse cx="200" cy="162" rx="34" ry="38" fill="#b88858"/>
+
+  <!-- Long wild hair — prophet of the desert -->
+  <!-- Hair mass behind/around head -->
+  <path d="M166,158 Q164,118 172,100 Q182,86 200,83 Q218,86 228,100 Q236,118 234,158"
+        fill="#1e1208" stroke="#140c04" stroke-width="1.5" opacity="0.95"/>
+  <!-- Left hair flowing down over shoulder -->
+  <path d="M166,158 Q160,178 156,200 Q152,222 150,245 Q148,265 148,280"
+        fill="none" stroke="#1e1208" stroke-width="8" stroke-linecap="round" opacity="0.88"/>
+  <path d="M168,162 Q163,185 161,210 Q158,235 157,258"
+        fill="none" stroke="#2a1808" stroke-width="5" stroke-linecap="round" opacity="0.65"/>
+  <!-- Right hair flowing -->
+  <path d="M234,158 Q240,178 244,200 Q248,222 250,245"
+        fill="none" stroke="#1e1208" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
+  <path d="M232,162 Q237,185 239,210 Q242,235 243,258"
+        fill="none" stroke="#2a1808" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+  <!-- Top hair texture -->
+  <path d="M172,105 Q180,98 200,96 Q220,98 228,105"
+        fill="#1e1208" stroke="#140c04" stroke-width="2" opacity="0.9"/>
+  <!-- Hair streak highlights (sun-bleached desert) -->
+  <path d="M174,118 Q178,108 186,101" stroke="#4a3010" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <path d="M226,118 Q222,108 214,101" stroke="#4a3010" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+  <!-- Forehead weathered line -->
+  <path d="M180,140 Q200,137 220,140" stroke="#8a5830" stroke-width="0.8" fill="none" opacity="0.35"/>
+
+  <!-- Eyes — fierce, prophetic, burning conviction -->
+  <ellipse cx="187" cy="157" rx="5.5" ry="5.5" fill="#f0e4cc"/>
+  <ellipse cx="213" cy="157" rx="5.5" ry="5.5" fill="#f0e4cc"/>
+  <circle cx="188" cy="157" r="3.3" fill="#3a2008"/>
+  <circle cx="214" cy="157" r="3.3" fill="#3a2008"/>
+  <circle cx="188" cy="157" r="1.7" fill="#0e0a04"/>
+  <circle cx="214" cy="157" r="1.7" fill="#0e0a04"/>
+  <!-- Eye fire highlight -->
+  <circle cx="189" cy="156" r="0.9" fill="white" opacity="0.9"/>
+  <circle cx="215" cy="156" r="0.9" fill="white" opacity="0.9"/>
+
+  <!-- Lower eyelid shadow (sun-weathered) -->
+  <path d="M182,161 Q187,163 193,161" stroke="#8a5830" stroke-width="0.8" fill="none" opacity="0.4"/>
+  <path d="M207,161 Q213,163 219,161" stroke="#8a5830" stroke-width="0.8" fill="none" opacity="0.4"/>
+
+  <!-- Eyebrows — strong, intense, slightly furrowed -->
+  <path d="M180,150 Q187,145 195,149" stroke="#1e1208" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+  <path d="M205,149 Q213,145 220,150" stroke="#1e1208" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+  <!-- Furrowed brow line between brows -->
+  <line x1="198" y1="149" x2="202" y2="153" stroke="#3a2008" stroke-width="1.2" opacity="0.5"/>
+
+  <!-- Nose — strong, aquiline -->
+  <path d="M197,162 Q195,175 191,180 Q195,183 200,183 Q205,183 209,180 Q205,175 203,162 Z"
+        fill="#a07040" stroke="#8a5830" stroke-width="0.5" opacity="0.7"/>
+
+  <!-- Mouth — firm, prophet's set expression -->
+  <path d="M189,188 Q194,191 200,191 Q206,191 211,188" stroke="#7a4828" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+  <!-- Full wild beard — prophet, long and untamed -->
+  <path d="M167,175 Q163,194 164,215 Q168,238 174,258 Q183,278 200,285 Q217,278 226,258 Q232,238 236,215 Q237,194 233,175 Q220,200 200,205 Q180,200 167,175 Z"
+        fill="#1e1208" stroke="#140c04" stroke-width="1" opacity="0.95"/>
+  <!-- Beard wild texture strands -->
+  <path d="M174,195 Q182,215 184,240 Q186,260 188,272" fill="none" stroke="#2a1a0a" stroke-width="1.8" opacity="0.5"/>
+  <path d="M226,195 Q218,215 216,240 Q214,260 212,272" fill="none" stroke="#2a1a0a" stroke-width="1.8" opacity="0.5"/>
+  <path d="M186,208 Q192,228 194,255 Q196,270 198,278" fill="none" stroke="#2a1a0a" stroke-width="1.5" opacity="0.45"/>
+  <path d="M214,208 Q208,228 206,255 Q204,270 202,278" fill="none" stroke="#2a1a0a" stroke-width="1.5" opacity="0.45"/>
+  <!-- Lighter strand highlights (bleached by desert sun) -->
+  <path d="M180,210 Q178,228 180,248" stroke="#4a3010" stroke-width="1.2" fill="none" opacity="0.35"/>
+  <path d="M220,210 Q222,228 220,248" stroke="#4a3010" stroke-width="1.2" fill="none" opacity="0.35"/>
+
+  <!-- Mustache — thick, wild -->
+  <path d="M183,182 Q192,186 200,184 Q208,186 217,182"
+        fill="#1e1208" stroke="#0e0a04" stroke-width="1.5" opacity="0.92"/>
+
+  <!-- Sun-weathered cheeks — desert complexion, warm brown -->
+  <ellipse cx="178" cy="166" rx="9" ry="7" fill="#c87840" opacity="0.2"/>
+  <ellipse cx="222" cy="166" rx="9" ry="7" fill="#c87840" opacity="0.2"/>
+
+  <!-- ═══ FRAME LINES & ORNAMENTS ═══ -->
+  <rect x="8" y="8" width="384" height="484" rx="4" fill="none" stroke="#e8c020" stroke-width="1.5" opacity="0.55"/>
+  <rect x="12" y="12" width="376" height="476" rx="3" fill="none" stroke="#e8c020" stroke-width="0.6" opacity="0.3"/>
+  <!-- Corner ornaments -->
+  <path d="M8,28 L8,8 L28,8"    fill="none" stroke="#e8c020" stroke-width="2" opacity="0.72"/>
+  <path d="M372,8 L392,8 L392,28"   fill="none" stroke="#e8c020" stroke-width="2" opacity="0.72"/>
+  <path d="M8,464 L8,484 L28,484"   fill="none" stroke="#e8c020" stroke-width="2" opacity="0.72"/>
+  <path d="M372,484 L392,484 L392,464" fill="none" stroke="#e8c020" stroke-width="2" opacity="0.72"/>
+
+  <!-- ═══ NAME PANEL ═══ -->
+  <rect x="0" y="492" width="400" height="68" fill="#08060a" opacity="0.93"/>
+  <line x1="0" y1="492" x2="400" y2="492" stroke="#e8c020" stroke-width="1.2" opacity="0.72"/>
+  <!-- Name -->
+  <text x="200" y="512" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="15.5" font-weight="bold" letter-spacing="3"
+        fill="#f0d840">NATIVIDAD DE SAN JUAN BAUTISTA</text>
+  <!-- Title -->
+  <text x="200" y="531" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="9.5" letter-spacing="1.5" fill="#c8b050" opacity="0.9">PRECURSOR · FORERUNNER OF CHRIST · PROFETA</text>
+  <!-- Date -->
+  <text x="200" y="549" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="9" letter-spacing="1.2" fill="#a09040" opacity="0.82">24 DE JUNIO · JUNE 24</text>
+</svg>
