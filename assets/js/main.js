@@ -185,6 +185,7 @@ const INTERCESSORS = [
   { id: 'sanpedro',            subdomain: 'sanpedro',            chaplet: false, novena: true,  color: '#1a3a7a', short: { es: 'San Pedro',       en: 'St. Peter'        }, name: { en: 'Saint Peter the Apostle',            es: 'San Pedro Apóstol'                       }, specialty: { es: 'La Iglesia y el Papado',    en: 'The Church & the Papacy'     } },
   { id: 'sanfranciscojavier',  subdomain: 'sanfranciscojavier',  chaplet: false, novena: true,  color: '#1a3a6a', short: { es: 'S. Francisco Javier', en: 'St. Francis Xavier' }, name: { en: 'Saint Francis Xavier',             es: 'San Francisco Javier'                    }, specialty: { es: 'Misiones y Asia',           en: 'Missions & Asia'             } },
   { id: 'sancarloslwanga',     subdomain: 'sancarloslwanga',     chaplet: false, novena: true,  color: '#4a1a08', short: { es: 'S. Carlos Lwanga',  en: 'St. Charles Lwanga' }, name: { en: 'Saint Charles Lwanga',             es: 'San Carlos Lwanga'                       }, specialty: { es: 'Jóvenes y mártires de África', en: 'Youth & Martyrs of Africa'  } },
+  { id: 'sanbonifacio',         subdomain: 'sanbonifacio',         chaplet: false, novena: true,  color: '#3a1060', short: { es: 'S. Bonifacio',     en: 'St. Boniface'     }, name: { en: 'Saint Boniface of Mainz',           es: 'San Bonifacio de Maguncia'               }, specialty: { es: 'Evangelización de Europa',  en: 'Evangelization of Europe'    } },
 ];
 
 // ── KEYWORD MAP — synonyms for prayer-intent search ──────
@@ -265,6 +266,7 @@ const KEYWORD_MAP = {
   santaleticia:       'leticia laetitia alegria joy felicidad happiness virgen virgin martir martyr primitiva iglesia early church persecucion persecution martirologio romano roman martyrology diocleciano diocletian siglo tercero third century nombre leticia laetitia name pascua pasqua easter resurrection',
   sanpedro:           'pedro peter simon simon cefas cephas apostol apostle primer papa first pope pescador fisherman llaves keys reino heaven galilea galilee roma rome crucificado crucified invertida inverted upside down vaticano vatican basilica pescador fisherman pentecostes pentecost milagros miracles tabita tabitha eneas aeneas sombra shadow sanacion healing vicario vicar mision mission unidad unity iglesia church',
   sanfranciscojavier: 'francisco javier francis xavier jesuita jesuit ignacio loyola loyola misionero missionary apostol apostle indias indies japon japan asia goa india bautismo baptism evangelizacion evangelization navarra navarre espana spain canonizado canonized cuerpo incorrupto incorrupt body misiones missions vocacion vocation francisco javier nombre name',
+  sanbonifacio:       'bonifacio boniface winfrido winfrid alemania germany germania frisia friesland apostol apostle europa europe evangelizacion evangelization misionero missionary obispo bishop martir martyr encina roble oak thor geismar fulda maguncia mainz anglosajon anglo-saxon monje monk benedicto benedictine nursling devon england inglaterra reforma iglesia reform church carolingios carolingians pipino pepin fracos franks diocesis diocese concilio council primado primate miedo fear valentia courage palabra de dios word of god evangelio gospel martirio martyrdom dokkum bordne paganos pagans conversion conversos convertidos converts mision mission paciencia patience fracaso failure perseverancia perseverance europa cristiana christian europe edad media middle ages breviario breviary escritura scripture liturgia liturgy',
   sancarloslwanga:    'carlos lwanga charles uganda martires martyrs africa jovenes youth valentía courage pureza purity fe bajo presion faith under pressure mwanga fuego fire hoguera stake pajes pages corte real royal court conversion convertidos converts catequista catechist bautismo baptism namugongo padres blancos white fathers buganda kampala canonizados canonized pablo VI paul VI kizito companeros companions africa subsahariana sub-saharan africa presion pressure resistencia resistance dignidad dignity identidad cristiana christian identity',
 };
 
@@ -354,6 +356,7 @@ const FEAST_DAYS = {
   '05-24': ['mariaauxiliadora'],
   '05-26': ['sanfelipeneri'],
   '06-03': ['sancarloslwanga'],
+  '06-05': ['sanbonifacio'],
   '06-13': ['sanantonio'],
   '06-16': ['sanismael'],
   '06-25': ['sanguillermo'],

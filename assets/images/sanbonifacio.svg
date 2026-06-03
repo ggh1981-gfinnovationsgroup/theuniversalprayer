@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="sbf-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#100818"/><stop offset="60%" stop-color="#06040e"/><stop offset="100%" stop-color="#020208"/>
+    </radialGradient>
+    <linearGradient id="sbf-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#7040c0" stop-opacity="1"/><stop offset="100%" stop-color="#2a1060" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="sbf-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#e8c97a" stop-opacity="1"/><stop offset="100%" stop-color="#8a6e2f" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="sbf-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sbf-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#sbf-bg)"/>
+  <!-- Rays: violet left, gold right -->
+  <polygon points="198,265 -25,610 115,610" fill="url(#sbf-r1)" filter="url(#sbf-gl)" opacity="0.72"/>
+  <polygon points="198,265  20,600  85,600" fill="#7040c0"       opacity="0.32"/>
+  <polygon points="202,265 425,610 285,610" fill="url(#sbf-r2)" filter="url(#sbf-gl)" opacity="0.70"/>
+  <polygon points="202,265 375,600 315,600" fill="#e8c97a"       opacity="0.28"/>
+  <!-- Episcopal chasuble — deep crimson (martyr + bishop) -->
+  <path d="M168,162 Q138,215 124,410 Q200,438 276,410 Q262,215 232,162 Z" fill="#780018" opacity="0.90"/>
+  <!-- Pallium — white Y-shape over chasuble -->
+  <path d="M182,162 Q192,205 195,340 L205,340 Q208,205 218,162 Z" fill="#e8e0d0" opacity="0.72"/>
+  <path d="M195,240 Q172,268 148,310" stroke="#e8e0d0" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.68"/>
+  <path d="M205,240 Q228,268 252,310" stroke="#e8e0d0" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.68"/>
+  <!-- Cross-shaped ornament on pallium -->
+  <line x1="200" y1="185" x2="200" y2="225" stroke="#c9a84c" stroke-width="3" opacity="0.72"/>
+  <line x1="186" y1="202" x2="214" y2="202" stroke="#c9a84c" stroke-width="3" opacity="0.72"/>
+  <!-- Left arm holding open Gospel book -->
+  <path d="M170,175 Q132,222 118,282" stroke="#780018" stroke-width="22" fill="none" stroke-linecap="round" opacity="0.88"/>
+  <ellipse cx="118" cy="286" rx="14" ry="16" fill="#c8a878" opacity="0.90"/>
+  <!-- Book in left hand -->
+  <rect x="84" y="275" width="50" height="36" rx="4" fill="#d4b070" opacity="0.88"/>
+  <rect x="86" y="277" width="46" height="32" rx="3" fill="#f5e8c0" opacity="0.60"/>
+  <line x1="109" y1="277" x2="109" y2="309" stroke="#c9a84c" stroke-width="1" opacity="0.55"/>
+  <line x1="90"  y1="291" x2="128" y2="291" stroke="#c9a84c" stroke-width="0.8" opacity="0.35"/>
+  <!-- Right arm raised — holding bishop's staff (crozier) -->
+  <path d="M230,175 Q268,218 278,278" stroke="#780018" stroke-width="22" fill="none" stroke-linecap="round" opacity="0.88"/>
+  <ellipse cx="278" cy="282" rx="14" ry="16" fill="#c8a878" opacity="0.90"/>
+  <!-- Crozier -->
+  <line x1="278" y1="270" x2="278" y2="460" stroke="#8a6020" stroke-width="6" stroke-linecap="round" opacity="0.88"/>
+  <path d="M278,235 Q298,225 302,245 Q302,265 278,268" stroke="#c9a84c" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.90"/>
+  <!-- Neck -->
+  <rect x="194" y="147" width="12" height="18" rx="4" fill="#c8a878" opacity="0.90"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="115" rx="27" ry="31" fill="#c8a878" opacity="0.92"/>
+  <!-- Tonsure + grey hair suggestion -->
+  <path d="M173,110 Q176,74 200,70 Q224,74 227,110 Q218,90 200,88 Q182,90 173,110 Z" fill="#3a2810" opacity="0.82"/>
+  <ellipse cx="200" cy="86" rx="16" ry="8" fill="#c8a878" opacity="0.55"/>
+  <!-- Jaw shadow -->
+  <path d="M182,138 Q185,154 200,158 Q215,154 218,138 Q210,148 200,149 Q190,148 182,138 Z" fill="#3a2810" opacity="0.55"/>
+  <!-- Bishop's mitre -->
+  <path d="M174,88 Q178,48 200,30 Q222,48 226,88 Q212,76 200,74 Q188,76 174,88 Z" fill="#e8d080" opacity="0.90"/>
+  <line x1="200" y1="30" x2="200" y2="88" stroke="#c9a84c" stroke-width="1.5" opacity="0.60"/>
+  <line x1="178" y1="64" x2="222" y2="64" stroke="#c9a84c" stroke-width="1"   opacity="0.45"/>
+  <!-- Mitre lappets -->
+  <path d="M174,88 Q165,108 160,130" stroke="#e8d080" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.68"/>
+  <path d="M226,88 Q235,108 240,130" stroke="#e8d080" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.68"/>
+  <!-- Halo -->
+  <circle cx="200" cy="115" r="52" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65" filter="url(#sbf-g2)"/>
+  <circle cx="200" cy="115" r="45" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.22"/>
+  <!-- Frame -->
+  <rect x="6"  y="6"  width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.50"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <!-- Name panel -->
+  <rect x="18" y="524" width="364" height="70" rx="6" fill="#020208" opacity="0.90"/>
+  <line x1="46" y1="531" x2="354" y2="531" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="546" text-anchor="middle" font-family="Arial,sans-serif" font-size="8"   fill="#c9a84c"  letter-spacing="3"   opacity="0.92">SAN BONIFACIO  ·  SAINT BONIFACE</text>
+  <text x="200" y="562" text-anchor="middle" font-family="Arial,sans-serif" font-size="7"   fill="#9a70c0"  letter-spacing="2"   opacity="0.80">APÓSTOL DE GERMANIA  ·  APOSTLE OF GERMANY</text>
+  <text x="200" y="579" text-anchor="middle" font-family="Arial,sans-serif" font-size="6.5" fill="#c9a84c"  letter-spacing="2.5" opacity="0.52">5 DE JUNIO  ·  JUNE 5</text>
+</svg>
