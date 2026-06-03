@@ -725,7 +725,7 @@ async function initIntercessorPage() {
 
   try {
     intercessorData = await loadIntercessorData(subdomain);
-    renderIntercessorContent(intercessorData);
+    renderIntercessorContent(intercessorData, knownMeta);
     initTabs(knownMeta);
     initNovena(intercessorData);
 
@@ -736,13 +736,27 @@ async function initIntercessorPage() {
   }
 }
 
-function renderIntercessorContent(data) {
+function renderIntercessorContent(data, meta) {
   const lang = currentLang;
 
   // Page title & meta
-  document.title = `${data.name[lang]} | The Universal Prayer`;
-  const metaDesc = document.getElementById('pageDesc');
-  if (metaDesc) metaDesc.setAttribute('content', data.prayer[lang].substring(0, 150));
+  const pageTitle = `${data.name[lang]} | The Universal Prayer`;
+  document.title = pageTitle;
+
+  const baseUrl = 'https://www.theuniversalprayer.com';
+  const imgUrl  = data.image ? `${baseUrl}${data.image}` : `${baseUrl}/assets/images/misericordia.svg`;
+  const desc    = data.prayer[lang].substring(0, 150);
+  const pageUrl = `${baseUrl}/intercesor/?intercesor=${meta ? meta.subdomain : ''}`;
+
+  const _setMeta = (id, attr, val) => { const el = document.getElementById(id); if (el) el.setAttribute(attr, val); };
+  _setMeta('pageDesc',  'content', desc);
+  _setMeta('ogTitle',   'content', pageTitle);
+  _setMeta('ogDesc',    'content', desc);
+  _setMeta('ogUrl',     'content', pageUrl);
+  _setMeta('ogImage',   'content', imgUrl);
+  _setMeta('twTitle',   'content', pageTitle);
+  _setMeta('twDesc',    'content', desc);
+  _setMeta('twImage',   'content', imgUrl);
 
   // Hero
   const nameEl = document.getElementById('intercessorName');
