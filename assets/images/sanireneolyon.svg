@@ -1,0 +1,283 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="400" height="560">
+  <defs>
+    <!-- Background: deep Byzantine violet-night -->
+    <linearGradient id="sil-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080410"/>
+      <stop offset="100%" stop-color="#100818"/>
+    </linearGradient>
+    <!-- Ray left: Byzantine gold -->
+    <linearGradient id="sil-r1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c8980a" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#4a3800" stop-opacity="0.0"/>
+    </linearGradient>
+    <!-- Ray right: episcopal purple -->
+    <linearGradient id="sil-r2" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8020a0" stop-opacity="0.82"/>
+      <stop offset="100%" stop-color="#280838" stop-opacity="0.0"/>
+    </linearGradient>
+    <!-- Halo: warm gold, Doctor of the Church -->
+    <radialGradient id="sil-halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff0a0" stop-opacity="0.70"/>
+      <stop offset="50%" stop-color="#d4a818" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#b09000" stop-opacity="0.0"/>
+    </radialGradient>
+    <!-- Ambient glow: warm violet -->
+    <radialGradient id="sil-glow" cx="50%" cy="46%" r="40%">
+      <stop offset="0%" stop-color="#280838" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#280838" stop-opacity="0.0"/>
+    </radialGradient>
+    <!-- Chasuble: deep purple, episcopal -->
+    <linearGradient id="sil-chasuble" x1="0" y1="0" x2="0.2" y2="1">
+      <stop offset="0%" stop-color="#4a1870"/>
+      <stop offset="50%" stop-color="#300e50"/>
+      <stop offset="100%" stop-color="#1a0830"/>
+    </linearGradient>
+    <!-- Chasuble orphrey (gold cross band) -->
+    <linearGradient id="sil-orphrey" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8c038"/>
+      <stop offset="100%" stop-color="#a07818"/>
+    </linearGradient>
+    <!-- Alb: white linen undergarment -->
+    <linearGradient id="sil-alb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0ece4"/>
+      <stop offset="100%" stop-color="#c8c0b0"/>
+    </linearGradient>
+    <!-- Book / codex cover: dark red -->
+    <linearGradient id="sil-book" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a1010"/>
+      <stop offset="100%" stop-color="#480808"/>
+    </linearGradient>
+    <!-- Crozier staff: gold -->
+    <linearGradient id="sil-crozier" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d4a020"/>
+      <stop offset="100%" stop-color="#f0c840"/>
+    </linearGradient>
+    <!-- Gold detail -->
+    <linearGradient id="sil-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0d050"/>
+      <stop offset="100%" stop-color="#a07818"/>
+    </linearGradient>
+    <!-- Soft glow filter -->
+    <filter id="sil-sg" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Book glow -->
+    <filter id="sil-bg2" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Crozier glow -->
+    <filter id="sil-cg" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="560" fill="url(#sil-bg)"/>
+
+  <!-- Ambient glow -->
+  <ellipse cx="200" cy="242" rx="155" ry="200" fill="url(#sil-glow)"/>
+
+  <!-- 4 Polygon rays -->
+  <polygon points="198,265 0,560 0,400" fill="url(#sil-r1)" opacity="0.72"/>
+  <polygon points="198,265 0,480 80,560" fill="url(#sil-r1)" opacity="0.50"/>
+  <polygon points="202,265 400,480 320,560" fill="url(#sil-r2)" opacity="0.50"/>
+  <polygon points="202,265 400,400 400,560" fill="url(#sil-r2)" opacity="0.72"/>
+
+  <!-- Halo glow -->
+  <circle cx="200" cy="147" r="58" fill="url(#sil-halo)" filter="url(#sil-sg)"/>
+  <!-- Halo ring — gold, Doctor of the Church -->
+  <circle cx="200" cy="147" r="48" fill="none" stroke="#d4a820" stroke-width="2.5" opacity="0.88"/>
+  <circle cx="200" cy="147" r="45" fill="none" stroke="#f0c840" stroke-width="0.8" opacity="0.48"/>
+  <!-- Doctor of the Church halo inner detail — small rays -->
+  <line x1="200" y1="99" x2="200" y2="93" stroke="#e8c030" stroke-width="1.5" opacity="0.55"/>
+  <line x1="220" y1="103" x2="224" y2="97" stroke="#e8c030" stroke-width="1.5" opacity="0.5"/>
+  <line x1="234" y1="114" x2="240" y2="110" stroke="#e8c030" stroke-width="1.5" opacity="0.5"/>
+  <line x1="180" y1="103" x2="176" y2="97" stroke="#e8c030" stroke-width="1.5" opacity="0.5"/>
+  <line x1="166" y1="114" x2="160" y2="110" stroke="#e8c030" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- ═══ CROZIER (pastoral staff) — tall, early Christian style ═══ -->
+  <g filter="url(#sil-cg)">
+    <!-- Crozier shaft -->
+    <rect x="264" y="110" width="7" height="360" rx="3.5" fill="url(#sil-crozier)" opacity="0.9"/>
+    <!-- Crozier head — simple tau / hook shape (early Christian) -->
+    <path d="M271,110 Q280,100 275,88 Q268,78 260,82 Q252,88 255,100 Q258,110 267,112 Z"
+          fill="url(#sil-gold)" stroke="#c0900a" stroke-width="1.2" opacity="0.95"/>
+    <!-- Crozier crosspiece -->
+    <rect x="248" y="128" width="40" height="5" rx="2.5" fill="url(#sil-crozier)" opacity="0.85"/>
+    <!-- Shaft joint ornaments -->
+    <ellipse cx="267" cy="165" rx="6" ry="4" fill="url(#sil-gold)" opacity="0.7"/>
+    <ellipse cx="267" cy="240" rx="6" ry="4" fill="url(#sil-gold)" opacity="0.65"/>
+    <ellipse cx="267" cy="320" rx="6" ry="4" fill="url(#sil-gold)" opacity="0.6"/>
+  </g>
+
+  <!-- ═══ BODY: Episcopal vestments (early church, 2nd century style) ═══ -->
+
+  <!-- Alb (white undergarment visible at hem and sleeves) -->
+  <path d="M148,222 Q135,245 130,305 L128,455 Q128,462 140,463 L260,463 Q272,462 272,455 L270,305 Q265,245 252,222 Z"
+        fill="url(#sil-alb)" opacity="0.25"/>
+
+  <!-- Chasuble (outer vestment — wide, poncho-like, early style) -->
+  <path d="M136,218 Q120,242 114,305 L112,455 Q114,464 126,465 L274,465 Q286,464 288,455 L286,305 Q280,242 264,218 Z"
+        fill="url(#sil-chasuble)" stroke="#3a1058" stroke-width="1.5" opacity="0.97"/>
+
+  <!-- Chasuble left side depth -->
+  <path d="M136,218 Q120,252 117,322 L114,455 Q124,465 150,465 L160,322 Q158,254 164,218 Z"
+        fill="#1a0838" opacity="0.5"/>
+
+  <!-- Chasuble right side depth -->
+  <path d="M264,218 Q280,252 283,322 L286,455 Q276,465 250,465 L240,322 Q242,254 236,218 Z"
+        fill="#1a0838" opacity="0.45"/>
+
+  <!-- Orphrey — vertical gold band center front (early chasuble cross band) -->
+  <path d="M188,218 L188,465 Q194,467 200,467 Q206,467 212,465 L212,218 Z"
+        fill="url(#sil-orphrey)" opacity="0.88" stroke="#c09010" stroke-width="0.6"/>
+  <!-- Orphrey horizontal band across chest -->
+  <path d="M114,305 Q152,296 200,294 Q248,296 286,305 L286,318 Q248,310 200,308 Q152,310 114,318 Z"
+        fill="url(#sil-orphrey)" opacity="0.82" stroke="#c09010" stroke-width="0.6"/>
+  <!-- Small cross at orphrey intersection -->
+  <rect x="196" y="298" width="8" height="26" rx="2" fill="#f8e040" opacity="0.95"/>
+  <rect x="188" y="306" width="24" height="8" rx="2" fill="#f8e040" opacity="0.95"/>
+
+  <!-- Stole ends visible below chasuble hem -->
+  <rect x="186" y="460" width="28" height="12" rx="2" fill="url(#sil-gold)" opacity="0.7"/>
+
+  <!-- ═══ LEFT ARM — holding codex of Adversus Haereses ═══ -->
+  <path d="M172,226 Q152,250 140,280 Q134,300 134,322 L146,322 Q148,306 152,288 Q160,262 170,242 Z"
+        fill="#300e50" stroke="#3a1058" stroke-width="1"/>
+  <!-- Left hand -->
+  <ellipse cx="138" cy="332" rx="13" ry="11" fill="#c0a070" stroke="#9a8050" stroke-width="0.8"/>
+
+  <!-- Codex Adversus Haereses (left hand) -->
+  <g filter="url(#sil-bg2)">
+    <rect x="113" y="318" width="46" height="58" rx="3" fill="url(#sil-book)" stroke="#6a0808" stroke-width="1.5"/>
+    <!-- Spine -->
+    <rect x="113" y="318" width="7" height="58" rx="2" fill="#500808" opacity="0.8"/>
+    <!-- Greek letters on cover: ΚΑΤΑ ΑΙΡΕΣΕΩΝ (Against Heresies) -->
+    <text x="136" y="337" text-anchor="middle" font-family="Georgia, serif" font-size="6"
+          fill="#e8c038" opacity="0.9" font-style="italic">ΚΑΤΑ</text>
+    <text x="136" y="348" text-anchor="middle" font-family="Georgia, serif" font-size="5.5"
+          fill="#e8c038" opacity="0.9" font-style="italic">ΑΙΡΕΣΕΩΝ</text>
+    <!-- Gold cross on cover -->
+    <line x1="136" y1="356" x2="136" y2="370" stroke="#e8c038" stroke-width="2" opacity="0.85"/>
+    <line x1="126" y1="363" x2="146" y2="363" stroke="#e8c038" stroke-width="2" opacity="0.85"/>
+    <!-- Gold clasps -->
+    <rect x="114" y="319" width="4" height="4" fill="url(#sil-gold)" rx="1" opacity="0.9"/>
+    <rect x="154" y="319" width="4" height="4" fill="url(#sil-gold)" rx="1" opacity="0.9"/>
+    <rect x="114" y="370" width="4" height="4" fill="url(#sil-gold)" rx="1" opacity="0.9"/>
+    <rect x="154" y="370" width="4" height="4" fill="url(#sil-gold)" rx="1" opacity="0.9"/>
+  </g>
+
+  <!-- ═══ RIGHT ARM — raised slightly, blessing / pointing upward ═══ -->
+  <path d="M228,226 Q248,250 258,278 Q264,298 264,318 L252,318 Q250,302 246,284 Q238,260 230,242 Z"
+        fill="#300e50" stroke="#3a1058" stroke-width="1"/>
+  <!-- Right hand — blessing gesture (two fingers up) -->
+  <ellipse cx="262" cy="326" rx="12" ry="10" fill="#c0a070" stroke="#9a8050" stroke-width="0.8"/>
+  <!-- Blessing fingers -->
+  <line x1="256" y1="320" x2="254" y2="310" stroke="#9a8050" stroke-width="2" stroke-linecap="round" opacity="0.75"/>
+  <line x1="262" y1="318" x2="261" y2="308" stroke="#9a8050" stroke-width="2" stroke-linecap="round" opacity="0.75"/>
+  <line x1="268" y1="320" x2="268" y2="312" stroke="#9a8050" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+  <line x1="273" y1="323" x2="274" y2="316" stroke="#9a8050" stroke-width="1.2" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- ═══ NECK ═══ -->
+  <rect x="191" y="190" width="18" height="27" rx="4" fill="#c0a070"/>
+  <!-- Alb collar -->
+  <path d="M183,218 Q200,213 217,218 L214,228 Q200,223 186,228 Z"
+        fill="#f0ece4" stroke="#d0c8b8" stroke-width="0.8" opacity="0.9"/>
+
+  <!-- ═══ HEAD ═══ -->
+  <ellipse cx="200" cy="162" rx="33" ry="38" fill="#c0a070"/>
+
+  <!-- Early Christian bishop's cap — simple white coif/calotte (no mitre yet — 2nd century) -->
+  <ellipse cx="200" cy="131" rx="28" ry="16" fill="#e8e4d8" stroke="#c8c0a8" stroke-width="1" opacity="0.9"/>
+  <ellipse cx="200" cy="127" rx="22" ry="12" fill="#f0ece4" stroke="#d0c8b8" stroke-width="0.6" opacity="0.85"/>
+  <!-- Small gold cross on cap -->
+  <line x1="200" y1="120" x2="200" y2="130" stroke="#d4a820" stroke-width="1.8" opacity="0.8"/>
+  <line x1="194" y1="125" x2="206" y2="125" stroke="#d4a820" stroke-width="1.8" opacity="0.8"/>
+
+  <!-- Hair at sides — dark with grey, mature man (~65-70) -->
+  <path d="M172,148 Q168,135 172,128 L200,126 L228,128 Q232,135 228,148"
+        fill="#2a2018" stroke="#1a1408" stroke-width="1" opacity="0.88"/>
+  <!-- Grey temple streaks -->
+  <path d="M173,148 Q171,140 173,133" stroke="#888070" stroke-width="2" fill="none" opacity="0.55"/>
+  <path d="M227,148 Q229,140 227,133" stroke="#888070" stroke-width="2" fill="none" opacity="0.55"/>
+
+  <!-- Forehead — lines of age and thought -->
+  <path d="M182,145 Q200,141 218,145" stroke="#907848" stroke-width="0.9" fill="none" opacity="0.35"/>
+  <path d="M186,139 Q200,135 214,139" stroke="#907848" stroke-width="0.7" fill="none" opacity="0.25"/>
+
+  <!-- Eyes — Greek, deep-set, contemplative scholar's gaze -->
+  <ellipse cx="187" cy="158" rx="5" ry="5.5" fill="#f0e8d4"/>
+  <ellipse cx="213" cy="158" rx="5" ry="5.5" fill="#f0e8d4"/>
+  <circle cx="188" cy="158" r="3.2" fill="#3a2818"/>
+  <circle cx="214" cy="158" r="3.2" fill="#3a2818"/>
+  <circle cx="188" cy="158" r="1.6" fill="#100a04"/>
+  <circle cx="214" cy="158" r="1.6" fill="#100a04"/>
+  <circle cx="189" cy="157" r="0.8" fill="white" opacity="0.85"/>
+  <circle cx="215" cy="157" r="0.8" fill="white" opacity="0.85"/>
+
+  <!-- Eye shadow — deep-set, scholarly -->
+  <path d="M182,154 Q187,150 193,153" stroke="#2a1a10" stroke-width="1.2" fill="none" opacity="0.45"/>
+  <path d="M207,153 Q213,150 219,154" stroke="#2a1a10" stroke-width="1.2" fill="none" opacity="0.45"/>
+
+  <!-- Eyebrows — strong, slightly raised, thoughtful expression -->
+  <path d="M181,151 Q187,147 194,150" stroke="#2a2010" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M206,150 Q213,147 220,151" stroke="#2a2010" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Nose — strong, Greek/Mediterranean -->
+  <path d="M197,163 Q195,174 191,179 Q195,182 200,182 Q205,182 209,179 Q205,174 203,163 Z"
+        fill="#a87848" stroke="#907040" stroke-width="0.5" opacity="0.7"/>
+
+  <!-- Mouth — firm but gentle, pastoral expression -->
+  <path d="M189,188 Q194,192 200,193 Q206,192 211,188"
+        stroke="#7a5030" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+  <!-- Beard — full, square, Greek father style, grey streaked with dark -->
+  <path d="M168,177 Q165,196 166,218 Q172,240 180,258 Q188,275 200,280 Q212,275 220,258 Q228,240 234,218 Q235,196 232,177 Q218,198 200,202 Q182,198 168,177 Z"
+        fill="#2a2018" stroke="#1a1408" stroke-width="1" opacity="0.95"/>
+  <!-- Grey streaks in beard — elder of the Church -->
+  <path d="M176,196 Q180,218 180,242 Q180,258 182,268" fill="none" stroke="#706858" stroke-width="2.5" opacity="0.45"/>
+  <path d="M224,196 Q220,218 220,242 Q220,258 218,268" fill="none" stroke="#706858" stroke-width="2.5" opacity="0.42"/>
+  <path d="M188,208 Q190,232 190,254 Q190,266 192,272" fill="none" stroke="#706858" stroke-width="1.8" opacity="0.38"/>
+  <path d="M212,208 Q210,232 210,254 Q210,266 208,272" fill="none" stroke="#706858" stroke-width="1.8" opacity="0.38"/>
+  <!-- Lighter center beard -->
+  <path d="M196,225 Q200,232 204,225" fill="none" stroke="#888070" stroke-width="1.5" opacity="0.3"/>
+  <!-- Beard bottom rounding -->
+  <path d="M180,262 Q190,276 200,278 Q210,276 220,262" fill="none" stroke="#4a3828" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Mustache — full, grey-streaked -->
+  <path d="M182,181 Q192,186 200,184 Q208,186 218,181"
+        fill="#2a2018" stroke="#1a1408" stroke-width="1.5" opacity="0.9"/>
+  <!-- Grey mustache streak -->
+  <path d="M186,183 Q192,185 196,184" stroke="#888070" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M204,184 Q208,185 214,183" stroke="#888070" stroke-width="1" fill="none" opacity="0.4"/>
+
+  <!-- Cheekbones — Mediterranean, slight warmth -->
+  <ellipse cx="179" cy="168" rx="9" ry="6" fill="#c07840" opacity="0.18"/>
+  <ellipse cx="221" cy="168" rx="9" ry="6" fill="#c07840" opacity="0.18"/>
+
+  <!-- ═══ FRAME LINES & ORNAMENTS ═══ -->
+  <rect x="8" y="8" width="384" height="484" rx="4" fill="none" stroke="#e8c030" stroke-width="1.5" opacity="0.52"/>
+  <rect x="12" y="12" width="376" height="476" rx="3" fill="none" stroke="#e8c030" stroke-width="0.6" opacity="0.28"/>
+  <!-- Corner ornaments -->
+  <path d="M8,28 L8,8 L28,8"    fill="none" stroke="#e8c030" stroke-width="2" opacity="0.70"/>
+  <path d="M372,8 L392,8 L392,28"   fill="none" stroke="#e8c030" stroke-width="2" opacity="0.70"/>
+  <path d="M8,464 L8,484 L28,484"   fill="none" stroke="#e8c030" stroke-width="2" opacity="0.70"/>
+  <path d="M372,484 L392,484 L392,464" fill="none" stroke="#e8c030" stroke-width="2" opacity="0.70"/>
+
+  <!-- ═══ NAME PANEL ═══ -->
+  <rect x="0" y="492" width="400" height="68" fill="#06040e" opacity="0.93"/>
+  <line x1="0" y1="492" x2="400" y2="492" stroke="#e8c030" stroke-width="1.2" opacity="0.70"/>
+  <!-- Name -->
+  <text x="200" y="512" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="17" font-weight="bold" letter-spacing="3"
+        fill="#f0d040">SAN IRENEO DE LYON</text>
+  <!-- Title -->
+  <text x="200" y="531" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="9.5" letter-spacing="1.5" fill="#c8a840" opacity="0.9">OBISPO · DOCTOR DE LA IGLESIA · MÁRTIR</text>
+  <!-- Date -->
+  <text x="200" y="549" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="9" letter-spacing="1.2" fill="#a09038" opacity="0.82">28 DE JUNIO · JUNE 28</text>
+</svg>
