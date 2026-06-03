@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="400" height="560">
+  <defs>
+    <!-- Background gradient: deep teal-night, Syrian desert -->
+    <linearGradient id="sef-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#060d14"/>
+      <stop offset="100%" stop-color="#0a1a1f"/>
+    </linearGradient>
+    <!-- Ray left: teal-cyan -->
+    <linearGradient id="sef-r1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a8a8a" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0a3a3a" stop-opacity="0.0"/>
+    </linearGradient>
+    <!-- Ray right: warm gold -->
+    <linearGradient id="sef-r2" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4a840" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#5a3a00" stop-opacity="0.0"/>
+    </linearGradient>
+    <!-- Halo glow -->
+    <radialGradient id="sef-halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe8a0" stop-opacity="0.6"/>
+      <stop offset="60%" stop-color="#c8a030" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#c8a030" stop-opacity="0.0"/>
+    </radialGradient>
+    <!-- Ambient glow behind figure -->
+    <radialGradient id="sef-glow" cx="50%" cy="45%" r="40%">
+      <stop offset="0%" stop-color="#1a6060" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#1a6060" stop-opacity="0.0"/>
+    </radialGradient>
+    <!-- Scroll parchment -->
+    <linearGradient id="sef-scroll" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8d4a0"/>
+      <stop offset="100%" stop-color="#c8a868"/>
+    </linearGradient>
+    <!-- Dalmatic gradient (deacon vestment) -->
+    <linearGradient id="sef-dal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a5a60"/>
+      <stop offset="100%" stop-color="#0d3038"/>
+    </linearGradient>
+    <!-- Gold ornament -->
+    <linearGradient id="sef-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8c840"/>
+      <stop offset="100%" stop-color="#a07820"/>
+    </linearGradient>
+    <!-- Frame glow filter -->
+    <filter id="sef-gf" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Soft glow filter -->
+    <filter id="sef-sg" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Quill glow -->
+    <filter id="sef-qg" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="560" fill="url(#sef-bg)"/>
+
+  <!-- Ambient glow -->
+  <ellipse cx="200" cy="240" rx="160" ry="200" fill="url(#sef-glow)"/>
+
+  <!-- 4 Polygon rays from base of figure -->
+  <!-- Far left ray -->
+  <polygon points="198,265 0,560 0,400" fill="url(#sef-r1)" opacity="0.7"/>
+  <!-- Near left ray -->
+  <polygon points="198,265 0,480 80,560" fill="url(#sef-r1)" opacity="0.5"/>
+  <!-- Near right ray -->
+  <polygon points="202,265 400,480 320,560" fill="url(#sef-r2)" opacity="0.5"/>
+  <!-- Far right ray -->
+  <polygon points="202,265 400,400 400,560" fill="url(#sef-r2)" opacity="0.7"/>
+
+  <!-- Halo glow behind head -->
+  <circle cx="200" cy="148" r="54" fill="url(#sef-halo)" filter="url(#sef-sg)"/>
+
+  <!-- Halo ring -->
+  <circle cx="200" cy="148" r="46" fill="none" stroke="#d4a840" stroke-width="2.2" opacity="0.85"/>
+  <circle cx="200" cy="148" r="43" fill="none" stroke="#e8c840" stroke-width="0.7" opacity="0.5"/>
+
+  <!-- Figure body — deacon's dalmatic (long liturgical tunic) -->
+  <!-- Main robe -->
+  <path d="M168,210 Q160,220 152,270 L140,400 Q138,415 145,418 L255,418 Q262,415 260,400 L248,270 Q240,220 232,210 Z"
+        fill="url(#sef-dal)" stroke="#2a7a80" stroke-width="1.2" opacity="0.95"/>
+
+  <!-- Dalmatic orfreys (vertical gold bands — deacon vestment hallmark) -->
+  <rect x="193" y="210" width="14" height="208" fill="url(#sef-gold)" opacity="0.75" rx="1"/>
+  <!-- Horizontal orphrey at hem -->
+  <rect x="145" y="405" width="110" height="10" fill="url(#sef-gold)" opacity="0.7" rx="1"/>
+  <!-- Horizontal orphrey at chest -->
+  <rect x="155" y="248" width="90" height="8" fill="url(#sef-gold)" opacity="0.55" rx="1"/>
+
+  <!-- Deacon's orarion (stole) slung left shoulder, hanging to right -->
+  <path d="M178,215 Q182,240 186,310 L192,370" stroke="#d4a840" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M178,215 Q182,240 186,310 L192,370" stroke="#f0d870" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <!-- Cross on orarion -->
+  <line x1="182" y1="270" x2="182" y2="282" stroke="#f0d870" stroke-width="2" opacity="0.9"/>
+  <line x1="178" y1="276" x2="186" y2="276" stroke="#f0d870" stroke-width="2" opacity="0.9"/>
+
+  <!-- Arms -->
+  <!-- Left arm: holding scroll -->
+  <path d="M168,230 Q148,250 138,290 Q135,305 142,310 Q152,295 158,270 L165,250 Z"
+        fill="#1a5a60" stroke="#2a7a80" stroke-width="1"/>
+  <!-- Right arm: holding quill pen -->
+  <path d="M232,230 Q252,250 262,285 Q265,300 258,305 Q248,290 242,265 L235,248 Z"
+        fill="#1a5a60" stroke="#2a7a80" stroke-width="1"/>
+
+  <!-- Scroll (left hand) -->
+  <rect x="128" y="305" width="32" height="48" rx="3" fill="url(#sef-scroll)" stroke="#a07820" stroke-width="1.2"/>
+  <!-- Scroll top/bottom rollers -->
+  <rect x="125" y="302" width="38" height="7" rx="3" fill="#8a6010" stroke="#c09030" stroke-width="1"/>
+  <rect x="125" y="346" width="38" height="7" rx="3" fill="#8a6010" stroke="#c09030" stroke-width="1"/>
+  <!-- Text lines on scroll -->
+  <line x1="133" y1="316" x2="155" y2="316" stroke="#7a5010" stroke-width="1.5" opacity="0.6"/>
+  <line x1="133" y1="322" x2="155" y2="322" stroke="#7a5010" stroke-width="1.5" opacity="0.6"/>
+  <line x1="133" y1="328" x2="153" y2="328" stroke="#7a5010" stroke-width="1.5" opacity="0.6"/>
+  <line x1="133" y1="334" x2="155" y2="334" stroke="#7a5010" stroke-width="1.5" opacity="0.6"/>
+  <line x1="133" y1="340" x2="150" y2="340" stroke="#7a5010" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Quill pen (right hand) — the Harp of the Holy Spirit motif -->
+  <g filter="url(#sef-qg)">
+    <!-- Quill feather -->
+    <path d="M262,268 Q282,240 278,210 Q270,218 264,232 Q268,218 272,208 Q258,220 255,238 Q252,224 258,212 Q244,228 248,248 Q242,236 244,222 Q234,240 240,260 L256,292 Q260,278 262,268 Z"
+          fill="#e8f4e8" stroke="#c0d8a0" stroke-width="0.8" opacity="0.9"/>
+    <!-- Quill spine -->
+    <line x1="262" y1="268" x2="272" y2="208" stroke="#a0b878" stroke-width="1.5" opacity="0.8"/>
+    <!-- Quill tip (nib) -->
+    <path d="M255,290 L250,302 L260,296 Z" fill="#d4a840" stroke="#a07820" stroke-width="0.8"/>
+  </g>
+
+  <!-- Ink drop suggestion at nib -->
+  <ellipse cx="252" cy="305" rx="3" ry="4" fill="#1a3a5a" opacity="0.7"/>
+
+  <!-- Neck -->
+  <rect x="191" y="188" width="18" height="24" rx="4" fill="#c8a878"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="165" rx="32" ry="38" fill="#c8a878"/>
+
+  <!-- Beard (Syrian style — fuller, long) -->
+  <path d="M172,178 Q168,195 170,210 Q182,225 200,228 Q218,225 230,210 Q232,195 228,178 Q218,200 200,204 Q182,200 172,178 Z"
+        fill="#5a3818" stroke="#3a2010" stroke-width="0.8" opacity="0.9"/>
+  <!-- Beard highlight -->
+  <path d="M185,195 Q200,205 215,195" stroke="#8a5828" stroke-width="2" fill="none" opacity="0.5"/>
+
+  <!-- Mustache -->
+  <path d="M183,182 Q192,186 200,184 Q208,186 217,182" fill="#5a3818" stroke="#3a2010" stroke-width="1" opacity="0.9"/>
+
+  <!-- Eyes -->
+  <ellipse cx="188" cy="158" rx="5" ry="5.5" fill="#2a1808"/>
+  <ellipse cx="212" cy="158" rx="5" ry="5.5" fill="#2a1808"/>
+  <!-- Eye whites -->
+  <ellipse cx="188" cy="158" rx="4" ry="4.5" fill="#f0e8d8"/>
+  <ellipse cx="212" cy="158" rx="4" ry="4.5" fill="#f0e8d8"/>
+  <!-- Irises -->
+  <circle cx="189" cy="158" r="2.5" fill="#4a2808"/>
+  <circle cx="213" cy="158" r="2.5" fill="#4a2808"/>
+  <!-- Pupils -->
+  <circle cx="189" cy="158" r="1.3" fill="#0a0808"/>
+  <circle cx="213" cy="158" r="1.3" fill="#0a0808"/>
+  <!-- Eye shine -->
+  <circle cx="190" cy="157" r="0.7" fill="white" opacity="0.8"/>
+  <circle cx="214" cy="157" r="0.7" fill="white" opacity="0.8"/>
+
+  <!-- Eyebrows (expressive, Syrian) -->
+  <path d="M182,151 Q188,148 194,151" stroke="#3a2010" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <path d="M206,151 Q212,148 218,151" stroke="#3a2010" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <path d="M198,163 Q194,172 192,177 Q196,180 200,179 Q204,180 208,177 Q206,172 202,163" fill="#b89060" stroke="#9a7040" stroke-width="0.8" opacity="0.7"/>
+
+  <!-- Mouth (slight meditative expression) -->
+  <path d="M191,184 Q200,188 209,184" stroke="#8a5030" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Hair and hood edge (desert monk, bare head) -->
+  <path d="M168,155 Q172,130 180,118 Q190,108 200,106 Q210,108 220,118 Q228,130 232,155"
+        fill="#3a2010" stroke="#2a1408" stroke-width="1" opacity="0.9"/>
+
+  <!-- Head cap (small dark cap, Eastern monastic style) -->
+  <ellipse cx="200" cy="130" rx="26" ry="12" fill="#3a2010" opacity="0.8"/>
+
+  <!-- Gold halo cross marks at cardinal points -->
+  <line x1="200" y1="102" x2="200" y2="110" stroke="#d4a840" stroke-width="2" opacity="0.7"/>
+  <line x1="154" y1="148" x2="162" y2="148" stroke="#d4a840" stroke-width="2" opacity="0.7"/>
+  <line x1="238" y1="148" x2="246" y2="148" stroke="#d4a840" stroke-width="2" opacity="0.7"/>
+  <line x1="200" y1="186" x2="200" y2="194" stroke="#d4a840" stroke-width="2" opacity="0.7"/>
+
+  <!-- Gold frame lines -->
+  <line x1="20" y1="20" x2="380" y2="20" stroke="#d4a840" stroke-width="1.2" opacity="0.6"/>
+  <line x1="20" y1="22" x2="380" y2="22" stroke="#d4a840" stroke-width="0.5" opacity="0.3"/>
+  <line x1="20" y1="500" x2="380" y2="500" stroke="#d4a840" stroke-width="1.2" opacity="0.6"/>
+  <line x1="20" y1="498" x2="380" y2="498" stroke="#d4a840" stroke-width="0.5" opacity="0.3"/>
+  <line x1="20" y1="20" x2="20" y2="500" stroke="#d4a840" stroke-width="1.2" opacity="0.6"/>
+  <line x1="380" y1="20" x2="380" y2="500" stroke="#d4a840" stroke-width="1.2" opacity="0.6"/>
+  <!-- Corner ornaments -->
+  <rect x="16" y="16" width="8" height="8" fill="none" stroke="#d4a840" stroke-width="1.2" opacity="0.7"/>
+  <rect x="376" y="16" width="8" height="8" fill="none" stroke="#d4a840" stroke-width="1.2" opacity="0.7"/>
+  <rect x="16" y="496" width="8" height="8" fill="none" stroke="#d4a840" stroke-width="1.2" opacity="0.7"/>
+  <rect x="376" y="496" width="8" height="8" fill="none" stroke="#d4a840" stroke-width="1.2" opacity="0.7"/>
+
+  <!-- Name panel background -->
+  <rect x="0" y="500" width="400" height="60" fill="#060d14" opacity="0.97"/>
+  <line x1="0" y1="500" x2="400" y2="500" stroke="#d4a840" stroke-width="1.5" opacity="0.8"/>
+
+  <!-- Name panel text -->
+  <text x="200" y="519" font-family="Georgia, serif" font-size="15" font-weight="bold"
+        fill="#e8c840" text-anchor="middle" letter-spacing="2">SAN EFRÉN · SAINT EPHREM</text>
+  <text x="200" y="537" font-family="Georgia, serif" font-size="10.5"
+        fill="#a0c0b8" text-anchor="middle" letter-spacing="1.2">DOCTOR DE LA IGLESIA · DOCTOR OF THE CHURCH</text>
+  <text x="200" y="552" font-family="Georgia, serif" font-size="10"
+        fill="#7a9890" text-anchor="middle" letter-spacing="1">9 DE JUNIO · JUNE 9</text>
+</svg>
