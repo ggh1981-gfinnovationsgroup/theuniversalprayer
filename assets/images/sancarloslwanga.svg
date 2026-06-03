@@ -11,9 +11,20 @@
     </linearGradient>
     <filter id="scl-gl"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <filter id="scl-g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="scl-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#f07018" stop-opacity="1"/><stop offset="100%" stop-color="#7a2a04" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="scl-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f8b040" stop-opacity="1"/><stop offset="100%" stop-color="#c97820" stop-opacity="0.3"/>
+    </linearGradient>
     <filter id="scl-ember"><feGaussianBlur stdDeviation="14"/></filter>
   </defs>
   <rect width="400" height="600" fill="url(#scl-bg)"/>
+  <!-- Rays: fire orange left, gold right -->
+  <polygon points="198,265 -25,610 115,610" fill="url(#scl-r1)" filter="url(#scl-gl)" opacity="0.72"/>
+  <polygon points="198,265  20,600  85,600" fill="#f07018"       opacity="0.32"/>
+  <polygon points="202,265 425,610 285,610" fill="url(#scl-r2)" filter="url(#scl-gl)" opacity="0.70"/>
+  <polygon points="202,265 375,600 315,600" fill="#f8b040"       opacity="0.28"/>
   <!-- Ember glow -->
   <ellipse cx="200" cy="440" rx="160" ry="80" fill="#f06010" opacity="0.18" filter="url(#scl-ember)"/>
   <!-- Fire — left cluster -->
