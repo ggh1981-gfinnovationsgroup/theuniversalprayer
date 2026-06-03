@@ -1669,7 +1669,11 @@ body {
 }
 .htp-link:hover { color: var(--gold-light); }
 
-/* ── HERO ACTIONS ────────────────────────────────── */
+/* Feast day highlight */
+.htp-feast .htp-label { color: var(--gold); font-weight: 600; }
+.htp-feast .htp-link  { font-size: 1rem; border-bottom-style: solid; }
+
+
 .hero-actions {
   display: flex;
   gap: 0.75rem;

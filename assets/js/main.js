@@ -317,6 +317,77 @@ function setLanguage(lang) {
   if (intercessorData) renderIntercessorContent(intercessorData);
 }
 
+// ── FEAST DAY MAP (MM-DD → intercessor IDs) ──────────
+const FEAST_DAYS = {
+  '01-18': ['santagwendolina'],
+  '01-21': ['santaines'],
+  '02-03': ['sanblas'],
+  '02-09': ['santaapolonia'],
+  '03-01': ['sandavidgales'],
+  '03-08': ['sanjuandedios'],
+  '03-13': ['santaroxana'],
+  '03-19': ['sanjose'],
+  '03-22': ['santaleticia'],
+  '04-11': ['santagema'],
+  '04-19': ['sanexpedito'],
+  '04-21': ['santaalejandra'],
+  '04-23': ['sanjorge'],
+  '04-28': ['santagianna'],
+  '04-29': ['santacatalina'],
+  '05-01': ['sanperegrino'],
+  '05-13': ['fatima'],
+  '05-15': ['santadymphna'],
+  '05-16': ['sanbrendan'],
+  '05-22': ['santarita'],
+  '05-24': ['mariaauxiliadora'],
+  '05-26': ['sanfelipeneri'],
+  '06-13': ['sanantonio'],
+  '06-16': ['sanismael'],
+  '06-25': ['sanguillermo'],
+  '06-27': ['perpetuosocorro', 'santaemma'],
+  '06-29': ['sanpedro'],
+  '07-01': ['sanoliverplunkett'],
+  '07-18': ['sancamilo'],
+  '07-21': ['sandaniel'],
+  '07-24': ['sancharbel'],
+  '07-25': ['sancristobal'],
+  '07-26': ['santaana'],
+  '08-03': ['sangustavo'],
+  '08-10': ['sanlorenzo'],
+  '08-11': ['santaclara'],
+  '08-18': ['santaelena'],
+  '08-23': ['santarosa'],
+  '08-26': ['sanalejandro'],
+  '08-27': ['santamonica'],
+  '08-28': ['sanagustin'],
+  '08-30': ['santadelia'],
+  '09-05': ['teresacalcuta'],
+  '09-23': ['padrepio'],
+  '09-27': ['sanvicente'],
+  '09-29': ['sanmiguel', 'sangabriel', 'sanrafael'],
+  '10-01': ['santateresita'],
+  '10-02': ['angelguarda'],
+  '10-04': ['sanfrancisco'],
+  '10-16': ['sangerardo'],
+  '10-18': ['schoenstatt'],
+  '10-21': ['santacelina'],
+  '10-22': ['juanpablo'],
+  '10-28': ['sanjudas'],
+  '11-02': ['santanoemi'],
+  '11-03': ['santasilvia'],
+  '11-04': ['sancarlos'],
+  '11-17': ['santaisabel'],
+  '11-19': ['divinaprovidencia'],
+  '12-03': ['sanfranciscojavier'],
+  '12-04': ['santabarbara'],
+  '12-06': ['sannicolas'],
+  '12-09': ['sanjuandiego'],
+  '12-12': ['guadalupe'],
+  '12-13': ['santalucia'],
+  '12-27': ['sanjuanapostol', 'santafabiola'],
+  '12-29': ['reydavid'],
+};
+
 // ── SUBDOMAIN DETECTION ────────────────────────────
 function getSubdomain() {
   // Primary: query param ?intercesor=padrepio (GitHub Pages compatible)
@@ -1784,13 +1855,37 @@ function initMenu() {
     const _nameEs   = document.getElementById('heroTodayNameEs');
     const _nameEn   = document.getElementById('heroTodayNameEn');
     const _todayLnk = document.getElementById('heroTodayLink');
+    const _labelEs  = _pill ? _pill.querySelector('.htp-label[data-lang="es"]') : null;
+    const _labelEn  = _pill ? _pill.querySelector('.htp-label[data-lang="en"]') : null;
     if (_pill && _nameEs && _nameEn && _todayLnk) {
-      const _cands = INTERCESSORS.filter(i => i.id !== 'misericordia');
-      const _today = _cands[Math.floor(Date.now() / 86400000) % _cands.length];
-      _nameEs.textContent = _today.name.es;
-      _nameEn.textContent = _today.name.en;
-      _todayLnk.href = buildIntercessorUrl(_today.subdomain);
-      _pill.style.display = 'flex';
+      const _now = new Date();
+      const _key = `${String(_now.getMonth() + 1).padStart(2, '0')}-${String(_now.getDate()).padStart(2, '0')}`;
+      const _ids = FEAST_DAYS[_key];
+      if (_ids && _ids.length) {
+        const _feast = INTERCESSORS.find(i => i.id === _ids[0]);
+        if (_feast) {
+          let _extraEs = '', _extraEn = '';
+          if (_ids.length > 1) {
+            const _extras = _ids.slice(1).map(id => INTERCESSORS.find(i => i.id === id)).filter(Boolean);
+            _extraEs = ' · ' + _extras.map(i => i.short.es).join(' · ');
+            _extraEn = ' · ' + _extras.map(i => i.short.en).join(' · ');
+          }
+          if (_labelEs) _labelEs.textContent = '✦ Fiesta de hoy:';
+          if (_labelEn) _labelEn.textContent = '✦ Feast day:';
+          _nameEs.textContent = _feast.name.es + _extraEs;
+          _nameEn.textContent = _feast.name.en + _extraEn;
+          _todayLnk.href = buildIntercessorUrl(_feast.subdomain);
+          _pill.style.display = 'flex';
+          _pill.classList.add('htp-feast');
+        }
+      } else {
+        const _cands = INTERCESSORS.filter(i => i.id !== 'misericordia');
+        const _today = _cands[Math.floor(Date.now() / 86400000) % _cands.length];
+        _nameEs.textContent = _today.name.es;
+        _nameEn.textContent = _today.name.en;
+        _todayLnk.href = buildIntercessorUrl(_today.subdomain);
+        _pill.style.display = 'flex';
+      }
     }
   }
 })();
