@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="400" height="560">
+  <defs>
+    <!-- Background: deep olive-night, Mediterranean -->
+    <linearGradient id="sbn-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080d06"/>
+      <stop offset="100%" stop-color="#101808"/>
+    </linearGradient>
+    <!-- Ray left: warm olive-green -->
+    <linearGradient id="sbn-r1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a8020" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#1a3008" stop-opacity="0.0"/>
+    </linearGradient>
+    <!-- Ray right: warm gold -->
+    <linearGradient id="sbn-r2" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4a030" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#503800" stop-opacity="0.0"/>
+    </linearGradient>
+    <!-- Halo glow -->
+    <radialGradient id="sbn-halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe090" stop-opacity="0.65"/>
+      <stop offset="55%" stop-color="#c09828" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#c09828" stop-opacity="0.0"/>
+    </radialGradient>
+    <!-- Ambient body glow -->
+    <radialGradient id="sbn-glow" cx="50%" cy="46%" r="38%">
+      <stop offset="0%" stop-color="#285808" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#285808" stop-opacity="0.0"/>
+    </radialGradient>
+    <!-- Outer mantle (apostle) -->
+    <linearGradient id="sbn-mantle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a5010"/>
+      <stop offset="100%" stop-color="#142808"/>
+    </linearGradient>
+    <!-- Inner tunic -->
+    <linearGradient id="sbn-tunic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c8a050"/>
+      <stop offset="100%" stop-color="#8a6820"/>
+    </linearGradient>
+    <!-- Gospel book cover -->
+    <linearGradient id="sbn-book" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a1818"/>
+      <stop offset="100%" stop-color="#500808"/>
+    </linearGradient>
+    <!-- Gold ornament -->
+    <linearGradient id="sbn-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8c840"/>
+      <stop offset="100%" stop-color="#a07820"/>
+    </linearGradient>
+    <!-- Soft glow filter -->
+    <filter id="sbn-sg" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Book glow -->
+    <filter id="sbn-bg2" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="560" fill="url(#sbn-bg)"/>
+
+  <!-- Ambient glow -->
+  <ellipse cx="200" cy="240" rx="155" ry="195" fill="url(#sbn-glow)"/>
+
+  <!-- 4 Polygon rays -->
+  <polygon points="198,265 0,560 0,400" fill="url(#sbn-r1)" opacity="0.7"/>
+  <polygon points="198,265 0,480 80,560" fill="url(#sbn-r1)" opacity="0.5"/>
+  <polygon points="202,265 400,480 320,560" fill="url(#sbn-r2)" opacity="0.5"/>
+  <polygon points="202,265 400,400 400,560" fill="url(#sbn-r2)" opacity="0.7"/>
+
+  <!-- Halo glow -->
+  <circle cx="200" cy="148" r="56" fill="url(#sbn-halo)" filter="url(#sbn-sg)"/>
+  <!-- Halo ring -->
+  <circle cx="200" cy="148" r="47" fill="none" stroke="#d4a030" stroke-width="2.2" opacity="0.85"/>
+  <circle cx="200" cy="148" r="44" fill="none" stroke="#e8c840" stroke-width="0.7" opacity="0.45"/>
+
+  <!-- Outer mantle (apostle traveling cloak — draped left shoulder) -->
+  <path d="M140,215 Q128,240 122,300 L118,420 Q118,432 128,435 L200,438 L272,435 Q282,432 282,420 L278,300 Q272,240 260,215 Z"
+        fill="url(#sbn-mantle)" stroke="#3a6818" stroke-width="1.2" opacity="0.95"/>
+
+  <!-- Mantle left drape -->
+  <path d="M140,215 Q125,245 120,310 L118,420 Q128,435 155,436 L162,300 Q158,245 162,215 Z"
+        fill="#1e3c0c" stroke="#2a5010" stroke-width="0.8" opacity="0.7"/>
+
+  <!-- Inner tunic showing at center front -->
+  <path d="M172,215 L172,438 L228,438 L228,215 Q200,210 172,215 Z"
+        fill="url(#sbn-tunic)" stroke="#a07820" stroke-width="0.8" opacity="0.85"/>
+
+  <!-- Mantle fold highlights -->
+  <path d="M148,230 Q144,270 144,330" stroke="#4a7a20" stroke-width="2" fill="none" opacity="0.45"/>
+  <path d="M268,235 Q270,275 268,340" stroke="#4a7a20" stroke-width="2" fill="none" opacity="0.35"/>
+
+  <!-- Right arm — raised, open palm (preaching gesture) -->
+  <path d="M228,230 Q248,248 262,270 Q268,282 264,292 Q254,280 244,265 L236,248 Z"
+        fill="#2a5010" stroke="#3a6818" stroke-width="1"/>
+  <!-- Right hand open (blessing) -->
+  <ellipse cx="266" cy="298" rx="12" ry="10" fill="#c8a070" stroke="#a07840" stroke-width="0.8"/>
+  <!-- Fingers suggestion -->
+  <line x1="260" y1="292" x2="258" y2="284" stroke="#a07840" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/>
+  <line x1="265" y1="290" x2="264" y2="281" stroke="#a07840" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/>
+  <line x1="270" y1="291" x2="271" y2="283" stroke="#a07840" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/>
+  <line x1="274" y1="294" x2="276" y2="287" stroke="#a07840" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Left arm — holding Gospel book -->
+  <path d="M172,230 Q152,250 140,272 Q136,284 140,294 Q150,282 158,267 L166,248 Z"
+        fill="#2a5010" stroke="#3a6818" stroke-width="1"/>
+
+  <!-- Gospel book (left hand) -->
+  <g filter="url(#sbn-bg2)">
+    <rect x="118" y="290" width="40" height="52" rx="3" fill="url(#sbn-book)" stroke="#800000" stroke-width="1.5"/>
+    <!-- Book spine -->
+    <rect x="118" y="290" width="6" height="52" rx="2" fill="#600010" opacity="0.8"/>
+    <!-- Cross on cover -->
+    <line x1="138" y1="300" x2="138" y2="332" stroke="#e8c840" stroke-width="2.5" opacity="0.9"/>
+    <line x1="126" y1="316" x2="150" y2="316" stroke="#e8c840" stroke-width="2.5" opacity="0.9"/>
+    <!-- Gold corner clasps -->
+    <rect x="119" y="291" width="5" height="5" fill="url(#sbn-gold)" rx="1" opacity="0.9"/>
+    <rect x="152" y="291" width="5" height="5" fill="url(#sbn-gold)" rx="1" opacity="0.9"/>
+    <rect x="119" y="336" width="5" height="5" fill="url(#sbn-gold)" rx="1" opacity="0.9"/>
+    <rect x="152" y="336" width="5" height="5" fill="url(#sbn-gold)" rx="1" opacity="0.9"/>
+  </g>
+
+  <!-- Neck -->
+  <rect x="191" y="188" width="18" height="25" rx="4" fill="#c8a070"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="163" rx="33" ry="37" fill="#c8a070"/>
+
+  <!-- Hair — curly, Mediterranean, dark -->
+  <path d="M167,158 Q168,128 178,114 Q188,104 200,102 Q212,104 222,114 Q232,128 233,158"
+        fill="#2a1808" stroke="#1a1008" stroke-width="1" opacity="0.95"/>
+  <!-- Hair curls detail -->
+  <path d="M169,152 Q167,140 170,132 Q174,122 180,116" fill="none" stroke="#3a2010" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <path d="M231,152 Q233,140 230,132 Q226,122 220,116" fill="none" stroke="#3a2010" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Beard — full, apostolic style -->
+  <path d="M170,175 Q167,192 168,208 Q180,226 200,230 Q220,226 232,208 Q233,192 230,175 Q218,200 200,203 Q182,200 170,175 Z"
+        fill="#2a1808" stroke="#1a1008" stroke-width="0.8" opacity="0.95"/>
+  <!-- Beard texture -->
+  <path d="M183,192 Q192,200 200,198 Q208,200 217,192" fill="none" stroke="#4a2810" stroke-width="1.5" opacity="0.5"/>
+  <path d="M186,208 Q200,214 214,208" fill="none" stroke="#4a2810" stroke-width="1.2" opacity="0.4"/>
+
+  <!-- Mustache -->
+  <path d="M183,179 Q192,183 200,181 Q208,183 217,179" fill="#2a1808" stroke="#1a1008" stroke-width="1" opacity="0.9"/>
+
+  <!-- Eyes -->
+  <ellipse cx="188" cy="157" rx="4.5" ry="5" fill="#f0e4d0"/>
+  <ellipse cx="212" cy="157" rx="4.5" ry="5" fill="#f0e4d0"/>
+  <circle cx="189" cy="157" r="2.8" fill="#3a2008"/>
+  <circle cx="213" cy="157" r="2.8" fill="#3a2008"/>
+  <circle cx="189" cy="157" r="1.4" fill="#0a0606"/>
+  <circle cx="213" cy="157" r="1.4" fill="#0a0606"/>
+  <circle cx="190" cy="156" r="0.7" fill="white" opacity="0.85"/>
+  <circle cx="214" cy="156" r="0.7" fill="white" opacity="0.85"/>
+
+  <!-- Eyebrows -->
+  <path d="M182,149 Q188,146 194,149" stroke="#2a1808" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <path d="M206,149 Q212,146 218,149" stroke="#2a1808" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <path d="M197,162 Q193,172 192,177 Q196,180 200,179 Q204,180 208,177 Q207,172 203,162" fill="#b09060" stroke="#907040" stroke-width="0.8" opacity="0.7"/>
+
+  <!-- Mouth — slight smile, warm expression (Barnabas = "son of encouragement") -->
+  <path d="M191,184 Q200,190 209,184" stroke="#8a4828" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M192,184 Q200,187 208,184" stroke="#c08060" stroke-width="0.8" fill="none" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Halo cross marks -->
+  <line x1="200" y1="101" x2="200" y2="109" stroke="#d4a030" stroke-width="2" opacity="0.7"/>
+  <line x1="153" y1="148" x2="161" y2="148" stroke="#d4a030" stroke-width="2" opacity="0.7"/>
+  <line x1="239" y1="148" x2="247" y2="148" stroke="#d4a030" stroke-width="2" opacity="0.7"/>
+  <line x1="200" y1="187" x2="200" y2="195" stroke="#d4a030" stroke-width="2" opacity="0.7"/>
+
+  <!-- Gold frame -->
+  <line x1="20" y1="20" x2="380" y2="20" stroke="#d4a030" stroke-width="1.2" opacity="0.6"/>
+  <line x1="20" y1="22" x2="380" y2="22" stroke="#d4a030" stroke-width="0.5" opacity="0.3"/>
+  <line x1="20" y1="500" x2="380" y2="500" stroke="#d4a030" stroke-width="1.2" opacity="0.6"/>
+  <line x1="20" y1="498" x2="380" y2="498" stroke="#d4a030" stroke-width="0.5" opacity="0.3"/>
+  <line x1="20" y1="20" x2="20" y2="500" stroke="#d4a030" stroke-width="1.2" opacity="0.6"/>
+  <line x1="380" y1="20" x2="380" y2="500" stroke="#d4a030" stroke-width="1.2" opacity="0.6"/>
+  <rect x="16" y="16" width="8" height="8" fill="none" stroke="#d4a030" stroke-width="1.2" opacity="0.7"/>
+  <rect x="376" y="16" width="8" height="8" fill="none" stroke="#d4a030" stroke-width="1.2" opacity="0.7"/>
+  <rect x="16" y="496" width="8" height="8" fill="none" stroke="#d4a030" stroke-width="1.2" opacity="0.7"/>
+  <rect x="376" y="496" width="8" height="8" fill="none" stroke="#d4a030" stroke-width="1.2" opacity="0.7"/>
+
+  <!-- Name panel -->
+  <rect x="0" y="500" width="400" height="60" fill="#080d06" opacity="0.97"/>
+  <line x1="0" y1="500" x2="400" y2="500" stroke="#d4a030" stroke-width="1.5" opacity="0.8"/>
+  <text x="200" y="519" font-family="Georgia, serif" font-size="15" font-weight="bold"
+        fill="#e8c840" text-anchor="middle" letter-spacing="2">SAN BERNABÉ · SAINT BARNABAS</text>
+  <text x="200" y="537" font-family="Georgia, serif" font-size="10.5"
+        fill="#90b870" text-anchor="middle" letter-spacing="1.2">APÓSTOL · HIJO DE LA CONSOLACIÓN</text>
+  <text x="200" y="552" font-family="Georgia, serif" font-size="10"
+        fill="#6a8858" text-anchor="middle" letter-spacing="1">11 DE JUNIO · JUNE 11</text>
+</svg>
