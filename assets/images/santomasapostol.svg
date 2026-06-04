@@ -18,12 +18,21 @@
       <stop offset="45%"  stop-color="#e8a820"/>
       <stop offset="100%" stop-color="#c07818"/>
     </linearGradient>
-    <!-- Amber ray gradient -->
-    <linearGradient id="sto-ray" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#c07010" stop-opacity="0"/>
-      <stop offset="50%"  stop-color="#e09830" stop-opacity="0.22"/>
-      <stop offset="100%" stop-color="#f5c050" stop-opacity="0"/>
+    <!-- Ray left: apostle amber-gold -->
+    <linearGradient id="sto-r1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4900a" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#5a3800" stop-opacity="0.0"/>
     </linearGradient>
+    <!-- Ray right: martyr sienna-fire -->
+    <linearGradient id="sto-r2" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c04808" stop-opacity="0.82"/>
+      <stop offset="100%" stop-color="#3a1400" stop-opacity="0.0"/>
+    </linearGradient>
+    <!-- Ambient body glow -->
+    <radialGradient id="sto-bodyglow" cx="50%" cy="46%" r="40%">
+      <stop offset="0%" stop-color="#3a1e04" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#3a1e04" stop-opacity="0.0"/>
+    </radialGradient>
     <!-- Robe gradient: cream-ivory -->
     <linearGradient id="sto-robe" x1="0%" y1="0%" x2="15%" y2="100%">
       <stop offset="0%"   stop-color="#f0e8d0"/>
@@ -84,13 +93,14 @@
   <!-- ── BACKGROUND ── -->
   <rect width="400" height="560" fill="url(#sto-bg)"/>
 
-  <!-- ── DIAGONAL RAYS ── -->
-  <!-- Left rays (from lower-left toward upper-right) -->
-  <polygon points="0,560 0,300 220,0 180,0"   fill="url(#sto-ray)" opacity="0.55"/>
-  <polygon points="0,560 0,420 280,0 240,0"   fill="url(#sto-ray)" opacity="0.38"/>
-  <!-- Right rays (from lower-right toward upper-left) -->
-  <polygon points="400,560 400,300 180,0 220,0" fill="url(#sto-ray)" opacity="0.55"/>
-  <polygon points="400,560 400,420 120,0 160,0" fill="url(#sto-ray)" opacity="0.38"/>
+  <!-- Ambient glow -->
+  <ellipse cx="200" cy="242" rx="155" ry="200" fill="url(#sto-bodyglow)"/>
+
+  <!-- 4 Polygon rays emanating from figure center -->
+  <polygon points="198,265 0,560 0,400" fill="url(#sto-r1)" opacity="0.72"/>
+  <polygon points="198,265 0,480 80,560" fill="url(#sto-r1)" opacity="0.50"/>
+  <polygon points="202,265 400,480 320,560" fill="url(#sto-r2)" opacity="0.50"/>
+  <polygon points="202,265 400,400 400,560" fill="url(#sto-r2)" opacity="0.72"/>
 
   <!-- ── HALO GLOW ── -->
   <circle cx="200" cy="150" r="90" fill="url(#sto-halo)"/>

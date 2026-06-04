@@ -1,0 +1,332 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="400" height="560">
+  <defs>
+    <!-- Background: deep midnight blue — digital night sky -->
+    <radialGradient id="sca-bg" cx="50%" cy="38%" r="65%">
+      <stop offset="0%"   stop-color="#001030"/>
+      <stop offset="55%"  stop-color="#000818"/>
+      <stop offset="100%" stop-color="#000208"/>
+    </radialGradient>
+    <!-- Halo glow: golden-white -->
+    <radialGradient id="sca-halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#fffde0" stop-opacity="0.70"/>
+      <stop offset="55%"  stop-color="#f5d840" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#c89010" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Gold ring gradient -->
+    <linearGradient id="sca-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#fff0a0"/>
+      <stop offset="45%"  stop-color="#f0c030"/>
+      <stop offset="100%" stop-color="#c08010"/>
+    </linearGradient>
+    <!-- Ray left: digital blue-white -->
+    <linearGradient id="sca-r1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4090ff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#001040" stop-opacity="0.0"/>
+    </linearGradient>
+    <!-- Ray right: Eucharist gold -->
+    <linearGradient id="sca-r2" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0c030" stop-opacity="0.80"/>
+      <stop offset="100%" stop-color="#402000" stop-opacity="0.0"/>
+    </linearGradient>
+    <!-- Ambient body glow -->
+    <radialGradient id="sca-bodyglow" cx="50%" cy="46%" r="40%">
+      <stop offset="0%" stop-color="#001840" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#001840" stop-opacity="0.0"/>
+    </radialGradient>
+    <!-- White polo shirt -->
+    <linearGradient id="sca-shirt" x1="0%" y1="0%" x2="20%" y2="100%">
+      <stop offset="0%"   stop-color="#f4f0e8"/>
+      <stop offset="60%"  stop-color="#dcd8d0"/>
+      <stop offset="100%" stop-color="#c0bcb4"/>
+    </linearGradient>
+    <!-- Blue jeans -->
+    <linearGradient id="sca-jeans" x1="0%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%"   stop-color="#2a4a7a"/>
+      <stop offset="50%"  stop-color="#1e3860"/>
+      <stop offset="100%" stop-color="#122040"/>
+    </linearGradient>
+    <!-- Skin: young fair Mediterranean -->
+    <radialGradient id="sca-skin" cx="50%" cy="38%" r="56%">
+      <stop offset="0%"   stop-color="#f0c898"/>
+      <stop offset="65%"  stop-color="#d8a870"/>
+      <stop offset="100%" stop-color="#b87e48"/>
+    </radialGradient>
+    <!-- Laptop screen gradient: blue glow -->
+    <linearGradient id="sca-screen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#001858"/>
+      <stop offset="40%"  stop-color="#002870"/>
+      <stop offset="100%" stop-color="#001040"/>
+    </linearGradient>
+    <!-- Laptop body -->
+    <linearGradient id="sca-laptop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#707888"/>
+      <stop offset="100%" stop-color="#383e48"/>
+    </linearGradient>
+    <!-- Monstrance gold -->
+    <radialGradient id="sca-monst" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#fffacc"/>
+      <stop offset="50%"  stop-color="#f5d030"/>
+      <stop offset="100%" stop-color="#c08010"/>
+    </radialGradient>
+    <!-- Rosary beads -->
+    <radialGradient id="sca-bead" cx="40%" cy="35%" r="60%">
+      <stop offset="0%"   stop-color="#c8a0e0"/>
+      <stop offset="100%" stop-color="#7040a0"/>
+    </radialGradient>
+    <!-- Frame gradient -->
+    <linearGradient id="sca-frame" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#80b0ff"/>
+      <stop offset="50%"  stop-color="#f0c030"/>
+      <stop offset="100%" stop-color="#80b0ff"/>
+    </linearGradient>
+    <!-- Panel gradient -->
+    <linearGradient id="sca-panel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#000c20" stop-opacity="0.96"/>
+      <stop offset="100%" stop-color="#000408" stop-opacity="1"/>
+    </linearGradient>
+    <!-- Glow filter -->
+    <filter id="sca-glow" x="-35%" y="-35%" width="170%" height="170%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="sca-screenglow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Soft filter -->
+    <filter id="sca-soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ── BACKGROUND ── -->
+  <rect width="400" height="560" fill="url(#sca-bg)"/>
+
+  <!-- ── SUBTLE DIGITAL GRID (background texture) ── -->
+  <!-- Horizontal faint lines -->
+  <line x1="0" y1="100" x2="400" y2="100" stroke="#0030a0" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="200" x2="400" y2="200" stroke="#0030a0" stroke-width="0.4" opacity="0.15"/>
+  <line x1="0" y1="300" x2="400" y2="300" stroke="#0030a0" stroke-width="0.4" opacity="0.10"/>
+  <line x1="0" y1="400" x2="400" y2="400" stroke="#0030a0" stroke-width="0.4" opacity="0.10"/>
+  <!-- Vertical faint lines -->
+  <line x1="100" y1="0" x2="100" y2="490" stroke="#0030a0" stroke-width="0.4" opacity="0.12"/>
+  <line x1="200" y1="0" x2="200" y2="490" stroke="#0030a0" stroke-width="0.4" opacity="0.12"/>
+  <line x1="300" y1="0" x2="300" y2="490" stroke="#0030a0" stroke-width="0.4" opacity="0.12"/>
+  <!-- Tiny circuit nodes at intersections -->
+  <circle cx="100" cy="100" r="1.8" fill="#0060ff" opacity="0.20"/>
+  <circle cx="300" cy="100" r="1.8" fill="#0060ff" opacity="0.20"/>
+  <circle cx="100" cy="300" r="1.8" fill="#0060ff" opacity="0.15"/>
+  <circle cx="300" cy="300" r="1.8" fill="#0060ff" opacity="0.15"/>
+
+  <!-- Ambient glow -->
+  <ellipse cx="200" cy="242" rx="155" ry="200" fill="url(#sca-bodyglow)"/>
+
+  <!-- 4 Polygon rays emanating from figure center -->
+  <polygon points="198,265 0,560 0,400" fill="url(#sca-r1)" opacity="0.72"/>
+  <polygon points="198,265 0,480 80,560" fill="url(#sca-r1)" opacity="0.50"/>
+  <polygon points="202,265 400,480 320,560" fill="url(#sca-r2)" opacity="0.50"/>
+  <polygon points="202,265 400,400 400,560" fill="url(#sca-r2)" opacity="0.72"/>
+
+  <!-- ── HALO GLOW ── -->
+  <circle cx="200" cy="148" r="88" fill="url(#sca-halo)"/>
+
+  <!-- ── HALO RING ── -->
+  <circle cx="200" cy="148" r="70" fill="none" stroke="url(#sca-gold)" stroke-width="3.2" opacity="0.92" filter="url(#sca-glow)"/>
+  <circle cx="200" cy="148" r="76" fill="none" stroke="#e8c040" stroke-width="0.9" opacity="0.45"/>
+  <circle cx="200" cy="148" r="64" fill="none" stroke="#c8a020" stroke-width="0.9" opacity="0.30"/>
+
+  <!-- ── BODY: WHITE POLO SHIRT + BLUE JEANS ── -->
+  <!-- Torso: polo shirt (white/cream) -->
+  <path d="M 155,262 C 145,285 132,330 125,450 L 275,450 C 268,330 255,285 245,262 Z"
+        fill="url(#sca-shirt)" opacity="0.97"/>
+  <!-- Shirt collar V-neck -->
+  <path d="M 175,262 Q 200,278 225,262" fill="none" stroke="#b8b0a0" stroke-width="1.5" opacity="0.5"/>
+  <!-- Polo collar band -->
+  <rect x="185" y="258" width="30" height="10" rx="4" fill="#d8d4cc" opacity="0.7"/>
+  <!-- Shirt horizontal chest seam -->
+  <line x1="148" y1="298" x2="252" y2="298" stroke="#c0bab0" stroke-width="0.8" opacity="0.30"/>
+  <!-- Shirt center button placket -->
+  <line x1="200" y1="270" x2="200" y2="445" stroke="#c8c4bc" stroke-width="1.2" opacity="0.25"/>
+  <circle cx="200" cy="285" r="2" fill="#b8b4ac" opacity="0.35"/>
+  <circle cx="200" cy="298" r="2" fill="#b8b4ac" opacity="0.35"/>
+
+  <!-- Jeans (waistband visible below shirt hem, legs) -->
+  <path d="M 132,412 C 130,430 128,450 126,462 L 175,462 C 172,450 170,430 168,412 Z"
+        fill="url(#sca-jeans)" opacity="0.95"/>
+  <path d="M 268,412 C 270,430 272,450 274,462 L 225,462 C 228,450 230,430 232,412 Z"
+        fill="url(#sca-jeans)" opacity="0.95"/>
+  <!-- Jeans waistband -->
+  <rect x="128" y="410" width="144" height="12" rx="2" fill="#1a3060" opacity="0.8"/>
+  <!-- Jeans belt -->
+  <rect x="128" y="408" width="144" height="8" rx="2" fill="#302010" opacity="0.7"/>
+  <rect x="192" y="406" width="16" height="12" rx="2" fill="#806040" opacity="0.8"/>
+  <!-- Jeans pocket lines -->
+  <line x1="140" y1="425" x2="165" y2="440" stroke="#3a5888" stroke-width="1.2" opacity="0.5"/>
+  <line x1="260" y1="425" x2="235" y2="440" stroke="#3a5888" stroke-width="1.2" opacity="0.5"/>
+
+  <!-- ── NECK ── -->
+  <rect x="184" y="248" width="32" height="20" rx="9" fill="url(#sca-skin)" opacity="0.97"/>
+  <ellipse cx="200" cy="262" rx="18" ry="10" fill="url(#sca-skin)" opacity="0.97"/>
+
+  <!-- ── HEAD (young, round) ── -->
+  <ellipse cx="200" cy="160" rx="52" ry="58" fill="url(#sca-skin)"/>
+  <!-- Slight jawline definition -->
+  <ellipse cx="200" cy="185" rx="46" ry="42" fill="url(#sca-skin)"/>
+
+  <!-- ── HAIR: dark brown, short, slightly disheveled ── -->
+  <!-- Top/forehead hair -->
+  <path d="M 150,150 C 152,102 170,80 200,76 C 230,80 248,102 250,150
+           C 248,136 244,118 238,120 C 232,96 218,84 200,82
+           C 182,84 168,96 162,120 C 156,118 152,136 150,150 Z"
+        fill="#1e1008"/>
+  <!-- Side hair flicks — slightly messy youth style -->
+  <path d="M 150,150 C 146,162 144,178 145,192"
+        fill="#1e1008" stroke="#1e1008" stroke-width="3"/>
+  <path d="M 250,150 C 254,162 256,178 255,192"
+        fill="#1e1008" stroke="#1e1008" stroke-width="3"/>
+  <!-- Slight hair tuft on top -->
+  <path d="M 188,82 C 193,74 207,74 212,82" fill="#1e1008"/>
+  <!-- Hair color: dark brown natural -->
+  <path d="M 155,148 C 158,108 174,86 200,83 C 226,86 242,108 245,148"
+        fill="#180e06" opacity="0.7"/>
+
+  <!-- ── EARS ── -->
+  <ellipse cx="149" cy="168" rx="10" ry="13" fill="url(#sca-skin)" opacity="0.88"/>
+  <ellipse cx="251" cy="168" rx="10" ry="13" fill="url(#sca-skin)" opacity="0.88"/>
+
+  <!-- ── EYES (young, lively, hazel-brown) ── -->
+  <!-- Left eye -->
+  <ellipse cx="182" cy="162" rx="10" ry="7" fill="#f0e0c0"/>
+  <ellipse cx="182" cy="162" rx="7"  ry="6" fill="#3a2808"/>
+  <ellipse cx="182" cy="162" rx="4"  ry="4" fill="#100804"/>
+  <circle  cx="184" cy="160" r="1.4" fill="white" opacity="0.75"/>
+  <!-- Right eye -->
+  <ellipse cx="218" cy="162" rx="10" ry="7" fill="#f0e0c0"/>
+  <ellipse cx="218" cy="162" rx="7"  ry="6" fill="#3a2808"/>
+  <ellipse cx="218" cy="162" rx="4"  ry="4" fill="#100804"/>
+  <circle  cx="220" cy="160" r="1.4" fill="white" opacity="0.75"/>
+  <!-- Eyebrows: dark, youthful, slightly prominent -->
+  <path d="M 172,153 Q 182,149 193,153" stroke="#1a0e06" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 207,153 Q 218,149 228,153" stroke="#1a0e06" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Lower eyelid definition -->
+  <path d="M 172,165 Q 182,168 193,165" stroke="#c8a880" stroke-width="0.8" fill="none" opacity="0.4"/>
+  <path d="M 207,165 Q 218,168 229,165" stroke="#c8a880" stroke-width="0.8" fill="none" opacity="0.4"/>
+
+  <!-- ── NOSE (young, small) ── -->
+  <path d="M 200,168 L 196,180 Q 200,183 204,180 Z" fill="#b88860" opacity="0.40"/>
+  <circle cx="196" cy="181" r="3.2" fill="#a07048" opacity="0.28"/>
+  <circle cx="204" cy="181" r="3.2" fill="#a07048" opacity="0.28"/>
+
+  <!-- ── MOUTH (slight gentle smile) ── -->
+  <path d="M 188,194 Q 200,203 212,194" fill="none" stroke="#8a5838" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Subtle lip definition -->
+  <path d="M 191,192 Q 200,196 209,192" fill="#c8907a" opacity="0.30"/>
+
+  <!-- ── LEFT ARM (down, relaxed at side) ── -->
+  <path d="M 155,262 C 148,288 143,315 138,345" stroke="url(#sca-shirt)" stroke-width="26" fill="none" stroke-linecap="round"/>
+  <path d="M 138,345 C 134,362 132,378 130,392" stroke="url(#sca-shirt)" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <!-- Left hand -->
+  <ellipse cx="128" cy="397" rx="13" ry="10" fill="url(#sca-skin)" transform="rotate(-10, 128, 397)"/>
+  <!-- Rosary hanging from fingers -->
+  <!-- Rosary chain/cord -->
+  <path d="M 122,402 C 115,415 112,430 114,445 C 116,458 122,465 128,468 C 134,465 138,456 136,444 C 134,430 130,418 126,408"
+        fill="none" stroke="#7040a0" stroke-width="1.5" opacity="0.75"/>
+  <!-- Rosary beads -->
+  <circle cx="120" cy="410" r="4" fill="url(#sca-bead)" opacity="0.9"/>
+  <circle cx="116" cy="420" r="4" fill="url(#sca-bead)" opacity="0.9"/>
+  <circle cx="113" cy="431" r="4" fill="url(#sca-bead)" opacity="0.9"/>
+  <circle cx="114" cy="442" r="4" fill="url(#sca-bead)" opacity="0.9"/>
+  <circle cx="118" cy="452" r="4" fill="url(#sca-bead)" opacity="0.9"/>
+  <circle cx="125" cy="460" r="4" fill="url(#sca-bead)" opacity="0.9"/>
+  <circle cx="132" cy="462" r="4" fill="url(#sca-bead)" opacity="0.9"/>
+  <!-- Crucifix at end of rosary -->
+  <line x1="130" y1="464" x2="130" y2="476" stroke="#f0c030" stroke-width="2.2"/>
+  <line x1="125" y1="468" x2="135" y2="468" stroke="#f0c030" stroke-width="2.2"/>
+  <ellipse cx="130" cy="471" rx="2.5" ry="3" fill="#f0c030" opacity="0.8"/>
+
+  <!-- ── RIGHT ARM (holding laptop slightly raised) ── -->
+  <path d="M 245,262 C 255,285 268,308 278,330" stroke="url(#sca-shirt)" stroke-width="26" fill="none" stroke-linecap="round"/>
+  <path d="M 278,330 C 284,348 288,365 290,385" stroke="url(#sca-shirt)" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <!-- Right forearm extended toward laptop -->
+  <path d="M 290,385 C 292,398 292,408 290,416" stroke="url(#sca-shirt)" stroke-width="18" fill="none" stroke-linecap="round"/>
+  <!-- Right hand -->
+  <ellipse cx="290" cy="420" rx="13" ry="10" fill="url(#sca-skin)" transform="rotate(8, 290, 420)"/>
+
+  <!-- ── LAPTOP (held/resting at right side, open lid facing viewer) ── -->
+  <!-- Laptop base/keyboard unit -->
+  <rect x="250" y="380" width="82" height="52" rx="4" fill="url(#sca-laptop)" opacity="0.95"/>
+  <rect x="252" y="382" width="78" height="48" rx="3" fill="#2a3040" opacity="0.9"/>
+  <!-- Keyboard rows (tiny) -->
+  <line x1="257" y1="392" x2="326" y2="392" stroke="#3a4050" stroke-width="0.8" opacity="0.6"/>
+  <line x1="256" y1="398" x2="326" y2="398" stroke="#3a4050" stroke-width="0.8" opacity="0.6"/>
+  <line x1="257" y1="404" x2="326" y2="404" stroke="#3a4050" stroke-width="0.8" opacity="0.6"/>
+  <line x1="258" y1="410" x2="326" y2="410" stroke="#3a4050" stroke-width="0.8" opacity="0.6"/>
+  <line x1="260" y1="416" x2="326" y2="416" stroke="#3a4050" stroke-width="0.8" opacity="0.6"/>
+  <!-- Touchpad -->
+  <rect x="276" y="420" width="28" height="18" rx="3" fill="#353b4a" opacity="0.8"/>
+
+  <!-- Laptop open lid (screen) -->
+  <rect x="250" y="300" width="82" height="82" rx="5" fill="url(#sca-laptop)" transform="rotate(-3, 291, 341)"/>
+  <rect x="253" y="303" width="76" height="76" rx="3" fill="url(#sca-screen)" transform="rotate(-3, 291, 341)" filter="url(#sca-screenglow)"/>
+  <!-- Screen glow blue -->
+  <rect x="253" y="303" width="76" height="76" rx="3" fill="#0040c0" transform="rotate(-3, 291, 341)" opacity="0.25" filter="url(#sca-screenglow)"/>
+
+  <!-- Screen content: Eucharistic monstrance icon on screen -->
+  <!-- Monstrance circle/host on screen -->
+  <circle cx="291" cy="336" r="16" fill="none" stroke="#f5d840" stroke-width="1.8" opacity="0.80" transform="rotate(-3, 291, 341)"/>
+  <!-- Rays from monstrance (on screen) -->
+  <line x1="291" y1="316" x2="291" y2="309" stroke="#f5d840" stroke-width="1.2" opacity="0.70" transform="rotate(-3, 291, 341)"/>
+  <line x1="291" y1="356" x2="291" y2="363" stroke="#f5d840" stroke-width="1.2" opacity="0.70" transform="rotate(-3, 291, 341)"/>
+  <line x1="271" y1="336" x2="264" y2="336" stroke="#f5d840" stroke-width="1.2" opacity="0.70" transform="rotate(-3, 291, 341)"/>
+  <line x1="311" y1="336" x2="318" y2="336" stroke="#f5d840" stroke-width="1.2" opacity="0.70" transform="rotate(-3, 291, 341)"/>
+  <line x1="277" y1="322" x2="272" y2="317" stroke="#f5d840" stroke-width="1.0" opacity="0.55" transform="rotate(-3, 291, 341)"/>
+  <line x1="305" y1="350" x2="310" y2="355" stroke="#f5d840" stroke-width="1.0" opacity="0.55" transform="rotate(-3, 291, 341)"/>
+  <line x1="305" y1="322" x2="310" y2="317" stroke="#f5d840" stroke-width="1.0" opacity="0.55" transform="rotate(-3, 291, 341)"/>
+  <line x1="277" y1="350" x2="272" y2="355" stroke="#f5d840" stroke-width="1.0" opacity="0.55" transform="rotate(-3, 291, 341)"/>
+  <!-- Host/circle inner fill glow -->
+  <circle cx="291" cy="336" r="12" fill="#fffacc" opacity="0.30" transform="rotate(-3, 291, 341)"/>
+  <circle cx="291" cy="336" r="8"  fill="#fffacc" opacity="0.50" transform="rotate(-3, 291, 341)"/>
+  <circle cx="291" cy="336" r="5"  fill="#fff8a0" opacity="0.75" transform="rotate(-3, 291, 341)" filter="url(#sca-screenglow)"/>
+  <!-- Monstrance stand stem (on screen) -->
+  <line x1="291" y1="352" x2="291" y2="362" stroke="#f0c030" stroke-width="1.5" opacity="0.65" transform="rotate(-3, 291, 341)"/>
+  <line x1="284" y1="362" x2="298" y2="362" stroke="#f0c030" stroke-width="1.8" opacity="0.65" transform="rotate(-3, 291, 341)"/>
+  <!-- Screen URL bar (tiny): miraculoseucaristicos.org reference -->
+  <rect x="255" y="305" width="72" height="6" rx="2" fill="#1a2a50" transform="rotate(-3, 291, 341)" opacity="0.7"/>
+  <circle cx="260" cy="308" r="1.5" fill="#40c060" opacity="0.7" transform="rotate(-3, 291, 341)"/>
+  <!-- Tiny text on screen suggesting URL -->
+  <text x="267" y="310" font-family="monospace" font-size="3.5" fill="#80c0ff" opacity="0.75" transform="rotate(-3, 291, 341)">miracolieucaristici.org</text>
+
+  <!-- ── SHOES (sneakers, simple) ── -->
+  <ellipse cx="168" cy="464" rx="24" ry="8" fill="#202830" opacity="0.9"/>
+  <ellipse cx="232" cy="464" rx="24" ry="8" fill="#202830" opacity="0.9"/>
+  <!-- Sneaker white sole line -->
+  <path d="M 146,464 Q 168,470 190,464" fill="none" stroke="#e0e0d8" stroke-width="1.5" opacity="0.5"/>
+  <path d="M 210,464 Q 232,470 254,464" fill="none" stroke="#e0e0d8" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- ── FRAME BORDER ── -->
+  <rect x="10" y="10" width="380" height="540" rx="6" ry="6"
+        fill="none" stroke="url(#sca-frame)" stroke-width="2.2" opacity="0.78"/>
+  <rect x="14" y="14" width="372" height="532" rx="4" ry="4"
+        fill="none" stroke="#4080e0" stroke-width="0.8" opacity="0.35"/>
+
+  <!-- Corner ornaments -->
+  <path d="M 10,35 L 10,10 L 35,10"  fill="none" stroke="url(#sca-frame)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 365,10 L 390,10 L 390,35"  fill="none" stroke="url(#sca-frame)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 10,515 L 10,540 L 35,540" fill="none" stroke="url(#sca-frame)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 365,540 L 390,540 L 390,515" fill="none" stroke="url(#sca-frame)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- ── NAME PANEL ── -->
+  <rect x="10" y="490" width="380" height="60" rx="0" fill="url(#sca-panel)"/>
+  <line x1="10" y1="490" x2="390" y2="490" stroke="url(#sca-frame)" stroke-width="1.5" opacity="0.65"/>
+
+  <text x="200" y="510" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="16" font-weight="bold" letter-spacing="2.5"
+        fill="#f5d060" opacity="0.97">SAN CARLOS ACUTIS</text>
+  <text x="200" y="527" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="8.5" letter-spacing="2" fill="#80b0ff" opacity="0.85">
+        JOVEN · APÓSTOL DE LA EUCARISTÍA · MÁRTIR</text>
+  <text x="200" y="543" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="8" letter-spacing="1.5" fill="#b07820" opacity="0.68">
+        12 DE OCTUBRE · OCTOBER 12</text>
+</svg>
