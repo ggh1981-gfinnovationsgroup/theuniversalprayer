@@ -1,0 +1,283 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="400" height="560">
+  <defs>
+    <!-- Background gradient: deep earth/india brown-black -->
+    <radialGradient id="sto-bg" cx="50%" cy="42%" r="62%">
+      <stop offset="0%"   stop-color="#1e0c04"/>
+      <stop offset="60%"  stop-color="#0f0502"/>
+      <stop offset="100%" stop-color="#060100"/>
+    </radialGradient>
+    <!-- Halo glow -->
+    <radialGradient id="sto-halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#f5c842" stop-opacity="0.55"/>
+      <stop offset="60%"  stop-color="#d4922a" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#b06010" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Gold metallic gradient for halo ring -->
+    <linearGradient id="sto-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#f7d96b"/>
+      <stop offset="45%"  stop-color="#e8a820"/>
+      <stop offset="100%" stop-color="#c07818"/>
+    </linearGradient>
+    <!-- Amber ray gradient -->
+    <linearGradient id="sto-ray" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#c07010" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#e09830" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#f5c050" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Robe gradient: cream-ivory -->
+    <linearGradient id="sto-robe" x1="0%" y1="0%" x2="15%" y2="100%">
+      <stop offset="0%"   stop-color="#f0e8d0"/>
+      <stop offset="50%"  stop-color="#d8c8a0"/>
+      <stop offset="100%" stop-color="#b8a070"/>
+    </linearGradient>
+    <!-- Mantle gradient: rust-sienna brown -->
+    <linearGradient id="sto-mantle" x1="0%" y1="0%" x2="20%" y2="100%">
+      <stop offset="0%"   stop-color="#8b4010"/>
+      <stop offset="50%"  stop-color="#6a3008"/>
+      <stop offset="100%" stop-color="#3a1800"/>
+    </linearGradient>
+    <!-- Skin tone gradient -->
+    <radialGradient id="sto-skin" cx="50%" cy="38%" r="55%">
+      <stop offset="0%"   stop-color="#d49060"/>
+      <stop offset="70%"  stop-color="#b87040"/>
+      <stop offset="100%" stop-color="#8a4820"/>
+    </radialGradient>
+    <!-- Carpenter square wood -->
+    <linearGradient id="sto-wood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#8b5a20"/>
+      <stop offset="100%" stop-color="#5a3008"/>
+    </linearGradient>
+    <!-- Spear gradient -->
+    <linearGradient id="sto-spear" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#d0c090"/>
+      <stop offset="50%"  stop-color="#a09050"/>
+      <stop offset="100%" stop-color="#706030"/>
+    </linearGradient>
+    <!-- Spearhead metal -->
+    <linearGradient id="sto-metal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#e0d8c0"/>
+      <stop offset="50%"  stop-color="#b8a870"/>
+      <stop offset="100%" stop-color="#807040"/>
+    </linearGradient>
+    <!-- Frame gradient -->
+    <linearGradient id="sto-frame" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#e8c050"/>
+      <stop offset="50%"  stop-color="#c09020"/>
+      <stop offset="100%" stop-color="#e8c050"/>
+    </linearGradient>
+    <!-- Panel gradient -->
+    <linearGradient id="sto-panel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#1a0c04" stop-opacity="0.96"/>
+      <stop offset="100%" stop-color="#080302" stop-opacity="1"/>
+    </linearGradient>
+    <!-- Glow filter -->
+    <filter id="sto-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="sto-soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ── BACKGROUND ── -->
+  <rect width="400" height="560" fill="url(#sto-bg)"/>
+
+  <!-- ── DIAGONAL RAYS ── -->
+  <!-- Left rays (from lower-left toward upper-right) -->
+  <polygon points="0,560 0,300 220,0 180,0"   fill="url(#sto-ray)" opacity="0.55"/>
+  <polygon points="0,560 0,420 280,0 240,0"   fill="url(#sto-ray)" opacity="0.38"/>
+  <!-- Right rays (from lower-right toward upper-left) -->
+  <polygon points="400,560 400,300 180,0 220,0" fill="url(#sto-ray)" opacity="0.55"/>
+  <polygon points="400,560 400,420 120,0 160,0" fill="url(#sto-ray)" opacity="0.38"/>
+
+  <!-- ── HALO GLOW ── -->
+  <circle cx="200" cy="150" r="90" fill="url(#sto-halo)"/>
+
+  <!-- ── HALO RINGS ── -->
+  <circle cx="200" cy="150" r="72" fill="none" stroke="url(#sto-gold)" stroke-width="3.5" opacity="0.90" filter="url(#sto-glow)"/>
+  <circle cx="200" cy="150" r="78" fill="none" stroke="#e8a820" stroke-width="1" opacity="0.50"/>
+  <circle cx="200" cy="150" r="65" fill="none" stroke="#d4922a" stroke-width="1" opacity="0.35"/>
+
+  <!-- ── SPEAR (behind figure, angled slightly) — runs from upper-right to lower-left ── -->
+  <!-- Shaft -->
+  <line x1="295" y1="80" x2="155" y2="490" stroke="url(#sto-spear)" stroke-width="7" stroke-linecap="round"/>
+  <!-- Spearhead (point at top) -->
+  <polygon points="295,80 288,110 302,110" fill="url(#sto-metal)" opacity="0.95"/>
+  <polygon points="295,80 287,112 295,105 303,112" fill="url(#sto-metal)"/>
+  <!-- Spear butt -->
+  <ellipse cx="155" cy="490" rx="5" ry="3" fill="#706030" opacity="0.8"/>
+
+  <!-- ── BODY / ROBE ── -->
+  <!-- Full robe: cream/ivory, wide at base -->
+  <path d="M 148,292 C 138,320 125,370 118,460 L 282,460 C 275,370 262,320 252,292 Z"
+        fill="url(#sto-robe)" opacity="0.97"/>
+  <!-- Robe folds (shadow lines) -->
+  <line x1="175" y1="300" x2="162" y2="455" stroke="#9a8060" stroke-width="1.2" opacity="0.45"/>
+  <line x1="200" y1="295" x2="200" y2="458" stroke="#9a8060" stroke-width="1.0" opacity="0.30"/>
+  <line x1="225" y1="300" x2="238" y2="455" stroke="#9a8060" stroke-width="1.2" opacity="0.45"/>
+
+  <!-- ── MANTLE ── -->
+  <!-- Drapes over left shoulder across body, down to right side -->
+  <path d="M 148,210 C 128,240 108,290 105,370 L 108,380 C 112,300 132,255 150,225
+           C 160,280 168,310 200,390 C 230,310 238,278 252,225
+           C 270,255 288,300 292,380 L 295,370 C 292,290 272,240 252,210 Z"
+        fill="url(#sto-mantle)" opacity="0.0"/>
+  <!-- Left shoulder mantle drape -->
+  <path d="M 148,215 C 125,240 105,285 102,380 L 148,380 C 142,300 150,255 163,235 Z"
+        fill="url(#sto-mantle)" opacity="0.88"/>
+  <!-- Right drape -->
+  <path d="M 252,215 C 275,240 295,285 298,380 L 252,380 C 258,300 250,255 237,235 Z"
+        fill="url(#sto-mantle)" opacity="0.70"/>
+  <!-- Central mantle band across chest -->
+  <path d="M 155,210 C 168,230 182,250 200,265 C 218,250 232,230 245,210
+           C 232,208 218,205 200,205 C 182,205 168,208 155,210 Z"
+        fill="url(#sto-mantle)" opacity="0.75"/>
+
+  <!-- ── NECK ── -->
+  <ellipse cx="200" cy="210" rx="20" ry="12" fill="url(#sto-skin)" opacity="0.95"/>
+  <rect x="181" y="206" width="38" height="18" rx="8" fill="url(#sto-skin)" opacity="0.95"/>
+
+  <!-- ── HEAD ── -->
+  <!-- Base head shape -->
+  <ellipse cx="200" cy="162" rx="46" ry="54" fill="url(#sto-skin)"/>
+  <!-- Cheekbones slightly wider -->
+  <ellipse cx="200" cy="158" rx="44" ry="50" fill="url(#sto-skin)"/>
+
+  <!-- ── HAIR (dark, shoulder-length) ── -->
+  <!-- Top/back hair: dark brown -->
+  <path d="M 157,145 C 158,105 172,82 200,78 C 228,82 242,105 243,145
+           C 242,135 238,120 235,125 C 230,100 218,88 200,86
+           C 182,88 170,100 165,125 C 162,120 158,135 157,145 Z"
+        fill="#2a1408"/>
+  <!-- Side hair flowing to shoulders -->
+  <path d="M 157,145 C 150,160 146,175 144,195 C 148,185 152,175 157,170 Z"
+        fill="#2a1408"/>
+  <path d="M 243,145 C 250,160 254,175 256,195 C 252,185 248,175 243,170 Z"
+        fill="#2a1408"/>
+  <!-- Hair parting / top -->
+  <path d="M 162,128 C 168,96 184,84 200,82 C 216,84 232,96 238,128"
+        fill="#1a0c06"/>
+
+  <!-- ── EARS ── -->
+  <ellipse cx="157" cy="165" rx="9" ry="12" fill="url(#sto-skin)" opacity="0.9"/>
+  <ellipse cx="243" cy="165" rx="9" ry="12" fill="url(#sto-skin)" opacity="0.9"/>
+
+  <!-- ── EYES ── -->
+  <!-- Left eye -->
+  <ellipse cx="183" cy="160" rx="9" ry="6" fill="#e8d4b0"/>
+  <ellipse cx="183" cy="160" rx="6" ry="5" fill="#3a2010"/>
+  <ellipse cx="183" cy="160" rx="3.5" ry="3.5" fill="#1a0c06"/>
+  <circle  cx="185" cy="158" r="1.2" fill="white" opacity="0.7"/>
+  <!-- Right eye -->
+  <ellipse cx="217" cy="160" rx="9" ry="6" fill="#e8d4b0"/>
+  <ellipse cx="217" cy="160" rx="6" ry="5" fill="#3a2010"/>
+  <ellipse cx="217" cy="160" rx="3.5" ry="3.5" fill="#1a0c06"/>
+  <circle  cx="219" cy="158" r="1.2" fill="white" opacity="0.7"/>
+  <!-- Eyebrows (dark, slightly arched) -->
+  <path d="M 175,152 Q 183,148 192,151" stroke="#2a1408" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <path d="M 208,151 Q 217,148 225,152" stroke="#2a1408" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+  <!-- ── NOSE ── -->
+  <path d="M 200,164 L 196,180 Q 200,183 204,180 Z" fill="#a07048" opacity="0.5"/>
+  <circle cx="196" cy="180" r="3.5" fill="#8a5830" opacity="0.35"/>
+  <circle cx="204" cy="180" r="3.5" fill="#8a5830" opacity="0.35"/>
+
+  <!-- ── BEARD AND MUSTACHE ── -->
+  <!-- Full beard: dark brown, flowing, apostle-style -->
+  <path d="M 164,185 C 158,205 157,225 158,248 C 163,265 175,278 190,285
+           C 195,286 205,286 210,285 C 225,278 237,265 242,248
+           C 243,225 242,205 236,185
+           C 230,192 222,200 218,210
+           C 213,220 205,232 200,234
+           C 195,232 187,220 182,210
+           C 178,200 170,192 164,185 Z"
+        fill="#1e0e06"/>
+  <!-- Beard highlight -->
+  <path d="M 185,215 C 190,228 196,234 200,236 C 204,234 210,228 215,215"
+        fill="none" stroke="#3a1e0a" stroke-width="1.5" opacity="0.4"/>
+  <!-- Mustache -->
+  <path d="M 180,190 Q 190,196 200,194 Q 210,196 220,190"
+        fill="#1e0e06" stroke="#1e0e06" stroke-width="1"/>
+  <path d="M 182,189 Q 200,200 218,189"
+        fill="#1e0e06" opacity="0.8"/>
+  <!-- Grey streaks in beard -->
+  <path d="M 192,230 C 194,240 196,248 197,255" stroke="#6a4a2a" stroke-width="1.2" opacity="0.5"/>
+  <path d="M 204,228 C 206,238 207,248 207,256" stroke="#6a4a2a" stroke-width="1.2" opacity="0.4"/>
+
+  <!-- ── LEFT HAND holding CARPENTER'S SQUARE ── -->
+  <!-- Left arm coming down from mantle at left -->
+  <path d="M 148,270 C 140,295 135,320 130,345" stroke="url(#sto-robe)" stroke-width="28" fill="none" stroke-linecap="round"/>
+  <path d="M 148,270 C 140,295 135,320 130,345" stroke="url(#sto-mantle)" stroke-width="26" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <!-- Forearm continuing -->
+  <path d="M 130,345 C 125,360 122,375 120,390" stroke="url(#sto-robe)" stroke-width="22" fill="none" stroke-linecap="round"/>
+  <!-- Left hand (wrist area) -->
+  <ellipse cx="118" cy="395" rx="14" ry="10" fill="url(#sto-skin)" transform="rotate(-15, 118, 395)"/>
+  <!-- Fingers -->
+  <ellipse cx="108" cy="400" rx="7" ry="5" fill="url(#sto-skin)" transform="rotate(-20, 108, 400)"/>
+  <ellipse cx="115" cy="405" rx="7" ry="5" fill="url(#sto-skin)" transform="rotate(-10, 115, 405)"/>
+  <ellipse cx="122" cy="407" rx="7" ry="5" fill="url(#sto-skin)" transform="rotate(0,  122, 407)"/>
+
+  <!-- Carpenter's Square (L-shaped tool) — held in left hand -->
+  <!-- Long arm of square (vertical, ~80px) -->
+  <rect x="96" y="320" width="10" height="82" rx="3" fill="url(#sto-wood)" transform="rotate(-8, 101, 360)"/>
+  <!-- Short arm of square (horizontal, ~45px) -->
+  <rect x="96" y="320" width="48" height="10" rx="3" fill="url(#sto-wood)" transform="rotate(-8, 101, 325)"/>
+  <!-- Inner corner accent line -->
+  <path d="M 100,398 L 100,325 L 140,325" fill="none" stroke="#c07828" stroke-width="1.5" opacity="0.5" transform="rotate(-8, 101, 360)"/>
+  <!-- Degree markings (decorative small notches) -->
+  <line x1="110" y1="325" x2="110" y2="320" stroke="#f0d080" stroke-width="0.8" opacity="0.5" transform="rotate(-8, 101, 325)"/>
+  <line x1="122" y1="325" x2="122" y2="320" stroke="#f0d080" stroke-width="0.8" opacity="0.5" transform="rotate(-8, 101, 325)"/>
+  <line x1="134" y1="325" x2="134" y2="320" stroke="#f0d080" stroke-width="0.8" opacity="0.5" transform="rotate(-8, 101, 325)"/>
+
+  <!-- ── RIGHT HAND / ARM (holding spear shaft) ── -->
+  <!-- Right arm -->
+  <path d="M 252,270 C 262,298 270,325 278,355" stroke="url(#sto-robe)" stroke-width="26" fill="none" stroke-linecap="round"/>
+  <!-- Forearm -->
+  <path d="M 278,355 C 283,372 286,385 288,398" stroke="url(#sto-robe)" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <!-- Right hand -->
+  <ellipse cx="290" cy="402" rx="14" ry="10" fill="url(#sto-skin)" transform="rotate(12, 290, 402)"/>
+  <!-- Fingers grasping spear -->
+  <ellipse cx="296" cy="406" rx="7" ry="5" fill="url(#sto-skin)" transform="rotate(15, 296, 406)"/>
+  <ellipse cx="289" cy="410" rx="7" ry="5" fill="url(#sto-skin)" transform="rotate(8,  289, 410)"/>
+  <ellipse cx="282" cy="408" rx="7" ry="5" fill="url(#sto-skin)" transform="rotate(3,  282, 408)"/>
+
+  <!-- ── SANDALS (feet peeking below robe) ── -->
+  <ellipse cx="175" cy="457" rx="20" ry="7" fill="#5a3010" opacity="0.7"/>
+  <ellipse cx="225" cy="457" rx="20" ry="7" fill="#5a3010" opacity="0.7"/>
+  <!-- Strap -->
+  <line x1="160" y1="454" x2="190" y2="458" stroke="#3a1808" stroke-width="2" opacity="0.7"/>
+  <line x1="210" y1="458" x2="240" y2="454" stroke="#3a1808" stroke-width="2" opacity="0.7"/>
+
+  <!-- ── FRAME BORDER ── -->
+  <rect x="10" y="10" width="380" height="540" rx="6" ry="6"
+        fill="none" stroke="url(#sto-frame)" stroke-width="2.2" opacity="0.80"/>
+  <rect x="14" y="14" width="372" height="532" rx="4" ry="4"
+        fill="none" stroke="#c09020" stroke-width="0.8" opacity="0.40"/>
+
+  <!-- Corner ornaments -->
+  <!-- Top-left -->
+  <path d="M 10,35 L 10,10 L 35,10"  fill="none" stroke="url(#sto-frame)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Top-right -->
+  <path d="M 365,10 L 390,10 L 390,35"  fill="none" stroke="url(#sto-frame)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Bottom-left -->
+  <path d="M 10,515 L 10,540 L 35,540" fill="none" stroke="url(#sto-frame)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Bottom-right -->
+  <path d="M 365,540 L 390,540 L 390,515" fill="none" stroke="url(#sto-frame)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- ── NAME PANEL ── -->
+  <rect x="10" y="490" width="380" height="60" rx="0" ry="0" fill="url(#sto-panel)"/>
+  <line x1="10" y1="490" x2="390" y2="490" stroke="url(#sto-frame)" stroke-width="1.5" opacity="0.70"/>
+
+  <!-- Name text -->
+  <text x="200" y="510" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="16" font-weight="bold" letter-spacing="2.5"
+        fill="#f5d060" opacity="0.97">SANTO TOMÁS APÓSTOL</text>
+  <text x="200" y="527" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="8.5" letter-spacing="2" fill="#d4a030" opacity="0.82">
+        APÓSTOL · MÁRTIR · EVANGELIZADOR DE LA INDIA</text>
+  <text x="200" y="543" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="8" letter-spacing="1.5" fill="#b07820" opacity="0.68">
+        3 DE JULIO · JULY 3</text>
+</svg>
