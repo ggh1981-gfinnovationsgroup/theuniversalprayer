@@ -1,0 +1,329 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="400" height="560">
+  <defs>
+    <!-- Background: deep forest-earth, Umbrian night -->
+    <linearGradient id="sbn-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#060c04"/>
+      <stop offset="100%" stop-color="#0c1608"/>
+    </linearGradient>
+    <!-- Ray left: Benedictine gold -->
+    <linearGradient id="sbn-r1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"  stop-color="#c89810" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#4a3800" stop-opacity="0.0"/>
+    </linearGradient>
+    <!-- Ray right: monastic amber-green -->
+    <linearGradient id="sbn-r2" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#508020" stop-opacity="0.80"/>
+      <stop offset="100%" stop-color="#182808" stop-opacity="0.0"/>
+    </linearGradient>
+    <!-- Halo: warm gold, Father of monasticism -->
+    <radialGradient id="sbn-halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#fff0a0" stop-opacity="0.72"/>
+      <stop offset="50%" stop-color="#e0b818" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#a08000" stop-opacity="0.0"/>
+    </radialGradient>
+    <!-- Ambient body glow: warm earth -->
+    <radialGradient id="sbn-glow" cx="50%" cy="46%" r="40%">
+      <stop offset="0%"  stop-color="#1c2808" stop-opacity="0.50"/>
+      <stop offset="100%" stop-color="#1c2808" stop-opacity="0.0"/>
+    </radialGradient>
+    <!-- Benedictine black habit -->
+    <linearGradient id="sbn-habit" x1="0" y1="0" x2="0.15" y2="1">
+      <stop offset="0%"  stop-color="#1a1a1a"/>
+      <stop offset="50%" stop-color="#0e0e0e"/>
+      <stop offset="100%" stop-color="#060606"/>
+    </linearGradient>
+    <!-- Habit shadow/fold -->
+    <linearGradient id="sbn-habitdark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#080808"/>
+      <stop offset="100%" stop-color="#1e1e1e"/>
+    </linearGradient>
+    <!-- Abbot's crozier: gold -->
+    <linearGradient id="sbn-crozier" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#f0c840"/>
+      <stop offset="50%" stop-color="#c09018"/>
+      <stop offset="100%" stop-color="#806010"/>
+    </linearGradient>
+    <!-- Crozier staff wood -->
+    <linearGradient id="sbn-staff" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#7a5818"/>
+      <stop offset="100%" stop-color="#b08030"/>
+    </linearGradient>
+    <!-- Rule book cover: dark red-brown -->
+    <linearGradient id="sbn-book" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#6a1010"/>
+      <stop offset="100%" stop-color="#3a0808"/>
+    </linearGradient>
+    <!-- Book page edges: aged parchment -->
+    <linearGradient id="sbn-page" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#e8d890"/>
+      <stop offset="100%" stop-color="#c8b868"/>
+    </linearGradient>
+    <!-- Skin tone -->
+    <radialGradient id="sbn-skin" cx="50%" cy="38%" r="55%">
+      <stop offset="0%"  stop-color="#d8a870"/>
+      <stop offset="70%" stop-color="#b87848"/>
+      <stop offset="100%" stop-color="#8a4e28"/>
+    </radialGradient>
+    <!-- Gold halo ring -->
+    <linearGradient id="sbn-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"  stop-color="#f8e060"/>
+      <stop offset="45%" stop-color="#e8a818"/>
+      <stop offset="100%" stop-color="#c07810"/>
+    </linearGradient>
+    <!-- Frame -->
+    <linearGradient id="sbn-frame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"  stop-color="#e8c050"/>
+      <stop offset="50%" stop-color="#a07820"/>
+      <stop offset="100%" stop-color="#e8c050"/>
+    </linearGradient>
+    <!-- Panel -->
+    <linearGradient id="sbn-panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#06100400" stop-opacity="0.96"/>
+      <stop offset="100%" stop-color="#020602" stop-opacity="1"/>
+    </linearGradient>
+    <!-- Glow filter -->
+    <filter id="sbn-sg" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="sbn-gf" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ── BACKGROUND ── -->
+  <rect width="400" height="560" fill="url(#sbn-bg)"/>
+
+  <!-- ── AMBIENT GLOW ── -->
+  <ellipse cx="200" cy="242" rx="155" ry="200" fill="url(#sbn-glow)"/>
+
+  <!-- ── 4 POLYGON RAYS from body center ── -->
+  <polygon points="198,265 0,560 0,400"    fill="url(#sbn-r1)" opacity="0.72"/>
+  <polygon points="198,265 0,480 80,560"   fill="url(#sbn-r1)" opacity="0.50"/>
+  <polygon points="202,265 400,480 320,560" fill="url(#sbn-r2)" opacity="0.50"/>
+  <polygon points="202,265 400,400 400,560" fill="url(#sbn-r2)" opacity="0.72"/>
+
+  <!-- ── HALO GLOW ── -->
+  <circle cx="200" cy="146" r="60" fill="url(#sbn-halo)" filter="url(#sbn-sg)"/>
+
+  <!-- ── HALO RINGS ── -->
+  <circle cx="200" cy="146" r="50" fill="none" stroke="url(#sbn-gold)" stroke-width="2.8" opacity="0.92" filter="url(#sbn-gf)"/>
+  <circle cx="200" cy="146" r="47" fill="none" stroke="#f8e040" stroke-width="0.9" opacity="0.50"/>
+  <circle cx="200" cy="146" r="54" fill="none" stroke="#c09018" stroke-width="0.7" opacity="0.30"/>
+
+  <!-- ── ABBOT'S CROZIER (behind figure, tall, left of center) ── -->
+  <!-- Staff -->
+  <line x1="130" y1="460" x2="138" y2="100" stroke="url(#sbn-staff)" stroke-width="8" stroke-linecap="round"/>
+  <!-- Crozier curved head: shepherd's crook, gold -->
+  <path d="M 138,100 C 138,72 155,60 172,64 C 190,68 196,84 190,100 C 184,114 170,118 160,110"
+        fill="none" stroke="url(#sbn-crozier)" stroke-width="9" stroke-linecap="round"/>
+  <!-- Crozier inner curve highlight -->
+  <path d="M 140,100 C 140,76 156,65 172,68 C 186,72 192,86 186,100"
+        fill="none" stroke="#f8e888" stroke-width="2.5" opacity="0.45" stroke-linecap="round"/>
+
+  <!-- ── BODY: BLACK BENEDICTINE HABIT ── -->
+  <!-- Main robe: wide, full-length, black -->
+  <path d="M 140,222 C 128,248 115,295 110,460 L 290,460 C 285,295 272,248 260,222 Z"
+        fill="url(#sbn-habit)" stroke="#2a2a2a" stroke-width="1.2" opacity="0.98"/>
+  <!-- Habit folds / highlights (very subtle on black) -->
+  <line x1="172" y1="232" x2="162" y2="455" stroke="#2e2e2e" stroke-width="1.5" opacity="0.60"/>
+  <line x1="200" y1="228" x2="200" y2="458" stroke="#282828" stroke-width="1.2" opacity="0.40"/>
+  <line x1="228" y1="232" x2="238" y2="455" stroke="#2e2e2e" stroke-width="1.5" opacity="0.60"/>
+  <!-- Wide sleeves -->
+  <path d="M 140,222 C 120,245 105,275 100,310 L 140,315 C 140,290 148,262 158,245 Z"
+        fill="url(#sbn-habit)" stroke="#222222" stroke-width="1"/>
+  <path d="M 260,222 C 280,245 295,275 300,310 L 260,315 C 260,290 252,262 242,245 Z"
+        fill="url(#sbn-habit)" stroke="#222222" stroke-width="1"/>
+  <!-- Scapular (front panel, slightly lighter black) -->
+  <rect x="178" y="225" width="44" height="230" rx="3" fill="#121212" opacity="0.85"/>
+  <!-- Belt/cincture (white rope cord) -->
+  <path d="M 155,310 Q 200,316 245,310" fill="none" stroke="#d8d4cc" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Knot of belt at center -->
+  <ellipse cx="200" cy="313" rx="8" ry="5" fill="#c8c4bc" opacity="0.7"/>
+  <!-- Hanging cord ends of belt -->
+  <line x1="196" y1="317" x2="193" y2="345" stroke="#c8c4bc" stroke-width="2.2" opacity="0.65"/>
+  <line x1="204" y1="317" x2="207" y2="345" stroke="#c8c4bc" stroke-width="2.2" opacity="0.65"/>
+
+  <!-- ── COWL / HOOD (down on back, black) ── -->
+  <path d="M 152,210 C 145,195 143,182 148,170 C 155,162 162,158 165,162
+           C 162,170 160,180 162,190 Z"
+        fill="#101010" stroke="#1e1e1e" stroke-width="1"/>
+  <path d="M 248,210 C 255,195 257,182 252,170 C 245,162 238,158 235,162
+           C 238,170 240,180 238,190 Z"
+        fill="#101010" stroke="#1e1e1e" stroke-width="1"/>
+  <!-- Hood fold behind head -->
+  <path d="M 155,195 C 150,185 148,172 152,164 C 160,155 170,152 180,154
+           C 175,158 168,164 166,172 C 164,180 162,192 162,200 Z"
+        fill="#0a0a0a"/>
+
+  <!-- ── NECK ── -->
+  <rect x="184" y="205" width="32" height="22" rx="9" fill="url(#sbn-skin)" opacity="0.97"/>
+
+  <!-- ── HEAD (older, wise, white-bearded patriarch) ── -->
+  <ellipse cx="200" cy="158" rx="50" ry="56" fill="url(#sbn-skin)"/>
+
+  <!-- ── TONSURE / WHITE HAIR ── -->
+  <!-- White hair on sides — tonsure (monastic shaved crown) -->
+  <path d="M 152,152 C 152,114 168,88 200,84 C 232,88 248,114 248,152
+           C 244,138 238,122 230,122 C 222,102 212,92 200,90
+           C 188,92 178,102 170,122 C 162,122 156,138 152,152 Z"
+        fill="#d0c8c0"/>
+  <!-- Tonsure center: bare skin circle on top -->
+  <ellipse cx="200" cy="118" rx="28" ry="22" fill="url(#sbn-skin)" opacity="0.75"/>
+  <!-- White temple hair -->
+  <path d="M 152,152 C 148,162 146,176 147,192" stroke="#d0c8c0" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M 248,152 C 252,162 254,176 253,192" stroke="#d0c8c0" stroke-width="10" fill="none" stroke-linecap="round"/>
+
+  <!-- ── EARS ── -->
+  <ellipse cx="151" cy="164" rx="10" ry="13" fill="url(#sbn-skin)" opacity="0.88"/>
+  <ellipse cx="249" cy="164" rx="10" ry="13" fill="url(#sbn-skin)" opacity="0.88"/>
+
+  <!-- ── EYES (deep, wise, compassionate) ── -->
+  <!-- Left eye -->
+  <ellipse cx="183" cy="158" rx="10" ry="6.5" fill="#e8d8b8"/>
+  <ellipse cx="183" cy="158" rx="6.5" ry="5.5" fill="#3a2c18"/>
+  <ellipse cx="183" cy="158" rx="3.8" ry="3.8" fill="#180e06"/>
+  <circle  cx="185" cy="156" r="1.3" fill="white" opacity="0.72"/>
+  <!-- Right eye -->
+  <ellipse cx="217" cy="158" rx="10" ry="6.5" fill="#e8d8b8"/>
+  <ellipse cx="217" cy="158" rx="6.5" ry="5.5" fill="#3a2c18"/>
+  <ellipse cx="217" cy="158" rx="3.8" ry="3.8" fill="#180e06"/>
+  <circle  cx="219" cy="156" r="1.3" fill="white" opacity="0.72"/>
+  <!-- Eyebrows: white-grey, older man -->
+  <path d="M 173,149 Q 183,145 194,149" stroke="#a09888" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <path d="M 206,149 Q 217,145 227,149" stroke="#a09888" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <!-- Crow's feet / age lines -->
+  <path d="M 173,161 Q 170,164 168,167" stroke="#a07848" stroke-width="0.8" fill="none" opacity="0.35"/>
+  <path d="M 227,161 Q 230,164 232,167" stroke="#a07848" stroke-width="0.8" fill="none" opacity="0.35"/>
+
+  <!-- ── NOSE ── -->
+  <path d="M 200,163 L 196,177 Q 200,180 204,177 Z" fill="#9a6838" opacity="0.40"/>
+  <circle cx="196" cy="178" r="3.5" fill="#8a5828" opacity="0.28"/>
+  <circle cx="204" cy="178" r="3.5" fill="#8a5828" opacity="0.28"/>
+
+  <!-- ── FULL WHITE BEARD ── -->
+  <!-- Beard — full, patriarch-length, white-grey -->
+  <path d="M 162,182 C 156,200 153,225 154,255 C 156,278 165,298 178,308
+           C 186,313 214,313 222,308 C 235,298 244,278 246,255
+           C 247,225 244,200 238,182
+           C 232,190 224,202 220,215 C 215,228 207,240 200,242
+           C 193,240 185,228 180,215 C 176,202 168,190 162,182 Z"
+        fill="#d8d4d0"/>
+  <!-- Beard centre parting / flow -->
+  <path d="M 195,238 C 196,255 196,272 195,285" stroke="#b8b4b0" stroke-width="1.5" opacity="0.4"/>
+  <path d="M 205,236 C 204,253 204,270 205,283" stroke="#b8b4b0" stroke-width="1.5" opacity="0.4"/>
+  <!-- Beard shadow undertones -->
+  <path d="M 164,185 C 160,205 158,230 160,256 C 163,278 172,296 183,306"
+        fill="none" stroke="#a8a4a0" stroke-width="2" opacity="0.25"/>
+  <!-- Moustache -->
+  <path d="M 179,188 Q 200,196 221,188" fill="#c8c4c0" stroke="#b8b4b0" stroke-width="0.8"/>
+  <path d="M 182,187 Q 200,197 218,187" fill="#d4d0cc" opacity="0.70"/>
+
+  <!-- ── LEFT ARM / HAND holding RULE BOOK ── -->
+  <!-- Left arm wide sleeve -->
+  <path d="M 140,270 C 132,295 124,320 118,348" stroke="#101010" stroke-width="28" fill="none" stroke-linecap="round"/>
+  <path d="M 118,348 C 113,366 110,382 108,398" stroke="#101010" stroke-width="22" fill="none" stroke-linecap="round"/>
+  <!-- Left hand (extends from sleeve) -->
+  <ellipse cx="106" cy="404" rx="15" ry="11" fill="url(#sbn-skin)" transform="rotate(-12, 106, 404)"/>
+  <!-- Fingers -->
+  <ellipse cx="95"  cy="408" rx="8" ry="5.5" fill="url(#sbn-skin)" transform="rotate(-18, 95, 408)"/>
+  <ellipse cx="103" cy="413" rx="8" ry="5.5" fill="url(#sbn-skin)" transform="rotate(-8,  103, 413)"/>
+  <ellipse cx="112" cy="414" rx="8" ry="5.5" fill="url(#sbn-skin)" transform="rotate(2,   112, 414)"/>
+
+  <!-- Rule of Saint Benedict (book) held in left arm against body -->
+  <!-- Book body -->
+  <rect x="92" y="375" width="52" height="68" rx="3" fill="url(#sbn-book)"
+        transform="rotate(-8, 118, 409)"/>
+  <!-- Page edges (right side) -->
+  <rect x="136" y="377" width="6" height="64" rx="1" fill="url(#sbn-page)"
+        transform="rotate(-8, 118, 409)" opacity="0.85"/>
+  <!-- Book spine (left edge) -->
+  <rect x="92"  y="375" width="6" height="68" rx="2" fill="#4a0808"
+        transform="rotate(-8, 118, 409)" opacity="0.9"/>
+  <!-- Book cover cross decoration -->
+  <line x1="100" y1="400" x2="132" y2="400" stroke="#c89030" stroke-width="1.8"
+        transform="rotate(-8, 118, 409)" opacity="0.7"/>
+  <line x1="116" y1="383" x2="116" y2="432" stroke="#c89030" stroke-width="1.8"
+        transform="rotate(-8, 118, 409)" opacity="0.7"/>
+  <!-- Book title: REGVLA in gold lettering -->
+  <text x="118" y="394" text-anchor="middle" font-family="Georgia, serif" font-size="6.5"
+        font-weight="bold" fill="#d4a028" opacity="0.80"
+        transform="rotate(-8, 118, 409)">REGVLA</text>
+  <text x="118" y="403" text-anchor="middle" font-family="Georgia, serif" font-size="5.5"
+        fill="#d4a028" opacity="0.65"
+        transform="rotate(-8, 118, 409)">S·BENEDICTI</text>
+  <!-- Book clasp -->
+  <rect x="134" y="403" width="7" height="10" rx="2" fill="#c89030"
+        transform="rotate(-8, 118, 409)" opacity="0.75"/>
+
+  <!-- ── RIGHT ARM (raised slightly, holding crozier staff) ── -->
+  <path d="M 260,270 C 268,295 276,322 282,352" stroke="#101010" stroke-width="26" fill="none" stroke-linecap="round"/>
+  <path d="M 282,352 C 285,368 286,382 285,396" stroke="#101010" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <!-- Right hand -->
+  <ellipse cx="283" cy="401" rx="14" ry="10" fill="url(#sbn-skin)" transform="rotate(10, 283, 401)"/>
+  <!-- Fingers wrapping crozier -->
+  <ellipse cx="290" cy="405" rx="7.5" ry="5" fill="url(#sbn-skin)" transform="rotate(14, 290, 405)"/>
+  <ellipse cx="283" cy="409" rx="7.5" ry="5" fill="url(#sbn-skin)" transform="rotate(6,  283, 409)"/>
+  <ellipse cx="276" cy="407" rx="7.5" ry="5" fill="url(#sbn-skin)" transform="rotate(0,  276, 407)"/>
+
+  <!-- ── RAVEN (San Benito's symbol, at lower right) ── -->
+  <!-- Raven perched on a small rock at lower right corner -->
+  <ellipse cx="318" cy="448" rx="22" ry="10" fill="#1a1a20" opacity="0.6"/>
+  <!-- Body -->
+  <ellipse cx="318" cy="432" rx="18" ry="14" fill="#101018"/>
+  <!-- Wing folded -->
+  <path d="M 300,432 C 298,440 302,450 312,452 C 322,454 334,448 336,438 C 334,430 326,424 318,424 Z"
+        fill="#0c0c14"/>
+  <!-- Wing highlight -->
+  <path d="M 303,436 C 304,444 310,450 318,450" fill="none" stroke="#282830" stroke-width="1.5" opacity="0.5"/>
+  <!-- Head -->
+  <ellipse cx="330" cy="420" rx="13" ry="11" fill="#101018"/>
+  <!-- Eye -->
+  <circle cx="335" cy="417" r="2.5" fill="#181810"/>
+  <circle cx="336" cy="416" r="1.0" fill="#c8a020" opacity="0.7"/>
+  <!-- Beak -->
+  <path d="M 340,419 L 348,422 L 340,424 Z" fill="#282818"/>
+  <!-- Legs/talons on rock -->
+  <line x1="310" y1="446" x2="308" y2="454" stroke="#282820" stroke-width="2"/>
+  <line x1="316" y1="448" x2="314" y2="456" stroke="#282820" stroke-width="2"/>
+  <!-- Poisoned cup (Benito's other symbol) next to raven — overturned -->
+  <path d="M 298,452 C 292,448 290,445 294,442 L 306,442 C 310,445 308,448 302,452 Z"
+        fill="#6a4010" opacity="0.65"/>
+  <ellipse cx="300" cy="442" rx="7" ry="3" fill="#8a5818" opacity="0.55"/>
+  <!-- Small cross on cup -->
+  <line x1="300" y1="444" x2="300" y2="451" stroke="#c8a020" stroke-width="1" opacity="0.5"/>
+  <line x1="297" y1="447" x2="303" y2="447" stroke="#c8a020" stroke-width="1" opacity="0.5"/>
+
+  <!-- ── SANDALS ── -->
+  <ellipse cx="172" cy="458" rx="22" ry="7" fill="#3a2808" opacity="0.70"/>
+  <ellipse cx="228" cy="458" rx="22" ry="7" fill="#3a2808" opacity="0.70"/>
+  <line x1="155" y1="455" x2="188" y2="459" stroke="#2a1c06" stroke-width="1.8" opacity="0.6"/>
+  <line x1="212" y1="459" x2="245" y2="455" stroke="#2a1c06" stroke-width="1.8" opacity="0.6"/>
+
+  <!-- ── FRAME ── -->
+  <rect x="10" y="10" width="380" height="540" rx="6"
+        fill="none" stroke="url(#sbn-frame)" stroke-width="2.2" opacity="0.80"/>
+  <rect x="14" y="14" width="372" height="532" rx="4"
+        fill="none" stroke="#c09020" stroke-width="0.8" opacity="0.40"/>
+  <!-- Corner ornaments -->
+  <path d="M 10,35 L 10,10 L 35,10"   fill="none" stroke="url(#sbn-frame)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 365,10 L 390,10 L 390,35"  fill="none" stroke="url(#sbn-frame)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 10,515 L 10,540 L 35,540"  fill="none" stroke="url(#sbn-frame)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 365,540 L 390,540 L 390,515" fill="none" stroke="url(#sbn-frame)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- ── NAME PANEL ── -->
+  <rect x="10" y="490" width="380" height="60" fill="#06100488" opacity="0.97"/>
+  <rect x="10" y="490" width="380" height="60" fill="url(#sbn-panel)" opacity="0.97"/>
+  <line x1="10" y1="490" x2="390" y2="490" stroke="url(#sbn-frame)" stroke-width="1.5" opacity="0.70"/>
+
+  <text x="200" y="510" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="16" font-weight="bold" letter-spacing="2.5"
+        fill="#f5d060" opacity="0.97">SAN BENITO DE NURSIA</text>
+  <text x="200" y="527" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="8.5" letter-spacing="2" fill="#d4a030" opacity="0.82">
+        ABAD · PADRE DEL MONACATO · PATRONO DE EUROPA</text>
+  <text x="200" y="543" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="8" letter-spacing="1.5" fill="#b07820" opacity="0.68">
+        11 DE JULIO · JULY 11</text>
+</svg>
