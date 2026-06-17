@@ -1,383 +1,510 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="400" height="560">
   <defs>
+    <!-- Sky blue gradient background — matches canonical image -->
     <linearGradient id="dn-bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"  stop-color="#020510"/><stop offset="100%" stop-color="#060c22"/>
+      <stop offset="0%"  stop-color="#1060a8"/>
+      <stop offset="55%" stop-color="#4090cc"/>
+      <stop offset="100%" stop-color="#70b8e8"/>
     </linearGradient>
-    <radialGradient id="dn-glory" cx="50%" cy="44%" r="62%">
-      <stop offset="0%"  stop-color="#f8e858" stop-opacity="0.55"/>
-      <stop offset="40%" stop-color="#e09020" stop-opacity="0.22"/>
-      <stop offset="100%" stop-color="#c06010" stop-opacity="0"/>
+    <!-- White-blue radial aura behind figure -->
+    <radialGradient id="dn-aura" cx="50%" cy="44%" r="52%">
+      <stop offset="0%"  stop-color="#ffffff" stop-opacity="0.70"/>
+      <stop offset="45%" stop-color="#c0e0ff" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#4090cc" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="dn-rose" cx="50%" cy="62%" r="38%">
-      <stop offset="0%"  stop-color="#d84060" stop-opacity="0.28"/>
-      <stop offset="100%" stop-color="#800020" stop-opacity="0"/>
-    </radialGradient>
+    <!-- Ray left: gold -->
     <linearGradient id="dn-r1" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%"  stop-color="#f8d030" stop-opacity="0.92"/>
-      <stop offset="100%" stop-color="#c06010" stop-opacity="0"/>
+      <stop offset="0%"  stop-color="#f8e040" stop-opacity="0.90"/>
+      <stop offset="100%" stop-color="#f8e040" stop-opacity="0"/>
     </linearGradient>
+    <!-- Ray right: amber -->
     <linearGradient id="dn-r2" x1="1" y1="0" x2="0" y2="1">
-      <stop offset="0%"  stop-color="#f09030" stop-opacity="0.88"/>
-      <stop offset="100%" stop-color="#800820" stop-opacity="0"/>
+      <stop offset="0%"  stop-color="#f0c820" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#f0c820" stop-opacity="0"/>
     </linearGradient>
+    <!-- Halo glow -->
     <radialGradient id="dn-halo" cx="50%" cy="50%" r="50%">
-      <stop offset="0%"  stop-color="#fffff8" stop-opacity="0.95"/>
-      <stop offset="40%" stop-color="#f8e858" stop-opacity="0.45"/>
-      <stop offset="100%" stop-color="#e08020" stop-opacity="0"/>
+      <stop offset="0%"  stop-color="#fffef0" stop-opacity="0.92"/>
+      <stop offset="48%" stop-color="#f8d840" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#c09010" stop-opacity="0"/>
     </radialGradient>
+    <!-- Gold ring -->
     <linearGradient id="dn-gold" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%"  stop-color="#fffff0"/>
-      <stop offset="44%" stop-color="#f8e050"/>
-      <stop offset="100%" stop-color="#e09020"/>
+      <stop offset="0%"  stop-color="#fff0a0"/>
+      <stop offset="48%" stop-color="#e8b020"/>
+      <stop offset="100%" stop-color="#c07810"/>
     </linearGradient>
-    <linearGradient id="dn-tunic" x1="0" y1="0" x2="0.18" y2="1">
-      <stop offset="0%"  stop-color="#d84468"/>
-      <stop offset="52%" stop-color="#aa2a44"/>
-      <stop offset="100%" stop-color="#721828"/>
+    <!-- Crown: warm golden brown -->
+    <linearGradient id="dn-crown" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#d4a030"/>
+      <stop offset="55%" stop-color="#9a6015"/>
+      <stop offset="100%" stop-color="#6a3c08"/>
     </linearGradient>
-    <!-- Skin: LINEAR gradient (top-to-bottom) — avoids radial "bald spot" at top -->
-    <linearGradient id="dn-skin" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"  stop-color="#fde8c8"/>
-      <stop offset="70%" stop-color="#f2caa0"/>
-      <stop offset="100%" stop-color="#daa878"/>
+    <!-- Pink tunic (canonical Divino Niño rose color) -->
+    <linearGradient id="dn-tunic" x1="0" y1="0" x2="0.15" y2="1">
+      <stop offset="0%"  stop-color="#e87090"/>
+      <stop offset="52%" stop-color="#d05070"/>
+      <stop offset="100%" stop-color="#a02848"/>
     </linearGradient>
-    <linearGradient id="dn-hair" x1="0" y1="0" x2="0.3" y2="1">
-      <stop offset="0%"  stop-color="#7a4820"/>
-      <stop offset="50%" stop-color="#5a3010"/>
-      <stop offset="100%" stop-color="#3a1c08"/>
+    <!-- Sleeve same pink but slightly different angle -->
+    <linearGradient id="dn-sleeve" x1="0" y1="0" x2="1" y2="0.5">
+      <stop offset="0%"  stop-color="#d85880"/>
+      <stop offset="55%" stop-color="#c04060"/>
+      <stop offset="100%" stop-color="#902038"/>
     </linearGradient>
-    <linearGradient id="dn-belt" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"  stop-color="#c89818"/>
+    <!-- Gold trim -->
+    <linearGradient id="dn-trim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#b87818"/>
       <stop offset="50%" stop-color="#f8e060"/>
-      <stop offset="100%" stop-color="#c89818"/>
+      <stop offset="100%" stop-color="#b87818"/>
     </linearGradient>
+    <!-- Teal sash -->
+    <linearGradient id="dn-sash" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#187850"/>
+      <stop offset="50%" stop-color="#38c880"/>
+      <stop offset="100%" stop-color="#187850"/>
+    </linearGradient>
+    <!-- Skin: PURE LINEAR top-to-bottom — eliminates bald-patch -->
+    <linearGradient id="dn-skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#fde0b8"/>
+      <stop offset="65%" stop-color="#f0c898"/>
+      <stop offset="100%" stop-color="#dca870"/>
+    </linearGradient>
+    <!-- Hair: warm medium brown — NOT too light, NOT too curly-girly -->
+    <linearGradient id="dn-hair" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0%"  stop-color="#b87830"/>
+      <stop offset="50%" stop-color="#8a5018"/>
+      <stop offset="100%" stop-color="#5a3008"/>
+    </linearGradient>
+    <!-- Cloud: bright white-blue -->
+    <radialGradient id="dn-cloud" cx="50%" cy="35%" r="55%">
+      <stop offset="0%"  stop-color="#ffffff"/>
+      <stop offset="65%" stop-color="#ddeeff"/>
+      <stop offset="100%" stop-color="#b8d8f0"/>
+    </radialGradient>
+    <!-- Sparkle -->
     <radialGradient id="dn-spark" cx="50%" cy="50%" r="50%">
       <stop offset="0%"  stop-color="#fffff8"/>
       <stop offset="55%" stop-color="#f8e858"/>
       <stop offset="100%" stop-color="#e0a020"/>
     </radialGradient>
+    <!-- Frame gold-orange -->
     <linearGradient id="dn-frame" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%"  stop-color="#f8d040"/>
-      <stop offset="42%" stop-color="#e87858"/>
-      <stop offset="70%" stop-color="#f8d040"/>
-      <stop offset="100%" stop-color="#e87858"/>
+      <stop offset="50%" stop-color="#e07820"/>
+      <stop offset="100%" stop-color="#f8d040"/>
     </linearGradient>
+    <!-- Panel dark -->
     <linearGradient id="dn-panel" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"  stop-color="#020510" stop-opacity="0.97"/>
-      <stop offset="100%" stop-color="#010208" stop-opacity="1"/>
+      <stop offset="0%"  stop-color="#041428" stop-opacity="0.96"/>
+      <stop offset="100%" stop-color="#020a18" stop-opacity="1"/>
     </linearGradient>
-    <filter id="dn-sg" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="11" result="b"/>
+    <!-- Filters -->
+    <filter id="dn-sg" x="-35%" y="-35%" width="170%" height="170%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <filter id="dn-gf" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="5" result="b"/>
+    <filter id="dn-gf" x="-28%" y="-28%" width="156%" height="156%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <filter id="dn-sp" x="-120%" y="-120%" width="340%" height="340%">
-      <feGaussianBlur stdDeviation="3" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="dn-hr" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="dn-sp" x="-100%" y="-100%" width="300%" height="300%">
       <feGaussianBlur stdDeviation="2.5" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
 
   <style>
-    @keyframes haloPulse  { 0%,100%{opacity:.85} 50%{opacity:1.0} }
+    @keyframes auraPulse  { 0%,100%{opacity:.78} 50%{opacity:1.0} }
     @keyframes sunSpin    { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
-    @keyframes rayL       { 0%,100%{opacity:.90} 50%{opacity:.50} }
-    @keyframes rayR       { 0%,100%{opacity:.50} 50%{opacity:.90} }
-    @keyframes twinkle    { 0%,100%{opacity:0;transform:scale(.6)} 50%{opacity:1;transform:scale(1.2)} }
-    @keyframes twinkleB   { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.1;transform:scale(.5)} }
-    @keyframes heartBeat  { 0%,100%{transform:scale(1)} 15%{transform:scale(1.10)} 45%{transform:scale(1.07)} 60%{transform:scale(1)} }
-    @keyframes handGlow   { 0%,100%{opacity:.28} 50%{opacity:.55} }
-    @keyframes gloryBrth  { 0%,100%{opacity:.85} 50%{opacity:1.0} }
-    .halo-glow { animation: haloPulse 3.2s ease-in-out infinite; }
-    .sunburst  { animation: sunSpin 32s linear infinite; transform-origin: 200px 148px; }
-    .ray-left  { animation: rayL 4.5s ease-in-out infinite; }
-    .ray-right { animation: rayR 4.5s ease-in-out infinite; }
-    .sp1 { animation: twinkle  2.8s ease-in-out infinite; }
-    .sp2 { animation: twinkleB 3.4s ease-in-out infinite; }
-    .sp3 { animation: twinkle  4.1s ease-in-out .8s infinite; }
-    .sp4 { animation: twinkleB 2.5s ease-in-out 1.2s infinite; }
-    .sp5 { animation: twinkle  3.8s ease-in-out .4s infinite; }
-    .sp6 { animation: twinkleB 4.6s ease-in-out 2s infinite; }
-    .heart { animation: heartBeat 2.2s ease-in-out infinite; transform-origin: 180px 276px; }
-    .hray  { animation: handGlow 3.0s ease-in-out infinite; }
-    .glory { animation: gloryBrth 5s ease-in-out infinite; }
+    @keyframes rayAlt1    { 0%,100%{opacity:.88} 50%{opacity:.44} }
+    @keyframes rayAlt2    { 0%,100%{opacity:.44} 50%{opacity:.88} }
+    @keyframes twinkA     { 0%,100%{opacity:0;transform:scale(.5)} 50%{opacity:1;transform:scale(1.3)} }
+    @keyframes twinkB     { 0%,100%{opacity:1} 50%{opacity:.05} }
+    @keyframes crownGlow  { 0%,100%{opacity:.86} 50%{opacity:1.0} }
+    @keyframes handGlow   { 0%,100%{opacity:.28} 50%{opacity:.58} }
+    .aura  { animation: auraPulse  4.0s ease-in-out infinite; }
+    .sun   { animation: sunSpin   30s  linear     infinite; transform-origin: 200px 158px; }
+    .rl    { animation: rayAlt1    4.5s ease-in-out infinite; }
+    .rr    { animation: rayAlt2    4.5s ease-in-out infinite; }
+    .s1    { animation: twinkA     3.0s ease-in-out infinite; }
+    .s2    { animation: twinkB     3.6s ease-in-out infinite; }
+    .s3    { animation: twinkA     4.2s ease-in-out  .7s infinite; }
+    .s4    { animation: twinkB     2.6s ease-in-out 1.3s infinite; }
+    .s5    { animation: twinkA     3.9s ease-in-out  .3s infinite; }
+    .crown { animation: crownGlow  3.2s ease-in-out infinite; }
+    .hg    { animation: handGlow   2.8s ease-in-out infinite; }
   </style>
 
-  <!-- BACKGROUND -->
+  <!-- ══ BACKGROUND ══ -->
   <rect width="400" height="560" fill="url(#dn-bg)"/>
-  <ellipse class="glory" cx="200" cy="240" rx="192" ry="238" fill="url(#dn-glory)"/>
-  <ellipse cx="200" cy="330" rx="155" ry="178" fill="url(#dn-rose)"/>
 
-  <!-- SPARKLES -->
+  <!-- White aura radiating behind figure -->
+  <ellipse class="aura" cx="200" cy="265" rx="168" ry="225" fill="url(#dn-aura)"/>
+
+  <!-- ══ SPARKLES ══ -->
   <g filter="url(#dn-sp)">
-    <g class="sp1"><circle cx="48"  cy="88"  r="3"   fill="url(#dn-spark)" opacity=".80"/>
-      <polygon points="48,80 50,87 48,94 46,87"   fill="#fffff0" opacity=".72"/>
-      <polygon points="40,87 48,89 56,87 48,85"   fill="#fffff0" opacity=".72"/>
+    <g class="s1">
+      <circle cx="52" cy="80" r="3.2" fill="url(#dn-spark)" opacity=".82"/>
+      <polygon points="52,71 54,79 52,87 50,79" fill="#fffff0" opacity=".76"/>
+      <polygon points="43,79 51,81 59,79 51,77" fill="#fffff0" opacity=".76"/>
     </g>
-    <g class="sp2"><circle cx="322" cy="58"  r="2.6" fill="url(#dn-spark)" opacity=".75"/>
-      <polygon points="322,50 324,57 322,64 320,57" fill="#fffff0" opacity=".68"/>
-      <polygon points="314,57 322,59 330,57 322,55" fill="#fffff0" opacity=".68"/>
+    <g class="s2">
+      <circle cx="338" cy="65" r="2.8" fill="url(#dn-spark)" opacity=".76"/>
+      <polygon points="338,56 340,64 338,72 336,64" fill="#fffff0" opacity=".70"/>
+      <polygon points="329,64 337,66 345,64 337,62" fill="#fffff0" opacity=".70"/>
     </g>
-    <g class="sp3"><circle cx="372" cy="290" r="2.2" fill="url(#dn-spark)" opacity=".65"/>
-      <polygon points="372,282 374,289 372,296 370,289" fill="#fffff0" opacity=".60"/>
-      <polygon points="364,289 372,291 380,289 372,287" fill="#fffff0" opacity=".60"/>
+    <g class="s3">
+      <circle cx="370" cy="275" r="2.2" fill="url(#dn-spark)" opacity=".65"/>
+      <polygon points="370,267 372,274 370,281 368,274" fill="#fffff0" opacity=".60"/>
+      <polygon points="362,274 370,276 378,274 370,272" fill="#fffff0" opacity=".60"/>
     </g>
-    <g class="sp4"><circle cx="30"  cy="310" r="2"   fill="url(#dn-spark)" opacity=".62"/>
-      <polygon points="30,302 32,309 30,316 28,309"  fill="#fffff0" opacity=".58"/>
-      <polygon points="22,309 30,311 38,309 30,307"  fill="#fffff0" opacity=".58"/>
+    <g class="s4">
+      <circle cx="30" cy="295" r="2.2" fill="url(#dn-spark)" opacity=".62"/>
+      <polygon points="30,287 32,294 30,301 28,294" fill="#fffff0" opacity=".58"/>
+      <polygon points="22,294 30,296 38,294 30,292" fill="#fffff0" opacity=".58"/>
     </g>
-    <g class="sp5"><circle cx="288" cy="26"  r="2"   fill="url(#dn-spark)" opacity=".68"/>
-      <polygon points="288,18 290,25 288,32 286,25"  fill="#fffff0" opacity=".62"/>
-      <polygon points="280,25 288,27 296,25 288,23"  fill="#fffff0" opacity=".62"/>
+    <g class="s5">
+      <circle cx="292" cy="28" r="2.5" fill="url(#dn-spark)" opacity=".70"/>
+      <polygon points="292,20 294,27 292,34 290,27" fill="#fffff0" opacity=".65"/>
+      <polygon points="284,27 292,29 300,27 292,25" fill="#fffff0" opacity=".65"/>
     </g>
-    <g class="sp6"><circle cx="110" cy="33"  r="2.4" fill="url(#dn-spark)" opacity=".70"/>
-      <polygon points="110,25 112,32 110,39 108,32"  fill="#fffff0" opacity=".65"/>
-      <polygon points="102,32 110,34 118,32 110,30"  fill="#fffff0" opacity=".65"/>
-    </g>
-    <g class="sp1">
-      <circle cx="200" cy="50" r="4.5" fill="#fffff0" opacity=".80"/>
-      <polygon points="200,40 203,49 200,58 197,49" fill="#fffff0" opacity=".75"/>
-      <polygon points="190,49 199,52 208,49 199,46" fill="#fffff0" opacity=".75"/>
+    <!-- Crown apex -->
+    <g class="s1">
+      <circle cx="200" cy="40" r="4.2" fill="#fffff0" opacity=".82"/>
+      <polygon points="200,31 203,39 200,47 197,39" fill="#fffff0" opacity=".78"/>
+      <polygon points="191,39 199,41 207,39 199,37" fill="#fffff0" opacity=".78"/>
     </g>
   </g>
 
-  <!-- RAYS -->
-  <g class="ray-left">
-    <polygon points="198,258 0,560 0,368"  fill="url(#dn-r1)"/>
-    <polygon points="198,258 0,462 72,560" fill="url(#dn-r1)" opacity=".78"/>
-    <polygon points="198,258 0,560 0,510"  fill="url(#dn-r1)" opacity=".38"/>
+  <!-- ══ RAYS from body centre (198-202, 272) ══ -->
+  <g class="rl">
+    <polygon points="198,272 0,560 0,382"  fill="url(#dn-r1)" opacity=".90"/>
+    <polygon points="198,272 0,474 68,560" fill="url(#dn-r1)" opacity=".72"/>
+    <polygon points="198,272 0,560 0,514"  fill="url(#dn-r1)" opacity=".36"/>
   </g>
-  <g class="ray-right">
-    <polygon points="202,258 400,462 328,560" fill="url(#dn-r2)"/>
-    <polygon points="202,258 400,368 400,560" fill="url(#dn-r2)" opacity=".78"/>
-    <polygon points="202,258 400,510 400,560" fill="url(#dn-r2)" opacity=".38"/>
-  </g>
-
-  <!-- HALO -->
-  <circle class="halo-glow" cx="200" cy="148" r="82" fill="url(#dn-halo)" filter="url(#dn-sg)"/>
-  <g class="sunburst">
-    <line x1="200" y1="83"  x2="200" y2="67"  stroke="#f8e848" stroke-width="2.5" opacity=".82"/>
-    <line x1="244" y1="104" x2="253" y2="95"  stroke="#f8e848" stroke-width="2.5" opacity=".80"/>
-    <line x1="265" y1="148" x2="281" y2="148" stroke="#f8e848" stroke-width="2.5" opacity=".80"/>
-    <line x1="244" y1="192" x2="253" y2="201" stroke="#f8e848" stroke-width="2.5" opacity=".78"/>
-    <line x1="200" y1="213" x2="200" y2="229" stroke="#f8e848" stroke-width="2.5" opacity=".75"/>
-    <line x1="156" y1="192" x2="147" y2="201" stroke="#f8e848" stroke-width="2.5" opacity=".78"/>
-    <line x1="135" y1="148" x2="119" y2="148" stroke="#f8e848" stroke-width="2.5" opacity=".80"/>
-    <line x1="156" y1="104" x2="147" y2="95"  stroke="#f8e848" stroke-width="2.5" opacity=".80"/>
-    <line x1="224" y1="87"  x2="231" y2="79"  stroke="#f8d848" stroke-width="1.3" opacity=".55"/>
-    <line x1="258" y1="122" x2="267" y2="115" stroke="#f8d848" stroke-width="1.3" opacity=".55"/>
-    <line x1="258" y1="174" x2="267" y2="181" stroke="#f8d848" stroke-width="1.3" opacity=".52"/>
-    <line x1="224" y1="209" x2="231" y2="217" stroke="#f8d848" stroke-width="1.3" opacity=".52"/>
-    <line x1="176" y1="209" x2="169" y2="217" stroke="#f8d848" stroke-width="1.3" opacity=".52"/>
-    <line x1="142" y1="174" x2="133" y2="181" stroke="#f8d848" stroke-width="1.3" opacity=".52"/>
-    <line x1="142" y1="122" x2="133" y2="115" stroke="#f8d848" stroke-width="1.3" opacity=".55"/>
-    <line x1="176" y1="87"  x2="169" y2="79"  stroke="#f8d848" stroke-width="1.3" opacity=".55"/>
-  </g>
-  <circle class="halo-glow" cx="200" cy="148" r="64" fill="none" stroke="url(#dn-gold)" stroke-width="3.2" opacity=".96" filter="url(#dn-gf)"/>
-  <circle cx="200" cy="148" r="59" fill="none" stroke="#fffce0" stroke-width="1.0" opacity=".55"/>
-  <circle cx="200" cy="148" r="69" fill="none" stroke="#e8b820" stroke-width="0.8" opacity=".32"/>
-
-  <!-- TUNIC -->
-  <path d="M 155,228 C 138,255 122,312 116,460 L 284,460 C 278,312 262,255 245,228 Z" fill="url(#dn-tunic)" opacity=".98"/>
-  <line x1="170" y1="244" x2="156" y2="454" stroke="#8a1e30" stroke-width="1.5" opacity=".28"/>
-  <line x1="200" y1="238" x2="200" y2="456" stroke="#9a2438" stroke-width="1.0" opacity=".18"/>
-  <line x1="230" y1="244" x2="244" y2="454" stroke="#8a1e30" stroke-width="1.5" opacity=".28"/>
-  <path d="M 116,460 Q 200,468 284,460" fill="none" stroke="#701828" stroke-width="2.2" opacity=".45"/>
-
-  <!-- BELT -->
-  <path d="M 148,310 Q 200,318 252,310" fill="none" stroke="url(#dn-belt)" stroke-width="4.8" stroke-linecap="round" opacity=".90"/>
-  <ellipse cx="200" cy="313" rx="10" ry="7" fill="#f8e060" opacity=".80"/>
-  <line x1="196" y1="319" x2="191" y2="346" stroke="url(#dn-belt)" stroke-width="3.0" stroke-linecap="round" opacity=".70"/>
-  <line x1="204" y1="319" x2="209" y2="346" stroke="url(#dn-belt)" stroke-width="3.0" stroke-linecap="round" opacity=".70"/>
-  <ellipse cx="190" cy="350" rx="5.5" ry="6.5" fill="#f0d040" opacity=".62"/>
-  <ellipse cx="210" cy="350" rx="5.5" ry="6.5" fill="#f0d040" opacity=".62"/>
-
-  <!-- SACRED HEART (animated) -->
-  <g class="heart">
-    <path d="M 180,275 C 178,271 171,268 169,273 C 167,278 170,283 180,289 C 190,283 193,278 191,273 C 189,268 182,271 180,275 Z" fill="#e84060" opacity=".85"/>
-    <path d="M 180,275 C 178,271 171,268 169,273 C 167,278 170,283 180,289 C 190,283 193,278 191,273 C 189,268 182,271 180,275 Z" fill="none" stroke="#f8d040" stroke-width="1.0" opacity=".72"/>
-    <line x1="180" y1="263" x2="180" y2="270" stroke="#f8d040" stroke-width="1.8" opacity=".78"/>
-    <line x1="176" y1="266" x2="184" y2="266" stroke="#f8d040" stroke-width="1.8" opacity=".78"/>
-    <path d="M 179,262 C 178,258 181,254 180,250 C 179,254 177,258 179,262 Z" fill="#f8c030" opacity=".68"/>
+  <g class="rr">
+    <polygon points="202,272 400,474 332,560" fill="url(#dn-r2)" opacity=".90"/>
+    <polygon points="202,272 400,382 400,560" fill="url(#dn-r2)" opacity=".72"/>
+    <polygon points="202,272 400,514 400,560" fill="url(#dn-r2)" opacity=".36"/>
   </g>
 
-  <!-- LEFT ARM + HAND -->
-  <path d="M 155,228 C 140,214 126,206 115,200" stroke="url(#dn-tunic)" stroke-width="26" fill="none" stroke-linecap="round"/>
-  <path d="M 115,200 C 106,196 98,193 90,192"   stroke="url(#dn-skin)"  stroke-width="18" fill="none" stroke-linecap="round"/>
-  <ellipse cx="86" cy="192" rx="17" ry="14" fill="url(#dn-skin)" transform="rotate(-20,86,192)"/>
-  <ellipse cx="72"  cy="188" rx="9.5" ry="6.5" fill="url(#dn-skin)" transform="rotate(-30,72,188)"/>
-  <ellipse cx="80"  cy="181" rx="9.5" ry="6.5" fill="url(#dn-skin)" transform="rotate(-16,80,181)"/>
-  <ellipse cx="91"  cy="178" rx="9.5" ry="6.5" fill="url(#dn-skin)" transform="rotate(-4,91,178)"/>
-  <ellipse cx="101" cy="180" rx="9.5" ry="6.5" fill="url(#dn-skin)" transform="rotate(9,101,180)"/>
-  <ellipse cx="73"  cy="200" rx="7.5" ry="5.5" fill="url(#dn-skin)" transform="rotate(-40,73,200)"/>
-  <circle cx="75"  cy="186" r="1.5" fill="#d8a878" opacity=".35"/>
-  <circle cx="83"  cy="179" r="1.5" fill="#d8a878" opacity=".35"/>
-  <circle cx="93"  cy="176" r="1.5" fill="#d8a878" opacity=".35"/>
-  <g class="hray" filter="url(#dn-hr)">
-    <polygon points="82,186 38,158 32,186"   fill="#f8e840"/>
-    <polygon points="82,186 28,208 38,234"   fill="#f8e840" opacity=".75"/>
-    <polygon points="82,186 52,152 66,144"   fill="#f8e840" opacity=".60"/>
-  </g>
-  <g class="sp3" filter="url(#dn-sp)">
-    <circle cx="62" cy="182" r="3.5" fill="url(#dn-spark)"/>
-    <polygon points="62,174 64,181 62,188 60,181" fill="#fffff0" opacity=".80"/>
-    <polygon points="54,181 62,183 70,181 62,179" fill="#fffff0" opacity=".80"/>
-  </g>
+  <!-- ══ HALO GLOW ══ -->
+  <circle class="aura" cx="200" cy="158" r="80" fill="url(#dn-halo)" filter="url(#dn-sg)"/>
 
-  <!-- RIGHT ARM + HAND -->
-  <path d="M 245,228 C 260,214 274,206 285,200" stroke="url(#dn-tunic)" stroke-width="26" fill="none" stroke-linecap="round"/>
-  <path d="M 285,200 C 294,196 302,193 310,192"  stroke="url(#dn-skin)"  stroke-width="18" fill="none" stroke-linecap="round"/>
-  <ellipse cx="314" cy="192" rx="17" ry="14" fill="url(#dn-skin)" transform="rotate(20,314,192)"/>
-  <ellipse cx="328" cy="188" rx="9.5" ry="6.5" fill="url(#dn-skin)" transform="rotate(30,328,188)"/>
-  <ellipse cx="320" cy="181" rx="9.5" ry="6.5" fill="url(#dn-skin)" transform="rotate(16,320,181)"/>
-  <ellipse cx="309" cy="178" rx="9.5" ry="6.5" fill="url(#dn-skin)" transform="rotate(4,309,178)"/>
-  <ellipse cx="299" cy="180" rx="9.5" ry="6.5" fill="url(#dn-skin)" transform="rotate(-9,299,180)"/>
-  <ellipse cx="327" cy="200" rx="7.5" ry="5.5" fill="url(#dn-skin)" transform="rotate(40,327,200)"/>
-  <circle cx="325" cy="186" r="1.5" fill="#d8a878" opacity=".35"/>
-  <circle cx="317" cy="179" r="1.5" fill="#d8a878" opacity=".35"/>
-  <circle cx="307" cy="176" r="1.5" fill="#d8a878" opacity=".35"/>
-  <g class="hray" filter="url(#dn-hr)">
-    <polygon points="318,186 362,158 368,186"  fill="#f8e840"/>
-    <polygon points="318,186 372,208 362,234"  fill="#f8e840" opacity=".75"/>
-    <polygon points="318,186 348,152 334,144"  fill="#f8e840" opacity=".60"/>
-  </g>
-  <g class="sp4" filter="url(#dn-sp)">
-    <circle cx="338" cy="182" r="3.5" fill="url(#dn-spark)"/>
-    <polygon points="338,174 340,181 338,188 336,181" fill="#fffff0" opacity=".80"/>
-    <polygon points="330,181 338,183 346,181 338,179" fill="#fffff0" opacity=".80"/>
+  <!-- ══ SUNBURST — 16 lines, rotating ══ -->
+  <g class="sun">
+    <line x1="200" y1="92"  x2="200" y2="75"  stroke="#f8e848" stroke-width="2.5" opacity=".82"/>
+    <line x1="246" y1="112" x2="256" y2="102" stroke="#f8e848" stroke-width="2.5" opacity=".80"/>
+    <line x1="268" y1="158" x2="285" y2="158" stroke="#f8e848" stroke-width="2.5" opacity=".80"/>
+    <line x1="246" y1="204" x2="256" y2="214" stroke="#f8e848" stroke-width="2.5" opacity=".78"/>
+    <line x1="200" y1="224" x2="200" y2="241" stroke="#f8e848" stroke-width="2.5" opacity=".75"/>
+    <line x1="154" y1="204" x2="144" y2="214" stroke="#f8e848" stroke-width="2.5" opacity=".78"/>
+    <line x1="132" y1="158" x2="115" y2="158" stroke="#f8e848" stroke-width="2.5" opacity=".80"/>
+    <line x1="154" y1="112" x2="144" y2="102" stroke="#f8e848" stroke-width="2.5" opacity=".80"/>
+    <line x1="228" y1="96"  x2="236" y2="87"  stroke="#f8d840" stroke-width="1.3" opacity=".55"/>
+    <line x1="264" y1="132" x2="274" y2="124" stroke="#f8d840" stroke-width="1.3" opacity=".55"/>
+    <line x1="264" y1="184" x2="274" y2="192" stroke="#f8d840" stroke-width="1.3" opacity=".52"/>
+    <line x1="228" y1="220" x2="236" y2="229" stroke="#f8d840" stroke-width="1.3" opacity=".52"/>
+    <line x1="172" y1="220" x2="164" y2="229" stroke="#f8d840" stroke-width="1.3" opacity=".52"/>
+    <line x1="136" y1="184" x2="126" y2="192" stroke="#f8d840" stroke-width="1.3" opacity=".52"/>
+    <line x1="136" y1="132" x2="126" y2="124" stroke="#f8d840" stroke-width="1.3" opacity=".55"/>
+    <line x1="172" y1="96"  x2="164" y2="87"  stroke="#f8d840" stroke-width="1.3" opacity=".55"/>
   </g>
 
-  <!-- CLOUD / FEET -->
-  <ellipse cx="200" cy="463" rx="66" ry="16" fill="#f0e8e0" opacity=".20"/>
-  <ellipse cx="174" cy="458" rx="22" ry="9" fill="url(#dn-skin)" opacity=".88"/>
-  <ellipse cx="226" cy="458" rx="22" ry="9" fill="url(#dn-skin)" opacity=".88"/>
-  <path d="M 158,455 Q 172,451 188,455" fill="none" stroke="#d8a878" stroke-width="1" opacity=".35"/>
-  <path d="M 212,455 Q 228,451 242,455" fill="none" stroke="#d8a878" stroke-width="1" opacity=".35"/>
+  <!-- Halo rings -->
+  <circle class="crown" cx="200" cy="158" r="65"
+          fill="none" stroke="url(#dn-gold)" stroke-width="3.0" opacity=".94" filter="url(#dn-gf)"/>
+  <circle cx="200" cy="158" r="59" fill="none" stroke="#fff8c0" stroke-width="0.9" opacity=".55"/>
 
-  <!-- NECK -->
-  <rect x="184" y="206" width="32" height="26" rx="11" fill="url(#dn-skin)" opacity=".98"/>
-  <ellipse cx="200" cy="224" rx="19" ry="11" fill="url(#dn-skin)" opacity=".98"/>
+  <!-- ══ CROWN (spike crown, canonical) ══ -->
+  <path d="M 162,132 Q 200,128 238,132 L 238,140 Q 200,136 162,140 Z"
+        fill="url(#dn-crown)" opacity=".92"/>
+  <!-- 7 spikes -->
+  <polygon points="165,132 168,112 172,132" fill="url(#dn-crown)" opacity=".90"/>
+  <polygon points="175,132 178,122 181,132" fill="url(#dn-crown)" opacity=".84"/>
+  <polygon points="186,132 189,108 193,132" fill="url(#dn-crown)" opacity=".92"/>
+  <polygon points="197,132 200,104 203,132" fill="url(#dn-crown)" opacity=".96"/>
+  <polygon points="207,132 211,108 215,132" fill="url(#dn-crown)" opacity=".92"/>
+  <polygon points="219,132 222,122 225,132" fill="url(#dn-crown)" opacity=".84"/>
+  <polygon points="228,132 232,112 235,132" fill="url(#dn-crown)" opacity=".90"/>
+  <!-- Crown gems -->
+  <circle cx="168" cy="133" r="2.5" fill="#ffe090" opacity=".88"/>
+  <circle cx="189" cy="133" r="2.5" fill="#ff8070" opacity=".88"/>
+  <circle cx="200" cy="133" r="3.2" fill="#fffae0" opacity=".92"/>
+  <circle cx="211" cy="133" r="2.5" fill="#80d8ff" opacity=".88"/>
+  <circle cx="232" cy="133" r="2.5" fill="#ffe090" opacity=".88"/>
+  <path d="M 163,137 Q 200,134 237,137" fill="none" stroke="#f8e878" stroke-width="1.0" opacity=".40"/>
 
-  <!-- ─────────────────────────────────────────── -->
-  <!-- HEAD — big round CHILD face                 -->
-  <!-- ─────────────────────────────────────────── -->
-  <!-- Skin base — NO radial gradient at top -->
-  <ellipse cx="200" cy="158" rx="56" ry="60" fill="url(#dn-skin)"/>
-  <ellipse cx="200" cy="168" rx="58" ry="52" fill="url(#dn-skin)"/>
-  <!-- Chubby cheek blush -->
-  <ellipse cx="163" cy="185" rx="14" ry="10" fill="#f0a888" opacity=".22"/>
-  <ellipse cx="237" cy="185" rx="14" ry="10" fill="#f0a888" opacity=".22"/>
+  <!-- ══════════════════════════════════════════ -->
+  <!-- TUNIC: ONE clean polygon body, NO strokes -->
+  <!-- ══════════════════════════════════════════ -->
+  <!-- Body (trapezoid, without arms): -->
+  <path d="M 175,242 C 160,268 145,315 138,445
+           L 262,445 C 255,315 240,268 225,242 Z"
+        fill="url(#dn-tunic)" opacity=".97"/>
+  <!-- Fold lines on body -->
+  <line x1="178" y1="258" x2="162" y2="440" stroke="#8a2040" stroke-width="1.4" opacity=".22"/>
+  <line x1="200" y1="252" x2="200" y2="442" stroke="#9a2848" stroke-width="1.0" opacity=".16"/>
+  <line x1="222" y1="258" x2="238" y2="440" stroke="#8a2040" stroke-width="1.4" opacity=".22"/>
 
-  <!-- ─────────────────────────────────────────── -->
-  <!-- HAIR — FULL SOLID COVERAGE                  -->
-  <!-- Layer 1: solid dark base covering all skull -->
-  <!-- ─────────────────────────────────────────── -->
-  <path d="M 144,165
-           C 142,128 150,96 162,82
-           C 172,68 184,62 200,60
-           C 216,62 228,68 238,82
-           C 250,96 258,128 256,165
-           C 254,148 250,128 240,118
-           C 230,96 218,84 200,82
-           C 182,84 170,96 160,118
-           C 150,128 146,148 144,165 Z"
-        fill="#4a2808"/>
-  <!-- Layer 2: fills the forehead hairline completely -->
-  <path d="M 148,160 C 150,132 158,108 168,96 C 176,84 186,78 200,76
-           C 214,78 224,84 232,96 C 242,108 250,132 252,160"
-        fill="#5a3010" opacity=".95"/>
-  <!-- Side curtains — thick, covering temples down to ears -->
-  <path d="M 144,165 C 140,178 138,195 140,212"
-        stroke="#5a3010" stroke-width="18" fill="none" stroke-linecap="round"/>
-  <path d="M 256,165 C 260,178 262,195 260,212"
-        stroke="#5a3010" stroke-width="18" fill="none" stroke-linecap="round"/>
-  <!-- Curl bumps across top — 7 overlapping ellipses -->
-  <ellipse cx="162" cy="96"  rx="16" ry="13" fill="#5a3010"/>
-  <ellipse cx="176" cy="84"  rx="16" ry="13" fill="#5a3010"/>
-  <ellipse cx="190" cy="76"  rx="16" ry="13" fill="#5a3010"/>
-  <ellipse cx="200" cy="73"  rx="18" ry="14" fill="#5a3010"/>
-  <ellipse cx="210" cy="76"  rx="16" ry="13" fill="#5a3010"/>
-  <ellipse cx="224" cy="84"  rx="16" ry="13" fill="#5a3010"/>
-  <ellipse cx="238" cy="96"  rx="16" ry="13" fill="#5a3010"/>
-  <!-- Curl highlight gloss -->
-  <path d="M 166,100 C 178,88 192,80 200,78 C 208,80 222,88 234,100"
-        fill="none" stroke="#c08040" stroke-width="4" stroke-linecap="round" opacity=".38"/>
-  <!-- Curl highlight dots -->
-  <circle cx="176" cy="82"  r="4.5" fill="#c08040" opacity=".36"/>
-  <circle cx="190" cy="74"  r="4.5" fill="#c08040" opacity=".40"/>
-  <circle cx="200" cy="71"  r="5.5" fill="#c08040" opacity=".42"/>
-  <circle cx="210" cy="74"  r="4.5" fill="#c08040" opacity=".40"/>
-  <circle cx="224" cy="82"  r="4.5" fill="#c08040" opacity=".36"/>
+  <!-- ══ LEFT SLEEVE — single solid polygon, NO stroke overlap ══ -->
+  <!-- 4 corners: shoulder-inner, shoulder-outer, cuff-outer, cuff-inner -->
+  <!-- Goes from body shoulder (165,242) up-left to cuff (~72,185) -->
+  <polygon points="168,238  148,254  62,198  82,182"
+           fill="url(#dn-sleeve)" opacity=".96"/>
+  <!-- Cuff end cap (rounded) -->
+  <ellipse cx="72" cy="190" rx="16" ry="10" fill="url(#dn-sleeve)"
+           transform="rotate(-35,72,190)" opacity=".96"/>
+  <!-- Gold trim at sleeve cuff -->
+  <ellipse cx="72" cy="190" rx="17" ry="11" fill="none"
+           stroke="url(#dn-trim)" stroke-width="4"
+           transform="rotate(-35,72,190)" opacity=".85"/>
 
-  <!-- EARS -->
-  <ellipse cx="145" cy="172" rx="11" ry="14" fill="url(#dn-skin)" opacity=".88"/>
-  <ellipse cx="255" cy="172" rx="11" ry="14" fill="url(#dn-skin)" opacity=".88"/>
+  <!-- ══ RIGHT SLEEVE — single solid polygon mirror ══ -->
+  <polygon points="232,238  252,254  338,198  318,182"
+           fill="url(#dn-sleeve)" opacity=".96"/>
+  <ellipse cx="328" cy="190" rx="16" ry="10" fill="url(#dn-sleeve)"
+           transform="rotate(35,328,190)" opacity=".96"/>
+  <ellipse cx="328" cy="190" rx="17" ry="11" fill="none"
+           stroke="url(#dn-trim)" stroke-width="4"
+           transform="rotate(35,328,190)" opacity=".85"/>
 
-  <!-- EYES — big, warm, child -->
-  <ellipse cx="181" cy="163" rx="14" ry="10.5" fill="#f4deb8"/>
-  <ellipse cx="181" cy="163" rx="10"  ry="9"   fill="#3a2210"/>
-  <ellipse cx="181" cy="163" rx="6.5" ry="6.5" fill="#180c06"/>
-  <circle  cx="183" cy="159" r="2.8" fill="white" opacity=".90"/>
-  <circle  cx="178" cy="166" r="1.2" fill="white" opacity=".38"/>
-  <path d="M 168,158 Q 181,155 195,158" stroke="#2a1408" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-  <path d="M 169,169 Q 181,173 194,169" stroke="#c8a880" stroke-width="0.8" fill="none" opacity=".30"/>
-  <ellipse cx="219" cy="163" rx="14" ry="10.5" fill="#f4deb8"/>
-  <ellipse cx="219" cy="163" rx="10"  ry="9"   fill="#3a2210"/>
-  <ellipse cx="219" cy="163" rx="6.5" ry="6.5" fill="#180c06"/>
-  <circle  cx="221" cy="159" r="2.8" fill="white" opacity=".90"/>
-  <circle  cx="216" cy="166" r="1.2" fill="white" opacity=".38"/>
-  <path d="M 205,158 Q 219,155 233,158" stroke="#2a1408" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-  <path d="M 206,169 Q 219,173 232,169" stroke="#c8a880" stroke-width="0.8" fill="none" opacity=".30"/>
-  <!-- Eyebrows — short child arches -->
-  <path d="M 169,152 Q 181,148 194,152" stroke="#4a2808" stroke-width="2.3" fill="none" stroke-linecap="round"/>
-  <path d="M 206,152 Q 219,148 231,152" stroke="#4a2808" stroke-width="2.3" fill="none" stroke-linecap="round"/>
+  <!-- ══ COLLAR GOLD TRIM ══ -->
+  <path d="M 176,244 Q 200,238 224,244"
+        fill="none" stroke="url(#dn-trim)" stroke-width="4.5" stroke-linecap="round" opacity=".88"/>
 
-  <!-- NOSE — tiny button -->
-  <ellipse cx="196" cy="180" rx="4.8" ry="3.8" fill="#d8a878" opacity=".28"/>
-  <ellipse cx="204" cy="180" rx="4.8" ry="3.8" fill="#d8a878" opacity=".28"/>
-  <path d="M 200,174 L 195,180 Q 200,183 205,180 Z" fill="#c89068" opacity=".25"/>
+  <!-- ══ HEM GOLD TRIM ══ -->
+  <path d="M 138,445 Q 200,453 262,445"
+        fill="none" stroke="url(#dn-trim)" stroke-width="5.5" stroke-linecap="round" opacity=".88"/>
+  <path d="M 140,433 Q 200,441 260,433"
+        fill="none" stroke="url(#dn-trim)" stroke-width="2.0" stroke-linecap="round" opacity=".50"/>
 
-  <!-- MOUTH — sweet baby smile -->
-  <path d="M 190,191 Q 200,188 210,191" fill="#c8807a" opacity=".28"/>
-  <path d="M 190,193 Q 200,203 210,193" fill="none" stroke="#b07868" stroke-width="2.2" stroke-linecap="round"/>
-  <circle cx="190" cy="193" r="2" fill="#d8a080" opacity=".22"/>
-  <circle cx="210" cy="193" r="2" fill="#d8a080" opacity=".22"/>
+  <!-- ══ TEAL SASH ══ -->
+  <path d="M 155,320 Q 200,328 245,320"
+        fill="none" stroke="url(#dn-sash)" stroke-width="8" stroke-linecap="round" opacity=".82"/>
+  <path d="M 155,320 Q 200,328 245,320"
+        fill="none" stroke="#50e090" stroke-width="2.5" stroke-linecap="round" opacity=".38"/>
+  <!-- Sash knot -->
+  <ellipse cx="200" cy="323" rx="11" ry="8" fill="#20a870" opacity=".82"/>
+  <!-- Hanging tails -->
+  <path d="M 194,330 C 191,346 188,362 192,374"
+        fill="none" stroke="url(#dn-sash)" stroke-width="6" stroke-linecap="round" opacity=".75"/>
+  <path d="M 206,330 C 209,346 212,362 208,374"
+        fill="none" stroke="url(#dn-sash)" stroke-width="6" stroke-linecap="round" opacity=".75"/>
+  <ellipse cx="191" cy="377" rx="6" ry="8" fill="#18a868" opacity=".70"/>
+  <ellipse cx="209" cy="377" rx="6" ry="8" fill="#18a868" opacity=".70"/>
 
-  <!-- FRAME -->
-  <rect x="10" y="10" width="380" height="540" rx="6" fill="none" stroke="url(#dn-frame)" stroke-width="2.8" opacity=".88"/>
-  <rect x="14" y="14" width="372" height="532" rx="4" fill="none" stroke="#f0c840" stroke-width="0.9" opacity=".45"/>
-  <rect x="17" y="17" width="366" height="526" rx="3" fill="none" stroke="#e87858" stroke-width="0.5" opacity=".28"/>
+  <!-- ══ LEFT HAND (skin, emerging from cuff) ══ -->
+  <!-- Palm -->
+  <ellipse cx="68" cy="177" rx="20" ry="16" fill="url(#dn-skin)"
+           transform="rotate(-28,68,177)"/>
+  <!-- 4 chubby baby fingers (stumpy, close together) -->
+  <ellipse cx="50"  cy="168" rx="11" ry="7.5" fill="url(#dn-skin)" transform="rotate(-38,50,168)"/>
+  <ellipse cx="60"  cy="160" rx="11" ry="7.5" fill="url(#dn-skin)" transform="rotate(-22,60,160)"/>
+  <ellipse cx="72"  cy="157" rx="11" ry="7.5" fill="url(#dn-skin)" transform="rotate(-7,72,157)"/>
+  <ellipse cx="83"  cy="160" rx="11" ry="7.5" fill="url(#dn-skin)" transform="rotate(9,83,160)"/>
+  <!-- Thumb -->
+  <ellipse cx="52"  cy="183" rx="9"  ry="6"   fill="url(#dn-skin)" transform="rotate(-48,52,183)"/>
+  <!-- Baby knuckle dimples -->
+  <circle cx="53"  cy="166" r="2" fill="#c8906a" opacity=".35"/>
+  <circle cx="63"  cy="158" r="2" fill="#c8906a" opacity=".35"/>
+  <circle cx="74"  cy="155" r="2" fill="#c8906a" opacity=".35"/>
+  <!-- Hand light rays (animated) -->
+  <g class="hg" filter="url(#dn-sp)">
+    <polygon points="65,166 24,138 16,170"  fill="#f8e840" opacity=".88"/>
+    <polygon points="65,166 12,195 26,222"  fill="#f8e840" opacity=".68"/>
+    <polygon points="65,166 38,136 50,128"  fill="#f8e840" opacity=".55"/>
+  </g>
+  <!-- Hand sparkle -->
+  <g class="s3" filter="url(#dn-sp)">
+    <circle cx="44" cy="162" r="4.2" fill="url(#dn-spark)" opacity=".92"/>
+    <polygon points="44,153 47,161 44,169 41,161" fill="#fffff0" opacity=".88"/>
+    <polygon points="35,161 43,163 51,161 43,159" fill="#fffff0" opacity=".88"/>
+  </g>
+
+  <!-- ══ RIGHT HAND (mirror) ══ -->
+  <ellipse cx="332" cy="177" rx="20" ry="16" fill="url(#dn-skin)"
+           transform="rotate(28,332,177)"/>
+  <ellipse cx="350" cy="168" rx="11" ry="7.5" fill="url(#dn-skin)" transform="rotate(38,350,168)"/>
+  <ellipse cx="340" cy="160" rx="11" ry="7.5" fill="url(#dn-skin)" transform="rotate(22,340,160)"/>
+  <ellipse cx="328" cy="157" rx="11" ry="7.5" fill="url(#dn-skin)" transform="rotate(7,328,157)"/>
+  <ellipse cx="317" cy="160" rx="11" ry="7.5" fill="url(#dn-skin)" transform="rotate(-9,317,160)"/>
+  <ellipse cx="348" cy="183" rx="9"  ry="6"   fill="url(#dn-skin)" transform="rotate(48,348,183)"/>
+  <circle cx="347" cy="166" r="2" fill="#c8906a" opacity=".35"/>
+  <circle cx="337" cy="158" r="2" fill="#c8906a" opacity=".35"/>
+  <circle cx="326" cy="155" r="2" fill="#c8906a" opacity=".35"/>
+  <!-- Right hand rays -->
+  <g class="hg" filter="url(#dn-sp)">
+    <polygon points="335,166 376,138 384,170" fill="#f8e840" opacity=".88"/>
+    <polygon points="335,166 388,195 374,222" fill="#f8e840" opacity=".68"/>
+    <polygon points="335,166 362,136 350,128" fill="#f8e840" opacity=".55"/>
+  </g>
+  <g class="s4" filter="url(#dn-sp)">
+    <circle cx="356" cy="162" r="4.2" fill="url(#dn-spark)" opacity=".92"/>
+    <polygon points="356,153 359,161 356,169 353,161" fill="#fffff0" opacity=".88"/>
+    <polygon points="347,161 355,163 363,161 355,159" fill="#fffff0" opacity=".88"/>
+  </g>
+
+  <!-- ══ CLOUD PLATFORM ══ -->
+  <ellipse cx="200" cy="452" rx="90"  ry="24" fill="url(#dn-cloud)" opacity=".68"/>
+  <ellipse cx="155" cy="448" rx="55"  ry="20" fill="url(#dn-cloud)" opacity=".72"/>
+  <ellipse cx="245" cy="448" rx="55"  ry="20" fill="url(#dn-cloud)" opacity=".72"/>
+  <ellipse cx="130" cy="445" rx="40"  ry="17" fill="url(#dn-cloud)" opacity=".82"/>
+  <ellipse cx="172" cy="443" rx="45"  ry="20" fill="url(#dn-cloud)" opacity=".90"/>
+  <ellipse cx="200" cy="441" rx="48"  ry="22" fill="url(#dn-cloud)" opacity=".94"/>
+  <ellipse cx="228" cy="443" rx="45"  ry="20" fill="url(#dn-cloud)" opacity=".90"/>
+  <ellipse cx="270" cy="445" rx="40"  ry="17" fill="url(#dn-cloud)" opacity=".82"/>
+
+  <!-- ══ FEET (small, toddler, bare) ══ -->
+  <ellipse cx="178" cy="448" rx="22" ry="9" fill="url(#dn-skin)" opacity=".90"/>
+  <ellipse cx="222" cy="448" rx="22" ry="9" fill="url(#dn-skin)" opacity=".90"/>
+  <path d="M 160,444 Q 177,440 194,444" fill="none" stroke="#c8906a" stroke-width="0.9" opacity=".32"/>
+  <path d="M 206,444 Q 223,440 240,444" fill="none" stroke="#c8906a" stroke-width="0.9" opacity=".32"/>
+
+  <!-- ══ NECK (very short — toddler) ══ -->
+  <rect x="188" y="218" width="24" height="22" rx="9" fill="url(#dn-skin)" opacity=".98"/>
+  <ellipse cx="200" cy="232" rx="14" ry="9" fill="url(#dn-skin)" opacity=".98"/>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- HEAD — BIG ROUND, CLEARLY BOY TODDLER     -->
+  <!-- Key: wider jaw, NO cheek blush, thicker   -->
+  <!-- eyebrows, smaller mouth, heavier brow     -->
+  <!-- ══════════════════════════════════════════ -->
+  <!-- Jaw/lower face: wider than upper (toddler has wide jaw relative to skull) -->
+  <ellipse cx="200" cy="180" rx="60" ry="65" fill="url(#dn-skin)"/>
+  <!-- Slightly wider at jaw level -->
+  <ellipse cx="200" cy="192" rx="62" ry="54" fill="url(#dn-skin)"/>
+
+  <!-- VERY MINIMAL cheek warmth — just a hint, not girly pink -->
+  <ellipse cx="156" cy="196" rx="16" ry="12" fill="#f0a070" opacity=".14"/>
+  <ellipse cx="244" cy="196" rx="16" ry="12" fill="#f0a070" opacity=".14"/>
+
+  <!-- ══ HAIR — FULL COVERAGE, BOY BABY CURLS ══ -->
+  <!-- Solid base covering entire skull — warm brown, NOT golden -->
+  <path d="M 142,184
+           C 140,145 148,112 160,96
+           C 170,80 184,72 200,70
+           C 216,72 230,80 240,96
+           C 252,112 260,145 258,184
+           C 256,162 250,138 240,126
+           C 230,102 218,90 200,88
+           C 182,90 170,102 160,126
+           C 150,138 144,162 142,184 Z"
+        fill="#6a3c10"/>
+  <!-- Hair fill from forehead line — NO gap, NO bald zone -->
+  <path d="M 144,182 C 146,152 154,124 164,108
+           C 174,92 186,82 200,80
+           C 214,82 226,92 236,108
+           C 246,124 254,152 256,182"
+        fill="#7a4a18" opacity=".96"/>
+  <!-- Thick side curtains covering temples fully -->
+  <path d="M 142,184 C 138,198 136,214 138,230"
+        stroke="#6a3c10" stroke-width="22" fill="none" stroke-linecap="round"/>
+  <path d="M 258,184 C 262,198 264,214 262,230"
+        stroke="#6a3c10" stroke-width="22" fill="none" stroke-linecap="round"/>
+  <!-- Curl bumps: 9 bumps covering entire top -->
+  <!-- More masculine: bumps are wider, less tightly curled -->
+  <ellipse cx="155" cy="106" rx="20" ry="16" fill="#7a4a18"/>
+  <ellipse cx="168" cy="92"  rx="20" ry="16" fill="#7a4a18"/>
+  <ellipse cx="182" cy="82"  rx="20" ry="16" fill="#7a4a18"/>
+  <ellipse cx="194" cy="76"  rx="22" ry="17" fill="#7a4a18"/>
+  <ellipse cx="200" cy="73"  rx="24" ry="18" fill="#7a4a18"/>
+  <ellipse cx="206" cy="76"  rx="22" ry="17" fill="#7a4a18"/>
+  <ellipse cx="218" cy="82"  rx="20" ry="16" fill="#7a4a18"/>
+  <ellipse cx="232" cy="92"  rx="20" ry="16" fill="#7a4a18"/>
+  <ellipse cx="245" cy="106" rx="20" ry="16" fill="#7a4a18"/>
+  <!-- Warm glow highlight across hair — suggests healthy boy hair -->
+  <path d="M 162,110 C 174,96 186,86 196,82 C 200,80 204,82 214,86 C 224,90 236,100 238,110"
+        fill="none" stroke="#c08838" stroke-width="5" stroke-linecap="round" opacity=".32"/>
+  <circle cx="168" cy="90"  r="6" fill="#b07828" opacity=".36"/>
+  <circle cx="182" cy="80"  r="6" fill="#b07828" opacity=".40"/>
+  <circle cx="194" cy="74"  r="7" fill="#b07828" opacity=".42"/>
+  <circle cx="200" cy="71"  r="8" fill="#b07828" opacity=".44"/>
+  <circle cx="206" cy="74"  r="7" fill="#b07828" opacity=".42"/>
+  <circle cx="218" cy="80"  r="6" fill="#b07828" opacity=".40"/>
+  <circle cx="232" cy="90"  r="6" fill="#b07828" opacity=".36"/>
+
+  <!-- ══ EARS ══ -->
+  <ellipse cx="141" cy="185" rx="12" ry="15" fill="url(#dn-skin)" opacity=".88"/>
+  <ellipse cx="259" cy="185" rx="12" ry="15" fill="url(#dn-skin)" opacity=".88"/>
+
+  <!-- ══ EYES — big but BOY: rounder whites, bold lash, no doe arch ══ -->
+  <!-- Left eye: slightly less wide than previous versions -->
+  <ellipse cx="179" cy="183" rx="15"  ry="11"  fill="#f5e4ca"/>
+  <ellipse cx="179" cy="183" rx="10.5" ry="9.5" fill="#3a2010"/>
+  <ellipse cx="179" cy="183" rx="7.0"  ry="7.0" fill="#160c04"/>
+  <!-- Bold highlight = innocent/sweet -->
+  <circle  cx="182" cy="178" r="3.2" fill="white" opacity=".92"/>
+  <circle  cx="176" cy="187" r="1.3" fill="white" opacity=".40"/>
+  <!-- BOLD upper lash line — makes it look more boyish vs delicate arch -->
+  <path d="M 165,177 Q 179,173 194,177" stroke="#1e0e04" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Right eye -->
+  <ellipse cx="221" cy="183" rx="15"  ry="11"  fill="#f5e4ca"/>
+  <ellipse cx="221" cy="183" rx="10.5" ry="9.5" fill="#3a2010"/>
+  <ellipse cx="221" cy="183" rx="7.0"  ry="7.0" fill="#160c04"/>
+  <circle  cx="224" cy="178" r="3.2" fill="white" opacity=".92"/>
+  <circle  cx="218" cy="187" r="1.3" fill="white" opacity=".40"/>
+  <path d="M 206,177 Q 221,173 236,177" stroke="#1e0e04" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- EYEBROWS: THICK, HORIZONTAL — most important for boy look -->
+  <!-- Left brow: thick, short, barely arched — boy/toddler brow -->
+  <path d="M 167,170 Q 179,166 192,170"
+        stroke="#3a2008" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- Right brow -->
+  <path d="M 208,170 Q 221,166 234,170"
+        stroke="#3a2008" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+  <!-- ══ NOSE — round but slightly more substantial (boy nose) ══ -->
+  <ellipse cx="194" cy="200" rx="6"   ry="5"  fill="#d09870" opacity=".30"/>
+  <ellipse cx="206" cy="200" rx="6"   ry="5"  fill="#d09870" opacity=".30"/>
+  <path d="M 200,193 L 193,200 Q 200,204 207,200 Z" fill="#c08860" opacity=".24"/>
+
+  <!-- ══ MOUTH — smaller, more closed, boyish slight smile ══ -->
+  <!-- NOT a wide open girl smile — just a peaceful curve -->
+  <path d="M 190,212 Q 200,220 210,212"
+        fill="none" stroke="#b06858" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Very subtle lower lip -->
+  <path d="M 193,213 Q 200,217 207,213" fill="#d09080" opacity=".20"/>
+  <!-- Corner dimples (subtle) -->
+  <circle cx="190" cy="213" r="1.8" fill="#c07870" opacity=".22"/>
+  <circle cx="210" cy="213" r="1.8" fill="#c07870" opacity=".22"/>
+
+  <!-- ══ FRAME ══ -->
+  <rect x="10" y="10" width="380" height="540" rx="6"
+        fill="none" stroke="url(#dn-frame)" stroke-width="2.8" opacity=".86"/>
+  <rect x="14" y="14" width="372" height="532" rx="4"
+        fill="none" stroke="#f0c840" stroke-width="0.9" opacity=".45"/>
   <path d="M 10,38 L 10,10 L 38,10"    fill="none" stroke="url(#dn-frame)" stroke-width="4" stroke-linecap="round"/>
   <path d="M 362,10 L 390,10 L 390,38"  fill="none" stroke="url(#dn-frame)" stroke-width="4" stroke-linecap="round"/>
   <path d="M 10,512 L 10,540 L 38,540"  fill="none" stroke="url(#dn-frame)" stroke-width="4" stroke-linecap="round"/>
   <path d="M 362,540 L 390,540 L 390,512" fill="none" stroke="url(#dn-frame)" stroke-width="4" stroke-linecap="round"/>
-  <polygon points="10,10 18,16 10,22 2,16"    fill="url(#dn-frame)" opacity=".78"/>
-  <polygon points="390,10 398,16 390,22 382,16"  fill="url(#dn-frame)" opacity=".78"/>
-  <polygon points="10,540 18,546 10,552 2,546"   fill="url(#dn-frame)" opacity=".78"/>
-  <polygon points="390,540 398,546 390,552 382,546" fill="url(#dn-frame)" opacity=".78"/>
+  <polygon points="10,10 18,16 10,22 2,16"    fill="url(#dn-frame)" opacity=".80"/>
+  <polygon points="390,10 398,16 390,22 382,16"  fill="url(#dn-frame)" opacity=".80"/>
+  <polygon points="10,540 18,546 10,552 2,546"   fill="url(#dn-frame)" opacity=".80"/>
+  <polygon points="390,540 398,546 390,552 382,546" fill="url(#dn-frame)" opacity=".80"/>
 
-  <!-- NAME PANEL — BILINGÜE -->
+  <!-- ══ NAME PANEL BILINGÜE ══ -->
   <rect x="10" y="490" width="380" height="60" fill="url(#dn-panel)" opacity=".98"/>
   <line x1="10" y1="490" x2="390" y2="490" stroke="url(#dn-frame)" stroke-width="1.8" opacity=".78"/>
   <!-- ES -->
-  <text x="100" y="510" text-anchor="middle" font-family="Georgia,'Times New Roman',serif"
+  <text x="100" y="510" text-anchor="middle"
+        font-family="Georgia,'Times New Roman',serif"
         font-size="14" font-weight="bold" letter-spacing="1.5" fill="#f8d840" opacity=".98">DIVINO NIÑO</text>
-  <text x="100" y="526" text-anchor="middle" font-family="Georgia,'Times New Roman',serif"
-        font-size="8.5" letter-spacing="1.5" fill="#f09060" opacity=".85">JESÚS · 20 DE JULIO</text>
+  <text x="100" y="526" text-anchor="middle"
+        font-family="Georgia,'Times New Roman',serif"
+        font-size="8.5" letter-spacing="1.5" fill="#f09060" opacity=".88">JESÚS · 20 DE JULIO</text>
   <!-- Divider -->
   <line x1="200" y1="496" x2="200" y2="544" stroke="url(#dn-frame)" stroke-width="0.9" opacity=".50"/>
   <!-- EN -->
-  <text x="300" y="510" text-anchor="middle" font-family="Georgia,'Times New Roman',serif"
+  <text x="300" y="510" text-anchor="middle"
+        font-family="Georgia,'Times New Roman',serif"
         font-size="14" font-weight="bold" letter-spacing="1.5" fill="#f8d840" opacity=".98">DIVINE CHILD</text>
-  <text x="300" y="526" text-anchor="middle" font-family="Georgia,'Times New Roman',serif"
-        font-size="8.5" letter-spacing="1.5" fill="#f09060" opacity=".85">JESUS · JULY 20</text>
+  <text x="300" y="526" text-anchor="middle"
+        font-family="Georgia,'Times New Roman',serif"
+        font-size="8.5" letter-spacing="1.5" fill="#f09060" opacity=".88">JESUS · JULY 20</text>
   <!-- Tagline -->
-  <text x="200" y="543" text-anchor="middle" font-family="Georgia,'Times New Roman',serif"
-        font-size="7.5" letter-spacing="2.5" fill="#c09020" opacity=".65">YO REINO · I REIGN</text>
+  <text x="200" y="543" text-anchor="middle"
+        font-family="Georgia,'Times New Roman',serif"
+        font-size="7.5" letter-spacing="2.5" fill="#c0a820" opacity=".68">YO REINO · I REIGN</text>
 </svg>
