@@ -1788,13 +1788,15 @@ function initMenu() {
     const intercesorsLabel = currentLang === 'es' ? '✨ Intercesores'        : '✨ Intercessors';
     const adoracionLabel  = currentLang === 'es' ? '✝ Adoración'            : '✝ Adoration';
     const espirituLabel   = currentLang === 'es' ? '🕊 Espíritu Santo'       : '🕊 Holy Spirit';
+    const matrimonioLabel = currentLang === 'es' ? '💍 Matrimonio'            : '💍 Marriage';
 
     list.innerHTML = `
       <li><a class="side-nav-link side-nav-home"   href="${homeHref}">${homeLabel}</a></li>
       <li><a class="side-nav-link side-nav-family" href="${familyHref}">${familyLabel}</a></li>
       <li><a class="side-nav-link side-nav-saints" href="${intercesorsHref}">${intercesorsLabel}</a></li>
       <li><a class="side-nav-link side-nav-adoracion" href="/adoracion/">${adoracionLabel}</a></li>
-      <li><a class="side-nav-link side-nav-espiritu" href="/espiritu/">${espirituLabel}</a></li>`;
+      <li><a class="side-nav-link side-nav-espiritu" href="/espiritu/">${espirituLabel}</a></li>
+      <li><a class="side-nav-link side-nav-matrimonio" href="/matrimonio/">${matrimonioLabel}</a></li>`;
   }
   renderMenuItems();
 

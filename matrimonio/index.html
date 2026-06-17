@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Sacramento del Matrimonio | The Universal Prayer</title>
+  <meta name="description" content="El matrimonio cristiano no es un permiso — es un sacramento que te llena de la gracia de Dios. Los esposos son ministros del sacramento y canales de amor divino." />
+  <meta name="theme-color" content="#c9a84c" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="El Sacramento del Matrimonio" />
+  <meta property="og:description" content="Estar casado en Cristo es estar en un estado de gracia permanente. Descubre las bendiciones del matrimonio sacramental." />
+  <meta property="og:url" content="https://www.theuniversalprayer.com/matrimonio/" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="apple-touch-icon" href="/assets/images/icon.svg" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23c9a84c'>✝</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    /* ── Hero ── */
+    .mat-hero {
+      text-align: center;
+      padding: 5rem 1.5rem 3rem;
+      background: radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.14) 0%, transparent 68%);
+    }
+    /* ── Rings SVG icon ── */
+    .mat-rings {
+      width: 130px; height: 130px;
+      margin: 0 auto 1.5rem;
+      display: block;
+      filter: drop-shadow(0 0 22px rgba(201,168,76,0.50));
+    }
+    @keyframes mat-pulse { 0%,100%{filter:drop-shadow(0 0 14px rgba(201,168,76,0.40))} 50%{filter:drop-shadow(0 0 28px rgba(201,168,76,0.75))} }
+    .mat-rings { animation: mat-pulse 4s ease-in-out infinite; }
+
+    .mat-badge {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(201,168,76,0.30);
+      padding: 0.3em 0.9em;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+    }
+    .mat-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      color: #fff;
+      margin: 0 0 0.75rem;
+      line-height: 1.15;
+    }
+    .mat-subtitle {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.60);
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.75;
+    }
+
+    /* ── Content ── */
+    .mat-content {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0 1.25rem 5rem;
+    }
+    .mat-section { margin-bottom: 3.2rem; }
+
+    .mat-section-title {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      color: var(--gold-light);
+      margin: 0 0 1.25rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(201,168,76,0.20);
+    }
+    .mat-body {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.80);
+      line-height: 1.85;
+    }
+    .mat-body p { margin: 0 0 1.1rem; }
+    .mat-body p:last-child { margin-bottom: 0; }
+
+    /* ── Scripture blockquote ── */
+    .mat-scripture {
+      border-left: 3px solid rgba(201,168,76,0.45);
+      padding: 0.75rem 1.25rem;
+      margin: 1.5rem 0;
+      font-family: var(--font-serif);
+      font-style: italic;
+      color: rgba(255,255,255,0.85);
+      font-size: 0.98rem;
+      line-height: 1.75;
+    }
+    .mat-scripture cite {
+      display: block;
+      font-size: 0.75rem;
+      font-style: normal;
+      color: var(--gold);
+      margin-top: 0.4rem;
+    }
+
+    /* ── Highlight verse (big, centred) ── */
+    .mat-highlight {
+      background: rgba(201,168,76,0.07);
+      border: 1px solid rgba(201,168,76,0.22);
+      border-radius: 12px;
+      padding: 1.6rem 1.5rem;
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .mat-highlight-text {
+      font-family: var(--font-serif);
+      font-size: clamp(1rem, 3vw, 1.22rem);
+      font-style: italic;
+      color: #fff;
+      line-height: 1.75;
+    }
+    .mat-highlight cite {
+      display: block;
+      margin-top: 0.6rem;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-style: normal;
+      color: var(--gold);
+      letter-spacing: 0.06em;
+    }
+
+    /* ── Blessings grid ── */
+    .mat-blessings-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 540px) { .mat-blessings-grid { grid-template-columns: 1fr; } }
+
+    .mat-blessing-card {
+      background: rgba(201,168,76,0.06);
+      border: 1px solid rgba(201,168,76,0.18);
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+    }
+    .mat-blessing-icon {
+      font-size: 1.5rem;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+    .mat-blessing-name {
+      font-family: var(--font-serif);
+      font-size: 1.02rem;
+      color: var(--gold-light);
+      margin: 0 0 0.4rem;
+    }
+    .mat-blessing-desc {
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.62);
+      line-height: 1.65;
+      margin: 0;
+    }
+    .mat-source {
+      font-size: 0.7rem;
+      color: var(--gold-dim);
+      margin-top: 0.3rem;
+      font-style: italic;
+    }
+
+    /* ── Truth cards (big revelations) ── */
+    .mat-truth {
+      background: rgba(201,168,76,0.05);
+      border: 1px solid rgba(201,168,76,0.15);
+      border-left: 4px solid var(--gold);
+      border-radius: 0 10px 10px 0;
+      padding: 1.25rem 1.4rem;
+      margin: 1.4rem 0;
+    }
+    .mat-truth-label {
+      font-family: var(--font-sans);
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.45rem;
+    }
+    .mat-truth-text {
+      font-family: var(--font-serif);
+      font-size: 1.0rem;
+      color: rgba(255,255,255,0.90);
+      line-height: 1.75;
+      margin: 0;
+    }
+    .mat-truth-source {
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      color: var(--gold-dim);
+      margin-top: 0.5rem;
+    }
+
+    /* ── Closing prayer ── */
+    .mat-closing-prayer {
+      background: rgba(201,168,76,0.07);
+      border: 1px solid rgba(201,168,76,0.22);
+      border-radius: 12px;
+      padding: 1.75rem 1.5rem;
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      color: rgba(255,255,255,0.88);
+      line-height: 2.0;
+      white-space: pre-line;
+    }
+    .mat-amen {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      font-size: 1.05rem;
+    }
+
+    .mat-footer-links {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    .mat-home-link {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--gold);
+      text-decoration: none;
+      opacity: 0.75;
+      transition: opacity 0.2s;
+    }
+    .mat-home-link:hover { opacity: 1; }
+
+    /* ── Couple silhouette section divider ── */
+    .mat-divider {
+      text-align: center;
+      margin: 2.5rem 0;
+      color: rgba(201,168,76,0.35);
+      font-size: 1.3rem;
+      letter-spacing: 0.5em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link">
+        <span class="cross">✝</span>
+        <span class="logo-text">The Universal Prayer</span>
+      </a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span id="langLabel">EN</span>
+      </button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- SIDE NAV -->
+  <div class="side-nav-overlay" id="sideNavOverlay"></div>
+  <nav class="side-nav" id="sideNav" aria-label="Site menu">
+    <div class="side-nav-header">
+      <span class="side-nav-title" data-lang="es">Menú</span>
+      <span class="side-nav-title" data-lang="en" style="display:none">Menu</span>
+      <button class="side-nav-close" id="sideNavClose" aria-label="Close menu">✕</button>
+    </div>
+    <ul class="side-nav-list" id="sideNavList"></ul>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section class="mat-hero">
+    <a href="/" class="ador-back-link" data-lang="es">← Inicio</a>
+    <a href="/" class="ador-back-link" data-lang="en" style="display:none">← Home</a>
+
+    <!-- Animated rings SVG -->
+    <svg class="mat-rings" viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <radialGradient id="rg1" cx="42%" cy="38%" r="58%">
+          <stop offset="0%" stop-color="#f8e888"/>
+          <stop offset="55%" stop-color="#c9a84c"/>
+          <stop offset="100%" stop-color="#8a6e2f"/>
+        </radialGradient>
+        <radialGradient id="rg2" cx="58%" cy="38%" r="58%">
+          <stop offset="0%" stop-color="#f8e888"/>
+          <stop offset="55%" stop-color="#c9a84c"/>
+          <stop offset="100%" stop-color="#8a6e2f"/>
+        </radialGradient>
+        <filter id="rg-glow" x="-25%" y="-25%" width="150%" height="150%">
+          <feGaussianBlur stdDeviation="3.5" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <style>
+          @keyframes ring1spin { 0%,100%{transform:rotate(0deg) translateX(-14px)} 50%{transform:rotate(8deg) translateX(-14px)} }
+          @keyframes ring2spin { 0%,100%{transform:rotate(0deg) translateX(14px)}  50%{transform:rotate(-8deg) translateX(14px)} }
+          @keyframes crossPulse { 0%,100%{opacity:.70} 50%{opacity:1.0} }
+          .r1 { animation: ring1spin 5s ease-in-out infinite; transform-origin: 65px 65px; }
+          .r2 { animation: ring2spin 5s ease-in-out infinite; transform-origin: 65px 65px; }
+          .rc { animation: crossPulse 3s ease-in-out infinite; }
+        </style>
+      </defs>
+
+      <!-- Background glow -->
+      <circle cx="65" cy="65" r="58" fill="rgba(201,168,76,0.06)"/>
+
+      <!-- Ring 1 (left) -->
+      <g class="r1">
+        <circle cx="51" cy="65" r="28" fill="none" stroke="url(#rg1)" stroke-width="6" opacity=".92" filter="url(#rg-glow)"/>
+        <circle cx="51" cy="65" r="23" fill="none" stroke="#f8e888" stroke-width="1.2" opacity=".35"/>
+      </g>
+
+      <!-- Ring 2 (right) -->
+      <g class="r2">
+        <circle cx="79" cy="65" r="28" fill="none" stroke="url(#rg2)" stroke-width="6" opacity=".92" filter="url(#rg-glow)"/>
+        <circle cx="79" cy="65" r="23" fill="none" stroke="#f8e888" stroke-width="1.2" opacity=".35"/>
+      </g>
+
+      <!-- Small cross at centre-top (where rings meet) -->
+      <g class="rc" transform="translate(65,37)">
+        <line y1="-8" y2="8"   stroke="#f8e888" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="-8" x2="8"  stroke="#f8e888" stroke-width="2.5" stroke-linecap="round" transform="translate(0,-2)"/>
+      </g>
+
+      <!-- Tiny stars -->
+      <circle cx="22" cy="30" r="2" fill="#f8e888" opacity=".55"/>
+      <circle cx="108" cy="30" r="2" fill="#f8e888" opacity=".55"/>
+      <circle cx="15" cy="65" r="1.5" fill="#f8e888" opacity=".40"/>
+      <circle cx="115" cy="65" r="1.5" fill="#f8e888" opacity=".40"/>
+    </svg>
+
+    <div class="mat-badge" data-lang="es">💍 Sacramento del Matrimonio</div>
+    <div class="mat-badge" data-lang="en" style="display:none">💍 Sacrament of Marriage</div>
+
+    <h1 class="mat-title" data-lang="es">El Matrimonio Cristiano</h1>
+    <h1 class="mat-title" data-lang="en" style="display:none">Christian Marriage</h1>
+
+    <p class="mat-subtitle" data-lang="es">Casarse en Cristo no es un trámite ni un permiso. Es entrar en un estado permanente de gracia divina — un sacramento en el que los propios esposos son ministros y canales del amor de Dios.</p>
+    <p class="mat-subtitle" data-lang="en" style="display:none">Getting married in Christ is not a formality or a permit. It is entering a permanent state of divine grace — a sacrament in which the spouses themselves are ministers and channels of God's love.</p>
+  </section>
+
+  <!-- ══ CONTENT ══ -->
+  <main class="mat-content">
+
+    <!-- ── VERDAD 1: Los esposos son el sacramento ── -->
+    <section class="mat-section">
+      <h2 class="mat-section-title" data-lang="es">Los esposos son el sacramento</h2>
+      <h2 class="mat-section-title" data-lang="en" style="display:none">The spouses are the sacrament</h2>
+
+      <div class="mat-truth">
+        <p class="mat-truth-label" data-lang="es">Catecismo de la Iglesia Católica · n. 1623</p>
+        <p class="mat-truth-label" data-lang="en" style="display:none">Catechism of the Catholic Church · n. 1623</p>
+        <p class="mat-truth-text" data-lang="es">«Según la tradición latina, los esposos, como ministros de la gracia de Cristo, se confieren mutuamente el sacramento del matrimonio manifestando su consentimiento ante la Iglesia.»</p>
+        <p class="mat-truth-text" data-lang="en" style="display:none">"According to Latin tradition, the spouses, as ministers of Christ's grace, mutually confer upon each other the sacrament of matrimony by expressing their consent before the Church."</p>
+      </div>
+
+      <div class="mat-body" data-lang="es">
+        <p>En todos los demás sacramentos el ministro es el sacerdote o el obispo. En el matrimonio, el ministro es el esposo y la esposa. <strong>Ellos dos son el sacramento.</strong> El sacerdote solo es testigo cualificado y la Iglesia es la que recibe y bendice. Pero la gracia fluye de uno al otro, de corazón a corazón.</p>
+        <p>Eso significa que cada vez que un esposo perdona a su esposa, o una esposa sostiene a su marido en la oscuridad, o los dos eligen el uno al otro de nuevo cuando podrían separarse — en ese momento están ejerciendo su ministerio sacramental. Están siendo canal de la gracia de Dios.</p>
+      </div>
+      <div class="mat-body" data-lang="en" style="display:none">
+        <p>In all other sacraments the minister is the priest or bishop. In marriage, the ministers are the husband and the wife. <strong>The two of them are the sacrament.</strong> The priest is only the qualified witness and the Church receives and blesses. But the grace flows from one to the other, from heart to heart.</p>
+        <p>That means that every time a husband forgives his wife, or a wife holds her husband through the darkness, or the two choose each other again when they could walk away — in that moment they are exercising their sacramental ministry. They are being a channel of God's grace.</p>
+      </div>
+    </section>
+
+    <!-- ── VERDAD 2: Imagen del amor de Dios ── -->
+    <section class="mat-section">
+      <h2 class="mat-section-title" data-lang="es">Tu amor es imagen del amor de Dios</h2>
+      <h2 class="mat-section-title" data-lang="en" style="display:none">Your love is an image of God's love</h2>
+
+      <blockquote class="mat-scripture" data-lang="es">
+        «El amor mutuo entre el hombre y la mujer se convierte en imagen del amor absoluto e indefectible con que Dios ama al hombre.»
+        <cite>— Catecismo de la Iglesia Católica, n. 1604</cite>
+      </blockquote>
+      <blockquote class="mat-scripture" data-lang="en" style="display:none">
+        "The mutual love between man and woman becomes an image of the absolute and unfailing love with which God loves man."
+        <cite>— Catechism of the Catholic Church, n. 1604</cite>
+      </blockquote>
+
+      <div class="mat-highlight">
+        <p class="mat-highlight-text" data-lang="es">«"Por eso deja el hombre a su padre y a su madre y se une a su mujer, y los dos se hacen una sola carne." Gran misterio es éste — lo digo respecto a Cristo y a la Iglesia.»</p>
+        <cite data-lang="es">— Efesios 5, 31–32</cite>
+        <p class="mat-highlight-text" data-lang="en" style="display:none">"For this reason a man will leave his father and mother and be united to his wife, and the two will become one flesh. This is a profound mystery — but I am talking about Christ and the Church."</p>
+        <cite data-lang="en" style="display:none">— Ephesians 5:31–32</cite>
+      </div>
+
+      <div class="mat-body" data-lang="es">
+        <p>San Pablo no estaba siendo poético. Estaba revelando la estructura profunda de la realidad: el matrimonio humano está construido sobre el patrón del amor de Cristo por la Iglesia. No al revés. El original es el amor de Dios — el matrimonio es su reflejo en la tierra.</p>
+        <p>Esto significa que cuando los esposos se aman con fidelidad, con ternura, con entrega total — no solo están haciendo algo bueno para su familia. <strong>Están revelando al mundo algo sobre Dios que de otra manera no podría verse.</strong></p>
+      </div>
+      <div class="mat-body" data-lang="en" style="display:none">
+        <p>Saint Paul was not being poetic. He was revealing the deep structure of reality: human marriage is built on the pattern of Christ's love for the Church. Not the other way around. The original is God's love — marriage is its reflection on earth.</p>
+        <p>This means that when spouses love each other with fidelity, tenderness, and total self-giving — they are not only doing something good for their family. <strong>They are revealing to the world something about God that could not otherwise be seen.</strong></p>
+      </div>
+    </section>
+
+    <!-- ── VERDAD 3: El Espíritu Santo sella la alianza ── -->
+    <section class="mat-section">
+      <h2 class="mat-section-title" data-lang="es">El Espíritu Santo vive en tu matrimonio</h2>
+      <h2 class="mat-section-title" data-lang="en" style="display:none">The Holy Spirit lives in your marriage</h2>
+
+      <div class="mat-truth">
+        <p class="mat-truth-label" data-lang="es">Catecismo de la Iglesia Católica · n. 1624</p>
+        <p class="mat-truth-label" data-lang="en" style="display:none">Catechism of the Catholic Church · n. 1624</p>
+        <p class="mat-truth-text" data-lang="es">«El Espíritu Santo es el sello de la alianza de los esposos, la fuente siempre generosa de su amor, la fuerza con que se renovará su fidelidad.»</p>
+        <p class="mat-truth-text" data-lang="en" style="display:none">"The Holy Spirit is the seal of the covenant of the spouses, the ever-generous source of their love, the strength by which their fidelity will be renewed."</p>
+      </div>
+
+      <div class="mat-body" data-lang="es">
+        <p>En la epíclesis del matrimonio — la oración de invocación sobre los esposos — la Iglesia pide que el Espíritu Santo descienda sobre ellos como desciende sobre el pan y el vino en la Eucaristía. El mismo Espíritu. La misma presencia.</p>
+        <p>Eso significa que el amor conyugal no es solo un sentimiento humano que hay que sostener con fuerza de voluntad. Es un amor que tiene una fuente sobrenatural: el Espíritu Santo habitando en la alianza de los esposos. Cuando el amor amenaza con enfriarse — ahí está Él, listo para renovarlo.</p>
+      </div>
+      <div class="mat-body" data-lang="en" style="display:none">
+        <p>In the epiclesis of marriage — the prayer of invocation over the spouses — the Church asks that the Holy Spirit descend upon them as He descends upon the bread and wine in the Eucharist. The same Spirit. The same presence.</p>
+        <p>This means that conjugal love is not only a human feeling to be sustained by willpower. It is a love with a supernatural source: the Holy Spirit dwelling in the covenant of the spouses. When love threatens to cool — He is there, ready to renew it.</p>
+      </div>
+    </section>
+
+    <!-- ── VERSÍCULOS DE LA BIBLIA ── -->
+    <section class="mat-section">
+      <h2 class="mat-section-title" data-lang="es">La Biblia habla de tu matrimonio</h2>
+      <h2 class="mat-section-title" data-lang="en" style="display:none">The Bible speaks of your marriage</h2>
+
+      <blockquote class="mat-scripture" data-lang="es">
+        «Dios creó al ser humano a su imagen, a imagen de Dios lo creó, varón y mujer los creó. Y los bendijo Dios.»
+        <cite>— Génesis 1, 27–28</cite>
+      </blockquote>
+      <blockquote class="mat-scripture" data-lang="en" style="display:none">
+        "God created mankind in his own image; in the image of God he created them; male and female he created them. God blessed them."
+        <cite>— Genesis 1:27–28</cite>
+      </blockquote>
+
+      <div class="mat-body" data-lang="es">
+        <p>La primera bendición de Dios en la historia de la humanidad fue sobre el hombre y la mujer juntos. No sobre el individuo — sobre la pareja. La bendición divina llegó al mundo a través del matrimonio.</p>
+      </div>
+      <div class="mat-body" data-lang="en" style="display:none">
+        <p>The first blessing of God in human history was upon the man and the woman together. Not upon the individual — upon the couple. The divine blessing came into the world through marriage.</p>
+      </div>
+
+      <blockquote class="mat-scripture" data-lang="es">
+        «Lo que Dios unió, que no lo separe el hombre.»
+        <cite>— Mateo 19, 6</cite>
+      </blockquote>
+      <blockquote class="mat-scripture" data-lang="en" style="display:none">
+        "What God has joined together, let no one separate."
+        <cite>— Matthew 19:6</cite>
+      </blockquote>
+
+      <blockquote class="mat-scripture" data-lang="es">
+        «En el Señor, ni la mujer existe sin el hombre, ni el hombre sin la mujer.»
+        <cite>— 1 Corintios 11, 11</cite>
+      </blockquote>
+      <blockquote class="mat-scripture" data-lang="en" style="display:none">
+        "In the Lord, neither is woman independent of man nor man independent of woman."
+        <cite>— 1 Corinthians 11:11</cite>
+      </blockquote>
+
+      <blockquote class="mat-scripture" data-lang="es">
+        «Maridos, amad a vuestras mujeres como Cristo amó a la Iglesia y se entregó a sí mismo por ella.»
+        <cite>— Efesios 5, 25</cite>
+      </blockquote>
+      <blockquote class="mat-scripture" data-lang="en" style="display:none">
+        "Husbands, love your wives, just as Christ loved the church and gave himself up for her."
+        <cite>— Ephesians 5:25</cite>
+      </blockquote>
+
+      <blockquote class="mat-scripture" data-lang="es">
+        «El amor es sufrido, el amor es benigno; el amor no tiene envidia, el amor no es jactancioso, no se envanece. No busca lo suyo, no se irrita, no lleva cuentas del mal. Todo lo aguanta, todo lo cree, todo lo espera, todo lo soporta. El amor nunca pasa.»
+        <cite>— 1 Corintios 13, 4–8</cite>
+      </blockquote>
+      <blockquote class="mat-scripture" data-lang="en" style="display:none">
+        "Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record of wrongs. It always protects, always trusts, always hopes, always perseveres. Love never fails."
+        <cite>— 1 Corinthians 13:4–8</cite>
+      </blockquote>
+
+      <blockquote class="mat-scripture" data-lang="es">
+        «Someteos unos a otros en el temor de Cristo.»
+        <cite>— Efesios 5, 21</cite>
+      </blockquote>
+      <blockquote class="mat-scripture" data-lang="en" style="display:none">
+        "Submit to one another out of reverence for Christ."
+        <cite>— Ephesians 5:21</cite>
+      </blockquote>
+
+      <blockquote class="mat-scripture" data-lang="es">
+        «Hallé a quien ama mi alma, lo agarré y no lo solté.»
+        <cite>— Cantar de los Cantares 3, 4</cite>
+      </blockquote>
+      <blockquote class="mat-scripture" data-lang="en" style="display:none">
+        "I found him whom my soul loves. I held him, and would not let him go."
+        <cite>— Song of Solomon 3:4</cite>
+      </blockquote>
+
+      <blockquote class="mat-scripture" data-lang="es">
+        «¡Ponme como sello en tu corazón, como sello en tu brazo! Porque el amor es fuerte como la muerte. Las grandes aguas no pueden apagar el amor, ni los ríos anegarlo.»
+        <cite>— Cantar de los Cantares 8, 6–7</cite>
+      </blockquote>
+      <blockquote class="mat-scripture" data-lang="en" style="display:none">
+        "Place me like a seal over your heart, like a seal on your arm; for love is as strong as death. Many waters cannot quench love; rivers cannot sweep it away."
+        <cite>— Song of Solomon 8:6–7</cite>
+      </blockquote>
+
+      <div class="mat-divider" aria-hidden="true">✦ · ✦ · ✦</div>
+
+      <blockquote class="mat-scripture" data-lang="es">
+        «Cada uno de vosotros ame a su mujer como a sí mismo, y la mujer respete al marido.»
+        <cite>— Efesios 5, 33</cite>
+      </blockquote>
+      <blockquote class="mat-scripture" data-lang="en" style="display:none">
+        "Each one of you also must love his wife as he loves himself, and the wife must respect her husband."
+        <cite>— Ephesians 5:33</cite>
+      </blockquote>
+
+      <blockquote class="mat-scripture" data-lang="es">
+        «Vivid de manera ordenada y trabajad de tal forma que no necesitéis a nadie, y os portéis honradamente con los de fuera.»<br>
+        «Que el amor fraternal sea entre vosotros permanente.»
+        <cite>— 1 Tesalonicenses 4, 11–12 / Hebreos 13, 1</cite>
+      </blockquote>
+      <blockquote class="mat-scripture" data-lang="en" style="display:none">
+        "Make it your ambition to lead a quiet life, to mind your own business and to work with your hands."<br>
+        "Keep on loving one another as brothers and sisters."
+        <cite>— 1 Thessalonians 4:11–12 / Hebrews 13:1</cite>
+      </blockquote>
+
+      <blockquote class="mat-scripture" data-lang="es">
+        «El hombre es la imagen y gloria de Dios; y la mujer es la gloria del hombre. Pues el hombre no procede de la mujer, sino la mujer del hombre… Pero en el Señor, ni la mujer es sin el hombre, ni el hombre sin la mujer.»
+        <cite>— 1 Corintios 11, 7–11</cite>
+      </blockquote>
+      <blockquote class="mat-scripture" data-lang="en" style="display:none">
+        "Man is the image and glory of God; but woman is the glory of man. For man did not come from woman, but woman from man… Nevertheless, in the Lord woman is not independent of man, nor is man independent of woman."
+        <cite>— 1 Corinthians 11:7–11</cite>
+      </blockquote>
+    </section>
+
+    <!-- ── LAS 12 BENDICIONES ── -->
+    <section class="mat-section">
+      <h2 class="mat-section-title" data-lang="es">Las bendiciones del sacramento</h2>
+      <h2 class="mat-section-title" data-lang="en" style="display:none">The blessings of the sacrament</h2>
+
+      <div class="mat-body" data-lang="es">
+        <p>La Iglesia no ha catalogado el matrimonio como una obligación o un permiso. Lo ha puesto entre los siete sacramentos — los siete canales principales de la gracia de Dios. Estas son las bendiciones que el matrimonio cristiano derrama sobre los esposos, confirmadas por el Catecismo, la Escritura y la Tradición:</p>
+      </div>
+      <div class="mat-body" data-lang="en" style="display:none">
+        <p>The Church has not catalogued marriage as an obligation or a permission. She has placed it among the seven sacraments — the seven main channels of God's grace. These are the blessings that Christian marriage pours upon the spouses, confirmed by the Catechism, Scripture, and Tradition:</p>
+      </div>
+
+      <div class="mat-blessings-grid" data-lang="es">
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">✝</span>
+          <p class="mat-blessing-name">Gracia santificante permanente</p>
+          <p class="mat-blessing-desc">El sacramento imprime en el alma una gracia que dura toda la vida del matrimonio — no solo el día de la boda.</p>
+          <p class="mat-source">CIC n. 1638 / CIC can. 1134</p>
+        </div>
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">🕊</span>
+          <p class="mat-blessing-name">El Espíritu Santo como fuente de amor</p>
+          <p class="mat-blessing-desc">El Espíritu Santo es sellado en la alianza y se convierte en fuente permanente del amor conyugal, capaz de renovarlo cuantas veces haga falta.</p>
+          <p class="mat-source">CIC n. 1624</p>
+        </div>
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">💑</span>
+          <p class="mat-blessing-name">Mutua santificación</p>
+          <p class="mat-blessing-desc">Los esposos «se ayudan mutuamente a santificarse en la vida conyugal». El cónyuge es instrumento de la santidad del otro — cada día, en lo ordinario.</p>
+          <p class="mat-source">Lumen Gentium 11 / CIC n. 1641</p>
+        </div>
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">💪</span>
+          <p class="mat-blessing-name">Fuerza para levantarse y perdonar</p>
+          <p class="mat-blessing-desc">Cristo «les da la fuerza de seguirle tomando su cruz, de levantarse después de sus caídas, de perdonarse mutuamente, de llevar unos las cargas de los otros».</p>
+          <p class="mat-source">CIC n. 1642 / Ga 6, 2</p>
+        </div>
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">🏠</span>
+          <p class="mat-blessing-name">Iglesia doméstica</p>
+          <p class="mat-blessing-desc">La familia es llamada «Ecclesia domestica» — Iglesia en pequeño. El hogar cristiano es un santuario donde se celebra la fe y se transmite a los hijos.</p>
+          <p class="mat-source">Lumen Gentium 11 / CIC n. 1655–1656</p>
+        </div>
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">🌿</span>
+          <p class="mat-blessing-name">Vínculo sellado por Dios</p>
+          <p class="mat-blessing-desc">«El vínculo matrimonial es establecido por Dios mismo». No por la ley civil, no por la costumbre social — por Dios. Por eso tiene una solidez que nada puede quebrar desde afuera.</p>
+          <p class="mat-source">CIC n. 1640 / Mt 19, 6</p>
+        </div>
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">✨</span>
+          <p class="mat-blessing-name">Carisma propio en la Iglesia</p>
+          <p class="mat-blessing-desc">«En su modo y estado de vida, los cónyuges cristianos tienen su carisma propio en el Pueblo de Dios». No son ciudadanos de segunda — tienen un don específico del Espíritu.</p>
+          <p class="mat-source">Lumen Gentium 11 / CIC n. 1641</p>
+        </div>
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">🕯</span>
+          <p class="mat-blessing-name">Testimonio del amor fiel de Dios</p>
+          <p class="mat-blessing-desc">Por su fidelidad los esposos se convierten en «testigos del amor fiel de Dios» ante el mundo. Son, sin proponérselo, evangelizadores.</p>
+          <p class="mat-source">CIC n. 1648</p>
+        </div>
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">🍞</span>
+          <p class="mat-blessing-name">Anticipo de las bodas del Cordero</p>
+          <p class="mat-blessing-desc">«En las alegrías de su amor y de su vida familiar les da, ya aquí, un gusto anticipado del banquete de las bodas del Cordero.» El matrimonio apunta al Cielo.</p>
+          <p class="mat-source">CIC n. 1642 / Ap 19, 7–9</p>
+        </div>
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">🌱</span>
+          <p class="mat-blessing-name">Fecundidad sobrenatural</p>
+          <p class="mat-blessing-desc">La fecundidad del amor conyugal se extiende a «los frutos de la vida moral, espiritual y sobrenatural» — no solo los hijos biológicos. El amor casado genera vida en todas sus formas.</p>
+          <p class="mat-source">CIC n. 1652–1654</p>
+        </div>
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">🔒</span>
+          <p class="mat-blessing-name">Consagración para el estado</p>
+          <p class="mat-blessing-desc">Los esposos son «fortalecidos y quedan como consagrados por un sacramento peculiar para los deberes y la dignidad de su estado». Están consagrados — como los sacerdotes, pero en el mundo.</p>
+          <p class="mat-source">CIC can. 1134</p>
+        </div>
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">♾</span>
+          <p class="mat-blessing-name">Cristo camina con ellos</p>
+          <p class="mat-blessing-desc">«El Salvador de los hombres y Esposo de la Iglesia, mediante el sacramento del Matrimonio, sale al encuentro de los esposos cristianos. Permanece con ellos.»</p>
+          <p class="mat-source">Gaudium et Spes 48 / CIC n. 1642</p>
+        </div>
+      </div>
+
+      <div class="mat-blessings-grid" data-lang="en" style="display:none">
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">✝</span>
+          <p class="mat-blessing-name">Permanent sanctifying grace</p>
+          <p class="mat-blessing-desc">The sacrament imprints on the soul a grace that lasts the entire life of the marriage — not only on the wedding day.</p>
+          <p class="mat-source">CCC n. 1638 / CIC can. 1134</p>
+        </div>
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">🕊</span>
+          <p class="mat-blessing-name">The Holy Spirit as the source of love</p>
+          <p class="mat-blessing-desc">The Holy Spirit is sealed into the covenant and becomes a permanent source of conjugal love, capable of renewing it as many times as needed.</p>
+          <p class="mat-source">CCC n. 1624</p>
+        </div>
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">💑</span>
+          <p class="mat-blessing-name">Mutual sanctification</p>
+          <p class="mat-blessing-desc">Spouses "help each other attain holiness in their married life." The spouse is an instrument of the other's holiness — every day, in ordinary things.</p>
+          <p class="mat-source">Lumen Gentium 11 / CCC n. 1641</p>
+        </div>
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">💪</span>
+          <p class="mat-blessing-name">Strength to rise and forgive</p>
+          <p class="mat-blessing-desc">Christ "gives them the strength to take up their crosses, to rise after their falls, to forgive each other, to bear one another's burdens."</p>
+          <p class="mat-source">CCC n. 1642 / Gal 6:2</p>
+        </div>
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">🏠</span>
+          <p class="mat-blessing-name">Domestic Church</p>
+          <p class="mat-blessing-desc">The family is called "Ecclesia domestica" — a little Church. The Christian home is a sanctuary where faith is celebrated and handed on to children.</p>
+          <p class="mat-source">Lumen Gentium 11 / CCC n. 1655–1656</p>
+        </div>
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">🌿</span>
+          <p class="mat-blessing-name">A bond sealed by God himself</p>
+          <p class="mat-blessing-desc">"The matrimonial bond is established by God himself." Not by civil law, not by social custom — by God. That is why it has a solidity nothing can break from outside.</p>
+          <p class="mat-source">CCC n. 1640 / Mt 19:6</p>
+        </div>
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">✨</span>
+          <p class="mat-blessing-name">A proper charism in the Church</p>
+          <p class="mat-blessing-desc">"Christian spouses have their own special gift in the People of God." They are not second-class citizens — they have a specific gift of the Spirit.</p>
+          <p class="mat-source">Lumen Gentium 11 / CCC n. 1641</p>
+        </div>
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">🕯</span>
+          <p class="mat-blessing-name">Witnesses of God's faithful love</p>
+          <p class="mat-blessing-desc">Through their fidelity, spouses become "witnesses of God's faithful love" before the world. Without even intending to, they are evangelizers.</p>
+          <p class="mat-source">CCC n. 1648</p>
+        </div>
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">🍞</span>
+          <p class="mat-blessing-name">Foretaste of the Lamb's wedding</p>
+          <p class="mat-blessing-desc">"In the joys of their love and family life, God gives them here below a foretaste of the wedding feast of the Lamb." Marriage points to Heaven.</p>
+          <p class="mat-source">CCC n. 1642 / Rev 19:7–9</p>
+        </div>
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">🌱</span>
+          <p class="mat-blessing-name">Supernatural fruitfulness</p>
+          <p class="mat-blessing-desc">The fruitfulness of conjugal love extends to "the fruits of moral, spiritual and supernatural life." Married love generates life in all its forms.</p>
+          <p class="mat-source">CCC n. 1652–1654</p>
+        </div>
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">🔒</span>
+          <p class="mat-blessing-name">Consecrated for their state</p>
+          <p class="mat-blessing-desc">Spouses are "strengthened and, as it were, consecrated for the duties and the dignity of their state." They are consecrated — like priests, but in the world.</p>
+          <p class="mat-source">CIC can. 1134</p>
+        </div>
+        <div class="mat-blessing-card">
+          <span class="mat-blessing-icon">♾</span>
+          <p class="mat-blessing-name">Christ walks with them</p>
+          <p class="mat-blessing-desc">"The Savior of men and the Spouse of the Church, through the sacrament of matrimony, comes toward Christian spouses. He remains with them."</p>
+          <p class="mat-source">Gaudium et Spes 48 / CCC n. 1642</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── LA IGLESIA DOMÉSTICA ── -->
+    <section class="mat-section">
+      <h2 class="mat-section-title" data-lang="es">Tu hogar es una iglesia</h2>
+      <h2 class="mat-section-title" data-lang="en" style="display:none">Your home is a church</h2>
+
+      <div class="mat-truth">
+        <p class="mat-truth-label" data-lang="es">Concilio Vaticano II · Lumen Gentium 11</p>
+        <p class="mat-truth-label" data-lang="en" style="display:none">Second Vatican Council · Lumen Gentium 11</p>
+        <p class="mat-truth-text" data-lang="es">«La familia es llamada justamente "Iglesia doméstica". En ella los padres han de ser para sus hijos los primeros anunciadores de la fe con su palabra y con su ejemplo.»</p>
+        <p class="mat-truth-text" data-lang="en" style="display:none">"The family is rightly called 'the domestic church.' In it parents should be the first preachers of the faith to their children by word and example."</p>
+      </div>
+
+      <div class="mat-truth">
+        <p class="mat-truth-label" data-lang="es">Tertuliano, teólogo del siglo II</p>
+        <p class="mat-truth-label" data-lang="en" style="display:none">Tertullian, 2nd-century theologian</p>
+        <p class="mat-truth-text" data-lang="es">«¿De dónde voy a sacar la fuerza para describir de manera satisfactoria la dicha del matrimonio que celebra la Iglesia? ¡Qué matrimonio el de dos cristianos, unidos por una sola esperanza, un solo deseo, el mismo servicio! Los dos hijos de un mismo Padre — nada los separa, ni en el espíritu ni en la carne; al contrario, son verdaderamente dos en una sola carne.»</p>
+        <p class="mat-truth-text" data-lang="en" style="display:none">"How can I express the happiness of the marriage that the Church unites? Two Christians, united by a single hope, a single desire, the same service! Both children of one Father — nothing separates them, neither in spirit nor in flesh; on the contrary, they are truly two in one flesh."</p>
+        <p class="mat-truth-source">— Tertuliano, Ad uxorem 2,9 · cit. CIC n. 1642</p>
+      </div>
+    </section>
+
+    <!-- ── ORACIÓN DE LOS ESPOSOS ── -->
+    <section class="mat-section">
+      <h2 class="mat-section-title" data-lang="es">Oración de los esposos</h2>
+      <h2 class="mat-section-title" data-lang="en" style="display:none">Prayer of the spouses</h2>
+
+      <p class="mat-closing-prayer" data-lang="es">Señor Jesucristo,
+Tú que en las bodas de Caná realizaste Tu primer milagro a petición de Tu Madre,
+y con ello santificaste para siempre el amor de un hombre y una mujer —
+
+gracias por el regalo de este sacramento.
+Gracias porque no nos dejaste solos con nuestro amor humano,
+sino que lo elevaste, lo sellaste con Tu Espíritu,
+y lo convertiste en imagen de Tu propio amor por la Iglesia.
+
+Ayúdanos a recordar, en los días fáciles y en los días difíciles,
+que no somos solo dos personas que se quieren:
+somos un sacramento vivo.
+Canal de Tu gracia.
+Testigos de Tu amor fiel ante el mundo.
+
+Renueva en nosotros el fuego del Espíritu Santo
+que recibimos el día de nuestra alianza.
+Danos fuerza para levantarnos cuando caemos,
+para perdonar cuando duele,
+para elegir el uno al otro de nuevo,
+cada día,
+como Cristo eligió a su Iglesia hasta la muerte.
+
+Y en las alegrías de nuestro amor,
+haznos sentir ya aquí el anticipo de las bodas eternas
+a las que nos has invitado.
+<span class="mat-amen">Amén.</span></p>
+
+      <p class="mat-closing-prayer" data-lang="en" style="display:none">Lord Jesus Christ,
+You who at the wedding of Cana performed Your first miracle at the request of Your Mother,
+and by doing so blessed forever the love of a man and a woman —
+
+thank You for the gift of this sacrament.
+Thank You for not leaving us alone with our human love,
+but for raising it up, sealing it with Your Spirit,
+and making it an image of Your own love for the Church.
+
+Help us to remember, on easy days and on hard days,
+that we are not merely two people who love each other:
+we are a living sacrament.
+A channel of Your grace.
+Witnesses of Your faithful love before the world.
+
+Renew in us the fire of the Holy Spirit
+that we received on the day of our covenant.
+Give us strength to rise when we fall,
+to forgive when it hurts,
+to choose each other again,
+every day,
+as Christ chose His Church unto death.
+
+And in the joys of our love,
+let us feel here below a foretaste of the eternal wedding feast
+to which You have invited us.
+<span class="mat-amen">Amen.</span></p>
+    </section>
+
+    <div class="mat-footer-links">
+      <a href="/" class="mat-home-link" data-lang="es">← Volver al inicio</a>
+      <a href="/" class="mat-home-link" data-lang="en" style="display:none">← Back to home</a>
+    </div>
+
+  </main>
+
+  <script>
+  (function() {
+    'use strict';
+
+    const LANG_KEY = 'universalPrayerLang';
+    let lang = localStorage.getItem(LANG_KEY) || 'es';
+
+    function applyLang(l) {
+      lang = l;
+      localStorage.setItem(LANG_KEY, l);
+      document.documentElement.lang = l === 'en' ? 'en' : 'es';
+      document.getElementById('langLabel').textContent = l === 'en' ? 'ES' : 'EN';
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.dataset.lang === l ? '' : 'none';
+      });
+    }
+
+    document.getElementById('langToggle').addEventListener('click', () => {
+      applyLang(lang === 'es' ? 'en' : 'es');
+      renderMenu();
+    });
+
+    const btn      = document.getElementById('hamburgerBtn');
+    const sideNav  = document.getElementById('sideNav');
+    const overlay  = document.getElementById('sideNavOverlay');
+    const closeBtn = document.getElementById('sideNavClose');
+    const list     = document.getElementById('sideNavList');
+
+    function renderMenu() {
+      const homeLabel         = lang === 'es' ? '← Inicio'               : '← Home';
+      const intercesorsLabel  = lang === 'es' ? '✨ Intercesores'         : '✨ Intercessors';
+      const adoracionLabel    = lang === 'es' ? '✝ Adoración'             : '✝ Adoration';
+      const espirituLabel     = lang === 'es' ? '🕊 Espíritu Santo'        : '🕊 Holy Spirit';
+      const matrimonioLabel   = lang === 'es' ? '💍 Matrimonio'            : '💍 Marriage';
+      list.innerHTML = `
+        <li><a class="side-nav-link side-nav-home"        href="/">${homeLabel}</a></li>
+        <li><a class="side-nav-link side-nav-saints"      href="/#intercessorsGrid">${intercesorsLabel}</a></li>
+        <li><a class="side-nav-link side-nav-adoracion"   href="/adoracion/">${adoracionLabel}</a></li>
+        <li><a class="side-nav-link side-nav-espiritu"    href="/espiritu/">${espirituLabel}</a></li>
+        <li><a class="side-nav-link side-nav-matrimonio"  href="/matrimonio/">${matrimonioLabel}</a></li>`;
+    }
+    renderMenu();
+
+    const openNav  = () => { sideNav.classList.add('open'); overlay.classList.add('open'); };
+    const closeNav = () => { sideNav.classList.remove('open'); overlay.classList.remove('open'); };
+    btn.addEventListener('click', openNav);
+    closeBtn.addEventListener('click', closeNav);
+    overlay.addEventListener('click', closeNav);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeNav(); });
+
+    applyLang(lang);
+  })();
+  </script>
+</body>
+</html>
