@@ -1786,19 +1786,21 @@ function initMenu() {
     const homeLabel       = currentLang === 'es' ? '← Inicio'              : '← Home';
     const familyLabel     = currentLang === 'es' ? '🙏 Oraciones en Familia' : '🙏 Family Prayers';
     const intercesorsLabel = currentLang === 'es' ? '✨ Intercesores'        : '✨ Intercessors';
+    const oracionesLabel  = currentLang === 'es' ? '📜 Oraciones Básicas'    : '📜 Basic Prayers';
     const adoracionLabel  = currentLang === 'es' ? '✝ Adoración'            : '✝ Adoration';
     const espirituLabel   = currentLang === 'es' ? '🕊 Espíritu Santo'       : '🕊 Holy Spirit';
     const matrimonioLabel = currentLang === 'es' ? '💍 Matrimonio'            : '💍 Marriage';
     const difuntosLabel   = currentLang === 'es' ? '🕯 Difuntos'              : '🕯 Departed';
 
     list.innerHTML = `
-      <li><a class="side-nav-link side-nav-home"   href="${homeHref}">${homeLabel}</a></li>
-      <li><a class="side-nav-link side-nav-family" href="${familyHref}">${familyLabel}</a></li>
-      <li><a class="side-nav-link side-nav-saints" href="${intercesorsHref}">${intercesorsLabel}</a></li>
+      <li><a class="side-nav-link side-nav-home"      href="${homeHref}">${homeLabel}</a></li>
+      <li><a class="side-nav-link side-nav-family"    href="${familyHref}">${familyLabel}</a></li>
+      <li><a class="side-nav-link side-nav-saints"    href="${intercesorsHref}">${intercesorsLabel}</a></li>
+      <li><a class="side-nav-link side-nav-oraciones" href="/oraciones/">${oracionesLabel}</a></li>
       <li><a class="side-nav-link side-nav-adoracion" href="/adoracion/">${adoracionLabel}</a></li>
-      <li><a class="side-nav-link side-nav-espiritu" href="/espiritu/">${espirituLabel}</a></li>
+      <li><a class="side-nav-link side-nav-espiritu"  href="/espiritu/">${espirituLabel}</a></li>
       <li><a class="side-nav-link side-nav-matrimonio" href="/matrimonio/">${matrimonioLabel}</a></li>
-      <li><a class="side-nav-link side-nav-difuntos" href="/difuntos/">${difuntosLabel}</a></li>`;
+      <li><a class="side-nav-link side-nav-difuntos"  href="/difuntos/">${difuntosLabel}</a></li>`;
   }
   renderMenuItems();
 

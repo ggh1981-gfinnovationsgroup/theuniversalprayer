@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oraciones Básicas | The Universal Prayer</title>
+  <meta name="description" content="Las oraciones fundamentales de la fe católica: Señal de la Cruz, Padre Nuestro, Ave María, Gloria, Credo, Salve Regina y Ángel de la Guarda." />
+  <meta name="theme-color" content="#c9a84c" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23c9a84c'>✝</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    /* ── Hero ── */
+    .or-hero {
+      text-align: center;
+      padding: 5rem 1.5rem 3rem;
+      background: radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.13) 0%, transparent 68%);
+    }
+    .or-cross-icon {
+      font-size: 3.5rem;
+      display: block;
+      margin: 0 auto 1.2rem;
+      filter: drop-shadow(0 0 18px rgba(201,168,76,0.55));
+      animation: orPulse 4s ease-in-out infinite;
+    }
+    @keyframes orPulse {
+      0%,100% { filter: drop-shadow(0 0 12px rgba(201,168,76,0.40)); }
+      50%      { filter: drop-shadow(0 0 26px rgba(201,168,76,0.80)); }
+    }
+    .or-badge {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(201,168,76,0.30);
+      padding: 0.3em 0.9em;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+    }
+    .or-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      color: #fff;
+      margin: 0 0 0.75rem;
+      line-height: 1.15;
+    }
+    .or-subtitle {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.58);
+      max-width: 540px;
+      margin: 0 auto;
+      line-height: 1.75;
+    }
+
+    /* ── Content ── */
+    .or-content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 1.25rem 5rem;
+    }
+
+    /* ── Prayer card ── */
+    .or-prayer {
+      margin-bottom: 2.8rem;
+      border: 1px solid rgba(201,168,76,0.16);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--bg-card);
+    }
+    .or-prayer-header {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      padding: 1.1rem 1.4rem;
+      border-bottom: 1px solid rgba(201,168,76,0.12);
+      cursor: pointer;
+      user-select: none;
+    }
+    .or-prayer-header:hover { background: rgba(201,168,76,0.04); }
+    .or-prayer-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+      width: 2.2rem;
+      text-align: center;
+    }
+    .or-prayer-name {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      color: var(--gold-light);
+      margin: 0;
+      flex: 1;
+    }
+    .or-prayer-toggle {
+      font-size: 1.1rem;
+      color: var(--gold-dim);
+      transition: transform 0.25s ease;
+      flex-shrink: 0;
+    }
+    .or-prayer.open .or-prayer-toggle { transform: rotate(180deg); }
+
+    .or-prayer-body {
+      display: none;
+      padding: 1.4rem 1.4rem 1.6rem;
+    }
+    .or-prayer.open .or-prayer-body { display: block; }
+
+    .or-prayer-text {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.90);
+      line-height: 2.1;
+      white-space: pre-line;
+      margin: 0 0 0.5rem;
+    }
+    .or-prayer-note {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      color: var(--white-dim);
+      font-style: italic;
+      margin-top: 0.8rem;
+      border-top: 1px solid rgba(201,168,76,0.10);
+      padding-top: 0.7rem;
+      line-height: 1.6;
+    }
+
+    /* ── Section divider ── */
+    .or-divider {
+      text-align: center;
+      color: rgba(201,168,76,0.30);
+      font-size: 1.1rem;
+      letter-spacing: 0.5em;
+      margin: 2.5rem 0 2.2rem;
+    }
+
+    /* ── Footer link ── */
+    .or-footer-links {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    .or-home-link {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--gold);
+      text-decoration: none;
+      opacity: 0.75;
+      transition: opacity 0.2s;
+    }
+    .or-home-link:hover { opacity: 1; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link">
+        <span class="cross">✝</span>
+        <span class="logo-text">The Universal Prayer</span>
+      </a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span id="langLabel">EN</span>
+      </button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- SIDE NAV -->
+  <div class="side-nav-overlay" id="sideNavOverlay"></div>
+  <nav class="side-nav" id="sideNav" aria-label="Site menu">
+    <div class="side-nav-header">
+      <span class="side-nav-title" data-lang="es">Menú</span>
+      <span class="side-nav-title" data-lang="en" style="display:none">Menu</span>
+      <button class="side-nav-close" id="sideNavClose" aria-label="Close menu">✕</button>
+    </div>
+    <ul class="side-nav-list" id="sideNavList"></ul>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section class="or-hero">
+    <a href="/" class="ador-back-link" data-lang="es">← Inicio</a>
+    <a href="/" class="ador-back-link" data-lang="en" style="display:none">← Home</a>
+
+    <span class="or-cross-icon">✝</span>
+
+    <div class="or-badge" data-lang="es">Oraciones Fundamentales de la Fe</div>
+    <div class="or-badge" data-lang="en" style="display:none">Foundational Prayers of the Faith</div>
+
+    <h1 class="or-title" data-lang="es">Oraciones Básicas</h1>
+    <h1 class="or-title" data-lang="en" style="display:none">Basic Prayers</h1>
+
+    <p class="or-subtitle" data-lang="es">Las oraciones que nos unen como Iglesia desde el principio — para rezarlas solos, en pareja, en familia o en comunidad.</p>
+    <p class="or-subtitle" data-lang="en" style="display:none">The prayers that have united us as Church from the beginning — to pray alone, as a couple, as a family, or in community.</p>
+  </section>
+
+  <!-- ══ CONTENT ══ -->
+  <main class="or-content">
+
+    <!-- SEÑAL DE LA CRUZ -->
+    <div class="or-prayer open" id="or-senial">
+      <div class="or-prayer-header" onclick="togglePrayer('or-senial')">
+        <span class="or-prayer-icon">✝</span>
+        <h2 class="or-prayer-name" data-lang="es">Señal de la Cruz</h2>
+        <h2 class="or-prayer-name" data-lang="en" style="display:none">Sign of the Cross</h2>
+        <span class="or-prayer-toggle">▾</span>
+      </div>
+      <div class="or-prayer-body">
+        <p class="or-prayer-text" data-lang="es">En el nombre del Padre,
+y del Hijo,
+y del Espíritu Santo.
+<strong>Amén.</strong></p>
+        <p class="or-prayer-text" data-lang="en" style="display:none">In the name of the Father,
+and of the Son,
+and of the Holy Spirit.
+<strong>Amen.</strong></p>
+        <p class="or-prayer-note" data-lang="es">La primera oración de todo cristiano. Al hacer la señal de la cruz confesamos los dos misterios centrales de la fe: la Trinidad y la Redención.</p>
+        <p class="or-prayer-note" data-lang="en" style="display:none">The first prayer of every Christian. In making the sign of the cross we profess the two central mysteries of the faith: the Trinity and the Redemption.</p>
+      </div>
+    </div>
+
+    <!-- PADRE NUESTRO -->
+    <div class="or-prayer open" id="or-pn">
+      <div class="or-prayer-header" onclick="togglePrayer('or-pn')">
+        <span class="or-prayer-icon">🙏</span>
+        <h2 class="or-prayer-name" data-lang="es">Padre Nuestro</h2>
+        <h2 class="or-prayer-name" data-lang="en" style="display:none">Our Father</h2>
+        <span class="or-prayer-toggle">▾</span>
+      </div>
+      <div class="or-prayer-body">
+        <p class="or-prayer-text" data-lang="es">Padre nuestro, que estás en el cielo,
+santificado sea tu nombre;
+venga a nosotros tu reino;
+hágase tu voluntad
+en la tierra como en el cielo.
+Danos hoy nuestro pan de cada día;
+perdona nuestras ofensas,
+como también nosotros perdonamos
+a los que nos ofenden;
+no nos dejes caer en tentación,
+y líbranos del mal.
+<strong>Amén.</strong></p>
+        <p class="or-prayer-text" data-lang="en" style="display:none">Our Father, who art in heaven,
+hallowed be Thy name;
+Thy kingdom come;
+Thy will be done
+on earth as it is in heaven.
+Give us this day our daily bread;
+and forgive us our trespasses,
+as we forgive those
+who trespass against us;
+and lead us not into temptation,
+but deliver us from evil.
+<strong>Amen.</strong></p>
+        <p class="or-prayer-note" data-lang="es">La oración que Jesús mismo nos enseñó (Mt 6,9–13). Es la «Oración del Señor» — la más perfecta de todas las oraciones.</p>
+        <p class="or-prayer-note" data-lang="en" style="display:none">The prayer Jesus himself taught us (Mt 6:9–13). It is the "Lord's Prayer" — the most perfect of all prayers.</p>
+      </div>
+    </div>
+
+    <!-- AVE MARÍA -->
+    <div class="or-prayer" id="or-am">
+      <div class="or-prayer-header" onclick="togglePrayer('or-am')">
+        <span class="or-prayer-icon">🌹</span>
+        <h2 class="or-prayer-name" data-lang="es">Ave María</h2>
+        <h2 class="or-prayer-name" data-lang="en" style="display:none">Hail Mary</h2>
+        <span class="or-prayer-toggle">▾</span>
+      </div>
+      <div class="or-prayer-body">
+        <p class="or-prayer-text" data-lang="es">Dios te salve, María,
+llena eres de gracia,
+el Señor es contigo;
+bendita tú eres entre todas las mujeres,
+y bendito es el fruto de tu vientre, Jesús.
+Santa María, Madre de Dios,
+ruega por nosotros, pecadores,
+ahora y en la hora de nuestra muerte.
+<strong>Amén.</strong></p>
+        <p class="or-prayer-text" data-lang="en" style="display:none">Hail Mary, full of grace,
+the Lord is with thee;
+blessed art thou among women,
+and blessed is the fruit
+of thy womb, Jesus.
+Holy Mary, Mother of God,
+pray for us sinners,
+now and at the hour
+of our death.
+<strong>Amen.</strong></p>
+        <p class="or-prayer-note" data-lang="es">Sus primeras palabras las pronunció el Arcángel Gabriel (Lc 1,28). La segunda parte fue añadida por la Iglesia en el siglo XVI. Es el corazón del Rosario.</p>
+        <p class="or-prayer-note" data-lang="en" style="display:none">Its opening words were spoken by the Archangel Gabriel (Lk 1:28). The second part was added by the Church in the 16th century. It is the heart of the Rosary.</p>
+      </div>
+    </div>
+
+    <!-- GLORIA -->
+    <div class="or-prayer" id="or-gloria">
+      <div class="or-prayer-header" onclick="togglePrayer('or-gloria')">
+        <span class="or-prayer-icon">☀</span>
+        <h2 class="or-prayer-name" data-lang="es">Gloria</h2>
+        <h2 class="or-prayer-name" data-lang="en" style="display:none">Glory Be</h2>
+        <span class="or-prayer-toggle">▾</span>
+      </div>
+      <div class="or-prayer-body">
+        <p class="or-prayer-text" data-lang="es">Gloria al Padre,
+y al Hijo,
+y al Espíritu Santo.
+Como era en el principio,
+ahora y siempre,
+por los siglos de los siglos.
+<strong>Amén.</strong></p>
+        <p class="or-prayer-text" data-lang="en" style="display:none">Glory be to the Father,
+and to the Son,
+and to the Holy Spirit.
+As it was in the beginning,
+is now, and ever shall be,
+world without end.
+<strong>Amen.</strong></p>
+        <p class="or-prayer-note" data-lang="es">La doxología menor — oración de alabanza pura a la Santísima Trinidad. Se reza al final de cada misterio del Rosario.</p>
+        <p class="or-prayer-note" data-lang="en" style="display:none">The lesser doxology — a prayer of pure praise to the Holy Trinity. Prayed at the end of each mystery of the Rosary.</p>
+      </div>
+    </div>
+
+    <div class="or-divider" aria-hidden="true">✦ · ✦ · ✦</div>
+
+    <!-- CREDO -->
+    <div class="or-prayer" id="or-credo">
+      <div class="or-prayer-header" onclick="togglePrayer('or-credo')">
+        <span class="or-prayer-icon">📜</span>
+        <h2 class="or-prayer-name" data-lang="es">El Credo</h2>
+        <h2 class="or-prayer-name" data-lang="en" style="display:none">The Apostles' Creed</h2>
+        <span class="or-prayer-toggle">▾</span>
+      </div>
+      <div class="or-prayer-body">
+        <p class="or-prayer-text" data-lang="es">Creo en Dios, Padre Todopoderoso,
+Creador del cielo y de la tierra.
+Creo en Jesucristo, su único Hijo, Nuestro Señor,
+que fue concebido por obra y gracia del Espíritu Santo,
+nació de Santa María Virgen,
+padeció bajo el poder de Poncio Pilato,
+fue crucificado, muerto y sepultado,
+descendió a los infiernos,
+al tercer día resucitó de entre los muertos,
+subió a los cielos
+y está sentado a la derecha de Dios, Padre Todopoderoso.
+Desde allí ha de venir a juzgar a vivos y muertos.
+Creo en el Espíritu Santo,
+la santa Iglesia católica,
+la comunión de los santos,
+el perdón de los pecados,
+la resurrección de la carne
+y la vida eterna.
+<strong>Amén.</strong></p>
+        <p class="or-prayer-text" data-lang="en" style="display:none">I believe in God,
+the Father Almighty,
+Creator of heaven and earth,
+and in Jesus Christ, his only Son, our Lord,
+who was conceived by the Holy Spirit,
+born of the Virgin Mary,
+suffered under Pontius Pilate,
+was crucified, died and was buried;
+he descended into hell;
+on the third day he rose again from the dead;
+he ascended into heaven,
+and is seated at the right hand of God the Father Almighty;
+from there he will come to judge the living and the dead.
+I believe in the Holy Spirit,
+the holy catholic Church,
+the communion of saints,
+the forgiveness of sins,
+the resurrection of the body,
+and life everlasting.
+<strong>Amen.</strong></p>
+        <p class="or-prayer-note" data-lang="es">El Símbolo de los Apóstoles — la profesión de fe que resume toda la doctrina cristiana. Se reza al inicio del Rosario.</p>
+        <p class="or-prayer-note" data-lang="en" style="display:none">The Apostles' Creed — the profession of faith that summarizes all of Christian doctrine. Prayed at the beginning of the Rosary.</p>
+      </div>
+    </div>
+
+    <!-- SALVE REGINA -->
+    <div class="or-prayer" id="or-salve">
+      <div class="or-prayer-header" onclick="togglePrayer('or-salve')">
+        <span class="or-prayer-icon">👑</span>
+        <h2 class="or-prayer-name" data-lang="es">Salve Regina</h2>
+        <h2 class="or-prayer-name" data-lang="en" style="display:none">Hail Holy Queen</h2>
+        <span class="or-prayer-toggle">▾</span>
+      </div>
+      <div class="or-prayer-body">
+        <p class="or-prayer-text" data-lang="es">Dios te salve, Reina y Madre de misericordia,
+vida, dulzura y esperanza nuestra.
+Dios te salve.
+A ti llamamos los desterrados hijos de Eva,
+a ti suspiramos, gimiendo y llorando
+en este valle de lágrimas.
+Ea, pues, Señora, abogada nuestra,
+vuelve a nosotros esos tus ojos misericordiosos.
+Y después de este destierro,
+muéstranos a Jesús, fruto bendito de tu vientre.
+¡Oh clementísima, oh piadosa,
+oh dulce Virgen María!
+<strong>Amén.</strong></p>
+        <p class="or-prayer-text" data-lang="en" style="display:none">Hail, holy Queen, Mother of mercy,
+our life, our sweetness, and our hope.
+To thee do we cry,
+poor banished children of Eve.
+To thee do we send up our sighs,
+mourning and weeping in this valley of tears.
+Turn, then, most gracious advocate,
+thine eyes of mercy toward us.
+And after this our exile,
+show unto us the blessed fruit of thy womb, Jesus.
+O clement, O loving,
+O sweet Virgin Mary.
+<strong>Amen.</strong></p>
+        <p class="or-prayer-note" data-lang="es">Atribuida a San Bernardo de Claraval (siglo XII). Se reza al final del Rosario y en la Liturgia de las Horas.</p>
+        <p class="or-prayer-note" data-lang="en" style="display:none">Attributed to Saint Bernard of Clairvaux (12th century). Prayed at the end of the Rosary and in the Liturgy of the Hours.</p>
+      </div>
+    </div>
+
+    <div class="or-divider" aria-hidden="true">✦ · ✦ · ✦</div>
+
+    <!-- ÁNGEL DE LA GUARDA -->
+    <div class="or-prayer" id="or-angel">
+      <div class="or-prayer-header" onclick="togglePrayer('or-angel')">
+        <span class="or-prayer-icon">🛡️</span>
+        <h2 class="or-prayer-name" data-lang="es">Ángel de la Guarda</h2>
+        <h2 class="or-prayer-name" data-lang="en" style="display:none">Guardian Angel Prayer</h2>
+        <span class="or-prayer-toggle">▾</span>
+      </div>
+      <div class="or-prayer-body">
+        <p class="or-prayer-text" data-lang="es">Ángel de mi guarda,
+dulce compañía,
+no me desampares
+ni de noche ni de día.
+No me dejes solo
+que me perdería.
+<strong>Amén.</strong></p>
+        <p class="or-prayer-text" data-lang="en" style="display:none">Angel of God,
+my guardian dear,
+to whom God's love
+commits me here:
+ever this day
+be at my side,
+to light, to guard,
+to rule, to guide.
+<strong>Amen.</strong></p>
+        <p class="or-prayer-note" data-lang="es">La oración favorita de los niños — y de los adultos que no olvidan que tienen un ángel custodio. La Iglesia celebra a los Ángeles Custodios el 2 de octubre.</p>
+        <p class="or-prayer-note" data-lang="en" style="display:none">The favorite prayer of children — and of adults who don't forget they have a guardian angel. The Church celebrates the Guardian Angels on October 2.</p>
+      </div>
+    </div>
+
+    <!-- ACTO DE CONTRICIÓN -->
+    <div class="or-prayer" id="or-contricion">
+      <div class="or-prayer-header" onclick="togglePrayer('or-contricion')">
+        <span class="or-prayer-icon">💔</span>
+        <h2 class="or-prayer-name" data-lang="es">Acto de Contrición</h2>
+        <h2 class="or-prayer-name" data-lang="en" style="display:none">Act of Contrition</h2>
+        <span class="or-prayer-toggle">▾</span>
+      </div>
+      <div class="or-prayer-body">
+        <p class="or-prayer-text" data-lang="es">Señor mío Jesucristo,
+Dios y Hombre verdadero,
+me pesa de todo corazón haberte ofendido,
+porque eres infinitamente bueno
+y el pecado te desagrada.
+Propongo firmemente con tu gracia
+confesarme, cumplir la penitencia
+y apartarme de las ocasiones de pecar,
+y así espero, por tu misericordia,
+el perdón de mis pecados
+y alcanzar la vida eterna.
+<strong>Amén.</strong></p>
+        <p class="or-prayer-text" data-lang="en" style="display:none">O my God, I am heartily sorry
+for having offended Thee,
+and I detest all my sins,
+because of thy just punishments,
+but most of all because they offend Thee,
+my God, who art all good
+and deserving of all my love.
+I firmly resolve, with the help of Thy grace,
+to sin no more and to avoid
+the near occasions of sin.
+<strong>Amen.</strong></p>
+        <p class="or-prayer-note" data-lang="es">Oración de arrepentimiento que se reza antes de la Confesión o en cualquier momento de conversión personal.</p>
+        <p class="or-prayer-note" data-lang="en" style="display:none">A prayer of repentance prayed before Confession or at any moment of personal conversion.</p>
+      </div>
+    </div>
+
+    <!-- ACTO DE FE, ESPERANZA Y CARIDAD -->
+    <div class="or-prayer" id="or-fec">
+      <div class="or-prayer-header" onclick="togglePrayer('or-fec')">
+        <span class="or-prayer-icon">✨</span>
+        <h2 class="or-prayer-name" data-lang="es">Actos de Fe, Esperanza y Caridad</h2>
+        <h2 class="or-prayer-name" data-lang="en" style="display:none">Acts of Faith, Hope and Charity</h2>
+        <span class="or-prayer-toggle">▾</span>
+      </div>
+      <div class="or-prayer-body">
+        <p class="or-prayer-text" data-lang="es"><strong>Acto de Fe</strong>
+Señor mío Jesucristo,
+creo que eres el Hijo de Dios y Redentor del mundo,
+que naciste de la Virgen María,
+que sufriste por nosotros y resucitaste de entre los muertos.
+Creo todo lo que enseña la santa Iglesia Católica.
+Amén.
+
+<strong>Acto de Esperanza</strong>
+Señor mío Jesucristo,
+espero por tu misericordia
+el perdón de mis pecados, la gracia de servirte fielmente
+y la vida eterna.
+Amén.
+
+<strong>Acto de Caridad</strong>
+Señor mío Jesucristo,
+te amo sobre todas las cosas
+y a mi prójimo como a mí mismo.
+Amén.</p>
+        <p class="or-prayer-text" data-lang="en" style="display:none"><strong>Act of Faith</strong>
+O my God, I firmly believe
+that Thou art one God in three Divine Persons,
+Father, Son and Holy Spirit.
+I believe that Thy Divine Son became man
+and died for our sins, and that He will come
+to judge the living and the dead.
+I believe these and all the truths
+which the Holy Catholic Church teaches.
+Amen.
+
+<strong>Act of Hope</strong>
+O my God, relying on Thy almighty power
+and infinite mercy and promises,
+I hope to obtain pardon of my sins,
+the help of Thy grace, and life everlasting.
+Amen.
+
+<strong>Act of Charity</strong>
+O my God, I love Thee above all things
+with my whole heart and soul,
+because Thou art all-good and worthy of all love.
+I love my neighbor as myself for the love of Thee.
+Amen.</p>
+        <p class="or-prayer-note" data-lang="es">Las tres virtudes teologales en forma de oración. Excelentes para la meditación matutina o al inicio del Rosario.</p>
+        <p class="or-prayer-note" data-lang="en" style="display:none">The three theological virtues in prayer form. Excellent for morning meditation or at the start of the Rosary.</p>
+      </div>
+    </div>
+
+    <div class="or-footer-links">
+      <a href="/" class="or-home-link" data-lang="es">← Volver al inicio</a>
+      <a href="/" class="or-home-link" data-lang="en" style="display:none">← Back to home</a>
+    </div>
+  </main>
+
+  <script>
+  (function() {
+    'use strict';
+    const LANG_KEY = 'universalPrayerLang';
+    let lang = localStorage.getItem(LANG_KEY) || 'es';
+
+    function applyLang(l) {
+      lang = l;
+      localStorage.setItem(LANG_KEY, l);
+      document.documentElement.lang = l === 'en' ? 'en' : 'es';
+      document.getElementById('langLabel').textContent = l === 'en' ? 'ES' : 'EN';
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.dataset.lang === l ? '' : 'none';
+      });
+    }
+
+    document.getElementById('langToggle').addEventListener('click', () => {
+      applyLang(lang === 'es' ? 'en' : 'es');
+      renderMenu();
+    });
+
+    // Hamburger menu
+    const btn      = document.getElementById('hamburgerBtn');
+    const sideNav  = document.getElementById('sideNav');
+    const overlay  = document.getElementById('sideNavOverlay');
+    const closeBtn = document.getElementById('sideNavClose');
+    const list     = document.getElementById('sideNavList');
+
+    function renderMenu() {
+      const homeLabel       = lang === 'es' ? '← Inicio'          : '← Home';
+      const intercesLabel   = lang === 'es' ? '✨ Intercesores'    : '✨ Intercessors';
+      const oracionesLabel  = lang === 'es' ? '🙏 Oraciones'       : '🙏 Prayers';
+      const adoracionLabel  = lang === 'es' ? '✝ Adoración'        : '✝ Adoration';
+      const espirituLabel   = lang === 'es' ? '🕊 Espíritu Santo'   : '🕊 Holy Spirit';
+      const matrimonioLabel = lang === 'es' ? '💍 Matrimonio'       : '💍 Marriage';
+      const difuntosLabel   = lang === 'es' ? '🕯 Difuntos'         : '🕯 Departed';
+      list.innerHTML = `
+        <li><a class="side-nav-link side-nav-home"       href="/">${homeLabel}</a></li>
+        <li><a class="side-nav-link side-nav-saints"     href="/#intercessorsGrid">${intercesLabel}</a></li>
+        <li><a class="side-nav-link side-nav-oraciones"  href="/oraciones/">${oracionesLabel}</a></li>
+        <li><a class="side-nav-link side-nav-adoracion"  href="/adoracion/">${adoracionLabel}</a></li>
+        <li><a class="side-nav-link side-nav-espiritu"   href="/espiritu/">${espirituLabel}</a></li>
+        <li><a class="side-nav-link side-nav-matrimonio" href="/matrimonio/">${matrimonioLabel}</a></li>
+        <li><a class="side-nav-link side-nav-difuntos"   href="/difuntos/">${difuntosLabel}</a></li>`;
+    }
+    renderMenu();
+
+    const openNav  = () => { sideNav.classList.add('open'); overlay.classList.add('open'); };
+    const closeNav = () => { sideNav.classList.remove('open'); overlay.classList.remove('open'); };
+    btn.addEventListener('click', openNav);
+    closeBtn.addEventListener('click', closeNav);
+    overlay.addEventListener('click', closeNav);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeNav(); });
+
+    applyLang(lang);
+  })();
+
+  // Toggle prayer open/closed
+  function togglePrayer(id) {
+    const el = document.getElementById(id);
+    if (el) el.classList.toggle('open');
+  }
+  </script>
+</body>
+</html>
