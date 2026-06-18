@@ -828,13 +828,14 @@ to which You have invited us.
       const adoracionLabel    = lang === 'es' ? '✝ Adoración'             : '✝ Adoration';
       const espirituLabel     = lang === 'es' ? '🕊 Espíritu Santo'        : '🕊 Holy Spirit';
       const matrimonioLabel   = lang === 'es' ? '💍 Matrimonio'            : '💍 Marriage';
+      const difuntosLabel     = lang === 'es' ? '🕯 Difuntos'              : '🕯 Departed';
       list.innerHTML = `
         <li><a class="side-nav-link side-nav-home"        href="/">${homeLabel}</a></li>
         <li><a class="side-nav-link side-nav-saints"      href="/#intercessorsGrid">${intercesorsLabel}</a></li>
         <li><a class="side-nav-link side-nav-adoracion"   href="/adoracion/">${adoracionLabel}</a></li>
         <li><a class="side-nav-link side-nav-espiritu"    href="/espiritu/">${espirituLabel}</a></li>
         <li><a class="side-nav-link side-nav-matrimonio"  href="/matrimonio/">${matrimonioLabel}</a></li>
-        <li><a class="side-nav-link side-nav-difuntos"     href="/difuntos/">${h?'🕯 Difuntos':'🕯 Departed'}</a></li>`;
+        <li><a class="side-nav-link side-nav-difuntos"    href="/difuntos/">${difuntosLabel}</a></li>`;
     }
     renderMenu();
 
