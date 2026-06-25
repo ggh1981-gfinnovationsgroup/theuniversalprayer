@@ -807,6 +807,19 @@ function renderIntercessorContent(data, meta) {
     imgEl.alt = data.name[lang];
   }
 
+  // Optional featured notice shown above tabs
+  const noticeWrap = document.getElementById('intercessorNotice');
+  const noticeTitleEl = document.getElementById('intercessorNoticeTitle');
+  const noticeTextEl = document.getElementById('intercessorNoticeText');
+  const notice = data.special_notice && data.special_notice[lang];
+  if (noticeWrap && noticeTitleEl && noticeTextEl && notice) {
+    noticeTitleEl.textContent = notice.title || '';
+    noticeTextEl.innerHTML = paragraphify(notice.text || '');
+    noticeWrap.style.display = '';
+  } else if (noticeWrap) {
+    noticeWrap.style.display = 'none';
+  }
+
   // Prayer
   const prayerEl = document.getElementById('prayerText');
   if (prayerEl) prayerEl.innerHTML = paragraphify(data.prayer[lang]);

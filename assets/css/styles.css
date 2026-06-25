@@ -557,6 +557,22 @@ body {
 }
 .feast-label { color: var(--gold-dim); margin-right: 0.3rem; }
 
+/* ── INTERCESSOR NOTICE (above tabs) ───────────────── */
+.intercessor-notice {
+  max-width: 780px;
+  margin: 1.25rem auto 0;
+  padding: 0 1.25rem;
+}
+.intercessor-notice-card {
+  background: linear-gradient(180deg, rgba(201,168,76,0.08) 0%, rgba(22,27,46,1) 100%);
+}
+.intercessor-notice-card h3 {
+  margin-bottom: 0.9rem;
+}
+.intercessor-notice-card p {
+  margin-bottom: 0.85rem;
+}
+
 /* ── TABS NAVIGATION ──────────────────────────────── */
 .tabs-nav {
   display: flex;
