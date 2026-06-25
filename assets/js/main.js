@@ -811,12 +811,17 @@ function renderIntercessorContent(data, meta) {
   const noticeWrap = document.getElementById('intercessorNotice');
   const noticeTitleEl = document.getElementById('intercessorNoticeTitle');
   const noticeTextEl = document.getElementById('intercessorNoticeText');
-  const notice = data.special_notice && data.special_notice[lang];
+  const noticeMeta = data.special_notice || {};
+  const notice = noticeMeta[lang];
+  if (noticeWrap) {
+    noticeWrap.classList.toggle('is-celebration', !!noticeMeta.celebration);
+  }
   if (noticeWrap && noticeTitleEl && noticeTextEl && notice) {
     noticeTitleEl.textContent = notice.title || '';
     noticeTextEl.innerHTML = paragraphify(notice.text || '');
     noticeWrap.style.display = '';
   } else if (noticeWrap) {
+    noticeWrap.classList.remove('is-celebration');
     noticeWrap.style.display = 'none';
   }
 
