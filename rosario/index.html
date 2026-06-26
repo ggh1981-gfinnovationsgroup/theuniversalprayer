@@ -204,6 +204,7 @@
       width: 100%;
       height: auto;
       display: block;
+      max-height: 420px;
     }
 
     .rosario-halo {
@@ -473,6 +474,20 @@
       background: rgba(201,168,76,0.12);
     }
 
+    @media (max-width: 900px) {
+      .rosario-visual {
+        display: none;
+      }
+
+      .beads-strip {
+        display: none;
+      }
+
+      .rosario-mobile-current {
+        display: block;
+      }
+    }
+
     @media (max-width: 700px) {
       .rosario-wrap {
         padding: 1rem 0.8rem 3rem;
@@ -484,18 +499,6 @@
 
       .rosario-decade-nav {
         grid-template-columns: repeat(4, minmax(0, 1fr));
-      }
-
-      .rosario-mobile-current {
-        display: block;
-      }
-
-      .rosario-visual {
-        display: none;
-      }
-
-      .beads-strip {
-        display: none;
       }
 
       .rosario-prayer-text {
