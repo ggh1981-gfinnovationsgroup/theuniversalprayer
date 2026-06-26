@@ -853,7 +853,8 @@
           of: 'de',
           decade: 'Década',
           intro: 'Introducción',
-          mysteryLabel: 'Misterio'
+          mysteryLabel: 'Misterio',
+          ending: 'Cierre'
         },
         mysteries: {
           joyful: 'Misterios Gozosos (Lun/Sáb)',
@@ -912,7 +913,8 @@
           of: 'of',
           decade: 'Decade',
           intro: 'Introduction',
-          mysteryLabel: 'Mystery'
+          mysteryLabel: 'Mystery',
+          ending: 'Closing'
         },
         mysteries: {
           joyful: 'Joyful Mysteries (Mon/Sat)',
@@ -953,6 +955,146 @@
       }
     };
 
+    const litanySteps = {
+      es: [
+        'Señor, ten piedad. Cristo, ten piedad. Señor, ten piedad.',
+        'Cristo, óyenos. Cristo, escúchanos.',
+        'Dios Padre celestial, ten misericordia de nosotros.',
+        'Dios Hijo, Redentor del mundo, ten misericordia de nosotros.',
+        'Dios Espíritu Santo, ten misericordia de nosotros.',
+        'Santísima Trinidad, un solo Dios, ten misericordia de nosotros.',
+        'Santa María, ruega por nosotros.',
+        'Santa Madre de Dios, ruega por nosotros.',
+        'Santa Virgen de las vírgenes, ruega por nosotros.',
+        'Madre de Cristo, ruega por nosotros.',
+        'Madre de la Iglesia, ruega por nosotros.',
+        'Madre de la divina gracia, ruega por nosotros.',
+        'Madre purísima, ruega por nosotros.',
+        'Madre castísima, ruega por nosotros.',
+        'Madre siempre virgen, ruega por nosotros.',
+        'Madre inmaculada, ruega por nosotros.',
+        'Madre amable, ruega por nosotros.',
+        'Madre admirable, ruega por nosotros.',
+        'Madre del buen consejo, ruega por nosotros.',
+        'Madre del Creador, ruega por nosotros.',
+        'Madre del Salvador, ruega por nosotros.',
+        'Virgen prudentísima, ruega por nosotros.',
+        'Virgen digna de veneración, ruega por nosotros.',
+        'Virgen digna de alabanza, ruega por nosotros.',
+        'Virgen poderosa, ruega por nosotros.',
+        'Virgen clemente, ruega por nosotros.',
+        'Virgen fiel, ruega por nosotros.',
+        'Espejo de justicia, ruega por nosotros.',
+        'Trono de la sabiduría, ruega por nosotros.',
+        'Causa de nuestra alegría, ruega por nosotros.',
+        'Vaso espiritual, ruega por nosotros.',
+        'Vaso digno de honor, ruega por nosotros.',
+        'Vaso insigne de devoción, ruega por nosotros.',
+        'Rosa mística, ruega por nosotros.',
+        'Torre de David, ruega por nosotros.',
+        'Torre de marfil, ruega por nosotros.',
+        'Casa de oro, ruega por nosotros.',
+        'Arca de la alianza, ruega por nosotros.',
+        'Puerta del cielo, ruega por nosotros.',
+        'Estrella de la mañana, ruega por nosotros.',
+        'Salud de los enfermos, ruega por nosotros.',
+        'Refugio de los pecadores, ruega por nosotros.',
+        'Consuelo de los migrantes, ruega por nosotros.',
+        'Consoladora de los afligidos, ruega por nosotros.',
+        'Auxilio de los cristianos, ruega por nosotros.',
+        'Reina de los ángeles, ruega por nosotros.',
+        'Reina de los patriarcas, ruega por nosotros.',
+        'Reina de los profetas, ruega por nosotros.',
+        'Reina de los apóstoles, ruega por nosotros.',
+        'Reina de los mártires, ruega por nosotros.',
+        'Reina de los confesores, ruega por nosotros.',
+        'Reina de las vírgenes, ruega por nosotros.',
+        'Reina de todos los santos, ruega por nosotros.',
+        'Reina concebida sin pecado original, ruega por nosotros.',
+        'Reina asunta al cielo, ruega por nosotros.',
+        'Reina del santísimo Rosario, ruega por nosotros.',
+        'Reina de la familia, ruega por nosotros.',
+        'Reina de la paz, ruega por nosotros.',
+        'Cordero de Dios, que quitas el pecado del mundo, perdónanos, Señor.',
+        'Cordero de Dios, que quitas el pecado del mundo, escúchanos, Señor.',
+        'Cordero de Dios, que quitas el pecado del mundo, ten misericordia de nosotros.',
+        'Ruega por nosotros, Santa Madre de Dios. Para que seamos dignos de alcanzar las promesas de Nuestro Señor Jesucristo. Amén.'
+      ],
+      en: [
+        'Lord, have mercy. Christ, have mercy. Lord, have mercy.',
+        'Christ, hear us. Christ, graciously hear us.',
+        'God the Father of heaven, have mercy on us.',
+        'God the Son, Redeemer of the world, have mercy on us.',
+        'God the Holy Spirit, have mercy on us.',
+        'Holy Trinity, one God, have mercy on us.',
+        'Holy Mary, pray for us.',
+        'Holy Mother of God, pray for us.',
+        'Holy Virgin of virgins, pray for us.',
+        'Mother of Christ, pray for us.',
+        'Mother of the Church, pray for us.',
+        'Mother of divine grace, pray for us.',
+        'Mother most pure, pray for us.',
+        'Mother most chaste, pray for us.',
+        'Mother inviolate, pray for us.',
+        'Mother undefiled, pray for us.',
+        'Mother most amiable, pray for us.',
+        'Mother most admirable, pray for us.',
+        'Mother of good counsel, pray for us.',
+        'Mother of our Creator, pray for us.',
+        'Mother of our Savior, pray for us.',
+        'Virgin most prudent, pray for us.',
+        'Virgin most venerable, pray for us.',
+        'Virgin most renowned, pray for us.',
+        'Virgin most powerful, pray for us.',
+        'Virgin most merciful, pray for us.',
+        'Virgin most faithful, pray for us.',
+        'Mirror of justice, pray for us.',
+        'Seat of wisdom, pray for us.',
+        'Cause of our joy, pray for us.',
+        'Spiritual vessel, pray for us.',
+        'Vessel of honor, pray for us.',
+        'Singular vessel of devotion, pray for us.',
+        'Mystical rose, pray for us.',
+        'Tower of David, pray for us.',
+        'Tower of ivory, pray for us.',
+        'House of gold, pray for us.',
+        'Ark of the covenant, pray for us.',
+        'Gate of heaven, pray for us.',
+        'Morning star, pray for us.',
+        'Health of the sick, pray for us.',
+        'Refuge of sinners, pray for us.',
+        'Comfort of migrants, pray for us.',
+        'Comforter of the afflicted, pray for us.',
+        'Help of Christians, pray for us.',
+        'Queen of angels, pray for us.',
+        'Queen of patriarchs, pray for us.',
+        'Queen of prophets, pray for us.',
+        'Queen of apostles, pray for us.',
+        'Queen of martyrs, pray for us.',
+        'Queen of confessors, pray for us.',
+        'Queen of virgins, pray for us.',
+        'Queen of all saints, pray for us.',
+        'Queen conceived without original sin, pray for us.',
+        'Queen assumed into heaven, pray for us.',
+        'Queen of the most holy Rosary, pray for us.',
+        'Queen of the family, pray for us.',
+        'Queen of peace, pray for us.',
+        'Lamb of God, who takest away the sins of the world, spare us, O Lord.',
+        'Lamb of God, who takest away the sins of the world, graciously hear us, O Lord.',
+        'Lamb of God, who takest away the sins of the world, have mercy on us.',
+        'Pray for us, O holy Mother of God. That we may be made worthy of the promises of Christ. Amen.'
+      ]
+    };
+
+    function createLitanyBeads() {
+      return litanySteps.es.map((_, litanyIndex) => ({
+        type: 'large',
+        prayer: 'litanyStep',
+        decade: 6,
+        litanyIndex
+      }));
+    }
+
     const beads = [];
     beads.push({ type: 'cross', prayer: 'cross', decade: 0 });
     beads.push({ type: 'large', prayer: 'creed', decade: 0 });
@@ -970,7 +1112,7 @@
     }
 
     beads.push({ type: 'large', prayer: 'hailHolyQueen', decade: 6 });
-    beads.push({ type: 'large', prayer: 'litany', decade: 6 });
+    beads.push(...createLitanyBeads());
     beads.push({ type: 'large', prayer: 'closingPrayer', decade: 6 });
     beads.push({ type: 'large', prayer: 'soulsPrayer', decade: 6 });
 
@@ -1013,18 +1155,35 @@
       nextBtn: document.getElementById('nextBtn')
     };
 
+    function getPrayerNameForBead(bead) {
+      const t = i18n[lang];
+      if (bead.prayer === 'litanyStep') {
+        return `${t.prayerNames.litany} ${bead.litanyIndex + 1}`;
+      }
+      return t.prayerNames[bead.prayer] || '';
+    }
+
+    function getPrayerTextForBead(bead) {
+      if (bead.prayer === 'litanyStep') {
+        return litanySteps[lang][bead.litanyIndex] || '';
+      }
+      return i18n[lang].prayers[bead.prayer] || '';
+    }
+
     function getRosaryTtsText() {
       const t = i18n[lang];
       const current = beads[idx];
       const mysteryName = current.decade >= 1 && current.decade <= 5 ? getMysteryForDecade(current.decade) : '';
       const parts = [];
-      parts.push(els.prayerName.textContent || (t.prayerNames[current.prayer] || ''));
+      parts.push(els.prayerName.textContent || getPrayerNameForBead(current));
       if (current.decade === 0) {
         parts.push(`${t.ui.decade} 0. ${t.ui.intro}.`);
+      } else if (current.decade === 6) {
+        parts.push(`${t.ui.decade} 6. ${t.ui.ending}.`);
       } else {
         parts.push(`${t.ui.decade} ${current.decade}. ${t.ui.mysteryLabel}: ${mysteryName}.`);
       }
-      parts.push(t.prayers[current.prayer] || '');
+      parts.push(getPrayerTextForBead(current));
       return parts.join(' ');
     }
 
@@ -1150,7 +1309,7 @@
         gloryBe: 'G',
         fatima: 'F',
         hailHolyQueen: 'S',
-        litany: 'L',
+        litanyStep: 'L',
         closingPrayer: 'O'
         , soulsPrayer: '†'
       };
@@ -1314,8 +1473,8 @@
 
       const t = i18n[lang];
       const current = beads[idx];
-      const prayerName = t.prayerNames[current.prayer] || '';
-      const prayerText = t.prayers[current.prayer] || '';
+      const prayerName = getPrayerNameForBead(current);
+      const prayerText = getPrayerTextForBead(current);
       const isIntro = current.decade === 0;
       const stepText = `${t.ui.step} ${idx + 1} ${t.ui.of} ${beads.length}`;
       const currentMystery = current.decade >= 1 && current.decade <= 5 ? getMysteryForDecade(current.decade) : '';
@@ -1323,6 +1482,8 @@
       els.metaStep.textContent = stepText;
       if (isIntro) {
         els.metaDecade.textContent = `${t.ui.decade} 0 · ${t.ui.intro}`;
+      } else if (current.decade === 6) {
+        els.metaDecade.textContent = `${t.ui.decade} 6 · ${t.ui.ending}`;
       } else {
         els.metaDecade.textContent = `${t.ui.decade} ${current.decade} · ${t.ui.mysteryLabel}: ${currentMystery}`;
       }
