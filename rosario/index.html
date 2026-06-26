@@ -209,7 +209,7 @@
     }
 
     .rosario-halo {
-      transform-origin: 130px 250px;
+      transform-origin: 130px 176px;
       animation: rosarioHaloPulse 3.2s ease-in-out infinite;
     }
 
@@ -286,6 +286,28 @@
       fill: #e7cf88;
       font-size: 10px;
       font-family: serif;
+      pointer-events: none;
+    }
+
+    .rosario-medal-outer {
+      fill: rgba(201,168,76,0.2);
+      stroke: rgba(231,207,136,0.82);
+      stroke-width: 1.6;
+      filter: drop-shadow(0 0 10px rgba(231,207,136,0.25));
+    }
+
+    .rosario-medal-inner {
+      fill: rgba(255,244,207,0.2);
+      stroke: rgba(255,241,200,0.52);
+      stroke-width: 1;
+    }
+
+    .rosario-medal-mark {
+      fill: #f6df9f;
+      font-size: 10px;
+      font-weight: 700;
+      text-anchor: middle;
+      dominant-baseline: middle;
       pointer-events: none;
     }
 
@@ -575,9 +597,10 @@
             <stop offset="100%" stop-color="#e7cf88" stop-opacity="0" />
           </radialGradient>
         </defs>
-        <circle class="rosario-halo" cx="130" cy="250" r="52" fill="url(#rosarioCenterGrad)" />
+        <circle class="rosario-halo" cx="130" cy="176" r="38" fill="url(#rosarioCenterGrad)" />
         <path id="rosarioTrackPath" class="rosario-svg-track" d="" />
         <path id="rosarioTrackProgress" class="rosario-svg-progress" d="" />
+        <g id="rosarioSvgDecor"></g>
         <g id="rosarioSvgBeads"></g>
       </svg>
     </section>
@@ -748,6 +771,7 @@
       mysterySelect: document.getElementById('mysterySelect'),
       progressFill: document.getElementById('progressFill'),
       decadeNav: document.getElementById('decadeNav'),
+      rosarioSvgDecor: document.getElementById('rosarioSvgDecor'),
       rosarioSvgBeads: document.getElementById('rosarioSvgBeads'),
       rosarioTrackProgress: document.getElementById('rosarioTrackProgress'),
       rosarioTrackPath: document.getElementById('rosarioTrackPath'),
@@ -950,28 +974,42 @@
       if (!els.rosarioSvgBeads) return;
       els.rosarioSvgBeads.innerHTML = '';
 
-      const points = [];
-      points.push({ x: 130, y: 28 });
-      points.push({ x: 130, y: 62 });
-      points.push({ x: 130, y: 96 });
-      points.push({ x: 98, y: 126 });
-      points.push({ x: 130, y: 126 });
-      points.push({ x: 162, y: 126 });
-      points.push({ x: 130, y: 156 });
+      const introPoints = [
+        { x: 130, y: 26 },
+        { x: 130, y: 58 },
+        { x: 130, y: 92 },
+        { x: 104, y: 122 },
+        { x: 130, y: 122 },
+        { x: 156, y: 122 },
+        { x: 130, y: 148 }
+      ];
 
-      const row1 = [74, 104, 134, 164, 194];
-      const row2 = [194, 164, 134, 104, 74];
-      let yBase = 188;
-      for (let decade = 1; decade <= 5; decade++) {
-        points.push({ x: 34, y: yBase });
-        row1.forEach((x) => points.push({ x, y: yBase }));
-        row2.forEach((x) => points.push({ x, y: yBase + 24 }));
-        points.push({ x: 34, y: yBase + 24 });
-        points.push({ x: 226, y: yBase + 24 });
-        yBase += 50;
+      const loopPoints = [];
+      const cx = 130;
+      const cy = 312;
+      const rx = 78;
+      const ry = 118;
+      const startAngle = 4.16;
+      const endAngle = 8.40;
+      const loopCount = beads.length - introPoints.length;
+
+      for (let i = 0; i < loopCount; i++) {
+        const t = loopCount === 1 ? 0 : i / (loopCount - 1);
+        const angle = startAngle + (endAngle - startAngle) * t;
+        const x = cx + Math.cos(angle) * rx;
+        const y = cy + Math.sin(angle) * ry + Math.max(0, Math.sin(angle)) * 22;
+        loopPoints.push({ x, y });
       }
 
-      points.push({ x: 130, y: 430 });
+      const points = [...introPoints, ...loopPoints];
+
+      if (els.rosarioSvgDecor) {
+        els.rosarioSvgDecor.innerHTML = `
+          <circle class="rosario-medal-outer" cx="130" cy="176" r="13"></circle>
+          <circle class="rosario-medal-inner" cx="130" cy="176" r="7.5"></circle>
+          <text class="rosario-medal-mark" x="130" y="176">M</text>
+        `;
+      }
 
       beads.forEach((b, i) => {
         const point = points[i];
@@ -986,26 +1024,26 @@
 
         if (b.type === 'cross') {
           g.classList.add('svg-cross');
-          const r = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-          r.setAttribute('x', x - 8);
-          r.setAttribute('y', y - 8);
-          r.setAttribute('width', 16);
-          r.setAttribute('height', 16);
-          r.setAttribute('rx', 3);
-          g.appendChild(r);
+          const v = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+          v.setAttribute('x', x - 2.5);
+          v.setAttribute('y', y - 12);
+          v.setAttribute('width', 5);
+          v.setAttribute('height', 24);
+          v.setAttribute('rx', 2);
+          g.appendChild(v);
 
-          const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-          t.setAttribute('x', x);
-          t.setAttribute('y', y + 3.6);
-          t.setAttribute('text-anchor', 'middle');
-          t.setAttribute('class', 'svg-cross-mark');
-          t.textContent = '✝';
-          g.appendChild(t);
+          const h = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+          h.setAttribute('x', x - 8);
+          h.setAttribute('y', y - 4);
+          h.setAttribute('width', 16);
+          h.setAttribute('height', 5);
+          h.setAttribute('rx', 2);
+          g.appendChild(h);
         } else {
           const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
           c.setAttribute('cx', x);
           c.setAttribute('cy', y);
-          c.setAttribute('r', b.type === 'large' ? 5.2 : 3.9);
+          c.setAttribute('r', b.type === 'large' ? 5.4 : 4.05);
           g.appendChild(c);
         }
 
@@ -1017,7 +1055,13 @@
         els.rosarioSvgBeads.appendChild(g);
       });
 
-      const pathD = points.map((point, index) => `${index === 0 ? 'M' : 'L'} ${point.x} ${point.y}`).join(' ');
+      const pathD = [
+        points.slice(0, 7).map((point, index) => `${index === 0 ? 'M' : 'L'} ${point.x} ${point.y}`).join(' '),
+        `L 130 163`,
+        `L 130 176`,
+        `L ${points[7].x} ${points[7].y}`,
+        points.slice(8).map((point) => `L ${point.x} ${point.y}`).join(' ')
+      ].join(' ');
       if (els.rosarioTrackPath) els.rosarioTrackPath.setAttribute('d', pathD);
       if (els.rosarioTrackProgress) els.rosarioTrackProgress.setAttribute('d', pathD);
     }
