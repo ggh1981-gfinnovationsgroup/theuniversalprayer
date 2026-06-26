@@ -98,25 +98,6 @@ body {
   border-color: var(--gold);
 }
 
-.rosary-launch-btn {
-  text-decoration: none;
-  border: 1px solid var(--gold-dim);
-  color: var(--gold-light);
-  border-radius: 99px;
-  padding: 0.35rem 0.75rem;
-  font-size: 0.8rem;
-  letter-spacing: 0.05em;
-  transition: all var(--transition);
-  background: linear-gradient(180deg, rgba(201,168,76,0.12), rgba(201,168,76,0.03));
-}
-
-.rosary-launch-btn:hover {
-  border-color: var(--gold);
-  color: var(--bg);
-  background: var(--gold);
-  box-shadow: 0 0 24px rgba(201,168,76,0.36);
-}
-
 /* ── HOME: HERO ───────────────────────────────────── */
 .hero {
   position: relative;
