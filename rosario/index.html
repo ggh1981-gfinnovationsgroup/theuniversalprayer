@@ -475,6 +475,11 @@
       background: linear-gradient(180deg, rgba(201,168,76,0.08), rgba(255,255,255,0.02));
       padding: 0.9rem 1rem;
       margin-bottom: 0.85rem;
+      min-height: 128px;
+    }
+
+    .rosario-mystery-card.is-hidden {
+      visibility: hidden;
     }
 
     .rosario-mystery-label {
@@ -519,6 +524,8 @@
       gap: 0.55rem;
       flex-wrap: wrap;
       margin-top: 0.85rem;
+      min-height: 46px;
+      align-items: stretch;
     }
 
     .rosario-tts-btn {
@@ -867,7 +874,8 @@
           hailMary: 'Dios te salve, María, llena eres de gracia, el Señor es contigo; bendita tú eres entre todas las mujeres, y bendito es el fruto de tu vientre, Jesús. Santa María, Madre de Dios, ruega por nosotros, pecadores, ahora y en la hora de nuestra muerte. Amén.',
           gloryBe: 'Gloria al Padre, y al Hijo, y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.',
           fatima: 'Oh Jesús mío, perdona nuestros pecados, líbranos del fuego del infierno, lleva al cielo a todas las almas, especialmente a las más necesitadas de tu misericordia.',
-          hailHolyQueen: 'Dios te salve, Reina y Madre de misericordia, vida, dulzura y esperanza nuestra... ruega por nosotros, Santa Madre de Dios, para que seamos dignos de alcanzar las promesas de Nuestro Señor Jesucristo. Amén.'
+          hailHolyQueen: 'Dios te salve, Reina y Madre de misericordia, vida, dulzura y esperanza nuestra... ruega por nosotros, Santa Madre de Dios, para que seamos dignos de alcanzar las promesas de Nuestro Señor Jesucristo. Amén.',
+          litany: 'Señor, ten piedad. Cristo, ten piedad. Señor, ten piedad.\n\nCristo, óyenos. Cristo, escúchanos.\nDios Padre celestial, ten misericordia de nosotros.\nDios Hijo, Redentor del mundo, ten misericordia de nosotros.\nDios Espíritu Santo, ten misericordia de nosotros.\nSantísima Trinidad, un solo Dios, ten misericordia de nosotros.\n\nSanta María, ruega por nosotros.\nSanta Madre de Dios, ruega por nosotros.\nSanta Virgen de las vírgenes, ruega por nosotros.\nMadre de Cristo, ruega por nosotros.\nMadre de la Iglesia, ruega por nosotros.\nMadre de la divina gracia, ruega por nosotros.\nMadre purísima, ruega por nosotros.\nMadre castísima, ruega por nosotros.\nMadre siempre virgen, ruega por nosotros.\nMadre inmaculada, ruega por nosotros.\nMadre amable, ruega por nosotros.\nMadre admirable, ruega por nosotros.\nMadre del buen consejo, ruega por nosotros.\nMadre del Creador, ruega por nosotros.\nMadre del Salvador, ruega por nosotros.\nVirgen prudentísima, ruega por nosotros.\nVirgen digna de veneración, ruega por nosotros.\nVirgen digna de alabanza, ruega por nosotros.\nVirgen poderosa, ruega por nosotros.\nVirgen clemente, ruega por nosotros.\nVirgen fiel, ruega por nosotros.\nEspejo de justicia, ruega por nosotros.\nTrono de la sabiduría, ruega por nosotros.\nCausa de nuestra alegría, ruega por nosotros.\nVaso espiritual, ruega por nosotros.\nVaso digno de honor, ruega por nosotros.\nVaso insigne de devoción, ruega por nosotros.\nRosa mística, ruega por nosotros.\nTorre de David, ruega por nosotros.\nTorre de marfil, ruega por nosotros.\nCasa de oro, ruega por nosotros.\nArca de la alianza, ruega por nosotros.\nPuerta del cielo, ruega por nosotros.\nEstrella de la mañana, ruega por nosotros.\nSalud de los enfermos, ruega por nosotros.\nRefugio de los pecadores, ruega por nosotros.\nConsuelo de los migrantes, ruega por nosotros.\nConsoladora de los afligidos, ruega por nosotros.\nAuxilio de los cristianos, ruega por nosotros.\nReina de los ángeles, ruega por nosotros.\nReina de los patriarcas, ruega por nosotros.\nReina de los profetas, ruega por nosotros.\nReina de los apóstoles, ruega por nosotros.\nReina de los mártires, ruega por nosotros.\nReina de los confesores, ruega por nosotros.\nReina de las vírgenes, ruega por nosotros.\nReina de todos los santos, ruega por nosotros.\nReina concebida sin pecado original, ruega por nosotros.\nReina asunta al cielo, ruega por nosotros.\nReina del santísimo Rosario, ruega por nosotros.\nReina de la familia, ruega por nosotros.\nReina de la paz, ruega por nosotros.\n\nCordero de Dios, que quitas el pecado del mundo, perdónanos, Señor.\nCordero de Dios, que quitas el pecado del mundo, escúchanos, Señor.\nCordero de Dios, que quitas el pecado del mundo, ten misericordia de nosotros.\n\nRuega por nosotros, Santa Madre de Dios.\nPara que seamos dignos de alcanzar las promesas de Nuestro Señor Jesucristo. Amén.'
         },
         prayerNames: {
           cross: 'Señal de la Cruz',
@@ -876,7 +884,8 @@
           hailMary: 'Ave María',
           gloryBe: 'Gloria',
           fatima: 'Oración de Fátima',
-          hailHolyQueen: 'Salve Regina'
+          hailHolyQueen: 'Salve Regina',
+          litany: 'Letanías Lauretanas'
         }
       },
       en: {
@@ -920,7 +929,8 @@
           hailMary: 'Hail Mary, full of grace, the Lord is with thee; blessed art thou among women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.',
           gloryBe: 'Glory be to the Father, and to the Son, and to the Holy Spirit. As it was in the beginning, is now, and ever shall be, world without end. Amen.',
           fatima: 'O my Jesus, forgive us our sins, save us from the fires of hell, lead all souls to heaven, especially those in most need of thy mercy.',
-          hailHolyQueen: 'Hail, Holy Queen, Mother of Mercy, our life, our sweetness and our hope... pray for us, O Holy Mother of God, that we may be made worthy of the promises of Christ. Amen.'
+          hailHolyQueen: 'Hail, Holy Queen, Mother of Mercy, our life, our sweetness and our hope... pray for us, O Holy Mother of God, that we may be made worthy of the promises of Christ. Amen.',
+          litany: 'Lord, have mercy. Christ, have mercy. Lord, have mercy.\n\nChrist, hear us. Christ, graciously hear us.\nGod the Father of heaven, have mercy on us.\nGod the Son, Redeemer of the world, have mercy on us.\nGod the Holy Spirit, have mercy on us.\nHoly Trinity, one God, have mercy on us.\n\nHoly Mary, pray for us.\nHoly Mother of God, pray for us.\nHoly Virgin of virgins, pray for us.\nMother of Christ, pray for us.\nMother of the Church, pray for us.\nMother of divine grace, pray for us.\nMother most pure, pray for us.\nMother most chaste, pray for us.\nMother inviolate, pray for us.\nMother undefiled, pray for us.\nMother most amiable, pray for us.\nMother most admirable, pray for us.\nMother of good counsel, pray for us.\nMother of our Creator, pray for us.\nMother of our Savior, pray for us.\nVirgin most prudent, pray for us.\nVirgin most venerable, pray for us.\nVirgin most renowned, pray for us.\nVirgin most powerful, pray for us.\nVirgin most merciful, pray for us.\nVirgin most faithful, pray for us.\nMirror of justice, pray for us.\nSeat of wisdom, pray for us.\nCause of our joy, pray for us.\nSpiritual vessel, pray for us.\nVessel of honor, pray for us.\nSingular vessel of devotion, pray for us.\nMystical rose, pray for us.\nTower of David, pray for us.\nTower of ivory, pray for us.\nHouse of gold, pray for us.\nArk of the covenant, pray for us.\nGate of heaven, pray for us.\nMorning star, pray for us.\nHealth of the sick, pray for us.\nRefuge of sinners, pray for us.\nComfort of migrants, pray for us.\nComforter of the afflicted, pray for us.\nHelp of Christians, pray for us.\nQueen of angels, pray for us.\nQueen of patriarchs, pray for us.\nQueen of prophets, pray for us.\nQueen of apostles, pray for us.\nQueen of martyrs, pray for us.\nQueen of confessors, pray for us.\nQueen of virgins, pray for us.\nQueen of all saints, pray for us.\nQueen conceived without original sin, pray for us.\nQueen assumed into heaven, pray for us.\nQueen of the most holy Rosary, pray for us.\nQueen of the family, pray for us.\nQueen of peace, pray for us.\n\nLamb of God, who takest away the sins of the world, spare us, O Lord.\nLamb of God, who takest away the sins of the world, graciously hear us, O Lord.\nLamb of God, who takest away the sins of the world, have mercy on us.\n\nPray for us, O holy Mother of God.\nThat we may be made worthy of the promises of Christ. Amen.'
         },
         prayerNames: {
           cross: 'Sign of the Cross',
@@ -929,7 +939,8 @@
           hailMary: 'Hail Mary',
           gloryBe: 'Glory Be',
           fatima: 'Fatima Prayer',
-          hailHolyQueen: 'Hail Holy Queen'
+          hailHolyQueen: 'Hail Holy Queen',
+          litany: 'Litany of Loreto'
         }
       }
     };
@@ -951,6 +962,7 @@
     }
 
     beads.push({ type: 'large', prayer: 'hailHolyQueen', decade: 6 });
+    beads.push({ type: 'large', prayer: 'litany', decade: 6 });
 
     const dayToMystery = ['glorious', 'joyful', 'sorrowful', 'glorious', 'luminous', 'sorrowful', 'joyful'];
 
@@ -1127,7 +1139,8 @@
         hailMary: 'A',
         gloryBe: 'G',
         fatima: 'F',
-        hailHolyQueen: 'S'
+        hailHolyQueen: 'S',
+        litany: 'L'
       };
       return map[prayer] || '•';
     }
@@ -1304,12 +1317,15 @@
 
       if (els.mysteryCard) {
         if (current.decade >= 1 && current.decade <= 5) {
-          els.mysteryCard.style.display = '';
+          els.mysteryCard.classList.remove('is-hidden');
           els.mysteryLabelText.textContent = t.ui.currentMystery;
           els.mysteryTitleText.textContent = currentMystery;
           els.mysteryNoteText.textContent = t.ui.currentMysteryNote;
         } else {
-          els.mysteryCard.style.display = 'none';
+          els.mysteryCard.classList.add('is-hidden');
+          els.mysteryLabelText.textContent = '';
+          els.mysteryTitleText.textContent = '';
+          els.mysteryNoteText.textContent = '';
         }
       }
 
