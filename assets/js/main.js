@@ -1824,6 +1824,18 @@ function initMenu() {
   const list    = document.getElementById('sideNavList');
   if (!btn || !nav || !list) return;
 
+  const header = btn.parentElement;
+  if (header && !document.getElementById('rosaryLaunchBtn')) {
+    const rosaryBtn = document.createElement('a');
+    rosaryBtn.id = 'rosaryLaunchBtn';
+    rosaryBtn.className = 'rosary-launch-btn';
+    rosaryBtn.href = '/rosario/';
+    rosaryBtn.setAttribute('aria-label', 'Rosary');
+    header.insertBefore(rosaryBtn, btn);
+  }
+
+  const rosaryLaunchBtn = document.getElementById('rosaryLaunchBtn');
+
   // Populate list
   function renderMenuItems() {
     const isSubPage      = isIntercessorPage() || isHistoriasPage();
@@ -1835,16 +1847,24 @@ function initMenu() {
     const familyLabel     = currentLang === 'es' ? '🙏 Oraciones en Familia' : '🙏 Family Prayers';
     const intercesorsLabel = currentLang === 'es' ? '✨ Intercesores'        : '✨ Intercessors';
     const oracionesLabel  = currentLang === 'es' ? '📜 Oraciones Básicas'    : '📜 Basic Prayers';
+    const rosarioLabel    = currentLang === 'es' ? '📿 Rosario Interactivo'   : '📿 Interactive Rosary';
     const adoracionLabel  = currentLang === 'es' ? '✝ Adoración'            : '✝ Adoration';
     const espirituLabel   = currentLang === 'es' ? '🕊 Espíritu Santo'       : '🕊 Holy Spirit';
     const matrimonioLabel = currentLang === 'es' ? '💍 Matrimonio'            : '💍 Marriage';
     const difuntosLabel   = currentLang === 'es' ? '🕯 Difuntos'              : '🕯 Departed';
+
+    if (rosaryLaunchBtn) {
+      rosaryLaunchBtn.textContent = currentLang === 'es' ? '📿 Rosario' : '📿 Rosary';
+      rosaryLaunchBtn.setAttribute('aria-label', currentLang === 'es' ? 'Abrir Rosario Interactivo' : 'Open Interactive Rosary');
+      rosaryLaunchBtn.title = currentLang === 'es' ? 'Rosario Interactivo' : 'Interactive Rosary';
+    }
 
     list.innerHTML = `
       <li><a class="side-nav-link side-nav-home"      href="${homeHref}">${homeLabel}</a></li>
       <li><a class="side-nav-link side-nav-family"    href="${familyHref}">${familyLabel}</a></li>
       <li><a class="side-nav-link side-nav-saints"    href="${intercesorsHref}">${intercesorsLabel}</a></li>
       <li><a class="side-nav-link side-nav-oraciones" href="/oraciones/">${oracionesLabel}</a></li>
+      <li><a class="side-nav-link side-nav-rosario" href="/rosario/">${rosarioLabel}</a></li>
       <li><a class="side-nav-link side-nav-adoracion" href="/adoracion/">${adoracionLabel}</a></li>
       <li><a class="side-nav-link side-nav-espiritu"  href="/espiritu/">${espirituLabel}</a></li>
       <li><a class="side-nav-link side-nav-matrimonio" href="/matrimonio/">${matrimonioLabel}</a></li>

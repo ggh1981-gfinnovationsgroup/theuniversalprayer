@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rosario Interactivo | The Universal Prayer</title>
+  <meta name="description" content="Rosario católico interactivo, paso a paso, con misterios diarios, progreso visual y guía bilingüe." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Rosario Interactivo | The Universal Prayer" />
+  <meta property="og:description" content="Reza el rosario con una experiencia visual e interactiva: cuentas, décadas, misterios y guía completa." />
+  <meta property="og:url" content="https://www.theuniversalprayer.com/rosario/" />
+  <meta property="og:image" content="https://www.theuniversalprayer.com/assets/images/icon.svg" />
+  <link rel="canonical" href="https://www.theuniversalprayer.com/rosario/" />
+  <meta name="theme-color" content="#c9a84c" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    .rosario-page {
+      min-height: 100dvh;
+      background:
+        radial-gradient(1200px 700px at 50% -120px, rgba(201,168,76,0.18), transparent 62%),
+        var(--bg);
+    }
+
+    .rosario-wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .rosario-hero {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(201,168,76,0.10), rgba(22,27,46,0.84));
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .rosario-eyebrow {
+      color: var(--gold);
+      letter-spacing: 0.14em;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      margin-bottom: 0.35rem;
+    }
+
+    .rosario-title {
+      font-family: var(--font-serif);
+      color: var(--gold-light);
+      font-size: clamp(1.4rem, 3.1vw, 2.3rem);
+      margin-bottom: 0.4rem;
+    }
+
+    .rosario-sub {
+      color: var(--white-dim);
+      font-size: 0.95rem;
+    }
+
+    .rosario-controls {
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      gap: 0.65rem;
+      margin: 1rem 0 0.4rem;
+    }
+
+    .rosario-select,
+    .rosario-btn,
+    .rosario-lang {
+      border: 1px solid var(--gold-dim);
+      background: var(--bg-card);
+      color: var(--white);
+      border-radius: 10px;
+      padding: 0.52rem 0.72rem;
+      font-size: 0.88rem;
+    }
+
+    .rosario-btn,
+    .rosario-lang {
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+
+    .rosario-btn:hover,
+    .rosario-lang:hover {
+      border-color: var(--gold);
+      color: var(--gold-light);
+    }
+
+    .rosario-progress {
+      margin: 1rem 0 1.2rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      overflow: hidden;
+      height: 11px;
+      background: rgba(255,255,255,0.06);
+    }
+
+    .rosario-progress-fill {
+      width: 0;
+      height: 100%;
+      background: linear-gradient(90deg, var(--gold-dim), var(--gold-light));
+      transition: width 0.28s ease;
+    }
+
+    .rosario-visual {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(201,168,76,0.08), rgba(21,26,44,0.9));
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+
+    .rosario-svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .rosario-halo {
+      transform-origin: 190px 160px;
+      animation: rosarioHaloPulse 3.2s ease-in-out infinite;
+    }
+
+    @keyframes rosarioHaloPulse {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.85; transform: scale(1.025); }
+    }
+
+    .rosario-svg-track {
+      fill: none;
+      stroke: rgba(201,168,76,0.28);
+      stroke-width: 7;
+    }
+
+    .rosario-svg-progress {
+      fill: none;
+      stroke: #e7cf88;
+      stroke-width: 7;
+      stroke-linecap: round;
+      transition: stroke-dashoffset 0.3s ease;
+      filter: drop-shadow(0 0 8px rgba(231,207,136,0.45));
+    }
+
+    .svg-bead {
+      cursor: pointer;
+      transition: transform .2s ease, opacity .2s ease, fill .2s ease, stroke .2s ease;
+      transform-origin: center;
+      fill: rgba(201,168,76,0.2);
+      stroke: rgba(201,168,76,0.52);
+      stroke-width: 1.1;
+    }
+
+    .svg-bead.large {
+      fill: rgba(201,168,76,0.3);
+      stroke: rgba(201,168,76,0.75);
+    }
+
+    .svg-bead.done {
+      fill: rgba(255,255,255,0.4);
+      stroke: rgba(240,236,228,0.5);
+    }
+
+    .svg-bead.active {
+      fill: #e7cf88;
+      stroke: #fff1c8;
+      transform: scale(1.25);
+      filter: drop-shadow(0 0 10px rgba(231,207,136,0.9));
+    }
+
+    .svg-cross {
+      fill: rgba(201,168,76,0.22);
+      stroke: rgba(201,168,76,0.75);
+    }
+
+    .svg-cross-mark {
+      fill: #e7cf88;
+      font-size: 10px;
+      font-family: serif;
+      pointer-events: none;
+    }
+
+    .beads-strip {
+      display: flex;
+      gap: 0.34rem;
+      overflow-x: auto;
+      scrollbar-width: thin;
+      padding: 0.3rem 0.15rem 0.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .bead {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 1px solid rgba(201,168,76,0.4);
+      background: rgba(201,168,76,0.12);
+      cursor: pointer;
+      flex: 0 0 auto;
+      transition: transform .2s ease, background .2s ease, border-color .2s ease;
+    }
+
+    .bead.large {
+      width: 24px;
+      height: 24px;
+      background: rgba(201,168,76,0.20);
+      border-color: rgba(201,168,76,0.65);
+    }
+
+    .bead.cross {
+      width: 24px;
+      height: 24px;
+      border-radius: 7px;
+      position: relative;
+      background: rgba(201,168,76,0.16);
+    }
+
+    .bead.cross::before {
+      content: '✝';
+      font-size: 0.7rem;
+      color: var(--gold-light);
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+    }
+
+    .bead.active {
+      background: var(--gold);
+      border-color: var(--gold-light);
+      transform: translateY(-2px) scale(1.06);
+      box-shadow: 0 0 20px rgba(201,168,76,0.42);
+    }
+
+    .bead.done {
+      background: rgba(240,236,228,0.36);
+      border-color: rgba(240,236,228,0.45);
+    }
+
+    .rosario-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg-card);
+      padding: 1.05rem 1rem;
+    }
+
+    .rosario-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.6rem;
+      color: var(--gold-light);
+      font-size: 0.86rem;
+      margin-bottom: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .rosario-prayer-name {
+      font-family: var(--font-serif);
+      font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+      color: var(--gold-light);
+      margin-bottom: 0.5rem;
+    }
+
+    .rosario-prayer-text {
+      white-space: pre-line;
+      color: var(--white);
+      line-height: 1.85;
+      font-size: 0.98rem;
+      min-height: 148px;
+    }
+
+    .rosario-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.6rem;
+      margin-top: 0.85rem;
+    }
+
+    .rosario-action {
+      border: 1px solid var(--gold-dim);
+      background: transparent;
+      color: var(--gold-light);
+      border-radius: 10px;
+      padding: 0.62rem;
+      cursor: pointer;
+      transition: all var(--transition);
+      font-size: 0.92rem;
+    }
+
+    .rosario-action:hover {
+      border-color: var(--gold);
+      background: rgba(201,168,76,0.12);
+    }
+
+    @media (max-width: 700px) {
+      .rosario-controls {
+        grid-template-columns: 1fr;
+      }
+
+      .rosario-prayer-text {
+        min-height: 112px;
+      }
+    }
+  </style>
+</head>
+<body class="rosario-page">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link">
+        <span class="cross">✝</span>
+        <span class="logo-text">The Universal Prayer</span>
+      </a>
+      <a class="rosary-launch-btn" href="/intercesor/?intercesor=misericordia">✦ Coronilla</a>
+    </div>
+  </header>
+
+  <main class="rosario-wrap">
+    <section class="rosario-hero">
+      <div class="rosario-eyebrow" id="eyebrow">📿 Rosario Interactivo</div>
+      <h1 class="rosario-title" id="title">Reza el Rosario paso a paso</h1>
+      <p class="rosario-sub" id="subtitle">Toca cada cuenta, avanza con los botones o usa las flechas del teclado. Todo queda claro y guiado.</p>
+
+      <div class="rosario-controls">
+        <select class="rosario-select" id="mysterySelect"></select>
+        <button class="rosario-lang" id="langBtn">EN</button>
+        <button class="rosario-btn" id="resetBtn">↺ Reiniciar</button>
+      </div>
+    </section>
+
+    <div class="rosario-progress" aria-hidden="true">
+      <div class="rosario-progress-fill" id="progressFill"></div>
+    </div>
+
+    <section class="rosario-visual" aria-label="Rosario visual animado">
+      <svg class="rosario-svg" viewBox="0 0 380 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rosarioSvgTitle">
+        <title id="rosarioSvgTitle">Rosario interactivo</title>
+        <defs>
+          <radialGradient id="rosarioCenterGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#fff4cf" stop-opacity="0.95" />
+            <stop offset="65%" stop-color="#e7cf88" stop-opacity="0.55" />
+            <stop offset="100%" stop-color="#e7cf88" stop-opacity="0" />
+          </radialGradient>
+        </defs>
+        <circle class="rosario-halo" cx="190" cy="160" r="58" fill="url(#rosarioCenterGrad)" />
+        <path id="rosarioTrackPath" class="rosario-svg-track" d="M 190 32 A 142 122 0 1 1 189.9 32" />
+        <path id="rosarioTrackProgress" class="rosario-svg-progress" d="M 190 32 A 142 122 0 1 1 189.9 32" />
+        <g id="rosarioSvgBeads"></g>
+      </svg>
+    </section>
+
+    <div class="beads-strip" id="beadsStrip" aria-label="Rosary beads"></div>
+
+    <section class="rosario-card">
+      <div class="rosario-meta">
+        <span id="metaDecade">Década 0</span>
+        <span id="metaStep">Cuenta 1 de 59</span>
+      </div>
+      <h2 class="rosario-prayer-name" id="prayerName">Señal de la Cruz</h2>
+      <p class="rosario-prayer-text" id="prayerText"></p>
+
+      <div class="rosario-actions">
+        <button class="rosario-action" id="prevBtn">← Anterior</button>
+        <button class="rosario-action" id="nextBtn">Siguiente →</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const i18n = {
+      es: {
+        ui: {
+          eyebrow: '📿 Rosario Interactivo',
+          title: 'Reza el Rosario paso a paso',
+          subtitle: 'Toca cada cuenta, avanza con los botones o usa las flechas del teclado. Todo queda claro y guiado.',
+          reset: '↺ Reiniciar',
+          prev: '← Anterior',
+          next: 'Siguiente →',
+          step: 'Cuenta',
+          of: 'de',
+          decade: 'Década',
+          intro: 'Introducción',
+          mysteryLabel: 'Misterio'
+        },
+        mysteries: {
+          joyful: 'Misterios Gozosos (Lun/Sáb)',
+          luminous: 'Misterios Luminosos (Jue)',
+          sorrowful: 'Misterios Dolorosos (Mar/Vie)',
+          glorious: 'Misterios Gloriosos (Mié/Dom)'
+        },
+        mysteryNames: {
+          joyful: ['La Encarnación del Hijo de Dios', 'La Visitación de Nuestra Señora', 'El Nacimiento de Jesús', 'La Presentación en el Templo', 'El Niño Jesús perdido y hallado'],
+          luminous: ['El Bautismo en el Jordán', 'Las Bodas de Caná', 'El anuncio del Reino', 'La Transfiguración', 'La Institución de la Eucaristía'],
+          sorrowful: ['La Agonía en Getsemaní', 'La Flagelación', 'La Coronación de espinas', 'Jesús con la Cruz a cuestas', 'La Crucifixión y Muerte del Señor'],
+          glorious: ['La Resurrección', 'La Ascensión', 'La Venida del Espíritu Santo', 'La Asunción de María', 'La Coronación de María']
+        },
+        prayers: {
+          cross: 'En el nombre del Padre, y del Hijo, y del Espíritu Santo. Amén.',
+          creed: 'Creo en Dios, Padre todopoderoso, Creador del cielo y de la tierra... Amén.',
+          ourFather: 'Padre nuestro, que estás en el cielo, santificado sea tu Nombre; venga a nosotros tu reino; hágase tu voluntad en la tierra como en el cielo. Danos hoy nuestro pan de cada día; perdona nuestras ofensas, como también nosotros perdonamos a los que nos ofenden; no nos dejes caer en la tentación, y líbranos del mal. Amén.',
+          hailMary: 'Dios te salve, María, llena eres de gracia, el Señor es contigo; bendita tú eres entre todas las mujeres, y bendito es el fruto de tu vientre, Jesús. Santa María, Madre de Dios, ruega por nosotros, pecadores, ahora y en la hora de nuestra muerte. Amén.',
+          gloryBe: 'Gloria al Padre, y al Hijo, y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.',
+          fatima: 'Oh Jesús mío, perdona nuestros pecados, líbranos del fuego del infierno, lleva al cielo a todas las almas, especialmente a las más necesitadas de tu misericordia.',
+          hailHolyQueen: 'Dios te salve, Reina y Madre de misericordia, vida, dulzura y esperanza nuestra... ruega por nosotros, Santa Madre de Dios, para que seamos dignos de alcanzar las promesas de Nuestro Señor Jesucristo. Amén.'
+        },
+        prayerNames: {
+          cross: 'Señal de la Cruz',
+          creed: 'Credo de los Apóstoles',
+          ourFather: 'Padre Nuestro',
+          hailMary: 'Ave María',
+          gloryBe: 'Gloria',
+          fatima: 'Oración de Fátima',
+          hailHolyQueen: 'Salve Regina'
+        }
+      },
+      en: {
+        ui: {
+          eyebrow: '📿 Interactive Rosary',
+          title: 'Pray the Rosary step by step',
+          subtitle: 'Tap each bead, move with buttons, or use keyboard arrows. Clear and guided from start to finish.',
+          reset: '↺ Reset',
+          prev: '← Previous',
+          next: 'Next →',
+          step: 'Bead',
+          of: 'of',
+          decade: 'Decade',
+          intro: 'Introduction',
+          mysteryLabel: 'Mystery'
+        },
+        mysteries: {
+          joyful: 'Joyful Mysteries (Mon/Sat)',
+          luminous: 'Luminous Mysteries (Thu)',
+          sorrowful: 'Sorrowful Mysteries (Tue/Fri)',
+          glorious: 'Glorious Mysteries (Wed/Sun)'
+        },
+        mysteryNames: {
+          joyful: ['The Annunciation', 'The Visitation', 'The Nativity', 'The Presentation', 'The Finding in the Temple'],
+          luminous: ['The Baptism in the Jordan', 'The Wedding at Cana', 'The Proclamation of the Kingdom', 'The Transfiguration', 'The Institution of the Eucharist'],
+          sorrowful: ['The Agony in the Garden', 'The Scourging at the Pillar', 'The Crowning with Thorns', 'The Carrying of the Cross', 'The Crucifixion'],
+          glorious: ['The Resurrection', 'The Ascension', 'The Descent of the Holy Spirit', 'The Assumption', 'The Coronation of Mary']
+        },
+        prayers: {
+          cross: 'In the name of the Father, and of the Son, and of the Holy Spirit. Amen.',
+          creed: "I believe in God, the Father almighty, Creator of heaven and earth... Amen.",
+          ourFather: 'Our Father, who art in heaven, hallowed be Thy name; Thy kingdom come; Thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses, as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.',
+          hailMary: 'Hail Mary, full of grace, the Lord is with thee; blessed art thou among women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.',
+          gloryBe: 'Glory be to the Father, and to the Son, and to the Holy Spirit. As it was in the beginning, is now, and ever shall be, world without end. Amen.',
+          fatima: 'O my Jesus, forgive us our sins, save us from the fires of hell, lead all souls to heaven, especially those in most need of thy mercy.',
+          hailHolyQueen: 'Hail, Holy Queen, Mother of Mercy, our life, our sweetness and our hope... pray for us, O Holy Mother of God, that we may be made worthy of the promises of Christ. Amen.'
+        },
+        prayerNames: {
+          cross: 'Sign of the Cross',
+          creed: "Apostles' Creed",
+          ourFather: 'Our Father',
+          hailMary: 'Hail Mary',
+          gloryBe: 'Glory Be',
+          fatima: 'Fatima Prayer',
+          hailHolyQueen: 'Hail Holy Queen'
+        }
+      }
+    };
+
+    const beads = [];
+    beads.push({ type: 'cross', prayer: 'cross', decade: 0 });
+    beads.push({ type: 'large', prayer: 'creed', decade: 0 });
+    beads.push({ type: 'large', prayer: 'ourFather', decade: 0 });
+    beads.push({ type: 'small', prayer: 'hailMary', decade: 0 });
+    beads.push({ type: 'small', prayer: 'hailMary', decade: 0 });
+    beads.push({ type: 'small', prayer: 'hailMary', decade: 0 });
+    beads.push({ type: 'large', prayer: 'gloryBe', decade: 0 });
+
+    for (let d = 1; d <= 5; d++) {
+      beads.push({ type: 'large', prayer: 'ourFather', decade: d });
+      for (let i = 0; i < 10; i++) beads.push({ type: 'small', prayer: 'hailMary', decade: d });
+      beads.push({ type: 'large', prayer: 'gloryBe', decade: d });
+      beads.push({ type: 'large', prayer: 'fatima', decade: d });
+    }
+
+    beads.push({ type: 'large', prayer: 'hailHolyQueen', decade: 6 });
+
+    const dayToMystery = ['glorious', 'joyful', 'sorrowful', 'glorious', 'luminous', 'sorrowful', 'joyful'];
+
+    let lang = localStorage.getItem('tup_rosary_lang') || 'es';
+    let mystery = localStorage.getItem('tup_rosary_mystery') || dayToMystery[new Date().getDay()];
+    let idx = 0;
+
+    const els = {
+      title: document.getElementById('title'),
+      eyebrow: document.getElementById('eyebrow'),
+      subtitle: document.getElementById('subtitle'),
+      langBtn: document.getElementById('langBtn'),
+      resetBtn: document.getElementById('resetBtn'),
+      mysterySelect: document.getElementById('mysterySelect'),
+      progressFill: document.getElementById('progressFill'),
+      rosarioSvgBeads: document.getElementById('rosarioSvgBeads'),
+      rosarioTrackProgress: document.getElementById('rosarioTrackProgress'),
+      rosarioTrackPath: document.getElementById('rosarioTrackPath'),
+      beadsStrip: document.getElementById('beadsStrip'),
+      metaDecade: document.getElementById('metaDecade'),
+      metaStep: document.getElementById('metaStep'),
+      prayerName: document.getElementById('prayerName'),
+      prayerText: document.getElementById('prayerText'),
+      prevBtn: document.getElementById('prevBtn'),
+      nextBtn: document.getElementById('nextBtn')
+    };
+
+    function buildMysterySelect() {
+      const labels = i18n[lang].mysteries;
+      els.mysterySelect.innerHTML = '';
+      ['joyful', 'luminous', 'sorrowful', 'glorious'].forEach(k => {
+        const op = document.createElement('option');
+        op.value = k;
+        op.textContent = labels[k];
+        if (k === mystery) op.selected = true;
+        els.mysterySelect.appendChild(op);
+      });
+    }
+
+    function buildBeads() {
+      els.beadsStrip.innerHTML = '';
+      beads.forEach((b, i) => {
+        const btn = document.createElement('button');
+        btn.className = `bead ${b.type === 'large' ? 'large' : ''} ${b.type === 'cross' ? 'cross' : ''}`;
+        btn.setAttribute('aria-label', `Bead ${i + 1}`);
+        btn.addEventListener('click', () => {
+          idx = i;
+          render();
+        });
+        els.beadsStrip.appendChild(btn);
+      });
+    }
+
+    function buildSvgBeads() {
+      if (!els.rosarioSvgBeads) return;
+      els.rosarioSvgBeads.innerHTML = '';
+
+      const cx = 190;
+      const cy = 160;
+      const rx = 142;
+      const ry = 122;
+      const total = beads.length;
+
+      beads.forEach((b, i) => {
+        const angle = -Math.PI / 2 + (i / total) * 2 * Math.PI;
+        const x = cx + Math.cos(angle) * rx;
+        const y = cy + Math.sin(angle) * ry;
+
+        const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+        g.dataset.index = i;
+        g.classList.add('svg-bead');
+        if (b.type === 'large') g.classList.add('large');
+
+        if (b.type === 'cross') {
+          g.classList.add('svg-cross');
+          const r = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+          r.setAttribute('x', x - 6);
+          r.setAttribute('y', y - 6);
+          r.setAttribute('width', 12);
+          r.setAttribute('height', 12);
+          r.setAttribute('rx', 3);
+          g.appendChild(r);
+
+          const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+          t.setAttribute('x', x);
+          t.setAttribute('y', y + 3.2);
+          t.setAttribute('text-anchor', 'middle');
+          t.setAttribute('class', 'svg-cross-mark');
+          t.textContent = '✝';
+          g.appendChild(t);
+        } else {
+          const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+          c.setAttribute('cx', x);
+          c.setAttribute('cy', y);
+          c.setAttribute('r', b.type === 'large' ? 5.2 : 3.9);
+          g.appendChild(c);
+        }
+
+        g.addEventListener('click', () => {
+          idx = i;
+          render();
+        });
+
+        els.rosarioSvgBeads.appendChild(g);
+      });
+    }
+
+    function getMysteryForDecade(decade) {
+      if (decade < 1 || decade > 5) return '';
+      return i18n[lang].mysteryNames[mystery][decade - 1];
+    }
+
+    function updateUIText() {
+      const t = i18n[lang].ui;
+      els.eyebrow.textContent = t.eyebrow;
+      els.title.textContent = t.title;
+      els.subtitle.textContent = t.subtitle;
+      els.resetBtn.textContent = t.reset;
+      els.prevBtn.textContent = t.prev;
+      els.nextBtn.textContent = t.next;
+      els.langBtn.textContent = lang === 'es' ? 'EN' : 'ES';
+      document.documentElement.lang = lang;
+    }
+
+    function render() {
+      updateUIText();
+      buildMysterySelect();
+
+      const t = i18n[lang];
+      const current = beads[idx];
+      const prayerName = t.prayerNames[current.prayer] || '';
+      const prayerText = t.prayers[current.prayer] || '';
+      const isIntro = current.decade === 0;
+      const stepText = `${t.ui.step} ${idx + 1} ${t.ui.of} ${beads.length}`;
+
+      els.metaStep.textContent = stepText;
+      if (isIntro) {
+        els.metaDecade.textContent = `${t.ui.decade} 0 · ${t.ui.intro}`;
+      } else {
+        els.metaDecade.textContent = `${t.ui.decade} ${current.decade} · ${t.ui.mysteryLabel}: ${getMysteryForDecade(current.decade)}`;
+      }
+
+      els.prayerName.textContent = prayerName;
+      els.prayerText.textContent = prayerText;
+
+      const progress = ((idx + 1) / beads.length) * 100;
+      els.progressFill.style.width = `${progress}%`;
+
+      if (els.rosarioTrackPath && els.rosarioTrackProgress) {
+        const totalLen = els.rosarioTrackPath.getTotalLength();
+        const doneLen = (progress / 100) * totalLen;
+        els.rosarioTrackProgress.style.strokeDasharray = `${totalLen} ${totalLen}`;
+        els.rosarioTrackProgress.style.strokeDashoffset = `${totalLen - doneLen}`;
+      }
+
+      [...els.beadsStrip.children].forEach((el, i) => {
+        el.classList.toggle('active', i === idx);
+        el.classList.toggle('done', i < idx);
+      });
+
+      if (els.rosarioSvgBeads) {
+        [...els.rosarioSvgBeads.children].forEach((el, i) => {
+          el.classList.toggle('active', i === idx);
+          el.classList.toggle('done', i < idx);
+        });
+      }
+
+      const active = els.beadsStrip.children[idx];
+      if (active) active.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+
+      localStorage.setItem('tup_rosary_lang', lang);
+      localStorage.setItem('tup_rosary_mystery', mystery);
+    }
+
+    els.langBtn.addEventListener('click', () => {
+      lang = lang === 'es' ? 'en' : 'es';
+      render();
+    });
+
+    els.mysterySelect.addEventListener('change', (e) => {
+      mystery = e.target.value;
+      render();
+    });
+
+    els.resetBtn.addEventListener('click', () => {
+      idx = 0;
+      render();
+    });
+
+    els.prevBtn.addEventListener('click', () => {
+      idx = Math.max(0, idx - 1);
+      render();
+    });
+
+    els.nextBtn.addEventListener('click', () => {
+      idx = Math.min(beads.length - 1, idx + 1);
+      render();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        idx = Math.max(0, idx - 1);
+        render();
+      }
+      if (e.key === 'ArrowRight') {
+        idx = Math.min(beads.length - 1, idx + 1);
+        render();
+      }
+    });
+
+    buildBeads();
+    buildSvgBeads();
+    render();
+  </script>
+</body>
+</html>
