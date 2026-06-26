@@ -793,6 +793,7 @@ function renderIntercessorContent(data, meta) {
   _setMeta('twTitle',   'content', pageTitle);
   _setMeta('twDesc',    'content', desc);
   _setMeta('twImage',   'content', imgUrl);
+  _setMeta('canonicalUrl', 'href', pageUrl);
 
   // Hero
   const nameEl = document.getElementById('intercessorName');
