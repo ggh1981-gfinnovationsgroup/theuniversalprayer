@@ -103,6 +103,31 @@
       transition: width 0.28s ease;
     }
 
+    .rosario-decade-nav {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 0.45rem;
+      margin: 0 0 1rem;
+    }
+
+    .rosario-decade-btn {
+      border: 1px solid rgba(201,168,76,0.22);
+      background: rgba(255,255,255,0.03);
+      color: var(--white-dim);
+      border-radius: 12px;
+      padding: 0.55rem 0.2rem;
+      font-size: 0.76rem;
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+
+    .rosario-decade-btn.active {
+      color: var(--bg);
+      background: var(--gold);
+      border-color: var(--gold-light);
+      box-shadow: 0 0 18px rgba(201,168,76,0.28);
+    }
+
     .rosario-visual {
       border: 1px solid var(--border);
       border-radius: var(--radius);
@@ -191,26 +216,84 @@
     }
 
     .bead {
-      width: 20px;
-      height: 20px;
+      width: 24px;
+      height: 24px;
       border-radius: 50%;
       border: 1px solid rgba(201,168,76,0.4);
       background: rgba(201,168,76,0.12);
       cursor: pointer;
       flex: 0 0 auto;
-      transition: transform .2s ease, background .2s ease, border-color .2s ease;
+      transition: transform .2s ease, background .2s ease, border-color .2s ease, color .2s ease;
+      position: relative;
+      color: var(--gold-light);
     }
 
     .bead.large {
-      width: 24px;
-      height: 24px;
+      width: 30px;
+      height: 30px;
       background: rgba(201,168,76,0.20);
       border-color: rgba(201,168,76,0.65);
     }
 
+    .bead::before {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .bead.prayer-creed::before { content: 'C'; }
+    .bead.prayer-ourFather::before { content: 'P'; }
+    .bead.prayer-hailMary::before { content: 'A'; }
+    .bead.prayer-gloryBe::before { content: 'G'; }
+    .bead.prayer-fatima::before { content: 'F'; }
+    .bead.prayer-hailHolyQueen::before { content: 'S'; }
+
+    .bead.prayer-creed,
+    .bead.prayer-ourFather,
+    .bead.prayer-gloryBe,
+    .bead.prayer-fatima,
+    .bead.prayer-hailHolyQueen {
+      border-radius: 10px;
+    }
+
+    .bead.prayer-ourFather {
+      background: rgba(90, 140, 220, 0.18);
+      border-color: rgba(122, 168, 245, 0.58);
+      color: #cfe2ff;
+    }
+
+    .bead.prayer-hailMary {
+      background: rgba(201,168,76,0.14);
+      border-color: rgba(201,168,76,0.4);
+      color: #e7cf88;
+    }
+
+    .bead.prayer-gloryBe {
+      background: rgba(120, 86, 205, 0.18);
+      border-color: rgba(163, 136, 235, 0.52);
+      color: #daccff;
+    }
+
+    .bead.prayer-fatima {
+      background: rgba(58, 142, 115, 0.18);
+      border-color: rgba(92, 194, 158, 0.52);
+      color: #c6f5e8;
+    }
+
+    .bead.prayer-creed,
+    .bead.prayer-hailHolyQueen {
+      background: rgba(194, 120, 72, 0.16);
+      border-color: rgba(220, 164, 121, 0.5);
+      color: #ffd8bb;
+    }
+
     .bead.cross {
-      width: 24px;
-      height: 24px;
+      width: 30px;
+      height: 30px;
       border-radius: 7px;
       position: relative;
       background: rgba(201,168,76,0.16);
@@ -218,7 +301,7 @@
 
     .bead.cross::before {
       content: '✝';
-      font-size: 0.7rem;
+      font-size: 0.82rem;
       color: var(--gold-light);
       position: absolute;
       inset: 0;
@@ -236,6 +319,11 @@
     .bead.done {
       background: rgba(240,236,228,0.36);
       border-color: rgba(240,236,228,0.45);
+    }
+
+    .bead.done::before,
+    .bead.active::before {
+      color: #1b1e30;
     }
 
     .rosario-card {
@@ -323,12 +411,54 @@
     }
 
     @media (max-width: 700px) {
+      .rosario-wrap {
+        padding: 1rem 0.8rem 3rem;
+      }
+
       .rosario-controls {
         grid-template-columns: 1fr;
       }
 
+      .rosario-decade-nav {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .rosario-visual {
+        padding: 0.35rem;
+      }
+
+      .rosario-svg {
+        min-height: 260px;
+      }
+
+      .beads-strip {
+        gap: 0.46rem;
+        padding-bottom: 1rem;
+        scroll-snap-type: x proximity;
+      }
+
+      .bead {
+        width: 34px;
+        height: 34px;
+        scroll-snap-align: center;
+      }
+
+      .bead.large,
+      .bead.cross {
+        width: 40px;
+        height: 40px;
+      }
+
+      .bead::before {
+        font-size: 0.78rem;
+      }
+
       .rosario-prayer-text {
         min-height: 112px;
+      }
+
+      .rosario-actions {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -360,6 +490,8 @@
     <div class="rosario-progress" aria-hidden="true">
       <div class="rosario-progress-fill" id="progressFill"></div>
     </div>
+
+    <div class="rosario-decade-nav" id="decadeNav" aria-label="Décadas del rosario"></div>
 
     <section class="rosario-visual" aria-label="Rosario visual animado">
       <svg class="rosario-svg" viewBox="0 0 380 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rosarioSvgTitle">
@@ -539,6 +671,7 @@
       resetBtn: document.getElementById('resetBtn'),
       mysterySelect: document.getElementById('mysterySelect'),
       progressFill: document.getElementById('progressFill'),
+      decadeNav: document.getElementById('decadeNav'),
       rosarioSvgBeads: document.getElementById('rosarioSvgBeads'),
       rosarioTrackProgress: document.getElementById('rosarioTrackProgress'),
       rosarioTrackPath: document.getElementById('rosarioTrackPath'),
@@ -661,13 +794,34 @@
       els.beadsStrip.innerHTML = '';
       beads.forEach((b, i) => {
         const btn = document.createElement('button');
-        btn.className = `bead ${b.type === 'large' ? 'large' : ''} ${b.type === 'cross' ? 'cross' : ''}`;
+        btn.className = `bead prayer-${b.prayer} ${b.type === 'large' ? 'large' : ''} ${b.type === 'cross' ? 'cross' : ''}`;
         btn.setAttribute('aria-label', `Bead ${i + 1}`);
+        btn.title = b.prayer;
         btn.addEventListener('click', () => {
           idx = i;
           render();
         });
         els.beadsStrip.appendChild(btn);
+      });
+    }
+
+    function buildDecadeNav() {
+      if (!els.decadeNav) return;
+      els.decadeNav.innerHTML = '';
+      const labels = ['0', '1', '2', '3', '4', '5', 'Fin'];
+      labels.forEach((label, navIndex) => {
+        const btn = document.createElement('button');
+        btn.className = 'rosario-decade-btn';
+        btn.type = 'button';
+        btn.dataset.decade = navIndex === 6 ? '6' : String(navIndex);
+        btn.textContent = label;
+        btn.addEventListener('click', () => {
+          const decade = Number(btn.dataset.decade);
+          const targetIndex = beads.findIndex(b => b.decade === decade);
+          idx = targetIndex >= 0 ? targetIndex : idx;
+          render();
+        });
+        els.decadeNav.appendChild(btn);
       });
     }
 
@@ -786,6 +940,13 @@
         });
       }
 
+      if (els.decadeNav) {
+        [...els.decadeNav.children].forEach((el) => {
+          const decade = Number(el.dataset.decade);
+          el.classList.toggle('active', decade === current.decade || (current.decade > 5 && decade === 6));
+        });
+      }
+
       const active = els.beadsStrip.children[idx];
       if (active) active.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
 
@@ -846,6 +1007,7 @@
     }
 
     buildBeads();
+    buildDecadeNav();
     buildSvgBeads();
     render();
   </script>
