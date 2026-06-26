@@ -794,6 +794,7 @@ function renderIntercessorContent(data, meta) {
   _setMeta('twDesc',    'content', desc);
   _setMeta('twImage',   'content', imgUrl);
   _setMeta('canonicalUrl', 'href', pageUrl);
+  setIntercessorStructuredData(data, pageUrl, imgUrl, desc, lang);
 
   // Hero
   const nameEl = document.getElementById('intercessorName');
@@ -907,6 +908,34 @@ function renderIntercessorContent(data, meta) {
   }
   if (btnPlay) btnPlay.textContent = lang === 'es' ? '▶ Leer en voz alta' : '▶ Read aloud';
   _ttsUpdateButtons();
+}
+
+function setIntercessorStructuredData(data, pageUrl, imgUrl, desc, lang) {
+  const scriptEl = document.getElementById('intercessorJsonLd');
+  if (!scriptEl || !data || !data.name) return;
+
+  const saint = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfilePage',
+    mainEntity: {
+      '@type': 'Person',
+      name: data.name[lang] || data.name.es || data.name.en || 'Intercessor',
+      alternateName: [data.name.es, data.name.en].filter(Boolean),
+      description: desc,
+      image: imgUrl,
+      sameAs: [pageUrl]
+    },
+    name: `${data.name[lang] || data.name.es || data.name.en} | The Universal Prayer`,
+    inLanguage: lang,
+    url: pageUrl,
+    isPartOf: {
+      '@type': 'WebSite',
+      name: 'The Universal Prayer',
+      url: 'https://www.theuniversalprayer.com/'
+    }
+  };
+
+  scriptEl.textContent = JSON.stringify(saint);
 }
 
 function paragraphify(text) {
