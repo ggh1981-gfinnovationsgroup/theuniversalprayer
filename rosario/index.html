@@ -566,6 +566,32 @@
       background: rgba(201,168,76,0.12);
     }
 
+    .rosario-action.skip {
+      grid-column: 1 / -1;
+    }
+
+    .rosario-complete {
+      margin-top: 0.9rem;
+      border: 1px solid rgba(201,168,76,0.32);
+      border-radius: 14px;
+      background: linear-gradient(180deg, rgba(201,168,76,0.14), rgba(255,255,255,0.03));
+      padding: 0.95rem;
+    }
+
+    .rosario-complete-title {
+      color: var(--gold-light);
+      font-family: var(--font-serif);
+      font-size: 1.08rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .rosario-complete-text {
+      color: var(--white-dim);
+      font-size: 0.9rem;
+      margin-bottom: 0.7rem;
+      line-height: 1.55;
+    }
+
     @media (max-width: 900px) {
       .rosario-experience {
         grid-template-columns: 1fr;
@@ -801,9 +827,16 @@
           <div class="rosario-tts-note" id="ttsNoSupport" style="display:none">Tu navegador no soporta audio en voz alta en esta página.</div>
 
           <div class="rosario-actions">
+            <button class="rosario-action skip" id="skipLitanyBtn" style="display:none">⤼ Saltar letanías</button>
             <button class="rosario-action" id="prevBtn">← Anterior</button>
             <button class="rosario-action" id="nextBtn">Siguiente →</button>
           </div>
+
+          <section class="rosario-complete" id="completeCard" style="display:none" aria-live="polite">
+            <h3 class="rosario-complete-title" id="completeTitle">Rosario completado</h3>
+            <p class="rosario-complete-text" id="completeText">Has terminado este rosario. Puedes reiniciar o elegir otro misterio.</p>
+            <button class="rosario-action" id="completeRestartBtn">↺ Rezar de nuevo</button>
+          </section>
         </section>
       </div>
 
@@ -854,7 +887,12 @@
           decade: 'Década',
           intro: 'Introducción',
           mysteryLabel: 'Misterio',
-          ending: 'Cierre'
+          ending: 'Cierre',
+          litanyItem: 'Letanía',
+          skipLitany: '⤼ Saltar letanías',
+          completedTitle: 'Rosario completado',
+          completedText: 'Has terminado este rosario. Puedes reiniciar o elegir otro misterio.',
+          prayAgain: '↺ Rezar de nuevo'
         },
         mysteries: {
           joyful: 'Misterios Gozosos (Lun/Sáb)',
@@ -914,7 +952,12 @@
           decade: 'Decade',
           intro: 'Introduction',
           mysteryLabel: 'Mystery',
-          ending: 'Closing'
+          ending: 'Closing',
+          litanyItem: 'Litany',
+          skipLitany: '⤼ Skip litanies',
+          completedTitle: 'Rosary completed',
+          completedText: 'You have completed this rosary. You can restart or choose another mystery.',
+          prayAgain: '↺ Pray again'
         },
         mysteries: {
           joyful: 'Joyful Mysteries (Mon/Sat)',
@@ -1116,6 +1159,14 @@
     beads.push({ type: 'large', prayer: 'closingPrayer', decade: 6 });
     beads.push({ type: 'large', prayer: 'soulsPrayer', decade: 6 });
 
+    const litanyStartIndex = beads.findIndex((b) => b.prayer === 'litanyStep');
+    const litanyEndIndex = (() => {
+      for (let i = beads.length - 1; i >= 0; i--) {
+        if (beads[i].prayer === 'litanyStep') return i;
+      }
+      return -1;
+    })();
+
     const dayToMystery = ['glorious', 'joyful', 'sorrowful', 'glorious', 'luminous', 'sorrowful', 'joyful'];
 
     let lang = localStorage.getItem('tup_rosary_lang') || 'es';
@@ -1151,8 +1202,13 @@
       ttsPauseBtn: document.getElementById('ttsPauseBtn'),
       ttsStopBtn: document.getElementById('ttsStopBtn'),
       ttsNoSupport: document.getElementById('ttsNoSupport'),
+      skipLitanyBtn: document.getElementById('skipLitanyBtn'),
       prevBtn: document.getElementById('prevBtn'),
-      nextBtn: document.getElementById('nextBtn')
+      nextBtn: document.getElementById('nextBtn'),
+      completeCard: document.getElementById('completeCard'),
+      completeTitle: document.getElementById('completeTitle'),
+      completeText: document.getElementById('completeText'),
+      completeRestartBtn: document.getElementById('completeRestartBtn')
     };
 
     function getPrayerNameForBead(bead) {
@@ -1168,6 +1224,10 @@
         return litanySteps[lang][bead.litanyIndex] || '';
       }
       return i18n[lang].prayers[bead.prayer] || '';
+    }
+
+    function isInLitanyRange(index) {
+      return litanyStartIndex >= 0 && litanyEndIndex >= 0 && index >= litanyStartIndex && index <= litanyEndIndex;
     }
 
     function getRosaryTtsText() {
@@ -1462,6 +1522,10 @@
       els.resetBtn.textContent = t.reset;
       els.prevBtn.textContent = t.prev;
       els.nextBtn.textContent = t.next;
+      els.skipLitanyBtn.textContent = t.skipLitany;
+      els.completeTitle.textContent = t.completedTitle;
+      els.completeText.textContent = t.completedText;
+      els.completeRestartBtn.textContent = t.prayAgain;
       els.langBtn.textContent = lang === 'es' ? 'EN' : 'ES';
       document.documentElement.lang = lang;
       updateTtsButtons();
@@ -1475,8 +1539,11 @@
       const current = beads[idx];
       const prayerName = getPrayerNameForBead(current);
       const prayerText = getPrayerTextForBead(current);
+      const isLitanyStep = current.prayer === 'litanyStep';
       const isIntro = current.decade === 0;
-      const stepText = `${t.ui.step} ${idx + 1} ${t.ui.of} ${beads.length}`;
+      const stepText = isLitanyStep
+        ? `${t.ui.litanyItem} ${current.litanyIndex + 1} ${t.ui.of} ${litanySteps[lang].length} · ${t.ui.step} ${idx + 1} ${t.ui.of} ${beads.length}`
+        : `${t.ui.step} ${idx + 1} ${t.ui.of} ${beads.length}`;
       const currentMystery = current.decade >= 1 && current.decade <= 5 ? getMysteryForDecade(current.decade) : '';
 
       els.metaStep.textContent = stepText;
@@ -1504,6 +1571,14 @@
 
       els.prayerName.textContent = prayerName;
       els.prayerText.textContent = prayerText;
+
+      if (els.skipLitanyBtn) {
+        els.skipLitanyBtn.style.display = isInLitanyRange(idx) ? '' : 'none';
+      }
+
+      if (els.completeCard) {
+        els.completeCard.style.display = idx === beads.length - 1 ? '' : 'none';
+      }
 
       const progress = ((idx + 1) / beads.length) * 100;
       els.progressFill.style.width = `${progress}%`;
@@ -1562,6 +1637,13 @@
       render();
     });
 
+    els.skipLitanyBtn.addEventListener('click', () => {
+      if (isInLitanyRange(idx)) {
+        idx = Math.min(beads.length - 1, litanyEndIndex + 1);
+        render();
+      }
+    });
+
     els.prevBtn.addEventListener('click', () => {
       idx = Math.max(0, idx - 1);
       render();
@@ -1569,6 +1651,11 @@
 
     els.nextBtn.addEventListener('click', () => {
       idx = Math.min(beads.length - 1, idx + 1);
+      render();
+    });
+
+    els.completeRestartBtn.addEventListener('click', () => {
+      idx = 0;
       render();
     });
 
