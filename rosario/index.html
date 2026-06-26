@@ -455,6 +455,36 @@
       margin-bottom: 0.5rem;
     }
 
+    .rosario-mystery-card {
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 16px;
+      background: linear-gradient(180deg, rgba(201,168,76,0.08), rgba(255,255,255,0.02));
+      padding: 0.9rem 1rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .rosario-mystery-label {
+      color: var(--gold);
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.35rem;
+    }
+
+    .rosario-mystery-title {
+      color: var(--gold-light);
+      font-family: var(--font-serif);
+      font-size: clamp(1rem, 2vw, 1.28rem);
+      line-height: 1.35;
+    }
+
+    .rosario-mystery-note {
+      color: var(--white-dim);
+      font-size: 0.86rem;
+      line-height: 1.55;
+      margin-top: 0.4rem;
+    }
+
     .rosario-prayer-text {
       white-space: pre-line;
       color: var(--white);
@@ -612,6 +642,11 @@
         <span id="metaDecade">Década 0</span>
         <span id="metaStep">Cuenta 1 de 59</span>
       </div>
+      <div class="rosario-mystery-card" id="mysteryCard" style="display:none">
+        <div class="rosario-mystery-label" id="mysteryLabelText">Misterio de esta década</div>
+        <div class="rosario-mystery-title" id="mysteryTitleText"></div>
+        <div class="rosario-mystery-note" id="mysteryNoteText"></div>
+      </div>
       <h2 class="rosario-prayer-name" id="prayerName">Señal de la Cruz</h2>
       <p class="rosario-prayer-text" id="prayerText"></p>
 
@@ -645,6 +680,8 @@
           ttsStop: '⏹ Detener',
           ttsUnsupported: 'Tu navegador no soporta audio en voz alta en esta página.',
           mobileCurrentTitle: 'Década actual',
+          currentMystery: 'Misterio de esta década',
+          currentMysteryNote: 'Estas diez Ave Marías se rezan contemplando este misterio.',
           step: 'Cuenta',
           of: 'de',
           decade: 'Década',
@@ -696,6 +733,8 @@
           ttsStop: '⏹ Stop',
           ttsUnsupported: 'Your browser does not support read-aloud on this page.',
           mobileCurrentTitle: 'Current decade',
+          currentMystery: 'Mystery for this decade',
+          currentMysteryNote: 'These ten Hail Marys are prayed while contemplating this mystery.',
           step: 'Bead',
           of: 'of',
           decade: 'Decade',
@@ -778,6 +817,10 @@
       beadsStrip: document.getElementById('beadsStrip'),
       metaDecade: document.getElementById('metaDecade'),
       metaStep: document.getElementById('metaStep'),
+      mysteryCard: document.getElementById('mysteryCard'),
+      mysteryLabelText: document.getElementById('mysteryLabelText'),
+      mysteryTitleText: document.getElementById('mysteryTitleText'),
+      mysteryNoteText: document.getElementById('mysteryNoteText'),
       prayerName: document.getElementById('prayerName'),
       prayerText: document.getElementById('prayerText'),
       ttsPlayBtn: document.getElementById('ttsPlayBtn'),
@@ -1094,12 +1137,24 @@
       const prayerText = t.prayers[current.prayer] || '';
       const isIntro = current.decade === 0;
       const stepText = `${t.ui.step} ${idx + 1} ${t.ui.of} ${beads.length}`;
+      const currentMystery = current.decade >= 1 && current.decade <= 5 ? getMysteryForDecade(current.decade) : '';
 
       els.metaStep.textContent = stepText;
       if (isIntro) {
         els.metaDecade.textContent = `${t.ui.decade} 0 · ${t.ui.intro}`;
       } else {
-        els.metaDecade.textContent = `${t.ui.decade} ${current.decade} · ${t.ui.mysteryLabel}: ${getMysteryForDecade(current.decade)}`;
+        els.metaDecade.textContent = `${t.ui.decade} ${current.decade} · ${t.ui.mysteryLabel}: ${currentMystery}`;
+      }
+
+      if (els.mysteryCard) {
+        if (current.decade >= 1 && current.decade <= 5) {
+          els.mysteryCard.style.display = '';
+          els.mysteryLabelText.textContent = t.ui.currentMystery;
+          els.mysteryTitleText.textContent = currentMystery;
+          els.mysteryNoteText.textContent = t.ui.currentMysteryNote;
+        } else {
+          els.mysteryCard.style.display = 'none';
+        }
       }
 
       els.prayerName.textContent = prayerName;
