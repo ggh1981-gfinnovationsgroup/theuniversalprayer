@@ -195,8 +195,9 @@
       border: 1px solid var(--border);
       border-radius: var(--radius);
       background: linear-gradient(180deg, rgba(201,168,76,0.08), rgba(21,26,44,0.9));
-      padding: 0.75rem;
-      margin-bottom: 1rem;
+      padding: 0.85rem 0.65rem;
+      margin: 0 auto 1rem;
+      max-width: 360px;
       overflow: hidden;
     }
 
@@ -204,11 +205,11 @@
       width: 100%;
       height: auto;
       display: block;
-      max-height: 420px;
+      max-height: 500px;
     }
 
     .rosario-halo {
-      transform-origin: 190px 160px;
+      transform-origin: 130px 250px;
       animation: rosarioHaloPulse 3.2s ease-in-out infinite;
     }
 
@@ -219,15 +220,18 @@
 
     .rosario-svg-track {
       fill: none;
-      stroke: rgba(201,168,76,0.28);
-      stroke-width: 7;
+      stroke: rgba(201,168,76,0.18);
+      stroke-width: 4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
 
     .rosario-svg-progress {
       fill: none;
       stroke: #e7cf88;
-      stroke-width: 7;
+      stroke-width: 4.5;
       stroke-linecap: round;
+      stroke-linejoin: round;
       transition: stroke-dashoffset 0.3s ease;
       filter: drop-shadow(0 0 8px rgba(231,207,136,0.45));
     }
@@ -244,6 +248,21 @@
     .svg-bead.large {
       fill: rgba(201,168,76,0.3);
       stroke: rgba(201,168,76,0.75);
+    }
+
+    .svg-bead.fatima {
+      fill: rgba(58, 142, 115, 0.18);
+      stroke: rgba(92, 194, 158, 0.52);
+    }
+
+    .svg-bead.gloryBe {
+      fill: rgba(120, 86, 205, 0.18);
+      stroke: rgba(163, 136, 235, 0.52);
+    }
+
+    .svg-bead.ourFather {
+      fill: rgba(90, 140, 220, 0.18);
+      stroke: rgba(122, 168, 245, 0.58);
     }
 
     .svg-bead.done {
@@ -547,7 +566,7 @@
     </section>
 
     <section class="rosario-visual" aria-label="Rosario visual animado">
-      <svg class="rosario-svg" viewBox="0 0 380 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rosarioSvgTitle">
+      <svg class="rosario-svg" viewBox="0 0 260 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rosarioSvgTitle">
         <title id="rosarioSvgTitle">Rosario interactivo</title>
         <defs>
           <radialGradient id="rosarioCenterGrad" cx="50%" cy="50%" r="50%">
@@ -556,9 +575,9 @@
             <stop offset="100%" stop-color="#e7cf88" stop-opacity="0" />
           </radialGradient>
         </defs>
-        <circle class="rosario-halo" cx="190" cy="160" r="58" fill="url(#rosarioCenterGrad)" />
-        <path id="rosarioTrackPath" class="rosario-svg-track" d="M 190 32 A 142 122 0 1 1 189.9 32" />
-        <path id="rosarioTrackProgress" class="rosario-svg-progress" d="M 190 32 A 142 122 0 1 1 189.9 32" />
+        <circle class="rosario-halo" cx="130" cy="250" r="52" fill="url(#rosarioCenterGrad)" />
+        <path id="rosarioTrackPath" class="rosario-svg-track" d="" />
+        <path id="rosarioTrackProgress" class="rosario-svg-progress" d="" />
         <g id="rosarioSvgBeads"></g>
       </svg>
     </section>
@@ -931,35 +950,53 @@
       if (!els.rosarioSvgBeads) return;
       els.rosarioSvgBeads.innerHTML = '';
 
-      const cx = 190;
-      const cy = 160;
-      const rx = 142;
-      const ry = 122;
-      const total = beads.length;
+      const points = [];
+      points.push({ x: 130, y: 28 });
+      points.push({ x: 130, y: 62 });
+      points.push({ x: 130, y: 96 });
+      points.push({ x: 98, y: 126 });
+      points.push({ x: 130, y: 126 });
+      points.push({ x: 162, y: 126 });
+      points.push({ x: 130, y: 156 });
+
+      const row1 = [74, 104, 134, 164, 194];
+      const row2 = [194, 164, 134, 104, 74];
+      let yBase = 188;
+      for (let decade = 1; decade <= 5; decade++) {
+        points.push({ x: 34, y: yBase });
+        row1.forEach((x) => points.push({ x, y: yBase }));
+        row2.forEach((x) => points.push({ x, y: yBase + 24 }));
+        points.push({ x: 34, y: yBase + 24 });
+        points.push({ x: 226, y: yBase + 24 });
+        yBase += 50;
+      }
+
+      points.push({ x: 130, y: 430 });
 
       beads.forEach((b, i) => {
-        const angle = -Math.PI / 2 + (i / total) * 2 * Math.PI;
-        const x = cx + Math.cos(angle) * rx;
-        const y = cy + Math.sin(angle) * ry;
+        const point = points[i];
+        const x = point.x;
+        const y = point.y;
 
         const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
         g.dataset.index = i;
         g.classList.add('svg-bead');
         if (b.type === 'large') g.classList.add('large');
+        if (b.prayer) g.classList.add(b.prayer);
 
         if (b.type === 'cross') {
           g.classList.add('svg-cross');
           const r = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-          r.setAttribute('x', x - 6);
-          r.setAttribute('y', y - 6);
-          r.setAttribute('width', 12);
-          r.setAttribute('height', 12);
+          r.setAttribute('x', x - 8);
+          r.setAttribute('y', y - 8);
+          r.setAttribute('width', 16);
+          r.setAttribute('height', 16);
           r.setAttribute('rx', 3);
           g.appendChild(r);
 
           const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
           t.setAttribute('x', x);
-          t.setAttribute('y', y + 3.2);
+          t.setAttribute('y', y + 3.6);
           t.setAttribute('text-anchor', 'middle');
           t.setAttribute('class', 'svg-cross-mark');
           t.textContent = '✝';
@@ -979,6 +1016,10 @@
 
         els.rosarioSvgBeads.appendChild(g);
       });
+
+      const pathD = points.map((point, index) => `${index === 0 ? 'M' : 'L'} ${point.x} ${point.y}`).join(' ');
+      if (els.rosarioTrackPath) els.rosarioTrackPath.setAttribute('d', pathD);
+      if (els.rosarioTrackProgress) els.rosarioTrackProgress.setAttribute('d', pathD);
     }
 
     function getMysteryForDecade(decade) {
