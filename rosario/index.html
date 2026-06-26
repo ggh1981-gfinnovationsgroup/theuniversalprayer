@@ -29,6 +29,18 @@
       padding: 2rem 1rem 4rem;
     }
 
+    .rosario-experience {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .rosario-primary,
+    .rosario-secondary {
+      min-width: 0;
+    }
+
     .rosario-hero {
       border: 1px solid var(--border);
       border-radius: var(--radius);
@@ -436,6 +448,8 @@
       border-radius: var(--radius);
       background: var(--bg-card);
       padding: 1.05rem 1rem;
+      position: sticky;
+      top: 1rem;
     }
 
     .rosario-meta {
@@ -546,6 +560,14 @@
     }
 
     @media (max-width: 900px) {
+      .rosario-experience {
+        grid-template-columns: 1fr;
+      }
+
+      .rosario-card {
+        position: static;
+      }
+
       .rosario-visual {
         display: none;
       }
@@ -606,60 +628,66 @@
       </div>
     </section>
 
-    <div class="rosario-progress" aria-hidden="true">
-      <div class="rosario-progress-fill" id="progressFill"></div>
-    </div>
+    <section class="rosario-experience">
+      <div class="rosario-primary">
+        <div class="rosario-progress" aria-hidden="true">
+          <div class="rosario-progress-fill" id="progressFill"></div>
+        </div>
 
-    <div class="rosario-decade-nav" id="decadeNav" aria-label="Décadas del rosario"></div>
+        <div class="rosario-decade-nav" id="decadeNav" aria-label="Décadas del rosario"></div>
 
-    <section class="rosario-mobile-current" aria-label="Década actual en móvil">
-      <div class="rosario-mobile-current-title" id="mobileCurrentTitle">Década actual</div>
-      <div class="rosario-mobile-current-strip" id="mobileCurrentStrip"></div>
-    </section>
+        <section class="rosario-mobile-current" aria-label="Década actual en móvil">
+          <div class="rosario-mobile-current-title" id="mobileCurrentTitle">Década actual</div>
+          <div class="rosario-mobile-current-strip" id="mobileCurrentStrip"></div>
+        </section>
 
-    <section class="rosario-visual" aria-label="Rosario visual animado">
-      <svg class="rosario-svg" viewBox="0 0 260 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rosarioSvgTitle">
-        <title id="rosarioSvgTitle">Rosario interactivo</title>
-        <defs>
-          <radialGradient id="rosarioCenterGrad" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="#fff4cf" stop-opacity="0.95" />
-            <stop offset="65%" stop-color="#e7cf88" stop-opacity="0.55" />
-            <stop offset="100%" stop-color="#e7cf88" stop-opacity="0" />
-          </radialGradient>
-        </defs>
-        <circle class="rosario-halo" cx="130" cy="176" r="38" fill="url(#rosarioCenterGrad)" />
-        <path id="rosarioTrackPath" class="rosario-svg-track" d="" />
-        <path id="rosarioTrackProgress" class="rosario-svg-progress" d="" />
-        <g id="rosarioSvgDecor"></g>
-        <g id="rosarioSvgBeads"></g>
-      </svg>
-    </section>
+        <section class="rosario-card">
+          <div class="rosario-meta">
+            <span id="metaDecade">Década 0</span>
+            <span id="metaStep">Cuenta 1 de 59</span>
+          </div>
+          <div class="rosario-mystery-card" id="mysteryCard" style="display:none">
+            <div class="rosario-mystery-label" id="mysteryLabelText">Misterio de esta década</div>
+            <div class="rosario-mystery-title" id="mysteryTitleText"></div>
+            <div class="rosario-mystery-note" id="mysteryNoteText"></div>
+          </div>
+          <h2 class="rosario-prayer-name" id="prayerName">Señal de la Cruz</h2>
+          <p class="rosario-prayer-text" id="prayerText"></p>
 
-    <div class="beads-strip" id="beadsStrip" aria-label="Rosary beads"></div>
+          <div class="rosario-tts">
+            <button class="rosario-tts-btn" id="ttsPlayBtn">🔊 Leer en voz alta</button>
+            <button class="rosario-tts-btn" id="ttsPauseBtn" style="display:none">⏸ Pausar</button>
+            <button class="rosario-tts-btn" id="ttsStopBtn" style="display:none">⏹ Detener</button>
+          </div>
+          <div class="rosario-tts-note" id="ttsNoSupport" style="display:none">Tu navegador no soporta audio en voz alta en esta página.</div>
 
-    <section class="rosario-card">
-      <div class="rosario-meta">
-        <span id="metaDecade">Década 0</span>
-        <span id="metaStep">Cuenta 1 de 59</span>
+          <div class="rosario-actions">
+            <button class="rosario-action" id="prevBtn">← Anterior</button>
+            <button class="rosario-action" id="nextBtn">Siguiente →</button>
+          </div>
+        </section>
       </div>
-      <div class="rosario-mystery-card" id="mysteryCard" style="display:none">
-        <div class="rosario-mystery-label" id="mysteryLabelText">Misterio de esta década</div>
-        <div class="rosario-mystery-title" id="mysteryTitleText"></div>
-        <div class="rosario-mystery-note" id="mysteryNoteText"></div>
-      </div>
-      <h2 class="rosario-prayer-name" id="prayerName">Señal de la Cruz</h2>
-      <p class="rosario-prayer-text" id="prayerText"></p>
 
-      <div class="rosario-tts">
-        <button class="rosario-tts-btn" id="ttsPlayBtn">🔊 Leer en voz alta</button>
-        <button class="rosario-tts-btn" id="ttsPauseBtn" style="display:none">⏸ Pausar</button>
-        <button class="rosario-tts-btn" id="ttsStopBtn" style="display:none">⏹ Detener</button>
-      </div>
-      <div class="rosario-tts-note" id="ttsNoSupport" style="display:none">Tu navegador no soporta audio en voz alta en esta página.</div>
+      <div class="rosario-secondary">
+        <section class="rosario-visual" aria-label="Rosario visual animado">
+          <svg class="rosario-svg" viewBox="0 0 260 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rosarioSvgTitle">
+            <title id="rosarioSvgTitle">Rosario interactivo</title>
+            <defs>
+              <radialGradient id="rosarioCenterGrad" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#fff4cf" stop-opacity="0.95" />
+                <stop offset="65%" stop-color="#e7cf88" stop-opacity="0.55" />
+                <stop offset="100%" stop-color="#e7cf88" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+            <circle class="rosario-halo" cx="130" cy="176" r="38" fill="url(#rosarioCenterGrad)" />
+            <path id="rosarioTrackPath" class="rosario-svg-track" d="" />
+            <path id="rosarioTrackProgress" class="rosario-svg-progress" d="" />
+            <g id="rosarioSvgDecor"></g>
+            <g id="rosarioSvgBeads"></g>
+          </svg>
+        </section>
 
-      <div class="rosario-actions">
-        <button class="rosario-action" id="prevBtn">← Anterior</button>
-        <button class="rosario-action" id="nextBtn">Siguiente →</button>
+        <div class="beads-strip" id="beadsStrip" aria-label="Rosary beads"></div>
       </div>
     </section>
   </main>
