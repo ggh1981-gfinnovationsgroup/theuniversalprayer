@@ -1029,11 +1029,11 @@
 
       const loopPoints = [];
       const cx = 130;
-      const cy = 312;
-      const rx = 78;
-      const ry = 118;
-      const startAngle = 4.16;
-      const endAngle = 8.40;
+      const cy = 310;
+      const rx = 74;
+      const ry = 112;
+      const startAngle = 4.1;
+      const endAngle = 8.46;
       const loopCount = beads.length - introPoints.length;
 
       for (let i = 0; i < loopCount; i++) {
@@ -1042,6 +1042,11 @@
         const x = cx + Math.cos(angle) * rx;
         const y = cy + Math.sin(angle) * ry + Math.max(0, Math.sin(angle)) * 22;
         loopPoints.push({ x, y });
+      }
+
+      if (loopPoints.length > 1) {
+        loopPoints[0] = { x: 108, y: 188 };
+        loopPoints[loopPoints.length - 1] = { x: 152, y: 188 };
       }
 
       const points = [...introPoints, ...loopPoints];
@@ -1103,7 +1108,8 @@
         `L 130 163`,
         `L 130 176`,
         `L ${points[7].x} ${points[7].y}`,
-        points.slice(8).map((point) => `L ${point.x} ${point.y}`).join(' ')
+        points.slice(8).map((point) => `L ${point.x} ${point.y}`).join(' '),
+        `L 130 176`
       ].join(' ');
       if (els.rosarioTrackPath) els.rosarioTrackPath.setAttribute('d', pathD);
       if (els.rosarioTrackProgress) els.rosarioTrackProgress.setAttribute('d', pathD);
