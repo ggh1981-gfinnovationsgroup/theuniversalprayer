@@ -71,14 +71,13 @@
 
     .rosario-controls {
       display: grid;
-      grid-template-columns: 1fr auto auto;
+      grid-template-columns: 1fr auto;
       gap: 0.65rem;
       margin: 1rem 0 0.4rem;
     }
 
     .rosario-select,
-    .rosario-btn,
-    .rosario-lang {
+    .rosario-btn {
       border: 1px solid var(--gold-dim);
       background: var(--bg-card);
       color: var(--white);
@@ -87,14 +86,12 @@
       font-size: 0.88rem;
     }
 
-    .rosario-btn,
-    .rosario-lang {
+    .rosario-btn {
       cursor: pointer;
       transition: all var(--transition);
     }
 
-    .rosario-btn:hover,
-    .rosario-lang:hover {
+    .rosario-btn:hover {
       border-color: var(--gold);
       color: var(--gold-light);
     }
@@ -743,7 +740,6 @@
         grid-template-columns: 1fr;
       }
 
-      .rosario-lang,
       .rosario-btn,
       .rosario-select {
         width: 100%;
@@ -776,6 +772,7 @@
         <span class="cross">✝</span>
         <span class="logo-text">The Universal Prayer</span>
       </a>
+      <button class="lang-toggle" id="langToggle" aria-label="Toggle language">EN</button>
     </div>
   </header>
 
@@ -787,7 +784,6 @@
 
       <div class="rosario-controls">
         <select class="rosario-select" id="mysterySelect"></select>
-        <button class="rosario-lang" id="langBtn">EN</button>
         <button class="rosario-btn" id="resetBtn">↺ Reiniciar</button>
       </div>
     </section>
@@ -1168,7 +1164,7 @@
 
     const dayToMystery = ['glorious', 'joyful', 'sorrowful', 'glorious', 'luminous', 'sorrowful', 'joyful'];
 
-    let lang = localStorage.getItem('tup_rosary_lang') || 'es';
+    let lang = localStorage.getItem('tup_lang') || localStorage.getItem('tup_rosary_lang') || 'es';
     let mystery = localStorage.getItem('tup_rosary_mystery') || dayToMystery[new Date().getDay()];
     let idx = 0;
     let rosaryTtsState = 'stopped';
@@ -1179,7 +1175,7 @@
       subtitle: document.getElementById('subtitle'),
       mobileCurrentTitle: document.getElementById('mobileCurrentTitle'),
       mobileCurrentStrip: document.getElementById('mobileCurrentStrip'),
-      langBtn: document.getElementById('langBtn'),
+      langToggle: document.getElementById('langToggle'),
       resetBtn: document.getElementById('resetBtn'),
       mysterySelect: document.getElementById('mysterySelect'),
       progressFill: document.getElementById('progressFill'),
@@ -1525,7 +1521,7 @@
       els.completeTitle.textContent = t.completedTitle;
       els.completeText.textContent = t.completedText;
       els.completeRestartBtn.textContent = t.prayAgain;
-      els.langBtn.textContent = lang === 'es' ? 'EN' : 'ES';
+      els.langToggle.textContent = lang === 'es' ? 'EN' : 'ES';
       document.documentElement.lang = lang;
       updateTtsButtons();
     }
@@ -1617,11 +1613,11 @@
         rosaryTtsSpeak();
       }
 
-      localStorage.setItem('tup_rosary_lang', lang);
+      localStorage.setItem('tup_lang', lang);
       localStorage.setItem('tup_rosary_mystery', mystery);
     }
 
-    els.langBtn.addEventListener('click', () => {
+    els.langToggle.addEventListener('click', () => {
       lang = lang === 'es' ? 'en' : 'es';
       render();
     });
