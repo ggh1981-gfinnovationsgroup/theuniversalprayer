@@ -537,7 +537,7 @@
       function el(id) { return document.getElementById(id); }
 
       function summarizeDayText(text, lang) {
-        if (!text) return lang === 'es' ? 'Reflexion del dia' : 'Daily reflection';
+        if (!text) return lang === 'es' ? 'Accion del dia' : 'Daily action';
         const firstChunk = text.split(/[.;]/)[0].trim();
         const compact = firstChunk || text;
         if (compact.length <= 88) return compact;
@@ -628,7 +628,7 @@
           toggle.type = 'button';
           toggle.className = 'day-toggle';
           toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-          toggle.setAttribute('aria-label', (lang === 'es' ? 'Abrir reflexion del dia ' : 'Open day reflection ') + d);
+          toggle.setAttribute('aria-label', (lang === 'es' ? 'Dia ' : 'Day ') + d);
 
           const head = document.createElement('div');
           head.className = 'day-head';
