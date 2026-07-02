@@ -1096,20 +1096,20 @@ function getChapletSteps(id, lang) {
     return steps;
   }
 
-  // ── SAN JUDAS TADEO (13 cuentas) ─────────────
+  // ── SAN JUDAS TADEO (9 cuentas) ─────────────
   if (id === 'sanjudas') {
     const invocation = { label: L ? 'Invocación al Espíritu Santo' : 'Invocation to the Holy Spirit', text: L
       ? '«Ven, Espíritu Santo, ilumina mi mente y enciende mi corazón.\nSan Judas Tadeo, apóstol que recibiste el fuego de Pentecostés,\nintercede por mí ante Dios Padre.»'
       : '«Come, Holy Spirit, enlighten my mind and inflame my heart.\nSaint Jude Thaddaeus, apostle who received the fire of Pentecost,\nintercede for me before God the Father.»', count: 1, bead: 'none' };
     const bead = { label: '', text: L
-      ? '«San Judas Tadeo, apóstol y mártir,\npatrono de las causas imposibles: ruega por nosotros.»\n\n(Añade en silencio la petición de tu corazón.)'
-      : '«Saint Jude Thaddaeus, apostle and martyr,\npatron of impossible causes: pray for us.»\n\n(Add silently the intention of your heart.)', count: 1, bead: 'small' };
+      ? 'Reza en esta cuenta:\n\n«San Judas Tadeo, apóstol y mártir,\npatrono de las causas difíciles e imposibles, ruega por mí.»\n\nLuego di: «Jesús, en Ti confío.»\n\n(Añade en silencio tu intención.)'
+      : 'Pray on this bead:\n\n«Saint Jude Thaddaeus, apostle and martyr,\npatron of difficult and impossible causes, pray for me.»\n\nThen say: «Jesus, I trust in You.»\n\n(Add your intention in silence.)', count: 1, bead: 'small' };
     const final = { label: L ? 'Oración Final' : 'Closing Prayer', text: L
       ? '«Glorioso San Judas Tadeo, tú que eres pariente de Nuestro Señor Jesucristo y que proclamaste Su Evangelio con valentía hasta dar tu propia sangre:\n\nTe presento hoy mi causa. Sé que para Dios no hay nada imposible. Intercede por mí para que, si es Su santa voluntad, me sea concedida esta gracia.\n\nAmén.»'
       : '«Glorious Saint Jude Thaddaeus, relative of Our Lord Jesus Christ, who proclaimed His Gospel with courage until shedding your own blood:\n\nI present my cause to you today. I know that for God nothing is impossible. Intercede for me so that, if it is His holy will, this grace may be granted to me.\n\nAmen.»', count: 1, bead: 'none' };
     const steps = [cruz, invocation];
-    for (let i = 1; i <= 13; i++) {
-      steps.push({ ...bead, label: L ? `Cuenta ${i} de 13` : `Bead ${i} of 13` });
+    for (let i = 1; i <= 9; i++) {
+      steps.push({ ...bead, label: L ? `Cuenta ${i} de 9` : `Bead ${i} of 9` });
     }
     steps.push(final, { ...cruz, label: L ? 'Señal de la Cruz final' : 'Final Sign of the Cross' });
     return steps;
