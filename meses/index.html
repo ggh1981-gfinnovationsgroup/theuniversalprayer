@@ -138,6 +138,36 @@
       line-height: 1.6;
       margin-bottom: 0.8rem;
     }
+    .method-box {
+      border: 1px solid rgba(201,168,76,0.22);
+      border-radius: 10px;
+      background: rgba(201,168,76,0.05);
+      padding: 0.85rem;
+      margin-bottom: 0.8rem;
+    }
+    .method-title {
+      font-family: var(--font-serif);
+      color: var(--gold-light);
+      font-size: 1.02rem;
+      margin: 0 0 0.45rem;
+    }
+    .method-steps {
+      margin: 0 0 0.65rem 1.1rem;
+      color: var(--white-dim);
+      font-size: 0.84rem;
+      line-height: 1.65;
+      display: grid;
+      gap: 0.25rem;
+    }
+    .method-prayer {
+      border-top: 1px solid rgba(201,168,76,0.16);
+      padding-top: 0.55rem;
+      margin-top: 0.55rem;
+      color: rgba(255,255,255,0.86);
+      font-size: 0.84rem;
+      line-height: 1.62;
+      white-space: pre-line;
+    }
     .days-list {
       max-height: 480px;
       overflow: auto;
@@ -231,6 +261,13 @@
       <p class="planner-topic" id="plannerTopic"></p>
       <div class="planner-note" id="plannerNote"></div>
 
+      <div class="method-box">
+        <h3 class="method-title" id="methodTitle"></h3>
+        <ol class="method-steps" id="methodSteps"></ol>
+        <div class="method-prayer" id="methodPrayer"></div>
+        <div class="method-prayer" id="methodClosing"></div>
+      </div>
+
       <div class="days-list" id="daysList"></div>
 
       <div class="month-links">
@@ -302,8 +339,61 @@
         }
       };
 
-      let selectedMonth = (new Date()).getMonth();
+      let selectedMonth = 6; // Julio por prioridad actual
       const currentYear = (new Date()).getFullYear();
+
+      const julyMethodEs = {
+        title: 'Como hacerlo (guia completa de julio)',
+        steps: [
+          '1) Inicia con la Senal de la Cruz y ofrece el dia por una intencion concreta (conversion, paz familiar, sanacion interior, liberacion del miedo).',
+          '2) Lee 3-5 minutos un texto de la Pasion (Getsemani, flagelacion o Calvario) y haz un minuto de silencio.',
+          '3) Reza 33 invocaciones: "Sangre preciosa de Cristo, sálvanos y protege a mi familia".',
+          '4) Reza la Letania o una parte de ella (si no puedes completa), y termina con un Padre Nuestro, Ave Maria y Gloria.',
+          '5) Cierra el dia con examen de conciencia breve, acto de contricion y una obra concreta de caridad o perdon.'
+        ],
+        prayer: 'Oracion de ofrenda diaria:\n"Senor Jesus, por tu Preciosisima Sangre te entrego este dia. Lava mi corazon, limpia mi pecado, protege mi hogar, fortalece mi fe y dame gracia para vivir en caridad y verdad. Amen."',
+        closing: 'Oracion de cierre:\n"Jesus, por tu Sangre derramada en la Cruz, ten misericordia de mi y del mundo entero. Apartame del mal, guardame en tu gracia y llevame a una vida santa. Amen."'
+      };
+
+      const julyMethodEn = {
+        title: 'How to do it (complete July guide)',
+        steps: [
+          '1) Begin with the Sign of the Cross and offer the day for one concrete intention (conversion, family peace, interior healing, freedom from fear).',
+          '2) Read 3-5 minutes from the Passion (Gethsemane, scourging, or Calvary) and keep one minute of silence.',
+          '3) Pray 33 invocations: "Most Precious Blood of Christ, save us and protect my family".',
+          '4) Pray the Litany (or part of it if needed), then one Our Father, Hail Mary, and Glory Be.',
+          '5) End the day with a brief examination of conscience, an act of contrition, and one concrete act of charity or forgiveness.'
+        ],
+        prayer: 'Daily offering prayer:\n"Lord Jesus, through Your Most Precious Blood I offer You this day. Wash my heart, cleanse my sin, protect my home, strengthen my faith, and give me grace to live in charity and truth. Amen."',
+        closing: 'Closing prayer:\n"Jesus, by Your Blood shed on the Cross, have mercy on me and on the whole world. Keep me from evil, preserve me in Your grace, and lead me to a holy life. Amen."'
+      };
+
+      const genericMethod = {
+        es: {
+          title: 'Como hacerlo (estructura base)',
+          steps: [
+            '1) Senal de la Cruz + intencion del dia.',
+            '2) Lectura breve del Evangelio o vida del santo del mes.',
+            '3) Oracion principal del mes (10-15 minutos).',
+            '4) Padre Nuestro, Ave Maria, Gloria.',
+            '5) Acto concreto de caridad y cierre en accion de gracias.'
+          ],
+          prayer: 'Formula breve sugerida:\n"Senor, recibeme en este tiempo de oracion. Concedeme conversion, fidelidad y caridad. Amen."',
+          closing: 'Cierre sugerido:\n"Todo sea para tu gloria, Senor. Amen."'
+        },
+        en: {
+          title: 'How to do it (base structure)',
+          steps: [
+            '1) Sign of the Cross + daily intention.',
+            '2) Short Gospel reading or life of the month saint.',
+            '3) Main prayer of the month (10-15 minutes).',
+            '4) Our Father, Hail Mary, Glory Be.',
+            '5) One concrete act of charity and closing thanksgiving.'
+          ],
+          prayer: 'Suggested short formula:\n"Lord, receive me in this prayer time. Grant me conversion, fidelity, and charity. Amen."',
+          closing: 'Suggested closing:\n"May everything be for Your glory, Lord. Amen."'
+        }
+      };
 
       function daysInMonth(year, monthIndex) {
         return new Date(year, monthIndex + 1, 0).getDate();
@@ -368,6 +458,18 @@
         const isJuly = m.key === 'julio';
         const plan = isJuly ? (lang === 'es' ? julyPlanEs : julyPlanEn) : genericPlan[lang];
         el('plannerNote').textContent = plan.note;
+
+        const method = isJuly ? (lang === 'es' ? julyMethodEs : julyMethodEn) : genericMethod[lang];
+        el('methodTitle').textContent = method.title;
+        const methodSteps = el('methodSteps');
+        methodSteps.innerHTML = '';
+        method.steps.forEach(function (s) {
+          const li = document.createElement('li');
+          li.textContent = s;
+          methodSteps.appendChild(li);
+        });
+        el('methodPrayer').textContent = method.prayer;
+        el('methodClosing').textContent = method.closing;
 
         const list = el('daysList');
         list.innerHTML = '';
