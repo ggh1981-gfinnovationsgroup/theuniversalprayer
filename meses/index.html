@@ -453,14 +453,92 @@
         'Close July with thanksgiving and a stable resolution: persevere in prayer, sacraments, and charity all year long.'
       ];
 
+      const julyActionsEs = [
+        'Escribe tu intencion principal del mes y repitela en voz alta al iniciar tu oracion.',
+        'Lee Mateo 26:36-46 y anota una obediencia concreta que vas a vivir hoy.',
+        'Guarda una hora sin queja ni critica en casa o trabajo.',
+        'Evita una comparacion o juicio interno y reemplazalo con una jaculatoria breve.',
+        'Retoma hoy una practica que habias dejado: rosario, lectura biblica o examen.',
+        'Haz una obra de misericordia concreta por alguien cercano.',
+        'Envía un mensaje de paz o pide perdon a una persona con la que hay distancia.',
+        'Nombra y bendice a cada miembro de tu familia en una oracion de 2 minutos.',
+        'Haz examen de conciencia escrito en 5 puntos antes de dormir.',
+        'Asiste a Misa o visita el Santisimo al menos 10 minutos.',
+        'Ofrece tu tarea mas pesada del dia sin postergarla.',
+        'Ora por una persona alejada de la fe y menciona su nombre tres veces.',
+        'Renuncia hoy a una distraccion que te roba paz (pantalla, ruido o impulso).',
+        'Haz 5 minutos de silencio real sin telefono.',
+        'Agradece por escrito tres gracias recibidas en la Iglesia.',
+        'Reza un Ave Maria extra por fidelidad diaria y pureza de corazon.',
+        'Corta hoy una frase de autoacusacion y reemplazala por un acto de confianza.',
+        'Realiza una pequena penitencia (sobriedad en comida, tiempo o comodidad).',
+        'Llama o visita a un enfermo, o intercede por el con nombre propio.',
+        'Ofrece una decena del rosario por victimas de violencia e injusticia.',
+        'Limita tu consumo digital nocturno y termina el dia en oracion.',
+        'Comparte una palabra de aliento con alguien que este cansado.',
+        'Renuncia hoy a responder con dureza en una conversacion dificil.',
+        'Reza por un sacerdote concreto y ofrece un sacrificio breve por el.',
+        'Dedica 10 minutos de escucha real a un joven o nino de tu familia.',
+        'Antes de pedir favores, di primero: "Senor, convierteme a Ti".',
+        'Repara hoy una deuda moral pequena: disculpa, devolucion o cumplimiento.',
+        'Ofrece un Padre Nuestro por un difunto y recuerda una esperanza cristiana.',
+        'Escribe un balance espiritual del mes en tres lineas: gracia, caida y proposito.',
+        'Entrega en oracion aquello que todavia te cuesta soltar.',
+        'Define una regla breve para agosto: oracion fija, sacramento y obra de caridad semanal.'
+      ];
+
+      const julyActionsEn = [
+        'Write your main intention for the month and repeat it out loud at the start of prayer.',
+        'Read Matthew 26:36-46 and note one concrete obedience you will live today.',
+        'Keep one hour today without complaining or criticizing at home or work.',
+        'Refuse one comparison or inner judgment and replace it with a short aspiration.',
+        'Resume one practice you had dropped: rosary, Scripture reading, or examen.',
+        'Do one concrete work of mercy for someone close to you.',
+        'Send a peace message or ask forgiveness from someone with whom there is distance.',
+        'Name and bless each family member in a two-minute prayer.',
+        'Do a written five-point examination of conscience before sleep.',
+        'Attend Mass or visit the Blessed Sacrament for at least ten minutes.',
+        'Offer your hardest task today without postponing it.',
+        'Pray for one person far from faith and say their name three times.',
+        'Give up one distraction that steals your peace (screen, noise, or impulse).',
+        'Keep five real minutes of silence without your phone.',
+        'Write down three graces received through the Church and thank God for them.',
+        'Pray one extra Hail Mary for daily fidelity and purity of heart.',
+        'Stop one sentence of self-accusation and replace it with an act of trust.',
+        'Practice a small penance (sobriety in food, time, or comfort).',
+        'Call or visit someone sick, or intercede by name for them.',
+        'Offer one decade of the rosary for victims of violence and injustice.',
+        'Limit nighttime digital consumption and end the day in prayer.',
+        'Share one word of encouragement with someone tired today.',
+        'Refuse to answer harshly in one difficult conversation.',
+        'Pray for one specific priest and offer a brief sacrifice for him.',
+        'Give ten minutes of real listening to a young person or child in your family.',
+        'Before asking favors, say first: "Lord, convert me to You."',
+        'Repair one small moral debt today: apology, restitution, or fulfilled promise.',
+        'Offer one Our Father for a departed soul and recall one Christian hope.',
+        'Write a three-line spiritual month review: grace, fall, and resolution.',
+        'Surrender in prayer what you still struggle to let go.',
+        'Set one short rule for August: fixed prayer, sacrament, and weekly charity.'
+      ];
+
       const julyPlanEs = {
         note: 'Julio se vive como mes de la Preciosisima Sangre. El objetivo es la conversion, la limpieza del pecado y la confianza en la redencion de Cristo.',
-        dayText: function (d) { return julyDailyEs[d - 1] || julyDailyEs[julyDailyEs.length - 1]; }
+        dayText: function (d) {
+          const i = d - 1;
+          const reflection = julyDailyEs[i] || julyDailyEs[julyDailyEs.length - 1];
+          const action = julyActionsEs[i] || julyActionsEs[julyActionsEs.length - 1];
+          return reflection + '\n\nAccion de hoy: ' + action;
+        }
       };
 
       const julyPlanEn = {
         note: 'July is lived as the month of the Most Precious Blood. The focus is conversion, cleansing from sin, and trust in Christ\'s redemption.',
-        dayText: function (d) { return julyDailyEn[d - 1] || julyDailyEn[julyDailyEn.length - 1]; }
+        dayText: function (d) {
+          const i = d - 1;
+          const reflection = julyDailyEn[i] || julyDailyEn[julyDailyEn.length - 1];
+          const action = julyActionsEn[i] || julyActionsEn[julyActionsEn.length - 1];
+          return reflection + '\n\nToday\'s action: ' + action;
+        }
       };
 
       const genericPlan = {
@@ -538,6 +616,15 @@
 
       function summarizeDayText(text, lang) {
         if (!text) return lang === 'es' ? 'Accion del dia' : 'Daily action';
+        const actionMarker = lang === 'es' ? 'Accion de hoy: ' : 'Today\'s action: ';
+        const markerIndex = text.indexOf(actionMarker);
+        if (markerIndex >= 0) {
+          const actionText = text.slice(markerIndex + actionMarker.length).split('\n')[0].trim();
+          if (actionText) {
+            if (actionText.length <= 88) return actionText;
+            return actionText.slice(0, 85).trimEnd() + '...';
+          }
+        }
         const firstChunk = text.split(/[.;]/)[0].trim();
         const compact = firstChunk || text;
         if (compact.length <= 88) return compact;
@@ -635,7 +722,7 @@
 
           const dNum = document.createElement('div');
           dNum.className = 'day-num';
-          dNum.textContent = String(d);
+          dNum.textContent = (lang === 'es' ? 'Dia ' : 'Day ') + d;
 
           const dSummary = document.createElement('div');
           dSummary.className = 'day-summary';
