@@ -461,8 +461,9 @@ function isHistoriasPage() {
 // ── FETCH INTERCESSOR DATA ─────────────────────────
 async function loadIntercessorData(id) {
   const basePath = (isIntercessorPage() || isHistoriasPage()) ? '../data/' : 'data/';
-  const url = `${basePath}${id}.json`;
-  const resp = await fetch(url);
+  const DATA_VER = '20260702-1';
+  const url = `${basePath}${id}.json?v=${DATA_VER}`;
+  const resp = await fetch(url, { cache: 'no-store' });
   if (!resp.ok) throw new Error(`Not found: ${url}`);
   return resp.json();
 }
