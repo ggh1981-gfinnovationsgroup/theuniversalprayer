@@ -459,6 +459,17 @@ function resolveIntercessorSlug(rawValue) {
 
   if (aliasMap[normalized]) return aliasMap[normalized];
 
+  // Defensive fuzzy fallback for Precious Blood URLs/typos
+  if (
+    normalized.includes('sangre') ||
+    normalized.includes('blood') ||
+    normalized.includes('precios') ||
+    normalized.includes('preciosis') ||
+    normalized.includes('preciousblood')
+  ) {
+    return 'preciosisimasangre';
+  }
+
   const direct = INTERCESSORS.find(i =>
     normalizeIntercessorSlug(i.id) === normalized ||
     normalizeIntercessorSlug(i.subdomain) === normalized
@@ -473,6 +484,13 @@ function getSubdomain() {
   const params = new URLSearchParams(window.location.search);
   const param = params.get('intercesor');
   if (param) return resolveIntercessorSlug(param);
+
+  // Secondary: path format /intercesor/<slug>
+  const pathParts = window.location.pathname.split('/').filter(Boolean);
+  if (pathParts.length >= 2 && pathParts[0].toLowerCase() === 'intercesor') {
+    return resolveIntercessorSlug(pathParts[1]);
+  }
+
   // Fallback: true subdomain (e.g. padrepio.theuniversalprayer.com)
   const host = window.location.hostname;
   const parts = host.split('.');
