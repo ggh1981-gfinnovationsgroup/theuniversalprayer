@@ -196,7 +196,7 @@ const INTERCESSORS = [
   { id: 'sanbenito',            subdomain: 'sanbenito',            chaplet: false, novena: true,  color: '#060c04', short: { es: 'S. Benito',        en: 'St. Benedict'      }, name: { en: 'Saint Benedict of Nursia',          es: 'San Benito de Nursia'                    }, specialty: { es: 'Orden y monacato',        en: 'Order & Monasticism'         } },
   { id: 'nuestrasenoracarmen',  subdomain: 'nuestrasenoracarmen',  chaplet: false, novena: true,  color: '#020610', short: { es: 'V. del Carmen',   en: 'Our Lady Carmen'   }, name: { en: 'Our Lady of Mount Carmel',          es: 'Nuestra Señora del Carmen'                }, specialty: { es: 'Protección y contemplación', en: 'Protection & Prayer'         } },
   { id: 'divinonino',           subdomain: 'divinonino',           chaplet: false, novena: true,  color: '#020510', short: { es: 'Divino Niño',   en: 'Divine Child'      }, name: { en: 'Divine Child Jesus',                es: 'Divino Niño Jesús'                          }, specialty: { es: 'Ternura y confianza',     en: 'Tenderness & Trust'          } },
-  { id: 'preciosisimasangre',   subdomain: 'preciosisimasangre',   chaplet: false, novena: true,  color: '#7a1010', short: { es: 'Prec. Sangre',  en: 'Precious Blood'    }, name: { en: 'Most Precious Blood of Christ',       es: 'Preciosisima Sangre de Cristo'            }, specialty: { es: 'Redención y protección',   en: 'Redemption & protection'     } },
+  { id: 'preciosisimasangre',   subdomain: 'preciosisimasangre',   chaplet: false, novena: true,  color: '#7a1010', short: { es: 'Prec. Sangre',  en: 'Precious Blood'    }, name: { en: 'Most Precious Blood of Christ',       es: 'Preciosísima Sangre de Cristo'            }, specialty: { es: 'Redención y protección',   en: 'Redemption & protection'     } },
 ];
 
 // ── KEYWORD MAP — synonyms for prayer-intent search ──────
@@ -544,15 +544,18 @@ async function initHomePage() {
     });
   }
 
+  // Normalize removes accents so búsqueda matches busqueda, etc.
+  function normalize(s) { return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
+
   // Search quick nav icons
   const quickNavSearch = document.getElementById('quickNavSearch');
   if (quickNavSearch) {
     quickNavSearch.placeholder = currentLang === 'es' ? 'Buscar por nombre, motivo o situación...' : 'Search by name, intention or situation...';
     quickNavSearch.addEventListener('input', () => {
-      const q = quickNavSearch.value.toLowerCase().trim();
+      const q = normalize(quickNavSearch.value.trim());
       document.querySelectorAll('.quick-nav-item').forEach(item => {
-        const matchesName      = (item.dataset.name      || '').includes(q);
-        const matchesSpecialty = (item.dataset.specialty || '').includes(q);
+        const matchesName      = normalize(item.dataset.name).includes(q);
+        const matchesSpecialty = normalize(item.dataset.specialty).includes(q);
         item.style.display = (q === '' || matchesName || matchesSpecialty) ? '' : 'none';
       });
     });
@@ -562,10 +565,10 @@ async function initHomePage() {
   const cardsSearch = document.getElementById('cardsSearch');
   if (cardsSearch) {
     cardsSearch.placeholder = currentLang === 'es' ? 'Buscar por nombre, motivo o situación...' : 'Search by name, intention or situation...';    cardsSearch.addEventListener('input', () => {
-      const q = cardsSearch.value.toLowerCase().trim();
+      const q = normalize(cardsSearch.value.trim());
       grid.querySelectorAll('.intercessor-card').forEach(card => {
-        const matchesText      = card.textContent.toLowerCase().includes(q);
-        const matchesSpecialty = (card.dataset.specialty || '').includes(q);
+        const matchesText      = normalize(card.textContent).includes(q);
+        const matchesSpecialty = normalize(card.dataset.specialty).includes(q);
         card.style.display = (q === '' || matchesText || matchesSpecialty) ? '' : 'none';
       });
     });
