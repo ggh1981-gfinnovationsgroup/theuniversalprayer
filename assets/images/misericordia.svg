@@ -271,4 +271,10 @@
   <text x="200" y="546" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" fill="#c9a84c" letter-spacing="3.5" opacity="0.94">DIVINA MISERICORDIA  ·  DIVINE MERCY</text>
   <text x="200" y="566" text-anchor="middle" font-family="Georgia,serif" font-size="14.5" fill="#f5e060" letter-spacing="0.5" font-style="italic">&#xAB;Jes&#xFA;s, en Ti conf&#xED;o&#xBB;</text>
   <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#d4c040" letter-spacing="0.3" font-style="italic" opacity="0.84">&#xAB;Jesus, I trust in You&#xBB;</text>
-</svg>
+  <!-- Minimal facial features for visual consistency across intercessors -->
+  <g id="tup-face-features" opacity="0.9">
+    <ellipse id="tup-eye-left" cx="186" cy="160" rx="3.1" ry="2.2" fill="#2a1a12"/>
+    <ellipse id="tup-eye-right" cx="214" cy="160" rx="3.1" ry="2.2" fill="#2a1a12"/>
+    <path id="tup-nose" d="M200 164 C198 170, 198 172, 200 175" stroke="#7b4a35" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <path id="tup-mouth" d="M192 184 Q200 189 208 184" stroke="#8f3a3a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </g></svg>

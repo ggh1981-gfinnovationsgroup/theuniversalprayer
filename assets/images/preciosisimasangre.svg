@@ -487,30 +487,24 @@
   <!-- ══ NAME PANEL BILINGÜE ══ -->
   <rect x="10" y="490" width="380" height="60" fill="url(#dn-panel)" opacity=".98"/>
   <line x1="10" y1="490" x2="390" y2="490" stroke="url(#dn-frame)" stroke-width="1.8" opacity=".78"/>
-  <!-- ES -->
+    <!-- ES -->
   <text x="100" y="510" text-anchor="middle"
-        font-family="Georgia,'Times New Roman',serif"
-        font-size="14" font-weight="bold" letter-spacing="1.5" fill="#f8d840" opacity=".98">DIVINO NIÑO</text>
+      font-family="Georgia,'Times New Roman',serif"
+      font-size="12" font-weight="bold" letter-spacing="0.8" fill="#f8d840" opacity=".98">PRECIOSISIMA SANGRE</text>
   <text x="100" y="526" text-anchor="middle"
         font-family="Georgia,'Times New Roman',serif"
-        font-size="8.5" letter-spacing="1.5" fill="#f09060" opacity=".88">JESÚS · 20 DE JULIO</text>
+      font-size="8.5" letter-spacing="1.2" fill="#f09060" opacity=".88">DE CRISTO · 1 DE JULIO</text>
   <!-- Divider -->
   <line x1="200" y1="496" x2="200" y2="544" stroke="url(#dn-frame)" stroke-width="0.9" opacity=".50"/>
-  <!-- EN -->
+    <!-- EN -->
   <text x="300" y="510" text-anchor="middle"
-        font-family="Georgia,'Times New Roman',serif"
-        font-size="14" font-weight="bold" letter-spacing="1.5" fill="#f8d840" opacity=".98">DIVINE CHILD</text>
+      font-family="Georgia,'Times New Roman',serif"
+      font-size="12" font-weight="bold" letter-spacing="0.8" fill="#f8d840" opacity=".98">PRECIOUS BLOOD</text>
   <text x="300" y="526" text-anchor="middle"
         font-family="Georgia,'Times New Roman',serif"
-        font-size="8.5" letter-spacing="1.5" fill="#f09060" opacity=".88">JESUS · JULY 20</text>
+      font-size="8.5" letter-spacing="1.2" fill="#f09060" opacity=".88">OF CHRIST · JULY 1</text>
   <!-- Tagline -->
   <text x="200" y="543" text-anchor="middle"
         font-family="Georgia,'Times New Roman',serif"
-        font-size="7.5" letter-spacing="2.5" fill="#c0a820" opacity=".68">YO REINO · I REIGN</text>
-  <!-- Minimal facial features for visual consistency across intercessors -->
-  <g id="tup-face-features" opacity="0.9">
-    <ellipse id="tup-eye-left" cx="186" cy="158" rx="3.1" ry="2.2" fill="#2a1a12"/>
-    <ellipse id="tup-eye-right" cx="214" cy="158" rx="3.1" ry="2.2" fill="#2a1a12"/>
-    <path id="tup-nose" d="M200 162 C198 168, 198 170, 200 173" stroke="#7b4a35" stroke-width="1.6" fill="none" stroke-linecap="round"/>
-    <path id="tup-mouth" d="M192 182 Q200 187 208 182" stroke="#8f3a3a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-  </g></svg>
+      font-size="7.5" letter-spacing="1.8" fill="#c0a820" opacity=".68">SANGRE QUE REDIME · REDEEMING BLOOD</text>
+</svg>

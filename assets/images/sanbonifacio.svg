@@ -69,4 +69,12 @@
   <text x="200" y="546" text-anchor="middle" font-family="Arial,sans-serif" font-size="8"   fill="#c9a84c"  letter-spacing="3"   opacity="0.92">SAN BONIFACIO  ·  SAINT BONIFACE</text>
   <text x="200" y="562" text-anchor="middle" font-family="Arial,sans-serif" font-size="7"   fill="#9a70c0"  letter-spacing="2"   opacity="0.80">APÓSTOL DE GERMANIA  ·  APOSTLE OF GERMANY</text>
   <text x="200" y="579" text-anchor="middle" font-family="Arial,sans-serif" font-size="6.5" fill="#c9a84c"  letter-spacing="2.5" opacity="0.52">5 DE JUNIO  ·  JUNE 5</text>
+
+  <!-- Minimal facial features for visual consistency across intercessors -->
+  <g id="tup-face-features" opacity="0.9">
+    <ellipse id="tup-eye-left" cx="186" cy="115" rx="3.1" ry="2.2" fill="#2a1a12"/>
+    <ellipse id="tup-eye-right" cx="214" cy="115" rx="3.1" ry="2.2" fill="#2a1a12"/>
+    <path id="tup-nose" d="M200 119 C198 125, 198 127, 200 130" stroke="#7b4a35" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <path id="tup-mouth" d="M192 139 Q200 144 208 139" stroke="#8f3a3a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </g>
 </svg>

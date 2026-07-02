@@ -97,4 +97,12 @@
   <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#a070d0" letter-spacing="3" opacity="0.92">STA. ALEJANDRA  ·  ST. ALEXANDRA OF ROME</text>
   <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#c0a0e0" font-style="italic">«Santa Alejandra de Roma»</text>
   <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#a070d0" font-style="italic" opacity="0.82">«Alejandra · Sandra · Alessandra»</text>
+
+  <!-- Minimal facial features for visual consistency across intercessors -->
+  <g id="tup-face-features" opacity="0.9">
+    <ellipse id="tup-eye-left" cx="186" cy="107" rx="3.1" ry="2.2" fill="#2a1a12"/>
+    <ellipse id="tup-eye-right" cx="214" cy="107" rx="3.1" ry="2.2" fill="#2a1a12"/>
+    <path id="tup-nose" d="M200 111 C198 117, 198 119, 200 122" stroke="#7b4a35" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <path id="tup-mouth" d="M192 131 Q200 136 208 131" stroke="#8f3a3a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </g>
 </svg>

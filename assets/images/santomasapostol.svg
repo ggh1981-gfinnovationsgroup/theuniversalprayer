@@ -290,4 +290,10 @@
   <text x="200" y="543" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
         font-size="8" letter-spacing="1.5" fill="#b07820" opacity="0.68">
         3 DE JULIO · JULY 3</text>
-</svg>
+  <!-- Minimal facial features for visual consistency across intercessors -->
+  <g id="tup-face-features" opacity="0.9">
+    <ellipse id="tup-eye-left" cx="186" cy="150" rx="3.1" ry="2.2" fill="#2a1a12"/>
+    <ellipse id="tup-eye-right" cx="214" cy="150" rx="3.1" ry="2.2" fill="#2a1a12"/>
+    <path id="tup-nose" d="M200 154 C198 160, 198 162, 200 165" stroke="#7b4a35" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <path id="tup-mouth" d="M192 174 Q200 179 208 174" stroke="#8f3a3a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </g></svg>

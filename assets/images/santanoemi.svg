@@ -167,4 +167,10 @@
   <rect x="45" y="452" width="310" height="42" rx="8" fill="#1a0d00" opacity="0.88"/>
   <text x="200" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="13.5" fill="#f0d870" font-weight="bold">Santa Noemí — Naomi</text>
   <text x="200" y="487" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#c8a050">Matrona del Libro de Rut — Fe y esperanza</text>
-</svg>
+  <!-- Minimal facial features for visual consistency across intercessors -->
+  <g id="tup-face-features" opacity="0.9">
+    <ellipse id="tup-eye-left" cx="186" cy="148" rx="3.1" ry="2.2" fill="#2a1a12"/>
+    <ellipse id="tup-eye-right" cx="214" cy="148" rx="3.1" ry="2.2" fill="#2a1a12"/>
+    <path id="tup-nose" d="M200 152 C198 158, 198 160, 200 163" stroke="#7b4a35" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <path id="tup-mouth" d="M192 172 Q200 177 208 172" stroke="#8f3a3a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </g></svg>

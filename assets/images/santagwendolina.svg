@@ -157,4 +157,10 @@
   <rect x="50" y="450" width="300" height="42" rx="8" fill="#0d2d1a" opacity="0.85"/>
   <text x="200" y="468" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#f0e8a0" font-weight="bold">Santa Gwendolina · Wendy · Gwen</text>
   <text x="200" y="485" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#a0c890">18 de enero — Mártir de Gales</text>
-</svg>
+  <!-- Minimal facial features for visual consistency across intercessors -->
+  <g id="tup-face-features" opacity="0.9">
+    <ellipse id="tup-eye-left" cx="186" cy="140" rx="3.1" ry="2.2" fill="#2a1a12"/>
+    <ellipse id="tup-eye-right" cx="214" cy="140" rx="3.1" ry="2.2" fill="#2a1a12"/>
+    <path id="tup-nose" d="M200 144 C198 150, 198 152, 200 155" stroke="#7b4a35" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <path id="tup-mouth" d="M192 164 Q200 169 208 164" stroke="#8f3a3a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </g></svg>

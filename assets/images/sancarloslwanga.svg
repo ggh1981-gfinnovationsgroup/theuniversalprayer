@@ -71,4 +71,12 @@
   <text x="200" y="545" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" fill="#c9a84c"  letter-spacing="2.5" opacity="0.92">SAN CARLOS LWANGA  ·  SAINT CHARLES LWANGA</text>
   <text x="200" y="562" text-anchor="middle" font-family="Arial,sans-serif" font-size="7"   fill="#f08030" letter-spacing="2"   opacity="0.78">MÁRTIR DE UGANDA  ·  MARTYR OF UGANDA</text>
   <text x="200" y="579" text-anchor="middle" font-family="Arial,sans-serif" font-size="6.5" fill="#c9a84c"  letter-spacing="2.5" opacity="0.52">3 DE JUNIO  ·  JUNE 3</text>
+
+  <!-- Minimal facial features for visual consistency across intercessors -->
+  <g id="tup-face-features" opacity="0.9">
+    <ellipse id="tup-eye-left" cx="186" cy="118" rx="3.1" ry="2.2" fill="#2a1a12"/>
+    <ellipse id="tup-eye-right" cx="214" cy="118" rx="3.1" ry="2.2" fill="#2a1a12"/>
+    <path id="tup-nose" d="M200 122 C198 128, 198 130, 200 133" stroke="#7b4a35" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <path id="tup-mouth" d="M192 142 Q200 147 208 142" stroke="#8f3a3a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </g>
 </svg>
