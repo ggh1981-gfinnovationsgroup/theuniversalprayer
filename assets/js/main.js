@@ -5,6 +5,8 @@
 
 'use strict';
 
+const APP_VERSION = 'v2026.07.02-1';
+
 // ── TRANSLATIONS (UI strings) ──────────────────────
 const i18n = {
   en: {
@@ -332,6 +334,8 @@ function setLanguage(lang) {
     if (i18n[lang] && i18n[lang][key]) el.textContent = i18n[lang][key];
   });
 
+  updateFooterVersion();
+
   // Toggle bilingual prayer blocks
   document.querySelectorAll('[data-lang]').forEach(el => {
     el.style.display = el.getAttribute('data-lang') === lang ? 'block' : 'none';
@@ -351,6 +355,13 @@ function setLanguage(lang) {
 
   // If intercessor is loaded, refresh dynamic content
   if (intercessorData) renderIntercessorContent(intercessorData);
+}
+
+function updateFooterVersion() {
+  document.querySelectorAll('.site-footer p[data-i18n="footer_text"]').forEach(el => {
+    const footerText = (i18n[currentLang] && i18n[currentLang].footer_text) || el.textContent || '';
+    el.innerHTML = `<span class="footer-copy">${footerText}</span><span class="footer-version">${APP_VERSION}</span>`;
+  });
 }
 
 // ── FEAST DAY MAP (MM-DD → intercessor IDs) ──────────
