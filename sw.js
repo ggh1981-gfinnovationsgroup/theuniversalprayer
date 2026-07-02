@@ -3,7 +3,7 @@
    Cache-first strategy: works fully offline after first load
    ===================================================== */
 
-const CACHE = 'tup-v8';
+const CACHE = 'tup-v9';
 
 // All files to pre-cache on install
 const PRECACHE_URLS = [
@@ -11,6 +11,8 @@ const PRECACHE_URLS = [
   '/index.html',
   '/intercesor/',
   '/intercesor/index.html',
+  '/meses/',
+  '/meses/index.html',
   '/404.html',
   '/manifest.json',
   '/assets/css/styles.css',

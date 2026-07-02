@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jerarquia de Meses | The Universal Prayer</title>
+  <meta name="description" content="Jerarquia de meses devocionales catolicos. Plan mensual actualizable con dias dinamicos por ano. Julio: Preciosisima Sangre de Cristo." />
+  <meta name="theme-color" content="#c9a84c" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    .months-hero {
+      text-align: center;
+      padding: 4.8rem 1.25rem 2.6rem;
+      background: radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.12) 0%, transparent 70%);
+    }
+    .months-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(201,168,76,0.35);
+      border-radius: 99px;
+      padding: 0.3rem 0.9rem;
+      margin-bottom: 1rem;
+    }
+    .months-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 6vw, 3rem);
+      color: var(--gold-light);
+      margin: 0 0 0.7rem;
+    }
+    .months-subtitle {
+      max-width: 720px;
+      margin: 0 auto;
+      color: var(--white-dim);
+      line-height: 1.75;
+      font-size: 0.95rem;
+    }
+    .months-wrap {
+      width: min(1150px, 100% - 2rem);
+      margin: 0 auto 3.2rem;
+      display: grid;
+      grid-template-columns: 1.1fr 1.4fr;
+      gap: 1.2rem;
+    }
+    @media (max-width: 900px) {
+      .months-wrap { grid-template-columns: 1fr; }
+    }
+    .months-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem;
+    }
+    .months-card h2 {
+      font-family: var(--font-serif);
+      color: var(--gold-light);
+      font-size: 1.2rem;
+      margin-bottom: 0.7rem;
+    }
+    .month-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.55rem;
+    }
+    @media (max-width: 560px) {
+      .month-grid { grid-template-columns: 1fr; }
+    }
+    .month-btn {
+      border: 1px solid rgba(201,168,76,0.2);
+      background: rgba(201,168,76,0.04);
+      color: var(--white);
+      border-radius: 9px;
+      padding: 0.7rem 0.75rem;
+      text-align: left;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+    .month-btn:hover { border-color: rgba(201,168,76,0.45); }
+    .month-btn.active {
+      background: rgba(201,168,76,0.14);
+      border-color: rgba(201,168,76,0.58);
+    }
+    .month-btn .name {
+      display: block;
+      font-family: var(--font-serif);
+      color: var(--gold-light);
+      font-size: 1rem;
+      margin-bottom: 0.1rem;
+    }
+    .month-btn .topic {
+      display: block;
+      font-size: 0.78rem;
+      color: var(--white-dim);
+      line-height: 1.45;
+    }
+    .planner-head {
+      display: flex;
+      gap: 0.65rem;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 0.8rem;
+    }
+    .planner-head label {
+      color: var(--white-dim);
+      font-size: 0.84rem;
+    }
+    .planner-head select {
+      background: var(--bg-surface);
+      color: var(--gold-light);
+      border: 1px solid rgba(201,168,76,0.28);
+      border-radius: 8px;
+      padding: 0.35rem 0.5rem;
+    }
+    .planner-title {
+      font-family: var(--font-serif);
+      color: var(--gold-light);
+      margin: 0.3rem 0 0.25rem;
+      font-size: 1.28rem;
+    }
+    .planner-topic {
+      color: var(--white-dim);
+      margin-bottom: 0.9rem;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    .planner-note {
+      background: rgba(201,168,76,0.08);
+      border: 1px solid rgba(201,168,76,0.25);
+      border-radius: 8px;
+      padding: 0.8rem;
+      color: var(--white-dim);
+      font-size: 0.84rem;
+      line-height: 1.6;
+      margin-bottom: 0.8rem;
+    }
+    .days-list {
+      max-height: 480px;
+      overflow: auto;
+      border: 1px solid rgba(201,168,76,0.16);
+      border-radius: 10px;
+      background: rgba(0,0,0,0.12);
+      padding: 0.35rem;
+    }
+    .day-item {
+      display: grid;
+      grid-template-columns: 68px 1fr;
+      gap: 0.7rem;
+      align-items: start;
+      padding: 0.55rem 0.55rem;
+      border-bottom: 1px solid rgba(201,168,76,0.09);
+    }
+    .day-item:last-child { border-bottom: 0; }
+    .day-num {
+      font-size: 0.8rem;
+      color: var(--gold);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .day-text {
+      color: var(--white-dim);
+      font-size: 0.86rem;
+      line-height: 1.56;
+    }
+    .month-links {
+      margin-top: 1rem;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .month-link {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 0.8rem;
+      border: 1px solid rgba(201,168,76,0.28);
+      color: var(--gold-light);
+      border-radius: 999px;
+      padding: 0.35rem 0.7rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link">
+        <span class="cross">✝</span>
+        <span class="logo-text">The Universal Prayer</span>
+      </a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span id="langLabel">EN</span>
+      </button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="months-hero">
+    <a href="/" class="ador-back-link" data-lang="es">← Inicio</a>
+    <a href="/" class="ador-back-link" data-lang="en" style="display:none">← Home</a>
+
+    <div class="months-badge" data-lang="es">Camino Devocional Anual</div>
+    <div class="months-badge" data-lang="en" style="display:none">Yearly Devotional Path</div>
+
+    <h1 class="months-title" data-lang="es">Jerarquia de Meses</h1>
+    <h1 class="months-title" data-lang="en" style="display:none">Months Hierarchy</h1>
+
+    <p class="months-subtitle" data-lang="es">Cada mes tiene un enfoque central. Puedes actualizar su contenido y el calendario se ajusta automaticamente al ano seleccionado, incluyendo meses variables como febrero.</p>
+    <p class="months-subtitle" data-lang="en" style="display:none">Each month has a central devotional focus. You can update month content anytime, and the calendar adjusts automatically to the selected year, including variable months like February.</p>
+  </section>
+
+  <main class="months-wrap">
+    <section class="months-card">
+      <h2 data-lang="es">Meses del Ano</h2>
+      <h2 data-lang="en" style="display:none">Months of the Year</h2>
+      <div class="month-grid" id="monthGrid"></div>
+    </section>
+
+    <section class="months-card">
+      <div class="planner-head">
+        <label for="yearSelect" data-lang="es">Ano:</label>
+        <label for="yearSelect" data-lang="en" style="display:none">Year:</label>
+        <select id="yearSelect"></select>
+      </div>
+
+      <h2 class="planner-title" id="plannerTitle"></h2>
+      <p class="planner-topic" id="plannerTopic"></p>
+      <div class="planner-note" id="plannerNote"></div>
+
+      <div class="days-list" id="daysList"></div>
+
+      <div class="month-links">
+        <a class="month-link" href="/intercesor/?intercesor=preciosisimasangre" data-lang="es">Ir a Preciosisima Sangre</a>
+        <a class="month-link" href="/intercesor/?intercesor=preciosisimasangre" data-lang="en" style="display:none">Go to Precious Blood</a>
+        <a class="month-link" href="/intercesor/?intercesor=sagradocorazon" data-lang="es">Ir a Sagrado Corazon</a>
+        <a class="month-link" href="/intercesor/?intercesor=sagradocorazon" data-lang="en" style="display:none">Go to Sacred Heart</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p data-lang="es">Plan mensual catolico actualizable: oracion, sacramentos, reparacion y caridad.</p>
+    <p data-lang="en" style="display:none">Updatable Catholic monthly plan: prayer, sacraments, reparation, and charity.</p>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+
+      const LANG_KEY = 'tup_lang';
+      let lang = localStorage.getItem(LANG_KEY) || 'es';
+
+      const months = [
+        { key: 'enero', es: 'Enero', en: 'January', topicEs: 'Nombre de Jesus', topicEn: 'Holy Name of Jesus' },
+        { key: 'febrero', es: 'Febrero', en: 'February', topicEs: 'Sagrada Familia', topicEn: 'Holy Family' },
+        { key: 'marzo', es: 'Marzo', en: 'March', topicEs: 'San Jose', topicEn: 'Saint Joseph' },
+        { key: 'abril', es: 'Abril', en: 'April', topicEs: 'Pasion y Pascua', topicEn: 'Passion and Easter' },
+        { key: 'mayo', es: 'Mayo', en: 'May', topicEs: 'Virgen Maria', topicEn: 'Blessed Virgin Mary' },
+        { key: 'junio', es: 'Junio', en: 'June', topicEs: 'Sagrado Corazon de Jesus', topicEn: 'Sacred Heart of Jesus' },
+        { key: 'julio', es: 'Julio', en: 'July', topicEs: 'Preciosisima Sangre de Cristo', topicEn: 'Most Precious Blood of Christ' },
+        { key: 'agosto', es: 'Agosto', en: 'August', topicEs: 'Transfiguracion y Asuncion', topicEn: 'Transfiguration and Assumption' },
+        { key: 'septiembre', es: 'Septiembre', en: 'September', topicEs: 'Dolores de Maria', topicEn: 'Our Lady of Sorrows' },
+        { key: 'octubre', es: 'Octubre', en: 'October', topicEs: 'Santo Rosario', topicEn: 'Holy Rosary' },
+        { key: 'noviembre', es: 'Noviembre', en: 'November', topicEs: 'Difuntos y Esperanza Eterna', topicEn: 'Holy Souls and Eternal Hope' },
+        { key: 'diciembre', es: 'Diciembre', en: 'December', topicEs: 'Adviento y Navidad', topicEn: 'Advent and Christmas' }
+      ];
+
+      const julyPlanEs = {
+        note: 'Julio se vive como mes de la Preciosisima Sangre. El objetivo no es supersticion, sino conversion, limpieza del pecado y confianza en la redencion de Cristo.',
+        dayText: function (d) {
+          if (d === 1) return 'Fiesta tradicional de la Preciosisima Sangre. Ofrenda del mes y consagracion personal.';
+          if (d === 16) return 'Memoria fuerte mariana del Carmen: unir la devocion a Maria con la Sangre redentora de Cristo.';
+          if (d % 7 === 0) return 'Dia de reparacion: confesion (si es posible), Letania de la Preciosisima Sangre y obra de caridad.';
+          if (d % 2 === 0) return 'Rezar coronilla breve o 33 invocaciones: "Sangre preciosa de Cristo, sálvanos".';
+          return 'Lectura breve del Evangelio de la Pasion + oracion de entrega a la Preciosisima Sangre.';
+        }
+      };
+
+      const julyPlanEn = {
+        note: 'July is lived as the month of the Most Precious Blood. The focus is not superstition, but conversion, cleansing from sin, and trust in Christ\'s redemption.',
+        dayText: function (d) {
+          if (d === 1) return 'Traditional feast of the Precious Blood. Monthly offering and personal consecration.';
+          if (d === 16) return 'Strong Marian day (Our Lady of Mount Carmel): unite Marian devotion with Christ\'s redeeming Blood.';
+          if (d % 7 === 0) return 'Day of reparation: confession (if possible), Litany of the Precious Blood, and one act of charity.';
+          if (d % 2 === 0) return 'Pray a short chaplet or 33 invocations: "Most Precious Blood of Christ, save us".';
+          return 'Brief Gospel reading of the Passion + prayer of surrender to the Precious Blood.';
+        }
+      };
+
+      const genericPlan = {
+        es: {
+          note: 'Este mes esta listo para ser actualizado. Puedes definir un enfoque, una oracion diaria y 2 fechas clave.',
+          dayText: function (d) { return 'Dia ' + d + ': oracion diaria, lectura breve y obra de caridad concreta.'; }
+        },
+        en: {
+          note: 'This month is ready to be updated. Define one focus, one daily prayer, and 2 key dates.',
+          dayText: function (d) { return 'Day ' + d + ': daily prayer, short reading, and one concrete act of charity.'; }
+        }
+      };
+
+      let selectedMonth = (new Date()).getMonth();
+      const currentYear = (new Date()).getFullYear();
+
+      function daysInMonth(year, monthIndex) {
+        return new Date(year, monthIndex + 1, 0).getDate();
+      }
+
+      function el(id) { return document.getElementById(id); }
+
+      function applyLang(newLang) {
+        lang = newLang;
+        localStorage.setItem(LANG_KEY, lang);
+        document.documentElement.lang = lang === 'en' ? 'en' : 'es';
+        const langLabel = el('langLabel');
+        if (langLabel) langLabel.textContent = lang === 'en' ? 'ES' : 'EN';
+        document.querySelectorAll('[data-lang]').forEach(function (node) {
+          node.style.display = node.getAttribute('data-lang') === lang ? '' : 'none';
+        });
+        renderMonthGrid();
+        renderPlanner();
+        window.dispatchEvent(new CustomEvent('tup:langchange', { detail: lang }));
+      }
+
+      function buildYearSelect() {
+        const select = el('yearSelect');
+        select.innerHTML = '';
+        for (let y = currentYear - 1; y <= currentYear + 4; y++) {
+          const opt = document.createElement('option');
+          opt.value = String(y);
+          opt.textContent = String(y);
+          if (y === currentYear) opt.selected = true;
+          select.appendChild(opt);
+        }
+        select.addEventListener('change', renderPlanner);
+      }
+
+      function renderMonthGrid() {
+        const grid = el('monthGrid');
+        grid.innerHTML = '';
+        months.forEach(function (m, idx) {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'month-btn' + (idx === selectedMonth ? ' active' : '');
+          btn.innerHTML =
+            '<span class="name">' + (lang === 'es' ? m.es : m.en) + '</span>' +
+            '<span class="topic">' + (lang === 'es' ? m.topicEs : m.topicEn) + '</span>';
+          btn.addEventListener('click', function () {
+            selectedMonth = idx;
+            renderMonthGrid();
+            renderPlanner();
+          });
+          grid.appendChild(btn);
+        });
+      }
+
+      function renderPlanner() {
+        const year = parseInt(el('yearSelect').value, 10);
+        const m = months[selectedMonth];
+        const totalDays = daysInMonth(year, selectedMonth);
+
+        el('plannerTitle').textContent = (lang === 'es' ? m.es : m.en) + ' ' + year;
+        el('plannerTopic').textContent = (lang === 'es' ? m.topicEs : m.topicEn);
+
+        const isJuly = m.key === 'julio';
+        const plan = isJuly ? (lang === 'es' ? julyPlanEs : julyPlanEn) : genericPlan[lang];
+        el('plannerNote').textContent = plan.note;
+
+        const list = el('daysList');
+        list.innerHTML = '';
+        for (let d = 1; d <= totalDays; d++) {
+          const row = document.createElement('div');
+          row.className = 'day-item';
+
+          const dNum = document.createElement('div');
+          dNum.className = 'day-num';
+          dNum.textContent = (lang === 'es' ? 'Dia ' : 'Day ') + d;
+
+          const dText = document.createElement('div');
+          dText.className = 'day-text';
+          dText.textContent = plan.dayText(d);
+
+          row.appendChild(dNum);
+          row.appendChild(dText);
+          list.appendChild(row);
+        }
+      }
+
+      el('langToggle').addEventListener('click', function () {
+        applyLang(lang === 'es' ? 'en' : 'es');
+      });
+
+      buildYearSelect();
+      applyLang(lang);
+    })();
+  </script>
+  <script src="../assets/js/menu.js"></script>
+</body>
+</html>
