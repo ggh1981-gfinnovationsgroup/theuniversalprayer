@@ -3,7 +3,7 @@
    Cache-first strategy: works fully offline after first load
    ===================================================== */
 
-const CACHE = 'tup-v4';
+const CACHE = 'tup-v5';
 
 // All files to pre-cache on install
 const PRECACHE_URLS = [
@@ -15,6 +15,7 @@ const PRECACHE_URLS = [
   '/manifest.json',
   '/assets/css/styles.css',
   '/assets/js/main.js',
+  '/assets/js/menu.js',
   '/assets/images/icon.svg',
   // Intercessor images
   '/assets/images/angelguarda.svg',
@@ -59,6 +60,7 @@ const PRECACHE_URLS = [
   '/assets/images/santaines.svg',
   '/assets/images/sannicolas.svg',
   '/assets/images/sancristobal.svg',
+  '/assets/images/preciosisimasangre.svg',
   // Intercessor data (JSON)
   '/data/angelguarda.json',
   '/data/divinaprovidencia.json',
@@ -102,6 +104,7 @@ const PRECACHE_URLS = [
   '/data/santaines.json',
   '/data/sannicolas.json',
   '/data/sancristobal.json',
+  '/data/preciosisimasangre.json',
 ];
 
 // ── INSTALL: pre-cache everything ─────────────────
@@ -124,17 +127,18 @@ self.addEventListener('activate', event => {
   );
 });
 
-// ── FETCH: stale-while-revalidate for core assets ─
+// ── FETCH: stale-while-revalidate for core assets and JSON ─
 // Serve from cache instantly; always refresh cache in background.
-// Max staleness = 1 page load. Images/JSON: cache-first (rarely change).
+// Max staleness = 1 page load. Images/fonts stay cache-first.
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
 
   const url = new URL(event.request.url);
   const isCore = /\.(html|js|css)$/.test(url.pathname) || url.pathname === '/' || url.pathname.endsWith('/');
-  const isStatic = /\.(svg|png|ico|webp|json|woff2?)$/.test(url.pathname);
+  const isJson = /\.json$/.test(url.pathname);
+  const isStatic = /\.(svg|png|ico|webp|woff2?)$/.test(url.pathname);
 
-  if (isCore) {
+  if (isCore || isJson) {
     // Stale-while-revalidate: return cache immediately, update in background
     event.respondWith(
       caches.open(CACHE).then(cache =>
@@ -151,7 +155,7 @@ self.addEventListener('fetch', event => {
       )
     );
   } else if (isStatic) {
-    // Cache-first for images and data: serve from cache, fetch if missing
+    // Cache-first for images/fonts: serve from cache, fetch if missing
     event.respondWith(
       caches.match(event.request).then(cached => {
         if (cached) return cached;
