@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jerarquia de Meses | The Universal Prayer</title>
-  <meta name="description" content="Jerarquia de meses devocionales catolicos. Plan mensual actualizable con dias dinamicos por ano. Julio: Preciosisima Sangre de Cristo." />
+  <title>Calendario Devocional por Meses | The Universal Prayer</title>
+  <meta name="description" content="Calendario devocional catolico por meses. Plan mensual actualizable con dias dinamicos por ano. Julio: Preciosisima Sangre de Cristo." />
   <meta name="theme-color" content="#c9a84c" />
   <link rel="manifest" href="/manifest.json" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -273,14 +273,12 @@
   </header>
 
   <section class="months-hero">
-    <a href="/" class="ador-back-link" data-lang="es">← Inicio</a>
-    <a href="/" class="ador-back-link" data-lang="en" style="display:none">← Home</a>
 
     <div class="months-badge" data-lang="es">Camino Devocional Anual</div>
     <div class="months-badge" data-lang="en" style="display:none">Yearly Devotional Path</div>
 
-    <h1 class="months-title" data-lang="es">Jerarquia de Meses</h1>
-    <h1 class="months-title" data-lang="en" style="display:none">Months Hierarchy</h1>
+    <h1 class="months-title" data-lang="es">Calendario Devocional por Meses</h1>
+    <h1 class="months-title" data-lang="en" style="display:none">Monthly Devotional Calendar</h1>
 
     <p class="months-subtitle" data-lang="es">Cada mes tiene un enfoque central. Puedes actualizar su contenido y el calendario se ajusta automaticamente al ano seleccionado, incluyendo meses variables como febrero.</p>
     <p class="months-subtitle" data-lang="en" style="display:none">Each month has a central devotional focus. You can update month content anytime, and the calendar adjusts automatically to the selected year, including variable months like February.</p>
@@ -349,36 +347,92 @@
         { key: 'diciembre', es: 'Diciembre', en: 'December', topicEs: 'Adviento y Navidad', topicEn: 'Advent and Christmas' }
       ];
 
+      const julyDailyEs = [
+        'Comienza el mes ofreciendo tu vida al Senor: hoy haz una consagracion sencilla y escribe por que necesitas ser redimido en esta etapa.',
+        'Contempla Getsemani y reconoce donde te cuesta obedecer a Dios; la Sangre de Cristo te ensena a decir "si" incluso con temor.',
+        'Medita la flagelacion y piensa en las heridas que causas con tus palabras; pide gracia para hablar con verdad y caridad hoy.',
+        'Mira la coronacion de espinas y entrega tus pensamientos de orgullo, juicio o desesperanza para que Cristo reine en tu mente.',
+        'En el camino al Calvario, Jesus cae y se levanta; haz hoy una decision concreta de volver a empezar en lo que has abandonado.',
+        'Detente ante la Cruz y agradece el precio de tu salvacion; convierte esa gratitud en una obra real de misericordia en casa.',
+        'La Sangre de Cristo habla perdon; revisa una relacion herida y da el primer paso humilde para reconciliarte.',
+        'Hoy ora por tu familia nombrando a cada persona; pide proteccion, paz y conversion sin controlar la vida de nadie.',
+        'Recuerda que la redencion no es teoria; examina tu conciencia con sinceridad y prepara una buena confesion si la necesitas.',
+        'Vuelve a la Eucaristia con hambre espiritual: la Sangre de la Nueva Alianza te sostiene cuando tu fe se enfria.',
+        'Ofrece tus cansancios unidos al sacrificio de Cristo; lo pequeno de hoy puede ser ofrenda santa si se vive con amor.',
+        'Reza por quienes viven lejos de Dios; la Sangre derramada por todos te ensena a interceder sin excluir a nadie.',
+        'Mira tus miedos de frente y ponles nombre en oracion; pide libertad interior para no vivir gobernado por la ansiedad.',
+        'Haz silencio cinco minutos ante el Senor y deja que su misericordia ordene tu corazon antes de tomar decisiones importantes.',
+        'Contempla el costado abierto de Cristo: de ahi nacen Iglesia y sacramentos; hoy agradece pertenecer a una comunidad de fe.',
+        'Une tu amor a Maria con la redencion de Cristo: pide a Nuestra Senora del Carmen que te ensene fidelidad diaria.',
+        'Si cargas culpas antiguas, recuerda que la Sangre de Jesus limpia de verdad; rechaza la autoacusacion estancada y camina en gracia.',
+        'Practica una penitencia concreta y sobria; no para castigarte, sino para entrenar el corazon en libertad y obediencia.',
+        'Hoy reza por enfermos y afligidos; pide que la Sangre del Senor sea consuelo, fortaleza y esperanza en su prueba.',
+        'Intercede por los que sufren violencia o injusticia; que la redencion transforme tambien estructuras y ambientes de pecado.',
+        'Revisa tu uso del tiempo, pantallas y palabras; entrega a Cristo los habitos que drenan tu alma.',
+        'Haz memoria de una gracia recibida este ano y responde con gratitud activa: servir, visitar, escuchar o compartir.',
+        'La Sangre de Cristo vence el mal con amor; renuncia hoy a toda forma de odio, venganza o dureza deliberada.',
+        'Ora por sacerdotes y consagrados para que vivan con santidad; la Iglesia necesita testigos transparentes del Evangelio.',
+        'Dedica este dia a los jovenes y ninos de tu familia; pide proteccion espiritual y ejemplo coherente de tu parte.',
+        'Vigila la pureza de tus intenciones: no busques solo favores, busca sobre todo conversion y amistad con Cristo.',
+        'Haz hoy un acto de justicia pendiente: pedir perdon, reparar un dano o cumplir una promesa atrasada.',
+        'Reza por difuntos y almas olvidadas; la esperanza cristiana nace de la Pascua, no del olvido del dolor.',
+        'Mira el mes casi terminado y discierne frutos concretos: donde creciste, donde fallaste y que necesitas corregir.',
+        'Renueva tu confianza: la Sangre preciosa no humilla, levanta; entrega de nuevo lo que aun no logras soltar.',
+        'Cierra julio con accion de gracias y proposito estable: perseverar en oracion, sacramentos y caridad durante todo el ano.'
+      ];
+
+      const julyDailyEn = [
+        'Begin the month by offering your life to the Lord: make a simple consecration and write why you need redemption in this season.',
+        'Contemplate Gethsemane and notice where obedience is hard for you; Christ\'s Blood teaches you to say "yes" even in fear.',
+        'Meditate on the scourging and examine the wounds caused by your words; ask for grace to speak with truth and charity today.',
+        'Look at the crowning with thorns and surrender thoughts of pride, judgment, or despair so Christ may reign in your mind.',
+        'On the way to Calvary, Jesus falls and rises; make one concrete decision today to restart what you have abandoned.',
+        'Stand before the Cross and thank God for the price of your salvation; turn gratitude into one real work of mercy at home.',
+        'The Blood of Christ speaks forgiveness; review one wounded relationship and take the first humble step toward reconciliation.',
+        'Pray for your family by naming each person; ask for protection, peace, and conversion without trying to control others.',
+        'Remember redemption is not theory; examine your conscience sincerely and prepare a good confession if needed.',
+        'Return to the Eucharist with spiritual hunger: the Blood of the New Covenant sustains you when faith grows cold.',
+        'Offer your fatigue united to Christ\'s sacrifice; even small duties become holy offerings when done in love.',
+        'Pray for people far from God; the Blood shed for all teaches you to intercede without excluding anyone.',
+        'Face your fears and name them in prayer; ask for interior freedom so anxiety does not rule your decisions.',
+        'Keep five minutes of silence before the Lord and let mercy reorder your heart before important choices.',
+        'Contemplate Christ\'s opened side: from there come Church and sacraments; give thanks today for belonging to a faith community.',
+        'Unite Marian devotion with Christ\'s redemption: ask Our Lady of Mount Carmel to teach you daily fidelity.',
+        'If you carry old guilt, remember Jesus\' Blood truly cleanses; reject stagnant self-accusation and walk in grace.',
+        'Practice one concrete and sober penance; not to punish yourself, but to train the heart in freedom and obedience.',
+        'Pray today for the sick and afflicted; ask that the Lord\'s Blood be their consolation, strength, and hope.',
+        'Intercede for those suffering violence or injustice; may redemption transform structures and environments of sin.',
+        'Review your use of time, screens, and speech; surrender habits that quietly drain your soul.',
+        'Remember one grace received this year and respond with active gratitude: serve, visit, listen, or share.',
+        'Christ\'s Blood overcomes evil through love; renounce every form of hatred, revenge, and chosen hardness.',
+        'Pray for priests and consecrated men and women to live holy lives; the Church needs transparent Gospel witnesses.',
+        'Offer this day for the young people and children in your family; ask for spiritual protection and your own coherent example.',
+        'Watch the purity of your intentions: do not seek only favors, seek conversion and friendship with Christ.',
+        'Do one pending act of justice today: ask forgiveness, repair damage, or fulfill a delayed promise.',
+        'Pray for the dead and forgotten souls; Christian hope is born from Easter, not from ignoring sorrow.',
+        'As the month nears its end, discern concrete fruits: where you grew, where you failed, and what must be corrected.',
+        'Renew your trust: the Precious Blood does not humiliate, it raises up; surrender again what you still resist giving.',
+        'Close July with thanksgiving and a stable resolution: persevere in prayer, sacraments, and charity all year long.'
+      ];
+
       const julyPlanEs = {
         note: 'Julio se vive como mes de la Preciosisima Sangre. El objetivo es la conversion, la limpieza del pecado y la confianza en la redencion de Cristo.',
-        dayText: function (d) {
-          if (d === 1) return 'Fiesta tradicional de la Preciosisima Sangre. Ofrenda del mes y consagracion personal.';
-          if (d === 16) return 'Memoria fuerte mariana del Carmen: unir la devocion a Maria con la Sangre redentora de Cristo.';
-          if (d % 7 === 0) return 'Dia de reparacion: confesion (si es posible), Letania de la Preciosisima Sangre y obra de caridad.';
-          if (d % 2 === 0) return 'Rezar coronilla breve o 33 invocaciones: "Sangre preciosa de Cristo, sálvanos".';
-          return 'Lectura breve del Evangelio de la Pasion + oracion de entrega a la Preciosisima Sangre.';
-        }
+        dayText: function (d) { return julyDailyEs[d - 1] || julyDailyEs[julyDailyEs.length - 1]; }
       };
 
       const julyPlanEn = {
         note: 'July is lived as the month of the Most Precious Blood. The focus is conversion, cleansing from sin, and trust in Christ\'s redemption.',
-        dayText: function (d) {
-          if (d === 1) return 'Traditional feast of the Precious Blood. Monthly offering and personal consecration.';
-          if (d === 16) return 'Strong Marian day (Our Lady of Mount Carmel): unite Marian devotion with Christ\'s redeeming Blood.';
-          if (d % 7 === 0) return 'Day of reparation: confession (if possible), Litany of the Precious Blood, and one act of charity.';
-          if (d % 2 === 0) return 'Pray a short chaplet or 33 invocations: "Most Precious Blood of Christ, save us".';
-          return 'Brief Gospel reading of the Passion + prayer of surrender to the Precious Blood.';
-        }
+        dayText: function (d) { return julyDailyEn[d - 1] || julyDailyEn[julyDailyEn.length - 1]; }
       };
 
       const genericPlan = {
         es: {
           note: 'Este mes esta listo para ser actualizado. Puedes definir un enfoque, una oracion diaria y 2 fechas clave.',
-          dayText: function (d) { return 'Dia ' + d + ': oracion diaria, lectura breve y obra de caridad concreta.'; }
+          dayText: function () { return 'Oracion diaria, lectura breve y una obra concreta de caridad.'; }
         },
         en: {
           note: 'This month is ready to be updated. Define one focus, one daily prayer, and 2 key dates.',
-          dayText: function (d) { return 'Day ' + d + ': daily prayer, short reading, and one concrete act of charity.'; }
+          dayText: function () { return 'Daily prayer, short reading, and one concrete act of charity.'; }
         }
       };
 
@@ -534,11 +588,11 @@
 
           const dNum = document.createElement('div');
           dNum.className = 'day-num';
-          dNum.textContent = (lang === 'es' ? 'Dia ' : 'Day ') + d;
+          dNum.textContent = String(d);
 
           const dSummary = document.createElement('div');
           dSummary.className = 'day-summary';
-          dSummary.textContent = text;
+          dSummary.textContent = lang === 'es' ? 'Abrir reflexion' : 'Open reflection';
 
           const icon = document.createElement('span');
           icon.className = 'day-icon';
