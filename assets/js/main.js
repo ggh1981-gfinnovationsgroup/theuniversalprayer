@@ -436,16 +436,47 @@ const FEAST_DAYS = {
   '12-29': ['reydavid'],
 };
 
+function normalizeIntercessorSlug(value) {
+  return (value || '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]/g, '');
+}
+
+function resolveIntercessorSlug(rawValue) {
+  const normalized = normalizeIntercessorSlug(rawValue);
+  if (!normalized) return null;
+
+  const aliasMap = {
+    // Most Precious Blood of Christ: common spellings/typos
+    preciosisimasangre: 'preciosisimasangre',
+    preciosimasangre: 'preciosisimasangre',
+    preciosisimasangredecristo: 'preciosisimasangre',
+    sangredecristo: 'preciosisimasangre',
+    preciosisimasangrecristo: 'preciosisimasangre',
+  };
+
+  if (aliasMap[normalized]) return aliasMap[normalized];
+
+  const direct = INTERCESSORS.find(i =>
+    normalizeIntercessorSlug(i.id) === normalized ||
+    normalizeIntercessorSlug(i.subdomain) === normalized
+  );
+
+  return direct ? direct.subdomain : normalized;
+}
+
 // ── SUBDOMAIN DETECTION ────────────────────────────
 function getSubdomain() {
   // Primary: query param ?intercesor=padrepio (GitHub Pages compatible)
   const params = new URLSearchParams(window.location.search);
   const param = params.get('intercesor');
-  if (param) return param.toLowerCase();
+  if (param) return resolveIntercessorSlug(param);
   // Fallback: true subdomain (e.g. padrepio.theuniversalprayer.com)
   const host = window.location.hostname;
   const parts = host.split('.');
-  if (parts.length >= 3) return parts[0].toLowerCase();
+  if (parts.length >= 3) return resolveIntercessorSlug(parts[0]);
   return null;
 }
 
