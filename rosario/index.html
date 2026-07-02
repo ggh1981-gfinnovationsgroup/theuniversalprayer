@@ -773,8 +773,22 @@
         <span class="logo-text">The Universal Prayer</span>
       </a>
       <button class="lang-toggle" id="langToggle" aria-label="Toggle language">EN</button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
+
+  <!-- SIDE NAV -->
+  <div class="side-nav-overlay" id="sideNavOverlay"></div>
+  <nav class="side-nav" id="sideNav" aria-label="Site menu">
+    <div class="side-nav-header">
+      <span class="side-nav-title" data-lang="es">Menú</span>
+      <span class="side-nav-title" data-lang="en" style="display:none">Menu</span>
+      <button class="side-nav-close" id="sideNavClose" aria-label="Close menu">✕</button>
+    </div>
+    <ul class="side-nav-list" id="sideNavList"></ul>
+  </nav>
 
   <main class="rosario-wrap">
     <section class="rosario-hero">
@@ -1620,7 +1634,35 @@
     els.langToggle.addEventListener('click', () => {
       lang = lang === 'es' ? 'en' : 'es';
       render();
+      renderSideMenu();
     });
+
+    // ── Hamburger menu ────────────────────────────────
+    const hamburgerBtn  = document.getElementById('hamburgerBtn');
+    const sideNavEl     = document.getElementById('sideNav');
+    const sideNavOver   = document.getElementById('sideNavOverlay');
+    const sideNavClose  = document.getElementById('sideNavClose');
+    const sideNavList   = document.getElementById('sideNavList');
+
+    function renderSideMenu() {
+      const L = lang === 'es';
+      sideNavList.innerHTML = `
+        <li><a class="side-nav-link side-nav-home"       href="/">${L ? '← Inicio' : '← Home'}</a></li>
+        <li><a class="side-nav-link side-nav-family"     href="/#oraciones-familia">${L ? '🙏 Oraciones en Familia' : '🙏 Family Prayers'}</a></li>
+        <li><a class="side-nav-link side-nav-saints"     href="/#intercessorsGrid">${L ? '✨ Intercesores' : '✨ Intercessors'}</a></li>
+        <li><a class="side-nav-link side-nav-adoracion"  href="/adoracion/">${L ? '✝ Adoración' : '✝ Adoration'}</a></li>
+        <li><a class="side-nav-link side-nav-espiritu"   href="/espiritu/">${L ? '🕊 Espíritu Santo' : '🕊 Holy Spirit'}</a></li>
+        <li><a class="side-nav-link side-nav-matrimonio" href="/matrimonio/">${L ? '💍 Matrimonio' : '💍 Marriage'}</a></li>
+        <li><a class="side-nav-link side-nav-difuntos"   href="/difuntos/">${L ? '🕯 Difuntos' : '🕯 Departed'}</a></li>`;
+    }
+    renderSideMenu();
+
+    const openSideNav  = () => { sideNavEl.classList.add('open'); sideNavOver.classList.add('open'); };
+    const closeSideNav = () => { sideNavEl.classList.remove('open'); sideNavOver.classList.remove('open'); };
+    hamburgerBtn.addEventListener('click', openSideNav);
+    sideNavClose.addEventListener('click', closeSideNav);
+    sideNavOver.addEventListener('click', closeSideNav);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSideNav(); });
 
     els.mysterySelect.addEventListener('change', (e) => {
       mystery = e.target.value;
