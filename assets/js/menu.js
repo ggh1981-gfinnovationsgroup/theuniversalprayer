@@ -52,7 +52,7 @@
     const interHref  = isRoot ? '#intercessorsGrid'    : '/#intercessorsGrid';
 
     list.innerHTML =
-      '<li><a class="side-nav-link side-nav-home"       href="' + homeHref   + '">' + (L ? '\u2190 Inicio'                : '\u2190 Home')              + '</a></li>' +
+      '<li><a class="side-nav-link side-nav-home"       href="' + homeHref   + '">' + (L ? '\uD83C\uDFE0 Inicio'           : '\uD83C\uDFE0 Home')         + '</a></li>' +
       '<li><a class="side-nav-link side-nav-family"     href="' + familyHref + '">' + (L ? '\uD83D\uDE4F Oraciones en Familia' : '\uD83D\uDE4F Family Prayers')   + '</a></li>' +
       '<li><a class="side-nav-link side-nav-saints"     href="' + interHref  + '">' + (L ? '\u2728 Intercesores'          : '\u2728 Intercessors')      + '</a></li>' +
       '<li><a class="side-nav-link side-nav-months"     href="/meses/">'    + (L ? '\uD83D\uDCC5 Meses Devocionales' : '\uD83D\uDCC5 Devotional Months') + '</a></li>' +

@@ -245,6 +245,12 @@
       gap: 0.5rem;
       flex-wrap: wrap;
     }
+    .month-links-title {
+      margin-top: 1rem;
+      color: var(--white-dim);
+      font-size: 0.8rem;
+      letter-spacing: 0.03em;
+    }
     .month-link {
       display: inline-block;
       text-decoration: none;
@@ -311,12 +317,8 @@
 
       <div class="days-list" id="daysList"></div>
 
-      <div class="month-links">
-        <a class="month-link" href="/intercesor/?intercesor=preciosisimasangre" data-lang="es">Ir a Preciosisima Sangre</a>
-        <a class="month-link" href="/intercesor/?intercesor=preciosisimasangre" data-lang="en" style="display:none">Go to Precious Blood</a>
-        <a class="month-link" href="/intercesor/?intercesor=sagradocorazon" data-lang="es">Ir a Sagrado Corazon</a>
-        <a class="month-link" href="/intercesor/?intercesor=sagradocorazon" data-lang="en" style="display:none">Go to Sacred Heart</a>
-      </div>
+      <div class="month-links-title" id="monthLinksTitle"></div>
+      <div class="month-links" id="monthLinks"></div>
     </section>
   </main>
 
@@ -346,6 +348,42 @@
         { key: 'noviembre', es: 'Noviembre', en: 'November', topicEs: 'Difuntos y Esperanza Eterna', topicEn: 'Holy Souls and Eternal Hope' },
         { key: 'diciembre', es: 'Diciembre', en: 'December', topicEs: 'Adviento y Navidad', topicEn: 'Advent and Christmas' }
       ];
+
+      const defaultMonthLinks = {
+        es: [
+          { href: '/oraciones/', label: 'Oraciones Basicas' },
+          { href: '/rosario/', label: 'Rosario Interactivo' },
+          { href: '/intercesor/', label: 'Intercesores' }
+        ],
+        en: [
+          { href: '/oraciones/', label: 'Basic Prayers' },
+          { href: '/rosario/', label: 'Interactive Rosary' },
+          { href: '/intercesor/', label: 'Intercessors' }
+        ]
+      };
+
+      const monthSpecificLinks = {
+        julio: {
+          es: [
+            { href: '/intercesor/?intercesor=preciosisimasangre', label: 'Preciosisima Sangre' },
+            { href: '/adoracion/', label: 'Adoracion' },
+            { href: '/espiritu/', label: 'Espiritu Santo' }
+          ],
+          en: [
+            { href: '/intercesor/?intercesor=preciosisimasangre', label: 'Precious Blood' },
+            { href: '/adoracion/', label: 'Adoration' },
+            { href: '/espiritu/', label: 'Holy Spirit' }
+          ]
+        },
+        junio: {
+          es: [{ href: '/intercesor/?intercesor=sagradocorazon', label: 'Sagrado Corazon' }],
+          en: [{ href: '/intercesor/?intercesor=sagradocorazon', label: 'Sacred Heart' }]
+        },
+        octubre: {
+          es: [{ href: '/rosario/', label: 'Rosario Interactivo' }],
+          en: [{ href: '/rosario/', label: 'Interactive Rosary' }]
+        }
+      };
 
       const julyDailyEs = [
         'Comienza el mes ofreciendo tu vida al Senor: hoy haz una consagracion sencilla y escribe por que necesitas ser redimido en esta etapa.',
@@ -634,6 +672,25 @@
         const initiallyOpenRow = list.querySelector('.day-item.open');
         if (initiallyOpenRow) {
           initiallyOpenRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        const linksTitle = el('monthLinksTitle');
+        if (linksTitle) {
+          linksTitle.textContent = lang === 'es' ? 'Recursos de la app para este mes' : 'In-app resources for this month';
+        }
+
+        const linksBox = el('monthLinks');
+        if (linksBox) {
+          linksBox.innerHTML = '';
+          const specific = monthSpecificLinks[m.key] && monthSpecificLinks[m.key][lang] ? monthSpecificLinks[m.key][lang] : [];
+          const allLinks = specific.concat(defaultMonthLinks[lang]);
+          allLinks.forEach(function (item) {
+            const a = document.createElement('a');
+            a.className = 'month-link';
+            a.href = item.href;
+            a.textContent = item.label;
+            linksBox.appendChild(a);
+          });
         }
       }
 
