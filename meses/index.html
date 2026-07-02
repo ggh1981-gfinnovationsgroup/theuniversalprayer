@@ -177,20 +177,63 @@
       padding: 0.35rem;
     }
     .day-item {
-      display: grid;
-      grid-template-columns: 68px 1fr;
-      gap: 0.7rem;
-      align-items: start;
-      padding: 0.55rem 0.55rem;
+      padding: 0.25rem 0.4rem;
       border-bottom: 1px solid rgba(201,168,76,0.09);
     }
     .day-item:last-child { border-bottom: 0; }
+    .day-toggle {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0.5rem;
+      align-items: center;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      text-align: left;
+      padding: 0.4rem 0.2rem;
+      color: inherit;
+    }
+    .day-toggle:hover {
+      background: rgba(201,168,76,0.06);
+      border-radius: 8px;
+    }
+    .day-toggle:focus-visible {
+      outline: 2px solid rgba(201,168,76,0.5);
+      border-radius: 8px;
+      outline-offset: 1px;
+    }
+    .day-head {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+    }
     .day-num {
       font-size: 0.8rem;
       color: var(--gold);
       letter-spacing: 0.08em;
       text-transform: uppercase;
     }
+    .day-summary {
+      font-size: 0.79rem;
+      color: rgba(255,255,255,0.72);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+    }
+    .day-icon {
+      font-size: 0.9rem;
+      color: rgba(201,168,76,0.92);
+      transition: transform 0.2s ease;
+      transform: rotate(-90deg);
+    }
+    .day-item.open .day-icon { transform: rotate(0deg); }
+    .day-panel {
+      display: none;
+      padding: 0 0.2rem 0.5rem;
+    }
+    .day-item.open .day-panel { display: block; }
     .day-text {
       color: var(--white-dim);
       font-size: 0.86rem;
@@ -451,6 +494,8 @@
         const year = parseInt(el('yearSelect').value, 10);
         const m = months[selectedMonth];
         const totalDays = daysInMonth(year, selectedMonth);
+        const now = new Date();
+        const openDay = Math.min(now.getDate(), totalDays);
 
         el('plannerTitle').textContent = (lang === 'es' ? m.es : m.en) + ' ' + year;
         el('plannerTopic').textContent = (lang === 'es' ? m.topicEs : m.topicEn);
@@ -474,20 +519,67 @@
         const list = el('daysList');
         list.innerHTML = '';
         for (let d = 1; d <= totalDays; d++) {
+          const text = plan.dayText(d);
+          const isOpen = d === openDay;
           const row = document.createElement('div');
-          row.className = 'day-item';
+          row.className = 'day-item' + (isOpen ? ' open' : '');
+
+          const toggle = document.createElement('button');
+          toggle.type = 'button';
+          toggle.className = 'day-toggle';
+          toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+
+          const head = document.createElement('div');
+          head.className = 'day-head';
 
           const dNum = document.createElement('div');
           dNum.className = 'day-num';
           dNum.textContent = (lang === 'es' ? 'Dia ' : 'Day ') + d;
 
+          const dSummary = document.createElement('div');
+          dSummary.className = 'day-summary';
+          dSummary.textContent = text;
+
+          const icon = document.createElement('span');
+          icon.className = 'day-icon';
+          icon.textContent = '▾';
+
+          head.appendChild(dNum);
+          head.appendChild(dSummary);
+          toggle.appendChild(head);
+          toggle.appendChild(icon);
+
+          const panel = document.createElement('div');
+          panel.className = 'day-panel';
+
           const dText = document.createElement('div');
           dText.className = 'day-text';
-          dText.textContent = plan.dayText(d);
+          dText.textContent = text;
 
-          row.appendChild(dNum);
-          row.appendChild(dText);
+          panel.appendChild(dText);
+
+          toggle.addEventListener('click', function () {
+            const alreadyOpen = row.classList.contains('open');
+            list.querySelectorAll('.day-item.open').forEach(function (openRow) {
+              openRow.classList.remove('open');
+              const openToggle = openRow.querySelector('.day-toggle');
+              if (openToggle) openToggle.setAttribute('aria-expanded', 'false');
+            });
+            if (!alreadyOpen) {
+              row.classList.add('open');
+              toggle.setAttribute('aria-expanded', 'true');
+              row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+          });
+
+          row.appendChild(toggle);
+          row.appendChild(panel);
           list.appendChild(row);
+        }
+
+        const initiallyOpenRow = list.querySelector('.day-item.open');
+        if (initiallyOpenRow) {
+          initiallyOpenRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
       }
 
