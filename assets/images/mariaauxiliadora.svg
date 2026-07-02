@@ -339,10 +339,4 @@
   <line x1="100" y1="52" x2="300" y2="52" stroke="#c9900a" stroke-width="0.6" opacity="0.5"/>
   <circle cx="200" cy="52" r="2" fill="#f5c842" opacity="0.7"/>
 
-  <!-- Minimal facial features for visual consistency across intercessors -->
-  <g id="tup-face-features" opacity="0.9">
-    <ellipse id="tup-eye-left" cx="186" cy="148" rx="3.1" ry="2.2" fill="#2a1a12"/>
-    <ellipse id="tup-eye-right" cx="214" cy="148" rx="3.1" ry="2.2" fill="#2a1a12"/>
-    <path id="tup-nose" d="M200 152 C198 158, 198 160, 200 163" stroke="#7b4a35" stroke-width="1.6" fill="none" stroke-linecap="round"/>
-    <path id="tup-mouth" d="M192 172 Q200 177 208 172" stroke="#8f3a3a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-  </g></svg>
+</svg>

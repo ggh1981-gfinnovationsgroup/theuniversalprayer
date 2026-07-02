@@ -126,12 +126,4 @@
   <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c09020" letter-spacing="3" opacity="0.92">SANTA ROXANA  ·  ST. ROXANA OF PERSIA</text>
   <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#f0d080" font-style="italic">«Santa Roxana de Persia»</text>
   <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#c09020" font-style="italic" opacity="0.82">«Roshanak — Estrella Brillante»</text>
-
-  <!-- Minimal facial features for visual consistency across intercessors -->
-  <g id="tup-face-features" opacity="0.9">
-    <ellipse id="tup-eye-left" cx="186" cy="88" rx="3.1" ry="2.2" fill="#2a1a12"/>
-    <ellipse id="tup-eye-right" cx="214" cy="88" rx="3.1" ry="2.2" fill="#2a1a12"/>
-    <path id="tup-nose" d="M200 92 C198 98, 198 100, 200 103" stroke="#7b4a35" stroke-width="1.6" fill="none" stroke-linecap="round"/>
-    <path id="tup-mouth" d="M192 112 Q200 117 208 112" stroke="#8f3a3a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-  </g>
 </svg>

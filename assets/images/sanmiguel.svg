@@ -75,12 +75,4 @@
   <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">SAN MIGUEL ARCANGEL  ·  SAINT MICHAEL</text>
   <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#b0c8f8" font-style="italic">«San Miguel Arcángel»</text>
   <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#d0dce8" font-style="italic" opacity="0.8">«Saint Michael the Archangel»</text>
-
-  <!-- Minimal facial features for visual consistency across intercessors -->
-  <g id="tup-face-features" opacity="0.9">
-    <ellipse id="tup-eye-left" cx="186" cy="108" rx="3.1" ry="2.2" fill="#2a1a12"/>
-    <ellipse id="tup-eye-right" cx="214" cy="108" rx="3.1" ry="2.2" fill="#2a1a12"/>
-    <path id="tup-nose" d="M200 112 C198 118, 198 120, 200 123" stroke="#7b4a35" stroke-width="1.6" fill="none" stroke-linecap="round"/>
-    <path id="tup-mouth" d="M192 132 Q200 137 208 132" stroke="#8f3a3a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-  </g>
 </svg>

@@ -193,10 +193,4 @@
         fill="#90b870" text-anchor="middle" letter-spacing="1.2">APÓSTOL · HIJO DE LA CONSOLACIÓN</text>
   <text x="200" y="552" font-family="Georgia, serif" font-size="10"
         fill="#6a8858" text-anchor="middle" letter-spacing="1">11 DE JUNIO · JUNE 11</text>
-  <!-- Minimal facial features for visual consistency across intercessors -->
-  <g id="tup-face-features" opacity="0.9">
-    <ellipse id="tup-eye-left" cx="186" cy="148" rx="3.1" ry="2.2" fill="#2a1a12"/>
-    <ellipse id="tup-eye-right" cx="214" cy="148" rx="3.1" ry="2.2" fill="#2a1a12"/>
-    <path id="tup-nose" d="M200 152 C198 158, 198 160, 200 163" stroke="#7b4a35" stroke-width="1.6" fill="none" stroke-linecap="round"/>
-    <path id="tup-mouth" d="M192 172 Q200 177 208 172" stroke="#8f3a3a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-  </g></svg>
+</svg>

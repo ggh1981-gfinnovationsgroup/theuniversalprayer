@@ -62,12 +62,4 @@
   <text x="200" y="547" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" fill="#c9a84c" letter-spacing="2" opacity="0.9">NTRA. SRA. DIVINA PROVIDENCIA  ·  OUR LADY OF DIVINE PROVIDENCE</text>
   <text x="200" y="566" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="#f5e060" font-style="italic">«Nuestra Señora de la Divina Providencia»</text>
   <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#50d8b0" font-style="italic" opacity="0.8">«Our Lady of Divine Providence»</text>
-
-  <!-- Minimal facial features for visual consistency across intercessors -->
-  <g id="tup-face-features" opacity="0.9">
-    <ellipse id="tup-eye-left" cx="186" cy="110" rx="3.1" ry="2.2" fill="#2a1a12"/>
-    <ellipse id="tup-eye-right" cx="214" cy="110" rx="3.1" ry="2.2" fill="#2a1a12"/>
-    <path id="tup-nose" d="M200 114 C198 120, 198 122, 200 125" stroke="#7b4a35" stroke-width="1.6" fill="none" stroke-linecap="round"/>
-    <path id="tup-mouth" d="M192 134 Q200 139 208 134" stroke="#8f3a3a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-  </g>
 </svg>

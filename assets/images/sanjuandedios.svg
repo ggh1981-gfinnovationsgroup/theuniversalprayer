@@ -76,12 +76,4 @@
   <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a030" letter-spacing="3" opacity="0.95">SAN JUAN DE DIOS  ·  SAINT JOHN OF GOD</text>
   <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#d0c0a0" font-style="italic">«San Juan de Dios»</text>
   <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#b0a080" font-style="italic" opacity="0.8">«Saint John of God»</text>
-
-  <!-- Minimal facial features for visual consistency across intercessors -->
-  <g id="tup-face-features" opacity="0.9">
-    <ellipse id="tup-eye-left" cx="186" cy="110" rx="3.1" ry="2.2" fill="#2a1a12"/>
-    <ellipse id="tup-eye-right" cx="214" cy="110" rx="3.1" ry="2.2" fill="#2a1a12"/>
-    <path id="tup-nose" d="M200 114 C198 120, 198 122, 200 125" stroke="#7b4a35" stroke-width="1.6" fill="none" stroke-linecap="round"/>
-    <path id="tup-mouth" d="M192 134 Q200 139 208 134" stroke="#8f3a3a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-  </g>
 </svg>
