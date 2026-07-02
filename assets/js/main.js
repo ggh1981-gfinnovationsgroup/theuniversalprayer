@@ -337,8 +337,8 @@ function setLanguage(lang) {
     el.style.display = el.getAttribute('data-lang') === lang ? 'block' : 'none';
   });
 
-  // Re-render menu items in new language
-  if (window._renderMenuItems) window._renderMenuItems();
+  // Re-render menu items in new language (menu.js listens for this)
+  window.dispatchEvent(new CustomEvent('tup:langchange', { detail: lang }));
 
   // Re-render quick nav labels in new language
   if (window._renderQuickNav) window._renderQuickNav();
@@ -1822,53 +1822,8 @@ function renderHistoriasPage(data, meta) {
 
 // ── HAMBURGER MENU ────────────────────────────────
 function initMenu() {
-  const btn     = document.getElementById('hamburgerBtn');
-  const nav     = document.getElementById('sideNav');
-  const overlay = document.getElementById('sideNavOverlay');
-  const close   = document.getElementById('sideNavClose');
-  const list    = document.getElementById('sideNavList');
-  if (!btn || !nav || !list) return;
-
-  // Populate list
-  function renderMenuItems() {
-    const isSubPage      = isIntercessorPage() || isHistoriasPage();
-    const homeHref        = isSubPage ? '/' : '#top';
-    const familyHref      = isSubPage ? '/#oraciones-familia' : '#oraciones-familia';
-    const intercesorsHref = isSubPage ? '/#intercessorsGrid'  : '#intercessorsGrid';
-
-    const homeLabel       = currentLang === 'es' ? '← Inicio'              : '← Home';
-    const familyLabel     = currentLang === 'es' ? '🙏 Oraciones en Familia' : '🙏 Family Prayers';
-    const intercesorsLabel = currentLang === 'es' ? '✨ Intercesores'        : '✨ Intercessors';
-    const oracionesLabel  = currentLang === 'es' ? '📜 Oraciones Básicas'    : '📜 Basic Prayers';
-    const rosarioLabel    = currentLang === 'es' ? '📿 Rosario Interactivo'   : '📿 Interactive Rosary';
-    const adoracionLabel  = currentLang === 'es' ? '✝ Adoración'            : '✝ Adoration';
-    const espirituLabel   = currentLang === 'es' ? '🕊 Espíritu Santo'       : '🕊 Holy Spirit';
-    const matrimonioLabel = currentLang === 'es' ? '💍 Matrimonio'            : '💍 Marriage';
-    const difuntosLabel   = currentLang === 'es' ? '🕯 Difuntos'              : '🕯 Departed';
-
-    list.innerHTML = `
-      <li><a class="side-nav-link side-nav-home"      href="${homeHref}">${homeLabel}</a></li>
-      <li><a class="side-nav-link side-nav-family"    href="${familyHref}">${familyLabel}</a></li>
-      <li><a class="side-nav-link side-nav-saints"    href="${intercesorsHref}">${intercesorsLabel}</a></li>
-      <li><a class="side-nav-link side-nav-oraciones" href="/oraciones/">${oracionesLabel}</a></li>
-      <li><a class="side-nav-link side-nav-rosario" href="/rosario/">${rosarioLabel}</a></li>
-      <li><a class="side-nav-link side-nav-adoracion" href="/adoracion/">${adoracionLabel}</a></li>
-      <li><a class="side-nav-link side-nav-espiritu"  href="/espiritu/">${espirituLabel}</a></li>
-      <li><a class="side-nav-link side-nav-matrimonio" href="/matrimonio/">${matrimonioLabel}</a></li>
-      <li><a class="side-nav-link side-nav-difuntos"  href="/difuntos/">${difuntosLabel}</a></li>`;
-  }
-  renderMenuItems();
-
-  // Re-render when language changes (called from setLanguage)
-  window._renderMenuItems = renderMenuItems;
-
-  const open  = () => { nav.classList.add('open'); overlay.classList.add('open'); };
-  const close_ = () => { nav.classList.remove('open'); overlay.classList.remove('open'); };
-
-  btn.addEventListener('click', open);
-  close.addEventListener('click', close_);
-  overlay.addEventListener('click', close_);
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') close_(); });
+  // Delegate to shared menu.js if loaded, otherwise fall back to inline init
+  if (window.initSiteMenu) { window.initSiteMenu(); return; }
 }
 
 // ── BOOT ───────────────────────────────────────────

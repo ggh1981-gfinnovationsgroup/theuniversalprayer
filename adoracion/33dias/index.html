@@ -40,13 +40,6 @@
     </div>
   </header>
 
-  <!-- SIDE NAV -->
-  <div class="side-nav-overlay" id="sideNavOverlay"></div>
-  <nav class="side-nav" id="sideNav" aria-label="Navigation">
-    <button class="side-nav-close" id="sideNavClose" aria-label="Close menu">✕</button>
-    <ul class="side-nav-list" id="sideNavList"></ul>
-  </nav>
-
   <!-- HERO -->
   <section class="a33-hero">
     <div class="a33-hero-inner">
@@ -219,37 +212,8 @@
     }
     document.getElementById('langToggle').addEventListener('click', () => {
       applyLang(lang === 'es' ? 'en' : 'es');
-      renderMenu();
+      window.dispatchEvent(new CustomEvent('tup:langchange', { detail: lang }));
     });
-
-    /* ── Hamburger menu ──────────────────────────── */
-    const hmBtn     = document.getElementById('hamburgerBtn');
-    const hmNav     = document.getElementById('sideNav');
-    const hmOverlay = document.getElementById('sideNavOverlay');
-    const hmClose   = document.getElementById('sideNavClose');
-    const hmList    = document.getElementById('sideNavList');
-
-    function renderMenu() {
-      const homeLabel        = lang === 'es' ? '← Inicio'               : '← Home';
-      const familyLabel      = lang === 'es' ? '🙏 Oraciones en Familia' : '🙏 Family Prayers';
-      const intercesorsLabel = lang === 'es' ? '✨ Intercesores'         : '✨ Intercessors';
-      const adoracionLabel   = lang === 'es' ? '✝ Adoración'             : '✝ Adoration';
-      const espirituLabel    = lang === 'es' ? '🕊 Espíritu Santo'        : '🕊 Holy Spirit';
-      hmList.innerHTML = `
-        <li><a class="side-nav-link side-nav-home"      href="/">${homeLabel}</a></li>
-        <li><a class="side-nav-link side-nav-family"    href="/#oraciones-familia">${familyLabel}</a></li>
-        <li><a class="side-nav-link side-nav-saints"    href="/#intercessorsGrid">${intercesorsLabel}</a></li>
-        <li><a class="side-nav-link side-nav-adoracion" href="/adoracion/">${adoracionLabel}</a></li>
-        <li><a class="side-nav-link side-nav-espiritu"  href="/espiritu/">${espirituLabel}</a></li>`;
-    }
-    renderMenu();
-
-    const openNav33  = () => { hmNav.classList.add('open'); hmOverlay.classList.add('open'); };
-    const closeNav33 = () => { hmNav.classList.remove('open'); hmOverlay.classList.remove('open'); };
-    hmBtn.addEventListener('click', openNav33);
-    hmClose.addEventListener('click', closeNav33);
-    hmOverlay.addEventListener('click', closeNav33);
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeNav33(); });
 
     /* ── Progress ─────────────────────────────────── */
     function updateProgress () {
@@ -474,5 +438,6 @@
   })();
   </script>
 
+  <script src="../../assets/js/menu.js"></script>
 </body>
 </html>
