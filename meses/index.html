@@ -480,11 +480,11 @@
       const julyMethodEs = {
         title: 'Como hacerlo (guia completa de julio)',
         steps: [
-          '1) Inicia con la Senal de la Cruz y ofrece el dia por una intencion concreta (conversion, paz familiar, sanacion interior, liberacion del miedo).',
-          '2) Lee 3-5 minutos un texto de la Pasion (Getsemani, flagelacion o Calvario) y haz un minuto de silencio.',
-          '3) Reza 33 invocaciones: "Sangre preciosa de Cristo, sálvanos y protege a mi familia".',
-          '4) Reza la Letania o una parte de ella (si no puedes completa), y termina con un Padre Nuestro, Ave Maria y Gloria.',
-          '5) Cierra el dia con examen de conciencia breve, acto de contricion y una obra concreta de caridad o perdon.'
+          'Inicia con la Senal de la Cruz y ofrece el dia por una intencion concreta (conversion, paz familiar, sanacion interior, liberacion del miedo).',
+          'Lee 3-5 minutos un texto de la Pasion (Getsemani, flagelacion o Calvario) y haz un minuto de silencio.',
+          'Reza 33 invocaciones: "Sangre preciosa de Cristo, sálvanos y protege a mi familia".',
+          'Reza la Letania o una parte de ella (si no puedes completa), y termina con un Padre Nuestro, Ave Maria y Gloria.',
+          'Cierra el dia con examen de conciencia breve, acto de contricion y una obra concreta de caridad o perdon.'
         ],
         prayer: 'Oracion de ofrenda diaria:\n"Senor Jesus, por tu Preciosisima Sangre te entrego este dia. Lava mi corazon, limpia mi pecado, protege mi hogar, fortalece mi fe y dame gracia para vivir en caridad y verdad. Amen."',
         closing: 'Oracion de cierre:\n"Jesus, por tu Sangre derramada en la Cruz, ten misericordia de mi y del mundo entero. Apartame del mal, guardame en tu gracia y llevame a una vida santa. Amen."'
@@ -493,11 +493,11 @@
       const julyMethodEn = {
         title: 'How to do it (complete July guide)',
         steps: [
-          '1) Begin with the Sign of the Cross and offer the day for one concrete intention (conversion, family peace, interior healing, freedom from fear).',
-          '2) Read 3-5 minutes from the Passion (Gethsemane, scourging, or Calvary) and keep one minute of silence.',
-          '3) Pray 33 invocations: "Most Precious Blood of Christ, save us and protect my family".',
-          '4) Pray the Litany (or part of it if needed), then one Our Father, Hail Mary, and Glory Be.',
-          '5) End the day with a brief examination of conscience, an act of contrition, and one concrete act of charity or forgiveness.'
+          'Begin with the Sign of the Cross and offer the day for one concrete intention (conversion, family peace, interior healing, freedom from fear).',
+          'Read 3-5 minutes from the Passion (Gethsemane, scourging, or Calvary) and keep one minute of silence.',
+          'Pray 33 invocations: "Most Precious Blood of Christ, save us and protect my family".',
+          'Pray the Litany (or part of it if needed), then one Our Father, Hail Mary, and Glory Be.',
+          'End the day with a brief examination of conscience, an act of contrition, and one concrete act of charity or forgiveness.'
         ],
         prayer: 'Daily offering prayer:\n"Lord Jesus, through Your Most Precious Blood I offer You this day. Wash my heart, cleanse my sin, protect my home, strengthen my faith, and give me grace to live in charity and truth. Amen."',
         closing: 'Closing prayer:\n"Jesus, by Your Blood shed on the Cross, have mercy on me and on the whole world. Keep me from evil, preserve me in Your grace, and lead me to a holy life. Amen."'
@@ -507,11 +507,11 @@
         es: {
           title: 'Como hacerlo (estructura base)',
           steps: [
-            '1) Senal de la Cruz + intencion del dia.',
-            '2) Lectura breve del Evangelio o vida del santo del mes.',
-            '3) Oracion principal del mes (10-15 minutos).',
-            '4) Padre Nuestro, Ave Maria, Gloria.',
-            '5) Acto concreto de caridad y cierre en accion de gracias.'
+            'Senal de la Cruz + intencion del dia.',
+            'Lectura breve del Evangelio o vida del santo del mes.',
+            'Oracion principal del mes (10-15 minutos).',
+            'Padre Nuestro, Ave Maria, Gloria.',
+            'Acto concreto de caridad y cierre en accion de gracias.'
           ],
           prayer: 'Formula breve sugerida:\n"Senor, recibeme en este tiempo de oracion. Concedeme conversion, fidelidad y caridad. Amen."',
           closing: 'Cierre sugerido:\n"Todo sea para tu gloria, Senor. Amen."'
@@ -519,11 +519,11 @@
         en: {
           title: 'How to do it (base structure)',
           steps: [
-            '1) Sign of the Cross + daily intention.',
-            '2) Short Gospel reading or life of the month saint.',
-            '3) Main prayer of the month (10-15 minutes).',
-            '4) Our Father, Hail Mary, Glory Be.',
-            '5) One concrete act of charity and closing thanksgiving.'
+            'Sign of the Cross + daily intention.',
+            'Short Gospel reading or life of the month saint.',
+            'Main prayer of the month (10-15 minutes).',
+            'Our Father, Hail Mary, Glory Be.',
+            'One concrete act of charity and closing thanksgiving.'
           ],
           prayer: 'Suggested short formula:\n"Lord, receive me in this prayer time. Grant me conversion, fidelity, and charity. Amen."',
           closing: 'Suggested closing:\n"May everything be for Your glory, Lord. Amen."'
@@ -535,6 +535,14 @@
       }
 
       function el(id) { return document.getElementById(id); }
+
+      function summarizeDayText(text, lang) {
+        if (!text) return lang === 'es' ? 'Reflexion del dia' : 'Daily reflection';
+        const firstChunk = text.split(/[.;]/)[0].trim();
+        const compact = firstChunk || text;
+        if (compact.length <= 88) return compact;
+        return compact.slice(0, 85).trimEnd() + '...';
+      }
 
       function applyLang(newLang) {
         lang = newLang;
@@ -620,6 +628,7 @@
           toggle.type = 'button';
           toggle.className = 'day-toggle';
           toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          toggle.setAttribute('aria-label', (lang === 'es' ? 'Abrir reflexion del dia ' : 'Open day reflection ') + d);
 
           const head = document.createElement('div');
           head.className = 'day-head';
@@ -630,7 +639,7 @@
 
           const dSummary = document.createElement('div');
           dSummary.className = 'day-summary';
-          dSummary.textContent = lang === 'es' ? 'Abrir reflexion' : 'Open reflection';
+          dSummary.textContent = summarizeDayText(text, lang);
 
           const icon = document.createElement('span');
           icon.className = 'day-icon';

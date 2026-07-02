@@ -3,7 +3,7 @@
    Cache-first strategy: works fully offline after first load
    ===================================================== */
 
-const CACHE = 'tup-v9';
+const CACHE = 'tup-v10';
 
 // All files to pre-cache on install
 const PRECACHE_URLS = [
