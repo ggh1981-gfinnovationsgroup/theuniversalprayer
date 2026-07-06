@@ -1,0 +1,85 @@
+{
+  "id": "santamariagoretti",
+  "name": {
+    "es": "Santa Maria Goretti",
+    "en": "Saint Maria Goretti"
+  },
+  "feast_day": {
+    "es": "6 de julio",
+    "en": "July 6"
+  },
+  "image": "/assets/images/santamariagoretti.svg",
+  "prayer": {
+    "es": "Santa Maria Goretti, testigo de pureza, valentia y perdon, hoy me acerco a ti para pedir un corazon limpio y una voluntad firme para elegir el bien.\n\nTu defendiste tu dignidad con fortaleza cristiana y en el dolor ofreciste perdon. Intercede por mi para que no responda al mal con mal, para que venza las tentaciones que me alejan de Dios y para que viva con verdad, respeto y caridad.\n\nRuega por los ninos, adolescentes y jovenes; por las mujeres que sufren violencia; por las familias heridas; y por quienes luchan por sanar recuerdos dolorosos.\n\nQue tu ejemplo me ensene a custodiar mi alma, a perseverar en la gracia y a confiar en la misericordia de Cristo, que transforma incluso los corazones mas duros.\n\nSanta Maria Goretti, ruega por nosotros.\nAmen.",
+    "en": "Saint Maria Goretti, witness of purity, courage, and forgiveness, I come to you today asking for a clean heart and a steadfast will to choose the good.\n\nYou defended your dignity with Christian strength and in suffering you offered forgiveness. Intercede for me so that I may not answer evil with evil, so that I may overcome temptations that pull me away from God, and so that I may live in truth, respect, and charity.\n\nPray for children, teenagers, and young people; for women who suffer violence; for wounded families; and for those struggling to heal painful memories.\n\nMay your example teach me to guard my soul, persevere in grace, and trust in the mercy of Christ, who can transform even the hardest hearts.\n\nSaint Maria Goretti, pray for us.\nAmen."
+  },
+  "history": {
+    "es": "Maria Goretti nacio el 16 de octubre de 1890 en Corinaldo, Italia, en una familia campesina pobre y profundamente creyente. Tras la muerte de su padre, la familia se traslado a Le Ferriere, donde Maria ayudo a su madre en las tareas de casa y en el cuidado de sus hermanos menores.\n\nEl 5 de julio de 1902, cuando tenia once anos, fue atacada por Alessandro Serenelli. Maria resistio con firmeza para defender su dignidad y su fe. Recibio multiples heridas y murio al dia siguiente, 6 de julio de 1902, en el hospital de Nettuno. Antes de morir, perdono explicitamente a su agresor y dijo que lo queria con ella en el cielo.\n\nAlessandro fue condenado y paso anos en prision. En ese tiempo tuvo una profunda conversion interior; al salir, pidio perdon a la madre de Maria y vivio en penitencia y fe. Su conversion se considera uno de los frutos mas conmovedores del testimonio de Santa Maria Goretti.\n\nMaria fue beatificada en 1947 y canonizada en 1950 por el Papa Pio XII, ante una multitud inmensa en la Plaza de San Pedro. Es considerada patrona de la pureza, de la juventud y de quienes buscan vivir la castidad cristiana, pero tambien es modelo de perdon, reconciliacion y esperanza para tiempos de violencia.",
+    "en": "Maria Goretti was born on October 16, 1890, in Corinaldo, Italy, into a poor and deeply believing farming family. After her father died, the family moved to Le Ferriere, where Maria helped her mother with household work and the care of her younger siblings.\n\nOn July 5, 1902, when she was eleven years old, she was attacked by Alessandro Serenelli. Maria resisted firmly to defend her dignity and faith. She received multiple wounds and died the next day, July 6, 1902, at the hospital in Nettuno. Before dying, she explicitly forgave her attacker and said she wanted him with her in heaven.\n\nAlessandro was convicted and spent years in prison. During that time he underwent a profound interior conversion; after his release, he asked Maria's mother for forgiveness and lived a life of penance and faith. His conversion is considered one of the most moving fruits of Saint Maria Goretti's witness.\n\nMaria was beatified in 1947 and canonized in 1950 by Pope Pius XII before an immense crowd in Saint Peter's Square. She is regarded as a patron of purity, youth, and those seeking to live Christian chastity, but she is also a model of forgiveness, reconciliation, and hope in times of violence."
+  },
+  "novena_prayers": {
+    "es": "Cada dia:\n1. Reza 1 Padre Nuestro, 1 Ave Maria y 1 Gloria.\n2. Lee la meditacion del dia.\n3. Repite: \"Santa Maria Goretti, dame pureza de corazon y fortaleza para amar a Cristo.\"",
+    "en": "Each day:\n1. Pray 1 Our Father, 1 Hail Mary, and 1 Glory Be.\n2. Read the day's meditation.\n3. Repeat: \"Saint Maria Goretti, grant me purity of heart and strength to love Christ.\""
+  },
+  "novena": [
+    {
+      "day": 1,
+      "es": "Dia 1 - Corazon limpio\n\nSenor, por intercesion de Santa Maria Goretti, limpia mi corazon de toda intencion desordenada y dame deseo de santidad.\n\nSanta Maria Goretti, ruega por nosotros.\nReza: 1 Padre Nuestro, 1 Ave Maria, 1 Gloria.",
+      "en": "Day 1 - A clean heart\n\nLord, through Saint Maria Goretti's intercession, cleanse my heart of every disordered intention and give me a desire for holiness.\n\nSaint Maria Goretti, pray for us.\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 2,
+      "es": "Dia 2 - Fortaleza en la tentacion\n\nCuando llegue la tentacion, no permitas que me rinda. Dame claridad para huir del pecado y elegir el bien.\n\nSanta Maria Goretti, ruega por nosotros.\nReza: 1 Padre Nuestro, 1 Ave Maria, 1 Gloria.",
+      "en": "Day 2 - Strength in temptation\n\nWhen temptation comes, do not let me surrender. Give me clarity to flee sin and choose the good.\n\nSaint Maria Goretti, pray for us.\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 3,
+      "es": "Dia 3 - Respeto por la dignidad\n\nEnsename a respetar mi cuerpo y el de los demas como templo del Espiritu Santo.\n\nSanta Maria Goretti, ruega por nosotros.\nReza: 1 Padre Nuestro, 1 Ave Maria, 1 Gloria.",
+      "en": "Day 3 - Respect for dignity\n\nTeach me to respect my body and the body of others as a temple of the Holy Spirit.\n\nSaint Maria Goretti, pray for us.\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 4,
+      "es": "Dia 4 - Pureza en pensamientos y palabras\n\nGuarda mi mente y mi lengua para que piense y hable con verdad, pudor y caridad.\n\nSanta Maria Goretti, ruega por nosotros.\nReza: 1 Padre Nuestro, 1 Ave Maria, 1 Gloria.",
+      "en": "Day 4 - Purity in thoughts and speech\n\nGuard my mind and my tongue so that I may think and speak with truth, modesty, and charity.\n\nSaint Maria Goretti, pray for us.\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 5,
+      "es": "Dia 5 - Sanacion de heridas\n\nPresento mis heridas afectivas y recuerdos dolorosos. Que la gracia de Cristo me sane por dentro.\n\nSanta Maria Goretti, ruega por nosotros.\nReza: 1 Padre Nuestro, 1 Ave Maria, 1 Gloria.",
+      "en": "Day 5 - Healing of wounds\n\nI present my emotional wounds and painful memories. May Christ's grace heal me from within.\n\nSaint Maria Goretti, pray for us.\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 6,
+      "es": "Dia 6 - El perdon que libera\n\nConcede a mi corazon la gracia de perdonar de verdad, sin negar el dolor, pero sin quedarme en el rencor.\n\nSanta Maria Goretti, ruega por nosotros.\nReza: 1 Padre Nuestro, 1 Ave Maria, 1 Gloria.",
+      "en": "Day 6 - Forgiveness that sets free\n\nGrant my heart the grace to forgive truly, without denying pain but without remaining in resentment.\n\nSaint Maria Goretti, pray for us.\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 7,
+      "es": "Dia 7 - Por los jovenes\n\nTe pido por ninos, adolescentes y jovenes: protege su inocencia y dales amigos y guias que los acerquen a Dios.\n\nSanta Maria Goretti, ruega por nosotros.\nReza: 1 Padre Nuestro, 1 Ave Maria, 1 Gloria.",
+      "en": "Day 7 - For young people\n\nI ask for children, teenagers, and young adults: protect their innocence and grant them friends and guides who draw them closer to God.\n\nSaint Maria Goretti, pray for us.\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 8,
+      "es": "Dia 8 - Conversion de los corazones\n\nAsi como Alessandro recibio la gracia de cambiar, te pido conversion para quien vive lejos de Dios.\n\nSanta Maria Goretti, ruega por nosotros.\nReza: 1 Padre Nuestro, 1 Ave Maria, 1 Gloria.",
+      "en": "Day 8 - Conversion of hearts\n\nJust as Alessandro received the grace to change, I ask for conversion for those living far from God.\n\nSaint Maria Goretti, pray for us.\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    },
+    {
+      "day": 9,
+      "es": "Dia 9 - Perseverar en gracia\n\nCon tu ayuda quiero vivir en amistad con Cristo, fiel en lo pequeno y firme en las pruebas.\n\nSanta Maria Goretti, ruega por nosotros.\nReza: 1 Padre Nuestro, 1 Ave Maria, 1 Gloria.",
+      "en": "Day 9 - Perseverance in grace\n\nWith your help I want to live in friendship with Christ, faithful in small things and steadfast in trials.\n\nSaint Maria Goretti, pray for us.\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
+    }
+  ],
+  "chaplet": {
+    "available": false
+  },
+  "litany": {
+    "available": false
+  },
+  "consecration": {
+    "available": false
+  },
+  "miracles": {
+    "available": true,
+    "es": "1. PERDON ANTES DE MORIR\nAntes de morir, Maria perdono a su agresor y pidio por su salvacion. Este acto se considera uno de los testimonios cristianos de perdon mas profundos del siglo XX.\n\n2. CONVERSION DE ALESSANDRO\nEn prision, Alessandro Serenelli experimento una conversion profunda. Al salir, pidio perdon a la madre de Maria y vivio reconciliado con la fe.\n\n3. FRUTO DE RECONCILIACION\nLa canonizacion de Maria Goretti se difundio como signo de que la pureza no es rigidez, sino amor fiel a Cristo, y que la misericordia puede transformar una historia marcada por violencia.",
+    "en": "1. FORGIVENESS BEFORE DEATH\nBefore dying, Maria forgave her attacker and prayed for his salvation. This is considered one of the most profound Christian testimonies of forgiveness in the twentieth century.\n\n2. ALESSANDRO'S CONVERSION\nIn prison, Alessandro Serenelli underwent a deep conversion. After his release, he asked Maria's mother for forgiveness and lived reconciled with the faith.\n\n3. FRUIT OF RECONCILIATION\nMaria Goretti's canonization spread as a sign that purity is not rigidity but faithful love for Christ, and that mercy can transform a story marked by violence."
+  }
+}
