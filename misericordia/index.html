@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oratorio de Misericordia | The Universal Prayer</title>
+  <meta name="description" content="Oratorio catolico de misericordia para el hogar: salmos, oracion contrita, intercesion por proteccion y providencia diaria." />
+  <meta name="theme-color" content="#c9a84c" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    .mer-hero {
+      text-align: center;
+      padding: 5.2rem 1.25rem 2.9rem;
+      background:
+        radial-gradient(circle at 18% 6%, rgba(139, 211, 240, 0.18), transparent 44%),
+        radial-gradient(circle at 82% 6%, rgba(201,168,76,0.15), transparent 46%),
+        linear-gradient(180deg, rgba(9,17,35,0.9) 0%, rgba(18,18,27,0.2) 72%, transparent 100%);
+    }
+    .mer-icon {
+      width: 118px;
+      height: 118px;
+      display: block;
+      margin: 0 auto 1.1rem;
+      filter: drop-shadow(0 0 18px rgba(201,168,76,0.38));
+    }
+    .mer-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #b9ddf6;
+      border: 1px solid rgba(127,192,226,0.4);
+      border-radius: 999px;
+      padding: 0.3rem 0.94rem;
+      margin-bottom: 1rem;
+      background: rgba(45,88,121,0.2);
+    }
+    .mer-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 6.4vw, 3rem);
+      color: #eaf6ff;
+      margin: 0 0 0.7rem;
+      line-height: 1.12;
+      text-shadow: 0 10px 20px rgba(0,0,0,0.32);
+    }
+    .mer-subtitle {
+      max-width: 720px;
+      margin: 0 auto;
+      color: var(--white-dim);
+      font-size: 0.96rem;
+      line-height: 1.75;
+    }
+    .mer-hero-art-wrap {
+      margin: 1.2rem auto 0;
+      max-width: 980px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(127,192,226,0.35);
+      box-shadow: 0 16px 46px rgba(0,0,0,0.35);
+      background: rgba(7, 10, 20, 0.72);
+      animation: mer-fade-up 0.8s ease both;
+    }
+    .mer-hero-art {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .mer-hero-caption {
+      margin: 0;
+      padding: 0.7rem 0.9rem;
+      background: linear-gradient(90deg, rgba(127,192,226,0.2), rgba(34,64,99,0.35));
+      border-top: 1px solid rgba(127,192,226,0.28);
+      color: rgba(255,255,255,0.9);
+      font-size: 0.8rem;
+      letter-spacing: 0.02em;
+    }
+    @keyframes mer-fade-up {
+      from {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .mer-main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 1.15rem 3.6rem;
+    }
+    .mer-section {
+      margin-bottom: 2.1rem;
+      background: linear-gradient(160deg, rgba(24,34,56,0.72), rgba(24,24,33,0.76));
+      border: 1px solid rgba(127,192,226,0.2);
+      border-radius: 14px;
+      padding: 1.08rem;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.02);
+    }
+    .mer-h2 {
+      font-family: var(--font-serif);
+      color: #d9efff;
+      font-size: 1.27rem;
+      margin: 0 0 0.75rem;
+      padding-bottom: 0.45rem;
+      border-bottom: 1px solid rgba(127,192,226,0.26);
+    }
+    .mer-quote {
+      border-left: 3px solid rgba(127,192,226,0.45);
+      padding: 0.7rem 1rem;
+      margin: 0.8rem 0 1rem;
+      color: rgba(227,240,255,0.88);
+      font-style: italic;
+      line-height: 1.7;
+      font-family: var(--font-serif);
+    }
+    .mer-quote cite {
+      display: block;
+      font-style: normal;
+      color: #b9ddf6;
+      font-size: 0.76rem;
+      margin-top: 0.33rem;
+    }
+    .mer-prayer {
+      white-space: pre-line;
+      color: rgba(234,245,255,0.9);
+      line-height: 1.85;
+      font-family: var(--font-serif);
+      font-size: 0.99rem;
+    }
+    .mer-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.8rem;
+    }
+    .mer-card {
+      border: 1px solid rgba(127,192,226,0.2);
+      background: rgba(127,192,226,0.07);
+      border-radius: 10px;
+      padding: 0.85rem;
+    }
+    .mer-card img {
+      width: 56px;
+      height: 56px;
+      display: block;
+      margin-bottom: 0.55rem;
+      opacity: 0.95;
+    }
+    .mer-card h3 {
+      margin: 0 0 0.4rem;
+      color: #d9efff;
+      font-family: var(--font-serif);
+      font-size: 1.02rem;
+    }
+    .mer-card p {
+      margin: 0;
+      color: var(--white-dim);
+      font-size: 0.84rem;
+      line-height: 1.62;
+    }
+    .mer-list {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--white-dim);
+      line-height: 1.72;
+      font-size: 0.89rem;
+    }
+    .mer-list li { margin-bottom: 0.5rem; }
+    .mer-note {
+      border: 1px solid rgba(127,192,226,0.26);
+      background: rgba(127,192,226,0.09);
+      color: rgba(255,255,255,0.86);
+      border-radius: 10px;
+      padding: 0.82rem;
+      font-size: 0.84rem;
+      line-height: 1.66;
+    }
+    .mer-footer-links {
+      margin-top: 1.2rem;
+      text-align: center;
+    }
+    .mer-home-link {
+      color: #b9ddf6;
+      text-decoration: none;
+      opacity: 0.82;
+      font-size: 0.84rem;
+    }
+    @media (max-width: 860px) {
+      .mer-grid { grid-template-columns: 1fr; }
+      .mer-hero-art-wrap {
+        margin-top: 1rem;
+        border-radius: 12px;
+      }
+      .mer-hero-caption {
+        font-size: 0.76rem;
+        padding: 0.62rem 0.72rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link">
+        <span class="cross">✝</span>
+        <span class="logo-text">The Universal Prayer</span>
+      </a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span id="langLabel">EN</span>
+      </button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="mer-hero">
+    <a href="/" class="ador-back-link" data-lang="es">← Inicio</a>
+    <a href="/" class="ador-back-link" data-lang="en" style="display:none">← Home</a>
+    <img src="/assets/images/misericordia.svg" alt="Misericordia" class="mer-icon" />
+    <div class="mer-badge" data-lang="es">Oratorio del corazon contrito</div>
+    <div class="mer-badge" data-lang="en" style="display:none">Oratory of the contrite heart</div>
+    <h1 class="mer-title" data-lang="es">Misericordia para el hogar</h1>
+    <h1 class="mer-title" data-lang="en" style="display:none">Mercy for the household</h1>
+    <p class="mer-subtitle" data-lang="es">Esta pagina no es una guia de pasos sacramentales: es un oratorio para permanecer de rodillas ante Dios, sanar el corazon y sostener la casa con oracion, salmos y confianza en su Providencia.</p>
+    <p class="mer-subtitle" data-lang="en" style="display:none">This page is not a sacramental step-by-step guide: it is an oratory to stay kneeling before God, heal the heart, and sustain the home through prayer, psalms, and trust in Providence.</p>
+
+    <figure class="mer-hero-art-wrap">
+      <img class="mer-hero-art" src="/assets/images/misericordia-hero.svg" alt="Misericordia, arrepentimiento y providencia" />
+      <figcaption class="mer-hero-caption" data-lang="es">Un altar diario: salmo, suplica, silencio y confianza.</figcaption>
+      <figcaption class="mer-hero-caption" data-lang="en" style="display:none">A daily altar: psalm, supplication, silence, and trust.</figcaption>
+    </figure>
+  </section>
+
+  <main class="mer-main">
+    <section class="mer-section">
+      <h2 class="mer-h2" data-lang="es">Liturgia breve del corazon arrepentido</h2>
+      <h2 class="mer-h2" data-lang="en" style="display:none">Brief liturgy of the repentant heart</h2>
+      <blockquote class="mer-quote" data-lang="es">"Oh Dios, crea en mí un corazón puro, y renueva en mí un espíritu firme."<cite>— Salmo 51, 12</cite></blockquote>
+      <blockquote class="mer-quote" data-lang="en" style="display:none">"Create in me a clean heart, O God, and renew a steadfast spirit within me."<cite>— Psalm 51:10</cite></blockquote>
+      <p class="mer-prayer" data-lang="es">Señor Dios, Padre de misericordia,
+reconozco mis pecados delante de Ti.
+No quiero justificarme ni endurecerme.
+Inclina tu oido a mi clamor,
+quita de mi casa toda sombra de division,
+y dame espiritu humilde para pedir perdon y perdonar.
+
+Pon guardianes en mi mente,
+en mis labios y en mis decisiones.
+Librame del mal visible e invisible,
+y fortalece mi combate interior en la noche y en el amanecer.
+
+Sobre nuestra mesa, Señor, no falte el pan.
+Sobre nuestros cuerpos, no falte lo necesario.
+Sobre nuestras almas, no falte tu gracia.
+Divina Providencia, sosten nuestro hogar.
+
+Jesus manso y humilde de corazon,
+hace de mi interior una morada fiel.
+Que tu misericordia sea mas fuerte que mi miseria.
+Amén.</p>
+      <p class="mer-prayer" data-lang="en" style="display:none">Lord God, Father of mercy,
+I acknowledge my sins before You.
+I do not want to excuse myself or harden my heart.
+Bend Your ear to my cry,
+remove every shadow of division from my home,
+and give me a humble spirit to ask forgiveness and to forgive.
+
+Set guards over my mind,
+over my lips, and over my choices.
+Deliver me from visible and invisible evil,
+and strengthen my inner battle at night and at dawn.
+
+May bread not fail on our table, Lord.
+May what is necessary not fail on our bodies.
+May Your grace not fail in our souls.
+Divine Providence, sustain our household.
+
+Jesus, meek and humble of heart,
+make my interior a faithful dwelling.
+May Your mercy be stronger than my misery.
+Amen.</p>
+    </section>
+
+    <section class="mer-section">
+      <h2 class="mer-h2" data-lang="es">Tres clamores diarios</h2>
+      <h2 class="mer-h2" data-lang="en" style="display:none">Three daily cries</h2>
+      <div class="mer-grid">
+        <article class="mer-card">
+          <img src="/assets/images/misericordia.svg" alt="Misericordia" />
+          <h3 data-lang="es">Corazon limpio</h3>
+          <h3 data-lang="en" style="display:none">Clean heart</h3>
+          <p data-lang="es">No vivir de apariencias: pedir verdad interior, docilidad y conversion del caracter.</p>
+          <p data-lang="en" style="display:none">Not living by appearances: asking for inner truth, docility, and conversion of character.</p>
+        </article>
+        <article class="mer-card">
+          <img src="/assets/images/sanmiguel.svg" alt="Protección" />
+          <h3 data-lang="es">Casa protegida</h3>
+          <h3 data-lang="en" style="display:none">Protected home</h3>
+          <p data-lang="es">Pedir resguardo para relaciones, descanso, decisiones y paz domestica frente a toda amenaza.</p>
+          <p data-lang="en" style="display:none">Pray for protection over relationships, rest, decisions, and domestic peace against every threat.</p>
+        </article>
+        <article class="mer-card">
+          <img src="/assets/images/providencia.svg" alt="Providencia" />
+          <h3 data-lang="es">Mesa sostenida</h3>
+          <h3 data-lang="en" style="display:none">Sustained table</h3>
+          <p data-lang="es">Confiar en Dios para trabajo, alimento, medicinas y lo cotidiano que mantiene viva a la familia.</p>
+          <p data-lang="en" style="display:none">Trust God for work, food, medicines, and the ordinary needs that keep a family alive.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="mer-section">
+      <h2 class="mer-h2" data-lang="es">Palabra que sostiene al caido</h2>
+      <h2 class="mer-h2" data-lang="en" style="display:none">Word that sustains the fallen</h2>
+      <ul class="mer-list" data-lang="es">
+        <li>Dios no desprecia el corazon quebrantado (Salmo 51).</li>
+        <li>Su misericordia se renueva cada manana para quien vuelve a El (Lamentaciones 3,22-23).</li>
+        <li>En la noche de la prueba, el Senor sigue siendo refugio y roca (Salmo 27).</li>
+        <li>La paz de Cristo custodia mente y corazon cuando se ora con confianza (Filipenses 4,6-7).</li>
+        <li>El Padre conoce lo necesario para la casa antes de que lo pidamos (Mateo 6,25-34).</li>
+      </ul>
+      <ul class="mer-list" data-lang="en" style="display:none">
+        <li>God does not despise a broken and contrite heart (Psalm 51).</li>
+        <li>His mercy is renewed each morning for those who return to Him (Lamentations 3:22-23).</li>
+        <li>In the night of trial, the Lord remains refuge and rock (Psalm 27).</li>
+        <li>Christ's peace guards mind and heart when we pray with trust (Philippians 4:6-7).</li>
+        <li>The Father knows what a household needs before we ask (Matthew 6:25-34).</li>
+      </ul>
+    </section>
+
+    <section class="mer-section">
+      <h2 class="mer-h2" data-lang="es">Regla de misericordia en 4 actos</h2>
+      <h2 class="mer-h2" data-lang="en" style="display:none">Rule of mercy in 4 acts</h2>
+      <ul class="mer-list" data-lang="es">
+        <li><strong>Silencio:</strong> dos minutos para desarmar la ansiedad y escuchar a Dios.</li>
+        <li><strong>Salmo:</strong> rezar en voz baja un versiculo penitencial y repetirlo durante el dia.</li>
+        <li><strong>Suplicar:</strong> pedir misericordia por nombre propio y por cada miembro del hogar.</li>
+        <li><strong>Servir:</strong> una obra de caridad concreta como fruto de la oracion.</li>
+      </ul>
+      <ul class="mer-list" data-lang="en" style="display:none">
+        <li><strong>Silence:</strong> two minutes to disarm anxiety and listen to God.</li>
+        <li><strong>Psalm:</strong> pray one penitential verse softly and repeat it through the day.</li>
+        <li><strong>Supplication:</strong> ask mercy by name for yourself and each member of your household.</li>
+        <li><strong>Service:</strong> one concrete act of charity as fruit of prayer.</li>
+      </ul>
+      <p class="mer-note" data-lang="es">Nota pastoral: este oratorio propone oracion privada para sostener la conversion diaria. Los sacramentos siguen siendo el centro de la vida cristiana.</p>
+      <p class="mer-note" data-lang="en" style="display:none">Pastoral note: this oratory proposes private prayer to sustain daily conversion. The sacraments remain the center of Christian life.</p>
+    </section>
+
+    <section class="mer-section">
+      <h2 class="mer-h2" data-lang="es">Micro-liturgia de 5 minutos</h2>
+      <h2 class="mer-h2" data-lang="en" style="display:none">Five-minute micro-liturgy</h2>
+      <ul class="mer-list" data-lang="es">
+        <li><strong>Amanecer:</strong> "Senor, visita mi casa con tu paz".</li>
+        <li><strong>Antes del trabajo:</strong> ofrecer el dia por conversion y unidad familiar.</li>
+        <li><strong>Atardecer:</strong> bendecir la mesa y pedir pan para quien no tiene.</li>
+        <li><strong>Noche:</strong> revisar el corazon, pedir perdon y dormir en confianza.</li>
+      </ul>
+      <ul class="mer-list" data-lang="en" style="display:none">
+        <li><strong>Dawn:</strong> "Lord, visit my home with Your peace."</li>
+        <li><strong>Before work:</strong> offer the day for conversion and family unity.</li>
+        <li><strong>At dusk:</strong> bless the table and ask bread for those who lack it.</li>
+        <li><strong>At night:</strong> examine the heart, ask forgiveness, and sleep in trust.</li>
+      </ul>
+    </section>
+
+    <div class="mer-footer-links">
+      <a href="/" class="mer-home-link" data-lang="es">← Volver al inicio</a>
+      <a href="/" class="mer-home-link" data-lang="en" style="display:none">← Back to home</a>
+    </div>
+  </main>
+
+  <script>
+  (function () {
+    'use strict';
+
+    const LANG_KEY = 'tup_lang';
+    let lang = localStorage.getItem(LANG_KEY) || 'es';
+
+    function applyLang(newLang) {
+      lang = newLang;
+      localStorage.setItem(LANG_KEY, lang);
+      document.documentElement.lang = lang === 'en' ? 'en' : 'es';
+      const langLabel = document.getElementById('langLabel');
+      if (langLabel) langLabel.textContent = lang === 'en' ? 'ES' : 'EN';
+      document.querySelectorAll('[data-lang]').forEach(function (node) {
+        node.style.display = node.getAttribute('data-lang') === lang ? '' : 'none';
+      });
+      window.dispatchEvent(new CustomEvent('tup:langchange', { detail: lang }));
+    }
+
+    document.getElementById('langToggle').addEventListener('click', function () {
+      applyLang(lang === 'es' ? 'en' : 'es');
+    });
+
+    applyLang(lang);
+  })();
+  </script>
+  <script src="../assets/js/menu.js"></script>
+</body>
+</html>

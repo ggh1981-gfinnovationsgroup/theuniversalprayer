@@ -1,0 +1,85 @@
+<svg width="1600" height="720" viewBox="0 0 1600 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Perdon, Misericordia y Providencia</title>
+  <desc id="desc">Escena simbolica con corazon arrepentido, cruz, rayos de misericordia y signos de sustento diario.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="140" y1="48" x2="1480" y2="674" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0F1726"/>
+      <stop offset="0.52" stop-color="#1B2132"/>
+      <stop offset="1" stop-color="#3D1B28"/>
+    </linearGradient>
+
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(760 282) rotate(90) scale(238 322)">
+      <stop offset="0" stop-color="#FFF2CE" stop-opacity="0.94"/>
+      <stop offset="0.45" stop-color="#ECCB7D" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ECCB7D" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="cross" x1="712" y1="126" x2="772" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE7A6"/>
+      <stop offset="1" stop-color="#C59A39"/>
+    </linearGradient>
+
+    <linearGradient id="rayRed" x1="778" y1="348" x2="1220" y2="572" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFD9C2" stop-opacity="0.95"/>
+      <stop offset="0.55" stop-color="#F27482" stop-opacity="0.78"/>
+      <stop offset="1" stop-color="#BB2C3E" stop-opacity="0.18"/>
+    </linearGradient>
+
+    <linearGradient id="rayWhite" x1="756" y1="336" x2="1162" y2="188" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F6FCFF" stop-opacity="0.98"/>
+      <stop offset="0.56" stop-color="#A9D2F2" stop-opacity="0.76"/>
+      <stop offset="1" stop-color="#5A8BC5" stop-opacity="0.18"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-18%" y="-20%" width="136%" height="160%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="7" stdDeviation="10" flood-color="#000" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="720" fill="url(#bg)"/>
+  <circle cx="760" cy="282" r="254" fill="url(#halo)"/>
+
+  <g opacity="0.34">
+    <path d="M144 158L286 300" stroke="#F5DB8E" stroke-opacity="0.35" stroke-width="2"/>
+    <path d="M1294 102L1180 224" stroke="#FFC9C9" stroke-opacity="0.28" stroke-width="2"/>
+    <path d="M1448 178L1308 314" stroke="#FFC9C9" stroke-opacity="0.35" stroke-width="2"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="714" y="124" width="56" height="378" rx="24" fill="url(#cross)"/>
+    <rect x="612" y="218" width="260" height="56" rx="24" fill="url(#cross)"/>
+  </g>
+
+  <path d="M772 346C914 408 1058 476 1214 600" stroke="url(#rayRed)" stroke-width="44" stroke-linecap="round" opacity="0.78"/>
+  <path d="M756 330C886 286 1014 240 1134 164" stroke="url(#rayWhite)" stroke-width="34" stroke-linecap="round" opacity="0.74"/>
+
+  <g transform="translate(270 396)" filter="url(#shadow)">
+    <path d="M168 182C92 142 38 90 38 34C38 2 62 -22 92 -22C122 -22 148 -6 168 26C188 -6 214 -22 244 -22C274 -22 298 2 298 34C298 90 244 142 168 182Z" fill="#9B2437"/>
+    <path d="M168 158C104 124 60 80 60 36C60 16 76 2 96 2C118 2 140 16 168 50C196 16 218 2 240 2C260 2 276 16 276 36C276 80 232 124 168 158Z" fill="#C1374A"/>
+    <path d="M148 36H188V72H224V106H188V142H148V106H112V72H148V36Z" fill="#FFEEC7"/>
+  </g>
+
+  <g transform="translate(108 474)">
+    <ellipse cx="122" cy="56" rx="98" ry="40" fill="#B68734" opacity="0.92"/>
+    <ellipse cx="124" cy="50" rx="84" ry="32" fill="#E8BF68"/>
+    <path d="M56 58C84 42 162 42 190 58" stroke="#B68734" stroke-width="6" stroke-linecap="round"/>
+    <path d="M48 70C82 92 164 92 198 70" stroke="#B68734" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(1248 470)">
+    <path d="M24 136V54L96 14L168 54V136H24Z" fill="#A56B3B"/>
+    <path d="M10 146H182" stroke="#6E4326" stroke-width="10" stroke-linecap="round"/>
+    <path d="M28 54L96 102L164 54" fill="none" stroke="#6E4326" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M96 14V102" stroke="#6E4326" stroke-width="8"/>
+  </g>
+
+  <g transform="translate(1048 462)" filter="url(#shadow)">
+    <path d="M18 70C18 30 48 8 84 8C120 8 148 32 148 70C148 126 84 158 84 158C84 158 18 128 18 70Z" fill="#182A45"/>
+    <path d="M34 72C34 44 54 26 84 26C114 26 132 44 132 72C132 110 84 138 84 138C84 138 34 110 34 72Z" fill="#24456D"/>
+    <path d="M84 44L100 62L84 80L68 62L84 44Z" fill="#F2D890"/>
+    <rect x="76" y="80" width="16" height="38" rx="8" fill="#F2D890"/>
+  </g>
+
+  <rect x="0" y="626" width="1600" height="94" fill="rgba(8,10,18,0.56)"/>
+</svg>

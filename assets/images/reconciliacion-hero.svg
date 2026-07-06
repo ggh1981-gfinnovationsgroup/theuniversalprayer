@@ -1,0 +1,82 @@
+<svg width="1600" height="720" viewBox="0 0 1600 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Preparacion para Reconciliacion Sacramental / Preparation for Sacramental Reconciliation</title>
+  <desc id="desc">Escena simbolica del camino a la confesion: examen de conciencia, confesonario, absolucion y retorno a la gracia. Symbolic scene of the path to confession: examination of conscience, confessional, absolution, and return to grace.</desc>
+
+  <defs>
+    <linearGradient id="recBg" x1="110" y1="42" x2="1490" y2="682" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0A1327"/>
+      <stop offset="0.5" stop-color="#142447"/>
+      <stop offset="1" stop-color="#192235"/>
+    </linearGradient>
+
+    <radialGradient id="recLight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1080 205) rotate(90) scale(300 330)">
+      <stop offset="0" stop-color="#FFF2C9" stop-opacity="0.9"/>
+      <stop offset="0.52" stop-color="#E2C272" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#E2C272" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="pathGlow" x1="320" y1="560" x2="1180" y2="470" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#81C6F2" stop-opacity="0.2"/>
+      <stop offset="0.5" stop-color="#A6D9F8" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#F5D88E" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <linearGradient id="gold" x1="1050" y1="102" x2="1124" y2="476" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE7A6"/>
+      <stop offset="1" stop-color="#C59A39"/>
+    </linearGradient>
+
+    <filter id="drop" x="-20%" y="-20%" width="140%" height="160%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="7" stdDeviation="10" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="720" fill="url(#recBg)"/>
+  <circle cx="1080" cy="205" r="290" fill="url(#recLight)"/>
+
+  <path d="M210 565C388 508 540 506 720 546C890 584 1035 580 1250 516" stroke="url(#pathGlow)" stroke-width="92" stroke-linecap="round" opacity="0.62"/>
+  <path d="M250 568C400 532 560 530 720 562C878 594 1040 592 1220 548" stroke="#E5F4FF" stroke-opacity="0.36" stroke-width="3" stroke-dasharray="7 14"/>
+
+  <g transform="translate(252 214)" filter="url(#drop)">
+    <rect x="0" y="0" width="324" height="286" rx="18" fill="#112744"/>
+    <rect x="18" y="20" width="288" height="246" rx="12" fill="#17345A"/>
+    <circle cx="54" cy="170" r="10" fill="#77BDEB"/>
+    <rect x="78" y="162" width="196" height="16" rx="8" fill="#8BCDF7" fill-opacity="0.7"/>
+    <circle cx="54" cy="208" r="10" fill="#77BDEB"/>
+    <rect x="78" y="200" width="182" height="16" rx="8" fill="#8BCDF7" fill-opacity="0.6"/>
+    <circle cx="54" cy="246" r="10" fill="#77BDEB"/>
+    <rect x="78" y="238" width="168" height="16" rx="8" fill="#8BCDF7" fill-opacity="0.55"/>
+  </g>
+
+  <g transform="translate(680 176)" filter="url(#drop)">
+    <rect x="0" y="0" width="308" height="336" rx="20" fill="#4D2D1B"/>
+    <rect x="20" y="26" width="268" height="290" rx="14" fill="#6A432A"/>
+    <rect x="136" y="72" width="36" height="198" rx="12" fill="#C9A06A"/>
+    <rect x="92" y="140" width="124" height="30" rx="10" fill="#C9A06A"/>
+    <rect x="38" y="232" width="232" height="68" rx="10" fill="#5B3722"/>
+  </g>
+
+  <g transform="translate(1110 118)" filter="url(#drop)">
+    <rect x="0" y="0" width="66" height="324" rx="24" fill="url(#gold)"/>
+    <rect x="-94" y="88" width="254" height="66" rx="24" fill="url(#gold)"/>
+    <path d="M33 180C84 236 134 290 178 352" stroke="#FFE8A8" stroke-width="12" stroke-linecap="round" opacity="0.76"/>
+  </g>
+
+  <g transform="translate(1218 430)" filter="url(#drop)">
+    <path d="M20 142V62L96 20L172 62V142H20Z" fill="#4D7B4E"/>
+    <path d="M6 152H186" stroke="#365C37" stroke-width="10" stroke-linecap="round"/>
+    <path d="M24 62L96 112L168 62" fill="none" stroke="#365C37" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M96 20V112" stroke="#365C37" stroke-width="8"/>
+    <path d="M96 72C124 72 146 94 146 122" stroke="#E3F5D1" stroke-width="7" stroke-linecap="round"/>
+    <path d="M96 72C68 72 46 94 46 122" stroke="#E3F5D1" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(560 500)">
+    <circle cx="0" cy="0" r="16" fill="#93D1F7"/>
+    <circle cx="150" cy="6" r="16" fill="#93D1F7"/>
+    <circle cx="300" cy="12" r="16" fill="#93D1F7"/>
+    <circle cx="450" cy="18" r="16" fill="#F5D88E"/>
+  </g>
+
+  <rect x="0" y="626" width="1600" height="94" fill="rgba(8,10,18,0.56)"/>
+</svg>

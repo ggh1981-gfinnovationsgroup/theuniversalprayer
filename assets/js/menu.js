@@ -57,9 +57,11 @@
       '<li><a class="side-nav-link side-nav-saints"     href="' + interHref  + '">' + (L ? '\u2728 Intercesores'          : '\u2728 Intercessors')      + '</a></li>' +
       '<li><a class="side-nav-link side-nav-months"     href="/meses/">'    + (L ? '\uD83D\uDCC5 Meses Devocionales' : '\uD83D\uDCC5 Devotional Months') + '</a></li>' +
       '<li><a class="side-nav-link side-nav-oraciones"  href="/oraciones/">'  + (L ? '\uD83D\uDCDC Oraciones B\u00e1sicas'  : '\uD83D\uDCDC Basic Prayers')     + '</a></li>' +
+        '<li><a class="side-nav-link side-nav-recon"      href="/reconciliacion/">' + (L ? '\uD83D\uDE4F Reconciliación' : '\uD83D\uDE4F Reconciliation') + '</a></li>' +
       '<li><a class="side-nav-link side-nav-rosario"    href="/rosario/">'    + (L ? '\uD83D\uDCFF Rosario Interactivo'   : '\uD83D\uDCFF Interactive Rosary') + '</a></li>' +
       '<li><a class="side-nav-link side-nav-adoracion"  href="/adoracion/">'  + (L ? '\u271D Adoraci\u00f3n'             : '\u271D Adoration')          + '</a></li>' +
       '<li><a class="side-nav-link side-nav-espiritu"   href="/espiritu/">'   + (L ? '\uD83D\uDC4A Esp\u00edritu Santo'  : '\uD83D\uDC4A Holy Spirit')   + '</a></li>' +
+      '<li><a class="side-nav-link side-nav-misericordia" href="/misericordia/">' + (L ? '\uD83D\uDD6F Perd\u00f3n y Misericordia' : '\uD83D\uDD6F Mercy & Repentance') + '</a></li>' +
       '<li><a class="side-nav-link side-nav-matrimonio" href="/matrimonio/">' + (L ? '\uD83D\uDC8D Matrimonio'           : '\uD83D\uDC8D Marriage')      + '</a></li>' +
       '<li><a class="side-nav-link side-nav-difuntos"   href="/difuntos/">'   + (L ? '\uD83D\uDD6F Difuntos'             : '\uD83D\uDD6F Departed')      + '</a></li>';
 

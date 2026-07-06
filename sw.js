@@ -3,7 +3,7 @@
    Cache-first strategy: works fully offline after first load
    ===================================================== */
 
-const CACHE = 'tup-v16';
+const CACHE = 'tup-v20';
 
 // All files to pre-cache on install
 const PRECACHE_URLS = [
@@ -11,14 +11,20 @@ const PRECACHE_URLS = [
   '/index.html',
   '/intercesor/',
   '/intercesor/index.html',
+  '/misericordia/',
+  '/misericordia/index.html',
   '/meses/',
   '/meses/index.html',
+  '/reconciliacion/',
+  '/reconciliacion/index.html',
   '/404.html',
   '/manifest.json',
   '/assets/css/styles.css',
   '/assets/js/main.js',
   '/assets/js/menu.js',
   '/assets/images/icon.svg',
+  '/assets/images/misericordia-hero.svg',
+  '/assets/images/reconciliacion-hero.svg',
   // Intercessor images
   '/assets/images/misericordia.svg',
   '/assets/images/inmaculadocorazon.svg',
