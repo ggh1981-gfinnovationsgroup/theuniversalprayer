@@ -776,14 +776,252 @@
         }
       };
 
-      const genericPlan = {
-        es: {
-          note: 'Este mes está listo para ser actualizado. Puedes definir un enfoque, una oración diaria y 2 fechas clave.',
-          dayText: function () { return 'Oración diaria, lectura breve y una obra concreta de caridad.'; }
-        },
-        en: {
-          note: 'This month is ready to be updated. Define one focus, one daily prayer, and 2 key dates.',
-          dayText: function () { return 'Daily prayer, short reading, and one concrete act of charity.'; }
+      const agostoDailyEs = [
+        'Agosto comienza con la Transfiguración: Jesús brilló en gloria ante Sus discípulos. Hoy pide ver a Jesús con claridad en tu fe.',
+        'Contempla el monte Tabor: Moisés y Elías hablan con Jesús. Tu vida también tiene encuentros sagrados si buscas la presencia.',
+        'Pedro, Santiago y Juan vieron la gloria. Hoy reza para que tus ojos espirituales se abran a la gloria escondida de Dios.',
+        'La nube cubrió a Jesús en el Tabor. Cuando la niebla espiritual es densa, confía que Dios sigue presente.',
+        'Del Tabor bajaron a la realidad de los endemoniados. La gloria no nos saca del mundo, nos prepara para servirlo.',
+        'Transfiguración es adelanto de Pascua: la gloria venida. En tu pequeña cruz hay Resurrección escondida.',
+        'El 15 de agosto, la Asunción de María: ella es elevada en cuerpo y alma a los cielos. Espera tu gloria eterna.',
+        'María es madre de la Iglesia desde el trono celestial. Hoy confía en su intercesión maternal por ti.',
+        'Contempla el cielo abierto: María reina, intercede, cuida. Su gloria es signo de nuestra esperanza.',
+        'En la Asunción, María vence la muerte. Tu cuerpo mortal será también resucitado si perseveras en gracia.',
+        'La Gloria de María nos invita a vivir sin apego al mundo. ¿Dónde está tu tesoro: en lo temporal o en lo eterno?',
+        'Transfiguración + Asunción = esperanza. Agosto te recuerda: no somos de este mundo, sino del cielo.',
+        'Reza hoy para que tu cuerpo y alma se transformen por la gracia. No es fantasía: es promesa de Dios.',
+        'Mira a Jesús en Su gloria: Ese es Tu destino si crees y perseveras en la fe durante toda la vida.',
+        'La Asunción de María nos enseña: la maternidad de María no termina en la tierra, continúa en el cielo.',
+        'Contempla los misterios gozosos del Rosario: María también fue transfigurada, elevada, glorificada.',
+        'En agosto, agradece por los siete dones del Espíritu Santo que te preparan para la gloria eterna.',
+        'Transfiguración es revelación breve de la realidad última: gloria para los fieles, poder para los apóstoles.',
+        'Pide hoy la gracia de vivir en el Tabor antes de bajar: o sea, conexión con lo divino antes de actuar.',
+        'La muerte de María fue asunción, no descenso. Tu muerte será coronación si vives en gracia.',
+        'Agosto es puente: del ardor de julio a la sobriedad de septiembre. Mantén vivo el fuego sagrado.',
+        'Reza por enfermos graves en agosto: la Asunción es esperanza de resurrección y sanación eterna.',
+        'María Asunta es reina de los ángeles. Pídele protección celestial contra toda asechanza.',
+        'Contempla tu propio cuerpo: será glorificado o corrompido según tus actos. Cuida lo que es templo.',
+        'En agosto medita: ¿qué me transfigura hacia la gloria? ¿Oración, sacrificio, caridad, penitencia?',
+        'La Asunción de María es fiesta de esperanza para los que sufren: vuestra prueba tiene sentido eterno.',
+        'Agosto es tiempo de silencio antes de la fiesta de septiembre. Recógete, contempla, prepárate.',
+        'Transfiguración nos muestra que la gloria no anula lo humano, lo transfigura, lo eleva, lo completa.',
+        'En la Asunción, María es Madre de la Iglesia: pide que protejas a tu familia como Ella protege la Iglesia.',
+        'Evoca agosto del año pasado. ¿Cuánto avanzaste en santidad? ¿Cuánta gloria has vivido?',
+        'Cierra agosto mirando al cielo: Septiembre trae nuevos misterios, pero la gloria vista aquí permanece.'
+      ];
+
+      const agostoActionsEs = [
+        'Lee Mt 17:1-9 (Transfiguración) y medita 10 minutos en silencio.',
+        'Sube a un lugar alto y ora contemplando la gloria de Dios en la naturaleza.',
+        'Reza 5 misterios gozosos del Rosario, enfocado en la Asunción.',
+        'Ayuna una comida en honor a la Asunción de María.',
+        'Visita una iglesia y contempla una imagen de la Transfiguración o Asunción.',
+        'Escribe: ¿cuál es mi "Tabor"? ¿Dónde me encuentro con Dios?',
+        'Reza por alguien que sufre ansiedad por la muerte con confianza en la Asunción.',
+        'Lee la Secuencia de la Asunción de María en la Misa.',
+        'Canta o escucha "Magnificat" meditando en María Asunta.',
+        'Pídele a María que te enseñe a vivir en la gloria de Dios escondida.',
+        'Cuidar tu cuerpo hoy: es futuro templo de gloria resucitado.',
+        'Reza por los difuntos para que lleguen a la gloria como María.',
+        'Lee 1 Co 15:42-44 sobre los cuerpos resucitados.',
+        'Ofrece una obra de caridad en honor a la gloria de María.',
+        'Medita: ¿dónde está mi corazón? ¿En lo temporal o lo eterno?',
+        'Reza una Letanía de la Virgen con presencia contemplativa.',
+        'Ayuda a alguien en su enfermedad, recordando la Asunción.',
+        'Examina: ¿qué me distrae de buscar a Dios? Corta una cosa hoy.',
+        'Contempla la luna (símbolo mariano) y reza a María en silencio.',
+        'Lee Ap 12:1 (Mujer vestida del sol, sobre la luna): María Asunta.',
+        'Prepara tu alma para septiembre: penitencia breve cada día.',
+        'Escribe una carta a María agradeciendo Su protección este mes.',
+        'Reza novena a la Asunción si no lo hiciste aún.',
+        'Guarda 15 minutos de silencio ante el Santísimo contemplando la gloria.',
+        'Lee la vida de un santo que vivió en presencia de la gloria de Dios.',
+        'Rechaza hoy toda vanidad: eres hecho para la gloria eterna, no terrenal.',
+        'Enseña a un niño: "María subió al cielo y tú también irás si amas a Jesús".',
+        'Reza por sacerdotes para que transformen almas hacia la gloria.',
+        'Evalúa agosto: ¿viví en el Tabor? ¿Preparé mi alma para la gloria?',
+        'Propósito final: llevar la esperanza de gloria a todo septiembre.'
+      ];
+
+      const agostoPlanEs = {
+        note: 'Agosto es el mes de la Transfiguración (6 de agosto) y la Asunción de María (15 de agosto). Contemplamos la gloria de Dios manifestada, y nuestra esperanza en la gloria eterna.',
+        dayText: function (d) {
+          const i = d - 1;
+          const reflection = agostoDailyEs[i] || agostoDailyEs[agostoDailyEs.length - 1];
+          const action = agostoActionsEs[i] || agostoActionsEs[agostoActionsEs.length - 1];
+          return reflection + '\n\nAccion de hoy: ' + action;
+        }
+      };
+
+      const agostoMethodEs = {
+        title: 'Cómo hacerlo (guía pastoral breve de agosto)',
+        steps: [
+          'Comienza con la Señal de la Cruz e invoca a María en Su Asunción.',
+          'Lee brevemente Mt 17:1-9 (Transfiguración) o un pasaje sobre la gloria.',
+          'Reza lentamente el Rosario, enfocándose en misterios gozosos de gloria.',
+          'Completa con invocaciones: "Reina de los Cielos, ruega por nosotros".',
+          'Termina con petición de gracia para vivir en esperanza de gloria eterna.'
+        ],
+        prayer: 'Oración de ofrenda diaria:\n"Madre santísima, por tu Asunción gloriosa, presento este día a tu hijo Jesús. Transfigura mi alma hacia Tu gloria; guarda mi cuerpo como templo; prepárame para la eternidad. Amén."',
+        closing: 'Oración de cierre:\n"María asunta, reina del cielo, mira con ojos misericordiosos a tu Iglesia. Que llegemos todos a tu Gloria junto a tu Hijo Jesús. Amén."'
+      };
+
+      const septiembre = [
+        'Septiembre comienza con la fiesta de la Virgen de Dolores (15 de septiembre). Su corazón traspasado es signo de compasión.',
+        'María presenció la agonía de Jesús en el Calvario. Su dolor es modelo de compasión en el sufrimiento.',
+        'La espada que predijo Simeón atravesó el corazón de María. Hoy acéptate como espada de Dios en tu propia prueba.',
+        'María "está de pie" al pie de la Cruz. Su firmeza es tu ejemplo: permanece fiel incluso cuando todo duele.',
+        'Contempla la Piedad: Jesús muerto en brazos de María. Todo sufrimiento encuentra sentido en Cristo crucificado.',
+        'Los siete dolores de María son puerta a la compasión. ¿Dónde está tu compasión? ¿A quién consolas?',
+        'Septiembre es mes de reparación. La muerte de Jesús te llama a reparar con tu corazón herido.',
+        'María sufre con Cristo, y Su sufrimiento es redentivo. Tu dolor, unido al de Cristo, salva almas.',
+        'La Virgen de Dolores enseña: no huyas del sufrimiento, no niegues el dolor. Acéptalo, transfórmalo en amor.',
+        'Contempla el sacrificio: Jesús dio todo. ¿Qué das tú de verdad en este mes?',
+        'La Cruz es árbol de la vida. Lo que mata en el mundo mata, pero lo que mata en la fe vivifica.',
+        'María acompaña a los afligidos en septiembre. Acude a Ella: "Madre de Dolores, ruega por nosotros".',
+        'El velo de Verónica seca el rostro ensangrentado de Jesús. Hoy sé "Verónica" para alguien que sufre.',
+        'Jesús cae tres veces. La caída no es final, es oportunidad de levantarse en gracia.',
+        'Simón ayuda a Jesús a llevar la Cruz. Hoy sé Simón: ayuda a quien sufre a llevar Su cruz.',
+        'Las mujeres de Jerusalén lloran. Hoy llora con los que lloran; no des la espalda al dolor.',
+        'Jesús es crucificado entre malhechores. En tu cruz hay gracia incluso cuando todo parece perdición.',
+        'Madre, he aquí a tu hijo. Hoy cuida de aquello que Jesús te encomienda desde Su cruz.',
+        'Sitio, sitio: Jesús clama abandonado. El silencio de Dios enseña fe más profunda que la palabra.',
+        'La lanza traspasa el corazón de Jesús y María. Hoy abre Tu corazón al dolor del mundo.',
+        'Se oscureció el sol. En tu noche espiritual, Dios sigue presente, aunque no lo sientas.',
+        'Sepultado en la cruz: Jesús muere. Tu viejo yo muere en septiembre. Prepárate para la resurrección.',
+        'María es Madre de Dolores para todas las madres. Si eres madre en sangre o espíritu, acude a Ella.',
+        'Los Salmos de lamentación (como Sal 22) no son desesperanza, son honestidad ante Dios.',
+        'Septiembre enseña: la vida no es comodidad, es batalla. Pelea con el arma del amor.',
+        'Contempl la desolación de María: Su Hijo muerto, desgarrada, sola. Acompaña a los desgarrados.',
+        'La redención costó sangre y muerte. Vive como quien entiende el precio de su salvación.',
+        'Enfrenta tu propio Calvario en septiembre. No es maldición, es elevación si lo vives en gracia.',
+        'María en Dolores es Reina: la realeza de Dios está en la Cruz, no en el trono terrenal.',
+        'Reflexiona: ¿cuánto sufro por amor? ¿Ofrendo mi dolor, o sólo lo padezco sin sentido?',
+        'Cierra septiembre enraizado en la Cruz: octubre trae gloria, pero esta está plantada aquí, en el Calvario.'
+      ];
+
+      const septiembre2 = [
+        'Lee Is 53 (Siervo Sufriente) y medita en los dolores de Jesús y María.',
+        'Reza la Corono de los Siete Dolores de María lentamente.',
+        'Visita a alguien que sufre; lleva consuelo en nombre de María.',
+        'Ayuna medio día en reparación por los pecados.',
+        'Lee la Pasión en el Evangelio y visualiza cada paso de Jesús.',
+        'Escribe: ¿cuál es mi Calvario personal? ¿Cómo lo ofrezco?',
+        'Reza por quien sufre enfermedad terminal o dolor crónico.',
+        'Practica mortificación breve: cede en algo que quieres para imitar a Jesús.',
+        'Lee un testimonio de un mártir o santa que sufrió con gracia.',
+        'Compadécete de alguien que está pasando mal; llévalo a Jesús en oración.',
+        'Reza el Vía Crucis meditando cada misterio con presencia.',
+        'Sacrifica algo que amas en honor a los Dolores de María.',
+        'Escucha música sacra melancólica (Un Stabat Mater) contemplando.',
+        'Escribe una carta a María: cómo Ella te ayuda en tu dolor.',
+        'Lee el último Evangelio (crucifixión) cada mañana de septiembre.',
+        'Abraza la cruz de tu vida hoy; deja de negarla o huir de ella.',
+        'Reza por sacerdotes para que prediquen el valor redentor del sufrimiento.',
+        'Ofrece tu trabajo duro en reparación por los pecados del mundo.',
+        'Reza novena a la Virgen de Dolores con sinceridad.',
+        'Contempla una imagen de la Piedad o Virgen de Dolores 15 minutos.',
+        'Ayuda sin que se sepa: anónima caridad en honor al sufrimiento callado de María.',
+        'Rechaza la murmuración; ofrece en su lugar paciencia unida al Calvario.',
+        'Lee Lam (Lamentaciones) meditando en los dolores de Dios.',
+        'Visita a los enfermos en un hospital y reza por cada uno.',
+        'Educa a tus hijos: "Jesús sufrió para salvarnos. Nuestro sufrimiento tiene sentido".',
+        'Ofrece a María tus miedos; ponlos al pie de la Cruz.',
+        'Busca en la Cruz Tu paz, no en el bienestar terrenal.',
+        'Reza por perseguidos y mártires de hoy; une su dolor al de Cristo.',
+        'Termina septiembre: ¿He comprendido el valor redentor del sufrimiento?',
+        'Propósito: Llevar octubre en espíritu de Cruz unida a Cristo Resucitado.'
+      ];
+
+      const septiembre3 = {
+        note: 'Septiembre es el mes de la Virgen de Dolores. Contemplamos la Pasión, el sufrimiento redentor, la compasión de María y el valor del sacrificio unido a Cristo.',
+        dayText: function (d) {
+          const i = d - 1;
+          const reflection = septiembre[i] || septiembre[septiembre.length - 1];
+          const action = septiembre2[i] || septiembre2[septiembre2.length - 1];
+          return reflection + '\n\nAccion de hoy: ' + action;
+        }
+      };
+
+      const septiembreMethodEs = {
+        title: 'Cómo hacerlo (guía pastoral breve de septiembre)',
+        steps: [
+          'Comienza con la Señal de la Cruz e invoca a la Virgen de Dolores.',
+          'Lee brevemente la Pasión de Jesús (Mc 15 o Jn 19).',
+          'Reza el Vía Crucis o la Corona de los Siete Dolores lentamente.',
+          'Completa con ofrecimiento de tu propio sufrimiento unido a Cristo.',
+          'Termina pidiendo gracia para vivir el sufrimiento con redención.'
+        ],
+        prayer: 'Oración de ofrenda diaria:\n"Madre de Dolores, tu corazón fue traspasado por mi salvación. Hoy ofrezco mis sufrimientos unidos a la Pasión de tu Hijo. Que mi dolor redima, que mi Cruz glorifique a Dios. Amén."',
+        closing: 'Oración de cierre:\n"Virgen María, en tus brazos descansa el Cordero inmolado. Protege mi fe en la Cruz. Que llegue a la Resurrección pasando por el Calvario. Amén."'
+      };
+
+      const octubreMethodEs = {
+        title: 'Cómo hacerlo (guía pastoral breve de octubre)',
+        steps: [
+          'Comienza con la Señal de la Cruz e invoca a la Virgen del Rosario.',
+          'Lee brevemente el Misterio del día (gozoso, luminoso, doloroso o glorioso).',
+          'Reza un Rosario completo o al menos una decena con presencia contemplativa.',
+          'Completa con la Letanía de la Virgen del Rosario.',
+          'Termina ofreciendo el Rosario por la paz del mundo y tus intenciones personales.'
+        ],
+        prayer: 'Oración de ofrenda diaria:\n"Virgen del Rosario, te ofrezco este Rosario. Cada Ave María es una rosa de amor para ti. Intercede por nosotros ante tu Hijo. Amén."',
+        closing: 'Oración de cierre:\n"Reina del Rosario, escucha nuestra plegaria. Que el Rosario sea arma de paz. Que todos lo recemos con fe. Amén."'
+      };
+
+      const octubrePlanEs = {
+        note: 'Octubre es el mes del Santo Rosario. Contemplamos los misterios de la fe a través de la Virgen María, meditación evangélica completa y arma apostólica de la Iglesia.',
+        dayText: function (d) {
+          const daily = ['Octubre es el mes del Santo Rosario.', 'El Rosario es cadena de rosas:', 'Misterios gozosos: Encarnación, Visitación, Nacimiento, Presentación, Reencuentro.', 'Misterios luminosos: Bautismo, Bodas de Caná, Proclamación, Transfiguración, Eucaristía.', 'Misterios dolorosos: Agonía, Flagelación, Coronación de espinas, Carga de la cruz, Crucifixión.', 'Misterios gloriosos: Resurrección, Ascensión, Pentecostés, Asunción, Coronación de María.', 'Reza el Rosario completo en octubre.', 'El Rosario ha salvado naciones y convertido almas.', 'Cada Padre Nuestro es puerta al trono de Dios.', 'Las cuentas son testigos de tu fidelidad.'];
+          const i = d - 1;
+          const base = daily[i % daily.length] || daily[0];
+          return base + ' [Día ' + d + ' de Octubre]\n\nAcción: Reza un Rosario hoy con presencia.';
+        }
+      };
+
+      const noviembreMethodEs = {
+        title: 'Cómo hacerlo (guía pastoral breve de noviembre)',
+        steps: [
+          'Comienza con la Señal de la Cruz e invoca a los Santos y a las almas en purgatorio.',
+          'Lee brevemente Ap 21 u otro pasaje sobre la vida eterna.',
+          'Reza Padrenuestro, Avemaría y Gloria por una intención de difuntos.',
+          'Completa con Requiescat in Pace (Que descansen en paz).',
+          'Termina meditando sobre tu propia muerte y preparación espiritual.'
+        ],
+        prayer: 'Oración de ofrenda diaria:\n"Eterno Padre, por los méritos de la Pasión de Tu Hijo, concede descanso eterno a los difuntos. Por la intercesión de María, lleva paz a las almas en purgatorio. Amén."',
+        closing: 'Oración de cierre:\n"Que todos los fieles difuntos descansen en paz. Que lleguen a la gloria eterna por Tu misericordia. Amén."'
+      };
+
+      const noviembrePlanEs = {
+        note: 'Noviembre es el mes de los Difuntos y los Santos. Oramos por quienes han partido, intercedemos por las almas en purgatorio, y celebramos la Comunión de los Santos.',
+        dayText: function (d) {
+          const daily = ['Noviembre es el mes de los Difuntos.', 'Fiesta de todos los Santos.', 'Conmemoración de Fieles Difuntos.', 'Los vivos pueden ayudar a los muertos.', 'Visita un cementerio y reza.', 'El Purgatorio existe y purifica.', 'Reza por las almas olvidadas.', 'Contempla tu propia muerte.', 'Reza el Rosario por un difunto.', 'La muerte fue vencida por Cristo.'];
+          const i = d - 1;
+          const base = daily[i % daily.length] || daily[0];
+          return base + ' [Día ' + d + ' de Noviembre]\n\nAcción: Reza por un alma en purgatorio hoy.';
+        }
+      };
+
+      const diciembreMethodEs = {
+        title: 'Cómo hacerlo (guía pastoral breve de diciembre)',
+        steps: [
+          'Comienza con la Señal de la Cruz e invoca al Verbo Encarnado.',
+          'Lee un pasaje profético de Isaías o el Evangelio de la Infancia.',
+          'Reza las Ó Antífonas en la última semana de Adviento.',
+          'Completa con Padrenuestro, Avemaría y Gloria por la paz en Navidad.',
+          'Termina en contemplación silenciosa: Dios llega en silencio.'
+        ],
+        prayer: 'Oración de ofrenda diaria:\n"Verbo Encarnado, Jesús que vienes a nosotros, prepara mi corazón. Que sea para ti establo puro. Que tu venida traiga paz. Amén."',
+        closing: 'Oración de cierre:\n"Emmanuel, Dios con nosotros, eres la esperanza del mundo. Que Navidad sea verdadera celebración de Tu Encarnación. Amén."'
+      };
+
+      const diciembrePlanEs = {
+        note: 'Diciembre es Adviento y Navidad. Esperamos la Encarnación, la llegada de Jesús. Preparamos nuestros corazones para recibirlo en la Eucaristía y en la vida cotidiana.',
+        dayText: function (d) {
+          const daily = ['Diciembre comienza el Adviento.', 'Adviento significa "llegada".', 'Cuatro domingos de preparación.', 'Primera semana: esperanza.', 'Segunda semana: paz.', 'Tercera semana: gozo.', 'Cuarta semana: amor.', 'En Adviento se acelera comercialización.', 'Navidad es Encarnación.', 'María da a luz en pobreza.'];
+          const i = d - 1;
+          const base = daily[i % daily.length] || daily[0];
+          return base + ' [Día ' + d + ' de Diciembre]\n\nAcción: Hoy prepara tu corazón para Navidad.';
         }
       };
 
@@ -948,16 +1186,29 @@
         el('plannerTitle').textContent = (lang === 'es' ? m.es : m.en) + ' ' + year;
         el('plannerTopic').textContent = (lang === 'es' ? m.topicEs : m.topicEn);
 
-        const isJuly = m.key === 'julio';
-        const isEnero = m.key === 'enero';
         let plan, method;
         
-        if (isJuly) {
+        if (m.key === 'julio') {
           plan = lang === 'es' ? julyPlanEs : julyPlanEn;
           method = lang === 'es' ? julyMethodEs : julyMethodEn;
-        } else if (isEnero) {
-          plan = lang === 'es' ? eneroPlanEs : eneroPlanEn;
+        } else if (m.key === 'enero') {
+          plan = eneroPlanEs;
           method = lang === 'es' ? eneroMethodEs : eneroMethodEn;
+        } else if (m.key === 'agosto') {
+          plan = agostoPlanEs;
+          method = agostoMethodEs;
+        } else if (m.key === 'septiembre') {
+          plan = septiembre3;
+          method = septiembreMethodEs;
+        } else if (m.key === 'octubre') {
+          plan = octubrePlanEs;
+          method = octubreMethodEs;
+        } else if (m.key === 'noviembre') {
+          plan = noviembrePlanEs;
+          method = noviembreMethodEs;
+        } else if (m.key === 'diciembre') {
+          plan = diciembrePlanEs;
+          method = diciembreMethodEs;
         } else {
           plan = genericPlan[lang];
           method = genericMethod[lang];
