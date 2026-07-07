@@ -624,10 +624,162 @@
         }
       };
 
+      const eneroDailyEs = [
+        'Comienza el año en el nombre de Jesús: escribe tres propósitos concretos y únelos al poder de Su nombre que salva.',
+        'Medita: Jesús significa "Dios salva". Hoy reconoce dónde necesitas ser salvado en 2025: pecado, miedo, soledad.',
+        'Reza lentamente el nombre "Jesús" 33 veces; cada invocación es un acto de confianza en Su poder redentor.',
+        'En el Nombre de Jesús hay poder para cambiar costumbres; elige hoy una sola y ofrécela en Su nombre.',
+        'Contempla a María en la circuncisión: ella guardaba todo en su corazón. Hoy guarda silencio una hora y ora.',
+        'Jesús fue circuncidado por obediencia; tú tienes ocasión de circuncidar tu corazón de dureza hoy.',
+        'Escribe el nombre "Jesús" en un papel y llévalo contigo como recordatorio de Su presencia todo el día.',
+        'En el nombre de Jesús se perdonan pecados; examina hoy una culpa antigua y pídele limpieza.',
+        'Visita un enfermo o una persona sola en el nombre de Jesús: Su nombre trae consuelo y esperanza.',
+        'Reza por un alejado de la fe invocando el nombre de Jesús; en Su nombre hay poder para conversiones.',
+        'El nombre es poder: hoy calla una crítica y reemplázala con una palabra que edifique en Su nombre.',
+        'Consagra tu trabajo del día al nombre de Jesús; que todo sea testimonio de Su presencia.',
+        'Medita Flp 2:9-11: en el nombre de Jesús toda rodilla se doblará. Hoy cede tu orgullo ante Él.',
+        'Enseña a un niño a rezar el nombre "Jesús"; que crezca conociendo Su poder desde pequeño.',
+        'En el nombre de Jesús hay sanación; ora por un enfermedad personal o de alguien cercano.',
+        'El año es nuevo pero Jesús es eterno; no busques novedad en fórmulas, busca profundidad en Su nombre.',
+        'Canta o escucha un cántico devoto al nombre de Jesús; que la música penetre tu alma.',
+        'Hoy afronta una tentación recurrente invocando el nombre de Jesús; Él vence la tentación.',
+        'Escribe una carta a Jesús en la que confieses lo que temes del año; firma con Su santo nombre.',
+        'En el nombre de Jesús se expulsan demonios; renuncia hoy a toda forma de oscuridad en tu vida.',
+        'Reza por tu familia: que cada uno conozca y ame el nombre de Jesús sin hipocresía.',
+        'Medita: ¿cómo digo el nombre de Jesús? ¿Con prisa, con fe, con gratitud? Hoy reza con presencia.',
+        'El nombre es sellador de alianza; renueva hoy tu pacto personal con Jesús en oración.',
+        'Busca una iglesia y permanece en silencio ante la Eucaristía; Jesús está allí en cuerpo y sangre.',
+        'Hoy practica una obra de misericordia en el nombre de Jesús; que el mundo vea Su bondad en ti.',
+        'Reza el Nombre de Jesús cuando sientas ansiedad; que Su presencia calme tu corazón.',
+        'Ama a un enemigo en el nombre de Jesús; que Su amor supere tu resistencia natural.',
+        'Medita Jn 1:1-14: el Verbo se hizo carne y habitó entre nosotros. Hoy celebra Su Encarnación.',
+        'En el nombre de Jesús hay perdón; perdona a quien te ha herido, aunque sea doloroso.',
+        'Reflexiona: ¿cuál es mi relación personal con el nombre de Jesús? ¿Intimidad o costumbre? Profundiza hoy.',
+        'Cierra enero renovando tu compromiso: en el nombre de Jesús, viviré en gracia durante todo este año.'
+      ];
+
+      const eneroActionsEs = [
+        'Escribe 3 propósitos en el nombre de Jesús y guárdalos en un lugar visible.',
+        'Reza 33 veces el nombre "Jesús" con presencia y fe.',
+        'Elige una costumbre mala y ofrécela a Jesús para ser sanado.',
+        'Guarda una hora en silencio meditando el nombre sagrado.',
+        'Pide perdón a una persona en el nombre de la paz de Jesús.',
+        'Visita un enfermo y ora con él invocando a Jesús.',
+        'Intercede por una persona alejada de la fe todos los días del mes.',
+        'Enseña a un niño a rezar: "Jesús, te amo".',
+        'Evita una crítica y reemplázala con un elogio sincero.',
+        'Consagra tu jornada laboral al nombre de Jesús cada mañana.',
+        'Escucha o canta un himno devoto al nombre de Jesús.',
+        'Afronta una tentación con la invocación: "Jesús, ayúdame".',
+        'Lee Filipenses 2:9-11 y medita sobre el poder del nombre.',
+        'Reza por tu familia que conozca a Jesús sin fingimiento.',
+        'Haz una obra de misericordia consciente en el nombre de Jesús.',
+        'Afronta la ansiedad con invocaciones al nombre sagrado.',
+        'Ama a alguien que te desagrada en el nombre de Jesús.',
+        'Lee el Evangelio de la Encarnación (Jn 1:1-14).',
+        'Perdona a quien te lastimó, aunque duela, en el nombre de la paz.',
+        'Reflexiona por escrito: ¿cuál es mi vínculo real con Jesús?',
+        'Examina tu conciencia y confiesa con sinceridad en Su nombre.',
+        'Renueva cada mañana tu consagración al nombre sagrado.',
+        'Rechazo activo de una tentación mediante el nombre de Jesús.',
+        'Comparte el Evangelio con alguien: habla del poder del nombre.',
+        'Permanece 15 minutos en silencio ante el Santísimo.',
+        'Crea una frase personal de invocación al nombre de Jesús.',
+        'Ayuda a alguien sin que se entere, en nombre de Jesús.',
+        'Lee y medita 1 Pedro 1:23-25 sobre la Palabra que permanece.',
+        'Evalúa: ¿viví enero en el nombre de Jesús? ¿Qué cambió?',
+        'Propósito final: llevar el nombre de Jesús a todo febrero.'
+      ];
+
+      const eneroPlanEs = {
+        note: 'Enero es el mes del Nombre de Jesús. Comenzamos el año con Su poder salvador, Su presencia eterna y nuestra consagración personal a Él.',
+        dayText: function (d) {
+          const i = d - 1;
+          const reflection = eneroDailyEs[i] || eneroDailyEs[eneroDailyEs.length - 1];
+          const action = eneroActionsEs[i] || eneroActionsEs[eneroActionsEs.length - 1];
+          return reflection + '\n\nAccion de hoy: ' + action;
+        }
+      };
+
+      const eneroPlanEn = {
+        note: 'January is the month of the Name of Jesus. We begin the year with His saving power, His eternal presence, and our personal consecration to Him.',
+        dayText: function (d) {
+          const dailyEn = [
+            'Begin the year in the Name of Jesus: write three concrete resolutions and unite them to His saving power.',
+            'Meditate: Jesus means "God saves." Today recognize where you need salvation in 2025: sin, fear, loneliness.',
+            'Pray the name "Jesus" slowly 33 times; each invocation is an act of trust in His redemptive power.',
+            'In the Name of Jesus there is power to change habits; choose one today and offer it in His name.',
+            'Contemplate Mary at the circumcision: she kept all things in her heart. Today keep silent for one hour and pray.',
+            'Jesus was circumcised in obedience; you have the chance today to circumcise your heart of hardness.',
+            'Write the name "Jesus" on paper and carry it as a reminder of His presence throughout the day.',
+            'In the name of Jesus sins are forgiven; examine today an old guilt and ask Him for cleansing.',
+            'Visit a sick person or someone alone in the name of Jesus: His name brings consolation and hope.',
+            'Pray for someone far from faith invoking the name of Jesus; in His name there is power for conversions.',
+            'The name is power: today silence a criticism and replace it with a word that builds in His name.',
+            'Consecrate your day\'s work to the name of Jesus; let everything be testimony to His presence.',
+            'Meditate Php 2:9-11: at the name of Jesus every knee will bow. Today surrender your pride before Him.',
+            'Teach a child to pray the name "Jesus"; let them grow knowing His power from small.',
+            'In the name of Jesus there is healing; pray for an illness, yours or someone close to you.',
+            'The year is new but Jesus is eternal; do not seek novelty in formulas, seek depth in His name.',
+            'Sing or listen to a hymn devoted to the name of Jesus; let music penetrate your soul.',
+            'Today face a recurring temptation invoking the name of Jesus; He overcomes temptation.',
+            'Write a letter to Jesus confessing what you fear about the year; sign it with His holy name.',
+            'In the name of Jesus demons are expelled; renounce today every form of darkness in your life.',
+            'Pray for your family: that each one knows and loves the name of Jesus without hypocrisy.',
+            'Meditate: How do I say the name of Jesus? In haste, with faith, with gratitude? Pray with presence today.',
+            'The name is a covenant seal; renew today your personal pact with Jesus in prayer.',
+            'Go to church and remain in silence before the Eucharist; Jesus is there in body and blood.',
+            'Today practice a work of mercy in the name of Jesus; let the world see His goodness in you.',
+            'Pray the Name of Jesus when you feel anxiety; let His presence calm your heart.',
+            'Love an enemy in the name of Jesus; let His love overcome your natural resistance.',
+            'Meditate Jn 1:1-14: the Word became flesh and dwelled among us. Today celebrate His Incarnation.',
+            'In the name of Jesus there is forgiveness; forgive the one who hurt you, even if painful.',
+            'Reflect: What is my personal relationship with the name of Jesus? Intimacy or habit? Deepen today.',
+            'Close January renewing your commitment: in the name of Jesus, I will live in grace throughout this year.'
+          ];
+          const actionEn = [
+            'Write 3 resolutions in the name of Jesus and keep them in a visible place.',
+            'Pray 33 times the name "Jesus" with presence and faith.',
+            'Choose one bad habit and offer it to Jesus for healing.',
+            'Keep one hour in silence meditating on the sacred name.',
+            'Ask forgiveness from someone in the name of the peace of Jesus.',
+            'Visit a sick person and pray with them invoking Jesus.',
+            'Intercede for someone far from faith every day this month.',
+            'Teach a child to pray: "Jesus, I love You."',
+            'Avoid one criticism and replace it with sincere praise.',
+            'Consecrate your work each morning to the name of Jesus.',
+            'Listen to or sing a hymn devoted to the name of Jesus.',
+            'Face a temptation with the invocation: "Jesus, help me."',
+            'Read Philippians 2:9-11 and meditate on the power of the name.',
+            'Pray for your family to know Jesus without pretense.',
+            'Do one work of mercy consciously in the name of Jesus.',
+            'Face anxiety with invocations of the sacred name.',
+            'Love someone you dislike in the name of Jesus.',
+            'Read the Gospel of the Incarnation (Jn 1:1-14).',
+            'Forgive the one who hurt you, even if it hurts, in the name of peace.',
+            'Reflect in writing: What is my real bond with Jesus?',
+            'Examine your conscience and confess sincerely in His name.',
+            'Renew each morning your consecration to the sacred name.',
+            'Active rejection of a temptation through the name of Jesus.',
+            'Share the Gospel with someone: speak of the power of the name.',
+            'Spend 15 minutes in silence before the Blessed Sacrament.',
+            'Create a personal phrase invoking the name of Jesus.',
+            'Help someone secretly, in the name of Jesus.',
+            'Read and meditate 1 Peter 1:23-25 on the Word that endures.',
+            'Evaluate: Did I live January in the name of Jesus? What changed?',
+            'Final resolution: carry the name of Jesus into all of February.'
+          ];
+          const i = d - 1;
+          const reflection = dailyEn[i] || dailyEn[dailyEn.length - 1];
+          const action = actionEn[i] || actionEn[actionEn.length - 1];
+          return reflection + '\n\nToday\'s action: ' + action;
+        }
+      };
+
       const genericPlan = {
         es: {
-          note: 'Este mes esta listo para ser actualizado. Puedes definir un enfoque, una oracion diaria y 2 fechas clave.',
-          dayText: function () { return 'Oracion diaria, lectura breve y una obra concreta de caridad.'; }
+          note: 'Este mes está listo para ser actualizado. Puedes definir un enfoque, una oración diaria y 2 fechas clave.',
+          dayText: function () { return 'Oración diaria, lectura breve y una obra concreta de caridad.'; }
         },
         en: {
           note: 'This month is ready to be updated. Define one focus, one daily prayer, and 2 key dates.',
@@ -638,17 +790,43 @@
       let selectedMonth = 6; // Julio por prioridad actual
       const currentYear = (new Date()).getFullYear();
 
-      const julyMethodEs = {
-        title: 'Como hacerlo (guia pastoral breve de julio)',
+      const eneroMethodEs = {
+        title: 'Cómo hacerlo (guía pastoral breve de enero)',
         steps: [
-          'Comienza con la Senal de la Cruz y ofrece el dia por una intencion concreta de conversion.',
-          'Lee brevemente la Pasion (Getsemani, flagelacion o Calvario) y guarda un minuto de silencio.',
-          'Reza con fe una formula fija (por ejemplo, 33 invocaciones) y une tu peticion a la redencion de Cristo.',
-          'Completa con Letania (o una parte), Padre Nuestro, Ave Maria y Gloria.',
-          'Termina con examen de conciencia, acto de contricion y una obra concreta de caridad.'
+          'Comienza con la Señal de la Cruz e invoca el nombre "Jesús" como tu primer acto consciente del día.',
+          'Lee brevemente el Evangelio de la Circuncisión (Lc 2:21) o la Encarnación (Jn 1:1-14).',
+          'Reza 33 invocaciones del nombre sagrado con fe y lentitud, uniendo tu intención al poder salvador.',
+          'Completa con Letanía (o parte de ella), Padre Nuestro, Ave María y Gloria.',
+          'Termina con examen de conciencia y acto de contrición en el nombre de Jesús.'
         ],
-        prayer: 'Oracion de ofrenda diaria:\n"Senor Jesus, por tu Preciosisima Sangre te entrego este dia. Concedeme conversion, limpieza interior y fidelidad a tu voluntad. Amen."',
-        closing: 'Oracion de cierre:\n"Jesus, por tu Sangre derramada en la Cruz, ten misericordia de mi y del mundo entero. Guardame en tu gracia y hazme perseverar en una vida santa. Amen."'
+        prayer: 'Oración de ofrenda diaria:\n"Jesús, en Tu nombre sagrado entrego este día. Salva lo que en mí es frágil, sana lo que está herido, guía lo que está perdido. Que Tu nombre sea poder en mis palabras, paz en mis actos, y misericordia en mi corazón. Amén."',
+        closing: 'Oración de cierre:\n"En el nombre de Jesús, sellador de mi año, cierro este día con acción de gracias. Que todos los días de 2025 lleven Tu nombre en mi frente y Tu amor en mi corazón. Amén."'
+      };
+
+      const eneroMethodEn = {
+        title: 'How to do it (brief pastoral January guide)',
+        steps: [
+          'Begin with the Sign of the Cross and invoke the name "Jesus" as your first conscious act of the day.',
+          'Read briefly the Gospel of the Circumcision (Lk 2:21) or the Incarnation (Jn 1:1-14).',
+          'Pray 33 invocations of the sacred name with faith and slowness, uniting your intention to His saving power.',
+          'Complete with the Litany (or part of it), then Our Father, Hail Mary, and Glory Be.',
+          'End with examination of conscience and an act of contrition in the name of Jesus.'
+        ],
+        prayer: 'Daily offering prayer:\n"Jesus, in Your sacred name I offer this day. Save what is fragile in me, heal what is wounded, guide what is lost. Let Your name be power in my words, peace in my acts, and mercy in my heart. Amen."',
+        closing: 'Closing prayer:\n"In the name of Jesus, seal of my year, I close this day with thanksgiving. May all the days of 2025 bear Your name on my brow and Your love in my heart. Amen."'
+      };
+
+      const julyMethodEs = {
+        title: 'Cómo hacerlo (guía pastoral breve de julio)',
+        steps: [
+          'Comienza con la Señal de la Cruz y ofrece el día por una intención concreta de conversión.',
+          'Lee brevemente la Pasión (Getsemaní, flagelación o Calvario) y guarda un minuto de silencio.',
+          'Reza con fe una fórmula fija (por ejemplo, 33 invocaciones) y une tu petición a la redención de Cristo.',
+          'Completa con Letanía (o una parte), Padre Nuestro, Ave María y Gloria.',
+          'Termina con examen de conciencia, acto de contrición y una obra concreta de caridad.'
+        ],
+        prayer: 'Oración de ofrenda diaria:\n"Señor Jesús, por tu Preciosísima Sangre te entrego este día. Concédeme conversión, limpieza interior y fidelidad a tu voluntad. Amén."',
+        closing: 'Oración de cierre:\n"Jesús, por tu Sangre derramada en la Cruz, ten misericordia de mí y del mundo entero. Guárdame en tu gracia y hazme perseverar en una vida santa. Amén."'
       };
 
       const julyMethodEn = {
@@ -771,10 +949,21 @@
         el('plannerTopic').textContent = (lang === 'es' ? m.topicEs : m.topicEn);
 
         const isJuly = m.key === 'julio';
-        const plan = isJuly ? (lang === 'es' ? julyPlanEs : julyPlanEn) : genericPlan[lang];
+        const isEnero = m.key === 'enero';
+        let plan, method;
+        
+        if (isJuly) {
+          plan = lang === 'es' ? julyPlanEs : julyPlanEn;
+          method = lang === 'es' ? julyMethodEs : julyMethodEn;
+        } else if (isEnero) {
+          plan = lang === 'es' ? eneroPlanEs : eneroPlanEn;
+          method = lang === 'es' ? eneroMethodEs : eneroMethodEn;
+        } else {
+          plan = genericPlan[lang];
+          method = genericMethod[lang];
+        }
+        
         el('plannerNote').textContent = plan.note;
-
-        const method = isJuly ? (lang === 'es' ? julyMethodEs : julyMethodEn) : genericMethod[lang];
         el('methodTitle').textContent = method.title;
         const methodSteps = el('methodSteps');
         methodSteps.innerHTML = '';
