@@ -899,9 +899,69 @@ function renderIntercessorContent(data, meta) {
     noticeWrap.style.display = 'none';
   }
 
-  // Prayer
+  // Prayer (shows jaculatoria first when available)
   const prayerEl = document.getElementById('prayerText');
-  if (prayerEl) prayerEl.innerHTML = paragraphify(data.prayer[lang]);
+  if (prayerEl) {
+    let prayerHtml = '';
+    if (data.jaculatoria && data.jaculatoria[lang]) {
+      const jacTitle = lang === 'es' ? 'Jaculatoria' : 'Short Prayer';
+      const jacText = data.jaculatoria[lang].replace(/\n/g, '<br />');
+      const shareLabel = lang === 'es' ? 'Compartir jaculatoria' : 'Share short prayer';
+      prayerHtml += `
+        <div class="jaculatoria-block">
+          <h3>${jacTitle}</h3>
+          <p class="short-prayer-text">${jacText}</p>
+          <button type="button" class="jaculatoria-share-btn" aria-label="${shareLabel}">${shareLabel}</button>
+        </div>
+      `;
+    }
+    prayerHtml += paragraphify(data.prayer[lang]);
+    prayerEl.innerHTML = prayerHtml;
+
+    const jacBtn = prayerEl.querySelector('.jaculatoria-share-btn');
+    if (jacBtn && data.jaculatoria && data.jaculatoria[lang]) {
+      const jacTextPlain = data.jaculatoria[lang];
+      jacBtn.addEventListener('click', async () => {
+        const shareTitle = lang === 'es' ? `Jaculatoria - ${data.name[lang]}` : `Short Prayer - ${data.name[lang]}`;
+        const shareText = `${shareTitle}\n\n${jacTextPlain}`;
+        const shareUrl = window.location.href;
+
+        if (navigator.share) {
+          try {
+            await navigator.share({ title: shareTitle, text: shareText, url: shareUrl });
+            return;
+          } catch {
+            // If user cancels native share, do nothing.
+            return;
+          }
+        }
+
+        try {
+          const copyText = `${shareText}\n\n${shareUrl}`;
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(copyText);
+          } else {
+            const tmp = document.createElement('textarea');
+            tmp.value = copyText;
+            tmp.setAttribute('readonly', '');
+            tmp.style.position = 'fixed';
+            tmp.style.opacity = '0';
+            document.body.appendChild(tmp);
+            tmp.select();
+            document.execCommand('copy');
+            document.body.removeChild(tmp);
+          }
+
+          const previous = jacBtn.textContent;
+          jacBtn.textContent = lang === 'es' ? 'Copiado' : 'Copied';
+          setTimeout(() => { jacBtn.textContent = previous; }, 1400);
+        } catch {
+          // Final fallback for restricted environments.
+          alert(lang === 'es' ? 'No se pudo compartir la jaculatoria.' : 'Could not share the short prayer.');
+        }
+      });
+    }
+  }
 
   // History — bio paragraphs only
   const historyEl = document.getElementById('historyText');

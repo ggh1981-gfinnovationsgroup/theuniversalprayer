@@ -833,6 +833,28 @@ body {
 .not-found-inner p { color: var(--white-dim); margin-bottom: 1.5rem; }
 .btn-home {
   display: inline-block;
+.jaculatoria-block {
+  margin-bottom: 1.5rem;
+}
+
+.jaculatoria-share-btn {
+  margin-top: 0.85rem;
+  padding: 0.55rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--bg-card) 75%, var(--gold) 25%);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.jaculatoria-share-btn:hover {
+  transform: translateY(-1px);
+  border-color: var(--gold);
+  background: color-mix(in srgb, var(--bg-card) 62%, var(--gold) 38%);
+}
   border: 1px solid var(--gold);
   color: var(--gold);
   text-decoration: none;
