@@ -855,6 +855,8 @@ body {
   gap: 0.45rem;
   padding: 0.62rem 1.15rem;
   border-radius: 999px;
+  border: 1px solid rgba(201, 168, 76, 0.62);
+  background: linear-gradient(135deg, rgba(201, 168, 76, 0.26) 0%, rgba(22, 28, 39, 0.94) 100%);
   border: 1px solid color-mix(in srgb, var(--gold) 58%, var(--border) 42%);
   background: linear-gradient(135deg,
     color-mix(in srgb, var(--gold) 28%, var(--bg-card) 72%) 0%,
@@ -878,6 +880,7 @@ body {
 
 .jaculatoria-share-btn:hover {
   transform: translateY(-2px);
+  background: linear-gradient(135deg, rgba(201, 168, 76, 0.34) 0%, rgba(30, 36, 48, 0.96) 100%);
   border-color: var(--gold);
   filter: brightness(1.06);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.24);
