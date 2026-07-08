@@ -1,32 +1,34 @@
-<svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
       @keyframes float {
         0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-12px); }
+        50% { transform: translateY(-8px); }
       }
       @keyframes glow {
-        0%, 100% { opacity: 0.2; }
-        50% { opacity: 0.8; }
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 0.75; }
       }
       @keyframes shimmer {
-        0% { transform: translateX(-100%); }
-        100% { transform: translateX(100%); }
+        0% { opacity: 0.4; }
+        50% { opacity: 0.9; }
+        100% { opacity: 0.4; }
       }
-      .virgin-float { animation: float 4s ease-in-out infinite; }
-      .glow-ring { animation: glow 3s ease-in-out infinite; }
-      .water-shine { animation: shimmer 2.5s ease-in-out infinite; }
+      .virgin-float { animation: float 3.5s ease-in-out infinite; }
+      .halo-glow { animation: glow 2.8s ease-in-out infinite; }
+      .light-shimmer { animation: shimmer 3s ease-in-out infinite; }
     </style>
-    
-    <!-- Radial gradient for heavenly light -->
-    <radialGradient id="lour-light" cx="40%" cy="25%">
-      <stop offset="0%" style="stop-color:#FFE57F;stop-opacity:0.35" />
-      <stop offset="100%" style="stop-color:#B39DDB;stop-opacity:0" />
+    <radialGradient id="heavenly-light">
+      <stop offset="0%" style="stop-color:#ffeaa7;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#6c5ce7;stop-opacity:0.05"/>
     </radialGradient>
-    
-    <!-- Golden glow filter -->
-    <filter id="lour-glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+    <linearGradient id="dress-grad">
+      <stop offset="0%" style="stop-color:#f0f0f0;stop-opacity:0.95"/>
+      <stop offset="50%" style="stop-color:#e8e8e8;stop-opacity:0.95"/>
+      <stop offset="100%" style="stop-color:#d4d4d4;stop-opacity:0.9"/>
+    </linearGradient>
+    <filter id="soft-glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -35,115 +37,115 @@
   </defs>
   
   <!-- Background -->
-  <rect width="400" height="600" fill="#0d0a15"/>
+  <rect width="400" height="600" fill="#0a0814"/>
   
-  <!-- Heaven light glow -->
-  <circle cx="200" cy="80" r="220" fill="url(#lour-light)"/>
+  <!-- Heaven light -->
+  <circle cx="200" cy="100" r="250" fill="url(#heavenly-light)"/>
   
-  <!-- Starfield -->
-  <circle cx="60" cy="50" r="1.8" fill="#FFE57F" opacity="0.6"/>
-  <circle cx="340" cy="80" r="1.5" fill="#FFE57F" opacity="0.5"/>
-  <circle cx="100" cy="40" r="1.2" fill="#FFE57F" opacity="0.7"/>
-  <circle cx="320" cy="50" r="1.8" fill="#FFE57F" opacity="0.6"/>
-  <circle cx="50" cy="120" r="1.4" fill="#FFE57F" opacity="0.5"/>
-  <circle cx="360" cy="140" r="1.8" fill="#FFE57F" opacity="0.6"/>
+  <!-- Soft stars -->
+  <circle cx="50" cy="40" r="1.2" fill="#ffeaa7" opacity="0.5"/>
+  <circle cx="350" cy="60" r="1" fill="#ffeaa7" opacity="0.45"/>
+  <circle cx="80" cy="90" r="0.8" fill="#dfe6e9" opacity="0.4"/>
+  <circle cx="320" cy="100" r="1.2" fill="#ffeaa7" opacity="0.5"/>
   
-  <!-- Grotto rocks -->
-  <path d="M 40 360 Q 50 320 70 310 L 80 400 Z" fill="#6b5b4e" opacity="0.8"/>
-  <path d="M 320 370 Q 330 330 350 320 L 340 410 Z" fill="#6b5b4e" opacity="0.8"/>
-  <path d="M 60 400 L 340 400 L 330 460 L 70 460 Z" fill="#7a6b5e"/>
-  <path d="M 70 460 L 330 460 L 320 520 L 80 520 Z" fill="#6b5b4e"/>
-  
-  <!-- Grotto shadow/depth -->
-  <ellipse cx="200" cy="420" rx="130" ry="50" fill="#000000" opacity="0.4"/>
+  <!-- Grotto base (soft) -->
+  <ellipse cx="200" cy="380" rx="120" ry="40" fill="rgba(80,70,60,0.3)"/>
+  <path d="M 90 380 Q 80 360 100 350 L 110 420 Z" fill="rgba(100,85,75,0.4)" opacity="0.6"/>
+  <path d="M 310 380 Q 320 360 300 350 L 290 420 Z" fill="rgba(100,85,75,0.4)" opacity="0.6"/>
   
   <!-- Water pool -->
-  <ellipse cx="200" cy="490" rx="110" ry="36" fill="#4da6ff" opacity="0.5"/>
-  <ellipse cx="200" cy="490" rx="110" ry="36" fill="url(#lour-light)" opacity="0.25"/>
+  <ellipse cx="200" cy="450" rx="95" ry="28" fill="rgba(100,150,200,0.3)"/>
+  <ellipse cx="200" cy="448" rx="95" ry="26" fill="rgba(150,200,255,0.2)"/>
   
-  <!-- Water shimmer/reflection -->
-  <g class="water-shine">
-    <rect x="90" y="480" width="220" height="20" fill="#FFE57F" opacity="0.12"/>
+  <!-- Water shimmer -->
+  <g class="light-shimmer">
+    <ellipse cx="200" cy="445" rx="80" ry="8" fill="#ffeaa7" opacity="0.08"/>
   </g>
   
-  <!-- Floating glow rings (representing heavenly light) -->
-  <circle cx="200" cy="200" r="90" fill="none" stroke="#FFE57F" stroke-width="1.5" opacity="0" class="glow-ring"/>
-  <circle cx="200" cy="200" r="110" fill="none" stroke="#B39DDB" stroke-width="1" opacity="0" class="glow-ring"/>
+  <!-- Light rays -->
+  <g opacity="0.12">
+    <line x1="120" y1="0" x2="140" y2="150" stroke="#ffeaa7" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="160" stroke="#ffeaa7" stroke-width="1.5"/>
+    <line x1="280" y1="0" x2="260" y2="150" stroke="#ffeaa7" stroke-width="1"/>
+    <line x1="70" y1="50" x2="100" y2="180" stroke="#b19cd9" stroke-width="0.8"/>
+    <line x1="330" y1="50" x2="300" y2="180" stroke="#b19cd9" stroke-width="0.8"/>
+  </g>
   
-  <!-- Virgin Mary (floating) -->
-  <g class="virgin-float" filter="url(#lour-glow)">
+  <!-- Virgin Mary figure -->
+  <g class="virgin-float" filter="url(#soft-glow)">
     <!-- Halo -->
-    <circle cx="200" cy="170" r="56" fill="none" stroke="#FFE57F" stroke-width="3" opacity="0.75"/>
-    <circle cx="200" cy="170" r="60" fill="none" stroke="#FFE57F" stroke-width="1.5" opacity="0.35"/>
+    <circle cx="200" cy="140" r="50" fill="none" stroke="#ffeaa7" stroke-width="2.5" opacity="0.8" class="halo-glow"/>
+    <circle cx="200" cy="140" r="55" fill="none" stroke="#ffeaa7" stroke-width="1" opacity="0.4" class="halo-glow"/>
     
     <!-- Head -->
-    <circle cx="200" cy="170" r="30" fill="#E8C9A0"/>
+    <ellipse cx="200" cy="140" rx="24" ry="26" fill="#e8c9a0"/>
     
     <!-- Hair -->
-    <path d="M 172 160 Q 170 170 172 184 Q 200 210 228 184 Q 230 170 228 160" fill="#8B6F47" opacity="0.85"/>
+    <path d="M 178 130 Q 176 140 178 154 Q 200 168 222 154 Q 224 140 222 130" fill="#9b7653" opacity="0.9"/>
     
-    <!-- Veil -->
-    <path d="M 172 160 Q 170 150 200 140 Q 230 150 228 160" fill="#F5F5F5" opacity="0.92"/>
-    <path d="M 180 170 Q 184 210 200 230 Q 216 210 220 170" fill="#F5F5F5" opacity="0.88"/>
+    <!-- Veil (flows gracefully) -->
+    <path d="M 178 128 Q 175 115 200 108 Q 225 115 222 128 Q 222 138 220 155 Q 200 175 180 155 Q 178 138 178 128" fill="#f5f5f5" opacity="0.92"/>
+    <path d="M 180 145 Q 185 165 200 185 Q 215 165 220 145" fill="#f0f0f0" opacity="0.88"/>
     
-    <!-- Face -->
-    <circle cx="194" cy="166" r="3" fill="#8B4513"/>
-    <circle cx="206" cy="166" r="3" fill="#8B4513"/>
-    <path d="M 200 174 Q 198 176 200 178" stroke="#8B4513" stroke-width="1.5" fill="none"/>
-    <path d="M 196 182 Q 200 184 204 182" stroke="#D4A574" stroke-width="1.2"/>
+    <!-- Face details - serene -->
+    <circle cx="192" cy="135" r="2.2" fill="#6b4423" opacity="0.8"/>
+    <circle cx="208" cy="135" r="2.2" fill="#6b4423" opacity="0.8"/>
+    <path d="M 200 142 Q 198 144 200 145" stroke="#8b6f47" stroke-width="1" fill="none" opacity="0.7"/>
+    <path d="M 196 150 Q 200 152 204 150" stroke="#d4a77d" stroke-width="1"/>
     
-    <!-- Body/Robe -->
-    <path d="M 172 194 Q 160 240 165 300 Q 200 330 235 300 Q 240 240 228 194 Z" fill="#E8D4B8" opacity="0.95"/>
+    <!-- Neck -->
+    <rect x="195" y="162" width="10" height="8" fill="#e8c9a0" opacity="0.9"/>
     
-    <!-- Mantle/Shawl (blue sash) -->
-    <path d="M 175 200 Q 180 215 185 225" fill="none" stroke="#4169E1" stroke-width="8" stroke-linecap="round" opacity="0.75"/>
-    <path d="M 225 200 Q 220 215 215 225" fill="none" stroke="#4169E1" stroke-width="8" stroke-linecap="round" opacity="0.75"/>
+    <!-- White dress - elegant and flowing -->
+    <path d="M 178 170 Q 170 200 168 260 Q 170 300 200 315 Q 230 300 232 260 Q 230 200 222 170 Z" fill="url(#dress-grad)"/>
     
-    <!-- Arms -->
-    <ellipse cx="164" cy="210" rx="12" ry="28" fill="#E8C9A0" opacity="0.92"/>
-    <ellipse cx="236" cy="210" rx="12" ry="28" fill="#E8C9A0" opacity="0.92"/>
+    <!-- Dress folds - graceful -->
+    <path d="M 185 190 Q 175 240 180 290" fill="none" stroke="#d4d4d4" stroke-width="2.5" opacity="0.6"/>
+    <path d="M 215 190 Q 225 240 220 290" fill="none" stroke="#d4d4d4" stroke-width="2.5" opacity="0.6"/>
+    <path d="M 200 175 Q 198 240 200 310" fill="none" stroke="#e0e0e0" stroke-width="1.8" opacity="0.4"/>
     
-    <!-- Hands -->
-    <circle cx="160" cy="240" r="8" fill="#E8C9A0"/>
-    <circle cx="240" cy="240" r="8" fill="#E8C9A0"/>
+    <!-- Blue sash/mantle -->
+    <path d="M 177 185 Q 168 220 170 270" fill="none" stroke="#4a7ba7" stroke-width="7" stroke-linecap="round" opacity="0.75"/>
+    <path d="M 223 185 Q 232 220 230 270" fill="none" stroke="#4a7ba7" stroke-width="7" stroke-linecap="round" opacity="0.75"/>
     
-    <!-- Rosary in hands -->
-    <path d="M 160 240 Q 168 270 180 300" stroke="#C0C0C0" stroke-width="2.5" fill="none" opacity="0.85"/>
-    <circle cx="160" cy="240" r="3" fill="#FFD700"/>
-    <circle cx="164" cy="250" r="2.4" fill="#FFD700"/>
-    <circle cx="168" cy="260" r="2.4" fill="#FFD700"/>
-    <circle cx="172" cy="270" r="3" fill="#FFD700"/>
-    <circle cx="176" cy="280" r="2.4" fill="#FFD700"/>
+    <!-- Arms (graceful) -->
+    <path d="M 178 175 Q 160 195 155 235" fill="none" stroke="#e8c9a0" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+    <path d="M 222 175 Q 240 195 245 235" fill="none" stroke="#e8c9a0" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
     
-    <path d="M 240 240 Q 232 270 220 300" stroke="#C0C0C0" stroke-width="2.5" fill="none" opacity="0.85"/>
-    <circle cx="240" cy="240" r="3" fill="#FFD700"/>
-    <circle cx="236" cy="250" r="2.4" fill="#FFD700"/>
-    <circle cx="232" cy="260" r="2.4" fill="#FFD700"/>
+    <!-- Hands (gentle) -->
+    <circle cx="154" cy="238" r="7" fill="#e8c9a0" opacity="0.9"/>
+    <circle cx="246" cy="238" r="7" fill="#e8c9a0" opacity="0.9"/>
+    
+    <!-- Rosary strands -->
+    <path d="M 154 238 Q 160 265 175 295" fill="none" stroke="#b8956a" stroke-width="1.8" opacity="0.8"/>
+    <path d="M 246 238 Q 240 265 225 295" fill="none" stroke="#b8956a" stroke-width="1.8" opacity="0.8"/>
+    
+    <!-- Rosary beads -->
+    <circle cx="154" cy="238" r="2" fill="#ffd700"/>
+    <circle cx="158" cy="248" r="1.8" fill="#f0c050"/>
+    <circle cx="162" cy="258" r="1.8" fill="#f0c050"/>
+    <circle cx="167" cy="270" r="2" fill="#ffd700"/>
+    <circle cx="172" cy="283" r="1.8" fill="#f0c050"/>
+    
+    <circle cx="246" cy="238" r="2" fill="#ffd700"/>
+    <circle cx="242" cy="248" r="1.8" fill="#f0c050"/>
+    <circle cx="238" cy="258" r="1.8" fill="#f0c050"/>
+    <circle cx="233" cy="270" r="2" fill="#ffd700"/>
+    <circle cx="228" cy="283" r="1.8" fill="#f0c050"/>
   </g>
   
-  <!-- Light rays from heaven -->
-  <g opacity="0.25">
-    <line x1="140" y1="0" x2="130" y2="120" stroke="#FFE57F" stroke-width="1.5"/>
-    <line x1="200" y1="0" x2="200" y2="140" stroke="#FFE57F" stroke-width="2.5"/>
-    <line x1="260" y1="0" x2="270" y2="120" stroke="#FFE57F" stroke-width="1.5"/>
-    <line x1="100" y1="40" x2="110" y2="160" stroke="#B39DDB" stroke-width="1.2"/>
-    <line x1="300" y1="30" x2="290" y2="150" stroke="#B39DDB" stroke-width="1.2"/>
-  </g>
+  <!-- Border frame -->
+  <rect x="12" y="12" width="376" height="576" rx="12" fill="none" stroke="#c9a84c" stroke-width="1.5" opacity="0.55"/>
+  <rect x="24" y="24" width="352" height="552" rx="8" fill="none" stroke="#c9a84c" stroke-width="0.8" opacity="0.22"/>
   
-  <!-- Frame -->
-  <rect x="12" y="12" width="376" height="576" rx="12" fill="none" stroke="#c9a84c" stroke-width="1.5" stroke-opacity="0.55"/>
-  <rect x="24" y="24" width="352" height="552" rx="8" fill="none" stroke="#c9a84c" stroke-width="0.8" stroke-opacity="0.22"/>
+  <!-- Info panel -->
+  <rect x="36" y="528" width="328" height="60" rx="8" fill="#0a0814" opacity="0.94"/>
+  <line x1="60" y1="545" x2="340" y2="545" stroke="#c9a84c" stroke-width="0.6" opacity="0.32"/>
   
-  <!-- Panel -->
-  <rect x="36" y="528" width="328" height="60" rx="8" fill="#0d0a15" opacity="0.92"/>
-  <line x1="60" y1="545" x2="340" y2="545" stroke="#c9a84c" stroke-width="0.6" stroke-opacity="0.32"/>
+  <!-- Text content - Bilingual -->
+  <text x="200" y="538" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" fill="#c9a84c" letter-spacing="2" opacity="0.9">VIRGEN DE LOURDES  ·  IMMACULADA</text>
   
-  <!-- Text content - Bilingual panel -->
-  <text x="200" y="558" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="2.5" opacity="0.92">MARIA, SALUD DE LOS ENFERMOS  ·  LOURDES</text>
+  <text x="200" y="558" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#b8d8f8" font-weight="bold">«Nuestra Señora de Lourdes»</text>
   
-  <!-- Spanish title -->
-  <text x="200" y="575" text-anchor="middle" font-family="Georgia,serif" font-size="12.5" fill="#b8d8f8" font-style="italic" font-weight="bold">«Nuestra Señora de Lourdes»</text>
-  
-  <!-- English title -->
-  <text x="200" y="590" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#f5e060" font-style="italic" opacity="0.85">«Our Lady of Lourdes»</text>
+  <text x="200" y="574" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#e8d4b8" font-style="italic">«Our Lady of Lourdes»</text>
 </svg>
