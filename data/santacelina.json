@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "santacelina",
   "name": {
     "es": "Santa Celina",
     "en": "Saint Céline"
+  },
+  "jaculatoria": {
+    "es": "Santa Celina, que viviste en la oscuridad de la noche y encontraste la luz de Cristo, ruega por nosotros.",
+    "en": "Saint Celine, who lived in the darkness of night and found the light of Christ, pray for us."
   },
   "feast_day": {
     "es": "21 de octubre",

@@ -1,7 +1,11 @@
-﻿{
+{
   "name": {
     "es": "Santa Teresita del Niño Jesús",
     "en": "Saint Thérèse of the Child Jesus"
+  },
+  "jaculatoria": {
+    "es": "Santa Teresita del Niño Jesús, que prometiste pasar el Cielo haciendo bien en la tierra, llueve rosas sobre nosotros.",
+    "en": "Saint Therese of the Child Jesus, who promised to spend your heaven doing good on earth, shower roses upon us."
   },
   "feast_day": {
     "es": "1 de octubre",

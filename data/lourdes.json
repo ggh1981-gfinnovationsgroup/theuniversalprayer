@@ -4,6 +4,10 @@
     "es": "Nuestra Señora de Lourdes",
     "en": "Our Lady of Lourdes"
   },
+  "jaculatoria": {
+    "es": "Oh María concebida sin pecado, ruega por nosotros que recurrimos a ti.",
+    "en": "O Mary conceived without sin, pray for us who have recourse to thee."
+  },
   "feast_day": {
     "es": "11 de febrero",
     "en": "February 11"

@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "angelguarda",
   "name": {
     "es": "Ángel de la Guarda",
     "en": "Guardian Angel"
+  },
+  "jaculatoria": {
+    "es": "Ángel de la Guarda, dulce compañía, no me desampares ni de noche ni de día.",
+    "en": "Guardian Angel, sweet companion, do not forsake me by night or by day."
   },
   "feast_day": {
     "es": "2 de octubre",

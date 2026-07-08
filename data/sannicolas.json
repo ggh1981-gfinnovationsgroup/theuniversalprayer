@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "sannicolas",
   "name": {
     "es": "San Nicolás de Bari",
     "en": "Saint Nicholas of Bari"
+  },
+  "jaculatoria": {
+    "es": "San Nicolás de Bari, protector de los niños y de los inocentes, ruega por nosotros.",
+    "en": "Saint Nicholas of Bari, protector of children and the innocent, pray for us."
   },
   "color": "#1a3a8a",
   "image": "/assets/images/sannicolas.svg",

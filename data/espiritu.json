@@ -4,6 +4,10 @@
     "es": "Espíritu Santo",
     "en": "Holy Spirit"
   },
+  "jaculatoria": {
+    "es": "Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor.",
+    "en": "Come, Holy Spirit, fill the hearts of your faithful and kindle in them the fire of your love."
+  },
   "image": "/assets/images/espiritu.svg",
   "prayer": {
     "es": "Ven, Espíritu Santo, llena los corazones de Tus fieles y enciende en ellos el fuego de Tu amor. Envía Tu Espíritu y serán creadas todas las cosas, y renovarás la faz de la tierra.",
@@ -16,6 +20,10 @@
   "gifts": [
     {
       "name": { "es": "Sabiduría", "en": "Wisdom" },
+  "jaculatoria": {
+    "es": "Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor.",
+    "en": "Come, Holy Spirit, fill the hearts of your faithful and kindle in them the fire of your love."
+  },
       "desc": {
         "es": "El don de ver las cosas como las ve Dios: con amor, eternidad y verdad. Nos hace gustar las cosas divinas y orientar la vida hacia lo que verdaderamente importa.",
         "en": "The gift of seeing things as God sees them: with love, eternity, and truth. It makes us savor divine things and orient our lives toward what truly matters."
@@ -23,6 +31,10 @@
     },
     {
       "name": { "es": "Entendimiento", "en": "Understanding" },
+  "jaculatoria": {
+    "es": "Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor.",
+    "en": "Come, Holy Spirit, fill the hearts of your faithful and kindle in them the fire of your love."
+  },
       "desc": {
         "es": "La capacidad de penetrar más profundamente en las verdades de la fe. No es solo conocer la doctrina, sino captarla con el corazón y dejarse transformar por ella.",
         "en": "The capacity to penetrate more deeply into the truths of faith. Not merely knowing doctrine, but grasping it with the heart and allowing oneself to be transformed by it."
@@ -30,6 +42,10 @@
     },
     {
       "name": { "es": "Consejo", "en": "Counsel" },
+  "jaculatoria": {
+    "es": "Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor.",
+    "en": "Come, Holy Spirit, fill the hearts of your faithful and kindle in them the fire of your love."
+  },
       "desc": {
         "es": "El don de discernir con rectitud qué hacer en cada situación, especialmente ante las encrucijadas morales de la vida. Es la luz práctica del Espíritu para obrar bien.",
         "en": "The gift of discerning rightly what to do in every situation, especially at the moral crossroads of life. It is the Spirit's practical light for acting well."
@@ -37,6 +53,10 @@
     },
     {
       "name": { "es": "Fortaleza", "en": "Fortitude" },
+  "jaculatoria": {
+    "es": "Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor.",
+    "en": "Come, Holy Spirit, fill the hearts of your faithful and kindle in them the fire of your love."
+  },
       "desc": {
         "es": "La valentía sobrenatural para mantenerse firme en el bien, afrontar las dificultades sin rendirse y testimoniar la fe aunque cueste. Es el don de los mártires y los perseverantes.",
         "en": "The supernatural courage to remain firm in goodness, face difficulties without surrendering, and witness to the faith even when it costs. It is the gift of martyrs and the perseverant."
@@ -44,6 +64,10 @@
     },
     {
       "name": { "es": "Ciencia", "en": "Knowledge" },
+  "jaculatoria": {
+    "es": "Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor.",
+    "en": "Come, Holy Spirit, fill the hearts of your faithful and kindle in them the fire of your love."
+  },
       "desc": {
         "es": "El don que nos permite juzgar rectamente las realidades del mundo a la luz de Dios: ver las criaturas como caminos hacia el Creador y no como fines en sí mismas.",
         "en": "The gift that enables us to judge the realities of the world rightly in the light of God: to see creatures as paths toward the Creator and not as ends in themselves."
@@ -51,6 +75,10 @@
     },
     {
       "name": { "es": "Piedad", "en": "Piety" },
+  "jaculatoria": {
+    "es": "Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor.",
+    "en": "Come, Holy Spirit, fill the hearts of your faithful and kindle in them the fire of your love."
+  },
       "desc": {
         "es": "El don de la filial devoción a Dios Padre y de la caridad fraterna hacia todos los hombres. Nos hace tratar a Dios con ternura de hijos y a los demás con amor de hermanos.",
         "en": "The gift of filial devotion to God the Father and fraternal charity toward all people. It makes us approach God with a child's tenderness and others with brotherly love."
@@ -58,6 +86,10 @@
     },
     {
       "name": { "es": "Temor de Dios", "en": "Fear of the Lord" },
+  "jaculatoria": {
+    "es": "Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor.",
+    "en": "Come, Holy Spirit, fill the hearts of your faithful and kindle in them the fire of your love."
+  },
       "desc": {
         "es": "No el miedo que esclaviza, sino la reverencia filial ante la grandeza de Dios y el horror al pecado que nos separa de Él. Es el comienzo de la sabiduría y la raíz de la santidad.",
         "en": "Not the fear that enslaves, but the filial reverence before God's greatness and the horror of sin that separates us from Him. It is the beginning of wisdom and the root of holiness."
@@ -67,6 +99,10 @@
   "charisms": [
     {
       "name": { "es": "Palabra de Sabiduría", "en": "Word of Wisdom" },
+  "jaculatoria": {
+    "es": "Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor.",
+    "en": "Come, Holy Spirit, fill the hearts of your faithful and kindle in them the fire of your love."
+  },
       "desc": {
         "es": "El carisma de pronunciar, en el momento preciso, las palabras que iluminan la voluntad de Dios en una situación concreta. No es la sabiduría adquirida por el estudio, sino una revelación sobrenatural que el Espíritu concede para guiar, consolar o discernir lo que ninguna experiencia humana podría alcanzar por sí sola.",
         "en": "The charism of speaking, at the precise moment, words that illuminate God's will in a specific situation. It is not wisdom acquired through study, but a supernatural revelation the Spirit grants to guide, console, or discern what no human experience alone could reach."
@@ -74,6 +110,10 @@
     },
     {
       "name": { "es": "Palabra de Conocimiento", "en": "Word of Knowledge" },
+  "jaculatoria": {
+    "es": "Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor.",
+    "en": "Come, Holy Spirit, fill the hearts of your faithful and kindle in them the fire of your love."
+  },
       "desc": {
         "es": "El don de conocer, por revelación divina, hechos o realidades ocultas que el receptor no podría saber por medios naturales. Permite ministrar con precisión asombrosa lo que Dios ya conoce sobre la situación interior de otra persona: su herida, su pecado, su necesidad más profunda.",
         "en": "The gift of knowing, through divine revelation, facts or hidden realities that the recipient could not know through natural means. It enables ministering with remarkable precision what God already knows about another person's interior situation: their wound, their sin, their deepest need."
@@ -81,6 +121,10 @@
     },
     {
       "name": { "es": "Fe Extraordinaria", "en": "Gift of Faith" },
+  "jaculatoria": {
+    "es": "Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor.",
+    "en": "Come, Holy Spirit, fill the hearts of your faithful and kindle in them the fire of your love."
+  },
       "desc": {
         "es": "No la fe ordinaria de todo bautizado, sino una confianza sobrenatural e incondicional en el poder de Dios para actuar ahora mismo. Es la fe que mueve montañas, que ora con plena certeza sin dudar ante lo humanamente imposible, sabiendo que nada escapa al poder del Señor.",
         "en": "Not the ordinary faith of every baptized person, but an unconditional supernatural trust in God's power to act right now. It is the faith that moves mountains, that prays with complete certainty without doubting before the humanly impossible, knowing that nothing lies beyond the Lord's power."
@@ -88,6 +132,10 @@
     },
     {
       "name": { "es": "Dones de Sanación", "en": "Gifts of Healing" },
+  "jaculatoria": {
+    "es": "Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor.",
+    "en": "Come, Holy Spirit, fill the hearts of your faithful and kindle in them the fire of your love."
+  },
       "desc": {
         "es": "La capacidad de ser instrumento de la sanación divina — física, emocional y espiritual — sobre otros. San Pablo lo llama en plural porque el Espíritu distribuye estas gracias según su voluntad, para manifestar la compasión sanadora de Cristo que sigue actuando en su Iglesia.",
         "en": "The capacity to be an instrument of divine healing — physical, emotional, and spiritual — over others. Paul names it in the plural because the Spirit distributes these graces according to His will, to manifest the healing compassion of Christ who continues acting in His Church."
@@ -95,6 +143,10 @@
     },
     {
       "name": { "es": "Obrar Milagros", "en": "Working of Miracles" },
+  "jaculatoria": {
+    "es": "Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor.",
+    "en": "Come, Holy Spirit, fill the hearts of your faithful and kindle in them the fire of your love."
+  },
       "desc": {
         "es": "El poder de Dios actuando visiblemente a través de un creyente para intervenir más allá de las leyes naturales. Los milagros son señales del Reino que anuncian que Cristo ha vencido al pecado, a la enfermedad y a la muerte — y que esa victoria tiene consecuencias hoy.",
         "en": "The power of God acting visibly through a believer to intervene beyond the laws of nature. Miracles are signs of the Kingdom announcing that Christ has conquered sin, sickness, and death — and that this victory has consequences today."
@@ -102,6 +154,10 @@
     },
     {
       "name": { "es": "Profecía", "en": "Prophecy" },
+  "jaculatoria": {
+    "es": "Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor.",
+    "en": "Come, Holy Spirit, fill the hearts of your faithful and kindle in them the fire of your love."
+  },
       "desc": {
         "es": "El don de hablar de parte de Dios para edificar, consolar o exhortar a la comunidad. No es necesariamente predecir el futuro: es proclamar la Palabra viva del Señor que transforma el presente. San Pablo lo considera el mayor de los carismas porque construye directamente el Cuerpo de Cristo.",
         "en": "The gift of speaking on God's behalf to build up, console, or exhort the community. It is not necessarily predicting the future: it is proclaiming the living Word of the Lord that transforms the present. Paul considers it the greatest charism because it directly builds up the Body of Christ."
@@ -109,6 +165,10 @@
     },
     {
       "name": { "es": "Discernimiento de Espíritus", "en": "Discernment of Spirits" },
+  "jaculatoria": {
+    "es": "Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor.",
+    "en": "Come, Holy Spirit, fill the hearts of your faithful and kindle in them the fire of your love."
+  },
       "desc": {
         "es": "La capacidad sobrenatural de reconocer si un movimiento interior, una enseñanza o una manifestación espiritual procede del Espíritu Santo, del espíritu humano o del espíritu del mal. Es el carisma del centinela que cuida la autenticidad de la experiencia espiritual en la Iglesia.",
         "en": "The supernatural capacity to recognize whether an interior movement, a teaching, or a spiritual manifestation comes from the Holy Spirit, from the human spirit, or from the spirit of evil. It is the charism of the sentinel who guards the authenticity of spiritual experience in the Church."
@@ -116,6 +176,10 @@
     },
     {
       "name": { "es": "Don de Lenguas", "en": "Gift of Tongues" },
+  "jaculatoria": {
+    "es": "Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor.",
+    "en": "Come, Holy Spirit, fill the hearts of your faithful and kindle in them the fire of your love."
+  },
       "desc": {
         "es": "El don de orar o alabar en un lenguaje no aprendido, entregando al Espíritu la expresión de realidades que la mente no puede formular. San Pablo lo valora especialmente para la oración personal: es el espíritu que ora directamente a Dios más allá de las palabras, en profundidad inefable.",
         "en": "The gift of praying or praising in an unlearned language, surrendering to the Spirit the expression of realities the mind cannot formulate. Paul values it especially for personal prayer: it is the spirit praying directly to God beyond words, in ineffable depth."
@@ -123,6 +187,10 @@
     },
     {
       "name": { "es": "Interpretación de Lenguas", "en": "Interpretation of Tongues" },
+  "jaculatoria": {
+    "es": "Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor.",
+    "en": "Come, Holy Spirit, fill the hearts of your faithful and kindle in them the fire of your love."
+  },
       "desc": {
         "es": "El carisma complementario que traduce para la comunidad el contenido de lo expresado en lenguas, convirtiéndolo en edificación para todos. Sin él, el don de lenguas permanece en la oración privada; con él, se convierte en profecía que nutre y unifica al Cuerpo de Cristo.",
         "en": "The complementary charism that renders for the community the content of what was expressed in tongues, turning it into edification for all. Without it, the gift of tongues remains in private prayer; with it, it becomes prophecy that nourishes and unifies the Body of Christ."

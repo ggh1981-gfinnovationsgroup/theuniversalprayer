@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "providencia",
   "name": {
     "es": "La Divina Providencia",
     "en": "Divine Providence"
+  },
+  "jaculatoria": {
+    "es": "Señor, tú proveerás. En tu Divina Providencia confío.",
+    "en": "Lord, you will provide. I trust in your Divine Providence."
   },
   "feast_day": {
     "es": "Devoción perenne — sin fecha fija",

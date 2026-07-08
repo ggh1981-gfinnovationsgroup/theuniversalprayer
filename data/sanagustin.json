@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "sanagustin",
   "name": {
     "es": "San Agustín de Hipona",
     "en": "Saint Augustine of Hippo"
+  },
+  "jaculatoria": {
+    "es": "Nos hiciste para ti, Señor, y nuestro corazón estará inquieto hasta que descanse en ti.",
+    "en": "You have made us for yourself, O Lord, and our heart is restless until it rests in you."
   },
   "color": "#5a3010",
   "image": "/assets/images/sanagustin.svg",

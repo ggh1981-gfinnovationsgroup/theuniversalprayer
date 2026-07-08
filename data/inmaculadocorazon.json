@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "inmaculadocorazon",
   "name": {
     "es": "Inmaculado Corazón de María",
     "en": "Immaculate Heart of Mary"
+  },
+  "jaculatoria": {
+    "es": "Inmaculado Corazón de María, sé la salvación de mi alma.",
+    "en": "Immaculate Heart of Mary, be the salvation of my soul."
   },
   "feast_day": {
     "es": "Sábado después del Sagrado Corazón",

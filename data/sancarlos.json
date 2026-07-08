@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "sancarlos",
   "name": {
     "es": "San Carlos Borromeo",
     "en": "Saint Charles Borromeo"
+  },
+  "jaculatoria": {
+    "es": "San Carlos Borromeo, pastor vigilante de la Iglesia, intercede por los sacerdotes y obispos.",
+    "en": "Saint Charles Borromeo, vigilant shepherd of the Church, intercede for priests and bishops."
   },
   "feast_day": {
     "es": "4 de noviembre",

@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "sanexpedito",
   "name": {
     "es": "San Expedito",
     "en": "Saint Expeditus"
+  },
+  "jaculatoria": {
+    "es": "San Expedito, abogado de las causas urgentes y desesperadas, intercede ante Dios por mí hoy.",
+    "en": "Saint Expeditus, advocate for urgent and desperate causes, intercede before God for me today."
   },
   "color": "#8a2010",
   "image": "/assets/images/sanexpedito.svg",

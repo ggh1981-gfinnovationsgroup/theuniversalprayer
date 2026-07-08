@@ -1,9 +1,13 @@
-﻿{
+{
     "id":  "sanfrancisco",
     "name":  {
                  "es":  "San Francisco de Asís",
                  "en":  "Saint Francis of Assisi"
              },
+  "jaculatoria": {
+    "es": "Señor, hazme instrumento de tu paz.",
+    "en": "Lord, make me an instrument of your peace."
+  },
     "color":  "#6b4226",
     "image":  "/assets/images/sanfrancisco.svg",
     "specialty":  {

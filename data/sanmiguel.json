@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "sanmiguel",
   "name": {
     "es": "San Miguel Arcángel",
     "en": "Saint Michael the Archangel"
+  },
+  "jaculatoria": {
+    "es": "San Miguel Arcángel, defiéndenos en la batalla y sé nuestro amparo contra la perversidad y asechanzas del demonio.",
+    "en": "Saint Michael the Archangel, defend us in battle and be our protection against the wickedness and snares of the devil."
   },
   "feast_day": {
     "es": "29 de septiembre",

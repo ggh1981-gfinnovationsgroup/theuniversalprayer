@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "santacatalina",
   "name": {
     "es": "Santa Catalina de Siena",
     "en": "Saint Catherine of Siena"
+  },
+  "jaculatoria": {
+    "es": "Santa Catalina de Siena, doctora de la Iglesia, que incendiaste el mundo con el amor de Dios, ruega por nosotros.",
+    "en": "Saint Catherine of Siena, Doctor of the Church, who set the world ablaze with the love of God, pray for us."
   },
   "feast_day": {
     "es": "29 de abril",

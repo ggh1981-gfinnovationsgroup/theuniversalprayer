@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "teresacalcuta",
   "name": {
     "es": "Santa Teresa de Calcuta",
     "en": "Saint Teresa of Calcutta"
+  },
+  "jaculatoria": {
+    "es": "Santa Teresa de Calcuta, que en el rostro del más pobre viste el rostro de Cristo, ruega por nosotros.",
+    "en": "Saint Teresa of Calcutta, who saw the face of Christ in the face of the poorest, pray for us."
   },
   "feast_day": {
     "es": "5 de septiembre",

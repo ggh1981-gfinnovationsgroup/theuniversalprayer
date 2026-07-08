@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "sanjuanapóstol",
   "name": {
     "es": "San Juan Apóstol y Evangelista",
     "en": "Saint John the Apostle and Evangelist"
+  },
+  "jaculatoria": {
+    "es": "San Juan Apóstol, discípulo amado que reposaste en el pecho del Señor, enséñanos a amar como Él amó.",
+    "en": "Saint John the Apostle, beloved disciple who rested on the Lord's breast, teach us to love as He loved."
   },
   "feast_day": {
     "es": "27 de diciembre",

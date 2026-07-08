@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "fatima",
   "name": {
     "es": "Virgen de Fátima",
     "en": "Our Lady of Fátima"
+  },
+  "jaculatoria": {
+    "es": "Oh Jesús mío, perdona nuestros pecados, líbranos del fuego del infierno, lleva las almas todas al Cielo, especialmente las más necesitadas de tu misericordia.",
+    "en": "Oh my Jesus, forgive us our sins, save us from the fires of hell, lead all souls to Heaven, especially those most in need of your mercy."
   },
   "feast_day": {
     "es": "13 de mayo",

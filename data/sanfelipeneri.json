@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "sanfelipeneri",
   "name": {
     "es": "San Felipe Neri",
     "en": "Saint Philip Neri"
+  },
+  "jaculatoria": {
+    "es": "San Felipe Neri, apóstol alegre de Roma, que transformaste el mundo con amor y alegría, ruega por nosotros.",
+    "en": "Saint Philip Neri, joyful apostle of Rome, who transformed the world with love and joy, pray for us."
   },
   "feast_day": {
     "es": "26 de mayo",

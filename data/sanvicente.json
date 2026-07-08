@@ -1,7 +1,11 @@
-﻿{
+{
   "name": {
     "es": "San Vicente de Paúl",
     "en": "Saint Vincent de Paul"
+  },
+  "jaculatoria": {
+    "es": "San Vicente de Paúl, apóstol de la caridad, que viste en los pobres la imagen viva de Cristo, ruega por nosotros.",
+    "en": "Saint Vincent de Paul, apostle of charity, who saw in the poor the living image of Christ, pray for us."
   },
   "feast_day": {
     "es": "27 de septiembre",

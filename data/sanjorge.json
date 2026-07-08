@@ -4,6 +4,10 @@
     "es": "San Jorge",
     "en": "Saint George"
   },
+  "jaculatoria": {
+    "es": "San Jorge, mártir valiente que venciste al dragón por la fe en Cristo, ruega por nosotros.",
+    "en": "Saint George, brave martyr who conquered the dragon through faith in Christ, pray for us."
+  },
   "feast_day": {
     "es": "23 de abril",
     "en": "April 23"

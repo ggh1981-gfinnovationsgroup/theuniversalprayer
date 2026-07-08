@@ -1,7 +1,11 @@
-﻿{
+{
   "name": {
     "es": "Santa Dymphna",
     "en": "Saint Dymphna"
+  },
+  "jaculatoria": {
+    "es": "Santa Dymphna, patrona de los enfermos mentales y de los que sufren en el alma, ruega por nosotros.",
+    "en": "Saint Dymphna, patron of the mentally ill and of those who suffer in their souls, pray for us."
   },
   "feast_day": {
     "es": "15 de mayo",

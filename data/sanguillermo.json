@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "sanguillermo",
   "name": {
     "es": "San Guillermo de Vercelli",
     "en": "Saint William of Vercelli"
+  },
+  "jaculatoria": {
+    "es": "San Guillermo de Vercelli, ermitaño del Monte Vergine, guíanos a buscar a Dios en el silencio.",
+    "en": "Saint William of Vercelli, hermit of Monte Vergine, guide us to seek God in silence."
   },
   "feast_day": {
     "es": "25 de junio",

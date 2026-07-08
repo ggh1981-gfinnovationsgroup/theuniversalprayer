@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "perpetuosocorro",
   "name": {
     "es": "Virgen del Perpetuo Socorro",
     "en": "Our Lady of Perpetual Help"
+  },
+  "jaculatoria": {
+    "es": "Madre del Perpetuo Socorro, sé siempre mi socorro.",
+    "en": "Mother of Perpetual Help, be always my help."
   },
   "color": "#1a3a7a",
   "image": "/assets/images/perpetuosocorro.svg",

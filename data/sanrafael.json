@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "sanrafael",
   "name": {
     "es": "San Rafael Arcángel",
     "en": "Saint Raphael the Archangel"
+  },
+  "jaculatoria": {
+    "es": "San Rafael Arcángel, medicina de Dios, sana nuestros cuerpos y nuestras almas y guía nuestros pasos.",
+    "en": "Saint Raphael the Archangel, medicine of God, heal our bodies and souls and guide our steps."
   },
   "feast_day": {
     "es": "29 de septiembre",

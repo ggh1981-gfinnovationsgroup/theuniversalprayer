@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "schoenstatt",
   "name": {
     "es": "Virgen de Schoenstatt",
     "en": "Our Lady of Schoenstatt"
+  },
+  "jaculatoria": {
+    "es": "Virgen de Schoenstatt, Madre y Reina, condúcenos a tu Hijo y santifica nuestros hogares.",
+    "en": "Virgin of Schoenstatt, Mother and Queen, lead us to your Son and sanctify our homes."
   },
   "feast_day": {
     "es": "18 de octubre",

@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "santafabiola",
   "name": {
     "es": "Santa Fabiola de Roma",
     "en": "Saint Fabiola of Rome"
+  },
+  "jaculatoria": {
+    "es": "Santa Fabiola de Roma, fundadora del primer hospital de Occidente, intercede por los enfermos y por quienes los cuidan.",
+    "en": "Saint Fabiola of Rome, founder of the first hospital in the West, intercede for the sick and for all who care for them."
   },
   "feast_day": {
     "es": "27 de diciembre",

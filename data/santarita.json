@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "santarita",
   "name": {
     "es": "Santa Rita de Casia",
     "en": "Saint Rita of Cascia"
+  },
+  "jaculatoria": {
+    "es": "Santa Rita, abogada de los imposibles, lo que es imposible para los hombres es posible para Dios, ruega por nosotros.",
+    "en": "Saint Rita, advocate of the impossible, for what is impossible for men is possible for God, pray for us."
   },
   "feast_day": {
     "es": "22 de mayo",

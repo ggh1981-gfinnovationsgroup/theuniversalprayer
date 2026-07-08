@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "santamonica",
   "name": {
     "es": "Santa Mónica",
     "en": "Saint Monica"
+  },
+  "jaculatoria": {
+    "es": "Santa Mónica, que con lágrimas y oración conseguiste la conversión de tu hijo Agustín, intercede por los hijos alejados de Dios.",
+    "en": "Saint Monica, who through tears and prayer obtained the conversion of your son Augustine, intercede for children far from God."
   },
   "color": "#1a3a6a",
   "image": "/assets/images/santamonica.svg",

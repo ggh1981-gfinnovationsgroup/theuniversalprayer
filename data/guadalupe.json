@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "guadalupe",
   "name": {
     "es": "Virgen de Guadalupe",
     "en": "Our Lady of Guadalupe"
+  },
+  "jaculatoria": {
+    "es": "¿No estoy yo aquí, que soy tu madre? ¿No estás bajo mi sombra y resguardo?",
+    "en": "Am I not here, who am your mother? Are you not under my shadow and protection?"
   },
   "feast_day": {
     "es": "12 de diciembre",

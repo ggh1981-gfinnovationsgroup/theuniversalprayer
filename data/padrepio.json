@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "padrepio",
   "name": {
     "es": "Padre Pío",
     "en": "Padre Pio"
+  },
+  "jaculatoria": {
+    "es": "Padre Pío, reza, espera y no te agites; todo lo puede la oración.",
+    "en": "Padre Pio, pray, hope, and do not worry; prayer is all-powerful."
   },
   "feast_day": {
     "es": "23 de septiembre",

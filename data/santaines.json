@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "santaines",
   "name": {
     "es": "Santa Inés de Roma",
     "en": "Saint Agnes of Rome"
+  },
+  "jaculatoria": {
+    "es": "Santa Inés de Roma, virgen y mártir, que preferiste la muerte a perder tu consagración a Cristo, ruega por nosotros.",
+    "en": "Saint Agnes of Rome, virgin and martyr, who preferred death to losing your consecration to Christ, pray for us."
   },
   "color": "#8a1a5a",
   "image": "/assets/images/santaines.svg",

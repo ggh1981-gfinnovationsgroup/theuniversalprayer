@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "sanjose",
   "name": {
     "es": "San José",
     "en": "Saint Joseph"
+  },
+  "jaculatoria": {
+    "es": "San José, jefe de la Sagrada Familia y patrono de la Iglesia Universal, ruega por nosotros.",
+    "en": "Saint Joseph, head of the Holy Family and patron of the Universal Church, pray for us."
   },
   "feast_day": {
     "es": "19 de marzo (y 1 de mayo)",

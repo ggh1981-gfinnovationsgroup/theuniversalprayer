@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "nuestrasenoracarmen",
   "name": {
     "es": "Nuestra Señora del Carmen",
     "en": "Our Lady of Mount Carmel"
+  },
+  "jaculatoria": {
+    "es": "Bajo tu manto me acojo, Virgen del Carmen; en tus manos pongo mi alma.",
+    "en": "Under your mantle I take refuge, Virgin of Carmel; in your hands I place my soul."
   },
   "feast_day": {
     "es": "16 de julio",

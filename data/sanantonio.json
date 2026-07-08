@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "sanantonio",
   "name": {
     "es": "San Antonio de Padua",
     "en": "Saint Anthony of Padua"
+  },
+  "jaculatoria": {
+    "es": "Si buscas milagros, mira: muerte y error desterrados, miseria y demonio huidos, leprosos y enfermos sanos.",
+    "en": "If you seek miracles, look: death and error banished, misery and the demon fled, lepers and the sick made whole."
   },
   "feast_day": {
     "es": "13 de junio",

@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "sanlorenzo",
   "name": {
     "es": "San Lorenzo",
     "en": "Saint Lawrence"
+  },
+  "jaculatoria": {
+    "es": "San Lorenzo, diácono y mártir, que en el fuego ardiste de amor por Cristo, ruega por nosotros.",
+    "en": "Saint Lawrence, deacon and martyr, who burned with love for Christ in the fire, pray for us."
   },
   "color": "#8a4a00",
   "image": "/assets/images/sanlorenzo.svg",

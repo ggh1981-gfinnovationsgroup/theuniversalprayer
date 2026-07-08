@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "divinaprovidencia",
   "name": {
     "es": "Nuestra Señora de la Divina Providencia",
     "en": "Our Lady of Divine Providence"
+  },
+  "jaculatoria": {
+    "es": "Oh Señor, en tu Providencia lo tienes todo previsto; yo confío siempre en ti.",
+    "en": "O Lord, in your Providence you have foreseen all things; I always trust in you."
   },
   "feast_day": {
     "es": "19 de noviembre",

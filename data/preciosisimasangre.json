@@ -1,9 +1,13 @@
-﻿{
+{
     "id":  "preciosisimasangre",
     "name":  {
                  "es":  "Preciosísima Sangre de Cristo",
                  "en":  "Most Precious Blood of Christ"
              },
+  "jaculatoria": {
+    "es": "Por tu Preciosísima Sangre, Señor, ten misericordia de nosotros y del mundo entero.",
+    "en": "By your most Precious Blood, Lord, have mercy on us and on the whole world."
+  },
     "feast_day":  {
                       "es":  "1 de julio",
                       "en":  "July 1"

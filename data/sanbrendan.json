@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "sanbrendan",
   "name": {
     "es": "San Brendán Navegante",
     "en": "Saint Brendan the Navigator"
+  },
+  "jaculatoria": {
+    "es": "San Brendán Navegante, guíanos en los mares inciertos de la vida hacia el puerto del Cielo.",
+    "en": "Saint Brendan the Navigator, guide us through the uncertain seas of life to the harbor of Heaven."
   },
   "feast_day": {
     "es": "16 de mayo",

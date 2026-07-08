@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "sanjudas",
   "name": {
     "es": "San Judas Tadeo",
     "en": "Saint Jude Thaddaeus"
+  },
+  "jaculatoria": {
+    "es": "Oh glorioso apóstol San Judas Tadeo, siervo fiel y amigo de Jesús, intercede por mí en esta necesidad.",
+    "en": "O glorious apostle Saint Jude Thaddeus, faithful servant and friend of Jesus, intercede for me in this need."
   },
   "feast_day": {
     "es": "28 de octubre",

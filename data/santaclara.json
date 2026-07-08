@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "santaclara",
   "name": {
     "es": "Santa Clara de Asís",
     "en": "Saint Clare of Assisi"
+  },
+  "jaculatoria": {
+    "es": "Santa Clara de Asís, espejo de pobreza evangélica, que en la Eucaristía encontraste tu fuerza, ruega por nosotros.",
+    "en": "Saint Clare of Assisi, mirror of evangelical poverty, who found your strength in the Eucharist, pray for us."
   },
   "feast_day": {
     "es": "11 de agosto",

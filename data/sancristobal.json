@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "sancristobal",
   "name": {
     "es": "San Cristóbal",
     "en": "Saint Christopher"
+  },
+  "jaculatoria": {
+    "es": "San Cristóbal, que cargaste a Cristo sobre tus hombros, guarda nuestros caminos y presérvanos en el viaje.",
+    "en": "Saint Christopher, who carried Christ on your shoulders, guard our roads and keep us safe on every journey."
   },
   "color": "#1a5a3a",
   "image": "/assets/images/sancristobal.svg",

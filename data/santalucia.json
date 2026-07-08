@@ -1,8 +1,12 @@
-﻿{
+{
   "id": "santalucia",
   "name": {
     "es": "Santa Lucía de Siracusa",
     "en": "Saint Lucy of Syracuse"
+  },
+  "jaculatoria": {
+    "es": "Santa Lucía, que en las tinieblas diste testimonio de la luz de Cristo, ilumina nuestros ojos y nuestro corazón.",
+    "en": "Saint Lucy, who bore witness to the light of Christ in the darkness, illuminate our eyes and our hearts."
   },
   "color": "#8a1a3a",
   "image": "/assets/images/santalucia.svg",
