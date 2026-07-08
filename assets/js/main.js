@@ -5,7 +5,7 @@
 
 'use strict';
 
-const APP_VERSION = 'v2026.07.08-1';
+const APP_VERSION = 'v2026.07.08-2';
 
 // ── TRANSLATIONS (UI strings) ──────────────────────
 const i18n = {
@@ -527,7 +527,7 @@ function isHistoriasPage() {
 // ── FETCH INTERCESSOR DATA ─────────────────────────
 async function loadIntercessorData(id) {
   const basePath = (isIntercessorPage() || isHistoriasPage()) ? '../data/' : 'data/';
-  const DATA_VER = '20260708-1';
+  const DATA_VER = '20260708-2';
   const url = `${basePath}${id}.json?v=${DATA_VER}`;
   const resp = await fetch(url, { cache: 'no-store' });
   if (!resp.ok) throw new Error(`Not found: ${url}`);
