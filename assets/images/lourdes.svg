@@ -1,0 +1,130 @@
+<svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style>
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes glow {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 0.8; }
+      }
+      @keyframes shimmer {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(100%); }
+      }
+      .virgin-float { animation: float 4s ease-in-out infinite; }
+      .glow-ring { animation: glow 3s ease-in-out infinite; }
+      .water-shine { animation: shimmer 2s ease-in-out infinite; }
+    </style>
+    
+    <!-- Radial gradient for heavenly light -->
+    <radialGradient id="heavenLight" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#FFE57F;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#B39DDB;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Golden glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="300" fill="#1a0f2e"/>
+  
+  <!-- Heaven light glow -->
+  <circle cx="100" cy="40" r="120" fill="url(#heavenLight)"/>
+  
+  <!-- Starfield -->
+  <circle cx="30" cy="25" r="1" fill="#FFE57F" opacity="0.6"/>
+  <circle cx="170" cy="40" r="0.8" fill="#FFE57F" opacity="0.5"/>
+  <circle cx="50" cy="20" r="0.6" fill="#FFE57F" opacity="0.7"/>
+  <circle cx="160" cy="25" r="1" fill="#FFE57F" opacity="0.6"/>
+  <circle cx="25" cy="60" r="0.7" fill="#FFE57F" opacity="0.5"/>
+  <circle cx="180" cy="70" r="0.9" fill="#FFE57F" opacity="0.6"/>
+  
+  <!-- Grotto rocks -->
+  <path d="M 20 180 Q 25 160 35 155 L 40 200 Z" fill="#6b5b4e" opacity="0.8"/>
+  <path d="M 160 185 Q 165 165 175 160 L 170 205 Z" fill="#6b5b4e" opacity="0.8"/>
+  <path d="M 30 200 L 170 200 L 165 230 L 35 230 Z" fill="#7a6b5e"/>
+  <path d="M 35 230 L 165 230 L 160 260 L 40 260 Z" fill="#6b5b4e"/>
+  
+  <!-- Grotto shadow/depth -->
+  <ellipse cx="100" cy="210" rx="65" ry="25" fill="#000000" opacity="0.3"/>
+  
+  <!-- Water pool -->
+  <ellipse cx="100" cy="245" rx="55" ry="18" fill="#4da6ff" opacity="0.6"/>
+  <ellipse cx="100" cy="245" rx="55" ry="18" fill="url(#heavenLight)" opacity="0.3"/>
+  
+  <!-- Water shimmer/reflection -->
+  <g class="water-shine">
+    <rect x="45" y="240" width="110" height="10" fill="#FFE57F" opacity="0.15"/>
+  </g>
+  
+  <!-- Floating glow rings (representing heavenly light) -->
+  <circle cx="100" cy="100" r="45" fill="none" stroke="#FFE57F" stroke-width="1" opacity="0" class="glow-ring"/>
+  <circle cx="100" cy="100" r="55" fill="none" stroke="#B39DDB" stroke-width="0.5" opacity="0" class="glow-ring"/>
+  
+  <!-- Virgin Mary (floating) -->
+  <g class="virgin-float" filter="url(#glow)">
+    <!-- Halo -->
+    <circle cx="100" cy="85" r="28" fill="none" stroke="#FFE57F" stroke-width="2" opacity="0.7"/>
+    <circle cx="100" cy="85" r="30" fill="none" stroke="#FFE57F" stroke-width="1" opacity="0.4"/>
+    
+    <!-- Head -->
+    <circle cx="100" cy="85" r="15" fill="#E8C9A0"/>
+    
+    <!-- Hair -->
+    <path d="M 86 80 Q 85 85 86 92 Q 100 105 114 92 Q 115 85 114 80" fill="#8B6F47" opacity="0.8"/>
+    
+    <!-- Veil -->
+    <path d="M 86 80 Q 85 75 100 70 Q 115 75 114 80" fill="#F5F5F5" opacity="0.9"/>
+    <path d="M 90 85 Q 92 105 100 115 Q 108 105 110 85" fill="#F5F5F5" opacity="0.8"/>
+    
+    <!-- Face -->
+    <circle cx="97" cy="83" r="1.5" fill="#8B4513"/>
+    <circle cx="103" cy="83" r="1.5" fill="#8B4513"/>
+    <path d="M 100 87 Q 99 88 100 89" stroke="#8B4513" stroke-width="0.8" fill="none"/>
+    <path d="M 98 91 Q 100 92 102 91" stroke="#D4A574" stroke-width="0.6"/>
+    
+    <!-- Body/Robe -->
+    <path d="M 86 97 Q 80 120 85 150 Q 100 165 115 150 Q 120 120 114 97 Z" fill="#E8D4B8" opacity="0.95"/>
+    
+    <!-- Blue sash -->
+    <path d="M 95 105 Q 100 110 105 105" fill="#4169E1" opacity="0.7"/>
+    
+    <!-- Arms -->
+    <ellipse cx="82" cy="105" rx="6" ry="14" fill="#E8C9A0" opacity="0.9"/>
+    <ellipse cx="118" cy="105" rx="6" ry="14" fill="#E8C9A0" opacity="0.9"/>
+    
+    <!-- Hands -->
+    <circle cx="80" cy="120" r="4" fill="#E8C9A0"/>
+    <circle cx="120" cy="120" r="4" fill="#E8C9A0"/>
+    
+    <!-- Rosary in hands -->
+    <path d="M 80 120 Q 85 135 90 150" stroke="#C0C0C0" stroke-width="1.5" fill="none" opacity="0.8"/>
+    <circle cx="80" cy="120" r="1.5" fill="#FFD700"/>
+    <circle cx="82" cy="125" r="1.2" fill="#FFD700"/>
+    <circle cx="84" cy="130" r="1.2" fill="#FFD700"/>
+    <circle cx="86" cy="135" r="1.5" fill="#FFD700"/>
+  </g>
+  
+  <!-- Light rays from heaven -->
+  <g opacity="0.3">
+    <line x1="70" y1="0" x2="65" y2="60" stroke="#FFE57F" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="70" stroke="#FFE57F" stroke-width="1.5"/>
+    <line x1="130" y1="0" x2="135" y2="60" stroke="#FFE57F" stroke-width="1"/>
+    <line x1="50" y1="20" x2="55" y2="80" stroke="#B39DDB" stroke-width="0.8"/>
+    <line x1="150" y1="15" x2="145" y2="75" stroke="#B39DDB" stroke-width="0.8"/>
+  </g>
+  
+  <!-- Prayer text (optional, can be hidden) -->
+  <text x="100" y="285" font-family="serif" font-size="6" fill="#FFE57F" text-anchor="middle" opacity="0.6">
+    Our Lady of Lourdes
+  </text>
+</svg>

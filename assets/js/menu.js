@@ -61,6 +61,7 @@
       '<li><a class="side-nav-link side-nav-rosario"    href="/rosario/">'    + (L ? '\uD83D\uDCFF Rosario Interactivo'   : '\uD83D\uDCFF Interactive Rosary') + '</a></li>' +
       '<li><a class="side-nav-link side-nav-adoracion"  href="/adoracion/">'  + (L ? '\u271D Adoraci\u00f3n'             : '\u271D Adoration')          + '</a></li>' +
       '<li><a class="side-nav-link side-nav-espiritu"   href="/espiritu/">'   + (L ? '\uD83D\uDC4A Esp\u00edritu Santo'  : '\uD83D\uDC4A Holy Spirit')   + '</a></li>' +
+      '<li><a class="side-nav-link side-nav-lourdes"    href="/intercesor/?intercesor=lourdes">'    + (L ? '\uD83D\uDCA7 Virgen de Lourdes'  : '\uD83D\uDCA7 Virgin of Lourdes') + '</a></li>' +
       '<li><a class="side-nav-link side-nav-misericordia" href="/misericordia/">' + (L ? '\uD83D\uDD6F Perd\u00f3n y Misericordia' : '\uD83D\uDD6F Mercy & Repentance') + '</a></li>' +
       '<li><a class="side-nav-link side-nav-matrimonio" href="/matrimonio/">' + (L ? '\uD83D\uDC8D Matrimonio'           : '\uD83D\uDC8D Marriage')      + '</a></li>' +
       '<li><a class="side-nav-link side-nav-difuntos"   href="/difuntos/">'   + (L ? '\uD83D\uDD6F Difuntos'             : '\uD83D\uDD6F Departed')      + '</a></li>';
