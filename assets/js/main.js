@@ -5,7 +5,7 @@
 
 'use strict';
 
-const APP_VERSION = 'v2026.07.02-1';
+const APP_VERSION = 'v2026.07.08-1';
 
 // ── TRANSLATIONS (UI strings) ──────────────────────
 const i18n = {
@@ -127,6 +127,7 @@ const INTERCESSORS = [
   { id: 'sangabriel',        subdomain: 'sangabriel',        chaplet: true,  novena: true,  color: '#1a3a6b', short: { es: 'San Gabriel',      en: 'St. Gabriel'      }, name: { en: 'Saint Gabriel the Archangel',           es: 'San Gabriel Arcángel'                     }, specialty: { es: 'Mensajes divinos',            en: 'Divine messages'             } },
   { id: 'sanrafael',         subdomain: 'sanrafael',         chaplet: true,  novena: true,  color: '#1a5c3a', short: { es: 'San Rafael',       en: 'St. Raphael'      }, name: { en: 'Saint Raphael the Archangel',           es: 'San Rafael Arcángel'                      }, specialty: { es: 'Sanación y viajeros',         en: 'Healing & travelers'         } },
   { id: 'angelguarda',       subdomain: 'angelguarda',       chaplet: false, novena: true,  color: '#4a4a70', short: { es: 'Ángel Custodio',   en: 'Guardian Angel'   }, name: { en: 'Guardian Angel',                        es: 'Ángel de la Guarda'                       }, specialty: { es: 'Custodia personal',           en: 'Personal guardian'           } },
+  { id: 'lourdes',           subdomain: 'lourdes',           chaplet: false, novena: true,  color: '#2f5f86', short: { es: 'V. de Lourdes',   en: 'Our Lady Lourdes' }, name: { en: 'Our Lady of Lourdes',                  es: 'Nuestra Señora de Lourdes'                }, specialty: { es: 'Sanación, conversión y esperanza', en: 'Healing, conversion and hope' } },
   { id: 'divinaprovidencia', subdomain: 'divinaprovidencia', chaplet: false, novena: true,  color: '#7a5a00', short: { es: 'N.S. Providencia', en: 'Lady Providence'  }, name: { en: 'Our Lady of Divine Providence',         es: 'Nuestra Señora de la Divina Providencia'  }, specialty: { es: 'Necesidades cotidianas',      en: 'Daily needs & trust'         } },
   { id: 'santarita',         subdomain: 'santarita',         chaplet: true,  novena: true,  color: '#7a1520', short: { es: 'Santa Rita',       en: 'St. Rita'         }, name: { en: 'Saint Rita of Cascia',                  es: 'Santa Rita de Casia'                      }, specialty: { es: 'Causas imposibles',           en: 'Impossible causes'           } },
   { id: 'sanfelipeneri',     subdomain: 'sanfelipeneri',     chaplet: true,  novena: true,  color: '#8a4a10', short: { es: 'S. Felipe Neri',   en: 'St. Philip Neri'  }, name: { en: 'Saint Philip Neri',                     es: 'San Felipe Neri'                          }, specialty: { es: 'Alegría y conversión',        en: 'Joy & conversion'            } },
@@ -215,6 +216,7 @@ const KEYWORD_MAP = {
   sanjose:           'jose obrero trabajo empleo desempleo laboral carpintero artesano worker job unemployment work carpenter artisan padre esposo protector father husband protector casa hogar home familia family sustento provision dinero money estabilidad stability seguridad security refugio refuge patrono patrones patron workers artesanos oficios trades obreros laborers economia economy salario wage sustento livelihood casa propia own home hipoteca mortgage crisis laboral work crisis jubilacion retirement',
   sanmiguel:         'miguel arcangel proteccion espiritual spiritual protection mal evil demonio demon espiritu maligno evil spirit tentacion temptation miedo fear opresion espiritual spiritual oppression liberacion deliverance exorcismo exorcism guerra espiritual spiritual warfare batalla espiritual spiritual battle maldicion curse brujeria witchcraft magia negra black magic ataque espiritual spiritual attack pesadillas nightmares presencia oscura dark presence ansiedad espiritual spiritual anxiety lujuria soberbia envidia ira pereza avaricia gula pecados capitales tentaciones lust pride envy wrath sloth greed gluttony deadly sins temptation proteccion familia family protection ninos children seguridad policia military fuerzas armadas police armed forces',
   angelguarda:       'angel guardian proteccion protection ninos children viaje travel peligro danger miedo fear accidentes accidents seguridad safety custodia custody cuidado care guia guidance pesadillas nightmares suenos dreams perdido lost miedo nocturno nighttime fear ninos pequeños small children adolescentes teenagers estudiantes students soledad loneliness proteccion en carretera road protection ciclistas cyclists conductores drivers peatones pedestrians',
+  lourdes:           'lourdes nuestra senora our lady virgen maria mary bernadette gruta grotto agua water manantial spring sanacion healing salud health enfermedad illness enfermos sick milagros miracles conversion conversion penitencia penance misericordia mercy esperanza hope fe faith paz peace consuelo comfort sufrimiento suffering dolor pain ansiedad anxiety depresion depression trauma reconciliacion reconciliation alma soul cuerpo body mente mind inmaculada conception',
   sanrafael:         'rafael arcangel sanacion curacion healing enfermedad illness salud health medicina medicine hospital medicos doctors enfermeros nurses operacion surgery cirugia surgery recuperacion recovery cancer tumor oncologia oncology enfermedad grave serious illness terminal illness viaje travel Tobias Tobiah matrimonio marriage amor love encuentro de pareja finding a partner depresion depression mental health salud mental problemas digestivos digestive problems artritis arthritis diabetes enfermedades cronicas chronic diseases rehabilitacion rehabilitation fisioterapia physical therapy',
   padrepio:          'padre pio pio pietrelcina estigmas stigmata sanacion curacion healing confesion confession direction espiritual spiritual direction enfermedad illness cancer tumor oncologia oncology enfermedad grave serious illness milagros miracles bilocation bilocacion rosas roses olor fragancia perfume supernatural aroma culpa guilt conversion conversion sacerdote confesor confessor priest alma soul purgatorio purgatory intercesion intercession sanacion espiritual spiritual healing adiccion addiction alcoholismo alcoholism',
   santafabiola:      'fabiola roma divorciados divorced enfermos sick hospital enfermedad illness sanacion healing fundadora hospitales founder of hospitals viudas widows reconciliacion reconciliation segunda oportunidad second chance errores pasados past mistakes conversion comeback regreso a la fe returning to faith vida nueva new life pecado sin arrepentimiento repentance cancer tumor oncologia oncology enfermedad grave serious illness terminal illness cuidado de enfermos care of the sick',
@@ -371,6 +373,7 @@ const FEAST_DAYS = {
   '01-18': ['santagwendolina'],
   '01-21': ['santaines'],
   '02-03': ['sanblas'],
+  '02-11': ['lourdes'],
   '02-09': ['santaapolonia'],
   '03-01': ['sandavidgales'],
   '03-08': ['sanjuandedios'],
@@ -524,7 +527,7 @@ function isHistoriasPage() {
 // ── FETCH INTERCESSOR DATA ─────────────────────────
 async function loadIntercessorData(id) {
   const basePath = (isIntercessorPage() || isHistoriasPage()) ? '../data/' : 'data/';
-  const DATA_VER = '20260702-1';
+  const DATA_VER = '20260708-1';
   const url = `${basePath}${id}.json?v=${DATA_VER}`;
   const resp = await fetch(url, { cache: 'no-store' });
   if (!resp.ok) throw new Error(`Not found: ${url}`);
