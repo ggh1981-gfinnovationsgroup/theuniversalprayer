@@ -20,6 +20,16 @@
       <stop offset="0%" style="stop-color:#2d5f92;stop-opacity:0.22" />
       <stop offset="100%" style="stop-color:#2d5f92;stop-opacity:0" />
     </radialGradient>
+
+    <linearGradient id="lo-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" style="stop-color:#6aa6e8;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#12305e;stop-opacity:0.2" />
+    </linearGradient>
+
+    <linearGradient id="lo-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff6d0;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#2a4672;stop-opacity:0.2" />
+    </linearGradient>
     
     <radialGradient id="haloGrad" cx="50%" cy="35%">
       <stop offset="0%" style="stop-color:#ffd700;stop-opacity:0.5" />
@@ -45,6 +55,14 @@
 
   <rect width="400" height="600" fill="url(#lo-bg)" />
   <rect width="400" height="600" fill="url(#lo-atm)" />
+
+  <!-- Large Marian rays (background) -->
+  <g class="light-rays" opacity="0.46">
+    <polygon points="198,250 -25,610 115,610" fill="url(#lo-r1)" />
+    <polygon points="198,250 20,600 85,600" fill="#5d95d6" opacity="0.35" />
+    <polygon points="202,250 425,610 285,610" fill="url(#lo-r2)" />
+    <polygon points="202,250 375,600 315,600" fill="#f8eec4" opacity="0.3" />
+  </g>
 
   <!-- Decorative frame (consistent with other images) -->
   <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5" />
