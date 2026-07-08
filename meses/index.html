@@ -933,7 +933,7 @@
         'Propósito: Llevar octubre en espíritu de Cruz unida a Cristo Resucitado.'
       ];
 
-      const septiembre3 = {
+      const septiembrePlanEs = {
         note: 'Septiembre es el mes de la Virgen de Dolores. Contemplamos la Pasión, el sufrimiento redentor, la compasión de María y el valor del sacrificio unido a Cristo.',
         dayText: function (d) {
           const i = d - 1;
@@ -1022,6 +1022,75 @@
           const i = d - 1;
           const base = daily[i % daily.length] || daily[0];
           return base + ' [Día ' + d + ' de Diciembre]\n\nAcción: Hoy prepara tu corazón para Navidad.';
+        }
+      };
+
+      const octubreMethodEn = {
+        title: 'How to do it (brief pastoral October guide)',
+        steps: [
+          'Begin with the Sign of the Cross and invoke the Virgin of the Rosary.',
+          'Read briefly the Mystery of the day (joyful, luminous, sorrowful, or glorious).',
+          'Pray a complete Rosary or at least one decade with contemplative presence.',
+          'Complete with the Litany of the Virgin of the Rosary.',
+          'End by offering the Rosary for the peace of the world and your personal intentions.'
+        ],
+        prayer: 'Daily offering prayer:\n"Virgin of the Rosary, I offer you this Rosary. Each Hail Mary is a rose of love for you. Intercede for us before your Son. Amen."',
+        closing: 'Closing prayer:\n"Queen of the Rosary, hear our prayer. May the Rosary be a weapon of peace. May all pray it with faith. Amen."'
+      };
+
+      const octubrePlanEn = {
+        note: 'October is the month of the Holy Rosary. We contemplate the mysteries of faith through the Virgin Mary, complete evangelical meditation and apostolic weapon of the Church.',
+        dayText: function (d) {
+          const daily = ['October is the month of the Holy Rosary.', 'The Rosary is a chain of roses.', 'Joyful Mysteries: Incarnation, Visitation, Birth, Presentation, Finding.', 'Luminous Mysteries: Baptism, Wedding at Cana, Proclamation, Transfiguration, Eucharist.', 'Sorrowful Mysteries: Agony, Scourging, Crowning of thorns, Carrying the cross, Crucifixion.', 'Glorious Mysteries: Resurrection, Ascension, Pentecost, Assumption, Coronation of Mary.', 'Pray the complete Rosary in October.', 'The Rosary has saved nations and converted souls.', 'Each Our Father is a door to God\'s throne.', 'The beads are witnesses to your faithfulness.'];
+          const i = d - 1;
+          const base = daily[i % daily.length] || daily[0];
+          return base + ' [Day ' + d + ' of October]\n\nAction: Pray a Rosary today with presence.';
+        }
+      };
+
+      const noviembreMethodEn = {
+        title: 'How to do it (brief pastoral November guide)',
+        steps: [
+          'Begin with the Sign of the Cross and invoke the Saints and souls in purgatory.',
+          'Read briefly Rv 21 or another passage about eternal life.',
+          'Pray Our Father, Hail Mary, and Glory Be for an intention of the deceased.',
+          'Complete with Requiescat in Pace (May they rest in peace).',
+          'End meditating on your own death and spiritual preparation.'
+        ],
+        prayer: 'Daily offering prayer:\n"Eternal Father, by the merits of the Passion of Your Son, grant eternal rest to the deceased. By the intercession of Mary, bring peace to the souls in purgatory. Amen."',
+        closing: 'Closing prayer:\n"May all the faithful deceased rest in peace. May they reach eternal glory by Your mercy. Amen."'
+      };
+
+      const noviembrePlanEn = {
+        note: 'November is the month of the Faithful Departed and Saints. We pray for those who have passed, intercede for souls in purgatory, and celebrate the Communion of Saints.',
+        dayText: function (d) {
+          const daily = ['November is the month of the Faithful Departed.', 'Feast of All Saints.', 'Commemoration of All the Faithful Departed.', 'The living can help the dead.', 'Visit a cemetery and pray.', 'Purgatory exists and purifies.', 'Pray for forgotten souls.', 'Contemplate your own death.', 'Pray the Rosary for a deceased person.', 'Death was conquered by Christ.'];
+          const i = d - 1;
+          const base = daily[i % daily.length] || daily[0];
+          return base + ' [Day ' + d + ' of November]\n\nAction: Pray for a soul in purgatory today.';
+        }
+      };
+
+      const diciembreMethodEn = {
+        title: 'How to do it (brief pastoral December guide)',
+        steps: [
+          'Begin with the Sign of the Cross and invoke the Incarnate Word.',
+          'Read a prophetic passage from Isaiah or the Gospel of the Infancy.',
+          'Pray the O Antiphons in the final week of Advent.',
+          'Complete with Our Father, Hail Mary, and Glory Be for peace at Christmas.',
+          'End in silent contemplation: God comes in silence.'
+        ],
+        prayer: 'Daily offering prayer:\n"Incarnate Word, Jesus who comes to us, prepare my heart. Let it be for you a pure stable. Let your coming bring peace. Amen."',
+        closing: 'Closing prayer:\n"Emmanuel, God with us, you are the hope of the world. May Christmas be a true celebration of Your Incarnation. Amen."'
+      };
+
+      const diciembrePlanEn = {
+        note: 'December is Advent and Christmas. We await the Incarnation, the coming of Jesus. We prepare our hearts to receive Him in the Eucharist and in daily life.',
+        dayText: function (d) {
+          const daily = ['December begins Advent.', 'Advent means "coming".', 'Four Sundays of preparation.', 'First week: hope.', 'Second week: peace.', 'Third week: joy.', 'Fourth week: love.', 'In Advent commercialization accelerates.', 'Christmas is Incarnation.', 'Mary gives birth in poverty.'];
+          const i = d - 1;
+          const base = daily[i % daily.length] || daily[0];
+          return base + ' [Day ' + d + ' of December]\n\nAction: Today prepare your heart for Christmas.';
         }
       };
 
@@ -1192,23 +1261,23 @@
           plan = lang === 'es' ? julyPlanEs : julyPlanEn;
           method = lang === 'es' ? julyMethodEs : julyMethodEn;
         } else if (m.key === 'enero') {
-          plan = eneroPlanEs;
+          plan = lang === 'es' ? eneroPlanEs : eneroPlanEn;
           method = lang === 'es' ? eneroMethodEs : eneroMethodEn;
         } else if (m.key === 'agosto') {
           plan = agostoPlanEs;
           method = agostoMethodEs;
         } else if (m.key === 'septiembre') {
-          plan = septiembre3;
+          plan = septiembrePlanEs;
           method = septiembreMethodEs;
         } else if (m.key === 'octubre') {
-          plan = octubrePlanEs;
-          method = octubreMethodEs;
+          plan = lang === 'es' ? octubrePlanEs : octubrePlanEn;
+          method = lang === 'es' ? octubreMethodEs : octubreMethodEn;
         } else if (m.key === 'noviembre') {
-          plan = noviembrePlanEs;
-          method = noviembreMethodEs;
+          plan = lang === 'es' ? noviembrePlanEs : noviembrePlanEn;
+          method = lang === 'es' ? noviembreMethodEs : noviembreMethodEn;
         } else if (m.key === 'diciembre') {
-          plan = diciembrePlanEs;
-          method = diciembreMethodEs;
+          plan = lang === 'es' ? diciembrePlanEs : diciembrePlanEn;
+          method = lang === 'es' ? diciembreMethodEs : diciembreMethodEn;
         } else {
           plan = genericPlan[lang];
           method = genericMethod[lang];
