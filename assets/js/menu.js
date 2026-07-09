@@ -64,6 +64,7 @@
       '<li><a class="side-nav-link side-nav-misericordia" href="/misericordia/">' + (L ? '\uD83D\uDD6F Perd\u00f3n y Misericordia' : '\uD83D\uDD6F Mercy & Repentance') + '</a></li>' +
       '<li><a class="side-nav-link side-nav-matrimonio" href="/matrimonio/">' + (L ? '\uD83D\uDC8D Matrimonio'           : '\uD83D\uDC8D Marriage')      + '</a></li>' +
       '<li><a class="side-nav-link side-nav-difuntos"   href="/difuntos/">'   + (L ? '\uD83D\uDD6F Difuntos'             : '\uD83D\uDD6F Departed')      + '</a></li>' +
+      '<li><a class="side-nav-link side-nav-llamados"   href="/llamados/">'   + (L ? '\uD83C\uDF1F Altar de Llamados'    : '\uD83C\uDF1F Call Altar')    + '</a></li>' +
       '<li><a class="side-nav-link side-nav-enemigos"   href="/enemigos/">'   + (L ? '\uD83E\uDD0D Bendecir enemigos'    : '\uD83E\uDD0D Bless enemies') + '</a></li>';
 
     // Update panel header title
