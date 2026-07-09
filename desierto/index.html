@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Silencio y Escucha | The Universal Prayer</title>
+  <meta name="description" content="Retiro de dos días en silencio y escucha: 'Habla, Señor, que tu siervo escucha', centrado en la Eucaristía y la Preciosísima Sangre de Jesús." />
+  <meta name="theme-color" content="#c9a84c" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Silencio y Escucha" />
+  <meta property="og:description" content="Guía práctica de dos días para entrar en silencio interior, adorar en la Eucaristía y pedir purificación en la Sangre de Cristo." />
+  <meta property="og:url" content="https://www.theuniversalprayer.com/desierto/" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    .des-page {
+      min-height: 100dvh;
+      background:
+        radial-gradient(800px 480px at 50% -8%, rgba(201,168,76,0.16), transparent 65%),
+        radial-gradient(520px 380px at 18% 92%, rgba(143,125,216,0.12), transparent 68%),
+        radial-gradient(520px 380px at 82% 92%, rgba(154,35,57,0.14), transparent 68%),
+        linear-gradient(180deg, #090f1f 0%, #0a1226 52%, #090e1b 100%);
+    }
+
+    .des-wrap {
+      width: min(980px, 100% - 1.5rem);
+      margin: 0 auto;
+      padding: 1.3rem 0 4rem;
+    }
+
+    .des-hero {
+      border: 1px solid rgba(201,168,76,0.25);
+      border-radius: 20px;
+      padding: 1.2rem 1rem 1.15rem;
+      background: linear-gradient(180deg, rgba(201,168,76,0.1), rgba(20,26,45,0.88));
+      box-shadow: 0 20px 38px rgba(0,0,0,0.34);
+      animation: des-enter .7s ease both;
+    }
+
+    @keyframes des-enter {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .des-back {
+      display: inline-block;
+      text-decoration: none;
+      color: rgba(255,255,255,0.74);
+      font-size: 0.84rem;
+      margin-bottom: 0.72rem;
+    }
+
+    .des-badge {
+      display: inline-block;
+      border: 1px solid rgba(201,168,76,0.34);
+      border-radius: 999px;
+      color: var(--gold);
+      background: rgba(201,168,76,0.08);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 0.3rem 0.8rem;
+      margin-bottom: 0.72rem;
+    }
+
+    .des-title {
+      margin: 0;
+      color: var(--gold-light);
+      font-family: 'Cardo', var(--font-serif);
+      font-size: clamp(1.9rem, 5vw, 3rem);
+      line-height: 1.08;
+    }
+
+    .des-sub {
+      margin: 0.68rem 0 0;
+      color: rgba(255,255,255,0.86);
+      font-family: 'Manrope', var(--font-sans);
+      line-height: 1.76;
+      font-size: 0.94rem;
+      max-width: 840px;
+    }
+
+    .des-quote {
+      margin-top: 0.75rem;
+      border-left: 3px solid rgba(201,168,76,0.5);
+      background: rgba(201,168,76,0.08);
+      border-radius: 0 10px 10px 0;
+      padding: 0.74rem 0.84rem;
+      font-family: 'Cardo', var(--font-serif);
+      color: rgba(255,255,255,0.88);
+      line-height: 1.7;
+      font-style: italic;
+      white-space: pre-line;
+    }
+
+    .des-quote cite {
+      display: block;
+      margin-top: 0.35rem;
+      color: var(--gold);
+      font-style: normal;
+      font-size: 0.76rem;
+      opacity: 0.85;
+    }
+
+    .des-grid {
+      margin-top: 0.95rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.9rem;
+    }
+
+    .des-card {
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 16px;
+      background: rgba(13, 20, 38, 0.82);
+      padding: 0.95rem;
+    }
+
+    .des-card h2 {
+      margin: 0 0 0.5rem;
+      color: var(--gold-light);
+      font-family: 'Cardo', var(--font-serif);
+      font-size: 1.2rem;
+    }
+
+    .des-card p,
+    .des-card li {
+      margin: 0;
+      color: rgba(255,255,255,0.84);
+      font-family: 'Manrope', var(--font-sans);
+      font-size: 0.88rem;
+      line-height: 1.72;
+    }
+
+    .des-list {
+      margin: 0;
+      padding-left: 1rem;
+      display: grid;
+      gap: 0.45rem;
+    }
+
+    .des-prayer {
+      margin-top: 0.8rem;
+      white-space: pre-line;
+      background: rgba(201,168,76,0.08);
+      border: 1px solid rgba(201,168,76,0.24);
+      border-radius: 12px;
+      padding: 0.95rem 0.9rem;
+      color: rgba(255,255,255,0.9);
+      font-family: 'Cardo', var(--font-serif);
+      font-size: 0.94rem;
+      line-height: 1.85;
+    }
+
+    .des-icons {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.7rem;
+      margin-top: 0.85rem;
+    }
+
+    .des-icon-card {
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.03);
+      padding: 0.65rem;
+      text-align: center;
+    }
+
+    .des-icon-card img {
+      width: 100%;
+      max-width: 150px;
+      aspect-ratio: 2 / 3;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 0.45rem;
+      background: rgba(7,10,20,0.56);
+      border-radius: 10px;
+    }
+
+    .des-icon-card h3 {
+      margin: 0;
+      color: var(--gold-light);
+      font-family: 'Cardo', var(--font-serif);
+      font-size: 0.95rem;
+    }
+
+    .des-note {
+      margin-top: 0.75rem;
+      border: 1px solid rgba(127,192,226,0.28);
+      background: rgba(127,192,226,0.1);
+      border-radius: 10px;
+      padding: 0.72rem 0.82rem;
+      color: rgba(255,255,255,0.86);
+      font-size: 0.84rem;
+      line-height: 1.66;
+      font-family: 'Manrope', var(--font-sans);
+    }
+
+    .des-footer {
+      margin-top: 1rem;
+      text-align: center;
+      color: rgba(255,255,255,0.66);
+      font-size: 0.8rem;
+      font-family: 'Manrope', var(--font-sans);
+    }
+
+    @media (max-width: 860px) {
+      .des-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 560px) {
+      .des-wrap { width: min(980px, 100% - 1rem); }
+      .des-icons { grid-template-columns: 1fr; }
+      .des-hero { border-radius: 16px; }
+    }
+  </style>
+</head>
+<body class="des-page">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link">
+        <span class="cross">✝</span>
+        <span class="logo-text">The Universal Prayer</span>
+      </a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span id="langLabel">EN</span>
+      </button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="des-wrap">
+    <section class="des-hero">
+      <a class="des-back" href="/" data-lang="es">← Inicio</a>
+      <a class="des-back" href="/" data-lang="en" style="display:none">← Home</a>
+
+      <div class="des-badge" data-lang="es">Retiro de 2 días · Silencio y escucha</div>
+      <div class="des-badge" data-lang="en" style="display:none">2-day retreat · Silence and listening</div>
+
+      <h1 class="des-title" data-lang="es">Habla, Señor, que tu siervo escucha</h1>
+      <h1 class="des-title" data-lang="en" style="display:none">Speak, Lord, for your servant is listening</h1>
+
+      <p class="des-sub" data-lang="es">Antes los monjes iban al desierto para callar el ruido y escuchar a Dios. Este camino traduce ese espíritu para hoy: dos días de silencio interior, adoración eucarística y cobertura en la Preciosísima Sangre de Jesús.</p>
+      <p class="des-sub" data-lang="en" style="display:none">In former times, monks went to the desert to silence noise and listen to God. This path brings that spirit to today: two days of inner silence, Eucharistic adoration, and covering in the Precious Blood of Jesus.</p>
+
+      <blockquote class="des-quote" data-lang="es">Habla, Señor, que tu siervo escucha.
+<cite>— 1 Samuel 3, 10</cite></blockquote>
+      <blockquote class="des-quote" data-lang="en" style="display:none">Speak, Lord, for your servant is listening.
+<cite>— 1 Samuel 3:10</cite></blockquote>
+    </section>
+
+    <section class="des-grid">
+      <article class="des-card">
+        <h2 data-lang="es">Día 1: Callar para adorar</h2>
+        <h2 data-lang="en" style="display:none">Day 1: Be still to adore</h2>
+
+        <ol class="des-list" data-lang="es">
+          <li><strong>60 min de desierto digital:</strong> sin redes, sin noticias, sin música de fondo.</li>
+          <li><strong>15 min ante la Eucaristía</strong> (capilla o en casa, mirando al Sagrario en el corazón).</li>
+          <li><strong>Oración única:</strong> repetir despacio “Jesús Eucaristía, enséñame a escucharte”.</li>
+          <li><strong>Escritura breve:</strong> anota una palabra, un llamado o una corrección que recibas.</li>
+        </ol>
+
+        <ol class="des-list" data-lang="en" style="display:none">
+          <li><strong>60 min digital desert:</strong> no social media, no news, no background noise.</li>
+          <li><strong>15 min before the Eucharist</strong> (chapel or at home with tabernacle focus in your heart).</li>
+          <li><strong>Single prayer:</strong> repeat slowly “Jesus in the Eucharist, teach me to listen.”</li>
+          <li><strong>Short writing:</strong> note one word, one call, or one correction you receive.</li>
+        </ol>
+
+        <blockquote class="des-quote" data-lang="es">Quédense conmigo y velen.
+<cite>— Mateo 26, 38</cite></blockquote>
+        <blockquote class="des-quote" data-lang="en" style="display:none">Remain here and keep watch with me.
+<cite>— Matthew 26:38</cite></blockquote>
+      </article>
+
+      <article class="des-card">
+        <h2 data-lang="es">Día 2: Escuchar y obedecer</h2>
+        <h2 data-lang="en" style="display:none">Day 2: Listen and obey</h2>
+
+        <ol class="des-list" data-lang="es">
+          <li><strong>Al amanecer:</strong> “Señor, hoy sí quiero obedecerte”.</li>
+          <li><strong>Lectio breve:</strong> Juan 6, 51-58 (Pan de Vida) en silencio reverente.</li>
+          <li><strong>Preciosísima Sangre:</strong> pide purificación de memoria, afectos y decisiones.</li>
+          <li><strong>Acto concreto:</strong> una obediencia práctica hoy (perdonar, reparar, cortar pecado).</li>
+        </ol>
+
+        <ol class="des-list" data-lang="en" style="display:none">
+          <li><strong>At dawn:</strong> “Lord, today I truly want to obey You.”</li>
+          <li><strong>Short lectio:</strong> John 6:51-58 (Bread of Life) in reverent silence.</li>
+          <li><strong>Precious Blood:</strong> ask purification of memory, affections, and decisions.</li>
+          <li><strong>Concrete act:</strong> one practical obedience today (forgive, repair, cut sin).</li>
+        </ol>
+
+        <blockquote class="des-quote" data-lang="es">Mi carne es verdadera comida y mi sangre es verdadera bebida.
+<cite>— Juan 6, 55</cite></blockquote>
+        <blockquote class="des-quote" data-lang="en" style="display:none">My flesh is true food and my blood is true drink.
+<cite>— John 6:55</cite></blockquote>
+      </article>
+    </section>
+
+    <section class="des-card" style="margin-top:0.95rem;">
+      <h2 data-lang="es">Oración central: Eucaristía y Preciosísima Sangre</h2>
+      <h2 data-lang="en" style="display:none">Central prayer: Eucharist and Precious Blood</h2>
+
+      <div class="des-prayer" data-lang="es">Señor Jesús Eucaristía,
+quiero salir del ruido y entrar en tu silencio.
+Habla, Señor, que tu siervo escucha.
+
+Lava mi mente, mi memoria y mis decisiones
+con tu Preciosísima Sangre.
+Corta toda voz extraña,
+toda confusión y toda dureza del corazón.
+
+Dame oído de discípulo,
+corazón humilde
+y obediencia concreta.
+
+Que en estos dos días
+yo no busque emociones,
+sino tu verdad.
+No busque control,
+sino tu voluntad.
+No busque huir,
+sino permanecer contigo.
+
+Jesús Sacramentado,
+quédate en mí.
+Preciosísima Sangre de Cristo,
+cúbreme, purifícame y guárdame.
+Amén.</div>
+
+      <div class="des-prayer" data-lang="en" style="display:none">Lord Jesus in the Eucharist,
+I want to leave noise behind and enter Your silence.
+Speak, Lord, for Your servant is listening.
+
+Wash my mind, my memory, and my decisions
+with Your Precious Blood.
+Cut off every strange voice,
+every confusion, and every hardness of heart.
+
+Grant me a disciple's ear,
+a humble heart,
+and concrete obedience.
+
+In these two days,
+let me not seek emotions,
+but Your truth.
+Let me not seek control,
+but Your will.
+Let me not seek escape,
+but abiding with You.
+
+Jesus in the Blessed Sacrament,
+remain in me.
+Precious Blood of Christ,
+cover me, purify me, and guard me.
+Amen.</div>
+
+      <div class="des-icons">
+        <article class="des-icon-card">
+          <img src="/assets/images/adoracion-hero.svg" alt="Adoración Eucarística" />
+          <h3 data-lang="es">Adoración Eucarística</h3>
+          <h3 data-lang="en" style="display:none">Eucharistic Adoration</h3>
+        </article>
+        <article class="des-icon-card">
+          <img src="/assets/images/preciosisimasangre.svg" alt="Preciosísima Sangre de Jesús" />
+          <h3 data-lang="es">Preciosísima Sangre</h3>
+          <h3 data-lang="en" style="display:none">Precious Blood</h3>
+        </article>
+      </div>
+
+      <p class="des-note" data-lang="es">Nota práctica: si no puedes ir a una capilla, hazlo en casa en postura de reverencia, con Biblia abierta, celular en modo avión y una vela encendida. Lo clave es el silencio real y la obediencia posterior.</p>
+      <p class="des-note" data-lang="en" style="display:none">Practical note: if you cannot go to a chapel, do it at home in a reverent posture, with an open Bible, phone on airplane mode, and a candle lit. The key is real silence and the obedience that follows.</p>
+    </section>
+
+    <p class="des-footer" data-lang="es">Si el silencio te lleva a más paz, verdad, confesión y caridad concreta, vas por camino bueno.</p>
+    <p class="des-footer" data-lang="en" style="display:none">If silence leads you to deeper peace, truth, confession, and concrete charity, you are on a good path.</p>
+  </main>
+
+  <script>
+  (function () {
+    'use strict';
+
+    var LANG_KEY = 'tup_lang';
+    var lang = localStorage.getItem(LANG_KEY) || 'es';
+
+    function applyLang(nextLang) {
+      lang = nextLang;
+      localStorage.setItem(LANG_KEY, lang);
+      document.documentElement.lang = lang === 'en' ? 'en' : 'es';
+      var label = document.getElementById('langLabel');
+      if (label) label.textContent = lang === 'en' ? 'ES' : 'EN';
+      document.querySelectorAll('[data-lang]').forEach(function (node) {
+        node.style.display = node.getAttribute('data-lang') === lang ? '' : 'none';
+      });
+      window.dispatchEvent(new CustomEvent('tup:langchange', { detail: lang }));
+    }
+
+    document.getElementById('langToggle').addEventListener('click', function () {
+      applyLang(lang === 'es' ? 'en' : 'es');
+    });
+
+    applyLang(lang);
+  })();
+  </script>
+  <script src="../assets/js/menu.js"></script>
+</body>
+</html>

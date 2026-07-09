@@ -3,7 +3,7 @@
    Cache-first strategy: works fully offline after first load
    ===================================================== */
 
-const CACHE = 'tup-v37';
+const CACHE = 'tup-v38';
 
 // All files to pre-cache on install
 const PRECACHE_URLS = [
@@ -13,6 +13,8 @@ const PRECACHE_URLS = [
   '/intercesor/index.html',
   '/misericordia/',
   '/misericordia/index.html',
+  '/desierto/',
+  '/desierto/index.html',
   '/llamados/',
   '/llamados/index.html',
   '/enemigos/',
