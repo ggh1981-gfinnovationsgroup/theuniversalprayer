@@ -242,9 +242,47 @@
 
     @media (max-width: 560px) {
       .call-wrap { width: min(1080px, 100% - 1rem); }
-      .call-hero { border-radius: 16px; padding: 1rem 0.9rem; }
-      .call-grid { grid-template-columns: 1fr; }
+      .call-page {
+        background: linear-gradient(180deg, #0b1328 0%, #0a1124 100%);
+      }
+      .call-hero {
+        border-radius: 16px;
+        padding: 0.9rem 0.8rem;
+        box-shadow: none;
+        animation: none;
+        background: rgba(8, 14, 30, 0.92);
+      }
+      .call-grid {
+        grid-template-columns: 1fr;
+        gap: 0.56rem;
+      }
+      .call-card {
+        grid-template-columns: 76px minmax(0, 1fr);
+        gap: 0.35rem 0.55rem;
+        align-items: start;
+        padding: 0.52rem;
+      }
+      .call-card img {
+        width: 76px;
+        height: 102px;
+        aspect-ratio: auto;
+        margin-bottom: 0;
+        grid-row: 1 / span 2;
+        border-radius: 10px;
+      }
+      .call-card h2,
+      .call-card p {
+        grid-column: 2;
+      }
       .call-panel { padding: 0.9rem; }
+      .call-panel,
+      .call-card,
+      .call-salve,
+      .call-scripture {
+        box-shadow: none;
+      }
+      .call-salve,
+      .call-scripture { font-size: 0.88rem; }
     }
   </style>
 </head>
