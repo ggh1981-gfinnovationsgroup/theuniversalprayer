@@ -1186,6 +1186,8 @@
     let idx = 0;
     let rosaryTtsState = 'stopped';
     let rosaryTtsMode = 'single';
+    let rosaryTtsQueue = [];
+    let rosaryTtsQueuePos = 0;
 
     const els = {
       title: document.getElementById('title'),
@@ -1249,11 +1251,104 @@
       return getPrayerTextForBead(current);
     }
 
-    function getFullRosaryTtsText() {
+    function getFullRosaryTtsSegments() {
       return beads
         .map((bead) => getPrayerTextForBead(bead))
-        .filter(Boolean)
-        .join('\n\n');
+        .filter((txt) => txt && txt.trim());
+    }
+
+    function splitForTts(text, maxLen = 1100) {
+      const source = String(text || '').trim();
+      if (!source) return [];
+      if (source.length <= maxLen) return [source];
+
+      const parts = [];
+      const paragraphs = source.split(/\n\n+/);
+      let current = '';
+
+      for (const p of paragraphs) {
+        const para = p.trim();
+        if (!para) continue;
+
+        if (!current) {
+          current = para;
+          continue;
+        }
+
+        if ((current.length + 2 + para.length) <= maxLen) {
+          current += '\n\n' + para;
+        } else {
+          parts.push(current);
+          if (para.length <= maxLen) {
+            current = para;
+          } else {
+            const sentences = para.split(/(?<=[.!?])\s+/);
+            let sentenceChunk = '';
+            for (const s of sentences) {
+              if (!sentenceChunk) {
+                sentenceChunk = s;
+              } else if ((sentenceChunk.length + 1 + s.length) <= maxLen) {
+                sentenceChunk += ' ' + s;
+              } else {
+                parts.push(sentenceChunk);
+                sentenceChunk = s;
+              }
+            }
+            current = sentenceChunk;
+          }
+        }
+      }
+
+      if (current) parts.push(current);
+      return parts;
+    }
+
+    function rosaryTtsResetQueue() {
+      rosaryTtsQueue = [];
+      rosaryTtsQueuePos = 0;
+    }
+
+    function rosaryTtsSpeakQueueNext(mode) {
+      if (!('speechSynthesis' in window)) return;
+      if (rosaryTtsQueuePos >= rosaryTtsQueue.length) {
+        rosaryTtsState = 'stopped';
+        rosaryTtsMode = 'single';
+        rosaryTtsResetQueue();
+        updateTtsButtons();
+        return;
+      }
+
+      const chunk = rosaryTtsQueue[rosaryTtsQueuePos++];
+      const utt = new SpeechSynthesisUtterance(chunk);
+      utt.lang = lang === 'es' ? 'es-MX' : 'en-US';
+      utt.rate = 0.88;
+      utt.pitch = 1.04;
+      const voice = pickVoice(lang);
+      if (voice) utt.voice = voice;
+
+      utt.onend = () => {
+        if (rosaryTtsState === 'playing' && rosaryTtsMode === mode) {
+          rosaryTtsSpeakQueueNext(mode);
+        }
+      };
+      utt.onerror = () => {
+        rosaryTtsState = 'stopped';
+        rosaryTtsMode = 'single';
+        rosaryTtsResetQueue();
+        updateTtsButtons();
+      };
+      utt.onpause = () => {
+        rosaryTtsState = 'paused';
+        updateTtsButtons();
+      };
+      utt.onresume = () => {
+        rosaryTtsState = 'playing';
+        updateTtsButtons();
+      };
+
+      window.speechSynthesis.speak(utt);
+      rosaryTtsState = 'playing';
+      updateTtsButtons();
     }
 
     function pickVoice(targetLang) {
@@ -1292,31 +1387,18 @@
     function rosaryTtsSpeak(text = '', mode = 'single') {
       if (!('speechSynthesis' in window)) return;
       window.speechSynthesis.cancel();
-      const utteranceText = text || getRosaryTtsText();
-      if (!utteranceText || !utteranceText.trim()) return;
-      const utt = new SpeechSynthesisUtterance(utteranceText);
-      utt.lang = lang === 'es' ? 'es-MX' : 'en-US';
-      utt.rate = 0.88;
-      utt.pitch = 1.04;
-      const voice = pickVoice(lang);
-      if (voice) utt.voice = voice;
-      utt.onend = utt.onerror = () => {
-        rosaryTtsState = 'stopped';
-        rosaryTtsMode = 'single';
-        updateTtsButtons();
-      };
-      utt.onpause = () => {
-        rosaryTtsState = 'paused';
-        updateTtsButtons();
-      };
-      utt.onresume = () => {
-        rosaryTtsState = 'playing';
-        updateTtsButtons();
-      };
-      window.speechSynthesis.speak(utt);
-      rosaryTtsState = 'playing';
+      rosaryTtsResetQueue();
+
+      const payload = text || getRosaryTtsText();
+      const chunks = Array.isArray(payload)
+        ? payload.flatMap((item) => splitForTts(item))
+        : splitForTts(payload);
+      if (!chunks.length) return;
+
+      rosaryTtsQueue = chunks;
+      rosaryTtsQueuePos = 0;
       rosaryTtsMode = mode;
-      updateTtsButtons();
+      rosaryTtsSpeakQueueNext(mode);
     }
 
     function rosaryTtsSpeakCurrent() {
@@ -1326,7 +1408,7 @@
     function rosaryTtsSpeakFull() {
       idx = 0;
       render();
-      rosaryTtsSpeak(getFullRosaryTtsText(), 'full');
+      rosaryTtsSpeak(getFullRosaryTtsSegments(), 'full');
     }
 
     function rosaryTtsPauseToggle() {
@@ -1346,6 +1428,7 @@
       window.speechSynthesis.cancel();
       rosaryTtsState = 'stopped';
       rosaryTtsMode = 'single';
+      rosaryTtsResetQueue();
       updateTtsButtons();
     }
 
