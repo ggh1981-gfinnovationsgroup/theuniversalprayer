@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-label="Schoenstatt simbolico">
+  <rect width="400" height="600" fill="#07101f"/>
+  <circle cx="200" cy="150" r="62" fill="none" stroke="#e8c97a" stroke-width="3" opacity="0.75"/>
+  <path d="M150 210 L200 166 L250 210 L250 398 L150 398 Z" fill="#f2f2f2"/>
+  <path d="M176 164 L200 140 L224 164" fill="none" stroke="#1a3070" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="191" y="114" width="18" height="6" rx="3" fill="#e8c97a"/>
+  <line x1="186" y1="122" x2="214" y2="122" stroke="#e8c97a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M170 252 Q200 236 230 252" fill="none" stroke="#c89070" stroke-width="5" stroke-linecap="round"/>
+  <path d="M158 404 Q200 382 242 404 Q200 432 158 404Z" fill="#1a3070" opacity="0.2"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#c9a84c" letter-spacing="2">SCHOENSTATT</text>
+</svg>

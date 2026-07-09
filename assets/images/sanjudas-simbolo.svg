@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-label="San Judas Tadeo symbolico">
+  <rect width="400" height="600" fill="#081225"/>
+  <circle cx="200" cy="150" r="64" fill="none" stroke="#e8c97a" stroke-width="3" opacity="0.8"/>
+  <circle cx="200" cy="150" r="42" fill="none" stroke="#28a860" stroke-width="2" opacity="0.42"/>
+  <path d="M146 196 Q200 168 254 196 L276 398 Q200 426 124 398 Z" fill="#1f7a42"/>
+  <path d="M160 188 L200 240 L240 188" fill="none" stroke="#1a3a8a" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="200" cy="272" r="16" fill="#c9a84c"/>
+  <rect x="196" y="304" width="8" height="108" rx="4" fill="#6f4e24"/>
+  <path d="M179 106 Q183 78 200 74 Q217 78 221 106 Q214 93 200 92 Q186 93 179 106Z" fill="#261106"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#c9a84c" letter-spacing="2">SAN JUDAS TADEO</text>
+</svg>
