@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Conversion">
+  <defs>
+    <radialGradient id="ec-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#3a224f" stop-opacity="0.96"/>
+      <stop offset="100%" stop-color="#12081d" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="ec-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff1b8"/>
+      <stop offset="100%" stop-color="#c9a84c"/>
+    </linearGradient>
+    <linearGradient id="ec-flame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff1aa"/>
+      <stop offset="45%" stop-color="#ff9e42"/>
+      <stop offset="100%" stop-color="#d43a1f"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="18" fill="url(#ec-bg)"/>
+  <circle cx="50" cy="48" r="19" fill="rgba(255,255,255,0.04)"/>
+  <path d="M50 18 C46 25, 42 29, 42 37 C42 46, 46 52, 50 57 C54 52, 58 46, 58 37 C58 29, 54 25, 50 18 Z" fill="url(#ec-flame)" opacity="0.95"/>
+  <path d="M50 30 C48 34, 46 36, 46 41 C46 46, 48 49, 50 52 C52 49, 54 46, 54 41 C54 36, 52 34, 50 30 Z" fill="#fff4d1" opacity="0.8"/>
+  <path d="M31 59 A21 21 0 1 0 69 59" fill="none" stroke="url(#ec-gold)" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M66 54 L71 59 L64 62" fill="none" stroke="url(#ec-gold)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M38 69 C42 73, 46 75, 50 75 C54 75, 58 73, 62 69" fill="none" stroke="#8fd3ff" stroke-width="3.6" stroke-linecap="round" opacity="0.78"/>
+</svg>

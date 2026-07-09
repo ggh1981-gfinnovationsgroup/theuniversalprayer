@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bendecir a Nuestros Enemigos | The Universal Prayer</title>
+  <meta name="description" content="Guía católica para orar por quienes nos hieren: bendecir a los enemigos, pedir conversión, poner límites sanos y conservar el corazón en gracia." />
+  <meta name="theme-color" content="#c9a84c" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bendecir a Nuestros Enemigos" />
+  <meta property="og:description" content="Una guía de oración para bendecir a quienes nos han herido, sin justificar el mal y sin renunciar a la verdad." />
+  <meta property="og:url" content="https://www.theuniversalprayer.com/enemigos/" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    .ene-hero {
+      text-align: center;
+      padding: 5rem 1.4rem 3rem;
+      background:
+        radial-gradient(circle at 20% 0%, rgba(201,168,76,0.15), transparent 44%),
+        radial-gradient(circle at 80% 12%, rgba(255,255,255,0.08), transparent 42%);
+    }
+    .ene-icon {
+      width: 118px;
+      height: 118px;
+      display: block;
+      margin: 0 auto 1.25rem;
+      filter: drop-shadow(0 0 16px rgba(201,168,76,0.3));
+    }
+    .ene-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(201,168,76,0.32);
+      border-radius: 999px;
+      padding: 0.3rem 0.9rem;
+      margin-bottom: 1rem;
+    }
+    .ene-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 6vw, 3rem);
+      line-height: 1.12;
+      color: var(--gold-light);
+      margin: 0 0 0.7rem;
+    }
+    .ene-subtitle {
+      max-width: 760px;
+      margin: 0 auto;
+      color: var(--white-dim);
+      font-size: 0.96rem;
+      line-height: 1.75;
+    }
+    .ene-content {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 1.1rem 4rem;
+    }
+    .ene-symbol-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.9rem;
+      margin: 0 auto 1rem;
+    }
+    .ene-symbol-card {
+      background: linear-gradient(180deg, rgba(201,168,76,0.08), rgba(21,26,44,0.94));
+      border: 1px solid rgba(201,168,76,0.18);
+      border-radius: 14px;
+      padding: 0.95rem 0.9rem;
+      text-align: center;
+    }
+    .ene-symbol-art {
+      width: 100%;
+      max-width: 148px;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 0.75rem;
+    }
+    .ene-symbol-title {
+      margin: 0 0 0.35rem;
+      color: var(--gold-light);
+      font-family: var(--font-serif);
+      font-size: 1rem;
+    }
+    .ene-symbol-copy {
+      color: var(--white-dim);
+      font-size: 0.84rem;
+      line-height: 1.64;
+      margin: 0;
+    }
+    .ene-section {
+      margin-bottom: 1rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1rem;
+    }
+    .ene-section-title {
+      margin: 0 0 0.75rem;
+      color: var(--gold-light);
+      font-family: var(--font-serif);
+      font-size: 1.28rem;
+    }
+    .ene-section p,
+    .ene-section li {
+      color: var(--white-dim);
+      line-height: 1.74;
+      font-size: 0.9rem;
+    }
+    .ene-scripture {
+      border-left: 3px solid rgba(201,168,76,0.45);
+      padding: 0.8rem 1rem;
+      margin: 0.85rem 0;
+      font-family: var(--font-serif);
+      font-style: italic;
+      color: rgba(255,255,255,0.84);
+      line-height: 1.74;
+      white-space: pre-line;
+      background: rgba(201,168,76,0.05);
+      border-radius: 0 10px 10px 0;
+    }
+    .ene-scripture cite {
+      display: block;
+      margin-top: 0.45rem;
+      font-size: 0.78rem;
+      font-style: normal;
+      color: var(--gold);
+      opacity: 0.78;
+    }
+    .ene-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.9rem;
+    }
+    .ene-card {
+      background: rgba(201,168,76,0.06);
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 12px;
+      padding: 0.95rem;
+    }
+    .ene-card h3 {
+      margin: 0 0 0.45rem;
+      color: var(--gold-light);
+      font-family: var(--font-serif);
+      font-size: 1.02rem;
+    }
+    .ene-list {
+      margin: 0;
+      padding-left: 1.1rem;
+      display: grid;
+      gap: 0.45rem;
+    }
+    .ene-prayer {
+      background: rgba(201,168,76,0.08);
+      border: 1px solid rgba(201,168,76,0.24);
+      border-radius: 12px;
+      padding: 1.15rem 1rem;
+      white-space: pre-line;
+      color: rgba(255,255,255,0.9);
+      line-height: 1.86;
+      font-family: var(--font-serif);
+      font-size: 0.98rem;
+    }
+    .ene-note {
+      border: 1px solid rgba(214,80,90,0.28);
+      background: rgba(180,20,28,0.14);
+      color: rgba(255,255,255,0.9);
+      border-radius: 12px;
+      padding: 0.9rem 1rem;
+      line-height: 1.68;
+      font-size: 0.87rem;
+    }
+    .ene-footer-links {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .ene-home-link {
+      color: var(--gold);
+      text-decoration: none;
+      opacity: 0.8;
+      font-size: 0.84rem;
+    }
+    @media (max-width: 700px) {
+      .ene-symbol-grid {
+        grid-template-columns: 1fr;
+      }
+      .ene-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link">
+        <span class="cross">✝</span>
+        <span class="logo-text">The Universal Prayer</span>
+      </a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span id="langLabel">EN</span>
+      </button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="ene-hero">
+    <a href="/" class="ador-back-link" data-lang="es">← Inicio</a>
+    <a href="/" class="ador-back-link" data-lang="en" style="display:none">← Home</a>
+
+    <svg class="ene-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="eneGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#f6df9f"/>
+          <stop offset="100%" stop-color="#c9a84c"/>
+        </linearGradient>
+      </defs>
+      <path d="M22 58 C29 44, 40 39, 50 39 C60 39, 71 44, 78 58" fill="none" stroke="url(#eneGrad)" stroke-width="5" stroke-linecap="round"/>
+      <path d="M16 63 C26 74, 38 79, 50 79 C62 79, 74 74, 84 63" fill="none" stroke="#8fd3ff" stroke-width="4" stroke-linecap="round" opacity="0.78"/>
+      <circle cx="35" cy="34" r="8" fill="#d1b26b" opacity="0.9"/>
+      <circle cx="65" cy="34" r="8" fill="#d1b26b" opacity="0.9"/>
+      <path d="M35 44 L35 58" stroke="#d1b26b" stroke-width="4" stroke-linecap="round"/>
+      <path d="M65 44 L65 58" stroke="#d1b26b" stroke-width="4" stroke-linecap="round"/>
+      <path d="M50 18 L50 56" stroke="#f6df9f" stroke-width="3" stroke-linecap="round"/>
+      <path d="M38 30 L62 30" stroke="#f6df9f" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="50" cy="62" r="6" fill="#f6df9f" opacity="0.85"/>
+    </svg>
+
+    <div class="ene-badge" data-lang="es">✦ Oración difícil pero evangélica</div>
+    <div class="ene-badge" data-lang="en" style="display:none">✦ A difficult but evangelical prayer</div>
+
+    <h1 class="ene-title" data-lang="es">Bendecir a Nuestros Enemigos</h1>
+    <h1 class="ene-title" data-lang="en" style="display:none">Blessing Our Enemies</h1>
+
+    <p class="ene-subtitle" data-lang="es">Sí, suena paradójico. Pero Cristo lo mandó: no devolver mal por mal, sino presentar al enemigo ante Dios y pedir que tu corazón no se llene de odio.</p>
+    <p class="ene-subtitle" data-lang="en" style="display:none">Yes, it sounds paradoxical. But Christ commanded it: not to repay evil with evil, but to place the enemy before God and ask that your heart not be filled with hatred.</p>
+  </section>
+
+  <main class="ene-content">
+    <section class="ene-symbol-grid" aria-label="Misericordia, perdón y conversión">
+      <article class="ene-symbol-card">
+        <img class="ene-symbol-art" src="/assets/images/enemigos-misericordia.svg" alt="Misericordia de Dios" />
+        <h2 class="ene-symbol-title" data-lang="es">Misericordia</h2>
+        <h2 class="ene-symbol-title" data-lang="en" style="display:none">Mercy</h2>
+        <p class="ene-symbol-copy" data-lang="es">Pedir misericordia aquí no es suavizar el mal. Es suplicar que tu corazón no se deforme por la herida y que Dios tome el caso bajo su gobierno.</p>
+        <p class="ene-symbol-copy" data-lang="en" style="display:none">Asking for mercy here is not softening evil. It is begging that your heart not be deformed by the wound and that God take the case under His rule.</p>
+      </article>
+
+      <article class="ene-symbol-card">
+        <img class="ene-symbol-art" src="/assets/images/enemigos-perdon.svg" alt="Perdón con verdad" />
+        <h2 class="ene-symbol-title" data-lang="es">Perdón con verdad</h2>
+        <h2 class="ene-symbol-title" data-lang="en" style="display:none">Forgiveness with truth</h2>
+        <p class="ene-symbol-copy" data-lang="es">Perdonar no es decir que estuvo bien. Es renunciar al veneno, sin borrar la verdad ni abandonar los límites que protegen tu paz y tu casa.</p>
+        <p class="ene-symbol-copy" data-lang="en" style="display:none">Forgiveness is not saying it was fine. It is renouncing the poison without erasing truth or abandoning the boundaries that protect your peace and your home.</p>
+      </article>
+
+      <article class="ene-symbol-card">
+        <img class="ene-symbol-art" src="/assets/images/enemigos-conversion.svg" alt="Conversión y cambio del corazón" />
+        <h2 class="ene-symbol-title" data-lang="es">Conversión</h2>
+        <h2 class="ene-symbol-title" data-lang="en" style="display:none">Conversion</h2>
+        <p class="ene-symbol-copy" data-lang="es">La petición fuerte no es solo que Dios detenga el mal, sino que convierta al que lo hace, lo saque de su dureza y no permita que prospere su intento injusto.</p>
+        <p class="ene-symbol-copy" data-lang="en" style="display:none">The strong petition is not only that God stop the evil, but that He convert the one doing it, draw them out of hardness, and not allow unjust designs to prosper.</p>
+      </article>
+    </section>
+
+    <section class="ene-section">
+      <h2 class="ene-section-title" data-lang="es">Lo que sí significa</h2>
+      <h2 class="ene-section-title" data-lang="en" style="display:none">What it does mean</h2>
+
+      <blockquote class="ene-scripture" data-lang="es">Amen a sus enemigos, hagan el bien a los que los odian, bendigan a los que los maldicen, oren por los que los calumnian.
+<cite>— Lucas 6, 27-28</cite></blockquote>
+      <blockquote class="ene-scripture" data-lang="en" style="display:none">Love your enemies, do good to those who hate you, bless those who curse you, pray for those who mistreat you.
+<cite>— Luke 6:27-28</cite></blockquote>
+
+      <p data-lang="es">Bendecir al enemigo no es llamar bueno a lo malo. No es negar la herida. No es fingir confianza. Significa decir: “Señor, yo no quiero alimentar odio; toma esta historia, haz justicia, convierte a esa persona si está en error y sana mi corazón para que no quede atado a la amargura”.</p>
+      <p data-lang="en" style="display:none">To bless an enemy is not to call evil good. It is not to deny the wound. It is not fake trust. It means saying: “Lord, I do not want to feed hatred; take this story, bring justice, convert that person if they are in error, and heal my heart so it is not chained to bitterness.”</p>
+    </section>
+
+    <section class="ene-section">
+      <h2 class="ene-section-title" data-lang="es">Dejárselo todo a Dios</h2>
+      <h2 class="ene-section-title" data-lang="en" style="display:none">Leaving it all to God</h2>
+
+      <blockquote class="ene-scripture" data-lang="es">No os toméis la justicia por vuestra mano, queridos míos, sino dejad lugar a la ira de Dios; porque está escrito: Mía es la venganza, yo daré el pago, dice el Señor.
+<cite>— Romanos 12, 19</cite></blockquote>
+      <blockquote class="ene-scripture" data-lang="en" style="display:none">Do not take revenge, my dear friends, but leave room for God’s wrath, for it is written: It is mine to avenge; I will repay, says the Lord.
+<cite>— Romans 12:19</cite></blockquote>
+
+      <p data-lang="es">Hay heridas en las que uno ya no sabe qué hacer. Allí empieza esta oración: <strong>dejárselo todo a Dios</strong>. No para desentenderte, sino para entregar el caso al único Juez que ve lo oculto, conoce las intenciones y no se equivoca al pesar los corazones.</p>
+      <p data-lang="en" style="display:none">There are wounds in which you no longer know what to do. That is where this prayer begins: <strong>leaving it all to God</strong>. Not to disengage, but to place the case into the hands of the only Judge who sees what is hidden, knows intentions, and never errs in weighing hearts.</p>
+
+      <p data-lang="es">Decir “Señor, te lo dejo a Ti” no es debilidad. Es una renuncia consciente al veneno de la venganza. Es pedir <strong>justicia divina, conversión verdadera y protección concreta</strong>, bajo la misericordia de Dios y sin pactar con el mal.</p>
+      <p data-lang="en" style="display:none">To say “Lord, I leave it to You” is not weakness. It is a conscious renunciation of the poison of revenge. It is to ask for <strong>divine justice, true conversion, and concrete protection</strong>, under God’s mercy and without making peace with evil.</p>
+    </section>
+
+    <section class="ene-section">
+      <h2 class="ene-section-title" data-lang="es">Lo que no significa</h2>
+      <h2 class="ene-section-title" data-lang="en" style="display:none">What it does not mean</h2>
+
+      <div class="ene-note" data-lang="es"><strong>Nota pastoral importante:</strong> bendecir a un enemigo no significa permanecer en abuso, violencia, manipulación o peligro. Puedes perdonar y orar, y al mismo tiempo poner distancia, buscar ayuda, denunciar lo que corresponda y proteger a tu familia.</div>
+      <div class="ene-note" data-lang="en" style="display:none"><strong>Important pastoral note:</strong> blessing an enemy does not mean remaining in abuse, violence, manipulation, or danger. You may forgive and pray, while also setting distance, seeking help, reporting what must be reported, and protecting your family.</div>
+    </section>
+
+    <section class="ene-section">
+      <h2 class="ene-section-title" data-lang="es">Camino práctico</h2>
+      <h2 class="ene-section-title" data-lang="en" style="display:none">Practical path</h2>
+
+      <div class="ene-grid">
+        <div class="ene-card">
+          <h3 data-lang="es">1. Nombra la herida</h3>
+          <h3 data-lang="en" style="display:none">1. Name the wound</h3>
+          <p data-lang="es">Di ante Dios qué te hicieron y cómo te afectó. La oración verdadera no empieza negando el dolor.</p>
+          <p data-lang="en" style="display:none">Tell God what was done to you and how it affected you. True prayer does not begin by denying pain.</p>
+        </div>
+        <div class="ene-card">
+          <h3 data-lang="es">2. Renuncia a la venganza</h3>
+          <h3 data-lang="en" style="display:none">2. Renounce revenge</h3>
+          <p data-lang="es">Entrega a Dios el deseo de devolver el golpe. La justicia le pertenece a Él; tú no tienes que pudrirte por dentro.</p>
+          <p data-lang="en" style="display:none">Hand over to God the desire to strike back. Justice belongs to Him; you do not have to rot inwardly.</p>
+        </div>
+        <div class="ene-card">
+          <h3 data-lang="es">3. Pide conversión</h3>
+          <h3 data-lang="en" style="display:none">3. Ask for conversion</h3>
+          <p data-lang="es">No pidas primero que “les vaya mal”; pide que Dios les muestre la verdad, les detenga y les convierta.</p>
+          <p data-lang="en" style="display:none">Do not first ask that “things go badly” for them; ask that God show them truth, stop them, and convert them.</p>
+        </div>
+        <div class="ene-card">
+          <h3 data-lang="es">4. Protege tu casa</h3>
+          <h3 data-lang="en" style="display:none">4. Protect your household</h3>
+          <p data-lang="es">Bendecir no elimina prudencia. Ora, pon límites, corta accesos dañinos y busca consejo si es necesario.</p>
+          <p data-lang="en" style="display:none">Blessing does not remove prudence. Pray, set limits, cut off harmful access, and seek counsel if needed.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ene-section">
+      <h2 class="ene-section-title" data-lang="es">Lo que puedes pedir con claridad</h2>
+      <h2 class="ene-section-title" data-lang="en" style="display:none">What you may ask for clearly</h2>
+
+      <div class="ene-grid">
+        <div class="ene-card">
+          <h3 data-lang="es">Justicia divina</h3>
+          <h3 data-lang="en" style="display:none">Divine justice</h3>
+          <p data-lang="es">“Señor, juzga esta situación con verdad. No permitas que el mal quede suelto ni que mi casa siga bajo opresión.”</p>
+          <p data-lang="en" style="display:none">“Lord, judge this situation in truth. Do not allow evil to roam free or my household to remain under oppression.”</p>
+        </div>
+        <div class="ene-card">
+          <h3 data-lang="es">Conversión real</h3>
+          <h3 data-lang="en" style="display:none">Real conversion</h3>
+          <p data-lang="es">“Si esa persona está endurecida, tócale el corazón. Si persiste en el mal, frénala y hazla volver a Ti.”</p>
+          <p data-lang="en" style="display:none">“If that person is hardened, touch their heart. If they persist in evil, stop them and bring them back to You.”</p>
+        </div>
+        <div class="ene-card">
+          <h3 data-lang="es">Protección contra intentos malos</h3>
+          <h3 data-lang="en" style="display:none">Protection against malicious attempts</h3>
+          <p data-lang="es">“Cancela toda palabra torcida, manipulación, engaño, difamación o intención dañina dirigida contra mí o contra los míos.”</p>
+          <p data-lang="en" style="display:none">“Cancel every twisted word, manipulation, deceit, slander, or harmful intention directed against me or my loved ones.”</p>
+        </div>
+        <div class="ene-card">
+          <h3 data-lang="es">Gracia para no endurecerme</h3>
+          <h3 data-lang="en" style="display:none">Grace not to harden</h3>
+          <p data-lang="es">“No permitas que el daño que me hicieron se convierta en pecado dentro de mí. Guárdame del odio, de la obsesión y de la amargura.”</p>
+          <p data-lang="en" style="display:none">“Do not let the harm done to me become sin within me. Guard me from hatred, obsession, and bitterness.”</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ene-section">
+      <h2 class="ene-section-title" data-lang="es">Palabra de Cristo para esta lucha</h2>
+      <h2 class="ene-section-title" data-lang="en" style="display:none">Christ’s word for this struggle</h2>
+
+      <blockquote class="ene-scripture" data-lang="es">No te dejes vencer por el mal; al contrario, vence el mal con el bien.
+<cite>— Romanos 12, 21</cite></blockquote>
+      <blockquote class="ene-scripture" data-lang="en" style="display:none">Do not be overcome by evil, but overcome evil with good.
+<cite>— Romans 12:21</cite></blockquote>
+
+      <blockquote class="ene-scripture" data-lang="es">Padre, perdónalos, porque no saben lo que hacen.
+<cite>— Lucas 23, 34</cite></blockquote>
+      <blockquote class="ene-scripture" data-lang="en" style="display:none">Father, forgive them, for they do not know what they are doing.
+<cite>— Luke 23:34</cite></blockquote>
+    </section>
+
+    <section class="ene-section">
+      <h2 class="ene-section-title" data-lang="es">Cuando el corazón dice: “esto no está fácil”</h2>
+      <h2 class="ene-section-title" data-lang="en" style="display:none">When the heart says: “this is not easy”</h2>
+
+      <p data-lang="es">No está fácil. A veces la herida sigue abierta, la injusticia parece burlarse y los intentos malos continúan. Por eso esta oración no pide sentimientos bonitos; pide una <strong>gracia sobrenatural</strong> que no nace de tus fuerzas. Puedes decirle a Dios exactamente eso: “No puedo solo. Dame bajo tu misericordia la gracia de no devolver mal por mal”.</p>
+      <p data-lang="en" style="display:none">It is not easy. Sometimes the wound remains open, injustice seems to mock you, and malicious attempts continue. That is why this prayer does not ask for pretty feelings; it asks for a <strong>supernatural grace</strong> that does not arise from your own strength. You may say exactly that to God: “I cannot do this alone. Under Your mercy, give me the grace not to repay evil with evil.”</p>
+    </section>
+
+    <section class="ene-section">
+      <h2 class="ene-section-title" data-lang="es">Oración para bendecir a quien me hiere</h2>
+      <h2 class="ene-section-title" data-lang="en" style="display:none">Prayer to bless the one who wounds me</h2>
+
+      <div class="ene-prayer" data-lang="es">Señor Jesús,
+Tú me ves herido y conoces exactamente lo que esta persona me hizo.
+No te oculto mi dolor, mi enojo y mi cansancio.
+
+Hoy no quiero seguir alimentando odio.
+No quiero que esta herida gobierne mi alma.
+Por eso pongo ante Ti a quien me ha hecho daño.
+
+Si está en pecado, corrígelo.
+Si está ciego, ilumínalo.
+Si está endurecido, quebrántalo con tu gracia.
+Si yo también he pecado en esta historia, corrígeme a mí primero.
+
+Yo no llamo bueno a lo que estuvo mal.
+No justifico la injusticia.
+No renuncio a la verdad.
+Pero tampoco quiero convertirme en esclavo del resentimiento.
+
+Te dejo este caso por completo.
+Te entrego el juicio, el desenlace y la defensa.
+Haz justicia Tú, porque yo no veo todo y Tú sí.
+
+Bendícelo con verdad, no con impunidad.
+Detén el mal donde exista.
+Rompe todo intento malo, toda trampa, toda palabra de daño,
+toda manipulación y toda obra escondida que quieran levantar contra mí o contra mi casa.
+Protege mi casa, mi mente, mi corazón y mis decisiones.
+Dame la gracia de perdonar sin negar la herida,
+y de poner límites sin perder la caridad.
+
+Hazme libre de la venganza.
+Hazme fuerte en la verdad.
+Hazme limpio de corazón.
+Y si esta persona debe salir de mi camino, que salga bajo tu juicio y tu gobierno, no bajo mi odio.
+
+En tu Nombre, Señor Jesús. Amén.</div>
+
+      <div class="ene-prayer" data-lang="en" style="display:none">Lord Jesus,
+You see me wounded and You know exactly what this person has done to me.
+I do not hide from You my pain, my anger, and my weariness.
+
+Today I do not want to keep feeding hatred.
+I do not want this wound to rule my soul.
+So I place before You the one who has harmed me.
+
+If this person is in sin, correct them.
+If they are blind, enlighten them.
+If they are hardened, break them open with Your grace.
+If I also sinned in this story, correct me first.
+
+I do not call good what was evil.
+I do not justify injustice.
+I do not renounce truth.
+But I also do not want to become a slave to resentment.
+
+Bless them with truth, not with impunity.
+Stop the evil wherever it exists.
+Protect my home, my mind, my heart, and my decisions.
+Grant me the grace to forgive without denying the wound,
+and to set limits without losing charity.
+
+Make me free from revenge.
+Make me strong in truth.
+Make me clean of heart.
+And if this person must leave my path, let them leave under Your judgment and rule, not under my hatred.
+
+In Your Name, Lord Jesus. Amen.</div>
+
+  <div class="ene-prayer" data-lang="es">Padre Santo,
+bajo tu misericordia te pido una gracia que no me puedo dar a mí mismo:
+la gracia de no ceder al odio,
+la gracia de dejarte a Ti la justicia,
+la gracia de pedir conversión para quien me quiere dañar,
+y la gracia de permanecer protegido bajo tu gobierno.
+
+Si esta persona insiste en hacer mal,
+detén su mano,
+confunde sus planes,
+cierra sus puertas injustas,
+y no permitas que prospere ninguna intención mala contra mí, contra mi familia, contra mi paz o contra mi vocación.
+
+Haz justicia, Señor.
+Haz conversión, Señor.
+Haz limpieza en mi corazón, Señor.
+Y no me sueltes de tu misericordia. Amén.</div>
+
+  <div class="ene-prayer" data-lang="en" style="display:none">Holy Father,
+under Your mercy I ask for a grace I cannot give myself:
+the grace not to yield to hatred,
+the grace to leave justice to You,
+the grace to ask conversion for the one who wants to harm me,
+and the grace to remain protected under Your rule.
+
+If this person insists on doing evil,
+stop their hand,
+confound their plans,
+close their unjust doors,
+and do not allow any harmful intention to prosper against me, against my family, against my peace, or against my vocation.
+
+Bring justice, Lord.
+Bring conversion, Lord.
+Bring cleansing to my heart, Lord.
+And do not let me go from Your mercy. Amen.</div>
+    </section>
+
+    <section class="ene-section">
+      <h2 class="ene-section-title" data-lang="es">Jaculatorias breves</h2>
+      <h2 class="ene-section-title" data-lang="en" style="display:none">Short aspirations</h2>
+      <ul class="ene-list" data-lang="es">
+        <li>Jesús, líbrame del odio.</li>
+        <li>Señor, bendice sin permitir el mal.</li>
+        <li>Padre, haz justicia y guarda mi corazón.</li>
+        <li>Espíritu Santo, enséñame a perdonar con verdad.</li>
+      </ul>
+      <ul class="ene-list" data-lang="en" style="display:none">
+        <li>Jesus, deliver me from hatred.</li>
+        <li>Lord, bless without permitting evil.</li>
+        <li>Father, bring justice and guard my heart.</li>
+        <li>Holy Spirit, teach me to forgive with truth.</li>
+      </ul>
+    </section>
+
+    <div class="ene-footer-links">
+      <a href="/" class="ene-home-link" data-lang="es">← Volver al inicio</a>
+      <a href="/" class="ene-home-link" data-lang="en" style="display:none">← Back to home</a>
+    </div>
+  </main>
+
+  <script>
+  (function () {
+    'use strict';
+
+    const LANG_KEY = 'tup_lang';
+    let lang = localStorage.getItem(LANG_KEY) || 'es';
+
+    function applyLang(nextLang) {
+      lang = nextLang;
+      localStorage.setItem(LANG_KEY, lang);
+      document.documentElement.lang = lang === 'en' ? 'en' : 'es';
+      const label = document.getElementById('langLabel');
+      if (label) label.textContent = lang === 'en' ? 'ES' : 'EN';
+      document.querySelectorAll('[data-lang]').forEach((node) => {
+        node.style.display = node.getAttribute('data-lang') === lang ? '' : 'none';
+      });
+    }
+
+    document.getElementById('langToggle').addEventListener('click', function () {
+      applyLang(lang === 'es' ? 'en' : 'es');
+      window.dispatchEvent(new CustomEvent('tup:langchange', { detail: lang }));
+    });
+
+    applyLang(lang);
+  })();
+  </script>
+  <script src="../assets/js/menu.js"></script>
+</body>
+</html>

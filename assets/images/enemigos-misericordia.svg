@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Misericordia">
+  <defs>
+    <radialGradient id="em-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#1c2f6b" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#071028" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="em-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff1b8"/>
+      <stop offset="100%" stop-color="#c9a84c"/>
+    </linearGradient>
+    <linearGradient id="em-red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff7b68"/>
+      <stop offset="100%" stop-color="#c81d25"/>
+    </linearGradient>
+    <linearGradient id="em-blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff2ff"/>
+      <stop offset="100%" stop-color="#70a9ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="18" fill="url(#em-bg)"/>
+  <circle cx="50" cy="28" r="16" fill="url(#em-gold)" opacity="0.16"/>
+  <path d="M50 20 L50 38" stroke="url(#em-gold)" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M41 29 L59 29" stroke="url(#em-gold)" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M35 54 C35 43, 44 38, 50 38 C56 38, 65 43, 65 54 C65 63, 58 68, 50 74 C42 68, 35 63, 35 54 Z" fill="none" stroke="url(#em-gold)" stroke-width="2.6"/>
+  <path d="M49 49 C42 55, 36 65, 31 80" stroke="url(#em-red)" stroke-width="4" stroke-linecap="round" opacity="0.82"/>
+  <path d="M51 49 C58 55, 64 65, 69 80" stroke="url(#em-blue)" stroke-width="4" stroke-linecap="round" opacity="0.82"/>
+  <circle cx="50" cy="49" r="3.4" fill="#fff7db" opacity="0.9"/>
+</svg>
