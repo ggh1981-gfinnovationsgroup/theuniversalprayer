@@ -541,6 +541,18 @@
       background: rgba(201,168,76,0.14);
     }
 
+    .rosario-tts-btn.full {
+      border-color: rgba(92, 194, 158, 0.58);
+      background: rgba(58, 142, 115, 0.16);
+      color: #c6f5e8;
+    }
+
+    .rosario-tts-btn.full:hover {
+      border-color: rgba(128, 224, 191, 0.82);
+      background: rgba(58, 142, 115, 0.26);
+      color: #e8fff6;
+    }
+
     .rosario-tts-note {
       color: var(--white-dim);
       font-size: 0.82rem;
@@ -717,8 +729,7 @@
         grid-template-columns: 1fr 1fr;
       }
 
-      .rosario-tts-btn:first-child,
-      .rosario-tts-btn:last-child:nth-child(2) {
+      .rosario-tts-btn.full {
         grid-column: 1 / -1;
       }
 
@@ -818,6 +829,7 @@
           <p class="rosario-prayer-text" id="prayerText"></p>
 
           <div class="rosario-tts">
+            <button class="rosario-tts-btn full" id="ttsPlayAllBtn">▶ Rosario completo</button>
             <button class="rosario-tts-btn" id="ttsPlayBtn">🔊 Leer en voz alta</button>
             <button class="rosario-tts-btn" id="ttsPauseBtn" style="display:none">⏸ Pausar</button>
             <button class="rosario-tts-btn" id="ttsStopBtn" style="display:none">⏹ Detener</button>
@@ -873,6 +885,7 @@
           prev: '← Anterior',
           next: 'Siguiente →',
           ttsPlay: '🔊 Leer en voz alta',
+          ttsPlayAll: '▶ Rosario completo',
           ttsPause: '⏸ Pausar',
           ttsContinue: '▶ Continuar',
           ttsStop: '⏹ Detener',
@@ -938,6 +951,7 @@
           prev: '← Previous',
           next: 'Next →',
           ttsPlay: '🔊 Read aloud',
+          ttsPlayAll: '▶ Full Rosary',
           ttsPause: '⏸ Pause',
           ttsContinue: '▶ Continue',
           ttsStop: '⏹ Stop',
@@ -1171,6 +1185,7 @@
     let mystery = localStorage.getItem('tup_rosary_mystery') || dayToMystery[new Date().getDay()];
     let idx = 0;
     let rosaryTtsState = 'stopped';
+    let rosaryTtsMode = 'single';
 
     const els = {
       title: document.getElementById('title'),
@@ -1196,6 +1211,7 @@
       mysteryNoteText: document.getElementById('mysteryNoteText'),
       prayerName: document.getElementById('prayerName'),
       prayerText: document.getElementById('prayerText'),
+      ttsPlayAllBtn: document.getElementById('ttsPlayAllBtn'),
       ttsPlayBtn: document.getElementById('ttsPlayBtn'),
       ttsPauseBtn: document.getElementById('ttsPauseBtn'),
       ttsStopBtn: document.getElementById('ttsStopBtn'),
@@ -1229,20 +1245,15 @@
     }
 
     function getRosaryTtsText() {
-      const t = i18n[lang];
       const current = beads[idx];
-      const mysteryName = current.decade >= 1 && current.decade <= 5 ? getMysteryForDecade(current.decade) : '';
-      const parts = [];
-      parts.push(els.prayerName.textContent || getPrayerNameForBead(current));
-      if (current.decade === 0) {
-        parts.push(`${t.ui.decade} 0. ${t.ui.intro}.`);
-      } else if (current.decade === 6) {
-        parts.push(`${t.ui.decade} 6. ${t.ui.ending}.`);
-      } else {
-        parts.push(`${t.ui.decade} ${current.decade}. ${t.ui.mysteryLabel}: ${mysteryName}.`);
-      }
-      parts.push(getPrayerTextForBead(current));
-      return parts.join(' ');
+      return getPrayerTextForBead(current);
+    }
+
+    function getFullRosaryTtsText() {
+      return beads
+        .map((bead) => getPrayerTextForBead(bead))
+        .filter(Boolean)
+        .join('\n\n');
     }
 
     function pickVoice(targetLang) {
@@ -1272,13 +1283,18 @@
         els.ttsPauseBtn.textContent = t.ttsContinue;
         els.ttsStopBtn.textContent = t.ttsStop;
       }
+      if (els.ttsPlayAllBtn) {
+        els.ttsPlayAllBtn.textContent = t.ttsPlayAll;
+      }
       els.ttsNoSupport.textContent = t.ttsUnsupported;
     }
 
-    function rosaryTtsSpeak() {
+    function rosaryTtsSpeak(text = '', mode = 'single') {
       if (!('speechSynthesis' in window)) return;
       window.speechSynthesis.cancel();
-      const utt = new SpeechSynthesisUtterance(getRosaryTtsText());
+      const utteranceText = text || getRosaryTtsText();
+      if (!utteranceText || !utteranceText.trim()) return;
+      const utt = new SpeechSynthesisUtterance(utteranceText);
       utt.lang = lang === 'es' ? 'es-MX' : 'en-US';
       utt.rate = 0.88;
       utt.pitch = 1.04;
@@ -1286,6 +1302,7 @@
       if (voice) utt.voice = voice;
       utt.onend = utt.onerror = () => {
         rosaryTtsState = 'stopped';
+        rosaryTtsMode = 'single';
         updateTtsButtons();
       };
       utt.onpause = () => {
@@ -1298,7 +1315,18 @@
       };
       window.speechSynthesis.speak(utt);
       rosaryTtsState = 'playing';
+      rosaryTtsMode = mode;
       updateTtsButtons();
+    }
+
+    function rosaryTtsSpeakCurrent() {
+      rosaryTtsSpeak(getRosaryTtsText(), 'single');
+    }
+
+    function rosaryTtsSpeakFull() {
+      idx = 0;
+      render();
+      rosaryTtsSpeak(getFullRosaryTtsText(), 'full');
     }
 
     function rosaryTtsPauseToggle() {
@@ -1317,6 +1345,7 @@
       if (!('speechSynthesis' in window)) return;
       window.speechSynthesis.cancel();
       rosaryTtsState = 'stopped';
+      rosaryTtsMode = 'single';
       updateTtsButtons();
     }
 
@@ -1612,8 +1641,8 @@
       const active = els.beadsStrip.children[idx];
       if (active) active.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
 
-      if (rosaryTtsState !== 'stopped') {
-        rosaryTtsSpeak();
+      if (rosaryTtsState !== 'stopped' && rosaryTtsMode === 'single') {
+        rosaryTtsSpeakCurrent();
       }
 
       localStorage.setItem('tup_lang', lang);
@@ -1659,7 +1688,8 @@
       render();
     });
 
-    els.ttsPlayBtn.addEventListener('click', rosaryTtsSpeak);
+    els.ttsPlayAllBtn.addEventListener('click', rosaryTtsSpeakFull);
+    els.ttsPlayBtn.addEventListener('click', rosaryTtsSpeakCurrent);
     els.ttsPauseBtn.addEventListener('click', rosaryTtsPauseToggle);
     els.ttsStopBtn.addEventListener('click', rosaryTtsStop);
 
@@ -1678,6 +1708,7 @@
       window.speechSynthesis.getVoices();
       window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
     } else {
+      els.ttsPlayAllBtn.style.display = 'none';
       els.ttsPlayBtn.style.display = 'none';
       els.ttsNoSupport.style.display = '';
     }
