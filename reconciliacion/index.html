@@ -135,17 +135,40 @@
     }
     .rec-image-tile img {
       width: 100%;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
+      aspect-ratio: 2 / 3;
+      height: auto;
+      max-height: none;
+      object-fit: contain;
+      object-position: center top;
       display: block;
+      background: rgba(7,10,20,0.6);
     }
+    .rec-image-tile a { display: block; text-decoration: none; }
     .rec-image-tile span {
       display: block;
       padding: 0.45rem 0.55rem 0.55rem;
       color: var(--white-dim);
       font-size: 0.76rem;
       text-align: center;
+      line-height: 1.4;
     }
+    .rec-image-tile .tile-label {
+      font-weight: 600;
+      color: var(--gold-light);
+      font-size: 0.8rem;
+    }
+    .rec-image-tile .tile-sub { font-size: 0.72rem; opacity: 0.72; margin-top: 0.15rem; }
+    .rec-tile-explain {
+      margin-top: 0.7rem;
+      border: 1px solid rgba(201,168,76,0.24);
+      background: rgba(201,168,76,0.08);
+      border-radius: 10px;
+      padding: 0.7rem 0.78rem;
+      color: var(--white-dim);
+      font-size: 0.82rem;
+      line-height: 1.65;
+    }
+    .rec-tile-explain strong { color: var(--gold-light); }
 
     .rec-steps {
       display: grid;
@@ -423,16 +446,31 @@ a broken and contrite heart you, God, will not despise.
 
       <div class="rec-image-grid">
         <div class="rec-image-tile">
-          <img src="/assets/images/misericordia.svg" alt="Divina Misericordia" />
-          <span data-lang="es">Misericordia para volver</span>
-          <span data-lang="en" style="display:none">Mercy to return</span>
+          <a href="/intercesor/?intercesor=misericordia">
+            <img src="/assets/images/misericordia.svg" alt="Divina Misericordia" />
+            <span>
+              <span class="tile-label" data-lang="es">Divina Misericordia</span>
+              <span class="tile-label" data-lang="en" style="display:none">Divine Mercy</span>
+              <span class="tile-sub" data-lang="es">Dios perdona a quien vuelve a Él con fe</span>
+              <span class="tile-sub" data-lang="en" style="display:none">God forgives those who return with faith</span>
+            </span>
+          </a>
         </div>
         <div class="rec-image-tile">
-          <img src="/assets/images/providencia.svg" alt="Divina Providencia" />
-          <span data-lang="es">Providencia para perseverar</span>
-          <span data-lang="en" style="display:none">Providence to persevere</span>
+          <a href="/intercesor/?intercesor=providencia">
+            <img src="/assets/images/providencia.svg" alt="Divina Providencia" />
+            <span>
+              <span class="tile-label" data-lang="es">Divina Providencia</span>
+              <span class="tile-label" data-lang="en" style="display:none">Divine Providence</span>
+              <span class="tile-sub" data-lang="es">Dios cuida cada necesidad del hogar</span>
+              <span class="tile-sub" data-lang="en" style="display:none">God cares for every household need</span>
+            </span>
+          </a>
         </div>
       </div>
+
+      <div class="rec-tile-explain" data-lang="es"><strong>¿Qué significa "misericordia para volver"?</strong> Significa volver a Dios y a la gracia: regresar de una vida de pecado a una vida reconciliada. No es solo "sentirse mejor"; es pedir perdón, confesarse, reparar y comenzar de nuevo.</div>
+      <div class="rec-tile-explain" data-lang="en" style="display:none"><strong>What does "mercy to return" mean?</strong> It means returning to God and to grace: moving from a life of sin to a reconciled life. It is not only about feeling better; it means asking forgiveness, going to confession, making amends, and beginning again.</div>
     </section>
 
     <section class="rec-card">
