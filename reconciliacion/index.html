@@ -183,6 +183,35 @@
       line-height: 1.65;
       white-space: pre-line;
     }
+    .rec-scripture cite {
+      display: block; margin-top: 0.4rem;
+      font-size: 0.78rem; font-style: normal;
+      color: var(--gold); opacity: 0.75;
+    }
+    details.rec-verse { margin: 0.75rem 0 0; }
+    details.rec-verse summary {
+      cursor: pointer; color: var(--gold);
+      font-size: 0.82rem; padding: 0.35rem 0.5rem;
+      user-select: none; list-style: none;
+    }
+    details.rec-verse summary::-webkit-details-marker { display: none; }
+    details.rec-verse summary::before { content: '▸ '; }
+    details.rec-verse[open] summary::before { content: '▾ '; }
+    details.rec-verse blockquote {
+      margin: 0.4rem 0 0;
+      padding: 0.75rem 1rem;
+      border-left: 3px solid rgba(201,168,76,0.4);
+      background: rgba(201,168,76,0.05);
+      border-radius: 0 8px 8px 0;
+      font-style: italic; font-size: 0.87rem;
+      line-height: 1.72; color: rgba(255,255,255,0.84);
+      white-space: pre-line;
+    }
+    details.rec-verse cite {
+      display: block; margin-top: 0.45rem;
+      font-size: 0.78rem; font-style: normal;
+      color: var(--gold); opacity: 0.75;
+    }
 
     .rec-big-block {
       margin-top: 0.95rem;
@@ -364,8 +393,33 @@
         </div>
       </div>
 
-      <blockquote class="rec-scripture" data-lang="es">"Misericordia, Dios mío, por tu bondad... Crea en mí un corazón puro." (Salmo 51)</blockquote>
-      <blockquote class="rec-scripture" data-lang="en" style="display:none">"Have mercy on me, O God... Create in me a clean heart." (Psalm 51)</blockquote>
+      <blockquote class="rec-scripture" data-lang="es">Misericordia, Dios mío, por tu bondad;
+por tu inmensa ternura borra mi culpa.
+Lava del todo mi delito, limpia mi pecado.
+Pues mi culpa yo la reconozco;
+mi pecado no se aparta de mí.
+
+Oh Dios, crea en mí un corazón puro,
+renuévame por dentro con espíritu firme;
+no me arrojes lejos de tu rostro,
+no me quites tu santo espíritu.
+
+El sacrificio que pido es un espíritu quebrantado;
+un corazón contrito y humillado tú no lo desprecias, oh Dios.
+<cite>— Salmo 51, 3-5.12-13.19</cite></blockquote>
+      <blockquote class="rec-scripture" data-lang="en" style="display:none">Have mercy on me, O God, according to your unfailing love;
+according to your great compassion blot out my transgressions.
+Wash away all my iniquity and cleanse me from my sin.
+For I know my transgressions, and my sin is always before me.
+
+Create in me a pure heart, O God,
+and renew a steadfast spirit within me.
+Do not cast me from your presence
+or take your Holy Spirit from me.
+
+My sacrifice, O God, is a broken spirit;
+a broken and contrite heart you, God, will not despise.
+<cite>— Psalm 51:1-3, 10-11, 17</cite></blockquote>
 
       <div class="rec-image-grid">
         <div class="rec-image-tile">
@@ -426,6 +480,76 @@
           <li><strong>Biweekly or monthly:</strong> frequent confession so the soul does not cool down.</li>
           <li><strong>Always:</strong> cut off your most recurrent occasion of sin.</li>
         </ul>
+        <details class="rec-verse" data-lang="es">
+          <summary>Ver Salmo 51 (oración de arrepentimiento)</summary>
+          <blockquote>Misericordia, Dios mío, por tu bondad;
+por tu inmensa ternura borra mi culpa.
+Lava del todo mi delito, limpia mi pecado.
+
+Oh Dios, crea en mí un corazón puro,
+renuévame por dentro con espíritu firme;
+no me arrojes lejos de tu rostro,
+no me quites tu santo espíritu.
+
+Devuélveme la alegría de tu salvación,
+afiánzame con espíritu generoso.
+<cite>— Salmo 51, 3-4.12-14</cite></blockquote>
+        </details>
+        <details class="rec-verse" data-lang="es">
+          <summary>Ver Salmo 130 (desde el abismo)</summary>
+          <blockquote>Desde el abismo a ti grito, Señor;
+Señor, escucha mi voz.
+Estén atentos tus oídos a la voz de mi súplica.
+
+Si llevas cuenta de los delitos, Señor,
+¿quién podrá resistir?
+Pero en ti se halla el perdón,
+y así infundes respeto.
+
+Mi alma espera al Señor,
+espera en su palabra;
+mi alma aguarda al Señor
+más que el centinela a la aurora.
+
+Porque en el Señor hay misericordia,
+abundante redención;
+él redimirá a Israel de todos sus delitos.
+<cite>— Salmo 130, 1-4.5-6.7-8</cite></blockquote>
+        </details>
+        <details class="rec-verse" data-lang="en" style="display:none">
+          <summary>Read Psalm 51 (prayer of repentance)</summary>
+          <blockquote>Have mercy on me, O God, according to your unfailing love;
+according to your great compassion blot out my transgressions.
+Wash away all my iniquity and cleanse me from my sin.
+
+Create in me a pure heart, O God,
+and renew a steadfast spirit within me.
+Do not cast me from your presence
+or take your Holy Spirit from me.
+
+Restore to me the joy of your salvation
+and grant me a willing spirit, to sustain me.
+<cite>— Psalm 51:1-2, 10-12</cite></blockquote>
+        </details>
+        <details class="rec-verse" data-lang="en" style="display:none">
+          <summary>Read Psalm 130 (out of the depths)</summary>
+          <blockquote>Out of the depths I cry to you, LORD;
+Lord, hear my voice.
+Let your ears be attentive to my cry for mercy.
+
+If you, LORD, kept a record of sins,
+Lord, who could stand?
+But with you there is forgiveness,
+so that we can, with reverence, serve you.
+
+I wait for the LORD, my whole being waits,
+and in his word I put my hope;
+I wait for the LORD more than watchmen wait for the morning.
+
+For with the LORD is unfailing love
+and with him is full redemption.
+<cite>— Psalm 130:1-6, 7</cite></blockquote>
+        </details>
       </div>
 
       <div class="rec-big-block">
@@ -466,6 +590,82 @@
           <li><strong>4) Penance and charity:</strong> offer a small sacrifice joined to a work of mercy.</li>
           <li><strong>5) Concrete petition:</strong> ask clearly and end with "thy will be done."</li>
         </ul>
+        <details class="rec-verse" data-lang="es">
+          <summary>Ver Salmo 51 — corazón limpio</summary>
+          <blockquote>Misericordia, Dios mío, por tu bondad;
+por tu inmensa ternura borra mi culpa.
+
+Oh Dios, crea en mí un corazón puro,
+renuévame por dentro con espíritu firme.
+
+El sacrificio que pido es un espíritu quebrantado;
+un corazón contrito y humillado tú no lo desprecias, oh Dios.
+<cite>— Salmo 51, 3.12.19</cite></blockquote>
+        </details>
+        <details class="rec-verse" data-lang="es">
+          <summary>Ver Salmo 27 — el Señor es mi luz</summary>
+          <blockquote>El Señor es mi luz y mi salvación,
+¿a quién temeré?
+El Señor es el refugio de mi vida,
+¿quién me hará temblar?
+
+Una cosa pido al Señor, eso buscaré:
+habitar en la casa del Señor todos los días de mi vida,
+para contemplar la belleza del Señor y visitar su templo.
+
+Espera al Señor, sé valiente,
+ten ánimo, espera al Señor.
+<cite>— Salmo 27, 1.4.14</cite></blockquote>
+        </details>
+        <details class="rec-verse" data-lang="es">
+          <summary>Ver Mateo 6,25-34 — no se preocupen</summary>
+          <blockquote>Por eso les digo: no se preocupen por su vida, qué comerán o qué beberán, ni por su cuerpo, con qué se vestirán. ¿No vale la vida más que el alimento, y el cuerpo más que el vestido?
+
+Miren las aves del cielo: no siembran ni cosechan ni almacenan en graneros, y sin embargo el Padre celestial las alimenta. ¿No son ustedes mucho más valiosos que ellas?
+
+No se preocupen, pues, diciendo: «¿Qué comeremos?», «¿qué beberemos?», «¿con qué nos vestiremos?» El Padre celestial ya sabe que ustedes tienen necesidad de todo eso.
+
+Busquen primero el reino de Dios y su justicia, y todas esas cosas se les darán por añadidura. No se preocupen por el mañana; el mañana traerá su propia preocupación. A cada día le basta su propio afán.
+<cite>— Mateo 6, 25-26.31-34</cite></blockquote>
+        </details>
+        <details class="rec-verse" data-lang="en" style="display:none">
+          <summary>Read Psalm 51 — clean heart</summary>
+          <blockquote>Have mercy on me, O God, according to your unfailing love;
+according to your great compassion blot out my transgressions.
+
+Create in me a pure heart, O God,
+and renew a steadfast spirit within me.
+
+My sacrifice, O God, is a broken spirit;
+a broken and contrite heart you, God, will not despise.
+<cite>— Psalm 51:1, 10, 17</cite></blockquote>
+        </details>
+        <details class="rec-verse" data-lang="en" style="display:none">
+          <summary>Read Psalm 27 — the Lord is my light</summary>
+          <blockquote>The LORD is my light and my salvation—
+whom shall I fear?
+The LORD is the stronghold of my life—
+of whom shall I be afraid?
+
+One thing I ask from the LORD, this only do I seek:
+that I may dwell in the house of the LORD all the days of my life,
+to gaze on the beauty of the LORD and to seek him in his temple.
+
+Wait for the LORD; be strong
+and take heart and wait for the LORD.
+<cite>— Psalm 27:1, 4, 14</cite></blockquote>
+        </details>
+        <details class="rec-verse" data-lang="en" style="display:none">
+          <summary>Read Matthew 6:25-34 — do not worry</summary>
+          <blockquote>Therefore I tell you, do not worry about your life, what you will eat or drink; or about your body, what you will wear. Is not life more than food, and the body more than clothes?
+
+Look at the birds of the air; they do not sow or reap or store away in barns, and yet your heavenly Father feeds them. Are you not much more valuable than they?
+
+So do not worry, saying, 'What shall we eat?' or 'What shall we drink?' or 'What shall we wear?' For your heavenly Father knows that you need them.
+
+But seek first his kingdom and his righteousness, and all these things will be given to you as well. Therefore do not worry about tomorrow, for tomorrow will worry about itself. Each day has enough trouble of its own.
+<cite>— Matthew 6:25-26, 31-34</cite></blockquote>
+        </details>
         <p data-lang="es">Oración breve: "Padre, me pongo en tus manos. Dame un corazón limpio, fe firme y obediencia. Abre camino para mi casa en lo espiritual y en lo necesario, si conviene a tu voluntad. En el Nombre de Jesús. Amén."</p>
         <p data-lang="en" style="display:none">Brief prayer: "Father, I place myself in Your hands. Give me a clean heart, steady faith, and obedience. Open a path for my household in spiritual life and daily needs, if it is according to Your will. In Jesus' Name. Amen."</p>
       </div>
@@ -497,7 +697,52 @@
         <h3 data-lang="es">📋 Itinerario: 24 horas ANTES de confesión</h3>
         <h3 data-lang="en" style="display:none">📋 Timeline: 24 hours BEFORE confession</h3>
         <p data-lang="es"><strong>Día anterior (noche):</strong> Pasa 15 minutos tranquilo. Lee el Salmo 51. Piensa en los últimos días: ¿qué acciones te pesan? ¿Dónde no amaste? Escribe 3-5 pecados concretos (pecado, cuándo, circunstancia).</p>
+        <details class="rec-verse" data-lang="es">
+          <summary>Salmo 51 — leerlo ahora</summary>
+          <blockquote>Misericordia, Dios mío, por tu bondad;
+por tu inmensa ternura borra mi culpa.
+Lava del todo mi delito, limpia mi pecado.
+Pues mi culpa yo la reconozco;
+mi pecado no se aparta de mí.
+
+Contra ti, contra ti solo pequé,
+lo malo a tus ojos lo hice.
+
+Oh Dios, crea en mí un corazón puro,
+renuévame por dentro con espíritu firme;
+no me arrojes lejos de tu rostro,
+no me quites tu santo espíritu.
+
+Devuélveme la alegría de tu salvación,
+afiánzame con espíritu generoso.
+
+El sacrificio que pido es un espíritu quebrantado;
+un corazón contrito y humillado tú no lo desprecias, oh Dios.
+<cite>— Salmo 51, 3-6.12-14.19</cite></blockquote>
+        </details>
         <p data-lang="en" style="display:none"><strong>Day before (evening):</strong> Spend 15 quiet minutes. Read Psalm 51. Think about recent days: what actions weigh on you? Where did you not love? Write 3-5 concrete sins (sin, when, circumstance).</p>
+        <details class="rec-verse" data-lang="en" style="display:none">
+          <summary>Psalm 51 — read it now</summary>
+          <blockquote>Have mercy on me, O God, according to your unfailing love;
+according to your great compassion blot out my transgressions.
+Wash away all my iniquity and cleanse me from my sin.
+For I know my transgressions, and my sin is always before me.
+
+Against you, you only, have I sinned
+and done what is evil in your sight.
+
+Create in me a pure heart, O God,
+and renew a steadfast spirit within me.
+Do not cast me from your presence
+or take your Holy Spirit from me.
+
+Restore to me the joy of your salvation
+and grant me a willing spirit, to sustain me.
+
+My sacrifice, O God, is a broken spirit;
+a broken and contrite heart you, God, will not despise.
+<cite>— Psalm 51:1-4, 10-12, 17</cite></blockquote>
+        </details>
         <p data-lang="es"><strong>Mañana (antes de ir):</strong> Desayuna normal. Relee tu lista. Reza lentamente un Acto de Contrición. Si hay 1-2 pecados que no recuerdas bien, no importa — describe el estado del corazón. El sacerdote ayuda.</p>
         <p data-lang="en" style="display:none"><strong>Morning (before going):</strong> Eat normally. Reread your list. Slowly pray an Act of Contrition. If 1-2 sins you don't remember clearly, it's okay — describe the state of your heart. The priest helps.</p>
         <p data-lang="es"><strong>Camino a confesión:</strong> Silencio interno. No repases mentalmente. Confía que el Espíritu Santo traerá a tu memoria lo necesario. Deja ir la vergüenza — aquí estás para encontrar paz.</p>

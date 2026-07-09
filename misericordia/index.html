@@ -169,6 +169,30 @@
       font-size: 0.89rem;
     }
     .mer-list li { margin-bottom: 0.5rem; }
+    details.mer-verse { margin: 0.55rem 0 0.8rem; }
+    details.mer-verse summary {
+      cursor: pointer; color: #b9ddf6;
+      font-size: 0.82rem; padding: 0.3rem 0.4rem;
+      user-select: none; list-style: none;
+    }
+    details.mer-verse summary::-webkit-details-marker { display: none; }
+    details.mer-verse summary::before { content: '▸ '; }
+    details.mer-verse[open] summary::before { content: '▾ '; }
+    details.mer-verse blockquote {
+      margin: 0.4rem 0 0;
+      padding: 0.7rem 0.9rem;
+      border-left: 3px solid rgba(127,192,226,0.4);
+      background: rgba(127,192,226,0.07);
+      border-radius: 0 8px 8px 0;
+      font-style: italic; font-size: 0.87rem;
+      line-height: 1.72; color: rgba(255,255,255,0.84);
+      white-space: pre-line;
+    }
+    details.mer-verse cite {
+      display: block; margin-top: 0.45rem;
+      font-size: 0.77rem; font-style: normal;
+      color: #b9ddf6; opacity: 0.75;
+    }
     .mer-note {
       border: 1px solid rgba(127,192,226,0.26);
       background: rgba(127,192,226,0.09);
@@ -316,20 +340,115 @@ Amen.</p>
     <section class="mer-section">
       <h2 class="mer-h2" data-lang="es">Palabra que sostiene al caido</h2>
       <h2 class="mer-h2" data-lang="en" style="display:none">Word that sustains the fallen</h2>
-      <ul class="mer-list" data-lang="es">
-        <li>Dios no desprecia el corazon quebrantado (Salmo 51).</li>
-        <li>Su misericordia se renueva cada manana para quien vuelve a El (Lamentaciones 3,22-23).</li>
-        <li>En la noche de la prueba, el Senor sigue siendo refugio y roca (Salmo 27).</li>
-        <li>La paz de Cristo custodia mente y corazon cuando se ora con confianza (Filipenses 4,6-7).</li>
-        <li>El Padre conoce lo necesario para la casa antes de que lo pidamos (Mateo 6,25-34).</li>
-      </ul>
-      <ul class="mer-list" data-lang="en" style="display:none">
-        <li>God does not despise a broken and contrite heart (Psalm 51).</li>
-        <li>His mercy is renewed each morning for those who return to Him (Lamentations 3:22-23).</li>
-        <li>In the night of trial, the Lord remains refuge and rock (Psalm 27).</li>
-        <li>Christ's peace guards mind and heart when we pray with trust (Philippians 4:6-7).</li>
-        <li>The Father knows what a household needs before we ask (Matthew 6:25-34).</li>
-      </ul>
+      <div data-lang="es">
+        <p class="mer-list" style="padding-left:0;list-style:none;">Estas palabras de Dios no son referencias: son su respuesta cuando caemos.</p>
+        <details class="mer-verse">
+          <summary>Dios no desprecia el corazón quebrantado — Salmo 51</summary>
+          <blockquote>Misericordia, Dios mío, por tu bondad;
+por tu inmensa ternura borra mi culpa.
+Lava del todo mi delito, limpia mi pecado.
+
+Oh Dios, crea en mí un corazón puro,
+renuévame por dentro con espíritu firme;
+no me arrojes lejos de tu rostro,
+no me quites tu santo espíritu.
+
+El sacrificio que pido es un espíritu quebrantado;
+un corazón contrito y humillado tú no lo desprecias, oh Dios.
+<cite>— Salmo 51, 3-4.12-13.19</cite></blockquote>
+        </details>
+        <details class="mer-verse">
+          <summary>Su misericordia se renueva cada mañana — Lamentaciones 3,22-23</summary>
+          <blockquote>Las gracias del Señor no se han agotado,
+su misericordia no tiene fin;
+se renuevan cada mañana.
+¡Cuán grande es tu fidelidad!
+<cite>— Lamentaciones 3, 22-23</cite></blockquote>
+        </details>
+        <details class="mer-verse">
+          <summary>En la noche de la prueba, el Señor es refugio y roca — Salmo 27</summary>
+          <blockquote>El Señor es mi luz y mi salvación,
+¿a quién temeré?
+El Señor es el refugio de mi vida,
+¿quién me hará temblar?
+
+Tengo por fe que veré la bondad del Señor
+en el país de la vida.
+
+Espera al Señor, sé valiente,
+ten ánimo, espera al Señor.
+<cite>— Salmo 27, 1.13-14</cite></blockquote>
+        </details>
+        <details class="mer-verse">
+          <summary>La paz de Cristo custodia mente y corazón — Filipenses 4,6-7</summary>
+          <blockquote>No se preocupen por nada; más bien, oren por todo. Presenten ante Dios sus necesidades y pídanle con acción de gracias. Así experimentarán la paz de Dios, que supera todo entendimiento humano. Esta paz cuidará sus corazones y sus pensamientos mientras vivan en Cristo Jesús.
+<cite>— Filipenses 4, 6-7</cite></blockquote>
+        </details>
+        <details class="mer-verse">
+          <summary>El Padre conoce lo necesario antes de que lo pidamos — Mateo 6,25-34</summary>
+          <blockquote>Por eso les digo: no se preocupen por su vida, qué comerán o qué beberán, ni por su cuerpo, con qué se vestirán. ¿No vale la vida más que el alimento, y el cuerpo más que el vestido?
+
+Miren las aves del cielo: no siembran ni cosechan ni almacenan en graneros, y sin embargo el Padre celestial las alimenta. ¿No son ustedes mucho más valiosos que ellas?
+
+Busquen primero el reino de Dios y su justicia, y todas esas cosas se les darán por añadidura. No se preocupen por el mañana; el mañana traerá su propia preocupación. A cada día le basta su propio afán.
+<cite>— Mateo 6, 25-26.33-34</cite></blockquote>
+        </details>
+      </div>
+      <div data-lang="en" style="display:none">
+        <p class="mer-list" style="padding-left:0;">These words are not mere references—they are God’s answer when we fall.</p>
+        <details class="mer-verse">
+          <summary>God does not despise a broken heart — Psalm 51</summary>
+          <blockquote>Have mercy on me, O God, according to your unfailing love;
+according to your great compassion blot out my transgressions.
+Wash away all my iniquity and cleanse me from my sin.
+
+Create in me a pure heart, O God,
+and renew a steadfast spirit within me.
+Do not cast me from your presence
+or take your Holy Spirit from me.
+
+My sacrifice, O God, is a broken spirit;
+a broken and contrite heart you, God, will not despise.
+<cite>— Psalm 51:1-2, 10-11, 17</cite></blockquote>
+        </details>
+        <details class="mer-verse">
+          <summary>His mercy is new every morning — Lamentations 3:22-23</summary>
+          <blockquote>Because of the LORD’s great love we are not consumed,
+for his compassions never fail.
+They are new every morning;
+great is your faithfulness.
+<cite>— Lamentations 3:22-23</cite></blockquote>
+        </details>
+        <details class="mer-verse">
+          <summary>In the night of trial, the Lord remains refuge and rock — Psalm 27</summary>
+          <blockquote>The LORD is my light and my salvation—
+whom shall I fear?
+The LORD is the stronghold of my life—
+of whom shall I be afraid?
+
+I remain confident of this:
+I will see the goodness of the LORD
+in the land of the living.
+
+Wait for the LORD; be strong
+and take heart and wait for the LORD.
+<cite>— Psalm 27:1, 13-14</cite></blockquote>
+        </details>
+        <details class="mer-verse">
+          <summary>Christ’s peace guards heart and mind — Philippians 4:6-7</summary>
+          <blockquote>Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus.
+<cite>— Philippians 4:6-7</cite></blockquote>
+        </details>
+        <details class="mer-verse">
+          <summary>The Father knows what we need before we ask — Matthew 6:25-34</summary>
+          <blockquote>Therefore I tell you, do not worry about your life, what you will eat or drink; or about your body, what you will wear. Is not life more than food, and the body more than clothes?
+
+Look at the birds of the air; they do not sow or reap or store away in barns, and yet your heavenly Father feeds them. Are you not much more valuable than they?
+
+But seek first his kingdom and his righteousness, and all these things will be given to you as well. Therefore do not worry about tomorrow, for tomorrow will worry about itself. Each day has enough trouble of its own.
+<cite>— Matthew 6:25-26, 33-34</cite></blockquote>
+        </details>
+      </div>
     </section>
 
     <section class="mer-section">
