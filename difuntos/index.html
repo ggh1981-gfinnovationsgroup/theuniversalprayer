@@ -23,16 +23,26 @@
     .dif-hero {
       text-align: center;
       padding: 5rem 1.5rem 3rem;
-      background: radial-gradient(ellipse at 50% 0%, rgba(100,120,180,0.12) 0%, transparent 68%);
+      background: radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.12) 0%, transparent 70%);
     }
     .dif-icon {
-      width: 130px; height: 130px;
+      width: 120px;
+      height: 120px;
       margin: 0 auto 1.5rem;
       display: block;
-      filter: drop-shadow(0 0 20px rgba(130,150,220,0.45));
+      filter: drop-shadow(0 0 18px rgba(201,168,76,0.45));
     }
-    @keyframes dif-pulse { 0%,100%{filter:drop-shadow(0 0 14px rgba(130,150,220,0.38))} 50%{filter:drop-shadow(0 0 28px rgba(130,150,220,0.70))} }
-    .dif-icon { animation: dif-pulse 4s ease-in-out infinite; }
+    @keyframes dif-float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-7px); }
+    }
+    @keyframes dif-pulse {
+      0%, 100% { filter: drop-shadow(0 0 14px rgba(201,168,76,0.34)); }
+      50% { filter: drop-shadow(0 0 24px rgba(201,168,76,0.62)); }
+    }
+    .dif-icon {
+      animation: dif-float 4s ease-in-out infinite, dif-pulse 4s ease-in-out infinite;
+    }
     .dif-badge {
       display: inline-block;
       font-family: var(--font-sans);
@@ -56,16 +66,16 @@
       font-family: var(--font-sans);
       font-size: 0.95rem;
       color: rgba(255,255,255,0.60);
-      max-width: 560px;
+      max-width: 520px;
       margin: 0 auto;
-      line-height: 1.75;
+      line-height: 1.7;
     }
     .dif-content {
-      max-width: 740px;
+      max-width: 720px;
       margin: 0 auto;
-      padding: 0 1.25rem 5rem;
+      padding: 0 1.25rem 4rem;
     }
-    .dif-section { margin-bottom: 3.2rem; }
+    .dif-section { margin-bottom: 3rem; }
     .dif-section-title {
       font-family: var(--font-serif);
       font-size: 1.35rem;
@@ -78,7 +88,7 @@
       font-family: var(--font-sans);
       font-size: 0.95rem;
       color: rgba(255,255,255,0.80);
-      line-height: 1.85;
+      line-height: 1.8;
     }
     .dif-body p { margin: 0 0 1.1rem; }
     .dif-body p:last-child { margin-bottom: 0; }
@@ -88,9 +98,9 @@
       margin: 1.5rem 0;
       font-family: var(--font-serif);
       font-style: italic;
-      color: rgba(255,255,255,0.85);
-      font-size: 0.98rem;
-      line-height: 1.75;
+      color: rgba(255,255,255,0.80);
+      font-size: 0.95rem;
+      line-height: 1.7;
     }
     .dif-scripture cite {
       display: block;
@@ -212,7 +222,7 @@
       font-family: var(--font-serif);
       font-size: 1rem;
       color: rgba(255,255,255,0.88);
-      line-height: 2.0;
+      line-height: 1.9;
       white-space: pre-line;
     }
     .dif-amen {
@@ -313,8 +323,8 @@
     <h1 class="dif-title" data-lang="es">Los Difuntos<br>y el Purgatorio</h1>
     <h1 class="dif-title" data-lang="en" style="display:none">The Faithful Departed<br>and Purgatory</h1>
 
-    <p class="dif-subtitle" data-lang="es">Los que murieron en Cristo no están lejos ni mudos. La Iglesia enseña que los vivos y los muertos seguimos unidos en una misma familia — y que tu oración puede ayudarlos activamente.</p>
-    <p class="dif-subtitle" data-lang="en" style="display:none">Those who died in Christ are neither far nor silent. The Church teaches that the living and the dead remain united in one family — and that your prayer can actively help them.</p>
+    <p class="dif-subtitle" data-lang="es">Si extrañas a alguien que murió, esta página es para ti. En la fe católica, el amor no termina en el cementerio: sigue vivo en la comunión de los santos, y tu oración puede alcanzarlo de verdad.</p>
+    <p class="dif-subtitle" data-lang="en" style="display:none">If you miss someone who has died, this page is for you. In the Catholic faith, love does not end at the cemetery: it remains alive in the communion of saints, and your prayer can truly reach them.</p>
   </section>
 
   <main class="dif-content">
@@ -389,12 +399,12 @@
       </div>
 
       <div class="dif-body" data-lang="es">
-        <p>Esta es una de las verdades más consoladoras del catolicismo: la muerte no separa definitivamente a las personas que se quieren. Cambia la forma de la relación, pero no la rompe. Quien murió en Cristo no ha desaparecido — está en otro estado de la misma Iglesia a la que pertenecemos.</p>
-        <p>Y la comunicación no es de un solo sentido. No solo nosotros podemos ayudar a los difuntos — ellos también pueden interceder por nosotros. Santo Domingo, moribundo, dijo a sus frailes: <em>«No lloréis, os seré más útil después de mi muerte y os ayudaré más eficazmente que durante mi vida.»</em></p>
+        <p>Esta verdad cambia el duelo por dentro: la muerte hiere, pero no destruye la comunión en Cristo. El vínculo real de amor permanece. Quien murió en gracia no fue borrado: sigue perteneciendo a la misma Iglesia que tú, solo que en otro estado.</p>
+        <p>Por eso la relación no queda congelada en el recuerdo. Sigue habiendo intercambio de bienes espirituales: tú puedes ayudarles con sufragios, y ellos pueden interceder por ti. Santo Domingo, al morir, dijo a sus frailes: <em>«No lloréis, os seré más útil después de mi muerte y os ayudaré más eficazmente que durante mi vida.»</em></p>
       </div>
       <div class="dif-body" data-lang="en" style="display:none">
-        <p>This is one of the most consoling truths of Catholicism: death does not definitively separate people who love each other. It changes the form of the relationship, but does not break it. Whoever died in Christ has not disappeared — they are in another state of the same Church to which we belong.</p>
-        <p>And communication is not one-directional. Not only can we help the departed — they can also intercede for us. Saint Dominic, dying, said to his friars: <em>"Do not weep, for I shall be more useful to you after my death and I shall help you then more effectively than during my life."</em></p>
+        <p>This truth changes grief from within: death wounds, but it does not destroy communion in Christ. The real bond of love remains. Whoever died in grace was not erased: they still belong to the same Church as you, only in another state.</p>
+        <p>That is why the relationship does not stay frozen in memory. There is still an exchange of spiritual goods: you can help them with suffrages, and they can intercede for you. Saint Dominic, dying, said to his friars: <em>"Do not weep, for I shall be more useful to you after my death and I shall help you then more effectively than during my life."</em></p>
       </div>
 
       <blockquote class="dif-scripture" data-lang="es">
@@ -469,12 +479,12 @@
       </div>
 
       <div class="dif-body" data-lang="es">
-        <p>San Juan Crisóstomo, en el siglo IV, ya lo predicaba con una lógica irresistible: «¿Por qué habríamos de dudar de que nuestras ofrendas por los muertos les lleven un cierto consuelo? No dudemos, pues, en socorrer a los que han partido y en ofrecer nuestras plegarias por ellos.»</p>
-        <p>Esto convierte cada oración tuya por alguien que murió en un <strong>acto de amor concreto y eficaz</strong>. No es solo un gesto emocional de recordar a alguien — es una acción real que tiene efectos reales en el estado espiritual de esa persona.</p>
+        <p>San Juan Crisóstomo, en el siglo IV, lo predicaba con una claridad impresionante: «¿Por qué habríamos de dudar de que nuestras ofrendas por los muertos les lleven un cierto consuelo? No dudemos, pues, en socorrer a los que han partido y en ofrecer nuestras plegarias por ellos.»</p>
+        <p>Aquí está el punto fuerte: cuando rezas por un difunto, <strong>no estás hablando al vacío</strong>. Estás haciendo un acto de caridad real, eficaz y católico. Tu Rosario, tu Misa ofrecida, tu indulgencia y tu penitencia pueden ser alivio verdadero para un alma concreta.</p>
       </div>
       <div class="dif-body" data-lang="en" style="display:none">
-        <p>Saint John Chrysostom, in the fourth century, was already preaching with irresistible logic: "Why should we doubt that our offerings for the dead bring them a certain consolation? Let us not then be weary in helping those who have departed, and in offering our prayers for them."</p>
-        <p>This makes every prayer you offer for someone who has died a <strong>concrete and effective act of love</strong>. It is not just an emotional gesture of remembering someone — it is a real action with real effects on that person's spiritual state.</p>
+        <p>Saint John Chrysostom, in the fourth century, preached it with striking clarity: "Why should we doubt that our offerings for the dead bring them a certain consolation? Let us not then be weary in helping those who have departed, and in offering our prayers for them."</p>
+        <p>Here is the strong point: when you pray for someone who has died, <strong>you are not speaking into emptiness</strong>. You are making a real, effective, and Catholic act of charity. Your Rosary, your offered Mass, your indulgence, and your penance can be true relief for a concrete soul.</p>
       </div>
 
       <div class="dif-body" data-lang="es">
@@ -567,37 +577,38 @@
 
       <!-- Oración personal -->
       <p class="dif-closing-prayer" data-lang="es">Señor Jesucristo,
-Tú que venciste la muerte y tienes las llaves del Hades y de la Muerte —
-te presento a quienes amo y que ya han partido.
+    Vencedor de la muerte,
+    te presento a las personas que amo y que ya partieron.
 
-[Nombra aquí sus nombres en silencio]
+    [Nombra aquí sus nombres en silencio]
 
-Señor, Tú los conoces mejor que yo.
-Conoces cada momento de sus vidas, cada peso que cargaron,
-cada acto de amor que dieron en silencio,
-cada herida que no pudieron sanar antes de irse.
+    Tú conoces su historia mejor que yo:
+    sus luchas,
+    sus cansancios,
+    sus actos ocultos de amor,
+    y todo lo que quedó herido o incompleto.
 
-Sé misericordioso con ellos.
-Completa en ellos lo que quedó incompleto.
-Termina en ellos la obra que comenzaste.
-Y si todavía están siendo purificados —
-que mi oración de hoy sea para ellos
-como una mano extendida a través del umbral
-que por ahora me impide acompañarlos de otra manera.
+    Ten misericordia de ellos.
+    Purifícalos.
+    Sánalos.
+    Llévalos a la plenitud de tu luz.
 
-Yo sé que no te es difícil llevarles mis palabras.
-Que donde ellos están, Tú también estás.
-Que la distancia que nos separa no es definitiva
-sino temporal.
+    Y si todavía necesitan purificación,
+    recibe esta oración como sufragio:
+    que sea para ellos descanso,
+    consuelo,
+    y esperanza segura.
 
-Un día, en el mundo renovado que prometiste,
-volveremos a estar en comunión plena —
-sin la sombra de la muerte, sin la separación del amor.
+    Yo creo, Señor,
+    que en Ti nadie se pierde,
+    que el amor no termina,
+    y que la comunión de los santos es real.
 
-Hasta ese día: cuídalos.
-Y deja que ellos, desde donde están,
-intercedan también por mí.
-<span class="dif-amen">Amén.</span></p>
+    Hasta el día del reencuentro,
+    guárdalos en tu paz.
+    Y permite que también ellos intercedan por mí,
+    para que un día cantemos juntos tu gloria.
+    <span class="dif-amen">Amén.</span></p>
 
       <p class="dif-closing-prayer" data-lang="en" style="display:none">Lord Jesus Christ,
 You who conquered death and hold the keys of Hades and of Death —
