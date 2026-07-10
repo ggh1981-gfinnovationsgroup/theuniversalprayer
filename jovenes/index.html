@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jóvenes en Cristo | The Universal Prayer</title>
+  <meta name="description" content="Guía católica para jóvenes: identidad, pureza, redes, ansiedad, vocación y sacramentos para vivir con fuerza y verdad." />
+  <meta name="theme-color" content="#c9a84c" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jóvenes en Cristo" />
+  <meta property="og:description" content="Para jóvenes que quieren vivir su fe con fuerza: Biblia, sacramentos, propósito y oración concreta." />
+  <meta property="og:url" content="https://www.theuniversalprayer.com/jovenes/" />
+  <meta property="og:image" content="https://www.theuniversalprayer.com/assets/images/social-home.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Jóvenes en Cristo" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jóvenes en Cristo" />
+  <meta name="twitter:description" content="Guía católica para jóvenes: identidad, pureza, redes, ansiedad, vocación y sacramentos." />
+  <meta name="twitter:image" content="https://www.theuniversalprayer.com/assets/images/social-home.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="apple-touch-icon" href="/assets/images/icon.svg" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23c9a84c'>✝</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    .youth-hero {
+      text-align: center;
+      padding: 5rem 1.5rem 3rem;
+      background: radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.12) 0%, transparent 70%);
+    }
+    .youth-icon {
+      width: 120px;
+      height: 120px;
+      margin: 0.35rem auto 1rem;
+      display: block;
+      filter: drop-shadow(0 0 18px rgba(201,168,76,0.45));
+      animation: youth-float 4s ease-in-out infinite;
+    }
+    @keyframes youth-float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-7px); }
+    }
+    .youth-badge {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(201,168,76,0.3);
+      padding: 0.3em 0.9em;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+    }
+    .youth-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      color: #fff;
+      margin: 0 0 0.75rem;
+      line-height: 1.15;
+    }
+    .youth-subtitle {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.6);
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .youth-content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+    .youth-section { margin-bottom: 3rem; }
+    .youth-section-title {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      color: var(--gold-light);
+      margin: 0 0 1.25rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+    }
+    .youth-text {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.8;
+    }
+    .youth-text p { margin: 0 0 1rem; }
+    .youth-scripture {
+      border-left: 3px solid rgba(201,168,76,0.45);
+      padding: 0.75rem 1.25rem;
+      margin: 1rem 0 1.3rem;
+      font-family: var(--font-serif);
+      font-style: italic;
+      color: rgba(255,255,255,0.85);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+    .youth-scripture cite {
+      display: block;
+      margin-top: 0.35rem;
+      font-size: 0.75rem;
+      font-style: normal;
+      color: var(--gold);
+    }
+    .youth-list {
+      margin: 1rem 0;
+      padding-left: 1.1rem;
+      color: rgba(255,255,255,0.82);
+      font-family: var(--font-sans);
+      line-height: 1.7;
+      font-size: 0.9rem;
+    }
+    .youth-list li { margin-bottom: 0.45rem; }
+    .youth-prayer {
+      background: rgba(201,168,76,0.07);
+      border: 1px solid rgba(201,168,76,0.22);
+      border-radius: 12px;
+      padding: 1.75rem 1.5rem;
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      color: rgba(255,255,255,0.88);
+      line-height: 1.9;
+      white-space: pre-line;
+    }
+    .youth-amen {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      font-size: 1.05rem;
+    }
+    .youth-footer-links { margin-top: 3rem; text-align: center; }
+    .youth-home-link {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--gold);
+      text-decoration: none;
+      opacity: 0.75;
+      transition: opacity 0.2s;
+    }
+    .youth-home-link:hover { opacity: 1; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link"><span class="cross">✝</span><span class="logo-text">The Universal Prayer</span></a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language"><span id="langLabel">EN</span></button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="youth-hero">
+    <a href="/" class="ador-back-link" data-lang="es">← Inicio</a>
+    <a href="/" class="ador-back-link" data-lang="en" style="display:none">← Home</a>
+
+    <img class="youth-icon" src="/assets/images/jovenes.svg" alt="" aria-hidden="true" />
+
+    <div class="youth-badge" data-lang="es">🔥 Juventud católica</div>
+    <div class="youth-badge" data-lang="en" style="display:none">🔥 Catholic youth</div>
+
+    <h1 class="youth-title" data-lang="es">Jóvenes en Cristo</h1>
+    <h1 class="youth-title" data-lang="en" style="display:none">Young in Christ</h1>
+
+    <p class="youth-subtitle" data-lang="es">Presión social, redes, ansiedad, identidad, pureza y propósito. Dios no te llama a sobrevivir tus años jóvenes: te llama a vivirlos con verdad, gracia y fuego.</p>
+    <p class="youth-subtitle" data-lang="en" style="display:none">Social pressure, screens, anxiety, identity, purity, and purpose. God does not call you to merely survive your youth: He calls you to live it with truth, grace, and fire.</p>
+  </section>
+
+  <main class="youth-content">
+    <section class="youth-section">
+      <h2 class="youth-section-title" data-lang="es">1) Tu cuerpo y tu dignidad</h2>
+      <h2 class="youth-section-title" data-lang="en" style="display:none">1) Your body and your dignity</h2>
+      <blockquote class="youth-scripture" data-lang="es">«No sois vuestros... glorificad a Dios en vuestro cuerpo.»<cite>— 1 Corintios 6, 19-20</cite></blockquote>
+      <blockquote class="youth-scripture" data-lang="en" style="display:none">"You are not your own... glorify God in your body."<cite>— 1 Corinthians 6:19-20</cite></blockquote>
+      <div class="youth-text" data-lang="es">
+        <p>No eres mercancía, no eres algoritmo, no eres un cuerpo para exhibir. Eres hijo amado de Dios. Tu pureza no te quita libertad: te devuelve libertad.</p>
+      </div>
+      <div class="youth-text" data-lang="en" style="display:none">
+        <p>You are not a product, not an algorithm, not a body for display. You are a beloved child of God. Purity does not steal your freedom; it restores it.</p>
+      </div>
+    </section>
+
+    <section class="youth-section">
+      <h2 class="youth-section-title" data-lang="es">2) Redes, ansiedad y comparación</h2>
+      <h2 class="youth-section-title" data-lang="en" style="display:none">2) Screens, anxiety, and comparison</h2>
+      <blockquote class="youth-scripture" data-lang="es">«No os conforméis a este mundo, transformaos por la renovación de la mente.»<cite>— Romanos 12, 2</cite></blockquote>
+      <blockquote class="youth-scripture" data-lang="en" style="display:none">"Do not be conformed to this world, but be transformed by the renewal of your mind."<cite>— Romans 12:2</cite></blockquote>
+      <ul class="youth-list" data-lang="es">
+        <li>Si una red te roba paz, ponle límite real.</li>
+        <li>Si te comparas todo el día, apaga la pantalla y ora 5 minutos.</li>
+        <li>Si te sientes solo, busca comunidad real: parroquia, grupo, amigo de fe.</li>
+      </ul>
+      <ul class="youth-list" data-lang="en" style="display:none">
+        <li>If a platform steals your peace, set a real limit.</li>
+        <li>If comparison consumes you, close the screen and pray 5 minutes.</li>
+        <li>If you feel alone, seek real community: parish, group, faith friend.</li>
+      </ul>
+    </section>
+
+    <section class="youth-section">
+      <h2 class="youth-section-title" data-lang="es">3) Lo que el Papa nos pide en esta era</h2>
+      <h2 class="youth-section-title" data-lang="en" style="display:none">3) What the Pope asks of us in this era</h2>
+      <div class="youth-text" data-lang="es">
+        <p>El Papa actual y la Iglesia repiten a los jóvenes que no deben dejarse robar la esperanza, que no sean espectadores de la vida y que no vivan anestesiados por una fe de sofá. El llamado es claro: levántate, discierne, sirve y no escondas la alegría del Evangelio.</p>
+      </div>
+      <div class="youth-text" data-lang="en" style="display:none">
+        <p>The current Pope and the Church keep telling young people not to let anyone steal their hope, not to be spectators of life, and not to live numbed by a sofa faith. The call is clear: get up, discern, serve, and do not hide the joy of the Gospel.</p>
+      </div>
+      <ul class="youth-list" data-lang="es">
+        <li><strong>No te robes la esperanza:</strong> aunque tu entorno sea frío, Cristo sigue vivo.</li>
+        <li><strong>No te quedes mirando:</strong> tu vocación no es ser espectador, sino protagonista del bien.</li>
+        <li><strong>Discierne tu camino:</strong> pregunta a Dios qué quiere de ti y acompáñate bien.</li>
+        <li><strong>Haz lío santo:</strong> no para destruir, sino para despertar el corazón y servir.</li>
+      </ul>
+      <ul class="youth-list" data-lang="en" style="display:none">
+        <li><strong>Do not let hope be stolen:</strong> even if your surroundings are cold, Christ is still alive.</li>
+        <li><strong>Do not stay on the sidelines:</strong> your vocation is not to watch, but to be a protagonist of good.</li>
+        <li><strong>Discern your path:</strong> ask God what He wants from you and walk with good accompaniment.</li>
+        <li><strong>Make holy noise:</strong> not to destroy, but to awaken hearts and serve.</li>
+      </ul>
+    </section>
+
+    <section class="youth-section">
+      <h2 class="youth-section-title" data-lang="es">4) Sacramentos: donde se fortalece un joven</h2>
+      <h2 class="youth-section-title" data-lang="en" style="display:none">4) Sacraments: where a young person is strengthened</h2>
+      <div class="youth-text" data-lang="es">
+        <p>Sin sacramentos, la fe se vuelve idea. Con sacramentos, la fe se vuelve vida.</p>
+      </div>
+      <div class="youth-text" data-lang="en" style="display:none">
+        <p>Without the sacraments, faith becomes an idea. With the sacraments, faith becomes life.</p>
+      </div>
+      <ul class="youth-list" data-lang="es">
+        <li><strong>Confesión frecuente:</strong> para no normalizar el pecado.</li>
+        <li><strong>Eucaristía dominical:</strong> Cristo te alimenta para luchar bien.</li>
+        <li><strong>Adoración:</strong> silencio para escuchar tu vocación y ordenar el corazón.</li>
+      </ul>
+      <ul class="youth-list" data-lang="en" style="display:none">
+        <li><strong>Frequent Confession:</strong> so sin does not become normal.</li>
+        <li><strong>Sunday Eucharist:</strong> Christ feeds you to fight well.</li>
+        <li><strong>Adoration:</strong> silence to hear your vocation and reorder the heart.</li>
+      </ul>
+    </section>
+
+    <section class="youth-section">
+      <h2 class="youth-section-title" data-lang="es">Oración de un joven que quiere volver a empezar</h2>
+      <h2 class="youth-section-title" data-lang="en" style="display:none">Prayer of a young person who wants to begin again</h2>
+      <p class="youth-prayer" data-lang="es">Señor Jesús,
+no quiero vivir a medias.
+
+Sácame de la mentira,
+de la tibieza,
+de la doble vida.
+
+Dame un corazón limpio,
+una mente sobria,
+y una voluntad firme para elegirte cada día.
+
+Enséñame a usar bien mi tiempo,
+mi cuerpo,
+y mis relaciones.
+
+Hazme valiente para confesarme,
+constante para comulgar con fe,
+y fiel para servir con alegría.
+
+Que mi juventud no se desperdicie,
+sino que te glorifique.
+<span class="youth-amen">Amén.</span></p>
+
+      <p class="youth-prayer" data-lang="en" style="display:none">Lord Jesus,
+I do not want to live halfway.
+
+Pull me out of lies,
+lukewarmness,
+and double life.
+
+Give me a clean heart,
+a sober mind,
+and a firm will to choose You each day.
+
+Teach me to use well my time,
+my body,
+and my relationships.
+
+Make me brave to go to Confession,
+constant to receive Communion with faith,
+and faithful to serve with joy.
+
+May my youth not be wasted,
+but glorify You.
+<span class="youth-amen">Amen.</span></p>
+    </section>
+
+    <div class="youth-footer-links">
+      <a href="/" class="youth-home-link" data-lang="es">← Volver al inicio</a>
+      <a href="/" class="youth-home-link" data-lang="en" style="display:none">← Back to home</a>
+    </div>
+  </main>
+
+  <script>
+  (function() {
+    'use strict';
+    const LANG_KEY = 'universalPrayerLang';
+    let lang = localStorage.getItem(LANG_KEY) || 'es';
+    function applyLang(l) {
+      lang = l;
+      localStorage.setItem(LANG_KEY, l);
+      document.documentElement.lang = l === 'en' ? 'en' : 'es';
+      document.getElementById('langLabel').textContent = l === 'en' ? 'ES' : 'EN';
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.dataset.lang === l ? '' : 'none';
+      });
+    }
+    document.getElementById('langToggle').addEventListener('click', () => {
+      applyLang(lang === 'es' ? 'en' : 'es');
+      window.dispatchEvent(new CustomEvent('tup:langchange', { detail: lang }));
+    });
+    applyLang(lang);
+  })();
+  </script>
+  <script src="../assets/js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130" role="img" aria-hidden="true">
+  <defs>
+    <radialGradient id="youthGlow" cx="50%" cy="40%" r="58%">
+      <stop offset="0%" stop-color="#fff6cf" stop-opacity="1"/>
+      <stop offset="60%" stop-color="#d8a040" stop-opacity="0.86"/>
+      <stop offset="100%" stop-color="#d8a040" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="65" cy="65" r="56" fill="url(#youthGlow)" opacity="0.34"/>
+  <circle cx="65" cy="52" r="20" fill="none" stroke="#f8e888" stroke-width="3"/>
+  <line x1="65" y1="34" x2="65" y2="70" stroke="#f8e888" stroke-width="4" stroke-linecap="round"/>
+  <line x1="49" y1="48" x2="81" y2="48" stroke="#f8e888" stroke-width="4" stroke-linecap="round"/>
+  <path d="M65 76 L47 102 L83 102 Z" fill="none" stroke="#f8e888" stroke-width="3"/>
+</svg>

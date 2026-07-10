@@ -38,6 +38,7 @@
     { id: 'enemigos', href: '/enemigos/', labels: { es: 'Bendecir enemigos', en: 'Bless enemies' }, icon: '🤍' },
     { id: 'espiritu', href: '/espiritu/', labels: { es: 'Espíritu Santo', en: 'Holy Spirit' }, icon: '🕊️' },
     { id: 'llamados', href: '/llamados/', labels: { es: 'Altar de Llamados', en: 'Call Altar' }, icon: '🌟' },
+    { id: 'jovenes', href: '/jovenes/', labels: { es: 'Jóvenes en Cristo', en: 'Young in Christ' }, icon: '🔥' },
     { id: 'matrimonio', href: '/matrimonio/', labels: { es: 'Matrimonio', en: 'Marriage' }, icon: '💍' },
     { id: 'meses', href: '/meses/', labels: { es: 'Meses Devocionales', en: 'Devotional Months' }, icon: '📅' },
     { id: 'misericordia', href: '/misericordia/', labels: { es: 'Perdón y Misericordia', en: 'Mercy & Repentance' }, icon: '🕯️' },
