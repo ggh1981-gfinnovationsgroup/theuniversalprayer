@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="jb-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#0f1218"/>
+      <stop offset="100%" stop-color="#040507"/>
+    </radialGradient>
+    <linearGradient id="jb-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#1f3f8f" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0d1e45" stop-opacity="0.42"/>
+    </linearGradient>
+    <linearGradient id="jb-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f5e060" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="jb-gl">
+      <feGaussianBlur stdDeviation="9" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="400" height="600" fill="url(#jb-bg)"/>
+  <rect width="400" height="600" fill="#1a2d55" opacity="0.12"/>
+  <polygon points="198,265 -25,610 115,610" fill="url(#jb-r1)" filter="url(#jb-gl)" opacity="0.72"/>
+  <polygon points="202,265 425,610 285,610" fill="url(#jb-r2)" filter="url(#jb-gl)" opacity="0.70"/>
+
+  <path d="M168,155 Q140,205 126,390 Q200,415 274,390 Q260,205 232,155 Z" fill="#202832" opacity="0.93"/>
+  <path d="M168,155 Q124,192 108,318 Q122,330 148,312 Q150,228 178,168 Z" fill="#141b24" opacity="0.88"/>
+  <path d="M232,155 Q260,198 270,318 Q290,322 296,300 Q286,198 248,158 Z" fill="#141b24" opacity="0.82"/>
+  <path d="M130,275 Q200,285 270,275" stroke="#d4b060" stroke-width="3" fill="none" opacity="0.62"/>
+
+  <path d="M140,215 Q92,218 72,208" stroke="#202832" stroke-width="17" fill="none" stroke-linecap="round" opacity="0.86"/>
+  <path d="M260,215 Q308,218 328,208" stroke="#141b24" stroke-width="16" fill="none" stroke-linecap="round" opacity="0.82"/>
+  <ellipse cx="71" cy="206" rx="12" ry="15" fill="#c8a060" opacity="0.9"/>
+  <ellipse cx="329" cy="206" rx="12" ry="15" fill="#c8a060" opacity="0.9"/>
+
+  <line x1="200" y1="190" x2="200" y2="240" stroke="#d4e6ff" stroke-width="4" opacity="0.82"/>
+  <line x1="186" y1="206" x2="214" y2="206" stroke="#d4e6ff" stroke-width="4" opacity="0.82"/>
+
+  <rect x="193" y="142" width="14" height="16" rx="4" fill="#c8a060" opacity="0.9"/>
+  <ellipse cx="200" cy="108" rx="26" ry="30" fill="#c8a060" opacity="0.92"/>
+  <path d="M174,107 Q176,72 200,68 Q224,72 226,107 Q219,86 200,84 Q181,86 174,107 Z" fill="#1b1b1b" opacity="0.86"/>
+
+  <ellipse cx="190" cy="108" rx="3.8" ry="3" fill="#120909"/>
+  <ellipse cx="210" cy="108" rx="3.8" ry="3" fill="#120909"/>
+  <circle cx="191" cy="107" r="1" fill="#ffffff" opacity="0.45"/>
+  <circle cx="211" cy="107" r="1" fill="#ffffff" opacity="0.45"/>
+  <path d="M191,122 Q200,129 209,122" fill="none" stroke="#4a3a2b" stroke-width="2" stroke-linecap="round"/>
+
+  <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65"/>
+
+  <g opacity="0.84">
+    <circle cx="110" cy="485" r="8" fill="#9fb6dc"/>
+    <circle cx="125" cy="492" r="7" fill="#9fb6dc"/>
+    <circle cx="140" cy="486" r="6" fill="#9fb6dc"/>
+  </g>
+  <g opacity="0.84">
+    <path d="M280 494 q18 -12 32 0" fill="none" stroke="#9fb6dc" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#0a0502" opacity="0.86"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="2">SAN JUAN BOSCO - SAINT JOHN BOSCO</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#d09840" font-style="italic">Youth and education</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#f5e060" font-style="italic" opacity="0.8">Father and teacher of youth</text>
+</svg>

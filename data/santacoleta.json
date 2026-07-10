@@ -1,0 +1,71 @@
+{
+  "id": "santacoleta",
+  "name": {
+    "es": "Santa Coleta de Corbie",
+    "en": "Saint Colette of Corbie"
+  },
+  "jaculatoria": {
+    "es": "Santa Coleta de Corbie, reformadora de la pobreza franciscana, ruega por nosotros.",
+    "en": "Saint Colette of Corbie, reformer of Franciscan poverty, pray for us."
+  },
+  "feast_day": {
+    "es": "6 de marzo",
+    "en": "March 6"
+  },
+  "image": "/assets/images/santacoleta.svg",
+  "specialty": {
+    "es": "Pobreza franciscana y reforma",
+    "en": "Franciscan poverty & reform"
+  },
+  "prayer": {
+    "es": "Santa Coleta de Corbie, hija de San Francisco en el espíritu de la pobreza, intercede por nosotros.
+
+Tú que reformaste a las Clarisas para volver a la sencillez del Evangelio, enséñanos a no vivir para el aplauso ni para el exceso, sino para la verdad. Haznos amar la obediencia, la austeridad y la oración escondida que sostiene la Iglesia desde dentro.
+
+Tú que fuiste buscadora de la reforma sin dureza, danos valentía para corregir lo que está mal sin perder la ternura. Que sepamos volver siempre al origen: Cristo pobre, humilde y crucificado.
+
+Santa Coleta, amiga de la cruz y de la reforma santa, ruega por nosotros. Amén.",
+    "en": "Saint Colette of Corbie, daughter of Saint Francis in the spirit of poverty, intercede for us.
+
+You who reformed the Poor Clares to return them to the simplicity of the Gospel, teach us not to live for applause or excess, but for truth. Make us love obedience, austerity, and the hidden prayer that sustains the Church from within.
+
+You who sought reform without harshness, give us courage to correct what is wrong without losing tenderness. May we always return to the beginning: Christ poor, humble, and crucified.
+
+Saint Colette, friend of the Cross and of holy reform, pray for us. Amen."
+  },
+  "history": {
+    "es": "Nació en Corbie, en Picardía, en 1381, hija de una familia humilde. Quedó huérfana muy joven y vivió varios años como reclusa y terciaria franciscana, buscando a Dios en el silencio. Su vida cambió cuando comenzó a sentir una llamada a reformar la Orden de las Clarisas, que en su época necesitaba volver a la pobreza radical de Santa Clara y San Francisco.
+
+Con la aprobación de la Iglesia, fundó las Hermanas de la Pobre Vida de Santa Clara, conocidas como las Coletinas. Su reforma no fue solo disciplinaria: fue profundamente espiritual. Insistía en la pobreza, el ayuno, la oración prolongada y la vida fraterna sencilla. Recorrió Francia y otras regiones fundando conventos y renovando comunidades decadentes.
+
+Murió en 1447 dejando una familia espiritual extensa y viva. La Iglesia la reconoce como una de las grandes reformadoras franciscanas, ejemplo de fidelidad al carisma original sin amargura ni vanidad. Su fiesta se celebra el 6 de marzo.",
+    "en": "She was born in Corbie, in Picardy, in 1381, the daughter of a humble family. She was orphaned at a young age and spent several years as a recluse and Franciscan tertiary, seeking God in silence. Her life changed when she began to sense a call to reform the Order of the Poor Clares, which in her time needed to return to the radical poverty of Saint Clare and Saint Francis.
+
+With the approval of the Church, she founded the Sisters of the Poor Life of Saint Clare, known as the Colettines. Her reform was not merely disciplinary: it was deeply spiritual. She insisted on poverty, fasting, prolonged prayer, and simple fraternal life. She traveled through France and other regions founding convents and renewing decadent communities.
+
+She died in 1447, leaving a large and living spiritual family. The Church recognizes her as one of the great Franciscan reformers, an example of fidelity to the original charism without bitterness or vanity. Her feast is celebrated on March 6."
+  },
+  "novena_prayers": {
+    "es": "Novena a Santa Coleta de Corbie\n\nCada día:\n1. Señal de la Cruz.\n2. 1 Padre Nuestro, 1 Ave María y 1 Gloria.\n3. Medita el día.\n4. Repite: «Santa Coleta, llévame a la sencillez del Evangelio».\n\nRecomendada para quienes quieren ordenar su vida, vivir con menos y orar con más verdad.",
+    "en": "Novena to Saint Colette of Corbie\n\nEach day:\n1. Sign of the Cross.\n2. 1 Our Father, 1 Hail Mary, and 1 Glory Be.\n3. Meditate on the day.\n4. Repeat: 'Saint Colette, lead me to the simplicity of the Gospel.'\n\nRecommended for those who want to order their life, live with less, and pray with more truth."
+  },
+  "novena": [
+    { "day": 1, "es": "Día 1 — Volver al origen.\n\nSanta Coleta, tú quisiste volver al Evangelio limpio de adornos. Ayúdame a buscar lo esencial y a dejar lo que me dispersa.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 1 — Returning to the beginning.\n\nSaint Colette, you wanted to return to the Gospel stripped of ornaments. Help me seek what is essential and let go of what scatters me.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 2, "es": "Día 2 — La pobreza que libera.\n\nSanta Coleta, la pobreza evangélica te hizo libre. Enséñame a usar bien los bienes sin ser esclavo de ellos.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 2 — Poverty that frees.\n\nSaint Colette, evangelical poverty made you free. Teach me to use goods well without becoming their slave.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 3, "es": "Día 3 — La reforma del corazón.\n\nSanta Coleta, supiste renovar a otros porque primero dejaste que Dios te reformara a ti. Corrige mi corazón sin dureza.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 3 — Reform of the heart.\n\nSaint Colette, you knew how to renew others because first you let God reform you. Correct my heart without harshness.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 4, "es": "Día 4 — La obediencia.\n\nSanta Coleta, obedeciste a la Iglesia y eso dio fruto. Enséñame a obedecer con alegría cuando Dios me pide caminos humildes.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 4 — Obedience.\n\nSaint Colette, you obeyed the Church and it bore fruit. Teach me to obey with joy when God asks me to walk humble paths.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 5, "es": "Día 5 — La oración escondida.\n\nSanta Coleta, tu fuerza nacía del silencio y la adoración. Dame amor por la oración que nadie ve pero que sostiene todo.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 5 — Hidden prayer.\n\nSaint Colette, your strength came from silence and adoration. Give me love for the prayer no one sees but that sustains everything.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 6, "es": "Día 6 — La ternura al corregir.\n\nSanta Coleta, reformaste sin quebrar. Enséñame a corregir con verdad y mansedumbre.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 6 — Tenderness in correction.\n\nSaint Colette, you reformed without crushing. Teach me to correct with truth and meekness.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 7, "es": "Día 7 — La Iglesia renovada desde dentro.\n\nSanta Coleta, mostraste que la reforma verdadera empieza en lo pequeño y fiel. Hazme un instrumento de renovación en mi casa, parroquia y trabajo.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 7 — The Church renewed from within.\n\nSaint Colette, you showed that true reform begins in the small and faithful. Make me an instrument of renewal in my home, parish, and work.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 8, "es": "Día 8 — Cristo pobre y crucificado.\n\nSanta Coleta, tu mirada estaba fija en Cristo pobre y crucificado. Que yo no me avergüence nunca del Evangelio de la cruz.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 8 — Christ poor and crucified.\n\nSaint Colette, your gaze was fixed on Christ poor and crucified. May I never be ashamed of the Gospel of the Cross.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 9, "es": "Día 9 — Perseverar en lo pequeño.\n\nSanta Coleta de Corbie, que persevere en la sencillez, la pobreza y la oración. Que mi vida sea pequeña ante el mundo, pero grande ante Dios.\n\nSanta Coleta, ruega por nosotros.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 9 — Persevering in the small.\n\nSaint Colette of Corbie, may I persevere in simplicity, poverty, and prayer. May my life be small before the world but great before God.\n\nSaint Colette, pray for us.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." }
+  ],
+  "chaplet": { "available": false },
+  "litany": {
+    "available": true,
+    "es": "Letanía a Santa Coleta de Corbie\n\nSeñor, ten piedad. Cristo, ten piedad. Señor, ten piedad.\nCristo, óyenos. Cristo, escúchanos.\nDios Padre celestial, ten misericordia de nosotros.\nDios Hijo, Redentor del mundo, ten misericordia de nosotros.\nDios Espíritu Santo, ten misericordia de nosotros.\nSantísima Trinidad, un solo Dios, ten misericordia de nosotros.\n\nSanta Coleta de Corbie, reformadora humilde, ruega por nosotros.\nSanta Coleta de Corbie, hija de San Francisco en el espíritu, ruega por nosotros.\nSanta Coleta de Corbie, amiga de la pobreza santa, ruega por nosotros.\nSanta Coleta de Corbie, restauradora de las Clarisas, ruega por nosotros.\nSanta Coleta de Corbie, mujer de oración escondida, ruega por nosotros.\nSanta Coleta de Corbie, maestra de sencillez, ruega por nosotros.\nSanta Coleta de Corbie, modelo de obediencia, ruega por nosotros.\nSanta Coleta de Corbie, testigo de reforma sin dureza, ruega por nosotros.\n\nCordero de Dios, que quitas el pecado del mundo, perdónanos, Señor.\nCordero de Dios, que quitas el pecado del mundo, escúchanos, Señor.\nCordero de Dios, que quitas el pecado del mundo, ten misericordia de nosotros.\n\nV. Ruega por nosotros, Santa Coleta.\nR. Para que seamos dignos de las promesas de Cristo.\n\nOremos: Dios de la sencillez y la reforma, que hiciste de Santa Coleta de Corbie una restauradora del carisma franciscano, concédenos buscar siempre la verdad del Evangelio y vivirla con humildad. Por Cristo nuestro Señor. Amén.",
+    "en": "Litany to Saint Colette of Corbie\n\nLord, have mercy. Christ, have mercy. Lord, have mercy.\nChrist, hear us. Christ, graciously hear us.\nGod the Father in heaven, have mercy on us.\nGod the Son, Redeemer of the world, have mercy on us.\nGod the Holy Spirit, have mercy on us.\nHoly Trinity, one God, have mercy on us.\n\nSaint Colette of Corbie, humble reformer, pray for us.\nSaint Colette of Corbie, daughter of Saint Francis in spirit, pray for us.\nSaint Colette of Corbie, friend of holy poverty, pray for us.\nSaint Colette of Corbie, restorer of the Poor Clares, pray for us.\nSaint Colette of Corbie, woman of hidden prayer, pray for us.\nSaint Colette of Corbie, teacher of simplicity, pray for us.\nSaint Colette of Corbie, model of obedience, pray for us.\nSaint Colette of Corbie, witness of reform without harshness, pray for us.\n\nLamb of God, who takes away the sins of the world, forgive us, O Lord.\nLamb of God, who takes away the sins of the world, graciously hear us, O Lord.\nLamb of God, who takes away the sins of the world, have mercy on us.\n\nV. Pray for us, Saint Colette.\nR. That we may be made worthy of the promises of Christ.\n\nLet us pray: God of simplicity and reform, who made Saint Colette of Corbie a restorer of the Franciscan charism, grant us always to seek the truth of the Gospel and to live it with humility. Through Christ our Lord. Amen."
+  },
+  "consecration": { "available": false },
+  "miracles": { "available": false }
+}

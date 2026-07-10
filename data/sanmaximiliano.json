@@ -1,0 +1,71 @@
+{
+  "id": "sanmaximiliano",
+  "name": {
+    "es": "San Maximiliano María Kolbe",
+    "en": "Saint Maximilian Mary Kolbe"
+  },
+  "jaculatoria": {
+    "es": "San Maximiliano María Kolbe, caballero de la Inmaculada, enséñanos a amar sin medida.",
+    "en": "Saint Maximilian Mary Kolbe, knight of the Immaculata, teach us to love without measure."
+  },
+  "feast_day": {
+    "es": "14 de agosto",
+    "en": "August 14"
+  },
+  "image": "/assets/images/sanmaximiliano.svg",
+  "specialty": {
+    "es": "Consagración mariana y entrega total",
+    "en": "Marian consecration & total self-gift"
+  },
+  "prayer": {
+    "es": "San Maximiliano María Kolbe, fraile franciscano que amaste a la Inmaculada con un corazón sin reservas, intercede por nosotros.
+
+Tú que enseñaste a muchos a consagrarse a María para pertenecer más plenamente a Cristo, danos un amor puro, valiente y misionero. Enséñanos a usar bien la palabra, la técnica y los medios de comunicación para el Evangelio, no para el ego.
+
+Tú que entregaste tu vida en Auschwitz para salvar a un padre de familia, haznos entender que no hay amor más grande que dar la vida por los hermanos. Obtén para nosotros la gracia de vivir sin miedo, de servir sin calcular y de morir en la caridad si Dios nos lo pide.
+
+San Maximiliano Kolbe, mártir de la caridad, ruega por nosotros. Amén.",
+    "en": "Saint Maximilian Mary Kolbe, Franciscan friar who loved the Immaculata with a heart without reserve, intercede for us.
+
+You who taught many to consecrate themselves to Mary so as to belong more fully to Christ, give us a pure, courageous, and missionary love. Teach us to use words, technology, and media for the Gospel, not for the ego.
+
+You who gave your life in Auschwitz to save a family man, help us understand that there is no greater love than to lay down one's life for one's brothers. Obtain for us the grace to live without fear, to serve without calculating, and to die in charity if God asks it of us.
+
+Saint Maximilian Kolbe, martyr of charity, pray for us. Amen."
+  },
+  "history": {
+    "es": "Raymund Kolbe nació en 1894 en Zduńska Wola, Polonia, en una familia pobre y profundamente cristiana. De joven tuvo una visión en la que la Virgen le mostró dos coronas: una blanca, símbolo de pureza, y otra roja, símbolo de martirio. Él respondió que aceptaba ambas. A los trece años ingresó al seminario menor franciscano y más tarde tomó el nombre de Maximiliano María.
+
+Se formó como fraile menor conventual y desarrolló una intensa pasión por la Inmaculada Concepción, a quien llamó el camino más seguro hacia Cristo. Fundó la Milicia de la Inmaculada, una asociación dedicada a la conversión de los pecadores y al uso de los medios modernos para evangelizar. En Japón levantó un monasterio que se convertiría en signo de su audacia misionera.
+
+Durante la ocupación nazi fue arrestado y deportado a Auschwitz. Cuando un preso fue condenado a morir por represalia, Maximiliano se ofreció para ocupar su lugar. Tras semanas de hambre y oración en el búnker subterráneo, fue rematado con una inyección letal el 14 de agosto de 1941. Juan Pablo II lo canonizó en 1982 como mártir de la caridad.",
+    "en": "Raymund Kolbe was born in 1894 in Zduńska Wola, Poland, into a poor and deeply Christian family. As a young man he had a vision in which the Virgin showed him two crowns: one white, symbolizing purity, and one red, symbolizing martyrdom. He answered that he accepted both. At thirteen he entered the Franciscan minor seminary and later took the name Maximilian Mary.
+
+He was formed as a Conventual Franciscan friar and developed an intense devotion to the Immaculate Conception, whom he called the surest path to Christ. He founded the Militia of the Immaculata, an association dedicated to the conversion of sinners and the use of modern means for evangelization. In Japan he built a monastery that became a sign of his missionary boldness.
+
+Under Nazi occupation he was arrested and deported to Auschwitz. When a prisoner was condemned to die in retaliation, Maximilian offered to take his place. After weeks of hunger and prayer in the underground bunker, he was finished off by lethal injection on August 14, 1941. John Paul II canonized him in 1982 as a martyr of charity."
+  },
+  "novena_prayers": {
+    "es": "Novena a San Maximiliano María Kolbe\n\nCada día:\n1. Señal de la Cruz.\n2. 1 Padre Nuestro, 1 Ave María y 1 Gloria.\n3. Lee la meditación del día.\n4. Repite: «San Maximiliano Kolbe, hazme pertenecer a Cristo por María».\n\nEspecialmente recomendada para jóvenes, evangelizadores, comunicadores, presos, familias y quienes quieren vivir la pureza con alegría.",
+    "en": "Novena to Saint Maximilian Mary Kolbe\n\nEach day:\n1. Sign of the Cross.\n2. 1 Our Father, 1 Hail Mary, and 1 Glory Be.\n3. Read the day's meditation.\n4. Repeat: 'Saint Maximilian Kolbe, make me belong to Christ through Mary.'\n\nEspecially recommended for young people, evangelizers, communicators, prisoners, families, and those who want to live purity with joy."
+  },
+  "novena": [
+    { "day": 1, "es": "Día 1 — La corona blanca.\n\nSan Maximiliano, viste la pureza como una corona ofrecida a Cristo. Enséñanos a amar sin doblez y a rechazar lo que ensucia el corazón.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 1 — The white crown.\n\nSaint Maximilian, you wore purity like a crown offered to Christ. Teach us to love without duplicity and to reject what stains the heart.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 2, "es": "Día 2 — La corona roja.\n\nSan Maximiliano, aceptaste el martirio antes que negar el amor. Danos valentía para elegir a Cristo cuando cueste.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 2 — The red crown.\n\nSaint Maximilian, you accepted martyrdom rather than deny love. Give us courage to choose Christ when it costs.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 3, "es": "Día 3 — La Inmaculada.\n\nSan Maximiliano, tu corazón fue de María para ser más de Jesús. Enséñanos la consagración total y la confianza filial.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 3 — The Immaculata.\n\nSaint Maximilian, your heart belonged to Mary so that it might belong more fully to Jesus. Teach us total consecration and filial trust.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 4, "es": "Día 4 — Los medios modernos.\n\nSan Maximiliano, supiste usar la prensa y la técnica para el Evangelio. Purifica nuestras pantallas, nuestras palabras y nuestras redes.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 4 — Modern means.\n\nSaint Maximilian, you knew how to use the press and technology for the Gospel. Purify our screens, our words, and our networks.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 5, "es": "Día 5 — La caridad concreta.\n\nSan Maximiliano, no amaste en teoría: amaste sirviendo. Haznos pasar de la emoción a la entrega real por el prójimo.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 5 — Concrete charity.\n\nSaint Maximilian, you did not love in theory: you loved by serving. Move us from emotion to real self-gift for our neighbor.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 6, "es": "Día 6 — El padre de familia salvado.\n\nSan Maximiliano, entregarte por un padre de familia nos enseña que cada vida vale. Intercede por los padres, las madres y los hijos en peligro.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 6 — The saved father of a family.\n\nSaint Maximilian, giving yourself for a family man teaches us that every life matters. Intercede for fathers, mothers, and children in danger.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 7, "es": "Día 7 — Miedo y libertad.\n\nSan Maximiliano, en el hambre del búnker no perdiste la paz. Libéranos del miedo que nos hace vivir encerrados en nosotros mismos.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 7 — Fear and freedom.\n\nSaint Maximilian, in the hunger of the bunker you did not lose peace. Free us from the fear that makes us live locked inside ourselves.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 8, "es": "Día 8 — Evangelizar con alegría.\n\nSan Maximiliano, tu celo misionero no fue amargo sino ardiente. Enséñanos a anunciar a Cristo con gozo y claridad.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 8 — Evangelize with joy.\n\nSaint Maximilian, your missionary zeal was not bitter but ardent. Teach us to announce Christ with joy and clarity.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 9, "es": "Día 9 — Pertenecer enteramente.\n\nSan Maximiliano, que toda mi vida pertenezca a Jesús por María. Que nada en mí quede para el ego, el pecado o el miedo.\n\nSan Maximiliano Kolbe, ruega por nosotros.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 9 — To belong completely.\n\nSaint Maximilian, may my whole life belong to Jesus through Mary. May nothing in me remain for ego, sin, or fear.\n\nSaint Maximilian Kolbe, pray for us.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." }
+  ],
+  "chaplet": { "available": false },
+  "litany": {
+    "available": true,
+    "es": "Letanía a San Maximiliano María Kolbe\n\nSeñor, ten piedad. Cristo, ten piedad. Señor, ten piedad.\nCristo, óyenos. Cristo, escúchanos.\nDios Padre celestial, ten misericordia de nosotros.\nDios Hijo, Redentor del mundo, ten misericordia de nosotros.\nDios Espíritu Santo, ten misericordia de nosotros.\nSantísima Trinidad, un solo Dios, ten misericordia de nosotros.\n\nSan Maximiliano María Kolbe, caballero de la Inmaculada, ruega por nosotros.\nSan Maximiliano María Kolbe, amigo de los jóvenes, ruega por nosotros.\nSan Maximiliano María Kolbe, misionero de la prensa, ruega por nosotros.\nSan Maximiliano María Kolbe, predicador de la consagración mariana, ruega por nosotros.\nSan Maximiliano María Kolbe, mártir de la caridad, ruega por nosotros.\nSan Maximiliano María Kolbe, testigo de Auschwitz, ruega por nosotros.\nSan Maximiliano María Kolbe, modelo de pureza y entrega, ruega por nosotros.\nSan Maximiliano María Kolbe, apóstol de la Inmaculada, ruega por nosotros.\n\nCordero de Dios, que quitas el pecado del mundo, perdónanos, Señor.\nCordero de Dios, que quitas el pecado del mundo, escúchanos, Señor.\nCordero de Dios, que quitas el pecado del mundo, ten misericordia de nosotros.\n\nV. Ruega por nosotros, San Maximiliano Kolbe.\nR. Para que seamos dignos de las promesas de Cristo.\n\nOremos: Señor Dios, que encendiste en San Maximiliano un amor total por la Inmaculada y una caridad heroica por los hermanos, concédenos vivir consagrados a Ti y servir sin miedo. Por Cristo nuestro Señor. Amén.",
+    "en": "Litany to Saint Maximilian Mary Kolbe\n\nLord, have mercy. Christ, have mercy. Lord, have mercy.\nChrist, hear us. Christ, graciously hear us.\nGod the Father in heaven, have mercy on us.\nGod the Son, Redeemer of the world, have mercy on us.\nGod the Holy Spirit, have mercy on us.\nHoly Trinity, one God, have mercy on us.\n\nSaint Maximilian Mary Kolbe, knight of the Immaculata, pray for us.\nSaint Maximilian Mary Kolbe, friend of the young, pray for us.\nSaint Maximilian Mary Kolbe, missionary of the press, pray for us.\nSaint Maximilian Mary Kolbe, preacher of Marian consecration, pray for us.\nSaint Maximilian Mary Kolbe, martyr of charity, pray for us.\nSaint Maximilian Mary Kolbe, witness of Auschwitz, pray for us.\nSaint Maximilian Mary Kolbe, model of purity and self-gift, pray for us.\nSaint Maximilian Mary Kolbe, apostle of the Immaculata, pray for us.\n\nLamb of God, who takes away the sins of the world, forgive us, O Lord.\nLamb of God, who takes away the sins of the world, graciously hear us, O Lord.\nLamb of God, who takes away the sins of the world, have mercy on us.\n\nV. Pray for us, Saint Maximilian Kolbe.\nR. That we may be made worthy of the promises of Christ.\n\nLet us pray: Lord God, who kindled in Saint Maximilian a total love for the Immaculata and heroic charity for his brothers, grant us to live consecrated to You and to serve without fear. Through Christ our Lord. Amen."
+  },
+  "consecration": { "available": false },
+  "miracles": { "available": false }
+}

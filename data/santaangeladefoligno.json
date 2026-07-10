@@ -1,0 +1,71 @@
+{
+  "id": "santaangeladefoligno",
+  "name": {
+    "es": "Santa Ángela de Foligno",
+    "en": "Saint Angela of Foligno"
+  },
+  "jaculatoria": {
+    "es": "Santa Ángela de Foligno, maestra de conversión y amor crucificado, ruega por nosotros.",
+    "en": "Saint Angela of Foligno, teacher of conversion and crucified love, pray for us."
+  },
+  "feast_day": {
+    "es": "4 de enero",
+    "en": "January 4"
+  },
+  "image": "/assets/images/santaangeladefoligno.svg",
+  "specialty": {
+    "es": "Conversión interior y penitencia",
+    "en": "Interior conversion & penance"
+  },
+  "prayer": {
+    "es": "Santa Ángela de Foligno, madre, viuda y mística franciscana que encontraste a Dios en el derrumbe de tus seguridades, intercede por nosotros.
+
+Tú que pasaste de una vida acomodada a la desnudez interior del arrepentimiento, enséñanos a no huir de la verdad sobre nosotros mismos. Haznos amar la confesión, la humildad y la oración silenciosa donde el alma se deja mirar por Dios.
+
+Tú que abriste para tantos el camino de la conversión por medio de tus palabras ardientes y sencillas, danos un corazón libre de autoengaño y dispuesto a la misericordia. Que aprendamos a llorar por nuestros pecados sin desesperar, y a amar a Cristo con una fe madura.
+
+Santa Ángela de Foligno, amiga del Crucificado, ruega por nosotros. Amén.",
+    "en": "Saint Angela of Foligno, mother, widow, and Franciscan mystic who found God in the collapse of your securities, intercede for us.
+
+You who moved from a comfortable life to the interior nakedness of repentance, teach us not to flee the truth about ourselves. Make us love Confession, humility, and the silent prayer where the soul lets itself be seen by God.
+
+You who opened the path of conversion for many through your fiery and simple words, give us a heart free from self-deception and ready for mercy. May we learn to weep for our sins without despairing, and to love Christ with mature faith.
+
+Saint Angela of Foligno, friend of the Crucified, pray for us. Amen."
+  },
+  "history": {
+    "es": "Ángela nació hacia 1248 en Foligno, en Umbría, en una familia acomodada. Se casó, tuvo hijos y llevó durante años una vida mundana y distraída, hasta que una serie de pérdidas la sacudió profundamente: murió su madre, luego varios familiares, y finalmente su esposo e hijos. Fue entonces cuando comenzó su conversión.
+
+Acudió a un fraile franciscano llamado Fray Arnaldo, a quien llamó su "hijo espiritual", y le abrió el alma sin reservas. De aquella relación de dirección espiritual nació uno de los testimonios místicos más influyentes de la Edad Media: el Memorial, donde Ángela describe su camino de penitencia, visión del Crucificado y creciente unión con Dios.
+
+Vivió luego como terciaria franciscana en Foligno, entregada a la oración, la caridad y la penitencia. Murió el 4 de enero de 1309. La Iglesia la ha presentado como modelo de conversión adulta: no solo para quienes empiezan jóvenes, sino para quienes descubren tarde que Dios los estaba buscando desde siempre.",
+    "en": "Angela was born around 1248 in Foligno, Umbria, into a wealthy family. She married, had children, and for years lived a worldly and distracted life until a series of losses shook her deeply: her mother died, then several relatives, and finally her husband and children. It was then that her conversion began.
+
+She turned to a Franciscan friar named Brother Arnold, whom she called her "spiritual son," and opened her soul to him without reserve. From that spiritual direction emerged one of the most influential mystical testimonies of the Middle Ages: the Memorial, where Angela describes her path of penance, vision of the Crucified, and growing union with God.
+
+She later lived as a Franciscan tertiary in Foligno, devoted to prayer, charity, and penance. She died on January 4, 1309. The Church has presented her as a model of adult conversion: not only for those who begin young, but for those who discover late that God had been seeking them all along."
+  },
+  "novena_prayers": {
+    "es": "Novena a Santa Ángela de Foligno\n\nCada día:\n1. Señal de la Cruz.\n2. 1 Padre Nuestro, 1 Ave María y 1 Gloria.\n3. Lee la meditación del día.\n4. Repite: «Santa Ángela, llévame a la conversión verdadera».\n\nRecomendada para quienes desean confesarse mejor, volver a Dios o aprender a hacer penitencia con amor.",
+    "en": "Novena to Saint Angela of Foligno\n\nEach day:\n1. Sign of the Cross.\n2. 1 Our Father, 1 Hail Mary, and 1 Glory Be.\n3. Read the day's meditation.\n4. Repeat: 'Saint Angela, lead me to true conversion.'\n\nRecommended for those who want to confess better, return to God, or learn to do penance with love."
+  },
+  "novena": [
+    { "day": 1, "es": "Día 1 — El derrumbe que despierta.\n\nSanta Ángela, la gracia entró en tu vida cuando todo lo seguro se vino abajo. Ayúdame a no huir de mis propias crisis, porque pueden ser el lugar donde Dios me despierta.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 1 — The collapse that wakes us up.\n\nSaint Angela, grace entered your life when everything secure collapsed. Help me not to flee my own crises, because they may be the place where God awakens me.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 2, "es": "Día 2 — La verdad sobre mí.\n\nSanta Ángela, tú no adornaste tus miserias: las pusiste delante de Dios. Enséñame a mirar mi pecado sin máscara y sin excusas.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 2 — The truth about me.\n\nSaint Angela, you did not decorate your misery: you placed it before God. Teach me to look at my sin without masks and without excuses.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 3, "es": "Día 3 — La confesión.\n\nSanta Ángela, la confesión fue para ti un paso de libertad y no de humillación. Hazme amar este sacramento como un abrazo de Cristo.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 3 — Confession.\n\nSaint Angela, Confession was for you a step into freedom and not humiliation. Make me love this sacrament as an embrace from Christ.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 4, "es": "Día 4 — La pobreza interior.\n\nSanta Ángela, enseñaste que la pobreza más difícil es la del ego. Despréndeme del orgullo y de la necesidad de parecer suficiente.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 4 — Interior poverty.\n\nSaint Angela, you taught that the hardest poverty is the poverty of the ego. Detach me from pride and from the need to seem sufficient.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 5, "es": "Día 5 — El Crucificado.\n\nSanta Ángela, tu corazón se encendió mirando al Crucificado. Que yo aprenda a leer mis penas a la luz de la Cruz y no del resentimiento.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 5 — The Crucified.\n\nSaint Angela, your heart was set on fire by the Crucified. May I learn to read my sorrows in the light of the Cross and not through resentment.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 6, "es": "Día 6 — La oración silenciosa.\n\nSanta Ángela, tú buscaste el silencio para ser mirada por Dios. Enséñame a detenerme sin miedo y a dejar que Él me encuentre.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 6 — Silent prayer.\n\nSaint Angela, you sought silence so as to be seen by God. Teach me to stop without fear and let Him find me.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 7, "es": "Día 7 — La caridad nacida del arrepentimiento.\n\nSanta Ángela, tu conversión no te encerró: te abrió a servir con más amor. Haz que mi arrepentimiento produzca obras concretas de bien.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 7 — Charity born of repentance.\n\nSaint Angela, your conversion did not close you in: it opened you to serve with greater love. May my repentance produce concrete works of good.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 8, "es": "Día 8 — Los últimos y los pequeños.\n\nSanta Ángela, aprendiste a amar la pequeñez y el abajamiento. En una época que idolatra el éxito, enséñanos a amar a los pobres y a los escondidos.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 8 — The last and the little.\n\nSaint Angela, you learned to love smallness and hiddenness. In an age that idolizes success, teach us to love the poor and the hidden.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." },
+    { "day": 9, "es": "Día 9 — La misericordia que permanece.\n\nSanta Ángela de Foligno, que mi vida entera se convierta en respuesta al amor de Dios. Llévame al lugar donde ya no me defiendo, sino que me entrego.\n\nSanta Ángela, ruega por nosotros.\n\nReza: 1 Padre Nuestro, 1 Ave María, 1 Gloria.", "en": "Day 9 — Mercy that remains.\n\nSaint Angela of Foligno, may my whole life become a response to God's love. Lead me to the place where I no longer defend myself, but surrender.\n\nSaint Angela, pray for us.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be." }
+  ],
+  "chaplet": { "available": false },
+  "litany": {
+    "available": true,
+    "es": "Letanía a Santa Ángela de Foligno\n\nSeñor, ten piedad. Cristo, ten piedad. Señor, ten piedad.\nCristo, óyenos. Cristo, escúchanos.\nDios Padre celestial, ten misericordia de nosotros.\nDios Hijo, Redentor del mundo, ten misericordia de nosotros.\nDios Espíritu Santo, ten misericordia de nosotros.\nSantísima Trinidad, un solo Dios, ten misericordia de nosotros.\n\nSanta Ángela de Foligno, convertida por la gracia, ruega por nosotros.\nSanta Ángela de Foligno, madre y viuda arrepentida, ruega por nosotros.\nSanta Ángela de Foligno, discípula del Crucificado, ruega por nosotros.\nSanta Ángela de Foligno, maestra de conversión, ruega por nosotros.\nSanta Ángela de Foligno, amiga de la pobreza interior, ruega por nosotros.\nSanta Ángela de Foligno, mujer de oración silenciosa, ruega por nosotros.\nSanta Ángela de Foligno, testigo de misericordia, ruega por nosotros.\nSanta Ángela de Foligno, consuelo de los conversos tardíos, ruega por nosotros.\n\nCordero de Dios, que quitas el pecado del mundo, perdónanos, Señor.\nCordero de Dios, que quitas el pecado del mundo, escúchanos, Señor.\nCordero de Dios, que quitas el pecado del mundo, ten misericordia de nosotros.\n\nV. Ruega por nosotros, Santa Ángela.\nR. Para que seamos dignos de las promesas de Cristo.\n\nOremos: Dios de misericordia, que transformaste el corazón de Santa Ángela de Foligno y la condujiste de las seguridades mundanas a la unión contigo, concédenos una verdadera conversión y un amor humilde a Tu Cruz. Por Cristo nuestro Señor. Amén.",
+    "en": "Litany to Saint Angela of Foligno\n\nLord, have mercy. Christ, have mercy. Lord, have mercy.\nChrist, hear us. Christ, graciously hear us.\nGod the Father in heaven, have mercy on us.\nGod the Son, Redeemer of the world, have mercy on us.\nGod the Holy Spirit, have mercy on us.\nHoly Trinity, one God, have mercy on us.\n\nSaint Angela of Foligno, converted by grace, pray for us.\nSaint Angela of Foligno, repentant mother and widow, pray for us.\nSaint Angela of Foligno, disciple of the Crucified, pray for us.\nSaint Angela of Foligno, teacher of conversion, pray for us.\nSaint Angela of Foligno, friend of interior poverty, pray for us.\nSaint Angela of Foligno, woman of silent prayer, pray for us.\nSaint Angela of Foligno, witness of mercy, pray for us.\nSaint Angela of Foligno, comfort of late converts, pray for us.\n\nLamb of God, who takes away the sins of the world, forgive us, O Lord.\nLamb of God, who takes away the sins of the world, graciously hear us, O Lord.\nLamb of God, who takes away the sins of the world, have mercy on us.\n\nV. Pray for us, Saint Angela.\nR. That we may be made worthy of the promises of Christ.\n\nLet us pray: God of mercy, who transformed the heart of Saint Angela of Foligno and led her from worldly securities to union with You, grant us true conversion and humble love for Your Cross. Through Christ our Lord. Amen."
+  },
+  "consecration": { "available": false },
+  "miracles": { "available": false }
+}

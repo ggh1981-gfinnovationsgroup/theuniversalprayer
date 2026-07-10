@@ -3,7 +3,7 @@
    Cache-first strategy: works fully offline after first load
    ===================================================== */
 
-const CACHE = 'tup-v60';
+const CACHE = 'tup-v62';
 
 // All files to pre-cache on install
 const PRECACHE_URLS = [
@@ -58,6 +58,7 @@ const PRECACHE_URLS = [
   '/assets/images/sanjose.svg',
   '/assets/images/sanjudas.svg',
   '/assets/images/juanpablo.svg',
+  '/assets/images/sanjuanbosco.svg',
   '/assets/images/sanantonio.svg',
   '/assets/images/teresacalcuta.svg',
   '/assets/images/sanmiguel.svg',
@@ -95,6 +96,9 @@ const PRECACHE_URLS = [
   '/assets/images/santaalejandra.svg',
   '/assets/images/santaroxana.svg',
   '/assets/images/santagwendolina.svg',
+  '/assets/images/sanmaximiliano.svg',
+  '/assets/images/santaangeladefoligno.svg',
+  '/assets/images/santacoleta.svg',
   '/assets/images/santanoemi.svg',
   '/assets/images/sanperegrino.svg',
   '/assets/images/sancamilo.svg',
@@ -149,6 +153,7 @@ const PRECACHE_URLS = [
   '/data/sanjose.json',
   '/data/sanjudas.json',
   '/data/juanpablo.json',
+  '/data/sanjuanbosco.json',
   '/data/sanantonio.json',
   '/data/teresacalcuta.json',
   '/data/sanmiguel.json',
@@ -186,6 +191,9 @@ const PRECACHE_URLS = [
   '/data/santaalejandra.json',
   '/data/santaroxana.json',
   '/data/santagwendolina.json',
+  '/data/sanmaximiliano.json',
+  '/data/santaangeladefoligno.json',
+  '/data/santacoleta.json',
   '/data/santanoemi.json',
   '/data/sanperegrino.json',
   '/data/sancamilo.json',

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-label="Schoenstatt">
+  <rect width="400" height="600" fill="#07101f"/>
+  <circle cx="200" cy="150" r="56" fill="none" stroke="#e8c97a" stroke-width="3" opacity="0.65"/>
+  <path d="M150 168 Q200 130 250 168 L274 398 Q200 426 126 398 Z" fill="#f2f2f2"/>
+  <path d="M148 168 Q121 208 110 310" stroke="#1a3070" stroke-width="18" stroke-linecap="round" fill="none" opacity="0.9"/>
+  <path d="M252 168 Q279 208 290 310" stroke="#1a3070" stroke-width="18" stroke-linecap="round" fill="none" opacity="0.82"/>
+  <circle cx="200" cy="108" r="30" fill="#c89070"/>
+  <path d="M175 104 Q200 72 225 104 Q220 82 200 80 Q180 82 175 104Z" fill="#1a3070"/>
+  <rect x="191" y="56" width="18" height="6" rx="3" fill="#e8c97a"/>
+  <line x1="186" y1="64" x2="214" y2="64" stroke="#e8c97a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M176 246 Q200 236 224 246" fill="none" stroke="#c89070" stroke-width="6" stroke-linecap="round"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#c9a84c" letter-spacing="2">SCHOENSTATT</text>
+</svg>

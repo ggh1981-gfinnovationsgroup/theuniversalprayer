@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-label="Nuestra Señora de Lourdes">
+  <rect width="400" height="600" fill="#081225"/>
+  <circle cx="200" cy="150" r="58" fill="none" stroke="#e8c97a" stroke-width="3" opacity="0.65"/>
+  <path d="M150 170 Q200 128 250 170 L274 398 Q200 428 126 398 Z" fill="#f7f7f7"/>
+  <path d="M158 156 Q200 120 242 156 L258 320 Q200 340 142 320 Z" fill="#b8d4e8" opacity="0.82"/>
+  <circle cx="200" cy="108" r="30" fill="#f5d5b8"/>
+  <path d="M176 104 Q200 70 224 104 Q220 82 200 80 Q180 82 176 104Z" fill="#a8c5dd"/>
+  <path d="M188 144 Q200 150 212 144" fill="none" stroke="#d4945a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M168 415 Q200 405 232 415 Q210 428 200 430 Q190 428 168 415Z" fill="#c9a84c" opacity="0.7"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#c9a84c" letter-spacing="2">NUESTRA SEÑORA DE LOURDES</text>
+</svg>

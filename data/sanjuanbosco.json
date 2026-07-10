@@ -1,0 +1,52 @@
+{
+  "id": "sanjuanbosco",
+  "name": {
+    "es": "San Juan Bosco",
+    "en": "Saint John Bosco"
+  },
+  "jaculatoria": {
+    "es": "San Juan Bosco, padre y maestro de la juventud, ruega por nosotros.",
+    "en": "Saint John Bosco, father and teacher of youth, pray for us."
+  },
+  "feast_day": {
+    "es": "31 de enero",
+    "en": "January 31"
+  },
+  "color": "#1f3f8f",
+  "image": "/assets/images/sanjuanbosco.svg",
+  "specialty": {
+    "es": "Juventud, educacion y vocacion",
+    "en": "Youth, education, and vocation"
+  },
+  "prayer": {
+    "es": "San Juan Bosco, sacerdote de corazon paternal, que supiste acercar a los jovenes a Jesus con alegria, firmeza y misericordia, intercede por nosotros.\n\nTu que ensenaste que la santidad tambien es para los muchachos, alcanzanos la gracia de educar sin dureza, corregir sin humillar y amar sin cansarnos.\n\nRuega por los adolescentes confundidos, por los jovenes heridos, por las familias que no saben como guiarlos, y por los educadores que se sienten solos.\n\nSan Juan Bosco, danos un corazon apostolico para ganar almas para Cristo. Amen.",
+    "en": "Saint John Bosco, priest with a fatherly heart, who knew how to bring young people close to Jesus with joy, firmness, and mercy, intercede for us.\n\nYou who taught that holiness is also for the young, obtain for us the grace to educate without harshness, correct without humiliating, and love without growing tired.\n\nPray for confused teens, wounded youth, families that do not know how to guide them, and educators who feel alone.\n\nSaint John Bosco, give us an apostolic heart to win souls for Christ. Amen."
+  },
+  "history": {
+    "es": "Juan Bosco nacio en 1815 en Becchi, Italia, en una familia campesina marcada por la pobreza. Desde joven percibio un llamado especial a acompanar a ninos y adolescentes abandonados. Ordenado sacerdote en 1841, comenzo su apostolado en Turin, donde miles de jovenes obreros vivian sin hogar, sin escuela y sin proteccion.\n\nFundo el Oratorio de San Francisco de Sales, donde reunia a los jovenes con catequesis, estudio, juegos, musica y acompanamiento personal. Su metodo, llamado Sistema Preventivo, se apoyaba en tres pilares: razon, religion y amor.\n\nTambien fundo la Congregacion Salesiana y, junto con Santa Maria Mazzarello, el Instituto de las Hijas de Maria Auxiliadora. Murio en 1888 y fue canonizado por Pio XI en 1934. La Iglesia lo venera como padre y maestro de la juventud.",
+    "en": "John Bosco was born in 1815 in Becchi, Italy, into a poor farming family. From youth he sensed a special call to accompany abandoned children and adolescents. Ordained a priest in 1841, he began his apostolate in Turin, where thousands of young workers lived without home, school, or protection.\n\nHe founded the Oratory of Saint Francis de Sales, gathering young people through catechesis, study, games, music, and personal accompaniment. His method, called the Preventive System, rested on three pillars: reason, religion, and loving kindness.\n\nHe also founded the Salesian Congregation and, with Saint Mary Mazzarello, the Institute of the Daughters of Mary Help of Christians. He died in 1888 and was canonized by Pius XI in 1934. The Church venerates him as father and teacher of youth."
+  },
+  "novena_prayers": {
+    "es": "Cada dia: 1 Padre Nuestro, 1 Ave Maria, 1 Gloria. Lee la meditacion del dia y ofrece un acto concreto por un joven.",
+    "en": "Each day: 1 Our Father, 1 Hail Mary, 1 Glory Be. Read the daily meditation and offer one concrete act for a young person."
+  },
+  "novena": [
+    { "day": 1, "es": "DIA 1 - Por los jovenes sin rumbo.\nSan Juan Bosco, guia a los que viven sin sentido y sin esperanza.", "en": "DAY 1 - For youth without direction.\nSaint John Bosco, guide those who live without meaning and hope." },
+    { "day": 2, "es": "DIA 2 - Por los padres y madres.\nDales sabiduria, paciencia y ternura para educar.", "en": "DAY 2 - For fathers and mothers.\nGrant them wisdom, patience, and tenderness in raising children." },
+    { "day": 3, "es": "DIA 3 - Por educadores y catequistas.\nQue formen con verdad y caridad.", "en": "DAY 3 - For teachers and catechists.\nMay they form with truth and charity." },
+    { "day": 4, "es": "DIA 4 - Por jovenes heridos por adicciones.\nQue encuentren ayuda y libertad.", "en": "DAY 4 - For youth wounded by addictions.\nMay they find help and freedom." },
+    { "day": 5, "es": "DIA 5 - Por pureza y amistad sana.\nQue aprendan a amar con dignidad.", "en": "DAY 5 - For purity and healthy friendships.\nMay they learn to love with dignity." },
+    { "day": 6, "es": "DIA 6 - Por vocaciones sacerdotales y religiosas.\nQue muchos respondan con generosidad.", "en": "DAY 6 - For priestly and religious vocations.\nMay many respond generously." },
+    { "day": 7, "es": "DIA 7 - Por jovenes alejados de la Iglesia.\nQue vuelvan a la Confesion y la Eucaristia.", "en": "DAY 7 - For youth far from the Church.\nMay they return to Confession and the Eucharist." },
+    { "day": 8, "es": "DIA 8 - Por los que sufren ansiedad y soledad.\nQue encuentren comunidad y paz.", "en": "DAY 8 - For those suffering anxiety and loneliness.\nMay they find community and peace." },
+    { "day": 9, "es": "DIA 9 - Por santidad juvenil.\nSan Juan Bosco, ensenanos a ganar almas para Cristo.", "en": "DAY 9 - For youthful holiness.\nSaint John Bosco, teach us to win souls for Christ." }
+  ],
+  "chaplet": { "available": false },
+  "litany": {
+    "available": true,
+    "es": "San Juan Bosco, ruega por nosotros.\nPadre y maestro de la juventud, ruega por nosotros.\nAmigo de los ninos pobres, ruega por nosotros.\nFormador de vocaciones, ruega por nosotros.\nApostol de la alegria cristiana, ruega por nosotros.",
+    "en": "Saint John Bosco, pray for us.\nFather and teacher of youth, pray for us.\nFriend of poor children, pray for us.\nFormer of vocations, pray for us.\nApostle of Christian joy, pray for us."
+  },
+  "consecration": { "available": false },
+  "miracles": { "available": false }
+}

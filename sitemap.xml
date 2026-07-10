@@ -144,10 +144,18 @@
     <loc>https://www.theuniversalprayer.com/intercesor/?intercesor=sanblas</loc>
     <lastmod>2026-06-26</lastmod>
   </url>
-  <url>
-    <loc>https://www.theuniversalprayer.com/intercesor/?intercesor=sanbonifacio</loc>
-    <lastmod>2026-06-26</lastmod>
-  </url>
+    <url>
+      <loc>https://www.theuniversalprayer.com/intercesor/?intercesor=sanmaximiliano</loc>
+      <lastmod>2026-07-10</lastmod>
+    </url>
+    <url>
+      <loc>https://www.theuniversalprayer.com/intercesor/?intercesor=santaangeladefoligno</loc>
+      <lastmod>2026-07-10</lastmod>
+    </url>
+    <url>
+      <loc>https://www.theuniversalprayer.com/intercesor/?intercesor=santacoleta</loc>
+      <lastmod>2026-07-10</lastmod>
+    </url>
   <url>
     <loc>https://www.theuniversalprayer.com/intercesor/?intercesor=sanbrendan</loc>
     <lastmod>2026-06-26</lastmod>
@@ -239,6 +247,10 @@
   <url>
     <loc>https://www.theuniversalprayer.com/intercesor/?intercesor=sanjuanapostol</loc>
     <lastmod>2026-06-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.theuniversalprayer.com/intercesor/?intercesor=sanjuanbosco</loc>
+    <lastmod>2026-07-10</lastmod>
   </url>
   <url>
     <loc>https://www.theuniversalprayer.com/intercesor/?intercesor=sanjuanbautista</loc>
