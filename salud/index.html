@@ -52,17 +52,28 @@
       animation: sal-rise .7s ease both;
     }
 
+    .sal-hero-top {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .sal-icon {
+      width: 118px;
+      height: 118px;
+      display: block;
+      margin: 0.35rem auto 0.75rem;
+      filter: drop-shadow(0 0 16px rgba(201,168,76,0.38));
+      animation: sal-float 4s ease-in-out infinite;
+    }
+
+    @keyframes sal-float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
     @keyframes sal-rise {
       from { opacity: 0; transform: translateY(14px); }
       to { opacity: 1; transform: translateY(0); }
-    }
-
-    .sal-back {
-      display: inline-block;
-      text-decoration: none;
-      color: rgba(255,255,255,0.76);
-      font-size: 0.84rem;
-      margin-bottom: 0.72rem;
     }
 
     .sal-badge {
@@ -85,19 +96,25 @@
       line-height: 1.06;
       color: var(--gold-light);
       text-wrap: balance;
+      text-align: center;
     }
 
     .sal-subtitle {
       margin: 0.78rem 0 0;
       max-width: 850px;
+      margin-left: auto;
+      margin-right: auto;
       color: rgba(255,255,255,0.87);
       font-family: 'Lato', var(--font-sans);
       font-size: 0.96rem;
       line-height: 1.76;
+      text-align: center;
     }
 
     .sal-verse {
       margin-top: 0.9rem;
+      margin-left: auto;
+      margin-right: auto;
       border-left: 3px solid rgba(201,168,76,0.5);
       background: rgba(201,168,76,0.08);
       border-radius: 0 12px 12px 0;
@@ -475,14 +492,29 @@
 
   <main class="sal-wrap">
     <section class="sal-hero">
-      <a href="/" class="sal-back" data-lang="es">← Volver al inicio</a>
-      <a href="/" class="sal-back" data-lang="en" style="display:none">← Back to home</a>
+      <div class="sal-hero-top">
+        <a href="/" class="ador-back-link" data-lang="es">← Inicio</a>
+        <a href="/" class="ador-back-link" data-lang="en" style="display:none">← Home</a>
+        <svg class="sal-icon" viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <radialGradient id="sh-g" cx="50%" cy="38%" r="58%">
+              <stop offset="0%" stop-color="#fff6cf" stop-opacity="1"/>
+              <stop offset="60%" stop-color="#d8a040" stop-opacity="0.86"/>
+              <stop offset="100%" stop-color="#d8a040" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="65" cy="65" r="56" fill="url(#sh-g)" opacity="0.34"/>
+          <path d="M65 106c-18-13-31-24-31-39 0-10 8-17 18-17 6 0 11 3 13 8 2-5 7-8 13-8 10 0 18 7 18 17 0 15-13 26-31 39z" fill="none" stroke="#f8e888" stroke-width="3"/>
+          <line x1="65" y1="35" x2="65" y2="72" stroke="#f8e888" stroke-width="4" stroke-linecap="round"/>
+          <line x1="48" y1="50" x2="82" y2="50" stroke="#f8e888" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+      </div>
       <div class="sal-badge" data-lang="es">Salud integral</div>
       <div class="sal-badge" data-lang="en" style="display:none">Whole-person health</div>
       <h1 class="sal-title" data-lang="es">Pedir salud con la Biblia abierta</h1>
       <h1 class="sal-title" data-lang="en" style="display:none">Praying for health with the Bible open</h1>
-      <p class="sal-subtitle" data-lang="es">Esta página reúne cuatro dimensiones de la salud que podemos presentar a Dios: el cuerpo, la mente, el alma y la economía del hogar. La fe no reemplaza la medicina ni la prudencia; más bien nos enseña a pedir luz, orden, paz y sanación en todo lo que somos.</p>
-      <p class="sal-subtitle" data-lang="en" style="display:none">This page gathers four dimensions of health we can present to God: the body, the mind, the soul, and the household economy. Faith does not replace medicine or prudence; it teaches us to ask for light, order, peace, and healing in all that we are.</p>
+      <p class="sal-subtitle" data-lang="es">Presenta a Dios cuatro dimensiones de la salud: el cuerpo, la mente, el alma y la economía del hogar. La fe no reemplaza la medicina ni la prudencia; más bien nos enseña a pedir luz, orden, paz y sanación en todo lo que somos.</p>
+      <p class="sal-subtitle" data-lang="en" style="display:none">Bring to God four dimensions of health: the body, the mind, the soul, and the household economy. Faith does not replace medicine or prudence; it teaches us to ask for light, order, peace, and healing in all that we are.</p>
 
       <blockquote class="sal-verse" data-lang="es">Amado, yo deseo que tú seas prosperado en todas las cosas, y que tengas salud, así como prospera tu alma.
 <cite>3 Juan 1:2</cite></blockquote>
@@ -576,6 +608,7 @@ Lord, touch my body where there is pain, fatigue, inflammation, or sickness. Giv
 • Pon nombre a lo que sientes.
 • Busca descanso, conversación sabia y apoyo profesional si hace falta.
 • No alimentes pensamientos que te destruyen.
+• Si hay riesgo de hacerte daño a ti o a otros, busca ayuda de emergencia de inmediato y avisa a alguien de confianza hoy.
 
 Oración breve:
 Señor Jesús, aquieta mis pensamientos, cura mis heridas invisibles y libra mi mente del temor, la obsesión y la tristeza que me encierra. Dame luz para discernir, paz para descansar y valentía para seguir caminando. Amén.
@@ -591,6 +624,7 @@ What does God tell you?
 • Name what you are feeling.
 • Seek rest, wise conversation, and professional support if needed.
 • Do not feed thoughts that destroy you.
+• If there is risk of harming yourself or others, seek emergency help immediately and alert a trusted person today.
 
 Short prayer:
 Lord Jesus, quiet my thoughts, heal my unseen wounds, and free my mind from fear, obsession, and the sadness that traps me. Give me light to discern, peace to rest, and courage to keep walking. Amen.
@@ -867,6 +901,28 @@ Amen.
           </ul>
         </div>
       </div>
+
+            <details class="sal-chronic-collapse" style="margin-top:0.9rem">
+        <summary><span data-lang="es">Si hay gravedad o riesgo de muerte: qué hacer hoy (católico y práctico)</span><span data-lang="en" style="display:none">If illness is severe or life-threatening: what to do today (Catholic and practical)</span></summary>
+        <div class="sal-chronic-body" data-lang="es"><strong>Pasos concretos hoy:</strong>
+
+      1) Llama a un sacerdote de inmediato y pide <strong>Unción de los Enfermos</strong>.
+      2) Si la persona puede confesarse, pide también <strong>Confesión sacramental</strong>.
+      3) Si está en condiciones de comulgar, pide el <strong>Viático</strong> (la Eucaristía para el camino final).
+      4) No esperes a "último minuto": la gracia sacramental también fortalece durante el proceso, no solo al final.
+      5) Mantén oración, presencia familiar y apoyo médico al mismo tiempo.
+
+      <cite>Guía pastoral breve para familias en crisis de salud</cite></div>
+        <div class="sal-chronic-body" data-lang="en" style="display:none"><strong>Concrete steps today:</strong>
+
+      1) Call a priest immediately and request the <strong>Anointing of the Sick</strong>.
+      2) If the person can confess, also request <strong>sacramental Confession</strong>.
+      3) If the person can receive Communion, request <strong>Viaticum</strong> (the Eucharist for the final journey).
+      4) Do not wait until the "last minute": sacramental grace strengthens through the process, not only at the end.
+      5) Keep prayer, family presence, and medical care together.
+
+      <cite>Brief pastoral guide for families in health crisis</cite></div>
+            </details>
 
       <details class="sal-chronic-collapse" style="margin-top:0.9rem">
         <summary><span data-lang="es">Oración en la enfermedad crónica o terminal</span><span data-lang="en" style="display:none">Prayer in chronic or terminal illness</span></summary>

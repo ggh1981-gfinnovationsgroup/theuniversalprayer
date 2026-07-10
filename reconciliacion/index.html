@@ -18,6 +18,18 @@
         radial-gradient(circle at 20% 0%, rgba(201,168,76,0.18), transparent 48%),
         radial-gradient(circle at 80% 8%, rgba(255,255,255,0.10), transparent 44%);
     }
+    .rec-icon {
+      width: 118px;
+      height: 118px;
+      display: block;
+      margin: 0.35rem auto 0.85rem;
+      filter: drop-shadow(0 0 16px rgba(201,168,76,0.4));
+      animation: rec-icon-float 4s ease-in-out infinite;
+    }
+    @keyframes rec-icon-float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
     .rec-badge {
       display: inline-block;
       font-size: 0.72rem;
@@ -314,6 +326,7 @@
 
     @media (max-width: 640px) {
       .rec-hero { padding: 4.2rem 0.9rem 1.9rem; }
+      .rec-icon { width: 102px; height: 102px; }
       .rec-title { font-size: clamp(1.7rem, 8vw, 2.2rem); }
       .rec-subtitle { font-size: 0.9rem; line-height: 1.65; }
       .rec-hero-art-wrap {
@@ -355,14 +368,28 @@
     <a href="/" class="ador-back-link" data-lang="es">← Inicio</a>
     <a href="/" class="ador-back-link" data-lang="en" style="display:none">← Home</a>
 
+    <svg class="rec-icon" viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <radialGradient id="ri-g" cx="50%" cy="45%" r="58%">
+          <stop offset="0%" stop-color="#fff6cf" stop-opacity="1"/>
+          <stop offset="65%" stop-color="#d16a6a" stop-opacity="0.72"/>
+          <stop offset="100%" stop-color="#d16a6a" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <circle cx="65" cy="65" r="56" fill="url(#ri-g)" opacity="0.34"/>
+      <path d="M65 105c-16-11-29-23-29-37 0-9 7-16 16-16 5 0 10 2 13 7 3-5 8-7 13-7 9 0 16 7 16 16 0 14-13 26-29 37z" fill="none" stroke="#f8e888" stroke-width="3"/>
+      <line x1="65" y1="37" x2="65" y2="74" stroke="#f8e888" stroke-width="4" stroke-linecap="round"/>
+      <line x1="49" y1="51" x2="81" y2="51" stroke="#f8e888" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+
     <div class="rec-badge" data-lang="es">Salmos de arrepentimiento y vida en gracia</div>
     <div class="rec-badge" data-lang="en" style="display:none">Penitential Psalms and life in grace</div>
 
     <h1 class="rec-title" data-lang="es">Reconciliación, Misericordia y Providencia</h1>
     <h1 class="rec-title" data-lang="en" style="display:none">Reconciliation, Mercy, and Providence</h1>
 
-    <p class="rec-subtitle" data-lang="es">Esta página está centrada en prepararte bien para la Confesión sacramental, con espíritu de los salmos de David: arrepentimiento sincero, confianza en la misericordia de Dios y deseo firme de no pecar más.</p>
-    <p class="rec-subtitle" data-lang="en" style="display:none">This page is centered on preparing you well for sacramental Confession, in the spirit of David's psalms: sincere repentance, trust in God's mercy, and a firm desire not to sin again.</p>
+    <p class="rec-subtitle" data-lang="es">Prepararte bien para la Confesión sacramental, con espíritu de los salmos de David: arrepentimiento sincero, confianza en la misericordia de Dios y deseo firme de no pecar más.</p>
+    <p class="rec-subtitle" data-lang="en" style="display:none">Prepare well for sacramental Confession, in the spirit of David's psalms: sincere repentance, trust in God's mercy, and a firm desire not to sin again.</p>
 
     <figure class="rec-hero-art-wrap">
       <img class="rec-hero-art" src="/assets/images/reconciliacion-hero.svg" alt="Camino de reconciliación, misericordia y providencia" />
@@ -372,6 +399,8 @@
 
     <div class="rec-highlight" data-lang="es"><strong>Clave pastoral:</strong> esta guía no reemplaza la Confesión. Te prepara para vivirla mejor. <strong>Después de confesarte</strong>, encontrarás aquí un camino concreto para perseverar en gracia: protección espiritual, hábitos, providencia para salud, vestido y sustento.</div>
     <div class="rec-highlight" data-lang="en" style="display:none"><strong>Pastoral key:</strong> this guide does not replace Confession. It prepares you to live it better. <strong>After confession</strong>, you will find here a concrete path to persevere in grace: spiritual protection, habits, and providence for health, clothing, and daily sustenance.</div>
+    <div class="rec-highlight" data-lang="es"><strong>Nota doctrinal breve:</strong> si eres consciente de pecado mortal, no comulgues hasta recibir absolución en la Confesión sacramental.</div>
+    <div class="rec-highlight" data-lang="en" style="display:none"><strong>Brief doctrinal note:</strong> if you are conscious of mortal sin, do not receive Communion until you receive absolution in sacramental Confession.</div>
   </section>
 
   <main class="rec-content">
@@ -903,7 +932,7 @@ a broken and contrite heart you, God, will not despise.
             <p data-lang="es"><strong>⚠️ Recaída: Soledad</strong><br/>Cuando te sientes abandonado, buscas consuelo rápido (comida, redes, compañía que no ayuda).</p>
             <p data-lang="en" style="display:none"><strong>⚠️ Relapse: Loneliness</strong><br/>When you feel abandoned, you seek quick comfort (food, social media, unhelpful company).</p>
             <p data-lang="es"><strong>💊 Antídoto:</strong> Llama a 1 persona que te ama (familia, confesor, amigo de fe). No estés solo hoy.</p>
-            <p data-lang="en" style="display:none"><strong>💊 Antidote:</strong> Call 1 person who loves you (family, confesor, faith friend). Don't be alone today.</p>
+            <p data-lang="en" style="display:none"><strong>💊 Antidote:</strong> Call 1 person who loves you (family, confessor, faith friend). Don't be alone today.</p>
           </div>
 
           <div style="background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.18); border-radius: 10px; padding: 0.9rem;">
