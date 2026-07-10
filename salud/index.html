@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salud Integral | The Universal Prayer</title>
+  <meta name="description" content="Oración católica por la salud física, mental, del alma y financiera, con enseñanza bíblica y secciones colapsables para meditar y pedir a Dios con fe." />
+  <meta name="theme-color" content="#c9a84c" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Salud Integral" />
+  <meta property="og:description" content="Ora por tu salud física, mental, del alma y financiera con guía bíblica y oración concreta." />
+  <meta property="og:url" content="https://www.theuniversalprayer.com/salud/" />
+  <meta property="og:image" content="https://www.theuniversalprayer.com/assets/images/social-home.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Salud Integral - The Universal Prayer" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Salud Integral" />
+  <meta name="twitter:description" content="Guía de salud física, mental, del alma y financiera con Biblia y oración." />
+  <meta name="twitter:image" content="https://www.theuniversalprayer.com/assets/images/social-home.png" />
+  <link rel="canonical" href="https://www.theuniversalprayer.com/salud/" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    .sal-page {
+      min-height: 100dvh;
+      background:
+        radial-gradient(900px 520px at 18% -10%, rgba(64,167,126,0.18), transparent 58%),
+        radial-gradient(760px 460px at 84% 0%, rgba(102,175,255,0.16), transparent 56%),
+        radial-gradient(760px 460px at 50% 112%, rgba(201,168,76,0.12), transparent 66%),
+        linear-gradient(180deg, #07111d 0%, #0a1523 48%, #07101b 100%);
+    }
+
+    .sal-wrap {
+      width: min(1080px, 100% - 1.5rem);
+      margin: 0 auto;
+      padding: 1.25rem 0 4rem;
+    }
+
+    .sal-hero {
+      position: relative;
+      border: 1px solid rgba(201,168,76,0.24);
+      border-radius: 22px;
+      background:
+        linear-gradient(135deg, rgba(64,167,126,0.12), rgba(255,255,255,0.02) 34%, rgba(102,175,255,0.11)),
+        rgba(10,18,31,0.8);
+      box-shadow: 0 22px 44px rgba(0,0,0,0.34);
+      padding: 1.35rem 1.1rem 1.25rem;
+      overflow: hidden;
+      animation: sal-rise .7s ease both;
+    }
+
+    @keyframes sal-rise {
+      from { opacity: 0; transform: translateY(14px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .sal-back {
+      display: inline-block;
+      text-decoration: none;
+      color: rgba(255,255,255,0.76);
+      font-size: 0.84rem;
+      margin-bottom: 0.72rem;
+    }
+
+    .sal-badge {
+      display: inline-block;
+      border: 1px solid rgba(201,168,76,0.34);
+      border-radius: 999px;
+      padding: 0.32rem 0.84rem;
+      margin-bottom: 0.75rem;
+      color: var(--gold);
+      background: rgba(201,168,76,0.08);
+      font-size: 0.7rem;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .sal-title {
+      margin: 0;
+      font-family: 'Playfair Display', var(--font-serif);
+      font-size: clamp(2rem, 6vw, 3.15rem);
+      line-height: 1.06;
+      color: var(--gold-light);
+      text-wrap: balance;
+    }
+
+    .sal-subtitle {
+      margin: 0.78rem 0 0;
+      max-width: 850px;
+      color: rgba(255,255,255,0.87);
+      font-family: 'Lato', var(--font-sans);
+      font-size: 0.96rem;
+      line-height: 1.76;
+    }
+
+    .sal-verse {
+      margin-top: 0.9rem;
+      border-left: 3px solid rgba(201,168,76,0.5);
+      background: rgba(201,168,76,0.08);
+      border-radius: 0 12px 12px 0;
+      padding: 0.82rem 0.9rem;
+      color: rgba(255,255,255,0.9);
+      font-family: 'Playfair Display', var(--font-serif);
+      font-style: italic;
+      font-size: 0.95rem;
+      line-height: 1.78;
+      white-space: pre-line;
+    }
+
+    .sal-verse cite {
+      display: block;
+      margin-top: 0.4rem;
+      font-style: normal;
+      font-size: 0.78rem;
+      color: var(--gold);
+      opacity: 0.82;
+    }
+
+    .sal-highlights {
+      margin-top: 0.95rem;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.7rem;
+    }
+
+    .sal-highlight {
+      border: 1px solid rgba(201,168,76,0.18);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.03);
+      padding: 0.82rem 0.88rem;
+      color: rgba(255,255,255,0.84);
+      font-family: 'Lato', var(--font-sans);
+      font-size: 0.86rem;
+      line-height: 1.68;
+    }
+
+    .sal-highlight strong {
+      color: var(--gold-light);
+    }
+
+    .sal-grid {
+      margin-top: 0.95rem;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.9rem;
+    }
+
+    .sal-card {
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 16px;
+      background: rgba(12,20,36,0.84);
+      padding: 0.95rem;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+    }
+
+    .sal-card h2 {
+      margin: 0;
+      color: var(--gold-light);
+      font-family: 'Playfair Display', var(--font-serif);
+      font-size: 1.22rem;
+    }
+
+    .sal-card .sal-card-sub {
+      margin: 0.42rem 0 0;
+      color: rgba(255,255,255,0.76);
+      font-family: 'Lato', var(--font-sans);
+      font-size: 0.84rem;
+      line-height: 1.6;
+    }
+
+    details.sal-collapse {
+      margin-top: 0.72rem;
+      border: 1px solid rgba(102,175,255,0.24);
+      border-radius: 12px;
+      background: rgba(102,175,255,0.08);
+      overflow: hidden;
+    }
+
+    details.sal-collapse summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 0.68rem 0.82rem;
+      color: #cfe8ff;
+      font-family: 'Lato', var(--font-sans);
+      font-size: 0.83rem;
+      user-select: none;
+    }
+
+    details.sal-collapse summary::-webkit-details-marker { display: none; }
+    details.sal-collapse summary::before { content: '▸ '; }
+    details.sal-collapse[open] summary::before { content: '▾ '; }
+
+    .sal-collapse-body {
+      padding: 0 0.82rem 0.82rem;
+      color: rgba(255,255,255,0.88);
+      font-family: 'Lato', var(--font-sans);
+      font-size: 0.88rem;
+      line-height: 1.75;
+      white-space: pre-line;
+    }
+
+    .sal-collapse-body strong { color: var(--gold-light); }
+    .sal-collapse-body ul {
+      margin: 0.55rem 0 0;
+      padding-left: 1.05rem;
+      display: grid;
+      gap: 0.42rem;
+    }
+    .sal-collapse-body li { line-height: 1.7; }
+
+    .sal-prayer {
+      margin-top: 0.75rem;
+      border-left: 3px solid rgba(64,167,126,0.48);
+      background: rgba(64,167,126,0.08);
+      border-radius: 0 12px 12px 0;
+      padding: 0.9rem 0.95rem;
+      color: rgba(255,255,255,0.92);
+      font-family: 'Playfair Display', var(--font-serif);
+      font-style: italic;
+      font-size: 0.92rem;
+      line-height: 1.82;
+      white-space: pre-line;
+    }
+
+    .sal-prayer cite {
+      display: block;
+      margin-top: 0.45rem;
+      font-style: normal;
+      font-size: 0.76rem;
+      color: var(--gold);
+      opacity: 0.84;
+    }
+
+    .sal-footer {
+      margin-top: 1rem;
+      border: 1px solid rgba(201,168,76,0.18);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.03);
+      padding: 0.95rem 1rem;
+      color: rgba(255,255,255,0.82);
+      font-family: 'Lato', var(--font-sans);
+      font-size: 0.87rem;
+      line-height: 1.72;
+    }
+
+    .sal-footer strong { color: var(--gold-light); }
+
+    .sal-footer-links {
+      margin-top: 0.8rem;
+      display: flex;
+      gap: 0.65rem;
+      flex-wrap: wrap;
+    }
+
+    .sal-link {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      border: 1px solid rgba(201,168,76,0.22);
+      background: rgba(201,168,76,0.08);
+      color: var(--gold-light);
+      border-radius: 999px;
+      padding: 0.45rem 0.8rem;
+      font-size: 0.8rem;
+    }
+
+    .sal-link:hover {
+      background: rgba(201,168,76,0.12);
+    }
+
+    @media (max-width: 860px) {
+      .sal-highlights,
+      .sal-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body class="sal-page">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link">
+        <span class="cross">✝</span>
+        <span class="logo-text">The Universal Prayer</span>
+      </a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span id="langLabel">EN</span>
+      </button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="sal-wrap">
+    <section class="sal-hero">
+      <a href="/" class="sal-back" data-lang="es">← Volver al inicio</a>
+      <a href="/" class="sal-back" data-lang="en" style="display:none">← Back to home</a>
+      <div class="sal-badge" data-lang="es">Salud integral</div>
+      <div class="sal-badge" data-lang="en" style="display:none">Whole-person health</div>
+      <h1 class="sal-title" data-lang="es">Pedir salud con la Biblia abierta</h1>
+      <h1 class="sal-title" data-lang="en" style="display:none">Praying for health with the Bible open</h1>
+      <p class="sal-subtitle" data-lang="es">Esta página reúne cuatro dimensiones de la salud que podemos presentar a Dios: el cuerpo, la mente, el alma y la economía del hogar. La fe no reemplaza la medicina ni la prudencia; más bien nos enseña a pedir luz, orden, paz y sanación en todo lo que somos.</p>
+      <p class="sal-subtitle" data-lang="en" style="display:none">This page gathers four dimensions of health we can present to God: the body, the mind, the soul, and the household economy. Faith does not replace medicine or prudence; it teaches us to ask for light, order, peace, and healing in all that we are.</p>
+
+      <blockquote class="sal-verse" data-lang="es">Amado, yo deseo que tú seas prosperado en todas las cosas, y que tengas salud, así como prospera tu alma.
+<cite>3 Juan 1:2</cite></blockquote>
+      <blockquote class="sal-verse" data-lang="en" style="display:none">Beloved, I pray that in every way you may prosper and enjoy good health, even as your soul prospers.
+<cite>3 John 1:2</cite></blockquote>
+
+      <div class="sal-highlights">
+        <div class="sal-highlight" data-lang="es"><strong>Clave:</strong> pide sanación, pero también pide sabiduría para cuidar tu cuerpo, tu descanso, tus pensamientos y tus decisiones.</div>
+        <div class="sal-highlight" data-lang="en" style="display:none"><strong>Key:</strong> ask for healing, but also ask for wisdom to care for your body, your rest, your thoughts, and your choices.</div>
+        <div class="sal-highlight" data-lang="es"><strong>Promesa:</strong> Dios puede sostenerte en la enfermedad, acompañarte en la ansiedad y enseñarte a administrar con paz lo necesario para vivir.</div>
+        <div class="sal-highlight" data-lang="en" style="display:none"><strong>Promise:</strong> God can sustain you in illness, accompany you in anxiety, and teach you to manage what is needed to live in peace.</div>
+      </div>
+    </section>
+
+    <section class="sal-grid">
+      <article class="sal-card">
+        <h2 data-lang="es">Salud física</h2>
+        <h2 data-lang="en" style="display:none">Physical health</h2>
+        <p class="sal-card-sub" data-lang="es">El cuerpo también es un lugar de alabanza. La Biblia nos recuerda que no somos dueños absolutos de nuestro cuerpo, sino administradores delante de Dios.</p>
+        <p class="sal-card-sub" data-lang="en" style="display:none">The body is also a place of praise. The Bible reminds us that we are not absolute owners of our body, but stewards before God.</p>
+        <details class="sal-collapse" open>
+          <summary><span data-lang="es">Ver lo que la Biblia dice sobre el cuerpo</span><span data-lang="en" style="display:none">See what the Bible says about the body</span></summary>
+          <div class="sal-collapse-body" data-lang="es">Versículos para meditar:
+
+• "¿No sabéis que vuestro cuerpo es templo del Espíritu Santo?" (1 Cor 6, 19-20)
+• "Amado, yo deseo que tú seas prosperado en todas las cosas, y que tengas salud..." (3 Jn 1, 2)
+• "El corazón alegre constituye buen remedio" (Prov 17, 22)
+
+¿Qué te dice Dios?
+• Descansa sin culpa.
+• Come y bebe con sobriedad.
+• Busca atención médica cuando haga falta.
+• Cuida tu cuerpo como un regalo, no como un ídolo.
+
+Oración breve:
+Señor, toca mi cuerpo donde hay dolor, fatiga, inflamación o enfermedad. Dame disciplina para cuidar lo que me diste y humildad para recibir ayuda. Si quieres, sana; si no, sosténme con tu paz. Amén.
+<cite>Oración de salud física</cite></div>
+          <div class="sal-collapse-body" data-lang="en" style="display:none">Verses to meditate on:
+
+• "Do you not know that your body is a temple of the Holy Spirit?" (1 Cor 6:19-20)
+• "Beloved, I pray that in every way you may prosper and enjoy good health..." (3 John 1:2)
+• "A joyful heart is good medicine" (Prov 17:22)
+
+What does God tell you?
+• Rest without guilt.
+• Eat and drink with moderation.
+• Seek medical care when needed.
+• Care for your body as a gift, not an idol.
+
+Short prayer:
+Lord, touch my body where there is pain, fatigue, inflammation, or sickness. Give me discipline to care for what You gave me and humility to receive help. If You will, heal; if not, sustain me with Your peace. Amen.
+<cite>Physical health prayer</cite></div>
+        </details>
+      </article>
+
+      <article class="sal-card">
+        <h2 data-lang="es">Salud mental</h2>
+        <h2 data-lang="en" style="display:none">Mental health</h2>
+        <p class="sal-card-sub" data-lang="es">Dios no desprecia la angustia, la ansiedad ni el cansancio interior. Él habla paz al corazón y nos invita a pensar con verdad.</p>
+        <p class="sal-card-sub" data-lang="en" style="display:none">God does not despise anguish, anxiety, or inner exhaustion. He speaks peace to the heart and invites us to think with truth.</p>
+        <details class="sal-collapse">
+          <summary><span data-lang="es">Ver la palabra para la mente y el corazón</span><span data-lang="en" style="display:none">See the word for mind and heart</span></summary>
+          <div class="sal-collapse-body" data-lang="es">Versículos para meditar:
+
+• "No se inquieten... y la paz de Dios guardará vuestros corazones y vuestros pensamientos" (Fil 4, 6-7)
+• "Tú guardarás en completa paz a aquel cuyo pensamiento en ti persevera" (Is 26, 3)
+• "Vengan a mí todos los que están cansados y agobiados" (Mt 11, 28)
+
+¿Qué te dice Dios?
+• No te avergüences de pedir ayuda.
+• Pon nombre a lo que sientes.
+• Busca descanso, conversación sabia y apoyo profesional si hace falta.
+• No alimentes pensamientos que te destruyen.
+
+Oración breve:
+Señor Jesús, aquieta mis pensamientos, cura mis heridas invisibles y libra mi mente del temor, la obsesión y la tristeza que me encierra. Dame luz para discernir, paz para descansar y valentía para seguir caminando. Amén.
+<cite>Oración de salud mental</cite></div>
+          <div class="sal-collapse-body" data-lang="en" style="display:none">Verses to meditate on:
+
+• "Do not be anxious... and the peace of God will guard your hearts and your minds" (Phil 4:6-7)
+• "You keep in perfect peace those whose minds are steadfast in you" (Is 26:3)
+• "Come to me, all you who are weary and burdened" (Mt 11:28)
+
+What does God tell you?
+• Do not be ashamed to ask for help.
+• Name what you are feeling.
+• Seek rest, wise conversation, and professional support if needed.
+• Do not feed thoughts that destroy you.
+
+Short prayer:
+Lord Jesus, quiet my thoughts, heal my unseen wounds, and free my mind from fear, obsession, and the sadness that traps me. Give me light to discern, peace to rest, and courage to keep walking. Amen.
+<cite>Mental health prayer</cite></div>
+        </details>
+      </article>
+
+      <article class="sal-card">
+        <h2 data-lang="es">Salud del alma</h2>
+        <h2 data-lang="en" style="display:none">Health of the soul</h2>
+        <p class="sal-card-sub" data-lang="es">La salud más profunda no es solo sentirse bien: es permanecer en gracia, arrepentirse cuando caemos y volver a la amistad con Dios.</p>
+        <p class="sal-card-sub" data-lang="en" style="display:none">The deepest health is not merely feeling good: it is remaining in grace, repenting when we fall, and returning to friendship with God.</p>
+        <details class="sal-collapse">
+          <summary><span data-lang="es">Ver lo que Dios quiere para el alma</span><span data-lang="en" style="display:none">See what God wants for the soul</span></summary>
+          <div class="sal-collapse-body" data-lang="es">Versículos para meditar:
+
+• "Crea en mí, oh Dios, un corazón limpio" (Sal 51, 10)
+• "Permanezcan en mí, como yo permanezco en ustedes" (Jn 15, 4)
+• "Si confesamos nuestros pecados, él es fiel y justo para perdonarnos" (1 Jn 1, 9)
+
+¿Qué te dice Dios?
+• El pecado enferma el corazón.
+• La confesión no humilla: sana.
+• La Eucaristía, la oración y la caridad sostienen el alma.
+• La santidad también es salud.
+
+Oración breve:
+Padre santo, limpia mi alma, rompe toda cadena de pecado y devuélveme el gozo de tu salvación. Enséñame a vivir en gracia, a confesarme con verdad y a caminar contigo cada día. Amén.
+<cite>Oración de salud del alma</cite></div>
+          <div class="sal-collapse-body" data-lang="en" style="display:none">Verses to meditate on:
+
+• "Create in me a clean heart, O God" (Ps 51:10)
+• "Abide in me, as I abide in you" (Jn 15:4)
+• "If we confess our sins, he is faithful and just to forgive us" (1 Jn 1:9)
+
+What does God tell you?
+• Sin wounds the heart.
+• Confession does not humiliate: it heals.
+• The Eucharist, prayer, and charity sustain the soul.
+• Holiness is also health.
+
+Short prayer:
+Holy Father, cleanse my soul, break every chain of sin, and return to me the joy of Your salvation. Teach me to live in grace, to confess truthfully, and to walk with You each day. Amen.
+<cite>Prayer for the health of the soul</cite></div>
+        </details>
+      </article>
+
+      <article class="sal-card">
+        <h2 data-lang="es">Salud financiera</h2>
+        <h2 data-lang="en" style="display:none">Financial health</h2>
+        <p class="sal-card-sub" data-lang="es">La Biblia no promete lujo; promete providencia, sabiduría, contentamiento y la libertad de no ser esclavos del dinero.</p>
+        <p class="sal-card-sub" data-lang="en" style="display:none">The Bible does not promise luxury; it promises providence, wisdom, contentment, and freedom from being enslaved by money.</p>
+        <details class="sal-collapse">
+          <summary><span data-lang="es">Ver lo que Dios enseña sobre provisión</span><span data-lang="en" style="display:none">See what God teaches about provision</span></summary>
+          <div class="sal-collapse-body" data-lang="es">Versículos para meditar:
+
+• "Busquen primero el Reino de Dios... y todo lo demás se les dará por añadidura" (Mt 6, 33)
+• "Mi Dios suplirá todo lo que os falta" (Flp 4, 19)
+• "La bendición de Jehová es la que enriquece, y no añade tristeza" (Prov 10, 22)
+• "Nada hemos traído a este mundo... teniendo sustento y abrigo, estemos contentos" (1 Tim 6, 6-8)
+
+¿Qué te dice Dios?
+• Trabaja con honestidad.
+• Ordena tus gastos con paz.
+• Pide ayuda si estás ahogado por deudas.
+• Da con generosidad, pero sin caer en imprudencia.
+
+Oración breve:
+Señor, ordena mi economía, abre puertas honestas de trabajo y ayúdame a administrar bien lo poco o lo mucho que me das. Librame de la ansiedad por el dinero y enséñame a confiar en tu providencia. Amén.
+<cite>Oración de salud financiera</cite></div>
+          <div class="sal-collapse-body" data-lang="en" style="display:none">Verses to meditate on:
+
+• "Seek first the Kingdom of God... and all these things will be given to you as well" (Mt 6:33)
+• "My God will supply every need of yours" (Phil 4:19)
+• "The blessing of the LORD brings wealth, without painful toil for it" (Prov 10:22)
+• "If we have food and clothing, with these we will be content" (1 Tim 6:6-8)
+
+What does God tell you?
+• Work honestly.
+• Order your spending in peace.
+• Ask for help if debt is overwhelming you.
+• Give generously, but without recklessness.
+
+Short prayer:
+Lord, order my finances, open honest doors of work, and help me manage well the little or the much You give me. Free me from anxiety about money and teach me to trust in Your providence. Amen.
+<cite>Financial health prayer</cite></div>
+        </details>
+      </article>
+    </section>
+
+    <section class="sal-footer">
+      <p data-lang="es"><strong>Importante:</strong> pedir salud también significa recibir medios concretos de Dios: un médico, descanso, terapia, medicamentos, confesión, acompañamiento espiritual, disciplina y comunidad. La fe madura no niega la ayuda humana; la integra.</p>
+      <p data-lang="en" style="display:none"><strong>Important:</strong> asking for health also means receiving concrete means from God: a doctor, rest, therapy, medication, confession, spiritual guidance, discipline, and community. Mature faith does not reject human help; it integrates it.</p>
+      <p data-lang="es">Si quieres, puedes orar por una sola área o por todas a la vez. Dios escucha cuando lo buscamos con verdad.</p>
+      <p data-lang="en" style="display:none">If you want, you can pray for one area or for all of them at once. God listens when we seek Him in truth.</p>
+      <div class="sal-footer-links">
+        <a class="sal-link" href="/reconciliacion/" data-lang="es">Ir a Reconciliación</a>
+        <a class="sal-link" href="/reconciliacion/" data-lang="en" style="display:none">Go to Reconciliation</a>
+        <a class="sal-link" href="/misericordia/" data-lang="es">Orar con Misericordia</a>
+        <a class="sal-link" href="/misericordia/" data-lang="en" style="display:none">Pray with Mercy</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      function getLang() {
+        return localStorage.getItem('tup_lang') || 'es';
+      }
+
+      function applyLang(lang) {
+        var isEs = lang === 'es';
+        document.documentElement.lang = lang;
+        document.getElementById('langLabel').textContent = isEs ? 'ES' : 'EN';
+        document.querySelectorAll('[data-lang="es"]').forEach(function (el) {
+          el.style.display = isEs ? '' : 'none';
+        });
+        document.querySelectorAll('[data-lang="en"]').forEach(function (el) {
+          el.style.display = isEs ? 'none' : '';
+        });
+      }
+
+      var current = getLang();
+      applyLang(current);
+
+      var toggle = document.getElementById('langToggle');
+      if (toggle) {
+        toggle.addEventListener('click', function () {
+          var next = getLang() === 'es' ? 'en' : 'es';
+          localStorage.setItem('tup_lang', next);
+          applyLang(next);
+          window.dispatchEvent(new CustomEvent('tup:langchange', { detail: next }));
+        });
+      }
+    })();
+  </script>
+  <script src="../assets/js/menu.js"></script>
+</body>
+</html>

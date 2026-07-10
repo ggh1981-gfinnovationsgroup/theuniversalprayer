@@ -56,8 +56,9 @@
       '<li><a class="side-nav-link side-nav-family"     href="' + familyHref + '">' + (L ? '\uD83D\uDE4F Oraciones en Familia' : '\uD83D\uDE4F Family Prayers')   + '</a></li>' +
       '<li><a class="side-nav-link side-nav-saints"     href="' + interHref  + '">' + (L ? '\u2728 Intercesores'          : '\u2728 Intercessors')      + '</a></li>' +
       '<li><a class="side-nav-link side-nav-months"     href="/meses/">'    + (L ? '\uD83D\uDCC5 Meses Devocionales' : '\uD83D\uDCC5 Devotional Months') + '</a></li>' +
-      '<li><a class="side-nav-link side-nav-oraciones"  href="/oraciones/">'  + (L ? '\uD83D\uDCDC Oraciones B\u00e1sicas'  : '\uD83D\uDCDC Basic Prayers')     + '</a></li>' +
+        '<li><a class="side-nav-link side-nav-oraciones"  href="/oraciones/">'  + (L ? '\uD83D\uDCDC Oraciones B\u00e1sicas'  : '\uD83D\uDCDC Basic Prayers')     + '</a></li>' +
         '<li><a class="side-nav-link side-nav-recon"      href="/reconciliacion/">' + (L ? '\uD83D\uDE4F Reconciliación' : '\uD83D\uDE4F Reconciliation') + '</a></li>' +
+        '<li><a class="side-nav-link side-nav-salud"      href="/salud/">' + (L ? '\uD83D\uDC9A Salud integral' : '\uD83D\uDC9A Whole-person health') + '</a></li>' +
       '<li><a class="side-nav-link side-nav-rosario"    href="/rosario/">'    + (L ? '\uD83D\uDCFF Rosario Interactivo'   : '\uD83D\uDCFF Interactive Rosary') + '</a></li>' +
       '<li><a class="side-nav-link side-nav-adoracion"  href="/adoracion/">'  + (L ? '\u271D Adoraci\u00f3n'             : '\u271D Adoration')          + '</a></li>' +
       '<li><a class="side-nav-link side-nav-desierto"   href="/desierto/">'   + (L ? '\uD83C\uDFD5\uFE0F Silencio y Escucha' : '\uD83C\uDFD5\uFE0F Silence & Listening') + '</a></li>' +
