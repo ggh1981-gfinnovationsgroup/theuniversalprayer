@@ -626,8 +626,33 @@ async function initHomePage() {
       });
   }
 
-  // Start loading cards in parallel without blocking search initialization.
-  sortedIntercessors.forEach(meta => { loadAndAppendCard(meta); });
+  // Load large intercessor cards only when user scrolls near this section.
+  let cardsLoadStarted = false;
+  function startCardsLoad() {
+    if (cardsLoadStarted) return;
+    cardsLoadStarted = true;
+    sortedIntercessors.forEach(meta => { loadAndAppendCard(meta); });
+  }
+
+  if ('IntersectionObserver' in window) {
+    const loadObserver = new IntersectionObserver((entries) => {
+      const shouldLoad = entries.some(e => e.isIntersecting);
+      if (!shouldLoad) return;
+      startCardsLoad();
+      loadObserver.disconnect();
+    }, { root: null, rootMargin: '240px 0px', threshold: 0.01 });
+    loadObserver.observe(grid);
+  } else {
+    const onScrollLoad = () => {
+      const rect = grid.getBoundingClientRect();
+      if (rect.top <= window.innerHeight + 240) {
+        startCardsLoad();
+        window.removeEventListener('scroll', onScrollLoad);
+      }
+    };
+    window.addEventListener('scroll', onScrollLoad, { passive: true });
+    onScrollLoad();
+  }
 
   // Normalize removes accents so búsqueda matches busqueda, etc.
   function normalize(s) { return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
