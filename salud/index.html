@@ -271,9 +271,187 @@
       background: rgba(201,168,76,0.12);
     }
 
+    /* ── Sección administradores ── */
+    .sal-steward {
+      margin-top: 0.95rem;
+      border: 1px solid rgba(201,168,76,0.28);
+      border-radius: 18px;
+      background: linear-gradient(135deg, rgba(201,168,76,0.09), rgba(64,167,126,0.06));
+      padding: 1.1rem 1.05rem;
+    }
+
+    .sal-steward h2 {
+      margin: 0 0 0.55rem;
+      font-family: 'Playfair Display', var(--font-serif);
+      color: var(--gold-light);
+      font-size: 1.35rem;
+      line-height: 1.2;
+    }
+
+    .sal-steward .sal-steward-intro {
+      color: rgba(255,255,255,0.86);
+      font-family: 'Lato', var(--font-sans);
+      font-size: 0.9rem;
+      line-height: 1.76;
+      margin: 0 0 0.75rem;
+    }
+
+    .sal-steward-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+
+    .sal-steward-block {
+      border: 1px solid rgba(201,168,76,0.18);
+      border-radius: 12px;
+      background: rgba(10,18,31,0.72);
+      padding: 0.85rem 0.9rem;
+    }
+
+    .sal-steward-block h3 {
+      margin: 0 0 0.4rem;
+      color: var(--gold-light);
+      font-family: 'Playfair Display', var(--font-serif);
+      font-size: 1rem;
+    }
+
+    .sal-steward-block p,
+    .sal-steward-block li {
+      color: rgba(255,255,255,0.84);
+      font-family: 'Lato', var(--font-sans);
+      font-size: 0.86rem;
+      line-height: 1.72;
+      margin: 0;
+    }
+
+    .sal-steward-block ul {
+      margin: 0.45rem 0 0;
+      padding-left: 1rem;
+      display: grid;
+      gap: 0.38rem;
+    }
+
+    /* ── Sección enfermedad crónica / terminal ── */
+    .sal-chronic {
+      margin-top: 0.95rem;
+      border: 1px solid rgba(154,35,57,0.32);
+      border-radius: 18px;
+      background: linear-gradient(135deg, rgba(154,35,57,0.1), rgba(10,18,31,0.82));
+      padding: 1.1rem 1.05rem;
+    }
+
+    .sal-chronic h2 {
+      margin: 0 0 0.55rem;
+      font-family: 'Playfair Display', var(--font-serif);
+      color: #f0b0b8;
+      font-size: 1.35rem;
+      line-height: 1.2;
+    }
+
+    .sal-chronic .sal-chronic-intro {
+      color: rgba(255,255,255,0.87);
+      font-family: 'Lato', var(--font-sans);
+      font-size: 0.9rem;
+      line-height: 1.76;
+      margin: 0 0 0.82rem;
+    }
+
+    .sal-chronic-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 0.75rem;
+    }
+
+    .sal-chronic-card {
+      border: 1px solid rgba(154,35,57,0.24);
+      border-radius: 12px;
+      background: rgba(10,12,22,0.72);
+      padding: 0.85rem 0.9rem;
+    }
+
+    .sal-chronic-card h3 {
+      margin: 0 0 0.38rem;
+      color: #f0b0b8;
+      font-family: 'Playfair Display', var(--font-serif);
+      font-size: 0.98rem;
+    }
+
+    .sal-chronic-card p,
+    .sal-chronic-card li {
+      color: rgba(255,255,255,0.84);
+      font-family: 'Lato', var(--font-sans);
+      font-size: 0.85rem;
+      line-height: 1.72;
+      margin: 0;
+    }
+
+    .sal-chronic-card ul {
+      margin: 0.45rem 0 0;
+      padding-left: 1rem;
+      display: grid;
+      gap: 0.38rem;
+    }
+
+    .sal-chronic-verse {
+      margin-top: 0.72rem;
+      border-left: 3px solid rgba(154,35,57,0.5);
+      background: rgba(154,35,57,0.08);
+      border-radius: 0 10px 10px 0;
+      padding: 0.72rem 0.82rem;
+      font-family: 'Playfair Display', var(--font-serif);
+      font-style: italic;
+      color: rgba(255,255,255,0.9);
+      font-size: 0.9rem;
+      line-height: 1.75;
+      white-space: pre-line;
+    }
+
+    .sal-chronic-verse cite {
+      display: block;
+      margin-top: 0.35rem;
+      font-style: normal;
+      font-size: 0.76rem;
+      color: #f0b0b8;
+      opacity: 0.82;
+    }
+
+    details.sal-chronic-collapse {
+      margin-top: 0.72rem;
+      border: 1px solid rgba(154,35,57,0.28);
+      border-radius: 10px;
+      background: rgba(154,35,57,0.08);
+      overflow: hidden;
+    }
+
+    details.sal-chronic-collapse summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 0.62rem 0.78rem;
+      color: #f0b0b8;
+      font-family: 'Lato', var(--font-sans);
+      font-size: 0.83rem;
+      user-select: none;
+    }
+
+    details.sal-chronic-collapse summary::-webkit-details-marker { display: none; }
+    details.sal-chronic-collapse summary::before { content: '▸ '; }
+    details.sal-chronic-collapse[open] summary::before { content: '▾ '; }
+
+    .sal-chronic-body {
+      padding: 0 0.78rem 0.78rem;
+      color: rgba(255,255,255,0.88);
+      font-family: 'Lato', var(--font-sans);
+      font-size: 0.87rem;
+      line-height: 1.76;
+      white-space: pre-line;
+    }
+
     @media (max-width: 860px) {
       .sal-highlights,
-      .sal-grid {
+      .sal-grid,
+      .sal-steward-grid,
+      .sal-chronic-grid {
         grid-template-columns: 1fr;
       }
     }
@@ -481,6 +659,296 @@ Lord, order my finances, open honest doors of work, and help me manage well the 
 <cite>Financial health prayer</cite></div>
         </details>
       </article>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         SECCIÓN: El cuerpo que no te pertenece
+         ══════════════════════════════════════════════ -->
+    <section class="sal-steward">
+      <h2 data-lang="es">El cuerpo que no te pertenece — y por qué eso lo cambia todo</h2>
+      <h2 data-lang="en" style="display:none">The body that is not yours — and why that changes everything</h2>
+
+      <p class="sal-steward-intro" data-lang="es">Esta es quizás la enseñanza más poderosa que la Biblia tiene sobre el cuerpo: <strong>no eres el dueño de tu cuerpo</strong>. Eres su administrador. Dios lo creó, Jesús lo redimió con su Sangre, y el Espíritu Santo lo habita. Eso no es una metáfora. Tiene consecuencias prácticas muy concretas, especialmente para quien lo descuida.</p>
+      <p class="sal-steward-intro" data-lang="en" style="display:none">This is perhaps the most powerful teaching the Bible has about the body: <strong>you are not the owner of your body</strong>. You are its steward. God created it, Jesus redeemed it with His Blood, and the Holy Spirit dwells in it. That is not a metaphor. It has very concrete practical consequences, especially for those who neglect it.</p>
+
+      <blockquote class="sal-verse" data-lang="es" style="margin-bottom:0.85rem">¿No sabéis que vuestro cuerpo es templo del Espíritu Santo, el cual está en vosotros, el cual tenéis de Dios, y que no sois vuestros? Porque habéis sido comprados por precio; glorificad, pues, a Dios en vuestro cuerpo.
+<cite>1 Corintios 6, 19-20</cite></blockquote>
+      <blockquote class="sal-verse" data-lang="en" style="display:none;margin-bottom:0.85rem">Do you not know that your bodies are temples of the Holy Spirit, who is in you, whom you have received from God? You are not your own; you were bought at a price. Therefore honor God with your bodies.
+<cite>1 Corinthians 6:19-20</cite></blockquote>
+
+      <div class="sal-steward-grid">
+        <div class="sal-steward-block">
+          <h3 data-lang="es">¿Qué significa ser administrador del cuerpo?</h3>
+          <h3 data-lang="en" style="display:none">What does it mean to be a steward of the body?</h3>
+          <p data-lang="es">Un administrador cuida lo que se le confió, no porque sea suyo sino porque responde ante alguien más grande. Descuidar el cuerpo — no dormir, no moverse, comer sin conciencia, ignorar señales de alarma — no es solo una decisión personal. Es desatender una responsabilidad confiada por Dios.</p>
+          <p data-lang="en" style="display:none">A steward cares for what was entrusted, not because it belongs to them but because they answer to someone greater. Neglecting the body — not sleeping, not moving, eating mindlessly, ignoring warning signs — is not just a personal choice. It is neglecting a responsibility entrusted by God.</p>
+          <ul data-lang="es">
+            <li>La pereza física también es espiritual.</li>
+            <li>Nadie puede dar lo mejor de sí si destruye el instrumento.</li>
+            <li>Dios no te pide perfección atlética, sino cuidado consciente.</li>
+            <li>Respetar el cuerpo es una forma de adoración (Rm 12, 1).</li>
+          </ul>
+          <ul data-lang="en" style="display:none">
+            <li>Physical laziness is also spiritual.</li>
+            <li>No one can give their best while destroying the instrument.</li>
+            <li>God does not ask for athletic perfection, but conscious care.</li>
+            <li>Respecting the body is a form of worship (Rom 12:1).</li>
+          </ul>
+        </div>
+
+        <div class="sal-steward-block">
+          <h3 data-lang="es">Para quien no quiere cuidarse — lectura directa</h3>
+          <h3 data-lang="en" style="display:none">For those who won't take care of themselves — a direct word</h3>
+          <p data-lang="es">Si eres joven y sientes que tu cuerpo "aguanta todo" — que el ejercicio puede esperar, que el descanso es de débiles, que más tarde lo cuidas — la Biblia te habla hoy con amor y verdad: <strong>el cuerpo también envejece el alma cuando lo ignoras</strong>.</p>
+          <p data-lang="en" style="display:none">If you are young and feel your body "can take anything" — that exercise can wait, rest is for the weak, you will take care of it later — the Bible speaks to you today with love and truth: <strong>the body also ages the soul when you ignore it</strong>.</p>
+          <ul data-lang="es">
+            <li>La energía que no usas en cuidarte, la usas en quejarte después.</li>
+            <li>El cuerpo es el idioma con el que alabas, sirves y amas.</li>
+            <li>No se trata de verse bien: se trata de estar disponible para Dios.</li>
+            <li>Empezar hoy con una caminata corta, dormir bien y beber agua <em>ya es obediencia</em>.</li>
+          </ul>
+          <ul data-lang="en" style="display:none">
+            <li>The energy you don't use in caring for yourself, you use in complaining later.</li>
+            <li>The body is the language with which you praise, serve, and love.</li>
+            <li>It is not about looking good: it is about being available to God.</li>
+            <li>Starting today with a short walk, sleeping well, and drinking water <em>is already obedience</em>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <details class="sal-collapse" style="margin-top:0.85rem">
+        <summary><span data-lang="es">Oración para quien ha descuidado su cuerpo</span><span data-lang="en" style="display:none">Prayer for those who have neglected their body</span></summary>
+        <div class="sal-collapse-body" data-lang="es">Señor,
+reconozco que no siempre cuidé bien lo que me confiaste.
+No dormí cuando debía.
+No moví el cuerpo cuando lo necesitaba.
+No presté atención a las señales que pusiste en él.
+
+No vengo a flagelarse,
+vengo a cambiar.
+
+Dame convicción de que cuidarme no es vanidad sino mayordomía.
+Dame disciplina para empezar pequeño y constante.
+Dame un motivo más grande que verme bien:
+el motivo de estar disponible para Ti y para los que amo.
+
+Hoy empiezo.
+Aunque sea con un paso.
+Amén.
+<cite>— Oración del administrador del cuerpo</cite></div>
+        <div class="sal-collapse-body" data-lang="en" style="display:none">Lord,
+I recognize that I have not always cared well for what You entrusted to me.
+I did not rest when I should have.
+I did not move my body when it needed it.
+I did not pay attention to the signals You placed in it.
+
+I am not here to punish myself,
+I am here to change.
+
+Give me the conviction that caring for myself is not vanity but stewardship.
+Give me discipline to begin small and consistent.
+Give me a reason greater than looking good:
+the reason of being available to You and to those I love.
+
+Today I begin.
+Even if it is with just one step.
+Amen.
+<cite>— Prayer of the body's steward</cite></div>
+      </details>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         SECCIÓN: Enfermedad crónica o terminal
+         ══════════════════════════════════════════════ -->
+    <section class="sal-chronic">
+      <h2 data-lang="es">Cuando la enfermedad no se va — consuelo para lo crónico y lo terminal</h2>
+      <h2 data-lang="en" style="display:none">When the illness does not leave — consolation for the chronic and the terminal</h2>
+
+      <p class="sal-chronic-intro" data-lang="es">Hay enfermedades que no se curan con oración ni con medicina. Eso no es fracaso de la fe. La Biblia no promete ausencia de sufrimiento: promete presencia en el sufrimiento. Y esa presencia tiene poder de transformar todo lo que toca: el cuerpo que duele, la mente que teme, el alma que se pregunta si Dios está, y la economía del hogar que se tambalea.</p>
+      <p class="sal-chronic-intro" data-lang="en" style="display:none">There are illnesses that are not healed by prayer or medicine. That is not a failure of faith. The Bible does not promise the absence of suffering: it promises a presence within suffering. And that presence has the power to transform everything it touches: the body in pain, the mind that fears, the soul that wonders if God is there, and the household economy that is shaken.</p>
+
+      <blockquote class="sal-chronic-verse" data-lang="es">Porque para mí el vivir es Cristo, y el morir es ganancia.
+<cite>Filipenses 1, 21 — Pablo escribiendo desde la prisión, sin saber si sobreviviría</cite></blockquote>
+      <blockquote class="sal-chronic-verse" data-lang="en" style="display:none">For to me, to live is Christ and to die is gain.
+<cite>Philippians 1:21 — Paul writing from prison, not knowing whether he would survive</cite></blockquote>
+
+      <div class="sal-chronic-grid">
+        <div class="sal-chronic-card">
+          <h3 data-lang="es">El cuerpo que sufre sin respuesta</h3>
+          <h3 data-lang="en" style="display:none">The body that suffers without answers</h3>
+          <p data-lang="es">El dolor crónico, la fatiga permanente, el diagnóstico que cambia todo — Dios los conoce. Job clamó. Los Salmos gritan. Jesús sudó sangre. El sufrimiento del cuerpo nunca fue ajeno a Dios.</p>
+          <p data-lang="en" style="display:none">Chronic pain, permanent fatigue, the diagnosis that changes everything — God knows them. Job cried out. The Psalms scream. Jesus sweat blood. The suffering of the body has never been foreign to God.</p>
+          <ul data-lang="es">
+            <li>"Aunque ande en valle de sombra..." (Sal 23, 4)</li>
+            <li>"Nuestra leve tribulación momentánea produce un eterno peso de gloria" (2 Cor 4, 17)</li>
+            <li>Pedir alivio es legítimo. Dios escucha.</li>
+            <li>Si no sana, sigue siendo amado. El sufrimiento no es castigo.</li>
+          </ul>
+          <ul data-lang="en" style="display:none">
+            <li>"Even though I walk through the valley of the shadow..." (Ps 23:4)</li>
+            <li>"Our light and momentary troubles are achieving an eternal glory" (2 Cor 4:17)</li>
+            <li>Asking for relief is legitimate. God hears.</li>
+            <li>If healing does not come, you are still loved. Suffering is not punishment.</li>
+          </ul>
+        </div>
+
+        <div class="sal-chronic-card">
+          <h3 data-lang="es">La mente que carga con el diagnóstico</h3>
+          <h3 data-lang="en" style="display:none">The mind that carries the diagnosis</h3>
+          <p data-lang="es">El miedo al futuro, la incertidumbre, los pensamientos de muerte — no son falta de fe. Son la realidad humana. Dios no pide que los ignores: pide que los lleves a Él.</p>
+          <p data-lang="en" style="display:none">Fear of the future, uncertainty, thoughts of death — these are not lack of faith. They are human reality. God does not ask you to ignore them: He asks you to bring them to Him.</p>
+          <ul data-lang="es">
+            <li>Permite que alguien te acompañe; no cargues solo.</li>
+            <li>El apoyo psicológico es una gracia, no debilidad.</li>
+            <li>"No se turbe vuestro corazón; creéis en Dios, creed también en mí" (Jn 14, 1)</li>
+          </ul>
+          <ul data-lang="en" style="display:none">
+            <li>Allow someone to walk with you; do not carry it alone.</li>
+            <li>Psychological support is a grace, not weakness.</li>
+            <li>"Do not let your hearts be troubled. You believe in God; believe also in me" (Jn 14:1)</li>
+          </ul>
+        </div>
+
+        <div class="sal-chronic-card">
+          <h3 data-lang="es">El alma que pregunta "¿por qué?"</h3>
+          <h3 data-lang="en" style="display:none">The soul that asks "why?"</h3>
+          <p data-lang="es">Es la pregunta más honesta. Dios no la esquiva: la habitó. La Cruz no fue el fin de Jesús; fue el camino. La fe en la enfermedad no es resignación: es confiar en un Dios que ya pasó por aquí.</p>
+          <p data-lang="en" style="display:none">It is the most honest question. God does not dodge it: He inhabited it. The Cross was not the end of Jesus; it was the way. Faith in illness is not resignation: it is trusting a God who has already walked this path.</p>
+          <ul data-lang="es">
+            <li>El "¿por qué?" dirigido a Dios es oración.</li>
+            <li>La enfermedad puede purificar, pero no es enviada como castigo.</li>
+            <li>Ofrecerla unida a la Pasión de Cristo tiene un valor eterno.</li>
+            <li>Los sacramentos (Unción de los Enfermos) son gracia real, no resignación.</li>
+          </ul>
+          <ul data-lang="en" style="display:none">
+            <li>The "why?" directed to God is prayer.</li>
+            <li>Illness can purify, but it is not sent as punishment.</li>
+            <li>Offering it united to Christ's Passion has eternal value.</li>
+            <li>The sacraments (Anointing of the Sick) are real grace, not resignation.</li>
+          </ul>
+        </div>
+
+        <div class="sal-chronic-card">
+          <h3 data-lang="es">La economía del hogar en crisis por enfermedad</h3>
+          <h3 data-lang="en" style="display:none">The household economy in crisis due to illness</h3>
+          <p data-lang="es">Las facturas médicas, la incapacidad laboral, el familiar que deja de trabajar para cuidar — la enfermedad crónica o terminal también es una crisis económica. Dios la conoce y tiene providencia para ella.</p>
+          <p data-lang="en" style="display:none">Medical bills, inability to work, the family member who stops working to be a caregiver — chronic or terminal illness is also an economic crisis. God knows it and has providence for it.</p>
+          <ul data-lang="es">
+            <li>Pide ayuda concreta sin vergüenza; recibir también es un acto de fe.</li>
+            <li>Busca organizaciones, iglesia local, comunidad.</li>
+            <li>"El que da al pobre a Dios presta" — quien cuida de ti, sirve a Dios.</li>
+            <li>Dios puede abrir puertas de provisión inesperadas; no cierres ninguna por orgullo.</li>
+          </ul>
+          <ul data-lang="en" style="display:none">
+            <li>Ask for concrete help without shame; receiving is also an act of faith.</li>
+            <li>Seek organizations, the local church, community.</li>
+            <li>"Whoever is kind to the poor lends to the LORD" — those who care for you serve God.</li>
+            <li>God can open unexpected doors of provision; do not close any out of pride.</li>
+          </ul>
+        </div>
+      </div>
+
+      <details class="sal-chronic-collapse" style="margin-top:0.9rem">
+        <summary><span data-lang="es">Oración en la enfermedad crónica o terminal</span><span data-lang="en" style="display:none">Prayer in chronic or terminal illness</span></summary>
+        <div class="sal-chronic-body" data-lang="es">Señor Jesús,
+estoy enfermo. Y no sé si esto va a mejorar.
+
+No vengo a pedirte que pretendas que no duele.
+Duele. Y me da miedo.
+Me da miedo lo que le espera a los que amo.
+Me da miedo el dinero, el trabajo, el futuro.
+
+Pero sé que tú también sangraste.
+Que tú también preguntaste "¿por qué me has abandonado?"
+Y que no te fue respondido con palabras, sino con resurrección.
+
+No sé si me vas a sanar aquí.
+Pero sé que no me abandonas.
+
+Acompáñame en lo que no se cura.
+Dame paz para lo que no tiene respuesta.
+Sostenme cuando no pueda sostenerme solo.
+Dale fuerza a mi familia, que también lo carga.
+
+Y si este sufrimiento puede tener algún sentido unido al tuyo,
+úsalo, Señor.
+No lo desperdicies.
+
+Amén.
+<cite>— Oración del enfermo que confía</cite></div>
+        <div class="sal-chronic-body" data-lang="en" style="display:none">Lord Jesus,
+I am sick. And I do not know if this will get better.
+
+I am not coming to ask You to pretend it does not hurt.
+It hurts. And I am afraid.
+I am afraid of what awaits those I love.
+I am afraid about money, work, the future.
+
+But I know that You also bled.
+That You also asked "why have You forsaken me?"
+And that You were answered not with words, but with resurrection.
+
+I do not know if You will heal me here.
+But I know You do not abandon me.
+
+Walk with me through what cannot be cured.
+Give me peace for what has no answer.
+Sustain me when I cannot sustain myself.
+Give strength to my family, who also carries this.
+
+And if this suffering can have any meaning united to Yours,
+use it, Lord.
+Do not let it go to waste.
+
+Amen.
+<cite>— Prayer of the one who is sick and trusts</cite></div>
+      </details>
+
+      <details class="sal-chronic-collapse">
+        <summary><span data-lang="es">Para el familiar o cuidador del enfermo</span><span data-lang="en" style="display:none">For the family member or caregiver of the sick</span></summary>
+        <div class="sal-chronic-body" data-lang="es">Señor,
+yo también estoy cansado.
+
+Cuido con amor pero me agoto.
+Lloro cuando nadie me ve.
+A veces me enojo y luego me arrepiento.
+A veces no sé cómo orar porque todo el dolor es demasiado.
+
+No me pidas que sea fuerte siempre.
+Pídeme que sea fiel.
+
+Dame descanso cuando no puedo más.
+Dame paciencia cuando ya no queda.
+Dame gracia para amar lo que no puedo cambiar.
+Y deja que alguien también me cuide a mí.
+
+Que lo que hago en esta casa, aunque no lo vea nadie,
+lo veas Tú.
+
+Amén.
+<cite>— Oración del cuidador</cite></div>
+        <div class="sal-chronic-body" data-lang="en" style="display:none">Lord,
+I am also tired.
+
+I care with love but I am exhausted.
+I cry when no one sees me.
+Sometimes I get angry and then I am sorry.
+Sometimes I do not know how to pray because all the pain is too much.
+
+Do not ask me to always be strong.
+Ask me to be faithful.
+
+Give me rest when I cannot go on.
+Give me patience when there is none left.
+Give me grace to love what I cannot change.
+And let someone also care for me.
+
+May what I do in this house, even if no one sees it,
+be seen by You.
+
+Amen.
+<cite>— Prayer of the caregiver</cite></div>
+      </details>
     </section>
 
     <section class="sal-footer">
