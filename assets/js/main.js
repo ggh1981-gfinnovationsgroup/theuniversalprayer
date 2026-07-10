@@ -628,13 +628,13 @@ async function initHomePage() {
     const targets = [secretSearchResult, quickSecretSearchResult].filter(Boolean);
     if (!targets.length) return;
 
-    const iconDreams = '<img class="secret-result-icon" src="/assets/images/private-search/dreams.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">';
-    const iconBarbara = '<img class="secret-result-icon" src="/assets/images/private-search/barbara.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">';
-    const iconFabiola = '<img class="secret-result-icon" src="/assets/images/private-search/fabiola.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">';
-    const iconBrandon = '<img class="secret-result-icon" src="/assets/images/private-search/brandon.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">';
-    const iconKatherine = '<img class="secret-result-icon" src="/assets/images/private-search/katherine.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">';
-    const iconClarissa = '<img class="secret-result-icon" src="/assets/images/private-search/clarissa.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">';
-    const iconIan = '<img class="secret-result-icon" src="/assets/images/private-search/ian.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">';
+    const iconDreams = '<img class="secret-result-icon" src="/assets/images/private-search/dreams.svg" alt="" aria-hidden="true" decoding="async">';
+    const iconBarbara = '<img class="secret-result-icon" src="/assets/images/private-search/barbara.svg" alt="" aria-hidden="true" decoding="async">';
+    const iconFabiola = '<img class="secret-result-icon" src="/assets/images/private-search/fabiola.svg" alt="" aria-hidden="true" decoding="async">';
+    const iconBrandon = '<img class="secret-result-icon" src="/assets/images/private-search/brandon.svg" alt="" aria-hidden="true" decoding="async">';
+    const iconKatherine = '<img class="secret-result-icon" src="/assets/images/private-search/katherine.svg" alt="" aria-hidden="true" decoding="async">';
+    const iconClarissa = '<img class="secret-result-icon" src="/assets/images/private-search/clarissa.svg" alt="" aria-hidden="true" decoding="async">';
+    const iconIan = '<img class="secret-result-icon" src="/assets/images/private-search/ian.svg" alt="" aria-hidden="true" decoding="async">';
 
     const hasGgh = q.includes('ggh1981');
     const hasBarbie = q.includes('barbarascarlettgomezmichel');

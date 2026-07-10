@@ -2119,11 +2119,15 @@ body {
 }
 .secret-search-result a:hover { color: var(--gold); }
 .secret-result-icon {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
   fill: currentColor;
   opacity: 0.95;
   flex-shrink: 0;
+}
+.secret-search-result img.secret-result-icon {
+  object-fit: contain;
 }
 
 /* ── SCROLL TO TOP ───────────────────────────────── */
