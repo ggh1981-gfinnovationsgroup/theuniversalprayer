@@ -6,6 +6,47 @@
 (function () {
   'use strict';
 
+  const MENU_ITEMS = [
+    {
+      id: 'home',
+      href: function (path) {
+        return path === '/' || path === '/index.html' || path.endsWith('/theuniversalprayer/') ? '#top' : '/';
+      },
+      labels: { es: 'Inicio', en: 'Home' },
+      icon: '🏠',
+      order: 0,
+    },
+    {
+      id: 'family',
+      href: function (path) {
+        return path === '/' || path === '/index.html' || path.endsWith('/theuniversalprayer/') ? '#oraciones-familia' : '/#oraciones-familia';
+      },
+      labels: { es: 'Oraciones en Familia', en: 'Family Prayers' },
+      icon: '🙏',
+    },
+    {
+      id: 'saints',
+      href: function (path) {
+        return path === '/' || path === '/index.html' || path.endsWith('/theuniversalprayer/') ? '#intercessorsGrid' : '/#intercessorsGrid';
+      },
+      labels: { es: 'Intercesores', en: 'Intercessors' },
+      icon: '✨',
+    },
+    { id: 'adoracion', href: '/adoracion/', labels: { es: 'Adoración', en: 'Adoration' }, icon: '✝' },
+    { id: 'desierto', href: '/desierto/', labels: { es: 'Silencio y Escucha', en: 'Silence & Listening' }, icon: '🏕️' },
+    { id: 'difuntos', href: '/difuntos/', labels: { es: 'Difuntos', en: 'Departed' }, icon: '🕯️' },
+    { id: 'enemigos', href: '/enemigos/', labels: { es: 'Bendecir enemigos', en: 'Bless enemies' }, icon: '🤍' },
+    { id: 'espiritu', href: '/espiritu/', labels: { es: 'Espíritu Santo', en: 'Holy Spirit' }, icon: '🕊️' },
+    { id: 'llamados', href: '/llamados/', labels: { es: 'Altar de Llamados', en: 'Call Altar' }, icon: '🌟' },
+    { id: 'matrimonio', href: '/matrimonio/', labels: { es: 'Matrimonio', en: 'Marriage' }, icon: '💍' },
+    { id: 'meses', href: '/meses/', labels: { es: 'Meses Devocionales', en: 'Devotional Months' }, icon: '📅' },
+    { id: 'misericordia', href: '/misericordia/', labels: { es: 'Perdón y Misericordia', en: 'Mercy & Repentance' }, icon: '🕯️' },
+    { id: 'oraciones', href: '/oraciones/', labels: { es: 'Oraciones Básicas', en: 'Basic Prayers' }, icon: '📜' },
+    { id: 'reconciliacion', href: '/reconciliacion/', labels: { es: 'Reconciliación', en: 'Reconciliation' }, icon: '🙏' },
+    { id: 'rosario', href: '/rosario/', labels: { es: 'Rosario Interactivo', en: 'Interactive Rosary' }, icon: '📿' },
+    { id: 'salud', href: '/salud/', labels: { es: 'Salud integral', en: 'Whole-person health' }, icon: '💚' },
+  ];
+
   function getLang() {
     return localStorage.getItem('tup_lang') || 'es';
   }
@@ -47,27 +88,23 @@
     const L = lang === 'es';
     const path = window.location.pathname;
     const isRoot = path === '/' || path === '/index.html' || path.endsWith('/theuniversalprayer/');
-    const homeHref   = isRoot ? '#top'                 : '/';
-    const familyHref = isRoot ? '#oraciones-familia'   : '/#oraciones-familia';
-    const interHref  = isRoot ? '#intercessorsGrid'    : '/#intercessorsGrid';
 
-    list.innerHTML =
-      '<li><a class="side-nav-link side-nav-home"       href="' + homeHref   + '">' + (L ? '\uD83C\uDFE0 Inicio'           : '\uD83C\uDFE0 Home')         + '</a></li>' +
-      '<li><a class="side-nav-link side-nav-family"     href="' + familyHref + '">' + (L ? '\uD83D\uDE4F Oraciones en Familia' : '\uD83D\uDE4F Family Prayers')   + '</a></li>' +
-      '<li><a class="side-nav-link side-nav-saints"     href="' + interHref  + '">' + (L ? '\u2728 Intercesores'          : '\u2728 Intercessors')      + '</a></li>' +
-      '<li><a class="side-nav-link side-nav-months"     href="/meses/">'    + (L ? '\uD83D\uDCC5 Meses Devocionales' : '\uD83D\uDCC5 Devotional Months') + '</a></li>' +
-        '<li><a class="side-nav-link side-nav-oraciones"  href="/oraciones/">'  + (L ? '\uD83D\uDCDC Oraciones B\u00e1sicas'  : '\uD83D\uDCDC Basic Prayers')     + '</a></li>' +
-        '<li><a class="side-nav-link side-nav-recon"      href="/reconciliacion/">' + (L ? '\uD83D\uDE4F Reconciliación' : '\uD83D\uDE4F Reconciliation') + '</a></li>' +
-        '<li><a class="side-nav-link side-nav-salud"      href="/salud/">' + (L ? '\uD83D\uDC9A Salud integral' : '\uD83D\uDC9A Whole-person health') + '</a></li>' +
-      '<li><a class="side-nav-link side-nav-rosario"    href="/rosario/">'    + (L ? '\uD83D\uDCFF Rosario Interactivo'   : '\uD83D\uDCFF Interactive Rosary') + '</a></li>' +
-      '<li><a class="side-nav-link side-nav-adoracion"  href="/adoracion/">'  + (L ? '\u271D Adoraci\u00f3n'             : '\u271D Adoration')          + '</a></li>' +
-      '<li><a class="side-nav-link side-nav-desierto"   href="/desierto/">'   + (L ? '\uD83C\uDFD5\uFE0F Silencio y Escucha' : '\uD83C\uDFD5\uFE0F Silence & Listening') + '</a></li>' +
-      '<li><a class="side-nav-link side-nav-espiritu"   href="/espiritu/">'   + (L ? '\uD83D\uDD4A\uFE0F Esp\u00edritu Santo'  : '\uD83D\uDD4A\uFE0F Holy Spirit')   + '</a></li>' +
-      '<li><a class="side-nav-link side-nav-misericordia" href="/misericordia/">' + (L ? '\uD83D\uDD6F Perd\u00f3n y Misericordia' : '\uD83D\uDD6F Mercy & Repentance') + '</a></li>' +
-      '<li><a class="side-nav-link side-nav-matrimonio" href="/matrimonio/">' + (L ? '\uD83D\uDC8D Matrimonio'           : '\uD83D\uDC8D Marriage')      + '</a></li>' +
-      '<li><a class="side-nav-link side-nav-difuntos"   href="/difuntos/">'   + (L ? '\uD83D\uDD6F Difuntos'             : '\uD83D\uDD6F Departed')      + '</a></li>' +
-      '<li><a class="side-nav-link side-nav-llamados"   href="/llamados/">'   + (L ? '\uD83C\uDF1F Altar de Llamados'    : '\uD83C\uDF1F Call Altar')    + '</a></li>' +
-      '<li><a class="side-nav-link side-nav-enemigos"   href="/enemigos/">'   + (L ? '\uD83E\uDD0D Bendecir enemigos'    : '\uD83E\uDD0D Bless enemies') + '</a></li>';
+    const items = MENU_ITEMS
+      .slice()
+      .sort(function (a, b) {
+        if (a.id === 'home' && b.id !== 'home') return -1;
+        if (a.id !== 'home' && b.id === 'home') return 1;
+
+        const aLabel = L ? a.labels.es : a.labels.en;
+        const bLabel = L ? b.labels.es : b.labels.en;
+        return aLabel.localeCompare(bLabel, L ? 'es' : 'en', { sensitivity: 'base' });
+      });
+
+    list.innerHTML = items.map(function (item) {
+      var href = typeof item.href === 'function' ? item.href(path) : item.href;
+      var label = L ? item.labels.es : item.labels.en;
+      return '<li><a class="side-nav-link side-nav-' + item.id + '" href="' + href + '">' + item.icon + ' ' + label + '</a></li>';
+    }).join('');
 
     // Update panel header title
     var es = document.getElementById('sideNavTitleEs');
