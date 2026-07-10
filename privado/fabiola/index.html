@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mensaje Privado | Fabiola</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#c9a84c" />
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo" style="text-decoration:none; color:inherit;">
+        <span class="cross">✝</span>
+        <span class="logo-text" data-lang="es">La Oracion Universal</span>
+        <span class="logo-text" data-lang="en" style="display:none">The Universal Prayer</span>
+      </a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span id="langLabel">EN</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main-content" style="padding-top:1.2rem;">
+    <section class="adoracion-card-section" id="lockedState">
+      <div class="adoracion-card-inner">
+        <div>
+          <h1 class="adoracion-card-title" data-lang="es">Acceso privado</h1>
+          <h1 class="adoracion-card-title" data-lang="en" style="display:none">Private access</h1>
+          <p class="adoracion-card-desc" data-lang="es">Esta pagina requiere clave valida.</p>
+          <p class="adoracion-card-desc" data-lang="en" style="display:none">This page requires a valid key.</p>
+          <a href="/" class="adoracion-card-btn"><span data-lang="es">Volver al inicio</span><span data-lang="en" style="display:none">Back to home</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="adoracion-card-section" id="mensajeFabiolaprivado" style="display:none;">
+      <div class="adoracion-card-inner">
+        <svg class="adoracion-card-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="34" cy="40" r="14" fill="none" stroke="#c9a84c" stroke-width="4"/>
+          <circle cx="66" cy="40" r="14" fill="none" stroke="#c9a84c" stroke-width="4"/>
+          <path d="M22 72 C30 62, 38 56, 50 56 C62 56, 70 62, 78 72" fill="none" stroke="#c9a84c" stroke-width="4" stroke-linecap="round"/>
+          <line x1="50" y1="24" x2="50" y2="36" stroke="#c9a84c" stroke-width="3" stroke-linecap="round"/>
+          <line x1="44" y1="29" x2="56" y2="29" stroke="#c9a84c" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <span class="adoracion-card-badge" data-lang="es">Mensaje privado para mi esposa</span>
+          <span class="adoracion-card-badge" data-lang="en" style="display:none">Private message for my wife</span>
+          <h2 class="adoracion-card-title" data-lang="es">Fabiola, te amo y doy gracias a Dios por ti</h2>
+          <h2 class="adoracion-card-title" data-lang="en" style="display:none">Fabiola, I love you and thank God for you</h2>
+          <p class="adoracion-card-desc" data-lang="es">Amor mio, eres una bendicion en mi vida y en nuestro matrimonio. Yo te amo profundamente, pero Dios y Maria te aman aun mas. Le pido al Espiritu Santo que nos guie cada dia con humildad, paciencia y alegria, y que nuestra casa permanezca siempre en la gracia de Dios.</p>
+          <p class="adoracion-card-desc" data-lang="en" style="display:none">My love, you are a blessing in my life and in our marriage. I love you deeply, but God and Mary love you even more. I ask the Holy Spirit to guide us each day with humility, patience, and joy, and to keep our home always in God's grace.</p>
+          <ul class="adoracion-card-desc" data-lang="es" style="margin:0.35rem 0 0 1.1rem; padding:0;">
+            <li><a href="/matrimonio/">Matrimonio: gracia y bendiciones del sacramento</a></li>
+            <li><a href="/intercesor/?intercesor=santamonica">Santa Monica: oracion perseverante por la familia</a></li>
+            <li><a href="/intercesor/?intercesor=fatima">Virgen de Fatima: consagracion y paz del hogar</a></li>
+            <li><a href="/reconciliacion/">Reconciliacion: sanar y empezar de nuevo</a></li>
+          </ul>
+          <ul class="adoracion-card-desc" data-lang="en" style="display:none; margin:0.35rem 0 0 1.1rem; padding:0;">
+            <li><a href="/matrimonio/">Marriage: grace and sacramental blessings</a></li>
+            <li><a href="/intercesor/?intercesor=santamonica">Saint Monica: persevering prayer for family</a></li>
+            <li><a href="/intercesor/?intercesor=fatima">Our Lady of Fatima: consecration and peace at home</a></li>
+            <li><a href="/reconciliacion/">Reconciliation: healing and a new beginning</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      var lang = localStorage.getItem('tup_lang') || 'es';
+      var label = document.getElementById('langLabel');
+      var qp = new URLSearchParams(window.location.search);
+      var ok = (qp.get('clave') || '').toLowerCase() === 'fabiolamichellopez';
+      var locked = document.getElementById('lockedState');
+      var content = document.getElementById('mensajeFabiolaprivado');
+      if (ok) {
+        if (locked) locked.style.display = 'none';
+        if (content) content.style.display = '';
+      }
+
+      function applyLang() {
+        document.querySelectorAll('[data-lang]').forEach(function (el) {
+          el.style.display = el.getAttribute('data-lang') === lang ? '' : 'none';
+        });
+        if (label) label.textContent = lang === 'es' ? 'EN' : 'ES';
+      }
+
+      document.getElementById('langToggle')?.addEventListener('click', function () {
+        lang = lang === 'es' ? 'en' : 'es';
+        localStorage.setItem('tup_lang', lang);
+        applyLang();
+      });
+
+      applyLang();
+    })();
+  </script>
+</body>
+</html>

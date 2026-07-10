@@ -643,12 +643,15 @@ async function initHomePage() {
   function renderSecretResult(q) {
     if (!secretSearchResult) return;
 
-    const icon = '<svg class="secret-result-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3c-2.76 0-5 2.24-5 5v2H6c-1.1 0-2 .9-2 2v7c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-7c0-1.1-.9-2-2-2h-1V8c0-2.76-2.24-5-5-5zm-3 7V8c0-1.65 1.35-3 3-3s3 1.35 3 3v2H9z"/></svg>';
+    const iconDreams = '<svg class="secret-result-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a6 6 0 0 0-6 6v2H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-1V8a6 6 0 0 0-6-6zm-4 8V8a4 4 0 1 1 8 0v2H8z"/></svg>';
+    const iconBarbara = '<svg class="secret-result-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-4.6-7-10.2C5 7.3 7.2 5 10 5c1.7 0 3 .8 4 2 1-1.2 2.3-2 4-2 2.8 0 5 2.3 5 5.8C23 16.4 16 21 16 21h-4z"/></svg>';
+    const iconFabiola = '<svg class="secret-result-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 6.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7zm10 0a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7zM3 20c.3-3 2.4-5 5.5-5s5.2 2 5.5 5H3zm9.8 0c.2-2.4 1.9-4.2 4.7-4.2 2.6 0 4.3 1.8 4.5 4.2h-9.2z"/></svg>';
 
     const hasGgh = q.includes('ggh1981');
     const hasBarbie = q.includes('barbarascarlettgomezmichel');
+    const hasFabiola = q.includes('fabiolamichellopez');
 
-    if (!hasGgh && !hasBarbie) {
+    if (!hasGgh && !hasBarbie && !hasFabiola) {
       secretSearchResult.style.display = 'none';
       secretSearchResult.innerHTML = '';
       return;
@@ -657,16 +660,16 @@ async function initHomePage() {
     const linksEs = [];
     const linksEn = [];
     if (hasGgh) {
-      linksEs.push('<a href="/discernimiento/?clave=ggh1981#suenos-privados">' + icon + '<span>Acceso privado: tus sueños y discernimiento en la gracia de Dios</span></a>');
-      linksEn.push('<a href="/discernimiento/?clave=ggh1981#suenos-privados">' + icon + '<span>Private access: your dreams and discernment in God\'s grace</span></a>');
+      linksEs.push('<a href="/discernimiento/?clave=ggh1981#suenos-privados">' + iconDreams + '<span>Acceso privado: tus sueños y discernimiento en la gracia de Dios</span></a>');
+      linksEn.push('<a href="/discernimiento/?clave=ggh1981#suenos-privados">' + iconDreams + '<span>Private access: your dreams and discernment in God\'s grace</span></a>');
     }
     if (hasBarbie) {
-      linksEs.push('<a href="/discernimiento/?clave=barbarascarlettgomezmichel#mensaje-barbara">' + icon + '<span>Mensaje privado para Barbara: amor de papa y caminos buenos</span></a>');
-      linksEn.push('<a href="/discernimiento/?clave=barbarascarlettgomezmichel#mensaje-barbara">' + icon + '<span>Private message for Barbara: dad\'s love and good paths</span></a>');
+      linksEs.push('<a href="/privado/barbara/?clave=barbarascarlettgomezmichel">' + iconBarbara + '<span>Mensaje privado para Barbara: amor de papa y caminos buenos</span></a>');
+      linksEn.push('<a href="/privado/barbara/?clave=barbarascarlettgomezmichel">' + iconBarbara + '<span>Private message for Barbara: dad\'s love and good paths</span></a>');
     }
-    if (q.includes('fabiolamichellopez')) {
-      linksEs.push('<a href="/discernimiento/?clave=fabiolamichellopez#mensaje-fabiola">' + icon + '<span>Mensaje privado para Fabiola: amor, oración y gracia matrimonial</span></a>');
-      linksEn.push('<a href="/discernimiento/?clave=fabiolamichellopez#mensaje-fabiola">' + icon + '<span>Private message for Fabiola: love, prayer and marital grace</span></a>');
+    if (hasFabiola) {
+      linksEs.push('<a href="/privado/fabiola/?clave=fabiolamichellopez">' + iconFabiola + '<span>Mensaje privado para Fabiola: amor, oración y gracia matrimonial</span></a>');
+      linksEn.push('<a href="/privado/fabiola/?clave=fabiolamichellopez">' + iconFabiola + '<span>Private message for Fabiola: love, prayer and marital grace</span></a>');
     }
 
     secretSearchResult.innerHTML = currentLang === 'es' ? linksEs.join('<br>') : linksEn.join('<br>');

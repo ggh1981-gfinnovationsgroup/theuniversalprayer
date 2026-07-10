@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mensaje Privado | Barbara</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#c9a84c" />
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo" style="text-decoration:none; color:inherit;">
+        <span class="cross">✝</span>
+        <span class="logo-text" data-lang="es">La Oracion Universal</span>
+        <span class="logo-text" data-lang="en" style="display:none">The Universal Prayer</span>
+      </a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span id="langLabel">EN</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main-content" style="padding-top:1.2rem;">
+    <section class="adoracion-card-section" id="lockedState">
+      <div class="adoracion-card-inner">
+        <div>
+          <h1 class="adoracion-card-title" data-lang="es">Acceso privado</h1>
+          <h1 class="adoracion-card-title" data-lang="en" style="display:none">Private access</h1>
+          <p class="adoracion-card-desc" data-lang="es">Esta pagina requiere clave valida.</p>
+          <p class="adoracion-card-desc" data-lang="en" style="display:none">This page requires a valid key.</p>
+          <a href="/" class="adoracion-card-btn"><span data-lang="es">Volver al inicio</span><span data-lang="en" style="display:none">Back to home</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="adoracion-card-section" id="mensajeBarbaraprivado" style="display:none;">
+      <div class="adoracion-card-inner">
+        <svg class="adoracion-card-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M50 80 C25 64, 14 52, 14 36 C14 24, 23 16, 34 16 C42 16, 48 20, 50 26 C52 20, 58 16, 66 16 C77 16, 86 24, 86 36 C86 52, 75 64, 50 80 Z" fill="none" stroke="#c9a84c" stroke-width="4"/>
+          <line x1="50" y1="35" x2="50" y2="56" stroke="#c9a84c" stroke-width="3.5" stroke-linecap="round"/>
+          <line x1="40" y1="45" x2="60" y2="45" stroke="#c9a84c" stroke-width="3.5" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <span class="adoracion-card-badge" data-lang="es">Mensaje privado para mi hija</span>
+          <span class="adoracion-card-badge" data-lang="en" style="display:none">Private message for my daughter</span>
+          <h2 class="adoracion-card-title" data-lang="es">Barbara, te amo con todo mi corazon</h2>
+          <h2 class="adoracion-card-title" data-lang="en" style="display:none">Barbara, I love you with all my heart</h2>
+          <p class="adoracion-card-desc" data-lang="es">Hija, eres un regalo de Dios para mi vida. Yo te amo con todo mi corazon, pero Dios y Maria te aman aun mas. Oro por ti todos los dias para que el Senor te proteja, te de sabiduria y te llene de paz. Siempre voy a estar contigo, cuidandote y animandote a caminar en la gracia de Dios.</p>
+          <p class="adoracion-card-desc" data-lang="en" style="display:none">Daughter, you are a gift from God in my life. I love you with all my heart, but God and Mary love you even more. I pray for you every day that the Lord may protect you, grant you wisdom, and fill you with peace. I will always be with you, caring for you and encouraging you to walk in God's grace.</p>
+          <h3 class="section-title" data-lang="es" style="font-size:1.1rem; margin-top:0.8rem;">Caminos buenos para ti</h3>
+          <h3 class="section-title" data-lang="en" style="display:none; font-size:1.1rem; margin-top:0.8rem;">Good paths for you</h3>
+          <ul class="adoracion-card-desc" data-lang="es" style="margin:0.35rem 0 0 1.1rem; padding:0;">
+            <li><a href="/intercesor/?intercesor=santabarbara">Tu santa: Santa Barbara</a></li>
+            <li><a href="/jovenes/">Jovenes en Cristo</a></li>
+            <li><a href="/salud/">Salud integral</a></li>
+            <li><a href="/oraciones/">Oraciones basicas para cada dia</a></li>
+          </ul>
+          <ul class="adoracion-card-desc" data-lang="en" style="display:none; margin:0.35rem 0 0 1.1rem; padding:0;">
+            <li><a href="/intercesor/?intercesor=santabarbara">Your saint: Saint Barbara</a></li>
+            <li><a href="/jovenes/">Young People in Christ</a></li>
+            <li><a href="/salud/">Whole-person health</a></li>
+            <li><a href="/oraciones/">Basic daily prayers</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      var lang = localStorage.getItem('tup_lang') || 'es';
+      var label = document.getElementById('langLabel');
+      var qp = new URLSearchParams(window.location.search);
+      var ok = (qp.get('clave') || '').toLowerCase() === 'barbarascarlettgomezmichel';
+      var locked = document.getElementById('lockedState');
+      var content = document.getElementById('mensajeBarbaraprivado');
+      if (ok) {
+        if (locked) locked.style.display = 'none';
+        if (content) content.style.display = '';
+      }
+
+      function applyLang() {
+        document.querySelectorAll('[data-lang]').forEach(function (el) {
+          el.style.display = el.getAttribute('data-lang') === lang ? '' : 'none';
+        });
+        if (label) label.textContent = lang === 'es' ? 'EN' : 'ES';
+      }
+
+      document.getElementById('langToggle')?.addEventListener('click', function () {
+        lang = lang === 'es' ? 'en' : 'es';
+        localStorage.setItem('tup_lang', lang);
+        applyLang();
+      });
+
+      applyLang();
+    })();
+  </script>
+</body>
+</html>
