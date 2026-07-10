@@ -1,4 +1,4 @@
-ñ<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -173,6 +173,37 @@
       font-family: 'Cardo', var(--font-serif);
       font-size: 0.9rem;
       line-height: 1.78;
+    }
+
+    details.des-collapse {
+      margin-top: 0.7rem;
+      border: 1px solid rgba(127,192,226,0.28);
+      border-radius: 10px;
+      background: rgba(127,192,226,0.1);
+      overflow: hidden;
+    }
+
+    details.des-collapse summary {
+      cursor: pointer;
+      color: #b9ddf6;
+      font-family: 'Manrope', var(--font-sans);
+      font-size: 0.83rem;
+      padding: 0.62rem 0.78rem;
+      user-select: none;
+      list-style: none;
+    }
+
+    details.des-collapse summary::-webkit-details-marker { display: none; }
+    details.des-collapse summary::before { content: '▸ '; }
+    details.des-collapse[open] summary::before { content: '▾ '; }
+
+    .des-collapse-body {
+      white-space: pre-line;
+      color: rgba(255,255,255,0.88);
+      font-family: 'Cardo', var(--font-serif);
+      font-size: 0.9rem;
+      line-height: 1.78;
+      padding: 0 0.82rem 0.78rem;
     }
 
     .des-icons {
@@ -415,17 +446,21 @@ Do not seek intense feelings; seek faithfulness.</div>
         <blockquote class="des-quote" data-lang="en" style="display:none">Remain here and keep watch with me.
 <cite>— Matthew 26:38</cite></blockquote>
 
-        <div class="des-lectio" data-lang="es"><strong>Oración breve para repetir (Día 1):</strong>
-      "Jesús Eucaristía, enséñame a escucharte.
-      Calla en mí lo que no viene de Ti.
-      Hazme fiel en lo pequeño y dócil a tu voz.
-      Amén."</div>
+        <details class="des-collapse" data-lang="es">
+          <summary>Oración breve para repetir (Día 1)</summary>
+          <div class="des-collapse-body">"Jesús Eucaristía, enséñame a escucharte.
+Calla en mí lo que no viene de Ti.
+Hazme fiel en lo pequeño y dócil a tu voz.
+Amén."</div>
+        </details>
 
-        <div class="des-lectio" data-lang="en" style="display:none"><strong>Short repeated prayer (Day 1):</strong>
-      "Jesus in the Eucharist, teach me to listen.
-      Silence in me what does not come from You.
-      Make me faithful in small things and docile to Your voice.
-      Amen."</div>
+        <details class="des-collapse" data-lang="en" style="display:none">
+          <summary>Short repeated prayer (Day 1)</summary>
+          <div class="des-collapse-body">"Jesus in the Eucharist, teach me to listen.
+Silence in me what does not come from You.
+Make me faithful in small things and docile to Your voice.
+Amen."</div>
+        </details>
       </article>
 
       <article class="des-card">
@@ -451,54 +486,62 @@ Do not seek intense feelings; seek faithfulness.</div>
         <blockquote class="des-quote" data-lang="en" style="display:none">My flesh is true food and my blood is true drink.
 <cite>— John 6:55</cite></blockquote>
 
-        <div class="des-lectio" data-lang="es"><strong>Lectio breve (Juan 6, 51-58):</strong>
-      "Yo soy el pan vivo bajado del cielo. El que coma de este pan vivirá para siempre.
-      Y el pan que yo daré es mi carne para la vida del mundo.
+        <details class="des-collapse" data-lang="es">
+          <summary>Lectio breve (Juan 6, 51-58)</summary>
+          <div class="des-collapse-body">"Yo soy el pan vivo bajado del cielo. El que coma de este pan vivirá para siempre.
+Y el pan que yo daré es mi carne para la vida del mundo.
 
-      El que come mi carne y bebe mi sangre tiene vida eterna,
-      y yo lo resucitaré en el último día.
-      Porque mi carne es verdadera comida
-      y mi sangre es verdadera bebida.
+El que come mi carne y bebe mi sangre tiene vida eterna,
+y yo lo resucitaré en el último día.
+Porque mi carne es verdadera comida
+y mi sangre es verdadera bebida.
 
-      El que come mi carne y bebe mi sangre
-      permanece en mí y yo en él.
-      Como el Padre que vive me envió y yo vivo por el Padre,
-      así también el que me come vivirá por mí.
+El que come mi carne y bebe mi sangre
+permanece en mí y yo en él.
+Como el Padre que vive me envió y yo vivo por el Padre,
+así también el que me come vivirá por mí.
 
-      Este es el pan bajado del cielo:
-      no como el que comieron los padres y murieron;
-      el que coma este pan vivirá para siempre."</div>
+Este es el pan bajado del cielo:
+no como el que comieron los padres y murieron;
+el que coma este pan vivirá para siempre."</div>
+        </details>
 
-        <div class="des-lectio" data-lang="en" style="display:none"><strong>Short lectio (John 6:51-58):</strong>
-      "I am the living bread that came down from heaven.
-      Whoever eats this bread will live forever.
-      This bread is my flesh, which I will give for the life of the world.
+        <details class="des-collapse" data-lang="en" style="display:none">
+          <summary>Short lectio (John 6:51-58)</summary>
+          <div class="des-collapse-body">"I am the living bread that came down from heaven.
+Whoever eats this bread will live forever.
+This bread is my flesh, which I will give for the life of the world.
 
-      Whoever eats my flesh and drinks my blood has eternal life,
-      and I will raise them up at the last day.
-      For my flesh is real food and my blood is real drink.
+Whoever eats my flesh and drinks my blood has eternal life,
+and I will raise them up at the last day.
+For my flesh is real food and my blood is real drink.
 
-      Whoever eats my flesh and drinks my blood remains in me, and I in them.
-      Just as the living Father sent me and I live because of the Father,
-      so the one who feeds on me will live because of me.
+Whoever eats my flesh and drinks my blood remains in me, and I in them.
+Just as the living Father sent me and I live because of the Father,
+so the one who feeds on me will live because of me.
 
-      This is the bread that came down from heaven.
-      Your ancestors ate manna and died,
-      but whoever feeds on this bread will live forever."</div>
+This is the bread that came down from heaven.
+Your ancestors ate manna and died,
+but whoever feeds on this bread will live forever."</div>
+        </details>
 
-        <div class="des-lectio" data-lang="es"><strong>Oración de obediencia (Día 2):</strong>
-      "Señor, hoy sí quiero obedecerte.
-      Purifica mi memoria y mis decisiones con tu Sangre Preciosa.
-      Dame valentía para hacer tu voluntad,
-      aunque me cueste.
-      Amén."</div>
+        <details class="des-collapse" data-lang="es">
+          <summary>Oración de obediencia (Día 2)</summary>
+          <div class="des-collapse-body">"Señor, hoy sí quiero obedecerte.
+Purifica mi memoria y mis decisiones con tu Sangre Preciosa.
+Dame valentía para hacer tu voluntad,
+aunque me cueste.
+Amén."</div>
+        </details>
 
-        <div class="des-lectio" data-lang="en" style="display:none"><strong>Obedience prayer (Day 2):</strong>
-      "Lord, today I truly want to obey You.
-      Purify my memory and decisions with Your Precious Blood.
-      Give me courage to do Your will,
-      even when it costs me.
-      Amen."</div>
+        <details class="des-collapse" data-lang="en" style="display:none">
+          <summary>Obedience prayer (Day 2)</summary>
+          <div class="des-collapse-body">"Lord, today I truly want to obey You.
+Purify my memory and decisions with Your Precious Blood.
+Give me courage to do Your will,
+even when it costs me.
+Amen."</div>
+        </details>
       </article>
     </section>
 
