@@ -590,18 +590,11 @@ async function initHomePage() {
     btn.classList.toggle('is-fav');
   });
 
-  for (const meta of sortedIntercessors) {
-    try {
-      const data = await loadIntercessorData(meta.id);
-      grid.appendChild(buildCard(data, meta));
-    } catch {
-      // Skip intercessors whose JSON isn't ready yet
-    }
-  }
-
-  // Card entrance animations via IntersectionObserver
+  // Prepare card entrance animation upfront so cards can be appended progressively.
+  let io = null;
+  let cardAnimIndex = 0;
   if ('IntersectionObserver' in window) {
-    const io = new IntersectionObserver((entries) => {
+    io = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) {
           e.target.classList.add('card-in');
@@ -609,12 +602,32 @@ async function initHomePage() {
         }
       });
     }, { threshold: 0.05 });
-    grid.querySelectorAll('.intercessor-card').forEach((card, i) => {
-      card.style.setProperty('--card-delay', `${Math.min(i, 8) * 55}ms`);
+  }
+
+  function decorateCard(card) {
+    if (!card) return;
+    if (io) {
+      card.style.setProperty('--card-delay', `${Math.min(cardAnimIndex, 8) * 55}ms`);
       card.classList.add('card-anim');
       io.observe(card);
-    });
+      cardAnimIndex += 1;
+    }
   }
+
+  function loadAndAppendCard(meta) {
+    return loadIntercessorData(meta.id)
+      .then(data => {
+        const card = buildCard(data, meta);
+        decorateCard(card);
+        grid.appendChild(card);
+      })
+      .catch(() => {
+        // Skip intercessors whose JSON isn't ready yet
+      });
+  }
+
+  // Start loading cards in parallel without blocking search initialization.
+  sortedIntercessors.forEach(meta => { loadAndAppendCard(meta); });
 
   // Normalize removes accents so búsqueda matches busqueda, etc.
   function normalize(s) { return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
@@ -919,8 +932,15 @@ function renderQuickNav() {
 
     const circle = document.createElement('div');
     circle.className = 'quick-nav-circle';
-    circle.style.backgroundImage = `url('/assets/images/${m.id}.svg')`;
     if (m.color) circle.style.backgroundColor = m.color;
+
+    const icon = document.createElement('img');
+    icon.className = 'quick-nav-circle-img';
+    icon.src = `/assets/images/${m.id}.svg`;
+    icon.alt = '';
+    icon.loading = 'lazy';
+    icon.decoding = 'async';
+    circle.appendChild(icon);
 
     const label = document.createElement('span');
     label.className = 'quick-nav-label';
