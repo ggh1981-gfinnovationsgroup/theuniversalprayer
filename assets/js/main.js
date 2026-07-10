@@ -630,7 +630,10 @@ async function initHomePage() {
         const matchesSpecialty = normalize(item.dataset.specialty).includes(q);
         item.style.display = (q === '' || matchesName || matchesSpecialty) ? '' : 'none';
       });
+      renderSecretResult(q);
     });
+
+    renderSecretResult(normalize(quickNavSearch.value.trim()));
   }
 
   // Search intercessor cards
@@ -639,6 +642,8 @@ async function initHomePage() {
 
   function renderSecretResult(q) {
     if (!secretSearchResult) return;
+
+    const icon = '<svg class="secret-result-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3c-2.76 0-5 2.24-5 5v2H6c-1.1 0-2 .9-2 2v7c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-7c0-1.1-.9-2-2-2h-1V8c0-2.76-2.24-5-5-5zm-3 7V8c0-1.65 1.35-3 3-3s3 1.35 3 3v2H9z"/></svg>';
 
     const hasGgh = q.includes('ggh1981');
     const hasBarbie = q.includes('barbarascarlettgomezmichel');
@@ -652,12 +657,16 @@ async function initHomePage() {
     const linksEs = [];
     const linksEn = [];
     if (hasGgh) {
-      linksEs.push('<a href="/discernimiento/?clave=ggh1981#suenos-privados">🔐 Acceso privado: tus sueños y discernimiento en la gracia de Dios</a>');
-      linksEn.push('<a href="/discernimiento/?clave=ggh1981#suenos-privados">🔐 Private access: your dreams and discernment in God\'s grace</a>');
+      linksEs.push('<a href="/discernimiento/?clave=ggh1981#suenos-privados">' + icon + '<span>Acceso privado: tus sueños y discernimiento en la gracia de Dios</span></a>');
+      linksEn.push('<a href="/discernimiento/?clave=ggh1981#suenos-privados">' + icon + '<span>Private access: your dreams and discernment in God\'s grace</span></a>');
     }
     if (hasBarbie) {
-      linksEs.push('<a href="/discernimiento/?clave=barbarascarlettgomezmichel#mensaje-barbara">💖 Mensaje privado para Barbara: amor de papa y caminos buenos</a>');
-      linksEn.push('<a href="/discernimiento/?clave=barbarascarlettgomezmichel#mensaje-barbara">💖 Private message for Barbara: dad\'s love and good paths</a>');
+      linksEs.push('<a href="/discernimiento/?clave=barbarascarlettgomezmichel#mensaje-barbara">' + icon + '<span>Mensaje privado para Barbara: amor de papa y caminos buenos</span></a>');
+      linksEn.push('<a href="/discernimiento/?clave=barbarascarlettgomezmichel#mensaje-barbara">' + icon + '<span>Private message for Barbara: dad\'s love and good paths</span></a>');
+    }
+    if (q.includes('fabiolamichellopez')) {
+      linksEs.push('<a href="/discernimiento/?clave=fabiolamichellopez#mensaje-fabiola">' + icon + '<span>Mensaje privado para Fabiola: amor, oración y gracia matrimonial</span></a>');
+      linksEn.push('<a href="/discernimiento/?clave=fabiolamichellopez#mensaje-fabiola">' + icon + '<span>Private message for Fabiola: love, prayer and marital grace</span></a>');
     }
 
     secretSearchResult.innerHTML = currentLang === 'es' ? linksEs.join('<br>') : linksEn.join('<br>');

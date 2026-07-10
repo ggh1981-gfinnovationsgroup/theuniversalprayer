@@ -2104,12 +2104,22 @@ body {
   background: rgba(201,168,76,0.08);
 }
 .secret-search-result a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   color: var(--gold-light);
   text-decoration: none;
   font-size: 0.86rem;
   letter-spacing: 0.01em;
 }
 .secret-search-result a:hover { color: var(--gold); }
+.secret-result-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  opacity: 0.95;
+  flex-shrink: 0;
+}
 
 /* ── SCROLL TO TOP ───────────────────────────────── */
 .back-to-top {
