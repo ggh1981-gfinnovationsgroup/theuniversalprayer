@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
   <defs>
+    <style>
+      @keyframes blink { 0%, 49%, 51%, 100% { opacity: 1; } 50% { opacity: 0.1; } }
+      @keyframes glow { 0%, 100% { filter: drop-shadow(0 0 2px rgba(232, 201, 122, 0.4)); } 50% { filter: drop-shadow(0 0 5px rgba(232, 201, 122, 0.8)); } }
+      @keyframes breathe { 0%, 100% { transform: scaleY(1); } 50% { transform: scaleY(1.02); } }
+      .eye-left { animation: blink 4s infinite; }
+      .eye-right { animation: blink 4s infinite 0.1s; }
+      .symbol { animation: glow 2.6s infinite; transform-origin: center; }
+      .body { animation: breathe 3.1s infinite; transform-origin: center 250px; }
+    </style>
     <radialGradient id="jb-bg" cx="50%" cy="35%" r="65%">
       <stop offset="0%" stop-color="#0f1218"/>
       <stop offset="100%" stop-color="#040507"/>
@@ -40,13 +49,25 @@
   <ellipse cx="200" cy="108" rx="26" ry="30" fill="#c8a060" opacity="0.92"/>
   <path d="M174,107 Q176,72 200,68 Q224,72 226,107 Q219,86 200,84 Q181,86 174,107 Z" fill="#1b1b1b" opacity="0.86"/>
 
-  <ellipse cx="190" cy="108" rx="3.8" ry="3" fill="#120909"/>
-  <ellipse cx="210" cy="108" rx="3.8" ry="3" fill="#120909"/>
-  <circle cx="191" cy="107" r="1" fill="#ffffff" opacity="0.45"/>
-  <circle cx="211" cy="107" r="1" fill="#ffffff" opacity="0.45"/>
-  <path d="M191,122 Q200,129 209,122" fill="none" stroke="#4a3a2b" stroke-width="2" stroke-linecap="round"/>
+  <path d="M183,101 Q190,97 197,101" fill="none" stroke="#120909" stroke-width="2.1" stroke-linecap="round" opacity="0.85"/>
+  <path d="M203,101 Q210,97 217,101" fill="none" stroke="#120909" stroke-width="2.1" stroke-linecap="round" opacity="0.85"/>
+  <ellipse cx="190" cy="109" rx="4.2" ry="3.2" fill="#120909"/>
+  <ellipse cx="210" cy="109" rx="4.2" ry="3.2" fill="#120909"/>
+  <circle class="eye-left" cx="191" cy="107" r="1.6" fill="#ffffff" opacity="0.62"/>
+  <circle class="eye-right" cx="211" cy="107" r="1.6" fill="#ffffff" opacity="0.62"/>
+  <ellipse cx="192" cy="105" r="0.7" ry="0.45" fill="#ffffff" opacity="0.85"/>
+  <ellipse cx="212" cy="105" r="0.7" ry="0.45" fill="#ffffff" opacity="0.85"/>
+  <ellipse cx="195" cy="112" rx="2.3" ry="1.5" fill="#d4b060" opacity="0.25"/>
+  <ellipse cx="205" cy="112" rx="2.3" ry="1.5" fill="#d4b060" opacity="0.25"/>
+  <path d="M191,124 Q200,132 209,124" fill="none" stroke="#4a3a2b" stroke-width="2.4" stroke-linecap="round" opacity="0.92"/>
+  <path d="M189,127 Q200,134 211,127" fill="none" stroke="#4a3a2b" stroke-width="1.6" stroke-linecap="round" opacity="0.62"/>
 
   <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65"/>
+
+  <g class="symbol" opacity="0.56" transform="translate(200,94)">
+    <circle cx="0" cy="-2" r="2.2" fill="#e8c97a" stroke="#d4a584" stroke-width="0.4"/>
+    <path d="M-2,-0.5 L2,-0.5 M0,-0.5 L0,3" stroke="#e8c97a" stroke-width="1" stroke-linecap="round" opacity="0.8"/>
+  </g>
 
   <g opacity="0.84">
     <circle cx="110" cy="485" r="8" fill="#9fb6dc"/>
