@@ -624,27 +624,97 @@ async function initHomePage() {
   const secretSearchResult = document.getElementById('secretSearchResult');
   const quickSecretSearchResult = document.getElementById('quickSecretSearchResult');
 
+  function normalizeKey(s) {
+    return normalize(s).replace(/[^a-z0-9]/g, '');
+  }
+
+  const PRIVATE_SEARCH_ENTRIES = [
+    {
+      key: 'ggh1981',
+      href: '/discernimiento/?clave=ggh1981#suenos-privados',
+      icon: '/assets/images/private-search/dreams.svg',
+      text: {
+        es: 'Acceso privado: tus sueños y discernimiento en la gracia de Dios',
+        en: 'Private access: your dreams and discernment in God\'s grace',
+      },
+    },
+    {
+      key: 'barbarascarlettgomezmichel',
+      href: '/privado/barbara/?clave=barbarascarlettgomezmichel',
+      icon: '/assets/images/private-search/barbara.svg',
+      text: {
+        es: 'Mensaje privado para Barbara: amor de papa y caminos buenos',
+        en: 'Private message for Barbara: dad\'s love and good paths',
+      },
+    },
+    {
+      key: 'fabiolamichellopez',
+      href: '/privado/fabiola/?clave=fabiolamichellopez',
+      icon: '/assets/images/private-search/fabiola.svg',
+      text: {
+        es: 'Mensaje privado para Fabiola: amor, oración y gracia matrimonial',
+        en: 'Private message for Fabiola: love, prayer and marital grace',
+      },
+    },
+    {
+      key: 'brandondavidgomezmichel',
+      href: '/privado/brandon/?clave=brandondavidgomezmichel',
+      icon: '/assets/images/private-search/brandon.svg',
+      text: {
+        es: 'Mensaje privado para Brandon: fortaleza, fe y propósito',
+        en: 'Private message for Brandon: strength, faith, and purpose',
+      },
+    },
+    {
+      key: 'katherinemariannegomezmichel',
+      href: '/privado/katherine/?clave=katherinemariannegomezmichel',
+      icon: '/assets/images/private-search/katherine.svg',
+      text: {
+        es: 'Mensaje privado para Katherine: ternura, sabiduría y alegría',
+        en: 'Private message for Katherine: tenderness, wisdom, and joy',
+      },
+    },
+    {
+      key: 'clarissadahianagomezmichel',
+      href: '/privado/clarissa/?clave=clarissadahianagomezmichel',
+      icon: '/assets/images/private-search/clarissa.svg',
+      text: {
+        es: 'Mensaje privado para Clarissa: pureza, bondad y luz',
+        en: 'Private message for Clarissa: purity, kindness, and light',
+      },
+    },
+    {
+      key: 'ianisaacgomezmichel',
+      href: '/privado/ian/?clave=ianisaacgomezmichel',
+      icon: '/assets/images/private-search/ian.svg',
+      text: {
+        es: 'Mensaje privado para Ian: protección, alegría y confianza',
+        en: 'Private message for Ian: protection, joy, and trust',
+      },
+    },
+  ].map(entry => ({ ...entry, keyNorm: normalizeKey(entry.key) }));
+
+  function getSecretMatches(q) {
+    const qNorm = normalizeKey(q);
+    if (!qNorm) return [];
+    return PRIVATE_SEARCH_ENTRIES.filter(entry => qNorm.includes(entry.keyNorm));
+  }
+
+  function hideAllSaintResults() {
+    document.querySelectorAll('.quick-nav-item').forEach(item => { item.style.display = 'none'; });
+    grid.querySelectorAll('.intercessor-card').forEach(card => { card.style.display = 'none'; });
+  }
+
+  function renderIconHtml(iconPath) {
+    return '<img class="secret-result-icon" src="' + iconPath + '" alt="" aria-hidden="true" loading="lazy" decoding="async" fetchpriority="low">';
+  }
+
   function renderSecretResult(q) {
     const targets = [secretSearchResult, quickSecretSearchResult].filter(Boolean);
     if (!targets.length) return;
 
-    const iconDreams = '<img class="secret-result-icon" src="/assets/images/private-search/dreams.svg" alt="" aria-hidden="true" decoding="async">';
-    const iconBarbara = '<img class="secret-result-icon" src="/assets/images/private-search/barbara.svg" alt="" aria-hidden="true" decoding="async">';
-    const iconFabiola = '<img class="secret-result-icon" src="/assets/images/private-search/fabiola.svg" alt="" aria-hidden="true" decoding="async">';
-    const iconBrandon = '<img class="secret-result-icon" src="/assets/images/private-search/brandon.svg" alt="" aria-hidden="true" decoding="async">';
-    const iconKatherine = '<img class="secret-result-icon" src="/assets/images/private-search/katherine.svg" alt="" aria-hidden="true" decoding="async">';
-    const iconClarissa = '<img class="secret-result-icon" src="/assets/images/private-search/clarissa.svg" alt="" aria-hidden="true" decoding="async">';
-    const iconIan = '<img class="secret-result-icon" src="/assets/images/private-search/ian.svg" alt="" aria-hidden="true" decoding="async">';
-
-    const hasGgh = q.includes('ggh1981');
-    const hasBarbie = q.includes('barbarascarlettgomezmichel');
-    const hasFabiola = q.includes('fabiolamichellopez');
-    const hasBrandon = q.includes('brandondavidgomezmichel');
-    const hasKatherine = q.includes('katherinemariannegomezmichel');
-    const hasClarissa = q.includes('clarissadahianagomezmichel');
-    const hasIan = q.includes('ianisaacgomezmichel');
-
-    if (!hasGgh && !hasBarbie && !hasFabiola && !hasBrandon && !hasKatherine && !hasClarissa && !hasIan) {
+    const matches = getSecretMatches(q);
+    if (!matches.length) {
       targets.forEach(el => {
         el.style.display = 'none';
         el.innerHTML = '';
@@ -652,38 +722,9 @@ async function initHomePage() {
       return;
     }
 
-    const linksEs = [];
-    const linksEn = [];
-    if (hasGgh) {
-      linksEs.push('<a href="/discernimiento/?clave=ggh1981#suenos-privados">' + iconDreams + '<span>Acceso privado: tus sueños y discernimiento en la gracia de Dios</span></a>');
-      linksEn.push('<a href="/discernimiento/?clave=ggh1981#suenos-privados">' + iconDreams + '<span>Private access: your dreams and discernment in God\'s grace</span></a>');
-    }
-    if (hasBarbie) {
-      linksEs.push('<a href="/privado/barbara/?clave=barbarascarlettgomezmichel">' + iconBarbara + '<span>Mensaje privado para Barbara: amor de papa y caminos buenos</span></a>');
-      linksEn.push('<a href="/privado/barbara/?clave=barbarascarlettgomezmichel">' + iconBarbara + '<span>Private message for Barbara: dad\'s love and good paths</span></a>');
-    }
-    if (hasFabiola) {
-      linksEs.push('<a href="/privado/fabiola/?clave=fabiolamichellopez">' + iconFabiola + '<span>Mensaje privado para Fabiola: amor, oración y gracia matrimonial</span></a>');
-      linksEn.push('<a href="/privado/fabiola/?clave=fabiolamichellopez">' + iconFabiola + '<span>Private message for Fabiola: love, prayer and marital grace</span></a>');
-    }
-    if (hasBrandon) {
-      linksEs.push('<a href="/privado/brandon/?clave=brandondavidgomezmichel">' + iconBrandon + '<span>Mensaje privado para Brandon: fortaleza, fe y propósito</span></a>');
-      linksEn.push('<a href="/privado/brandon/?clave=brandondavidgomezmichel">' + iconBrandon + '<span>Private message for Brandon: strength, faith, and purpose</span></a>');
-    }
-    if (hasKatherine) {
-      linksEs.push('<a href="/privado/katherine/?clave=katherinemariannegomezmichel">' + iconKatherine + '<span>Mensaje privado para Katherine: ternura, sabiduría y alegría</span></a>');
-      linksEn.push('<a href="/privado/katherine/?clave=katherinemariannegomezmichel">' + iconKatherine + '<span>Private message for Katherine: tenderness, wisdom, and joy</span></a>');
-    }
-    if (hasClarissa) {
-      linksEs.push('<a href="/privado/clarissa/?clave=clarissadahianagomezmichel">' + iconClarissa + '<span>Mensaje privado para Clarissa: pureza, bondad y luz</span></a>');
-      linksEn.push('<a href="/privado/clarissa/?clave=clarissadahianagomezmichel">' + iconClarissa + '<span>Private message for Clarissa: purity, kindness, and light</span></a>');
-    }
-    if (hasIan) {
-      linksEs.push('<a href="/privado/ian/?clave=ianisaacgomezmichel">' + iconIan + '<span>Mensaje privado para Ian: protección, alegría y confianza</span></a>');
-      linksEn.push('<a href="/privado/ian/?clave=ianisaacgomezmichel">' + iconIan + '<span>Private message for Ian: protection, joy, and trust</span></a>');
-    }
-
-    const html = currentLang === 'es' ? linksEs.join('<br>') : linksEn.join('<br>');
+    const html = matches
+      .map(entry => '<a href="' + entry.href + '">' + renderIconHtml(entry.icon) + '<span>' + entry.text[currentLang] + '</span></a>')
+      .join('<br>');
     targets.forEach(el => {
       el.innerHTML = html;
       el.style.display = '';
@@ -701,6 +742,8 @@ async function initHomePage() {
         const matchesSpecialty = normalize(item.dataset.specialty).includes(q);
         item.style.display = (q === '' || matchesName || matchesSpecialty) ? '' : 'none';
       });
+
+      if (getSecretMatches(q).length) hideAllSaintResults();
       renderSecretResult(q);
     });
 
@@ -716,6 +759,8 @@ async function initHomePage() {
         const matchesSpecialty = normalize(card.dataset.specialty).includes(q);
         card.style.display = (q === '' || matchesText || matchesSpecialty) ? '' : 'none';
       });
+
+      if (getSecretMatches(q).length) hideAllSaintResults();
       renderSecretResult(q);
     });
 
