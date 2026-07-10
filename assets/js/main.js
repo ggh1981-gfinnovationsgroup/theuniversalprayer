@@ -619,23 +619,6 @@ async function initHomePage() {
   // Normalize removes accents so búsqueda matches busqueda, etc.
   function normalize(s) { return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
 
-  // Search quick nav icons
-  const quickNavSearch = document.getElementById('quickNavSearch');
-  if (quickNavSearch) {
-    quickNavSearch.placeholder = currentLang === 'es' ? 'Buscar por nombre, motivo o situación...' : 'Search by name, intention or situation...';
-    quickNavSearch.addEventListener('input', () => {
-      const q = normalize(quickNavSearch.value.trim());
-      document.querySelectorAll('.quick-nav-item').forEach(item => {
-        const matchesName      = normalize(item.dataset.name).includes(q);
-        const matchesSpecialty = normalize(item.dataset.specialty).includes(q);
-        item.style.display = (q === '' || matchesName || matchesSpecialty) ? '' : 'none';
-      });
-      renderSecretResult(q);
-    });
-
-    renderSecretResult(normalize(quickNavSearch.value.trim()));
-  }
-
   // Search intercessor cards
   const cardsSearch = document.getElementById('cardsSearch');
   const secretSearchResult = document.getElementById('secretSearchResult');
@@ -645,13 +628,13 @@ async function initHomePage() {
     const targets = [secretSearchResult, quickSecretSearchResult].filter(Boolean);
     if (!targets.length) return;
 
-    const iconDreams = '<svg class="secret-result-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a6 6 0 0 0-6 6v2H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-1V8a6 6 0 0 0-6-6zm-4 8V8a4 4 0 1 1 8 0v2H8z"/></svg>';
-    const iconBarbara = '<svg class="secret-result-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-4.6-7-10.2C5 7.3 7.2 5 10 5c1.7 0 3 .8 4 2 1-1.2 2.3-2 4-2 2.8 0 5 2.3 5 5.8C23 16.4 16 21 16 21h-4z"/></svg>';
-    const iconFabiola = '<svg class="secret-result-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 6.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7zm10 0a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7zM3 20c.3-3 2.4-5 5.5-5s5.2 2 5.5 5H3zm9.8 0c.2-2.4 1.9-4.2 4.7-4.2 2.6 0 4.3 1.8 4.5 4.2h-9.2z"/></svg>';
-    const iconBrandon = '<svg class="secret-result-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2l2.3 4.7 5.2.8-3.8 3.7.9 5.2L12 13.9 7.4 16.4l.9-5.2L4.5 7.5l5.2-.8L12 2z"/></svg>';
-    const iconKatherine = '<svg class="secret-result-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3c4.1 0 7.5 3.4 7.5 7.5S16.1 18 12 18s-7.5-3.4-7.5-7.5S7.9 3 12 3zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11zm-1 3h2v6h-2V8zm-3 3h8v2H8v-2z"/></svg>';
-    const iconClarissa = '<svg class="secret-result-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 22c-3.8-2.7-6.5-6-6.5-10.1A6.5 6.5 0 0 1 12 5.4a6.5 6.5 0 0 1 6.5 6.5c0 4.1-2.7 7.4-6.5 10.1zm0-14.6a4.5 4.5 0 0 0-4.5 4.5c0 2.8 1.7 5.2 4.5 7.5 2.8-2.3 4.5-4.7 4.5-7.5A4.5 4.5 0 0 0 12 7.4z"/></svg>';
-    const iconIan = '<svg class="secret-result-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2l2 4 4.5.7-3.2 3.1.8 4.5L12 12l-4.1 2.3.8-4.5L5.5 6.7 10 6l2-4zm0 14a4 4 0 1 1 0 .01V16z"/></svg>';
+    const iconDreams = '<img class="secret-result-icon" src="/assets/images/private-search/dreams.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">';
+    const iconBarbara = '<img class="secret-result-icon" src="/assets/images/private-search/barbara.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">';
+    const iconFabiola = '<img class="secret-result-icon" src="/assets/images/private-search/fabiola.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">';
+    const iconBrandon = '<img class="secret-result-icon" src="/assets/images/private-search/brandon.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">';
+    const iconKatherine = '<img class="secret-result-icon" src="/assets/images/private-search/katherine.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">';
+    const iconClarissa = '<img class="secret-result-icon" src="/assets/images/private-search/clarissa.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">';
+    const iconIan = '<img class="secret-result-icon" src="/assets/images/private-search/ian.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">';
 
     const hasGgh = q.includes('ggh1981');
     const hasBarbie = q.includes('barbarascarlettgomezmichel');
@@ -705,6 +688,23 @@ async function initHomePage() {
       el.innerHTML = html;
       el.style.display = '';
     });
+  }
+
+  // Search quick nav icons
+  const quickNavSearch = document.getElementById('quickNavSearch');
+  if (quickNavSearch) {
+    quickNavSearch.placeholder = currentLang === 'es' ? 'Buscar por nombre, motivo o situación...' : 'Search by name, intention or situation...';
+    quickNavSearch.addEventListener('input', () => {
+      const q = normalize(quickNavSearch.value.trim());
+      document.querySelectorAll('.quick-nav-item').forEach(item => {
+        const matchesName = normalize(item.dataset.name).includes(q);
+        const matchesSpecialty = normalize(item.dataset.specialty).includes(q);
+        item.style.display = (q === '' || matchesName || matchesSpecialty) ? '' : 'none';
+      });
+      renderSecretResult(q);
+    });
+
+    renderSecretResult(normalize(quickNavSearch.value.trim()));
   }
 
   if (cardsSearch) {
