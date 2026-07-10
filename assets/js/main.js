@@ -648,12 +648,20 @@ async function initHomePage() {
     const iconDreams = '<svg class="secret-result-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a6 6 0 0 0-6 6v2H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-1V8a6 6 0 0 0-6-6zm-4 8V8a4 4 0 1 1 8 0v2H8z"/></svg>';
     const iconBarbara = '<svg class="secret-result-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-4.6-7-10.2C5 7.3 7.2 5 10 5c1.7 0 3 .8 4 2 1-1.2 2.3-2 4-2 2.8 0 5 2.3 5 5.8C23 16.4 16 21 16 21h-4z"/></svg>';
     const iconFabiola = '<svg class="secret-result-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 6.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7zm10 0a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7zM3 20c.3-3 2.4-5 5.5-5s5.2 2 5.5 5H3zm9.8 0c.2-2.4 1.9-4.2 4.7-4.2 2.6 0 4.3 1.8 4.5 4.2h-9.2z"/></svg>';
+    const iconBrandon = '<svg class="secret-result-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2l2.3 4.7 5.2.8-3.8 3.7.9 5.2L12 13.9 7.4 16.4l.9-5.2L4.5 7.5l5.2-.8L12 2z"/></svg>';
+    const iconKatherine = '<svg class="secret-result-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3c4.1 0 7.5 3.4 7.5 7.5S16.1 18 12 18s-7.5-3.4-7.5-7.5S7.9 3 12 3zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11zm-1 3h2v6h-2V8zm-3 3h8v2H8v-2z"/></svg>';
+    const iconClarissa = '<svg class="secret-result-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 22c-3.8-2.7-6.5-6-6.5-10.1A6.5 6.5 0 0 1 12 5.4a6.5 6.5 0 0 1 6.5 6.5c0 4.1-2.7 7.4-6.5 10.1zm0-14.6a4.5 4.5 0 0 0-4.5 4.5c0 2.8 1.7 5.2 4.5 7.5 2.8-2.3 4.5-4.7 4.5-7.5A4.5 4.5 0 0 0 12 7.4z"/></svg>';
+    const iconIan = '<svg class="secret-result-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2l2 4 4.5.7-3.2 3.1.8 4.5L12 12l-4.1 2.3.8-4.5L5.5 6.7 10 6l2-4zm0 14a4 4 0 1 1 0 .01V16z"/></svg>';
 
     const hasGgh = q.includes('ggh1981');
     const hasBarbie = q.includes('barbarascarlettgomezmichel');
     const hasFabiola = q.includes('fabiolamichellopez');
+    const hasBrandon = q.includes('brandondavidgomezmichel');
+    const hasKatherine = q.includes('katherinemariannegomezmichel');
+    const hasClarissa = q.includes('clarissadahianagomezmichel');
+    const hasIan = q.includes('ianisaacgomezmichel');
 
-    if (!hasGgh && !hasBarbie && !hasFabiola) {
+    if (!hasGgh && !hasBarbie && !hasFabiola && !hasBrandon && !hasKatherine && !hasClarissa && !hasIan) {
       targets.forEach(el => {
         el.style.display = 'none';
         el.innerHTML = '';
@@ -674,6 +682,22 @@ async function initHomePage() {
     if (hasFabiola) {
       linksEs.push('<a href="/privado/fabiola/?clave=fabiolamichellopez">' + iconFabiola + '<span>Mensaje privado para Fabiola: amor, oración y gracia matrimonial</span></a>');
       linksEn.push('<a href="/privado/fabiola/?clave=fabiolamichellopez">' + iconFabiola + '<span>Private message for Fabiola: love, prayer and marital grace</span></a>');
+    }
+    if (hasBrandon) {
+      linksEs.push('<a href="/privado/brandon/?clave=brandondavidgomezmichel">' + iconBrandon + '<span>Mensaje privado para Brandon: fortaleza, fe y propósito</span></a>');
+      linksEn.push('<a href="/privado/brandon/?clave=brandondavidgomezmichel">' + iconBrandon + '<span>Private message for Brandon: strength, faith, and purpose</span></a>');
+    }
+    if (hasKatherine) {
+      linksEs.push('<a href="/privado/katherine/?clave=katherinemariannegomezmichel">' + iconKatherine + '<span>Mensaje privado para Katherine: ternura, sabiduría y alegría</span></a>');
+      linksEn.push('<a href="/privado/katherine/?clave=katherinemariannegomezmichel">' + iconKatherine + '<span>Private message for Katherine: tenderness, wisdom, and joy</span></a>');
+    }
+    if (hasClarissa) {
+      linksEs.push('<a href="/privado/clarissa/?clave=clarissadahianagomezmichel">' + iconClarissa + '<span>Mensaje privado para Clarissa: pureza, bondad y luz</span></a>');
+      linksEn.push('<a href="/privado/clarissa/?clave=clarissadahianagomezmichel">' + iconClarissa + '<span>Private message for Clarissa: purity, kindness, and light</span></a>');
+    }
+    if (hasIan) {
+      linksEs.push('<a href="/privado/ian/?clave=ianisaacgomezmichel">' + iconIan + '<span>Mensaje privado para Ian: protección, alegría y confianza</span></a>');
+      linksEn.push('<a href="/privado/ian/?clave=ianisaacgomezmichel">' + iconIan + '<span>Private message for Ian: protection, joy, and trust</span></a>');
     }
 
     const html = currentLang === 'es' ? linksEs.join('<br>') : linksEn.join('<br>');

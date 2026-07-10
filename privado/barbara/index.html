@@ -47,8 +47,12 @@
           <span class="adoracion-card-badge" data-lang="en" style="display:none">Private message for my daughter</span>
           <h2 class="adoracion-card-title" data-lang="es">Barbara, te amo con todo mi corazon</h2>
           <h2 class="adoracion-card-title" data-lang="en" style="display:none">Barbara, I love you with all my heart</h2>
-          <p class="adoracion-card-desc" data-lang="es">Hija, eres un regalo de Dios para mi vida. Yo te amo con todo mi corazon, pero Dios y Maria te aman aun mas. Oro por ti todos los dias para que el Senor te proteja, te de sabiduria y te llene de paz. Siempre voy a estar contigo, cuidandote y animandote a caminar en la gracia de Dios.</p>
-          <p class="adoracion-card-desc" data-lang="en" style="display:none">Daughter, you are a gift from God in my life. I love you with all my heart, but God and Mary love you even more. I pray for you every day that the Lord may protect you, grant you wisdom, and fill you with peace. I will always be with you, caring for you and encouraging you to walk in God's grace.</p>
+          <p class="adoracion-card-desc" id="msgEs" data-lang="es">Hija, eres un regalo de Dios para mi vida. Yo te amo con todo mi corazon, pero Dios y Maria te aman aun mas. Oro por ti todos los dias para que el Senor te proteja, te de sabiduria y te llene de paz. Siempre voy a estar contigo, cuidandote y animandote a caminar en la gracia de Dios.</p>
+          <p class="adoracion-card-desc" id="msgEn" data-lang="en" style="display:none">Daughter, you are a gift from God in my life. I love you with all my heart, but God and Mary love you even more. I pray for you every day that the Lord may protect you, grant you wisdom, and fill you with peace. I will always be with you, caring for you and encouraging you to walk in God's grace.</p>
+          <div style="margin-top:0.7rem;display:flex;gap:0.5rem;flex-wrap:wrap;">
+            <button class="adoracion-card-btn" id="audioPlay" type="button"><span data-lang="es">Escuchar mensaje</span><span data-lang="en" style="display:none">Play message</span></button>
+            <button class="adoracion-card-btn" id="audioStop" type="button"><span data-lang="es">Detener</span><span data-lang="en" style="display:none">Stop</span></button>
+          </div>
           <h3 class="section-title" data-lang="es" style="font-size:1.1rem; margin-top:0.8rem;">Caminos buenos para ti</h3>
           <h3 class="section-title" data-lang="en" style="display:none; font-size:1.1rem; margin-top:0.8rem;">Good paths for you</h3>
           <ul class="adoracion-card-desc" data-lang="es" style="margin:0.35rem 0 0 1.1rem; padding:0;">
@@ -92,6 +96,20 @@
         lang = lang === 'es' ? 'en' : 'es';
         localStorage.setItem('tup_lang', lang);
         applyLang();
+      });
+
+      var play = document.getElementById('audioPlay');
+      var stop = document.getElementById('audioStop');
+      play?.addEventListener('click', function () {
+        if (!window.speechSynthesis) return;
+        window.speechSynthesis.cancel();
+        var text = (lang === 'es' ? document.getElementById('msgEs') : document.getElementById('msgEn'))?.textContent || '';
+        var u = new SpeechSynthesisUtterance(text);
+        u.lang = lang === 'es' ? 'es-ES' : 'en-US';
+        window.speechSynthesis.speak(u);
+      });
+      stop?.addEventListener('click', function () {
+        if (window.speechSynthesis) window.speechSynthesis.cancel();
       });
 
       applyLang();

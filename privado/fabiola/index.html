@@ -49,8 +49,12 @@
           <span class="adoracion-card-badge" data-lang="en" style="display:none">Private message for my wife</span>
           <h2 class="adoracion-card-title" data-lang="es">Fabiola, te amo y doy gracias a Dios por ti</h2>
           <h2 class="adoracion-card-title" data-lang="en" style="display:none">Fabiola, I love you and thank God for you</h2>
-          <p class="adoracion-card-desc" data-lang="es">Amor mio, eres una bendicion en mi vida y en nuestro matrimonio. Yo te amo profundamente, pero Dios y Maria te aman aun mas. Le pido al Espiritu Santo que nos guie cada dia con humildad, paciencia y alegria, y que nuestra casa permanezca siempre en la gracia de Dios.</p>
-          <p class="adoracion-card-desc" data-lang="en" style="display:none">My love, you are a blessing in my life and in our marriage. I love you deeply, but God and Mary love you even more. I ask the Holy Spirit to guide us each day with humility, patience, and joy, and to keep our home always in God's grace.</p>
+          <p class="adoracion-card-desc" id="msgEs" data-lang="es">Amor mio, eres una bendicion en mi vida y en nuestro matrimonio. Yo te amo profundamente, pero Dios y Maria te aman aun mas. Le pido al Espiritu Santo que nos guie cada dia con humildad, paciencia y alegria, y que nuestra casa permanezca siempre en la gracia de Dios.</p>
+          <p class="adoracion-card-desc" id="msgEn" data-lang="en" style="display:none">My love, you are a blessing in my life and in our marriage. I love you deeply, but God and Mary love you even more. I ask the Holy Spirit to guide us each day with humility, patience, and joy, and to keep our home always in God's grace.</p>
+          <div style="margin-top:0.7rem;display:flex;gap:0.5rem;flex-wrap:wrap;">
+            <button class="adoracion-card-btn" id="audioPlay" type="button"><span data-lang="es">Escuchar mensaje</span><span data-lang="en" style="display:none">Play message</span></button>
+            <button class="adoracion-card-btn" id="audioStop" type="button"><span data-lang="es">Detener</span><span data-lang="en" style="display:none">Stop</span></button>
+          </div>
           <ul class="adoracion-card-desc" data-lang="es" style="margin:0.35rem 0 0 1.1rem; padding:0;">
             <li><a href="/matrimonio/">Matrimonio: gracia y bendiciones del sacramento</a></li>
             <li><a href="/intercesor/?intercesor=santamonica">Santa Monica: oracion perseverante por la familia</a></li>
@@ -92,6 +96,20 @@
         lang = lang === 'es' ? 'en' : 'es';
         localStorage.setItem('tup_lang', lang);
         applyLang();
+      });
+
+      var play = document.getElementById('audioPlay');
+      var stop = document.getElementById('audioStop');
+      play?.addEventListener('click', function () {
+        if (!window.speechSynthesis) return;
+        window.speechSynthesis.cancel();
+        var text = (lang === 'es' ? document.getElementById('msgEs') : document.getElementById('msgEn'))?.textContent || '';
+        var u = new SpeechSynthesisUtterance(text);
+        u.lang = lang === 'es' ? 'es-ES' : 'en-US';
+        window.speechSynthesis.speak(u);
+      });
+      stop?.addEventListener('click', function () {
+        if (window.speechSynthesis) window.speechSynthesis.cancel();
       });
 
       applyLang();
