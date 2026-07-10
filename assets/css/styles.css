@@ -2096,6 +2096,21 @@ body {
 }
 .search-input::placeholder { color: var(--gold-dim); opacity: 0.6; }
 
+.secret-search-result {
+  margin-top: 0.65rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid rgba(201,168,76,0.35);
+  border-radius: 12px;
+  background: rgba(201,168,76,0.08);
+}
+.secret-search-result a {
+  color: var(--gold-light);
+  text-decoration: none;
+  font-size: 0.86rem;
+  letter-spacing: 0.01em;
+}
+.secret-search-result a:hover { color: var(--gold); }
+
 /* ── SCROLL TO TOP ───────────────────────────────── */
 .back-to-top {
   position: fixed;

@@ -84,6 +84,50 @@
         </div>
       </div>
     </section>
+
+    <section class="adoracion-card-section" id="suenos-privados" style="display:none;">
+      <div class="adoracion-card-inner">
+        <svg class="adoracion-card-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="50" cy="44" r="18" fill="none" stroke="#c9a84c" stroke-width="4"/>
+          <rect x="28" y="44" width="44" height="28" rx="8" ry="8" fill="none" stroke="#c9a84c" stroke-width="4"/>
+          <line x1="50" y1="54" x2="50" y2="64" stroke="#c9a84c" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="50" cy="68" r="2.5" fill="#c9a84c"/>
+        </svg>
+        <div>
+          <span class="adoracion-card-badge" data-lang="es">Acceso privado · discernimiento espiritual</span>
+          <span class="adoracion-card-badge" data-lang="en" style="display:none">Private access · spiritual discernment</span>
+
+          <h2 class="adoracion-card-title" data-lang="es">Tus sueños ante Dios</h2>
+          <h2 class="adoracion-card-title" data-lang="en" style="display:none">Your dreams before God</h2>
+
+          <p class="adoracion-card-desc" data-lang="es">Lectura espiritual propuesta: lo recibido en sueños se presenta a Cristo, se purifica en confesión, se discierne con humildad y se confirma por frutos de paz, caridad y obediencia.</p>
+          <p class="adoracion-card-desc" data-lang="en" style="display:none">Proposed spiritual reading: what is received in dreams is brought to Christ, purified in confession, discerned in humility, and confirmed by fruits of peace, charity, and obedience.</p>
+
+          <ul class="adoracion-card-desc" data-lang="es" style="margin:0.4rem 0 0 1.1rem; padding:0;">
+            <li>Llave recibida: gracia confiada para servir, no para control.</li>
+            <li>Biblia que brilla: la Palabra ilumina la noche y sostiene el matrimonio.</li>
+            <li>Nino que llama: volver a la confianza filial en Jesus.</li>
+            <li>Llamado mariano: obedecer las inspiraciones que llevan a Cristo.</li>
+            <li>Compromiso de orar: perseverancia diaria para custodiar la gracia.</li>
+            <li>Tentaciones nocturnas: combate espiritual con sacramentos y vigilancia.</li>
+            <li>Confesion concreta: responder pronto a las llamadas de conversion.</li>
+          </ul>
+
+          <ul class="adoracion-card-desc" data-lang="en" style="display:none; margin:0.4rem 0 0 1.1rem; padding:0;">
+            <li>The received key: grace entrusted for service, not for control.</li>
+            <li>The shining Bible: the Word lights the night and strengthens marriage.</li>
+            <li>The calling child: return to childlike trust in Jesus.</li>
+            <li>Marian call: obey inspirations that lead to Christ.</li>
+            <li>Commitment to prayer: daily perseverance guards grace.</li>
+            <li>Night temptations: spiritual combat through sacraments and vigilance.</li>
+            <li>Concrete confession: respond quickly to calls of conversion.</li>
+          </ul>
+
+          <p class="adoracion-card-desc" data-lang="es" style="margin-top:0.75rem;">Oracion breve: "Espiritu Santo, dame luz para discernir, fuerza para obedecer y paz para permanecer en la gracia de Dios. Amen."</p>
+          <p class="adoracion-card-desc" data-lang="en" style="display:none; margin-top:0.75rem;">Short prayer: "Holy Spirit, give me light to discern, strength to obey, and peace to remain in God's grace. Amen."</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <script src="../assets/js/menu.js"></script>
@@ -105,6 +149,12 @@
         localStorage.setItem('tup_lang', lang);
         applyLang();
       });
+
+      var qp = new URLSearchParams(window.location.search);
+      var privateSection = document.getElementById('suenos-privados');
+      if (privateSection && qp.get('clave') === 'ggh1981') {
+        privateSection.style.display = '';
+      }
 
       applyLang();
     })();

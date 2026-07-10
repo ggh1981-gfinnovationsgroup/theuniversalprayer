@@ -635,15 +635,37 @@ async function initHomePage() {
 
   // Search intercessor cards
   const cardsSearch = document.getElementById('cardsSearch');
+  const secretSearchResult = document.getElementById('secretSearchResult');
+
+  function renderSecretResult(q) {
+    if (!secretSearchResult) return;
+
+    const unlocked = q.includes('ggh1981');
+    if (!unlocked) {
+      secretSearchResult.style.display = 'none';
+      secretSearchResult.innerHTML = '';
+      return;
+    }
+
+    secretSearchResult.innerHTML = currentLang === 'es'
+      ? '<a href="/discernimiento/?clave=ggh1981#suenos-privados">🔐 Acceso privado: tus sueños y discernimiento en la gracia de Dios</a>'
+      : '<a href="/discernimiento/?clave=ggh1981#suenos-privados">🔐 Private access: your dreams and discernment in God\'s grace</a>';
+    secretSearchResult.style.display = '';
+  }
+
   if (cardsSearch) {
-    cardsSearch.placeholder = currentLang === 'es' ? 'Buscar por nombre, motivo o situación...' : 'Search by name, intention or situation...';    cardsSearch.addEventListener('input', () => {
+    cardsSearch.placeholder = currentLang === 'es' ? 'Buscar por nombre, motivo o situación...' : 'Search by name, intention or situation...';
+    cardsSearch.addEventListener('input', () => {
       const q = normalize(cardsSearch.value.trim());
       grid.querySelectorAll('.intercessor-card').forEach(card => {
         const matchesText      = normalize(card.textContent).includes(q);
         const matchesSpecialty = normalize(card.dataset.specialty).includes(q);
         card.style.display = (q === '' || matchesText || matchesSpecialty) ? '' : 'none';
       });
+      renderSecretResult(q);
     });
+
+    renderSecretResult(normalize(cardsSearch.value.trim()));
   }
 }
 
