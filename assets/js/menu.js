@@ -32,6 +32,12 @@
       labels: { es: 'Intercesores', en: 'Intercessors' },
       icon: '✨',
     },
+    {
+      id: 'discernment',
+      href: '/discernimiento/',
+      labels: { es: 'Discernimiento católico', en: 'Catholic discernment' },
+      icon: '🕯️',
+    },
     { id: 'adoracion', href: '/adoracion/', labels: { es: 'Adoración', en: 'Adoration' }, icon: '✝' },
     { id: 'desierto', href: '/desierto/', labels: { es: 'Silencio y Escucha', en: 'Silence & Listening' }, icon: '🏕️' },
     { id: 'difuntos', href: '/difuntos/', labels: { es: 'Difuntos', en: 'Departed' }, icon: '🕯️' },
