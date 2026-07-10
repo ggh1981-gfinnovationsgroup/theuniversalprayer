@@ -641,7 +641,7 @@ async function initHomePage() {
     if (!secretSearchResult) return;
 
     const hasGgh = q.includes('ggh1981');
-    const hasBarbie = q.includes('barbie06');
+    const hasBarbie = q.includes('barbarascarlettgomezmichel');
 
     if (!hasGgh && !hasBarbie) {
       secretSearchResult.style.display = 'none';
@@ -656,8 +656,8 @@ async function initHomePage() {
       linksEn.push('<a href="/discernimiento/?clave=ggh1981#suenos-privados">🔐 Private access: your dreams and discernment in God\'s grace</a>');
     }
     if (hasBarbie) {
-      linksEs.push('<a href="/discernimiento/?clave=barbie06#mensaje-barbara">💖 Mensaje privado para Barbara: amor de papa y caminos buenos</a>');
-      linksEn.push('<a href="/discernimiento/?clave=barbie06#mensaje-barbara">💖 Private message for Barbara: dad\'s love and good paths</a>');
+      linksEs.push('<a href="/discernimiento/?clave=barbarascarlettgomezmichel#mensaje-barbara">💖 Mensaje privado para Barbara: amor de papa y caminos buenos</a>');
+      linksEn.push('<a href="/discernimiento/?clave=barbarascarlettgomezmichel#mensaje-barbara">💖 Private message for Barbara: dad\'s love and good paths</a>');
     }
 
     secretSearchResult.innerHTML = currentLang === 'es' ? linksEs.join('<br>') : linksEn.join('<br>');
