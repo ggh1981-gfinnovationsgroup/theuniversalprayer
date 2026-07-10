@@ -640,16 +640,27 @@ async function initHomePage() {
   function renderSecretResult(q) {
     if (!secretSearchResult) return;
 
-    const unlocked = q.includes('ggh1981');
-    if (!unlocked) {
+    const hasGgh = q.includes('ggh1981');
+    const hasBarbie = q.includes('barbie06');
+
+    if (!hasGgh && !hasBarbie) {
       secretSearchResult.style.display = 'none';
       secretSearchResult.innerHTML = '';
       return;
     }
 
-    secretSearchResult.innerHTML = currentLang === 'es'
-      ? '<a href="/discernimiento/?clave=ggh1981#suenos-privados">🔐 Acceso privado: tus sueños y discernimiento en la gracia de Dios</a>'
-      : '<a href="/discernimiento/?clave=ggh1981#suenos-privados">🔐 Private access: your dreams and discernment in God\'s grace</a>';
+    const linksEs = [];
+    const linksEn = [];
+    if (hasGgh) {
+      linksEs.push('<a href="/discernimiento/?clave=ggh1981#suenos-privados">🔐 Acceso privado: tus sueños y discernimiento en la gracia de Dios</a>');
+      linksEn.push('<a href="/discernimiento/?clave=ggh1981#suenos-privados">🔐 Private access: your dreams and discernment in God\'s grace</a>');
+    }
+    if (hasBarbie) {
+      linksEs.push('<a href="/discernimiento/?clave=barbie06#mensaje-barbara">💖 Mensaje privado para Barbara: amor de papa y caminos buenos</a>');
+      linksEn.push('<a href="/discernimiento/?clave=barbie06#mensaje-barbara">💖 Private message for Barbara: dad\'s love and good paths</a>');
+    }
+
+    secretSearchResult.innerHTML = currentLang === 'es' ? linksEs.join('<br>') : linksEn.join('<br>');
     secretSearchResult.style.display = '';
   }
 

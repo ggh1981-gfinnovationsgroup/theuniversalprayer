@@ -128,6 +128,44 @@
         </div>
       </div>
     </section>
+
+    <section class="adoracion-card-section" id="mensaje-barbara" style="display:none;">
+      <div class="adoracion-card-inner">
+        <svg class="adoracion-card-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M50 80 C25 64, 14 52, 14 36 C14 24, 23 16, 34 16 C42 16, 48 20, 50 26 C52 20, 58 16, 66 16 C77 16, 86 24, 86 36 C86 52, 75 64, 50 80 Z"
+                fill="none" stroke="#c9a84c" stroke-width="4"/>
+          <line x1="50" y1="35" x2="50" y2="56" stroke="#c9a84c" stroke-width="3.5" stroke-linecap="round"/>
+          <line x1="40" y1="45" x2="60" y2="45" stroke="#c9a84c" stroke-width="3.5" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <span class="adoracion-card-badge" data-lang="es">Mensaje privado para mi hija</span>
+          <span class="adoracion-card-badge" data-lang="en" style="display:none">Private message for my daughter</span>
+
+          <h2 class="adoracion-card-title" data-lang="es">Barbara, te amo con todo mi corazon</h2>
+          <h2 class="adoracion-card-title" data-lang="en" style="display:none">Barbara, I love you with all my heart</h2>
+
+          <p class="adoracion-card-desc" data-lang="es">Hija, eres un regalo de Dios para mi vida. Oro por ti todos los dias para que el Senor te proteja, te de sabiduria y te llene de paz. Siempre voy a estar contigo, cuidandote y animandote a caminar en la gracia de Dios.</p>
+          <p class="adoracion-card-desc" data-lang="en" style="display:none">Daughter, you are a gift from God in my life. I pray for you every day that the Lord may protect you, grant you wisdom, and fill you with peace. I will always be with you, caring for you and encouraging you to walk in God's grace.</p>
+
+          <h3 class="section-title" data-lang="es" style="font-size:1.1rem; margin-top:0.8rem;">Caminos buenos para ti</h3>
+          <h3 class="section-title" data-lang="en" style="display:none; font-size:1.1rem; margin-top:0.8rem;">Good paths for you</h3>
+
+          <ul class="adoracion-card-desc" data-lang="es" style="margin:0.35rem 0 0 1.1rem; padding:0;">
+            <li><a href="/intercesor/?intercesor=santabarbara">Tu santa: Santa Barbara</a></li>
+            <li><a href="/jovenes/">Jovenes en Cristo</a></li>
+            <li><a href="/salud/">Salud integral</a></li>
+            <li><a href="/oraciones/">Oraciones basicas para cada dia</a></li>
+          </ul>
+
+          <ul class="adoracion-card-desc" data-lang="en" style="display:none; margin:0.35rem 0 0 1.1rem; padding:0;">
+            <li><a href="/intercesor/?intercesor=santabarbara">Your saint: Saint Barbara</a></li>
+            <li><a href="/jovenes/">Young People in Christ</a></li>
+            <li><a href="/salud/">Whole-person health</a></li>
+            <li><a href="/oraciones/">Basic daily prayers</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
 
   <script src="../assets/js/menu.js"></script>
@@ -154,6 +192,11 @@
       var privateSection = document.getElementById('suenos-privados');
       if (privateSection && qp.get('clave') === 'ggh1981') {
         privateSection.style.display = '';
+      }
+
+      var barbaraSection = document.getElementById('mensaje-barbara');
+      if (barbaraSection && (qp.get('clave') || '').toLowerCase() === 'barbie06') {
+        barbaraSection.style.display = '';
       }
 
       applyLang();
