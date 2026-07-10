@@ -639,9 +639,11 @@ async function initHomePage() {
   // Search intercessor cards
   const cardsSearch = document.getElementById('cardsSearch');
   const secretSearchResult = document.getElementById('secretSearchResult');
+  const quickSecretSearchResult = document.getElementById('quickSecretSearchResult');
 
   function renderSecretResult(q) {
-    if (!secretSearchResult) return;
+    const targets = [secretSearchResult, quickSecretSearchResult].filter(Boolean);
+    if (!targets.length) return;
 
     const iconDreams = '<svg class="secret-result-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a6 6 0 0 0-6 6v2H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-1V8a6 6 0 0 0-6-6zm-4 8V8a4 4 0 1 1 8 0v2H8z"/></svg>';
     const iconBarbara = '<svg class="secret-result-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-4.6-7-10.2C5 7.3 7.2 5 10 5c1.7 0 3 .8 4 2 1-1.2 2.3-2 4-2 2.8 0 5 2.3 5 5.8C23 16.4 16 21 16 21h-4z"/></svg>';
@@ -652,8 +654,10 @@ async function initHomePage() {
     const hasFabiola = q.includes('fabiolamichellopez');
 
     if (!hasGgh && !hasBarbie && !hasFabiola) {
-      secretSearchResult.style.display = 'none';
-      secretSearchResult.innerHTML = '';
+      targets.forEach(el => {
+        el.style.display = 'none';
+        el.innerHTML = '';
+      });
       return;
     }
 
@@ -672,8 +676,11 @@ async function initHomePage() {
       linksEn.push('<a href="/privado/fabiola/?clave=fabiolamichellopez">' + iconFabiola + '<span>Private message for Fabiola: love, prayer and marital grace</span></a>');
     }
 
-    secretSearchResult.innerHTML = currentLang === 'es' ? linksEs.join('<br>') : linksEn.join('<br>');
-    secretSearchResult.style.display = '';
+    const html = currentLang === 'es' ? linksEs.join('<br>') : linksEn.join('<br>');
+    targets.forEach(el => {
+      el.innerHTML = html;
+      el.style.display = '';
+    });
   }
 
   if (cardsSearch) {

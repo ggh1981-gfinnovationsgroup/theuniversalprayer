@@ -2073,6 +2073,11 @@ body {
   flex: 0 1 480px;
   width: 100%;
 }
+.quick-secret-wrap {
+  max-width: 480px;
+  margin: 0.5rem auto 0.2rem;
+  padding: 0 1rem;
+}
 .search-wrap {
   max-width: 480px;
   margin: 0 auto 2.5rem;
