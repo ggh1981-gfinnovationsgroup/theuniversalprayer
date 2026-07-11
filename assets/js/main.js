@@ -670,7 +670,7 @@ async function initHomePage() {
     {
       key: 'ggh1981',
       href: '/discernimiento/?clave=ggh1981#suenos-privados',
-      icon: '/assets/images/private-search/dreams.svg',
+      icon: '/assets/images/private-search/dreams.svg?v=20260710',
       text: {
         es: 'Acceso privado: tus sueños y discernimiento en la gracia de Dios',
         en: 'Private access: your dreams and discernment in God\'s grace',
@@ -679,7 +679,7 @@ async function initHomePage() {
     {
       key: 'barbarascarlettgomezmichel',
       href: '/privado/barbara/?clave=barbarascarlettgomezmichel',
-      icon: '/assets/images/private-search/barbara.svg',
+      icon: '/assets/images/private-search/barbara.svg?v=20260710',
       text: {
         es: 'Mensaje privado para Barbara: amor de papa y caminos buenos',
         en: 'Private message for Barbara: dad\'s love and good paths',
@@ -688,7 +688,7 @@ async function initHomePage() {
     {
       key: 'fabiolamichellopez',
       href: '/privado/fabiola/?clave=fabiolamichellopez',
-      icon: '/assets/images/private-search/fabiola.svg',
+      icon: '/assets/images/private-search/fabiola.svg?v=20260710',
       text: {
         es: 'Mensaje privado para Fabiola: amor, oración y gracia matrimonial',
         en: 'Private message for Fabiola: love, prayer and marital grace',
@@ -697,7 +697,7 @@ async function initHomePage() {
     {
       key: 'brandondavidgomezmichel',
       href: '/privado/brandon/?clave=brandondavidgomezmichel',
-      icon: '/assets/images/private-search/brandon.svg',
+      icon: '/assets/images/private-search/brandon.svg?v=20260710',
       text: {
         es: 'Mensaje privado para Brandon: fortaleza, fe y propósito',
         en: 'Private message for Brandon: strength, faith, and purpose',
@@ -706,7 +706,7 @@ async function initHomePage() {
     {
       key: 'katherinemariannegomezmichel',
       href: '/privado/katherine/?clave=katherinemariannegomezmichel',
-      icon: '/assets/images/private-search/katherine.svg',
+      icon: '/assets/images/private-search/katherine.svg?v=20260710',
       text: {
         es: 'Mensaje privado para Katherine: ternura, sabiduría y alegría',
         en: 'Private message for Katherine: tenderness, wisdom, and joy',
@@ -715,7 +715,7 @@ async function initHomePage() {
     {
       key: 'clarissadahianagomezmichel',
       href: '/privado/clarissa/?clave=clarissadahianagomezmichel',
-      icon: '/assets/images/private-search/clarissa.svg',
+      icon: '/assets/images/private-search/clarissa.svg?v=20260710',
       text: {
         es: 'Mensaje privado para Clarissa: pureza, bondad y luz',
         en: 'Private message for Clarissa: purity, kindness, and light',
@@ -724,7 +724,7 @@ async function initHomePage() {
     {
       key: 'ianisaacgomezmichel',
       href: '/privado/ian/?clave=ianisaacgomezmichel',
-      icon: '/assets/images/private-search/ian.svg',
+      icon: '/assets/images/private-search/ian.svg?v=20260710',
       text: {
         es: 'Mensaje privado para Ian: protección, alegría y confianza',
         en: 'Private message for Ian: protection, joy, and trust',
