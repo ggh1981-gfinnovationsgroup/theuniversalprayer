@@ -1,5 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-  <circle cx="12" cy="8" r="3.4" stroke="#c9a84c" stroke-width="1.8"/>
-  <path d="M5.8 20c.8-3.6 3.1-5.7 6.2-5.7S17.4 16.4 18.2 20" stroke="#c9a84c" stroke-width="1.8"/>
-  <path d="M8.7 7.8c1.2-1.2 2.2-2.1 3.3-2.1 1.1 0 2.1.9 3.3 2.1" stroke="#c9a84c" stroke-width="1.4" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="f-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#180e08"/>
+      <stop offset="100%" stop-color="#0c0804"/>
+    </radialGradient>
+    <linearGradient id="f-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#d08040" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#703810" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="f-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f5e060" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="600" fill="url(#f-bg)"/>
+  <polygon points="198,260 -20,600 120,600" fill="url(#f-r1)" opacity="0.62"/>
+  <polygon points="202,260 420,600 280,600" fill="url(#f-r2)" opacity="0.62"/>
+  <path d="M165,160 Q138,210 124,388 Q200,418 276,388 Q262,210 235,160 Z" fill="#8a5020" opacity="0.72"/>
+  <path d="M150,226 Q116,252 102,286" stroke="#8a5020" stroke-width="16" stroke-linecap="round" fill="none" opacity="0.80"/>
+  <path d="M250,226 Q284,252 298,286" stroke="#8a5020" stroke-width="16" stroke-linecap="round" fill="none" opacity="0.80"/>
+  <ellipse cx="200" cy="108" rx="26" ry="30" fill="#d8b090"/>
+  <rect x="193" y="142" width="14" height="16" rx="4" fill="#d8b090"/>
+  <path d="M174,105 Q178,74 200,70 Q222,74 226,105 Q214,88 200,86 Q186,88 174,105 Z" fill="#6a4020" opacity="0.84"/>
+  <circle cx="200" cy="108" r="53" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.65"/>
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#0c0804" opacity="0.86"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="3" opacity="0.9">FABIOLA</text>
+  <text x="200" y="568" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#f0b080" font-style="italic">Esposa amada</text>
+  <text x="200" y="584" text-anchor="middle" font-family="Georgia,serif" font-size="10.5" fill="#f8dec8" font-style="italic" opacity="0.88">Beloved wife</text>
 </svg>
