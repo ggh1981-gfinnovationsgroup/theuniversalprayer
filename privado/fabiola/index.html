@@ -7,6 +7,17 @@
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#c9a84c" />
   <link rel="stylesheet" href="../../assets/css/styles.css" />
+  <style>
+    .private-blog { margin-top: 0.9rem; width: 100%; }
+    .private-day { border: 1px solid rgba(201,168,76,0.22); border-radius: 10px; background: rgba(201,168,76,0.05); margin-bottom: 0.65rem; overflow: hidden; }
+    .private-day summary { list-style: none; cursor: pointer; padding: 0.72rem 0.8rem; display: flex; justify-content: space-between; gap: 0.7rem; align-items: center; }
+    .private-day summary::-webkit-details-marker { display: none; }
+    .private-day-title { color: var(--gold-light); font-family: var(--font-serif); font-size: 0.96rem; }
+    .private-day-date { color: var(--white-dim); font-size: 0.77rem; white-space: nowrap; }
+    .private-day-body { border-top: 1px solid rgba(201,168,76,0.2); padding: 0.75rem 0.8rem 0.8rem; }
+    .private-day-body p { margin: 0; }
+    .private-blog-note { color: var(--white-dim); font-size: 0.82rem; margin-top: 0.3rem; }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -16,9 +27,7 @@
         <span class="logo-text" data-lang="es">La Oracion Universal</span>
         <span class="logo-text" data-lang="en" style="display:none">The Universal Prayer</span>
       </a>
-      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
-        <span id="langLabel">EN</span>
-      </button>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language"><span id="langLabel">EN</span></button>
     </div>
   </header>
 
@@ -35,32 +44,57 @@
       </div>
     </section>
 
-    <section class="adoracion-card-section" id="mensajeFabiolaprivado" style="display:none;">
+    <section class="adoracion-card-section" id="mensajePrivado" style="display:none;">
       <div class="adoracion-card-inner">
         <img class="adoracion-card-icon" src="../../assets/images/private-search/fabiola.svg?v=20260710" alt="Fabiola" loading="lazy" decoding="async" />
         <div>
-          <span class="adoracion-card-badge" data-lang="es">Mensaje privado para mi esposa</span>
-          <span class="adoracion-card-badge" data-lang="en" style="display:none">Private message for my wife</span>
+          <span class="adoracion-card-badge" data-lang="es">Bitacora privada para mi esposa</span>
+          <span class="adoracion-card-badge" data-lang="en" style="display:none">Private journal for my wife</span>
           <h2 class="adoracion-card-title" data-lang="es">Fabiola, te amo y doy gracias a Dios por ti</h2>
           <h2 class="adoracion-card-title" data-lang="en" style="display:none">Fabiola, I love you and thank God for you</h2>
-          <p class="adoracion-card-desc" id="msgEs" data-lang="es">Amor mio, eres una bendicion en mi vida y en nuestro matrimonio. Yo te amo profundamente, pero Dios y Maria te aman aun mas. Le pido al Espiritu Santo que nos guie cada dia con humildad, paciencia y alegria, y que nuestra casa permanezca siempre en la gracia de Dios.</p>
-          <p class="adoracion-card-desc" id="msgEn" data-lang="en" style="display:none">My love, you are a blessing in my life and in our marriage. I love you deeply, but God and Mary love you even more. I ask the Holy Spirit to guide us each day with humility, patience, and joy, and to keep our home always in God's grace.</p>
-          <div style="margin-top:0.7rem;display:flex;gap:0.5rem;flex-wrap:wrap;">
-            <button class="adoracion-card-btn" id="audioPlay" type="button"><span data-lang="es">Escuchar mensaje</span><span data-lang="en" style="display:none">Play message</span></button>
-            <button class="adoracion-card-btn" id="audioStop" type="button"><span data-lang="es">Detener</span><span data-lang="en" style="display:none">Stop</span></button>
+          <p class="adoracion-card-desc" data-lang="es">Mensajes por fecha. Cada dia se puede abrir o cerrar.</p>
+          <p class="adoracion-card-desc" data-lang="en" style="display:none">Date-based notes. Each day can be expanded or collapsed.</p>
+
+          <div class="private-blog">
+            <details class="private-day" open>
+              <summary>
+                <span class="private-day-title" data-lang="es">Te amo y oro por nuestro hogar</span>
+                <span class="private-day-title" data-lang="en" style="display:none">I love you and pray for our home</span>
+                <span class="private-day-date">2026-07-11</span>
+              </summary>
+              <div class="private-day-body">
+                <p class="adoracion-card-desc" data-lang="es">Amor mio, eres una bendicion en mi vida y en nuestro matrimonio. Yo te amo profundamente, pero Dios y Maria te aman aun mas. Le pido al Espiritu Santo que nos guie cada dia con humildad, paciencia y alegria, y que nuestra casa permanezca siempre en la gracia de Dios.</p>
+                <p class="adoracion-card-desc" data-lang="en" style="display:none">My love, you are a blessing in my life and in our marriage. I love you deeply, but God and Mary love you even more. I ask the Holy Spirit to guide us each day with humility, patience, and joy, and to keep our home always in God's grace.</p>
+              </div>
+            </details>
+
+            <details class="private-day">
+              <summary>
+                <span class="private-day-title" data-lang="es">Gracias por caminar conmigo</span>
+                <span class="private-day-title" data-lang="en" style="display:none">Thank you for walking with me</span>
+                <span class="private-day-date">2026-07-10</span>
+              </summary>
+              <div class="private-day-body">
+                <p class="adoracion-card-desc" data-lang="es">Hoy doy gracias a Dios por tu paciencia y por tu fe. Eres refugio, companera y bendicion diaria para nuestra familia.</p>
+                <p class="adoracion-card-desc" data-lang="en" style="display:none">Today I thank God for your patience and your faith. You are a refuge, companion, and daily blessing for our family.</p>
+              </div>
+            </details>
+
+            <details class="private-day">
+              <summary>
+                <span class="private-day-title" data-lang="es">Plantilla para nuevo dia</span>
+                <span class="private-day-title" data-lang="en" style="display:none">Template for a new day</span>
+                <span class="private-day-date">AAAA-MM-DD</span>
+              </summary>
+              <div class="private-day-body">
+                <p class="adoracion-card-desc" data-lang="es">Escribe aqui el mensaje del dia.</p>
+                <p class="adoracion-card-desc" data-lang="en" style="display:none">Write the daily note here.</p>
+              </div>
+            </details>
           </div>
-          <ul class="adoracion-card-desc" data-lang="es" style="margin:0.35rem 0 0 1.1rem; padding:0;">
-            <li><a href="/matrimonio/">Matrimonio: gracia y bendiciones del sacramento</a></li>
-            <li><a href="/intercesor/?intercesor=santamonica">Santa Monica: oracion perseverante por la familia</a></li>
-            <li><a href="/intercesor/?intercesor=fatima">Virgen de Fatima: consagracion y paz del hogar</a></li>
-            <li><a href="/reconciliacion/">Reconciliacion: sanar y empezar de nuevo</a></li>
-          </ul>
-          <ul class="adoracion-card-desc" data-lang="en" style="display:none; margin:0.35rem 0 0 1.1rem; padding:0;">
-            <li><a href="/matrimonio/">Marriage: grace and sacramental blessings</a></li>
-            <li><a href="/intercesor/?intercesor=santamonica">Saint Monica: persevering prayer for family</a></li>
-            <li><a href="/intercesor/?intercesor=fatima">Our Lady of Fatima: consecration and peace at home</a></li>
-            <li><a href="/reconciliacion/">Reconciliation: healing and a new beginning</a></li>
-          </ul>
+
+          <p class="private-blog-note" data-lang="es">Sugerencia: agrega una entrada nueva arriba con la fecha de hoy.</p>
+          <p class="private-blog-note" data-lang="en" style="display:none">Tip: add a new entry on top with today's date.</p>
         </div>
       </div>
     </section>
@@ -73,7 +107,8 @@
       var qp = new URLSearchParams(window.location.search);
       var ok = (qp.get('clave') || '').toLowerCase() === 'fabiolamichellopez';
       var locked = document.getElementById('lockedState');
-      var content = document.getElementById('mensajeFabiolaprivado');
+      var content = document.getElementById('mensajePrivado');
+
       if (ok) {
         if (locked) locked.style.display = 'none';
         if (content) content.style.display = '';
@@ -90,20 +125,6 @@
         lang = lang === 'es' ? 'en' : 'es';
         localStorage.setItem('tup_lang', lang);
         applyLang();
-      });
-
-      var play = document.getElementById('audioPlay');
-      var stop = document.getElementById('audioStop');
-      play?.addEventListener('click', function () {
-        if (!window.speechSynthesis) return;
-        window.speechSynthesis.cancel();
-        var text = (lang === 'es' ? document.getElementById('msgEs') : document.getElementById('msgEn'))?.textContent || '';
-        var u = new SpeechSynthesisUtterance(text);
-        u.lang = lang === 'es' ? 'es-ES' : 'en-US';
-        window.speechSynthesis.speak(u);
-      });
-      stop?.addEventListener('click', function () {
-        if (window.speechSynthesis) window.speechSynthesis.cancel();
       });
 
       applyLang();

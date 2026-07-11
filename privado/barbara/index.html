@@ -7,6 +7,16 @@
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#c9a84c" />
   <link rel="stylesheet" href="../../assets/css/styles.css" />
+  <style>
+    .private-blog { margin-top: 0.9rem; width: 100%; }
+    .private-day { border: 1px solid rgba(201,168,76,0.22); border-radius: 10px; background: rgba(201,168,76,0.05); margin-bottom: 0.65rem; overflow: hidden; }
+    .private-day summary { list-style: none; cursor: pointer; padding: 0.72rem 0.8rem; display: flex; justify-content: space-between; gap: 0.7rem; align-items: center; }
+    .private-day summary::-webkit-details-marker { display: none; }
+    .private-day-title { color: var(--gold-light); font-family: var(--font-serif); font-size: 0.96rem; }
+    .private-day-date { color: var(--white-dim); font-size: 0.77rem; white-space: nowrap; }
+    .private-day-body { border-top: 1px solid rgba(201,168,76,0.2); padding: 0.75rem 0.8rem 0.8rem; }
+    .private-blog-note { color: var(--white-dim); font-size: 0.82rem; margin-top: 0.3rem; }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -16,53 +26,70 @@
         <span class="logo-text" data-lang="es">La Oracion Universal</span>
         <span class="logo-text" data-lang="en" style="display:none">The Universal Prayer</span>
       </a>
-      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
-        <span id="langLabel">EN</span>
-      </button>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language"><span id="langLabel">EN</span></button>
     </div>
   </header>
 
   <main class="main-content" style="padding-top:1.2rem;">
     <section class="adoracion-card-section" id="lockedState">
-      <div class="adoracion-card-inner">
-        <div>
-          <h1 class="adoracion-card-title" data-lang="es">Acceso privado</h1>
-          <h1 class="adoracion-card-title" data-lang="en" style="display:none">Private access</h1>
-          <p class="adoracion-card-desc" data-lang="es">Esta pagina requiere clave valida.</p>
-          <p class="adoracion-card-desc" data-lang="en" style="display:none">This page requires a valid key.</p>
-          <a href="/" class="adoracion-card-btn"><span data-lang="es">Volver al inicio</span><span data-lang="en" style="display:none">Back to home</span></a>
-        </div>
-      </div>
+      <div class="adoracion-card-inner"><div>
+        <h1 class="adoracion-card-title" data-lang="es">Acceso privado</h1>
+        <h1 class="adoracion-card-title" data-lang="en" style="display:none">Private access</h1>
+        <p class="adoracion-card-desc" data-lang="es">Esta pagina requiere clave valida.</p>
+        <p class="adoracion-card-desc" data-lang="en" style="display:none">This page requires a valid key.</p>
+        <a href="/" class="adoracion-card-btn"><span data-lang="es">Volver al inicio</span><span data-lang="en" style="display:none">Back to home</span></a>
+      </div></div>
     </section>
 
-    <section class="adoracion-card-section" id="mensajeBarbaraprivado" style="display:none;">
+    <section class="adoracion-card-section" id="mensajePrivado" style="display:none;">
       <div class="adoracion-card-inner">
         <img class="adoracion-card-icon" src="../../assets/images/private-search/barbara.svg?v=20260710" alt="Barbara" loading="lazy" decoding="async" />
         <div>
-          <span class="adoracion-card-badge" data-lang="es">Mensaje privado para mi hija</span>
-          <span class="adoracion-card-badge" data-lang="en" style="display:none">Private message for my daughter</span>
+          <span class="adoracion-card-badge" data-lang="es">Bitacora privada para mi hija</span>
+          <span class="adoracion-card-badge" data-lang="en" style="display:none">Private journal for my daughter</span>
           <h2 class="adoracion-card-title" data-lang="es">Barbara, te amo con todo mi corazon</h2>
           <h2 class="adoracion-card-title" data-lang="en" style="display:none">Barbara, I love you with all my heart</h2>
-          <p class="adoracion-card-desc" id="msgEs" data-lang="es">Hija, eres un regalo precioso de Dios para nuestra familia. Yo te amo con todo mi corazon, pero Dios y Maria te aman aun mas y cuidan cada paso de tu vida. Oro por ti todos los dias para que el Senor te regale sabiduria, pureza de corazon y fortaleza interior, para que nunca te falte la esperanza cuando lleguen pruebas. Que aprendas a reconocer tu valor en Cristo, a elegir amistades que te acerquen al bien y a construir tus suenos con disciplina, alegria y fe. Siempre estare contigo: para escucharte, abrazarte, corregirte con amor y recordarte que naciste para cosas grandes en la gracia de Dios.</p>
-          <p class="adoracion-card-desc" id="msgEn" data-lang="en" style="display:none">Daughter, you are a precious gift from God to our family. I love you with all my heart, but God and Mary love you even more and watch over every step of your life. I pray for you every day, asking the Lord to give you wisdom, purity of heart, and inner strength, so hope will not fail you when trials come. May you learn to see your true worth in Christ, choose friendships that lead you toward what is good, and build your dreams with discipline, joy, and faith. I will always be with you: to listen, to embrace you, to correct you with love, and to remind you that you were born for great things in God's grace.</p>
-          <div style="margin-top:0.7rem;display:flex;gap:0.5rem;flex-wrap:wrap;">
-            <button class="adoracion-card-btn" id="audioPlay" type="button"><span data-lang="es">Escuchar mensaje</span><span data-lang="en" style="display:none">Play message</span></button>
-            <button class="adoracion-card-btn" id="audioStop" type="button"><span data-lang="es">Detener</span><span data-lang="en" style="display:none">Stop</span></button>
+
+          <div class="private-blog">
+            <details class="private-day" open>
+              <summary>
+                <span class="private-day-title" data-lang="es">Palabras de papa para hoy</span>
+                <span class="private-day-title" data-lang="en" style="display:none">Dad's words for today</span>
+                <span class="private-day-date">2026-07-11</span>
+              </summary>
+              <div class="private-day-body">
+                <p class="adoracion-card-desc" data-lang="es">Hija, eres un regalo precioso de Dios para nuestra familia. Yo te amo con todo mi corazon, pero Dios y Maria te aman aun mas y cuidan cada paso de tu vida. Oro por ti todos los dias para que el Senor te regale sabiduria, pureza de corazon y fortaleza interior.</p>
+                <p class="adoracion-card-desc" data-lang="en" style="display:none">Daughter, you are a precious gift from God to our family. I love you with all my heart, but God and Mary love you even more and watch every step of your life. I pray for you every day for wisdom, purity of heart, and inner strength.</p>
+              </div>
+            </details>
+
+            <details class="private-day">
+              <summary>
+                <span class="private-day-title" data-lang="es">Recuerda tu valor en Cristo</span>
+                <span class="private-day-title" data-lang="en" style="display:none">Remember your worth in Christ</span>
+                <span class="private-day-date">2026-07-10</span>
+              </summary>
+              <div class="private-day-body">
+                <p class="adoracion-card-desc" data-lang="es">No olvides que naciste para cosas grandes en la gracia de Dios. Siempre tendras mi amor, direccion y una familia que ora por ti.</p>
+                <p class="adoracion-card-desc" data-lang="en" style="display:none">Never forget that you were born for great things in God's grace. You will always have my love, guidance, and a family that prays for you.</p>
+              </div>
+            </details>
+
+            <details class="private-day">
+              <summary>
+                <span class="private-day-title" data-lang="es">Plantilla para nuevo dia</span>
+                <span class="private-day-title" data-lang="en" style="display:none">Template for a new day</span>
+                <span class="private-day-date">AAAA-MM-DD</span>
+              </summary>
+              <div class="private-day-body">
+                <p class="adoracion-card-desc" data-lang="es">Escribe aqui el mensaje del dia.</p>
+                <p class="adoracion-card-desc" data-lang="en" style="display:none">Write the daily note here.</p>
+              </div>
+            </details>
           </div>
-          <h3 class="section-title" data-lang="es" style="font-size:1.1rem; margin-top:0.8rem;">Caminos buenos para ti</h3>
-          <h3 class="section-title" data-lang="en" style="display:none; font-size:1.1rem; margin-top:0.8rem;">Good paths for you</h3>
-          <ul class="adoracion-card-desc" data-lang="es" style="margin:0.35rem 0 0 1.1rem; padding:0;">
-            <li><a href="/intercesor/?intercesor=santabarbara">Tu santa: Santa Barbara</a></li>
-            <li><a href="/jovenes/">Jovenes en Cristo</a></li>
-            <li><a href="/salud/">Salud integral</a></li>
-            <li><a href="/oraciones/">Oraciones basicas para cada dia</a></li>
-          </ul>
-          <ul class="adoracion-card-desc" data-lang="en" style="display:none; margin:0.35rem 0 0 1.1rem; padding:0;">
-            <li><a href="/intercesor/?intercesor=santabarbara">Your saint: Saint Barbara</a></li>
-            <li><a href="/jovenes/">Young People in Christ</a></li>
-            <li><a href="/salud/">Whole-person health</a></li>
-            <li><a href="/oraciones/">Basic daily prayers</a></li>
-          </ul>
+
+          <p class="private-blog-note" data-lang="es">Sugerencia: agrega una entrada nueva arriba con la fecha de hoy.</p>
+          <p class="private-blog-note" data-lang="en" style="display:none">Tip: add a new entry on top with today's date.</p>
         </div>
       </div>
     </section>
@@ -75,39 +102,22 @@
       var qp = new URLSearchParams(window.location.search);
       var ok = (qp.get('clave') || '').toLowerCase() === 'barbarascarlettgomezmichel';
       var locked = document.getElementById('lockedState');
-      var content = document.getElementById('mensajeBarbaraprivado');
+      var content = document.getElementById('mensajePrivado');
       if (ok) {
         if (locked) locked.style.display = 'none';
         if (content) content.style.display = '';
       }
-
       function applyLang() {
         document.querySelectorAll('[data-lang]').forEach(function (el) {
           el.style.display = el.getAttribute('data-lang') === lang ? '' : 'none';
         });
         if (label) label.textContent = lang === 'es' ? 'EN' : 'ES';
       }
-
       document.getElementById('langToggle')?.addEventListener('click', function () {
         lang = lang === 'es' ? 'en' : 'es';
         localStorage.setItem('tup_lang', lang);
         applyLang();
       });
-
-      var play = document.getElementById('audioPlay');
-      var stop = document.getElementById('audioStop');
-      play?.addEventListener('click', function () {
-        if (!window.speechSynthesis) return;
-        window.speechSynthesis.cancel();
-        var text = (lang === 'es' ? document.getElementById('msgEs') : document.getElementById('msgEn'))?.textContent || '';
-        var u = new SpeechSynthesisUtterance(text);
-        u.lang = lang === 'es' ? 'es-ES' : 'en-US';
-        window.speechSynthesis.speak(u);
-      });
-      stop?.addEventListener('click', function () {
-        if (window.speechSynthesis) window.speechSynthesis.cancel();
-      });
-
       applyLang();
     })();
   </script>
