@@ -52,6 +52,11 @@
           <h2 class="adoracion-card-title" data-lang="es">Barbara, te amo con todo mi corazon</h2>
           <h2 class="adoracion-card-title" data-lang="en" style="display:none">Barbara, I love you with all my heart</h2>
 
+          <div style="margin-top:0.7rem;display:flex;gap:0.5rem;flex-wrap:wrap;">
+            <button class="adoracion-card-btn" id="audioPlay" type="button"><span data-lang="es">Escuchar carta</span><span data-lang="en" style="display:none">Play letter</span></button>
+            <button class="adoracion-card-btn" id="audioStop" type="button"><span data-lang="es">Detener</span><span data-lang="en" style="display:none">Stop</span></button>
+          </div>
+
           <div class="private-blog">
             <details class="private-day" open>
               <summary>
@@ -123,6 +128,21 @@
         lang = lang === 'es' ? 'en' : 'es';
         localStorage.setItem('tup_lang', lang);
         applyLang();
+      });
+
+      var play = document.getElementById('audioPlay');
+      var stop = document.getElementById('audioStop');
+      play?.addEventListener('click', function () {
+        if (!window.speechSynthesis) return;
+        window.speechSynthesis.cancel();
+        var target = document.querySelector('.private-day[open] .private-day-body p[data-lang="' + lang + '"]') || document.querySelector('.private-day .private-day-body p[data-lang="' + lang + '"]');
+        var text = target ? target.textContent : '';
+        var u = new SpeechSynthesisUtterance(text);
+        u.lang = lang === 'es' ? 'es-ES' : 'en-US';
+        window.speechSynthesis.speak(u);
+      });
+      stop?.addEventListener('click', function () {
+        if (window.speechSynthesis) window.speechSynthesis.cancel();
       });
       applyLang();
     })();
