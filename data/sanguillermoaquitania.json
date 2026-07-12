@@ -1,0 +1,43 @@
+{
+  "id": "sanguillermoaquitania",
+  "name": {
+    "es": "San Guillermo de Aquitania",
+    "en": "Saint William of Aquitaine"
+  },
+  "jaculatoria": {
+    "es": "San Guillermo de Aquitania, testigo de conversión tardía, ruega por quienes aún están lejos de Dios.",
+    "en": "Saint William of Aquitaine, witness of late conversion, pray for those still far from God."
+  },
+  "feast_day": {
+    "es": "29 de enero",
+    "en": "January 29"
+  },
+  "image": "/assets/images/sanguillermoaquitania.svg",
+  "prayer": {
+    "es": "San Guillermo de Aquitania, tú que conociste el poder y luego elegiste la humildad, intercede por nosotros. Enséñanos a reconocer nuestros pecados, reparar el daño hecho y volver con sinceridad al Señor. Que nunca desesperemos de la misericordia de Dios. Amén.",
+    "en": "Saint William of Aquitaine, you who knew power and later chose humility, intercede for us. Teach us to acknowledge our sins, repair the harm we have done, and return sincerely to the Lord. May we never despair of God's mercy. Amen."
+  },
+  "history": {
+    "es": "La tradición devocional presenta a San Guillermo de Aquitania como un noble de gran influencia que, tras años de una vida desordenada y conflictiva, vivió una conversión profunda al final de su camino.\n\nMovido por la gracia, buscó reconciliarse con Dios, reparar injusticias y abrazar una vida de penitencia y oración. Su testimonio ha sido leído como signo de esperanza para quienes creen haber llegado demasiado tarde.\n\nSu figura recuerda que la misericordia de Dios puede transformar un corazón endurecido y abrir un futuro nuevo, aun después de muchos errores.",
+    "en": "Devotional tradition presents Saint William of Aquitaine as a highly influential nobleman who, after years of a disordered and conflictive life, underwent a deep conversion near the end of his path.\n\nMoved by grace, he sought reconciliation with God, reparation for injustices, and a life of penance and prayer. His witness has been read as a sign of hope for those who think they have come too late.\n\nHis figure reminds us that God's mercy can transform a hardened heart and open a new future even after many mistakes."
+  },
+  "novena_prayers": {
+    "es": "Cada día de la novena: reza 1 Padre Nuestro, 1 Ave María y 1 Gloria, y pide la gracia de una conversión concreta.",
+    "en": "Each day of the novena: pray 1 Our Father, 1 Hail Mary, and 1 Glory Be, and ask for the grace of concrete conversion."
+  },
+  "novena": [
+    { "day": 1, "es": "Día 1 — Reconocer el pecado\nPide luz para ver tu vida con verdad.", "en": "Day 1 — Recognizing sin\nAsk for light to see your life in truth." },
+    { "day": 2, "es": "Día 2 — Arrepentimiento\nPide dolor de corazón por haber ofendido a Dios.", "en": "Day 2 — Repentance\nAsk for heartfelt sorrow for having offended God." },
+    { "day": 3, "es": "Día 3 — Reparación\nPropón un acto concreto de reparación.", "en": "Day 3 — Reparation\nCommit to one concrete act of reparation." },
+    { "day": 4, "es": "Día 4 — Humildad\nRenuncia al orgullo y busca la voluntad de Dios.", "en": "Day 4 — Humility\nRenounce pride and seek God's will." },
+    { "day": 5, "es": "Día 5 — Misericordia\nConfía en que Dios todavía puede rehacer tu historia.", "en": "Day 5 — Mercy\nTrust that God can still remake your story." },
+    { "day": 6, "es": "Día 6 — Perseverancia\nPide constancia en el bien y en la oración.", "en": "Day 6 — Perseverance\nAsk for constancy in goodness and prayer." },
+    { "day": 7, "es": "Día 7 — Justicia\nRevisa lo que debes devolver o corregir.", "en": "Day 7 — Justice\nReview what you need to restore or correct." },
+    { "day": 8, "es": "Día 8 — Paz interior\nEntrégale al Señor la culpa y recibe su perdón.", "en": "Day 8 — Interior peace\nSurrender guilt to the Lord and receive His forgiveness." },
+    { "day": 9, "es": "Día 9 — Vida nueva\nConsagra al Señor una decisión de cambio permanente.", "en": "Day 9 — New life\nConsecrate to the Lord one lasting decision of change." }
+  ],
+  "chaplet": { "available": false },
+  "litany": { "available": false },
+  "consecration": { "available": false },
+  "miracles": { "available": false }
+}

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="wa-bg" cx="50%" cy="35%" r="68%">
+      <stop offset="0%" stop-color="#1a1110"/><stop offset="100%" stop-color="#090505"/>
+    </radialGradient>
+    <linearGradient id="wa-cloak" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#5b3a34"/><stop offset="100%" stop-color="#2a1a17"/>
+    </linearGradient>
+    <filter id="wa-gl"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+
+  <rect width="400" height="600" fill="url(#wa-bg)"/>
+  <circle cx="200" cy="150" r="88" fill="#c38f5a" opacity="0.18" filter="url(#wa-gl)"/>
+
+  <!-- Cloak / conversion motif -->
+  <path d="M118 394 Q132 220 200 182 Q268 220 282 394 Q200 423 118 394 Z" fill="url(#wa-cloak)"/>
+  <path d="M150 224 Q130 270 126 345" stroke="#160d0c" stroke-width="13" stroke-linecap="round" opacity="0.45"/>
+  <path d="M250 224 Q270 270 274 345" stroke="#160d0c" stroke-width="13" stroke-linecap="round" opacity="0.45"/>
+  <path d="M130 292 Q200 302 270 292" stroke="#c9a84c" stroke-width="3" fill="none" opacity="0.65"/>
+
+  <!-- Face -->
+  <rect x="193" y="174" width="14" height="19" rx="5" fill="#c89a66"/>
+  <ellipse cx="200" cy="142" rx="32" ry="37" fill="#c89a66"/>
+  <path d="M168 141 Q176 96 200 92 Q224 96 232 141 Q223 118 200 114 Q177 118 168 141 Z" fill="#4a3128"/>
+  <path d="M182 161 Q190 168 200 169 Q210 168 218 161" stroke="#775342" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="188" cy="146" r="2" fill="#34241f"/>
+  <circle cx="212" cy="146" r="2" fill="#34241f"/>
+
+  <!-- Ducal ring discarded + cross -->
+  <circle cx="118" cy="454" r="8" fill="none" stroke="#b89958" stroke-width="3" opacity="0.55"/>
+  <line x1="200" y1="250" x2="200" y2="292" stroke="#d6b66a" stroke-width="4"/>
+  <line x1="188" y1="260" x2="212" y2="260" stroke="#d6b66a" stroke-width="4"/>
+
+  <!-- Halo -->
+  <circle cx="200" cy="142" r="57" fill="none" stroke="#e8c77d" stroke-width="1.6" stroke-opacity="0.62"/>
+
+  <!-- Frame and bilingual panel -->
+  <rect x="8" y="8" width="384" height="584" rx="8" fill="none" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.45"/>
+  <rect x="18" y="526" width="364" height="66" rx="6" fill="#0a0706" opacity="0.9"/>
+  <line x1="44" y1="535" x2="356" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="2">SAN GUILLERMO DE AQUITANIA · SAINT WILLIAM OF AQUITAINE</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#d39a58" font-style="italic">«San Guillermo de Aquitania»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#f2df9a" font-style="italic" opacity="0.85">«Saint William of Aquitaine»</text>
+</svg>

@@ -1,0 +1,43 @@
+{
+  "id": "sanguillermogellone",
+  "name": {
+    "es": "San Guillermo de Gellone",
+    "en": "Saint William of Gellone"
+  },
+  "jaculatoria": {
+    "es": "San Guillermo de Gellone, guerrero convertido en monje, enséñanos a elegir a Cristo sobre todo poder.",
+    "en": "Saint William of Gellone, warrior turned monk, teach us to choose Christ over all power."
+  },
+  "feast_day": {
+    "es": "28 de mayo",
+    "en": "May 28"
+  },
+  "image": "/assets/images/sanguillermogellone.svg",
+  "prayer": {
+    "es": "San Guillermo de Gellone, tú que dejaste la espada para abrazar la vida monástica, intercede por nosotros. Ayúdanos a pasar de la fuerza humana a la confianza en Dios, del ruido de la guerra a la paz de la oración. Ruega para que nuestras decisiones sean valientes, limpias y fieles al Evangelio. Amén.",
+    "en": "Saint William of Gellone, you who laid down the sword to embrace monastic life, intercede for us. Help us move from human strength to trust in God, from the noise of war to the peace of prayer. Pray that our decisions may be brave, pure, and faithful to the Gospel. Amen."
+  },
+  "history": {
+    "es": "San Guillermo de Gellone fue pariente de Carlomagno y un reconocido líder militar en la frontera franca. Tras años de campañas y combates, vivió una conversión profunda y decidió entregar su vida a Cristo de manera radical.\n\nFundó el monasterio de Gellone (actual Saint-Guilhem-le-Désert), que se convirtió en un centro espiritual importante y paso de peregrinos. Su historia muestra que la gracia puede transformar incluso un corazón formado en la guerra.\n\nLa tradición cristiana lo recuerda como ejemplo de penitencia, humildad y perseverancia: un hombre que cambió la gloria humana por la búsqueda de Dios.",
+    "en": "Saint William of Gellone was related to Charlemagne and became a renowned military leader on the Frankish frontier. After years of campaigns and battles, he underwent a deep conversion and chose to give his life radically to Christ.\n\nHe founded the monastery of Gellone (today Saint-Guilhem-le-Désert), which became an important spiritual center and a stop for pilgrims. His story shows that grace can transform even a heart formed by war.\n\nChristian tradition remembers him as an example of penance, humility, and perseverance: a man who exchanged human glory for the search for God."
+  },
+  "novena_prayers": {
+    "es": "Cada día de la novena: reza 1 Padre Nuestro, 1 Ave María y 1 Gloria, luego medita el tema del día y presenta tu intención.",
+    "en": "Each day of the novena: pray 1 Our Father, 1 Hail Mary, and 1 Glory Be, then meditate on the day theme and present your intention."
+  },
+  "novena": [
+    { "day": 1, "es": "Día 1 — Conversión\nPide la gracia de una conversión real y constante.", "en": "Day 1 — Conversion\nAsk for the grace of real and constant conversion." },
+    { "day": 2, "es": "Día 2 — Desapego\nEntrega al Señor lo que te impide seguirlo con libertad.", "en": "Day 2 — Detachment\nSurrender to the Lord what keeps you from following Him freely." },
+    { "day": 3, "es": "Día 3 — Humildad\nPide un corazón humilde para obedecer la voluntad de Dios.", "en": "Day 3 — Humility\nAsk for a humble heart to obey God's will." },
+    { "day": 4, "es": "Día 4 — Penitencia\nOfrece un sacrificio concreto por tus pecados y los del mundo.", "en": "Day 4 — Penance\nOffer a concrete sacrifice for your sins and those of the world." },
+    { "day": 5, "es": "Día 5 — Oración\nRenueva tu fidelidad diaria a la oración en silencio.", "en": "Day 5 — Prayer\nRenew your daily fidelity to silent prayer." },
+    { "day": 6, "es": "Día 6 — Caridad\nPractica una obra de misericordia de forma discreta.", "en": "Day 6 — Charity\nPractice a work of mercy quietly and concretely." },
+    { "day": 7, "es": "Día 7 — Perseverancia\nPide fortaleza para no volver atrás en el camino de Dios.", "en": "Day 7 — Perseverance\nAsk for strength not to turn back on God's path." },
+    { "day": 8, "es": "Día 8 — Vida monástica interior\nBusca momentos de desierto en medio de tus tareas.", "en": "Day 8 — Interior monastic life\nSeek desert moments amid your daily duties." },
+    { "day": 9, "es": "Día 9 — Entrega total\nPresenta tu intención final y conságrala al Señor.", "en": "Day 9 — Total surrender\nPresent your final intention and entrust it to the Lord." }
+  ],
+  "chaplet": { "available": false },
+  "litany": { "available": false },
+  "consecration": { "available": false },
+  "miracles": { "available": false }
+}

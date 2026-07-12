@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="wg-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#16120a"/><stop offset="100%" stop-color="#0a0704"/>
+    </radialGradient>
+    <linearGradient id="wg-habit" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#5a4630"/><stop offset="100%" stop-color="#2f2318"/>
+    </linearGradient>
+    <filter id="wg-gl"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+
+  <rect width="400" height="600" fill="url(#wg-bg)"/>
+  <circle cx="200" cy="150" r="85" fill="#d8b86a" opacity="0.16" filter="url(#wg-gl)"/>
+
+  <!-- Habit -->
+  <path d="M124 390 Q140 220 200 178 Q260 220 276 390 Q200 420 124 390 Z" fill="url(#wg-habit)"/>
+  <path d="M168 225 Q145 260 134 330" stroke="#1f1710" stroke-width="14" stroke-linecap="round" opacity="0.45"/>
+  <path d="M232 225 Q255 260 266 330" stroke="#1f1710" stroke-width="14" stroke-linecap="round" opacity="0.45"/>
+  <path d="M132 286 Q200 296 268 286" stroke="#c9a84c" stroke-width="3" fill="none" opacity="0.65"/>
+
+  <!-- Face -->
+  <rect x="192" y="172" width="16" height="20" rx="5" fill="#caa06a"/>
+  <ellipse cx="200" cy="140" rx="33" ry="38" fill="#caa06a"/>
+  <path d="M167 139 Q176 92 200 88 Q224 92 233 139 Q222 116 200 112 Q178 116 167 139 Z" fill="#4a3525"/>
+  <path d="M182 160 Q200 174 218 160" stroke="#7a5a40" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="188" cy="145" r="2" fill="#3a2a20"/>
+  <circle cx="212" cy="145" r="2" fill="#3a2a20"/>
+
+  <!-- Cross + sword hint -->
+  <line x1="200" y1="248" x2="200" y2="290" stroke="#d6b66a" stroke-width="4"/>
+  <line x1="188" y1="258" x2="212" y2="258" stroke="#d6b66a" stroke-width="4"/>
+  <path d="M300 430 L336 392" stroke="#9a9a9a" stroke-width="4" opacity="0.35"/>
+  <circle cx="300" cy="430" r="5" fill="#9a9a9a" opacity="0.35"/>
+
+  <!-- Halo -->
+  <circle cx="200" cy="140" r="58" fill="none" stroke="#e8cb7c" stroke-width="1.6" stroke-opacity="0.6"/>
+
+  <!-- Frame and bilingual panel -->
+  <rect x="8" y="8" width="384" height="584" rx="8" fill="none" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.45"/>
+  <rect x="18" y="526" width="364" height="66" rx="6" fill="#0a0805" opacity="0.88"/>
+  <line x1="44" y1="535" x2="356" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#c9a84c" letter-spacing="2">SAN GUILLERMO DE GELLONE · SAINT WILLIAM OF GELLONE</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#d7a050" font-style="italic">«San Guillermo de Gellone»</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#f5e090" font-style="italic" opacity="0.85">«Saint William of Gellone»</text>
+</svg>
