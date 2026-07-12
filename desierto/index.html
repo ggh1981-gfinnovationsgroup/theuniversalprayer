@@ -3,656 +3,482 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Silencio y Escucha | The Universal Prayer</title>
-  <meta name="description" content="Retiro de dos días en silencio y escucha: 'Habla, Señor, que tu siervo escucha', centrado en la Eucaristía y la Preciosísima Sangre de Jesús." />
-  <meta name="theme-color" content="#c9a84c" />
+  <title>Silencio y Escucha — 33 Días en el Desierto | The Universal Prayer</title>
+  <meta name="description" content="Recorrido de 33 días de silencio, escucha y discernimiento. Un camino interior guiado por la Palabra, la oración y la vida ordinaria." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://www.theuniversalprayer.com/desierto/" />
+  <meta property="og:title" content="33 Días en el Desierto | The Universal Prayer" />
+  <meta property="og:description" content="Silencio, escucha y discernimiento: 33 días para aprender a oír la voz de Dios." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Silencio y Escucha" />
-  <meta property="og:description" content="Guía práctica de dos días para entrar en silencio interior, adorar en la Eucaristía y pedir purificación en la Sangre de Cristo." />
   <meta property="og:url" content="https://www.theuniversalprayer.com/desierto/" />
   <meta property="og:image" content="https://www.theuniversalprayer.com/assets/images/social-desierto.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Silencio y Escucha - Adoración Eucarística" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Silencio y Escucha" />
-  <meta name="twitter:description" content="Guía práctica para entrar en silencio interior y escuchar a Dios con pasos concretos." />
-  <meta name="twitter:image" content="https://www.theuniversalprayer.com/assets/images/social-desierto.png" />
+  <meta name="theme-color" content="#c9a84c" />
   <link rel="manifest" href="/manifest.json" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/css/styles.css" />
-  <style>
-    .des-page {
-      min-height: 100dvh;
-      background:
-        radial-gradient(800px 480px at 50% -8%, rgba(201,168,76,0.16), transparent 65%),
-        radial-gradient(520px 380px at 18% 92%, rgba(143,125,216,0.12), transparent 68%),
-        radial-gradient(520px 380px at 82% 92%, rgba(154,35,57,0.14), transparent 68%),
-        linear-gradient(180deg, #090f1f 0%, #0a1226 52%, #090e1b 100%);
-    }
-
-    .des-wrap {
-      width: min(980px, 100% - 1.5rem);
-      margin: 0 auto;
-      padding: 1.3rem 0 4rem;
-    }
-
-    .des-hero {
-      border: 1px solid rgba(201,168,76,0.25);
-      border-radius: 20px;
-      padding: 1.2rem 1rem 1.15rem;
-      background: linear-gradient(180deg, rgba(201,168,76,0.1), rgba(20,26,45,0.88));
-      box-shadow: 0 20px 38px rgba(0,0,0,0.34);
-      animation: des-enter .7s ease both;
-    }
-
-    @keyframes des-enter {
-      from { opacity: 0; transform: translateY(12px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .des-back {
-      display: inline-block;
-      text-decoration: none;
-      color: rgba(255,255,255,0.74);
-      font-size: 0.84rem;
-      margin-bottom: 0.72rem;
-    }
-
-    .des-badge {
-      display: inline-block;
-      border: 1px solid rgba(201,168,76,0.34);
-      border-radius: 999px;
-      color: var(--gold);
-      background: rgba(201,168,76,0.08);
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      padding: 0.3rem 0.8rem;
-      margin-bottom: 0.72rem;
-    }
-
-    .des-title {
-      margin: 0;
-      color: var(--gold-light);
-      font-family: 'Cardo', var(--font-serif);
-      font-size: clamp(1.9rem, 5vw, 3rem);
-      line-height: 1.08;
-    }
-
-    .des-sub {
-      margin: 0.68rem 0 0;
-      color: rgba(255,255,255,0.86);
-      font-family: 'Manrope', var(--font-sans);
-      line-height: 1.76;
-      font-size: 0.94rem;
-      max-width: 840px;
-    }
-
-    .des-quote {
-      margin-top: 0.75rem;
-      border-left: 3px solid rgba(201,168,76,0.5);
-      background: rgba(201,168,76,0.08);
-      border-radius: 0 10px 10px 0;
-      padding: 0.74rem 0.84rem;
-      font-family: 'Cardo', var(--font-serif);
-      color: rgba(255,255,255,0.88);
-      line-height: 1.7;
-      font-style: italic;
-      white-space: pre-line;
-    }
-
-    .des-quote cite {
-      display: block;
-      margin-top: 0.35rem;
-      color: var(--gold);
-      font-style: normal;
-      font-size: 0.76rem;
-      opacity: 0.85;
-    }
-
-    .des-grid {
-      margin-top: 0.95rem;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.9rem;
-    }
-
-    .des-card {
-      border: 1px solid rgba(201,168,76,0.2);
-      border-radius: 16px;
-      background: rgba(13, 20, 38, 0.82);
-      padding: 0.95rem;
-    }
-
-    .des-card h2 {
-      margin: 0 0 0.5rem;
-      color: var(--gold-light);
-      font-family: 'Cardo', var(--font-serif);
-      font-size: 1.2rem;
-    }
-
-    .des-card p,
-    .des-card li {
-      margin: 0;
-      color: rgba(255,255,255,0.84);
-      font-family: 'Manrope', var(--font-sans);
-      font-size: 0.88rem;
-      line-height: 1.72;
-    }
-
-    .des-list {
-      margin: 0;
-      padding-left: 1rem;
-      display: grid;
-      gap: 0.45rem;
-    }
-
-    .des-prayer {
-      margin-top: 0.8rem;
-      white-space: pre-line;
-      background: rgba(201,168,76,0.08);
-      border: 1px solid rgba(201,168,76,0.24);
-      border-radius: 12px;
-      padding: 0.95rem 0.9rem;
-      color: rgba(255,255,255,0.9);
-      font-family: 'Cardo', var(--font-serif);
-      font-size: 0.94rem;
-      line-height: 1.85;
-    }
-
-    .des-lectio {
-      margin-top: 0.7rem;
-      white-space: pre-line;
-      background: rgba(127,192,226,0.1);
-      border: 1px solid rgba(127,192,226,0.28);
-      border-radius: 10px;
-      padding: 0.78rem 0.82rem;
-      color: rgba(255,255,255,0.88);
-      font-family: 'Cardo', var(--font-serif);
-      font-size: 0.9rem;
-      line-height: 1.78;
-    }
-
-    details.des-collapse {
-      margin-top: 0.7rem;
-      border: 1px solid rgba(127,192,226,0.28);
-      border-radius: 10px;
-      background: rgba(127,192,226,0.1);
-      overflow: hidden;
-    }
-
-    details.des-collapse summary {
-      cursor: pointer;
-      color: #b9ddf6;
-      font-family: 'Manrope', var(--font-sans);
-      font-size: 0.83rem;
-      padding: 0.62rem 0.78rem;
-      user-select: none;
-      list-style: none;
-    }
-
-    details.des-collapse summary::-webkit-details-marker { display: none; }
-    details.des-collapse summary::before { content: '▸ '; }
-    details.des-collapse[open] summary::before { content: '▾ '; }
-
-    .des-collapse-body {
-      white-space: pre-line;
-      color: rgba(255,255,255,0.88);
-      font-family: 'Cardo', var(--font-serif);
-      font-size: 0.9rem;
-      line-height: 1.78;
-      padding: 0 0.82rem 0.78rem;
-    }
-
-    .des-icons {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0.7rem;
-      margin-top: 0.85rem;
-    }
-
-    .des-icon-card {
-      border: 1px solid rgba(201,168,76,0.2);
-      border-radius: 12px;
-      background: rgba(255,255,255,0.03);
-      padding: 0.65rem;
-      text-align: center;
-    }
-
-    .des-icon-card img {
-      width: 100%;
-      max-width: 150px;
-      aspect-ratio: 2 / 3;
-      object-fit: contain;
-      display: block;
-      margin: 0 auto 0.45rem;
-      background: rgba(7,10,20,0.56);
-      border-radius: 10px;
-    }
-
-    .des-icon-card h3 {
-      margin: 0;
-      color: var(--gold-light);
-      font-family: 'Cardo', var(--font-serif);
-      font-size: 0.95rem;
-    }
-
-    .des-note {
-      margin-top: 0.75rem;
-      border: 1px solid rgba(127,192,226,0.28);
-      background: rgba(127,192,226,0.1);
-      border-radius: 10px;
-      padding: 0.72rem 0.82rem;
-      color: rgba(255,255,255,0.86);
-      font-size: 0.84rem;
-      line-height: 1.66;
-      font-family: 'Manrope', var(--font-sans);
-    }
-
-    .des-help-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.75rem;
-      margin-top: 0.75rem;
-    }
-
-    .des-help-card {
-      border: 1px solid rgba(201,168,76,0.2);
-      border-radius: 12px;
-      background: rgba(255,255,255,0.03);
-      padding: 0.75rem;
-    }
-
-    .des-help-card h3 {
-      margin: 0 0 0.4rem;
-      color: var(--gold-light);
-      font-family: 'Cardo', var(--font-serif);
-      font-size: 1rem;
-    }
-
-    .des-help-card p,
-    .des-help-card li {
-      color: rgba(255,255,255,0.84);
-      font-family: 'Manrope', var(--font-sans);
-      font-size: 0.86rem;
-      line-height: 1.68;
-    }
-
-    .des-help-list {
-      margin: 0;
-      padding-left: 1rem;
-      display: grid;
-      gap: 0.35rem;
-    }
-
-    .des-link-line {
-      margin-top: 0.75rem;
-      color: rgba(255,255,255,0.86);
-      font-family: 'Manrope', var(--font-sans);
-      font-size: 0.86rem;
-      line-height: 1.7;
-    }
-
-    .des-link-line a {
-      color: var(--gold-light);
-      text-decoration: underline;
-      text-underline-offset: 2px;
-    }
-
-    .des-footer {
-      margin-top: 1rem;
-      text-align: center;
-      color: rgba(255,255,255,0.66);
-      font-size: 0.8rem;
-      font-family: 'Manrope', var(--font-sans);
-    }
-
-    @media (max-width: 860px) {
-      .des-grid { grid-template-columns: 1fr; }
-      .des-help-grid { grid-template-columns: 1fr; }
-    }
-
-    @media (max-width: 560px) {
-      .des-wrap { width: min(980px, 100% - 1rem); }
-      .des-icons { grid-template-columns: 1fr; }
-      .des-hero { border-radius: 16px; }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <script>if ('serviceWorker' in navigator) { window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js')); }</script>
 </head>
-<body class="des-page">
+<body class="desierto33-page">
+
+  <!-- HEADER -->
   <header class="site-header">
     <div class="header-inner">
-      <a href="/" class="site-logo back-link">
+      <a href="/desierto/" class="site-logo back-link">
         <span class="cross">✝</span>
-        <span class="logo-text">The Universal Prayer</span>
+        <span class="logo-text" data-lang="es">Silencio y Escucha</span>
+        <span class="logo-text" data-lang="en" style="display:none">Silence &amp; Listening</span>
       </a>
-      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
-        <span id="langLabel">EN</span>
-      </button>
-      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="header-controls">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language"><span id="langLabel">EN</span></button>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </header>
 
-  <main class="des-wrap">
-    <section class="des-hero">
-      <a class="des-back" href="/" data-lang="es">← Inicio</a>
-      <a class="des-back" href="/" data-lang="en" style="display:none">← Home</a>
-
-      <div class="des-badge" data-lang="es">Retiro de 2 días · Silencio y escucha</div>
-      <div class="des-badge" data-lang="en" style="display:none">2-day retreat · Silence and listening</div>
-
-      <h1 class="des-title" data-lang="es">Habla, Señor, que tu siervo escucha</h1>
-      <h1 class="des-title" data-lang="en" style="display:none">Speak, Lord, for your servant is listening</h1>
-
-      <p class="des-sub" data-lang="es">Antes los monjes iban al desierto para callar el ruido y escuchar a Dios. Este camino traduce ese espíritu para hoy: dos días de silencio interior, adoración eucarística y cobertura en la Preciosísima Sangre de Jesús.</p>
-      <p class="des-sub" data-lang="en" style="display:none">In former times, monks went to the desert to silence noise and listen to God. This path brings that spirit to today: two days of inner silence, Eucharistic adoration, and covering in the Precious Blood of Jesus.</p>
-
-      <p class="des-link-line" data-lang="es"><strong>Nuevo:</strong> si quieres un proceso más largo, abre <a href="/desierto/33dias/">33 días en el desierto (silencio, escucha y discernimiento)</a>.</p>
-      <p class="des-link-line" data-lang="en" style="display:none"><strong>New:</strong> if you want a longer process, open <a href="/desierto/33dias/">33 days in the desert (silence, listening, and discernment)</a>.</p>
-
-      <blockquote class="des-quote" data-lang="es">Habla, Señor, que tu siervo escucha.
-<cite>— 1 Samuel 3, 10</cite></blockquote>
-      <blockquote class="des-quote" data-lang="en" style="display:none">Speak, Lord, for your servant is listening.
-<cite>— 1 Samuel 3:10</cite></blockquote>
-    </section>
-
-    <section class="des-card" style="margin-top:0.95rem;">
-      <h2 data-lang="es">Si esto te está costando mucho: guía real de silencio y escucha</h2>
-      <h2 data-lang="en" style="display:none">If this feels very hard: practical guide to silence and listening</h2>
-
-      <p data-lang="es">Es normal que cueste. A muchos nos cuesta al inicio. El silencio cristiano no es “vaciar la mente” ni sentir algo especial; es <strong>quedarte delante de Jesús</strong> con verdad, aunque haya ruido interior.</p>
-      <p data-lang="en" style="display:none">It is normal for this to be difficult at first. Christian silence is not “emptying your mind” or forcing a feeling; it is <strong>remaining before Jesus</strong> in truth, even with inner noise.</p>
-
-      <div class="des-help-grid">
-        <article class="des-help-card">
-          <h3 data-lang="es">Qué hacer cuando no puedes callar por dentro</h3>
-          <h3 data-lang="en" style="display:none">What to do when your mind will not quiet down</h3>
-          <ol class="des-help-list" data-lang="es">
-            <li><strong>Nombra el ruido:</strong> “Señor, tengo ansiedad / enojo / cansancio”.</li>
-            <li><strong>Respira 4 veces lento</strong> y repite: “Jesús, aquí estoy”.</li>
-            <li><strong>Mira una sola frase bíblica</strong> (1 Sam 3,10 o Jn 6,55).</li>
-            <li><strong>Guarda 2 minutos reales</strong> sin analizar, solo presencia.</li>
-            <li><strong>Cierra con una decisión pequeña:</strong> una obediencia concreta hoy.</li>
-          </ol>
-          <ol class="des-help-list" data-lang="en" style="display:none">
-            <li><strong>Name the noise:</strong> “Lord, I feel anxiety / anger / fatigue.”</li>
-            <li><strong>Breathe slowly 4 times</strong> and repeat: “Jesus, here I am.”</li>
-            <li><strong>Hold one Bible line</strong> (1 Sam 3:10 or Jn 6:55).</li>
-            <li><strong>Keep 2 real minutes</strong> without overthinking, only presence.</li>
-            <li><strong>Close with one small decision:</strong> one concrete obedience today.</li>
-          </ol>
-        </article>
-
-        <article class="des-help-card">
-          <h3 data-lang="es">Cómo discernir si estás escuchando a Dios</h3>
-          <h3 data-lang="en" style="display:none">How to discern if you are hearing God</h3>
-          <ul class="des-help-list" data-lang="es">
-            <li>La voz de Dios <strong>no humilla ni desespera</strong>; corrige con verdad y misericordia.</li>
-            <li>Te mueve a <strong>obediencia concreta</strong>, no a curiosidad espiritual.</li>
-            <li>Te lleva a más <strong>paz, confesión, caridad y orden</strong>.</li>
-            <li>No contradice el Evangelio ni la vida sacramental.</li>
-          </ul>
-          <ul class="des-help-list" data-lang="en" style="display:none">
-            <li>God's voice does <strong>not humiliate or crush hope</strong>; it corrects in truth and mercy.</li>
-            <li>It moves you toward <strong>concrete obedience</strong>, not spiritual curiosity.</li>
-            <li>It leads to deeper <strong>peace, confession, charity, and order</strong>.</li>
-            <li>It never contradicts the Gospel or sacramental life.</li>
-          </ul>
-        </article>
+  <!-- HERO -->
+  <section class="a33-hero">
+    <div class="a33-hero-inner">
+      <img id="des33Hero" src="/assets/images/desierto-33-hero.svg" alt="" aria-hidden="true" loading="eager" decoding="async" style="width:min(360px,92%);border-radius:16px;margin-bottom:1rem;display:block;margin-left:auto;margin-right:auto;" />
+      <span class="a33-hero-badge" data-lang="es">✦ Recorrido Espiritual</span>
+      <span class="a33-hero-badge" data-lang="en" style="display:none">✦ Spiritual Journey</span>
+      <h1 class="a33-hero-title" data-lang="es">33 Días en el Desierto<br><em>Silencio, Escucha y Discernimiento</em></h1>
+      <h1 class="a33-hero-title" data-lang="en" style="display:none">33 Days in the Desert<br><em>Silence, Listening &amp; Discernment</em></h1>
+      <p class="a33-hero-sub" data-lang="es">No se aprende a escuchar a Dios en dos días. Este recorrido te acompaña durante 33 días con un tema diferente cada jornada: reflexión, salmo, oración y un acto concreto.</p>
+      <p class="a33-hero-sub" data-lang="en" style="display:none">You cannot learn to hear God in two days. This journey accompanies you for 33 days, one theme per day: reflection, psalm, prayer, and a concrete act.</p>
+      <!-- Progress ring -->
+      <div class="a33-hero-progress-wrap">
+        <svg class="a33-progress-ring" viewBox="0 0 120 120">
+          <defs>
+            <linearGradient id="a33RingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#e8c97a"/>
+              <stop offset="100%" stop-color="#c9a84c"/>
+            </linearGradient>
+          </defs>
+          <circle cx="60" cy="60" r="52" class="a33-ring-track"/>
+          <circle cx="60" cy="60" r="52" class="a33-ring-fill" id="a33RingFill"/>
+        </svg>
+        <div class="a33-progress-inner">
+          <span class="a33-progress-num" id="a33DoneCount">0</span>
+          <span class="a33-progress-label" data-lang="es">de 33</span>
+          <span class="a33-progress-label" data-lang="en" style="display:none">of 33</span>
+        </div>
       </div>
+      <div class="a33-bar-wrap"><div class="a33-bar-fill" id="a33BarFill"></div></div>
+      <p class="a33-bar-label" id="a33BarLabel" data-lang="es">0 días completados</p>
+    </div>
+  </section>
 
-      <div class="des-prayer" data-lang="es"><strong>Protocolo de 12 minutos (cuando estás bloqueado):</strong>
-2 min: "Señor, aquí está mi ruido" (dilo sin maquillaje).
-4 min: repetir "Habla, Señor, que tu siervo escucha".
-3 min: leer despacio Jn 6,55 y quedarte en silencio.
-3 min: escribir una sola obediencia para hoy.
+  <!-- RESET -->
+  <div class="a33-toolbar">
+    <button class="a33-reset-btn" id="a33ResetBtn"   data-lang="es">↺ Reiniciar recorrido</button>
+    <button class="a33-reset-btn" id="a33ResetBtnEn" data-lang="en" style="display:none">↺ Reset journey</button>
+  </div>
 
-No busques sentir mucho; busca ser fiel.</div>
+  <!-- DAYS LIST -->
+  <main class="a33-list" id="a33List"></main>
 
-      <div class="des-prayer" data-lang="en" style="display:none"><strong>12-minute protocol (when blocked):</strong>
-2 min: "Lord, this is my inner noise" (say it honestly).
-4 min: repeat "Speak, Lord, for your servant is listening."
-3 min: read Jn 6:55 slowly and remain in silence.
-3 min: write one concrete act of obedience for today.
+  <!-- COMPLETION BANNER -->
+  <div class="a33-complete-banner" id="a33CompleteBanner" style="display:none">
+    <span data-lang="es">🕊 Completaste los 33 días. Que el Señor confirme en tu vida lo que has recibido en el desierto.</span>
+    <span data-lang="en" style="display:none">🕊 You completed all 33 days. May the Lord confirm in your life what you received in the desert.</span>
+  </div>
 
-Do not seek intense feelings; seek faithfulness.</div>
+  <!-- DAY MODAL -->
+  <div class="a33-modal-overlay" id="a33ModalOverlay" aria-modal="true" role="dialog" style="display:none">
+    <div class="a33-modal" id="a33Modal">
+      <button class="a33-modal-close" id="a33ModalClose" aria-label="Cerrar">✕</button>
+      <div class="a33-modal-scroll">
 
-      <p class="des-link-line" data-lang="es">Si quieres profundizar este tema paso a paso, sigue la ruta completa de <strong>33 días en el desierto</strong>: <a href="/desierto/33dias/">abrir 33 días en el desierto</a>.</p>
-      <p class="des-link-line" data-lang="en" style="display:none">If you want to go deeper into this topic step by step, follow the full <strong>33 days in the desert</strong> route: <a href="/desierto/33dias/">open 33 days in the desert</a>.</p>
-    </section>
+        <div class="a33-modal-header">
+          <span class="a33-modal-daynum" id="mdDayNum"></span>
+          <h2 class="a33-modal-title" id="mdTitle"></h2>
+        </div>
 
-    <section class="des-grid">
-      <article class="des-card">
-        <h2 data-lang="es">Día 1: Callar para adorar</h2>
-        <h2 data-lang="en" style="display:none">Day 1: Be still to adore</h2>
+        <div class="a33-modal-icon" id="mdIcon"></div>
 
-        <ol class="des-list" data-lang="es">
-          <li><strong>60 min de desierto digital:</strong> sin redes, sin noticias, sin música de fondo.</li>
-          <li><strong>15 min ante la Eucaristía</strong> (capilla o en casa, mirando al Sagrario en el corazón).</li>
-          <li><strong>Oración única:</strong> repetir despacio “Jesús Eucaristía, enséñame a escucharte”.</li>
-          <li><strong>Escritura breve:</strong> anota una palabra, un llamado o una corrección que recibas.</li>
-        </ol>
+        <!-- Scripture verse -->
+        <blockquote class="a33-modal-verse" id="mdVerse"></blockquote>
 
-        <ol class="des-list" data-lang="en" style="display:none">
-          <li><strong>60 min digital desert:</strong> no social media, no news, no background noise.</li>
-          <li><strong>15 min before the Eucharist</strong> (chapel or at home with tabernacle focus in your heart).</li>
-          <li><strong>Single prayer:</strong> repeat slowly “Jesus in the Eucharist, teach me to listen.”</li>
-          <li><strong>Short writing:</strong> note one word, one call, or one correction you receive.</li>
-        </ol>
+        <!-- Reflection -->
+        <div class="a33-modal-section-label" data-lang="es">Reflexión</div>
+        <div class="a33-modal-section-label" data-lang="en" style="display:none">Reflection</div>
+        <div class="a33-modal-reflection" id="mdReflection"></div>
 
-        <blockquote class="des-quote" data-lang="es">Quédense conmigo y velen.
-<cite>— Mateo 26, 38</cite></blockquote>
-        <blockquote class="des-quote" data-lang="en" style="display:none">Remain here and keep watch with me.
-<cite>— Matthew 26:38</cite></blockquote>
-
-        <details class="des-collapse" data-lang="es">
-          <summary>Oración breve para repetir (Día 1)</summary>
-          <div class="des-collapse-body">"Jesús Eucaristía, enséñame a escucharte.
-Calla en mí lo que no viene de Ti.
-Hazme fiel en lo pequeño y dócil a tu voz.
-Amén."</div>
+        <!-- Psalm — COLLAPSIBLE -->
+        <details class="a33-details" id="mdPsalmDetails">
+          <summary class="a33-details-summary">
+            <span data-lang="es">📖 Salmo del Día</span>
+            <span data-lang="en" style="display:none">📖 Psalm of the Day</span>
+          </summary>
+          <div class="a33-modal-psalm" id="mdPsalm"></div>
         </details>
 
-        <details class="des-collapse" data-lang="en" style="display:none">
-          <summary>Short repeated prayer (Day 1)</summary>
-          <div class="des-collapse-body">"Jesus in the Eucharist, teach me to listen.
-Silence in me what does not come from You.
-Make me faithful in small things and docile to Your voice.
-Amen."</div>
-        </details>
-      </article>
-
-      <article class="des-card">
-        <h2 data-lang="es">Día 2: Escuchar y obedecer</h2>
-        <h2 data-lang="en" style="display:none">Day 2: Listen and obey</h2>
-
-        <ol class="des-list" data-lang="es">
-          <li><strong>Al amanecer:</strong> “Señor, hoy sí quiero obedecerte”.</li>
-          <li><strong>Lectio breve:</strong> Juan 6, 51-58 (Pan de Vida) en silencio reverente.</li>
-          <li><strong>Preciosísima Sangre:</strong> pide purificación de memoria, afectos y decisiones.</li>
-          <li><strong>Acto concreto:</strong> una obediencia práctica hoy (perdonar, reparar, cortar pecado).</li>
-        </ol>
-
-        <ol class="des-list" data-lang="en" style="display:none">
-          <li><strong>At dawn:</strong> “Lord, today I truly want to obey You.”</li>
-          <li><strong>Short lectio:</strong> John 6:51-58 (Bread of Life) in reverent silence.</li>
-          <li><strong>Precious Blood:</strong> ask purification of memory, affections, and decisions.</li>
-          <li><strong>Concrete act:</strong> one practical obedience today (forgive, repair, cut sin).</li>
-        </ol>
-
-        <blockquote class="des-quote" data-lang="es">Mi carne es verdadera comida y mi sangre es verdadera bebida.
-<cite>— Juan 6, 55</cite></blockquote>
-        <blockquote class="des-quote" data-lang="en" style="display:none">My flesh is true food and my blood is true drink.
-<cite>— John 6:55</cite></blockquote>
-
-        <details class="des-collapse" data-lang="es">
-          <summary>Lectio breve (Juan 6, 51-58)</summary>
-          <div class="des-collapse-body">"Yo soy el pan vivo bajado del cielo. El que coma de este pan vivirá para siempre.
-Y el pan que yo daré es mi carne para la vida del mundo.
-
-El que come mi carne y bebe mi sangre tiene vida eterna,
-y yo lo resucitaré en el último día.
-Porque mi carne es verdadera comida
-y mi sangre es verdadera bebida.
-
-El que come mi carne y bebe mi sangre
-permanece en mí y yo en él.
-Como el Padre que vive me envió y yo vivo por el Padre,
-así también el que me come vivirá por mí.
-
-Este es el pan bajado del cielo:
-no como el que comieron los padres y murieron;
-el que coma este pan vivirá para siempre."</div>
+        <!-- Prayer — COLLAPSIBLE -->
+        <details class="a33-details" id="mdPrayerDetails">
+          <summary class="a33-details-summary">
+            <span data-lang="es">🙏 Oración del Día</span>
+            <span data-lang="en" style="display:none">🙏 Prayer of the Day</span>
+          </summary>
+          <div class="a33-modal-prayer" id="mdPrayer"></div>
         </details>
 
-        <details class="des-collapse" data-lang="en" style="display:none">
-          <summary>Short lectio (John 6:51-58)</summary>
-          <div class="des-collapse-body">"I am the living bread that came down from heaven.
-Whoever eats this bread will live forever.
-This bread is my flesh, which I will give for the life of the world.
+        <!-- Act of the day -->
+        <div class="a33-act-box" id="mdActBox">
+          <span class="a33-act-label" data-lang="es">🌿 Acto del Día</span>
+          <span class="a33-act-label" data-lang="en" style="display:none">🌿 Act of the Day</span>
+          <p class="a33-act-text" id="mdAct"></p>
+        </div>
 
-Whoever eats my flesh and drinks my blood has eternal life,
-and I will raise them up at the last day.
-For my flesh is real food and my blood is real drink.
+        <!-- Done checkbox -->
+        <label class="a33-done-label">
+          <input type="checkbox" id="mdDoneCheck" />
+          <span data-lang="es">Marcar este día como completado</span>
+          <span data-lang="en" style="display:none">Mark this day as completed</span>
+        </label>
 
-Whoever eats my flesh and drinks my blood remains in me, and I in them.
-Just as the living Father sent me and I live because of the Father,
-so the one who feeds on me will live because of me.
+        <!-- TTS -->
+        <div class="a33-tts-row">
+          <button class="a33-tts-btn" id="mdTtsBtn" type="button">
+            <span data-lang="es">🔊 Escuchar</span>
+            <span data-lang="en" style="display:none">🔊 Listen</span>
+          </button>
+          <button class="a33-tts-btn" id="mdTtsStop" type="button" style="display:none">
+            <span data-lang="es">⏹ Detener</span>
+            <span data-lang="en" style="display:none">⏹ Stop</span>
+          </button>
+        </div>
 
-This is the bread that came down from heaven.
-Your ancestors ate manna and died,
-but whoever feeds on this bread will live forever."</div>
-        </details>
+      </div><!-- /.a33-modal-scroll -->
+    </div>
+  </div>
 
-        <details class="des-collapse" data-lang="es">
-          <summary>Oración de obediencia (Día 2)</summary>
-          <div class="des-collapse-body">"Señor, hoy sí quiero obedecerte.
-Purifica mi memoria y mis decisiones con tu Sangre Preciosa.
-Dame valentía para hacer tu voluntad,
-aunque me cueste.
-Amén."</div>
-        </details>
+  <!-- Footer -->
+  <footer class="a33-footer">
+    <a href="/" class="a33-footer-link" data-lang="es">← Inicio</a>
+    <a href="/" class="a33-footer-link" data-lang="en" style="display:none">← Home</a>
+    <a href="/intercesor/" class="a33-footer-link" data-lang="es">Intercesores</a>
+    <a href="/intercesor/" class="a33-footer-link" data-lang="en" style="display:none">Intercessors</a>
+  </footer>
 
-        <details class="des-collapse" data-lang="en" style="display:none">
-          <summary>Obedience prayer (Day 2)</summary>
-          <div class="des-collapse-body">"Lord, today I truly want to obey You.
-Purify my memory and decisions with Your Precious Blood.
-Give me courage to do Your will,
-even when it costs me.
-Amen."</div>
-        </details>
-      </article>
-    </section>
-
-    <section class="des-card" style="margin-top:0.95rem;">
-      <h2 data-lang="es">Oración central: Eucaristía y Preciosísima Sangre</h2>
-      <h2 data-lang="en" style="display:none">Central prayer: Eucharist and Precious Blood</h2>
-
-      <div class="des-prayer" data-lang="es">Señor Jesús Eucaristía,
-quiero salir del ruido y entrar en tu silencio.
-Habla, Señor, que tu siervo escucha.
-
-Lava mi mente, mi memoria y mis decisiones
-con tu Preciosísima Sangre.
-Corta toda voz extraña,
-toda confusión y toda dureza del corazón.
-
-Dame oído de discípulo,
-corazón humilde
-y obediencia concreta.
-
-Que en estos dos días
-yo no busque emociones,
-sino tu verdad.
-No busque control,
-sino tu voluntad.
-No busque huir,
-sino permanecer contigo.
-
-Jesús Sacramentado,
-quédate en mí.
-Preciosísima Sangre de Cristo,
-cúbreme, purifícame y guárdame.
-Amén.</div>
-
-      <div class="des-prayer" data-lang="en" style="display:none">Lord Jesus in the Eucharist,
-I want to leave noise behind and enter Your silence.
-Speak, Lord, for Your servant is listening.
-
-Wash my mind, my memory, and my decisions
-with Your Precious Blood.
-Cut off every strange voice,
-every confusion, and every hardness of heart.
-
-Grant me a disciple's ear,
-a humble heart,
-and concrete obedience.
-
-In these two days,
-let me not seek emotions,
-but Your truth.
-Let me not seek control,
-but Your will.
-Let me not seek escape,
-but abiding with You.
-
-Jesus in the Blessed Sacrament,
-remain in me.
-Precious Blood of Christ,
-cover me, purify me, and guard me.
-Amen.</div>
-
-      <div class="des-icons">
-        <article class="des-icon-card">
-          <img src="/assets/images/adoracion-hero.svg" alt="Adoración Eucarística" />
-          <h3 data-lang="es">Adoración Eucarística</h3>
-          <h3 data-lang="en" style="display:none">Eucharistic Adoration</h3>
-        </article>
-        <article class="des-icon-card">
-          <img src="/assets/images/preciosisimasangre.svg" alt="Preciosísima Sangre de Jesús" />
-          <h3 data-lang="es">Preciosísima Sangre</h3>
-          <h3 data-lang="en" style="display:none">Precious Blood</h3>
-        </article>
-      </div>
-
-      <p class="des-note" data-lang="es">Nota práctica: si no puedes ir a una capilla, hazlo en casa en postura de reverencia, con Biblia abierta, celular en modo avión y una vela encendida. Lo clave es el silencio real y la obediencia posterior.</p>
-      <p class="des-note" data-lang="en" style="display:none">Practical note: if you cannot go to a chapel, do it at home in a reverent posture, with an open Bible, phone on airplane mode, and a candle lit. The key is real silence and the obedience that follows.</p>
-    </section>
-
-    <p class="des-footer" data-lang="es">Si el silencio te lleva a más paz, verdad, confesión y caridad concreta, vas por camino bueno.</p>
-    <p class="des-footer" data-lang="en" style="display:none">If silence leads you to deeper peace, truth, confession, and concrete charity, you are on a good path.</p>
-  </main>
+  <style>
+    /* Collapsible details for psalm / prayer */
+    .a33-details {
+      margin: 1rem 0;
+      border: 1px solid rgba(201,168,76,0.25);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .a33-details-summary {
+      list-style: none;
+      padding: 0.75rem 1.1rem;
+      cursor: pointer;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 0.95rem;
+      color: var(--gold, #c9a84c);
+      background: rgba(201,168,76,0.07);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .a33-details-summary::-webkit-details-marker { display: none; }
+    .a33-details-summary::after { content: '▸'; margin-left: auto; transition: transform .25s; }
+    .a33-details[open] .a33-details-summary::after { transform: rotate(90deg); }
+    .a33-modal-psalm {
+      padding: 1rem 1.1rem;
+      background: rgba(0,0,0,0.18);
+      font-style: italic;
+      color: rgba(255,255,255,0.78);
+      font-size: 0.9rem;
+      line-height: 1.7;
+      white-space: pre-line;
+    }
+    .a33-complete-banner {
+      text-align: center;
+      padding: 1.2rem 1rem;
+      margin: 1rem auto;
+      max-width: 640px;
+      background: rgba(201,168,76,0.12);
+      border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 12px;
+      color: var(--gold, #c9a84c);
+      font-family: Georgia, serif;
+      font-size: 1rem;
+    }
+  </style>
 
   <script>
   (function () {
     'use strict';
 
-    var LANG_KEY = 'tup_lang';
-    var lang = localStorage.getItem(LANG_KEY) || 'es';
+    const TOTAL       = 33;
+    const STORAGE_KEY = 'desierto33_done';
+    const LANG_KEY    = 'tup_lang';
+    const IS_FILE_PROTOCOL = window.location.protocol === 'file:';
+    const PATH_MARKER = '/desierto/33dias/';
+    const markerIndex = window.location.pathname.indexOf(PATH_MARKER);
+    const SITE_ROOT = IS_FILE_PROTOCOL && markerIndex > -1
+      ? window.location.pathname.slice(0, markerIndex)
+      : '';
+    const DATA_BASE   = IS_FILE_PROTOCOL ? './' : '/desierto/33dias/';
+    const RING_R      = 52;
+    const RING_C      = 2 * Math.PI * RING_R;
 
-    function applyLang(nextLang) {
-      lang = nextLang;
-      localStorage.setItem(LANG_KEY, lang);
-      document.documentElement.lang = lang === 'en' ? 'en' : 'es';
-      var label = document.getElementById('langLabel');
-      if (label) label.textContent = lang === 'en' ? 'ES' : 'EN';
-      document.querySelectorAll('[data-lang]').forEach(function (node) {
-        node.style.display = node.getAttribute('data-lang') === lang ? '' : 'none';
-      });
-      window.dispatchEvent(new CustomEvent('tup:langchange', { detail: lang }));
+    let lang       = localStorage.getItem(LANG_KEY) || 'es';
+    let doneDays   = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
+    let currentDay = null;
+    let ttsSpeaking= false;
+    let DIAS_33    = {};
+
+    const $list         = document.getElementById('a33List');
+    const $doneCount    = document.getElementById('a33DoneCount');
+    const $barFill      = document.getElementById('a33BarFill');
+    const $barLabel     = document.getElementById('a33BarLabel');
+    const $ringFill     = document.getElementById('a33RingFill');
+    const $overlay      = document.getElementById('a33ModalOverlay');
+    const $modalClose   = document.getElementById('a33ModalClose');
+    const $mdDayNum     = document.getElementById('mdDayNum');
+    const $mdTitle      = document.getElementById('mdTitle');
+    const $mdIcon       = document.getElementById('mdIcon');
+    const $mdVerse      = document.getElementById('mdVerse');
+    const $mdReflection = document.getElementById('mdReflection');
+    const $mdPsalm      = document.getElementById('mdPsalm');
+    const $mdPrayer     = document.getElementById('mdPrayer');
+    const $mdAct        = document.getElementById('mdAct');
+    const $mdDoneCheck  = document.getElementById('mdDoneCheck');
+    const $mdTtsBtn     = document.getElementById('mdTtsBtn');
+    const $mdTtsStop    = document.getElementById('mdTtsStop');
+    const $banner       = document.getElementById('a33CompleteBanner');
+    const $heroImg      = document.getElementById('des33Hero');
+
+    function resolveAssetPath(path) {
+      if (!path) return '';
+      if (/^(https?:)?\/\//i.test(path)) return path;
+      if (path.startsWith('/')) {
+        if (IS_FILE_PROTOCOL && SITE_ROOT) return SITE_ROOT + path;
+        return path;
+      }
+      return path;
     }
 
-    document.getElementById('langToggle').addEventListener('click', function () {
+    if ($heroImg) {
+      $heroImg.src = resolveAssetPath('/assets/images/desierto-33-hero.svg');
+    }
+
+    /* ── Language ── */
+    function applyLang (l) {
+      lang = l;
+      localStorage.setItem(LANG_KEY, l);
+      document.documentElement.lang = l === 'en' ? 'en' : 'es';
+      document.getElementById('langLabel').textContent = l === 'en' ? 'ES' : 'EN';
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.dataset.lang === l ? '' : 'none';
+      });
+      renderList();
+      updateProgress();
+      if (currentDay) populateModal(currentDay);
+    }
+    document.getElementById('langToggle').addEventListener('click', () => {
       applyLang(lang === 'es' ? 'en' : 'es');
     });
 
+    /* ── Progress ── */
+    function updateProgress () {
+      const n = doneDays.size;
+      $doneCount.textContent = n;
+      const pct = n / TOTAL;
+      $barFill.style.width = (pct * 100).toFixed(1) + '%';
+      $barLabel.textContent = lang === 'en'
+        ? n + ' day' + (n !== 1 ? 's' : '') + ' completed'
+        : n + ' día' + (n !== 1 ? 's' : '') + ' completado' + (n !== 1 ? 's' : '');
+      $ringFill.style.strokeDashoffset = (RING_C * (1 - pct)).toFixed(2);
+      $banner.style.display = n >= TOTAL ? '' : 'none';
+    }
+
+    /* ── List render ── */
+    function renderList () {
+      $list.innerHTML = '';
+      for (let i = 1; i <= TOTAL; i++) {
+        const data  = DIAS_33[i] || null;
+        const done  = doneDays.has(i);
+        const avail = data !== null;
+
+        const card = document.createElement('button');
+        card.className = 'a33-card' +
+          (done   ? ' a33-card--done' : '') +
+          (!avail ? ' a33-card--soon' : '');
+        card.disabled = !avail;
+        card.dataset.day = i;
+
+        const numBadge = document.createElement('span');
+        numBadge.className = 'a33-card-num';
+        numBadge.textContent = String(i).padStart(2, '0');
+
+        const status = document.createElement('span');
+        status.className = 'a33-card-status';
+        status.textContent = done ? '✓' : (!avail ? '…' : '○');
+
+        const titleEl = document.createElement('span');
+        titleEl.className = 'a33-card-title';
+        titleEl.textContent = avail
+          ? (data.theme[lang] || data.theme.es)
+          : (lang === 'en' ? 'Coming soon' : 'Próximamente');
+
+        if (avail && data.svg) {
+          const iconWrap = document.createElement('span');
+          iconWrap.className = 'a33-card-icon';
+          const img = document.createElement('img');
+          img.src = resolveAssetPath(data.svg);
+          img.alt = '';
+          img.width = 48;
+          img.height = 48;
+          iconWrap.appendChild(img);
+          card.appendChild(iconWrap);
+        }
+
+        card.appendChild(numBadge);
+        card.appendChild(titleEl);
+        card.appendChild(status);
+
+        if (avail) card.addEventListener('click', () => openModal(data));
+        $list.appendChild(card);
+      }
+    }
+
+    /* ── Modal ── */
+    function populateModal (day) {
+      const l = lang;
+      $mdDayNum.textContent = (l === 'en' ? 'Day ' : 'Día ') + day.n;
+      $mdTitle.textContent  = day.theme[l] || day.theme.es;
+      $mdIcon.innerHTML     = day.svg ? `<img src="${resolveAssetPath(day.svg)}" alt="" width="110" height="110" />` : '';
+
+      const v = day.verse;
+      $mdVerse.innerHTML = `<span class="a33-verse-text">${v[l] || v.es}</span><cite class="a33-verse-ref">${v.ref}</cite>`;
+
+      const rArr = day.reflection[l] || day.reflection.es;
+      $mdReflection.innerHTML = rArr.map(p => `<p>${p}</p>`).join('');
+
+      // Psalm (collapsible)
+      if (day.psalm) {
+        document.getElementById('mdPsalmDetails').style.display = '';
+        $mdPsalm.innerHTML = `<p>${day.psalm[l] || day.psalm.es}</p><cite style="display:block;margin-top:.4rem;font-size:.82rem;opacity:.7">${day.psalm.ref || ''}</cite>`;
+      } else {
+        document.getElementById('mdPsalmDetails').style.display = 'none';
+      }
+
+      $mdPrayer.innerHTML = `<p>${day.prayer[l] || day.prayer.es}</p>`;
+      $mdAct.textContent  = day.act[l] || day.act.es;
+      $mdDoneCheck.checked = doneDays.has(day.n);
+
+      $overlay.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.dataset.lang === l ? '' : 'none';
+      });
+    }
+
+    function openModal (day) {
+      currentDay = day;
+      populateModal(day);
+      $overlay.style.display = '';
+      document.body.style.overflow = 'hidden';
+      document.querySelector('.a33-modal-scroll').scrollTop = 0;
+      // Close collapsibles by default for clean reading
+      document.querySelectorAll('.a33-details').forEach(d => d.removeAttribute('open'));
+    }
+
+    function closeModal () {
+      ttsStop();
+      $overlay.style.display = 'none';
+      document.body.style.overflow = '';
+      currentDay = null;
+    }
+
+    $modalClose.addEventListener('click', closeModal);
+    $overlay.addEventListener('click', e => { if (e.target === $overlay) closeModal(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+    /* ── Done checkbox ── */
+    $mdDoneCheck.addEventListener('change', () => {
+      if (!currentDay) return;
+      const n = currentDay.n;
+      $mdDoneCheck.checked ? doneDays.add(n) : doneDays.delete(n);
+      localStorage.setItem(STORAGE_KEY, JSON.stringify([...doneDays]));
+      updateProgress();
+      renderList();
+    });
+
+    /* ── Reset ── */
+    ['a33ResetBtn','a33ResetBtnEn'].forEach(id => {
+      document.getElementById(id)?.addEventListener('click', () => {
+        const msg = lang === 'en'
+          ? 'Reset all 33 days? Your progress will be lost.'
+          : '¿Reiniciar los 33 días? Se perderá tu progreso.';
+        if (!confirm(msg)) return;
+        doneDays.clear();
+        localStorage.removeItem(STORAGE_KEY);
+        updateProgress();
+        renderList();
+      });
+    });
+
+    /* ── TTS ── */
+    function ttsStop () {
+      if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+      ttsSpeaking = false;
+      $mdTtsBtn.style.opacity = '1';
+      $mdTtsStop.style.display = 'none';
+    }
+
+    $mdTtsBtn.addEventListener('click', () => {
+      if (!currentDay || !('speechSynthesis' in window)) return;
+      if (ttsSpeaking) { ttsStop(); return; }
+      window.speechSynthesis.cancel();
+      const l = lang;
+      const rArr = currentDay.reflection[l] || currentDay.reflection.es;
+      const text = [
+        currentDay.theme[l] || currentDay.theme.es,
+        currentDay.verse[l]  || currentDay.verse.es,
+        ...rArr,
+        currentDay.prayer[l] || currentDay.prayer.es,
+        currentDay.act[l]    || currentDay.act.es
+      ].join('. ');
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = l === 'en' ? 'en-US' : 'es-ES';
+      u.rate = 0.92;
+      u.onend = () => ttsStop();
+      ttsSpeaking = true;
+      $mdTtsBtn.style.opacity = '0.5';
+      $mdTtsStop.style.display = '';
+      window.speechSynthesis.speak(u);
+    });
+    $mdTtsStop.addEventListener('click', ttsStop);
+
+    /* ── Load all 33 days in parallel ── */
+    async function loadAllDays () {
+      const promises = [];
+      for (let i = 1; i <= TOTAL; i++) {
+        promises.push(
+          fetch(DATA_BASE + 'dia-' + String(i).padStart(2,'0') + '.json')
+            .then(r => r.ok ? r.json() : null)
+            .then(data => { if (data) DIAS_33[data.n] = data; })
+            .catch(() => {})
+        );
+      }
+      await Promise.allSettled(promises);
+      renderList();
+      updateProgress();
+    }
+
+    /* ── Init ── */
     applyLang(lang);
+    updateProgress();
+
+    // Init ring
+    $ringFill.style.strokeDasharray  = RING_C.toFixed(2);
+    $ringFill.style.strokeDashoffset = RING_C.toFixed(2);
+
+    loadAllDays();
   })();
   </script>
-  <script src="../assets/js/menu.js"></script>
 </body>
 </html>
