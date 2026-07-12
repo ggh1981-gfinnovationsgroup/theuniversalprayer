@@ -991,6 +991,7 @@ function buildIntercessorUrl(subdomain) {
 function renderQuickNav() {
   const nav = document.getElementById('quickNav');
   if (!nav) return;
+  const hideByDefault = !!document.getElementById('quickNavSearch');
 
   const inner = document.createElement('div');
   inner.className = 'quick-nav-inner';
@@ -1005,6 +1006,7 @@ function renderQuickNav() {
   for (const m of sortedNav) {
     const item = document.createElement('a');
     item.className = 'quick-nav-item';
+    if (hideByDefault) item.style.display = 'none';
     if (m.id === _todayMeta.id) item.classList.add('today-saint');
     item.href = buildIntercessorUrl(m.subdomain);
     if (m.color) item.style.setProperty('--item-color', m.color);
