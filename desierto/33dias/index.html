@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <script>if ('serviceWorker' in navigator) { window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js')); }</script>
 </head>
-<body class="adoracion33-page">
+<body class="desierto33-page">
 
   <!-- HEADER -->
   <header class="site-header">
@@ -39,7 +39,7 @@
   <!-- HERO -->
   <section class="a33-hero">
     <div class="a33-hero-inner">
-      <img src="/assets/images/desierto-33-hero.svg" alt="" aria-hidden="true" loading="eager" decoding="async" style="width:min(360px,92%);border-radius:16px;margin-bottom:1rem;display:block;margin-left:auto;margin-right:auto;" />
+      <img id="des33Hero" src="/assets/images/desierto-33-hero.svg" alt="" aria-hidden="true" loading="eager" decoding="async" style="width:min(360px,92%);border-radius:16px;margin-bottom:1rem;display:block;margin-left:auto;margin-right:auto;" />
       <span class="a33-hero-badge" data-lang="es">✦ Recorrido Espiritual</span>
       <span class="a33-hero-badge" data-lang="en" style="display:none">✦ Spiritual Journey</span>
       <h1 class="a33-hero-title" data-lang="es">33 Días en el Desierto<br><em>Silencio, Escucha y Discernimiento</em></h1>
@@ -215,7 +215,13 @@
     const TOTAL       = 33;
     const STORAGE_KEY = 'desierto33_done';
     const LANG_KEY    = 'tup_lang';
-    const DATA_BASE   = '/desierto/33dias/';
+    const IS_FILE_PROTOCOL = window.location.protocol === 'file:';
+    const PATH_MARKER = '/desierto/33dias/';
+    const markerIndex = window.location.pathname.indexOf(PATH_MARKER);
+    const SITE_ROOT = IS_FILE_PROTOCOL && markerIndex > -1
+      ? window.location.pathname.slice(0, markerIndex)
+      : '';
+    const DATA_BASE   = IS_FILE_PROTOCOL ? './' : '/desierto/33dias/';
     const RING_R      = 52;
     const RING_C      = 2 * Math.PI * RING_R;
 
@@ -244,6 +250,21 @@
     const $mdTtsBtn     = document.getElementById('mdTtsBtn');
     const $mdTtsStop    = document.getElementById('mdTtsStop');
     const $banner       = document.getElementById('a33CompleteBanner');
+    const $heroImg      = document.getElementById('des33Hero');
+
+    function resolveAssetPath(path) {
+      if (!path) return '';
+      if (/^(https?:)?\/\//i.test(path)) return path;
+      if (path.startsWith('/')) {
+        if (IS_FILE_PROTOCOL && SITE_ROOT) return SITE_ROOT + path;
+        return path;
+      }
+      return path;
+    }
+
+    if ($heroImg) {
+      $heroImg.src = resolveAssetPath('/assets/images/desierto-33-hero.svg');
+    }
 
     /* ── Language ── */
     function applyLang (l) {
@@ -308,7 +329,7 @@
           const iconWrap = document.createElement('span');
           iconWrap.className = 'a33-card-icon';
           const img = document.createElement('img');
-          img.src = data.svg;
+          img.src = resolveAssetPath(data.svg);
           img.alt = '';
           img.width = 48;
           img.height = 48;
@@ -330,7 +351,7 @@
       const l = lang;
       $mdDayNum.textContent = (l === 'en' ? 'Day ' : 'Día ') + day.n;
       $mdTitle.textContent  = day.theme[l] || day.theme.es;
-      $mdIcon.innerHTML     = day.svg ? `<img src="${day.svg}" alt="" width="110" height="110" />` : '';
+      $mdIcon.innerHTML     = day.svg ? `<img src="${resolveAssetPath(day.svg)}" alt="" width="110" height="110" />` : '';
 
       const v = day.verse;
       $mdVerse.innerHTML = `<span class="a33-verse-text">${v[l] || v.es}</span><cite class="a33-verse-ref">${v.ref}</cite>`;
