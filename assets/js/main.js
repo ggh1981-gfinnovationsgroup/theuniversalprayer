@@ -80,7 +80,7 @@ const i18n = {
     universal_prayer_title:  'La Oración Universal y Definitiva',
     universal_prayer_dedication: 'Para toda persona que la rece — solo, en pareja, en familia o en grupo',
     menu_title:              'Intercesores',
-    search_placeholder:      'Busca por nombre del santo/intercesor, motivo o situación (mínimo 3 letras)...',
+    search_placeholder:      'Busca por nombre del santo/intercesor, motivo o situación...',
   },
 };
 
