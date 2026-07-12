@@ -41,6 +41,8 @@ const i18n = {
     go_home:            'Go Home',
     image_zoom:         'Expand image',
     image_zoom_close:   'Close image',
+    image_share:        'Share image',
+    image_share_copied: 'Link copied',
     footer_text:             'A free Catholic devotional resource. No ads. No tracking.',
     universal_prayer_title:  'The Universal and Definitive Prayer',
     universal_prayer_dedication: 'For every person who prays it — alone, as a couple, as a family or in a group',
@@ -72,6 +74,8 @@ const i18n = {
     go_home:            'Ir al inicio',
     image_zoom:         'Ampliar imagen',
     image_zoom_close:   'Cerrar imagen',
+    image_share:        'Compartir imagen',
+    image_share_copied: 'Enlace copiado',
     footer_text:             'Un recurso devocional católico gratuito. Sin anuncios. Sin rastreo.',
     universal_prayer_title:  'La Oración Universal y Definitiva',
     universal_prayer_dedication: 'Para toda persona que la rece — solo, en pareja, en familia o en grupo',
@@ -1039,14 +1043,60 @@ function openIntercessorImageModal() {
   const modal = document.getElementById('intercessorImageModal');
   const modalImg = document.getElementById('intercessorImageModalImg');
   const heroImg = document.getElementById('intercessorImg');
+  const shareBtn = document.getElementById('intercessorImageModalShare');
   if (!modal || !modalImg || !heroImg || !heroImg.src) return;
 
   modalImg.src = heroImg.src;
   modalImg.alt = heroImg.alt || '';
+  if (shareBtn) shareBtn.textContent = '↗';
   modal.style.display = 'flex';
   modal.classList.add('is-open');
   modal.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
+}
+
+async function shareIntercessorImage() {
+  const modal = document.getElementById('intercessorImageModal');
+  const modalImg = document.getElementById('intercessorImageModalImg');
+  const shareBtn = document.getElementById('intercessorImageModalShare');
+  const heroImg = document.getElementById('intercessorImg');
+  const intercessorName = document.getElementById('intercessorName');
+  if (!modal || !modalImg || !heroImg) return;
+
+  const title = intercessorName?.textContent || heroImg.alt || 'The Universal Prayer';
+  const pageUrl = window.location.href;
+  const imageUrl = modalImg.src || heroImg.src;
+  const text = `${title}\n${pageUrl}\n${imageUrl}`;
+
+  try {
+    if (navigator.share) {
+      await navigator.share({ title, text, url: pageUrl });
+      return;
+    }
+
+    const copyText = `${title}\n${pageUrl}\n${imageUrl}`;
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(copyText);
+    } else {
+      const ta = document.createElement('textarea');
+      ta.value = copyText;
+      ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+    }
+
+    if (shareBtn) {
+      const previous = shareBtn.textContent;
+      shareBtn.textContent = i18n[currentLang].image_share_copied;
+      setTimeout(() => { shareBtn.textContent = previous || '↗'; }, 1400);
+    }
+  } catch {
+    // Ignore cancelled share sheets and copy failures.
+  }
 }
 
 function closeIntercessorImageModal() {
@@ -1062,13 +1112,15 @@ function initIntercessorImageZoom() {
   const imgEl = document.getElementById('intercessorImg');
   const modal = document.getElementById('intercessorImageModal');
   const closeBtn = document.getElementById('intercessorImageModalClose');
-  if (!imgEl || !modal || !closeBtn) return;
+  const shareBtn = document.getElementById('intercessorImageModalShare');
+  if (!imgEl || !modal || !closeBtn || !shareBtn) return;
 
   imgEl.classList.add('is-zoomable');
   imgEl.setAttribute('role', 'button');
   imgEl.setAttribute('tabindex', '0');
   imgEl.setAttribute('aria-label', i18n[currentLang].image_zoom);
   closeBtn.setAttribute('aria-label', i18n[currentLang].image_zoom_close);
+  shareBtn.setAttribute('aria-label', i18n[currentLang].image_share);
 
   if (imgEl.dataset.zoomWired === '1') return;
   imgEl.dataset.zoomWired = '1';
@@ -1081,6 +1133,7 @@ function initIntercessorImageZoom() {
     }
   });
 
+  shareBtn.addEventListener('click', shareIntercessorImage);
   closeBtn.addEventListener('click', closeIntercessorImageModal);
   modal.addEventListener('click', event => {
     if (event.target === modal) closeIntercessorImageModal();

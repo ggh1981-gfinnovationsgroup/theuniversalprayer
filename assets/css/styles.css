@@ -555,6 +555,14 @@ body {
   justify-content: center;
   padding: 1.25rem;
 }
+.intercessor-image-modal-actions {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 1;
+}
 .intercessor-image-modal.is-open {
   display: flex;
 }
@@ -566,9 +574,6 @@ body {
   border-radius: 10px;
 }
 .intercessor-image-modal-close {
-  position: absolute;
-  top: 0.8rem;
-  right: 0.8rem;
   width: 40px;
   height: 40px;
   border: 1px solid rgba(232, 201, 122, 0.45);
@@ -576,6 +581,16 @@ body {
   background: rgba(10, 13, 20, 0.8);
   color: var(--gold-light);
   font-size: 1.1rem;
+  cursor: pointer;
+}
+.intercessor-image-modal-share {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(232, 201, 122, 0.45);
+  border-radius: 999px;
+  background: rgba(10, 13, 20, 0.8);
+  color: var(--gold-light);
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -1943,6 +1958,51 @@ body {
   font-size: 1.1rem;
   color: var(--gold);
   margin: 0 0 1.25rem;
+}
+
+/* ── PRIVATE PAGES IMAGE MODAL ───────────────────── */
+.adoracion-card-icon.is-zoomable {
+  cursor: zoom-in;
+}
+.private-image-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  background: rgba(5, 8, 14, 0.92);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+.private-image-modal.is-open {
+  display: flex;
+}
+.private-image-modal-img {
+  width: min(96vw, 1100px);
+  height: min(90vh, 900px);
+  object-fit: contain;
+  object-position: center;
+  border-radius: 10px;
+}
+.private-image-modal-close,
+.private-image-modal-share {
+  position: absolute;
+  top: 0.8rem;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(232, 201, 122, 0.45);
+  border-radius: 999px;
+  background: rgba(10, 13, 20, 0.8);
+  color: var(--gold-light);
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+.private-image-modal-close {
+  right: 0.8rem;
+}
+.private-image-modal-share {
+  right: 3.95rem;
+  font-size: 0.95rem;
 }
 /* Steps */
 .ios-step {

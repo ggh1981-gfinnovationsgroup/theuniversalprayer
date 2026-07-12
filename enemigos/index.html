@@ -186,6 +186,54 @@
       text-align: center;
       margin-top: 2rem;
     }
+    .ene-intercessors-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.9rem;
+      margin-top: 0.25rem;
+    }
+    .ene-intercessor-link {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      text-decoration: none;
+      color: inherit;
+      background: rgba(201,168,76,0.06);
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 12px;
+      padding: 0.75rem;
+      transition: border-color var(--transition), background var(--transition);
+    }
+    .ene-intercessor-link:hover {
+      background: rgba(201,168,76,0.1);
+      border-color: rgba(201,168,76,0.38);
+    }
+    .ene-intercessor-link img {
+      width: 46px;
+      height: 46px;
+      object-fit: contain;
+      border-radius: 8px;
+      background: rgba(10,13,20,0.45);
+      border: 1px solid rgba(201,168,76,0.2);
+      padding: 0.22rem;
+      flex-shrink: 0;
+    }
+    .ene-intercessor-copy {
+      min-width: 0;
+    }
+    .ene-intercessor-name {
+      margin: 0;
+      color: var(--gold-light);
+      font-family: var(--font-serif);
+      font-size: 0.95rem;
+      line-height: 1.2;
+    }
+    .ene-intercessor-meta {
+      margin: 0.2rem 0 0;
+      color: var(--white-dim);
+      font-size: 0.78rem;
+      line-height: 1.4;
+    }
     .ene-home-link {
       color: var(--gold);
       text-decoration: none;
@@ -197,6 +245,9 @@
         grid-template-columns: 1fr;
       }
       .ene-grid {
+        grid-template-columns: 1fr;
+      }
+      .ene-intercessors-grid {
         grid-template-columns: 1fr;
       }
     }
@@ -553,6 +604,73 @@ And do not let me go from Your mercy. Amen.</div>
         <li>Father, bring justice and guard my heart.</li>
         <li>Holy Spirit, teach me to forgive with truth.</li>
       </ul>
+    </section>
+
+    <section class="ene-section">
+      <h2 class="ene-section-title" data-lang="es">Intercesores recomendados para esta lucha</h2>
+      <h2 class="ene-section-title" data-lang="en" style="display:none">Recommended intercessors for this battle</h2>
+
+      <div class="ene-intercessors-grid">
+        <a class="ene-intercessor-link" href="/intercesor/?intercesor=sanmiguel">
+          <img src="/assets/images/sanmiguel.svg" alt="San Miguel Arcángel" loading="lazy" decoding="async" />
+          <div class="ene-intercessor-copy">
+            <p class="ene-intercessor-name" data-lang="es">San Miguel Arcángel</p>
+            <p class="ene-intercessor-name" data-lang="en" style="display:none">Saint Michael the Archangel</p>
+            <p class="ene-intercessor-meta" data-lang="es">Protección y defensa espiritual</p>
+            <p class="ene-intercessor-meta" data-lang="en" style="display:none">Protection and spiritual defense</p>
+          </div>
+        </a>
+
+        <a class="ene-intercessor-link" href="/intercesor/?intercesor=sanbenito">
+          <img src="/assets/images/sanbenito.svg" alt="San Benito" loading="lazy" decoding="async" />
+          <div class="ene-intercessor-copy">
+            <p class="ene-intercessor-name" data-lang="es">San Benito</p>
+            <p class="ene-intercessor-name" data-lang="en" style="display:none">Saint Benedict</p>
+            <p class="ene-intercessor-meta" data-lang="es">Liberación de ataques y engaños</p>
+            <p class="ene-intercessor-meta" data-lang="en" style="display:none">Deliverance from attacks and deception</p>
+          </div>
+        </a>
+
+        <a class="ene-intercessor-link" href="/intercesor/?intercesor=misericordia">
+          <img src="/assets/images/misericordia.svg" alt="Divina Misericordia" loading="lazy" decoding="async" />
+          <div class="ene-intercessor-copy">
+            <p class="ene-intercessor-name" data-lang="es">Divina Misericordia</p>
+            <p class="ene-intercessor-name" data-lang="en" style="display:none">Divine Mercy</p>
+            <p class="ene-intercessor-meta" data-lang="es">Sanar el odio y perdonar con verdad</p>
+            <p class="ene-intercessor-meta" data-lang="en" style="display:none">Healing hatred and forgiving in truth</p>
+          </div>
+        </a>
+
+        <a class="ene-intercessor-link" href="/intercesor/?intercesor=santaclara">
+          <img src="/assets/images/santaclara.svg" alt="Santa Clara" loading="lazy" decoding="async" />
+          <div class="ene-intercessor-copy">
+            <p class="ene-intercessor-name" data-lang="es">Santa Clara</p>
+            <p class="ene-intercessor-name" data-lang="en" style="display:none">Saint Clare</p>
+            <p class="ene-intercessor-meta" data-lang="es">Defensa de la casa y de la fe</p>
+            <p class="ene-intercessor-meta" data-lang="en" style="display:none">Defense of home and faith</p>
+          </div>
+        </a>
+
+        <a class="ene-intercessor-link" href="/intercesor/?intercesor=sanoliverplunkett">
+          <img src="/assets/images/sanoliverplunkett.svg" alt="San Oliver Plunkett" loading="lazy" decoding="async" />
+          <div class="ene-intercessor-copy">
+            <p class="ene-intercessor-name" data-lang="es">San Oliver Plunkett</p>
+            <p class="ene-intercessor-name" data-lang="en" style="display:none">Saint Oliver Plunkett</p>
+            <p class="ene-intercessor-meta" data-lang="es">Perdonar a los enemigos sin ceder la verdad</p>
+            <p class="ene-intercessor-meta" data-lang="en" style="display:none">Forgiving enemies without surrendering truth</p>
+          </div>
+        </a>
+
+        <a class="ene-intercessor-link" href="/intercesor/?intercesor=reydavid">
+          <img src="/assets/images/reydavid.svg" alt="Rey David" loading="lazy" decoding="async" />
+          <div class="ene-intercessor-copy">
+            <p class="ene-intercessor-name" data-lang="es">Rey David</p>
+            <p class="ene-intercessor-name" data-lang="en" style="display:none">King David</p>
+            <p class="ene-intercessor-meta" data-lang="es">Confiar en Dios en medio de persecución</p>
+            <p class="ene-intercessor-meta" data-lang="en" style="display:none">Trusting God amid persecution</p>
+          </div>
+        </a>
+      </div>
     </section>
 
     <div class="ene-footer-links">
