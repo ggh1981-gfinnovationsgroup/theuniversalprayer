@@ -7,6 +7,13 @@
 
 const APP_VERSION = 'v2026.07.08-2';
 
+function withAssetVersion(url) {
+  if (!url) return url;
+  if (/^https?:\/\//i.test(url) || /^data:/i.test(url)) return url;
+  const sep = url.includes('?') ? '&' : '?';
+  return `${url}${sep}v=${encodeURIComponent(APP_VERSION)}`;
+}
+
 // ── TRANSLATIONS (UI strings) ──────────────────────
 const i18n = {
   en: {
@@ -898,7 +905,7 @@ async function initFeaturedSecond() {
     section.innerHTML = `
       <div class="featured-mercy-inner">
         <div class="featured-second-image-wrap">
-          <img src="${data.image}" alt="${data.name.es}" class="featured-mercy-img" loading="eager"/>
+          <img src="${withAssetVersion(data.image)}" alt="${data.name.es}" class="featured-mercy-img" loading="eager"/>
         </div>
         <div class="featured-mercy-content">
           <span class="featured-second-badge" data-lang="es">✦ Devoción del Día</span>
@@ -940,7 +947,7 @@ function buildCard(data, meta) {
   }
 
   const imgHtml = data.image
-    ? `<img src="${data.image}" alt="${data.name[lang]}" loading="lazy" />`
+    ? `<img src="${withAssetVersion(data.image)}" alt="${data.name[lang]}" loading="lazy" />`
     : `<div class="card-image-placeholder">✝</div>`;
 
   const hasChaplet = data.chaplet?.available === true;
@@ -999,7 +1006,7 @@ function renderQuickNav() {
 
     const icon = document.createElement('img');
     icon.className = 'quick-nav-circle-img';
-    icon.src = `/assets/images/${m.id}.svg`;
+    icon.src = withAssetVersion(`/assets/images/${m.id}.svg`);
     icon.alt = '';
     icon.loading = 'lazy';
     icon.decoding = 'async';
@@ -1061,7 +1068,7 @@ function renderIntercessorContent(data, meta) {
   document.title = pageTitle;
 
   const baseUrl = 'https://www.theuniversalprayer.com';
-  const imgUrl  = data.image ? `${baseUrl}${data.image}` : `${baseUrl}/assets/images/misericordia.svg`;
+  const imgUrl  = data.image ? `${baseUrl}${withAssetVersion(data.image)}` : `${baseUrl}${withAssetVersion('/assets/images/misericordia.svg')}`;
   const desc    = data.prayer[lang].substring(0, 150);
   const pageUrl = `${baseUrl}/intercesor/?intercesor=${meta ? meta.subdomain : ''}`;
 
@@ -1086,7 +1093,7 @@ function renderIntercessorContent(data, meta) {
 
   const imgEl = document.getElementById('intercessorImg');
   if (imgEl && data.image) {
-    imgEl.src = data.image;
+    imgEl.src = withAssetVersion(data.image);
     imgEl.alt = data.name[lang];
   }
 
@@ -2115,7 +2122,7 @@ function renderHistoriasPage(data, meta) {
   document.title = (lang === 'es' ? 'Historia de ' : 'Story of ') + data.name[lang] + ' | The Universal Prayer';
 
   const imgEl = document.getElementById('historiasImg');
-  if (imgEl) { imgEl.src = data.image || ''; imgEl.alt = data.name[lang]; }
+  if (imgEl) { imgEl.src = withAssetVersion(data.image) || ''; imgEl.alt = data.name[lang]; }
 
   const nameEl = document.getElementById('historiasName');
   if (nameEl) nameEl.textContent = data.name[lang];
