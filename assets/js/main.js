@@ -941,12 +941,27 @@ async function initFeaturedSecond() {
   // All intercessors except the primary (misericordia)
   const candidates = INTERCESSORS.filter(i => i.id !== 'misericordia');
 
-  // Rotate by calendar day — changes each day
+  // Rotate by calendar day and gracefully skip missing/broken JSON entries.
   const dayIndex = Math.floor(Date.now() / 86400000);
-  const meta = candidates[dayIndex % candidates.length];
+  const startIndex = dayIndex % candidates.length;
 
   try {
-    const data = await loadIntercessorData(meta.id);
+    let meta = null;
+    let data = null;
+
+    for (let offset = 0; offset < candidates.length; offset++) {
+      const candidate = candidates[(startIndex + offset) % candidates.length];
+      try {
+        data = await loadIntercessorData(candidate.id);
+        meta = candidate;
+        break;
+      } catch {
+        // Continue until we find the first intercessor with a valid JSON file.
+      }
+    }
+
+    if (!meta || !data) return;
+
     const lang = currentLang;
 
     // Dynamic color theming
@@ -968,15 +983,15 @@ async function initFeaturedSecond() {
           <img src="${withAssetVersion(data.image)}" alt="${data.name.es}" class="featured-mercy-img" loading="eager"/>
         </div>
         <div class="featured-mercy-content">
-          <span class="featured-second-badge" data-lang="es">✦ Devoción del Día</span>
-          <span class="featured-second-badge" data-lang="en" style="display:none">✦ Today's Devotion</span>
+          <span class="featured-second-badge" data-lang="es">✦ Intercesor del Día</span>
+          <span class="featured-second-badge" data-lang="en" style="display:none">✦ Today's Intercessor</span>
           <h2 class="featured-second-title" data-lang="es">${data.name.es}</h2>
           <h2 class="featured-second-title" data-lang="en" style="display:none">${data.name.en}</h2>
           <p class="featured-mercy-quote" data-lang="es">✦ Fiesta: ${data.feast_day.es}</p>
           <p class="featured-mercy-quote" data-lang="en" style="display:none">✦ Feast: ${data.feast_day.en}</p>
           <p class="featured-mercy-text" data-lang="es">${descEs}</p>
           <p class="featured-mercy-text" data-lang="en" style="display:none">${descEn}</p>
-          <a href="/intercesor/?intercesor=${meta.id}" class="featured-second-btn">
+          <a href="/intercesor/?intercesor=${meta.subdomain}" class="featured-second-btn">
             <span data-lang="es">${btnEs}</span>
             <span data-lang="en" style="display:none">${btnEn}</span>
           </a>
