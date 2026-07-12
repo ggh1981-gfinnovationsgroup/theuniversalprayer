@@ -47,6 +47,7 @@
     { id: 'jovenes', href: '/jovenes/', labels: { es: 'Jóvenes en Cristo', en: 'Young in Christ' }, icon: '🔥' },
     { id: 'matrimonio', href: '/matrimonio/', labels: { es: 'Matrimonio', en: 'Marriage' }, icon: '💍' },
     { id: 'meses', href: '/meses/', labels: { es: 'Meses Devocionales', en: 'Devotional Months' }, icon: '📅' },
+    { id: 'musica', href: '/musica/', labels: { es: 'Musica', en: 'Music' }, icon: '🎵' },
     { id: 'misericordia', href: '/misericordia/', labels: { es: 'Perdón y Misericordia', en: 'Mercy & Repentance' }, icon: '🕯️' },
     { id: 'oraciones', href: '/oraciones/', labels: { es: 'Oraciones Básicas', en: 'Basic Prayers' }, icon: '📜' },
     { id: 'reconciliacion', href: '/reconciliacion/', labels: { es: 'Reconciliación', en: 'Reconciliation' }, icon: '🙏' },

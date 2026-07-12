@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Musica para Orar | The Universal Prayer</title>
+  <meta name="description" content="Musica para orar y contemplar. Secciones colapsables por cancion con video integrado." />
+  <meta name="theme-color" content="#c9a84c" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Musica para Orar" />
+  <meta property="og:description" content="Canciones para oracion y contemplacion con secciones colapsables." />
+  <meta property="og:url" content="https://www.theuniversalprayer.com/musica/" />
+  <meta property="og:image" content="https://www.theuniversalprayer.com/assets/images/social-home.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
+    }
+  </script>
+  <style>
+    .mus-hero {
+      text-align: center;
+      padding: 5rem 1.25rem 2.6rem;
+      background: radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.14) 0%, transparent 72%);
+    }
+    .mus-badge {
+      display: inline-block;
+      border: 1px solid rgba(201,168,76,0.32);
+      border-radius: 999px;
+      color: var(--gold);
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 0.34rem 0.88rem;
+      margin-bottom: 0.9rem;
+    }
+    .mus-title {
+      margin: 0;
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 6vw, 3rem);
+      color: #fff;
+      line-height: 1.14;
+    }
+    .mus-subtitle {
+      margin: 0.75rem auto 0;
+      max-width: 760px;
+      color: rgba(255,255,255,0.72);
+      font-family: var(--font-sans);
+      line-height: 1.72;
+      font-size: 0.93rem;
+    }
+    .mus-content {
+      width: min(980px, 100% - 1.5rem);
+      margin: 0 auto;
+      padding-bottom: 3.5rem;
+    }
+    .mus-section-title {
+      font-family: var(--font-serif);
+      color: var(--gold-light);
+      margin: 0 0 0.9rem;
+      font-size: 1.35rem;
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+      padding-bottom: 0.5rem;
+    }
+    .mus-track {
+      margin: 0.85rem 0;
+      border: 1px solid rgba(201,168,76,0.24);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.03);
+      overflow: hidden;
+    }
+    .mus-track summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 0.9rem 1rem;
+      background: rgba(201,168,76,0.09);
+      font-family: var(--font-serif);
+      color: var(--gold-light);
+      font-size: 1.03rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      user-select: none;
+    }
+    .mus-track summary::-webkit-details-marker { display: none; }
+    .mus-track summary::after {
+      content: '▸';
+      margin-left: auto;
+      color: var(--gold);
+      transition: transform .25s ease;
+    }
+    .mus-track[open] summary::after { transform: rotate(90deg); }
+    .mus-track-body {
+      padding: 0.95rem 1rem 1rem;
+    }
+    .mus-track-meta {
+      margin: 0 0 0.7rem;
+      color: rgba(255,255,255,0.8);
+      font-size: 0.92rem;
+      line-height: 1.66;
+    }
+    .mus-video-wrap {
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(201,168,76,0.22);
+      background: rgba(0,0,0,0.32);
+      aspect-ratio: 16 / 9;
+    }
+    .mus-video-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+    .mus-note {
+      margin-top: 0.7rem;
+      font-size: 0.82rem;
+      line-height: 1.55;
+      color: rgba(255,255,255,0.63);
+      font-family: var(--font-sans);
+    }
+    .mus-open-link {
+      display: inline-block;
+      margin-top: 0.6rem;
+      font-family: var(--font-sans);
+      font-size: 0.84rem;
+      color: var(--gold-light);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .mus-footer-links {
+      margin-top: 1.9rem;
+      text-align: center;
+    }
+    .mus-home-link {
+      color: var(--gold);
+      text-decoration: none;
+      opacity: 0.8;
+      font-family: var(--font-sans);
+      font-size: 0.86rem;
+    }
+    .mus-home-link:hover { opacity: 1; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link">
+        <span class="cross">✝</span>
+        <span class="logo-text">The Universal Prayer</span>
+      </a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span id="langLabel">EN</span>
+      </button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="mus-hero">
+    <a href="/" class="ador-back-link" data-lang="es">← Inicio</a>
+    <a href="/" class="ador-back-link" data-lang="en" style="display:none">← Home</a>
+
+    <div class="mus-badge" data-lang="es">Musica para orar</div>
+    <div class="mus-badge" data-lang="en" style="display:none">Music for prayer</div>
+
+    <h1 class="mus-title" data-lang="es">Musica</h1>
+    <h1 class="mus-title" data-lang="en" style="display:none">Music</h1>
+
+    <p class="mus-subtitle" data-lang="es">Una biblioteca de canciones para contemplacion y oracion. Cada cancion tiene su propia seccion colapsable para escuchar, meditar y orar.</p>
+    <p class="mus-subtitle" data-lang="en" style="display:none">A library of songs for contemplation and prayer. Each song has its own collapsible section to listen, meditate, and pray.</p>
+  </section>
+
+  <main class="mus-content">
+    <h2 class="mus-section-title" data-lang="es">Canciones disponibles</h2>
+    <h2 class="mus-section-title" data-lang="en" style="display:none">Available songs</h2>
+
+    <details class="mus-track" open>
+      <summary>
+        <span data-lang="es">Baba Yetu (Padre Nuestro en suajili)</span>
+        <span data-lang="en" style="display:none">Baba Yetu (Our Father in Swahili)</span>
+      </summary>
+      <div class="mus-track-body">
+        <p class="mus-track-meta" data-lang="es">"Baba Yetu" significa "Padre Nuestro" en suajili. Es una version coral muy conocida de la oracion del Padre Nuestro y una hermosa puerta de entrada para orar con musica.</p>
+        <p class="mus-track-meta" data-lang="en" style="display:none">"Baba Yetu" means "Our Father" in Swahili. It is a well-known choral version of the Lord's Prayer and a beautiful way to pray through music.</p>
+
+        <div class="mus-video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/IJiHDmyhE1A?rel=0&amp;modestbranding=1"
+            title="Baba Yetu on YouTube"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <p class="mus-note" data-lang="es">Si quieres una version especifica (video exacto), compartenos el enlace y la fijamos en esta seccion.</p>
+        <p class="mus-note" data-lang="en" style="display:none">If you want one specific version (exact video), share the link and we can pin it in this section.</p>
+        <a class="mus-open-link" data-lang="es" href="https://www.youtube.com/results?search_query=Baba+Yetu+Christopher+Tin" target="_blank" rel="noopener noreferrer">Abrir resultados en YouTube ↗</a>
+        <a class="mus-open-link" data-lang="en" style="display:none" href="https://www.youtube.com/results?search_query=Baba+Yetu+Christopher+Tin" target="_blank" rel="noopener noreferrer">Open results on YouTube ↗</a>
+      </div>
+    </details>
+
+    <div class="mus-footer-links">
+      <a href="/" class="mus-home-link" data-lang="es">← Volver al inicio</a>
+      <a href="/" class="mus-home-link" data-lang="en" style="display:none">← Back to home</a>
+    </div>
+  </main>
+
+  <script>
+  (function () {
+    'use strict';
+
+    const LANG_KEY = 'tup_lang';
+    let lang = localStorage.getItem(LANG_KEY) || 'es';
+
+    function applyLang(l) {
+      lang = l;
+      localStorage.setItem(LANG_KEY, l);
+      document.documentElement.lang = l === 'en' ? 'en' : 'es';
+      document.getElementById('langLabel').textContent = l === 'en' ? 'ES' : 'EN';
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.dataset.lang === l ? '' : 'none';
+      });
+      window.dispatchEvent(new CustomEvent('tup:langchange', { detail: l }));
+    }
+
+    document.getElementById('langToggle').addEventListener('click', () => {
+      applyLang(lang === 'es' ? 'en' : 'es');
+    });
+
+    applyLang(lang);
+  })();
+  </script>
+  <script src="/assets/js/menu.js"></script>
+
+</body>
+</html>
