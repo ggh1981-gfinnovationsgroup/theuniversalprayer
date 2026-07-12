@@ -75,6 +75,23 @@
     const pageUrl = window.location.href;
     const imageUrl = modalImg.src;
 
+    async function copyPageUrl() {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(pageUrl);
+        return;
+      }
+
+      const ta = document.createElement('textarea');
+      ta.value = pageUrl;
+      ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+    }
+
     async function getShareFile(url) {
       const response = await fetch(url, { credentials: 'same-origin' });
       const blob = await response.blob();
@@ -84,30 +101,25 @@
     }
 
     try {
-      const shareFile = await getShareFile(imageUrl);
-      if (navigator.share && (!navigator.canShare || navigator.canShare({ files: [shareFile] }))) {
-        await navigator.share({ files: [shareFile], url: pageUrl });
-        return;
+      let shared = false;
+      try {
+        const shareFile = await getShareFile(imageUrl);
+        if (navigator.share && (!navigator.canShare || navigator.canShare({ files: [shareFile] }))) {
+          await navigator.share({ files: [shareFile], url: pageUrl });
+          shared = true;
+        }
+      } catch {
+        // fall through to the page-link fallback below
       }
 
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        await navigator.clipboard.writeText(pageUrl);
-      } else {
-        const ta = document.createElement('textarea');
-        ta.value = pageUrl;
-        ta.setAttribute('readonly', '');
-        ta.style.position = 'fixed';
-        ta.style.opacity = '0';
-        document.body.appendChild(ta);
-        ta.select();
-        document.execCommand('copy');
-        document.body.removeChild(ta);
-      }
+      if (!shared) {
+        await copyPageUrl();
 
-      const labels = getLabels();
-      const previous = shareBtn.textContent;
-      shareBtn.textContent = labels.copied;
-      setTimeout(() => { shareBtn.textContent = previous || labels.share; }, 1400);
+        const labels = getLabels();
+        const previous = shareBtn.textContent;
+        shareBtn.textContent = labels.copied;
+        setTimeout(() => { shareBtn.textContent = previous || labels.share; }, 1400);
+      }
     } catch {
       // ignore cancelled share sheets and clipboard failures
     }

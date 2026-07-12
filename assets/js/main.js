@@ -1066,6 +1066,23 @@ async function shareIntercessorImage() {
   const pageUrl = window.location.href;
   const imageUrl = modalImg.src || heroImg.src;
 
+  async function copyPageUrl() {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(pageUrl);
+      return;
+    }
+
+    const ta = document.createElement('textarea');
+    ta.value = pageUrl;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+  }
+
   async function getShareFile(url) {
     const response = await fetch(url, { credentials: 'same-origin' });
     const blob = await response.blob();
@@ -1075,30 +1092,24 @@ async function shareIntercessorImage() {
   }
 
   try {
-    const shareFile = await getShareFile(imageUrl);
-    if (navigator.share && (!navigator.canShare || navigator.canShare({ files: [shareFile] }))) {
-      await navigator.share({ files: [shareFile], url: pageUrl });
-      return;
+    let shared = false;
+    try {
+      const shareFile = await getShareFile(imageUrl);
+      if (navigator.share && (!navigator.canShare || navigator.canShare({ files: [shareFile] }))) {
+        await navigator.share({ files: [shareFile], url: pageUrl });
+        shared = true;
+      }
+    } catch {
+      // fall through to the page-link fallback below
     }
 
-    if (navigator.clipboard?.writeText) {
-      await navigator.clipboard.writeText(pageUrl);
-    } else {
-      const ta = document.createElement('textarea');
-      ta.value = pageUrl;
-      ta.setAttribute('readonly', '');
-      ta.style.position = 'fixed';
-      ta.style.opacity = '0';
-      document.body.appendChild(ta);
-      ta.select();
-      document.execCommand('copy');
-      document.body.removeChild(ta);
-    }
-
-    if (shareBtn) {
-      const previous = shareBtn.textContent;
-      shareBtn.textContent = i18n[currentLang].image_share_copied;
-      setTimeout(() => { shareBtn.textContent = previous || i18n[currentLang].image_share; }, 1400);
+    if (!shared) {
+      await copyPageUrl();
+      if (shareBtn) {
+        const previous = shareBtn.textContent;
+        shareBtn.textContent = i18n[currentLang].image_share_copied;
+        setTimeout(() => { shareBtn.textContent = previous || i18n[currentLang].image_share; }, 1400);
+      }
     }
   } catch {
     // Ignore cancelled share sheets and copy failures.
