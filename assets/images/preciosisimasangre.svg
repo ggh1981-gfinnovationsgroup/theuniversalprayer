@@ -1,4 +1,4 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="400" height="560">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="400" height="560">
   <defs>
     <linearGradient id="pb-bg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#2c0606"/>
@@ -60,24 +60,7 @@
   </defs>
 
   <style>
-    @keyframes auraPulse { 0%,100%{opacity:.76} 50%{opacity:1} }
-    @keyframes sunSpin { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
-    @keyframes rayAlt1 { 0%,100%{opacity:.9} 50%{opacity:.45} }
-    @keyframes rayAlt2 { 0%,100%{opacity:.45} 50%{opacity:.9} }
-    @keyframes twinkA { 0%,100%{opacity:0;transform:scale(.5)} 50%{opacity:1;transform:scale(1.25)} }
-    @keyframes twinkB { 0%,100%{opacity:1} 50%{opacity:.12} }
-    @keyframes dropFlow { 0%,100%{transform:translateY(0px)} 50%{transform:translateY(4px)} }
-    @keyframes cupGlow { 0%,100%{opacity:.82} 50%{opacity:1} }
 
-    .aura { animation: auraPulse 4.2s ease-in-out infinite; }
-    .sun { animation: sunSpin 30s linear infinite; transform-origin: 200px 140px; }
-    .rl { animation: rayAlt1 4.5s ease-in-out infinite; }
-    .rr { animation: rayAlt2 4.5s ease-in-out infinite; }
-    .s1 { animation: twinkA 3.1s ease-in-out infinite; }
-    .s2 { animation: twinkB 3.8s ease-in-out infinite; }
-    .s3 { animation: twinkA 4.0s ease-in-out .8s infinite; }
-    .drop { animation: dropFlow 2.2s ease-in-out infinite; }
-    .cup-glow { animation: cupGlow 3.0s ease-in-out infinite; }
   </style>
 
   <rect width="400" height="560" fill="url(#pb-bg)"/>

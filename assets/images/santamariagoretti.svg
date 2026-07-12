@@ -106,19 +106,6 @@
   </defs>
 
   <style>
-    @keyframes mgPulse { 0%,100%{opacity:.8} 50%{opacity:1} }
-    @keyframes mgSpin  { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
-    @keyframes mgRayA  { 0%,100%{opacity:.86} 50%{opacity:.46} }
-    @keyframes mgRayB  { 0%,100%{opacity:.46} 50%{opacity:.86} }
-    @keyframes mgTwA   { 0%,100%{opacity:0;transform:scale(.6)} 50%{opacity:1;transform:scale(1.25)} }
-    @keyframes mgTwB   { 0%,100%{opacity:1} 50%{opacity:.1} }
-    .mg-aura { animation: mgPulse 4.2s ease-in-out infinite; }
-    .mg-sun  { animation: mgSpin 30s linear infinite; transform-origin: 200px 152px; }
-    .mg-rl   { animation: mgRayA 4.6s ease-in-out infinite; }
-    .mg-rr   { animation: mgRayB 4.6s ease-in-out infinite; }
-    .mg-s1   { animation: mgTwA 3.2s ease-in-out infinite; }
-    .mg-s2   { animation: mgTwB 3.8s ease-in-out infinite; }
-    .mg-s3   { animation: mgTwA 4.1s ease-in-out .6s infinite; }
   </style>
 
   <rect width="400" height="560" fill="url(#mg-bg)"/>

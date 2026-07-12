@@ -46,7 +46,6 @@ body {
   top: 0;
   z-index: 100;
   background: rgba(10,13,20,0.92);
-  backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
 
@@ -124,7 +123,6 @@ body {
   color: var(--gold);
   margin-bottom: 0.6rem;
   opacity: 0.80;
-  filter: drop-shadow(0 0 18px rgba(201,168,76,0.55));
   position: relative;
 }
 
@@ -605,21 +603,12 @@ body {
     radial-gradient(circle at 63% 16%, #f5e6a8 0 3.2px, transparent 3.8px),
     radial-gradient(circle at 78% 30%, #d8bd6e 0 3.4px, transparent 4px),
     radial-gradient(circle at 92% 14%, #f0d37a 0 3px, transparent 3.6px);
-  animation: confetti-fall 14s linear infinite;
 }
 
 .intercessor-notice.is-celebration .intercessor-notice-card::after {
   inset: -30% -8% auto -8%;
   height: 88%;
   opacity: 0.28;
-  filter: blur(0.4px);
-  animation-duration: 20s;
-  animation-direction: reverse;
-}
-
-@keyframes confetti-fall {
-  0% { transform: translateY(-8%) rotate(0deg); }
-  100% { transform: translateY(38%) rotate(10deg); }
 }
 
 /* ── TABS NAVIGATION ──────────────────────────────── */
@@ -868,7 +857,7 @@ body {
   letter-spacing: 0.02em;
   cursor: pointer;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.20);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, filter 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .jaculatoria-share-btn::before {
@@ -882,7 +871,6 @@ body {
   transform: translateY(-2px);
   background: linear-gradient(135deg, rgba(201, 168, 76, 0.34) 0%, rgba(30, 36, 48, 0.96) 100%);
   border-color: var(--gold);
-  filter: brightness(1.06);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.24);
 }
 
@@ -925,7 +913,6 @@ body {
   inset: 0;
   background: rgba(0,0,0,0.55);
   z-index: 200;
-  backdrop-filter: blur(2px);
 }
 .side-nav-overlay.open { display: block; }
 
@@ -1638,8 +1625,8 @@ body {
   animation: crossBreathe 3.5s ease-in-out infinite;
 }
 @keyframes crossBreathe {
-  0%, 100% { opacity: 0.80; filter: drop-shadow(0 0 18px rgba(201,168,76,0.55)); }
-  50%       { opacity: 1;    filter: drop-shadow(0 0 30px rgba(201,168,76,0.90)); }
+  0%, 100% { opacity: 0.80; }
+  50%       { opacity: 1; }
 }
 
 /* ── FAMILY INVITE SECTION ────────────────────────── */
@@ -1989,8 +1976,6 @@ body {
 }
 .ios-three-dots--highlight {
   color: #007aff;
-  text-shadow: 0 0 8px rgba(0,122,255,0.8);
-  animation: ios-pulse 1.5s ease-in-out infinite alternate;
 }
 .ios-menu-pill {
   display: inline-flex;
@@ -2005,12 +1990,7 @@ body {
   color: var(--white);
 }
 .ios-safari-share-svg--highlight {
-  filter: drop-shadow(0 0 6px rgba(0,122,255,0.7));
-  animation: ios-pulse 1.5s ease-in-out infinite alternate;
-}
-@keyframes ios-pulse {
-  from { filter: drop-shadow(0 0 4px rgba(0,122,255,0.5)); }
-  to   { filter: drop-shadow(0 0 10px rgba(0,122,255,0.9)); }
+  opacity: 0.92;
 }
 .ios-safari-share-svg {
   width: 36px;
