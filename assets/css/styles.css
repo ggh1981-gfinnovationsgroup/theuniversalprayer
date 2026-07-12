@@ -1012,6 +1012,9 @@ body {
   padding: 0.5rem 0 0.6rem;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+  overscroll-behavior-x: contain;
+  contain: layout paint;
   scrollbar-width: none;
 }
 .quick-nav::-webkit-scrollbar { display: none; }
@@ -1024,6 +1027,7 @@ body {
   padding: 0.2rem 1rem;
   width: max-content;
   margin: 0 auto;
+  contain: layout paint;
 }
 @media (min-width: 940px) {
   .quick-nav-inner {
@@ -1040,6 +1044,9 @@ body {
   text-decoration: none;
   flex-shrink: 0;
   width: 62px;
+  content-visibility: auto;
+  contain-intrinsic-size: 62px 72px;
+  contain: layout paint;
   transition: transform var(--transition);
 }
 .quick-nav-item:hover { transform: translateY(-3px); }

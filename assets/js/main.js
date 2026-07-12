@@ -320,6 +320,7 @@ function toggleFav(id) {
 let currentLang = 'en';
 let intercessorData = null;
 let currentDay = 1;
+let quickNavIconObserver = null;
 
 function normalizeText(value) {
   return (value || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -330,6 +331,20 @@ function debounce(fn, wait = 90) {
   return (...args) => {
     if (timer) clearTimeout(timer);
     timer = setTimeout(() => fn(...args), wait);
+  };
+}
+
+function rafThrottle(fn) {
+  let rafId = 0;
+  let lastArgs = null;
+  return (...args) => {
+    lastArgs = args;
+    if (rafId) return;
+    rafId = requestAnimationFrame(() => {
+      rafId = 0;
+      fn(...(lastArgs || []));
+      lastArgs = null;
+    });
   };
 }
 
@@ -844,7 +859,7 @@ async function initHomePage() {
   if (quickNavSearch) {
     quickNavSearch.placeholder = currentLang === 'es' ? 'Buscar por nombre, motivo o situación...' : 'Search by name, intention or situation...';
     quickNavSearch.addEventListener('input', markSearchTyping);
-    const runQuickNavFilter = debounce(() => {
+    const runQuickNavFilter = rafThrottle(() => {
       const q = normalize(quickNavSearch.value.trim());
       document.querySelectorAll('.quick-nav-item').forEach(item => {
         const quickBlob = item.dataset.searchNorm || normalize(`${item.dataset.name || ''} ${item.dataset.specialty || ''}`);
@@ -855,7 +870,7 @@ async function initHomePage() {
 
       if (getSecretMatches(q).length) hideAllSaintResults();
       renderSecretResult(q);
-    }, 80);
+    });
 
     quickNavSearch.addEventListener('input', runQuickNavFilter);
 
@@ -865,7 +880,7 @@ async function initHomePage() {
   if (cardsSearch) {
     cardsSearch.placeholder = currentLang === 'es' ? 'Buscar por nombre, motivo o situación...' : 'Search by name, intention or situation...';
     cardsSearch.addEventListener('input', markSearchTyping);
-    const runCardsFilter = debounce(() => {
+    const runCardsFilter = rafThrottle(() => {
       const q = normalize(cardsSearch.value.trim());
       grid.querySelectorAll('.intercessor-card').forEach(card => {
         const cardBlob = card.dataset.searchNorm || normalize(`${card.dataset.specialty || ''} ${card.textContent || ''}`);
@@ -876,7 +891,7 @@ async function initHomePage() {
 
       if (getSecretMatches(q).length) hideAllSaintResults();
       renderSecretResult(q);
-    }, 100);
+    });
 
     cardsSearch.addEventListener('input', runCardsFilter);
 
@@ -1011,6 +1026,14 @@ function buildIntercessorUrl(subdomain) {
   return `/intercesor/?intercesor=${subdomain}`;
 }
 
+function hydrateQuickNavIcon(img) {
+  if (!img) return;
+  const src = img.dataset.src;
+  if (!src) return;
+  img.src = src;
+  img.removeAttribute('data-src');
+}
+
 // ── QUICK NAV ──────────────────────────────────────
 function renderQuickNav() {
   const nav = document.getElementById('quickNav');
@@ -1039,11 +1062,20 @@ function renderQuickNav() {
 
     const icon = document.createElement('img');
     icon.className = 'quick-nav-circle-img';
-    icon.src = `/assets/images/${m.id}.svg`;
+    const iconSrc = `/assets/images/${m.id}.svg`;
+    icon.dataset.src = iconSrc;
     icon.alt = '';
     icon.loading = 'lazy';
     icon.decoding = 'async';
     icon.fetchPriority = 'low';
+    icon.width = 48;
+    icon.height = 48;
+
+    // Load first visible icons immediately; keep the rest deferred.
+    if (inner.children.length < 18) {
+      hydrateQuickNavIcon(icon);
+    }
+
     circle.appendChild(icon);
 
     const label = document.createElement('span');
@@ -1065,6 +1097,27 @@ function renderQuickNav() {
 
   nav.innerHTML = '';
   nav.appendChild(inner);
+
+  if (quickNavIconObserver) {
+    quickNavIconObserver.disconnect();
+    quickNavIconObserver = null;
+  }
+
+  if ('IntersectionObserver' in window) {
+    quickNavIconObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        hydrateQuickNavIcon(entry.target);
+        quickNavIconObserver.unobserve(entry.target);
+      });
+    }, { root: nav, rootMargin: '160px 0px', threshold: 0.01 });
+
+    inner.querySelectorAll('img.quick-nav-circle-img[data-src]').forEach(img => {
+      quickNavIconObserver.observe(img);
+    });
+  } else {
+    inner.querySelectorAll('img.quick-nav-circle-img[data-src]').forEach(hydrateQuickNavIcon);
+  }
 }
 
 // ── INTERCESSOR PAGE ───────────────────────────────
