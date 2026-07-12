@@ -787,12 +787,9 @@ async function initHomePage() {
     return query.length >= MIN_SEARCH_CHARS;
   }
 
-  function resetQuickNavResults() {
+  function hideQuickNavResults() {
     document.querySelectorAll('.quick-nav-item').forEach(item => {
-      item.style.display = '';
-    });
-    grid.querySelectorAll('.intercessor-card').forEach(card => {
-      card.style.display = '';
+      item.style.display = 'none';
     });
   }
 
@@ -808,7 +805,7 @@ async function initHomePage() {
       const q = normalize(quickNavSearch.value.trim());
 
       if (!shouldRunSearch(q)) {
-        resetQuickNavResults();
+        hideQuickNavResults();
         renderSecretResult('');
         return;
       }
@@ -823,7 +820,19 @@ async function initHomePage() {
       renderSecretResult(q);
     });
 
-    renderSecretResult(normalize(quickNavSearch.value.trim()));
+    const initialQ = normalize(quickNavSearch.value.trim());
+    if (!shouldRunSearch(initialQ)) {
+      hideQuickNavResults();
+      renderSecretResult('');
+    } else {
+      document.querySelectorAll('.quick-nav-item').forEach(item => {
+        const matchesName = normalize(item.dataset.name).includes(initialQ);
+        const matchesSpecialty = normalize(item.dataset.specialty).includes(initialQ);
+        item.style.display = (matchesName || matchesSpecialty) ? '' : 'none';
+      });
+      if (getSecretMatches(initialQ).length) hideAllSaintResults();
+      renderSecretResult(initialQ);
+    }
   }
 
   if (cardsSearch) {
