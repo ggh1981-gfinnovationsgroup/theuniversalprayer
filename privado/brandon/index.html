@@ -17,7 +17,7 @@
     .private-day-body { border-top: 1px solid rgba(201,168,76,0.2); padding: 0.75rem 0.8rem 0.8rem; }
     .private-blog-note { color: var(--white-dim); font-size: 0.82rem; margin-top: 0.3rem; }
     #mensajePrivado .adoracion-card-inner { flex-direction: column; align-items: stretch; gap: 1rem; }
-    #mensajePrivado .adoracion-card-icon { width: 100%; height: auto; max-width: 100%; aspect-ratio: 16 / 7; object-fit: cover; }
+    #mensajePrivado .adoracion-card-icon { width: 100%; height: auto; max-width: 100%; object-fit: contain; }
   </style>
 </head>
 <body>
@@ -58,13 +58,13 @@
           <div class="private-blog">
             <details class="private-day" open>
               <summary>
-                <span class="private-day-title" data-lang="es">Fortaleza y proposito</span>
-                <span class="private-day-title" data-lang="en" style="display:none">Strength and purpose</span>
+                <span class="private-day-title" data-lang="es">Fe en accion cuando todo se complica</span>
+                <span class="private-day-title" data-lang="en" style="display:none">Faith in action when everything gets hard</span>
                 <span class="private-day-date">2026-07-11</span>
               </summary>
               <div class="private-day-body">
-                <p class="adoracion-card-desc" data-lang="es">Hijo, eres fuerte, valioso y llamado a una vida con proposito. Yo te amo con todo mi corazon, pero Dios y Maria te aman aun mas. Oro para que seas un hombre de palabra, responsable y fiel a Jesus.</p>
-                <p class="adoracion-card-desc" data-lang="en" style="display:none">Son, you are strong, valuable, and called to a life of purpose. I love you with all my heart, but God and Mary love you even more. I pray that you become a man of your word, responsible and faithful to Jesus.</p>
+                <p class="adoracion-card-desc" data-lang="es">Hijo, hoy paso algo dificil: el cable de la bomba del pozo se fue al fondo y parecia imposible recuperarlo. Probe con una cana vieja y no resultaba. Ore, aprendi rapido como usar lo que tenia, y segui insistiendo. Cuando ya parecia perdido, un palo con un clavo engancho exactamente el cable correcto entre varios. Eso me recordo que la fe no es quedarse quieto: es orar y actuar con perseverancia. Hoy tambien me confese, y quiero que aprendas esto: cuando vengan tentaciones o presion, recuerda la frase de San Francisco de Sales sobre los pajaros y el nido. No controlas todo lo que llega a tu mente, pero si decides que se queda en tu corazon.</p>
+                <p class="adoracion-card-desc" data-lang="en" style="display:none">Son, something hard happened today: the pump cable in the septic tank dropped deep down and it looked impossible to recover. I tried an old fishing rod and it was not working. I prayed, quickly learned how to use what I had, and kept trying. When it looked lost, a stick with a nail hooked exactly the right cable among many. It reminded me that faith is not staying still: it is praying and acting with perseverance. I also went to confession today, and I want you to learn this: when temptations or pressure come, remember Saint Francis de Sales' quote about birds and nests. You cannot control everything that comes to your mind, but you can choose what stays in your heart.</p>
               </div>
             </details>
 
@@ -143,6 +143,53 @@
         if (window.speechSynthesis) window.speechSynthesis.cancel();
       });
       applyLang();
+    })();
+  </script>
+  <script>
+    (function () {
+      var host = document.getElementById('mensajePrivado');
+      if (!host) return;
+      var globalPlay = document.getElementById('audioPlay');
+      if (globalPlay && globalPlay.parentElement) {
+        globalPlay.parentElement.style.display = 'none';
+      }
+      function currentLang() { return localStorage.getItem('tup_lang') || 'es'; }
+      function paintLang(root) {
+        var lang = currentLang();
+        root.querySelectorAll('[data-lang]').forEach(function (el) {
+          el.style.display = el.getAttribute('data-lang') === lang ? '' : 'none';
+        });
+      }
+      host.querySelectorAll('.private-day-body').forEach(function (body) {
+        if (body.querySelector('.card-audio-controls')) return;
+        var controls = document.createElement('div');
+        controls.className = 'card-audio-controls';
+        controls.style.marginTop = '0.6rem';
+        controls.style.display = 'flex';
+        controls.style.gap = '0.45rem';
+        controls.style.flexWrap = 'wrap';
+        controls.innerHTML = '<button class="adoracion-card-btn card-audio-play" type="button"><span data-lang="es">Escuchar esta carta</span><span data-lang="en" style="display:none">Play this letter</span></button><button class="adoracion-card-btn card-audio-stop" type="button"><span data-lang="es">Detener</span><span data-lang="en" style="display:none">Stop</span></button>';
+        body.appendChild(controls);
+        paintLang(controls);
+      });
+      host.addEventListener('click', function (event) {
+        var playBtn = event.target.closest('.card-audio-play');
+        var stopBtn = event.target.closest('.card-audio-stop');
+        if (playBtn) {
+          if (!window.speechSynthesis) return;
+          window.speechSynthesis.cancel();
+          var lang = currentLang();
+          var cardBody = playBtn.closest('.private-day-body');
+          var textNode = cardBody ? cardBody.querySelector('p[data-lang="' + lang + '"]') : null;
+          var text = textNode ? textNode.textContent : '';
+          var utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = lang === 'es' ? 'es-ES' : 'en-US';
+          window.speechSynthesis.speak(utterance);
+        }
+        if (stopBtn) {
+          if (window.speechSynthesis) window.speechSynthesis.cancel();
+        }
+      });
     })();
   </script>
 </body>
