@@ -75,6 +75,39 @@
     const pageUrl = window.location.href;
     const imageUrl = modalImg.src;
 
+    async function svgBlobToPngFile(blob, filenameBase) {
+      const objectUrl = URL.createObjectURL(blob);
+      try {
+        const image = new Image();
+        image.decoding = 'async';
+        image.src = objectUrl;
+        await new Promise((resolve, reject) => {
+          image.onload = resolve;
+          image.onerror = reject;
+        });
+
+        const width = image.naturalWidth || 1024;
+        const height = image.naturalHeight || 1024;
+        const canvas = document.createElement('canvas');
+        canvas.width = width;
+        canvas.height = height;
+        const context = canvas.getContext('2d');
+        if (!context) throw new Error('Canvas unavailable');
+        context.drawImage(image, 0, 0, width, height);
+
+        const pngBlob = await new Promise((resolve, reject) => {
+          canvas.toBlob((result) => {
+            if (result) resolve(result);
+            else reject(new Error('PNG conversion failed'));
+          }, 'image/png');
+        });
+
+        return new File([pngBlob], `${filenameBase}.png`, { type: 'image/png' });
+      } finally {
+        URL.revokeObjectURL(objectUrl);
+      }
+    }
+
     async function copyPageUrl() {
       if (navigator.clipboard && navigator.clipboard.writeText) {
         await navigator.clipboard.writeText(pageUrl);
@@ -96,6 +129,10 @@
       const response = await fetch(url, { credentials: 'same-origin' });
       const blob = await response.blob();
       const mimeType = blob.type || 'image/png';
+      if (mimeType.includes('svg')) {
+        return await svgBlobToPngFile(blob, 'private-image');
+      }
+
       const extension = mimeType.includes('jpeg') ? 'jpg' : mimeType.split('/').pop() || 'png';
       return new File([blob], `private-image.${extension}`, { type: mimeType });
     }
@@ -105,7 +142,7 @@
       try {
         const shareFile = await getShareFile(imageUrl);
         if (navigator.share && (!navigator.canShare || navigator.canShare({ files: [shareFile] }))) {
-          await navigator.share({ files: [shareFile], url: pageUrl });
+          await navigator.share({ files: [shareFile], title: document.title || 'The Universal Prayer', url: pageUrl });
           shared = true;
         }
       } catch {
