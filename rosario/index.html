@@ -76,6 +76,51 @@
       margin: 1rem 0 0.4rem;
     }
 
+    .rosario-catechesis {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(201,168,76,0.08), rgba(21,26,44,0.9));
+      padding: 1rem;
+      margin: 0 0 1rem;
+    }
+
+    .rosario-catechesis-title {
+      font-family: var(--font-serif);
+      color: var(--gold-light);
+      font-size: clamp(1.05rem, 2.1vw, 1.35rem);
+      margin-bottom: 0.35rem;
+    }
+
+    .rosario-catechesis-sub {
+      color: var(--white-dim);
+      font-size: 0.92rem;
+      line-height: 1.55;
+      margin-bottom: 0.75rem;
+    }
+
+    .rosario-catechesis details {
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.03);
+      padding: 0.6rem 0.72rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .rosario-catechesis summary {
+      color: var(--gold-light);
+      font-weight: 700;
+      cursor: pointer;
+      line-height: 1.45;
+    }
+
+    .rosario-catechesis p {
+      margin: 0.55rem 0 0;
+      color: var(--white);
+      line-height: 1.7;
+      font-size: 0.95rem;
+      white-space: pre-line;
+    }
+
     .rosario-select,
     .rosario-btn {
       border: 1px solid var(--gold-dim);
@@ -802,6 +847,26 @@
       </div>
     </section>
 
+    <section class="rosario-catechesis" aria-label="Catequesis del rosario">
+      <h2 class="rosario-catechesis-title" id="rosaryCateTitle">Historia y promesas del Santo Rosario</h2>
+      <p class="rosario-catechesis-sub" id="rosaryCateSub">Una guía breve para entender de dónde viene, por qué es un regalo de Dios y qué promete esta devoción.</p>
+
+      <details>
+        <summary id="rosaryHisSummary">1) Historia del rosario</summary>
+        <p id="rosaryHisBody">La forma del rosario creció en la Iglesia como oración bíblica y contemplativa. La tradición dominicana lo difundió con fuerza y, con el tiempo, los papas lo recomendaron para sostener la fe de las familias y pedir la paz.</p>
+      </details>
+
+      <details>
+        <summary id="rosaryGiftSummary">2) El rosario como regalo de Dios a María y a la Iglesia</summary>
+        <p id="rosaryGiftBody">Dios quiso darnos a María como Madre espiritual al pie de la Cruz, y el rosario es un camino para entrar con ella en los misterios de Cristo. No reemplaza a Jesús: nos lleva más profundamente a Él por medio del corazón de su Madre.</p>
+      </details>
+
+      <details>
+        <summary id="rosaryPromiseSummary">3) Promesas y frutos del rosario</summary>
+        <p id="rosaryPromiseBody">Quien reza el rosario con fe recibe gracias de conversión, fortaleza contra la tentación y crecimiento en la caridad. La promesa central no es mágica: es que, meditando la vida de Cristo con María, Dios transforma el corazón y perseveramos mejor en su amistad.</p>
+      </details>
+    </section>
+
     <section class="rosario-experience">
       <div class="rosario-primary">
         <div class="rosario-progress" aria-hidden="true">
@@ -881,6 +946,14 @@
           eyebrow: '📿 Rosario Interactivo',
           title: 'Reza el Rosario paso a paso',
           subtitle: 'Toca cada cuenta, avanza con los botones o usa las flechas del teclado. Todo queda claro y guiado.',
+          rosaryCateTitle: 'Historia y promesas del Santo Rosario',
+          rosaryCateSub: 'Una guía breve para entender de dónde viene, por qué es un regalo de Dios y qué promete esta devoción.',
+          rosaryHisSummary: '1) Historia del rosario',
+          rosaryHisBody: 'La forma del rosario creció en la Iglesia como oración bíblica y contemplativa. La tradición dominicana lo difundió con fuerza y, con el tiempo, los papas lo recomendaron para sostener la fe de las familias y pedir la paz.',
+          rosaryGiftSummary: '2) El rosario como regalo de Dios a María y a la Iglesia',
+          rosaryGiftBody: 'Dios quiso darnos a María como Madre espiritual al pie de la Cruz, y el rosario es un camino para entrar con ella en los misterios de Cristo. No reemplaza a Jesús: nos lleva más profundamente a Él por medio del corazón de su Madre.',
+          rosaryPromiseSummary: '3) Promesas y frutos del rosario',
+          rosaryPromiseBody: 'Quien reza el rosario con fe recibe gracias de conversión, fortaleza contra la tentación y crecimiento en la caridad. La promesa central no es mágica: es que, meditando la vida de Cristo con María, Dios transforma el corazón y perseveramos mejor en su amistad.',
           reset: '↺ Reiniciar',
           prev: '← Anterior',
           next: 'Siguiente →',
@@ -947,6 +1020,14 @@
           eyebrow: '📿 Interactive Rosary',
           title: 'Pray the Rosary step by step',
           subtitle: 'Tap each bead, move with buttons, or use keyboard arrows. Clear and guided from start to finish.',
+          rosaryCateTitle: 'History and Promises of the Holy Rosary',
+          rosaryCateSub: 'A short guide to understand where it comes from, why it is God\'s gift, and what this devotion promises.',
+          rosaryHisSummary: '1) History of the Rosary',
+          rosaryHisBody: 'The Rosary gradually grew in the Church as a biblical and contemplative prayer. The Dominican tradition spread it widely, and over time the popes strongly recommended it to sustain family faith and pray for peace.',
+          rosaryGiftSummary: '2) The Rosary as God\'s gift through Mary for the Church',
+          rosaryGiftBody: 'God gave us Mary as spiritual Mother at the foot of the Cross, and the Rosary is a path to enter the mysteries of Christ with her. It does not replace Jesus: it leads us more deeply to Him through His Mother\'s heart.',
+          rosaryPromiseSummary: '3) Promises and fruits of the Rosary',
+          rosaryPromiseBody: 'Those who pray the Rosary with faith receive graces of conversion, strength against temptation, and growth in charity. The central promise is not magical: by meditating on Christ\'s life with Mary, God transforms the heart and helps us persevere in His friendship.',
           reset: '↺ Reset',
           prev: '← Previous',
           next: 'Next →',
@@ -1193,6 +1274,14 @@
       title: document.getElementById('title'),
       eyebrow: document.getElementById('eyebrow'),
       subtitle: document.getElementById('subtitle'),
+      rosaryCateTitle: document.getElementById('rosaryCateTitle'),
+      rosaryCateSub: document.getElementById('rosaryCateSub'),
+      rosaryHisSummary: document.getElementById('rosaryHisSummary'),
+      rosaryHisBody: document.getElementById('rosaryHisBody'),
+      rosaryGiftSummary: document.getElementById('rosaryGiftSummary'),
+      rosaryGiftBody: document.getElementById('rosaryGiftBody'),
+      rosaryPromiseSummary: document.getElementById('rosaryPromiseSummary'),
+      rosaryPromiseBody: document.getElementById('rosaryPromiseBody'),
       mobileCurrentTitle: document.getElementById('mobileCurrentTitle'),
       mobileCurrentStrip: document.getElementById('mobileCurrentStrip'),
       langToggle: document.getElementById('langToggle'),
@@ -1629,6 +1718,14 @@
       els.eyebrow.textContent = t.eyebrow;
       els.title.textContent = t.title;
       els.subtitle.textContent = t.subtitle;
+      if (els.rosaryCateTitle) els.rosaryCateTitle.textContent = t.rosaryCateTitle;
+      if (els.rosaryCateSub) els.rosaryCateSub.textContent = t.rosaryCateSub;
+      if (els.rosaryHisSummary) els.rosaryHisSummary.textContent = t.rosaryHisSummary;
+      if (els.rosaryHisBody) els.rosaryHisBody.textContent = t.rosaryHisBody;
+      if (els.rosaryGiftSummary) els.rosaryGiftSummary.textContent = t.rosaryGiftSummary;
+      if (els.rosaryGiftBody) els.rosaryGiftBody.textContent = t.rosaryGiftBody;
+      if (els.rosaryPromiseSummary) els.rosaryPromiseSummary.textContent = t.rosaryPromiseSummary;
+      if (els.rosaryPromiseBody) els.rosaryPromiseBody.textContent = t.rosaryPromiseBody;
       els.resetBtn.textContent = t.reset;
       els.prevBtn.textContent = t.prev;
       els.nextBtn.textContent = t.next;
