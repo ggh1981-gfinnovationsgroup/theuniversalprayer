@@ -321,18 +321,6 @@ let currentLang = 'en';
 let intercessorData = null;
 let currentDay = 1;
 
-function normalizeText(value) {
-  return (value || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-}
-
-function debounce(fn, wait = 90) {
-  let timer = null;
-  return (...args) => {
-    if (timer) clearTimeout(timer);
-    timer = setTimeout(() => fn(...args), wait);
-  };
-}
-
 // ── LANGUAGE DETECTION ─────────────────────────────
 function detectLanguage() {
   const saved = localStorage.getItem('tup_lang');
@@ -588,7 +576,6 @@ async function initHomePage() {
   initFeaturedSecond(); // fire independently, no await
 
   const favs = getFavs();
-  const favSet = new Set(favs);
   const sortedIntercessors = [...INTERCESSORS].sort((a, b) => {
     const aFav = favs.includes(a.id);
     const bFav = favs.includes(b.id);
@@ -633,9 +620,7 @@ async function initHomePage() {
   function loadAndAppendCard(meta) {
     return loadIntercessorData(meta.id)
       .then(data => {
-        const card = buildCard(data, meta, favSet);
-        const cardSearchBlob = `${data.name.es || ''} ${data.name.en || ''} ${card.dataset.specialty || ''}`;
-        card.dataset.searchNorm = normalizeText(cardSearchBlob);
+        const card = buildCard(data, meta);
         decorateCard(card);
         grid.appendChild(card);
       })
@@ -646,31 +631,10 @@ async function initHomePage() {
 
   // Load large intercessor cards only when user scrolls near this section.
   let cardsLoadStarted = false;
-  const MAX_CONCURRENT_CARD_LOADS = 4;
   function startCardsLoad() {
     if (cardsLoadStarted) return;
     cardsLoadStarted = true;
-    let cursor = 0;
-    let inFlight = 0;
-
-    const pump = () => {
-      while (inFlight < MAX_CONCURRENT_CARD_LOADS && cursor < sortedIntercessors.length) {
-        const meta = sortedIntercessors[cursor++];
-        inFlight += 1;
-        loadAndAppendCard(meta).finally(() => {
-          inFlight -= 1;
-          if (cursor < sortedIntercessors.length) {
-            if ('requestIdleCallback' in window) {
-              requestIdleCallback(pump, { timeout: 120 });
-            } else {
-              setTimeout(pump, 0);
-            }
-          }
-        });
-      }
-    };
-
-    pump();
+    sortedIntercessors.forEach(meta => { loadAndAppendCard(meta); });
   }
 
   if ('IntersectionObserver' in window) {
@@ -694,7 +658,7 @@ async function initHomePage() {
   }
 
   // Normalize removes accents so búsqueda matches busqueda, etc.
-  function normalize(s) { return normalizeText(s); }
+  function normalize(s) { return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
 
   // Search intercessor cards
   const cardsSearch = document.getElementById('cardsSearch');
@@ -812,38 +776,34 @@ async function initHomePage() {
   const quickNavSearch = document.getElementById('quickNavSearch');
   if (quickNavSearch) {
     quickNavSearch.placeholder = currentLang === 'es' ? 'Buscar por nombre, motivo o situación...' : 'Search by name, intention or situation...';
-    const runQuickNavFilter = debounce(() => {
+    quickNavSearch.addEventListener('input', () => {
       const q = normalize(quickNavSearch.value.trim());
       document.querySelectorAll('.quick-nav-item').forEach(item => {
-        const quickBlob = item.dataset.searchNorm || normalize(`${item.dataset.name || ''} ${item.dataset.specialty || ''}`);
-        if (!item.dataset.searchNorm) item.dataset.searchNorm = quickBlob;
-        item.style.display = (q === '' || quickBlob.includes(q)) ? '' : 'none';
+        const matchesName = normalize(item.dataset.name).includes(q);
+        const matchesSpecialty = normalize(item.dataset.specialty).includes(q);
+        item.style.display = (q === '' || matchesName || matchesSpecialty) ? '' : 'none';
       });
 
       if (getSecretMatches(q).length) hideAllSaintResults();
       renderSecretResult(q);
-    }, 80);
-
-    quickNavSearch.addEventListener('input', runQuickNavFilter);
+    });
 
     renderSecretResult(normalize(quickNavSearch.value.trim()));
   }
 
   if (cardsSearch) {
     cardsSearch.placeholder = currentLang === 'es' ? 'Buscar por nombre, motivo o situación...' : 'Search by name, intention or situation...';
-    const runCardsFilter = debounce(() => {
+    cardsSearch.addEventListener('input', () => {
       const q = normalize(cardsSearch.value.trim());
       grid.querySelectorAll('.intercessor-card').forEach(card => {
-        const cardBlob = card.dataset.searchNorm || normalize(`${card.dataset.specialty || ''} ${card.textContent || ''}`);
-        if (!card.dataset.searchNorm) card.dataset.searchNorm = cardBlob;
-        card.style.display = (q === '' || cardBlob.includes(q)) ? '' : 'none';
+        const matchesText      = normalize(card.textContent).includes(q);
+        const matchesSpecialty = normalize(card.dataset.specialty).includes(q);
+        card.style.display = (q === '' || matchesText || matchesSpecialty) ? '' : 'none';
       });
 
       if (getSecretMatches(q).length) hideAllSaintResults();
       renderSecretResult(q);
-    }, 100);
-
-    cardsSearch.addEventListener('input', runCardsFilter);
+    });
 
     renderSecretResult(normalize(cardsSearch.value.trim()));
   }
@@ -932,7 +892,7 @@ async function initFeaturedSecond() {
   }
 }
 
-function buildCard(data, meta, favSet) {
+function buildCard(data, meta) {
   const lang = currentLang;
   const card = document.createElement('a');
   card.className = 'intercessor-card';
@@ -945,7 +905,7 @@ function buildCard(data, meta, favSet) {
   }
 
   const imgHtml = data.image
-    ? `<img src="${data.image}" alt="${data.name[lang]}" loading="lazy" decoding="async" fetchpriority="low" />`
+    ? `<img src="${data.image}" alt="${data.name[lang]}" loading="lazy" />`
     : `<div class="card-image-placeholder">✝</div>`;
 
   const hasChaplet = data.chaplet?.available === true;
@@ -957,7 +917,7 @@ function buildCard(data, meta, favSet) {
 
   const specialty = meta.specialty ? meta.specialty[lang] : '';
 
-  const isFav = favSet ? favSet.has(meta.id) : getFavs().includes(meta.id);
+  const isFav = getFavs().includes(meta.id);
   card.innerHTML = `
     <div class="card-image-wrap">
       ${imgHtml}
@@ -1008,7 +968,6 @@ function renderQuickNav() {
     icon.alt = '';
     icon.loading = 'lazy';
     icon.decoding = 'async';
-    icon.fetchPriority = 'low';
     circle.appendChild(icon);
 
     const label = document.createElement('span');
@@ -1021,7 +980,6 @@ function renderQuickNav() {
       const extraTags = KEYWORD_MAP[m.id] || '';
       item.dataset.specialty = `${m.specialty.es || ''} ${m.specialty.en || ''} ${extraTags}`.toLowerCase();
     }
-    item.dataset.searchNorm = normalizeText(`${item.dataset.name || ''} ${item.dataset.specialty || ''}`);
 
     item.appendChild(circle);
     item.appendChild(label);
