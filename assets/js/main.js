@@ -144,7 +144,7 @@ const INTERCESSORS = [
   { id: 'sanmiguel',         subdomain: 'sanmiguel',         chaplet: true,  novena: true,  color: '#253070', short: { es: 'San Miguel',       en: 'St. Michael'      }, name: { en: 'Saint Michael the Archangel',           es: 'San Miguel Arcángel'                      }, specialty: { es: 'Protección espiritual',       en: 'Spiritual protection'        } },
   { id: 'sangabriel',        subdomain: 'sangabriel',        chaplet: true,  novena: true,  color: '#1a3a6b', short: { es: 'San Gabriel',      en: 'St. Gabriel'      }, name: { en: 'Saint Gabriel the Archangel',           es: 'San Gabriel Arcángel'                     }, specialty: { es: 'Mensajes divinos',            en: 'Divine messages'             } },
   { id: 'sanrafael',         subdomain: 'sanrafael',         chaplet: true,  novena: true,  color: '#1a5c3a', short: { es: 'San Rafael',       en: 'St. Raphael'      }, name: { en: 'Saint Raphael the Archangel',           es: 'San Rafael Arcángel'                      }, specialty: { es: 'Sanación y viajeros',         en: 'Healing & travelers'         } },
-  { id: 'angelguarda',       subdomain: 'angelguarda',       chaplet: false, novena: true,  color: '#4a4a70', short: { es: 'Ángel Custodio',   en: 'Guardian Angel'   }, name: { en: 'Guardian Angel',                        es: 'Ángel de la Guarda'                       }, specialty: { es: 'Custodia personal',           en: 'Personal guardian'           } },
+  { id: 'angelguarda',       subdomain: 'angelguarda',       chaplet: true,  novena: true,  color: '#4a4a70', short: { es: 'Ángel Custodio',   en: 'Guardian Angel'   }, name: { en: 'Guardian Angel',                        es: 'Ángel de la Guarda'                       }, specialty: { es: 'Custodia personal',           en: 'Personal guardian'           } },
   { id: 'lourdes',           subdomain: 'lourdes',           chaplet: false, novena: true,  color: '#2f5f86', short: { es: 'V. de Lourdes',   en: 'Our Lady Lourdes' }, name: { en: 'Our Lady of Lourdes',                  es: 'Nuestra Señora de Lourdes'                }, specialty: { es: 'Sanación, conversión y esperanza', en: 'Healing, conversion and hope' } },
   { id: 'divinaprovidencia', subdomain: 'divinaprovidencia', chaplet: false, novena: true,  color: '#7a5a00', short: { es: 'N.S. Providencia', en: 'Lady Providence'  }, name: { en: 'Our Lady of Divine Providence',         es: 'Nuestra Señora de la Divina Providencia'  }, specialty: { es: 'Necesidades cotidianas',      en: 'Daily needs & trust'         } },
   { id: 'santarita',         subdomain: 'santarita',         chaplet: true,  novena: true,  color: '#7a1520', short: { es: 'Santa Rita',       en: 'St. Rita'         }, name: { en: 'Saint Rita of Cascia',                  es: 'Santa Rita de Casia'                      }, specialty: { es: 'Causas imposibles',           en: 'Impossible causes'           } },
@@ -180,11 +180,11 @@ const INTERCESSORS = [
   { id: 'santaroxana',       subdomain: 'santaroxana',       chaplet: false, novena: true,  color: '#7a4800', short: { es: 'Sta. Roxana',    en: 'St. Roxana'       }, name: { en: 'Saint Roxana of Persia',                es: 'Santa Roxana de Persia'                   }, specialty: { es: 'Mártir persa, estrella brillante', en: 'Persian martyr, bright star' } },
   { id: 'santagwendolina',   subdomain: 'santagwendolina',   chaplet: false, novena: true,  color: '#1a5a3a', short: { es: 'Sta. Gwendolina', en: 'St. Gwendoline'   }, name: { en: 'Saint Gwendoline',                      es: 'Santa Gwendolina'                         }, specialty: { es: 'Mártir galesa, pureza y fe celta', en: 'Welsh martyr, Celtic faith and purity' } },
   { id: 'santanoemi',        subdomain: 'santanoemi',        chaplet: false, novena: true,  color: '#5a3800', short: { es: 'Sta. Noemí',     en: 'St. Naomi'        }, name: { en: 'Saint Naomi',                           es: 'Santa Noemí'                              }, specialty: { es: 'Matrona bíblica del Libro de Rut', en: 'Biblical matriarch from the Book of Ruth' } },
-  { id: 'sanperegrino',      subdomain: 'sanperegrino',      chaplet: false, novena: true,  color: '#8a1a3a', short: { es: 'San Peregrino',   en: 'St. Peregrine'    }, name: { en: 'Saint Peregrine Laziosi',               es: 'San Peregrino Laziosi'                    }, specialty: { es: 'Enfermos de cáncer',          en: 'Cancer patients'             } },
+  { id: 'sanperegrino',      subdomain: 'sanperegrino',      chaplet: true,  novena: true,  color: '#8a1a3a', short: { es: 'San Peregrino',   en: 'St. Peregrine'    }, name: { en: 'Saint Peregrine Laziosi',               es: 'San Peregrino Laziosi'                    }, specialty: { es: 'Enfermos de cáncer',          en: 'Cancer patients'             } },
   { id: 'sancamilo',          subdomain: 'sancamilo',          chaplet: false, novena: true,  color: '#8a0010', short: { es: 'San Camilo',      en: 'St. Camillus'     }, name: { en: 'Saint Camillus de Lellis',              es: 'San Camilo de Lelis'                      }, specialty: { es: 'Enfermos y personal sanitario', en: 'Sick & healthcare workers'   } },
   { id: 'sanblas',            subdomain: 'sanblas',            chaplet: false, novena: true,  color: '#1828a0', short: { es: 'San Blas',        en: 'St. Blaise'       }, name: { en: 'Saint Blaise of Sebaste',              es: 'San Blas de Sebaste'                      }, specialty: { es: 'Garganta y vías respiratorias', en: 'Throat & airways'            } },
   { id: 'sancharbel',         subdomain: 'sancharbel',         chaplet: false, novena: true,  color: '#1a2a5a', short: { es: 'San Charbel',     en: 'St. Charbel'      }, name: { en: 'Saint Charbel Makhlouf',               es: 'San Charbel Makhlouf'                     }, specialty: { es: 'Sanación y milagros',         en: 'Healing & miracles'          } },
-  { id: 'santaana',            subdomain: 'santaana',            chaplet: false, novena: true,  color: '#8a5a00', short: { es: 'Santa Ana',       en: 'St. Anne'         }, name: { en: 'Saint Anne',                           es: 'Santa Ana'                                }, specialty: { es: 'Infertilidad y maternidad',      en: 'Infertility & motherhood'    } },
+  { id: 'santaana',            subdomain: 'santaana',            chaplet: true,  novena: true,  color: '#8a5a00', short: { es: 'Santa Ana',       en: 'St. Anne'         }, name: { en: 'Saint Anne',                           es: 'Santa Ana'                                }, specialty: { es: 'Infertilidad y maternidad',      en: 'Infertility & motherhood'    } },
   { id: 'sanjuandedios',       subdomain: 'sanjuandedios',       chaplet: false, novena: true,  color: '#1a3a7a', short: { es: 'San Juan de Dios', en: 'St. John of God'  }, name: { en: 'Saint John of God',                    es: 'San Juan de Dios'                         }, specialty: { es: 'Corazón y hospitales',         en: 'Heart & hospitals'           } },
   { id: 'santaapolonia',       subdomain: 'santaapolonia',       chaplet: false, novena: true,  color: '#a03060', short: { es: 'Santa Apolonia',  en: 'St. Apollonia'    }, name: { en: 'Saint Apollonia of Alexandria',        es: 'Santa Apolonia de Alejandría'             }, specialty: { es: 'Dolores dentales',                en: 'Dental pain'                 } },
   { id: 'santagema',           subdomain: 'santagema',           chaplet: false, novena: true,  color: '#7a1a5a', short: { es: 'Santa Gema',      en: 'St. Gemma'        }, name: { en: 'Saint Gemma Galgani',                  es: 'Santa Gema Galgani'                       }, specialty: { es: 'Dolor crónico y espalda',       en: 'Chronic pain & back'         } },
@@ -205,19 +205,19 @@ const INTERCESSORS = [
   { id: 'santasilvia',         subdomain: 'santasilvia',         chaplet: false, novena: true,  color: '#5a3a7a', short: { es: 'Sta. Silvia',     en: 'St. Sylvia'       }, name: { en: 'Saint Sylvia of Rome',               es: 'Santa Silvia de Roma'                    }, specialty: { es: 'Madres y familias',         en: 'Mothers & families'          } },
   { id: 'santaleticia',        subdomain: 'santaleticia',        chaplet: false, novena: true,  color: '#8a2a5a', short: { es: 'Sta. Leticia',    en: 'St. Laetitia'     }, name: { en: 'Saint Laetitia (Leticia)',            es: 'Santa Leticia (Laetitia)'                }, specialty: { es: 'Alegría y fe en pruebas',   en: 'Joy & faith in trials'       } },
   { id: 'sanpedro',            subdomain: 'sanpedro',            chaplet: false, novena: true,  color: '#1a3a7a', short: { es: 'San Pedro',       en: 'St. Peter'        }, name: { en: 'Saint Peter the Apostle',            es: 'San Pedro Apóstol'                       }, specialty: { es: 'La Iglesia y el Papado',    en: 'The Church & the Papacy'     } },
-  { id: 'sanfranciscojavier',  subdomain: 'sanfranciscojavier',  chaplet: false, novena: true,  color: '#1a3a6a', short: { es: 'S. Francisco Javier', en: 'St. Francis Xavier' }, name: { en: 'Saint Francis Xavier',             es: 'San Francisco Javier'                    }, specialty: { es: 'Misiones y Asia',           en: 'Missions & Asia'             } },
+  { id: 'sanfranciscojavier',  subdomain: 'sanfranciscojavier',  chaplet: true,  novena: true,  color: '#1a3a6a', short: { es: 'S. Francisco Javier', en: 'St. Francis Xavier' }, name: { en: 'Saint Francis Xavier',             es: 'San Francisco Javier'                    }, specialty: { es: 'Misiones y Asia',           en: 'Missions & Asia'             } },
   { id: 'sancarloslwanga',     subdomain: 'sancarloslwanga',     chaplet: false, novena: true,  color: '#4a1a08', short: { es: 'S. Carlos Lwanga',  en: 'St. Charles Lwanga' }, name: { en: 'Saint Charles Lwanga',             es: 'San Carlos Lwanga'                       }, specialty: { es: 'Jóvenes y mártires de África', en: 'Youth & Martyrs of Africa'  } },
   { id: 'sanbonifacio',         subdomain: 'sanbonifacio',         chaplet: false, novena: true,  color: '#3a1060', short: { es: 'S. Bonifacio',     en: 'St. Boniface'     }, name: { en: 'Saint Boniface of Mainz',           es: 'San Bonifacio de Maguncia'               }, specialty: { es: 'Evangelización de Europa',  en: 'Evangelization of Europe'    } },
   { id: 'sanefren',             subdomain: 'sanefren',             chaplet: false, novena: true,  color: '#0a2a2a', short: { es: 'San Efrén',       en: 'St. Ephrem'       }, name: { en: 'Saint Ephrem of Syria',             es: 'San Efrén de Siria'                      }, specialty: { es: 'Poesía y liturgia oriental', en: 'Poetry & Eastern Liturgy'    } },
   { id: 'sanbarnabes',          subdomain: 'sanbarnabes',          chaplet: false, novena: true,  color: '#142808', short: { es: 'San Bernabé',    en: 'St. Barnabas'     }, name: { en: 'Saint Barnabas the Apostle',        es: 'San Bernabé Apóstol'                     }, specialty: { es: 'Aliento y segundas oportunidades', en: 'Encouragement & Second Chances' } },
   { id: 'sanluisgonzaga',       subdomain: 'sanluisgonzaga',       chaplet: false, novena: true,  color: '#08081c', short: { es: 'S. Luis Gonzaga', en: 'St. Aloysius'     }, name: { en: 'Saint Aloysius Gonzaga',            es: 'San Luis Gonzaga'                        }, specialty: { es: 'Juventud y pureza',         en: 'Youth & Purity'              } },
   { id: 'santomamoro',          subdomain: 'santomamoro',          chaplet: false, novena: true,  color: '#0a0808', short: { es: 'S. Tomás Moro',   en: 'St. Thomas More'  }, name: { en: 'Saint Thomas More',                es: 'San Tomás Moro'                          }, specialty: { es: 'Conciencia y gobierno',     en: 'Conscience & Government'     } },
-  { id: 'sanjuanbautista',      subdomain: 'sanjuanbautista',      chaplet: false, novena: true,  color: '#180e02', short: { es: 'S. Juan Bautista', en: 'St. John Baptist' }, name: { en: 'Saint John the Baptist',            es: 'San Juan Bautista'                       }, specialty: { es: 'Precursor y conversión',  en: 'Forerunner & Conversion'     } },
+  { id: 'sanjuanbautista',      subdomain: 'sanjuanbautista',      chaplet: true,  novena: true,  color: '#180e02', short: { es: 'S. Juan Bautista', en: 'St. John Baptist' }, name: { en: 'Saint John the Baptist',            es: 'San Juan Bautista'                       }, specialty: { es: 'Precursor y conversión',  en: 'Forerunner & Conversion'     } },
   { id: 'sanireneolyon',        subdomain: 'sanireneolyon',        chaplet: false, novena: true,  color: '#080410', short: { es: 'S. Ireneo',        en: 'St. Irenaeus'      }, name: { en: 'Saint Irenaeus of Lyon',            es: 'San Ireneo de Lyon'                      }, specialty: { es: 'Unidad y doctrina',       en: 'Unity & Doctrine'            } },
   { id: 'santomasapostol',      subdomain: 'santomasapostol',      chaplet: false, novena: true,  color: '#150800', short: { es: 'Sto. Tomás',      en: 'St. Thomas'        }, name: { en: 'Saint Thomas the Apostle',          es: 'Santo Tomás Apóstol'                     }, specialty: { es: 'Fe y testimonio',         en: 'Faith & Witness'             } },
   { id: 'sancarlosacutis',      subdomain: 'sancarlosacutis',      chaplet: false, novena: true,  color: '#001030', short: { es: 'S. Carlos Acutis', en: 'St. Carlo Acutis'  }, name: { en: 'Saint Carlo Acutis',               es: 'San Carlos Acutis'                       }, specialty: { es: 'Juventud e internet',     en: 'Youth & Internet'            } },
-  { id: 'sanbenito',            subdomain: 'sanbenito',            chaplet: false, novena: true,  color: '#060c04', short: { es: 'S. Benito',        en: 'St. Benedict'      }, name: { en: 'Saint Benedict of Nursia',          es: 'San Benito de Nursia'                    }, specialty: { es: 'Orden y monacato',        en: 'Order & Monasticism'         } },
-  { id: 'nuestrasenoracarmen',  subdomain: 'nuestrasenoracarmen',  chaplet: false, novena: true,  color: '#020610', short: { es: 'V. del Carmen',   en: 'Our Lady Carmen'   }, name: { en: 'Our Lady of Mount Carmel',          es: 'Nuestra Señora del Carmen'                }, specialty: { es: 'Protección y contemplación', en: 'Protection & Prayer'         } },
+  { id: 'sanbenito',            subdomain: 'sanbenito',            chaplet: true,  novena: true,  color: '#060c04', short: { es: 'S. Benito',        en: 'St. Benedict'      }, name: { en: 'Saint Benedict of Nursia',          es: 'San Benito de Nursia'                    }, specialty: { es: 'Orden y monacato',        en: 'Order & Monasticism'         } },
+  { id: 'nuestrasenoracarmen',  subdomain: 'nuestrasenoracarmen',  chaplet: true,  novena: true,  color: '#020610', short: { es: 'V. del Carmen',   en: 'Our Lady Carmen'   }, name: { en: 'Our Lady of Mount Carmel',          es: 'Nuestra Señora del Carmen'                }, specialty: { es: 'Protección y contemplación', en: 'Protection & Prayer'         } },
   { id: 'divinonino',           subdomain: 'divinonino',           chaplet: false, novena: true,  color: '#020510', short: { es: 'Divino Niño',   en: 'Divine Child'      }, name: { en: 'Divine Child Jesus',                es: 'Divino Niño Jesús'                          }, specialty: { es: 'Ternura y confianza',     en: 'Tenderness & Trust'          } },
   { id: 'santamariagoretti',    subdomain: 'santamariagoretti',    chaplet: false, novena: true,  color: '#a11b28', short: { es: 'Sta. Goretti',  en: 'St. Goretti'       }, name: { en: 'Saint Maria Goretti',               es: 'Santa Maria Goretti'                      }, specialty: { es: 'Pureza y perdón',          en: 'Purity & forgiveness'        } },
   { id: 'preciosisimasangre',   subdomain: 'preciosisimasangre',   chaplet: true,  novena: true,  color: '#7a1010', short: { es: 'Prec. Sangre',  en: 'Precious Blood'    }, name: { en: 'Most Precious Blood of Christ',       es: 'Preciosísima Sangre de Cristo'            }, specialty: { es: 'Redención y protección',   en: 'Redemption & protection'     } },
@@ -2049,6 +2049,235 @@ function getChapletSteps(id, lang) {
     return steps;
   }
 
+  // ── SAN BENITO (Medalla/Coronilla) ───────────
+  if (id === 'sanbenito') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«San Benito, Padre del monacato occidental y Patrono de Europa:\nPor la señal de tu Santa Medalla y la fuerza de la Santa Cruz,\ndefiéndenos de todo mal, guíanos en la oración y el trabajo,\ny llévanos a la vida eterna. Amén.»'
+      : '«Saint Benedict, Father of Western monasticism and Patron of Europe:\nThrough the sign of your Holy Medal and the power of the Holy Cross,\ndefend us from all evil, guide us in prayer and work,\nand lead us to eternal life. Amen.»', count: 1, bead: 'none' };
+    const cross = { label: L ? 'Cruz de San Benito' : 'Cross of Saint Benedict', text: L
+      ? '«Cruz Santa, sé mi luz.\nNo sea el dragón mi guía.\nVete, Satanás, no me persuadas de cosas vanas.\nMalo es lo que me ofreces; bebe tú mismo el veneno.»\n(C·S·P·B — Cruz del Santo Padre Benito)'
+      : '«Holy Cross, be my light.\nLet not the dragon be my guide.\nBegone, Satan, persuade me not with vain things.\nEvil is what you offer; drink that poison yourself.»\n(C·S·P·B — Cross of Holy Father Benedict)', count: 1, bead: 'none' };
+    const virtu = L
+      ? ['Prudencia', 'Justicia', 'Fortaleza', 'Templanza']
+      : ['Prudence', 'Justice', 'Fortitude', 'Temperance'];
+    const steps = [cross, opening];
+    virtu.forEach(v => {
+      steps.push({ label: L ? `${v} · Padre Nuestro` : `${v} · Our Father`, text: p.pn, count: 1, bead: 'large' });
+      steps.push({ label: L ? `${v} · Ave Marías` : `${v} · Hail Marys`, text: p.am, count: 10, bead: 'small' });
+      steps.push({ label: L ? `${v} · Jaculatoria` : `${v} · Short Prayer`, text: L
+        ? `«San Benito, guíame en la virtud de la ${v}. Ruega por nosotros.»`
+        : `«Saint Benedict, guide me in the virtue of ${v}. Pray for us.»`, count: 1, bead: 'none' });
+    });
+    steps.push({ label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«San Benito, por la virtud de la Santa Medalla,\ncubre nuestros hogares con la Cruz de Cristo,\naléjanos del maligno y guíanos al descanso eterno de Dios.\nAmén.»'
+      : '«Saint Benedict, through the virtue of the Holy Medal,\ncover our homes with the Cross of Christ,\ndrive away the evil one and guide us to the eternal rest of God.\nAmen.»', count: 1, bead: 'none' });
+    return steps;
+  }
+
+  // ── NUESTRA SEÑORA DEL CARMEN ─────────────────
+  if (id === 'nuestrasenoracarmen') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«Virgen del Carmen, Estrella del Mar y Reina del Carmelo:\ntú que cubriste con tu Santo Escapulario a los que te buscan,\ncúbrenos también a nosotros con tu manto de protección\ny condúcenos al Corazón de tu Hijo Jesús.»'
+      : '«Virgin of Carmel, Star of the Sea and Queen of Carmel:\nyou who covered those who seek you with your Holy Scapular,\ncover us also with your mantle of protection\nand lead us to the Heart of your Son Jesus.»', count: 1, bead: 'none' };
+    const misterios = L ? [
+      { n: '1°', t: 'La aparición de Nuestra Señora a San Simón Stock y la entrega del Escapulario.' },
+      { n: '2°', t: 'El privilegio sabatino: la promesa de liberación del purgatorio el primer sábado.' },
+      { n: '3°', t: 'Elías en el Monte Carmelo — la nube pequeña, signo de María y de la lluvia de gracia.' },
+      { n: '4°', t: 'La consagración total a María como camino al Corazón de Cristo.' },
+    ] : [
+      { n: '1st', t: 'The apparition of Our Lady to Saint Simon Stock and the giving of the Scapular.' },
+      { n: '2nd', t: 'The Sabbatine Privilege: the promise of liberation from purgatory on the first Saturday.' },
+      { n: '3rd', t: 'Elijah on Mount Carmel — the small cloud as a sign of Mary and of grace.' },
+      { n: '4th', t: 'Total consecration to Mary as the path to the Heart of Christ.' },
+    ];
+    const steps = [opening];
+    misterios.forEach(m => {
+      steps.push({ label: L ? `${m.n} Misterio` : `${m.n} Mystery`, text: m.t, count: 1, bead: 'none' });
+      steps.push({ label: L ? `Padre Nuestro · ${m.n}` : `Our Father · ${m.n}`, text: p.pn, count: 1, bead: 'large' });
+      steps.push({ label: L ? `Ave María × 10 · ${m.n}` : `Hail Mary × 10 · ${m.n}`, text: p.am, count: 10, bead: 'small' });
+      steps.push({ label: L ? `Invocación · ${m.n}` : `Invocation · ${m.n}`, text: L
+        ? '«Virgen del Carmen, ruega por nosotros ahora y en la hora de nuestra muerte.»'
+        : '«Virgin of Carmel, pray for us now and at the hour of our death.»', count: 1, bead: 'none' });
+    });
+    steps.push({ label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«Nuestra Señora del Carmelo:\nQue el Santo Escapulario sea señal de alianza contigo\ny promesa de la vida eterna. Amén.»'
+      : '«Our Lady of Carmel:\nMay the Holy Scapular be a sign of covenant with you\nand promise of eternal life. Amen.»', count: 1, bead: 'none' });
+    return steps;
+  }
+
+  // ── SAN JUAN BAUTISTA (7 Gozos) ───────────────
+  if (id === 'sanjuanbautista') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«San Juan Bautista, voz que clama en el desierto:\ntú que señalaste con el dedo al Cordero de Dios\ny dijiste "es necesario que Él crezca y que yo disminuya",\nenséñame a poner a Cristo en el centro de mi vida.»'
+      : '«Saint John the Baptist, voice crying in the desert:\nyou who pointed with your finger to the Lamb of God\nand said "He must increase and I must decrease",\nteach me to place Christ at the center of my life.»', count: 1, bead: 'none' };
+    const gozos = L ? [
+      { g: '1° Gozo', t: 'Tu concepción milagrosa anunciada al anciano Zacarías.', inv: '«San Juan, gozo de tu padre:\ntrae el gozo de Dios a los que han perdido la esperanza.»' },
+      { g: '2° Gozo', t: 'Tu salto de alegría en el vientre de Isabel al escuchar la voz de María.', inv: '«San Juan, que reconociste al Señor antes de nacer:\nayúdanos a reconocerlo en cada momento.»' },
+      { g: '3° Gozo', t: 'Tu nacimiento y la recuperación de la voz de tu padre.', inv: '«San Juan, cuya llegada hizo hablar a los mudos:\nque la gracia de Dios abra nuestras bocas para alabarle.»' },
+      { g: '4° Gozo', t: 'Tu vida en el desierto como preparación para tu misión.', inv: '«San Juan, hombre del desierto y la oración:\nque yo también aprenda a buscar a Dios en el silencio.»' },
+      { g: '5° Gozo', t: 'El bautismo de Jesús en el Jordán y la voz del Padre desde el cielo.', inv: '«San Juan, que viste al Espíritu Santo descender:\nque ese mismo Espíritu renueve mi vida.»' },
+      { g: '6° Gozo', t: 'Tu señalamiento del Cordero de Dios que quita el pecado del mundo.', inv: '«San Juan, voz y dedo que señalas a Cristo:\nque yo también lo señale con mi vida entera.»' },
+      { g: '7° Gozo', t: 'Tu martirio y tu corona de gloria en el cielo.', inv: '«San Juan, mártir de la verdad:\nda fortaleza a los que sufren por la justicia.»' },
+    ] : [
+      { g: '1st Joy', t: 'Your miraculous conception announced to the aged Zechariah.', inv: '«Saint John, joy of your father:\nbring the joy of God to those who have lost hope.»' },
+      { g: '2nd Joy', t: 'Your leap of joy in Elizabeth\'s womb at the sound of Mary\'s voice.', inv: '«Saint John, who recognized the Lord before birth:\nhelp us to recognize Him in every moment.»' },
+      { g: '3rd Joy', t: 'Your birth and the restoration of your father\'s speech.', inv: '«Saint John, whose arrival made the mute speak:\nmay grace open our mouths to praise God.»' },
+      { g: '4th Joy', t: 'Your life in the desert as preparation for your mission.', inv: '«Saint John, man of the desert and prayer:\nmay I also learn to seek God in silence.»' },
+      { g: '5th Joy', t: 'The baptism of Jesus in the Jordan and the voice of the Father from heaven.', inv: '«Saint John, who saw the Holy Spirit descend:\nmay that same Spirit renew my life.»' },
+      { g: '6th Joy', t: 'Your pointing to the Lamb of God who takes away the sin of the world.', inv: '«Saint John, voice and finger pointing to Christ:\nmay I point to Him with my entire life.»' },
+      { g: '7th Joy', t: 'Your martyrdom and your crown of glory in heaven.', inv: '«Saint John, martyr of truth:\ngive strength to all who suffer for justice.»' },
+    ];
+    const steps = [opening];
+    gozos.forEach(g => {
+      steps.push({ label: g.g, text: g.t, count: 1, bead: 'none' });
+      steps.push({ label: L ? `Padre Nuestro · ${g.g}` : `Our Father · ${g.g}`, text: p.pn, count: 1, bead: 'large' });
+      steps.push({ label: L ? `Ave María × 7 · ${g.g}` : `Hail Mary × 7 · ${g.g}`, text: p.am, count: 7, bead: 'small' });
+      steps.push({ label: L ? `Invocación · ${g.g}` : `Invocation · ${g.g}`, text: g.inv, count: 1, bead: 'none' });
+    });
+    steps.push({ label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«San Juan Bautista, precursor del Señor:\nprepara también nuestros corazones para la venida de Cristo. Amén.»'
+      : '«Saint John the Baptist, forerunner of the Lord:\nprepare our hearts also for the coming of Christ. Amen.»', count: 1, bead: 'none' });
+    return steps;
+  }
+
+  // ── SAN PEREGRINO (9 cuentas para sanación) ───
+  if (id === 'sanperegrino') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«San Peregrino Laziosi, patrono de los enfermos de cáncer y de toda enfermedad grave:\ntú que sufriste la amenaza de la amputación y recibiste sanación milagrosa de Cristo crucificado:\npresenta ante Dios mi enfermedad y mi fe.»'
+      : '«Saint Peregrine Laziosi, patron of cancer patients and all who suffer serious illness:\nyou who faced the threat of amputation and received miraculous healing from the crucified Christ:\npresent before God my illness and my faith.»', count: 1, bead: 'none' };
+    const petitions = L ? [
+      'Por la sanación de mi cuerpo, si es la voluntad de Dios.',
+      'Por la paz en mi mente cuando el miedo quiere apoderarse de mí.',
+      'Por los médicos, enfermeros y cuidadores que me atienden.',
+      'Por mi familia, que también sufre al verme enfermo.',
+      'Por los enfermos que no tienen quien ore por ellos.',
+      'Por la fortaleza para aceptar el sufrimiento cuando no hay sanación.',
+      'Por la gracia de encontrar a Cristo en el hospital, en la cama, en el dolor.',
+      'Por una muerte santa cuando llegue la hora, si Dios lo permite.',
+      'Por la resurrección gloriosa en la que todo dolor quedará atrás.',
+    ] : [
+      'For the healing of my body, if it is the will of God.',
+      'For peace of mind when fear tries to take hold of me.',
+      'For the doctors, nurses, and caregivers who attend to me.',
+      'For my family, who also suffers seeing me ill.',
+      'For the sick who have no one to pray for them.',
+      'For strength to accept suffering when there is no healing.',
+      'For the grace to find Christ in the hospital, in bed, in pain.',
+      'For a holy death when the hour comes, if God permits.',
+      'For the glorious resurrection in which all pain will be left behind.',
+    ];
+    const steps = [opening];
+    petitions.forEach((pet, i) => {
+      steps.push({ label: L ? `Petición ${i+1} de 9` : `Petition ${i+1} of 9`, text: pet, count: 1, bead: 'small' });
+    });
+    steps.push({ label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«San Peregrino, que viste el tumor deshacerse en la noche:\nque Cristo, que sanó tu cuerpo, sane también lo que en mí necesita sanar.\nSi no es su voluntad sanar mi cuerpo,\nque sane mi alma y me dé la paz que el mundo no puede dar. Amén.»'
+      : '«Saint Peregrine, who saw the tumor disappear overnight:\nmay Christ, who healed your body, heal what in me needs healing.\nIf it is not His will to heal my body,\nmay He heal my soul and grant me the peace the world cannot give. Amen.»', count: 1, bead: 'none' });
+    return steps;
+  }
+
+  // ── ÁNGEL DE LA GUARDA (9 coros angélicos) ────
+  if (id === 'angelguarda') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«Ángel de Dios, que eres mi custodio:\npor la gracia del cielo que te fue confiada a ti,\nguárdame, ilumíname, dirígeme y gobiérname. Amén.»'
+      : '«Angel of God, my guardian dear:\nto whom God\'s love commits me here,\never this day be at my side,\nto light and guard, to rule and guide. Amen.»', count: 1, bead: 'none' };
+    const coros = L ? [
+      { c: 'Serafines', inv: '«Por la intercesión de los Serafines y de mi Ángel Custodio:\nque arda en mí el amor de Dios.»' },
+      { c: 'Querubines', inv: '«Por la intercesión de los Querubines y de mi Ángel Custodio:\nque conozca y ame la verdad de Dios.»' },
+      { c: 'Tronos', inv: '«Por la intercesión de los Tronos y de mi Ángel Custodio:\nque encuentre descanso en la voluntad de Dios.»' },
+      { c: 'Dominaciones', inv: '«Por la intercesión de las Dominaciones y de mi Ángel Custodio:\nque ordene toda mi vida según la voluntad de Dios.»' },
+      { c: 'Poderes', inv: '«Por la intercesión de los Poderes y de mi Ángel Custodio:\nque sea guardado de todo mal espiritual y corporal.»' },
+      { c: 'Virtudes', inv: '«Por la intercesión de las Virtudes y de mi Ángel Custodio:\nque Dios obre en mi vida sus maravillas.»' },
+      { c: 'Principados', inv: '«Por la intercesión de los Principados y de mi Ángel Custodio:\nque Dios guíe a mi familia y a mi pueblo.»' },
+      { c: 'Arcángeles', inv: '«Por la intercesión de los Arcángeles y de mi Ángel Custodio:\nque Dios me envíe su mensaje de paz y dirección.»' },
+      { c: 'Ángeles', inv: '«Ángel Santo de Dios, mi custodio:\nguárdame hoy en el camino y en el sueño,\nen el peligro y en la tentación. Amén.»' },
+    ] : [
+      { c: 'Seraphim', inv: '«Through the intercession of the Seraphim and my Guardian Angel:\nmay the love of God burn in me.»' },
+      { c: 'Cherubim', inv: '«Through the intercession of the Cherubim and my Guardian Angel:\nmay I know and love the truth of God.»' },
+      { c: 'Thrones', inv: '«Through the intercession of the Thrones and my Guardian Angel:\nmay I find rest in the will of God.»' },
+      { c: 'Dominations', inv: '«Through the intercession of the Dominations and my Guardian Angel:\nmay I order all my life according to the will of God.»' },
+      { c: 'Powers', inv: '«Through the intercession of the Powers and my Guardian Angel:\nmay I be guarded from all spiritual and bodily harm.»' },
+      { c: 'Virtues', inv: '«Through the intercession of the Virtues and my Guardian Angel:\nmay God work His wonders in my life.»' },
+      { c: 'Principalities', inv: '«Through the intercession of the Principalities and my Guardian Angel:\nmay God guide my family and my people.»' },
+      { c: 'Archangels', inv: '«Through the intercession of the Archangels and my Guardian Angel:\nmay God send me His message of peace and direction.»' },
+      { c: 'Angels', inv: '«Holy Angel of God, my guardian:\nwatch over me today on the road and in sleep,\nin danger and in temptation. Amen.»' },
+    ];
+    const steps = [opening];
+    coros.forEach(c => {
+      steps.push({ label: c.c, text: c.inv, count: 1, bead: 'small' });
+    });
+    steps.push({ label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«Dios mío, que en tu admirable providencia envías a tus ángeles para que me guarden:\nhaz que yo me apoye siempre en su compañía\ny alcance la alegría de su presencia eterna. Amén.»'
+      : '«O God, who in your admirable providence send your angels to guard me:\ngrant that I may always rely on their companionship\nand attain the joy of their eternal presence. Amen.»', count: 1, bead: 'none' });
+    return steps;
+  }
+
+  // ── SANTA ANA (7 Gozos) ───────────────────────
+  if (id === 'santaana') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«Santa Ana, madre de la Virgen María y abuela de Jesucristo:\ntú que esperaste con fe durante años la llegada de un hijo\ny recibiste a la más bendita de las mujeres:\nintercede por todas las madres y mujeres que esperan.»'
+      : '«Saint Anne, mother of the Virgin Mary and grandmother of Jesus Christ:\nyou who waited in faith for years for the coming of a child\nand received the most blessed of women:\nintercede for all mothers and women who wait.»', count: 1, bead: 'none' };
+    const gozos = L ? [
+      { g: '1° Gozo', t: 'Tu matrimonio santo con Joaquín, lleno de amor y fidelidad.', inv: '«Santa Ana, modelo de esposa y madre:\nbendice los matrimonios y familias del mundo.»' },
+      { g: '2° Gozo', t: 'El anuncio milagroso de la concepción de María en tu vejez.', inv: '«Santa Ana, que recibiste la promesa de Dios cuando ya no esperabas:\nayuda a los que esperan lo imposible.»' },
+      { g: '3° Gozo', t: 'El nacimiento de la Virgen María, llena de gracia desde el primer instante.', inv: '«Santa Ana, madre de la Inmaculada:\nruega por todas las madres en el momento del parto.»' },
+      { g: '4° Gozo', t: 'La presentación de María niña en el Templo, consagrada a Dios.', inv: '«Santa Ana, que ofreciste tu hija al Señor:\nque también nosotros sepamos entregar nuestros hijos a Dios.»' },
+      { g: '5° Gozo', t: 'La Anunciación, por la que tu hija se convirtió en Madre de Dios.', inv: '«Santa Ana, abuela del Hijo de Dios:\nayúdanos a decir también nuestro "sí" a Dios.»' },
+      { g: '6° Gozo', t: 'La Visitación de María a Isabel, fruto de la fe de toda vuestra familia.', inv: '«Santa Ana, raíz de esta gracia:\nhaz que la alegría del Señor rebase también por nuestra familia.»' },
+      { g: '7° Gozo', t: 'El nacimiento de Jesús, tu nieto, el Hijo de Dios hecho carne.', inv: '«Santa Ana, que tuviste en tus brazos al Niño Dios:\nruega por todos los niños del mundo y los que aún no han nacido.»' },
+    ] : [
+      { g: '1st Joy', t: 'Your holy marriage to Joachim, full of love and faithfulness.', inv: '«Saint Anne, model of wife and mother:\nbless the marriages and families of the world.»' },
+      { g: '2nd Joy', t: 'The miraculous announcement of Mary\'s conception in your old age.', inv: '«Saint Anne, who received God\'s promise when you no longer hoped:\nhelp those who wait for the impossible.»' },
+      { g: '3rd Joy', t: 'The birth of the Virgin Mary, full of grace from the very first instant.', inv: '«Saint Anne, mother of the Immaculate One:\npray for all mothers at the moment of childbirth.»' },
+      { g: '4th Joy', t: 'The presentation of the child Mary in the Temple, consecrated to God.', inv: '«Saint Anne, who offered your daughter to the Lord:\nmay we know how to entrust our children to God.»' },
+      { g: '5th Joy', t: 'The Annunciation, by which your daughter became Mother of God.', inv: '«Saint Anne, grandmother of the Son of God:\nmay we also say our yes to God.»' },
+      { g: '6th Joy', t: 'The Visitation of Mary to Elizabeth, fruit of the faith of your family.', inv: '«Saint Anne, root of all this grace:\nmay the joy of the Lord overflow in our family as well.»' },
+      { g: '7th Joy', t: 'The birth of Jesus, your grandson, the Son of God made flesh.', inv: '«Saint Anne, who held the God-Child in your arms:\npray for all children in the world and for those not yet born.»' },
+    ];
+    const steps = [opening];
+    gozos.forEach(g => {
+      steps.push({ label: g.g, text: g.t, count: 1, bead: 'none' });
+      steps.push({ label: L ? `Padre Nuestro · ${g.g}` : `Our Father · ${g.g}`, text: p.pn, count: 1, bead: 'large' });
+      steps.push({ label: L ? `Ave María × 7 · ${g.g}` : `Hail Mary × 7 · ${g.g}`, text: p.am, count: 7, bead: 'small' });
+      steps.push({ label: L ? `Invocación · ${g.g}` : `Invocation · ${g.g}`, text: g.inv, count: 1, bead: 'none' });
+    });
+    steps.push({ label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«Santa Ana, abuela de Dios:\nque tu intercesión alcance para nosotros una familia santa\ny la alegría del Cielo donde ya contemplas a tu nieto Jesús. Amén.»'
+      : '«Saint Anne, grandmother of God:\nmay your intercession obtain for us a holy family\nand the joy of Heaven where you already behold your grandson Jesus. Amen.»', count: 1, bead: 'none' });
+    return steps;
+  }
+
+  // ── SAN FRANCISCO JAVIER (5 continentes) ──────
+  if (id === 'sanfranciscojavier') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«San Francisco Javier, Apóstol de las Indias y Patrono de las Misiones:\ntú que bautizaste a más de un millón de personas en doce años\ny moriste señalando hacia China con el nombre de Jesús en los labios:\nenciende en nosotros el fuego misionero que ardía en ti.»'
+      : '«Saint Francis Xavier, Apostle of the Indies and Patron of Missions:\nyou who baptized more than one million people in twelve years\nand died pointing toward China with the name of Jesus on your lips:\nkindly kindle in us the missionary fire that burned in you.»', count: 1, bead: 'none' };
+    const continentes = L ? [
+      { c: 'Europa', inv: '«San Francisco Javier, que saliste de Navarra para cambiar el mundo:\nque los bautizados de Europa no olviden su misión.»' },
+      { c: 'África', inv: '«San Francisco Javier, que pasaste por Mozambique:\nque el Evangelio siga llegando a toda África.»' },
+      { c: 'Asia', inv: '«San Francisco Javier, que evangelizaste India y Japón y soñaste con China:\nruega por todos los misioneros que hoy trabajan en Asia.»' },
+      { c: 'América', inv: '«San Francisco Javier, compañero de Ignacio de Loyola:\nque la fe de América Latina siga ardiendo en el mundo.»' },
+      { c: L ? 'El mundo entero' : 'The whole world', inv: L ? '«San Francisco Javier, apóstol universal:\nruega para que toda la humanidad llegue a conocer a Cristo.»' : '«Saint Francis Xavier, universal apostle:\npray that all humanity may come to know Christ.»' },
+    ] : [
+      { c: 'Europe', inv: '«Saint Francis Xavier, who left Navarre to change the world:\nmay the baptized of Europe not forget their mission.»' },
+      { c: 'Africa', inv: '«Saint Francis Xavier, who passed through Mozambique:\nmay the Gospel continue reaching all of Africa.»' },
+      { c: 'Asia', inv: '«Saint Francis Xavier, who evangelized India and Japan and dreamed of China:\npray for all missionaries working in Asia today.»' },
+      { c: 'America', inv: '«Saint Francis Xavier, companion of Ignatius of Loyola:\nmay the faith of Latin America continue burning in the world.»' },
+      { c: 'The whole world', inv: '«Saint Francis Xavier, universal apostle:\npray that all humanity may come to know Christ.»' },
+    ];
+    const steps = [opening];
+    continentes.forEach(c => {
+      steps.push({ label: L ? `Misiones en ${c.c}` : `Missions in ${c.c}`, text: L ? `Oramos por las misiones en ${c.c}` : `We pray for missions in ${c.c}`, count: 1, bead: 'none' });
+      steps.push({ label: L ? `Padre Nuestro · ${c.c}` : `Our Father · ${c.c}`, text: p.pn, count: 1, bead: 'large' });
+      steps.push({ label: L ? `Ave María × 10 · ${c.c}` : `Hail Mary × 10 · ${c.c}`, text: p.am, count: 10, bead: 'small' });
+      steps.push({ label: L ? `Invocación · ${c.c}` : `Invocation · ${c.c}`, text: c.inv, count: 1, bead: 'none' });
+    });
+    steps.push({ label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«San Francisco Javier, que moriste mirando hacia China con el nombre de Jesús en los labios:\nque todos los misioneros de hoy tengan tu valentía,\ntu amor por las almas y tu confianza absoluta en Dios. Amén.»'
+      : '«Saint Francis Xavier, who died gazing toward China with the name of Jesus on your lips:\nmay all missionaries today have your courage,\nyour love for souls, and your absolute trust in God. Amen.»', count: 1, bead: 'none' });
+    return steps;
+  }
+
   return [];
 }
 
@@ -2543,6 +2772,10 @@ function initMenu() {
     const _nameEs   = document.getElementById('heroTodayNameEs');
     const _nameEn   = document.getElementById('heroTodayNameEn');
     const _todayLnk = document.getElementById('heroTodayLink');
+    const _fWrap    = document.getElementById('featuredTodayWrap');
+    const _fEs      = document.getElementById('featuredTodayNameEs');
+    const _fEn      = document.getElementById('featuredTodayNameEn');
+    const _fLink    = document.getElementById('featuredTodayLink');
     const _labelEs  = _pill ? _pill.querySelector('.htp-label[data-lang="es"]') : null;
     const _labelEn  = _pill ? _pill.querySelector('.htp-label[data-lang="en"]') : null;
     if (_pill && _nameEs && _nameEn && _todayLnk) {
@@ -2565,6 +2798,12 @@ function initMenu() {
           _todayLnk.href = buildIntercessorUrl(_feast.subdomain);
           _pill.style.display = 'flex';
           _pill.classList.add('htp-feast');
+          if (_fWrap && _fEs && _fEn && _fLink) {
+            _fEs.textContent = _feast.name.es + _extraEs;
+            _fEn.textContent = _feast.name.en + _extraEn;
+            _fLink.href = buildIntercessorUrl(_feast.subdomain);
+            _fWrap.style.display = '';
+          }
         }
       } else {
         const _cands = INTERCESSORS.filter(i => i.id !== 'misericordia');
@@ -2573,6 +2812,12 @@ function initMenu() {
         _nameEn.textContent = _today.name.en;
         _todayLnk.href = buildIntercessorUrl(_today.subdomain);
         _pill.style.display = 'flex';
+        if (_fWrap && _fEs && _fEn && _fLink) {
+          _fEs.textContent = _today.name.es;
+          _fEn.textContent = _today.name.en;
+          _fLink.href = buildIntercessorUrl(_today.subdomain);
+          _fWrap.style.display = '';
+        }
       }
     }
   }
