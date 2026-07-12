@@ -125,5 +125,8 @@
   "feast_day": {
     "es": "28 de agosto",
     "en": "August 28"
+  },
+  "chaplet": {
+    "available": true
   }
 }

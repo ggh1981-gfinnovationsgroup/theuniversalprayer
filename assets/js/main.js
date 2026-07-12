@@ -145,15 +145,15 @@ const INTERCESSORS = [
   { id: 'sangabriel',        subdomain: 'sangabriel',        chaplet: true,  novena: true,  color: '#1a3a6b', short: { es: 'San Gabriel',      en: 'St. Gabriel'      }, name: { en: 'Saint Gabriel the Archangel',           es: 'San Gabriel Arcángel'                     }, specialty: { es: 'Mensajes divinos',            en: 'Divine messages'             } },
   { id: 'sanrafael',         subdomain: 'sanrafael',         chaplet: true,  novena: true,  color: '#1a5c3a', short: { es: 'San Rafael',       en: 'St. Raphael'      }, name: { en: 'Saint Raphael the Archangel',           es: 'San Rafael Arcángel'                      }, specialty: { es: 'Sanación y viajeros',         en: 'Healing & travelers'         } },
   { id: 'angelguarda',       subdomain: 'angelguarda',       chaplet: true,  novena: true,  color: '#4a4a70', short: { es: 'Ángel Custodio',   en: 'Guardian Angel'   }, name: { en: 'Guardian Angel',                        es: 'Ángel de la Guarda'                       }, specialty: { es: 'Custodia personal',           en: 'Personal guardian'           } },
-  { id: 'lourdes',           subdomain: 'lourdes',           chaplet: false, novena: true,  color: '#2f5f86', short: { es: 'V. de Lourdes',   en: 'Our Lady Lourdes' }, name: { en: 'Our Lady of Lourdes',                  es: 'Nuestra Señora de Lourdes'                }, specialty: { es: 'Sanación, conversión y esperanza', en: 'Healing, conversion and hope' } },
+  { id: 'lourdes',           subdomain: 'lourdes',           chaplet: true,  novena: true,  color: '#2f5f86', short: { es: 'V. de Lourdes',   en: 'Our Lady Lourdes' }, name: { en: 'Our Lady of Lourdes',                  es: 'Nuestra Señora de Lourdes'                }, specialty: { es: 'Sanación, conversión y esperanza', en: 'Healing, conversion and hope' } },
   { id: 'divinaprovidencia', subdomain: 'divinaprovidencia', chaplet: false, novena: true,  color: '#7a5a00', short: { es: 'N.S. Providencia', en: 'Lady Providence'  }, name: { en: 'Our Lady of Divine Providence',         es: 'Nuestra Señora de la Divina Providencia'  }, specialty: { es: 'Necesidades cotidianas',      en: 'Daily needs & trust'         } },
   { id: 'santarita',         subdomain: 'santarita',         chaplet: true,  novena: true,  color: '#7a1520', short: { es: 'Santa Rita',       en: 'St. Rita'         }, name: { en: 'Saint Rita of Cascia',                  es: 'Santa Rita de Casia'                      }, specialty: { es: 'Causas imposibles',           en: 'Impossible causes'           } },
   { id: 'sanfelipeneri',     subdomain: 'sanfelipeneri',     chaplet: true,  novena: true,  color: '#8a4a10', short: { es: 'S. Felipe Neri',   en: 'St. Philip Neri'  }, name: { en: 'Saint Philip Neri',                     es: 'San Felipe Neri'                          }, specialty: { es: 'Alegría y conversión',        en: 'Joy & conversion'            } },
   { id: 'schoenstatt',       subdomain: 'schoenstatt',       chaplet: false, novena: true,  color: '#1a3070', short: { es: 'Schoenstatt',      en: 'Schoenstatt'      }, name: { en: 'Our Lady of Schoenstatt',                es: 'Virgen de Schoenstatt'                    }, specialty: { es: 'Alianza de amor y familia',   en: 'Covenant of love & family'   } },
-  { id: 'santadymphna',      subdomain: 'santadymphna',      chaplet: false, novena: true,  color: '#4a2a7a', short: { es: 'Sta. Dymphna',     en: 'St. Dymphna'      }, name: { en: 'Saint Dymphna',                         es: 'Santa Dymphna'                            }, specialty: { es: 'Salud mental y paz',          en: 'Mental health & peace'       } },
+  { id: 'santadymphna',      subdomain: 'santadymphna',      chaplet: true,  novena: true,  color: '#4a2a7a', short: { es: 'Sta. Dymphna',     en: 'St. Dymphna'      }, name: { en: 'Saint Dymphna',                         es: 'Santa Dymphna'                            }, specialty: { es: 'Salud mental y paz',          en: 'Mental health & peace'       } },
   { id: 'santateresita',     subdomain: 'santateresita',     chaplet: true,  novena: true,  color: '#8a2050', short: { es: 'Sta. Teresita',    en: 'St. Thérèse'      }, name: { en: 'Saint Thérèse of the Child Jesus',      es: 'Santa Teresita del Niño Jesús'            }, specialty: { es: 'El camino pequeño',           en: 'The Little Way'              } },
   { id: 'sanvicente',        subdomain: 'sanvicente',        chaplet: true,  novena: true,  color: '#1a3a6a', short: { es: 'S. Vicente',       en: 'St. Vincent'      }, name: { en: 'Saint Vincent de Paul',                 es: 'San Vicente de Paúl'                      }, specialty: { es: 'Caridad y los pobres',        en: 'Charity and the poor'        } },
-  { id: 'santafabiola',     subdomain: 'santafabiola',     chaplet: false, novena: true,  color: '#8a5010', short: { es: 'Sta. Fabiola',    en: 'St. Fabiola'      }, name: { en: 'Saint Fabiola of Rome',                 es: 'Santa Fabiola de Roma'                    }, specialty: { es: 'Enfermos y penitentes',       en: 'Sick & penitents'            } },
+  { id: 'santafabiola',     subdomain: 'santafabiola',     chaplet: true,  novena: true,  color: '#8a5010', short: { es: 'Sta. Fabiola',    en: 'St. Fabiola'      }, name: { en: 'Saint Fabiola of Rome',                 es: 'Santa Fabiola de Roma'                    }, specialty: { es: 'Enfermos y penitentes',       en: 'Sick & penitents'            } },
   { id: 'sanjuanapostol',   subdomain: 'sanjuanapostol',   chaplet: true,  novena: true,  color: '#1a3a6a', short: { es: 'San Juan Ap.',    en: 'St. John Ap.'     }, name: { en: 'Saint John the Apostle',                es: 'San Juan Apóstol'                         }, specialty: { es: 'Amor y contemplación',        en: 'Love & contemplation'        } },
   { id: 'santacatalina',    subdomain: 'santacatalina',    chaplet: true,  novena: true,  color: '#5a1a8a', short: { es: 'Sta. Catalina',  en: 'St. Catherine'    }, name: { en: 'Saint Catherine of Siena',              es: 'Santa Catalina de Siena'                  }, specialty: { es: 'Paz y reforma de la Iglesia', en: 'Peace & Church reform'       } },
   { id: 'santaclara',       subdomain: 'santaclara',       chaplet: true,  novena: true,  color: '#8a6020', short: { es: 'Sta. Clara',     en: 'St. Clare'        }, name: { en: 'Saint Clare of Assisi',                 es: 'Santa Clara de Asís'                      }, specialty: { es: 'Pobreza evangélica',          en: 'Evangelical poverty'         } },
@@ -162,7 +162,7 @@ const INTERCESSORS = [
   { id: 'sanguillermo',     subdomain: 'sanguillermo',     chaplet: false, novena: true,  color: '#1a5a2a', short: { es: 'San Guillermo',  en: 'St. William'      }, name: { en: 'Saint William of Vercelli',             es: 'San Guillermo de Vercelli'                }, specialty: { es: 'Ermitaños y peregrinos',      en: 'Hermits & pilgrims'          } },
   { id: 'sancarlos',        subdomain: 'sancarlos',        chaplet: false, novena: true,  color: '#8a2a1a', short: { es: 'San Carlos',     en: 'St. Charles'      }, name: { en: 'Saint Charles Borromeo',                es: 'San Carlos Borromeo'                      }, specialty: { es: 'Reforma de la Iglesia',       en: 'Church reform & seminaries'  } },
   { id: 'santacelina',      subdomain: 'santacelina',      chaplet: false, novena: true,  color: '#2a4a7a', short: { es: 'Sta. Celina',    en: 'St. Céline'       }, name: { en: 'Saint Céline',                          es: 'Santa Celina'                             }, specialty: { es: 'Madres y familias',           en: 'Mothers & families'          } },
-  { id: 'sanagustin',        subdomain: 'sanagustin',        chaplet: false, novena: true,  color: '#5a3010', short: { es: 'San Agustín',      en: 'St. Augustine'    }, name: { en: 'Saint Augustine of Hippo',               es: 'San Agustín de Hipona'                    }, specialty: { es: 'Conversión y sabiduría',       en: 'Conversion & wisdom'         } },
+  { id: 'sanagustin',        subdomain: 'sanagustin',        chaplet: true,  novena: true,  color: '#5a3010', short: { es: 'San Agustín',      en: 'St. Augustine'    }, name: { en: 'Saint Augustine of Hippo',               es: 'San Agustín de Hipona'                    }, specialty: { es: 'Conversión y sabiduría',       en: 'Conversion & wisdom'         } },
   { id: 'sancristobal',      subdomain: 'sancristobal',      chaplet: false, novena: true,  color: '#1a5a3a', short: { es: 'San Cristóbal',    en: 'St. Christopher'  }, name: { en: 'Saint Christopher',                      es: 'San Cristóbal'                            }, specialty: { es: 'Viajeros y conductores',       en: 'Travelers & drivers'         } },
   { id: 'sanexpedito',       subdomain: 'sanexpedito',       chaplet: false, novena: true,  color: '#8a2010', short: { es: 'San Expedito',     en: 'St. Expeditus'    }, name: { en: 'Saint Expeditus',                        es: 'San Expedito'                             }, specialty: { es: 'Causas urgentes',              en: 'Urgent causes'               } },
   { id: 'sanfrancisco',      subdomain: 'sanfrancisco',      chaplet: true,  novena: true,  color: '#6b4226', short: { es: 'San Francisco',    en: 'St. Francis'      }, name: { en: 'Saint Francis of Assisi',                es: 'San Francisco de Asís'                    }, specialty: { es: 'Paz y creación',               en: 'Peace & creation'            } },
@@ -172,7 +172,7 @@ const INTERCESSORS = [
   { id: 'sannicolas',        subdomain: 'sannicolas',        chaplet: false, novena: true,  color: '#1a3a8a', short: { es: 'San Nicolás',      en: 'St. Nicholas'     }, name: { en: 'Saint Nicholas',                         es: 'San Nicolás'                              }, specialty: { es: 'Niños y generosidad',          en: 'Children & generosity'       } },
   { id: 'santaines',         subdomain: 'santaines',         chaplet: false, novena: true,  color: '#8a1a5a', short: { es: 'Santa Inés',      en: 'St. Agnes'        }, name: { en: 'Saint Agnes',                            es: 'Santa Inés'                               }, specialty: { es: 'Pureza y jóvenes',             en: 'Purity & youth'              } },
   { id: 'santalucia',        subdomain: 'santalucia',        chaplet: false, novena: true,  color: '#8a1a3a', short: { es: 'Santa Lucía',     en: 'St. Lucy'         }, name: { en: 'Saint Lucy',                             es: 'Santa Lucía'                              }, specialty: { es: 'Vista y enfermos',             en: 'Eyesight & the sick'         } },
-  { id: 'santamonica',       subdomain: 'santamonica',       chaplet: false, novena: true,  color: '#1a3a6a', short: { es: 'Santa Mónica',    en: 'St. Monica'       }, name: { en: 'Saint Monica',                           es: 'Santa Mónica'                             }, specialty: { es: 'Madres y conversión',          en: 'Mothers & conversion'        } },
+  { id: 'santamonica',       subdomain: 'santamonica',       chaplet: true,  novena: true,  color: '#1a3a6a', short: { es: 'Santa Mónica',    en: 'St. Monica'       }, name: { en: 'Saint Monica',                           es: 'Santa Mónica'                             }, specialty: { es: 'Madres y conversión',          en: 'Mothers & conversion'        } },
   { id: 'perpetuosocorro',   subdomain: 'perpetuosocorro',   chaplet: false, novena: true,  color: '#1a3a7a', short: { es: 'P. Socorro',      en: 'Perp. Help'       }, name: { en: 'Our Lady of Perpetual Help',              es: 'Virgen del Perpetuo Socorro'               }, specialty: { es: 'Auxilio y esperanza',          en: 'Help & hope'                 } },
   { id: 'mariaauxiliadora',  subdomain: 'mariaauxiliadora',  chaplet: false, novena: true,  color: '#1a3a7a', short: { es: 'M. Auxiliadora',  en: 'Mary Help'        }, name: { en: 'Mary Help of Christians',               es: 'María Auxiliadora'                        }, specialty: { es: 'Auxilio y juventud salesiana', en: 'Help & Salesian youth'       } },
   { id: 'santarosa',         subdomain: 'santarosa',         chaplet: false, novena: true,  color: '#7a1a3a', short: { es: 'Sta. Rosa',       en: 'St. Rose'         }, name: { en: 'Saint Rose of Lima',                    es: 'Santa Rosa de Lima'                       }, specialty: { es: 'Primera santa de América',     en: 'First saint of the Americas' } },
@@ -183,7 +183,7 @@ const INTERCESSORS = [
   { id: 'sanperegrino',      subdomain: 'sanperegrino',      chaplet: true,  novena: true,  color: '#8a1a3a', short: { es: 'San Peregrino',   en: 'St. Peregrine'    }, name: { en: 'Saint Peregrine Laziosi',               es: 'San Peregrino Laziosi'                    }, specialty: { es: 'Enfermos de cáncer',          en: 'Cancer patients'             } },
   { id: 'sancamilo',          subdomain: 'sancamilo',          chaplet: false, novena: true,  color: '#8a0010', short: { es: 'San Camilo',      en: 'St. Camillus'     }, name: { en: 'Saint Camillus de Lellis',              es: 'San Camilo de Lelis'                      }, specialty: { es: 'Enfermos y personal sanitario', en: 'Sick & healthcare workers'   } },
   { id: 'sanblas',            subdomain: 'sanblas',            chaplet: false, novena: true,  color: '#1828a0', short: { es: 'San Blas',        en: 'St. Blaise'       }, name: { en: 'Saint Blaise of Sebaste',              es: 'San Blas de Sebaste'                      }, specialty: { es: 'Garganta y vías respiratorias', en: 'Throat & airways'            } },
-  { id: 'sancharbel',         subdomain: 'sancharbel',         chaplet: false, novena: true,  color: '#1a2a5a', short: { es: 'San Charbel',     en: 'St. Charbel'      }, name: { en: 'Saint Charbel Makhlouf',               es: 'San Charbel Makhlouf'                     }, specialty: { es: 'Sanación y milagros',         en: 'Healing & miracles'          } },
+  { id: 'sancharbel',         subdomain: 'sancharbel',         chaplet: true,  novena: true,  color: '#1a2a5a', short: { es: 'San Charbel',     en: 'St. Charbel'      }, name: { en: 'Saint Charbel Makhlouf',               es: 'San Charbel Makhlouf'                     }, specialty: { es: 'Sanación y milagros',         en: 'Healing & miracles'          } },
   { id: 'santaana',            subdomain: 'santaana',            chaplet: true,  novena: true,  color: '#8a5a00', short: { es: 'Santa Ana',       en: 'St. Anne'         }, name: { en: 'Saint Anne',                           es: 'Santa Ana'                                }, specialty: { es: 'Infertilidad y maternidad',      en: 'Infertility & motherhood'    } },
   { id: 'sanjuandedios',       subdomain: 'sanjuandedios',       chaplet: false, novena: true,  color: '#1a3a7a', short: { es: 'San Juan de Dios', en: 'St. John of God'  }, name: { en: 'Saint John of God',                    es: 'San Juan de Dios'                         }, specialty: { es: 'Corazón y hospitales',         en: 'Heart & hospitals'           } },
   { id: 'santaapolonia',       subdomain: 'santaapolonia',       chaplet: false, novena: true,  color: '#a03060', short: { es: 'Santa Apolonia',  en: 'St. Apollonia'    }, name: { en: 'Saint Apollonia of Alexandria',        es: 'Santa Apolonia de Alejandría'             }, specialty: { es: 'Dolores dentales',                en: 'Dental pain'                 } },
@@ -191,7 +191,7 @@ const INTERCESSORS = [
   { id: 'sangerardo',          subdomain: 'sangerardo',          chaplet: false, novena: true,  color: '#1a6a3a', short: { es: 'San Gerardo',     en: 'St. Gerard'       }, name: { en: 'Saint Gerard Majella',                 es: 'San Gerardo Majella'                      }, specialty: { es: 'Embarazo y madres',                en: 'Pregnancy & mothers'         } },
   { id: 'santagianna',         subdomain: 'santagianna',         chaplet: false, novena: true,  color: '#c03060', short: { es: 'Sta. Gianna',     en: 'St. Gianna'       }, name: { en: 'Saint Gianna Beretta Molla',           es: 'Santa Gianna Beretta Molla'               }, specialty: { es: 'Médicos y vida del bebé',      en: 'Doctors & unborn life'       } },
   { id: 'sandavidgales',       subdomain: 'sandavidgales',       chaplet: false, novena: true,  color: '#2a5a1a', short: { es: 'San David',       en: 'St. David'        }, name: { en: 'Saint David of Wales',                 es: 'San David de Gales'                       }, specialty: { es: 'Pequeñas cosas y Gales',      en: 'Little things & Wales'       } },
-  { id: 'reydavid',            subdomain: 'reydavid',            chaplet: false, novena: true,  color: '#c8a020', short: { es: 'Rey David',       en: 'King David'       }, name: { en: 'King David, Prophet and Psalmist',     es: 'Rey David, Profeta y Salmista'            }, specialty: { es: 'Salmos y alabanza',            en: 'Psalms & praise'             } },
+  { id: 'reydavid',            subdomain: 'reydavid',            chaplet: true,  novena: true,  color: '#c8a020', short: { es: 'Rey David',       en: 'King David'       }, name: { en: 'King David, Prophet and Psalmist',     es: 'Rey David, Profeta y Salmista'            }, specialty: { es: 'Salmos y alabanza',            en: 'Psalms & praise'             } },
   { id: 'santaemma',           subdomain: 'santaemma',           chaplet: false, novena: true,  color: '#8a2a5a', short: { es: 'Sta. Emma',        en: 'St. Emma'         }, name: { en: 'Saint Emma of Gurk',                   es: 'Santa Emma de Gurk'                       }, specialty: { es: 'Duelo y pérdida de hijos',  en: 'Grief & loss of children'    } },
   { id: 'sanismael',           subdomain: 'sanismael',           chaplet: false, novena: true,  color: '#1a3a6a', short: { es: 'San Ismael',       en: 'St. Ishmael'      }, name: { en: 'Saint Ishmael of Wales',                es: 'San Ismael de Gales'                      }, specialty: { es: 'Fe celta y Bretaña',         en: 'Celtic faith & Brittany'     } },
   { id: 'santadelia',          subdomain: 'santadelia',          chaplet: false, novena: true,  color: '#a03070', short: { es: 'Sta. Delia',      en: 'St. Delia'        }, name: { en: 'Saint Delia, Martyr',                   es: 'Santa Delia, Mártir'                      }, specialty: { es: 'Fe bajo persecución',        en: 'Faith under persecution'     } },
@@ -204,13 +204,13 @@ const INTERCESSORS = [
   { id: 'sanoliverplunkett',   subdomain: 'sanoliverplunkett',   chaplet: false, novena: true,  color: '#1a5a28', short: { es: 'S. Oliver Plunkett', en: 'St. Oliver Plunkett' }, name: { en: 'Saint Oliver Plunkett',              es: 'San Oliver Plunkett'                     }, specialty: { es: 'Paz en Irlanda y mártires', en: 'Peace in Ireland & martyrs'  } },
   { id: 'santasilvia',         subdomain: 'santasilvia',         chaplet: false, novena: true,  color: '#5a3a7a', short: { es: 'Sta. Silvia',     en: 'St. Sylvia'       }, name: { en: 'Saint Sylvia of Rome',               es: 'Santa Silvia de Roma'                    }, specialty: { es: 'Madres y familias',         en: 'Mothers & families'          } },
   { id: 'santaleticia',        subdomain: 'santaleticia',        chaplet: false, novena: true,  color: '#8a2a5a', short: { es: 'Sta. Leticia',    en: 'St. Laetitia'     }, name: { en: 'Saint Laetitia (Leticia)',            es: 'Santa Leticia (Laetitia)'                }, specialty: { es: 'Alegría y fe en pruebas',   en: 'Joy & faith in trials'       } },
-  { id: 'sanpedro',            subdomain: 'sanpedro',            chaplet: false, novena: true,  color: '#1a3a7a', short: { es: 'San Pedro',       en: 'St. Peter'        }, name: { en: 'Saint Peter the Apostle',            es: 'San Pedro Apóstol'                       }, specialty: { es: 'La Iglesia y el Papado',    en: 'The Church & the Papacy'     } },
+  { id: 'sanpedro',            subdomain: 'sanpedro',            chaplet: true,  novena: true,  color: '#1a3a7a', short: { es: 'San Pedro',       en: 'St. Peter'        }, name: { en: 'Saint Peter the Apostle',            es: 'San Pedro Apóstol'                       }, specialty: { es: 'La Iglesia y el Papado',    en: 'The Church & the Papacy'     } },
   { id: 'sanfranciscojavier',  subdomain: 'sanfranciscojavier',  chaplet: true,  novena: true,  color: '#1a3a6a', short: { es: 'S. Francisco Javier', en: 'St. Francis Xavier' }, name: { en: 'Saint Francis Xavier',             es: 'San Francisco Javier'                    }, specialty: { es: 'Misiones y Asia',           en: 'Missions & Asia'             } },
   { id: 'sancarloslwanga',     subdomain: 'sancarloslwanga',     chaplet: false, novena: true,  color: '#4a1a08', short: { es: 'S. Carlos Lwanga',  en: 'St. Charles Lwanga' }, name: { en: 'Saint Charles Lwanga',             es: 'San Carlos Lwanga'                       }, specialty: { es: 'Jóvenes y mártires de África', en: 'Youth & Martyrs of Africa'  } },
   { id: 'sanbonifacio',         subdomain: 'sanbonifacio',         chaplet: false, novena: true,  color: '#3a1060', short: { es: 'S. Bonifacio',     en: 'St. Boniface'     }, name: { en: 'Saint Boniface of Mainz',           es: 'San Bonifacio de Maguncia'               }, specialty: { es: 'Evangelización de Europa',  en: 'Evangelization of Europe'    } },
   { id: 'sanefren',             subdomain: 'sanefren',             chaplet: false, novena: true,  color: '#0a2a2a', short: { es: 'San Efrén',       en: 'St. Ephrem'       }, name: { en: 'Saint Ephrem of Syria',             es: 'San Efrén de Siria'                      }, specialty: { es: 'Poesía y liturgia oriental', en: 'Poetry & Eastern Liturgy'    } },
   { id: 'sanbarnabes',          subdomain: 'sanbarnabes',          chaplet: false, novena: true,  color: '#142808', short: { es: 'San Bernabé',    en: 'St. Barnabas'     }, name: { en: 'Saint Barnabas the Apostle',        es: 'San Bernabé Apóstol'                     }, specialty: { es: 'Aliento y segundas oportunidades', en: 'Encouragement & Second Chances' } },
-  { id: 'sanluisgonzaga',       subdomain: 'sanluisgonzaga',       chaplet: false, novena: true,  color: '#08081c', short: { es: 'S. Luis Gonzaga', en: 'St. Aloysius'     }, name: { en: 'Saint Aloysius Gonzaga',            es: 'San Luis Gonzaga'                        }, specialty: { es: 'Juventud y pureza',         en: 'Youth & Purity'              } },
+  { id: 'sanluisgonzaga',       subdomain: 'sanluisgonzaga',       chaplet: true,  novena: true,  color: '#08081c', short: { es: 'S. Luis Gonzaga', en: 'St. Aloysius'     }, name: { en: 'Saint Aloysius Gonzaga',            es: 'San Luis Gonzaga'                        }, specialty: { es: 'Juventud y pureza',         en: 'Youth & Purity'              } },
   { id: 'santomamoro',          subdomain: 'santomamoro',          chaplet: false, novena: true,  color: '#0a0808', short: { es: 'S. Tomás Moro',   en: 'St. Thomas More'  }, name: { en: 'Saint Thomas More',                es: 'San Tomás Moro'                          }, specialty: { es: 'Conciencia y gobierno',     en: 'Conscience & Government'     } },
   { id: 'sanjuanbautista',      subdomain: 'sanjuanbautista',      chaplet: true,  novena: true,  color: '#180e02', short: { es: 'S. Juan Bautista', en: 'St. John Baptist' }, name: { en: 'Saint John the Baptist',            es: 'San Juan Bautista'                       }, specialty: { es: 'Precursor y conversión',  en: 'Forerunner & Conversion'     } },
   { id: 'sanireneolyon',        subdomain: 'sanireneolyon',        chaplet: false, novena: true,  color: '#080410', short: { es: 'S. Ireneo',        en: 'St. Irenaeus'      }, name: { en: 'Saint Irenaeus of Lyon',            es: 'San Ireneo de Lyon'                      }, specialty: { es: 'Unidad y doctrina',       en: 'Unity & Doctrine'            } },
@@ -218,8 +218,8 @@ const INTERCESSORS = [
   { id: 'sancarlosacutis',      subdomain: 'sancarlosacutis',      chaplet: false, novena: true,  color: '#001030', short: { es: 'S. Carlos Acutis', en: 'St. Carlo Acutis'  }, name: { en: 'Saint Carlo Acutis',               es: 'San Carlos Acutis'                       }, specialty: { es: 'Juventud e internet',     en: 'Youth & Internet'            } },
   { id: 'sanbenito',            subdomain: 'sanbenito',            chaplet: true,  novena: true,  color: '#060c04', short: { es: 'S. Benito',        en: 'St. Benedict'      }, name: { en: 'Saint Benedict of Nursia',          es: 'San Benito de Nursia'                    }, specialty: { es: 'Orden y monacato',        en: 'Order & Monasticism'         } },
   { id: 'nuestrasenoracarmen',  subdomain: 'nuestrasenoracarmen',  chaplet: true,  novena: true,  color: '#020610', short: { es: 'V. del Carmen',   en: 'Our Lady Carmen'   }, name: { en: 'Our Lady of Mount Carmel',          es: 'Nuestra Señora del Carmen'                }, specialty: { es: 'Protección y contemplación', en: 'Protection & Prayer'         } },
-  { id: 'divinonino',           subdomain: 'divinonino',           chaplet: false, novena: true,  color: '#020510', short: { es: 'Divino Niño',   en: 'Divine Child'      }, name: { en: 'Divine Child Jesus',                es: 'Divino Niño Jesús'                          }, specialty: { es: 'Ternura y confianza',     en: 'Tenderness & Trust'          } },
-  { id: 'santamariagoretti',    subdomain: 'santamariagoretti',    chaplet: false, novena: true,  color: '#a11b28', short: { es: 'Sta. Goretti',  en: 'St. Goretti'       }, name: { en: 'Saint Maria Goretti',               es: 'Santa Maria Goretti'                      }, specialty: { es: 'Pureza y perdón',          en: 'Purity & forgiveness'        } },
+  { id: 'divinonino',           subdomain: 'divinonino',           chaplet: true,  novena: true,  color: '#020510', short: { es: 'Divino Niño',   en: 'Divine Child'      }, name: { en: 'Divine Child Jesus',                es: 'Divino Niño Jesús'                          }, specialty: { es: 'Ternura y confianza',     en: 'Tenderness & Trust'          } },
+  { id: 'santamariagoretti',    subdomain: 'santamariagoretti',    chaplet: true,  novena: true,  color: '#a11b28', short: { es: 'Sta. Goretti',  en: 'St. Goretti'       }, name: { en: 'Saint Maria Goretti',               es: 'Santa Maria Goretti'                      }, specialty: { es: 'Pureza y perdón',          en: 'Purity & forgiveness'        } },
   { id: 'preciosisimasangre',   subdomain: 'preciosisimasangre',   chaplet: true,  novena: true,  color: '#7a1010', short: { es: 'Prec. Sangre',  en: 'Precious Blood'    }, name: { en: 'Most Precious Blood of Christ',       es: 'Preciosísima Sangre de Cristo'            }, specialty: { es: 'Redención y protección',   en: 'Redemption & protection'     } },
 ];
 
@@ -2046,6 +2046,352 @@ function getChapletSteps(id, lang) {
       steps.push({ ...gloria });
     });
     steps.push(final, { ...cruz, label: L ? 'Señal de la Cruz final' : 'Final Sign of the Cross' });
+    return steps;
+  }
+
+  // ── DIVINO NIÑO JESÚS ────────────────────────
+  if (id === 'divinonino') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«Divino Niño Jesús, que extiendes tus manos como Señor y Dios:\n"Yo reino" — así lo dijiste a través de tu imagen.\nReina en mi corazón, en mi hogar y en mi vida. Amén.»'
+      : '«Divine Child Jesus, who extends your hands as Lord and God:\n"I reign" — thus you said through your image.\nReign in my heart, in my home, and in my life. Amen.»', count: 1, bead: 'none' };
+    const petitions = L ? [
+      { t: 'Rey de mi corazón', inv: '«Divino Niño, que reinas en el cielo y pides reinar también en la tierra:\nreina en mi corazón y en el de todos los que amo.»' },
+      { t: 'Proveedor de mis necesidades', inv: '«Divino Niño, que provees a los que confían en Ti:\nprovee también a mi familia en nuestra necesidad de hoy.»' },
+      { t: 'Sanador de lo que está roto', inv: '«Divino Niño, que traes paz donde hay angustia:\nsana lo que en mí está roto: salud, relaciones, esperanza.»' },
+      { t: 'Protector de los pequeños', inv: '«Divino Niño, que amas a los humildes y sencillos:\nprotege a los niños del mundo, a los pobres y a los más vulnerables.»' },
+      { t: 'Fuente de alegría', inv: '«Divino Niño, que traes la alegría del cielo a la tierra:\nque tu alegría sea también la mía, incluso en los días difíciles.»' },
+    ] : [
+      { t: 'King of my heart', inv: '«Divine Child, who reign in heaven and ask to reign also on earth:\nreign in my heart and in the hearts of all I love.»' },
+      { t: 'Provider of my needs', inv: '«Divine Child, who provide for those who trust in You:\nprovide also for my family in our need today.»' },
+      { t: 'Healer of what is broken', inv: '«Divine Child, who bring peace where there is anguish:\nheal what in me is broken: health, relationships, hope.»' },
+      { t: 'Protector of the little ones', inv: '«Divine Child, who love the humble and simple:\nprotect the children of the world, the poor, and the most vulnerable.»' },
+      { t: 'Source of joy', inv: '«Divine Child, who bring the joy of heaven to earth:\nmay your joy be mine as well, even on difficult days.»' },
+    ];
+    const steps = [opening];
+    petitions.forEach((pet, i) => {
+      steps.push({ label: L ? `Petición ${i+1}: ${pet.t}` : `Petition ${i+1}: ${pet.t}`, text: pet.t, count: 1, bead: 'none' });
+      steps.push({ label: L ? `Padre Nuestro · ${pet.t}` : `Our Father · ${pet.t}`, text: p.pn, count: 1, bead: 'large' });
+      steps.push({ label: L ? `Ave María × 3 · ${pet.t}` : `Hail Mary × 3 · ${pet.t}`, text: p.am, count: 3, bead: 'small' });
+      steps.push({ label: L ? `Invocación · ${pet.t}` : `Invocation · ${pet.t}`, text: pet.inv, count: 1, bead: 'none' });
+    });
+    steps.push({ label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«Divino Niño Jesús, yo creo en Ti, espero en Ti, te amo.\nTú que dijiste "Yo reino": reina en mi vida entera.\nAmén.»'
+      : '«Divine Child Jesus, I believe in You, I hope in You, I love You.\nYou who said "I reign": reign over my entire life.\nAmen.»', count: 1, bead: 'none' });
+    return steps;
+  }
+
+  // ── NUESTRA SEÑORA DE LOURDES ─────────────────
+  if (id === 'lourdes') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«Nuestra Señora de Lourdes, que te apareciste a Bernadette en la gruta del Massabielle\ny dijiste "Soy la Inmaculada Concepción":\nque tu agua, tu luz y tu paz desciendan también sobre mí.»'
+      : '«Our Lady of Lourdes, who appeared to Bernadette in the Massabielle Grotto\nand said "I am the Immaculate Conception":\nmay your water, your light, and your peace descend upon me as well.»', count: 1, bead: 'none' };
+    const apariciones = L ? [
+      { n: '1ª', t: 'Primera aparición: el viento sin viento y la luz sin fuego en la gruta.', inv: '«Virgen de Lourdes, que te revelaste primero en silencio:\nque yo también aprenda a reconocerte en el silencio de mi vida.»' },
+      { n: '2ª', t: 'La petición de penitencia y oración por los pecadores.', inv: '«Virgen de Lourdes, que pediste penitencia:\ndame un corazón contrito y la valentía de la conversión.»' },
+      { n: '3ª', t: 'La invitación a beber del manantial: el agua que brota para la sanación.', inv: '«Virgen de Lourdes, fuente de gracia:\nque el agua de tu gruta lave mis pecados y sane mis enfermedades.»' },
+      { n: '4ª', t: 'La revelación: "Soy la Inmaculada Concepción".', inv: '«Virgen Inmaculada de Lourdes:\nque tu pureza me alcance la gracia de la conversión profunda.»' },
+    ] : [
+      { n: '1st', t: 'First apparition: wind without wind and light without fire in the grotto.', inv: '«Virgin of Lourdes, who first revealed yourself in silence:\nmay I also learn to recognize you in the silence of my life.»' },
+      { n: '2nd', t: 'The call to penance and prayer for sinners.', inv: '«Virgin of Lourdes, who asked for penance:\ngive me a contrite heart and the courage of conversion.»' },
+      { n: '3rd', t: 'The invitation to drink from the spring: water that flows for healing.', inv: '«Virgin of Lourdes, source of grace:\nmay the water of your grotto wash my sins and heal my illnesses.»' },
+      { n: '4th', t: 'The revelation: "I am the Immaculate Conception".', inv: '«Immaculate Virgin of Lourdes:\nmay your purity obtain for me the grace of deep conversion.»' },
+    ];
+    const steps = [opening];
+    apariciones.forEach(a => {
+      steps.push({ label: L ? `${a.n} Aparición` : `${a.n} Apparition`, text: a.t, count: 1, bead: 'none' });
+      steps.push({ label: L ? `Padre Nuestro · ${a.n}` : `Our Father · ${a.n}`, text: p.pn, count: 1, bead: 'large' });
+      steps.push({ label: L ? `Ave María × 10 · ${a.n}` : `Hail Mary × 10 · ${a.n}`, text: p.am, count: 10, bead: 'small' });
+      steps.push({ label: L ? `Invocación · ${a.n}` : `Invocation · ${a.n}`, text: a.inv, count: 1, bead: 'none' });
+    });
+    steps.push({ label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«Nuestra Señora de Lourdes, salud de los enfermos:\nruega por todos los que sufren en su cuerpo o en su alma.\nQue tu gracia, como el agua de Massabielle, fluya también sobre nuestra vida.\nAmén.»'
+      : '«Our Lady of Lourdes, health of the sick:\npray for all who suffer in body or soul.\nMay your grace, like the water of Massabielle, flow also over our lives.\nAmen.»', count: 1, bead: 'none' });
+    return steps;
+  }
+
+  // ── SAN CHARBEL MAKHLOUF ─────────────────────
+  if (id === 'sancharbel') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«San Charbel, ermitaño del Líbano, silencioso ante Dios y poderoso ante los hombres:\ntú cuyo cuerpo incorrupto sigue siendo señal de la presencia de Dios,\npresenta mis necesidades ante el trono del Altísimo.»'
+      : '«Saint Charbel, hermit of Lebanon, silent before God and powerful before men:\nyou whose incorrupt body remains a sign of God\'s presence,\npresent my needs before the throne of the Most High.»', count: 1, bead: 'none' };
+    const petitions = L ? [
+      '«San Charbel, que viviste de pan y agua:\nque yo también aprenda a vivir de lo esencial: Dios, oración y amor.»',
+      '«San Charbel, que pasabas la noche en adoración:\nque mi oración sea cada día más real y no solo de palabras.»',
+      '«San Charbel, que curaste a los enfermos con aceite bendito:\npresenta mis enfermedades ante Dios y pide su sanación.»',
+      '«San Charbel, que fuiste incorrupto porque tu vida fue pura:\nque yo también busque la pureza de corazón que agrada a Dios.»',
+      '«San Charbel, que amabas la Eucaristía sobre todo:\nque yo nunca trivialice el don del Cuerpo y Sangre de Cristo.»',
+      '«San Charbel, mártir del silencio y la oración:\nque tu intercesión llegue hasta lo que parece imposible en mi vida.»',
+    ] : [
+      '«Saint Charbel, who lived on bread and water:\nmay I also learn to live on what is essential: God, prayer, and love.»',
+      '«Saint Charbel, who spent the night in adoration:\nmay my prayer become each day more real and not just words.»',
+      '«Saint Charbel, who healed the sick with blessed oil:\npresent my illnesses before God and ask for his healing.»',
+      '«Saint Charbel, who was incorrupt because your life was pure:\nmay I also seek the purity of heart that pleases God.»',
+      '«Saint Charbel, who loved the Eucharist above all:\nmay I never trivialize the gift of the Body and Blood of Christ.»',
+      '«Saint Charbel, martyr of silence and prayer:\nmay your intercession reach what seems impossible in my life.»',
+    ];
+    const steps = [opening];
+    petitions.forEach((pet, i) => {
+      steps.push({ label: L ? `Petición ${i+1}` : `Petition ${i+1}`, text: pet, count: 1, bead: 'small' });
+    });
+    steps.push({ label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«San Charbel, árbol cedro del Líbano plantado por Dios:\nque tu intercesión sea hoy más fuerte que mi duda.\nAmén.»'
+      : '«Saint Charbel, cedar tree of Lebanon planted by God:\nmay your intercession today be stronger than my doubt.\nAmen.»', count: 1, bead: 'none' });
+    return steps;
+  }
+
+  // ── SANTA DYMPHNA ─────────────────────────────
+  if (id === 'santadymphna') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«Santa Dymphna, mártir de la pureza y patrona de los que sufren en su mente:\ntú que conociste el peso de una familia rota y de un padre que perdió la razón,\nruega por todos los que hoy llevan una mente y un corazón atormentados.»'
+      : '«Saint Dymphna, martyr of purity and patron of those who suffer in their minds:\nyou who knew the weight of a broken family and a father who lost his reason,\npray for all who today carry a tormented mind and heart.»', count: 1, bead: 'none' };
+    const petitions = L ? [
+      '«Santa Dymphna, por los que sufren depresión y oscuridad interior:\nque la luz de Cristo llegue a donde ya no ven salida.»',
+      '«Santa Dymphna, por los que viven con ansiedad y pánico:\nque la paz de Dios que sobrepasa todo entendimiento los guarde.»',
+      '«Santa Dymphna, por los que han perdido la esperanza:\nque tu intercesión les devuelva un motivo para seguir.»',
+      '«Santa Dymphna, por quienes cuidan de enfermos mentales:\nque Dios les dé paciencia, fortaleza y amor sin agotarse.»',
+      '«Santa Dymphna, por los niños y jóvenes que sufren en silencio:\nque alguien los vea, los escuche y los acompañe.»',
+      '«Santa Dymphna, por todos los hospitales psiquiátricos del mundo:\nque el amor de Dios se sienta también allí, en lo más olvidado.»',
+      '«Santa Dymphna, que diste tu vida antes que traicionar tu fe:\nque todos los que sufren encuentren en su fe una roca firme.»',
+      '«Santa Dymphna, patrona de nuestra familia:\nque todo hogar herido encuentre en Dios su sanación.»',
+      '«Santa Dymphna, intercede especialmente por esta intención\nque hoy traigo ante Dios con fe y esperanza.»',
+    ] : [
+      '«Saint Dymphna, for those who suffer depression and inner darkness:\nmay the light of Christ reach where they see no way out.»',
+      '«Saint Dymphna, for those who live with anxiety and panic:\nmay the peace of God which surpasses all understanding guard them.»',
+      '«Saint Dymphna, for those who have lost hope:\nmay your intercession restore to them a reason to go on.»',
+      '«Saint Dymphna, for those who care for the mentally ill:\nmay God give them patience, strength, and love without exhaustion.»',
+      '«Saint Dymphna, for children and young people who suffer in silence:\nmay someone see them, hear them, and accompany them.»',
+      '«Saint Dymphna, for all psychiatric hospitals in the world:\nmay the love of God be felt also there, in the most forgotten places.»',
+      '«Saint Dymphna, who gave your life rather than betray your faith:\nmay all who suffer find in their faith a firm rock.»',
+      '«Saint Dymphna, patron of our family:\nmay every wounded home find its healing in God.»',
+      '«Saint Dymphna, intercede especially for this intention\nthat today I bring before God with faith and hope.»',
+    ];
+    const steps = [opening];
+    petitions.forEach((pet, i) => {
+      steps.push({ label: L ? `Petición ${i+1} de 9` : `Petition ${i+1} of 9`, text: pet, count: 1, bead: 'small' });
+    });
+    steps.push({ label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«Santa Dymphna, que fuiste mártir de la fuerza y no de la debilidad:\nmuéstranos que la salud mental también se cuida con la fe,\ncon la oración y con el amor concreto al prójimo.\nAmén.»'
+      : '«Saint Dymphna, who were a martyr of strength and not weakness:\nshow us that mental health is also cared for through faith,\nthrough prayer, and through concrete love for our neighbor.\nAmen.»', count: 1, bead: 'none' });
+    return steps;
+  }
+
+  // ── SAN PEDRO APÓSTOL ────────────────────────
+  if (id === 'sanpedro') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«San Pedro, Apóstol y primer Papa:\ntú que negaste al Señor y fuiste perdonado,\ntú sobre quien Cristo edificó su Iglesia,\nayúdame a confiar siempre en la misericordia de Dios\naun cuando haya caído.»'
+      : '«Saint Peter, Apostle and first Pope:\nyou who denied the Lord and were forgiven,\nyou upon whom Christ built his Church,\nhelp me always to trust in the mercy of God\neven when I have fallen.»', count: 1, bead: 'none' };
+    const misterios = L ? [
+      { m: '1°: La Vocación', t: 'Jesús llama a Simón desde su barca: "Sígueme y te haré pescador de hombres".', inv: '«San Pedro, que dejaste todo para seguir a Cristo:\nayúdame a poner a Dios por encima de todo en mi vida.»' },
+      { m: '2°: La Fe', t: 'Pedro camina sobre el agua mientras fija la vista en Jesús; al dudar, se hunde.', inv: '«San Pedro, que aprendiste a caminar sobre el agua con los ojos en Cristo:\nque yo también aprenda a no quitar la vista de Él.»' },
+      { m: '3°: La Confesión', t: 'Pedro confiesa: "Tú eres el Cristo, el Hijo de Dios vivo". Cristo le da las Llaves del Reino.', inv: '«San Pedro, roca sobre la que Cristo edifica su Iglesia:\nque mi fe también sea firme en la confesión de Cristo.»' },
+      { m: '4°: La Negación y el Perdón', t: 'Pedro niega al Señor tres veces y llora amargamente. Cristo lo mira y lo perdona.', inv: '«San Pedro, que conoces el peso de la caída y la dulzura del perdón:\nruega por los que se han alejado de Dios y necesitan volver.»' },
+      { m: '5°: El Primado', t: 'Cristo pregunta: "¿Me amas?" — tres veces. Pedro responde tres veces: "Sí, Señor".', inv: '«San Pedro, confirmado en el amor y el servicio:\nque yo también responda a Cristo con amor concreto cada día.»' },
+      { m: '6°: Pentecostés', t: 'Pedro recibe el Espíritu Santo y predica con valentía; tres mil personas se convierten.', inv: '«San Pedro, lleno del Espíritu Santo:\nque yo también reciba la valentía de anunciar a Cristo sin vergüenza.»' },
+    ] : [
+      { m: '1st: The Calling', t: 'Jesus calls Simon from his boat: "Follow me and I will make you a fisher of men".', inv: '«Saint Peter, who left everything to follow Christ:\nhelp me to place God above everything in my life.»' },
+      { m: '2nd: Faith', t: 'Peter walks on water while fixing his eyes on Jesus; when he doubts, he sinks.', inv: '«Saint Peter, who learned to walk on water with eyes on Christ:\nmay I also learn never to look away from Him.»' },
+      { m: '3rd: The Confession', t: 'Peter confesses: "You are the Christ, the Son of the living God." Christ gives him the Keys of the Kingdom.', inv: '«Saint Peter, rock on which Christ builds his Church:\nmay my faith also be firm in the confession of Christ.»' },
+      { m: '4th: Denial and Forgiveness', t: 'Peter denies the Lord three times and weeps bitterly. Christ looks at him and forgives him.', inv: '«Saint Peter, who know the weight of the fall and the sweetness of forgiveness:\npray for those who have moved away from God and need to return.»' },
+      { m: '5th: The Primacy', t: 'Christ asks: "Do you love me?" — three times. Peter answers three times: "Yes, Lord".', inv: '«Saint Peter, confirmed in love and service:\nmay I also respond to Christ with concrete love each day.»' },
+      { m: '6th: Pentecost', t: 'Peter receives the Holy Spirit and preaches boldly; three thousand people are converted.', inv: '«Saint Peter, filled with the Holy Spirit:\nmay I also receive the courage to proclaim Christ without shame.»' },
+    ];
+    const steps = [opening];
+    misterios.forEach(m => {
+      steps.push({ label: m.m, text: m.t, count: 1, bead: 'none' });
+      steps.push({ label: L ? `Padre Nuestro · ${m.m.split(':')[0]}` : `Our Father · ${m.m.split(':')[0]}`, text: p.pn, count: 1, bead: 'large' });
+      steps.push({ label: L ? `Ave María × 10 · ${m.m.split(':')[0]}` : `Hail Mary × 10 · ${m.m.split(':')[0]}`, text: p.am, count: 10, bead: 'small' });
+      steps.push({ label: L ? `Invocación · ${m.m.split(':')[0]}` : `Invocation · ${m.m.split(':')[0]}`, text: m.inv, count: 1, bead: 'none' });
+    });
+    steps.push({ label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«San Pedro, pescador de hombres y Vicario de Cristo:\nruega por el Papa, por la Iglesia y por todos los que dudamos\npara que también nosotros seamos confirmados en la fe. Amén.»'
+      : '«Saint Peter, fisher of men and Vicar of Christ:\npray for the Pope, for the Church, and for all who doubt\nthat we too may be confirmed in faith. Amen.»', count: 1, bead: 'none' });
+    return steps;
+  }
+
+  // ── SANTA MÓNICA (Coronilla de las Lágrimas) ──
+  if (id === 'santamonica') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«Santa Mónica, madre que nunca se rindió:\ntú que lloraste y oraste durante diecisiete años por la conversión de Agustín\nhasta que el obispo te dijo: "No puede perderse el hijo de tantas lágrimas",\nruega por mí y por todos los que esperan la conversión de alguien amado.»'
+      : '«Saint Monica, mother who never gave up:\nyou who wept and prayed for seventeen years for the conversion of Augustine\nuntil the bishop told you: "The son of so many tears cannot be lost",\npray for me and for all who wait for the conversion of a loved one.»', count: 1, bead: 'none' };
+    const petitions = L ? [
+      '«Por las madres que lloran por un hijo alejado de Dios:\nque sus lágrimas sean oración y su esperanza no se apague.»',
+      '«Por los hijos que aún no han vuelto:\nque la gracia de Dios trabaje en su corazón aunque no lo parezca.»',
+      '«Por los matrimonios en crisis:\nque el amor de Dios sea más fuerte que el dolor y la distancia.»',
+      '«Por los que luchan contra el alcohol o las adicciones:\nque encuentren la fortaleza que solo Dios puede dar.»',
+      '«Por los que han abandonado la fe en la juventud:\nque como Agustín, lleguen a decir: "Nos hiciste para Ti, Señor".»',
+      '«Por todos los que esperan en silencio y en oración:\nque su perseverancia sea recompensada.»',
+      '«Por la conversión de la persona que llevo en el corazón:\npor ella presento hoy esta coronilla.»',
+    ] : [
+      '«For mothers who weep for a child far from God:\nmay their tears be prayer and their hope not be extinguished.»',
+      '«For children who have not yet returned:\nmay the grace of God work in their heart even when it doesn\'t seem so.»',
+      '«For marriages in crisis:\nmay the love of God be stronger than the pain and the distance.»',
+      '«For those who struggle with alcohol or addictions:\nmay they find the strength that only God can give.»',
+      '«For those who have abandoned the faith in youth:\nmay they, like Augustine, come to say: "You made us for yourself, Lord".»',
+      '«For all who wait in silence and in prayer:\nmay their perseverance be rewarded.»',
+      '«For the conversion of the person I carry in my heart:\nfor them I offer this chaplet today.»',
+    ];
+    const steps = [opening];
+    petitions.forEach((pet, i) => {
+      steps.push({ label: L ? `Lágrima ${i+1}` : `Tear ${i+1}`, text: pet, count: 1, bead: 'small' });
+    });
+    steps.push({ label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«Santa Mónica, que conoces el peso de amar sin ver el fruto:\nque yo también persevere en la oración por los que amo\nsin rendirme, sin desesperarme, confiando en que Dios trabaja\nincluso cuando yo no veo nada.\nAmén.»'
+      : '«Saint Monica, who know the weight of loving without seeing the fruit:\nmay I also persevere in prayer for those I love\nwithout giving up, without despairing, trusting that God works\neven when I see nothing.\nAmen.»', count: 1, bead: 'none' });
+    return steps;
+  }
+
+  // ── SANTA MARÍA GORETTI ───────────────────────
+  if (id === 'santamariagoretti') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«Santa María Goretti, mártir de la pureza y testigo del perdón:\ntú que a los once años elegiste la muerte antes que el pecado\ny perdonaste a tu asesino antes de morir:\neuega por los jóvenes del mundo, por las víctimas de violencia\ny por todos los que necesitan la fuerza del perdón.»'
+      : '«Saint Maria Goretti, martyr of purity and witness of forgiveness:\nyou who at eleven years old chose death rather than sin\nand forgave your killer before dying:\npray for the young people of the world, for victims of violence,\nand for all who need the strength of forgiveness.»', count: 1, bead: 'none' };
+    const petitions = L ? [
+      '«Por los jóvenes que enfrentan presión para abandonar la pureza:\nque encuentren en Cristo la fuerza y la libertad de decir no.»',
+      '«Por las víctimas de abuso y violencia:\nque Dios sane sus heridas más profundas.»',
+      '«Por los que se sienten manchados o sin valor:\nque sepan que Dios los ama con amor que restaura todo.»',
+      '«Por los que luchan contra la pornografía o la impureza:\nque encuentren en Dios la libertad que no encuentran en otro lugar.»',
+      '«Por Alessandro Serenelli y todos los que han dañado a otros:\nque el perdón de Cristo los alcance y los transforme.»',
+      '«Por la cultura del mundo que confunde el amor con el uso:\nque el testimonio de María Goretti devuelva la dignidad a la sexualidad.»',
+      '«Por los que cuidan a niños y jóvenes en peligro:\nque Dios los llene de sabiduría y valentía.»',
+    ] : [
+      '«For young people who face pressure to abandon purity:\nmay they find in Christ the strength and freedom to say no.»',
+      '«For victims of abuse and violence:\nmay God heal their deepest wounds.»',
+      '«For those who feel stained or worthless:\nmay they know that God loves them with a love that restores everything.»',
+      '«For those who struggle with pornography or impurity:\nmay they find in God the freedom they cannot find elsewhere.»',
+      '«For Alessandro Serenelli and all who have harmed others:\nmay the forgiveness of Christ reach and transform them.»',
+      '«For a culture that confuses love with use:\nmay the witness of Maria Goretti restore dignity to sexuality.»',
+      '«For those who protect children and youth in danger:\nmay God fill them with wisdom and courage.»',
+    ];
+    const steps = [opening];
+    petitions.forEach((pet, i) => {
+      steps.push({ label: L ? `Petición ${i+1}` : `Petition ${i+1}`, text: pet, count: 1, bead: 'small' });
+      if (i % 2 === 0) steps.push({ label: L ? `Ave María · Petición ${i+1}` : `Hail Mary · Petition ${i+1}`, text: p.am, count: 1, bead: 'small' });
+    });
+    steps.push({ label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«Santa María Goretti, flor que no se marchitó:\nque tu testimonio de pureza y perdón ilumine este mundo\nque tanto necesita saber que la dignidad humana vale más que la vida misma.\nAmén.»'
+      : '«Saint Maria Goretti, flower that did not wither:\nmay your witness of purity and forgiveness illuminate this world\nthat so needs to know that human dignity is worth more than life itself.\nAmen.»', count: 1, bead: 'none' });
+    return steps;
+  }
+
+  // ── SAN LUIS GONZAGA ─────────────────────────
+  if (id === 'sanluisgonzaga') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«San Luis Gonzaga, joven noble que renunció a un marquesado por amor a Dios:\ntú que en veintitrés años viviste más santidad que muchos en toda una vida:\npatroniza a los jóvenes del mundo y muéstrales que la pureza es libertad.»'
+      : '«Saint Aloysius Gonzaga, young nobleman who renounced a marquisate out of love for God:\nyou who in twenty-three years lived more holiness than many in a whole lifetime:\nbless the youth of the world and show them that purity is freedom.»', count: 1, bead: 'none' };
+    const petitions = L ? [
+      { t: 'Pureza', inv: '«San Luis, que guardaste tu corazón puro para Dios:\nque los jóvenes del mundo descubran la libertad de la pureza.»' },
+      { t: 'Renuncia', inv: '«San Luis, que renunciaste al poder y a la riqueza por Cristo:\nque yo también sepa soltar lo que me aleja de Dios.»' },
+      { t: 'Oración', inv: '«San Luis, que pasabas horas en oración con ardor y alegría:\nque mi vida de oración sea más real y más profunda.»' },
+      { t: 'Caridad', inv: '«San Luis, que cuidaste a los enfermos de la plaga hasta morir:\nque yo también sirva a los que sufren sin miedo al costo.»' },
+      { t: 'Vocación', inv: '«San Luis, que respondiste a Dios con toda tu vida:\nque cada joven encuentre y viva con valentía su vocación.»' },
+      { t: 'Juventud del mundo', inv: '«San Luis, patrón de la juventud:\nruega por todos los jóvenes que hoy buscan sentido, amor y verdad.»' },
+    ] : [
+      { t: 'Purity', inv: '«Saint Aloysius, who kept your heart pure for God:\nmay the youth of the world discover the freedom of purity.»' },
+      { t: 'Renunciation', inv: '«Saint Aloysius, who gave up power and wealth for Christ:\nmay I also let go of what distances me from God.»' },
+      { t: 'Prayer', inv: '«Saint Aloysius, who spent hours in prayer with ardor and joy:\nmay my prayer life become more real and more deep.»' },
+      { t: 'Charity', inv: '«Saint Aloysius, who cared for plague victims until you died:\nmay I also serve those who suffer without fearing the cost.»' },
+      { t: 'Vocation', inv: '«Saint Aloysius, who responded to God with your entire life:\nmay every young person find and live their vocation with courage.»' },
+      { t: 'Youth of the world', inv: '«Saint Aloysius, patron of youth:\npray for all young people today who seek meaning, love, and truth.»' },
+    ];
+    const steps = [opening];
+    petitions.forEach(pet => {
+      steps.push({ label: L ? `${pet.t} · Padre Nuestro` : `${pet.t} · Our Father`, text: p.pn, count: 1, bead: 'large' });
+      steps.push({ label: L ? `${pet.t} · Ave María × 3` : `${pet.t} · Hail Mary × 3`, text: p.am, count: 3, bead: 'small' });
+      steps.push({ label: L ? `Invocación · ${pet.t}` : `Invocation · ${pet.t}`, text: pet.inv, count: 1, bead: 'none' });
+    });
+    steps.push({ label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«San Luis Gonzaga, flor de pureza y modelo de juventud consagrada:\nruega por nosotros y por todos los jóvenes del mundo. Amén.»'
+      : '«Saint Aloysius Gonzaga, flower of purity and model of consecrated youth:\npray for us and for all the young people of the world. Amen.»', count: 1, bead: 'none' });
+    return steps;
+  }
+
+  // ── SAN AGUSTÍN (Coronilla de la Conversión) ──
+  if (id === 'sanagustin') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«San Agustín de Hipona, Doctor de la gracia y maestro del corazón humano:\ntú que dijiste "nos hiciste para Ti, Señor, y nuestro corazón estará inquieto\nhasta que descanse en Ti":\nruega por todos los que aún no han encontrado ese descanso.»'
+      : '«Saint Augustine of Hippo, Doctor of grace and master of the human heart:\nyou who said "You made us for yourself, Lord, and our heart is restless\nuntil it rests in You":\npray for all who have not yet found that rest.»', count: 1, bead: 'none' };
+    const etapas = L ? [
+      { e: '1ª Etapa: La Búsqueda', t: 'Agustín buscó la verdad en la filosofía, la retórica y el maniqueísmo antes de encontrarla en Cristo.', inv: '«San Agustín, que buscaste la verdad con todo tu corazón:\nque todos los que buscan encuentren a Cristo.»' },
+      { e: '2ª Etapa: La Resistencia', t: 'Por años Agustín supo que Dios lo llamaba pero pedía "dame castidad, pero no todavía".', inv: '«San Agustín, que conoces la debilidad humana:\nruega por los que saben la verdad pero aún no la abrazan.»' },
+      { e: '3ª Etapa: La Gracia', t: 'En el jardín de Milán, escuchó "toma y lee" — abrió a Pablo y todo cambió.', inv: '«San Agustín, que fuiste tocado por la gracia en un instante:\nque Dios también toque el corazón de los que yo te presento.»' },
+      { e: '4ª Etapa: La Conversión', t: 'Bautizado por San Ambrosio, Agustín lloró de alegría. Volvió a África como nuevo.', inv: '«San Agustín, que conociste la alegría del bautismo recibido de adulto:\nque todos los bautizados renueven hoy su fe con la misma alegría.»' },
+      { e: '5ª Etapa: El Doctor', t: 'Agustín escribió 5 millones de palabras para defender y explicar la fe católica.', inv: '«San Agustín, que pusiste tu inteligencia al servicio de Dios:\nque yo también sirva a Dios con todo lo que soy y tengo.»' },
+    ] : [
+      { e: '1st Stage: The Search', t: 'Augustine sought truth in philosophy, rhetoric, and Manichaeism before finding it in Christ.', inv: '«Saint Augustine, who sought truth with all your heart:\nmay all who search find Christ.»' },
+      { e: '2nd Stage: The Resistance', t: 'For years Augustine knew God was calling him but prayed "give me chastity, but not yet".', inv: '«Saint Augustine, who know human weakness:\npray for those who know the truth but have not yet embraced it.»' },
+      { e: '3rd Stage: Grace', t: 'In the garden of Milan, he heard "take and read" — he opened Paul and everything changed.', inv: '«Saint Augustine, who were touched by grace in an instant:\nmay God also touch the hearts of those I present to you.»' },
+      { e: '4th Stage: Conversion', t: 'Baptized by Saint Ambrose, Augustine wept with joy. He returned to Africa as a new man.', inv: '«Saint Augustine, who knew the joy of baptism received as an adult:\nmay all the baptized today renew their faith with the same joy.»' },
+      { e: '5th Stage: The Doctor', t: 'Augustine wrote 5 million words to defend and explain the Catholic faith.', inv: '«Saint Augustine, who put your intelligence at the service of God:\nmay I also serve God with all that I am and have.»' },
+    ];
+    const steps = [opening];
+    etapas.forEach(e => {
+      steps.push({ label: e.e, text: e.t, count: 1, bead: 'none' });
+      steps.push({ label: L ? `Padre Nuestro · ${e.e.split(':')[0]}` : `Our Father · ${e.e.split(':')[0]}`, text: p.pn, count: 1, bead: 'large' });
+      steps.push({ label: L ? `Ave María × 3 · ${e.e.split(':')[0]}` : `Hail Mary × 3 · ${e.e.split(':')[0]}`, text: p.am, count: 3, bead: 'small' });
+      steps.push({ label: L ? `Invocación · ${e.e.split(':')[0]}` : `Invocation · ${e.e.split(':')[0]}`, text: e.inv, count: 1, bead: 'none' });
+    });
+    steps.push({ label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«San Agustín, que encontraste a Dios después de larga búsqueda:\nque quienes lo buscan hoy lo encuentren también,\ny que quienes ya lo encontraron no lo vuelvan a perder.\nAmén.»'
+      : '«Saint Augustine, who found God after a long search:\nmay those who seek Him today also find Him,\nand may those who already found Him never lose Him again.\nAmen.»', count: 1, bead: 'none' });
+    return steps;
+  }
+
+  // ── REY DAVID (Coronilla de los Salmos) ───────
+  if (id === 'reydavid') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«Rey David, profeta, salmista y antepasado de Cristo:\ntú que caíste y te levantaste, que pecaste y lloraste,\nque adoraste y guerreaste y siempre volviste a Dios:\nque tu Miserere sea también el mío.»'
+      : '«King David, prophet, psalmist, and ancestor of Christ:\nyou who fell and rose, who sinned and wept,\nwho worshiped and warred and always returned to God:\nmay your Miserere also be mine.»', count: 1, bead: 'none' };
+    const salmos = L ? [
+      { s: 'Salmo 23: El Señor es mi pastor', t: '«El Señor es mi pastor; nada me falta.\nEn verdes praderas me hace reposar;\nme conduce hacia fuentes tranquilas\ny repara mis fuerzas.»', inv: '«Rey David, salmista del consuelo:\nque yo también confíe en que el Señor es mi pastor.»' },
+      { s: 'Salmo 51: El Miserere', t: '«Ten piedad de mí, oh Dios, por tu bondad;\npor tu inmensa compasión borra mi delito.\nLava del todo mi pecado,\nlímpíame de mi culpa.»', inv: '«Rey David, que lloraste tu pecado sin esconderlo:\nque yo también tenga el valor de acudir a Dios con mi pecado.»' },
+      { s: 'Salmo 139: Tú me conoces', t: '«Señor, tú me escudriñas y me conoces;\nsabes cuándo me siento y cuándo me levanto,\nde lejos conoces mis pensamientos.»', inv: '«Rey David, asombrado de ser conocido por Dios:\nque yo también descanse en que Dios me conoce completamente y me ama.»' },
+      { s: 'Salmo 27: El Señor es mi luz', t: '«El Señor es mi luz y mi salvación,\n¿a quién temeré?\nEl Señor es la defensa de mi vida,\n¿quién me hará temblar?»', inv: '«Rey David, guerrero que ponía su confianza en Dios y no en su ejército:\nque mi primera defensa siempre sea la oración.»' },
+      { s: 'Salmo 103: Alaba al Señor', t: '«Bendice al Señor, alma mía,\ny todo mi ser bendiga su santo nombre.\nBendice al Señor, alma mía,\ny no olvides ninguno de sus beneficios.»', inv: '«Rey David, que alabaste a Dios con arpa y danza:\nque toda mi vida sea también un canto de gratitud.»' },
+    ] : [
+      { s: 'Psalm 23: The Lord is my shepherd', t: '«The Lord is my shepherd; I shall not want.\nHe makes me lie down in green pastures;\nhe leads me beside still waters\nand restores my soul.»', inv: '«King David, psalmist of consolation:\nmay I also trust that the Lord is my shepherd.»' },
+      { s: 'Psalm 51: The Miserere', t: '«Have mercy on me, O God, according to your steadfast love;\naccording to your abundant mercy blot out my transgressions.\nWash me thoroughly from my iniquity\nand cleanse me from my sin.»', inv: '«King David, who wept your sin without hiding it:\nmay I also have the courage to come to God with my sin.»' },
+      { s: 'Psalm 139: You know me', t: '«Lord, you have searched me and known me!\nYou know when I sit down and when I rise;\nyou discern my thoughts from afar.»', inv: '«King David, astonished to be known by God:\nmay I also rest in the fact that God knows me completely and loves me.»' },
+      { s: 'Psalm 27: The Lord is my light', t: '«The Lord is my light and my salvation;\nwhom shall I fear?\nThe Lord is the stronghold of my life;\nof whom shall I be afraid?»', inv: '«King David, warrior who placed his trust in God and not in his army:\nmay my first defense always be prayer.»' },
+      { s: 'Psalm 103: Bless the Lord', t: '«Bless the Lord, O my soul,\nand all that is within me, bless his holy name!\nBless the Lord, O my soul,\nand forget not all his benefits.»', inv: '«King David, who praised God with harp and dance:\nmay my entire life also be a song of gratitude.»' },
+    ];
+    const steps = [opening];
+    salmos.forEach(s => {
+      steps.push({ label: s.s, text: s.t, count: 1, bead: 'large' });
+      steps.push({ label: L ? `Invocación · ${s.s.split(':')[0]}` : `Invocation · ${s.s.split(':')[0]}`, text: s.inv, count: 1, bead: 'none' });
+    });
+    steps.push({ label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«Rey David, antepasado de Cristo y modelo de quien cae y se levanta:\nque tu vida nos enseñe que la santidad no es no caer,\nsino levantarse siempre con el Miserere en los labios.\nAmén.»'
+      : '«King David, ancestor of Christ and model of one who falls and rises:\nmay your life teach us that holiness is not about never falling,\nbut about always rising with the Miserere on our lips.\nAmen.»', count: 1, bead: 'none' });
+    return steps;
+  }
+
+  // ── SANTA FABIOLA ─────────────────────────────
+  if (id === 'santafabiola') {
+    const opening = { label: L ? 'Oración Inicial' : 'Opening Prayer', text: L
+      ? '«Santa Fabiola de Roma, patrona de los divorciados, los heridos y los que buscan una segunda oportunidad:\ntú que te divorciaste, te volviste a casar, perdiste a tu segundo esposo\ny luego fundaste el primer hospital público de Europa por penitencia y amor:\nauéstrame que nunca es demasiado tarde para Dios.»'
+      : '«Saint Fabiola of Rome, patron of the divorced, the wounded, and those seeking a second chance:\nyou who divorced, remarried, lost your second husband,\nand then founded the first public hospital in Europe out of penance and love:\nshow me that it is never too late for God.»', count: 1, bead: 'none' };
+    const petitions = L ? [
+      '«Por los divorciados que se sienten excluidos de la Iglesia:\nque encuentren en Dios misericordia y camino, no condena.»',
+      '«Por los que cargan el peso de un error matrimonial:\nque la gracia de Dios sea más grande que cualquier equivocación.»',
+      '«Por los enfermos que no tienen quien los cuide:\nque haya siempre un Fabiola dispuesto a servir.»',
+      '«Por los que buscan reconciliarse con la Iglesia:\nque encuentren puertas abiertas y corazones que los reciban.»',
+      '«Por los que han usado mal su riqueza y quieren remediar el daño:\nque como Fabiola, conviertan su arrepentimiento en caridad concreta.»',
+      '«Por todos los que necesitan una segunda oportunidad:\nque Dios se la conceda y que la aprovechen bien.»',
+    ] : [
+      '«For the divorced who feel excluded from the Church:\nmay they find in God mercy and a way forward, not condemnation.»',
+      '«For those who carry the weight of a marital mistake:\nmay the grace of God be greater than any error.»',
+      '«For the sick who have no one to care for them:\nmay there always be a Fabiola ready to serve.»',
+      '«For those who seek reconciliation with the Church:\nmay they find open doors and welcoming hearts.»',
+      '«For those who have misused their wealth and want to make amends:\nmay they, like Fabiola, convert their repentance into concrete charity.»',
+      '«For all who need a second chance:\nmay God grant it to them and may they make good use of it.»',
+    ];
+    const steps = [opening];
+    petitions.forEach((pet, i) => {
+      steps.push({ label: L ? `Petición ${i+1}` : `Petition ${i+1}`, text: pet, count: 1, bead: 'small' });
+    });
+    steps.push({ label: L ? 'Oración Final' : 'Closing Prayer', text: L
+      ? '«Santa Fabiola, que convertiste tu dolor en caridad y tu error en santidad:\nque todos los que llegan a Dios con las manos sucias de su pasado\ndescubran que Él las limpia y las llena de gracia.\nAmén.»'
+      : '«Saint Fabiola, who turned your pain into charity and your mistake into holiness:\nmay all who come to God with hands stained by their past\ndiscover that He cleanses them and fills them with grace.\nAmen.»', count: 1, bead: 'none' });
     return steps;
   }
 

@@ -72,9 +72,15 @@
       "en": "Day 9 — I Trust in You\n\nDivine Child Jesus, this novena ends where it began: before your outstretched hands.\n\nI do not know if my petitions will be answered as I hope. I do not know if the road ahead will be easy. I do not know many things. But I do know this: that you are here. That you see me. That something about me matters to you in a way I cannot quite understand but somehow feel.\n\nThat is all I need to keep going.\n\nDivine Child Jesus, from Colombia to the world, from Bethlehem to eternity:\nI trust in you.\n\nPray: 1 Our Father, 1 Hail Mary, 1 Glory Be."
     }
   ],
-  "chaplet": { "available": false },
-  "litany": { "available": false },
-  "consecration": { "available": false },
+  "chaplet": {
+    "available": true
+  },
+  "litany": {
+    "available": false
+  },
+  "consecration": {
+    "available": false
+  },
   "miracles": {
     "available": true,
     "es": "1. LOS PRIMEROS FAVORES DEL BARRIO 20 DE JULIO (1935-1940)\nLos archivos de la comunidad salesiana en Bogotá conservan decenas de testimonios de los primeros años de la devoción, recogidos por el padre Rizzo y sus sucesores. Entre los más documentados: una mujer del barrio con una úlcera infectada en la pierna, desahuciada por los médicos del dispensario público, que después de una novena ante la imagen fue curada sin tratamiento; un niño de tres años que cayó desde una ventana del segundo piso sobre pavimento y no sufrió lesión alguna — su madre atribuyó el hecho a una estampita del Divino Niño que había pegado sobre la ropa del niño esa mañana; y varios casos de familias en extrema pobreza que recibieron comida, trabajo o cobijo de manera inexplicable en los días siguientes a pedir ante la imagen. La acumulación de estos testimonios fue lo que convenció a las autoridades salesianas de construir una capilla permanente.\n\n2. EL SANTUARIO QUE TRANSFORMÓ UN BARRIO\nEn 1938 el barrio Veinte de Julio era considerado una de las zonas más peligrosas y pobres de Bogotá. La llegada de la devoción al Divino Niño y la construcción del santuario salesiano transformaron no solo la vida religiosa del barrio sino su tejido social completo. La Congregación Salesiana y los organismos eclesiásticos que examinaron la devoción en los años cuarenta concluyeron que la «transformación visible y cuantificable del barrio» — menor tasa de criminalidad, redes de solidaridad entre vecinos, fundación de escuelas y comedores — era un «signo colectivo de gracia» que excedía la explicación sociológica ordinaria. El fenómeno fue citado por el cardenal Crisanto Luque de Bogotá en 1953 como ejemplo de «evangelización integral».\n\n3. LOS EXVOTOS: MILLONES DE TESTIMONIOS INDIVIDUALES\nLas paredes del Santuario del Divino Niño en Bogotá están cubiertas de exvotos — objetos donados en agradecimiento por favores recibidos: muletas de personas que caminaron de nuevo, fotografías de enfermos que sanaron, papeles con testimonios de conversiones, objetos personales de naufrágios evitados, placas de metal con fechas y nombres que corresponden a gracias recibidas. La colección, imposible de cuantificar con exactitud, representa según los archivos del santuario más de ochenta años de testimonios ininterrumpidos. La Conferencia Episcopal de Colombia ha reconocido oficialmente el santuario como lugar de culto de «particular fuerza devocional» y lo ha incluido en los itinerarios de peregrinación nacional desde 1968.",
