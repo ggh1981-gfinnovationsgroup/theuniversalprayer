@@ -3,7 +3,7 @@
    Cache-first strategy: works fully offline after first load
    ===================================================== */
 
-const CACHE = 'tup-v65';
+const CACHE = 'tup-v66';
 
 // All files to pre-cache on install
 const PRECACHE_URLS = [
@@ -273,9 +273,25 @@ self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
 
   const url = new URL(event.request.url);
+  const isCriticalCore = url.pathname === '/assets/js/main.js' || url.pathname === '/assets/css/styles.css';
   const isCore = /\.(html|js|css)$/.test(url.pathname) || url.pathname === '/' || url.pathname.endsWith('/');
   const isJson = /\.json$/.test(url.pathname);
   const isStatic = /\.(svg|png|ico|webp|woff2?)$/.test(url.pathname);
+
+  if (isCriticalCore) {
+    // Network-first for critical UI assets so deploys reflect immediately.
+    event.respondWith(
+      caches.open(CACHE).then(cache =>
+        fetch(event.request).then(response => {
+          if (response && response.status === 200) {
+            cache.put(event.request, response.clone());
+          }
+          return response;
+        }).catch(() => cache.match(event.request))
+      )
+    );
+    return;
+  }
 
   if (isCore || isJson) {
     // Stale-while-revalidate: return cache immediately, update in background
