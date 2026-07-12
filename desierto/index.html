@@ -24,14 +24,14 @@
   <!-- HEADER -->
   <header class="site-header">
     <div class="header-inner">
-      <a href="/desierto/" class="site-logo back-link">
+      <a href="/" class="site-logo back-link">
         <span class="cross">✝</span>
         <span class="logo-text" data-lang="es">Silencio y Escucha</span>
         <span class="logo-text" data-lang="en" style="display:none">Silence &amp; Listening</span>
       </a>
       <div class="header-controls">
         <button class="lang-toggle" id="langToggle" aria-label="Switch language"><span id="langLabel">EN</span></button>
-        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        <button class="hamburger-btn hamburger" id="hamburgerBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
     </div>
   </header>
@@ -67,6 +67,58 @@
       <div class="a33-bar-wrap"><div class="a33-bar-fill" id="a33BarFill"></div></div>
       <p class="a33-bar-label" id="a33BarLabel" data-lang="es">0 días completados</p>
     </div>
+  </section>
+
+  <!-- Legacy explanation (kept together with 33-day route) -->
+  <section class="des-legacy-wrap">
+    <article class="des-legacy-card">
+      <h2 data-lang="es">Si esto te está costando mucho: guía real de silencio y escucha</h2>
+      <h2 data-lang="en" style="display:none">If this feels hard: practical guide to silence and listening</h2>
+
+      <p data-lang="es">Es normal que cueste al inicio. El silencio cristiano no es vaciar la mente, es quedarte delante de Jesús con verdad aunque haya ruido interior.</p>
+      <p data-lang="en" style="display:none">It is normal to struggle at first. Christian silence is not emptying your mind, but remaining before Jesus in truth even with inner noise.</p>
+
+      <div class="des-legacy-grid">
+        <div class="des-legacy-mini">
+          <h3 data-lang="es">Qué hacer cuando no puedes callar por dentro</h3>
+          <h3 data-lang="en" style="display:none">What to do when your mind will not quiet down</h3>
+          <ul data-lang="es">
+            <li>Nombra el ruido: ansiedad, enojo o cansancio.</li>
+            <li>Respira 4 veces lento y di: "Jesús, aquí estoy".</li>
+            <li>Toma una frase bíblica y guarda 2 minutos de presencia.</li>
+          </ul>
+          <ul data-lang="en" style="display:none">
+            <li>Name the noise: anxiety, anger, or fatigue.</li>
+            <li>Breathe slowly 4 times and say: "Jesus, here I am."</li>
+            <li>Take one Bible line and keep 2 minutes of presence.</li>
+          </ul>
+        </div>
+        <div class="des-legacy-mini">
+          <h3 data-lang="es">Cómo discernir si estás escuchando a Dios</h3>
+          <h3 data-lang="en" style="display:none">How to discern if you are hearing God</h3>
+          <ul data-lang="es">
+            <li>No humilla ni desespera: corrige con verdad y misericordia.</li>
+            <li>Lleva a obediencia concreta, no a curiosidad espiritual.</li>
+            <li>Trae más paz, confesión, caridad y orden.</li>
+          </ul>
+          <ul data-lang="en" style="display:none">
+            <li>It does not humiliate or crush hope; it corrects with mercy.</li>
+            <li>It leads to concrete obedience, not spiritual curiosity.</li>
+            <li>It brings deeper peace, confession, charity, and order.</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="des-legacy-protocol" data-lang="es"><strong>Protocolo de 12 minutos:</strong> 2 min "Señor, aquí está mi ruido"; 4 min "Habla, Señor"; 3 min Jn 6,55 en silencio; 3 min una obediencia concreta.</p>
+      <p class="des-legacy-protocol" data-lang="en" style="display:none"><strong>12-minute protocol:</strong> 2 min "Lord, this is my noise"; 4 min "Speak, Lord"; 3 min Jn 6:55 in silence; 3 min one concrete obedience.</p>
+    </article>
+
+    <article class="des-legacy-card">
+      <h2 data-lang="es">Resumen corto del retiro de 2 días (integrado)</h2>
+      <h2 data-lang="en" style="display:none">Short summary of the 2-day retreat (integrated)</h2>
+      <p data-lang="es">Día 1: callar para adorar. Día 2: escuchar y obedecer. Este contenido se conserva aquí y se complementa con la ruta completa de 33 días.</p>
+      <p data-lang="en" style="display:none">Day 1: be still to adore. Day 2: listen and obey. This content is preserved here and complemented by the full 33-day route.</p>
+    </article>
   </section>
 
   <!-- RESET -->
@@ -131,8 +183,9 @@
         </div>
 
         <!-- Done checkbox -->
-        <label class="a33-done-label">
-          <input type="checkbox" id="mdDoneCheck" />
+        <label class="a33-done-label" id="mdDoneLabel">
+          <input type="checkbox" class="a33-done-check" id="mdDoneCheck" />
+          <span class="a33-done-checkmark"></span>
           <span data-lang="es">Marcar este día como completado</span>
           <span data-lang="en" style="display:none">Mark this day as completed</span>
         </label>
@@ -206,6 +259,64 @@
       font-family: Georgia, serif;
       font-size: 1rem;
     }
+    .des-legacy-wrap {
+      width: min(980px, calc(100% - 1.5rem));
+      margin: 1rem auto 0;
+      display: grid;
+      gap: 0.85rem;
+    }
+    .des-legacy-card {
+      border: 1px solid rgba(201,168,76,0.28);
+      border-radius: 14px;
+      background: rgba(15,22,40,0.82);
+      padding: 1rem;
+    }
+    .des-legacy-card h2 {
+      margin: 0 0 .55rem;
+      color: var(--gold-light, #f5e7bf);
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.2rem;
+    }
+    .des-legacy-card h3 {
+      margin: 0 0 .45rem;
+      color: var(--gold, #c9a84c);
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1rem;
+    }
+    .des-legacy-card p,
+    .des-legacy-card li {
+      color: rgba(255,255,255,0.88);
+      line-height: 1.65;
+      font-size: 0.92rem;
+    }
+    .des-legacy-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .75rem;
+      margin-top: .65rem;
+    }
+    .des-legacy-mini {
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 10px;
+      background: rgba(255,255,255,0.03);
+      padding: .75rem;
+    }
+    .des-legacy-mini ul {
+      margin: 0;
+      padding-left: 1rem;
+      display: grid;
+      gap: .25rem;
+    }
+    .des-legacy-protocol {
+      margin-top: .65rem;
+      border: 1px solid rgba(127,192,226,0.3);
+      background: rgba(127,192,226,0.08);
+      border-radius: 10px;
+      padding: .65rem .75rem;
+    }
+    @media (max-width: 780px) {
+      .des-legacy-grid { grid-template-columns: 1fr; }
+    }
   </style>
 
   <script>
@@ -216,17 +327,32 @@
     const STORAGE_KEY = 'desierto33_done';
     const LANG_KEY    = 'tup_lang';
     const IS_FILE_PROTOCOL = window.location.protocol === 'file:';
-    const PATH_MARKER = '/desierto/33dias/';
+    const PATH_MARKER = '/desierto/';
     const markerIndex = window.location.pathname.indexOf(PATH_MARKER);
     const SITE_ROOT = IS_FILE_PROTOCOL && markerIndex > -1
       ? window.location.pathname.slice(0, markerIndex)
       : '';
-    const DATA_BASE   = IS_FILE_PROTOCOL ? './' : '/desierto/33dias/';
+    const DATA_BASE   = IS_FILE_PROTOCOL
+      ? (window.location.pathname.includes('/desierto/33dias/') ? './' : './33dias/')
+      : '/desierto/33dias/';
     const RING_R      = 52;
     const RING_C      = 2 * Math.PI * RING_R;
 
+    function parseStoredDoneDays() {
+      try {
+        const raw = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+        if (!Array.isArray(raw)) return new Set();
+        const normalized = raw
+          .map(v => Number(v))
+          .filter(v => Number.isInteger(v) && v >= 1 && v <= TOTAL);
+        return new Set(normalized);
+      } catch (_) {
+        return new Set();
+      }
+    }
+
     let lang       = localStorage.getItem(LANG_KEY) || 'es';
-    let doneDays   = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
+    let doneDays   = parseStoredDoneDays();
     let currentDay = null;
     let ttsSpeaking= false;
     let DIAS_33    = {};
@@ -275,6 +401,7 @@
       document.querySelectorAll('[data-lang]').forEach(el => {
         el.style.display = el.dataset.lang === l ? '' : 'none';
       });
+      window.dispatchEvent(new CustomEvent('tup:langchange', { detail: l }));
       renderList();
       updateProgress();
       if (currentDay) populateModal(currentDay);
@@ -480,5 +607,6 @@
     loadAllDays();
   })();
   </script>
+  <script src="/assets/js/menu.js"></script>
 </body>
 </html>
