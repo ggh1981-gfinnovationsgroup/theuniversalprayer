@@ -220,7 +220,7 @@ const INTERCESSORS = [
   { id: 'nuestrasenoracarmen',  subdomain: 'nuestrasenoracarmen',  chaplet: false, novena: true,  color: '#020610', short: { es: 'V. del Carmen',   en: 'Our Lady Carmen'   }, name: { en: 'Our Lady of Mount Carmel',          es: 'Nuestra Señora del Carmen'                }, specialty: { es: 'Protección y contemplación', en: 'Protection & Prayer'         } },
   { id: 'divinonino',           subdomain: 'divinonino',           chaplet: false, novena: true,  color: '#020510', short: { es: 'Divino Niño',   en: 'Divine Child'      }, name: { en: 'Divine Child Jesus',                es: 'Divino Niño Jesús'                          }, specialty: { es: 'Ternura y confianza',     en: 'Tenderness & Trust'          } },
   { id: 'santamariagoretti',    subdomain: 'santamariagoretti',    chaplet: false, novena: true,  color: '#a11b28', short: { es: 'Sta. Goretti',  en: 'St. Goretti'       }, name: { en: 'Saint Maria Goretti',               es: 'Santa Maria Goretti'                      }, specialty: { es: 'Pureza y perdón',          en: 'Purity & forgiveness'        } },
-  { id: 'preciosisimasangre',   subdomain: 'preciosisimasangre',   chaplet: false, novena: true,  color: '#7a1010', short: { es: 'Prec. Sangre',  en: 'Precious Blood'    }, name: { en: 'Most Precious Blood of Christ',       es: 'Preciosísima Sangre de Cristo'            }, specialty: { es: 'Redención y protección',   en: 'Redemption & protection'     } },
+  { id: 'preciosisimasangre',   subdomain: 'preciosisimasangre',   chaplet: true,  novena: true,  color: '#7a1010', short: { es: 'Prec. Sangre',  en: 'Precious Blood'    }, name: { en: 'Most Precious Blood of Christ',       es: 'Preciosísima Sangre de Cristo'            }, specialty: { es: 'Redención y protección',   en: 'Redemption & protection'     } },
 ];
 
 // ── KEYWORD MAP — synonyms for prayer-intent search ──────
@@ -955,7 +955,7 @@ async function initFeaturedSecond() {
     section.style.setProperty('--sec-rgb', rgb);
     section.style.setProperty('--sec-light', light);
 
-    const hasChaplet = meta.chaplet && data.chaplet && data.chaplet.available;
+    const hasChaplet = hasUsableChaplet(data);
     const btnEs = hasChaplet ? '📿 Rezar la Coronilla ahora' : '🙏 Rezar la Novena ahora';
     const btnEn = hasChaplet ? '📿 Pray the Chaplet now'    : '🙏 Pray the Novena now';
 
@@ -1011,7 +1011,7 @@ function buildCard(data, meta) {
     ? `<img src="${withAssetVersion(data.image)}" alt="${data.name[lang]}" loading="lazy" />`
     : `<div class="card-image-placeholder">✝</div>`;
 
-  const hasChaplet = data.chaplet?.available === true;
+  const hasChaplet = hasUsableChaplet(data);
   const hasNovena  = Array.isArray(data.novena?.days) && data.novena.days.length > 0;
 
   const badges = [];
@@ -2052,33 +2052,57 @@ function getChapletSteps(id, lang) {
   return [];
 }
 
+function getChapletTextForLang(data, lang) {
+  if (!data || !data.chaplet) return '';
+  const value = data.chaplet[lang];
+  if (typeof value !== 'string') return '';
+  return value.trim();
+}
+
+function hasUsableChaplet(data) {
+  if (!data) return false;
+  if (getChapletTextForLang(data, 'es') || getChapletTextForLang(data, 'en')) return true;
+  return getChapletSteps(data.id, 'es').length > 0 || getChapletSteps(data.id, 'en').length > 0;
+}
+
 function initChapletPlayer(data) {
   const player    = document.getElementById('chapletPlayer');
   const noChaplet = document.getElementById('noChaplet');
   if (!player || !noChaplet) return;
 
-  if (data.chaplet && data.chaplet.available) {
-    chapletSteps = getChapletSteps(data.id, currentLang);
-    chapletCurrentStep = 0;
-    if (chapletSteps.length > 0) {
-      player.style.display = '';
-      noChaplet.style.display = 'none';
-      renderChapletStep();
-      // Clone buttons to remove old listeners before re-wiring
-      ['cpPrev', 'cpNext'].forEach(id => {
-        const old = document.getElementById(id);
-        const clone = old.cloneNode(true);
-        old.parentNode.replaceChild(clone, old);
-      });
-      document.getElementById('cpPrev').addEventListener('click', () => {
-        if (chapletCurrentStep > 0) { chapletCurrentStep--; renderChapletStep(); }
-      });
-      document.getElementById('cpNext').addEventListener('click', () => {
-        if (chapletCurrentStep < chapletSteps.length - 1) { chapletCurrentStep++; renderChapletStep(); }
-      });
-      return;
-    }
+  const inlineText = getChapletTextForLang(data, currentLang)
+    || getChapletTextForLang(data, currentLang === 'es' ? 'en' : 'es');
+
+  chapletSteps = getChapletSteps(data.id, currentLang);
+  if (chapletSteps.length === 0 && inlineText) {
+    chapletSteps = [{
+      label: currentLang === 'es' ? 'Coronilla' : 'Chaplet',
+      text: inlineText,
+      count: 1,
+      bead: 'none',
+    }];
   }
+
+  chapletCurrentStep = 0;
+  if (chapletSteps.length > 0) {
+    player.style.display = '';
+    noChaplet.style.display = 'none';
+    renderChapletStep();
+    // Clone buttons to remove old listeners before re-wiring
+    ['cpPrev', 'cpNext'].forEach(id => {
+      const old = document.getElementById(id);
+      const clone = old.cloneNode(true);
+      old.parentNode.replaceChild(clone, old);
+    });
+    document.getElementById('cpPrev').addEventListener('click', () => {
+      if (chapletCurrentStep > 0) { chapletCurrentStep--; renderChapletStep(); }
+    });
+    document.getElementById('cpNext').addEventListener('click', () => {
+      if (chapletCurrentStep < chapletSteps.length - 1) { chapletCurrentStep++; renderChapletStep(); }
+    });
+    return;
+  }
+
   player.style.display = 'none';
   noChaplet.style.display = 'block';
 }
@@ -2153,12 +2177,13 @@ function renderNovenaSupportPanel(data) {
     + '<hr class="support-prayer-divider">'
     + prayerBlock(p.credo_title, p.credo);
 
-  if (data.chaplet && data.chaplet.available && data.chaplet[lang]) {
+  const chapletText = getChapletTextForLang(data, lang);
+  if (chapletText) {
     const chapletTitle = `${data.name[lang]} — ${t.chaplet_lbl}`;
     html += '<hr class="support-prayer-divider">'
       + `<div class="support-prayer support-chaplet">`
       + `<div class="support-prayer-title">${chapletTitle}</div>`
-      + `<div class="support-prayer-text">${paragraphify(data.chaplet[lang])}</div>`
+      + `<div class="support-prayer-text">${paragraphify(chapletText)}</div>`
       + `</div>`;
   }
 
@@ -2179,7 +2204,8 @@ function renderNovenaSupportPanel(data) {
 // ── TABS ───────────────────────────────────────────
 function initTabs(meta) {
   const chapletBtn = document.querySelector('.chaplet-tab');
-  if (chapletBtn && meta.chaplet) chapletBtn.classList.add('visible');
+  if (chapletBtn && hasUsableChaplet(intercessorData))
+    chapletBtn.classList.add('visible');
 
   const litanyBtn = document.querySelector('.litany-tab');
   if (litanyBtn && intercessorData && intercessorData.litany && intercessorData.litany.available)
