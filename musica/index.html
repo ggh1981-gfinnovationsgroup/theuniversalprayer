@@ -13,9 +13,14 @@
   <meta property="og:image" content="https://www.theuniversalprayer.com/assets/images/social-home.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="manifest" href="/manifest.json" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="apple-touch-icon" href="/assets/images/icon.svg" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23c9a84c'>✝</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
@@ -24,8 +29,26 @@
   <style>
     .mus-hero {
       text-align: center;
-      padding: 5rem 1.25rem 2.6rem;
+      padding: 5rem 1.5rem 3rem;
       background: radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.14) 0%, transparent 72%);
+    }
+    .mus-note-icon {
+      width: 116px;
+      height: 116px;
+      margin: 0 auto 1.15rem;
+      border-radius: 999px;
+      border: 1px solid rgba(201,168,76,0.32);
+      background: radial-gradient(circle at 30% 30%, rgba(201,168,76,0.22), rgba(201,168,76,0.04));
+      display: grid;
+      place-items: center;
+      font-size: 3rem;
+      color: var(--gold-light);
+      filter: drop-shadow(0 0 16px rgba(201,168,76,0.28));
+      animation: mus-float 4s ease-in-out infinite;
+    }
+    @keyframes mus-float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
     }
     .mus-badge {
       display: inline-block;
@@ -54,9 +77,12 @@
       font-size: 0.93rem;
     }
     .mus-content {
-      width: min(980px, 100% - 1.5rem);
+      max-width: 760px;
       margin: 0 auto;
-      padding-bottom: 3.5rem;
+      padding: 0 1.25rem 4rem;
+    }
+    .mus-section {
+      margin-bottom: 2.1rem;
     }
     .mus-section-title {
       font-family: var(--font-serif);
@@ -67,7 +93,7 @@
       padding-bottom: 0.5rem;
     }
     .mus-track {
-      margin: 0.85rem 0;
+      margin: 0.95rem 0;
       border: 1px solid rgba(201,168,76,0.24);
       border-radius: 14px;
       background: rgba(255,255,255,0.03);
@@ -76,7 +102,7 @@
     .mus-track summary {
       list-style: none;
       cursor: pointer;
-      padding: 0.9rem 1rem;
+      padding: 0.95rem 1rem;
       background: rgba(201,168,76,0.09);
       font-family: var(--font-serif);
       color: var(--gold-light);
@@ -167,7 +193,7 @@
       text-underline-offset: 2px;
     }
     .mus-footer-links {
-      margin-top: 1.9rem;
+      margin-top: 3rem;
       text-align: center;
     }
     .mus-home-link {
@@ -201,6 +227,8 @@
     <a href="/" class="ador-back-link" data-lang="es">← Inicio</a>
     <a href="/" class="ador-back-link" data-lang="en" style="display:none">← Home</a>
 
+    <div class="mus-note-icon" aria-hidden="true">♪</div>
+
     <div class="mus-badge" data-lang="es">Musica para orar</div>
     <div class="mus-badge" data-lang="en" style="display:none">Music for prayer</div>
 
@@ -212,55 +240,57 @@
   </section>
 
   <main class="mus-content">
-    <h2 class="mus-section-title" data-lang="es">Canciones disponibles</h2>
-    <h2 class="mus-section-title" data-lang="en" style="display:none">Available songs</h2>
+    <section class="mus-section">
+      <h2 class="mus-section-title" data-lang="es">Canciones disponibles</h2>
+      <h2 class="mus-section-title" data-lang="en" style="display:none">Available songs</h2>
 
-    <details class="mus-track" open>
-      <summary>
-        <span data-lang="es">Baba Yetu (Padre Nuestro en suajili)</span>
-        <span data-lang="en" style="display:none">Baba Yetu (Our Father in Swahili)</span>
-      </summary>
-      <div class="mus-track-body">
-        <p class="mus-track-meta" data-lang="es">"Baba Yetu" significa "Padre Nuestro" en suajili. Es una version coral muy conocida de la oracion del Padre Nuestro y una hermosa puerta de entrada para orar con musica.</p>
-        <p class="mus-track-meta" data-lang="en" style="display:none">"Baba Yetu" means "Our Father" in Swahili. It is a well-known choral version of the Lord's Prayer and a beautiful way to pray through music.</p>
+      <details class="mus-track" open>
+        <summary>
+          <span data-lang="es">Baba Yetu (Padre Nuestro en suajili)</span>
+          <span data-lang="en" style="display:none">Baba Yetu (Our Father in Swahili)</span>
+        </summary>
+        <div class="mus-track-body">
+          <p class="mus-track-meta" data-lang="es">"Baba Yetu" significa "Padre Nuestro" en suajili. Es una versión coral muy conocida de la oración del Padre Nuestro y una hermosa puerta de entrada para orar con música.</p>
+          <p class="mus-track-meta" data-lang="en" style="display:none">"Baba Yetu" means "Our Father" in Swahili. It is a well-known choral version of the Lord's Prayer and a beautiful way to pray through music.</p>
 
-        <div class="mus-video-wrap">
-          <iframe
-            src="https://www.youtube.com/embed/vsINANZ6Riw?rel=0&amp;modestbranding=1"
-            title="Baba Yetu on YouTube"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <div class="mus-video-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/vsINANZ6Riw?rel=0&amp;modestbranding=1"
+              title="Baba Yetu on YouTube"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <p class="mus-note" data-lang="es">Si quieres una versión específica (video exacto), compártenos el enlace y la fijamos en esta sección.</p>
+          <p class="mus-note" data-lang="en" style="display:none">If you want one specific version (exact video), share the link and we can pin it in this section.</p>
+
+          <div class="mus-meaning">
+            <h4 data-lang="es">Significado y traducción (fragmentos clave)</h4>
+            <h4 data-lang="en" style="display:none">Meaning and translation (key fragments)</h4>
+            <ul data-lang="es">
+              <li><strong>Baba yetu</strong>: Padre nuestro.</li>
+              <li><strong>Uliye mbinguni</strong>: que estás en el cielo.</li>
+              <li><strong>Jina lako litukuzwe</strong>: santificado sea tu nombre.</li>
+              <li><strong>Ufalme wako ufike</strong>: venga tu reino.</li>
+              <li><strong>Utakalo lifanyike duniani kama mbinguni</strong>: hágase tu voluntad en la tierra como en el cielo.</li>
+            </ul>
+            <ul data-lang="en" style="display:none">
+              <li><strong>Baba yetu</strong>: Our Father.</li>
+              <li><strong>Uliye mbinguni</strong>: who are in heaven.</li>
+              <li><strong>Jina lako litukuzwe</strong>: hallowed be your name.</li>
+              <li><strong>Ufalme wako ufike</strong>: your kingdom come.</li>
+              <li><strong>Utakalo lifanyike duniani kama mbinguni</strong>: your will be done on earth as it is in heaven.</li>
+            </ul>
+          </div>
+
+          <p class="mus-credit" data-lang="es">📺 Video fuente en YouTube: <a href="https://www.youtube.com/watch?v=vsINANZ6Riw" target="_blank" rel="noopener noreferrer">Baba Yetu (vsINANZ6Riw)</a>. Todos los derechos y créditos pertenecen a los creadores y al canal original. Esta página solo referencia el contenido para oración y difusión devocional.</p>
+          <p class="mus-credit" data-lang="en" style="display:none">📺 Source video on YouTube: <a href="https://www.youtube.com/watch?v=vsINANZ6Riw" target="_blank" rel="noopener noreferrer">Baba Yetu (vsINANZ6Riw)</a>. All credits and rights belong to the original creators and channel. This page only references the content for prayer and devotional sharing.</p>
+          <a class="mus-open-link" data-lang="es" href="https://www.youtube.com/watch?v=vsINANZ6Riw" target="_blank" rel="noopener noreferrer">Ver en YouTube ↗</a>
+          <a class="mus-open-link" data-lang="en" style="display:none" href="https://www.youtube.com/watch?v=vsINANZ6Riw" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a>
         </div>
-
-        <p class="mus-note" data-lang="es">Si quieres una version especifica (video exacto), compartenos el enlace y la fijamos en esta seccion.</p>
-        <p class="mus-note" data-lang="en" style="display:none">If you want one specific version (exact video), share the link and we can pin it in this section.</p>
-
-        <div class="mus-meaning">
-          <h4 data-lang="es">Significado y traduccion (fragmentos clave)</h4>
-          <h4 data-lang="en" style="display:none">Meaning and translation (key fragments)</h4>
-          <ul data-lang="es">
-            <li><strong>Baba yetu</strong>: Padre nuestro.</li>
-            <li><strong>Uliye mbinguni</strong>: que estas en el cielo.</li>
-            <li><strong>Jina lako litukuzwe</strong>: santificado sea tu nombre.</li>
-            <li><strong>Ufalme wako ufike</strong>: venga tu reino.</li>
-            <li><strong>Utakalo lifanyike duniani kama mbinguni</strong>: hagase tu voluntad en la tierra como en el cielo.</li>
-          </ul>
-          <ul data-lang="en" style="display:none">
-            <li><strong>Baba yetu</strong>: Our Father.</li>
-            <li><strong>Uliye mbinguni</strong>: who are in heaven.</li>
-            <li><strong>Jina lako litukuzwe</strong>: hallowed be your name.</li>
-            <li><strong>Ufalme wako ufike</strong>: your kingdom come.</li>
-            <li><strong>Utakalo lifanyike duniani kama mbinguni</strong>: your will be done on earth as it is in heaven.</li>
-          </ul>
-        </div>
-
-        <p class="mus-credit" data-lang="es">📺 Video fuente en YouTube: <a href="https://www.youtube.com/watch?v=vsINANZ6Riw" target="_blank" rel="noopener noreferrer">Baba Yetu (vsINANZ6Riw)</a>. Todos los derechos y créditos pertenecen a los creadores y al canal original. Esta página solo referencia el contenido para oración y difusión devocional.</p>
-        <p class="mus-credit" data-lang="en" style="display:none">📺 Source video on YouTube: <a href="https://www.youtube.com/watch?v=vsINANZ6Riw" target="_blank" rel="noopener noreferrer">Baba Yetu (vsINANZ6Riw)</a>. All credits and rights belong to the original creators and channel. This page only references the content for prayer and devotional sharing.</p>
-        <a class="mus-open-link" data-lang="es" href="https://www.youtube.com/watch?v=vsINANZ6Riw" target="_blank" rel="noopener noreferrer">Ver en YouTube ↗</a>
-        <a class="mus-open-link" data-lang="en" style="display:none" href="https://www.youtube.com/watch?v=vsINANZ6Riw" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a>
-      </div>
-    </details>
+      </details>
+    </section>
 
     <div class="mus-footer-links">
       <a href="/" class="mus-home-link" data-lang="es">← Volver al inicio</a>
@@ -272,7 +302,7 @@
   (function () {
     'use strict';
 
-    const LANG_KEY = 'tup_lang';
+    const LANG_KEY = 'universalPrayerLang';
     let lang = localStorage.getItem(LANG_KEY) || 'es';
 
     function applyLang(l) {
@@ -293,7 +323,7 @@
     applyLang(lang);
   })();
   </script>
-  <script src="/assets/js/menu.js"></script>
+  <script src="../assets/js/menu.js"></script>
 
 </body>
 </html>
