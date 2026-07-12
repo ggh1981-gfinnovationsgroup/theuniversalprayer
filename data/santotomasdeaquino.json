@@ -1,0 +1,103 @@
+{
+  "id": "santotomasdeaquino",
+  "name": {
+    "es": "Santo Tomas de Aquino",
+    "en": "Saint Thomas Aquinas"
+  },
+  "jaculatoria": {
+    "es": "Santo Tomas de Aquino, doctor de la verdad y amigo de la Eucaristia, ruega por nosotros.",
+    "en": "Saint Thomas Aquinas, doctor of truth and friend of the Eucharist, pray for us."
+  },
+  "color": "#3a2f5f",
+  "image": "/assets/images/santotomasdeaquino.svg",
+  "specialty": {
+    "es": "Teologia, estudio y claridad doctrinal",
+    "en": "Theology, study, and doctrinal clarity"
+  },
+  "prayer": {
+    "es": "Santo Tomas de Aquino, maestro humilde de la Iglesia, alcanzanos amor por la verdad, disciplina en el estudio y pureza de intencion para buscar siempre la gloria de Dios. Intercede por estudiantes, docentes, predicadores y familias para que crezcamos en sabiduria, prudencia y caridad. Ensenanos a unir razon y fe sin orgullo, y a vivir una vida eucaristica, obediente y santa. Amen.",
+    "en": "Saint Thomas Aquinas, humble master of the Church, obtain for us love of truth, discipline in study, and purity of intention so that we always seek God's glory. Intercede for students, teachers, preachers, and families, that we may grow in wisdom, prudence, and charity. Teach us to unite reason and faith without pride, and to live a Eucharistic, obedient, and holy life. Amen."
+  },
+  "history": {
+    "es": "Santo Tomas de Aquino nacio hacia 1225 en Roccasecca, en el Reino de Sicilia. Entro en la Orden de Predicadores (dominicos) pese a la oposicion inicial de su familia, y se formo con grandes maestros de su tiempo, entre ellos San Alberto Magno.
+\nFue profesor en Paris y en otras escuelas importantes, y dedico su vida a servir a la verdad revelada con gran rigor intelectual y profunda vida de oracion. Su obra mas conocida, la Summa Theologiae, quiso presentar de manera ordenada la fe catolica para formar predicadores y estudiantes.
+\nTomas mostro que la razon autentica no contradice la fe, sino que puede servirla cuando se mantiene humilde ante Dios. Defendio con claridad la doctrina de los sacramentos, la moral cristiana, la ley natural y la centralidad de la Eucaristia.
+\nLa tradicion conserva el episodio del crucifijo ante el cual Cristo le habria dicho: Tu has hablado bien de Mi, Tomas. Al final de su vida, despues de una experiencia mistica profunda, dejo de escribir y expreso que todo lo escrito le parecia paja frente a lo contemplado.
+\nMurio en 1274, fue canonizado en 1323 y proclamado Doctor de la Iglesia en 1567. Es patrono de escuelas, universidades, academicos y estudiantes catolicos.",
+    "en": "Saint Thomas Aquinas was born around 1225 in Roccasecca, in the Kingdom of Sicily. He entered the Order of Preachers (Dominicans) despite initial family opposition, and studied under great masters of his age, including Saint Albert the Great.
+\nHe taught in Paris and other major schools, and dedicated his life to serving revealed truth with intellectual rigor and deep prayer. His best-known work, the Summa Theologiae, sought to present the Catholic faith in an ordered way for the formation of preachers and students.
+\nThomas showed that authentic reason does not contradict faith, but can serve it when it remains humble before God. He defended clearly the doctrine of the sacraments, Christian moral life, natural law, and the centrality of the Eucharist.
+\nTradition preserves the episode of the crucifix before which Christ is said to have told him: You have spoken well of Me, Thomas. Near the end of his life, after a profound mystical experience, he stopped writing and said that everything he had written seemed like straw compared with what he had seen.
+\nHe died in 1274, was canonized in 1323, and declared a Doctor of the Church in 1567. He is patron of Catholic schools, universities, scholars, and students."
+  },
+  "novena_prayers": {
+    "es": "Cada dia: Senor, por intercesion de Santo Tomas de Aquino, dame inteligencia iluminada por la fe, voluntad firme para el bien y corazon humilde para servirte en todo. Amen.",
+    "en": "Each day: Lord, through the intercession of Saint Thomas Aquinas, grant me an intellect enlightened by faith, a will firm for the good, and a humble heart to serve You in all things. Amen."
+  },
+  "novena": [
+    {
+      "day": 1,
+      "es": "Por amor a la verdad. Santo Tomas, ayudame a buscar la verdad sin miedo ni superficialidad.",
+      "en": "For love of truth. Saint Thomas, help me seek truth without fear or superficiality."
+    },
+    {
+      "day": 2,
+      "es": "Por estudiantes y docentes. Intercede para que el estudio sea camino de santidad.",
+      "en": "For students and teachers. Intercede so that study may become a path of holiness."
+    },
+    {
+      "day": 3,
+      "es": "Por humildad intelectual. Libranos del orgullo y de discutir para lucirnos.",
+      "en": "For intellectual humility. Free us from pride and from arguing only to be admired."
+    },
+    {
+      "day": 4,
+      "es": "Por claridad doctrinal. Danos fidelidad al Evangelio y a la fe de la Iglesia.",
+      "en": "For doctrinal clarity. Grant us fidelity to the Gospel and to the Church's faith."
+    },
+    {
+      "day": 5,
+      "es": "Por prudencia en decisiones. Que razon y fe guien nuestras elecciones diarias.",
+      "en": "For prudence in decisions. May reason and faith guide our daily choices."
+    },
+    {
+      "day": 6,
+      "es": "Por quienes dudan. Que encuentren respuestas serias y testigos creibles.",
+      "en": "For those who doubt. May they find serious answers and credible witnesses."
+    },
+    {
+      "day": 7,
+      "es": "Por amor a la Eucaristia. Que adoremos a Cristo con fe viva y corazon limpio.",
+      "en": "For love of the Eucharist. May we adore Christ with living faith and a clean heart."
+    },
+    {
+      "day": 8,
+      "es": "Por predicadores y catequistas. Que anuncien la verdad con caridad y precision.",
+      "en": "For preachers and catechists. May they proclaim truth with charity and precision."
+    },
+    {
+      "day": 9,
+      "es": "Por santidad integral. Santo Tomas, ensenanos a pensar bien, vivir bien y amar mejor.",
+      "en": "For integral holiness. Saint Thomas, teach us to think well, live well, and love better."
+    }
+  ],
+  "chaplet": {
+    "available": false,
+    "es": "",
+    "en": ""
+  },
+  "litany": {
+    "available": true,
+    "es": "Senor, ten piedad. Cristo, ten piedad. Senor, ten piedad.\nSanto Tomas de Aquino, doctor de la Iglesia, ruega por nosotros.\nSanto Tomas de Aquino, amante de la verdad, ruega por nosotros.\nSanto Tomas de Aquino, maestro de razon y fe, ruega por nosotros.\nSanto Tomas de Aquino, adorador de la Eucaristia, ruega por nosotros.\nSanto Tomas de Aquino, patrono de estudiantes y academicos, ruega por nosotros.\nSanto Tomas de Aquino, modelo de humildad intelectual, ruega por nosotros.\nSanto Tomas de Aquino, intercesor en dudas de fe, ruega por nosotros.\nCordero de Dios, que quitas el pecado del mundo, ten misericordia de nosotros.",
+    "en": "Lord, have mercy. Christ, have mercy. Lord, have mercy.\nSaint Thomas Aquinas, Doctor of the Church, pray for us.\nSaint Thomas Aquinas, lover of truth, pray for us.\nSaint Thomas Aquinas, master of reason and faith, pray for us.\nSaint Thomas Aquinas, adorer of the Eucharist, pray for us.\nSaint Thomas Aquinas, patron of students and scholars, pray for us.\nSaint Thomas Aquinas, model of intellectual humility, pray for us.\nSaint Thomas Aquinas, intercessor in doubts of faith, pray for us.\nLamb of God, who takes away the sins of the world, have mercy on us."
+  },
+  "miracles": {
+    "available": true,
+    "es": "1. TU HAS HABLADO BIEN DE MI, TOMAS\nLa tradicion dominicana conserva que, ante un crucifijo, Cristo le dijo a Tomas: Tu has hablado bien de Mi. Este testimonio ha sido recibido como un signo de aprobacion divina de su servicio teologico fiel a la Iglesia.\n\n2. LUZ PARA GENERACIONES DE ESTUDIANTES\nDurante siglos, incontables seminarios, universidades y catequistas han encontrado claridad en su pensamiento para responder dudas de fe y formar cristianos solidos. Este fruto continuo es considerado una gracia providencial por su intercesion.\n\n3. AUXILIO EN EXAMENES Y DECISIONES ACADEMICAS\nMuchos fieles encomiendan estudios, exámenes y vocacion intelectual a Santo Tomas, reportando paz, orden mental y decisiones prudentes en momentos de gran presion.\n\n4. RENOVACION DEL AMOR A LA EUCARISTIA\nSus himnos eucaristicos y su testimonio han ayudado a innumerables personas a volver a la adoracion, reconciliarse y vivir con mayor reverencia sacramental.",
+    "en": "1. YOU HAVE SPOKEN WELL OF ME, THOMAS\nDominican tradition preserves that, before a crucifix, Christ told Thomas: You have spoken well of Me. This testimony has been received as a sign of divine approval of his theological service in fidelity to the Church.\n\n2. LIGHT FOR GENERATIONS OF STUDENTS\nFor centuries, countless seminaries, universities, and catechists have found clarity in his thought to answer doubts of faith and form solid Christians. This lasting fruit is seen as a providential grace through his intercession.\n\n3. HELP IN EXAMS AND ACADEMIC DECISIONS\nMany faithful entrust studies, exams, and intellectual vocation to Saint Thomas, reporting peace, mental order, and prudent decisions in times of great pressure.\n\n4. RENEWAL OF EUCHARISTIC LOVE\nHis Eucharistic hymns and witness have helped innumerable people return to adoration, reconciliation, and deeper sacramental reverence."
+  },
+  "feast_day": {
+    "es": "28 de enero",
+    "en": "January 28"
+  }
+}

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="sta-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#151325"/>
+      <stop offset="100%" stop-color="#08070f"/>
+    </radialGradient>
+    <linearGradient id="sta-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#6f62a9" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#2a2150" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="sta-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f5e060" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0.35"/>
+    </linearGradient>
+    <filter id="sta-gl">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="400" height="600" fill="url(#sta-bg)"/>
+  <polygon points="198,264 -20,610 112,610" fill="url(#sta-r1)" filter="url(#sta-gl)" opacity="0.72"/>
+  <polygon points="202,264 420,610 288,610" fill="url(#sta-r2)" filter="url(#sta-gl)" opacity="0.68"/>
+
+  <!-- Dominican habit -->
+  <path d="M160,170 Q132,212 122,430 Q200,452 278,430 Q268,212 240,170 Z" fill="#f2f2f2" opacity="0.92"/>
+  <path d="M152,172 Q124,208 112,354 Q130,360 152,348 Q158,246 176,188 Z" fill="#0f0f17" opacity="0.9"/>
+  <path d="M248,172 Q276,208 288,354 Q270,360 248,348 Q242,246 224,188 Z" fill="#0f0f17" opacity="0.9"/>
+
+  <!-- Book and sun emblem -->
+  <rect x="122" y="352" width="96" height="62" rx="6" fill="#2a315a" opacity="0.84"/>
+  <line x1="170" y1="354" x2="170" y2="412" stroke="#d8d8d2" stroke-width="1.2" opacity="0.7"/>
+  <circle cx="244" cy="192" r="26" fill="#f5d56a" opacity="0.75"/>
+  <line x1="244" y1="168" x2="244" y2="216" stroke="#8e6f28" stroke-width="2" opacity="0.8"/>
+  <line x1="220" y1="192" x2="268" y2="192" stroke="#8e6f28" stroke-width="2" opacity="0.8"/>
+
+  <!-- Neck and face -->
+  <rect x="193" y="144" width="14" height="18" rx="4" fill="#d2a578" opacity="0.9"/>
+  <ellipse cx="200" cy="108" rx="27" ry="31" fill="#d2a578" opacity="0.94"/>
+  <path d="M173,103 Q176,68 200,64 Q224,68 227,103 Q219,82 200,80 Q181,82 173,103 Z" fill="#503a26" opacity="0.9"/>
+  <path d="M186,126 Q194,136 200,136 Q206,136 214,126 Q208,130 200,130 Q192,130 186,126 Z" fill="#503a26" opacity="0.62"/>
+  <ellipse cx="189" cy="108" rx="3.8" ry="3.2" fill="#281a12"/>
+  <ellipse cx="211" cy="108" rx="3.8" ry="3.2" fill="#281a12"/>
+
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="54" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.62"/>
+  <circle cx="200" cy="108" r="48" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.24"/>
+
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+
+  <!-- Name panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#070910" opacity="0.88"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" fill="#c9a84c" letter-spacing="2.2" opacity="0.9">SANTO TOMAS DE AQUINO · SAINT THOMAS AQUINAS</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="12.5" fill="#b7b2ea" font-style="italic">"Doctor angelico"</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="10.5" fill="#f5e060" font-style="italic" opacity="0.82">"Angelic Doctor"</text>
+</svg>
