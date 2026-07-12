@@ -275,6 +275,50 @@
       font-size: 1.3rem;
       letter-spacing: 0.5em;
     }
+
+    /* ── Collapsible: Theology of the Body notes ── */
+    .mat-tob-wrap {
+      display: grid;
+      gap: 0.75rem;
+    }
+    .mat-tob-item {
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 10px;
+      background: rgba(201,168,76,0.05);
+      overflow: hidden;
+    }
+    .mat-tob-item summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 0.85rem 0.95rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.8rem;
+      color: var(--gold-light);
+      font-family: var(--font-serif);
+      font-size: 0.98rem;
+    }
+    .mat-tob-item summary::-webkit-details-marker { display: none; }
+    .mat-tob-item[open] summary {
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+    }
+    .mat-tob-body {
+      padding: 0.85rem 0.95rem 0.95rem;
+    }
+    .mat-tob-body p {
+      margin: 0;
+      font-family: var(--font-sans);
+      color: rgba(255,255,255,0.82);
+      line-height: 1.8;
+      font-size: 0.92rem;
+    }
+    .mat-tob-note {
+      margin-top: 0.85rem;
+      font-size: 0.75rem;
+      color: var(--gold-dim);
+      font-style: italic;
+    }
   </style>
 </head>
 <body>
@@ -743,6 +787,83 @@
         <p class="mat-truth-text" data-lang="en" style="display:none">"How can I express the happiness of the marriage that the Church unites? Two Christians, united by a single hope, a single desire, the same service! Both children of one Father — nothing separates them, neither in spirit nor in flesh; on the contrary, they are truly two in one flesh."</p>
         <p class="mat-truth-source">— Tertuliano, Ad uxorem 2,9 · cit. CIC n. 1642</p>
       </div>
+    </section>
+
+    <!-- ── TEOLOGIA DEL CUERPO (COLAPSABLE) ── -->
+    <section class="mat-section">
+      <h2 class="mat-section-title" data-lang="es">Teologia del Cuerpo para el matrimonio (colapsable)</h2>
+      <h2 class="mat-section-title" data-lang="en" style="display:none">Theology of the Body for marriage (collapsible)</h2>
+
+      <div class="mat-tob-wrap">
+        <details class="mat-tob-item" open>
+          <summary>
+            <span data-lang="es">1) El cuerpo habla: el amor se demuestra con actos reales</span>
+            <span data-lang="en" style="display:none">1) The body speaks: love is proven by real acts</span>
+          </summary>
+          <div class="mat-tob-body">
+            <p data-lang="es">En el matrimonio, el amor no es solo sentimiento: se vuelve lenguaje visible en el cuerpo, el tiempo, la ternura y la fidelidad diaria. Cada gesto puede decir: "te recibo como don" o "te uso". La vocacion cristiana de los esposos es aprender a amar como Cristo: con verdad, entrega y respeto.</p>
+            <p data-lang="en" style="display:none">In marriage, love is not only a feeling: it becomes a visible language through the body, time, tenderness, and daily fidelity. Every gesture can say either "I receive you as gift" or "I use you." The Christian vocation of spouses is to love like Christ: with truth, self-gift, and reverence.</p>
+          </div>
+        </details>
+
+        <details class="mat-tob-item">
+          <summary>
+            <span data-lang="es">2) Tu esposo(a) no es un objeto: es misterio y sacramento</span>
+            <span data-lang="en" style="display:none">2) Your spouse is not an object: but mystery and sacrament</span>
+          </summary>
+          <div class="mat-tob-body">
+            <p data-lang="es">La Teologia del Cuerpo recuerda que la dignidad de la persona nunca se negocia. Por eso, en los conflictos o cansancios, la pregunta clave es: "Estoy amando a mi esposo(a) como persona amada por Dios?". Cuando la respuesta se vuelve oracion, el hogar sana.</p>
+            <p data-lang="en" style="display:none">Theology of the Body reminds us that personal dignity is never negotiable. So in conflict or fatigue, the key question is: "Am I loving my spouse as a person loved by God?" When that question becomes prayer, the home begins to heal.</p>
+          </div>
+        </details>
+
+        <details class="mat-tob-item">
+          <summary>
+            <span data-lang="es">3) Libertad verdadera: amar no es poseer, es custodiar</span>
+            <span data-lang="en" style="display:none">3) True freedom: love is not possession, but guardianship</span>
+          </summary>
+          <div class="mat-tob-body">
+            <p data-lang="es">El amor conyugal maduro no controla ni manipula. Custodia el corazon del otro, respeta procesos, perdona con verdad y busca el bien comun del matrimonio. Esta libertad se fortalece en la gracia sacramental, la confesion frecuente y la Eucaristia.</p>
+            <p data-lang="en" style="display:none">Mature marital love does not control or manipulate. It guards the other's heart, respects processes, forgives in truth, and seeks the common good of marriage. This freedom is strengthened through sacramental grace, frequent confession, and the Eucharist.</p>
+          </div>
+        </details>
+
+        <details class="mat-tob-item">
+          <summary>
+            <span data-lang="es">4) Combate interior: lo que entra a la mente no debe anidar en el alma</span>
+            <span data-lang="en" style="display:none">4) Interior combat: what enters the mind must not nest in the soul</span>
+          </summary>
+          <div class="mat-tob-body">
+            <p data-lang="es">En la vida matrimonial hay tentaciones, heridas y pensamientos que no vienen de Dios. Discernir es elegir que se queda y que se rechaza. Con oracion y vigilancia, los esposos protegen su alianza y su pureza de intencion. Amar tambien es custodiar la vida interior.</p>
+            <p data-lang="en" style="display:none">Married life includes temptations, wounds, and thoughts that do not come from God. Discernment means choosing what stays and what is rejected. Through prayer and vigilance, spouses protect their covenant and purity of intention. To love is also to guard interior life.</p>
+          </div>
+        </details>
+
+        <details class="mat-tob-item">
+          <summary>
+            <span data-lang="es">5) Como prevenir el adulterio: custodia del corazon y limites santos</span>
+            <span data-lang="en" style="display:none">5) How to prevent adultery: guarding the heart and holy boundaries</span>
+          </summary>
+          <div class="mat-tob-body">
+            <p data-lang="es">La fidelidad se cuida antes de la caida. Proverbios 5, 6 y 7 advierte que el adulterio comienza en seducciones pequenas: fantasia secreta, mensajes ocultos, doble vida y descuido de la oracion. Teologia del Cuerpo ensena que la pureza conyugal no es represion, sino amor verdadero que protege al esposo(a) como don de Dios. Practica concreta para esposos: 1) transparencia digital y emocional, 2) no intimidades ambiguas fuera del matrimonio, 3) confesion frecuente y direccion espiritual, 4) oracion diaria juntos, 5) cortar de raiz lo que alimenta la tentacion.</p>
+            <p data-lang="en" style="display:none">Fidelity is guarded before the fall. Proverbs 5, 6, and 7 warn that adultery begins with small seductions: secret fantasy, hidden messages, double life, and neglected prayer. Theology of the Body teaches that marital purity is not repression, but true love that protects one's spouse as a gift from God. Concrete practice for spouses: 1) digital and emotional transparency, 2) no ambiguous intimacies outside marriage, 3) frequent confession and spiritual direction, 4) daily prayer together, 5) cut off at the root whatever feeds temptation.</p>
+          </div>
+        </details>
+
+        <details class="mat-tob-item">
+          <summary>
+            <span data-lang="es">6) Mision del matrimonio: hacer visible el amor fiel de Dios</span>
+            <span data-lang="en" style="display:none">6) Mission of marriage: make God's faithful love visible</span>
+          </summary>
+          <div class="mat-tob-body">
+            <p data-lang="es">El matrimonio cristiano no termina en la pareja; evangeliza. Los hijos, la familia y quienes los rodean aprenden de una alianza que reza, se perdona y vuelve a empezar en Cristo. Su "si" diario es testimonio de esperanza para el mundo.</p>
+            <p data-lang="en" style="display:none">Christian marriage does not end in the couple; it evangelizes. Children, relatives, and all who surround them learn from a covenant that prays, forgives, and begins again in Christ. Their daily "yes" becomes a witness of hope for the world.</p>
+          </div>
+        </details>
+      </div>
+
+      <p class="mat-tob-note" data-lang="es">Nota: este bloque es una sintesis pastoral inspirada en la Teologia del Cuerpo para uso devocional familiar.</p>
+      <p class="mat-tob-note" data-lang="en" style="display:none">Note: this block is a pastoral synthesis inspired by Theology of the Body for family devotional use.</p>
     </section>
 
     <!-- ── ORACIÓN DE LOS ESPOSOS ── -->
