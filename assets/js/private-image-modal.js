@@ -8,8 +8,8 @@
   function getLabels() {
     const lang = getLang();
     return lang === 'es'
-      ? { share: '↗ Compartir', copied: 'Enlace copiado', close: '✕' }
-      : { share: '↗ Share', copied: 'Link copied', close: '✕' };
+      ? { share: 'Compartir', copied: 'Enlace copiado', close: 'Cerrar' }
+      : { share: 'Share', copied: 'Link copied', close: 'Close' };
   }
 
   function ensureModal() {
@@ -37,8 +37,8 @@
     const closeBtn = document.getElementById('privateImageModalClose');
     if (shareBtn) shareBtn.textContent = labels.share;
     if (closeBtn) closeBtn.textContent = labels.close;
-    if (shareBtn) shareBtn.setAttribute('aria-label', labels.share.replace(/^↗\s*/, ''));
-    if (closeBtn) closeBtn.setAttribute('aria-label', labels.close.replace(/^✕\s*/, ''));
+    if (shareBtn) shareBtn.setAttribute('aria-label', labels.share);
+    if (closeBtn) closeBtn.setAttribute('aria-label', labels.close);
   }
 
   function openModal(sourceImg) {

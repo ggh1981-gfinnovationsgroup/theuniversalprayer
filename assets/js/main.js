@@ -1048,7 +1048,7 @@ function openIntercessorImageModal() {
 
   modalImg.src = heroImg.src;
   modalImg.alt = heroImg.alt || '';
-  if (shareBtn) shareBtn.textContent = '↗';
+  if (shareBtn) shareBtn.textContent = i18n[currentLang].image_share;
   modal.style.display = 'flex';
   modal.classList.add('is-open');
   modal.setAttribute('aria-hidden', 'false');
@@ -1092,7 +1092,7 @@ async function shareIntercessorImage() {
     if (shareBtn) {
       const previous = shareBtn.textContent;
       shareBtn.textContent = i18n[currentLang].image_share_copied;
-      setTimeout(() => { shareBtn.textContent = previous || '↗'; }, 1400);
+      setTimeout(() => { shareBtn.textContent = previous || i18n[currentLang].image_share; }, 1400);
     }
   } catch {
     // Ignore cancelled share sheets and copy failures.

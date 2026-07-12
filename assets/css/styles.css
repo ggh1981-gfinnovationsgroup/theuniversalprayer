@@ -574,23 +574,31 @@ body {
   border-radius: 10px;
 }
 .intercessor-image-modal-close {
-  width: 40px;
-  height: 40px;
+  min-width: 96px;
+  min-height: 44px;
+  padding: 0.65rem 0.9rem;
   border: 1px solid rgba(232, 201, 122, 0.45);
   border-radius: 999px;
   background: rgba(10, 13, 20, 0.8);
   color: var(--gold-light);
-  font-size: 1.1rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1;
   cursor: pointer;
 }
 .intercessor-image-modal-share {
-  width: 40px;
-  height: 40px;
+  min-width: 132px;
+  min-height: 44px;
+  padding: 0.65rem 1rem;
   border: 1px solid rgba(232, 201, 122, 0.45);
   border-radius: 999px;
   background: rgba(10, 13, 20, 0.8);
   color: var(--gold-light);
-  font-size: 1rem;
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1;
   cursor: pointer;
 }
 
@@ -1988,21 +1996,25 @@ body {
 .private-image-modal-share {
   position: absolute;
   top: 0.8rem;
-  width: 40px;
-  height: 40px;
+  min-height: 44px;
   border: 1px solid rgba(232, 201, 122, 0.45);
   border-radius: 999px;
   background: rgba(10, 13, 20, 0.8);
   color: var(--gold-light);
-  font-size: 1.05rem;
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  padding: 0.65rem 0.95rem;
   cursor: pointer;
 }
 .private-image-modal-close {
   right: 0.8rem;
+  min-width: 96px;
 }
 .private-image-modal-share {
   right: 3.95rem;
-  font-size: 0.95rem;
+  min-width: 132px;
 }
 /* Steps */
 .ios-step {
