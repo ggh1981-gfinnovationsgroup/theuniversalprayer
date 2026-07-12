@@ -646,7 +646,26 @@ async function initHomePage() {
 
   // Load large intercessor cards only when user scrolls near this section.
   let cardsLoadStarted = false;
-  const MAX_CONCURRENT_CARD_LOADS = 4;
+  let isUserTypingSearch = false;
+  let typingReleaseTimer = null;
+  let resumeCardsPump = null;
+  const MAX_CONCURRENT_CARD_LOADS = 2;
+
+  function markSearchTyping() {
+    isUserTypingSearch = true;
+    if (typingReleaseTimer) clearTimeout(typingReleaseTimer);
+    typingReleaseTimer = setTimeout(() => {
+      isUserTypingSearch = false;
+      if (cardsLoadStarted && typeof resumeCardsPump === 'function') {
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(resumeCardsPump, { timeout: 220 });
+        } else {
+          setTimeout(resumeCardsPump, 16);
+        }
+      }
+    }, 220);
+  }
+
   function startCardsLoad() {
     if (cardsLoadStarted) return;
     cardsLoadStarted = true;
@@ -654,21 +673,24 @@ async function initHomePage() {
     let inFlight = 0;
 
     const pump = () => {
-      while (inFlight < MAX_CONCURRENT_CARD_LOADS && cursor < sortedIntercessors.length) {
+      if (isUserTypingSearch) return;
+      while (!isUserTypingSearch && inFlight < MAX_CONCURRENT_CARD_LOADS && cursor < sortedIntercessors.length) {
         const meta = sortedIntercessors[cursor++];
         inFlight += 1;
         loadAndAppendCard(meta).finally(() => {
           inFlight -= 1;
           if (cursor < sortedIntercessors.length) {
             if ('requestIdleCallback' in window) {
-              requestIdleCallback(pump, { timeout: 120 });
+              requestIdleCallback(pump, { timeout: 220 });
             } else {
-              setTimeout(pump, 0);
+              setTimeout(pump, 16);
             }
           }
         });
       }
     };
+
+    resumeCardsPump = pump;
 
     pump();
   }
@@ -679,7 +701,7 @@ async function initHomePage() {
       if (!shouldLoad) return;
       startCardsLoad();
       loadObserver.disconnect();
-    }, { root: null, rootMargin: '240px 0px', threshold: 0.01 });
+    }, { root: null, rootMargin: '40px 0px', threshold: 0.05 });
     loadObserver.observe(grid);
   } else {
     const onScrollLoad = () => {
@@ -700,6 +722,15 @@ async function initHomePage() {
   const cardsSearch = document.getElementById('cardsSearch');
   const secretSearchResult = document.getElementById('secretSearchResult');
   const quickSecretSearchResult = document.getElementById('quickSecretSearchResult');
+  const keywordNormCache = new Map();
+
+  function getKeywordNorm(id) {
+    if (!id) return '';
+    if (!keywordNormCache.has(id)) {
+      keywordNormCache.set(id, normalize(KEYWORD_MAP[id] || ''));
+    }
+    return keywordNormCache.get(id) || '';
+  }
 
   function normalizeKey(s) {
     return normalize(s).replace(/[^a-z0-9]/g, '');
@@ -812,12 +843,14 @@ async function initHomePage() {
   const quickNavSearch = document.getElementById('quickNavSearch');
   if (quickNavSearch) {
     quickNavSearch.placeholder = currentLang === 'es' ? 'Buscar por nombre, motivo o situación...' : 'Search by name, intention or situation...';
+    quickNavSearch.addEventListener('input', markSearchTyping);
     const runQuickNavFilter = debounce(() => {
       const q = normalize(quickNavSearch.value.trim());
       document.querySelectorAll('.quick-nav-item').forEach(item => {
         const quickBlob = item.dataset.searchNorm || normalize(`${item.dataset.name || ''} ${item.dataset.specialty || ''}`);
         if (!item.dataset.searchNorm) item.dataset.searchNorm = quickBlob;
-        item.style.display = (q === '' || quickBlob.includes(q)) ? '' : 'none';
+        const keywordBlob = q.length >= 3 ? getKeywordNorm(item.dataset.keywordsId || '') : '';
+        item.style.display = (q === '' || quickBlob.includes(q) || (keywordBlob && keywordBlob.includes(q))) ? '' : 'none';
       });
 
       if (getSecretMatches(q).length) hideAllSaintResults();
@@ -831,12 +864,14 @@ async function initHomePage() {
 
   if (cardsSearch) {
     cardsSearch.placeholder = currentLang === 'es' ? 'Buscar por nombre, motivo o situación...' : 'Search by name, intention or situation...';
+    cardsSearch.addEventListener('input', markSearchTyping);
     const runCardsFilter = debounce(() => {
       const q = normalize(cardsSearch.value.trim());
       grid.querySelectorAll('.intercessor-card').forEach(card => {
         const cardBlob = card.dataset.searchNorm || normalize(`${card.dataset.specialty || ''} ${card.textContent || ''}`);
         if (!card.dataset.searchNorm) card.dataset.searchNorm = cardBlob;
-        card.style.display = (q === '' || cardBlob.includes(q)) ? '' : 'none';
+        const keywordBlob = q.length >= 3 ? getKeywordNorm(card.dataset.keywordsId || '') : '';
+        card.style.display = (q === '' || cardBlob.includes(q) || (keywordBlob && keywordBlob.includes(q))) ? '' : 'none';
       });
 
       if (getSecretMatches(q).length) hideAllSaintResults();
@@ -938,11 +973,11 @@ function buildCard(data, meta, favSet) {
   card.className = 'intercessor-card';
   card.href = buildIntercessorUrl(meta.subdomain);
   if (meta.color) card.style.setProperty('--card-color', meta.color);
-  // Store both-language specialty + keyword synonyms for search
+  // Store lightweight searchable text in DOM; heavy keywords stay in JS maps.
   if (meta.specialty) {
-    const extraTags = KEYWORD_MAP[meta.id] || '';
-    card.dataset.specialty = `${meta.specialty.es || ''} ${meta.specialty.en || ''} ${extraTags}`.toLowerCase();
+    card.dataset.specialty = `${meta.specialty.es || ''} ${meta.specialty.en || ''}`.toLowerCase();
   }
+  card.dataset.keywordsId = meta.id;
 
   const imgHtml = data.image
     ? `<img src="${data.image}" alt="${data.name[lang]}" loading="lazy" decoding="async" fetchpriority="low" />`
@@ -1018,9 +1053,9 @@ function renderQuickNav() {
     // data attributes for filtering
     item.dataset.name = `${m.name.es} ${m.name.en}`.toLowerCase();
     if (m.specialty) {
-      const extraTags = KEYWORD_MAP[m.id] || '';
-      item.dataset.specialty = `${m.specialty.es || ''} ${m.specialty.en || ''} ${extraTags}`.toLowerCase();
+      item.dataset.specialty = `${m.specialty.es || ''} ${m.specialty.en || ''}`.toLowerCase();
     }
+    item.dataset.keywordsId = m.id;
     item.dataset.searchNorm = normalizeText(`${item.dataset.name || ''} ${item.dataset.specialty || ''}`);
 
     item.appendChild(circle);
