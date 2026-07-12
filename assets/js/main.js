@@ -774,14 +774,42 @@ async function initHomePage() {
 
   // Search quick nav icons
   const quickNavSearch = document.getElementById('quickNavSearch');
+  const MIN_SEARCH_CHARS = 3;
+
+  function shouldRunSearch(query) {
+    return query.length >= MIN_SEARCH_CHARS;
+  }
+
+  function resetQuickNavResults() {
+    document.querySelectorAll('.quick-nav-item').forEach(item => {
+      item.style.display = '';
+    });
+    grid.querySelectorAll('.intercessor-card').forEach(card => {
+      card.style.display = '';
+    });
+  }
+
+  function resetCardResults() {
+    grid.querySelectorAll('.intercessor-card').forEach(card => {
+      card.style.display = '';
+    });
+  }
+
   if (quickNavSearch) {
     quickNavSearch.placeholder = currentLang === 'es' ? 'Buscar por nombre, motivo o situación...' : 'Search by name, intention or situation...';
     quickNavSearch.addEventListener('input', () => {
       const q = normalize(quickNavSearch.value.trim());
+
+      if (!shouldRunSearch(q)) {
+        resetQuickNavResults();
+        renderSecretResult('');
+        return;
+      }
+
       document.querySelectorAll('.quick-nav-item').forEach(item => {
         const matchesName = normalize(item.dataset.name).includes(q);
         const matchesSpecialty = normalize(item.dataset.specialty).includes(q);
-        item.style.display = (q === '' || matchesName || matchesSpecialty) ? '' : 'none';
+        item.style.display = (matchesName || matchesSpecialty) ? '' : 'none';
       });
 
       if (getSecretMatches(q).length) hideAllSaintResults();
@@ -795,10 +823,17 @@ async function initHomePage() {
     cardsSearch.placeholder = currentLang === 'es' ? 'Buscar por nombre, motivo o situación...' : 'Search by name, intention or situation...';
     cardsSearch.addEventListener('input', () => {
       const q = normalize(cardsSearch.value.trim());
+
+      if (!shouldRunSearch(q)) {
+        resetCardResults();
+        renderSecretResult('');
+        return;
+      }
+
       grid.querySelectorAll('.intercessor-card').forEach(card => {
         const matchesText      = normalize(card.textContent).includes(q);
         const matchesSpecialty = normalize(card.dataset.specialty).includes(q);
-        card.style.display = (q === '' || matchesText || matchesSpecialty) ? '' : 'none';
+        card.style.display = (matchesText || matchesSpecialty) ? '' : 'none';
       });
 
       if (getSecretMatches(q).length) hideAllSaintResults();
