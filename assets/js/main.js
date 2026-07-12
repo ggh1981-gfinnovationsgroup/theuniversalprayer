@@ -45,6 +45,7 @@ const i18n = {
     universal_prayer_title:  'The Universal and Definitive Prayer',
     universal_prayer_dedication: 'For every person who prays it — alone, as a couple, as a family or in a group',
     menu_title:              'Intercessors',
+    search_placeholder:      'Search by saint name, intention or situation (min. 3 letters)...',
   },
   es: {
     site_title:         'La Oración Universal',
@@ -75,6 +76,7 @@ const i18n = {
     universal_prayer_title:  'La Oración Universal y Definitiva',
     universal_prayer_dedication: 'Para toda persona que la rece — solo, en pareja, en familia o en grupo',
     menu_title:              'Intercesores',
+    search_placeholder:      'Busca por nombre del santo/intercesor, motivo o situación (mínimo 3 letras)...',
   },
 };
 
@@ -373,9 +375,9 @@ function setLanguage(lang) {
 
   // Update search placeholders (bilingual)
   const _qnSearch = document.getElementById('quickNavSearch');
-  if (_qnSearch) _qnSearch.placeholder = lang === 'es' ? 'Buscar por nombre, motivo o situación...' : 'Search by name, intention or situation...';
+  if (_qnSearch) _qnSearch.placeholder = i18n[lang].search_placeholder;
   const _cSearch = document.getElementById('cardsSearch');
-  if (_cSearch) _cSearch.placeholder = lang === 'es' ? 'Buscar por nombre, motivo o situación...' : 'Search by name, intention or situation...';
+  if (_cSearch) _cSearch.placeholder = i18n[lang].search_placeholder;
 
   // If intercessor is loaded, refresh dynamic content
   if (intercessorData) renderIntercessorContent(intercessorData);
@@ -683,6 +685,38 @@ async function initHomePage() {
     return normalize(s).replace(/[^a-z0-9]/g, '');
   }
 
+  const MENU_THEME_RELATIONS = [
+    { keywords: ['adoracion', 'adoration', 'eucaristia', 'eucharist'], ids: ['sagradocorazon', 'misericordia', 'fatima', 'santaclara', 'santotomasdeaquino'] },
+    { keywords: ['desierto', 'silencio', 'escucha', 'wilderness', 'silence', 'listening'], ids: ['sanjuanbautista', 'sancharbel', 'sanguillermo', 'sanefren', 'sanismael'] },
+    { keywords: ['difuntos', 'departed', 'dead', 'souls', 'purgatorio', 'purgatory'], ids: ['preciosisimasangre', 'misericordia', 'sanperegrino', 'sancamilo', 'nuestrasenoracarmen'] },
+    { keywords: ['discernimiento', 'discernment', 'call altar', 'llamados', 'vocacion', 'vocation'], ids: ['sanfranciscodesales', 'santotomasdeaquino', 'sangabriel', 'sanagustin', 'santomamoro', 'guadalupe'] },
+    { keywords: ['enemigos', 'enemies', 'enemy'], ids: ['sanmiguel', 'sanbenito', 'misericordia', 'santaclara', 'sanoliverplunkett', 'reydavid'] },
+    { keywords: ['espiritu santo', 'espiritu', 'holy spirit', 'spirit'], ids: ['espiritu', 'sangabriel', 'sanmiguel', 'sanrafael', 'fatima'] },
+    { keywords: ['familia', 'family', 'home', 'hogar'], ids: ['sanjose', 'santamonica', 'santacelina', 'schoenstatt', 'mariaauxiliadora', 'santaana'] },
+    { keywords: ['jovenes', 'young', 'youth', 'teen', 'adolescents'], ids: ['sancarlosacutis', 'sanjuanbosco', 'sanluisgonzaga', 'santaines', 'santamariagoretti', 'juanpablo'] },
+    { keywords: ['matrimonio', 'marriage', 'pareja', 'couple'], ids: ['sanjose', 'santarita', 'santamonica', 'santacelina', 'santagianna', 'schoenstatt'] },
+    { keywords: ['meses', 'devotional months', 'mes devocional'], ids: ['fatima', 'sagradocorazon', 'nuestrasenoracarmen', 'preciosisimasangre', 'guadalupe', 'mariaauxiliadora'] },
+    { keywords: ['misericordia', 'mercy', 'forgiveness', 'perdon'], ids: ['misericordia', 'padrepio', 'santafabiola', 'santamonica', 'sanagustin'] },
+    { keywords: ['oraciones', 'basic prayers', 'prayers'], ids: ['sanjose', 'angelguarda', 'sanmiguel', 'guadalupe', 'misericordia'] },
+    { keywords: ['reconciliacion', 'reconciliation', 'confession', 'confesion'], ids: ['misericordia', 'santamonica', 'sanagustin', 'santarita', 'padrepio', 'providencia'] },
+    { keywords: ['rosario', 'rosary'], ids: ['fatima', 'guadalupe', 'perpetuosocorro', 'nuestrasenoracarmen', 'inmaculadocorazon'] },
+    { keywords: ['salud', 'health', 'healing', 'sanacion'], ids: ['lourdes', 'sanrafael', 'sanperegrino', 'sancamilo', 'padrepio', 'sancharbel', 'sanblas', 'santaapolonia'] },
+  ];
+
+  function getThemeMatchedIds(query) {
+    const q = normalize(query || '');
+    const matchedIds = new Set();
+    if (!q) return matchedIds;
+
+    for (const relation of MENU_THEME_RELATIONS) {
+      const matchesTheme = relation.keywords.some(keyword => q.includes(normalize(keyword)));
+      if (!matchesTheme) continue;
+      relation.ids.forEach(id => matchedIds.add(id));
+    }
+
+    return matchedIds;
+  }
+
   const PRIVATE_SEARCH_ENTRIES = [
     {
       key: 'ggh1981',
@@ -807,9 +841,10 @@ async function initHomePage() {
   }
 
   if (quickNavSearch) {
-    quickNavSearch.placeholder = currentLang === 'es' ? 'Buscar por nombre, motivo o situación...' : 'Search by name, intention or situation...';
+    quickNavSearch.placeholder = i18n[currentLang].search_placeholder;
     quickNavSearch.addEventListener('input', () => {
       const q = normalize(quickNavSearch.value.trim());
+      const themeMatchedIds = getThemeMatchedIds(q);
 
       if (!shouldRunSearch(q)) {
         hideQuickNavResults();
@@ -820,7 +855,8 @@ async function initHomePage() {
       document.querySelectorAll('.quick-nav-item').forEach(item => {
         const matchesName = normalize(item.dataset.name).includes(q);
         const matchesSpecialty = normalize(item.dataset.specialty).includes(q);
-        item.style.display = (matchesName || matchesSpecialty) ? '' : 'none';
+        const matchesTheme = themeMatchedIds.has(item.dataset.intercessorId);
+        item.style.display = (matchesName || matchesSpecialty || matchesTheme) ? '' : 'none';
       });
 
       if (getSecretMatches(q).length) hideAllSaintResults();
@@ -832,10 +868,12 @@ async function initHomePage() {
       hideQuickNavResults();
       renderSecretResult('');
     } else {
+      const themeMatchedIds = getThemeMatchedIds(initialQ);
       document.querySelectorAll('.quick-nav-item').forEach(item => {
         const matchesName = normalize(item.dataset.name).includes(initialQ);
         const matchesSpecialty = normalize(item.dataset.specialty).includes(initialQ);
-        item.style.display = (matchesName || matchesSpecialty) ? '' : 'none';
+        const matchesTheme = themeMatchedIds.has(item.dataset.intercessorId);
+        item.style.display = (matchesName || matchesSpecialty || matchesTheme) ? '' : 'none';
       });
       if (getSecretMatches(initialQ).length) hideAllSaintResults();
       renderSecretResult(initialQ);
@@ -843,9 +881,10 @@ async function initHomePage() {
   }
 
   if (cardsSearch) {
-    cardsSearch.placeholder = currentLang === 'es' ? 'Buscar por nombre, motivo o situación...' : 'Search by name, intention or situation...';
+    cardsSearch.placeholder = i18n[currentLang].search_placeholder;
     cardsSearch.addEventListener('input', () => {
       const q = normalize(cardsSearch.value.trim());
+      const themeMatchedIds = getThemeMatchedIds(q);
 
       if (!shouldRunSearch(q)) {
         resetCardResults();
@@ -856,7 +895,8 @@ async function initHomePage() {
       grid.querySelectorAll('.intercessor-card').forEach(card => {
         const matchesText      = normalize(card.textContent).includes(q);
         const matchesSpecialty = normalize(card.dataset.specialty).includes(q);
-        card.style.display = (matchesText || matchesSpecialty) ? '' : 'none';
+        const matchesTheme = themeMatchedIds.has(card.dataset.intercessorId);
+        card.style.display = (matchesText || matchesSpecialty || matchesTheme) ? '' : 'none';
       });
 
       if (getSecretMatches(q).length) hideAllSaintResults();
@@ -955,6 +995,7 @@ function buildCard(data, meta) {
   const card = document.createElement('a');
   card.className = 'intercessor-card';
   card.href = buildIntercessorUrl(meta.subdomain);
+  card.dataset.intercessorId = meta.id;
   if (meta.color) card.style.setProperty('--card-color', meta.color);
   // Store both-language specialty + keyword synonyms for search
   if (meta.specialty) {
@@ -1070,6 +1111,7 @@ function renderQuickNav() {
   for (const m of sortedNav) {
     const item = document.createElement('a');
     item.className = 'quick-nav-item';
+    item.dataset.intercessorId = m.id;
     if (hideByDefault) item.style.display = 'none';
     if (m.id === _todayMeta.id) item.classList.add('today-saint');
     item.href = buildIntercessorUrl(m.subdomain);
