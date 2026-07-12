@@ -535,10 +535,48 @@ body {
   object-fit: contain;
   object-position: center center;
 }
+.intercessor-img.is-zoomable {
+  cursor: zoom-in;
+}
 .intercessor-img-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(to bottom, rgba(10,13,20,0) 60%, rgba(10,13,20,0.4) 100%);
+  pointer-events: none;
+}
+
+.intercessor-image-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  background: rgba(5, 8, 14, 0.92);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+.intercessor-image-modal.is-open {
+  display: flex;
+}
+.intercessor-image-modal-img {
+  width: min(96vw, 1100px);
+  height: min(90vh, 900px);
+  object-fit: contain;
+  object-position: center;
+  border-radius: 10px;
+}
+.intercessor-image-modal-close {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(232, 201, 122, 0.45);
+  border-radius: 999px;
+  background: rgba(10, 13, 20, 0.8);
+  color: var(--gold-light);
+  font-size: 1.1rem;
+  cursor: pointer;
 }
 
 .intercessor-name {

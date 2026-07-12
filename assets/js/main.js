@@ -5,7 +5,7 @@
 
 'use strict';
 
-const APP_VERSION = 'v2026.07.08-2';
+const APP_VERSION = 'v2026.07.11-1';
 
 function withAssetVersion(url) {
   if (!url) return url;
@@ -39,6 +39,8 @@ const i18n = {
     not_found_title:    'Intercessor not found',
     not_found_text:     'We could not find this intercessor. Please return to the home page.',
     go_home:            'Go Home',
+    image_zoom:         'Expand image',
+    image_zoom_close:   'Close image',
     footer_text:             'A free Catholic devotional resource. No ads. No tracking.',
     universal_prayer_title:  'The Universal and Definitive Prayer',
     universal_prayer_dedication: 'For every person who prays it — alone, as a couple, as a family or in a group',
@@ -67,6 +69,8 @@ const i18n = {
     not_found_title:    'Intercesor no encontrado',
     not_found_text:     'No pudimos encontrar este intercesor. Por favor regresa a la página principal.',
     go_home:            'Ir al inicio',
+    image_zoom:         'Ampliar imagen',
+    image_zoom_close:   'Cerrar imagen',
     footer_text:             'Un recurso devocional católico gratuito. Sin anuncios. Sin rastreo.',
     universal_prayer_title:  'La Oración Universal y Definitiva',
     universal_prayer_dedication: 'Para toda persona que la rece — solo, en pareja, en familia o en grupo',
@@ -990,6 +994,63 @@ function buildIntercessorUrl(subdomain) {
   return `/intercesor/?intercesor=${subdomain}`;
 }
 
+function openIntercessorImageModal() {
+  const modal = document.getElementById('intercessorImageModal');
+  const modalImg = document.getElementById('intercessorImageModalImg');
+  const heroImg = document.getElementById('intercessorImg');
+  if (!modal || !modalImg || !heroImg || !heroImg.src) return;
+
+  modalImg.src = heroImg.src;
+  modalImg.alt = heroImg.alt || '';
+  modal.style.display = 'flex';
+  modal.classList.add('is-open');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeIntercessorImageModal() {
+  const modal = document.getElementById('intercessorImageModal');
+  if (!modal) return;
+  modal.classList.remove('is-open');
+  modal.style.display = 'none';
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+
+function initIntercessorImageZoom() {
+  const imgEl = document.getElementById('intercessorImg');
+  const modal = document.getElementById('intercessorImageModal');
+  const closeBtn = document.getElementById('intercessorImageModalClose');
+  if (!imgEl || !modal || !closeBtn) return;
+
+  imgEl.classList.add('is-zoomable');
+  imgEl.setAttribute('role', 'button');
+  imgEl.setAttribute('tabindex', '0');
+  imgEl.setAttribute('aria-label', i18n[currentLang].image_zoom);
+  closeBtn.setAttribute('aria-label', i18n[currentLang].image_zoom_close);
+
+  if (imgEl.dataset.zoomWired === '1') return;
+  imgEl.dataset.zoomWired = '1';
+
+  imgEl.addEventListener('click', openIntercessorImageModal);
+  imgEl.addEventListener('keydown', event => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      openIntercessorImageModal();
+    }
+  });
+
+  closeBtn.addEventListener('click', closeIntercessorImageModal);
+  modal.addEventListener('click', event => {
+    if (event.target === modal) closeIntercessorImageModal();
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && modal.classList.contains('is-open')) {
+      closeIntercessorImageModal();
+    }
+  });
+}
+
 // ── QUICK NAV ──────────────────────────────────────
 function renderQuickNav() {
   const nav = document.getElementById('quickNav');
@@ -1110,6 +1171,7 @@ function renderIntercessorContent(data, meta) {
     imgEl.src = withAssetVersion(data.image);
     imgEl.alt = data.name[lang];
   }
+  initIntercessorImageZoom();
 
   // Optional featured notice shown above tabs
   const noticeWrap = document.getElementById('intercessorNotice');
