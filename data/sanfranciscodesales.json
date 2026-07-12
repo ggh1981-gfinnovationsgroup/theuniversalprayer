@@ -1,0 +1,95 @@
+{
+  "id": "sanfranciscodesales",
+  "name": {
+    "es": "San Francisco de Sales",
+    "en": "Saint Francis de Sales"
+  },
+  "jaculatoria": {
+    "es": "San Francisco de Sales, maestro de mansedumbre y pureza de corazon, ruega por nosotros.",
+    "en": "Saint Francis de Sales, master of gentleness and purity of heart, pray for us."
+  },
+  "color": "#3f4f6f",
+  "image": "/assets/images/sanfranciscodesales.svg",
+  "specialty": {
+    "es": "Discernimiento y vida interior",
+    "en": "Discernment and interior life"
+  },
+  "prayer": {
+    "es": "San Francisco de Sales, pastor sabio y paciente, tu ensenaste que no siempre podemos impedir que los pensamientos pasen por nuestra mente, pero si podemos impedir que hagan nido en el corazon. Alcanzanos la gracia de vigilar nuestra vida interior con humildad, de rechazar la tentacion con paz, y de volver a Dios sin desanimo cada vez que caemos. Intercede por nuestras familias para que aprendamos a orar bien, a vivir con caridad concreta y a caminar con firmeza hacia la santidad diaria. Amen.",
+    "en": "Saint Francis de Sales, wise and patient shepherd, you taught that we cannot always prevent thoughts from passing through our minds, but we can prevent them from nesting in the heart. Obtain for us the grace to watch over our interior life with humility, to reject temptation in peace, and to return to God without discouragement whenever we fall. Intercede for our families so that we may learn to pray well, live concrete charity, and walk firmly toward daily holiness. Amen."
+  },
+  "history": {
+    "es": "San Francisco de Sales nacio en 1567 en el ducado de Saboya. Fue sacerdote, obispo de Ginebra residente en Annecy y uno de los grandes maestros espirituales de la Iglesia. Evangelizo con firmeza y dulzura en tiempos de division, y se hizo famoso por su paciencia pastoral y su lenguaje claro para guiar a laicos, matrimonios y jovenes en la vida cristiana.\n\nSu obra mas conocida, Introduccion a la vida devota, mostro que la santidad no es solo para monasterios: tambien es para quien vive en familia, trabaja y lucha cada dia. Junto con Santa Juana Francisca de Chantal fundo la Orden de la Visitacion.\n\nMurio en 1622 y fue declarado Doctor de la Iglesia. Es patrono de escritores, periodistas y comunicadores por su capacidad para anunciar la verdad con caridad.",
+    "en": "Saint Francis de Sales was born in 1567 in the Duchy of Savoy. He became a priest, then Bishop of Geneva residing in Annecy, and one of the Church's great spiritual masters. He evangelized with firmness and gentleness in a time of division, and became known for pastoral patience and clear language to guide lay people, married couples, and youth in Christian life.\n\nHis best-known work, Introduction to the Devout Life, showed that holiness is not only for monasteries: it is also for people who live in family life, work, and struggle each day. Together with Saint Jane Frances de Chantal, he founded the Order of the Visitation.\n\nHe died in 1622 and was declared a Doctor of the Church. He is patron of writers, journalists, and communicators for his gift of proclaiming truth with charity."
+  },
+  "novena_prayers": {
+    "es": "Cada dia: Senor, dame un corazon manso y humilde como el de Cristo. Por intercesion de San Francisco de Sales, ensename a ordenar mis pensamientos, cuidar mis palabras y elegir siempre la caridad. Amen.",
+    "en": "Each day: Lord, give me a meek and humble heart like Christ's. Through the intercession of Saint Francis de Sales, teach me to order my thoughts, guard my words, and always choose charity. Amen."
+  },
+  "novena": [
+    {
+      "day": 1,
+      "es": "Por un corazon sereno. San Francisco de Sales, ayudame a no actuar por impulso ni por enojo.",
+      "en": "For a serene heart. Saint Francis de Sales, help me not to act by impulse or anger."
+    },
+    {
+      "day": 2,
+      "es": "Por pureza de pensamiento. Ensename a no dejar que la tentacion haga nido en mi interior.",
+      "en": "For purity of thought. Teach me not to let temptation build a nest within me."
+    },
+    {
+      "day": 3,
+      "es": "Por disciplina en la oracion diaria. Que la constancia venza la distraccion.",
+      "en": "For discipline in daily prayer. May perseverance overcome distraction."
+    },
+    {
+      "day": 4,
+      "es": "Por caridad en mis palabras. Que hable con verdad, pero tambien con mansedumbre.",
+      "en": "For charity in my words. May I speak truth, but also with gentleness."
+    },
+    {
+      "day": 5,
+      "es": "Por las familias. Que nuestros hogares sean escuela de paciencia y perdon.",
+      "en": "For families. May our homes become a school of patience and forgiveness."
+    },
+    {
+      "day": 6,
+      "es": "Por quienes luchan con escrupulos, ansiedad o culpa. Que hallen paz en la misericordia de Dios.",
+      "en": "For those struggling with scruples, anxiety, or guilt. May they find peace in God's mercy."
+    },
+    {
+      "day": 7,
+      "es": "Por comunicadores y escritores. Que anuncien la verdad sin herir la caridad.",
+      "en": "For communicators and writers. May they proclaim truth without wounding charity."
+    },
+    {
+      "day": 8,
+      "es": "Por laicos en medio del mundo. Que descubran su camino concreto de santidad.",
+      "en": "For lay people in the middle of the world. May they discover their concrete path to holiness."
+    },
+    {
+      "day": 9,
+      "es": "Por una voluntad firme para elegir el bien. San Francisco de Sales, guia mi vida interior hacia Dios.",
+      "en": "For a firm will to choose the good. Saint Francis de Sales, guide my interior life toward God."
+    }
+  ],
+  "chaplet": {
+    "available": false,
+    "es": "",
+    "en": ""
+  },
+  "litany": {
+    "available": true,
+    "es": "Senor, ten piedad. Cristo, ten piedad. Senor, ten piedad.\nSan Francisco de Sales, doctor de la caridad, ruega por nosotros.\nSan Francisco de Sales, maestro de vida interior, ruega por nosotros.\nSan Francisco de Sales, pastor paciente, ruega por nosotros.\nSan Francisco de Sales, guia de laicos y familias, ruega por nosotros.\nSan Francisco de Sales, protector de comunicadores, ruega por nosotros.\nSan Francisco de Sales, amigo de los que luchan en pensamiento y corazon, ruega por nosotros.\nCordero de Dios, que quitas el pecado del mundo, ten misericordia de nosotros.",
+    "en": "Lord, have mercy. Christ, have mercy. Lord, have mercy.\nSaint Francis de Sales, doctor of charity, pray for us.\nSaint Francis de Sales, master of interior life, pray for us.\nSaint Francis de Sales, patient shepherd, pray for us.\nSaint Francis de Sales, guide of lay people and families, pray for us.\nSaint Francis de Sales, protector of communicators, pray for us.\nSaint Francis de Sales, friend of those who struggle in thought and heart, pray for us.\nLamb of God, who takes away the sins of the world, have mercy on us."
+  },
+  "miracles": {
+    "available": true,
+    "es": "Su mayor milagro pastoral fue la conversion de muchas personas mediante paciencia, cartas y predicacion clara, en un contexto dificil para la fe catolica.\n\nSe conservan numerosos testimonios de su direccion espiritual y de paz interior obtenida por quienes siguieron su ensenanza. Su herencia principal es una escuela de santidad cotidiana para personas comunes.",
+    "en": "His greatest pastoral miracle was the conversion of many people through patience, letters, and clear preaching in a difficult context for the Catholic faith.\n\nMany testimonies remain of spiritual direction and interior peace received by those who followed his teaching. His main legacy is a school of daily holiness for ordinary people."
+  },
+  "feast_day": {
+    "es": "24 de enero",
+    "en": "January 24"
+  }
+}

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="sfs-bg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#0f1626"/>
+      <stop offset="100%" stop-color="#060a12"/>
+    </radialGradient>
+    <linearGradient id="sfs-r1" x1="50%" y1="0%" x2="10%" y2="100%">
+      <stop offset="0%" stop-color="#6f84b8" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#1f2d4a" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="sfs-r2" x1="50%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#f5e060" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0.35"/>
+    </linearGradient>
+    <filter id="sfs-gl">
+      <feGaussianBlur stdDeviation="9" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="400" height="600" fill="url(#sfs-bg)"/>
+  <rect width="400" height="600" fill="#151f34" opacity="0.12"/>
+
+  <polygon points="198,264 -20,610 112,610" fill="url(#sfs-r1)" filter="url(#sfs-gl)" opacity="0.72"/>
+  <polygon points="202,264 420,610 288,610" fill="url(#sfs-r2)" filter="url(#sfs-gl)" opacity="0.68"/>
+
+  <!-- Bishop cassock and cape -->
+  <path d="M158,170 Q132,210 122,430 Q200,452 278,430 Q268,210 242,170 Z" fill="#1a2235" opacity="0.9"/>
+  <path d="M152,168 Q116,196 102,330 Q120,338 144,322 Q150,236 174,184 Z" fill="#25324d" opacity="0.84"/>
+  <path d="M248,168 Q284,196 298,330 Q280,338 256,322 Q250,236 226,184 Z" fill="#25324d" opacity="0.84"/>
+
+  <!-- Bishop stole hint -->
+  <path d="M188,178 L182,420" stroke="#b58f42" stroke-width="4" opacity="0.56"/>
+  <path d="M212,178 L218,420" stroke="#b58f42" stroke-width="4" opacity="0.56"/>
+
+  <!-- Book and quill symbols -->
+  <rect x="128" y="360" width="84" height="56" rx="6" fill="#394b6e" opacity="0.82"/>
+  <line x1="170" y1="362" x2="170" y2="414" stroke="#d6d6d0" stroke-width="1.2" opacity="0.65"/>
+  <path d="M236,360 Q260,336 290,346 Q268,362 248,380 Q242,374 236,360 Z" fill="#e8e3c8" opacity="0.78"/>
+  <line x1="246" y1="372" x2="286" y2="350" stroke="#b08c42" stroke-width="1.8" opacity="0.75"/>
+
+  <!-- Neck and head -->
+  <rect x="193" y="144" width="14" height="18" rx="4" fill="#d2a578" opacity="0.9"/>
+  <ellipse cx="200" cy="108" rx="27" ry="31" fill="#d2a578" opacity="0.93"/>
+
+  <!-- Hair and short beard -->
+  <path d="M173,103 Q176,68 200,64 Q224,68 227,103 Q219,82 200,80 Q181,82 173,103 Z" fill="#4a3320" opacity="0.88"/>
+  <path d="M186,126 Q194,134 200,134 Q206,134 214,126 Q208,130 200,130 Q192,130 186,126 Z" fill="#4a3320" opacity="0.58"/>
+
+  <!-- Eyes -->
+  <ellipse cx="189" cy="108" rx="3.8" ry="3.2" fill="#2a1b12"/>
+  <ellipse cx="211" cy="108" rx="3.8" ry="3.2" fill="#2a1b12"/>
+
+  <!-- Mitre -->
+  <path d="M178,78 Q200,40 222,78 L216,108 L184,108 Z" fill="#d8bf72" opacity="0.72"/>
+  <line x1="200" y1="78" x2="200" y2="108" stroke="#9f7f35" stroke-width="2" opacity="0.72"/>
+
+  <!-- Halo -->
+  <circle cx="200" cy="108" r="54" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-opacity="0.62"/>
+  <circle cx="200" cy="108" r="48" fill="none" stroke="#e8c97a" stroke-width="0.5" stroke-opacity="0.24"/>
+
+  <!-- Motto ribbon -->
+  <rect x="100" y="462" width="200" height="22" rx="5" fill="#0c1220" opacity="0.78"/>
+  <text x="200" y="477" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="#d8c07a" font-style="italic">Cor ad cor loquitur</text>
+
+  <!-- Frame -->
+  <rect x="6" y="6" width="388" height="588" rx="8" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.5"/>
+  <rect x="12" y="12" width="376" height="576" rx="5" fill="none" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.18"/>
+
+  <!-- Name panel -->
+  <rect x="18" y="528" width="364" height="66" rx="6" fill="#060a12" opacity="0.88"/>
+  <line x1="46" y1="535" x2="354" y2="535" stroke="#c9a84c" stroke-width="0.5" stroke-opacity="0.28"/>
+  <text x="200" y="548" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" fill="#c9a84c" letter-spacing="2.5" opacity="0.9">SAN FRANCISCO DE SALES · SAINT FRANCIS DE SALES</text>
+  <text x="200" y="567" text-anchor="middle" font-family="Georgia,serif" font-size="12.5" fill="#9ab0e8" font-style="italic">"Doctor de la caridad"</text>
+  <text x="200" y="585" text-anchor="middle" font-family="Georgia,serif" font-size="10.5" fill="#f5e060" font-style="italic" opacity="0.82">"Doctor of charity"</text>
+</svg>
