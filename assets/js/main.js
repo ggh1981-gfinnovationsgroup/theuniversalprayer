@@ -1063,23 +1063,29 @@ async function shareIntercessorImage() {
   const intercessorName = document.getElementById('intercessorName');
   if (!modal || !modalImg || !heroImg) return;
 
-  const title = intercessorName?.textContent || heroImg.alt || 'The Universal Prayer';
   const pageUrl = window.location.href;
   const imageUrl = modalImg.src || heroImg.src;
-  const text = `${title}\n${pageUrl}\n${imageUrl}`;
+
+  async function getShareFile(url) {
+    const response = await fetch(url, { credentials: 'same-origin' });
+    const blob = await response.blob();
+    const mimeType = blob.type || 'image/png';
+    const extension = mimeType.includes('jpeg') ? 'jpg' : mimeType.split('/').pop() || 'png';
+    return new File([blob], `intercessor.${extension}`, { type: mimeType });
+  }
 
   try {
-    if (navigator.share) {
-      await navigator.share({ title, text, url: pageUrl });
+    const shareFile = await getShareFile(imageUrl);
+    if (navigator.share && (!navigator.canShare || navigator.canShare({ files: [shareFile] }))) {
+      await navigator.share({ files: [shareFile], url: pageUrl });
       return;
     }
 
-    const copyText = `${title}\n${pageUrl}\n${imageUrl}`;
     if (navigator.clipboard?.writeText) {
-      await navigator.clipboard.writeText(copyText);
+      await navigator.clipboard.writeText(pageUrl);
     } else {
       const ta = document.createElement('textarea');
-      ta.value = copyText;
+      ta.value = pageUrl;
       ta.setAttribute('readonly', '');
       ta.style.position = 'fixed';
       ta.style.opacity = '0';
