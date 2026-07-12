@@ -1,0 +1,31 @@
+{
+  "n": 12,
+  "theme": { "es": "El Salmo como Escuela de Oración", "en": "The Psalm as School of Prayer" },
+  "verse": { "es": "«El Señor es mi pastor; nada me falta.»", "en": "\"The Lord is my shepherd; I lack nothing.\"", "ref": "Sal 23, 1" },
+  "svg": "/desierto/33dias/svgs/palabra.svg",
+  "reflection": {
+    "es": [
+      "Los Salmos son la escuela de oración más antigua del mundo cristiano. Jesús los rezaba. María los cantaba. Los apóstoles los tenían memorizados. La Iglesia los ora cada día en la Liturgia de las Horas. ¿Por qué? Porque los Salmos dicen lo que el alma humana necesita decir pero a veces no sabe cómo.",
+      "En los Salmos hay alabanza, pero también hay lamento. Hay gratitud y hay queja. Hay confianza ciega y hay momentos de duda cruda. Y todo eso se le dice a Dios sin censura. Eso es lo que hace al Salmo tan humano y tan divino a la vez: es la voz humana hablándole a Dios con total honestidad.",
+      "Hoy te propongo que uses el Salmo 23 como plantilla de tu propia oración. No para copiarlo sino para habitarlo: ¿De qué 'praderas verdes' has gozado últimamente? ¿Por qué 'valle oscuro' estás pasando ahora? ¿Qué mesa ha preparado el Señor para ti en medio de los problemas?"
+    ],
+    "en": [
+      "The Psalms are the oldest school of prayer in the Christian world. Jesus prayed them. Mary sang them. The apostles had them memorized. The Church prays them every day in the Liturgy of the Hours. Why? Because the Psalms say what the human soul needs to say but sometimes does not know how.",
+      "In the Psalms there is praise, but also lament. There is gratitude and there is complaint. There is blind trust and there are moments of raw doubt. And all of that is said to God without censorship. That is what makes the Psalm so human and so divine at once: it is the human voice speaking to God with total honesty.",
+      "Today I invite you to use Psalm 23 as a template for your own prayer. Not to copy it but to inhabit it: What 'green pastures' have you enjoyed recently? Through what 'dark valley' are you passing now? What table has the Lord set for you in the midst of your problems?"
+    ]
+  },
+  "psalm": {
+    "es": "El Señor es mi pastor; nada me falta.\nEn verdes praderas me hace reposar;\nme conduce hacia fuentes tranquilas\ny repara mis fuerzas.\nMe guía por senderos de justicia\nen honor a su nombre.",
+    "en": "The Lord is my shepherd, I lack nothing.\nHe makes me lie down in green pastures,\nhe leads me beside quiet waters,\nhe refreshes my soul.\nHe guides me along the right paths\nfor his name's sake.",
+    "ref": "Sal 23, 1-3"
+  },
+  "prayer": {
+    "es": "Señor, como el salmista hoy te digo: Tú eres mi pastor. Aunque a veces no lo sienta, lo creo. Guíame por senderos de justicia. Cuando pase por valles oscuros, recuérdame que tú vas delante. Y que tu bondad y misericordia me sigan todos los días de mi vida. Amén.",
+    "en": "Lord, like the psalmist today I tell you: You are my shepherd. Even when I do not feel it, I believe it. Guide me along right paths. When I pass through dark valleys, remind me that you go before me. And that your goodness and mercy will follow me all the days of my life. Amen."
+  },
+  "act": {
+    "es": "Lee el Salmo 23 completo en voz alta. Luego adapta tres de sus imágenes a tu vida real hoy: '¿Cuáles son mis praderas verdes ahora? ¿Cuál es mi valle oscuro actual? ¿Qué mesa ha preparado Dios para mí esta semana?' Escríbelas.",
+    "en": "Read Psalm 23 aloud in full. Then adapt three of its images to your real life today: 'What are my green pastures right now? What is my current dark valley? What table has God prepared for me this week?' Write them down."
+  }
+}

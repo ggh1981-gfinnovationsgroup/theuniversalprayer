@@ -1,0 +1,31 @@
+{
+  "n": 10,
+  "theme": { "es": "Lectio: Orar desde el Texto", "en": "Lectio: Praying from the Text" },
+  "verse": { "es": "«Abre mis ojos para que contemple las maravillas de tu ley.»", "en": "\"Open my eyes that I may see wonderful things in your law.\"", "ref": "Sal 119, 18" },
+  "svg": "/desierto/33dias/svgs/palabra.svg",
+  "reflection": {
+    "es": [
+      "El tercer paso de la Lectio Divina es la oratio — la oración que nace del texto. Después de leer y meditar, el alma naturalmente quiere responder. Y esa respuesta — espontánea, personal, salida del texto mismo — es una de las formas más genuinas de oración.",
+      "Esta oración no tiene fórmulas. No es repetir una oración aprendida de memoria. Es decirle a Dios lo que el texto ha movido en ti: tu gratitud, tu asombro, tu resistencia, tu miedo, tu deseo. San Agustín oraba así: tomaba las palabras de la Escritura y las convertía en su grito personal a Dios.",
+      "La Palabra de Dios y la oración personal no son dos cosas separadas — son un diálogo. Dios habla en la Escritura; tú respondes en la oración. Y en ese ida y vuelta el alma crece."
+    ],
+    "en": [
+      "The third step of Lectio Divina is oratio — the prayer that is born from the text. After reading and meditating, the soul naturally wants to respond. And that response — spontaneous, personal, arising from the text itself — is one of the most genuine forms of prayer.",
+      "This prayer has no formulas. It is not repeating a memorized prayer. It is telling God what the text has stirred in you: your gratitude, your wonder, your resistance, your fear, your desire. Saint Augustine prayed this way: he took the words of Scripture and turned them into his personal cry to God.",
+      "The Word of God and personal prayer are not two separate things — they are a dialogue. God speaks in Scripture; you respond in prayer. And in that back-and-forth the soul grows."
+    ]
+  },
+  "psalm": {
+    "es": "Instrúyeme, Señor, en el camino de tus decretos\ny lo custodiaré con esmero.\nDame inteligencia y guardaré tu ley;\nla cumpliré con todo el corazón.",
+    "en": "Teach me, Lord, the way of your decrees,\nthat I may follow it to the end.\nGive me understanding, so that I may keep your law\nand obey it with all my heart.",
+    "ref": "Sal 119, 33-34"
+  },
+  "prayer": {
+    "es": "Señor, hoy quiero orar con tus propias palabras. Toma lo que he leído y ponlo en mi boca como oración. Que no hable yo de mí mismo sino que tu Palabra sea el origen de lo que te digo. Así como el salmista convirtió su dolor en salmo, convierte mi lectura en oración viva. Amén.",
+    "en": "Lord, today I want to pray with your own words. Take what I have read and put it in my mouth as prayer. May I not speak only of myself, but may your Word be the origin of what I say to you. Just as the psalmist turned his pain into psalm, turn my reading into living prayer. Amen."
+  },
+  "act": {
+    "es": "Lee Lc 1, 46-55 (el Magnificat de María). Luego escribe tu propio 'magnificat' de tres líneas: tres cosas concretas por las que hoy puedes decirle a Dios: 'Mi alma engrandece al Señor porque...' Sé específico con tu vida real.",
+    "en": "Read Luke 1:46-55 (Mary's Magnificat). Then write your own three-line 'magnificat': three concrete things for which today you can say to God: 'My soul glorifies the Lord because...' Be specific about your real life."
+  }
+}

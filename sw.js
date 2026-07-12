@@ -3,7 +3,7 @@
    Cache-first strategy: works fully offline after first load
    ===================================================== */
 
-const CACHE = 'tup-v71';
+const CACHE = 'tup-v72';
 
 // All files to pre-cache on install
 const PRECACHE_URLS = [
@@ -144,6 +144,14 @@ const PRECACHE_URLS = [
   '/assets/images/lourdes.svg',
   '/assets/images/santamariagoretti.svg',
   '/assets/images/preciosisimasangre.svg',
+  '/desierto/33dias/',
+  '/desierto/33dias/index.html',
+  '/assets/images/desierto-33-hero.svg',
+  '/desierto/33dias/svgs/silencio.svg',
+  '/desierto/33dias/svgs/palabra.svg',
+  '/desierto/33dias/svgs/oracion.svg',
+  '/desierto/33dias/svgs/vida.svg',
+  '/desierto/33dias/svgs/fruto.svg',
   '/assets/images/private-search/dreams.svg',
   '/assets/images/private-search/barbara.svg',
   '/assets/images/private-search/fabiola.svg',

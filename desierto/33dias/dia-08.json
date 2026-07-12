@@ -1,0 +1,31 @@
+{
+  "n": 8,
+  "theme": { "es": "Lectio: Leer Despacio", "en": "Lectio: Reading Slowly" },
+  "verse": { "es": "«Tu palabra es lámpara para mis pies y luz en mi sendero.»", "en": "\"Your word is a lamp for my feet, a light on my path.\"", "ref": "Sal 119, 105" },
+  "svg": "/desierto/33dias/svgs/palabra.svg",
+  "reflection": {
+    "es": [
+      "La Lectio Divina — 'lectura divina' — es la forma más antigua y probada de escuchar a Dios a través de su Palabra. No se trata de leer mucho sino de leer profundo. Los monjes medievales decían: 'No corras por la Escritura; deja que la Escritura corra por ti.' Esta semana aprenderás sus cuatro pasos. Hoy, el primero: leer despacio.",
+      "Leer despacio significa elegir un texto corto — no más de cinco o seis versículos — y leerlo dos o tres veces, en voz alta si puedes, prestando atención a cada palabra. Cuando una palabra o frase te detenga, no pases de largo. Quédate ahí. Eso que te detuvo es una invitación.",
+      "La Escritura no es un libro de información sino de formación. Dios no habla solo al intelecto; habla al corazón, a la memoria, a la historia personal. Por eso la misma frase puede significar algo diferente según el día, el dolor o la alegría que llevas dentro."
+    ],
+    "en": [
+      "Lectio Divina — 'divine reading' — is the oldest and most proven way of listening to God through his Word. It is not about reading much but about reading deeply. Medieval monks said: 'Do not run through Scripture; let Scripture run through you.' This week you will learn its four steps. Today, the first: reading slowly.",
+      "Reading slowly means choosing a short text — no more than five or six verses — and reading it two or three times, aloud if you can, paying attention to each word. When a word or phrase stops you, do not pass by. Stay there. What stopped you is an invitation.",
+      "Scripture is not a book of information but of formation. God does not speak only to the intellect; he speaks to the heart, to memory, to personal history. That is why the same phrase can mean something different depending on the day, the pain, or the joy you carry inside."
+    ]
+  },
+  "psalm": {
+    "es": "¡Qué dulces son a mi paladar tus palabras,\nmás que la miel en mi boca!\nPor tus preceptos adquiero inteligencia;\npor eso odio todo camino de falsedad.",
+    "en": "How sweet are your words to my taste,\nsweeter than honey to my mouth!\nI gain understanding from your precepts;\ntherefore I hate every wrong path.",
+    "ref": "Sal 119, 103-104"
+  },
+  "prayer": {
+    "es": "Señor, hoy quiero leer tu Palabra de otra manera. No como tarea sino como encuentro. Abre mis ojos para que vea las maravillas de tu ley. Que una sola palabra tuya ilumine este día más que mil palabras mías. Habla, Señor. Tu siervo escucha. Amén.",
+    "en": "Lord, today I want to read your Word in a different way. Not as a task but as an encounter. Open my eyes so that I may see the wonders of your law. May a single word from you illuminate this day more than a thousand of my own words. Speak, Lord. Your servant is listening. Amen."
+  },
+  "act": {
+    "es": "Lee Juan 1, 1-5 despacio, dos veces. La segunda vez, detente en la palabra o frase que más resuene. No la analices: solo siéntala. Si quieres, escríbela y llévala contigo durante el día.",
+    "en": "Read John 1:1-5 slowly, twice. The second time, stop at the word or phrase that resonates most. Do not analyze it: just feel it. If you wish, write it down and carry it with you through the day."
+  }
+}

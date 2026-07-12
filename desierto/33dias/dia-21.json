@@ -1,0 +1,31 @@
+{
+  "n": 21,
+  "theme": { "es": "Revisión de la Tercera Semana", "en": "Third Week Review" },
+  "verse": { "es": "«El Espíritu viene en ayuda de nuestra debilidad, pues no sabemos orar como es debido.»", "en": "\"The Spirit helps us in our weakness. We do not know what we ought to pray for, but the Spirit himself intercedes for us.\"", "ref": "Rm 8, 26" },
+  "svg": "/desierto/33dias/svgs/oracion.svg",
+  "reflection": {
+    "es": [
+      "San Pablo dice algo liberador: no sabemos orar como es debido. No es una crítica — es una descripción de nuestra condición humana. Y la respuesta de Dios no es corregirnos con un manual de instrucciones; es enviarnos al Espíritu Santo que ora en nosotros con gemidos inefables. La oración es, al fondo, obra de Dios más que obra nuestra.",
+      "Esta semana has explorado distintas formas de oración: mental, el Padre Nuestro en profundidad, la Oración de Jesús, el Rosario como contemplación, la adoración silenciosa, la oración en la oscuridad. Probablemente alguna forma te llegó más que otras. Eso no es accidente — el Espíritu está mostrándote el lenguaje que mejor conecta con tu alma.",
+      "Hoy es día de integrar. No de añadir más. De sentarte tranquilamente y preguntarte: ¿Qué forma de oración me ha acercado más a Dios esta semana? ¿Qué quiero llevar de aquí en adelante como práctica regular? No tienes que practicarlas todas — solo las que enciendan algo verdadero en ti."
+    ],
+    "en": [
+      "Saint Paul says something liberating: we do not know what we ought to pray for. That is not a criticism — it is a description of our human condition. And God's response is not to correct us with an instruction manual; it is to send us the Holy Spirit who prays within us with inexpressible groans. Prayer is, at its root, God's work more than ours.",
+      "This week you have explored different forms of prayer: mental prayer, the Our Father in depth, the Jesus Prayer, the Rosary as contemplation, silent adoration, praying in the dark. Probably some forms reached you more than others. That is not an accident — the Spirit is showing you the language that best connects with your soul.",
+      "Today is a day to integrate. Not to add more. To sit quietly and ask yourself: What form of prayer has brought me closest to God this week? What do I want to carry forward as a regular practice? You do not need to practice them all — only the ones that ignite something true in you."
+    ]
+  },
+  "psalm": {
+    "es": "Señor, escucha mi voz cuando te llamo;\nten compasión de mí y respóndeme.\nMi corazón me dice de tu parte:\n'Busca mi rostro.' Tu rostro busco, Señor.",
+    "en": "Hear my voice when I call, Lord;\nbe merciful to me and answer me.\nMy heart says of you, 'Seek his face!'\nYour face, Lord, I will seek.",
+    "ref": "Sal 27, 7-8"
+  },
+  "prayer": {
+    "es": "Espíritu Santo, gracias por orar en mí cuando yo no sé cómo. Esta semana no he orado perfectamente, pero he orado. Toma todo lo que he hecho — lo bueno y lo torpe — y preséntalo al Padre. Que lo que he sembrado en oración dé fruto a su tiempo. Amén.",
+    "en": "Holy Spirit, thank you for praying in me when I do not know how. This week I have not prayed perfectly, but I have prayed. Take all I have done — the good and the clumsy — and present it to the Father. May what I have sown in prayer bear fruit in its time. Amen."
+  },
+  "act": {
+    "es": "Elige una forma de oración de esta semana para convertirla en práctica diaria los próximos quince días. Escríbela aquí o en un papel: 'Voy a orar [qué forma] durante [cuánto tiempo] cada [cuándo].' Sin compromisos imposibles: cinco minutos diarios sostenidos valen más que una hora una vez por semana.",
+    "en": "Choose one form of prayer from this week to make a daily practice for the next fifteen days. Write it here or on paper: 'I will pray [which form] for [how long] each [when].' No impossible commitments: five sustained daily minutes are worth more than one hour once a week."
+  }
+}

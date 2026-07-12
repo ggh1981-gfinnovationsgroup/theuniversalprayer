@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" role="img" aria-label="33 Días en el Desierto — Silencio, Escucha y Discernimiento">
+  <defs>
+    <linearGradient id="dh-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#060c1c"/>
+      <stop offset="55%" stop-color="#0e1632"/>
+      <stop offset="100%" stop-color="#15203e"/>
+    </linearGradient>
+    <linearGradient id="dh-dune" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c1f0e"/>
+      <stop offset="100%" stop-color="#160e04"/>
+    </linearGradient>
+    <radialGradient id="dh-glow" cx="50%" cy="38%" r="38%">
+      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="dh-mooninner" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e8c97a" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="220" fill="url(#dh-sky)"/>
+  <!-- Ambient glow -->
+  <ellipse cx="200" cy="84" rx="170" ry="85" fill="url(#dh-glow)"/>
+
+  <!-- Stars -->
+  <circle cx="42"  cy="22" r="1.1" fill="#e8c97a" opacity="0.8"/>
+  <circle cx="97"  cy="14" r="0.8" fill="#fff"    opacity="0.6"/>
+  <circle cx="160" cy="28" r="0.9" fill="#e8c97a" opacity="0.65"/>
+  <circle cx="240" cy="10" r="1.1" fill="#fff"    opacity="0.7"/>
+  <circle cx="310" cy="20" r="0.8" fill="#e8c97a" opacity="0.75"/>
+  <circle cx="362" cy="11" r="0.9" fill="#fff"    opacity="0.6"/>
+  <circle cx="75"  cy="48" r="0.6" fill="#fff"    opacity="0.45"/>
+  <circle cx="330" cy="42" r="0.6" fill="#fff"    opacity="0.45"/>
+  <circle cx="185" cy="44" r="0.5" fill="#fff"    opacity="0.35"/>
+
+  <!-- Moon ring -->
+  <circle cx="200" cy="66" r="24" fill="url(#dh-mooninner)"/>
+  <circle cx="200" cy="66" r="24" fill="none" stroke="#c9a84c" stroke-width="1.6" opacity="0.85"/>
+  <circle cx="200" cy="66" r="20" fill="none" stroke="#c9a84c" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Cross inside moon -->
+  <line x1="200" y1="52" x2="200" y2="80" stroke="#c9a84c" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="186" y1="66" x2="214" y2="66" stroke="#c9a84c" stroke-width="2.4" stroke-linecap="round"/>
+
+  <!-- Sound / voice waves (right of moon) -->
+  <path d="M 228 57 Q 246 66 228 75" fill="none" stroke="#c9a84c" stroke-width="2"   stroke-linecap="round" opacity="0.75"/>
+  <path d="M 238 50 Q 263 66 238 82" fill="none" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round" opacity="0.50"/>
+  <path d="M 248 44 Q 279 66 248 88" fill="none" stroke="#c9a84c" stroke-width="1"   stroke-linecap="round" opacity="0.28"/>
+
+  <!-- Silence dot (left) -->
+  <circle cx="168" cy="66" r="3.5" fill="none" stroke="#c9a84c" stroke-width="1.4" opacity="0.55"/>
+  <circle cx="155" cy="66" r="3"   fill="none" stroke="#c9a84c" stroke-width="1"   opacity="0.35"/>
+
+  <!-- Dune / desert silhouette -->
+  <path d="M 0 155 Q 80 132 180 148 Q 270 164 400 136 L 400 220 L 0 220 Z" fill="url(#dh-dune)"/>
+  <!-- Distant dune edge highlight -->
+  <path d="M 0 155 Q 80 132 180 148 Q 270 164 400 136" fill="none" stroke="#c9a84c" stroke-width="0.6" opacity="0.22"/>
+
+  <!-- Title -->
+  <text x="200" y="175" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="15.5" font-weight="700" fill="#e8c97a" letter-spacing="0.6">33 Días en el Desierto</text>
+  <!-- ES subtitle -->
+  <text x="200" y="192" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="#c9a84c" font-style="italic" opacity="0.88">Silencio · Escucha · Discernimiento</text>
+  <!-- EN subtitle -->
+  <text x="200" y="208" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#8a90a8" font-style="italic" opacity="0.70">Silence · Listening · Discernment</text>
+</svg>

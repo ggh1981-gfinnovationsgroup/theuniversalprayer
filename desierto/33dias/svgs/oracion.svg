@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" aria-hidden="true">
+  <defs>
+    <radialGradient id="o-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#131c38"/>
+      <stop offset="100%" stop-color="#0a0f20"/>
+    </radialGradient>
+    <radialGradient id="o-glow" cx="50%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="110" height="110" rx="18" fill="url(#o-bg)"/>
+  <ellipse cx="55" cy="72" rx="30" ry="10" fill="url(#o-glow)"/>
+  <!-- Praying hands -->
+  <path d="M 46 72 L 40 54 Q 39 48 44 46 L 46 46 L 50 62" fill="none" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 64 72 L 70 54 Q 71 48 66 46 L 64 46 L 60 62" fill="none" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 50 62 L 55 78 L 60 62" fill="none" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Flame above hands -->
+  <path d="M 55 22 C 48 30 45 36 50 40 C 52 42 55 43 55 43 C 55 43 58 42 60 40 C 65 36 62 30 55 22 Z" fill="none" stroke="#e8c97a" stroke-width="1.8" stroke-linecap="round" opacity="0.9"/>
+  <path d="M 55 28 C 52 33 51 36 53 38 C 54 39 55 39.5 55 39.5 C 55 39.5 56 39 57 38 C 59 36 58 33 55 28 Z" fill="#c9a84c" opacity="0.35"/>
+  <!-- Label -->
+  <text x="55" y="97" text-anchor="middle" font-family="Georgia,serif" font-size="8.5" fill="#c9a84c" font-style="italic">La Oración</text>
+  <text x="55" y="107" text-anchor="middle" font-family="Georgia,serif" font-size="7" fill="#8a90a8" font-style="italic" opacity="0.75">Prayer</text>
+</svg>

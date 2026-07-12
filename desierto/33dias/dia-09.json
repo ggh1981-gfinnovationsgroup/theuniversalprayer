@@ -1,0 +1,31 @@
+{
+  "n": 9,
+  "theme": { "es": "Lectio: Meditar", "en": "Lectio: Meditating" },
+  "verse": { "es": "«Medito tus mandatos que tanto amo; los medito sin cesar.»", "en": "\"I meditate on your precepts and consider your ways; I delight in your decrees.\"", "ref": "Sal 119, 15" },
+  "svg": "/desierto/33dias/svgs/palabra.svg",
+  "reflection": {
+    "es": [
+      "El segundo paso de la Lectio Divina es la meditación — en latín, meditatio. Para los antiguos monjes, meditar no era lo que hoy entendemos por meditación (vaciar la mente). Era rumiar: como una vaca que mastica el alimento despacio para que el cuerpo lo absorba. La Palabra se mastica repetida, saboreada, hasta que entra en la vida.",
+      "Meditar un texto bíblico significa hacerse preguntas desde adentro: ¿A quién le habla este pasaje? ¿Hay alguien en mi vida que se parece a este personaje? ¿Qué le dice Jesús que también me dice a mí? No es exégesis académica — es conversación personal con el texto.",
+      "La meditación es el puente entre leer y orar. Sin meditación, el texto queda en la cabeza. Con meditación, el texto desciende al corazón y desde ahí transforma."
+    ],
+    "en": [
+      "The second step of Lectio Divina is meditation — in Latin, meditatio. For the ancient monks, to meditate was not what we understand by meditation today (emptying the mind). It was to ruminate: like a cow slowly chewing food so that the body can absorb it. The Word is chewed repeatedly, savored, until it enters life.",
+      "Meditating on a biblical text means asking questions from within: Who is this passage speaking to? Is there anyone in my life who resembles this character? What does Jesus say to him that he also says to me? It is not academic exegesis — it is personal conversation with the text.",
+      "Meditation is the bridge between reading and praying. Without meditation, the text stays in the head. With meditation, the text descends into the heart and from there it transforms."
+    ]
+  },
+  "psalm": {
+    "es": "Me alegro en el camino de tus mandatos\nmás que en toda riqueza.\nMedito tus mandatos que tanto amo;\nlos medito sin cesar.",
+    "en": "I rejoice in following your statutes\nas one rejoices in great riches.\nI meditate on your precepts\nand consider your ways.",
+    "ref": "Sal 119, 14-15"
+  },
+  "prayer": {
+    "es": "Espíritu Santo, tú eres el verdadero maestro de la Escritura. Hoy no quiero solo entender el texto con la mente; quiero que descienda a mi corazón. Que la Palabra de hoy quede en mí como semilla que germina lentamente. Amén.",
+    "en": "Holy Spirit, you are the true teacher of Scripture. Today I do not want to merely understand the text with my mind; I want it to descend into my heart. May today's Word remain in me as a seed that slowly germinates. Amen."
+  },
+  "act": {
+    "es": "Toma el texto de ayer (Jn 1, 1-5) o uno nuevo: Lc 5, 4-6 ('Rema mar adentro'). Después de leerlo, pregúntate: ¿Qué me pide Jesús en este momento de mi vida que me da miedo hacer? Quédate con esa pregunta durante el día.",
+    "en": "Take yesterday's text (John 1:1-5) or a new one: Luke 5:4-6 ('Put out into deep water'). After reading it, ask yourself: What is Jesus asking me to do in this moment of my life that I am afraid to do? Sit with that question throughout the day."
+  }
+}

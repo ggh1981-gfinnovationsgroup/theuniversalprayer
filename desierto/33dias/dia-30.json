@@ -1,0 +1,31 @@
+{
+  "n": 30,
+  "theme": { "es": "El Discernimiento Concreto", "en": "Concrete Discernment" },
+  "verse": { "es": "«Por sus frutos los conoceréis.»", "en": "\"By their fruit you will recognize them.\"", "ref": "Mt 7, 16" },
+  "svg": "/desierto/33dias/svgs/fruto.svg",
+  "reflection": {
+    "es": [
+      "El discernimiento no es una habilidad mística reservada a los santos. Es una competencia espiritual que se desarrolla con la práctica. Y tiene criterios claros que la Iglesia ha elaborado durante siglos, especialmente a través de san Ignacio de Loyola.",
+      "El criterio principal es el de los frutos: ¿Lo que estoy pensando hacer, eligiendo o creyendo produce paz, verdad, caridad y humildad? ¿O produce orgullo, agitación, separación de Dios y del prójimo? Los frutos buenos son obra del Espíritu Santo (Gal 5, 22-23). Los frutos amargos, aunque vengan envueltos en apariencia espiritual, no son de Dios.",
+      "El discernimiento también incluye la consolación y la desolación espiritual. Consolación: paz profunda, deseo de bien, apertura a Dios. Desolación: oscuridad, agitación, alejamiento de Dios, deseo de mal. Ignacio enseñaba: en desolación, no tomes decisiones importantes. En consolación, discernir con sobriedad. Nunca sin oración ni sin director espiritual para las decisiones mayores."
+    ],
+    "en": [
+      "Discernment is not a mystical skill reserved for saints. It is a spiritual competence developed with practice. And it has clear criteria that the Church has developed over centuries, especially through Saint Ignatius of Loyola.",
+      "The main criterion is that of fruits: Does what I am thinking of doing, choosing, or believing produce peace, truth, charity, and humility? Or does it produce pride, agitation, separation from God and others? Good fruits are the work of the Holy Spirit (Gal 5:22-23). Bitter fruits, even if wrapped in spiritual appearance, are not from God.",
+      "Discernment also includes spiritual consolation and desolation. Consolation: deep peace, desire for good, openness to God. Desolation: darkness, agitation, moving away from God, desire for evil. Ignatius taught: in desolation, do not make important decisions. In consolation, discern soberly. Never without prayer or spiritual direction for major decisions."
+    ]
+  },
+  "psalm": {
+    "es": "Pruébame, Señor, y examíname;\naquilata mis entrañas y mi corazón;\npues tengo ante los ojos tu misericordia\ny camino según tu verdad.",
+    "en": "Test me, Lord, and try me,\nexamine my heart and my mind;\nfor I have always been mindful of your unfailing love\nand have lived in reliance on your faithfulness.",
+    "ref": "Sal 26, 2-3"
+  },
+  "prayer": {
+    "es": "Espíritu Santo, dame el don del discernimiento. Que sepa distinguir tu voz de mis propios deseos, de las voces del mundo y del enemigo. Dame paz para reconocer el bien y fortaleza para elegirlo aunque cueste. Que mis frutos sean el testimonio de que te he escuchado. Amén.",
+    "en": "Holy Spirit, give me the gift of discernment. May I know how to distinguish your voice from my own desires, from the voices of the world and of the enemy. Give me peace to recognize the good and strength to choose it even when it costs. May my fruits be the testimony that I have listened to you. Amen."
+  },
+  "act": {
+    "es": "Piensa en una decisión que tengas pendiente — grande o pequeña. Aplica el criterio de los frutos: si eliges A, ¿qué frutos probables produce? ¿Paz o agitación? ¿Caridad o egoísmo? ¿Acerca a Dios o aleja? Haz lo mismo con B. No decidas todavía — solo observa los frutos hipotéticos.",
+    "en": "Think of a pending decision — large or small. Apply the fruit criterion: if you choose A, what likely fruits does it produce? Peace or agitation? Charity or selfishness? Closeness to God or distance? Do the same with B. Do not decide yet — just observe the hypothetical fruits."
+  }
+}

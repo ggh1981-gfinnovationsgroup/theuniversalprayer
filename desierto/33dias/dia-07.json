@@ -1,0 +1,31 @@
+{
+  "n": 7,
+  "theme": { "es": "Revisión de la Primera Semana", "en": "First Week Review" },
+  "verse": { "es": "«Crea en mí un corazón puro, oh Dios, y renueva en mí un espíritu firme.»", "en": "\"Create in me a pure heart, O God, and renew a steadfast spirit within me.\"", "ref": "Sal 51, 12" },
+  "svg": "/desierto/33dias/svgs/silencio.svg",
+  "reflection": {
+    "es": [
+      "Has completado la primera semana. El tema de estos siete días ha sido el silencio: reconocer la necesidad de callarte, identificar las voces que te bloquean, aprender a esperar, soltar el control y abrir el corazón. No es poco. Aunque apenas lo hayas sentido, algo se ha movido en tu interior.",
+      "San Ignacio de Loyola enseñaba que al final de cada semana de ejercicios espirituales conviene hacer una revisión: ¿Qué ha consolado? ¿Qué ha producido resistencia? No para juzgarse sino para aprender. La consolación — paz, claridad, deseo de bien — es signo del Espíritu. La desolación — oscuridad, pereza, amargura — también tiene un mensaje si la sabes leer.",
+      "Hoy es un día para sentarte en paz, mirar atrás sin juicio y preguntarte: ¿Qué ha hecho Dios esta semana? No lo que hiciste tú. Lo que hizo Él. A veces la respuesta es pequeña. A veces es solo un instante de paz que no esperabas. Eso también cuenta."
+    ],
+    "en": [
+      "You have completed the first week. The theme of these seven days has been silence: recognizing the need to be quiet, identifying the voices that block you, learning to wait, releasing control, and opening the heart. That is not nothing. Even if you barely felt it, something has moved inside you.",
+      "Saint Ignatius of Loyola taught that at the end of each week of spiritual exercises it is good to do a review: What has consoled? What has produced resistance? Not to judge oneself but to learn. Consolation — peace, clarity, desire for good — is a sign of the Spirit. Desolation — darkness, laziness, bitterness — also has a message if you know how to read it.",
+      "Today is a day to sit in peace, look back without judgment, and ask yourself: What did God do this week? Not what you did. What He did. Sometimes the answer is small. Sometimes it is only a moment of peace you did not expect. That also counts."
+    ]
+  },
+  "psalm": {
+    "es": "Ten piedad de mí, oh Dios,\npor tu misericordia;\npor tu gran compasión\nborra mis transgresiones.",
+    "en": "Have mercy on me, O God,\naccording to your unfailing love;\naccording to your great compassion\nblot out my transgressions.",
+    "ref": "Sal 51, 1"
+  },
+  "prayer": {
+    "es": "Señor, gracias por esta primera semana. No la he hecho perfectamente. Hubo días en que el silencio fue difícil y días en que no pude esperar. Pero aquí estoy. Renueva en mí el deseo de continuar. Crea en mí un corazón cada vez más limpio y disponible para ti. Amén.",
+    "en": "Lord, thank you for this first week. I did not do it perfectly. There were days when silence was difficult and days when I could not wait. But here I am. Renew in me the desire to continue. Create in me a heart that is increasingly clean and available to you. Amen."
+  },
+  "act": {
+    "es": "Toma cinco minutos para escribir (o solo pensar) una respuesta a estas preguntas: ¿Qué moment de esta semana sentí más paz? ¿En qué momento estuve más lejos de Dios? ¿Hay algo que el Señor parece haber tocado esta semana? No obligues una respuesta; solo observa.",
+    "en": "Take five minutes to write (or just think through) answers to these questions: In what moment this week did I feel most at peace? In what moment was I farthest from God? Is there something the Lord seems to have touched this week? Do not force an answer; just observe."
+  }
+}

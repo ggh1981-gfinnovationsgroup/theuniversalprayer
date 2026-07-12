@@ -1,0 +1,31 @@
+{
+  "n": 20,
+  "theme": { "es": "Orar en la Oscuridad", "en": "Praying in the Dark" },
+  "verse": { "es": "«Dios mío, Dios mío, ¿por qué me has abandonado?»", "en": "\"My God, my God, why have you forsaken me?\"", "ref": "Sal 22, 1" },
+  "svg": "/desierto/33dias/svgs/oracion.svg",
+  "reflection": {
+    "es": [
+      "Jesús, en la cruz, gritó el comienzo del Salmo 22. Es la oración más honesta de la historia: el Hijo de Dios sintiéndose abandonado por el Padre. No lo estaba — pero lo sintió. Y lo dijo. Sin censurarse, sin fingir paz que no tenía. Eso nos enseña algo fundamental: en la oración se puede gritar.",
+      "Hay momentos en la vida espiritual — y son normales — en que la oración se siente vacía, Dios parece ausente, los cielos de bronce. Santa Teresa de Calcuta vivió décadas de oscuridad interior mientras servía a los pobres con amor heroico. San Juan de la Cruz llamó a eso 'la noche oscura del alma'. No es señal de que Dios se ha ido — es señal de que la fe está siendo purificada.",
+      "Orar en la oscuridad no es pretender que todo está bien. Es decirle a Dios honestamente: 'No te siento. Me pareces lejano. Tengo miedo de que no estés ahí.' Y seguir orando de todas formas. Esa fidelidad sin consolación es la forma más heroica de fe."
+    ],
+    "en": [
+      "Jesus on the cross cried the beginning of Psalm 22. It is the most honest prayer in history: the Son of God feeling abandoned by the Father. He was not — but he felt it. And he said it. Without censoring himself, without pretending peace he did not have. This teaches us something fundamental: in prayer you can cry out.",
+      "There are moments in the spiritual life — and they are normal — when prayer feels empty, God seems absent, the skies like bronze. Mother Teresa of Calcutta lived decades of interior darkness while serving the poor with heroic love. Saint John of the Cross called this 'the dark night of the soul.' It is not a sign that God has left — it is a sign that faith is being purified.",
+      "Praying in the dark is not pretending that everything is fine. It is telling God honestly: 'I do not feel you. You seem far away. I am afraid you are not there.' And continuing to pray anyway. That faithfulness without consolation is the most heroic form of faith."
+    ]
+  },
+  "psalm": {
+    "es": "Dios mío, de día te llamo sin que respondas;\nde noche, sin lograr un momento de calma.\nTú, el Santo, que habitas entre las alabanzas de Israel,\nen ti confiaron nuestros padres.",
+    "en": "I cry out by day, but you do not answer,\nby night, but I find no rest.\nYet you are enthroned as the Holy One;\nyou are the one Israel praises.",
+    "ref": "Sal 22, 3-4"
+  },
+  "prayer": {
+    "es": "Señor, hoy puede que no sienta nada en la oración. Puede que los cielos estén cerrados y tu voz en silencio. Pero elijo orar de todas formas. Elijo creer aunque no vea. Elijo confiar aunque no sienta consolación. Como Jesús en la cruz, pongo en tus manos lo que no entiendo. Amén.",
+    "en": "Lord, today I may feel nothing in prayer. The skies may seem closed and your voice silent. But I choose to pray anyway. I choose to believe even though I do not see. I choose to trust even without consolation. Like Jesus on the cross, I place in your hands what I do not understand. Amen."
+  },
+  "act": {
+    "es": "Si hoy la oración se siente seca, no la abandones. Haz lo mínimo: enciende una vela, siéntate, y di en voz alta: 'Señor, no te siento hoy. Pero creo que estás. Eso es suficiente.' Esa oración pequeña y honesta vale más que muchas palabras vacías.",
+    "en": "If prayer feels dry today, do not abandon it. Do the minimum: light a candle, sit down, and say aloud: 'Lord, I do not feel you today. But I believe you are here. That is enough.' That small, honest prayer is worth more than many empty words."
+  }
+}

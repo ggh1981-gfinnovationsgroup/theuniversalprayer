@@ -1,0 +1,31 @@
+{
+  "n": 23,
+  "theme": { "es": "La Providencia Discreta", "en": "Quiet Providence" },
+  "verse": { "es": "«El Señor es mi fortaleza y mi escudo; en él confía mi corazón y recibo su ayuda.»", "en": "\"The Lord is my strength and my shield; my heart trusts in him, and he helps me.\"", "ref": "Sal 28, 7" },
+  "svg": "/desierto/33dias/svgs/vida.svg",
+  "reflection": {
+    "es": [
+      "La providencia de Dios generalmente no es espectacular. No llega con trompetas. La mayor parte del tiempo llega en silencio: el médico correcto en el momento justo, la persona que dice la palabra que necesitabas, el problema que no ocurrió, la puerta que se cerró justo antes de que entraras donde no debías.",
+      "San Francisco de Sales lo expresó así: 'La Divina Providencia cuida de todo hasta de los más mínimos detalles.' No solo de las cosas grandes. También del cable que encontraste en el momento preciso, de la lluvia que esperó hasta que llegaste a casa, del amigo que llamó justo cuando lo necesitabas.",
+      "El problema es que rara vez reconocemos la providencia en el momento — la vemos en retrospectiva. Por eso el ejercicio de hoy es mirar hacia atrás: ¿Cuántas veces en tu historia algo que parecía un problema se convirtió luego en una gracia? Esa es la gramática de la providencia."
+    ],
+    "en": [
+      "God's providence is generally not spectacular. It does not arrive with trumpets. Most of the time it comes in silence: the right doctor at the right moment, the person who says the word you needed, the problem that did not occur, the door that closed just before you entered where you should not.",
+      "Saint Francis de Sales expressed it this way: 'Divine Providence takes care of everything down to the smallest details.' Not only of great things. Also of the cable you found at the precise moment, of the rain that waited until you got home, of the friend who called just when you needed it.",
+      "The problem is that we rarely recognize providence in the moment — we see it in retrospect. That is why today's exercise is to look backward: How many times in your history did something that seemed like a problem later become a grace? That is the grammar of providence."
+    ]
+  },
+  "psalm": {
+    "es": "Los ojos del Señor están sobre los que le temen,\nsobre los que esperan en su amor,\npara librar su vida de la muerte\ny sustentarlos en tiempo de hambre.",
+    "en": "The eyes of the Lord are on those who fear him,\non those whose hope is in his unfailing love,\nto deliver them from death\nand keep them alive in famine.",
+    "ref": "Sal 33, 18-19"
+  },
+  "prayer": {
+    "es": "Señor, gracias por la providencia que no vi cuando pasó. Por las veces que me protegiste sin que yo lo supiera. Por los caminos que bloqueaste que no eran para mí. Aumenta mi fe en que hoy también estás actuando, aunque todavía no lo vea. Amén.",
+    "en": "Lord, thank you for the providence I did not see when it happened. For the times you protected me without my knowing. For the paths you blocked that were not for me. Increase my faith that today you are also acting, even though I cannot yet see it. Amen."
+  },
+  "act": {
+    "es": "Piensa en un momento de tu vida — reciente o pasado — en que algo que parecía malo luego resultó ser una gracia disfrazada. Cuéntaselo a Dios en voz alta, como una historia que le agradeces. Eso es acción de gracias con memoria.",
+    "en": "Think of a moment in your life — recent or past — when something that seemed bad later turned out to be a grace in disguise. Tell it to God aloud, as a story you are grateful for. That is thanksgiving with memory."
+  }
+}

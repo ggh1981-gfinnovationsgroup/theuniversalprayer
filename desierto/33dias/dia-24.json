@@ -1,0 +1,31 @@
+{
+  "n": 24,
+  "theme": { "es": "Las Personas como Mensajeros", "en": "People as Messengers" },
+  "verse": { "es": "«El ángel del Señor dijo a José: Levántate, toma al niño y a su madre.»", "en": "\"An angel of the Lord appeared to Joseph in a dream: 'Get up, take the child and his mother.'\"", "ref": "Mt 2, 13" },
+  "svg": "/desierto/33dias/svgs/vida.svg",
+  "reflection": {
+    "es": [
+      "Dios habla a través de ángeles — pero también a través de personas. Un amigo que da el consejo exacto, un sacerdote cuya homilía parece escrita para ti, un desconocido cuyas palabras te quedan resonando semanas. No toda persona es mensajera de Dios, pero Dios puede usar a cualquier persona para comunicarse.",
+      "La clave está en el discernimiento: ¿Lo que esta persona me dice me acerca a Dios o me aleja? ¿Me produce paz, verdad, humildad — o me produce orgullo, confusión o justificación del mal? Los mensajeros de Dios no siempre dicen lo que queremos oír, pero lo que dicen tiene la marca de la verdad y de la caridad.",
+      "También tú eres mensajero. Muchas veces Dios quiere usar tu presencia, tu palabra, tu ejemplo para hablarle a alguien cerca de ti. ¿A quién podrías ser mensajero hoy? No tienes que preparar un discurso — a veces basta con estar, escuchar, o decir una palabra simple con amor."
+    ],
+    "en": [
+      "God speaks through angels — but also through people. A friend who gives exactly the right advice, a priest whose homily seems written for you, a stranger whose words resonate with you for weeks. Not every person is God's messenger, but God can use anyone to communicate.",
+      "The key is discernment: Does what this person tells me bring me closer to God or further away? Does it produce peace, truth, humility — or pride, confusion, or justification of evil? God's messengers do not always say what we want to hear, but what they say has the mark of truth and charity.",
+      "You are also a messenger. Many times God wants to use your presence, your word, your example to speak to someone near you. To whom could you be a messenger today? You do not need to prepare a speech — sometimes it is enough to be present, to listen, or to say one simple word with love."
+    ]
+  },
+  "psalm": {
+    "es": "Alabad al Señor, ángeles suyos,\ncampeones poderosos que ejecutáis sus órdenes\nobedeciendo a su voz.\nAlabad al Señor, ejércitos suyos,\nministros suyos que cumplís su voluntad.",
+    "en": "Praise the Lord, you his angels,\nyou mighty ones who do his bidding,\nwho obey his word.\nPraise the Lord, all his heavenly hosts,\nyou his servants who do his will.",
+    "ref": "Sal 103, 20-21"
+  },
+  "prayer": {
+    "es": "Señor, abre mis oídos para reconocerte en las personas que me rodean. Que no pase por alto tus mensajes por estar distraído o cerrado. Y úsame a mí también: que mis palabras y mi presencia sean para alguien hoy un signo de tu amor. Amén.",
+    "en": "Lord, open my ears to recognize you in the people around me. May I not miss your messages by being distracted or closed. And use me too: may my words and presence be for someone today a sign of your love. Amen."
+  },
+  "act": {
+    "es": "Hoy presta atención especial a las conversaciones que tengas. Después, al final del día, reflexiona: ¿Hubo alguna persona cuyas palabras me impactaron de manera inusual? ¿Qué quería decirme Dios a través de esa persona? Escribe una línea al respecto.",
+    "en": "Today pay special attention to the conversations you have. Then, at the end of the day, reflect: Was there someone whose words impacted me in an unusual way? What did God want to say to me through that person? Write one line about it."
+  }
+}

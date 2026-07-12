@@ -1,0 +1,31 @@
+{
+  "n": 22,
+  "theme": { "es": "Dios en lo Cotidiano", "en": "God in the Ordinary" },
+  "verse": { "es": "«Este es el día que hizo el Señor; sea nuestra alegría y gozo.»", "en": "\"This is the day the Lord has made; let us rejoice and be glad in it.\"", "ref": "Sal 118, 24" },
+  "svg": "/desierto/33dias/svgs/vida.svg",
+  "reflection": {
+    "es": [
+      "Muchos buscan a Dios en los momentos extraordinarios: retiros, experiencias místicas, señales del cielo. Pero Dios, la mayor parte del tiempo, habla en lo ordinario. En el café de la mañana, en la conversación inesperada con un vecino, en el hijo que llega de la escuela, en el trabajo que frustra o alegra. Lo cotidiano no es la antesala de lo sagrado — es el lugar donde lo sagrado vive.",
+      "La teología de la providencia dice que Dios no solo actúa en los milagros sino en cada evento de la historia — grande o pequeño. Que nada llega a tu vida por accidente. Que el hilo que une tus días, por más caóticos que parezcan, es una inteligencia amorosa que los sostiene.",
+      "Ejercitar esta mirada no significa que todo es perfecto. Significa que en todo — en el dolor y en la alegría — hay un Dios presente que puede ser encontrado si uno aprende a buscarlo. Y esa búsqueda comienza por una decisión: hoy voy a prestar atención."
+    ],
+    "en": [
+      "Many seek God in extraordinary moments: retreats, mystical experiences, signs from heaven. But God, most of the time, speaks in the ordinary. In the morning coffee, in an unexpected conversation with a neighbor, in the child who comes home from school, in the work that frustrates or delights. The everyday is not the waiting room of the sacred — it is the place where the sacred lives.",
+      "The theology of providence says that God does not only act in miracles but in every event of history — large or small. That nothing comes into your life by accident. That the thread that holds your days together, however chaotic they may seem, is a loving intelligence that sustains them.",
+      "Exercising this gaze does not mean that everything is perfect. It means that in everything — in pain and in joy — there is a present God who can be found if one learns to look. And that search begins with a decision: today I am going to pay attention."
+    ]
+  },
+  "psalm": {
+    "es": "Bendice al Señor, alma mía,\ny todo mi ser a su santo nombre.\nBendice al Señor, alma mía,\ny no olvides sus beneficios.",
+    "en": "Praise the Lord, my soul;\nall my inmost being, praise his holy name.\nPraise the Lord, my soul,\nand forget not all his benefits.",
+    "ref": "Sal 103, 1-2"
+  },
+  "prayer": {
+    "es": "Señor, este día ordinario que comienza — las tareas, las personas, los problemas — todo eso es terreno tuyo. Ayúdame a verte en lo pequeño. Que no pase este día sin haber reconocido al menos una vez tu mano en algo concreto. Abre mis ojos. Amén.",
+    "en": "Lord, this ordinary day that is beginning — the tasks, the people, the problems — all of that is your territory. Help me to see you in the small things. May this day not pass without me having recognized at least once your hand in something concrete. Open my eyes. Amen."
+  },
+  "act": {
+    "es": "Al final del día de hoy — o esta noche antes de dormir — haz un recuento de diez minutos. Responde: '¿En qué momento de hoy pude haber visto a Dios actuando?' No busques algo espectacular. Un instante de paz inesperado, una ayuda que llegó, una conversación que se dio justo a tiempo — eso cuenta.",
+    "en": "At the end of today — or tonight before sleep — take a ten-minute review. Answer: 'In what moment today could I have seen God acting?' Do not look for something spectacular. An unexpected moment of peace, help that arrived, a conversation that happened just in time — that counts."
+  }
+}

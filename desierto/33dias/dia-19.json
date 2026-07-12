@@ -1,0 +1,31 @@
+{
+  "n": 19,
+  "theme": { "es": "La Adoración Silenciosa", "en": "Silent Adoration" },
+  "verse": { "es": "«Señor, ante ti está todo mi anhelo; no te oculto mis gemidos.»", "en": "\"All my longings lie open before you, Lord; my sighing is not hidden from you.\"", "ref": "Sal 38, 10" },
+  "svg": "/desierto/33dias/svgs/oracion.svg",
+  "reflection": {
+    "es": [
+      "La adoración silenciosa ante el Santísimo Sacramento es la forma de oración más directa que existe: estar en la presencia real de Jesucristo sin más mediación que la fe. No hay palabras necesarias. No hay agenda. Solo la persona ante su Señor. Este silencio no está vacío — está lleno de presencia.",
+      "San Juan Vianney contaba que un campesino pasaba horas en la iglesia mirando al Sagrario. Cuando el cura le preguntó qué hacía, el hombre respondió: 'Yo le miro a Él; Él me mira a mí.' Eso es la adoración en su forma más pura. No se necesita mucho vocabulario para amar.",
+      "Si no puedes ir físicamente a adorar, la 'visita espiritual' tiene el mismo valor: cerrar los ojos, imaginar que estás ante el Sagrario, y simplemente estar. La fe suplanta la distancia física. Lo que importa no es el lugar sino la disposición del corazón."
+    ],
+    "en": [
+      "Silent adoration before the Blessed Sacrament is the most direct form of prayer that exists: being in the real presence of Jesus Christ with no other mediation than faith. No words are necessary. No agenda. Just the person before his Lord. This silence is not empty — it is full of presence.",
+      "Saint John Vianney told of a peasant who spent hours in the church looking at the Tabernacle. When the priest asked what he was doing, the man answered: 'I look at him; he looks at me.' That is adoration in its purest form. You do not need much vocabulary to love.",
+      "If you cannot go physically to adore, the 'spiritual visit' has the same value: close your eyes, imagine you are before the Tabernacle, and simply be. Faith overcomes physical distance. What matters is not the place but the disposition of the heart."
+    ]
+  },
+  "psalm": {
+    "es": "Una sola cosa pido al Señor,\neso buscaré:\nhabitar en la casa del Señor\ntodos los días de mi vida,\npara gozar de la dulzura del Señor\ny contemplar su templo.",
+    "en": "One thing I ask from the Lord,\nthis only do I seek:\nthat I may dwell in the house of the Lord\nall the days of my life,\nto gaze on the beauty of the Lord\nand to seek him in his temple.",
+    "ref": "Sal 27, 4"
+  },
+  "prayer": {
+    "es": "Señor Jesucristo, creo que estás aquí. No porque lo sienta sino porque lo dices tú, y tú eres la Verdad. Hoy solo quiero estar contigo. No tengo palabras importantes. Solo tengo mi presencia y mi amor imperfecto. Recíbeme como soy. Amén.",
+    "en": "Lord Jesus Christ, I believe you are here. Not because I feel it but because you say so, and you are the Truth. Today I simply want to be with you. I have no important words. I only have my presence and my imperfect love. Receive me as I am. Amen."
+  },
+  "act": {
+    "es": "Si puedes: ve a una iglesia hoy y siéntate diez minutos ante el Sagrario sin rezar nada en particular. Solo estar. Si no puedes ir: visita espiritual: cierra los ojos, imagínate ante el Sagrario, y repite suavemente: 'Señor, aquí estoy. Tú aquí estás.' Eso es suficiente.",
+    "en": "If you can: go to a church today and sit for ten minutes before the Tabernacle without praying anything in particular. Just be. If you cannot go: make a spiritual visit: close your eyes, picture yourself before the Tabernacle, and repeat softly: 'Lord, here I am. You are here.' That is enough."
+  }
+}

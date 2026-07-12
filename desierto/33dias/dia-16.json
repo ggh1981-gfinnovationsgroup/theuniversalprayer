@@ -1,0 +1,31 @@
+{
+  "n": 16,
+  "theme": { "es": "El Padre Nuestro en Profundidad", "en": "The Our Father in Depth" },
+  "verse": { "es": "«Padre nuestro que estás en el cielo, santificado sea tu nombre.»", "en": "\"Our Father in heaven, hallowed be your name.\"", "ref": "Mt 6, 9" },
+  "svg": "/desierto/33dias/svgs/oracion.svg",
+  "reflection": {
+    "es": [
+      "El Padre Nuestro es la oración más rezada de la historia. Pero también puede ser la más rezada sin pensar. Hoy no la rezamos de memoria — la habitamos. Cada frase contiene un mundo. 'Padre nuestro': no dices 'Dios mío' sino 'nuestro'. Desde el primer momento, la oración te saca del egoísmo y te pone en comunidad.",
+      "'Santificado sea tu nombre': no le pides a Dios que haga tu voluntad — le pides que su nombre sea glorificado en tu vida. Es una inversión total de la lógica humana: primero que Dios sea honrado, luego que venga su reino, luego el pan de cada día. Jesús enseñó un orden: primero Dios, luego todo lo demás.",
+      "'El pan de cada día': notó que no dice 'el pan de toda la semana' ni 'las reservas del mes'. Cada día. Es una oración de dependencia diaria, no de autosuficiencia. Y 'perdona nuestras ofensas como nosotros perdonamos': la condición está incluida. La medida del perdón que pides es la misma que das."
+    ],
+    "en": [
+      "The Our Father is the most prayed prayer in history. But it can also be the most prayed without thinking. Today we do not recite it from memory — we inhabit it. Each phrase contains a world. 'Our Father': you do not say 'my God' but 'our.' From the very first moment, the prayer pulls you out of selfishness and places you in community.",
+      "'Hallowed be your name': you do not ask God to do your will — you ask that his name be glorified in your life. It is a total inversion of human logic: first let God be honored, then let his kingdom come, then daily bread. Jesus taught an order: God first, then everything else.",
+      "'Our daily bread': notice it does not say 'the bread for the whole week' or 'monthly reserves.' Each day. It is a prayer of daily dependence, not self-sufficiency. And 'forgive us our trespasses as we forgive': the condition is included. The measure of forgiveness you ask for is the same as you give."
+    ]
+  },
+  "psalm": {
+    "es": "El Señor es mi luz y mi salvación:\n¿a quién temeré?\nEl Señor es la defensa de mi vida:\n¿quién me hará temblar?",
+    "en": "The Lord is my light and my salvation—\nwhom shall I fear?\nThe Lord is the stronghold of my life—\nof whom shall I be afraid?",
+    "ref": "Sal 27, 1"
+  },
+  "prayer": {
+    "es": "Padre nuestro que estás en el cielo: te creo presente y cercano, no lejano ni abstracto. Santificado sea tu nombre en mi vida hoy: que mis palabras, decisiones y actitudes te honren. Danos el pan de hoy: gracias por lo que tenemos. Y ayúdame a perdonar como tú me perdonas. Amén.",
+    "en": "Our Father in heaven: I believe you are present and close, not distant or abstract. Hallowed be your name in my life today: may my words, decisions, and attitudes honor you. Give us today our daily bread: thank you for what we have. And help me to forgive as you forgive me. Amen."
+  },
+  "act": {
+    "es": "Reza el Padre Nuestro una sola vez hoy, pero muy despacio. Detente en cada frase. Después de cada una, pregúntate: '¿Esto es verdad en mi vida ahora mismo? ¿Cómo podría serlo más?' No sigas a la siguiente frase hasta haber habitado la anterior.",
+    "en": "Pray the Our Father just once today, but very slowly. Pause at each phrase. After each one, ask yourself: 'Is this true in my life right now? How could it be more so?' Do not move to the next phrase until you have inhabited the previous one."
+  }
+}

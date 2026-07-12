@@ -1,0 +1,31 @@
+{
+  "n": 17,
+  "theme": { "es": "La Oración de Jesús", "en": "The Jesus Prayer" },
+  "verse": { "es": "«¡Dios mío, ten compasión de mí, que soy un pecador!»", "en": "\"God, have mercy on me, a sinner.\"", "ref": "Lc 18, 13" },
+  "svg": "/desierto/33dias/svgs/oracion.svg",
+  "reflection": {
+    "es": [
+      "La Oración de Jesús — 'Señor Jesucristo, Hijo de Dios, ten piedad de mí, pecador' — es una de las formas de oración más antiguas del cristianismo oriental. Nació en los desiertos de Egipto y Siria, entre los padres del desierto que buscaban orar sin cesar (1 Ts 5,17). Es una oración que puede decirse en cualquier momento, en cualquier lugar.",
+      "Su poder está en su sencillez y en lo que contiene: reconocimiento de quién es Jesús (Señor, Cristo, Hijo de Dios) y reconocimiento de quién soy yo (un pecador necesitado de misericordia). No hay nada más que decir. En esas pocas palabras está todo el Evangelio comprimido.",
+      "Los padres espirituales enseñan a sincronizarla con la respiración: al inhalar, 'Señor Jesucristo, Hijo de Dios'; al exhalar, 'ten piedad de mí, pecador.' Así la oración se convierte en algo tan natural como respirar. Y poco a poco entra en el corazón de manera que ya no es solo la boca la que la dice."
+    ],
+    "en": [
+      "The Jesus Prayer — 'Lord Jesus Christ, Son of God, have mercy on me, a sinner' — is one of the oldest forms of prayer in Eastern Christianity. It was born in the deserts of Egypt and Syria, among the desert fathers who sought to pray without ceasing (1 Thess 5:17). It is a prayer that can be said at any moment, in any place.",
+      "Its power lies in its simplicity and in what it contains: recognition of who Jesus is (Lord, Christ, Son of God) and recognition of who I am (a sinner in need of mercy). There is nothing more to say. In those few words the entire Gospel is compressed.",
+      "Spiritual fathers teach to synchronize it with breathing: while inhaling, 'Lord Jesus Christ, Son of God'; while exhaling, 'have mercy on me, a sinner.' In this way the prayer becomes as natural as breathing. And little by little it enters the heart so that it is no longer only the mouth that says it."
+    ]
+  },
+  "psalm": {
+    "es": "Ten piedad de mí, Dios mío,\npor tu gran amor;\npor tu inmensa misericordia\nborra mis culpas.",
+    "en": "Have mercy on me, O God,\naccording to your unfailing love;\naccording to your great compassion\nblot out my transgressions.",
+    "ref": "Sal 51, 1"
+  },
+  "prayer": {
+    "es": "Señor Jesucristo, Hijo de Dios vivo, ten piedad de mí, que soy un pecador. Hoy elijo esta oración sencilla como mi morada. No necesito palabras complicadas para llegar a ti. Solo el reconocimiento de quién eres y de quién soy. Ten misericordia. Eso es suficiente para comenzar. Amén.",
+    "en": "Lord Jesus Christ, Son of the living God, have mercy on me, a sinner. Today I choose this simple prayer as my dwelling. I do not need complicated words to reach you. Only the recognition of who you are and who I am. Have mercy. That is enough to begin. Amen."
+  },
+  "act": {
+    "es": "Prueba la Oración de Jesús hoy por al menos diez minutos. Sincronízala con tu respiración: al inhalar, 'Señor Jesucristo, Hijo de Dios'; al exhalar, 'ten piedad de mí, pecador.' No la evalúes — solo practicala. Puedes hacerla mientras caminas, conduces o haces tareas sencillas.",
+    "en": "Try the Jesus Prayer today for at least ten minutes. Synchronize it with your breathing: while inhaling, 'Lord Jesus Christ, Son of God'; while exhaling, 'have mercy on me, a sinner.' Do not evaluate it — just practice it. You can do it while walking, driving, or doing simple tasks."
+  }
+}

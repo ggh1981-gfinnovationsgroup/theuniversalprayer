@@ -1,0 +1,31 @@
+{
+  "n": 2,
+  "theme": { "es": "Las Voces que Silenciar", "en": "The Voices to Silence" },
+  "verse": { "es": "«Estad quietos y sabed que yo soy Dios.»", "en": "\"Be still and know that I am God.\"", "ref": "Sal 46, 11" },
+  "svg": "/desierto/33dias/svgs/silencio.svg",
+  "reflection": {
+    "es": [
+      "Antes de poder escuchar a Dios necesitas saber qué voces te impiden escucharle. Hay voces externas: el ruido constante de las pantallas, las noticias, las redes sociales. Y hay voces internas: la preocupación, el juicio sobre ti mismo, los planes que nunca descansan. Todas estas voces no son malas en sí mismas, pero cuando no descansan nunca, ocupan el espacio que pertenece a Dios.",
+      "El salmista dice 'estad quietos' — en hebreo, 'rafú', que significa literalmente 'soltad', 'relajaos', 'dejad caer'. No es un mandato de esfuerzo sino de abandono. Dios no pide que vayas a buscarlo corriendo; pide que pares y lo dejes venir a ti.",
+      "Hoy no se trata de silenciar todo de golpe — eso es imposible. Se trata de elegir conscientemente una cosa que vas a soltar durante unos minutos. Una voz. Una preocupación. Y en ese pequeño espacio, creer que Dios puede entrar."
+    ],
+    "en": [
+      "Before you can hear God, you need to know what voices are preventing you from hearing him. There are external voices: the constant noise of screens, news, social media. And there are internal voices: worry, self-judgment, plans that never rest. These voices are not bad in themselves, but when they never pause, they fill the space that belongs to God.",
+      "The psalmist says 'be still' — in Hebrew, 'rafú', which literally means 'let go', 'relax', 'drop it'. It is not a command of effort but of surrender. God does not ask you to run looking for him; he asks you to stop and let him come to you.",
+      "Today is not about silencing everything at once — that is impossible. It is about consciously choosing one thing you will let go of for a few minutes. One voice. One worry. And in that small space, believing that God can enter."
+    ]
+  },
+  "psalm": {
+    "es": "Dios es nuestro refugio y nuestra fuerza,\nnuestra ayuda en los momentos de angustia.\nPor eso no tememos aunque tiemble la tierra\ny los montes se hundan en el fondo del mar.",
+    "en": "God is our refuge and strength,\na very present help in trouble.\nTherefore we will not fear though the earth gives way,\nthough the mountains be moved into the heart of the sea.",
+    "ref": "Sal 46, 2-3"
+  },
+  "prayer": {
+    "es": "Señor, hay demasiado ruido dentro de mí. Preocupaciones que no descansan, voces que me juzgan, planes que no paran. Hoy te pido que pongas silencio donde yo no puedo ponerlo. No por mi esfuerzo sino por tu gracia. Que mi mente aprenda a descansar en ti, sabiendo que tú eres Dios y yo no necesito controlarlo todo. Amén.",
+    "en": "Lord, there is too much noise inside me. Worries that do not rest, voices that judge me, plans that never stop. Today I ask you to bring silence where I cannot bring it myself. Not by my effort but by your grace. May my mind learn to rest in you, knowing that you are God and I do not need to control everything. Amen."
+  },
+  "act": {
+    "es": "Identifica hoy la voz que más te roba la paz interior. Puede ser una preocupación específica, una red social, un miedo recurrente. Escríbela en un papel y dile conscientemente: 'Te suelto por ahora. Dios tiene esto.' Luego haz dos minutos de silencio.",
+    "en": "Today, identify the voice that most robs you of interior peace. It may be a specific worry, a social network, a recurring fear. Write it on paper and consciously say: 'I let you go for now. God has this.' Then sit in two minutes of silence."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "n": 18,
+  "theme": { "es": "El Rosario como Escucha", "en": "The Rosary as Listening" },
+  "verse": { "es": "«He aquí la esclava del Señor; hágase en mí según tu palabra.»", "en": "\"I am the Lord's servant. May your word to me be fulfilled.\"", "ref": "Lc 1, 38" },
+  "svg": "/desierto/33dias/svgs/oracion.svg",
+  "reflection": {
+    "es": [
+      "El Rosario suele presentarse como una oración de petición. Pero en su fondo es una escuela de contemplación: meditar la vida de Cristo con los ojos de María. Cada misterio es una escena de la vida de Jesús que se sostiene en la mente y el corazón mientras los labios repiten el Ave María. La repetición libera la mente consciente para que pueda contemplar.",
+      "María en la Anunciación es el modelo de toda escucha. No entiende todo, no tiene garantías, no ve el camino completo. Pero dice sí. 'Hágase en mí según tu palabra.' Ese fiat — esa disponibilidad radical — es lo que el Rosario invita a imitar en cada misterio.",
+      "Hoy no te propongo rezar el Rosario como tarea. Te propongo rezarlo como escucha: entra en cada misterio como si fueras un testigo presente, y pregúntate: ¿Qué me dice este momento de la vida de Jesús sobre mi vida hoy? ¿Qué quiere Dios que aprenda aquí?"
+    ],
+    "en": [
+      "The Rosary is often presented as a prayer of petition. But at its core it is a school of contemplation: meditating on the life of Christ through Mary's eyes. Each mystery is a scene from Jesus's life that is held in mind and heart while the lips repeat the Hail Mary. The repetition frees the conscious mind so it can contemplate.",
+      "Mary at the Annunciation is the model of all listening. She does not understand everything, has no guarantees, does not see the full road ahead. But she says yes. 'May your word to me be fulfilled.' That fiat — that radical availability — is what the Rosary invites us to imitate in each mystery.",
+      "Today I do not propose you pray the Rosary as a task. I propose you pray it as listening: enter each mystery as if you were a present witness, and ask yourself: What does this moment of Jesus's life tell me about my life today? What does God want me to learn here?"
+    ]
+  },
+  "psalm": {
+    "es": "Canta al Señor un cántico nuevo,\ncanta al Señor, toda la tierra.\nCanta al Señor, bendice su nombre;\nanunciá de día en día su victoria.",
+    "en": "Sing to the Lord a new song;\nsing to the Lord, all the earth.\nSing to the Lord, praise his name;\nproclaim his salvation day after day.",
+    "ref": "Sal 96, 1-2"
+  },
+  "prayer": {
+    "es": "María, enséñame a decir fiat. A escuchar sin resistencia, a obedecer sin entenderlo todo, a sostener en el corazón lo que todavía no comprendo. Acompáñame hoy en esta oración y llévame a Jesús, que es siempre el centro de todo. Amén.",
+    "en": "Mary, teach me to say fiat. To listen without resistance, to obey without understanding everything, to hold in my heart what I do not yet comprehend. Accompany me today in this prayer and lead me to Jesus, who is always the center of everything. Amen."
+  },
+  "act": {
+    "es": "Reza hoy una sola decena del Rosario — diez Ave Marías — con un misterio. Antes de empezar, lee el pasaje bíblico del misterio que elijas. Luego, mientras rezas las Ave Marías, quédate con esa escena en la mente, como si estuvieras ahí presente. ¿Qué ves? ¿Qué sientes? ¿Qué te dice Jesús?",
+    "en": "Today pray just one decade of the Rosary — ten Hail Marys — with one mystery. Before starting, read the biblical passage of the mystery you choose. Then, while you pray the Hail Marys, stay with that scene in mind, as if you were present there. What do you see? What do you feel? What does Jesus tell you?"
+  }
+}

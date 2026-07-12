@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" aria-hidden="true">
+  <defs>
+    <radialGradient id="s-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#131c38"/>
+      <stop offset="100%" stop-color="#0a0f20"/>
+    </radialGradient>
+  </defs>
+  <rect width="110" height="110" rx="18" fill="url(#s-bg)"/>
+  <!-- Outer ring -->
+  <circle cx="55" cy="48" r="26" fill="none" stroke="#c9a84c" stroke-width="1.5" opacity="0.5"/>
+  <!-- Ear shape -->
+  <path d="M 44 38 A 14 14 0 0 1 66 38 A 14 14 0 0 1 66 54 Q 66 62 60 65 L 60 72 Q 60 75 57 75 L 53 75 Q 50 75 50 72 L 50 65 Q 44 62 44 54 Z" fill="none" stroke="#c9a84c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Inner canal -->
+  <circle cx="55" cy="50" r="5" fill="none" stroke="#c9a84c" stroke-width="1.6" opacity="0.65"/>
+  <!-- Sound wave -->
+  <path d="M 74 40 Q 82 48 74 56" fill="none" stroke="#c9a84c" stroke-width="1.8" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 79 35 Q 90 48 79 61" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-linecap="round" opacity="0.45"/>
+  <!-- Label -->
+  <text x="55" y="95" text-anchor="middle" font-family="Georgia,serif" font-size="8.5" fill="#c9a84c" font-style="italic">Silencio</text>
+  <text x="55" y="106" text-anchor="middle" font-family="Georgia,serif" font-size="7" fill="#8a90a8" font-style="italic" opacity="0.75">Silence</text>
+</svg>

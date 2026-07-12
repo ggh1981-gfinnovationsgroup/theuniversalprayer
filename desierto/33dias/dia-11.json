@@ -1,0 +1,31 @@
+{
+  "n": 11,
+  "theme": { "es": "Lectio: Contemplar", "en": "Lectio: Contemplating" },
+  "verse": { "es": "«María guardaba todas estas cosas y las meditaba en su corazón.»", "en": "\"Mary treasured up all these things and pondered them in her heart.\"", "ref": "Lc 2, 19" },
+  "svg": "/desierto/33dias/svgs/palabra.svg",
+  "reflection": {
+    "es": [
+      "El cuarto paso de la Lectio Divina es la contemplatio — la contemplación. Es el más difícil de describir porque es el menos activo. Después de leer, meditar y orar, llega un momento en que simplemente te sientas en la presencia de Dios sin hacer nada especial. Solo estar. Solo confiar.",
+      "María es el modelo perfecto. El texto dice que 'guardaba' y 'meditaba en su corazón'. No intentaba entender todo. No preguntaba sin parar. Solo sostenía lo recibido con amor. La contemplación es ese reposo: el alma que se detiene no porque no tenga preguntas sino porque confía en que el que habló es fiel.",
+      "No puedes forzar la contemplación. Pero sí puedes disponerte a ella: quietud, presencia, abandono. Y a veces, en ese silencio que ya no espera nada, Dios toca algo en el fondo del alma de una manera que ninguna palabra puede producir."
+    ],
+    "en": [
+      "The fourth step of Lectio Divina is contemplatio — contemplation. It is the hardest to describe because it is the least active. After reading, meditating, and praying, there comes a moment when you simply sit in God's presence without doing anything special. Just being. Just trusting.",
+      "Mary is the perfect model. The text says she 'treasured' and 'pondered in her heart.' She did not try to understand everything. She did not ask endless questions. She simply held what had been received with love. Contemplation is that rest: the soul that pauses not because it has no questions but because it trusts that the one who spoke is faithful.",
+      "You cannot force contemplation. But you can dispose yourself to it: stillness, presence, surrender. And sometimes, in that silence that no longer expects anything, God touches something in the depths of the soul in a way that no word can produce."
+    ]
+  },
+  "psalm": {
+    "es": "Solo en Dios descansa mi alma;\nde él viene mi salvación.\nSolo él es mi roca y mi salvación;\nmi fortaleza: no vacilaré.",
+    "en": "Truly my soul finds rest in God;\nmy salvation comes from him.\nTruly he is my rock and my salvation;\nhe is my fortress, I will never be shaken.",
+    "ref": "Sal 62, 2-3"
+  },
+  "prayer": {
+    "es": "Señor, hoy no quiero hablar mucho. Quiero estar. Como María que guardaba en silencio. Como el discípulo que descansaba en tu pecho. Recíbeme en este momento de quietud. No necesito respuestas ahora mismo; necesito tu presencia. Aquí estoy. Amén.",
+    "en": "Lord, today I do not want to talk much. I want to be. Like Mary who kept things in silence. Like the disciple who rested on your chest. Receive me in this moment of quiet. I do not need answers right now; I need your presence. Here I am. Amen."
+  },
+  "act": {
+    "es": "Hoy el acto del día es sencillo y desafiante a la vez: siéntate cinco minutos en silencio, sin texto, sin música, sin petición. Solo estar ante Dios. Si vienen distracciones, no te frustres; vuelve suavemente. Al terminar, no evalúes si 'funcionó'. Solo di gracias.",
+    "en": "Today's act of the day is simple and challenging at the same time: sit for five minutes in silence, without text, without music, without petition. Simply be before God. If distractions come, do not be frustrated; gently return. When finished, do not evaluate whether it 'worked.' Just give thanks."
+  }
+}

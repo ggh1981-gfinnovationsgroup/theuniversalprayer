@@ -1,0 +1,31 @@
+{
+  "n": 15,
+  "theme": { "es": "La Oración Mental", "en": "Mental Prayer" },
+  "verse": { "es": "«Señor, enséñanos a orar.»", "en": "\"Lord, teach us to pray.\"", "ref": "Lc 11, 1" },
+  "svg": "/desierto/33dias/svgs/oracion.svg",
+  "reflection": {
+    "es": [
+      "Los apóstoles vieron a Jesús orar y algo en la calidad de su oración los impresionó tanto que le pidieron que les enseñara. No pidieron milagros ni poder — pidieron saber orar. Intuyeron que ahí estaba el secreto de todo. La oración mental — orar con la mente y el corazón, no solo con palabras memorizadas — es lo que Jesús les enseñó.",
+      "Santa Teresa de Ávila definía la oración mental como 'un trato de amistad a solas con quien sabemos que nos ama.' No es una técnica; es una relación. Y como toda relación, necesita tiempo, honestidad y perseverancia. Al principio puede sentirse seca, incómoda, distraída. Eso no es fracaso — es la pared normal que debe atravesarse para llegar a la profundidad.",
+      "Esta semana exploramos distintas formas de oración. Hoy, el punto de partida: sentarte conscientemente ante Dios, como ante un amigo, y hablarle de lo que hay en tu corazón. Sin fórmulas obligatorias. Sin actuaciones. Solo la verdad de lo que eres hoy."
+    ],
+    "en": [
+      "The apostles saw Jesus pray and something about the quality of his prayer impressed them so much that they asked him to teach them. They did not ask for miracles or power — they asked to know how to pray. They sensed that therein lay the secret of everything. Mental prayer — praying with the mind and heart, not only with memorized words — is what Jesus taught them.",
+      "Saint Teresa of Avila defined mental prayer as 'an intimate sharing between friends; it means taking time frequently to be alone with him who we know loves us.' It is not a technique; it is a relationship. And like every relationship, it needs time, honesty, and perseverance. At first it can feel dry, uncomfortable, distracted. That is not failure — it is the normal wall that must be passed through to reach depth.",
+      "This week we explore different forms of prayer. Today, the starting point: sitting consciously before God, as before a friend, and speaking to him of what is in your heart. No required formulas. No performance. Just the truth of who you are today."
+    ]
+  },
+  "psalm": {
+    "es": "¡Qué bueno es darte gracias, Señor,\ncantarle a tu nombre, oh Altísimo,\npublicar tu amor por la mañana\ny tu fidelidad durante la noche!",
+    "en": "It is good to praise the Lord\nand make music to your name, O Most High,\nproclaiming your love in the morning\nand your faithfulness at night.",
+    "ref": "Sal 92, 2-3"
+  },
+  "prayer": {
+    "es": "Señor, enséñame a orar. No sé hacerlo bien. A veces mis palabras están vacías y mi mente vaga. Pero aquí estoy, con el deseo de encontrarte. Toma mi deseo imperfecto y conviértelo en oración verdadera. Eres tú quien ora en mí a través del Espíritu Santo. Déjame participar de esa oración. Amén.",
+    "en": "Lord, teach me to pray. I do not know how to do it well. Sometimes my words are empty and my mind wanders. But here I am, with the desire to find you. Take my imperfect desire and turn it into true prayer. It is you who prays in me through the Holy Spirit. Let me participate in that prayer. Amen."
+  },
+  "act": {
+    "es": "Hoy, antes de cualquier oración formulada, siéntate en silencio un momento y di en voz alta: 'Señor, aquí estoy. Esto es lo que hay en mi corazón ahora mismo: [y dilo].' Lo que venga, díselo. Eso es oración mental.",
+    "en": "Today, before any formulaic prayer, sit quietly for a moment and say aloud: 'Lord, here I am. This is what is in my heart right now: [and say it].' Whatever comes, tell him. That is mental prayer."
+  }
+}
