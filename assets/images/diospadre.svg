@@ -1,61 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Dios Padre — luz y bendición desde el cielo">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Dios Padre - luz y bendicion desde el cielo">
   <defs>
-    <radialGradient id="dp-heaven" cx="50%" cy="28%" r="58%">
-      <stop offset="0%" stop-color="#fff8dc" stop-opacity="0.95"/>
-      <stop offset="40%" stop-color="#e8c97a" stop-opacity="0.45"/>
-      <stop offset="100%" stop-color="#1a1a2e" stop-opacity="0"/>
+    <radialGradient id="dpGlow" cx="50%" cy="32%" r="52%">
+      <stop offset="0%" stop-color="#fff8dc" stop-opacity="0.85"/>
+      <stop offset="55%" stop-color="#e8c97a" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="dp-ray" x1="0.5" y1="0" x2="0.5" y2="1">
-      <stop offset="0%" stop-color="#fff3a0" stop-opacity="0.95"/>
-      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0.15"/>
+    <linearGradient id="dpRay" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff3a0"/>
+      <stop offset="55%" stop-color="#f5a623"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0.2"/>
     </linearGradient>
-    <linearGradient id="dp-hand" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#f8edd0"/>
-      <stop offset="100%" stop-color="#c9a84c"/>
+    <linearGradient id="dpHand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e8dfc0"/>
     </linearGradient>
-    <filter id="dp-glow">
-      <feGaussianBlur stdDeviation="2.5" result="b"/>
-      <feMerge>
-        <feMergeNode in="b"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
 
-  <!-- Heavenly radiance -->
-  <ellipse cx="50" cy="26" rx="40" ry="30" fill="url(#dp-heaven)"/>
+  <!-- Heavenly glow -->
+  <circle cx="50" cy="34" r="30" fill="url(#dpGlow)"/>
 
-  <!-- Light rays -->
-  <g opacity="0.6" filter="url(#dp-glow)">
-    <path d="M50 6 L47 36 L53 36 Z" fill="url(#dp-ray)"/>
-    <path d="M50 6 L47 36 L53 36 Z" fill="url(#dp-ray)" transform="rotate(25 50 24)"/>
-    <path d="M50 6 L47 36 L53 36 Z" fill="url(#dp-ray)" transform="rotate(-25 50 24)"/>
-    <path d="M50 6 L47 36 L53 36 Z" fill="url(#dp-ray)" transform="rotate(50 50 24)"/>
-    <path d="M50 6 L47 36 L53 36 Z" fill="url(#dp-ray)" transform="rotate(-50 50 24)"/>
-    <path d="M50 6 L47 36 L53 36 Z" fill="url(#dp-ray)" transform="rotate(72 50 24)"/>
-    <path d="M50 6 L47 36 L53 36 Z" fill="url(#dp-ray)" transform="rotate(-72 50 24)"/>
+  <!-- Rays -->
+  <g stroke="#c9a84c" stroke-width="0.8" opacity="0.45" stroke-linecap="round">
+    <line x1="50" y1="10" x2="50" y2="2"/>
+    <line x1="50" y1="10" x2="57" y2="3" transform="rotate(22,50,10)"/>
+    <line x1="50" y1="10" x2="57" y2="3" transform="rotate(-22,50,10)"/>
+    <line x1="50" y1="10" x2="57" y2="3" transform="rotate(44,50,10)"/>
+    <line x1="50" y1="10" x2="57" y2="3" transform="rotate(-44,50,10)"/>
+    <line x1="50" y1="10" x2="57" y2="3" transform="rotate(66,50,10)"/>
+    <line x1="50" y1="10" x2="57" y2="3" transform="rotate(-66,50,10)"/>
   </g>
 
-  <!-- Subtle Trinity triangle -->
-  <path d="M50 14 L60 34 L40 34 Z" fill="none" stroke="#e8c97a" stroke-width="0.7" opacity="0.4"/>
+  <!-- Trinity triangle -->
+  <path d="M50,14 L60,34 L40,34 Z" fill="none" stroke="#e8c97a" stroke-width="0.7" opacity="0.45"/>
 
-  <!-- Blessing hands -->
-  <g fill="url(#dp-hand)" stroke="#b8922a" stroke-width="0.35" opacity="0.94">
-    <ellipse cx="34" cy="46" rx="9" ry="6" transform="rotate(-18 34 46)"/>
-    <ellipse cx="66" cy="46" rx="9" ry="6" transform="rotate(18 66 46)"/>
-    <path d="M26 44 C22 38 21 32 25 28 C27 32 29 36 31 40 Z"/>
-    <path d="M31 40 C33 34 36 30 40 28 C38 34 35 38 33 42 Z"/>
-    <path d="M74 44 C78 38 79 32 75 28 C73 32 71 36 69 40 Z"/>
-    <path d="M69 40 C67 34 64 30 60 28 C62 34 65 38 67 42 Z"/>
+  <!-- Central ray -->
+  <path d="M50,16 C49,12 47,9 50,6 C53,9 51,12 50,16 Z" fill="url(#dpRay)" opacity="0.9"/>
+
+  <!-- Left blessing hand -->
+  <g fill="url(#dpHand)" stroke="#c9a84c" stroke-width="0.5" opacity="0.92">
+    <ellipse cx="33" cy="46" rx="8" ry="5.5" transform="rotate(-20,33,46)"/>
+    <path d="M25,44 C21,38 20,32 24,28 C26,32 28,36 30,40 Z"/>
+    <path d="M30,40 C32,34 35,30 39,28 C37,34 34,38 32,42 Z"/>
+    <path d="M32,42 C34,36 37,32 41,30 C39,36 36,40 34,44 Z"/>
   </g>
 
-  <!-- Light descending -->
-  <path d="M50 50 C50 62 50 72 50 82" stroke="#c9a84c" stroke-width="1.4" opacity="0.45" stroke-linecap="round"/>
-  <circle cx="50" cy="84" r="5" fill="#c9a84c" opacity="0.22"/>
-  <circle cx="50" cy="84" r="2.2" fill="#fff3a0" opacity="0.55"/>
+  <!-- Right blessing hand -->
+  <g fill="url(#dpHand)" stroke="#c9a84c" stroke-width="0.5" opacity="0.92">
+    <ellipse cx="67" cy="46" rx="8" ry="5.5" transform="rotate(20,67,46)"/>
+    <path d="M75,44 C79,38 80,32 76,28 C74,32 72,36 70,40 Z"/>
+    <path d="M70,40 C68,34 65,30 61,28 C63,34 66,38 68,42 Z"/>
+    <path d="M68,42 C66,36 63,32 59,30 C61,36 64,40 66,44 Z"/>
+  </g>
 
-  <text x="50" y="95" text-anchor="middle"
-        font-family="Georgia, serif" font-size="5.2" fill="#c9a84c" opacity="0.8">
-    Mt 6,9
-  </text>
+  <!-- Light descending to earth -->
+  <path d="M50,50 L50,78" stroke="#c9a84c" stroke-width="1.2" opacity="0.4" stroke-linecap="round"/>
+  <circle cx="50" cy="80" r="4.5" fill="#c9a84c" opacity="0.22"/>
+  <circle cx="50" cy="80" r="2" fill="#fff3a0" opacity="0.55"/>
+
+  <!-- Side rays -->
+  <path d="M38,58 C34,62 30,66 28,70 C32,66 36,62 40,58 Z" fill="url(#dpRay)" opacity="0.55"/>
+  <path d="M62,58 C66,62 70,66 72,70 C68,66 64,62 60,58 Z" fill="url(#dpRay)" opacity="0.55"/>
+
+  <text x="50" y="93" text-anchor="middle" font-family="Georgia, serif" font-size="5.5" fill="#c9a84c" opacity="0.75">Mt 6,9</text>
 </svg>
