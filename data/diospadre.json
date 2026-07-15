@@ -122,6 +122,110 @@
       }
     }
   ],
+  "knowing_the_father": {
+    "struggle": {
+      "title": { "es": "Cuando me cuesta hablar con el Padre", "en": "When talking to the Father is hard" },
+      "intro": {
+        "es": "A muchos nos pasa. Rezar a Jesús se siente cercano. María y los santos nos acompañan con ternura. Pero el Padre… a veces parece lejano, severo, o simplemente desconocido. No estás solo. Eso no es falta de fe: es una invitación a conocerlo mejor.",
+        "en": "Many of us feel this. Praying to Jesus feels close. Mary and the saints accompany us with tenderness. But the Father… sometimes He seems distant, stern, or simply unknown. You are not alone. This is not a lack of faith: it is an invitation to know Him better."
+      },
+      "reasons": [
+        { "es": "Crecimos con imagen de Dios como juez, no como papá.", "en": "We grew up with an image of God as judge, not as Dad." },
+        { "es": "Nadie nos enseñó a hablarle directamente — solo a pedir por intercesión.", "en": "No one taught us to speak to Him directly — only to ask through intercession." },
+        { "es": "El Padre es invisible; Jesús tuvo rostro, voz, manos.", "en": "The Father is invisible; Jesus had a face, a voice, hands." },
+        { "es": "Confundimos «Padre celestial» con un padre humano que nos falló.", "en": "We confuse \"heavenly Father\" with a human father who failed us." }
+      ],
+      "hope": {
+        "es": "La buena noticia: no tienes que inventar al Padre. Jesús ya te lo mostró. Si quieres conocer al Padre, mira al Hijo.",
+        "en": "The good news: you do not have to invent the Father. Jesus already showed Him to you. If you want to know the Father, look at the Son."
+      }
+    },
+    "portraits": {
+      "title": { "es": "Conócelo en el Evangelio", "en": "Know Him in the Gospel" },
+      "subtitle": { "es": "Cinco escenas donde el Padre se deja ver — a través de Jesús", "en": "Five scenes where the Father reveals Himself — through Jesus" },
+      "scenes": [
+        {
+          "title": { "es": "El Padre que corre", "en": "The Father who runs" },
+          "text": { "es": "El hijo pródigo lo había despreciado. Volvió avergonzado, ensayando un discurso. Pero el Padre lo vio de lejos, corrió, lo abrazó y ordenó fiesta. No preguntó primero si se arrepentía de verdad. Ese es tu Padre.", "en": "The prodigal son had despised him. He returned ashamed, rehearsing a speech. But the Father saw him from afar, ran, embraced him, and ordered a feast. He did not first ask whether the repentance was sincere. That is your Father." },
+          "cite": { "es": "Lucas 15, 20-24", "en": "Luke 15:20-24" }
+        },
+        {
+          "title": { "es": "«Eres mi Hijo amado»", "en": "\"You are my beloved Son\"" },
+          "text": { "es": "En el bautismo de Jesús, el Padre habla desde el cielo: «Tú eres mi Hijo, el amado; en ti me complazco.» Antes de que Jesús hiciera un solo milagro, el Padre ya declaró su amor. Tú, bautizado, eres hijo adoptivo de ese mismo Padre.", "en": "At Jesus' baptism, the Father speaks from heaven: \"You are my Son, the Beloved; with you I am well pleased.\" Before Jesus performed a single miracle, the Father had already declared His love. You, baptized, are an adopted child of that same Father." },
+          "cite": { "es": "Mateo 3, 17 · Gál 4, 5-6", "en": "Matthew 3:17 · Gal 4:5-6" }
+        },
+        {
+          "title": { "es": "El Padre que escucha en secreto", "en": "The Father who listens in secret" },
+          "text": { "es": "Jesús dijo: cuando ores, entra en tu cuarto, cierra la puerta y ora a tu Padre en secreto — y tu Padre, que ve lo oculto, te recompensará. No busca aplauso ni palabras perfectas. Busca tu corazón.", "en": "Jesus said: when you pray, go into your room, close the door, and pray to your Father in secret — and your Father, who sees what is hidden, will reward you. He does not seek applause or perfect words. He seeks your heart." },
+          "cite": { "es": "Mateo 6, 6", "en": "Matthew 6:6" }
+        },
+        {
+          "title": { "es": "El Padre que da lo bueno", "en": "The Father who gives good gifts" },
+          "text": { "es": "«¿Qué padre entre ustedes le dará a su hijo una serpiente si le pide un pescado?» Si ustedes, siendo malos, saben dar cosas buenas… ¿cuánto más el Padre del cielo dará el Espíritu Santo a quien se lo pida?", "en": "\"What father among you would hand his son a snake when he asks for a fish?\" If you, being imperfect, know how to give good gifts… how much more will the heavenly Father give the Holy Spirit to those who ask?" },
+          "cite": { "es": "Lucas 11, 11-13", "en": "Luke 11:11-13" }
+        },
+        {
+          "title": { "es": "El Padre de quien Jesús hablaba toda la noche", "en": "The Father Jesus spoke to all night" },
+          "text": { "es": "Jesús pasaba noches enteras en oración al Padre. Si el Hijo perfecto necesitaba hablar con el Padre, ¿cuánto más nosotros? Jesús no oraba a un extraño: oraba a «Abba» — Papá.", "en": "Jesus spent whole nights in prayer to the Father. If the perfect Son needed to speak with the Father, how much more do we? Jesus did not pray to a stranger: He prayed to \"Abba\" — Daddy." },
+          "cite": { "es": "Lucas 6, 12 · Mc 14, 36", "en": "Luke 6:12 · Mark 14:36" }
+        }
+      ]
+    },
+    "what_he_likes": {
+      "title": { "es": "Qué le agrada al Padre", "en": "What pleases the Father" },
+      "items": [
+        { "es": "Un corazón sincero, aunque esté roto — «sacrificio agradable» (Sal 51, 19).", "en": "A sincere heart, even a broken one — \"a pleasing sacrifice\" (Ps 51:19)." },
+        { "es": "La humildad del que sabe que necesita perdón (Lc 18, 13-14).", "en": "The humility of one who knows they need forgiveness (Lk 18:13-14)." },
+        { "es": "Cuando perdonamos como Él nos perdona (Mt 6, 14-15).", "en": "When we forgive as He forgives us (Mt 6:14-15)." },
+        { "es": "Cuidar al más pequeño, al hambriento, al que sufre — «lo hicieron a mí» (Mt 25, 40).", "en": "Caring for the least, the hungry, the suffering — \"you did it to me\" (Mt 25:40)." },
+        { "es": "La confianza del que lo llama «Padre nuestro» cada día, sin merecerlo.", "en": "The trust of one who calls Him \"Our Father\" each day, without deserving it." },
+        { "es": "El silencio de quien solo quiere estar con Él, sin pedir nada.", "en": "The silence of one who only wants to be with Him, asking for nothing." }
+      ]
+    },
+    "what_he_expects": {
+      "title": { "es": "Qué espera de nosotros", "en": "What He expects of us" },
+      "intro": { "es": "No espera perfección. Espera hijos que vuelven.", "en": "He does not expect perfection. He expects children who return." },
+      "items": [
+        { "es": "Que confiemos en Él como un hijo confía — no como esclavo con miedo (Rom 8, 15).", "en": "That we trust Him as a child trusts — not as a slave in fear (Rom 8:15)." },
+        { "es": "Que seamos misericordiosos «como el Padre es misericordioso» (Lc 6, 36).", "en": "That we be merciful \"as the Father is merciful\" (Lk 6:36)." },
+        { "es": "Que amemos «como Él me amó primero» (1 Jn 4, 19) — empezando en casa, en lo pequeño.", "en": "That we love \"as He loved me first\" (1 Jn 4:19) — starting at home, in small things." },
+        { "es": "Que busquemos su Reino antes que nuestra ansiedad (Mt 6, 33).", "en": "That we seek His Kingdom before our anxiety (Mt 6:33)." },
+        { "es": "Que volvamos cuando nos alejamos — siempre hay camino a casa (Lc 15).", "en": "That we return when we drift away — there is always a way home (Lk 15)." }
+      ]
+    },
+    "first_steps": {
+      "title": { "es": "Siete formas de conocerlo esta semana", "en": "Seven ways to know Him this week" },
+      "steps": [
+        { "es": "Lee el Padre Nuestro despacio — una frase por día, deteniéndote en cada una.", "en": "Read the Our Father slowly — one line per day, pausing on each." },
+        { "es": "Mira a Jesús en el Evangelio y pregúntate: «¿Qué me dice esto del Padre?»", "en": "Look at Jesus in the Gospel and ask: \"What does this tell me about the Father?\"" },
+        { "es": "Cinco minutos en silencio: «Padre, aquí estoy. No sé qué decirte. Escúchame.»", "en": "Five minutes in silence: \"Father, here I am. I do not know what to say. Listen to me.\"" },
+        { "es": "Cuenta tres cosas buenas del día y dale gracias al Padre por cada una.", "en": "Count three good things from the day and thank the Father for each." },
+        { "es": "Lee la parábola del hijo pródigo (Lc 15) imaginando el rostro del Padre al abrazar.", "en": "Read the prodigal son parable (Lk 15) imagining the Father's face as He embraces." },
+        { "es": "Pídele al Espíritu Santo que te enseñe a decir «Abba» — Él es el maestro de esta oración.", "en": "Ask the Holy Spirit to teach you to say \"Abba\" — He is the teacher of this prayer." },
+        { "es": "Termina cada noche con una frase: «Padre, hoy fui tu hijo. Mañana quiero volver.»", "en": "End each night with one line: \"Father, today I was Your child. Tomorrow I want to return.\"" }
+      ]
+    },
+    "conversation_starters": {
+      "title": { "es": "Si no sabes qué decirle… empieza aquí", "en": "If you do not know what to say… start here" },
+      "subtitle": { "es": "No necesitas palabras bonitas. Solo honestidad. Elige una y dilas en voz alta:", "en": "You do not need beautiful words. Only honesty. Choose one and say it aloud:" },
+      "phrases": [
+        { "es": "«Padre, no te conozco bien. Quiero conocerte. Enséñame.»", "en": "\"Father, I do not know You well. I want to know You. Teach me.\"" },
+        { "es": "«Padre, me cuesta hablarte. No me abandones en este silencio.»", "en": "\"Father, it is hard for me to speak to You. Do not leave me in this silence.\"" },
+        { "es": "«Padre, tengo miedo de defraudarte. Recuérdame que soy tu hijo, no tu empleado.»", "en": "\"Father, I am afraid of disappointing You. Remind me I am Your child, not Your employee.\"" },
+        { "es": "«Padre, gracias por [di algo concreto de hoy].»", "en": "\"Father, thank You for [name something concrete from today].\"" },
+        { "es": "«Padre, esto me pesa: [di lo que llevas]. No lo sé resolver. Tú sí.»", "en": "\"Father, this weighs on me: [say what you carry]. I cannot fix it. You can.\"" },
+        { "es": "«Padre, como dijo Jesús: hágase tu voluntad — ayúdame a quererla.»", "en": "\"Father, as Jesus said: Thy will be done — help me to want it.\"" },
+        { "es": "«Padre, bendice a [nombra a alguien que amas].»", "en": "\"Father, bless [name someone you love].\"" }
+      ]
+    },
+    "letter": {
+      "title": { "es": "Lo que el Padre quiere que sepas hoy", "en": "What the Father wants you to know today" },
+      "text": {
+        "es": "Hijo mío, hija mía:\n\nNo necesitas ganarte mi amor. Ya eres mío.\n\nNo soy el reflejo de los padres que te fallaron. Soy el Padre de quien Jesús habló toda la noche en oración — con ternura, con confianza, llamándome «Abba».\n\nCuando no sabes qué decirme, tu silencio también es oración. Cuando solo vienes a quejarte, te escucho. Cuando vuelves avergonzado, yo corro al encuentro.\n\nNo te pido que seas perfecto. Te pido que no dejes de volver.\n\nTe envié a mi Hijo no para alejarte de mí, sino para que por fin me conocieras. En su rostro verás el mío. En su Cruz verás hasta dónde llega mi amor.\n\nEsta tarde, esta noche, este momento — habla conmigo. Aunque sea una sola frase. Aunque sea: «Padre, ayúdame a creer que me quieres.»\n\nYo ya estoy aquí. Llevo mucho tiempo esperándote.\n\n— Tu Padre del cielo",
+        "en": "My son, my daughter:\n\nYou do not need to earn my love. You are already mine.\n\nI am not the reflection of the fathers who failed you. I am the Father to whom Jesus spoke all night in prayer — with tenderness, with trust, calling me \"Abba.\"\n\nWhen you do not know what to say, your silence is also prayer. When you come only to complain, I listen. When you return in shame, I run to meet you.\n\nI do not ask you to be perfect. I ask you not to stop returning.\n\nI sent you my Son not to keep you from me, but so that you might finally know me. In His face you will see mine. In His Cross you will see how far my love goes.\n\nThis afternoon, this night, this moment — speak with me. Even one sentence. Even: \"Father, help me believe that You love me.\"\n\nI am already here. I have been waiting for you a long time.\n\n— Your Father in heaven"
+      }
+    }
+  },
   "personal_prayer": {
     "es": "Padre celestial,\n\nTú me conoces antes de que yo te hable.\nTú me amas antes de que yo te ame.\n\nPerdóname cuando olvido que, por tu Hijo Jesús —el único Mediador—,\npuedo acercarme a Ti con confianza de hijo.\n\nHoy quiero hablarte a Ti, Padre,\npor Jesucristo, en unión con el Espíritu Santo.\nNo porque no necesite a tu Hijo, a la Iglesia ni a los santos,\nsino porque toda oración cristiana llega a Ti por Él.\n\nPadre, escucha mi corazón:\n[habla aquí lo que llevas dentro]\n\nConfío en tu voluntad.\nDescanso en tu providencia.\nMe abrazo a tu misericordia.\n\nPor Jesucristo, tu Hijo,\nen unión con el Espíritu Santo.\nAmén.",
     "en": "Heavenly Father,\n\nYou know me before I speak to You.\nYou love me before I love You.\n\nForgive me when I forget that, through Your Son Jesus —the one Mediator—,\nI may approach You with the confidence of a child.\n\nToday I want to speak to You, Father,\nthrough Jesus Christ, in union with the Holy Spirit.\nNot because I need not Your Son, the Church, or the saints,\nbut because all Christian prayer reaches You through Him.\n\nFather, hear my heart:\n[speak here what you carry inside]\n\nI trust Your will.\nI rest in Your providence.\nI embrace Your mercy.\n\nThrough Jesus Christ, Your Son,\nin union with the Holy Spirit.\nAmen."

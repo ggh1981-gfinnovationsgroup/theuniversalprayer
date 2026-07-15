@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dios Padre | The Universal Prayer</title>
-  <meta name="description" content="Orar al Padre celestial por Jesucristo. El Padre Nuestro, enseñanza del Catecismo y oración personal — al Padre, por el Hijo, en el Espíritu Santo." />
+  <meta name="description" content="Conocer a Dios Padre: quién es, qué le agrada, qué espera de nosotros. Para quien le cuesta hablarle — al Padre, por Cristo, en el Espíritu Santo." />
   <meta name="theme-color" content="#c9a84c" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Dios Padre — Orar al Padre Celestial" />
@@ -213,6 +213,79 @@
       color: rgba(255,255,255,0.88);
       line-height: 1.75;
     }
+    .dp-scene-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(201,168,76,0.16);
+      border-radius: 12px;
+      padding: 1.2rem 1.3rem;
+      margin-bottom: 1rem;
+    }
+    .dp-scene-title {
+      font-family: var(--font-serif);
+      font-size: 1.08rem;
+      color: var(--gold-light);
+      margin: 0 0 0.5rem;
+    }
+    .dp-scene-text {
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.74);
+      line-height: 1.7;
+      margin: 0 0 0.45rem;
+    }
+    .dp-list-item {
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.76);
+      line-height: 1.65;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid rgba(201,168,76,0.1);
+    }
+    .dp-list-item:last-child { border-bottom: none; }
+    .dp-step-num {
+      display: inline-block;
+      width: 1.4rem;
+      height: 1.4rem;
+      line-height: 1.4rem;
+      text-align: center;
+      border-radius: 50%;
+      background: rgba(201,168,76,0.2);
+      color: var(--gold);
+      font-size: 0.72rem;
+      font-weight: 700;
+      margin-right: 0.5rem;
+    }
+    .dp-phrase {
+      background: rgba(201,168,76,0.08);
+      border: 1px solid rgba(201,168,76,0.22);
+      border-radius: 10px;
+      padding: 0.9rem 1.1rem;
+      margin-bottom: 0.65rem;
+      font-family: var(--font-serif);
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.9);
+      line-height: 1.6;
+      font-style: italic;
+    }
+    .dp-letter {
+      background: linear-gradient(145deg, rgba(201,168,76,0.12) 0%, rgba(201,168,76,0.04) 100%);
+      border: 1px solid rgba(201,168,76,0.35);
+      border-radius: 14px;
+      padding: 2rem 1.75rem;
+      font-family: var(--font-serif);
+      font-size: 1.02rem;
+      color: rgba(255,255,255,0.9);
+      line-height: 2;
+      white-space: pre-line;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    }
+    .dp-section-lead {
+      font-family: var(--font-sans);
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.68);
+      line-height: 1.75;
+      margin-bottom: 1.25rem;
+    }
   </style>
 </head>
 <body>
@@ -337,6 +410,46 @@
       <div class="dp-attrs-grid" id="attrsGrid"></div>
     </section>
 
+    <section class="dp-section" id="knowingSection">
+      <h2 class="dp-section-title" id="struggleTitle"></h2>
+      <p class="dp-section-lead" id="struggleIntro"></p>
+      <div id="struggleReasons"></div>
+      <div class="dp-summary" id="struggleHope"></div>
+    </section>
+
+    <section class="dp-section">
+      <h2 class="dp-section-title" id="portraitsTitle"></h2>
+      <p class="dp-section-lead" id="portraitsSubtitle"></p>
+      <div id="portraitsGrid"></div>
+    </section>
+
+    <section class="dp-section">
+      <h2 class="dp-section-title" id="likesTitle"></h2>
+      <div id="likesList"></div>
+    </section>
+
+    <section class="dp-section">
+      <h2 class="dp-section-title" id="expectsTitle"></h2>
+      <p class="dp-section-lead" id="expectsIntro"></p>
+      <div id="expectsList"></div>
+    </section>
+
+    <section class="dp-section">
+      <h2 class="dp-section-title" id="stepsTitle"></h2>
+      <div id="stepsList"></div>
+    </section>
+
+    <section class="dp-section">
+      <h2 class="dp-section-title" id="startersTitle"></h2>
+      <p class="dp-section-lead" id="startersSubtitle"></p>
+      <div id="startersList"></div>
+    </section>
+
+    <section class="dp-section">
+      <h2 class="dp-section-title" id="letterTitle"></h2>
+      <div class="dp-letter" id="letterText"></div>
+    </section>
+
     <section class="dp-section">
       <h2 class="dp-section-title" data-lang="es">Oración personal al Padre</h2>
       <h2 class="dp-section-title" data-lang="en" style="display:none">Personal prayer to the Father</h2>
@@ -372,6 +485,7 @@
         renderMediatorIntercessor(data.mediator_intercessor);
         renderTeaching(data.church_teaching);
         renderAttributes(data.attributes);
+        renderKnowingFather(data.knowing_the_father);
         renderPrayer('personalPrayer', data.personal_prayer);
         renderPrayer('closingPrayer', data.closing_prayer);
         applyLang(lang);
@@ -429,6 +543,59 @@
           </p>
         </div>
       `).join('');
+    }
+
+    function renderKnowingFather(k) {
+      setBilingual('struggleTitle', k.struggle.title);
+      setBilingual('struggleIntro', k.struggle.intro);
+      document.getElementById('struggleReasons').innerHTML = k.struggle.reasons.map(r => `
+        <div class="dp-list-item">• <span data-lang="es">${r.es}</span><span data-lang="en" style="display:none">${r.en}</span></div>
+      `).join('');
+      setBilingual('struggleHope', k.struggle.hope);
+
+      setBilingual('portraitsTitle', k.portraits.title);
+      setBilingual('portraitsSubtitle', k.portraits.subtitle);
+      document.getElementById('portraitsGrid').innerHTML = k.portraits.scenes.map(s => `
+        <div class="dp-scene-card">
+          <h3 class="dp-scene-title"><span data-lang="es">${s.title.es}</span><span data-lang="en" style="display:none">${s.title.en}</span></h3>
+          <p class="dp-scene-text"><span data-lang="es">${s.text.es}</span><span data-lang="en" style="display:none">${s.text.en}</span></p>
+          <div class="dp-role-cite"><span data-lang="es">${s.cite.es}</span><span data-lang="en" style="display:none">${s.cite.en}</span></div>
+        </div>
+      `).join('');
+
+      setBilingual('likesTitle', k.what_he_likes.title);
+      document.getElementById('likesList').innerHTML = k.what_he_likes.items.map(i => `
+        <div class="dp-list-item">• <span data-lang="es">${i.es}</span><span data-lang="en" style="display:none">${i.en}</span></div>
+      `).join('');
+
+      setBilingual('expectsTitle', k.what_he_expects.title);
+      setBilingual('expectsIntro', k.what_he_expects.intro);
+      document.getElementById('expectsList').innerHTML = k.what_he_expects.items.map(i => `
+        <div class="dp-list-item">• <span data-lang="es">${i.es}</span><span data-lang="en" style="display:none">${i.en}</span></div>
+      `).join('');
+
+      setBilingual('stepsTitle', k.first_steps.title);
+      document.getElementById('stepsList').innerHTML = k.first_steps.steps.map((s, i) => `
+        <div class="dp-list-item"><span class="dp-step-num">${i + 1}</span><span data-lang="es">${s.es}</span><span data-lang="en" style="display:none">${s.en}</span></div>
+      `).join('');
+
+      setBilingual('startersTitle', k.conversation_starters.title);
+      setBilingual('startersSubtitle', k.conversation_starters.subtitle);
+      document.getElementById('startersList').innerHTML = k.conversation_starters.phrases.map(p => `
+        <div class="dp-phrase"><span data-lang="es">${p.es}</span><span data-lang="en" style="display:none">${p.en}</span></div>
+      `).join('');
+
+      setBilingual('letterTitle', k.letter.title);
+      document.getElementById('letterText').innerHTML = `
+        <span data-lang="es" style="white-space:pre-line">${k.letter.text.es}</span>
+        <span data-lang="en" style="display:none;white-space:pre-line">${k.letter.text.en}</span>
+      `;
+    }
+
+    function setBilingual(id, obj) {
+      const el = document.getElementById(id);
+      if (!el || !obj) return;
+      el.innerHTML = `<span data-lang="es">${obj.es}</span><span data-lang="en" style="display:none">${obj.en}</span>`;
     }
 
     function renderAttributes(attrs) {
