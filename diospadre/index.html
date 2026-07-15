@@ -4,16 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dios Padre | The Universal Prayer</title>
-  <meta name="description" content="Orar al Padre celestial directamente. El Padre Nuestro, oraciones personales y guía para hablar con Dios Padre — no como intercesor, sino como Tu Padre." />
+  <meta name="description" content="Orar al Padre celestial por Jesucristo. El Padre Nuestro, enseñanza del Catecismo y oración personal — al Padre, por el Hijo, en el Espíritu Santo." />
   <meta name="theme-color" content="#c9a84c" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Dios Padre — Orar al Padre Celestial" />
-  <meta property="og:description" content="Jesús nos enseñó a decir Padre Nuestro. Aquí encontrarás cómo hablar con Dios Padre directamente, con ternura y confianza." />
+  <meta property="og:description" content="Jesús nos enseñó el Padre Nuestro. Oración al Padre por Cristo, en el Espíritu Santo, según la fe católica." />
   <meta property="og:url" content="https://www.theuniversalprayer.com/diospadre/" />
   <meta property="og:image" content="https://www.theuniversalprayer.com/assets/images/diospadre.svg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Dios Padre — Orar al Padre Celestial" />
-  <meta name="twitter:description" content="Oración directa al Padre. El Padre Nuestro, sus atributos y oración personal." />
+  <meta name="twitter:description" content="Oración al Padre por Cristo. El Padre Nuestro y enseñanza católica bilingüe." />
   <meta name="twitter:image" content="https://www.theuniversalprayer.com/assets/images/diospadre.svg" />
   <link rel="manifest" href="/manifest.json" />
   <meta name="mobile-web-app-capable" content="yes" />
@@ -195,8 +195,8 @@
     <h1 class="dp-title" data-lang="es">Dios Padre</h1>
     <h1 class="dp-title" data-lang="en" style="display:none">God the Father</h1>
 
-    <p class="dp-subtitle" data-lang="es">No es un intercesor: es Tu Padre. Jesús —el Camino— nos enseñó el Padre Nuestro: oramos <em>al Padre</em>, por Él, en el Espíritu Santo.</p>
-    <p class="dp-subtitle" data-lang="en" style="display:none">He is not an intercessor: He is your Father. Jesus —the Way— taught us the Our Father: we pray <em>to the Father</em>, through Him, in the Holy Spirit.</p>
+    <p class="dp-subtitle" data-lang="es">María y los santos interceden <em>por</em> nosotros. El Padre es el destino de toda oración cristiana — y llegamos a Él solo por Jesús, nuestro único Mediador, en el Espíritu Santo.</p>
+    <p class="dp-subtitle" data-lang="en" style="display:none">Mary and the saints intercede <em>for</em> us. The Father is the goal of all Christian prayer — and we reach Him only through Jesus, our one Mediator, in the Holy Spirit.</p>
   </section>
 
   <main class="dp-content">
@@ -223,12 +223,37 @@
         <cite>— John 14:6</cite>
       </blockquote>
 
+      <blockquote class="dp-scripture" data-lang="es">
+        «Un solo Dios, y un solo mediador entre Dios y los hombres: Jesucristo.»
+        <cite>— 1 Timoteo 2, 5</cite>
+      </blockquote>
+      <blockquote class="dp-scripture" data-lang="en" style="display:none">
+        "For there is one God, and there is one mediator between God and humankind, Christ Jesus."
+        <cite>— 1 Timothy 2:5</cite>
+      </blockquote>
+
+      <blockquote class="dp-scripture" data-lang="es">
+        «Por medio de él, en un mismo Espíritu, tenemos acceso al Padre.»
+        <cite>— Efesios 2, 18</cite>
+      </blockquote>
+      <blockquote class="dp-scripture" data-lang="en" style="display:none">
+        "Through him, in one Spirit, we have access to the Father."
+        <cite>— Ephesians 2:18</cite>
+      </blockquote>
+
       <div class="dp-note" data-lang="es">
-        Los santos, la Virgen y los ángeles <strong>interceden por nosotros</strong>. El Padre es <strong>a quien se dirige</strong> la oración cristiana — pero <strong>siempre por Jesucristo</strong>, que es el Camino. Por eso el Padre Nuestro lo enseñó Él mismo: no para saltarnos a Jesús, sino para llevarnos al Padre <em>con</em> Él.
+        Los discípulos le pidieron a Jesús: «Señor, enséñanos a orar» — y Él les dio el Padre Nuestro (Lc 11, 1-4). La Iglesia enseña que la oración cristiana se dirige al Padre, por Cristo y en el Espíritu Santo (CIC 2591). Orar a Jesús, a María o a los santos no contradice esto: ellos interceden <em>por</em> nosotros; Cristo es el <em>único</em> Mediador que nos une con el Padre.
       </div>
       <div class="dp-note" data-lang="en" style="display:none">
-        The saints, Mary, and the angels <strong>intercede for us</strong>. The Father is <strong>the one to whom</strong> Christian prayer is addressed — but <strong>always through Jesus Christ</strong>, who is the Way. That is why He Himself taught the Our Father: not to bypass Jesus, but to bring us to the Father <em>with</em> Him.
+        The disciples asked Jesus: "Lord, teach us to pray" — and He gave them the Our Father (Lk 11:1-4). The Church teaches that Christian prayer is addressed to the Father, through Christ and in the Holy Spirit (CCC 2591). Praying to Jesus, Mary, or the saints does not contradict this: they intercede <em>for</em> us; Christ is the <em>only</em> Mediator who unites us with the Father.
       </div>
+    </section>
+
+    <section class="dp-section">
+      <h2 class="dp-section-title" data-lang="es">Lo que enseña la Iglesia</h2>
+      <h2 class="dp-section-title" data-lang="en" style="display:none">What the Church teaches</h2>
+
+      <div class="dp-attrs-grid" id="teachingGrid"></div>
     </section>
 
     <section class="dp-section">
@@ -286,6 +311,7 @@
       .then(r => r.json())
       .then(data => {
         renderInvocation(data.invocation);
+        renderTeaching(data.church_teaching);
         renderAttributes(data.attributes);
         renderPrayer('personalPrayer', data.personal_prayer);
         renderPrayer('closingPrayer', data.closing_prayer);
@@ -297,6 +323,22 @@
         <span data-lang="es" style="white-space:pre-line">${invocation.es}</span>
         <span data-lang="en" style="display:none;white-space:pre-line">${invocation.en}</span>
       `;
+    }
+
+    function renderTeaching(items) {
+      const grid = document.getElementById('teachingGrid');
+      grid.innerHTML = items.map(t => `
+        <div class="dp-attr-card">
+          <h3 class="dp-attr-name">
+            <span data-lang="es">${t.title.es}</span>
+            <span data-lang="en" style="display:none">${t.title.en}</span>
+          </h3>
+          <p class="dp-attr-desc">
+            <span data-lang="es">${t.text.es}</span>
+            <span data-lang="en" style="display:none">${t.text.en}</span>
+          </p>
+        </div>
+      `).join('');
     }
 
     function renderAttributes(attrs) {
