@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dios Padre | The Universal Prayer</title>
-  <meta name="description" content="Conocer a Dios Padre: quién es, qué le agrada, qué espera de nosotros. Para quien le cuesta hablarle — al Padre, por Cristo, en el Espíritu Santo." />
+  <meta name="description" content="Conocer a Dios Padre en profundidad: biblioteca colapsable con Escritura, Catecismo, 30 días de camino, frases para orar y carta del Padre." />
   <meta name="theme-color" content="#c9a84c" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Dios Padre — Orar al Padre Celestial" />
@@ -286,6 +286,75 @@
       line-height: 1.75;
       margin-bottom: 1.25rem;
     }
+    details.dp-collapse {
+      margin-bottom: 0.65rem;
+      border: 1px solid rgba(201,168,76,0.22);
+      border-radius: 12px;
+      background: rgba(201,168,76,0.05);
+      overflow: hidden;
+    }
+    details.dp-collapse summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 0.95rem 1.1rem;
+      font-family: var(--font-serif);
+      font-size: 1.02rem;
+      color: var(--gold-light);
+      user-select: none;
+      line-height: 1.4;
+    }
+    details.dp-collapse summary::-webkit-details-marker { display: none; }
+    details.dp-collapse summary::before {
+      content: '▸ ';
+      color: var(--gold);
+      font-size: 0.85rem;
+    }
+    details.dp-collapse[open] summary::before { content: '▾ '; }
+    details.dp-collapse summary .dp-sum-icon { margin-right: 0.45rem; }
+    details.dp-collapse summary .dp-sum-sub {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.55);
+      margin-top: 0.3rem;
+      font-weight: 400;
+    }
+    .dp-collapse-body {
+      padding: 0 1.1rem 1.1rem;
+      border-top: 1px solid rgba(201,168,76,0.12);
+    }
+    .dp-block-p {
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.78);
+      line-height: 1.75;
+      margin: 0.85rem 0 0;
+    }
+    .dp-block-sub-title {
+      font-family: var(--font-serif);
+      font-size: 0.98rem;
+      color: var(--gold-light);
+      margin: 1rem 0 0.4rem;
+    }
+    .dp-block-list {
+      margin: 0.6rem 0 0;
+      padding-left: 1.1rem;
+      display: grid;
+      gap: 0.45rem;
+    }
+    .dp-block-list li {
+      font-family: var(--font-sans);
+      font-size: 0.86rem;
+      color: rgba(255,255,255,0.76);
+      line-height: 1.65;
+    }
+    .dp-library-note {
+      text-align: center;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.5);
+      margin-top: 1rem;
+    }
   </style>
 </head>
 <body>
@@ -328,126 +397,70 @@
       <h2 class="dp-section-title" data-lang="en" style="display:none">Why pray to the Father?</h2>
 
       <blockquote class="dp-scripture" data-lang="es">
-        «Así debéis orar: Padre nuestro que estás en el cielo…»
-        <cite>— Mateo 6, 9</cite>
+        Ustedes deben orar así: Padre nuestro que estás en el cielo, santificado sea tu nombre; venga a nosotros tu Reino; hágase tu voluntad en la tierra como en el cielo.
+        <cite>— Mateo 6, 9-10 (Biblia Latinoamericana)</cite>
       </blockquote>
       <blockquote class="dp-scripture" data-lang="en" style="display:none">
-        "This is how you should pray: Our Father in heaven…"
-        <cite>— Matthew 6:9</cite>
+        "This is how you are to pray: Our Father in heaven, hallowed be your name, your kingdom come, your will be done, on earth as in heaven."
+        <cite>— Matthew 6:9-10 (NABRE)</cite>
       </blockquote>
 
       <blockquote class="dp-scripture" data-lang="es">
-        «Yo soy el camino, la verdad y la vida. Nadie viene al Padre sino por mí.»
-        <cite>— Juan 14, 6</cite>
+        Jesús le dijo: —Yo soy el camino, la verdad y la vida; nadie viene al Padre sino por mí.
+        <cite>— Juan 14, 6 (Biblia Latinoamericana)</cite>
       </blockquote>
       <blockquote class="dp-scripture" data-lang="en" style="display:none">
-        "I am the way, the truth, and the life. No one comes to the Father except through me."
-        <cite>— John 14:6</cite>
+        Jesus said to him, "I am the way and the truth and the life. No one comes to the Father except through me."
+        <cite>— John 14:6 (NABRE)</cite>
       </blockquote>
 
       <blockquote class="dp-scripture" data-lang="es">
-        «Un solo Dios, y un solo mediador entre Dios y los hombres: Jesucristo.»
-        <cite>— 1 Timoteo 2, 5</cite>
+        Porque hay un solo Dios, y también un solo mediador entre Dios y los hombres: Jesucristo hombre, que se entregó a sí mismo en rescate por todos.
+        <cite>— 1 Timoteo 2, 5 (Biblia Latinoamericana)</cite>
       </blockquote>
       <blockquote class="dp-scripture" data-lang="en" style="display:none">
-        "For there is one God, and there is one mediator between God and humankind, Christ Jesus."
-        <cite>— 1 Timothy 2:5</cite>
+        For there is one God. There is also one mediator between God and the human race, Christ Jesus, himself human, who gave himself as ransom for all.
+        <cite>— 1 Timothy 2:5 (NABRE)</cite>
       </blockquote>
 
       <blockquote class="dp-scripture" data-lang="es">
-        «Por medio de él, en un mismo Espíritu, tenemos acceso al Padre.»
-        <cite>— Efesios 2, 18</cite>
+        Porque por medio de él nosotros, los judíos y los paganos, tenemos en un mismo Espíritu acceso al Padre.
+        <cite>— Efesios 2, 18 (Biblia Latinoamericana)</cite>
       </blockquote>
       <blockquote class="dp-scripture" data-lang="en" style="display:none">
-        "Through him, in one Spirit, we have access to the Father."
-        <cite>— Ephesians 2:18</cite>
+        For through him we both have access in one Spirit to the Father.
+        <cite>— Ephesians 2:18 (NABRE)</cite>
+      </blockquote>
+
+      <blockquote class="dp-scripture" data-lang="es">
+        Un día, Jesús estaba orando en cierto lugar. Cuando terminó, uno de sus discípulos le dijo: —Señor, enséñanos a orar, como Juan enseñó a sus discípulos. Él les dijo: —Cuando oren, digan: Padre, santificado sea tu nombre; venga tu Reino; danos cada día el pan que necesitamos; perdónanos nuestros pecados, porque también nosotros perdonamos a todo el que nos ofende; y no nos dejes caer en la tentación.
+        <cite>— Lucas 11, 1-4 (Biblia Latinoamericana)</cite>
+      </blockquote>
+      <blockquote class="dp-scripture" data-lang="en" style="display:none">
+        He was praying in a certain place, and when he had finished, one of his disciples said to him, "Lord, teach us to pray just as John taught his disciples." He said to them, "When you pray, say: Father, hallowed be your name, your kingdom come. Give us each day our daily bread and forgive us our sins for we ourselves forgive everyone in debt to us, and do not subject us to the final test."
+        <cite>— Luke 11:1-4 (NABRE)</cite>
       </blockquote>
 
       <div class="dp-note" data-lang="es">
-        Los discípulos le pidieron a Jesús: «Señor, enséñanos a orar» — y Él les dio el Padre Nuestro (Lc 11, 1-4). La Iglesia enseña que la oración cristiana se dirige al Padre, por Cristo y en el Espíritu Santo (CIC 2591). Orar a Jesús, a María o a los santos no contradice esto: ellos interceden <em>por</em> nosotros; Cristo es el <em>único</em> Mediador que nos une con el Padre.
+        La Iglesia enseña que la oración cristiana se dirige al Padre, por Cristo y en el Espíritu Santo (CIC 2591). Orar a Jesús, a María o a los santos no contradice esto: ellos interceden <em>por</em> nosotros; Cristo es el <em>único</em> Mediador que nos une con el Padre. Textos bíblicos: Biblia Latinoamericana (BLA).
       </div>
       <div class="dp-note" data-lang="en" style="display:none">
-        The disciples asked Jesus: "Lord, teach us to pray" — and He gave them the Our Father (Lk 11:1-4). The Church teaches that Christian prayer is addressed to the Father, through Christ and in the Holy Spirit (CCC 2591). Praying to Jesus, Mary, or the saints does not contradict this: they intercede <em>for</em> us; Christ is the <em>only</em> Mediator who unites us with the Father.
+        The Church teaches that Christian prayer is addressed to the Father, through Christ and in the Holy Spirit (CCC 2591). Praying to Jesus, Mary, or the saints does not contradict this: they intercede <em>for</em> us; Christ is the <em>only</em> Mediator who unites us with the Father. Scripture texts: NABRE (New American Bible Revised Edition).
       </div>
-    </section>
-
-    <section class="dp-section">
-      <h2 class="dp-section-title" data-lang="es">Mediador vs Intercesor</h2>
-      <h2 class="dp-section-title" data-lang="en" style="display:none">Mediator vs Intercessor</h2>
-
-      <p class="dp-note" id="miIntro" style="margin-bottom: 1.5rem;"></p>
-      <div id="miRoles"></div>
-      <div class="dp-summary" id="miSummary"></div>
-    </section>
-
-    <section class="dp-section">
-      <h2 class="dp-section-title" data-lang="es">Lo que enseña la Iglesia</h2>
-      <h2 class="dp-section-title" data-lang="en" style="display:none">What the Church teaches</h2>
-
-      <div class="dp-attrs-grid" id="teachingGrid"></div>
     </section>
 
     <section class="dp-section">
       <h2 class="dp-section-title" data-lang="es">El Padre Nuestro</h2>
       <h2 class="dp-section-title" data-lang="en" style="display:none">The Our Father</h2>
-
       <p class="dp-invocation" id="invocationPrayer"></p>
     </section>
 
-    <section class="dp-section">
-      <h2 class="dp-section-title" data-lang="es">Quién es el Padre</h2>
-      <h2 class="dp-section-title" data-lang="en" style="display:none">Who the Father is</h2>
-
-      <blockquote class="dp-scripture" data-lang="es">
-        «Miren qué gran amor nos ha tenido el Padre, que seamos llamados hijos de Dios.»
-        <cite>— 1 Juan 3, 1</cite>
-      </blockquote>
-      <blockquote class="dp-scripture" data-lang="en" style="display:none">
-        "See what great love the Father has lavished on us, that we should be called children of God!"
-        <cite>— 1 John 3:1</cite>
-      </blockquote>
-
-      <div class="dp-attrs-grid" id="attrsGrid"></div>
-    </section>
-
-    <section class="dp-section" id="knowingSection">
-      <h2 class="dp-section-title" id="struggleTitle"></h2>
-      <p class="dp-section-lead" id="struggleIntro"></p>
-      <div id="struggleReasons"></div>
-      <div class="dp-summary" id="struggleHope"></div>
-    </section>
-
-    <section class="dp-section">
-      <h2 class="dp-section-title" id="portraitsTitle"></h2>
-      <p class="dp-section-lead" id="portraitsSubtitle"></p>
-      <div id="portraitsGrid"></div>
-    </section>
-
-    <section class="dp-section">
-      <h2 class="dp-section-title" id="likesTitle"></h2>
-      <div id="likesList"></div>
-    </section>
-
-    <section class="dp-section">
-      <h2 class="dp-section-title" id="expectsTitle"></h2>
-      <p class="dp-section-lead" id="expectsIntro"></p>
-      <div id="expectsList"></div>
-    </section>
-
-    <section class="dp-section">
-      <h2 class="dp-section-title" id="stepsTitle"></h2>
-      <div id="stepsList"></div>
-    </section>
-
-    <section class="dp-section">
-      <h2 class="dp-section-title" id="startersTitle"></h2>
-      <p class="dp-section-lead" id="startersSubtitle"></p>
-      <div id="startersList"></div>
-    </section>
-
-    <section class="dp-section">
-      <h2 class="dp-section-title" id="letterTitle"></h2>
-      <div class="dp-letter" id="letterText"></div>
+    <section class="dp-section" id="librarySection">
+      <h2 class="dp-section-title" id="libraryTitle"></h2>
+      <p class="dp-section-lead" id="libraryIntro"></p>
+      <div id="accordionHub"></div>
+      <p class="dp-library-note" data-lang="es">Toca cada sección para abrir. Puedes volver cuando quieras.</p>
+      <p class="dp-library-note" data-lang="en" style="display:none">Tap each section to open. Come back whenever you want.</p>
     </section>
 
     <section class="dp-section">
@@ -478,18 +491,67 @@
     const LANG_KEY = 'tup_lang';
     let lang = localStorage.getItem(LANG_KEY) || 'es';
 
-    fetch('/data/diospadre.json')
-      .then(r => r.json())
-      .then(data => {
+    Promise.all([
+      fetch('/data/diospadre.json').then(r => r.json()),
+      fetch('/data/diospadre-deep.json').then(r => r.json()),
+    ])
+      .then(([data, deep]) => {
         renderInvocation(data.invocation);
-        renderMediatorIntercessor(data.mediator_intercessor);
-        renderTeaching(data.church_teaching);
-        renderAttributes(data.attributes);
-        renderKnowingFather(data.knowing_the_father);
+        renderLibrary(deep);
         renderPrayer('personalPrayer', data.personal_prayer);
         renderPrayer('closingPrayer', data.closing_prayer);
         applyLang(lang);
       });
+
+    function bi(es, en) {
+      return `<span data-lang="es">${es}</span><span data-lang="en" style="display:none">${en}</span>`;
+    }
+
+    function renderBlock(block) {
+      if (block.type === 'p') {
+        return `<p class="dp-block-p">${bi(block.es, block.en)}</p>`;
+      }
+      if (block.type === 'scripture') {
+        return `<blockquote class="dp-scripture">${bi(block.es, block.en)}<cite>${bi(block.cite.es, block.cite.en)}</cite></blockquote>`;
+      }
+      if (block.type === 'sub') {
+        let html = `<h4 class="dp-block-sub-title">${bi(block.title.es, block.title.en)}</h4><p class="dp-block-p">${bi(block.es, block.en)}</p>`;
+        if (block.scripture) {
+          html += `<blockquote class="dp-scripture">${bi(block.scripture.es, block.scripture.en)}<cite>${bi(block.scripture.cite.es, block.scripture.cite.en)}</cite></blockquote>`;
+        }
+        return html;
+      }
+      if (block.type === 'letter') {
+        return `<div class="dp-letter">${bi(block.es, block.en)}</div>`;
+      }
+      if (block.type === 'list') {
+        const title = block.title ? `<h4 class="dp-block-sub-title">${bi(block.title.es, block.title.en)}</h4>` : '';
+        const items = block.items.map(i => `<li>${bi(i.es, i.en)}</li>`).join('');
+        return `${title}<ul class="dp-block-list">${items}</ul>`;
+      }
+      return '';
+    }
+
+    function renderLibrary(deep) {
+      setBilingual('libraryTitle', deep.library_title);
+      setBilingual('libraryIntro', deep.library_intro);
+      document.getElementById('accordionHub').innerHTML = deep.sections.map((sec, idx) => `
+        <details class="dp-collapse" id="dp-sec-${sec.id}"${idx === 0 ? ' open' : ''}>
+          <summary>
+            <span class="dp-sum-icon">${sec.icon}</span>
+            <span data-lang="es">${sec.title.es}</span>
+            <span data-lang="en" style="display:none">${sec.title.en}</span>
+            <span class="dp-sum-sub">
+              <span data-lang="es">${sec.summary.es}</span>
+              <span data-lang="en" style="display:none">${sec.summary.en}</span>
+            </span>
+          </summary>
+          <div class="dp-collapse-body">
+            ${sec.blocks.map(renderBlock).join('')}
+          </div>
+        </details>
+      `).join('');
+    }
 
     function renderInvocation(invocation) {
       document.getElementById('invocationPrayer').innerHTML = `
@@ -498,119 +560,10 @@
       `;
     }
 
-    function renderMediatorIntercessor(mi) {
-      document.getElementById('miIntro').innerHTML = `
-        <span data-lang="es">${mi.intro.es}</span>
-        <span data-lang="en" style="display:none">${mi.intro.en}</span>
-      `;
-      document.getElementById('miRoles').innerHTML = mi.roles.map(r => `
-        <div class="dp-role-card">
-          <div class="dp-role-label">
-            <span data-lang="es">${r.label.es}</span>
-            <span data-lang="en" style="display:none">${r.label.en}</span>
-          </div>
-          <h3 class="dp-role-who">
-            <span data-lang="es">${r.who.es}</span>
-            <span data-lang="en" style="display:none">${r.who.en}</span>
-          </h3>
-          <p class="dp-role-does">
-            <span data-lang="es">${r.does.es}</span>
-            <span data-lang="en" style="display:none">${r.does.en}</span>
-          </p>
-          <div class="dp-role-cite">
-            <span data-lang="es">${r.cite.es}</span>
-            <span data-lang="en" style="display:none">${r.cite.en}</span>
-          </div>
-        </div>
-      `).join('');
-      document.getElementById('miSummary').innerHTML = `
-        <span data-lang="es">${mi.summary.es}</span>
-        <span data-lang="en" style="display:none">${mi.summary.en}</span>
-      `;
-    }
-
-    function renderTeaching(items) {
-      const grid = document.getElementById('teachingGrid');
-      grid.innerHTML = items.map(t => `
-        <div class="dp-attr-card">
-          <h3 class="dp-attr-name">
-            <span data-lang="es">${t.title.es}</span>
-            <span data-lang="en" style="display:none">${t.title.en}</span>
-          </h3>
-          <p class="dp-attr-desc">
-            <span data-lang="es">${t.text.es}</span>
-            <span data-lang="en" style="display:none">${t.text.en}</span>
-          </p>
-        </div>
-      `).join('');
-    }
-
-    function renderKnowingFather(k) {
-      setBilingual('struggleTitle', k.struggle.title);
-      setBilingual('struggleIntro', k.struggle.intro);
-      document.getElementById('struggleReasons').innerHTML = k.struggle.reasons.map(r => `
-        <div class="dp-list-item">• <span data-lang="es">${r.es}</span><span data-lang="en" style="display:none">${r.en}</span></div>
-      `).join('');
-      setBilingual('struggleHope', k.struggle.hope);
-
-      setBilingual('portraitsTitle', k.portraits.title);
-      setBilingual('portraitsSubtitle', k.portraits.subtitle);
-      document.getElementById('portraitsGrid').innerHTML = k.portraits.scenes.map(s => `
-        <div class="dp-scene-card">
-          <h3 class="dp-scene-title"><span data-lang="es">${s.title.es}</span><span data-lang="en" style="display:none">${s.title.en}</span></h3>
-          <p class="dp-scene-text"><span data-lang="es">${s.text.es}</span><span data-lang="en" style="display:none">${s.text.en}</span></p>
-          <div class="dp-role-cite"><span data-lang="es">${s.cite.es}</span><span data-lang="en" style="display:none">${s.cite.en}</span></div>
-        </div>
-      `).join('');
-
-      setBilingual('likesTitle', k.what_he_likes.title);
-      document.getElementById('likesList').innerHTML = k.what_he_likes.items.map(i => `
-        <div class="dp-list-item">• <span data-lang="es">${i.es}</span><span data-lang="en" style="display:none">${i.en}</span></div>
-      `).join('');
-
-      setBilingual('expectsTitle', k.what_he_expects.title);
-      setBilingual('expectsIntro', k.what_he_expects.intro);
-      document.getElementById('expectsList').innerHTML = k.what_he_expects.items.map(i => `
-        <div class="dp-list-item">• <span data-lang="es">${i.es}</span><span data-lang="en" style="display:none">${i.en}</span></div>
-      `).join('');
-
-      setBilingual('stepsTitle', k.first_steps.title);
-      document.getElementById('stepsList').innerHTML = k.first_steps.steps.map((s, i) => `
-        <div class="dp-list-item"><span class="dp-step-num">${i + 1}</span><span data-lang="es">${s.es}</span><span data-lang="en" style="display:none">${s.en}</span></div>
-      `).join('');
-
-      setBilingual('startersTitle', k.conversation_starters.title);
-      setBilingual('startersSubtitle', k.conversation_starters.subtitle);
-      document.getElementById('startersList').innerHTML = k.conversation_starters.phrases.map(p => `
-        <div class="dp-phrase"><span data-lang="es">${p.es}</span><span data-lang="en" style="display:none">${p.en}</span></div>
-      `).join('');
-
-      setBilingual('letterTitle', k.letter.title);
-      document.getElementById('letterText').innerHTML = `
-        <span data-lang="es" style="white-space:pre-line">${k.letter.text.es}</span>
-        <span data-lang="en" style="display:none;white-space:pre-line">${k.letter.text.en}</span>
-      `;
-    }
-
     function setBilingual(id, obj) {
       const el = document.getElementById(id);
       if (!el || !obj) return;
       el.innerHTML = `<span data-lang="es">${obj.es}</span><span data-lang="en" style="display:none">${obj.en}</span>`;
-    }
-
-    function renderAttributes(attrs) {
-      document.getElementById('attrsGrid').innerHTML = attrs.map(a => `
-        <div class="dp-attr-card">
-          <h3 class="dp-attr-name">
-            <span data-lang="es">${a.name.es}</span>
-            <span data-lang="en" style="display:none">${a.name.en}</span>
-          </h3>
-          <p class="dp-attr-desc">
-            <span data-lang="es">${a.desc.es}</span>
-            <span data-lang="en" style="display:none">${a.desc.en}</span>
-          </p>
-        </div>
-      `).join('');
     }
 
     function renderPrayer(id, prayer) {
