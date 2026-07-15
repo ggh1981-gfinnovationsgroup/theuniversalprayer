@@ -323,6 +323,32 @@
       padding: 0 1.1rem 1.1rem;
       border-top: 1px solid rgba(201,168,76,0.12);
     }
+    details.dp-collapse-inner {
+      margin: 0.5rem 0 0;
+      border-color: rgba(201,168,76,0.14);
+      background: rgba(255,255,255,0.02);
+      border-radius: 10px;
+    }
+    details.dp-collapse-inner summary {
+      padding: 0.7rem 0.9rem;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.82);
+    }
+    details.dp-collapse-inner .dp-collapse-body {
+      padding: 0 0.9rem 0.9rem;
+    }
+    details.dp-collapse-inner .dp-scripture {
+      margin: 0.5rem 0 0;
+      font-size: 0.88rem;
+    }
+    .dp-collapse-group-label {
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(201,168,76,0.7);
+      margin: 0.75rem 0 0.35rem;
+    }
     .dp-block-p {
       font-family: var(--font-sans);
       font-size: 0.88rem;
@@ -393,88 +419,115 @@
   <main class="dp-content">
 
     <section class="dp-section">
-      <h2 class="dp-section-title" data-lang="es">¿Por qué orar al Padre?</h2>
-      <h2 class="dp-section-title" data-lang="en" style="display:none">Why pray to the Father?</h2>
+      <details class="dp-collapse">
+        <summary>
+          <span class="dp-sum-icon">📖</span>
+          <span data-lang="es">¿Por qué orar al Padre?</span>
+          <span data-lang="en" style="display:none">Why pray to the Father?</span>
+          <span class="dp-sum-sub">
+            <span data-lang="es">5 textos bíblicos + enseñanza de la Iglesia</span>
+            <span data-lang="en" style="display:none">5 Scripture passages + Church teaching</span>
+          </span>
+        </summary>
+        <div class="dp-collapse-body">
+          <p class="dp-collapse-group-label" data-lang="es">Escrituras</p>
+          <p class="dp-collapse-group-label" data-lang="en" style="display:none">Scripture</p>
 
-      <blockquote class="dp-scripture" data-lang="es">
-        Ustedes deben orar así: Padre nuestro que estás en el cielo, santificado sea tu nombre; venga a nosotros tu Reino; hágase tu voluntad en la tierra como en el cielo.
-        <cite>— Mateo 6, 9-10 (Biblia Latinoamericana)</cite>
-      </blockquote>
-      <blockquote class="dp-scripture" data-lang="en" style="display:none">
-        "This is how you are to pray: Our Father in heaven, hallowed be your name, your kingdom come, your will be done, on earth as in heaven."
-        <cite>— Matthew 6:9-10 (NABRE)</cite>
-      </blockquote>
+          <details class="dp-collapse dp-collapse-inner">
+            <summary><span data-lang="es">Mateo 6, 9-10</span><span data-lang="en" style="display:none">Matthew 6:9-10</span></summary>
+            <div class="dp-collapse-body">
+              <blockquote class="dp-scripture" data-lang="es">Ustedes deben orar así: Padre nuestro que estás en el cielo, santificado sea tu nombre; venga a nosotros tu Reino; hágase tu voluntad en la tierra como en el cielo.<cite>— Mateo 6, 9-10 (BLA)</cite></blockquote>
+              <blockquote class="dp-scripture" data-lang="en" style="display:none">"This is how you are to pray: Our Father in heaven, hallowed be your name, your kingdom come, your will be done, on earth as in heaven."<cite>— Matthew 6:9-10 (NABRE)</cite></blockquote>
+            </div>
+          </details>
+          <details class="dp-collapse dp-collapse-inner">
+            <summary><span data-lang="es">Juan 14, 6</span><span data-lang="en" style="display:none">John 14:6</span></summary>
+            <div class="dp-collapse-body">
+              <blockquote class="dp-scripture" data-lang="es">Jesús le dijo: —Yo soy el camino, la verdad y la vida; nadie viene al Padre sino por mí.<cite>— Juan 14, 6 (BLA)</cite></blockquote>
+              <blockquote class="dp-scripture" data-lang="en" style="display:none">Jesus said to him, "I am the way and the truth and the life. No one comes to the Father except through me."<cite>— John 14:6 (NABRE)</cite></blockquote>
+            </div>
+          </details>
+          <details class="dp-collapse dp-collapse-inner">
+            <summary><span data-lang="es">1 Timoteo 2, 5</span><span data-lang="en" style="display:none">1 Timothy 2:5</span></summary>
+            <div class="dp-collapse-body">
+              <blockquote class="dp-scripture" data-lang="es">Porque hay un solo Dios, y también un solo mediador entre Dios y los hombres: Jesucristo hombre, que se entregó a sí mismo en rescate por todos.<cite>— 1 Timoteo 2, 5 (BLA)</cite></blockquote>
+              <blockquote class="dp-scripture" data-lang="en" style="display:none">For there is one God. There is also one mediator between God and the human race, Christ Jesus, himself human, who gave himself as ransom for all.<cite>— 1 Timothy 2:5 (NABRE)</cite></blockquote>
+            </div>
+          </details>
+          <details class="dp-collapse dp-collapse-inner">
+            <summary><span data-lang="es">Efesios 2, 18</span><span data-lang="en" style="display:none">Ephesians 2:18</span></summary>
+            <div class="dp-collapse-body">
+              <blockquote class="dp-scripture" data-lang="es">Porque por medio de él nosotros, los judíos y los paganos, tenemos en un mismo Espíritu acceso al Padre.<cite>— Efesios 2, 18 (BLA)</cite></blockquote>
+              <blockquote class="dp-scripture" data-lang="en" style="display:none">For through him we both have access in one Spirit to the Father.<cite>— Ephesians 2:18 (NABRE)</cite></blockquote>
+            </div>
+          </details>
+          <details class="dp-collapse dp-collapse-inner">
+            <summary><span data-lang="es">Lucas 11, 1-4</span><span data-lang="en" style="display:none">Luke 11:1-4</span></summary>
+            <div class="dp-collapse-body">
+              <blockquote class="dp-scripture" data-lang="es">Un día, Jesús estaba orando en cierto lugar. Cuando terminó, uno de sus discípulos le dijo: —Señor, enséñanos a orar, como Juan enseñó a sus discípulos. Él les dijo: —Cuando oren, digan: Padre, santificado sea tu nombre; venga tu Reino; danos cada día el pan que necesitamos; perdónanos nuestros pecados, porque también nosotros perdonamos a todo el que nos ofende; y no nos dejes caer en la tentación.<cite>— Lucas 11, 1-4 (BLA)</cite></blockquote>
+              <blockquote class="dp-scripture" data-lang="en" style="display:none">He was praying in a certain place, and when he had finished, one of his disciples said to him, "Lord, teach us to pray just as John taught his disciples." He said to them, "When you pray, say: Father, hallowed be your name, your kingdom come. Give us each day our daily bread and forgive us our sins for we ourselves forgive everyone in debt to us, and do not subject us to the final test."<cite>— Luke 11:1-4 (NABRE)</cite></blockquote>
+            </div>
+          </details>
 
-      <blockquote class="dp-scripture" data-lang="es">
-        Jesús le dijo: —Yo soy el camino, la verdad y la vida; nadie viene al Padre sino por mí.
-        <cite>— Juan 14, 6 (Biblia Latinoamericana)</cite>
-      </blockquote>
-      <blockquote class="dp-scripture" data-lang="en" style="display:none">
-        Jesus said to him, "I am the way and the truth and the life. No one comes to the Father except through me."
-        <cite>— John 14:6 (NABRE)</cite>
-      </blockquote>
-
-      <blockquote class="dp-scripture" data-lang="es">
-        Porque hay un solo Dios, y también un solo mediador entre Dios y los hombres: Jesucristo hombre, que se entregó a sí mismo en rescate por todos.
-        <cite>— 1 Timoteo 2, 5 (Biblia Latinoamericana)</cite>
-      </blockquote>
-      <blockquote class="dp-scripture" data-lang="en" style="display:none">
-        For there is one God. There is also one mediator between God and the human race, Christ Jesus, himself human, who gave himself as ransom for all.
-        <cite>— 1 Timothy 2:5 (NABRE)</cite>
-      </blockquote>
-
-      <blockquote class="dp-scripture" data-lang="es">
-        Porque por medio de él nosotros, los judíos y los paganos, tenemos en un mismo Espíritu acceso al Padre.
-        <cite>— Efesios 2, 18 (Biblia Latinoamericana)</cite>
-      </blockquote>
-      <blockquote class="dp-scripture" data-lang="en" style="display:none">
-        For through him we both have access in one Spirit to the Father.
-        <cite>— Ephesians 2:18 (NABRE)</cite>
-      </blockquote>
-
-      <blockquote class="dp-scripture" data-lang="es">
-        Un día, Jesús estaba orando en cierto lugar. Cuando terminó, uno de sus discípulos le dijo: —Señor, enséñanos a orar, como Juan enseñó a sus discípulos. Él les dijo: —Cuando oren, digan: Padre, santificado sea tu nombre; venga tu Reino; danos cada día el pan que necesitamos; perdónanos nuestros pecados, porque también nosotros perdonamos a todo el que nos ofende; y no nos dejes caer en la tentación.
-        <cite>— Lucas 11, 1-4 (Biblia Latinoamericana)</cite>
-      </blockquote>
-      <blockquote class="dp-scripture" data-lang="en" style="display:none">
-        He was praying in a certain place, and when he had finished, one of his disciples said to him, "Lord, teach us to pray just as John taught his disciples." He said to them, "When you pray, say: Father, hallowed be your name, your kingdom come. Give us each day our daily bread and forgive us our sins for we ourselves forgive everyone in debt to us, and do not subject us to the final test."
-        <cite>— Luke 11:1-4 (NABRE)</cite>
-      </blockquote>
-
-      <div class="dp-note" data-lang="es">
-        La Iglesia enseña que la oración cristiana se dirige al Padre, por Cristo y en el Espíritu Santo (CIC 2591). Orar a Jesús, a María o a los santos no contradice esto: ellos interceden <em>por</em> nosotros; Cristo es el <em>único</em> Mediador que nos une con el Padre. Textos bíblicos: Biblia Latinoamericana (BLA).
-      </div>
-      <div class="dp-note" data-lang="en" style="display:none">
-        The Church teaches that Christian prayer is addressed to the Father, through Christ and in the Holy Spirit (CCC 2591). Praying to Jesus, Mary, or the saints does not contradict this: they intercede <em>for</em> us; Christ is the <em>only</em> Mediator who unites us with the Father. Scripture texts: NABRE (New American Bible Revised Edition).
-      </div>
+          <div class="dp-note" data-lang="es" style="margin-top:1rem">
+            La Iglesia enseña que la oración cristiana se dirige al Padre, por Cristo y en el Espíritu Santo (CIC 2591). Orar a Jesús, a María o a los santos no contradice esto: ellos interceden <em>por</em> nosotros; Cristo es el <em>único</em> Mediador que nos une con el Padre. Textos bíblicos: Biblia Latinoamericana (BLA).
+          </div>
+          <div class="dp-note" data-lang="en" style="display:none;margin-top:1rem">
+            The Church teaches that Christian prayer is addressed to the Father, through Christ and in the Holy Spirit (CCC 2591). Praying to Jesus, Mary, or the saints does not contradict this: they intercede <em>for</em> us; Christ is the <em>only</em> Mediator who unites us with the Father. Scripture texts: NABRE (New American Bible Revised Edition).
+          </div>
+        </div>
+      </details>
     </section>
 
     <section class="dp-section">
-      <h2 class="dp-section-title" data-lang="es">El Padre Nuestro</h2>
-      <h2 class="dp-section-title" data-lang="en" style="display:none">The Our Father</h2>
-      <p class="dp-invocation" id="invocationPrayer"></p>
+      <details class="dp-collapse">
+        <summary>
+          <span class="dp-sum-icon">📿</span>
+          <span data-lang="es">El Padre Nuestro</span>
+          <span data-lang="en" style="display:none">The Our Father</span>
+          <span class="dp-sum-sub">
+            <span data-lang="es">La oración que Jesús enseñó</span>
+            <span data-lang="en" style="display:none">The prayer Jesus taught</span>
+          </span>
+        </summary>
+        <div class="dp-collapse-body">
+          <p class="dp-invocation" id="invocationPrayer"></p>
+        </div>
+      </details>
     </section>
 
     <section class="dp-section" id="librarySection">
       <h2 class="dp-section-title" id="libraryTitle"></h2>
       <p class="dp-section-lead" id="libraryIntro"></p>
       <div id="accordionHub"></div>
-      <p class="dp-library-note" data-lang="es">Toca cada sección para abrir. Puedes volver cuando quieras.</p>
-      <p class="dp-library-note" data-lang="en" style="display:none">Tap each section to open. Come back whenever you want.</p>
+      <p class="dp-library-note" data-lang="es">Toca cada sección para abrir. Dentro hay más niveles — por ejemplo, cada día de los 30. Puedes volver cuando quieras.</p>
+      <p class="dp-library-note" data-lang="en" style="display:none">Tap each section to open. There are nested levels inside — for example, each of the 30 days. Come back whenever you want.</p>
     </section>
 
     <section class="dp-section">
-      <h2 class="dp-section-title" data-lang="es">Oración personal al Padre</h2>
-      <h2 class="dp-section-title" data-lang="en" style="display:none">Personal prayer to the Father</h2>
-
-      <div class="dp-prayer-box" id="personalPrayer"></div>
+      <details class="dp-collapse">
+        <summary>
+          <span class="dp-sum-icon">🙏</span>
+          <span data-lang="es">Oración personal al Padre</span>
+          <span data-lang="en" style="display:none">Personal prayer to the Father</span>
+        </summary>
+        <div class="dp-collapse-body">
+          <div class="dp-prayer-box" id="personalPrayer"></div>
+        </div>
+      </details>
     </section>
 
     <section class="dp-section">
-      <h2 class="dp-section-title" data-lang="es">Oración de cierre</h2>
-      <h2 class="dp-section-title" data-lang="en" style="display:none">Closing prayer</h2>
-
-      <div class="dp-prayer-box" id="closingPrayer"></div>
+      <details class="dp-collapse">
+        <summary>
+          <span class="dp-sum-icon">✝</span>
+          <span data-lang="es">Oración de cierre</span>
+          <span data-lang="en" style="display:none">Closing prayer</span>
+        </summary>
+        <div class="dp-collapse-body">
+          <div class="dp-prayer-box" id="closingPrayer"></div>
+        </div>
+      </details>
     </section>
 
     <div style="margin-top: 3rem; text-align: center;">
@@ -507,25 +560,54 @@
       return `<span data-lang="es">${es}</span><span data-lang="en" style="display:none">${en}</span>`;
     }
 
-    function renderBlock(block) {
+    function renderScripture(block, nested) {
+      const inner = `<blockquote class="dp-scripture">${bi(block.es, block.en)}<cite>${bi(block.cite.es, block.cite.en)}</cite></blockquote>`;
+      if (!nested) return inner;
+      return `<details class="dp-collapse dp-collapse-inner">
+        <summary>${bi(block.cite.es, block.cite.en)}</summary>
+        <div class="dp-collapse-body">${inner}</div>
+      </details>`;
+    }
+
+    function renderSub(block) {
+      let body = `<p class="dp-block-p">${bi(block.es, block.en)}</p>`;
+      if (block.scripture) {
+        body += renderScripture(block.scripture, false);
+      }
+      return `<details class="dp-collapse dp-collapse-inner">
+        <summary>${bi(block.title.es, block.title.en)}</summary>
+        <div class="dp-collapse-body">${body}</div>
+      </details>`;
+    }
+
+    function renderBlock(block, opts) {
+      const nested = opts && opts.nestedScripture;
       if (block.type === 'p') {
         return `<p class="dp-block-p">${bi(block.es, block.en)}</p>`;
       }
       if (block.type === 'scripture') {
-        return `<blockquote class="dp-scripture">${bi(block.es, block.en)}<cite>${bi(block.cite.es, block.cite.en)}</cite></blockquote>`;
+        return renderScripture(block, nested);
       }
       if (block.type === 'sub') {
-        let html = `<h4 class="dp-block-sub-title">${bi(block.title.es, block.title.en)}</h4><p class="dp-block-p">${bi(block.es, block.en)}</p>`;
-        if (block.scripture) {
-          html += `<blockquote class="dp-scripture">${bi(block.scripture.es, block.scripture.en)}<cite>${bi(block.scripture.cite.es, block.scripture.cite.en)}</cite></blockquote>`;
-        }
-        return html;
+        return renderSub(block);
       }
       if (block.type === 'letter') {
         return `<div class="dp-letter">${bi(block.es, block.en)}</div>`;
       }
       if (block.type === 'list') {
         const title = block.title ? `<h4 class="dp-block-sub-title">${bi(block.title.es, block.title.en)}</h4>` : '';
+        if (block.collapsible) {
+          const items = block.items.map((i, idx) => {
+            const sumEs = i.title ? i.title.es : `${idx + 1}. ${i.es}`;
+            const sumEn = i.title ? i.title.en : `${idx + 1}. ${i.en}`;
+            return `
+            <details class="dp-collapse dp-collapse-inner">
+              <summary>${bi(sumEs, sumEn)}</summary>
+              <div class="dp-collapse-body"><p class="dp-block-p">${bi(i.es, i.en)}</p></div>
+            </details>`;
+          }).join('');
+          return `${title}${items}`;
+        }
         const items = block.items.map(i => `<li>${bi(i.es, i.en)}</li>`).join('');
         return `${title}<ul class="dp-block-list">${items}</ul>`;
       }
@@ -535,8 +617,8 @@
     function renderLibrary(deep) {
       setBilingual('libraryTitle', deep.library_title);
       setBilingual('libraryIntro', deep.library_intro);
-      document.getElementById('accordionHub').innerHTML = deep.sections.map((sec, idx) => `
-        <details class="dp-collapse" id="dp-sec-${sec.id}"${idx === 0 ? ' open' : ''}>
+      document.getElementById('accordionHub').innerHTML = deep.sections.map((sec) => `
+        <details class="dp-collapse" id="dp-sec-${sec.id}">
           <summary>
             <span class="dp-sum-icon">${sec.icon}</span>
             <span data-lang="es">${sec.title.es}</span>
@@ -547,7 +629,7 @@
             </span>
           </summary>
           <div class="dp-collapse-body">
-            ${sec.blocks.map(renderBlock).join('')}
+            ${sec.blocks.map(b => renderBlock(b, { nestedScripture: true })).join('')}
           </div>
         </details>
       `).join('');

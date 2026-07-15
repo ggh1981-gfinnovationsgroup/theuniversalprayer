@@ -201,7 +201,7 @@
       "title": { "es": "21 frases para empezar la conversación", "en": "21 phrases to start the conversation" },
       "summary": { "es": "Elige una. Dila en voz alta. El Padre escucha.", "en": "Choose one. Say it aloud. The Father listens." },
       "blocks": [
-        { "type": "list", "items": [
+        { "type": "list", "collapsible": true, "items": [
           { "es": "«Padre, no te conozco bien. Quiero conocerte. Enséñame.»", "en": "\"Father, I do not know You well. I want to know You. Teach me.\"" },
           { "es": "«Padre, me cuesta hablarte. Quédate conmigo en este silencio.»", "en": "\"Father, it is hard for me to speak to You. Stay with me in this silence.\"" },
           { "es": "«Padre, tengo miedo de defraudarte. Recuérdame que soy tu hijo.»", "en": "\"Father, I fear disappointing You. Remind me I am Your child.\"" },
