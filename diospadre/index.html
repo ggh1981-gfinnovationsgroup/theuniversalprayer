@@ -164,6 +164,55 @@
       transition: opacity 0.2s;
     }
     .dp-home-link:hover { opacity: 1; }
+    .dp-role-card {
+      background: rgba(201,168,76,0.06);
+      border: 1px solid rgba(201,168,76,0.22);
+      border-radius: 12px;
+      padding: 1.25rem 1.35rem;
+      margin-bottom: 1rem;
+    }
+    .dp-role-label {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(201,168,76,0.35);
+      padding: 0.2em 0.65em;
+      border-radius: 14px;
+      margin-bottom: 0.55rem;
+    }
+    .dp-role-who {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      color: var(--gold-light);
+      margin: 0 0 0.55rem;
+    }
+    .dp-role-does {
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.74);
+      line-height: 1.7;
+      margin: 0 0 0.5rem;
+    }
+    .dp-role-cite {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      color: var(--gold);
+      opacity: 0.85;
+    }
+    .dp-summary {
+      margin-top: 1.25rem;
+      padding: 1.1rem 1.25rem;
+      background: rgba(201,168,76,0.09);
+      border: 1px solid rgba(201,168,76,0.28);
+      border-radius: 10px;
+      font-family: var(--font-serif);
+      font-size: 0.98rem;
+      color: rgba(255,255,255,0.88);
+      line-height: 1.75;
+    }
   </style>
 </head>
 <body>
@@ -250,6 +299,15 @@
     </section>
 
     <section class="dp-section">
+      <h2 class="dp-section-title" data-lang="es">Mediador vs Intercesor</h2>
+      <h2 class="dp-section-title" data-lang="en" style="display:none">Mediator vs Intercessor</h2>
+
+      <p class="dp-note" id="miIntro" style="margin-bottom: 1.5rem;"></p>
+      <div id="miRoles"></div>
+      <div class="dp-summary" id="miSummary"></div>
+    </section>
+
+    <section class="dp-section">
       <h2 class="dp-section-title" data-lang="es">Lo que enseña la Iglesia</h2>
       <h2 class="dp-section-title" data-lang="en" style="display:none">What the Church teaches</h2>
 
@@ -311,6 +369,7 @@
       .then(r => r.json())
       .then(data => {
         renderInvocation(data.invocation);
+        renderMediatorIntercessor(data.mediator_intercessor);
         renderTeaching(data.church_teaching);
         renderAttributes(data.attributes);
         renderPrayer('personalPrayer', data.personal_prayer);
@@ -322,6 +381,37 @@
       document.getElementById('invocationPrayer').innerHTML = `
         <span data-lang="es" style="white-space:pre-line">${invocation.es}</span>
         <span data-lang="en" style="display:none;white-space:pre-line">${invocation.en}</span>
+      `;
+    }
+
+    function renderMediatorIntercessor(mi) {
+      document.getElementById('miIntro').innerHTML = `
+        <span data-lang="es">${mi.intro.es}</span>
+        <span data-lang="en" style="display:none">${mi.intro.en}</span>
+      `;
+      document.getElementById('miRoles').innerHTML = mi.roles.map(r => `
+        <div class="dp-role-card">
+          <div class="dp-role-label">
+            <span data-lang="es">${r.label.es}</span>
+            <span data-lang="en" style="display:none">${r.label.en}</span>
+          </div>
+          <h3 class="dp-role-who">
+            <span data-lang="es">${r.who.es}</span>
+            <span data-lang="en" style="display:none">${r.who.en}</span>
+          </h3>
+          <p class="dp-role-does">
+            <span data-lang="es">${r.does.es}</span>
+            <span data-lang="en" style="display:none">${r.does.en}</span>
+          </p>
+          <div class="dp-role-cite">
+            <span data-lang="es">${r.cite.es}</span>
+            <span data-lang="en" style="display:none">${r.cite.en}</span>
+          </div>
+        </div>
+      `).join('');
+      document.getElementById('miSummary').innerHTML = `
+        <span data-lang="es">${mi.summary.es}</span>
+        <span data-lang="en" style="display:none">${mi.summary.en}</span>
       `;
     }
 

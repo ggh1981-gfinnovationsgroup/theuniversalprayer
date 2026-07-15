@@ -39,6 +39,45 @@
       }
     }
   ],
+  "mediator_intercessor": {
+    "intro": {
+      "es": "No es lo mismo. La Iglesia usa palabras precisas para no confundir a quién oramos y cómo llegamos a Dios.",
+      "en": "They are not the same. The Church uses precise words so we do not confuse whom we pray to and how we reach God."
+    },
+    "roles": [
+      {
+        "label": { "es": "Mediador", "en": "Mediator" },
+        "who": { "es": "Solo Jesucristo", "en": "Jesus Christ alone" },
+        "does": {
+          "es": "Cierra la distancia entre Dios y el hombre. Su Cruz nos reconcilia. Abre el camino al Padre. Sin Él, no hay acceso.",
+          "en": "He closes the distance between God and humanity. His Cross reconciles us. He opens the way to the Father. Without Him, there is no access."
+        },
+        "cite": { "es": "1 Tim 2, 5 · Jn 14, 6 · Hb 9, 15", "en": "1 Tim 2:5 · Jn 14:6 · Heb 9:15" }
+      },
+      {
+        "label": { "es": "Intercesor", "en": "Intercessor" },
+        "who": { "es": "María, los santos, los ángeles", "en": "Mary, the saints, the angels" },
+        "does": {
+          "es": "Ruegan por nosotros ante Dios. No reemplazan a Cristo: participan en su mediación dentro de la comunión de la Iglesia.",
+          "en": "They pray for us before God. They do not replace Christ: they share in His mediation within the communion of the Church."
+        },
+        "cite": { "es": "CIC 962 · 969 · Rom 8, 34", "en": "CCC 962 · 969 · Rom 8:34" }
+      },
+      {
+        "label": { "es": "A quien se dirige la oración", "en": "To whom prayer is addressed" },
+        "who": { "es": "Dios Padre", "en": "God the Father" },
+        "does": {
+          "es": "No intercede ni media: es el destino de la oración cristiana. Lo escuchamos por Cristo, en el Espíritu Santo. Orar al Padre no divide la Trinidad: glorificamos al Padre, al Hijo y al Espíritu (CIC 2789).",
+          "en": "He does not intercede or mediate: He is the goal of Christian prayer. We reach Him through Christ, in the Holy Spirit. Praying to the Father does not divide the Trinity: we glorify Father, Son, and Spirit (CCC 2789)."
+        },
+        "cite": { "es": "CIC 2591 · 2789 · Ef 2, 18", "en": "CCC 2591 · 2789 · Eph 2:18" }
+      }
+    ],
+    "summary": {
+      "es": "En una frase: Cristo es el puente; los santos nos acompañan rogando por nosotros; el Padre nos escucha como hijos — siempre por Jesús.",
+      "en": "In one sentence: Christ is the bridge; the saints accompany us by praying for us; the Father hears us as children — always through Jesus."
+    }
+  },
   "attributes": [
     {
       "name": { "es": "Padre revelado por el Hijo", "en": "Father revealed by the Son" },
