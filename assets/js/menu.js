@@ -41,6 +41,7 @@
     { id: 'adoracion', href: '/adoracion/', labels: { es: 'Adoración', en: 'Adoration' }, icon: '✝' },
     { id: 'desierto', href: '/desierto/', labels: { es: 'Silencio y Escucha', en: 'Silence & Listening' }, icon: '🏕️' },
     { id: 'difuntos', href: '/difuntos/', labels: { es: 'Difuntos', en: 'Departed' }, icon: '🕯️' },
+    { id: 'diospadre', href: '/diospadre/', labels: { es: 'Dios Padre', en: 'God the Father' }, icon: '☁️' },
     { id: 'enemigos', href: '/enemigos/', labels: { es: 'Bendecir enemigos', en: 'Bless enemies' }, icon: '🤍' },
     { id: 'espiritu', href: '/espiritu/', labels: { es: 'Espíritu Santo', en: 'Holy Spirit' }, icon: '🕊️' },
     { id: 'llamados', href: '/llamados/', labels: { es: 'Altar de Llamados', en: 'Call Altar' }, icon: '🌟' },

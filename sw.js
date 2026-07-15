@@ -3,7 +3,7 @@
    Cache-first strategy: works fully offline after first load
    ===================================================== */
 
-const CACHE = 'tup-v76';
+const CACHE = 'tup-v77';
 
 // All files to pre-cache on install
 const PRECACHE_URLS = [
@@ -30,6 +30,14 @@ const PRECACHE_URLS = [
   '/assets/images/social-llamados.png',
   '/assets/images/social-enemigos.png',
   '/assets/images/social-espiritu.png',
+  '/espiritu/',
+  '/espiritu/index.html',
+  '/assets/images/espiritu.svg',
+  '/data/espiritu.json',
+  '/diospadre/',
+  '/diospadre/index.html',
+  '/assets/images/diospadre.svg',
+  '/data/diospadre.json',
   '/enemigos/',
   '/enemigos/index.html',
   '/meses/',

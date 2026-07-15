@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dios Padre | The Universal Prayer</title>
+  <meta name="description" content="Orar al Padre celestial directamente. El Padre Nuestro, oraciones personales y guía para hablar con Dios Padre — no como intercesor, sino como Tu Padre." />
+  <meta name="theme-color" content="#c9a84c" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dios Padre — Orar al Padre Celestial" />
+  <meta property="og:description" content="Jesús nos enseñó a decir Padre Nuestro. Aquí encontrarás cómo hablar con Dios Padre directamente, con ternura y confianza." />
+  <meta property="og:url" content="https://www.theuniversalprayer.com/diospadre/" />
+  <meta property="og:image" content="https://www.theuniversalprayer.com/assets/images/diospadre.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dios Padre — Orar al Padre Celestial" />
+  <meta name="twitter:description" content="Oración directa al Padre. El Padre Nuestro, sus atributos y oración personal." />
+  <meta name="twitter:image" content="https://www.theuniversalprayer.com/assets/images/diospadre.svg" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="apple-touch-icon" href="/assets/images/icon.svg" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23c9a84c'>✝</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    .dp-hero {
+      text-align: center;
+      padding: 5rem 1.5rem 3rem;
+      background: radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.16) 0%, transparent 72%);
+    }
+    .dp-symbol {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 1.5rem;
+      display: block;
+      filter: drop-shadow(0 0 22px rgba(201,168,76,0.5));
+      animation: dp-float 4.5s ease-in-out infinite;
+    }
+    @keyframes dp-float {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(-6px); }
+    }
+    .dp-badge {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(201,168,76,0.3);
+      padding: 0.3em 0.9em;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+    }
+    .dp-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 6vw, 3.4rem);
+      color: #fff;
+      margin: 0 0 0.75rem;
+      line-height: 1.12;
+    }
+    .dp-subtitle {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.62);
+      max-width: 540px;
+      margin: 0 auto;
+      line-height: 1.75;
+    }
+    .dp-content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+    .dp-section { margin-bottom: 3rem; }
+    .dp-section-title {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      color: var(--gold-light);
+      margin: 0 0 1.25rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+    }
+    .dp-invocation {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.9);
+      line-height: 2;
+      white-space: pre-line;
+    }
+    .dp-attrs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 560px) {
+      .dp-attrs-grid { grid-template-columns: 1fr; }
+    }
+    .dp-attr-card {
+      background: rgba(201,168,76,0.06);
+      border: 1px solid rgba(201,168,76,0.18);
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+    }
+    .dp-attr-name {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      color: var(--gold-light);
+      margin: 0 0 0.5rem;
+    }
+    .dp-attr-desc {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.65;
+      margin: 0;
+    }
+    .dp-scripture {
+      border-left: 3px solid rgba(201,168,76,0.45);
+      padding: 0.75rem 1.25rem;
+      margin: 1.5rem 0;
+      font-family: var(--font-serif);
+      font-style: italic;
+      color: rgba(255,255,255,0.82);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+    .dp-scripture cite {
+      display: block;
+      font-size: 0.75rem;
+      font-style: normal;
+      color: var(--gold);
+      margin-top: 0.4rem;
+    }
+    .dp-prayer-box {
+      background: rgba(201,168,76,0.07);
+      border: 1px solid rgba(201,168,76,0.22);
+      border-radius: 12px;
+      padding: 1.75rem 1.5rem;
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      color: rgba(255,255,255,0.88);
+      line-height: 1.9;
+      white-space: pre-line;
+    }
+    .dp-note {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(201,168,76,0.15);
+      border-radius: 10px;
+      padding: 1.25rem 1.35rem;
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.7;
+    }
+    .dp-home-link {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--gold);
+      text-decoration: none;
+      opacity: 0.75;
+      transition: opacity 0.2s;
+    }
+    .dp-home-link:hover { opacity: 1; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link">
+        <span class="cross">✝</span>
+        <span class="logo-text">The Universal Prayer</span>
+      </a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span id="langLabel">EN</span>
+      </button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="dp-hero">
+    <a href="/" class="ador-back-link" id="backLink" data-lang="es">← Inicio</a>
+    <a href="/" class="ador-back-link" data-lang="en" style="display:none">← Home</a>
+
+    <img src="/assets/images/diospadre.svg" alt="Dios Padre" class="dp-symbol" />
+
+    <div class="dp-badge" data-lang="es">☁ Oración directa al Padre</div>
+    <div class="dp-badge" data-lang="en" style="display:none">☁ Direct prayer to the Father</div>
+
+    <h1 class="dp-title" data-lang="es">Dios Padre</h1>
+    <h1 class="dp-title" data-lang="en" style="display:none">God the Father</h1>
+
+    <p class="dp-subtitle" data-lang="es">No es un intercesor: es Tu Padre. Jesús nos enseñó a hablarle directamente — con confianza, ternura y reverencia.</p>
+    <p class="dp-subtitle" data-lang="en" style="display:none">He is not an intercessor: He is your Father. Jesus taught us to speak to Him directly — with trust, tenderness, and reverence.</p>
+  </section>
+
+  <main class="dp-content">
+
+    <section class="dp-section">
+      <h2 class="dp-section-title" data-lang="es">¿Por qué orar al Padre?</h2>
+      <h2 class="dp-section-title" data-lang="en" style="display:none">Why pray to the Father?</h2>
+
+      <blockquote class="dp-scripture" data-lang="es">
+        «Así debéis orar: Padre nuestro que estás en el cielo…»
+        <cite>— Mateo 6, 9</cite>
+      </blockquote>
+      <blockquote class="dp-scripture" data-lang="en" style="display:none">
+        "This is how you should pray: Our Father in heaven…"
+        <cite>— Matthew 6:9</cite>
+      </blockquote>
+
+      <div class="dp-note" data-lang="es">
+        Los santos, la Virgen y los ángeles interceden por nosotros. <strong>Dios Padre no intercede</strong>: Él escucha, ama y responde como Padre. Por Jesucristo tenemos acceso directo a Su corazón.
+      </div>
+      <div class="dp-note" data-lang="en" style="display:none">
+        The saints, Mary, and the angels intercede for us. <strong>God the Father does not intercede</strong>: He listens, loves, and responds as Father. Through Jesus Christ we have direct access to His heart.
+      </div>
+    </section>
+
+    <section class="dp-section">
+      <h2 class="dp-section-title" data-lang="es">El Padre Nuestro</h2>
+      <h2 class="dp-section-title" data-lang="en" style="display:none">The Our Father</h2>
+
+      <p class="dp-invocation" id="invocationPrayer"></p>
+    </section>
+
+    <section class="dp-section">
+      <h2 class="dp-section-title" data-lang="es">Quién es el Padre</h2>
+      <h2 class="dp-section-title" data-lang="en" style="display:none">Who the Father is</h2>
+
+      <blockquote class="dp-scripture" data-lang="es">
+        «Miren qué gran amor nos ha tenido el Padre, que seamos llamados hijos de Dios.»
+        <cite>— 1 Juan 3, 1</cite>
+      </blockquote>
+      <blockquote class="dp-scripture" data-lang="en" style="display:none">
+        "See what great love the Father has lavished on us, that we should be called children of God!"
+        <cite>— 1 John 3:1</cite>
+      </blockquote>
+
+      <div class="dp-attrs-grid" id="attrsGrid"></div>
+    </section>
+
+    <section class="dp-section">
+      <h2 class="dp-section-title" data-lang="es">Oración personal al Padre</h2>
+      <h2 class="dp-section-title" data-lang="en" style="display:none">Personal prayer to the Father</h2>
+
+      <div class="dp-prayer-box" id="personalPrayer"></div>
+    </section>
+
+    <section class="dp-section">
+      <h2 class="dp-section-title" data-lang="es">Oración de cierre</h2>
+      <h2 class="dp-section-title" data-lang="en" style="display:none">Closing prayer</h2>
+
+      <div class="dp-prayer-box" id="closingPrayer"></div>
+    </section>
+
+    <div style="margin-top: 3rem; text-align: center;">
+      <a href="/" class="dp-home-link" data-lang="es">← Volver al inicio</a>
+      <a href="/" class="dp-home-link" data-lang="en" style="display:none">← Back to home</a>
+    </div>
+
+  </main>
+
+  <script>
+  (function () {
+    'use strict';
+
+    const LANG_KEY = 'tup_lang';
+    let lang = localStorage.getItem(LANG_KEY) || 'es';
+
+    fetch('/data/diospadre.json')
+      .then(r => r.json())
+      .then(data => {
+        renderInvocation(data.invocation);
+        renderAttributes(data.attributes);
+        renderPrayer('personalPrayer', data.personal_prayer);
+        renderPrayer('closingPrayer', data.closing_prayer);
+        applyLang(lang);
+      });
+
+    function renderInvocation(invocation) {
+      document.getElementById('invocationPrayer').innerHTML = `
+        <span data-lang="es" style="white-space:pre-line">${invocation.es}</span>
+        <span data-lang="en" style="display:none;white-space:pre-line">${invocation.en}</span>
+      `;
+    }
+
+    function renderAttributes(attrs) {
+      document.getElementById('attrsGrid').innerHTML = attrs.map(a => `
+        <div class="dp-attr-card">
+          <h3 class="dp-attr-name">
+            <span data-lang="es">${a.name.es}</span>
+            <span data-lang="en" style="display:none">${a.name.en}</span>
+          </h3>
+          <p class="dp-attr-desc">
+            <span data-lang="es">${a.desc.es}</span>
+            <span data-lang="en" style="display:none">${a.desc.en}</span>
+          </p>
+        </div>
+      `).join('');
+    }
+
+    function renderPrayer(id, prayer) {
+      document.getElementById(id).innerHTML = `
+        <span data-lang="es" style="white-space:pre-line">${prayer.es}</span>
+        <span data-lang="en" style="display:none;white-space:pre-line">${prayer.en}</span>
+      `;
+    }
+
+    function applyLang(l) {
+      lang = l;
+      localStorage.setItem(LANG_KEY, l);
+      document.documentElement.lang = l === 'en' ? 'en' : 'es';
+      document.getElementById('langLabel').textContent = l === 'en' ? 'ES' : 'EN';
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.dataset.lang === l ? '' : 'none';
+      });
+    }
+
+    document.getElementById('langToggle').addEventListener('click', () => {
+      applyLang(lang === 'es' ? 'en' : 'es');
+      window.dispatchEvent(new CustomEvent('tup:langchange', { detail: lang }));
+    });
+
+    applyLang(lang);
+  })();
+  </script>
+  <script src="../assets/js/menu.js"></script>
+
+</body>
+</html>

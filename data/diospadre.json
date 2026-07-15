@@ -1,0 +1,64 @@
+{
+  "id": "diospadre",
+  "name": {
+    "es": "Dios Padre",
+    "en": "God the Father"
+  },
+  "image": "/assets/images/diospadre.svg",
+  "invocation": {
+    "es": "Padre nuestro que estás en el cielo,\nsantificado sea Tu Nombre;\nvenga a nosotros Tu Reino;\nhágase Tu voluntad en la tierra como en el cielo.\n\nDanos hoy nuestro pan de cada día;\nperdona nuestras ofensas,\ncomo también nosotros perdonamos\na los que nos ofenden;\nno nos dejes caer en la tentación,\ny líbranos del mal.\n\nAmén.",
+    "en": "Our Father, who art in heaven,\nhallowed be Thy Name;\nThy kingdom come;\nThy will be done on earth as it is in heaven.\n\nGive us this day our daily bread;\nand forgive us our trespasses,\nas we forgive those who trespass against us;\nand lead us not into temptation,\nbut deliver us from evil.\n\nAmen."
+  },
+  "attributes": [
+    {
+      "name": { "es": "Padre Amoroso", "en": "Loving Father" },
+      "desc": {
+        "es": "Dios no es un juez distante. Es Padre. Jesús nos enseñó a llamarlo «Padre nuestro» porque quiere una relación íntima contigo, no solo reverencia lejana.",
+        "en": "God is not a distant judge. He is Father. Jesus taught us to call Him \"Our Father\" because He wants an intimate relationship with you, not only distant reverence."
+      }
+    },
+    {
+      "name": { "es": "Providencia", "en": "Providence" },
+      "desc": {
+        "es": "El Padre conoce lo que necesitas antes de que se lo pidas. Cuida de ti como el que cuida a sus hijos: con atención, con detalle, con amor.",
+        "en": "The Father knows what you need before you ask. He cares for you as one cares for children: with attention, with detail, with love."
+      }
+    },
+    {
+      "name": { "es": "Misericordia Paternal", "en": "Fatherly Mercy" },
+      "desc": {
+        "es": "Como el padre del hijo pródigo, el Padre te espera con los brazos abiertos. No importa cuán lejos hayas ido: siempre puedes volver a casa.",
+        "en": "Like the father of the prodigal son, the Father waits for you with open arms. No matter how far you have gone, you can always come home."
+      }
+    },
+    {
+      "name": { "es": "Creador", "en": "Creator" },
+      "desc": {
+        "es": "Tú existes porque Él te quiso. No eres un accidente. El Padre te formó con propósito y te llama por tu nombre.",
+        "en": "You exist because He willed you. You are not an accident. The Father formed you with purpose and calls you by name."
+      }
+    },
+    {
+      "name": { "es": "Abba", "en": "Abba" },
+      "desc": {
+        "es": "«Abba» significa Papá, con confianza y ternura. Por Cristo y el Espíritu Santo, puedes acercarte al Padre con la misma confianza de un hijo que corre a los brazos de su papá.",
+        "en": "\"Abba\" means Daddy, with trust and tenderness. Through Christ and the Holy Spirit, you may approach the Father with the same confidence of a child running into a father's arms."
+      }
+    },
+    {
+      "name": { "es": "Justo y Bueno", "en": "Just and Good" },
+      "desc": {
+        "es": "El Padre es santo y justo, pero su justicia nunca anula su bondad. Todo lo que permite o permite pasar, lo redime en su amor.",
+        "en": "The Father is holy and just, but His justice never cancels His goodness. Everything He allows, He redeems in His love."
+      }
+    }
+  ],
+  "personal_prayer": {
+    "es": "Padre celestial,\n\nTú me conoces antes de que yo te hable.\nTú me amas antes de que yo te ame.\n\nPerdóname por hablar solo a Jesús, a María o a los santos\ny olvidar que Tú también me esperas.\n\nHoy quiero hablarte a Ti, directamente.\nNo porque no necesite a nadie más,\nsino porque Tú eres el origen de todo amor.\n\nPadre, escucha mi corazón:\n[habla aquí lo que llevas dentro]\n\nConfío en Tu voluntad.\nDescanso en Tu providencia.\nMe abrazo a Tu misericordia.\n\nPor Jesucristo, Tu Hijo,\nen unión con el Espíritu Santo.\nAmén.",
+    "en": "Heavenly Father,\n\nYou know me before I speak to You.\nYou love me before I love You.\n\nForgive me for speaking only to Jesus, Mary, or the saints\nand forgetting that You also wait for me.\n\nToday I want to speak to You, directly.\nNot because I need no one else,\nbut because You are the source of all love.\n\nFather, hear my heart:\n[speak here what you carry inside]\n\nI trust Your will.\nI rest in Your providence.\nI embrace Your mercy.\n\nThrough Jesus Christ, Your Son,\nin union with the Holy Spirit.\nAmen."
+  },
+  "closing_prayer": {
+    "es": "Padre nuestro,\n\ngracias por adoptarme en Tu familia.\nGracias por enviar a Tu Hijo para abrirme el camino.\nGracias por el Espíritu Santo que me enseña a decirte «Abba, Padre».\n\nCuando no sepa qué decirte,\nenséñame a quedarme en silencio ante Ti.\nCuando tenga miedo,\nrecuérdame que soy Tu hijo, Tu hija.\nCuando me sienta solo,\nabrázame con Tu providencia.\n\nAmén.",
+    "en": "Our Father,\n\nthank You for adopting me into Your family.\nThank You for sending Your Son to open the way for me.\nThank You for the Holy Spirit who teaches me to say \"Abba, Father.\"\n\nWhen I do not know what to say,\nteach me to remain in silence before You.\nWhen I am afraid,\nremind me that I am Your son, Your daughter.\nWhen I feel alone,\nembrace me with Your providence.\n\nAmen."
+  }
+}
