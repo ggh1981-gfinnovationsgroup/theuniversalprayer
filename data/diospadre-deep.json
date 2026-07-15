@@ -4,299 +4,1857 @@
     "en": "Library of the Father"
   },
   "library_intro": {
-    "es": "Ve abriendo cada sección a tu ritmo. No tienes que leerlo todo hoy. Conocer al Padre es un camino de toda la vida — y Él camina contigo. Textos bíblicos: Biblia Latinoamericana (BLA) en español; NABRE en inglés.",
-    "en": "Open each section at your own pace. You do not have to read it all today. Knowing the Father is a lifelong journey — and He walks with you. Scripture texts: Biblia Latinoamericana (BLA) in Spanish; NABRE in English."
+    "es": "Ve leyendo a tu ritmo. No tienes que leerlo todo hoy. Conocer al Padre es un camino de toda la vida — y Él camina contigo.",
+    "en": "Read at your own pace. You do not have to read it all today. Knowing the Father is a lifelong journey — and He walks with you."
   },
   "sections": [
     {
       "id": "mediator",
       "icon": "⚖️",
-      "title": { "es": "Mediador vs Intercesor — sin confusión", "en": "Mediator vs Intercessor — no confusion" },
-      "summary": { "es": "Cristo es el puente; los santos acompañan; el Padre escucha.", "en": "Christ is the bridge; saints accompany; the Father listens." },
+      "title": {
+        "es": "Mediador vs Intercesor — sin confusión",
+        "en": "Mediator vs Intercessor — no confusion"
+      },
+      "summary": {
+        "es": "Cristo es el puente; los santos acompañan; el Padre escucha.",
+        "en": "Christ is the bridge; saints accompany; the Father listens."
+      },
       "blocks": [
-        { "type": "p", "es": "Mediador = quien cierra la distancia entre Dios y tú. Solo Cristo. Intercesor = quien ruega por ti sin reemplazar a Cristo: María, santos, ángeles (CIC 962). El Padre = a quien llega toda oración, por Jesús (CIC 2591).", "en": "Mediator = the one who closes the distance between God and you. Only Christ. Intercessor = one who prays for you without replacing Christ: Mary, saints, angels (CCC 962). The Father = the one all prayer reaches, through Jesus (CCC 2591)." },
-        { "type": "scripture", "es": "Porque hay un solo Dios, y también un solo mediador entre Dios y los hombres: Jesucristo hombre, que se entregó a sí mismo en rescate por todos.", "en": "For there is one God. There is also one mediator between God and the human race, Christ Jesus, himself human, who gave himself as ransom for all.", "cite": { "es": "1 Timoteo 2, 5 (BLA)", "en": "1 Timothy 2:5 (NABRE)" } },
-        { "type": "scripture", "es": "Jesús le dijo: —Yo soy el camino, la verdad y la vida; nadie viene al Padre sino por mí.", "en": "Jesus said to him, \"I am the way and the truth and the life. No one comes to the Father except through me.\"", "cite": { "es": "Juan 14, 6 (BLA)", "en": "John 14:6 (NABRE)" } },
-        { "type": "scripture", "es": "Porque por medio de él nosotros, los judíos y los paganos, tenemos en un mismo Espíritu acceso al Padre.", "en": "For through him we both have access in one Spirit to the Father.", "cite": { "es": "Efesios 2, 18 (BLA)", "en": "Ephesians 2:18 (NABRE)" } },
-        { "type": "scripture", "es": "Cristo Jesús es el que murió, y más aún, el que resucitó, el que está a la derecha de Dios, el que además intercede por nosotros.", "en": "It is Christ Jesus who died, rather, was raised, who also is at the right hand of God, who indeed intercedes for us.", "cite": { "es": "Romanos 8, 34 (BLA)", "en": "Romans 8:34 (NABRE)" } }
+        {
+          "type": "p",
+          "es": "Mediador = quien cierra la distancia entre Dios y tú. Solo Cristo. Intercesor = quien ruega por ti sin reemplazar a Cristo: María, santos, ángeles (CIC 962). El Padre = a quien llega toda oración, por Jesús (CIC 2591).",
+          "en": "Mediator = the one who closes the distance between God and you. Only Christ. Intercessor = one who prays for you without replacing Christ: Mary, saints, angels (CCC 962). The Father = the one all prayer reaches, through Jesus (CCC 2591)."
+        },
+        {
+          "type": "scripture",
+          "es": "Porque hay un solo Dios, y también un solo mediador entre Dios y los hombres: Jesucristo hombre, que se entregó a sí mismo en rescate por todos.",
+          "en": "For there is one God. There is also one mediator between God and the human race, Christ Jesus, himself human, who gave himself as ransom for all.",
+          "cite": {
+            "es": "1 Timoteo 2, 5",
+            "en": "1 Timothy 2:5"
+          }
+        },
+        {
+          "type": "scripture",
+          "es": "Jesús le dijo: —Yo soy el camino, la verdad y la vida; nadie viene al Padre sino por mí.",
+          "en": "Jesus said to him, \"I am the way and the truth and the life. No one comes to the Father except through me.\"",
+          "cite": {
+            "es": "Juan 14, 6",
+            "en": "John 14:6"
+          }
+        },
+        {
+          "type": "scripture",
+          "es": "Porque por medio de él nosotros, los judíos y los paganos, tenemos en un mismo Espíritu acceso al Padre.",
+          "en": "For through him we both have access in one Spirit to the Father.",
+          "cite": {
+            "es": "Efesios 2, 18",
+            "en": "Ephesians 2:18"
+          }
+        },
+        {
+          "type": "scripture",
+          "es": "Cristo Jesús es el que murió, y más aún, el que resucitó, el que está a la derecha de Dios, el que además intercede por nosotros.",
+          "en": "It is Christ Jesus who died, rather, was raised, who also is at the right hand of God, who indeed intercedes for us.",
+          "cite": {
+            "es": "Romanos 8, 34",
+            "en": "Romans 8:34"
+          }
+        }
       ]
     },
     {
       "id": "trinity",
       "icon": "☦",
-      "title": { "es": "El Padre en la Trinidad", "en": "The Father in the Trinity" },
-      "summary": { "es": "Un solo Dios en tres Personas. El Padre es origen, no un dios aparte.", "en": "One God in three Persons. The Father is origin, not a separate god." },
+      "title": {
+        "es": "El Padre en la Trinidad",
+        "en": "The Father in the Trinity"
+      },
+      "summary": {
+        "es": "Un solo Dios en tres Personas. El Padre es origen, no un dios aparte.",
+        "en": "One God in three Persons. The Father is origin, not a separate god."
+      },
       "blocks": [
-        { "type": "p", "es": "Dios es uno solo: Padre, Hijo y Espíritu Santo. No son tres dioses ni tres modos de un mismo rostro. Son tres Personas distintas en una sola naturaleza divina (CIC 253-256).", "en": "God is one: Father, Son, and Holy Spirit. They are not three gods or three modes of one face. They are three distinct Persons in one divine nature (CCC 253-256)." },
-        { "type": "p", "es": "El Padre es la fuente y origen de la divinidad — no en el sentido de que existiera antes que el Hijo, sino que el Hijo es engendrado eternamente por Él, y el Espíritu procede del Padre y del Hijo (CIC 245, 2789).", "en": "The Father is the source and origin of divinity — not that He existed before the Son, but that the Son is eternally begotten by Him, and the Spirit proceeds from the Father and the Son (CCC 245, 2789)." },
-        { "type": "scripture", "es": "«Cuando oráis al Padre, no dividís el Dios único: adoráis y glorificáis al Padre con el Hijo y el Espíritu Santo.»", "en": "\"When you pray to the Father, you do not divide the one God: you adore and glorify the Father with the Son and the Holy Spirit.\"", "cite": { "es": "CIC 2789", "en": "CCC 2789" } },
-        { "type": "list", "title": { "es": "Qué significa en la práctica", "en": "What it means in practice" }, "items": [
-          { "es": "Orar «Padre nuestro» no es ignorar al Hijo ni al Espíritu.", "en": "Praying \"Our Father\" is not ignoring the Son or the Spirit." },
-          { "es": "Jesús ora al Padre — nos enseña su propia relación filial.", "en": "Jesus prays to the Father — He teaches us His own filial relationship." },
-          { "es": "El Espíritu Santo es quien hace que «Abba» brote de tu corazón.", "en": "The Holy Spirit is the one who makes \"Abba\" spring from your heart." }
-        ]}
+        {
+          "type": "p",
+          "es": "Dios es uno solo: Padre, Hijo y Espíritu Santo. No son tres dioses ni tres modos de un mismo rostro. Son tres Personas distintas en una sola naturaleza divina (CIC 253-256).",
+          "en": "God is one: Father, Son, and Holy Spirit. They are not three gods or three modes of one face. They are three distinct Persons in one divine nature (CCC 253-256)."
+        },
+        {
+          "type": "p",
+          "es": "El Padre es la fuente y origen de la divinidad — no en el sentido de que existiera antes que el Hijo, sino que el Hijo es engendrado eternamente por Él, y el Espíritu procede del Padre y del Hijo (CIC 245, 2789).",
+          "en": "The Father is the source and origin of divinity — not that He existed before the Son, but that the Son is eternally begotten by Him, and the Spirit proceeds from the Father and the Son (CCC 245, 2789)."
+        },
+        {
+          "type": "scripture",
+          "es": "«Cuando oráis al Padre, no dividís el Dios único: adoráis y glorificáis al Padre con el Hijo y el Espíritu Santo.»",
+          "en": "\"When you pray to the Father, you do not divide the one God: you adore and glorify the Father with the Son and the Holy Spirit.\"",
+          "cite": {
+            "es": "CIC 2789",
+            "en": "CCC 2789"
+          }
+        },
+        {
+          "type": "list",
+          "title": {
+            "es": "Qué significa en la práctica",
+            "en": "What it means in practice"
+          },
+          "items": [
+            {
+              "es": "Orar «Padre nuestro» no es ignorar al Hijo ni al Espíritu.",
+              "en": "Praying \"Our Father\" is not ignoring the Son or the Spirit."
+            },
+            {
+              "es": "Jesús ora al Padre — nos enseña su propia relación filial.",
+              "en": "Jesus prays to the Father — He teaches us His own filial relationship."
+            },
+            {
+              "es": "El Espíritu Santo es quien hace que «Abba» brote de tu corazón.",
+              "en": "The Holy Spirit is the one who makes \"Abba\" spring from your heart."
+            }
+          ]
+        }
       ]
     },
     {
       "id": "old_testament",
       "icon": "📜",
-      "title": { "es": "El Padre en el Antiguo Testamento", "en": "The Father in the Old Testament" },
-      "summary": { "es": "Antes de «Padre nuestro», Israel ya conocía la ternura de Dios.", "en": "Before \"Our Father,\" Israel already knew God's tenderness." },
+      "title": {
+        "es": "El Padre en el Antiguo Testamento",
+        "en": "The Father in the Old Testament"
+      },
+      "summary": {
+        "es": "Antes de «Padre nuestro», Israel ya conocía la ternura de Dios.",
+        "en": "Before \"Our Father,\" Israel already knew God's tenderness."
+      },
       "blocks": [
-        { "type": "p", "es": "El pueblo de Israel no empezó con la palabra «Padre» como Jesús la enseñó — pero el Antiguo Testamento ya revela un Dios personal, cercano, que llora por su pueblo y lo lleva en sus brazos.", "en": "Israel did not begin with the word \"Father\" as Jesus taught it — but the Old Testament already reveals a personal, close God who weeps for His people and carries them in His arms." },
-        { "type": "scripture", "es": "¿Acaso una mujer puede olvidarse de su niño de pecho, dejar de amar al hijo que dio a luz? Aun cuando ella lo olvidara, yo no te olvidaré.", "en": "Can a mother forget her infant, be without tenderness for the child of her womb? Even should she forget, I will never forget you.", "cite": { "es": "Isaías 49, 15 (BLA)", "en": "Isaiah 49:15 (NABRE)" } },
-        { "type": "scripture", "es": "Cuando Israel era un niño, yo lo amaba, y de Egipto llamé a mi hijo. Cuanto más los llamaba, más se alejaban de mí; seguían ofreciendo sacrificios a los baales y quemando incienso a los ídolos. Sin embargo, yo enseñé a caminar a Efraín, tomándolo de los brazos; pero ellos no reconocieron que yo los sanaba. Con cuerdas humanas los atraje, con lazos de amor; fui para ellos como quien alza a un niño hasta su mejilla, y me incliné hacia él para darle de comer.", "en": "When Israel was a child I loved him, out of Egypt I called my son. The more I called them, the farther they went from me. Yet it was I who taught Ephraim to walk, who took them in my arms; but they did not know that I healed them. I drew them with human cords, with bands of love; I fostered them like one who raises an infant to his cheeks. I stooped to feed them.", "cite": { "es": "Oseas 11, 1-4 (BLA)", "en": "Hosea 11:1-4 (NABRE)" } },
-        { "type": "scripture", "es": "El Señor es mi pastor, nada me falta; en verdes pastos me hace descansar. Me conduce junto a aguas de reposo, me infunde nuevos alientos y me conduce por sendas rectas, por amor de su nombre.", "en": "The Lord is my shepherd; there is nothing I lack. In green pastures he makes me lie down; to still waters he leads me; he restores my soul. He guides me along right paths for the sake of his name.", "cite": { "es": "Salmo 23, 1-3 (BLA)", "en": "Psalm 23:1-3 (NABRE)" } },
-        { "type": "scripture", "es": "Hijo mío, no desprecies la corrección del Señor, ni te desalientes cuando te reprenda; porque el Señor corrige al que ama, y castiga al hijo que acoge.", "en": "My son, do not disdain the discipline of the Lord or lose heart when reproved by him; for whom the Lord loves, he disciplines; he scourges every son he receives.", "cite": { "es": "Proverbios 3, 11-12 (BLA)", "en": "Proverbs 3:11-12 (NABRE)" } },
-        { "type": "scripture", "es": "Ahora —oráculo del Señor— el que te creó, Jacob, el que te formó, Israel, no temas, porque yo te he redimido, te he llamado por tu nombre: tú eres mío.", "en": "But now, thus says the Lord, who created you, Jacob, and formed you, Israel: Do not fear, for I have redeemed you; I have called you by name: you are mine.", "cite": { "es": "Isaías 43, 1 (BLA)", "en": "Isaiah 43:1 (NABRE)" } },
-        { "type": "list", "title": { "es": "Imágenes del Padre en el AT", "en": "Father images in the OT" }, "items": [
-          { "es": "Pastor que busca la oveja perdida.", "en": "Shepherd who seeks the lost sheep." },
-          { "es": "Padre que disciplina con amor, no para destruir.", "en": "Father who disciplines in love, not to destroy." },
-          { "es": "Creador que conoce tu nombre antes de nacer.", "en": "Creator who knows your name before birth." },
-          { "es": "Dios de pacto fiel — «Yo seré tu Dios y tú serás mi pueblo».", "en": "Faithful covenant God — \"I will be your God and you will be my people.\"" }
-        ]},
-        { "type": "scripture", "es": "El Señor es mi pastor, nada me falta; en verdes pastos me hace descansar. Me conduce junto a aguas de reposo, me infunde nuevos alientos.", "en": "The Lord is my shepherd; there is nothing I lack. In green pastures he makes me lie down; to still waters he leads me; he restores my soul.", "cite": { "es": "Salmo 23, 1-3 (BLA)", "en": "Psalm 23:1-3 (NABRE)" } },
-        { "type": "scripture", "es": "Ahora —oráculo del Señor— el que te creó, Jacob, el que te formó, Israel, no temas, porque yo te he redimido, te he llamado por tu nombre: tú eres mío.", "en": "But now, thus says the Lord, who created you, Jacob, and formed you, Israel: Do not fear, for I have redeemed you; I have called you by name: you are mine.", "cite": { "es": "Isaías 43, 1 (BLA)", "en": "Isaiah 43:1 (NABRE)" } }
+        {
+          "type": "p",
+          "es": "El pueblo de Israel no empezó con la palabra «Padre» como Jesús la enseñó — pero el Antiguo Testamento ya revela un Dios personal, cercano, que llora por su pueblo y lo lleva en sus brazos.",
+          "en": "Israel did not begin with the word \"Father\" as Jesus taught it — but the Old Testament already reveals a personal, close God who weeps for His people and carries them in His arms."
+        },
+        {
+          "type": "scripture",
+          "es": "¿Acaso una mujer puede olvidarse de su niño de pecho, dejar de amar al hijo que dio a luz? Aun cuando ella lo olvidara, yo no te olvidaré.",
+          "en": "Can a mother forget her infant, be without tenderness for the child of her womb? Even should she forget, I will never forget you.",
+          "cite": {
+            "es": "Isaías 49, 15",
+            "en": "Isaiah 49:15"
+          }
+        },
+        {
+          "type": "scripture",
+          "es": "Cuando Israel era un niño, yo lo amaba, y de Egipto llamé a mi hijo. Cuanto más los llamaba, más se alejaban de mí; seguían ofreciendo sacrificios a los baales y quemando incienso a los ídolos. Sin embargo, yo enseñé a caminar a Efraín, tomándolo de los brazos; pero ellos no reconocieron que yo los sanaba. Con cuerdas humanas los atraje, con lazos de amor; fui para ellos como quien alza a un niño hasta su mejilla, y me incliné hacia él para darle de comer.",
+          "en": "When Israel was a child I loved him, out of Egypt I called my son. The more I called them, the farther they went from me. Yet it was I who taught Ephraim to walk, who took them in my arms; but they did not know that I healed them. I drew them with human cords, with bands of love; I fostered them like one who raises an infant to his cheeks. I stooped to feed them.",
+          "cite": {
+            "es": "Oseas 11, 1-4",
+            "en": "Hosea 11:1-4"
+          }
+        },
+        {
+          "type": "scripture",
+          "es": "El Señor es mi pastor, nada me falta; en verdes pastos me hace descansar. Me conduce junto a aguas de reposo, me infunde nuevos alientos y me conduce por sendas rectas, por amor de su nombre.",
+          "en": "The Lord is my shepherd; there is nothing I lack. In green pastures he makes me lie down; to still waters he leads me; he restores my soul. He guides me along right paths for the sake of his name.",
+          "cite": {
+            "es": "Salmo 23, 1-3",
+            "en": "Psalm 23:1-3"
+          }
+        },
+        {
+          "type": "scripture",
+          "es": "Hijo mío, no desprecies la corrección del Señor, ni te desalientes cuando te reprenda; porque el Señor corrige al que ama, y castiga al hijo que acoge.",
+          "en": "My son, do not disdain the discipline of the Lord or lose heart when reproved by him; for whom the Lord loves, he disciplines; he scourges every son he receives.",
+          "cite": {
+            "es": "Proverbios 3, 11-12",
+            "en": "Proverbs 3:11-12"
+          }
+        },
+        {
+          "type": "scripture",
+          "es": "Ahora —oráculo del Señor— el que te creó, Jacob, el que te formó, Israel, no temas, porque yo te he redimido, te he llamado por tu nombre: tú eres mío.",
+          "en": "But now, thus says the Lord, who created you, Jacob, and formed you, Israel: Do not fear, for I have redeemed you; I have called you by name: you are mine.",
+          "cite": {
+            "es": "Isaías 43, 1",
+            "en": "Isaiah 43:1"
+          }
+        },
+        {
+          "type": "list",
+          "title": {
+            "es": "Imágenes del Padre en el AT",
+            "en": "Father images in the OT"
+          },
+          "items": [
+            {
+              "es": "Pastor que busca la oveja perdida.",
+              "en": "Shepherd who seeks the lost sheep."
+            },
+            {
+              "es": "Padre que disciplina con amor, no para destruir.",
+              "en": "Father who disciplines in love, not to destroy."
+            },
+            {
+              "es": "Creador que conoce tu nombre antes de nacer.",
+              "en": "Creator who knows your name before birth."
+            },
+            {
+              "es": "Dios de pacto fiel — «Yo seré tu Dios y tú serás mi pueblo».",
+              "en": "Faithful covenant God — \"I will be your God and you will be my people.\""
+            }
+          ]
+        },
+        {
+          "type": "scripture",
+          "es": "El Señor es mi pastor, nada me falta; en verdes pastos me hace descansar. Me conduce junto a aguas de reposo, me infunde nuevos alientos.",
+          "en": "The Lord is my shepherd; there is nothing I lack. In green pastures he makes me lie down; to still waters he leads me; he restores my soul.",
+          "cite": {
+            "es": "Salmo 23, 1-3",
+            "en": "Psalm 23:1-3"
+          }
+        },
+        {
+          "type": "scripture",
+          "es": "Ahora —oráculo del Señor— el que te creó, Jacob, el que te formó, Israel, no temas, porque yo te he redimido, te he llamado por tu nombre: tú eres mío.",
+          "en": "But now, thus says the Lord, who created you, Jacob, and formed you, Israel: Do not fear, for I have redeemed you; I have called you by name: you are mine.",
+          "cite": {
+            "es": "Isaías 43, 1",
+            "en": "Isaiah 43:1"
+          }
+        }
       ]
     },
     {
       "id": "jesus_reveals",
       "icon": "✝",
-      "title": { "es": "Jesús revela al Padre — escenas del Evangelio", "en": "Jesus reveals the Father — Gospel scenes" },
-      "summary": { "es": "Diez momentos donde el rostro del Padre se deja ver.", "en": "Ten moments where the Father's face appears." },
+      "title": {
+        "es": "Jesús revela al Padre — escenas del Evangelio",
+        "en": "Jesus reveals the Father — Gospel scenes"
+      },
+      "summary": {
+        "es": "Diez momentos donde el rostro del Padre se deja ver.",
+        "en": "Ten moments where the Father's face appears."
+      },
       "blocks": [
-        { "type": "sub", "title": { "es": "El Padre que corre (Lc 15)", "en": "The Father who runs (Lk 15)" }, "es": "El hijo malgastó todo. Volvió avergonzado. El Padre lo vio de lejos, corrió — algo indigno para un patriarca — lo abrazó, puso anillo y sandalias, mató el becerro. Ese es tu Padre cuando vuelves.", "en": "The son squandered everything. He returned ashamed. The Father saw him from afar and ran — undignified for a patriarch — embraced him, put ring and sandals on him, killed the calf. That is your Father when you return.", "scripture": { "es": "Todavía estaba lejos, cuando su padre lo vio y se conmovió; corrió a su encuentro, lo abrazó y lo besó. El hijo le dijo: «Padre, he pecado contra el cielo y contra ti; ya no merezco ser llamado tu hijo». Pero el padre dijo a sus criados: «Traigan la mejor ropa y vístanlo; pónganle un anillo en el dedo y sandalias en los pies. Traigan el becerro gordo y matenlo: comamos y festejemos, porque este hijo mío estaba muerto y ha vuelto a la vida; estaba perdido y ha sido encontrado». Y comenzaron a festejar.", "en": "While he was still a long way off, his father caught sight of him, and was filled with compassion. He ran to his son, embraced him and kissed him. His son said to him, \"Father, I have sinned against heaven and against you; I no longer deserve to be called your son.\" But his father ordered his servants, \"Quickly bring the finest robe and put it on him; put a ring on his finger and sandals on his feet. Take the fattened calf and slaughter it. Then let us celebrate with a feast, because this son of mine was dead, and has come to life again; he was lost, and has been found.\" Then the celebration began.", "cite": { "es": "Lucas 15, 20-24 (BLA)", "en": "Luke 15:20-24 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "«Eres mi Hijo amado» (Mt 3, 17)", "en": "\"You are my beloved Son\" (Mt 3:17)" }, "es": "Antes del primer milagro, el Padre declara su amor a Jesús. En tu bautismo, fuiste adoptado en esa misma familia.", "en": "Before the first miracle, the Father declares His love for Jesus. In your Baptism, you were adopted into that same family.", "scripture": { "es": "Y una voz del cielo decía: «Este es mi Hijo amado, en quien me complazco». // Para demostrar que sois hijos, Dios envió a nuestros corazones el Espíritu de su Hijo, que clama: ¡Abba, Padre!", "en": "And a voice came from the heavens, saying, \"This is my beloved Son, with whom I am well pleased.\" // As proof that you are children, God sent the spirit of his Son into our hearts, crying out, \"Abba, Father!\"", "cite": { "es": "Mateo 3, 17 · Gálatas 4, 6 (BLA)", "en": "Matthew 3:17 · Galatians 4:6 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Oración en secreto (Mt 6, 6)", "en": "Prayer in secret (Mt 6:6)" }, "es": "El Padre ve lo oculto. No necesita que impresiones a nadie. Busca tu corazón, no tu elocuencia.", "en": "The Father sees what is hidden. He does not need you to impress anyone. He seeks your heart, not your eloquence.", "scripture": { "es": "Pero tú, cuando ores, entra en tu habitación, cierra la puerta y ora a tu Padre, que está en lo secreto; y tu Padre, que ve lo secreto, te lo recompensará.", "en": "But when you pray, go to your inner room, close the door, and pray to your Father in secret. And your Father who sees in secret will repay you.", "cite": { "es": "Mateo 6, 6 (BLA)", "en": "Matthew 6:6 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "El Padre da el Espíritu (Lc 11, 13)", "en": "The Father gives the Spirit (Lk 11:13)" }, "es": "Si los padres humanos dan cosas buenas, ¿cuánto más el Padre del cielo dará el Espíritu Santo a quien se lo pida?", "en": "If human fathers give good gifts, how much more will the heavenly Father give the Holy Spirit to those who ask?", "scripture": { "es": "¿Quién de ustedes, si su hijo le pide un pescado, le dará una serpiente? ¿O si le pide un huevo, le dará un escorpión? Pues si ustedes, que son malos, saben dar cosas buenas a sus hijos, ¡cuánto más el Padre del cielo dará el Espíritu Santo a quien se lo pida!", "en": "What father among you would hand his son a snake when he asks for a fish? Or hand him a scorpion when he asks for an egg? If you then, who are wicked, know how to give good gifts to your children, how much more will the Father in heaven give the holy Spirit to those who ask him?", "cite": { "es": "Lucas 11, 11-13 (BLA)", "en": "Luke 11:11-13 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Jesús ora toda la noche (Lc 6, 12)", "en": "Jesus prays all night (Lk 6:12)" }, "es": "El Hijo perfecto pasaba horas con el Padre. Llamaba «Abba» en Getsemaní. Si Él necesitaba esa conversación, tú también.", "en": "The perfect Son spent hours with the Father. He called \"Abba\" in Gethsemane. If He needed that conversation, so do you.", "scripture": { "es": "En aquellos días, Jesús se retiró a la montaña para orar, y pasó toda la noche en oración a Dios. // Y dijo: —Abba, Padre, para ti todo es posible; aparta de mí esta copa. Pero no lo que yo quiero, sino lo que tú quieras.", "en": "In those days he departed to the mountain to pray, and he spent the night in prayer to God. // He said, \"Abba, Father, all things are possible to you. Take this cup away from me, but not what I will but what you will.\"", "cite": { "es": "Lucas 6, 12 · Marcos 14, 36 (BLA)", "en": "Luke 6:12 · Mark 14:36 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "«Padre, perdónalos» (Lc 23, 34)", "en": "\"Father, forgive them\" (Lk 23:34)" }, "es": "En la Cruz, Jesús habla al Padre por los que lo crucifican. El corazón del Padre es misericordia hasta el final.", "en": "On the Cross, Jesus speaks to the Father for those who crucify Him. The Father's heart is mercy to the end.", "scripture": { "es": "Jesús decía: —Padre, perdónalos, porque no saben lo que hacen.", "en": "Then Jesus said, \"Father, forgive them, they know not what they do.\"", "cite": { "es": "Lucas 23, 34 (BLA)", "en": "Luke 23:34 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "«En tus manos encomiendo mi espíritu» (Lc 23, 46)", "en": "\"Into your hands I commend my spirit\" (Lk 23:46)" }, "es": "Las últimas palabras de Jesús son confianza filial al Padre. Así puedes entregar tu vida.", "en": "Jesus' last words are filial trust in the Father. Thus you may entrust your life.", "scripture": { "es": "Jesús clamó con voz fuerte: —Padre, en tus manos encomiendo mi espíritu. Y, dicho esto, expiró.", "en": "Jesus cried out in a loud voice, \"Father, into your hands I commend my spirit\"; and when he had said this he breathed his last.", "cite": { "es": "Lucas 23, 46 (BLA)", "en": "Luke 23:46 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "El Padre de los dos hijos (Lc 15)", "en": "The Father of two sons (Lk 15)" }, "es": "El mayor también estaba lejos — por orgullo. El Padre sale a buscar a los dos. Quizá tú eres el que se quedó afuera con los brazos cruzados.", "en": "The elder son was also distant — through pride. The Father goes out to both. Perhaps you are the one standing outside with arms crossed.", "scripture": { "es": "El hijo mayor estaba en el campo. Al volver, cuando se acercó a la casa, oyó la música y los bailes. Llamó a uno de los criados y le preguntó qué pasaba. «Tu hermano ha vuelto —le dijo—, y tu padre ha matado el becerro gordo, porque lo ha recuperado sano y salvo». Entonces se enojó y no quiso entrar. Su padre salió a rogarle que entrara. Pero él respondió: «Hace tantos años que te sirvo, sin desobedecer jamás una orden tuya, y nunca me has dado un cabrito para festejar con mis amigos. En cambio, ahora que ha vuelto tu hijo, que se ha gastado tu dinero con prostitutas, le has matado el becerro gordo». El padre le dijo: «Hijo, tú siempre estás conmigo, y todo lo mío es tuyo. Pero era preciso festejar y alegrarnos, porque este hermano tuyo estaba muerto y ha vuelto a la vida; estaba perdido y ha sido encontrado».", "en": "Now the older son had been out in the field and, on his way back, as he neared the house, he heard the sound of music and dancing. He called one of the servants and asked what this might mean. The servant said to him, \"Your brother has returned and your father has slaughtered the fattened calf because he has him back safe and sound.\" He became angry, and when he refused to enter the house, his father came out and pleaded with him. He said to his father in reply, \"Look, all these years I served you and not once did I disobey your orders; yet you never gave me even a young goat to feast on with my friends. But when your son returns who swallowed up your property with prostitutes, for him you slaughter the fattened calf.\" He said to him, \"My son, you are here with me always; everything I have is yours. But now we must celebrate and rejoice, because your brother was dead and has come to life again; he was lost and has been found.\"", "cite": { "es": "Lucas 15, 25-32 (BLA)", "en": "Luke 15:25-32 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Las ovejas y las cabras (Mt 25)", "en": "Sheep and goats (Mt 25)" }, "es": "El Padre se identifica con el que sufre. Lo que haces al más pequeño, lo haces a Él.", "en": "The Father identifies with the one who suffers. What you do to the least, you do to Him.", "scripture": { "es": "Entonces el Rey les dirá a los de su derecha: «Vengan, benditos de mi Padre; reciban en herencia el Reino preparado para ustedes desde la creación del mundo. Porque tuve hambre y me dieron de comer; tuve sed y me dieron de beber; era forastero y me hospedaron; estaba desnudo y me vistieron; enfermo y me visitaron; en la cárcel y vinieron a verme». Entonces los justos le preguntarán: «Señor, ¿cuándo te vimos con hambre y te dimos de comer, o con sed y te dimos de beber? ¿Cuándo te vimos forastero y te hospedamos, o desnudo y te vestimos? ¿Cuándo te vimos enfermo o en la cárcel y fuimos a verte?». El Rey les responderá: «Les aseguro que cada vez que lo hicieron con uno de estos hermanos míos más pequeños, conmigo lo hicieron».", "en": "Then the king will say to those on his right, \"Come, you who are blessed by my Father. Inherit the kingdom prepared for you from the foundation of the world. For I was hungry and you gave me food, I was thirsty and you gave me drink, a stranger and you welcomed me, naked and you clothed me, ill and you cared for me, in prison and you visited me.\" Then the righteous will answer him and say, \"Lord, when did we see you hungry and feed you, or thirsty and give you drink? When did we see you a stranger and welcome you, or naked and clothe you? When did we see you ill or in prison, and visit you?\" And the king will say to them in reply, \"Amen, I say to you, whatever you did for one of these least brothers of mine, you did for me.\"", "cite": { "es": "Mateo 25, 34-40 (BLA)", "en": "Matthew 25:34-40 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "«Nadie conoce al Padre sino el Hijo» (Mt 11, 27)", "en": "\"No one knows the Father except the Son\" (Mt 11:27)" }, "es": "Si quieres conocer al Padre, mira a Jesús. Él es la revelación completa.", "en": "If you want to know the Father fully, look at Jesus. He is the complete revelation.", "scripture": { "es": "Todas las cosas me han sido entregadas por mi Padre. Nadie conoce al Hijo sino el Padre, y nadie conoce al Padre sino el Hijo, y aquel a quien el Hijo quiera revelarlo.", "en": "All things have been handed over to me by my Father. No one knows the Son except the Father, and no one knows the Father except the Son and anyone to whom the Son wishes to reveal him.", "cite": { "es": "Mateo 11, 27 (BLA)", "en": "Matthew 11:27 (NABRE)" } } }
+        {
+          "type": "sub",
+          "title": {
+            "es": "El Padre que corre (Lc 15)",
+            "en": "The Father who runs (Lk 15)"
+          },
+          "es": "El hijo malgastó todo. Volvió avergonzado. El Padre lo vio de lejos, corrió — algo indigno para un patriarca — lo abrazó, puso anillo y sandalias, mató el becerro. Ese es tu Padre cuando vuelves.",
+          "en": "The son squandered everything. He returned ashamed. The Father saw him from afar and ran — undignified for a patriarch — embraced him, put ring and sandals on him, killed the calf. That is your Father when you return.",
+          "scripture": {
+            "es": "Todavía estaba lejos, cuando su padre lo vio y se conmovió; corrió a su encuentro, lo abrazó y lo besó. El hijo le dijo: «Padre, he pecado contra el cielo y contra ti; ya no merezco ser llamado tu hijo». Pero el padre dijo a sus criados: «Traigan la mejor ropa y vístanlo; pónganle un anillo en el dedo y sandalias en los pies. Traigan el becerro gordo y matenlo: comamos y festejemos, porque este hijo mío estaba muerto y ha vuelto a la vida; estaba perdido y ha sido encontrado». Y comenzaron a festejar.",
+            "en": "While he was still a long way off, his father caught sight of him, and was filled with compassion. He ran to his son, embraced him and kissed him. His son said to him, \"Father, I have sinned against heaven and against you; I no longer deserve to be called your son.\" But his father ordered his servants, \"Quickly bring the finest robe and put it on him; put a ring on his finger and sandals on his feet. Take the fattened calf and slaughter it. Then let us celebrate with a feast, because this son of mine was dead, and has come to life again; he was lost, and has been found.\" Then the celebration began.",
+            "cite": {
+              "es": "Lucas 15, 20-24",
+              "en": "Luke 15:20-24"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "«Eres mi Hijo amado» (Mt 3, 17)",
+            "en": "\"You are my beloved Son\" (Mt 3:17)"
+          },
+          "es": "Antes del primer milagro, el Padre declara su amor a Jesús. En tu bautismo, fuiste adoptado en esa misma familia.",
+          "en": "Before the first miracle, the Father declares His love for Jesus. In your Baptism, you were adopted into that same family.",
+          "scripture": {
+            "es": "Y una voz del cielo decía: «Este es mi Hijo amado, en quien me complazco». // Para demostrar que sois hijos, Dios envió a nuestros corazones el Espíritu de su Hijo, que clama: ¡Abba, Padre!",
+            "en": "And a voice came from the heavens, saying, \"This is my beloved Son, with whom I am well pleased.\" // As proof that you are children, God sent the spirit of his Son into our hearts, crying out, \"Abba, Father!\"",
+            "cite": {
+              "es": "Mateo 3, 17 · Gálatas 4, 6",
+              "en": "Matthew 3:17 · Galatians 4:6"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Oración en secreto (Mt 6, 6)",
+            "en": "Prayer in secret (Mt 6:6)"
+          },
+          "es": "El Padre ve lo oculto. No necesita que impresiones a nadie. Busca tu corazón, no tu elocuencia.",
+          "en": "The Father sees what is hidden. He does not need you to impress anyone. He seeks your heart, not your eloquence.",
+          "scripture": {
+            "es": "Pero tú, cuando ores, entra en tu habitación, cierra la puerta y ora a tu Padre, que está en lo secreto; y tu Padre, que ve lo secreto, te lo recompensará.",
+            "en": "But when you pray, go to your inner room, close the door, and pray to your Father in secret. And your Father who sees in secret will repay you.",
+            "cite": {
+              "es": "Mateo 6, 6",
+              "en": "Matthew 6:6"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "El Padre da el Espíritu (Lc 11, 13)",
+            "en": "The Father gives the Spirit (Lk 11:13)"
+          },
+          "es": "Si los padres humanos dan cosas buenas, ¿cuánto más el Padre del cielo dará el Espíritu Santo a quien se lo pida?",
+          "en": "If human fathers give good gifts, how much more will the heavenly Father give the Holy Spirit to those who ask?",
+          "scripture": {
+            "es": "¿Quién de ustedes, si su hijo le pide un pescado, le dará una serpiente? ¿O si le pide un huevo, le dará un escorpión? Pues si ustedes, que son malos, saben dar cosas buenas a sus hijos, ¡cuánto más el Padre del cielo dará el Espíritu Santo a quien se lo pida!",
+            "en": "What father among you would hand his son a snake when he asks for a fish? Or hand him a scorpion when he asks for an egg? If you then, who are wicked, know how to give good gifts to your children, how much more will the Father in heaven give the holy Spirit to those who ask him?",
+            "cite": {
+              "es": "Lucas 11, 11-13",
+              "en": "Luke 11:11-13"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Jesús ora toda la noche (Lc 6, 12)",
+            "en": "Jesus prays all night (Lk 6:12)"
+          },
+          "es": "El Hijo perfecto pasaba horas con el Padre. Llamaba «Abba» en Getsemaní. Si Él necesitaba esa conversación, tú también.",
+          "en": "The perfect Son spent hours with the Father. He called \"Abba\" in Gethsemane. If He needed that conversation, so do you.",
+          "scripture": {
+            "es": "En aquellos días, Jesús se retiró a la montaña para orar, y pasó toda la noche en oración a Dios. // Y dijo: —Abba, Padre, para ti todo es posible; aparta de mí esta copa. Pero no lo que yo quiero, sino lo que tú quieras.",
+            "en": "In those days he departed to the mountain to pray, and he spent the night in prayer to God. // He said, \"Abba, Father, all things are possible to you. Take this cup away from me, but not what I will but what you will.\"",
+            "cite": {
+              "es": "Lucas 6, 12 · Marcos 14, 36",
+              "en": "Luke 6:12 · Mark 14:36"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "«Padre, perdónalos» (Lc 23, 34)",
+            "en": "\"Father, forgive them\" (Lk 23:34)"
+          },
+          "es": "En la Cruz, Jesús habla al Padre por los que lo crucifican. El corazón del Padre es misericordia hasta el final.",
+          "en": "On the Cross, Jesus speaks to the Father for those who crucify Him. The Father's heart is mercy to the end.",
+          "scripture": {
+            "es": "Jesús decía: —Padre, perdónalos, porque no saben lo que hacen.",
+            "en": "Then Jesus said, \"Father, forgive them, they know not what they do.\"",
+            "cite": {
+              "es": "Lucas 23, 34",
+              "en": "Luke 23:34"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "«En tus manos encomiendo mi espíritu» (Lc 23, 46)",
+            "en": "\"Into your hands I commend my spirit\" (Lk 23:46)"
+          },
+          "es": "Las últimas palabras de Jesús son confianza filial al Padre. Así puedes entregar tu vida.",
+          "en": "Jesus' last words are filial trust in the Father. Thus you may entrust your life.",
+          "scripture": {
+            "es": "Jesús clamó con voz fuerte: —Padre, en tus manos encomiendo mi espíritu. Y, dicho esto, expiró.",
+            "en": "Jesus cried out in a loud voice, \"Father, into your hands I commend my spirit\"; and when he had said this he breathed his last.",
+            "cite": {
+              "es": "Lucas 23, 46",
+              "en": "Luke 23:46"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "El Padre de los dos hijos (Lc 15)",
+            "en": "The Father of two sons (Lk 15)"
+          },
+          "es": "El mayor también estaba lejos — por orgullo. El Padre sale a buscar a los dos. Quizá tú eres el que se quedó afuera con los brazos cruzados.",
+          "en": "The elder son was also distant — through pride. The Father goes out to both. Perhaps you are the one standing outside with arms crossed.",
+          "scripture": {
+            "es": "El hijo mayor estaba en el campo. Al volver, cuando se acercó a la casa, oyó la música y los bailes. Llamó a uno de los criados y le preguntó qué pasaba. «Tu hermano ha vuelto —le dijo—, y tu padre ha matado el becerro gordo, porque lo ha recuperado sano y salvo». Entonces se enojó y no quiso entrar. Su padre salió a rogarle que entrara. Pero él respondió: «Hace tantos años que te sirvo, sin desobedecer jamás una orden tuya, y nunca me has dado un cabrito para festejar con mis amigos. En cambio, ahora que ha vuelto tu hijo, que se ha gastado tu dinero con prostitutas, le has matado el becerro gordo». El padre le dijo: «Hijo, tú siempre estás conmigo, y todo lo mío es tuyo. Pero era preciso festejar y alegrarnos, porque este hermano tuyo estaba muerto y ha vuelto a la vida; estaba perdido y ha sido encontrado».",
+            "en": "Now the older son had been out in the field and, on his way back, as he neared the house, he heard the sound of music and dancing. He called one of the servants and asked what this might mean. The servant said to him, \"Your brother has returned and your father has slaughtered the fattened calf because he has him back safe and sound.\" He became angry, and when he refused to enter the house, his father came out and pleaded with him. He said to his father in reply, \"Look, all these years I served you and not once did I disobey your orders; yet you never gave me even a young goat to feast on with my friends. But when your son returns who swallowed up your property with prostitutes, for him you slaughter the fattened calf.\" He said to him, \"My son, you are here with me always; everything I have is yours. But now we must celebrate and rejoice, because your brother was dead and has come to life again; he was lost and has been found.\"",
+            "cite": {
+              "es": "Lucas 15, 25-32",
+              "en": "Luke 15:25-32"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Las ovejas y las cabras (Mt 25)",
+            "en": "Sheep and goats (Mt 25)"
+          },
+          "es": "El Padre se identifica con el que sufre. Lo que haces al más pequeño, lo haces a Él.",
+          "en": "The Father identifies with the one who suffers. What you do to the least, you do to Him.",
+          "scripture": {
+            "es": "Entonces el Rey les dirá a los de su derecha: «Vengan, benditos de mi Padre; reciban en herencia el Reino preparado para ustedes desde la creación del mundo. Porque tuve hambre y me dieron de comer; tuve sed y me dieron de beber; era forastero y me hospedaron; estaba desnudo y me vistieron; enfermo y me visitaron; en la cárcel y vinieron a verme». Entonces los justos le preguntarán: «Señor, ¿cuándo te vimos con hambre y te dimos de comer, o con sed y te dimos de beber? ¿Cuándo te vimos forastero y te hospedamos, o desnudo y te vestimos? ¿Cuándo te vimos enfermo o en la cárcel y fuimos a verte?». El Rey les responderá: «Les aseguro que cada vez que lo hicieron con uno de estos hermanos míos más pequeños, conmigo lo hicieron».",
+            "en": "Then the king will say to those on his right, \"Come, you who are blessed by my Father. Inherit the kingdom prepared for you from the foundation of the world. For I was hungry and you gave me food, I was thirsty and you gave me drink, a stranger and you welcomed me, naked and you clothed me, ill and you cared for me, in prison and you visited me.\" Then the righteous will answer him and say, \"Lord, when did we see you hungry and feed you, or thirsty and give you drink? When did we see you a stranger and welcome you, or naked and clothe you? When did we see you ill or in prison, and visit you?\" And the king will say to them in reply, \"Amen, I say to you, whatever you did for one of these least brothers of mine, you did for me.\"",
+            "cite": {
+              "es": "Mateo 25, 34-40",
+              "en": "Matthew 25:34-40"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "«Nadie conoce al Padre sino el Hijo» (Mt 11, 27)",
+            "en": "\"No one knows the Father except the Son\" (Mt 11:27)"
+          },
+          "es": "Si quieres conocer al Padre, mira a Jesús. Él es la revelación completa.",
+          "en": "If you want to know the Father fully, look at Jesus. He is the complete revelation.",
+          "scripture": {
+            "es": "Todas las cosas me han sido entregadas por mi Padre. Nadie conoce al Hijo sino el Padre, y nadie conoce al Padre sino el Hijo, y aquel a quien el Hijo quiera revelarlo.",
+            "en": "All things have been handed over to me by my Father. No one knows the Son except the Father, and no one knows the Father except the Son and anyone to whom the Son wishes to reveal him.",
+            "cite": {
+              "es": "Mateo 11, 27",
+              "en": "Matthew 11:27"
+            }
+          }
+        }
       ]
     },
     {
       "id": "our_father_lines",
       "icon": "📿",
-      "title": { "es": "Padre Nuestro — línea por línea", "en": "Our Father — line by line" },
-      "summary": { "es": "Siete peticiones. Una escuela completa de relación con el Padre.", "en": "Seven petitions. A complete school of relationship with the Father." },
+      "title": {
+        "es": "Padre Nuestro — línea por línea",
+        "en": "Our Father — line by line"
+      },
+      "summary": {
+        "es": "Siete peticiones. Una escuela completa de relación con el Padre.",
+        "en": "Seven petitions. A complete school of relationship with the Father."
+      },
       "blocks": [
-        { "type": "sub", "title": { "es": "1. «Padre nuestro que estás en el cielo»", "en": "1. \"Our Father who art in heaven\"" }, "es": "No dice «mi» solo — dice «nuestro». Eres hijo en familia. «En el cielo» es santidad, no lejanía.", "en": "It does not say \"my\" alone — it says \"our.\" You are a child in a family. \"In heaven\" is holiness, not distance.", "scripture": { "es": "Ustedes deben orar así: Padre nuestro que estás en el cielo, santificado sea tu nombre;", "en": "This is how you are to pray: Our Father in heaven, hallowed be your name,", "cite": { "es": "Mateo 6, 9 (BLA)", "en": "Matthew 6:9 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "2. «Santificado sea tu Nombre»", "en": "2. \"Hallowed be Thy Name\"" }, "es": "Primero adoración, luego petición. Su Nombre = su Persona.", "en": "First adoration, then petition. His Name = His Person.", "scripture": { "es": "Ustedes deben orar así: Padre nuestro que estás en el cielo, santificado sea tu nombre;", "en": "Our Father in heaven, hallowed be your name,", "cite": { "es": "Mateo 6, 9 (BLA)", "en": "Matthew 6:9 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "3. «Venga tu Reino»", "en": "3. \"Thy kingdom come\"" }, "es": "Pides que su Reino llegue ya — en tu corazón, tu casa, tu mundo.", "en": "You ask that His Kingdom come now — in your heart, home, world.", "scripture": { "es": "venga a nosotros tu Reino;", "en": "your kingdom come,", "cite": { "es": "Mateo 6, 10 (BLA)", "en": "Matthew 6:10 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "4. «Hágase tu voluntad»", "en": "4. \"Thy will be done\"" }, "es": "La parte más difícil. Confías más que tu plan.", "en": "The hardest part. You trust more than your plan.", "scripture": { "es": "hágase tu voluntad en la tierra como en el cielo. // Y dijo: —Abba, Padre, para ti todo es posible; aparta de mí esta copa. Pero no lo que yo quiero, sino lo que tú quieras.", "en": "your will be done, on earth as in heaven. // He said, \"Abba, Father, all things are possible to you. Take this cup away from me, but not what I will but what you will.\"", "cite": { "es": "Mateo 6, 10 · Marcos 14, 36 (BLA)", "en": "Matthew 6:10 · Mark 14:36 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "5. «Danos hoy nuestro pan de cada día»", "en": "5. \"Give us this day our daily bread\"" }, "es": "Pan material y Eucaristía. «Hoy»: no ansiedad por mañana.", "en": "Material bread and Eucharist. \"Today\": no anxiety for tomorrow.", "scripture": { "es": "Danos hoy el pan que necesitamos. // Por eso les digo: no se preocupen por su vida, qué comerán o qué beberán; ni por su cuerpo, con qué se vestirán. ¿No vale ustedes más que las aves?", "en": "Give us today our daily bread. // Therefore I tell you, do not worry about your life, what you will eat or drink, or about your body, what you will wear. Are not life and food and clothing more important than birds?", "cite": { "es": "Mateo 6, 11.25-26 (BLA)", "en": "Matthew 6:11, 25-26 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "6. «Perdona nuestras ofensas…»", "en": "6. \"Forgive us our trespasses…\"" }, "es": "El Padre perdona si tú perdonas. No puedes abrazar al Padre con puños cerrados.", "en": "The Father forgives if you forgive. You cannot embrace the Father with fists closed.", "scripture": { "es": "Perdónanos nuestras ofensas, como también nosotros perdonamos a los que nos ofenden. // Porque si perdonan a los demás las ofensas que les hayan cometido, también su Padre del cielo les perdonará a ustedes. Pero si no perdonan a los demás, tampoco su Padre les perdonará sus ofensas.", "en": "and forgive us our debts, as we forgive our debtors. // If you forgive others their transgressions, your heavenly Father will forgive you. But if you do not forgive others, neither will your Father forgive your transgressions.", "cite": { "es": "Mateo 6, 12.14-15 (BLA)", "en": "Matthew 6:12, 14-15 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "7. «No nos dejes caer en tentación… líbranos del mal»", "en": "7. \"Lead us not into temptation… deliver us from evil\"" }, "es": "Pides protección. El Padre es más fuerte que el Maligno.", "en": "You ask for protection. The Father is stronger than the Evil One.", "scripture": { "es": "No nos dejes caer en la tentación, y líbranos del mal.", "en": "and do not subject us to the final test, but deliver us from the evil one.", "cite": { "es": "Mateo 6, 13 (BLA)", "en": "Matthew 6:13 (NABRE)" } } }
+        {
+          "type": "sub",
+          "title": {
+            "es": "1. «Padre nuestro que estás en el cielo»",
+            "en": "1. \"Our Father who art in heaven\""
+          },
+          "es": "No dice «mi» solo — dice «nuestro». Eres hijo en familia. «En el cielo» es santidad, no lejanía.",
+          "en": "It does not say \"my\" alone — it says \"our.\" You are a child in a family. \"In heaven\" is holiness, not distance.",
+          "scripture": {
+            "es": "Ustedes deben orar así: Padre nuestro que estás en el cielo, santificado sea tu nombre;",
+            "en": "This is how you are to pray: Our Father in heaven, hallowed be your name,",
+            "cite": {
+              "es": "Mateo 6, 9",
+              "en": "Matthew 6:9"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "2. «Santificado sea tu Nombre»",
+            "en": "2. \"Hallowed be Thy Name\""
+          },
+          "es": "Primero adoración, luego petición. Su Nombre = su Persona.",
+          "en": "First adoration, then petition. His Name = His Person.",
+          "scripture": {
+            "es": "Ustedes deben orar así: Padre nuestro que estás en el cielo, santificado sea tu nombre;",
+            "en": "Our Father in heaven, hallowed be your name,",
+            "cite": {
+              "es": "Mateo 6, 9",
+              "en": "Matthew 6:9"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "3. «Venga tu Reino»",
+            "en": "3. \"Thy kingdom come\""
+          },
+          "es": "Pides que su Reino llegue ya — en tu corazón, tu casa, tu mundo.",
+          "en": "You ask that His Kingdom come now — in your heart, home, world.",
+          "scripture": {
+            "es": "venga a nosotros tu Reino;",
+            "en": "your kingdom come,",
+            "cite": {
+              "es": "Mateo 6, 10",
+              "en": "Matthew 6:10"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "4. «Hágase tu voluntad»",
+            "en": "4. \"Thy will be done\""
+          },
+          "es": "La parte más difícil. Confías más que tu plan.",
+          "en": "The hardest part. You trust more than your plan.",
+          "scripture": {
+            "es": "hágase tu voluntad en la tierra como en el cielo. // Y dijo: —Abba, Padre, para ti todo es posible; aparta de mí esta copa. Pero no lo que yo quiero, sino lo que tú quieras.",
+            "en": "your will be done, on earth as in heaven. // He said, \"Abba, Father, all things are possible to you. Take this cup away from me, but not what I will but what you will.\"",
+            "cite": {
+              "es": "Mateo 6, 10 · Marcos 14, 36",
+              "en": "Matthew 6:10 · Mark 14:36"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "5. «Danos hoy nuestro pan de cada día»",
+            "en": "5. \"Give us this day our daily bread\""
+          },
+          "es": "Pan material y Eucaristía. «Hoy»: no ansiedad por mañana.",
+          "en": "Material bread and Eucharist. \"Today\": no anxiety for tomorrow.",
+          "scripture": {
+            "es": "Danos hoy el pan que necesitamos. // Por eso les digo: no se preocupen por su vida, qué comerán o qué beberán; ni por su cuerpo, con qué se vestirán. ¿No vale ustedes más que las aves?",
+            "en": "Give us today our daily bread. // Therefore I tell you, do not worry about your life, what you will eat or drink, or about your body, what you will wear. Are not life and food and clothing more important than birds?",
+            "cite": {
+              "es": "Mateo 6, 11.25-26",
+              "en": "Matthew 6:11, 25-26"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "6. «Perdona nuestras ofensas…»",
+            "en": "6. \"Forgive us our trespasses…\""
+          },
+          "es": "El Padre perdona si tú perdonas. No puedes abrazar al Padre con puños cerrados.",
+          "en": "The Father forgives if you forgive. You cannot embrace the Father with fists closed.",
+          "scripture": {
+            "es": "Perdónanos nuestras ofensas, como también nosotros perdonamos a los que nos ofenden. // Porque si perdonan a los demás las ofensas que les hayan cometido, también su Padre del cielo les perdonará a ustedes. Pero si no perdonan a los demás, tampoco su Padre les perdonará sus ofensas.",
+            "en": "and forgive us our debts, as we forgive our debtors. // If you forgive others their transgressions, your heavenly Father will forgive you. But if you do not forgive others, neither will your Father forgive your transgressions.",
+            "cite": {
+              "es": "Mateo 6, 12.14-15",
+              "en": "Matthew 6:12, 14-15"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "7. «No nos dejes caer en tentación… líbranos del mal»",
+            "en": "7. \"Lead us not into temptation… deliver us from evil\""
+          },
+          "es": "Pides protección. El Padre es más fuerte que el Maligno.",
+          "en": "You ask for protection. The Father is stronger than the Evil One.",
+          "scripture": {
+            "es": "No nos dejes caer en la tentación, y líbranos del mal.",
+            "en": "and do not subject us to the final test, but deliver us from the evil one.",
+            "cite": {
+              "es": "Mateo 6, 13",
+              "en": "Matthew 6:13"
+            }
+          }
+        }
       ]
     },
     {
       "id": "names",
       "icon": "🏷",
-      "title": { "es": "Nombres y títulos del Padre en la Biblia", "en": "Names and titles of the Father in Scripture" },
-      "summary": { "es": "Cada nombre es una puerta para conocerlo.", "en": "Each name is a door to know Him." },
+      "title": {
+        "es": "Nombres y títulos del Padre en la Biblia",
+        "en": "Names and titles of the Father in Scripture"
+      },
+      "summary": {
+        "es": "Cada nombre es una puerta para conocerlo.",
+        "en": "Each name is a door to know Him."
+      },
       "blocks": [
-        { "type": "sub", "title": { "es": "Padre (Abba)", "en": "Father (Abba)" }, "es": "Confianza filial que el Espíritu pone en el corazón del bautizado.", "en": "Filial trust the Spirit places in the heart of the baptized.", "scripture": { "es": "Porque no habéis recibido un espíritu de esclavitud para volver al temor, sino un espíritu de adopción, por el cual clamamos: ¡Abba, Padre!", "en": "For you did not receive a spirit of slavery to fall back into fear, but you received a spirit of adoption, through which we cry, \"Abba, Father!\"", "cite": { "es": "Romanos 8, 15 (BLA)", "en": "Romans 8:15 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Dios de los cielos", "en": "God of heaven" }, "es": "Santidad y trascendencia del Padre.", "en": "Holiness and transcendence of the Father.", "scripture": { "es": "Ustedes deben orar así: Padre nuestro que estás en el cielo,", "en": "Our Father in heaven,", "cite": { "es": "Mateo 6, 9 (BLA)", "en": "Matthew 6:9 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Padre de misericordias", "en": "Father of mercies" }, "es": "Compasión infinita del Padre.", "en": "Infinite compassion of the Father.", "scripture": { "es": "Bendito sea el Dios y Padre de nuestro Señor Jesucristo, Padre de misericordias y Dios de toda consolación.", "en": "Blessed be the God and Father of our Lord Jesus Christ, the Father of compassion and God of all encouragement.", "cite": { "es": "2 Corintios 1, 3 (BLA)", "en": "2 Corinthians 1:3 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Padre de las luces", "en": "Father of lights" }, "es": "Todo don bueno viene de Él.", "en": "Every good gift comes from Him.", "scripture": { "es": "Toda buena dádiva y todo don perfecto vienen de lo alto, donde está el Padre de las luces, en quien no hay cambio ni sombra de variación.", "en": "All good giving and every perfect gift is from above, coming down from the Father of lights, with whom there is no alteration or shadow caused by change.", "cite": { "es": "Santiago 1, 17 (BLA)", "en": "James 1:17 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Creador", "en": "Creator" }, "es": "Te formó a su imagen.", "en": "He formed you in His image.", "scripture": { "es": "Dios creó al hombre a imagen suya, a imagen de Dios lo creó; hombre y mujer los creó.", "en": "God created mankind in his image; in the image of God he created them; male and female he created them.", "cite": { "es": "Génesis 1, 27 (BLA)", "en": "Genesis 1:27 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Pastor", "en": "Shepherd" }, "es": "No te falta nada.", "en": "You shall not want.", "scripture": { "es": "El Señor es mi pastor, nada me falta.", "en": "The Lord is my shepherd; there is nothing I lack.", "cite": { "es": "Salmo 23, 1 (BLA)", "en": "Psalm 23:1 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Roca, refugio, fortaleza", "en": "Rock, refuge, fortress" }, "es": "Seguridad en el Padre.", "en": "Security in the Father.", "scripture": { "es": "Tú eres mi refugio y mi baluarte, mi Dios, en quien confío.", "en": "My refuge and my fortress, my God in whom I trust.", "cite": { "es": "Salmo 18, 3 (BLA)", "en": "Psalm 18:3 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "El Que Está (Yo soy el que soy)", "en": "I AM WHO I AM" }, "es": "Fiel en todo tiempo.", "en": "Faithful in all time.", "scripture": { "es": "Dios respondió a Moisés: —Yo soy el que soy. Y añadió: Así dirás a los israelitas: «Yo soy» me envió a ustedes.", "en": "God replied to Moses: I am who I am. Then he added: This is what you will tell the Israelites: I AM has sent me to you.", "cite": { "es": "Éxodo 3, 14 (BLA)", "en": "Exodus 3:14 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Padre de huérfanos y defensor de viudas", "en": "Father of orphans and defender of widows" }, "es": "Defiende al desamparado.", "en": "He defends the helpless.", "scripture": { "es": "Padre de huérfanos y defensor de viudas es Dios en su santa morada.", "en": "Father of the fatherless, defender of widows is God in his holy dwelling.", "cite": { "es": "Salmo 68, 6 (BLA)", "en": "Psalm 68:6 (NABRE)" } } }
+        {
+          "type": "sub",
+          "title": {
+            "es": "Padre (Abba)",
+            "en": "Father (Abba)"
+          },
+          "es": "Confianza filial que el Espíritu pone en el corazón del bautizado.",
+          "en": "Filial trust the Spirit places in the heart of the baptized.",
+          "scripture": {
+            "es": "Porque no habéis recibido un espíritu de esclavitud para volver al temor, sino un espíritu de adopción, por el cual clamamos: ¡Abba, Padre!",
+            "en": "For you did not receive a spirit of slavery to fall back into fear, but you received a spirit of adoption, through which we cry, \"Abba, Father!\"",
+            "cite": {
+              "es": "Romanos 8, 15",
+              "en": "Romans 8:15"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Dios de los cielos",
+            "en": "God of heaven"
+          },
+          "es": "Santidad y trascendencia del Padre.",
+          "en": "Holiness and transcendence of the Father.",
+          "scripture": {
+            "es": "Ustedes deben orar así: Padre nuestro que estás en el cielo,",
+            "en": "Our Father in heaven,",
+            "cite": {
+              "es": "Mateo 6, 9",
+              "en": "Matthew 6:9"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Padre de misericordias",
+            "en": "Father of mercies"
+          },
+          "es": "Compasión infinita del Padre.",
+          "en": "Infinite compassion of the Father.",
+          "scripture": {
+            "es": "Bendito sea el Dios y Padre de nuestro Señor Jesucristo, Padre de misericordias y Dios de toda consolación.",
+            "en": "Blessed be the God and Father of our Lord Jesus Christ, the Father of compassion and God of all encouragement.",
+            "cite": {
+              "es": "2 Corintios 1, 3",
+              "en": "2 Corinthians 1:3"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Padre de las luces",
+            "en": "Father of lights"
+          },
+          "es": "Todo don bueno viene de Él.",
+          "en": "Every good gift comes from Him.",
+          "scripture": {
+            "es": "Toda buena dádiva y todo don perfecto vienen de lo alto, donde está el Padre de las luces, en quien no hay cambio ni sombra de variación.",
+            "en": "All good giving and every perfect gift is from above, coming down from the Father of lights, with whom there is no alteration or shadow caused by change.",
+            "cite": {
+              "es": "Santiago 1, 17",
+              "en": "James 1:17"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Creador",
+            "en": "Creator"
+          },
+          "es": "Te formó a su imagen.",
+          "en": "He formed you in His image.",
+          "scripture": {
+            "es": "Dios creó al hombre a imagen suya, a imagen de Dios lo creó; hombre y mujer los creó.",
+            "en": "God created mankind in his image; in the image of God he created them; male and female he created them.",
+            "cite": {
+              "es": "Génesis 1, 27",
+              "en": "Genesis 1:27"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Pastor",
+            "en": "Shepherd"
+          },
+          "es": "No te falta nada.",
+          "en": "You shall not want.",
+          "scripture": {
+            "es": "El Señor es mi pastor, nada me falta.",
+            "en": "The Lord is my shepherd; there is nothing I lack.",
+            "cite": {
+              "es": "Salmo 23, 1",
+              "en": "Psalm 23:1"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Roca, refugio, fortaleza",
+            "en": "Rock, refuge, fortress"
+          },
+          "es": "Seguridad en el Padre.",
+          "en": "Security in the Father.",
+          "scripture": {
+            "es": "Tú eres mi refugio y mi baluarte, mi Dios, en quien confío.",
+            "en": "My refuge and my fortress, my God in whom I trust.",
+            "cite": {
+              "es": "Salmo 18, 3",
+              "en": "Psalm 18:3"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "El Que Está (Yo soy el que soy)",
+            "en": "I AM WHO I AM"
+          },
+          "es": "Fiel en todo tiempo.",
+          "en": "Faithful in all time.",
+          "scripture": {
+            "es": "Dios respondió a Moisés: —Yo soy el que soy. Y añadió: Así dirás a los israelitas: «Yo soy» me envió a ustedes.",
+            "en": "God replied to Moses: I am who I am. Then he added: This is what you will tell the Israelites: I AM has sent me to you.",
+            "cite": {
+              "es": "Éxodo 3, 14",
+              "en": "Exodus 3:14"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Padre de huérfanos y defensor de viudas",
+            "en": "Father of orphans and defender of widows"
+          },
+          "es": "Defiende al desamparado.",
+          "en": "He defends the helpless.",
+          "scripture": {
+            "es": "Padre de huérfanos y defensor de viudas es Dios en su santa morada.",
+            "en": "Father of the fatherless, defender of widows is God in his holy dwelling.",
+            "cite": {
+              "es": "Salmo 68, 6",
+              "en": "Psalm 68:6"
+            }
+          }
+        }
       ]
     },
     {
       "id": "pleases_expects",
       "icon": "❤️",
-      "title": { "es": "Qué le agrada y qué espera de nosotros", "en": "What pleases Him and what He expects" },
-      "summary": { "es": "No perfección. Hijos que vuelven y confían.", "en": "Not perfection. Children who return and trust." },
+      "title": {
+        "es": "Qué le agrada y qué espera de nosotros",
+        "en": "What pleases Him and what He expects"
+      },
+      "summary": {
+        "es": "No perfección. Hijos que vuelven y confían.",
+        "en": "Not perfection. Children who return and trust."
+      },
       "blocks": [
-        { "type": "sub", "title": { "es": "Corazón sincero", "en": "Sincere heart" }, "es": "Aunque esté roto — es sacrificio agradable.", "en": "Even broken — a pleasing sacrifice.", "scripture": { "es": "El sacrificio agradable a Dios es un espíritu contrito; tú, Dios, no desprecias un corazón contrito y humillado.", "en": "My sacrifice, O God, is a contrite spirit; a contrite, humbled heart, O God, you will not scorn.", "cite": { "es": "Salmo 51, 19 (BLA)", "en": "Psalm 51:19 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Humildad del publicano", "en": "Tax collector's humility" }, "es": "«Ten piedad de mí, pecador».", "en": "\"Have mercy on me, a sinner.\"", "scripture": { "es": "El publicano, en cambio, permanecía a distancia y no se atrevía ni a levantar los ojos al cielo, sino que se golpeaba el pecho diciendo: «Dios, ten piedad de mí, que soy pecador». Les digo que éste volvió a su casa justificado, y no el otro.", "en": "But the tax collector stood off at a distance and would not even raise his eyes to heaven but beat his breast and prayed, \"O God, be merciful to me a sinner.\" I tell you, the latter went home justified, not the former.", "cite": { "es": "Lucas 18, 13-14 (BLA)", "en": "Luke 18:13-14 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Perdonar como Él perdona", "en": "Forgive as He forgives" }, "es": "La misericordia recibida se vuelve misericordia dada.", "en": "Mercy received becomes mercy given.", "scripture": { "es": "Porque si perdonan a los demás las ofensas que les hayan cometido, también su Padre del cielo les perdonará a ustedes. Pero si no perdonan a los demás, tampoco su Padre les perdonará sus ofensas.", "en": "If you forgive others their transgressions, your heavenly Father will forgive you. But if you do not forgive others, neither will your Father forgive your transgressions.", "cite": { "es": "Mateo 6, 14-15 (BLA)", "en": "Matthew 6:14-15 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Cuidar al más pequeño", "en": "Care for the least" }, "es": "«Lo hicieron conmigo».", "en": "\"You did it to me.\"", "scripture": { "es": "Les aseguro que cada vez que lo hicieron con uno de estos hermanos míos más pequeños, conmigo lo hicieron.", "en": "Amen, I say to you, whatever you did for one of these least brothers of mine, you did for me.", "cite": { "es": "Mateo 25, 40 (BLA)", "en": "Matthew 25:40 (NABRE)" } } },
-        { "type": "list", "title": { "es": "También le agrada", "en": "It also pleases Him" }, "items": [
-          { "es": "La confianza del que lo llama «Padre nuestro» cada día.", "en": "The trust of one who calls Him \"Our Father\" each day." },
-          { "es": "El silencio de quien solo quiere estar con Él.", "en": "The silence of one who only wants to be with Him." }
-        ]},
-        { "type": "list", "title": { "es": "Espera de nosotros", "en": "He expects of us" }, "items": [
-          { "es": "Que confiemos en Él como un hijo confía — no como esclavo con miedo.", "en": "That we trust Him as a child trusts — not as a slave in fear." },
-          { "es": "Que seamos misericordiosos «como el Padre es misericordioso».", "en": "That we be merciful \"as the Father is merciful\"." },
-          { "es": "Que amemos «como Él me amó primero».", "en": "That we love \"as He loved me first\"." },
-          { "es": "Que busquemos su Reino antes que nuestra ansiedad.", "en": "That we seek His Kingdom before our anxiety." },
-          { "es": "Que volvamos cuando nos alejamos — siempre hay camino a casa.", "en": "That we return when we drift away — there is always a way home." }
-        ]},
-        { "type": "scripture", "es": "Porque no habéis recibido un espíritu de esclavitud para volver al temor, sino un espíritu de adopción, por el cual clamamos: ¡Abba, Padre!", "en": "For you did not receive a spirit of slavery to fall back into fear, but you received a spirit of adoption, through which we cry, \"Abba, Father!\"", "cite": { "es": "Romanos 8, 15 (BLA)", "en": "Romans 8:15 (NABRE)" } },
-        { "type": "scripture", "es": "Sean misericordiosos, como también su Padre es misericordioso.", "en": "Be merciful, just as your Father is merciful.", "cite": { "es": "Lucas 6, 36 (BLA)", "en": "Luke 6:36 (NABRE)" } },
-        { "type": "scripture", "es": "Nosotros amamos porque él nos amó primero.", "en": "We love because he first loved us.", "cite": { "es": "1 Juan 4, 19 (BLA)", "en": "1 John 4:19 (NABRE)" } },
-        { "type": "scripture", "es": "Busquen en primer lugar el Reino de Dios y su justicia, y todas esas cosas les serán añadidas.", "en": "But seek first the kingdom of God and his righteousness, and all these things will be given you besides.", "cite": { "es": "Mateo 6, 33 (BLA)", "en": "Matthew 6:33 (NABRE)" } },
-        { "type": "scripture", "es": "Todavía estaba lejos, cuando su padre lo vio y se conmovió; corrió a su encuentro, lo abrazó y lo besó.", "en": "While he was still a long way off, his father caught sight of him, and was filled with compassion. He ran to his son, embraced him and kissed him.", "cite": { "es": "Lucas 15, 20 (BLA)", "en": "Luke 15:20 (NABRE)" } }
+        {
+          "type": "sub",
+          "title": {
+            "es": "Corazón sincero",
+            "en": "Sincere heart"
+          },
+          "es": "Aunque esté roto — es sacrificio agradable.",
+          "en": "Even broken — a pleasing sacrifice.",
+          "scripture": {
+            "es": "El sacrificio agradable a Dios es un espíritu contrito; tú, Dios, no desprecias un corazón contrito y humillado.",
+            "en": "My sacrifice, O God, is a contrite spirit; a contrite, humbled heart, O God, you will not scorn.",
+            "cite": {
+              "es": "Salmo 51, 19",
+              "en": "Psalm 51:19"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Humildad del publicano",
+            "en": "Tax collector's humility"
+          },
+          "es": "«Ten piedad de mí, pecador».",
+          "en": "\"Have mercy on me, a sinner.\"",
+          "scripture": {
+            "es": "El publicano, en cambio, permanecía a distancia y no se atrevía ni a levantar los ojos al cielo, sino que se golpeaba el pecho diciendo: «Dios, ten piedad de mí, que soy pecador». Les digo que éste volvió a su casa justificado, y no el otro.",
+            "en": "But the tax collector stood off at a distance and would not even raise his eyes to heaven but beat his breast and prayed, \"O God, be merciful to me a sinner.\" I tell you, the latter went home justified, not the former.",
+            "cite": {
+              "es": "Lucas 18, 13-14",
+              "en": "Luke 18:13-14"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Perdonar como Él perdona",
+            "en": "Forgive as He forgives"
+          },
+          "es": "La misericordia recibida se vuelve misericordia dada.",
+          "en": "Mercy received becomes mercy given.",
+          "scripture": {
+            "es": "Porque si perdonan a los demás las ofensas que les hayan cometido, también su Padre del cielo les perdonará a ustedes. Pero si no perdonan a los demás, tampoco su Padre les perdonará sus ofensas.",
+            "en": "If you forgive others their transgressions, your heavenly Father will forgive you. But if you do not forgive others, neither will your Father forgive your transgressions.",
+            "cite": {
+              "es": "Mateo 6, 14-15",
+              "en": "Matthew 6:14-15"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Cuidar al más pequeño",
+            "en": "Care for the least"
+          },
+          "es": "«Lo hicieron conmigo».",
+          "en": "\"You did it to me.\"",
+          "scripture": {
+            "es": "Les aseguro que cada vez que lo hicieron con uno de estos hermanos míos más pequeños, conmigo lo hicieron.",
+            "en": "Amen, I say to you, whatever you did for one of these least brothers of mine, you did for me.",
+            "cite": {
+              "es": "Mateo 25, 40",
+              "en": "Matthew 25:40"
+            }
+          }
+        },
+        {
+          "type": "list",
+          "title": {
+            "es": "También le agrada",
+            "en": "It also pleases Him"
+          },
+          "items": [
+            {
+              "es": "La confianza del que lo llama «Padre nuestro» cada día.",
+              "en": "The trust of one who calls Him \"Our Father\" each day."
+            },
+            {
+              "es": "El silencio de quien solo quiere estar con Él.",
+              "en": "The silence of one who only wants to be with Him."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "title": {
+            "es": "Espera de nosotros",
+            "en": "He expects of us"
+          },
+          "items": [
+            {
+              "es": "Que confiemos en Él como un hijo confía — no como esclavo con miedo.",
+              "en": "That we trust Him as a child trusts — not as a slave in fear."
+            },
+            {
+              "es": "Que seamos misericordiosos «como el Padre es misericordioso».",
+              "en": "That we be merciful \"as the Father is merciful\"."
+            },
+            {
+              "es": "Que amemos «como Él me amó primero».",
+              "en": "That we love \"as He loved me first\"."
+            },
+            {
+              "es": "Que busquemos su Reino antes que nuestra ansiedad.",
+              "en": "That we seek His Kingdom before our anxiety."
+            },
+            {
+              "es": "Que volvamos cuando nos alejamos — siempre hay camino a casa.",
+              "en": "That we return when we drift away — there is always a way home."
+            }
+          ]
+        },
+        {
+          "type": "scripture",
+          "es": "Porque no habéis recibido un espíritu de esclavitud para volver al temor, sino un espíritu de adopción, por el cual clamamos: ¡Abba, Padre!",
+          "en": "For you did not receive a spirit of slavery to fall back into fear, but you received a spirit of adoption, through which we cry, \"Abba, Father!\"",
+          "cite": {
+            "es": "Romanos 8, 15",
+            "en": "Romans 8:15"
+          }
+        },
+        {
+          "type": "scripture",
+          "es": "Sean misericordiosos, como también su Padre es misericordioso.",
+          "en": "Be merciful, just as your Father is merciful.",
+          "cite": {
+            "es": "Lucas 6, 36",
+            "en": "Luke 6:36"
+          }
+        },
+        {
+          "type": "scripture",
+          "es": "Nosotros amamos porque él nos amó primero.",
+          "en": "We love because he first loved us.",
+          "cite": {
+            "es": "1 Juan 4, 19",
+            "en": "1 John 4:19"
+          }
+        },
+        {
+          "type": "scripture",
+          "es": "Busquen en primer lugar el Reino de Dios y su justicia, y todas esas cosas les serán añadidas.",
+          "en": "But seek first the kingdom of God and his righteousness, and all these things will be given you besides.",
+          "cite": {
+            "es": "Mateo 6, 33",
+            "en": "Matthew 6:33"
+          }
+        },
+        {
+          "type": "scripture",
+          "es": "Todavía estaba lejos, cuando su padre lo vio y se conmovió; corrió a su encuentro, lo abrazó y lo besó.",
+          "en": "While he was still a long way off, his father caught sight of him, and was filled with compassion. He ran to his son, embraced him and kissed him.",
+          "cite": {
+            "es": "Lucas 15, 20",
+            "en": "Luke 15:20"
+          }
+        }
       ]
     },
     {
       "id": "fears",
       "icon": "😰",
-      "title": { "es": "Miedos comunes al hablar con el Padre", "en": "Common fears when speaking to the Father" },
-      "summary": { "es": "Tus miedos son reales. El Padre los escucha también.", "en": "Your fears are real. The Father hears them too." },
+      "title": {
+        "es": "Miedos comunes al hablar con el Padre",
+        "en": "Common fears when speaking to the Father"
+      },
+      "summary": {
+        "es": "Tus miedos son reales. El Padre los escucha también.",
+        "en": "Your fears are real. The Father hears them too."
+      },
       "blocks": [
-        { "type": "sub", "title": { "es": "«Me va a castigar»", "en": "\"He will punish me\"" }, "es": "El Padre disciplina como padre amoroso, no como verdugo. La Cruz ya pagó lo que merecías.", "en": "The Father disciplines as a loving father, not as executioner. The Cross already paid what you deserved.", "scripture": { "es": "Hijo mío, no desprecies la corrección del Señor, ni te desalientes cuando te reprenda; porque el Señor corrige al que ama, y castiga al hijo que acoge. Dios los trata a ustedes como a hijos, porque ¿qué hijo hay a quien su padre no corrija? Si no reciben la corrección, de la que todos han sido partícipes, entonces son bastardos y no hijos.", "en": "My son, do not disdain the discipline of the Lord or lose heart when reproved by him; for whom the Lord loves, he disciplines; he scourges every son he receives. Endure your trials as discipline; God treats you as sons. For what son is there whom his father does not discipline? If you are without discipline, in which all have shared, you are not sons but bastards.", "cite": { "es": "Hebreos 12, 5-8 (BLA)", "en": "Hebrews 12:5-8 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "«No soy lo bastante bueno»", "en": "\"I am not good enough\"" }, "es": "Nadie lo es. El bautismo te hizo hijo adoptivo.", "en": "No one is. Baptism made you an adopted child.", "scripture": { "es": "Bendito sea el Dios y Padre de nuestro Señor Jesucristo, que nos bendijo con toda clase de bendiciones espirituales en los cielos, en Cristo. En él nos eligió, antes de la creación del mundo, para ser santos e irreprochables ante su presencia. En su amor nos predestinó a ser adoptados como hijos suyos por medio de Jesucristo.", "en": "Blessed be the God and Father of our Lord Jesus Christ, who has blessed us in Christ with every spiritual blessing in the heavens, as he chose us in him, before the foundation of the world, to be holy and without blemish before him. In love he destined us for adoption to himself through Jesus Christ.", "cite": { "es": "Efesios 1, 3-5 (BLA)", "en": "Ephesians 1:3-5 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "«Mi padre terrenal me falló»", "en": "\"My earthly father failed me\"" }, "es": "El Padre celestial no es la repetición de un padre humano. Jesús vino a revelar un rostro distinto.", "en": "The heavenly Father is not a repeat of a human father. Jesus came to reveal a different face.", "scripture": { "es": "Jesús le dijo: —Hace tiempo que estoy con ustedes, y todavía no me conoces, Felipe? El que me ha visto, ha visto al Padre.", "en": "Jesus said to him, \"Have I been with you for so long a time and you still do not know me, Philip? Whoever has seen me has seen the Father.\"", "cite": { "es": "Juan 14, 9 (BLA)", "en": "John 14:9 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "«No sé qué decir»", "en": "\"I do not know what to say\"" }, "es": "El Espíritu intercede cuando no encuentras palabras. El silencio también es oración.", "en": "The Spirit intercedes when you find no words. Silence is also prayer.", "scripture": { "es": "Del mismo modo, el Espíritu nos ayuda en nuestra flaqueza; pues no sabemos lo que debemos pedir, pero el Espíritu mismo intercede por nosotros con gemidos inefables.", "en": "In the same way, the Spirit too comes to the aid of our weakness; for we do not know how to pray as we ought, but the Spirit itself intercedes with inexpressible groanings.", "cite": { "es": "Romanos 8, 26 (BLA)", "en": "Romans 8:26 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "«Es mejor pedirle a María o a un santo»", "en": "\"Better to ask Mary or a saint\"" }, "es": "Puedes — ellos interceden. Pero el Padre quiere escucharte a ti también.", "en": "You may — they intercede. But the Father wants to hear you too.", "scripture": { "es": "Su madre dijo a los sirvientes: —Hagan todo lo que él les diga.", "en": "His mother said to the servers, \"Do whatever he tells you.\"", "cite": { "es": "Juan 2, 5 (BLA)", "en": "John 2:5 (NABRE)" } } }
+        {
+          "type": "sub",
+          "title": {
+            "es": "«Me va a castigar»",
+            "en": "\"He will punish me\""
+          },
+          "es": "El Padre disciplina como padre amoroso, no como verdugo. La Cruz ya pagó lo que merecías.",
+          "en": "The Father disciplines as a loving father, not as executioner. The Cross already paid what you deserved.",
+          "scripture": {
+            "es": "Hijo mío, no desprecies la corrección del Señor, ni te desalientes cuando te reprenda; porque el Señor corrige al que ama, y castiga al hijo que acoge. Dios los trata a ustedes como a hijos, porque ¿qué hijo hay a quien su padre no corrija? Si no reciben la corrección, de la que todos han sido partícipes, entonces son bastardos y no hijos.",
+            "en": "My son, do not disdain the discipline of the Lord or lose heart when reproved by him; for whom the Lord loves, he disciplines; he scourges every son he receives. Endure your trials as discipline; God treats you as sons. For what son is there whom his father does not discipline? If you are without discipline, in which all have shared, you are not sons but bastards.",
+            "cite": {
+              "es": "Hebreos 12, 5-8",
+              "en": "Hebrews 12:5-8"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "«No soy lo bastante bueno»",
+            "en": "\"I am not good enough\""
+          },
+          "es": "Nadie lo es. El bautismo te hizo hijo adoptivo.",
+          "en": "No one is. Baptism made you an adopted child.",
+          "scripture": {
+            "es": "Bendito sea el Dios y Padre de nuestro Señor Jesucristo, que nos bendijo con toda clase de bendiciones espirituales en los cielos, en Cristo. En él nos eligió, antes de la creación del mundo, para ser santos e irreprochables ante su presencia. En su amor nos predestinó a ser adoptados como hijos suyos por medio de Jesucristo.",
+            "en": "Blessed be the God and Father of our Lord Jesus Christ, who has blessed us in Christ with every spiritual blessing in the heavens, as he chose us in him, before the foundation of the world, to be holy and without blemish before him. In love he destined us for adoption to himself through Jesus Christ.",
+            "cite": {
+              "es": "Efesios 1, 3-5",
+              "en": "Ephesians 1:3-5"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "«Mi padre terrenal me falló»",
+            "en": "\"My earthly father failed me\""
+          },
+          "es": "El Padre celestial no es la repetición de un padre humano. Jesús vino a revelar un rostro distinto.",
+          "en": "The heavenly Father is not a repeat of a human father. Jesus came to reveal a different face.",
+          "scripture": {
+            "es": "Jesús le dijo: —Hace tiempo que estoy con ustedes, y todavía no me conoces, Felipe? El que me ha visto, ha visto al Padre.",
+            "en": "Jesus said to him, \"Have I been with you for so long a time and you still do not know me, Philip? Whoever has seen me has seen the Father.\"",
+            "cite": {
+              "es": "Juan 14, 9",
+              "en": "John 14:9"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "«No sé qué decir»",
+            "en": "\"I do not know what to say\""
+          },
+          "es": "El Espíritu intercede cuando no encuentras palabras. El silencio también es oración.",
+          "en": "The Spirit intercedes when you find no words. Silence is also prayer.",
+          "scripture": {
+            "es": "Del mismo modo, el Espíritu nos ayuda en nuestra flaqueza; pues no sabemos lo que debemos pedir, pero el Espíritu mismo intercede por nosotros con gemidos inefables.",
+            "en": "In the same way, the Spirit too comes to the aid of our weakness; for we do not know how to pray as we ought, but the Spirit itself intercedes with inexpressible groanings.",
+            "cite": {
+              "es": "Romanos 8, 26",
+              "en": "Romans 8:26"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "«Es mejor pedirle a María o a un santo»",
+            "en": "\"Better to ask Mary or a saint\""
+          },
+          "es": "Puedes — ellos interceden. Pero el Padre quiere escucharte a ti también.",
+          "en": "You may — they intercede. But the Father wants to hear you too.",
+          "scripture": {
+            "es": "Su madre dijo a los sirvientes: —Hagan todo lo que él les diga.",
+            "en": "His mother said to the servers, \"Do whatever he tells you.\"",
+            "cite": {
+              "es": "Juan 2, 5",
+              "en": "John 2:5"
+            }
+          }
+        }
       ]
     },
     {
       "id": "suffering",
       "icon": "✚",
-      "title": { "es": "El Padre y el sufrimiento", "en": "The Father and suffering" },
-      "summary": { "es": "¿Por qué duele si Él es bueno? La Cruz responde.", "en": "Why does it hurt if He is good? The Cross answers." },
+      "title": {
+        "es": "El Padre y el sufrimiento",
+        "en": "The Father and suffering"
+      },
+      "summary": {
+        "es": "¿Por qué duele si Él es bueno? La Cruz responde.",
+        "en": "Why does it hurt if He is good? The Cross answers."
+      },
       "blocks": [
-        { "type": "p", "es": "El Padre no es indiferente al dolor. En la Cruz, entregó a su Hijo único por amor a ti. El sufrimiento no es castigo automático por cada pecado — a veces es misterio, a veces disciplina, siempre es terreno donde Cristo camina contigo.", "en": "The Father is not indifferent to pain. On the Cross, He gave His only Son out of love for you. Suffering is not automatic punishment for every sin — sometimes it is mystery, sometimes discipline, always ground where Christ walks with you." },
-        { "type": "scripture", "es": "El que no escatimó a su propio Hijo, sino que lo entregó por todos nosotros, ¿cómo no nos dará también con él todas las cosas?", "en": "He who did not spare his own Son but handed him over for us all, how will he not also give us everything else along with him?", "cite": { "es": "Romanos 8, 32 (BLA)", "en": "Romans 8:32 (NABRE)" } },
-        { "type": "scripture", "es": "Les he dicho esto para que tengan paz en mí. En el mundo tendrán que luchar; pero tengan confianza, yo he vencido al mundo.", "en": "I have told you this so that you might have peace in me. In the world you will have trouble, but take courage, I have conquered the world.", "cite": { "es": "Juan 16, 33 (BLA)", "en": "John 16:33 (NABRE)" } }
+        {
+          "type": "p",
+          "es": "El Padre no es indiferente al dolor. En la Cruz, entregó a su Hijo único por amor a ti. El sufrimiento no es castigo automático por cada pecado — a veces es misterio, a veces disciplina, siempre es terreno donde Cristo camina contigo.",
+          "en": "The Father is not indifferent to pain. On the Cross, He gave His only Son out of love for you. Suffering is not automatic punishment for every sin — sometimes it is mystery, sometimes discipline, always ground where Christ walks with you."
+        },
+        {
+          "type": "scripture",
+          "es": "El que no escatimó a su propio Hijo, sino que lo entregó por todos nosotros, ¿cómo no nos dará también con él todas las cosas?",
+          "en": "He who did not spare his own Son but handed him over for us all, how will he not also give us everything else along with him?",
+          "cite": {
+            "es": "Romanos 8, 32",
+            "en": "Romans 8:32"
+          }
+        },
+        {
+          "type": "scripture",
+          "es": "Les he dicho esto para que tengan paz en mí. En el mundo tendrán que luchar; pero tengan confianza, yo he vencido al mundo.",
+          "en": "I have told you this so that you might have peace in me. In the world you will have trouble, but take courage, I have conquered the world.",
+          "cite": {
+            "es": "Juan 16, 33",
+            "en": "John 16:33"
+          }
+        }
       ]
     },
     {
       "id": "sacraments",
       "icon": "💧",
-      "title": { "es": "El Padre en los sacramentos", "en": "The Father in the sacraments" },
-      "summary": { "es": "Cada sacramento es encuentro con el amor del Padre por Cristo.", "en": "Each sacrament is encounter with the Father's love through Christ." },
+      "title": {
+        "es": "El Padre en los sacramentos",
+        "en": "The Father in the sacraments"
+      },
+      "summary": {
+        "es": "Cada sacramento es encuentro con el amor del Padre por Cristo.",
+        "en": "Each sacrament is encounter with the Father's love through Christ."
+      },
       "blocks": [
-        { "type": "sub", "title": { "es": "Bautismo", "en": "Baptism" }, "es": "Te hace hijo adoptivo del Padre. «Abba» es tu identidad.", "en": "It makes you an adopted child of the Father. \"Abba\" is your identity.", "scripture": { "es": "Para demostrar que sois hijos, Dios envió a nuestros corazones el Espíritu de su Hijo, que clama: ¡Abba, Padre! Por lo tanto, ya no eres esclavo, sino hijo; y si eres hijo, eres también heredero por la voluntad de Dios.", "en": "As proof that you are children, God sent the spirit of his Son into our hearts, crying out, \"Abba, Father!\" So you are no longer a slave but a child, and if a child then also an heir, through God.", "cite": { "es": "Gálatas 4, 6-7 (BLA)", "en": "Galatians 4:6-7 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Confesión", "en": "Confession" }, "es": "El Padre del hijo pródigo te recibe cada vez.", "en": "The prodigal son's Father receives you each time.", "scripture": { "es": "Todavía estaba lejos, cuando su padre lo vio y se conmovió; corrió a su encuentro, lo abrazó y lo besó. Traigan el becerro gordo y matenlo: comamos y festejemos, porque este hijo mío estaba muerto y ha vuelto a la vida.", "en": "While he was still a long way off, his father caught sight of him, and was filled with compassion. He ran to his son, embraced him and kissed him. Take the fattened calf and slaughter it. Then let us celebrate with a feast, because this son of mine was dead, and has come to life again.", "cite": { "es": "Lucas 15, 20-24 (BLA)", "en": "Luke 15:20-24 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Eucaristía", "en": "Eucharist" }, "es": "El Pan que el Padre da cada día.", "en": "The Bread the Father gives each day.", "scripture": { "es": "Danos hoy el pan que necesitamos. // Jesús les dijo: —Yo soy el pan de vida; el que viene a mí no tendrá hambre, y el que cree en mí no tendrá sed jamás.", "en": "Give us today our daily bread. // Jesus said to them, \"I am the bread of life; whoever comes to me will never hunger, and whoever believes in me will never thirst.\"", "cite": { "es": "Mateo 6, 11 · Juan 6, 35 (BLA)", "en": "Matthew 6:11 · John 6:35 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Unción de enfermos", "en": "Anointing of the Sick" }, "es": "El Padre acompaña en la enfermedad. No te suelta en la cruz de la enfermedad.", "en": "The Father accompanies in illness. He does not let go on the cross of sickness." },
-        { "type": "sub", "title": { "es": "Matrimonio y Orden", "en": "Marriage and Holy Orders" }, "es": "El Padre bendice vocaciones para construir su Reino en la Iglesia y en el mundo.", "en": "The Father blesses vocations to build His Kingdom in the Church and the world." }
+        {
+          "type": "sub",
+          "title": {
+            "es": "Bautismo",
+            "en": "Baptism"
+          },
+          "es": "Te hace hijo adoptivo del Padre. «Abba» es tu identidad.",
+          "en": "It makes you an adopted child of the Father. \"Abba\" is your identity.",
+          "scripture": {
+            "es": "Para demostrar que sois hijos, Dios envió a nuestros corazones el Espíritu de su Hijo, que clama: ¡Abba, Padre! Por lo tanto, ya no eres esclavo, sino hijo; y si eres hijo, eres también heredero por la voluntad de Dios.",
+            "en": "As proof that you are children, God sent the spirit of his Son into our hearts, crying out, \"Abba, Father!\" So you are no longer a slave but a child, and if a child then also an heir, through God.",
+            "cite": {
+              "es": "Gálatas 4, 6-7",
+              "en": "Galatians 4:6-7"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Confesión",
+            "en": "Confession"
+          },
+          "es": "El Padre del hijo pródigo te recibe cada vez.",
+          "en": "The prodigal son's Father receives you each time.",
+          "scripture": {
+            "es": "Todavía estaba lejos, cuando su padre lo vio y se conmovió; corrió a su encuentro, lo abrazó y lo besó. Traigan el becerro gordo y matenlo: comamos y festejemos, porque este hijo mío estaba muerto y ha vuelto a la vida.",
+            "en": "While he was still a long way off, his father caught sight of him, and was filled with compassion. He ran to his son, embraced him and kissed him. Take the fattened calf and slaughter it. Then let us celebrate with a feast, because this son of mine was dead, and has come to life again.",
+            "cite": {
+              "es": "Lucas 15, 20-24",
+              "en": "Luke 15:20-24"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Eucaristía",
+            "en": "Eucharist"
+          },
+          "es": "El Pan que el Padre da cada día.",
+          "en": "The Bread the Father gives each day.",
+          "scripture": {
+            "es": "Danos hoy el pan que necesitamos. // Jesús les dijo: —Yo soy el pan de vida; el que viene a mí no tendrá hambre, y el que cree en mí no tendrá sed jamás.",
+            "en": "Give us today our daily bread. // Jesus said to them, \"I am the bread of life; whoever comes to me will never hunger, and whoever believes in me will never thirst.\"",
+            "cite": {
+              "es": "Mateo 6, 11 · Juan 6, 35",
+              "en": "Matthew 6:11 · John 6:35"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Unción de enfermos",
+            "en": "Anointing of the Sick"
+          },
+          "es": "El Padre acompaña en la enfermedad. No te suelta en la cruz de la enfermedad.",
+          "en": "The Father accompanies in illness. He does not let go on the cross of sickness."
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Matrimonio y Orden",
+            "en": "Marriage and Holy Orders"
+          },
+          "es": "El Padre bendice vocaciones para construir su Reino en la Iglesia y en el mundo.",
+          "en": "The Father blesses vocations to build His Kingdom in the Church and the world."
+        }
       ]
     },
     {
       "id": "adoption",
       "icon": "👨‍👩‍👧",
-      "title": { "es": "Adopción filial — eres hijo, no empleado", "en": "Filial adoption — you are a child, not an employee" },
-      "summary": { "es": "No trabajas para ganar amor. Ya lo tienes.", "en": "You do not work to earn love. You already have it." },
+      "title": {
+        "es": "Adopción filial — eres hijo, no empleado",
+        "en": "Filial adoption — you are a child, not an employee"
+      },
+      "summary": {
+        "es": "No trabajas para ganar amor. Ya lo tienes.",
+        "en": "You do not work to earn love. You already have it."
+      },
       "blocks": [
-        { "type": "scripture", "es": "Porque no habéis recibido un espíritu de esclavitud para volver al temor, sino un espíritu de adopción, por el cual clamamos: ¡Abba, Padre! Y si somos hijos, somos también herederos: herederos de Dios y coherederos con Cristo.", "en": "For you did not receive a spirit of slavery to fall back into fear, but you received a spirit of adoption, through which we cry, \"Abba, Father!\" And if children, then heirs, heirs of God and joint heirs with Christ.", "cite": { "es": "Romanos 8, 15.17 (BLA)", "en": "Romans 8:15, 17 (NABRE)" } },
-        { "type": "scripture", "es": "Miren qué gran amor nos ha tenido el Padre, que seamos llamados hijos de Dios. ¡Y lo somos!", "en": "See what love the Father has bestowed on us that we may be called the children of God. Yet so we are.", "cite": { "es": "1 Juan 3, 1 (BLA)", "en": "1 John 3:1 (NABRE)" } },
-        { "type": "p", "es": "Un empleado teme perder el puesto. Un hijo puede fallar, pero sigue siendo de la casa. El Padre no te contrató: te adoptó.", "en": "An employee fears losing the job. A child may fail, but remains of the house. The Father did not hire you: He adopted you." }
+        {
+          "type": "scripture",
+          "es": "Porque no habéis recibido un espíritu de esclavitud para volver al temor, sino un espíritu de adopción, por el cual clamamos: ¡Abba, Padre! Y si somos hijos, somos también herederos: herederos de Dios y coherederos con Cristo.",
+          "en": "For you did not receive a spirit of slavery to fall back into fear, but you received a spirit of adoption, through which we cry, \"Abba, Father!\" And if children, then heirs, heirs of God and joint heirs with Christ.",
+          "cite": {
+            "es": "Romanos 8, 15.17",
+            "en": "Romans 8:15, 17"
+          }
+        },
+        {
+          "type": "scripture",
+          "es": "Miren qué gran amor nos ha tenido el Padre, que seamos llamados hijos de Dios. ¡Y lo somos!",
+          "en": "See what love the Father has bestowed on us that we may be called the children of God. Yet so we are.",
+          "cite": {
+            "es": "1 Juan 3, 1",
+            "en": "1 John 3:1"
+          }
+        },
+        {
+          "type": "p",
+          "es": "Un empleado teme perder el puesto. Un hijo puede fallar, pero sigue siendo de la casa. El Padre no te contrató: te adoptó.",
+          "en": "An employee fears losing the job. A child may fail, but remains of the house. The Father did not hire you: He adopted you."
+        }
       ]
     },
     {
       "id": "spirit_teacher",
       "icon": "🕊",
-      "title": { "es": "El Espíritu Santo te enseña a hablar con el Padre", "en": "The Holy Spirit teaches you to speak with the Father" },
-      "summary": { "es": "No estás solo en el silencio. El Espíritu ora en ti.", "en": "You are not alone in silence. The Spirit prays in you." },
+      "title": {
+        "es": "El Espíritu Santo te enseña a hablar con el Padre",
+        "en": "The Holy Spirit teaches you to speak with the Father"
+      },
+      "summary": {
+        "es": "No estás solo en el silencio. El Espíritu ora en ti.",
+        "en": "You are not alone in silence. The Spirit prays in you."
+      },
       "blocks": [
-        { "type": "scripture", "es": "Del mismo modo, el Espíritu nos ayuda en nuestra flaqueza; pues no sabemos lo que debemos pedir, pero el Espíritu mismo intercede por nosotros con gemidos inefables. Y el que escudriña los corazones sabe cuál es la intención del Espíritu, porque intercede por los santos conforme a la voluntad de Dios.", "en": "In the same way, the Spirit too comes to the aid of our weakness; for we do not know how to pray as we ought, but the Spirit itself intercedes with inexpressible groanings. And the one who searches hearts knows what is the intention of the Spirit, because it intercedes for the holy ones according to God's will.", "cite": { "es": "Romanos 8, 26-27 (BLA)", "en": "Romans 8:26-27 (NABRE)" } },
-        { "type": "p", "es": "Antes de hablar, pide: «Ven, Espíritu Santo. Enséñame a decir Abba.» Él es el maestro interior de toda oración cristiana (CIC 2670-2672).", "en": "Before speaking, ask: \"Come, Holy Spirit. Teach me to say Abba.\" He is the interior teacher of all Christian prayer (CCC 2670-2672)." }
+        {
+          "type": "scripture",
+          "es": "Del mismo modo, el Espíritu nos ayuda en nuestra flaqueza; pues no sabemos lo que debemos pedir, pero el Espíritu mismo intercede por nosotros con gemidos inefables. Y el que escudriña los corazones sabe cuál es la intención del Espíritu, porque intercede por los santos conforme a la voluntad de Dios.",
+          "en": "In the same way, the Spirit too comes to the aid of our weakness; for we do not know how to pray as we ought, but the Spirit itself intercedes with inexpressible groanings. And the one who searches hearts knows what is the intention of the Spirit, because it intercedes for the holy ones according to God's will.",
+          "cite": {
+            "es": "Romanos 8, 26-27",
+            "en": "Romans 8:26-27"
+          }
+        },
+        {
+          "type": "p",
+          "es": "Antes de hablar, pide: «Ven, Espíritu Santo. Enséñame a decir Abba.» Él es el maestro interior de toda oración cristiana (CIC 2670-2672).",
+          "en": "Before speaking, ask: \"Come, Holy Spirit. Teach me to say Abba.\" He is the interior teacher of all Christian prayer (CCC 2670-2672)."
+        }
       ]
     },
     {
       "id": "conversation",
       "icon": "💬",
-      "title": { "es": "21 frases para empezar la conversación", "en": "21 phrases to start the conversation" },
-      "summary": { "es": "Elige una. Dila en voz alta. El Padre escucha.", "en": "Choose one. Say it aloud. The Father listens." },
+      "title": {
+        "es": "21 frases para empezar la conversación",
+        "en": "21 phrases to start the conversation"
+      },
+      "summary": {
+        "es": "Elige una. Dila en voz alta. El Padre escucha.",
+        "en": "Choose one. Say it aloud. The Father listens."
+      },
       "blocks": [
-        { "type": "list", "collapsible": true, "items": [
-          { "es": "«Padre, no te conozco bien. Quiero conocerte. Enséñame.»", "en": "\"Father, I do not know You well. I want to know You. Teach me.\"" },
-          { "es": "«Padre, me cuesta hablarte. Quédate conmigo en este silencio.»", "en": "\"Father, it is hard for me to speak to You. Stay with me in this silence.\"" },
-          { "es": "«Padre, tengo miedo de defraudarte. Recuérdame que soy tu hijo.»", "en": "\"Father, I fear disappointing You. Remind me I am Your child.\"" },
-          { "es": "«Padre, gracias por [algo concreto de hoy].»", "en": "\"Father, thank You for [something concrete from today].\"" },
-          { "es": "«Padre, esto me pesa: [nómbralo]. No lo sé resolver. Tú sí.»", "en": "\"Father, this weighs on me: [name it]. I cannot fix it. You can.\"" },
-          { "es": "«Padre, hágase tu voluntad — ayúdame a quererla.»", "en": "\"Father, Thy will be done — help me want it.\"" },
-          { "es": "«Padre, bendice a [nombre de alguien que amas].»", "en": "\"Father, bless [name someone you love].\"" },
-          { "es": "«Padre, perdona mi [pecado concreto]. Quiero volver.»", "en": "\"Father, forgive my [specific sin]. I want to return.\"" },
-          { "es": "«Padre, enséñame a perdonar a [nombre].»", "en": "\"Father, teach me to forgive [name].\"" },
-          { "es": "«Padre, dame hoy el pan que necesito — material y espiritual.»", "en": "\"Father, give me today the bread I need — material and spiritual.\"" },
-          { "es": "«Padre, no me dejes caer en [tentación concreta].»", "en": "\"Father, do not let me fall into [specific temptation].\"" },
-          { "es": "«Padre, líbrame del mal que me rodea.»", "en": "\"Father, deliver me from the evil around me.\"" },
-          { "es": "«Padre, ¿qué quieres de mí hoy?»", "en": "\"Father, what do You want from me today?\"" },
-          { "es": "«Padre, siento que no te siento. Ayúdame a creer que estás.»", "en": "\"Father, I do not feel You. Help me believe You are here.\"" },
-          { "es": "«Padre, mira a mi familia. Cuídalos.»", "en": "\"Father, look at my family. Care for them.\"" },
-          { "es": "«Padre, gracias por Jesús, el Camino hacia ti.»", "en": "\"Father, thank You for Jesus, the Way to You.\"" },
-          { "es": "«Padre, ven, Espíritu Santo — enséñame a orar.»", "en": "\"Father, come Holy Spirit — teach me to pray.\"" },
-          { "es": "«Padre, quiero confiar como confía un niño.»", "en": "\"Father, I want to trust as a child trusts.\"" },
-          { "es": "«Padre, santificado sea tu Nombre en mi vida.»", "en": "\"Father, hallowed be Thy Name in my life.\"" },
-          { "es": "«Padre, venga tu Reino en mi corazón.»", "en": "\"Father, Thy Kingdom come in my heart.\"" },
-          { "es": "«Padre, ayúdame a creer que me quieres.»", "en": "\"Father, help me believe that You love me.\"" }
-        ]}
+        {
+          "type": "list",
+          "collapsible": true,
+          "items": [
+            {
+              "es": "«Padre, no te conozco bien. Quiero conocerte. Enséñame.»",
+              "en": "\"Father, I do not know You well. I want to know You. Teach me.\""
+            },
+            {
+              "es": "«Padre, me cuesta hablarte. Quédate conmigo en este silencio.»",
+              "en": "\"Father, it is hard for me to speak to You. Stay with me in this silence.\""
+            },
+            {
+              "es": "«Padre, tengo miedo de defraudarte. Recuérdame que soy tu hijo.»",
+              "en": "\"Father, I fear disappointing You. Remind me I am Your child.\""
+            },
+            {
+              "es": "«Padre, gracias por [algo concreto de hoy].»",
+              "en": "\"Father, thank You for [something concrete from today].\""
+            },
+            {
+              "es": "«Padre, esto me pesa: [nómbralo]. No lo sé resolver. Tú sí.»",
+              "en": "\"Father, this weighs on me: [name it]. I cannot fix it. You can.\""
+            },
+            {
+              "es": "«Padre, hágase tu voluntad — ayúdame a quererla.»",
+              "en": "\"Father, Thy will be done — help me want it.\""
+            },
+            {
+              "es": "«Padre, bendice a [nombre de alguien que amas].»",
+              "en": "\"Father, bless [name someone you love].\""
+            },
+            {
+              "es": "«Padre, perdona mi [pecado concreto]. Quiero volver.»",
+              "en": "\"Father, forgive my [specific sin]. I want to return.\""
+            },
+            {
+              "es": "«Padre, enséñame a perdonar a [nombre].»",
+              "en": "\"Father, teach me to forgive [name].\""
+            },
+            {
+              "es": "«Padre, dame hoy el pan que necesito — material y espiritual.»",
+              "en": "\"Father, give me today the bread I need — material and spiritual.\""
+            },
+            {
+              "es": "«Padre, no me dejes caer en [tentación concreta].»",
+              "en": "\"Father, do not let me fall into [specific temptation].\""
+            },
+            {
+              "es": "«Padre, líbrame del mal que me rodea.»",
+              "en": "\"Father, deliver me from the evil around me.\""
+            },
+            {
+              "es": "«Padre, ¿qué quieres de mí hoy?»",
+              "en": "\"Father, what do You want from me today?\""
+            },
+            {
+              "es": "«Padre, siento que no te siento. Ayúdame a creer que estás.»",
+              "en": "\"Father, I do not feel You. Help me believe You are here.\""
+            },
+            {
+              "es": "«Padre, mira a mi familia. Cuídalos.»",
+              "en": "\"Father, look at my family. Care for them.\""
+            },
+            {
+              "es": "«Padre, gracias por Jesús, el Camino hacia ti.»",
+              "en": "\"Father, thank You for Jesus, the Way to You.\""
+            },
+            {
+              "es": "«Padre, ven, Espíritu Santo — enséñame a orar.»",
+              "en": "\"Father, come Holy Spirit — teach me to pray.\""
+            },
+            {
+              "es": "«Padre, quiero confiar como confía un niño.»",
+              "en": "\"Father, I want to trust as a child trusts.\""
+            },
+            {
+              "es": "«Padre, santificado sea tu Nombre en mi vida.»",
+              "en": "\"Father, hallowed be Thy Name in my life.\""
+            },
+            {
+              "es": "«Padre, venga tu Reino en mi corazón.»",
+              "en": "\"Father, Thy Kingdom come in my heart.\""
+            },
+            {
+              "es": "«Padre, ayúdame a creer que me quieres.»",
+              "en": "\"Father, help me believe that You love me.\""
+            }
+          ]
+        }
       ]
     },
     {
-      "id": "thirty_days",
+      "id": "thirty_three_days",
       "icon": "🌅",
-      "title": { "es": "30 días para conocer al Padre", "en": "30 days to know the Father" },
-      "summary": { "es": "Un paso pequeño cada día. Sin presión.", "en": "One small step each day. No pressure." },
+      "title": {
+        "es": "33 días para conocer al Padre",
+        "en": "33 days to know the Father"
+      },
+      "summary": {
+        "es": "Un paso cada día. Marca tu progreso con ✓",
+        "en": "One step each day. Track progress with ✓"
+      },
       "blocks": [
-        { "type": "p", "es": "Un paso pequeño cada día. Los días con lectura bíblica incluyen el texto completo.", "en": "One small step each day. Days with Bible reading include the full text." },
-        { "type": "sub", "title": { "es": "Día 1 — Padre Nuestro", "en": "Day 1 — Our Father" }, "es": "Lee despacio. Una frase por oración.", "en": "Read slowly. One line per prayer.", "scripture": { "es": "Ustedes deben orar así: Padre nuestro que estás en el cielo, santificado sea tu nombre; venga a nosotros tu Reino; hágase tu voluntad en la tierra como en el cielo. Danos hoy el pan que necesitamos; perdónanos nuestras ofensas, como también nosotros perdonamos a los que nos ofenden; no nos dejes caer en la tentación, y líbranos del mal.", "en": "This is how you are to pray: Our Father in heaven, hallowed be your name, your kingdom come, your will be done, on earth as in heaven. Give us today our daily bread; and forgive us our debts, as we forgive our debtors; and do not subject us to the final test, but deliver us from the evil one.", "cite": { "es": "Mateo 6, 9-13 (BLA)", "en": "Matthew 6:9-13 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Día 2 — Silencio", "en": "Day 2 — Silence" }, "es": "5 minutos: «Padre, aquí estoy.»", "en": "5 minutes: \"Father, here I am.\"" },
-        { "type": "sub", "title": { "es": "Día 3 — El hijo pródigo", "en": "Day 3 — Prodigal son" }, "es": "Imagina el abrazo del Padre.", "en": "Imagine the Father's embrace.", "scripture": { "es": "Todavía estaba lejos, cuando su padre lo vio y se conmovió; corrió a su encuentro, lo abrazó y lo besó. Traigan el becerro gordo y matenlo: comamos y festejemos, porque este hijo mío estaba muerto y ha vuelto a la vida.", "en": "While he was still a long way off, his father caught sight of him, and was filled with compassion. He ran to his son, embraced him and kissed him. Take the fattened calf and slaughter it. Then let us celebrate with a feast, because this son of mine was dead, and has come to life again.", "cite": { "es": "Lucas 15, 20-24 (BLA)", "en": "Luke 15:20-24 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Día 4 — Gracias", "en": "Day 4 — Thanks" }, "es": "Da gracias al Padre por 3 cosas concretas de hoy.", "en": "Thank the Father for 3 concrete things from today." },
-        { "type": "sub", "title": { "es": "Día 5 — Abba", "en": "Day 5 — Abba" }, "es": "Pide al Espíritu que te enseñe «Abba».", "en": "Ask the Spirit to teach you \"Abba\".", "scripture": { "es": "Para demostrar que sois hijos, Dios envió a nuestros corazones el Espíritu de su Hijo, que clama: ¡Abba, Padre!", "en": "As proof that you are children, God sent the spirit of his Son into our hearts, crying out, \"Abba, Father!\"", "cite": { "es": "Gálatas 4, 6 (BLA)", "en": "Galatians 4:6 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Día 6 — El Padre no olvida", "en": "Day 6 — The Father does not forget" }, "es": "Lee y descansa en esta promesa.", "en": "Read and rest in this promise.", "scripture": { "es": "¿Acaso una mujer puede olvidarse de su niño de pecho, dejar de amar al hijo que dio a luz? Aun cuando ella lo olvidara, yo no te olvidaré.", "en": "Can a mother forget her infant, be without tenderness for the child of her womb? Even should she forget, I will never forget you.", "cite": { "es": "Isaías 49, 15 (BLA)", "en": "Isaiah 49:15 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Día 7 — Al despertar", "en": "Day 7 — Upon waking" }, "es": "Reza el Padre Nuestro al despertar.", "en": "Pray the Our Father upon waking." },
-        { "type": "sub", "title": { "es": "Día 8 — Quien ve a Jesús, ve al Padre", "en": "Day 8 — Whoever sees Jesus sees the Father" }, "es": "Mira a Jesús en Juan 14.", "en": "Look at Jesus in John 14.", "scripture": { "es": "Jesús le dijo: —Yo soy el camino, la verdad y la vida; nadie viene al Padre sino por mí. // Jesús le dijo: —Hace tiempo que estoy con ustedes, y todavía no me conoces, Felipe? El que me ha visto, ha visto al Padre.", "en": "Jesus said to him, \"I am the way and the truth and the life. No one comes to the Father except through me.\" // Jesus said to him, \"Have I been with you for so long a time and you still do not know me, Philip? Whoever has seen me has seen the Father.\"", "cite": { "es": "Juan 14, 6.9 (BLA)", "en": "John 14:6, 9 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Día 9 — Perdonar", "en": "Day 9 — Forgive" }, "es": "Perdona a alguien «como el Padre perdona».", "en": "Forgive someone \"as the Father forgives.\"" },
-        { "type": "sub", "title": { "es": "Día 10 — Confesión", "en": "Day 10 — Confession" }, "es": "Vuelve a casa del Padre.", "en": "Return to the Father's house." },
-        { "type": "sub", "title": { "es": "Día 11 — Misericordia del Padre", "en": "Day 11 — The Father's mercy" }, "es": "Lee el Salmo 103.", "en": "Read Psalm 103.", "scripture": { "es": "Bendice, alma mía, al Señor, y bendiga todo mi ser su santo nombre. Bendice, alma mía, al Señor, y no olvides ninguno de sus beneficios; él perdona todas tus culpas y sana todas tus enfermedades; rescata tu vida de la fosa y te corona de favores y misericordias; él colma de bienes tu vejez y renueva tu juventud como la del águila.", "en": "Bless the Lord, my soul; all my being, bless his holy name! Bless the Lord, my soul; and do not forget all his gifts, Who pardons all your sins, and heals all your ills, Who redeems your life from the pit, and crowns you with mercy and compassion, Who fills your days with good things, so your youth is renewed like the eagle's.", "cite": { "es": "Salmo 103, 1-5 (BLA)", "en": "Psalm 103:1-5 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Día 12 — El más pequeño", "en": "Day 12 — The least" }, "es": "Ayuda a alguien en necesidad.", "en": "Help someone in need.", "scripture": { "es": "Les aseguro que cada vez que lo hicieron con uno de estos hermanos míos más pequeños, conmigo lo hicieron.", "en": "Amen, I say to you, whatever you did for one of these least brothers of mine, you did for me.", "cite": { "es": "Mateo 25, 40 (BLA)", "en": "Matthew 25:40 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Día 13 — Carta", "en": "Day 13 — Letter" }, "es": "Escribe una carta honesta al Padre.", "en": "Write an honest letter to the Father." },
-        { "type": "sub", "title": { "es": "Día 14 — Eucaristía", "en": "Day 14 — Eucharist" }, "es": "Pan del Padre.", "en": "The Father's bread." },
-        { "type": "sub", "title": { "es": "Día 15 — Adopción", "en": "Day 15 — Adoption" }, "es": "Lee Romanos 8.", "en": "Read Romans 8.", "scripture": { "es": "Porque no habéis recibido un espíritu de esclavitud para volver al temor, sino un espíritu de adopción, por el cual clamamos: ¡Abba, Padre! Y si somos hijos, somos también herederos: herederos de Dios y coherederos con Cristo.", "en": "For you did not receive a spirit of slavery to fall back into fear, but you received a spirit of adoption, through which we cry, \"Abba, Father!\" And if children, then heirs, heirs of God and joint heirs with Christ.", "cite": { "es": "Romanos 8, 15.17 (BLA)", "en": "Romans 8:15, 17 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Día 16 — Pedir con confianza", "en": "Day 16 — Ask with trust" }, "es": "Pide algo concreto con confianza de hijo.", "en": "Ask for something concrete with childlike trust." },
-        { "type": "sub", "title": { "es": "Día 17 — Providencia", "en": "Day 17 — Providence" }, "es": "Lee Mateo 6.", "en": "Read Matthew 6.", "scripture": { "es": "Por eso les digo: no se preocupen por su vida, qué comerán o qué beberán; ni por su cuerpo, con qué se vestirán. ¿No vale ustedes más que las aves? Miren las aves del cielo: no siembran ni cosechan ni almacenan en graneros, y sin embargo su Padre celestial las alimenta. ¿No valen ustedes mucho más que ellas?", "en": "Therefore I tell you, do not worry about your life, what you will eat or drink, or about your body, what you will wear. Is not life more than food and the body more than clothing? Look at the birds in the sky; they do not sow or reap, they gather nothing into barns, yet your heavenly Father feeds them. Are not you more important than they?", "cite": { "es": "Mateo 6, 25-26 (BLA)", "en": "Matthew 6:25-26 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Día 18 — Noche", "en": "Day 18 — Night" }, "es": "«Padre, hoy fui tu hijo. Mañana quiero volver.»", "en": "\"Father, today I was Your child. Tomorrow I want to return.\"" },
-        { "type": "sub", "title": { "es": "Día 19 — Hijos de Dios", "en": "Day 19 — Children of God" }, "es": "Lee 1 Juan 3.", "en": "Read 1 John 3.", "scripture": { "es": "Miren qué gran amor nos ha tenido el Padre, que seamos llamados hijos de Dios. ¡Y lo somos!", "en": "See what love the Father has bestowed on us that we may be called the children of God. Yet so we are.", "cite": { "es": "1 Juan 3, 1 (BLA)", "en": "1 John 3:1 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Día 20 — Compartir", "en": "Day 20 — Share" }, "es": "Dile a alguien que el Padre lo ama.", "en": "Tell someone the Father loves them." },
-        { "type": "sub", "title": { "es": "Día 21 — Jesús enseña a orar", "en": "Day 21 — Jesus teaches to pray" }, "es": "Lee Lucas 11.", "en": "Read Luke 11.", "scripture": { "es": "Un día, Jesús estaba orando en cierto lugar. Cuando terminó, uno de sus discípulos le dijo: —Señor, enséñanos a orar, como Juan enseñó a sus discípulos. Él les dijo: —Cuando oren, digan: Padre, santificado sea tu nombre; venga tu Reino; danos cada día el pan que necesitamos; perdónanos nuestros pecados, porque también nosotros perdonamos a todo el que nos ofende; y no nos dejes caer en la tentación.", "en": "He was praying in a certain place, and when he had finished, one of his disciples said to him, \"Lord, teach us to pray just as John taught his disciples.\" He said to them, \"When you pray, say: Father, hallowed be your name, your kingdom come. Give us each day our daily bread and forgive us our sins for we ourselves forgive everyone in debt to us, and do not subject us to the final test.\"", "cite": { "es": "Lucas 11, 1-4 (BLA)", "en": "Luke 11:1-4 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Día 22 — Ayuno", "en": "Day 22 — Fast" }, "es": "Ayuno pequeño — unirse al Hijo.", "en": "Small fast — unite with the Son." },
-        { "type": "sub", "title": { "es": "Día 23 — Visitar", "en": "Day 23 — Visit" }, "es": "Visita o llama a alguien solo.", "en": "Visit or call someone who is lonely." },
-        { "type": "sub", "title": { "es": "Día 24 — Acceso al Padre", "en": "Day 24 — Access to the Father" }, "es": "Lee Efesios 2.", "en": "Read Ephesians 2.", "scripture": { "es": "Porque por medio de él nosotros, los judíos y los paganos, tenemos en un mismo Espíritu acceso al Padre.", "en": "For through him we both have access in one Spirit to the Father.", "cite": { "es": "Efesios 2, 18 (BLA)", "en": "Ephesians 2:18 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Día 25 — Enemigo", "en": "Day 25 — Enemy" }, "es": "Reza por un enemigo.", "en": "Pray for an enemy." },
-        { "type": "sub", "title": { "es": "Día 26 — Disciplina paternal", "en": "Day 26 — Fatherly discipline" }, "es": "Lee Hebreos 12.", "en": "Read Hebrews 12.", "scripture": { "es": "Hijo mío, no desprecies la corrección del Señor, ni te desalientes cuando te reprenda; porque el Señor corrige al que ama, y castiga al hijo que acoge.", "en": "My son, do not disdain the discipline of the Lord or lose heart when reproved by him; for whom the Lord loves, he disciplines; he scourges every son he receives.", "cite": { "es": "Hebreos 12, 5-6 (BLA)", "en": "Hebrews 12:5-6 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Día 27 — Adoración", "en": "Day 27 — Adoration" }, "es": "Estar con el Padre en la Eucaristía.", "en": "Be with the Father in the Eucharist." },
-        { "type": "sub", "title": { "es": "Día 28 — Carta del Padre", "en": "Day 28 — Father's letter" }, "es": "Lee la carta del Padre en esta página.", "en": "Read the Father's letter on this page." },
-        { "type": "sub", "title": { "es": "Día 29 — Invitar", "en": "Day 29 — Invite" }, "es": "Invita a alguien a rezar el Padre Nuestro.", "en": "Invite someone to pray the Our Father." },
-        { "type": "sub", "title": { "es": "Día 30 — Gracias", "en": "Day 30 — Thanks" }, "es": "«Padre, gracias por estos 30 días. Quiero seguir conociéndote.»", "en": "\"Father, thank You for these 30 days. I want to keep knowing You.\"" }
+        {
+          "type": "p",
+          "es": "Marca cada día al terminar. Tu progreso se guarda en este dispositivo.",
+          "en": "Check off each day when finished. Progress saves on this device."
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 1 — Padre Nuestro",
+            "en": "Day 1 — Our Father"
+          },
+          "es": "Lee despacio. Una frase por oración.",
+          "en": "Read slowly. One line per prayer.",
+          "scripture": {
+            "es": "Ustedes deben orar así: Padre nuestro que estás en el cielo, santificado sea tu nombre; venga a nosotros tu Reino; hágase tu voluntad en la tierra como en el cielo. Danos hoy el pan que necesitamos; perdónanos nuestras ofensas, como también nosotros perdonamos a los que nos ofenden; no nos dejes caer en la tentación, y líbranos del mal.",
+            "en": "This is how you are to pray: Our Father in heaven, hallowed be your name, your kingdom come, your will be done, on earth as in heaven. Give us today our daily bread; and forgive us our debts, as we forgive our debtors; and do not subject us to the final test, but deliver us from the evil one.",
+            "cite": {
+              "es": "Mateo 6, 9-13",
+              "en": "Matthew 6:9-13"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 2 — Silencio",
+            "en": "Day 2 — Silence"
+          },
+          "es": "5 minutos: «Padre, aquí estoy.»",
+          "en": "5 minutes: \"Father, here I am.\""
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 3 — El hijo pródigo",
+            "en": "Day 3 — Prodigal son"
+          },
+          "es": "Imagina el abrazo del Padre.",
+          "en": "Imagine the Father's embrace.",
+          "scripture": {
+            "es": "Todavía estaba lejos, cuando su padre lo vio y se conmovió; corrió a su encuentro, lo abrazó y lo besó. Traigan el becerro gordo y matenlo: comamos y festejemos, porque este hijo mío estaba muerto y ha vuelto a la vida.",
+            "en": "While he was still a long way off, his father caught sight of him, and was filled with compassion. He ran to his son, embraced him and kissed him. Take the fattened calf and slaughter it. Then let us celebrate with a feast, because this son of mine was dead, and has come to life again.",
+            "cite": {
+              "es": "Lucas 15, 20-24",
+              "en": "Luke 15:20-24"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 4 — Gracias",
+            "en": "Day 4 — Thanks"
+          },
+          "es": "Da gracias al Padre por 3 cosas concretas de hoy.",
+          "en": "Thank the Father for 3 concrete things from today."
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 5 — Abba",
+            "en": "Day 5 — Abba"
+          },
+          "es": "Pide al Espíritu que te enseñe «Abba».",
+          "en": "Ask the Spirit to teach you \"Abba\".",
+          "scripture": {
+            "es": "Para demostrar que sois hijos, Dios envió a nuestros corazones el Espíritu de su Hijo, que clama: ¡Abba, Padre!",
+            "en": "As proof that you are children, God sent the spirit of his Son into our hearts, crying out, \"Abba, Father!\"",
+            "cite": {
+              "es": "Gálatas 4, 6",
+              "en": "Galatians 4:6"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 6 — El Padre no olvida",
+            "en": "Day 6 — The Father does not forget"
+          },
+          "es": "Lee y descansa en esta promesa.",
+          "en": "Read and rest in this promise.",
+          "scripture": {
+            "es": "¿Acaso una mujer puede olvidarse de su niño de pecho, dejar de amar al hijo que dio a luz? Aun cuando ella lo olvidara, yo no te olvidaré.",
+            "en": "Can a mother forget her infant, be without tenderness for the child of her womb? Even should she forget, I will never forget you.",
+            "cite": {
+              "es": "Isaías 49, 15",
+              "en": "Isaiah 49:15"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 7 — Al despertar",
+            "en": "Day 7 — Upon waking"
+          },
+          "es": "Reza el Padre Nuestro al despertar.",
+          "en": "Pray the Our Father upon waking."
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 8 — Quien ve a Jesús, ve al Padre",
+            "en": "Day 8 — Whoever sees Jesus sees the Father"
+          },
+          "es": "Mira a Jesús en Juan 14.",
+          "en": "Look at Jesus in John 14.",
+          "scripture": {
+            "es": "Jesús le dijo: —Yo soy el camino, la verdad y la vida; nadie viene al Padre sino por mí. // Jesús le dijo: —Hace tiempo que estoy con ustedes, y todavía no me conoces, Felipe? El que me ha visto, ha visto al Padre.",
+            "en": "Jesus said to him, \"I am the way and the truth and the life. No one comes to the Father except through me.\" // Jesus said to him, \"Have I been with you for so long a time and you still do not know me, Philip? Whoever has seen me has seen the Father.\"",
+            "cite": {
+              "es": "Juan 14, 6.9",
+              "en": "John 14:6, 9"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 9 — Perdonar",
+            "en": "Day 9 — Forgive"
+          },
+          "es": "Perdona a alguien «como el Padre perdona».",
+          "en": "Forgive someone \"as the Father forgives.\""
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 10 — Confesión",
+            "en": "Day 10 — Confession"
+          },
+          "es": "Vuelve a casa del Padre.",
+          "en": "Return to the Father's house."
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 11 — Misericordia del Padre",
+            "en": "Day 11 — The Father's mercy"
+          },
+          "es": "Lee el Salmo 103.",
+          "en": "Read Psalm 103.",
+          "scripture": {
+            "es": "Bendice, alma mía, al Señor, y bendiga todo mi ser su santo nombre. Bendice, alma mía, al Señor, y no olvides ninguno de sus beneficios; él perdona todas tus culpas y sana todas tus enfermedades; rescata tu vida de la fosa y te corona de favores y misericordias; él colma de bienes tu vejez y renueva tu juventud como la del águila.",
+            "en": "Bless the Lord, my soul; all my being, bless his holy name! Bless the Lord, my soul; and do not forget all his gifts, Who pardons all your sins, and heals all your ills, Who redeems your life from the pit, and crowns you with mercy and compassion, Who fills your days with good things, so your youth is renewed like the eagle's.",
+            "cite": {
+              "es": "Salmo 103, 1-5",
+              "en": "Psalm 103:1-5"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 12 — El más pequeño",
+            "en": "Day 12 — The least"
+          },
+          "es": "Ayuda a alguien en necesidad.",
+          "en": "Help someone in need.",
+          "scripture": {
+            "es": "Les aseguro que cada vez que lo hicieron con uno de estos hermanos míos más pequeños, conmigo lo hicieron.",
+            "en": "Amen, I say to you, whatever you did for one of these least brothers of mine, you did for me.",
+            "cite": {
+              "es": "Mateo 25, 40",
+              "en": "Matthew 25:40"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 13 — Carta",
+            "en": "Day 13 — Letter"
+          },
+          "es": "Escribe una carta honesta al Padre.",
+          "en": "Write an honest letter to the Father."
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 14 — Eucaristía",
+            "en": "Day 14 — Eucharist"
+          },
+          "es": "Pan del Padre.",
+          "en": "The Father's bread."
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 15 — Adopción",
+            "en": "Day 15 — Adoption"
+          },
+          "es": "Lee Romanos 8.",
+          "en": "Read Romans 8.",
+          "scripture": {
+            "es": "Porque no habéis recibido un espíritu de esclavitud para volver al temor, sino un espíritu de adopción, por el cual clamamos: ¡Abba, Padre! Y si somos hijos, somos también herederos: herederos de Dios y coherederos con Cristo.",
+            "en": "For you did not receive a spirit of slavery to fall back into fear, but you received a spirit of adoption, through which we cry, \"Abba, Father!\" And if children, then heirs, heirs of God and joint heirs with Christ.",
+            "cite": {
+              "es": "Romanos 8, 15.17",
+              "en": "Romans 8:15, 17"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 16 — Pedir con confianza",
+            "en": "Day 16 — Ask with trust"
+          },
+          "es": "Pide algo concreto con confianza de hijo.",
+          "en": "Ask for something concrete with childlike trust."
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 17 — Providencia",
+            "en": "Day 17 — Providence"
+          },
+          "es": "Lee Mateo 6.",
+          "en": "Read Matthew 6.",
+          "scripture": {
+            "es": "Por eso les digo: no se preocupen por su vida, qué comerán o qué beberán; ni por su cuerpo, con qué se vestirán. ¿No vale ustedes más que las aves? Miren las aves del cielo: no siembran ni cosechan ni almacenan en graneros, y sin embargo su Padre celestial las alimenta. ¿No valen ustedes mucho más que ellas?",
+            "en": "Therefore I tell you, do not worry about your life, what you will eat or drink, or about your body, what you will wear. Is not life more than food and the body more than clothing? Look at the birds in the sky; they do not sow or reap, they gather nothing into barns, yet your heavenly Father feeds them. Are not you more important than they?",
+            "cite": {
+              "es": "Mateo 6, 25-26",
+              "en": "Matthew 6:25-26"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 18 — Noche",
+            "en": "Day 18 — Night"
+          },
+          "es": "«Padre, hoy fui tu hijo. Mañana quiero volver.»",
+          "en": "\"Father, today I was Your child. Tomorrow I want to return.\""
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 19 — Hijos de Dios",
+            "en": "Day 19 — Children of God"
+          },
+          "es": "Lee 1 Juan 3.",
+          "en": "Read 1 John 3.",
+          "scripture": {
+            "es": "Miren qué gran amor nos ha tenido el Padre, que seamos llamados hijos de Dios. ¡Y lo somos!",
+            "en": "See what love the Father has bestowed on us that we may be called the children of God. Yet so we are.",
+            "cite": {
+              "es": "1 Juan 3, 1",
+              "en": "1 John 3:1"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 20 — Compartir",
+            "en": "Day 20 — Share"
+          },
+          "es": "Dile a alguien que el Padre lo ama.",
+          "en": "Tell someone the Father loves them."
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 21 — Jesús enseña a orar",
+            "en": "Day 21 — Jesus teaches to pray"
+          },
+          "es": "Lee Lucas 11.",
+          "en": "Read Luke 11.",
+          "scripture": {
+            "es": "Un día, Jesús estaba orando en cierto lugar. Cuando terminó, uno de sus discípulos le dijo: —Señor, enséñanos a orar, como Juan enseñó a sus discípulos. Él les dijo: —Cuando oren, digan: Padre, santificado sea tu nombre; venga tu Reino; danos cada día el pan que necesitamos; perdónanos nuestros pecados, porque también nosotros perdonamos a todo el que nos ofende; y no nos dejes caer en la tentación.",
+            "en": "He was praying in a certain place, and when he had finished, one of his disciples said to him, \"Lord, teach us to pray just as John taught his disciples.\" He said to them, \"When you pray, say: Father, hallowed be your name, your kingdom come. Give us each day our daily bread and forgive us our sins for we ourselves forgive everyone in debt to us, and do not subject us to the final test.\"",
+            "cite": {
+              "es": "Lucas 11, 1-4",
+              "en": "Luke 11:1-4"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 22 — Ayuno",
+            "en": "Day 22 — Fast"
+          },
+          "es": "Ayuno pequeño — unirse al Hijo.",
+          "en": "Small fast — unite with the Son."
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 23 — Visitar",
+            "en": "Day 23 — Visit"
+          },
+          "es": "Visita o llama a alguien solo.",
+          "en": "Visit or call someone who is lonely."
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 24 — Acceso al Padre",
+            "en": "Day 24 — Access to the Father"
+          },
+          "es": "Lee Efesios 2.",
+          "en": "Read Ephesians 2.",
+          "scripture": {
+            "es": "Porque por medio de él nosotros, los judíos y los paganos, tenemos en un mismo Espíritu acceso al Padre.",
+            "en": "For through him we both have access in one Spirit to the Father.",
+            "cite": {
+              "es": "Efesios 2, 18",
+              "en": "Ephesians 2:18"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 25 — Enemigo",
+            "en": "Day 25 — Enemy"
+          },
+          "es": "Reza por un enemigo.",
+          "en": "Pray for an enemy."
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 26 — Disciplina paternal",
+            "en": "Day 26 — Fatherly discipline"
+          },
+          "es": "Lee Hebreos 12.",
+          "en": "Read Hebrews 12.",
+          "scripture": {
+            "es": "Hijo mío, no desprecies la corrección del Señor, ni te desalientes cuando te reprenda; porque el Señor corrige al que ama, y castiga al hijo que acoge.",
+            "en": "My son, do not disdain the discipline of the Lord or lose heart when reproved by him; for whom the Lord loves, he disciplines; he scourges every son he receives.",
+            "cite": {
+              "es": "Hebreos 12, 5-6",
+              "en": "Hebrews 12:5-6"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 27 — Adoración",
+            "en": "Day 27 — Adoration"
+          },
+          "es": "Estar con el Padre en la Eucaristía.",
+          "en": "Be with the Father in the Eucharist."
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 28 — Carta del Padre",
+            "en": "Day 28 — Father's letter"
+          },
+          "es": "Lee la carta del Padre en esta página.",
+          "en": "Read the Father's letter on this page."
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 29 — Invitar",
+            "en": "Day 29 — Invite"
+          },
+          "es": "Invita a alguien a rezar el Padre Nuestro.",
+          "en": "Invite someone to pray the Our Father."
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 30 — Una frase para el Padre",
+            "en": "Day 30 — A phrase for the Father"
+          },
+          "es": "Elige una frase de la sección «21 frases» y dila en voz alta.",
+          "en": "Choose one phrase from the «21 phrases» section and say it aloud.",
+          "scripture": {
+            "es": "En aquellos días, Jesús se retiró a la montaña para orar, y pasó toda la noche en oración a Dios.",
+            "en": "In those days he departed to the mountain to pray, and he spent the night in prayer to God.",
+            "cite": {
+              "es": "Lucas 6, 12",
+              "en": "Luke 6:12"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 31 — La voluntad del Padre",
+            "en": "Day 31 — The Father's will"
+          },
+          "es": "Confía más que tu plan. Pide al Padre que te enseñe a querer su voluntad.",
+          "en": "Trust more than your plan. Ask the Father to teach you to want His will.",
+          "scripture": {
+            "es": "Hágase tu voluntad en la tierra como en el cielo. // Y dijo: —Abba, Padre, para ti todo es posible; aparta de mí esta copa. Pero no lo que yo quiero, sino lo que tú quieras.",
+            "en": "Your will be done, on earth as in heaven. // He said, \"Abba, Father, all things are possible to you. Take this cup away from me, but not what I will but what you will.\"",
+            "cite": {
+              "es": "Mateo 6, 10 · Marcos 14, 36",
+              "en": "Matthew 6:10 · Mark 14:36"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 32 — El amor del Padre en la Cruz",
+            "en": "Day 32 — The Father's love on the Cross"
+          },
+          "es": "El Padre no se quedó lejos en el Calvario. Entregó a su Hijo por amor a ti.",
+          "en": "The Father did not stand far off at Calvary. He gave His Son for love of you.",
+          "scripture": {
+            "es": "El que no escatimó a su propio Hijo, sino que lo entregó por todos nosotros, ¿cómo no nos dará también con él todas las cosas?",
+            "en": "He who did not spare his own Son but handed him over for us all, how will he not also give us everything else along with him?",
+            "cite": {
+              "es": "Romanos 8, 32",
+              "en": "Romans 8:32"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Día 33 — Consagración al Padre",
+            "en": "Day 33 — Consecration to the Father"
+          },
+          "es": "Lee la carta del Padre en esta página. Termina con una oración sencilla de entrega.",
+          "en": "Read the Father's letter on this page. End with a simple prayer of surrender.",
+          "scripture": {
+            "es": "Miren qué gran amor nos ha tenido el Padre, que seamos llamados hijos de Dios. ¡Y lo somos! // Porque no habéis recibido un espíritu de esclavitud para volver al temor, sino un espíritu de adopción, por el cual clamamos: ¡Abba, Padre!",
+            "en": "See what love the Father has bestowed on us that we may be called the children of God. Yet so we are! // For you did not receive a spirit of slavery to fall back into fear, but you received a spirit of adoption, through which we cry, \"Abba, Father!\"",
+            "cite": {
+              "es": "1 Juan 3, 1 · Romanos 8, 15",
+              "en": "1 John 3:1 · Romans 8:15"
+            }
+          }
+        }
       ]
     },
     {
       "id": "saints",
       "icon": "👑",
-      "title": { "es": "Santos que nos enseñan sobre el Padre", "en": "Saints who teach us about the Father" },
-      "summary": { "es": "Ellos también aprendieron a decir Abba.", "en": "They too learned to say Abba." },
+      "title": {
+        "es": "Santos que nos enseñan sobre el Padre",
+        "en": "Saints who teach us about the Father"
+      },
+      "summary": {
+        "es": "Ellos también aprendieron a decir Abba.",
+        "en": "They too learned to say Abba."
+      },
       "blocks": [
-        { "type": "sub", "title": { "es": "San José", "en": "Saint Joseph" }, "es": "Guardián del Hijo. Modelo de padre terrenal que refleja la fidelidad del Padre celestial — silencioso, trabajador, protector.", "en": "Guardian of the Son. Model of earthly fatherhood reflecting the heavenly Father's fidelity — silent, working, protective." },
-        { "type": "sub", "title": { "es": "Santa Teresita", "en": "Saint Thérèse" }, "es": "«Pequeña vía» — confianza total del niño pequeño que duerme en los brazos del Padre.", "en": "\"Little way\" — total trust of a small child sleeping in the Father's arms." },
-        { "type": "sub", "title": { "es": "San Pío de Pietrelcina", "en": "Saint Pio of Pietrelcina" }, "es": "Llamaba «Padre celestial» con intimidad y temor reverente a la vez.", "en": "He called \"heavenly Father\" with intimacy and reverent awe at once." },
-        { "type": "sub", "title": { "es": "San Francisco de Asís", "en": "Saint Francis of Assisi" }, "es": "«Padre nuestro» como oración central. Hermano sol, hermana luna — todo creado por el Padre.", "en": "\"Our Father\" as central prayer. Brother sun, sister moon — all created by the Father." },
-        { "type": "sub", "title": { "es": "Santa Teresa de Jesús", "en": "Saint Teresa of Avila" }, "es": "«Contemplación es amistad estrecha» — amistad con Dios que empieza en el Padre.", "en": "\"Contemplation is close friendship\" — friendship with God that begins in the Father." }
+        {
+          "type": "sub",
+          "title": {
+            "es": "San José",
+            "en": "Saint Joseph"
+          },
+          "es": "Guardián del Hijo. Modelo de padre terrenal que refleja la fidelidad del Padre celestial — silencioso, trabajador, protector.",
+          "en": "Guardian of the Son. Model of earthly fatherhood reflecting the heavenly Father's fidelity — silent, working, protective."
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Santa Teresita",
+            "en": "Saint Thérèse"
+          },
+          "es": "«Pequeña vía» — confianza total del niño pequeño que duerme en los brazos del Padre.",
+          "en": "\"Little way\" — total trust of a small child sleeping in the Father's arms."
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "San Pío de Pietrelcina",
+            "en": "Saint Pio of Pietrelcina"
+          },
+          "es": "Llamaba «Padre celestial» con intimidad y temor reverente a la vez.",
+          "en": "He called \"heavenly Father\" with intimacy and reverent awe at once."
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "San Francisco de Asís",
+            "en": "Saint Francis of Assisi"
+          },
+          "es": "«Padre nuestro» como oración central. Hermano sol, hermana luna — todo creado por el Padre.",
+          "en": "\"Our Father\" as central prayer. Brother sun, sister moon — all created by the Father."
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Santa Teresa de Jesús",
+            "en": "Saint Teresa of Avila"
+          },
+          "es": "«Contemplación es amistad estrecha» — amistad con Dios que empieza en el Padre.",
+          "en": "\"Contemplation is close friendship\" — friendship with God that begins in the Father."
+        }
       ]
     },
     {
       "id": "church_prayers",
       "icon": "🙏",
-      "title": { "es": "Oraciones de la Iglesia al Padre", "en": "Church prayers to the Father" },
-      "summary": { "es": "Reza con la Iglesia cuando no encuentras palabras.", "en": "Pray with the Church when you find no words." },
+      "title": {
+        "es": "Oraciones de la Iglesia al Padre",
+        "en": "Church prayers to the Father"
+      },
+      "summary": {
+        "es": "Reza con la Iglesia cuando no encuentras palabras.",
+        "en": "Pray with the Church when you find no words."
+      },
       "blocks": [
-        { "type": "sub", "title": { "es": "Gloria", "en": "Glory Be" }, "es": "Gloria al Padre, y al Hijo, y al Espíritu Santo. Como era en el principio…", "en": "Glory be to the Father, and to the Son, and to the Holy Spirit. As it was in the beginning…" },
-        { "type": "sub", "title": { "es": "Bendición sacerdotal", "en": "Priestly blessing" }, "es": "La Iglesia bendice en nombre del Padre.", "en": "The Church blesses in the name of the Father.", "scripture": { "es": "Así bendecirán los sacerdotes a los israelitas: Dirán: «El Señor te bendiga y te guarde; el Señor te muestre su rostro y tenga misericordia de ti; el Señor vuelva su rostro hacia ti y te dé la paz».", "en": "So shall they invoke my name upon the Israelites, and I will bless them: The Lord bless you and keep you! The Lord let his face shine upon you, and be gracious to you! The Lord look upon you kindly and give you peace!", "cite": { "es": "Números 6, 23-26 (BLA)", "en": "Numbers 6:23-26 (NABRE)" } } },
-        { "type": "sub", "title": { "es": "Preces eucarísticas", "en": "Eucharistic prayers" }, "es": "Toda Misa eleva la oración al Padre, por Cristo, en el Espíritu Santo.", "en": "Every Mass lifts prayer to the Father, through Christ, in the Holy Spirit." },
-        { "type": "sub", "title": { "es": "Veni, Creator Spiritus", "en": "Come, Holy Spirit" }, "es": "Pide al Espíritu que te enseñe a hablar con el Padre antes de orar.", "en": "Ask the Spirit to teach you to speak with the Father before praying." }
+        {
+          "type": "sub",
+          "title": {
+            "es": "Gloria",
+            "en": "Glory Be"
+          },
+          "es": "Gloria al Padre, y al Hijo, y al Espíritu Santo. Como era en el principio…",
+          "en": "Glory be to the Father, and to the Son, and to the Holy Spirit. As it was in the beginning…"
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Bendición sacerdotal",
+            "en": "Priestly blessing"
+          },
+          "es": "La Iglesia bendice en nombre del Padre.",
+          "en": "The Church blesses in the name of the Father.",
+          "scripture": {
+            "es": "Así bendecirán los sacerdotes a los israelitas: Dirán: «El Señor te bendiga y te guarde; el Señor te muestre su rostro y tenga misericordia de ti; el Señor vuelva su rostro hacia ti y te dé la paz».",
+            "en": "So shall they invoke my name upon the Israelites, and I will bless them: The Lord bless you and keep you! The Lord let his face shine upon you, and be gracious to you! The Lord look upon you kindly and give you peace!",
+            "cite": {
+              "es": "Números 6, 23-26",
+              "en": "Numbers 6:23-26"
+            }
+          }
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Preces eucarísticas",
+            "en": "Eucharistic prayers"
+          },
+          "es": "Toda Misa eleva la oración al Padre, por Cristo, en el Espíritu Santo.",
+          "en": "Every Mass lifts prayer to the Father, through Christ, in the Holy Spirit."
+        },
+        {
+          "type": "sub",
+          "title": {
+            "es": "Veni, Creator Spiritus",
+            "en": "Come, Holy Spirit"
+          },
+          "es": "Pide al Espíritu que te enseñe a hablar con el Padre antes de orar.",
+          "en": "Ask the Spirit to teach you to speak with the Father before praying."
+        }
       ]
     },
     {
       "id": "letter",
       "icon": "✉",
-      "title": { "es": "Lo que el Padre quiere que sepas hoy", "en": "What the Father wants you to know today" },
-      "summary": { "es": "Una carta para ti.", "en": "A letter for you." },
+      "title": {
+        "es": "Lo que el Padre quiere que sepas hoy",
+        "en": "What the Father wants you to know today"
+      },
+      "summary": {
+        "es": "Una carta para ti.",
+        "en": "A letter for you."
+      },
       "blocks": [
-        { "type": "letter", "es": "Hijo mío, hija mía:\n\nNo necesitas ganarte mi amor. Ya eres mío.\n\nNo soy el reflejo de los padres que te fallaron. Soy el Padre de quien Jesús habló toda la noche en oración — con ternura, con confianza, llamándome «Abba».\n\nCuando no sabes qué decirme, tu silencio también es oración. Cuando solo vienes a quejarte, te escucho. Cuando vuelves avergonzado, yo corro al encuentro.\n\nNo te pido que seas perfecto. Te pido que no dejes de volver.\n\nTe envié a mi Hijo no para alejarte de mí, sino para que por fin me conocieras. En su rostro verás el mío. En su Cruz verás hasta dónde llega mi amor.\n\nConocerme al 100% es camino de toda la vida — y cada día un paso basta. Hoy, este momento: habla conmigo. Aunque sea una sola frase.\n\nYo ya estoy aquí. Llevo mucho tiempo esperándote.\n\n— Tu Padre del cielo", "en": "My son, my daughter:\n\nYou do not need to earn my love. You are already mine.\n\nI am not the reflection of the fathers who failed you. I am the Father to whom Jesus spoke all night in prayer — with tenderness, with trust, calling me \"Abba.\"\n\nWhen you do not know what to say, your silence is also prayer. When you come only to complain, I listen. When you return in shame, I run to meet you.\n\nI do not ask you to be perfect. I ask you not to stop returning.\n\nI sent you my Son not to keep you from me, but so that you might finally know me. In His face you will see mine. In His Cross you will see how far my love goes.\n\nKnowing me fully is a lifelong journey — and each day one step is enough. Today, this moment: speak with me. Even one sentence.\n\nI am already here. I have been waiting for you a long time.\n\n— Your Father in heaven" }
+        {
+          "type": "letter",
+          "es": "Hijo mío, hija mía:\n\nNo necesitas ganarte mi amor. Ya eres mío.\n\nNo soy el reflejo de los padres que te fallaron. Soy el Padre de quien Jesús habló toda la noche en oración — con ternura, con confianza, llamándome «Abba».\n\nCuando no sabes qué decirme, tu silencio también es oración. Cuando solo vienes a quejarte, te escucho. Cuando vuelves avergonzado, yo corro al encuentro.\n\nNo te pido que seas perfecto. Te pido que no dejes de volver.\n\nTe envié a mi Hijo no para alejarte de mí, sino para que por fin me conocieras. En su rostro verás el mío. En su Cruz verás hasta dónde llega mi amor.\n\nConocerme al 100% es camino de toda la vida — y cada día un paso basta. Hoy, este momento: habla conmigo. Aunque sea una sola frase.\n\nYo ya estoy aquí. Llevo mucho tiempo esperándote.\n\n— Tu Padre del cielo",
+          "en": "My son, my daughter:\n\nYou do not need to earn my love. You are already mine.\n\nI am not the reflection of the fathers who failed you. I am the Father to whom Jesus spoke all night in prayer — with tenderness, with trust, calling me \"Abba.\"\n\nWhen you do not know what to say, your silence is also prayer. When you come only to complain, I listen. When you return in shame, I run to meet you.\n\nI do not ask you to be perfect. I ask you not to stop returning.\n\nI sent you my Son not to keep you from me, but so that you might finally know me. In His face you will see mine. In His Cross you will see how far my love goes.\n\nKnowing me fully is a lifelong journey — and each day one step is enough. Today, this moment: speak with me. Even one sentence.\n\nI am already here. I have been waiting for you a long time.\n\n— Your Father in heaven"
+        }
       ]
     }
   ]

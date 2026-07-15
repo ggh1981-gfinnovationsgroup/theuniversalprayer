@@ -2610,6 +2610,169 @@ body {
 .ador-moment-dot.adm-done   { background: rgba(201,168,76,0.45); }
 .ador-moment-dot:hover { background: rgba(201,168,76,0.6); }
 
+/* 15 min — progress panel + checkboxes */
+.ador-progress-panel {
+  position: sticky;
+  top: 58px;
+  z-index: 40;
+  background: rgba(10, 18, 40, 0.96);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(201,168,76,0.22);
+  border-radius: 12px;
+  padding: 1rem 1.1rem 0.85rem;
+  margin-bottom: 2rem;
+}
+.ador-progress-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.65rem;
+}
+.ador-progress-count {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  color: var(--gold-light);
+  letter-spacing: 0.04em;
+}
+.ador-progress-reset {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.45);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+}
+.ador-progress-reset:hover { color: var(--gold); }
+.ador-progress-bar-wrap {
+  height: 5px;
+  background: rgba(201,168,76,0.12);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 0.85rem;
+}
+.ador-progress-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #c9a84c, #e8c97a);
+  border-radius: 3px;
+  transition: width 0.35s ease;
+}
+.ador-moment-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  min-width: 0;
+  flex: 1;
+  max-width: 72px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem 0.15rem;
+}
+.ador-moment-step-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid rgba(201,168,76,0.25);
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  color: rgba(255,255,255,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s;
+}
+.ador-moment-step-label {
+  font-family: var(--font-sans);
+  font-size: 0.58rem;
+  color: rgba(255,255,255,0.4);
+  text-align: center;
+  line-height: 1.2;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ador-moment-step.is-active .ador-moment-step-num {
+  border-color: var(--gold);
+  background: rgba(201,168,76,0.18);
+  color: var(--gold-light);
+}
+.ador-moment-step.is-done .ador-moment-step-num {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #0a0d14;
+  font-weight: 700;
+}
+.ador-moment-step.is-done .ador-moment-step-label { color: rgba(201,168,76,0.75); }
+.ador-moments-strip {
+  display: flex;
+  gap: 0.15rem;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 0.15rem;
+  scrollbar-width: thin;
+}
+.ador-moment-section.is-done { opacity: 0.72; }
+.ador-moment-section.is-done .ador-moment-title::after {
+  content: ' ✓';
+  color: var(--gold);
+  font-size: 0.85em;
+}
+.ador-done-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.65);
+  user-select: none;
+  padding: 0.85rem 1rem;
+  margin-top: 1.25rem;
+  background: rgba(255,255,255,0.04);
+  border-radius: 10px;
+  border: 1px solid rgba(201,168,76,0.18);
+}
+.ador-done-label input { display: none; }
+.ador-done-checkmark {
+  width: 22px;
+  height: 22px;
+  border: 2px solid rgba(201,168,76,0.4);
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, border-color 0.2s;
+}
+.ador-done-label input:checked ~ .ador-done-checkmark {
+  background: var(--gold);
+  border-color: var(--gold);
+}
+.ador-done-label input:checked ~ .ador-done-checkmark::after {
+  content: '✓';
+  font-size: 0.75rem;
+  color: #0a0d14;
+  font-weight: 700;
+}
+.ador-complete-note {
+  text-align: center;
+  padding: 1.25rem;
+  margin: 1rem 0 2rem;
+  background: rgba(201,168,76,0.1);
+  border: 1px solid rgba(201,168,76,0.28);
+  border-radius: 12px;
+  font-family: var(--font-serif);
+  color: var(--gold-light);
+  display: none;
+}
+.ador-complete-note.is-visible { display: block; }
+
 /* TTS no-support */
 .ador-tts-nosupport {
   text-align: center;
@@ -2944,6 +3107,10 @@ body {
   color: var(--gold);
 }
 .a33-card--done .a33-card-status { color: #6dbf6d; }
+.a33-card-active {
+  border-color: rgba(201,168,76,.65);
+  box-shadow: 0 0 0 1px rgba(201,168,76,.25);
+}
 .a33-card--soon .a33-card-status { color: rgba(255,255,255,.2); }
 
 /* Modal overlay */

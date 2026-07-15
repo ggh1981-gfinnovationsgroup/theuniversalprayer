@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dios Padre | The Universal Prayer</title>
-  <meta name="description" content="Conocer a Dios Padre en profundidad: biblioteca colapsable con Escritura, Catecismo, 30 días de camino, frases para orar y carta del Padre." />
+  <meta name="description" content="Conocer a Dios Padre en profundidad: biblioteca colapsable con Escritura, Catecismo, 33 días de camino, frases para orar y carta del Padre." />
   <meta name="theme-color" content="#c9a84c" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Dios Padre — Orar al Padre Celestial" />
@@ -374,13 +374,73 @@
       color: rgba(255,255,255,0.76);
       line-height: 1.65;
     }
-    .dp-library-note {
+    .dp-lib-section {
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(201,168,76,0.12);
+    }
+    .dp-lib-section:last-child { border-bottom: none; }
+    .dp-lib-heading {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      color: var(--gold-light);
+      margin: 0 0 0.35rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .dp-lib-summary {
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.5);
+      margin: 0 0 1.1rem;
+    }
+    .dp-sub-block {
+      margin: 1.35rem 0 1.75rem;
+      padding-top: 0.25rem;
+    }
+    .dp-sub-block-title {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      color: var(--gold-light);
+      margin: 0 0 0.6rem;
+    }
+    .dp-list-item {
+      margin: 0.85rem 0 1.1rem;
+      padding-left: 0.85rem;
+      border-left: 2px solid rgba(201,168,76,0.2);
+    }
+    .dp-list-item-title {
+      font-family: var(--font-serif);
+      font-size: 0.98rem;
+      color: rgba(255,255,255,0.88);
+      margin: 0 0 0.35rem;
+    }
       text-align: center;
       font-family: var(--font-sans);
       font-size: 0.8rem;
       color: rgba(255,255,255,0.5);
       margin-top: 1rem;
     }
+    .dp-journey-wrap { margin-top: 0.25rem; }
+    .dp-journey-progress { margin-bottom: 1rem; }
+    .dp-journey-progress .a33-bar-wrap { max-width: 360px; margin: 0 auto; }
+    .dp-journey-grid.a33-list {
+      max-width: none;
+      padding: 0 0 1rem;
+      margin: 0;
+      grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
+      gap: 0.45rem;
+    }
+    .dp-journey-grid .a33-card { padding: 0.55rem 0.45rem; min-height: 0; }
+    .dp-journey-grid .a33-card-title { font-size: 0.68rem; line-height: 1.2; }
+    .dp-journey-grid .a33-card-num { font-size: 0.62rem; }
+    .dp-journey-grid .a33-card-status { top: 0.4rem; right: 0.45rem; font-size: 0.75rem; }
+    .dp-journey-day { margin-bottom: 0.5rem; }
+    .dp-journey-day.is-done .dp-journey-day-details summary { color: rgba(201,168,76,0.75); }
+    .dp-journey-day.is-active .dp-journey-day-details { border-color: rgba(201,168,76,0.45); }
+    .dp-journey-complete.ador-complete-note { margin: 0.75rem 0 1rem; font-size: 0.92rem; }
   </style>
 </head>
 <body>
@@ -419,115 +479,58 @@
   <main class="dp-content">
 
     <section class="dp-section">
-      <details class="dp-collapse">
-        <summary>
-          <span class="dp-sum-icon">📖</span>
-          <span data-lang="es">¿Por qué orar al Padre?</span>
-          <span data-lang="en" style="display:none">Why pray to the Father?</span>
-          <span class="dp-sum-sub">
-            <span data-lang="es">5 textos bíblicos + enseñanza de la Iglesia</span>
-            <span data-lang="en" style="display:none">5 Scripture passages + Church teaching</span>
-          </span>
-        </summary>
-        <div class="dp-collapse-body">
-          <p class="dp-collapse-group-label" data-lang="es">Escrituras</p>
-          <p class="dp-collapse-group-label" data-lang="en" style="display:none">Scripture</p>
+      <h2 class="dp-section-title" data-lang="es">¿Por qué orar al Padre?</h2>
+      <h2 class="dp-section-title" data-lang="en" style="display:none">Why pray to the Father?</h2>
+      <p class="dp-section-lead" data-lang="es">La Iglesia enseña que toda oración cristiana llega al Padre, por Cristo y en el Espíritu Santo.</p>
+      <p class="dp-section-lead" data-lang="en" style="display:none">The Church teaches that all Christian prayer reaches the Father, through Christ and in the Holy Spirit.</p>
 
-          <details class="dp-collapse dp-collapse-inner">
-            <summary><span data-lang="es">Mateo 6, 9-10</span><span data-lang="en" style="display:none">Matthew 6:9-10</span></summary>
-            <div class="dp-collapse-body">
-              <blockquote class="dp-scripture" data-lang="es">Ustedes deben orar así: Padre nuestro que estás en el cielo, santificado sea tu nombre; venga a nosotros tu Reino; hágase tu voluntad en la tierra como en el cielo.<cite>— Mateo 6, 9-10 (BLA)</cite></blockquote>
-              <blockquote class="dp-scripture" data-lang="en" style="display:none">"This is how you are to pray: Our Father in heaven, hallowed be your name, your kingdom come, your will be done, on earth as in heaven."<cite>— Matthew 6:9-10 (NABRE)</cite></blockquote>
-            </div>
-          </details>
-          <details class="dp-collapse dp-collapse-inner">
-            <summary><span data-lang="es">Juan 14, 6</span><span data-lang="en" style="display:none">John 14:6</span></summary>
-            <div class="dp-collapse-body">
-              <blockquote class="dp-scripture" data-lang="es">Jesús le dijo: —Yo soy el camino, la verdad y la vida; nadie viene al Padre sino por mí.<cite>— Juan 14, 6 (BLA)</cite></blockquote>
-              <blockquote class="dp-scripture" data-lang="en" style="display:none">Jesus said to him, "I am the way and the truth and the life. No one comes to the Father except through me."<cite>— John 14:6 (NABRE)</cite></blockquote>
-            </div>
-          </details>
-          <details class="dp-collapse dp-collapse-inner">
-            <summary><span data-lang="es">1 Timoteo 2, 5</span><span data-lang="en" style="display:none">1 Timothy 2:5</span></summary>
-            <div class="dp-collapse-body">
-              <blockquote class="dp-scripture" data-lang="es">Porque hay un solo Dios, y también un solo mediador entre Dios y los hombres: Jesucristo hombre, que se entregó a sí mismo en rescate por todos.<cite>— 1 Timoteo 2, 5 (BLA)</cite></blockquote>
-              <blockquote class="dp-scripture" data-lang="en" style="display:none">For there is one God. There is also one mediator between God and the human race, Christ Jesus, himself human, who gave himself as ransom for all.<cite>— 1 Timothy 2:5 (NABRE)</cite></blockquote>
-            </div>
-          </details>
-          <details class="dp-collapse dp-collapse-inner">
-            <summary><span data-lang="es">Efesios 2, 18</span><span data-lang="en" style="display:none">Ephesians 2:18</span></summary>
-            <div class="dp-collapse-body">
-              <blockquote class="dp-scripture" data-lang="es">Porque por medio de él nosotros, los judíos y los paganos, tenemos en un mismo Espíritu acceso al Padre.<cite>— Efesios 2, 18 (BLA)</cite></blockquote>
-              <blockquote class="dp-scripture" data-lang="en" style="display:none">For through him we both have access in one Spirit to the Father.<cite>— Ephesians 2:18 (NABRE)</cite></blockquote>
-            </div>
-          </details>
-          <details class="dp-collapse dp-collapse-inner">
-            <summary><span data-lang="es">Lucas 11, 1-4</span><span data-lang="en" style="display:none">Luke 11:1-4</span></summary>
-            <div class="dp-collapse-body">
-              <blockquote class="dp-scripture" data-lang="es">Un día, Jesús estaba orando en cierto lugar. Cuando terminó, uno de sus discípulos le dijo: —Señor, enséñanos a orar, como Juan enseñó a sus discípulos. Él les dijo: —Cuando oren, digan: Padre, santificado sea tu nombre; venga tu Reino; danos cada día el pan que necesitamos; perdónanos nuestros pecados, porque también nosotros perdonamos a todo el que nos ofende; y no nos dejes caer en la tentación.<cite>— Lucas 11, 1-4 (BLA)</cite></blockquote>
-              <blockquote class="dp-scripture" data-lang="en" style="display:none">He was praying in a certain place, and when he had finished, one of his disciples said to him, "Lord, teach us to pray just as John taught his disciples." He said to them, "When you pray, say: Father, hallowed be your name, your kingdom come. Give us each day our daily bread and forgive us our sins for we ourselves forgive everyone in debt to us, and do not subject us to the final test."<cite>— Luke 11:1-4 (NABRE)</cite></blockquote>
-            </div>
-          </details>
+      <blockquote class="dp-scripture" data-lang="es">Ustedes deben orar así: Padre nuestro que estás en el cielo, santificado sea tu nombre; venga a nosotros tu Reino; hágase tu voluntad en la tierra como en el cielo.<cite>— Mateo 6, 9-10</cite></blockquote>
+      <blockquote class="dp-scripture" data-lang="en" style="display:none">This is how you are to pray: Our Father in heaven, hallowed be your name, your kingdom come, your will be done, on earth as in heaven.<cite>— Matthew 6:9-10</cite></blockquote>
 
-          <div class="dp-note" data-lang="es" style="margin-top:1rem">
-            La Iglesia enseña que la oración cristiana se dirige al Padre, por Cristo y en el Espíritu Santo (CIC 2591). Orar a Jesús, a María o a los santos no contradice esto: ellos interceden <em>por</em> nosotros; Cristo es el <em>único</em> Mediador que nos une con el Padre. Textos bíblicos: Biblia Latinoamericana (BLA).
-          </div>
-          <div class="dp-note" data-lang="en" style="display:none;margin-top:1rem">
-            The Church teaches that Christian prayer is addressed to the Father, through Christ and in the Holy Spirit (CCC 2591). Praying to Jesus, Mary, or the saints does not contradict this: they intercede <em>for</em> us; Christ is the <em>only</em> Mediator who unites us with the Father. Scripture texts: NABRE (New American Bible Revised Edition).
-          </div>
-        </div>
-      </details>
+      <blockquote class="dp-scripture" data-lang="es">Jesús le dijo: —Yo soy el camino, la verdad y la vida; nadie viene al Padre sino por mí.<cite>— Juan 14, 6</cite></blockquote>
+      <blockquote class="dp-scripture" data-lang="en" style="display:none">Jesus said to him, "I am the way and the truth and the life. No one comes to the Father except through me."<cite>— John 14:6</cite></blockquote>
+
+      <blockquote class="dp-scripture" data-lang="es">Porque hay un solo Dios, y también un solo mediador entre Dios y los hombres: Jesucristo hombre, que se entregó a sí mismo en rescate por todos.<cite>— 1 Timoteo 2, 5</cite></blockquote>
+      <blockquote class="dp-scripture" data-lang="en" style="display:none">For there is one God. There is also one mediator between God and the human race, Christ Jesus, himself human, who gave himself as ransom for all.<cite>— 1 Timothy 2:5</cite></blockquote>
+
+      <blockquote class="dp-scripture" data-lang="es">Porque por medio de él nosotros, los judíos y los paganos, tenemos en un mismo Espíritu acceso al Padre.<cite>— Efesios 2, 18</cite></blockquote>
+      <blockquote class="dp-scripture" data-lang="en" style="display:none">For through him we both have access in one Spirit to the Father.<cite>— Ephesians 2:18</cite></blockquote>
+
+      <blockquote class="dp-scripture" data-lang="es">Un día, Jesús estaba orando en cierto lugar. Cuando terminó, uno de sus discípulos le dijo: —Señor, enséñanos a orar, como Juan enseñó a sus discípulos. Él les dijo: —Cuando oren, digan: Padre, santificado sea tu nombre; venga tu Reino; danos cada día el pan que necesitamos; perdónanos nuestros pecados, porque también nosotros perdonamos a todo el que nos ofende; y no nos dejes caer en la tentación.<cite>— Lucas 11, 1-4</cite></blockquote>
+      <blockquote class="dp-scripture" data-lang="en" style="display:none">He was praying in a certain place, and when he had finished, one of his disciples said to him, "Lord, teach us to pray just as John taught his disciples." He said to them, "When you pray, say: Father, hallowed be your name, your kingdom come. Give us each day our daily bread and forgive us our sins for we ourselves forgive everyone in debt to us, and do not subject us to the final test."<cite>— Luke 11:1-4</cite></blockquote>
+
+      <div class="dp-note" data-lang="es" style="margin-top:1rem">
+        María y los santos interceden <em>por</em> nosotros; Cristo es el <em>único</em> Mediador que nos une con el Padre (CIC 2591).
+      </div>
+      <div class="dp-note" data-lang="en" style="display:none;margin-top:1rem">
+        Mary and the saints intercede <em>for</em> us; Christ is the <em>only</em> Mediator who unites us with the Father (CCC 2591).
+      </div>
     </section>
 
     <section class="dp-section">
-      <details class="dp-collapse">
-        <summary>
-          <span class="dp-sum-icon">📿</span>
-          <span data-lang="es">El Padre Nuestro</span>
-          <span data-lang="en" style="display:none">The Our Father</span>
-          <span class="dp-sum-sub">
-            <span data-lang="es">La oración que Jesús enseñó</span>
-            <span data-lang="en" style="display:none">The prayer Jesus taught</span>
-          </span>
-        </summary>
-        <div class="dp-collapse-body">
-          <p class="dp-invocation" id="invocationPrayer"></p>
-        </div>
-      </details>
+      <h2 class="dp-section-title" data-lang="es">El Padre Nuestro</h2>
+      <h2 class="dp-section-title" data-lang="en" style="display:none">The Our Father</h2>
+      <p class="dp-invocation" id="invocationPrayer"></p>
     </section>
 
     <section class="dp-section" id="librarySection">
       <h2 class="dp-section-title" id="libraryTitle"></h2>
       <p class="dp-section-lead" id="libraryIntro"></p>
       <div id="accordionHub"></div>
-      <p class="dp-library-note" data-lang="es">Toca cada sección para abrir. Dentro hay más niveles — por ejemplo, cada día de los 30. Puedes volver cuando quieras.</p>
-      <p class="dp-library-note" data-lang="en" style="display:none">Tap each section to open. There are nested levels inside — for example, each of the 30 days. Come back whenever you want.</p>
+      <p class="dp-library-note" data-lang="es">En «33 días» marca tu progreso con checkboxes — como en Adoración.</p>
+      <p class="dp-library-note" data-lang="en" style="display:none">In «33 days» track your progress with checkboxes — like Adoration.</p>
     </section>
 
     <section class="dp-section">
-      <details class="dp-collapse">
-        <summary>
-          <span class="dp-sum-icon">🙏</span>
-          <span data-lang="es">Oración personal al Padre</span>
-          <span data-lang="en" style="display:none">Personal prayer to the Father</span>
-        </summary>
-        <div class="dp-collapse-body">
-          <div class="dp-prayer-box" id="personalPrayer"></div>
-        </div>
-      </details>
+      <h2 class="dp-section-title" data-lang="es">Oración personal al Padre</h2>
+      <h2 class="dp-section-title" data-lang="en" style="display:none">Personal prayer to the Father</h2>
+      <div class="dp-prayer-box" id="personalPrayer"></div>
     </section>
 
     <section class="dp-section">
-      <details class="dp-collapse">
-        <summary>
-          <span class="dp-sum-icon">✝</span>
-          <span data-lang="es">Oración de cierre</span>
-          <span data-lang="en" style="display:none">Closing prayer</span>
-        </summary>
-        <div class="dp-collapse-body">
-          <div class="dp-prayer-box" id="closingPrayer"></div>
-        </div>
-      </details>
+      <h2 class="dp-section-title" data-lang="es">Oración de cierre</h2>
+      <h2 class="dp-section-title" data-lang="en" style="display:none">Closing prayer</h2>
+      <div class="dp-prayer-box" id="closingPrayer"></div>
     </section>
 
     <div style="margin-top: 3rem; text-align: center;">
@@ -554,39 +557,101 @@
         renderPrayer('personalPrayer', data.personal_prayer);
         renderPrayer('closingPrayer', data.closing_prayer);
         applyLang(lang);
+        if (window._dpJourneyUpdate) window._dpJourneyUpdate(false);
       });
 
     function bi(es, en) {
       return `<span data-lang="es">${es}</span><span data-lang="en" style="display:none">${en}</span>`;
     }
 
-    function renderScripture(block, nested) {
-      const inner = `<blockquote class="dp-scripture">${bi(block.es, block.en)}<cite>${bi(block.cite.es, block.cite.en)}</cite></blockquote>`;
-      if (!nested) return inner;
-      return `<details class="dp-collapse dp-collapse-inner">
-        <summary>${bi(block.cite.es, block.cite.en)}</summary>
-        <div class="dp-collapse-body">${inner}</div>
-      </details>`;
+    function renderScripture(block) {
+      return `<blockquote class="dp-scripture">${bi(block.es, block.en)}<cite>${bi(block.cite.es, block.cite.en)}</cite></blockquote>`;
     }
 
     function renderSub(block) {
       let body = `<p class="dp-block-p">${bi(block.es, block.en)}</p>`;
       if (block.scripture) {
-        body += renderScripture(block.scripture, false);
+        body += renderScripture(block.scripture);
       }
-      return `<details class="dp-collapse dp-collapse-inner">
-        <summary>${bi(block.title.es, block.title.en)}</summary>
-        <div class="dp-collapse-body">${body}</div>
-      </details>`;
+      return `<article class="dp-sub-block">
+        <h4 class="dp-sub-block-title">${bi(block.title.es, block.title.en)}</h4>
+        ${body}
+      </article>`;
     }
 
-    function renderBlock(block, opts) {
-      const nested = opts && opts.nestedScripture;
+    function renderJourneyDay(block, dayNum) {
+      let body = `<p class="dp-block-p">${bi(block.es, block.en)}</p>`;
+      if (block.scripture) {
+        body += renderScripture(block.scripture);
+      }
+      body += `<label class="ador-done-label dp-journey-done">
+        <input type="checkbox" class="dp-journey-check" data-day="${dayNum}" />
+        <span class="ador-done-checkmark"></span>
+        <span data-lang="es">Día completado — pasar al siguiente</span>
+        <span data-lang="en" style="display:none">Day completed — move to next</span>
+      </label>`;
+      return `<article class="dp-journey-day" id="dp-day-${dayNum}" data-day="${dayNum}">
+        <details class="dp-collapse dp-collapse-inner dp-journey-day-details">
+          <summary>${bi(block.title.es, block.title.en)}</summary>
+          <div class="dp-collapse-body">${body}</div>
+        </details>
+      </article>`;
+    }
+
+    function journeyShortTitle(titleObj, dayNum) {
+      const raw = (lang === 'en' ? titleObj.en : titleObj.es) || titleObj.es;
+      const parts = raw.split('—');
+      return parts.length > 1 ? parts[1].trim() : raw.replace(/^Day \d+ — /i, '').replace(/^Día \d+ — /i, '');
+    }
+
+    function renderJourneySection(sec) {
+      const intro = sec.blocks.filter(b => b.type === 'p');
+      const days = sec.blocks.filter(b => b.type === 'sub');
+      return `<div class="dp-journey-wrap" id="dpJourney33" data-total="${days.length}">
+        <div class="a33-hero-inner dp-journey-progress" style="padding:1rem 0 0.75rem">
+          <div class="a33-hero-progress-wrap">
+            <svg class="a33-progress-ring" viewBox="0 0 120 120">
+              <defs>
+                <linearGradient id="a33RingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#e8c97a"/>
+                  <stop offset="100%" stop-color="#c9a84c"/>
+                </linearGradient>
+              </defs>
+              <circle cx="60" cy="60" r="52" class="a33-ring-track"/>
+              <circle cx="60" cy="60" r="52" class="a33-ring-fill" id="dpJourneyRing"/>
+            </svg>
+            <div class="a33-progress-inner">
+              <span class="a33-progress-num" id="dpJourneyCount">0</span>
+              <span class="a33-progress-label" data-lang="es">de 33</span>
+              <span class="a33-progress-label" data-lang="en" style="display:none">of 33</span>
+            </div>
+          </div>
+          <div class="a33-bar-wrap">
+            <div class="a33-bar-fill" id="dpJourneyBar"></div>
+          </div>
+          <p class="a33-bar-label" id="dpJourneyBarLabel" data-lang="es">0 días completados</p>
+          <p class="a33-bar-label" id="dpJourneyBarLabelEn" data-lang="en" style="display:none">0 days completed</p>
+          <div class="a33-toolbar" style="margin-top:0.5rem">
+            <button type="button" class="a33-reset-btn" id="dpJourneyReset" data-lang="es">↺ Reiniciar jornada</button>
+            <button type="button" class="a33-reset-btn" id="dpJourneyResetEn" data-lang="en" style="display:none">↺ Reset journey</button>
+          </div>
+        </div>
+        <div class="a33-list dp-journey-grid" id="dpJourneyGrid" role="navigation" aria-label="Días de la jornada"></div>
+        <div class="ador-complete-note dp-journey-complete" id="dpJourneyComplete">
+          <p data-lang="es">✝ ¡33 días completados! El Padre camina contigo — sigue hablándole cada día.</p>
+          <p data-lang="en" style="display:none">✝ 33 days completed! The Father walks with you — keep speaking to Him each day.</p>
+        </div>
+        ${intro.map(b => renderBlock(b)).join('')}
+        <div class="dp-journey-days">${days.map((b, i) => renderJourneyDay(b, i + 1)).join('')}</div>
+      </div>`;
+    }
+
+    function renderBlock(block) {
       if (block.type === 'p') {
         return `<p class="dp-block-p">${bi(block.es, block.en)}</p>`;
       }
       if (block.type === 'scripture') {
-        return renderScripture(block, nested);
+        return renderScripture(block);
       }
       if (block.type === 'sub') {
         return renderSub(block);
@@ -598,13 +663,13 @@
         const title = block.title ? `<h4 class="dp-block-sub-title">${bi(block.title.es, block.title.en)}</h4>` : '';
         if (block.collapsible) {
           const items = block.items.map((i, idx) => {
-            const sumEs = i.title ? i.title.es : `${idx + 1}. ${i.es}`;
-            const sumEn = i.title ? i.title.en : `${idx + 1}. ${i.en}`;
-            return `
-            <details class="dp-collapse dp-collapse-inner">
-              <summary>${bi(sumEs, sumEn)}</summary>
-              <div class="dp-collapse-body"><p class="dp-block-p">${bi(i.es, i.en)}</p></div>
-            </details>`;
+            const itemTitle = i.title
+              ? bi(i.title.es, i.title.en)
+              : `<span data-lang="es">${idx + 1}.</span><span data-lang="en" style="display:none">${idx + 1}.</span>`;
+            return `<div class="dp-list-item">
+              ${i.title ? `<p class="dp-list-item-title">${itemTitle}</p>` : ''}
+              <p class="dp-block-p">${bi(i.es, i.en)}</p>
+            </div>`;
           }).join('');
           return `${title}${items}`;
         }
@@ -618,21 +683,141 @@
       setBilingual('libraryTitle', deep.library_title);
       setBilingual('libraryIntro', deep.library_intro);
       document.getElementById('accordionHub').innerHTML = deep.sections.map((sec) => `
-        <details class="dp-collapse" id="dp-sec-${sec.id}">
-          <summary>
-            <span class="dp-sum-icon">${sec.icon}</span>
+        <section class="dp-lib-section" id="dp-sec-${sec.id}">
+          <h3 class="dp-lib-heading">
+            <span>${sec.icon}</span>
             <span data-lang="es">${sec.title.es}</span>
             <span data-lang="en" style="display:none">${sec.title.en}</span>
-            <span class="dp-sum-sub">
-              <span data-lang="es">${sec.summary.es}</span>
-              <span data-lang="en" style="display:none">${sec.summary.en}</span>
-            </span>
-          </summary>
-          <div class="dp-collapse-body">
-            ${sec.blocks.map(b => renderBlock(b, { nestedScripture: true })).join('')}
+          </h3>
+          <p class="dp-lib-summary">
+            <span data-lang="es">${sec.summary.es}</span>
+            <span data-lang="en" style="display:none">${sec.summary.en}</span>
+          </p>
+          <div class="dp-lib-body">
+            ${sec.id === 'thirty_three_days' ? renderJourneySection(sec) : sec.blocks.map(b => renderBlock(b)).join('')}
           </div>
-        </details>
+        </section>
       `).join('');
+      initJourney33();
+    }
+
+    const JOURNEY33_TOTAL = 33;
+    const JOURNEY33_KEY   = 'diospadre33_done';
+    const JOURNEY33_RING_C = 2 * Math.PI * 52;
+    let journey33Done = new Set();
+
+    function initJourney33() {
+      const wrap = document.getElementById('dpJourney33');
+      if (!wrap) return;
+
+      const total = Number(wrap.dataset.total) || JOURNEY33_TOTAL;
+
+      journey33Done = new Set(JSON.parse(localStorage.getItem(JOURNEY33_KEY) || '[]'));
+      const $bar      = document.getElementById('dpJourneyBar');
+      const $count    = document.getElementById('dpJourneyCount');
+      const $barLabel = document.getElementById('dpJourneyBarLabel');
+      const $barLabelEn = document.getElementById('dpJourneyBarLabelEn');
+      const $ring     = document.getElementById('dpJourneyRing');
+      const $grid     = document.getElementById('dpJourneyGrid');
+      const $complete = document.getElementById('dpJourneyComplete');
+      const $days    = [...document.querySelectorAll('.dp-journey-day[data-day]')];
+      const $checks  = [...document.querySelectorAll('.dp-journey-check')];
+
+      function activeDay() {
+        for (let i = 1; i <= total; i++) {
+          if (!journey33Done.has(i)) return i;
+        }
+        return total;
+      }
+
+      function updateJourney(scrollNext) {
+        const n = journey33Done.size;
+        const pct = (n / total) * 100;
+        const active = activeDay();
+        if ($bar) $bar.style.width = pct + '%';
+        if ($count) $count.textContent = n;
+        if ($barLabel) $barLabel.textContent = n + ' día' + (n !== 1 ? 's' : '') + ' completado' + (n !== 1 ? 's' : '');
+        if ($barLabelEn) $barLabelEn.textContent = n + ' day' + (n !== 1 ? 's' : '') + ' completed';
+        if ($ring) {
+          $ring.style.strokeDasharray = JOURNEY33_RING_C;
+          $ring.style.strokeDashoffset = (JOURNEY33_RING_C * (1 - n / total)).toFixed(2);
+        }
+        if ($complete) $complete.classList.toggle('is-visible', n >= total);
+
+        $days.forEach(el => {
+          const d = Number(el.dataset.day);
+          el.classList.toggle('is-done', journey33Done.has(d));
+          el.classList.toggle('is-active', d === active && !journey33Done.has(d));
+        });
+
+        $checks.forEach(ch => {
+          ch.checked = journey33Done.has(Number(ch.dataset.day));
+        });
+
+        if ($grid) {
+          $grid.innerHTML = $days.map(el => {
+            const d = Number(el.dataset.day);
+            const sum = el.querySelector('summary');
+            const fullTitleEs = sum?.querySelector('[data-lang="es"]')?.textContent || '';
+            const fullTitleEn = sum?.querySelector('[data-lang="en"]')?.textContent || '';
+            const fullTitle = lang === 'en' ? fullTitleEn : fullTitleEs;
+            const shortEs = fullTitleEs.split('—')[1]?.trim() || ('Día ' + d);
+            const shortEn = fullTitleEn.split('—')[1]?.trim() || ('Day ' + d);
+            const short = lang === 'en' ? shortEn : shortEs;
+            const done = journey33Done.has(d);
+            const isActive = d === active && !done;
+            return `<button type="button" class="a33-card${done ? ' a33-card--done' : ''}${isActive ? ' a33-card-active' : ''}" data-goto="${d}" title="${fullTitle}">
+              <span class="a33-card-num">${String(d).padStart(2, '0')}</span>
+              <span class="a33-card-title">${short}</span>
+              <span class="a33-card-status">${done ? '✓' : '○'}</span>
+            </button>`;
+          }).join('');
+          $grid.querySelectorAll('[data-goto]').forEach(btn => {
+            btn.addEventListener('click', () => {
+              const el = document.getElementById('dp-day-' + btn.dataset.goto);
+              if (el) {
+                const det = el.querySelector('details');
+                if (det) det.open = true;
+                setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 120);
+              }
+            });
+          });
+        }
+
+        if (scrollNext && n < total) {
+          const next = document.getElementById('dp-day-' + active);
+          if (next) {
+            const det = next.querySelector('details');
+            if (det) det.open = true;
+            setTimeout(() => next.scrollIntoView({ behavior: 'smooth', block: 'start' }), 280);
+          }
+        }
+      }
+
+      $checks.forEach(ch => {
+        ch.addEventListener('change', function () {
+          const d = Number(this.dataset.day);
+          if (this.checked) journey33Done.add(d);
+          else journey33Done.delete(d);
+          localStorage.setItem(JOURNEY33_KEY, JSON.stringify([...journey33Done].sort((a, b) => a - b)));
+          updateJourney(this.checked);
+        });
+      });
+
+      ['dpJourneyReset', 'dpJourneyResetEn'].forEach(id => {
+        const btn = document.getElementById(id);
+        if (!btn) return;
+        btn.addEventListener('click', () => {
+          const msg = lang === 'en' ? 'Reset all 33 days progress?' : '¿Reiniciar el progreso de los 33 días?';
+          if (!confirm(msg)) return;
+          journey33Done.clear();
+          localStorage.removeItem(JOURNEY33_KEY);
+          updateJourney(false);
+        });
+      });
+
+      window._dpJourneyUpdate = updateJourney;
+      updateJourney(false);
     }
 
     function renderInvocation(invocation) {
@@ -668,6 +853,7 @@
     document.getElementById('langToggle').addEventListener('click', () => {
       applyLang(lang === 'es' ? 'en' : 'es');
       window.dispatchEvent(new CustomEvent('tup:langchange', { detail: lang }));
+      if (window._dpJourneyUpdate) window._dpJourneyUpdate(false);
     });
 
     applyLang(lang);
