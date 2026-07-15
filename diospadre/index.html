@@ -374,56 +374,24 @@
       color: rgba(255,255,255,0.76);
       line-height: 1.65;
     }
-    .dp-lib-section {
-      margin-bottom: 2.5rem;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid rgba(201,168,76,0.12);
-    }
-    .dp-lib-section:last-child { border-bottom: none; }
-    .dp-lib-heading {
+    .dp-inline-title {
       font-family: var(--font-serif);
-      font-size: 1.2rem;
       color: var(--gold-light);
-      margin: 0 0 0.35rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      flex-wrap: wrap;
+      font-weight: 400;
     }
-    .dp-lib-summary {
-      font-family: var(--font-sans);
-      font-size: 0.82rem;
-      color: rgba(255,255,255,0.5);
-      margin: 0 0 1.1rem;
-    }
-    .dp-sub-block {
-      margin: 1.35rem 0 1.75rem;
-      padding-top: 0.25rem;
-    }
-    .dp-sub-block-title {
-      font-family: var(--font-serif);
-      font-size: 1.05rem;
-      color: var(--gold-light);
-      margin: 0 0 0.6rem;
-    }
-    .dp-list-item {
-      margin: 0.85rem 0 1.1rem;
-      padding-left: 0.85rem;
-      border-left: 2px solid rgba(201,168,76,0.2);
-    }
-    .dp-list-item-title {
-      font-family: var(--font-serif);
-      font-size: 0.98rem;
-      color: rgba(255,255,255,0.88);
-      margin: 0 0 0.35rem;
-    }
+    .dp-library-note {
       text-align: center;
       font-family: var(--font-sans);
       font-size: 0.8rem;
       color: rgba(255,255,255,0.5);
-      margin-top: 1rem;
+      margin: 0 0 1rem;
     }
-    .dp-journey-wrap { margin-top: 0.25rem; }
+    .dp-journey-sticky {
+      position: sticky;
+      top: 58px;
+      z-index: 40;
+      margin-bottom: 1rem;
+    }
     .dp-journey-progress { margin-bottom: 1rem; }
     .dp-journey-progress .a33-bar-wrap { max-width: 360px; margin: 0 auto; }
     .dp-journey-grid.a33-list {
@@ -440,6 +408,8 @@
     .dp-journey-day { margin-bottom: 0.5rem; }
     .dp-journey-day.is-done .dp-journey-day-details summary { color: rgba(201,168,76,0.75); }
     .dp-journey-day.is-active .dp-journey-day-details { border-color: rgba(201,168,76,0.45); }
+    .dp-library-start { margin-bottom: 1rem; }
+    .dp-library-start .dp-section-title { margin-bottom: 0.5rem; }
     .dp-journey-complete.ador-complete-note { margin: 0.75rem 0 1rem; font-size: 0.92rem; }
   </style>
 </head>
@@ -513,13 +483,17 @@
       <p class="dp-invocation" id="invocationPrayer"></p>
     </section>
 
-    <section class="dp-section" id="librarySection">
-      <h2 class="dp-section-title" id="libraryTitle"></h2>
-      <p class="dp-section-lead" id="libraryIntro"></p>
-      <div id="accordionHub"></div>
-      <p class="dp-library-note" data-lang="es">En «33 días» marca tu progreso con checkboxes — como en Adoración.</p>
-      <p class="dp-library-note" data-lang="en" style="display:none">In «33 days» track your progress with checkboxes — like Adoration.</p>
+    <section class="dp-section" id="journey33Section">
+      <h2 class="dp-section-title" data-lang="es">🌅 33 días para conocer al Padre</h2>
+      <h2 class="dp-section-title" data-lang="en" style="display:none">🌅 33 days to know the Father</h2>
+      <p class="dp-section-lead" data-lang="es">Un paso cada día. Marca tu progreso con ✓</p>
+      <p class="dp-section-lead" data-lang="en" style="display:none">One step each day. Track progress with ✓</p>
+      <p class="dp-library-note" data-lang="es">Usa el grid para saltar de día — el tracker se queda visible al hacer scroll.</p>
+      <p class="dp-library-note" data-lang="en" style="display:none">Use the grid to jump between days — the tracker stays visible while you scroll.</p>
+      <div id="dpJourneyMount"></div>
     </section>
+
+    <div id="libraryHub"></div>
 
     <section class="dp-section">
       <h2 class="dp-section-title" data-lang="es">Oración personal al Padre</h2>
@@ -558,6 +532,13 @@
         renderPrayer('closingPrayer', data.closing_prayer);
         applyLang(lang);
         if (window._dpJourneyUpdate) window._dpJourneyUpdate(false);
+      })
+      .catch((err) => {
+        console.error('Dios Padre: error cargando contenido', err);
+        const mount = document.getElementById('dpJourneyMount');
+        if (mount) {
+          mount.innerHTML = '<p class="dp-block-p" data-lang="es">No se pudo cargar los 33 días. Recarga la página.</p><p class="dp-block-p" data-lang="en" style="display:none">Could not load the 33 days. Please reload.</p>';
+        }
       });
 
     function bi(es, en) {
@@ -569,14 +550,11 @@
     }
 
     function renderSub(block) {
-      let body = `<p class="dp-block-p">${bi(block.es, block.en)}</p>`;
+      let body = `<p class="dp-block-p"><strong class="dp-inline-title">${bi(block.title.es, block.title.en)}</strong> ${bi(block.es, block.en)}</p>`;
       if (block.scripture) {
         body += renderScripture(block.scripture);
       }
-      return `<article class="dp-sub-block">
-        <h4 class="dp-sub-block-title">${bi(block.title.es, block.title.en)}</h4>
-        ${body}
-      </article>`;
+      return body;
     }
 
     function renderJourneyDay(block, dayNum) {
@@ -608,7 +586,18 @@
       const intro = sec.blocks.filter(b => b.type === 'p');
       const days = sec.blocks.filter(b => b.type === 'sub');
       return `<div class="dp-journey-wrap" id="dpJourney33" data-total="${days.length}">
-        <div class="a33-hero-inner dp-journey-progress" style="padding:1rem 0 0.75rem">
+        <div class="ador-progress-panel dp-journey-sticky">
+          <div class="ador-progress-top">
+            <span class="ador-progress-count" id="dpJourneyStickyCount" data-lang="es">0 de ${days.length} días</span>
+            <span class="ador-progress-count" id="dpJourneyStickyCountEn" data-lang="en" style="display:none">0 of ${days.length} days</span>
+            <button type="button" class="ador-progress-reset" id="dpJourneyStickyReset" data-lang="es">↺ Reiniciar</button>
+            <button type="button" class="ador-progress-reset" id="dpJourneyStickyResetEn" data-lang="en" style="display:none">↺ Reset</button>
+          </div>
+          <div class="ador-progress-bar-wrap">
+            <div class="ador-progress-bar-fill" id="dpJourneyStickyBar"></div>
+          </div>
+        </div>
+        <div class="a33-hero-inner dp-journey-progress" style="padding:0.5rem 0 0.75rem">
           <div class="a33-hero-progress-wrap">
             <svg class="a33-progress-ring" viewBox="0 0 120 120">
               <defs>
@@ -661,18 +650,6 @@
       }
       if (block.type === 'list') {
         const title = block.title ? `<h4 class="dp-block-sub-title">${bi(block.title.es, block.title.en)}</h4>` : '';
-        if (block.collapsible) {
-          const items = block.items.map((i, idx) => {
-            const itemTitle = i.title
-              ? bi(i.title.es, i.title.en)
-              : `<span data-lang="es">${idx + 1}.</span><span data-lang="en" style="display:none">${idx + 1}.</span>`;
-            return `<div class="dp-list-item">
-              ${i.title ? `<p class="dp-list-item-title">${itemTitle}</p>` : ''}
-              <p class="dp-block-p">${bi(i.es, i.en)}</p>
-            </div>`;
-          }).join('');
-          return `${title}${items}`;
-        }
         const items = block.items.map(i => `<li>${bi(i.es, i.en)}</li>`).join('');
         return `${title}<ul class="dp-block-list">${items}</ul>`;
       }
@@ -680,24 +657,39 @@
     }
 
     function renderLibrary(deep) {
-      setBilingual('libraryTitle', deep.library_title);
-      setBilingual('libraryIntro', deep.library_intro);
-      document.getElementById('accordionHub').innerHTML = deep.sections.map((sec) => `
-        <section class="dp-lib-section" id="dp-sec-${sec.id}">
-          <h3 class="dp-lib-heading">
-            <span>${sec.icon}</span>
+      const hub = document.getElementById('libraryHub');
+      const mount = document.getElementById('dpJourneyMount');
+      const journeySec = deep.sections.find((s) => s.id === 'thirty_three_days');
+      const otherSections = deep.sections.filter((s) => s.id !== 'thirty_three_days');
+
+      if (mount && journeySec) {
+        mount.innerHTML = renderJourneySection(journeySec);
+      }
+
+      const sectionsHtml = otherSections.map((sec) => `
+        <section class="dp-section" id="dp-sec-${sec.id}">
+          <h2 class="dp-section-title">
+            <span aria-hidden="true">${sec.icon} </span>
             <span data-lang="es">${sec.title.es}</span>
             <span data-lang="en" style="display:none">${sec.title.en}</span>
-          </h3>
-          <p class="dp-lib-summary">
+          </h2>
+          <p class="dp-section-lead">
             <span data-lang="es">${sec.summary.es}</span>
             <span data-lang="en" style="display:none">${sec.summary.en}</span>
           </p>
-          <div class="dp-lib-body">
-            ${sec.id === 'thirty_three_days' ? renderJourneySection(sec) : sec.blocks.map(b => renderBlock(b)).join('')}
-          </div>
+          ${sec.blocks.map(b => renderBlock(b)).join('')}
         </section>
       `).join('');
+
+      hub.innerHTML = `
+        <section class="dp-section dp-library-start">
+          <h2 class="dp-section-title" id="libraryTitle"></h2>
+          <p class="dp-section-lead" id="libraryIntro"></p>
+        </section>
+        ${sectionsHtml}
+      `;
+      setBilingual('libraryTitle', deep.library_title);
+      setBilingual('libraryIntro', deep.library_intro);
       initJourney33();
     }
 
@@ -719,6 +711,9 @@
       const $barLabelEn = document.getElementById('dpJourneyBarLabelEn');
       const $ring     = document.getElementById('dpJourneyRing');
       const $grid     = document.getElementById('dpJourneyGrid');
+      const $stickyBar = document.getElementById('dpJourneyStickyBar');
+      const $stickyCount = document.getElementById('dpJourneyStickyCount');
+      const $stickyCountEn = document.getElementById('dpJourneyStickyCountEn');
       const $complete = document.getElementById('dpJourneyComplete');
       const $days    = [...document.querySelectorAll('.dp-journey-day[data-day]')];
       const $checks  = [...document.querySelectorAll('.dp-journey-check')];
@@ -735,7 +730,10 @@
         const pct = (n / total) * 100;
         const active = activeDay();
         if ($bar) $bar.style.width = pct + '%';
+        if ($stickyBar) $stickyBar.style.width = pct + '%';
         if ($count) $count.textContent = n;
+        if ($stickyCount) $stickyCount.textContent = n + ' de ' + total + ' días';
+        if ($stickyCountEn) $stickyCountEn.textContent = n + ' of ' + total + ' days';
         if ($barLabel) $barLabel.textContent = n + ' día' + (n !== 1 ? 's' : '') + ' completado' + (n !== 1 ? 's' : '');
         if ($barLabelEn) $barLabelEn.textContent = n + ' day' + (n !== 1 ? 's' : '') + ' completed';
         if ($ring) {
@@ -804,7 +802,7 @@
         });
       });
 
-      ['dpJourneyReset', 'dpJourneyResetEn'].forEach(id => {
+      ['dpJourneyReset', 'dpJourneyResetEn', 'dpJourneyStickyReset', 'dpJourneyStickyResetEn'].forEach(id => {
         const btn = document.getElementById(id);
         if (!btn) return;
         btn.addEventListener('click', () => {
