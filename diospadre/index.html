@@ -386,12 +386,8 @@
       color: rgba(255,255,255,0.5);
       margin: 0 0 1rem;
     }
-    .dp-journey-sticky {
-      position: sticky;
-      top: 58px;
-      z-index: 40;
-      margin-bottom: 1rem;
-    }
+    .dp-journey-progress { margin-bottom: 1rem; }
+    .dp-journey-progress .a33-bar-wrap { max-width: 360px; margin: 0 auto; }
     .dp-journey-grid.a33-list {
       max-width: none;
       padding: 0 0 1rem;
@@ -420,7 +416,7 @@
     }
     .dp-library-start { margin-bottom: 1rem; }
     .dp-library-start .dp-section-title { margin-bottom: 0.5rem; }
-    .dp-journey-complete.ador-complete-note { margin: 0.75rem 0 1rem; font-size: 0.92rem; }
+    .dp-journey-complete.a33-complete-banner { margin: 0.75rem 0 1rem; }
   </style>
 </head>
 <body>
@@ -569,9 +565,9 @@
       if (block.scripture) {
         body += renderScripture(block.scripture);
       }
-      body += `<label class="ador-done-label dp-journey-done">
-        <input type="checkbox" class="dp-journey-check" data-day="${dayNum}" />
-        <span class="ador-done-checkmark"></span>
+      body += `<label class="a33-done-label dp-journey-done">
+        <input type="checkbox" class="a33-done-check dp-journey-check" data-day="${dayNum}" />
+        <span class="a33-done-checkmark"></span>
         <span data-lang="es">Día completado — pasar al siguiente</span>
         <span data-lang="en" style="display:none">Day completed — move to next</span>
       </label>`;
@@ -583,21 +579,43 @@
       const days = sec.blocks.filter(b => b.type === 'sub');
       window._dpJourneyDays = days;
       return `<div class="dp-journey-wrap" id="dpJourney33" data-total="${days.length}">
-        <div class="ador-progress-panel dp-journey-sticky">
-          <div class="ador-progress-top">
-            <span class="ador-progress-count" id="dpJourneyStickyCount" data-lang="es">0 de ${days.length} días</span>
-            <span class="ador-progress-count" id="dpJourneyStickyCountEn" data-lang="en" style="display:none">0 of ${days.length} days</span>
-            <button type="button" class="ador-progress-reset" id="dpJourneyStickyReset" data-lang="es">↺ Reiniciar</button>
-            <button type="button" class="ador-progress-reset" id="dpJourneyStickyResetEn" data-lang="en" style="display:none">↺ Reset</button>
+        <div class="a33-hero-inner dp-journey-progress" style="padding:1rem 0 0.75rem">
+          <div class="a33-hero-progress-wrap">
+            <svg class="a33-progress-ring" viewBox="0 0 120 120">
+              <defs>
+                <linearGradient id="a33RingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#e8c97a"/>
+                  <stop offset="100%" stop-color="#c9a84c"/>
+                </linearGradient>
+              </defs>
+              <circle cx="60" cy="60" r="52" class="a33-ring-track"/>
+              <circle cx="60" cy="60" r="52" class="a33-ring-fill" id="dpJourneyRing"/>
+            </svg>
+            <div class="a33-progress-inner">
+              <span class="a33-progress-num" id="dpJourneyCount">0</span>
+              <span class="a33-progress-label" data-lang="es">de ${days.length}</span>
+              <span class="a33-progress-label" data-lang="en" style="display:none">of ${days.length}</span>
+            </div>
           </div>
-          <div class="ador-progress-bar-wrap">
-            <div class="ador-progress-bar-fill" id="dpJourneyStickyBar"></div>
+          <div class="a33-bar-wrap">
+            <div class="a33-bar-fill" id="dpJourneyBar"></div>
           </div>
+          <p class="a33-bar-label" id="dpJourneyBarLabel" data-lang="es">0 días completados</p>
+          <p class="a33-bar-label" id="dpJourneyBarLabelEn" data-lang="en" style="display:none">0 days completed</p>
+        </div>
+        <div class="a33-toolbar">
+          <button type="button" class="a33-reset-btn" id="dpJourneyReset" data-lang="es">↺ Reiniciar jornada</button>
+          <button type="button" class="a33-reset-btn" id="dpJourneyResetEn" data-lang="en" style="display:none">↺ Reset journey</button>
         </div>
         <div class="a33-list dp-journey-grid" id="dpJourneyGrid" role="navigation" aria-label="Días de la jornada"></div>
-        <div class="ador-complete-note dp-journey-complete" id="dpJourneyComplete">
-          <p data-lang="es">✝ ¡33 días completados! El Padre camina contigo — sigue hablándole cada día.</p>
-          <p data-lang="en" style="display:none">✝ 33 days completed! The Father walks with you — keep speaking to Him each day.</p>
+        <div class="a33-complete-banner dp-journey-complete" id="dpJourneyComplete" style="display:none">
+          <div class="a33-complete-inner">
+            <div class="a33-complete-cross">✝</div>
+            <p class="a33-complete-title" data-lang="es">¡Jornada completada!</p>
+            <p class="a33-complete-title" data-lang="en" style="display:none">Journey completed!</p>
+            <p class="a33-complete-sub" data-lang="es">Has completado los 33 días para conocer al Padre. Sigue hablándole cada día — Él te escucha.</p>
+            <p class="a33-complete-sub" data-lang="en" style="display:none">You have completed all 33 days to know the Father. Keep speaking to Him each day — He listens.</p>
+          </div>
         </div>
         ${intro.map(b => renderBlock(b)).join('')}
         <div class="dp-journey-day-panel" id="dpJourneyDayPanel"></div>
@@ -662,8 +680,8 @@
       initJourney33();
     }
 
-    const JOURNEY33_TOTAL = 33;
     const JOURNEY33_KEY   = 'diospadre33_done';
+    const JOURNEY33_RING_C = 2 * Math.PI * 52;
     let journey33Done = new Set();
     let journey33ViewDay = 1;
 
@@ -675,12 +693,19 @@
       const total = Number(wrap.dataset.total) || days.length;
 
       journey33Done = new Set(JSON.parse(localStorage.getItem(JOURNEY33_KEY) || '[]'));
-      const $grid     = document.getElementById('dpJourneyGrid');
-      const $panel    = document.getElementById('dpJourneyDayPanel');
-      const $stickyBar = document.getElementById('dpJourneyStickyBar');
-      const $stickyCount = document.getElementById('dpJourneyStickyCount');
-      const $stickyCountEn = document.getElementById('dpJourneyStickyCountEn');
-      const $complete = document.getElementById('dpJourneyComplete');
+      const $grid      = document.getElementById('dpJourneyGrid');
+      const $panel     = document.getElementById('dpJourneyDayPanel');
+      const $bar       = document.getElementById('dpJourneyBar');
+      const $count     = document.getElementById('dpJourneyCount');
+      const $barLabel  = document.getElementById('dpJourneyBarLabel');
+      const $barLabelEn = document.getElementById('dpJourneyBarLabelEn');
+      const $ring      = document.getElementById('dpJourneyRing');
+      const $complete  = document.getElementById('dpJourneyComplete');
+
+      if ($ring) {
+        $ring.style.strokeDasharray = JOURNEY33_RING_C;
+        $ring.style.strokeDashoffset = JOURNEY33_RING_C;
+      }
 
       function activeDay() {
         for (let i = 1; i <= total; i++) {
@@ -729,10 +754,14 @@
           journey33ViewDay = active;
         }
 
-        if ($stickyBar) $stickyBar.style.width = pct + '%';
-        if ($stickyCount) $stickyCount.textContent = n + ' de ' + total + ' días';
-        if ($stickyCountEn) $stickyCountEn.textContent = n + ' of ' + total + ' days';
-        if ($complete) $complete.classList.toggle('is-visible', n >= total);
+        if ($bar) $bar.style.width = pct + '%';
+        if ($count) $count.textContent = n;
+        if ($barLabel) $barLabel.textContent = n + ' día' + (n !== 1 ? 's' : '') + ' completado' + (n !== 1 ? 's' : '');
+        if ($barLabelEn) $barLabelEn.textContent = n + ' day' + (n !== 1 ? 's' : '') + ' completed';
+        if ($ring) {
+          $ring.style.strokeDashoffset = (JOURNEY33_RING_C * (1 - n / total)).toFixed(2);
+        }
+        if ($complete) $complete.style.display = n >= total ? '' : 'none';
 
         if ($grid) {
           $grid.innerHTML = days.map((block, i) => {
@@ -765,7 +794,7 @@
         }
       }
 
-      ['dpJourneyStickyReset', 'dpJourneyStickyResetEn'].forEach(id => {
+      ['dpJourneyReset', 'dpJourneyResetEn'].forEach(id => {
         const btn = document.getElementById(id);
         if (!btn) return;
         btn.addEventListener('click', () => {

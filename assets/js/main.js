@@ -699,7 +699,7 @@ async function initHomePage() {
     { keywords: ['adoracion', 'adoration', 'eucaristia', 'eucharist'], ids: ['sagradocorazon', 'misericordia', 'fatima', 'santaclara', 'santotomasdeaquino'] },
     { keywords: ['desierto', 'silencio', 'escucha', 'wilderness', 'silence', 'listening'], ids: ['sanjuanbautista', 'sancharbel', 'sanguillermo', 'sanefren', 'sanismael'] },
     { keywords: ['difuntos', 'departed', 'dead', 'souls', 'purgatorio', 'purgatory'], ids: ['preciosisimasangre', 'misericordia', 'sanperegrino', 'sancamilo', 'nuestrasenoracarmen'] },
-    { keywords: ['discernimiento', 'discernment', 'call altar', 'llamados', 'vocacion', 'vocation'], ids: ['sanfranciscodesales', 'santotomasdeaquino', 'sangabriel', 'sanagustin', 'santomamoro', 'guadalupe'] },
+    { keywords: ['discernimiento', 'discernment', 'vocacion', 'vocation'], ids: ['sanfranciscodesales', 'santotomasdeaquino', 'sangabriel', 'sanagustin', 'santomamoro', 'guadalupe'] },
     { keywords: ['enemigos', 'enemies', 'enemy'], ids: ['sanmiguel', 'sanbenito', 'misericordia', 'santaclara', 'sanoliverplunkett', 'reydavid'] },
     { keywords: ['espiritu santo', 'espiritu', 'holy spirit', 'spirit'], ids: ['espiritu', 'sangabriel', 'sanmiguel', 'sanrafael', 'fatima'] },
     { keywords: ['familia', 'family', 'home', 'hogar'], ids: ['sanjose', 'santamonica', 'santacelina', 'schoenstatt', 'mariaauxiliadora', 'santaana'] },
@@ -728,15 +728,6 @@ async function initHomePage() {
   }
 
   const PRIVATE_SEARCH_ENTRIES = [
-    {
-      key: 'ggh1981',
-      href: '/discernimiento/?clave=ggh1981#suenos-privados',
-      icon: '/assets/images/private-search/dreams.svg?v=20260710',
-      text: {
-        es: 'Acceso privado: tus sueños y discernimiento en la gracia de Dios',
-        en: 'Private access: your dreams and discernment in God\'s grace',
-      },
-    },
     {
       key: 'barbarascarlettgomezmichel',
       href: '/privado/barbara/?clave=barbarascarlettgomezmichel',
