@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pequeños en Cristo | The Universal Prayer</title>
+  <meta name="description" content="Cuentos de santos, oraciones y actividades para niños católicos. Un rincón alegre para acercarse a Jesús, María y los santos." />
+  <meta name="theme-color" content="#9ec8ff" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pequeños en Cristo" />
+  <meta property="og:description" content="Cuentos de santos, oraciones y estrellitas para niños." />
+  <meta property="og:url" content="https://www.theuniversalprayer.com/ninos/" />
+  <meta property="og:image" content="https://www.theuniversalprayer.com/assets/images/social-home.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" href="/assets/images/icon.svg" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23c9a84c'>✝</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    body.ninos-page {
+      background:
+        radial-gradient(ellipse at 20% -5%, rgba(158,200,255,0.14) 0%, transparent 55%),
+        radial-gradient(ellipse at 80% 0%, rgba(201,168,76,0.1) 0%, transparent 50%),
+        #0a0d14;
+    }
+    .ninos-hero { text-align: center; padding: 5rem 1.5rem 2.5rem; position: relative; overflow: hidden; }
+    .ninos-hero::before {
+      content: '✦ ✧ ★ ✦ ✧'; position: absolute; top: 4.5rem; left: 50%; transform: translateX(-50%);
+      font-size: 0.65rem; letter-spacing: 1.2em; color: rgba(201,168,76,0.25); pointer-events: none; white-space: nowrap;
+    }
+    .ninos-icon {
+      width: 118px; height: 118px; margin: 0.35rem auto 1rem; display: block;
+      filter: drop-shadow(0 0 20px rgba(158,200,255,0.45));
+      animation: ninos-float 4.5s ease-in-out infinite;
+    }
+    @keyframes ninos-float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    .ninos-badge {
+      display: inline-block; font-family: var(--font-sans); font-size: 0.7rem; letter-spacing: 0.14em;
+      text-transform: uppercase; color: #b8d8ff; border: 1px solid rgba(158,200,255,0.35);
+      padding: 0.3em 0.9em; border-radius: 20px; margin-bottom: 1rem; background: rgba(158,200,255,0.06);
+    }
+    .ninos-title {
+      font-family: var(--font-serif); font-size: clamp(2rem, 6vw, 3rem); color: #fff;
+      margin: 0 0 0.75rem; line-height: 1.15;
+    }
+    .ninos-subtitle {
+      font-family: var(--font-sans); font-size: 0.95rem; color: rgba(255,255,255,0.62);
+      max-width: 560px; margin: 0 auto; line-height: 1.7;
+    }
+    .ninos-wrap { max-width: 780px; margin: 0 auto; padding: 0 1.25rem 4rem; }
+    .ninos-section { margin-bottom: 2.75rem; }
+    .ninos-section-title {
+      font-family: var(--font-serif); font-size: 1.35rem; color: var(--gold-light);
+      margin: 0 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(201,168,76,0.2);
+    }
+    .ninos-text { font-family: var(--font-sans); font-size: 0.95rem; color: rgba(255,255,255,0.82); line-height: 1.8; }
+    .ninos-text p { margin: 0 0 0.9rem; }
+    .ninos-verse {
+      border-left: 3px solid rgba(158,200,255,0.5); background: rgba(158,200,255,0.06);
+      border-radius: 0 12px 12px 0; padding: 0.85rem 1.2rem; margin: 0 0 1rem;
+      font-family: var(--font-serif); font-style: italic; font-size: 0.92rem;
+      color: rgba(255,255,255,0.88); line-height: 1.65;
+    }
+    .ninos-verse cite { display: block; margin-top: 0.3rem; font-size: 0.72rem; font-style: normal; color: #9ec8ff; }
+    .ninos-angel-box {
+      display: flex; gap: 1.1rem; align-items: center; padding: 1.2rem 1.25rem; border-radius: 14px;
+      border: 1px solid rgba(158,200,255,0.25);
+      background: linear-gradient(135deg, rgba(158,200,255,0.08), rgba(201,168,76,0.04)); margin-top: 0.75rem;
+    }
+    .ninos-angel-img { width: 72px; height: 72px; flex-shrink: 0; filter: drop-shadow(0 0 12px rgba(255,255,255,0.2)); }
+    .ninos-prayer-card {
+      background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.22);
+      border-radius: 12px; padding: 1.2rem 1.3rem; margin-bottom: 0.75rem;
+    }
+    .ninos-prayer-name {
+      font-family: var(--font-sans); font-size: 0.78rem; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--gold); margin: 0 0 0.5rem;
+    }
+    .ninos-prayer-text {
+      font-family: var(--font-serif); font-size: 0.98rem; color: rgba(255,255,255,0.88);
+      line-height: 1.85; white-space: pre-line; margin: 0;
+    }
+    .ninos-cuentos-sub { font-family: var(--font-sans); font-size: 0.85rem; color: rgba(255,255,255,0.5); margin: 0; line-height: 1.5; }
+    .ninos-cuentos-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+    @media (max-width: 520px) { .ninos-cuentos-grid { grid-template-columns: 1fr; } }
+    .ninos-cuento-card {
+      text-align: left; padding: 1rem 1.05rem; border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.03);
+      cursor: pointer; transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+      font-family: inherit; color: inherit; width: 100%;
+    }
+    .ninos-cuento-card:hover {
+      transform: translateY(-3px); border-color: rgba(201,168,76,0.35); box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    }
+    .ninos-cuento-top { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 0.55rem; }
+    .ninos-cuento-icon {
+      width: 48px; height: 48px; border-radius: 50%; background: rgba(0,0,0,0.25); padding: 4px; flex-shrink: 0;
+    }
+    .ninos-cuento-title { font-family: var(--font-serif); font-size: 1rem; color: var(--gold-light); margin: 0; line-height: 1.25; }
+    .ninos-cuento-hook { font-family: var(--font-sans); font-size: 0.8rem; color: rgba(255,255,255,0.6); margin: 0; line-height: 1.45; }
+    .ninos-cuento-open { display: inline-block; margin-top: 0.55rem; font-size: 0.72rem; color: #9ec8ff; }
+    .ninos-stars-head { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1rem; }
+    .ninos-stars-count {
+      font-family: var(--font-sans); font-size: 0.85rem; color: #ffe98a;
+      background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.3); border-radius: 20px; padding: 0.35em 0.85em;
+    }
+    .ninos-star-list { display: flex; flex-direction: column; gap: 0.55rem; }
+    .ninos-star-item {
+      display: flex; gap: 0.75rem; align-items: flex-start; padding: 0.85rem 1rem; border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.03); transition: background 0.2s, border-color 0.2s;
+    }
+    .ninos-star-item.is-done { border-color: rgba(255,233,138,0.3); background: rgba(255,233,138,0.05); }
+    .ninos-star-check { flex-shrink: 0; cursor: pointer; position: relative; margin-top: 0.1rem; }
+    .ninos-star-check input { position: absolute; opacity: 0; width: 0; height: 0; }
+    .ninos-star-box {
+      display: block; width: 26px; height: 26px; font-size: 1.1rem; line-height: 26px; text-align: center;
+      border-radius: 8px; border: 2px solid rgba(255,233,138,0.4); background: transparent; transition: all 0.2s;
+    }
+    .ninos-star-check input:checked + .ninos-star-box { background: rgba(255,233,138,0.15); border-color: #ffe98a; }
+    .ninos-star-label { font-family: var(--font-sans); font-size: 0.9rem; color: rgba(255,255,255,0.85); line-height: 1.5; }
+    .ninos-star-item.is-done .ninos-star-label { color: rgba(255,255,255,0.5); }
+    .ninos-parent {
+      font-family: var(--font-sans); font-size: 0.82rem; color: rgba(255,255,255,0.5); line-height: 1.65;
+      padding: 1rem 1.15rem; border-radius: 10px; border: 1px dashed rgba(255,255,255,0.12); margin-top: 2rem;
+    }
+    .ninos-links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.85rem; }
+    .ninos-link-btn {
+      font-family: var(--font-sans); font-size: 0.78rem; color: var(--gold-light); text-decoration: none;
+      border: 1px solid rgba(201,168,76,0.35); border-radius: 20px; padding: 0.38em 0.85em;
+    }
+    .ninos-link-btn:hover { background: rgba(201,168,76,0.1); }
+    .ninos-footer { margin-top: 2.5rem; text-align: center; }
+    .ninos-home-link { font-family: var(--font-sans); font-size: 0.85rem; color: var(--gold); text-decoration: none; opacity: 0.75; }
+    .ninos-home-link:hover { opacity: 1; }
+    .ninos-modal-overlay {
+      display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.75); z-index: 9500;
+      padding: 1rem; overflow-y: auto; align-items: flex-start; justify-content: center;
+    }
+    .ninos-modal-overlay.is-open { display: flex; }
+    .ninos-modal {
+      width: min(560px, 100%); margin: 2rem auto; background: #121820;
+      border: 1px solid rgba(201,168,76,0.3); border-radius: 16px; overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5); animation: ninos-modal-in 0.3s ease;
+    }
+    @keyframes ninos-modal-in { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+    .ninos-modal-hero {
+      display: flex; align-items: center; gap: 1rem; padding: 1.25rem 1.35rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .ninos-modal-img { width: 64px; height: 64px; border-radius: 50%; background: rgba(0,0,0,0.3); padding: 5px; }
+    .ninos-modal-title { font-family: var(--font-serif); font-size: 1.25rem; color: var(--gold-light); margin: 0; flex: 1; }
+    .ninos-modal-body { padding: 1.25rem 1.35rem 1.5rem; font-family: var(--font-sans); font-size: 0.92rem; color: rgba(255,255,255,0.82); line-height: 1.75; }
+    .ninos-modal-body p { margin: 0 0 0.85rem; }
+    .ninos-modal-moral {
+      background: rgba(158,200,255,0.08); border-left: 3px solid #9ec8ff; border-radius: 0 10px 10px 0;
+      padding: 0.75rem 1rem; margin: 1rem 0; font-family: var(--font-serif); font-style: italic; color: rgba(255,255,255,0.9);
+    }
+    .ninos-modal-act {
+      background: rgba(201,168,76,0.08); border: 1px solid rgba(201,168,76,0.22);
+      border-radius: 10px; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.88rem;
+    }
+    .ninos-modal-act strong { color: var(--gold); }
+    .ninos-modal-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0 1.35rem 1.35rem; }
+    .ninos-modal-btn {
+      font-family: var(--font-sans); font-size: 0.8rem; padding: 0.45em 1em; border-radius: 20px;
+      border: 1px solid rgba(201,168,76,0.35); background: rgba(201,168,76,0.08); color: var(--gold-light);
+      cursor: pointer; text-decoration: none; display: inline-block;
+    }
+    .ninos-modal-btn:hover { background: rgba(201,168,76,0.15); }
+    .ninos-modal-close { background: none; border: none; color: rgba(255,255,255,0.5); font-size: 1.2rem; cursor: pointer; padding: 0.25rem; }
+    .ninos-modal-close:hover { color: #fff; }
+  </style>
+</head>
+<body class="ninos-page">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link"><span class="cross">✝</span><span class="logo-text">The Universal Prayer</span></a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language"><span id="langLabel">EN</span></button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="ninos-hero">
+    <a href="/" class="ador-back-link" data-lang="es">← Inicio</a>
+    <a href="/" class="ador-back-link" data-lang="en" style="display:none">← Home</a>
+    <img class="ninos-icon" src="/assets/images/ninos.svg" alt="" aria-hidden="true" />
+    <div class="ninos-badge" data-lang="es">⭐ Pequeños en Cristo</div>
+    <div class="ninos-badge" data-lang="en" style="display:none">⭐ Little Ones in Christ</div>
+    <h1 class="ninos-title" data-lang="es">Cuentos, oraciones<br>y estrellitas</h1>
+    <h1 class="ninos-title" data-lang="en" style="display:none">Stories, prayers<br>and little stars</h1>
+    <p class="ninos-subtitle" data-lang="es">Un rincón especial para niños: historias de santos amigos, oraciones sencillas y pequeñas misiones para acercarte a Jesús cada día.</p>
+    <p class="ninos-subtitle" data-lang="en" style="display:none">A special corner for children: stories of saint friends, simple prayers, and little missions to draw closer to Jesus each day.</p>
+  </section>
+
+  <main class="ninos-wrap">
+    <section class="ninos-section">
+      <h2 class="ninos-section-title" data-lang="es">Dios te ama muchísimo</h2>
+      <h2 class="ninos-section-title" data-lang="en" style="display:none">God loves you so much</h2>
+      <blockquote class="ninos-verse" data-lang="es">«Dejad que los niños vengan a mí... porque de los tales es el reino de los cielos.»<cite>— Mateo 19, 14</cite></blockquote>
+      <blockquote class="ninos-verse" data-lang="en" style="display:none">"Let the children come to me... for the kingdom of heaven belongs to such as these."<cite>— Matthew 19:14</cite></blockquote>
+      <div class="ninos-text" data-lang="es">
+        <p>No necesitas entender todo para ser amado por Dios. Él ya te conoce: tu nombre, tus risas, tus miedos, tus preguntas. Jesús fue niño como tú — y por eso te entiende de verdad.</p>
+        <p>Ser «pequeño en Cristo» no es ser perfecto. Es confiar, rezar, pedir perdón cuando fallas, y volver a empezar con un corazón limpio.</p>
+      </div>
+      <div class="ninos-text" data-lang="en" style="display:none">
+        <p>You do not need to understand everything to be loved by God. He already knows you: your name, your laughs, your fears, your questions. Jesus was a child like you — and that is why He truly understands.</p>
+        <p>Being "little in Christ" is not being perfect. It is trusting, praying, asking forgiveness when you fail, and starting again with a clean heart.</p>
+      </div>
+    </section>
+
+    <section class="ninos-section">
+      <h2 class="ninos-section-title" data-lang="es">Tu ángel de la guarda</h2>
+      <h2 class="ninos-section-title" data-lang="en" style="display:none">Your guardian angel</h2>
+      <div class="ninos-angel-box">
+        <img class="ninos-angel-img" src="/assets/images/ninos-angel.svg" alt="" aria-hidden="true" />
+        <div class="ninos-text" data-lang="es"><p>Dios puso un ángel especial para cuidarte. No lo ves, pero te acompaña en la escuela, en el juego, cuando tienes miedo y cuando duermes.</p></div>
+        <div class="ninos-text" data-lang="en" style="display:none"><p>God placed a special angel to watch over you. You cannot see him, but he accompanies you at school, at play, when you are afraid, and when you sleep.</p></div>
+      </div>
+      <div class="ninos-prayer-card" style="margin-top:1rem">
+        <p class="ninos-prayer-name" data-lang="es">Oración al Ángel de la Guarda</p>
+        <p class="ninos-prayer-name" data-lang="en" style="display:none">Guardian Angel Prayer</p>
+        <p class="ninos-prayer-text" data-lang="es">Ángel de la Guarda,
+dulce compañía,
+no me desampares
+ni de noche ni de día.
+
+Hasta que me pongas
+en manos de Jesús,
+amén.</p>
+        <p class="ninos-prayer-text" data-lang="en" style="display:none">Angel of God,
+my guardian dear,
+to whom God's love
+commits me here.
+
+Ever this day
+be at my side,
+to light and guard,
+to rule and guide.
+Amen.</p>
+      </div>
+    </section>
+
+    <section class="ninos-section">
+      <h2 class="ninos-section-title" data-lang="es">Oraciones que puedes aprender</h2>
+      <h2 class="ninos-section-title" data-lang="en" style="display:none">Prayers you can learn</h2>
+      <div class="ninos-prayer-card">
+        <p class="ninos-prayer-name" data-lang="es">Padre Nuestro (corto)</p>
+        <p class="ninos-prayer-name" data-lang="en" style="display:none">Our Father (short)</p>
+        <p class="ninos-prayer-text" data-lang="es">Padre nuestro que estás en el cielo,
+santificado sea tu nombre.
+Danos hoy el pan de cada día.
+Perdónanos como perdonamos a los demás.
+No nos dejes caer en la tentación.
+Amén.</p>
+        <p class="ninos-prayer-text" data-lang="en" style="display:none">Our Father, who art in heaven,
+hallowed be thy name.
+Give us this day our daily bread.
+Forgive us as we forgive others.
+Lead us not into temptation.
+Amen.</p>
+      </div>
+      <div class="ninos-prayer-card">
+        <p class="ninos-prayer-name" data-lang="es">Ave María</p>
+        <p class="ninos-prayer-name" data-lang="en" style="display:none">Hail Mary</p>
+        <p class="ninos-prayer-text" data-lang="es">Dios te salve, María,
+llena eres de gracia.
+El Señor es contigo.
+Bendita tú eres entre todas las mujeres,
+y bendito es el fruto de tu vientre, Jesús.
+
+Santa María, Madre de Dios,
+ruega por nosotros pecadores,
+ahora y en la hora de nuestra muerte.
+Amén.</p>
+        <p class="ninos-prayer-text" data-lang="en" style="display:none">Hail Mary, full of grace,
+the Lord is with thee.
+Blessed art thou among women,
+and blessed is the fruit of thy womb, Jesus.
+
+Holy Mary, Mother of God,
+pray for us sinners,
+now and at the hour of our death.
+Amen.</p>
+      </div>
+      <div class="ninos-links">
+        <a href="/oraciones/" class="ninos-link-btn" data-lang="es">→ Más oraciones</a>
+        <a href="/oraciones/" class="ninos-link-btn" data-lang="en" style="display:none">→ More prayers</a>
+        <a href="/rosario/" class="ninos-link-btn" data-lang="es">→ Rosario</a>
+        <a href="/rosario/" class="ninos-link-btn" data-lang="en" style="display:none">→ Rosary</a>
+      </div>
+    </section>
+
+    <section class="ninos-section" id="ninosCuentos">
+      <h2 class="ninos-section-title" data-lang="es">📖 Cuentos de santos amigos</h2>
+      <h2 class="ninos-section-title" data-lang="en" style="display:none">📖 Stories of saint friends</h2>
+      <p class="ninos-cuentos-sub" style="margin-bottom:1rem" data-lang="es">Toca un cuento para leerlo — o escucharlo en voz alta.</p>
+      <p class="ninos-cuentos-sub" style="margin-bottom:1rem" data-lang="en" style="display:none">Tap a story to read it — or hear it read aloud.</p>
+      <div class="ninos-cuentos-grid" id="ninosCuentosGrid"></div>
+    </section>
+
+    <section class="ninos-section">
+      <div class="ninos-stars-head">
+        <h2 class="ninos-section-title" style="margin:0;border:none;padding:0" data-lang="es">⭐ Mis estrellitas de la semana</h2>
+        <h2 class="ninos-section-title" style="margin:0;border:none;padding:0" data-lang="en" style="display:none">⭐ My stars for the week</h2>
+        <span class="ninos-stars-count" id="ninosStarsCount">0 / 8 ★</span>
+      </div>
+      <p class="ninos-cuentos-sub" style="margin-bottom:1rem" data-lang="es">Pequeñas misiones para ser más parecido a Jesús.</p>
+      <p class="ninos-cuentos-sub" style="margin-bottom:1rem" data-lang="en" style="display:none">Little missions to be more like Jesus.</p>
+      <div class="ninos-star-list" id="ninosStarList"></div>
+    </section>
+
+    <p class="ninos-parent" data-lang="es"><strong>Para mamá y papá:</strong> Los cuentos están adaptados para niños. Para la versión completa de cada santo, visita Intercesores. Si un niño muestra ansiedad o tristeza persistente, acompáñenlo con cariño y busquen ayuda profesional si hace falta.</p>
+    <p class="ninos-parent" data-lang="en" style="display:none"><strong>For moms and dads:</strong> Stories are adapted for children. For the full version of each saint, visit Intercessors. If a child shows persistent anxiety or sadness, accompany them with love and seek professional help if needed.</p>
+
+    <div class="ninos-footer">
+      <a href="/jovenes/" class="ninos-link-btn" data-lang="es">→ Para jóvenes</a>
+      <a href="/jovenes/" class="ninos-link-btn" data-lang="en" style="display:none">→ For youth</a>
+      <br><br>
+      <a href="/" class="ninos-home-link" data-lang="es">← Volver al inicio</a>
+      <a href="/" class="ninos-home-link" data-lang="en" style="display:none">← Back to home</a>
+    </div>
+  </main>
+
+  <div class="ninos-modal-overlay" id="ninosModal" aria-modal="true" role="dialog">
+    <div class="ninos-modal">
+      <div class="ninos-modal-hero">
+        <img class="ninos-modal-img" id="ninosModalImg" src="" alt="" />
+        <h3 class="ninos-modal-title" id="ninosModalTitle"></h3>
+        <button class="ninos-modal-close" id="ninosModalClose" aria-label="Cerrar">✕</button>
+      </div>
+      <div class="ninos-modal-body" id="ninosModalBody"></div>
+      <div class="ninos-modal-actions">
+        <button class="ninos-modal-btn" id="ninosModalTts" type="button"></button>
+        <a class="ninos-modal-btn" id="ninosModalSaint" href="#"></a>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/js/ninos.js"></script>
+  <script src="../assets/js/menu.js"></script>
+</body>
+</html>

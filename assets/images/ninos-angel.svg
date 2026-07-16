@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-hidden="true">
+  <defs>
+    <radialGradient id="angelGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#b8d4ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="50" cy="88" rx="22" ry="5" fill="#c9a84c" opacity="0.2"/>
+  <circle cx="50" cy="50" r="38" fill="url(#angelGlow)" opacity="0.45"/>
+  <!-- wings -->
+  <path d="M50 42 C30 30 12 38 18 56 C24 48 36 44 50 48 Z" fill="#e8f0ff" stroke="#c9d8f0" stroke-width="1.2" opacity="0.9"/>
+  <path d="M50 42 C70 30 88 38 82 56 C76 48 64 44 50 48 Z" fill="#e8f0ff" stroke="#c9d8f0" stroke-width="1.2" opacity="0.9"/>
+  <!-- head -->
+  <circle cx="50" cy="38" r="10" fill="none" stroke="#f5ecd0" stroke-width="2"/>
+  <!-- body -->
+  <path d="M50 48 L50 72" stroke="#f5ecd0" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M50 56 L38 68" stroke="#f5ecd0" stroke-width="2" stroke-linecap="round"/>
+  <path d="M50 56 L62 68" stroke="#f5ecd0" stroke-width="2" stroke-linecap="round"/>
+  <!-- halo -->
+  <ellipse cx="50" cy="26" rx="12" ry="4" fill="none" stroke="#c9a84c" stroke-width="1.4" opacity="0.7"/>
+</svg>

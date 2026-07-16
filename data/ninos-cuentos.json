@@ -1,0 +1,212 @@
+{
+  "cuentos": [
+    {
+      "id": "juanbosco",
+      "saintId": "sanjuanbosco",
+      "icon": "/assets/images/sanjuanbosco.svg",
+      "accent": "#5a8fd4",
+      "title": {
+        "es": "Don Bosco y los muchachos",
+        "en": "Don Bosco and the boys"
+      },
+      "hook": {
+        "es": "Un cura que jugaba fútbol con los niños de la calle",
+        "en": "A priest who played soccer with street children"
+      },
+      "story": {
+        "es": "Hace mucho tiempo, en Italia, vivía un sacerdote llamado Juan Bosco. Veía a niños y niñas que no tenían escuela ni hogar. En lugar de gritarles, los invitaba a jugar, a cantar y a aprender sobre Jesús.\n\nDon Bosco les decía: «Dios te quiere feliz.» Les enseñaba con paciencia, sin pegarles ni humillarles. Muchos de esos niños, que parecían perdidos, se convirtieron en personas buenas y alegres.\n\nHoy la Iglesia lo llama padre de la juventud. Si alguna vez te sientes solo en el colegio o en el barrio, puedes pedirle que te ayude a encontrar amigos buenos y un corazón valiente.",
+        "en": "Long ago in Italy there lived a priest named John Bosco. He saw boys and girls with no school and no home. Instead of shouting at them, he invited them to play, sing, and learn about Jesus.\n\nDon Bosco told them: \"God wants you to be happy.\" He taught them with patience, without hitting or humiliating them. Many of those children, who seemed lost, became good and joyful people.\n\nToday the Church calls him father of youth. If you ever feel alone at school or in your neighborhood, you can ask him to help you find good friends and a brave heart."
+      },
+      "moral": {
+        "es": "Jesús ama a todos los niños — especialmente a los que nadie mira.",
+        "en": "Jesus loves all children — especially those nobody notices."
+      },
+      "activity": {
+        "es": "Invita hoy a un niño que esté solo a jugar contigo.",
+        "en": "Today invite a child who is alone to play with you."
+      }
+    },
+    {
+      "id": "teresita",
+      "saintId": "santateresita",
+      "icon": "/assets/images/santateresita.svg",
+      "accent": "#d45a8a",
+      "title": {
+        "es": "Teresita y el caminito pequeño",
+        "en": "Little Thérèse and the little way"
+      },
+      "hook": {
+        "es": "Una niña que hizo cosas chiquitas con mucho amor",
+        "en": "A girl who did tiny things with great love"
+      },
+      "story": {
+        "es": "Teresita era una niña muy sensible. A veces lloraba por cosas pequeñas, pero amaba mucho a Jesús. Cuando creció, entró en un convento y descubrió un secreto: no hace falta hacer cosas enormes para ser santa.\n\nPodías ser santa sonriendo cuando no tenías ganas, ayudando a una hermana enferma, o aguantando sin quejarte cuando algo dolía. Teresita llamó a eso «el caminito pequeño».\n\nMurió muy joven, pero su vida llenó el mundo de luz. Hoy nos enseña que cada acto pequeño hecho con amor es un regalo gigante para Dios.",
+        "en": "Thérèse was a very sensitive little girl. Sometimes she cried over small things, but she loved Jesus very much. When she grew up, she entered a convent and discovered a secret: you do not have to do huge things to be a saint.\n\nYou could be holy by smiling when you did not feel like it, helping a sick sister, or enduring without complaining when something hurt. Thérèse called this \"the little way.\"\n\nShe died very young, but her life filled the world with light. Today she teaches us that every small act done with love is a giant gift for God."
+      },
+      "moral": {
+        "es": "Lo pequeño hecho con amor es grandísimo ante Dios.",
+        "en": "Small things done with love are enormous before God."
+      },
+      "activity": {
+        "es": "Haz una cosa pequeña con amor: ordena un juguete, abraza a alguien, di «gracias».",
+        "en": "Do one small thing with love: tidy a toy, hug someone, say \"thank you.\""
+      }
+    },
+    {
+      "id": "nicolas",
+      "saintId": "sannicolas",
+      "icon": "/assets/images/sannicolas.svg",
+      "accent": "#3a5aaa",
+      "title": {
+        "es": "San Nicolás y los zapatos secretos",
+        "en": "Saint Nicholas and the secret shoes"
+      },
+      "hook": {
+        "es": "El santo que dejaba regalos sin que lo vieran",
+        "en": "The saint who left gifts without being seen"
+      },
+      "story": {
+        "es": "San Nicolás era obispo y amaba mucho a los niños pobres. Una noche supo que tres hermanas no tenían dinero y su papá estaba muy triste.\n\nNicolás no quiso que lo aplaudieran. De noche, sin hacer ruido, dejó monedas de oro en los zapatos que secaban junto a la ventana. ¡La familia pudo comer y las niñas tuvieron esperanza!\n\nPor eso muchos países recuerdan a San Nicolás en Navidad: no por los regalos caros, sino por la generosidad escondida que alegra el corazón.",
+        "en": "Saint Nicholas was a bishop who loved poor children very much. One night he learned that three sisters had no money and their father was very sad.\n\nNicholas did not want applause. At night, without making noise, he left gold coins in the shoes drying by the window. The family could eat and the girls had hope!\n\nThat is why many countries remember Saint Nicholas at Christmas: not for expensive gifts, but for hidden generosity that makes the heart glad."
+      },
+      "moral": {
+        "es": "Dar en secreto también es una forma de amar como Jesús.",
+        "en": "Giving in secret is also a way to love like Jesus."
+      },
+      "activity": {
+        "es": "Haz un regalo pequeño a alguien sin decir que fuiste tú.",
+        "en": "Give a small gift to someone without saying it was you."
+      }
+    },
+    {
+      "id": "francisco",
+      "saintId": "sanfrancisco",
+      "icon": "/assets/images/sanfrancisco.svg",
+      "accent": "#8a6a3a",
+      "title": {
+        "es": "Francisco y los animalitos",
+        "en": "Francis and the little animals"
+      },
+      "hook": {
+        "es": "El santo que hablaba con los pajaritos",
+        "en": "The saint who talked to the birds"
+      },
+      "story": {
+        "es": "Francisco de Asís amaba a Jesús y amaba todo lo que Dios creó. Un día predicó a unos pájaros que estaban en el camino, y ellos no se fueron hasta que terminó. ¡Como si lo entendieran!\n\nTambién le llamaban hermano Sol y hermana Luna. No porque adorara la naturaleza, sino porque veía en cada cosa un regalo del Padre del cielo.\n\nFrancisco nos enseña a cuidar la creación y a ser amables con los animalitos. Cada flor, cada perro, cada árbol habla de Dios.",
+        "en": "Francis of Assisi loved Jesus and loved everything God created. One day he preached to birds on the road, and they did not leave until he finished — as if they understood!\n\nHe also called the sun brother and the moon sister. Not because he worshiped nature, but because he saw in each thing a gift from the Father in heaven.\n\nFrancis teaches us to care for creation and be kind to animals. Every flower, every dog, every tree speaks of God."
+      },
+      "moral": {
+        "es": "El mundo es regalo de Dios — cuídalo con ternura.",
+        "en": "The world is God's gift — care for it with tenderness."
+      },
+      "activity": {
+        "es": "Cuida hoy una planta, un animal o recoge basura del patio.",
+        "en": "Today care for a plant, an animal, or pick up litter in the yard."
+      }
+    },
+    {
+      "id": "juandiego",
+      "saintId": "sanjuandiego",
+      "icon": "/assets/images/sanjuandiego.svg",
+      "accent": "#c97840",
+      "title": {
+        "es": "Juan Diego y las rosas de invierno",
+        "en": "Juan Diego and the winter roses"
+      },
+      "hook": {
+        "es": "Un niño humilde que llevó flores al obispo",
+        "en": "A humble man who brought flowers to the bishop"
+      },
+      "story": {
+        "es": "Juan Diego era un indígena sencillo que caminaba mucho para ir a Misa. Un día la Virgen María se le apareció en el Tepeyac y le pidió que hablara con el obispo.\n\nEl obispo no le creyó al principio. Juan Diego volvió triste, pero María le dijo: «¿No estoy yo aquí, que soy tu Madre?» Le mandó recoger rosas en pleno invierno — ¡imposible! — y las puso en su tilma.\n\nCuando abrió la tilma ante el obispo, las rosas cayeron y apareció la imagen hermosa de la Virgen morena. Dios eligió a alguien pequeño para un milagro grande.",
+        "en": "Juan Diego was a simple indigenous man who walked far to go to Mass. One day the Virgin Mary appeared to him at Tepeyac and asked him to speak with the bishop.\n\nThe bishop did not believe him at first. Juan Diego returned sad, but Mary told him: \"Am I not here, who am your Mother?\" She told him to gather roses in the middle of winter — impossible! — and placed them in his tilma.\n\nWhen he opened his tilma before the bishop, the roses fell and the beautiful image of the dark-skinned Virgin appeared. God chose someone small for a great miracle."
+      },
+      "moral": {
+        "es": "María escucha a los humildes. Tú también puedes confiarle tus penas.",
+        "en": "Mary listens to the humble. You too can trust her with your sorrows."
+      },
+      "activity": {
+        "es": "Dile a la Virgen una cosa que te preocupa hoy.",
+        "en": "Tell the Virgin one thing that worries you today."
+      }
+    },
+    {
+      "id": "lucia",
+      "saintId": "santalucia",
+      "icon": "/assets/images/santalucia.svg",
+      "accent": "#e8c040",
+      "title": {
+        "es": "Santa Lucía y la luz",
+        "en": "Saint Lucy and the light"
+      },
+      "hook": {
+        "es": "La santa que trae luz cuando todo está oscuro",
+        "en": "The saint who brings light when all is dark"
+      },
+      "story": {
+        "es": "Lucía vivía hace muchos siglos. Amaba a Jesús y ayudaba a los pobres escondiendo comida para llevarles de noche. Para tener las dos manos libres, se ponía una corona con velas encendidas en la cabeza — ¡qué idea tan valiente!\n\nCuando la obligaron a renunciar a su fe, no cedió. Prefería a Cristo antes que la comodidad. Por eso la Iglesia la llama Santa Lucía: su nombre significa «luz».\n\nCuando tengas miedo en la noche o en un momento difícil, puedes pedirle que Jesús encienda una lucecita en tu corazón.",
+        "en": "Lucy lived many centuries ago. She loved Jesus and helped the poor by hiding food to bring them at night. To have both hands free, she wore a crown with lit candles on her head — what a brave idea!\n\nWhen she was forced to give up her faith, she did not yield. She preferred Christ over comfort. That is why the Church calls her Saint Lucy: her name means \"light.\"\n\nWhen you are afraid at night or in a hard moment, you can ask her for Jesus to light a little flame in your heart."
+      },
+      "moral": {
+        "es": "Jesús es luz — aunque afuera esté oscuro.",
+        "en": "Jesus is light — even when it is dark outside."
+      },
+      "activity": {
+        "es": "Enciende una velita o lámpara y ora un Ave María.",
+        "en": "Light a candle or lamp and pray one Hail Mary."
+      }
+    },
+    {
+      "id": "fatima",
+      "saintId": "fatima",
+      "icon": "/assets/images/fatima.svg",
+      "accent": "#4a7ab8",
+      "title": {
+        "es": "Los tres pastorcitos",
+        "en": "The three little shepherds"
+      },
+      "hook": {
+        "es": "Tres niños que vieron a la Virgen en el campo",
+        "en": "Three children who saw the Virgin in the fields"
+      },
+      "story": {
+        "es": "En Portugal, tres niños cuidaban ovejas: Lucía, Francisco y Jacinta. Eran pobres y sencillos. Un día, mientras pastaban, vieron a una Señora vestida de blanco más brillante que el sol. Era la Virgen María.\n\nElla les pidió que rezaran el rosario por la paz del mundo y que ofrecieran pequeños sacrificios por los pecadores. Los niños obedecieron, aunque algunos adultos no les creyeron.\n\nUn día miles de personas vieron el sol bailar en el cielo — el «milagro del sol». Dios mostró que escucha a los niños que confían y rezan.",
+        "en": "In Portugal, three children tended sheep: Lucia, Francisco, and Jacinta. They were poor and simple. One day while grazing they saw a Lady dressed in white brighter than the sun. It was the Virgin Mary.\n\nShe asked them to pray the Rosary for world peace and offer small sacrifices for sinners. The children obeyed, even when some adults did not believe them.\n\nOne day thousands of people saw the sun dance in the sky — the \"miracle of the sun.\" God showed that He listens to children who trust and pray."
+      },
+      "moral": {
+        "es": "Rezar el rosario — aunque sea un misterio — es un gran regalo.",
+        "en": "Praying the Rosary — even one mystery — is a great gift."
+      },
+      "activity": {
+        "es": "Reza un misterio del rosario con tu familia.",
+        "en": "Pray one mystery of the Rosary with your family."
+      }
+    },
+    {
+      "id": "divinonino",
+      "saintId": "divinonino",
+      "icon": "/assets/images/divinonino.svg",
+      "accent": "#d4a85a",
+      "title": {
+        "es": "El Niño Jesús que sonríe",
+        "en": "The smiling Child Jesus"
+      },
+      "hook": {
+        "es": "Jesús también fue niño — y te entiende",
+        "en": "Jesus was also a child — and He understands you"
+      },
+      "story": {
+        "es": "Cuando Jesús nació en Belén, era un bebé pequeño como tú alguna vez. Lloró, necesitó abrazos, creció jugando y aprendiendo. Por eso cuando tú estás triste o asustado, Él lo entiende de verdad.\n\nEn muchos lugares del mundo, los niños veneran al Divino Niño: Jesús con los brazitos abiertos, listo para abrazarte. No es un Jesús lejano en el cielo — es un Niño que dice: «Yo reinaré, pero primero quiero tu confianza.»\n\nPuedes hablarle como a tu mejor amigo. Cuéntale lo que te pasó hoy, lo que te da miedo y lo que te hizo feliz.",
+        "en": "When Jesus was born in Bethlehem, He was a little baby like you once were. He cried, needed hugs, grew up playing and learning. That is why when you are sad or afraid, He truly understands.\n\nIn many parts of the world, children venerate the Divine Child: Jesus with open arms, ready to hug you. He is not a distant Jesus in the sky — He is a Child who says: \"I will reign, but first I want your trust.\"\n\nYou can talk to Him like your best friend. Tell Him what happened today, what scares you, and what made you happy."
+      },
+      "moral": {
+        "es": "Jesús fue niño. Puedes contarle todo.",
+        "en": "Jesus was a child. You can tell Him everything."
+      },
+      "activity": {
+        "es": "Cuéntale a Jesús tres cosas de tu día antes de dormir.",
+        "en": "Tell Jesus three things about your day before sleeping."
+      }
+    }
+  ]
+}

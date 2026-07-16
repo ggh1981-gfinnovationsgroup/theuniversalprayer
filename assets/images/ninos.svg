@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130" role="img" aria-hidden="true">
+  <defs>
+    <radialGradient id="ninosGlow" cx="50%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#fff9d6"/>
+      <stop offset="55%" stop-color="#9ec8ff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#9ec8ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ninosStar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe98a"/>
+      <stop offset="100%" stop-color="#c9a84c"/>
+    </linearGradient>
+  </defs>
+  <circle cx="65" cy="65" r="58" fill="url(#ninosGlow)" opacity="0.5"/>
+  <!-- stars -->
+  <polygon points="28,22 30,28 36,28 31,32 33,38 28,34 23,38 25,32 20,28 26,28" fill="url(#ninosStar)" opacity="0.9"/>
+  <polygon points="102,18 103.5,22 108,22 104.5,24.5 106,29 102,26.5 98,29 99.5,24.5 96,22 100.5,22" fill="url(#ninosStar)" opacity="0.75"/>
+  <polygon points="108,78 109.5,82 114,82 110.5,84.5 112,89 108,86.5 104,89 105.5,84.5 102,82 106.5,82" fill="url(#ninosStar)" opacity="0.6"/>
+  <!-- little figure -->
+  <circle cx="65" cy="44" r="14" fill="none" stroke="#f0e6b8" stroke-width="2.8"/>
+  <path d="M65 58 C52 58 44 72 44 88 L86 88 C86 72 78 58 65 58 Z" fill="none" stroke="#f0e6b8" stroke-width="2.8" stroke-linejoin="round"/>
+  <!-- open arms -->
+  <path d="M51 66 L38 58" stroke="#f0e6b8" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M79 66 L92 58" stroke="#f0e6b8" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- heart -->
+  <path d="M65 74 C62 70 56 70 56 75 C56 80 65 86 65 86 C65 86 74 80 74 75 C74 70 68 70 65 74 Z" fill="#e8a0b0" opacity="0.85"/>
+  <!-- cross tiny above -->
+  <line x1="65" y1="24" x2="65" y2="32" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"/>
+  <line x1="61" y1="28" x2="69" y2="28" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"/>
+</svg>

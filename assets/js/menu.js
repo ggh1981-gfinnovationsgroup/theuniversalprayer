@@ -38,6 +38,7 @@
     { id: 'diospadre', href: '/diospadre/', labels: { es: 'Dios Padre', en: 'God the Father' }, icon: '☁️' },
     { id: 'enemigos', href: '/enemigos/', labels: { es: 'Bendecir enemigos', en: 'Bless enemies' }, icon: '🤍' },
     { id: 'espiritu', href: '/espiritu/', labels: { es: 'Espíritu Santo', en: 'Holy Spirit' }, icon: '🕊️' },
+    { id: 'ninos', href: '/ninos/', labels: { es: 'Pequeños en Cristo', en: 'Little Ones in Christ' }, icon: '⭐' },
     { id: 'jovenes', href: '/jovenes/', labels: { es: 'Jóvenes en Cristo', en: 'Young in Christ' }, icon: '🔥' },
     { id: 'matrimonio', href: '/matrimonio/', labels: { es: 'Matrimonio', en: 'Marriage' }, icon: '💍' },
     { id: 'meses', href: '/meses/', labels: { es: 'Meses Devocionales', en: 'Devotional Months' }, icon: '📅' },
