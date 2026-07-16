@@ -931,23 +931,41 @@ function firstSentences(text, maxLen) {
   return (lastSpace > 0 ? trimmed.substring(0, lastSpace) : trimmed) + '…';
 }
 
+function getTodayMMDDKey(date = new Date()) {
+  return `${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+}
+
+function getTodayIntercessorSelection() {
+  const feastIds = FEAST_DAYS[getTodayMMDDKey()];
+  if (feastIds && feastIds.length) {
+    const metas = feastIds.map(id => INTERCESSORS.find(i => i.id === id)).filter(Boolean);
+    if (metas.length) {
+      return { candidates: metas, isFeast: true };
+    }
+  }
+  const pool = INTERCESSORS.filter(i => i.id !== 'misericordia');
+  const startIndex = Math.floor(Date.now() / 86400000) % pool.length;
+  return { candidates: [pool[startIndex]], isFeast: false };
+}
+
 async function initFeaturedSecond() {
   const section = document.getElementById('featuredSecond');
   if (!section) return;
 
-  // All intercessors except the primary (misericordia)
-  const candidates = INTERCESSORS.filter(i => i.id !== 'misericordia');
-
-  // Rotate by calendar day and gracefully skip missing/broken JSON entries.
+  const { candidates, isFeast } = getTodayIntercessorSelection();
+  const rotationPool = INTERCESSORS.filter(i => i.id !== 'misericordia');
   const dayIndex = Math.floor(Date.now() / 86400000);
-  const startIndex = dayIndex % candidates.length;
+  const startIndex = dayIndex % rotationPool.length;
+  const tryOrder = isFeast
+    ? candidates
+    : rotationPool.slice(startIndex).concat(rotationPool.slice(0, startIndex));
 
   try {
     let meta = null;
     let data = null;
 
-    for (let offset = 0; offset < candidates.length; offset++) {
-      const candidate = candidates[(startIndex + offset) % candidates.length];
+    for (let i = 0; i < tryOrder.length; i++) {
+      const candidate = tryOrder[i];
       try {
         data = await loadIntercessorData(candidate.id);
         meta = candidate;
@@ -959,7 +977,9 @@ async function initFeaturedSecond() {
 
     if (!meta || !data) return;
 
-    const lang = currentLang;
+    const feastExtras = isFeast ? candidates.filter(c => c.id !== meta.id) : [];
+    const extraEs = feastExtras.length ? ' · ' + feastExtras.map(i => i.short.es).join(' · ') : '';
+    const extraEn = feastExtras.length ? ' · ' + feastExtras.map(i => i.short.en).join(' · ') : '';
 
     // Dynamic color theming
     const rgb   = hexToRgb(meta.color);
@@ -980,10 +1000,10 @@ async function initFeaturedSecond() {
           <img src="${withAssetVersion(data.image)}" alt="${data.name.es}" class="featured-mercy-img" loading="eager"/>
         </div>
         <div class="featured-mercy-content">
-          <span class="featured-second-badge" data-lang="es">✦ Intercesor del Día</span>
-          <span class="featured-second-badge" data-lang="en" style="display:none">✦ Today's Intercessor</span>
-          <h2 class="featured-second-title" data-lang="es">${data.name.es}</h2>
-          <h2 class="featured-second-title" data-lang="en" style="display:none">${data.name.en}</h2>
+          <span class="featured-second-badge" data-lang="es">${isFeast ? '✦ Fiesta de hoy' : '✦ Intercesor del Día'}</span>
+          <span class="featured-second-badge" data-lang="en" style="display:none">${isFeast ? '✦ Feast day' : '✦ Today\'s Intercessor'}</span>
+          <h2 class="featured-second-title" data-lang="es">${data.name.es}${extraEs}</h2>
+          <h2 class="featured-second-title" data-lang="en" style="display:none">${data.name.en}${extraEn}</h2>
           <p class="featured-mercy-quote" data-lang="es">✦ Fiesta: ${data.feast_day.es}</p>
           <p class="featured-mercy-quote" data-lang="en" style="display:none">✦ Feast: ${data.feast_day.en}</p>
           <p class="featured-mercy-text" data-lang="es">${descEs}</p>
@@ -3137,43 +3157,25 @@ function initMenu() {
     const _labelEs  = _pill ? _pill.querySelector('.htp-label[data-lang="es"]') : null;
     const _labelEn  = _pill ? _pill.querySelector('.htp-label[data-lang="en"]') : null;
     if (_pill && _nameEs && _nameEn && _todayLnk) {
-      const _now = new Date();
-      const _key = `${String(_now.getMonth() + 1).padStart(2, '0')}-${String(_now.getDate()).padStart(2, '0')}`;
-      const _ids = FEAST_DAYS[_key];
-      if (_ids && _ids.length) {
-        const _feast = INTERCESSORS.find(i => i.id === _ids[0]);
-        if (_feast) {
-          let _extraEs = '', _extraEn = '';
-          if (_ids.length > 1) {
-            const _extras = _ids.slice(1).map(id => INTERCESSORS.find(i => i.id === id)).filter(Boolean);
-            _extraEs = ' · ' + _extras.map(i => i.short.es).join(' · ');
-            _extraEn = ' · ' + _extras.map(i => i.short.en).join(' · ');
-          }
-          if (_labelEs) _labelEs.textContent = '✦ Fiesta de hoy:';
-          if (_labelEn) _labelEn.textContent = '✦ Feast day:';
-          _nameEs.textContent = _feast.name.es + _extraEs;
-          _nameEn.textContent = _feast.name.en + _extraEn;
-          _todayLnk.href = buildIntercessorUrl(_feast.subdomain);
-          _pill.style.display = 'flex';
-          _pill.classList.add('htp-feast');
-          if (_fWrap && _fEs && _fEn && _fLink) {
-            _fEs.textContent = _feast.name.es + _extraEs;
-            _fEn.textContent = _feast.name.en + _extraEn;
-            _fLink.href = buildIntercessorUrl(_feast.subdomain);
-            _fWrap.style.display = '';
-          }
+      const { candidates, isFeast } = getTodayIntercessorSelection();
+      const primary = candidates[0];
+      if (primary) {
+        let extraEs = '', extraEn = '';
+        if (isFeast && candidates.length > 1) {
+          extraEs = ' · ' + candidates.slice(1).map(i => i.short.es).join(' · ');
+          extraEn = ' · ' + candidates.slice(1).map(i => i.short.en).join(' · ');
         }
-      } else {
-        const _cands = INTERCESSORS.filter(i => i.id !== 'misericordia');
-        const _today = _cands[Math.floor(Date.now() / 86400000) % _cands.length];
-        _nameEs.textContent = _today.name.es;
-        _nameEn.textContent = _today.name.en;
-        _todayLnk.href = buildIntercessorUrl(_today.subdomain);
+        if (_labelEs) _labelEs.textContent = isFeast ? '✦ Fiesta de hoy:' : 'Hoy oramos con';
+        if (_labelEn) _labelEn.textContent = isFeast ? '✦ Feast day:' : 'Today\'s intercessor:';
+        _nameEs.textContent = primary.name.es + extraEs;
+        _nameEn.textContent = primary.name.en + extraEn;
+        _todayLnk.href = buildIntercessorUrl(primary.subdomain);
         _pill.style.display = 'flex';
+        _pill.classList.toggle('htp-feast', isFeast);
         if (_fWrap && _fEs && _fEn && _fLink) {
-          _fEs.textContent = _today.name.es;
-          _fEn.textContent = _today.name.en;
-          _fLink.href = buildIntercessorUrl(_today.subdomain);
+          _fEs.textContent = primary.name.es + extraEs;
+          _fEn.textContent = primary.name.en + extraEn;
+          _fLink.href = buildIntercessorUrl(primary.subdomain);
           _fWrap.style.display = '';
         }
       }
