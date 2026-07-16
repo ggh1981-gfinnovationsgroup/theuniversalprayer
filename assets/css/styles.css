@@ -3515,6 +3515,36 @@ body {
 .ador-live-credit-link:hover { border-bottom-color: var(--gold); }
 
 /* ── Floating live player ───────────────────────────── */
+.ador-live-drag-handle {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 26px;
+  z-index: 2;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0 2rem 0 0.55rem;
+  background: linear-gradient(180deg, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.45) 100%);
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+}
+.ador-live-drag-grip {
+  color: rgba(255,255,255,0.55);
+  font-size: 0.62rem;
+  letter-spacing: -0.08em;
+  line-height: 1;
+}
+.ador-live-drag-label {
+  font-family: var(--font-sans);
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  line-height: 1;
+}
 #adorLiveFrameWrap.is-floating {
   position: fixed;
   bottom: 1.25rem;
@@ -3528,6 +3558,21 @@ body {
   background: #000;
   z-index: 9000;
   box-shadow: 0 8px 32px rgba(0,0,0,.7);
+}
+#adorLiveFrameWrap.is-floating.is-dragging {
+  box-shadow: 0 12px 40px rgba(0,0,0,.85);
+}
+#adorLiveFrameWrap.is-floating.is-dragging .ador-live-drag-handle {
+  cursor: grabbing;
+}
+#adorLiveFrameWrap.is-floating .ador-live-drag-handle {
+  display: flex;
+}
+#adorLiveFrameWrap.is-floating .ador-live-iframe {
+  pointer-events: auto;
+}
+#adorLiveFrameWrap.is-floating.is-dragging .ador-live-iframe {
+  pointer-events: none;
 }
 #adorLiveFloatClose {
   display: none;

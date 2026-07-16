@@ -109,6 +109,11 @@
       <span class="ador-live-label" data-lang="en" style="display:none">Live · Perpetual Adoration · Melbourne</span>
     </div>
     <div class="ador-live-frame-wrap" id="adorLiveFrameWrap">
+      <div class="ador-live-drag-handle" id="adorLiveDragHandle" aria-hidden="true">
+        <span class="ador-live-drag-grip">⋮⋮</span>
+        <span class="ador-live-drag-label" data-lang="es">En vivo · arrastra</span>
+        <span class="ador-live-drag-label" data-lang="en" style="display:none">Live · drag</span>
+      </div>
       <iframe
         id="adorLiveIframe"
         class="ador-live-iframe"
@@ -295,10 +300,6 @@
               <span class="a33-progress-label" data-lang="en" style="display:none">of 33</span>
             </div>
           </div>
-          <div class="a33-bar-wrap" style="max-width:360px;margin:0 auto">
-            <div class="a33-bar-fill" id="a33BarFill"></div>
-          </div>
-          <p class="a33-bar-label" id="a33BarLabel" data-lang="es">0 días completados</p>
         </div>
 
         <!-- Toolbar -->
@@ -505,8 +506,6 @@
     let a33Tts     = false;
 
     const $a33Done    = document.getElementById('a33DoneCount');
-    const $a33Bar     = document.getElementById('a33BarFill');
-    const $a33Label   = document.getElementById('a33BarLabel');
     const $a33Ring    = document.getElementById('a33RingFill');
     const $a33List    = document.getElementById('a33List');
     const $a33Over    = document.getElementById('a33ModalOverlay');
@@ -517,10 +516,6 @@
       const n = a33Done.size;
       const pct = n / TOTAL_33;
       $a33Done.textContent = n;
-      $a33Bar.style.width  = (pct * 100).toFixed(1) + '%';
-      $a33Label.textContent = lang === 'en'
-        ? n + ' day' + (n !== 1 ? 's' : '') + ' completed'
-        : n + ' día' + (n !== 1 ? 's' : '') + ' completado' + (n !== 1 ? 's' : '');
       if ($a33Ring) {
         $a33Ring.style.strokeDasharray  = A33_RING_C;
         $a33Ring.style.strokeDashoffset = (A33_RING_C * (1 - pct)).toFixed(2);
@@ -650,17 +645,77 @@
 
   <script>
   (function() {
-    const liveSec   = document.querySelector('.ador-live-section');
-    const frameWrap = document.getElementById('adorLiveFrameWrap');
-    const floatClose= document.getElementById('adorLiveFloatClose');
-    let dismissed   = false;
+    const liveSec    = document.querySelector('.ador-live-section');
+    const frameWrap  = document.getElementById('adorLiveFrameWrap');
+    const floatClose = document.getElementById('adorLiveFloatClose');
+    const dragHandle = document.getElementById('adorLiveDragHandle');
+    const POS_KEY      = 'adorLiveFloatPos';
+    let dismissed      = false;
+    let dragActive     = false;
+    let dragOffsetX    = 0;
+    let dragOffsetY    = 0;
+    let dragPointerId  = null;
+
+    function clampFloatingPosition(left, top) {
+      const rect = frameWrap.getBoundingClientRect();
+      const w = rect.width || frameWrap.offsetWidth;
+      const h = rect.height || frameWrap.offsetHeight;
+      const maxLeft = Math.max(8, window.innerWidth - w - 8);
+      const maxTop = Math.max(8, window.innerHeight - h - 8);
+      return {
+        left: Math.min(Math.max(8, left), maxLeft),
+        top: Math.min(Math.max(8, top), maxTop),
+      };
+    }
+
+    function applyFloatingPosition(left, top, save) {
+      const pos = clampFloatingPosition(left, top);
+      frameWrap.style.left = pos.left + 'px';
+      frameWrap.style.top = pos.top + 'px';
+      frameWrap.style.right = 'auto';
+      frameWrap.style.bottom = 'auto';
+      if (save) {
+        sessionStorage.setItem(POS_KEY, JSON.stringify(pos));
+      }
+    }
+
+    function restoreFloatingPosition() {
+      try {
+        const saved = JSON.parse(sessionStorage.getItem(POS_KEY) || 'null');
+        if (saved && typeof saved.left === 'number' && typeof saved.top === 'number') {
+          applyFloatingPosition(saved.left, saved.top, false);
+          return;
+        }
+      } catch (_) {}
+      frameWrap.style.left = '';
+      frameWrap.style.top = '';
+      frameWrap.style.right = '';
+      frameWrap.style.bottom = '';
+    }
+
+    function enableFloating() {
+      frameWrap.classList.add('is-floating');
+      requestAnimationFrame(() => {
+        if (!frameWrap.style.left && !frameWrap.style.top) {
+          restoreFloatingPosition();
+          if (!sessionStorage.getItem(POS_KEY)) {
+            const rect = frameWrap.getBoundingClientRect();
+            applyFloatingPosition(rect.left, rect.top, false);
+          }
+        }
+      });
+    }
 
     const obs = new IntersectionObserver(entries => {
       const visible = entries[0].isIntersecting;
       if (!visible && !dismissed) {
-        frameWrap.classList.add('is-floating');
+        enableFloating();
       } else if (visible) {
-        frameWrap.classList.remove('is-floating');
+        frameWrap.classList.remove('is-floating', 'is-dragging');
+        frameWrap.style.left = '';
+        frameWrap.style.top = '';
+        frameWrap.style.right = '';
+        frameWrap.style.bottom = '';
         dismissed = false;
       }
     }, { threshold: 0.1 });
@@ -669,7 +724,57 @@
 
     floatClose.addEventListener('click', () => {
       dismissed = true;
-      frameWrap.classList.remove('is-floating');
+      frameWrap.classList.remove('is-floating', 'is-dragging');
+    });
+
+    function onDragMove(clientX, clientY) {
+      applyFloatingPosition(clientX - dragOffsetX, clientY - dragOffsetY, true);
+    }
+
+    function endDrag() {
+      if (!dragActive) return;
+      dragActive = false;
+      frameWrap.classList.remove('is-dragging');
+      if (dragHandle && dragPointerId !== null && dragHandle.releasePointerCapture) {
+        try { dragHandle.releasePointerCapture(dragPointerId); } catch (_) {}
+      }
+      dragPointerId = null;
+      window.removeEventListener('pointermove', onPointerMove);
+      window.removeEventListener('pointerup', endDrag);
+      window.removeEventListener('pointercancel', endDrag);
+    }
+
+    function onPointerMove(e) {
+      if (!dragActive) return;
+      e.preventDefault();
+      onDragMove(e.clientX, e.clientY);
+    }
+
+    if (dragHandle) {
+      dragHandle.addEventListener('pointerdown', e => {
+        if (!frameWrap.classList.contains('is-floating')) return;
+        dragActive = true;
+        frameWrap.classList.add('is-dragging');
+        const rect = frameWrap.getBoundingClientRect();
+        dragOffsetX = e.clientX - rect.left;
+        dragOffsetY = e.clientY - rect.top;
+        dragPointerId = e.pointerId;
+        applyFloatingPosition(rect.left, rect.top, false);
+        dragHandle.setPointerCapture(e.pointerId);
+        window.addEventListener('pointermove', onPointerMove);
+        window.addEventListener('pointerup', endDrag);
+        window.addEventListener('pointercancel', endDrag);
+        e.preventDefault();
+      });
+    }
+
+    window.addEventListener('resize', () => {
+      if (!frameWrap.classList.contains('is-floating')) return;
+      const left = parseFloat(frameWrap.style.left);
+      const top = parseFloat(frameWrap.style.top);
+      if (!Number.isNaN(left) && !Number.isNaN(top)) {
+        applyFloatingPosition(left, top, true);
+      }
     });
   })();
   </script>

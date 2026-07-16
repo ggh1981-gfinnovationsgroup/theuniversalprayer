@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jóvenes en Cristo | The Universal Prayer</title>
-  <meta name="description" content="Guía católica para jóvenes: identidad, pureza, redes, ansiedad, vocación y sacramentos para vivir con fuerza y verdad." />
+  <meta name="description" content="Guía católica para jóvenes: identidad, pureza, redes, ansiedad, vocación, sacramentos, santidad y actividades concretas para cada semana." />
   <meta name="theme-color" content="#c9a84c" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Jóvenes en Cristo" />
-  <meta property="og:description" content="Para jóvenes que quieren vivir su fe con fuerza: Biblia, sacramentos, propósito y oración concreta." />
+  <meta property="og:description" content="Identidad, pureza, vocación, sacramentos, santidad y actividades reales para jóvenes católicos." />
   <meta property="og:url" content="https://www.theuniversalprayer.com/jovenes/" />
   <meta property="og:image" content="https://www.theuniversalprayer.com/assets/images/social-home.png" />
   <meta property="og:image:width" content="1200" />
@@ -16,7 +16,7 @@
   <meta property="og:image:alt" content="Jóvenes en Cristo" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Jóvenes en Cristo" />
-  <meta name="twitter:description" content="Guía católica para jóvenes: identidad, pureza, redes, ansiedad, vocación y sacramentos." />
+  <meta name="twitter:description" content="Identidad, pureza, vocación, sacramentos, santidad y actividades para jóvenes católicos." />
   <meta name="twitter:image" content="https://www.theuniversalprayer.com/assets/images/social-home.png" />
   <link rel="manifest" href="/manifest.json" />
   <meta name="mobile-web-app-capable" content="yes" />
@@ -30,7 +30,7 @@
   <style>
     .youth-hero {
       text-align: center;
-      padding: 5rem 1.5rem 3rem;
+      padding: 5rem 1.5rem 2.5rem;
       background: radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.12) 0%, transparent 70%);
     }
     .youth-icon {
@@ -68,20 +68,69 @@
       font-family: var(--font-sans);
       font-size: 0.95rem;
       color: rgba(255,255,255,0.6);
-      max-width: 560px;
+      max-width: 600px;
       margin: 0 auto;
       line-height: 1.7;
     }
     .youth-content {
-      max-width: 720px;
+      max-width: 760px;
       margin: 0 auto;
       padding: 0 1.25rem 4rem;
     }
-    .youth-section { margin-bottom: 3rem; }
+    .youth-intro {
+      background: rgba(201,168,76,0.06);
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 14px;
+      padding: 1.25rem 1.35rem;
+      margin-bottom: 2.5rem;
+      font-family: var(--font-sans);
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.75;
+    }
+    .youth-pillars {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.6rem;
+      margin: 1.25rem 0 2.5rem;
+    }
+    @media (max-width: 480px) {
+      .youth-pillars { grid-template-columns: 1fr; }
+    }
+    .youth-pillar-chip {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 0.85rem;
+      border-radius: 10px;
+      border: 1px solid rgba(201,168,76,0.22);
+      background: rgba(255,255,255,0.03);
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.85);
+    }
+    .youth-pillar-chip span { font-size: 1.1rem; }
+    .youth-section { margin-bottom: 2.75rem; }
+    .youth-section-head {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .youth-section-icon {
+      font-size: 1.6rem;
+      line-height: 1;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
     .youth-section-title {
       font-family: var(--font-serif);
       font-size: 1.35rem;
       color: var(--gold-light);
+      margin: 0 0 0.25rem;
+      line-height: 1.2;
+    }
+    .youth-teaching .youth-section-title {
       margin: 0 0 1.25rem;
       padding-bottom: 0.5rem;
       border-bottom: 1px solid rgba(201,168,76,0.2);
@@ -93,23 +142,6 @@
       line-height: 1.8;
     }
     .youth-text p { margin: 0 0 1rem; }
-    .youth-scripture {
-      border-left: 3px solid rgba(201,168,76,0.45);
-      padding: 0.75rem 1.25rem;
-      margin: 1rem 0 1.3rem;
-      font-family: var(--font-serif);
-      font-style: italic;
-      color: rgba(255,255,255,0.85);
-      font-size: 0.95rem;
-      line-height: 1.7;
-    }
-    .youth-scripture cite {
-      display: block;
-      margin-top: 0.35rem;
-      font-size: 0.75rem;
-      font-style: normal;
-      color: var(--gold);
-    }
     .youth-list {
       margin: 1rem 0;
       padding-left: 1.1rem;
@@ -119,6 +151,195 @@
       font-size: 0.9rem;
     }
     .youth-list li { margin-bottom: 0.45rem; }
+    .youth-acts-divider {
+      margin: 3.25rem 0 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(201,168,76,0.28);
+      text-align: center;
+    }
+    .youth-acts-divider-title {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      color: var(--gold-light);
+      margin: 0 0 0.5rem;
+    }
+    .youth-acts-divider-sub {
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.55);
+      margin: 0;
+      line-height: 1.6;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .youth-section-sub {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.55);
+      margin: 0;
+      line-height: 1.55;
+    }
+    .youth-scripture {
+      border-left: 3px solid rgba(201,168,76,0.45);
+      padding: 0.75rem 1.25rem;
+      margin: 0 0 1.1rem;
+      font-family: var(--font-serif);
+      font-style: italic;
+      color: rgba(255,255,255,0.85);
+      font-size: 0.92rem;
+      line-height: 1.7;
+    }
+    .youth-scripture cite {
+      display: block;
+      margin-top: 0.35rem;
+      font-size: 0.75rem;
+      font-style: normal;
+      color: var(--gold);
+    }
+    .youth-activities { display: flex; flex-direction: column; gap: 0.65rem; }
+    .youth-activity {
+      display: flex;
+      gap: 0.85rem;
+      align-items: flex-start;
+      padding: 1rem 1.1rem;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.03);
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .youth-activity.is-done {
+      border-color: rgba(201,168,76,0.28);
+      background: rgba(201,168,76,0.05);
+    }
+    .youth-activity-check {
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+      cursor: pointer;
+      position: relative;
+    }
+    .youth-activity-check input {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .youth-activity-box {
+      display: block;
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      border: 2px solid rgba(201,168,76,0.45);
+      background: transparent;
+      transition: all 0.2s;
+    }
+    .youth-activity-check input:checked + .youth-activity-box {
+      background: var(--gold);
+      border-color: var(--gold);
+    }
+    .youth-activity-check input:checked + .youth-activity-box::after {
+      content: '✓';
+      display: block;
+      text-align: center;
+      line-height: 18px;
+      font-size: 0.75rem;
+      color: #0a0d14;
+      font-weight: 700;
+    }
+    .youth-activity-body { flex: 1; min-width: 0; }
+    .youth-activity-title {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.92);
+      margin: 0 0 0.35rem;
+      line-height: 1.35;
+    }
+    .youth-activity.is-done .youth-activity-title {
+      color: rgba(255,255,255,0.55);
+      text-decoration: line-through;
+      text-decoration-color: rgba(201,168,76,0.4);
+    }
+    .youth-activity-what {
+      font-family: var(--font-sans);
+      font-size: 0.86rem;
+      color: rgba(255,255,255,0.72);
+      margin: 0 0 0.45rem;
+      line-height: 1.6;
+    }
+    .youth-activity-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .youth-activity-freq,
+    .youth-activity-why {
+      font-family: var(--font-sans);
+      font-size: 0.68rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.2em 0.55em;
+      border-radius: 20px;
+    }
+    .youth-activity-freq {
+      color: var(--gold);
+      border: 1px solid rgba(201,168,76,0.3);
+      background: rgba(201,168,76,0.08);
+    }
+    .youth-activity-why {
+      color: rgba(255,255,255,0.5);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .youth-week {
+      background: rgba(201,168,76,0.06);
+      border: 1px solid rgba(201,168,76,0.22);
+      border-radius: 14px;
+      padding: 1.35rem 1.25rem;
+      margin-bottom: 2.75rem;
+    }
+    .youth-week-title {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      color: var(--gold-light);
+      margin: 0 0 0.5rem;
+    }
+    .youth-week-sub {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+      margin: 0 0 1rem;
+      line-height: 1.6;
+    }
+    .youth-week-reset {
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.45);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      margin-top: 0.75rem;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .youth-week-reset:hover { color: var(--gold); }
+    .youth-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin: 1rem 0 0;
+    }
+    .youth-link-btn {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      color: var(--gold-light);
+      text-decoration: none;
+      border: 1px solid rgba(201,168,76,0.35);
+      border-radius: 20px;
+      padding: 0.4em 0.9em;
+      transition: background 0.2s;
+    }
+    .youth-link-btn:hover { background: rgba(201,168,76,0.12); }
     .youth-prayer {
       background: rgba(201,168,76,0.07);
       border: 1px solid rgba(201,168,76,0.22);
@@ -170,85 +391,621 @@
     <h1 class="youth-title" data-lang="es">Jóvenes en Cristo</h1>
     <h1 class="youth-title" data-lang="en" style="display:none">Young in Christ</h1>
 
-    <p class="youth-subtitle" data-lang="es">Presión social, redes, ansiedad, identidad, pureza y propósito. Dios no te llama a sobrevivir tus años jóvenes: te llama a vivirlos con verdad, gracia y fuego.</p>
-    <p class="youth-subtitle" data-lang="en" style="display:none">Social pressure, screens, anxiety, identity, purity, and purpose. God does not call you to merely survive your youth: He calls you to live it with truth, grace, and fire.</p>
+    <p class="youth-subtitle" data-lang="es">Presión social, redes, ansiedad, identidad, pureza, vocación y sacramentos. Dios no te llama a sobrevivir tus años jóvenes: te llama a vivirlos con verdad, gracia y fuego — y con actos concretos cada semana.</p>
+    <p class="youth-subtitle" data-lang="en" style="display:none">Social pressure, screens, anxiety, identity, purity, vocation, and sacraments. God does not call you to merely survive your youth: He calls you to live it with truth, grace, and fire — and with concrete acts each week.</p>
   </section>
 
   <main class="youth-content">
-    <section class="youth-section">
-      <h2 class="youth-section-title" data-lang="es">1) Tu cuerpo y tu dignidad</h2>
-      <h2 class="youth-section-title" data-lang="en" style="display:none">1) Your body and your dignity</h2>
-      <blockquote class="youth-scripture" data-lang="es">«No sois vuestros... glorificad a Dios en vuestro cuerpo.»<cite>— 1 Corintios 6, 19-20</cite></blockquote>
-      <blockquote class="youth-scripture" data-lang="en" style="display:none">"You are not your own... glorify God in your body."<cite>— 1 Corinthians 6:19-20</cite></blockquote>
-      <div class="youth-text" data-lang="es">
-        <p>No eres mercancía, no eres algoritmo, no eres un cuerpo para exhibir. Eres hijo amado de Dios. Tu pureza no te quita libertad: te devuelve libertad.</p>
+
+    <!-- ── ENSEÑANZA: lo esencial para un joven ── -->
+    <div class="youth-teaching">
+
+      <section class="youth-section">
+        <h2 class="youth-section-title" data-lang="es">1) Tu identidad en Cristo</h2>
+        <h2 class="youth-section-title" data-lang="en" style="display:none">1) Your identity in Christ</h2>
+        <blockquote class="youth-scripture" data-lang="es">«No sois vuestros... glorificad a Dios en vuestro cuerpo.»<cite>— 1 Corintios 6, 19-20</cite></blockquote>
+        <blockquote class="youth-scripture" data-lang="en" style="display:none">"You are not your own... glorify God in your body."<cite>— 1 Corinthians 6:19-20</cite></blockquote>
+        <div class="youth-text" data-lang="es">
+          <p>No eres lo que te dicen las redes, ni tus notas, ni tu apariencia, ni cuántos likes tienes. <strong>Eres hijo amado de Dios</strong>, creado a imagen Suya, con un propósito que nadie más puede cumplir.</p>
+          <p>Tu cuerpo no es mercancía ni algoritmo: es templo del Espíritu Santo. Cuando lo tratas con respeto —descanso, movimiento, pureza— le das gloria a Dios.</p>
+        </div>
+        <div class="youth-text" data-lang="en" style="display:none">
+          <p>You are not what social media says, your grades, your looks, or how many likes you get. <strong>You are God's beloved child</strong>, made in His image, with a purpose no one else can fulfill.</p>
+          <p>Your body is not a product or an algorithm: it is a temple of the Holy Spirit. When you treat it with respect —rest, movement, purity— you give glory to God.</p>
+        </div>
+      </section>
+
+      <section class="youth-section">
+        <h2 class="youth-section-title" data-lang="es">2) La pureza te hace libre</h2>
+        <h2 class="youth-section-title" data-lang="en" style="display:none">2) Purity makes you free</h2>
+        <blockquote class="youth-scripture" data-lang="es">«Bienaventurados los limpios de corazón, porque ellos verán a Dios.»<cite>— Mateo 5, 8</cite></blockquote>
+        <blockquote class="youth-scripture" data-lang="en" style="display:none">"Blessed are the pure in heart, for they shall see God."<cite>— Matthew 5:8</cite></blockquote>
+        <div class="youth-text" data-lang="es">
+          <p>La pureza no es reprimirse ni vivir con miedo. Es <strong>elegir el amor verdadero</strong> antes que el uso, la entrega antes que el exhibicionismo, la entrega total en el matrimonio antes que el desgaste prematuro.</p>
+          <p>La pornografía, las relaciones vacías y la presión del grupo no te hacen más adulto: te atan. La Confesión y la oración te devuelven la libertad.</p>
+        </div>
+        <div class="youth-text" data-lang="en" style="display:none">
+          <p>Purity is not repression or living in fear. It is <strong>choosing true love</strong> over use, gift over exhibitionism, total self-giving in marriage over premature weariness.</p>
+          <p>Pornography, empty relationships, and peer pressure do not make you more adult: they bind you. Confession and prayer restore your freedom.</p>
+        </div>
+        <ul class="youth-list" data-lang="es">
+          <li>Si caes, no te quedes ahí: levántate y confiesa hoy.</li>
+          <li>Evita lo que te tienta: bloquea, aleja el celular, cambia de ambiente.</li>
+          <li>Pide ayuda a un sacerdote o mentor de fe: no pelees solo.</li>
+        </ul>
+        <ul class="youth-list" data-lang="en" style="display:none">
+          <li>If you fall, do not stay there: get up and go to Confession today.</li>
+          <li>Avoid what tempts you: block it, put the phone away, change your environment.</li>
+          <li>Ask a priest or faith mentor for help: do not fight alone.</li>
+        </ul>
+      </section>
+
+      <section class="youth-section">
+        <h2 class="youth-section-title" data-lang="es">3) Redes, ansiedad y comparación</h2>
+        <h2 class="youth-section-title" data-lang="en" style="display:none">3) Screens, anxiety, and comparison</h2>
+        <blockquote class="youth-scripture" data-lang="es">«No os conforméis a este mundo, transformaos por la renovación de la mente.»<cite>— Romanos 12, 2</cite></blockquote>
+        <blockquote class="youth-scripture" data-lang="en" style="display:none">"Do not be conformed to this world, but be transformed by the renewal of your mind."<cite>— Romans 12:2</cite></blockquote>
+        <div class="youth-text" data-lang="es">
+          <p>Las redes no son malas en sí, pero pueden volverse una prisión: comparación constante, ansiedad, soledad disfrazada de conexión. <strong>Tú decides qué entra en tu mente.</strong></p>
+        </div>
+        <div class="youth-text" data-lang="en" style="display:none">
+          <p>Social media is not evil in itself, but it can become a prison: constant comparison, anxiety, loneliness disguised as connection. <strong>You decide what enters your mind.</strong></p>
+        </div>
+        <ul class="youth-list" data-lang="es">
+          <li>Si una red te roba la paz, ponle límite real —con timer, sin negociar.</li>
+          <li>Si te comparas todo el día, apaga la pantalla y ora 5 minutos.</li>
+          <li>Si te sientes solo, busca comunidad real: parroquia, grupo, amigo de fe.</li>
+          <li>Si la ansiedad o tristeza dominan tu vida, habla con un adulto de confianza o profesional. Pedir ayuda es valentía.</li>
+        </ul>
+        <ul class="youth-list" data-lang="en" style="display:none">
+          <li>If a platform steals your peace, set a real limit —with a timer, no negotiating.</li>
+          <li>If comparison consumes you, close the screen and pray 5 minutes.</li>
+          <li>If you feel alone, seek real community: parish, group, faith friend.</li>
+          <li>If anxiety or sadness dominate your life, talk to a trusted adult or professional. Asking for help is courage.</li>
+        </ul>
+      </section>
+
+      <section class="youth-section">
+        <h2 class="youth-section-title" data-lang="es">4) Vocación: Dios tiene un plan para ti</h2>
+        <h2 class="youth-section-title" data-lang="en" style="display:none">4) Vocation: God has a plan for you</h2>
+        <blockquote class="youth-scripture" data-lang="es">«Porque yo sé los planes que tengo para vosotros... planes de bienestar y no de calamidad.»<cite>— Jeremías 29, 11</cite></blockquote>
+        <blockquote class="youth-scripture" data-lang="en" style="display:none">"For I know the plans I have for you... plans for your welfare, not for woe."<cite>— Jeremiah 29:11</cite></blockquote>
+        <div class="youth-text" data-lang="es">
+          <p>Vocación no es solo ser sacerdote o religiosa. Es descubrir <strong>cómo Dios quiere que ames</strong>: en el matrimonio, en la vida consagrada, en el sacerdocio, o en la santidad del laico en el mundo.</p>
+          <p>No tienes que tenerlo todo claro hoy. Pero sí puedes empezar a preguntar, escuchar y caminar con acompañamiento.</p>
+        </div>
+        <div class="youth-text" data-lang="en" style="display:none">
+          <p>Vocation is not only being a priest or religious. It is discovering <strong>how God wants you to love</strong>: in marriage, consecrated life, the priesthood, or the holiness of a lay person in the world.</p>
+          <p>You do not need to have it all clear today. But you can start asking, listening, and walking with accompaniment.</p>
+        </div>
+        <ul class="youth-list" data-lang="es">
+          <li>Pregunta cada día: «Señor, ¿qué quieres de mí hoy?»</li>
+          <li>Busca un mentor de fe: sacerdote, religioso o laico que viva bien su camino.</li>
+          <li>Participa en un retiro, grupo juvenil o movimiento —no discernes solo.</li>
+          <li>No confundas vocación con carrera: primero hijo de Dios, luego todo lo demás.</li>
+        </ul>
+        <ul class="youth-list" data-lang="en" style="display:none">
+          <li>Ask each day: "Lord, what do You want from me today?"</li>
+          <li>Find a faith mentor: priest, religious, or lay person who lives their path well.</li>
+          <li>Join a retreat, youth group, or movement —you do not discern alone.</li>
+          <li>Do not confuse vocation with career: first a child of God, then everything else.</li>
+        </ul>
+      </section>
+
+      <section class="youth-section">
+        <h2 class="youth-section-title" data-lang="es">5) Lo que la Iglesia te pide en esta era</h2>
+        <h2 class="youth-section-title" data-lang="en" style="display:none">5) What the Church asks of you in this era</h2>
+        <div class="youth-text" data-lang="es">
+          <p>El Papa y la Iglesia repiten a los jóvenes que no deben dejarse robar la esperanza, que no sean espectadores de la vida y que no vivan anestesiados por una fe de sofá. El llamado es claro: levántate, discierne, sirve y no escondas la alegría del Evangelio.</p>
+        </div>
+        <div class="youth-text" data-lang="en" style="display:none">
+          <p>The Pope and the Church keep telling young people not to let anyone steal their hope, not to be spectators of life, and not to live numbed by a sofa faith. The call is clear: get up, discern, serve, and do not hide the joy of the Gospel.</p>
+        </div>
+        <ul class="youth-list" data-lang="es">
+          <li><strong>No te robes la esperanza:</strong> aunque tu entorno sea frío, Cristo sigue vivo.</li>
+          <li><strong>No te quedes mirando:</strong> tu vocación no es ser espectador, sino protagonista del bien.</li>
+          <li><strong>Discierne tu camino:</strong> pregunta a Dios qué quiere de ti y acompáñate bien.</li>
+          <li><strong>Haz lío santo:</strong> no para destruir, sino para despertar el corazón y servir.</li>
+        </ul>
+        <ul class="youth-list" data-lang="en" style="display:none">
+          <li><strong>Do not let hope be stolen:</strong> even if your surroundings are cold, Christ is still alive.</li>
+          <li><strong>Do not stay on the sidelines:</strong> your vocation is not to watch, but to be a protagonist of good.</li>
+          <li><strong>Discern your path:</strong> ask God what He wants from you and walk with good accompaniment.</li>
+          <li><strong>Make holy noise:</strong> not to destroy, but to awaken hearts and serve.</li>
+        </ul>
+      </section>
+
+      <section class="youth-section">
+        <h2 class="youth-section-title" data-lang="es">6) Sacramentos: donde se fortalece un joven</h2>
+        <h2 class="youth-section-title" data-lang="en" style="display:none">6) Sacraments: where a young person is strengthened</h2>
+        <div class="youth-text" data-lang="es">
+          <p>Sin sacramentos, la fe se vuelve idea. Con sacramentos, la fe se vuelve vida. No son rituales vacíos: son encuentros reales con Cristo.</p>
+        </div>
+        <div class="youth-text" data-lang="en" style="display:none">
+          <p>Without the sacraments, faith becomes an idea. With the sacraments, faith becomes life. They are not empty rituals: they are real encounters with Christ.</p>
+        </div>
+        <ul class="youth-list" data-lang="es">
+          <li><strong>Confesión frecuente:</strong> para no normalizar el pecado y recuperar la paz.</li>
+          <li><strong>Eucaristía dominical:</strong> Cristo te alimenta para luchar bien toda la semana.</li>
+          <li><strong>Adoración:</strong> silencio ante el Santísimo para escuchar tu vocación y ordenar el corazón.</li>
+          <li><strong>Confirmación vivida:</strong> no fue un evento del pasado —el Espíritu sigue actuando en ti.</li>
+        </ul>
+        <ul class="youth-list" data-lang="en" style="display:none">
+          <li><strong>Frequent Confession:</strong> so sin does not become normal and peace is restored.</li>
+          <li><strong>Sunday Eucharist:</strong> Christ feeds you to fight well all week.</li>
+          <li><strong>Adoration:</strong> silence before the Blessed Sacrament to hear your vocation and reorder your heart.</li>
+          <li><strong>Confirmation lived out:</strong> it was not just a past event —the Spirit is still at work in you.</li>
+        </ul>
+        <div class="youth-links">
+          <a href="/adoracion/" class="youth-link-btn" data-lang="es">→ 15 min de Adoración</a>
+          <a href="/adoracion/" class="youth-link-btn" data-lang="en" style="display:none">→ 15 min Adoration</a>
+          <a href="/reconciliacion/" class="youth-link-btn" data-lang="es">→ Guía de Confesión</a>
+          <a href="/reconciliacion/" class="youth-link-btn" data-lang="en" style="display:none">→ Confession guide</a>
+          <a href="/rosario/" class="youth-link-btn" data-lang="es">→ Rezar el Rosario</a>
+          <a href="/rosario/" class="youth-link-btn" data-lang="en" style="display:none">→ Pray the Rosary</a>
+        </div>
+      </section>
+
+      <section class="youth-section">
+        <h2 class="youth-section-title" data-lang="es">7) Santidad: no es para perfectos, es para valientes</h2>
+        <h2 class="youth-section-title" data-lang="en" style="display:none">7) Holiness: not for the perfect, but for the brave</h2>
+        <blockquote class="youth-scripture" data-lang="es">«Sed santos, porque yo soy santo.»<cite>— 1 Pedro 1, 16</cite></blockquote>
+        <blockquote class="youth-scripture" data-lang="en" style="display:none">"Be holy, for I am holy."<cite>— 1 Peter 1:16</cite></blockquote>
+        <div class="youth-text" data-lang="es">
+          <p>La santidad no es ser aburrido ni dejar de ser joven. Es ser <strong>entero</strong>: la misma persona en la iglesia, en la escuela, en redes y en casa. Carlo Acutis, Luis Gonzaga, María Goretti —eran jóvenes normales que eligieron a Dios en lo concreto.</p>
+          <p>No necesitas hacer cosas extraordinarias. Necesitas hacer con amor las cosas ordinarias: estudiar, ayudar en casa, tratar bien a tus amigos, decir la verdad, perdonar.</p>
+        </div>
+        <div class="youth-text" data-lang="en" style="display:none">
+          <p>Holiness is not being boring or ceasing to be young. It is being <strong>whole</strong>: the same person at church, at school, online, and at home. Carlo Acutis, Aloysius Gonzaga, Maria Goretti —they were ordinary young people who chose God in concrete things.</p>
+          <p>You do not need to do extraordinary things. You need to do ordinary things with love: study, help at home, treat friends well, tell the truth, forgive.</p>
+        </div>
+        <ul class="youth-list" data-lang="es">
+          <li>Elige un santo joven como amigo e intercesor este mes.</li>
+          <li>Haz una cosa buena cada día que nadie te pida.</li>
+          <li>Cuando fallen todos, tú puedes ser quien diga «yo sí voy a Misa».</li>
+        </ul>
+        <ul class="youth-list" data-lang="en" style="display:none">
+          <li>Choose a young saint as friend and intercessor this month.</li>
+          <li>Do one good thing each day that no one asks of you.</li>
+          <li>When everyone else fails, you can be the one who says "I am going to Mass."</li>
+        </ul>
+      </section>
+
+    </div>
+
+    <!-- ── ACTIVIDADES: poner en práctica ── -->
+    <div class="youth-acts-divider">
+      <h2 class="youth-acts-divider-title" data-lang="es">Actividades para esta semana</h2>
+      <h2 class="youth-acts-divider-title" data-lang="en" style="display:none">Activities for this week</h2>
+      <p class="youth-acts-divider-sub" data-lang="es">Lo de arriba es la verdad. Esto es la práctica. Marca lo que cumpliste — se reinicia cada semana.</p>
+      <p class="youth-acts-divider-sub" data-lang="en" style="display:none">What is above is the truth. This is the practice. Check off what you did — it resets each week.</p>
+    </div>
+
+    <div class="youth-intro" data-lang="es">
+      La fe no es solo sentir: es <strong>hacer</strong>. Si fallas un día, vuelve mañana. Dios no te pide perfección: te pide fidelidad.
+    </div>
+    <div class="youth-intro" data-lang="en" style="display:none">
+      Faith is not only feeling: it is <strong>doing</strong>. If you miss a day, start again tomorrow. God does not ask for perfection: He asks for faithfulness.
+    </div>
+
+    <div class="youth-pillars">
+      <div class="youth-pillar-chip" data-lang="es"><span>💪</span> Cuerpo — templo de Dios</div>
+      <div class="youth-pillar-chip" data-lang="es"><span>🧠</span> Mente — renovada en Cristo</div>
+      <div class="youth-pillar-chip" data-lang="es"><span>🕊️</span> Alma — limpia y valiente</div>
+      <div class="youth-pillar-chip" data-lang="es"><span>✝️</span> Dios — sacramentos y oración</div>
+      <div class="youth-pillar-chip" data-lang="en" style="display:none"><span>💪</span> Body — temple of God</div>
+      <div class="youth-pillar-chip" data-lang="en" style="display:none"><span>🧠</span> Mind — renewed in Christ</div>
+      <div class="youth-pillar-chip" data-lang="en" style="display:none"><span>🕊️</span> Soul — clean and brave</div>
+      <div class="youth-pillar-chip" data-lang="en" style="display:none"><span>✝️</span> God — sacraments &amp; prayer</div>
+    </div>
+
+    <!-- CUERPO -->
+    <section class="youth-section" id="youth-body">
+      <div class="youth-section-head">
+        <span class="youth-section-icon">💪</span>
+        <div>
+          <h2 class="youth-section-title" data-lang="es">Cuida tu cuerpo</h2>
+          <h2 class="youth-section-title" data-lang="en" style="display:none">Care for your body</h2>
+          <p class="youth-section-sub" data-lang="es">Tu cuerpo no es mercancía ni algoritmo. Es templo del Espíritu Santo.</p>
+          <p class="youth-section-sub" data-lang="en" style="display:none">Your body is not a product or an algorithm. It is a temple of the Holy Spirit.</p>
+        </div>
       </div>
-      <div class="youth-text" data-lang="en" style="display:none">
-        <p>You are not a product, not an algorithm, not a body for display. You are a beloved child of God. Purity does not steal your freedom; it restores it.</p>
+      <blockquote class="youth-scripture" data-lang="es">«Glorificad a Dios en vuestro cuerpo.»<cite>— 1 Corintios 6, 20</cite></blockquote>
+      <blockquote class="youth-scripture" data-lang="en" style="display:none">"Glorify God in your body."<cite>— 1 Corinthians 6:20</cite></blockquote>
+      <div class="youth-activities">
+        <div class="youth-activity" data-act="sleep">
+          <label class="youth-activity-check"><input type="checkbox" /><span class="youth-activity-box"></span></label>
+          <div class="youth-activity-body">
+            <h3 class="youth-activity-title" data-lang="es">Dormir bien</h3>
+            <h3 class="youth-activity-title" data-lang="en" style="display:none">Sleep well</h3>
+            <p class="youth-activity-what" data-lang="es">7–8 horas. Apaga pantallas 30 minutos antes de dormir. El celular fuera de la cama.</p>
+            <p class="youth-activity-what" data-lang="en" style="display:none">7–8 hours. Turn off screens 30 minutes before bed. Keep your phone out of bed.</p>
+            <div class="youth-activity-meta">
+              <span class="youth-activity-freq" data-lang="es">Cada noche</span>
+              <span class="youth-activity-freq" data-lang="en" style="display:none">Every night</span>
+              <span class="youth-activity-why" data-lang="es">Energía y templanza</span>
+              <span class="youth-activity-why" data-lang="en" style="display:none">Energy &amp; self-control</span>
+            </div>
+          </div>
+        </div>
+        <div class="youth-activity" data-act="move">
+          <label class="youth-activity-check"><input type="checkbox" /><span class="youth-activity-box"></span></label>
+          <div class="youth-activity-body">
+            <h3 class="youth-activity-title" data-lang="es">Mover el cuerpo</h3>
+            <h3 class="youth-activity-title" data-lang="en" style="display:none">Move your body</h3>
+            <p class="youth-activity-what" data-lang="es">30 minutos de caminata, deporte, estiramientos o baile. Sudar un poco cuenta.</p>
+            <p class="youth-activity-what" data-lang="en" style="display:none">30 minutes of walking, sport, stretching, or dancing. Breaking a light sweat counts.</p>
+            <div class="youth-activity-meta">
+              <span class="youth-activity-freq" data-lang="es">Casi cada día</span>
+              <span class="youth-activity-freq" data-lang="en" style="display:none">Most days</span>
+              <span class="youth-activity-why" data-lang="es">Salud y ánimo</span>
+              <span class="youth-activity-why" data-lang="en" style="display:none">Health &amp; mood</span>
+            </div>
+          </div>
+        </div>
+        <div class="youth-activity" data-act="eat">
+          <label class="youth-activity-check"><input type="checkbox" /><span class="youth-activity-box"></span></label>
+          <div class="youth-activity-body">
+            <h3 class="youth-activity-title" data-lang="es">Comer con conciencia</h3>
+            <h3 class="youth-activity-title" data-lang="en" style="display:none">Eat with awareness</h3>
+            <p class="youth-activity-what" data-lang="es">Una comida real al día (fruta, proteína, verdura). Bebe agua. No abuses de alcohol, drogas ni comida basura.</p>
+            <p class="youth-activity-what" data-lang="en" style="display:none">One real meal a day (fruit, protein, vegetables). Drink water. Do not abuse alcohol, drugs, or junk food.</p>
+            <div class="youth-activity-meta">
+              <span class="youth-activity-freq" data-lang="es">Cada día</span>
+              <span class="youth-activity-freq" data-lang="en" style="display:none">Daily</span>
+              <span class="youth-activity-why" data-lang="es">Respeto al templo</span>
+              <span class="youth-activity-why" data-lang="en" style="display:none">Respect the temple</span>
+            </div>
+          </div>
+        </div>
+        <div class="youth-activity" data-act="purity">
+          <label class="youth-activity-check"><input type="checkbox" /><span class="youth-activity-box"></span></label>
+          <div class="youth-activity-body">
+            <h3 class="youth-activity-title" data-lang="es">Guardar la pureza</h3>
+            <h3 class="youth-activity-title" data-lang="en" style="display:none">Guard purity</h3>
+            <p class="youth-activity-what" data-lang="es">Evita pornografía y relaciones que te usen. Si caes, no te quedes ahí: confiesa y vuelve a empezar hoy mismo.</p>
+            <p class="youth-activity-what" data-lang="en" style="display:none">Avoid pornography and relationships that use you. If you fall, do not stay there: go to Confession and begin again today.</p>
+            <div class="youth-activity-meta">
+              <span class="youth-activity-freq" data-lang="es">Cada día</span>
+              <span class="youth-activity-freq" data-lang="en" style="display:none">Daily</span>
+              <span class="youth-activity-why" data-lang="es">Libertad verdadera</span>
+              <span class="youth-activity-why" data-lang="en" style="display:none">True freedom</span>
+            </div>
+          </div>
+        </div>
+        <div class="youth-activity" data-act="fast">
+          <label class="youth-activity-check"><input type="checkbox" /><span class="youth-activity-box"></span></label>
+          <div class="youth-activity-body">
+            <h3 class="youth-activity-title" data-lang="es">Prepararte para comulgar</h3>
+            <h3 class="youth-activity-title" data-lang="en" style="display:none">Prepare for Communion</h3>
+            <p class="youth-activity-what" data-lang="es">Ayuno de 1 hora antes de la Eucaristía (solo agua y medicina). Estado de gracia: sin pecado mortal sin confesar.</p>
+            <p class="youth-activity-what" data-lang="en" style="display:none">One-hour fast before the Eucharist (water and medicine only). State of grace: no mortal sin without Confession.</p>
+            <div class="youth-activity-meta">
+              <span class="youth-activity-freq" data-lang="es">Antes de Misa</span>
+              <span class="youth-activity-freq" data-lang="en" style="display:none">Before Mass</span>
+              <span class="youth-activity-why" data-lang="es">Reverencia</span>
+              <span class="youth-activity-why" data-lang="en" style="display:none">Reverence</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="youth-section">
-      <h2 class="youth-section-title" data-lang="es">2) Redes, ansiedad y comparación</h2>
-      <h2 class="youth-section-title" data-lang="en" style="display:none">2) Screens, anxiety, and comparison</h2>
-      <blockquote class="youth-scripture" data-lang="es">«No os conforméis a este mundo, transformaos por la renovación de la mente.»<cite>— Romanos 12, 2</cite></blockquote>
-      <blockquote class="youth-scripture" data-lang="en" style="display:none">"Do not be conformed to this world, but be transformed by the renewal of your mind."<cite>— Romans 12:2</cite></blockquote>
-      <ul class="youth-list" data-lang="es">
-        <li>Si una red te roba paz, ponle límite real.</li>
-        <li>Si te comparas todo el día, apaga la pantalla y ora 5 minutos.</li>
-        <li>Si te sientes solo, busca comunidad real: parroquia, grupo, amigo de fe.</li>
-      </ul>
-      <ul class="youth-list" data-lang="en" style="display:none">
-        <li>If a platform steals your peace, set a real limit.</li>
-        <li>If comparison consumes you, close the screen and pray 5 minutes.</li>
-        <li>If you feel alone, seek real community: parish, group, faith friend.</li>
-      </ul>
+    <!-- MENTE -->
+    <section class="youth-section" id="youth-mind">
+      <div class="youth-section-head">
+        <span class="youth-section-icon">🧠</span>
+        <div>
+          <h2 class="youth-section-title" data-lang="es">Cuida tu mente</h2>
+          <h2 class="youth-section-title" data-lang="en" style="display:none">Care for your mind</h2>
+          <p class="youth-section-sub" data-lang="es">Las redes, la comparación y la ansiedad no mandan. Tú eliges qué entra en tu cabeza.</p>
+          <p class="youth-section-sub" data-lang="en" style="display:none">Screens, comparison, and anxiety do not rule you. You choose what enters your mind.</p>
+        </div>
+      </div>
+      <blockquote class="youth-scripture" data-lang="es">«Transformaos por la renovación de la mente.»<cite>— Romanos 12, 2</cite></blockquote>
+      <blockquote class="youth-scripture" data-lang="en" style="display:none">"Be transformed by the renewal of your mind."<cite>— Romans 12:2</cite></blockquote>
+      <div class="youth-activities">
+        <div class="youth-activity" data-act="screen-limit">
+          <label class="youth-activity-check"><input type="checkbox" /><span class="youth-activity-box"></span></label>
+          <div class="youth-activity-body">
+            <h3 class="youth-activity-title" data-lang="es">Límite real de pantalla</h3>
+            <h3 class="youth-activity-title" data-lang="en" style="display:none">Real screen limit</h3>
+            <p class="youth-activity-what" data-lang="es">Pon un timer: máximo 60–90 min de redes al día (o menos). Si te roba la paz, bájalo sin negociar.</p>
+            <p class="youth-activity-what" data-lang="en" style="display:none">Set a timer: max 60–90 minutes of social media per day (or less). If it steals your peace, cut it without negotiating.</p>
+            <div class="youth-activity-meta">
+              <span class="youth-activity-freq" data-lang="es">Cada día</span>
+              <span class="youth-activity-freq" data-lang="en" style="display:none">Daily</span>
+              <span class="youth-activity-why" data-lang="es">Paz interior</span>
+              <span class="youth-activity-why" data-lang="en" style="display:none">Inner peace</span>
+            </div>
+          </div>
+        </div>
+        <div class="youth-activity" data-act="pray-first">
+          <label class="youth-activity-check"><input type="checkbox" /><span class="youth-activity-box"></span></label>
+          <div class="youth-activity-body">
+            <h3 class="youth-activity-title" data-lang="es">Orar antes del celular</h3>
+            <h3 class="youth-activity-title" data-lang="en" style="display:none">Pray before your phone</h3>
+            <p class="youth-activity-what" data-lang="es">Al despertar: 5 minutos con Dios antes de abrir Instagram, TikTok o WhatsApp. Un Padre Nuestro basta para empezar.</p>
+            <p class="youth-activity-what" data-lang="en" style="display:none">When you wake up: 5 minutes with God before opening Instagram, TikTok, or WhatsApp. One Our Father is enough to start.</p>
+            <div class="youth-activity-meta">
+              <span class="youth-activity-freq" data-lang="es">Cada mañana</span>
+              <span class="youth-activity-freq" data-lang="en" style="display:none">Every morning</span>
+              <span class="youth-activity-why" data-lang="es">Orden del día</span>
+              <span class="youth-activity-why" data-lang="en" style="display:none">Order the day</span>
+            </div>
+          </div>
+        </div>
+        <div class="youth-activity" data-act="gospel">
+          <label class="youth-activity-check"><input type="checkbox" /><span class="youth-activity-box"></span></label>
+          <div class="youth-activity-body">
+            <h3 class="youth-activity-title" data-lang="es">Leer el Evangelio</h3>
+            <h3 class="youth-activity-title" data-lang="en" style="display:none">Read the Gospel</h3>
+            <p class="youth-activity-what" data-lang="es">Un capítulo o el evangelio del día. Léelo en voz alta si puedes. Subraya una frase que te golpee.</p>
+            <p class="youth-activity-what" data-lang="en" style="display:none">One chapter or the Gospel of the day. Read it aloud if you can. Underline one line that strikes you.</p>
+            <div class="youth-activity-meta">
+              <span class="youth-activity-freq" data-lang="es">Cada día</span>
+              <span class="youth-activity-freq" data-lang="en" style="display:none">Daily</span>
+              <span class="youth-activity-why" data-lang="es">Alimento mental</span>
+              <span class="youth-activity-why" data-lang="en" style="display:none">Mental nourishment</span>
+            </div>
+          </div>
+        </div>
+        <div class="youth-activity" data-act="gratitude">
+          <label class="youth-activity-check"><input type="checkbox" /><span class="youth-activity-box"></span></label>
+          <div class="youth-activity-body">
+            <h3 class="youth-activity-title" data-lang="es">Tres gratitudes</h3>
+            <h3 class="youth-activity-title" data-lang="en" style="display:none">Three gratitudes</h3>
+            <p class="youth-activity-what" data-lang="es">Antes de dormir, escribe o piensa 3 cosas concretas por las que agradeces hoy. Aunque el día fue duro.</p>
+            <p class="youth-activity-what" data-lang="en" style="display:none">Before bed, write or name 3 concrete things you are grateful for today. Even if the day was hard.</p>
+            <div class="youth-activity-meta">
+              <span class="youth-activity-freq" data-lang="es">Cada noche</span>
+              <span class="youth-activity-freq" data-lang="en" style="display:none">Every night</span>
+              <span class="youth-activity-why" data-lang="es">Combate la ansiedad</span>
+              <span class="youth-activity-why" data-lang="en" style="display:none">Fights anxiety</span>
+            </div>
+          </div>
+        </div>
+        <div class="youth-activity" data-act="silence">
+          <label class="youth-activity-check"><input type="checkbox" /><span class="youth-activity-box"></span></label>
+          <div class="youth-activity-body">
+            <h3 class="youth-activity-title" data-lang="es">10 minutos de silencio</h3>
+            <h3 class="youth-activity-title" data-lang="en" style="display:none">10 minutes of silence</h3>
+            <p class="youth-activity-what" data-lang="es">Sin música, sin pantalla, sin hablar. Camina, mira el cielo, o siéntate en una iglesia. Deja que Dios hable.</p>
+            <p class="youth-activity-what" data-lang="en" style="display:none">No music, no screen, no talking. Walk, look at the sky, or sit in a church. Let God speak.</p>
+            <div class="youth-activity-meta">
+              <span class="youth-activity-freq" data-lang="es">Esta semana</span>
+              <span class="youth-activity-freq" data-lang="en" style="display:none">This week</span>
+              <span class="youth-activity-why" data-lang="es">Escucha interior</span>
+              <span class="youth-activity-why" data-lang="en" style="display:none">Inner listening</span>
+            </div>
+          </div>
+        </div>
+        <div class="youth-activity" data-act="help">
+          <label class="youth-activity-check"><input type="checkbox" /><span class="youth-activity-box"></span></label>
+          <div class="youth-activity-body">
+            <h3 class="youth-activity-title" data-lang="es">Pedir ayuda si la necesitas</h3>
+            <h3 class="youth-activity-title" data-lang="en" style="display:none">Ask for help when you need it</h3>
+            <p class="youth-activity-what" data-lang="es">Si la ansiedad, tristeza o pensamientos oscuros dominan tu vida: habla con un adulto de confianza, sacerdote o profesional. No es debilidad: es valentía.</p>
+            <p class="youth-activity-what" data-lang="en" style="display:none">If anxiety, sadness, or dark thoughts dominate your life: talk to a trusted adult, priest, or professional. It is not weakness: it is courage.</p>
+            <div class="youth-activity-meta">
+              <span class="youth-activity-freq" data-lang="es">Cuando haga falta</span>
+              <span class="youth-activity-freq" data-lang="en" style="display:none">When needed</span>
+              <span class="youth-activity-why" data-lang="es">Salud mental</span>
+              <span class="youth-activity-why" data-lang="en" style="display:none">Mental health</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="youth-section">
-      <h2 class="youth-section-title" data-lang="es">3) Lo que el Papa nos pide en esta era</h2>
-      <h2 class="youth-section-title" data-lang="en" style="display:none">3) What the Pope asks of us in this era</h2>
-      <div class="youth-text" data-lang="es">
-        <p>El Papa actual y la Iglesia repiten a los jóvenes que no deben dejarse robar la esperanza, que no sean espectadores de la vida y que no vivan anestesiados por una fe de sofá. El llamado es claro: levántate, discierne, sirve y no escondas la alegría del Evangelio.</p>
+    <!-- ALMA -->
+    <section class="youth-section" id="youth-soul">
+      <div class="youth-section-head">
+        <span class="youth-section-icon">🕊️</span>
+        <div>
+          <h2 class="youth-section-title" data-lang="es">Cuida tu alma</h2>
+          <h2 class="youth-section-title" data-lang="en" style="display:none">Care for your soul</h2>
+          <p class="youth-section-sub" data-lang="es">El alma necesita verdad, perdón y caridad. No la dejes dormida.</p>
+          <p class="youth-section-sub" data-lang="en" style="display:none">The soul needs truth, forgiveness, and charity. Do not let it fall asleep.</p>
+        </div>
       </div>
-      <div class="youth-text" data-lang="en" style="display:none">
-        <p>The current Pope and the Church keep telling young people not to let anyone steal their hope, not to be spectators of life, and not to live numbed by a sofa faith. The call is clear: get up, discern, serve, and do not hide the joy of the Gospel.</p>
+      <blockquote class="youth-scripture" data-lang="es">«Bienaventurados los limpios de corazón, porque ellos verán a Dios.»<cite>— Mateo 5, 8</cite></blockquote>
+      <blockquote class="youth-scripture" data-lang="en" style="display:none">"Blessed are the pure in heart, for they shall see God."<cite>— Matthew 5:8</cite></blockquote>
+      <div class="youth-activities">
+        <div class="youth-activity" data-act="examen">
+          <label class="youth-activity-check"><input type="checkbox" /><span class="youth-activity-box"></span></label>
+          <div class="youth-activity-body">
+            <h3 class="youth-activity-title" data-lang="es">Examen de conciencia</h3>
+            <h3 class="youth-activity-title" data-lang="en" style="display:none">Examination of conscience</h3>
+            <p class="youth-activity-what" data-lang="es">2 minutos cada noche: ¿Dónde fallé hoy? ¿Dónde Dios me ayudó? ¿A quién debo pedir perdón mañana?</p>
+            <p class="youth-activity-what" data-lang="en" style="display:none">2 minutes each night: Where did I fail today? Where did God help me? Who do I need to ask forgiveness from tomorrow?</p>
+            <div class="youth-activity-meta">
+              <span class="youth-activity-freq" data-lang="es">Cada noche</span>
+              <span class="youth-activity-freq" data-lang="en" style="display:none">Every night</span>
+              <span class="youth-activity-why" data-lang="es">Honestidad</span>
+              <span class="youth-activity-why" data-lang="en" style="display:none">Honesty</span>
+            </div>
+          </div>
+        </div>
+        <div class="youth-activity" data-act="confession">
+          <label class="youth-activity-check"><input type="checkbox" /><span class="youth-activity-box"></span></label>
+          <div class="youth-activity-body">
+            <h3 class="youth-activity-title" data-lang="es">Ir a Confesión</h3>
+            <h3 class="youth-activity-title" data-lang="en" style="display:none">Go to Confession</h3>
+            <p class="youth-activity-what" data-lang="es">Al menos una vez al mes —o cada 2 semanas si luchas con el mismo pecado. Lleva escrito lo que quieres confesar si te ayuda.</p>
+            <p class="youth-activity-what" data-lang="en" style="display:none">At least once a month —or every 2 weeks if you struggle with the same sin. Write down what you want to confess if it helps.</p>
+            <div class="youth-activity-meta">
+              <span class="youth-activity-freq" data-lang="es">Mensual</span>
+              <span class="youth-activity-freq" data-lang="en" style="display:none">Monthly</span>
+              <span class="youth-activity-why" data-lang="es">Corazón limpio</span>
+              <span class="youth-activity-why" data-lang="en" style="display:none">Clean heart</span>
+            </div>
+          </div>
+        </div>
+        <div class="youth-activity" data-act="charity">
+          <label class="youth-activity-check"><input type="checkbox" /><span class="youth-activity-box"></span></label>
+          <div class="youth-activity-body">
+            <h3 class="youth-activity-title" data-lang="es">Acto de caridad concreto</h3>
+            <h3 class="youth-activity-title" data-lang="en" style="display:none">Concrete act of charity</h3>
+            <p class="youth-activity-what" data-lang="es">Ayuda en casa sin que te lo pidan, acompaña a alguien que está solo, dona ropa o tiempo, defiende a quien no puede defenderse.</p>
+            <p class="youth-activity-what" data-lang="en" style="display:none">Help at home without being asked, accompany someone who is alone, donate clothes or time, defend someone who cannot defend themselves.</p>
+            <div class="youth-activity-meta">
+              <span class="youth-activity-freq" data-lang="es">Esta semana</span>
+              <span class="youth-activity-freq" data-lang="en" style="display:none">This week</span>
+              <span class="youth-activity-why" data-lang="es">Amor en acción</span>
+              <span class="youth-activity-why" data-lang="en" style="display:none">Love in action</span>
+            </div>
+          </div>
+        </div>
+        <div class="youth-activity" data-act="forgive">
+          <label class="youth-activity-check"><input type="checkbox" /><span class="youth-activity-box"></span></label>
+          <div class="youth-activity-body">
+            <h3 class="youth-activity-title" data-lang="es">Perdonar de verdad</h3>
+            <h3 class="youth-activity-title" data-lang="en" style="display:none">Forgive for real</h3>
+            <p class="youth-activity-what" data-lang="es">Elige a alguien que te hirió y ora por él o ella 3 días seguidos. El perdón no siempre es sentir: a veces es decidir.</p>
+            <p class="youth-activity-what" data-lang="en" style="display:none">Choose someone who hurt you and pray for them 3 days in a row. Forgiveness is not always a feeling: sometimes it is a decision.</p>
+            <div class="youth-activity-meta">
+              <span class="youth-activity-freq" data-lang="es">Esta semana</span>
+              <span class="youth-activity-freq" data-lang="en" style="display:none">This week</span>
+              <span class="youth-activity-why" data-lang="es">Libertad interior</span>
+              <span class="youth-activity-why" data-lang="en" style="display:none">Inner freedom</span>
+            </div>
+          </div>
+        </div>
+        <div class="youth-activity" data-act="mass">
+          <label class="youth-activity-check"><input type="checkbox" /><span class="youth-activity-box"></span></label>
+          <div class="youth-activity-body">
+            <h3 class="youth-activity-title" data-lang="es">Misa dominical</h3>
+            <h3 class="youth-activity-title" data-lang="en" style="display:none">Sunday Mass</h3>
+            <p class="youth-activity-what" data-lang="es">No negociable para un católico. Llega 5 minutos antes, deja el celular en silencio, participa cantando y respondiendo.</p>
+            <p class="youth-activity-what" data-lang="en" style="display:none">Non-negotiable for a Catholic. Arrive 5 minutes early, silence your phone, participate by singing and responding.</p>
+            <div class="youth-activity-meta">
+              <span class="youth-activity-freq" data-lang="es">Cada domingo</span>
+              <span class="youth-activity-freq" data-lang="en" style="display:none">Every Sunday</span>
+              <span class="youth-activity-why" data-lang="es">Centro de la semana</span>
+              <span class="youth-activity-why" data-lang="en" style="display:none">Center of the week</span>
+            </div>
+          </div>
+        </div>
+        <div class="youth-activity" data-act="serve">
+          <label class="youth-activity-check"><input type="checkbox" /><span class="youth-activity-box"></span></label>
+          <div class="youth-activity-body">
+            <h3 class="youth-activity-title" data-lang="es">Servir en tu entorno</h3>
+            <h3 class="youth-activity-title" data-lang="en" style="display:none">Serve in your surroundings</h3>
+            <p class="youth-activity-what" data-lang="es">Pregunta en tu parroquia si necesitan ayuda: catequesis, limpieza, música, visitas a ancianos. El servicio te saca del ego.</p>
+            <p class="youth-activity-what" data-lang="en" style="display:none">Ask your parish if they need help: catechesis, cleaning, music, visits to the elderly. Service pulls you out of ego.</p>
+            <div class="youth-activity-meta">
+              <span class="youth-activity-freq" data-lang="es">Este mes</span>
+              <span class="youth-activity-freq" data-lang="en" style="display:none">This month</span>
+              <span class="youth-activity-why" data-lang="es">Vocación de servicio</span>
+              <span class="youth-activity-why" data-lang="en" style="display:none">Call to serve</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <ul class="youth-list" data-lang="es">
-        <li><strong>No te robes la esperanza:</strong> aunque tu entorno sea frío, Cristo sigue vivo.</li>
-        <li><strong>No te quedes mirando:</strong> tu vocación no es ser espectador, sino protagonista del bien.</li>
-        <li><strong>Discierne tu camino:</strong> pregunta a Dios qué quiere de ti y acompáñate bien.</li>
-        <li><strong>Haz lío santo:</strong> no para destruir, sino para despertar el corazón y servir.</li>
-      </ul>
-      <ul class="youth-list" data-lang="en" style="display:none">
-        <li><strong>Do not let hope be stolen:</strong> even if your surroundings are cold, Christ is still alive.</li>
-        <li><strong>Do not stay on the sidelines:</strong> your vocation is not to watch, but to be a protagonist of good.</li>
-        <li><strong>Discern your path:</strong> ask God what He wants from you and walk with good accompaniment.</li>
-        <li><strong>Make holy noise:</strong> not to destroy, but to awaken hearts and serve.</li>
-      </ul>
     </section>
 
-    <section class="youth-section">
-      <h2 class="youth-section-title" data-lang="es">4) Sacramentos: donde se fortalece un joven</h2>
-      <h2 class="youth-section-title" data-lang="en" style="display:none">4) Sacraments: where a young person is strengthened</h2>
-      <div class="youth-text" data-lang="es">
-        <p>Sin sacramentos, la fe se vuelve idea. Con sacramentos, la fe se vuelve vida.</p>
+    <!-- DIOS -->
+    <section class="youth-section" id="youth-god">
+      <div class="youth-section-head">
+        <span class="youth-section-icon">✝️</span>
+        <div>
+          <h2 class="youth-section-title" data-lang="es">Acércate a Dios</h2>
+          <h2 class="youth-section-title" data-lang="en" style="display:none">Draw close to God</h2>
+          <p class="youth-section-sub" data-lang="es">Sin sacramentos la fe se vuelve idea. Con ellos, se vuelve vida. No seas espectador: sé protagonista.</p>
+          <p class="youth-section-sub" data-lang="en" style="display:none">Without sacraments faith becomes an idea. With them, it becomes life. Do not be a spectator: be a protagonist.</p>
+        </div>
       </div>
-      <div class="youth-text" data-lang="en" style="display:none">
-        <p>Without the sacraments, faith becomes an idea. With the sacraments, faith becomes life.</p>
+      <blockquote class="youth-scripture" data-lang="es">«Venid a mí todos los que estáis cansados y agobiados, y yo os aliviaré.»<cite>— Mateo 11, 28</cite></blockquote>
+      <blockquote class="youth-scripture" data-lang="en" style="display:none">"Come to me, all who are weary and burdened, and I will give you rest."<cite>— Matthew 11:28</cite></blockquote>
+      <div class="youth-activities">
+        <div class="youth-activity" data-act="adoration">
+          <label class="youth-activity-check"><input type="checkbox" /><span class="youth-activity-box"></span></label>
+          <div class="youth-activity-body">
+            <h3 class="youth-activity-title" data-lang="es">Adoración eucarística</h3>
+            <h3 class="youth-activity-title" data-lang="en" style="display:none">Eucharistic adoration</h3>
+            <p class="youth-activity-what" data-lang="es">15 minutos ante el Santísimo: silencio, adoración, petición. Si no hay capilla cerca, usa la guía de adoración del sitio.</p>
+            <p class="youth-activity-what" data-lang="en" style="display:none">15 minutes before the Blessed Sacrament: silence, adoration, petition. If there is no chapel nearby, use this site's adoration guide.</p>
+            <div class="youth-activity-meta">
+              <span class="youth-activity-freq" data-lang="es">Esta semana</span>
+              <span class="youth-activity-freq" data-lang="en" style="display:none">This week</span>
+              <span class="youth-activity-why" data-lang="es">Encuentro real</span>
+              <span class="youth-activity-why" data-lang="en" style="display:none">Real encounter</span>
+            </div>
+          </div>
+        </div>
+        <div class="youth-activity" data-act="rosary">
+          <label class="youth-activity-check"><input type="checkbox" /><span class="youth-activity-box"></span></label>
+          <div class="youth-activity-body">
+            <h3 class="youth-activity-title" data-lang="es">Rezar en la tentación</h3>
+            <h3 class="youth-activity-title" data-lang="en" style="display:none">Pray in temptation</h3>
+            <p class="youth-activity-what" data-lang="es">Cuando llegue la tentación: un Ave María, un Padre Nuestro, o 3 misterios del rosario. No pelees solo con la fuerza de voluntad.</p>
+            <p class="youth-activity-what" data-lang="en" style="display:none">When temptation comes: a Hail Mary, an Our Father, or 3 mysteries of the Rosary. Do not fight alone with willpower.</p>
+            <div class="youth-activity-meta">
+              <span class="youth-activity-freq" data-lang="es">Cuando haga falta</span>
+              <span class="youth-activity-freq" data-lang="en" style="display:none">When needed</span>
+              <span class="youth-activity-why" data-lang="es">Ayuda de María</span>
+              <span class="youth-activity-why" data-lang="en" style="display:none">Mary's help</span>
+            </div>
+          </div>
+        </div>
+        <div class="youth-activity" data-act="saint">
+          <label class="youth-activity-check"><input type="checkbox" /><span class="youth-activity-box"></span></label>
+          <div class="youth-activity-body">
+            <h3 class="youth-activity-title" data-lang="es">Elegir un santo amigo</h3>
+            <h3 class="youth-activity-title" data-lang="en" style="display:none">Choose a saint friend</h3>
+            <p class="youth-activity-what" data-lang="es">Carlo Acutis, Luis Gonzaga, María Goretti, Juan Pablo II… Elige uno que te inspire y pídele intercesión cada día por un mes.</p>
+            <p class="youth-activity-what" data-lang="en" style="display:none">Carlo Acutis, Aloysius Gonzaga, Maria Goretti, John Paul II… Choose one who inspires you and ask for their intercession daily for a month.</p>
+            <div class="youth-activity-meta">
+              <span class="youth-activity-freq" data-lang="es">Cada día</span>
+              <span class="youth-activity-freq" data-lang="en" style="display:none">Daily</span>
+              <span class="youth-activity-why" data-lang="es">Compañía en el camino</span>
+              <span class="youth-activity-why" data-lang="en" style="display:none">Companion on the way</span>
+            </div>
+          </div>
+        </div>
+        <div class="youth-activity" data-act="mentor">
+          <label class="youth-activity-check"><input type="checkbox" /><span class="youth-activity-box"></span></label>
+          <div class="youth-activity-body">
+            <h3 class="youth-activity-title" data-lang="es">Buscar un mentor de fe</h3>
+            <h3 class="youth-activity-title" data-lang="en" style="display:none">Find a faith mentor</h3>
+            <p class="youth-activity-what" data-lang="es">Un sacerdote, religioso o laico mayor que viva bien su fe. Pídele una charla de 20 minutos sobre tu vida y tu vocación.</p>
+            <p class="youth-activity-what" data-lang="en" style="display:none">A priest, religious, or older lay person who lives their faith well. Ask for a 20-minute conversation about your life and vocation.</p>
+            <div class="youth-activity-meta">
+              <span class="youth-activity-freq" data-lang="es">Este mes</span>
+              <span class="youth-activity-freq" data-lang="en" style="display:none">This month</span>
+              <span class="youth-activity-why" data-lang="es">Discernimiento</span>
+              <span class="youth-activity-why" data-lang="en" style="display:none">Discernment</span>
+            </div>
+          </div>
+        </div>
+        <div class="youth-activity" data-act="group">
+          <label class="youth-activity-check"><input type="checkbox" /><span class="youth-activity-box"></span></label>
+          <div class="youth-activity-body">
+            <h3 class="youth-activity-title" data-lang="es">Comunidad real, no solo online</h3>
+            <h3 class="youth-activity-title" data-lang="en" style="display:none">Real community, not only online</h3>
+            <p class="youth-activity-what" data-lang="es">Únete a un grupo juvenil parroquial, movimiento o retiro. Un amigo de fe vale más que 500 seguidores.</p>
+            <p class="youth-activity-what" data-lang="en" style="display:none">Join a parish youth group, movement, or retreat. One faith friend is worth more than 500 followers.</p>
+            <div class="youth-activity-meta">
+              <span class="youth-activity-freq" data-lang="es">Esta semana</span>
+              <span class="youth-activity-freq" data-lang="en" style="display:none">This week</span>
+              <span class="youth-activity-why" data-lang="es">No caminar solo</span>
+              <span class="youth-activity-why" data-lang="en" style="display:none">Do not walk alone</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <ul class="youth-list" data-lang="es">
-        <li><strong>Confesión frecuente:</strong> para no normalizar el pecado.</li>
-        <li><strong>Eucaristía dominical:</strong> Cristo te alimenta para luchar bien.</li>
-        <li><strong>Adoración:</strong> silencio para escuchar tu vocación y ordenar el corazón.</li>
-      </ul>
-      <ul class="youth-list" data-lang="en" style="display:none">
-        <li><strong>Frequent Confession:</strong> so sin does not become normal.</li>
-        <li><strong>Sunday Eucharist:</strong> Christ feeds you to fight well.</li>
-        <li><strong>Adoration:</strong> silence to hear your vocation and reorder the heart.</li>
-      </ul>
+      <div class="youth-links">
+        <a href="/adoracion/" class="youth-link-btn" data-lang="es">→ 15 min de Adoración</a>
+        <a href="/adoracion/" class="youth-link-btn" data-lang="en" style="display:none">→ 15 min Adoration</a>
+        <a href="/reconciliacion/" class="youth-link-btn" data-lang="es">→ Guía de Confesión</a>
+        <a href="/reconciliacion/" class="youth-link-btn" data-lang="en" style="display:none">→ Confession guide</a>
+        <a href="/rosario/" class="youth-link-btn" data-lang="es">→ Rezar el Rosario</a>
+        <a href="/rosario/" class="youth-link-btn" data-lang="en" style="display:none">→ Pray the Rosary</a>
+      </div>
     </section>
 
+    <!-- ORACIÓN -->
     <section class="youth-section">
       <h2 class="youth-section-title" data-lang="es">Oración de un joven que quiere volver a empezar</h2>
       <h2 class="youth-section-title" data-lang="en" style="display:none">Prayer of a young person who wants to begin again</h2>
@@ -309,7 +1066,38 @@ but glorify You.
   (function() {
     'use strict';
     const LANG_KEY = 'universalPrayerLang';
+    const ACT_KEY  = 'youthActsWeek';
+    const WEEK_KEY = 'youthActsWeekId';
     let lang = localStorage.getItem(LANG_KEY) || 'es';
+
+    function weekId() {
+      const d = new Date();
+      const onejan = new Date(d.getFullYear(), 0, 1);
+      const week = Math.ceil((((d - onejan) / 86400000) + onejan.getDay() + 1) / 7);
+      return d.getFullYear() + '-W' + week;
+    }
+
+    function loadActs() {
+      const current = weekId();
+      if (localStorage.getItem(WEEK_KEY) !== current) {
+        localStorage.setItem(WEEK_KEY, current);
+        localStorage.setItem(ACT_KEY, '[]');
+        return new Set();
+      }
+      try {
+        return new Set(JSON.parse(localStorage.getItem(ACT_KEY) || '[]'));
+      } catch (_) {
+        return new Set();
+      }
+    }
+
+    function saveActs(done) {
+      localStorage.setItem(ACT_KEY, JSON.stringify([...done]));
+      localStorage.setItem(WEEK_KEY, weekId());
+    }
+
+    let doneActs = loadActs();
+
     function applyLang(l) {
       lang = l;
       localStorage.setItem(LANG_KEY, l);
@@ -319,6 +1107,21 @@ but glorify You.
         el.style.display = el.dataset.lang === l ? '' : 'none';
       });
     }
+
+    document.querySelectorAll('.youth-activity').forEach(card => {
+      const id = card.dataset.act;
+      const cb = card.querySelector('input[type="checkbox"]');
+      if (!id || !cb) return;
+      cb.checked = doneActs.has(id);
+      card.classList.toggle('is-done', cb.checked);
+      cb.addEventListener('change', () => {
+        if (cb.checked) doneActs.add(id);
+        else doneActs.delete(id);
+        card.classList.toggle('is-done', cb.checked);
+        saveActs(doneActs);
+      });
+    });
+
     document.getElementById('langToggle').addEventListener('click', () => {
       applyLang(lang === 'es' ? 'en' : 'es');
       window.dispatchEvent(new CustomEvent('tup:langchange', { detail: lang }));

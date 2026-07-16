@@ -67,11 +67,6 @@
           <span class="a33-progress-label" data-lang="en" style="display:none">of 33</span>
         </div>
       </div>
-      <!-- Progress bar strip -->
-      <div class="a33-bar-wrap">
-        <div class="a33-bar-fill" id="a33BarFill"></div>
-      </div>
-      <p class="a33-bar-label" id="a33BarLabel" data-lang="es">0 días completados</p>
     </div>
   </section>
 
@@ -179,8 +174,6 @@
     /* ── DOM refs ─────────────────────────────────── */
     const $list          = document.getElementById('a33List');
     const $doneCount     = document.getElementById('a33DoneCount');
-    const $barFill       = document.getElementById('a33BarFill');
-    const $barLabel      = document.getElementById('a33BarLabel');
     const $ringFill      = document.getElementById('a33RingFill');
     const $overlay       = document.getElementById('a33ModalOverlay');
     const $modalClose    = document.getElementById('a33ModalClose');
@@ -220,12 +213,6 @@
       const n = doneDays.size;
       $doneCount.textContent = n;
       const pct = n / TOTAL;
-
-      // Bar
-      $barFill.style.width = (pct * 100).toFixed(1) + '%';
-      $barLabel.textContent = lang === 'en'
-        ? n + ' day' + (n !== 1 ? 's' : '') + ' completed'
-        : n + ' día' + (n !== 1 ? 's' : '') + ' completado' + (n !== 1 ? 's' : '');
 
       // Ring (stroke-dashoffset: 0 = full, RING_C = empty)
       $ringFill.style.strokeDashoffset = (RING_C * (1 - pct)).toFixed(2);
