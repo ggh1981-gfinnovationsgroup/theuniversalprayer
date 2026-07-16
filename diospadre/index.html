@@ -392,8 +392,6 @@
       z-index: 40;
       margin-bottom: 1rem;
     }
-    .dp-journey-progress { margin-bottom: 1rem; }
-    .dp-journey-progress .a33-bar-wrap { max-width: 360px; margin: 0 auto; }
     .dp-journey-grid.a33-list {
       max-width: none;
       padding: 0 0 1rem;
@@ -405,9 +403,21 @@
     .dp-journey-grid .a33-card-title { font-size: 0.68rem; line-height: 1.2; }
     .dp-journey-grid .a33-card-num { font-size: 0.62rem; }
     .dp-journey-grid .a33-card-status { top: 0.4rem; right: 0.45rem; font-size: 0.75rem; }
-    .dp-journey-day { margin-bottom: 0.5rem; }
-    .dp-journey-day.is-done .dp-journey-day-details summary { color: rgba(201,168,76,0.75); }
-    .dp-journey-day.is-active .dp-journey-day-details { border-color: rgba(201,168,76,0.45); }
+    .dp-journey-day-panel {
+      margin-top: 0.5rem;
+      padding: 1rem 1.1rem;
+      border: 1px solid rgba(201,168,76,0.22);
+      border-radius: 10px;
+      background: rgba(0,0,0,0.2);
+    }
+    .dp-journey-day-panel.is-done { border-color: rgba(201,168,76,0.35); }
+    .dp-journey-day-title {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      color: var(--gold-light);
+      margin: 0 0 0.75rem;
+      font-weight: 400;
+    }
     .dp-library-start { margin-bottom: 1rem; }
     .dp-library-start .dp-section-title { margin-bottom: 0.5rem; }
     .dp-journey-complete.ador-complete-note { margin: 0.75rem 0 1rem; font-size: 0.92rem; }
@@ -486,10 +496,6 @@
     <section class="dp-section" id="journey33Section">
       <h2 class="dp-section-title" data-lang="es">🌅 33 días para conocer al Padre</h2>
       <h2 class="dp-section-title" data-lang="en" style="display:none">🌅 33 days to know the Father</h2>
-      <p class="dp-section-lead" data-lang="es">Un paso cada día. Marca tu progreso con ✓</p>
-      <p class="dp-section-lead" data-lang="en" style="display:none">One step each day. Track progress with ✓</p>
-      <p class="dp-library-note" data-lang="es">Usa el grid para saltar de día — el tracker se queda visible al hacer scroll.</p>
-      <p class="dp-library-note" data-lang="en" style="display:none">Use the grid to jump between days — the tracker stays visible while you scroll.</p>
       <div id="dpJourneyMount"></div>
     </section>
 
@@ -557,8 +563,9 @@
       return body;
     }
 
-    function renderJourneyDay(block, dayNum) {
-      let body = `<p class="dp-block-p">${bi(block.es, block.en)}</p>`;
+    function renderJourneyDayPanel(block, dayNum) {
+      let body = `<h3 class="dp-journey-day-title">${bi(block.title.es, block.title.en)}</h3>`;
+      body += `<p class="dp-block-p">${bi(block.es, block.en)}</p>`;
       if (block.scripture) {
         body += renderScripture(block.scripture);
       }
@@ -568,23 +575,13 @@
         <span data-lang="es">Día completado — pasar al siguiente</span>
         <span data-lang="en" style="display:none">Day completed — move to next</span>
       </label>`;
-      return `<article class="dp-journey-day" id="dp-day-${dayNum}" data-day="${dayNum}">
-        <details class="dp-collapse dp-collapse-inner dp-journey-day-details">
-          <summary>${bi(block.title.es, block.title.en)}</summary>
-          <div class="dp-collapse-body">${body}</div>
-        </details>
-      </article>`;
-    }
-
-    function journeyShortTitle(titleObj, dayNum) {
-      const raw = (lang === 'en' ? titleObj.en : titleObj.es) || titleObj.es;
-      const parts = raw.split('—');
-      return parts.length > 1 ? parts[1].trim() : raw.replace(/^Day \d+ — /i, '').replace(/^Día \d+ — /i, '');
+      return body;
     }
 
     function renderJourneySection(sec) {
       const intro = sec.blocks.filter(b => b.type === 'p');
       const days = sec.blocks.filter(b => b.type === 'sub');
+      window._dpJourneyDays = days;
       return `<div class="dp-journey-wrap" id="dpJourney33" data-total="${days.length}">
         <div class="ador-progress-panel dp-journey-sticky">
           <div class="ador-progress-top">
@@ -597,41 +594,13 @@
             <div class="ador-progress-bar-fill" id="dpJourneyStickyBar"></div>
           </div>
         </div>
-        <div class="a33-hero-inner dp-journey-progress" style="padding:0.5rem 0 0.75rem">
-          <div class="a33-hero-progress-wrap">
-            <svg class="a33-progress-ring" viewBox="0 0 120 120">
-              <defs>
-                <linearGradient id="a33RingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#e8c97a"/>
-                  <stop offset="100%" stop-color="#c9a84c"/>
-                </linearGradient>
-              </defs>
-              <circle cx="60" cy="60" r="52" class="a33-ring-track"/>
-              <circle cx="60" cy="60" r="52" class="a33-ring-fill" id="dpJourneyRing"/>
-            </svg>
-            <div class="a33-progress-inner">
-              <span class="a33-progress-num" id="dpJourneyCount">0</span>
-              <span class="a33-progress-label" data-lang="es">de 33</span>
-              <span class="a33-progress-label" data-lang="en" style="display:none">of 33</span>
-            </div>
-          </div>
-          <div class="a33-bar-wrap">
-            <div class="a33-bar-fill" id="dpJourneyBar"></div>
-          </div>
-          <p class="a33-bar-label" id="dpJourneyBarLabel" data-lang="es">0 días completados</p>
-          <p class="a33-bar-label" id="dpJourneyBarLabelEn" data-lang="en" style="display:none">0 days completed</p>
-          <div class="a33-toolbar" style="margin-top:0.5rem">
-            <button type="button" class="a33-reset-btn" id="dpJourneyReset" data-lang="es">↺ Reiniciar jornada</button>
-            <button type="button" class="a33-reset-btn" id="dpJourneyResetEn" data-lang="en" style="display:none">↺ Reset journey</button>
-          </div>
-        </div>
         <div class="a33-list dp-journey-grid" id="dpJourneyGrid" role="navigation" aria-label="Días de la jornada"></div>
         <div class="ador-complete-note dp-journey-complete" id="dpJourneyComplete">
           <p data-lang="es">✝ ¡33 días completados! El Padre camina contigo — sigue hablándole cada día.</p>
           <p data-lang="en" style="display:none">✝ 33 days completed! The Father walks with you — keep speaking to Him each day.</p>
         </div>
         ${intro.map(b => renderBlock(b)).join('')}
-        <div class="dp-journey-days">${days.map((b, i) => renderJourneyDay(b, i + 1)).join('')}</div>
+        <div class="dp-journey-day-panel" id="dpJourneyDayPanel"></div>
       </div>`;
     }
 
@@ -695,28 +664,23 @@
 
     const JOURNEY33_TOTAL = 33;
     const JOURNEY33_KEY   = 'diospadre33_done';
-    const JOURNEY33_RING_C = 2 * Math.PI * 52;
     let journey33Done = new Set();
+    let journey33ViewDay = 1;
 
     function initJourney33() {
       const wrap = document.getElementById('dpJourney33');
-      if (!wrap) return;
+      const days = window._dpJourneyDays || [];
+      if (!wrap || !days.length) return;
 
-      const total = Number(wrap.dataset.total) || JOURNEY33_TOTAL;
+      const total = Number(wrap.dataset.total) || days.length;
 
       journey33Done = new Set(JSON.parse(localStorage.getItem(JOURNEY33_KEY) || '[]'));
-      const $bar      = document.getElementById('dpJourneyBar');
-      const $count    = document.getElementById('dpJourneyCount');
-      const $barLabel = document.getElementById('dpJourneyBarLabel');
-      const $barLabelEn = document.getElementById('dpJourneyBarLabelEn');
-      const $ring     = document.getElementById('dpJourneyRing');
       const $grid     = document.getElementById('dpJourneyGrid');
+      const $panel    = document.getElementById('dpJourneyDayPanel');
       const $stickyBar = document.getElementById('dpJourneyStickyBar');
       const $stickyCount = document.getElementById('dpJourneyStickyCount');
       const $stickyCountEn = document.getElementById('dpJourneyStickyCountEn');
       const $complete = document.getElementById('dpJourneyComplete');
-      const $days    = [...document.querySelectorAll('.dp-journey-day[data-day]')];
-      const $checks  = [...document.querySelectorAll('.dp-journey-check')];
 
       function activeDay() {
         for (let i = 1; i <= total; i++) {
@@ -725,45 +689,58 @@
         return total;
       }
 
-      function updateJourney(scrollNext) {
+      function shortTitle(titleObj, d) {
+        const fullEs = titleObj.es || '';
+        const fullEn = titleObj.en || '';
+        const shortEs = fullEs.split('—')[1]?.trim() || ('Día ' + d);
+        const shortEn = fullEn.split('—')[1]?.trim() || ('Day ' + d);
+        return lang === 'en' ? shortEn : shortEs;
+      }
+
+      function renderPanel(dayNum) {
+        if (!$panel) return;
+        const block = days[dayNum - 1];
+        if (!block) return;
+        $panel.innerHTML = renderJourneyDayPanel(block, dayNum);
+        $panel.classList.toggle('is-done', journey33Done.has(dayNum));
+        $panel.id = 'dp-day-' + dayNum;
+        const $check = $panel.querySelector('.dp-journey-check');
+        if ($check) {
+          $check.checked = journey33Done.has(dayNum);
+          $check.addEventListener('change', function () {
+            const d = Number(this.dataset.day);
+            if (this.checked) journey33Done.add(d);
+            else journey33Done.delete(d);
+            localStorage.setItem(JOURNEY33_KEY, JSON.stringify([...journey33Done].sort((a, b) => a - b)));
+            updateJourney(this.checked);
+          });
+        }
+        document.querySelectorAll('[data-lang]').forEach(el => {
+          el.style.display = el.dataset.lang === lang ? '' : 'none';
+        });
+      }
+
+      function updateJourney(advanceNext) {
         const n = journey33Done.size;
         const pct = (n / total) * 100;
         const active = activeDay();
-        if ($bar) $bar.style.width = pct + '%';
+        if (advanceNext) journey33ViewDay = active;
+        if (!journey33ViewDay || journey33ViewDay < 1 || journey33ViewDay > total) {
+          journey33ViewDay = active;
+        }
+
         if ($stickyBar) $stickyBar.style.width = pct + '%';
-        if ($count) $count.textContent = n;
         if ($stickyCount) $stickyCount.textContent = n + ' de ' + total + ' días';
         if ($stickyCountEn) $stickyCountEn.textContent = n + ' of ' + total + ' days';
-        if ($barLabel) $barLabel.textContent = n + ' día' + (n !== 1 ? 's' : '') + ' completado' + (n !== 1 ? 's' : '');
-        if ($barLabelEn) $barLabelEn.textContent = n + ' day' + (n !== 1 ? 's' : '') + ' completed';
-        if ($ring) {
-          $ring.style.strokeDasharray = JOURNEY33_RING_C;
-          $ring.style.strokeDashoffset = (JOURNEY33_RING_C * (1 - n / total)).toFixed(2);
-        }
         if ($complete) $complete.classList.toggle('is-visible', n >= total);
 
-        $days.forEach(el => {
-          const d = Number(el.dataset.day);
-          el.classList.toggle('is-done', journey33Done.has(d));
-          el.classList.toggle('is-active', d === active && !journey33Done.has(d));
-        });
-
-        $checks.forEach(ch => {
-          ch.checked = journey33Done.has(Number(ch.dataset.day));
-        });
-
         if ($grid) {
-          $grid.innerHTML = $days.map(el => {
-            const d = Number(el.dataset.day);
-            const sum = el.querySelector('summary');
-            const fullTitleEs = sum?.querySelector('[data-lang="es"]')?.textContent || '';
-            const fullTitleEn = sum?.querySelector('[data-lang="en"]')?.textContent || '';
-            const fullTitle = lang === 'en' ? fullTitleEn : fullTitleEs;
-            const shortEs = fullTitleEs.split('—')[1]?.trim() || ('Día ' + d);
-            const shortEn = fullTitleEn.split('—')[1]?.trim() || ('Day ' + d);
-            const short = lang === 'en' ? shortEn : shortEs;
+          $grid.innerHTML = days.map((block, i) => {
+            const d = i + 1;
+            const fullTitle = lang === 'en' ? block.title.en : block.title.es;
+            const short = shortTitle(block.title, d);
             const done = journey33Done.has(d);
-            const isActive = d === active && !done;
+            const isActive = d === journey33ViewDay;
             return `<button type="button" class="a33-card${done ? ' a33-card--done' : ''}${isActive ? ' a33-card-active' : ''}" data-goto="${d}" title="${fullTitle}">
               <span class="a33-card-num">${String(d).padStart(2, '0')}</span>
               <span class="a33-card-title">${short}</span>
@@ -772,43 +749,30 @@
           }).join('');
           $grid.querySelectorAll('[data-goto]').forEach(btn => {
             btn.addEventListener('click', () => {
-              const el = document.getElementById('dp-day-' + btn.dataset.goto);
-              if (el) {
-                const det = el.querySelector('details');
-                if (det) det.open = true;
-                setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 120);
-              }
+              journey33ViewDay = Number(btn.dataset.goto);
+              updateJourney(false);
             });
           });
         }
 
-        if (scrollNext && n < total) {
-          const next = document.getElementById('dp-day-' + active);
-          if (next) {
-            const det = next.querySelector('details');
-            if (det) det.open = true;
-            setTimeout(() => next.scrollIntoView({ behavior: 'smooth', block: 'start' }), 280);
+        renderPanel(journey33ViewDay);
+
+        if (advanceNext && n < total) {
+          const panel = document.getElementById('dp-day-' + journey33ViewDay);
+          if (panel) {
+            setTimeout(() => panel.scrollIntoView({ behavior: 'smooth', block: 'start' }), 280);
           }
         }
       }
 
-      $checks.forEach(ch => {
-        ch.addEventListener('change', function () {
-          const d = Number(this.dataset.day);
-          if (this.checked) journey33Done.add(d);
-          else journey33Done.delete(d);
-          localStorage.setItem(JOURNEY33_KEY, JSON.stringify([...journey33Done].sort((a, b) => a - b)));
-          updateJourney(this.checked);
-        });
-      });
-
-      ['dpJourneyReset', 'dpJourneyResetEn', 'dpJourneyStickyReset', 'dpJourneyStickyResetEn'].forEach(id => {
+      ['dpJourneyStickyReset', 'dpJourneyStickyResetEn'].forEach(id => {
         const btn = document.getElementById(id);
         if (!btn) return;
         btn.addEventListener('click', () => {
           const msg = lang === 'en' ? 'Reset all 33 days progress?' : '¿Reiniciar el progreso de los 33 días?';
           if (!confirm(msg)) return;
           journey33Done.clear();
+          journey33ViewDay = 1;
           localStorage.removeItem(JOURNEY33_KEY);
           updateJourney(false);
         });

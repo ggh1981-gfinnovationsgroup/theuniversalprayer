@@ -137,27 +137,8 @@
   <!-- MOMENTS CONTENT -->
   <main class="ador-content">
 
-    <!-- Progress: 7 momentos de 15 min -->
-    <div class="ador-progress-panel" id="adorProgressPanel">
-      <div class="ador-progress-top">
-        <span class="ador-progress-count" id="adorProgressCount" data-lang="es">0 de 7 momentos</span>
-        <span class="ador-progress-count" id="adorProgressCountEn" data-lang="en" style="display:none">0 of 7 moments</span>
-        <button type="button" class="ador-progress-reset" id="adorProgressReset" data-lang="es">↺ Reiniciar</button>
-        <button type="button" class="ador-progress-reset" id="adorProgressResetEn" data-lang="en" style="display:none">↺ Reset</button>
-      </div>
-      <div class="ador-progress-bar-wrap">
-        <div class="ador-progress-bar-fill" id="adorProgressBar"></div>
-      </div>
-      <div class="ador-moments-strip" id="adorMomentsStrip" aria-label="Pasos de adoración"></div>
-    </div>
-
-    <div class="ador-complete-note" id="adorCompleteNote">
-      <p data-lang="es">✝ Has completado los 15 minutos. Que la paz del Santísimo te acompañe hoy.</p>
-      <p data-lang="en" style="display:none">✝ You have completed all 15 minutes. May the peace of the Blessed Sacrament be with you today.</p>
-    </div>
-
     <!-- Moment 1 -->
-    <article class="ador-moment-section" id="ador-moment-0" data-moment="0">
+    <article class="ador-moment-section is-active" id="ador-moment-0" data-moment="0">
       <div class="ador-moment-header">
         <span class="ador-moment-badge">
           <span data-lang="es">2 min</span>
@@ -182,16 +163,10 @@
         <p>I do not come with prepared words or great virtues. I come as I am — with my doubts, my weariness, my joys and my wounds. Receive me, Lord, as You are: merciful and full of tenderness.</p>
         <p>You who are the same yesterday, today, and forever — here You are. With me. In this moment.</p>
       </div>
-      <label class="ador-done-label">
-        <input type="checkbox" class="ador-done-check" data-moment="0" />
-        <span class="ador-done-checkmark"></span>
-        <span data-lang="es">Momento completado — pasar al siguiente</span>
-        <span data-lang="en" style="display:none">Moment completed — move to next</span>
-      </label>
     </article>
 
     <!-- Moment 2 -->
-    <article class="ador-moment-section" id="ador-moment-1" data-moment="1">
+    <article class="ador-moment-section is-active" id="ador-moment-1" data-moment="1">
       <div class="ador-moment-header">
         <span class="ador-moment-badge">
           <span data-lang="es">2 min</span>
@@ -216,16 +191,10 @@
         <p>Holy, Holy, Holy is the Lord God of hosts. Heaven and earth are full of Your glory.</p>
         <p>Lord, I adore You because I need You. Without You I am nothing, and only in You do I find life, direction, and peace. Because You are worthy of all praise, all glory, and all honor. Forever and always. Amen.</p>
       </div>
-      <label class="ador-done-label">
-        <input type="checkbox" class="ador-done-check" data-moment="1" />
-        <span class="ador-done-checkmark"></span>
-        <span data-lang="es">Momento completado — pasar al siguiente</span>
-        <span data-lang="en" style="display:none">Moment completed — move to next</span>
-      </label>
     </article>
 
     <!-- Moment 3 -->
-    <article class="ador-moment-section" id="ador-moment-2" data-moment="2">
+    <article class="ador-moment-section is-active" id="ador-moment-2" data-moment="2">
       <div class="ador-moment-header">
         <span class="ador-moment-badge">
           <span data-lang="es">1 min</span>
@@ -249,16 +218,10 @@
         <p>Forgive me, Lord. Cleanse me with Your mercy. You are the Lamb of God, who takes away the sin of the world. You are the fountain from which forgiveness springs for all who come to You in sincerity.</p>
         <p>Do not turn me away from Your presence. You do not reject those who come with humility. In You I trust.</p>
       </div>
-      <label class="ador-done-label">
-        <input type="checkbox" class="ador-done-check" data-moment="2" />
-        <span class="ador-done-checkmark"></span>
-        <span data-lang="es">Momento completado — pasar al siguiente</span>
-        <span data-lang="en" style="display:none">Moment completed — move to next</span>
-      </label>
     </article>
 
     <!-- Moment 4 -->
-    <article class="ador-moment-section" id="ador-moment-3" data-moment="3">
+    <article class="ador-moment-section is-active" id="ador-moment-3" data-moment="3">
       <div class="ador-moment-header">
         <span class="ador-moment-badge">
           <span data-lang="es">4 min</span>
@@ -295,12 +258,6 @@
         <p>And when we finally stop — like those disciples around the table — You break the bread, and our eyes are opened. And our hearts, carrying so much weight, suddenly burn again.</p>
         <p class="ador-silence-note">— Silence —<br>What is the Lord saying to you today?</p>
       </div>
-      <label class="ador-done-label">
-        <input type="checkbox" class="ador-done-check" data-moment="3" />
-        <span class="ador-done-checkmark"></span>
-        <span data-lang="es">Momento completado — pasar al siguiente</span>
-        <span data-lang="en" style="display:none">Moment completed — move to next</span>
-      </label>
     </article>
 
     <!-- 33 días — sección integrada -->
@@ -324,7 +281,7 @@
           <div class="a33-hero-progress-wrap">
             <svg class="a33-progress-ring" viewBox="0 0 120 120">
               <defs>
-                <linearGradient id="a33RingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <linearGradient id="a33RingGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
                   <stop offset="0%" stop-color="#e8c97a"/>
                   <stop offset="100%" stop-color="#c9a84c"/>
                 </linearGradient>
@@ -382,8 +339,8 @@
               <label class="a33-done-label" id="mdDoneLabel">
                 <input type="checkbox" class="a33-done-check" id="mdDoneCheck" />
                 <span class="a33-done-checkmark"></span>
-                <span data-lang="es">Día completado — pasar al siguiente</span>
-                <span data-lang="en" style="display:none">Day completed — move to next</span>
+                <span data-lang="es">Marcar este día como completado</span>
+                <span data-lang="en" style="display:none">Mark this day as completed</span>
               </label>
             </div>
           </div>
@@ -404,7 +361,7 @@
     </section>
 
     <!-- Moment 5 -->
-    <article class="ador-moment-section" id="ador-moment-4" data-moment="4">
+    <article class="ador-moment-section is-active" id="ador-moment-4" data-moment="4">
       <div class="ador-moment-header">
         <span class="ador-moment-badge">
           <span data-lang="es">3 min</span>
@@ -433,16 +390,10 @@
         <p>I present my own burdens: what worries me, what frightens me, what I do not know how to resolve... <em>(pause)</em></p>
         <p>Lord, I have no solutions — but You do. I have no power — but You are the Almighty. I surrender all of this to You. I trust in You. Your will be done, not mine.</p>
       </div>
-      <label class="ador-done-label">
-        <input type="checkbox" class="ador-done-check" data-moment="4" />
-        <span class="ador-done-checkmark"></span>
-        <span data-lang="es">Momento completado — pasar al siguiente</span>
-        <span data-lang="en" style="display:none">Moment completed — move to next</span>
-      </label>
     </article>
 
     <!-- Moment 6 -->
-    <article class="ador-moment-section" id="ador-moment-5" data-moment="5">
+    <article class="ador-moment-section is-active" id="ador-moment-5" data-moment="5">
       <div class="ador-moment-header">
         <span class="ador-moment-badge">
           <span data-lang="es">2 min</span>
@@ -467,16 +418,10 @@
         <p>Thank You for remaining with us in the Eucharist. You are the Bread of heaven. You are the Manna that sustains the soul when the desert grows long. You are the one who said "I will be with you always, to the end of the age" — and here You are, faithful to Your word.</p>
         <p>I give You thanks, Lord. With all that I am and all that I have.</p>
       </div>
-      <label class="ador-done-label">
-        <input type="checkbox" class="ador-done-check" data-moment="5" />
-        <span class="ador-done-checkmark"></span>
-        <span data-lang="es">Momento completado — pasar al siguiente</span>
-        <span data-lang="en" style="display:none">Moment completed — move to next</span>
-      </label>
     </article>
 
     <!-- Moment 7 -->
-    <article class="ador-moment-section" id="ador-moment-6" data-moment="6">
+    <article class="ador-moment-section is-active" id="ador-moment-6" data-moment="6">
       <div class="ador-moment-header">
         <span class="ador-moment-badge">
           <span data-lang="es">1 min</span>
@@ -499,12 +444,6 @@
         <p>Lord Jesus, present in the Blessed Sacrament: come into my life, heal my wounds, guide my steps. And one day, when the hour comes, welcome me into Your kingdom forever.</p>
         <span class="ador-amen">Amen.</span>
       </div>
-      <label class="ador-done-label">
-        <input type="checkbox" class="ador-done-check" data-moment="6" />
-        <span class="ador-done-checkmark"></span>
-        <span data-lang="es">Momento completado — adoración terminada</span>
-        <span data-lang="en" style="display:none">Moment completed — adoration finished</span>
-      </label>
     </article>
 
     <div class="ador-footer-links">
@@ -540,108 +479,6 @@
     // ── Init ──────────────────────────────────────────
     applyLang(lang);
 
-    // ── 15 minutos — progreso con checkbox ────────────
-    const ADOR15_TOTAL = 7;
-    const ADOR15_KEY   = 'adoracion15_done';
-    const ADOR15_META  = [
-      { es: 'Llegada', en: 'Arrival' },
-      { es: 'Adoración', en: 'Adoration' },
-      { es: 'Contrición', en: 'Contrition' },
-      { es: 'Meditación', en: 'Meditation' },
-      { es: 'Peticiones', en: 'Petitions' },
-      { es: 'Gracias', en: 'Thanks' },
-      { es: 'Despedida', en: 'Farewell' },
-    ];
-
-    let ador15Done = new Set(JSON.parse(localStorage.getItem(ADOR15_KEY) || '[]'));
-    const $adorBar      = document.getElementById('adorProgressBar');
-    const $adorCount    = document.getElementById('adorProgressCount');
-    const $adorCountEn  = document.getElementById('adorProgressCountEn');
-    const $adorStrip    = document.getElementById('adorMomentsStrip');
-    const $adorComplete = document.getElementById('adorCompleteNote');
-    const $adorSections = [...document.querySelectorAll('.ador-moment-section[data-moment]')];
-    const $adorChecks   = [...document.querySelectorAll('.ador-done-check')];
-
-    function ador15ActiveIndex() {
-      for (let i = 0; i < ADOR15_TOTAL; i++) {
-        if (!ador15Done.has(i)) return i;
-      }
-      return ADOR15_TOTAL - 1;
-    }
-
-    function ador15UpdateUI(scrollToNext) {
-      const n = ador15Done.size;
-      const pct = (n / ADOR15_TOTAL) * 100;
-      if ($adorBar) $adorBar.style.width = pct + '%';
-      if ($adorCount) $adorCount.textContent = n + ' de ' + ADOR15_TOTAL + ' momentos';
-      if ($adorCountEn) $adorCountEn.textContent = n + ' of ' + ADOR15_TOTAL + ' moments';
-      if ($adorComplete) $adorComplete.classList.toggle('is-visible', n >= ADOR15_TOTAL);
-
-      const active = ador15ActiveIndex();
-
-      $adorSections.forEach(sec => {
-        const idx = Number(sec.dataset.moment);
-        sec.classList.toggle('is-done', ador15Done.has(idx));
-        sec.classList.toggle('is-active', idx === active && !ador15Done.has(idx));
-      });
-
-      $adorChecks.forEach(ch => {
-        const idx = Number(ch.dataset.moment);
-        ch.checked = ador15Done.has(idx);
-      });
-
-      if ($adorStrip) {
-        $adorStrip.innerHTML = ADOR15_META.map((m, i) => {
-          const lbl = lang === 'en' ? m.en : m.es;
-          const cls = (ador15Done.has(i) ? 'is-done' : '') + (i === active && !ador15Done.has(i) ? ' is-active' : '');
-          return `<button type="button" class="ador-moment-step ${cls}" data-goto="${i}" title="${lbl}">
-            <span class="ador-moment-step-num">${ador15Done.has(i) ? '✓' : i + 1}</span>
-            <span class="ador-moment-step-label">${lbl}</span>
-          </button>`;
-        }).join('');
-        $adorStrip.querySelectorAll('[data-goto]').forEach(btn => {
-          btn.addEventListener('click', () => {
-            const el = document.getElementById('ador-moment-' + btn.dataset.goto);
-            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          });
-        });
-      }
-
-      if (scrollToNext && n < ADOR15_TOTAL) {
-        const next = document.getElementById('ador-moment-' + active);
-        if (next) setTimeout(() => next.scrollIntoView({ behavior: 'smooth', block: 'start' }), 280);
-      }
-    }
-
-    $adorChecks.forEach(ch => {
-      ch.addEventListener('change', function () {
-        const idx = Number(this.dataset.moment);
-        if (this.checked) ador15Done.add(idx);
-        else ador15Done.delete(idx);
-        localStorage.setItem(ADOR15_KEY, JSON.stringify([...ador15Done].sort((a, b) => a - b)));
-        ador15UpdateUI(this.checked);
-      });
-    });
-
-    ['adorProgressReset', 'adorProgressResetEn'].forEach(id => {
-      const btn = document.getElementById(id);
-      if (!btn) return;
-      btn.addEventListener('click', () => {
-        const msg = lang === 'en' ? 'Reset the 15-minute progress?' : '¿Reiniciar el progreso de los 15 minutos?';
-        if (!confirm(msg)) return;
-        ador15Done.clear();
-        localStorage.removeItem(ADOR15_KEY);
-        ador15UpdateUI(false);
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    });
-
-    document.getElementById('langToggle').addEventListener('click', () => {
-      setTimeout(() => ador15UpdateUI(false), 0);
-    });
-
-    ador15UpdateUI(false);
-
     // ── 33 días toggle ────────────────────────────────
     const ador33Toggle = document.getElementById('ador33Toggle');
     const ador33Body   = document.getElementById('ador33Body');
@@ -676,13 +513,6 @@
     const $a33Close   = document.getElementById('a33ModalClose');
     const $a33Banner  = document.getElementById('a33CompleteBanner');
 
-    function a33ActiveDay() {
-      for (let i = 1; i <= TOTAL_33; i++) {
-        if (!a33Done.has(i)) return i;
-      }
-      return TOTAL_33;
-    }
-
     function a33Progress() {
       const n = a33Done.size;
       const pct = n / TOTAL_33;
@@ -700,14 +530,13 @@
 
     function a33RenderList() {
       if (!$a33List) return;
-      const active = a33ActiveDay();
       $a33List.innerHTML = '';
       for (let i = 1; i <= TOTAL_33; i++) {
         const data  = a33Dias[i] || null;
         const done  = a33Done.has(i);
         const avail = data !== null;
         const card  = document.createElement('button');
-        card.className = 'a33-card' + (done ? ' a33-card--done' : '') + (!avail ? ' a33-card--soon' : '') + (i === active && !done && avail ? ' a33-card-active' : '');
+        card.className = 'a33-card' + (done ? ' a33-card--done' : '') + (!avail ? ' a33-card--soon' : '');
         card.disabled  = !avail;
         card.dataset.day = i;
         const num = document.createElement('span'); num.className = 'a33-card-num'; num.textContent = String(i).padStart(2, '0');
@@ -766,14 +595,9 @@
       if (!a33Current) return;
       const n = a33Current.n;
       this.checked ? a33Done.add(n) : a33Done.delete(n);
-      localStorage.setItem(A33_KEY, JSON.stringify([...a33Done].sort((a, b) => a - b)));
+      localStorage.setItem(A33_KEY, JSON.stringify([...a33Done]));
       a33Progress();
       a33RenderList();
-      if (this.checked && a33Done.size < TOTAL_33) {
-        const next = a33ActiveDay();
-        const nextData = a33Dias[next];
-        if (nextData) setTimeout(() => a33OpenModal(nextData), 320);
-      }
     });
 
     ['a33ResetBtn','a33ResetBtnEn'].forEach(id => {

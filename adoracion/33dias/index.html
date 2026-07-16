@@ -131,8 +131,8 @@
         <label class="a33-done-label" id="mdDoneLabel">
           <input type="checkbox" class="a33-done-check" id="mdDoneCheck" />
           <span class="a33-done-checkmark"></span>
-          <span data-lang="es">Día completado — pasar al siguiente</span>
-          <span data-lang="en" style="display:none">Day completed — move to next</span>
+          <span data-lang="es">Marcar este día como completado</span>
+          <span data-lang="en" style="display:none">Mark this day as completed</span>
         </label>
 
       </div>
@@ -216,13 +216,6 @@
     });
 
     /* ── Progress ─────────────────────────────────── */
-    function activeDay() {
-      for (let i = 1; i <= TOTAL; i++) {
-        if (!doneDays.has(i)) return i;
-      }
-      return TOTAL;
-    }
-
     function updateProgress () {
       const n = doneDays.size;
       $doneCount.textContent = n;
@@ -244,7 +237,6 @@
     /* ── List render ──────────────────────────────── */
     function renderList () {
       $list.innerHTML = '';
-      const active = activeDay();
 
       for (let i = 1; i <= TOTAL; i++) {
         const data  = DIAS_33[i] || null;
@@ -254,8 +246,7 @@
         const card = document.createElement('button');
         card.className = 'a33-card' +
           (done  ? ' a33-card--done'  : '') +
-          (!avail ? ' a33-card--soon' : '') +
-          (i === active && !done && avail ? ' a33-card-active' : '');
+          (!avail ? ' a33-card--soon' : '');
         card.disabled = !avail;
         card.dataset.day = i;
 
@@ -360,19 +351,14 @@
     });
 
     /* ── Done checkbox ────────────────────────────── */
-    $mdDoneCheck.addEventListener('change', function () {
+    $mdDoneCheck.addEventListener('change', () => {
       if (!currentDay) return;
       const n = currentDay.n;
-      if (this.checked) doneDays.add(n);
-      else               doneDays.delete(n);
-      localStorage.setItem(STORAGE_KEY, JSON.stringify([...doneDays].sort((a, b) => a - b)));
+      if ($mdDoneCheck.checked) doneDays.add(n);
+      else                       doneDays.delete(n);
+      localStorage.setItem(STORAGE_KEY, JSON.stringify([...doneDays]));
       updateProgress();
       renderList();
-      if (this.checked && doneDays.size < TOTAL) {
-        const next = activeDay();
-        const nextData = DIAS_33[next];
-        if (nextData) setTimeout(() => openModal(nextData), 320);
-      }
     });
 
     /* ── Reset ────────────────────────────────────── */
