@@ -159,6 +159,7 @@
           '<h3 class="ninos-cuento-title">' + c.title[lang] + '</h3>' +
         '</div>' +
         '<p class="ninos-cuento-hook">' + c.hook[lang] + '</p>' +
+        (c.readMin ? '<span class="ninos-cuento-time">🌙 ~' + c.readMin + ' ' + (lang === 'en' ? 'min' : 'min') + '</span>' : '') +
         '<div class="ninos-cuento-foot">' +
           '<label class="ninos-read-check" title="' + (lang === 'en' ? 'Mark as read' : 'Marcar como leído') + '">' +
             '<input type="checkbox"' + (readCuentos.has(c.id) ? ' checked' : '') + ' />' +
@@ -204,14 +205,18 @@
     if (modalCb) modalCb.checked = readCuentos.has(c.id);
     updateTtsBtn();
     if (showModal) {
-      document.getElementById('ninosModal').classList.add('is-open');
+      const modal = document.getElementById('ninosModal');
+      modal.classList.add('is-open');
+      modal.classList.add('ninos-modal--bedtime');
       document.body.style.overflow = 'hidden';
     }
   }
 
   function closeModal() {
     stopTts();
-    document.getElementById('ninosModal').classList.remove('is-open');
+    const modal = document.getElementById('ninosModal');
+    modal.classList.remove('is-open');
+    modal.classList.remove('ninos-modal--bedtime');
     document.body.style.overflow = '';
   }
 
@@ -222,18 +227,18 @@
     btn.style.display = '';
     btn.textContent = ttsSpeaking
       ? (lang === 'en' ? '⏹ Stop' : '⏹ Detener')
-      : (lang === 'en' ? '▶ Read aloud' : '▶ Leer en voz alta');
+      : (lang === 'en' ? '🌙 Read for sleep' : '🌙 Leer para dormir');
   }
 
   function speakCuento() {
     if (!currentCuento || !window.speechSynthesis) return;
     if (ttsSpeaking) { stopTts(); return; }
-    const text = currentCuento.story[lang] + ' ' + currentCuento.moral[lang];
+    const text = currentCuento.story[lang];
     window.speechSynthesis.cancel();
     const utt = new SpeechSynthesisUtterance(text);
     utt.lang = lang === 'es' ? 'es-MX' : 'en-US';
-    utt.rate = 0.82;
-    utt.pitch = 1.08;
+    utt.rate = 0.68;
+    utt.pitch = 1.0;
     const voices = window.speechSynthesis.getVoices();
     const voice = voices.find(v => v.lang.startsWith(lang === 'es' ? 'es' : 'en'));
     if (voice) utt.voice = voice;

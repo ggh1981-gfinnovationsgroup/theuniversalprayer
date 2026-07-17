@@ -115,6 +115,10 @@
     }
     .ninos-cuento-title { font-family: var(--font-serif); font-size: 1rem; color: var(--gold-light); margin: 0; line-height: 1.25; }
     .ninos-cuento-hook { font-family: var(--font-sans); font-size: 0.8rem; color: rgba(255,255,255,0.6); margin: 0; line-height: 1.45; cursor: pointer; }
+    .ninos-cuento-time {
+      display: inline-block; margin-top: 0.4rem; font-family: var(--font-sans); font-size: 0.68rem;
+      color: rgba(180,200,255,0.7); letter-spacing: 0.04em;
+    }
     .ninos-cuento-foot { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-top: 0.65rem; flex-wrap: wrap; }
     .ninos-read-check { display: flex; align-items: center; gap: 0.4rem; cursor: pointer; flex-shrink: 0; }
     .ninos-read-check input { position: absolute; opacity: 0; width: 0; height: 0; }
@@ -167,11 +171,16 @@
       display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.75); z-index: 9500;
       padding: 1rem; overflow-y: auto; align-items: flex-start; justify-content: center;
     }
+    .ninos-modal-overlay.ninos-modal--bedtime { background: rgba(4,6,14,0.92); }
     .ninos-modal-overlay.is-open { display: flex; }
     .ninos-modal {
       width: min(560px, 100%); margin: 2rem auto; background: #121820;
       border: 1px solid rgba(201,168,76,0.3); border-radius: 16px; overflow: hidden;
       box-shadow: 0 20px 50px rgba(0,0,0,0.5); animation: ninos-modal-in 0.3s ease;
+    }
+    .ninos-modal-overlay.ninos-modal--bedtime .ninos-modal {
+      background: #0c1018; border-color: rgba(158,200,255,0.22);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.65), 0 0 80px rgba(80,100,160,0.08);
     }
     @keyframes ninos-modal-in { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
     .ninos-modal-hero {
@@ -180,7 +189,8 @@
     }
     .ninos-modal-img { width: 64px; height: 64px; border-radius: 50%; background: rgba(0,0,0,0.3); padding: 5px; }
     .ninos-modal-title { font-family: var(--font-serif); font-size: 1.25rem; color: var(--gold-light); margin: 0; flex: 1; }
-    .ninos-modal-body { padding: 1.25rem 1.35rem 1.5rem; font-family: var(--font-sans); font-size: 0.92rem; color: rgba(255,255,255,0.82); line-height: 1.75; }
+    .ninos-modal-body { padding: 1.25rem 1.35rem 1.5rem; font-family: var(--font-sans); font-size: 0.92rem; color: rgba(255,255,255,0.82); line-height: 1.75; max-height: min(58vh, 520px); overflow-y: auto; }
+    .ninos-modal-overlay.ninos-modal--bedtime .ninos-modal-body { font-size: 0.95rem; line-height: 1.85; color: rgba(255,255,255,0.78); }
     .ninos-modal-body p { margin: 0 0 0.85rem; }
     .ninos-modal-moral {
       background: rgba(158,200,255,0.08); border-left: 3px solid #9ec8ff; border-radius: 0 10px 10px 0;
@@ -327,8 +337,8 @@ Amen.</p>
       <h2 class="ninos-section-title" data-lang="es">📖 Cuentos de santos amigos</h2>
       <h2 class="ninos-section-title" data-lang="en" style="display:none">📖 Stories of saint friends</h2>
       <div class="ninos-cuentos-head">
-        <p class="ninos-cuentos-sub" data-lang="es">Toca un cuento para leerlo — marca ✓ cuando lo termines.</p>
-        <p class="ninos-cuentos-sub" data-lang="en" style="display:none">Tap a story to read it — check ✓ when you finish.</p>
+        <p class="ninos-cuentos-sub" data-lang="es">Cuentos largos para dormir 🌙 — léelos despacio o pulsa «Leer para dormir».</p>
+        <p class="ninos-cuentos-sub" data-lang="en" style="display:none">Long bedtime stories 🌙 — read slowly or tap «Read for sleep».</p>
         <span class="ninos-read-count" id="ninosReadCount">0 / 66</span>
       </div>
       <div class="ninos-read-filters" style="margin-bottom:1rem">

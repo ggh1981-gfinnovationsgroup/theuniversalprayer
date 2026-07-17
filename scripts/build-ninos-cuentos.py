@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 """Generate data/ninos-cuentos.json with bilingual children's saint stories."""
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from ninos_bedtime import expand_bedtime
+
 OUT = ROOT / "data" / "ninos-cuentos.json"
 
 def S(id_, saint, icon, accent, title_es, title_en, hook_es, hook_en,
@@ -698,5 +702,20 @@ for c in CUENTOS:
     seen.add(c["id"])
     unique.append(c)
 
+# Expand to calm bedtime-length stories
+for c in unique:
+    es_long, en_long, read_min = expand_bedtime(
+        c["story"]["es"],
+        c["story"]["en"],
+        c["title"]["es"],
+        c["title"]["en"],
+        c["moral"]["es"],
+        c["moral"]["en"],
+        c["id"],
+    )
+    c["story"] = {"es": es_long, "en": en_long}
+    c["readMin"] = read_min
+    c["bedtime"] = True
+
 OUT.write_text(json.dumps({"cuentos": unique}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-print(f"Wrote {len(unique)} cuentos to {OUT}")
+print(f"Wrote {len(unique)} bedtime cuentos to {OUT}")
