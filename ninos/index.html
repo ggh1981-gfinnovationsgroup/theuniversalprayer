@@ -210,6 +210,7 @@
       cursor: pointer; text-decoration: none; display: inline-block;
     }
     .ninos-modal-btn:hover { background: rgba(201,168,76,0.15); }
+    .ninos-modal-ambient.is-on { border-color: rgba(158,200,255,0.45); color: #b8d8ff; }
     .ninos-modal-close { background: none; border: none; color: rgba(255,255,255,0.5); font-size: 1.2rem; cursor: pointer; padding: 0.25rem; }
     .ninos-modal-close:hover { color: #fff; }
   </style>
@@ -337,8 +338,8 @@ Amen.</p>
       <h2 class="ninos-section-title" data-lang="es">📖 Cuentos de santos amigos</h2>
       <h2 class="ninos-section-title" data-lang="en" style="display:none">📖 Stories of saint friends</h2>
       <div class="ninos-cuentos-head">
-        <p class="ninos-cuentos-sub" data-lang="es">Cuentos largos para dormir 🌙 — léelos despacio o pulsa «Leer para dormir».</p>
-        <p class="ninos-cuentos-sub" data-lang="en" style="display:none">Long bedtime stories 🌙 — read slowly or tap «Read for sleep».</p>
+        <p class="ninos-cuentos-sub" data-lang="es">Cuentos largos (10–15 min) para dormir 🌙 — con sonido de noche suave.</p>
+        <p class="ninos-cuentos-sub" data-lang="en" style="display:none">Long bedtime tales (10–15 min) 🌙 — with soft night sounds.</p>
         <span class="ninos-read-count" id="ninosReadCount">0 / 66</span>
       </div>
       <div class="ninos-read-filters" style="margin-bottom:1rem">
@@ -387,6 +388,7 @@ Amen.</p>
           <span class="ninos-read-label" data-lang="en" style="display:none">I read this story</span>
         </label>
         <button class="ninos-modal-btn" id="ninosModalTts" type="button"></button>
+        <button class="ninos-modal-btn ninos-modal-ambient is-on" id="ninosModalAmbient" type="button">🔊 Sonido noche ON</button>
         <a class="ninos-modal-btn" id="ninosModalSaint" href="#"></a>
       </div>
     </div>

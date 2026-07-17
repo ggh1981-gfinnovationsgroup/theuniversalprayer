@@ -4,11 +4,16 @@
   const STAR_KEY = 'ninosStarsWeek';
   const WEEK_KEY = 'ninosStarsWeekId';
   const READ_KEY = 'ninosCuentosRead';
+  const AMBIENT_KEY = 'ninosAmbientOn';
   let lang = localStorage.getItem(LANG_KEY) || 'es';
   let cuentos = [];
   let currentCuento = null;
   let ttsSpeaking = false;
   let readFilter = 'all';
+  let ambientOn = localStorage.getItem(AMBIENT_KEY) !== '0';
+  let ambientCtx = null;
+  let ambientGain = null;
+  let ambientSource = null;
 
   const STARS = [
     { id: 'gracias', es: 'Decir «gracias, Dios» al despertar', en: 'Say "thank you, God" when you wake up' },
@@ -80,6 +85,73 @@
     if (countEl) countEl.textContent = readCuentos.size + ' / ' + cuentos.length;
   }
 
+  function updateAmbientBtn() {
+    const btn = document.getElementById('ninosModalAmbient');
+    if (!btn) return;
+    btn.classList.toggle('is-on', ambientOn);
+    btn.textContent = ambientOn
+      ? (lang === 'en' ? '🔊 Night sounds on' : '🔊 Sonido noche ON')
+      : (lang === 'en' ? '🔇 Night sounds off' : '🔇 Sonido noche OFF');
+  }
+
+  function startAmbient() {
+    if (!ambientOn || ambientCtx) return;
+    const Ctx = window.AudioContext || window.webkitAudioContext;
+    if (!Ctx) return;
+    ambientCtx = new Ctx();
+    const sr = ambientCtx.sampleRate;
+    const len = sr * 2;
+    const buf = ambientCtx.createBuffer(1, len, sr);
+    const ch = buf.getChannelData(0);
+    let last = 0;
+    for (let i = 0; i < len; i++) {
+      const w = Math.random() * 2 - 1;
+      last = (last + 0.02 * w) / 1.02;
+      ch[i] = last * 3.2;
+    }
+    ambientSource = ambientCtx.createBufferSource();
+    ambientSource.buffer = buf;
+    ambientSource.loop = true;
+    const filter = ambientCtx.createBiquadFilter();
+    filter.type = 'lowpass';
+    filter.frequency.value = 320;
+    ambientGain = ambientCtx.createGain();
+    ambientGain.gain.value = 0;
+    ambientSource.connect(filter);
+    filter.connect(ambientGain);
+    ambientGain.connect(ambientCtx.destination);
+    ambientSource.start();
+    ambientGain.gain.linearRampToValueAtTime(0.055, ambientCtx.currentTime + 2.5);
+  }
+
+  function stopAmbient() {
+    if (!ambientCtx) return;
+    const ctx = ambientCtx;
+    const gain = ambientGain;
+    const src = ambientSource;
+    ambientCtx = null;
+    ambientGain = null;
+    ambientSource = null;
+    if (gain) {
+      gain.gain.linearRampToValueAtTime(0, ctx.currentTime + 1.2);
+    }
+    setTimeout(() => {
+      try { src?.stop(); } catch (_) {}
+      ctx.close().catch(() => {});
+    }, 1300);
+  }
+
+  function toggleAmbient() {
+    ambientOn = !ambientOn;
+    localStorage.setItem(AMBIENT_KEY, ambientOn ? '1' : '0');
+    updateAmbientBtn();
+    if (ambientOn && document.getElementById('ninosModal')?.classList.contains('is-open')) {
+      startAmbient();
+    } else {
+      stopAmbient();
+    }
+  }
+
   function applyLang(l) {
     lang = l;
     localStorage.setItem(LANG_KEY, l);
@@ -94,6 +166,7 @@
     if (currentCuento) openCuento(currentCuento, false);
     updateTtsBtn();
     updateFilterLabels();
+    updateAmbientBtn();
   }
 
   function updateFilterLabels() {
@@ -209,11 +282,13 @@
       modal.classList.add('is-open');
       modal.classList.add('ninos-modal--bedtime');
       document.body.style.overflow = 'hidden';
+      if (ambientOn) startAmbient();
     }
   }
 
   function closeModal() {
     stopTts();
+    stopAmbient();
     const modal = document.getElementById('ninosModal');
     modal.classList.remove('is-open');
     modal.classList.remove('ninos-modal--bedtime');
@@ -242,7 +317,8 @@
     const voices = window.speechSynthesis.getVoices();
     const voice = voices.find(v => v.lang.startsWith(lang === 'es' ? 'es' : 'en'));
     if (voice) utt.voice = voice;
-    utt.onend = utt.onerror = () => { ttsSpeaking = false; updateTtsBtn(); };
+    utt.onend = utt.onerror = () => { ttsSpeaking = false; updateTtsBtn(); stopAmbient(); };
+    if (ambientOn) startAmbient();
     window.speechSynthesis.speak(utt);
     ttsSpeaking = true;
     updateTtsBtn();
@@ -253,8 +329,8 @@
     ttsSpeaking = false;
     updateTtsBtn();
   }
-
   document.getElementById('ninosModalClose')?.addEventListener('click', closeModal);
+  document.getElementById('ninosModalAmbient')?.addEventListener('click', toggleAmbient);
   document.getElementById('ninosModal')?.addEventListener('click', e => {
     if (e.target.id === 'ninosModal') closeModal();
   });
@@ -290,4 +366,5 @@
   if (window.speechSynthesis) window.speechSynthesis.getVoices();
   applyLang(lang);
   renderStars();
+  updateAmbientBtn();
 })();

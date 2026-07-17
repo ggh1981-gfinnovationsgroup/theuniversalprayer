@@ -60,7 +60,11 @@ def _intro_es(title: str) -> str:
         "sin hacer ruido.\n\n"
         "Fuera, el mundo respira despacio. Las estrellas no tienen prisa: "
         "brillan, brillan, como pequeñas velitas en el cielo oscuro. "
-        "Respira hondo… otra vez… Muy bien. Estás a salvo, y Dios te mira con mucho cariño."
+        "Respira hondo… otra vez… Muy bien. Estás a salvo, y Dios te mira con mucho cariño.\n\n"
+        "Este cuento es largo, a propósito — como los cuentos de antes, "
+        "que duraban hasta que los párpados pesaban y el sueño llegaba solo. "
+        "No hay prisa. Si te quedas dormido antes del final, está bien: "
+        "tu ángel escuchará el resto por ti."
     )
 
 
@@ -73,7 +77,11 @@ def _intro_en(title: str) -> str:
         "making no sound at all.\n\n"
         "Outside, the world breathes slowly. The stars are in no hurry: "
         "they shine and shine, like little candles in the dark sky. "
-        "Breathe in… and out… Good. You are safe, and God is watching you with great love."
+        "Breathe in… and out… Good. You are safe, and God is watching you with great love.\n\n"
+        "This story is long on purpose — like tales of old, "
+        "that lasted until eyelids grew heavy and sleep came on its own. "
+        "There is no hurry. If you fall asleep before the end, that is fine: "
+        "your angel will listen to the rest for you."
     )
 
 
@@ -112,7 +120,9 @@ def _outro_es(moral: str) -> str:
         "Cierra los ojos cuando quieras. Tu ángel se quedará velando. "
         "María reza por ti. Jesús te conoce por tu nombre.\n\n"
         "Buenas noches, pequeño. Buenas noches, pequeña. "
-        "Que sueñes con cosas buenas. Descansa… descansa…"
+        "Que sueñes con cosas buenas. Descansa… descansa…\n\n"
+        "Shhh… shhh… todo queda en calma. Mañana será un día nuevo. "
+        "Por ahora, solo sueña. Solo descansa."
     )
 
 
@@ -127,8 +137,32 @@ def _outro_en(moral: str) -> str:
         "Close your eyes whenever you wish. Your angel will stay on guard. "
         "Mary prays for you. Jesus knows you by name.\n\n"
         "Good night, little one. Good night. "
-        "May you dream of good things. Rest… rest…"
+        "May you dream of good things. Rest… rest…\n\n"
+        "Shhh… shhh… all is calm. Tomorrow will be a new day. "
+        "For now, only dream. Only rest."
     )
+
+
+def _whisper_es(key: str) -> str:
+    whispers = [
+        "Shhh… escucha el silencio. Es un regalo.",
+        "Tu respiración va y viene, suave, como olas chiquitas.",
+        "Nada te apura. El cuento camina contigo.",
+        "Si tus ojos se cierran, deja que se cierren.",
+        "Jesús también durmió cuando era niño, en brazos de María.",
+    ]
+    return _pick(key, whispers)
+
+
+def _whisper_en(key: str) -> str:
+    whispers = [
+        "Shhh… listen to the silence. It is a gift.",
+        "Your breath goes in and out, soft, like tiny waves.",
+        "Nothing rushes you. The story walks with you.",
+        "If your eyes close, let them close.",
+        "Jesus slept too when He was a child, in Mary's arms.",
+    ]
+    return _pick(key, whispers)
 
 
 def expand_section_es(section: str, story_id: str, idx: int) -> list[str]:
@@ -141,6 +175,7 @@ def expand_section_es(section: str, story_id: str, idx: int) -> list[str]:
     for j, sent in enumerate(sents):
         blocks.append(sent)
         blocks.append(_elaborate_es(sent, f"{story_id}-{idx}-{j}"))
+        blocks.append(_elaborate_es(sent, f"{story_id}-{idx}-{j}-b"))
         blocks.append(_pick(f"{story_id}-detail-{idx}-{j}", [
             "Imagina la escena: luces tenues, pasos suaves, corazones que laten despacio.",
             "Nadie corre. Nadie grita. Solo el amor, moviéndose en silencio.",
@@ -165,6 +200,7 @@ def expand_section_en(section: str, story_id: str, idx: int) -> list[str]:
     for j, sent in enumerate(sents):
         blocks.append(sent)
         blocks.append(_elaborate_en(sent, f"{story_id}-{idx}-{j}"))
+        blocks.append(_elaborate_en(sent, f"{story_id}-{idx}-{j}-b"))
         blocks.append(_pick(f"{story_id}-detail-{idx}-{j}", [
             "Picture the scene: dim lights, soft steps, hearts beating slowly.",
             "No one runs. No one shouts. Only love, moving in silence.",
@@ -201,6 +237,7 @@ def expand_bedtime(
             for block in expand_section_es(secs_es[i], story_id, i):
                 parts_es.append(block)
             parts_es.append(_pause_es(f"{story_id}-p-{i}"))
+            parts_es.append(_whisper_es(f"{story_id}-w-{i}"))
             if i == n // 2:
                 parts_es.append(
                     "A mitad del cuento, todo queda muy quieto. "
@@ -211,6 +248,7 @@ def expand_bedtime(
             for block in expand_section_en(secs_en[i], story_id, i):
                 parts_en.append(block)
             parts_en.append(_pause_en(f"{story_id}-p-{i}"))
+            parts_en.append(_whisper_en(f"{story_id}-w-{i}"))
             if i == n // 2:
                 parts_en.append(
                     "At the middle of the story, everything grows very still. "
@@ -224,5 +262,5 @@ def expand_bedtime(
     full_es = "\n\n".join(parts_es)
     full_en = "\n\n".join(parts_en)
     words = len(full_es.split())
-    read_min = max(6, min(12, round(words / 90)))
+    read_min = max(10, min(15, round(words / 85)))
     return full_es, full_en, read_min
