@@ -693,6 +693,13 @@ for c in CUENTOS:
         c["id"] = "sanmartincapa"
         c["saintId"] = "sanmartin"
 
+# Merge auto-generated cuentos for intercessors missing from CUENTOS
+EXTRA_PATH = ROOT / "scripts" / "ninos_extra_cuentos_data.json"
+if EXTRA_PATH.exists():
+    extra = json.loads(EXTRA_PATH.read_text(encoding="utf-8"))
+    CUENTOS.extend(extra)
+    print(f"Merged {len(extra)} extra cuentos from {EXTRA_PATH.name}")
+
 # Deduplicate by id keeping first
 seen = set()
 unique = []

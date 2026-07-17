@@ -26,7 +26,6 @@ const i18n = {
     tab_history:        'History',
     tab_miracles:       'Miracles',
     tab_novena:         'Novena',
-    tab_story:          '📖 Story',
     tab_chaplet:        'Chaplet',
     tab_litany:         'Litany',
     tab_consecration:   'Consecration',
@@ -59,7 +58,6 @@ const i18n = {
     tab_history:        'Historia',
     tab_miracles:       'Milagros',
     tab_novena:         'Novena',
-    tab_story:          '📖 Cuento',
     tab_chaplet:        'Coronilla',
     tab_litany:         'Letanías',
     tab_consecration:   'Consagración',
@@ -1482,37 +1480,6 @@ function renderIntercessorContent(data, meta) {
     }
   }
   renderNovenaSupportPanel(data);
-
-  // Story tab (TTS) — history + miracles
-  const storyEl = document.getElementById('storyText');
-  if (storyEl) {
-    const miraclesAvail = data.miracles && data.miracles.available && data.miracles[lang];
-    const sep = lang === 'es'
-      ? '<h3 class="story-section-title">✨ Milagros y Anécdotas</h3>'
-      : '<h3 class="story-section-title">✨ Miracles & Anecdotes</h3>';
-    storyEl.innerHTML = paragraphify(data.history[lang])
-      + (miraclesAvail ? sep + miraclify(miraclesAvail) : '');
-  }
-
-  // Wire TTS buttons (only once)
-  const btnPlay = document.getElementById('ttsPlay');
-  if (btnPlay && !btnPlay.dataset.wired) {
-    btnPlay.dataset.wired = '1';
-    btnPlay.addEventListener('click', () => {
-      const mirac = data.miracles && data.miracles.available && data.miracles[currentLang];
-      const text = data.history[currentLang] + (mirac ? '\n\n' + mirac : '');
-      ttsSpeak(text, currentLang);
-    });
-    document.getElementById('ttsPause')?.addEventListener('click', ttsPauseToggle);
-    document.getElementById('ttsStop')?.addEventListener('click', ttsStop);
-  }
-  if (!window.speechSynthesis) {
-    if (btnPlay) btnPlay.style.display = 'none';
-    const noSup = document.getElementById('ttsNoSupport');
-    if (noSup) noSup.style.display = '';
-  }
-  if (btnPlay) btnPlay.textContent = lang === 'es' ? '▶ Leer en voz alta' : '▶ Read aloud';
-  _ttsUpdateButtons();
 }
 
 function setIntercessorStructuredData(data, pageUrl, imgUrl, desc, lang) {
@@ -2822,13 +2789,9 @@ function initTabs(meta) {
   if (consecrationBtn && intercessorData && intercessorData.consecration && intercessorData.consecration.available)
     consecrationBtn.classList.add('visible');
 
-  const storyBtn = document.querySelector('.story-tab');
-  if (storyBtn) storyBtn.classList.add('visible');
-
   document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const target = btn.getAttribute('data-tab');
-      if (target !== 'story') ttsStop();
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
       document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
       btn.classList.add('active');

@@ -26,18 +26,64 @@
     "en": "Each day of the novena: pray 1 Our Father, 1 Hail Mary, and 1 Glory Be, then meditate on the day theme and present your intention."
   },
   "novena": [
-    { "day": 1, "es": "Día 1 — Conversión\nPide la gracia de una conversión real y constante.", "en": "Day 1 — Conversion\nAsk for the grace of real and constant conversion." },
-    { "day": 2, "es": "Día 2 — Desapego\nEntrega al Señor lo que te impide seguirlo con libertad.", "en": "Day 2 — Detachment\nSurrender to the Lord what keeps you from following Him freely." },
-    { "day": 3, "es": "Día 3 — Humildad\nPide un corazón humilde para obedecer la voluntad de Dios.", "en": "Day 3 — Humility\nAsk for a humble heart to obey God's will." },
-    { "day": 4, "es": "Día 4 — Penitencia\nOfrece un sacrificio concreto por tus pecados y los del mundo.", "en": "Day 4 — Penance\nOffer a concrete sacrifice for your sins and those of the world." },
-    { "day": 5, "es": "Día 5 — Oración\nRenueva tu fidelidad diaria a la oración en silencio.", "en": "Day 5 — Prayer\nRenew your daily fidelity to silent prayer." },
-    { "day": 6, "es": "Día 6 — Caridad\nPractica una obra de misericordia de forma discreta.", "en": "Day 6 — Charity\nPractice a work of mercy quietly and concretely." },
-    { "day": 7, "es": "Día 7 — Perseverancia\nPide fortaleza para no volver atrás en el camino de Dios.", "en": "Day 7 — Perseverance\nAsk for strength not to turn back on God's path." },
-    { "day": 8, "es": "Día 8 — Vida monástica interior\nBusca momentos de desierto en medio de tus tareas.", "en": "Day 8 — Interior monastic life\nSeek desert moments amid your daily duties." },
-    { "day": 9, "es": "Día 9 — Entrega total\nPresenta tu intención final y conságrala al Señor.", "en": "Day 9 — Total surrender\nPresent your final intention and entrust it to the Lord." }
+    {
+      "day": 1,
+      "es": "Día 1 — Conversión\nPide la gracia de una conversión real y constante.",
+      "en": "Day 1 — Conversion\nAsk for the grace of real and constant conversion."
+    },
+    {
+      "day": 2,
+      "es": "Día 2 — Desapego\nEntrega al Señor lo que te impide seguirlo con libertad.",
+      "en": "Day 2 — Detachment\nSurrender to the Lord what keeps you from following Him freely."
+    },
+    {
+      "day": 3,
+      "es": "Día 3 — Humildad\nPide un corazón humilde para obedecer la voluntad de Dios.",
+      "en": "Day 3 — Humility\nAsk for a humble heart to obey God's will."
+    },
+    {
+      "day": 4,
+      "es": "Día 4 — Penitencia\nOfrece un sacrificio concreto por tus pecados y los del mundo.",
+      "en": "Day 4 — Penance\nOffer a concrete sacrifice for your sins and those of the world."
+    },
+    {
+      "day": 5,
+      "es": "Día 5 — Oración\nRenueva tu fidelidad diaria a la oración en silencio.",
+      "en": "Day 5 — Prayer\nRenew your daily fidelity to silent prayer."
+    },
+    {
+      "day": 6,
+      "es": "Día 6 — Caridad\nPractica una obra de misericordia de forma discreta.",
+      "en": "Day 6 — Charity\nPractice a work of mercy quietly and concretely."
+    },
+    {
+      "day": 7,
+      "es": "Día 7 — Perseverancia\nPide fortaleza para no volver atrás en el camino de Dios.",
+      "en": "Day 7 — Perseverance\nAsk for strength not to turn back on God's path."
+    },
+    {
+      "day": 8,
+      "es": "Día 8 — Vida monástica interior\nBusca momentos de desierto en medio de tus tareas.",
+      "en": "Day 8 — Interior monastic life\nSeek desert moments amid your daily duties."
+    },
+    {
+      "day": 9,
+      "es": "Día 9 — Entrega total\nPresenta tu intención final y conságrala al Señor.",
+      "en": "Day 9 — Total surrender\nPresent your final intention and entrust it to the Lord."
+    }
   ],
-  "chaplet": { "available": false },
-  "litany": { "available": false },
-  "consecration": { "available": false },
-  "miracles": { "available": false }
+  "chaplet": {
+    "available": false
+  },
+  "litany": {
+    "available": false
+  },
+  "consecration": {
+    "available": false
+  },
+  "miracles": {
+    "available": true,
+    "es": "1. LA CONVERSIÓN DEL GUERRERO\nEl mayor milagro atribuido a la gracia en la vida de San Guillermo de Gellone fue su propia conversión: un noble guerrero, acostumbrado al poder y a la espada, renunció a la gloria del mundo para fundar el monasterio de Gellone. La Iglesia ve en este giro radical un signo de que la misericordia puede transformar cualquier corazón.\n\n2. EL MONASTERIO EN LA RUTA DE SANTIAGO\nEl monasterio que fundó en Saint-Guilhem-le-Désert se convirtió en un importante paso para peregrinos que caminaban hacia Compostela. Durante siglos, caminantes enfermos, pobres y cansados encontraron allí refugio, oración y auxilio. Muchos han atribuido a su intercesión favores recibidos en el camino.\n\n3. GRACIAS ESPIRITUALES REPORTADAS\nEn la devoción local se han recordado reconciliaciones familiares, fortaleza en la enfermedad y regreso a la práctica de la fe. Estos testimonios, recogidos con prudencia por la tradición cristiana, muestran cómo un santo convertido sigue guiando a otros hacia la paz interior.",
+    "en": "1. THE WARRIOR'S CONVERSION\nThe greatest miracle attributed to grace in the life of Saint William of Gellone was his own conversion: a noble warrior, used to power and the sword, renounced worldly glory to found the monastery of Gellone. The Church sees in this radical turn a sign that mercy can transform any heart.\n\n2. THE MONASTERY ON THE PILGRIM WAY\nThe monastery he founded at Saint-Guilhem-le-Désert became an important stop for pilgrims walking toward Compostela. For centuries, sick, poor, and weary travelers found refuge, prayer, and help there. Many have attributed favors received on the road to his intercession.\n\n3. REPORTED SPIRITUAL GRACES\nLocal devotion has remembered family reconciliations, strength in illness, and return to the practice of faith. These testimonies, prudently gathered by Christian tradition, show how a converted saint still guides others toward inner peace."
+  }
 }

@@ -26,18 +26,64 @@
     "en": "Each day of the novena: pray 1 Our Father, 1 Hail Mary, and 1 Glory Be, and ask for the grace of concrete conversion."
   },
   "novena": [
-    { "day": 1, "es": "Día 1 — Reconocer el pecado\nPide luz para ver tu vida con verdad.", "en": "Day 1 — Recognizing sin\nAsk for light to see your life in truth." },
-    { "day": 2, "es": "Día 2 — Arrepentimiento\nPide dolor de corazón por haber ofendido a Dios.", "en": "Day 2 — Repentance\nAsk for heartfelt sorrow for having offended God." },
-    { "day": 3, "es": "Día 3 — Reparación\nPropón un acto concreto de reparación.", "en": "Day 3 — Reparation\nCommit to one concrete act of reparation." },
-    { "day": 4, "es": "Día 4 — Humildad\nRenuncia al orgullo y busca la voluntad de Dios.", "en": "Day 4 — Humility\nRenounce pride and seek God's will." },
-    { "day": 5, "es": "Día 5 — Misericordia\nConfía en que Dios todavía puede rehacer tu historia.", "en": "Day 5 — Mercy\nTrust that God can still remake your story." },
-    { "day": 6, "es": "Día 6 — Perseverancia\nPide constancia en el bien y en la oración.", "en": "Day 6 — Perseverance\nAsk for constancy in goodness and prayer." },
-    { "day": 7, "es": "Día 7 — Justicia\nRevisa lo que debes devolver o corregir.", "en": "Day 7 — Justice\nReview what you need to restore or correct." },
-    { "day": 8, "es": "Día 8 — Paz interior\nEntrégale al Señor la culpa y recibe su perdón.", "en": "Day 8 — Interior peace\nSurrender guilt to the Lord and receive His forgiveness." },
-    { "day": 9, "es": "Día 9 — Vida nueva\nConsagra al Señor una decisión de cambio permanente.", "en": "Day 9 — New life\nConsecrate to the Lord one lasting decision of change." }
+    {
+      "day": 1,
+      "es": "Día 1 — Reconocer el pecado\nPide luz para ver tu vida con verdad.",
+      "en": "Day 1 — Recognizing sin\nAsk for light to see your life in truth."
+    },
+    {
+      "day": 2,
+      "es": "Día 2 — Arrepentimiento\nPide dolor de corazón por haber ofendido a Dios.",
+      "en": "Day 2 — Repentance\nAsk for heartfelt sorrow for having offended God."
+    },
+    {
+      "day": 3,
+      "es": "Día 3 — Reparación\nPropón un acto concreto de reparación.",
+      "en": "Day 3 — Reparation\nCommit to one concrete act of reparation."
+    },
+    {
+      "day": 4,
+      "es": "Día 4 — Humildad\nRenuncia al orgullo y busca la voluntad de Dios.",
+      "en": "Day 4 — Humility\nRenounce pride and seek God's will."
+    },
+    {
+      "day": 5,
+      "es": "Día 5 — Misericordia\nConfía en que Dios todavía puede rehacer tu historia.",
+      "en": "Day 5 — Mercy\nTrust that God can still remake your story."
+    },
+    {
+      "day": 6,
+      "es": "Día 6 — Perseverancia\nPide constancia en el bien y en la oración.",
+      "en": "Day 6 — Perseverance\nAsk for constancy in goodness and prayer."
+    },
+    {
+      "day": 7,
+      "es": "Día 7 — Justicia\nRevisa lo que debes devolver o corregir.",
+      "en": "Day 7 — Justice\nReview what you need to restore or correct."
+    },
+    {
+      "day": 8,
+      "es": "Día 8 — Paz interior\nEntrégale al Señor la culpa y recibe su perdón.",
+      "en": "Day 8 — Interior peace\nSurrender guilt to the Lord and receive His forgiveness."
+    },
+    {
+      "day": 9,
+      "es": "Día 9 — Vida nueva\nConsagra al Señor una decisión de cambio permanente.",
+      "en": "Day 9 — New life\nConsecrate to the Lord one lasting decision of change."
+    }
   ],
-  "chaplet": { "available": false },
-  "litany": { "available": false },
-  "consecration": { "available": false },
-  "miracles": { "available": false }
+  "chaplet": {
+    "available": false
+  },
+  "litany": {
+    "available": false
+  },
+  "consecration": {
+    "available": false
+  },
+  "miracles": {
+    "available": true,
+    "es": "1. LA CONVERSIÓN TARDÍA\nLa tradición devocional presenta a San Guillermo de Aquitania como noble poderoso que, tras años de vida desordenada, se convirtió con sinceridad al final de su camino. Este giro es leído como milagro de misericordia: prueba de que nadie está lejos de Dios mientras aún respira.\n\n2. REPARACIÓN Y ESPERANZA\nSegún los relatos piadosos, buscó reparar injusticias cometidas y vivir en penitencia. Muchos pecadores posteriores han tomado su ejemplo como signo de que la confesión y la reparación abren un futuro nuevo, aun después de graves errores.\n\n3. INTERCESIÓN PARA CONVERTIDOS\nEn la oración popular se le invoca especialmente por quienes creen haber llegado demasiado tarde a Dios. Se han relatado reconciliaciones, paz interior y regreso al sacramento de la reconciliación gracias a su intercesión.",
+    "en": "1. LATE CONVERSION\nDevotional tradition presents Saint William of Aquitaine as a powerful noble who, after years of disordered life, sincerely converted near the end of his path. This turn is read as a miracle of mercy: proof that no one is far from God while still breathing.\n\n2. REPARATION AND HOPE\nAccording to pious accounts, he sought to repair injustices committed and live in penance. Many later sinners have taken his example as a sign that confession and reparation open a new future even after grave errors.\n\n3. INTERCESSION FOR THOSE CONVERTING\nPopular prayer invokes him especially for those who think they have come too late to God. Reconciliations, interior peace, and return to the sacrament of reconciliation have been reported through his intercession."
+  }
 }

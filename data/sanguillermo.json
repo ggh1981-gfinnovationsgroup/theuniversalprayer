@@ -1,4 +1,4 @@
-﻿{
+{
   "id": "sanguillermo",
   "name": {
     "es": "San Guillermo de Vercelli",
@@ -81,11 +81,13 @@
     "en": "Litany of Saint William of Vercelli\n\nLord, have mercy.\nChrist, have mercy.\nLord, have mercy.\n\nSaint William, penitent pilgrim, pray for us.\nSaint William, hermit of Monte Vergine, pray for us.\nSaint William, founder and spiritual guide, pray for us.\nSaint William, friend of God's silence, pray for us.\n\nLamb of God, who takes away the sins of the world, spare us, O Lord.\nLamb of God, who takes away the sins of the world, graciously hear us, O Lord.\nLamb of God, who takes away the sins of the world, have mercy on us.\n\nAmen."
   },
   "consecration": {
-    "available": true,
+    "available": false,
     "es": "Consagración a San Guillermo de Vercelli\n\nSan Guillermo, hoy me pongo bajo tu intercesión.\nEnséñame a vivir con sobriedad, oración y fidelidad cotidiana.\nQue en el silencio encuentre la voz de Dios y en el servicio encuentre su voluntad.\nAmén.",
     "en": "Consecration to Saint William of Vercelli\n\nSaint William, today I place myself under your intercession.\nTeach me to live in sobriety, prayer, and daily fidelity.\nMay I find God's voice in silence and His will in service.\nAmen."
   },
   "miracles": {
-    "available": false
+    "available": true,
+    "es": "1. LA FUNDACIÓN DEL MONTE VERGINE\nLa tradición cuenta que San Guillermo, buscando un lugar de retiro, subió a la montaña llamada hoy Monte Vergine. Allí encontró una imagen de la Virgen y, según el relato piadoso, la Madre de Dios le indicó dónde edificar su ermita. Desde entonces, ese santuario se convirtió en uno de los centros marianos más antiguos del sur de Italia.\n\n2. LA FUENTE MILAGROSA\nLos peregrinos han recordado durante siglos una fuente cercana al santuario, vinculada a la intercesión de San Guillermo y de la Virgen del Monte Vergine. Muchos enfermos acudían a beber de esa agua mientras pedían sanación y conversión. La Iglesia no siempre promueve estos signos como prodigios jurados, pero reconoce el fruto espiritual de la peregrinación.\n\n3. INTERCESIÓN EN LA VIDA DE LOS FIELES\nGeneraciones de monjes, familias y caminantes han experimentado consuelo, reconciliación y fortaleza en la oración ante la tumba del santo. Su ejemplo de silencio y penitencia sigue atrayendo a quienes buscan reordenar la vida interior.",
+    "en": "1. THE FOUNDING OF MONTE VERGINE\nTradition holds that Saint William, seeking a place of retreat, climbed the mountain now called Monte Vergine. There he found an image of the Virgin and, according to pious account, the Mother of God showed him where to build his hermitage. Since then, that shrine has become one of the oldest Marian centers in southern Italy.\n\n2. THE MIRACULOUS SPRING\nFor centuries pilgrims have remembered a spring near the shrine linked to the intercession of Saint William and Our Lady of Monte Vergine. Many sick people came to drink that water while asking for healing and conversion. The Church does not always promote such signs as juridically proven miracles, but recognizes the spiritual fruit of pilgrimage.\n\n3. INTERCESSION IN THE LIVES OF THE FAITHFUL\nGenerations of monks, families, and travelers have experienced consolation, reconciliation, and strength in prayer at the saint's tomb. His example of silence and penance still draws those who seek to reorder their inner life."
   }
 }

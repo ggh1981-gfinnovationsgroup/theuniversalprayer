@@ -31,22 +31,66 @@
     "en": "Each day: 1 Our Father, 1 Hail Mary, 1 Glory Be. Read the daily meditation and offer one concrete act for a young person."
   },
   "novena": [
-    { "day": 1, "es": "DIA 1 - Por los jovenes sin rumbo.\nSan Juan Bosco, guia a los que viven sin sentido y sin esperanza.", "en": "DAY 1 - For youth without direction.\nSaint John Bosco, guide those who live without meaning and hope." },
-    { "day": 2, "es": "DIA 2 - Por los padres y madres.\nDales sabiduria, paciencia y ternura para educar.", "en": "DAY 2 - For fathers and mothers.\nGrant them wisdom, patience, and tenderness in raising children." },
-    { "day": 3, "es": "DIA 3 - Por educadores y catequistas.\nQue formen con verdad y caridad.", "en": "DAY 3 - For teachers and catechists.\nMay they form with truth and charity." },
-    { "day": 4, "es": "DIA 4 - Por jovenes heridos por adicciones.\nQue encuentren ayuda y libertad.", "en": "DAY 4 - For youth wounded by addictions.\nMay they find help and freedom." },
-    { "day": 5, "es": "DIA 5 - Por pureza y amistad sana.\nQue aprendan a amar con dignidad.", "en": "DAY 5 - For purity and healthy friendships.\nMay they learn to love with dignity." },
-    { "day": 6, "es": "DIA 6 - Por vocaciones sacerdotales y religiosas.\nQue muchos respondan con generosidad.", "en": "DAY 6 - For priestly and religious vocations.\nMay many respond generously." },
-    { "day": 7, "es": "DIA 7 - Por jovenes alejados de la Iglesia.\nQue vuelvan a la Confesion y la Eucaristia.", "en": "DAY 7 - For youth far from the Church.\nMay they return to Confession and the Eucharist." },
-    { "day": 8, "es": "DIA 8 - Por los que sufren ansiedad y soledad.\nQue encuentren comunidad y paz.", "en": "DAY 8 - For those suffering anxiety and loneliness.\nMay they find community and peace." },
-    { "day": 9, "es": "DIA 9 - Por santidad juvenil.\nSan Juan Bosco, ensenanos a ganar almas para Cristo.", "en": "DAY 9 - For youthful holiness.\nSaint John Bosco, teach us to win souls for Christ." }
+    {
+      "day": 1,
+      "es": "DIA 1 - Por los jovenes sin rumbo.\nSan Juan Bosco, guia a los que viven sin sentido y sin esperanza.",
+      "en": "DAY 1 - For youth without direction.\nSaint John Bosco, guide those who live without meaning and hope."
+    },
+    {
+      "day": 2,
+      "es": "DIA 2 - Por los padres y madres.\nDales sabiduria, paciencia y ternura para educar.",
+      "en": "DAY 2 - For fathers and mothers.\nGrant them wisdom, patience, and tenderness in raising children."
+    },
+    {
+      "day": 3,
+      "es": "DIA 3 - Por educadores y catequistas.\nQue formen con verdad y caridad.",
+      "en": "DAY 3 - For teachers and catechists.\nMay they form with truth and charity."
+    },
+    {
+      "day": 4,
+      "es": "DIA 4 - Por jovenes heridos por adicciones.\nQue encuentren ayuda y libertad.",
+      "en": "DAY 4 - For youth wounded by addictions.\nMay they find help and freedom."
+    },
+    {
+      "day": 5,
+      "es": "DIA 5 - Por pureza y amistad sana.\nQue aprendan a amar con dignidad.",
+      "en": "DAY 5 - For purity and healthy friendships.\nMay they learn to love with dignity."
+    },
+    {
+      "day": 6,
+      "es": "DIA 6 - Por vocaciones sacerdotales y religiosas.\nQue muchos respondan con generosidad.",
+      "en": "DAY 6 - For priestly and religious vocations.\nMay many respond generously."
+    },
+    {
+      "day": 7,
+      "es": "DIA 7 - Por jovenes alejados de la Iglesia.\nQue vuelvan a la Confesion y la Eucaristia.",
+      "en": "DAY 7 - For youth far from the Church.\nMay they return to Confession and the Eucharist."
+    },
+    {
+      "day": 8,
+      "es": "DIA 8 - Por los que sufren ansiedad y soledad.\nQue encuentren comunidad y paz.",
+      "en": "DAY 8 - For those suffering anxiety and loneliness.\nMay they find community and peace."
+    },
+    {
+      "day": 9,
+      "es": "DIA 9 - Por santidad juvenil.\nSan Juan Bosco, ensenanos a ganar almas para Cristo.",
+      "en": "DAY 9 - For youthful holiness.\nSaint John Bosco, teach us to win souls for Christ."
+    }
   ],
-  "chaplet": { "available": false },
+  "chaplet": {
+    "available": false
+  },
   "litany": {
     "available": true,
     "es": "San Juan Bosco, ruega por nosotros.\nPadre y maestro de la juventud, ruega por nosotros.\nAmigo de los ninos pobres, ruega por nosotros.\nFormador de vocaciones, ruega por nosotros.\nApostol de la alegria cristiana, ruega por nosotros.",
     "en": "Saint John Bosco, pray for us.\nFather and teacher of youth, pray for us.\nFriend of poor children, pray for us.\nFormer of vocations, pray for us.\nApostle of Christian joy, pray for us."
   },
-  "consecration": { "available": false },
-  "miracles": { "available": false }
+  "consecration": {
+    "available": false
+  },
+  "miracles": {
+    "available": true,
+    "es": "1. INTERCESIÓN EN LA VIDA DE LOS FIELES\nA lo largo de los siglos, muchos creyentes han acudido a San Juan Bosco en momentos de prueba. En oración silenciosa, en novenas y en peregrinaciones, han experimentado consuelo, conversión y auxilio inesperado. La Iglesia recuerda que la santidad no siempre se manifiesta con prodigios espectaculares, sino con obras de amor fieles al Evangelio.\n\n2. TESTIMONIOS DE GRACIA Y CONVERSIÓN\nEn distintas épocas y lugares, se han relatado favores espirituales: reconciliaciones familiares, fortaleza en la enfermedad, claridad en decisiones difíciles y regreso a la fe. Estos frutos, aunque humildes, son signos de que Dios escucha la oración de quienes confían en sus santos.\n\n3. UN MODELO PARA HOY\nSan Juan Bosco nos enseña que la vida cristiana se construye con pasos pequeños y fieles. Su ejemplo invita a los niños y a los adultos a imitar una virtud concreta cada día, confiando en que el Señor acompaña a quienes le buscan con corazón sincero.",
+    "en": "1. INTERCESSION IN THE LIVES OF THE FAITHFUL\nThrough the centuries, many believers have turned to Saint John Bosco in times of trial. In silent prayer, novenas, and pilgrimages, they have experienced consolation, conversion, and unexpected help. The Church recalls that holiness is not always shown through spectacular wonders, but through works of love faithful to the Gospel.\n\n2. TESTIMONIES OF GRACE AND CONVERSION\nIn different times and places, spiritual favors have been reported: family reconciliations, strength in illness, clarity in hard decisions, and return to faith. These humble fruits are signs that God hears the prayer of those who trust in his saints.\n\n3. A MODEL FOR TODAY\nSaint John Bosco teaches that the Christian life is built through small, faithful steps. Their example invites children and adults to imitate one concrete virtue each day, trusting that the Lord walks with those who seek him sincerely."
+  }
 }

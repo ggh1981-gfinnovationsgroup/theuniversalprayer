@@ -717,8 +717,6 @@ body {
   color: var(--gold);
   border-bottom-color: var(--gold);
 }
-.tab-btn.story-tab { display: none; }
-.tab-btn.story-tab.visible { display: block; }
 .tab-btn.chaplet-tab { display: none; }
 .tab-btn.chaplet-tab.visible { display: block; }
 .tab-btn.litany-tab { display: none; }
