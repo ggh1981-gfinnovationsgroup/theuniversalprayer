@@ -85,24 +85,51 @@
       line-height: 1.85; white-space: pre-line; margin: 0;
     }
     .ninos-cuentos-sub { font-family: var(--font-sans); font-size: 0.85rem; color: rgba(255,255,255,0.5); margin: 0; line-height: 1.5; }
+    .ninos-cuentos-head { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1rem; }
+    .ninos-read-count {
+      font-family: var(--font-sans); font-size: 0.85rem; color: #b8e8c8;
+      background: rgba(100,200,140,0.1); border: 1px solid rgba(100,200,140,0.3); border-radius: 20px; padding: 0.35em 0.85em;
+    }
+    .ninos-read-filters { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+    .ninos-read-filter {
+      font-family: var(--font-sans); font-size: 0.72rem; padding: 0.35em 0.75em; border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.04); color: rgba(255,255,255,0.65);
+      cursor: pointer; transition: background 0.2s, border-color 0.2s, color 0.2s;
+    }
+    .ninos-read-filter.is-active { border-color: rgba(158,200,255,0.45); background: rgba(158,200,255,0.12); color: #b8d8ff; }
     .ninos-cuentos-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
     @media (max-width: 520px) { .ninos-cuentos-grid { grid-template-columns: 1fr; } }
     .ninos-cuento-card {
       text-align: left; padding: 1rem 1.05rem; border-radius: 14px;
       border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.03);
-      cursor: pointer; transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s, opacity 0.2s;
       font-family: inherit; color: inherit; width: 100%;
     }
+    .ninos-cuento-card.is-read { opacity: 0.72; border-color: rgba(100,200,140,0.25); background: rgba(100,200,140,0.04); }
     .ninos-cuento-card:hover {
       transform: translateY(-3px); border-color: rgba(201,168,76,0.35); box-shadow: 0 8px 24px rgba(0,0,0,0.25);
     }
-    .ninos-cuento-top { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 0.55rem; }
+    .ninos-cuento-top { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 0.55rem; cursor: pointer; }
     .ninos-cuento-icon {
       width: 48px; height: 48px; border-radius: 50%; background: rgba(0,0,0,0.25); padding: 4px; flex-shrink: 0;
     }
     .ninos-cuento-title { font-family: var(--font-serif); font-size: 1rem; color: var(--gold-light); margin: 0; line-height: 1.25; }
-    .ninos-cuento-hook { font-family: var(--font-sans); font-size: 0.8rem; color: rgba(255,255,255,0.6); margin: 0; line-height: 1.45; }
-    .ninos-cuento-open { display: inline-block; margin-top: 0.55rem; font-size: 0.72rem; color: #9ec8ff; }
+    .ninos-cuento-hook { font-family: var(--font-sans); font-size: 0.8rem; color: rgba(255,255,255,0.6); margin: 0; line-height: 1.45; cursor: pointer; }
+    .ninos-cuento-foot { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-top: 0.65rem; flex-wrap: wrap; }
+    .ninos-read-check { display: flex; align-items: center; gap: 0.4rem; cursor: pointer; flex-shrink: 0; }
+    .ninos-read-check input { position: absolute; opacity: 0; width: 0; height: 0; }
+    .ninos-read-box {
+      display: block; width: 22px; height: 22px; font-size: 0.75rem; line-height: 22px; text-align: center;
+      border-radius: 6px; border: 2px solid rgba(100,200,140,0.4); background: transparent; transition: all 0.2s; color: transparent;
+    }
+    .ninos-read-check input:checked + .ninos-read-box { background: rgba(100,200,140,0.2); border-color: #7ed4a8; color: #7ed4a8; }
+    .ninos-read-label { font-family: var(--font-sans); font-size: 0.72rem; color: rgba(255,255,255,0.55); }
+    .ninos-cuento-card.is-read .ninos-read-label { color: rgba(126,212,168,0.85); }
+    .ninos-cuento-open {
+      font-family: var(--font-sans); font-size: 0.72rem; color: #9ec8ff; background: none; border: none;
+      padding: 0.2em 0; cursor: pointer;
+    }
+    .ninos-cuento-open:hover { text-decoration: underline; }
     .ninos-stars-head { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1rem; }
     .ninos-stars-count {
       font-family: var(--font-sans); font-size: 0.85rem; color: #ffe98a;
@@ -164,7 +191,9 @@
       border-radius: 10px; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.88rem;
     }
     .ninos-modal-act strong { color: var(--gold); }
-    .ninos-modal-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0 1.35rem 1.35rem; }
+    .ninos-modal-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0 1.35rem 1.35rem; align-items: center; }
+    .ninos-modal-read { margin-right: auto; }
+    .ninos-modal-read .ninos-read-label { font-size: 0.8rem; }
     .ninos-modal-btn {
       font-family: var(--font-sans); font-size: 0.8rem; padding: 0.45em 1em; border-radius: 20px;
       border: 1px solid rgba(201,168,76,0.35); background: rgba(201,168,76,0.08); color: var(--gold-light);
@@ -297,8 +326,15 @@ Amen.</p>
     <section class="ninos-section" id="ninosCuentos">
       <h2 class="ninos-section-title" data-lang="es">📖 Cuentos de santos amigos</h2>
       <h2 class="ninos-section-title" data-lang="en" style="display:none">📖 Stories of saint friends</h2>
-      <p class="ninos-cuentos-sub" style="margin-bottom:1rem" data-lang="es">Toca un cuento para leerlo — o escucharlo en voz alta.</p>
-      <p class="ninos-cuentos-sub" style="margin-bottom:1rem" data-lang="en" style="display:none">Tap a story to read it — or hear it read aloud.</p>
+      <div class="ninos-cuentos-head">
+        <p class="ninos-cuentos-sub" data-lang="es">Toca un cuento para leerlo — marca ✓ cuando lo termines.</p>
+        <p class="ninos-cuentos-sub" data-lang="en" style="display:none">Tap a story to read it — check ✓ when you finish.</p>
+        <span class="ninos-read-count" id="ninosReadCount">0 / 66</span>
+      </div>
+      <div class="ninos-read-filters" style="margin-bottom:1rem">
+        <button type="button" class="ninos-read-filter is-active" data-read-filter="all">Todos</button>
+        <button type="button" class="ninos-read-filter" data-read-filter="unread">Sin leer</button>
+      </div>
       <div class="ninos-cuentos-grid" id="ninosCuentosGrid"></div>
     </section>
 
@@ -334,6 +370,12 @@ Amen.</p>
       </div>
       <div class="ninos-modal-body" id="ninosModalBody"></div>
       <div class="ninos-modal-actions">
+        <label class="ninos-read-check ninos-modal-read">
+          <input type="checkbox" id="ninosModalRead" />
+          <span class="ninos-read-box">✓</span>
+          <span class="ninos-read-label" data-lang="es">Ya leí este cuento</span>
+          <span class="ninos-read-label" data-lang="en" style="display:none">I read this story</span>
+        </label>
         <button class="ninos-modal-btn" id="ninosModalTts" type="button"></button>
         <a class="ninos-modal-btn" id="ninosModalSaint" href="#"></a>
       </div>

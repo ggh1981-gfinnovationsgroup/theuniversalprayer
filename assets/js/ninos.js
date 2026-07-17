@@ -3,10 +3,12 @@
   const LANG_KEY = 'tup_lang';
   const STAR_KEY = 'ninosStarsWeek';
   const WEEK_KEY = 'ninosStarsWeekId';
+  const READ_KEY = 'ninosCuentosRead';
   let lang = localStorage.getItem(LANG_KEY) || 'es';
   let cuentos = [];
   let currentCuento = null;
   let ttsSpeaking = false;
+  let readFilter = 'all';
 
   const STARS = [
     { id: 'gracias', es: 'Decir «gracias, Dios» al despertar', en: 'Say "thank you, God" when you wake up' },
@@ -44,6 +46,40 @@
 
   let doneStars = loadStars();
 
+  function loadRead() {
+    try { return new Set(JSON.parse(localStorage.getItem(READ_KEY) || '[]')); }
+    catch (_) { return new Set(); }
+  }
+
+  function saveRead(read) {
+    localStorage.setItem(READ_KEY, JSON.stringify([...read]));
+  }
+
+  let readCuentos = loadRead();
+
+  function toggleRead(id, checked) {
+    if (checked) readCuentos.add(id); else readCuentos.delete(id);
+    saveRead(readCuentos);
+    updateReadCount();
+    syncReadUi(id);
+  }
+
+  function syncReadUi(id) {
+    const isRead = readCuentos.has(id);
+    document.querySelectorAll('.ninos-cuento-card[data-id="' + id + '"]').forEach(card => {
+      card.classList.toggle('is-read', isRead);
+      const cb = card.querySelector('.ninos-read-check input');
+      if (cb) cb.checked = isRead;
+    });
+    const modalCb = document.getElementById('ninosModalRead');
+    if (modalCb && currentCuento && currentCuento.id === id) modalCb.checked = isRead;
+  }
+
+  function updateReadCount() {
+    const countEl = document.getElementById('ninosReadCount');
+    if (countEl) countEl.textContent = readCuentos.size + ' / ' + cuentos.length;
+  }
+
   function applyLang(l) {
     lang = l;
     localStorage.setItem(LANG_KEY, l);
@@ -57,6 +93,16 @@
     renderStars();
     if (currentCuento) openCuento(currentCuento, false);
     updateTtsBtn();
+    updateFilterLabels();
+  }
+
+  function updateFilterLabels() {
+    document.querySelectorAll('[data-read-filter]').forEach(btn => {
+      const f = btn.dataset.readFilter;
+      btn.classList.toggle('is-active', f === readFilter);
+      if (f === 'all') btn.textContent = lang === 'en' ? 'All' : 'Todos';
+      else btn.textContent = lang === 'en' ? 'Not read yet' : 'Sin leer';
+    });
   }
 
   function renderStars() {
@@ -93,21 +139,47 @@
     const grid = document.getElementById('ninosCuentosGrid');
     if (!grid || !cuentos.length) return;
     grid.innerHTML = '';
-    cuentos.forEach(c => {
-      const btn = document.createElement('button');
-      btn.type = 'button';
-      btn.className = 'ninos-cuento-card';
-      if (c.accent) btn.style.borderColor = c.accent + '33';
-      btn.innerHTML =
+    const list = readFilter === 'unread'
+      ? cuentos.filter(c => !readCuentos.has(c.id))
+      : cuentos;
+    if (!list.length) {
+      grid.innerHTML = '<p class="ninos-cuentos-sub">' +
+        (lang === 'en' ? 'You read all the stories! 🎉' : '¡Leíste todos los cuentos! 🎉') + '</p>';
+      updateReadCount();
+      return;
+    }
+    list.forEach(c => {
+      const card = document.createElement('article');
+      card.className = 'ninos-cuento-card' + (readCuentos.has(c.id) ? ' is-read' : '');
+      card.dataset.id = c.id;
+      if (c.accent) card.style.borderColor = c.accent + '33';
+      card.innerHTML =
         '<div class="ninos-cuento-top">' +
           '<img class="ninos-cuento-icon" src="' + c.icon + '" alt="" />' +
           '<h3 class="ninos-cuento-title">' + c.title[lang] + '</h3>' +
         '</div>' +
         '<p class="ninos-cuento-hook">' + c.hook[lang] + '</p>' +
-        '<span class="ninos-cuento-open">' + (lang === 'en' ? 'Open story →' : 'Abrir cuento →') + '</span>';
-      btn.addEventListener('click', () => openCuento(c, true));
-      grid.appendChild(btn);
+        '<div class="ninos-cuento-foot">' +
+          '<label class="ninos-read-check" title="' + (lang === 'en' ? 'Mark as read' : 'Marcar como leído') + '">' +
+            '<input type="checkbox"' + (readCuentos.has(c.id) ? ' checked' : '') + ' />' +
+            '<span class="ninos-read-box">✓</span>' +
+            '<span class="ninos-read-label">' + (lang === 'en' ? 'I read it' : 'Ya lo leí') + '</span>' +
+          '</label>' +
+          '<button type="button" class="ninos-cuento-open">' + (lang === 'en' ? 'Open →' : 'Abrir →') + '</button>' +
+        '</div>';
+      const openBtn = card.querySelector('.ninos-cuento-open');
+      openBtn.addEventListener('click', e => { e.stopPropagation(); openCuento(c, true); });
+      card.querySelector('.ninos-cuento-top')?.addEventListener('click', () => openCuento(c, true));
+      card.querySelector('.ninos-cuento-hook')?.addEventListener('click', () => openCuento(c, true));
+      const cb = card.querySelector('.ninos-read-check input');
+      cb.addEventListener('change', e => {
+        e.stopPropagation();
+        toggleRead(c.id, cb.checked);
+      });
+      card.querySelector('.ninos-read-check')?.addEventListener('click', e => e.stopPropagation());
+      grid.appendChild(card);
     });
+    updateReadCount();
   }
 
   function openCuento(c, showModal) {
@@ -128,6 +200,8 @@
       saintLink.href = '/intercesor/?intercesor=' + c.saintId;
       saintLink.textContent = lang === 'en' ? '→ Full saint page' : '→ Página del santo';
     }
+    const modalCb = document.getElementById('ninosModalRead');
+    if (modalCb) modalCb.checked = readCuentos.has(c.id);
     updateTtsBtn();
     if (showModal) {
       document.getElementById('ninosModal').classList.add('is-open');
@@ -180,6 +254,19 @@
     if (e.target.id === 'ninosModal') closeModal();
   });
   document.getElementById('ninosModalTts')?.addEventListener('click', speakCuento);
+  document.getElementById('ninosModalRead')?.addEventListener('change', e => {
+    if (currentCuento) {
+      toggleRead(currentCuento.id, e.target.checked);
+      if (readFilter === 'unread' && e.target.checked) renderCuentos();
+    }
+  });
+  document.querySelectorAll('[data-read-filter]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      readFilter = btn.dataset.readFilter;
+      updateFilterLabels();
+      renderCuentos();
+    });
+  });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
   document.getElementById('langToggle')?.addEventListener('click', () => {
@@ -189,7 +276,7 @@
 
   fetch('/data/ninos-cuentos.json')
     .then(r => r.json())
-    .then(data => { cuentos = data.cuentos || []; renderCuentos(); })
+    .then(data => { cuentos = data.cuentos || []; renderCuentos(); updateFilterLabels(); })
     .catch(() => {
       const grid = document.getElementById('ninosCuentosGrid');
       if (grid) grid.innerHTML = '<p class="ninos-cuentos-sub">' + (lang === 'en' ? 'Could not load stories.' : 'No se pudieron cargar los cuentos.') + '</p>';
