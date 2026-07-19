@@ -108,12 +108,13 @@ function cleanupSentence(s) {
 
 function fixMojibake(text) {
   return String(text || '')
-    .replace(/Ã¡/g, 'a')
-    .replace(/Ã©/g, 'e')
-    .replace(/Ã­/g, 'i')
-    .replace(/Ã³/g, 'o')
-    .replace(/Ãº/g, 'u')
-    .replace(/Ã±/g, 'n')
+    .replace(/Ã¡/g, 'á')
+    .replace(/Ã©/g, 'é')
+    .replace(/Ã­/g, 'í')
+    .replace(/Ã³/g, 'ó')
+    .replace(/Ãº/g, 'ú')
+    .replace(/Ã±/g, 'ñ')
+    .replace(/Ã‘/g, 'Ñ')
     .replace(/Â/g, '')
     .replace(/â€™/g, "'")
     .replace(/â€œ|â€\x9d/g, '"');
