@@ -1,4 +1,4 @@
-![alt text](image.png)# 🙏 The Universal Prayer — Handoff para GitHub Copilot
+# The Universal Prayer - Handoff para GitHub Copilot
 
 ## Contexto del Proyecto
 
