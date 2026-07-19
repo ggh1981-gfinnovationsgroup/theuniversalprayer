@@ -17,6 +17,8 @@ const GENERIC_PARAS_EN = [
   'This story will help you know Jesus and his saint friends a little better.'
 ];
 
+const ES_WORDS_PER_MINUTE = 90;
+
 const FILTER_ES = [
   'Esta noche, cuando las luces de la casa se van apagando una a una',
   'Acomodate bien bajo las mantas',
@@ -82,6 +84,15 @@ function splitSentences(text) {
     .split(/(?<=[.!?])\s+/)
     .map(s => s.trim())
     .filter(Boolean);
+}
+
+function estimateReadMinFromSpanishStory(storyEs) {
+  const words = String(storyEs || '')
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean).length;
+  if (!words) return 1;
+  return Math.max(1, Math.ceil(words / ES_WORDS_PER_MINUTE));
 }
 
 function dedupePreserveOrder(arr) {
@@ -489,7 +500,7 @@ function main() {
       en: activityFromFacts('en', factsEn)
     };
 
-    if (!c.readMin || typeof c.readMin !== 'number') c.readMin = 8;
+    c.readMin = estimateReadMinFromSpanishStory(storyEs);
     c.bedtime = true;
   }
 

@@ -34,6 +34,8 @@ const curatedFactsBySaintId = {
   ]
 };
 
+const ES_WORDS_PER_MINUTE = 90;
+
 function parseArgs(argv) {
   const opts = {
     batchSize: 99,
@@ -253,6 +255,15 @@ function splitSentences(text) {
     .split(/(?<=[.!?])\s+/)
     .map(s => s.trim())
     .filter(Boolean);
+}
+
+function estimateReadMinFromSpanishStory(storyEs) {
+  const words = String(storyEs || '')
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean).length;
+  if (!words) return 1;
+  return Math.max(1, Math.ceil(words / ES_WORDS_PER_MINUTE));
 }
 
 function isHeadlineLike(s) {
@@ -498,7 +509,7 @@ function main() {
 
     c.story = c.story || {};
     c.story.es = normalizeSpanishLexicon(buildStoryEs(c.title?.es || c.id, c.hook?.es || '', facts));
-    c.readMin = 15;
+    c.readMin = estimateReadMinFromSpanishStory(c.story.es);
     c.bedtime = true;
 
     const entry = checklist.items.find(x => x.id === c.id);
