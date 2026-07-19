@@ -67,6 +67,43 @@ function fixMojibake(text) {
     .trim();
 }
 
+function normalizeSpanishLexicon(text) {
+  let t = String(text || '');
+  const rules = [
+    [/\bninos\b/gi, 'niños'],
+    [/\bnino\b/gi, 'niño'],
+    [/\bpequenos\b/gi, 'pequeños'],
+    [/\bpequeno\b/gi, 'pequeño'],
+    [/\banos\b/gi, 'años'],
+    [/\bano\b/gi, 'año'],
+    [/\bsenora\b/gi, 'señora'],
+    [/\bsenor\b/gi, 'señor'],
+    [/\bmanana\b/gi, 'mañana'],
+    [/\bcompaneros\b/gi, 'compañeros'],
+    [/\bcompanero\b/gi, 'compañero'],
+    [/\bcompania\b/gi, 'compañía'],
+    [/\bensenanza\b/gi, 'enseñanza'],
+    [/\benseno\b/gi, 'enseñó'],
+    [/\bensena\b/gi, 'enseña'],
+    [/\bensenar\b/gi, 'enseñar'],
+    [/\bnacio\b/gi, 'nació'],
+    [/\bmurio\b/gi, 'murió'],
+    [/\bcanonizo\b/gi, 'canonizó'],
+    [/\bcorazon\b/gi, 'corazón'],
+    [/\boracion\b/gi, 'oración'],
+    [/\bmision\b/gi, 'misión'],
+    [/\bconversion\b/gi, 'conversión'],
+    [/\btambien\b/gi, 'también'],
+    [/\bdespues\b/gi, 'después'],
+    [/\bademas\b/gi, 'además'],
+    [/\bmas\b/gi, 'más'],
+    [/\bjesus\b/gi, 'Jesús'],
+    [/\bmaria\b/gi, 'María']
+  ];
+  for (const [rx, repl] of rules) t = t.replace(rx, repl);
+  return t;
+}
+
 function uniq(arr) {
   const seen = new Set();
   const out = [];
@@ -150,7 +187,7 @@ function extractFacts(story, lang) {
 }
 
 function sanitizeHookEs(hook, title) {
-  let h = fixMojibake(hook || '').trim();
+  let h = normalizeSpanishLexicon(fixMojibake(hook || '')).trim();
   if (!h || /un cuento para dormir sobre/i.test(h)) {
     const t = fixMojibake(title || 'este santo');
     return `Dios nos ensena con la vida de ${t}`;
@@ -187,7 +224,7 @@ function buildStoryEs(cuento, facts) {
 
   lines.push(`Por eso, muchas familias quieren a ${name} y le piden ayuda para seguir a Jesus.`);
   lines.push(`Antes de dormir, dile a Dios: "Quiero amar como ${name}".`);
-  return lines.join('\n\n');
+  return normalizeSpanishLexicon(lines.join('\n\n'));
 }
 
 function buildStoryEn(cuento, facts) {
@@ -216,7 +253,7 @@ function main() {
 
   for (const cuento of json.cuentos) {
     cuento.hook = {
-      es: sanitizeHookEs(cuento.hook?.es, cuento.title?.es || ''),
+      es: normalizeSpanishLexicon(sanitizeHookEs(cuento.hook?.es, cuento.title?.es || '')),
       en: sanitizeHookEn(cuento.hook?.en, cuento.title?.en || '')
     };
 
@@ -224,7 +261,7 @@ function main() {
     const factsEn = extractFacts(cuento.story?.en || '', 'en');
 
     cuento.story = {
-      es: buildStoryEs(cuento, factsEs),
+      es: normalizeSpanishLexicon(buildStoryEs(cuento, factsEs)),
       en: buildStoryEn(cuento, factsEn)
     };
   }

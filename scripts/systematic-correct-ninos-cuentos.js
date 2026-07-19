@@ -209,6 +209,43 @@ function fixMojibake(text) {
     .trim();
 }
 
+function normalizeSpanishLexicon(text) {
+  let t = String(text || '');
+  const rules = [
+    [/\bninos\b/gi, 'niños'],
+    [/\bnino\b/gi, 'niño'],
+    [/\bpequenos\b/gi, 'pequeños'],
+    [/\bpequeno\b/gi, 'pequeño'],
+    [/\banos\b/gi, 'años'],
+    [/\bano\b/gi, 'año'],
+    [/\bsenora\b/gi, 'señora'],
+    [/\bsenor\b/gi, 'señor'],
+    [/\bmanana\b/gi, 'mañana'],
+    [/\bcompaneros\b/gi, 'compañeros'],
+    [/\bcompanero\b/gi, 'compañero'],
+    [/\bcompania\b/gi, 'compañía'],
+    [/\bensenanza\b/gi, 'enseñanza'],
+    [/\benseno\b/gi, 'enseñó'],
+    [/\bensena\b/gi, 'enseña'],
+    [/\bensenar\b/gi, 'enseñar'],
+    [/\bnacio\b/gi, 'nació'],
+    [/\bmurio\b/gi, 'murió'],
+    [/\bcanonizo\b/gi, 'canonizó'],
+    [/\bcorazon\b/gi, 'corazón'],
+    [/\boracion\b/gi, 'oración'],
+    [/\bmision\b/gi, 'misión'],
+    [/\bconversion\b/gi, 'conversión'],
+    [/\btambien\b/gi, 'también'],
+    [/\bdespues\b/gi, 'después'],
+    [/\bademas\b/gi, 'además'],
+    [/\bmas\b/gi, 'más'],
+    [/\bjesus\b/gi, 'Jesús'],
+    [/\bmaria\b/gi, 'María']
+  ];
+  for (const [rx, repl] of rules) t = t.replace(rx, repl);
+  return t;
+}
+
 function splitSentences(text) {
   const cleaned = fixMojibake(text).replace(/\r/g, '\n').replace(/\n+/g, ' ');
   if (!cleaned) return [];
@@ -460,7 +497,7 @@ function main() {
     }
 
     c.story = c.story || {};
-    c.story.es = buildStoryEs(c.title?.es || c.id, c.hook?.es || '', facts);
+    c.story.es = normalizeSpanishLexicon(buildStoryEs(c.title?.es || c.id, c.hook?.es || '', facts));
     c.readMin = 15;
     c.bedtime = true;
 

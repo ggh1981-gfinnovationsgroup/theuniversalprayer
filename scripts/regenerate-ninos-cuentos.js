@@ -120,6 +120,43 @@ function fixMojibake(text) {
     .replace(/â€œ|â€\x9d/g, '"');
 }
 
+function normalizeSpanishLexicon(text) {
+  let t = String(text || '');
+  const rules = [
+    [/\bninos\b/gi, 'niños'],
+    [/\bnino\b/gi, 'niño'],
+    [/\bpequenos\b/gi, 'pequeños'],
+    [/\bpequeno\b/gi, 'pequeño'],
+    [/\banos\b/gi, 'años'],
+    [/\bano\b/gi, 'año'],
+    [/\bsenora\b/gi, 'señora'],
+    [/\bsenor\b/gi, 'señor'],
+    [/\bmanana\b/gi, 'mañana'],
+    [/\bcompaneros\b/gi, 'compañeros'],
+    [/\bcompanero\b/gi, 'compañero'],
+    [/\bcompania\b/gi, 'compañía'],
+    [/\bensenanza\b/gi, 'enseñanza'],
+    [/\benseno\b/gi, 'enseñó'],
+    [/\bensena\b/gi, 'enseña'],
+    [/\bensenar\b/gi, 'enseñar'],
+    [/\bnacio\b/gi, 'nació'],
+    [/\bmurio\b/gi, 'murió'],
+    [/\bcanonizo\b/gi, 'canonizó'],
+    [/\bcorazon\b/gi, 'corazón'],
+    [/\boracion\b/gi, 'oración'],
+    [/\bmision\b/gi, 'misión'],
+    [/\bconversion\b/gi, 'conversión'],
+    [/\btambien\b/gi, 'también'],
+    [/\bdespues\b/gi, 'después'],
+    [/\bademas\b/gi, 'además'],
+    [/\bmas\b/gi, 'más'],
+    [/\bjesus\b/gi, 'Jesús'],
+    [/\bmaria\b/gi, 'María']
+  ];
+  for (const [rx, repl] of rules) t = t.replace(rx, repl);
+  return t;
+}
+
 function isHeadlineLike(s) {
   const t = s.trim();
   if (!t) return true;
@@ -439,16 +476,16 @@ function main() {
     if (factsEs.length && factsEn.length && saint) fullHistoryCount += 1;
     if (!saint || !factsEs.length || !factsEn.length) fallbackCount += 1;
 
-    const storyEs = buildStory('es', nameEs, factsEs, c.hook && c.hook.es);
+    const storyEs = normalizeSpanishLexicon(buildStory('es', nameEs, factsEs, c.hook && c.hook.es));
     const storyEn = buildStory('en', nameEn, factsEn, c.hook && c.hook.en);
 
     c.story = { es: storyEs, en: storyEn };
     c.moral = {
-      es: moralFromFacts('es', factsEs),
+      es: normalizeSpanishLexicon(moralFromFacts('es', factsEs)),
       en: moralFromFacts('en', factsEn)
     };
     c.activity = {
-      es: activityFromFacts('es', factsEs),
+      es: normalizeSpanishLexicon(activityFromFacts('es', factsEs)),
       en: activityFromFacts('en', factsEn)
     };
 
