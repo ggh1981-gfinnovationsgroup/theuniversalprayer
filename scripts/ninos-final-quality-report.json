@@ -1,0 +1,814 @@
+{
+  "summary": {
+    "generatedAt": "2026-07-19T02:29:56.673Z",
+    "totalStories": 99,
+    "done": 99,
+    "pending": 0,
+    "words": {
+      "avg": 596,
+      "min": 513,
+      "max": 638
+    },
+    "sourceCounts": {
+      "saint": 95,
+      "curated": 4
+    },
+    "readMinNot15": [],
+    "bedtimeFalse": [],
+    "missingStory": []
+  },
+  "rows": [
+    {
+      "id": "angelguarda",
+      "saintId": "angelguarda",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 572,
+      "done": true
+    },
+    {
+      "id": "carlo",
+      "saintId": "sancarlosacutis",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 587,
+      "done": true
+    },
+    {
+      "id": "carloslwanga",
+      "saintId": "sancarloslwanga",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 638,
+      "done": true
+    },
+    {
+      "id": "divinaprovidencia",
+      "saintId": "divinaprovidencia",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 579,
+      "done": true
+    },
+    {
+      "id": "divinonino",
+      "saintId": "divinonino",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 625,
+      "done": true
+    },
+    {
+      "id": "fatima",
+      "saintId": "fatima",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 593,
+      "done": true
+    },
+    {
+      "id": "francisco",
+      "saintId": "sanfrancisco",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 593,
+      "done": true
+    },
+    {
+      "id": "guadalupe",
+      "saintId": "guadalupe",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 606,
+      "done": true
+    },
+    {
+      "id": "inmaculadocorazon",
+      "saintId": "inmaculadocorazon",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 588,
+      "done": true
+    },
+    {
+      "id": "juanbosco",
+      "saintId": "sanjuanbosco",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 586,
+      "done": true
+    },
+    {
+      "id": "juandiego",
+      "saintId": "sanjuandiego",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 623,
+      "done": true
+    },
+    {
+      "id": "juanpablo",
+      "saintId": "juanpablo",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 599,
+      "done": true
+    },
+    {
+      "id": "lourdes",
+      "saintId": "lourdes",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 589,
+      "done": true
+    },
+    {
+      "id": "lucia",
+      "saintId": "santalucia",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 587,
+      "done": true
+    },
+    {
+      "id": "luisgonzaga",
+      "saintId": "sanluisgonzaga",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 562,
+      "done": true
+    },
+    {
+      "id": "mariaauxiliadora",
+      "saintId": "mariaauxiliadora",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 599,
+      "done": true
+    },
+    {
+      "id": "mariagoretti",
+      "saintId": "santamariagoretti",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 600,
+      "done": true
+    },
+    {
+      "id": "misericordia",
+      "saintId": "misericordia",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 571,
+      "done": true
+    },
+    {
+      "id": "nicolas",
+      "saintId": "sannicolas",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 602,
+      "done": true
+    },
+    {
+      "id": "nuestrasenoracarmen",
+      "saintId": "nuestrasenoracarmen",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 587,
+      "done": true
+    },
+    {
+      "id": "padrepio",
+      "saintId": "padrepio",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 626,
+      "done": true
+    },
+    {
+      "id": "perpetuosocorro",
+      "saintId": "perpetuosocorro",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 589,
+      "done": true
+    },
+    {
+      "id": "preciosisimasangre",
+      "saintId": "preciosisimasangre",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 592,
+      "done": true
+    },
+    {
+      "id": "providencia",
+      "saintId": "providencia",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 594,
+      "done": true
+    },
+    {
+      "id": "reydavid",
+      "saintId": "reydavid",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 606,
+      "done": true
+    },
+    {
+      "id": "sagradocorazon",
+      "saintId": "sagradocorazon",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 627,
+      "done": true
+    },
+    {
+      "id": "sanagustin",
+      "saintId": "sanagustin",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 609,
+      "done": true
+    },
+    {
+      "id": "sanalejandro",
+      "saintId": "sanalejandro",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 584,
+      "done": true
+    },
+    {
+      "id": "sanantonio",
+      "saintId": "sanantonio",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 620,
+      "done": true
+    },
+    {
+      "id": "sanbarnabes",
+      "saintId": "sanbarnabes",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 610,
+      "done": true
+    },
+    {
+      "id": "sanbenito",
+      "saintId": "sanbenito",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 565,
+      "done": true
+    },
+    {
+      "id": "sanblas",
+      "saintId": "sanblas",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 600,
+      "done": true
+    },
+    {
+      "id": "sanbonifacio",
+      "saintId": "sanbonifacio",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 629,
+      "done": true
+    },
+    {
+      "id": "sanbrendan",
+      "saintId": "sanbrendan",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 619,
+      "done": true
+    },
+    {
+      "id": "sancamilo",
+      "saintId": "sancamilo",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 591,
+      "done": true
+    },
+    {
+      "id": "sancarlos",
+      "saintId": "sancarlos",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 625,
+      "done": true
+    },
+    {
+      "id": "sancharbel",
+      "saintId": "sancharbel",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 612,
+      "done": true
+    },
+    {
+      "id": "sancristobal",
+      "saintId": "sancristobal",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 617,
+      "done": true
+    },
+    {
+      "id": "sandaniel",
+      "saintId": "sandaniel",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 631,
+      "done": true
+    },
+    {
+      "id": "sandavidgales",
+      "saintId": "sandavidgales",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 599,
+      "done": true
+    },
+    {
+      "id": "sanefren",
+      "saintId": "sanefren",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 607,
+      "done": true
+    },
+    {
+      "id": "sanexpedito",
+      "saintId": "sanexpedito",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 611,
+      "done": true
+    },
+    {
+      "id": "sanfelipeneri",
+      "saintId": "sanfelipeneri",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 601,
+      "done": true
+    },
+    {
+      "id": "sanfranciscodesales",
+      "saintId": "sanfranciscodesales",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 594,
+      "done": true
+    },
+    {
+      "id": "sanfranciscojavier",
+      "saintId": "sanfranciscojavier",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 616,
+      "done": true
+    },
+    {
+      "id": "sangabriel",
+      "saintId": "sangabriel",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 584,
+      "done": true
+    },
+    {
+      "id": "sangerardo",
+      "saintId": "sangerardo",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 570,
+      "done": true
+    },
+    {
+      "id": "sanguillermo",
+      "saintId": "sanguillermo",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 589,
+      "done": true
+    },
+    {
+      "id": "sanguillermoaquitania",
+      "saintId": "sanguillermoaquitania",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 596,
+      "done": true
+    },
+    {
+      "id": "sanguillermogellone",
+      "saintId": "sanguillermogellone",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 592,
+      "done": true
+    },
+    {
+      "id": "sanireneolyon",
+      "saintId": "sanireneolyon",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 587,
+      "done": true
+    },
+    {
+      "id": "sanismael",
+      "saintId": "sanismael",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 609,
+      "done": true
+    },
+    {
+      "id": "sanjorge",
+      "saintId": "sanjorge",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 609,
+      "done": true
+    },
+    {
+      "id": "sanjose",
+      "saintId": "sanjose",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 610,
+      "done": true
+    },
+    {
+      "id": "sanjuanapostol",
+      "saintId": "sanjuanapostol",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 612,
+      "done": true
+    },
+    {
+      "id": "sanjuanbautista",
+      "saintId": "sanjuanbautista",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 609,
+      "done": true
+    },
+    {
+      "id": "sanjuandedios",
+      "saintId": "sanjuandedios",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 599,
+      "done": true
+    },
+    {
+      "id": "sanjudas",
+      "saintId": "sanjudas",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 586,
+      "done": true
+    },
+    {
+      "id": "sanlorenzo",
+      "saintId": "sanlorenzo",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 611,
+      "done": true
+    },
+    {
+      "id": "sanmartincapa",
+      "saintId": "sanmartin",
+      "source": "curated",
+      "factsUsed": 4,
+      "words": 532,
+      "done": true
+    },
+    {
+      "id": "sanmartindelporres",
+      "saintId": "sanmartindelporres",
+      "source": "curated",
+      "factsUsed": 4,
+      "words": 523,
+      "done": true
+    },
+    {
+      "id": "sanmaximiliano",
+      "saintId": "sanmaximiliano",
+      "source": "curated",
+      "factsUsed": 4,
+      "words": 513,
+      "done": true
+    },
+    {
+      "id": "sanmiguel",
+      "saintId": "sanmiguel",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 607,
+      "done": true
+    },
+    {
+      "id": "sanoliverplunkett",
+      "saintId": "sanoliverplunkett",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 612,
+      "done": true
+    },
+    {
+      "id": "sanpedro",
+      "saintId": "sanpedro",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 607,
+      "done": true
+    },
+    {
+      "id": "sanperegrino",
+      "saintId": "sanperegrino",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 584,
+      "done": true
+    },
+    {
+      "id": "sanrafael",
+      "saintId": "sanrafael",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 616,
+      "done": true
+    },
+    {
+      "id": "santaalejandra",
+      "saintId": "santaalejandra",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 588,
+      "done": true
+    },
+    {
+      "id": "santaana",
+      "saintId": "santaana",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 607,
+      "done": true
+    },
+    {
+      "id": "santaapolonia",
+      "saintId": "santaapolonia",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 589,
+      "done": true
+    },
+    {
+      "id": "santabarbara",
+      "saintId": "santabarbara",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 596,
+      "done": true
+    },
+    {
+      "id": "santacatalina",
+      "saintId": "santacatalina",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 590,
+      "done": true
+    },
+    {
+      "id": "santacelina",
+      "saintId": "santacelina",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 595,
+      "done": true
+    },
+    {
+      "id": "santaclara",
+      "saintId": "santaclara",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 564,
+      "done": true
+    },
+    {
+      "id": "santacoleta",
+      "saintId": "santacoleta",
+      "source": "curated",
+      "factsUsed": 4,
+      "words": 522,
+      "done": true
+    },
+    {
+      "id": "santadelia",
+      "saintId": "santadelia",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 593,
+      "done": true
+    },
+    {
+      "id": "santadymphna",
+      "saintId": "santadymphna",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 612,
+      "done": true
+    },
+    {
+      "id": "santaelena",
+      "saintId": "santaelena",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 566,
+      "done": true
+    },
+    {
+      "id": "santaemma",
+      "saintId": "santaemma",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 595,
+      "done": true
+    },
+    {
+      "id": "santafabiola",
+      "saintId": "santafabiola",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 576,
+      "done": true
+    },
+    {
+      "id": "santagema",
+      "saintId": "santagema",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 579,
+      "done": true
+    },
+    {
+      "id": "santagianna",
+      "saintId": "santagianna",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 583,
+      "done": true
+    },
+    {
+      "id": "santagwendolina",
+      "saintId": "santagwendolina",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 608,
+      "done": true
+    },
+    {
+      "id": "santaines",
+      "saintId": "santaines",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 603,
+      "done": true
+    },
+    {
+      "id": "santaisabel",
+      "saintId": "santaisabel",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 603,
+      "done": true
+    },
+    {
+      "id": "santaleticia",
+      "saintId": "santaleticia",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 593,
+      "done": true
+    },
+    {
+      "id": "santamonica",
+      "saintId": "santamonica",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 608,
+      "done": true
+    },
+    {
+      "id": "santanoemi",
+      "saintId": "santanoemi",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 599,
+      "done": true
+    },
+    {
+      "id": "santarita",
+      "saintId": "santarita",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 616,
+      "done": true
+    },
+    {
+      "id": "santarosa",
+      "saintId": "santarosa",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 603,
+      "done": true
+    },
+    {
+      "id": "santaroxana",
+      "saintId": "santaroxana",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 637,
+      "done": true
+    },
+    {
+      "id": "santasilvia",
+      "saintId": "santasilvia",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 621,
+      "done": true
+    },
+    {
+      "id": "santomamoro",
+      "saintId": "santomamoro",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 589,
+      "done": true
+    },
+    {
+      "id": "santomasapostol",
+      "saintId": "santomasapostol",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 598,
+      "done": true
+    },
+    {
+      "id": "santotomas",
+      "saintId": "santotomasdeaquino",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 616,
+      "done": true
+    },
+    {
+      "id": "sanvicente",
+      "saintId": "sanvicente",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 583,
+      "done": true
+    },
+    {
+      "id": "schoenstatt",
+      "saintId": "schoenstatt",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 587,
+      "done": true
+    },
+    {
+      "id": "teresacalcuta",
+      "saintId": "teresacalcuta",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 587,
+      "done": true
+    },
+    {
+      "id": "teresita",
+      "saintId": "santateresita",
+      "source": "saint",
+      "factsUsed": 6,
+      "words": 601,
+      "done": true
+    }
+  ]
+}

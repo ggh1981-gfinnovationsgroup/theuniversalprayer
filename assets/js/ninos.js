@@ -94,6 +94,17 @@
       : (lang === 'en' ? '🔇 Night sounds off' : '🔇 Sonido noche OFF');
   }
 
+  function ensureAmbientInModal() {
+    const modalOpen = document.getElementById('ninosModal')?.classList.contains('is-open');
+    if (!modalOpen) return;
+    if (ambientOn) {
+      startAmbient();
+      ambientCtx?.resume?.().catch(() => {});
+    } else {
+      stopAmbient();
+    }
+  }
+
   function startAmbient() {
     if (!ambientOn || ambientCtx) return;
     const Ctx = window.AudioContext || window.webkitAudioContext;
@@ -145,11 +156,7 @@
     ambientOn = !ambientOn;
     localStorage.setItem(AMBIENT_KEY, ambientOn ? '1' : '0');
     updateAmbientBtn();
-    if (ambientOn && document.getElementById('ninosModal')?.classList.contains('is-open')) {
-      startAmbient();
-    } else {
-      stopAmbient();
-    }
+    ensureAmbientInModal();
   }
 
   function applyLang(l) {
@@ -317,8 +324,16 @@
     const voices = window.speechSynthesis.getVoices();
     const voice = voices.find(v => v.lang.startsWith(lang === 'es' ? 'es' : 'en'));
     if (voice) utt.voice = voice;
-    utt.onend = utt.onerror = () => { ttsSpeaking = false; updateTtsBtn(); stopAmbient(); };
-    if (ambientOn) startAmbient();
+    utt.onstart = () => {
+      // On some mobile browsers, starting TTS can suspend WebAudio; resume it right after speech starts.
+      setTimeout(() => ensureAmbientInModal(), 120);
+    };
+    utt.onend = utt.onerror = () => {
+      ttsSpeaking = false;
+      updateTtsBtn();
+      ensureAmbientInModal();
+    };
+    ensureAmbientInModal();
     window.speechSynthesis.speak(utt);
     ttsSpeaking = true;
     updateTtsBtn();
