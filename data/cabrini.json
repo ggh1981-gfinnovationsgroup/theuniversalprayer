@@ -1,0 +1,122 @@
+{
+  "id": "cabrini",
+  "name": {
+    "es": "Santa Francisca Javier Cabrini",
+    "en": "Saint Frances Xavier Cabrini"
+  },
+  "jaculatoria": {
+    "es": "Santa Cabrini, acompana a los migrantes con la ternura de Cristo.",
+    "en": "Saint Cabrini, accompany migrants with Christ's tenderness."
+  },
+  "color": "#1b3f7a",
+  "image": "/assets/images/cabrini.svg",
+  "specialty": {
+    "es": "Migrantes, familias y esperanza",
+    "en": "Migrants, families and hope"
+  },
+  "prayer": {
+    "es": "Santa Francisca Javier Cabrini, misionera del Sagrado Corazon y madre de los migrantes, tu que cruzaste oceanos para servir a quienes eran olvidados, intercede por nosotros ante el Senor.\n\nAlcanza fortaleza para quienes viven lejos de su tierra, consuelo para quienes sienten miedo, y unidad para las familias separadas por fronteras o necesidades economicas.\n\nTu que vestiste el habito negro como armadura espiritual, ensenanos a luchar con fe, caridad y valentia en medio de las pruebas.\n\nEnsenanos a reconocer en cada persona desplazada el rostro de Cristo peregrino, y a construir comunidades donde nadie sea tratado como extrano.\n\nSanta Cabrini, patrona de los inmigrantes, ruega por nosotros.\n\nAmen.",
+    "en": "Saint Frances Xavier Cabrini, missionary of the Sacred Heart and mother of migrants, you who crossed oceans to serve the forgotten, intercede for us before the Lord.\n\nObtain strength for those far from their homeland, comfort for those who feel afraid, and unity for families separated by borders or economic hardship.\n\nYou who wore the black habit as spiritual armor, teach us to fight with faith, charity, and courage in times of trial.\n\nTeach us to recognize in every displaced person the face of Christ the pilgrim, and to build communities where no one is treated as a stranger.\n\nSaint Cabrini, patron saint of immigrants, pray for us.\n\nAmen."
+  },
+  "history": {
+    "es": "Francisca Saverio Cabrini nacio en 1850 en Sant'Angelo Lodigiano, Italia. Desde joven deseo ser misionera, pero su salud fragil parecia cerrarle muchos caminos. Con gran perseverancia fundo en 1880 el Instituto de las Misioneras del Sagrado Corazon de Jesus.\n\nEn 1889, enviada por el Papa Leon XIII, llego a Nueva York para atender a los inmigrantes italianos que vivian en pobreza, hacinamiento y discriminacion. Desde ahi impulso una obra enorme: escuelas, orfanatos, hospitales y casas de acogida en Estados Unidos, America Latina y Europa.\n\nMuchos la recuerdan con su habito negro, que para ella era como una armadura espiritual: signo de entrega total, disciplina y firmeza para proteger a los mas vulnerables en medio de la hostilidad social.\n\nMurio en 1917 en Chicago. Fue canonizada en 1946 y proclamada patrona de los inmigrantes en 1950. Su vida sigue recordando que la caridad cristiana no tiene fronteras y que cada migrante merece dignidad, proteccion y esperanza.",
+    "en": "Francesca Saverio Cabrini was born in 1850 in Sant'Angelo Lodigiano, Italy. From a young age she desired to be a missionary, but her fragile health seemed to close many paths. With great perseverance she founded the Missionary Sisters of the Sacred Heart of Jesus in 1880.\n\nIn 1889, sent by Pope Leo XIII, she arrived in New York to serve Italian immigrants living in poverty, overcrowding, and discrimination. From there she built an extraordinary work: schools, orphanages, hospitals, and shelters across the United States, Latin America, and Europe.\n\nMany remember her in her black habit, which for her was like spiritual armor: a sign of total self-gift, discipline, and firmness to protect the most vulnerable amid social hostility.\n\nShe died in 1917 in Chicago. She was canonized in 1946 and proclaimed patroness of immigrants in 1950. Her life continues to remind us that Christian charity has no borders and that every migrant deserves dignity, protection, and hope."
+  },
+  "novena_prayers": {
+    "es": "Cada dia de la novena:\n1. Reza 1 Padre Nuestro, 1 Ave Maria y 1 Gloria.\n2. Lee la meditacion del dia.\n3. Presenta por nombre a una persona o familia migrante.\n4. Haz un gesto concreto de acogida, ayuda o reconciliacion.",
+    "en": "Each day of the novena:\n1. Pray 1 Our Father, 1 Hail Mary, and 1 Glory Be.\n2. Read the day's meditation.\n3. Name one migrant person or family in prayer.\n4. Offer a concrete act of welcome, help, or reconciliation."
+  },
+  "novena": [
+    {
+      "day": 1,
+      "es": "Por quienes dejan su tierra\n\nSanta Cabrini, intercede por quienes se ven obligados a emigrar por pobreza, violencia o falta de oportunidades. Que Dios les abra caminos seguros y personas bondadosas. Amen.",
+      "en": "For those who leave their homeland\n\nSaint Cabrini, intercede for those forced to migrate by poverty, violence, or lack of opportunity. May God open safe paths and kind people for them. Amen."
+    },
+    {
+      "day": 2,
+      "es": "Por los que tienen miedo\n\nMadre Cabrini, acompana a quienes viven con temor al rechazo, a la deportacion o a la soledad. Que el Senor les conceda paz interior y esperanza. Amen.",
+      "en": "For those who are afraid\n\nMother Cabrini, accompany those who live in fear of rejection, deportation, or loneliness. May the Lord grant them inner peace and hope. Amen."
+    },
+    {
+      "day": 3,
+      "es": "Por las familias separadas\n\nSanta Cabrini, ruega por padres, madres e hijos separados por fronteras y tramites. Que Dios los sostenga y permita su reencuentro. Amen.",
+      "en": "For separated families\n\nSaint Cabrini, pray for parents and children separated by borders and legal processes. May God sustain them and grant reunion. Amen."
+    },
+    {
+      "day": 4,
+      "es": "Por trabajo digno\n\nIntercesora de los inmigrantes, pide al Senor empleo justo para quienes empiezan de nuevo en otro pais. Que nunca falte pan ni dignidad. Amen.",
+      "en": "For dignified work\n\nIntercessor of immigrants, ask the Lord for just work for those beginning again in another country. May bread and dignity never fail. Amen."
+    },
+    {
+      "day": 5,
+      "es": "Por ninos y jovenes migrantes\n\nSanta Cabrini, protege a los ninos y jovenes migrantes en su educacion, salud y crecimiento espiritual. Que encuentren hogares seguros. Amen.",
+      "en": "For migrant children and youth\n\nSaint Cabrini, protect migrant children and youth in education, health, and spiritual growth. May they find safe homes. Amen."
+    },
+    {
+      "day": 6,
+      "es": "Por quienes sirven a migrantes\n\nMadre Cabrini, bendice a voluntarios, parroquias, medicos, maestros y abogados que acompanian a migrantes. Dales fortaleza y perseverancia. Amen.",
+      "en": "For those who serve migrants\n\nMother Cabrini, bless volunteers, parishes, doctors, teachers, and lawyers who accompany migrants. Give them strength and perseverance. Amen."
+    },
+    {
+      "day": 7,
+      "es": "Por leyes y autoridades justas\n\nSanta Cabrini, intercede para que gobernantes y autoridades promuevan politicas justas y humanas que respeten la dignidad de toda persona. Amen.",
+      "en": "For just laws and authorities\n\nSaint Cabrini, intercede so that leaders and authorities promote just and humane policies that respect the dignity of every person. Amen."
+    },
+    {
+      "day": 8,
+      "es": "Por reconciliacion entre pueblos\n\nMisionera del Sagrado Corazon, ayudanos a superar prejuicios y xenofobia. Que aprendamos a vivir como una sola familia humana. Amen.",
+      "en": "For reconciliation among peoples\n\nMissionary of the Sacred Heart, help us overcome prejudice and xenophobia. May we learn to live as one human family. Amen."
+    },
+    {
+      "day": 9,
+      "es": "Por una Iglesia de puertas abiertas\n\nSanta Cabrini, ruega para que la Iglesia sea casa de acogida para todos, especialmente para el extranjero y el que sufre. Amen.",
+      "en": "For a Church with open doors\n\nSaint Cabrini, pray that the Church may be a welcoming home for all, especially for the stranger and the suffering. Amen."
+    }
+  ],
+  "litany": {
+    "title": {
+      "es": "Letania de Santa Cabrini",
+      "en": "Litany of Saint Cabrini"
+    },
+    "invocations": [
+      {
+        "es": "Santa Cabrini, misionera del Sagrado Corazon,",
+        "en": "Saint Cabrini, missionary of the Sacred Heart,"
+      },
+      {
+        "es": "Santa Cabrini, madre de los inmigrantes,",
+        "en": "Saint Cabrini, mother of immigrants,"
+      },
+      {
+        "es": "Santa Cabrini, defensora de la dignidad humana,",
+        "en": "Saint Cabrini, defender of human dignity,"
+      },
+      {
+        "es": "Santa Cabrini, consuelo de los que estan lejos de su hogar,",
+        "en": "Saint Cabrini, comfort of those far from home,"
+      },
+      {
+        "es": "Santa Cabrini, testigo de esperanza en la adversidad,",
+        "en": "Saint Cabrini, witness of hope in adversity,"
+      }
+    ],
+    "response": {
+      "es": "Ruega por nosotros.",
+      "en": "Pray for us."
+    }
+  },
+  "consecration": {
+    "available": true,
+    "es": "Santa Francisca Javier Cabrini, me consagro hoy a Dios por tu intercesion.\n\nEntrega al Sagrado Corazon de Jesus mis miedos, mi historia y mis heridas de desarraigo.\n\nEnsename a vivir con fe firme, con caridad concreta y con esperanza activa, para servir a los mas necesitados sin cansarme en el bien.\n\nQue tu habito negro, signo de combate espiritual, me recuerde cada dia que la mansedumbre y la valentia pueden caminar juntas.\n\nMadre Cabrini, guia mis pasos en tierra extranjera o en mi propia patria, para que siempre busque la dignidad de cada persona y la gloria de Dios.\n\nAmen.",
+    "en": "Saint Frances Xavier Cabrini, today I consecrate myself to God through your intercession.\n\nPlace my fears, my story, and my wounds of uprootedness into the Sacred Heart of Jesus.\n\nTeach me to live with firm faith, concrete charity, and active hope, so I may serve those most in need without growing weary in doing good.\n\nMay your black habit, a sign of spiritual combat, remind me each day that gentleness and courage can walk together.\n\nMother Cabrini, guide my steps in a foreign land or in my own homeland, so that I may always seek the dignity of every person and the glory of God.\n\nAmen."
+  },
+  "miracles": {
+    "available": true,
+    "es": "1. FUNDACIONES IMPOSIBLES EN MEDIO DE LA ESCASEZ\nCon recursos minimos, Santa Cabrini logro abrir casas, escuelas y hospitales para inmigrantes en varias ciudades. Muchos testigos hablaron de providencias inesperadas cuando parecia imposible continuar.\n\n2. CONSUELO Y CONVERSION EN LOS HOSPITALES\nNumerosos enfermos y familias afirmaron haber recibido paz, reconciliacion y retorno a la fe por su intercesion y cercania espiritual, especialmente en contextos de gran dolor.",
+    "en": "1. IMPOSSIBLE FOUNDATIONS IN THE MIDST OF SCARCITY\nWith minimal resources, Saint Cabrini succeeded in opening homes, schools, and hospitals for immigrants in multiple cities. Many witnesses spoke of unexpected providence when continuation seemed impossible.\n\n2. COMFORT AND CONVERSION IN HOSPITALS\nMany patients and families testified to receiving peace, reconciliation, and a return to faith through her intercession and spiritual closeness, especially in times of deep suffering."
+  },
+  "feast_day": {
+    "es": "13 de noviembre",
+    "en": "November 13"
+  }
+}

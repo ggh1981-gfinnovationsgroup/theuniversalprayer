@@ -2771,6 +2771,34 @@
       },
       "readMin": 17,
       "bedtime": true
+    },
+    {
+      "id": "cabrini",
+      "saintId": "cabrini",
+      "icon": "/assets/images/cabrini.svg",
+      "accent": "#1b3f7a",
+      "title": {
+        "es": "Santa Cabrini y los niños migrantes",
+        "en": "Saint Cabrini and migrant children"
+      },
+      "hook": {
+        "es": "Una madre valiente para los que estaban lejos de casa",
+        "en": "A brave mother for children far from home"
+      },
+      "story": {
+        "es": "Esta noche vamos a escuchar la historia de Santa Cabrini y los niños migrantes. La noche está tranquila. Respira despacio y descansa en la presencia de Dios.\n\nFrancesca Cabrini nació en Italia y desde pequeña soñaba con llevar el amor de Jesús a lugares lejanos. Muchos pensaban que era demasiado frágil para grandes misiones, pero ella confiaba más en Dios que en sus miedos.\n\nCuando llegó a Nueva York, encontró familias migrantes que vivían con hambre, frío y soledad. Muchos niños no tenían escuela ni alguien que los defendiera. Entonces Cabrini abrió casas, escuelas y hospitales para cuidarlos con ternura y firmeza.\n\nSu hábito negro parecía una armadura: no de guerra, sino de fe. Con esa armadura espiritual enfrentó injusticias, puertas cerradas y personas que no querían ayudar.\n\nPero Santa Cabrini no se rindió. Enseñó que cada niño, venga de donde venga, vale muchísimo para Dios.\n\nAl final de su vida, miles de personas la recordaban como madre de los inmigrantes. Y hoy la Iglesia la llama patrona de quienes dejan su tierra buscando esperanza.\n\nSi alguna vez te sientes extraño, con miedo o lejos de casa, recuerda: Jesús camina contigo y te regala amigos santos como Cabrini.\n\nDuerme en paz: Dios cuida de ti.",
+        "en": "Tonight we will listen to the story of Saint Cabrini and migrant children. The night is calm. Breathe slowly and rest in God's presence.\n\nFrances Cabrini was born in Italy and dreamed of bringing Jesus' love to distant places. Many thought she was too fragile for great missions, but she trusted God more than her fears.\n\nWhen she arrived in New York, she found migrant families living with hunger, cold, and loneliness. Many children had no school and no one to defend them. So Cabrini opened homes, schools, and hospitals to care for them with tenderness and strength.\n\nHer black habit looked like armor, not for war, but for faith. With that spiritual armor she faced injustice, closed doors, and people who refused to help.\n\nSaint Cabrini never gave up. She taught that every child, no matter where they come from, is precious to God.\n\nAt the end of her life, thousands remembered her as a mother of immigrants. Today the Church calls her patroness of those who leave their homeland in search of hope.\n\nIf you ever feel like a stranger, afraid, or far from home, remember: Jesus walks with you and gives you saint friends like Cabrini.\n\nSleep in peace: God takes care of you."
+      },
+      "moral": {
+        "es": "Todos somos hermanos y nadie es extranjero para el amor de Dios.",
+        "en": "We are all brothers and sisters, and no one is a stranger to God's love."
+      },
+      "activity": {
+        "es": "Haz hoy un gesto de bienvenida: saluda, comparte o incluye a alguien que se sienta solo.",
+        "en": "Today, make one welcoming gesture: greet, share, or include someone who feels alone."
+      },
+      "readMin": 14,
+      "bedtime": true
     }
   ]
 }

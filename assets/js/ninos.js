@@ -10,6 +10,7 @@
   let currentCuento = null;
   let ttsSpeaking = false;
   let readFilter = 'all';
+  let searchQuery = '';
   let ambientOn = localStorage.getItem(AMBIENT_KEY) !== '0';
   let ambientCtx = null;
   let ambientGain = null;
@@ -173,7 +174,23 @@
     if (currentCuento) openCuento(currentCuento, false);
     updateTtsBtn();
     updateFilterLabels();
+    updateSearchPlaceholder();
     updateAmbientBtn();
+  }
+
+  function normalizeText(v) {
+    return (v || '')
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '');
+  }
+
+  function updateSearchPlaceholder() {
+    const input = document.getElementById('ninosSearch');
+    if (!input) return;
+    input.placeholder = lang === 'en'
+      ? (input.dataset.placeholderEn || 'Search story or saint...')
+      : (input.dataset.placeholderEs || 'Buscar cuento o santo...');
   }
 
   function updateFilterLabels() {
@@ -219,12 +236,30 @@
     const grid = document.getElementById('ninosCuentosGrid');
     if (!grid || !cuentos.length) return;
     grid.innerHTML = '';
-    const list = readFilter === 'unread'
+    const baseList = readFilter === 'unread'
       ? cuentos.filter(c => !readCuentos.has(c.id))
       : cuentos;
+    const query = normalizeText(searchQuery.trim());
+    const list = !query
+      ? baseList
+      : baseList.filter(c => {
+          const bag = [
+            c.id,
+            c.saintId,
+            c.title?.es,
+            c.title?.en,
+            c.hook?.es,
+            c.hook?.en,
+            c.moral?.es,
+            c.moral?.en,
+          ].map(normalizeText).join(' ');
+          return bag.includes(query);
+        });
     if (!list.length) {
       grid.innerHTML = '<p class="ninos-cuentos-sub">' +
-        (lang === 'en' ? 'You read all the stories! 🎉' : '¡Leíste todos los cuentos! 🎉') + '</p>';
+        (query
+          ? (lang === 'en' ? 'No stories found for that search.' : 'No se encontraron cuentos para esa búsqueda.')
+          : (lang === 'en' ? 'You read all the stories! 🎉' : '¡Leíste todos los cuentos! 🎉')) + '</p>';
       updateReadCount();
       return;
     }
@@ -362,6 +397,10 @@
       updateFilterLabels();
       renderCuentos();
     });
+  });
+  document.getElementById('ninosSearch')?.addEventListener('input', e => {
+    searchQuery = e.target.value || '';
+    renderCuentos();
   });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 

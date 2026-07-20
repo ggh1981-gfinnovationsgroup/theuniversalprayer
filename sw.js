@@ -3,7 +3,7 @@
    Cache-first strategy: works fully offline after first load
    ===================================================== */
 
-const CACHE = 'tup-v114';
+const CACHE = 'tup-v118';
 
 // All files to pre-cache on install
 const PRECACHE_URLS = [
@@ -160,6 +160,7 @@ const PRECACHE_URLS = [
   '/assets/images/lourdes.svg',
   '/assets/images/santamariagoretti.svg',
   '/assets/images/preciosisimasangre.svg',
+  '/assets/images/cabrini.svg',
   '/desierto/33dias/',
   '/desierto/33dias/index.html',
   '/assets/images/desierto-33-hero.svg',
@@ -273,6 +274,7 @@ const PRECACHE_URLS = [
   '/data/lourdes.json',
   '/data/santamariagoretti.json',
   '/data/preciosisimasangre.json',
+  '/data/cabrini.json',
 ];
 
 // ── INSTALL: pre-cache everything ─────────────────
