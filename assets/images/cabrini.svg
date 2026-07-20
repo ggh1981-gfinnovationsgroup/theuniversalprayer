@@ -1,97 +1,170 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+﻿<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 600'>
   <defs>
-    <radialGradient id="cb-bg" cx="50%" cy="36%" r="72%">
-      <stop offset="0%" stop-color="#122f5f"/>
-      <stop offset="100%" stop-color="#07162e"/>
+    <radialGradient id='cb-bg' cx='50%' cy='36%' r='72%'>
+      <stop offset='0%' stop-color='#122f5f'/>
+      <stop offset='100%' stop-color='#07162e'/>
     </radialGradient>
-    <linearGradient id="cb-gold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f2d07a"/>
-      <stop offset="100%" stop-color="#b0822a"/>
+    <linearGradient id='cb-ray-left' x1='50%' y1='0%' x2='10%' y2='100%'>
+      <stop offset='0%' stop-color='#f9e091' stop-opacity='1'/>
+      <stop offset='100%' stop-color='#d9a536' stop-opacity='0.3'/>
     </linearGradient>
-    <linearGradient id="cb-habit" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1a1a1a"/>
-      <stop offset="100%" stop-color="#060606"/>
+    <linearGradient id='cb-ray-right' x1='50%' y1='0%' x2='90%' y2='100%'>
+      <stop offset='0%' stop-color='#f9e091' stop-opacity='1'/>
+      <stop offset='100%' stop-color='#d9a536' stop-opacity='0.3'/>
     </linearGradient>
-    <linearGradient id="cb-veil" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#262626"/>
-      <stop offset="100%" stop-color="#0a0a0a"/>
+    <linearGradient id='cb-habit' x1='0' y1='0' x2='0' y2='1'>
+      <stop offset='0%' stop-color='#0d0d0d'/>
+      <stop offset='50%' stop-color='#1a1a1a'/>
+      <stop offset='100%' stop-color='#000000'/>
     </linearGradient>
-    <radialGradient id="cb-skin" cx="50%" cy="36%" r="60%">
-      <stop offset="0%" stop-color="#f4cfaa"/>
-      <stop offset="100%" stop-color="#bf8660"/>
+    <radialGradient id='cb-skin' cx='50%' cy='35%' r='65%'>
+      <stop offset='0%' stop-color='#f5d5b8'/>
+      <stop offset='100%' stop-color='#c79060'/>
     </radialGradient>
-    <filter id="cb-glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="4" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <filter id='cb-glow'>
+      <feGaussianBlur stdDeviation='8' result='b'/>
+      <feMerge>
+        <feMergeNode in='b'/>
+        <feMergeNode in='b'/>
+        <feMergeNode in='SourceGraphic'/>
+      </feMerge>
+    </filter>
+    <filter id='cb-light-glow'>
+      <feGaussianBlur stdDeviation='4' result='b'/>
+      <feMerge>
+        <feMergeNode in='b'/>
+        <feMergeNode in='SourceGraphic'/>
+      </feMerge>
     </filter>
   </defs>
 
-  <rect width="400" height="600" fill="url(#cb-bg)"/>
-  <polygon points="200,252 0,600 0,420" fill="#d4b05a" opacity="0.25"/>
-  <polygon points="200,252 400,420 400,600" fill="#8fb1f0" opacity="0.2"/>
+  <!-- Background with divine light -->
+  <rect width='400' height='600' fill='url(#cb-bg)'/>
+  <rect width='400' height='600' fill='#2a4a7a' opacity='0.08'/>
+  
+  <!-- MASSIVE LIGHT RAYS (like all saints) -->
+  <!-- Left ray -->
+  <polygon points='200,180 -35,520 80,520' fill='url(#cb-ray-left)' filter='url(#cb-glow)' opacity='0.65'/>
+  <polygon points='200,180 25,500 65,500' fill='#f9e091' opacity='0.28'/>
+  
+  <!-- Right ray -->
+  <polygon points='200,180 435,520 320,520' fill='url(#cb-ray-right)' filter='url(#cb-glow)' opacity='0.62'/>
+  <polygon points='200,180 375,500 335,500' fill='#f9e091' opacity='0.25'/>
+  
+  <!-- Center upward ray of hope -->
+  <polygon points='200,100 185,50 215,50' fill='#f9e091' filter='url(#cb-light-glow)' opacity='0.70'/>
+  
+  <!-- Glowing aura circles -->
+  <circle cx='200' cy='180' r='95' fill='none' stroke='#d9a536' stroke-width='2' opacity='0.5'/>
+  <circle cx='200' cy='180' r='110' fill='none' stroke='#f9e091' stroke-width='0.8' opacity='0.25'/>
 
-  <circle cx="200" cy="128" r="58" fill="none" stroke="url(#cb-gold)" stroke-width="2.1" opacity="0.9" filter="url(#cb-glow)"/>
-  <circle cx="200" cy="128" r="50" fill="none" stroke="#f2d07a" stroke-width="0.8" opacity="0.4"/>
+  <!-- Black habit (powerful) -->
+  <path d='M130,200 Q100,270 95,520 L305,520 Q300,270 270,200 Q240,220 200,225 Q160,220 130,200 Z' fill='url(#cb-habit)' opacity='0.98'/>
+  
+  <!-- Habit folds -->
+  <path d='M155,240 Q145,320 142,500' stroke='#2a2a2a' stroke-width='2.5' opacity='0.6' fill='none'/>
+  <path d='M245,240 Q255,320 258,500' stroke='#2a2a2a' stroke-width='2.5' opacity='0.6' fill='none'/>
 
-  <!-- Female religious silhouette with broad veil and black habit -->
-  <path d="M146,176 Q112,236 106,478 L294,478 Q288,236 254,176 Q228,194 200,198 Q172,194 146,176 Z" fill="url(#cb-habit)" opacity="0.95"/>
-  <path d="M166,208 Q158,252 156,474" stroke="#2a2a2a" stroke-width="2" opacity="0.45" fill="none"/>
-  <path d="M234,208 Q242,252 244,474" stroke="#2a2a2a" stroke-width="2" opacity="0.45" fill="none"/>
+  <!-- Veil/coif -->
+  <path d='M125,200 Q135,140 170,110 Q200,90 230,110 Q265,140 275,200 Q255,180 230,170 Q210,165 200,165 Q190,165 170,170 Q145,180 125,200 Z' fill='#2a2a2a' opacity='0.96'/>
 
-  <!-- Veil framing the face -->
-  <path d="M136,176 Q150,136 174,116 Q200,102 226,116 Q250,136 264,176 Q248,164 230,160 Q214,158 200,158 Q186,158 170,160 Q152,164 136,176 Z" fill="url(#cb-veil)" opacity="0.96"/>
+  <!-- POWERFUL ARMS reaching in charity/migration/welcome -->
+  <path d='M145,245 Q100,290 65,360' stroke='#0a0a0a' stroke-width='21' stroke-linecap='round' fill='none'/>
+  <circle cx='62' cy='365' r='14' fill='url(#cb-skin)'/>
+  
+  <path d='M255,245 Q300,290 335,360' stroke='#0a0a0a' stroke-width='21' stroke-linecap='round' fill='none'/>
+  <circle cx='338' cy='365' r='14' fill='url(#cb-skin)'/>
 
-  <!-- Arms and hands -->
-  <path d="M154,226 Q126,250 118,316" stroke="#141414" stroke-width="18" stroke-linecap="round" fill="none"/>
-  <path d="M246,226 Q274,252 282,318" stroke="#141414" stroke-width="18" stroke-linecap="round" fill="none"/>
-  <ellipse cx="116" cy="320" rx="12" ry="9" fill="url(#cb-skin)"/>
-  <ellipse cx="284" cy="322" rx="12" ry="9" fill="url(#cb-skin)"/>
+  <!-- Scapular with golden cross -->
+  <rect x='172' y='265' width='56' height='95' rx='8' fill='#4a3220' opacity='0.95'/>
+  <line x1='200' y1='285' x2='200' y2='340' stroke='#f9e091' stroke-width='2.5' opacity='0.88' filter='url(#cb-light-glow)'/>
+  <line x1='183' y1='310' x2='217' y2='310' stroke='#f9e091' stroke-width='2.5' opacity='0.88' filter='url(#cb-light-glow)'/>
 
-  <!-- Scapular and cross -->
-  <rect x="176" y="230" width="48" height="76" rx="6" fill="#6d4520" opacity="0.92"/>
-  <line x1="200" y1="246" x2="200" y2="290" stroke="#f0cc72" stroke-width="2.2" opacity="0.72"/>
-  <line x1="188" y1="258" x2="212" y2="258" stroke="#f0cc72" stroke-width="2.2" opacity="0.72"/>
+  <!-- Neck -->
+  <rect x='188' y='185' width='24' height='20' rx='7' fill='url(#cb-skin)'/>
 
-  <!-- Neck and face (soft feminine features) -->
-  <rect x="189" y="156" width="22" height="18" rx="6" fill="url(#cb-skin)"/>
-  <ellipse cx="200" cy="132" rx="31" ry="37" fill="url(#cb-skin)"/>
-  <path d="M170,132 Q176,118 186,114" stroke="#7c5238" stroke-width="1.3" opacity="0.35" fill="none"/>
-  <path d="M230,132 Q224,118 214,114" stroke="#7c5238" stroke-width="1.3" opacity="0.35" fill="none"/>
+  <!-- Face -->
+  <ellipse cx='200' cy='145' rx='34' ry='42' fill='url(#cb-skin)'/>
+  
+  <!-- Brow (determined) -->
+  <path d='M175,130 Q185,123 200,123 Q215,123 225,130' stroke='#1a130f' stroke-width='2' fill='none' stroke-linecap='round'/>
 
-  <!-- Brows and eyes -->
-  <path d="M182,124 Q190,120 197,124" stroke="#1c130f" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-  <path d="M203,124 Q210,120 218,124" stroke="#1c130f" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-  <ellipse cx="190" cy="131" rx="4.2" ry="3.6" fill="#0e0a08"/>
-  <ellipse cx="210" cy="131" rx="4.2" ry="3.6" fill="#0e0a08"/>
-  <circle cx="191" cy="130" r="0.9" fill="#fff" opacity="0.55"/>
-  <circle cx="211" cy="130" r="0.9" fill="#fff" opacity="0.55"/>
+  <!-- Eyes - intense -->
+  <ellipse cx='185' cy='140' rx='5' ry='4.5' fill='#0a0805'/>
+  <ellipse cx='215' cy='140' rx='5' ry='4.5' fill='#0a0805'/>
+  <circle cx='186.5' cy='138.5' r='1.2' fill='#fff' opacity='0.7'/>
+  <circle cx='216.5' cy='138.5' r='1.2' fill='#fff' opacity='0.7'/>
+  
+  <!-- Nose -->
+  <path d='M200,142 L197,155 Q200,158 203,155 Z' fill='#9d6e50' opacity='0.35'/>
 
-  <!-- Nose and gentle smile -->
-  <path d="M200,135 L197,145 Q200,147 203,145 Z" fill="#9a6a4f" opacity="0.25"/>
-  <path d="M191,153 Q200,159 209,153" stroke="#8e5d4a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- Mouth (resolve and compassion) -->
+  <path d='M190,163 Q200,170 210,163' stroke='#8b5a3a' stroke-width='2' fill='none' stroke-linecap='round'/>
+  <path d='M190,163 Q200,165 210,163' stroke='#a0674a' stroke-width='1' opacity='0.5' fill='none'/>
 
-  <!-- Rosary and book symbols -->
-  <g opacity="0.84">
-    <rect x="76" y="394" width="42" height="56" rx="3" fill="#51331a"/>
-    <line x1="82" y1="405" x2="112" y2="405" stroke="#cfad74" stroke-width="1"/>
-    <line x1="82" y1="416" x2="112" y2="416" stroke="#cfad74" stroke-width="1"/>
-    <line x1="82" y1="427" x2="112" y2="427" stroke="#cfad74" stroke-width="1"/>
+  <!-- AUREOLE (sainthood) -->
+  <circle cx='200' cy='100' r='46' fill='none' stroke='#f9e091' stroke-width='1.8' opacity='0.7' stroke-dasharray='4,2'/>
+  <circle cx='200' cy='100' r='52' fill='none' stroke='#d9a536' stroke-width='0.8' opacity='0.4'/>
+  
+  <!-- Stars around aureole (heavenly) -->
+  <g fill='#f9e091' opacity='0.8' filter='url(#cb-light-glow)'>
+    <circle cx='165' cy='88' r='2.5'/>
+    <circle cx='235' cy='88' r='2.5'/>
+    <circle cx='185' cy='60' r='2'/>
+    <circle cx='215' cy='60' r='2'/>
+    <circle cx='140' cy='105' r='1.8'/>
+    <circle cx='260' cy='105' r='1.8'/>
   </g>
-  <g opacity="0.84">
-    <circle cx="300" cy="406" r="3" fill="#d6b773"/>
-    <circle cx="307" cy="413" r="3" fill="#d6b773"/>
-    <circle cx="314" cy="420" r="3" fill="#d6b773"/>
-    <circle cx="321" cy="427" r="3" fill="#d6b773"/>
-    <line x1="321" y1="427" x2="330" y2="440" stroke="#d6b773" stroke-width="1.5"/>
-    <line x1="330" y1="440" x2="330" y2="451" stroke="#d6b773" stroke-width="1.5"/>
-    <line x1="324" y1="446" x2="336" y2="446" stroke="#d6b773" stroke-width="1.5"/>
+
+  <!-- Sacred Heart (mission) -->
+  <g opacity='0.85' filter='url(#cb-light-glow)'>
+    <path d='M200,385 L210,400 Q200,410 190,400 Z' fill='none' stroke='#e74c3c' stroke-width='2'/>
+    <circle cx='200' cy='390' r='4.5' fill='none' stroke='#e74c3c' stroke-width='1.2'/>
   </g>
 
-  <rect x="8" y="8" width="384" height="584" rx="8" fill="none" stroke="#cbaa68" stroke-width="1.2" opacity="0.55"/>
-  <rect x="16" y="16" width="368" height="568" rx="6" fill="none" stroke="#cbaa68" stroke-width="0.5" opacity="0.22"/>
+  <!-- SYMBOLS OF IMMIGRANT HOPE AND MISSION -->
+  <!-- Book (education/knowledge for migrants) -->
+  <g opacity='0.75'>
+    <rect x='65' y='430' width='45' height='60' rx='3' fill='#6b4423'/>
+    <line x1='72' y1='442' x2='102' y2='442' stroke='#d9a536' stroke-width='1.2' opacity='0.8'/>
+    <line x1='72' y1='454' x2='102' y2='454' stroke='#d9a536' stroke-width='1.2' opacity='0.8'/>
+    <line x1='72' y1='466' x2='102' y2='466' stroke='#d9a536' stroke-width='1.2' opacity='0.8'/>
+    <line x1='72' y1='478' x2='102' y2='478' stroke='#d9a536' stroke-width='1.2' opacity='0.8'/>
+  </g>
+  
+  <!-- Rosary (prayer for migrants) -->
+  <g opacity='0.75'>
+    <circle cx='310' cy='445' r='4' fill='none' stroke='#d9a536' stroke-width='1.5'/>
+    <circle cx='325' cy='455' r='4' fill='none' stroke='#d9a536' stroke-width='1.5'/>
+    <circle cx='335' cy='470' r='4' fill='none' stroke='#d9a536' stroke-width='1.5'/>
+    <line x1='310' y1='445' x2='325' y2='455' stroke='#d9a536' stroke-width='1'/>
+    <line x1='325' y1='455' x2='335' y2='470' stroke='#d9a536' stroke-width='1'/>
+  </g>
 
-  <rect x="18" y="523" width="364" height="67" rx="6" fill="#050d1a" opacity="0.92"/>
-  <text x="200" y="542" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="#e0c27d" letter-spacing="1.8">SANTA FRANCISCA JAVIER CABRINI · ST. FRANCES XAVIER CABRINI</text>
-  <text x="200" y="560" text-anchor="middle" font-family="Georgia,serif" font-size="12.8" fill="#a8c6ff" font-style="italic">"Habito negro, armadura de fe"</text>
-  <text x="200" y="578" text-anchor="middle" font-family="Georgia,serif" font-size="10.6" fill="#f0cc72" font-style="italic" opacity="0.88">"Black habit, armor of faith"</text>
+  <!-- Dove of hope (immigration, peace, new beginnings) -->
+  <g opacity='0.8' filter='url(#cb-light-glow)'>
+    <ellipse cx='200' cy='420' rx='8' ry='6' fill='#b8d8ff'/>
+    <circle cx='195' cy='415' r='4' fill='#b8d8ff'/>
+    <path d='M185,418 Q180,415 175,418' stroke='#b8d8ff' stroke-width='1.5' fill='none' stroke-linecap='round'/>
+    <path d='M215,418 Q220,415 225,418' stroke='#b8d8ff' stroke-width='1.5' fill='none' stroke-linecap='round'/>
+  </g>
+
+  <!-- Home/shelter symbol (migrants seeking refuge) -->
+  <g opacity='0.7'>
+    <path d='M200,375 L185,390 L185,405 L215,405 L215,390 Z' fill='none' stroke='#c9a84c' stroke-width='1.5' stroke-linejoin='round'/>
+    <line x1='200' y1='390' x2='200' y2='405' stroke='#c9a84c' stroke-width='1'/>
+  </g>
+
+  <!-- Frame -->
+  <rect x='8' y='8' width='384' height='584' rx='8' fill='none' stroke='#cbaa68' stroke-width='1.2' opacity='0.55'/>
+  <rect x='16' y='16' width='368' height='568' rx='6' fill='none' stroke='#cbaa68' stroke-width='0.5' opacity='0.22'/>
+
+  <!-- Footer badge -->
+  <rect x='18' y='523' width='364' height='67' rx='6' fill='#050d1a' opacity='0.92'/>
+  <text x='200' y='542' text-anchor='middle' font-family='Arial,sans-serif' font-size='8' fill='#e0c27d' letter-spacing='1.8'>SANTA FRANCISCA JAVIER CABRINI · ST. FRANCES XAVIER CABRINI</text>
+  <text x='200' y='560' text-anchor='middle' font-family='Georgia,serif' font-size='12.8' fill='#a8c6ff' font-style='italic'>«Hábito negro, armadura de fe»</text>
+  <text x='200' y='578' text-anchor='middle' font-family='Georgia,serif' font-size='10.6' fill='#f0cc72' font-style='italic' opacity='0.88'>«Black habit, armor of faith»</text>
+
+  <!-- Final outer glow -->
+  <circle cx='200' cy='200' r='120' fill='none' stroke='#f9e091' stroke-width='0.5' opacity='0.15' filter='url(#cb-light-glow)'/>
 </svg>
