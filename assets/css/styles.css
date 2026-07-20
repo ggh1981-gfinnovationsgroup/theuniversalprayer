@@ -1942,6 +1942,44 @@ body {
 }
 .hero-install-btn:hover { background: var(--gold); }
 
+.hero-kids-cta {
+  margin: 1.35rem auto 0;
+  max-width: 520px;
+  padding: 0.95rem 1rem 1.05rem;
+  border: 1px solid rgba(158,200,255,0.35);
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(158,200,255,0.12), rgba(201,168,76,0.1));
+  box-shadow: 0 0 24px rgba(158,200,255,0.14);
+}
+
+.hero-kids-label {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #b8d8ff;
+  margin-bottom: 0.55rem;
+}
+
+.hero-kids-link {
+  display: inline-block;
+  font-family: var(--font-serif);
+  font-size: clamp(0.98rem, 2.5vw, 1.16rem);
+  text-decoration: none;
+  color: #fff7d6;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(232,201,122,0.45);
+  background: rgba(201,168,76,0.18);
+  transition: transform var(--transition), background var(--transition), border-color var(--transition);
+}
+
+.hero-kids-link:hover {
+  transform: translateY(-1px);
+  background: rgba(201,168,76,0.3);
+  border-color: rgba(232,201,122,0.8);
+}
+
 /* ── iOS INSTALL MODAL ──────────────────────────── */
 .ios-install-modal {
   position: fixed;
