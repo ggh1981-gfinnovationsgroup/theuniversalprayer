@@ -9,6 +9,7 @@
   let cuentos = [];
   let currentCuento = null;
   let ttsSpeaking = false;
+  let ttsRunId = 0;
   let readFilter = 'all';
   let searchQuery = '';
   let ambientOn = localStorage.getItem(AMBIENT_KEY) !== '0';
@@ -347,34 +348,100 @@
       : (lang === 'en' ? '🌙 Read for sleep' : '🌙 Leer para dormir');
   }
 
+  function cleanSpeechText(text) {
+    return (text || '')
+      .replace(/\*[^*]+\*/g, '')
+      .replace(/#+\s/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  function splitSpeechText(text, maxLen = 220) {
+    const clean = cleanSpeechText(text);
+    if (!clean) return [];
+
+    const paragraphs = clean.split(/\n\s*\n/).map(part => part.trim()).filter(Boolean);
+    const chunks = [];
+
+    const pushSentenceChunks = (segment) => {
+      const sentences = segment.match(/[^.!?…]+[.!?…]+|[^.!?…]+$/g) || [segment];
+      let current = '';
+      for (const sentence of sentences) {
+        const piece = sentence.trim();
+        if (!piece) continue;
+        if (!current) {
+          current = piece;
+          continue;
+        }
+        if ((current + ' ' + piece).length <= maxLen) {
+          current += ' ' + piece;
+        } else {
+          chunks.push(current);
+          current = piece;
+        }
+        while (current.length > maxLen) {
+          chunks.push(current.slice(0, maxLen));
+          current = current.slice(maxLen).trim();
+        }
+      }
+      if (current) chunks.push(current);
+    };
+
+    paragraphs.forEach(pushSentenceChunks);
+    return chunks.length ? chunks : [clean];
+  }
+
+  function getVoiceForLang() {
+    const voices = window.speechSynthesis?.getVoices?.() || [];
+    const preferred = lang === 'es' ? ['es-MX', 'es'] : ['en-US', 'en'];
+    for (const pref of preferred) {
+      const voice = voices.find(v => v.lang && v.lang.startsWith(pref));
+      if (voice) return voice;
+    }
+    return null;
+  }
+
   function speakCuento() {
     if (!currentCuento || !window.speechSynthesis) return;
     if (ttsSpeaking) { stopTts(); return; }
-    const text = currentCuento.story[lang];
+    const chunks = splitSpeechText(currentCuento.story[lang]);
+    if (!chunks.length) return;
     window.speechSynthesis.cancel();
-    const utt = new SpeechSynthesisUtterance(text);
-    utt.lang = lang === 'es' ? 'es-MX' : 'en-US';
-    utt.rate = 0.68;
-    utt.pitch = 1.0;
-    const voices = window.speechSynthesis.getVoices();
-    const voice = voices.find(v => v.lang.startsWith(lang === 'es' ? 'es' : 'en'));
-    if (voice) utt.voice = voice;
-    utt.onstart = () => {
-      // On some mobile browsers, starting TTS can suspend WebAudio; resume it right after speech starts.
-      setTimeout(() => ensureAmbientInModal(), 120);
+    const runId = ++ttsRunId;
+    const speakChunk = (index) => {
+      if (runId !== ttsRunId) return;
+      if (index >= chunks.length) {
+        ttsSpeaking = false;
+        updateTtsBtn();
+        ensureAmbientInModal();
+        return;
+      }
+
+      const utt = new SpeechSynthesisUtterance(chunks[index]);
+      utt.lang = lang === 'es' ? 'es-MX' : 'en-US';
+      utt.rate = 0.68;
+      utt.pitch = 1.0;
+      const voice = getVoiceForLang();
+      if (voice) utt.voice = voice;
+      utt.onstart = () => {
+        // On some mobile browsers, starting TTS can suspend WebAudio; resume it right after speech starts.
+        if (index === 0) setTimeout(() => ensureAmbientInModal(), 120);
+      };
+      utt.onend = utt.onerror = () => {
+        if (runId !== ttsRunId) return;
+        speakChunk(index + 1);
+      };
+      window.speechSynthesis.speak(utt);
     };
-    utt.onend = utt.onerror = () => {
-      ttsSpeaking = false;
-      updateTtsBtn();
-      ensureAmbientInModal();
-    };
+
     ensureAmbientInModal();
-    window.speechSynthesis.speak(utt);
     ttsSpeaking = true;
     updateTtsBtn();
+    speakChunk(0);
   }
 
   function stopTts() {
+    ttsRunId += 1;
     if (window.speechSynthesis) window.speechSynthesis.cancel();
     ttsSpeaking = false;
     updateTtsBtn();

@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vía Crucis Guiado | The Universal Prayer</title>
+  <meta name="description" content="Vía Crucis guiado, paso a paso, con estaciones, catequesis y lectura en voz alta para rezarlo en casa o en comunidad." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Vía Crucis Guiado | The Universal Prayer" />
+  <meta property="og:description" content="Reza el Vía Crucis paso a paso con estaciones guiadas, catequesis y apoyo en voz alta." />
+  <meta property="og:url" content="https://www.theuniversalprayer.com/viacrucis/" />
+  <meta property="og:image" content="https://www.theuniversalprayer.com/assets/images/icon.svg" />
+  <link rel="canonical" href="https://www.theuniversalprayer.com/viacrucis/" />
+  <meta name="theme-color" content="#c9a84c" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" href="/assets/images/icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    body.viacrucis-page {
+      min-height: 100dvh;
+      background:
+        radial-gradient(1000px 600px at 50% -120px, rgba(201,168,76,0.18), transparent 62%),
+        radial-gradient(900px 520px at 90% 0%, rgba(122,168,245,0.10), transparent 50%),
+        var(--bg);
+    }
+
+    .viacrucis-wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 1.4rem 1rem 4rem;
+    }
+
+    .viacrucis-hero {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(201,168,76,0.11), rgba(22,27,46,0.88));
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .viacrucis-hero::before {
+      content: '✦  ✝  ✦  ✝  ✦';
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      color: rgba(231,207,136,0.24);
+      letter-spacing: 0.9em;
+      font-size: 0.72rem;
+      pointer-events: none;
+    }
+
+    .viacrucis-eyebrow {
+      color: var(--gold);
+      letter-spacing: 0.14em;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      margin-bottom: 0.35rem;
+    }
+
+    .viacrucis-title {
+      font-family: var(--font-serif);
+      color: var(--gold-light);
+      font-size: clamp(1.6rem, 3.4vw, 2.6rem);
+      line-height: 1.12;
+      margin-bottom: 0.45rem;
+      max-width: 14ch;
+    }
+
+    .viacrucis-sub {
+      color: var(--white-dim);
+      font-size: 0.96rem;
+      line-height: 1.7;
+      max-width: 68ch;
+    }
+
+    .viacrucis-controls {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .viacrucis-btn,
+    .viacrucis-select {
+      border: 1px solid var(--gold-dim);
+      background: var(--bg-card);
+      color: var(--white);
+      border-radius: 10px;
+      padding: 0.58rem 0.72rem;
+      font-size: 0.9rem;
+    }
+
+    .viacrucis-btn {
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+
+    .viacrucis-btn:hover,
+    .viacrucis-btn:focus-visible {
+      border-color: var(--gold);
+      color: var(--gold-light);
+      outline: none;
+    }
+
+    .viacrucis-catechesis {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(201,168,76,0.08), rgba(21,26,44,0.92));
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .viacrucis-catechesis-title {
+      font-family: var(--font-serif);
+      color: var(--gold-light);
+      font-size: clamp(1.05rem, 2vw, 1.38rem);
+      margin-bottom: 0.3rem;
+    }
+
+    .viacrucis-catechesis-sub {
+      color: var(--white-dim);
+      font-size: 0.92rem;
+      line-height: 1.6;
+      margin-bottom: 0.8rem;
+    }
+
+    .viacrucis-catechesis details {
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.03);
+      padding: 0.6rem 0.72rem;
+      margin-bottom: 0.55rem;
+    }
+
+    .viacrucis-catechesis summary {
+      color: var(--gold-light);
+      font-weight: 700;
+      cursor: pointer;
+      line-height: 1.45;
+    }
+
+    .viacrucis-catechesis p {
+      margin: 0.55rem 0 0;
+      color: var(--white);
+      line-height: 1.75;
+      font-size: 0.94rem;
+      white-space: pre-line;
+    }
+
+    .viacrucis-experience {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .viacrucis-primary,
+    .viacrucis-secondary {
+      min-width: 0;
+    }
+
+    .viacrucis-progress {
+      margin: 0 0 1rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      overflow: hidden;
+      height: 11px;
+      background: rgba(255,255,255,0.06);
+    }
+
+    .viacrucis-progress-fill {
+      width: 0;
+      height: 100%;
+      background: linear-gradient(90deg, var(--gold-dim), var(--gold-light));
+      transition: width 0.28s ease;
+    }
+
+    .viacrucis-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg-card);
+      padding: 1.05rem 1rem;
+      box-shadow: 0 16px 38px rgba(0,0,0,0.18);
+    }
+
+    .viacrucis-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.6rem;
+      color: var(--gold-light);
+      font-size: 0.84rem;
+      margin-bottom: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .viacrucis-station {
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .viacrucis-station-pill {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.72rem;
+    }
+
+    .viacrucis-station-title {
+      font-family: var(--font-serif);
+      color: var(--gold-light);
+      font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+      line-height: 1.25;
+      margin-bottom: 0.1rem;
+    }
+
+    .viacrucis-station-line {
+      padding: 0.85rem 0.95rem;
+      border-left: 3px solid rgba(201,168,76,0.55);
+      background: rgba(201,168,76,0.07);
+      border-radius: 0 12px 12px 0;
+      color: var(--white);
+      line-height: 1.72;
+      white-space: pre-line;
+      font-size: 0.96rem;
+    }
+
+    .viacrucis-station-label {
+      color: var(--gold);
+      font-size: 0.74rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.3rem;
+    }
+
+    .viacrucis-station-response {
+      color: var(--white-dim);
+      line-height: 1.65;
+      font-size: 0.92rem;
+      white-space: pre-line;
+    }
+
+    .viacrucis-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.6rem;
+      margin-top: 0.2rem;
+    }
+
+    .viacrucis-actions .viacrucis-btn {
+      min-height: 46px;
+    }
+
+    .viacrucis-actions .full {
+      grid-column: 1 / -1;
+      border-color: rgba(92, 194, 158, 0.58);
+      background: rgba(58, 142, 115, 0.16);
+      color: #c6f5e8;
+    }
+
+    .viacrucis-actions .full:hover,
+    .viacrucis-actions .full:focus-visible {
+      border-color: rgba(128, 224, 191, 0.82);
+      background: rgba(58, 142, 115, 0.26);
+      color: #e8fff6;
+    }
+
+    .viacrucis-note {
+      color: var(--white-dim);
+      font-size: 0.82rem;
+      margin-top: 0.45rem;
+      line-height: 1.5;
+    }
+
+    .viacrucis-complete {
+      margin-top: 1rem;
+      border: 1px solid rgba(201,168,76,0.32);
+      border-radius: 14px;
+      background: linear-gradient(180deg, rgba(201,168,76,0.14), rgba(255,255,255,0.03));
+      padding: 0.95rem;
+      display: none;
+    }
+
+    .viacrucis-complete-title {
+      color: var(--gold-light);
+      font-family: var(--font-serif);
+      font-size: 1.08rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .viacrucis-complete-text {
+      color: var(--white-dim);
+      font-size: 0.9rem;
+      margin-bottom: 0.7rem;
+      line-height: 1.58;
+    }
+
+    .viacrucis-nav-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(201,168,76,0.08), rgba(21,26,44,0.9));
+      padding: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .viacrucis-nav-title {
+      color: var(--gold-light);
+      font-family: var(--font-serif);
+      font-size: 1.02rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .viacrucis-nav-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.45rem;
+    }
+
+    .viacrucis-nav-btn {
+      border: 1px solid rgba(201,168,76,0.22);
+      background: rgba(255,255,255,0.03);
+      color: var(--white-dim);
+      border-radius: 12px;
+      padding: 0.5rem 0.35rem;
+      cursor: pointer;
+      transition: all var(--transition);
+      min-height: 52px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      gap: 0.12rem;
+    }
+
+    .viacrucis-nav-btn span {
+      display: block;
+      line-height: 1.15;
+    }
+
+    .viacrucis-nav-btn .step-num {
+      color: var(--gold-light);
+      font-weight: 700;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .viacrucis-nav-btn .step-name {
+      font-size: 0.82rem;
+    }
+
+    .viacrucis-nav-btn.active {
+      color: var(--bg);
+      background: var(--gold);
+      border-color: var(--gold-light);
+      box-shadow: 0 0 18px rgba(201,168,76,0.28);
+    }
+
+    .viacrucis-visual {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(201,168,76,0.06), rgba(21,26,44,0.9));
+      padding: 1rem;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+
+    .viacrucis-visual svg {
+      width: 100%;
+      height: auto;
+      display: block;
+      max-width: 340px;
+      margin: 0 auto;
+    }
+
+    .viacrucis-visual-label {
+      color: var(--gold-light);
+      font-size: 0.84rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+
+    .viacrucis-visual-copy {
+      color: var(--white-dim);
+      line-height: 1.6;
+      font-size: 0.9rem;
+      margin-top: 0.75rem;
+    }
+
+    @media (max-width: 900px) {
+      .viacrucis-experience {
+        grid-template-columns: 1fr;
+      }
+
+      .viacrucis-nav-grid {
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+        overflow-x: auto;
+        padding-bottom: 0.1rem;
+      }
+
+      .viacrucis-nav-btn {
+        min-width: 68px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .viacrucis-wrap {
+        padding: 0.9rem 0.75rem 6rem;
+      }
+
+      .viacrucis-hero {
+        padding: 1rem 0.95rem;
+      }
+
+      .viacrucis-title {
+        max-width: 100%;
+      }
+
+      .viacrucis-sub {
+        font-size: 0.9rem;
+      }
+
+      .viacrucis-nav-grid {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+      }
+
+      .viacrucis-actions {
+        position: fixed;
+        left: 0.75rem;
+        right: 0.75rem;
+        bottom: calc(env(safe-area-inset-bottom, 0px) + 0.6rem);
+        grid-template-columns: 1fr 1fr;
+        padding: 0.65rem;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        background: rgba(21,26,44,0.96);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 -10px 24px rgba(0,0,0,0.24);
+        z-index: 12;
+      }
+
+      .viacrucis-actions .full {
+        grid-column: 1 / -1;
+      }
+
+      .viacrucis-card {
+        padding-bottom: 5.8rem;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .viacrucis-wrap {
+        padding-inline: 0.65rem;
+      }
+
+      .viacrucis-nav-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .viacrucis-btn,
+      .viacrucis-select {
+        width: 100%;
+      }
+
+      .viacrucis-controls {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .viacrucis-actions {
+        left: 0.65rem;
+        right: 0.65rem;
+      }
+    }
+  </style>
+</head>
+<body class="viacrucis-page">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link">
+        <span class="cross">✝</span>
+        <span class="logo-text">The Universal Prayer</span>
+      </a>
+      <button class="lang-toggle" id="langToggle" aria-label="Toggle language">EN</button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="viacrucis-wrap">
+    <section class="viacrucis-hero">
+      <div class="viacrucis-eyebrow" id="heroEyebrow">✝ Vía Crucis Guiado</div>
+      <h1 class="viacrucis-title" id="heroTitle">Reza el Vía Crucis paso a paso</h1>
+      <p class="viacrucis-sub" id="heroSub">Una guía clara para aprender a acompañar a Jesús en su Pasión. El Papa san Juan Pablo II lo rezaba y lo recomendó como una oración profundamente cristocéntrica.</p>
+      <div class="viacrucis-controls">
+        <button class="viacrucis-btn" id="restartBtn" type="button">↺ Reiniciar</button>
+        <button class="viacrucis-btn" id="openFirstBtn" type="button">▶ Empezar desde la estación 1</button>
+      </div>
+    </section>
+
+    <section class="viacrucis-catechesis" aria-label="Catequesis del Vía Crucis">
+      <h2 class="viacrucis-catechesis-title" data-lang="es">¿Qué es el Vía Crucis?</h2>
+      <h2 class="viacrucis-catechesis-title" data-lang="en" style="display:none">What is the Way of the Cross?</h2>
+      <p class="viacrucis-catechesis-sub" data-lang="es">Es una oración que contempla el camino de Jesús hacia el Calvario. En cada estación lo miramos, lo seguimos y dejamos que su Cruz toque nuestra vida real.</p>
+      <p class="viacrucis-catechesis-sub" data-lang="en" style="display:none">It is a prayer that contemplates Jesus' path to Calvary. At each station we look at Him, follow Him, and let His Cross touch our real life.</p>
+
+      <details>
+        <summary data-lang="es">1) ¿Cómo se reza?</summary>
+        <summary data-lang="en" style="display:none">1) How is it prayed?</summary>
+        <p data-lang="es">Comienza con la Señal de la Cruz. Después puedes hacer un acto de contrición, anunciar la primera estación, decir la respuesta tradicional y meditar un momento antes de pasar a la siguiente.
+
+Respuesta común: «Te adoramos, Cristo, y te bendecimos. Porque por tu santa cruz redimiste al mundo.»</p>
+        <p data-lang="en" style="display:none">Begin with the Sign of the Cross. Then you may make an act of contrition, announce the first station, say the traditional response, and pause for a moment before moving to the next one.
+
+Common response: "We adore You, O Christ, and we bless You. Because by Your holy cross You have redeemed the world."</p>
+      </details>
+
+      <details>
+        <summary data-lang="es">2) ¿Por qué ayuda tanto?</summary>
+        <summary data-lang="en" style="display:none">2) Why does it help so much?</summary>
+        <p data-lang="es">Porque nos enseña a no huir del sufrimiento, sino a ofrecerlo con Cristo. El Vía Crucis transforma la cruz en oración, la tristeza en confianza y la culpa en regreso a Dios.</p>
+        <p data-lang="en" style="display:none">Because it teaches us not to flee suffering, but to offer it with Christ. The Way of the Cross turns the cross into prayer, sorrow into trust, and guilt into a return to God.</p>
+      </details>
+
+      <details>
+        <summary data-lang="es">3) San Juan Pablo II y esta oración</summary>
+        <summary data-lang="en" style="display:none">3) Saint John Paul II and this prayer</summary>
+        <p data-lang="es">San Juan Pablo II amó mucho esta devoción y la rezó en momentos importantes de su vida. Su mensaje era claro: si quieres entender a Cristo, sigue su Cruz con la Iglesia.</p>
+        <p data-lang="en" style="display:none">Saint John Paul II loved this devotion and prayed it at important moments in his life. His message was clear: if you want to understand Christ, follow His Cross with the Church.</p>
+      </details>
+
+      <details>
+        <summary data-lang="es">4) ¿Cuándo rezarlo?</summary>
+        <summary data-lang="en" style="display:none">4) When should I pray it?</summary>
+        <p data-lang="es">Es muy propio rezarlo en Cuaresma y Viernes Santo, pero también puede rezarse cualquier día. En casa, en una parroquia o en grupo, siempre vuelve a poner el corazón junto a Jesús.</p>
+        <p data-lang="en" style="display:none">It is especially fitting during Lent and on Good Friday, but it can be prayed any day. At home, in a parish, or in a group, it always brings the heart back beside Jesus.</p>
+      </details>
+    </section>
+
+    <section class="viacrucis-experience">
+      <div class="viacrucis-primary">
+        <div class="viacrucis-progress" aria-hidden="true">
+          <div class="viacrucis-progress-fill" id="progressFill"></div>
+        </div>
+
+        <section class="viacrucis-card">
+          <div class="viacrucis-meta">
+            <span id="metaStation">Estación 1 de 14</span>
+            <span id="metaStep">Paso 1</span>
+          </div>
+          <div class="viacrucis-station">
+            <div>
+              <div class="viacrucis-station-pill" id="stationPill">Estación actual</div>
+              <h2 class="viacrucis-station-title" id="stationTitle"></h2>
+            </div>
+            <div>
+              <div class="viacrucis-station-label" data-lang="es">Lectura breve</div>
+              <div class="viacrucis-station-label" data-lang="en" style="display:none">Short reading</div>
+              <div class="viacrucis-station-line" id="stationReading"></div>
+            </div>
+            <div>
+              <div class="viacrucis-station-label" data-lang="es">Meditación</div>
+              <div class="viacrucis-station-label" data-lang="en" style="display:none">Meditation</div>
+              <div class="viacrucis-station-line" id="stationMeditation"></div>
+            </div>
+            <div>
+              <div class="viacrucis-station-label" data-lang="es">Respuesta</div>
+              <div class="viacrucis-station-label" data-lang="en" style="display:none">Response</div>
+              <div class="viacrucis-station-response" id="stationResponse"></div>
+            </div>
+            <div>
+              <div class="viacrucis-station-label" data-lang="es">Oración breve</div>
+              <div class="viacrucis-station-label" data-lang="en" style="display:none">Short prayer</div>
+              <div class="viacrucis-station-line" id="stationPrayer"></div>
+            </div>
+          </div>
+
+          <div class="viacrucis-actions">
+            <button class="viacrucis-btn full" id="ttsAllBtn" type="button">▶ Leer guía completa</button>
+            <button class="viacrucis-btn" id="ttsStationBtn" type="button">🔊 Leer estación</button>
+            <button class="viacrucis-btn" id="ttsStopBtn" type="button">⏹ Detener</button>
+            <button class="viacrucis-btn" id="prevBtn" type="button">← Anterior</button>
+            <button class="viacrucis-btn" id="nextBtn" type="button">Siguiente →</button>
+          </div>
+          <div class="viacrucis-note" id="ttsNoSupport" style="display:none">Tu navegador no soporta lectura en voz alta en esta página.</div>
+
+          <section class="viacrucis-complete" id="completeCard" aria-live="polite">
+            <h3 class="viacrucis-complete-title" id="completeTitle">Has terminado el Vía Crucis</h3>
+            <p class="viacrucis-complete-text" id="completeText">Puedes volver al inicio para rezarlo de nuevo o elegir una estación para meditar más despacio.</p>
+            <button class="viacrucis-btn" id="restartInlineBtn" type="button">↺ Rezar de nuevo</button>
+          </section>
+        </section>
+      </div>
+
+      <aside class="viacrucis-secondary">
+        <section class="viacrucis-nav-card">
+          <h2 class="viacrucis-nav-title" data-lang="es">Estaciones</h2>
+          <h2 class="viacrucis-nav-title" data-lang="en" style="display:none">Stations</h2>
+          <div class="viacrucis-nav-grid" id="stationNav"></div>
+        </section>
+
+        <section class="viacrucis-visual">
+          <div class="viacrucis-visual-label" data-lang="es">Camino de la Cruz</div>
+          <div class="viacrucis-visual-label" data-lang="en" style="display:none">The Way of the Cross</div>
+          <svg viewBox="0 0 340 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="viacrucisSvgTitle">
+            <title id="viacrucisSvgTitle">Vía Crucis</title>
+            <defs>
+              <radialGradient id="vcGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#fff4cf" stop-opacity="0.92" />
+                <stop offset="65%" stop-color="#e7cf88" stop-opacity="0.44" />
+                <stop offset="100%" stop-color="#e7cf88" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+            <circle cx="170" cy="205" r="42" fill="url(#vcGlow)" opacity="0.88" />
+            <path d="M170 54 L170 284" fill="none" stroke="rgba(201,168,76,0.7)" stroke-width="9" stroke-linecap="round" />
+            <path d="M110 120 L230 120" fill="none" stroke="rgba(201,168,76,0.7)" stroke-width="9" stroke-linecap="round" />
+            <path d="M142 284 C124 310, 120 334, 132 368" fill="none" stroke="rgba(201,168,76,0.52)" stroke-width="8" stroke-linecap="round" />
+            <path d="M198 284 C216 310, 220 334, 208 368" fill="none" stroke="rgba(201,168,76,0.52)" stroke-width="8" stroke-linecap="round" />
+            <rect x="162" y="78" width="16" height="180" rx="8" fill="rgba(201,168,76,0.2)" stroke="rgba(201,168,76,0.7)" />
+            <rect x="106" y="114" width="128" height="18" rx="9" fill="rgba(201,168,76,0.2)" stroke="rgba(201,168,76,0.7)" />
+            <g fill="none" stroke="rgba(231,207,136,0.82)" stroke-width="2">
+              <circle cx="170" cy="72" r="12" />
+              <circle cx="170" cy="124" r="8" />
+              <circle cx="170" cy="164" r="8" />
+              <circle cx="170" cy="206" r="8" />
+              <circle cx="170" cy="246" r="8" />
+              <circle cx="170" cy="284" r="8" />
+              <circle cx="138" cy="317" r="7" />
+              <circle cx="202" cy="317" r="7" />
+              <circle cx="142" cy="354" r="7" />
+              <circle cx="198" cy="354" r="7" />
+            </g>
+            <text x="170" y="206" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#f9e7b0">✝</text>
+          </svg>
+          <p class="viacrucis-visual-copy" data-lang="es">Si lo rezas en familia, deja un momento de silencio entre estación y estación. La Cruz no se corre: se contempla.</p>
+          <p class="viacrucis-visual-copy" data-lang="en" style="display:none">If you pray it as a family, leave a moment of silence between each station. The Cross is not rushed: it is contemplated.</p>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p data-lang="es">Un recurso devocional católico gratuito. Sin anuncios. Sin rastreo.</p>
+    <p data-lang="en" style="display:none">A free Catholic devotional resource. No ads. No tracking.</p>
+  </footer>
+
+  <script src="../assets/js/menu.js"></script>
+  <script>
+    (function() {
+      'use strict';
+      const LANG_KEY = 'tup_lang';
+      const storedLang = localStorage.getItem(LANG_KEY);
+      const initialLang = storedLang === 'en' ? 'en' : 'es';
+
+      const STATIONS = [
+        {
+          title: { es: '1. Jesús es condenado a muerte', en: '1. Jesus is condemned to death' },
+          reading: {
+            es: 'Pilato entrega a Jesús para ser crucificado. La inocencia queda delante de la injusticia sin responder con violencia.',
+            en: 'Pilate hands Jesus over to be crucified. Innocence stands before injustice without replying with violence.'
+          },
+          meditation: {
+            es: 'Señor, cuántas veces juzgamos rápido y sin escuchar. Danos un corazón humilde que busque la verdad sin dureza.',
+            en: 'Lord, how often we judge too quickly and without listening. Give us a humble heart that seeks truth without hardness.'
+          },
+          prayer: {
+            es: 'Jesús, enséñanos a obedecer al Padre con paz.',
+            en: 'Jesus, teach us to obey the Father in peace.'
+          }
+        },
+        {
+          title: { es: '2. Jesús carga con la cruz', en: '2. Jesus takes up His Cross' },
+          reading: {
+            es: 'Jesús toma la cruz y comienza a caminar. No la evita: la abraza por amor a nosotros.',
+            en: 'Jesus takes up the cross and begins to walk. He does not avoid it: He embraces it out of love for us.'
+          },
+          meditation: {
+            es: 'A veces también nosotros queremos huir del peso del día. Hoy te pedimos gracia para llevar lo que nos toca con fe.',
+            en: 'Sometimes we also want to escape the weight of the day. Today we ask for the grace to carry what is ours with faith.'
+          },
+          prayer: {
+            es: 'Señor, no dejes que rechacemos la cruz que nos salva.',
+            en: 'Lord, do not let us reject the cross that saves us.'
+          }
+        },
+        {
+          title: { es: '3. Jesús cae por primera vez', en: '3. Jesus falls for the first time' },
+          reading: {
+            es: 'El camino hiere el cuerpo de Jesús y Él cae. Aun así, no abandona la misión que el Padre le confió.',
+            en: 'The road wounds Jesus' + "'" + ' body and He falls. Even so, He does not abandon the mission the Father gave Him.'
+          },
+          meditation: {
+            es: 'Cuando caemos, pensamos que ya terminamos. Pero contigo, Señor, cada caída puede convertirse en humildad y regreso.',
+            en: 'When we fall, we think we are finished. But with You, Lord, every fall can become humility and a return.'
+          },
+          prayer: {
+            es: 'Jesús, levántanos cuando el cansancio nos derribe.',
+            en: 'Jesus, lift us up when tiredness brings us low.'
+          }
+        },
+        {
+          title: { es: '4. Jesús encuentra a su Madre', en: '4. Jesus meets His Mother' },
+          reading: {
+            es: 'En medio del dolor, Jesús ve a María. Ninguna herida borra el amor de una Madre que permanece fiel.',
+            en: 'In the middle of sorrow, Jesus sees Mary. No wound erases the love of a Mother who remains faithful.'
+          },
+          meditation: {
+            es: 'María no quita la cruz, pero acompaña. Enséñanos a acompañar sin huir cuando otros sufren.',
+            en: 'Mary does not remove the cross, but she accompanies. Teach us to stay close without fleeing when others suffer.'
+          },
+          prayer: {
+            es: 'Madre Dolorosa, llévanos siempre a Jesús.',
+            en: 'Sorrowful Mother, always lead us to Jesus.'
+          }
+        },
+        {
+          title: { es: '5. El Cirineo ayuda a Jesús', en: '5. Simon of Cyrene helps Jesus' },
+          reading: {
+            es: 'Simón recibe la cruz de Jesús por un momento y lo ayuda a llevarla. El amor verdadero se hace carga compartida.',
+            en: 'Simon receives Jesus' + "'" + ' cross for a moment and helps Him carry it. True love becomes a shared burden.'
+          },
+          meditation: {
+            es: 'Señor, muéstranos a quién debemos ayudar hoy. También nosotros queremos ser cirineos para quien cae a nuestro lado.',
+            en: 'Lord, show us who we must help today. We also want to be Cyrenians for the one who falls beside us.'
+          },
+          prayer: {
+            es: 'Haznos servidores sencillos y generosos.',
+            en: 'Make us simple and generous servants.'
+          }
+        },
+        {
+          title: { es: '6. La Verónica enjuga el rostro de Jesús', en: '6. Veronica wipes the face of Jesus' },
+          reading: {
+            es: 'Una mujer se acerca con valentía y consuela el rostro de Cristo. Un gesto pequeño queda marcado por el amor.',
+            en: 'A woman approaches with courage and consoles the face of Christ. A small gesture is marked forever by love.'
+          },
+          meditation: {
+            es: 'Cuántas veces el bien empieza en algo pequeño. Que no nos falten manos limpias, palabras suaves y ternura concreta.',
+            en: 'So often, goodness begins with something small. May we never lack clean hands, gentle words, and concrete tenderness.'
+          },
+          prayer: {
+            es: 'Jesús, imprime tu rostro en nuestro corazón.',
+            en: 'Jesus, print Your face on our hearts.'
+          }
+        },
+        {
+          title: { es: '7. Jesús cae por segunda vez', en: '7. Jesus falls for the second time' },
+          reading: {
+            es: 'La cruz vuelve a golpear el cuerpo de Jesús. Su caída nos recuerda la paciencia silenciosa de Dios.',
+            en: 'The cross strikes Jesus' + "'" + ' body again. His fall reminds us of God' + "'" + 's silent patience.'
+          },
+          meditation: {
+            es: 'A veces repetimos el mismo pecado o el mismo miedo. Jesús cae y sigue: así nos enseña a volver a empezar.',
+            en: 'Sometimes we repeat the same sin or the same fear. Jesus falls and continues: He teaches us to begin again.'
+          },
+          prayer: {
+            es: 'Señor, no permitas que nos rindamos.',
+            en: 'Lord, do not let us give up.'
+          }
+        },
+        {
+          title: { es: '8. Jesús consuela a las mujeres de Jerusalén', en: '8. Jesus consoles the women of Jerusalem' },
+          reading: {
+            es: 'Jesús habla a las mujeres que lloran por Él y les muestra un dolor más profundo: el del corazón que se aparta de Dios.',
+            en: 'Jesus speaks to the women who weep for Him and points to a deeper sorrow: the heart that turns away from God.'
+          },
+          meditation: {
+            es: 'No basta con llorar un problema; hace falta cambiar el corazón. Concédenos una compasión que también nos convierta.',
+            en: 'It is not enough to cry over a problem; the heart also needs to change. Grant us compassion that also converts us.'
+          },
+          prayer: {
+            es: 'Jesús, convierte nuestro llanto en penitencia fecunda.',
+            en: 'Jesus, turn our tears into fruitful repentance.'
+          }
+        },
+        {
+          title: { es: '9. Jesús cae por tercera vez', en: '9. Jesus falls for the third time' },
+          reading: {
+            es: 'Jesús llega al límite humano del dolor. Caer otra vez no destruye su amor: lo muestra más fuerte.',
+            en: 'Jesus reaches the human limit of pain. Falling again does not destroy His love: it reveals it as stronger.'
+          },
+          meditation: {
+            es: 'Cuando ya no damos más, Tú sigues. Danos perseverancia para no dejar la cruz a medias.',
+            en: 'When we can no longer go on, You continue. Give us perseverance so we do not leave the cross halfway.'
+          },
+          prayer: {
+            es: 'Jesús, sostén al que está por caer de nuevo.',
+            en: 'Jesus, sustain the one who is about to fall again.'
+          }
+        },
+        {
+          title: { es: '10. Jesús es despojado de sus vestiduras', en: '10. Jesus is stripped of His garments' },
+          reading: {
+            es: 'Cristo queda despojado de todo. Ya no guarda nada para sí: entrega incluso su dignidad visible.',
+            en: 'Christ is stripped of everything. He keeps nothing for Himself: He gives even His visible dignity.'
+          },
+          meditation: {
+            es: 'Señor, tú conoces nuestra vergüenza, nuestra exposición y nuestros miedos. Cúbrenos con tu misericordia.',
+            en: 'Lord, You know our shame, our exposure, and our fears. Cover us with Your mercy.'
+          },
+          prayer: {
+            es: 'Haznos puros de corazón y sencillos delante de Ti.',
+            en: 'Make us pure of heart and simple before You.'
+          }
+        },
+        {
+          title: { es: '11. Jesús es clavado en la cruz', en: '11. Jesus is nailed to the Cross' },
+          reading: {
+            es: 'Manos y pies de Jesús son fijados al madero. El amor de Dios acepta la herida para abrirnos el cielo.',
+            en: 'Jesus' + "'" + ' hands and feet are fixed to the wood. God' + "'" + 's love accepts the wound to open heaven for us.'
+          },
+          meditation: {
+            es: 'Aquí contemplamos el precio de nuestro pecado y la grandeza de tu misericordia. No permitas que nos acostumbremos a la Cruz.',
+            en: 'Here we contemplate the price of our sin and the greatness of Your mercy. Do not let us get used to the Cross.'
+          },
+          prayer: {
+            es: 'Jesús crucificado, haznos fieles hasta el final.',
+            en: 'Crucified Jesus, make us faithful to the end.'
+          }
+        },
+        {
+          title: { es: '12. Jesús muere en la cruz', en: '12. Jesus dies on the Cross' },
+          reading: {
+            es: 'Jesús entrega el espíritu al Padre. Su muerte no es derrota: es la entrega total del Hijo que ama hasta el extremo.',
+            en: 'Jesus gives up His spirit to the Father. His death is not defeat: it is the total surrender of the Son who loves to the end.'
+          },
+          meditation: {
+            es: 'Ante la Cruz, aprendemos que el amor verdadero no se guarda nada. Recibe nuestra vida como ofrenda.',
+            en: 'Before the Cross, we learn that true love keeps nothing back. Receive our life as an offering.'
+          },
+          prayer: {
+            es: 'Padre, en tus manos entregamos todo.',
+            en: 'Father, into Your hands we surrender everything.'
+          }
+        },
+        {
+          title: { es: '13. Jesús es bajado de la cruz', en: '13. Jesus is taken down from the Cross' },
+          reading: {
+            es: 'El cuerpo de Jesús es puesto en los brazos de su Madre. El dolor se vuelve silencioso y santo.',
+            en: 'Jesus' + "'" + ' body is placed in His Mother' + "'" + 's arms. Sorrow becomes silent and holy.'
+          },
+          meditation: {
+            es: 'María recibe el cuerpo de su Hijo y no deja de amar. Enséñanos a sostener a quien sufre sin desesperarnos.',
+            en: 'Mary receives her Son' + "'" + 's body and does not stop loving. Teach us to hold the suffering without despair.'
+          },
+          prayer: {
+            es: 'Madre fiel, acompáñanos en la hora del dolor.',
+            en: 'Faithful Mother, stay with us in the hour of sorrow.'
+          }
+        },
+        {
+          title: { es: '14. Jesús es sepultado', en: '14. Jesus is laid in the tomb' },
+          reading: {
+            es: 'Jesús es colocado en el sepulcro y el silencio cubre la tierra. Pero el silencio de Dios prepara la mañana de la Resurrección.',
+            en: 'Jesus is placed in the tomb and silence covers the earth. But God' + "'" + 's silence prepares the morning of the Resurrection.'
+          },
+          meditation: {
+            es: 'Cuando todo parece cerrado, tú sigues obrando. Ayúdanos a esperar con fe cuando no vemos todavía tu luz.',
+            en: 'When everything seems closed, You are still working. Help us to wait in faith when we do not yet see Your light.'
+          },
+          prayer: {
+            es: 'Jesús, danos esperanza hasta el amanecer de tu Pascua.',
+            en: 'Jesus, give us hope until the dawn of Your Easter.'
+          }
+        }
+      ];
+
+      const FINAL_PRAYER = {
+        es: 'Señor Jesús, hemos seguido tu camino de dolor y amor. Que este Vía Crucis nos enseñe a cargar la cruz con fe, a amar sin medidas y a esperar tu Resurrección con esperanza viva. Amén.',
+        en: 'Lord Jesus, we have followed Your path of sorrow and love. May this Way of the Cross teach us to carry the cross with faith, to love without measure, and to hope for Your Resurrection with living hope. Amen.'
+      };
+
+      const INTRO_SEQUENCE = {
+        es: 'En el nombre del Padre, y del Hijo, y del Espíritu Santo. Amén. Señor Jesús, comenzamos este camino contigo.',
+        en: 'In the name of the Father, and of the Son, and of the Holy Spirit. Amen. Lord Jesus, we begin this path with You.'
+      };
+
+      const stationNav = document.getElementById('stationNav');
+      const stationTitle = document.getElementById('stationTitle');
+      const stationReading = document.getElementById('stationReading');
+      const stationMeditation = document.getElementById('stationMeditation');
+      const stationResponse = document.getElementById('stationResponse');
+      const stationPrayer = document.getElementById('stationPrayer');
+      const progressFill = document.getElementById('progressFill');
+      const metaStation = document.getElementById('metaStation');
+      const metaStep = document.getElementById('metaStep');
+      const completeCard = document.getElementById('completeCard');
+      const completeTitle = document.getElementById('completeTitle');
+      const completeText = document.getElementById('completeText');
+      const stationPill = document.getElementById('stationPill');
+      const heroTitle = document.getElementById('heroTitle');
+      const heroSub = document.getElementById('heroSub');
+      const heroEyebrow = document.getElementById('heroEyebrow');
+      const ttsNoSupport = document.getElementById('ttsNoSupport');
+      const ttsAllBtn = document.getElementById('ttsAllBtn');
+      const ttsStationBtn = document.getElementById('ttsStationBtn');
+      const ttsStopBtn = document.getElementById('ttsStopBtn');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const restartBtn = document.getElementById('restartBtn');
+      const restartInlineBtn = document.getElementById('restartInlineBtn');
+      const openFirstBtn = document.getElementById('openFirstBtn');
+
+      let currentLang = initialLang;
+      let currentStation = 0;
+      let speaking = false;
+      let speakRunId = 0;
+
+      function cleanSpeechText(text) {
+        return (text || '')
+          .replace(/\*[^*]+\*/g, '')
+          .replace(/#+\s/g, '')
+          .replace(/\s+/g, ' ')
+          .trim();
+      }
+
+      function splitSpeechText(text, maxLen = 220) {
+        const clean = cleanSpeechText(text);
+        if (!clean) return [];
+        const segments = clean.split(/(?<=[.!?])\s+/).filter(Boolean);
+        const chunks = [];
+        let current = '';
+        segments.forEach(segment => {
+          if (!current) {
+            current = segment;
+            return;
+          }
+          if ((current + ' ' + segment).length <= maxLen) {
+            current += ' ' + segment;
+          } else {
+            chunks.push(current);
+            current = segment;
+          }
+          while (current.length > maxLen) {
+            chunks.push(current.slice(0, maxLen));
+            current = current.slice(maxLen).trim();
+          }
+        });
+        if (current) chunks.push(current);
+        return chunks.length ? chunks : [clean];
+      }
+
+      function getVoiceForLang() {
+        const voices = window.speechSynthesis?.getVoices?.() || [];
+        const preferred = currentLang === 'es' ? ['es-MX', 'es'] : ['en-US', 'en'];
+        for (const pref of preferred) {
+          const voice = voices.find(v => v.lang && v.lang.startsWith(pref));
+          if (voice) return voice;
+        }
+        return null;
+      }
+
+      function updateTextBlocks() {
+        document.querySelectorAll('[data-lang]').forEach(el => {
+          el.style.display = el.dataset.lang === currentLang ? '' : 'none';
+        });
+        document.documentElement.lang = currentLang;
+        document.getElementById('langToggle').textContent = currentLang === 'es' ? 'EN' : 'ES';
+        heroEyebrow.textContent = currentLang === 'es' ? '✝ Vía Crucis Guiado' : '✝ Guided Way of the Cross';
+        heroTitle.textContent = currentLang === 'es' ? 'Reza el Vía Crucis paso a paso' : 'Pray the Way of the Cross step by step';
+        heroSub.textContent = currentLang === 'es'
+          ? 'Una guía clara para aprender a acompañar a Jesús en su Pasión. El Papa san Juan Pablo II lo rezaba y lo recomendó como una oración profundamente cristocéntrica.'
+          : 'A clear guide to learn how to accompany Jesus in His Passion. Pope Saint John Paul II prayed it and recommended it as a deeply Christ-centered prayer.';
+        ttsAllBtn.textContent = currentLang === 'es' ? '▶ Leer guía completa' : '▶ Read full guide';
+        ttsStationBtn.textContent = currentLang === 'es' ? '🔊 Leer estación' : '🔊 Read station';
+        ttsStopBtn.textContent = currentLang === 'es' ? '⏹ Detener' : '⏹ Stop';
+        prevBtn.textContent = currentLang === 'es' ? '← Anterior' : '← Previous';
+        nextBtn.textContent = currentLang === 'es' ? 'Siguiente →' : 'Next →';
+        restartBtn.textContent = currentLang === 'es' ? '↺ Reiniciar' : '↺ Restart';
+        restartInlineBtn.textContent = currentLang === 'es' ? '↺ Rezar de nuevo' : '↺ Pray again';
+        openFirstBtn.textContent = currentLang === 'es' ? '▶ Empezar desde la estación 1' : '▶ Start from station 1';
+        completeTitle.textContent = currentLang === 'es' ? 'Has terminado el Vía Crucis' : 'You have finished the Way of the Cross';
+        completeText.textContent = currentLang === 'es'
+          ? 'Puedes volver al inicio para rezarlo de nuevo o elegir una estación para meditar más despacio.'
+          : 'You can return to the beginning and pray it again, or choose a station to meditate more slowly.';
+        stationPill.textContent = currentLang === 'es' ? 'Estación actual' : 'Current station';
+        renderStations();
+        renderStation();
+      }
+
+      function renderStations() {
+        stationNav.innerHTML = '';
+        STATIONS.forEach((station, index) => {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'viacrucis-nav-btn' + (index === currentStation ? ' active' : '');
+          btn.title = station.title[currentLang];
+          btn.innerHTML = '<span class="step-num">' + String(index + 1).padStart(2, '0') + '</span>' +
+            '<span class="step-name">' + station.title[currentLang].split('. ').slice(1).join('. ') + '</span>';
+          btn.addEventListener('click', () => setStation(index));
+          stationNav.appendChild(btn);
+        });
+      }
+
+      function renderStation() {
+        const station = STATIONS[currentStation];
+        stationTitle.textContent = station.title[currentLang];
+        stationReading.textContent = station.reading[currentLang];
+        stationMeditation.textContent = station.meditation[currentLang];
+        stationResponse.textContent = currentLang === 'es'
+          ? 'Te adoramos, Cristo, y te bendecimos. Porque por tu santa cruz redimiste al mundo.'
+          : 'We adore You, O Christ, and we bless You. Because by Your holy cross You have redeemed the world.';
+        stationPrayer.textContent = station.prayer[currentLang];
+        metaStation.textContent = (currentLang === 'es' ? 'Estación ' : 'Station ') + (currentStation + 1) + (currentLang === 'es' ? ' de 14' : ' of 14');
+        metaStep.textContent = (currentLang === 'es' ? 'Paso ' : 'Step ') + (currentStation + 1);
+        progressFill.style.width = (((currentStation + 1) / STATIONS.length) * 100) + '%';
+        completeCard.style.display = currentStation === STATIONS.length - 1 ? 'block' : 'none';
+        renderStations();
+      }
+
+      function setStation(index) {
+        currentStation = Math.max(0, Math.min(index, STATIONS.length - 1));
+        renderStation();
+      }
+
+      function buildFullGuideSequence() {
+        const parts = [INTRO_SEQUENCE[currentLang]];
+        STATIONS.forEach((station, index) => {
+          parts.push(
+            (currentLang === 'es' ? 'Estación ' : 'Station ') + (index + 1) + '. ' + station.title[currentLang],
+            station.reading[currentLang],
+            station.meditation[currentLang],
+            station.prayer[currentLang]
+          );
+        });
+        parts.push(FINAL_PRAYER[currentLang]);
+        return parts;
+      }
+
+      function buildStationSequence() {
+        const station = STATIONS[currentStation];
+        return [
+          (currentLang === 'es' ? 'Estación ' : 'Station ') + (currentStation + 1) + '. ' + station.title[currentLang],
+          station.reading[currentLang],
+          station.meditation[currentLang],
+          station.prayer[currentLang]
+        ];
+      }
+
+      function speakSequence(parts) {
+        if (!window.speechSynthesis) return;
+        const chunks = parts.flatMap(part => splitSpeechText(part));
+        if (!chunks.length) return;
+        window.speechSynthesis.cancel();
+        const runId = ++speakRunId;
+        speaking = true;
+        const speakNext = (index) => {
+          if (runId !== speakRunId) return;
+          if (index >= chunks.length) {
+            speaking = false;
+            return;
+          }
+          const utt = new SpeechSynthesisUtterance(chunks[index]);
+          utt.lang = currentLang === 'es' ? 'es-MX' : 'en-US';
+          utt.rate = 0.75;
+          utt.pitch = 1.0;
+          const voice = getVoiceForLang();
+          if (voice) utt.voice = voice;
+          utt.onend = utt.onerror = () => {
+            if (runId !== speakRunId) return;
+            speakNext(index + 1);
+          };
+          window.speechSynthesis.speak(utt);
+        };
+        speakNext(0);
+      }
+
+      function stopSpeech() {
+        speakRunId += 1;
+        if (window.speechSynthesis) window.speechSynthesis.cancel();
+        speaking = false;
+      }
+
+      function updateTtsButtons() {
+        if (!window.speechSynthesis) {
+          ttsNoSupport.style.display = '';
+          ttsAllBtn.style.display = 'none';
+          ttsStationBtn.style.display = 'none';
+          ttsStopBtn.style.display = 'none';
+        }
+      }
+
+      document.getElementById('langToggle').addEventListener('click', () => {
+        currentLang = currentLang === 'es' ? 'en' : 'es';
+        localStorage.setItem(LANG_KEY, currentLang);
+        updateTextBlocks();
+      });
+
+      ttsAllBtn.addEventListener('click', () => {
+        if (!window.speechSynthesis) return;
+        stopSpeech();
+        speakSequence(buildFullGuideSequence());
+      });
+
+      ttsStationBtn.addEventListener('click', () => {
+        if (!window.speechSynthesis) return;
+        stopSpeech();
+        speakSequence(buildStationSequence());
+      });
+
+      ttsStopBtn.addEventListener('click', stopSpeech);
+      prevBtn.addEventListener('click', () => setStation(currentStation - 1));
+      nextBtn.addEventListener('click', () => setStation(currentStation + 1));
+      restartBtn.addEventListener('click', () => setStation(0));
+      restartInlineBtn.addEventListener('click', () => setStation(0));
+      openFirstBtn.addEventListener('click', () => setStation(0));
+      document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowLeft') setStation(currentStation - 1);
+        if (e.key === 'ArrowRight') setStation(currentStation + 1);
+        if (e.key === 'Escape') stopSpeech();
+      });
+
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
+      }
+
+      updateTextBlocks();
+      updateTtsButtons();
+      setStation(0);
+      if (window.speechSynthesis) window.speechSynthesis.getVoices();
+    })();
+  </script>
+</body>
+</html>

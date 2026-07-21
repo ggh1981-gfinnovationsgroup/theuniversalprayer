@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oración contra la Tentación | The Universal Prayer</title>
+  <meta name="description" content="Guía católica para cuando llega la tentación en el momento preciso: oración inmediata, pasos concretos, antídotos y prevención diaria para custodiar el corazón." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Oración contra la Tentación | The Universal Prayer" />
+  <meta property="og:description" content="Oración inmediata, antídotos concretos y prevención diaria para custodiar el corazón cuando llegan las tentaciones." />
+  <meta property="og:url" content="https://www.theuniversalprayer.com/tentaciones/" />
+  <meta property="og:image" content="https://www.theuniversalprayer.com/assets/images/icon.svg" />
+  <link rel="canonical" href="https://www.theuniversalprayer.com/tentaciones/" />
+  <meta name="theme-color" content="#c9a84c" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" href="/assets/images/icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    body.tentaciones-page {
+      min-height: 100dvh;
+      background:
+        radial-gradient(1000px 600px at 50% -120px, rgba(201,168,76,0.16), transparent 60%),
+        radial-gradient(900px 520px at 90% 0%, rgba(180,20,28,0.10), transparent 48%),
+        var(--bg);
+    }
+
+    .tent-wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 1.4rem 1rem 4rem;
+    }
+
+    .tent-hero {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(201,168,76,0.10), rgba(22,27,46,0.88));
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tent-hero::before {
+      content: '✦  ✝  ✦  ✝  ✦';
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      color: rgba(231,207,136,0.24);
+      letter-spacing: 0.9em;
+      font-size: 0.72rem;
+      pointer-events: none;
+    }
+
+    .tent-eyebrow {
+      color: var(--gold);
+      letter-spacing: 0.14em;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      margin-bottom: 0.35rem;
+    }
+
+    .tent-title {
+      font-family: var(--font-serif);
+      color: var(--gold-light);
+      font-size: clamp(1.6rem, 3.4vw, 2.6rem);
+      line-height: 1.12;
+      margin-bottom: 0.45rem;
+      max-width: 14ch;
+    }
+
+    .tent-sub {
+      color: var(--white-dim);
+      font-size: 0.96rem;
+      line-height: 1.7;
+      max-width: 74ch;
+    }
+
+    .tent-controls {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .tent-btn,
+    .tent-select {
+      border: 1px solid var(--gold-dim);
+      background: var(--bg-card);
+      color: var(--white);
+      border-radius: 10px;
+      padding: 0.58rem 0.72rem;
+      font-size: 0.9rem;
+    }
+
+    .tent-btn {
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+
+    .tent-btn:hover,
+    .tent-btn:focus-visible {
+      border-color: var(--gold);
+      color: var(--gold-light);
+      outline: none;
+    }
+
+    .tent-catechesis {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(201,168,76,0.08), rgba(21,26,44,0.92));
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .tent-catechesis-title {
+      font-family: var(--font-serif);
+      color: var(--gold-light);
+      font-size: clamp(1.05rem, 2vw, 1.38rem);
+      margin-bottom: 0.3rem;
+    }
+
+    .tent-catechesis-sub {
+      color: var(--white-dim);
+      font-size: 0.92rem;
+      line-height: 1.6;
+      margin-bottom: 0.8rem;
+    }
+
+    .tent-catechesis details {
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.03);
+      padding: 0.6rem 0.72rem;
+      margin-bottom: 0.55rem;
+    }
+
+    .tent-catechesis summary {
+      color: var(--gold-light);
+      font-weight: 700;
+      cursor: pointer;
+      line-height: 1.45;
+    }
+
+    .tent-catechesis p {
+      margin: 0.55rem 0 0;
+      color: var(--white);
+      line-height: 1.75;
+      font-size: 0.94rem;
+      white-space: pre-line;
+    }
+
+    .tent-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .tent-primary,
+    .tent-secondary {
+      min-width: 0;
+    }
+
+    .tent-card,
+    .tent-nav-card,
+    .tent-visual,
+    .tent-action-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg-card);
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .tent-card-title,
+    .tent-nav-title,
+    .tent-visual-label,
+    .tent-action-title {
+      color: var(--gold-light);
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      margin: 0 0 0.6rem;
+    }
+
+    .tent-progress {
+      margin: 0 0 1rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      overflow: hidden;
+      height: 11px;
+      background: rgba(255,255,255,0.06);
+    }
+
+    .tent-progress-fill {
+      width: 0;
+      height: 100%;
+      background: linear-gradient(90deg, var(--gold-dim), var(--gold-light));
+      transition: width 0.28s ease;
+    }
+
+    .tent-emergency {
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .tent-emergency-pill {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.72rem;
+    }
+
+    .tent-emergency-title {
+      font-family: var(--font-serif);
+      color: var(--gold-light);
+      font-size: clamp(1.2rem, 2.5vw, 1.65rem);
+      line-height: 1.25;
+      margin-bottom: 0.1rem;
+    }
+
+    .tent-emergency-line {
+      padding: 0.85rem 0.95rem;
+      border-left: 3px solid rgba(201,168,76,0.55);
+      background: rgba(201,168,76,0.07);
+      border-radius: 0 12px 12px 0;
+      color: var(--white);
+      line-height: 1.72;
+      white-space: pre-line;
+      font-size: 0.96rem;
+    }
+
+    .tent-emergency-response {
+      color: var(--white-dim);
+      line-height: 1.65;
+      font-size: 0.92rem;
+      white-space: pre-line;
+    }
+
+    .tent-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.6rem;
+      margin-top: 0.2rem;
+    }
+
+    .tent-actions .tent-btn {
+      min-height: 46px;
+    }
+
+    .tent-actions .full {
+      grid-column: 1 / -1;
+      border-color: rgba(92, 194, 158, 0.58);
+      background: rgba(58, 142, 115, 0.16);
+      color: #c6f5e8;
+    }
+
+    .tent-actions .full:hover,
+    .tent-actions .full:focus-visible {
+      border-color: rgba(128, 224, 191, 0.82);
+      background: rgba(58, 142, 115, 0.26);
+      color: #e8fff6;
+    }
+
+    .tent-note {
+      color: var(--white-dim);
+      font-size: 0.82rem;
+      margin-top: 0.45rem;
+      line-height: 1.5;
+    }
+
+    .tent-complete {
+      margin-top: 1rem;
+      border: 1px solid rgba(201,168,76,0.32);
+      border-radius: 14px;
+      background: linear-gradient(180deg, rgba(201,168,76,0.14), rgba(255,255,255,0.03));
+      padding: 0.95rem;
+      display: none;
+    }
+
+    .tent-complete-title {
+      color: var(--gold-light);
+      font-family: var(--font-serif);
+      font-size: 1.08rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .tent-complete-text {
+      color: var(--white-dim);
+      font-size: 0.9rem;
+      margin-bottom: 0.7rem;
+      line-height: 1.58;
+    }
+
+    .tent-nav-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.45rem;
+    }
+
+    .tent-nav-btn {
+      border: 1px solid rgba(201,168,76,0.22);
+      background: rgba(255,255,255,0.03);
+      color: var(--white-dim);
+      border-radius: 12px;
+      padding: 0.52rem 0.35rem;
+      cursor: pointer;
+      transition: all var(--transition);
+      min-height: 52px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      gap: 0.12rem;
+    }
+
+    .tent-nav-btn span {
+      display: block;
+      line-height: 1.15;
+    }
+
+    .tent-nav-btn .step-num {
+      color: var(--gold-light);
+      font-weight: 700;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .tent-nav-btn .step-name {
+      font-size: 0.8rem;
+    }
+
+    .tent-nav-btn.active {
+      color: var(--bg);
+      background: var(--gold);
+      border-color: var(--gold-light);
+      box-shadow: 0 0 18px rgba(201,168,76,0.28);
+    }
+
+    .tent-visual svg {
+      width: 100%;
+      height: auto;
+      display: block;
+      max-width: 340px;
+      margin: 0 auto;
+    }
+
+    .tent-visual-copy {
+      color: var(--white-dim);
+      line-height: 1.6;
+      font-size: 0.9rem;
+      margin-top: 0.75rem;
+    }
+
+    .tent-points {
+      display: grid;
+      gap: 0.6rem;
+    }
+
+    .tent-point {
+      background: rgba(201,168,76,0.06);
+      border: 1px solid rgba(201,168,76,0.18);
+      border-radius: 12px;
+      padding: 0.82rem 0.9rem;
+    }
+
+    .tent-point h3 {
+      margin: 0 0 0.35rem;
+      color: var(--gold-light);
+      font-family: var(--font-serif);
+      font-size: 1rem;
+    }
+
+    .tent-point p {
+      margin: 0;
+      color: var(--white-dim);
+      line-height: 1.7;
+      font-size: 0.88rem;
+      white-space: pre-line;
+    }
+
+    .tent-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.25rem;
+    }
+
+    .tent-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      text-decoration: none;
+      color: var(--gold-light);
+      border: 1px solid rgba(201,168,76,0.26);
+      background: rgba(201,168,76,0.06);
+      border-radius: 20px;
+      padding: 0.42rem 0.82rem;
+      font-size: 0.8rem;
+    }
+
+    .tent-link:hover {
+      background: rgba(201,168,76,0.1);
+    }
+
+    .tent-prayer {
+      background: rgba(201,168,76,0.08);
+      border: 1px solid rgba(201,168,76,0.24);
+      border-radius: 12px;
+      padding: 1rem;
+      white-space: pre-line;
+      color: rgba(255,255,255,0.9);
+      line-height: 1.86;
+      font-family: var(--font-serif);
+      font-size: 0.98rem;
+    }
+
+    .tent-prayer strong {
+      color: var(--gold-light);
+    }
+
+    .tent-emergency-choices {
+      display: grid;
+      gap: 0.55rem;
+      margin-top: 0.8rem;
+    }
+
+    .tent-choice {
+      border: 1px solid rgba(201,168,76,0.18);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.03);
+      padding: 0.78rem 0.84rem;
+      color: var(--white-dim);
+      line-height: 1.65;
+      font-size: 0.88rem;
+    }
+
+    .tent-choice strong {
+      color: var(--gold-light);
+    }
+
+    @media (max-width: 900px) {
+      .tent-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tent-nav-grid {
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+        overflow-x: auto;
+        padding-bottom: 0.1rem;
+      }
+
+      .tent-nav-btn {
+        min-width: 68px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .tent-wrap {
+        padding: 0.9rem 0.75rem 6rem;
+      }
+
+      .tent-hero {
+        padding: 1rem 0.95rem;
+      }
+
+      .tent-title {
+        max-width: 100%;
+      }
+
+      .tent-sub {
+        font-size: 0.9rem;
+      }
+
+      .tent-nav-grid {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+      }
+
+      .tent-actions {
+        position: fixed;
+        left: 0.75rem;
+        right: 0.75rem;
+        bottom: calc(env(safe-area-inset-bottom, 0px) + 0.6rem);
+        grid-template-columns: 1fr 1fr;
+        padding: 0.65rem;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        background: rgba(21,26,44,0.96);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 -10px 24px rgba(0,0,0,0.24);
+        z-index: 12;
+      }
+
+      .tent-actions .full {
+        grid-column: 1 / -1;
+      }
+
+      .tent-card {
+        padding-bottom: 5.8rem;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .tent-wrap {
+        padding-inline: 0.65rem;
+      }
+
+      .tent-nav-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .tent-btn,
+      .tent-select {
+        width: 100%;
+      }
+
+      .tent-controls {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .tent-actions {
+        left: 0.65rem;
+        right: 0.65rem;
+      }
+    }
+  </style>
+</head>
+<body class="tentaciones-page">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link">
+        <span class="cross">✝</span>
+        <span class="logo-text">The Universal Prayer</span>
+      </a>
+      <button class="lang-toggle" id="langToggle" aria-label="Toggle language">EN</button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="tent-wrap">
+    <section class="tent-hero">
+      <div class="tent-eyebrow" id="heroEyebrow">✝ Auxilio en la tentación</div>
+      <h1 class="tent-title" id="heroTitle">Qué hacer cuando llega la tentación</h1>
+      <p class="tent-sub" id="heroSub">A veces uno está confesado, comulgando y ayunando, y aun así el cuerpo pide consuelo, calma o placer rápido. Eso no significa que hayas fracasado: significa que necesitas vigilar, orar y cortar la ocasión cuanto antes.</p>
+      <div class="tent-controls">
+        <button class="tent-btn" id="restartBtn" type="button">↺ Volver al inicio</button>
+        <button class="tent-btn" id="openFirstBtn" type="button">▶ Ir al paso 1</button>
+      </div>
+    </section>
+
+    <section class="tent-catechesis" aria-label="Catequesis sobre la tentación">
+      <h2 class="tent-catechesis-title" data-lang="es">Primero: no te asustes</h2>
+      <h2 class="tent-catechesis-title" data-lang="en" style="display:none">First: do not panic</h2>
+      <p class="tent-catechesis-sub" data-lang="es">Ser tentado no es igual a consentir. La tentación aparece, toca, propone, insiste. El combate empieza cuando decides qué haces con eso.</p>
+      <p class="tent-catechesis-sub" data-lang="en" style="display:none">Being tempted is not the same as consenting. Temptation appears, knocks, suggests, and insists. The battle begins when you decide what you do with it.</p>
+
+      <details>
+        <summary data-lang="es">1) Qué hacer en el instante exacto</summary>
+        <summary data-lang="en" style="display:none">1) What to do in the exact moment</summary>
+        <p data-lang="es">No negocies con la tentación. Nómbrala: «esto viene de la carne, del miedo, de la fantasía o del hábito». Luego cambia de postura, respira, mira a Jesús y mueve el cuerpo.
+
+Regla corta: cuando el deseo sube, tú bajas el teléfono, cambias de lugar, llamas a alguien o empiezas a rezar en voz baja.</p>
+        <p data-lang="en" style="display:none">Do not negotiate with temptation. Name it: "this comes from the flesh, fear, fantasy, or habit." Then change posture, breathe, look at Jesus, and move your body.
+
+Short rule: when desire rises, put the phone down, change rooms, call someone, or begin praying softly.</p>
+      </details>
+
+      <details>
+        <summary data-lang="es">2) Qué evitar para no darle alimento</summary>
+        <summary data-lang="en" style="display:none">2) What to avoid so it does not grow</summary>
+        <p data-lang="es">Evita quedarte solo con pantalla, música, conversación o imágenes que te enciendan el deseo. Evita la fantasía repetida. Evita “solo un vistazo más”. La tentación crece cuando la alimentas.</p>
+        <p data-lang="en" style="display:none">Avoid being alone with screens, music, conversations, or images that inflame desire. Avoid repeated fantasy. Avoid "just one more look." Temptation grows when you feed it.</p>
+      </details>
+
+      <details>
+        <summary data-lang="es">3) Por qué vuelve incluso después de confesarte</summary>
+        <summary data-lang="en" style="display:none">3) Why it returns even after confession</summary>
+        <p data-lang="es">La confesión quita el pecado y da gracia real, pero no borra de golpe tus hábitos, memorias, hormonas, heridas ni costumbres. Por eso necesitas vigilancia amable, no desesperación.</p>
+        <p data-lang="en" style="display:none">Confession removes sin and gives real grace, but it does not instantly erase habits, memories, hormones, wounds, or patterns. That is why you need gentle watchfulness, not despair.</p>
+      </details>
+
+      <details>
+        <summary data-lang="es">4) Cuándo pedir ayuda humana</summary>
+        <summary data-lang="en" style="display:none">4) When to ask for human help</summary>
+        <p data-lang="es">Si la tentación se repite fuerte, no te aísles. Habla con un confesor, director espiritual o una persona madura y de confianza. La gracia no te pide esconderte; te pide caminar en la verdad.</p>
+        <p data-lang="en" style="display:none">If the temptation keeps coming back strongly, do not isolate yourself. Speak with a confessor, spiritual director, or a mature person you trust. Grace does not ask you to hide; it asks you to walk in truth.</p>
+      </details>
+    </section>
+
+    <section class="tent-grid">
+      <div class="tent-primary">
+        <div class="tent-progress" aria-hidden="true">
+          <div class="tent-progress-fill" id="progressFill"></div>
+        </div>
+
+        <section class="tent-card">
+          <div class="tent-emergency">
+            <div>
+              <div class="tent-emergency-pill" id="stepPill">Paso actual</div>
+              <h2 class="tent-emergency-title" id="stepTitle"></h2>
+            </div>
+            <div>
+              <div class="tent-card-title" data-lang="es">Oración inmediata</div>
+              <div class="tent-card-title" data-lang="en" style="display:none">Immediate prayer</div>
+              <div class="tent-emergency-line" id="stepPrayer"></div>
+            </div>
+            <div>
+              <div class="tent-card-title" data-lang="es">Qué hacer ahora</div>
+              <div class="tent-card-title" data-lang="en" style="display:none">What to do now</div>
+              <div class="tent-emergency-response" id="stepAction"></div>
+            </div>
+            <div>
+              <div class="tent-card-title" data-lang="es">Antídoto concreto</div>
+              <div class="tent-card-title" data-lang="en" style="display:none">Concrete antidote</div>
+              <div class="tent-emergency-line" id="stepAntidote"></div>
+            </div>
+          </div>
+
+          <div class="tent-actions">
+            <button class="tent-btn full" id="ttsAllBtn" type="button">▶ Leer toda la guía</button>
+            <button class="tent-btn" id="ttsStepBtn" type="button">🔊 Leer este paso</button>
+            <button class="tent-btn" id="ttsStopBtn" type="button">⏹ Detener</button>
+            <button class="tent-btn" id="prevBtn" type="button">← Anterior</button>
+            <button class="tent-btn" id="nextBtn" type="button">Siguiente →</button>
+          </div>
+          <div class="tent-note" id="ttsNoSupport" style="display:none">Tu navegador no soporta lectura en voz alta en esta página.</div>
+
+          <section class="tent-complete" id="completeCard" aria-live="polite">
+            <h3 class="tent-complete-title" id="completeTitle">Has terminado la guía</h3>
+            <p class="tent-complete-text" id="completeText">Puedes volver al inicio o repetir el paso que más te ayudó.</p>
+            <button class="tent-btn" id="restartInlineBtn" type="button">↺ Rezar de nuevo</button>
+          </section>
+        </section>
+
+        <section class="tent-card">
+          <h2 class="tent-card-title" data-lang="es">Oración corta para cuando sube la tentación</h2>
+          <h2 class="tent-card-title" data-lang="en" style="display:none">Short prayer when temptation rises</h2>
+          <div class="tent-prayer" data-lang="es">Señor Jesús,
+no quiero negociar con este deseo.
+Dame luz para cortar la ocasión,
+fortaleza para moverme,
+y pureza de corazón para amarte más que a este impulso.
+Jesús, en Ti confío. Amén.</div>
+          <div class="tent-prayer" data-lang="en" style="display:none">Lord Jesus,
+I do not want to negotiate with this desire.
+Give me light to cut off the occasion,
+strength to move,
+and purity of heart to love You more than this impulse.
+Jesus, I trust in You. Amen.</div>
+          <div class="tent-links">
+            <a class="tent-link" href="/intercesor/?intercesor=sanmiguel"><span data-lang="es">San Miguel</span><span data-lang="en" style="display:none">St. Michael</span></a>
+            <a class="tent-link" href="/intercesor/?intercesor=preciosisimasangre"><span data-lang="es">Preciosísima Sangre</span><span data-lang="en" style="display:none">Precious Blood</span></a>
+            <a class="tent-link" href="/intercesor/?intercesor=sanfranciscodesales"><span data-lang="es">San Francisco de Sales</span><span data-lang="en" style="display:none">St. Francis de Sales</span></a>
+            <a class="tent-link" href="/intercesor/?intercesor=santamariagoretti"><span data-lang="es">Santa María Goretti</span><span data-lang="en" style="display:none">St. Maria Goretti</span></a>
+          </div>
+        </section>
+      </div>
+
+      <aside class="tent-secondary">
+        <section class="tent-nav-card">
+          <h2 class="tent-nav-title" data-lang="es">Pasos rápidos</h2>
+          <h2 class="tent-nav-title" data-lang="en" style="display:none">Quick steps</h2>
+          <div class="tent-nav-grid" id="stepNav"></div>
+        </section>
+
+        <section class="tent-visual">
+          <div class="tent-visual-label" data-lang="es">Plan de rescate</div>
+          <div class="tent-visual-label" data-lang="en" style="display:none">Rescue plan</div>
+          <svg viewBox="0 0 340 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="tentSvgTitle">
+            <title id="tentSvgTitle">Oración contra la tentación</title>
+            <defs>
+              <radialGradient id="tentGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#fff4cf" stop-opacity="0.92" />
+                <stop offset="65%" stop-color="#e7cf88" stop-opacity="0.44" />
+                <stop offset="100%" stop-color="#e7cf88" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+            <circle cx="170" cy="198" r="42" fill="url(#tentGlow)" opacity="0.9" />
+            <path d="M170 66 L170 272" fill="none" stroke="rgba(201,168,76,0.72)" stroke-width="9" stroke-linecap="round" />
+            <path d="M112 118 L228 118" fill="none" stroke="rgba(201,168,76,0.72)" stroke-width="9" stroke-linecap="round" />
+            <path d="M141 272 C126 300, 122 330, 134 364" fill="none" stroke="rgba(201,168,76,0.52)" stroke-width="8" stroke-linecap="round" />
+            <path d="M199 272 C214 300, 218 330, 206 364" fill="none" stroke="rgba(201,168,76,0.52)" stroke-width="8" stroke-linecap="round" />
+            <circle cx="170" cy="62" r="12" fill="rgba(201,168,76,0.22)" stroke="rgba(201,168,76,0.72)" stroke-width="2"/>
+            <circle cx="170" cy="116" r="8" fill="rgba(201,168,76,0.2)" stroke="rgba(201,168,76,0.72)" stroke-width="2"/>
+            <circle cx="170" cy="158" r="8" fill="rgba(201,168,76,0.2)" stroke="rgba(201,168,76,0.72)" stroke-width="2"/>
+            <circle cx="170" cy="198" r="8" fill="rgba(201,168,76,0.2)" stroke="rgba(201,168,76,0.72)" stroke-width="2"/>
+            <circle cx="170" cy="238" r="8" fill="rgba(201,168,76,0.2)" stroke="rgba(201,168,76,0.72)" stroke-width="2"/>
+            <circle cx="170" cy="278" r="8" fill="rgba(201,168,76,0.2)" stroke="rgba(201,168,76,0.72)" stroke-width="2"/>
+            <text x="170" y="202" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#f9e7b0">✝</text>
+          </svg>
+          <p class="tent-visual-copy" data-lang="es">El antídoto más rápido suele ser muy concreto: cambiar de lugar, cortar la pantalla, respirar, llamar a alguien y rezar una oración corta sin discutir con el deseo.</p>
+          <p class="tent-visual-copy" data-lang="en" style="display:none">The fastest antidote is usually very concrete: change places, put down the screen, breathe, call someone, and pray a short prayer without arguing with the desire.</p>
+        </section>
+
+        <section class="tent-action-card">
+          <h2 class="tent-action-title" data-lang="es">Prevención diaria</h2>
+          <h2 class="tent-action-title" data-lang="en" style="display:none">Daily prevention</h2>
+          <div class="tent-points">
+            <div class="tent-point">
+              <h3 data-lang="es">1. No le abras la puerta al hábito</h3>
+              <h3 data-lang="en" style="display:none">1. Do not open the door to the habit</h3>
+              <p data-lang="es">Si sabes dónde caes, corta la ocasión antes. Más vale apagar el teléfono que resistir 20 minutos de imágenes o fantasías.</p>
+              <p data-lang="en" style="display:none">If you know where you fall, cut off the occasion earlier. It is better to turn off the phone than to resist 20 minutes of images or fantasies.</p>
+            </div>
+            <div class="tent-point">
+              <h3 data-lang="es">2. Ten un plan de emergencia</h3>
+              <h3 data-lang="en" style="display:none">2. Have an emergency plan</h3>
+              <p data-lang="es">Define antes de la batalla: qué harás, a quién llamarás y a dónde irás. La decisión se toma en paz, no en medio del fuego.</p>
+              <p data-lang="en" style="display:none">Decide before the battle what you will do, who you will call, and where you will go. The decision is made in peace, not in the middle of the fire.</p>
+            </div>
+            <div class="tent-point">
+              <h3 data-lang="es">3. Sana el fondo del corazón</h3>
+              <h3 data-lang="en" style="display:none">3. Heal the heart underneath</h3>
+              <p data-lang="es">Muchas tentaciones llegan con soledad, cansancio, rabia o vacío. Dormir, comer bien, salir a caminar y hablar con alguien también es parte de la pelea espiritual.</p>
+              <p data-lang="en" style="display:none">Many temptations come with loneliness, fatigue, anger, or emptiness. Sleeping well, eating well, walking, and talking to someone are also part of the spiritual fight.</p>
+            </div>
+            <div class="tent-point">
+              <h3 data-lang="es">4. Vuelve rápido a la gracia</h3>
+              <h3 data-lang="en" style="display:none">4. Return quickly to grace</h3>
+              <p data-lang="es">Si caíste, no te quedes mirando la caída. Arrepiéntete, levántate, confiesa cuando toque y vuelve al combate con humildad.</p>
+              <p data-lang="en" style="display:none">If you fell, do not stay staring at the fall. Repent, get up, confess when needed, and return to the battle with humility.</p>
+            </div>
+          </div>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p data-lang="es">Un recurso devocional católico gratuito. Sin anuncios. Sin rastreo.</p>
+    <p data-lang="en" style="display:none">A free Catholic devotional resource. No ads. No tracking.</p>
+  </footer>
+
+  <script src="../assets/js/menu.js"></script>
+  <script>
+    (function() {
+      'use strict';
+      const LANG_KEY = 'tup_lang';
+      const storedLang = localStorage.getItem(LANG_KEY);
+      const initialLang = storedLang === 'en' ? 'en' : 'es';
+
+      const STEPS = [
+        {
+          title: { es: '1. Cortar la ocasión', en: '1. Cut off the occasion' },
+          prayer: {
+            es: 'Señor Jesús, no quiero quedarme mirando esto. Dame fuerza para apartarme ahora mismo.',
+            en: 'Lord Jesus, I do not want to keep looking at this. Give me strength to step away right now.'
+          },
+          action: {
+            es: 'Apaga pantalla, cambia de cuarto, siéntate erguido y mira un crucifijo o una imagen sagrada.',
+            en: 'Turn off the screen, change rooms, sit upright, and look at a crucifix or sacred image.'
+          },
+          antidote: {
+            es: 'Haz la Señal de la Cruz tres veces despacio antes de seguir con cualquier cosa.',
+            en: 'Make the Sign of the Cross three times slowly before doing anything else.'
+          }
+        },
+        {
+          title: { es: '2. Respira y nombra la tentación', en: '2. Breathe and name the temptation' },
+          prayer: {
+            es: 'Espíritu Santo, ilumina mi mente. Quiero ver con verdad lo que está pasando en mí.',
+            en: 'Holy Spirit, enlighten my mind. I want to see with truth what is happening in me.'
+          },
+          action: {
+            es: 'Di en voz baja: “esto es deseo, ansiedad, hambre, soledad o cansancio”. Nombrarlo le quita poder.',
+            en: 'Say softly: "this is desire, anxiety, hunger, loneliness, or fatigue." Naming it weakens it.'
+          },
+          antidote: {
+            es: 'Bebe agua fría y da 20 pasos. Mover el cuerpo corta el ciclo mental.',
+            en: 'Drink cold water and take 20 steps. Moving your body interrupts the mental loop.'
+          }
+        },
+        {
+          title: { es: '3. Reza una oración corta', en: '3. Pray a short prayer' },
+          prayer: {
+            es: 'Jesús, en Ti confío. María, cúbreme con tu manto. San Miguel, defiéndeme.',
+            en: 'Jesus, I trust in You. Mary, cover me with your mantle. Saint Michael, defend me.'
+          },
+          action: {
+            es: 'No improvises discursos largos. Una jaculatoria bien dicha vale más que cien pensamientos enredados.',
+            en: 'Do not improvise long speeches. One short aspiration said well is worth more than a hundred tangled thoughts.'
+          },
+          antidote: {
+            es: 'Reza 1 Padre Nuestro, 1 Ave María y 1 Gloria. Si puedes, añade el Salmo 51.',
+            en: 'Pray 1 Our Father, 1 Hail Mary, and 1 Glory Be. If you can, add Psalm 51.'
+          }
+        },
+        {
+          title: { es: '4. Cambia de contexto', en: '4. Change context' },
+          prayer: {
+            es: 'Señor, sáname en la raíz de esta inquietud. No quiero anestesiarme con pecado.',
+            en: 'Lord, heal me at the root of this unease. I do not want to numb myself with sin.'
+          },
+          action: {
+            es: 'Ve con otra persona, sal a la calle, trabaja con las manos, o entra a un lugar donde no puedas caer solo.',
+            en: 'Go with another person, step outside, do something with your hands, or enter a place where you cannot fall alone.'
+          },
+          antidote: {
+            es: 'Escribe a alguien de confianza: “estoy en batalla, reza por mí ahora”.',
+            en: 'Text someone you trust: "I am in battle, pray for me now."'
+          }
+        },
+        {
+          title: { es: '5. Si la tentación es corporal', en: '5. If the temptation is bodily' },
+          prayer: {
+            es: 'Jesús, ordena mi cuerpo. Que mis deseos no me gobiernen.',
+            en: 'Jesus, order my body. May my desires not rule me.'
+          },
+          action: {
+            es: 'Revisa sueño, cansancio, comida, alcohol, pantalla y soledad. Muchas tentaciones crecen cuando el cuerpo está desordenado.',
+            en: 'Check sleep, fatigue, food, alcohol, screens, and loneliness. Many temptations grow when the body is disordered.'
+          },
+          antidote: {
+            es: 'Dúchate, cambia de ropa, sal a caminar rápido 10 minutos y evita estar acostado sin propósito.',
+            en: 'Take a shower, change clothes, walk quickly for 10 minutes, and avoid lying down without purpose.'
+          }
+        },
+        {
+          title: { es: '6. Si la tentación es mental', en: '6. If the temptation is mental' },
+          prayer: {
+            es: 'Jesús, guarda mi imaginación. Que no haga nido lo que me separa de Ti.',
+            en: 'Jesus, guard my imagination. May what separates me from You not make a nest.'
+          },
+          action: {
+            es: 'No alimentes imágenes ni conversaciones internas. Corta la fantasía al primer segundo, no al décimo.',
+            en: 'Do not feed images or inner conversations. Cut the fantasy at the first second, not the tenth.'
+          },
+          antidote: {
+            es: 'Lee un salmo en voz alta, o escucha una voz humana sana antes de seguir solo.',
+            en: 'Read a psalm aloud, or listen to a healthy human voice before being alone again.'
+          }
+        },
+        {
+          title: { es: '7. Si estás débil por ayuno o cansancio', en: '7. If you are weak from fasting or fatigue' },
+          prayer: {
+            es: 'Señor, no me dejes usar la debilidad del cuerpo como puerta del pecado.',
+            en: 'Lord, do not let me use bodily weakness as a doorway to sin.'
+          },
+          action: {
+            es: 'El ayuno auténtico no destruye tu salud. Si estás exhausto, come algo simple, descansa y vuelve al bien con serenidad.',
+            en: 'Authentic fasting does not destroy your health. If you are exhausted, eat something simple, rest, and return to the good with serenity.'
+          },
+          antidote: {
+            es: 'Haz una pausa real de 15 minutos sin pantalla y recupérate antes de decidir nada.',
+            en: 'Take a real 15-minute screen-free break and recover before deciding anything.'
+          }
+        },
+        {
+          title: { es: '8. Si caíste, no te escondas', en: '8. If you fell, do not hide' },
+          prayer: {
+            es: 'Padre misericordioso, me levanto y vuelvo a Ti. No quiero vivir dividido.',
+            en: 'Merciful Father, I get up and return to You. I do not want to live divided.'
+          },
+          action: {
+            es: 'No conviertas la caída en identidad. Arrepiéntete, busca confesión, y vuelve a la luz rápidamente.',
+            en: 'Do not turn the fall into identity. Repent, seek confession, and return to the light quickly.'
+          },
+          antidote: {
+            es: 'Haz hoy un acto concreto de reparación: oración, ayuno breve, servicio o limosna.',
+            en: 'Make one concrete act of repair today: prayer, a brief fast, service, or almsgiving.'
+          }
+        }
+      ];
+
+      const FINAL_PRAYER = {
+        es: 'Señor Jesús, tú conoces mis deseos, mis miedos y mis heridas. Cuando llegue la tentación, dame claridad para huir del pecado, humildad para pedir ayuda y amor suficiente para elegirte a Ti. Amén.',
+        en: 'Lord Jesus, You know my desires, my fears, and my wounds. When temptation comes, give me clarity to flee sin, humility to ask for help, and enough love to choose You. Amen.'
+      };
+
+      const QUICK_ONE_MIN = {
+        es: 'Jesús, no me dejes solo. Te entrego este deseo ahora mismo. Córtalo en su raíz, líbrame del mal y dame paz. Amén.',
+        en: 'Jesus, do not leave me alone. I give You this desire right now. Cut it at the root, deliver me from evil, and give me peace. Amen.'
+      };
+
+      const QUICK_THREE_MIN = {
+        es: 'Señor Jesús, te entrego mi cuerpo, mi mente y mi voluntad. No quiero negociar con esta tentación. Envíame tu luz, la ayuda de María y la fuerza de San Miguel. Amén.',
+        en: 'Lord Jesus, I give You my body, mind, and will. I do not want to negotiate with this temptation. Send me Your light, Mary’s help, and Saint Michael’s strength. Amen.'
+      };
+
+      const stepNav = document.getElementById('stepNav');
+      const stepTitle = document.getElementById('stepTitle');
+      const stepPrayer = document.getElementById('stepPrayer');
+      const stepAction = document.getElementById('stepAction');
+      const stepAntidote = document.getElementById('stepAntidote');
+      const progressFill = document.getElementById('progressFill');
+      const completeCard = document.getElementById('completeCard');
+      const completeTitle = document.getElementById('completeTitle');
+      const completeText = document.getElementById('completeText');
+      const stepPill = document.getElementById('stepPill');
+      const heroTitle = document.getElementById('heroTitle');
+      const heroSub = document.getElementById('heroSub');
+      const heroEyebrow = document.getElementById('heroEyebrow');
+      const ttsNoSupport = document.getElementById('ttsNoSupport');
+      const ttsAllBtn = document.getElementById('ttsAllBtn');
+      const ttsStepBtn = document.getElementById('ttsStepBtn');
+      const ttsStopBtn = document.getElementById('ttsStopBtn');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const restartBtn = document.getElementById('restartBtn');
+      const restartInlineBtn = document.getElementById('restartInlineBtn');
+      const openFirstBtn = document.getElementById('openFirstBtn');
+
+      let currentLang = initialLang;
+      let currentStep = 0;
+      let speaking = false;
+      let speakRunId = 0;
+
+      function cleanSpeechText(text) {
+        return (text || '')
+          .replace(/\*[^*]+\*/g, '')
+          .replace(/#+\s/g, '')
+          .replace(/\s+/g, ' ')
+          .trim();
+      }
+
+      function splitSpeechText(text, maxLen = 220) {
+        const clean = cleanSpeechText(text);
+        if (!clean) return [];
+        const segments = clean.split(/(?<=[.!?])\s+/).filter(Boolean);
+        const chunks = [];
+        let current = '';
+        segments.forEach(segment => {
+          if (!current) {
+            current = segment;
+            return;
+          }
+          if ((current + ' ' + segment).length <= maxLen) {
+            current += ' ' + segment;
+          } else {
+            chunks.push(current);
+            current = segment;
+          }
+          while (current.length > maxLen) {
+            chunks.push(current.slice(0, maxLen));
+            current = current.slice(maxLen).trim();
+          }
+        });
+        if (current) chunks.push(current);
+        return chunks.length ? chunks : [clean];
+      }
+
+      function getVoiceForLang() {
+        const voices = window.speechSynthesis?.getVoices?.() || [];
+        const preferred = currentLang === 'es' ? ['es-MX', 'es'] : ['en-US', 'en'];
+        for (const pref of preferred) {
+          const voice = voices.find(v => v.lang && v.lang.startsWith(pref));
+          if (voice) return voice;
+        }
+        return null;
+      }
+
+      function updateTextBlocks() {
+        document.querySelectorAll('[data-lang]').forEach(el => {
+          el.style.display = el.dataset.lang === currentLang ? '' : 'none';
+        });
+        document.documentElement.lang = currentLang;
+        document.getElementById('langToggle').textContent = currentLang === 'es' ? 'EN' : 'ES';
+        heroEyebrow.textContent = currentLang === 'es' ? '✝ Auxilio en la tentación' : '✝ Help in temptation';
+        heroTitle.textContent = currentLang === 'es' ? 'Qué hacer cuando llega la tentación' : 'What to do when temptation comes';
+        heroSub.textContent = currentLang === 'es'
+          ? 'A veces uno está confesado, comulgando y ayunando, y aun así el cuerpo pide consuelo, calma o placer rápido. Eso no significa que hayas fracasado: significa que necesitas vigilar, orar y cortar la ocasión cuanto antes.'
+          : 'Sometimes you are confessed, receiving Communion, and fasting, and still the body wants comfort, calm, or quick pleasure. That does not mean you failed: it means you need to watch, pray, and cut off the occasion as soon as possible.';
+        ttsAllBtn.textContent = currentLang === 'es' ? '▶ Leer toda la guía' : '▶ Read full guide';
+        ttsStepBtn.textContent = currentLang === 'es' ? '🔊 Leer este paso' : '🔊 Read this step';
+        ttsStopBtn.textContent = currentLang === 'es' ? '⏹ Detener' : '⏹ Stop';
+        prevBtn.textContent = currentLang === 'es' ? '← Anterior' : '← Previous';
+        nextBtn.textContent = currentLang === 'es' ? 'Siguiente →' : 'Next →';
+        restartBtn.textContent = currentLang === 'es' ? '↺ Volver al inicio' : '↺ Back to start';
+        restartInlineBtn.textContent = currentLang === 'es' ? '↺ Rezar de nuevo' : '↺ Pray again';
+        openFirstBtn.textContent = currentLang === 'es' ? '▶ Ir al paso 1' : '▶ Go to step 1';
+        completeTitle.textContent = currentLang === 'es' ? 'Has terminado la guía' : 'You have finished the guide';
+        completeText.textContent = currentLang === 'es'
+          ? 'Puedes volver al inicio o repetir el paso que más te ayudó.'
+          : 'You can return to the start or repeat the step that helped you most.';
+        stepPill.textContent = currentLang === 'es' ? 'Paso actual' : 'Current step';
+        renderSteps();
+        renderStep();
+      }
+
+      function renderSteps() {
+        stepNav.innerHTML = '';
+        STEPS.forEach((step, index) => {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'tent-nav-btn' + (index === currentStep ? ' active' : '');
+          btn.title = step.title[currentLang];
+          btn.innerHTML = '<span class="step-num">' + String(index + 1).padStart(2, '0') + '</span>' +
+            '<span class="step-name">' + step.title[currentLang].split('. ').slice(1).join('. ') + '</span>';
+          btn.addEventListener('click', () => setStep(index));
+          stepNav.appendChild(btn);
+        });
+      }
+
+      function renderStep() {
+        const step = STEPS[currentStep];
+        stepTitle.textContent = step.title[currentLang];
+        stepPrayer.textContent = step.prayer[currentLang];
+        stepAction.textContent = step.action[currentLang];
+        stepAntidote.textContent = step.antidote[currentLang];
+        progressFill.style.width = (((currentStep + 1) / STEPS.length) * 100) + '%';
+        completeCard.style.display = currentStep === STEPS.length - 1 ? 'block' : 'none';
+        document.getElementById('metaStep')?.remove?.();
+        renderSteps();
+      }
+
+      function setStep(index) {
+        currentStep = Math.max(0, Math.min(index, STEPS.length - 1));
+        renderStep();
+      }
+
+      function buildFullGuideSequence() {
+        const parts = [currentLang === 'es'
+          ? 'En el nombre del Padre, y del Hijo, y del Espíritu Santo. Amén. Señor, comenzamos este camino de combate y confianza.'
+          : 'In the name of the Father, and of the Son, and of the Holy Spirit. Amen. Lord, we begin this path of battle and trust.'
+        ];
+        STEPS.forEach((step, index) => {
+          parts.push(
+            (currentLang === 'es' ? 'Paso ' : 'Step ') + (index + 1) + '. ' + step.title[currentLang],
+            step.prayer[currentLang],
+            step.action[currentLang],
+            step.antidote[currentLang]
+          );
+        });
+        parts.push(FINAL_PRAYER[currentLang]);
+        return parts;
+      }
+
+      function buildStepSequence() {
+        const step = STEPS[currentStep];
+        return [
+          (currentLang === 'es' ? 'Paso ' : 'Step ') + (currentStep + 1) + '. ' + step.title[currentLang],
+          step.prayer[currentLang],
+          step.action[currentLang],
+          step.antidote[currentLang]
+        ];
+      }
+
+      function speakSequence(parts) {
+        if (!window.speechSynthesis) return;
+        const chunks = parts.flatMap(part => splitSpeechText(part));
+        if (!chunks.length) return;
+        window.speechSynthesis.cancel();
+        const runId = ++speakRunId;
+        speaking = true;
+        const speakNext = (index) => {
+          if (runId !== speakRunId) return;
+          if (index >= chunks.length) {
+            speaking = false;
+            return;
+          }
+          const utt = new SpeechSynthesisUtterance(chunks[index]);
+          utt.lang = currentLang === 'es' ? 'es-MX' : 'en-US';
+          utt.rate = 0.76;
+          utt.pitch = 1.0;
+          const voice = getVoiceForLang();
+          if (voice) utt.voice = voice;
+          utt.onend = utt.onerror = () => {
+            if (runId !== speakRunId) return;
+            speakNext(index + 1);
+          };
+          window.speechSynthesis.speak(utt);
+        };
+        speakNext(0);
+      }
+
+      function stopSpeech() {
+        speakRunId += 1;
+        if (window.speechSynthesis) window.speechSynthesis.cancel();
+        speaking = false;
+      }
+
+      document.getElementById('langToggle').addEventListener('click', () => {
+        currentLang = currentLang === 'es' ? 'en' : 'es';
+        localStorage.setItem(LANG_KEY, currentLang);
+        updateTextBlocks();
+      });
+
+      ttsAllBtn.addEventListener('click', () => {
+        if (!window.speechSynthesis) return;
+        stopSpeech();
+        speakSequence(buildFullGuideSequence());
+      });
+
+      ttsStepBtn.addEventListener('click', () => {
+        if (!window.speechSynthesis) return;
+        stopSpeech();
+        speakSequence(buildStepSequence());
+      });
+
+      ttsStopBtn.addEventListener('click', stopSpeech);
+      prevBtn.addEventListener('click', () => setStep(currentStep - 1));
+      nextBtn.addEventListener('click', () => setStep(currentStep + 1));
+      restartBtn.addEventListener('click', () => setStep(0));
+      restartInlineBtn.addEventListener('click', () => setStep(0));
+      openFirstBtn.addEventListener('click', () => setStep(0));
+      document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowLeft') setStep(currentStep - 1);
+        if (e.key === 'ArrowRight') setStep(currentStep + 1);
+        if (e.key === 'Escape') stopSpeech();
+      });
+
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
+      }
+
+      if (!window.speechSynthesis) {
+        ttsNoSupport.style.display = '';
+        ttsAllBtn.style.display = 'none';
+        ttsStepBtn.style.display = 'none';
+        ttsStopBtn.style.display = 'none';
+      } else {
+        window.speechSynthesis.getVoices();
+      }
+
+      updateTextBlocks();
+      setStep(0);
+    })();
+  </script>
+</body>
+</html>
