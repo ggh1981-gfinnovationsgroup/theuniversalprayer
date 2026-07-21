@@ -38,6 +38,7 @@
     { id: 'diospadre', href: '/diospadre/', labels: { es: 'Dios Padre', en: 'God the Father' }, icon: '☁️' },
     { id: 'enemigos', href: '/enemigos/', labels: { es: 'Bendecir enemigos', en: 'Bless enemies' }, icon: '🤍' },
     { id: 'espiritu', href: '/espiritu/', labels: { es: 'Espíritu Santo', en: 'Holy Spirit' }, icon: '🕊️' },
+    { id: 'tentaciones', href: '/tentaciones/', labels: { es: 'Tentaciones', en: 'Temptation' }, icon: '🛡️' },
     { id: 'ninos', href: '/ninos/', labels: { es: 'Pequeños en Cristo', en: 'Little Ones in Christ' }, icon: '⭐' },
     { id: 'jovenes', href: '/jovenes/', labels: { es: 'Jóvenes en Cristo', en: 'Young in Christ' }, icon: '🔥' },
     { id: 'matrimonio', href: '/matrimonio/', labels: { es: 'Matrimonio', en: 'Marriage' }, icon: '💍' },
@@ -47,6 +48,7 @@
     { id: 'oraciones', href: '/oraciones/', labels: { es: 'Oraciones Básicas', en: 'Basic Prayers' }, icon: '📜' },
     { id: 'reconciliacion', href: '/reconciliacion/', labels: { es: 'Reconciliación', en: 'Reconciliation' }, icon: '🙏' },
     { id: 'rosario', href: '/rosario/', labels: { es: 'Rosario Interactivo', en: 'Interactive Rosary' }, icon: '📿' },
+    { id: 'viacrucis', href: '/viacrucis/', labels: { es: 'Vía Crucis Guiado', en: 'Guided Stations' }, icon: '✝' },
     { id: 'salud', href: '/salud/', labels: { es: 'Salud integral', en: 'Whole-person health' }, icon: '💚' },
   ];
 
