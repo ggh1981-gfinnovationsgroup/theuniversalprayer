@@ -1,0 +1,147 @@
+{
+  "id": "saneduardo",
+  "name": {
+    "es": "San Eduardo el Confesor",
+    "en": "Saint Edward the Confessor"
+  },
+  "jaculatoria": {
+    "es": "San Eduardo, danos un corazon justo y una conciencia fiel a Dios.",
+    "en": "Saint Edward, give us a just heart and a conscience faithful to God."
+  },
+  "color": "#27415f",
+  "image": "/assets/images/saneduardo.svg",
+  "specialty": {
+    "es": "Gobernantes, justicia y paz familiar",
+    "en": "Leaders, justice, and family peace"
+  },
+  "prayer": {
+    "es": "San Eduardo el Confesor, rey cristiano de Inglaterra, tu que buscaste honrar a Dios en medio de las responsabilidades del poder, intercede por nosotros ante el Senor.\n\nAlcanza para nuestras familias un espiritu de reconciliacion, para nuestros gobernantes sabiduria y rectitud, y para cada corazon la gracia de obedecer primero a Dios antes que al orgullo o al interes propio.\n\nTu que amaste la liturgia, la caridad y la paz, ensenanos a gobernar nuestra propia vida con humildad, pureza de intencion y misericordia hacia el projimo.\n\nSan Eduardo, ayudanos a vivir la fe con coherencia en lo publico y en lo secreto.\n\nAmen.",
+    "en": "Saint Edward the Confessor, Christian king of England, you who sought to honor God amid the responsibilities of power, intercede for us before the Lord.\n\nObtain for our families a spirit of reconciliation, for our leaders wisdom and integrity, and for every heart the grace to obey God before pride or self-interest.\n\nYou who loved liturgy, charity, and peace, teach us to govern our own lives with humility, purity of intention, and mercy toward our neighbor.\n\nSaint Edward, help us to live the faith with coherence in public and in private.\n\nAmen."
+  },
+  "history": {
+    "es": "San Eduardo el Confesor nacio hacia el ano 1003, hijo del rey Etelredo II y de Emma de Normandia. Su infancia quedo marcada por la inestabilidad politica de Inglaterra y por anos de exilio en Normandia, donde maduro una vida de piedad, oracion y amor por la liturgia.\n\nFue coronado rey de Inglaterra en 1042. Las cronicas medievales lo presentan como un gobernante inclinado a la paz, atento a la administracion de justicia y cercano a los pobres. Estuvo casado con Edith de Wessex, pero no tuvo descendencia, hecho que marcaria despues la sucesion del reino.\n\nSu obra mas conocida fue la reconstruccion de la abadia de Westminster. El templo fue consagrado el 28 de diciembre de 1065 y se convirtio en uno de los centros espirituales mas importantes de Inglaterra. Eduardo murio pocos dias despues, el 5 de enero de 1066, y fue sepultado alli mismo.\n\nSu culto crecio en los siglos XI y XII. Fuentes monasticas, especialmente vinculadas a Westminster, conservaron memoria de su vida de fe y de favores atribuidos a su intercesion. El papa Alejandro III aprobo oficialmente su canonizacion en 1161, y la elevacion solemne de sus reliquias en Westminster consolido su fiesta liturgica del 13 de octubre.\n\nLa Iglesia lo llama \"Confesor\" porque testimonio la fe por su vida santa y su gobierno cristiano, no por martirio de sangre. Su figura permanece como ejemplo de santidad en el servicio publico: autoridad unida a conciencia, justicia y caridad.",
+    "en": "Saint Edward the Confessor was born around the year 1003, son of King Aethelred II and Emma of Normandy. His early life was shaped by political instability in England and years of exile in Normandy, where he developed a deep life of prayer and love for the Church's liturgy.\n\nHe was crowned King of England in 1042. Medieval chronicles portray him as a ruler inclined toward peace, concerned for justice, and close to the poor. He was married to Edith of Wessex and had no children, a fact that later affected the succession of the kingdom.\n\nHis best-known work was the rebuilding of Westminster Abbey. The church was dedicated on December 28, 1065, and became one of England's major spiritual centers. Edward died a few days later, on January 5, 1066, and was buried there.\n\nHis cult grew during the 11th and 12th centuries. Monastic sources, especially those linked to Westminster, preserved the memory of his holy life and favors attributed to his intercession. Pope Alexander III formally approved his canonization in 1161, and the solemn translation of his relics at Westminster consolidated his liturgical feast on October 13.\n\nThe Church calls him a \"Confessor\" because he witnessed to the faith by a holy life and Christian kingship, not by blood martyrdom. He remains an example of holiness in public service: authority joined to conscience, justice, and charity."
+  },
+  "novena_prayers": {
+    "es": "Cada dia de la novena:\n1. Reza 1 Padre Nuestro, 1 Ave Maria y 1 Gloria.\n2. Lee la meditacion del dia.\n3. Presenta por nombre una autoridad civil, un padre de familia o una persona con responsabilidad de liderar.\n4. Pide la gracia de la justicia, la prudencia y la paz.",
+    "en": "Each day of the novena:\n1. Pray 1 Our Father, 1 Hail Mary, and 1 Glory Be.\n2. Read the day's meditation.\n3. Name one civic leader, parent, or person carrying responsibility.\n4. Ask for the grace of justice, prudence, and peace."
+  },
+  "novena": [
+    {
+      "day": 1,
+      "es": "Por gobernantes con temor de Dios\n\nSan Eduardo, intercede para que quienes gobiernan busquen primero la verdad y el bien comun. Amen.",
+      "en": "For leaders with fear of God\n\nSaint Edward, intercede so that those who govern seek truth first and the common good. Amen."
+    },
+    {
+      "day": 2,
+      "es": "Por justicia sin corrupcion\n\nSan Eduardo, ruega para que las decisiones publicas sean limpias, honestas y defendan al debil. Amen.",
+      "en": "For justice without corruption\n\nSaint Edward, pray that public decisions be clean, honest, and protective of the weak. Amen."
+    },
+    {
+      "day": 3,
+      "es": "Por paz en las familias\n\nSan Eduardo, ayuda a nuestras casas a vivir reconciliacion, paciencia y respeto mutuo. Amen.",
+      "en": "For peace in families\n\nSaint Edward, help our homes live reconciliation, patience, and mutual respect. Amen."
+    },
+    {
+      "day": 4,
+      "es": "Por quienes ejercen autoridad\n\nSan Eduardo, ensena a todo responsable a servir y no dominar, a proteger y no abusar. Amen.",
+      "en": "For those who hold authority\n\nSaint Edward, teach every responsible person to serve, not dominate; to protect, not abuse. Amen."
+    },
+    {
+      "day": 5,
+      "es": "Por los pobres y olvidados\n\nSan Eduardo, alcanzanos un corazon sensible a quien sufre y manos concretas para ayudar. Amen.",
+      "en": "For the poor and forgotten\n\nSaint Edward, obtain for us a heart attentive to those who suffer and concrete hands to help. Amen."
+    },
+    {
+      "day": 6,
+      "es": "Por la Iglesia en la vida publica\n\nSan Eduardo, intercede para que los cristianos den testimonio de fe con caridad y firmeza. Amen.",
+      "en": "For the Church in public life\n\nSaint Edward, intercede so Christians may witness with charity and firmness. Amen."
+    },
+    {
+      "day": 7,
+      "es": "Por prudencia en tiempos de conflicto\n\nSan Eduardo, ruega para que evitemos la violencia y busquemos caminos de dialogo y verdad. Amen.",
+      "en": "For prudence in times of conflict\n\nSaint Edward, pray that we avoid violence and seek paths of dialogue and truth. Amen."
+    },
+    {
+      "day": 8,
+      "es": "Por fidelidad en lo pequeno\n\nSan Eduardo, ensenanos a ser fieles a Dios tambien en lo cotidiano y oculto. Amen.",
+      "en": "For faithfulness in small things\n\nSaint Edward, teach us to be faithful to God also in daily and hidden things. Amen."
+    },
+    {
+      "day": 9,
+      "es": "Por santidad en el deber\n\nSan Eduardo, alcanzanos vivir nuestras responsabilidades con amor, justicia y esperanza cristiana. Amen.",
+      "en": "For holiness in duty\n\nSaint Edward, obtain for us to live our responsibilities with love, justice, and Christian hope. Amen."
+    }
+  ],
+  "litany": {
+    "title": {
+      "es": "Letania de San Eduardo",
+      "en": "Litany of Saint Edward"
+    },
+    "invocations": [
+      {
+        "es": "San Eduardo, rey humilde y fiel,",
+        "en": "Saint Edward, humble and faithful king,"
+      },
+      {
+        "es": "San Eduardo, defensor de la justicia,",
+        "en": "Saint Edward, defender of justice,"
+      },
+      {
+        "es": "San Eduardo, amante de la paz,",
+        "en": "Saint Edward, lover of peace,"
+      },
+      {
+        "es": "San Eduardo, amigo de los pobres,",
+        "en": "Saint Edward, friend of the poor,"
+      },
+      {
+        "es": "San Eduardo, hombre de oracion,",
+        "en": "Saint Edward, man of prayer,"
+      },
+      {
+        "es": "San Eduardo, testigo de integridad publica,",
+        "en": "Saint Edward, witness of public integrity,"
+      },
+      {
+        "es": "San Eduardo, constructor de paz familiar,",
+        "en": "Saint Edward, builder of family peace,"
+      },
+      {
+        "es": "San Eduardo, intercesor de gobernantes y ciudadanos,",
+        "en": "Saint Edward, intercessor for leaders and citizens,"
+      },
+      {
+        "es": "San Eduardo, ensenanos a servir con caridad,",
+        "en": "Saint Edward, teach us to serve with charity,"
+      }
+    ],
+    "response": {
+      "es": "Ruega por nosotros.",
+      "en": "Pray for us."
+    }
+  },
+  "coronilla": {
+    "available": true,
+    "title": {
+      "es": "Coronilla de San Eduardo",
+      "en": "Crown of Saint Edward"
+    },
+    "es": "La Coronilla de San Eduardo es una devocion breve para pedir rectitud, paz y servicio cristiano en las responsabilidades de cada dia.\n\n✦ PREPARACION:\nHaz la senal de la cruz y presenta una intencion concreta.\n\n✦ GLORIA (una sola vez):\n\"Gloria al Padre, y al Hijo, y al Espiritu Santo...\"\n\n✦ PETICION (una sola vez):\n\"San Eduardo, ensename a gobernar mi vida segun Dios: con justicia, prudencia y misericordia.\"\n\n✦ SIETE GRUPOS DE ORACION:\nEn cada grupo reza 1 Padre Nuestro, 1 Ave Maria y 1 Gloria.\n\nGRUPO 1 - Por pureza de intencion en quienes lideran.\nGRUPO 2 - Por justicia para los pequenos y vulnerables.\nGRUPO 3 - Por paz en los hogares y reconciliacion.\nGRUPO 4 - Por gobernantes honestos y sabios.\nGRUPO 5 - Por valentia para decir la verdad con caridad.\nGRUPO 6 - Por humildad en el uso de la autoridad.\nGRUPO 7 - Por fidelidad a Dios en lo publico y en lo secreto.\n\n✦ CONCLUSION:\n\"San Eduardo el Confesor, ruega por nosotros para que nuestro servicio sea santo y nuestro corazon permanezca en Dios. Amen.\"",
+    "en": "The Crown of Saint Edward is a brief devotion to ask for integrity, peace, and Christian service in daily responsibilities.\n\n✦ PREPARATION:\nMake the sign of the cross and present a concrete intention.\n\n✦ GLORY BE (once):\n\"Glory be to the Father, and to the Son, and to the Holy Spirit...\"\n\n✦ PETITION (once):\n\"Saint Edward, teach me to govern my life according to God: with justice, prudence, and mercy.\"\n\n✦ SEVEN GROUPS OF PRAYER:\nIn each group pray 1 Our Father, 1 Hail Mary, and 1 Glory Be.\n\nGROUP 1 - For purity of intention in those who lead.\nGROUP 2 - For justice for the small and vulnerable.\nGROUP 3 - For peace in homes and reconciliation.\nGROUP 4 - For honest and wise public leaders.\nGROUP 5 - For courage to speak truth with charity.\nGROUP 6 - For humility in the use of authority.\nGROUP 7 - For faithfulness to God in public and in private.\n\n✦ CONCLUSION:\n\"Saint Edward the Confessor, pray for us, that our service may be holy and our hearts remain in God. Amen.\""
+  },
+  "consecration": {
+    "available": true,
+    "es": "San Eduardo el Confesor, me consagro hoy a Dios por tu intercesion.\n\nEntrega al Senor mi casa, mis decisiones y mis responsabilidades.\n\nEnsename a vivir con rectitud en lo pequeno y en lo grande, a buscar siempre la justicia y a no usar nunca la autoridad para mi orgullo.\n\nQue tu ejemplo de oracion, paz y caridad transforme mi corazon, para que en todo quiera servir y no ser servido.\n\nSan Eduardo, ayudame a ser fiel a Cristo en la vida publica y en la vida secreta.\n\nAmen.",
+    "en": "Saint Edward the Confessor, today I consecrate myself to God through your intercession.\n\nPlace before the Lord my home, my decisions, and my responsibilities.\n\nTeach me to live with integrity in small and great things, to seek justice always, and never to use authority for pride.\n\nMay your example of prayer, peace, and charity transform my heart, so that in all things I seek to serve and not to be served.\n\nSaint Edward, help me remain faithful to Christ in public life and in hidden life.\n\nAmen."
+  },
+  "miracles": {
+    "available": true,
+    "es": "La tradicion de San Eduardo incluye varios relatos milagrosos conservados en fuentes medievales, especialmente en el entorno monastico de Westminster. No todos pueden verificarse con criterios historicos modernos, pero forman parte real de su culto antiguo.\n\n1. Curaciones en su tumba en Westminster (siglos XI-XII).\nCronicas y testimonios monasticos relatan recuperaciones de enfermos tras orar junto a su sepulcro. Estos relatos fueron importantes para consolidar su fama de santidad antes de la canonizacion.\n\n2. Milagro del anillo entregado a un peregrino pobre.\nUna leyenda muy difundida cuenta que Eduardo dio limosna en forma de anillo a un mendigo, que despues fue identificado como San Juan Evangelista. Anos mas tarde, peregrinos devolvieron el anillo con un mensaje espiritual para el rey.\n\n3. Favores atribuidos durante crisis politicas inglesas.\nEn la piedad medieval inglesa se invoco su intercesion en tiempos de inestabilidad, y varias narraciones lo presentan como protector del reino y mediador de paz.\n\n4. Intercesion por reconciliaciones familiares y sociales.\nTextos devocionales ingleses posteriores recogen su invocacion para superar enemistades y restaurar concordia, en sintonia con su reputacion de gobernante pacificador.\n\n5. Senales de veneracion continua tras la traslacion de reliquias.\nDespues de 1161, con su canonizacion y el impulso del culto en Westminster, aumentaron los relatos de gracias recibidas por su intercesion, especialmente en necesidades de justicia y conciencia recta.\n\n6. Testimonios de ayuda en decisiones de autoridad.\nEn la tradicion catolica inglesa, jueces, gobernantes y padres de familia lo han invocado para actuar con prudencia y rectitud moral.\n\n7. Consolacion espiritual de los fieles.\nMuchos relatos tardomedievales no describen solo curaciones fisicas, sino tambien paz interior, conversion y firmeza para obrar el bien bajo presion.\n\nNota historica: la Iglesia reconoce su santidad y culto canonico. Los relatos milagrosos pertenecen al genero hagiografico medieval y se leen como memoria de fe de la comunidad cristiana.",
+    "en": "Saint Edward's tradition includes several miracle accounts preserved in medieval sources, especially within the monastic milieu of Westminster. Not all can be verified by modern historical standards, yet they are genuinely part of his ancient cult.\n\n1. Healings at his tomb in Westminster (11th-12th centuries).\nChronicles and monastic testimonies report recoveries of the sick after prayer at his shrine. These accounts helped establish his reputation for holiness before canonization.\n\n2. The miracle of the ring given to a poor pilgrim.\nA widespread legend says Edward gave an alms-ring to a beggar later identified as Saint John the Evangelist. Years later, pilgrims returned the ring with a spiritual message for the king.\n\n3. Favors attributed during English political crises.\nIn medieval English piety, his intercession was invoked in times of instability, and several narratives portray him as a protector of the realm and a mediator of peace.\n\n4. Intercession for family and social reconciliation.\nLater English devotional texts record his invocation for ending enmity and restoring concord, in line with his reputation as a peacemaking ruler.\n\n5. Ongoing signs of veneration after the translation of relics.\nAfter 1161, with his canonization and the strengthening of his cult at Westminster, reports of favors increased, especially in matters of justice and upright conscience.\n\n6. Testimonies of help in decisions of authority.\nIn English Catholic tradition, judges, public leaders, and fathers of families invoked him to act with prudence and moral integrity.\n\n7. Spiritual consolation among the faithful.\nMany later medieval reports describe not only physical cures, but also inner peace, conversion, and strength to do good under pressure.\n\nHistorical note: the Church recognizes his holiness and canonical cult. Miracle reports belong to medieval hagiographic tradition and are read as the faith memory of the Christian community."
+  },
+  "feast_day": {
+    "es": "13 de octubre",
+    "en": "October 13"
+  }
+}

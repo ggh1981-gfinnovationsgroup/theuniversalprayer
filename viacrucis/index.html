@@ -186,6 +186,14 @@
       background: var(--bg-card);
       padding: 1.05rem 1rem;
       box-shadow: 0 16px 38px rgba(0,0,0,0.18);
+      scroll-margin-top: 1rem;
+      transition: box-shadow 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+    }
+
+    .viacrucis-card.is-target {
+      border-color: rgba(231, 207, 136, 0.72);
+      box-shadow: 0 0 0 1px rgba(231, 207, 136, 0.24), 0 18px 42px rgba(0,0,0,0.22), 0 0 34px rgba(201,168,76,0.18);
+      transform: translateY(-1px);
     }
 
     .viacrucis-meta {
@@ -499,6 +507,8 @@
         <button class="viacrucis-btn" id="restartBtn" type="button">↺ Reiniciar</button>
         <button class="viacrucis-btn" id="openFirstBtn" type="button">▶ Empezar desde la estación 1</button>
       </div>
+      <p class="viacrucis-note" data-lang="es">El botón de arriba te lleva al primer paso. Los botones de abajo sirven para avanzar, retroceder, leer la estación o escuchar toda la guía.</p>
+      <p class="viacrucis-note" data-lang="en" style="display:none">The button above takes you to the first step. The buttons below let you move forward, go back, read the station, or listen to the full guide.</p>
     </section>
 
     <section class="viacrucis-catechesis" aria-label="Catequesis del Vía Crucis">
@@ -546,7 +556,7 @@ Common response: "We adore You, O Christ, and we bless You. Because by Your holy
           <div class="viacrucis-progress-fill" id="progressFill"></div>
         </div>
 
-        <section class="viacrucis-card">
+        <section class="viacrucis-card" id="stationCard">
           <div class="viacrucis-meta">
             <span id="metaStation">Estación 1 de 14</span>
             <span id="metaStep">Paso 1</span>
@@ -1016,6 +1026,16 @@ Common response: "We adore You, O Christ, and we bless You. Because by Your holy
         renderStation();
       }
 
+      function goToFirstStation() {
+        setStation(0);
+        const stationCard = document.getElementById('stationCard');
+        if (stationCard) {
+          stationCard.classList.add('is-target');
+          stationCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          window.setTimeout(() => stationCard.classList.remove('is-target'), 1800);
+        }
+      }
+
       function buildFullGuideSequence() {
         const parts = [INTRO_SEQUENCE[currentLang]];
         STATIONS.forEach((station, index) => {
@@ -1106,7 +1126,7 @@ Common response: "We adore You, O Christ, and we bless You. Because by Your holy
       nextBtn.addEventListener('click', () => setStation(currentStation + 1));
       restartBtn.addEventListener('click', () => setStation(0));
       restartInlineBtn.addEventListener('click', () => setStation(0));
-      openFirstBtn.addEventListener('click', () => setStation(0));
+      openFirstBtn.addEventListener('click', goToFirstStation);
       document.addEventListener('keydown', e => {
         if (e.key === 'ArrowLeft') setStation(currentStation - 1);
         if (e.key === 'ArrowRight') setStation(currentStation + 1);

@@ -161,9 +161,9 @@
 
   <!-- Footer badge -->
   <rect x='18' y='523' width='364' height='67' rx='6' fill='#050d1a' opacity='0.92'/>
-  <text x='200' y='542' text-anchor='middle' font-family='Arial,sans-serif' font-size='8' fill='#e0c27d' letter-spacing='1.8'>SANTA FRANCISCA JAVIER CABRINI · ST. FRANCES XAVIER CABRINI</text>
-  <text x='200' y='560' text-anchor='middle' font-family='Georgia,serif' font-size='12.8' fill='#a8c6ff' font-style='italic'>«Hábito negro, armadura de fe»</text>
-  <text x='200' y='578' text-anchor='middle' font-family='Georgia,serif' font-size='10.6' fill='#f0cc72' font-style='italic' opacity='0.88'>«Black habit, armor of faith»</text>
+  <text x='200' y='542' text-anchor='middle' font-family='Arial,sans-serif' font-size='8' fill='#e0c27d' letter-spacing='1.8'>ESPERANZA DE LOS MIGRANTES · HOPE FOR MIGRANTS</text>
+  <text x='200' y='560' text-anchor='middle' font-family='Georgia,serif' font-size='12.8' fill='#a8c6ff' font-style='italic'>«Cabrini, madre de los migrantes»</text>
+  <text x='200' y='578' text-anchor='middle' font-family='Georgia,serif' font-size='10.6' fill='#f0cc72' font-style='italic' opacity='0.88'>«Cabrini, mother of migrants»</text>
 
   <!-- Final outer glow -->
   <circle cx='200' cy='200' r='120' fill='none' stroke='#f9e091' stroke-width='0.5' opacity='0.15' filter='url(#cb-light-glow)'/>

@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dones del Espíritu Santo | The Universal Prayer</title>
-  <meta name="description" content="Invocación al Espíritu Santo y oración por sus siete dones y carismas. Sabiduría, entendimiento, consejo, fortaleza, ciencia, piedad y temor de Dios." />
+  <title>Espíritu Santo | The Universal Prayer</title>
+  <meta name="description" content="Guía para hablarle al Espíritu Santo: cómo invocarlo, qué pedirle y cómo orar por sus siete dones y carismas." />
   <meta name="theme-color" content="#c9a84c" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Dones del Espíritu Santo" />
-  <meta property="og:description" content="Invocación al Espíritu Santo y oración por sus siete dones y carismas." />
+  <meta property="og:title" content="Espíritu Santo" />
+  <meta property="og:description" content="Guía para hablarle al Espíritu Santo: cómo invocarlo, qué pedirle y cómo orar por sus siete dones." />
   <meta property="og:url" content="https://www.theuniversalprayer.com/espiritu/" />
   <meta property="og:image" content="https://www.theuniversalprayer.com/assets/images/social-espiritu.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Dones del Espíritu Santo" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Dones del Espíritu Santo" />
-  <meta name="twitter:description" content="Invocación al Espíritu Santo y oración por sus siete dones y carismas." />
+  <meta name="twitter:title" content="Espíritu Santo" />
+  <meta name="twitter:description" content="Guía para hablarle al Espíritu Santo: cómo invocarlo, qué pedirle y cómo orar por sus siete dones." />
   <meta name="twitter:image" content="https://www.theuniversalprayer.com/assets/images/social-espiritu.png" />
   <link rel="manifest" href="/manifest.json" />
   <meta name="mobile-web-app-capable" content="yes" />
@@ -179,6 +179,60 @@
       transition: opacity 0.2s;
     }
     .esp-home-link:hover { opacity: 1; }
+    .esp-practical-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+    @media (max-width: 560px) {
+      .esp-practical-grid { grid-template-columns: 1fr; }
+    }
+    .esp-practical-card {
+      background: rgba(201,168,76,0.06);
+      border: 1px solid rgba(201,168,76,0.18);
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+    }
+    .esp-practical-kicker {
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.35rem;
+    }
+    .esp-practical-title {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      color: var(--gold-light);
+      margin: 0 0 0.55rem;
+    }
+    .esp-practical-text {
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.7;
+      margin: 0;
+      white-space: pre-line;
+    }
+    .esp-speech-list {
+      display: grid;
+      gap: 0.55rem;
+    }
+    .esp-speech-item {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(201,168,76,0.14);
+      border-radius: 12px;
+      padding: 0.9rem 1rem;
+      color: rgba(255,255,255,0.8);
+      font-family: var(--font-serif);
+      line-height: 1.8;
+      font-size: 0.94rem;
+      white-space: pre-line;
+    }
+    .esp-speech-item strong {
+      color: var(--gold-light);
+    }
   </style>
 </head>
 <body>
@@ -212,8 +266,8 @@
     <h1 class="esp-title" data-lang="es">Espíritu Santo</h1>
     <h1 class="esp-title" data-lang="en" style="display:none">Holy Spirit</h1>
 
-    <p class="esp-subtitle" data-lang="es">Invocación al Espíritu Santo y oración por sus siete dones y carismas para tu vida.</p>
-    <p class="esp-subtitle" data-lang="en" style="display:none">Invocation to the Holy Spirit and prayer for His seven gifts and charisms for your life.</p>
+    <p class="esp-subtitle" data-lang="es">Cómo hablarle con sencillez, qué pedirle en lo concreto y cómo abrirle el corazón para que te conduzca en verdad.</p>
+    <p class="esp-subtitle" data-lang="en" style="display:none">How to speak to Him simply, what to ask for in concrete situations, and how to open your heart so He can lead you in truth.</p>
   </section>
 
   <!-- CONTENT -->
@@ -283,6 +337,74 @@ Amen.</p>
 
       <div class="esp-gifts-grid" id="giftsGrid">
         <!-- filled by JS -->
+      </div>
+    </section>
+
+    <!-- Cómo hablarle -->
+    <section class="esp-section">
+      <h2 class="esp-section-title" data-lang="es">Cómo hablarle al Espíritu Santo</h2>
+      <h2 class="esp-section-title" data-lang="en" style="display:none">How to speak to the Holy Spirit</h2>
+
+      <blockquote class="esp-scripture" data-lang="es">
+        «Cuando venga Él, el Espíritu de la verdad, los guiará hasta la verdad completa.»
+        <cite>— Juan 16, 13</cite>
+      </blockquote>
+      <blockquote class="esp-scripture" data-lang="en" style="display:none">
+        "When He comes, the Spirit of truth, He will guide you to all truth."
+        <cite>— John 16:13</cite>
+      </blockquote>
+
+      <p class="esp-invocation" data-lang="es">No hace falta hablarle con palabras complicadas. El Espíritu Santo entiende el suspiro, la duda, la herida y el deseo de hacer el bien. Puedes hablarle como a un Consolador, un Maestro interior y un Amigo de tu alma.</p>
+      <p class="esp-invocation" data-lang="en" style="display:none">You do not need complicated words. The Holy Spirit understands a sigh, a doubt, a wound, and the desire to do good. You can speak to Him as Consoler, interior Teacher, and Friend of your soul.</p>
+
+      <div class="esp-practical-grid">
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">1. En la mañana</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">1. In the morning</div>
+          <h3 class="esp-practical-title" data-lang="es">Pídele que gobierne tu día</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">Ask Him to govern your day</h3>
+          <p class="esp-practical-text" data-lang="es">«Espíritu Santo, toma mi mente, mis palabras y mis decisiones. Guíame hoy para no apartarme de la voluntad de Dios.»</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">"Holy Spirit, take my mind, my words, and my decisions. Guide me today so I do not turn away from God's will."</p>
+        </div>
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">2. Cuando no sabes qué hacer</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">2. When you do not know what to do</div>
+          <h3 class="esp-practical-title" data-lang="es">Pídele consejo y luz</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">Ask for counsel and light</h3>
+          <p class="esp-practical-text" data-lang="es">«Espíritu de consejo, muéstrame el camino correcto. No quiero decidir solo por miedo o impulsos.»</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">"Spirit of counsel, show me the right way. I do not want to decide only from fear or impulse."</p>
+        </div>
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">3. Cuando estás cansado o tentado</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">3. When you are tired or tempted</div>
+          <h3 class="esp-practical-title" data-lang="es">Pídele fortaleza</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">Ask for fortitude</h3>
+          <p class="esp-practical-text" data-lang="es">«Espíritu Santo, fortalece mi corazón. Dame firmeza para resistir el mal y amor para volver al bien.»</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">"Holy Spirit, strengthen my heart. Give me firmness to resist evil and love to return to good."</p>
+        </div>
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">4. Cuando no sientes nada</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">4. When you feel nothing</div>
+          <h3 class="esp-practical-title" data-lang="es">Pídele que ore en ti</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">Ask Him to pray in you</h3>
+          <p class="esp-practical-text" data-lang="es">«Espíritu de Dios, aunque no te sienta, quédate conmigo. Ora en mí, suspira en mí y lléname de paz.»</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">"Spirit of God, even when I do not feel You, stay with me. Pray in me, sigh in me, and fill me with peace."</p>
+        </div>
+      </div>
+
+      <div class="esp-section" style="margin-top:1.4rem; margin-bottom:0;">
+        <h3 class="esp-section-title" data-lang="es" style="font-size:1.1rem; margin-bottom:0.9rem;">Frases breves para hablarle</h3>
+        <h3 class="esp-section-title" data-lang="en" style="display:none; font-size:1.1rem; margin-bottom:0.9rem;">Short phrases to speak to Him</h3>
+        <div class="esp-speech-list">
+          <div class="esp-speech-item" data-lang="es"><strong>Ven, Espíritu Santo.</strong> No quiero ir solo.</div>
+          <div class="esp-speech-item" data-lang="en" style="display:none"><strong>Come, Holy Spirit.</strong> I do not want to go alone.</div>
+          <div class="esp-speech-item" data-lang="es"><strong>Ilumíname.</strong> Muéstrame lo que viene de Dios.</div>
+          <div class="esp-speech-item" data-lang="en" style="display:none"><strong>Enlighten me.</strong> Show me what comes from God.</div>
+          <div class="esp-speech-item" data-lang="es"><strong>Dame paz.</strong> Ordena lo que está agitado dentro de mí.</div>
+          <div class="esp-speech-item" data-lang="en" style="display:none"><strong>Give me peace.</strong> Order what is restless within me.</div>
+          <div class="esp-speech-item" data-lang="es"><strong>Fortaléceme.</strong> No dejes que me rinda ante el mal.</div>
+          <div class="esp-speech-item" data-lang="en" style="display:none"><strong>Strengthen me.</strong> Do not let me surrender to evil.</div>
+        </div>
       </div>
     </section>
 
