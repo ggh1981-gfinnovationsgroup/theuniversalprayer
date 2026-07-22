@@ -6,11 +6,57 @@ Sitio web catolico bilingue (ES/EN) publicado en GitHub Pages.
 
 - Produccion activa en `main`.
 - Sitio estatico con PWA (`sw.js`) y contenido en JSON.
-- Cache actual del Service Worker: `tup-v114`.
-- Version de app en cliente: `v2026.07.11-1`.
-- Version de datos en cliente: `20260708-2`.
+- Cache actual del Service Worker: `tup-v139`.
 - Archivos de datos JSON: 103 en `data/`.
 - Historias para ninos: fuente principal en `data/ninos-cuentos.json`.
+- Wake Lock API activo en todas las paginas con TTS (evita standby durante audio).
+
+## Cuentos para Ninos — Progreso de Reescritura Artesanal
+
+Cada cuento debe ser una narrativa real con escena concreta, personaje, dialogo y cierre para dormir.
+**31 / 101 completados.**
+
+### ✅ Completados (narrativa artesanal)
+
+| # | ID | Escena central |
+|---|---|---|
+| 0 | juanbosco | Giovanni de 9 años sueña con lobos que se vuelven corderos |
+| 1 | teresita | Thérèse de 14 años descubre el Caminito con un pétalo de rosa |
+| 2 | nicolas | Nicolás lanza bolsas de oro por la ventana de noche; el padre lo atrapa |
+| 3 | francisco | El lobo de Gubbio, los pájaros, el abrazo al leproso (~14 min) |
+| 4 | juandiego | Cuauhtlatoatzin y sus tres encuentros en el Tepeyac (~14 min) |
+| 5 | lucia | La corona de velas en las catacumbas de Siracusa (~12 min) |
+| 6 | fatima | La mañana del 13 de mayo: la Señora sobre la encina |
+| 7 | divinonino | El Padre Juan recibe la imagen en un barrio pobre de Bogotá |
+| 8 | sanjose | La noche del sueño del ángel; José decide quedarse |
+| 9 | guadalupe | Juan Diego en el Tepeyac antes del amanecer; el tilma |
+| 14 | carlo | Carlo de 11 años construye la base de datos de milagros eucarísticos |
+| 16 | mariagoretti | Infancia bondadosa + sueño de las flores de Alessandro (sin violencia) |
+| 17 | santaines | Fe tranquila ante la presión; sin detalles de martirio |
+| 18 | carloslwanga | Alegría y liderazgo con los pajes; "Dios primero" |
+| 25 | sanbenito | El silencio de la cueva; el cuervo y el pan |
+| 26 | sanblas | Milagro del hueso de pescado |
+| 30 | sancristobal | Ofero carga al niño en el río; el niño es Jesús |
+| 31 | santaana | La abuela de Jesús; oración esperada 9 años |
+| 32 | santamonica | 32 años rezando; el jardín de Milán; el abrazo |
+| 34 | sanjuanbautista | Vida en el desierto; voz en el Jordán; sin decapitación |
+| 35 | sanmaximiliano | El niño Raimundo y las dos coronas; la radio de paz |
+| 36 | sanlorenzo | El tesoro son los pobres; sin la parrilla |
+| 40 | santarita | La espina y las puertas cerradas; sin el marido asesinado |
+| 41 | santadymphna | Paz interior; el pueblo de Geel; sin el padre violento |
+| 45 | sandaniel | El foso de los leones; Daniel sigue rezando |
+| 46 | reydavid | David y Goliat; sin corte de cabeza |
+| 49 | santabarbara | La tercera ventana; protección en tormentas |
+| 60 | angelguarda | Diego le confiesa a su abuela que le teme a la oscuridad |
+| 69 | sanfelipeneri | Felipe llega a Roma sin nada; malabares en la plaza |
+| 90 | sanoliverplunkett | El obispo de la paz en Irlanda; perdona a sus jueces |
+| 100 | saneduardo | Rey humilde; sueño de las dos coronas; Westminster |
+
+### ⏳ Pendientes (aún en formato plantilla — reescritura en progreso)
+
+`francisco` y `juandiego` y `lucia` completados — quedan pendientes:
+
+`sanantonio` · `sanmiguel` · `sanmiguel` · `sangabriel` · `sanrafael` · `luisgonzaga` · `padrepio` · `teresacalcuta` · `sanvicente` · `sanjudas` · `sancharbel` · `sanjorge` · `sancamilo` · `sanperegrino` · `sanexpedito` · `sanpedro` · `santaclara` · `santacatalina` · `lourdes` · `sanfranciscojavier` · `sanfranciscodesales` · `sanjuanapostol` · `sanefren` · `santaapolonia` · `sanjuandedios` · `juanpablo` · `sanbonifacio` · `sanbrendan` · `santotomas` · `sangerardo` · `sanmartindelporres` · `santarosa` · `misericordia` · `sagradocorazon` · `schoenstatt` · `santacoleta` · `santaemma` · `santanoemi` · `sanmartincapa` · `inmaculadocorazon` · `providencia` · `divinaprovidencia` · `santafabiola` · `sanguillermo` · `sanguillermogellone` · `sanguillermoaquitania` · `sancarlos` · `santacelina` · `sanagustin` · `perpetuosocorro` · `mariaauxiliadora` · `santaalejandra` · `santaroxana` · `santagwendolina` · `santagema` · `santagianna` · `sandavidgales` · `sanismael` · `santadelia` · `santaisabel` · `santaelena` · `sanalejandro` · `santasilvia` · `santaleticia` · `sanbarnabes` · `santomamoro` · `sanireneolyon` · `santomasapostol` · `nuestrasenoracarmen` · `preciosisimasangre` · `cabrini`
 
 ## Estructura Real del Proyecto
 
