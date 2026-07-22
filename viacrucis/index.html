@@ -586,6 +586,13 @@ Common response: "We adore You, O Christ, and we bless You. Because by Your holy
               <div class="viacrucis-station-label" data-lang="en" style="display:none">Short prayer</div>
               <div class="viacrucis-station-line" id="stationPrayer"></div>
             </div>
+            <div>
+              <div class="viacrucis-station-label" data-lang="es">Padre Nuestro · Ave María · Gloria</div>
+              <div class="viacrucis-station-label" data-lang="en" style="display:none">Our Father · Hail Mary · Glory Be</div>
+              <div class="viacrucis-station-line" id="stationOurFather" style="margin-bottom:0.55rem"></div>
+              <div class="viacrucis-station-line" id="stationHailMary" style="margin-bottom:0.55rem"></div>
+              <div class="viacrucis-station-line" id="stationGlory"></div>
+            </div>
           </div>
 
           <div class="viacrucis-actions">
@@ -884,6 +891,19 @@ Common response: "We adore You, O Christ, and we bless You. Because by Your holy
         en: 'Lord Jesus, we have followed Your path of sorrow and love. May this Way of the Cross teach us to carry the cross with faith, to love without measure, and to hope for Your Resurrection with living hope. Amen.'
       };
 
+      const STATION_PRAYERS = {
+        es: {
+          ourFather: 'Padre nuestro, que estás en el cielo, santificado sea tu Nombre; venga a nosotros tu reino; hágase tu voluntad en la tierra como en el cielo. Danos hoy nuestro pan de cada día; perdona nuestras ofensas, como también nosotros perdonamos a los que nos ofenden; no nos dejes caer en la tentación, y líbranos del mal. Amén.',
+          hailMary: 'Dios te salve, María, llena eres de gracia, el Señor es contigo; bendita tú eres entre todas las mujeres, y bendito es el fruto de tu vientre, Jesús. Santa María, Madre de Dios, ruega por nosotros pecadores, ahora y en la hora de nuestra muerte. Amén.',
+          glory: 'Gloria al Padre, y al Hijo, y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.'
+        },
+        en: {
+          ourFather: 'Our Father, who art in heaven, hallowed be Thy Name; Thy kingdom come; Thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses, as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.',
+          hailMary: 'Hail Mary, full of grace, the Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.',
+          glory: 'Glory be to the Father, and to the Son, and to the Holy Spirit. As it was in the beginning, is now, and ever shall be, world without end. Amen.'
+        }
+      };
+
       const INTRO_SEQUENCE = {
         es: 'En el nombre del Padre, y del Hijo, y del Espíritu Santo. Amén. Señor Jesús, comenzamos este camino contigo.',
         en: 'In the name of the Father, and of the Son, and of the Holy Spirit. Amen. Lord Jesus, we begin this path with You.'
@@ -1015,6 +1035,10 @@ Common response: "We adore You, O Christ, and we bless You. Because by Your holy
           ? 'Te adoramos, Cristo, y te bendecimos. Porque por tu santa cruz redimiste al mundo.'
           : 'We adore You, O Christ, and we bless You. Because by Your holy cross You have redeemed the world.';
         stationPrayer.textContent = station.prayer[currentLang];
+        const sp = STATION_PRAYERS[currentLang];
+        document.getElementById('stationOurFather').textContent = sp.ourFather;
+        document.getElementById('stationHailMary').textContent = sp.hailMary;
+        document.getElementById('stationGlory').textContent = sp.glory;
         metaStation.textContent = (currentLang === 'es' ? 'Estación ' : 'Station ') + (currentStation + 1) + (currentLang === 'es' ? ' de 14' : ' of 14');
         metaStep.textContent = (currentLang === 'es' ? 'Paso ' : 'Step ') + (currentStation + 1);
         progressFill.style.width = (((currentStation + 1) / STATIONS.length) * 100) + '%';
@@ -1039,12 +1063,16 @@ Common response: "We adore You, O Christ, and we bless You. Because by Your holy
 
       function buildFullGuideSequence() {
         const parts = [INTRO_SEQUENCE[currentLang]];
+        const sp = STATION_PRAYERS[currentLang];
         STATIONS.forEach((station, index) => {
           parts.push(
             (currentLang === 'es' ? 'Estación ' : 'Station ') + (index + 1) + '. ' + station.title[currentLang],
             station.reading[currentLang],
             station.meditation[currentLang],
-            station.prayer[currentLang]
+            station.prayer[currentLang],
+            sp.ourFather,
+            sp.hailMary,
+            sp.glory
           );
         });
         parts.push(FINAL_PRAYER[currentLang]);
@@ -1053,11 +1081,15 @@ Common response: "We adore You, O Christ, and we bless You. Because by Your holy
 
       function buildStationSequence() {
         const station = STATIONS[currentStation];
+        const sp = STATION_PRAYERS[currentLang];
         return [
           (currentLang === 'es' ? 'Estación ' : 'Station ') + (currentStation + 1) + '. ' + station.title[currentLang],
           station.reading[currentLang],
           station.meditation[currentLang],
-          station.prayer[currentLang]
+          station.prayer[currentLang],
+          sp.ourFather,
+          sp.hailMary,
+          sp.glory
         ];
       }
 
