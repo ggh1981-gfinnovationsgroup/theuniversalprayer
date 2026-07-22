@@ -14,7 +14,7 @@ Sitio web catolico bilingue (ES/EN) publicado en GitHub Pages.
 ## Cuentos para Ninos — Progreso de Reescritura Artesanal
 
 Cada cuento debe ser una narrativa real con escena concreta, personaje, dialogo y cierre para dormir.
-**39 / 101 completados.**
+**42 / 101 completados.**
 
 ### ✅ Completados (narrativa artesanal)
 
