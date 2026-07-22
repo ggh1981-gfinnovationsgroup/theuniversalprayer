@@ -923,7 +923,6 @@ Referencias magisteriales: Lumen Gentium 60-62, Catecismo 969-970 y Rosarium Vir
 
           <div class="rosario-tts">
             <button class="rosario-tts-btn full" id="ttsPlayAllBtn">▶ Rosario completo</button>
-            <button class="rosario-tts-btn" id="ttsWakeBtn">🔓 Mantener pantalla activa: SI</button>
             <button class="rosario-tts-btn" id="ttsPlayBtn">🔊 Leer en voz alta</button>
             <button class="rosario-tts-btn" id="ttsPauseBtn" style="display:none">⏸ Pausar</button>
             <button class="rosario-tts-btn" id="ttsStopBtn" style="display:none">⏹ Detener</button>
@@ -992,8 +991,6 @@ Referencias magisteriales: Lumen Gentium 60-62, Catecismo 969-970 y Rosarium Vir
           next: 'Siguiente →',
           ttsPlay: '🔊 Leer en voz alta',
           ttsPlayAll: '▶ Rosario completo',
-          wakeOn: '🔓 Mantener pantalla activa: SI',
-          wakeOff: '🔒 Mantener pantalla activa: NO',
           ttsPause: '⏸ Pausar',
           ttsContinue: '▶ Continuar',
           ttsStop: '⏹ Detener',
@@ -1072,8 +1069,6 @@ Referencias magisteriales: Lumen Gentium 60-62, Catecismo 969-970 y Rosarium Vir
           next: 'Next →',
           ttsPlay: '🔊 Read aloud',
           ttsPlayAll: '▶ Full Rosary',
-          wakeOn: '🔓 Keep screen awake: ON',
-          wakeOff: '🔒 Keep screen awake: OFF',
           ttsPause: '⏸ Pause',
           ttsContinue: '▶ Continue',
           ttsStop: '⏹ Stop',
@@ -1311,7 +1306,6 @@ Referencias magisteriales: Lumen Gentium 60-62, Catecismo 969-970 y Rosarium Vir
     let rosaryTtsQueue = [];
     let rosaryTtsQueuePos = 0;
     let rosaryWakeLock = null;
-    let rosaryWakeLockEnabled = localStorage.getItem('tup_rosary_wakelock') !== '0';
 
     const els = {
       title: document.getElementById('title'),
@@ -1350,7 +1344,6 @@ Referencias magisteriales: Lumen Gentium 60-62, Catecismo 969-970 y Rosarium Vir
       prayerName: document.getElementById('prayerName'),
       prayerText: document.getElementById('prayerText'),
       ttsPlayAllBtn: document.getElementById('ttsPlayAllBtn'),
-      ttsWakeBtn: document.getElementById('ttsWakeBtn'),
       ttsPlayBtn: document.getElementById('ttsPlayBtn'),
       ttsPauseBtn: document.getElementById('ttsPauseBtn'),
       ttsStopBtn: document.getElementById('ttsStopBtn'),
@@ -1445,49 +1438,20 @@ Referencias magisteriales: Lumen Gentium 60-62, Catecismo 969-970 y Rosarium Vir
       rosaryTtsQueuePos = 0;
     }
 
-    function updateWakeButton() {
-      if (!els.ttsWakeBtn) return;
-      if (!('wakeLock' in navigator)) {
-        els.ttsWakeBtn.style.display = 'none';
-        return;
-      }
-      const t = i18n[lang].ui;
-      els.ttsWakeBtn.style.display = '';
-      els.ttsWakeBtn.textContent = rosaryWakeLockEnabled ? t.wakeOn : t.wakeOff;
-      els.ttsWakeBtn.setAttribute('aria-pressed', rosaryWakeLockEnabled ? 'true' : 'false');
-    }
-
     async function requestWakeLock() {
-      if (!('wakeLock' in navigator) || !rosaryWakeLockEnabled || rosaryWakeLock) return;
+      if (!('wakeLock' in navigator) || rosaryWakeLock) return;
       try {
         rosaryWakeLock = await navigator.wakeLock.request('screen');
-        rosaryWakeLock.addEventListener('release', () => {
-          rosaryWakeLock = null;
-          updateWakeButton();
-        });
+        rosaryWakeLock.addEventListener('release', () => { rosaryWakeLock = null; });
       } catch (_) {
         rosaryWakeLock = null;
       }
-      updateWakeButton();
     }
 
     async function releaseWakeLock() {
       if (!rosaryWakeLock) return;
-      try {
-        await rosaryWakeLock.release();
-      } catch (_) {
-        // Ignore release failures from browser lifecycle changes.
-      }
+      try { await rosaryWakeLock.release(); } catch (_) {}
       rosaryWakeLock = null;
-      updateWakeButton();
-    }
-
-    async function toggleWakeLockPref() {
-      rosaryWakeLockEnabled = !rosaryWakeLockEnabled;
-      localStorage.setItem('tup_rosary_wakelock', rosaryWakeLockEnabled ? '1' : '0');
-      if (rosaryWakeLockEnabled && rosaryTtsState !== 'stopped') await requestWakeLock();
-      if (!rosaryWakeLockEnabled) await releaseWakeLock();
-      updateWakeButton();
     }
 
     function rosaryTtsSpeakQueueNext(mode) {
@@ -1974,13 +1938,12 @@ Referencias magisteriales: Lumen Gentium 60-62, Catecismo 969-970 y Rosarium Vir
     });
 
     els.ttsPlayAllBtn.addEventListener('click', rosaryTtsSpeakFull);
-    if (els.ttsWakeBtn) els.ttsWakeBtn.addEventListener('click', toggleWakeLockPref);
     els.ttsPlayBtn.addEventListener('click', rosaryTtsSpeakCurrent);
     els.ttsPauseBtn.addEventListener('click', rosaryTtsPauseToggle);
     els.ttsStopBtn.addEventListener('click', rosaryTtsStop);
 
     document.addEventListener('visibilitychange', () => {
-      if (document.visibilityState === 'visible' && rosaryWakeLockEnabled && rosaryTtsState !== 'stopped' && !rosaryWakeLock) {
+      if (document.visibilityState === 'visible' && rosaryTtsState !== 'stopped' && !rosaryWakeLock) {
         requestWakeLock();
       }
     });
@@ -2002,7 +1965,6 @@ Referencias magisteriales: Lumen Gentium 60-62, Catecismo 969-970 y Rosarium Vir
     } else {
       els.ttsPlayAllBtn.style.display = 'none';
       els.ttsPlayBtn.style.display = 'none';
-      if (els.ttsWakeBtn) els.ttsWakeBtn.style.display = 'none';
       els.ttsNoSupport.style.display = '';
     }
 
