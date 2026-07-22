@@ -658,6 +658,7 @@ Common response: "We adore You, O Christ, and we bless You. Because by Your holy
   </footer>
 
   <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/tts-wake-lock.js"></script>
   <script>
     (function() {
       'use strict';
@@ -1067,10 +1068,12 @@ Common response: "We adore You, O Christ, and we bless You. Because by Your holy
         window.speechSynthesis.cancel();
         const runId = ++speakRunId;
         speaking = true;
+        if (window.tupTTS) window.tupTTS.acquire();
         const speakNext = (index) => {
           if (runId !== speakRunId) return;
           if (index >= chunks.length) {
             speaking = false;
+            if (window.tupTTS) window.tupTTS.release();
             return;
           }
           const utt = new SpeechSynthesisUtterance(chunks[index]);
@@ -1092,6 +1095,7 @@ Common response: "We adore You, O Christ, and we bless You. Because by Your holy
         speakRunId += 1;
         if (window.speechSynthesis) window.speechSynthesis.cancel();
         speaking = false;
+        if (window.tupTTS) window.tupTTS.release();
       }
 
       function updateTtsButtons() {

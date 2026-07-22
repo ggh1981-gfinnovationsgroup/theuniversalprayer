@@ -611,6 +611,7 @@
     function a33TtsStop() {
       if ('speechSynthesis' in window) window.speechSynthesis.cancel();
       a33Tts = false; $ttsBtn.style.opacity = '1'; $ttsStop.style.display = 'none';
+      if (window.tupTTS) window.tupTTS.release();
     }
     $ttsBtn.addEventListener('click', () => {
       if (!a33Current || !('speechSynthesis' in window)) return;
@@ -624,6 +625,7 @@
       utt.onend = utt.onerror = a33TtsStop;
       window.speechSynthesis.speak(utt);
       a33Tts = true; $ttsBtn.style.opacity = '0.55'; $ttsStop.style.display = 'inline';
+      if (window.tupTTS) window.tupTTS.acquire();
     });
     $ttsStop.addEventListener('click', a33TtsStop);
 
@@ -781,4 +783,5 @@
 
 </body>
   <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/tts-wake-lock.js"></script>
 </html>

@@ -902,6 +902,7 @@ Amen.</div>
   </footer>
 
   <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/tts-wake-lock.js"></script>
   <script>
     (function () {
       'use strict';
@@ -932,10 +933,14 @@ Amen.</div>
         window.speechSynthesis.cancel();
         speakRunId++;
         const runId = speakRunId;
+        if (window.tupTTS) window.tupTTS.acquire();
         const chunks = text.match(/[^.!?]+[.!?]*/g) || [text];
         let i = 0;
         const speak = () => {
-          if (i >= chunks.length || runId !== speakRunId) return;
+          if (i >= chunks.length || runId !== speakRunId) {
+            if (window.tupTTS) window.tupTTS.release();
+            return;
+          }
           const utt = new SpeechSynthesisUtterance(chunks[i++].trim());
           utt.lang = currentLang === 'es' ? 'es-MX' : 'en-US';
           utt.rate = 0.78;
@@ -952,6 +957,7 @@ Amen.</div>
       window.stopReading = function () {
         speakRunId++;
         if (window.speechSynthesis) window.speechSynthesis.cancel();
+        if (window.tupTTS) window.tupTTS.release();
       };
 
       // Open section from URL hash

@@ -868,6 +868,7 @@ a broken and contrite heart, O God, You will not despise.</div>
   </footer>
 
   <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/tts-wake-lock.js"></script>
   <script>
     (function() {
       'use strict';
@@ -1178,10 +1179,12 @@ a broken and contrite heart, O God, You will not despise.</div>
         window.speechSynthesis.cancel();
         const runId = ++speakRunId;
         speaking = true;
+        if (window.tupTTS) window.tupTTS.acquire();
         const speakNext = (index) => {
           if (runId !== speakRunId) return;
           if (index >= chunks.length) {
             speaking = false;
+            if (window.tupTTS) window.tupTTS.release();
             return;
           }
           const utt = new SpeechSynthesisUtterance(chunks[index]);
@@ -1203,6 +1206,7 @@ a broken and contrite heart, O God, You will not despise.</div>
         speakRunId += 1;
         if (window.speechSynthesis) window.speechSynthesis.cancel();
         speaking = false;
+        if (window.tupTTS) window.tupTTS.release();
       }
 
       document.getElementById('langToggle').addEventListener('click', () => {

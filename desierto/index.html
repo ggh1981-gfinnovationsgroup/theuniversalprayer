@@ -622,6 +622,7 @@
       ttsSpeaking = false;
       $mdTtsBtn.style.opacity = '1';
       $mdTtsStop.style.display = 'none';
+      if (window.tupTTS) window.tupTTS.release();
     }
 
     $mdTtsBtn.addEventListener('click', () => {
@@ -645,6 +646,7 @@
       $mdTtsBtn.style.opacity = '0.5';
       $mdTtsStop.style.display = '';
       window.speechSynthesis.speak(u);
+      if (window.tupTTS) window.tupTTS.acquire();
     });
     $mdTtsStop.addEventListener('click', ttsStop);
 
@@ -676,5 +678,6 @@
   })();
   </script>
   <script src="/assets/js/menu.js"></script>
+  <script src="/assets/js/tts-wake-lock.js"></script>
 </body>
 </html>

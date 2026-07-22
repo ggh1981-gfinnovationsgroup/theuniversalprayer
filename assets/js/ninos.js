@@ -437,6 +437,7 @@
     ensureAmbientInModal();
     ttsSpeaking = true;
     updateTtsBtn();
+    if (window.tupTTS) window.tupTTS.acquire();
     speakChunk(0);
   }
 
@@ -445,6 +446,7 @@
     if (window.speechSynthesis) window.speechSynthesis.cancel();
     ttsSpeaking = false;
     updateTtsBtn();
+    if (window.tupTTS) window.tupTTS.release();
   }
   document.getElementById('ninosModalClose')?.addEventListener('click', closeModal);
   document.getElementById('ninosModalAmbient')?.addEventListener('click', toggleAmbient);

@@ -3,7 +3,7 @@
    Cache-first strategy: works fully offline after first load
    ===================================================== */
 
-const CACHE = 'tup-v137';
+const CACHE = 'tup-v138';
 
 // All files to pre-cache on install
 const PRECACHE_URLS = [
@@ -29,6 +29,7 @@ const PRECACHE_URLS = [
   '/viacrucis/index.html',
   '/assets/images/ninos.svg',
   '/assets/images/ninos-angel.svg',
+  '/assets/js/tts-wake-lock.js',
   '/assets/js/ninos.js',
   '/data/ninos-cuentos.json',
   '/assets/images/sanjudas-simbolo.svg',
