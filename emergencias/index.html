@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oraciones de Emergencia | The Universal Prayer</title>
+  <meta name="description" content="Oraciones católicas para momentos de crisis: ansiedad, depresión, miedo, soledad, ira, duelo, tentación y oscuridad interior. Ayuda espiritual inmediata." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Oraciones de Emergencia | The Universal Prayer" />
+  <meta property="og:description" content="Ayuda espiritual inmediata para ansiedad, depresión, miedo, soledad, tentación y crisis de fe." />
+  <meta property="og:url" content="https://www.theuniversalprayer.com/emergencias/" />
+  <meta property="og:image" content="https://www.theuniversalprayer.com/assets/images/social-home.png" />
+  <link rel="canonical" href="https://www.theuniversalprayer.com/emergencias/" />
+  <meta name="theme-color" content="#c9a84c" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="apple-touch-icon" href="/assets/images/icon.svg" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23c9a84c'>✝</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    body.emerg-page {
+      min-height: 100dvh;
+      background:
+        radial-gradient(900px 500px at 50% -80px, rgba(180,40,40,0.10), transparent 55%),
+        radial-gradient(700px 400px at 90% 20%, rgba(201,168,76,0.08), transparent 50%),
+        var(--bg);
+    }
+
+    /* ── HERO ── */
+    .emerg-hero {
+      text-align: center;
+      padding: 4.5rem 1.5rem 2.5rem;
+      background: radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.10) 0%, transparent 68%);
+    }
+    .emerg-icon {
+      width: 88px;
+      height: 88px;
+      margin: 0 auto 1.25rem;
+      display: block;
+      filter: drop-shadow(0 0 16px rgba(201,168,76,0.4));
+    }
+    .emerg-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(201,168,76,0.30);
+      padding: 0.3em 0.9em;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+    }
+    .emerg-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 6vw, 3rem);
+      color: #fff;
+      margin: 0 0 0.75rem;
+      line-height: 1.15;
+    }
+    .emerg-subtitle {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.60);
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ── LAYOUT ── */
+    .emerg-content {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0.5rem 1.25rem 5rem;
+    }
+
+    /* ── COLLAPSIBLE SECTIONS ── */
+    .emerg-details {
+      border: 1px solid rgba(201,168,76,0.20);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.025);
+      margin-bottom: 0.85rem;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .emerg-details[open] {
+      border-color: rgba(201,168,76,0.42);
+      background: rgba(255,255,255,0.04);
+    }
+    .emerg-summary {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      padding: 1.05rem 1.25rem;
+      cursor: pointer;
+      list-style: none;
+      user-select: none;
+    }
+    .emerg-summary::-webkit-details-marker { display: none; }
+    .emerg-summary-icon {
+      font-size: 1.35rem;
+      flex-shrink: 0;
+      width: 2rem;
+      text-align: center;
+    }
+    .emerg-summary-text {
+      flex: 1;
+    }
+    .emerg-summary-title {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      color: var(--gold-light);
+      line-height: 1.3;
+    }
+    .emerg-summary-sub {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.45);
+      margin-top: 0.15rem;
+      line-height: 1.4;
+    }
+    .emerg-chevron {
+      color: var(--gold-dim);
+      font-size: 0.8rem;
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+    .emerg-details[open] .emerg-chevron {
+      transform: rotate(180deg);
+    }
+
+    /* ── PANEL INSIDE DETAILS ── */
+    .emerg-panel {
+      padding: 0 1.25rem 1.25rem;
+    }
+    .emerg-scripture {
+      border-left: 3px solid rgba(201,168,76,0.45);
+      padding: 0.65rem 1rem;
+      margin: 0 0 1rem;
+      font-family: var(--font-serif);
+      font-style: italic;
+      color: rgba(255,255,255,0.78);
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+    .emerg-scripture cite {
+      display: block;
+      font-size: 0.72rem;
+      font-style: normal;
+      color: var(--gold);
+      margin-top: 0.35rem;
+    }
+    .emerg-prayer {
+      background: rgba(201,168,76,0.07);
+      border: 1px solid rgba(201,168,76,0.22);
+      border-radius: 10px;
+      padding: 1rem 1.1rem;
+      font-family: var(--font-serif);
+      font-size: 0.97rem;
+      color: rgba(255,255,255,0.90);
+      line-height: 1.88;
+      white-space: pre-line;
+      margin-bottom: 0.9rem;
+    }
+    .emerg-action {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 10px;
+      padding: 0.85rem 1rem;
+      font-size: 0.87rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.7;
+      white-space: pre-line;
+      margin-bottom: 0.75rem;
+    }
+    .emerg-action strong {
+      color: var(--gold-light);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+    .emerg-tts-row {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .emerg-tts-btn {
+      border: 1px solid rgba(201,168,76,0.28);
+      background: transparent;
+      color: var(--gold-light);
+      border-radius: 8px;
+      padding: 0.42rem 0.8rem;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.18s;
+    }
+    .emerg-tts-btn:hover {
+      background: rgba(201,168,76,0.10);
+    }
+    .emerg-link-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      text-decoration: none;
+      color: var(--gold-light);
+      border: 1px solid rgba(201,168,76,0.24);
+      background: rgba(201,168,76,0.05);
+      border-radius: 20px;
+      padding: 0.38rem 0.78rem;
+      font-size: 0.78rem;
+      margin-top: 0.5rem;
+    }
+    .emerg-link-pill:hover {
+      background: rgba(201,168,76,0.12);
+    }
+
+    /* ── INTRO CARD ── */
+    .emerg-intro {
+      border: 1px solid rgba(201,168,76,0.18);
+      border-radius: 14px;
+      background: rgba(201,168,76,0.05);
+      padding: 1.1rem 1.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.70);
+      line-height: 1.7;
+    }
+    .emerg-intro-title {
+      font-family: var(--font-serif);
+      color: var(--gold-light);
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    /* ── FOOTER LINKS ── */
+    .emerg-footer-links {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(201,168,76,0.14);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+    }
+  </style>
+</head>
+<body class="emerg-page">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link">
+        <span class="cross">✝</span>
+        <span class="logo-text">The Universal Prayer</span>
+      </a>
+      <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">EN</button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="emerg-hero">
+    <a href="/" class="ador-back-link" data-lang="es">← Inicio</a>
+    <a href="/" class="ador-back-link" data-lang="en" style="display:none">← Home</a>
+
+    <svg class="emerg-icon" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="44" cy="44" r="40" fill="rgba(201,168,76,0.10)" stroke="rgba(201,168,76,0.35)" stroke-width="1.5"/>
+      <line x1="44" y1="18" x2="44" y2="70" stroke="rgba(201,168,76,0.80)" stroke-width="7" stroke-linecap="round"/>
+      <line x1="24" y1="34" x2="64" y2="34" stroke="rgba(201,168,76,0.80)" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="44" cy="44" r="14" fill="rgba(201,168,76,0.12)" stroke="rgba(201,168,76,0.30)" stroke-width="1"/>
+    </svg>
+
+    <div class="emerg-badge" data-lang="es">✝ Ayuda espiritual inmediata</div>
+    <div class="emerg-badge" data-lang="en" style="display:none">✝ Immediate spiritual help</div>
+
+    <h1 class="emerg-title" data-lang="es">Oraciones de Emergencia</h1>
+    <h1 class="emerg-title" data-lang="en" style="display:none">Emergency Prayers</h1>
+
+    <p class="emerg-subtitle" data-lang="es">Para los momentos en que el alma necesita ayuda ahora: ansiedad, miedo, depresión, soledad, ira, duelo, tentación y oscuridad interior.</p>
+    <p class="emerg-subtitle" data-lang="en" style="display:none">For moments when the soul needs help now: anxiety, fear, depression, loneliness, anger, grief, temptation, and inner darkness.</p>
+  </section>
+
+  <main class="emerg-content">
+
+    <!-- INTRO -->
+    <div class="emerg-intro">
+      <p class="emerg-intro-title" data-lang="es">Cómo usar esta página</p>
+      <p class="emerg-intro-title" data-lang="en" style="display:none">How to use this page</p>
+      <p data-lang="es">Abre la sección que más se acerca a lo que estás sintiendo. Hay una escritura, una oración y una orientación concreta. No hace falta leer todo: solo lo que necesitas ahora.</p>
+      <p data-lang="en" style="display:none">Open the section closest to what you are feeling. Each one has a scripture, a prayer, and concrete guidance. You do not need to read everything — only what you need right now.</p>
+    </div>
+
+    <!-- 1. ANSIEDAD -->
+    <details class="emerg-details" id="sec-ansiedad">
+      <summary class="emerg-summary">
+        <span class="emerg-summary-icon">💨</span>
+        <span class="emerg-summary-text">
+          <span class="emerg-summary-title" data-lang="es">Ansiedad y angustia</span>
+          <span class="emerg-summary-title" data-lang="en" style="display:none">Anxiety and anguish</span>
+          <span class="emerg-summary-sub" data-lang="es">Corazón acelerado, preocupación sin freno, miedo al futuro</span>
+          <span class="emerg-summary-sub" data-lang="en" style="display:none">Racing heart, uncontrollable worry, fear of the future</span>
+        </span>
+        <span class="emerg-chevron">▼</span>
+      </summary>
+      <div class="emerg-panel">
+        <blockquote class="emerg-scripture" data-lang="es">
+          «No se turbe vuestro corazón ni tenga miedo.»
+          <cite>— Juan 14, 27</cite>
+        </blockquote>
+        <blockquote class="emerg-scripture" data-lang="en" style="display:none">
+          "Do not let your hearts be troubled and do not be afraid."
+          <cite>— John 14:27</cite>
+        </blockquote>
+        <div class="emerg-prayer" id="pray-ansiedad-es" data-lang="es">Señor Jesús,
+mi corazón está acelerado y no encuentro calma.
+Tú dijiste que me dabas Tu paz,
+una paz que el mundo no puede dar.
+
+Te entrego este miedo ahora mismo.
+Te entrego este pensamiento que no para.
+Te entrego el futuro que no puedo controlar.
+
+Respiro y digo: Tú estás aquí.
+Respiro y digo: no estoy solo.
+Respiro y digo: en Tus manos descanso.
+
+Jesús, sé mi calma. Amén.</div>
+        <div class="emerg-prayer" id="pray-ansiedad-en" data-lang="en" style="display:none">Lord Jesus,
+my heart is racing and I cannot find calm.
+You said You give me Your peace —
+a peace the world cannot give.
+
+I give You this fear right now.
+I give You this thought that will not stop.
+I give You the future I cannot control.
+
+I breathe and say: You are here.
+I breathe and say: I am not alone.
+I breathe and say: in Your hands I rest.
+
+Jesus, be my calm. Amen.</div>
+        <div class="emerg-action">
+          <strong data-lang="es">Qué hacer ahora</strong>
+          <strong data-lang="en" style="display:none">What to do now</strong>
+          <span data-lang="es">Pon las manos sobre el pecho. Inhala 4 segundos, sostén 2, exhala 6. Repite 3 veces. Di en voz baja: "Jesús, estás aquí". No trates de eliminar la ansiedad: entrégasela a Él.</span>
+          <span data-lang="en" style="display:none">Place your hands on your chest. Inhale for 4 counts, hold for 2, exhale for 6. Repeat 3 times. Say softly: "Jesus, You are here." Do not try to eliminate the anxiety — give it to Him.</span>
+        </div>
+        <div class="emerg-tts-row">
+          <button class="emerg-tts-btn" onclick="readSection('pray-ansiedad')" type="button">🔊 <span data-lang="es">Escuchar oración</span><span data-lang="en" style="display:none">Listen to prayer</span></button>
+          <button class="emerg-tts-btn" onclick="stopReading()" type="button">⏹ <span data-lang="es">Detener</span><span data-lang="en" style="display:none">Stop</span></button>
+        </div>
+      </div>
+    </details>
+
+    <!-- 2. DEPRESIÓN -->
+    <details class="emerg-details" id="sec-depresion">
+      <summary class="emerg-summary">
+        <span class="emerg-summary-icon">🌑</span>
+        <span class="emerg-summary-text">
+          <span class="emerg-summary-title" data-lang="es">Depresión y oscuridad interior</span>
+          <span class="emerg-summary-title" data-lang="en" style="display:none">Depression and inner darkness</span>
+          <span class="emerg-summary-sub" data-lang="es">Vacío, tristeza profunda, ganas de no estar, sin esperanza</span>
+          <span class="emerg-summary-sub" data-lang="en" style="display:none">Emptiness, deep sadness, no hope, wanting to disappear</span>
+        </span>
+        <span class="emerg-chevron">▼</span>
+      </summary>
+      <div class="emerg-panel">
+        <blockquote class="emerg-scripture" data-lang="es">
+          «Aunque camine por cañadas oscuras, nada temo, porque Tú vas conmigo.»
+          <cite>— Salmo 23, 4</cite>
+        </blockquote>
+        <blockquote class="emerg-scripture" data-lang="en" style="display:none">
+          "Even though I walk through the darkest valley, I will fear no evil, for You are with me."
+          <cite>— Psalm 23:4</cite>
+        </blockquote>
+        <div class="emerg-prayer" id="pray-depresion-es" data-lang="es">Señor,
+estoy en un hoyo y no encuentro la salida.
+No tengo palabras bonitas.
+Solo tengo este peso enorme.
+
+No te pido que lo entiendas todo.
+Solo te pido que estés aquí,
+en este oscuro,
+sin apartarte de mí.
+
+Aunque no te sienta,
+aunque no te vea,
+creo que estás conmigo en el fondo.
+
+No me sueltes.
+Amén.</div>
+        <div class="emerg-prayer" id="pray-depresion-en" data-lang="en" style="display:none">Lord,
+I am in a pit and I cannot find the way out.
+I have no beautiful words.
+I only have this enormous weight.
+
+I am not asking You to explain it all.
+I only ask You to be here,
+in this darkness,
+and not turn away from me.
+
+Even if I cannot feel You,
+even if I cannot see You,
+I believe You are with me at the bottom.
+
+Do not let go.
+Amen.</div>
+        <div class="emerg-action">
+          <strong data-lang="es">Qué hacer ahora</strong>
+          <strong data-lang="en" style="display:none">What to do now</strong>
+          <span data-lang="es">Si tienes pensamientos de hacerte daño, busca ayuda humana ahora mismo: llama a alguien de confianza o a una línea de crisis. La fe no sustituye la ayuda profesional; la complementa. Si el peso es profundo y sostenido, habla con un médico o terapeuta además de con un sacerdote.</span>
+          <span data-lang="en" style="display:none">If you have thoughts of hurting yourself, seek human help right now: call someone you trust or a crisis line. Faith does not replace professional help — it complements it. If the weight is deep and lasting, speak with a doctor or therapist as well as a priest.</span>
+        </div>
+        <div class="emerg-tts-row">
+          <button class="emerg-tts-btn" onclick="readSection('pray-depresion')" type="button">🔊 <span data-lang="es">Escuchar oración</span><span data-lang="en" style="display:none">Listen to prayer</span></button>
+          <button class="emerg-tts-btn" onclick="stopReading()" type="button">⏹ <span data-lang="es">Detener</span><span data-lang="en" style="display:none">Stop</span></button>
+        </div>
+      </div>
+    </details>
+
+    <!-- 3. MIEDO -->
+    <details class="emerg-details" id="sec-miedo">
+      <summary class="emerg-summary">
+        <span class="emerg-summary-icon">🌩️</span>
+        <span class="emerg-summary-text">
+          <span class="emerg-summary-title" data-lang="es">Miedo e incertidumbre</span>
+          <span class="emerg-summary-title" data-lang="en" style="display:none">Fear and uncertainty</span>
+          <span class="emerg-summary-sub" data-lang="es">Noticias difíciles, decisiones grandes, amenaza real o imaginada</span>
+          <span class="emerg-summary-sub" data-lang="en" style="display:none">Hard news, big decisions, real or imagined threat</span>
+        </span>
+        <span class="emerg-chevron">▼</span>
+      </summary>
+      <div class="emerg-panel">
+        <blockquote class="emerg-scripture" data-lang="es">
+          «No temas, porque Yo estoy contigo; no te angusties, porque Yo soy tu Dios. Te fortaleceré y te ayudaré.»
+          <cite>— Isaías 41, 10</cite>
+        </blockquote>
+        <blockquote class="emerg-scripture" data-lang="en" style="display:none">
+          "Do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you."
+          <cite>— Isaiah 41:10</cite>
+        </blockquote>
+        <div class="emerg-prayer" id="pray-miedo-es" data-lang="es">Padre celestial,
+tengo miedo.
+No sé qué va a pasar
+y esa incertidumbre me aplasta.
+
+Recuérdame que Tú ya estás
+en el mañana que yo no puedo ver.
+Recuérdame que lo que me asusta
+ya está en Tus manos.
+
+Dame un paso.
+Solo el próximo paso.
+No necesito ver todo el camino,
+solo que Tú lo conoces.
+
+Amén.</div>
+        <div class="emerg-prayer" id="pray-miedo-en" data-lang="en" style="display:none">Heavenly Father,
+I am afraid.
+I do not know what is going to happen,
+and that uncertainty crushes me.
+
+Remind me that You are already
+in the tomorrow I cannot see.
+Remind me that what frightens me
+is already in Your hands.
+
+Give me one step.
+Just the next step.
+I do not need to see the whole road —
+only that You know it.
+
+Amen.</div>
+        <div class="emerg-action">
+          <strong data-lang="es">Qué hacer ahora</strong>
+          <strong data-lang="en" style="display:none">What to do now</strong>
+          <span data-lang="es">Escribe en un papel: "Entrego ______ a Dios hoy." Llena el espacio con lo que temes. No resuelve el problema, pero ordena el corazón. Luego actúa solo en lo que está en tu mano hoy.</span>
+          <span data-lang="en" style="display:none">Write on paper: "I give ______ to God today." Fill in what you fear. It does not solve the problem, but it orders the heart. Then act only on what is within your reach today.</span>
+        </div>
+        <div class="emerg-tts-row">
+          <button class="emerg-tts-btn" onclick="readSection('pray-miedo')" type="button">🔊 <span data-lang="es">Escuchar oración</span><span data-lang="en" style="display:none">Listen to prayer</span></button>
+          <button class="emerg-tts-btn" onclick="stopReading()" type="button">⏹ <span data-lang="es">Detener</span><span data-lang="en" style="display:none">Stop</span></button>
+        </div>
+      </div>
+    </details>
+
+    <!-- 4. SOLEDAD -->
+    <details class="emerg-details" id="sec-soledad">
+      <summary class="emerg-summary">
+        <span class="emerg-summary-icon">🌌</span>
+        <span class="emerg-summary-text">
+          <span class="emerg-summary-title" data-lang="es">Soledad y abandono</span>
+          <span class="emerg-summary-title" data-lang="en" style="display:none">Loneliness and abandonment</span>
+          <span class="emerg-summary-sub" data-lang="es">Sentirte invisible, sin nadie, incomprendido o rechazado</span>
+          <span class="emerg-summary-sub" data-lang="en" style="display:none">Feeling invisible, alone, misunderstood, or rejected</span>
+        </span>
+        <span class="emerg-chevron">▼</span>
+      </summary>
+      <div class="emerg-panel">
+        <blockquote class="emerg-scripture" data-lang="es">
+          «¿Puede una madre olvidar a su hijo? Aunque ella lo olvidase, Yo no te olvidaré. Te tengo grabado en mis palmas.»
+          <cite>— Isaías 49, 15–16</cite>
+        </blockquote>
+        <blockquote class="emerg-scripture" data-lang="en" style="display:none">
+          "Can a mother forget the baby at her breast? Though she may forget, I will not forget you. I have engraved you on the palms of my hands."
+          <cite>— Isaiah 49:15–16</cite>
+        </blockquote>
+        <div class="emerg-prayer" id="pray-soledad-es" data-lang="es">Señor Jesús,
+Tú conoces la soledad desde adentro.
+En Getsemaní quedaste solo.
+En la cruz, sentiste el abandono.
+
+Hoy yo también lo siento.
+No hay nadie que entienda del todo.
+No hay nadie que llene este silencio.
+
+Pero Tú estás.
+Aunque no te vea, estás.
+Aunque no te sienta, estás.
+
+Quédate conmigo en este silencio.
+Eso es suficiente.
+Amén.</div>
+        <div class="emerg-prayer" id="pray-soledad-en" data-lang="en" style="display:none">Lord Jesus,
+You know loneliness from the inside.
+In Gethsemane You were left alone.
+On the cross You felt abandonment.
+
+Today I feel it too.
+There is no one who fully understands.
+There is no one who fills this silence.
+
+But You are here.
+Even if I cannot see You, You are here.
+Even if I cannot feel You, You are here.
+
+Stay with me in this silence.
+That is enough.
+Amen.</div>
+        <div class="emerg-action">
+          <strong data-lang="es">Qué hacer ahora</strong>
+          <strong data-lang="en" style="display:none">What to do now</strong>
+          <span data-lang="es">La soledad a veces pide una acción pequeña: mandar un mensaje a alguien, salir a caminar, sentarte en una iglesia. No esperes que la soledad desaparezca antes de moverte. Muévete primero, aunque sea poco.</span>
+          <span data-lang="en" style="display:none">Loneliness sometimes calls for a small action: send a message to someone, go for a walk, sit in a church. Do not wait for loneliness to disappear before you move. Move first, even just a little.</span>
+        </div>
+        <div class="emerg-tts-row">
+          <button class="emerg-tts-btn" onclick="readSection('pray-soledad')" type="button">🔊 <span data-lang="es">Escuchar oración</span><span data-lang="en" style="display:none">Listen to prayer</span></button>
+          <button class="emerg-tts-btn" onclick="stopReading()" type="button">⏹ <span data-lang="es">Detener</span><span data-lang="en" style="display:none">Stop</span></button>
+        </div>
+      </div>
+    </details>
+
+    <!-- 5. IRA -->
+    <details class="emerg-details" id="sec-ira">
+      <summary class="emerg-summary">
+        <span class="emerg-summary-icon">🔥</span>
+        <span class="emerg-summary-text">
+          <span class="emerg-summary-title" data-lang="es">Ira y conflicto</span>
+          <span class="emerg-summary-title" data-lang="en" style="display:none">Anger and conflict</span>
+          <span class="emerg-summary-sub" data-lang="es">Rabia que quema, relaciones rotas, alguien que te lastimó</span>
+          <span class="emerg-summary-sub" data-lang="en" style="display:none">Burning anger, broken relationships, someone who hurt you</span>
+        </span>
+        <span class="emerg-chevron">▼</span>
+      </summary>
+      <div class="emerg-panel">
+        <blockquote class="emerg-scripture" data-lang="es">
+          «Si te enojas, no peques; que el sol no se ponga sobre tu enojo.»
+          <cite>— Efesios 4, 26</cite>
+        </blockquote>
+        <blockquote class="emerg-scripture" data-lang="en" style="display:none">
+          "In your anger do not sin. Do not let the sun go down while you are still angry."
+          <cite>— Ephesians 4:26</cite>
+        </blockquote>
+        <div class="emerg-prayer" id="pray-ira-es" data-lang="es">Señor,
+estoy enojado.
+Y no quiero hacer daño con este enojo.
+
+Toma esta rabia de mis manos
+antes de que la use mal.
+No te pido que no sienta nada.
+Te pido que no me deje solo con esto.
+
+Dame la gracia de esperar.
+Dame la gracia de no hablar de más.
+Dame la gracia de perdonar,
+cuando llegue el momento.
+
+Amén.</div>
+        <div class="emerg-prayer" id="pray-ira-en" data-lang="en" style="display:none">Lord,
+I am angry.
+And I do not want to cause harm with this anger.
+
+Take this rage from my hands
+before I use it wrongly.
+I am not asking You to make me feel nothing.
+I am asking You not to leave me alone with this.
+
+Give me the grace to wait.
+Give me the grace not to say too much.
+Give me the grace to forgive,
+when the time comes.
+
+Amen.</div>
+        <div class="emerg-action">
+          <strong data-lang="es">Qué hacer ahora</strong>
+          <strong data-lang="en" style="display:none">What to do now</strong>
+          <span data-lang="es">Antes de responder, sal del espacio. Camina. Escribe lo que quieres decir pero no lo envíes todavía. La ira dice cosas que el corazón después lamenta. El primer paso no es perdonar, es no añadir más daño.</span>
+          <span data-lang="en" style="display:none">Before responding, leave the space. Walk. Write what you want to say but do not send it yet. Anger says things the heart later regrets. The first step is not to forgive — it is to add no more harm.</span>
+        </div>
+        <div class="emerg-tts-row">
+          <button class="emerg-tts-btn" onclick="readSection('pray-ira')" type="button">🔊 <span data-lang="es">Escuchar oración</span><span data-lang="en" style="display:none">Listen to prayer</span></button>
+          <button class="emerg-tts-btn" onclick="stopReading()" type="button">⏹ <span data-lang="es">Detener</span><span data-lang="en" style="display:none">Stop</span></button>
+        </div>
+      </div>
+    </details>
+
+    <!-- 6. DUELO -->
+    <details class="emerg-details" id="sec-duelo">
+      <summary class="emerg-summary">
+        <span class="emerg-summary-icon">🕯️</span>
+        <span class="emerg-summary-text">
+          <span class="emerg-summary-title" data-lang="es">Duelo y pérdida</span>
+          <span class="emerg-summary-title" data-lang="en" style="display:none">Grief and loss</span>
+          <span class="emerg-summary-sub" data-lang="es">Muerte de un ser querido, una separación, algo que ya no volverá</span>
+          <span class="emerg-summary-sub" data-lang="en" style="display:none">Death of a loved one, a separation, something that will not return</span>
+        </span>
+        <span class="emerg-chevron">▼</span>
+      </summary>
+      <div class="emerg-panel">
+        <blockquote class="emerg-scripture" data-lang="es">
+          «Bienaventurados los que lloran, porque ellos serán consolados.»
+          <cite>— Mateo 5, 4</cite>
+        </blockquote>
+        <blockquote class="emerg-scripture" data-lang="en" style="display:none">
+          "Blessed are those who mourn, for they will be comforted."
+          <cite>— Matthew 5:4</cite>
+        </blockquote>
+        <div class="emerg-prayer" id="pray-duelo-es" data-lang="es">Señor,
+me duele.
+No hay otra palabra que lo describa mejor.
+Me duele de adentro y no sé cuándo va a parar.
+
+No te pido que arregles lo que se rompió.
+Solo te pido que no me dejes solo en este dolor.
+
+Tú lloraste en la tumba de Lázaro.
+Tú sientes lo que cuesta perder.
+Quédate a mi lado mientras lloro.
+No apures mi duelo.
+
+En Tus manos dejo a quien perdí.
+Y en Tus manos me dejo yo.
+Amén.</div>
+        <div class="emerg-prayer" id="pray-duelo-en" data-lang="en" style="display:none">Lord,
+it hurts.
+There is no other word that describes it better.
+It hurts from the inside and I do not know when it will stop.
+
+I am not asking You to fix what was broken.
+I only ask You not to leave me alone in this pain.
+
+You wept at the tomb of Lazarus.
+You know what it costs to lose.
+Stay beside me while I weep.
+Do not rush my grief.
+
+Into Your hands I place the one I lost.
+And into Your hands I place myself.
+Amen.</div>
+        <div class="emerg-action">
+          <strong data-lang="es">Qué hacer ahora</strong>
+          <strong data-lang="en" style="display:none">What to do now</strong>
+          <span data-lang="es">No apures el duelo ni lo silencies. Llorar es honesto. Hablar del ser querido es sano. Lo que no conviene es quedarse solo sin decir nada durante semanas. Busca a alguien con quien hablar: familia, amigos, un sacerdote o un consejero.</span>
+          <span data-lang="en" style="display:none">Do not rush grief or silence it. Crying is honest. Speaking of the loved one is healthy. What does not help is staying alone without saying anything for weeks. Find someone to talk to: family, friends, a priest, or a counselor.</span>
+        </div>
+        <div class="emerg-tts-row">
+          <button class="emerg-tts-btn" onclick="readSection('pray-duelo')" type="button">🔊 <span data-lang="es">Escuchar oración</span><span data-lang="en" style="display:none">Listen to prayer</span></button>
+          <button class="emerg-tts-btn" onclick="stopReading()" type="button">⏹ <span data-lang="es">Detener</span><span data-lang="en" style="display:none">Stop</span></button>
+        </div>
+        <a href="/difuntos/" class="emerg-link-pill" data-lang="es">→ Oraciones por los difuntos</a>
+        <a href="/difuntos/" class="emerg-link-pill" data-lang="en" style="display:none">→ Prayers for the departed</a>
+      </div>
+    </details>
+
+    <!-- 7. TENTACIONES Y PECADO -->
+    <details class="emerg-details" id="sec-tentacion">
+      <summary class="emerg-summary">
+        <span class="emerg-summary-icon">🛡️</span>
+        <span class="emerg-summary-text">
+          <span class="emerg-summary-title" data-lang="es">Tentaciones y pecado</span>
+          <span class="emerg-summary-title" data-lang="en" style="display:none">Temptation and sin</span>
+          <span class="emerg-summary-sub" data-lang="es">Cuando la tentación sube fuerte o ya caíste y necesitas volver</span>
+          <span class="emerg-summary-sub" data-lang="en" style="display:none">When temptation rises hard or you have fallen and need to return</span>
+        </span>
+        <span class="emerg-chevron">▼</span>
+      </summary>
+      <div class="emerg-panel">
+        <blockquote class="emerg-scripture" data-lang="es">
+          «No nos dejes caer en la tentación, y líbranos del mal.»
+          <cite>— Mateo 6, 13</cite>
+        </blockquote>
+        <blockquote class="emerg-scripture" data-lang="en" style="display:none">
+          "Lead us not into temptation, but deliver us from evil."
+          <cite>— Matthew 6:13</cite>
+        </blockquote>
+        <div class="emerg-prayer" id="pray-tentacion-es" data-lang="es">Señor Jesús,
+no quiero negociar con este deseo.
+Dame fuerza para cortar la ocasión,
+claridad para no quedarme mirando,
+y humildad para pedir ayuda.
+
+Si ya caí:
+Padre misericordioso,
+me levanto y vuelvo a Ti.
+No quiero vivir dividido.
+Recíbeme como soy.
+Amén.</div>
+        <div class="emerg-prayer" id="pray-tentacion-en" data-lang="en" style="display:none">Lord Jesus,
+I do not want to negotiate with this desire.
+Give me strength to cut off the occasion,
+clarity not to keep looking,
+and humility to ask for help.
+
+If I have already fallen:
+Merciful Father,
+I get up and return to You.
+I do not want to live divided.
+Receive me as I am.
+Amen.</div>
+        <div class="emerg-action">
+          <strong data-lang="es">Qué hacer ahora</strong>
+          <strong data-lang="en" style="display:none">What to do now</strong>
+          <span data-lang="es">Corta la ocasión ahora: cambia de lugar, apaga la pantalla, llama a alguien. Si caíste, no te quedes mirando la caída: arrepiéntete, busca confesión. La guía completa paso a paso está en la página de Tentaciones.</span>
+          <span data-lang="en" style="display:none">Cut off the occasion now: change location, turn off the screen, call someone. If you fell, do not stare at the fall: repent, seek confession. The full step-by-step guide is on the Temptations page.</span>
+        </div>
+        <div class="emerg-tts-row">
+          <button class="emerg-tts-btn" onclick="readSection('pray-tentacion')" type="button">🔊 <span data-lang="es">Escuchar oración</span><span data-lang="en" style="display:none">Listen to prayer</span></button>
+          <button class="emerg-tts-btn" onclick="stopReading()" type="button">⏹ <span data-lang="es">Detener</span><span data-lang="en" style="display:none">Stop</span></button>
+        </div>
+        <a href="/tentaciones/" class="emerg-link-pill" data-lang="es">→ Guía completa paso a paso</a>
+        <a href="/tentaciones/" class="emerg-link-pill" data-lang="en" style="display:none">→ Full step-by-step guide</a>
+        <a href="/misericordia/" class="emerg-link-pill" data-lang="es">→ Perdón y misericordia</a>
+        <a href="/misericordia/" class="emerg-link-pill" data-lang="en" style="display:none">→ Mercy &amp; repentance</a>
+      </div>
+    </details>
+
+    <!-- 8. CRISIS DE FE -->
+    <details class="emerg-details" id="sec-fe">
+      <summary class="emerg-summary">
+        <span class="emerg-summary-icon">🌫️</span>
+        <span class="emerg-summary-text">
+          <span class="emerg-summary-title" data-lang="es">Crisis de fe y sequedad espiritual</span>
+          <span class="emerg-summary-title" data-lang="en" style="display:none">Crisis of faith and spiritual dryness</span>
+          <span class="emerg-summary-sub" data-lang="es">Dudas, Dios que no se siente, oración que parece vacía</span>
+          <span class="emerg-summary-sub" data-lang="en" style="display:none">Doubts, God who cannot be felt, prayer that feels empty</span>
+        </span>
+        <span class="emerg-chevron">▼</span>
+      </summary>
+      <div class="emerg-panel">
+        <blockquote class="emerg-scripture" data-lang="es">
+          «Creo, Señor, pero ayuda mi poca fe.»
+          <cite>— Marcos 9, 24</cite>
+        </blockquote>
+        <blockquote class="emerg-scripture" data-lang="en" style="display:none">
+          "I do believe; help me overcome my unbelief."
+          <cite>— Mark 9:24</cite>
+        </blockquote>
+        <div class="emerg-prayer" id="pray-fe-es" data-lang="es">Señor,
+no Te siento.
+Rezo y parece que las palabras rebotan en el techo.
+Hay días en que dudo de todo.
+
+Pero hoy Te digo esto:
+aunque no Te sienta, aquí estoy.
+Aunque no entienda, no me voy.
+
+Sostenme Tú,
+porque yo no puedo sostenerme solo.
+Eso es todo lo que tengo hoy.
+Es suficiente.
+Amén.</div>
+        <div class="emerg-prayer" id="pray-fe-en" data-lang="en" style="display:none">Lord,
+I cannot feel You.
+I pray and it seems the words bounce off the ceiling.
+There are days when I doubt everything.
+
+But today I tell You this:
+even if I cannot feel You, I am here.
+Even if I do not understand, I am not leaving.
+
+Hold me up,
+because I cannot hold myself up alone.
+That is all I have today.
+It is enough.
+Amen.</div>
+        <div class="emerg-action">
+          <strong data-lang="es">Qué hacer ahora</strong>
+          <strong data-lang="en" style="display:none">What to do now</strong>
+          <span data-lang="es">La sequedad no es ausencia de Dios: es parte del camino espiritual. Los grandes santos —Teresita, Juan de la Cruz, Teresa de Calcuta— la vivieron. Sigue rezando aunque no sientas nada. Esa fidelidad en el vacío es fe más pura que la euforia.</span>
+          <span data-lang="en" style="display:none">Dryness is not God's absence — it is part of the spiritual journey. The great saints — Thérèse, John of the Cross, Teresa of Calcutta — lived through it. Keep praying even if you feel nothing. That faithfulness in emptiness is purer faith than any feeling of joy.</span>
+        </div>
+        <div class="emerg-tts-row">
+          <button class="emerg-tts-btn" onclick="readSection('pray-fe')" type="button">🔊 <span data-lang="es">Escuchar oración</span><span data-lang="en" style="display:none">Listen to prayer</span></button>
+          <button class="emerg-tts-btn" onclick="stopReading()" type="button">⏹ <span data-lang="es">Detener</span><span data-lang="en" style="display:none">Stop</span></button>
+        </div>
+      </div>
+    </details>
+
+    <!-- 9. ENFERMEDAD -->
+    <details class="emerg-details" id="sec-enfermedad">
+      <summary class="emerg-summary">
+        <span class="emerg-summary-icon">💚</span>
+        <span class="emerg-summary-text">
+          <span class="emerg-summary-title" data-lang="es">Enfermedad y dolor físico</span>
+          <span class="emerg-summary-title" data-lang="en" style="display:none">Illness and physical pain</span>
+          <span class="emerg-summary-sub" data-lang="es">Tú mismo enfermo o un ser querido, diagnóstico difícil, cuerpo que falla</span>
+          <span class="emerg-summary-sub" data-lang="en" style="display:none">Your own illness or a loved one's, hard diagnosis, failing body</span>
+        </span>
+        <span class="emerg-chevron">▼</span>
+      </summary>
+      <div class="emerg-panel">
+        <blockquote class="emerg-scripture" data-lang="es">
+          «El mismo tomó nuestras enfermedades y cargó con nuestras dolencias.»
+          <cite>— Mateo 8, 17</cite>
+        </blockquote>
+        <blockquote class="emerg-scripture" data-lang="en" style="display:none">
+          "He took up our infirmities and bore our diseases."
+          <cite>— Matthew 8:17</cite>
+        </blockquote>
+        <div class="emerg-prayer" id="pray-enfermedad-es" data-lang="es">Señor Jesús,
+este cuerpo me pesa.
+Este dolor me cansa.
+
+Tú conoces la enfermedad desde adentro.
+Tú tocaste la fiebre, la lepra, la ceguera.
+Tú sabes lo que es sentir el cuerpo roto.
+
+No te pido que elimines el dolor de golpe.
+Te pido que estés en él conmigo.
+Te pido que este sufrimiento
+no se pierda,
+sino que se una al Tuyo.
+
+Sáname si es Tu voluntad.
+Si no, dame la gracia de sostenerme.
+Amén.</div>
+        <div class="emerg-prayer" id="pray-enfermedad-en" data-lang="en" style="display:none">Lord Jesus,
+this body weighs on me.
+This pain is exhausting.
+
+You know illness from the inside.
+You touched fever, leprosy, blindness.
+You know what it is to have a broken body.
+
+I do not ask You to remove the pain all at once.
+I ask You to be in it with me.
+I ask that this suffering
+not be wasted,
+but united to Yours.
+
+Heal me if it is Your will.
+If not, give me the grace to hold on.
+Amen.</div>
+        <div class="emerg-action">
+          <strong data-lang="es">Qué hacer ahora</strong>
+          <strong data-lang="en" style="display:none">What to do now</strong>
+          <span data-lang="es">Pide la unción de los enfermos si la situación es grave: no es "el sacramento de la muerte" sino del alivio y la fortaleza. Permite que otros te cuiden. Recibir ayuda también es un acto de fe.</span>
+          <span data-lang="en" style="display:none">Ask for the Anointing of the Sick if the situation is serious — it is not the "sacrament of death" but of relief and strength. Allow others to care for you. Receiving help is also an act of faith.</span>
+        </div>
+        <div class="emerg-tts-row">
+          <button class="emerg-tts-btn" onclick="readSection('pray-enfermedad')" type="button">🔊 <span data-lang="es">Escuchar oración</span><span data-lang="en" style="display:none">Listen to prayer</span></button>
+          <button class="emerg-tts-btn" onclick="stopReading()" type="button">⏹ <span data-lang="es">Detener</span><span data-lang="en" style="display:none">Stop</span></button>
+        </div>
+        <a href="/salud/" class="emerg-link-pill" data-lang="es">→ Salud integral y oración</a>
+        <a href="/salud/" class="emerg-link-pill" data-lang="en" style="display:none">→ Whole-person health &amp; prayer</a>
+      </div>
+    </details>
+
+    <!-- FOOTER LINKS -->
+    <div class="emerg-footer-links">
+      <a href="/tentaciones/" class="emerg-link-pill" data-lang="es">🛡️ Tentaciones (guía completa)</a>
+      <a href="/tentaciones/" class="emerg-link-pill" data-lang="en" style="display:none">🛡️ Temptation (full guide)</a>
+      <a href="/misericordia/" class="emerg-link-pill" data-lang="es">🕯️ Perdón y Misericordia</a>
+      <a href="/misericordia/" class="emerg-link-pill" data-lang="en" style="display:none">🕯️ Mercy &amp; Forgiveness</a>
+      <a href="/reconciliacion/" class="emerg-link-pill" data-lang="es">🙏 Reconciliación</a>
+      <a href="/reconciliacion/" class="emerg-link-pill" data-lang="en" style="display:none">🙏 Reconciliation</a>
+      <a href="/desierto/" class="emerg-link-pill" data-lang="es">🏕️ Silencio y Escucha</a>
+      <a href="/desierto/" class="emerg-link-pill" data-lang="en" style="display:none">🏕️ Silence &amp; Listening</a>
+      <a href="/salud/" class="emerg-link-pill" data-lang="es">💚 Salud integral</a>
+      <a href="/salud/" class="emerg-link-pill" data-lang="en" style="display:none">💚 Whole-person health</a>
+      <a href="/difuntos/" class="emerg-link-pill" data-lang="es">🕯️ Difuntos</a>
+      <a href="/difuntos/" class="emerg-link-pill" data-lang="en" style="display:none">🕯️ Departed</a>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p data-lang="es">Un recurso devocional católico gratuito. Sin anuncios. Sin rastreo.</p>
+    <p data-lang="en" style="display:none">A free Catholic devotional resource. No ads. No tracking.</p>
+  </footer>
+
+  <script src="../assets/js/menu.js"></script>
+  <script>
+    (function () {
+      'use strict';
+
+      const LANG_KEY = 'tup_lang';
+      let currentLang = localStorage.getItem(LANG_KEY) || 'es';
+      let speakRunId = 0;
+
+      function applyLang() {
+        document.querySelectorAll('[data-lang]').forEach(el => {
+          el.style.display = el.dataset.lang === currentLang ? '' : 'none';
+        });
+        document.documentElement.lang = currentLang;
+        document.getElementById('langToggle').textContent = currentLang === 'es' ? 'EN' : 'ES';
+      }
+
+      document.getElementById('langToggle').addEventListener('click', () => {
+        currentLang = currentLang === 'es' ? 'en' : 'es';
+        localStorage.setItem(LANG_KEY, currentLang);
+        applyLang();
+      });
+
+      window.readSection = function (baseId) {
+        if (!window.speechSynthesis) return;
+        const el = document.getElementById(baseId + '-' + currentLang);
+        if (!el) return;
+        const text = el.textContent.trim();
+        window.speechSynthesis.cancel();
+        speakRunId++;
+        const runId = speakRunId;
+        const chunks = text.match(/[^.!?]+[.!?]*/g) || [text];
+        let i = 0;
+        const speak = () => {
+          if (i >= chunks.length || runId !== speakRunId) return;
+          const utt = new SpeechSynthesisUtterance(chunks[i++].trim());
+          utt.lang = currentLang === 'es' ? 'es-MX' : 'en-US';
+          utt.rate = 0.78;
+          const voices = window.speechSynthesis.getVoices();
+          const pref = currentLang === 'es' ? 'es' : 'en';
+          const voice = voices.find(v => v.lang.startsWith(pref));
+          if (voice) utt.voice = voice;
+          utt.onend = utt.onerror = speak;
+          window.speechSynthesis.speak(utt);
+        };
+        speak();
+      };
+
+      window.stopReading = function () {
+        speakRunId++;
+        if (window.speechSynthesis) window.speechSynthesis.cancel();
+      };
+
+      // Open section from URL hash
+      function openFromHash() {
+        const hash = window.location.hash;
+        if (!hash) return;
+        const id = hash.replace('#', 'sec-');
+        const det = document.getElementById(id);
+        if (det) { det.open = true; det.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      }
+
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
+      }
+
+      if (window.speechSynthesis) window.speechSynthesis.getVoices();
+
+      applyLang();
+      openFromHash();
+    })();
+  </script>
+</body>
+</html>
