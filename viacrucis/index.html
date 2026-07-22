@@ -1064,9 +1064,13 @@ Common response: "We adore You, O Christ, and we bless You. Because by Your holy
       function buildFullGuideSequence() {
         const parts = [INTRO_SEQUENCE[currentLang]];
         const sp = STATION_PRAYERS[currentLang];
+        const response = currentLang === 'es'
+          ? 'Te adoramos, Cristo, y te bendecimos. Porque por tu santa cruz redimiste al mundo.'
+          : 'We adore You, O Christ, and we bless You. Because by Your holy cross You have redeemed the world.';
         STATIONS.forEach((station, index) => {
           parts.push(
             (currentLang === 'es' ? 'Estación ' : 'Station ') + (index + 1) + '. ' + station.title[currentLang],
+            response,
             station.reading[currentLang],
             station.meditation[currentLang],
             station.prayer[currentLang],
@@ -1082,8 +1086,12 @@ Common response: "We adore You, O Christ, and we bless You. Because by Your holy
       function buildStationSequence() {
         const station = STATIONS[currentStation];
         const sp = STATION_PRAYERS[currentLang];
+        const response = currentLang === 'es'
+          ? 'Te adoramos, Cristo, y te bendecimos. Porque por tu santa cruz redimiste al mundo.'
+          : 'We adore You, O Christ, and we bless You. Because by Your holy cross You have redeemed the world.';
         return [
           (currentLang === 'es' ? 'Estación ' : 'Station ') + (currentStation + 1) + '. ' + station.title[currentLang],
+          response,
           station.reading[currentLang],
           station.meditation[currentLang],
           station.prayer[currentLang],
