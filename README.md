@@ -14,7 +14,7 @@ Sitio web catolico bilingue (ES/EN) publicado en GitHub Pages.
 ## Cuentos para Ninos — Progreso de Reescritura Artesanal
 
 Cada cuento debe ser una narrativa real con escena concreta, personaje, dialogo y cierre para dormir.
-**31 / 101 completados.**
+**36 / 101 completados.**
 
 ### ✅ Completados (narrativa artesanal)
 
@@ -30,7 +30,12 @@ Cada cuento debe ser una narrativa real con escena concreta, personaje, dialogo 
 | 7 | divinonino | El Padre Juan recibe la imagen en un barrio pobre de Bogotá |
 | 8 | sanjose | La noche del sueño del ángel; José decide quedarse |
 | 9 | guadalupe | Juan Diego en el Tepeyac antes del amanecer; el tilma |
+| 10 | sanantonio | La mula que se arrodilló ante la Eucaristía en Rimini (~18 min) |
+| 11 | sanmiguel | Monte Gargano: el pastor, la cueva y la voz (~18 min) |
+| 12 | sangabriel | La Anunciación desde la perspectiva de María (~18 min) |
+| 13 | sanrafael | Tobías y Azarías: la aventura del pez y el padre ciego (~18 min) |
 | 14 | carlo | Carlo de 11 años construye la base de datos de milagros eucarísticos |
+| 15 | luisgonzaga | El marquesito que renunció al título y fue al hospital de la peste (~13 min) |
 | 16 | mariagoretti | Infancia bondadosa + sueño de las flores de Alessandro (sin violencia) |
 | 17 | santaines | Fe tranquila ante la presión; sin detalles de martirio |
 | 18 | carloslwanga | Alegría y liderazgo con los pajes; "Dios primero" |
@@ -56,7 +61,9 @@ Cada cuento debe ser una narrativa real con escena concreta, personaje, dialogo 
 
 `francisco` y `juandiego` y `lucia` completados — quedan pendientes:
 
-`sanantonio` · `sanmiguel` · `sanmiguel` · `sangabriel` · `sanrafael` · `luisgonzaga` · `padrepio` · `teresacalcuta` · `sanvicente` · `sanjudas` · `sancharbel` · `sanjorge` · `sancamilo` · `sanperegrino` · `sanexpedito` · `sanpedro` · `santaclara` · `santacatalina` · `lourdes` · `sanfranciscojavier` · `sanfranciscodesales` · `sanjuanapostol` · `sanefren` · `santaapolonia` · `sanjuandedios` · `juanpablo` · `sanbonifacio` · `sanbrendan` · `santotomas` · `sangerardo` · `sanmartindelporres` · `santarosa` · `misericordia` · `sagradocorazon` · `schoenstatt` · `santacoleta` · `santaemma` · `santanoemi` · `sanmartincapa` · `inmaculadocorazon` · `providencia` · `divinaprovidencia` · `santafabiola` · `sanguillermo` · `sanguillermogellone` · `sanguillermoaquitania` · `sancarlos` · `santacelina` · `sanagustin` · `perpetuosocorro` · `mariaauxiliadora` · `santaalejandra` · `santaroxana` · `santagwendolina` · `santagema` · `santagianna` · `sandavidgales` · `sanismael` · `santadelia` · `santaisabel` · `santaelena` · `sanalejandro` · `santasilvia` · `santaleticia` · `sanbarnabes` · `santomamoro` · `sanireneolyon` · `santomasapostol` · `nuestrasenoracarmen` · `preciosisimasangre` · `cabrini`
+`sanantonio` y `sanmiguel` y `sangabriel` y `sanrafael` y `luisgonzaga` completados — quedan pendientes:
+
+`padrepio` · `teresacalcuta` · `sanvicente` · `sanmiguel` · `sangabriel` · `sanrafael` · `luisgonzaga` · `padrepio` · `teresacalcuta` · `sanvicente` · `sanjudas` · `sancharbel` · `sanjorge` · `sancamilo` · `sanperegrino` · `sanexpedito` · `sanpedro` · `santaclara` · `santacatalina` · `lourdes` · `sanfranciscojavier` · `sanfranciscodesales` · `sanjuanapostol` · `sanefren` · `santaapolonia` · `sanjuandedios` · `juanpablo` · `sanbonifacio` · `sanbrendan` · `santotomas` · `sangerardo` · `sanmartindelporres` · `santarosa` · `misericordia` · `sagradocorazon` · `schoenstatt` · `santacoleta` · `santaemma` · `santanoemi` · `sanmartincapa` · `inmaculadocorazon` · `providencia` · `divinaprovidencia` · `santafabiola` · `sanguillermo` · `sanguillermogellone` · `sanguillermoaquitania` · `sancarlos` · `santacelina` · `sanagustin` · `perpetuosocorro` · `mariaauxiliadora` · `santaalejandra` · `santaroxana` · `santagwendolina` · `santagema` · `santagianna` · `sandavidgales` · `sanismael` · `santadelia` · `santaisabel` · `santaelena` · `sanalejandro` · `santasilvia` · `santaleticia` · `sanbarnabes` · `santomamoro` · `sanireneolyon` · `santomasapostol` · `nuestrasenoracarmen` · `preciosisimasangre` · `cabrini`
 
 ## Estructura Real del Proyecto
 
