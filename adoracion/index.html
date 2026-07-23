@@ -742,6 +742,40 @@
       ];
     }
 
+    // Mover los 3 programas de 33 días al inicio (antes del Momento 1)
+    (function reorder33Sections() {
+      const main = document.querySelector('.ador-content');
+      if (!main) return;
+      const ttsBar = main.firstElementChild;   // La barra TTS
+      const sections = Array.from(document.querySelectorAll('.ador-33dias-section'));
+      // Insertar encabezado con leyenda bonita
+      if (!document.getElementById('programs33Header')) {
+        const hdr = document.createElement('div');
+        hdr.id = 'programs33Header';
+        hdr.style.cssText = 'margin:0 0 0.85rem;padding:1.1rem 1.25rem;border:1px solid rgba(201,168,76,0.20);border-radius:14px;background:linear-gradient(135deg,rgba(201,168,76,0.07),rgba(255,255,255,0.02));';
+        hdr.innerHTML = `
+          <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.45rem;">
+            <span style="color:var(--gold);font-size:1rem;">✦</span>
+            <span style="font-family:var(--font-serif);font-size:1.05rem;color:var(--gold-light);" data-lang="es">Jornadas espirituales de 33 días</span>
+            <span style="font-family:var(--font-serif);font-size:1.05rem;color:var(--gold-light);display:none" data-lang="en">33-Day Spiritual Journeys</span>
+          </div>
+          <p style="font-size:0.85rem;color:rgba(255,255,255,0.62);line-height:1.65;margin:0;" data-lang="es">
+            Debajo encontrarás tres programas de 33 días —  uno para cada gran devoción —  con una meditación, una escritura y una oración para cada día. <em style="color:rgba(255,255,255,0.5);">No son obligatorios</em>, pero si los haces junto con los momentos de adoración, enriquecen profundamente la oración y ayudan a comprender lo que contemplas ante el Santísimo.
+          </p>
+          <p style="font-size:0.85rem;color:rgba(255,255,255,0.62);line-height:1.65;margin:0;display:none" data-lang="en">
+            Below you will find three 33-day programs — one for each great devotion — with a meditation, scripture, and prayer for each day. <em style="color:rgba(255,255,255,0.5);">They are not mandatory</em>, but praying them alongside the adoration moments deeply enriches your prayer and helps you understand what you contemplate before the Blessed Sacrament.
+          </p>
+        `;
+        ttsBar.insertAdjacentElement('afterend', hdr);
+      }
+      const anchor = document.getElementById('programs33Header');
+      let prev = anchor;
+      sections.forEach(s => {
+        prev.insertAdjacentElement('afterend', s);
+        prev = s;
+      });
+    })();
+
     // ── 33 días toggle ────────────────────────────────
     const ador33Toggle = document.getElementById('ador33Toggle');
     const ador33Body   = document.getElementById('ador33Body');
