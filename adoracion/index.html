@@ -361,6 +361,102 @@
       </div><!-- /ador-33dias-body -->
     </section>
 
+    <!-- 33 días de la Preciosísima Sangre — sección integrada -->
+    <section class="ador-33dias-section" id="ador-sangre33-section" style="border-color:rgba(180,30,30,0.25);background:rgba(120,0,0,0.06);">
+      <div class="ador-33dias-header" id="adorSangre33Toggle" role="button" tabindex="0" aria-expanded="false">
+        <div class="ador-33dias-header-left">
+          <span class="ador-33dias-badge" data-lang="es" style="color:#e57373;border-color:rgba(180,30,30,0.35);">✦ Jornada Espiritual</span>
+          <span class="ador-33dias-badge" data-lang="en" style="display:none;color:#e57373;border-color:rgba(180,30,30,0.35);">✦ Spiritual Journey</span>
+          <h2 class="ador-33dias-title" data-lang="es">33 Días de la Preciosísima Sangre</h2>
+          <h2 class="ador-33dias-title" data-lang="en" style="display:none">33 Days of the Most Precious Blood</h2>
+          <p class="ador-33dias-desc" data-lang="es">Contempla cada día un misterio de la Sangre de Jesús: promesa, entrega y nueva vida.</p>
+          <p class="ador-33dias-desc" data-lang="en" style="display:none">Contemplate each day a mystery of the Blood of Jesus: promise, offering, and new life.</p>
+        </div>
+        <span class="ador-33dias-chevron" id="adorSangre33Chevron">▼</span>
+      </div>
+
+      <div class="ador-33dias-body" id="adorSangre33Body" style="display:none">
+
+        <!-- Progress -->
+        <div class="a33-hero-inner" style="padding:1.5rem 0 1rem">
+          <div class="a33-hero-progress-wrap">
+            <svg class="a33-progress-ring" viewBox="0 0 120 120">
+              <defs>
+                <linearGradient id="ps33RingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#e57373"/>
+                  <stop offset="100%" stop-color="#b71c1c"/>
+                </linearGradient>
+              </defs>
+              <circle cx="60" cy="60" r="52" class="a33-ring-track"/>
+              <circle cx="60" cy="60" r="52" class="a33-ring-fill" id="ps33RingFill" style="stroke:url(#ps33RingGrad)"/>
+            </svg>
+            <div class="a33-progress-inner">
+              <span class="a33-progress-num" id="ps33DoneCount">0</span>
+              <span class="a33-progress-label" data-lang="es">de 33</span>
+              <span class="a33-progress-label" data-lang="en" style="display:none">of 33</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Toolbar -->
+        <div class="a33-toolbar">
+          <button class="a33-reset-btn" id="ps33ResetBtn" data-lang="es" style="border-color:rgba(180,30,30,0.3);">↺ Reiniciar jornada</button>
+          <button class="a33-reset-btn" id="ps33ResetBtnEn" data-lang="en" style="display:none;border-color:rgba(180,30,30,0.3);">↺ Reset journey</button>
+        </div>
+
+        <!-- Days grid -->
+        <div class="a33-list" id="ps33List"></div>
+
+        <!-- Modal -->
+        <div class="a33-modal-overlay" id="ps33ModalOverlay" aria-modal="true" role="dialog" style="display:none">
+          <div class="a33-modal" id="ps33Modal">
+            <button class="a33-modal-close" id="ps33ModalClose" aria-label="Cerrar">✕</button>
+            <div class="a33-modal-scroll">
+              <div class="a33-modal-header">
+                <span class="a33-modal-daynum" id="ps33DayNum"></span>
+                <h2 class="a33-modal-title" id="ps33Title"></h2>
+              </div>
+              <div class="a33-modal-icon" id="ps33Icon"></div>
+              <blockquote class="a33-modal-verse" id="ps33Verse"></blockquote>
+              <div class="a33-modal-section-label" data-lang="es">Reflexión</div>
+              <div class="a33-modal-section-label" data-lang="en" style="display:none">Reflection</div>
+              <div class="a33-modal-reflection" id="ps33Reflection"></div>
+              <div class="a33-modal-section-label" data-lang="es">Oración del Día</div>
+              <div class="a33-modal-section-label" data-lang="en" style="display:none">Prayer of the Day</div>
+              <div class="a33-modal-prayer" id="ps33Prayer"></div>
+              <div class="a33-act-box" id="ps33ActBox">
+                <span class="a33-act-label" data-lang="es">🩸 Acto del Día</span>
+                <span class="a33-act-label" data-lang="en" style="display:none">🩸 Act of the Day</span>
+                <p class="a33-act-text" id="ps33Act"></p>
+              </div>
+              <div class="a33-tts-wrap">
+                <button class="a33-tts-btn" id="ps33TtsBtn">🔊 <span data-lang="es">Leer en voz alta</span><span data-lang="en" style="display:none">Read aloud</span></button>
+                <span class="a33-tts-stop" id="ps33TtsStop" style="display:none">⏹</span>
+              </div>
+              <label class="a33-done-label" id="ps33DoneLabel">
+                <input type="checkbox" class="a33-done-check" id="ps33DoneCheck" />
+                <span class="a33-done-checkmark"></span>
+                <span data-lang="es">Marcar este día como completado</span>
+                <span data-lang="en" style="display:none">Mark this day as completed</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Completion banner -->
+        <div class="a33-complete-banner" id="ps33CompleteBanner" style="display:none">
+          <div class="a33-complete-inner">
+            <div class="a33-complete-cross" style="color:#e57373;">🩸</div>
+            <p class="a33-complete-title" data-lang="es">¡Jornada completada!</p>
+            <p class="a33-complete-title" data-lang="en" style="display:none">Journey completed!</p>
+            <p class="a33-complete-sub" data-lang="es">Has completado los 33 días de la Preciosísima Sangre. Que la Sangre de Cristo sea tu refugio y tu fortaleza cada día.</p>
+            <p class="a33-complete-sub" data-lang="en" style="display:none">You have completed all 33 days of the Most Precious Blood. May the Blood of Christ be your refuge and strength each day.</p>
+          </div>
+        </div>
+
+      </div><!-- /adorSangre33Body -->
+    </section>
+
     <!-- Moment 5 -->
     <article class="ador-moment-section is-active" id="ador-moment-4" data-moment="4">
       <div class="ador-moment-header">
@@ -640,6 +736,160 @@
       results.forEach(d => { if (d) a33Dias[d.n] = d; });
       a33RenderList();
       a33Progress();
+    }
+
+    // ── Preciosísima Sangre 33 días ────────────────────
+    const PS33_KEY    = 'sangre33_done';
+    const PS33_RING_C = 2 * Math.PI * 52;
+    const DATA_SANGRE = '/adoracion/33dias-sangre/';
+
+    let ps33Done    = new Set(JSON.parse(localStorage.getItem(PS33_KEY) || '[]'));
+    let ps33Current = null;
+    let ps33Dias    = {};
+    let ps33Tts     = false;
+
+    const $ps33Done   = document.getElementById('ps33DoneCount');
+    const $ps33Ring   = document.getElementById('ps33RingFill');
+    const $ps33List   = document.getElementById('ps33List');
+    const $ps33Over   = document.getElementById('ps33ModalOverlay');
+    const $ps33Close  = document.getElementById('ps33ModalClose');
+    const $ps33Banner = document.getElementById('ps33CompleteBanner');
+
+    const adorSangre33Toggle = document.getElementById('adorSangre33Toggle');
+    const adorSangre33Body   = document.getElementById('adorSangre33Body');
+    const adorSangre33Chev   = document.getElementById('adorSangre33Chevron');
+
+    function toggleSangre33() {
+      const open = adorSangre33Body.style.display !== 'none';
+      adorSangre33Body.style.display = open ? 'none' : '';
+      adorSangre33Toggle.setAttribute('aria-expanded', String(!open));
+      adorSangre33Chev.classList.toggle('open', !open);
+      if (!open && !window._ps33Inited) { initPs33Days(); window._ps33Inited = true; }
+    }
+    adorSangre33Toggle.addEventListener('click', toggleSangre33);
+    adorSangre33Toggle.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleSangre33(); } });
+
+    function ps33Progress() {
+      const n = ps33Done.size;
+      $ps33Done.textContent = n;
+      if ($ps33Ring) {
+        $ps33Ring.style.strokeDasharray  = PS33_RING_C;
+        $ps33Ring.style.strokeDashoffset = (PS33_RING_C * (1 - n / 33)).toFixed(2);
+      }
+      if ($ps33Banner) $ps33Banner.style.display = n >= 33 ? '' : 'none';
+    }
+
+    function ps33RenderList() {
+      if (!$ps33List) return;
+      $ps33List.innerHTML = '';
+      for (let i = 1; i <= 33; i++) {
+        const data  = ps33Dias[i] || null;
+        const done  = ps33Done.has(i);
+        const avail = data !== null;
+        const card  = document.createElement('button');
+        card.className = 'a33-card' + (done ? ' a33-card--done' : '') + (!avail ? ' a33-card--soon' : '');
+        card.disabled  = !avail;
+        card.dataset.day = i;
+        const num = document.createElement('span'); num.className = 'a33-card-num'; num.textContent = String(i).padStart(2, '0');
+        const st  = document.createElement('span'); st.className  = 'a33-card-status'; st.textContent = done ? '✓' : (!avail ? '…' : '○');
+        const ttl = document.createElement('span'); ttl.className = 'a33-card-title';
+        ttl.textContent = avail ? (data.theme[lang] || data.theme.es) : (lang === 'en' ? 'Coming soon' : 'Próximamente');
+        card.appendChild(num); card.appendChild(ttl); card.appendChild(st);
+        if (avail) card.addEventListener('click', () => ps33OpenModal(data));
+        $ps33List.appendChild(card);
+      }
+    }
+
+    function ps33PopulateModal(day) {
+      const l = lang;
+      document.getElementById('ps33DayNum').textContent   = (l === 'en' ? 'Day ' : 'Día ') + day.n;
+      document.getElementById('ps33Title').textContent    = day.theme[l] || day.theme.es;
+      document.getElementById('ps33Icon').innerHTML       = day.svg ? `<img src="${day.svg}" alt="" width="110" height="110" />` : '';
+      const v = day.verse;
+      document.getElementById('ps33Verse').innerHTML      = `<span class="a33-verse-text">${v[l]||v.es}</span><cite class="a33-verse-ref">${v.ref}</cite>`;
+      const rArr = day.reflection[l] || day.reflection.es;
+      document.getElementById('ps33Reflection').innerHTML = rArr.map(p => `<p>${p}</p>`).join('');
+      document.getElementById('ps33Prayer').innerHTML     = `<p>${day.prayer[l] || day.prayer.es}</p>`;
+      document.getElementById('ps33Act').textContent      = day.act[l] || day.act.es;
+      document.getElementById('ps33DoneCheck').checked    = ps33Done.has(day.n);
+      $ps33Over.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.dataset.lang === l ? '' : 'none';
+      });
+    }
+
+    function ps33OpenModal(day) {
+      ps33Current = day;
+      ps33PopulateModal(day);
+      $ps33Over.style.display = '';
+      document.body.style.overflow = 'hidden';
+      const sc = document.querySelector('#ps33Modal .a33-modal-scroll');
+      if (sc) sc.scrollTop = 0;
+    }
+
+    function ps33CloseModal() {
+      ps33TtsStop();
+      $ps33Over.style.display = 'none';
+      document.body.style.overflow = '';
+      ps33Current = null;
+    }
+
+    $ps33Close.addEventListener('click', ps33CloseModal);
+    $ps33Over.addEventListener('click', e => { if (e.target === $ps33Over) ps33CloseModal(); });
+
+    document.getElementById('ps33DoneCheck').addEventListener('change', function() {
+      if (!ps33Current) return;
+      const n = ps33Current.n;
+      this.checked ? ps33Done.add(n) : ps33Done.delete(n);
+      localStorage.setItem(PS33_KEY, JSON.stringify([...ps33Done]));
+      ps33Progress();
+      ps33RenderList();
+    });
+
+    ['ps33ResetBtn','ps33ResetBtnEn'].forEach(id => {
+      document.getElementById(id).addEventListener('click', () => {
+        const msg = lang === 'en' ? 'Reset all 33 days? Your progress will be lost.' : '¿Reiniciar los 33 días? Se perderá tu progreso.';
+        if (!confirm(msg)) return;
+        ps33Done.clear();
+        localStorage.removeItem(PS33_KEY);
+        ps33Progress();
+        ps33RenderList();
+      });
+    });
+
+    const $ps33TtsBtn  = document.getElementById('ps33TtsBtn');
+    const $ps33TtsStop = document.getElementById('ps33TtsStop');
+    function ps33TtsStop() {
+      if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+      ps33Tts = false; $ps33TtsBtn.style.opacity = '1'; $ps33TtsStop.style.display = 'none';
+      if (window.tupTTS) window.tupTTS.release();
+    }
+    $ps33TtsBtn.addEventListener('click', () => {
+      if (!ps33Current || !('speechSynthesis' in window)) return;
+      if (ps33Tts) { ps33TtsStop(); return; }
+      window.speechSynthesis.cancel();
+      const l = lang;
+      const rArr = ps33Current.reflection[l] || ps33Current.reflection.es;
+      const text = [ps33Current.theme[l]||ps33Current.theme.es, ps33Current.verse[l]||ps33Current.verse.es, ...rArr, ps33Current.prayer[l]||ps33Current.prayer.es, ps33Current.act[l]||ps33Current.act.es].join('. ');
+      const utt = new SpeechSynthesisUtterance(text);
+      utt.lang = l === 'en' ? 'en-US' : 'es-MX'; utt.rate = 0.82;
+      utt.onend = utt.onerror = ps33TtsStop;
+      window.speechSynthesis.speak(utt);
+      ps33Tts = true; $ps33TtsBtn.style.opacity = '0.55'; $ps33TtsStop.style.display = 'inline';
+      if (window.tupTTS) window.tupTTS.acquire();
+    });
+    $ps33TtsStop.addEventListener('click', ps33TtsStop);
+
+    async function initPs33Days() {
+      const fetches = [];
+      for (let i = 1; i <= 33; i++) {
+        const n = String(i).padStart(2, '0');
+        fetches.push(fetch(`${DATA_SANGRE}dia-${n}.json`).then(r => r.ok ? r.json() : null).catch(() => null));
+      }
+      const results = await Promise.all(fetches);
+      ps33Dias = {};
+      results.forEach(d => { if (d) ps33Dias[d.n] = d; });
+      ps33RenderList();
+      ps33Progress();
     }
 
   })();
