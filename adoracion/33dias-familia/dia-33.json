@@ -1,0 +1,30 @@
+﻿{
+    "n":  33,
+    "theme":  {
+                  "es":  "Hogar bajo el amparo de Jesus",
+                  "en":  "Home under the shelter of Jesus"
+              },
+    "verse":  {
+                  "es":  "\"Si el Senor no construye la casa, en vano trabajan los constructores.\"",
+                  "en":  "\"Unless the LORD builds the house, the builders labor in vain.\"",
+                  "ref":  "Sal 127,1"
+              },
+    "reflection":  {
+                       "es":  [
+                                  "Hoy contemplas el dia 33 de esta jornada por la familia: \u0027Hogar bajo el amparo de Jesus\u0027. Pon delante de Jesus Eucaristia los nombres concretos de tu hogar y pide que Su presencia ordene lo que esta roto, fortalezca lo que esta debil y haga crecer lo que ya es bueno.",
+                                  "La gracia de Dios trabaja tambien en lo pequeno: una palabra mas suave, una escucha mas atenta, una renuncia al orgullo y una decision humilde de amar primero. Persevera; cada acto de amor en casa abre camino para la paz de Cristo."
+                              ],
+                       "en":  [
+                                  "Today you contemplate day 33 of this family journey: \u0027Home under the shelter of Jesus\u0027. Place the concrete names of your household before Jesus in the Eucharist and ask Him to heal what is broken, strengthen what is weak, and grow what is already good.",
+                                  "God\u0027s grace also works through small things: a gentler word, deeper listening, surrendering pride, and choosing to love first. Persevere; each act of love at home opens a path for the peace of Christ."
+                              ]
+                   },
+    "prayer":  {
+                   "es":  "Senor Jesus, consagro mi familia a Tu Corazon. Derrama Tu paz sobre nuestro hogar, sana nuestras heridas, une nuestros corazones y ensenanos a vivir en perdon, verdad y caridad. Que nuestra casa sea lugar de fe, de consuelo y de esperanza. Amen.",
+                   "en":  "Lord Jesus, I consecrate my family to Your Heart. Pour Your peace upon our home, heal our wounds, unite our hearts, and teach us to live in forgiveness, truth, and charity. May our home become a place of faith, consolation, and hope. Amen."
+               },
+    "act":  {
+                "es":  "Hoy realiza un gesto concreto por tu familia relacionado con este tema: una conversacion en paz, una reconciliacion, una ayuda practica o una oracion compartida de al menos tres minutos.",
+                "en":  "Today do one concrete act for your family connected to this theme: a peaceful conversation, reconciliation, practical help, or at least three minutes of shared prayer."
+            }
+}
