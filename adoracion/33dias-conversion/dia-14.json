@@ -1,0 +1,36 @@
+﻿{
+    "n":  14,
+    "theme":  {
+                  "es":  "Volver al sacramento",
+                  "en":  "Return to the sacrament"
+              },
+    "verse":  {
+                  "es":  "\"A quienes les perdonen los pecados, les quedan perdonados.\"",
+                  "en":  "\"If you forgive anyone\u0027s sins, their sins are forgiven.\"",
+                  "ref":  "Jn 20,22-23"
+              },
+    "reflection":  {
+                       "es":  [
+                                  "Dia 14. Hoy el Senor te llama a detenerte y mirar con verdad este tema: \u0027Volver al sacramento\u0027. No como una idea abstracta, sino como una gracia concreta para tu historia personal.",
+                                  "Pon delante de Jesus Eucaristia lo que estas viviendo ahora mismo: tus luchas, tus cansancios, tus preguntas y tus deseos mas profundos. La luz de Dios no humilla; ilumina, ordena y sana.",
+                                  "La Palabra de hoy (Jn 20,22-23) no es solo para comprenderla, sino para obedecerla en algo pequeno y real. Cuando la Palabra se vuelve decision, empieza la transformacion del corazon.",
+                                  "Si reconoces tentacion o pecado, no te escondas. Nombra con sinceridad aquello que te debilita y pide un corazon contrito. La misericordia de Dios es mas grande que tu miseria cuando hay arrepentimiento verdadero.",
+                                  "En esta etapa de profundizacion, trabaja la raiz: orgullo, resentimiento, autojustificacion o tibieza. Cristo no solo perdona actos; quiere sanar motivaciones y renovar deseos."
+                              ],
+                       "en":  [
+                                  "Day 14. Today the Lord calls you to pause and face this theme with honesty: \u0027Return to the sacrament\u0027. Not as an abstract idea, but as a concrete grace for your real life.",
+                                  "Place before Jesus in the Eucharist what you are living right now: your struggles, fatigue, questions, and deepest desires. God\u0027s light does not humiliate; it illuminates, orders, and heals.",
+                                  "Today\u0027s Word (Jn 20,22-23) is not only to be understood but to be obeyed in one small and real decision. When the Word becomes action, transformation begins.",
+                                  "If you recognize temptation or sin, do not hide. Name clearly what weakens you and ask for a contrite heart. God\u0027s mercy is greater than your misery when repentance is sincere.",
+                                  "In this deepening stage, work on the roots: pride, resentment, self-justification, or lukewarmness. Christ does not only forgive acts; He heals motivations and renews desires."
+                              ]
+                   },
+    "prayer":  {
+                   "es":  "Senor Jesus, reconozco que sin Ti no puedo vencer la tentacion ni sanar mi pecado. Dame corazon humilde, fortaleza en la lucha, arrepentimiento sincero y perseverancia para caminar en tu gracia. Lavame, levantame y guame por senderos de santidad. Amen.",
+                   "en":  "Lord Jesus, I acknowledge that without You I cannot overcome temptation or heal from sin. Give me a humble heart, strength in the struggle, sincere repentance, and perseverance to walk in Your grace. Wash me, raise me, and guide me on paths of holiness. Amen."
+               },
+    "act":  {
+                "es":  "Hoy realiza un acto concreto de conversion: evita una ocasion de pecado, corta un contenido que te hace caer, busca reconciliacion, o agenda tu confesion sacramental.",
+                "en":  "Today do one concrete act of conversion: avoid an occasion of sin, cut off content that leads you to fall, seek reconciliation, or schedule your sacramental confession."
+            }
+}

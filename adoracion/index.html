@@ -731,6 +731,92 @@
       </div><!-- /adorSalud33Body -->
     </section>
 
+    <!-- 33 días para evitar tentaciones y redimirse de los pecados -->
+    <section class="ador-33dias-section" id="ador-conversion33-section" style="border-color:rgba(142,36,170,0.28);background:rgba(74,20,140,0.08);">
+      <div class="ador-33dias-header" id="adorConv33Toggle" role="button" tabindex="0" aria-expanded="false">
+        <div class="ador-33dias-header-left">
+          <span class="ador-33dias-badge" data-lang="es" style="color:#ce93d8;border-color:rgba(142,36,170,0.35);">✦ Jornada Espiritual</span>
+          <span class="ador-33dias-badge" data-lang="en" style="display:none;color:#ce93d8;border-color:rgba(142,36,170,0.35);">✦ Spiritual Journey</span>
+          <h2 class="ador-33dias-title" data-lang="es">33 Días para Vencer Tentaciones y Volver a Dios</h2>
+          <h2 class="ador-33dias-title" data-lang="en" style="display:none">33 Days to Overcome Temptation and Return to God</h2>
+          <p class="ador-33dias-desc" data-lang="es">Un camino de conversión: vigilancia, arrepentimiento, confesión, reparación y vida nueva en Cristo.</p>
+          <p class="ador-33dias-desc" data-lang="en" style="display:none">A path of conversion: vigilance, repentance, confession, reparation, and new life in Christ.</p>
+        </div>
+        <span class="ador-33dias-chevron" id="adorConv33Chevron">▼</span>
+      </div>
+
+      <div class="ador-33dias-body" id="adorConv33Body" style="display:none">
+        <div class="a33-hero-inner" style="padding:1.5rem 0 1rem">
+          <div class="a33-hero-progress-wrap">
+            <svg class="a33-progress-ring" viewBox="0 0 120 120">
+              <defs>
+                <linearGradient id="conv33RingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#ce93d8"/>
+                  <stop offset="100%" stop-color="#6a1b9a"/>
+                </linearGradient>
+              </defs>
+              <circle cx="60" cy="60" r="52" class="a33-ring-track"/>
+              <circle cx="60" cy="60" r="52" class="a33-ring-fill" id="conv33RingFill" style="stroke:url(#conv33RingGrad)"/>
+            </svg>
+            <div class="a33-progress-inner">
+              <span class="a33-progress-num" id="conv33DoneCount">0</span>
+              <span class="a33-progress-label" data-lang="es">de 33</span>
+              <span class="a33-progress-label" data-lang="en" style="display:none">of 33</span>
+            </div>
+          </div>
+        </div>
+        <div class="a33-toolbar">
+          <button class="a33-reset-btn" id="conv33ResetBtn" data-lang="es" style="border-color:rgba(142,36,170,0.3);">↺ Reiniciar jornada</button>
+          <button class="a33-reset-btn" id="conv33ResetBtnEn" data-lang="en" style="display:none;border-color:rgba(142,36,170,0.3);">↺ Reset journey</button>
+        </div>
+        <div class="a33-list" id="conv33List"></div>
+        <div class="a33-modal-overlay" id="conv33ModalOverlay" aria-modal="true" role="dialog" style="display:none">
+          <div class="a33-modal" id="conv33Modal">
+            <button class="a33-modal-close" id="conv33ModalClose" aria-label="Cerrar">✕</button>
+            <div class="a33-modal-scroll">
+              <div class="a33-modal-header">
+                <span class="a33-modal-daynum" id="conv33DayNum"></span>
+                <h2 class="a33-modal-title" id="conv33Title"></h2>
+              </div>
+              <div class="a33-modal-icon" id="conv33Icon"></div>
+              <blockquote class="a33-modal-verse" id="conv33Verse"></blockquote>
+              <div class="a33-modal-section-label" data-lang="es">Reflexión</div>
+              <div class="a33-modal-section-label" data-lang="en" style="display:none">Reflection</div>
+              <div class="a33-modal-reflection" id="conv33Reflection"></div>
+              <div class="a33-modal-section-label" data-lang="es">Oración del Día</div>
+              <div class="a33-modal-section-label" data-lang="en" style="display:none">Prayer of the Day</div>
+              <div class="a33-modal-prayer" id="conv33Prayer"></div>
+              <div class="a33-act-box" id="conv33ActBox">
+                <span class="a33-act-label" data-lang="es">✝ Acto del Día</span>
+                <span class="a33-act-label" data-lang="en" style="display:none">✝ Act of the Day</span>
+                <p class="a33-act-text" id="conv33Act"></p>
+              </div>
+              <div class="a33-tts-wrap">
+                <button class="a33-tts-btn" id="conv33TtsBtn">🔊 <span data-lang="es">Leer este día</span><span data-lang="en" style="display:none">Read this day</span></button>
+                <button class="a33-tts-btn" id="conv33TtsSessionBtn" style="background:rgba(142,36,170,0.08)">▶ <span data-lang="es">Sesión completa (guía + este día)</span><span data-lang="en" style="display:none">Full session (guide + this day)</span></button>
+                <span class="a33-tts-stop" id="conv33TtsStop" style="display:none">⏹</span>
+              </div>
+              <label class="a33-done-label" id="conv33DoneLabel">
+                <input type="checkbox" class="a33-done-check" id="conv33DoneCheck" />
+                <span class="a33-done-checkmark"></span>
+                <span data-lang="es">Marcar este día como completado</span>
+                <span data-lang="en" style="display:none">Mark this day as completed</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="a33-complete-banner" id="conv33CompleteBanner" style="display:none">
+          <div class="a33-complete-inner">
+            <div class="a33-complete-cross" style="color:#ce93d8;">✝</div>
+            <p class="a33-complete-title" data-lang="es">¡Jornada completada!</p>
+            <p class="a33-complete-title" data-lang="en" style="display:none">Journey completed!</p>
+            <p class="a33-complete-sub" data-lang="es">Has completado los 33 días de conversión. Que Cristo te sostenga en santidad y fidelidad diaria.</p>
+            <p class="a33-complete-sub" data-lang="en" style="display:none">You have completed all 33 days of conversion. May Christ sustain you in holiness and daily faithfulness.</p>
+          </div>
+        </div>
+      </div><!-- /adorConv33Body -->
+    </section>
+
     <!-- Moment 5 -->
     <article class="ador-moment-section is-active" id="ador-moment-4" data-moment="4">
       <div class="ador-moment-header">
@@ -932,10 +1018,10 @@
             <span style="font-family:var(--font-serif);font-size:1.05rem;color:var(--gold-light);display:none" data-lang="en">33-Day Spiritual Journeys</span>
           </div>
           <p style="font-size:0.85rem;color:rgba(255,255,255,0.62);line-height:1.65;margin:0;" data-lang="es">
-            Debajo encontrarás cinco programas de 33 días, cada uno con una meditación, una escritura y una oración para cada día. <em style="color:rgba(255,255,255,0.5);">No son obligatorios</em>, pero si los haces junto con los momentos de adoración, enriquecen profundamente la oración y ayudan a comprender lo que contemplas ante el Santísimo.
+            Debajo encontrarás seis programas de 33 días, cada uno con una meditación, una escritura y una oración para cada día. <em style="color:rgba(255,255,255,0.5);">No son obligatorios</em>, pero si los haces junto con los momentos de adoración, enriquecen profundamente la oración y ayudan a comprender lo que contemplas ante el Santísimo.
           </p>
           <p style="font-size:0.85rem;color:rgba(255,255,255,0.62);line-height:1.65;margin:0;display:none" data-lang="en">
-            Below you will find five 33-day programs, each with a meditation, scripture, and prayer for each day. <em style="color:rgba(255,255,255,0.5);">They are not mandatory</em>, but praying them alongside the adoration moments deeply enriches your prayer and helps you understand what you contemplate before the Blessed Sacrament.
+            Below you will find six 33-day programs, each with a meditation, scripture, and prayer for each day. <em style="color:rgba(255,255,255,0.5);">They are not mandatory</em>, but praying them alongside the adoration moments deeply enriches your prayer and helps you understand what you contemplate before the Blessed Sacrament.
           </p>
         `;
         ttsBar.insertAdjacentElement('afterend', hdr);
@@ -1697,6 +1783,148 @@
       results.forEach(d => { if (d) sal33Dias[d.n] = d; });
       sal33RenderList();
       sal33Progress();
+    }
+
+    // ── Conversion 33 dias ────────────────────────────
+    const CONV33_KEY    = 'conversion33_done';
+    const CONV33_RING_C = 2 * Math.PI * 52;
+    const DATA_CONV     = '/adoracion/33dias-conversion/';
+
+    let conv33Done    = new Set(JSON.parse(localStorage.getItem(CONV33_KEY) || '[]'));
+    let conv33Current = null;
+    let conv33Dias    = {};
+    let conv33Tts     = false;
+
+    const $conv33Done   = document.getElementById('conv33DoneCount');
+    const $conv33Ring   = document.getElementById('conv33RingFill');
+    const $conv33List   = document.getElementById('conv33List');
+    const $conv33Over   = document.getElementById('conv33ModalOverlay');
+    const $conv33Close  = document.getElementById('conv33ModalClose');
+    const $conv33Banner = document.getElementById('conv33CompleteBanner');
+
+    const adorConv33Toggle = document.getElementById('adorConv33Toggle');
+    const adorConv33Body   = document.getElementById('adorConv33Body');
+    const adorConv33Chev   = document.getElementById('adorConv33Chevron');
+
+    function toggleConv33() {
+      const open = adorConv33Body.style.display !== 'none';
+      adorConv33Body.style.display = open ? 'none' : '';
+      adorConv33Toggle.setAttribute('aria-expanded', String(!open));
+      adorConv33Chev.classList.toggle('open', !open);
+      if (!open && !window._conv33Inited) { initConv33Days(); window._conv33Inited = true; }
+    }
+    adorConv33Toggle.addEventListener('click', toggleConv33);
+    adorConv33Toggle.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleConv33(); } });
+
+    function conv33Progress() {
+      const n = conv33Done.size;
+      $conv33Done.textContent = n;
+      if ($conv33Ring) {
+        $conv33Ring.style.strokeDasharray  = CONV33_RING_C;
+        $conv33Ring.style.strokeDashoffset = (CONV33_RING_C * (1 - n / 33)).toFixed(2);
+      }
+      if ($conv33Banner) $conv33Banner.style.display = n >= 33 ? '' : 'none';
+    }
+
+    function conv33RenderList() {
+      if (!$conv33List) return;
+      $conv33List.innerHTML = '';
+      for (let i = 1; i <= 33; i++) {
+        const data  = conv33Dias[i] || null;
+        const done  = conv33Done.has(i);
+        const avail = data !== null;
+        const card  = document.createElement('button');
+        card.className = 'a33-card' + (done ? ' a33-card--done' : '') + (!avail ? ' a33-card--soon' : '');
+        card.disabled  = !avail;
+        const num = document.createElement('span'); num.className = 'a33-card-num'; num.textContent = String(i).padStart(2, '0');
+        const st  = document.createElement('span'); st.className  = 'a33-card-status'; st.textContent = done ? '✓' : (!avail ? '…' : '○');
+        const ttl = document.createElement('span'); ttl.className = 'a33-card-title';
+        ttl.textContent = avail ? (data.theme[lang] || data.theme.es) : (lang === 'en' ? 'Coming soon' : 'Próximamente');
+        card.appendChild(num); card.appendChild(ttl); card.appendChild(st);
+        if (avail) card.addEventListener('click', () => conv33OpenModal(data));
+        $conv33List.appendChild(card);
+      }
+    }
+
+    function conv33PopulateModal(day) {
+      const l = lang;
+      document.getElementById('conv33DayNum').textContent   = (l === 'en' ? 'Day ' : 'Día ') + day.n;
+      document.getElementById('conv33Title').textContent    = day.theme[l] || day.theme.es;
+      document.getElementById('conv33Icon').innerHTML       = day.svg ? `<img src="${day.svg}" alt="" width="110" height="110" />` : '';
+      const v = day.verse;
+      document.getElementById('conv33Verse').innerHTML      = `<span class="a33-verse-text">${v[l]||v.es}</span><cite class="a33-verse-ref">${v.ref}</cite>`;
+      const rArr = day.reflection[l] || day.reflection.es;
+      document.getElementById('conv33Reflection').innerHTML = rArr.map(p => `<p>${p}</p>`).join('');
+      document.getElementById('conv33Prayer').innerHTML     = `<p>${day.prayer[l] || day.prayer.es}</p>`;
+      document.getElementById('conv33Act').textContent      = day.act[l] || day.act.es;
+      document.getElementById('conv33DoneCheck').checked    = conv33Done.has(day.n);
+      $conv33Over.querySelectorAll('[data-lang]').forEach(el => { el.style.display = el.dataset.lang === l ? '' : 'none'; });
+    }
+
+    function conv33OpenModal(day) {
+      conv33Current = day; conv33PopulateModal(day);
+      $conv33Over.style.display = ''; document.body.style.overflow = 'hidden';
+      const sc = document.querySelector('#conv33Modal .a33-modal-scroll'); if (sc) sc.scrollTop = 0;
+    }
+    function conv33CloseModal() {
+      conv33TtsStop(); $conv33Over.style.display = ''; document.body.style.overflow = ''; $conv33Over.style.display = 'none'; conv33Current = null;
+    }
+    $conv33Close.addEventListener('click', conv33CloseModal);
+    $conv33Over.addEventListener('click', e => { if (e.target === $conv33Over) conv33CloseModal(); });
+
+    document.getElementById('conv33DoneCheck').addEventListener('change', function() {
+      if (!conv33Current) return;
+      const n = conv33Current.n;
+      this.checked ? conv33Done.add(n) : conv33Done.delete(n);
+      localStorage.setItem(CONV33_KEY, JSON.stringify([...conv33Done]));
+      conv33Progress(); conv33RenderList();
+    });
+    ['conv33ResetBtn','conv33ResetBtnEn'].forEach(id => {
+      document.getElementById(id).addEventListener('click', () => {
+        const msg = lang === 'en' ? 'Reset all 33 days?' : '¿Reiniciar los 33 días?';
+        if (!confirm(msg)) return;
+        conv33Done.clear(); localStorage.removeItem(CONV33_KEY); conv33Progress(); conv33RenderList();
+      });
+    });
+
+    const $conv33TtsBtn = document.getElementById('conv33TtsBtn');
+    const $conv33TtsStop = document.getElementById('conv33TtsStop');
+    function conv33TtsStop() {
+      if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+      conv33Tts = false; $conv33TtsBtn.style.opacity = '1'; $conv33TtsStop.style.display = 'none';
+      if (window.tupTTS) window.tupTTS.release();
+    }
+    $conv33TtsBtn.addEventListener('click', () => {
+      if (!conv33Current || !('speechSynthesis' in window)) return;
+      if (conv33Tts) { conv33TtsStop(); return; }
+      window.speechSynthesis.cancel();
+      const l = lang;
+      const rArr = conv33Current.reflection[l] || conv33Current.reflection.es;
+      const text = [conv33Current.theme[l]||conv33Current.theme.es, conv33Current.verse[l]||conv33Current.verse.es, ...rArr, conv33Current.prayer[l]||conv33Current.prayer.es, conv33Current.act[l]||conv33Current.act.es].join('. ');
+      const utt = new SpeechSynthesisUtterance(text);
+      utt.lang = l === 'en' ? 'en-US' : 'es-MX'; utt.rate = 0.82;
+      utt.onend = utt.onerror = conv33TtsStop;
+      window.speechSynthesis.speak(utt);
+      conv33Tts = true; $conv33TtsBtn.style.opacity = '0.55'; $conv33TtsStop.style.display = 'inline';
+      if (window.tupTTS) window.tupTTS.acquire();
+    });
+    $conv33TtsStop.addEventListener('click', conv33TtsStop);
+    document.getElementById('conv33TtsSessionBtn').addEventListener('click', () => {
+      conv33TtsStop();
+      adorMomSpeak(get33DayText(conv33Current, lang));
+    });
+
+    async function initConv33Days() {
+      const fetches = [];
+      for (let i = 1; i <= 33; i++) {
+        const n = String(i).padStart(2, '0');
+        fetches.push(fetch(`${DATA_CONV}dia-${n}.json`).then(r => r.ok ? r.json() : null).catch(() => null));
+      }
+      const results = await Promise.all(fetches);
+      conv33Dias = {};
+      results.forEach(d => { if (d) conv33Dias[d.n] = d; });
+      conv33RenderList();
+      conv33Progress();
     }
 
   })();
