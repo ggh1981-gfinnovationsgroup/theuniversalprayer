@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-label="Santa Sofia de Roma - fe, esperanza y caridad">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#120d1f"/>
+      <stop offset="100%" stop-color="#251734"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="24%" r="34%">
+      <stop offset="0%" stop-color="#f1ddb2" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#d5b46a" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#d5b46a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mantle" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6b3f72"/>
+      <stop offset="100%" stop-color="#4e2958"/>
+    </linearGradient>
+    <linearGradient id="dress" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8e6aa0"/>
+      <stop offset="100%" stop-color="#6c4a80"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="600" fill="url(#bg)"/>
+  <ellipse cx="200" cy="210" rx="170" ry="150" fill="url(#halo)"/>
+
+  <g opacity="0.56" stroke="#f0d37a" stroke-linecap="round">
+    <line x1="200" y1="60" x2="200" y2="6" stroke-width="2.8"/>
+    <line x1="170" y1="65" x2="156" y2="16" stroke-width="2"/>
+    <line x1="230" y1="65" x2="244" y2="16" stroke-width="2"/>
+    <line x1="145" y1="75" x2="116" y2="26" stroke-width="2"/>
+    <line x1="255" y1="75" x2="284" y2="26" stroke-width="2"/>
+    <line x1="122" y1="96" x2="78" y2="60" stroke-width="1.8"/>
+    <line x1="278" y1="96" x2="322" y2="60" stroke-width="1.8"/>
+    <line x1="104" y1="122" x2="54" y2="92" stroke-width="1.7"/>
+    <line x1="296" y1="122" x2="346" y2="92" stroke-width="1.7"/>
+  </g>
+
+  <g>
+    <circle cx="200" cy="156" r="34" fill="#d8b18f"/>
+    <path d="M166 154c4-36 21-58 34-58 16 0 33 20 35 57-11-13-24-19-35-19-13 0-25 6-34 20z" fill="#3f271f"/>
+    <circle cx="200" cy="154" r="52" fill="none" stroke="#e8c97a" stroke-width="3.2" opacity="0.82"/>
+    <circle cx="200" cy="154" r="61" fill="none" stroke="#f3de98" stroke-width="1.8" opacity="0.34"/>
+    <path d="M184 152q6-5 12 0" fill="none" stroke="#5a3327" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M204 152q6-5 12 0" fill="none" stroke="#5a3327" stroke-width="1.6" stroke-linecap="round"/>
+    <ellipse cx="189" cy="159" rx="5.2" ry="3.5" fill="#fbf8f0" opacity="0.9"/>
+    <ellipse cx="211" cy="159" rx="5.2" ry="3.5" fill="#fbf8f0" opacity="0.9"/>
+    <circle cx="189" cy="159" r="1.8" fill="#2d1b14"/>
+    <circle cx="211" cy="159" r="1.8" fill="#2d1b14"/>
+    <circle cx="188.4" cy="158.4" r="0.45" fill="#ffffff"/>
+    <circle cx="210.4" cy="158.4" r="0.45" fill="#ffffff"/>
+    <path d="M200 161c-2.3 2.7-3.2 4.9-2.4 7.6 0.8 1.8 2.4 2.3 4.8 1.8" fill="none" stroke="#9b6f56" stroke-width="1.4" stroke-linecap="round"/>
+    <path d="M192 176c2.2 2.7 5 3.9 8 3.9s5.8-1.2 8-3.9" fill="none" stroke="#8a4f4a" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M120 430c15-120 33-185 80-220 47 35 65 100 80 220-23 17-53 26-80 26s-57-9-80-26z" fill="url(#mantle)"/>
+    <path d="M155 224c10 64 14 120 13 169 11 7 21 10 32 10s22-3 33-10c-1-49 3-105 12-169-15-11-31-18-45-18s-30 7-45 18z" fill="url(#dress)"/>
+    <path d="M167 238c11 8 22 12 33 12 11 0 23-4 34-12" fill="none" stroke="#f3e7c2" stroke-width="3.2" stroke-linecap="round" opacity="0.72"/>
+    <path d="M165 285c10 14 21 20 35 20 14 0 25-6 35-20" fill="none" stroke="#f0d37a" stroke-width="2.4" stroke-linecap="round" opacity="0.78"/>
+  </g>
+
+  <g>
+    <circle cx="128" cy="348" r="26" fill="#cf8d95" opacity="0.95"/>
+    <circle cx="200" cy="336" r="28" fill="#d7b36a" opacity="0.96"/>
+    <circle cx="272" cy="348" r="26" fill="#87b6d9" opacity="0.95"/>
+    <circle cx="128" cy="348" r="39" fill="none" stroke="#f0d37a" stroke-width="2" opacity="0.44"/>
+    <circle cx="200" cy="336" r="42" fill="none" stroke="#f0d37a" stroke-width="2.2" opacity="0.48"/>
+    <circle cx="272" cy="348" r="39" fill="none" stroke="#f0d37a" stroke-width="2" opacity="0.44"/>
+  </g>
+
+  <g fill="#f8f1d6">
+    <path d="M122 350l6 12 14 2-10 10 2 14-12-6-12 6 2-14-10-10 14-2z"/>
+    <path d="M194 338l6 12 14 2-10 10 2 14-12-6-12 6 2-14-10-10 14-2z"/>
+    <path d="M266 350l6 12 14 2-10 10 2 14-12-6-12 6 2-14-10-10 14-2z"/>
+  </g>
+
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <text x="200" y="532" font-size="8" fill="#d9bb73" letter-spacing="2.7">SANTA SOFIA DE ROMA · SAINT SOPHIA OF ROME</text>
+    <text x="200" y="552" font-size="13.2" fill="#f1df9c">FE · ESPERANZA · CARIDAD</text>
+    <text x="200" y="571" font-size="10.8" fill="#c9c8ef" opacity="0.92">FAITH · HOPE · CHARITY</text>
+    <text x="200" y="590" font-family="Georgia,serif" font-size="10.5" fill="#f4ead0" opacity="0.84">Motherly courage in the hour of trial</text>
+  </g>
+</svg>

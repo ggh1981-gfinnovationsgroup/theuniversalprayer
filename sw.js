@@ -3,7 +3,7 @@
    Cache-first strategy: works fully offline after first load
    ===================================================== */
 
-const CACHE = 'tup-v176';
+const CACHE = 'tup-v178';
 
 // All files to pre-cache on install
 const PRECACHE_URLS = [
@@ -92,6 +92,7 @@ const PRECACHE_URLS = [
   '/assets/images/sanfelipeneri.svg',
   '/assets/images/schoenstatt.svg',
   '/assets/images/santadymphna.svg',
+  '/assets/images/santasofia.svg',
   '/assets/images/santateresita.svg',
   '/assets/images/sanvicente.svg',
   '/assets/images/santafabiola.svg',
@@ -206,6 +207,7 @@ const PRECACHE_URLS = [
   '/data/sanfelipeneri.json',
   '/data/schoenstatt.json',
   '/data/santadymphna.json',
+  '/data/santasofia.json',
   '/data/santateresita.json',
   '/data/sanvicente.json',
   '/data/santafabiola.json',

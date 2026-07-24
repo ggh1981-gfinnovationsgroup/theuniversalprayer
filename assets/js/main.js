@@ -5,7 +5,7 @@
 
 'use strict';
 
-const APP_VERSION = 'v2026.07.11-1';
+const APP_VERSION = 'v2026.07.24-2';
 
 function withAssetVersion(url) {
   if (!url) return url;
@@ -149,6 +149,7 @@ const INTERCESSORS = [
   { id: 'sanfelipeneri',     subdomain: 'sanfelipeneri',     chaplet: true,  novena: true,  color: '#8a4a10', short: { es: 'S. Felipe Neri',   en: 'St. Philip Neri'  }, name: { en: 'Saint Philip Neri',                     es: 'San Felipe Neri'                          }, specialty: { es: 'Alegría y conversión',        en: 'Joy & conversion'            } },
   { id: 'schoenstatt',       subdomain: 'schoenstatt',       chaplet: false, novena: true,  color: '#1a3070', short: { es: 'Schoenstatt',      en: 'Schoenstatt'      }, name: { en: 'Our Lady of Schoenstatt',                es: 'Virgen de Schoenstatt'                    }, specialty: { es: 'Alianza de amor y familia',   en: 'Covenant of love & family'   } },
   { id: 'santadymphna',      subdomain: 'santadymphna',      chaplet: true,  novena: true,  color: '#4a2a7a', short: { es: 'Sta. Dymphna',     en: 'St. Dymphna'      }, name: { en: 'Saint Dymphna',                         es: 'Santa Dymphna'                            }, specialty: { es: 'Salud mental y paz',          en: 'Mental health & peace'       } },
+  { id: 'santasofia',        subdomain: 'santasofia',        chaplet: false, novena: true,  color: '#6b3f72', short: { es: 'Sta. Sofia',       en: 'St. Sophia'       }, name: { en: 'Saint Sophia of Rome',                 es: 'Santa Sofia de Roma'                      }, specialty: { es: 'Fortaleza en la prueba',      en: 'Courage in trial'            } },
   { id: 'santateresita',     subdomain: 'santateresita',     chaplet: true,  novena: true,  color: '#8a2050', short: { es: 'Sta. Teresita',    en: 'St. Thérèse'      }, name: { en: 'Saint Thérèse of the Child Jesus',      es: 'Santa Teresita del Niño Jesús'            }, specialty: { es: 'El camino pequeño',           en: 'The Little Way'              } },
   { id: 'sanvicente',        subdomain: 'sanvicente',        chaplet: true,  novena: true,  color: '#1a3a6a', short: { es: 'S. Vicente',       en: 'St. Vincent'      }, name: { en: 'Saint Vincent de Paul',                 es: 'San Vicente de Paúl'                      }, specialty: { es: 'Caridad y los pobres',        en: 'Charity and the poor'        } },
   { id: 'santafabiola',     subdomain: 'santafabiola',     chaplet: true,  novena: true,  color: '#8a5010', short: { es: 'Sta. Fabiola',    en: 'St. Fabiola'      }, name: { en: 'Saint Fabiola of Rome',                 es: 'Santa Fabiola de Roma'                    }, specialty: { es: 'Enfermos y penitentes',       en: 'Sick & penitents'            } },
@@ -230,6 +231,7 @@ const INTERCESSORS = [
 const KEYWORD_MAP = {
   misericordia:      'misericordia divina divine mercy faustina kowalska coronilla chaplet pecado culpa vergüenza arrepentimiento remordimiento confesion reconciliacion perdon segunda oportunidad conversion retorno volver a dios sin guilt shame repentance remorse confession reconciliation forgiveness second chance conversion returning to god estres angustia desesperacion sufrimiento dolor duelo muerte purgatorio moribundos agonia hora muerte stress anguish despair suffering pain grief death purgatory dying agony hour of death consuelo esperanza paz interior consolacion consolation hope inner peace lujuria soberbia envidia ira pereza avaricia gula tentaciones pecados capitales lust pride envy wrath sloth greed gluttony deadly sins capital sins temptation',
   santadymphna:      'dymphna salud mental mental health depresion depression ansiedad anxiety panico panic attacks ataques de panico trastorno bipolar bipolar disorder esquizofrenia schizophrenia psicosis psychosis neurosis OCD trastorno obsesivo compulsivo PTSD trauma estres postraumatico burnout agotamiento nervioso nervous breakdown estres cronico chronic stress fobia phobia agorafobia agoraphobia fobie phobias autismo autism TDAH ADHD insomnio insomnia pesadillas nightmares autolesion self harm ideacion suicida suicidal thoughts soledad extrema extreme loneliness crisis nerviosa nervous crisis psiquiatria psychiatry terapia therapy consejeria counseling hospitalizacion psiquiatrica psychiatric hospitalization familia de enfermos mentales families of mentally ill cuidadores caretakers',
+  santasofia:        'sofia sophia roma rome madre mother hijas daughters fe faith esperanza hope caridad charity sabiduria wisdom valentia courage fortaleza fear miedo trial prueba persecution persecucion dolor grief duelo perseverancia steadfastness mothers christian mothers familia family maternal grief ancient martyr antigua martir',
   sanfelipeneri:     'felip neri alegria gozo felicidad risa humor jovialidad joy laughter happiness cheerfulness comunidad community amistad friendship depresion tristeza melancolia depression sadness melancholy agotamiento espiritual spiritual exhaustion burnout rutina mundana mundane routine falta de motivacion lack of motivation seccion juvenil youth oratorio rome roma sacerdote priest fundador founder carisma charisma musica music canto singing vida espiritual alegre joyful spiritual life',
   providencia:       'providencia divina provision dinero deudas economia facturas renta alquiler hipoteca bills rent mortgage debt finances necesidad extrema extreme need desempleo desocupacion unemployment sin trabajo without work comida food hambre hunger ropa clothing pobreza poverty confiar en dios trust in god sustento sustenance provision diaria daily provision angustia economica financial anxiety quiebra bankruptcy crisis economica financial crisis cuentas accounts gastos expenses',
   divinaprovidencia: 'providencia divina provision necesidades cotidianas daily needs dinero deudas economia financiera facturas renta alquiler hipoteca bills rent mortgage debt finances desempleo unemployment trabajo work comida food hambre hunger pobreza poverty confianza en dios trust in god sustento sustenance angustia economica financial anxiety quiebra bankruptcy gastos expenses recursos limitados limited resources familia numerosa large family hijos children crianza upbringing',
@@ -423,7 +425,7 @@ const FEAST_DAYS = {
   '04-29': ['santacatalina'],
   '05-01': ['sanperegrino'],
   '05-13': ['fatima'],
-  '05-15': ['santadymphna'],
+  '05-15': ['santadymphna', 'santasofia'],
   '05-16': ['sanbrendan'],
   '05-22': ['santarita'],
   '05-24': ['mariaauxiliadora'],
@@ -564,7 +566,7 @@ function isHistoriasPage() {
 // ── FETCH INTERCESSOR DATA ─────────────────────────
 async function loadIntercessorData(id) {
   const basePath = (isIntercessorPage() || isHistoriasPage()) ? '../data/' : 'data/';
-  const DATA_VER = '20260708-2';
+  const DATA_VER = '20260724-1';
   const url = `${basePath}${id}.json?v=${DATA_VER}`;
   const resp = await fetch(url, { cache: 'no-store' });
   if (!resp.ok) throw new Error(`Not found: ${url}`);
