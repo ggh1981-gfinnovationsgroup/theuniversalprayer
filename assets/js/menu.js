@@ -1,5 +1,3 @@
-  { id: 'insisteyliberate', href: '/insiste-y-liberate/', labels: { es: 'Insiste y libérate', en: 'Insist and be freed' }, icon: '🕊️' },
-  { id: 'insisteyliberate', href: '/insiste-y-liberate/', labels: { es: 'Insiste y libérate', en: 'Insist and be freed' }, icon: '🕊️' },
 /**
  * menu.js — Shared site navigation menu for The Universal Prayer
  * Injects the side-nav panel and wires up the hamburger button on any page.
