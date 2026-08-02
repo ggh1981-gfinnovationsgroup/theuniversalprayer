@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insiste y Libérate | The Universal Prayer</title>
+  <meta name="description" content="Pagina catolica exclusiva con las dos palabras que movieron tu corazon: insiste y liberate. Oracion, discernimiento, confesion y accion concreta." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Insiste y Libérate | The Universal Prayer" />
+  <meta property="og:description" content="Un llamado catolico a insistir en la oracion y a liberarte de lo que te ata." />
+  <meta property="og:url" content="https://www.theuniversalprayer.com/insiste-y-liberate/" />
+  <meta property="og:image" content="https://www.theuniversalprayer.com/assets/images/social-home.png" />
+  <link rel="canonical" href="https://www.theuniversalprayer.com/insiste-y-liberate/" />
+  <meta name="theme-color" content="#c9a84c" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" href="/assets/images/icon.svg" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23c9a84c'>✝</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    body.insiste-page {
+      min-height: 100dvh;
+      background:
+        radial-gradient(900px 520px at 50% -120px, rgba(201,168,76,0.16), transparent 60%),
+        radial-gradient(700px 420px at 80% 15%, rgba(116,145,220,0.10), transparent 55%),
+        var(--bg);
+    }
+    .insiste-hero {
+      text-align: center;
+      padding: 4.8rem 1.2rem 2.4rem;
+      background: radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.10) 0%, transparent 68%);
+    }
+    .insiste-icon {
+      width: 96px;
+      height: 96px;
+      display: block;
+      margin: 0 auto 1.1rem;
+      filter: drop-shadow(0 0 16px rgba(201,168,76,0.42));
+    }
+    .insiste-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(201,168,76,0.34);
+      border-radius: 999px;
+      padding: 0.32em 0.92em;
+      margin-bottom: 0.95rem;
+    }
+    .insiste-title {
+      font-family: var(--font-serif);
+      color: #fff;
+      font-size: clamp(2rem, 6.2vw, 3.15rem);
+      line-height: 1.12;
+      margin: 0 0 0.72rem;
+    }
+    .insiste-subtitle {
+      color: rgba(255,255,255,0.64);
+      max-width: 720px;
+      margin: 0 auto;
+      line-height: 1.72;
+      font-size: 0.95rem;
+    }
+    .insiste-content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0.25rem 1.2rem 4.4rem;
+    }
+    .insiste-card {
+      border: 1px solid rgba(201,168,76,0.22);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.03);
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+    .insiste-card-head {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem 1.15rem;
+      border-bottom: 1px solid rgba(201,168,76,0.13);
+    }
+    .insiste-card-head h2 {
+      margin: 0;
+      font-family: var(--font-serif);
+      color: var(--gold-light);
+      font-size: 1.18rem;
+      line-height: 1.3;
+    }
+    .insiste-card-icon {
+      font-size: 1.38rem;
+      width: 1.9rem;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .insiste-prayer {
+      padding: 1rem 1.15rem 1.2rem;
+      font-family: var(--font-serif);
+      font-size: 1.02rem;
+      color: rgba(255,255,255,0.91);
+      line-height: 1.92;
+      white-space: pre-line;
+      background: rgba(201,168,76,0.06);
+      border-top: 1px solid rgba(201,168,76,0.12);
+    }
+    .insiste-quote {
+      margin: 1rem 0;
+      border-left: 3px solid rgba(201,168,76,0.44);
+      padding: 0.72rem 1rem;
+      color: rgba(255,255,255,0.84);
+      font-style: italic;
+      line-height: 1.72;
+      font-family: var(--font-serif);
+      font-size: 0.95rem;
+    }
+    .insiste-quote cite {
+      display: block;
+      margin-top: 0.35rem;
+      font-style: normal;
+      color: var(--gold);
+      font-size: 0.75rem;
+    }
+    .insiste-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.58rem;
+      margin-top: 0.88rem;
+    }
+    .insiste-btn {
+      border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 9px;
+      background: transparent;
+      color: var(--gold-light);
+      padding: 0.45rem 0.82rem;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.18s;
+    }
+    .insiste-btn:hover { background: rgba(201,168,76,0.12); }
+    .insiste-note {
+      border: 1px solid rgba(201,168,76,0.17);
+      border-radius: 12px;
+      background: rgba(201,168,76,0.05);
+      padding: 0.95rem 1rem;
+      color: rgba(255,255,255,0.74);
+      line-height: 1.72;
+      font-size: 0.9rem;
+    }
+    .insiste-note strong {
+      color: var(--gold-light);
+      font-family: var(--font-serif);
+      font-size: 0.95rem;
+    }
+    .insiste-footer {
+      margin-top: 2.1rem;
+      text-align: center;
+    }
+    .insiste-link {
+      color: var(--gold);
+      text-decoration: none;
+      opacity: 0.8;
+      font-size: 0.86rem;
+    }
+    .insiste-link:hover { opacity: 1; }
+  </style>
+</head>
+<body class="insiste-page">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link">
+        <span class="cross">✝</span>
+        <span class="logo-text">The Universal Prayer</span>
+      </a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language"><span id="langLabel">EN</span></button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="insiste-hero">
+    <a href="/" class="ador-back-link" data-lang="es">← Inicio</a>
+    <a href="/" class="ador-back-link" data-lang="en" style="display:none">← Home</a>
+
+    <svg class="insiste-icon" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="48" cy="48" r="44" fill="rgba(201,168,76,0.08)" stroke="rgba(201,168,76,0.34)" />
+      <line x1="48" y1="18" x2="48" y2="72" stroke="rgba(201,168,76,0.88)" stroke-width="6" stroke-linecap="round" />
+      <line x1="26" y1="39" x2="70" y2="39" stroke="rgba(201,168,76,0.88)" stroke-width="6" stroke-linecap="round" />
+      <path d="M48 60c7-8 16-4 16 5 0 9-10 14-16 18-6-4-16-9-16-18 0-9 9-13 16-5z" fill="rgba(201,168,76,0.22)" stroke="rgba(201,168,76,0.68)"/>
+    </svg>
+
+    <div class="insiste-badge" data-lang="es">✦ Dos palabras, una respuesta</div>
+    <div class="insiste-badge" data-lang="en" style="display:none">✦ Two words, one response</div>
+
+    <h1 class="insiste-title" data-lang="es">Insiste<br />y Libérate</h1>
+    <h1 class="insiste-title" data-lang="en" style="display:none">Insist<br />and Be Freed</h1>
+
+    <p class="insiste-subtitle" data-lang="es">Esta página no interpreta el sueño como adivinanza. Lo recibe como un llamado a la vida católica: insistir en la oración, acudir a los sacramentos y liberarte de todo lo que te aleja de Cristo.</p>
+    <p class="insiste-subtitle" data-lang="en" style="display:none">This page does not treat the dream as a riddle. It receives it as a call to Catholic life: insist in prayer, go to the sacraments, and be freed from whatever pulls you away from Christ.</p>
+  </section>
+
+  <main class="insiste-content">
+    <div class="insiste-card">
+      <div class="insiste-card-head">
+        <span class="insiste-card-icon">🙏</span>
+        <h2 data-lang="es">Oración central</h2>
+        <h2 data-lang="en" style="display:none">Central prayer</h2>
+      </div>
+      <div class="insiste-prayer" id="pray-main-es" data-lang="es">Señor Jesucristo,
+no quiero quedarme en la curiosidad ni en la confusión.
+Si estas dos palabras vienen de Ti,
+que me conduzcan a la obediencia.
+
+Enséñame a insistir en la oración,
+a no dejar de llamarte,
+a no abandonar el rosario,
+a no postergar la confesión.
+
+Y si algo en mí necesita ser liberado,
+libérame Tú por tu Cruz,
+por tu Sangre preciosa,
+por tu Palabra verdadera
+y por la gracia de tu Iglesia.
+
+Líbrame del pecado que me esclaviza,
+del miedo que me paraliza,
+de la costumbre que me daña,
+y de toda puerta abierta al mal.
+
+Dame un corazón nuevo,
+constancia en el bien,
+amor a la Eucaristía
+y arrepentimiento sincero.
+
+Jesús, tú eres la Verdad que guía,
+el Perdón que levanta
+y la Libertad que salva.
+Amén.</div>
+      <div class="insiste-prayer" id="pray-main-en" data-lang="en" style="display:none">Lord Jesus Christ,
+I do not want to remain in curiosity or confusion.
+If these two words come from You,
+let them lead me to obedience.
+
+Teach me to insist in prayer,
+never to stop calling on You,
+not to abandon the Rosary,
+and not to delay confession.
+
+And if anything in me needs to be freed,
+free me Yourself by Your Cross,
+by Your Precious Blood,
+by Your true Word,
+and by the grace of Your Church.
+
+Free me from the sin that enslaves me,
+from the fear that paralyzes me,
+from the habit that harms me,
+and from every door open to evil.
+
+Give me a new heart,
+steadfastness in good,
+love for the Eucharist,
+and sincere repentance.
+
+Jesus, You are the Truth that guides,
+the Forgiveness that raises up,
+and the Freedom that saves.
+Amen.</div>
+    </div>
+
+    <blockquote class="insiste-quote" data-lang="es">
+      "La verdad os hará libres."
+      <cite>— Juan 8, 32</cite>
+    </blockquote>
+    <blockquote class="insiste-quote" data-lang="en" style="display:none">
+      "The truth will set you free."
+      <cite>— John 8:32</cite>
+    </blockquote>
+
+    <div class="insiste-note">
+      <strong data-lang="es">Clave católica</strong>
+      <strong data-lang="en" style="display:none">Catholic key</strong>
+      <p data-lang="es" style="margin:0.4rem 0 0;">Un sueño puede servir para mover tu conciencia, pero no manda sobre tu fe. La forma católica de responder es sencilla: examinarte, rezar, confesarte si hace falta, reparar el daño y obedecer a Cristo.</p>
+      <p data-lang="en" style="display:none;margin:0.4rem 0 0;">A dream can move your conscience, but it does not rule your faith. The Catholic response is simple: examine yourself, pray, go to confession if needed, repair the harm, and obey Christ.</p>
+    </div>
+
+    <div class="insiste-note" style="margin-top:1rem;">
+      <strong data-lang="es">Acción concreta de hoy</strong>
+      <strong data-lang="en" style="display:none">Concrete action today</strong>
+      <p data-lang="es" style="margin:0.4rem 0 0;">Reza un Ave María con calma, haz un acto de contrición, corta una ocasión de pecado y, si puedes, agenda la confesión. Eso es insistir y liberarte de verdad.</p>
+      <p data-lang="en" style="display:none;margin:0.4rem 0 0;">Pray one Hail Mary slowly, make an act of contrition, cut off one occasion of sin, and if you can, schedule confession. That is insisting and being freed for real.</p>
+    </div>
+
+    <div class="insiste-actions">
+      <button class="insiste-btn" type="button" onclick="readPrayer()">🔊 <span data-lang="es">Escuchar oración</span><span data-lang="en" style="display:none">Listen to prayer</span></button>
+      <button class="insiste-btn" type="button" onclick="stopPrayer()">⏹ <span data-lang="es">Detener</span><span data-lang="en" style="display:none">Stop</span></button>
+    </div>
+
+    <div class="insiste-footer">
+      <a href="/" class="insiste-link" data-lang="es">← Volver al inicio</a>
+      <a href="/" class="insiste-link" data-lang="en" style="display:none">← Back to home</a>
+    </div>
+  </main>
+
+  <script>
+    (function() {
+      const LANG_KEY = 'universalPrayerLang';
+      let lang = localStorage.getItem(LANG_KEY) || 'es';
+
+      function applyLang(nextLang) {
+        lang = nextLang;
+        localStorage.setItem(LANG_KEY, nextLang);
+        document.documentElement.lang = nextLang === 'en' ? 'en' : 'es';
+        document.getElementById('langLabel').textContent = nextLang === 'en' ? 'ES' : 'EN';
+        document.querySelectorAll('[data-lang]').forEach((el) => {
+          el.style.display = el.dataset.lang === nextLang ? '' : 'none';
+        });
+      }
+
+      document.getElementById('langToggle').addEventListener('click', () => {
+        applyLang(lang === 'es' ? 'en' : 'es');
+      });
+
+      applyLang(lang);
+    })();
+
+    function readPrayer() {
+      if (!window.speechSynthesis) return;
+      window.speechSynthesis.cancel();
+      const lang = localStorage.getItem('universalPrayerLang') || 'es';
+      const id = lang === 'en' ? 'pray-main-en' : 'pray-main-es';
+      const text = document.getElementById(id)?.textContent || '';
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = lang === 'en' ? 'en-US' : 'es-ES';
+      window.speechSynthesis.speak(utterance);
+    }
+
+    function stopPrayer() {
+      if (!window.speechSynthesis) return;
+      window.speechSynthesis.cancel();
+    }
+  </script>
+  <script src="../assets/js/menu.js"></script>
+</body>
+</html>
