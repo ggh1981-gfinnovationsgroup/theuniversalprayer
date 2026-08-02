@@ -25,6 +25,8 @@ const PRECACHE_URLS = [
   '/emergencias/index.html',
   '/insiste-y-liberate/',
   '/insiste-y-liberate/index.html',
+  '/nomascastigo/',
+  '/nomascastigo/index.html',
   '/tentaciones/',
   '/tentaciones/index.html',
   '/viacrucis/',

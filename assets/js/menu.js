@@ -40,6 +40,7 @@
     { id: 'espiritu', href: '/espiritu/', labels: { es: 'Espíritu Santo', en: 'Holy Spirit' }, icon: '🕊️' },
     { id: 'emergencias', href: '/emergencias/', labels: { es: 'Oraciones de Emergencia', en: 'Emergency Prayers' }, icon: '🆘' },
     { id: 'insisteyliberate', href: '/insiste-y-liberate/', labels: { es: 'Insiste y libérate', en: 'Insist and be freed' }, icon: '🕊️' },
+    { id: 'nomascastigo', href: '/nomascastigo/', labels: { es: 'Señor, no más castigo', en: 'Lord, no more punishment' }, icon: '🙏' },
     { id: 'tentaciones', href: '/tentaciones/', labels: { es: 'Tentaciones', en: 'Temptation' }, icon: '🛡️' },
     { id: 'ninos', href: '/ninos/', labels: { es: 'Pequeños en Cristo', en: 'Little Ones in Christ' }, icon: '⭐' },
     { id: 'jovenes', href: '/jovenes/', labels: { es: 'Jóvenes en Cristo', en: 'Young in Christ' }, icon: '🔥' },
