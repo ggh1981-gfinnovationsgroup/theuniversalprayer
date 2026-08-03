@@ -51,7 +51,44 @@
     .castigo-btn:hover { background: rgba(201,168,76,0.12); }
     .castigo-footer { margin-top: 2.1rem; text-align: center; }
     .castigo-link { color: var(--gold); text-decoration: none; opacity: 0.8; font-size: 0.86rem; }
-    .castigo-link:hover { opacity: 1; }
+    .castigo-text {
+      color: rgba(255,255,255,0.78);
+      font-size: 0.92rem;
+      line-height: 1.78;
+      margin: 0.6rem 0;
+    }
+    .castigo-text strong { color: var(--gold-light); }
+    details.castigo-verse { margin: 0.6rem 0; }
+    details.castigo-verse summary {
+      cursor: pointer; color: var(--gold);
+      font-size: 0.83rem; padding: 0.35rem 0.5rem;
+      user-select: none; list-style: none;
+    }
+    details.castigo-verse summary::-webkit-details-marker { display: none; }
+    details.castigo-verse summary::before { content: '\25B8  '; }
+    details.castigo-verse[open] summary::before { content: '\25BE  '; }
+    details.castigo-verse blockquote {
+      margin: 0.4rem 0 0;
+      padding: 0.75rem 1rem;
+      border-left: 3px solid rgba(201,168,76,0.44);
+      background: rgba(201,168,76,0.05);
+      border-radius: 0 8px 8px 0;
+      font-style: italic; font-size: 0.9rem;
+      line-height: 1.75; color: rgba(255,255,255,0.88);
+      white-space: pre-line;
+      font-family: var(--font-serif);
+    }
+    details.castigo-verse cite {
+      display: block; margin-top: 0.4rem;
+      font-size: 0.76rem; font-style: normal;
+      color: var(--gold); opacity: 0.8;
+    }
+    .castigo-divider {
+      border: none;
+      border-top: 1px solid rgba(201,168,76,0.15);
+      margin: 0.9rem 0;
+    }
+    .castigo-card-body { padding: 0.9rem 1.15rem 1.1rem; }
   </style>
 </head>
 <body class="castigo-page">
@@ -79,11 +116,13 @@
     <h1 class="castigo-title" data-lang="es">Señor,<br />por favor no más castigo</h1>
     <h1 class="castigo-title" data-lang="en" style="display:none">Lord,<br />please no more punishment</h1>
 
-    <p class="castigo-subtitle" data-lang="es">Una oración de súplica humilde: reconocer las faltas, pedir misericordia y pedir tiempo para convertirse de verdad.</p>
-    <p class="castigo-subtitle" data-lang="en" style="display:none">A prayer of humble supplication: acknowledge our faults, ask for mercy, and ask for time to truly convert.</p>
+    <p class="castigo-subtitle" data-lang="es">¿Dios me está castigando? ¿Cómo corrige? Lo que los Salmos dicen sobre el sufrimiento, la misericordia y la culpa.</p>
+    <p class="castigo-subtitle" data-lang="en" style="display:none">Is God punishing me? How does He correct? What the Psalms say about suffering, mercy, and guilt.</p>
   </section>
 
   <main class="castigo-content">
+
+    <!-- ORACIÓN REVISADA -->
     <div class="castigo-card">
       <div class="castigo-card-head">
         <span class="castigo-card-icon">🙏</span>
@@ -92,18 +131,19 @@
       </div>
       <div class="castigo-prayer" id="pray-es" data-lang="es">Padre Santo,
 reconocemos que hemos pecado,
-que muchas veces hemos sido ingratos,
-que nos hemos apartado de Tus caminos.
+que muchas veces hemos sido ingratos
+y que nos hemos apartado de Tus caminos.
 
-Si nos tratas según nuestras faltas,
-no podremos sostenernos.
+Si nos trataras según nuestras faltas,
+no podríamos sostenernos.
+Pero Tú mismo lo dijiste:
+no nos tratas como merecen nuestros pecados.
+
 Por eso hoy Te suplicamos:
-Señor, por favor, no más castigo,
-aunque lo merezcamos.
-
-Ten misericordia de nosotros.
-Detén Tu mano de corrección
-y danos tiempo para volver a Ti de verdad.
+ten misericordia de nosotros.
+No pedimos que dejes de ser justo.
+Pedimos lo que pide el Salmo:
+que Tu misericordia sea más grande que nuestra culpa.
 
 Danos dolor de nuestros pecados,
 obediencia a Tu Palabra
@@ -124,15 +164,16 @@ we acknowledge that we have sinned,
 that we have often been ungrateful,
 and that we have strayed from Your ways.
 
-If You dealt with us according to our faults,
-we would not stand.
-So today we beg You:
-Lord, please, no more punishment,
-even if we deserve it.
+If You treated us according to our faults,
+we could not stand.
+But You Yourself have said:
+You do not deal with us according to our sins.
 
-Have mercy on us.
-Hold back Your hand of correction
-and grant us time to truly return to You.
+So today we beg You:
+have mercy on us.
+We are not asking You to stop being just.
+We ask what the Psalm asks:
+that Your mercy be greater than our guilt.
 
 Give us sorrow for our sins,
 obedience to Your Word,
@@ -148,32 +189,263 @@ and on our nation.
 Do not let us go, Lord.
 Convert us and save us.
 Amen.</div>
+      <div class="castigo-card-body">
+        <div class="castigo-actions">
+          <button class="castigo-btn" type="button" onclick="readPrayer()">🔊 <span data-lang="es">Escuchar oración</span><span data-lang="en" style="display:none">Listen to prayer</span></button>
+          <button class="castigo-btn" type="button" onclick="stopPrayer()">⏹ <span data-lang="es">Detener</span><span data-lang="en" style="display:none">Stop</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ¿DIOS CASTIGA? -->
+    <div class="castigo-card">
+      <div class="castigo-card-head">
+        <span class="castigo-card-icon">📖</span>
+        <h2 data-lang="es">¿Dios castiga? Lo que los Salmos dicen en realidad</h2>
+        <h2 data-lang="en" style="display:none">Does God punish? What the Psalms actually say</h2>
+      </div>
+      <div class="castigo-card-body">
+        <p class="castigo-text" data-lang="es">Cuando el dolor llega — enfermedad, una pérdida, consecuencias de errores propios — la pregunta aparece casi sola: <em>¿me está castigando Dios?</em></p>
+        <p class="castigo-text" data-lang="en" style="display:none">When pain arrives — illness, a loss, the consequences of our own mistakes — the question rises almost on its own: <em>Is God punishing me?</em></p>
+
+        <p class="castigo-text" data-lang="es">Es una pregunta honesta. Los Salmos la hacen abiertamente. Pero también la responden.</p>
+        <p class="castigo-text" data-lang="en" style="display:none">It is an honest question. The Psalms ask it openly. But they also answer it.</p>
+
+        <hr class="castigo-divider" />
+
+        <p class="castigo-text" data-lang="es"><strong>El Salmo 103 lo dice sin rodeos:</strong></p>
+        <p class="castigo-text" data-lang="en" style="display:none"><strong>Psalm 103 says it plainly:</strong></p>
+
+        <blockquote class="castigo-quote" data-lang="es">
+          «No nos ha tratado conforme a nuestros pecados, ni nos ha pagado conforme a nuestras iniquidades. Como está de alto el cielo sobre la tierra, así es de grande su amor por los que le temen; como está de lejos el oriente del occidente, así aleja de nosotros nuestras transgresiones.»
+          <cite>— Salmo 103, 10-12</cite>
+        </blockquote>
+        <blockquote class="castigo-quote" data-lang="en" style="display:none">
+          "He does not treat us as our sins deserve or repay us according to our iniquities. For as high as the heavens are above the earth, so great is his love for those who fear him; as far as the east is from the west, so far has he removed our transgressions from us."
+          <cite>— Psalm 103:10-12</cite>
+        </blockquote>
+
+        <p class="castigo-text" data-lang="es">Este salmo dice <strong>explícitamente</strong>: Dios no te paga según lo que mereces. No lleva una cuenta de golpes. Su característica dominante no es la ira, sino la misericordia.</p>
+        <p class="castigo-text" data-lang="en" style="display:none">This psalm says <strong>explicitly</strong>: God does not pay you back according to what you deserve. He does not keep a ledger of blows. His dominant attribute is not anger, but mercy.</p>
+
+        <hr class="castigo-divider" />
+
+        <p class="castigo-text" data-lang="es"><strong>¿Pero entonces por qué los Salmos piden «no me castigues»?</strong></p>
+        <p class="castigo-text" data-lang="en" style="display:none"><strong>Then why do the Psalms ask «do not punish me»?</strong></p>
+
+        <p class="castigo-text" data-lang="es">El Salmo 6 empieza: <em>«Señor, no me reprendas en tu ira ni me castigues en tu furor.»</em> El Salmo 38 dice lo mismo. Esas oraciones son legítimas — y están en la Biblia precisamente porque expresan lo que siente el corazón humano cuando sufre: <em>Señor, esto duele, no aguanto más, ten misericordia.</em></p>
+        <p class="castigo-text" data-lang="en" style="display:none">Psalm 6 begins: <em>"Lord, do not rebuke me in your anger or discipline me in your wrath."</em> Psalm 38 says the same. Those prayers are legitimate — and they are in the Bible precisely because they express what the human heart feels in suffering: <em>Lord, this hurts, I cannot take any more, have mercy.</em></p>
+
+        <p class="castigo-text" data-lang="es">El problema no es tener ese sentimiento. El problema es creer que Dios es un juez que lleva cuenta de golpes y que enviará más dolor si no rezas suficiente.</p>
+        <p class="castigo-text" data-lang="en" style="display:none">The problem is not having that feeling. The problem is believing God is a judge keeping a tally of blows who will send more pain if you do not pray enough.</p>
+
+        <hr class="castigo-divider" />
+
+        <p class="castigo-text" data-lang="es"><strong>El Salmo 130 cierra el argumento:</strong></p>
+        <p class="castigo-text" data-lang="en" style="display:none"><strong>Psalm 130 closes the argument:</strong></p>
+
+        <blockquote class="castigo-quote" data-lang="es">
+          «Si Tú, Señor, llevaras cuenta de las culpas, ¿quién podría sostenerse? Pero en Ti se halla el perdón.»
+          <cite>— Salmo 130, 3-4</cite>
+        </blockquote>
+        <blockquote class="castigo-quote" data-lang="en" style="display:none">
+          "If you, Lord, kept a record of sins, Lord, who could stand? But with you there is forgiveness."
+          <cite>— Psalm 130:3-4</cite>
+        </blockquote>
+
+        <p class="castigo-text" data-lang="es">Si Dios llevara la cuenta completa, nadie estaría en pie. Pero no la lleva así. El perdón existe. Y precisamente porque existe es que podemos acercarnos a Él.</p>
+        <p class="castigo-text" data-lang="en" style="display:none">If God kept the full record, no one would be standing. But He does not keep it that way. Forgiveness exists. And precisely because it does, we can draw near to Him.</p>
+      </div>
+    </div>
+
+    <!-- LAS TRES DISTINCIONES -->
+    <div class="castigo-card">
+      <div class="castigo-card-head">
+        <span class="castigo-card-icon">⚙</span>
+        <h2 data-lang="es">Las tres distinciones que cambian todo</h2>
+        <h2 data-lang="en" style="display:none">Three distinctions that change everything</h2>
+      </div>
+      <div class="castigo-card-body">
+        <p class="castigo-text" data-lang="es"><strong>1. Consecuencia no es castigo</strong></p>
+        <p class="castigo-text" data-lang="en" style="display:none"><strong>1. Consequence is not punishment</strong></p>
+        <p class="castigo-text" data-lang="es">El que miente pierde la confianza de los demás. El que hiere a otro daña sus relaciones. Esas consecuencias no vienen de un rayo enviado por Dios: vienen de la naturaleza del pecado mismo. El pecado hiere porque está construido para herir.</p>
+        <p class="castigo-text" data-lang="en" style="display:none">The liar loses the trust of others. Those who wound others damage their relationships. These consequences do not come from a bolt sent by God: they come from the nature of sin itself. Sin wounds because it is built to wound.</p>
+
+        <hr class="castigo-divider" />
+
+        <p class="castigo-text" data-lang="es"><strong>2. Purificación no es venganza</strong></p>
+        <p class="castigo-text" data-lang="en" style="display:none"><strong>2. Purification is not vengeance</strong></p>
+        <p class="castigo-text" data-lang="es">El Salmo 119,75 dice: <em>«Sé, Señor, que tus juicios son justos, y que en tu fidelidad me has afligido.»</em> Dios puede <em>permitir</em> el sufrimiento y usarlo para purificar — como el fuego al oro. Pero «permitir» es muy distinto de «enviar venganza». Un padre que deja a su hijo aprender de una caída no es cruel: es sabio.</p>
+        <p class="castigo-text" data-lang="en" style="display:none">Psalm 119:75 says: <em>"I know, Lord, that your laws are righteous, and that in faithfulness you have afflicted me."</em> God can <em>permit</em> suffering and use it to purify — as fire purifies gold. But "permitting" is very different from "sending vengeance." A father who lets his child learn from a fall is not cruel: he is wise.</p>
+
+        <hr class="castigo-divider" />
+
+        <p class="castigo-text" data-lang="es"><strong>3. La misericordia es más grande que la culpa</strong></p>
+        <p class="castigo-text" data-lang="en" style="display:none"><strong>3. Mercy is greater than guilt</strong></p>
+        <p class="castigo-text" data-lang="es">El Salmo 103 lo mide: como el cielo sobre la tierra — así de grande es Su amor. Como el oriente del occidente — así de lejos aleja nuestras transgresiones. La distancia entre la culpa y el perdón no la pusiste tú: la puso Él.</p>
+        <p class="castigo-text" data-lang="en" style="display:none">Psalm 103 measures it: as high as the heavens above the earth — so great is His love. As far as the east from the west — so far has He removed our transgressions. The distance between guilt and forgiveness was not set by you: it was set by Him.</p>
+      </div>
+    </div>
+
+    <!-- SALMOS PARA REZAR -->
+    <div class="castigo-card">
+      <div class="castigo-card-head">
+        <span class="castigo-card-icon">📓</span>
+        <h2 data-lang="es">Salmos para rezar en el sufrimiento</h2>
+        <h2 data-lang="en" style="display:none">Psalms to pray in suffering</h2>
+      </div>
+      <div class="castigo-card-body">
+        <details class="castigo-verse" data-lang="es">
+          <summary>Salmo 130 — Desde el abismo (De Profundis)</summary>
+          <blockquote>Desde el abismo a ti grito, Señor;
+Señor, escucha mi voz.
+Estén atentos tus oídos a la voz de mi súplica.
+
+Si llevas cuenta de los delitos, Señor,
+¿quién podrá resistir?
+Pero en ti se halla el perdón.
+
+Mi alma espera al Señor,
+espera en su palabra;
+mi alma aguarda al Señor
+más que el centinela a la aurora.
+
+Porque en el Señor hay misericordia,
+abundante redención.
+<cite>— Salmo 130</cite></blockquote>
+        </details>
+        <details class="castigo-verse" data-lang="es">
+          <summary>Salmo 51 — Miserere (corazón contrito)</summary>
+          <blockquote>Misericordia, Dios mío, por tu bondad;
+por tu inmensa ternura borra mi culpa.
+Lava del todo mi delito, limpia mi pecado.
+
+Pues mi culpa yo la reconozco,
+mi pecado no se aparta de mí.
+
+Oh Dios, crea en mí un corazón puro,
+renuévame por dentro con espíritu firme.
+
+El sacrificio que pido es un espíritu quebrantado;
+un corazón contrito y humillado tú no lo desprecias, oh Dios.
+<cite>— Salmo 51, 3-5.12.19</cite></blockquote>
+        </details>
+        <details class="castigo-verse" data-lang="es">
+          <summary>Salmo 103 — Su misericordia no tiene fin</summary>
+          <blockquote>El Señor es misericordioso y clemente,
+lento para enojarse y lleno de amor.
+No nos ha tratado conforme a nuestros pecados,
+ni nos ha pagado conforme a nuestras iniquidades.
+
+Como está de alto el cielo sobre la tierra,
+así es de grande su amor por los que le temen;
+como está de lejos el oriente del occidente,
+así aleja de nosotros nuestras transgresiones.
+<cite>— Salmo 103, 8-12</cite></blockquote>
+        </details>
+        <details class="castigo-verse" data-lang="es">
+          <summary>Salmo 6 — Súplica en la tribulación</summary>
+          <blockquote>Señor, no me reprendas en tu ira
+ni me castigues en tu furor.
+Ten piedad de mí, Señor, porque desfallezco;
+sáname, Señor, porque mis huesos tiemblan
+y mi alma está muy turbada.
+¿Hasta cuándo, Señor, hasta cuándo?
+
+Vuelve, Señor, libra mi vida,
+sálvame por tu misericordia.
+<cite>— Salmo 6, 2-5</cite></blockquote>
+        </details>
+        <details class="castigo-verse" data-lang="en" style="display:none">
+          <summary>Psalm 130 — Out of the Depths (De Profundis)</summary>
+          <blockquote>Out of the depths I cry to you, Lord;
+Lord, hear my voice.
+Let your ears be attentive to my cry for mercy.
+
+If you, Lord, kept a record of sins,
+Lord, who could stand?
+But with you there is forgiveness.
+
+I wait for the Lord, my whole being waits,
+and in his word I put my hope;
+more than watchmen wait for the morning.
+
+For with the Lord is unfailing love
+and with him is full redemption.
+<cite>— Psalm 130</cite></blockquote>
+        </details>
+        <details class="castigo-verse" data-lang="en" style="display:none">
+          <summary>Psalm 51 — Miserere (contrite heart)</summary>
+          <blockquote>Have mercy on me, O God,
+according to your unfailing love;
+according to your great compassion
+blot out my transgressions.
+
+For I know my transgressions,
+and my sin is always before me.
+
+Create in me a pure heart, O God,
+and renew a steadfast spirit within me.
+
+My sacrifice, O God, is a broken spirit;
+a broken and contrite heart you, God, will not despise.
+<cite>— Psalm 51:1-3, 10, 17</cite></blockquote>
+        </details>
+        <details class="castigo-verse" data-lang="en" style="display:none">
+          <summary>Psalm 103 — His mercy never ends</summary>
+          <blockquote>The Lord is compassionate and gracious,
+slow to anger, abounding in love.
+He does not treat us as our sins deserve
+or repay us according to our iniquities.
+
+For as high as the heavens are above the earth,
+so great is his love for those who fear him;
+as far as the east is from the west,
+so far has he removed our transgressions from us.
+<cite>— Psalm 103:8-12</cite></blockquote>
+        </details>
+        <details class="castigo-verse" data-lang="en" style="display:none">
+          <summary>Psalm 6 — Plea in tribulation</summary>
+          <blockquote>Lord, do not rebuke me in your anger
+or discipline me in your wrath.
+Have mercy on me, Lord, for I am faint;
+heal me, Lord, for my bones are in agony.
+My soul is in deep anguish.
+How long, Lord, how long?
+
+Turn, Lord, and deliver me;
+save me because of your unfailing love.
+<cite>— Psalm 6:1-4</cite></blockquote>
+        </details>
+      </div>
+    </div>
+
+    <!-- NOTA PASTORAL -->
+    <div class="castigo-note">
+      <strong data-lang="es">La oración correcta en el sufrimiento</strong>
+      <strong data-lang="en" style="display:none">The right prayer in suffering</strong>
+      <p class="castigo-text" data-lang="es">No es «para tu mano de castigo» sino «llena mi mano vacía». No es negociar para que Dios deje de golpearte, sino lanzarte a Sus brazos sabiendo que Él ya pagó la deuda en la Cruz. El Señor no está esperando con un garrote. Está esperando con los brazos abiertos.</p>
+      <p class="castigo-text" data-lang="en" style="display:none">It is not "hold back your punishing hand" but "fill my empty hand." Not negotiating for God to stop striking you, but throwing yourself into His arms knowing He already paid the debt on the Cross. The Lord is not waiting with a club. He is waiting with open arms.</p>
     </div>
 
     <blockquote class="castigo-quote" data-lang="es">
-      «Si Tú, Señor, tuvieras en cuenta las culpas, ¿quién podría resistir? Pero en Ti se encuentra el perdón.»
-      <cite>— Salmo 130, 3-4</cite>
+      «El Señor es misericordioso y clemente, lento para enojarse y lleno de amor.»
+      <cite>— Salmo 103, 8</cite>
     </blockquote>
     <blockquote class="castigo-quote" data-lang="en" style="display:none">
-      “If you, Lord, should mark iniquities, who could stand? But with you there is forgiveness.”
-      <cite>— Psalm 130:3-4</cite>
+      "The Lord is compassionate and gracious, slow to anger, abounding in love."
+      <cite>— Psalm 103:8</cite>
     </blockquote>
 
-    <div class="castigo-note">
-      <strong data-lang="es">Cómo rezarla</strong>
-      <strong data-lang="en" style="display:none">How to pray it</strong>
-      <p data-lang="es" style="margin:0.4rem 0 0;">Rézala con humildad, no para evitar la conversión, sino para pedir misericordia mientras te conviertes. Puedes rezarla 3 veces seguidas y terminar con un Padre Nuestro.</p>
-      <p data-lang="en" style="display:none;margin:0.4rem 0 0;">Pray it with humility, not to avoid conversion, but to ask for mercy while converting. You may pray it three times in a row and end with the Our Father.</p>
-    </div>
-
-    <div class="castigo-actions">
-      <button class="castigo-btn" type="button" onclick="readPrayer()">🔊 <span data-lang="es">Escuchar oración</span><span data-lang="en" style="display:none">Listen to prayer</span></button>
-      <button class="castigo-btn" type="button" onclick="stopPrayer()">⏹ <span data-lang="es">Detener</span><span data-lang="en" style="display:none">Stop</span></button>
-    </div>
-
     <div class="castigo-footer">
-      <a href="/" class="castigo-link" data-lang="es">← Volver al inicio</a>
-      <a href="/" class="castigo-link" data-lang="en" style="display:none">← Back to home</a>
+      <a href="/reconciliacion/" class="castigo-link" data-lang="es">🙏 Reconciliación</a>
+      <a href="/reconciliacion/" class="castigo-link" data-lang="en" style="display:none">🙏 Reconciliation</a>
+      &nbsp;&nbsp;
+      <a href="/misericordia/" class="castigo-link" data-lang="es">🕯️ Misericordia</a>
+      <a href="/misericordia/" class="castigo-link" data-lang="en" style="display:none">🕯️ Mercy</a>
+      &nbsp;&nbsp;
+      <a href="/" class="castigo-link" data-lang="es">← Inicio</a>
+      <a href="/" class="castigo-link" data-lang="en" style="display:none">← Home</a>
     </div>
   </main>
 
