@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Calendario Devocional por Meses | The Universal Prayer</title>
-  <meta name="description" content="Calendario devocional catolico por meses. Plan mensual actualizable con dias dinamicos por ano. Julio: Preciosisima Sangre de Cristo." />
+  <meta name="description" content="Calendario devocional católico por meses. Plan mensual con reflexiones, santos y oraciones para cada día del año." />
   <meta name="theme-color" content="#c9a84c" />
   <link rel="manifest" href="/manifest.json" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -1094,7 +1094,7 @@
         }
       };
 
-      let selectedMonth = 6; // Julio por prioridad actual
+      let selectedMonth = (new Date()).getMonth(); // auto-detect current month
       const currentYear = (new Date()).getFullYear();
 
       const eneroMethodEs = {
