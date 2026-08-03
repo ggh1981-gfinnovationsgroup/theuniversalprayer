@@ -164,7 +164,73 @@
       opacity: 0.8;
       font-size: 0.86rem;
     }
-    .insiste-link:hover { opacity: 1; }
+    .insiste-text {
+      color: rgba(255,255,255,0.78);
+      font-size: 0.92rem;
+      line-height: 1.78;
+      margin: 0.6rem 0;
+    }
+    .insiste-text strong { color: var(--gold-light); }
+    .insiste-section-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+      color: var(--gold);
+      margin: 0 0 0.5rem;
+    }
+    .insiste-word-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.6rem, 5vw, 2.2rem);
+      color: #fff;
+      margin: 0 0 0.5rem;
+      line-height: 1.1;
+    }
+    .insiste-divider {
+      border: none;
+      border-top: 1px solid rgba(201,168,76,0.15);
+      margin: 0.85rem 0;
+    }
+    details.insiste-verse { margin: 0.55rem 0; }
+    details.insiste-verse summary {
+      cursor: pointer; color: var(--gold);
+      font-size: 0.83rem; padding: 0.35rem 0.5rem;
+      user-select: none; list-style: none;
+    }
+    details.insiste-verse summary::-webkit-details-marker { display: none; }
+    details.insiste-verse summary::before { content: '\25B8  '; }
+    details.insiste-verse[open] summary::before { content: '\25BE  '; }
+    details.insiste-verse blockquote {
+      margin: 0.4rem 0 0;
+      padding: 0.75rem 1rem;
+      border-left: 3px solid rgba(201,168,76,0.44);
+      background: rgba(201,168,76,0.05);
+      border-radius: 0 8px 8px 0;
+      font-style: italic; font-size: 0.9rem;
+      line-height: 1.75; color: rgba(255,255,255,0.88);
+      white-space: pre-line;
+      font-family: var(--font-serif);
+    }
+    details.insiste-verse cite {
+      display: block; margin-top: 0.4rem;
+      font-size: 0.76rem; font-style: normal;
+      color: var(--gold); opacity: 0.8;
+    }
+    .insiste-steps {
+      display: grid;
+      gap: 0.5rem;
+      margin-top: 0.7rem;
+    }
+    .insiste-step {
+      background: rgba(201,168,76,0.05);
+      border: 1px solid rgba(201,168,76,0.16);
+      border-radius: 9px;
+      padding: 0.7rem 0.85rem;
+      font-size: 0.87rem;
+      color: rgba(255,255,255,0.80);
+      line-height: 1.65;
+    }
+    .insiste-step strong { color: var(--gold-light); display: block; margin-bottom: 0.2rem; }
+    .insiste-card-body { padding: 0.9rem 1.15rem 1.1rem; }
   </style>
 </head>
 <body class="insiste-page">
@@ -201,6 +267,8 @@
   </section>
 
   <main class="insiste-content">
+
+    <!-- PRAYER -->
     <div class="insiste-card">
       <div class="insiste-card-head">
         <span class="insiste-card-icon">🙏</span>
@@ -208,11 +276,7 @@
         <h2 data-lang="en" style="display:none">Central prayer</h2>
       </div>
       <div class="insiste-prayer" id="pray-main-es" data-lang="es">Señor Jesucristo,
-no quiero quedarme en la curiosidad ni en la confusión.
-Si estas dos palabras vienen de Ti,
-que me conduzcan a la obediencia.
-
-Enséñame a insistir en la oración,
+enséñame a insistir en la oración,
 a no dejar de llamarte,
 a no abandonar el rosario,
 a no postergar la confesión.
@@ -238,11 +302,7 @@ el Perdón que levanta
 y la Libertad que salva.
 Amén.</div>
       <div class="insiste-prayer" id="pray-main-en" data-lang="en" style="display:none">Lord Jesus Christ,
-I do not want to remain in curiosity or confusion.
-If these two words come from You,
-let them lead me to obedience.
-
-Teach me to insist in prayer,
+teach me to insist in prayer,
 never to stop calling on You,
 not to abandon the Rosary,
 and not to delay confession.
@@ -267,64 +327,267 @@ Jesus, You are the Truth that guides,
 the Forgiveness that raises up,
 and the Freedom that saves.
 Amen.</div>
+      <div class="insiste-card-body">
+        <div class="insiste-actions">
+          <button class="insiste-btn" type="button" onclick="readPrayer()">🔊 <span data-lang="es">Escuchar oración</span><span data-lang="en" style="display:none">Listen to prayer</span></button>
+          <button class="insiste-btn" type="button" onclick="stopPrayer()">⏹ <span data-lang="es">Detener</span><span data-lang="en" style="display:none">Stop</span></button>
+        </div>
+      </div>
     </div>
 
-    <blockquote class="insiste-quote" data-lang="es">
-      «La verdad os hará libres.»
-      <cite>— Juan 8, 32</cite>
-    </blockquote>
-    <blockquote class="insiste-quote" data-lang="en" style="display:none">
-      "The truth will set you free."
-      <cite>— John 8:32</cite>
-    </blockquote>
+    <!-- INSISTE -->
+    <div class="insiste-card">
+      <div class="insiste-card-head">
+        <span class="insiste-card-icon">🔥</span>
+        <div>
+          <p class="insiste-section-label" data-lang="es">Primera palabra</p>
+          <p class="insiste-section-label" data-lang="en" style="display:none">First word</p>
+          <h2 class="insiste-word-title" data-lang="es">Insiste</h2>
+          <h2 class="insiste-word-title" data-lang="en" style="display:none">Insist</h2>
+        </div>
+      </div>
+      <div class="insiste-card-body">
+        <p class="insiste-text" data-lang="es">No es insistir por terquedad. Es insistir porque <strong>la oración que no se abandona es una declaración de fe</strong>: creo que Dios escucha, creo que actúa, creo que vale la pena seguir llamando aunque la puerta parezca cerrada.</p>
+        <p class="insiste-text" data-lang="en" style="display:none">This is not insisting out of stubbornness. It is insisting because <strong>prayer that is not abandoned is a declaration of faith</strong>: I believe God hears, I believe He acts, I believe it is worth continuing to knock even when the door seems closed.</p>
 
+        <p class="insiste-text" data-lang="es">Jesús enseñó esto con tres historias distintas — y en todas la conclusión es la misma: <em>no te detengas.</em></p>
+        <p class="insiste-text" data-lang="en" style="display:none">Jesus taught this through three different stories — and in all of them the conclusion is the same: <em>do not stop.</em></p>
+
+        <hr class="insiste-divider" />
+
+        <details class="insiste-verse" data-lang="es">
+          <summary>La viuda persistente — Lucas 18, 1-8 (la historia que Jesús contó sobre la oración)</summary>
+          <blockquote>Jesús les contó una parábola para enseñarles que debían orar siempre y no desfallecer:
+
+«En cierta ciudad había un juez que ni temía a Dios ni respetaba a los hombres. Y había en esa ciudad una viuda que iba a él continuamente y le decía: "Hazme justicia frente a mi adversario."
+
+Durante mucho tiempo el juez no quiso. Pero después pensó: "Aunque no temo a Dios ni respeto a los hombres, sin embargo, porque esta viuda me importuna tanto, le haré justicia para que no venga a cansarme indefinidamente."»
+
+Y el Señor añadió: «¿Y Dios no hará justicia a sus elegidos que le gritan día y noche? ¿Les hará esperar? Os digo que les hará justicia en seguida.»
+<cite>— Lucas 18, 1-8</cite></blockquote>
+        </details>
+
+        <details class="insiste-verse" data-lang="es">
+          <summary>La mujer cananea — Mateo 15, 21-28 (insistió tres veces y Jesús la recompensó)</summary>
+          <blockquote>Una mujer cananea que había salido de aquella región comenzó a gritar: «¡Señor, Hijo de David, ten compasión de mí! Mi hija está muy enferma.»
+
+Jesús no le respondió. Sus discípulos le pidieron: «Despídela, porque viene gritando detrás de nosotros.»
+
+Pero ella vino y se postró ante él, diciendo: «¡Señor, ayúdame!»
+
+Jesús le respondió: «No está bien tomar el pan de los hijos y echárselo a los perros.»
+
+Ella dijo: «Tienes razón, Señor; pero también los perros comen las migajas que caen de la mesa de sus amos.»
+
+Entonces Jesús le respondió: «¡Mujer, qué grande es tu fe! Que se cumpla lo que deseas.»
+<cite>— Mateo 15, 21-28</cite></blockquote>
+        </details>
+
+        <details class="insiste-verse" data-lang="es">
+          <summary>El amigo a medianoche — Lucas 11, 5-10 (pide, busca, llama)</summary>
+          <blockquote>«Supongamos que uno de ustedes tiene un amigo y va a él a medianoche y le dice: "Amigo, préstame tres panes, porque uno de mis amigos ha venido a mí de viaje y no tengo nada que ofrecerle." Y que el que está dentro le responde: "No me molestes; la puerta ya está cerrada."
+
+Os digo que aunque no se levante a dárselos por ser amigo suyo, sin embargo, por su insistencia se levantará y le dará todo lo que necesite.
+
+Pedid y se os dará, buscad y hallaréis, llamad y se os abrirá. Porque todo el que pide recibe, el que busca halla, y al que llama se le abre.»
+<cite>— Lucas 11, 5-10</cite></blockquote>
+        </details>
+
+        <details class="insiste-verse" data-lang="en" style="display:none">
+          <summary>The persistent widow — Luke 18:1-8 (the story Jesus told about prayer)</summary>
+          <blockquote>Jesus told his disciples a parable to show them that they should always pray and not give up:
+
+"In a certain town there was a judge who neither feared God nor cared what people thought. And there was a widow in that town who kept coming to him with the plea, 'Grant me justice against my adversary.'
+
+For some time he refused. But finally he said to himself, 'Even though I don't fear God or care what people think, yet because this widow keeps bothering me, I will see that she gets justice, so that she won't eventually come and attack me!'"
+
+And the Lord said, "Will not God bring about justice for his chosen ones, who cry out to him day and night? Will he keep putting them off? I tell you, he will see that they get justice, and quickly."
+<cite>— Luke 18:1-8</cite></blockquote>
+        </details>
+
+        <details class="insiste-verse" data-lang="en" style="display:none">
+          <summary>The Canaanite woman — Matthew 15:21-28 (she insisted three times and Jesus rewarded her)</summary>
+          <blockquote>A Canaanite woman from that vicinity came to him, crying out, "Lord, Son of David, have mercy on me! My daughter is demon-possessed and suffering terribly."
+
+Jesus did not answer a word. So his disciples came to him and urged him, "Send her away."
+
+The woman came and knelt before him. "Lord, help me!" she said.
+
+He replied, "It is not right to take the children's bread and toss it to the dogs."
+
+"Yes it is, Lord," she said. "Even the dogs eat the crumbs that fall from their master's table."
+
+Then Jesus said to her, "Woman, you have great faith! Your request is granted."
+<cite>— Matthew 15:21-28</cite></blockquote>
+        </details>
+
+        <hr class="insiste-divider" />
+
+        <p class="insiste-text" data-lang="es"><strong>Insistir no es manipular a Dios.</strong> Es alinearte con Él. Cada oración que haces aunque no sientas nada, cada rosario que rezas aunque estés distraído, cada confesión a la que vuelves aunque hayas caído de nuevo — eso es insistir. Y Dios recompensa la persistencia.</p>
+        <p class="insiste-text" data-lang="en" style="display:none"><strong>Insisting is not manipulating God.</strong> It is aligning yourself with Him. Every prayer you make even when you feel nothing, every Rosary you pray even when distracted, every confession you return to even after falling again — that is insisting. And God rewards persistence.</p>
+
+        <div class="insiste-steps" data-lang="es">
+          <div class="insiste-step"><strong>Insiste en la oración diaria</strong>Aunque no sientas nada. Aunque sean solo 3 minutos. La fidelidad constante vale más que la emoción ocasional.</div>
+          <div class="insiste-step"><strong>Insiste en los sacramentos</strong>No dejes de confesarte porque te parece que siempre caes en lo mismo. El que vuelve siempre a la misericordia de Dios no está fallando — está insistiendo.</div>
+          <div class="insiste-step"><strong>Insiste en el bien que cuesta</strong>Perdonar una vez más. Pedir perdón otra vez. Levantarte después de una caída. No porque sea fácil, sino porque es real.</div>
+          <div class="insiste-step"><strong>Insiste cuando Dios parece callado</strong>El silencio de Dios no es su ausencia. La mujer cananea insistió cuando Jesús no respondió — y esa insistencia fue lo que Él llamó «gran fe».</div>
+        </div>
+        <div class="insiste-steps" data-lang="en" style="display:none">
+          <div class="insiste-step"><strong>Insist in daily prayer</strong>Even when you feel nothing. Even if it is only 3 minutes. Consistent faithfulness is worth more than occasional emotion.</div>
+          <div class="insiste-step"><strong>Insist in the sacraments</strong>Do not stop going to confession because you seem to fall into the same thing each time. The one who always returns to God's mercy is not failing — they are insisting.</div>
+          <div class="insiste-step"><strong>Insist in the good that costs you</strong>Forgive one more time. Ask forgiveness again. Get up after a fall. Not because it is easy, but because it is real.</div>
+          <div class="insiste-step"><strong>Insist when God seems silent</strong>God's silence is not his absence. The Canaanite woman insisted when Jesus did not answer — and that persistence was what he called "great faith."</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LIBÉRATE -->
+    <div class="insiste-card">
+      <div class="insiste-card-head">
+        <span class="insiste-card-icon">🕊️</span>
+        <div>
+          <p class="insiste-section-label" data-lang="es">Segunda palabra</p>
+          <p class="insiste-section-label" data-lang="en" style="display:none">Second word</p>
+          <h2 class="insiste-word-title" data-lang="es">Libérate</h2>
+          <h2 class="insiste-word-title" data-lang="en" style="display:none">Be freed</h2>
+        </div>
+      </div>
+      <div class="insiste-card-body">
+        <p class="insiste-text" data-lang="es">No es un consejo de autoayuda. Es una orden de alguien con autoridad para darla. Y no dice «quizás puedas liberarte algún día» — dice <strong>libérate</strong>: ahora, con lo que tienes, desde donde estás.</p>
+        <p class="insiste-text" data-lang="en" style="display:none">This is not self-help advice. It is a command from someone with the authority to give it. And it does not say "perhaps you might be freed someday" — it says <strong>be freed</strong>: now, with what you have, from where you are.</p>
+
+        <blockquote class="insiste-quote" data-lang="es">
+          «La verdad os hará libres.» ... «Si el Hijo os libera, seréis verdaderamente libres.»
+          <cite>— Juan 8, 32.36</cite>
+        </blockquote>
+        <blockquote class="insiste-quote" data-lang="en" style="display:none">
+          "The truth will set you free." ... "If the Son sets you free, you will be free indeed."
+          <cite>— John 8:32, 36</cite>
+        </blockquote>
+
+        <hr class="insiste-divider" />
+
+        <details class="insiste-verse" data-lang="es">
+          <summary>Gálatas 5, 1 — «Para ser libres nos liberó Cristo»</summary>
+          <blockquote>Para ser libres nos liberó Cristo. Manteneos, pues, firmes y no os dejéis oprimir de nuevo por el yugo de la esclavitud.
+<cite>— Gálatas 5, 1</cite></blockquote>
+        </details>
+
+        <details class="insiste-verse" data-lang="es">
+          <summary>Romanos 8, 2 — La ley del Espíritu te libera</summary>
+          <blockquote>La ley del Espíritu que da vida en Cristo Jesús te ha liberado de la ley del pecado y de la muerte.
+<cite>— Romanos 8, 2</cite></blockquote>
+        </details>
+
+        <details class="insiste-verse" data-lang="es">
+          <summary>Romanos 6, 6-7 — Ya no somos esclavos del pecado</summary>
+          <blockquote>Sabemos que nuestro viejo yo fue crucificado con él para que el cuerpo dominado por el pecado quedara destruido, a fin de que ya no siguiéramos siendo esclavos del pecado, porque el que muere queda liberado del pecado.
+<cite>— Romanos 6, 6-7</cite></blockquote>
+        </details>
+
+        <details class="insiste-verse" data-lang="en" style="display:none">
+          <summary>Galatians 5:1 — "For freedom Christ has set us free"</summary>
+          <blockquote>For freedom Christ has set us free; stand firm therefore, and do not submit again to a yoke of slavery.
+<cite>— Galatians 5:1</cite></blockquote>
+        </details>
+
+        <details class="insiste-verse" data-lang="en" style="display:none">
+          <summary>Romans 8:2 — The law of the Spirit sets you free</summary>
+          <blockquote>The law of the Spirit who gives life in Christ Jesus has set you free from the law of sin and death.
+<cite>— Romans 8:2</cite></blockquote>
+        </details>
+
+        <details class="insiste-verse" data-lang="en" style="display:none">
+          <summary>Romans 6:6-7 — No longer slaves to sin</summary>
+          <blockquote>We know that our old self was crucified with him so that the body ruled by sin might be done away with, that we should no longer be slaves to sin — because anyone who has died has been set free from sin.
+<cite>— Romans 6:6-7</cite></blockquote>
+        </details>
+
+        <hr class="insiste-divider" />
+
+        <p class="insiste-text" data-lang="es"><strong>La libertad que ofrece Cristo no es la ausencia de lucha.</strong> Es la capacidad de no ser gobernado por lo que antes te dominaba. El adicto liberado todavía siente el jalón — pero ya no lo obedece. El pecador liberado todavía siente la tentación — pero tiene poder para decir que no.</p>
+        <p class="insiste-text" data-lang="en" style="display:none"><strong>The freedom Christ offers is not the absence of struggle.</strong> It is the ability to no longer be governed by what once controlled you. The freed addict still feels the pull — but no longer obeys it. The freed sinner still feels temptation — but has the power to say no.</p>
+
+        <p class="insiste-text" data-lang="es">La liberación no siempre es instantánea. Pero empieza en un momento concreto cuando dices: <em>ya no voy a vivir así.</em></p>
+        <p class="insiste-text" data-lang="en" style="display:none">Liberation is not always instantaneous. But it begins in a concrete moment when you say: <em>I am not going to live like this anymore.</em></p>
+
+        <div class="insiste-steps" data-lang="es">
+          <div class="insiste-step"><strong>Libérate de la vergüenza paralizante</strong>La vergüenza que te aleja de Dios no viene de Él. Él dice: «vuelve». No: «quédate ahí con tu culpa».</div>
+          <div class="insiste-step"><strong>Libérate del ciclo caída-espera-caída</strong>El ciclo se rompe con confesión. No con promesas. No con fuerza de voluntad. Con el sacramento que Cristo dejó exactamente para eso.</div>
+          <div class="insiste-step"><strong>Libérate de la mentira de que no puedes</strong>Romanos 8, 2 dice que la ley del Espíritu ya te liberó del pecado. No dice que «intentará hacerlo». Lo hizo. Recíbelo.</div>
+          <div class="insiste-step"><strong>Libérate de lo que dejaste abierto</strong>Ocasiones de pecado, accesos, relaciones que te llevan al mismo lugar. La libertad necesita puertas cerradas.</div>
+        </div>
+        <div class="insiste-steps" data-lang="en" style="display:none">
+          <div class="insiste-step"><strong>Be freed from paralyzing shame</strong>The shame that drives you away from God does not come from Him. He says "return." Not "stay there with your guilt."</div>
+          <div class="insiste-step"><strong>Be freed from the fall-wait-fall cycle</strong>The cycle breaks with confession. Not promises. Not willpower. With the sacrament Christ left for exactly this.</div>
+          <div class="insiste-step"><strong>Be freed from the lie that you cannot</strong>Romans 8:2 says the law of the Spirit has already set you free from sin. Not that it will "try." It did. Receive it.</div>
+          <div class="insiste-step"><strong>Be freed from what you left open</strong>Occasions of sin, accesses, relationships that always lead you to the same place. Freedom needs closed doors.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POR QUÉ JUNTAS -->
+    <div class="insiste-card">
+      <div class="insiste-card-head">
+        <span class="insiste-card-icon">⚡</span>
+        <h2 data-lang="es">Por qué estas dos palabras juntas</h2>
+        <h2 data-lang="en" style="display:none">Why these two words together</h2>
+      </div>
+      <div class="insiste-card-body">
+        <p class="insiste-text" data-lang="es">No son dos etapas: primero insistir, luego ser libre. Son <strong>dos movimientos del mismo acto</strong>: como respirar.</p>
+        <p class="insiste-text" data-lang="en" style="display:none">These are not two stages: first insist, then be free. They are <strong>two movements of the same act</strong>: like breathing.</p>
+
+        <p class="insiste-text" data-lang="es"><strong>Insiste</strong> — inhala. Alcanza a Dios. Llama. Pide. No te rindas. Persiste en la oración aunque no sientas nada.</p>
+        <p class="insiste-text" data-lang="en" style="display:none"><strong>Insist</strong> — inhale. Reach toward God. Call. Ask. Do not give up. Persist in prayer even when you feel nothing.</p>
+
+        <p class="insiste-text" data-lang="es"><strong>Libérate</strong> — exhala. Suelta lo que te ata. Recibe lo que Dios da. Actúa en esa libertad. Cierra las puertas que dejaste abiertas.</p>
+        <p class="insiste-text" data-lang="en" style="display:none"><strong>Be freed</strong> — exhale. Release what binds you. Receive what God gives. Act in that freedom. Close the doors you left open.</p>
+
+        <hr class="insiste-divider" />
+
+        <p class="insiste-text" data-lang="es">Hay personas que insisten en la oración pero no se liberan — porque no actúan en lo que Dios les da. Y hay personas que intentan liberarse con fuerza de voluntad pero no insisten — y caen de nuevo porque no tienen raíz.</p>
+        <p class="insiste-text" data-lang="en" style="display:none">Some people insist in prayer but are never freed — because they do not act on what God gives. And some try to free themselves by willpower without insisting — and fall again because they have no roots.</p>
+
+        <p class="insiste-text" data-lang="es">Las dos palabras juntas son el camino completo: <em>toca a Dios y actúa con lo que Él te da.</em></p>
+        <p class="insiste-text" data-lang="en" style="display:none">Both words together are the complete path: <em>touch God and act with what He gives you.</em></p>
+
+        <blockquote class="insiste-quote" data-lang="es">
+          «Pedid y se os dará, buscad y hallaréis, llamad y se os abrirá.»
+          <cite>— Mateo 7, 7</cite>
+        </blockquote>
+        <blockquote class="insiste-quote" data-lang="en" style="display:none">
+          "Ask and it will be given to you; seek and you will find; knock and the door will be opened to you."
+          <cite>— Matthew 7:7</cite>
+        </blockquote>
+      </div>
+    </div>
+
+    <!-- ACCIÓN -->
     <div class="insiste-note">
-      <strong data-lang="es">Clave católica</strong>
-      <strong data-lang="en" style="display:none">Catholic key</strong>
-      <p data-lang="es" style="margin:0.4rem 0 0;">Cuando algo mueve tu conciencia, la forma católica de responder es sencilla: examinarte, rezar, confesarte si hace falta, reparar el daño y obedecer a Cristo.</p>
-      <p data-lang="en" style="display:none;margin:0.4rem 0 0;">When something moves your conscience, the Catholic response is simple: examine yourself, pray, go to confession if needed, repair the harm, and obey Christ.</p>
+      <strong data-lang="es">Acción concreta ahora</strong>
+      <strong data-lang="en" style="display:none">Concrete action now</strong>
+      <p class="insiste-text" data-lang="es">Haz una cosa de cada columna:
+<strong>Insiste</strong> — reza el Padre Nuestro despacio, de verdad, ahora mismo.
+<strong>Libérate</strong> — identifica una puerta abierta al pecado y ciérrala hoy. Si necesitas confesión, agenda una fecha concreta.</p>
+      <p class="insiste-text" data-lang="en" style="display:none">Do one thing from each column:
+<strong>Insist</strong> — pray the Our Father slowly, genuinely, right now.
+<strong>Be freed</strong> — identify one open door to sin and close it today. If you need confession, set a specific date.</p>
     </div>
 
-    <div class="insiste-note" style="margin-top:1rem;">
-      <strong data-lang="es">¿Es castigo o es corrección?</strong>
-      <strong data-lang="en" style="display:none">Is it punishment or correction?</strong>
-      <p data-lang="es" style="margin:0.4rem 0 0;">El Catecismo (n. 1472) distingue: Dios no castiga como un juez que se venga. Lo que sentimos como castigo puede ser la consecuencia natural del pecado, o la disciplina de un Padre que ama. Si es consecuencia, se repara; si es corrección paternal, se acepta con gratitud. En ningún caso la respuesta es negociar con Dios, sino convertirse.</p>
-      <p data-lang="en" style="display:none;margin:0.4rem 0 0;">The Catechism (n. 1472) distinguishes: God does not punish like a vengeful judge. What we feel as punishment may be the natural consequence of sin, or the discipline of a loving Father. If it is consequence, it is repaired; if it is fatherly correction, it is accepted with gratitude. In neither case is the answer to bargain with God — it is to convert.</p>
-    </div>
-
-    <blockquote class="insiste-quote" data-lang="es" style="margin-top:1rem;">
-      «El Señor corrige al que ama, y da azotes a todo hijo que acoge.»
-      <cite>— Hebreos 12, 6</cite>
-    </blockquote>
-    <blockquote class="insiste-quote" data-lang="en" style="display:none;margin-top:1rem;">
-      "For the Lord disciplines the one he loves, and chastises every son whom he receives."
-      <cite>— Hebrews 12:6</cite>
-    </blockquote>
-
-    <blockquote class="insiste-quote" data-lang="es">
-      «Pedid y se os dará, buscad y hallaréis, llamad y se os abrirá.»
-      <cite>— Mateo 7, 7</cite>
-    </blockquote>
-    <blockquote class="insiste-quote" data-lang="en" style="display:none">
-      "Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you."
-      <cite>— Matthew 7:7</cite>
-    </blockquote>
-
-    <div class="insiste-note" style="margin-top:1rem;">
-      <strong data-lang="es">Acción concreta de hoy</strong>
-      <strong data-lang="en" style="display:none">Concrete action today</strong>
-      <p data-lang="es" style="margin:0.4rem 0 0;">Reza un Ave María con calma, haz un acto de contrición, corta una ocasión de pecado y, si puedes, agenda la confesión. Eso es insistir y liberarte de verdad.</p>
-      <p data-lang="en" style="display:none;margin:0.4rem 0 0;">Pray one Hail Mary slowly, make an act of contrition, cut off one occasion of sin, and if you can, schedule confession. That is insisting and being freed for real.</p>
-    </div>
-
-    <div class="insiste-actions">
+    <div class="insiste-actions" style="margin-top:1rem;">
       <button class="insiste-btn" type="button" onclick="readPrayer()">🔊 <span data-lang="es">Escuchar oración</span><span data-lang="en" style="display:none">Listen to prayer</span></button>
       <button class="insiste-btn" type="button" onclick="stopPrayer()">⏹ <span data-lang="es">Detener</span><span data-lang="en" style="display:none">Stop</span></button>
     </div>
 
     <div class="insiste-footer">
-      <a href="/" class="insiste-link" data-lang="es">← Volver al inicio</a>
-      <a href="/" class="insiste-link" data-lang="en" style="display:none">← Back to home</a>
+      <a href="/tentaciones/" class="insiste-link" data-lang="es">🛡️ Guía contra tentaciones</a>
+      <a href="/tentaciones/" class="insiste-link" data-lang="en" style="display:none">🛡️ Guide against temptation</a>
+      &nbsp;&nbsp;
+      <a href="/reconciliacion/" class="insiste-link" data-lang="es">🙏 Reconciliación</a>
+      <a href="/reconciliacion/" class="insiste-link" data-lang="en" style="display:none">🙏 Reconciliation</a>
+      &nbsp;&nbsp;
+      <a href="/" class="insiste-link" data-lang="es">← Inicio</a>
+      <a href="/" class="insiste-link" data-lang="en" style="display:none">← Home</a>
     </div>
   </main>
 
