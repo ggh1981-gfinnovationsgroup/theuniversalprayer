@@ -50,6 +50,7 @@
     { id: 'salmosdiarios', href: '/salmos-diarios/', labels: { es: 'Salmos para cada momento', en: 'Psalms for every moment' }, icon: '📖' },
     { id: 'misericordia', href: '/misericordia/', labels: { es: 'Misericordia', en: 'Mercy' }, icon: '🕯️' },
     { id: 'oraciones', href: '/oraciones/', labels: { es: 'Oraciones Básicas', en: 'Basic Prayers' }, icon: '📜' },
+    { id: 'vuelvoalpadre', href: '/vuelvo-al-padre/', labels: { es: 'Caigo y vuelvo al Padre', en: 'I fall and return to the Father' }, icon: '🔄' },
     { id: 'reconciliacion', href: '/reconciliacion/', labels: { es: 'Reconciliación', en: 'Reconciliation' }, icon: '🙏' },
     { id: 'rosario', href: '/rosario/', labels: { es: 'Rosario Interactivo', en: 'Interactive Rosary' }, icon: '📿' },
     { id: 'viacrucis', href: '/viacrucis/', labels: { es: 'Vía Crucis Guiado', en: 'Guided Stations' }, icon: '✝' },
