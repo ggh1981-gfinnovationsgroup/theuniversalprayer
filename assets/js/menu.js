@@ -52,6 +52,7 @@
     { id: 'medallamilagrosa', href: '/medalla-milagrosa/', labels: { es: 'Medalla Milagrosa', en: 'Miraculous Medal' }, icon: '🌸' },
     { id: 'misericordia', href: '/misericordia/', labels: { es: 'Misericordia', en: 'Mercy' }, icon: '🕯️' },
     { id: 'oraciones', href: '/oraciones/', labels: { es: 'Oraciones Básicas', en: 'Basic Prayers' }, icon: '📜' },
+    { id: 'bellavirtud', href: '/bella-virtud/', labels: { es: 'La Bella Virtud', en: 'The Beautiful Virtue' }, icon: '🌹' },
     { id: 'vuelvoalpadre', href: '/vuelvo-al-padre/', labels: { es: 'Caigo y vuelvo al Padre', en: 'I fall and return to the Father' }, icon: '🔄' },
     { id: 'reconciliacion', href: '/reconciliacion/', labels: { es: 'Reconciliación', en: 'Reconciliation' }, icon: '🙏' },
     { id: 'rosario', href: '/rosario/', labels: { es: 'Rosario Interactivo', en: 'Interactive Rosary' }, icon: '📿' },
