@@ -1209,6 +1209,25 @@
         }
       };
 
+      const prayerReadings = {
+        es: {
+          'Magnificat': '"Proclama mi alma la grandeza del Señor, se alegra mi espíritu en Dios, mi salvador..." (Lc 1:46-55).',
+          'Padre Nuestro': '"Padre nuestro, que estás en el cielo, santificado sea tu nombre; venga a nosotros tu reino; hágase tu voluntad en la tierra como en el cielo..."',
+          'Padrenuestro': '"Padre nuestro, que estás en el cielo, santificado sea tu nombre; venga a nosotros tu reino; hágase tu voluntad en la tierra como en el cielo..."',
+          'Ave María': '"Dios te salve, María, llena eres de gracia, el Señor es contigo... Santa María, Madre de Dios, ruega por nosotros pecadores..."',
+          'Avemaría': '"Dios te salve, María, llena eres de gracia, el Señor es contigo... Santa María, Madre de Dios, ruega por nosotros pecadores..."',
+          'Gloria': '"Gloria al Padre, y al Hijo, y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén."',
+          'Señal de la Cruz': '"En el nombre del Padre, y del Hijo, y del Espíritu Santo. Amén."'
+        },
+        en: {
+          'Magnificat': '"My soul proclaims the greatness of the Lord, my spirit rejoices in God my Savior..." (Lk 1:46-55).',
+          'Our Father': '"Our Father, who art in heaven, hallowed be Thy name; Thy kingdom come; Thy will be done on earth as it is in heaven..."',
+          'Hail Mary': '"Hail Mary, full of grace, the Lord is with thee... Holy Mary, Mother of God, pray for us sinners..."',
+          'Glory Be': '"Glory be to the Father, and to the Son, and to the Holy Spirit..."',
+          'Sign of the Cross': '"In the name of the Father, and of the Son, and of the Holy Spirit. Amen."'
+        }
+      };
+
       function appendReferencedReadings(text, lang) {
         if (!text) return text;
         const readingMap = scriptureReadings[lang] || {};
@@ -1225,6 +1244,25 @@
           return '[' + ref + '] ' + readingMap[ref];
         });
         const title = lang === 'es' ? 'Texto para leer hoy:' : 'Reading text for today:';
+        return text + '\n\n' + title + '\n' + lines.join('\n\n');
+      }
+
+      function appendReferencedPrayers(text, lang) {
+        if (!text) return text;
+        const prayerMap = prayerReadings[lang] || {};
+        const refs = Object.keys(prayerMap).filter(function (ref) {
+          return text.indexOf(ref) >= 0;
+        });
+        if (!refs.length) return text;
+        const seen = new Set();
+        const lines = refs.filter(function (ref) {
+          if (seen.has(ref)) return false;
+          seen.add(ref);
+          return true;
+        }).map(function (ref) {
+          return '[' + ref + '] ' + prayerMap[ref];
+        });
+        const title = lang === 'es' ? 'Oración para rezar hoy:' : 'Prayer text for today:';
         return text + '\n\n' + title + '\n' + lines.join('\n\n');
       }
 
@@ -1345,7 +1383,8 @@
         list.innerHTML = '';
         for (let d = 1; d <= totalDays; d++) {
           const text = plan.dayText(d);
-          const expandedText = appendReferencedReadings(text, lang);
+          const withReadings = appendReferencedReadings(text, lang);
+          const expandedText = appendReferencedPrayers(withReadings, lang);
           const isOpen = d === openDay;
           const row = document.createElement('div');
           row.className = 'day-item' + (isOpen ? ' open' : '');
