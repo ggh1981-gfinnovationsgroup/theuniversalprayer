@@ -3,11 +3,34 @@
    Cache-first strategy: works fully offline after first load
    ===================================================== */
 
-const CACHE = 'tup-v198';
+const CACHE = 'tup-v199';
 
 // All files to pre-cache on install
 const PRECACHE_URLS = [
   '/',
+  '/adoracion/',
+  '/adoracion/index.html',
+  '/difuntos/',
+  '/difuntos/index.html',
+  '/historias/',
+  '/historias/index.html',
+  '/matrimonio/',
+  '/matrimonio/index.html',
+  '/medalla-milagrosa/',
+  '/medalla-milagrosa/index.html',
+  '/medalla-san-benito/',
+  '/medalla-san-benito/index.html',
+  '/oraciones/',
+  '/oraciones/index.html',
+  '/rosario/',
+  '/rosario/index.html',
+  '/salmos-diarios/',
+  '/salmos-diarios/index.html',
+  '/vuelvo-al-padre/',
+  '/vuelvo-al-padre/index.html',
+  '/data/saneduardo.json',
+  '/data/sanfranciscodesales.json',
+  '/data/sangustavo.json',
   '/index.html',
   '/intercesor/',
   '/intercesor/index.html',
