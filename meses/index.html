@@ -1182,6 +1182,52 @@
 
       function el(id) { return document.getElementById(id); }
 
+      const scriptureReadings = {
+        es: {
+          'Mateo 26:36-46': '"Padre mío, si es posible, que pase de mí este cáliz; pero no sea como yo quiero, sino como quieres tú." (Mt 26:39). Jesús ora en agonía y se abandona a la voluntad del Padre.',
+          'Mt 17:1-9': '"Este es mi Hijo amado, en quien me complazco: escuchadlo." (Mt 17:5). En la Transfiguración, el Padre revela la gloria de Cristo y llama a obedecer su palabra.',
+          'Flp 2:9-11': '"Dios lo exaltó sobre todo y le otorgó el Nombre sobre todo nombre, para que al nombre de Jesús toda rodilla se doble..." (Flp 2:9-10).',
+          'Filipenses 2:9-11': '"Dios lo exaltó sobre todo y le otorgó el Nombre sobre todo nombre, para que al nombre de Jesús toda rodilla se doble..." (Flp 2:9-10).',
+          'Jn 1:1-14': '"Y el Verbo se hizo carne y habitó entre nosotros." (Jn 1:14). Cristo, Palabra eterna, entra en nuestra historia para salvarnos.',
+          '1 Co 15:42-44': '"Se siembra un cuerpo corruptible, resucita incorruptible... se siembra cuerpo natural, resucita cuerpo espiritual." (1 Co 15:42-44).',
+          'Ap 12:1': '"Apareció una gran señal en el cielo: una mujer vestida del sol, con la luna bajo sus pies..." (Ap 12:1).',
+          'Is 53': '"Él soportó nuestros sufrimientos y cargó con nuestros dolores... por sus heridas hemos sido sanados." (Is 53:4-5).',
+          'Sal 22': '"Dios mío, Dios mío, ¿por qué me has abandonado?" (Sal 22:2). El salmo pasa del clamor al acto de confianza en Dios.',
+          'Ap 21': '"Él enjugará toda lágrima de sus ojos, y no habrá muerte, ni duelo, ni llanto, ni dolor." (Ap 21:4).',
+          'Lc 2:21': '"Al cumplirse los ocho días... le pusieron por nombre Jesús, como lo había llamado el ángel." (Lc 2:21).',
+          '1 Pedro 1:23-25': '"La palabra del Señor permanece para siempre." (1 Pe 1:25). Nuestra esperanza se apoya en una Palabra que no pasa.'
+        },
+        en: {
+          'Matthew 26:36-46': '"My Father, if it is possible, let this cup pass from me; yet not as I will, but as you will." (Mt 26:39). Jesus prays in agony and surrenders to the Father.',
+          'Mt 17:1-9': '"This is my beloved Son, with whom I am well pleased; listen to him." (Mt 17:5). At the Transfiguration, the Father reveals Christ\'s glory.',
+          'Php 2:9-11': '"God highly exalted him and bestowed on him the name above every name..." (Php 2:9-10).',
+          'Jn 1:1-14': '"And the Word became flesh and dwelt among us." (Jn 1:14). Christ, the eternal Word, enters history to save us.',
+          '1 Cor 15:42-44': '"What is sown perishable is raised imperishable... it is sown a natural body, raised a spiritual body." (1 Cor 15:42-44).',
+          'Rv 21': '"He will wipe away every tear from their eyes, and death shall be no more..." (Rv 21:4).',
+          'Lk 2:21': '"When eight days were completed... he was named Jesus, the name given by the angel." (Lk 2:21).',
+          '1 Peter 1:23-25': '"The word of the Lord remains forever." (1 Pt 1:25). Our hope rests on a Word that does not pass away.'
+        }
+      };
+
+      function appendReferencedReadings(text, lang) {
+        if (!text) return text;
+        const readingMap = scriptureReadings[lang] || {};
+        const refs = Object.keys(readingMap).filter(function (ref) {
+          return text.indexOf(ref) >= 0;
+        });
+        if (!refs.length) return text;
+        const seen = new Set();
+        const lines = refs.filter(function (ref) {
+          if (seen.has(ref)) return false;
+          seen.add(ref);
+          return true;
+        }).map(function (ref) {
+          return '[' + ref + '] ' + readingMap[ref];
+        });
+        const title = lang === 'es' ? 'Texto para leer hoy:' : 'Reading text for today:';
+        return text + '\n\n' + title + '\n' + lines.join('\n\n');
+      }
+
       function summarizeDayText(text, lang) {
         if (!text) return lang === 'es' ? 'Accion del dia' : 'Daily action';
         const actionMarker = lang === 'es' ? 'Accion de hoy: ' : 'Today\'s action: ';
@@ -1299,6 +1345,7 @@
         list.innerHTML = '';
         for (let d = 1; d <= totalDays; d++) {
           const text = plan.dayText(d);
+          const expandedText = appendReferencedReadings(text, lang);
           const isOpen = d === openDay;
           const row = document.createElement('div');
           row.className = 'day-item' + (isOpen ? ' open' : '');
@@ -1334,7 +1381,7 @@
 
           const dText = document.createElement('div');
           dText.className = 'day-text';
-          dText.textContent = text;
+          dText.textContent = expandedText;
 
           panel.appendChild(dText);
 
