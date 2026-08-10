@@ -1533,6 +1533,10 @@ Referencias magisteriales: Lumen Gentium 60-62, Catecismo 969-970 y Rosarium Vir
       updateWakeButton();
     }
 
+    function updateWakeButton() {
+      // Wake lock button not present in this layout — no-op
+    }
+
     function rosaryTtsSpeak(text = '', mode = 'single') {
       if (!('speechSynthesis' in window)) return;
       window.speechSynthesis.cancel();
