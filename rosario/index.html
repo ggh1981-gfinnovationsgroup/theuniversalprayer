@@ -1299,7 +1299,10 @@ Referencias magisteriales: Lumen Gentium 60-62, Catecismo 969-970 y Rosarium Vir
     const dayToMystery = ['glorious', 'joyful', 'sorrowful', 'glorious', 'luminous', 'sorrowful', 'joyful'];
 
     let lang = localStorage.getItem('tup_lang') || localStorage.getItem('tup_rosary_lang') || 'es';
-    let mystery = localStorage.getItem('tup_rosary_mystery') || dayToMystery[new Date().getDay()];
+    const _todayKey = new Date().toISOString().slice(0, 10);
+    const _savedMystery = localStorage.getItem('tup_rosary_mystery');
+    const _savedDate = localStorage.getItem('tup_rosary_mystery_date');
+    let mystery = (_savedMystery && _savedDate === _todayKey) ? _savedMystery : dayToMystery[new Date().getDay()];
     let idx = 0;
     let rosaryTtsState = 'stopped';
     let rosaryTtsMode = 'single';
@@ -1900,6 +1903,7 @@ Referencias magisteriales: Lumen Gentium 60-62, Catecismo 969-970 y Rosarium Vir
 
       localStorage.setItem('tup_lang', lang);
       localStorage.setItem('tup_rosary_mystery', mystery);
+      localStorage.setItem('tup_rosary_mystery_date', new Date().toISOString().slice(0, 10));
     }
 
     els.langToggle.addEventListener('click', () => {
