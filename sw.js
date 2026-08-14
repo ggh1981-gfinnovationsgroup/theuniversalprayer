@@ -3,7 +3,7 @@
    Cache-first strategy: works fully offline after first load
    ===================================================== */
 
-const CACHE = 'tup-v214';
+const CACHE = 'tup-v215';
 
 // All files to pre-cache on install
 const PRECACHE_URLS = [
@@ -20,6 +20,8 @@ const PRECACHE_URLS = [
   '/medalla-milagrosa/index.html',
   '/medalla-san-benito/',
   '/medalla-san-benito/index.html',
+  '/cuaresma-san-miguel/',
+  '/cuaresma-san-miguel/index.html',
   '/oraciones/',
   '/oraciones/index.html',
   '/rosario/',
