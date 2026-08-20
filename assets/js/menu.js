@@ -37,7 +37,7 @@
     { id: 'cuaresmasanmiguel', href: '/cuaresma-san-miguel/', labels: { es: 'Cuaresma de San Miguel', en: "St. Michael's Lent" }, icon: '⚔️' },
     { id: 'difuntos', href: '/difuntos/', labels: { es: 'Difuntos', en: 'Departed' }, icon: '🕯️' },
     { id: 'diospadre', href: '/diospadre/', labels: { es: 'Dios Padre', en: 'God the Father' }, icon: '☁️' },
-    { id: 'diablo', href: '/diablo/', labels: { es: 'Permanecer en la gracia de Dios', en: "Remaining in God's grace" }, icon: '🛐' },
+    { id: 'diablo', href: '/renacer-en-cristo/', labels: { es: 'Renacer en Cristo', en: 'Reborn in Christ' }, icon: '🛐' },
     { id: 'enemigos', href: '/enemigos/', labels: { es: 'Bendecir enemigos', en: 'Bless enemies' }, icon: '🤍' },
     { id: 'espiritu', href: '/espiritu/', labels: { es: 'Espíritu Santo', en: 'Holy Spirit' }, icon: '🕊️' },
     { id: 'emergencias', href: '/emergencias/', labels: { es: 'Oraciones de Emergencia', en: 'Emergency Prayers' }, icon: '🆘' },

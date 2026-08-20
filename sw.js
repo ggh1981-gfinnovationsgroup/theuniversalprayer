@@ -3,7 +3,7 @@
    Cache-first strategy: works fully offline after first load
    ===================================================== */
 
-const CACHE = 'tup-v216';
+const CACHE = 'tup-v217';
 
 // All files to pre-cache on install
 const PRECACHE_URLS = [
@@ -77,6 +77,8 @@ const PRECACHE_URLS = [
   '/diospadre/index.html',
   '/diablo/',
   '/diablo/index.html',
+  '/renacer-en-cristo/',
+  '/renacer-en-cristo/index.html',
   '/assets/images/diospadre.svg',
   '/data/diospadre.json',
   '/data/diospadre-deep.json',
