@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Renacer en Cristo: Hoy Puedes Empezar de Nuevo | The Universal Prayer</title>
-  <meta name="description" content="Una guia catolica para abrazar una vida completamente nueva en Cristo: nueva identidad, nueva mente y nuevo comienzo en la gracia." />
+  <title>Nacer de nuevo en Cristo | The Universal Prayer</title>
+  <meta name="description" content="Una guia catolica y bautismal para vivir una vida completamente nueva en Cristo: nueva criatura, nueva identidad y nueva gracia." />
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Renacer en Cristo: Hoy Puedes Empezar de Nuevo" />
-  <meta property="og:description" content="Cristo puede hacerte una persona nueva: un renacimiento real en la gracia de Dios." />
+  <meta property="og:title" content="Nacer de nuevo en Cristo" />
+  <meta property="og:description" content="Cristo puede hacerte una criatura nueva: un renacimiento real en la gracia del Bautismo." />
   <meta property="og:url" content="https://www.theuniversalprayer.com/renacer-en-cristo/" />
   <meta property="og:image" content="https://www.theuniversalprayer.com/assets/images/social-home.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Renacer en Cristo: Hoy Puedes Empezar de Nuevo" />
-  <meta name="twitter:description" content="Un camino real para resetear tu vida interior con gracia, verdad y perseverancia." />
+  <meta name="twitter:title" content="Nacer de nuevo en Cristo" />
+  <meta name="twitter:description" content="Una guia bautismal para una vida completamente nueva en Cristo, con gracia, verdad y perseverancia." />
   <meta name="twitter:image" content="https://www.theuniversalprayer.com/assets/images/social-home.png" />
   <link rel="canonical" href="https://www.theuniversalprayer.com/renacer-en-cristo/" />
   <meta name="theme-color" content="#c9a84c" />
@@ -37,12 +37,17 @@
       padding: 1.2rem 1rem 4rem;
     }
 
-    .ren-hero {
+    .ren-hero,
+    .ren-section {
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      background: linear-gradient(180deg, rgba(201,168,76,0.1), rgba(21,26,44,0.92));
-      padding: 1.25rem;
+      background: var(--bg-card);
+      padding: 1rem;
       margin-bottom: 1rem;
+    }
+
+    .ren-hero {
+      background: linear-gradient(180deg, rgba(201,168,76,0.1), rgba(21,26,44,0.92));
       position: relative;
       overflow: hidden;
     }
@@ -53,6 +58,7 @@
       gap: 0.6rem;
       align-items: center;
       margin-bottom: 0.6rem;
+      flex-wrap: wrap;
     }
 
     .ren-home {
@@ -77,39 +83,24 @@
       margin: 0 0 0.45rem;
       color: var(--gold-light);
       font-family: var(--font-serif);
-      font-size: clamp(1.7rem, 3.8vw, 2.9rem);
-      line-height: 1.16;
-      max-width: 20ch;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      line-height: 1.12;
+      max-width: 18ch;
     }
 
-    .ren-sub {
-      margin: 0;
+    .ren-sub,
+    .ren-section p,
+    .ren-section li {
       color: var(--white-dim);
       line-height: 1.72;
-      font-size: 0.95rem;
-      max-width: 76ch;
-    }
-
-    .ren-section {
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      background: var(--bg-card);
-      padding: 1rem;
-      margin-bottom: 1rem;
+      font-size: 0.94rem;
     }
 
     .ren-section-title {
       margin: 0 0 0.5rem;
       color: var(--gold-light);
       font-family: var(--font-serif);
-      font-size: 1.2rem;
-    }
-
-    .ren-section p,
-    .ren-section li {
-      color: var(--white-dim);
-      line-height: 1.72;
-      font-size: 0.92rem;
+      font-size: 1.18rem;
     }
 
     .ren-grid {
@@ -174,6 +165,16 @@
       font-size: 0.96rem;
     }
 
+    .ren-note {
+      border: 1px solid rgba(86, 161, 110, 0.32);
+      border-radius: 12px;
+      background: rgba(29, 100, 62, 0.16);
+      padding: 0.85rem 0.95rem;
+      color: rgba(255,255,255,0.9);
+      line-height: 1.65;
+      font-size: 0.87rem;
+    }
+
     .ren-actions {
       display: flex;
       flex-wrap: wrap;
@@ -190,6 +191,8 @@
       font-size: 0.84rem;
       cursor: pointer;
       transition: all var(--transition);
+      text-decoration: none;
+      display: inline-block;
     }
 
     .ren-btn:hover,
@@ -197,16 +200,6 @@
       border-color: var(--gold);
       background: rgba(201,168,76,0.12);
       outline: none;
-    }
-
-    .ren-note {
-      border: 1px solid rgba(86, 161, 110, 0.32);
-      border-radius: 12px;
-      background: rgba(29, 100, 62, 0.16);
-      padding: 0.85rem 0.95rem;
-      color: rgba(255,255,255,0.9);
-      line-height: 1.65;
-      font-size: 0.87rem;
     }
 
     .ren-footer {
@@ -222,9 +215,7 @@
     }
 
     @media (max-width: 760px) {
-      .ren-grid {
-        grid-template-columns: 1fr;
-      }
+      .ren-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -242,20 +233,20 @@
       <div class="ren-top-links">
         <a href="/" class="ren-home" data-lang="es">← Inicio</a>
         <a href="/" class="ren-home" data-lang="en" style="display:none">← Home</a>
-        <span class="ren-pill" data-lang="es">Sanacion y nuevo comienzo</span>
-        <span class="ren-pill" data-lang="en" style="display:none">Healing and new beginning</span>
+        <span class="ren-pill" data-lang="es">Bautismo y vida nueva</span>
+        <span class="ren-pill" data-lang="en" style="display:none">Baptism and new life</span>
       </div>
 
-      <h1 class="ren-title" data-lang="es">Renacer en Cristo: Hoy Puedes Empezar de Nuevo</h1>
-      <h1 class="ren-title" data-lang="en" style="display:none">Reborn in Christ: You Can Start Again Today</h1>
+      <h1 class="ren-title" data-lang="es">Nacer de nuevo en Cristo</h1>
+      <h1 class="ren-title" data-lang="en" style="display:none">Born Again in Christ</h1>
 
-      <p class="ren-sub" data-lang="es">Jesus no te llama por tus heridas: te llama por tu nombre. En Cristo puedes vivir un renacimiento real, con corazon nuevo, mente renovada y una historia nueva en la gracia.</p>
-      <p class="ren-sub" data-lang="en" style="display:none">Jesus does not call you by your wounds: He calls you by your name. In Christ you can live a real rebirth, with a new heart, a renewed mind, and a new story in grace.</p>
+      <p class="ren-sub" data-lang="es">Jesus no te llama por tu pasado: te llama a ser nueva criatura. En el Bautismo comienza una vida realmente nueva, y la gracia de Cristo sigue renovando lo que parecia viejo.</p>
+      <p class="ren-sub" data-lang="en" style="display:none">Jesus does not call you by your past: He calls you to be a new creation. In Baptism a truly new life begins, and the grace of Christ keeps renewing what seemed old.</p>
     </section>
 
     <section class="ren-section">
-      <h2 class="ren-section-title" data-lang="es">Lo que Jesus prometio sobre renacer</h2>
-      <h2 class="ren-section-title" data-lang="en" style="display:none">What Jesus promised about being reborn</h2>
+      <h2 class="ren-section-title" data-lang="es">Lo que Jesus prometio sobre nacer de nuevo</h2>
+      <h2 class="ren-section-title" data-lang="en" style="display:none">What Jesus promised about being born again</h2>
 
       <blockquote class="ren-quote" data-lang="es">"En verdad, en verdad te digo: el que no nazca de nuevo no puede ver el Reino de Dios."
 <cite>— Juan 3, 3</cite></blockquote>
@@ -267,86 +258,85 @@
       <blockquote class="ren-quote" data-lang="en" style="display:none">"If anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come."
 <cite>— 2 Corinthians 5:17</cite></blockquote>
 
-      <p data-lang="es">Renacer es entrar en una vida verdaderamente nueva: Dios no solo mejora lo viejo, hace algo nuevo en ti. La Iglesia ensena que en Cristo recibimos una vida de gracia que renueva identidad, deseos y camino.</p>
-      <p data-lang="en" style="display:none">Rebirth is entry into truly new life: God does not merely polish the old, He makes something new in you. The Church teaches that in Christ we receive a life of grace that renews identity, desire, and direction.</p>
+      <p data-lang="es">Renacer no es maquillaje espiritual: es gracia bautismal. Dios no solo mejora lo viejo; en Cristo hace una criatura nueva, con identidad, libertad y destino nuevos.</p>
+      <p data-lang="en" style="display:none">Rebirth is not spiritual makeup: it is baptismal grace. God does not merely improve the old; in Christ He makes a new creature, with a new identity, freedom, and destiny.</p>
     </section>
 
     <section class="ren-section">
-      <h2 class="ren-section-title" data-lang="es">Plan de renacimiento en 4 movimientos</h2>
-      <h2 class="ren-section-title" data-lang="en" style="display:none">A 4-part rebirth plan</h2>
+      <h2 class="ren-section-title" data-lang="es">Las 4 marcas de una vida nacida de nuevo</h2>
+      <h2 class="ren-section-title" data-lang="en" style="display:none">The 4 marks of a born-again life</h2>
 
       <div class="ren-grid">
         <article class="ren-card">
-          <h3 data-lang="es">1. Identidad nueva, no etiqueta vieja</h3>
-          <h3 data-lang="en" style="display:none">1. New identity, not old labels</h3>
+          <h3 data-lang="es">1. Identidad bautismal</h3>
+          <h3 data-lang="en" style="display:none">1. Baptismal identity</h3>
           <ul class="ren-list" data-lang="es">
-            <li>Empieza cada manana diciendo: "Soy hijo amado de Dios".</li>
+            <li>Empieza cada manana diciendo: "He sido revestido de Cristo".</li>
             <li>Recuerda tu Bautismo: en Cristo eres nueva creacion.</li>
-            <li>No te definas por el pasado; definete por tu vocacion.</li>
+            <li>No te definas por el pasado; definete por tu filiacion en Dios.</li>
           </ul>
           <ul class="ren-list" data-lang="en" style="display:none">
-            <li>Start each morning saying: "I am a beloved child of God."</li>
+            <li>Start each morning saying: "I have been clothed with Christ."</li>
             <li>Remember your Baptism: in Christ you are a new creation.</li>
-            <li>Do not define yourself by the past; define yourself by your calling.</li>
+            <li>Do not define yourself by the past; define yourself by your divine sonship.</li>
           </ul>
         </article>
 
         <article class="ren-card">
-          <h3 data-lang="es">2. Regla de vida de 30 dias</h3>
-          <h3 data-lang="en" style="display:none">2. A 30-day rule of life</h3>
+          <h3 data-lang="es">2. Vida sacramental</h3>
+          <h3 data-lang="en" style="display:none">2. Sacramental life</h3>
           <ul class="ren-list" data-lang="es">
-            <li>Evangelio y oracion 15 minutos al dia, misma hora.</li>
-            <li>Una pequena renuncia diaria para entrenar libertad interior.</li>
-            <li>Eucaristia semanal y un examen breve cada noche.</li>
+            <li>Evangelio y oracion diaria para escuchar la voz del Padre.</li>
+            <li>Confesion frecuente y Eucaristia como alimento de vida nueva.</li>
+            <li>Un examen breve cada noche para vivir en la luz.</li>
           </ul>
           <ul class="ren-list" data-lang="en" style="display:none">
-            <li>Gospel reading and prayer for 15 minutes daily, same hour.</li>
-            <li>One small daily sacrifice to train interior freedom.</li>
-            <li>Weekly Eucharist and a brief nightly examen.</li>
+            <li>Daily Gospel and prayer to hear the voice of the Father.</li>
+            <li>Frequent confession and Eucharist as food for new life.</li>
+            <li>A brief nightly examen to live in the light.</li>
           </ul>
         </article>
 
         <article class="ren-card">
-          <h3 data-lang="es">3. Renovar mente y afectos</h3>
-          <h3 data-lang="en" style="display:none">3. Renew mind and affections</h3>
+          <h3 data-lang="es">3. Mente renovada</h3>
+          <h3 data-lang="en" style="display:none">3. Renewed mind</h3>
           <ul class="ren-list" data-lang="es">
             <li>Reduce ruido: menos contenido toxico, mas silencio y Palabra.</li>
-            <li>Cuida cuerpo y descanso: la gracia tambien sana habitos.</li>
-            <li>Practica gratitud concreta para salir de culpa esteril.</li>
+            <li>Cuidate con sobriedad: la gracia tambien ordena cuerpo y habitos.</li>
+            <li>Practica gratitud concreta para vivir como hijo libre.</li>
           </ul>
           <ul class="ren-list" data-lang="en" style="display:none">
             <li>Reduce noise: less toxic content, more silence and Scripture.</li>
-            <li>Care for body and rest: grace also heals habits.</li>
-            <li>Practice concrete gratitude to leave sterile guilt behind.</li>
+            <li>Live with sobriety: grace also orders body and habits.</li>
+            <li>Practice concrete gratitude to live as a free child of God.</li>
           </ul>
         </article>
 
         <article class="ren-card">
-          <h3 data-lang="es">4. Renacer para amar y servir</h3>
-          <h3 data-lang="en" style="display:none">4. Reborn to love and serve</h3>
-          <p data-lang="es">La meta es amar mejor. Cuando sirves, perdonas y te entregas, Cristo rehace tu historia desde dentro y te da una vida fecunda, libre y luminosa.</p>
-          <p data-lang="en" style="display:none">The goal is to love better. When you serve, forgive, and give yourself, Christ rewrites your story from within and gives you a fruitful, free, and radiant life.</p>
+          <h3 data-lang="es">4. Fruto visible del Espiritu</h3>
+          <h3 data-lang="en" style="display:none">4. Visible fruit of the Spirit</h3>
+          <p data-lang="es">La meta es dar fruto: fe, esperanza, caridad, pureza, mansedumbre y alegria. Cuando sirves y te entregas, Cristo muestra en ti la vida nueva que ya comenzo.</p>
+          <p data-lang="en" style="display:none">The goal is to bear fruit: faith, hope, charity, purity, meekness, and joy. When you serve and give yourself, Christ shows in you the new life that has already begun.</p>
         </article>
       </div>
     </section>
 
     <section class="ren-section">
-      <h2 class="ren-section-title" data-lang="es">Oracion: Jesus, hazme nuevo por dentro</h2>
-      <h2 class="ren-section-title" data-lang="en" style="display:none">Prayer: Jesus, make me new within</h2>
+      <h2 class="ren-section-title" data-lang="es">Oracion: Hazme una nueva criatura</h2>
+      <h2 class="ren-section-title" data-lang="en" style="display:none">Prayer: Make me a new creature</h2>
 
       <div class="ren-prayer" id="pray-es" data-lang="es">Senor Jesus,
 hoy vengo sin mascaras.
-    Tu me conoces por completo,
-    y sabes que te necesito.
+Tu me conoces por completo,
+y sabes que te necesito.
 
-No quiero seguir girando en el mismo dolor.
-Dame un corazon nuevo,
+Te doy gracias por el Bautismo,
+por el don de la fe,
+y por la gracia que me hace nueva criatura.
+
+Haz en mi un corazon nuevo,
 una mente nueva,
-un deseo nuevo de santidad.
-
-Lava mi pasado con tu misericordia,
-rompe en mi toda cadena,
-y ensename a caminar en la verdad.
+y una voluntad nueva para amar lo que es santo.
 
 Por tu Cruz y tu Resurreccion,
 renueva mi vida desde la raiz.
@@ -356,17 +346,16 @@ Amen.</div>
 
       <div class="ren-prayer" id="pray-en" data-lang="en" style="display:none">Lord Jesus,
 today I come without masks.
-    You know me completely,
-    and You know how much I need You.
+You know me completely,
+and You know how much I need You.
 
-I do not want to keep spinning in the same pain.
-Give me a new heart,
-a renewed mind,
-and a new desire for holiness.
+I thank You for Baptism,
+for the gift of faith,
+and for the grace that makes me a new creature.
 
-Wash my past in Your mercy,
-break every chain in me,
-and teach me to walk in truth.
+Make in me a new heart,
+a new mind,
+and a new will to love what is holy.
 
 By Your Cross and Resurrection,
 renew my life from the roots.
@@ -383,8 +372,8 @@ Amen.</div>
     <section class="ren-section">
       <h2 class="ren-section-title" data-lang="es">Nota de esperanza</h2>
       <h2 class="ren-section-title" data-lang="en" style="display:none">A note of hope</h2>
-      <div class="ren-note" data-lang="es">No eres "esa pieza danada". Eres un hijo amado en proceso de transformacion. En Cristo, tu historia es realmente nueva.</div>
-      <div class="ren-note" data-lang="en" style="display:none">You are not "that broken piece." You are a beloved child in transformation. In Christ, your story is truly new.</div>
+      <div class="ren-note" data-lang="es">No eres lo viejo arreglado: eres una nueva criatura en Cristo. La gracia no remienda tu identidad; la rehace desde el Bautismo.</div>
+      <div class="ren-note" data-lang="en" style="display:none">You are not the old self repaired: you are a new creature in Christ. Grace does not patch your identity; it remakes it from Baptism onward.</div>
     </section>
 
     <div class="ren-footer">
