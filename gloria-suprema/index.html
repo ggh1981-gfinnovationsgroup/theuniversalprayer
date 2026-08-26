@@ -197,61 +197,6 @@ font-size: 0.93rem;
 margin: 0;
 }
 
-.intentions-pad {
-border: 1px solid rgba(201,168,76,0.2);
-border-radius: 14px;
-background: rgba(255,255,255,0.03);
-padding: 1.15rem;
-margin: 0 0 2rem;
-text-align: left;
-}
-.intentions-pad h3 {
-font-family: var(--font-serif);
-color: var(--gold-light);
-font-size: 1.03rem;
-margin: 0 0 0.6rem;
-}
-.intentions-pad p {
-color: rgba(255,255,255,0.78);
-line-height: 1.75;
-font-size: 0.9rem;
-margin: 0 0 0.75rem;
-}
-.intentions-textarea {
-width: 100%;
-min-height: 120px;
-border-radius: 10px;
-border: 1px solid rgba(201,168,76,0.35);
-background: rgba(10,13,20,0.55);
-color: rgba(255,255,255,0.92);
-padding: 0.8rem 0.9rem;
-font-family: var(--font-sans);
-font-size: 0.92rem;
-line-height: 1.6;
-resize: vertical;
-}
-.intentions-actions {
-display: flex;
-gap: 0.6rem;
-flex-wrap: wrap;
-margin-top: 0.75rem;
-}
-.intentions-btn {
-border: 1px solid rgba(232,201,122,0.45);
-border-radius: 999px;
-background: rgba(232,201,122,0.08);
-color: var(--gold-light);
-padding: 0.5rem 1rem;
-font-size: 0.84rem;
-cursor: pointer;
-}
-.intentions-status {
-display: inline-block;
-margin-top: 0.55rem;
-font-size: 0.82rem;
-color: rgba(232,201,122,0.9);
-}
-
 /* HERO */
 .gloria-hero {
 text-align: center;
@@ -505,11 +450,11 @@ but because You deserve everything.</p>
   <h2 class="petitions-title" data-lang="en" style="display:none">May our plea, too,<br />rise transformed</h2>
   <div class="petitions-personal" data-lang="es">
     <p class="petitions-personal-title">Ahora presenta tus intenciones personales</p>
-    <p class="petitions-personal-text">Después de esta adoración, detente en silencio y nombra ante Dios tus necesidades concretas. Pedir así, con humildad y abandono, también es adorar.</p>
+    <p class="petitions-personal-text">Después de esta adoración, detente en silencio y nombra ante Dios tus necesidades concretas en tu mente, o dítelas en voz suave. Pedir así, con humildad y abandono, también es adorar.</p>
   </div>
   <div class="petitions-personal" data-lang="en" style="display:none">
     <p class="petitions-personal-title">Now present your personal intentions</p>
-    <p class="petitions-personal-text">After this adoration, pause in silence and name your concrete needs before God. Asking this way, with humility and surrender, is also adoration.</p>
+    <p class="petitions-personal-text">After this adoration, pause in silence and name your concrete needs before God in your mind, or speak them in a soft voice. Asking this way, with humility and surrender, is also adoration.</p>
   </div>
   <div class="petitions-note" data-lang="es">
     <strong>«Pedid, y se os dará» (Mt 7, 7). «Todo lo que pidiereis al Padre en mi nombre, os lo concederé» (Jn 14, 13-14).</strong> Esta promesa es real. Pero pedir «en el nombre de Jesús» no es una fórmula mágica ni una clave de acceso: significa pedir conforme a quién es Él y a lo que Él querría. Por eso San Juan mismo lo aclara: «si pedimos alguna cosa conforme a su voluntad, él nos oye» (1 Jn 5, 14). Jesús en Getsemaní pidió con fe perfecta y en el nombre correcto — y la respuesta no fue lo que pedía en sus propios términos, sino algo más grande. Dios siempre responde a quien pide con fe: a veces «sí», a veces «espera», y a veces «te doy algo mejor de lo que pediste» — porque Él ve lo que nosotros no vemos.
@@ -520,24 +465,6 @@ but because You deserve everything.</p>
     <strong>"Ask, and it will be given to you" (Mt 7:7). "Whatever you ask in my name, this I will do" (Jn 14:13-14).</strong> This promise is real. But asking "in the name of Jesus" is not a magic formula or an access key: it means asking in keeping with who He is and what He would want. That is why Saint John himself clarifies it: "if we ask anything according to his will, he hears us" (1 Jn 5:14). Jesus in Gethsemane asked with perfect faith and in the right name — and the answer was not what he asked for on his own terms, but something greater. God always answers the one who asks in faith: sometimes "yes," sometimes "wait," and sometimes "I give you something better than you asked for" — because He sees what we cannot.
     <br /><br />
     And there is something more: asking this way — recognizing that without His will <strong>not even a leaf falls</strong> (Mt 10:29-31) — is itself already an act of adoration. These are not two separate things, first admiring and then asking apart from it: when you ask while recognizing that the control belongs to God and not to you, that very petition becomes praise. That is why this movement does not break the climax of admiration before it — it continues it. To ask with humble trust is also to bow before the One who sustains everything.
-  </div>
-  <div class="intentions-pad">
-    <h3 data-lang="es">Mis intenciones de hoy (solo en este dispositivo)</h3>
-    <h3 data-lang="en" style="display:none">My intentions today (saved only on this device)</h3>
-    <p data-lang="es">Escribe aquí tus intenciones. Se guardan localmente en tu navegador y no se envían a ningún servidor.</p>
-    <p data-lang="en" style="display:none">Write your intentions here. They are saved locally in your browser and are not sent to any server.</p>
-    <textarea id="intentionsText" class="intentions-textarea" data-lang="es" placeholder="Señor, hoy te presento..."></textarea>
-    <textarea id="intentionsTextEn" class="intentions-textarea" data-lang="en" style="display:none" placeholder="Lord, today I place before You..."></textarea>
-    <div class="intentions-actions" data-lang="es">
-      <button type="button" class="intentions-btn" onclick="saveIntentions()">💾 Guardar</button>
-      <button type="button" class="intentions-btn" onclick="clearIntentions()">🗑 Borrar</button>
-    </div>
-    <div class="intentions-actions" data-lang="en" style="display:none">
-      <button type="button" class="intentions-btn" onclick="saveIntentions()">💾 Save</button>
-      <button type="button" class="intentions-btn" onclick="clearIntentions()">🗑 Clear</button>
-    </div>
-    <span id="intentionsStatus" class="intentions-status" data-lang="es" style="display:none"></span>
-    <span id="intentionsStatusEn" class="intentions-status" data-lang="en" style="display:none"></span>
   </div>
   <div class="petition-block">
     <p class="petition-entity" data-lang="es">A la Santísima Trinidad</p>
@@ -617,55 +544,6 @@ function updateFlame() {
 window.addEventListener('scroll', updateFlame, { passive: true });
 window.addEventListener('resize', updateFlame);
 updateFlame();
-
-const INTENTIONS_KEY_ES = 'tup_gloria_intentions_es';
-const INTENTIONS_KEY_EN = 'tup_gloria_intentions_en';
-
-function activeIntentionsElements() {
-  const lang = localStorage.getItem('universalPrayerLang') || 'es';
-  return {
-    lang,
-    textarea: lang === 'en' ? document.getElementById('intentionsTextEn') : document.getElementById('intentionsText'),
-    status: lang === 'en' ? document.getElementById('intentionsStatusEn') : document.getElementById('intentionsStatus'),
-    otherStatus: lang === 'en' ? document.getElementById('intentionsStatus') : document.getElementById('intentionsStatusEn')
-  };
-}
-
-function loadIntentions() {
-  const es = localStorage.getItem(INTENTIONS_KEY_ES) || '';
-  const en = localStorage.getItem(INTENTIONS_KEY_EN) || '';
-  const esArea = document.getElementById('intentionsText');
-  const enArea = document.getElementById('intentionsTextEn');
-  if (esArea) esArea.value = es;
-  if (enArea) enArea.value = en;
-}
-
-function saveIntentions() {
-  const ref = activeIntentionsElements();
-  if (!ref.textarea) return;
-  if (ref.lang === 'en') localStorage.setItem(INTENTIONS_KEY_EN, ref.textarea.value || '');
-  else localStorage.setItem(INTENTIONS_KEY_ES, ref.textarea.value || '');
-  if (ref.otherStatus) ref.otherStatus.style.display = 'none';
-  if (ref.status) {
-    ref.status.textContent = ref.lang === 'en' ? 'Saved locally.' : 'Guardado en este dispositivo.';
-    ref.status.style.display = '';
-  }
-}
-
-function clearIntentions() {
-  const ref = activeIntentionsElements();
-  if (!ref.textarea) return;
-  ref.textarea.value = '';
-  if (ref.lang === 'en') localStorage.removeItem(INTENTIONS_KEY_EN);
-  else localStorage.removeItem(INTENTIONS_KEY_ES);
-  if (ref.otherStatus) ref.otherStatus.style.display = 'none';
-  if (ref.status) {
-    ref.status.textContent = ref.lang === 'en' ? 'Cleared.' : 'Borrado.';
-    ref.status.style.display = '';
-  }
-}
-
-loadIntentions();
 
   </script>
   <script src="../assets/js/menu.js"></script>
