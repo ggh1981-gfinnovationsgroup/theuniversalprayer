@@ -38,6 +38,7 @@
     { id: 'difuntos', href: '/difuntos/', labels: { es: 'Difuntos', en: 'Departed' }, icon: '🕯️' },
     { id: 'diospadre', href: '/diospadre/', labels: { es: 'Dios Padre', en: 'God the Father' }, icon: '☁️' },
     { id: 'diablo', href: '/renacer-en-cristo/', labels: { es: 'Renacer en Cristo', en: 'Reborn in Christ' }, icon: '🛐' },
+    { id: 'gloriasuprema', href: '/gloria-suprema/', labels: { es: 'Acto de Adoración Suprema', en: 'Act of Supreme Adoration' }, icon: '✨' },
     { id: 'dopamina', href: '/dopamina/', labels: { es: 'Dopamina y libertad', en: 'Dopamine and freedom' }, icon: '🧠' },
     { id: 'enemigos', href: '/enemigos/', labels: { es: 'Bendecir enemigos', en: 'Bless enemies' }, icon: '🤍' },
     { id: 'espiritu', href: '/espiritu/', labels: { es: 'Espíritu Santo', en: 'Holy Spirit' }, icon: '🕊️' },
