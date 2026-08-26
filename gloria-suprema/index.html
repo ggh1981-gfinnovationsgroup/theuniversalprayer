@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acto de Adoración Suprema | The Universal Prayer</title>
+  <meta name="description" content="El clímax devocional del sitio: un acto de adoración suprema a la Santísima Trinidad, a María y a la Comunión de los Santos." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Acto de Adoración Suprema | The Universal Prayer" />
+  <meta property="og:description" content="El clímax devocional del sitio: adoración, gratitud y admiración máxima a Dios, a María y a los santos." />
+  <meta property="og:url" content="https://www.theuniversalprayer.com/gloria-suprema/" />
+  <meta property="og:image" content="https://www.theuniversalprayer.com/assets/images/social-home.png" />
+  <link rel="canonical" href="https://www.theuniversalprayer.com/gloria-suprema/" />
+  <meta name="theme-color" content="#c9a84c" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" href="/assets/images/icon.svg" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23c9a84c'>✝</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    :root {
+      --climax-violet: #241a3d;
+      --climax-white-hot: #fff8e8;
+    }
+
+body.gloria-page {
+  min-height: 100dvh;
+  background: var(--bg);
+  overflow-x: hidden;
+}
+
+/* Ascending flame that climbs with scroll progress */
+#ascentTrack {
+  position: fixed;
+  right: 14px;
+  top: 90px;
+  bottom: 90px;
+  width: 3px;
+  background: linear-gradient(to bottom, rgba(201,168,76,0.06), rgba(201,168,76,0.22));
+  border-radius: 3px;
+  z-index: 60;
+}
+#ascentFlame {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--gold-light), var(--gold) 60%, transparent 75%);
+  box-shadow: 0 0 12px 4px rgba(232,201,122,0.55);
+  transition: bottom 0.15s linear;
+}
+@media (max-width: 720px) { #ascentTrack { display: none; } }
+
+/* Movement sections — gold intensity rises with each */
+.movement {
+  position: relative;
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 5.2rem 1.4rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.movement.is-visible { opacity: 1; transform: translateY(0); }
+
+.movement-eyebrow {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: 0.75;
+  margin-bottom: 1.1rem;
+}
+.movement-title {
+  font-family: var(--font-serif);
+  color: var(--white);
+  font-size: clamp(1.7rem, 5vw, 2.5rem);
+  line-height: 1.22;
+  margin-bottom: 1.6rem;
+}
+.movement-body {
+  font-family: 'Cormorant Garamond', var(--font-serif);
+  font-size: clamp(1.15rem, 2.6vw, 1.4rem);
+  line-height: 1.95;
+  color: rgba(240,236,228,0.92);
+  font-style: italic;
+}
+.movement-body strong {
+  font-style: normal;
+  color: var(--gold-light);
+  font-weight: 600;
+}
+.movement-divider {
+  width: 46px;
+  height: 1px;
+  background: var(--gold-dim);
+  margin: 2.4rem auto 0;
+  opacity: 0.6;
+}
+
+/* HERO */
+.gloria-hero {
+  text-align: center;
+  padding: 5.5rem 1.3rem 3.5rem;
+  background: radial-gradient(ellipse 900px 500px at 50% 0%, rgba(201,168,76,0.12) 0%, transparent 70%);
+}
+.gloria-badge {
+  display: inline-block;
+  font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--gold); border: 1px solid rgba(201,168,76,0.34); border-radius: 999px;
+  padding: 0.34em 0.95em; margin-bottom: 1.2rem;
+}
+.gloria-title {
+  font-family: var(--font-serif); color: #fff;
+  font-size: clamp(2.1rem, 7vw, 3.4rem); line-height: 1.12; margin: 0 0 0.9rem;
+}
+.gloria-subtitle {
+  color: rgba(255,255,255,0.62); max-width: 560px; margin: 0 auto; line-height: 1.8; font-size: 0.98rem;
+}
+
+/* Movement backgrounds intensify progressively */
+.m1 { background: radial-gradient(ellipse 700px 400px at 50% 30%, rgba(201,168,76,0.05), transparent 65%); }
+.m2 { background: radial-gradient(ellipse 750px 420px at 50% 30%, rgba(201,168,76,0.08), transparent 65%); }
+.m3 { background: radial-gradient(ellipse 800px 440px at 50% 30%, rgba(201,168,76,0.11), transparent 65%); }
+.m4 { background: radial-gradient(ellipse 850px 460px at 50% 30%, rgba(201,168,76,0.14), transparent 65%); }
+
+/* CLIMAX SECTION */
+.climax {
+  position: relative;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 1.3rem;
+  background:
+    radial-gradient(circle at 50% 45%, rgba(232,201,122,0.16), transparent 60%),
+    linear-gradient(180deg, var(--bg) 0%, var(--climax-violet) 50%, var(--bg) 100%);
+  overflow: hidden;
+}
+.climax-rays {
+  position: absolute;
+  inset: -20%;
+  background: repeating-conic-gradient(from 0deg, rgba(232,201,122,0.05) 0deg 4deg, transparent 4deg 16deg);
+  animation: spin 90s linear infinite;
+  opacity: 0.5;
+  pointer-events: none;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .climax-rays { animation: none; } }
+
+.climax-eyebrow {
+  position: relative; z-index: 2;
+  font-size: 0.78rem; letter-spacing: 0.28em; text-transform: uppercase;
+  color: var(--gold-light); margin-bottom: 1.4rem;
+}
+.climax-title {
+  position: relative; z-index: 2;
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 6.5vw, 3.1rem);
+  color: var(--climax-white-hot);
+  text-shadow: 0 0 34px rgba(232,201,122,0.55), 0 0 70px rgba(232,201,122,0.25);
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  max-width: 780px;
+}
+.climax-prayer {
+  position: relative; z-index: 2;
+  max-width: 700px;
+  font-family: var(--font-serif);
+  font-size: clamp(1.1rem, 2.4vw, 1.3rem);
+  line-height: 2.15;
+  color: rgba(255,252,240,0.94);
+  white-space: pre-line;
+  margin-bottom: 2.4rem;
+}
+.climax-prayer strong { color: var(--gold-light); }
+.climax-doxology {
+  position: relative; z-index: 2;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(1.05rem, 2.2vw, 1.2rem);
+  color: var(--gold-light);
+  letter-spacing: 0.01em;
+  margin-bottom: 2.6rem;
+}
+.climax-actions { position: relative; z-index: 2; display: flex; flex-wrap: wrap; gap: 0.7rem; justify-content: center; }
+.climax-btn {
+  border: 1px solid rgba(232,201,122,0.45); border-radius: 999px; background: rgba(232,201,122,0.08);
+  color: var(--gold-light); padding: 0.6rem 1.3rem; font-size: 0.86rem; cursor: pointer;
+  transition: all 0.2s;
+}
+.climax-btn:hover { background: rgba(232,201,122,0.18); }
+
+.gloria-footer {
+  text-align: center; padding: 3.5rem 1.3rem 5rem;
+}
+.gloria-footer a {
+  color: var(--gold); text-decoration: none; opacity: 0.85; font-size: 0.92rem;
+}
+
+  </style>
+</head>
+<body class="gloria-page">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link"><span class="cross">✝</span><span class="logo-text">The Universal Prayer</span></a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language"><span id="langLabel">EN</span></button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div id="ascentTrack" aria-hidden="true"><div id="ascentFlame"></div></div>
+  <section class="gloria-hero">
+    <a href="/" class="ador-back-link" data-lang="es">← Inicio</a>
+    <a href="/" class="ador-back-link" data-lang="en" style="display:none">← Home</a>
+
+<div class="gloria-badge" data-lang="es">✦ El clímax del sitio</div>
+<div class="gloria-badge" data-lang="en" style="display:none">✦ The site's climax</div>
+
+<h1 class="gloria-title" data-lang="es">Acto de<br />Adoración Suprema</h1>
+<h1 class="gloria-title" data-lang="en" style="display:none">Act of<br />Supreme Adoration</h1>
+
+<p class="gloria-subtitle" data-lang="es">No pidas nada todavía. Solo asciende: contempla, admira, agradece — hasta llegar a la gloria.</p>
+<p class="gloria-subtitle" data-lang="en" style="display:none">Ask for nothing yet. Simply ascend: behold, admire, give thanks — until you reach the glory.</p>
+
+  </section>
+  <main>
+
+<!-- MOVEMENT 1 — TRINITY -->
+<section class="movement m1" data-movement>
+  <div class="movement-eyebrow" data-lang="es">Primer movimiento · Invocación</div>
+  <div class="movement-eyebrow" data-lang="en" style="display:none">First movement · Invocation</div>
+  <h2 class="movement-title" data-lang="es">A la Santísima Trinidad</h2>
+  <h2 class="movement-title" data-lang="en" style="display:none">To the Most Holy Trinity</h2>
+  <p class="movement-body" data-lang="es">Padre sin principio, <strong>fuente de todo lo que existe</strong>; Hijo engendrado antes de todos los siglos, <strong>Verbo hecho carne por mí</strong>; Espíritu que procedes de ambos, <strong>fuego que nunca se apaga</strong> — ante Vosotros, un solo Dios en tres Personas, no tengo palabras suficientes. Solo asombro.</p>
+  <p class="movement-body" data-lang="en" style="display:none">Father without beginning, <strong>source of all that exists</strong>; Son begotten before all ages, <strong>the Word made flesh for me</strong>; Spirit who proceeds from both, <strong>fire that never goes out</strong> — before You, one God in three Persons, I have no words enough. Only wonder.</p>
+  <div class="movement-divider"></div>
+</section>
+
+<!-- MOVEMENT 2 — ANGELS -->
+<section class="movement m2" data-movement>
+  <div class="movement-eyebrow" data-lang="es">Segundo movimiento · Coro de los cielos</div>
+  <div class="movement-eyebrow" data-lang="en" style="display:none">Second movement · Choir of heaven</div>
+  <h2 class="movement-title" data-lang="es">A los ángeles y arcángeles</h2>
+  <h2 class="movement-title" data-lang="en" style="display:none">To the angels and archangels</h2>
+  <p class="movement-body" data-lang="es">San Miguel, <strong>príncipe de la milicia celestial</strong>; San Gabriel, <strong>voz del anuncio</strong>; San Rafael, <strong>compañero del camino</strong>; ángel de mi guarda, que <strong>nunca me has dejado ni un instante</strong> — me uno hoy a vuestro cántico eterno, sin cesar, ante el trono de Dios.</p>
+  <p class="movement-body" data-lang="en" style="display:none">Saint Michael, <strong>prince of the heavenly host</strong>; Saint Gabriel, <strong>voice of the announcement</strong>; Saint Raphael, <strong>companion of the road</strong>; angel of my guard, who <strong>has never left my side for an instant</strong> — today I join your eternal song, unceasing, before the throne of God.</p>
+  <div class="movement-divider"></div>
+</section>
+
+<!-- MOVEMENT 3 — MARY -->
+<section class="movement m3" data-movement>
+  <div class="movement-eyebrow" data-lang="es">Tercer movimiento · La llena de gracia</div>
+  <div class="movement-eyebrow" data-lang="en" style="display:none">Third movement · The one full of grace</div>
+  <h2 class="movement-title" data-lang="es">A María, Reina de todo lo creado</h2>
+  <h2 class="movement-title" data-lang="en" style="display:none">To Mary, Queen of all creation</h2>
+  <p class="movement-body" data-lang="es">Mujer vestida de sol, <strong>arca de la nueva alianza</strong>, tú que dijiste «sí» sin condiciones y llevaste a Dios en tu propio cuerpo — hoy te contemplo, no para pedirte nada aún, sino solo para admirar lo que Dios hizo en ti: <strong>una criatura tan pequeña, hecha trono del Altísimo</strong>.</p>
+  <p class="movement-body" data-lang="en" style="display:none">Woman clothed with the sun, <strong>ark of the new covenant</strong>, you who said "yes" without conditions and carried God in your own body — today I behold you, not yet to ask anything, but only to admire what God did in you: <strong>so small a creature, made the throne of the Most High</strong>.</p>
+  <div class="movement-divider"></div>
+</section>
+
+<!-- MOVEMENT 4 — COMMUNION OF SAINTS -->
+<section class="movement m4" data-movement>
+  <div class="movement-eyebrow" data-lang="es">Cuarto movimiento · La gran nube de testigos</div>
+  <div class="movement-eyebrow" data-lang="en" style="display:none">Fourth movement · The great cloud of witnesses</div>
+  <h2 class="movement-title" data-lang="es">A la Comunión de los Santos</h2>
+  <h2 class="movement-title" data-lang="en" style="display:none">To the Communion of Saints</h2>
+  <p class="movement-body" data-lang="es">Todos los que ya llegaron — mártires, vírgenes, doctores, los pequeños y olvidados de la tierra que hoy reinan con Cristo — <strong>gracias por interceder sin cansaros nunca</strong>. No soy digno de vuestra compañía, y aun así me la regaláis. Rogad por mí.</p>
+  <p class="movement-body" data-lang="en" style="display:none">All who have already arrived — martyrs, virgins, doctors, the small and forgotten of the earth who now reign with Christ — <strong>thank you for interceding without ever growing weary</strong>. I am not worthy of your company, and yet you give it to me freely. Pray for me.</p>
+  <div class="movement-divider"></div>
+</section>
+
+<!-- CLIMAX -->
+<section class="climax" id="climax" data-movement>
+  <div class="climax-rays" aria-hidden="true"></div>
+
+  <div class="climax-eyebrow" data-lang="es">Quinto movimiento · El clímax</div>
+  <div class="climax-eyebrow" data-lang="en" style="display:none">Fifth movement · The climax</div>
+
+  <h2 class="climax-title" data-lang="es">Gloria, honor y alabanza,<br />ahora y por todos los siglos</h2>
+  <h2 class="climax-title" data-lang="en" style="display:none">Glory, honor and praise,<br />now and forever</h2>
+
+  <p class="climax-prayer" id="climax-es" data-lang="es">Dios Trino y Uno,
+
+María llena de gracia,
+ángeles, arcángeles y todos los santos:
+
+hoy no vengo a pedir.
+Vengo a admirar.
+
+<strong>Sois más grandes que todo lo que puedo pedir.</strong>
+Sois más buenos que todo lo que necesito.
+Sois más hermosos que todo lo que puedo imaginar.
+
+Que este sitio, cada oración,
+cada intercesor, cada página,
+sea un solo y único acto:
+devolveros la gloria que ya es Vuestra.
+
+No porque lo merezca —
+sino porque Vosotros lo merecéis todo.</p>
+
+  <p class="climax-prayer" id="climax-en" data-lang="en" style="display:none">Triune God,
+
+Mary full of grace,
+angels, archangels and all the saints:
+
+today I have not come to ask.
+I have come to admire.
+
+<strong>You are greater than anything I could ask for.</strong>
+You are better than anything I need.
+You are more beautiful than anything I can imagine.
+
+May this whole site, every prayer,
+every intercessor, every page,
+be one single act:
+returning to You the glory that is already Yours.
+
+Not because I deserve it —
+but because You deserve everything.</p>
+
+  <p class="climax-doxology" data-lang="es">Gloria al Padre, y al Hijo, y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.</p>
+  <p class="climax-doxology" data-lang="en" style="display:none">Glory be to the Father, and to the Son, and to the Holy Spirit. As it was in the beginning, is now, and ever shall be, world without end. Amen.</p>
+
+  <div class="climax-actions">
+    <button class="climax-btn" onclick="readClimax()" data-lang="es">🔊 Escuchar</button>
+    <button class="climax-btn" onclick="readClimax()" data-lang="en" style="display:none">🔊 Listen</button>
+    <button class="climax-btn" onclick="stopClimax()" data-lang="es">⏹ Detener</button>
+    <button class="climax-btn" onclick="stopClimax()" data-lang="en" style="display:none">⏹ Stop</button>
+  </div>
+</section>
+
+  </main>
+  <footer class="gloria-footer">
+    <a href="/" data-lang="es">← Volver a The Universal Prayer, ya con este espíritu</a>
+    <a href="/" data-lang="en" style="display:none">← Return to The Universal Prayer, carrying this spirit with you</a>
+  </footer>
+  <script>
+    (function() {
+      const LANG_KEY = 'universalPrayerLang';
+      let lang = localStorage.getItem(LANG_KEY) || 'es';
+      function applyLang(l) {
+        lang = l;
+        localStorage.setItem(LANG_KEY, l);
+        document.documentElement.lang = l === 'en' ? 'en' : 'es';
+        document.getElementById('langLabel').textContent = l === 'en' ? 'ES' : 'EN';
+        document.querySelectorAll('[data-lang]').forEach(el => {
+          el.style.display = el.dataset.lang === l ? '' : 'none';
+        });
+      }
+      document.getElementById('langToggle').addEventListener('click', () => applyLang(lang === 'es' ? 'en' : 'es'));
+      applyLang(lang);
+    })();
+
+    function readClimax() {
+      if (!window.speechSynthesis) return;
+      window.speechSynthesis.cancel();
+      const lang = localStorage.getItem('universalPrayerLang') || 'es';
+      const el = document.getElementById(lang === 'en' ? 'climax-en' : 'climax-es');
+      const utt = new SpeechSynthesisUtterance(el?.textContent || '');
+      utt.lang = lang === 'en' ? 'en-US' : 'es-ES';
+      window.speechSynthesis.speak(utt);
+    }
+    function stopClimax() { window.speechSynthesis?.cancel(); }
+
+    // Scroll-reveal for each movement
+    const movements = document.querySelectorAll('[data-movement]');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('is-visible'); });
+    }, { threshold: 0.2 });
+    movements.forEach(m => io.observe(m));
+
+    // Ascending flame tracks scroll progress through the page
+    const flame = document.getElementById('ascentFlame');
+    const track = document.getElementById('ascentTrack');
+    function updateFlame() {
+      if (!flame || !track) return;
+      const trackHeight = track.clientHeight;
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = scrollable > 0 ? Math.min(1, window.scrollY / scrollable) : 0;
+      flame.style.bottom = (progress * (trackHeight - 13)) + 'px';
+    }
+    window.addEventListener('scroll', updateFlame, { passive: true });
+    window.addEventListener('resize', updateFlame);
+    updateFlame();
+  </script>
+  <script src="../assets/js/menu.js"></script>
+</body>
+</html>
