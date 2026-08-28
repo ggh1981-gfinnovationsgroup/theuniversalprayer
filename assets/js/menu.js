@@ -40,6 +40,7 @@
     { id: 'diablo', href: '/renacer-en-cristo/', labels: { es: 'Renacer en Cristo', en: 'Reborn in Christ' }, icon: '🛐' },
     { id: 'gloriasuprema', href: '/gloria-suprema/', labels: { es: 'Acto de Adoración Suprema', en: 'Act of Supreme Adoration' }, icon: '✨' },
     { id: 'dopamina', href: '/dopamina/', labels: { es: 'Dopamina y libertad', en: 'Dopamine and freedom' }, icon: '🧠' },
+    { id: 'controlyconfianza', href: '/control-y-confianza/', labels: { es: 'Control y Confianza', en: 'Control and Trust' }, icon: '🕊️' },
     { id: 'enemigos', href: '/enemigos/', labels: { es: 'Bendecir enemigos', en: 'Bless enemies' }, icon: '🤍' },
     { id: 'espiritu', href: '/espiritu/', labels: { es: 'Espíritu Santo', en: 'Holy Spirit' }, icon: '🕊️' },
     { id: 'emergencias', href: '/emergencias/', labels: { es: 'Oraciones de Emergencia', en: 'Emergency Prayers' }, icon: '🆘' },

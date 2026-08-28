@@ -6,8 +6,8 @@ Sitio web catolico bilingue (ES/EN) publicado en GitHub Pages.
 
 - Produccion activa en `main`.
 - Sitio estatico con PWA (`sw.js`) y contenido en JSON.
-- Cache actual del Service Worker: `tup-v224`.
-- Archivos de datos JSON: 103 en `data/`.
+- Cache actual del Service Worker: `tup-v230`.
+- Archivos de datos JSON: 106 en `data/`.
 - Historias para ninos: fuente principal en `data/ninos-cuentos.json`.
 - Wake Lock API activo en todas las paginas con TTS (evita standby durante audio).
 
@@ -86,23 +86,40 @@ theuniversalprayer/
   data/
     *.json
 
+  bella-virtud/
+  control-y-confianza/
+  cuaresma-san-miguel/
+  desierto/
+  diablo/
+  difuntos/
+  diospadre/
+  dopamina/
+  adoracion/
+  emergencias/
+  enemigos/
+  espiritu/
+  gloria-suprema/
+  insiste-y-liberate/
   intercesor/
   historias/
-  oraciones/
-  rosario/
-  misericordia/
-  reconciliacion/
-  salud/
-  matrimonio/
   jovenes/
-  difuntos/
-  adoracion/
-  espiritu/
+  matrimonio/
+  medalla-milagrosa/
+  medalla-san-benito/
   meses/
-  llamados/
-  discernimiento/
-  desierto/
-  enemigos/
+  misericordia/
+  musica/
+  ninos/
+  nomascastigo/
+  oraciones/
+  reconciliacion/
+  renacer-en-cristo/
+  rosario/
+  salmos-diarios/
+  salud/
+  tentaciones/
+  viacrucis/
+  vuelvo-al-padre/
   privado/
   workers/
 ```
@@ -146,7 +163,7 @@ Cuando se hagan cambios de frontend o contenido relevante:
 - Abrir la web y confirmar que carga la version esperada.
 - Forzar recarga del navegador para comprobar invalidacion de cache.
 - Revisar que los JSON de `data/` cargan sin errores en consola.
-- Probar paginas clave: home, intercesor, historias y secciones principales.
+- Probar paginas clave: home, intercesor, historias, adoracion, dopamina, control-y-confianza, gloria-suprema y secciones principales.
 
 ## Mantenimiento
 
