@@ -6,7 +6,7 @@ Sitio web catolico bilingue (ES/EN) publicado en GitHub Pages.
 
 - Produccion activa en `main`.
 - Sitio estatico con PWA (`sw.js`) y contenido en JSON.
-- Cache actual del Service Worker: `tup-v231`.
+- Cache actual del Service Worker: `tup-v232`.
 - Archivos de datos JSON: 106 en `data/`.
 - Historias para ninos: fuente principal en `data/ninos-cuentos.json`.
 - Wake Lock API activo en todas las paginas con TTS (evita standby durante audio).
