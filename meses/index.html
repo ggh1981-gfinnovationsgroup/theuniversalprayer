@@ -902,7 +902,7 @@
 
       const septiembre2 = [
         'Lee Is 53 (Siervo Sufriente) y medita en los dolores de Jesús y María.',
-        'Reza la Corono de los Siete Dolores de María lentamente.',
+        'Reza la Corona de los Siete Dolores de María lentamente. Cómo: 1 Padre Nuestro + 7 Avemarías por cada uno de los 7 Dolores (= 7 grupos). Al final, 3 Avemarías por las lágrimas de María. Total: ~20 min.',
         'Visita a alguien que sufre; lleva consuelo en nombre de María.',
         'Ayuna medio día en reparación por los pecados.',
         'Lee la Pasión en el Evangelio y visualiza cada paso de Jesús.',
@@ -948,12 +948,27 @@
         steps: [
           'Comienza con la Señal de la Cruz e invoca a la Virgen de Dolores.',
           'Lee brevemente la Pasión de Jesús (Mc 15 o Jn 19).',
-          'Reza el Vía Crucis o la Corona de los Siete Dolores lentamente.',
+          'Reza el Vía Crucis o la Corona de los Siete Dolores. Estructura: 1 Padre Nuestro + 7 Avemarías por cada dolor; termina con 3 Avemarías por las lágrimas de María.',
+          'Los 7 Dolores de María: 1) Profecía de Simeón (Lc 2,35) · 2) Huida a Egipto (Mt 2,13) · 3) Pérdida del Niño en el Templo (Lc 2,48) · 4) Encuentro con Jesús camino al Calvario (Lc 23,28) · 5) Crucifixión y muerte (Jn 19,25) · 6) Descendimiento de la Cruz (Mt 27,59) · 7) Sepultura (Jn 19,42).',
           'Completa con ofrecimiento de tu propio sufrimiento unido a Cristo.',
           'Termina pidiendo gracia para vivir el sufrimiento con redención.'
         ],
         prayer: 'Oración de ofrenda diaria:\n"Madre de Dolores, tu corazón fue traspasado por mi salvación. Hoy ofrezco mis sufrimientos unidos a la Pasión de tu Hijo. Que mi dolor redima, que mi Cruz glorifique a Dios. Amén."',
         closing: 'Oración de cierre:\n"Virgen María, en tus brazos descansa el Cordero inmolado. Protege mi fe en la Cruz. Que llegue a la Resurrección pasando por el Calvario. Amén."'
+      };
+
+      const septiembreMethodEn = {
+        title: 'How to do it (brief pastoral guide for September)',
+        steps: [
+          'Begin with the Sign of the Cross and invoke Our Lady of Sorrows.',
+          'Read briefly from the Passion of Jesus (Mk 15 or Jn 19).',
+          'Pray the Stations of the Cross or the Chaplet of the Seven Sorrows. Structure: 1 Our Father + 7 Hail Marys for each sorrow; close with 3 Hail Marys for Our Lady\'s tears.',
+          'The 7 Sorrows of Mary: 1) Simeon\'s prophecy (Lk 2:35) · 2) Flight into Egypt (Mt 2:13) · 3) Loss of the Child Jesus (Lk 2:48) · 4) Meeting Jesus on the Way of the Cross (Lk 23:28) · 5) Crucifixion and death (Jn 19:25) · 6) Taking down from the Cross (Mt 27:59) · 7) Burial of Jesus (Jn 19:42).',
+          'Complete with an offering of your own suffering united to Christ.',
+          'End asking for grace to live suffering with redemptive meaning.'
+        ],
+        prayer: 'Daily offering prayer:\n"Mother of Sorrows, your heart was pierced for my salvation. Today I offer my sufferings united to the Passion of Your Son. May my pain redeem, may my Cross glorify God. Amen."',
+        closing: 'Closing prayer:\n"Virgin Mary, in your arms the slain Lamb rests. Protect my faith in the Cross. May I reach the Resurrection by way of Calvary. Amen."'
       };
 
       const octubreMethodEs = {
@@ -1352,7 +1367,7 @@
           method = agostoMethodEs;
         } else if (m.key === 'septiembre') {
           plan = septiembrePlanEs;
-          method = septiembreMethodEs;
+          method = lang === 'es' ? septiembreMethodEs : septiembreMethodEn;
         } else if (m.key === 'octubre') {
           plan = lang === 'es' ? octubrePlanEs : octubrePlanEn;
           method = lang === 'es' ? octubreMethodEs : octubreMethodEn;
