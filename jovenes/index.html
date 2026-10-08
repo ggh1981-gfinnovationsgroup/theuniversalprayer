@@ -124,8 +124,13 @@
       gap: 0.55rem;
     }
     .youth-start-option {
-      min-height: 3.25rem;
+      min-height: 4.15rem;
       padding: 0.75rem 0.9rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 0.2rem;
       border: 1px solid rgba(255,255,255,0.14);
       border-radius: 8px;
       background: rgba(255,255,255,0.03);
@@ -135,6 +140,11 @@
       text-align: left;
       cursor: pointer;
       transition: border-color 0.2s, background 0.2s;
+    }
+    .youth-start-option-hint {
+      color: rgba(255,255,255,0.58);
+      font-size: 0.74rem;
+      line-height: 1.35;
     }
     .youth-start-option:hover,
     .youth-start-option[aria-pressed="true"] {
@@ -532,14 +542,14 @@
       <p class="youth-start-copy" data-lang="en" style="display:none">Choose a topic to see a response and its own 33-day path. Nothing starts automatically. You can also open the general path, which brings several themes together.</p>
 
       <div class="youth-start-options" role="group" aria-label="Elige lo que estás viviendo">
-        <button class="youth-start-option" type="button" data-topic="alone" data-lang="es" aria-pressed="false" aria-controls="youth-start-answer">Me siento solo</button>
-        <button class="youth-start-option" type="button" data-topic="alone" data-lang="en" style="display:none" aria-pressed="false" aria-controls="youth-start-answer">I feel alone</button>
-        <button class="youth-start-option" type="button" data-topic="future" data-lang="es" aria-pressed="false" aria-controls="youth-start-answer">No sé qué hacer con mi futuro</button>
-        <button class="youth-start-option" type="button" data-topic="future" data-lang="en" style="display:none" aria-pressed="false" aria-controls="youth-start-answer">I don't know what to do with my future</button>
-        <button class="youth-start-option" type="button" data-topic="mistake" data-lang="es" aria-pressed="false" aria-controls="youth-start-answer">Me equivoqué y quiero volver</button>
-        <button class="youth-start-option" type="button" data-topic="mistake" data-lang="en" style="display:none" aria-pressed="false" aria-controls="youth-start-answer">I made a mistake and want to begin again</button>
-        <button class="youth-start-option" type="button" data-topic="serve" data-lang="es" aria-pressed="false" aria-controls="youth-start-answer">Quiero hacer algo bueno por alguien</button>
-        <button class="youth-start-option" type="button" data-topic="serve" data-lang="en" style="display:none" aria-pressed="false" aria-controls="youth-start-answer">I want to do something good for someone</button>
+        <button class="youth-start-option" type="button" data-topic="alone" data-lang="es" aria-pressed="false" aria-controls="youth-start-answer"><span>Me siento solo</span><span class="youth-start-option-hint">Ver una orientación breve</span></button>
+        <button class="youth-start-option" type="button" data-topic="alone" data-lang="en" style="display:none" aria-pressed="false" aria-controls="youth-start-answer"><span>I feel alone</span><span class="youth-start-option-hint">See a brief response</span></button>
+        <button class="youth-start-option" type="button" data-topic="future" data-lang="es" aria-pressed="false" aria-controls="youth-start-answer"><span>No sé qué hacer con mi futuro</span><span class="youth-start-option-hint">Ver una orientación breve</span></button>
+        <button class="youth-start-option" type="button" data-topic="future" data-lang="en" style="display:none" aria-pressed="false" aria-controls="youth-start-answer"><span>I don't know what to do with my future</span><span class="youth-start-option-hint">See a brief response</span></button>
+        <button class="youth-start-option" type="button" data-topic="mistake" data-lang="es" aria-pressed="false" aria-controls="youth-start-answer"><span>Me equivoqué y quiero volver</span><span class="youth-start-option-hint">Ver una orientación breve</span></button>
+        <button class="youth-start-option" type="button" data-topic="mistake" data-lang="en" style="display:none" aria-pressed="false" aria-controls="youth-start-answer"><span>I made a mistake and want to begin again</span><span class="youth-start-option-hint">See a brief response</span></button>
+        <button class="youth-start-option" type="button" data-topic="serve" data-lang="es" aria-pressed="false" aria-controls="youth-start-answer"><span>Quiero hacer algo bueno por alguien</span><span class="youth-start-option-hint">Ver una orientación breve</span></button>
+        <button class="youth-start-option" type="button" data-topic="serve" data-lang="en" style="display:none" aria-pressed="false" aria-controls="youth-start-answer"><span>I want to do something good for someone</span><span class="youth-start-option-hint">See a brief response</span></button>
       </div>
 
       <div class="youth-journey-invite">
