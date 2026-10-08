@@ -6,6 +6,9 @@
 (function () {
   'use strict';
 
+  const CONTACT_EMAIL = 'gf.innovations.group.llc@gmail.com';
+  const CONTACT_MAILTO = 'mailto:' + CONTACT_EMAIL + '?subject=The%20Universal%20Prayer';
+
   const MENU_ITEMS = [
     {
       id: 'home',
@@ -63,7 +66,26 @@
     { id: 'rosario', href: '/rosario/', labels: { es: 'Rosario Interactivo', en: 'Interactive Rosary' }, icon: '📿' },
     { id: 'viacrucis', href: '/viacrucis/', labels: { es: 'Vía Crucis Guiado', en: 'Guided Stations' }, icon: '✝' },
     { id: 'salud', href: '/salud/', labels: { es: 'Salud integral', en: 'Whole-person health' }, icon: '💚' },
+    { id: 'contacto', href: CONTACT_MAILTO, labels: { es: 'Contáctanos', en: 'Contact us' }, icon: '✉️' },
   ];
+
+  function injectContactFab() {
+    if (document.getElementById('contactFab')) return;
+    var a = document.createElement('a');
+    a.id = 'contactFab';
+    a.className = 'contact-fab';
+    a.href = CONTACT_MAILTO;
+    document.body.appendChild(a);
+    renderContactFab(getLang());
+  }
+
+  function renderContactFab(lang) {
+    var a = document.getElementById('contactFab');
+    if (!a) return;
+    var label = lang === 'en' ? 'Contact us' : 'Cont\u00e1ctanos';
+    a.setAttribute('aria-label', label + ' - ' + CONTACT_EMAIL);
+    a.innerHTML = '<span aria-hidden="true">\u2709\uFE0F</span> ' + label;
+  }
 
   function getLang() {
     return localStorage.getItem('tup_lang') || 'es';
@@ -134,6 +156,7 @@
   function initSiteMenu() {
     injectNav();
     renderItems(getLang());
+    injectContactFab();
 
     var btn      = document.getElementById('hamburgerBtn');
     var nav      = document.getElementById('sideNav');
@@ -153,6 +176,7 @@
     // Re-render on language change dispatched by any page
     window.addEventListener('tup:langchange', function (e) {
       renderItems((e && e.detail) || getLang());
+      renderContactFab((e && e.detail) || getLang());
     });
   }
 

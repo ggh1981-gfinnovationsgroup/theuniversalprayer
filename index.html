@@ -717,6 +717,19 @@
     <div class="intercessors-grid" id="intercessorsGrid"></div>
   </section>
 
+  <!-- CONTACTO -->
+  <section class="contact-section" id="contacto" aria-labelledby="contactTitle">
+    <div class="contact-card">
+      <div class="contact-icon" aria-hidden="true">✉️</div>
+      <h2 class="contact-title" id="contactTitle" data-lang="es">Contáctanos</h2>
+      <h2 class="contact-title" data-lang="en" style="display:none">Contact us</h2>
+      <p class="contact-text" data-lang="es">¿Tienes una pregunta, una sugerencia o una intención que quieras compartir? Escríbenos, te leemos con gusto.</p>
+      <p class="contact-text" data-lang="en" style="display:none">Have a question, a suggestion, or an intention you want to share? Write to us, we are glad to read you.</p>
+      <a class="contact-email" href="mailto:gf.innovations.group.llc@gmail.com?subject=The%20Universal%20Prayer">gf.innovations.group.llc@gmail.com</a>
+      <button type="button" class="contact-copy" id="contactCopy" data-email="gf.innovations.group.llc@gmail.com"><span id="contactCopyLabel">Copiar correo</span></button>
+    </div>
+  </section>
+
   <!-- FOOTER -->
   <footer class="site-footer">
     <nav class="footer-nav" aria-label="Intercesores destacados">
@@ -735,9 +748,26 @@
     </nav>
     <p data-i18n="footer_text">A free Catholic devotional resource. No ads. No tracking.</p>
     <p class="footer-domains">theuniversalprayer.com &nbsp;|&nbsp; laoracionuniversal.com</p>
+    <p class="footer-domains"><a href="mailto:gf.innovations.group.llc@gmail.com" style="color:inherit">gf.innovations.group.llc@gmail.com</a></p>
   </footer>
 
   <button class="back-to-top" id="backToTop" aria-label="Back to top / Volver arriba">↑</button>
+  <script>
+    (function () {
+      var btn = document.getElementById('contactCopy');
+      var label = document.getElementById('contactCopyLabel');
+      if (!btn || !label) return;
+      var t = { es: ['Copiar correo', 'Copiado ✓'], en: ['Copy email', 'Copied ✓'] };
+      function lang() { return localStorage.getItem('tup_lang') === 'en' ? 'en' : 'es'; }
+      function reset() { label.textContent = t[lang()][0]; }
+      reset();
+      window.addEventListener('tup:langchange', reset);
+      btn.addEventListener('click', function () {
+        var done = function () { label.textContent = t[lang()][1]; setTimeout(reset, 2000); };
+        if (navigator.clipboard) navigator.clipboard.writeText(btn.dataset.email).then(done, function () {});
+      });
+    })();
+  </script>
   <script src="assets/js/menu.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
