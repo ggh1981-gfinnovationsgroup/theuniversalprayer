@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>33 días para vivir con sentido | The Universal Prayer</title>
+  <meta name="description" content="Un recorrido católico de 33 días para jóvenes: identidad, amistad, decisiones, oración y servicio." />
+  <meta name="theme-color" content="#c9a84c" />
+  <meta property="og:title" content="33 días para vivir con sentido" />
+  <meta property="og:description" content="Un camino de oración y acciones concretas para jóvenes católicos." />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" href="/assets/images/icon.svg" />
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    .y33-page { max-width: 1120px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    .y33-back { display: inline-block; margin-bottom: 1.5rem; color: var(--gold); font: 0.85rem var(--font-sans); text-decoration: none; }
+    .y33-back:hover { color: var(--gold-light); }
+    .y33-hero { max-width: 760px; margin-bottom: 2rem; }
+    .y33-kicker { margin: 0 0 0.55rem; color: #8ed4bd; font: 700 0.72rem var(--font-sans); text-transform: uppercase; }
+    .y33-title { margin: 0 0 0.65rem; color: #fff; font: 700 2.35rem/1.15 var(--font-serif); }
+    .y33-subtitle { max-width: 660px; margin: 0; color: rgba(255,255,255,0.72); font: 0.98rem/1.75 var(--font-sans); }
+    .y33-progress { margin: 0 0 2rem; padding: 1rem 0; border-block: 1px solid rgba(201,168,76,0.24); }
+    .y33-progress-row { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; margin-bottom: 0.55rem; color: rgba(255,255,255,0.78); font: 0.85rem var(--font-sans); }
+    .y33-progress-count { color: #8ed4bd; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .y33-progress-track { height: 5px; overflow: hidden; background: rgba(255,255,255,0.1); }
+    .y33-progress-fill { width: 0; height: 100%; background: #8ed4bd; transition: width 0.25s ease; }
+    .y33-layout { display: grid; grid-template-columns: minmax(225px, 0.7fr) minmax(0, 1.5fr); gap: 2.25rem; align-items: start; }
+    .y33-nav-title { margin: 0 0 0.35rem; color: var(--gold-light); font: 1.15rem var(--font-serif); }
+    .y33-nav-note { margin: 0 0 1rem; color: rgba(255,255,255,0.56); font: 0.8rem/1.55 var(--font-sans); }
+    .y33-days { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.4rem; }
+    .y33-day-button { aspect-ratio: 1; min-width: 0; border: 1px solid rgba(255,255,255,0.13); border-radius: 7px; background: rgba(255,255,255,0.025); color: rgba(255,255,255,0.76); font: 700 0.8rem var(--font-sans); cursor: pointer; }
+    .y33-day-button:hover { border-color: rgba(142,212,189,0.6); color: #fff; }
+    .y33-day-button[aria-current="step"] { border-color: #8ed4bd; background: rgba(142,212,189,0.14); color: #fff; }
+    .y33-day-button.is-done { color: #8ed4bd; }
+    .y33-day-button:focus-visible, .y33-control:focus-visible, .y33-reset:focus-visible { outline: 2px solid #8ed4bd; outline-offset: 3px; }
+    .y33-reset { margin-top: 0.9rem; padding: 0; border: 0; background: none; color: rgba(255,255,255,0.48); font: 0.75rem var(--font-sans); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+    .y33-reset:hover { color: var(--gold-light); }
+    .y33-reading { min-width: 0; padding: 0 0 0 1.5rem; border-left: 1px solid rgba(201,168,76,0.28); }
+    .y33-reading-top { display: flex; flex-wrap: wrap; gap: 0.55rem 1rem; align-items: center; margin-bottom: 0.55rem; }
+    .y33-day-number { color: #8ed4bd; font: 700 0.75rem var(--font-sans); text-transform: uppercase; }
+    .y33-phase { color: rgba(255,255,255,0.5); font: 0.75rem var(--font-sans); }
+    .y33-day-title { margin: 0 0 1rem; color: #fff; font: 1.7rem/1.25 var(--font-serif); }
+    .y33-verse { margin: 0 0 1.15rem; padding: 0.75rem 1rem; border-left: 3px solid rgba(201,168,76,0.55); color: rgba(255,255,255,0.83); font: italic 0.96rem/1.7 var(--font-serif); }
+    .y33-verse cite { display: block; margin-top: 0.3rem; color: var(--gold); font: normal 0.75rem var(--font-sans); }
+    .y33-reflection { color: rgba(255,255,255,0.82); font: 0.94rem/1.8 var(--font-sans); }
+    .y33-reflection p { margin: 0 0 0.9rem; }
+    .y33-prayer { margin-top: 1.35rem; padding: 1rem 1.1rem; border-top: 1px solid rgba(142,212,189,0.42); border-bottom: 1px solid rgba(142,212,189,0.18); color: rgba(255,255,255,0.9); font: 1rem/1.75 var(--font-serif); }
+    .y33-prayer-label, .y33-act-label { display: block; margin-bottom: 0.35rem; color: #8ed4bd; font: 700 0.68rem var(--font-sans); text-transform: uppercase; }
+    .y33-act { margin: 1.1rem 0 1.4rem; color: rgba(255,255,255,0.78); font: 0.9rem/1.7 var(--font-sans); }
+    .y33-controls { display: flex; flex-wrap: wrap; gap: 0.55rem; align-items: center; }
+    .y33-control { min-height: 2.65rem; padding: 0.55rem 0.85rem; border: 1px solid rgba(201,168,76,0.38); border-radius: 7px; background: transparent; color: var(--gold-light); font: 0.82rem var(--font-sans); cursor: pointer; }
+    .y33-control:hover:not(:disabled) { background: rgba(201,168,76,0.1); }
+    .y33-control:disabled { opacity: 0.4; cursor: not-allowed; }
+    .y33-control--done { border-color: rgba(142,212,189,0.6); color: #a6e4ce; }
+    .y33-error { padding: 1rem; border-left: 3px solid #e57373; color: rgba(255,255,255,0.82); font: 0.9rem/1.6 var(--font-sans); }
+    @media (max-width: 700px) {
+      .y33-page { padding-top: 1.5rem; }
+      .y33-title { font-size: 2rem; }
+      .y33-layout { grid-template-columns: 1fr; gap: 1.75rem; }
+      .y33-days { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+      .y33-reading { padding: 1.3rem 0 0; border-left: 0; border-top: 1px solid rgba(201,168,76,0.28); }
+    }
+    @media (max-width: 380px) { .y33-days { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+    @media (prefers-reduced-motion: reduce) { .y33-progress-fill { transition: none; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link"><span class="cross">✝</span><span class="logo-text">The Universal Prayer</span></a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language"><span id="langLabel">EN</span></button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="y33-page">
+    <a class="y33-back" href="/jovenes/" data-lang="es">← Jóvenes en Cristo</a>
+    <a class="y33-back" href="/jovenes/" data-lang="en" style="display:none">← Young in Christ</a>
+    <header class="y33-hero">
+      <p class="y33-kicker" data-lang="es">Un camino de oración y vida</p>
+      <p class="y33-kicker" data-lang="en" style="display:none">A path of prayer and life</p>
+      <h1 class="y33-title" data-lang="es">33 días para vivir con sentido</h1>
+      <h1 class="y33-title" data-lang="en" style="display:none">33 Days to Live with Purpose</h1>
+      <p class="y33-subtitle" data-lang="es">Desde la dignidad que recibes hasta el bien que puedes hacer: un recorrido con Cristo por la vida interior, las relaciones, las decisiones y el servicio.</p>
+      <p class="y33-subtitle" data-lang="en" style="display:none">From the dignity you receive to the good you can do: a journey with Christ through inner life, relationships, choices, and service.</p>
+    </header>
+
+    <section class="y33-progress" aria-label="Progress">
+      <div class="y33-progress-row">
+        <span data-lang="es">Tu recorrido</span><span data-lang="en" style="display:none">Your journey</span>
+        <span class="y33-progress-count" id="progressCount" aria-live="polite"></span>
+      </div>
+      <div class="y33-progress-track" role="progressbar" id="progressBar" aria-valuemin="0" aria-valuemax="33" aria-valuenow="0">
+        <div class="y33-progress-fill" id="progressFill"></div>
+      </div>
+    </section>
+
+    <div class="y33-layout">
+      <nav aria-labelledby="dayNavTitle">
+        <h2 class="y33-nav-title" id="dayNavTitle" data-lang="es">Los 33 días</h2>
+        <h2 class="y33-nav-title" data-lang="en" style="display:none">The 33 days</h2>
+        <p class="y33-nav-note" data-lang="es">Cada jornada tiene una reflexión, una oración y un paso concreto.</p>
+        <p class="y33-nav-note" data-lang="en" style="display:none">Each day has a reflection, a prayer, and one concrete step.</p>
+        <div class="y33-days" id="dayList" aria-label="Days"></div>
+        <button class="y33-reset" id="resetProgress" type="button" data-lang="es">Reiniciar progreso</button>
+        <button class="y33-reset" id="resetProgressEn" type="button" data-lang="en" style="display:none">Reset progress</button>
+      </nav>
+
+      <article class="y33-reading" aria-live="polite" aria-atomic="true">
+        <div class="y33-reading-top">
+          <span class="y33-day-number" id="dayNumber"></span>
+          <span class="y33-phase" id="dayPhase"></span>
+        </div>
+        <h2 class="y33-day-title" id="dayTitle" tabindex="-1"></h2>
+        <blockquote class="y33-verse"><span id="dayVerse"></span><cite id="dayReference"></cite></blockquote>
+        <div class="y33-reflection" id="dayReflection"></div>
+        <p class="y33-prayer"><span class="y33-prayer-label" data-lang="es">Oración</span><span class="y33-prayer-label" data-lang="en" style="display:none">Prayer</span><span id="dayPrayer"></span></p>
+        <p class="y33-act"><span class="y33-act-label" data-lang="es">Un paso para hoy</span><span class="y33-act-label" data-lang="en" style="display:none">One step for today</span><span id="dayAct"></span></p>
+        <div class="y33-controls">
+          <button class="y33-control" id="previousDay" type="button"></button>
+          <button class="y33-control y33-control--done" id="markDone" type="button"></button>
+          <button class="y33-control" id="nextDay" type="button"></button>
+        </div>
+        <p class="y33-error" id="loadError" aria-live="polite" hidden><span data-lang="es">No se pudo cargar el recorrido. Comprueba tu conexión e inténtalo de nuevo.</span><span data-lang="en" style="display:none">The journey could not be loaded. Check your connection and try again.</span></p>
+      </article>
+    </div>
+  </main>
+
+  <script>
+  (() => {
+    'use strict';
+    const LANG_KEY = 'universalPrayerLang';
+    const DONE_KEY = 'youth33Done';
+    const DAY_KEY = 'youth33CurrentDay';
+    let lang = localStorage.getItem(LANG_KEY) || 'es';
+    let days = [];
+    let current = Math.min(33, Math.max(1, Number(localStorage.getItem(DAY_KEY)) || 1));
+    let done;
+    try { done = new Set(JSON.parse(localStorage.getItem(DONE_KEY) || '[]')); }
+    catch { done = new Set(); }
+
+    const $ = id => document.getElementById(id);
+    const labels = {
+      es: { day: 'Día', done: 'Marcar día como realizado', undone: 'Quitar marca de este día', previous: '← Anterior', next: 'Siguiente →', count: n => `${n} de 33 días`, select: n => `Abrir día ${n}`, reset: '¿Reiniciar el progreso de los 33 días?' },
+      en: { day: 'Day', done: 'Mark day as complete', undone: 'Mark day as not complete', previous: '← Previous', next: 'Next →', count: n => `${n} of 33 days`, select: n => `Open day ${n}`, reset: 'Reset your progress for all 33 days?' }
+    };
+
+    function setLanguage(next) {
+      lang = next;
+      localStorage.setItem(LANG_KEY, lang);
+      document.documentElement.lang = lang;
+      $('langLabel').textContent = lang === 'en' ? 'ES' : 'EN';
+      document.querySelectorAll('[data-lang]').forEach(el => { el.style.display = el.dataset.lang === lang ? '' : 'none'; });
+      render();
+    }
+
+    function saveProgress() {
+      localStorage.setItem(DONE_KEY, JSON.stringify([...done]));
+      localStorage.setItem(DAY_KEY, String(current));
+    }
+
+    function renderProgress() {
+      const count = done.size;
+      $('progressCount').textContent = labels[lang].count(count);
+      $('progressBar').setAttribute('aria-valuenow', String(count));
+      $('progressFill').style.width = `${(count / 33) * 100}%`;
+    }
+
+    function renderDays() {
+      const list = $('dayList');
+      list.replaceChildren();
+      days.forEach(day => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'y33-day-button' + (done.has(day.n) ? ' is-done' : '');
+        button.textContent = String(day.n).padStart(2, '0');
+        button.setAttribute('aria-label', `${labels[lang].select(day.n)}${done.has(day.n) ? ' ✓' : ''}`);
+        if (day.n === current) button.setAttribute('aria-current', 'step');
+        button.addEventListener('click', () => { current = day.n; saveProgress(); render(); });
+        list.appendChild(button);
+      });
+    }
+
+    function render() {
+      if (!days.length) return;
+      const day = days.find(item => item.n === current) || days[0];
+      current = day.n;
+      $('dayNumber').textContent = `${labels[lang].day} ${day.n}`;
+      $('dayPhase').textContent = day.phase[lang];
+      $('dayTitle').textContent = day.theme[lang];
+      $('dayVerse').textContent = day.verse[lang];
+      $('dayReference').textContent = `— ${day.verse.ref}`;
+      const reflection = $('dayReflection');
+      reflection.replaceChildren();
+      day.reflection[lang].forEach(text => {
+        const paragraph = document.createElement('p');
+        paragraph.textContent = text;
+        reflection.appendChild(paragraph);
+      });
+      $('dayPrayer').textContent = day.prayer[lang];
+      $('dayAct').textContent = day.act[lang];
+      $('previousDay').textContent = labels[lang].previous;
+      $('previousDay').disabled = day.n === 1;
+      $('nextDay').textContent = labels[lang].next;
+      $('nextDay').disabled = day.n === 33;
+      $('markDone').textContent = done.has(day.n) ? labels[lang].undone : labels[lang].done;
+      $('markDone').setAttribute('aria-pressed', String(done.has(day.n)));
+      $('previousDay').onclick = () => selectDay(day.n - 1);
+      $('nextDay').onclick = () => selectDay(day.n + 1);
+      $('markDone').onclick = () => {
+        done.has(day.n) ? done.delete(day.n) : done.add(day.n);
+        saveProgress(); render();
+      };
+      renderProgress();
+      renderDays();
+    }
+
+    function selectDay(number) {
+      current = Math.min(33, Math.max(1, number));
+      saveProgress();
+      render();
+      $('dayTitle').focus?.();
+    }
+
+    async function init() {
+      try {
+        const response = await fetch('./recorrido.json');
+        if (!response.ok) throw new Error('Journey data unavailable');
+        const data = await response.json();
+        days = data.days;
+        if (!Array.isArray(days) || days.length !== 33) throw new Error('Journey data is incomplete');
+        render();
+      } catch {
+        document.querySelectorAll('#loadError').forEach(error => { error.hidden = false; });
+      }
+    }
+
+    $('langToggle').addEventListener('click', () => setLanguage(lang === 'es' ? 'en' : 'es'));
+    ['resetProgress', 'resetProgressEn'].forEach(id => $(id).addEventListener('click', () => {
+      if (!confirm(labels[lang].reset)) return;
+      done.clear(); current = 1; saveProgress(); render();
+    }));
+    document.addEventListener('keydown', event => {
+      if ((event.altKey || event.ctrlKey || event.metaKey) || ['INPUT', 'TEXTAREA', 'SELECT', 'BUTTON'].includes(document.activeElement?.tagName)) return;
+      if (event.key === 'ArrowLeft' && current > 1) selectDay(current - 1);
+      if (event.key === 'ArrowRight' && current < 33) selectDay(current + 1);
+    });
+    setLanguage(lang);
+    init();
+  })();
+  </script>
+  <script src="../../assets/js/menu.js"></script>
+</body>
+</html>
