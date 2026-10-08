@@ -123,6 +123,7 @@
       grid-template-columns: minmax(0, 1fr);
       border-top: 1px solid rgba(255,255,255,0.12);
     }
+    .youth-topic { border-bottom: 1px solid rgba(255,255,255,0.12); }
     .youth-start-option {
       width: 100%;
       min-height: 4.4rem;
@@ -132,7 +133,6 @@
       align-items: center;
       gap: 0.55rem;
       border: 0;
-      border-bottom: 1px solid rgba(255,255,255,0.12);
       border-radius: 0;
       background: transparent;
       color: rgba(255,255,255,0.9);
@@ -166,38 +166,30 @@
       text-align: right;
     }
     .youth-start-option:hover,
-    .youth-start-option[aria-pressed="true"] {
+    .youth-start-option[aria-expanded="true"] {
       background: rgba(142,212,189,0.06);
     }
     .youth-start-option:focus-visible {
       outline: 2px solid var(--youth-start-accent);
       outline-offset: 3px;
     }
-    .youth-start-answer {
-      margin-top: 1rem;
-      padding: 1rem 1.15rem;
+    .youth-topic-panel {
+      margin: 0 0 0.9rem 2.65rem;
+      padding: 0.15rem 0.9rem 0.1rem;
       border-left: 3px solid var(--youth-start-accent);
       border-radius: 0 8px 8px 0;
       background: rgba(142,212,189,0.07);
     }
-    .youth-start-answer[hidden] { display: none; }
-    .youth-start-answer-label {
-      margin: 0 0 0.4rem;
-      color: var(--youth-start-accent);
-      font-family: var(--font-sans);
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    .youth-start-answer-message,
-    .youth-start-answer-step {
+    .youth-topic-panel[hidden] { display: none; }
+    .youth-topic-message,
+    .youth-topic-step {
       margin: 0 0 0.65rem;
       color: rgba(255,255,255,0.88);
       font-family: var(--font-sans);
       font-size: 0.9rem;
       line-height: 1.7;
     }
-    .youth-start-answer-verse {
+    .youth-topic-verse {
       margin: 0 0 0.65rem;
       color: rgba(255,255,255,0.78);
       font-family: var(--font-serif);
@@ -205,7 +197,7 @@
       font-style: italic;
       line-height: 1.65;
     }
-    .youth-start-answer-verse cite {
+    .youth-topic-verse cite {
       display: block;
       margin-top: 0.25rem;
       color: var(--youth-start-accent);
@@ -213,7 +205,7 @@
       font-size: 0.75rem;
       font-style: normal;
     }
-    .youth-start-answer-step { margin-bottom: 0; }
+    .youth-topic-step { margin-bottom: 0.85rem; }
     .youth-journey-invite {
       margin-top: 1.35rem;
       padding-top: 1rem;
@@ -557,14 +549,26 @@
       <p class="youth-start-copy" data-lang="en" style="display:none">Choose a topic to see a response and its own 33-day path. Nothing starts automatically. You can also open the general path, which brings several themes together.</p>
 
       <div class="youth-start-options" role="group" aria-label="Elige lo que estás viviendo">
-        <button class="youth-start-option" type="button" data-topic="alone" data-lang="es" aria-pressed="false" aria-controls="youth-start-answer"><span class="youth-start-option-number" aria-hidden="true">01</span><span class="youth-start-option-text"><span class="youth-start-option-label">Me siento solo</span><span class="youth-start-option-hint">Ver una orientación breve</span></span><span class="youth-start-option-arrow" aria-hidden="true">→</span></button>
-        <button class="youth-start-option" type="button" data-topic="alone" data-lang="en" style="display:none" aria-pressed="false" aria-controls="youth-start-answer"><span class="youth-start-option-number" aria-hidden="true">01</span><span class="youth-start-option-text"><span class="youth-start-option-label">I feel alone</span><span class="youth-start-option-hint">See a brief response</span></span><span class="youth-start-option-arrow" aria-hidden="true">→</span></button>
-        <button class="youth-start-option" type="button" data-topic="future" data-lang="es" aria-pressed="false" aria-controls="youth-start-answer"><span class="youth-start-option-number" aria-hidden="true">02</span><span class="youth-start-option-text"><span class="youth-start-option-label">No sé qué hacer con mi futuro</span><span class="youth-start-option-hint">Ver una orientación breve</span></span><span class="youth-start-option-arrow" aria-hidden="true">→</span></button>
-        <button class="youth-start-option" type="button" data-topic="future" data-lang="en" style="display:none" aria-pressed="false" aria-controls="youth-start-answer"><span class="youth-start-option-number" aria-hidden="true">02</span><span class="youth-start-option-text"><span class="youth-start-option-label">I don't know what to do with my future</span><span class="youth-start-option-hint">See a brief response</span></span><span class="youth-start-option-arrow" aria-hidden="true">→</span></button>
-        <button class="youth-start-option" type="button" data-topic="mistake" data-lang="es" aria-pressed="false" aria-controls="youth-start-answer"><span class="youth-start-option-number" aria-hidden="true">03</span><span class="youth-start-option-text"><span class="youth-start-option-label">Me equivoqué y quiero volver</span><span class="youth-start-option-hint">Ver una orientación breve</span></span><span class="youth-start-option-arrow" aria-hidden="true">→</span></button>
-        <button class="youth-start-option" type="button" data-topic="mistake" data-lang="en" style="display:none" aria-pressed="false" aria-controls="youth-start-answer"><span class="youth-start-option-number" aria-hidden="true">03</span><span class="youth-start-option-text"><span class="youth-start-option-label">I made a mistake and want to begin again</span><span class="youth-start-option-hint">See a brief response</span></span><span class="youth-start-option-arrow" aria-hidden="true">→</span></button>
-        <button class="youth-start-option" type="button" data-topic="serve" data-lang="es" aria-pressed="false" aria-controls="youth-start-answer"><span class="youth-start-option-number" aria-hidden="true">04</span><span class="youth-start-option-text"><span class="youth-start-option-label">Quiero hacer algo bueno por alguien</span><span class="youth-start-option-hint">Ver una orientación breve</span></span><span class="youth-start-option-arrow" aria-hidden="true">→</span></button>
-        <button class="youth-start-option" type="button" data-topic="serve" data-lang="en" style="display:none" aria-pressed="false" aria-controls="youth-start-answer"><span class="youth-start-option-number" aria-hidden="true">04</span><span class="youth-start-option-text"><span class="youth-start-option-label">I want to do something good for someone</span><span class="youth-start-option-hint">See a brief response</span></span><span class="youth-start-option-arrow" aria-hidden="true">→</span></button>
+        <div class="youth-topic">
+          <button class="youth-start-option" id="youth-option-alone-es" type="button" data-topic="alone" data-lang="es" aria-expanded="false" aria-controls="youth-panel-alone"><span class="youth-start-option-number" aria-hidden="true">01</span><span class="youth-start-option-text"><span class="youth-start-option-label">Me siento solo</span><span class="youth-start-option-hint">Ver orientación y paso opcional</span></span><span class="youth-start-option-arrow" aria-hidden="true">+</span></button>
+          <button class="youth-start-option" id="youth-option-alone-en" type="button" data-topic="alone" data-lang="en" style="display:none" aria-expanded="false" aria-controls="youth-panel-alone"><span class="youth-start-option-number" aria-hidden="true">01</span><span class="youth-start-option-text"><span class="youth-start-option-label">I feel alone</span><span class="youth-start-option-hint">See guidance and an optional next step</span></span><span class="youth-start-option-arrow" aria-hidden="true">+</span></button>
+          <div class="youth-topic-panel" id="youth-panel-alone" role="region" aria-labelledby="youth-option-alone-es" hidden><p class="youth-topic-message" id="youth-message-alone"></p><blockquote class="youth-topic-verse"><span id="youth-verse-alone"></span><cite id="youth-reference-alone"></cite></blockquote><p class="youth-topic-step"><strong data-lang="es">Un paso pequeño, si te sirve:</strong><strong data-lang="en" style="display:none">One small step, if it helps:</strong> <span id="youth-step-alone"></span></p><a class="youth-journey-link" id="youth-link-alone" href="/jovenes/33dias/"></a></div>
+        </div>
+        <div class="youth-topic">
+          <button class="youth-start-option" id="youth-option-future-es" type="button" data-topic="future" data-lang="es" aria-expanded="false" aria-controls="youth-panel-future"><span class="youth-start-option-number" aria-hidden="true">02</span><span class="youth-start-option-text"><span class="youth-start-option-label">No sé qué hacer con mi futuro</span><span class="youth-start-option-hint">Ver orientación y paso opcional</span></span><span class="youth-start-option-arrow" aria-hidden="true">+</span></button>
+          <button class="youth-start-option" id="youth-option-future-en" type="button" data-topic="future" data-lang="en" style="display:none" aria-expanded="false" aria-controls="youth-panel-future"><span class="youth-start-option-number" aria-hidden="true">02</span><span class="youth-start-option-text"><span class="youth-start-option-label">I don't know what to do with my future</span><span class="youth-start-option-hint">See guidance and an optional next step</span></span><span class="youth-start-option-arrow" aria-hidden="true">+</span></button>
+          <div class="youth-topic-panel" id="youth-panel-future" role="region" aria-labelledby="youth-option-future-es" hidden><p class="youth-topic-message" id="youth-message-future"></p><blockquote class="youth-topic-verse"><span id="youth-verse-future"></span><cite id="youth-reference-future"></cite></blockquote><p class="youth-topic-step"><strong data-lang="es">Un paso pequeño, si te sirve:</strong><strong data-lang="en" style="display:none">One small step, if it helps:</strong> <span id="youth-step-future"></span></p><a class="youth-journey-link" id="youth-link-future" href="/jovenes/33dias/"></a></div>
+        </div>
+        <div class="youth-topic">
+          <button class="youth-start-option" id="youth-option-mistake-es" type="button" data-topic="mistake" data-lang="es" aria-expanded="false" aria-controls="youth-panel-mistake"><span class="youth-start-option-number" aria-hidden="true">03</span><span class="youth-start-option-text"><span class="youth-start-option-label">Me equivoqué y quiero volver</span><span class="youth-start-option-hint">Ver orientación y paso opcional</span></span><span class="youth-start-option-arrow" aria-hidden="true">+</span></button>
+          <button class="youth-start-option" id="youth-option-mistake-en" type="button" data-topic="mistake" data-lang="en" style="display:none" aria-expanded="false" aria-controls="youth-panel-mistake"><span class="youth-start-option-number" aria-hidden="true">03</span><span class="youth-start-option-text"><span class="youth-start-option-label">I made a mistake and want to begin again</span><span class="youth-start-option-hint">See guidance and an optional next step</span></span><span class="youth-start-option-arrow" aria-hidden="true">+</span></button>
+          <div class="youth-topic-panel" id="youth-panel-mistake" role="region" aria-labelledby="youth-option-mistake-es" hidden><p class="youth-topic-message" id="youth-message-mistake"></p><blockquote class="youth-topic-verse"><span id="youth-verse-mistake"></span><cite id="youth-reference-mistake"></cite></blockquote><p class="youth-topic-step"><strong data-lang="es">Un paso pequeño, si te sirve:</strong><strong data-lang="en" style="display:none">One small step, if it helps:</strong> <span id="youth-step-mistake"></span></p><a class="youth-journey-link" id="youth-link-mistake" href="/jovenes/33dias/"></a></div>
+        </div>
+        <div class="youth-topic">
+          <button class="youth-start-option" id="youth-option-serve-es" type="button" data-topic="serve" data-lang="es" aria-expanded="false" aria-controls="youth-panel-serve"><span class="youth-start-option-number" aria-hidden="true">04</span><span class="youth-start-option-text"><span class="youth-start-option-label">Quiero hacer algo bueno por alguien</span><span class="youth-start-option-hint">Ver orientación y paso opcional</span></span><span class="youth-start-option-arrow" aria-hidden="true">+</span></button>
+          <button class="youth-start-option" id="youth-option-serve-en" type="button" data-topic="serve" data-lang="en" style="display:none" aria-expanded="false" aria-controls="youth-panel-serve"><span class="youth-start-option-number" aria-hidden="true">04</span><span class="youth-start-option-text"><span class="youth-start-option-label">I want to do something good for someone</span><span class="youth-start-option-hint">See guidance and an optional next step</span></span><span class="youth-start-option-arrow" aria-hidden="true">+</span></button>
+          <div class="youth-topic-panel" id="youth-panel-serve" role="region" aria-labelledby="youth-option-serve-es" hidden><p class="youth-topic-message" id="youth-message-serve"></p><blockquote class="youth-topic-verse"><span id="youth-verse-serve"></span><cite id="youth-reference-serve"></cite></blockquote><p class="youth-topic-step"><strong data-lang="es">Un paso pequeño, si te sirve:</strong><strong data-lang="en" style="display:none">One small step, if it helps:</strong> <span id="youth-step-serve"></span></p><a class="youth-journey-link" id="youth-link-serve" href="/jovenes/33dias/"></a></div>
+        </div>
       </div>
 
       <div class="youth-journey-invite">
@@ -574,13 +578,6 @@
         <a class="youth-journey-link" href="/jovenes/33dias/" data-lang="en" style="display:none">Open the general 33-day path →</a>
       </div>
 
-      <div class="youth-start-answer" id="youth-start-answer" role="status" aria-live="polite" aria-atomic="true" hidden>
-        <p class="youth-start-answer-label" id="youth-start-label"></p>
-        <p class="youth-start-answer-message" id="youth-start-message"></p>
-        <blockquote class="youth-start-answer-verse"><span id="youth-start-verse"></span><cite id="youth-start-reference"></cite></blockquote>
-        <p class="youth-start-answer-step"><strong data-lang="es">Hoy:</strong><strong data-lang="en" style="display:none">Today:</strong> <span id="youth-start-step"></span></p>
-        <a class="youth-journey-link" id="youth-start-journey" href="/jovenes/33dias/" aria-label="Camino temático opcional de 33 días"></a>
-      </div>
     </section>
 
     <!-- ── ENSEÑANZA: lo esencial para un joven ── -->
@@ -1255,7 +1252,7 @@ but glorify You.
     const ACT_KEY  = 'youthActsWeek';
     const WEEK_KEY = 'youthActsWeekId';
     let lang = localStorage.getItem(LANG_KEY) || 'es';
-    let selectedTopic = '';
+    let openTopic = '';
 
     const youthResponses = {
       alone: {
@@ -1360,30 +1357,35 @@ but glorify You.
         el.style.display = el.dataset.lang === l ? '' : 'none';
       });
       document.querySelector('.youth-start-options').setAttribute('aria-label', l === 'en' ? 'Choose what you are experiencing' : 'Elige lo que estás viviendo');
-      renderYouthResponse();
+      renderYouthPanels();
     }
 
-    function renderYouthResponse() {
-      if (!selectedTopic) return;
-      const response = youthResponses[selectedTopic][lang];
-      document.getElementById('youth-start-label').textContent = lang === 'en' ? 'A step for today' : 'Un paso para hoy';
-      document.getElementById('youth-start-message').textContent = response.message;
-      document.getElementById('youth-start-verse').textContent = response.verse;
-      document.getElementById('youth-start-reference').textContent = '— ' + response.reference;
-      document.getElementById('youth-start-step').textContent = response.step;
-      const journeyLink = document.getElementById('youth-start-journey');
-      journeyLink.href = `/jovenes/33dias/?tema=${journeySlugs[selectedTopic]}`;
-      journeyLink.textContent = journeyLabels[selectedTopic][lang];
-      document.getElementById('youth-start-answer').hidden = false;
+    function renderYouthPanels() {
+      document.querySelectorAll('.youth-topic-panel').forEach(panel => {
+        const topic = panel.id.replace('youth-panel-', '');
+        const response = youthResponses[topic][lang];
+        const isOpen = topic === openTopic;
+        panel.hidden = !isOpen;
+        panel.setAttribute('aria-labelledby', `youth-option-${topic}-${lang}`);
+        document.getElementById(`youth-message-${topic}`).textContent = response.message;
+        document.getElementById(`youth-verse-${topic}`).textContent = response.verse;
+        document.getElementById(`youth-reference-${topic}`).textContent = '— ' + response.reference;
+        document.getElementById(`youth-step-${topic}`).textContent = response.step;
+        const journeyLink = document.getElementById(`youth-link-${topic}`);
+        journeyLink.href = `/jovenes/33dias/?tema=${journeySlugs[topic]}`;
+        journeyLink.textContent = journeyLabels[topic][lang];
+        document.querySelectorAll(`.youth-start-option[data-topic="${topic}"]`).forEach(button => {
+          button.setAttribute('aria-expanded', String(isOpen));
+          button.querySelector('.youth-start-option-arrow').textContent = isOpen ? '−' : '+';
+        });
+      });
     }
 
     document.querySelectorAll('.youth-start-option').forEach(button => {
       button.addEventListener('click', () => {
-        selectedTopic = button.dataset.topic;
-        document.querySelectorAll('.youth-start-option').forEach(option => {
-          option.setAttribute('aria-pressed', String(option.dataset.topic === selectedTopic));
-        });
-        renderYouthResponse();
+        const topic = button.dataset.topic;
+        openTopic = openTopic === topic ? '' : topic;
+        renderYouthPanels();
       });
     });
 
