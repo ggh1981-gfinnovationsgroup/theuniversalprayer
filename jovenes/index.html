@@ -543,10 +543,10 @@
       </div>
 
       <div class="youth-journey-invite">
-        <p data-lang="es">¿Quieres recorrerlo con calma, un día a la vez?</p>
-        <p data-lang="en" style="display:none">Would you like to walk this path, one day at a time?</p>
-        <a class="youth-journey-link" href="/jovenes/33dias/" data-lang="es">Comenzar los 33 días →</a>
-        <a class="youth-journey-link" href="/jovenes/33dias/" data-lang="en" style="display:none">Begin the 33 days →</a>
+        <p data-lang="es">¿Prefieres un recorrido general que reúne estos temas?</p>
+        <p data-lang="en" style="display:none">Would you prefer a general journey that brings these themes together?</p>
+        <a class="youth-journey-link" href="/jovenes/33dias/" data-lang="es">Explorar el camino general de 33 días →</a>
+        <a class="youth-journey-link" href="/jovenes/33dias/" data-lang="en" style="display:none">Explore the general 33-day path →</a>
       </div>
 
       <div class="youth-start-answer" id="youth-start-answer" role="status" aria-live="polite" aria-atomic="true" hidden>
@@ -554,6 +554,7 @@
         <p class="youth-start-answer-message" id="youth-start-message"></p>
         <blockquote class="youth-start-answer-verse"><span id="youth-start-verse"></span><cite id="youth-start-reference"></cite></blockquote>
         <p class="youth-start-answer-step"><strong data-lang="es">Hoy:</strong><strong data-lang="en" style="display:none">Today:</strong> <span id="youth-start-step"></span></p>
+        <a class="youth-journey-link" id="youth-start-journey" href="/jovenes/33dias/" aria-label="Camino temático opcional de 33 días"></a>
       </div>
     </section>
 
@@ -1289,6 +1290,7 @@ but glorify You.
         }
       }
     };
+    const journeySlugs = { alone: 'soledad', future: 'futuro', mistake: 'volver', serve: 'servir' };
 
     function weekId() {
       const d = new Date();
@@ -1338,6 +1340,9 @@ but glorify You.
       document.getElementById('youth-start-verse').textContent = response.verse;
       document.getElementById('youth-start-reference').textContent = '— ' + response.reference;
       document.getElementById('youth-start-step').textContent = response.step;
+      const journeyLink = document.getElementById('youth-start-journey');
+      journeyLink.href = `/jovenes/33dias/?tema=${journeySlugs[selectedTopic]}`;
+      journeyLink.textContent = lang === 'en' ? 'Explore this optional 33-day path →' : 'Explorar este camino opcional de 33 días →';
       document.getElementById('youth-start-answer').hidden = false;
     }
 

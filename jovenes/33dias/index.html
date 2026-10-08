@@ -21,6 +21,7 @@
     .y33-kicker { margin: 0 0 0.55rem; color: #8ed4bd; font: 700 0.72rem var(--font-sans); text-transform: uppercase; }
     .y33-title { margin: 0 0 0.65rem; color: #fff; font: 700 2.35rem/1.15 var(--font-serif); }
     .y33-subtitle { max-width: 660px; margin: 0; color: rgba(255,255,255,0.72); font: 0.98rem/1.75 var(--font-sans); }
+    .y33-optionality { max-width: 660px; margin: 0.8rem 0 0; color: #a6e4ce; font: 0.82rem/1.65 var(--font-sans); }
     .y33-progress { margin: 0 0 2rem; padding: 1rem 0; border-block: 1px solid rgba(201,168,76,0.24); }
     .y33-progress-row { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; margin-bottom: 0.55rem; color: rgba(255,255,255,0.78); font: 0.85rem var(--font-sans); }
     .y33-progress-count { color: #8ed4bd; font-weight: 700; font-variant-numeric: tabular-nums; }
@@ -81,10 +82,10 @@
     <header class="y33-hero">
       <p class="y33-kicker" data-lang="es">Un camino de oración y vida</p>
       <p class="y33-kicker" data-lang="en" style="display:none">A path of prayer and life</p>
-      <h1 class="y33-title" data-lang="es">33 días para vivir con sentido</h1>
-      <h1 class="y33-title" data-lang="en" style="display:none">33 Days to Live with Purpose</h1>
-      <p class="y33-subtitle" data-lang="es">Desde la dignidad que recibes hasta el bien que puedes hacer: un recorrido con Cristo por la vida interior, las relaciones, las decisiones y el servicio.</p>
-      <p class="y33-subtitle" data-lang="en" style="display:none">From the dignity you receive to the good you can do: a journey with Christ through inner life, relationships, choices, and service.</p>
+      <h1 class="y33-title" id="journeyTitle">33 días para vivir con sentido</h1>
+      <p class="y33-subtitle" id="journeySubtitle">Desde la dignidad que recibes hasta el bien que puedes hacer: un recorrido con Cristo por la vida interior, las relaciones, las decisiones y el servicio.</p>
+      <p class="y33-optionality" data-lang="es">Es opcional: puedes ir a tu ritmo, saltarte días, hacer una pausa o dejarlo cuando quieras. No tienes que demostrar nada.</p>
+      <p class="y33-optionality" data-lang="en" style="display:none">This is optional: go at your own pace, skip days, pause, or stop whenever you like. You do not have to prove anything.</p>
     </header>
 
     <section class="y33-progress" aria-label="Progress">
@@ -132,10 +133,16 @@
   (() => {
     'use strict';
     const LANG_KEY = 'universalPrayerLang';
-    const DONE_KEY = 'youth33Done';
-    const DAY_KEY = 'youth33CurrentDay';
+    const trackFiles = { soledad: 'soledad.json', futuro: 'futuro.json', volver: 'volver.json', servir: 'servir.json' };
+    const requestedTrack = new URLSearchParams(window.location.search).get('tema');
+    const track = Object.prototype.hasOwnProperty.call(trackFiles, requestedTrack) ? requestedTrack : 'general';
+    const dataFile = track === 'general' ? 'recorrido.json' : trackFiles[track];
+    const DONE_KEY = track === 'general' ? 'youth33Done' : `youth33_${track}_done`;
+    const DAY_KEY = track === 'general' ? 'youth33CurrentDay' : `youth33_${track}_currentDay`;
     let lang = localStorage.getItem(LANG_KEY) || 'es';
     let days = [];
+    let journeyTitle = { es: '33 días para vivir con sentido', en: '33 Days to Live with Purpose' };
+    let journeySubtitle = { es: 'Desde la dignidad que recibes hasta el bien que puedes hacer: un recorrido con Cristo por la vida interior, las relaciones, las decisiones y el servicio.', en: 'From the dignity you receive to the good you can do: a journey with Christ through inner life, relationships, choices, and service.' };
     let current = Math.min(33, Math.max(1, Number(localStorage.getItem(DAY_KEY)) || 1));
     let done;
     try { done = new Set(JSON.parse(localStorage.getItem(DONE_KEY) || '[]')); }
@@ -185,6 +192,9 @@
 
     function render() {
       if (!days.length) return;
+      $('journeyTitle').textContent = journeyTitle[lang] || journeyTitle.es;
+      $('journeySubtitle').textContent = journeySubtitle[lang] || journeySubtitle.es;
+      document.title = `${journeyTitle[lang] || journeyTitle.es} | The Universal Prayer`;
       const day = days.find(item => item.n === current) || days[0];
       current = day.n;
       $('dayNumber').textContent = `${labels[lang].day} ${day.n}`;
@@ -226,11 +236,13 @@
 
     async function init() {
       try {
-        const response = await fetch('./recorrido.json');
+        const response = await fetch(`./${dataFile}`);
         if (!response.ok) throw new Error('Journey data unavailable');
         const data = await response.json();
         days = data.days;
         if (!Array.isArray(days) || days.length !== 33) throw new Error('Journey data is incomplete');
+        journeyTitle = data.title || journeyTitle;
+        journeySubtitle = data.subtitle || journeySubtitle;
         render();
       } catch {
         document.querySelectorAll('#loadError').forEach(error => { error.hidden = false; });
