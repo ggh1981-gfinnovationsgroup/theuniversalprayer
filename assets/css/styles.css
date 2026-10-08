@@ -2276,6 +2276,9 @@ body {
   transition: transform 0.2s ease, background 0.2s ease;
 }
 .contact-fab:hover { background: var(--gold-light); transform: translateY(-2px); }
+.contact-fab-icon { font-size: 1.3rem; }
+.contact-fab-text { display: flex; flex-direction: column; line-height: 1.2; }
+.contact-fab-text small { font-size: 0.72rem; font-weight: 400; }
 .contact-fab:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
 
 .contact-section { padding: 2.5rem 1.25rem; }

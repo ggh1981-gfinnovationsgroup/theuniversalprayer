@@ -84,7 +84,7 @@
     if (!a) return;
     var label = lang === 'en' ? 'Contact us' : 'Cont\u00e1ctanos';
     a.setAttribute('aria-label', label + ' - ' + CONTACT_EMAIL);
-    a.innerHTML = '<span aria-hidden="true">\u2709\uFE0F</span> ' + label;
+    a.innerHTML = '<span aria-hidden="true" class="contact-fab-icon">\u2709\uFE0F</span><span class="contact-fab-text"><strong>' + label + '</strong><small>' + CONTACT_EMAIL + '</small></span>';
   }
 
   function getLang() {
