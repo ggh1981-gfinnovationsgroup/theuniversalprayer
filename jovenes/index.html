@@ -528,8 +528,8 @@
       <p class="youth-start-kicker" data-lang="en" style="display:none">One real step, today</p>
       <h2 class="youth-start-title" id="youth-start-title" data-lang="es">No tienes que tener todo resuelto.</h2>
       <h2 class="youth-start-title" data-lang="en" style="display:none">You don't have to have it all figured out.</h2>
-      <p class="youth-start-copy" data-lang="es">A veces lo más significativo empieza por nombrar lo que estás viviendo. Elige lo que más se acerca a tu día.</p>
-      <p class="youth-start-copy" data-lang="en" style="display:none">Sometimes the most meaningful thing starts with naming what you are carrying. Choose what comes closest to your day.</p>
+      <p class="youth-start-copy" data-lang="es">Elige un tema para ver una respuesta y su camino propio de 33 días. Nada empieza automáticamente. También puedes abrir el camino general, que reúne varios temas.</p>
+      <p class="youth-start-copy" data-lang="en" style="display:none">Choose a topic to see a response and its own 33-day path. Nothing starts automatically. You can also open the general path, which brings several themes together.</p>
 
       <div class="youth-start-options" role="group" aria-label="Elige lo que estás viviendo">
         <button class="youth-start-option" type="button" data-topic="alone" data-lang="es" aria-pressed="false" aria-controls="youth-start-answer">Me siento solo</button>
@@ -543,10 +543,10 @@
       </div>
 
       <div class="youth-journey-invite">
-        <p data-lang="es">¿Prefieres un recorrido general que reúne estos temas?</p>
-        <p data-lang="en" style="display:none">Would you prefer a general journey that brings these themes together?</p>
-        <a class="youth-journey-link" href="/jovenes/33dias/" data-lang="es">Explorar el camino general de 33 días →</a>
-        <a class="youth-journey-link" href="/jovenes/33dias/" data-lang="en" style="display:none">Explore the general 33-day path →</a>
+        <p data-lang="es">Opción distinta: un camino general, no dedicado a un solo tema.</p>
+        <p data-lang="en" style="display:none">Different option: a general path, not focused on just one theme.</p>
+        <a class="youth-journey-link" href="/jovenes/33dias/" data-lang="es">Abrir el camino general de 33 días →</a>
+        <a class="youth-journey-link" href="/jovenes/33dias/" data-lang="en" style="display:none">Open the general 33-day path →</a>
       </div>
 
       <div class="youth-start-answer" id="youth-start-answer" role="status" aria-live="polite" aria-atomic="true" hidden>
@@ -1291,6 +1291,12 @@ but glorify You.
       }
     };
     const journeySlugs = { alone: 'soledad', future: 'futuro', mistake: 'volver', serve: 'servir' };
+    const journeyLabels = {
+      alone: { es: 'Abrir camino opcional de 33 días: soledad →', en: 'Open optional 33-day path: loneliness →' },
+      future: { es: 'Abrir camino opcional de 33 días: discernir mi futuro →', en: 'Open optional 33-day path: discerning my future →' },
+      mistake: { es: 'Abrir camino opcional de 33 días: volver a empezar →', en: 'Open optional 33-day path: beginning again →' },
+      serve: { es: 'Abrir camino opcional de 33 días: servir con sentido →', en: 'Open optional 33-day path: serving with purpose →' }
+    };
 
     function weekId() {
       const d = new Date();
@@ -1342,7 +1348,7 @@ but glorify You.
       document.getElementById('youth-start-step').textContent = response.step;
       const journeyLink = document.getElementById('youth-start-journey');
       journeyLink.href = `/jovenes/33dias/?tema=${journeySlugs[selectedTopic]}`;
-      journeyLink.textContent = lang === 'en' ? 'Explore this optional 33-day path →' : 'Explorar este camino opcional de 33 días →';
+      journeyLink.textContent = journeyLabels[selectedTopic][lang];
       document.getElementById('youth-start-answer').hidden = false;
     }
 
