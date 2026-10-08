@@ -149,8 +149,79 @@
     .dopa-footer { text-align: center; margin-top: 1.3rem; }
     .dopa-footer a { color: var(--gold); text-decoration: none; opacity: 0.84; font-size: 0.85rem; }
 
+    /* Readability: comfortable measure and size */
+    .dopa-sub, .dopa-section p, .dopa-section li { font-size: 1rem; max-width: 70ch; }
+    .dopa-section[id] { scroll-margin-top: 4.5rem; }
+
+    /* Quick navigation */
+    .dopa-toc { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+    .dopa-toc a {
+      border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 999px;
+      color: var(--gold-light);
+      text-decoration: none;
+      font-size: 0.85rem;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 0.95rem;
+    }
+    .dopa-toc a:hover, .dopa-toc a:focus-visible { background: rgba(201,168,76,0.12); border-color: var(--gold); outline: none; }
+
+    /* Floating emergency shortcut */
+    .dopa-sos {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      z-index: 90;
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 1.1rem;
+      border-radius: 999px;
+      background: var(--gold);
+      color: #1a1405;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+      transition: opacity var(--transition), transform var(--transition);
+    }
+    .dopa-sos:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+    .dopa-sos.is-hidden { opacity: 0; pointer-events: none; transform: translateY(10px); }
+
+    /* Checklists with large touch targets */
+    .dopa-checks { list-style: none; padding-left: 0; }
+    .dopa-checks label {
+      display: flex;
+      gap: 0.65rem;
+      align-items: flex-start;
+      min-height: 44px;
+      padding: 0.35rem 0;
+      cursor: pointer;
+    }
+    .dopa-checks input[type="checkbox"] { width: 1.3rem; height: 1.3rem; margin-top: 0.2rem; flex: none; accent-color: var(--gold); }
+    .dopa-checks input:checked + span { opacity: 0.6; text-decoration: line-through; }
+    .dopa-checks input:focus-visible { outline: 3px solid var(--gold-light); outline-offset: 2px; }
+
+    .dopa-progress { margin: 0.4rem 0 0.9rem; }
+    .dopa-progress-label { font-size: 0.82rem; color: var(--gold-light); margin: 0 0 0.3rem; }
+    .dopa-progress-bar { height: 8px; border-radius: 999px; background: rgba(255,255,255,0.1); overflow: hidden; }
+    .dopa-progress-bar > span { display: block; height: 100%; width: 0; background: var(--gold); transition: width var(--transition); }
+
+    .dopa-result { margin-top: 0.8rem; min-height: 1.5rem; }
+
+    /* 90-second pause timer */
+    .dopa-timer { text-align: center; margin: 0.9rem 0 1.1rem; }
+    .dopa-timer-time { font-family: var(--font-serif); font-size: 3rem; color: var(--gold-light); line-height: 1.1; margin: 0 0 0.5rem; }
+    .dopa-btn { min-height: 44px; }
+    .dopa-btn[hidden], .dopa-actions[hidden] { display: none; }
+
     @media (max-width: 760px) {
       .dopa-grid { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .dopa-sos, .dopa-progress-bar > span { transition: none; }
     }
   </style>
 </head>
@@ -177,6 +248,23 @@
 
       <p class="dopa-sub" data-lang="es">Si te sientes atrapado en estímulo constante, ansiedad y búsqueda de recompensa inmediata, no estás roto. Esta guía extendida te da un mapa completo para recuperar enfoque, paz y dominio propio con gracia, verdad y disciplina práctica.</p>
       <p class="dopa-sub" data-lang="en" style="display:none">If you feel trapped in constant stimulation, anxiety, and instant-reward seeking, you are not broken. This extended guide gives you a complete map to recover focus, peace, and self-mastery through grace, truth, and practical discipline.</p>
+
+      <nav class="dopa-toc" data-lang="es" aria-label="Secciones de la guía">
+        <a href="#autoevaluacion">Autoevaluación</a>
+        <a href="#protocolo-72h">72 horas</a>
+        <a href="#emergencia">Emergencia</a>
+        <a href="#camino-30">30 días</a>
+        <a href="#recaida">Si recaes</a>
+        <a href="#oracion">Oración</a>
+      </nav>
+      <nav class="dopa-toc" data-lang="en" style="display:none" aria-label="Guide sections">
+        <a href="#autoevaluacion">Self-check</a>
+        <a href="#protocolo-72h">72 hours</a>
+        <a href="#emergencia">Emergency</a>
+        <a href="#camino-30">30 days</a>
+        <a href="#recaida">If you relapse</a>
+        <a href="#oracion">Prayer</a>
+      </nav>
     </section>
 
     <section class="dopa-section">
@@ -195,27 +283,30 @@
       <p data-lang="en" style="display:none">When you repeat stimulation spikes, the brain learns to demand more intensity and less effort. This weakens patience, deep attention, and joy in simple things. The good news: with sustained practice, the brain can relearn sobriety, focus, and ordered pleasure.</p>
     </section>
 
-    <section class="dopa-section">
+    <section class="dopa-section" id="autoevaluacion">
       <h2 data-lang="es">Autoevaluación rápida (2 minutos)</h2>
       <h2 data-lang="en" style="display:none">Quick self-check (2 minutes)</h2>
 
-      <ul class="dopa-list" data-lang="es">
-        <li>Reviso el teléfono automáticamente sin necesidad real.</li>
-        <li>Me cuesta terminar tareas sin abrir nuevas ventanas o apps.</li>
-        <li>Cuando me siento vacío o ansioso busco estímulo inmediato.</li>
-        <li>Duermo tarde por uso digital nocturno.</li>
-        <li>Siento menos gusto por la oración, lectura o silencio.</li>
+      <ul class="dopa-list dopa-checks" data-lang="es">
+        <li><label><input type="checkbox" data-group="check" data-key="c1"><span>Reviso el teléfono automáticamente sin necesidad real.</span></label></li>
+        <li><label><input type="checkbox" data-group="check" data-key="c2"><span>Me cuesta terminar tareas sin abrir nuevas ventanas o apps.</span></label></li>
+        <li><label><input type="checkbox" data-group="check" data-key="c3"><span>Cuando me siento vacío o ansioso busco estímulo inmediato.</span></label></li>
+        <li><label><input type="checkbox" data-group="check" data-key="c4"><span>Duermo tarde por uso digital nocturno.</span></label></li>
+        <li><label><input type="checkbox" data-group="check" data-key="c5"><span>Siento menos gusto por la oración, lectura o silencio.</span></label></li>
       </ul>
-      <ul class="dopa-list" data-lang="en" style="display:none">
-        <li>I check my phone automatically without real need.</li>
-        <li>I struggle to finish tasks without opening new apps or tabs.</li>
-        <li>When I feel empty or anxious, I seek instant stimulation.</li>
-        <li>I go to sleep late due to nighttime screen use.</li>
-        <li>I feel less interest in prayer, reading, or silence.</li>
+      <ul class="dopa-list dopa-checks" data-lang="en" style="display:none">
+        <li><label><input type="checkbox" data-group="check" data-key="c1"><span>I check my phone automatically without real need.</span></label></li>
+        <li><label><input type="checkbox" data-group="check" data-key="c2"><span>I struggle to finish tasks without opening new apps or tabs.</span></label></li>
+        <li><label><input type="checkbox" data-group="check" data-key="c3"><span>When I feel empty or anxious, I seek instant stimulation.</span></label></li>
+        <li><label><input type="checkbox" data-group="check" data-key="c4"><span>I go to sleep late due to nighttime screen use.</span></label></li>
+        <li><label><input type="checkbox" data-group="check" data-key="c5"><span>I feel less interest in prayer, reading, or silence.</span></label></li>
       </ul>
 
-      <p data-lang="es">Si marcaste 3 o más, necesitas una estrategia deliberada, no solo buena voluntad.</p>
-      <p data-lang="en" style="display:none">If you checked 3 or more, you need a deliberate strategy, not only good intentions.</p>
+      <p class="dopa-result" id="checkResult" role="status" aria-live="polite" data-msg-es-0="Marca lo que te identifique; el resultado aparece aquí." data-msg-en-0="Check what applies to you; the result appears here." data-msg-es-low="Marcaste menos de 3: buen punto de partida. Aun así, el protocolo de 72 horas te ayuda a prevenir." data-msg-en-low="You checked fewer than 3: a good starting point. The 72-hour protocol still helps you prevent." data-msg-es-high="Marcaste 3 o más: necesitas una estrategia deliberada, no solo buena voluntad. Empieza por el protocolo de 72 horas." data-msg-en-high="You checked 3 or more: you need a deliberate strategy, not only good intentions. Start with the 72-hour protocol."></p>
+      <div class="dopa-actions">
+        <a class="dopa-btn" href="#protocolo-72h" data-lang="es">Ir al protocolo de 72 horas →</a>
+        <a class="dopa-btn" href="#protocolo-72h" data-lang="en" style="display:none">Go to the 72-hour protocol →</a>
+      </div>
     </section>
 
     <section class="dopa-section">
@@ -259,77 +350,90 @@
       <p data-lang="en" style="display:none"><strong>Practical conclusion:</strong> your battle does not begin when you already hit the spike; it begins one or two stages earlier. If you learn to detect the trigger and the search for relief, you win much sooner.</p>
     </section>
 
-    <section class="dopa-section">
+    <section class="dopa-section" id="protocolo-72h">
       <h2 data-lang="es">Protocolo de 72 horas para cortar el ciclo</h2>
       <h2 data-lang="en" style="display:none">72-hour protocol to interrupt the cycle</h2>
+
+      <div class="dopa-progress">
+        <p class="dopa-progress-label" id="p72Label" aria-live="polite"></p>
+        <div class="dopa-progress-bar" aria-hidden="true"><span id="p72Bar"></span></div>
+      </div>
 
       <div class="dopa-grid">
         <article class="dopa-card">
           <h3 data-lang="es">1. Cierre de puerta</h3>
           <h3 data-lang="en" style="display:none">1. Door closing</h3>
-          <ul class="dopa-list" data-lang="es">
-            <li>Silencia notificaciones no esenciales.</li>
-            <li>Quita apps gatillo de la pantalla principal.</li>
-            <li>Usa bloqueos horarios para redes y contenido tóxico.</li>
+          <ul class="dopa-list dopa-checks" data-lang="es">
+            <li><label><input type="checkbox" data-group="p72" data-key="a1"><span>Silencia notificaciones no esenciales.</span></label></li>
+            <li><label><input type="checkbox" data-group="p72" data-key="a2"><span>Quita apps gatillo de la pantalla principal.</span></label></li>
+            <li><label><input type="checkbox" data-group="p72" data-key="a3"><span>Usa bloqueos horarios para redes y contenido tóxico.</span></label></li>
           </ul>
-          <ul class="dopa-list" data-lang="en" style="display:none">
-            <li>Silence non-essential notifications.</li>
-            <li>Remove trigger apps from your home screen.</li>
-            <li>Set time-based blockers for social media and toxic content.</li>
+          <ul class="dopa-list dopa-checks" data-lang="en" style="display:none">
+            <li><label><input type="checkbox" data-group="p72" data-key="a1"><span>Silence non-essential notifications.</span></label></li>
+            <li><label><input type="checkbox" data-group="p72" data-key="a2"><span>Remove trigger apps from your home screen.</span></label></li>
+            <li><label><input type="checkbox" data-group="p72" data-key="a3"><span>Set time-based blockers for social media and toxic content.</span></label></li>
           </ul>
         </article>
 
         <article class="dopa-card">
           <h3 data-lang="es">2. Reinicio fisiológico</h3>
           <h3 data-lang="en" style="display:none">2. Physiological reset</h3>
-          <ul class="dopa-list" data-lang="es">
-            <li>Duerme 7-8 horas y fija hora de despertar.</li>
-            <li>Camina 20-30 minutos diarios.</li>
-            <li>Hidrata, respira profundo y evita maratones nocturnos de pantalla.</li>
+          <ul class="dopa-list dopa-checks" data-lang="es">
+            <li><label><input type="checkbox" data-group="p72" data-key="b1"><span>Duerme 7-8 horas y fija hora de despertar.</span></label></li>
+            <li><label><input type="checkbox" data-group="p72" data-key="b2"><span>Camina 20-30 minutos diarios.</span></label></li>
+            <li><label><input type="checkbox" data-group="p72" data-key="b3"><span>Hidrata, respira profundo y evita maratones nocturnos de pantalla.</span></label></li>
           </ul>
-          <ul class="dopa-list" data-lang="en" style="display:none">
-            <li>Sleep 7-8 hours and fix wake-up time.</li>
-            <li>Walk 20-30 minutes daily.</li>
-            <li>Hydrate, breathe deeply, and avoid late-night screen binges.</li>
+          <ul class="dopa-list dopa-checks" data-lang="en" style="display:none">
+            <li><label><input type="checkbox" data-group="p72" data-key="b1"><span>Sleep 7-8 hours and fix wake-up time.</span></label></li>
+            <li><label><input type="checkbox" data-group="p72" data-key="b2"><span>Walk 20-30 minutes daily.</span></label></li>
+            <li><label><input type="checkbox" data-group="p72" data-key="b3"><span>Hydrate, breathe deeply, and avoid late-night screen binges.</span></label></li>
           </ul>
         </article>
 
         <article class="dopa-card">
           <h3 data-lang="es">3. Regla espiritual mínima</h3>
           <h3 data-lang="en" style="display:none">3. Minimum spiritual rule</h3>
-          <ul class="dopa-list" data-lang="es">
-            <li>10 minutos de Evangelio al despertar.</li>
-            <li>5 minutos de silencio sin teléfono.</li>
-            <li>Una oración corta antes de cada decisión impulsiva.</li>
+          <ul class="dopa-list dopa-checks" data-lang="es">
+            <li><label><input type="checkbox" data-group="p72" data-key="s1"><span>10 minutos de Evangelio al despertar.</span></label></li>
+            <li><label><input type="checkbox" data-group="p72" data-key="s2"><span>5 minutos de silencio sin teléfono.</span></label></li>
+            <li><label><input type="checkbox" data-group="p72" data-key="s3"><span>Una oración corta antes de cada decisión impulsiva.</span></label></li>
           </ul>
-          <ul class="dopa-list" data-lang="en" style="display:none">
-            <li>10 minutes of Gospel reading at wake-up.</li>
-            <li>5 minutes of silence with no phone.</li>
-            <li>A short prayer before each impulsive choice.</li>
+          <ul class="dopa-list dopa-checks" data-lang="en" style="display:none">
+            <li><label><input type="checkbox" data-group="p72" data-key="s1"><span>10 minutes of Gospel reading at wake-up.</span></label></li>
+            <li><label><input type="checkbox" data-group="p72" data-key="s2"><span>5 minutes of silence with no phone.</span></label></li>
+            <li><label><input type="checkbox" data-group="p72" data-key="s3"><span>A short prayer before each impulsive choice.</span></label></li>
           </ul>
         </article>
 
         <article class="dopa-card">
           <h3 data-lang="es">4. Compromiso de verdad</h3>
           <h3 data-lang="en" style="display:none">4. Truth commitment</h3>
-          <ul class="dopa-list" data-lang="es">
-            <li>Escribe tu principal gatillo y tu plan de salida.</li>
-            <li>Comparte tu compromiso con alguien de confianza.</li>
-            <li>Si hay compulsiones fuertes, busca apoyo profesional.</li>
+          <ul class="dopa-list dopa-checks" data-lang="es">
+            <li><label><input type="checkbox" data-group="p72" data-key="t1"><span>Escribe tu principal gatillo y tu plan de salida.</span></label></li>
+            <li><label><input type="checkbox" data-group="p72" data-key="t2"><span>Comparte tu compromiso con alguien de confianza.</span></label></li>
+            <li><label><input type="checkbox" data-group="p72" data-key="t3"><span>Si hay compulsiones fuertes, busca apoyo profesional.</span></label></li>
           </ul>
-          <ul class="dopa-list" data-lang="en" style="display:none">
-            <li>Write your main trigger and your exit plan.</li>
-            <li>Share your commitment with a trusted person.</li>
-            <li>If compulsions are strong, seek professional help.</li>
+          <ul class="dopa-list dopa-checks" data-lang="en" style="display:none">
+            <li><label><input type="checkbox" data-group="p72" data-key="t1"><span>Write your main trigger and your exit plan.</span></label></li>
+            <li><label><input type="checkbox" data-group="p72" data-key="t2"><span>Share your commitment with a trusted person.</span></label></li>
+            <li><label><input type="checkbox" data-group="p72" data-key="t3"><span>If compulsions are strong, seek professional help.</span></label></li>
           </ul>
         </article>
       </div>
     </section>
 
-    <section class="dopa-section">
+    <section class="dopa-section" id="emergencia">
       <h2 data-lang="es">Protocolo de emergencia (cuando viene el impulso fuerte)</h2>
       <h2 data-lang="en" style="display:none">Emergency protocol (when the strong urge hits)</h2>
 
+      <div class="dopa-timer">
+        <p class="dopa-timer-time" id="pauseTime" role="timer">1:30</p>
+        <div class="dopa-actions" style="justify-content:center">
+          <button class="dopa-btn" type="button" id="pauseStart"><span data-lang="es">Iniciar pausa de 90 segundos</span><span data-lang="en" style="display:none">Start 90-second pause</span></button>
+          <button class="dopa-btn" type="button" id="pauseReset" hidden><span data-lang="es">Reiniciar</span><span data-lang="en" style="display:none">Reset</span></button>
+        </div>
+        <p id="pauseDone" role="status" aria-live="polite" style="margin:0.6rem auto 0" data-msg-es="Pausa completada. Ahora cambia de contexto (paso 2)." data-msg-en="Pause complete. Now change context (step 2)."></p>
+      </div>
       <div class="dopa-grid">
         <article class="dopa-card">
           <h3 data-lang="es">Paso 1: Pausa de 90 segundos</h3>
@@ -361,7 +465,7 @@
       </div>
     </section>
 
-    <section class="dopa-section">
+    <section class="dopa-section" id="camino-30">
       <h2 data-lang="es">Camino de 30 días para reordenar hábitos</h2>
       <h2 data-lang="en" style="display:none">30-day path to reorder habits</h2>
 
@@ -408,7 +512,7 @@
 <cite>— 1 Corinthians 6:12</cite></blockquote>
     </section>
 
-    <section class="dopa-section">
+    <section class="dopa-section" id="recaida">
       <h2 data-lang="es">Si recaes: qué hacer en las primeras 12 horas</h2>
       <h2 data-lang="en" style="display:none">If you relapse: what to do in the first 12 hours</h2>
 
@@ -428,7 +532,7 @@
       </ul>
     </section>
 
-    <section class="dopa-section">
+    <section class="dopa-section" id="oracion">
       <h2 data-lang="es">Oración para recuperar dominio propio</h2>
       <h2 data-lang="en" style="display:none">Prayer to recover self-mastery</h2>
 
@@ -470,9 +574,9 @@ teach me to choose what gives life.
 Jesus, I trust in You.
 Amen.</div>
 
-      <div class="dopa-actions">
-        <button class="dopa-btn" type="button" onclick="readPrayer()">🔊 <span data-lang="es">Escuchar oración</span><span data-lang="en" style="display:none">Listen to prayer</span></button>
-        <button class="dopa-btn" type="button" onclick="stopPrayer()">⏹ <span data-lang="es">Detener</span><span data-lang="en" style="display:none">Stop</span></button>
+      <div class="dopa-actions" id="prayerActions">
+        <button class="dopa-btn" type="button" onclick="readPrayer()"><span aria-hidden="true">🔊</span> <span data-lang="es">Escuchar oración</span><span data-lang="en" style="display:none">Listen to prayer</span></button>
+        <button class="dopa-btn" type="button" onclick="stopPrayer()"><span aria-hidden="true">⏹</span> <span data-lang="es">Detener</span><span data-lang="en" style="display:none">Stop</span></button>
       </div>
     </section>
 
@@ -516,6 +620,10 @@ Amen.</div>
     </div>
   </main>
 
+  <a href="#emergencia" class="dopa-sos" id="dopaSos">
+    <span data-lang="es">Tengo un impulso ahora</span><span data-lang="en" style="display:none">I have an urge now</span>
+  </a>
+
   <script>
     (function () {
       'use strict';
@@ -540,6 +648,94 @@ Amen.</div>
       });
 
       applyLang(lang);
+    })();
+
+    (function () {
+      'use strict';
+      const curLang = () => localStorage.getItem('tup_lang') || 'es';
+      const store = (k, v) => { try { v === null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch (e) {} };
+      const load = (k) => { try { return localStorage.getItem(k); } catch (e) { return null; } };
+
+      // Checklists: shared state across ES/EN copies; the 72h group persists.
+      const boxes = Array.from(document.querySelectorAll('input[data-group]'));
+      const p72Keys = new Set(boxes.filter((b) => b.dataset.group === 'p72').map((b) => b.dataset.key));
+      const checkMsg = document.getElementById('checkResult');
+      const p72Label = document.getElementById('p72Label');
+      const p72Bar = document.getElementById('p72Bar');
+
+      function setKey(group, key, on) {
+        boxes.filter((b) => b.dataset.group === group && b.dataset.key === key).forEach((b) => { b.checked = on; });
+      }
+
+      function refresh() {
+        const l = curLang();
+        const done = Array.from(p72Keys).filter((k) => load('tup_dopa_' + k) === '1').length;
+        p72Label.textContent = l === 'en'
+          ? done + ' of ' + p72Keys.size + ' steps done'
+          : done + ' de ' + p72Keys.size + ' pasos completados';
+        p72Bar.style.width = (done / p72Keys.size * 100) + '%';
+
+        const checked = new Set(boxes.filter((b) => b.dataset.group === 'check' && b.checked).map((b) => b.dataset.key)).size;
+        const kind = checked === 0 ? '0' : checked < 3 ? 'low' : 'high';
+        checkMsg.textContent = checkMsg.getAttribute('data-msg-' + l + '-' + kind);
+      }
+
+      p72Keys.forEach((k) => setKey('p72', k, load('tup_dopa_' + k) === '1'));
+      boxes.forEach((b) => b.addEventListener('change', () => {
+        setKey(b.dataset.group, b.dataset.key, b.checked);
+        if (b.dataset.group === 'p72') store('tup_dopa_' + b.dataset.key, b.checked ? '1' : null);
+        refresh();
+      }));
+      window.addEventListener('tup:langchange', refresh);
+      refresh();
+
+      // 90-second pause timer
+      const timeEl = document.getElementById('pauseTime');
+      const startBtn = document.getElementById('pauseStart');
+      const resetBtn = document.getElementById('pauseReset');
+      const doneEl = document.getElementById('pauseDone');
+      const TOTAL = 90;
+      let timer = null;
+      let endAt = 0;
+
+      const fmt = (s) => Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+      function stop() { clearInterval(timer); timer = null; }
+      function reset() {
+        stop();
+        timeEl.textContent = fmt(TOTAL);
+        doneEl.textContent = '';
+        startBtn.hidden = false;
+        resetBtn.hidden = true;
+      }
+      function tick() {
+        const left = Math.max(0, Math.ceil((endAt - Date.now()) / 1000));
+        timeEl.textContent = fmt(left);
+        if (left === 0) {
+          stop();
+          doneEl.textContent = doneEl.getAttribute('data-msg-' + curLang());
+          if (navigator.vibrate) navigator.vibrate(200);
+        }
+      }
+      startBtn.addEventListener('click', () => {
+        endAt = Date.now() + TOTAL * 1000;
+        startBtn.hidden = true;
+        resetBtn.hidden = false;
+        timer = setInterval(tick, 250);
+        tick();
+      });
+      resetBtn.addEventListener('click', reset);
+
+      // Hide the floating shortcut while the emergency section is on screen
+      const sos = document.getElementById('dopaSos');
+      const target = document.getElementById('emergencia');
+      if (sos && target && 'IntersectionObserver' in window) {
+        new IntersectionObserver((entries) => {
+          sos.classList.toggle('is-hidden', entries[0].isIntersecting);
+        }).observe(target);
+      }
+
+      // Hide speech controls when unsupported
+      if (!window.speechSynthesis) document.getElementById('prayerActions').hidden = true;
     })();
 
     function readPrayer() {
