@@ -421,6 +421,22 @@
       color: var(--gold-light);
     }
 
+    .tent-fold > summary {
+      color: var(--gold-light);
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      cursor: pointer;
+      margin-bottom: 0.6rem;
+    }
+
+    .tent-fold:not([open]) > summary {
+      margin-bottom: 0;
+    }
+
+    .tent-fold .tent-prayer {
+      margin-bottom: 0.7rem;
+    }
+
     .tent-emergency-choices {
       display: grid;
       gap: 0.55rem;
@@ -459,8 +475,24 @@
 
     @media (max-width: 700px) {
       .tent-wrap {
-        padding: 0.9rem 0.75rem 6rem;
+        padding: 0.9rem 0.75rem 9rem;
+        display: flex;
+        flex-direction: column;
       }
+
+      .tent-hero { order: 1; }
+      .tent-grid { order: 2; }
+      .tent-catechesis { order: 3; }
+      .tent-wrap > section:last-child { order: 4; }
+
+      .tent-controls,
+      .tent-nav-card,
+      .tent-visual,
+      .tent-actions .full {
+        display: none;
+      }
+
+      .tent-hero::before { display: none; }
 
       .tent-hero {
         padding: 1rem 0.95rem;
@@ -498,7 +530,7 @@
       }
 
       .tent-card {
-        padding-bottom: 5.8rem;
+        padding-bottom: 1rem;
       }
     }
 
@@ -679,9 +711,9 @@ Jesus, I trust in You. Amen.</div>
           </div>
         </section>
 
-        <section class="tent-card">
-          <h2 class="tent-card-title" data-lang="es">Oraciones completas para el combate</h2>
-          <h2 class="tent-card-title" data-lang="en" style="display:none">Full prayers for the battle</h2>
+        <details class="tent-card tent-fold">
+          <summary data-lang="es">Oraciones completas para el combate</summary>
+          <summary data-lang="en" style="display:none">Full prayers for the battle</summary>
 
           <div class="tent-prayer" data-lang="es"><strong>Padre Nuestro</strong>
 Padre nuestro, que estás en el cielo,
@@ -810,7 +842,7 @@ O Lord, open my lips,
 and my mouth shall show forth Your praise.
 The sacrifices of God are a broken spirit,
 a broken and contrite heart, O God, You will not despise.</div>
-        </section>
+        </details>
       </div>
 
       <aside class="tent-secondary">
@@ -849,9 +881,9 @@ a broken and contrite heart, O God, You will not despise.</div>
           <p class="tent-visual-copy" data-lang="en" style="display:none">The fastest antidote is usually very concrete: change places, put down the screen, breathe, call someone, and pray a short prayer without arguing with the desire.</p>
         </section>
 
-        <section class="tent-action-card">
-          <h2 class="tent-action-title" data-lang="es">Prevención diaria</h2>
-          <h2 class="tent-action-title" data-lang="en" style="display:none">Daily prevention</h2>
+        <details class="tent-action-card tent-fold">
+          <summary data-lang="es">Prevención diaria</summary>
+          <summary data-lang="en" style="display:none">Daily prevention</summary>
           <div class="tent-points">
             <div class="tent-point">
               <h3 data-lang="es">1. No le abras la puerta al hábito</h3>
@@ -884,7 +916,7 @@ a broken and contrite heart, O God, You will not despise.</div>
               <p data-lang="en" style="display:none">If you fell, do not stay staring at the fall. Repent, get up, confess when needed, and return to the battle with humility.</p>
             </div>
           </div>
-        </section>
+        </details>
       </aside>
     </section>
 
@@ -1086,6 +1118,10 @@ a broken and contrite heart, O God, You will not despise.</div>
       let speaking = false;
       let speakRunId = 0;
 
+      if (window.matchMedia('(min-width: 701px)').matches) {
+        document.querySelectorAll('details.tent-fold').forEach(d => { d.open = true; });
+      }
+
       function cleanSpeechText(text) {
         return (text || '')
           .replace(/\*[^*]+\*/g, '')
@@ -1175,6 +1211,7 @@ a broken and contrite heart, O God, You will not despise.</div>
       function renderStep() {
         const step = STEPS[currentStep];
         stepTitle.textContent = step.title[currentLang];
+        stepPill.textContent = (currentLang === 'es' ? 'Paso ' : 'Step ') + (currentStep + 1) + (currentLang === 'es' ? ' de ' : ' of ') + STEPS.length;
         stepPrayer.textContent = step.prayer[currentLang];
         stepAction.textContent = step.action[currentLang];
         stepAntidote.textContent = step.antidote[currentLang];
