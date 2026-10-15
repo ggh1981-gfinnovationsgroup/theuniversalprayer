@@ -255,6 +255,16 @@
     }
     .youth-pillar-chip span { font-size: 1.1rem; }
     .youth-section { margin-bottom: 2.75rem; }
+    @media (max-width: 700px) {
+      .youth-section.is-fold { margin-bottom: 0.7rem; padding: 0.9rem 1rem; border: 1px solid rgba(201,168,76,0.22); border-radius: 12px; background: rgba(255,255,255,0.025); }
+      .youth-section.is-fold .youth-section-title { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; font-size: 1.1rem; }
+      .youth-section.is-fold > .youth-section-head, .youth-section.is-fold > h2.youth-section-title { cursor: pointer; position: relative; padding-right: 1.6rem; margin-bottom: 0; }
+      .youth-section.is-fold > .youth-section-head::after, .youth-section.is-fold > h2.youth-section-title::after { content: '+'; position: absolute; right: 0; top: 0; color: var(--gold); font-family: var(--font-sans); }
+      .youth-section.is-fold:not(.fold-closed) > .youth-section-head::after, .youth-section.is-fold:not(.fold-closed) > h2.youth-section-title::after { content: '\2212'; }
+      .youth-section.is-fold:not(.fold-closed) > .youth-section-head, .youth-section.is-fold:not(.fold-closed) > h2.youth-section-title { margin-bottom: 1rem; }
+      .youth-section.is-fold.fold-closed > *:not(.youth-section-head):not(h2.youth-section-title) { display: none; }
+      .youth-section.is-fold.fold-closed .youth-section-sub { display: none; }
+    }
     .youth-section-head {
       display: flex;
       align-items: flex-start;
@@ -1409,6 +1419,16 @@ but glorify You.
     });
     applyLang(lang);
   })();
+  </script>
+  <script>
+    // En móvil cada bloque largo inicia cerrado; el CSS solo lo pliega en <=700px.
+    document.querySelectorAll('.youth-section').forEach(function (s) {
+      s.classList.add('is-fold', 'fold-closed');
+    });
+    document.addEventListener('click', function (e) {
+      var t = e.target.closest('.youth-section > .youth-section-head, .youth-section > h2.youth-section-title');
+      if (t && window.matchMedia('(max-width: 700px)').matches) t.parentNode.classList.toggle('fold-closed');
+    });
   </script>
   <script src="../assets/js/menu.js"></script>
 </body>
