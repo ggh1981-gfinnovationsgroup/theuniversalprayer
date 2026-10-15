@@ -71,11 +71,14 @@
 
   function injectContactFab() {
     if (document.getElementById('contactFab')) return;
+    var inner = document.querySelector('header .header-inner');
+    if (!inner) return;
     var a = document.createElement('a');
     a.id = 'contactFab';
-    a.className = 'contact-fab';
+    a.className = 'contact-hdr';
     a.href = CONTACT_MAILTO;
-    document.body.appendChild(a);
+    var toggle = inner.querySelector('.lang-toggle');
+    inner.insertBefore(a, toggle || inner.lastElementChild);
     renderContactFab(getLang());
   }
 
@@ -83,8 +86,9 @@
     var a = document.getElementById('contactFab');
     if (!a) return;
     var label = lang === 'en' ? 'Contact us' : 'Cont\u00e1ctanos';
-    a.setAttribute('aria-label', label + ' - ' + CONTACT_EMAIL);
-    a.innerHTML = '<span aria-hidden="true" class="contact-fab-icon">\u2709\uFE0F</span><span class="contact-fab-text"><strong>' + label + '</strong><small>' + CONTACT_EMAIL + '</small></span>';
+    a.setAttribute('aria-label', label);
+    a.removeAttribute('title');
+    a.innerHTML = '<span aria-hidden="true">\u2709\uFE0F</span>';
   }
 
   function getLang() {
