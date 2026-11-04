@@ -151,3 +151,42 @@ test('está registrada en menú, sitemap y service worker', async ({ page }) => 
   expect(fs.readFileSync(path.join(root, 'sw.js'), 'utf8')).toContain("'/maria/'");
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', 'https://www.theuniversalprayer.com/maria/');
 });
+
+const VIEWPORTS = [
+  { width: 320, height: 568 },
+  { width: 375, height: 667 },
+  { width: 390, height: 844 },
+  { width: 768, height: 1024 },
+  { width: 1024, height: 768 },
+  { width: 1280, height: 800 },
+  { width: 1920, height: 1080 },
+];
+
+for (const viewport of VIEWPORTS) {
+  test(`los accesos rápidos no quedan bajo el header (${viewport.width}px)`, async ({ page }) => {
+    await page.setViewportSize(viewport);
+    const hrefs = await page.locator('.maria-index a').evaluateAll(links => links.map(a => a.getAttribute('href')));
+    expect(hrefs.length).toBeGreaterThan(0);
+
+    for (const href of hrefs) {
+      await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
+      await page.locator(`.maria-index a[href="${href}"]`).focus();
+      await page.keyboard.press('Enter');
+
+      const gap = await page.evaluate(async selector => {
+        let last = -1;
+        let stable = 0;
+        while (stable < 5) {
+          await new Promise(r => setTimeout(r, 60));
+          if (window.scrollY === last) stable++;
+          else { stable = 0; last = window.scrollY; }
+        }
+        const target = document.querySelector(selector);
+        const header = document.querySelector('.site-header');
+        return target.getBoundingClientRect().top - header.getBoundingClientRect().bottom;
+      }, href);
+
+      expect(gap, `${href} queda tapado por el header`).toBeGreaterThanOrEqual(0);
+    }
+  });
+}

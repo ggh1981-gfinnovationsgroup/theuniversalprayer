@@ -33,6 +33,19 @@
       padding: 1.4rem 1rem 4rem;
     }
 
+    /* Keeps anchor targets clear of the sticky site header. */
+    .maria-section[id],
+    .maria-card[id] {
+      scroll-margin-top: 5.5rem;
+    }
+
+    @media (max-width: 374px) {
+      .maria-section[id],
+      .maria-card[id] {
+        scroll-margin-top: 7.25rem;
+      }
+    }
+
     .maria-hero,
     .maria-section,
     .maria-card {
