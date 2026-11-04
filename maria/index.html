@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bajo el manto de María | The Universal Prayer</title>
+  <meta name="description" content="Página católica dedicada a la Virgen María: el manto de su protección, devociones marianas y cómo rezarlas (Rosario, Ángelus, Bajo tu amparo, Acordaos, Inmaculado Corazón, Desatanudos, Totus Tuus, Escapulario) con fuentes del Vaticano." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bajo el manto de María | The Universal Prayer" />
+  <meta property="og:description" content="Devociones marianas, cómo rezarlas y oraciones para acogerse a la protección de la Madre de Dios." />
+  <meta property="og:url" content="https://www.theuniversalprayer.com/maria/" />
+  <meta property="og:image" content="https://www.theuniversalprayer.com/assets/images/icon.svg" />
+  <link rel="canonical" href="https://www.theuniversalprayer.com/maria/" />
+  <meta name="theme-color" content="#c9a84c" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" href="/assets/images/icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    body.maria-page {
+      min-height: 100dvh;
+      background:
+        radial-gradient(1000px 600px at 50% -120px, rgba(60,110,190,0.20), transparent 60%),
+        radial-gradient(900px 520px at 90% 0%, rgba(201,168,76,0.12), transparent 48%),
+        var(--bg);
+    }
+
+    .maria-wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 1.4rem 1rem 4rem;
+    }
+
+    .maria-hero,
+    .maria-section,
+    .maria-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(60,110,190,0.10), rgba(22,27,46,0.90));
+      padding: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .maria-hero {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      padding: 1.8rem 1.2rem;
+    }
+
+    .maria-hero::before {
+      content: '✦  M  ✦';
+      position: absolute;
+      top: 0.9rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(231,207,136,0.28);
+      letter-spacing: 0.9em;
+      font-size: 0.72rem;
+      pointer-events: none;
+    }
+
+    .maria-eyebrow {
+      color: var(--gold);
+      letter-spacing: 0.14em;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      margin: 0.8rem 0 0.4rem;
+    }
+
+    .maria-hero h1,
+    .maria-section h2,
+    .maria-heading,
+    .maria-section h3,
+    .maria-card h3 {
+      font-family: var(--font-serif);
+      color: var(--gold-light);
+      line-height: 1.2;
+    }
+
+    .maria-hero h1 {
+      font-size: clamp(1.7rem, 3.6vw, 2.7rem);
+      margin-bottom: 0.6rem;
+    }
+
+    .maria-section h2,
+    .maria-heading {
+      font-size: clamp(1.25rem, 2.4vw, 1.6rem);
+      margin-bottom: 0.6rem;
+    }
+
+    .maria-heading {
+      text-align: center;
+      margin: 1.6rem 0 0.9rem;
+    }
+
+    .maria-section h3,
+    .maria-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.45rem;
+    }
+
+    .maria-section h3 {
+      margin-top: 1.1rem;
+    }
+
+    .maria-hero p,
+    .maria-section p,
+    .maria-card p,
+    .maria-card li,
+    .maria-section li {
+      color: var(--white-dim);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .maria-hero p {
+      max-width: 68ch;
+      margin: 0 auto;
+    }
+
+    .maria-section p + p,
+    .maria-card p + p {
+      margin-top: 0.6rem;
+    }
+
+    .maria-index {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      justify-content: center;
+      margin-top: 1rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    .maria-index a,
+    .maria-links a {
+      display: inline-block;
+      border: 1px solid var(--gold-dim);
+      background: var(--bg-card);
+      color: var(--white);
+      border-radius: 999px;
+      padding: 0.38rem 0.75rem;
+      font-size: 0.84rem;
+      text-decoration: none;
+      transition: all var(--transition);
+    }
+
+    .maria-index a:hover,
+    .maria-index a:focus-visible,
+    .maria-links a:hover,
+    .maria-links a:focus-visible {
+      border-color: var(--gold);
+      color: var(--gold-light);
+      outline: none;
+    }
+
+    .maria-prayer {
+      border-left: 3px solid var(--gold);
+      background: rgba(201,168,76,0.07);
+      border-radius: 0 10px 10px 0;
+      padding: 0.85rem 1rem;
+      margin: 0.8rem 0;
+      color: var(--white);
+      font-family: var(--font-serif);
+      font-size: 1.02rem;
+      line-height: 1.75;
+      white-space: pre-line;
+    }
+
+    .maria-mantle .maria-prayer {
+      font-size: 1.08rem;
+    }
+
+    .maria-card details {
+      margin-top: 0.7rem;
+      border-top: 1px solid var(--border);
+      padding-top: 0.6rem;
+    }
+
+    .maria-card summary {
+      cursor: pointer;
+      color: var(--gold);
+      font-weight: 700;
+      font-size: 0.92rem;
+      padding: 0.3rem 0;
+    }
+
+    .maria-card summary:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 3px;
+    }
+
+    .maria-how {
+      margin: 0.5rem 0 0.4rem 1.2rem;
+    }
+
+    .maria-how li + li {
+      margin-top: 0.3rem;
+    }
+
+    .maria-note {
+      font-size: 0.86rem !important;
+      border: 1px dashed var(--gold-dim);
+      border-radius: 10px;
+      padding: 0.65rem 0.8rem;
+      margin-top: 0.7rem;
+    }
+
+    .maria-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-top: 0.7rem;
+    }
+
+    .maria-source {
+      font-size: 0.8rem !important;
+      margin-top: 0.6rem;
+    }
+
+    .maria-source a,
+    .maria-sources a {
+      color: var(--gold-light);
+    }
+
+    .maria-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 0.6rem;
+      margin-top: 0.8rem;
+    }
+
+    .maria-grid a {
+      display: block;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.7rem 0.8rem;
+      background: var(--bg-card);
+      color: var(--white);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: border-color var(--transition);
+    }
+
+    .maria-grid a:hover,
+    .maria-grid a:focus-visible {
+      border-color: var(--gold);
+      outline: none;
+    }
+
+    .maria-grid small {
+      display: block;
+      color: var(--white-dim);
+      font-size: 0.76rem;
+      margin-top: 0.2rem;
+    }
+
+    .maria-sources li {
+      margin-left: 1.1rem;
+    }
+  </style>
+</head>
+<body class="maria-page">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link">
+        <span class="cross">✝</span>
+        <span class="logo-text">The Universal Prayer</span>
+      </a>
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Cambiar idioma / Switch language">EN</button>
+      <button class="hamburger" id="hamburgerBtn" type="button" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="maria-wrap">
+    <section class="maria-hero">
+      <p class="maria-eyebrow"><span data-lang="es">Totus tuus · A Jesús por María</span><span data-lang="en" style="display:none">Totus tuus · To Jesus through Mary</span></p>
+      <h1><span data-lang="es">Bajo el manto de María</span><span data-lang="en" style="display:none">Under Mary's mantle</span></h1>
+      <p data-lang="es">María no compite con Jesús: nos lleva a Él. Desde los primeros siglos los cristianos se acogen a su protección en los peligros y necesidades. Aquí encontrarás las devociones marianas de la Iglesia, cómo rezarlas paso a paso y enlaces a todo lo que ya existe sobre la Virgen en este sitio.</p>
+      <p data-lang="en" style="display:none">Mary does not compete with Jesus: she leads us to Him. Since the first centuries Christians have taken refuge in her protection in dangers and needs. Here you will find the Church's Marian devotions, how to pray them step by step, and links to everything about Our Lady already on this site.</p>
+      <ul class="maria-index" aria-label="Accesos rápidos / Quick links">
+        <li><a href="#acompanamiento"><span data-lang="es">💙 Cuando la lucha vuelve</span><span data-lang="en" style="display:none">💙 When the struggle returns</span></a></li>
+        <li><a href="#dev-rosario"><span data-lang="es">📿 Rosario</span><span data-lang="en" style="display:none">📿 Rosary</span></a></li>
+        <li><a href="#dev-angelus"><span data-lang="es">🔔 Ángelus</span><span data-lang="en" style="display:none">🔔 Angelus</span></a></li>
+        <li><a href="#dev-amparo"><span data-lang="es">🛡️ Bajo tu amparo</span><span data-lang="en" style="display:none">🛡️ We fly to thy protection</span></a></li>
+        <li><a href="#dev-acordaos"><span data-lang="es">🤍 Acordaos</span><span data-lang="en" style="display:none">🤍 Memorare</span></a></li>
+        <li><a href="#dev-inmaculado"><span data-lang="es">💙 Inmaculado Corazón</span><span data-lang="en" style="display:none">💙 Immaculate Heart</span></a></li>
+        <li><a href="#dev-desatanudos"><span data-lang="es">🪢 Desatanudos</span><span data-lang="en" style="display:none">🪢 Undoer of Knots</span></a></li>
+        <li><a href="#dev-totus"><span data-lang="es">✍️ Totus Tuus</span><span data-lang="en" style="display:none">✍️ Totus Tuus</span></a></li>
+        <li><a href="#dev-escapulario"><span data-lang="es">🟫 Escapulario</span><span data-lang="en" style="display:none">🟫 Scapular</span></a></li>
+        <li><a href="#dev-encarnacion"><span data-lang="es">🌱 Tres Salves (9 meses)</span><span data-lang="en" style="display:none">🌱 Three Hail Holy Queens (9 months)</span></a></li>
+      </ul>
+    </section>
+
+    <section class="maria-section" aria-labelledby="whyTitle">
+      <h2 id="whyTitle"><span data-lang="es">Por qué acudir a María</span><span data-lang="en" style="display:none">Why turn to Mary</span></h2>
+      <p data-lang="es">Desde la cruz, Jesús nos la dio por Madre: «Ahí tienes a tu madre» (Jn 19,27). La Iglesia enseña que la Virgen es venerada como Madre de Dios, «bajo cuya protección se acogen los fieles suplicantes en todos sus peligros y necesidades» (Catecismo, 971). Rezarle no nos aparta de Dios: «podemos orar con ella y orarle a ella» (Catecismo, 2679).</p>
+      <p data-lang="en" style="display:none">From the cross, Jesus gave her to us as Mother: "Behold, your mother" (Jn 19:27). The Church teaches that the Virgin is honored as Mother of God, "under whose protection the faithful take refuge in all their dangers and needs" (Catechism, 971). Praying to her does not draw us away from God: "we can pray with and to her" (Catechism, 2679).</p>
+      <p class="maria-note" data-lang="es">Las devociones no son amuletos ni contratos: no «obligan» a Dios ni sustituyen la confesión, la Eucaristía o la conversión de vida (Catecismo, 2111). Son caminos para dejarse acompañar. Si caes, no abandones la devoción ni pienses que la Virgen te dio la espalda: vuelve a empezar, busca la confesión y sigue rezando.</p>
+      <p class="maria-note" data-lang="en" style="display:none">Devotions are not charms or contracts: they do not "oblige" God, nor do they replace confession, the Eucharist or conversion of life (Catechism, 2111). They are ways of letting ourselves be accompanied. If you fall, do not abandon the devotion or think Our Lady has turned her back on you: begin again, seek confession and keep praying.</p>
+    </section>
+
+    <section class="maria-section maria-mantle" aria-labelledby="mantleTitle">
+      <h2 id="mantleTitle"><span data-lang="es">🛡️ Oración para acogerse al manto de María</span><span data-lang="en" style="display:none">🛡️ Prayer to take refuge under Mary's mantle</span></h2>
+      <p data-lang="es">Para rezarla en la tentación, en el miedo o al final del día. Puedes unirla a la antigua oración «Bajo tu amparo» que encontrarás más abajo.</p>
+      <p data-lang="en" style="display:none">To pray in temptation, in fear or at the end of the day. You can join it to the ancient prayer "We fly to thy protection" found below.</p>
+      <p class="maria-prayer" data-lang="es">Mamita, ayúdame, cúbreme con tu manto.</p>
+      <p class="maria-prayer" data-lang="en" style="display:none">Mama Mary, help me, cover me with your mantle.</p>
+      <div class="maria-prayer" data-lang="es">Santa María, Madre de Dios y Madre mía:
+me pongo bajo tu manto con todo lo que soy,
+con mis luchas, mis heridas y también mis caídas.
+Cúbreme cuando llegue la tentación,
+aparta de mí lo que me separa de tu Hijo
+y no me sueltes de la mano cuando me sienta débil.
+Llévame a Jesús, a su perdón y a su paz.
+Que nunca me avergüence de volver a Él.
+Bajo tu amparo me acojo, santa Madre de Dios. Amén.</div>
+      <div class="maria-prayer" data-lang="en" style="display:none">Holy Mary, Mother of God and my Mother:
+I place myself under your mantle with all that I am,
+with my struggles, my wounds and also my falls.
+Cover me when temptation comes,
+keep from me whatever separates me from your Son,
+and do not let go of my hand when I feel weak.
+Lead me to Jesus, to his forgiveness and his peace.
+May I never be ashamed to return to Him.
+Under your protection I take refuge, holy Mother of God. Amen.</div>
+      <div class="maria-links">
+        <a href="/tentaciones/"><span data-lang="es">🛡️ Guía en la tentación</span><span data-lang="en" style="display:none">🛡️ Guide in temptation</span></a>
+        <a href="/reconciliacion/"><span data-lang="es">🙏 Prepararse para confesarse</span><span data-lang="en" style="display:none">🙏 Prepare for confession</span></a>
+        <a href="/intercesor/?intercesor=sanmiguel"><span data-lang="es">⚔️ San Miguel Arcángel</span><span data-lang="en" style="display:none">⚔️ Saint Michael the Archangel</span></a>
+      </div>
+    </section>
+
+    <section class="maria-section" id="acompanamiento" aria-labelledby="acompanamientoTitle">
+      <h2 id="acompanamientoTitle"><span data-lang="es">💙 Si la lucha vuelve</span><span data-lang="en" style="display:none">💙 If the struggle returns</span></h2>
+      <p data-lang="es">Si la tentación crece o vuelves a caer, no tienes que atravesarlo a solas ni fingir que todo está resuelto. Puedes volver a Dios y pedir acompañamiento; aquí encontrarás una oración y enlaces para dar el siguiente paso.</p>
+      <p data-lang="en" style="display:none">If temptation grows or you fall again, you do not have to face it alone or pretend everything is resolved. You can return to God and seek support; here you will find a prayer and links to help you take the next step.</p>
+      <div class="maria-links">
+        <a href="/tentaciones/"><span data-lang="es">🛡️ Guía en la tentación</span><span data-lang="en" style="display:none">🛡️ Guide in temptation</span></a>
+        <a href="/vuelvo-al-padre/"><span data-lang="es">🔄 Caigo y vuelvo al Padre</span><span data-lang="en" style="display:none">🔄 I fall and return to the Father</span></a>
+        <a href="/reconciliacion/"><span data-lang="es">🙏 Reconciliación</span><span data-lang="en" style="display:none">🙏 Reconciliation</span></a>
+      </div>
+    </section>
+
+    <section aria-labelledby="devTitle">
+      <h2 id="devTitle" class="maria-heading"><span data-lang="es">Devociones marianas y cómo rezarlas</span><span data-lang="en" style="display:none">Marian devotions and how to pray them</span></h2>
+
+      <article class="maria-card" id="dev-rosario">
+        <h3><span data-lang="es">📿 El Santo Rosario</span><span data-lang="en" style="display:none">📿 The Holy Rosary</span></h3>
+        <p data-lang="es">Es contemplar con María el rostro de Cristo a través de los misterios del Evangelio. San Juan Pablo II lo llamó «compendio del Evangelio» en <em>Rosarium Virginis Mariae</em>. En este sitio tienes un Rosario interactivo, guiado paso a paso.</p>
+        <p data-lang="en" style="display:none">It is contemplating the face of Christ with Mary through the mysteries of the Gospel. Saint John Paul II called it a "compendium of the Gospel" in <em>Rosarium Virginis Mariae</em>. This site has an interactive Rosary, guided step by step.</p>
+        <details>
+          <summary><span data-lang="es">Cómo rezarlo</span><span data-lang="en" style="display:none">How to pray it</span></summary>
+          <ol class="maria-how" data-lang="es">
+            <li>Señal de la cruz, Credo, un Padre Nuestro, tres Avemarías (por la fe, la esperanza y la caridad) y un Gloria.</li>
+            <li>Anuncia cada uno de los cinco misterios del día y quédate un momento en silencio con la escena.</li>
+            <li>En cada misterio: un Padre Nuestro, diez Avemarías y un Gloria.</li>
+            <li>Al final, la Salve y, si quieres, las letanías.</li>
+            <li>Misterios por día: lunes y sábado, gozosos; martes y viernes, dolorosos; jueves, luminosos; miércoles y domingo, gloriosos.</li>
+          </ol>
+          <ol class="maria-how" data-lang="en" style="display:none">
+            <li>Sign of the Cross, Creed, one Our Father, three Hail Marys (for faith, hope and charity) and a Glory Be.</li>
+            <li>Announce each of the five mysteries of the day and stay a moment in silence with the scene.</li>
+            <li>For each mystery: one Our Father, ten Hail Marys and a Glory Be.</li>
+            <li>At the end, the Hail Holy Queen and, if you wish, the litany.</li>
+            <li>Mysteries by day: Monday and Saturday, Joyful; Tuesday and Friday, Sorrowful; Thursday, Luminous; Wednesday and Sunday, Glorious.</li>
+          </ol>
+          <div class="maria-prayer" data-lang="es">Ofrecimiento: Madre, te ofrezco este Rosario. Enséñame a mirar a Jesús como tú lo miraste, y guarda mi corazón en cada misterio. Amén.</div>
+          <div class="maria-prayer" data-lang="en" style="display:none">Offering: Mother, I offer you this Rosary. Teach me to look at Jesus as you looked at him, and guard my heart in every mystery. Amen.</div>
+          <div class="maria-links">
+            <a href="/rosario/"><span data-lang="es">📿 Rosario interactivo</span><span data-lang="en" style="display:none">📿 Interactive Rosary</span></a>
+            <a href="/oraciones/#or-am"><span data-lang="es">Avemaría</span><span data-lang="en" style="display:none">Hail Mary</span></a>
+            <a href="/oraciones/#or-salve"><span data-lang="es">Salve</span><span data-lang="en" style="display:none">Hail Holy Queen</span></a>
+            <a href="/meses/"><span data-lang="es">Mayo y octubre, meses marianos</span><span data-lang="en" style="display:none">May and October, Marian months</span></a>
+          </div>
+          <p class="maria-source"><span data-lang="es">Fuente:</span><span data-lang="en" style="display:none">Source:</span> <a href="https://www.vatican.va/content/john-paul-ii/es/apost_letters/2002/documents/hf_jp-ii_apl_20021016_rosarium-virginis-mariae.html" target="_blank" rel="noopener noreferrer">Rosarium Virginis Mariae (2002), 38</a></p>
+        </details>
+      </article>
+
+      <article class="maria-card" id="dev-angelus">
+        <h3><span data-lang="es">🔔 Ángelus y Regina Coeli</span><span data-lang="en" style="display:none">🔔 Angelus and Regina Caeli</span></h3>
+        <p data-lang="es">Con el Ángelus los fieles recuerdan tres veces al día la Encarnación: el anuncio del ángel a María y el «sí» que cambió la historia. En tiempo de Pascua se sustituye por el Regina Coeli.</p>
+        <p data-lang="en" style="display:none">With the Angelus the faithful recall the Incarnation three times a day: the angel's announcement to Mary and the "yes" that changed history. In Eastertide it is replaced by the Regina Caeli.</p>
+        <details>
+          <summary><span data-lang="es">Cómo rezarlo</span><span data-lang="en" style="display:none">How to pray it</span></summary>
+          <ol class="maria-how" data-lang="es">
+            <li>Tradicionalmente al alba (6:00), a mediodía (12:00) y al atardecer (18:00). Si no puedes a esas horas, rézalo cuando puedas.</li>
+            <li>Una persona dice los versículos (V) y las demás responden (R); también se puede rezar a solas.</li>
+            <li>Si no recuerdas el texto, la Iglesia sugiere al menos rezar tres Avemarías.</li>
+            <li>Desde la Vigilia Pascual hasta Pentecostés se reza el Regina Coeli, de pie.</li>
+          </ol>
+          <ol class="maria-how" data-lang="en" style="display:none">
+            <li>Traditionally at dawn (6 a.m.), noon and sunset (6 p.m.). If you cannot at those hours, pray it when you can.</li>
+            <li>One person says the versicles (V) and the others respond (R); it can also be prayed alone.</li>
+            <li>If you do not remember the text, the Church suggests at least praying three Hail Marys.</li>
+            <li>From the Easter Vigil until Pentecost the Regina Caeli is prayed, standing.</li>
+          </ol>
+          <div class="maria-prayer" data-lang="es">V. El Ángel del Señor anunció a María.
+R. Y concibió por obra y gracia del Espíritu Santo.
+Dios te salve, María…
+V. He aquí la esclava del Señor.
+R. Hágase en mí según tu palabra.
+Dios te salve, María…
+V. Y el Verbo se hizo carne.
+R. Y habitó entre nosotros.
+Dios te salve, María…
+V. Ruega por nosotros, santa Madre de Dios.
+R. Para que seamos dignos de alcanzar las promesas de nuestro Señor Jesucristo.
+Oremos: Derrama, Señor, tu gracia en nuestros corazones, para que, habiendo conocido por el anuncio del ángel la encarnación de tu Hijo Jesucristo, por su pasión y su cruz seamos llevados a la gloria de la resurrección. Por el mismo Jesucristo nuestro Señor. Amén.</div>
+          <div class="maria-prayer" data-lang="en" style="display:none">V. The Angel of the Lord declared unto Mary.
+R. And she conceived of the Holy Spirit.
+Hail Mary…
+V. Behold the handmaid of the Lord.
+R. Be it done unto me according to your word.
+Hail Mary…
+V. And the Word was made flesh.
+R. And dwelt among us.
+Hail Mary…
+V. Pray for us, O holy Mother of God.
+R. That we may be made worthy of the promises of Christ.
+Let us pray: Pour forth, we beseech you, O Lord, your grace into our hearts; that we, to whom the Incarnation of Christ your Son was made known by the message of an angel, may by his Passion and Cross be brought to the glory of his Resurrection. Through the same Christ our Lord. Amen.</div>
+          <div class="maria-prayer" data-lang="es">Regina Coeli (tiempo pascual):
+Reina del cielo, alégrate; aleluya.
+Porque el Señor, a quien mereciste llevar; aleluya.
+Ha resucitado, según su palabra; aleluya.
+Ruega al Señor por nosotros; aleluya.
+V. Gózate y alégrate, Virgen María; aleluya.
+R. Porque en verdad ha resucitado el Señor; aleluya.
+Oremos: Oh Dios, que por la resurrección de tu Hijo, nuestro Señor Jesucristo, has llenado el mundo de alegría, concédenos, por intercesión de su Madre, la Virgen María, alcanzar los gozos de la vida eterna. Por el mismo Cristo nuestro Señor. Amén.</div>
+          <div class="maria-prayer" data-lang="en" style="display:none">Regina Caeli (Eastertide):
+Queen of Heaven, rejoice, alleluia.
+For he whom you did merit to bear, alleluia,
+has risen, as he said, alleluia.
+Pray for us to God, alleluia.
+V. Rejoice and be glad, O Virgin Mary, alleluia.
+R. For the Lord has truly risen, alleluia.
+Let us pray: O God, who gave joy to the world through the resurrection of your Son, our Lord Jesus Christ, grant, we beseech you, that through the intercession of the Virgin Mary, his Mother, we may obtain the joys of everlasting life. Through the same Christ our Lord. Amen.</div>
+          <p class="maria-source"><span data-lang="es">Fuente:</span><span data-lang="en" style="display:none">Source:</span> <a href="https://www.vatican.va/roman_curia/congregations/ccdds/documents/rc_con_ccdds_doc_20020513_vers-direttorio_sp.html" target="_blank" rel="noopener noreferrer"><span data-lang="es">Directorio sobre la piedad popular y la liturgia (2002), 195-196</span><span data-lang="en" style="display:none">Directory on Popular Piety and the Liturgy (2002), 195-196</span></a></p>
+        </details>
+      </article>
+
+      <article class="maria-card" id="dev-amparo">
+        <h3><span data-lang="es">🛡️ Bajo tu amparo (Sub tuum praesidium)</span><span data-lang="en" style="display:none">🛡️ We fly to thy protection (Sub tuum praesidium)</span></h3>
+        <p data-lang="es">Es la oración mariana más antigua que se conoce: se ha conservado en un papiro de los primeros siglos. Es, literalmente, la oración de acogerse al manto de la Madre.</p>
+        <p data-lang="en" style="display:none">It is the oldest known Marian prayer: it survives on a papyrus from the first centuries. It is, literally, the prayer of taking refuge under the Mother's mantle.</p>
+        <details>
+          <summary><span data-lang="es">Cómo rezarla</span><span data-lang="en" style="display:none">How to pray it</span></summary>
+          <ol class="maria-how" data-lang="es">
+            <li>Apréndela de memoria: es corta y sirve para cualquier momento de peligro o tentación.</li>
+            <li>Rézala al salir de casa, antes de dormir o cuando sientas miedo.</li>
+            <li>Muchos la añaden al final del Rosario o de la oración de la noche.</li>
+          </ol>
+          <ol class="maria-how" data-lang="en" style="display:none">
+            <li>Learn it by heart: it is short and fits any moment of danger or temptation.</li>
+            <li>Pray it when leaving home, before sleeping or whenever you feel afraid.</li>
+            <li>Many add it at the end of the Rosary or of night prayer.</li>
+          </ol>
+          <div class="maria-prayer" data-lang="es">Bajo tu amparo nos acogemos, santa Madre de Dios;
+no deseches las súplicas que te dirigimos en nuestras necesidades,
+antes bien, líbranos de todo peligro,
+¡oh Virgen gloriosa y bendita! Amén.</div>
+          <div class="maria-prayer" data-lang="en" style="display:none">We fly to thy protection, O holy Mother of God;
+despise not our petitions in our necessities,
+but deliver us always from all dangers,
+O glorious and blessed Virgin. Amen.</div>
+        </details>
+      </article>
+
+      <article class="maria-card" id="dev-acordaos">
+        <h3><span data-lang="es">🤍 Acordaos (Memorare)</span><span data-lang="en" style="display:none">🤍 Memorare</span></h3>
+        <p data-lang="es">Oración tradicionalmente atribuida a san Bernardo. Es para cuando uno se acerca «gimiendo bajo el peso de sus pecados» y aun así se atreve a confiar.</p>
+        <p data-lang="en" style="display:none">A prayer traditionally attributed to Saint Bernard. It is for when we come "sinful and sorrowful" and still dare to trust.</p>
+        <details>
+          <summary><span data-lang="es">Cómo rezarla</span><span data-lang="en" style="display:none">How to pray it</span></summary>
+          <ol class="maria-how" data-lang="es">
+            <li>Preséntale a María una necesidad concreta, con sencillez.</li>
+            <li>Reza el Acordaos despacio, sobre todo la frase «jamás se ha oído decir…».</li>
+            <li>Muchos la rezan varias veces seguidas en momentos de angustia, o cada día durante una necesidad.</li>
+          </ol>
+          <ol class="maria-how" data-lang="en" style="display:none">
+            <li>Present a concrete need to Mary, simply.</li>
+            <li>Pray the Memorare slowly, especially the words "never was it known…".</li>
+            <li>Many pray it several times in a row in moments of distress, or daily during a need.</li>
+          </ol>
+          <div class="maria-prayer" data-lang="es">Acordaos, oh piadosísima Virgen María,
+que jamás se ha oído decir que ninguno de los que han acudido a vuestra protección,
+implorando vuestro auxilio, haya sido desamparado.
+Animado por esta confianza, a vos también acudo, oh Madre, Virgen de las vírgenes,
+y aunque gimiendo bajo el peso de mis pecados,
+me atrevo a comparecer ante vuestra presencia soberana.
+No desechéis, oh Madre de Dios, mis humildes súplicas,
+antes bien, escuchadlas y acogedlas benignamente. Amén.</div>
+          <div class="maria-prayer" data-lang="en" style="display:none">Remember, O most gracious Virgin Mary,
+that never was it known that anyone who fled to thy protection,
+implored thy help, or sought thine intercession was left unaided.
+Inspired by this confidence, I fly unto thee, O Virgin of virgins, my Mother;
+to thee do I come, before thee I stand, sinful and sorrowful.
+O Mother of the Word Incarnate, despise not my petitions,
+but in thy mercy hear and answer me. Amen.</div>
+        </details>
+      </article>
+
+      <article class="maria-card" id="dev-inmaculado">
+        <h3><span data-lang="es">💙 Inmaculado Corazón de María y Primeros Sábados</span><span data-lang="en" style="display:none">💙 Immaculate Heart of Mary and First Saturdays</span></h3>
+        <p data-lang="es">La devoción al Corazón Inmaculado de María se difundió mucho después de las apariciones de Fátima (1917). Consagrarse a su Corazón es confiarle la propia vida para que ella la lleve a Cristo. El papa Francisco consagró la Iglesia y la humanidad, en especial Rusia y Ucrania, al Corazón Inmaculado el 25 de marzo de 2022.</p>
+        <p data-lang="en" style="display:none">Devotion to the Immaculate Heart of Mary spread widely after the Fatima apparitions (1917). Consecrating oneself to her Heart means entrusting one's life to her so that she may lead it to Christ. Pope Francis consecrated the Church and humanity, especially Russia and Ukraine, to the Immaculate Heart on 25 March 2022.</p>
+        <details>
+          <summary><span data-lang="es">Cómo vivir los Primeros Sábados y la consagración</span><span data-lang="en" style="display:none">How to live the First Saturdays and the consecration</span></summary>
+          <ol class="maria-how" data-lang="es">
+            <li>Durante cinco primeros sábados de mes seguidos, con intención de reparar y consolar al Corazón de María:</li>
+            <li>Confesarse (puede ser en los días cercanos) y comulgar ese sábado.</li>
+            <li>Rezar cinco decenas del Rosario.</li>
+            <li>Acompañar a la Virgen quince minutos meditando los misterios del Rosario.</li>
+            <li>Para la consagración personal, prepárate unos días con el Rosario y la confesión, y renuévala cada día con una oración breve como la de abajo.</li>
+          </ol>
+          <ol class="maria-how" data-lang="en" style="display:none">
+            <li>For five consecutive first Saturdays of the month, with the intention of making reparation to and consoling Mary's Heart:</li>
+            <li>Go to confession (it may be in the nearby days) and receive Communion on that Saturday.</li>
+            <li>Pray five decades of the Rosary.</li>
+            <li>Keep Our Lady company for fifteen minutes meditating on the mysteries of the Rosary.</li>
+            <li>For a personal consecration, prepare for a few days with the Rosary and confession, and renew it daily with a short prayer like the one below.</li>
+          </ol>
+          <div class="maria-prayer" data-lang="es">Inmaculado Corazón de María, me confío a ti.
+Guarda mi mente, mi cuerpo y mi corazón;
+enséñame a decir «sí» a Dios como tú.
+Sé mi refugio y el camino que me conduzca a Jesús. Amén.</div>
+          <div class="maria-prayer" data-lang="en" style="display:none">Immaculate Heart of Mary, I entrust myself to you.
+Guard my mind, my body and my heart;
+teach me to say "yes" to God as you did.
+Be my refuge and the way that leads me to Jesus. Amen.</div>
+          <div class="maria-links">
+            <a href="/intercesor/?intercesor=inmaculadocorazon"><span data-lang="es">💙 Novena y consagración completa</span><span data-lang="en" style="display:none">💙 Novena and full consecration</span></a>
+            <a href="/intercesor/?intercesor=fatima"><span data-lang="es">Virgen de Fátima</span><span data-lang="en" style="display:none">Our Lady of Fatima</span></a>
+          </div>
+          <p class="maria-source"><span data-lang="es">Fuentes:</span><span data-lang="en" style="display:none">Sources:</span> <a href="https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20000626_message-fatima_sp.html" target="_blank" rel="noopener noreferrer"><span data-lang="es">El mensaje de Fátima (2000)</span><span data-lang="en" style="display:none">The Message of Fatima (2000)</span></a> · <a href="https://www.vatican.va/content/francesco/es/homilies/2022/documents/20220325_omelia-penitenza.html" target="_blank" rel="noopener noreferrer"><span data-lang="es">Acto de consagración (25-III-2022)</span><span data-lang="en" style="display:none">Act of consecration (25 March 2022)</span></a> · <a href="https://www.vatican.va/roman_curia/congregations/ccdds/documents/rc_con_ccdds_doc_20020513_vers-direttorio_sp.html" target="_blank" rel="noopener noreferrer"><span data-lang="es">Directorio, 174</span><span data-lang="en" style="display:none">Directory, 174</span></a></p>
+        </details>
+      </article>
+
+      <article class="maria-card" id="dev-desatanudos">
+        <h3><span data-lang="es">🪢 María, la que desata los nudos</span><span data-lang="en" style="display:none">🪢 Mary, Undoer of Knots</span></h3>
+        <p data-lang="es">La imagen se venera en Augsburgo (Alemania) y la devoción se difundió en Argentina gracias a Jorge Mario Bergoglio, luego papa Francisco. Su raíz es una frase de san Ireneo citada por el Concilio: «El nudo de la desobediencia de Eva lo desató la obediencia de María». Los «nudos» son los pecados, hábitos y situaciones que nos atan y que solos no podemos deshacer.</p>
+        <p data-lang="en" style="display:none">The image is venerated in Augsburg (Germany) and the devotion spread in Argentina thanks to Jorge Mario Bergoglio, later Pope Francis. Its root is a phrase of Saint Irenaeus quoted by the Council: "The knot of Eve's disobedience was untied by Mary's obedience." The "knots" are the sins, habits and situations that bind us and that we cannot undo alone.</p>
+        <details>
+          <summary><span data-lang="es">Cómo rezar la novena</span><span data-lang="en" style="display:none">How to pray the novena</span></summary>
+          <ol class="maria-how" data-lang="es">
+            <li>Durante nueve días seguidos. Elige un «nudo» concreto y nómbralo con honestidad.</li>
+            <li>Comienza con la señal de la cruz y un acto de contrición.</li>
+            <li>Reza tres decenas del Rosario (o el Rosario completo).</li>
+            <li>Reza la oración de abajo y deja el nudo en manos de María.</li>
+            <li>Termina las últimas dos decenas y una Salve. Si puedes, confiésate durante la novena.</li>
+          </ol>
+          <ol class="maria-how" data-lang="en" style="display:none">
+            <li>For nine days in a row. Choose a concrete "knot" and name it honestly.</li>
+            <li>Begin with the Sign of the Cross and an act of contrition.</li>
+            <li>Pray three decades of the Rosary (or the whole Rosary).</li>
+            <li>Pray the prayer below and leave the knot in Mary's hands.</li>
+            <li>Finish the last two decades and a Hail Holy Queen. If you can, go to confession during the novena.</li>
+          </ol>
+          <div class="maria-prayer" data-lang="es">Virgen María, Madre que desatas los nudos:
+tú conoces el nudo que hoy me ata (nómbralo).
+Yo no he podido desatarlo solo; lo pongo en tus manos.
+Con tu obediencia deshiciste el nudo de Eva;
+llévalo a Jesús, que hace nuevas todas las cosas,
+y dame paciencia mientras se va soltando. Amén.</div>
+          <div class="maria-prayer" data-lang="en" style="display:none">Virgin Mary, Mother who unties knots:
+you know the knot that binds me today (name it).
+I have not been able to untie it alone; I place it in your hands.
+With your obedience you undid Eve's knot;
+bring this to Jesus, who makes all things new,
+and give me patience while it is being loosened. Amen.</div>
+          <p class="maria-source"><span data-lang="es">Fuentes:</span><span data-lang="en" style="display:none">Sources:</span> <a href="https://www.vatican.va/content/francesco/es/speeches/2013/october/documents/papa-francesco_20131012_preghiera-mariana.html" target="_blank" rel="noopener noreferrer"><span data-lang="es">Papa Francisco, oración mariana (12-X-2013)</span><span data-lang="en" style="display:none">Pope Francis, Marian prayer (12 Oct 2013)</span></a> · <a href="https://www.vatican.va/archive/catechism_sp/p1s2a3p2_sp.html" target="_blank" rel="noopener noreferrer"><span data-lang="es">Catecismo, 494</span><span data-lang="en" style="display:none">Catechism, 494</span></a></p>
+        </details>
+      </article>
+
+      <article class="maria-card" id="dev-totus">
+        <h3><span data-lang="es">✍️ Totus Tuus: consagración de san Luis María de Montfort</span><span data-lang="en" style="display:none">✍️ Totus Tuus: Saint Louis de Montfort's consecration</span></h3>
+        <p data-lang="es">San Luis María Grignion de Montfort enseñó a entregarse totalmente a Jesús por medio de María. San Juan Pablo II tomó de él su lema, <em>Totus tuus</em> («todo tuyo»), y explica que la acción de María «favorece, y de ninguna manera impide, la unión inmediata de los creyentes con Cristo».</p>
+        <p data-lang="en" style="display:none">Saint Louis-Marie Grignion de Montfort taught total self-giving to Jesus through Mary. Saint John Paul II took his motto, <em>Totus tuus</em> ("totally yours"), from him and explains that Mary's action "fosters, and in no way impedes, the direct union of the faithful with Christ".</p>
+        <details>
+          <summary><span data-lang="es">Cómo hacer la consagración</span><span data-lang="en" style="display:none">How to make the consecration</span></summary>
+          <ol class="maria-how" data-lang="es">
+            <li>Elige una fiesta mariana para consagrarte y cuenta 33 días hacia atrás para comenzar.</li>
+            <li>Días 1 a 12: vaciarse del espíritu del mundo (oración, examen, desprendimiento).</li>
+            <li>Semana 1: conocimiento de uno mismo. Semana 2: conocimiento de María. Semana 3: conocimiento de Jesús.</li>
+            <li>Cada día: Rosario o parte de él, lectura breve y las letanías o el Magníficat.</li>
+            <li>El día de la fiesta: confesión, comunión y el acto de consagración. Después, renuévalo cada día con la fórmula breve.</li>
+          </ol>
+          <ol class="maria-how" data-lang="en" style="display:none">
+            <li>Choose a Marian feast for your consecration and count back 33 days to begin.</li>
+            <li>Days 1 to 12: emptying oneself of the spirit of the world (prayer, examen, detachment).</li>
+            <li>Week 1: knowledge of self. Week 2: knowledge of Mary. Week 3: knowledge of Jesus.</li>
+            <li>Each day: the Rosary or part of it, a short reading and the litanies or the Magnificat.</li>
+            <li>On the feast day: confession, Communion and the act of consecration. Afterwards, renew it daily with the short formula.</li>
+          </ol>
+          <div class="maria-prayer" data-lang="es">Totus tuus ego sum, et omnia mea tua sunt.
+Soy todo tuyo, María, y todo lo mío es tuyo.
+Llévame a Jesús. Amén.</div>
+          <div class="maria-prayer" data-lang="en" style="display:none">Totus tuus ego sum, et omnia mea tua sunt.
+I am all yours, Mary, and all that I have is yours.
+Lead me to Jesus. Amen.</div>
+          <div class="maria-links">
+            <a href="/intercesor/?intercesor=juanpablo"><span data-lang="es">San Juan Pablo II</span><span data-lang="en" style="display:none">Saint John Paul II</span></a>
+            <a href="/oraciones/#or-magnificat"><span data-lang="es">Magníficat</span><span data-lang="en" style="display:none">Magnificat</span></a>
+          </div>
+          <p class="maria-source"><span data-lang="es">Fuente:</span><span data-lang="en" style="display:none">Source:</span> <a href="https://www.vatican.va/content/john-paul-ii/es/apost_letters/2002/documents/hf_jp-ii_apl_20021016_rosarium-virginis-mariae.html" target="_blank" rel="noopener noreferrer">Rosarium Virginis Mariae (2002), 15</a></p>
+        </details>
+      </article>
+
+      <article class="maria-card" id="dev-escapulario">
+        <h3><span data-lang="es">🟫 Escapulario del Carmen</span><span data-lang="en" style="display:none">🟫 Brown Scapular of Our Lady of Mount Carmel</span></h3>
+        <p data-lang="es">Es una forma reducida del hábito carmelita y un «signo exterior de la relación especial, filial y confiada» con la Virgen del Carmen. Recuerda el propósito bautismal de revestirse de Cristo. No es un amuleto: es un compromiso de vida cristiana.</p>
+        <p data-lang="en" style="display:none">It is a reduced form of the Carmelite habit and an "outward sign of the special, filial and trusting relationship" with Our Lady of Mount Carmel. It recalls the baptismal resolve to put on Christ. It is not a charm: it is a commitment to Christian life.</p>
+        <details>
+          <summary><span data-lang="es">Cómo recibirlo y vivirlo</span><span data-lang="en" style="display:none">How to receive and live it</span></summary>
+          <ol class="maria-how" data-lang="es">
+            <li>Pide a un sacerdote que te lo imponga con el rito de la Iglesia (se hace una sola vez).</li>
+            <li>Llévalo puesto de forma habitual; cuando se gaste, cámbialo por otro sin necesidad de nueva imposición.</li>
+            <li>Vive lo que significa: oración diaria, sacramentos y castidad según tu estado de vida.</li>
+            <li>Al ponértelo cada mañana, puedes besarlo y rezar una oración breve.</li>
+          </ol>
+          <ol class="maria-how" data-lang="en" style="display:none">
+            <li>Ask a priest to invest you with it using the Church's rite (done only once).</li>
+            <li>Wear it habitually; when it wears out, replace it without needing a new investiture.</li>
+            <li>Live what it means: daily prayer, the sacraments and chastity according to your state of life.</li>
+            <li>When putting it on each morning, you can kiss it and pray a short prayer.</li>
+          </ol>
+          <div class="maria-prayer" data-lang="es">Virgen del Carmen, Madre y hermosura del Carmelo:
+que este escapulario me recuerde que estoy revestido de Cristo.
+Cúbreme hoy con tu manto y guárdame en la gracia de Dios. Amén.</div>
+          <div class="maria-prayer" data-lang="en" style="display:none">Our Lady of Mount Carmel, Mother and beauty of Carmel:
+may this scapular remind me that I am clothed in Christ.
+Cover me today with your mantle and keep me in God's grace. Amen.</div>
+          <div class="maria-links">
+            <a href="/intercesor/?intercesor=nuestrasenoracarmen"><span data-lang="es">🟫 Nuestra Señora del Carmen</span><span data-lang="en" style="display:none">🟫 Our Lady of Mount Carmel</span></a>
+          </div>
+          <p class="maria-source"><span data-lang="es">Fuente:</span><span data-lang="en" style="display:none">Source:</span> <a href="https://www.vatican.va/roman_curia/congregations/ccdds/documents/rc_con_ccdds_doc_20020513_vers-direttorio_sp.html" target="_blank" rel="noopener noreferrer"><span data-lang="es">Directorio sobre la piedad popular y la liturgia, 205</span><span data-lang="en" style="display:none">Directory on Popular Piety and the Liturgy, 205</span></a></p>
+        </details>
+      </article>
+
+      <article class="maria-card" id="dev-encarnacion">
+        <h3><span data-lang="es">🌱 Las tres Salves de los nueve meses (Virgen de la Encarnación)</span><span data-lang="en" style="display:none">🌱 The three Hail Holy Queens of the nine months (Our Lady of the Incarnation)</span></h3>
+        <p data-lang="es">Una devoción popular que nos compartieron: durante nueve meses, en honor a los nueve meses en que María llevó a Jesús en su seno, se rezan tres Salves pidiendo tres gracias difíciles. Contempla la Encarnación: Dios que se hace pequeño y crece en silencio, como crecen las gracias que pedimos.</p>
+        <p data-lang="en" style="display:none">A popular devotion that was shared with us: for nine months, in honor of the nine months Mary carried Jesus in her womb, three Hail Holy Queens are prayed asking for three difficult graces. It contemplates the Incarnation: God becoming small and growing in silence, just as the graces we ask for grow.</p>
+        <details>
+          <summary><span data-lang="es">Cómo rezarla</span><span data-lang="en" style="display:none">How to pray it</span></summary>
+          <ol class="maria-how" data-lang="es">
+            <li>Escribe tus tres intenciones difíciles y pídele a María que las presente a su Hijo.</li>
+            <li>Reza tres Salves con la frecuencia que puedas sostener (por ejemplo, cada día) durante nueve meses.</li>
+            <li>Si quieres, comienza el 25 de marzo (Anunciación) y termina el 25 de diciembre (Navidad).</li>
+            <li>Si un día lo olvidas, no empieces de cero ni te angusties: retómalo y sigue.</li>
+            <li>Al terminar, da gracias con el Magníficat, cualquiera que sea la respuesta.</li>
+          </ol>
+          <ol class="maria-how" data-lang="en" style="display:none">
+            <li>Write down your three difficult intentions and ask Mary to present them to her Son.</li>
+            <li>Pray three Hail Holy Queens as often as you can sustain (for example, daily) for nine months.</li>
+            <li>If you wish, begin on 25 March (Annunciation) and end on 25 December (Christmas).</li>
+            <li>If you forget a day, do not start over or worry: pick it up and continue.</li>
+            <li>When you finish, give thanks with the Magnificat, whatever the answer.</li>
+          </ol>
+          <div class="maria-prayer" data-lang="es">Antes de las Salves:
+Virgen de la Encarnación, que guardaste a Jesús nueve meses en tu seno,
+guarda también estas tres intenciones (nómbralas).
+Que crezcan según la voluntad del Padre y no según mi impaciencia. Amén.</div>
+          <div class="maria-prayer" data-lang="en" style="display:none">Before the Hail Holy Queens:
+Our Lady of the Incarnation, who carried Jesus nine months in your womb,
+carry these three intentions too (name them).
+May they grow according to the Father's will and not my impatience. Amen.</div>
+          <p class="maria-note" data-lang="es">No encontramos un documento de la Iglesia ni un origen verificable para esta forma concreta, así que la presentamos como piedad popular. Es buena si te ayuda a perseverar y confiar; no promete resultados automáticos ni debe difundirse como «cadena».</p>
+          <p class="maria-note" data-lang="en" style="display:none">We found no Church document or verifiable origin for this specific form, so we present it as popular piety. It is good if it helps you persevere and trust; it does not promise automatic results and should not be spread as a "chain".</p>
+          <div class="maria-links">
+            <a href="/oraciones/#or-salve"><span data-lang="es">Texto de la Salve</span><span data-lang="en" style="display:none">Hail Holy Queen text</span></a>
+            <a href="/oraciones/#or-magnificat"><span data-lang="es">Magníficat</span><span data-lang="en" style="display:none">Magnificat</span></a>
+          </div>
+        </details>
+      </article>
+    </section>
+
+    <section class="maria-section" aria-labelledby="siteTitle">
+      <h2 id="siteTitle"><span data-lang="es">María en este sitio</span><span data-lang="en" style="display:none">Mary on this site</span></h2>
+      <p data-lang="es">Novenas, coronillas, historia y oraciones de cada advocación.</p>
+      <p data-lang="en" style="display:none">Novenas, chaplets, history and prayers for each Marian title.</p>
+      <div class="maria-grid">
+        <a href="/intercesor/?intercesor=guadalupe"><span data-lang="es">🌹 Virgen de Guadalupe</span><span data-lang="en" style="display:none">🌹 Our Lady of Guadalupe</span><small data-lang="es">Pueblos y familias</small><small data-lang="en" style="display:none">Peoples and families</small></a>
+        <a href="/intercesor/?intercesor=inmaculadocorazon"><span data-lang="es">💙 Inmaculado Corazón</span><span data-lang="en" style="display:none">💙 Immaculate Heart</span><small data-lang="es">Consagración y refugio</small><small data-lang="en" style="display:none">Consecration and refuge</small></a>
+        <a href="/intercesor/?intercesor=fatima"><span data-lang="es">🕊️ Virgen de Fátima</span><span data-lang="en" style="display:none">🕊️ Our Lady of Fatima</span><small data-lang="es">Paz y conversión</small><small data-lang="en" style="display:none">Peace and conversion</small></a>
+        <a href="/intercesor/?intercesor=lourdes"><span data-lang="es">💧 Nuestra Señora de Lourdes</span><span data-lang="en" style="display:none">💧 Our Lady of Lourdes</span><small data-lang="es">Sanación y esperanza</small><small data-lang="en" style="display:none">Healing and hope</small></a>
+        <a href="/intercesor/?intercesor=nuestrasenoracarmen"><span data-lang="es">🟫 Virgen del Carmen</span><span data-lang="en" style="display:none">🟫 Our Lady of Mount Carmel</span><small data-lang="es">Escapulario y Carmelo</small><small data-lang="en" style="display:none">Scapular and Carmel</small></a>
+        <a href="/intercesor/?intercesor=perpetuosocorro"><span data-lang="es">🖼️ Perpetuo Socorro</span><span data-lang="en" style="display:none">🖼️ Perpetual Help</span><small data-lang="es">Auxilio en la necesidad</small><small data-lang="en" style="display:none">Help in need</small></a>
+        <a href="/intercesor/?intercesor=mariaauxiliadora"><span data-lang="es">⭐ María Auxiliadora</span><span data-lang="en" style="display:none">⭐ Mary Help of Christians</span><small data-lang="es">Auxilio de los cristianos</small><small data-lang="en" style="display:none">Help of Christians</small></a>
+        <a href="/intercesor/?intercesor=divinaprovidencia"><span data-lang="es">🌾 N. S. de la Divina Providencia</span><span data-lang="en" style="display:none">🌾 Our Lady of Divine Providence</span><small data-lang="es">Necesidades cotidianas</small><small data-lang="en" style="display:none">Daily needs</small></a>
+        <a href="/intercesor/?intercesor=schoenstatt"><span data-lang="es">🏠 Virgen de Schoenstatt</span><span data-lang="en" style="display:none">🏠 Our Lady of Schoenstatt</span><small data-lang="es">Alianza de amor</small><small data-lang="en" style="display:none">Covenant of love</small></a>
+        <a href="/rosario/"><span data-lang="es">📿 Rosario interactivo</span><span data-lang="en" style="display:none">📿 Interactive Rosary</span><small data-lang="es">Guiado paso a paso</small><small data-lang="en" style="display:none">Guided step by step</small></a>
+        <a href="/medalla-milagrosa/"><span data-lang="es">🌸 Medalla Milagrosa</span><span data-lang="en" style="display:none">🌸 Miraculous Medal</span><small data-lang="es">Historia y oración</small><small data-lang="en" style="display:none">History and prayer</small></a>
+        <a href="/oraciones/"><span data-lang="es">📜 Oraciones básicas</span><span data-lang="en" style="display:none">📜 Basic prayers</span><small data-lang="es">Avemaría, Salve, Magníficat</small><small data-lang="en" style="display:none">Hail Mary, Hail Holy Queen, Magnificat</small></a>
+        <a href="/meses/"><span data-lang="es">📅 Meses devocionales</span><span data-lang="en" style="display:none">📅 Devotional months</span><small data-lang="es">Mayo, mes de María; octubre, del Rosario</small><small data-lang="en" style="display:none">May for Mary; October for the Rosary</small></a>
+        <a href="/intercesor/?intercesor=santaana"><span data-lang="es">👵 Santa Ana</span><span data-lang="en" style="display:none">👵 Saint Anne</span><small data-lang="es">Madre de la Virgen</small><small data-lang="en" style="display:none">Mother of the Virgin</small></a>
+        <a href="/intercesor/?intercesor=sanjuandiego"><span data-lang="es">🌵 San Juan Diego</span><span data-lang="en" style="display:none">🌵 Saint Juan Diego</span><small data-lang="es">Vidente de Guadalupe</small><small data-lang="en" style="display:none">Visionary of Guadalupe</small></a>
+      </div>
+    </section>
+
+    <section class="maria-section" aria-labelledby="sourcesTitle">
+      <h2 id="sourcesTitle"><span data-lang="es">Fuentes de la Iglesia</span><span data-lang="en" style="display:none">Church sources</span></h2>
+      <ul class="maria-sources">
+        <li><a href="https://www.vatican.va/archive/catechism_sp/p123a9p6_sp.html" target="_blank" rel="noopener noreferrer"><span data-lang="es">Catecismo, 963-972: María, Madre de la Iglesia</span><span data-lang="en" style="display:none">Catechism, 963-972: Mary, Mother of the Church</span></a></li>
+        <li><a href="https://www.vatican.va/archive/catechism_sp/p4s1c2a2_sp.html" target="_blank" rel="noopener noreferrer"><span data-lang="es">Catecismo, 2673-2679: la oración en comunión con María</span><span data-lang="en" style="display:none">Catechism, 2673-2679: prayer in communion with Mary</span></a></li>
+        <li><a href="https://www.vatican.va/archive/catechism_sp/p3s2c1a1_sp.html" target="_blank" rel="noopener noreferrer"><span data-lang="es">Catecismo, 2111: la superstición</span><span data-lang="en" style="display:none">Catechism, 2111: superstition</span></a></li>
+        <li><a href="https://www.vatican.va/archive/catechism_sp/p2s2c2a4_sp.html" target="_blank" rel="noopener noreferrer"><span data-lang="es">Catecismo, 1451: la contrición y el propósito de cambiar</span><span data-lang="en" style="display:none">Catechism, 1451: contrition and the resolve to change</span></a></li>
+        <li><a href="https://www.vatican.va/archive/catechism_sp/p3s1c1a3_sp.html" target="_blank" rel="noopener noreferrer"><span data-lang="es">Catecismo, 1735: libertad y responsabilidad</span><span data-lang="en" style="display:none">Catechism, 1735: freedom and responsibility</span></a></li>
+        <li><a href="https://www.vatican.va/archive/catechism_sp/p3s1c3a2_sp.html" target="_blank" rel="noopener noreferrer"><span data-lang="es">Catecismo, 1996-2002: la gracia y nuestra respuesta</span><span data-lang="en" style="display:none">Catechism, 1996-2002: grace and our response</span></a></li>
+        <li><a href="https://www.vatican.va/archive/catechism_sp/p4s2a3_sp.html" target="_blank" rel="noopener noreferrer"><span data-lang="es">Catecismo, 2846-2849: la tentación y la oración</span><span data-lang="en" style="display:none">Catechism, 2846-2849: temptation and prayer</span></a></li>
+        <li><a href="https://www.vatican.va/roman_curia/congregations/ccdds/documents/rc_con_ccdds_doc_20020513_vers-direttorio_sp.html" target="_blank" rel="noopener noreferrer"><span data-lang="es">Directorio sobre la piedad popular y la liturgia (2002)</span><span data-lang="en" style="display:none">Directory on Popular Piety and the Liturgy (2002)</span></a></li>
+        <li><a href="https://www.vatican.va/content/john-paul-ii/es/apost_letters/2002/documents/hf_jp-ii_apl_20021016_rosarium-virginis-mariae.html" target="_blank" rel="noopener noreferrer"><span data-lang="es">San Juan Pablo II, Rosarium Virginis Mariae (2002)</span><span data-lang="en" style="display:none">Saint John Paul II, Rosarium Virginis Mariae (2002)</span></a></li>
+      </ul>
+      <p class="maria-source" data-lang="es">Las oraciones del manto, el ofrecimiento del Rosario, Desatanudos, Inmaculado Corazón, Escapulario y Encarnación de esta página son textos breves propios para uso devocional; las demás son oraciones tradicionales de la Iglesia.</p>
+      <p class="maria-source" data-lang="en" style="display:none">The prayers for the mantle, the Rosary offering, Undoer of Knots, Immaculate Heart, Scapular and Incarnation on this page are short original texts for devotional use; the others are traditional prayers of the Church.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p data-lang="es">Un recurso devocional católico gratuito. Sin anuncios. Sin rastreo.</p>
+    <p data-lang="en" style="display:none">A free Catholic devotional resource. No ads. No tracking.</p>
+  </footer>
+
+  <script src="../assets/js/menu.js"></script>
+  <script>
+    (function () {
+      'use strict';
+      var LANG_KEY = 'tup_lang';
+      var TITLES = { es: 'Bajo el manto de María | The Universal Prayer', en: "Under Mary's mantle | The Universal Prayer" };
+      var currentLang = localStorage.getItem(LANG_KEY) === 'en' ? 'en' : 'es';
+      var toggle = document.getElementById('langToggle');
+
+      function applyLang() {
+        document.querySelectorAll('[data-lang]').forEach(function (el) {
+          el.style.display = el.dataset.lang === currentLang ? '' : 'none';
+        });
+        document.documentElement.lang = currentLang;
+        document.title = TITLES[currentLang];
+        toggle.textContent = currentLang === 'es' ? 'EN' : 'ES';
+      }
+
+      toggle.addEventListener('click', function () {
+        currentLang = currentLang === 'es' ? 'en' : 'es';
+        localStorage.setItem(LANG_KEY, currentLang);
+        applyLang();
+        window.dispatchEvent(new CustomEvent('tup:langchange', { detail: currentLang }));
+      });
+
+      applyLang();
+    })();
+  </script>
+</body>
+</html>

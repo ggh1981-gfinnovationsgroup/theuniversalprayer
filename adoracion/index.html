@@ -915,8 +915,8 @@
     'use strict';
 
     // ── Language ──────────────────────────────────────
-    const LANG_KEY = 'universalPrayerLang';
-    let lang = localStorage.getItem(LANG_KEY) || 'es';
+    const LANG_KEY = 'tup_lang';
+    let lang = localStorage.getItem(LANG_KEY) || localStorage.getItem('universalPrayerLang') || 'es';
 
     function applyLang(l) {
       lang = l;

@@ -483,8 +483,8 @@ Amen.</p>
   (function () {
     'use strict';
 
-    const LANG_KEY = 'universalPrayerLang';
-    let lang = localStorage.getItem(LANG_KEY) || 'es';
+    const LANG_KEY = 'tup_lang';
+    let lang = localStorage.getItem(LANG_KEY) || localStorage.getItem('universalPrayerLang') || 'es';
 
     // ── Load JSON data ────────────────────────────────
     fetch('/data/espiritu.json')

@@ -615,8 +615,8 @@ Then Jesus said to her, "Woman, you have great faith! Your request is granted."
 
   <script>
     (function() {
-      const LANG_KEY = 'universalPrayerLang';
-      let lang = localStorage.getItem(LANG_KEY) || 'es';
+      const LANG_KEY = 'tup_lang';
+      let lang = localStorage.getItem(LANG_KEY) || localStorage.getItem('universalPrayerLang') || 'es';
 
       function applyLang(nextLang) {
         lang = nextLang;
@@ -638,7 +638,7 @@ Then Jesus said to her, "Woman, you have great faith! Your request is granted."
     function readPrayer() {
       if (!window.speechSynthesis) return;
       window.speechSynthesis.cancel();
-      const lang = localStorage.getItem('universalPrayerLang') || 'es';
+      const lang = localStorage.getItem('tup_lang') || localStorage.getItem('universalPrayerLang') || 'es';
       const id = lang === 'en' ? 'pray-main-en' : 'pray-main-es';
       const text = document.getElementById(id)?.textContent || '';
       const utterance = new SpeechSynthesisUtterance(text);

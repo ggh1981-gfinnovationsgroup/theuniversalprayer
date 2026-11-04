@@ -6,7 +6,7 @@ Sitio web catolico bilingue (ES/EN) publicado en GitHub Pages.
 
 - Produccion activa en `main`.
 - Sitio estatico con PWA (`sw.js`) y contenido en JSON.
-- Cache actual del Service Worker: `tup-v232`.
+- Cache actual del Service Worker: `tup-v286`.
 - Archivos de datos JSON: 106 en `data/`.
 - Historias para ninos: fuente principal en `data/ninos-cuentos.json`.
 - Wake Lock API activo en todas las paginas con TTS (evita standby durante audio).
@@ -103,6 +103,7 @@ theuniversalprayer/
   intercesor/
   historias/
   jovenes/
+  maria/
   matrimonio/
   medalla-milagrosa/
   medalla-san-benito/
@@ -164,6 +165,22 @@ Cuando se hagan cambios de frontend o contenido relevante:
 - Forzar recarga del navegador para comprobar invalidacion de cache.
 - Revisar que los JSON de `data/` cargan sin errores en consola.
 - Probar paginas clave: home, intercesor, historias, adoracion, dopamina, control-y-confianza, gloria-suprema y secciones principales.
+
+## Pruebas automatizadas (Playwright)
+
+Requiere Node.js (el servidor estatico local `tests/server.js` se levanta solo en el puerto 8765).
+
+```bash
+npm install
+npx playwright install chromium
+npm test                # todas las pruebas
+npx playwright test tests/maria.spec.js   # solo la pagina de Maria
+npm run test:report     # abrir el reporte HTML
+```
+
+- `tests/smoke.spec.js`: recorre todas las carpetas con `index.html` y verifica carga sin errores JS ni recursos locales rotos, un unico `<summary>` por `<details>`, cambio de idioma y uso de la clave compartida `tup_lang`, y redirecciones.
+- `tests/maria.spec.js`: pruebas detalladas de `/maria/` (devociones, acordeones en ES/EN, slugs de intercesores, enlaces internos y externos, registro en menu/sitemap/SW).
+- Las peticiones externas (fuentes, YouTube, etc.) se bloquean durante las pruebas.
 
 ## Mantenimiento
 

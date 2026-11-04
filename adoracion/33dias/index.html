@@ -160,12 +160,12 @@
     /* ── Constants ────────────────────────────────── */
     const TOTAL       = 33;
     const STORAGE_KEY = 'adoracion33_done';
-    const LANG_KEY    = 'universalPrayerLang';
+    const LANG_KEY    = 'tup_lang';
     const RING_R      = 52;
     const RING_C      = 2 * Math.PI * RING_R;   // ≈ 326.73
 
     /* ── State ────────────────────────────────────── */
-    let lang        = localStorage.getItem(LANG_KEY) || 'es';
+    let lang        = localStorage.getItem(LANG_KEY) || localStorage.getItem('universalPrayerLang') || 'es';
     let doneDays    = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
     let currentDay  = null;   // object from DIAS_33
     let ttsSpeaking = false;

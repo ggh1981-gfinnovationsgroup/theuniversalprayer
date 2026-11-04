@@ -1016,8 +1016,8 @@ save me because of your unfailing love.
 
   <script>
     (function() {
-      const LANG_KEY = 'universalPrayerLang';
-      let lang = localStorage.getItem(LANG_KEY) || 'es';
+      const LANG_KEY = 'tup_lang';
+      let lang = localStorage.getItem(LANG_KEY) || localStorage.getItem('universalPrayerLang') || 'es';
       function applyLang(l) {
         lang = l;
         localStorage.setItem(LANG_KEY, l);
@@ -1033,7 +1033,7 @@ save me because of your unfailing love.
     function readPrayer() {
       if (!window.speechSynthesis) return;
       window.speechSynthesis.cancel();
-      const lang = localStorage.getItem('universalPrayerLang') || 'es';
+      const lang = localStorage.getItem('tup_lang') || localStorage.getItem('universalPrayerLang') || 'es';
       const el = document.getElementById(lang === 'en' ? 'pray-en' : 'pray-es');
       const utt = new SpeechSynthesisUtterance(el?.textContent || '');
       utt.lang = lang === 'en' ? 'en-US' : 'es-ES';

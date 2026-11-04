@@ -1,0 +1,13 @@
+{
+  "name": "theuniversalprayer",
+  "private": true,
+  "description": "Sitio web catolico bilingue (ES/EN) publicado en GitHub Pages.",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1"
+  }
+}

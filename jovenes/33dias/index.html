@@ -132,14 +132,14 @@
   <script>
   (() => {
     'use strict';
-    const LANG_KEY = 'universalPrayerLang';
+    const LANG_KEY = 'tup_lang';
     const trackFiles = { soledad: 'soledad.json', futuro: 'futuro.json', volver: 'volver.json', servir: 'servir.json' };
     const requestedTrack = new URLSearchParams(window.location.search).get('tema');
     const track = Object.prototype.hasOwnProperty.call(trackFiles, requestedTrack) ? requestedTrack : 'general';
     const dataFile = track === 'general' ? 'recorrido.json' : trackFiles[track];
     const DONE_KEY = track === 'general' ? 'youth33Done' : `youth33_${track}_done`;
     const DAY_KEY = track === 'general' ? 'youth33CurrentDay' : `youth33_${track}_currentDay`;
-    let lang = localStorage.getItem(LANG_KEY) || 'es';
+    let lang = localStorage.getItem(LANG_KEY) || localStorage.getItem('universalPrayerLang') || 'es';
     let days = [];
     let journeyTitle = { es: '33 días para vivir con sentido', en: '33 Days to Live with Purpose' };
     let journeySubtitle = { es: 'Desde la dignidad que recibes hasta el bien que puedes hacer: un recorrido con Cristo por la vida interior, las relaciones, las decisiones y el servicio.', en: 'From the dignity you receive to the good you can do: a journey with Christ through inner life, relationships, choices, and service.' };

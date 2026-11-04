@@ -1258,10 +1258,10 @@ but glorify You.
   <script>
   (function() {
     'use strict';
-    const LANG_KEY = 'universalPrayerLang';
+    const LANG_KEY = 'tup_lang';
     const ACT_KEY  = 'youthActsWeek';
     const WEEK_KEY = 'youthActsWeekId';
-    let lang = localStorage.getItem(LANG_KEY) || 'es';
+    let lang = localStorage.getItem(LANG_KEY) || localStorage.getItem('universalPrayerLang') || 'es';
     let openTopic = '';
 
     const youthResponses = {

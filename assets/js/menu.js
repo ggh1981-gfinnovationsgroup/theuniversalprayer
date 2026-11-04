@@ -52,6 +52,7 @@
     { id: 'tentaciones', href: '/tentaciones/', labels: { es: 'Tentaciones', en: 'Temptation' }, icon: '🛡️' },
     { id: 'ninos', href: '/ninos/', labels: { es: 'Pequeños en Cristo', en: 'Little Ones in Christ' }, icon: '⭐' },
     { id: 'jovenes', href: '/jovenes/', labels: { es: 'Jóvenes en Cristo', en: 'Young in Christ' }, icon: '🔥' },
+    { id: 'maria', href: '/maria/', labels: { es: 'Bajo el manto de María', en: "Under Mary's mantle" }, icon: '💙' },
     { id: 'matrimonio', href: '/matrimonio/', labels: { es: 'Matrimonio', en: 'Marriage' }, icon: '💍' },
     { id: 'meses', href: '/meses/', labels: { es: 'Meses Devocionales', en: 'Devotional Months' }, icon: '📅' },
     { id: 'musica', href: '/musica/', labels: { es: 'Música', en: 'Music' }, icon: '🎵' },

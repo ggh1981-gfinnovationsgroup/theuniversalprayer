@@ -350,8 +350,11 @@ let currentDay = 1;
 
 // ── LANGUAGE DETECTION ─────────────────────────────
 function detectLanguage() {
-  const saved = localStorage.getItem('tup_lang');
-  if (saved) return saved;
+  const saved = localStorage.getItem('tup_lang') || localStorage.getItem('universalPrayerLang');
+  if (saved) {
+    localStorage.setItem('tup_lang', saved);
+    return saved;
+  }
   // Detect from browser
   const browserLang = navigator.language || navigator.userLanguage || '';
   return browserLang.toLowerCase().startsWith('es') ? 'es' : 'en';
