@@ -826,6 +826,100 @@
       </div><!-- /adorConv33Body -->
     </section>
 
+    <!-- 33 días para bendecir a los enemigos y entregarlos a Dios -->
+    <section class="ador-33dias-section" id="ador-enemigos33-section" style="border-color:rgba(79,195,247,0.28);background:rgba(2,119,189,0.07);">
+      <div class="ador-33dias-header" id="adorEne33Toggle" role="button" tabindex="0" aria-expanded="false">
+        <div class="ador-33dias-header-left">
+          <span class="ador-33dias-badge" data-lang="es" style="color:#81d4fa;border-color:rgba(79,195,247,0.35);">✦ Jornada Espiritual</span>
+          <span class="ador-33dias-badge" data-lang="en" style="display:none;color:#81d4fa;border-color:rgba(79,195,247,0.35);">✦ Spiritual Journey</span>
+          <h2 class="ador-33dias-title" data-lang="es">33 Días para Bendecir a los Enemigos y Entregarlos a Dios</h2>
+          <h2 class="ador-33dias-title" data-lang="en" style="display:none">33 Days to Bless Your Enemies and Entrust Them to God</h2>
+          <p class="ador-33dias-desc" data-lang="es">Renunciar a la venganza, bendecir a quien te hirió y poner a esa persona en manos de Dios, sin dejar de protegerte.</p>
+          <p class="ador-33dias-desc" data-lang="en" style="display:none">Renounce revenge, bless the one who hurt you, and place that person in God's hands, while still protecting yourself.</p>
+        </div>
+        <span class="ador-33dias-chevron" id="adorEne33Chevron">▼</span>
+      </div>
+
+      <div class="ador-33dias-body" id="adorEne33Body" style="display:none">
+        <div class="ene33-intro" style="padding:1rem 0 0;line-height:1.7;">
+          <p data-lang="es"><strong>Cómo vivirla:</strong> el primer día escribe en un papel el nombre de quien quieres entregar a Dios. Cada día, ante el Santísimo o en casa, lee el versículo y la reflexión, reza la oración diciendo su nombre donde aparece [nombre] y haz el acto del día. El último día entregarás ese papel al Señor.</p>
+          <p data-lang="en" style="display:none"><strong>How to pray it:</strong> on the first day, write on a piece of paper the name of the person you want to entrust to God. Each day, before the Blessed Sacrament or at home, read the verse and reflection, pray the prayer saying their name where [name] appears, and do the act of the day. On the last day you will hand that paper over to the Lord.</p>
+          <p data-lang="es"><strong>Importante:</strong> bendecir y perdonar no significa quedarte en una situación de peligro ni renunciar a la justicia. Si alguien te amenaza o te hace daño, busca protección y ayuda. Encuentra más orientación en <a href="/enemigos/" style="color:#81d4fa;">Bendecir a nuestros enemigos</a>.</p>
+          <p data-lang="en" style="display:none"><strong>Important:</strong> blessing and forgiving do not mean staying in danger or giving up on justice. If someone threatens or harms you, seek protection and help. Find more guidance in <a href="/enemigos/" style="color:#81d4fa;">Blessing Our Enemies</a>.</p>
+        </div>
+        <div class="a33-hero-inner" style="padding:1.5rem 0 1rem">
+          <div class="a33-hero-progress-wrap">
+            <svg class="a33-progress-ring" viewBox="0 0 120 120">
+              <defs>
+                <linearGradient id="ene33RingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#b3e5fc"/>
+                  <stop offset="100%" stop-color="#0277bd"/>
+                </linearGradient>
+              </defs>
+              <circle cx="60" cy="60" r="52" class="a33-ring-track"/>
+              <circle cx="60" cy="60" r="52" class="a33-ring-fill" id="ene33RingFill" style="stroke:url(#ene33RingGrad)"/>
+            </svg>
+            <div class="a33-progress-inner">
+              <span class="a33-progress-num" id="ene33DoneCount">0</span>
+              <span class="a33-progress-label" data-lang="es">de 33</span>
+              <span class="a33-progress-label" data-lang="en" style="display:none">of 33</span>
+            </div>
+          </div>
+        </div>
+        <div class="a33-toolbar">
+          <button class="a33-reset-btn" id="ene33ResetBtn" data-lang="es" style="border-color:rgba(79,195,247,0.3);">↺ Reiniciar jornada</button>
+          <button class="a33-reset-btn" id="ene33ResetBtnEn" data-lang="en" style="display:none;border-color:rgba(79,195,247,0.3);">↺ Reset journey</button>
+        </div>
+        <div class="a33-list" id="ene33List"></div>
+        <p class="ene33-source" data-lang="es" style="font-size:0.82rem;opacity:0.75;margin-top:1rem;">Textos bíblicos en español: Sagrada Biblia, versión oficial de la Conferencia Episcopal Española, publicada en vatican.va. Referencias doctrinales: Catecismo de la Iglesia Católica, nn. 2840-2845.</p>
+        <p class="ene33-source" data-lang="en" style="display:none;font-size:0.82rem;opacity:0.75;margin-top:1rem;">Scripture texts in English are taken from the New American Bible, as published on vatican.va. Doctrinal references: Catechism of the Catholic Church, nos. 2840-2845.</p>
+        <div class="a33-modal-overlay" id="ene33ModalOverlay" aria-modal="true" role="dialog" style="display:none">
+          <div class="a33-modal" id="ene33Modal">
+            <button class="a33-modal-close" id="ene33ModalClose" aria-label="Cerrar">✕</button>
+            <div class="a33-modal-scroll">
+              <div class="a33-modal-header">
+                <span class="a33-modal-daynum" id="ene33DayNum"></span>
+                <h2 class="a33-modal-title" id="ene33Title"></h2>
+              </div>
+              <div class="a33-modal-icon" id="ene33Icon"></div>
+              <blockquote class="a33-modal-verse" id="ene33Verse"></blockquote>
+              <div class="a33-modal-section-label" data-lang="es">Reflexión</div>
+              <div class="a33-modal-section-label" data-lang="en" style="display:none">Reflection</div>
+              <div class="a33-modal-reflection" id="ene33Reflection"></div>
+              <div class="a33-modal-section-label" data-lang="es">Oración del Día</div>
+              <div class="a33-modal-section-label" data-lang="en" style="display:none">Prayer of the Day</div>
+              <div class="a33-modal-prayer" id="ene33Prayer"></div>
+              <div class="a33-act-box" id="ene33ActBox">
+                <span class="a33-act-label" data-lang="es">🤍 Acto del Día</span>
+                <span class="a33-act-label" data-lang="en" style="display:none">🤍 Act of the Day</span>
+                <p class="a33-act-text" id="ene33Act"></p>
+              </div>
+              <div class="a33-tts-wrap">
+                <button class="a33-tts-btn" id="ene33TtsBtn">🔊 <span data-lang="es">Leer este día</span><span data-lang="en" style="display:none">Read this day</span></button>
+                <button class="a33-tts-btn" id="ene33TtsSessionBtn" style="background:rgba(79,195,247,0.08)">▶ <span data-lang="es">Sesión completa (guía + este día)</span><span data-lang="en" style="display:none">Full session (guide + this day)</span></button>
+                <span class="a33-tts-stop" id="ene33TtsStop" style="display:none">⏹</span>
+              </div>
+              <label class="a33-done-label" id="ene33DoneLabel">
+                <input type="checkbox" class="a33-done-check" id="ene33DoneCheck" />
+                <span class="a33-done-checkmark"></span>
+                <span data-lang="es">Marcar este día como completado</span>
+                <span data-lang="en" style="display:none">Mark this day as completed</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="a33-complete-banner" id="ene33CompleteBanner" style="display:none">
+          <div class="a33-complete-inner">
+            <div class="a33-complete-cross" style="color:#81d4fa;">✝</div>
+            <p class="a33-complete-title" data-lang="es">¡Jornada completada!</p>
+            <p class="a33-complete-title" data-lang="en" style="display:none">Journey completed!</p>
+            <p class="a33-complete-sub" data-lang="es">Has entregado a tus enemigos en manos de Dios. Cada vez que vuelva el rencor, renueva tu entrega: Sagrado Corazón de Jesús, en vos confío.</p>
+            <p class="a33-complete-sub" data-lang="en" style="display:none">You have placed your enemies in God's hands. Whenever resentment returns, renew your surrender: Sacred Heart of Jesus, I trust in you.</p>
+          </div>
+        </div>
+      </div><!-- /adorEne33Body -->
+    </section>
+
     <!-- Moment 5 -->
     <article class="ador-moment-section is-active" id="ador-moment-4" data-moment="4">
       <div class="ador-moment-header">
@@ -1935,6 +2029,150 @@
       conv33RenderList();
       conv33Progress();
     }
+
+    // ── Enemigos 33 dias ────────────────────────────
+    const ENE33_KEY    = 'enemigos33_done';
+    const ENE33_RING_C = 2 * Math.PI * 52;
+    const DATA_ENE     = '/adoracion/33dias-enemigos/';
+
+    let ene33Done    = new Set(JSON.parse(localStorage.getItem(ENE33_KEY) || '[]'));
+    let ene33Current = null;
+    let ene33Dias    = {};
+    let ene33Tts     = false;
+
+    const $ene33Done   = document.getElementById('ene33DoneCount');
+    const $ene33Ring   = document.getElementById('ene33RingFill');
+    const $ene33List   = document.getElementById('ene33List');
+    const $ene33Over   = document.getElementById('ene33ModalOverlay');
+    const $ene33Close  = document.getElementById('ene33ModalClose');
+    const $ene33Banner = document.getElementById('ene33CompleteBanner');
+
+    const adorEne33Toggle = document.getElementById('adorEne33Toggle');
+    const adorEne33Body   = document.getElementById('adorEne33Body');
+    const adorEne33Chev   = document.getElementById('adorEne33Chevron');
+
+    function toggleEne33() {
+      const open = adorEne33Body.style.display !== 'none';
+      adorEne33Body.style.display = open ? 'none' : '';
+      adorEne33Toggle.setAttribute('aria-expanded', String(!open));
+      adorEne33Chev.classList.toggle('open', !open);
+      if (!open && !window._ene33Inited) { initEne33Days(); window._ene33Inited = true; }
+    }
+    adorEne33Toggle.addEventListener('click', toggleEne33);
+    adorEne33Toggle.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleEne33(); } });
+
+    function ene33Progress() {
+      const n = ene33Done.size;
+      $ene33Done.textContent = n;
+      if ($ene33Ring) {
+        $ene33Ring.style.strokeDasharray  = ENE33_RING_C;
+        $ene33Ring.style.strokeDashoffset = (ENE33_RING_C * (1 - n / 33)).toFixed(2);
+      }
+      if ($ene33Banner) $ene33Banner.style.display = n >= 33 ? '' : 'none';
+    }
+
+    function ene33RenderList() {
+      if (!$ene33List) return;
+      $ene33List.innerHTML = '';
+      for (let i = 1; i <= 33; i++) {
+        const data  = ene33Dias[i] || null;
+        const done  = ene33Done.has(i);
+        const avail = data !== null;
+        const card  = document.createElement('button');
+        card.className = 'a33-card' + (done ? ' a33-card--done' : '') + (!avail ? ' a33-card--soon' : '');
+        card.disabled  = !avail;
+        const num = document.createElement('span'); num.className = 'a33-card-num'; num.textContent = String(i).padStart(2, '0');
+        const st  = document.createElement('span'); st.className  = 'a33-card-status'; st.textContent = done ? '✓' : (!avail ? '…' : '○');
+        const ttl = document.createElement('span'); ttl.className = 'a33-card-title';
+        ttl.textContent = avail ? (data.theme[lang] || data.theme.es) : (lang === 'en' ? 'Coming soon' : 'Próximamente');
+        card.appendChild(num); card.appendChild(ttl); card.appendChild(st);
+        if (avail) card.addEventListener('click', () => ene33OpenModal(data));
+        $ene33List.appendChild(card);
+      }
+    }
+
+    function ene33PopulateModal(day) {
+      const l = lang;
+      document.getElementById('ene33DayNum').textContent   = (l === 'en' ? 'Day ' : 'Día ') + day.n;
+      document.getElementById('ene33Title').textContent    = day.theme[l] || day.theme.es;
+      document.getElementById('ene33Icon').innerHTML       = day.svg ? `<img src="${day.svg}" alt="" width="110" height="110" />` : '';
+      const v = day.verse;
+      document.getElementById('ene33Verse').innerHTML      = `<span class="a33-verse-text">${v[l]||v.es}</span><cite class="a33-verse-ref">${v.ref}</cite>`;
+      const rArr = day.reflection[l] || day.reflection.es;
+      document.getElementById('ene33Reflection').innerHTML = rArr.map(p => `<p>${p}</p>`).join('');
+      document.getElementById('ene33Prayer').innerHTML     = `<p>${day.prayer[l] || day.prayer.es}</p>`;
+      document.getElementById('ene33Act').textContent      = day.act[l] || day.act.es;
+      document.getElementById('ene33DoneCheck').checked    = ene33Done.has(day.n);
+      $ene33Over.querySelectorAll('[data-lang]').forEach(el => { el.style.display = el.dataset.lang === l ? '' : 'none'; });
+    }
+
+    function ene33OpenModal(day) {
+      ene33Current = day; ene33PopulateModal(day);
+      $ene33Over.style.display = ''; document.body.style.overflow = 'hidden';
+      const sc = document.querySelector('#ene33Modal .a33-modal-scroll'); if (sc) sc.scrollTop = 0;
+    }
+    function ene33CloseModal() {
+      ene33TtsStop(); $ene33Over.style.display = ''; document.body.style.overflow = ''; $ene33Over.style.display = 'none'; ene33Current = null;
+    }
+    $ene33Close.addEventListener('click', ene33CloseModal);
+    $ene33Over.addEventListener('click', e => { if (e.target === $ene33Over) ene33CloseModal(); });
+
+    document.getElementById('ene33DoneCheck').addEventListener('change', function() {
+      if (!ene33Current) return;
+      const n = ene33Current.n;
+      this.checked ? ene33Done.add(n) : ene33Done.delete(n);
+      localStorage.setItem(ENE33_KEY, JSON.stringify([...ene33Done]));
+      ene33Progress(); ene33RenderList();
+    });
+    ['ene33ResetBtn','ene33ResetBtnEn'].forEach(id => {
+      document.getElementById(id).addEventListener('click', () => {
+        const msg = lang === 'en' ? 'Reset all 33 days?' : '¿Reiniciar los 33 días?';
+        if (!confirm(msg)) return;
+        ene33Done.clear(); localStorage.removeItem(ENE33_KEY); ene33Progress(); ene33RenderList();
+      });
+    });
+
+    const $ene33TtsBtn = document.getElementById('ene33TtsBtn');
+    const $ene33TtsStop = document.getElementById('ene33TtsStop');
+    function ene33TtsStop() {
+      if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+      ene33Tts = false; $ene33TtsBtn.style.opacity = '1'; $ene33TtsStop.style.display = 'none';
+      if (window.tupTTS) window.tupTTS.release();
+    }
+    $ene33TtsBtn.addEventListener('click', () => {
+      if (!ene33Current || !('speechSynthesis' in window)) return;
+      if (ene33Tts) { ene33TtsStop(); return; }
+      window.speechSynthesis.cancel();
+      const l = lang;
+      const rArr = ene33Current.reflection[l] || ene33Current.reflection.es;
+      const text = [ene33Current.theme[l]||ene33Current.theme.es, ene33Current.verse[l]||ene33Current.verse.es, ...rArr, ene33Current.prayer[l]||ene33Current.prayer.es, ene33Current.act[l]||ene33Current.act.es].join('. ');
+      const utt = new SpeechSynthesisUtterance(text);
+      utt.lang = l === 'en' ? 'en-US' : 'es-MX'; utt.rate = 0.82;
+      utt.onend = utt.onerror = ene33TtsStop;
+      window.speechSynthesis.speak(utt);
+      ene33Tts = true; $ene33TtsBtn.style.opacity = '0.55'; $ene33TtsStop.style.display = 'inline';
+      if (window.tupTTS) window.tupTTS.acquire();
+    });
+    $ene33TtsStop.addEventListener('click', ene33TtsStop);
+    document.getElementById('ene33TtsSessionBtn').addEventListener('click', () => {
+      ene33TtsStop();
+      adorMomSpeak(get33DayText(ene33Current, lang));
+    });
+
+    async function initEne33Days() {
+      const fetches = [];
+      for (let i = 1; i <= 33; i++) {
+        const n = String(i).padStart(2, '0');
+        fetches.push(fetch(`${DATA_ENE}dia-${n}.json`).then(r => r.ok ? r.json() : null).catch(() => null));
+      }
+      const results = await Promise.all(fetches);
+      ene33Dias = {};
+      results.forEach(d => { if (d) ene33Dias[d.n] = d; });
+      ene33RenderList();
+      ene33Progress();
+    }
+
+    window.addEventListener('tup:langchange', () => { if (window._ene33Inited) ene33RenderList(); });
 
   })();
   </script>

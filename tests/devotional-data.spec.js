@@ -21,7 +21,7 @@ const BIBLE_BOOK_IDS = {
   Eclo: 'sir', Ga: 'gal', Neh: 'neh', 'Éx': 'exo', Is: 'isa',
   Rm: 'rom', Ap: 'rev', Matthew: 'mat', Mark: 'mar', Luke: 'luk',
   John: 'joh', '1 John': '1jo', Romans: 'rom', Eph: 'eph', Rev: 'rev',
-  Mk: 'mar', Lk: 'luk',
+  Mk: 'mar', Lk: 'luk', Jon: 'jon',
 };
 
 const INLINE_BIBLE_REFERENCE = new RegExp(
@@ -62,6 +62,7 @@ function assertBibleReference(reference) {
 
 const SERIES = [
   { id: 'conversion', prefix: 'conv33', toggle: 'adorConv33Toggle' },
+  { id: 'enemigos', prefix: 'ene33', toggle: 'adorEne33Toggle' },
   { id: 'familia', prefix: 'fam33', toggle: 'adorFam33Toggle' },
   { id: 'misericordia', prefix: 'dm33', toggle: 'adorMis33Toggle' },
   { id: 'salud', prefix: 'sal33', toggle: 'adorSalud33Toggle' },

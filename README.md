@@ -6,7 +6,8 @@ Sitio web catolico bilingue (ES/EN) publicado en GitHub Pages.
 
 - Produccion activa en `main`.
 - Sitio estatico con PWA (`sw.js`) y contenido en JSON.
-- Cache actual del Service Worker: `tup-v290`.
+- Cache actual del Service Worker: `tup-v292`.
+- Adoración: 7 jornadas de 33 días en `adoracion/33dias-*/` (la más reciente: `33dias-enemigos`, para bendecir a los enemigos y entregarlos a Dios).
 - Archivos de datos JSON: 106 en `data/`.
 - Historias para ninos: fuente principal en `data/ninos-cuentos.json`.
 - Wake Lock API activo en todas las paginas con TTS (evita standby durante audio).
@@ -112,6 +113,7 @@ theuniversalprayer/
   musica/
   ninos/
   nomascastigo/
+  novena-sagrado-corazon/
   oraciones/
   reconciliacion/
   renacer-en-cristo/
@@ -133,11 +135,13 @@ Nota: el directorio `scripts/` ya no forma parte del repo runtime.
 - Carga de contenido por intercesor desde `data/{id}.json`.
 - Navegacion y comportamiento en cliente desde `assets/js/`.
 - Service Worker en `sw.js` con estrategias de cache para mejorar rendimiento/offline.
+- El menu y otros recursos esenciales de interfaz se actualizan desde la red sin reutilizar una cache HTTP antigua y conservan copia para uso offline.
 
 ## Contenido y Datos
 
 - Cada intercesor usa un JSON en `data/` con campos bilingues.
 - Existe contenido especializado para multiples secciones del sitio (oraciones, historias, meses, etc.).
+- `novena-sagrado-corazon/` ofrece una guia bilingue, adaptada y paso a paso de la novena asociada al Padre Pio, accesible desde el menu y sin guardar las intenciones.
 - `data/ninos-cuentos.json` contiene cuentos infantiles con narrativa extendida y metadatos de lectura.
 
 ## Despliegue

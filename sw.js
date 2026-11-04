@@ -3,7 +3,12 @@
    Offline support for precached and previously cached resources
    ===================================================== */
 
-const CACHE = 'tup-v290';
+const CACHE = 'tup-v292';
+const CRITICAL_CORE_URLS = new Set([
+  '/assets/js/main.js',
+  '/assets/js/menu.js',
+  '/assets/css/styles.css',
+]);
 
 // All files to pre-cache on install
 const PRECACHE_URLS = [
@@ -24,6 +29,8 @@ const PRECACHE_URLS = [
   '/medalla-san-benito/index.html',
   '/cuaresma-san-miguel/',
   '/cuaresma-san-miguel/index.html',
+  '/novena-sagrado-corazon/',
+  '/novena-sagrado-corazon/index.html',
   '/oraciones/',
   '/oraciones/index.html',
   '/rosario/',
@@ -340,7 +347,9 @@ const PRECACHE_URLS = [
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE)
-      .then(cache => cache.addAll(PRECACHE_URLS))
+      .then(cache => cache.addAll(PRECACHE_URLS.map(url =>
+        CRITICAL_CORE_URLS.has(url) ? new Request(url, { cache: 'reload' }) : url
+      )))
       .then(() => self.skipWaiting())
   );
 });
@@ -363,16 +372,16 @@ self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
 
   const url = new URL(event.request.url);
-  const isCriticalCore = url.pathname === '/assets/js/main.js' || url.pathname === '/assets/css/styles.css';
+  const isCriticalCore = CRITICAL_CORE_URLS.has(url.pathname);
   const isCore = /\.(html|js|css)$/.test(url.pathname) || url.pathname === '/' || url.pathname.endsWith('/');
   const isJson = /\.json$/.test(url.pathname);
   const isStatic = /\.(svg|png|ico|webp|woff2?)$/.test(url.pathname);
 
   if (isCriticalCore) {
-    // Network-first for critical UI assets so deploys reflect immediately.
+    // Bypass the HTTP cache for critical UI assets so deploys reflect immediately.
     event.respondWith(
       caches.open(CACHE).then(cache =>
-        fetch(event.request).then(response => {
+        fetch(event.request, { cache: 'no-store' }).then(response => {
           if (response && response.status === 200) {
             cache.put(event.request, response.clone());
           }

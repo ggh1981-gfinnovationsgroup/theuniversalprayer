@@ -60,6 +60,7 @@
     { id: 'medallabenito', href: '/medalla-san-benito/', labels: { es: 'Medalla de San Benito', en: 'Medal of Saint Benedict' }, icon: '✝' },
     { id: 'medallamilagrosa', href: '/medalla-milagrosa/', labels: { es: 'Medalla Milagrosa', en: 'Miraculous Medal' }, icon: '🌸' },
     { id: 'misericordia', href: '/misericordia/', labels: { es: 'Misericordia', en: 'Mercy' }, icon: '🕯️' },
+    { id: 'novenasagradocorazon', href: '/novena-sagrado-corazon/', labels: { es: 'Novena del Sagrado Corazón (Padre Pío)', en: 'Sacred Heart Novena (Padre Pio)' }, icon: '❤️' },
     { id: 'oraciones', href: '/oraciones/', labels: { es: 'Oraciones Básicas', en: 'Basic Prayers' }, icon: '📜' },
     { id: 'bellavirtud', href: '/bella-virtud/', labels: { es: 'La Bella Virtud', en: 'The Beautiful Virtue' }, icon: '🌹' },
     { id: 'vuelvoalpadre', href: '/vuelvo-al-padre/', labels: { es: 'Caigo y vuelvo al Padre', en: 'I fall and return to the Father' }, icon: '🔄' },

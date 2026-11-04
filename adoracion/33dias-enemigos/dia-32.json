@@ -1,0 +1,34 @@
+{
+  "n": 32,
+  "theme": {
+    "es": "Ante el altar",
+    "en": "Before the altar"
+  },
+  "verse": {
+    "es": "«Si cuando vas a presentar tu ofrenda sobre el altar, te acuerdas allí mismo de que tu hermano tiene quejas contra ti, deja allí tu ofrenda ante el altar y vete primero a reconciliarte con tu hermano, y entonces vuelve a presentar tu ofrenda.»",
+    "en": "“If you bring your gift to the altar, and there recall that your brother has anything against you, leave your gift there at the altar, go first and be reconciled with your brother, and then come and offer your gift.”",
+    "ref": "Mt 5, 23-24"
+  },
+  "reflection": {
+    "es": [
+      "Jesús une el altar y la reconciliación. El Catecismo recuerda que el perdón se vive en la oración y sobre todo en la Eucaristía, y cita este pasaje (cf. Catecismo, n. 2845).",
+      "Es interesante que aquí Jesús hable del caso inverso: no de alguien que te ofendió, sino de alguien que tiene quejas contra ti. En casi todo conflicto hay algo que también nosotros necesitamos reconocer. Puede ser pequeño comparado con el daño recibido, pero es real.",
+      "Hoy, ante el Santísimo, pregúntale a Jesús con humildad: ¿hay algo de lo que yo deba pedir perdón en esta historia? ¿Una palabra, una reacción, un juicio, una venganza pequeña? Reconocerlo no te quita la razón en lo que sufriste; te hace más libre.",
+      "Si es posible y prudente, quizá puedas dar un paso: pedir perdón por tu parte, sin exigir nada a cambio. Si no lo es, ofrece al menos ese deseo en la próxima Misa, en el momento del ofertorio."
+    ],
+    "en": [
+      "Jesus joins the altar and reconciliation. The Catechism recalls that forgiveness is lived in prayer and above all in the Eucharist, and cites this passage (cf. Catechism, no. 2845).",
+      "It is striking that Jesus speaks here of the opposite case: not someone who has offended you, but someone who has something against you. In almost every conflict there is something we too need to acknowledge. It may be small compared to the harm received, but it is real.",
+      "Today, before the Blessed Sacrament, ask Jesus humbly: is there anything in this story for which I should ask forgiveness? A word, a reaction, a judgment, a small revenge? Acknowledging it does not take away the truth of what you suffered; it makes you freer.",
+      "If it is possible and prudent, perhaps you can take a step: ask forgiveness for your part without demanding anything in return. If it is not, at least offer that desire at the next Mass, at the offertory."
+    ]
+  },
+  "prayer": {
+    "es": "Jesús Eucaristía, pongo ante tu altar esta historia con [nombre]. Muéstrame lo que yo también deba reconocer. Te ofrezco mi deseo de reconciliación, aunque todavía no sea posible. Que mi ofrenda sea agradable a tus ojos. Amén.",
+    "en": "Jesus in the Eucharist, I place this story with [name] before your altar. Show me what I too need to acknowledge. I offer you my desire for reconciliation, even if it is not yet possible. May my offering be pleasing in your sight. Amen."
+  },
+  "act": {
+    "es": "Si descubriste algo de lo que debes pedir perdón, confiésalo y, si es prudente, pide perdón a la persona. En la próxima Misa, ofrece en el ofertorio toda esta historia.",
+    "en": "If you discovered something you need to ask forgiveness for, confess it and, if it is prudent, ask the person's forgiveness. At the next Mass, offer this whole story at the offertory."
+  }
+}
