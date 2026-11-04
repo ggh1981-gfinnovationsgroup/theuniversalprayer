@@ -1,9 +1,9 @@
 /* =====================================================
    THE UNIVERSAL PRAYER — Service Worker
-   Cache-first strategy: works fully offline after first load
+   Offline support for precached and previously cached resources
    ===================================================== */
 
-const CACHE = 'tup-v288';
+const CACHE = 'tup-v290';
 
 // All files to pre-cache on install
 const PRECACHE_URLS = [

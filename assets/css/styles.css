@@ -3762,3 +3762,51 @@ body {
   .a33-modal-icon     { width: 80px; height: 80px; }
   .a33-modal-icon svg { width: 80px; height: 80px; }
 }
+/* Shared collapsible for referenced prayers and Bible verses */
+.tup-ref {
+  margin: 0.75rem 0 1rem;
+  border: 1px solid rgba(201, 168, 76, 0.28);
+  border-radius: 12px;
+  background: rgba(201, 168, 76, 0.05);
+  padding: 0.55rem 0.95rem;
+  text-align: left;
+}
+.tup-ref > summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--gold, #c9a84c);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+.tup-ref > summary:focus-visible {
+  outline: 2px solid var(--gold, #c9a84c);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+.tup-ref-body { padding-top: 0.6rem; }
+.tup-ref-title {
+  margin: 0.6rem 0 0.2rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+}
+.tup-ref-prayer {
+  white-space: pre-line;
+  margin: 0 0 0.6rem;
+  line-height: 1.65;
+  font-style: italic;
+}
+.tup-ref-verse {
+  margin: 0.4rem 0 0.7rem;
+  padding-left: 0.85rem;
+  border-left: 3px solid rgba(201, 168, 76, 0.5);
+  font-style: italic;
+  line-height: 1.6;
+}
+.tup-ref-verse cite {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.8rem;
+  font-style: normal;
+  opacity: 0.8;
+}

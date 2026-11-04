@@ -78,7 +78,8 @@ test('la oración breve al manto aparece en ambos idiomas', async ({ page }) => 
 });
 
 test('los acordeones se abren en español y en inglés', async ({ page }) => {
-  const details = page.locator('details');
+  // Reference collapsibles (.tup-ref) are per-language and covered by reference-collapsibles.spec.js.
+  const details = page.locator('details:not(.tup-ref)');
   const count = await details.count();
   expect(count).toBeGreaterThan(0);
   for (const lang of ['es', 'en']) {

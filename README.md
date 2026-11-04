@@ -6,7 +6,7 @@ Sitio web catolico bilingue (ES/EN) publicado en GitHub Pages.
 
 - Produccion activa en `main`.
 - Sitio estatico con PWA (`sw.js`) y contenido en JSON.
-- Cache actual del Service Worker: `tup-v288`.
+- Cache actual del Service Worker: `tup-v290`.
 - Archivos de datos JSON: 106 en `data/`.
 - Historias para ninos: fuente principal en `data/ninos-cuentos.json`.
 - Wake Lock API activo en todas las paginas con TTS (evita standby durante audio).
@@ -175,12 +175,17 @@ npm install
 npx playwright install chromium
 npm test                # todas las pruebas
 npx playwright test tests/maria.spec.js   # solo la pagina de Maria
+npx playwright test devotional-data.spec.js --project=chromium
 npm run test:report     # abrir el reporte HTML
 ```
 
 - `tests/smoke.spec.js`: recorre todas las carpetas con `index.html` y verifica carga sin errores JS ni recursos locales rotos, un unico `<summary>` por `<details>`, cambio de idioma y uso de la clave compartida `tup_lang`, y redirecciones.
 - `tests/maria.spec.js`: pruebas detalladas de `/maria/` (devociones, acordeones en ES/EN, slugs de intercesores, enlaces internos y externos, registro en menu/sitemap/SW).
+- `tests/devotional-data.spec.js`: valida los 165 dias y los datos del Carmen, comprueba los limites de las referencias de los capitulos consultados, incluidas las citas con abreviaturas reconocidas en el texto, y abre cada dia en español e ingles. Tambien comprueba las referencias con dos numeraciones en una pantalla de 320 px, las secciones y los nueve dias de la novena del Carmen, y que una lectura descargada se pueda volver a abrir sin conexion. Las 165 lecturas no se precargan todas automaticamente.
+- `tests/devotional-bible-chapters.json` contiene limites de los capitulos ya consultados, no un indice completo de la Biblia. Al incorporar una cita de otro capitulo, verificarla en una edicion catolica apropiada antes de ampliar el archivo. La numeracion de los Salmos puede variar incluso entre ediciones catolicas; cuando se indican las numeraciones de la CEE/NABRE y la NRSVCE, las etiquetas se refieren a los numeros y no identifican necesariamente la fuente literal de la cita.
 - Las peticiones externas (fuentes, YouTube, etc.) se bloquean durante las pruebas.
+
+Las pruebas automaticas no certifican la interpretacion doctrinal, la literalidad de las citas, la calidad profesional de las traducciones ni los permisos de reproduccion. Entre las fuentes consultadas para la revision catolica estan la [Biblia de la Conferencia Episcopal Española](https://www.conferenciaepiscopal.es/biblia/salmos/), la [New American Bible, Revised Edition (NABRE)](https://www.biblegateway.com/versions/New-American-Bible-Revised-Edition-NABRE-Bible/) y la [New Revised Standard Version Catholic Edition (NRSVCE)](https://www.biblegateway.com/versions/New-Revised-Standard-Version-Catholic-Edition-NRSVCE-Bible/) en Bible Gateway, la [Biblia de New Advent](https://www.newadvent.org/bible/gen001.htm), el [Catecismo](https://www.vatican.va/archive/catechism_sp/p2s2c2a4_sp.html) y la [Orden del Carmen](https://ocarm.org/en/our-way-of-life/the-brown-scapular). La NABRE y la NRSVCE figuran en la [lista de traducciones aprobadas por la USCCB](https://www.usccb.org/offices/new-american-bible/approved-translations-bible). Las citas del sitio deben identificarse con su propia edicion y contar con los permisos que correspondan.
 
 ## Mantenimiento
 
