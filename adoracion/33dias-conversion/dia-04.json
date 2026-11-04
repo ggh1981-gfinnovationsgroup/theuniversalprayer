@@ -7,29 +7,34 @@
     "verse":  {
                   "es":  "\"Velen y oren, para que no caigan en tentacion.\"",
                   "en":  "\"Watch and pray so that you will not fall into temptation.\"",
-                  "ref":  ""
+                  "ref":  "Mt 26, 41"
               },
     "reflection":  {
                        "es":  [
-                                  "Dia 4. La ocasión de pecado es una invitación a elegir de nuevo. Puedes decir que no.",
-                                  "Trae esto al Santisimo sin mediaciones. Sin excusas. Sin palabras. Solo presencia.",
-                                  "La Escritura de hoy dice: \"Velen y oren, para que no caigan en tentacion.\" Dejala bajar a tu corazon y obedecela con paz.",
-                                  "La tentacion es real. Tu libertad para rechazarla también."
+                                  "En Getsemaní, Jesús pidió a sus amigos que permanecieran despiertos con Él. Ellos se durmieron. El Evangelio no los presenta como héroes de una vigilia perfecta: estaban cansados y no comprendieron del todo lo que ocurría. Jesús volvió a llamarlos a velar y orar.",
+                                  "Esa escena no convierte la oración en una garantía de que nunca tropezaremos. Nos recuerda que no tenemos que afrontar solos la hora difícil. A veces pedir gracia es tan sencillo como reconocer que estás cansado antes de que el cansancio decida por ti.",
+                                  "Los discípulos no pudieron sostener aquella noche por sí solos; aun así Jesús no dejó de acercarse a ellos. Tal vez tu prueba también tenga una hora conocida: cuando termina el trabajo, cuando todos duermen o cuando recibes una noticia difícil. Preparar compañía para ese momento no es falta de fe.",
+                                  "¿Hay un momento de hoy que te preocupe de antemano? Piensa qué apoyo concreto podrías preparar: avisar a alguien, cambiar de lugar, dejar el teléfono fuera o tener una oración breve a mano. Pedir ayuda antes de la crisis también es una forma de vigilancia.",
+                                  "Ante Jesús, puedes hablar de esa hora tal como la temes. No hace falta prometer que serás invencible. Pídele la gracia para el siguiente paso y recuerda que volver a empezar después de una caída no es fingir que nada pasó; es volver a buscarlo.",
+                                  "La oración puede ser una frase breve repetida con calma, pero también una llamada, una cita con el confesor o el descanso que vienes posponiendo. No todo apoyo tiene que sentirse extraordinario para ser gracia. A veces el auxilio llega de una manera muy ordinaria.",
+                                  "Quédate un momento con la invitación del Evangelio: velar y orar. Tal vez hoy eso signifique descansar, no aislarte o pedir compañía. Recibe la ayuda disponible y camina esta prueba de una decisión a la vez."
                               ],
                        "en":  [
-                                  "You are not here by accident. The Lord gives you this day to go deeper into \u0027Ask for grace in trial\u0027.",
-                                  "In silent prayer, receive this word for you: \u0027Pray before falling, not only after.\u0027",
-                                  "Today\u0027s Scripture says: \"Watch and pray so that you will not fall into temptation.\" Let it descend into your heart and obey it in peace.",
-                                  "If temptation or memory of sin appears, do not hide. Name it, reject the lie, and choose a concrete path of grace: prayer, accompaniment, sacrament, reparation.",
-                                  "Beginning: cut off one occasion of falling today. Conversion begins when you stop negotiating with what wounds you."
+                                  "In Gethsemane, Jesus asked his friends to stay awake with him. They fell asleep. The Gospel does not portray them as heroes of a perfect vigil: they were tired and did not fully understand what was happening. Jesus called them again to watch and pray.",
+                                  "That scene does not make prayer a guarantee that we will never stumble. It reminds us that we do not have to face a difficult hour alone. Sometimes asking for grace is as simple as admitting you are tired before tiredness makes the choice for you.",
+                                  "The disciples could not sustain that night by themselves, yet Jesus kept drawing near to them. Perhaps your own difficult hour is familiar: when work ends, when everyone else is asleep, or when troubling news arrives. Preparing for company in that moment is not a lack of faith.",
+                                  "Is there a moment today that you are already worried about? Think of support you could prepare: tell someone, change rooms, leave your phone elsewhere, or keep a short prayer nearby. Asking for help before a crisis is also a form of watchfulness.",
+                                  "Before Jesus, you can speak about that hour just as you fear it. You do not have to promise to be invincible. Ask for grace for the next step, and remember that beginning again after a fall is not pretending nothing happened; it is turning back to him.",
+                                  "Prayer may be a short phrase repeated calmly, but it may also be a phone call, an appointment with a confessor, or the rest you have been postponing. Support does not have to feel extraordinary to be grace. Sometimes help arrives in a very ordinary form.",
+                                  "Stay for a moment with the Gospel's invitation: watch and pray. Perhaps today that means resting, not isolating yourself, or asking someone to stay with you. Receive the help available and walk through this trial one choice at a time."
                               ]
                    },
     "prayer":  {
-                   "es":  "Senor Jesus, reconozco que sin Ti no puedo vencer la tentacion ni sanar mi pecado. Dame corazon humilde, fortaleza en la lucha, arrepentimiento sincero y perseverancia para caminar en tu gracia. Lavame, levantame y guame por senderos de santidad. Amen.",
-                   "en":  "Lord Jesus, I acknowledge that without You I cannot overcome temptation or heal from sin. Give me a humble heart, strength in the struggle, sincere repentance, and perseverance to walk in Your grace. Wash me, raise me, and guide me on paths of holiness. Amen."
+                   "es":  "Señor Jesús, cuando se acerque la hora difícil, recuérdame que puedo pedir ayuda. Dame gracia para el siguiente paso, humildad para buscar compañía y esperanza para volver a Ti si tropiezo. Amén.",
+                   "en":  "Lord Jesus, when the difficult hour comes, remind me that I can ask for help. Give me grace for the next step, humility to seek company, and hope to return to you if I stumble. Amen."
                },
     "act":  {
-                "es":  "Hoy realiza un acto concreto de conversion: evita una ocasion de pecado, corta un contenido que te hace caer, busca reconciliacion, o agenda tu confesion sacramental.",
-                "en":  "Today do one concrete act of conversion: avoid an occasion of sin, cut off content that leads you to fall, seek reconciliation, or schedule your sacramental confession."
+                "es":  "Antes de la parte más difícil de tu día, haz una pausa de un minuto y pide ayuda con tus propias palabras. Después decide solo el siguiente paso bueno, no toda la semana de una vez.",
+                "en":  "Before the hardest part of your day, pause for one minute and ask for help in your own words. Then choose only the next good step, not the whole week at once."
             }
 }

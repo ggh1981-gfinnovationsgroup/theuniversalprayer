@@ -1,36 +1,40 @@
-﻿{
-    "n":  26,
-    "theme":  {
-                  "es":  "Paciencia con tratamientos largos",
-                  "en":  "Patience with long treatments"
-              },
-    "verse":  {
-                  "es":  "\"Sean pacientes en la tribulacion, constantes en la oracion.\"",
-                  "en":  "\"Be joyful in hope, patient in affliction, faithful in prayer.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 26. Los tratamientos largos pueden ser escuela de paciencia infinita. No asueto. Escuela. Aprende en ella.",
-                                  "Hay una tentación en el cansancio: rendirse. La tentación del \"para qué\" si no mejora rápido. Es el silencio de Dios que suena como abandono. No lo es. Es prueba.",
-                                  "La Escritura de hoy dice: \"Sean pacientes en la tribulación, constantes en la oración.\" Significa: los largos tratamientos son terreno donde crece la fe. Donde se quema el ego. Donde aprendes qué realmente importa.",
-                                  "Hoy honra la cansada persistencia. Ese cuerpo que sigue. Esa mente que no se rinde. Esa voluntad que dice \"un día más\" cuando quiere decir \"nunca más\". Eso es fortaleza.",
-                                  "El Señor no pide sanación rápida. Pide fidelidad mientras. Cada día que te cuidaste sin prisa. Cada medicamento tomado sin despair. Cada noche dormida en esperanza. Eso ya es victoria."
-                              ],
-                       "en":  [
-                                  "Day 26. Long treatments can be a school of infinite patience. Not vacation. School. Learn in it.",
-                                  "There is a temptation in exhaustion: to give up. The temptation of \"why\" if you do not recover quickly. It is God's silence that sounds like abandonment. It is not. It is a test.",
-                                  "Today's Scripture says: \"Be joyful in hope, patient in affliction, faithful in prayer.\" It means: long treatments are ground where faith grows. Where ego burns. Where you learn what really matters.",
-                                  "Today honor tired persistence. That body that keeps going. That mind that does not give up. That will that says \"one more day\" when it wants to say \"never again.\" That is strength.",
-                                  "The Lord does not ask for quick healing. He asks for faithfulness while waiting. Every day you cared for yourself without hurrying. Every medicine taken without despair. Every night slept in hope. That is already victory."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 26,
+  "theme": {
+    "es": "Paciencia con tratamientos largos",
+    "en": "Patience with long treatments"
+  },
+  "verse": {
+    "es": "«Sed pacientes en la tribulación, perseverantes en la oración.»",
+    "en": "\"Be joyful in hope, patient in affliction, faithful in prayer.\"",
+    "ref": "Rom 12, 12"
+  },
+  "reflection": {
+    "es": [
+      "Un tratamiento largo puede llenar el calendario de citas, cambios de rutina y preguntas que se repiten. También puede cansarte o dejarte sin saber qué esperar. No tienes que convertir esa experiencia en una lección ni sentir paciencia todo el tiempo para merecer compañía.",
+      "Si un día te cuesta continuar, eso no prueba que hayas perdido la fe. Puede ser una señal de dolor, efectos secundarios, desgaste o preocupación por los resultados. Cuéntale al equipo que te atiende cómo te sientes antes de tomar decisiones por tu cuenta.",
+      "Pablo anima a ser constantes en la oración y pacientes en la dificultad. Esa frase puede acompañar un proceso, pero no explica por qué alguien enferma ni garantiza que el tratamiento funcione. Puedes rezar por fortaleza y también expresar enojo, tristeza o dudas.",
+      "Anota preguntas para tu próxima cita: qué cambios esperan, qué efectos secundarios vigilar, a quién llamar si empeoras y si hay alternativas. Si no entiendes una respuesta, pide que la expliquen de otra manera o que la escriban. Participar en tu cuidado es legítimo.",
+      "Si el costo, el transporte, el trabajo o los cuidados de otra persona hacen difícil seguir el plan, dilo con claridad. El equipo quizá pueda ayudarte a buscar apoyos o alternativas. No poder cumplir cada indicación no es una falta moral; es información importante para adaptar el cuidado.",
+      "Quienes te acompañan también pueden ayudar con tareas, traslados o notas durante la consulta. Puedes pedir un relevo o aceptar un descanso sin tener que mostrar valentía permanente. Si cuidas a alguien, tu cansancio también merece atención.",
+      "La esperanza no exige llamar victoria a cada jornada ni esconder el miedo. Puede ser seguir preguntando, buscar alivio y permitir que alguien esté contigo hoy. El tratamiento puede continuar y, a la vez, tu vida puede incluir momentos de descanso, vínculo y sentido."
+    ],
+    "en": [
+      "A long treatment can fill the calendar with appointments, changed routines, and recurring questions. It may also leave you tired or uncertain about what to expect. You do not have to turn the experience into a lesson or feel patient all the time in order to deserve companionship.",
+      "If continuing feels hard one day, that does not prove you have lost faith. It may signal pain, side effects, weariness, or concern about the outcome. Tell your care team how you feel before making changes on your own.",
+      "Paul encourages people to be patient in difficulty and constant in prayer. That verse may accompany a process, but it does not explain why someone becomes ill or guarantee that treatment will work. You can pray for strength and also express anger, sadness, or doubt.",
+      "Write down questions for your next appointment: what changes they expect, which side effects to watch for, whom to call if you worsen, and whether alternatives exist. If you do not understand an answer, ask for it another way or in writing. Taking part in your care is legitimate.",
+      "If cost, transportation, work, or caring for someone else makes the plan difficult, say so clearly. Your care team may help you find support or alternatives. Being unable to follow every instruction is not a moral failure; it is important information for adapting care.",
+      "People accompanying you can also help with tasks, transportation, or notes during an appointment. You can ask for relief or accept a break without having to display constant bravery. If you care for someone else, your exhaustion deserves attention too.",
+      "Hope does not require calling every day a victory or hiding fear. It may mean continuing to ask questions, seeking relief, and letting someone be with you today. Treatment may continue while your life also includes moments of rest, connection, and meaning."
+    ]
+  },
+  "prayer": {
+    "es": "Señor, quédate conmigo durante este tratamiento largo. Dame paciencia para los días repetidos, claridad para hablar con mi equipo de salud y compañía para los momentos de cansancio. Amén.",
+    "en": "Lord, stay with me through this long treatment. Give me patience for repetitive days, clarity to speak with my care team, and companionship in moments of exhaustion. Amen."
+  },
+  "act": {
+    "es": "Prepara una pregunta para tu próxima cita sobre cómo manejar un tratamiento largo o sus efectos. Anótala para no tener que recordarla todo de una vez.",
+    "en": "Prepare one question for your next appointment about managing a long treatment or its effects. Write it down so you do not have to remember everything at once."
+  }
 }

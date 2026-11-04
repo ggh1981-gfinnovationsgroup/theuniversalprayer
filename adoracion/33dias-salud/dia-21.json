@@ -1,36 +1,40 @@
-﻿{
-    "n":  21,
-    "theme":  {
-                  "es":  "Aceptar procesos de recuperacion",
-                  "en":  "Accepting recovery processes"
-              },
-    "verse":  {
-                  "es":  "\"La tribulacion produce paciencia.\"",
-                  "en":  "\"Suffering produces perseverance; perseverance, character; and character, hope.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 21. Queremos sanación rápida. Un diagnóstico y luego, puff, vuelta a la normalidad. Pero la verdadera sanación toma tiempo porque construye paciencia donde había apuro, construye fe donde había control.",
-                                  "Si dios te sanara al primer rezo, nunca descubrirías quién eres en la espera. Nunca aprenderías a confiar cuando todo sigue igual. Nunca desarrollarías la profundidad que sólo la prueba prolongada permite.",
-                                  "La Escritura de hoy dice: \"La tribulación produce paciencia.\" No dice \"la tribulación desaparece rápido.\" Dice que produce paciencia. El sufrimiento es alquimia que transforma tu ser.",
-                                  "Muchos abandonan el proceso a mitad de camino porque duró más de lo esperado. Pero ese momento de abandono es cuando más cerca está la transformación. Es cuando se está tejiendo lo nuevo.",
-                                  "Hoy renueva tu compromiso con tu propia sanación, sin fecha límite. Confía en que cada día, aunque no veas cambio, algo se está reconstruyendo adentro. La paciencia es forma de amor propio que finalmente cosechas."
-                              ],
-                       "en":  [
-                                  "Day 21. We want quick healing. A diagnosis and then, poof, back to normal. But true healing takes time because it builds patience where there was haste, builds faith where there was control.",
-                                  "If God healed you at your first prayer, you would never discover who you are in the waiting. You would never learn to trust when everything stays the same. You would never develop the depth that only prolonged testing allows.",
-                                  "Today's Scripture says: \"Suffering produces perseverance; perseverance, character; and character, hope.\" It does not say \"suffering disappears quickly.\" It says that it produces perseverance. Suffering is alchemy that transforms your being.",
-                                  "Many abandon the process halfway through because it lasted longer than expected. But that moment of abandonment is when healing is closest. It is when the new is being woven.",
-                                  "Today renew your commitment to your own healing, with no deadline. Trust that each day, even if you see no change, something inside is being rebuilt. Patience is a form of self-love that you finally reap."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 21,
+  "theme": {
+    "es": "Aceptar procesos de recuperacion",
+    "en": "Accepting recovery processes"
+  },
+  "verse": {
+    "es": "«El Señor sostiene a los que caen y endereza a los encorvados.»",
+    "en": "\"The Lord upholds all who fall and lifts up all who are bowed down.\"",
+    "ref": "Sal 145, 14"
+  },
+  "reflection": {
+    "es": [
+      "Un proceso de recuperación puede durar más de lo que esperabas o tomar una dirección distinta a la que deseabas. Esa espera no demuestra que te falte fe, y la enfermedad no está aquí necesariamente para enseñarte algo. Puedes pedir curación sin encontrar una explicación para el dolor.",
+      "El salmo presenta a Dios como apoyo de quienes caen y de quienes están encorvados. No promete un calendario ni una mejoría automática. Puede ofrecer una imagen de compañía mientras atraviesas días inciertos, aceptas una limitación o vuelves a pedir ayuda.",
+      "La recuperación rara vez es una línea recta. Puede incluir avances, pausas, cambios de tratamiento o síntomas que reaparecen. Una dificultad nueva no borra todo lo que ya has recorrido. Si algo cambia, comparte la información con el equipo que te atiende para decidir el siguiente paso.",
+      "Puedes preguntar a tus profesionales qué señales esperan observar y qué objetivos son realistas para ti. Si una meta no encaja con tus capacidades, horarios o recursos, dilo. La atención debe considerar a la persona completa, no pedirle que se ajuste a un calendario ajeno.",
+      "A veces recuperar la salud significa reducir síntomas; otras, aprender apoyos, adaptarse a una condición o encontrar maneras de participar en la vida. No tienes que llamar sanador a cada resultado. Puedes lamentar lo perdido y seguir buscando cuidados que mejoren tu bienestar.",
+      "La oración no exige paciencia perfecta ni gratitud por lo que duele. Puedes expresar enojo, tristeza o cansancio. También puedes aceptar ayuda práctica, pedir una segunda opinión o buscar acompañamiento emocional. Esas decisiones no niegan la esperanza; atienden necesidades reales.",
+      "Hoy no tienes que renovar una promesa sin fecha. Elige un paso razonable según tu situación: asistir a una consulta, tomar el descanso indicado o pedir que alguien te acompañe. Si hoy el paso es esperar y conservar fuerzas, eso también merece respeto."
+    ],
+    "en": [
+      "A recovery process may take longer than you hoped or follow a different course than you wanted. Waiting does not prove that you lack faith, and illness is not necessarily there to teach you something. You can ask for healing without finding an explanation for pain.",
+      "The psalm presents God as support for those who fall and those who are bowed down. It promises neither a timeline nor automatic improvement. It may offer an image of companionship while you face uncertain days, accept a limitation, or ask for help again.",
+      "Recovery is rarely a straight line. It may include progress, pauses, treatment changes, or returning symptoms. A new difficulty does not erase everything you have already worked through. If something changes, share the information with your care team to decide on the next step.",
+      "You can ask your professionals what signs they expect to see and what goals are realistic for you. If a goal does not fit your abilities, schedule, or resources, say so. Care should consider the whole person rather than ask them to fit someone else's timeline.",
+      "Sometimes recovery means reducing symptoms; at other times, it means learning supports, adapting to a condition, or finding ways to participate in life. You do not have to call every outcome healing. You can grieve what was lost and keep seeking care that improves your wellbeing.",
+      "Prayer does not require perfect patience or gratitude for what hurts. You can express anger, sadness, or weariness. You can also accept practical help, ask for another opinion, or seek emotional support. These choices do not deny hope; they address real needs.",
+      "Today you do not have to renew an undated promise. Choose a reasonable step for your situation: attend an appointment, take the rest that was recommended, or ask someone to accompany you. If today's step is waiting and preserving your strength, that deserves respect too."
+    ]
+  },
+  "prayer": {
+    "es": "Dios paciente, acompáñame en un proceso de recuperación que no avanza en línea recta. Ayúdame a reconocer cada paso, aceptar retrocesos y seguir buscando el apoyo que necesito. Amén.",
+    "en": "Patient God, accompany me through a recovery process that does not move in a straight line. Help me notice each step, accept setbacks, and keep seeking the support I need. Amen."
+  },
+  "act": {
+    "es": "Divide una meta de recuperación en un paso pequeño que puedas intentar hoy, según las indicaciones de quienes te atienden. Si hoy no puedes, descansar también cuenta.",
+    "en": "Break one recovery goal into a small step you can try today, following the guidance of your care team. If you cannot do it today, rest counts too."
+  }
 }

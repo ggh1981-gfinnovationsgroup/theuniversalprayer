@@ -1,36 +1,40 @@
-﻿{
-    "n":  20,
-    "theme":  {
-                  "es":  "Castidad y libertad interior",
-                  "en":  "Chastity and interior freedom"
-              },
-    "verse":  {
-                  "es":  "\"Para libertad nos libero Cristo.\"",
-                  "en":  "\"It is for freedom that Christ has set us free.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 20. La esclavitud no siempre es obvia. No siempre viene en cadenas visibles. A veces viene en patrones invisibles: compulsiones que repites, lugares a los que regresas, deseos que gobiernan tu libertad.",
-                                  "Muchos creen que libertad es hacer lo que quieran. Pero la verdadera libertad es no estar dominado por lo que quieres. Es poder decir no a lo que te daña. Es poder elegir a pesar del deseo.",
-                                  "La Escritura de hoy dice: \"Para libertad nos liberó Cristo.\" Observa: no dice \"para placer.\" Dice para libertad. La diferencia es abismal. Cristo no vino a hacerte permisivo. Vino a hacerte libre.",
-                                  "Identifica hoy dónde no eres libre. ¿Qué compulsión se repite? ¿Qué deseo te gobierna? ¿Qué hábito te controla? La sanación comienza cuando nombras la esclavitud, no cuando la justificas.",
-                                  "La libertad se construye con pequeños noes. Cada vez que dices no a lo que daña tu cuerpo, sí a lo que lo cuida. Cada no es paso hacia la libertad verdadera. El Señor te sostiene en cada elección."
-                              ],
-                       "en":  [
-                                  "Day 20. Slavery is not always obvious. It does not always come in visible chains. Sometimes it comes in invisible patterns: compulsions you repeat, places you return to, desires that govern your freedom.",
-                                  "Many believe freedom is doing what you want. But true freedom is not being dominated by what you want. It is being able to say no to what harms you. It is being able to choose despite desire.",
-                                  "Today's Scripture says: \"It is for freedom that Christ has set us free.\" Notice: it does not say \"for pleasure.\" It says for freedom. The difference is immense. Christ did not come to make you permissive. He came to make you free.",
-                                  "Identify today where you are not free. What compulsion repeats? What desire governs you? What habit controls you? Healing begins when you name slavery, not when you justify it.",
-                                  "Freedom is built with small nos. Every time you say no to what harms your body, yes to what cares for it. Each no is a step toward true freedom. The Lord sustains you in every choice."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 20,
+  "theme": {
+    "es": "Castidad y libertad interior",
+    "en": "Chastity and interior freedom"
+  },
+  "verse": {
+    "es": "«Para ser libres nos liberó Cristo.»",
+    "en": "\"It is for freedom that Christ has set us free.\"",
+    "ref": "Ga 5, 1"
+  },
+  "reflection": {
+    "es": [
+      "La castidad, en la tradición cristiana, no consiste en temer al cuerpo ni en negar que existen deseos. Invita a integrar la sexualidad con el respeto por uno mismo y por los demás, de acuerdo con la propia vocación y las decisiones libres de cada persona.",
+      "El placer y el deseo no son malos por existir. La pregunta puede ser cómo los vivimos: ¿hay respeto, consentimiento, honestidad y cuidado mutuo? La libertad no es solo decir que sí o que no; incluye poder elegir sin presión, manipulación o miedo.",
+      "Pablo escribe que Cristo nos libera. Esa libertad puede sostener límites que protegen la dignidad, pero no debería convertirse en una amenaza ni en vergüenza por sentir. Puedes conversar sobre valores y decisiones con un acompañante espiritual que respete tu conciencia y no te coaccione.",
+      "A veces una conducta se repite aunque la persona desee cambiar. Puede estar relacionada con estrés, soledad, trauma u otras circunstancias; etiquetarte como esclavo no explica por sí solo qué ocurre. Observar el patrón sin insultarte puede ayudarte a decidir qué tipo de apoyo necesitas.",
+      "Si sientes que una conducta se ha vuelto compulsiva o perjudica tu bienestar o tus relaciones, un profesional de salud mental puede ayudarte a explorarla sin juzgarte. La atención clínica puede convivir con la oración y la orientación religiosa; ninguna debería usarse para forzarte a soportar daño.",
+      "En cualquier relación, el consentimiento debe ser libre, informado y puede retirarse. Decir no, cambiar de opinión, pedir más tiempo o salir de una situación insegura no te hace menos digno. Tampoco debes persuadir a alguien para que cruce un límite que ya expresó.",
+      "Hoy piensa en una decisión que te ayude a vivir con más cuidado y libertad. Puede ser hablar con alguien seguro, aclarar un límite o pedir apoyo profesional. No necesitas castigar tu cuerpo para crecer; puedes avanzar con honestidad, respeto y pasos que realmente puedas sostener."
+    ],
+    "en": [
+      "In Christian tradition, chastity is not about fearing the body or denying that desire exists. It invites us to integrate sexuality with respect for ourselves and others, in keeping with each person's vocation and free choices.",
+      "Pleasure and desire are not bad simply because they exist. We can ask how we live them: is there respect, consent, honesty, and mutual care? Freedom is not only the ability to say yes or no; it includes choosing without pressure, manipulation, or fear.",
+      "Paul writes that Christ sets us free. That freedom can support boundaries that protect dignity, but it should not become a threat or shame for feeling. You can discuss values and choices with a spiritual companion who respects your conscience and does not coerce you.",
+      "Sometimes a behavior keeps recurring even when a person wants to change. It may relate to stress, loneliness, trauma, or other circumstances; labeling yourself a slave does not by itself explain what is happening. Observing a pattern without insulting yourself may help you decide what support you need.",
+      "If a behavior feels compulsive or harms your wellbeing or relationships, a mental health professional can help you explore it without judgment. Clinical care can coexist with prayer and religious guidance; neither should be used to force you to endure harm.",
+      "In any relationship, consent must be freely given, informed, and may be withdrawn. Saying no, changing your mind, asking for more time, or leaving an unsafe situation does not make you less worthy. Nor should you persuade someone to cross a boundary they have expressed.",
+      "Today consider one choice that would help you live with greater care and freedom. It might be talking with someone safe, clarifying a boundary, or seeking professional support. You do not need to punish your body in order to grow; you can move forward with honesty, respect, and sustainable steps."
+    ]
+  },
+  "prayer": {
+    "es": "Señor, enséñame a vivir la castidad desde el respeto y la libertad, no desde el miedo a mi cuerpo. Ayúdame a cuidar mis deseos y la dignidad de cada persona. Amén.",
+    "en": "Lord, teach me to live chastity through respect and freedom, not fear of my body. Help me care for my desires and for each person's dignity. Amen."
+  },
+  "act": {
+    "es": "Piensa qué límite te ayudaría a vivir tus relaciones con más respeto y libertad. Si te cuesta sostenerlo, compártelo con alguien de confianza o con tu acompañante espiritual.",
+    "en": "Consider what boundary would help you live your relationships with greater respect and freedom. If it is hard to maintain, discuss it with someone you trust or your spiritual companion."
+  }
 }

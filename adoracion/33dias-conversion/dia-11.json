@@ -7,29 +7,34 @@
     "verse":  {
                   "es":  "\"El que confiesa y abandona su pecado alcanzara misericordia.\"",
                   "en":  "\"Whoever confesses and renounces their sin finds mercy.\"",
-                  "ref":  ""
+                  "ref":  "Prov 28, 13"
               },
     "reflection":  {
                        "es":  [
-                                  "Dia 11. Levantarse después de caer es donde empieza el verdadero cambio.",
-                                  "Trae esto al Santisimo sin mediaciones. Sin excusas. Sin palabras. Solo presencia.",
-                                  "La Escritura de hoy dice: \"El que confiesa y abandona su pecado alcanzara misericordia.\" Dejala bajar a tu corazon y obedecela con paz.",
-                                  "La tentacion es real. Tu libertad para rechazarla también."
+                                  "Después de una caída, a veces lo primero que hacemos es desaparecer: dejamos de rezar, evitamos a quien podría ayudarnos y nos repetimos que volver no sirve. Pero esconderse no repara lo ocurrido. La humildad empieza cuando podemos decir, sin excusas, «necesito volver».",
+                                  "El proverbio de hoy une dos movimientos: reconocer la falta y apartarse de ella. No promete que un hábito se deshaga en una tarde. Sí señala una dirección: verdad, misericordia y un cambio concreto, sostenido también con ayuda.",
+                                  "Levantarte no exige que encuentres una explicación perfecta para la caída. Puedes mirar lo ocurrido con calma: qué sentías, qué oportunidad apareció, qué decisión tomaste y qué pasó después. La pregunta no es cómo castigarte; es qué podrías preparar de otra manera la próxima vez.",
+                                  "Si has caído de nuevo, no te declares un fracaso ni te prometas que jamás volverá a pasar. Mira qué ocurrió antes, qué puedes reparar y quién podría acompañarte. Si el patrón se repite, cuéntaselo a un confesor o a un profesional de confianza.",
+                                  "Quédate ante Jesús sin negociar con la vergüenza. Puedes decirle que te duele haber vuelto a lo mismo y que no sabes aún cómo cambiarlo. El arrepentimiento no es odiarte; es dejar de defender lo que te aleja y comenzar a caminar de otra manera.",
+                                  "Una recaída puede mostrarte que necesitas algo más que una resolución privada: apoyo regular, cambios en el entorno o atención profesional. Pedirlo no vuelve falsa tu conversión. Puede ser precisamente la forma concreta en que dejas de enfrentar solo una lucha que te supera.",
+                                  "El siguiente paso quizá sea pedir una cita, bloquear una ocasión o avisar a alguien cuando llegue la hora difícil. Hazlo pequeño y real. Levantarse no borra el pasado; permite que el pasado no decida el próximo paso. No esperes a sentirte digno para volver a pedir compañía."
                               ],
                        "en":  [
-                                  "Today, God knocks again at the door of your interior life with a concrete call: \u0027Humility to rise again\u0027.",
-                                  "In silent prayer, receive this word for you: \u0027If you fall, rise quickly and come to Me.\u0027",
-                                  "Today\u0027s Scripture says: \"Whoever confesses and renounces their sin finds mercy.\" Let it descend into your heart and obey it in peace.",
-                                  "If temptation or memory of sin appears, do not hide. Name it, reject the lie, and choose a concrete path of grace: prayer, accompaniment, sacrament, reparation.",
-                                  "Beginning: cut off one occasion of falling today. Conversion begins when you stop negotiating with what wounds you."
+                                  "After a fall, we sometimes disappear: we stop praying, avoid people who could help, and tell ourselves that returning is pointless. But hiding does not repair what happened. Humility begins when we can say, without excuses, \"I need to come back.\"",
+                                  "Today's proverb joins two movements: acknowledging the wrong and turning away from it. It does not promise that a habit will disappear in an afternoon. It does point in a direction: truth, mercy, and a concrete change, sustained with help too.",
+                                  "Getting back up does not require a perfect explanation for the fall. You can look calmly at what happened: what you felt, what opportunity appeared, what choice you made, and what followed. The question is not how to punish yourself; it is what you might prepare differently next time.",
+                                  "If you have fallen again, do not declare yourself a failure or promise that it will never happen again. Look at what came before, what you can repair, and who could accompany you. If the pattern keeps repeating, tell a confessor or a trusted professional.",
+                                  "Stay before Jesus without bargaining with shame. You can tell him that you are sorry to have returned to the same thing and do not yet know how to change it. Repentance is not hating yourself; it is ceasing to defend what draws you away and beginning to walk differently.",
+                                  "A relapse may show you that you need more than a private resolution: regular support, changes to your surroundings, or professional care. Asking for it does not make your conversion false. It may be the concrete way you stop facing alone a struggle that overwhelms you.",
+                                  "The next step might be making an appointment, blocking an occasion, or telling someone when a difficult hour is coming. Make it small and real. Rising does not erase the past; it keeps the past from deciding your next step. Do not wait until you feel worthy to ask for company again."
                               ]
                    },
     "prayer":  {
-                   "es":  "Senor Jesus, reconozco que sin Ti no puedo vencer la tentacion ni sanar mi pecado. Dame corazon humilde, fortaleza en la lucha, arrepentimiento sincero y perseverancia para caminar en tu gracia. Lavame, levantame y guame por senderos de santidad. Amen.",
-                   "en":  "Lord Jesus, I acknowledge that without You I cannot overcome temptation or heal from sin. Give me a humble heart, strength in the struggle, sincere repentance, and perseverance to walk in Your grace. Wash me, raise me, and guide me on paths of holiness. Amen."
+                   "es":  "Jesús, cuando vuelva a caer, no permitas que la vergüenza me esconda de Ti. Dame humildad para reconocer lo ocurrido, pedir ayuda y reparar lo posible. Muéstrame el siguiente paso, no una promesa grandiosa. Amén.",
+                   "en":  "Jesus, when I fall again, keep shame from hiding me from you. Give me humility to acknowledge what happened, ask for help, and repair what I can. Show me the next step, not a grand promise. Amen."
                },
     "act":  {
-                "es":  "Hoy realiza un acto concreto de conversion: evita una ocasion de pecado, corta un contenido que te hace caer, busca reconciliacion, o agenda tu confesion sacramental.",
-                "en":  "Today do one concrete act of conversion: avoid an occasion of sin, cut off content that leads you to fall, seek reconciliation, or schedule your sacramental confession."
+                "es":  "Si hoy te equivocas, evita convertir una caída en una sentencia sobre ti. Haz una pausa, pide perdón si corresponde y elige un paso concreto para empezar de nuevo.",
+                "en":  "If you make a mistake today, do not turn one fall into a verdict on yourself. Pause, apologize if needed, and choose one concrete step to begin again."
             }
 }

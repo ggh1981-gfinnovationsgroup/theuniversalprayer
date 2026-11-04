@@ -1,36 +1,40 @@
-﻿{
-    "n":  33,
-    "theme":  {
-                  "es":  "Vida nueva en el Espiritu",
-                  "en":  "New life in the Spirit"
-              },
-    "verse":  {
-                  "es":  "\"El que esta en Cristo es una nueva creacion.\"",
-                  "en":  "\"If anyone is in Christ, the new creation has come: the old has gone, the new is here!\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 33. Quien eras antes de la enfermedad ya pasó. No vuelve. Y eso no es pérdida. Es transformación. El Señor te hizo nuevo en el fuego del sufrimiento.",
-                                  "Tu cuerpo puede que no sea el mismo. Tu mente también cambio. Pero adentro, en lo profundo, algo se sancho. Aprendiste a rezar diferente. A vivir diferente. A amar diferente.",
-                                  "La Escritura de hoy dice: \"El que está en Cristo es nueva creación.\" Eso incluye la enfermedad. Eso incluye el viaje. Eso incluye TODO. Porque todo fue redimido en El.",
-                                  "Hoy no pidas que todo vuelva a ser como antes. Abre los ojos a lo nuevo que naciste siendo. Sí quebrado. Sí cansado. Pero más sabio. Más humano. Más cercano a Dios.",
-                                  "La vida nueva no es ausencia de cicatrices. Es vida que sabe qué hace. Que ama con inteligencia del sufrimiento. Que vive gracias a y desde las heridas. Eso es resurrrección. Y ya está aquí."
-                              ],
-                       "en":  [
-                                  "Day 33. Who you were before illness is already gone. It does not return. And that is not loss. It is transformation. The Lord made you new in the fire of suffering.",
-                                  "Your body may not be the same. Your mind changed too. But deep inside, something is healed. You learned to pray differently. To live differently. To love differently.",
-                                  "Today's Scripture says: \"If anyone is in Christ, the new creation has come: the old has gone, the new is here!\" That includes the illness. That includes the journey. That includes EVERYTHING. Because everything was redeemed in Him.",
-                                  "Today do not ask for everything to go back to how it was. Open your eyes to the new you have become. Yes, broken. Yes, tired. But wiser. More human. Closer to God.",
-                                  "New life is not the absence of scars. It is life that knows what it is doing. That loves with the intelligence of suffering. That lives thanks to and from the wounds. That is resurrection. And it is already here."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 33,
+  "theme": {
+    "es": "Vida nueva en el Espiritu",
+    "en": "New life in the Spirit"
+  },
+  "verse": {
+    "es": "«El que está en Cristo es una nueva creación: pasó lo viejo, todo es nuevo.»",
+    "en": "\"If anyone is in Christ, there is a new creation: everything old has passed away; see, everything has become new!\"",
+    "ref": "2 Co 5, 17"
+  },
+  "reflection": {
+    "es": [
+      "Llegaste al día 33, pero eso no significa que una enfermedad haya terminado ni que debas sentirte diferente. Tal vez encontraste palabras para orar; quizá solo atravesaste estos días. Ambos recorridos son reales. Tu salud no se mide por cuánto cambiaste durante una lectura.",
+      "Pablo escribe que quien está en Cristo es una nueva creación al hablar de reconciliación y vida en Dios. El versículo no dice que enfermar te transforme automáticamente ni que debas dejar atrás tu identidad anterior. Puedes seguir siendo tú, con una historia que incluye cambio, continuidad y preguntas.",
+      "La vida en el Espíritu puede sostener la esperanza mientras sigues un tratamiento o aprendes a vivir con una condición. La oración no sustituye la atención médica, la terapia, los apoyos cotidianos ni las adaptaciones que necesitas. Buscar cuidado sigue siendo una forma válida de responder a la vida.",
+      "Quizá tu cuerpo o tus planes hayan cambiado. Puedes lamentar lo perdido sin llamarlo una bendición necesaria. También puedes notar recursos nuevos, relaciones que te sostienen o cosas que deseas conservar. No tienes que escoger entre reconocer el dolor y agradecer una compañía recibida.",
+      "Si no hubo mejoría física, estos días no fueron un fracaso espiritual. Si sí la hubo, no tienes que atribuir cada cambio a una sola causa ni abandonar el seguimiento indicado. Habla con tu equipo sobre lo que ha cambiado y qué cuidados conviene continuar.",
+      "Después de esta jornada pueden volver el miedo, el cansancio o preguntas antiguas. Eso no borra lo que aprendiste ni significa que empezaste desde cero. Puedes retomar una oración, acudir a alguien de confianza o buscar apoyo profesional cuando lo necesites.",
+      "Para cerrar, elige un cuidado concreto que quieras mantener: una consulta, una pausa, una oración breve o una conversación con alguien cercano. Hazlo a tu ritmo y ajusta el plan cuando haga falta. La vida nueva que anuncia el Evangelio no exige una historia perfecta; puede comenzar en el próximo paso posible."
+    ],
+    "en": [
+      "You have reached day 33, but that does not mean an illness has ended or that you must feel different. Perhaps you found words for prayer; perhaps you simply made it through these days. Both journeys are real. Your health is not measured by how much you changed during a reading.",
+      "Paul writes that anyone in Christ is a new creation while speaking about reconciliation and life in God. The verse does not say illness automatically transforms you or that you must leave your former identity behind. You can remain yourself, with a story that includes change, continuity, and questions.",
+      "Life in the Spirit can sustain hope while you continue treatment or learn to live with a condition. Prayer does not replace medical care, therapy, daily supports, or the accommodations you need. Seeking care remains a valid way to respond to life.",
+      "Perhaps your body or plans have changed. You can grieve what was lost without calling it a necessary blessing. You may also notice new resources, relationships that sustain you, or things you want to keep. You do not have to choose between acknowledging pain and appreciating companionship.",
+      "If your physical health did not improve, these days were not a spiritual failure. If it did, you do not have to attribute every change to a single cause or abandon recommended follow-up. Talk with your care team about what has changed and which care should continue.",
+      "After this journey, fear, exhaustion, or old questions may return. That does not erase what you learned or mean you are back at the beginning. You can return to a prayer, reach out to someone you trust, or seek professional support when needed.",
+      "To close, choose one concrete form of care you want to continue: an appointment, a pause, a short prayer, or a conversation with someone close. Move at your own pace and adjust the plan when needed. The new life proclaimed in the Gospel does not require a perfect story; it can begin with the next possible step."
+    ]
+  },
+  "prayer": {
+    "es": "Espíritu Santo, acompáñame en la vida que sigue después de esta jornada. Ayúdame a cuidar lo aprendido, aceptar apoyo y tratar mi salud con paciencia y esperanza. Amén.",
+    "en": "Holy Spirit, accompany me in the life that continues after this journey. Help me care for what I have learned, accept support, and treat my health with patience and hope. Amen."
+  },
+  "act": {
+    "es": "Escribe una práctica de cuidado que quieras conservar después de estos 33 días y cuándo la retomarás. Si recibes atención profesional, incluye también el siguiente paso acordado con tu equipo.",
+    "en": "Write down one care practice you want to keep after these 33 days and when you will return to it. If you receive professional care, include the next step agreed with your care team."
+  }
 }

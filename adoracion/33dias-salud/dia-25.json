@@ -1,36 +1,40 @@
-﻿{
-    "n":  25,
-    "theme":  {
-                  "es":  "Vencer adicciones",
-                  "en":  "Overcoming addictions"
-              },
-    "verse":  {
-                  "es":  "\"Si el Hijo los libera, seran verdaderamente libres.\"",
-                  "en":  "\"So if the Son sets you free, you will be free indeed.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 25. La adicción es forma de decir: esto que hago/consumo/busco me llena porque no me siento lleno de nada más. Es sed. Es hambre. Es búsqueda de hogar donde no hay.",
-                                  "Pero hay libertad real. No es vida sin deseos. Es vida donde tus deseos te sirven en lugar de ser esclavo de ellos. Es poder decir no y significa no. Es poder estar vacío sin tener que llenar ese vacío con cualquier cosa.",
-                                  "La Escritura de hoy dice: \"Si el Hijo los libera, serán verdaderamente libres.\" No es promesa de que la tentación desaparece. Es promesa de que la tentación pierde poder. De que puedes estar ante ella y elegir no.",
-                                  "La libertad verdadera requiere ayuda. Puede ser grupo de apoyo, terapeuta, comunidad que entienda. No es debilidad pedir apoyo. Es inteligencia. Es sabiduría de saber dónde está la ayuda y buscarla.",
-                                  "Hoy comienza a soltar una cosa. No todo. Una. Porque la libertad se construye poco a poco, con cada pequeña renuncia. Cada no a lo que te controla es sí a la vida. El Señor te sostiene en cada paso."
-                              ],
-                       "en":  [
-                                  "Day 25. Addiction is a way of saying: what I do/consume/seek fills me because I feel empty of everything else. It is thirst. It is hunger. It is searching for home where there is none.",
-                                  "But there is real freedom. It is not life without desires. It is life where your desires serve you instead of your being enslaved to them. It is being able to say no and it means no. It is being able to be empty without having to fill that emptiness with just anything.",
-                                  "Today's Scripture says: \"So if the Son sets you free, you will be free indeed.\" It is not a promise that temptation disappears. It is a promise that temptation loses power. That you can stand before it and choose not.",
-                                  "True freedom requires help. It could be support group, therapist, community that understands. It is not weakness to ask for support. It is intelligence. It is wisdom to know where help is and seek it.",
-                                  "Today begin to release one thing. Not everything. One. Because freedom is built little by little, with each small surrender. Each no to what controls you is a yes to life. The Lord sustains you in every step."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 25,
+  "theme": {
+    "es": "Vencer adicciones",
+    "en": "Overcoming addictions"
+  },
+  "verse": {
+    "es": "«Si el Hijo os da la libertad, seréis realmente libres.»",
+    "en": "\"So if the Son sets you free, you will be free indeed.\"",
+    "ref": "Jn 8, 36"
+  },
+  "reflection": {
+    "es": [
+      "La adicción puede afectar la relación con sustancias o con ciertas conductas, y sus causas varían. No necesitas explicar todo por un vacío interior ni reducir tu historia a un diagnóstico. Si algo está causando daño o se siente difícil de controlar, mereces atención sin humillación.",
+      "Jesús habla de libertad, pero ese versículo no promete que una dependencia desaparezca con una sola oración ni que todo deseo quede bajo control. La recuperación puede incluir decisiones personales, atención clínica, apoyo de otras personas y estrategias de reducción de riesgos.",
+      "Un médico, terapeuta o servicio especializado puede ayudarte a evaluar opciones. Grupos de apoyo también acompañan a muchas personas. Puedes preguntar por confidencialidad, costos, tratamientos disponibles y qué esperar; no tienes que resolverlo todo antes de pedir la primera cita.",
+      "Si hay consumo de alcohol, benzodiacepinas u otras sustancias, dejarlo de golpe puede ser peligroso. Habla con un profesional antes de cambiar el consumo o suspender un tratamiento; una retirada supervisada puede ser necesaria. Si aparecen síntomas graves o hay una emergencia, busca atención urgente.",
+      "Una recaída o el regreso a una conducta no elimina los pasos que ya diste. Puede señalar que el plan necesita otro apoyo o un cambio. Intenta hablarlo con tu equipo sin ocultarlo por vergüenza; juntos pueden revisar riesgos y acordar opciones más seguras.",
+      "La fe puede sostenerte mientras haces ese trabajo, pero no sustituye la evaluación ni te vuelve responsable de controlar cada impulso. Una persona de confianza puede acompañarte a una consulta, ayudarte a preparar preguntas o estar contigo cuando un momento sea difícil.",
+      "Hoy puedes elegir un paso seguro: pedir una cita, averiguar un grupo o contarle a alguien lo que te preocupa. No suspendas una sustancia o medicación de forma abrupta sin orientación. La esperanza no exige prometer que nunca volverás a luchar; invita a buscar apoyo de nuevo."
+    ],
+    "en": [
+      "Addiction can affect a person's relationship with substances or certain behaviors, and its causes vary. You do not have to explain everything as an inner emptiness or reduce your story to a diagnosis. If something is causing harm or feels hard to control, you deserve care without humiliation.",
+      "Jesus speaks of freedom, but this verse does not promise that a dependency disappears with one prayer or that every desire comes under control. Recovery may involve personal choices, clinical care, support from others, and strategies for reducing risk.",
+      "A doctor, therapist, or specialized service can help you assess options. Support groups also accompany many people. You can ask about confidentiality, cost, available treatments, and what to expect; you do not have to solve everything before requesting a first appointment.",
+      "If alcohol, benzodiazepines, or other substances are involved, stopping suddenly can be dangerous. Speak with a professional before changing use or stopping treatment; supervised withdrawal may be needed. If severe symptoms appear or there is an emergency, seek urgent care.",
+      "A relapse or return to a behavior does not erase the steps you have already taken. It may show that the plan needs more support or a change. Try discussing it with your care team without hiding it out of shame; together you can review risks and safer options.",
+      "Faith can sustain you while you do this work, but it does not replace assessment or make you responsible for controlling every impulse. Someone you trust might accompany you to an appointment, help prepare questions, or stay with you during a difficult moment.",
+      "Today you can choose one safe step: request an appointment, look for a support group, or tell someone what worries you. Do not abruptly stop a substance or medication without guidance. Hope does not require promising you will never struggle again; it invites you to seek support again."
+    ]
+  },
+  "prayer": {
+    "es": "Jesús, acompáñame en la lucha contra esta adicción. Dame valor para buscar apoyo especializado, honestidad para reconocer los riesgos y esperanza para volver a intentarlo sin esconderme. Amén.",
+    "en": "Jesus, accompany me in the struggle with this addiction. Give me courage to seek specialized support, honesty to recognize risks, and hope to try again without hiding. Amen."
+  },
+  "act": {
+    "es": "Si te preocupa una conducta adictiva, cuéntaselo hoy a una persona de confianza o a un profesional y pregunta por apoyo especializado. No suspendas de golpe una sustancia o tratamiento sin orientación médica.",
+    "en": "If you are worried about an addictive behavior, tell someone you trust or a professional today and ask about specialized support. Do not abruptly stop a substance or treatment without medical guidance."
+  }
 }

@@ -1,36 +1,40 @@
-﻿{
-    "n":  4,
-    "theme":  {
-                  "es":  "Respirar en la presencia de Dios",
-                  "en":  "Breathing in God\u0027s presence"
-              },
-    "verse":  {
-                  "es":  "\"Dios soplo en su nariz aliento de vida.\"",
-                  "en":  "\"Then the LORD God formed man from the dust of the ground and breathed into his nostrils the breath of life.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 4. Respirar es el acto más primitivo de sobrevivencia y el más olvidado. Quien no respira profundo no habita en su propio cuerpo: solo funciona desde él.",
-                                  "La ansiedad vive en la respiración superficial. El estrés se instala donde el aire no llega completo. Pero no es castigo: es información. Tu cuerpo te pide que regreses.",
-                                  "La Escritura de hoy dice: \"Sopló la vida en la nariz del hombre y éste fue alma viviente.\" No fuiste hecho cuerpo vacío que debe llenarse de tareas. Fuiste creado para vivir, para habitar, para existir plenamente aquí.",
-                                  "Cada respiración profunda es un acto de fe: dice que confías en que habrá aire mañana, que mereces tomar espacio, que tu vida importa lo suficiente para ocupar aire y existencia.",
-                                  "Hoy practica respirar conscientemente: inhala como quien recibe vida, exhala como quien suelta todo lo que no es suyo. En ese ritmo recuperarás el contacto con lo que eres más allá del ruido."
-                              ],
-                       "en":  [
-                                  "Day 4. Breathing is the most primitive act of survival and the most forgotten. Whoever does not breathe deeply does not dwell in their own body: they only function from it.",
-                                  "Anxiety lives in shallow breathing. Stress settles where air does not reach completely. But it is not punishment: it is information. Your body asks you to return.",
-                                  "Today's Scripture says: \"The LORD God formed a man from the dust of the ground and breathed into his nostrils the breath of life, and the man became a living being.\" You were not made as an empty body to be filled with tasks. You were created to live, to dwell, to exist fully here.",
-                                  "Each deep breath is an act of faith: it says you trust that there will be air tomorrow, that you deserve to take space, that your life matters enough to occupy air and existence.",
-                                  "Today practice breathing consciously: inhale as one who receives life, exhale as one who releases everything that is not yours. In that rhythm you will recover contact with what you are beyond all noise."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 4,
+  "theme": {
+    "es": "Respirar en la presencia de Dios",
+    "en": "Breathing in God's presence"
+  },
+  "verse": {
+    "es": "«Sopló en su nariz aliento de vida, y el hombre se convirtió en un ser viviente.»",
+    "en": "\"Then the LORD God formed man from the dust of the ground and breathed into his nostrils the breath of life.\"",
+    "ref": "Gn 2, 7"
+  },
+  "reflection": {
+    "es": [
+      "En el relato del Génesis, Dios da aliento de vida al ser humano. Es una imagen antigua y sencilla: vivir es recibir algo que no fabricamos por nuestra cuenta. Tal vez hoy notes el aire entrar y salir; tal vez respirar te resulte difícil o ni siquiera quieras prestar atención a ello.",
+      "No hay que convertir una respiración profunda en una prueba de fe. Si te resulta cómodo, puedes hacer una pausa y notar el movimiento natural del cuerpo. Si eso te incomoda, vuelve a respirar normalmente. No fuerces el aire ni uses este ejercicio para sustituir atención médica.",
+      "La ansiedad, el dolor y algunas enfermedades pueden cambiar la respiración. Eso no significa que hayas fallado en confiar en Dios. Si la falta de aire es intensa, nueva o preocupante, busca atención médica; la oración puede acompañarte mientras recibes ayuda.",
+      "Ante el Santísimo, puedes agradecer por el aliento de este momento o simplemente permanecer quieto. No tienes que sentir paz para estar aquí. Si aparece inquietud, pide a Jesús que te acompañe tal como estás, sin exigirle a tu cuerpo una calma inmediata.",
+      "Al continuar el día, busca una pausa que sea amable para ti: sentarte, abrir una ventana o pedir compañía. Recibir cuidado también forma parte de honrar la vida.",
+      "Algunas personas viven con asma, una afección pulmonar o secuelas que hacen que prestar atención a la respiración resulte incómodo. No necesitas seguir esta práctica para orar. Puedes elegir otra imagen de la creación, escuchar una lectura bíblica o simplemente pedir que alguien esté contigo.",
+      "El relato del Génesis habla de la vida como don; no explica por qué cada cuerpo respira de manera distinta ni promete que la enfermedad desaparecerá. Si hoy el aire llega con dificultad, no es un fallo espiritual. Puedes buscar cuidado y llevar a Dios lo que estás viviendo, incluso sin palabras."
+    ],
+    "en": [
+      "In the Genesis story, God gives the human being the breath of life. It is an old, simple image: life is something we receive, not something we make by ourselves. Perhaps today you notice the air moving in and out; perhaps breathing is difficult, or you would rather not focus on it.",
+      "There is no need to turn a deep breath into a test of faith. If it feels comfortable, you can pause and notice your body's natural movement. If that makes you uneasy, return to breathing normally. Do not force your breath or use this exercise in place of medical care.",
+      "Anxiety, pain, and some illnesses can change the way we breathe. That does not mean you have failed to trust God. If shortness of breath is severe, new, or worrying, seek medical care; prayer can accompany you while you receive help.",
+      "Before the Blessed Sacrament, you can give thanks for this moment's breath or simply remain still. You do not have to feel peaceful to be here. If you become unsettled, ask Jesus to stay with you as you are, without demanding immediate calm from your body.",
+      "As you continue your day, look for a pause that is gentle for you: sit down, open a window, or ask someone to stay with you. Receiving care is also part of honoring life.",
+      "Some people live with asthma, lung conditions, or lasting effects that make focusing on breathing uncomfortable. You do not have to follow this practice in order to pray. You can choose another image from creation, listen to a Scripture reading, or simply ask someone to stay with you.",
+      "The Genesis story speaks of life as a gift; it does not explain why every body breathes differently or promise that illness will disappear. If breathing is difficult today, that is not a spiritual failure. You can seek care and bring what you are experiencing to God, even without words."
+    ]
+  },
+  "prayer": {
+    "es": "Dios de la vida, gracias por el aliento que recibo. Acompáñame cuando respirar sea difícil o me cause temor. Dame claridad para buscar atención médica y paz para recibir la ayuda de quienes me cuidan. Amén.",
+    "en": "God of life, thank you for the breath I receive. Stay with me when breathing is difficult or frightening. Give me clarity to seek medical care and peace to accept help from those caring for me. Amen."
+  },
+  "act": {
+    "es": "Si te resulta cómodo, detente un minuto y nota el aire al entrar y salir, sin forzar la respiración. Si te mareas o te inquietas, para y vuelve a respirar con naturalidad.",
+    "en": "If it feels comfortable, pause for a minute and notice the air moving in and out without forcing your breath. If you feel dizzy or uneasy, stop and breathe normally."
+  }
 }

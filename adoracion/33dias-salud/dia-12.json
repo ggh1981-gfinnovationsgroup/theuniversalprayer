@@ -1,36 +1,40 @@
-﻿{
-    "n":  12,
-    "theme":  {
-                  "es":  "Ordenar rutinas saludables",
-                  "en":  "Ordering healthy routines"
-              },
-    "verse":  {
-                  "es":  "\"Hagase todo decentemente y con orden.\"",
-                  "en":  "\"Everything should be done in a fitting and orderly way.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 12. Las rutinas no son prisión: son contenedores de libertad. Sin estructura, el caos se come la energía. Con estructura, la energía puede fluir hacia lo que importa.",
-                                  "Muchos rechazamos rutinas creyndolas \"falta de espontaneidad.\" Pero observa: el cuerpo enfermo no puede ser espontáneo. Solo el cuerpo sano, ordenado, descansado puede verdaderamente sorprender.",
-                                  "La Escritura de hoy dice: \"Hágase todo decentemente y con orden.\" El orden no viene de la compulsión. Viene de la reverencia. De honrar tu cuerpo con lo que necesita, cuando lo necesita.",
-                                  "Hoy reflexiona: ?cómo es tu rutina? ?Dónde falta orden? Puede ser: a qué hora duermes, si desayunas, cuándo medicas, cuándo respiras sin pantalla. Pequeños órdenes crean grandes diferencias.",
-                                  "Comienza hoy con una sola rutina nueva. No cinco. Una. Porque la sanación no es explosión de cambios. Es acumulación de pequeños gestos que devuelven orden al caos."
-                              ],
-                       "en":  [
-                                  "Day 12. Routines are not prison: they are containers of freedom. Without structure, chaos devours energy. With structure, energy can flow toward what matters.",
-                                  "Many of us reject routines, thinking they are \"lack of spontaneity.\" But observe: the sick body cannot be spontaneous. Only the healthy, ordered, rested body can truly surprise.",
-                                  "Today's Scripture says: \"Everything should be done in a fitting and orderly way.\" Order does not come from compulsion. It comes from reverence. From honoring your body with what it needs, when it needs it.",
-                                  "Today reflect: How is your routine? Where is order missing? It could be: what time you sleep, if you eat breakfast, when you take medicine, when you breathe without screens. Small orders create large differences.",
-                                  "Begin today with one new routine. Not five. One. Because healing is not an explosion of changes. It is the accumulation of small gestures that return order to chaos."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 12,
+  "theme": {
+    "es": "Ordenar rutinas saludables",
+    "en": "Ordering healthy routines"
+  },
+  "verse": {
+    "es": "«Hágase todo decentemente y con orden.»",
+    "en": "\"Everything should be done in a fitting and orderly way.\"",
+    "ref": "1 Co 14, 40"
+  },
+  "reflection": {
+    "es": [
+      "Una rutina puede ahorrar decisiones y dejar energía para otras cosas. También puede sentirse difícil cuando cambian la salud, el trabajo o las responsabilidades familiares. No es una prisión ni una solución para todo: es una herramienta que puedes ajustar a la vida que tienes.",
+      "Vivir con una enfermedad o una discapacidad no vuelve a nadie menos espontáneo ni menos capaz de disfrutar. Puede significar que hay horarios de tratamiento, descansos o apoyos que conviene planear. Tu valor no depende de sostener una agenda ideal ni de producir cada día lo mismo.",
+      "Pablo escribe que las cosas se hagan con orden en el contexto de la reunión comunitaria. Puedes recibir esa invitación como una valoración de la claridad y el cuidado, no como una regla espiritual que exige organizar perfectamente cada aspecto de tu salud.",
+      "Si deseas cambiar un hábito, comienza con algo pequeño y específico: preparar una comida sencilla, dejar lista una pregunta para la consulta o reservar unos minutos de descanso. Elige una acción que tenga sentido para ti y modifica el plan si tus circunstancias cambian.",
+      "Los horarios de medicamentos y tratamientos deben seguir las indicaciones de quien te atiende. No cambies dosis para hacer encajar una rutina sin consultarlo. Si el horario te resulta difícil, explícalo al profesional; quizá puedan revisar alternativas seguras contigo.",
+      "Una rutina puede interrumpirse por dolor, una noche difícil, cuidados familiares o imprevistos. Eso no prueba que hayas fallado. Puedes retomarla cuando sea posible, reducirla o pedir ayuda. Flexibilidad no es desinterés: a menudo es lo que hace sostenible un hábito.",
+      "Hoy mira tu día con curiosidad, no con juicio. ¿Qué momento podría hacerse un poco más fácil? Prueba un ajuste modesto y observa cómo te resulta. No necesitas reorganizarlo todo para cuidar de ti; una estructura amable puede acompañar, no controlar, tu vida."
+    ],
+    "en": [
+      "A routine can save decisions and leave energy for other things. It can also feel difficult when health, work, or family responsibilities change. It is neither a prison nor a solution to everything; it is a tool you can adjust to the life you have.",
+      "Living with an illness or disability does not make anyone less spontaneous or less able to enjoy life. It may mean there are treatment schedules, rest periods, or supports worth planning. Your value does not depend on keeping an ideal schedule or producing the same amount every day.",
+      "Paul writes that things should be done in an orderly way in the context of communal worship. You can receive that invitation as an appreciation of clarity and care, not a spiritual rule requiring you to organize every part of your health perfectly.",
+      "If you want to change a habit, begin with something small and specific: prepare a simple meal, write down a question for your appointment, or set aside a few minutes of rest. Choose an action that makes sense for you and adjust the plan when your circumstances change.",
+      "Medication and treatment schedules should follow the instructions of your care provider. Do not change doses to fit a routine without consulting them. If the schedule is difficult, explain that to your professional; you may be able to review safe alternatives together.",
+      "A routine may be interrupted by pain, a difficult night, caregiving, or unexpected events. That does not prove you failed. You can resume it when possible, scale it back, or ask for help. Flexibility is not indifference; often it is what makes a habit sustainable.",
+      "Look at your day with curiosity, not judgment. What moment could be made a little easier? Try one modest adjustment and notice how it feels. You do not need to reorganize everything to care for yourself; a kind structure can accompany your life without controlling it."
+    ]
+  },
+  "prayer": {
+    "es": "Dios de paciencia, ayúdame a construir rutinas que cuiden mi salud sin volverlas castigo. Muéstrame un hábito pequeño que pueda sostener y gracia para retomarlo cuando se interrumpa. Amén.",
+    "en": "God of patience, help me build routines that care for my health without turning them into punishment. Show me one small habit I can sustain, and give me grace to resume it when it is interrupted. Amen."
+  },
+  "act": {
+    "es": "Une un hábito de cuidado a algo que ya haces: estirarte después de levantarte, tomar agua con una comida o preparar la ropa para descansar. Empieza con algo que sí puedas sostener.",
+    "en": "Attach one care habit to something you already do: stretch after getting up, drink water with a meal, or prepare your clothes for rest. Start with something you can sustain."
+  }
 }

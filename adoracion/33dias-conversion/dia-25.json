@@ -7,29 +7,34 @@
     "verse":  {
                   "es":  "\"El justo cae siete veces y se levanta.\"",
                   "en":  "\"Though the righteous fall seven times, they rise again.\"",
-                  "ref":  ""
+                  "ref":  "Prov 24, 16"
               },
     "reflection":  {
                        "es":  [
-                                  "Día 25. Caminar en la luz es permanecer donde Yo te veo. Allí está la seguridad.",
-                                  "Trae esto al Santisimo sin mediaciones. Sin excusas. Sin palabras. Solo presencia.",
-                                  "La Escritura de hoy dice: \"El justo cae siete veces y se levanta.\" Dejala bajar a tu corazon y obedecela con paz.",
-                                  "Ya no luchas: gobiernas. Mantente en esa paz."
+                                  "Si has vuelto a caer, quizá escuches por dentro: «Ya sabía que no ibas a cambiar». Ese pensamiento puede hacer que escondas lo ocurrido y abandones todo esfuerzo. El proverbio de hoy habla de alguien que cae y se levanta; no porque la caída no importe, sino porque puede haber un paso después de ella.",
+                                  "Levantarse no significa fingir que no pasó nada. Puedes reconocer el daño, pedir perdón o acudir a la confesión cuando corresponda. También puedes preguntarte qué te dejó vulnerable y qué ayuda necesitas antes de que vuelva la misma situación.",
+                                  "No conviertas el número del proverbio en una cuenta literal ni en una orden de exponerte una y otra vez a lo mismo. Su imagen sostiene a quien tropieza: el justo no queda definido por el suelo. Pero levantarte también puede incluir cambiar el camino y no regresar a la ocasión que te hace caer.",
+                                  "A veces la vergüenza te hace esperar hasta sentirte digno de volver a rezar. No tienes que esperar. Puedes presentarte ante Jesús con la tristeza y la confusión que tienes, sin llamarte irremediable y sin prometer una perfección que no controlas.",
+                                  "Piensa en una ocasión anterior en que lograste empezar de nuevo. ¿Quién te ayudó? ¿Qué cambio concreto hizo más fácil la siguiente decisión? Recuerda ese apoyo, no para idealizar el pasado, sino para preparar algo que puedas repetir ahora.",
+                                  "Si llevas tiempo atrapado en el mismo ciclo, busca ayuda constante. Un confesor, una amistad madura, un grupo de apoyo o un profesional pueden ayudarte a sostener los cambios. No tienes que demostrar que puedes solo para que tu conversión sea sincera.",
+                                  "Ante el Santísimo, pide fuerza para el siguiente paso y paciencia para el proceso. Hoy puede ser enviar un mensaje, retirar una ocasión o pedir una cita. Volver a levantarte no borra la herida; impide que la caída decida por ti qué hacer después."
                               ],
                        "en":  [
-                                  "You are not here by accident. The Lord gives you this day to go deeper into \u0027Persevere after falling\u0027.",
-                                  "In silent prayer, receive this word for you: \u0027Do not call it defeat when you rise again.\u0027",
-                                  "Today\u0027s Scripture says: \"Though the righteous fall seven times, they rise again.\" Let it descend into your heart and obey it in peace.",
-                                  "If temptation or memory of sin appears, do not hide. Name it, reject the lie, and choose a concrete path of grace: prayer, accompaniment, sacrament, reparation.",
-                                  "Perseverance: remain sober and humble. Christian victory is not never falling, but always returning to grace with truth and resolve."
+                                  "If you have fallen again, perhaps you hear inside: \"I knew you would never change.\" That thought can make you hide what happened and abandon every effort. Today's proverb speaks of someone who falls and rises—not because the fall does not matter, but because another step may follow it.",
+                                  "Rising does not mean pretending nothing happened. You can acknowledge harm, apologize, or go to Confession when appropriate. You can also ask what left you vulnerable and what help you need before the same situation comes around again.",
+                                  "Do not turn the proverb's number into a literal tally or a command to expose yourself to the same thing again and again. Its image sustains the person who stumbles: the righteous person is not defined by the ground. But rising may also mean changing your path and not returning to the occasion that leads you to fall.",
+                                  "Sometimes shame makes you wait until you feel worthy to pray again. You do not have to wait. You can come before Jesus with the sadness and confusion you have, without calling yourself hopeless or promising a perfection you cannot control.",
+                                  "Think of a time before when you managed to begin again. Who helped you? What concrete change made the next choice easier? Remember that support, not to idealize the past, but to prepare something you can repeat now.",
+                                  "If you have been caught in the same cycle for a long time, seek steady support. A confessor, a mature friend, a support group, or a professional can help you sustain change. You do not have to prove you can do it alone for your conversion to be sincere.",
+                                  "Before the Blessed Sacrament, ask for strength for the next step and patience for the process. Today that may mean sending a message, removing an occasion, or making an appointment. Rising does not erase the wound; it keeps the fall from deciding what you do next."
                               ]
                    },
     "prayer":  {
-                   "es":  "Senor Jesus, reconozco que sin Ti no puedo vencer la tentacion ni sanar mi pecado. Dame corazon humilde, fortaleza en la lucha, arrepentimiento sincero y perseverancia para caminar en tu gracia. Lavame, levantame y guame por senderos de santidad. Amen.",
-                   "en":  "Lord Jesus, I acknowledge that without You I cannot overcome temptation or heal from sin. Give me a humble heart, strength in the struggle, sincere repentance, and perseverance to walk in Your grace. Wash me, raise me, and guide me on paths of holiness. Amen."
+                   "es":  "Jesús, cuando vuelva a caer, ayúdame a levantarme sin llamar identidad a mi tropiezo. Dame valor para buscar ayuda, aprender de lo ocurrido y elegir de nuevo el bien. Amén.",
+                   "en":  "Jesus, when I fall again, help me rise without making my stumble my identity. Give me courage to seek help, learn from what happened, and choose the good again. Amen."
                },
     "act":  {
-                "es":  "Hoy realiza un acto concreto de conversion: evita una ocasion de pecado, corta un contenido que te hace caer, busca reconciliacion, o agenda tu confesion sacramental.",
-                "en":  "Today do one concrete act of conversion: avoid an occasion of sin, cut off content that leads you to fall, seek reconciliation, or schedule your sacramental confession."
+                "es":  "Si has vuelto a caer, no esperes a sentirte digno para retomar el camino. Dile a Dios la verdad, identifica qué apoyo necesitas y vuelve a dar un paso que te cuide.",
+                "en":  "If you have fallen again, do not wait until you feel worthy to return. Tell God the truth, identify what support you need, and take one step that cares for you."
             }
 }

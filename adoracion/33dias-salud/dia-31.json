@@ -1,36 +1,40 @@
-﻿{
-    "n":  31,
-    "theme":  {
-                  "es":  "Ofrecer el dolor con Cristo",
-                  "en":  "Offering suffering with Christ"
-              },
-    "verse":  {
-                  "es":  "\"Completo en mi carne lo que falta a los padecimientos de Cristo.\"",
-                  "en":  "\"I rejoice in what I am suffering for you, and I fill up in my flesh what is still lacking in regard to Christ\u0027s afflictions.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 31. Tu dolor no es vacio. No es accident. Es invitación a entrar más profundamente en el sacrificio de Cristo. Es oportunidad de decir: \"mi dolor importa porque lo puedo unir a Su Dolor.\"",
-                                  "Esto no significa que el dolor sea bueno. Significa que el dolor en manos del Señor se transforma. Se redime. Se hace fecundo. La esterilidad del sufrimiento se rompe cuando es ofrecido.",
-                                  "La Escritura de hoy dice: \"Completo en mi carne lo que falta a los padecimientos de Cristo.\" Tus padecimientos no completan la Redención. Pero pueden participar en ella. Pueden ser regalos a Dios por otros.",
-                                  "Hoy ofrece tu dolor. No como castigo que aceptas. Como regalo que das. Puede ser por alguien especifico que sufre. Puede ser por la Iglesia. Puede ser por la sanación de otros. Dale sentido.",
-                                  "Cuando ofrendes tu dolor, dejas de ser víctima. Deja de ser absurdo. Entra en la economía divina donde nada se pierde. Todo se redime. Todo se ama. Eso es misticismo real."
-                              ],
-                       "en":  [
-                                  "Day 31. Your pain is not empty. It is not accident. It is invitation to enter more deeply into Christ's sacrifice. It is opportunity to say: \"my pain matters because I can unite it to His Pain.\"\n",
-                                  "This does not mean that pain is good. It means that pain in the Lord's hands is transformed. It is redeemed. It becomes fruitful. The sterility of suffering is broken when it is offered.",
-                                  "Today's Scripture says: \"I fill up in my flesh what is still lacking in regard to Christ's afflictions.\" Your afflictions do not complete the Redemption. But they can participate in it. They can be gifts to God for others.",
-                                  "Today offer your pain. Not as punishment you accept. As a gift you give. It could be for someone specific who is suffering. It could be for the Church. It could be for the healing of others. Give it meaning.",
-                                  "When you offer your pain, you stop being a victim. It stops being absurd. It enters into divine economy where nothing is lost. Everything is redeemed. Everything is loved. That is real mysticism."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 31,
+  "theme": {
+    "es": "Ofrecer el dolor con Cristo",
+    "en": "Offering suffering with Christ"
+  },
+  "verse": {
+    "es": "«Completo en mi carne lo que falta a las tribulaciones de Cristo, en favor de su cuerpo, que es la Iglesia.»",
+    "en": "\"In my flesh I am completing what is lacking in Christ's afflictions for the sake of his body, the church.\"",
+    "ref": "Col 1, 24"
+  },
+  "reflection": {
+    "es": [
+      "El dolor que acompaña una enfermedad no es algo que tengas que agradecer ni una prueba de que Dios te pida sufrir. Puedes desear que termine, buscar alivio y lamentar lo que has perdido. Nada de eso te excluye de la oración ni de la vida de la Iglesia.",
+      "Pablo escribe sobre sus sufrimientos mientras sirve a las comunidades cristianas. La frase de Colosenses no significa que la cruz de Cristo fuera insuficiente ni aconseja buscar dolor. Habla de las dificultades que afronta al anunciar el Evangelio y cuidar a la Iglesia.",
+      "Algunas personas encuentran sentido espiritual al encomendar a Cristo algo que no pueden cambiar. Si esa práctica te ayuda, puede ser una oración libre; no una obligación que alguien deba imponerte. No tienes que ofrecer dolor para que Dios te ame ni para que otra persona sane.",
+      "La enfermedad puede quitarte opciones y dejarte vulnerable. Eso no te convierte en una víctima culpable ni te obliga a transformar lo ocurrido en una historia inspiradora. Puedes pedir que otros te defiendan, buscar protección y decir claramente que necesitas que el dolor disminuya.",
+      "Buscar atención médica, aceptar medicamentos indicados o solicitar apoyo emocional no contradice la fe. Si un tratamiento no alivia lo suficiente, consulta las opciones con tu equipo. No suspendas ni cambies medicamentos por una idea de que soportar más sufrimiento sería espiritualmente mejor.",
+      "Si deseas, puedes rezar por alguien mientras atraviesas tu propia situación, sin pensar que tu dolor compra un resultado. La oración no sustituye el cuidado de esa persona ni te hace responsable de su recuperación. También puedes pedir por ti y por quienes te acompañan.",
+      "Hoy no tienes que encontrar un sentido completo al dolor. Puedes decir: 'Jesús, esto no lo elegí; acompáñame y ayúdame a encontrar alivio'. Si la idea de ofrecerlo te consuela, úsala libremente; si no, puedes limitarte a pedir ayuda. Ambas oraciones caben aquí."
+    ],
+    "en": [
+      "Pain that comes with illness is not something you have to be grateful for or proof that God wants you to suffer. You can want it to stop, seek relief, and grieve what you have lost. None of that excludes you from prayer or the life of the Church.",
+      "Paul writes about his suffering while serving Christian communities. The line in Colossians does not mean Christ's cross was insufficient or advise people to seek pain. It speaks of the hardships he faces in proclaiming the Gospel and caring for the Church.",
+      "Some people find spiritual meaning in entrusting to Christ something they cannot change. If that practice helps you, it can be a free prayer, not an obligation someone may impose on you. You do not have to offer pain for God to love you or for someone else to recover.",
+      "Illness can take away choices and leave you vulnerable. That does not make you a blameworthy victim or require you to turn what happened into an inspiring story. You can ask others to advocate for you, seek protection, and say clearly that you need the pain to lessen.",
+      "Seeking medical care, accepting prescribed medication, or requesting emotional support does not contradict faith. If treatment does not bring enough relief, discuss options with your care team. Do not stop or change medication because of an idea that enduring more pain would be spiritually better.",
+      "If you wish, you can pray for someone while facing your own situation without believing your pain buys an outcome. Prayer does not replace that person's care or make you responsible for their recovery. You can also pray for yourself and those accompanying you.",
+      "Today you do not have to find complete meaning in pain. You can say, 'Jesus, I did not choose this; stay with me and help me find relief.' If the idea of offering it comforts you, use it freely; if not, you can simply ask for help. Both prayers belong here."
+    ]
+  },
+  "prayer": {
+    "es": "Jesús, acompáñame en este dolor que no elegí. Ayúdame a ofrecerte lo que pueda sin romantizar el sufrimiento, y dame valentía para buscar alivio, tratamiento y compañía. Amén.",
+    "en": "Jesus, stay with me in this pain I did not choose. Help me offer what I can without romanticizing suffering, and give me courage to seek relief, treatment, and companionship. Amen."
+  },
+  "act": {
+    "es": "Si quieres ofrecer a Cristo algo de tu sufrimiento, hazlo en una oración breve y pide también el alivio y la ayuda que necesitas. Buscar tratamiento y consuelo no contradice la fe.",
+    "en": "If you wish to offer some of your suffering to Christ, do so in a brief prayer and also ask for the relief and help you need. Seeking treatment and comfort does not contradict faith."
+  }
 }

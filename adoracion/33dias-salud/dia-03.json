@@ -1,36 +1,40 @@
-﻿{
-    "n":  3,
-    "theme":  {
-                  "es":  "Alimentacion con gratitud",
-                  "en":  "Grateful nourishment"
-              },
-    "verse":  {
-                  "es":  "\"Ya coman, ya beban, haganlo todo para gloria de Dios.\"",
-                  "en":  "\"Whether you eat or drink or whatever you do, do it all for the glory of God.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 3. La alimentación no es solo nutrición: es el acto diario en el que decides si te amas o si te castigas. Cada comida es una conversación con tu propio cuerpo.",
-                                  "Muchos heredamos relaciones rotas con la comida: comer para no sentir, no comer para castigarse, usar la comida como control o como única forma de consuelo. Eso es herida, no hambre.",
-                                  "La Escritura de hoy dice: \"Todo lo que coman o beban, o cualquier otra cosa que hagan, háganlo todo para la gloria de Dios.\" Comer bien es rendición, no perfeccionismo. Es decir: mi cuerpo merece nutrirse.",
-                                  "Hoy el Señor te invita a una conversación honesta: ¿comes cuando tienes miedo? ¿Ayunas cuando te rechazas? ¿Usas la comida para huir o como la única forma de cuidarte? Ninguna de esas relaciones es tu verdadero rostro.",
-                                  "Comienza hoy a comer como quien ama a alguien de verdad: lentamente, conscientemente, sin culpa, sin obsesión. La comida es puente entre tu espíritu y tu cuerpo. Mantén ese puente limpio."
-                              ],
-                       "en":  [
-                                  "Day 3. Nutrition is not just food: it is the daily act in which you decide whether you love yourself or punish yourself. Every meal is a conversation with your own body.",
-                                  "Many of us inherited broken relationships with food: eating to not feel, not eating to punish ourselves, using food as control or as the only form of comfort. That is wound, not hunger.",
-                                  "Today's Scripture says: \"So whether you eat or drink or whatever you do, do it all for the glory of God.\" Eating well is surrender, not perfectionism. It is saying: my body deserves to be nourished.",
-                                  "Today the Lord invites you to an honest conversation: Do you eat when you are afraid? Do you fast when you reject yourself? Do you use food to escape or as the only way you know how to care for yourself? None of those patterns is your true face.",
-                                  "Begin today to eat as one who truly loves someone: slowly, consciously, without guilt, without obsession. Food is the bridge between your spirit and your body. Keep that bridge clean."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 3,
+  "theme": {
+    "es": "Alimentación con gratitud",
+    "en": "Grateful nourishment"
+  },
+  "verse": {
+    "es": "\"Ya coman, ya beban, háganlo todo para gloria de Dios.\"",
+    "en": "\"Whether you eat or drink or whatever you do, do it all for the glory of God.\"",
+    "ref": "1 Co 10, 31"
+  },
+  "reflection": {
+    "es": [
+      "Una comida puede ser apenas una pausa entre pendientes. También puede traer recuerdos, preocupación por el dinero o una relación difícil con el cuerpo. Pablo escribe sobre comer y beber en la vida cotidiana; no convierte cada plato en un examen moral.",
+      "Dar gracias por el alimento no exige comer de una manera perfecta ni ignorar lo que tu salud necesita. Para algunas personas, comer es complicado por una enfermedad, por falta de recursos o por una historia de ansiedad con la comida. No tienes que resolver todo eso durante esta oración.",
+      "Si hoy tienes alimento, recibe este momento con gratitud, aunque sea sencillo. Si te falta, esa necesidad merece una respuesta práctica y comunitaria, no una explicación espiritual que la minimice. Dios también nos cuida por medio de quienes comparten, acompañan y ayudan.",
+      "Ante el Santísimo, piensa en quienes prepararon, cultivaron o hicieron posible la comida que llega a tu mesa. Agradece lo que puedas sin compararte con nadie. Si hay miedo o culpa alrededor de comer, puedes nombrarlo y pedir ayuda sin avergonzarte.",
+      "En tu próxima comida, busca un instante de calma y escucha lo que necesitas. No conviertas esta invitación en una regla nueva. Si la alimentación te provoca angustia persistente, hablar con un profesional de salud puede ser un buen paso.",
+      "La gratitud también puede llevarnos a compartir. Si alguien cercano atraviesa inseguridad alimentaria, pregunta qué sería útil y respeta su respuesta; una compra, una invitación o información sobre un servicio local pueden ayudar. No asumas que conoces su situación ni le exijas que cuente detalles para merecer apoyo.",
+      "Pablo habla de dar gloria a Dios en lo ordinario, no de convertir la comida en una prueba de virtud. Hoy puedes agradecer lo que tienes, reconocer con honestidad lo que te falta y tratar tu cuerpo con cuidado. Ninguna de esas cosas necesita compararse con la experiencia de otra persona."
+    ],
+    "en": [
+      "A meal can be little more than a pause between tasks. It can also carry memories, worries about money, or a difficult relationship with your body. Paul writes about eating and drinking in ordinary life; he does not turn every plate into a moral test.",
+      "Giving thanks for food does not require eating perfectly or ignoring what your health needs. For some people, eating is complicated by illness, lack of resources, or a history of anxiety around food. You do not have to solve all of that during this prayer.",
+      "If food is available to you today, receive this moment with gratitude, however simple it is. If you do not have enough, that need deserves practical, communal support, not a spiritual explanation that minimizes it. God also cares for us through people who share, accompany, and help.",
+      "Before the Blessed Sacrament, think of those who prepared, grew, or made possible the food on your table. Give thanks for what you can, without comparing yourself with anyone. If fear or guilt surrounds eating, you can name it and ask for help without shame.",
+      "At your next meal, look for a moment of calm and notice what you need. Do not turn this invitation into another rule. If eating causes you persistent distress, speaking with a health professional may be a good next step.",
+      "Gratitude can also lead us to share. If someone nearby is experiencing food insecurity, ask what would be useful and respect their answer; groceries, an invitation, or information about a local service may help. Do not assume you know their circumstances or require them to share details to deserve support.",
+      "Paul speaks of honoring God in ordinary life, not turning food into a test of virtue. Today you can give thanks for what you have, honestly recognize what is missing, and care for your body. None of these needs to be compared with another person's experience."
+    ]
+  },
+  "prayer": {
+    "es": "Señor, gracias por el alimento de hoy y por las personas que lo hacen posible. Acompaña a quienes viven con miedo, enfermedad o escasez. Ayúdame a cuidar mi cuerpo sin convertir la comida en culpa y a pedir ayuda cuando la necesite. Amén.",
+    "en": "Lord, thank you for today's food and for those who make it possible. Stay with people living with fear, illness, or scarcity. Help me care for my body without turning food into guilt, and ask for help when I need it. Amen."
+  },
+  "act": {
+    "es": "En tu próxima comida, si puedes, siéntate y come sin pantalla durante los primeros minutos. Agradece el alimento y escucha lo que tu cuerpo necesita, sin convertirlo en una regla de restricción.",
+    "en": "At your next meal, if you can, sit down and eat without a screen for the first few minutes. Give thanks for the food and notice what your body needs without turning this into a rule of restriction."
+  }
 }

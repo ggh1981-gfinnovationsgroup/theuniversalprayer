@@ -1,36 +1,40 @@
-﻿{
-    "n":  16,
-    "theme":  {
-                  "es":  "Silencio que restaura",
-                  "en":  "Restoring silence"
-              },
-    "verse":  {
-                  "es":  "\"Quedense quietos y reconozcan que yo soy Dios.\"",
-                  "en":  "\"Be still, and know that I am God.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 16. El silencio no es ausencia de ruido. Es presencia de Dios. En una cultura que monetiza cada segundo, quedarse quieto es acto revolucionario.",
-                                  "Tu mente está acostumbrada a ser llenada: podcast, redes, conversación, distracción. Pero cuando la llenas constantemente, ¿qué espacio queda para que Dios hable? El silencio es su primer lenguaje.",
-                                  "La Escritura de hoy dice: \"Quédense quietos y reconozcan que yo soy Dios.\" No dice \"recen bonito.\" Dice quédense quietos. Es invitación a simplemente estar, sin agenda, sin programa.",
-                                  "En el silencio descubrirás cosas que tu mente ruidosa ocultaba: la verdad sobre lo que realmente te duele, lo que realmente necesitas sanar, quién eres cuando nadie te observa.",
-                                  "Hoy toma 10 minutos de silencio puro. Sin música de fondo, sin app de meditación guiada, sin propósito. Solo tú y Dios. En ese espacio vacío, Él comienza a restaurarte."
-                              ],
-                       "en":  [
-                                  "Day 16. Silence is not the absence of noise. It is the presence of God. In a culture that monetizes every second, remaining still is a revolutionary act.",
-                                  "Your mind is accustomed to being filled: podcasts, social media, conversation, distraction. But when you fill it constantly, what space is left for God to speak? Silence is His first language.",
-                                  "Today's Scripture says: \"Be still, and know that I am God.\" It does not say \"pray beautifully.\" It says be still. It is an invitation to simply be, without agenda, without program.",
-                                  "In silence you will discover things your noisy mind hid: the truth about what really hurts you, what you really need to heal, who you are when no one is watching.",
-                                  "Today take 10 minutes of pure silence. No background music, no guided meditation app, no purpose. Just you and God. In that empty space, He begins to restore you."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 16,
+  "theme": {
+    "es": "Silencio que restaura",
+    "en": "Restoring silence"
+  },
+  "verse": {
+    "es": "«Quedaos quietos y sabed que yo soy Dios.»",
+    "en": "\"Be still, and know that I am God.\"",
+    "ref": "Sal 46, 10"
+  },
+  "reflection": {
+    "es": [
+      "El silencio puede ser una pausa en medio de un día lleno, pero no es idéntico para todos ni una obligación espiritual. Para algunas personas trae calma; para otras, puede despertar inquietud o recuerdos. Dios no está más lejos cuando hay ruido, compañía o una necesidad de moverse.",
+      "Las pantallas y las conversaciones ocupan tiempo, y a veces distraernos también nos ayuda a atravesar una jornada difícil. No tienes que sentir culpa por usarlas. Si deseas hacer espacio para la oración, puedes elegir un momento breve que resulte amable para ti.",
+      "El salmo invita a descansar en Dios en medio de conflictos y temor. Quedarse quieto no significa resolver cada problema ni recibir una respuesta especial. Puede ser una oración sencilla: notar que estás aquí, pedir compañía o escuchar una lectura, sin exigirte sentir algo particular.",
+      "Cuando baja el ruido, quizá notes una emoción o una necesidad; quizá no. No tienes que perseguir recuerdos ni buscar una revelación. Si una práctica de silencio te inquieta, puedes abrir los ojos, escuchar música tranquila, salir a un lugar compartido o terminarla.",
+      "Hoy prueba dos minutos sin pantalla, si eso te resulta cómodo. También puedes rezar caminando, escuchar un salmo o sentarte junto a alguien. La práctica no es una prueba de voluntad: elige una forma de estar con Dios que respete tus necesidades de seguridad y cuidado.",
+      "Si estás en adoración ante el Santísimo, puedes dirigir la atención a la lectura, a una oración conocida o a la presencia de otras personas. Distraerte no significa que hayas fallado. Cuando lo notes, regresa con suavidad o déjate acompañar por la oración comunitaria.",
+      "El silencio no promete curar ni ordenar todo lo que te duele. Puede ofrecer un pequeño espacio para descansar, y la ayuda también puede llegar mediante conversación, tratamiento y comunidad. No necesitas vaciar la mente para ser recibido por Dios; puedes presentarte tal como eres."
+    ],
+    "en": [
+      "Silence can be a pause in a full day, but it is not the same for everyone or a spiritual obligation. Some people find it calming; for others, it may bring unease or memories. God is not farther away when there is noise, company, or a need to move.",
+      "Screens and conversations take up time, and sometimes distraction also helps us get through a difficult day. You do not have to feel guilty for using them. If you want to make room for prayer, you can choose a brief moment that feels kind to you.",
+      "The psalm invites people to rest in God amid conflict and fear. Being still does not mean solving every problem or receiving a special answer. It can be a simple prayer: notice that you are here, ask for company, or listen to a reading without requiring yourself to feel anything in particular.",
+      "When the noise quiets, you may notice an emotion or need; you may not. You do not have to pursue memories or seek a revelation. If a silence practice makes you uneasy, open your eyes, listen to calm music, go to a shared space, or stop.",
+      "Today try two minutes without a screen if that feels comfortable. You can also pray while walking, listen to a psalm, or sit beside someone. The practice is not a test of willpower: choose a way of being with God that respects your need for safety and care.",
+      "If you are before the Blessed Sacrament, you can direct your attention to the reading, a familiar prayer, or the presence of other people. Becoming distracted does not mean you failed. When you notice, return gently or let communal prayer accompany you.",
+      "Silence does not promise to heal or arrange everything that hurts. It may offer a small space to rest, and help may also come through conversation, treatment, and community. You do not need to empty your mind to be welcomed by God; you can come as you are."
+    ]
+  },
+  "prayer": {
+    "es": "Jesús, quédate conmigo en el silencio, incluso cuando no sienta alivio. Ayúdame a descansar sin exigirme respuestas y a buscar compañía si estar a solas se vuelve difícil. Amén.",
+    "en": "Jesus, stay with me in the quiet, even when I feel no relief. Help me rest without demanding answers, and seek company if being alone becomes difficult. Amen."
+  },
+  "act": {
+    "es": "Regálate dos minutos sin audio ni pantalla. Nota los sonidos a tu alrededor y descansa en silencio; si el silencio te inquieta, vuelve a una actividad que te dé seguridad.",
+    "en": "Give yourself two minutes without audio or a screen. Notice the sounds around you and rest quietly; if silence feels unsettling, return to an activity that helps you feel safe."
+  }
 }

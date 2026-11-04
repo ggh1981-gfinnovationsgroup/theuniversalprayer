@@ -1,36 +1,40 @@
-﻿{
-    "n":  18,
-    "theme":  {
-                  "es":  "Hablar verdad sobre uno mismo",
-                  "en":  "Speaking truth about oneself"
-              },
-    "verse":  {
-                  "es":  "\"Te alabo porque soy una creacion admirable.\"",
-                  "en":  "\"I praise you because I am fearfully and wonderfully made.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 18. Llevas años hablándote a ti mismo como si fueras el problema. \"Soy débil.\" \"Soy fracaso.\" \"Soy incapaz.\" Cada palabra es espada que se hunde en tu carne, se aloja en tu cuerpo como infección.",
-                                  "Pero hay una verdad más antigua que tus heridas: eres creación admirable. No a pesar de tus cicatrices, sino incluyéndolas. Tus límites no te hacen menos; te hacen humano, que es exactamente lo que necesitabas ser.",
-                                  "La Escritura de hoy dice: \"Te alabo porque soy una creación admirable.\" Observa: no dice \"te alabo porque logré cosas.\" Dice: te alabo porque existo, porque fui hecho de esta forma particular, con estos ojos, este corazón, estas manos.",
-                                  "Hoy comienza a hablarte como si fueras alguien que amas profundamente. Porque lo eres. ¿Dirías a alguien que amas lo que te dices a ti? Si no, es tiempo de cambiar el diálogo.",
-                                  "Tu cuerpo sana cuando cambias el guión interno. Cuando dejas de ser tu propio acosador. Cuando aprendes a susurrarte: eres suficiente. Eres querido. Eres admirable tal como estás."
-                              ],
-                       "en":  [
-                                  "Day 18. You have spent years speaking to yourself as if you were the problem. \"I am weak.\" \"I am a failure.\" \"I am incapable.\" Each word is a sword that sinks into your flesh, lodges in your body like infection.",
-                                  "But there is a truth older than your wounds: you are a wondrous creation. Not in spite of your scars, but including them. Your limitations do not make you less; they make you human, which is exactly what you needed to be.",
-                                  "Today's Scripture says: \"I praise you because I am fearfully and wonderfully made.\" Notice: it does not say \"I praise you because I accomplished things.\" It says: I praise you because I exist, because I was made in this particular way, with these eyes, this heart, these hands.",
-                                  "Today begin to speak to yourself as if you were someone you love deeply. Because you are. Would you say to someone you love what you say to yourself? If not, it is time to change the internal dialogue.",
-                                  "Your body heals when you change the internal script. When you stop being your own tormentor. When you learn to whisper to yourself: you are enough. You are loved. You are wonderful as you are."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 18,
+  "theme": {
+    "es": "Hablar verdad sobre uno mismo",
+    "en": "Speaking truth about oneself"
+  },
+  "verse": {
+    "es": "«Te doy gracias porque me has formado portentosamente.»",
+    "en": "\"I praise you because I am fearfully and wonderfully made.\"",
+    "ref": "Sal 139, 14"
+  },
+  "reflection": {
+    "es": [
+      "A veces la forma de hablarnos se vuelve dura: 'soy un fracaso', 'no puedo hacer nada bien'. Esas frases pueden aparecer después de experiencias dolorosas o de una exigencia aprendida. No tienes que regañarte por tenerlas; puedes notar su efecto y explorar qué apoyo te ayudaría.",
+      "El salmo expresa gratitud por haber sido creado y conocido por Dios. Esa dignidad no depende de tener buena salud, de poder hacer ciertas cosas ni de sentirte a gusto con tu cuerpo. Una enfermedad, una discapacidad o una herida no te convierten en un problema que haya que corregir para merecer amor.",
+      "Agradecer tu existencia no exige amar cada parte de tu cuerpo ni encontrar un propósito positivo en el dolor. Puedes lamentar una pérdida, querer un cambio o necesitar atención médica y seguir reconociendo que mereces respeto. La fe no te obliga a sentir gratitud cuando lo que sientes es tristeza.",
+      "Prueba a cambiar una condena por una frase más precisa: de 'soy inútil' a 'esta tarea me cuesta hoy' o 'necesito ayuda'. No hace falta que repitas una afirmación que no crees. El objetivo no es convencerte de que todo está bien, sino tratarte con justicia.",
+      "Las ideas negativas sobre uno mismo pueden persistir incluso cuando uno intenta pensar distinto. Hablar con un terapeuta u otro profesional puede ayudar a entender de dónde vienen y practicar nuevas respuestas. No significa que hayas fallado en quererte ni que debas hacer el trabajo a solas.",
+      "Hablarte con cuidado tampoco significa evitar responsabilidades. Puedes reconocer un error, pedir perdón y reparar lo posible sin convertir ese error en la definición de quién eres. La honestidad y la compasión caben juntas: una te ayuda a ver lo ocurrido y la otra a seguir adelante.",
+      "Hoy escribe una descripción de ti que no dependa solo de tu diagnóstico, productividad o apariencia. Puedes incluir una necesidad, una cualidad y algo que valoras. Si el ejercicio se siente extraño o difícil, déjalo abierto; no tienes que resolver tu relación contigo en una sola página."
+    ],
+    "en": [
+      "Sometimes the way we speak to ourselves becomes harsh: 'I am a failure,' 'I cannot do anything right.' These phrases may appear after painful experiences or learned expectations. You do not have to scold yourself for having them; you can notice their effect and explore what support might help.",
+      "The psalm expresses gratitude for being created and known by God. That dignity does not depend on being healthy, being able to do certain things, or feeling comfortable in your body. An illness, disability, or wound does not make you a problem that must be fixed in order to deserve love.",
+      "Giving thanks for your existence does not require loving every part of your body or finding a positive purpose in pain. You can grieve a loss, want change, or need medical care while still recognizing that you deserve respect. Faith does not require gratitude when what you feel is sadness.",
+      "Try replacing a condemnation with a more precise phrase: change 'I am useless' to 'this task is hard for me today' or 'I need help.' You do not have to repeat an affirmation you do not believe. The goal is not to convince yourself that everything is fine, but to treat yourself fairly.",
+      "Negative beliefs about yourself may persist even when you try to think differently. Talking with a therapist or another professional can help you understand where they come from and practice new responses. It does not mean you failed to love yourself or have to do the work alone.",
+      "Speaking to yourself with care also does not mean avoiding responsibility. You can acknowledge a mistake, apologize, and repair what you can without turning that mistake into the definition of who you are. Honesty and compassion can coexist: one helps you see what happened, the other helps you keep going.",
+      "Today write a description of yourself that does not depend only on your diagnosis, productivity, or appearance. You can include a need, a quality, and something you value. If the exercise feels strange or difficult, leave it unfinished; you do not have to resolve your relationship with yourself on one page."
+    ]
+  },
+  "prayer": {
+    "es": "Dios de verdad, dame palabras para hablar de lo que vivo sin minimizarlo ni condenarme. Muéstrame a quién puedo contárselo con seguridad y qué apoyo necesito pedir. Amén.",
+    "en": "God of truth, give me words to speak about what I am experiencing without minimizing it or condemning myself. Show me whom I can tell safely and what support I need to ask for. Amen."
+  },
+  "act": {
+    "es": "Escribe una descripción de ti que no dependa de tu diagnóstico, productividad o apariencia. Incluye una cualidad que alguien que te quiere reconocería en ti.",
+    "en": "Write a description of yourself that does not depend on your diagnosis, productivity, or appearance. Include one quality someone who loves you would recognize in you."
+  }
 }

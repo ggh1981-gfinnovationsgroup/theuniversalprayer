@@ -1,35 +1,40 @@
 ﻿{
     "n":  18,
     "theme":  {
-                  "es":  "Cortar amistades de caida",
+                  "es":  "Cortar amistades de caída",
                   "en":  "Cut ties with stumbling friendships"
               },
     "verse":  {
-                  "es":  "\"Las malas companias corrompen las buenas costumbres.\"",
+                  "es":  "\"Las malas compañías corrompen las buenas costumbres.\"",
                   "en":  "\"Bad company corrupts good character.\"",
-                  "ref":  ""
+                  "ref":  "1 Cor 15, 33"
               },
     "reflection":  {
                        "es":  [
-                                  "Día 18. Obedecer lo verdadero, aunque duela, es la puerta a la paz.",
-                                  "Trae esto al Santisimo sin mediaciones. Sin excusas. Sin palabras. Solo presencia.",
-                                  "La Escritura de hoy dice: \"Las malas companias corrompen las buenas costumbres.\" Dejala bajar a tu corazon y obedecela con paz.",
-                                  "Aqui se trabaja la raiz. No alcanza con resistir; hay que sanar."
+                                  "Hay amistades que te hacen bien y otras en las que terminas haciendo cosas que después lamentas. A veces la diferencia se vuelve clara solo al mirar cómo te sientes al salir de una reunión: más libre y acompañado, o presionado a actuar contra lo que quieres cuidar.",
+                                  "Pablo advierte a la comunidad de Corinto sobre las compañías que pueden torcer sus costumbres. No está diciendo que debamos despreciar a las personas que luchan o que son distintas de nosotros. La pregunta es qué influencia tiene una relación concreta y qué límites necesitas para vivir con integridad.",
+                                  "Piensa en una situación específica: quizá alguien te insiste para beber, mentir, consumir contenido que no quieres o burlarte de otra persona. Puedes nombrar el efecto sin declarar que esa persona no vale nada. Los límites hablan de lo que tú puedes aceptar, no del valor de quien tienes delante.",
+                                  "A veces basta con decir que no, proponer otro plan o marcharte antes. Otras veces la relación se basa repetidamente en presión y tendrás que tomar distancia. Si es una amistad importante, una conversación honesta puede ayudar; si hay manipulación o peligro, busca apoyo antes de confrontar.",
+                                  "No te aísles por completo. Cortar una dinámica dañina puede dejar un vacío, y ese vacío necesita compañía buena: una amistad que respete tus decisiones, alguien de tu parroquia o una persona madura a quien puedas llamar cuando te sientas vulnerable.",
+                                  "Ante Jesús, pregúntate qué tipo de amigo quieres ser tú. ¿Puedes acompañar a alguien sin seguirlo hacia una conducta que te hace daño? ¿Necesitas pedir perdón por la presión que tú mismo ejerciste? La conversión cambia también la forma en que tratamos a nuestros amigos.",
+                                  "Elige un límite concreto para el próximo encuentro y piensa qué harás si no se respeta. Pide a Dios valor para sostenerlo y apertura para construir relaciones donde la verdad y el cariño puedan convivir."
                               ],
                        "en":  [
-                                  "Pause before the Blessed Sacrament: this theme, \u0027Cut ties with stumbling friendships\u0027, can reshape your life if you embrace it in faith.",
-                                  "In silent prayer, receive this word for you: \u0027Companionships of darkness extinguish faith.\u0027",
-                                  "Today\u0027s Scripture says: \"Bad company corrupts good character.\" Let it descend into your heart and obey it in peace.",
-                                  "If temptation or memory of sin appears, do not hide. Name it, reject the lie, and choose a concrete path of grace: prayer, accompaniment, sacrament, reparation.",
-                                  "Deepening: work on the roots of interior disorder (pride, resentment, self-deception, or lukewarmness). Christ wants to heal not only symptoms, but origins."
+                                  "Some friendships are good for you, while in others you find yourself doing things you later regret. Sometimes the difference becomes clear only afterward: do you leave a gathering feeling freer and supported, or pressured to act against what you want to protect?",
+                                  "Paul warns the community at Corinth about company that can corrupt its habits. He is not saying we should despise people who struggle or differ from us. The question is what influence a particular relationship has and what boundaries you need in order to live with integrity.",
+                                  "Think of one specific situation: perhaps someone presses you to drink, lie, consume content you do not want, or mock another person. You can name the effect without declaring that the person has no worth. Boundaries describe what you can accept, not the value of the person before you.",
+                                  "Sometimes it is enough to say no, suggest another plan, or leave early. At other times a relationship repeatedly relies on pressure and you may need distance. If it is an important friendship, an honest conversation may help; if there is manipulation or danger, seek support before confronting it.",
+                                  "Do not isolate yourself completely. Leaving a harmful dynamic can leave a void, and that space needs good companionship: a friend who respects your choices, someone from your parish, or a mature person you can call when you feel vulnerable.",
+                                  "Before Jesus, ask what kind of friend you want to be. Can you accompany someone without following them into behavior that harms you? Do you need to apologize for pressure you placed on someone else? Conversion also changes how we treat our friends.",
+                                  "Choose one clear boundary for your next meeting and think about what you will do if it is not respected. Ask God for courage to keep it and openness to build relationships where truth and care can live together."
                               ]
                    },
     "prayer":  {
-                   "es":  "Senor Jesus, reconozco que sin Ti no puedo vencer la tentacion ni sanar mi pecado. Dame corazon humilde, fortaleza en la lucha, arrepentimiento sincero y perseverancia para caminar en tu gracia. Lavame, levantame y guame por senderos de santidad. Amen.",
-                   "en":  "Lord Jesus, I acknowledge that without You I cannot overcome temptation or heal from sin. Give me a humble heart, strength in the struggle, sincere repentance, and perseverance to walk in Your grace. Wash me, raise me, and guide me on paths of holiness. Amen."
+                   "es":  "Dios mío, dame sabiduría para elegir amistades que me acerquen al bien. Enséñame a poner límites sin despreciar a nadie y a ser yo también una compañía honesta y generosa. Amén.",
+                   "en":  "My God, give me wisdom to choose friendships that draw me toward good. Teach me to set boundaries without despising anyone, and help me be an honest and generous friend in return. Amen."
                },
     "act":  {
-                "es":  "Hoy realiza un acto concreto de conversion: evita una ocasion de pecado, corta un contenido que te hace caer, busca reconciliacion, o agenda tu confesion sacramental.",
-                "en":  "Today do one concrete act of conversion: avoid an occasion of sin, cut off content that leads you to fall, seek reconciliation, or schedule your sacramental confession."
+                "es":  "Piensa en una relación que suele empujarte hacia una conducta que lamentas. Decide un límite concreto y respetuoso para hoy; busca también la compañía de alguien que te ayude a no aislarte.",
+                "en":  "Think of a relationship that tends to pull you toward a behavior you regret. Choose one clear, respectful boundary for today, and also seek the company of someone who can help you avoid isolation."
             }
 }

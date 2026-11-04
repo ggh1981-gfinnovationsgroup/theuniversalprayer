@@ -7,29 +7,34 @@
     "verse":  {
                   "es":  "\"No nos cansemos de hacer el bien.\"",
                   "en":  "\"Let us not become weary in doing good.\"",
-                  "ref":  ""
+                  "ref":  "Gál 6, 9"
               },
     "reflection":  {
                        "es":  [
-                                  "Día 24. La virtud opuesta al vicio es tu arma verdadera. Cultívala.",
-                                  "Trae esto al Santisimo sin mediaciones. Sin excusas. Sin palabras. Solo presencia.",
-                                  "La Escritura de hoy dice: \"No nos cansemos de hacer el bien.\" Dejala bajar a tu corazon y obedecela con paz.",
-                                  "Ya no luchas: gobiernas. Mantente en esa paz."
+                                  "Hay cambios que no se notan de un día para otro. Quizá llevas varias semanas intentando apartarte de una conducta y todavía te descubres volviendo a ella. Pablo escribe a una comunidad cansada de hacer el bien; no les promete resultados instantáneos, les anima a no perder la esperanza.",
+                                  "La paciencia en la lucha no es resignarte a seguir igual. Es sostener el deseo de cambiar sin exigir que cada intento salga perfecto. Puedes aprender de un tropiezo, volver a pedir ayuda y ajustar el plan, en vez de usar la caída como prueba de que nada sirve.",
+                                  "Piensa en una mejora pequeña que casi nadie ve: una noche en que cerraste el teléfono, una disculpa que ofreciste, una vez que pediste compañía antes de actuar. No la conviertas en motivo de orgullo; agradécela. Los pasos modestos también forman una vida nueva.",
+                                  "Si estás cansado, quizá la respuesta de hoy no sea esforzarte más, sino descansar y volver mañana con apoyo. La perseverancia no consiste en ignorar el cuerpo ni en cumplir una exigencia imposible. También puede ser pedir a alguien que te acompañe de manera constante.",
+                                  "Ante el Santísimo, deja que la frase «no nos cansemos de hacer el bien» se quede contigo. ¿Qué bien puedes sostener esta semana sin agotarte? Tal vez sea acudir a la confesión, continuar terapia, poner un límite o mantener un pequeño tiempo de oración.",
+                                  "No midas el cambio solo por la ausencia total de tentación. Observa también si puedes reconocerla antes, apartarte con más rapidez o tratarte con menos desprecio cuando tropiezas. Esas señales no reemplazan la conversión, pero pueden mostrar que estás aprendiendo a responder de otro modo.",
+                                  "Elige el siguiente paso y no toda la ruta. Si hoy es un día difícil, pide compañía. Si hoy fue un día mejor, da gracias y sigue cuidando lo que te ayuda. La paciencia deja espacio para que la gracia actúe durante el tiempo que el cambio necesita."
                               ],
                        "en":  [
-                                  "Pause before the Blessed Sacrament: this theme, \u0027Patience in the struggle\u0027, can reshape your life if you embrace it in faith.",
-                                  "In silent prayer, receive this word for you: \u0027Patience in struggle is also holiness.\u0027",
-                                  "Today\u0027s Scripture says: \"Let us not become weary in doing good.\" Let it descend into your heart and obey it in peace.",
-                                  "If temptation or memory of sin appears, do not hide. Name it, reject the lie, and choose a concrete path of grace: prayer, accompaniment, sacrament, reparation.",
-                                  "Perseverance: remain sober and humble. Christian victory is not never falling, but always returning to grace with truth and resolve."
+                                  "Some changes are not visible from one day to the next. Perhaps you have spent weeks trying to turn away from a behavior and still find yourself returning to it. Paul writes to a community growing tired of doing good; he does not promise immediate results, but encourages them not to lose hope.",
+                                  "Patience in struggle is not resignation to staying the same. It is sustaining the desire to change without demanding that every attempt be perfect. You can learn from a stumble, ask for help again, and adjust the plan instead of using the fall as proof that nothing works.",
+                                  "Think of a small improvement almost no one sees: a night you put your phone away, an apology you offered, or a time you asked for company before acting. Do not turn it into a reason for pride; give thanks. Modest steps also shape a new life.",
+                                  "If you are tired, perhaps today's answer is not to try harder, but to rest and return tomorrow with support. Perseverance does not mean ignoring your body or meeting an impossible demand. It can also mean asking someone to accompany you consistently.",
+                                  "Before the Blessed Sacrament, let the words \"let us not become weary in doing good\" stay with you. What good can you sustain this week without exhausting yourself? Perhaps it is going to Confession, continuing therapy, setting a boundary, or keeping a brief time for prayer.",
+                                  "Do not measure change only by the total absence of temptation. Notice also whether you can recognize it earlier, step away more quickly, or treat yourself with less contempt when you stumble. These signs do not replace conversion, but they may show that you are learning to respond differently.",
+                                  "Choose the next step, not the whole route. If today is difficult, ask for company. If today went better, give thanks and keep caring for what helps you. Patience leaves room for grace to work for as long as change takes."
                               ]
                    },
     "prayer":  {
-                   "es":  "Senor Jesus, reconozco que sin Ti no puedo vencer la tentacion ni sanar mi pecado. Dame corazon humilde, fortaleza en la lucha, arrepentimiento sincero y perseverancia para caminar en tu gracia. Lavame, levantame y guame por senderos de santidad. Amen.",
-                   "en":  "Lord Jesus, I acknowledge that without You I cannot overcome temptation or heal from sin. Give me a humble heart, strength in the struggle, sincere repentance, and perseverance to walk in Your grace. Wash me, raise me, and guide me on paths of holiness. Amen."
+                   "es":  "Dios mío, cuando me canse de hacer el bien, renueva mi esperanza sin pedirme que ignore mis límites. Muéstrame qué pequeño acto de amor puedo sostener hoy y cuándo necesito descansar. Amén.",
+                   "en":  "My God, when I grow tired of doing good, renew my hope without asking me to ignore my limits. Show me one small act of love I can sustain today, and when I need to rest. Amen."
                },
     "act":  {
-                "es":  "Hoy realiza un acto concreto de conversion: evita una ocasion de pecado, corta un contenido que te hace caer, busca reconciliacion, o agenda tu confesion sacramental.",
-                "en":  "Today do one concrete act of conversion: avoid an occasion of sin, cut off content that leads you to fall, seek reconciliation, or schedule your sacramental confession."
+                "es":  "Reconoce un cambio pequeño que hayas sostenido, aunque nadie más lo note. Pídele a Jesús paciencia para continuar sin exigirte resultados perfectos de inmediato.",
+                "en":  "Notice one small change you have maintained, even if no one else sees it. Ask Jesus for patience to continue without demanding perfect results right away."
             }
 }

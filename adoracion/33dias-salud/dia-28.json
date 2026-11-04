@@ -1,36 +1,40 @@
-﻿{
-    "n":  28,
-    "theme":  {
-                  "es":  "Alegria pequena de cada dia",
-                  "en":  "Small daily joy"
-              },
-    "verse":  {
-                  "es":  "\"La alegria del Senor es su fortaleza.\"",
-                  "en":  "\"The joy of the LORD is your strength.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 28. La alegría pequeña es la más real. Una respiración profunda. Un café tibio en la mañana. El sol. La risa que no planeaste.",
-                                  "Cuando estás enfermo, la alegría grande se aleja. Pero la pequeña queda. Si aprendes a verla. Si aprendes a recogerla. Es lo que diferencia la vida de la mera supervivencia.",
-                                  "La Escritura de hoy dice: \"La alegría del Señor es su fortaleza.\" No es fortaleza la más fuerte. Es la fortaleza que viene de haber encontrado razones para vivir en lo pequeño. En lo que queda.",
-                                  "Hoy busca tres alegrías pequeñas. No grandes. Tres. Notarás cómo cambia tu día. Cómo la medicina duele menos. Cómo respiras más fácil.",
-                                  "Porque la alegría es también medicina. Es vitamina del espíritu que fortalece el cuerpo. El Señor sabe esto. Por eso la deja esparcida en todas partes. Sólo hay que aprender a recogerla."
-                              ],
-                       "en":  [
-                                  "Day 28. Small joy is the most real. A deep breath. Warm coffee in the morning. Sunshine. A laugh you did not plan.",
-                                  "When you are sick, great joy moves away. But small joy remains. If you learn to see it. If you learn to gather it. It is what distinguishes life from mere survival.",
-                                  "Today's Scripture says: \"The joy of the LORD is your strength.\" The strongest strength is not brute strength. It is the strength that comes from finding reasons to live in small things. In what remains.",
-                                  "Today seek three small joys. Not great ones. Three. You will notice how your day changes. How medicine hurts less. How you breathe more easily.",
-                                  "Because joy is also medicine. It is vitamin of the spirit that strengthens the body. The Lord knows this. That is why He scatters it everywhere. You just have to learn to gather it."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 28,
+  "theme": {
+    "es": "Alegria pequena de cada dia",
+    "en": "Small daily joy"
+  },
+  "verse": {
+    "es": "«La alegría del Señor es vuestra fortaleza.»",
+    "en": "\"The joy of the LORD is your strength.\"",
+    "ref": "Neh 8, 10"
+  },
+  "reflection": {
+    "es": [
+      "Una alegría pequeña puede ser una canción, una taza caliente o un mensaje de alguien querido. Si hoy no encuentras ninguna, no tienes que inventarla. La vida con una enfermedad puede estar llena de tareas y preocupaciones; tus sentimientos no necesitan seguir el ritmo de esta lectura.",
+      "El bienestar no siempre se ve como felicidad. Puedes agradecer un momento agradable y seguir teniendo dolor, miedo o cansancio. La alegría no cancela esas experiencias ni prueba que estés mejorando. Ambas cosas pueden coexistir sin que tengas que elegir una sola emoción.",
+      "La frase de Nehemías sobre la alegría del Señor se pronuncia ante una comunidad que atraviesa un momento difícil. Puede recordar que la esperanza y el apoyo compartido fortalecen, no que debas animarte para cumplir una obligación religiosa. La alegría puede ser recibida como regalo, no como tarea.",
+      "Si te resulta útil, al final del día anota una cosa que te haya dado algo de alivio, aunque haya sido breve. No busques tres ni midas tu progreso por la lista. Si escribirlo te da culpa porque el día fue duro, puedes dejar el ejercicio.",
+      "A veces una actividad que antes disfrutabas se vuelve difícil por síntomas, movilidad, dinero o tratamiento. Puedes adaptarla: escuchar en lugar de salir, conversar por teléfono o pedir que alguien te acompañe. No tienes que hacer un esfuerzo físico que vaya contra las recomendaciones médicas.",
+      "Si llevas tiempo sin disfrutar de nada o sientes desesperanza, no es señal de que estés agradeciendo poco. Coméntalo con un profesional de salud, especialmente si afecta tu vida diaria. La atención emocional puede ser importante junto con el tratamiento de cualquier condición física.",
+      "Hoy puedes permitirte recibir un instante agradable sin pedirle que cure nada. O puedes atravesar el día sin sentir alegría y seguir mereciendo cuidado. La esperanza no siempre parece entusiasmo; a veces es permitir que alguien se siente a tu lado."
+    ],
+    "en": [
+      "A small joy might be a song, a warm drink, or a message from someone you love. If you cannot find one today, you do not have to invent it. Life with illness may be full of tasks and worries; your feelings do not need to match the pace of this reflection.",
+      "Wellbeing does not always look like happiness. You can appreciate a pleasant moment and still feel pain, fear, or exhaustion. Joy does not cancel those experiences or prove that you are getting better. Both can coexist without requiring you to choose only one emotion.",
+      "Nehemiah's words about the joy of the Lord are spoken to a community facing a difficult moment. They may remind us that hope and shared support can strengthen us, not that we must cheer up to fulfill a religious duty. Joy can be received as a gift, not an assignment.",
+      "If it helps, write down one thing at the end of the day that brought some relief, even briefly. Do not look for three or measure your progress by the list. If writing it makes you feel guilty because the day was hard, you can leave the exercise.",
+      "Sometimes an activity you used to enjoy becomes difficult because of symptoms, mobility, money, or treatment. You can adapt it: listen instead of going out, talk by phone, or ask someone to join you. You do not have to do physical activity against medical advice.",
+      "If you have not enjoyed anything for a while or feel hopeless, it is not a sign that you are failing to be grateful. Tell a health professional, especially if this affects daily life. Emotional care may matter alongside treatment for any physical condition.",
+      "Today you can let yourself receive one pleasant moment without asking it to heal anything. Or you can get through the day without feeling joy and still deserve care. Hope does not always look like enthusiasm; sometimes it is letting someone sit beside you."
+    ]
+  },
+  "prayer": {
+    "es": "Señor, ayúdame a notar una alegría pequeña sin obligarme a sentirme feliz. Gracias por este instante de alivio, compañía o belleza; enséñame a recibirlo tal como llega. Amén.",
+    "en": "Lord, help me notice a small joy without forcing myself to feel happy. Thank you for this moment of relief, companionship, or beauty; teach me to receive it as it comes. Amen."
+  },
+  "act": {
+    "es": "Haz sitio a una alegría pequeña que no te exija nada: escuchar una canción, abrir la ventana o conversar con alguien. No necesitas sentirte bien todo el tiempo para agradecer este instante.",
+    "en": "Make room for one small joy that asks nothing of you: listen to a song, open a window, or talk with someone. You do not have to feel well all the time to be grateful for this moment."
+  }
 }

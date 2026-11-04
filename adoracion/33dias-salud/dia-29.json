@@ -1,36 +1,40 @@
-﻿{
-    "n":  29,
-    "theme":  {
-                  "es":  "Compasion hacia uno mismo",
-                  "en":  "Compassion toward oneself"
-              },
-    "verse":  {
-                  "es":  "\"Amaras a tu projimo como a ti mismo.\"",
-                  "en":  "\"Love your neighbor as yourself.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 29. La auto-compasión es el acto más revolucionario de fe en un cuerpo enfermo. Es decirle a tu cuerpo: \"no eres fracaso, eres batalla.\"",
-                                  "Hablamos con dureza del cuerpo que no funciona. Lo culpamos. Lo insultamos. Como si fuera enemigo. Pero es aliado lastimado. Es quien lucha cada noche por seguir viviendo. Quien pelea aunque duela.",
-                                  "La Escritura de hoy dice: \"Ama a tu prójimo como a ti mismo.\" Empieza por TI. Tu próximo más cercano eres tú. Si no te amas, ¿cómo amarás de verdad? La compasión empieza cuando dejas de ser juez.",
-                                  "Hoy práctica esto: Cuando criticés tu cuerpo, responde con ternura. Como hablarías a un niño. Con paciencia. Con aceptación de lo que es, no de lo que falta.",
-                                  "Porque el Señor no te mira con decepción. Te mira con infinita compasión. Aprende a mirarte así tú también. Es el primer acto de sanación real."
-                              ],
-                       "en":  [
-                                  "Day 29. Self-compassion is the most revolutionary act of faith in a sick body. It is telling your body: \"you are not failure, you are battle.\"\n",
-                                  "We speak harshly of the body that does not function. We blame it. We insult it. As if it were an enemy. But it is a wounded ally. It is the one who fights every night to keep living. Who battles even though it hurts.",
-                                  "Today's Scripture says: \"Love your neighbor as yourself.\" Start with YOU. Your nearest neighbor is yourself. If you do not love yourself, how will you truly love others? Compassion begins when you stop being a judge.",
-                                  "Today practice this: When you criticize your body, respond with tenderness. As you would speak to a child. With patience. With acceptance of what is, not what is lacking.",
-                                  "Because the Lord does not look at you with disappointment. He looks at you with infinite compassion. Learn to look at yourself that way too. It is the first act of real healing."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 29,
+  "theme": {
+    "es": "Compasion hacia uno mismo",
+    "en": "Compassion toward oneself"
+  },
+  "verse": {
+    "es": "«Amarás a tu prójimo como a ti mismo.»",
+    "en": "\"Love your neighbor as yourself.\"",
+    "ref": "Mt 22, 39"
+  },
+  "reflection": {
+    "es": [
+      "Vivir con dolor, una limitación o cambios en la salud puede despertar frustración. Quizá una tarea cotidiana ahora toma más tiempo, o tienes que pedir ayuda para algo que antes hacías solo. La compasión contigo mismo empieza por reconocer esa realidad, no por obligarte a sentirte bien con ella.",
+      "Jesús enseña a amar al prójimo como a uno mismo. No convierte el cuidado propio en egoísmo ni exige que estés satisfecho con tu cuerpo. Recuerda que tú también eres una persona a quien se puede tratar con dignidad, paciencia y consideración.",
+      "Hablarte con compasión no significa decir que todo está bien ni evitar responsabilidades. Puedes lamentar una decisión, corregirla o pedir perdón sin llamarte un fracaso. Si tu salud cambió sin que pudieras impedirlo, no tienes que encontrar culpa en ti para explicar lo ocurrido.",
+      "Prueba una frase concreta y verdadera: 'Esto me está costando', 'hoy necesito ayuda' o 'mi valor no depende de poder hacerlo'. No necesitas usar palabras que te suenen falsas. La amabilidad puede empezar por dejar de insultarte y buscar el siguiente paso posible.",
+      "A veces los síntomas, el aspecto físico o las comparaciones hacen difícil hablar con ternura. No tienes que tocarte, mirarte al espejo ni escribir sobre tu cuerpo si eso te incomoda. Puedes enfocar la atención en una necesidad, como descansar, recibir tratamiento o pedir privacidad.",
+      "Si la autocrítica persiste o te empuja a restringir comida, evitar atención o hacerte daño, cuéntaselo a un profesional de salud. La terapia puede ayudar a cambiar patrones de vergüenza y encontrar recursos que respeten tu historia, tu cultura y tus necesidades.",
+      "Hoy elige una respuesta pequeña que no te castigue: pedir ayuda, cambiar una expectativa o tomar un descanso. No es una cura instantánea ni un examen de amor propio. Es un modo de acompañarte con más justicia mientras atraviesas una situación real."
+    ],
+    "en": [
+      "Living with pain, a limitation, or changes in health can bring frustration. Perhaps an everyday task takes longer now, or you have to ask for help with something you once did alone. Self-compassion begins by recognizing that reality, not by forcing yourself to feel good about it.",
+      "Jesus teaches people to love their neighbor as themselves. This does not make self-care selfish or require you to feel satisfied with your body. It reminds you that you are also someone who can be treated with dignity, patience, and consideration.",
+      "Speaking to yourself with compassion does not mean saying everything is fine or avoiding responsibility. You can regret a choice, correct it, or apologize without calling yourself a failure. If your health changed beyond your control, you do not have to find fault in yourself to explain what happened.",
+      "Try a specific, truthful phrase: 'This is hard for me,' 'I need help today,' or 'my worth does not depend on being able to do this.' You do not have to use words that feel false. Kindness can begin by stopping insults and looking for the next possible step.",
+      "Symptoms, appearance, or comparison can make it hard to speak gently. You do not have to touch yourself, look in the mirror, or write about your body if that feels uncomfortable. You can focus on a need, such as resting, receiving care, or asking for privacy.",
+      "If self-criticism persists or pushes you to restrict food, avoid care, or hurt yourself, tell a health professional. Therapy may help change patterns of shame and find resources that respect your history, culture, and needs.",
+      "Today choose one small response that does not punish you: ask for help, change an expectation, or take a break. It is not an instant cure or a test of self-love. It is a way to accompany yourself more justly through a real situation."
+    ]
+  },
+  "prayer": {
+    "es": "Jesús, ayúdame a hablarme con la misma paciencia que ofrecería a alguien querido. Que pueda reconocer mis límites sin insultarme y corregir mis decisiones sin perder la esperanza. Amén.",
+    "en": "Jesus, help me speak to myself with the patience I would offer someone I love. Let me recognize my limits without insulting myself and change my choices without losing hope. Amen."
+  },
+  "act": {
+    "es": "Si hoy te hablas con dureza, escribe lo que le dirías a una amistad en la misma situación. Prueba a dirigirte esas palabras con la misma paciencia.",
+    "en": "If you speak harshly to yourself today, write down what you would say to a friend in the same situation. Try offering yourself those words with the same patience."
+  }
 }

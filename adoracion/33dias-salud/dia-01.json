@@ -1,36 +1,40 @@
 ﻿{
     "n":  1,
     "theme":  {
-                  "es":  "Presentar el cuerpo al Senor",
+                  "es":  "Presentar el cuerpo al Señor",
                   "en":  "Presenting the body to the Lord"
               },
     "verse":  {
                   "es":  "\"Ofrezcan sus cuerpos como sacrificio vivo, santo y agradable a Dios.\"",
                   "en":  "\"Offer your bodies as a living sacrifice, holy and pleasing to God.\"",
-                  "ref":  ""
+                  "ref":  "Rom 12, 1"
               },
     "reflection":  {
                        "es":  [
-                                  "Día 1. Tu cuerpo no es accidente ni obstáculo: es el único lugar donde vives. Presentarlo significa reconocer que lo que haces con él tiene peso eterno. No es vanidad hablar del cuerpo con respeto; es humildad.",
-                                  "Durante años quizá lo trataste como instrumento descartable o como enemigo que necesitaba dominación. Hoy el Señor te pide algo más profundo: que lo mires con la misma compasión con la que mira a sus criaturas.",
-                                  "La Escritura de hoy dice: \"Ofrezcan sus cuerpos como sacrificio vivo, santo y agradable a Dios.\" No como castigo, sino como ofrenda. Vivo significa: funcionando, sanando, mejorando aquí y ahora.",
-                                  "La salud integral no es perfección. Es el proceso honesto de cuidarse cuando te duele, descansar cuando estás exhausto, pedir ayuda cuando no puedes solo, y creer que Dios puede restaurar lo que considerabas perdido.",
-                                  "Hoy comienza tu decisión de presentarte ante el Señor con honestidad: tal como estás, con el cuerpo que tienes, la energía que posees, las limitaciones que cargas. Esa verdad es el primer acto de amor propio."
+                                  "Quizá llevas un rato intentando acomodarte en el banco. Hay días en que el cuerpo se hace notar: por el dolor, la inquietud, el cansancio o una limitación que los demás no ven. No tienes que silenciarlo para estar ante Jesús. Puedes comenzar esta jornada simplemente reconociendo cómo llegaste.",
+                                  "Pablo habla de ofrecer el cuerpo como sacrificio vivo. No está diciendo que debas agotarlo ni que enfermar sea una falta de fe. Tu cuerpo no es una máquina que tiene que rendir para merecer cuidado; es parte de tu vida recibida, frágil y digna de atención.",
+                                  "Para quien vive con una discapacidad o una enfermedad crónica, el cuidado quizá no se parezca a mejorar o recuperar capacidades. A veces consiste en adaptar el día, aceptar asistencia o atravesar un tratamiento largo. Tu dignidad no depende de que el cuerpo responda como quisieras.",
+                                  "Tal vez hoy tu cuerpo te permite caminar y trabajar; tal vez necesita una pausa, tratamiento o ayuda de otra persona. La oración puede acompañar esas decisiones, no reemplazar el consejo médico. Cuidarte no es apartarte de Dios: puede ser una manera concreta de agradecer la vida que tienes.",
+                                  "Quédate ante el Santísimo sin pedirte sentirte mejor de inmediato. Si una molestia reclama tu atención, no te regañes por notarla. Puedes ofrecerle a Jesús el cuerpo real que tienes hoy, no el que querrías tener, y pedir sabiduría para atenderlo con paciencia.",
+                                  "Antes de irte, escucha por un momento lo que necesitas: descanso, alimento, una consulta, compañía o alivio. No tienes que resolverlo todo en esta capilla. Un paso razonable, tomado con cuidado, también puede ser una ofrenda."
+                                  ,"Quizá lo que necesitas hoy no es un nuevo hábito sino dejar de exigirte uno más. Si cuidar de ti depende de otra persona, puedes pedir que te acompañe; si estás esperando una respuesta médica, puedes llevar también esa incertidumbre a la oración. No hay una sola manera correcta de ofrecerle a Dios el cuerpo que habitas."
                               ],
                        "en":  [
-                                  "Day 1. Your body is not accident or obstacle: it is the only place where you actually live. Presenting it means acknowledging that what you do with it carries eternal weight. It is not vanity to speak of the body with respect; it is honesty.",
-                                  "For years perhaps you treated it as a disposable tool or as an enemy that needed mastering. Today the Lord asks something deeper: that you look at it with the same compassion He gazes upon His creatures.",
-                                  "Today's Scripture says: \"Offer your bodies as a living sacrifice, holy and pleasing to God.\" Not as punishment, but as an offering. Living means: functioning, healing, improving here and now.",
-                                  "Integral health is not perfection. It is the honest process of caring for yourself when you hurt, resting when you are exhausted, asking for help when you cannot stand alone, and believing that God can restore what you thought was lost.",
-                                  "Today begins your decision to present yourself before the Lord truthfully: as you are, with the body you have, the energy you possess, the limitations you carry. That truth is the first act of self-love."
+                                  "Perhaps you have been trying to find a comfortable place in the pew. Some days the body makes itself known through pain, restlessness, exhaustion, or a limitation others cannot see. You do not have to silence it to be with Jesus. You can begin this day by noticing how you arrived.",
+                                  "Paul speaks of offering the body as a living sacrifice. He is not saying you must exhaust it, or that illness means you lack faith. Your body is not a machine that must perform to deserve care; it is part of the life you have received, fragile and worthy of attention.",
+                                  "For someone living with a disability or chronic illness, care may not look like improvement or regaining abilities. Sometimes it means adapting the day, accepting assistance, or enduring a long treatment. Your dignity does not depend on your body responding as you wish.",
+                                  "Perhaps today your body lets you walk and work; perhaps it needs a pause, treatment, or another person's help. Prayer can accompany those decisions, not replace medical advice. Caring for yourself does not take you away from God; it can be a concrete way of giving thanks for the life you have.",
+                                  "Stay before the Blessed Sacrament without demanding that you feel better right away. If discomfort asks for your attention, do not scold yourself for noticing it. You can offer Jesus the body you actually have today, not the one you wish you had, and ask for wisdom to care for it patiently.",
+                                  "Before you leave, listen for what you need: rest, food, an appointment, company, or relief. You do not have to solve everything in this chapel. One reasonable step, taken with care, can also be an offering."
+                                  ,"Perhaps what you need today is not another new habit, but to stop demanding one more thing of yourself. If caring for yourself depends on another person, you can ask them to accompany you; if you are waiting for medical news, you can bring that uncertainty into prayer too. There is no single right way to offer God the body you inhabit."
                               ]
                    },
     "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
+                   "es":  "Señor Jesús, aquí está mi cuerpo, con lo que hoy puede y con lo que le cuesta. Dame paciencia para cuidarlo, humildad para aceptar ayuda y sabiduría para buscar la atención que necesito. Acompáñame también cuando el alivio tarde en llegar. Amén.",
+                   "en":  "Lord Jesus, here is my body, with what it can do today and what is difficult for it. Give me patience to care for it, humility to accept help, and wisdom to seek the care I need. Stay with me when relief takes time to come. Amen."
                },
     "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
+                "es":  "Haz una pausa y nota cómo está tu cuerpo hoy, sin exigirle que se sienta distinto. Elige una necesidad concreta —comer, descansar, tomar tu medicación indicada o pedir una cita— y atiéndela con paciencia.",
+                "en":  "Pause and notice how your body feels today without demanding that it feel different. Choose one concrete need—eating, resting, taking prescribed medication, or arranging an appointment—and attend to it patiently."
             }
 }

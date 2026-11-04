@@ -1,36 +1,40 @@
-﻿{
-    "n":  10,
-    "theme":  {
-                  "es":  "Pedir ayuda sin verguenza",
-                  "en":  "Asking for help without shame"
-              },
-    "verse":  {
-                  "es":  "\"Lleven los unos las cargas de los otros.\"",
-                  "en":  "\"Carry each other\u0027s burdens, and in this way you will fulfill the law of Christ.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 10. Pedir ayuda es el acto de fe más honesto que existe. Es decir: \"Yo solo no puedo. Necesito tu fuerza.\" Que sea a Dios, a un amigo, a un profesional. Es siempre lo mismo: es admitir verdad.",
-                                  "Fuimos criados creyendo que pedir ayuda es debilidad. Que los fuertes no lloran. Que los valientes no tiemblan. Mentira. Los valientes lloran. Los fuertes saben pedir. Los auténticos confiesan.",
-                                  "La Escritura de hoy dice: \"Lleven los unos las cargas de los otros.\" No dice: desaparece tus cargas. Dice: no las cargues solo. La comunidad no es adorno. Es estructura de sanación.",
-                                  "Tu orgullo es bien bonito. Pero tu salud es más bonita. Tu paz es más importante. Hoy elige: ?vale más tu reputación de \"fuerte e independiente\" que tu bienestar?",
-                                  "Pide ayuda hoy. Puede ser a alguien cercano, puede ser a profesional, puede ser simplemente decir: no estoy bien. Eso no te quita nada. Te devuelve todo: dignidad, verdad, conexión, humanidad."
-                              ],
-                       "en":  [
-                                  "Day 10. Asking for help is the most honest act of faith that exists. It is saying: \"I cannot do this alone. I need your strength.\" Whether it is God, a friend, a professional. It is always the same: it is admitting truth.",
-                                  "We were raised believing that asking for help is weakness. That the strong do not cry. That the brave do not tremble. False. The brave cry. The strong know how to ask. The authentic confess.",
-                                  "Today's Scripture says: \"Carry each other's burdens, and in this way you will fulfill the law of Christ.\" It does not say: make your burdens disappear. It says: do not carry them alone. Community is not decoration. It is a structure of healing.",
-                                  "Your pride is very beautiful. But your health is more beautiful. Your peace is more important. Today choose: Is your reputation as \"strong and independent\" worth more than your wellbeing?",
-                                  "Ask for help today. It can be someone close, it can be a professional, it can be simply saying: I am not okay. That takes nothing from you. It returns everything: dignity, truth, connection, humanity."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 10,
+  "theme": {
+    "es": "Pedir ayuda sin verguenza",
+    "en": "Asking for help without shame"
+  },
+  "verse": {
+    "es": "\"Lleven los unos las cargas de los otros.\"",
+    "en": "\"Carry each other's burdens, and in this way you will fulfill the law of Christ.\"",
+    "ref": "Ga 6, 2"
+  },
+  "reflection": {
+    "es": [
+      "Pedir ayuda puede dar miedo. Tal vez no sabes cómo empezar, no quieres preocupar a alguien o antes no te escucharon. No hace falta que te culpes por esas dudas. Nombrar una necesidad, aunque sea con pocas palabras, puede abrir una conversación y ayudarte a decidir qué apoyo sería útil.",
+      "Las personas aprenden mensajes distintos sobre la independencia, la enfermedad y las emociones. A algunas les enseñaron a guardar silencio; otras temen perder privacidad o no pueden pagar atención. Reconocer esas barreras permite buscar una opción realista, sin reducir cada dificultad a falta de voluntad o de fe.",
+      "La carta a los Gálatas invita a llevar las cargas unos de otros. Eso no significa que una sola persona pueda resolverlo todo ni que debas contar cada detalle. Puedes pedir algo concreto: acompañamiento a una cita, ayuda con una tarea o que alguien te escuche durante unos minutos.",
+      "Quien te escucha quizá no sepa qué decir. Puedes aclarar si buscas compañía, consejo o ayuda práctica. También puedes aceptar un 'no puedo ahora' sin concluir que tu necesidad no importa y buscar a otra persona o un servicio comunitario que sí esté disponible.",
+      "Para ciertas necesidades, un profesional puede ofrecer apoyo especializado. Pedir una cita con un médico, terapeuta o trabajador social no sustituye la oración; tampoco garantiza una solución inmediata. Si te preocupa la confidencialidad, el costo o el idioma, pregunta qué opciones y protecciones existen antes de compartir más.",
+      "Si estás en riesgo o no puedes mantenerte a salvo, busca ayuda urgente en tu localidad y procura no quedarte solo. En una situación menos inmediata, escribe lo que necesitas y el nombre de alguien a quien podrías contactar. No tienes que encontrar las palabras perfectas.",
+      "Dios también puede acompañarte mediante otras personas, aunque esa ayuda no llegue enseguida o no sea suficiente por sí sola. Hoy intenta un paso pequeño y seguro. Recibir apoyo no reduce tu dignidad; es una manera concreta de reconocer que tu vida merece cuidado."
+    ],
+    "en": [
+      "Asking for help can feel frightening. Perhaps you do not know how to begin, do not want to worry someone, or have not been heard before. You do not have to blame yourself for these doubts. Naming one need, even briefly, can open a conversation and help you decide what support would be useful.",
+      "People learn different messages about independence, illness, and emotion. Some were taught to stay silent; others fear losing privacy or cannot afford care. Recognizing these barriers helps you look for a realistic option without reducing every difficulty to a lack of will or faith.",
+      "The Letter to the Galatians invites people to carry one another's burdens. That does not mean one person can solve everything or that you must share every detail. You can ask for something specific: a ride to an appointment, help with a task, or a few minutes of listening.",
+      "The person listening may not know what to say. You can clarify whether you want company, advice, or practical help. You can also accept 'I cannot right now' without deciding that your need does not matter, and look for another person or community service that is available.",
+      "For some needs, a professional can offer specialized support. Requesting an appointment with a doctor, therapist, or social worker does not replace prayer; neither does it guarantee an immediate solution. If you are concerned about confidentiality, cost, or language, ask about available options and protections before sharing more.",
+      "If you are at risk or cannot keep yourself safe, seek urgent help in your area and try not to stay alone. In a less immediate situation, write down what you need and one person you might contact. You do not have to find perfect words.",
+      "God may accompany you through other people, even when that help does not arrive quickly or is not sufficient by itself. Try one small, safe step today. Receiving support does not diminish your dignity; it is a concrete way of recognizing that your life deserves care."
+    ]
+  },
+  "prayer": {
+    "es": "Jesús, quita de mí la vergüenza de pedir ayuda. Muéstrame una persona segura a quien acudir y dame palabras sencillas para empezar a contar lo que necesito. Amén.",
+    "en": "Jesus, ease my shame about asking for help. Show me a safe person I can turn to, and give me simple words to begin telling them what I need. Amen."
+  },
+  "act": {
+    "es": "Elige a una persona segura y dile una cosa concreta que te cuesta llevar solo. Puedes empezar con: «No necesito que lo soluciones; ¿puedes escucharme un momento?».",
+    "en": "Choose someone safe and tell them one specific thing that is hard to carry alone. You can begin with: \"I do not need you to fix it; could you listen for a moment?\""
+  }
 }

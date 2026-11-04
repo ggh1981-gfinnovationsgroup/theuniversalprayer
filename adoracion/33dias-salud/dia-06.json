@@ -1,36 +1,40 @@
-﻿{
-    "n":  6,
-    "theme":  {
-                  "es":  "Sanar memorias dolorosas",
-                  "en":  "Healing painful memories"
-              },
-    "verse":  {
-                  "es":  "\"El sana a los de corazon quebrantado y venda sus heridas.\"",
-                  "en":  "\"He heals the brokenhearted and binds up their wounds.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 6. Los recuerdos dolorosos viven en tu cuerpo como cicatrices que aún duelen. No son solo mente: son sangre y más sangre, todas las veces que prometi olvidar y no pude.",
-                                  "Muchos creemos que sanar significa olvidar, que el silencio es fortaleza, que hablar del dolor es revictimización. Pero hay una diferencia: recordar controlado es integración; recordar sin control es reacción.",
-                                  "La Escritura de hoy dice: \"Sana a los de corazón quebrantado y venda sus heridas.\" El Señor no pide que olvides. Pide que dejes de sangrar en silencio. Que traigas tus memorias a la luz para que sean sujetadas, nombradas, finalmente liberadas.",
-                                  "Hoy identifica una memoria dolorosa que has guardado. No para reliving la, sino para despedirte de su control. ?Qué necesitas que sea cierto para que esa memoria no siga siendo más fuerte que tu sanación?",
-                                  "La gracia no borra historias. Las integra. Las sana. Te devuelve soberanía sobre tus propios recuerdos. Hoy comienza ese proceso con una verdad: tu dolor importó, pero ya no es tu destino."
-                              ],
-                       "en":  [
-                                  "Day 6. Painful memories live in your body as scars that still ache. They are not just mind: they are flesh and blood, all the times you promised to forget and could not.",
-                                  "Many of us believe that healing means forgetting, that silence is strength, that speaking of pain is re-traumatization. But there is a difference: remembering with awareness is integration; remembering without control is reaction.",
-                                  "Today's Scripture says: \"He heals the brokenhearted and binds up their wounds.\" The Lord does not ask you to forget. He asks you to stop bleeding in silence. To bring your memories into light so they can be held, named, and finally released.",
-                                  "Today identify one painful memory you have carried. Not to relive it, but to take back your power over it. What needs to be true for that memory to no longer be stronger than your healing?",
-                                  "Grace does not erase stories. It integrates them. It heals them. It returns sovereignty over your own memories to you. Today that process begins with a truth: your pain mattered, but it is no longer your destiny."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 6,
+  "theme": {
+    "es": "Sanar memorias dolorosas",
+    "en": "Healing painful memories"
+  },
+  "verse": {
+    "es": "«Él sana a los de corazón quebrantado y venda sus heridas.»",
+    "en": "\"He heals the brokenhearted and binds up their wounds.\"",
+    "ref": "Sal 147, 3"
+  },
+  "reflection": {
+    "es": [
+      "Hay recuerdos que llegan sin avisar: una fecha, un olor o una frase puede traer de vuelta algo que preferirías no revivir. No tienes que abrir esa historia durante esta adoración ni demostrar que ya la superaste. Puedes quedarte en el presente y pedir compañía.",
+      "El salmo dice que Dios sana a los de corazón quebrantado y venda sus heridas. Es una oración de esperanza, no una promesa de que el dolor desaparecerá de inmediato ni una invitación a recordar a la fuerza. Cada persona necesita su propio tiempo y apoyo.",
+      "Si un recuerdo te desborda, mira alrededor y nombra lo que ves; vuelve a sentir los pies en el suelo. Puedes cerrar la reflexión, salir un momento o llamar a alguien seguro. No estás obligado a contar detalles que hoy no puedes sostener.",
+      "La oración puede acompañar un proceso de sanación, pero no reemplaza la ayuda especializada. Si estos recuerdos afectan tu sueño, tu seguridad o tu vida diaria, considera hablar con un profesional con experiencia en trauma.",
+      "Ante Jesús, puedes decir solo: «Cuida de mí ahora». No necesitas sentir que todo está sanado para recibir consuelo. Por hoy, el paso puede ser permanecer a salvo y aceptar la compañía que sí tienes.",
+      "La recuperación rara vez sigue una línea recta. Puede haber días tranquilos y otros en que el recuerdo vuelva con fuerza. Eso no demuestra que hayas perdido todo avance. Si estás en tratamiento, puedes conversar con tu profesional sobre qué prácticas son adecuadas y detener un ejercicio que no te haga sentir seguro.",
+      "La promesa del salmo habla de cuidado, no de una fecha límite para dejar de sufrir. Puedes acercarte a Dios con pocas palabras, una lectura o silencio. También puedes posponer esta reflexión y hacer algo que te conecte con el presente. Tu historia no tiene que ser contada hoy para que merezcas acompañamiento."
+    ],
+    "en": [
+      "Some memories arrive without warning: a date, a smell, or a phrase can bring back something you would rather not relive. You do not have to open that story during this adoration or prove that you have moved on. You can stay in the present and ask for company.",
+      "The psalm says that God heals the brokenhearted and binds up their wounds. It is a prayer of hope, not a promise that pain will disappear immediately or an invitation to remember by force. Each person needs their own time and support.",
+      "If a memory overwhelms you, look around and name what you see; feel your feet on the ground. You can close this reflection, step outside for a moment, or call someone safe. You do not have to share details you cannot carry today.",
+      "Prayer can accompany healing, but it does not replace specialized care. If these memories affect your sleep, your safety, or daily life, consider speaking with a professional experienced in trauma.",
+      "Before Jesus, you can say only, \"Take care of me now.\" You do not have to feel completely healed to receive comfort. For today, the next step may be staying safe and accepting the companionship you do have.",
+      "Recovery rarely follows a straight line. There may be peaceful days and others when a memory returns with force. That does not mean you have lost all progress. If you are in treatment, you can ask your professional which practices are appropriate and stop an exercise that does not feel safe.",
+      "The psalm's promise speaks of care, not a deadline for no longer suffering. You can draw near to God with a few words, a reading, or silence. You can also set this reflection aside and do something that connects you with the present. Your story does not have to be told today for you to deserve support."
+    ]
+  },
+  "prayer": {
+    "es": "Señor Jesús, cuida de mí cuando vuelva un recuerdo doloroso. Ayúdame a permanecer en el presente, buscar apoyo seguro y recibir ayuda profesional si la necesito. No me exijas sanar a la fuerza ni antes de tiempo. Amén.",
+    "en": "Lord Jesus, care for me when a painful memory returns. Help me stay in the present, seek safe support, and receive professional help if I need it. Do not demand that I heal by force or before I am ready. Amen."
+  },
+  "act": {
+    "es": "Si un recuerdo doloroso aparece, mira a tu alrededor y nombra cinco cosas que ves. Después decide si necesitas hablar con alguien preparado para acompañarte; no tienes que abrir más de lo que hoy puedes sostener.",
+    "en": "If a painful memory surfaces, look around and name five things you can see. Then consider whether you need to speak with someone trained to support you; you do not have to open more than you can manage today."
+  }
 }

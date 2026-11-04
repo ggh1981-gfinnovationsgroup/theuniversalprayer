@@ -1,36 +1,40 @@
-﻿{
-    "n":  19,
-    "theme":  {
-                  "es":  "Sanar relacion con el cuerpo",
-                  "en":  "Healing one\u0027s relationship with the body"
-              },
-    "verse":  {
-                  "es":  "\"Su cuerpo es templo del Espiritu Santo.\"",
-                  "en":  "\"Your bodies are temples of the Holy Spirit.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 19. Muchos viven en guerra con el cuerpo que habitán. Lo ven como adversario, como algo que falla, que envejece, que duele. Lo castigan con comida, con privación, con desprecio.",
-                                  "Pero tu cuerpo no es enemigo. Es hogar. Es el único lugar donde tu alma tiene dirección, peso, presencia. Es tu cuerpo quien te permite abrazar, llorar, reír, sentir el sol. ¿Y lo tratas como si fuera traidor?",
-                                  "La Escritura de hoy dice: \"Su cuerpo es templo del Espíritu Santo.\" Un templo no es cosa descartable. No es edificio que esperas demoler. Es lugar donde Dios mora, que merece reverencia.",
-                                  "Hoy reconciliate con tu cuerpo. Agradécele por cada cosa que hace: respira sin que lo pidas, digiere sin que lo ordenes, lucha por sanar sin que entiendas cómo. Tu cuerpo es aliado, no enemigo.",
-                                  "Comienza hoy con un gesto: toca tu piel con compasión, no con crítica. Camina sabiendo que ese cuerpo te sostiene. Come sabiendo que nuestras células necesitan nutrición, no castigo. La reconciliación comienza en gestos pequeños."
-                              ],
-                       "en":  [
-                                  "Day 19. Many live at war with the body they inhabit. They see it as adversary, as something that fails, ages, hurts. They punish it with food, with deprivation, with contempt.",
-                                  "But your body is not enemy. It is home. It is the only place where your soul has direction, weight, presence. It is your body that allows you to embrace, to cry, to laugh, to feel the sun. And you treat it as if it were a traitor?",
-                                  "Today's Scripture says: \"Your bodies are temples of the Holy Spirit.\" A temple is not a disposable thing. It is not a building you expect to demolish. It is a place where God dwells, that deserves reverence.",
-                                  "Today make peace with your body. Thank it for everything it does: it breathes without you asking, digests without your command, fights to heal without your understanding how. Your body is ally, not enemy.",
-                                  "Begin today with a gesture: touch your skin with compassion, not criticism. Walk knowing that this body sustains you. Eat knowing that our cells need nourishment, not punishment. Reconciliation begins in small gestures."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 19,
+  "theme": {
+    "es": "Sanar relacion con el cuerpo",
+    "en": "Healing one's relationship with the body"
+  },
+  "verse": {
+    "es": "«Vuestro cuerpo es templo del Espíritu Santo.»",
+    "en": "\"Your bodies are temples of the Holy Spirit.\"",
+    "ref": "1 Co 6, 19-20"
+  },
+  "reflection": {
+    "es": [
+      "La relación con el cuerpo puede ser compleja. Tal vez te cuesta mirarlo, vives con dolor o limitaciones, estás recuperándote de una enfermedad o sientes que otras personas juzgan tu apariencia. No tienes que resolver hoy lo que sientes para tratarte con cuidado y respeto.",
+      "En su carta a los Corintios, Pablo llama al cuerpo templo del Espíritu Santo. La imagen recuerda la dignidad de la persona; no significa que el cuerpo siempre sea fácil de habitar ni que toda enfermedad pueda evitarse con suficiente cuidado. Tu valor no depende de cómo se vea o funcione.",
+      "El cuerpo cambia con la edad, la discapacidad, el embarazo, los tratamientos y muchas otras circunstancias. No está obligado a ser productivo ni a cumplir una idea ajena de belleza. Puedes lamentar un cambio y, a la vez, buscar maneras de vivir con la mayor comodidad y apoyo posibles.",
+      "Comer, descansar y recibir tratamiento son formas de cuidado, no pruebas de disciplina. Si la comida o la imagen corporal te causan angustia, evita imponerte reglas nuevas por esta reflexión. Un profesional con experiencia puede ayudarte a encontrar una atención respetuosa y segura.",
+      "Cuidar el cuerpo no significa aceptar cada síntoma sin preguntar. Puedes buscar diagnóstico, alivio del dolor, adaptaciones o una segunda opinión. Si una persona encargada de cuidarte no escucha tus necesidades, puedes pedir que te explique las opciones o buscar apoyo para defenderlas.",
+      "No hace falta que ames tu cuerpo para tratarlo con dignidad. Tal vez puedas elegir ropa cómoda, ajustar una actividad o permitirte descansar. Si tocarte o mirarte se siente mal, no tienes que hacerlo; hay muchas maneras de respetar tus límites.",
+      "Hoy piensa en una forma de cuidado compatible con tu situación, aunque sea pedir una pausa o avisar que necesitas ayuda. Tu cuerpo no es una medida de tu fe ni una deuda que debas pagar. Merece atención porque tú mereces ser cuidado."
+    ],
+    "en": [
+      "Our relationship with the body can be complicated. Perhaps it is hard to look at, you live with pain or limitations, you are recovering from an illness, or you feel judged by others for your appearance. You do not have to resolve your feelings today in order to treat yourself with care and respect.",
+      "In his letter to the Corinthians, Paul calls the body a temple of the Holy Spirit. The image recalls the dignity of the person; it does not mean the body is always easy to inhabit or that every illness can be prevented with enough care. Your worth does not depend on how it looks or functions.",
+      "The body changes with age, disability, pregnancy, treatment, and many other circumstances. It is not required to be productive or meet someone else's idea of beauty. You can grieve a change and still seek ways to live with as much comfort and support as possible.",
+      "Eating, resting, and receiving treatment are forms of care, not tests of discipline. If food or body image causes distress, do not impose new rules on yourself because of this reflection. A professional with experience can help you find respectful and safe care.",
+      "Caring for your body does not mean accepting every symptom without asking questions. You can seek diagnosis, pain relief, accommodations, or another opinion. If someone responsible for your care does not listen to your needs, you can ask them to explain the options or seek support in advocating for yourself.",
+      "You do not have to love your body in order to treat it with dignity. Perhaps you can choose comfortable clothes, adapt an activity, or allow yourself to rest. If touching or looking at your body feels wrong, you do not have to do it; there are many ways to respect your boundaries.",
+      "Today consider one form of care that fits your situation, even if it is asking for a pause or saying that you need help. Your body is not a measure of your faith or a debt you must repay. It deserves attention because you deserve to be cared for."
+    ]
+  },
+  "prayer": {
+    "es": "Jesús, enséñame a tratar mi cuerpo con paciencia, no como un enemigo ni como una medida de mi valor. Ayúdame a buscar cuidado que respete mis necesidades y mi historia. Amén.",
+    "en": "Jesus, teach me to treat my body patiently, not as an enemy or a measure of my worth. Help me seek care that respects my needs and my story. Amen."
+  },
+  "act": {
+    "es": "Trata hoy una parte de tu cuerpo con respeto: cúbrela con comodidad, dale descanso o agradécele algo que te permite hacer. No tienes que sentirte bien con tu cuerpo para cuidarlo.",
+    "en": "Treat one part of your body with respect today: keep it comfortable, let it rest, or thank it for something it helps you do. You do not have to feel good about your body to care for it."
+  }
 }

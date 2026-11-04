@@ -1,36 +1,40 @@
-﻿{
-    "n":  32,
-    "theme":  {
-                  "es":  "Agradecer signos de mejoria",
-                  "en":  "Giving thanks for signs of healing"
-              },
-    "verse":  {
-                  "es":  "\"No olvides ninguno de sus beneficios: el perdona y sana.\"",
-                  "en":  "\"Praise the LORD, my soul, and forget not all his benefits, who forgives all your sins and heals all your diseases.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 32. Hay un peligro en la recuperación: olvidar. Olvidar de dónde viniste. Olvidar al Señor que caminó contigo. Olvidar los señales de Su cuidado.",
-                                  "Porque en el dolor recuerdas a Dios. En la enfermedad oras. En la debilidad buscas ayuda. Pero la salud vuelve y con ella viene el olvido. El Señor se hace útil de nuevo en lugar de amado.",
-                                  "La Escritura de hoy dice: \"No olvides ninguno de sus beneficios: el perdona y sana.\" Tienes que RECORDAR. Activamente. Intencionalmente. Notar cada señal de mejora como regalo.",
-                                  "Hoy identifica tres señales de recuperación. Puede ser respirar mejor. Dormir más. Sonreir sin pensar. Nada es pequeño. Todo es gloria. Todo es Señor.",
-                                  "La gratitud no es sentimiento. Es disciplina. Es decisión de ver cómo Dios trabaja. Y en esa visión, la recuperación se hace sagrada. Te mantiene junto a El."
-                              ],
-                       "en":  [
-                                  "Day 32. There is a danger in recovery: forgetting. Forgetting where you came from. Forgetting the Lord who walked with you. Forgetting the signs of His care.",
-                                  "Because in pain you remember God. In illness you pray. In weakness you seek help. But health returns and with it comes forgetting. The Lord becomes useful again instead of beloved.",
-                                  "Today's Scripture says: \"Praise the LORD, my soul, and forget not all his benefits, who forgives all your sins and heals all your diseases.\" You must REMEMBER. Actively. Intentionally. Notice every sign of improvement as a gift.",
-                                  "Today identify three signs of recovery. It could be breathing better. Sleeping more. Smiling without thinking. Nothing is small. Everything is glory. Everything is the Lord.",
-                                  "Gratitude is not a feeling. It is a discipline. It is a decision to see how God works. And in that vision, recovery becomes sacred. It keeps you close to Him."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 32,
+  "theme": {
+    "es": "Agradecer signos de mejoria",
+    "en": "Giving thanks for signs of healing"
+  },
+  "verse": {
+    "es": "«Bendice, alma mía, al Señor, y no olvides sus beneficios: él perdona tus culpas y cura tus dolencias.»",
+    "en": "\"Praise the LORD, my soul, and forget not all his benefits, who forgives all your sins and heals all your diseases.\"",
+    "ref": "Sal 103, 2-3"
+  },
+  "reflection": {
+    "es": [
+      "La recuperación puede traer momentos de alivio y también días difíciles. Si notas una mejoría, quizá quieras agradecerla; si todavía no llega, no tienes que buscar una para cumplir este ejercicio. Tu relación con Dios no depende de mostrar gratitud ni de recordar cada momento de la enfermedad.",
+      "El salmo bendice a Dios y recuerda sus beneficios. Su lenguaje de alabanza no es un pronóstico médico ni una promesa de que todas las dolencias desaparecerán en esta vida. Puedes recibirlo como oración de esperanza sin usarlo para juzgar tu fe o la de otra persona.",
+      "Una señal positiva puede ser dormir algo mejor, recibir apoyo o entender con más claridad un plan de atención. También puede ser que hoy tengas energía para una actividad importante. No necesitas contar tres ni comparar tu proceso con el de alguien más.",
+      "A veces la mejoría es difícil de identificar porque los cambios ocurren lentamente. Si te ayuda, anota preguntas o avances para compartirlos con tu equipo de salud. Si aparece un síntoma nuevo o preocupante, consulta; una nota de gratitud nunca reemplaza una evaluación.",
+      "Los síntomas pueden cambiar de un día a otro. Una jornada más difícil no borra necesariamente los avances, y una jornada buena no significa que debas suspender cuidados. Sigue las indicaciones acordadas y habla con el profesional antes de modificar el tratamiento.",
+      "La gratitud no es una emoción que puedas ordenar ni una tarea obligatoria. Puede coexistir con frustración, duelo o cansancio. Quizá agradezcas a una persona que te acompañó, o quizá hoy necesites solo reconocer que sigues necesitando apoyo.",
+      "Hoy puedes registrar algo que te ayudó, sea un alivio, una conversación o una recomendación útil. Si nada se siente mejor, puedes dejar el cuaderno vacío y pedir compañía. La esperanza no requiere ocultar la realidad; puede convivir con ella y seguir buscando cuidado."
+    ],
+    "en": [
+      "Recovery may bring moments of relief and also difficult days. If you notice improvement, you may want to give thanks; if it has not come yet, you do not have to find one to complete this exercise. Your relationship with God does not depend on displaying gratitude or remembering every moment of illness.",
+      "The psalm blesses God and recalls his benefits. Its language of praise is not a medical prognosis or a promise that every illness will disappear in this life. You can receive it as a prayer of hope without using it to judge your faith or someone else's.",
+      "A positive sign may be sleeping a little better, receiving support, or understanding a care plan more clearly. It may also be having energy for an important activity today. You do not have to count three or compare your process with anyone else's.",
+      "Sometimes improvement is hard to identify because change happens slowly. If it helps, write down questions or progress to share with your care team. If a new or concerning symptom appears, seek advice; a gratitude journal never replaces an assessment.",
+      "Symptoms can change from one day to another. A harder day does not necessarily erase progress, and a good day does not mean you should stop care. Follow the agreed guidance and talk with your professional before changing treatment.",
+      "Gratitude is not an emotion you can order or an obligatory task. It can coexist with frustration, grief, or weariness. Perhaps you are grateful to someone who accompanied you, or perhaps today you only need to acknowledge that you still need support.",
+      "Today you can note something that helped, whether relief, a conversation, or useful advice. If nothing feels better, you can leave the page blank and ask for company. Hope does not require hiding reality; it can coexist with it while continuing to seek care."
+    ]
+  },
+  "prayer": {
+    "es": "Señor, gracias por cada señal de mejoría, por pequeña que sea. Ayúdame a celebrarla con realismo, seguir el cuidado indicado y tener paciencia con los días en que avance más despacio. Amén.",
+    "en": "Lord, thank you for every sign of healing, however small. Help me celebrate it realistically, continue the care recommended, and be patient on days when progress is slower. Amen."
+  },
+  "act": {
+    "es": "Anota una señal pequeña de mejoría o de apoyo que hayas recibido. Si hoy no encuentras ninguna, no te culpes: el progreso puede ser lento y no siempre se nota a diario.",
+    "en": "Write down one small sign of improvement or support you have received. If you cannot find one today, do not blame yourself; progress can be slow and is not always visible each day."
+  }
 }

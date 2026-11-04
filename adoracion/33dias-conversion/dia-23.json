@@ -7,29 +7,34 @@
     "verse":  {
                   "es":  "\"Dios resiste a los soberbios y da gracia a los humildes.\"",
                   "en":  "\"God opposes the proud but gives grace to the humble.\"",
-                  "ref":  ""
+                  "ref":  "Stg 4, 6"
               },
     "reflection":  {
                        "es":  [
-                                  "Día 23. Ya dominas el arte de levantarte. Ahora aprende el de no caer donde solías.",
-                                  "Trae esto al Santisimo sin mediaciones. Sin excusas. Sin palabras. Solo presencia.",
-                                  "La Escritura de hoy dice: \"Dios resiste a los soberbios y da gracia a los humildes.\" Dejala bajar a tu corazon y obedecela con paz.",
-                                  "Ya no luchas: gobiernas. Mantente en esa paz."
+                                  "La soberbia no siempre se presenta como presumir. A veces aparece cuando no puedes admitir que te equivocaste, cuando necesitas tener la última palabra o cuando te cuesta recibir ayuda. También puede esconderse al revés, en la idea de que no vales nada y que todos los demás son mejores.",
+                                  "Santiago recuerda que Dios da gracia a los humildes. La humildad no es rebajarte ni negar los dones que tienes; es vivir en la verdad sobre tus capacidades, tus límites y lo que recibes de otros. No tienes que ser el centro, pero tampoco tienes que borrarte.",
+                                  "Piensa en una ocasión reciente en que te pusiste a la defensiva. ¿Qué estabas tratando de proteger: tu orgullo, una buena reputación, el miedo a quedar mal? No te condenes por la respuesta. Reconocer el impulso puede darte espacio para elegir otra manera de responder.",
+                                  "Ante Jesús, recuerda una persona que te haya enseñado algo o te haya ayudado cuando no podías hacerlo solo. Agradecer esa ayuda no te hace menos capaz. Te recuerda que la vida se recibe también por medio de otras personas.",
+                                  "Si debes pedir perdón, hazlo sin convertir la disculpa en una defensa de tu intención. Puedes reconocer el efecto de tus actos y escuchar lo que la otra persona necesita decir. No puedes controlar su reacción; sí puedes asumir tu responsabilidad con honestidad.",
+                                  "La humildad tampoco te exige aceptar una acusación falsa o permitir que alguien te maltrate. Puedes escuchar con apertura y, a la vez, mantener un límite. Pide a Dios discernimiento para saber cuándo necesitas corregirte y cuándo necesitas protegerte.",
+                                  "Hoy practica una forma pequeña de humildad: agradece, haz una pregunta antes de corregir o reconoce que necesitas ayuda. No busques parecer virtuoso. Basta con dejar un poco de espacio para que el otro y Dios también actúen. Un gesto sencillo puede mantener abierto el corazón a la gracia."
                               ],
                        "en":  [
-                                  "Today, God knocks again at the door of your interior life with a concrete call: \u0027Overcome pride\u0027.",
-                                  "In silent prayer, receive this word for you: \u0027Pride falls when you learn to ask forgiveness.\u0027",
-                                  "Today\u0027s Scripture says: \"God opposes the proud but gives grace to the humble.\" Let it descend into your heart and obey it in peace.",
-                                  "If temptation or memory of sin appears, do not hide. Name it, reject the lie, and choose a concrete path of grace: prayer, accompaniment, sacrament, reparation.",
-                                  "Perseverance: remain sober and humble. Christian victory is not never falling, but always returning to grace with truth and resolve."
+                                  "Pride does not always look like boasting. Sometimes it appears when you cannot admit a mistake, need the last word, or struggle to accept help. It can also hide in the opposite belief: that you are worthless and everyone else is better.",
+                                  "James reminds us that God gives grace to the humble. Humility is not belittling yourself or denying your gifts; it is living truthfully with your abilities, limits, and what you receive from others. You do not have to be the center, but you do not have to erase yourself either.",
+                                  "Think of a recent moment when you became defensive. What were you trying to protect: your pride, a good reputation, fear of looking bad? Do not condemn yourself for the answer. Recognizing the impulse can give you room to choose another response.",
+                                  "Before Jesus, remember someone who taught you something or helped when you could not manage alone. Giving thanks for that help does not make you less capable. It reminds you that life is also received through other people.",
+                                  "If you need to apologize, do so without turning the apology into a defense of your intentions. You can acknowledge the effect of your actions and listen to what the other person needs to say. You cannot control their reaction; you can take responsibility honestly.",
+                                  "Humility does not require accepting a false accusation or allowing someone to mistreat you. You can listen openly and still keep a boundary. Ask God for discernment to know when you need correction and when you need protection.",
+                                  "Practice one small form of humility today: give thanks, ask a question before correcting, or admit that you need help. Do not try to look virtuous. Simply leave some room for the other person and for God to act. A modest gesture can keep the heart open to grace."
                               ]
                    },
     "prayer":  {
-                   "es":  "Senor Jesus, reconozco que sin Ti no puedo vencer la tentacion ni sanar mi pecado. Dame corazon humilde, fortaleza en la lucha, arrepentimiento sincero y perseverancia para caminar en tu gracia. Lavame, levantame y guame por senderos de santidad. Amen.",
-                   "en":  "Lord Jesus, I acknowledge that without You I cannot overcome temptation or heal from sin. Give me a humble heart, strength in the struggle, sincere repentance, and perseverance to walk in Your grace. Wash me, raise me, and guide me on paths of holiness. Amen."
+                   "es":  "Señor, líbrame de creer que siempre tengo razón. Dame humildad para escuchar, reconocer un error y servir sin buscar aplausos, sin hacerme menos de lo que soy. Amén.",
+                   "en":  "Lord, free me from believing that I am always right. Give me humility to listen, admit a mistake, and serve without seeking applause, without making myself less than I am. Amen."
                },
     "act":  {
-                "es":  "Hoy realiza un acto concreto de conversion: evita una ocasion de pecado, corta un contenido que te hace caer, busca reconciliacion, o agenda tu confesion sacramental.",
-                "en":  "Today do one concrete act of conversion: avoid an occasion of sin, cut off content that leads you to fall, seek reconciliation, or schedule your sacramental confession."
+                "es":  "Agradece hoy a una persona algo que aprendiste de ella o una ayuda que recibiste. Si necesitas corregir una actitud tuya, hazlo en privado y sin justificarte.",
+                "en":  "Thank someone today for something you learned from them or for help you received. If you need to correct one of your own attitudes, do so privately and without making excuses."
             }
 }

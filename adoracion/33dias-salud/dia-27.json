@@ -1,36 +1,40 @@
-﻿{
-    "n":  27,
-    "theme":  {
-                  "es":  "Fe cuando no hay respuestas",
-                  "en":  "Faith when answers do not come"
-              },
-    "verse":  {
-                  "es":  "\"Mis pensamientos no son sus pensamientos.\"",
-                  "en":  "\"My thoughts are not your thoughts, neither are your ways my ways,\" declares the LORD.",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 27. La pregunta más agonica no es \"??Por qué duele?\" sino \"??Por qué duele AHORA? ??Por qué no más rápido? ??Por qué YO?\" El \"por qué\" es insaciable.",
-                                  "Y no hay respuesta que lo sacuda. Dios no contesta el \"por qué\" porque no puede sin violar tu libertad. Porque la respuesta estaría en Su mente incomprensible. Porque algunos \"por qué\" no se contestan. Se acompanan.",
-                                  "La Escritura dice: \"Mis pensamientos no son vuestros pensamientos.\" Es verdad atemorizante. Significa: hay cosas que no entenderás. Y eso está bien. La fe no es comprensión. Es confianza aun sin comprender.",
-                                  "En esa oscuridad donde el \"por qué\" queda sin respuesta, algo nace: la fe más real. No la fe de respuestas claras. La fe que ama a Dios sin dejarle explicarse. La fe que dice \"confio aunque no entienda.\"\n",
-                                  "Hoy suelta el \"por qué\". Abraza el misterio. Eso que no comprendes puede ser la puerta a la más profunda intimidad con Dios. No buscando respuestas. Buscando Su presencia en el silencio."
-                              ],
-                       "en":  [
-                                  "Day 27. The most agonizing question is not \"Why does it hurt?\" but \"Why does it hurt NOW? Why not faster? Why ME?\" The \"why\" is insatiable.",
-                                  "And there is no answer that will shake it. God does not answer the \"why\" because He cannot without violating your freedom. Because the answer would lie in His incomprehensible mind. Because some \"whys\" are not answered. They are accompanied.",
-                                  "Scripture says: \"My thoughts are not your thoughts, neither are your ways my ways.\" It is a terrifying truth. It means: there are things you will not understand. And that is okay. Faith is not understanding. It is trust even without understanding.",
-                                  "In that darkness where the \"why\" remains unanswered, something is born: the most real faith. Not the faith of clear answers. The faith that loves God without letting Him explain Himself. The faith that says \"I trust even though I do not understand.\"\n",
-                                  "Today release the \"why.\" Embrace the mystery. That which you do not comprehend may be the door to the deepest intimacy with God. Not searching for answers. Seeking His presence in the silence."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 27,
+  "theme": {
+    "es": "Fe cuando no hay respuestas",
+    "en": "Faith when answers do not come"
+  },
+  "verse": {
+    "es": "«¿Hasta cuándo, Señor? ¿Me olvidarás para siempre?»",
+    "en": "\"How long, Lord? Will you forget me forever?\"",
+    "ref": "Sal 13, 2"
+  },
+  "reflection": {
+    "es": [
+      "Cuando la enfermedad o el dolor parecen no tener explicación, la pregunta '¿por qué?' puede regresar con fuerza. Quizá buscas una causa, una respuesta espiritual o una manera de hacer que todo tenga sentido. No tienes que encontrar una explicación hoy para que tu pregunta sea recibida.",
+      "El salmista pregunta a Dios: '¿Hasta cuándo?'. La Biblia conserva esas palabras sin reprender a quien las pronuncia. El lamento puede incluir protesta, miedo y petición; no es lo contrario de la fe. A veces la oración más honesta es decir que no sabes qué pedir.",
+      "Nadie debería decirte que sabe por qué enfermaste, que Dios te envió el dolor como castigo o que debes agradecerlo. Esas explicaciones pueden herir y no sustituyen la verdad médica. Puedes rechazar una respuesta que te hace daño y hablar con alguien que respete tu conciencia.",
+      "La fe no requiere llamar bueno a lo que duele ni renunciar a buscar respuestas prácticas. Puedes pedir una explicación clínica, solicitar otra opinión o preguntar qué opciones hay. Si todavía no existe una respuesta, eso puede ser difícil; no es prueba de que hayas fallado espiritualmente.",
+      "En la adoración, puedes dejar la pregunta ante Jesús sin resolverla. También puedes leer un salmo de lamento, guardar silencio acompañado o escribir lo que necesitas saber. Si alguna práctica te aumenta la angustia, detente y busca otra manera de recibir apoyo.",
+      "Quienes te acompañan no tienen que ofrecer una explicación. Pueden escuchar, ayudar con una consulta o sentarse contigo. Si la incertidumbre te está afectando profundamente, un consejero, terapeuta o guía pastoral respetuoso puede ayudarte a sostener las preguntas sin apresurarlas.",
+      "Hoy permite que la pregunta exista y elige solo el siguiente paso: pedir información, compartir un temor o descansar. No tienes que abrazar el misterio ni descubrir un sentido oculto. Puedes buscar la presencia de Dios y de personas seguras mientras sigues buscando respuestas."
+    ],
+    "en": [
+      "When illness or pain seems to have no explanation, the question 'why?' may return with force. Perhaps you are looking for a cause, a spiritual answer, or a way to make everything meaningful. You do not have to find an explanation today for your question to be received.",
+      "The psalmist asks God, 'How long?' The Bible keeps these words without rebuking the person who speaks them. Lament may include protest, fear, and petition; it is not the opposite of faith. Sometimes the most honest prayer is saying you do not know what to ask.",
+      "No one should tell you that they know why you became ill, that God sent your pain as punishment, or that you must be grateful for it. Such explanations can wound and do not replace medical truth. You can reject an answer that harms you and speak with someone who respects your conscience.",
+      "Faith does not require calling pain good or giving up on practical answers. You can ask for a clinical explanation, request another opinion, or ask what options are available. If an answer is not yet available, that can be difficult; it is not proof that you have failed spiritually.",
+      "During adoration, you can leave the question before Jesus without resolving it. You might read a psalm of lament, sit in accompanied silence, or write down what you need to know. If a practice increases your distress, stop and seek another way to receive support.",
+      "Those accompanying you do not have to offer an explanation. They can listen, help with an appointment, or sit with you. If uncertainty is deeply affecting you, a respectful counselor, therapist, or pastoral guide may help you hold the questions without rushing them.",
+      "Today allow the question to exist and choose only the next step: seek information, share a fear, or rest. You do not have to embrace mystery or discover a hidden meaning. You can seek God's presence and the company of safe people while continuing to look for answers."
+    ]
+  },
+  "prayer": {
+    "es": "Dios mío, cuando no encuentre respuestas, recibe mis preguntas sin reprocharme. Sostén mi esperanza sin exigirme entenderlo todo y ayúdame a buscar compañía en esta incertidumbre. Amén.",
+    "en": "My God, when I cannot find answers, receive my questions without reproach. Sustain my hope without demanding that I understand everything, and help me seek companionship in this uncertainty. Amen."
+  },
+  "act": {
+    "es": "Cuando no tengas respuesta para una pregunta difícil, no te obligues a resolverla hoy. Busca la presencia de alguien seguro y pide compañía para atravesar este momento.",
+    "en": "When you have no answer to a difficult question, do not force yourself to solve it today. Seek the presence of someone safe and ask for company through this moment."
+  }
 }

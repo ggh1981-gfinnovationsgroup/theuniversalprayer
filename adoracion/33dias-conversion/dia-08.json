@@ -7,29 +7,34 @@
     "verse":  {
                   "es":  "\"Un poco de sueno... y llega tu pobreza como salteador.\"",
                   "en":  "\"A little sleep... and poverty will come on you like a thief.\"",
-                  "ref":  ""
+                  "ref":  "Prov 6, 10-11"
               },
     "reflection":  {
                        "es":  [
-                                  "Dia 8. La tibieza es más peligrosa que la lucha abierta. Elige, aunque sea incómodo.",
-                                  "Trae esto al Santisimo sin mediaciones. Sin excusas. Sin palabras. Solo presencia.",
-                                  "La Escritura de hoy dice: \"Un poco de sueno... y llega tu pobreza como salteador.\" Dejala bajar a tu corazon y obedecela con paz.",
-                                  "La tentacion es real. Tu libertad para rechazarla también."
+                                  "Hay días en que la oración queda para después, y ese después no llega. No siempre es pereza: a veces estás enfermo, abatido o agotado. Pero si notas que llevas tiempo evitando a Dios por costumbre, puedes volver sin esperar a sentir entusiasmo.",
+                                  "El proverbio de hoy advierte sobre dejarlo todo para más tarde. No condena el descanso ni a quien necesita detenerse. La pregunta es más humilde: ¿qué cosa buena estoy aplazando aunque sé que me haría bien retomarla?",
+                                  "Tal vez antes rezabas con facilidad y ahora te cuesta incluso sentarte un minuto. No conviertas el recuerdo de aquella etapa en una medida para condenarte. La oración cambia con las estaciones de la vida; una frase breve y sincera puede ser más verdadera que intentar repetir un hábito que hoy te queda grande.",
+                                  "Quizá tu regreso no empiece con una hora de oración. Puede ser sentarte cinco minutos en la capilla, abrir el Evangelio en una sola línea o decir: «Jesús, hoy me cuesta estar aquí». La fidelidad a veces se parece a presentarse, no a sentir mucho.",
+                                  "No uses este día para acusarte por cada pausa. Descansar también es necesario. Solo distingue, con paciencia, entre el reposo que te devuelve fuerzas y la evasión que te deja más lejos de lo que amas.",
+                                  "Si lo que llamas pereza es tristeza persistente, enfermedad o agotamiento, no lo resuelvas a fuerza de reproches. Descansar y pedir apoyo pueden ser lo más fiel que puedes hacer ahora. La vida espiritual no está separada de lo que le ocurre a tu cuerpo y a tu ánimo.",
+                                  "Elige un momento realista para volver a la oración y cúmplelo con suavidad. Si no puedes hacerlo hoy, busca otro momento posible. Dios no necesita que fabriques fervor; puedes comenzar con la verdad. Sé paciente contigo."
                               ],
                        "en":  [
-                                  "Today, God knocks again at the door of your interior life with a concrete call: \u0027Defeat spiritual laziness\u0027.",
-                                  "In silent prayer, receive this word for you: \u0027Lukewarmness is defeated by concrete choices.\u0027",
-                                  "Today\u0027s Scripture says: \"A little sleep... and poverty will come on you like a thief.\" Let it descend into your heart and obey it in peace.",
-                                  "If temptation or memory of sin appears, do not hide. Name it, reject the lie, and choose a concrete path of grace: prayer, accompaniment, sacrament, reparation.",
-                                  "Beginning: cut off one occasion of falling today. Conversion begins when you stop negotiating with what wounds you."
+                                  "Some days prayer gets put off until later, and later never comes. It is not always laziness: sometimes you are ill, discouraged, or exhausted. But if you notice that you have been avoiding God out of habit, you can return without waiting to feel eager.",
+                                  "Today's proverb warns against putting everything off. It does not condemn rest or anyone who needs to stop. The question is humbler: what good thing am I postponing even though I know it would help to return to it?",
+                                  "Perhaps you once found it easy to pray and now even sitting for a minute feels difficult. Do not turn the memory of that earlier season into a measure for condemning yourself. Prayer changes with the seasons of life; one brief, honest sentence may be truer than trying to repeat a habit that feels too much today.",
+                                  "Perhaps returning will not begin with an hour of prayer. It may be sitting in the chapel for five minutes, opening the Gospel to one line, or saying, \"Jesus, it is hard for me to be here today.\" Faithfulness sometimes looks like showing up, not feeling a lot.",
+                                  "Do not use this day to accuse yourself for every pause. Rest is necessary too. Patiently distinguish between the rest that restores you and the avoidance that leaves you farther from what you love.",
+                                  "If what you call laziness is persistent sadness, illness, or exhaustion, do not try to solve it through reproach. Resting and asking for support may be the most faithful things you can do now. Spiritual life is not separate from what happens in your body and mood.",
+                                  "Choose a realistic time to return to prayer and keep it gently. If you cannot do it today, look for another possible moment. God does not need you to manufacture fervor; you can begin with the truth. Be patient with yourself."
                               ]
                    },
     "prayer":  {
-                   "es":  "Senor Jesus, reconozco que sin Ti no puedo vencer la tentacion ni sanar mi pecado. Dame corazon humilde, fortaleza en la lucha, arrepentimiento sincero y perseverancia para caminar en tu gracia. Lavame, levantame y guame por senderos de santidad. Amen.",
-                   "en":  "Lord Jesus, I acknowledge that without You I cannot overcome temptation or heal from sin. Give me a humble heart, strength in the struggle, sincere repentance, and perseverance to walk in Your grace. Wash me, raise me, and guide me on paths of holiness. Amen."
+                   "es":  "Jesús, cuando me esconda detrás del «después», ayúdame a volver sin fingir entusiasmo. Enséñame a distinguir el descanso necesario de la evasión y a ofrecerte el tiempo que sí puedo dar hoy. Amén.",
+                   "en":  "Jesus, when I hide behind \"later,\" help me return without pretending to feel eager. Teach me to distinguish needed rest from avoidance and to offer you the time I can give today. Amen."
                },
     "act":  {
-                "es":  "Hoy realiza un acto concreto de conversion: evita una ocasion de pecado, corta un contenido que te hace caer, busca reconciliacion, o agenda tu confesion sacramental.",
-                "en":  "Today do one concrete act of conversion: avoid an occasion of sin, cut off content that leads you to fall, seek reconciliation, or schedule your sacramental confession."
+                "es":  "Reserva cinco minutos para estar ante Jesús, aunque no tengas ganas ni encuentres palabras. Si hoy no puedes ir a una iglesia, guarda ese momento de silencio donde estés.",
+                "en":  "Set aside five minutes to be with Jesus, even if you do not feel like it or cannot find words. If you cannot visit a church today, keep that quiet moment wherever you are."
             }
 }

@@ -1,36 +1,40 @@
-﻿{
-    "n":  15,
-    "theme":  {
-                  "es":  "Esperanza contra la depresion",
-                  "en":  "Hope against depression"
-              },
-    "verse":  {
-                  "es":  "\"El Senor esta cerca de los quebrantados de corazon.\"",
-                  "en":  "\"The LORD is close to the brokenhearted.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 15. La depresión no es debilidad de carácter. Es como vivir bajo agua gris: todo llega lentamente, todo pesa, nada brilla. Y la gente grita desde la orilla: \"¡Nada!\" Como si el problema fuera tu brazada.",
-                                  "Pero hay una verdad que la depresión intenta esconder: no estás solo. Dios está precisamente aquí, en lo gris, en lo pesado. No en las alturas esperando que mejores. En lo profundo, esperándote.",
-                                  "La Escritura de hoy dice: \"El Señor está cerca de los quebrantados de corazón.\" No cuando mejores. Ahora. En esta tristeza que no tiene nombre, en esta fatiga sin causa, Él está aquí.",
-                                  "Hoy permite una verdad difícil: la depresión requiere ayuda profesional. No es falta de fe pedir medicinas, terapia, acompañamiento. Es la forma en que Dios te ofrece camino de vuelta.",
-                                  "Un paso pequeño hoy: nombra una persona o profesional a quien puedas acercarte. O simplemente di: estoy aquí, bajo el agua, pero sigo aquí. Eso es suficiente para empezar."
-                              ],
-                       "en":  [
-                                  "Day 15. Depression is not a character weakness. It is like living underwater in gray: everything arrives slowly, everything weighs, nothing shines. And people yell from the shore: \"Swim!\" As if the problem were your stroke.",
-                                  "But there is a truth that depression tries to hide: you are not alone. God is precisely here, in the gray, in the heaviness. Not in the heights waiting for you to improve. In the depths, waiting for you.",
-                                  "Today's Scripture says: \"The LORD is close to the brokenhearted.\" Not when you improve. Now. In this sadness that has no name, in this exhaustion with no cause, He is here.",
-                                  "Today allow a difficult truth: depression requires professional help. It is not a lack of faith to seek medicine, therapy, support. It is the way God offers you a path back.",
-                                  "One small step today: name one person or professional you can reach out to. Or simply say: I am here, underwater, but I am still here. That is enough to begin."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 15,
+  "theme": {
+    "es": "Esperanza contra la depresion",
+    "en": "Hope against depression"
+  },
+  "verse": {
+    "es": "«El Señor está cerca de los quebrantados de corazón.»",
+    "en": "\"The LORD is close to the brokenhearted.\"",
+    "ref": "Sal 34, 18"
+  },
+  "reflection": {
+    "es": [
+      "Día 15. La depresión no es debilidad de carácter. Es como vivir bajo agua gris: todo llega lentamente, todo pesa, nada brilla. Y la gente grita desde la orilla: \"¡Nada!\" Como si el problema fuera tu brazada.",
+      "Pero hay una verdad que la depresión intenta esconder: no estás solo. Dios está precisamente aquí, en lo gris, en lo pesado. No en las alturas esperando que mejores. En lo profundo, esperándote.",
+      "La Escritura de hoy dice: \"El Señor está cerca de los quebrantados de corazón.\" No cuando mejores. Ahora. En esta tristeza que no tiene nombre, en esta fatiga sin causa, Él está aquí.",
+      "La depresión puede beneficiarse de una evaluación y de distintas formas de atención, como terapia, medicamentos o apoyo social, según cada persona. No es falta de fe pedir ayuda, y tampoco tienes que decidir todo hoy. Un profesional puede conversar contigo sobre opciones y responder tus preguntas.",
+      "Un paso pequeño hoy: nombra una persona o profesional a quien puedas acercarte. O simplemente di: estoy aquí, bajo el agua, pero sigo aquí. Eso es suficiente para empezar.",
+      "Quien acompaña a alguien con depresión no necesita tener la frase perfecta. Escuchar, ofrecer ayuda práctica y seguir presente puede importar; evita decir que todo depende de pensar positivo. Si cuidas a alguien, busca también apoyo para ti. Acompañar no significa cargar solo con su recuperación. La mejoría puede ser gradual y no siempre lineal. Si una primera consulta no te ayuda, puedes buscar otra opinión o explicar qué no funcionó; mereces que tomen en serio tu experiencia.",
+      "Si estás pensando en hacerte daño, no tienes que manejarlo en silencio. Cuéntaselo ahora a alguien de confianza, quédate acompañado y contacta los servicios de emergencia o una línea de crisis de tu zona. Si hay peligro inmediato, acude a urgencias. Tu seguridad es lo primero."
+    ],
+    "en": [
+      "Day 15. Depression is not a character weakness. It is like living underwater in gray: everything arrives slowly, everything weighs, nothing shines. And people yell from the shore: \"Swim!\" As if the problem were your stroke.",
+      "But there is a truth that depression tries to hide: you are not alone. God is precisely here, in the gray, in the heaviness. Not in the heights waiting for you to improve. In the depths, waiting for you.",
+      "Today's Scripture says: \"The LORD is close to the brokenhearted.\" Not when you improve. Now. In this sadness that has no name, in this exhaustion with no cause, He is here.",
+      "Depression may benefit from an assessment and different forms of care, such as therapy, medication, or social support, depending on the person. Asking for help is not a lack of faith, and you do not have to decide everything today. A professional can discuss options and answer your questions.",
+      "One small step today: name one person or professional you can reach out to. Or simply say: I am here, underwater, but I am still here. That is enough to begin.",
+      "Someone accompanying a person with depression does not need a perfect phrase. Listening, offering practical help, and remaining present can matter; avoid saying that everything depends on positive thinking. If you care for someone, seek support for yourself too. Accompanying someone does not mean carrying their recovery alone. Improvement may be gradual and not always linear. If a first appointment does not help, you can seek another opinion or explain what did not work; you deserve to have your experience taken seriously.",
+      "If you are thinking about harming yourself, you do not have to manage it in silence. Tell someone you trust now, stay with another person, and contact emergency services or a crisis line in your area. If there is immediate danger, go to an emergency department. Your safety comes first."
+    ]
+  },
+  "prayer": {
+    "es": "Jesús, acompaña a quien atraviesa depresión y a quienes lo cuidan. Dame esperanza para buscar ayuda profesional y fuerza para dar solo el paso posible de hoy. Amén.",
+    "en": "Jesus, stay with those living with depression and those who care for them. Give me hope to seek professional help and strength to take only today's possible step. Amen."
+  },
+  "act": {
+    "es": "Si la tristeza o la falta de esperanza te acompaña, contacta hoy a alguien de confianza y cuéntale cómo estás. Considera pedir ayuda profesional; no tienes que atravesarlo solo.",
+    "en": "If sadness or hopelessness is staying with you, contact someone you trust today and tell them how you are. Consider professional support; you do not have to go through this alone."
+  }
 }

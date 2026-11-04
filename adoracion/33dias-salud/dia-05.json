@@ -1,36 +1,40 @@
-﻿{
-    "n":  5,
-    "theme":  {
-                  "es":  "Fortaleza en la debilidad",
-                  "en":  "Strength in weakness"
-              },
-    "verse":  {
-                  "es":  "\"Te basta mi gracia; mi poder se perfecciona en la debilidad.\"",
-                  "en":  "\"My grace is sufficient for you, for my power is made perfect in weakness.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 5. La fortaleza verdadera no es ausencia de debilidad: es la capacidad de no mentir sobre ella. Quien pretende no estar quebrantado solo construye muros más altos.",
-                                  "Aprendiste quizá que debías ser fuerte para ser amado. Que la fragilidad era vergüenza. Que confesar cansancio era fracaso. Pero tu debilidad es el único lugar donde la gracia tiene espacio real.",
-                                  "La Escritura de hoy dice: \"Mi gracia te basta, porque mi poder se perfecciona en la debilidad.\" No es consuelo vacío. Es inversión de toda lógica: donde acabas, comienza Dios. Donde te reconoces pequeño, Él es más grande.",
-                                  "Hoy el Señor no te pide que seas más fuerte. Te pide que reconozcas que necesitas ayuda, que admitas lo que duele, que dejes de luchar solo. Eso es la fortaleza verdadera: saber cuándo soltar.",
-                                  "Comienza hoy a confesar una debilidad que has guardado. No como fracaso, sino como puerta. La verdad abierta siempre es más fuerte que la mentira protegida."
-                              ],
-                       "en":  [
-                                  "Day 5. True strength is not the absence of weakness: it is the capacity to not lie about it. Whoever pretends to be unbroken simply builds higher walls.",
-                                  "Perhaps you learned that you had to be strong to be loved. That fragility was shame. That admitting tiredness was failure. But your weakness is the only place where grace has real space.",
-                                  "Today's Scripture says: \"My grace is sufficient for you, for my power is made perfect in weakness.\" It is not empty comfort. It is an inversion of all logic: where you end, God begins. Where you recognize yourself as small, He becomes greater.",
-                                  "Today the Lord does not ask you to be stronger. He asks that you recognize you need help, that you admit what hurts, that you stop fighting alone. That is true strength: knowing when to let go.",
-                                  "Begin today by confessing one weakness you have kept hidden. Not as failure, but as a door. Open truth is always stronger than protected lies."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 5,
+  "theme": {
+    "es": "Fortaleza en la debilidad",
+    "en": "Strength in weakness"
+  },
+  "verse": {
+    "es": "\"Te basta mi gracia; mi poder se perfecciona en la debilidad.\"",
+    "en": "\"My grace is sufficient for you, for my power is made perfect in weakness.\"",
+    "ref": "2 Co 12, 9"
+  },
+  "reflection": {
+    "es": [
+      "Pablo escribe sobre una dificultad que no desaparecía y sobre haber pedido alivio. La respuesta que recuerda no fue una promesa de curación inmediata: «Te basta mi gracia». Para quien vive con dolor, esa frase no debe usarse para pedirle que deje de buscar tratamiento o apoyo.",
+      "A veces la fortaleza consiste en aceptar que hoy no puedes hacer lo mismo que antes. Otras veces es insistir en una consulta, tomar el descanso indicado o dejar que alguien te ayude. Ninguna de esas decisiones te hace menos digno ni menos amado.",
+      "¿Qué parte de tu situación te cuesta contar porque temes parecer débil? Puedes empezar por decirlo aquí, ante Jesús, sin convertir el sufrimiento en una lección que debes superar rápido. La gracia también puede sostenerte mientras el problema sigue presente.",
+      "Si te ayuda, recuerda a una persona que estuvo contigo en un momento difícil. Da gracias por esa compañía y piensa si hoy podrías pedirla de nuevo. La fe no siempre nos libra de necesitar a otros; a menudo nos enseña a recibirlos.",
+      "No te exijas sentirte fuerte al terminar esta adoración. Pide lo necesario para esta jornada y da un paso realista. También en la debilidad puedes presentarte ante Dios tal como eres.",
+      "La experiencia de Pablo no ofrece una explicación universal de por qué alguien enferma. No significa que el dolor sea enviado para enseñar una lección ni que la gracia se mida por cuánto puedes soportar. Puedes lamentar lo que ocurre y pedir que cambie, sin que eso sea falta de fe.",
+      "Quizá hoy no puedas imaginar cómo será el camino completo. No necesitas hacerlo. Puedes preguntar al equipo que te atiende qué opciones tienes, pedir a una persona que te acompañe o descansar cuando sea posible. La gracia puede recibirse también como consejo, tratamiento, paciencia y compañía."
+    ],
+    "en": [
+      "Paul writes about a hardship that would not go away and about asking for relief. The answer he recalls was not a promise of immediate healing: \"My grace is sufficient for you.\" For someone living with pain, this verse should never be used to tell them to stop seeking treatment or support.",
+      "Sometimes strength means accepting that today you cannot do what you once could. Sometimes it means persisting with an appointment, taking prescribed rest, or letting someone help. None of these choices makes you less worthy or less loved.",
+      "What part of your situation is hard to share because you fear seeming weak? You can begin by saying it here, before Jesus, without turning suffering into a lesson you must quickly overcome. Grace can sustain you while the problem is still present.",
+      "If it helps, remember someone who stayed with you during a difficult time. Give thanks for that companionship and consider whether you could ask for it again today. Faith does not always free us from needing others; often it teaches us to receive them.",
+      "Do not demand that you feel strong when this time of adoration ends. Ask for what you need for this day and take one realistic step. You can come before God just as you are, even in weakness.",
+      "Paul's experience does not offer a universal explanation for why anyone becomes ill. It does not mean pain is sent to teach a lesson or that grace is measured by how much you can endure. You can grieve what is happening and ask for change without lacking faith.",
+      "Perhaps you cannot imagine the whole road ahead today. You do not need to. You can ask your care team what options you have, ask someone to accompany you, or rest when possible. Grace can also be received through advice, treatment, patience, and companionship."
+    ]
+  },
+  "prayer": {
+    "es": "Señor Jesús, acompáñame en lo que no puedo resolver todavía. Dame fuerza para buscar atención y humildad para aceptar compañía. Que nadie use mi enfermedad para hacerme sentir culpable o menos digno. Amén.",
+    "en": "Lord Jesus, stay with me in what I cannot resolve yet. Give me strength to seek care and humility to accept company. Let no one use my illness to make me feel guilty or less worthy. Amen."
+  },
+  "act": {
+    "es": "Nombra una tarea que hoy te cueste por cansancio o enfermedad y pide ayuda con ella a alguien de confianza. Recibir apoyo no disminuye tu dignidad.",
+    "en": "Name one task that feels difficult today because of fatigue or illness, and ask someone you trust for help with it. Receiving support does not diminish your dignity."
+  }
 }

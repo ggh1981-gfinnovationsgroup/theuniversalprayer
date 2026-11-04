@@ -7,29 +7,34 @@
     "verse":  {
                   "es":  "\"Olvidando lo que queda atras y lanzandome hacia delante, corro hacia la meta.\"",
                   "en":  "\"Forgetting what is behind and straining toward what is ahead, I press on toward the goal.\"",
-                  "ref":  ""
+                  "ref":  "Flp 3, 13-14"
               },
     "reflection":  {
                        "es":  [
-                                  "Día 33. Protege tu libertad como cosa sagrada. Porque lo es.",
-                                  "Trae esto al Santisimo sin mediaciones. Sin excusas. Sin palabras. Solo presencia.",
-                                  "La Escritura de hoy dice: \"Olvidando lo que queda atras y lanzandome hacia delante, corro hacia la meta.\" Dejala bajar a tu corazon y obedecela con paz.",
-                                  "Ya no luchas: gobiernas. Mantente en esa paz."
+                                      "Llegaste al último día de esta serie, pero no al final de tu camino. Treinta y tres días pueden ayudarte a mirar una lucha desde distintos ángulos; no convierten el cambio en una meta que ya alcanzaste para siempre. La vida con Cristo continúa mañana, en decisiones comunes y a veces difíciles.",
+                                      "Pablo escribe que deja atrás lo que queda atrás y se lanza hacia delante. No está diciendo que debamos borrar la memoria ni negar las consecuencias. Puedes aprender de lo vivido sin dejar que cada error dicte quién eres o qué futuro mereces.",
+                                      "Mira con honestidad lo que ha cambiado durante estas jornadas. Quizá ahora reconoces antes una tentación, pediste ayuda, volviste a confesarte o descubriste que necesitas otro tipo de apoyo. Si no notas un gran cambio, tampoco tienes que inventarlo; puedes reconocer qué sigue siendo difícil.",
+                                      "La santidad no es un voto desesperado de no caer jamás. Es una orientación firme hacia el bien, sostenida con gracia, decisiones concretas y humildad para volver a empezar. Si te ayuda una promesa, que sea razonable y conversada con un confesor, no una carga que te ate al miedo.",
+                                      "Ante el Santísimo, da gracias por una ayuda recibida y nombra el apoyo que todavía necesitas. Puede ser un sacerdote, una persona de confianza, un profesional o una rutina que te sostenga. No tienes que escoger entre confiar en Dios y aceptar ayuda humana.",
+                                      "Piensa qué práctica pequeña puedes conservar durante la próxima semana. Ponle un día, una hora o una persona que te acompañe. Un plan sencillo puede sostener mejor la libertad que una declaración grandiosa hecha bajo la emoción del último día.",
+                                      "Cuando cierres esta jornada, no te exijas sentirte transformado por completo. Pide fuerza para el siguiente paso y misericordia para los días en que te cueste. La meta no es demostrar que ya no necesitas a Dios; es seguir caminando con Él."
                               ],
                        "en":  [
-                                  "Pause before the Blessed Sacrament: this theme, \u0027Firm purpose of holiness\u0027, can reshape your life if you embrace it in faith.",
-                                  "In silent prayer, receive this word for you: \u0027Press forward: grace goes before you.\u0027",
-                                  "Today\u0027s Scripture says: \"Forgetting what is behind and straining toward what is ahead, I press on toward the goal.\" Let it descend into your heart and obey it in peace.",
-                                  "If temptation or memory of sin appears, do not hide. Name it, reject the lie, and choose a concrete path of grace: prayer, accompaniment, sacrament, reparation.",
-                                  "Perseverance: remain sober and humble. Christian victory is not never falling, but always returning to grace with truth and resolve."
+                                  "You have reached the last day of this series, but not the end of your journey. Thirty-three days can help you look at one struggle from different angles; they do not turn change into a goal you have reached forever. Life with Christ continues tomorrow, in ordinary and sometimes difficult choices.",
+                                  "Paul writes that he leaves behind what is behind and presses forward. He is not saying we should erase memory or deny consequences. You can learn from what happened without letting every mistake dictate who you are or what future you deserve.",
+                                  "Look honestly at what has changed during these days. Perhaps you recognize temptation sooner, asked for help, returned to Confession, or discovered that you need another kind of support. If you do not notice a major change, you do not have to invent one; you can acknowledge what remains difficult.",
+                                  "Holiness is not a desperate vow never to fall again. It is a firm direction toward the good, sustained by grace, concrete choices, and humility to begin again. If a promise helps, let it be reasonable and discussed with a confessor, not a burden that binds you to fear.",
+                                  "Before the Blessed Sacrament, give thanks for one help you received and name the support you still need. It may be a priest, a trusted person, a professional, or a routine that sustains you. You do not have to choose between trusting God and accepting human help.",
+                                  "Think of one small practice you can keep during the coming week. Give it a day, a time, or someone to accompany you. A simple plan may sustain freedom better than a grand declaration made in the emotion of the last day.",
+                                  "As you close this day, do not demand that you feel completely transformed. Ask for strength for the next step and mercy for the days when it is hard. The goal is not to prove that you no longer need God; it is to keep walking with him."
                               ]
                    },
     "prayer":  {
-                   "es":  "Senor Jesus, reconozco que sin Ti no puedo vencer la tentacion ni sanar mi pecado. Dame corazon humilde, fortaleza en la lucha, arrepentimiento sincero y perseverancia para caminar en tu gracia. Lavame, levantame y guame por senderos de santidad. Amen.",
-                   "en":  "Lord Jesus, I acknowledge that without You I cannot overcome temptation or heal from sin. Give me a humble heart, strength in the struggle, sincere repentance, and perseverance to walk in Your grace. Wash me, raise me, and guide me on paths of holiness. Amen."
+                   "es":  "Señor Jesús, al terminar esta jornada de 33 días, sostén en mí el deseo de seguirte. Ayúdame a mirar el siguiente paso con esperanza y a volver a empezar cada vez que sea necesario. Amén.",
+                   "en":  "Lord Jesus, as this 33-day journey ends, keep alive my desire to follow you. Help me face the next step with hope and begin again whenever I need to. Amen."
                },
     "act":  {
-                "es":  "Hoy realiza un acto concreto de conversion: evita una ocasion de pecado, corta un contenido que te hace caer, busca reconciliacion, o agenda tu confesion sacramental.",
-                "en":  "Today do one concrete act of conversion: avoid an occasion of sin, cut off content that leads you to fall, seek reconciliation, or schedule your sacramental confession."
+                "es":  "Antes de terminar esta jornada, elige un hábito pequeño y sostenible para continuar mañana. Escríbelo con un momento concreto y una persona a quien puedas acudir si necesitas apoyo.",
+                "en":  "Before this day ends, choose one small, sustainable practice to continue tomorrow. Write down a specific time for it and one person you can turn to if you need support."
             }
 }

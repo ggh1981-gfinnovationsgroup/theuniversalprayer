@@ -1,35 +1,40 @@
 ﻿{
     "n":  2,
     "theme":  {
-                  "es":  "Reconocer la tentacion",
+                  "es":  "Reconocer la tentación",
                   "en":  "Recognize temptation"
               },
     "verse":  {
                   "es":  "\"Cada uno es tentado por su propia concupiscencia... y el pecado, una vez consumado, engendra muerte.\"",
                   "en":  "\"Each person is tempted when they are dragged away by their own desire... and sin, when fully grown, gives birth to death.\"",
-                  "ref":  ""
+                  "ref":  "Stg 1, 14-15"
               },
     "reflection":  {
                        "es":  [
-                                  "Dia 2. Vigila tu corazón no como policía, sino como centinela de lo que amas.",
-                                  "Trae esto al Santisimo sin mediaciones. Sin excusas. Sin palabras. Solo presencia.",
-                                  "La Escritura de hoy dice: \"Cada uno es tentado por su propia concupiscencia... y el pecado, una vez consumado, engendra muerte.\" Dejala bajar a tu corazon y obedecela con paz.",
-                                  "La tentacion es real. Tu libertad para rechazarla también."
+                                  "Tal vez conoces ese momento: ya es tarde, estás cansado y vuelves a abrir la misma página o a buscar la misma conversación que después te deja inquieto. O quizá la tentación llega de otra manera, cuando te sientes solo, frustrado o necesitado de consuelo. No tienes que resolver todo el patrón ahora; primero puedes reconocer qué está pasando en este instante.",
+                                  "Santiago describe cómo un deseo puede atraernos y, si lo alimentamos, llevarnos a una decisión que termina haciendo daño. No dice que toda atracción, impulso o pensamiento involuntario sea ya una elección moral. Hay una distancia entre sentir una inclinación y consentirla; en esa distancia puede crecer tu libertad.",
+                                  "Ante Jesús, intenta nombrar lo que aparece sin exagerarlo ni excusarlo. «Estoy buscando alivio», «me siento solo», «quiero volver a mirar». La verdad concreta suele ayudar más que llamarte débil o prometer que nunca sentirás esto. Cristo no necesita que escondas el deseo para poder acompañarte.",
+                                  "Mira el sagrario un momento. No estás ante alguien sorprendido por tu lucha, sino ante Jesús, que conoce tu fragilidad y también tu capacidad de elegir. Pídele luz para distinguir qué necesitas de verdad: descanso, compañía, una conversación honesta, o apartarte de algo que sabes que te arrastra.",
+                                  "Si puedes, recuerda una ocasión reciente: ¿qué pasó en la hora anterior?, ¿estabas agotado, preocupado, a solas, con el teléfono cerca? No conviertas esas preguntas en un juicio. Estás aprendiendo a reconocer el terreno para no tener que decidir a ciegas la próxima vez.",
+                                  "Cuando notes la señal, prepara una salida sencilla: deja el teléfono en otra habitación, cambia de lugar, sal a caminar o escribe a alguien de confianza. Si la tentación vuelve, no significa que hayas perdido toda libertad; vuelve a elegir el siguiente paso posible.",
+                                  "Quédate unos segundos en silencio y dile al Señor la verdad que encontraste hoy. No necesitas salir de aquí sin deseo ni con una promesa grandiosa. Basta con pedir gracia para no alimentar lo que te hace daño y con confiarle la decisión concreta que vas a tomar."
                               ],
                        "en":  [
-                                  "Today, God knocks again at the door of your interior life with a concrete call: \u0027Recognize temptation\u0027.",
-                                  "In silent prayer, receive this word for you: \u0027Temptation loses strength when you name it in My presence.\u0027",
-                                  "Today\u0027s Scripture says: \"Each person is tempted when they are dragged away by their own desire... and sin, when fully grown, gives birth to death.\" Let it descend into your heart and obey it in peace.",
-                                  "If temptation or memory of sin appears, do not hide. Name it, reject the lie, and choose a concrete path of grace: prayer, accompaniment, sacrament, reparation.",
-                                  "Beginning: cut off one occasion of falling today. Conversion begins when you stop negotiating with what wounds you."
+                                  "Perhaps you know the moment: it is late, you are tired, and you open the same page again or look for the same conversation that leaves you unsettled afterward. Or temptation may come another way, when you feel lonely, frustrated, or in need of comfort. You do not have to solve the whole pattern now; first, notice what is happening in this moment.",
+                                  "James describes how desire can draw us in and, if we feed it, lead us to a choice that causes harm. He does not say that every attraction, impulse, or unchosen thought is already a moral choice. There is a distance between feeling an inclination and consenting to it; your freedom can grow in that distance.",
+                                  "Before Jesus, try to name what is happening without exaggerating it or making excuses. \"I am looking for relief,\" \"I feel alone,\" \"I want to look again.\" Concrete truth often helps more than calling yourself weak or promising never to feel this. Christ does not need you to hide your desire in order to accompany you.",
+                                  "Look toward the tabernacle for a moment. You are not before someone surprised by your struggle, but before Jesus, who knows your fragility and your ability to choose. Ask him for light to discern what you truly need: rest, company, an honest conversation, or distance from something you know pulls you in.",
+                                  "If you can, remember a recent occasion: what happened in the previous hour? Were you exhausted, worried, alone, or near your phone? Do not turn these questions into a judgment. You are learning the terrain so that next time you do not have to choose blindly.",
+                                  "When you notice the signal, prepare a simple way out: leave your phone in another room, change places, go for a walk, or message someone you trust. If temptation returns, it does not mean you have lost all freedom; choose the next possible step again.",
+                                  "Stay quiet for a few seconds and tell the Lord the truth you found today. You do not need to leave without desire or with a grand promise. It is enough to ask for grace not to feed what harms you and to entrust him with the concrete choice you are about to make."
                               ]
                    },
     "prayer":  {
-                   "es":  "Senor Jesus, reconozco que sin Ti no puedo vencer la tentacion ni sanar mi pecado. Dame corazon humilde, fortaleza en la lucha, arrepentimiento sincero y perseverancia para caminar en tu gracia. Lavame, levantame y guame por senderos de santidad. Amen.",
+                   "es":  "Señor Jesús, ayúdame a reconocer lo que ocurre en mí sin esconderme ni condenarme. Dame luz para ver cuándo empieza esta lucha y libertad para elegir el bien que deseo. Acompáñame en la pausa y en la decisión concreta de hoy. Amén.",
                    "en":  "Lord Jesus, I acknowledge that without You I cannot overcome temptation or heal from sin. Give me a humble heart, strength in the struggle, sincere repentance, and perseverance to walk in Your grace. Wash me, raise me, and guide me on paths of holiness. Amen."
                },
     "act":  {
-                "es":  "Hoy realiza un acto concreto de conversion: evita una ocasion de pecado, corta un contenido que te hace caer, busca reconciliacion, o agenda tu confesion sacramental.",
-                "en":  "Today do one concrete act of conversion: avoid an occasion of sin, cut off content that leads you to fall, seek reconciliation, or schedule your sacramental confession."
+                "es":  "Al terminar el día, anota qué suele ocurrir justo antes de la tentación: una emoción, una hora o una situación. No te juzgues; reconocer el patrón te ayuda a elegir con más libertad la próxima vez.",
+                "en":  "At the end of the day, note what tends to happen just before temptation: an emotion, a time, or a situation. Do not judge yourself; recognizing the pattern can help you choose more freely next time."
             }
 }

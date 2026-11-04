@@ -7,30 +7,34 @@
     "verse":  {
                   "es":  "\"Ustedes son la luz del mundo.\"",
                   "en":  "\"You are the light of the world.\"",
-                  "ref":  ""
+                  "ref":  "Mt 5, 14-16"
               },
     "reflection":  {
                        "es":  [
-                                  "Día 32. Eres la luz del mundo. Tu familia es la luz del mundo. No una luz escondida. Una luz que brilla.",
-                                  "Cuando tu familia es sólida, cuando vive de verdad, cuando se ama, cuando ora, cuando sirve, eso brilla. Los vecinos lo ven. Los amigos lo sienten. Los extraños se preguntan: 'Qué tienen ellos que no tenemos nosotros?'",
-                                  "Pero una familia misionera no predica palabras. Vive. Y al vivir, evangeliza. Porque la verdad vivida es más poderosa que la verdad predicada.",
-                                  "Muchas familias se cierran. Tienen lo que Dios les ha dado, pero no lo comparten. No invitan. No albergan. No sirven. Y se mueren lentamente, porque una familia que no da, que no crece, que no abre, se estanca.",
-                                  "Hoy, abre tu familia. No solo a tus amigos. Abre espacio para el que está solo. Para el que sufre. Para el que no tiene lugar. Que tu familia sea un hogar para otros también. Eso es ser luz del mundo."
+                                  "La imagen de Jesús sobre la luz puede sonar grande para una familia que apenas consigue llegar al final de la semana. No hace falta ser ejemplar en todo para hacer el bien visible. A veces una palabra honesta, una disculpa o una ayuda discreta ya ilumina un rincón de la vida cotidiana.",
+                                  "En el Evangelio, la luz no se enciende para que todos admiren la lámpara, sino para que puedan ver. La vida de fe puede orientar y animar a otros, pero no necesita convertirse en una exhibición ni en una comparación con familias que parecen perfectas desde fuera.",
+                                  "Una familia comparte la fe también por la manera en que trata a quien piensa distinto, a quien necesita ayuda o a quien forma parte de la casa. Escuchar una pregunta sin ridiculizarla y reconocer una falta pueden hablar de Dios con más verdad que un discurso impecable.",
+                                  "Evangelizar no significa presionar a los hijos o familiares para que adopten cada práctica religiosa. Puedes contar por qué rezas, invitarlos con sencillez y respetar su libertad. La fe se ofrece; no se impone mediante culpa, amenazas o retiro del cariño.",
+                                  "Compartir lo recibido puede ser una comida, tiempo para acompañar a un vecino o apoyo a una iniciativa comunitaria. Hazlo dentro de lo que la familia puede sostener. La generosidad no exige descuidar a quienes necesitan cuidado en casa.",
+                                  "Ante Jesús, pregúntate qué luz necesitas tú antes de intentar orientar a otros. Quizá sea paciencia, coherencia, descanso o valor para pedir perdón. No tienes que ser la respuesta a todas las necesidades que encuentras.",
+                                  "Elige una forma concreta y humilde de servir esta semana, junto con quienes quieran participar. Después escucha cómo fue para todos. Una familia misionera no necesita parecer perfecta; puede hacer visible el amor mediante actos libres y sostenibles. Un gesto puede abrir una puerta, pero no controla si alguien decide cruzarla."
                               ],
                        "en":  [
-                                  "Day 32. You are the light of the world. Your family is the light of the world. Not a hidden light. A light that shines.",
-                                  "When your family is solid, when it lives truth, when it loves, when it prays, when it serves, that shines. Neighbors see it. Friends feel it. Strangers wonder: 'What do they have that we don't?'",
-                                  "But a missionary family does not preach words. It lives. And in living, it evangelizes. Because truth lived is more powerful than truth preached.",
-                                  "Many families close themselves off. They have what God has given them, but they do not share it. They do not invite. They do not harbor. They do not serve. And they slowly die, because a family that does not give, that does not grow, that does not open, stagnates.",
-                                  "Today, open your family. Not just to your friends. Open space for the one who is alone. For the one who suffers. For the one who has no place. Let your family be a home for others too. That is being light of the world."
+                                  "Jesus' image of light may sound lofty to a family that is barely making it through the week. You do not have to be exemplary in everything to make goodness visible. Sometimes an honest word, an apology, or quiet help already brightens one corner of ordinary life.",
+                                  "In the Gospel, light is not lit so everyone will admire the lamp, but so they can see. A life of faith can guide and encourage others, but it does not need to become a display or a comparison with families who look perfect from the outside.",
+                                  "A family shares faith through how it treats those who think differently, those who need help, and those who belong to the household. Listening to a question without ridicule and admitting a fault can speak of God more truthfully than a flawless speech.",
+                                  "Evangelizing does not mean pressuring children or relatives to adopt every religious practice. You can share why you pray, invite them gently, and respect their freedom. Faith is offered; it is not imposed through guilt, threats, or withholding affection.",
+                                  "Sharing what you have received might mean a meal, time accompanying a neighbor, or support for a community effort. Do so within what the family can sustain. Generosity does not require neglecting those who need care at home.",
+                                  "Before Jesus, ask what light you need before trying to guide others. Perhaps it is patience, consistency, rest, or courage to apologize. You do not have to be the answer to every need you encounter.",
+                                  "Choose one concrete, humble way to serve this week together with those who wish to participate. Then listen to how it was for everyone. A missionary family need not look perfect; it can make love visible through free and sustainable acts. A gesture can open a door, but it cannot control whether someone chooses to walk through it."
                               ]
                    },
     "prayer":  {
-                   "es":  "Senor Jesus, consagro mi familia a Tu Corazon. Derrama Tu paz sobre nuestro hogar, sana nuestras heridas, une nuestros corazones y ensenanos a vivir en perdon, verdad y caridad. Que nuestra casa sea lugar de fe, de consuelo y de esperanza. Amen.",
-                   "en":  "Lord Jesus, I consecrate my family to Your Heart. Pour Your peace upon our home, heal our wounds, unite our hearts, and teach us to live in forgiveness, truth, and charity. May our home become a place of faith, consolation, and hope. Amen."
+                   "es":  "Señor, haz de nuestra familia una comunidad que sirva más allá de sí misma. Muéstranos cómo compartir tiempo, talentos y recursos con quienes necesitan compañía y apoyo. Amén.",
+                   "en":  "Lord, make our family a community that serves beyond itself. Show us how to share our time, gifts, and resources with those who need companionship and support. Amen."
                },
     "act":  {
-                "es":  "Hoy realiza un gesto concreto por tu familia relacionado con este tema: una conversacion en paz, una reconciliacion, una ayuda practica o una oracion compartida de al menos tres minutos.",
-                "en":  "Today do one concrete act for your family connected to this theme: a peaceful conversation, reconciliation, practical help, or at least three minutes of shared prayer."
+                "es":  "Elijan juntos un gesto sencillo de servicio fuera de casa: preparar algo para un vecino, visitar a alguien o colaborar con su comunidad, según el tiempo y las posibilidades de todos.",
+                "en":  "Choose a simple act of service outside the home together: prepare something for a neighbor, visit someone, or help your community, according to everyone's time and abilities."
             }
 }

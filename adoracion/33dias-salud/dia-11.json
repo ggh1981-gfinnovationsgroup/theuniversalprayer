@@ -1,36 +1,40 @@
-﻿{
-    "n":  11,
-    "theme":  {
-                  "es":  "Perdon que libera el corazon",
-                  "en":  "Forgiveness that frees the heart"
-              },
-    "verse":  {
-                  "es":  "\"Si perdonan, su Padre celestial tambien los perdonara.\"",
-                  "en":  "\"For if you forgive other people when they sin against you, your heavenly Father will also forgive you.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 11. El resentimiento es una herida que insistes en mantener abierta. Cada vez que recuerdas lo que te hicieron, vuelves a sangrar en el mismo lugar. No porque sea justo. Porque es lo único que sabes hacer.",
-                                  "Perdonar no es debilidad. No es darte a ti mismo permiso. No es decir que estuvo bien lo que pasó. Es precisamente lo opuesto: es soltar el derecho a cobrar, es sanarrte completamente de la deuda.",
-                                  "La Escritura de hoy dice: \"Si perdonan, su Padre celestial también los perdonará.\" Observa: el perdón no es generosidad del ofendido. Es promesa del Padre. Mientras mantengas la deuda, eres carcelero de ti mismo.",
-                                  "Hoy pregunta: ?A quién sigo castigando dándome veneno a mí? La boca de quien te hirió hace años no te afecta hoy. Tu resentimiento sí. Eres tú quien perpetúas.",
-                                  "Perdón no es olvido. Es libertad. Comienza hoy a soltar, no por el otro, sino por ti. Por tu cuerpo que puede dejar de estar en guerra. Por tu corazón que merece vivir en paz."
-                              ],
-                       "en":  [
-                                  "Day 11. Resentment is a wound you insist on keeping open. Every time you remember what was done to you, you bleed again in the same place. Not because it is just. Because it is all you know how to do.",
-                                  "Forgiveness is not weakness. It is not giving yourself permission. It is not saying what happened was okay. It is precisely the opposite: it is releasing the right to collect payment, it is healing yourself completely from the debt.",
-                                  "Today's Scripture says: \"For if you forgive other people when they sin against you, your heavenly Father will also forgive you.\" Notice: forgiveness is not generosity from the one offended. It is a promise from the Father. While you hold the debt, you are a jailer of yourself.",
-                                  "Today ask: Whom am I still punishing by poisoning myself? The mouth of whoever hurt you years ago does not affect you today. Your resentment does. You are the one perpetuating it.",
-                                  "Forgiveness is not forgetting. It is freedom. Begin today to release, not for the other, but for you. For your body that can stop being at war. For your heart that deserves to live in peace."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 11,
+  "theme": {
+    "es": "Perdon que libera el corazon",
+    "en": "Forgiveness that frees the heart"
+  },
+  "verse": {
+    "es": "«Sed buenos y compasivos unos con otros, perdonándoos mutuamente como Dios os perdonó en Cristo.»",
+    "en": "\"Be kind and compassionate to one another, forgiving each other, just as in Christ God forgave you.\"",
+    "ref": "Ef 4, 32"
+  },
+  "reflection": {
+    "es": [
+      "Una herida puede volver a la memoria mucho después de lo ocurrido. Recordarla no significa que elijas sufrir ni que quieras castigar a nadie; puede ser parte de cómo la mente reconoce el daño. No tienes que borrar el recuerdo para empezar a cuidar de ti.",
+      "El perdón, cuando es posible, no dice que lo ocurrido estuvo bien. Tampoco elimina consecuencias ni garantiza que el dolor desaparezca. Para algunas personas es una decisión que madura con tiempo; para otras, no es lo primero que necesitan. La seguridad y el apoyo pueden venir antes.",
+      "Perdonar no es reconciliarse. Puedes conservar distancia, pedir que se respete un límite y acudir a la justicia. Si la persona sigue amenazándote o controlándote, busca apoyo especializado; no tienes que hablar con ella para demostrar que has avanzado.",
+      "La promesa de Efesios invita a una vida de compasión, pero no convierte el perdón en una condición para que Dios te cuide. Si hoy no puedes perdonar, puedes llevar a Dios tu enojo y tu duelo con honestidad. No estás obligado a sentir paz antes de pedir ayuda.",
+      "Sanar el cuerpo y el corazón puede requerir atención profesional, vínculos seguros y cambios concretos. El perdón no es un tratamiento médico ni garantiza que desaparezcan los síntomas. Si el recuerdo altera tu sueño o tu vida diaria, un profesional puede ayudarte a encontrar recursos adecuados.",
+      "Si tú dañaste a alguien, la compasión incluye reconocerlo, aceptar sus límites y reparar lo posible sin exigir que te perdone. Si alguien te dañó a ti, la responsabilidad de cambiar no te corresponde a ti. Puedes cuidar tu propio proceso sin cargar con el de esa persona.",
+      "Hoy no tienes que resolver toda una historia. Puedes escribir qué necesitas para sentirte más seguro, hablar con alguien de confianza o simplemente dejar el tema para otro momento. La libertad quizá comience con un paso de cuidado, no con una declaración de perdón."
+    ],
+    "en": [
+      "A wound may return to memory long after something happened. Remembering it does not mean you choose to suffer or want to punish anyone; it can be part of how the mind recognizes harm. You do not have to erase the memory in order to begin caring for yourself.",
+      "Forgiveness, when it is possible, does not say that what happened was acceptable. It does not remove consequences or guarantee that pain will disappear. For some people it is a decision that develops over time; for others, it is not the first thing they need. Safety and support may come first.",
+      "Forgiving is not reconciling. You can keep your distance, ask that a boundary be respected, and seek justice. If the person is still threatening or controlling you, seek specialized support; you do not have to speak with them to prove you have made progress.",
+      "Ephesians invites people into a compassionate life, but it does not make forgiveness a condition for God to care for you. If you cannot forgive today, you can bring your anger and grief to God honestly. You are not required to feel peaceful before asking for help.",
+      "Healing body and heart may require professional care, safe relationships, and concrete changes. Forgiveness is not a medical treatment and does not guarantee that symptoms will disappear. If memories affect your sleep or daily life, a professional can help you find appropriate resources.",
+      "If you harmed someone, compassion includes acknowledging it, accepting their boundaries, and making amends where possible without demanding forgiveness. If someone harmed you, changing that person's behavior is not your responsibility. You can care for your own process without carrying theirs.",
+      "Today you do not have to resolve an entire story. You can write down what you need to feel safer, talk with someone you trust, or leave the subject for another time. Freedom may begin with one act of care, not a declaration of forgiveness."
+    ]
+  },
+  "prayer": {
+    "es": "Señor, ayúdame a soltar el resentimiento sin negar lo que pasó ni forzar una reconciliación. Dame libertad para poner límites y recibir apoyo mientras sana mi corazón. Amén.",
+    "en": "Lord, help me loosen resentment without denying what happened or forcing reconciliation. Give me freedom to set boundaries and receive support as my heart heals. Amen."
+  },
+  "act": {
+    "es": "Si hoy te resulta seguro, escribe qué necesitarías para sentirte acompañado y protegido respecto a una herida. No hace falta nombrar a la persona ni decidir si la has perdonado. Si escribirlo te angustia, detén el ejercicio y busca apoyo.",
+    "en": "If it feels safe today, write down what you would need to feel supported and protected regarding a wound. You do not have to name the person or decide whether you have forgiven them. If writing brings distress, stop the exercise and seek support."
+  }
 }

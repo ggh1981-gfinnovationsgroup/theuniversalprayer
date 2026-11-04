@@ -1,36 +1,40 @@
-﻿{
-    "n":  8,
-    "theme":  {
-                  "es":  "Romper ansiedad en Cristo",
-                  "en":  "Breaking anxiety in Christ"
-              },
-    "verse":  {
-                  "es":  "\"No se angustien por nada; presenten sus peticiones a Dios.\"",
-                  "en":  "\"Do not be anxious about anything... and the peace of God will guard your hearts and your minds in Christ Jesus.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 8. La ansiedad es una voz que grita \"?Y si lo pierdes todo?\" Todo el día. La pregunta no es cómo silenciarla. Es cómo responder: \"Y si tengo a Dios, ?qué más necesito?\"",
-                                  "Muchos intentamos controlar la ansiedad con la mente. Pero la ansiedad es del cuerpo. Vive en los hombros tensos, en el pecho apretado, en el vértigo de no saber. No se conquista pensando. Se disuelve respirando.",
-                                  "La Escritura de hoy dice: \"No se angustien por nada.\" No dice: \"no tengan miedo.\" Dice: no se angustien. La diferencia es grande. Puedes tener miedo de un león y actuar con coraje. La angustia es la que te paraliza.",
-                                  "En Cristo, tu identidad no es \"persona ansiosa.\" Eso es solo un síntoma, una alarma falsa del cuerpo. Cristo nombra lo que eres realmente: amado, digno, seguro en Él.",
-                                  "Hoy, cuando sientas la ansiedad, llevá a la presencia de Jesús. No como quien esconde el miedo, sino como quien trae el miedo a alguien que es más fuerte que el miedo. Ahí comienza el quiebre."
-                              ],
-                       "en":  [
-                                  "Day 8. Anxiety is a voice that screams \"What if you lose everything?\" all day long. The question is not how to silence it. It is how to answer: \"And if I have God, what else do I need?\"",
-                                  "Many of us try to control anxiety with the mind. But anxiety is of the body. It lives in tense shoulders, tight chest, the vertigo of not knowing. It is not conquered by thinking. It is dissolved by breathing.",
-                                  "Today's Scripture says: \"Do not be anxious about anything.\" It does not say: do not be afraid. It says: do not be anxious. The difference is large. You can fear a lion and act with courage. Anxiety is what paralyzes.",
-                                  "In Christ, your identity is not \"anxious person.\" That is just a symptom, a false alarm from your body. Christ names what you truly are: beloved, worthy, safe in Him.",
-                                  "Today, when you feel anxiety, bring it to the presence of Jesus. Not as one who hides fear, but as one who brings fear to someone who is stronger than fear. There the shift begins."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 8,
+  "theme": {
+    "es": "Romper ansiedad en Cristo",
+    "en": "Breaking anxiety in Christ"
+  },
+  "verse": {
+    "es": "«No os inquietéis por cosa alguna; antes bien, en toda ocasión, presentad vuestras peticiones a Dios.»",
+    "en": "\"Do not worry about anything, but in everything, by prayer and petition, present your requests to God.\"",
+    "ref": "Flp 4, 6-7"
+  },
+  "reflection": {
+    "es": [
+      "La ansiedad puede hacer que una pregunta vuelva una y otra vez: '¿Y si algo sale mal?'. No siempre puedes responderla con certeza, y no tienes que reprocharte que aparezca. La oración de Filipenses ofrece palabras para presentar a Dios lo que preocupa, no una orden de dejar de sentir.",
+      "Pablo invita a compartir peticiones y agradecer. Esa práctica puede acompañar el miedo, pero no garantiza que un problema desaparezca ni reemplaza pasos concretos. Puedes orar y también llamar a tu médico, pedir apoyo económico o hablar con alguien sobre una situación que te preocupa.",
+      "La ansiedad puede involucrar pensamientos, emociones y respuestas físicas: tensión, inquietud o aceleración del corazón. Respirar despacio ayuda a algunas personas a regularse; a otras les incomoda o no les basta. No hay una técnica única, y ningún ejercicio debe obligarte a ignorar síntomas preocupantes.",
+      "Si te sirve, apoya los pies en el suelo y describe el lugar donde estás. También puedes beber agua, salir de una situación abrumadora si es seguro o pedir a alguien que permanezca contigo. Elige lo que te ayude ahora; no tienes que demostrar que puedes calmarte por tu cuenta.",
+      "La ansiedad no define todo lo que eres, pero tampoco es una alarma que siempre resulte falsa. Puede tener motivos reales y merece ser escuchada con cuidado. Tener ansiedad no reduce tu dignidad ni significa que hayas confiado poco en Dios.",
+      "Si la angustia se repite, limita tu vida o dificulta dormir y trabajar, habla con un profesional de salud. La terapia y, cuando corresponde, la medicación son opciones legítimas. Si sientes que podrías hacerte daño o estás en peligro, busca ayuda urgente y quédate acompañado.",
+      "Ante Jesús puedes llevar el miedo sin adornarlo: 'Esto me preocupa y necesito ayuda'. Quizá la paz de hoy sea un plan, una consulta o una persona que te escuche. Si todavía no sientes alivio, no has fracasado en la oración: sigue buscando el apoyo que necesitas."
+    ],
+    "en": [
+      "Anxiety can make a question return again and again: 'What if something goes wrong?' You may not be able to answer it with certainty, and you do not have to blame yourself for having it. Philippians offers words for bringing worries to God, not an order to stop feeling.",
+      "Paul invites people to share their requests and give thanks. That practice may accompany fear, but it does not guarantee that a problem will disappear or replace practical steps. You can pray and also call your doctor, seek financial support, or talk with someone about a concern.",
+      "Anxiety can involve thoughts, emotions, and physical responses: tension, restlessness, or a racing heart. Slow breathing helps some people regulate; others find it uncomfortable or insufficient. There is no single technique, and no exercise should require you to ignore concerning symptoms.",
+      "If it helps, place your feet on the floor and describe where you are. You might also drink water, leave an overwhelming situation if it is safe, or ask someone to stay with you. Choose what helps now; you do not have to prove you can calm yourself alone.",
+      "Anxiety does not define all that you are, but neither is it an alarm that is always false. It may have real causes and deserves careful attention. Having anxiety does not diminish your dignity or mean you have trusted God too little.",
+      "If distress keeps returning, limits your life, or makes it hard to sleep or work, speak with a health professional. Therapy and, when appropriate, medication are legitimate options. If you feel you might harm yourself or are in danger, seek urgent help and stay with someone.",
+      "Before Jesus, you can bring fear without dressing it up: 'This worries me, and I need help.' Today's peace may be a plan, an appointment, or someone who listens. If you still do not feel relief, you have not failed at prayer; keep seeking the support you need."
+    ]
+  },
+  "prayer": {
+    "es": "Señor Jesús, acompáñame cuando llegue la ansiedad. Ayúdame a buscar apoyo, cuidar mi cuerpo sin miedo y recordar que no tengo que resolverlo todo en este instante. Amén.",
+    "en": "Lord Jesus, stay with me when anxiety comes. Help me seek support, care for my body without fear, and remember that I do not have to solve everything right now. Amen."
+  },
+  "act": {
+    "es": "Cuando suba la ansiedad, apoya los pies en el suelo y nombra con calma dónde estás y qué necesitas en este momento. Si la ansiedad interfiere mucho con tu vida, busca atención profesional.",
+    "en": "When anxiety rises, place your feet on the floor and calmly name where you are and what you need right now. If anxiety is seriously affecting your life, seek professional care."
+  }
 }

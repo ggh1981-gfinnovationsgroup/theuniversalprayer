@@ -1,36 +1,40 @@
-﻿{
-    "n":  9,
-    "theme":  {
-                  "es":  "Dios en la terapia y medicina",
-                  "en":  "God through therapy and medicine"
-              },
-    "verse":  {
-                  "es":  "\"Honra al medico por los servicios que presta.\"",
-                  "en":  "\"Honor physicians for their services, for the Lord created them; their gift of healing comes from the Most High.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 9. Honrar al médico, al terapeuta, al psicólogo es honrar las manos de Dios en la tierra. Rechazar la ayuda profesional no es fe. Es suerte. Fe es reconocer que Dios sana también a través de la sabiduría que transmite a sus criaturas.",
-                                  "Hay roca en el pecho que crees que es espiritual pero es más viejo: es orgullo. \"No necesito terapeuta.\" \"No necesito medicinas.\" \"Dios es suficiente.\" Sí, Dios es suficiente. Y el camino que te da es precisamente el de la medicina y la ayuda.",
-                                  "La Escritura de hoy dice: \"Honra al médico por los servicios que presta.\" Esto es literalmente orden. No sólo es permitido, es recomendado. Es el señor enseñando que usar lo disponible es sabiduría, no falta de fe.",
-                                  "Hoy reflexiona: ?de dónde viene mi resistencia a recibir ayuda profesional? ?Es realmente fe o es vergüenza disfrazada? La verdadera fe dice: Dios me cuida a través del terapeuta, de la medicina, de la ciencia que creó.",
-                                  "Tómate tiempo hoy para honrar y agendar con quien necesites. No es renunci a Cristo. Es permitir que Cristo te sane con las herramientas que puso a tu alcance."
-                              ],
-                       "en":  [
-                                  "Day 9. Honoring the doctor, the therapist, the psychologist is honoring God's hands on earth. Rejecting professional help is not faith. It is gambling. Faith is recognizing that God also heals through the wisdom He transmits to His creatures.",
-                                  "There is a stone in your chest that you believe is spiritual but is older: it is pride. \"I do not need a therapist.\" \"I do not need medicine.\" \"God is enough.\" Yes, God is enough. And the path He gives you is precisely through medicine and help.",
-                                  "Today's Scripture says: \"Honor physicians for their services, for the Lord created them.\" This is literally an order. It is not just permitted; it is recommended. It is the Lord teaching that using what is available is wisdom, not lack of faith.",
-                                  "Today reflect: Where does my resistance to professional help come from? Is it truly faith or is it shame disguised? Real faith says: God heals me through the therapist, through medicine, through the science He created.",
-                                  "Take time today to honor and schedule with whom you need. It is not renouncing Christ. It is allowing Christ to heal you with the tools He placed within your reach."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 9,
+  "theme": {
+    "es": "Dios en la terapia y medicina",
+    "en": "God through therapy and medicine"
+  },
+  "verse": {
+    "es": "«Honra al médico como merece, pues también a él lo creó el Señor.»",
+    "en": "\"Honor the physician for his services, for he too has been created by the Lord.\"",
+    "ref": "Eclo 38, 1"
+  },
+  "reflection": {
+    "es": [
+      "El cuidado de la salud puede incluir atención médica, terapia, apoyo espiritual y ayuda de la comunidad. Para muchas personas, pedir apoyo profesional es un paso valioso; otras enfrentan costos, listas de espera, experiencias difíciles o dudas legítimas. Ninguna de esas circunstancias demuestra que les falte fe.",
+      "El libro del Eclesiástico invita a honrar al médico por su servicio. La cita reconoce el valor del conocimiento y del cuidado; no promete que cada tratamiento funcione ni que todo profesional sea infalible. Puedes pedir explicaciones, buscar una segunda opinión y participar en las decisiones que afectan tu cuerpo.",
+      "La terapia y los medicamentos pueden ser opciones legítimas para distintas necesidades físicas y emocionales. Aceptarlos no significa abandonar la oración. Tampoco tienes que iniciar un tratamiento solo por presión ajena: conversa con un profesional cualificado sobre beneficios, riesgos, alternativas y lo que te preocupa.",
+      "Si ya sigues un tratamiento, no lo suspendas ni cambies una dosis por tu cuenta. Anota preguntas y consulta a quien te atiende, especialmente si notas efectos secundarios. Si una indicación no te resulta accesible o segura, dilo; el equipo puede ayudarte a pensar otros pasos.",
+      "Algunas personas también recurren a prácticas espirituales o complementarias. Si tomas suplementos, hierbas o remedios, informa al profesional de salud, porque pueden afectar otros tratamientos. La conversación abierta no obliga a renunciar a tus creencias: ayuda a cuidar tu seguridad con información completa.",
+      "La oración puede darte palabras, compañía y esperanza durante una consulta o un tratamiento. No sirve para predecir el resultado ni para medir si has confiado suficientemente. Puedes pedir por el equipo que te atiende, expresar tus temores y solicitar que alguien de confianza te acompañe.",
+      "Hoy no necesitas demostrar nada. Si ya recibes atención, prepara una pregunta para tu próxima consulta; si buscas ayuda, averigua una opción posible y accesible. Si todavía no estás listo, puedes hablar con alguien de confianza sobre lo que te detiene, sin llamarte orgulloso ni culpable."
+    ],
+    "en": [
+      "Health care may include medical treatment, therapy, spiritual support, and help from the community. For many people, seeking professional support is a valuable step; others face costs, waiting lists, difficult experiences, or legitimate questions. None of these circumstances proves that they lack faith.",
+      "The book of Sirach invites readers to honor physicians for their service. The verse recognizes the value of knowledge and care; it does not promise every treatment will work or every professional is infallible. You can ask for explanations, seek a second opinion, and take part in decisions affecting your body.",
+      "Therapy and medication can be legitimate options for different physical and emotional needs. Accepting them does not mean abandoning prayer. Nor do you have to begin a treatment just because someone pressures you: discuss benefits, risks, alternatives, and your concerns with a qualified professional.",
+      "If you already follow a treatment, do not stop it or change a dose on your own. Write down questions and consult your clinician, especially if you notice side effects. If a recommendation feels inaccessible or unsafe, say so; the care team can help you consider other steps.",
+      "Some people also use spiritual or complementary practices. If you take supplements, herbs, or remedies, tell your health professional because they may affect other treatments. Open conversation does not require giving up your beliefs; it helps protect your safety with complete information.",
+      "Prayer can offer words, companionship, and hope during an appointment or treatment. It cannot predict the outcome or measure whether you trusted enough. You can pray for your care team, express your fears, and ask someone you trust to accompany you.",
+      "You do not need to prove anything today. If you already receive care, prepare a question for your next appointment; if you are seeking help, find one possible and accessible option. If you are not ready yet, talk with someone you trust about what is holding you back without calling yourself proud or guilty."
+    ]
+  },
+  "prayer": {
+    "es": "Dios de vida, bendice a quienes me atienden y dame sabiduría para participar en mi cuidado. Ayúdame a recibir terapia y medicina con esperanza, haciendo preguntas y buscando orientación cuando la necesite. Amén.",
+    "en": "God of life, bless those who care for me and give me wisdom to take part in my care. Help me receive therapy and medicine with hope, ask questions, and seek guidance when I need it. Amen."
+  },
+  "act": {
+    "es": "Anota una pregunta sobre tu tratamiento o medicación para conversar con tu profesional de salud. No suspendas ni cambies una indicación médica sin consultarlo.",
+    "en": "Write down one question about your treatment or medication to discuss with your health professional. Do not stop or change medical instructions without consulting them."
+  }
 }

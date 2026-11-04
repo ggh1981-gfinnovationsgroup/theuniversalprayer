@@ -1,36 +1,40 @@
-﻿{
-    "n":  13,
-    "theme":  {
-                  "es":  "Vencer agotamiento y estres",
-                  "en":  "Overcoming burnout and stress"
-              },
-    "verse":  {
-                  "es":  "\"Aprendan de mi, que soy manso y humilde de corazon.\"",
-                  "en":  "\"Learn from me, for I am gentle and humble in heart.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 13. El agotamiento no es debilidad. Es información. Es tu cuerpo gritando: \"Paro ya, o paro yo.\" La pregunta no es cómo seguir funcionando. Es por qué insistes en funcionar así.",
-                                  "El estrés crónico es muerte lenta. Es hermoso creer que se muere en una batalla de una vez. Pero el estrés mata gota a gota, célula a célula, hasta que un día descubres que no hay nadie adentro.",
-                                  "La Escritura de hoy dice: \"Aprendan de mí, que soy manso y humilde de corazón.\" Manso es lo opuesto a salvaje. Manso es lo opuesto a furioso. Manso es: fluir. No forcejear. No gastar energía en luchar contra lo inevitable.",
-                                  "Hoy honestamente: ?a qué le dices que sí cuando debería ser no? ?Qué promesas mantuviste que estaban matando tu salud? El burnout no es accidente. Es patrón. Es el cuerpo diciendo: basta.",
-                                  "Comienza hoy a practicar límites como práctica espiritual. No como egoísmo. Como forma de honrar lo que Dios te dio: este cuerpo, esta mente, esta energía finita que merece descanso."
-                              ],
-                       "en":  [
-                                  "Day 13. Exhaustion is not weakness. It is information. It is your body screaming: \"I stop now, or I stop you.\" The question is not how to keep functioning. It is why you insist on functioning this way.",
-                                  "Chronic stress is slow death. It is beautiful to believe that death comes in one battle at once. But stress kills drop by drop, cell by cell, until one day you discover there is no one left inside.",
-                                  "Today's Scripture says: \"Learn from me, for I am gentle and humble in heart.\" Gentle is the opposite of wild. Gentle is the opposite of furious. Gentle is: to flow. Not to wrestle. Not to waste energy fighting what is inevitable.",
-                                  "Today honestly: To what do you say yes when it should be no? What promises have you kept that were killing your health? Burnout is not accident. It is pattern. It is the body saying: enough.",
-                                  "Begin today to practice boundaries as spiritual practice. Not as selfishness. As a way to honor what God gave you: this body, this mind, this finite energy that deserves rest."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 13,
+  "theme": {
+    "es": "Vencer agotamiento y estres",
+    "en": "Overcoming burnout and stress"
+  },
+  "verse": {
+    "es": "«Aprended de mí, que soy manso y humilde de corazón.»",
+    "en": "\"Learn from me, for I am gentle and humble in heart.\"",
+    "ref": "Mt 11, 29"
+  },
+  "reflection": {
+    "es": [
+      "El agotamiento puede afectar el ánimo, la concentración, el sueño y la energía. No es una prueba de que seas débil ni permite saber, por sí solo, qué lo está causando. El trabajo, los cuidados familiares, la enfermedad y las preocupaciones económicas pueden acumularse sin que exista una salida sencilla.",
+      "Jesús invita a los cansados a acercarse y aprender de su mansedumbre. Esa invitación no te pide seguir trabajando hasta quebrarte ni promete que la carga desaparecerá. Puede recordarte que no tienes que medir tu dignidad por cuánto produces y que también puedes pedir alivio.",
+      "A veces hay límites que puedes poner: aplazar una tarea, compartir responsabilidades o decir que necesitas tiempo. Otras veces, por razones económicas, familiares o de seguridad, no es posible negarse sin más. Si ocurre así, intenta buscar apoyos realistas y no te culpes por condiciones que no controlas.",
+      "El cansancio persistente puede tener causas distintas, algunas médicas. Si dura, empeora o interfiere con tus actividades, consulta con un profesional de salud antes de asumir que se trata solo de estrés. Explica cuándo empezó y qué otros cambios has notado; no tienes que llegar con un diagnóstico.",
+      "Una pausa puede ayudar, aunque no sustituye cambios necesarios ni atención profesional. Si puedes, elige algo pequeño que te dé margen: pedir una comida, bajar una exigencia no urgente o acordar que alguien te releve. Si descansar te hace sentir culpa, puedes hablar de ello con alguien de confianza.",
+      "El apoyo espiritual puede acompañar el cuidado, no reemplazarlo. En oración, puedes contarle a Jesús lo que ya no puedes sostener y pedir ayuda para el próximo paso. No estás obligado a encontrar un significado positivo en el agotamiento ni a resolverlo todo a solas.",
+      "Hoy, en lugar de preguntarte por qué no puedes con más, considera qué carga pesa más y quién podría compartirla. Tal vez solo puedas tomar una pausa o escribir una pregunta para tu consulta. El cuidado puede empezar por reconocer honestamente tu límite actual."
+    ],
+    "en": [
+      "Exhaustion can affect mood, concentration, sleep, and energy. It is not proof that you are weak, and by itself it cannot tell you what is causing it. Work, caregiving, illness, and financial worries can accumulate without an easy way out.",
+      "Jesus invites the weary to come to him and learn his gentleness. That invitation does not ask you to keep working until you break or promise that the burden will disappear. It may remind you that your worth is not measured by how much you produce and that you can ask for relief.",
+      "Sometimes there are limits you can set: postpone a task, share responsibilities, or say that you need time. At other times, financial, family, or safety concerns make it impossible simply to refuse. If that is the case, try to find realistic support and do not blame yourself for circumstances you cannot control.",
+      "Persistent fatigue can have different causes, some of them medical. If it lasts, worsens, or interferes with your activities, consult a health professional before assuming it is only stress. Explain when it began and what else you have noticed; you do not need to arrive with a diagnosis.",
+      "A break may help, though it does not replace necessary changes or professional care. If you can, choose something small that creates room: ask for a meal, lower a nonurgent demand, or arrange for someone to relieve you. If rest brings guilt, you can talk about that with someone you trust.",
+      "Spiritual support can accompany care, not replace it. In prayer, you can tell Jesus what you can no longer carry and ask for help with the next step. You do not have to find a positive meaning in exhaustion or solve everything by yourself.",
+      "Today, instead of asking why you cannot handle more, consider which burden weighs most and who might share it. Perhaps you can only take a pause or write down a question for your appointment. Care may begin by honestly recognizing your current limit."
+    ]
+  },
+  "prayer": {
+    "es": "Jesús, ayúdame a reconocer el agotamiento antes de quebrarme. Dame valor para poner límites, compartir responsabilidades y buscar atención si el estrés está afectando mi salud. Amén.",
+    "en": "Jesus, help me notice exhaustion before I break down. Give me courage to set limits, share responsibilities, and seek care if stress is affecting my health. Amen."
+  },
+  "act": {
+    "es": "Identifica una exigencia que puedas posponer o compartir hoy. Tómate una pausa breve antes de continuar y observa si necesitas más apoyo para manejar el agotamiento.",
+    "en": "Identify one demand you can postpone or share today. Take a short break before continuing and notice whether you need more support to manage exhaustion."
+  }
 }

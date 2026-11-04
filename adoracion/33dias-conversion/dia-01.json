@@ -1,35 +1,40 @@
 ﻿{
     "n":  1,
     "theme":  {
-                  "es":  "Vigilar el corazon",
+                  "es":  "Vigilar el corazón",
                   "en":  "Watch over the heart"
               },
     "verse":  {
-                  "es":  "\"Sean sobrios y esten vigilantes. Su adversario el diablo ronda como leon rugiente buscando a quien devorar.\"",
+                  "es":  "«Sean sobrios y estén vigilantes. Su adversario, el diablo, ronda como león rugiente buscando a quién devorar.»",
                   "en":  "\"Be sober and vigilant. Your adversary the devil prowls around like a roaring lion, seeking someone to devour.\"",
-                  "ref":  ""
+                  "ref":  "1 Pe 5, 8"
               },
     "reflection":  {
                        "es":  [
-                                  "Dia 1. La tentación no aparece para destruirte. Aparece para mostrarte dónde te duele.",
-                                  "Trae esto al Santisimo sin mediaciones. Sin excusas. Sin palabras. Solo presencia.",
-                                  "La Escritura de hoy dice: \"Sean sobrios y esten vigilantes. Su adversario el diablo ronda como leon rugiente buscando a quien devorar.\" Dejala bajar a tu corazon y obedecela con paz.",
-                                  "La tentacion es real. Tu libertad para rechazarla también."
+                                  "Tal vez llegaste a esta adoración con una lucha muy concreta en la cabeza. Antes de pensar en cómo vencerla, quédate aquí un momento. Jesús no te recibe como un problema que hay que resolver; te recibe como eres, con tu deseo de cambiar y también con tu cansancio.",
+                                  "San Pedro escribe a una comunidad que conocía el miedo y la presión. Les pide estar despiertos, no vivir aterrorizados. La imagen del león recuerda que hay cosas que nos hacen daño cuando dejamos de mirarlas de frente: una costumbre, una conversación, una hora del día en que solemos bajar la guardia. Mirarlas con claridad no es desconfiar de todo; es aprender a cuidar lo que amamos.",
+                                  "Pedro no escribe para que sus lectores sospechen de cada persona ni para que vivan esperando una catástrofe. Les pide sobriedad y vigilancia porque el miedo puede dispersarnos y porque hay decisiones que conviene no dejar para el último segundo. Cuidar el corazón no es vivir alarmado; es prestar atención a lo que va formando nuestros deseos.",
+                                  "Mira al Santísimo y pregúntate despacio: ¿qué suele pasar justo antes de que me aleje de lo que quiero vivir? No necesitas dar una respuesta bonita. Quizá aparece el cansancio, la soledad o el teléfono en la mano. Nómbralo sin insultarte. La tentación puede ser insistente, pero no decide por ti.",
+                                  "Tal vez recuerdes una noche concreta en que una pequeña decisión te dejó más expuesto: quedarte despierto, no pedir compañía o volver a un contenido que ya conoces. No te quedes atrapado en el reproche. Pregúntate qué señal podrías reconocer un poco antes y qué ayuda práctica te habría servido.",
+                                  "Jesús conoce esa lucha desde dentro de tu historia. No tienes que demostrarle que puedes solo. Puedes pedirle luz para reconocer el momento de apartarte y humildad para llamar a alguien cuando te cueste hacerlo. Quédate un poco con Él; quizá hoy la vigilancia empiece simplemente por no esconderle la verdad."
+                                  ,"La palabra vigilar puede sonar dura si ya vives con miedo a equivocarte. No se trata de examinar cada pensamiento ni de esperar que algo malo ocurra. Se trata de proteger lo que valoras con límites razonables y de recordar que pedir apoyo a tiempo también es una decisión de libertad."
                               ],
                        "en":  [
-                                  "You are not here by accident. The Lord gives you this day to go deeper into \u0027Watch over the heart\u0027.",
-                                  "In silent prayer, receive this word for you: \u0027Watch your heart: the battle begins there.\u0027",
-                                  "Today\u0027s Scripture says: \"Be sober and vigilant. Your adversary the devil prowls around like a roaring lion, seeking someone to devour.\" Let it descend into your heart and obey it in peace.",
-                                  "If temptation or memory of sin appears, do not hide. Name it, reject the lie, and choose a concrete path of grace: prayer, accompaniment, sacrament, reparation.",
-                                  "Beginning: cut off one occasion of falling today. Conversion begins when you stop negotiating with what wounds you."
+                                  "Perhaps you came to adoration with a particular struggle on your mind. Before thinking about how to overcome it, stay here for a moment. Jesus does not receive you as a problem to solve; he receives you as you are, with your desire to change and your weariness too.",
+                                  "Saint Peter writes to a community that knew fear and pressure. He asks them to stay awake, not to live in terror. The image of the lion reminds us that some things can harm us when we stop looking at them honestly: a habit, a conversation, a time of day when we tend to let our guard down. Seeing clearly is not the same as distrusting everything; it is learning to care for what we love.",
+                                  "Peter is not writing so that his readers will suspect everyone or live expecting disaster. He asks them to be sober and watchful because fear can scatter us, and some choices should not be left until the last second. Guarding the heart is not living on alert; it is paying attention to what is shaping our desires.",
+                                  "Look toward the Blessed Sacrament and ask yourself slowly: what tends to happen just before I move away from the life I want to live? You do not need a polished answer. Perhaps it is tiredness, loneliness, or the phone in your hand. Name it without insulting yourself. Temptation can be persistent, but it does not make your choices for you.",
+                                  "Perhaps you remember a particular night when one small choice left you more exposed: staying awake, not asking for company, or returning to content you already know. Do not get trapped in reproach. Ask what sign you could notice a little earlier and what practical help would have served you.",
+                                  "Jesus knows this struggle within the story of your life. You do not have to prove that you can manage alone. You can ask him for light to recognize when to step away, and for the humility to call someone when that is hard. Stay with him a little while; perhaps today watchfulness begins simply by telling him the truth."
+                                  ,"The word watchfulness can sound harsh if you already live afraid of making a mistake. It does not mean examining every thought or waiting for something bad to happen. It means protecting what you value with reasonable boundaries and remembering that asking for support in time is also an act of freedom."
                               ]
                    },
     "prayer":  {
-                   "es":  "Senor Jesus, reconozco que sin Ti no puedo vencer la tentacion ni sanar mi pecado. Dame corazon humilde, fortaleza en la lucha, arrepentimiento sincero y perseverancia para caminar en tu gracia. Lavame, levantame y guame por senderos de santidad. Amen.",
-                   "en":  "Lord Jesus, I acknowledge that without You I cannot overcome temptation or heal from sin. Give me a humble heart, strength in the struggle, sincere repentance, and perseverance to walk in Your grace. Wash me, raise me, and guide me on paths of holiness. Amen."
+                   "es":  "Señor Jesús, aquí estoy con la lucha que a veces me cuesta nombrar. Ayúdame a verla con verdad y sin desesperación. Dame libertad para apartarme de lo que me hace daño y humildad para pedir compañía cuando no pueda solo. Quédate conmigo en este camino, también cuando vuelva a tropezar. Amén.",
+                   "en":  "Lord Jesus, I am here with the struggle I sometimes find hard to name. Help me see it truthfully and without despair. Give me freedom to step away from what harms me, and humility to ask for company when I cannot manage alone. Stay with me on this path, even when I stumble again. Amen."
                },
     "act":  {
-                "es":  "Hoy realiza un acto concreto de conversion: evita una ocasion de pecado, corta un contenido que te hace caer, busca reconciliacion, o agenda tu confesion sacramental.",
-                "en":  "Today do one concrete act of conversion: avoid an occasion of sin, cut off content that leads you to fall, seek reconciliation, or schedule your sacramental confession."
+                "es":  "Antes de que termine el día, identifica una situación que suele hacerte bajar la guardia y elige una salida concreta: dejar el teléfono fuera del cuarto, cambiar de lugar o escribirle a alguien de confianza. No intentes resolver toda tu vida hoy; cuida este paso.",
+                "en":  "Before the day ends, identify one situation that tends to catch you off guard and choose a concrete way out: leave your phone outside the room, move somewhere else, or message someone you trust. You do not have to solve your whole life today; take care of this one step."
             }
 }

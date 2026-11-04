@@ -1,36 +1,40 @@
-﻿{
-    "n":  17,
-    "theme":  {
-                  "es":  "Higiene digital del alma",
-                  "en":  "Digital hygiene of the soul"
-              },
-    "verse":  {
-                  "es":  "\"Todo lo verdadero, noble y puro: en eso piensen.\"",
-                  "en":  "\"Whatever is true, whatever is noble, whatever is pure... think about such things.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 17. Lo que ves por la pantalla no es inocuo. Entra en tu alma, se instala en tu cuerpo, afecta tu ritmo circadiano y tu capacidad de alegría real.",
-                                  "Pasas horas viendo vidas perfectas, traumas de otros, fake happiness, comparación infinita. Y luego te preguntas por qué estás ansioso, por qué duermes mal, por qué te sientes vacío.",
-                                  "La Escritura de hoy dice: \"Todo lo verdadero, noble y puro: en eso piensen.\" Es invitación a elegir conscientemente qué alimenta tu mente. Porque tu mente es templo. No es basurero.",
-                                  "No se trata de eliminar completamente las pantallas. Se trata de decir: ciertos contenidos me envenenan. Ciertos usuarios me drenán. Ciertas apps me roban presencia. Y elijo dejarlas ir.",
-                                  "Hoy une higiene digital con fe: apaga una app que te roba paz, muta a quien te compare, cierra una pestaña que te deja vacío. Tu cuerpo sanará cuando dejes de beber veneno diariamente."
-                              ],
-                       "en":  [
-                                  "Day 17. What you see on screens is not innocuous. It enters your soul, installs itself in your body, affects your circadian rhythm and your capacity for real joy.",
-                                  "You spend hours seeing perfect lives, others' traumas, fake happiness, infinite comparison. Then you wonder why you are anxious, why you sleep poorly, why you feel empty.",
-                                  "Today's Scripture says: \"Whatever is true, whatever is noble, whatever is pure... think about such things.\" It is an invitation to consciously choose what feeds your mind. Because your mind is a temple. It is not a garbage dump.",
-                                  "It is not about eliminating screens entirely. It is about saying: certain content poisons me. Certain users drain me. Certain apps steal my presence. And I choose to let them go.",
-                                  "Today join digital hygiene with faith: turn off an app that steals your peace, mute someone who makes you compare, close a tab that leaves you empty. Your body will heal when you stop drinking poison daily."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 17,
+  "theme": {
+    "es": "Higiene digital del alma",
+    "en": "Digital hygiene of the soul"
+  },
+  "verse": {
+    "es": "«Todo cuanto hay de verdadero, noble, justo, puro, amable y digno de alabanza, tenedlo en cuenta.»",
+    "en": "\"Whatever is true, whatever is noble, whatever is pure... think about such things.\"",
+    "ref": "Flp 4, 8"
+  },
+  "reflection": {
+    "es": [
+      "Las pantallas forman parte del trabajo, el descanso y las relaciones de muchas personas. No son buenas o malas por sí solas. A veces, ciertos contenidos o la costumbre de revisar el teléfono pueden afectar el ánimo o interrumpir el sueño; la experiencia cambia de una persona a otra.",
+      "En redes vemos fragmentos escogidos de la vida ajena, no la historia completa. Compararte con esas imágenes puede dejarte triste o insuficiente, aunque sepas que no muestran todo. No necesitas culparte por sentirlo ni abandonar de golpe una herramienta que también te conecta con otros.",
+      "Filipenses invita a prestar atención a lo verdadero, justo, amable y digno de alabanza. Puedes llevar esa idea a lo que eliges leer y compartir, sin convertirla en una lista para censurar tus pensamientos. También hay espacio para noticias difíciles, conversación honesta y preguntas incómodas.",
+      "Observa qué hábito te gustaría cambiar. Tal vez revisar notificaciones durante una comida te distrae, o mirar videos tarde dificulta acostarte. Prueba un límite concreto y pequeño: silenciar una alerta, mover una aplicación de lugar o dejar el teléfono fuera de alcance por unos minutos.",
+      "A veces el teléfono es necesario para trabajar, pedir ayuda, comunicarse o usar tecnologías de apoyo. No todas las personas pueden desconectarse igual. Escoge un límite compatible con tus responsabilidades y considera pedir a quienes te rodean que te contacten por otra vía si es urgente.",
+      "Un cambio digital puede ayudar a algunas personas a proteger su atención o descanso, pero no es una cura para la ansiedad, la depresión o el insomnio. Si esos problemas continúan, consulta con un profesional. No atribuyas toda dificultad a tu uso de pantallas.",
+      "Hoy elige una actividad fuera de la pantalla que te resulte accesible: conversar, escuchar música, caminar si puedes o descansar. Después nota si te hizo bien, sin esperar que resuelva todo. La tecnología puede seguir en tu vida con límites que tú puedas sostener."
+    ],
+    "en": [
+      "Screens are part of work, rest, and relationships for many people. They are not good or bad in themselves. At times, certain content or the habit of checking a phone may affect mood or interrupt sleep; the experience differs from person to person.",
+      "On social media we see selected pieces of other people's lives, not the whole story. Comparing yourself with those images may leave you sad or inadequate, even when you know they do not show everything. You do not have to blame yourself for feeling this or abruptly abandon a tool that also connects you to others.",
+      "Philippians invites people to attend to what is true, just, kind, and worthy of praise. You can bring that idea to what you choose to read and share without turning it into a list for policing your thoughts. There is also room for difficult news, honest conversation, and uncomfortable questions.",
+      "Notice one habit you might like to change. Perhaps checking notifications during a meal distracts you, or watching videos late makes bedtime harder. Try one concrete, small limit: mute an alert, move an app, or keep your phone out of reach for a few minutes.",
+      "Sometimes a phone is necessary for work, asking for help, communication, or assistive technology. Not everyone can disconnect in the same way. Choose a limit that fits your responsibilities, and consider asking people to use another way to reach you in an emergency.",
+      "A digital change may help some people protect attention or rest, but it is not a cure for anxiety, depression, or insomnia. If those difficulties continue, consult a professional. Do not attribute every problem to your screen use.",
+      "Today choose an activity away from a screen that is accessible to you: talk, listen to music, walk if you can, or rest. Notice afterward whether it helped, without expecting it to solve everything. Technology can remain part of your life with limits you can sustain."
+    ]
+  },
+  "prayer": {
+    "es": "Señor, ayúdame a usar la tecnología con libertad. Dame claridad para reconocer lo que me altera, valor para poner límites y sabiduría para volver a actividades y relaciones que me hacen bien. Amén.",
+    "en": "Lord, help me use technology freely. Give me clarity to notice what unsettles me, courage to set limits, and wisdom to return to activities and relationships that are good for me. Amen."
+  },
+  "act": {
+    "es": "Silencia una notificación no esencial durante una hora, especialmente si sueles mirar el teléfono antes de dormir. Observa cómo te sientes y ajusta el límite a tu realidad.",
+    "en": "Mute one nonessential notification for an hour, especially if you tend to check your phone before bed. Notice how it feels and adjust the boundary to your circumstances."
+  }
 }

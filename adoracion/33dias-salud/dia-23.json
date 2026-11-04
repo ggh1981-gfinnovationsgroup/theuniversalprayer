@@ -1,36 +1,40 @@
-﻿{
-    "n":  23,
-    "theme":  {
-                  "es":  "Acompanhar duelo y perdida",
-                  "en":  "Accompanying grief and loss"
-              },
-    "verse":  {
-                  "es":  "\"Bienaventurados los que lloran, porque seran consolados.\"",
-                  "en":  "\"Blessed are those who mourn, for they will be comforted.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 23. El duelo es lenguaje del amor. Mientras más profundo fue lo que se perdió, más profundo es el llanto. Permitir el duelo es permiso para haber amado de verdad.",
-                                  "Muchos creen que la sanación significa no llorar más. Mentira. La sanación significa llorar sin que el llanto te defina. Es recordar sin que el recuerdo te paralice. Es vivir con la ausencia sin que te asfixie.",
-                                  "La Escritura de hoy dice: \"Bienaventurados los que lloran, porque serán consolados.\" No dice que dejen de llorar. Dice que serán consolados. Que la lluvia, aunque dolorosa, es terreno donde crece lo nuevo.",
-                                  "Hoy honra lo que se fue: la salud anterior, la vida que esperabas, la versión de ti mismo que creiste que serías. Permite que muera completamente. Solo en ese duelo sincero nace quien realmente eres.",
-                                  "El dolor sincero te hace humano. Te acerca más a Dios que cualquier alegría fingida. No lo reprimas. No lo aceleres. Permite que te atraviese. En el otro lado está la paz verdadera."
-                              ],
-                       "en":  [
-                                  "Day 23. Grief is the language of love. The deeper what was lost, the deeper the cry. Allowing grief is permission to have loved truly.",
-                                  "Many believe that healing means not crying anymore. False. Healing means crying without being defined by the cry. It means remembering without paralysis. It means living with absence without suffocation.",
-                                  "Today's Scripture says: \"Blessed are those who mourn, for they will be comforted.\" It does not say you will stop mourning. It says you will be comforted. That the rain, though painful, is soil where the new grows.",
-                                  "Today honor what was lost: the health you had before, the life you expected, the version of yourself you thought you would be. Allow it to die completely. Only in that sincere grieving is born who you really are.",
-                                  "Sincere pain makes you human. It brings you closer to God than any false joy. Do not suppress it. Do not rush it. Allow it to pass through you. On the other side is true peace."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 23,
+  "theme": {
+    "es": "Acompanhar duelo y perdida",
+    "en": "Accompanying grief and loss"
+  },
+  "verse": {
+    "es": "«Bienaventurados los que lloran, porque serán consolados.»",
+    "en": "\"Blessed are those who mourn, for they will be comforted.\"",
+    "ref": "Mt 5, 4"
+  },
+  "reflection": {
+    "es": [
+      "El duelo puede llegar después de la muerte de alguien, un diagnóstico, un cambio en la capacidad física o el futuro que imaginabas. No siempre se ve como llanto; puede aparecer como enojo, alivio, confusión o cansancio. Ninguna reacción demuestra cuánto amaste ni si estás viviendo bien la pérdida.",
+      "En las bienaventuranzas, Jesús reconoce a quienes lloran y anuncia consuelo. No les pide esconder la tristeza ni promete un plazo para sentirse mejor. El consuelo puede llegar mediante Dios, la comunidad, el cuidado profesional o una presencia que no intenta explicar lo ocurrido.",
+      "El duelo no avanza en etapas iguales para todos. Hay momentos de calma y días en que una fecha, un lugar o una noticia renueva la ausencia. Eso no necesariamente significa que hayas retrocedido. Puedes vivir una vida significativa y seguir extrañando lo que perdiste.",
+      "No tienes que encontrar una lección, agradecer la pérdida ni despedirte de una versión anterior de ti para merecer esperanza. Puedes nombrar lo que extrañas y también lo que necesitas hoy. Si recordar te resulta demasiado intenso, puedes pausar la oración o elegir una forma distinta de acompañarte.",
+      "A quienes acompañan a alguien en duelo, quizá les sirva preguntar qué necesita la persona y escuchar sin decirle cómo debería sentirse. Ayuda concreta, como llevar comida o resolver una diligencia, puede aliviar un día difícil. No exijas una conversación ni una respuesta inmediata.",
+      "Si el dolor se vuelve insoportable, te impide atender necesidades básicas o viene acompañado de desesperanza, busca apoyo de una persona confiable y de un profesional. Pedir ayuda no resta valor a tu vínculo ni convierte la fe en insuficiente.",
+      "Hoy puedes recordar una pérdida de la manera que te resulte segura: contar una anécdota, hacer una oración, guardar silencio o dejar el tema para otro día. No hay un gesto correcto para todos. Por ahora, busca compañía y el cuidado que necesitas para atravesar esta jornada."
+    ],
+    "en": [
+      "Grief may come after someone's death, a diagnosis, a change in physical ability, or the future you imagined. It does not always look like crying; it may appear as anger, relief, confusion, or exhaustion. No reaction proves how much you loved or whether you are grieving correctly.",
+      "In the Beatitudes, Jesus recognizes those who mourn and promises comfort. He does not ask them to hide their sadness or give a timeline for feeling better. Comfort may come through God, community, professional care, or someone's presence without an explanation for what happened.",
+      "Grief does not move through the same stages for everyone. There may be calm moments and days when a date, place, or news renews the sense of absence. That does not necessarily mean you have gone backward. You can live a meaningful life and still miss what you lost.",
+      "You do not have to find a lesson, give thanks for the loss, or say goodbye to a former version of yourself in order to deserve hope. You can name what you miss and what you need today. If remembering feels too intense, you can pause the prayer or choose another way to accompany yourself.",
+      "For those accompanying someone who is grieving, it may help to ask what they need and listen without telling them how they should feel. Practical help, such as bringing food or handling an errand, can ease a difficult day. Do not demand a conversation or an immediate response.",
+      "If pain becomes unbearable, keeps you from meeting basic needs, or comes with hopelessness, seek support from someone you trust and a professional. Asking for help does not diminish your bond or mean faith is insufficient.",
+      "Today you can remember a loss in whatever way feels safe: share a story, say a prayer, sit in silence, or leave the subject for another day. There is no single right gesture for everyone. For now, seek company and the care you need to get through this day."
+    ]
+  },
+  "prayer": {
+    "es": "Señor, quédate cerca de quienes lloran una pérdida. No apresures su duelo; dales compañía, momentos de descanso y libertad para recordar y sentir a su propio ritmo. Amén.",
+    "en": "Lord, stay near those grieving a loss. Do not hurry their mourning; give them companionship, moments of rest, and freedom to remember and feel at their own pace. Amen."
+  },
+  "act": {
+    "es": "Recuerda hoy a alguien que has perdido con un gesto sencillo: mirar una foto, contar una anécdota o rezar por esa persona. Si el duelo pesa demasiado, busca compañía.",
+    "en": "Remember someone you have lost with a simple gesture today: look at a photo, share a story, or pray for them. If grief feels too heavy, seek companionship."
+  }
 }

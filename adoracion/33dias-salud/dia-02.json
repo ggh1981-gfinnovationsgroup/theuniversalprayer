@@ -1,36 +1,40 @@
-﻿{
-    "n":  2,
-    "theme":  {
-                  "es":  "Descanso que sana",
-                  "en":  "Healing rest"
-              },
-    "verse":  {
-                  "es":  "\"Vengan a mi todos los que estan cansados y agobiados.\"",
-                  "en":  "\"Come to me, all you who are weary and burdened, and I will give you rest.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 2. El descanso no es pereza ni fracaso: es la única lengua en la que tu cuerpo dice la verdad. Quien no descansa no oye nada de sí mismo.",
-                                  "Vivimos como si el valor viniera de la productividad. Pero tu cuerpo sabe: si no paras, eventualmente para contigo. El cansancio no es amenaza; es información que ignorar te cuesta más de lo que crees.",
-                                  "La Escritura de hoy dice: \"Vengan a mi, todos ustedes que están cansados y agobiados, y yo los haré descansar.\" Jesús no ofrece más tareas. Ofrece pausa. Ofrece silencio. Ofrece el derecho a simplemente ser.",
-                                  "El descanso verdadero no es vacío ni culpa. Es cuando permites que tu mente suelte lo que carga, cuando tu cuerpo deja de luchar, cuando aceptas que hoy no necesitas demostrar nada a nadie.",
-                                  "Hoy elige dormir mejor, pausar más tiempo, dejar una tarea incompleta. No como debilidad, sino como acto de fe en que tu valor no depende de lo que produzcas."
-                              ],
-                       "en":  [
-                                  "Day 2. Rest is not laziness or failure: it is the only language in which your body tells the truth. Whoever does not rest hears nothing of themselves.",
-                                  "We live as if our worth came from productivity. But your body knows: if you do not stop, eventually you stop working entirely. Weariness is not a threat; it is information that ignoring costs you more than you realize.",
-                                  "Today's Scripture says: \"Come to me, all you who are weary and burdened, and I will give you rest.\" Jesus does not offer more tasks. He offers pause. He offers silence. He offers the right to simply be.",
-                                  "True rest is not emptiness or guilt. It is when you allow your mind to release what it carries, when your body stops fighting, when you accept that today you need not prove anything to anyone.",
-                                  "Today choose to sleep better, pause longer, leave one task unfinished. Not as weakness, but as an act of faith that your worth does not depend on what you produce."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 2,
+  "theme": {
+    "es": "Descanso que sana",
+    "en": "Healing rest"
+  },
+  "verse": {
+    "es": "\"Vengan a mí todos los que están cansados y agobiados.\"",
+    "en": "\"Come to me, all you who are weary and burdened, and I will give you rest.\"",
+    "ref": "Mt 11, 28"
+  },
+  "reflection": {
+    "es": [
+      "La noche llega y todavía queda algo por hacer. Quizá conoces esa negociación: terminar una cosa más y luego descansar, aunque el cuerpo ya te esté pidiendo parar. A veces el cansancio no se arregla con una frase; pero puedes dejar que Jesús te encuentre justo ahí, sin fingir que tienes fuerzas.",
+      "Cuando Jesús invita a los cansados a acercarse, no les pregunta primero cuánto han producido. Les ofrece estar con Él. No siempre podremos dormir bien ni dejar todas las preocupaciones a un lado; descansar puede empezar con una pausa pequeña y con permiso para no resolverlo todo esta noche.",
+      "El reposo tampoco es idéntico para todos. A veces significa acostarse; otras, pedir que alguien comparta una tarea, adaptar el ritmo a una enfermedad o buscar ayuda para el insomnio. Si el cansancio persiste o afecta tu vida, hablar con un profesional de salud también es una forma sensata de cuidarte.",
+      "Ante el Santísimo, prueba a nombrar lo que te pesa sin convertirlo en una lista de fallos. Puedes decir: «Jesús, estoy cansado y no sé cómo soltar esto». Después respira con calma. No tienes que ganarte el derecho a estar quieto.",
+      "Al salir, elige una sola cosa que pueda esperar y una que te ayudaría a descansar un poco mejor. Si no puedes cambiar tu noche, no te culpes por eso. Recibe el descanso posible, y deja que alguien te acompañe cuando lo necesites.",
+      "Para algunas personas, descansar requiere ayuda práctica: un familiar que releve al cuidador, una consulta por dolor nocturno o un horario ajustado al tratamiento. Si cuidas de alguien, pedir apoyo no significa que lo ames menos. El cuerpo tiene necesidades reales, y atenderlas puede requerir una red, no solo fuerza de voluntad.",
+      "La invitación de Jesús no promete que esta noche desaparezca el insomnio ni que mañana despiertes sin dolor. Te ofrece compañía en medio de una necesidad humana. Puedes agradecer cualquier alivio que llegue y, si no llega, seguir buscando atención y apoyo sin pensar que has orado mal."
+    ],
+    "en": [
+      "Night comes, and there is still something left to do. Perhaps you know that bargain: finish one more thing and then rest, even though your body has already asked you to stop. Tiredness is not always fixed by a sentence, but Jesus can meet you there without asking you to pretend you have strength.",
+      "When Jesus invites the weary to come to him, he does not first ask how much they have produced. He offers his company. We may not always sleep well or set every worry aside; rest can begin with a small pause and permission not to solve everything tonight.",
+      "Rest does not look the same for everyone. Sometimes it means going to bed; sometimes it means asking someone to share a task, adapting your pace to an illness, or seeking help for insomnia. If exhaustion persists or affects your life, speaking with a health professional is also a sensible way to care for yourself.",
+      "Before the Blessed Sacrament, try naming what weighs on you without turning it into a list of failures. You might say, \"Jesus, I am tired and I do not know how to let this go.\" Then breathe calmly. You do not have to earn the right to be still.",
+      "When you leave, choose one thing that can wait and one thing that might help you rest a little better. If you cannot change your night, do not blame yourself for that. Receive whatever rest is possible, and let someone accompany you when you need it.",
+      "For some people, rest requires practical help: a relative relieving a caregiver, a consultation about pain at night, or a schedule adapted to treatment. If you care for someone, asking for support does not mean you love them less. Bodies have real needs, and meeting them may require a network, not just willpower.",
+      "Jesus' invitation does not promise that insomnia will disappear tonight or that you will wake tomorrow without pain. It offers companionship amid a human need. You can be grateful for any relief that comes and, if it does not come, keep seeking care and support without thinking you prayed incorrectly."
+    ]
+  },
+  "prayer": {
+    "es": "Jesús, estoy cansado y me cuesta detenerme. Enséñame a recibir el descanso posible sin culpa y a pedir ayuda si no logro recuperarme. Acompaña también a quienes pasan la noche despiertos o viven con un cansancio que no desaparece. Amén.",
+    "en": "Jesus, I am tired and find it hard to stop. Teach me to receive the rest that is possible without guilt and ask for help if I cannot recover. Stay with those who lie awake or live with lasting exhaustion. Amen."
+  },
+  "act": {
+    "es": "Esta noche, elige una hora razonable para empezar a descansar y prepara lo que te ayude a bajar el ritmo. Si el sueño sigue siendo difícil, coméntalo con un profesional de salud.",
+    "en": "Tonight, choose a reasonable time to begin winding down and prepare what helps you slow down. If sleep remains difficult, discuss it with a health professional."
+  }
 }

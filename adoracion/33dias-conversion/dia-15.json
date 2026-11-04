@@ -7,29 +7,34 @@
     "verse":  {
                   "es":  "\"Examiname, Dios, y conoce mi corazon.\"",
                   "en":  "\"Search me, O God, and know my heart.\"",
-                  "ref":  ""
+                  "ref":  "Sal 139, 23"
               },
     "reflection":  {
                        "es":  [
-                                  "Día 15. Sanar las heridas del pasado es el trabajo verdadero. Allí nace el cambio duradero.",
-                                  "Trae esto al Santisimo sin mediaciones. Sin excusas. Sin palabras. Solo presencia.",
-                                  "La Escritura de hoy dice: \"Examiname, Dios, y conoce mi corazon.\" Dejala bajar a tu corazon y obedecela con paz.",
-                                  "Aqui se trabaja la raiz. No alcanza con resistir; hay que sanar."
+                                  "Al final del día, quizá vuelves una y otra vez a una conversación o a una decisión que lamentas. El salmo no te invita a quedarte atrapado en esa escena; te invita a pedirle a Dios que conozca tu corazón. No tienes que revisar cada minuto para que esta oración sea sincera.",
+                                  "Puedes empezar por recordar algo bueno que recibiste hoy: una comida, una palabra amable, un rato de trabajo hecho con cuidado. Dar gracias no borra lo difícil. Te ayuda a mirar el día entero y a notar que no todo estuvo marcado por el error.",
+                                  "Después pregúntate si hay algo concreto que necesites reconocer. Quizá respondiste con dureza, evitaste una responsabilidad o dejaste que una tentación te llevara más lejos de lo que querías. Nombra el hecho sin añadir una condena sobre quién eres.",
+                                  "Si lastimaste a alguien, quizá mañana puedas pedir perdón o reparar una parte del daño. Si necesitas confesarte, puedes buscar cuándo hacerlo. Si no sabes qué pasó o cómo cambiar, pide consejo. El examen de conciencia puede abrir una puerta a la acción; no es una investigación interminable contra ti.",
+                                  "El salmo también deja espacio para que Dios te muestre cosas que todavía no ves. No necesitas obligarte a encontrar una herida profunda detrás de cada falta. A veces la explicación es sencilla: estabas cansado, elegiste mal y ahora necesitas hacer algo distinto.",
+                                  "Si sueles quedarte atrapado en la duda —repasando muchas veces si algo fue pecado o si te confesaste bien—, habla con un confesor prudente. Un examen breve y constante puede ayudarte más que una revisión larga que alimente la angustia.",
+                                  "Al terminar, elige una intención pequeña para mañana y deja el resto en manos de Dios. El examen no busca que te conviertas en tu propio juez; busca que puedas vivir con más verdad, agradecer la gracia recibida y comenzar de nuevo."
                               ],
                        "en":  [
-                                  "Pause before the Blessed Sacrament: this theme, \u0027Daily examination of conscience\u0027, can reshape your life if you embrace it in faith.",
-                                  "In silent prayer, receive this word for you: \u0027Examine your day with Me, not with sterile guilt.\u0027",
-                                  "Today\u0027s Scripture says: \"Search me, O God, and know my heart.\" Let it descend into your heart and obey it in peace.",
-                                  "If temptation or memory of sin appears, do not hide. Name it, reject the lie, and choose a concrete path of grace: prayer, accompaniment, sacrament, reparation.",
-                                  "Deepening: work on the roots of interior disorder (pride, resentment, self-deception, or lukewarmness). Christ wants to heal not only symptoms, but origins."
+                                  "At the end of the day, perhaps you return again and again to a conversation or a choice you regret. The psalm does not invite you to remain trapped in that scene; it invites you to ask God to know your heart. You do not have to review every minute for this prayer to be sincere.",
+                                  "You can begin by remembering something good you received today: a meal, a kind word, a task done with care. Giving thanks does not erase what was difficult. It helps you see the whole day and notice that it was not marked only by mistakes.",
+                                  "Then ask whether there is something specific you need to acknowledge. Perhaps you answered harshly, avoided a responsibility, or let temptation carry you farther than you wanted. Name what happened without adding a condemnation of who you are.",
+                                  "If you hurt someone, perhaps tomorrow you can apologize or repair part of the harm. If you need to go to Confession, find out when. If you do not understand what happened or how to change, ask for counsel. An examination of conscience can open a door to action; it is not an endless investigation against yourself.",
+                                  "The psalm also leaves room for God to show you what you do not yet see. You do not have to force yourself to find a deep wound behind every fault. Sometimes the explanation is simple: you were tired, made a poor choice, and now need to do something differently.",
+                                  "If you often get trapped in doubt—repeatedly reviewing whether something was a sin or whether you confessed properly—speak with a wise confessor. A brief, steady examination may help more than a long review that feeds anxiety.",
+                                  "When you finish, choose one small intention for tomorrow and leave the rest in God's hands. The examination is not meant to make you your own judge; it is meant to help you live more truthfully, give thanks for the grace received, and begin again."
                               ]
                    },
     "prayer":  {
-                   "es":  "Senor Jesus, reconozco que sin Ti no puedo vencer la tentacion ni sanar mi pecado. Dame corazon humilde, fortaleza en la lucha, arrepentimiento sincero y perseverancia para caminar en tu gracia. Lavame, levantame y guame por senderos de santidad. Amen.",
-                   "en":  "Lord Jesus, I acknowledge that without You I cannot overcome temptation or heal from sin. Give me a humble heart, strength in the struggle, sincere repentance, and perseverance to walk in Your grace. Wash me, raise me, and guide me on paths of holiness. Amen."
+                   "es":  "Dios mío, mira mi día conmigo. Ayúdame a agradecer el bien, reconocer el daño sin excusas y descansar de mis propias acusaciones. Muéstrame un paso bueno para mañana. Amén.",
+                   "en":  "My God, look back on this day with me. Help me give thanks for the good, acknowledge harm without excuses, and rest from my own accusations. Show me one good step for tomorrow. Amen."
                },
     "act":  {
-                "es":  "Hoy realiza un acto concreto de conversion: evita una ocasion de pecado, corta un contenido que te hace caer, busca reconciliacion, o agenda tu confesion sacramental.",
-                "en":  "Today do one concrete act of conversion: avoid an occasion of sin, cut off content that leads you to fall, seek reconciliation, or schedule your sacramental confession."
+                "es":  "Antes de dormir, repasa el día con tres preguntas: ¿por qué doy gracias?, ¿dónde necesito pedir perdón?, ¿qué ayuda necesito mañana? Responde con sencillez, sin convertirlo en un juicio contra ti.",
+                "en":  "Before bed, review the day with three questions: What am I grateful for? Where do I need to ask forgiveness? What help will I need tomorrow? Answer simply, without turning it into a judgment against yourself."
             }
 }

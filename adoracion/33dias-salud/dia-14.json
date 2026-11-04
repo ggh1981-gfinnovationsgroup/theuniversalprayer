@@ -1,36 +1,40 @@
-﻿{
-    "n":  14,
-    "theme":  {
-                  "es":  "Dormir en confianza",
-                  "en":  "Sleeping in trust"
-              },
-    "verse":  {
-                  "es":  "\"En paz me acuesto y enseguida me duermo.\"",
-                  "en":  "\"In peace I will lie down and sleep.\"",
-                  "ref":  ""
-              },
-    "reflection":  {
-                       "es":  [
-                                  "Día 14. El insomnio es fe invertida. Es decir constantemente: \"No confío en que mañana volveré.\" Mientras tu mente construye catástrofes, tu cuerpo no descansa porque cree que debe estar en guardia.",
-                                  "Pero la verdad es radicalmente diferente: mientras duermes, Dios no duerme. Mientras tu mente descansa, Él sostiene. Dormir profundamente es el acto de fe más antiguo que existe.",
-                                  "La Escritura de hoy dice: \"En paz me acuesto y enseguida me duermo.\" No dice después de resolver todo. Dice en paz, ahora, en medio de lo incompleto. Es permiso para soltar.",
-                                  "Hoy identifica qué hace que tu mente permanezca despierta: ¿es miedo? ¿es culpa? ¿es necesidad de controlar? Lleva eso a Jesús en la noche. Dile: no puedo sostenerlo solo. Tú lo haces.",
-                                  "Comienza a practicar dormir como acto de rendición. No como escape. Como confianza. Tu cuerpo sanará cuando aprendas que descansar es permitir que Dios obre mientras tú simplemente exists."
-                              ],
-                       "en":  [
-                                  "Day 14. Insomnia is inverted faith. It is saying constantly: \"I do not trust that tomorrow will come.\" While your mind constructs catastrophes, your body does not rest because it believes it must be on guard.",
-                                  "But the truth is radically different: while you sleep, God does not sleep. While your mind rests, He sustains. Sleeping deeply is the most ancient act of faith that exists.",
-                                  "Today's Scripture says: \"In peace I will lie down and sleep.\" It does not say after you resolve everything. It says in peace, now, in the midst of incompleteness. It is permission to let go.",
-                                  "Today identify what keeps your mind awake: Is it fear? Is it guilt? Is it the need to control? Bring that to Jesus in the night. Tell Him: I cannot carry this alone. You do.",
-                                  "Begin to practice sleeping as an act of surrender. Not as escape. As trust. Your body will heal when you learn that resting is allowing God to work while you simply exist."
-                              ]
-                   },
-    "prayer":  {
-                   "es":  "Jesus misericordioso, pongo en Tus manos mi salud fisica, mental y espiritual. Restaura lo que esta herido, fortalece lo que esta debil y guiame por caminos de vida plena. Dame sabiduria para cuidarme, humildad para pedir ayuda y esperanza para no rendirme. Amen.",
-                   "en":  "Merciful Jesus, I place my physical, mental, and spiritual health in Your hands. Restore what is wounded, strengthen what is weak, and guide me on paths of abundant life. Give me wisdom to care for myself, humility to ask for help, and hope to keep going. Amen."
-               },
-    "act":  {
-                "es":  "Hoy haz una accion concreta de cuidado integral: hidratarte mejor, caminar, descansar a tiempo, reducir pantalla, pedir acompanamiento o rezar diez minutos en silencio por tu sanacion.",
-                "en":  "Today do one concrete act of integral care: hydrate better, walk, rest on time, reduce screen time, ask for support, or pray ten minutes in silence for your healing."
-            }
+{
+  "n": 14,
+  "theme": {
+    "es": "Dormir en confianza",
+    "en": "Sleeping in trust"
+  },
+  "verse": {
+    "es": "«Me acuesto en paz y en seguida me duermo, porque solo tú, Señor, me haces vivir tranquilo.»",
+    "en": "\"In peace I will lie down and sleep, for you alone, Lord, make me dwell in safety.\"",
+    "ref": "Sal 4, 8-9"
+  },
+  "reflection": {
+    "es": [
+      "El insomnio puede hacer largas las horas y dejarte preocupado por el día siguiente. No es una medida de tu fe ni una decisión que tomas a propósito. El estrés, el dolor, los horarios, ciertos tratamientos y distintas condiciones de salud pueden afectar el sueño.",
+      "El salmo habla de acostarse buscando seguridad en Dios. Puedes rezarlo como una expresión de confianza o como una petición cuando aún no logras dormir. No promete que todas las noches serán tranquilas; ofrece palabras para una experiencia que puede sentirse solitaria.",
+      "Dormirse no responde a una orden. Si empiezas a vigilar cada minuto o a exigirte dormir para demostrar que confías, la presión puede volverse otra carga. Puedes descansar en la cama, levantarte un momento si te ayuda o seguir las recomendaciones que hayas recibido de un profesional.",
+      "Algunos hábitos, como mantener un horario razonable o bajar la estimulación antes de acostarse, ayudan a ciertas personas. No funcionan igual para todos y no resuelven cada causa. Si un horario de trabajo o de cuidados limita el sueño, reconoce esa realidad sin convertirla en un defecto personal.",
+      "Si el problema persiste, afecta tu funcionamiento o se acompaña de otros síntomas, consulta con un profesional de salud. Revisa con quien te atiende si el dolor, un medicamento u otra condición podría influir. No cambies ni suspendas tratamientos sin orientación.",
+      "En la noche puedes usar una oración corta, escuchar algo tranquilo o pedir a alguien que te acompañe. Si concentrarte en el silencio aumenta la inquietud, elige otra cosa. La oración no exige una técnica perfecta ni sustituye el cuidado que necesitas.",
+      "Tu valor no depende de cuántas horas duermas ni de cómo amanezcas. Esta noche, haz lo posible para estar cómodo y seguro; mañana podrás decidir el siguiente paso con más apoyo. Dios puede acompañarte también durante una noche despierta."
+    ],
+    "en": [
+      "Insomnia can make the hours long and leave you worried about the next day. It is not a measure of your faith or a choice you make on purpose. Stress, pain, schedules, some treatments, and different health conditions can affect sleep.",
+      "The psalm speaks of lying down while seeking safety in God. You can pray it as an expression of trust or as a request when sleep has not come. It does not promise every night will be peaceful; it offers words for an experience that can feel lonely.",
+      "Falling asleep does not respond to an order. If you start watching every minute or demanding sleep to prove you trust, the pressure can become another burden. You can rest in bed, get up briefly if that helps, or follow guidance you have received from a professional.",
+      "Some habits, such as keeping a reasonable schedule or reducing stimulation before bed, help some people. They do not work the same for everyone and do not address every cause. If work or caregiving limits sleep, acknowledge that reality without turning it into a personal failing.",
+      "If the problem persists, affects your functioning, or comes with other symptoms, consult a health professional. Ask your care provider whether pain, medication, or another condition might play a role. Do not change or stop treatment without guidance.",
+      "At night you can use a short prayer, listen to something calming, or ask someone to stay with you. If focusing on silence increases restlessness, choose something else. Prayer does not require a perfect technique or replace the care you need.",
+      "Your worth does not depend on how many hours you sleep or how you feel in the morning. Tonight, do what you can to be comfortable and safe; tomorrow you can decide on the next step with more support. God can accompany you through a night awake, too."
+    ]
+  },
+  "prayer": {
+    "es": "Señor, acompáñame en esta noche difícil. Ayúdame a crear condiciones de descanso y a pedir consejo si el insomnio continúa. Que mi valor no dependa de cuánto logre dormir. Amén.",
+    "en": "Lord, stay with me through this difficult night. Help me make room for rest and seek advice if insomnia continues. Let my worth not depend on how much sleep I get. Amen."
+  },
+  "act": {
+    "es": "Antes de acostarte, deja preparada una cosa que te facilite la mañana y reza una frase sencilla de confianza. Si el insomnio persiste, consulta con un profesional.",
+    "en": "Before bed, prepare one thing that will make your morning easier and pray a simple sentence of trust. If insomnia persists, consult a health professional."
+  }
 }
