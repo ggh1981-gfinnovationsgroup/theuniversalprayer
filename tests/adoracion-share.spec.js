@@ -68,7 +68,8 @@ test.beforeEach(async ({ context }) => {
 for (const journey of JOURNEYS) {
   for (const language of ['es', 'en']) {
     test(`compartir los 33 días de ${journey.id} y abrir cada enlace (${language})`, async ({ page, context }) => {
-      test.setTimeout(180_000);
+      // 66 page loads per test: allow headroom when the full suite runs in parallel.
+      test.setTimeout(600_000);
       const errors = [];
       page.on('pageerror', error => errors.push(error.message));
       await mockSharing(page, 'native', language);
@@ -104,11 +105,20 @@ for (const journey of JOURNEYS) {
             text: [
               title,
               `${data.verse[language]}\n(${data.verse.ref})`,
+              journey.id === 'enemigos'
+                ? (language === 'en' ? 'Bible text: New American Bible (Vatican).' : 'Texto bíblico: Biblia CEE (Vaticano).')
+                : (language === 'en' ? 'Bible passage edition: not identified.' : 'Edición del fragmento bíblico: no identificada.'),
               `${language === 'en' ? 'Prayer of the Day' : 'Oración del Día'}\n${data.prayer[language]}`,
               language === 'en' ? 'Read the full day on The Universal Prayer:' : 'Lee el día completo en The Universal Prayer:',
             ].join('\n\n'),
             url: url.href,
           });
+          await expect(overlay.locator(`.a33-verse-source [data-lang="${language}"]`)).toBeVisible();
+          await expect(overlay.locator(`.a33-verse-source [data-lang="${language}"]`)).toHaveText(
+            journey.id === 'enemigos'
+              ? (language === 'en' ? 'Bible text: New American Bible (Vatican).' : 'Texto bíblico: Biblia CEE (Vaticano).')
+              : (language === 'en' ? 'Bible passage edition: not identified.' : 'Edición del fragmento bíblico: no identificada.')
+          );
           await expect(page.locator(`#${journey.content}DoneCheck`)).not.toBeChecked();
 
           await recipient.goto(payload.url);
@@ -149,6 +159,9 @@ for (const language of ['es', 'en']) {
       const payload = await getPayload(page);
       expect(payload.text).toContain(data.verse[language]);
       expect(payload.text).toContain(data.verse.ref);
+      expect(payload.text).toContain(language === 'en'
+        ? 'Bible passage edition: not identified.'
+        : 'Edición del fragmento bíblico: no identificada.');
       expect(payload.text).toContain(data.prayer[language]);
       expect(new URL(payload.url).pathname).toBe('/adoracion/');
       expect(new URL(payload.url).searchParams.get('jornada')).toBe('adoracion');
@@ -171,6 +184,43 @@ for (const language of ['es', 'en']) {
     expect(await page.evaluate(() => sessionStorage.getItem('legacy-copy'))).toBeNull();
   });
 }
+
+for (const standalone of [false, true]) {
+  test(`si no carga el componente de compartir se informa el error (${standalone ? 'vista independiente' : 'jornadas'})`, async ({ page }) => {
+    const errors = [];
+    const pageErrors = [];
+    page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
+    page.on('pageerror', error => pageErrors.push(error.message));
+    await page.route('**/assets/js/native-share.js', route => route.abort());
+    await page.goto(standalone ? '/adoracion/33dias/' : '/adoracion/');
+    if (!standalone) await page.locator('#ador33Toggle').click();
+    const cards = page.locator('#a33List .a33-card');
+    await expect(cards).toHaveCount(33);
+    await cards.first().click();
+    const modal = page.locator('#a33ModalOverlay');
+    await modal.locator('.a33-share-btn').click();
+    await expect(modal.getByRole('status')).toContainText('No se pudo preparar este día para compartir');
+    expect(errors.some(message => message.includes('No se pudo preparar el contenido para compartir'))).toBe(true);
+    expect(pageErrors).toEqual([]);
+  });
+}
+
+test('el menú de la vista independiente abre y cambia de idioma sin errores', async ({ page }) => {
+  const errors = [];
+  page.on('pageerror', error => errors.push(error.message));
+  await page.goto('/adoracion/33dias/');
+  await expect(page.locator('#contactFab')).toHaveAttribute('aria-label', 'Contáctanos');
+  await page.locator('#hamburgerBtn').click();
+  await expect(page.locator('#sideNav')).toHaveClass(/open/);
+  await expect(page.locator('#sideNav a[href="/maria/"]')).toBeVisible();
+  await page.keyboard.press('Escape');
+  await expect(page.locator('#sideNav')).not.toHaveClass(/open/);
+  await page.locator('#langToggle').click();
+  await expect(page.locator('#contactFab')).toHaveAttribute('aria-label', 'Contact us');
+  await page.locator('#hamburgerBtn').click();
+  await expect(page.locator('#sideNav a[href="/maria/"]')).toHaveText(/Under Mary's mantle/);
+  expect(errors).toEqual([]);
+});
 
 test('cancelar Compartir no copia ni informa un error', async ({ page }) => {
   await mockSharing(page, 'cancel', 'es');
@@ -255,6 +305,21 @@ test('el cambio de idioma mantiene el contenido visible y compartido sincronizad
   }
 });
 
+test('el idioma cambiado desde un día compartido se conserva al recargar', async ({ page }) => {
+  await page.goto('/adoracion/?jornada=enemigos&dia=1&lang=es&ref=keep#anchor');
+  await expect(page.locator('#ene33ModalOverlay')).toBeVisible();
+  await page.locator('#ene33ModalClose').click();
+  await page.locator('#langToggle').click();
+  const url = new URL(page.url());
+  expect(url.searchParams.get('lang')).toBe('en');
+  expect(url.searchParams.get('ref')).toBe('keep');
+  expect(url.hash).toBe('#anchor');
+  await page.reload();
+  await expect(page.locator('html')).toHaveAttribute('lang', 'en');
+  await expect(page.locator('#ene33ModalOverlay')).toBeVisible();
+  await expect(page.locator('#ene33DayNum')).toHaveText('Day 1');
+});
+
 test('los enlaces malformados no abren ni solicitan un día arbitrario', async ({ page }) => {
   const messages = [];
   const dayRequests = [];
@@ -276,6 +341,11 @@ test('los enlaces malformados no abren ni solicitan un día arbitrario', async (
   }
   expect(messages).toHaveLength(queries.length);
   expect(messages.every(message => message.includes('no es válido'))).toBe(true);
+  await page.locator('#langToggle').click();
+  expect(new URL(page.url()).searchParams.get('lang')).toBe('fr');
+  await page.reload();
+  await expect(page.locator('.a33-modal-overlay:visible')).toHaveCount(0);
+  expect(messages.at(-1)).toMatch(/invalid|no es válido/i);
   expect(dayRequests).toEqual([]);
 });
 

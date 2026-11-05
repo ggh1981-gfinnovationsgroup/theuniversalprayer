@@ -160,6 +160,107 @@ body {
   position: relative;
 }
 
+.hero-help-link {
+  position: relative;
+  display: inline-block;
+  min-height: 44px;
+  margin: 0 0 1.75rem;
+  padding: 0.7rem 1.15rem;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  background: rgba(201,168,76,0.12);
+  color: var(--gold-light);
+  font-weight: 700;
+  text-decoration: none;
+}
+.hero-help-link:hover { background: rgba(201,168,76,0.2); }
+
+.help-guide {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--bg-surface);
+  scroll-margin-top: 5rem;
+}
+.help-guide-heading h2 {
+  color: var(--gold-light);
+  font: 400 clamp(1.4rem, 4vw, 1.9rem)/1.3 var(--font-serif);
+}
+.help-guide-heading p {
+  margin-top: 0.6rem;
+  color: var(--white);
+}
+.help-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+.help-options details {
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+}
+.help-options summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-height: 52px;
+  padding: 0.8rem 1rem;
+  color: var(--gold-light);
+  cursor: pointer;
+  font-weight: 700;
+  list-style: none;
+}
+.help-options summary::-webkit-details-marker { display: none; }
+.help-options summary::after { content: '+'; font-size: 1.25rem; }
+.help-options details[open] summary::after { content: '−'; }
+.help-options p { padding: 0 1rem 0.8rem; }
+.help-options .help-prayer { color: var(--gold-light); font-style: italic; }
+.help-options a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin: 0 1rem 0.8rem;
+  color: var(--gold-light);
+  font-weight: 700;
+}
+.help-safety, .help-source {
+  margin-top: 1rem;
+  color: #c9c4ba;
+  font-size: 0.9rem;
+}
+.help-source { font-size: 0.8rem; }
+.quiet-guide { margin-top: 0; }
+.quiet-steps {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+  list-style: none;
+}
+.quiet-steps li {
+  padding: 0.85rem 1rem;
+  border-left: 3px solid var(--gold-dim);
+  background: var(--bg-card);
+}
+.quiet-steps strong { color: var(--gold-light); }
+.quiet-steps p { margin-top: 0.3rem; }
+.quiet-steps a { color: var(--gold-light); }
+.hero-help-link:focus-visible,
+.help-options summary:focus-visible,
+.help-options a:focus-visible,
+.quiet-steps a:focus-visible {
+  outline: 3px solid var(--gold-light);
+  outline-offset: 3px;
+}
+@media (max-width: 940px) {
+  .help-guide { margin-left: 1rem; margin-right: 1rem; }
+}
+
 /* ── PADRE NUESTRO in hero ─────────────────────── */
 .hero-pater {
   position: relative;
@@ -2175,11 +2276,6 @@ body {
   flex: 0 1 480px;
   width: 100%;
 }
-.quick-secret-wrap {
-  max-width: 480px;
-  margin: 0.5rem auto 0.2rem;
-  padding: 0 1rem;
-}
 .search-wrap {
   max-width: 480px;
   margin: 0 auto 2.5rem;
@@ -2202,35 +2298,6 @@ body {
   box-shadow: 0 0 0 3px rgba(201,168,76,0.1);
 }
 .search-input::placeholder { color: var(--gold-dim); opacity: 0.6; }
-
-.secret-search-result {
-  margin-top: 0.65rem;
-  padding: 0.7rem 0.9rem;
-  border: 1px solid rgba(201,168,76,0.35);
-  border-radius: 12px;
-  background: rgba(201,168,76,0.08);
-}
-.secret-search-result a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: var(--gold-light);
-  text-decoration: none;
-  font-size: 0.86rem;
-  letter-spacing: 0.01em;
-}
-.secret-search-result a:hover { color: var(--gold); }
-.secret-result-icon {
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  fill: currentColor;
-  opacity: 0.95;
-  flex-shrink: 0;
-}
-.secret-search-result img.secret-result-icon {
-  object-fit: contain;
-}
 
 /* ── SCROLL TO TOP ───────────────────────────────── */
 .back-to-top {
@@ -3337,7 +3404,7 @@ body {
   background: rgba(201,168,76,.07);
   border-left: 3px solid var(--gold);
   padding: .85rem 1.1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: .6rem;
   border-radius: 0 8px 8px 0;
   font-family: var(--font-serif);
   font-size: 1rem;
@@ -3353,6 +3420,12 @@ body {
   color: var(--gold-dim);
   margin-top: .4rem;
   letter-spacing: .06em;
+}
+.a33-verse-source {
+  margin: 0 0 .7rem;
+  color: rgba(255,255,255,.72);
+  font-size: .8rem;
+  line-height: 1.45;
 }
 
 /* Section labels */
@@ -3415,6 +3488,35 @@ body {
 .a33-share-status:empty {
   margin: 0;
 }
+
+.tup-prayer-share {
+  margin: .75rem 0 1.15rem;
+}
+.tup-prayer-share-button {
+  min-height: 44px;
+  padding: .6rem .9rem;
+  border: 1px solid var(--gold-dim);
+  border-radius: 8px;
+  background: rgba(201,168,76,.08);
+  color: var(--gold-light);
+  font: inherit;
+  cursor: pointer;
+}
+.tup-prayer-share-button:hover { background: rgba(201,168,76,.18); }
+.tup-prayer-share-button:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 3px;
+}
+.tup-prayer-share-button:disabled { opacity: .6; cursor: wait; }
+.tup-prayer-share-status {
+  margin: .5rem 0 0;
+  color: rgba(255,255,255,.82);
+  font-size: .85rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.tup-prayer-share-status:empty { margin: 0; }
+[data-share-prayer] { scroll-margin-top: 5.5rem; }
 
 /* Act of the day */
 .a33-act-box {

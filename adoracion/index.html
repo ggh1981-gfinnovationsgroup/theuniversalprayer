@@ -1013,6 +1013,7 @@
 
   </main>
 
+  <script src="/assets/js/native-share.js"></script>
   <script src="/assets/js/adoracion-share.js"></script>
   <script>
   (function() {
@@ -1038,6 +1039,11 @@
 
     document.getElementById('langToggle').addEventListener('click', () => {
       applyLang(lang === 'es' ? 'en' : 'es');
+      if (sharedLang === 'es' || sharedLang === 'en') {
+        const url = new URL(window.location.href);
+        url.searchParams.set('lang', lang);
+        window.history.replaceState(window.history.state, '', url.href);
+      }
       window.dispatchEvent(new CustomEvent('tup:langchange', { detail: lang }));
     });
 

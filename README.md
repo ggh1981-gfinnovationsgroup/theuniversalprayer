@@ -6,8 +6,10 @@ Sitio web catolico bilingue (ES/EN) publicado en GitHub Pages.
 
 - Produccion activa en `main`.
 - Sitio estatico con PWA (`sw.js`) y contenido en JSON.
-- Cache actual del Service Worker: `tup-v295`.
+- Cache actual del Service Worker: `tup-v297`.
 - Adoración: 7 jornadas de 33 días en `adoracion/33dias-*/` (la más reciente: `33dias-enemigos`, para bendecir a los enemigos y entregarlos a Dios).
+- `vuelvo-al-padre/#oseas-14`: Oseas 14 completo (Biblia CEE / New American Bible), los pasos para volver (vv. 2-4), la respuesta de Dios (v. 5), una meditación y una oración propia que se puede compartir.
+- Fuentes sin conexión: las páginas no enlazan a fuentes externas (Vaticano, etc.); los pasajes bíblicos, párrafos del Catecismo y extractos de documentos de la Iglesia citados se incluyen en desplegables `details.tup-ref`, marcados como «selección» cuando solo se reproduce una parte.
 - Archivos de datos JSON: 106 en `data/`.
 - Historias para ninos: fuente principal en `data/ninos-cuentos.json`.
 - Wake Lock API activo en todas las paginas con TTS (evita standby durante audio).
@@ -123,7 +125,6 @@ theuniversalprayer/
   tentaciones/
   viacrucis/
   vuelvo-al-padre/
-  privado/
   workers/
 ```
 
@@ -136,12 +137,15 @@ Nota: el directorio `scripts/` ya no forma parte del repo runtime.
 - Navegacion y comportamiento en cliente desde `assets/js/`.
 - Service Worker en `sw.js` con estrategias de cache para mejorar rendimiento/offline.
 - El menu y otros recursos esenciales de interfaz se actualizan desde la red sin reutilizar una cache HTTP antigua y conservan copia para uso offline.
+- Al instalar una nueva version del Service Worker se renuevan tambien los documentos precargados. Los enlaces a oraciones con idioma y los 33 dias de la jornada principal de Adoracion pueden abrirse sin conexion despues de una visita que haya activado y completado la cache.
 
 ## Contenido y Datos
 
 - Cada intercesor usa un JSON en `data/` con campos bilingues.
 - Existe contenido especializado para multiples secciones del sitio (oraciones, historias, meses, etc.).
-- Las siete jornadas de Adoracion y la vista independiente `adoracion/33dias/` permiten compartir la cita biblica, su referencia, la oracion y un enlace directo mediante el menu nativo del navegador. Si este no esta disponible, se muestra un aviso sin copiar al portapapeles. Los enlaces `/adoracion/?jornada=enemigos&dia=1&lang=es` abren la jornada y el dia indicados, conservando el idioma compartido.
+- Las siete jornadas de Adoracion y la vista independiente `adoracion/33dias/` permiten compartir la cita biblica, su referencia, la oracion y un enlace directo mediante el menu nativo del navegador. Se identifica la fuente CEE/NAB en la jornada de enemigos y se indica cuando la edicion de las otras citas no esta identificada. Si el menu no esta disponible, se muestra un aviso sin copiar al portapapeles. Los enlaces `/adoracion/?jornada=enemigos&dia=1&lang=es` abren la jornada y el dia indicados, conservando el idioma compartido.
+- Las oraciones principales de Maria, Emergencias y la novena tambien pueden compartirse mediante el menu nativo, con un enlace directo que conserva el idioma y abre la seccion necesaria. Si la funcion no esta disponible, se muestra un aviso sin copiar al portapapeles.
+- La portada ofrece una entrada de ayuda por necesidades y una guia opcional de cinco minutos con Jesus, sin rachas ni registro de intenciones. Las oraciones nuevas se identifican como textos propios y el pasaje biblico como parafrasis con enlace a una fuente catolica.
 - `novena-sagrado-corazon/` ofrece una guia bilingue, adaptada y paso a paso de la novena asociada al Padre Pio, accesible desde el menu y sin guardar las intenciones.
 - `data/ninos-cuentos.json` contiene cuentos infantiles con narrativa extendida y metadatos de lectura.
 
@@ -151,6 +155,7 @@ Nota: el directorio `scripts/` ya no forma parte del repo runtime.
 - Hosting: GitHub Pages.
 - Dominio configurado mediante `CNAME`.
 - Cada `git push origin main` dispara redeploy automatico.
+- Las paginas personales y los recursos del antiguo buscador privado quedan excluidos del seguimiento de Git y se conservan localmente. La exclusion solo afecta a futuras publicaciones: las versiones antiguas pueden permanecer accesibles en el historial publico y la retirada del sitio requiere desplegar el cambio.
 
 ## Flujo de Actualizacion (Cache + Datos)
 
@@ -186,6 +191,10 @@ npm run test:report     # abrir el reporte HTML
 
 - `tests/smoke.spec.js`: recorre todas las carpetas con `index.html` y verifica carga sin errores JS ni recursos locales rotos, un unico `<summary>` por `<details>`, cambio de idioma y uso de la clave compartida `tup_lang`, y redirecciones.
 - `tests/maria.spec.js`: pruebas detalladas de `/maria/` (devociones, acordeones en ES/EN, slugs de intercesores, enlaces internos y externos, registro en menu/sitemap/SW).
+- `tests/adoracion-share.spec.js`: comprueba los 231 dias de las siete jornadas y la vista independiente en ambos idiomas, los enlaces directos, el menu nativo simulado y los errores de compartir.
+- `tests/prayer-share.spec.js`: comprueba las oraciones compartibles de Maria, Emergencias y la novena, la conservacion del idioma, el acceso offline y la ausencia de copia automatica.
+- `tests/pastoral-improvements.spec.js`: verifica la guia de ayuda, el lenguaje pastoral, la busqueda publica y que los archivos personales retirados queden excluidos de Git.
+- `tests/novena-sagrado-corazon.spec.js`: valida la novena y la actualizacion y disponibilidad offline de recursos compartidos.
 - `tests/devotional-data.spec.js`: valida los 165 dias y los datos del Carmen, comprueba los limites de las referencias de los capitulos consultados, incluidas las citas con abreviaturas reconocidas en el texto, y abre cada dia en español e ingles. Tambien comprueba las referencias con dos numeraciones en una pantalla de 320 px, las secciones y los nueve dias de la novena del Carmen, y que una lectura descargada se pueda volver a abrir sin conexion. Las 165 lecturas no se precargan todas automaticamente.
 - `tests/devotional-bible-chapters.json` contiene limites de los capitulos ya consultados, no un indice completo de la Biblia. Al incorporar una cita de otro capitulo, verificarla en una edicion catolica apropiada antes de ampliar el archivo. La numeracion de los Salmos puede variar incluso entre ediciones catolicas; cuando se indican las numeraciones de la CEE/NABRE y la NRSVCE, las etiquetas se refieren a los numeros y no identifican necesariamente la fuente literal de la cita.
 - Las peticiones externas (fuentes, YouTube, etc.) se bloquean durante las pruebas.

@@ -80,7 +80,11 @@
     a.className = 'contact-hdr';
     a.href = CONTACT_MAILTO;
     var toggle = inner.querySelector('.lang-toggle');
-    inner.insertBefore(a, toggle || inner.lastElementChild);
+    if (toggle) {
+      toggle.parentElement.insertBefore(a, toggle);
+    } else {
+      inner.insertBefore(a, inner.lastElementChild);
+    }
     renderContactFab(getLang());
   }
 

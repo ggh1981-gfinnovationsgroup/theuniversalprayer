@@ -58,7 +58,8 @@ for (const { lang, prayers, petition, response, final, promises } of [
       const step = page.locator(`#${id}`);
       await expect(step.locator(`.nov-prayer[data-lang="${lang}"]`)).toContainText(promises[index]);
       await expect(step.locator(`.nov-petition[data-lang="${lang}"]`)).toContainText(petition);
-      const details = step.locator('details');
+      const details = step.locator('details:not([data-lang])');
+      await expect(step.locator(`details.tup-ref[data-lang="${lang}"] .tup-ref-verse`)).not.toBeEmpty();
       await expect(details).not.toHaveAttribute('open', '');
       await details.locator('summary').focus();
       await page.keyboard.press('Enter');
@@ -70,7 +71,7 @@ for (const { lang, prayers, petition, response, final, promises } of [
       await expect(step.locator(`.nov-response[data-lang="${lang}"]`)).toContainText(response);
       expect(await step.evaluate(el => {
         const petitionEl = el.querySelector('.nov-petition');
-        const detailsEl = el.querySelector('details');
+        const detailsEl = el.querySelector('details:not([data-lang])');
         const responseEl = el.querySelector('.nov-response');
         if (!petitionEl || !detailsEl || !responseEl) return false;
         return Boolean(petitionEl.compareDocumentPosition(detailsEl) & Node.DOCUMENT_POSITION_FOLLOWING)
@@ -108,7 +109,7 @@ test('el idioma cambia también en las oraciones desplegadas y se conserva', asy
   await page.goto(NOVENA);
   await page.evaluate(() => localStorage.setItem('tup_lang', 'es'));
   await page.reload();
-  const first = page.locator('#primera-peticion details');
+  const first = page.locator('#primera-peticion details:not([data-lang])');
   await first.locator('summary').click();
   await page.locator('#langToggle').click();
   await expect(page.locator('html')).toHaveAttribute('lang', 'en');
@@ -132,7 +133,9 @@ test('la página está registrada en el sitemap y en ambas rutas del service wor
   expect(sitemap).toContain(`https://www.theuniversalprayer.com${NOVENA}`);
   await page.goto(NOVENA);
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', `https://www.theuniversalprayer.com${NOVENA}`);
-  await expect(page.locator('#fuentes a[href="https://www.padrepio.org/pray/efficacious-novena/"]')).toHaveCount(1);
+  await expect(page.locator('#fuentes a[href^="http"]')).toHaveCount(0);
+  await expect(page.locator('#fuentes')).toContainText('Centro Nacional del Padre Pío');
+  await expect(page.locator('#fuentes details.tup-ref[data-lang="es"] .tup-ref-verse')).toHaveCount(3);
   for (const link of await page.locator('#fuentes a[target="_blank"]').all()) {
     await expect(link).toHaveAttribute('rel', /noopener/);
   }
@@ -144,7 +147,7 @@ test.describe('sin JavaScript', () => {
   test('las oraciones siguen disponibles desde cada petición', async ({ page }) => {
     await page.goto(NOVENA);
     for (const id of STEP_IDS) {
-      const details = page.locator(`#${id} details`);
+      const details = page.locator(`#${id} details:not([data-lang])`);
       await details.locator('summary').click();
       await expect(details.locator('a[href="#oraciones-comunes"]').first()).toBeVisible();
     }
@@ -160,7 +163,7 @@ test('los accesos rápidos dejan las secciones bajo el encabezado en móvil y es
     await page.goto(NOVENA);
     await page.addStyleTag({ content: 'html { scroll-behavior: auto !important; }' });
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
-    await expect(page.locator('#primera-peticion details')).toHaveCSS('border-top-style', 'solid');
+    await expect(page.locator('#primera-peticion details:not([data-lang])')).toHaveCSS('border-top-style', 'solid');
     for (const id of ['como-rezar', ...STEP_IDS, 'oracion-final']) {
       await page.locator(`.nov-index a[href="#${id}"]`).click();
       const geometry = await page.evaluate(targetId => ({
@@ -177,7 +180,13 @@ test.describe('sin conexión', () => {
 
   test('la novena y su menú se pueden usar después de instalar la caché', async ({ page, context }) => {
     test.setTimeout(60_000);
-    await page.addInitScript(() => localStorage.setItem('tup_lang', 'es'));
+    await page.addInitScript(() => {
+      localStorage.setItem('tup_lang', 'es');
+      Object.defineProperty(navigator, 'share', {
+        configurable: true,
+        value: async data => sessionStorage.setItem('offline-prayer-share', JSON.stringify(data)),
+      });
+    });
     await page.goto(NOVENA);
     await expect.poll(
       () => page.evaluate(() => navigator.serviceWorker.controller !== null),
@@ -185,12 +194,19 @@ test.describe('sin conexión', () => {
     ).toBe(true);
     expect(await page.evaluate(async url => Boolean(await caches.match(url)), NOVENA)).toBe(true);
     expect(await page.evaluate(async url => Boolean(await caches.match(url)), `${NOVENA}index.html`)).toBe(true);
+    expect(await page.evaluate(async () => Boolean(await caches.match('/assets/js/native-share.js')))).toBe(true);
+    expect(await page.evaluate(async () => Boolean(await caches.match('/assets/js/prayer-share.js')))).toBe(true);
 
     await context.setOffline(true);
     await page.reload();
     await expect(page.locator('h1 [data-lang="es"]')).toBeVisible();
-    await page.locator('#primera-peticion summary').click();
-    await expect(page.locator('#primera-peticion details [data-lang="es"] h3').first()).toBeVisible();
+    await page.locator('#primera-peticion details:not([data-lang]) > summary').click();
+    await expect(page.locator('#primera-peticion details:not([data-lang]) [data-lang="es"] h3').first()).toBeVisible();
+    const share = page.locator('[data-share-control="novena-primera"]');
+    await share.getByRole('button', { name: 'Compartir esta oración' }).click();
+    await expect(share.getByRole('status')).toHaveText('Se abrió el menú para compartir.');
+    const shared = await page.evaluate(() => JSON.parse(sessionStorage.getItem('offline-prayer-share')));
+    expect(new URL(shared.url).hash).toBe('#oracion-novena-primera-es');
     await page.locator('#hamburgerBtn').click();
     await expect(page.locator(`#sideNav a[href="${NOVENA}"]`)).toBeVisible();
   });
@@ -217,9 +233,12 @@ test.describe('actualización de recursos compartidos', () => {
       } else if (pathname === '/assets/css/styles.css') {
         res.writeHead(200, { 'Content-Type': 'text/css', 'Cache-Control': 'public, max-age=3600' });
         res.end(`#probe { color: ${colors[revision]}; }`);
+      } else if (pathname === '/adoracion/33dias/dia-01.json') {
+        res.writeHead(200, { 'Content-Type': 'application/json', 'Cache-Control': 'public, max-age=3600' });
+        res.end(JSON.stringify({ revision }));
       } else if (pathname === '/' || pathname === '/index.html') {
-        res.writeHead(200, { 'Content-Type': 'text/html', 'Cache-Control': 'no-store' });
-        res.end('<!doctype html><link rel="stylesheet" href="/assets/css/styles.css"><p id="probe">probe</p><script src="/assets/js/menu.js"></script>');
+        res.writeHead(200, { 'Content-Type': 'text/html', 'Cache-Control': 'public, max-age=3600' });
+        res.end(`<!doctype html><link rel="stylesheet" href="/assets/css/styles.css"><p id="probe">probe</p><p id="shell-version">${revision}</p><script src="/assets/js/menu.js"></script>`);
       } else {
         res.writeHead(200, { 'Content-Type': 'text/plain' });
         res.end('cached');
@@ -237,6 +256,8 @@ test.describe('actualización de recursos compartidos', () => {
       await page.goto(`http://127.0.0.1:${address.port}/`);
       await expect(page.locator('html')).toHaveAttribute('data-menu-revision', 'old');
       await expect(page.locator('#probe')).toHaveCSS('color', colors.old);
+      expect(await page.evaluate(() => fetch('/adoracion/33dias/dia-01.json').then(response => response.json())))
+        .toEqual({ revision: 'old' });
 
       revision = 'fresh';
       await page.evaluate(() => navigator.serviceWorker.register('/sw.js'));
@@ -244,11 +265,15 @@ test.describe('actualización de recursos compartidos', () => {
       const cached = await page.evaluate(async () => {
         const menu = await caches.match('/assets/js/menu.js');
         const css = await caches.match('/assets/css/styles.css');
-        if (!menu || !css) throw new Error('Faltan recursos en la caché');
-        return { menu: await menu.text(), css: await css.text() };
+        const html = await caches.match('/');
+        const day = await caches.match('/adoracion/33dias/dia-01.json');
+        if (!menu || !css || !html || !day) throw new Error('Faltan recursos en la caché');
+        return { menu: await menu.text(), css: await css.text(), html: await html.text(), day: await day.json() };
       });
       expect(cached.menu).toContain("'fresh'");
       expect(cached.css).toContain(colors.fresh);
+      expect(cached.html).toContain('<p id="shell-version">fresh</p>');
+      expect(cached.day).toEqual({ revision: 'fresh' });
 
       revision = 'latest';
       await page.reload();

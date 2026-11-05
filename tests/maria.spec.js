@@ -47,14 +47,10 @@ test('ofrece acompañamiento breve y enlaza a las guías completas', async ({ pa
     await expect(section.locator(`a[href="/tentaciones/"] span[data-lang="${lang}"]`)).toBeVisible();
     await expect(section.locator(`a[href="/reconciliacion/"] span[data-lang="${lang}"]`)).toBeVisible();
   }
-  for (const href of [
-    'https://www.vatican.va/archive/catechism_sp/p2s2c2a4_sp.html',
-    'https://www.vatican.va/archive/catechism_sp/p3s1c1a3_sp.html',
-    'https://www.vatican.va/archive/catechism_sp/p3s1c3a2_sp.html',
-    'https://www.vatican.va/archive/catechism_sp/p4s2a3_sp.html',
-  ]) {
-    await expect(page.locator(`.maria-sources a[href="${href}"]`)).toHaveCount(1);
+  for (const marker of ['1451.', '1735.', '2001.', '2846.']) {
+    await expect(page.locator('.maria-sources details.tup-ref[data-lang="es"] .tup-ref-verse', { hasText: marker })).toHaveCount(1);
   }
+  await expect(page.locator('.maria-sources a[href^="http"]')).toHaveCount(0);
 });
 
 test('cada devoción incluye cómo rezarla y una oración', async ({ page }) => {
@@ -133,16 +129,16 @@ test('las anclas a otras páginas existen en su destino', async ({ page }) => {
   }
 });
 
-test('los enlaces externos son seguros y apuntan a fuentes https', async ({ page }) => {
-  const links = await page.locator('a[href^="http"]').evaluateAll(as => as.map(a => ({
-    href: a.getAttribute('href'), target: a.getAttribute('target'), rel: a.getAttribute('rel') || '',
-  })));
-  expect(links.length).toBeGreaterThan(0);
-  for (const link of links) {
-    expect(link.href, 'https').toMatch(/^https:\/\//);
-    if (link.target === '_blank') expect(link.rel, link.href).toContain('noopener');
+test('las fuentes se leen en desplegables sin enlaces externos', async ({ page }) => {
+  const links = await page.locator('main a[href^="http"]').count();
+  expect(links).toBe(0);
+  for (const lang of ['es', 'en']) {
+    const refs = page.locator(`main details.tup-ref[data-lang="${lang}"]`);
+    expect(await refs.count()).toBeGreaterThanOrEqual(10);
+    for (const text of await refs.locator('.tup-ref-body').allTextContents()) {
+      expect(text.trim().length).toBeGreaterThan(80);
+    }
   }
-  expect(links.some(l => /vatican\.va/.test(l.href || ''))).toBe(true);
 });
 
 test('está registrada en menú, sitemap y service worker', async ({ page }) => {

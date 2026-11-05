@@ -6,7 +6,27 @@
     if (status) status.textContent = '';
   }
 
+  function verseSource(series, language) {
+    if (series === 'enemigos') {
+      return language === 'en'
+        ? 'Bible text: New American Bible (Vatican).'
+        : 'Texto bíblico: Biblia CEE (Vaticano).';
+    }
+    return language === 'en'
+      ? 'Bible passage edition: not identified.'
+      : 'Edición del fragmento bíblico: no identificada.';
+  }
+
   function attach({ series, overlay, getDay, getLang, getTitle }) {
+    const source = document.createElement('p');
+    source.className = 'a33-verse-source';
+    ['es', 'en'].forEach(language => {
+      const label = document.createElement('span');
+      label.dataset.lang = language;
+      label.textContent = verseSource(series, language);
+      label.style.display = language === getLang() ? '' : 'none';
+      source.append(label);
+    });
     const wrap = document.createElement('div');
     wrap.className = 'a33-share-wrap';
     const button = document.createElement('button');
@@ -20,7 +40,8 @@
     status.className = 'a33-share-status';
     status.setAttribute('role', 'status');
     wrap.append(button, status);
-    overlay.querySelector('.a33-modal-verse').insertAdjacentElement('afterend', wrap);
+    overlay.querySelector('.a33-modal-verse').insertAdjacentElement('afterend', source);
+    source.insertAdjacentElement('afterend', wrap);
 
     button.addEventListener('click', async () => {
       clearStatus(overlay);
@@ -30,6 +51,13 @@
       if (!day) {
         console.error('No hay un día abierto para compartir.');
         status.textContent = english ? 'Open a day before sharing.' : 'Abre un día antes de compartir.';
+        return;
+      }
+      if (!window.tupNativeShare || typeof window.tupNativeShare.share !== 'function') {
+        console.error('No se pudo preparar el contenido para compartir.');
+        status.textContent = english
+          ? 'Could not prepare this day for sharing. Please reload and try again.'
+          : 'No se pudo preparar este día para compartir. Recarga la página e inténtalo de nuevo.';
         return;
       }
 
@@ -43,39 +71,20 @@
         text: [
           title,
           `${day.verse[language] || day.verse.es}\n(${day.verse.ref})`,
+          verseSource(series, language),
           `${english ? 'Prayer of the Day' : 'Oración del Día'}\n${day.prayer[language] || day.prayer.es}`,
           english ? 'Read the full day on The Universal Prayer:' : 'Lee el día completo en The Universal Prayer:',
         ].join('\n\n'),
         url: url.href,
       };
-      const showStatus = message => {
-        if (getDay() === day && getLang() === language) status.textContent = message;
-      };
-
-      if (typeof navigator.share !== 'function') {
-        showStatus(english
-          ? 'This browser does not support native sharing. Open this day in a compatible browser, such as Chrome or Safari on your phone.'
-          : 'Este navegador no admite el menú nativo para compartir. Abre este día en un navegador compatible, como Chrome o Safari en tu teléfono.');
-        return;
-      }
-
-      const previousFocus = document.activeElement;
-      button.disabled = true;
-      try {
-        await navigator.share(payload);
-        showStatus(english ? 'Share menu opened.' : 'Se abrió el menú para compartir.');
-      } catch (error) {
-        if (error && error.name === 'AbortError') return;
-        console.error('No se pudo abrir el menú para compartir:', error);
-        showStatus(english
-          ? 'Could not open the share menu. Try again or open this day in a compatible browser.'
-          : 'No se pudo abrir el menú para compartir. Inténtalo de nuevo o abre este día en un navegador compatible.');
-      } finally {
-        button.disabled = false;
-        if (previousFocus === button && document.activeElement === document.body && getDay() === day) {
-          button.focus({ preventScroll: true });
-        }
-      }
+      await window.tupNativeShare.share({
+        button,
+        status,
+        language,
+        payload,
+        kind: 'day',
+        isCurrent: () => getDay() === day && getLang() === language,
+      });
     });
   }
 

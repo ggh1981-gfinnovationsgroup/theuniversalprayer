@@ -3,20 +3,31 @@
    Offline support for precached and previously cached resources
    ===================================================== */
 
-const CACHE = 'tup-v295';
+const CACHE = 'tup-v297';
 const CRITICAL_CORE_URLS = new Set([
   '/assets/js/main.js',
   '/assets/js/menu.js',
   '/assets/js/adoracion-share.js',
+  '/assets/js/native-share.js',
+  '/assets/js/prayer-share.js',
   '/assets/css/styles.css',
 ]);
+const OFFLINE_ADORATION_DAYS = new Set(
+  Array.from({ length: 33 }, (_, index) =>
+    `/adoracion/33dias/dia-${String(index + 1).padStart(2, '0')}.json`)
+);
 
 // All files to pre-cache on install
 const PRECACHE_URLS = [
   '/',
   '/adoracion/',
   '/adoracion/index.html',
+  '/adoracion/33dias/',
+  '/adoracion/33dias/index.html',
+  ...OFFLINE_ADORATION_DAYS,
   '/assets/js/adoracion-share.js',
+  '/assets/js/native-share.js',
+  '/assets/js/prayer-share.js',
   '/difuntos/',
   '/difuntos/index.html',
   '/historias/',
@@ -121,7 +132,6 @@ const PRECACHE_URLS = [
   '/assets/css/styles.css',
   '/assets/js/main.js',
   '/assets/js/menu.js',
-  '/assets/js/private-image-modal.js',
   '/assets/images/icon.svg',
   '/assets/images/misericordia-hero.svg',
   '/assets/images/reconciliacion-hero.svg',
@@ -236,13 +246,6 @@ const PRECACHE_URLS = [
   '/desierto/33dias/svgs/oracion.svg',
   '/desierto/33dias/svgs/vida.svg',
   '/desierto/33dias/svgs/fruto.svg',
-  '/assets/images/private-search/dreams.svg',
-  '/assets/images/private-search/barbara.svg',
-  '/assets/images/private-search/fabiola.svg',
-  '/assets/images/private-search/brandon.svg',
-  '/assets/images/private-search/katherine.svg',
-  '/assets/images/private-search/clarissa.svg',
-  '/assets/images/private-search/ian.svg',
   // Intercessor data (JSON)
   '/data/misericordia.json',
   '/data/inmaculadocorazon.json',
@@ -349,9 +352,11 @@ const PRECACHE_URLS = [
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE)
-      .then(cache => cache.addAll(PRECACHE_URLS.map(url =>
-        CRITICAL_CORE_URLS.has(url) ? new Request(url, { cache: 'reload' }) : url
-      )))
+      .then(cache => cache.addAll(PRECACHE_URLS.map(url => {
+        const isDocument = url === '/' || url.endsWith('/') || url.endsWith('.html');
+        const shouldRefresh = CRITICAL_CORE_URLS.has(url) || OFFLINE_ADORATION_DAYS.has(url) || isDocument;
+        return shouldRefresh ? new Request(url, { cache: 'reload' }) : url;
+      })))
       .then(() => self.skipWaiting())
   );
 });
@@ -398,7 +403,7 @@ self.addEventListener('fetch', event => {
     // Stale-while-revalidate: return cache immediately, update in background
     event.respondWith(
       caches.open(CACHE).then(cache =>
-        cache.match(event.request).then(cached => {
+        cache.match(event.request, { ignoreSearch: event.request.mode === 'navigate' }).then(cached => {
           const networkFetch = fetch(event.request).then(response => {
             if (response && response.status === 200) {
               cache.put(event.request, response.clone());

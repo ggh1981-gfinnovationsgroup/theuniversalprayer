@@ -16,7 +16,9 @@
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <script>
     if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
+      window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(error => {
+        console.error('No se pudo registrar el service worker:', error);
+      }));
     }
   </script>
 </head>
@@ -153,6 +155,7 @@
     <a href="/" class="a33-footer-link" data-lang="en" style="display:none">Home</a>
   </footer>
 
+  <script src="/assets/js/native-share.js"></script>
   <script src="/assets/js/adoracion-share.js"></script>
   <script>
   (function () {

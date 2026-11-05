@@ -5,7 +5,7 @@
 
 'use strict';
 
-const APP_VERSION = 'v2026.07.24-2';
+const APP_VERSION = 'v2026.07.24-4';
 
 function withAssetVersion(url) {
   if (!url) return url;
@@ -696,12 +696,6 @@ async function initHomePage() {
 
   // Search intercessor cards
   const cardsSearch = document.getElementById('cardsSearch');
-  const secretSearchResult = document.getElementById('secretSearchResult');
-  const quickSecretSearchResult = document.getElementById('quickSecretSearchResult');
-
-  function normalizeKey(s) {
-    return normalize(s).replace(/[^a-z0-9]/g, '');
-  }
 
   const MENU_THEME_RELATIONS = [
     { keywords: ['adoracion', 'adoration', 'eucaristia', 'eucharist'], ids: ['sagradocorazon', 'misericordia', 'fatima', 'santaclara', 'santotomasdeaquino'] },
@@ -735,100 +729,6 @@ async function initHomePage() {
     return matchedIds;
   }
 
-  const PRIVATE_SEARCH_ENTRIES = [
-    {
-      key: 'barbarascarlettgomezmichel',
-      href: '/privado/barbara/?clave=barbarascarlettgomezmichel',
-      icon: '/assets/images/private-search/barbara.svg?v=20260710',
-      text: {
-        es: 'Mensaje privado para Barbara: amor de papa y caminos buenos',
-        en: 'Private message for Barbara: dad\'s love and good paths',
-      },
-    },
-    {
-      key: 'fabiolamichellopez',
-      href: '/privado/fabiola/?clave=fabiolamichellopez',
-      icon: '/assets/images/private-search/fabiola.svg?v=20260710',
-      text: {
-        es: 'Mensaje privado para Fabiola: amor, oración y gracia matrimonial',
-        en: 'Private message for Fabiola: love, prayer and marital grace',
-      },
-    },
-    {
-      key: 'brandondavidgomezmichel',
-      href: '/privado/brandon/?clave=brandondavidgomezmichel',
-      icon: '/assets/images/private-search/brandon.svg?v=20260710',
-      text: {
-        es: 'Mensaje privado para Brandon: fortaleza, fe y propósito',
-        en: 'Private message for Brandon: strength, faith, and purpose',
-      },
-    },
-    {
-      key: 'katherinemariannegomezmichel',
-      href: '/privado/katherine/?clave=katherinemariannegomezmichel',
-      icon: '/assets/images/private-search/katherine.svg?v=20260710',
-      text: {
-        es: 'Mensaje privado para Katherine: ternura, sabiduría y alegría',
-        en: 'Private message for Katherine: tenderness, wisdom, and joy',
-      },
-    },
-    {
-      key: 'clarissadahianagomezmichel',
-      href: '/privado/clarissa/?clave=clarissadahianagomezmichel',
-      icon: '/assets/images/private-search/clarissa.svg?v=20260710',
-      text: {
-        es: 'Mensaje privado para Clarissa: pureza, bondad y luz',
-        en: 'Private message for Clarissa: purity, kindness, and light',
-      },
-    },
-    {
-      key: 'ianisaacgomezmichel',
-      href: '/privado/ian/?clave=ianisaacgomezmichel',
-      icon: '/assets/images/private-search/ian.svg?v=20260710',
-      text: {
-        es: 'Mensaje privado para Ian: protección, alegría y confianza',
-        en: 'Private message for Ian: protection, joy, and trust',
-      },
-    },
-  ].map(entry => ({ ...entry, keyNorm: normalizeKey(entry.key) }));
-
-  function getSecretMatches(q) {
-    const qNorm = normalizeKey(q);
-    if (!qNorm) return [];
-    return PRIVATE_SEARCH_ENTRIES.filter(entry => qNorm.includes(entry.keyNorm));
-  }
-
-  function hideAllSaintResults() {
-    document.querySelectorAll('.quick-nav-item').forEach(item => { item.style.display = 'none'; });
-    grid.querySelectorAll('.intercessor-card').forEach(card => { card.style.display = 'none'; });
-  }
-
-  function renderIconHtml(iconPath) {
-    return '<img class="secret-result-icon" src="' + iconPath + '" alt="" aria-hidden="true" loading="lazy" decoding="async" fetchpriority="low">';
-  }
-
-  function renderSecretResult(q) {
-    const targets = [secretSearchResult, quickSecretSearchResult].filter(Boolean);
-    if (!targets.length) return;
-
-    const matches = getSecretMatches(q);
-    if (!matches.length) {
-      targets.forEach(el => {
-        el.style.display = 'none';
-        el.innerHTML = '';
-      });
-      return;
-    }
-
-    const html = matches
-      .map(entry => '<a href="' + entry.href + '">' + renderIconHtml(entry.icon) + '<span>' + entry.text[currentLang] + '</span></a>')
-      .join('<br>');
-    targets.forEach(el => {
-      el.innerHTML = html;
-      el.style.display = '';
-    });
-  }
-
   // Search quick nav icons
   const quickNavSearch = document.getElementById('quickNavSearch');
   const MIN_SEARCH_CHARS = 3;
@@ -857,7 +757,6 @@ async function initHomePage() {
 
       if (!shouldRunSearch(q)) {
         hideQuickNavResults();
-        renderSecretResult('');
         return;
       }
 
@@ -868,14 +767,11 @@ async function initHomePage() {
         item.style.display = (matchesName || matchesSpecialty || matchesTheme) ? '' : 'none';
       });
 
-      if (getSecretMatches(q).length) hideAllSaintResults();
-      renderSecretResult(q);
     });
 
     const initialQ = normalize(quickNavSearch.value.trim());
     if (!shouldRunSearch(initialQ)) {
       hideQuickNavResults();
-      renderSecretResult('');
     } else {
       const themeMatchedIds = getThemeMatchedIds(initialQ);
       document.querySelectorAll('.quick-nav-item').forEach(item => {
@@ -884,8 +780,6 @@ async function initHomePage() {
         const matchesTheme = themeMatchedIds.has(item.dataset.intercessorId);
         item.style.display = (matchesName || matchesSpecialty || matchesTheme) ? '' : 'none';
       });
-      if (getSecretMatches(initialQ).length) hideAllSaintResults();
-      renderSecretResult(initialQ);
     }
   }
 
@@ -897,7 +791,6 @@ async function initHomePage() {
 
       if (!shouldRunSearch(q)) {
         resetCardResults();
-        renderSecretResult('');
         return;
       }
 
@@ -908,11 +801,7 @@ async function initHomePage() {
         card.style.display = (matchesText || matchesSpecialty || matchesTheme) ? '' : 'none';
       });
 
-      if (getSecretMatches(q).length) hideAllSaintResults();
-      renderSecretResult(q);
     });
-
-    renderSecretResult(normalize(cardsSearch.value.trim()));
   }
 }
 

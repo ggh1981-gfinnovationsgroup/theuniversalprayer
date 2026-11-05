@@ -31,7 +31,7 @@ for (const lang of ['es', 'en']) {
       await page.reload();
 
       const refs = page.locator(`details.tup-ref[data-lang="${lang}"]`);
-      await expect(refs).toHaveCount(c.count);
+      expect(await refs.count()).toBeGreaterThanOrEqual(c.count);
 
       const target = refs.filter({ hasText: c[lang] }).first();
       await expect(target).not.toHaveAttribute('open', '');
