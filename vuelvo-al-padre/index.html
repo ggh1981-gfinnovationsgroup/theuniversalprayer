@@ -35,6 +35,10 @@
     .vuelvo-content { max-width: 780px; margin: 0 auto; padding: 0.5rem 1.2rem 4.4rem; }
 
     .vuelvo-card { border: 1px solid rgba(201,168,76,0.20); border-radius: 14px; background: rgba(255,255,255,0.025); margin-bottom: 1rem; overflow: hidden; }
+    .vuelvo-card[id] { scroll-margin-top: 5.5rem; }
+    @media (max-width: 374px) {
+      .vuelvo-card[id] { scroll-margin-top: 7.25rem; }
+    }
     .vuelvo-card-head { display: flex; align-items: center; gap: 0.75rem; padding: 1rem 1.15rem; border-bottom: 1px solid rgba(201,168,76,0.13); }
     .vuelvo-card-icon { font-size: 1.38rem; flex-shrink: 0; }
     .vuelvo-card-head h2 { margin: 0; font-family: var(--font-serif); color: var(--gold-light); font-size: 1.15rem; line-height: 1.3; }
@@ -42,6 +46,14 @@
     .vuelvo-text { color: rgba(255,255,255,0.78); font-size: 0.92rem; line-height: 1.80; margin: 0.55rem 0; }
     .vuelvo-text strong { color: var(--gold-light); }
     .vuelvo-text em { color: rgba(255,255,255,0.88); font-style: italic; }
+    .vuelvo-answer {
+      margin: 0.3rem 0 1rem;
+      padding: 0.55rem 1rem;
+      border: 1px solid rgba(201,168,76,0.32);
+      border-left: 4px solid var(--gold);
+      border-radius: 10px;
+      background: rgba(201,168,76,0.08);
+    }
     .vuelvo-quote {
       border-left: 3px solid rgba(201,168,76,0.50);
       padding: 0.72rem 1rem;
@@ -218,28 +230,40 @@ From you comes my fruit. Amen.</div>
     </div>
 
     <!-- 2. ¿ES VÁLIDA MI CONFESIÓN? -->
-    <div class="vuelvo-card">
+    <div class="vuelvo-card" id="validez-confesion">
       <div class="vuelvo-card-head">
         <span class="vuelvo-card-icon">📖</span>
         <h2 data-lang="es">¿Es válida mi confesión si sé que probablemente voy a caer de nuevo?</h2>
         <h2 data-lang="en" style="display:none">Is my confession valid if I know I will probably fall again?</h2>
       </div>
       <div class="vuelvo-body">
-        <p class="vuelvo-text" data-lang="es">Esta es la pregunta más importante — y el Catecismo la responde con precisión.</p>
-        <p class="vuelvo-text" data-lang="en" style="display:none">This is the most important question — and the Catechism answers it with precision.</p>
+        <div class="vuelvo-answer" data-lang="es">
+          <p class="vuelvo-text"><strong>Sí.</strong> Creer que probablemente volverás a caer no invalida, por sí solo, tu confesión. Si al confesarte te arrepientes y tienes el propósito sincero de no volver a pecar, puedes recibir válidamente la absolución aunque temas recaer.</p>
+          <p class="vuelvo-text"><strong>Una recaída posterior no anula por sí sola la confesión anterior.</strong> El propósito sincero es una decisión presente, no una garantía de que jamás caerás. No necesitas sentirte seguro ni libre de tentaciones.</p>
+          <p class="vuelvo-text"><strong>La diferencia:</strong> si al confesarte has decidido libremente seguir cometiendo ese pecado y no quieres arrepentirte ni cambiar, falta el propósito de enmienda necesario. Eso es distinto de temer una recaída o sentir deseos que no eliges.</p>
+          <p class="vuelvo-text">Esta respuesta supone una confesión sincera y la absolución del sacerdote. Si te preocupa una confesión concreta, habla con un confesor de confianza; no necesitas revisar una y otra vez tus intenciones por tu cuenta. <em>Cf. Catecismo nn. 1451-1453.</em></p>
+        </div>
+        <div class="vuelvo-answer" data-lang="en" style="display:none">
+          <p class="vuelvo-text"><strong>Yes.</strong> Believing that you will probably fall again does not, by itself, make your confession invalid. If you are sorry when you confess and sincerely resolve not to sin again, you can validly receive absolution even if you fear a relapse.</p>
+          <p class="vuelvo-text"><strong>A later relapse does not by itself undo the earlier confession.</strong> A sincere resolution is a decision in the present, not a guarantee that you will never fall. You do not need to feel certain or free from temptations.</p>
+          <p class="vuelvo-text"><strong>The difference:</strong> if, when you confess, you have freely decided to continue committing that sin and do not want to repent or change, the necessary purpose of amendment is missing. That is different from fearing a relapse or experiencing desires you do not choose.</p>
+          <p class="vuelvo-text">This answer assumes a sincere confession and absolution from a priest. If you are worried about a particular confession, speak with a trusted confessor; you do not need to examine your intentions over and over on your own. <em>Cf. Catechism nos. 1451-1453.</em></p>
+        </div>
 
         <div class="vuelvo-ccc" data-lang="es">
           <strong>Catecismo de la Iglesia Católica — nn. 1452-1453</strong>
           La Iglesia distingue dos tipos de contrición:
-          <strong style="display:inline;font-size:inherit;text-transform:none;letter-spacing:0;">Contrición perfecta</strong> — dolor por amor a Dios (el mejor tipo).
+          <strong style="display:inline;font-size:inherit;text-transform:none;letter-spacing:0;">Contrición perfecta</strong> — dolor por amor a Dios.
           <strong style="display:inline;font-size:inherit;text-transform:none;letter-spacing:0;">Contrición imperfecta (atricción)</strong> — dolor que puede surgir al considerar la fealdad del pecado o temer el castigo divino. <em>Puede disponer a recibir el perdón en el sacramento de la Penitencia.</em>
+          No necesitas sentir una emoción intensa ni tener contrición perfecta para acudir a este sacramento.
           <details class="tup-ref"><summary>Leer Catecismo, nn. 1452 y 1453</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>1452.</b> Cuando brota del amor de Dios amado sobre todas las cosas, la contrición se llama "contrición perfecta"(contrición de caridad). Semejante contrición perdona las faltas veniales; obtiene también el perdón de los pecados mortales, si comprende la firme resolución de recurrir tan pronto sea posible a la confesión sacramental (cf Concilio de Trento: DS 1677).<cite>— Catecismo de la Iglesia Católica, n. 1452</cite></blockquote><blockquote class="tup-ref-verse"><b>1453.</b> La contrición llamada "imperfecta" (o "atrición") es también un don de Dios, un impulso del Espíritu Santo. Nace de la consideración de la fealdad del pecado o del temor de la condenación eterna y de las demás penas con que es amenazado el pecador. Tal conmoción de la conciencia puede ser el comienzo de una evolución interior que culmina, bajo la acción de la gracia, en la absolución sacramental. Sin embargo, por sí misma la contrición imperfecta no alcanza el perdón de los pecados graves, pero dispone a obtenerlo en el sacramento de la Penitencia (cf Concilio de Trento: DS 1678, 1705).<cite>— Catecismo de la Iglesia Católica, n. 1453</cite></blockquote></div></details>
         </div>
         <div class="vuelvo-ccc" data-lang="en" style="display:none">
           <strong>Catechism of the Catholic Church — nn. 1452-1453</strong>
           The Church distinguishes two types of contrition:
-          <strong style="display:inline;font-size:inherit;text-transform:none;letter-spacing:0;">Perfect contrition</strong> — sorrow out of love for God (the best kind).
+          <strong style="display:inline;font-size:inherit;text-transform:none;letter-spacing:0;">Perfect contrition</strong> — sorrow out of love for God.
           <strong style="display:inline;font-size:inherit;text-transform:none;letter-spacing:0;">Imperfect contrition (attrition)</strong> — sorrow that can arise from recognizing the ugliness of sin or fearing divine punishment. <em>It can prepare us to receive forgiveness in the sacrament of Penance.</em>
+          You do not need to feel an intense emotion or have perfect contrition to approach this sacrament.
           <details class="tup-ref"><summary>Read Catechism, nos. 1452 and 1453</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>1452.</b> When it arises from a love by which God is loved above all else, contrition is called "perfect" (contrition of charity). Such contrition remits venial sins; it also obtains forgiveness of mortal sins if it includes the firm resolution to have recourse to sacramental confession as soon as possible.<cite>— Catechism of the Catholic Church, no. 1452</cite></blockquote><blockquote class="tup-ref-verse"><b>1453.</b> The contrition called "imperfect" (or "attrition") is also a gift of God, a prompting of the Holy Spirit. It is born of the consideration of sin's ugliness or the fear of eternal damnation and the other penalties threatening the sinner (contrition of fear). Such a stirring of conscience can initiate an interior process which, under the prompting of grace, will be brought to completion by sacramental absolution. By itself however, imperfect contrition cannot obtain the forgiveness of grave sins, but it disposes one to obtain forgiveness in the sacrament of Penance.<cite>— Catechism of the Catholic Church, no. 1453</cite></blockquote></div></details>
         </div>
 
@@ -398,21 +422,24 @@ From you comes my fruit. Amen.</div>
         <p class="vuelvo-text" data-lang="es"><strong>El cambio concreto: deja de prometer. Empieza a pedir.</strong></p>
         <p class="vuelvo-text" data-lang="en" style="display:none"><strong>The concrete change: stop promising. Start asking.</strong></p>
 
+        <p class="vuelvo-text" data-lang="es">Esto no elimina el propósito sincero de no pecar que se necesita para la confesión: ese propósito es una decisión presente, no un juramento que garantice el futuro.</p>
+        <p class="vuelvo-text" data-lang="en" style="display:none">This does not remove the sincere resolution not to sin that confession requires: that resolution is a present decision, not an oath guaranteeing the future.</p>
+
         <p class="vuelvo-text" data-lang="es">En vez de «Señor, te juro que nunca más» — que ya sabes que no puedes garantizar — di: <em>«Señor, ayúdame ahora. Solo este momento. Esta hora.»</em></p>
         <p class="vuelvo-text" data-lang="en" style="display:none">Instead of "Lord, I swear I will never again" — which you already know you cannot guarantee — say: <em>"Lord, help me now. Just this moment. This hour."</em></p>
 
-        <p class="vuelvo-text" data-lang="es">Eso sí lo puedes cumplir. Y cuando pases esa hora, pides la siguiente. No es rendirse — es pedirle a Dios que cargue lo que tú no puedes cargar solo.</p>
-        <p class="vuelvo-text" data-lang="en" style="display:none">That you can keep. And when that hour passes, you ask for the next one. That is not giving up — it is asking God to carry what you cannot carry alone.</p>
+        <p class="vuelvo-text" data-lang="es">Pide ayuda para este momento y vuelve a pedirla cuando lo necesites. Si caes, puedes volver a Dios y buscar acompañamiento.</p>
+        <p class="vuelvo-text" data-lang="en" style="display:none">Ask for help in this moment, and ask again whenever you need it. If you fall, you can return to God and seek support.</p>
 
         <div class="vuelvo-steps" data-lang="es">
-          <div class="vuelvo-step"><strong>Hoy mismo</strong>Si tienes una promesa rota reciente — confiésala como tal: no solo el pecado, también la promesa rota. Nombrarlo completo ayuda a soltarlo completo.</div>
+          <div class="vuelvo-step"><strong>Hoy mismo</strong>Si te preocupa una promesa que no cumpliste, puedes comentarla con tu confesor. Una promesa incumplida no constituye automáticamente un pecado adicional.</div>
           <div class="vuelvo-step"><strong>A partir de hoy</strong>Cuando sientas la tentación de prometer, para. Di en cambio: «Señor, necesito tu ayuda ahora.» Una frase. Sin drama. Sin juramentos.</div>
-          <div class="vuelvo-step"><strong>Si ya prometiste algo hoy</strong>No pasa nada. No añadas más culpa. Pide perdón por la promesa y pide ayuda para esta hora. Eso es suficiente.</div>
+          <div class="vuelvo-step"><strong>Si ya prometiste algo hoy</strong>No necesitas hacer otra promesa ni castigarte. Pide ayuda a Dios ahora y, si te preocupa, habla con tu confesor.</div>
         </div>
         <div class="vuelvo-steps" data-lang="en" style="display:none">
-          <div class="vuelvo-step"><strong>Today</strong>If you have a recent broken promise — confess it as such: not just the sin, but the broken promise too. Naming it fully helps you release it fully.</div>
+          <div class="vuelvo-step"><strong>Today</strong>If you are worried about a promise you did not keep, you can discuss it with your confessor. An unfulfilled promise is not automatically an additional sin.</div>
           <div class="vuelvo-step"><strong>From now on</strong>When you feel the urge to promise, stop. Say instead: "Lord, I need your help right now." One sentence. No drama. No oaths.</div>
-          <div class="vuelvo-step"><strong>If you already promised today</strong>That is okay. Do not pile on more guilt. Ask forgiveness for the promise and ask for help for this hour. That is enough.</div>
+          <div class="vuelvo-step"><strong>If you already promised today</strong>You do not need to make another promise or punish yourself. Ask God for help now and, if you are worried, speak with your confessor.</div>
         </div>
       </div>
     </div>

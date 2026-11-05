@@ -89,6 +89,115 @@ test.describe('guía sin JavaScript', () => {
     await expect(details.locator('.help-prayer[data-lang="es"]')).toBeVisible();
     await expect(page.locator('#cinco-minutos .quiet-steps > li')).toHaveCount(5);
   });
+
+  test('la respuesta directa sobre la confesión se puede leer', async ({ page }) => {
+    await page.goto('/vuelvo-al-padre/#validez-confesion');
+    const answer = page.locator('#validez-confesion .vuelvo-answer[data-lang="es"]');
+    await expect(answer).toBeVisible();
+    await expect(answer.locator('p').first()).toContainText('Sí.');
+    await expect(answer).toContainText('propósito sincero de no volver a pecar');
+  });
+});
+
+for (const language of ['es', 'en']) {
+  test(`la respuesta sobre la confesión es directa y distingue el propósito sincero en ${language}`, async ({ page }) => {
+    const errors = [];
+    page.on('pageerror', error => errors.push(error.message));
+    await page.addInitScript(value => localStorage.setItem('tup_lang', value), language);
+    await page.goto('/vuelvo-al-padre/#validez-confesion');
+
+    const card = page.locator('#validez-confesion');
+    const answer = card.locator(`.vuelvo-answer[data-lang="${language}"]`);
+    const other = card.locator(`.vuelvo-answer[data-lang="${language === 'es' ? 'en' : 'es'}"]`);
+    await expect(card.locator(`h2[data-lang="${language}"]`)).toBeVisible();
+    await expect(answer).toBeVisible();
+    await expect(other).toBeHidden();
+    await expect(answer.locator('p')).toHaveCount(4);
+    if (language === 'es') {
+      await expect(answer.locator('p').first()).toContainText('Sí.');
+      await expect(answer).toContainText('no invalida, por sí solo, tu confesión');
+      await expect(answer).toContainText('propósito sincero de no volver a pecar');
+      await expect(answer).toContainText('no anula por sí sola la confesión anterior');
+      await expect(answer).toContainText('has decidido libremente seguir cometiendo ese pecado');
+      await expect(answer).toContainText('la absolución del sacerdote');
+      await expect(card.locator('.vuelvo-ccc[data-lang="es"]').first()).toContainText('No necesitas sentir una emoción intensa ni tener contrición perfecta');
+    } else {
+      await expect(answer.locator('p').first()).toContainText('Yes.');
+      await expect(answer).toContainText('does not, by itself, make your confession invalid');
+      await expect(answer).toContainText('sincerely resolve not to sin again');
+      await expect(answer).toContainText('does not by itself undo the earlier confession');
+      await expect(answer).toContainText('freely decided to continue committing that sin');
+      await expect(answer).toContainText('absolution from a priest');
+      await expect(card.locator('.vuelvo-ccc[data-lang="en"]').first()).toContainText('You do not need to feel an intense emotion or have perfect contrition');
+    }
+    expect(await card.locator('.vuelvo-body').evaluate(body => body.firstElementChild.classList.contains('vuelvo-answer'))).toBe(true);
+
+    await page.locator('#langToggle').click();
+    await expect(answer).toBeHidden();
+    await expect(other).toBeVisible();
+    expect(errors).toEqual([]);
+  });
+}
+
+test('el texto sobre las promesas no contradice el propósito de enmienda', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('tup_lang', 'es'));
+  await page.goto('/vuelvo-al-padre/');
+  const promises = page.locator('.vuelvo-card').filter({
+    has: page.locator('h2[data-lang="es"]').filter({ hasText: '«Le prometí a Dios que no iba a volver a caer» — y caí' }),
+  });
+  await expect(promises).toContainText('no elimina el propósito sincero de no pecar');
+  await expect(promises).toContainText('no constituye automáticamente un pecado adicional');
+  await expect(promises).not.toContainText('confiésala como tal');
+  await page.locator('#langToggle').click();
+  await expect(promises).toContainText('does not remove the sincere resolution not to sin');
+  await expect(promises).toContainText('not automatically an additional sin');
+  await expect(promises).not.toContainText('confess it as such');
+});
+
+test('los enlaces directos dejan los títulos visibles en móvil y escritorio', async ({ page }) => {
+  test.setTimeout(60_000);
+  await page.addInitScript(() => localStorage.setItem('tup_lang', 'es'));
+  for (const width of [320, 374, 375, 390, 768, 1280]) {
+    await page.setViewportSize({ width, height: 800 });
+    for (const id of ['validez-confesion', 'oseas-14']) {
+      await page.goto(`/vuelvo-al-padre/?anchor-check=${width}-${id}#${id}`);
+      await expect(page.locator(`#${id} h2[data-lang="es"]`)).toBeVisible();
+      expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+      await expect.poll(() => page.evaluate(targetId => {
+        const target = document.getElementById(targetId);
+        return Math.abs(target.getBoundingClientRect().top - parseFloat(getComputedStyle(target).scrollMarginTop));
+      }, id), { message: `${width}px #${id} debe alcanzar su posición de destino` }).toBeLessThanOrEqual(2);
+      const geometry = await page.evaluate(targetId => ({
+        headerBottom: document.querySelector('.site-header').getBoundingClientRect().bottom,
+        targetTop: document.getElementById(targetId).getBoundingClientRect().top,
+        titleBottom: document.querySelector(`#${targetId} h2[data-lang="es"]`).getBoundingClientRect().bottom,
+        viewportHeight: window.innerHeight,
+      }), id);
+      expect(geometry.targetTop, `${width}px #${id}`).toBeGreaterThanOrEqual(geometry.headerBottom - 1);
+      expect(geometry.titleBottom, `${width}px #${id}`).toBeLessThanOrEqual(geometry.viewportHeight);
+    }
+  }
+});
+
+test.describe('respuesta sobre la confesión sin conexión', () => {
+  test.use({ serviceWorkers: 'allow' });
+
+  test('la respuesta sigue disponible en ambos idiomas', async ({ page, context }) => {
+    test.setTimeout(60_000);
+    await page.goto('/vuelvo-al-padre/');
+    await expect.poll(() => page.evaluate(() => navigator.serviceWorker.controller !== null), { timeout: 30_000 }).toBe(true);
+    await context.setOffline(true);
+    try {
+      for (const language of ['es', 'en']) {
+        await page.goto(`/vuelvo-al-padre/?lang=${language}#validez-confesion`);
+        const answer = page.locator(`#validez-confesion .vuelvo-answer[data-lang="${language}"]`);
+        await expect(answer).toBeVisible();
+        await expect(answer.locator('p').first()).toContainText(language === 'es' ? 'Sí.' : 'Yes.');
+      }
+    } finally {
+      await context.setOffline(false);
+    }
+  });
 });
 
 test('el texto pastoral evita atribuciones y garantías que aumentan la angustia', async ({ page }) => {

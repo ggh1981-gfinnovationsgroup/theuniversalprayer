@@ -6,9 +6,10 @@ Sitio web catolico bilingue (ES/EN) publicado en GitHub Pages.
 
 - Produccion activa en `main`.
 - Sitio estatico con PWA (`sw.js`) y contenido en JSON.
-- Cache actual del Service Worker: `tup-v298`.
+- Cache actual del Service Worker: `tup-v299`.
 - Adoración: 7 jornadas de 33 días en `adoracion/33dias-*/` (la más reciente: `33dias-enemigos`, para bendecir a los enemigos y entregarlos a Dios).
 - `vuelvo-al-padre/#oseas-14`: Oseas 14 completo (Biblia CEE / New American Bible), los pasos para volver (vv. 2-4), la respuesta de Dios (v. 5), una meditación y una oración propia que se puede compartir.
+- `vuelvo-al-padre/#validez-confesion`: respuesta directa sobre el temor de recaer, el arrepentimiento y el propósito sincero de enmienda.
 - Fuentes sin conexión: las páginas no enlazan a fuentes externas (Vaticano, etc.); los pasajes bíblicos, párrafos del Catecismo y extractos de documentos de la Iglesia citados se incluyen en desplegables `details.tup-ref`, marcados como «selección» cuando solo se reproduce una parte.
 - Archivos de datos JSON: 106 en `data/`.
 - Historias para ninos: fuente principal en `data/ninos-cuentos.json`.
