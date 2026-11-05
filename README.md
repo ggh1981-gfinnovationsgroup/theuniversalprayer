@@ -6,7 +6,7 @@ Sitio web catolico bilingue (ES/EN) publicado en GitHub Pages.
 
 - Produccion activa en `main`.
 - Sitio estatico con PWA (`sw.js`) y contenido en JSON.
-- Cache actual del Service Worker: `tup-v292`.
+- Cache actual del Service Worker: `tup-v293`.
 - Adoración: 7 jornadas de 33 días en `adoracion/33dias-*/` (la más reciente: `33dias-enemigos`, para bendecir a los enemigos y entregarlos a Dios).
 - Archivos de datos JSON: 106 en `data/`.
 - Historias para ninos: fuente principal en `data/ninos-cuentos.json`.
@@ -141,6 +141,7 @@ Nota: el directorio `scripts/` ya no forma parte del repo runtime.
 
 - Cada intercesor usa un JSON en `data/` con campos bilingues.
 - Existe contenido especializado para multiples secciones del sitio (oraciones, historias, meses, etc.).
+- Las siete jornadas de Adoracion y la vista independiente `adoracion/33dias/` permiten compartir la cita biblica, su referencia y la oracion de cada dia. Usan el menu nativo para compartir o copian texto y enlace al portapapeles, con confirmacion o error visible. Los enlaces `/adoracion/?jornada=enemigos&dia=1&lang=es` abren la jornada y el dia indicados, conservando el idioma compartido.
 - `novena-sagrado-corazon/` ofrece una guia bilingue, adaptada y paso a paso de la novena asociada al Padre Pio, accesible desde el menu y sin guardar las intenciones.
 - `data/ninos-cuentos.json` contiene cuentos infantiles con narrativa extendida y metadatos de lectura.
 

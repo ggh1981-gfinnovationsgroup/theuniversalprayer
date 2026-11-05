@@ -3391,6 +3391,31 @@ body {
   margin-bottom: 1.25rem;
 }
 
+.a33-share-wrap {
+  margin-bottom: 1.25rem;
+}
+.a33-share-btn {
+  min-height: 44px;
+}
+.a33-share-btn:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+.a33-share-btn:disabled {
+  opacity: .6;
+  cursor: wait;
+}
+.a33-share-status {
+  margin: .5rem 0 0;
+  color: rgba(255,255,255,.75);
+  font-size: .85rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.a33-share-status:empty {
+  margin: 0;
+}
+
 /* Act of the day */
 .a33-act-box {
   background: linear-gradient(135deg,#0f1f45,#0c1530);

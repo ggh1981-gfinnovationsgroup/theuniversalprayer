@@ -1013,13 +1013,18 @@
 
   </main>
 
+  <script src="/assets/js/adoracion-share.js"></script>
   <script>
   (function() {
     'use strict';
 
     // ── Language ──────────────────────────────────────
     const LANG_KEY = 'tup_lang';
-    let lang = localStorage.getItem(LANG_KEY) || localStorage.getItem('universalPrayerLang') || 'es';
+    const sharedParams = new URLSearchParams(window.location.search);
+    const sharedLang = sharedParams.get('lang');
+    let lang = sharedLang === 'es' || sharedLang === 'en'
+      ? sharedLang
+      : localStorage.getItem(LANG_KEY) || localStorage.getItem('universalPrayerLang') || 'es';
 
     function applyLang(l) {
       lang = l;
@@ -1121,10 +1126,10 @@
             <span style="font-family:var(--font-serif);font-size:1.05rem;color:var(--gold-light);display:none" data-lang="en">33-Day Spiritual Journeys</span>
           </div>
           <p style="font-size:0.85rem;color:rgba(255,255,255,0.62);line-height:1.65;margin:0;" data-lang="es">
-            Debajo encontrarás seis programas de 33 días, cada uno con una meditación, una escritura y una oración para cada día. <em style="color:rgba(255,255,255,0.5);">No son obligatorios</em>, pero si los haces junto con los momentos de adoración, enriquecen profundamente la oración y ayudan a comprender lo que contemplas ante el Santísimo.
+            Debajo encontrarás siete programas de 33 días, cada uno con una meditación, una escritura y una oración para cada día. <em style="color:rgba(255,255,255,0.5);">No son obligatorios</em>, pero si los haces junto con los momentos de adoración, enriquecen profundamente la oración y ayudan a comprender lo que contemplas ante el Santísimo.
           </p>
           <p style="font-size:0.85rem;color:rgba(255,255,255,0.62);line-height:1.65;margin:0;display:none" data-lang="en">
-            Below you will find six 33-day programs, each with a meditation, scripture, and prayer for each day. <em style="color:rgba(255,255,255,0.5);">They are not mandatory</em>, but praying them alongside the adoration moments deeply enriches your prayer and helps you understand what you contemplate before the Blessed Sacrament.
+            Below you will find seven 33-day programs, each with a meditation, scripture, and prayer for each day. <em style="color:rgba(255,255,255,0.5);">They are not mandatory</em>, but praying them alongside the adoration moments deeply enriches your prayer and helps you understand what you contemplate before the Blessed Sacrament.
           </p>
         `;
         ttsBar.insertAdjacentElement('afterend', hdr);
@@ -1147,7 +1152,8 @@
       ador33Body.style.display = open ? 'none' : '';
       ador33Toggle.setAttribute('aria-expanded', String(!open));
       ador33Chev.classList.toggle('open', !open);
-      if (!open && !window._a33Inited) { init33Days(); window._a33Inited = true; }
+      if (!open && !window._a33Inited) window._a33Inited = init33Days();
+      return window._a33Inited;
     }
     ador33Toggle.addEventListener('click', toggle33);
     ador33Toggle.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle33(); } });
@@ -1207,6 +1213,7 @@
     }
 
     function a33PopulateModal(day) {
+      window.tup33Share.clearStatus($a33Over);
       const l = lang;
       document.getElementById('mdDayNum').textContent    = (l === 'en' ? 'Day ' : 'Día ') + day.n;
       document.getElementById('mdTitle').textContent     = day.theme[l] || day.theme.es;
@@ -1330,7 +1337,8 @@
       adorSangre33Body.style.display = open ? 'none' : '';
       adorSangre33Toggle.setAttribute('aria-expanded', String(!open));
       adorSangre33Chev.classList.toggle('open', !open);
-      if (!open && !window._ps33Inited) { initPs33Days(); window._ps33Inited = true; }
+      if (!open && !window._ps33Inited) window._ps33Inited = initPs33Days();
+      return window._ps33Inited;
     }
     adorSangre33Toggle.addEventListener('click', toggleSangre33);
     adorSangre33Toggle.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleSangre33(); } });
@@ -1367,6 +1375,7 @@
     }
 
     function ps33PopulateModal(day) {
+      window.tup33Share.clearStatus($ps33Over);
       const l = lang;
       document.getElementById('ps33DayNum').textContent   = (l === 'en' ? 'Day ' : 'Día ') + day.n;
       document.getElementById('ps33Title').textContent    = day.theme[l] || day.theme.es;
@@ -1488,7 +1497,8 @@
       adorMis33Body.style.display = open ? 'none' : '';
       adorMis33Toggle.setAttribute('aria-expanded', String(!open));
       adorMis33Chev.classList.toggle('open', !open);
-      if (!open && !window._dm33Inited) { initDm33Days(); window._dm33Inited = true; }
+      if (!open && !window._dm33Inited) window._dm33Inited = initDm33Days();
+      return window._dm33Inited;
     }
     adorMis33Toggle.addEventListener('click', toggleMis33);
     adorMis33Toggle.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleMis33(); } });
@@ -1524,6 +1534,7 @@
     }
 
     function dm33PopulateModal(day) {
+      window.tup33Share.clearStatus($dm33Over);
       const l = lang;
       document.getElementById('dm33DayNum').textContent   = (l === 'en' ? 'Day ' : 'Día ') + day.n;
       document.getElementById('dm33Title').textContent    = day.theme[l] || day.theme.es;
@@ -1630,7 +1641,8 @@
       adorFam33Body.style.display = open ? 'none' : '';
       adorFam33Toggle.setAttribute('aria-expanded', String(!open));
       adorFam33Chev.classList.toggle('open', !open);
-      if (!open && !window._fam33Inited) { initFam33Days(); window._fam33Inited = true; }
+      if (!open && !window._fam33Inited) window._fam33Inited = initFam33Days();
+      return window._fam33Inited;
     }
     adorFam33Toggle.addEventListener('click', toggleFam33);
     adorFam33Toggle.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleFam33(); } });
@@ -1666,6 +1678,7 @@
     }
 
     function fam33PopulateModal(day) {
+      window.tup33Share.clearStatus($fam33Over);
       const l = lang;
       document.getElementById('fam33DayNum').textContent   = (l === 'en' ? 'Day ' : 'Día ') + day.n;
       document.getElementById('fam33Title').textContent    = day.theme[l] || day.theme.es;
@@ -1772,7 +1785,8 @@
       adorSalud33Body.style.display = open ? 'none' : '';
       adorSalud33Toggle.setAttribute('aria-expanded', String(!open));
       adorSalud33Chev.classList.toggle('open', !open);
-      if (!open && !window._sal33Inited) { initSal33Days(); window._sal33Inited = true; }
+      if (!open && !window._sal33Inited) window._sal33Inited = initSal33Days();
+      return window._sal33Inited;
     }
     adorSalud33Toggle.addEventListener('click', toggleSalud33);
     adorSalud33Toggle.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleSalud33(); } });
@@ -1808,6 +1822,7 @@
     }
 
     function sal33PopulateModal(day) {
+      window.tup33Share.clearStatus($sal33Over);
       const l = lang;
       document.getElementById('sal33DayNum').textContent   = (l === 'en' ? 'Day ' : 'Día ') + day.n;
       document.getElementById('sal33Title').textContent    = day.theme[l] || day.theme.es;
@@ -1914,7 +1929,8 @@
       adorConv33Body.style.display = open ? 'none' : '';
       adorConv33Toggle.setAttribute('aria-expanded', String(!open));
       adorConv33Chev.classList.toggle('open', !open);
-      if (!open && !window._conv33Inited) { initConv33Days(); window._conv33Inited = true; }
+      if (!open && !window._conv33Inited) window._conv33Inited = initConv33Days();
+      return window._conv33Inited;
     }
     adorConv33Toggle.addEventListener('click', toggleConv33);
     adorConv33Toggle.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleConv33(); } });
@@ -1950,6 +1966,7 @@
     }
 
     function conv33PopulateModal(day) {
+      window.tup33Share.clearStatus($conv33Over);
       const l = lang;
       document.getElementById('conv33DayNum').textContent   = (l === 'en' ? 'Day ' : 'Día ') + day.n;
       document.getElementById('conv33Title').textContent    = day.theme[l] || day.theme.es;
@@ -2056,7 +2073,8 @@
       adorEne33Body.style.display = open ? 'none' : '';
       adorEne33Toggle.setAttribute('aria-expanded', String(!open));
       adorEne33Chev.classList.toggle('open', !open);
-      if (!open && !window._ene33Inited) { initEne33Days(); window._ene33Inited = true; }
+      if (!open && !window._ene33Inited) window._ene33Inited = initEne33Days();
+      return window._ene33Inited;
     }
     adorEne33Toggle.addEventListener('click', toggleEne33);
     adorEne33Toggle.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleEne33(); } });
@@ -2092,6 +2110,7 @@
     }
 
     function ene33PopulateModal(day) {
+      window.tup33Share.clearStatus($ene33Over);
       const l = lang;
       document.getElementById('ene33DayNum').textContent   = (l === 'en' ? 'Day ' : 'Día ') + day.n;
       document.getElementById('ene33Title').textContent    = day.theme[l] || day.theme.es;
@@ -2172,7 +2191,77 @@
       ene33Progress();
     }
 
-    window.addEventListener('tup:langchange', () => { if (window._ene33Inited) ene33RenderList(); });
+    const journeys33 = [
+      { id: 'adoracion', overlay: $a33Over, current: () => a33Current, days: () => a33Dias,
+        toggle: toggle33, open: a33OpenModal, render: a33RenderList, populate: a33PopulateModal },
+      { id: 'sangre', overlay: $ps33Over, current: () => ps33Current, days: () => ps33Dias,
+        toggle: toggleSangre33, open: ps33OpenModal, render: ps33RenderList, populate: ps33PopulateModal },
+      { id: 'misericordia', overlay: $dm33Over, current: () => dm33Current, days: () => dm33Dias,
+        toggle: toggleMis33, open: dm33OpenModal, render: dm33RenderList, populate: dm33PopulateModal },
+      { id: 'familia', overlay: $fam33Over, current: () => fam33Current, days: () => fam33Dias,
+        toggle: toggleFam33, open: fam33OpenModal, render: fam33RenderList, populate: fam33PopulateModal },
+      { id: 'salud', overlay: $sal33Over, current: () => sal33Current, days: () => sal33Dias,
+        toggle: toggleSalud33, open: sal33OpenModal, render: sal33RenderList, populate: sal33PopulateModal },
+      { id: 'conversion', overlay: $conv33Over, current: () => conv33Current, days: () => conv33Dias,
+        toggle: toggleConv33, open: conv33OpenModal, render: conv33RenderList, populate: conv33PopulateModal },
+      { id: 'enemigos', overlay: $ene33Over, current: () => ene33Current, days: () => ene33Dias,
+        toggle: toggleEne33, open: ene33OpenModal, render: ene33RenderList, populate: ene33PopulateModal },
+    ];
+
+    journeys33.forEach(journey => {
+      const section = journey.overlay.closest('.ador-33dias-section');
+      window.tup33Share.attach({
+        series: journey.id,
+        overlay: journey.overlay,
+        getDay: journey.current,
+        getLang: () => lang,
+        getTitle: l => section.querySelector(`.ador-33dias-title[data-lang="${l}"]`).textContent,
+      });
+    });
+
+    window.addEventListener('tup:langchange', () => {
+      journeys33.forEach(journey => {
+        if (Object.keys(journey.days()).length) journey.render();
+        const day = journey.current();
+        if (day) journey.populate(day);
+      });
+    });
+
+    async function openLinked33Day() {
+      const series = sharedParams.get('jornada');
+      const dayParam = sharedParams.get('dia');
+      if (series === null && dayParam === null) return;
+
+      const journey = journeys33.find(item => item.id === series);
+      const dayNumber = Number(dayParam);
+      if (!journey || !/^\d{1,2}$/.test(dayParam || '') || dayNumber < 1 || dayNumber > 33 ||
+          (sharedLang !== null && sharedLang !== 'es' && sharedLang !== 'en')) {
+        console.error('Enlace de jornada no válido:', series, dayParam, sharedLang);
+        alert(lang === 'en'
+          ? 'Invalid journey link. Choose a journey and a day from the list.'
+          : 'El enlace de la jornada no es válido. Elige una jornada y un día de la lista.');
+        return;
+      }
+
+      try {
+        await journey.toggle();
+        // Cerrar la jornada durante la carga cancela la apertura automática.
+        const header = journey.overlay.closest('.ador-33dias-section').querySelector('.ador-33dias-header');
+        if (header.getAttribute('aria-expanded') !== 'true') return;
+        const day = journey.days()[dayNumber];
+        if (!day) throw new Error(`No se pudo cargar ${series}, día ${dayNumber}`);
+        journey.open(day);
+        journey.overlay.querySelector('.a33-modal-close').focus({ preventScroll: true });
+      } catch (error) {
+        console.error('No se pudo abrir el día compartido:', error);
+        alert(lang === 'en'
+          ? 'Could not load the shared day. Check your connection and reload the page.'
+          : 'No se pudo cargar el día compartido. Comprueba tu conexión y recarga la página.');
+      }
+    }
+
+    applyLang(lang);
+    openLinked33Day();
 
   })();
   </script>

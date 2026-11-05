@@ -153,6 +153,7 @@
     <a href="/" class="a33-footer-link" data-lang="en" style="display:none">Home</a>
   </footer>
 
+  <script src="/assets/js/adoracion-share.js"></script>
   <script>
   (function () {
     'use strict';
@@ -284,6 +285,7 @@
 
     /* ── Modal ────────────────────────────────────── */
     function populateModal (day) {
+      window.tup33Share.clearStatus($overlay);
       const l = lang;
       $mdDayNum.textContent  = (l === 'en' ? 'Day ' : 'Día ') + day.n;
       $mdTitle.textContent   = day.theme[l] || day.theme.es;
@@ -418,6 +420,14 @@
       results.forEach(d => { if (d) DIAS_33[d.n] = d; });
       applyLang(lang);
     }
+
+    window.tup33Share.attach({
+      series: 'adoracion',
+      overlay: $overlay,
+      getDay: () => currentDay,
+      getLang: () => lang,
+      getTitle: l => l === 'en' ? '33 Days of Adoration' : '33 Días de Adoración',
+    });
 
     /* ── Boot ─────────────────────────────────────── */
     initDays();
