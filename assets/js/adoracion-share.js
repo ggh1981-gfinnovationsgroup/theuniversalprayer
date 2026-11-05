@@ -6,27 +6,6 @@
     if (status) status.textContent = '';
   }
 
-  async function copyText(text, container) {
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      await navigator.clipboard.writeText(text);
-      return;
-    }
-
-    const previousFocus = document.activeElement;
-    const input = document.createElement('textarea');
-    input.value = text;
-    input.setAttribute('readonly', '');
-    input.style.cssText = 'position:fixed;top:0;left:0;opacity:0;';
-    container.appendChild(input);
-    try {
-      input.select();
-      if (!document.execCommand('copy')) throw new Error('Clipboard copy was rejected');
-    } finally {
-      input.remove();
-      if (previousFocus instanceof HTMLElement) previousFocus.focus({ preventScroll: true });
-    }
-  }
-
   function attach({ series, overlay, getDay, getLang, getTitle }) {
     const wrap = document.createElement('div');
     wrap.className = 'a33-share-wrap';
@@ -73,33 +52,24 @@
         if (getDay() === day && getLang() === language) status.textContent = message;
       };
 
+      if (typeof navigator.share !== 'function') {
+        showStatus(english
+          ? 'This browser does not support native sharing. Open this day in a compatible browser, such as Chrome or Safari on your phone.'
+          : 'Este navegador no admite el menú nativo para compartir. Abre este día en un navegador compatible, como Chrome o Safari en tu teléfono.');
+        return;
+      }
+
       const previousFocus = document.activeElement;
       button.disabled = true;
-      let nativeShareFailed = false;
       try {
-        if (navigator.share) {
-          try {
-            await navigator.share(payload);
-            showStatus(english ? 'Shared.' : 'Compartido.');
-            return;
-          } catch (error) {
-            if (error && error.name === 'AbortError') return;
-            console.error('No se pudo abrir el menú para compartir:', error);
-            nativeShareFailed = true;
-          }
-        }
-
-        try {
-          await copyText(`${payload.text}\n\n${payload.url}`, wrap);
-          showStatus(nativeShareFailed
-            ? (english ? 'The share menu could not open. Verse, prayer, and link copied.' : 'No se pudo abrir Compartir. Se copiaron la cita, la oración y el enlace.')
-            : (english ? 'Verse, prayer, and link copied.' : 'Cita, oración y enlace copiados.'));
-        } catch (error) {
-          console.error('No se pudieron copiar la cita, la oración y el enlace:', error);
-          showStatus(english
-            ? 'Could not share or copy. Try again or copy the text manually.'
-            : 'No se pudo compartir ni copiar. Inténtalo de nuevo o copia el texto manualmente.');
-        }
+        await navigator.share(payload);
+        showStatus(english ? 'Share menu opened.' : 'Se abrió el menú para compartir.');
+      } catch (error) {
+        if (error && error.name === 'AbortError') return;
+        console.error('No se pudo abrir el menú para compartir:', error);
+        showStatus(english
+          ? 'Could not open the share menu. Try again or open this day in a compatible browser.'
+          : 'No se pudo abrir el menú para compartir. Inténtalo de nuevo o abre este día en un navegador compatible.');
       } finally {
         button.disabled = false;
         if (previousFocus === button && document.activeElement === document.body && getDay() === day) {

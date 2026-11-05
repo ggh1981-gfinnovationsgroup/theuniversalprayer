@@ -26,10 +26,13 @@ async function mockSharing(page, mode, language) {
     localStorage.setItem('tup_lang', language);
     sessionStorage.removeItem('shared-day');
     sessionStorage.removeItem('copied-day');
+    sessionStorage.removeItem('legacy-copy');
+    sessionStorage.removeItem('share-activation');
     Object.defineProperty(navigator, 'share', {
       configurable: true,
       value: ['native', 'cancel', 'share-error'].includes(mode)
         ? async data => {
+          sessionStorage.setItem('share-activation', String(navigator.userActivation.isActive));
           if (mode === 'cancel') throw new DOMException('Cancelled', 'AbortError');
           if (mode === 'share-error') throw new DOMException('Share denied', 'NotAllowedError');
           sessionStorage.setItem('shared-day', JSON.stringify(data));
@@ -38,22 +41,16 @@ async function mockSharing(page, mode, language) {
     });
     Object.defineProperty(navigator, 'clipboard', {
       configurable: true,
-      value: mode.startsWith('legacy') ? undefined : {
+      value: {
         writeText: async text => {
-          if (mode === 'clipboard-error') throw new DOMException('Copy denied', 'NotAllowedError');
           sessionStorage.setItem('copied-day', text);
         },
       },
     });
-    if (mode.startsWith('legacy')) {
-      document.execCommand = command => {
-        if (mode === 'legacy-error') return false;
-        const input = document.querySelector('.a33-share-wrap textarea');
-        if (command !== 'copy' || !(input instanceof HTMLTextAreaElement)) return false;
-        sessionStorage.setItem('copied-day', input.value);
-        return true;
-      };
-    }
+    document.execCommand = command => {
+      if (command === 'copy') sessionStorage.setItem('legacy-copy', 'attempted');
+      return true;
+    };
   }, { mode, language });
 }
 
@@ -95,7 +92,7 @@ for (const journey of JOURNEYS) {
           const shareButton = overlay.getByRole('button', { name: language === 'en' ? 'Share verse and prayer' : 'Compartir cita y oración' });
           await expect(shareButton).toBeInViewport();
           await shareButton.click();
-          await expect(overlay.getByRole('status')).toHaveText(language === 'en' ? 'Shared.' : 'Compartido.');
+          await expect(overlay.getByRole('status')).toHaveText(language === 'en' ? 'Share menu opened.' : 'Se abrió el menú para compartir.');
           const payload = await getPayload(page);
           const title = `${heading.trim()} — ${language === 'en' ? 'Day' : 'Día'} ${day}: ${data.theme[language]}`;
           const url = new URL('/adoracion/', page.url());
@@ -130,6 +127,8 @@ for (const journey of JOURNEYS) {
       }
 
       await expect(page.locator(`#${journey.prefix}DoneCount`)).toHaveText('0');
+      expect(await page.evaluate(() => sessionStorage.getItem('copied-day'))).toBeNull();
+      expect(await page.evaluate(() => sessionStorage.getItem('legacy-copy'))).toBeNull();
       expect(errors).toEqual([]);
       await recipient.close();
     });
@@ -159,18 +158,17 @@ for (const language of ['es', 'en']) {
     }
   });
 
-  test(`sin menú nativo copia cita, oración y enlace (${language})`, async ({ page }) => {
-    await mockSharing(page, 'clipboard', language);
+  test(`sin menú nativo informa sin copiar al portapapeles (${language})`, async ({ page }) => {
+    await mockSharing(page, 'unsupported', language);
     await page.goto(`/adoracion/?jornada=enemigos&dia=7&lang=${language}`);
     const overlay = page.locator('#ene33ModalOverlay');
-    const data = loadDay('33dias-enemigos', 7);
     await overlay.locator('.a33-share-btn').click();
-    await expect(overlay.getByRole('status')).toHaveText(language === 'en' ? 'Verse, prayer, and link copied.' : 'Cita, oración y enlace copiados.');
-    const text = await page.evaluate(() => sessionStorage.getItem('copied-day'));
-    expect(text).toContain(data.verse[language]);
-    expect(text).toContain(data.verse.ref);
-    expect(text).toContain(data.prayer[language]);
-    expect(text).toContain(`/adoracion/?jornada=enemigos&dia=7&lang=${language}`);
+    await expect(overlay.getByRole('status')).toHaveText(language === 'en'
+      ? 'This browser does not support native sharing. Open this day in a compatible browser, such as Chrome or Safari on your phone.'
+      : 'Este navegador no admite el menú nativo para compartir. Abre este día en un navegador compatible, como Chrome o Safari en tu teléfono.');
+    await expect(overlay.locator('.a33-share-btn')).toBeEnabled();
+    expect(await page.evaluate(() => sessionStorage.getItem('copied-day'))).toBeNull();
+    expect(await page.evaluate(() => sessionStorage.getItem('legacy-copy'))).toBeNull();
   });
 }
 
@@ -184,40 +182,39 @@ test('cancelar Compartir no copia ni informa un error', async ({ page }) => {
   await expect(button).toBeEnabled();
   await expect(page.locator('#ene33ModalOverlay .a33-share-status')).toBeEmpty();
   expect(await page.evaluate(() => sessionStorage.getItem('copied-day'))).toBeNull();
+  expect(await page.evaluate(() => sessionStorage.getItem('legacy-copy'))).toBeNull();
   expect(errors.filter(message => message.includes('compartir') || message.includes('copiar'))).toEqual([]);
 });
 
-test('un fallo del menú nativo se informa y permite copiar el contenido', async ({ page }) => {
+test('un fallo del menú nativo se informa sin copiar el contenido', async ({ page }) => {
   await mockSharing(page, 'share-error', 'es');
+  const errors = [];
+  page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
   await page.goto('/adoracion/?jornada=enemigos&dia=1&lang=es');
   const overlay = page.locator('#ene33ModalOverlay');
   await overlay.locator('.a33-share-btn').click();
-  await expect(overlay.getByRole('status')).toHaveText('No se pudo abrir Compartir. Se copiaron la cita, la oración y el enlace.');
-  expect(await page.evaluate(() => sessionStorage.getItem('copied-day'))).toContain(loadDay('33dias-enemigos', 1).prayer.es);
+  await expect(overlay.getByRole('status')).toHaveText('No se pudo abrir el menú para compartir. Inténtalo de nuevo o abre este día en un navegador compatible.');
+  expect(errors.some(message => message.includes('No se pudo abrir el menú para compartir'))).toBe(true);
+  expect(await page.evaluate(() => sessionStorage.getItem('copied-day'))).toBeNull();
+  expect(await page.evaluate(() => sessionStorage.getItem('legacy-copy'))).toBeNull();
   await expect(overlay.locator('.a33-share-btn')).toBeEnabled();
 });
 
-for (const mode of ['clipboard-error', 'legacy', 'legacy-error']) {
-  test(`portapapeles: ${mode}`, async ({ page }) => {
-    await mockSharing(page, mode, 'es');
-    await page.goto('/adoracion/?jornada=enemigos&dia=1&lang=es');
-    const overlay = page.locator('#ene33ModalOverlay');
-    const button = overlay.locator('.a33-share-btn');
-    await button.click();
-    await expect(button).toBeEnabled();
-    await expect(overlay.locator('textarea')).toHaveCount(0);
-    const copied = await page.evaluate(() => sessionStorage.getItem('copied-day'));
-    if (mode === 'legacy') {
-      await expect(overlay.getByRole('status')).toHaveText('Cita, oración y enlace copiados.');
-      expect(copied).toContain(loadDay('33dias-enemigos', 1).prayer.es);
-      expect(copied).toContain('/adoracion/?jornada=enemigos&dia=1&lang=es');
-      await expect(button).toBeFocused();
-    } else {
-      await expect(overlay.getByRole('status')).toHaveText('No se pudo compartir ni copiar. Inténtalo de nuevo o copia el texto manualmente.');
-      expect(copied).toBeNull();
-    }
-  });
-}
+test('el botón invoca el menú nativo desde la pulsación sin copiar', async ({ page }) => {
+  await mockSharing(page, 'native', 'es');
+  await page.goto('/adoracion/?jornada=enemigos&dia=1&lang=es');
+  const overlay = page.locator('#ene33ModalOverlay');
+  const button = overlay.locator('.a33-share-btn');
+  await button.click();
+  await expect(overlay.getByRole('status')).toHaveText('Se abrió el menú para compartir.');
+  const payload = await getPayload(page);
+  expect(payload.text).toContain(loadDay('33dias-enemigos', 1).prayer.es);
+  expect(new URL(payload.url).searchParams.get('dia')).toBe('1');
+  expect(await page.evaluate(() => sessionStorage.getItem('share-activation'))).toBe('true');
+  expect(await page.evaluate(() => sessionStorage.getItem('copied-day'))).toBeNull();
+  expect(await page.evaluate(() => sessionStorage.getItem('legacy-copy'))).toBeNull();
+  await expect(button).toBeEnabled();
+});
 
 test('compartir otro día no reutiliza los parámetros del enlace recibido', async ({ page }) => {
   await mockSharing(page, 'native', 'es');
@@ -241,7 +238,7 @@ test('el cambio de idioma mantiene el contenido visible y compartido sincronizad
     await page.locator(`#${journey.prefix}List .a33-card`).nth(16).click();
     const overlay = page.locator(`#${journey.prefix}ModalOverlay`);
     await overlay.locator('.a33-share-btn').click();
-    await expect(overlay.getByRole('status')).toHaveText('Compartido.');
+    await expect(overlay.getByRole('status')).toHaveText('Se abrió el menú para compartir.');
     await page.locator('#langToggle').dispatchEvent('click');
     await expect(overlay.locator('.a33-share-status')).toBeEmpty();
     await expect(overlay.getByRole('status')).toBeAttached();
@@ -319,15 +316,16 @@ test('cerrar la jornada mientras carga no deja la página bloqueada', async ({ p
 });
 
 for (const { width, language } of [{ width: 320, language: 'es' }, { width: 390, language: 'en' }]) {
-  test(`compartir en móvil mantiene el botón y la confirmación dentro de la pantalla (${width}px)`, async ({ page }) => {
+  test(`compartir en móvil mantiene el botón y el aviso dentro de la pantalla (${width}px)`, async ({ page }) => {
     await page.setViewportSize({ width, height: 800 });
-    await mockSharing(page, 'clipboard', language);
+    await mockSharing(page, 'unsupported', language);
     await page.goto(`/adoracion/?jornada=salud&dia=33&lang=${language}`);
     const wrap = page.locator('#sal33ModalOverlay .a33-share-wrap');
     const button = wrap.locator('.a33-share-btn');
     await button.click();
     await expect(wrap.getByRole('status')).toHaveText(language === 'en'
-      ? 'Verse, prayer, and link copied.' : 'Cita, oración y enlace copiados.');
+      ? 'This browser does not support native sharing. Open this day in a compatible browser, such as Chrome or Safari on your phone.'
+      : 'Este navegador no admite el menú nativo para compartir. Abre este día en un navegador compatible, como Chrome o Safari en tu teléfono.');
     const box = await button.boundingBox();
     if (!box) throw new Error('El botón Compartir no tiene dimensiones visibles');
     expect(box.x).toBeGreaterThanOrEqual(0);
