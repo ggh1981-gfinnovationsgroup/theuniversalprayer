@@ -92,7 +92,9 @@ for (const journey of JOURNEYS) {
         await test.step(`día ${day}: cita, oración y enlace directo`, async () => {
           const data = loadDay(journey.folder, day);
           await cards.nth(day - 1).click();
-          await overlay.getByRole('button', { name: language === 'en' ? 'Share verse and prayer' : 'Compartir cita y oración' }).click();
+          const shareButton = overlay.getByRole('button', { name: language === 'en' ? 'Share verse and prayer' : 'Compartir cita y oración' });
+          await expect(shareButton).toBeInViewport();
+          await shareButton.click();
           await expect(overlay.getByRole('status')).toHaveText(language === 'en' ? 'Shared.' : 'Compartido.');
           const payload = await getPayload(page);
           const title = `${heading.trim()} — ${language === 'en' ? 'Day' : 'Día'} ${day}: ${data.theme[language]}`;

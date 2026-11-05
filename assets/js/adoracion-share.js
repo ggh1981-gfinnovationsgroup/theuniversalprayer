@@ -41,7 +41,7 @@
     status.className = 'a33-share-status';
     status.setAttribute('role', 'status');
     wrap.append(button, status);
-    overlay.querySelector('.a33-modal-prayer').insertAdjacentElement('afterend', wrap);
+    overlay.querySelector('.a33-modal-verse').insertAdjacentElement('afterend', wrap);
 
     button.addEventListener('click', async () => {
       clearStatus(overlay);
