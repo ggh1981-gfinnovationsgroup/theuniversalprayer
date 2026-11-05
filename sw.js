@@ -3,10 +3,11 @@
    Offline support for precached and previously cached resources
    ===================================================== */
 
-const CACHE = 'tup-v293';
+const CACHE = 'tup-v294';
 const CRITICAL_CORE_URLS = new Set([
   '/assets/js/main.js',
   '/assets/js/menu.js',
+  '/assets/js/adoracion-share.js',
   '/assets/css/styles.css',
 ]);
 

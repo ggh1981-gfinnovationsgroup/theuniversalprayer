@@ -6,7 +6,7 @@ Sitio web catolico bilingue (ES/EN) publicado en GitHub Pages.
 
 - Produccion activa en `main`.
 - Sitio estatico con PWA (`sw.js`) y contenido en JSON.
-- Cache actual del Service Worker: `tup-v293`.
+- Cache actual del Service Worker: `tup-v294`.
 - Adoración: 7 jornadas de 33 días en `adoracion/33dias-*/` (la más reciente: `33dias-enemigos`, para bendecir a los enemigos y entregarlos a Dios).
 - Archivos de datos JSON: 106 en `data/`.
 - Historias para ninos: fuente principal en `data/ninos-cuentos.json`.
