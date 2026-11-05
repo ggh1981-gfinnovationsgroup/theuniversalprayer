@@ -5,7 +5,7 @@
 
 'use strict';
 
-const APP_VERSION = 'v2026.07.24-4';
+const APP_VERSION = 'v2026.07.24-5';
 
 function withAssetVersion(url) {
   if (!url) return url;
@@ -45,7 +45,7 @@ const i18n = {
     footer_text:             'A free Catholic devotional resource. No ads. No tracking.',
     universal_prayer_title:  'The Universal and Definitive Prayer',
     universal_prayer_dedication: 'For every person who prays it — alone, as a couple, as a family or in a group',
-    menu_title:              'Intercessors',
+    menu_title:              'Menu',
     search_placeholder:      'Search by saint name, intention or situation (min. 3 letters)...',
   },
   es: {
@@ -77,7 +77,7 @@ const i18n = {
     footer_text:             'Un recurso devocional católico gratuito. Sin anuncios. Sin rastreo.',
     universal_prayer_title:  'La Oración Universal y Definitiva',
     universal_prayer_dedication: 'Para toda persona que la rece — solo, en pareja, en familia o en grupo',
-    menu_title:              'Intercesores',
+    menu_title:              'Menú',
     search_placeholder:      'Busca por nombre del santo/intercesor, motivo o situación...',
   },
 };

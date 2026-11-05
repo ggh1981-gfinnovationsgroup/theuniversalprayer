@@ -102,33 +102,68 @@
   }
 
   function injectNav() {
-    if (document.getElementById('sideNav')) return; // already in page HTML
+    let nav = document.getElementById('sideNav');
+    if (!nav) {
+      const overlay = document.createElement('div');
+      overlay.className = 'side-nav-overlay';
+      overlay.id = 'sideNavOverlay';
 
-    const overlay = document.createElement('div');
-    overlay.className = 'side-nav-overlay';
-    overlay.id = 'sideNavOverlay';
+      nav = document.createElement('nav');
+      nav.className = 'side-nav';
+      nav.id = 'sideNav';
+      nav.setAttribute('aria-label', 'Site menu');
+      nav.innerHTML =
+        '<div class="side-nav-header">' +
+          '<span class="side-nav-title" id="sideNavTitleEs">Men\u00fa</span>' +
+          '<span class="side-nav-title" id="sideNavTitleEn" style="display:none">Menu</span>' +
+          '<button class="side-nav-close" id="sideNavClose" aria-label="Close menu">\u2715</button>' +
+        '</div>' +
+        '<ul class="side-nav-list" id="sideNavList"></ul>';
 
-    const nav = document.createElement('nav');
-    nav.className = 'side-nav';
-    nav.id = 'sideNav';
-    nav.setAttribute('aria-label', 'Site menu');
-    nav.innerHTML =
-      '<div class="side-nav-header">' +
-        '<span class="side-nav-title" id="sideNavTitleEs">Men\u00fa</span>' +
-        '<span class="side-nav-title" id="sideNavTitleEn" style="display:none">Menu</span>' +
-        '<button class="side-nav-close" id="sideNavClose" aria-label="Close menu">\u2715</button>' +
-      '</div>' +
-      '<ul class="side-nav-list" id="sideNavList"></ul>';
-
-    // Insert right after <header>
-    const header = document.querySelector('header');
-    if (header && header.nextSibling) {
-      header.parentNode.insertBefore(nav, header.nextSibling);
-      header.parentNode.insertBefore(overlay, nav);
-    } else {
-      document.body.appendChild(overlay);
-      document.body.appendChild(nav);
+      // Insert right after <header>
+      const header = document.querySelector('header');
+      if (header && header.nextSibling) {
+        header.parentNode.insertBefore(nav, header.nextSibling);
+        header.parentNode.insertBefore(overlay, nav);
+      } else {
+        document.body.appendChild(overlay);
+        document.body.appendChild(nav);
+      }
     }
+
+    const list = nav.querySelector('#sideNavList');
+    if (list && !nav.querySelector('#sideNavSearch')) {
+      const search = document.createElement('div');
+      search.className = 'side-nav-search';
+      search.innerHTML =
+        '<label id="sideNavSearchLabel" for="sideNavSearch">Buscar en el men\u00fa</label>' +
+        '<input id="sideNavSearch" type="search" autocomplete="off" spellcheck="false" aria-controls="sideNavList">' +
+        '<p id="sideNavSearchEmpty" class="side-nav-search-empty" role="status" hidden></p>';
+      list.parentNode.insertBefore(search, list);
+    }
+  }
+
+  function normalizeSearch(value) {
+    return value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  }
+
+  function filterItems(lang) {
+    const input = document.getElementById('sideNavSearch');
+    const list = document.getElementById('sideNavList');
+    const empty = document.getElementById('sideNavSearchEmpty');
+    if (!input || !list || !empty) return;
+
+    const terms = normalizeSearch(input.value.trim()).split(/\s+/).filter(Boolean);
+    let visible = 0;
+    list.querySelectorAll('li').forEach(function (item) {
+      const text = normalizeSearch(item.textContent);
+      const matches = terms.every(function (term) { return text.includes(term); });
+      item.hidden = !matches;
+      if (matches) visible++;
+    });
+
+    empty.textContent = lang === 'es' ? 'No se encontraron elementos del men\u00fa.' : 'No menu items found.';
+    empty.hidden = terms.length === 0 || visible > 0;
   }
 
   function renderItems(lang) {
@@ -161,6 +196,19 @@
     var en = document.getElementById('sideNavTitleEn');
     if (es) es.style.display = L ? '' : 'none';
     if (en) en.style.display = L ? 'none' : '';
+
+    var nav = document.getElementById('sideNav');
+    var close = document.getElementById('sideNavClose');
+    var search = document.getElementById('sideNavSearch');
+    var searchLabel = document.getElementById('sideNavSearchLabel');
+    if (nav) {
+      nav.setAttribute('aria-label', L ? 'Men\u00fa del sitio' : 'Site menu');
+      nav.dataset.menuLanguage = L ? 'es' : 'en';
+    }
+    if (close) close.setAttribute('aria-label', L ? 'Cerrar men\u00fa' : 'Close menu');
+    if (searchLabel) searchLabel.textContent = L ? 'Buscar en el men\u00fa' : 'Search the menu';
+    if (search) search.placeholder = L ? 'Buscar una secci\u00f3n' : 'Search for a section';
+    filterItems(lang);
   }
 
   function initSiteMenu() {
@@ -173,21 +221,43 @@
     var overlay  = document.getElementById('sideNavOverlay');
     var closeBtn = document.getElementById('sideNavClose');
 
-    if (!btn || !nav) return;
+    if (!btn || !nav || nav.dataset.menuInitialized) return;
+    nav.dataset.menuInitialized = 'true';
+    btn.setAttribute('aria-controls', nav.id);
+    btn.setAttribute('aria-expanded', 'false');
 
-    var openNav  = function () { nav.classList.add('open'); overlay.classList.add('open'); };
-    var closeNav = function () { nav.classList.remove('open'); overlay.classList.remove('open'); };
+    var openNav = function () {
+      nav.classList.add('open');
+      if (overlay) overlay.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    };
+    var closeNav = function () {
+      nav.classList.remove('open');
+      if (overlay) overlay.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    };
 
     btn.addEventListener('click', openNav);
     if (closeBtn) closeBtn.addEventListener('click', closeNav);
     if (overlay)  overlay.addEventListener('click', closeNav);
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeNav(); });
+    var search = document.getElementById('sideNavSearch');
+    if (search) search.addEventListener('input', function () { filterItems(getLang()); });
 
     // Re-render on language change dispatched by any page
     window.addEventListener('tup:langchange', function (e) {
       renderItems((e && e.detail) || getLang());
       renderContactFab((e && e.detail) || getLang());
     });
+
+    // Some pages update the document language without emitting tup:langchange.
+    new MutationObserver(function () {
+      var lang = document.documentElement.lang === 'en' ? 'en' : 'es';
+      if (nav.dataset.menuLanguage !== lang) {
+        renderItems(lang);
+        renderContactFab(lang);
+      }
+    }).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
   }
 
   // Expose so main.js can delegate to this instead of its own initMenu()

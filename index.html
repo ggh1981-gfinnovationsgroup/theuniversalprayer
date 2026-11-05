@@ -95,9 +95,9 @@
 
   <!-- SIDE NAV -->
   <div class="side-nav-overlay" id="sideNavOverlay"></div>
-  <nav class="side-nav" id="sideNav" aria-label="Intercessors menu">
+  <nav class="side-nav" id="sideNav" aria-label="Site menu">
     <div class="side-nav-header">
-      <span class="side-nav-title" data-i18n="menu_title">Intercessors</span>
+      <span class="side-nav-title" data-i18n="menu_title">Menu</span>
       <button class="side-nav-close" id="sideNavClose" aria-label="Close menu">✕</button>
     </div>
     <ul class="side-nav-list" id="sideNavList"></ul>
@@ -325,6 +325,9 @@
   <!-- SEARCH — filtro de iconos pequeños -->
   <div class="quick-search-wrap">
     <input type="search" id="quickNavSearch" class="search-input quick-search-input" autocomplete="off" spellcheck="false" />
+  </div>
+  <div class="quick-secret-wrap">
+    <div id="quickSecretSearchResult" class="secret-search-result" role="status" hidden></div>
   </div>
   <!-- QUICK NAV — intercesores icon bar -->
   <nav class="quick-nav" id="quickNav" aria-label="Intercesores"></nav>
@@ -781,6 +784,7 @@
   <section class="main-content">
     <div class="search-wrap">
       <input type="search" id="cardsSearch" class="search-input" autocomplete="off" spellcheck="false" />
+      <div id="secretSearchResult" class="secret-search-result" role="status" hidden></div>
     </div>
     <h2 class="section-title" data-i18n="choose_intercessor">Choose your intercessor</h2>
     <p class="section-subtitle" data-lang="es">Ellos presentan tus peticiones ante el trono de Dios Todopoderoso</p>
@@ -841,5 +845,8 @@
   </script>
   <script src="assets/js/menu.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/private-access.js"></script>
+  <script src="assets/js/private-search-data.js"></script>
+  <script src="assets/js/private-search.js"></script>
 </body>
 </html>

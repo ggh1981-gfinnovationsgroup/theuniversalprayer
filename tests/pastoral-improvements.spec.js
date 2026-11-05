@@ -1,7 +1,6 @@
 // @ts-check
 const fs = require('fs');
 const path = require('path');
-const { execFileSync } = require('child_process');
 const { test, expect } = require('@playwright/test');
 
 const ROOT = path.resolve(__dirname, '..');
@@ -142,23 +141,22 @@ test('el buscador público sigue encontrando intercesores', async ({ page }) => 
   await expect(page.locator('.intercessor-card[data-intercessor-id="misericordia"]')).toBeVisible();
 });
 
-test('las copias personales y los recursos retirados no forman parte del índice ni del precache', () => {
-  const paths = ['privado', path.join('assets', 'images', 'private-search')];
-  const tracked = execFileSync('git', ['ls-files', '--', ...paths], { cwd: ROOT, encoding: 'utf8' });
-  expect(tracked.trim()).toBe('');
-  const probes = [
-    path.join('privado', '__privacy_probe__.html'),
-    path.join('assets', 'images', 'private-search', '__privacy_probe__.svg'),
-  ];
-  const ignored = execFileSync('git', ['check-ignore', '--no-index', ...probes], { cwd: ROOT, encoding: 'utf8' });
-  expect(ignored.trim().split(/\r?\n/)).toHaveLength(2);
-  const main = fs.readFileSync(path.join(ROOT, 'assets', 'js', 'main.js'), 'utf8');
+test('las páginas personales restauradas conservan sus recursos y controles de acceso', () => {
+  const personalRoot = path.join(ROOT, 'privado');
+  const pages = fs.readdirSync(personalRoot, { withFileTypes: true })
+    .filter(entry => entry.isDirectory() && fs.existsSync(path.join(personalRoot, entry.name, 'index.html')));
+  expect(pages).toHaveLength(6);
+  for (const page of pages) {
+    const html = fs.readFileSync(path.join(personalRoot, page.name, 'index.html'), 'utf8');
+    expect(html).toContain('/assets/js/private-access.js');
+    expect(html).toContain('tupPrivateAccess.unlock(');
+  }
   const home = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
   const worker = fs.readFileSync(path.join(ROOT, 'sw.js'), 'utf8');
-  expect(main).not.toContain('PRIVATE_SEARCH_ENTRIES');
-  expect(main).not.toContain('/privado/');
-  expect(home).not.toContain('secretSearchResult');
-  expect(worker).not.toContain('/assets/images/private-search/');
+  expect(home).toContain('secretSearchResult');
+  expect(home).toContain('/js/private-search.js');
+  expect(worker).toContain('/assets/images/private-search/');
+  expect(worker).toContain("'/assets/js/private-access.js'");
   expect(worker).toContain("'/assets/js/native-share.js'");
   expect(worker).toContain("'/assets/js/prayer-share.js'");
 });

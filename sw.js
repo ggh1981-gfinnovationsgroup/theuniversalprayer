@@ -3,13 +3,16 @@
    Offline support for precached and previously cached resources
    ===================================================== */
 
-const CACHE = 'tup-v297';
+const CACHE = 'tup-v298';
 const CRITICAL_CORE_URLS = new Set([
   '/assets/js/main.js',
   '/assets/js/menu.js',
   '/assets/js/adoracion-share.js',
   '/assets/js/native-share.js',
   '/assets/js/prayer-share.js',
+  '/assets/js/private-access.js',
+  '/assets/js/private-search-data.js',
+  '/assets/js/private-search.js',
   '/assets/css/styles.css',
 ]);
 const OFFLINE_ADORATION_DAYS = new Set(
@@ -28,6 +31,9 @@ const PRECACHE_URLS = [
   '/assets/js/adoracion-share.js',
   '/assets/js/native-share.js',
   '/assets/js/prayer-share.js',
+  '/assets/js/private-access.js',
+  '/assets/js/private-search-data.js',
+  '/assets/js/private-search.js',
   '/difuntos/',
   '/difuntos/index.html',
   '/historias/',
@@ -138,6 +144,13 @@ const PRECACHE_URLS = [
   '/assets/images/enemigos-misericordia.svg',
   '/assets/images/enemigos-perdon.svg',
   '/assets/images/enemigos-conversion.svg',
+  '/assets/images/private-search/dreams.svg',
+  '/assets/images/private-search/barbara.svg',
+  '/assets/images/private-search/fabiola.svg',
+  '/assets/images/private-search/brandon.svg',
+  '/assets/images/private-search/katherine.svg',
+  '/assets/images/private-search/clarissa.svg',
+  '/assets/images/private-search/ian.svg',
   // Intercessor images
   '/assets/images/misericordia.svg',
   '/assets/images/inmaculadocorazon.svg',
