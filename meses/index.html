@@ -535,6 +535,7 @@
       const paramMonth = months.findIndex(function (m) { return m.key === params.get('mes'); });
       let selectedMonth = paramMonth >= 0 ? paramMonth : now.getMonth();
       let openDay = null;
+      let initialRender = true;
       let renderToken = 0;
       const monthCache = {};
 
@@ -837,6 +838,15 @@
           renderDays(data, year);
           el('daysStatus').textContent = '';
           el('daysList').removeAttribute('aria-busy');
+          if (initialRender) {
+            initialRender = false;
+            if (location.hash) {
+              const target = document.getElementById(location.hash.slice(1));
+              if (target) target.scrollIntoView({ block: 'start' });
+            } else if (year === currentYear && selectedMonth === now.getMonth()) {
+              el('dia-' + now.getDate()).scrollIntoView({ block: 'start' });
+            }
+          }
         }).catch(function () {
           if (token !== renderToken) return;
           el('daysList').innerHTML = '';

@@ -127,6 +127,40 @@ test.describe('datos de los meses devocionales', () => {
 });
 
 test.describe('página de meses', () => {
+  for (const [year, month, day] of [[2026, 10, 12], [2028, 1, 29], [2027, 0, 1]]) {
+    test(`al entrar abre y muestra hoy: ${year}-${month + 1}-${day}`, async ({ page }) => {
+      await page.clock.setFixedTime(new Date(year, month, day, 12));
+      await page.goto('/meses/');
+      const row = page.locator(`#dia-${day}`);
+      await expect(page.locator('#plannerTitle')).toContainText(String(year));
+      await expect(page.locator(`.month-btn[data-month="${KEYS[month]}"]`)).toHaveAttribute('aria-pressed', 'true');
+      await expect(row).toHaveClass(/today/);
+      await expect(row.locator('.day-toggle')).toHaveAttribute('aria-expanded', 'true');
+      await expect(row.locator('.day-panel')).toBeVisible();
+      await expect(row.locator('.day-toggle')).toBeInViewport();
+      expect(await page.evaluate(() => window.scrollY)).toBeGreaterThan(0);
+    });
+  }
+
+  test('un enlace a otro mes no se sustituye por el mes de hoy', async ({ page }) => {
+    await page.clock.setFixedTime(new Date(2026, 10, 12, 12));
+    await openMonth(page, 'junio');
+    await expect(page.locator('.month-btn[data-month="junio"]')).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.locator('#dia-1 .day-panel')).toBeVisible();
+    expect(await page.evaluate(() => window.scrollY)).toBe(0);
+  });
+
+  test('respeta una sección enlazada y el día elegido al cambiar de idioma', async ({ page }) => {
+    await page.clock.setFixedTime(new Date(2026, 10, 12, 12));
+    await page.goto('/meses/#dia-5');
+    await expect(page.locator('#dia-12 .day-panel')).toBeVisible();
+    await expect(page.locator('#dia-5 .day-toggle')).toBeInViewport();
+    await page.locator('#dia-5 .day-toggle').click();
+    await page.locator('#langToggle').click();
+    await expect(page.locator('#dia-5 .day-panel')).toBeVisible();
+    await expect(page.locator('#dia-12 .day-panel')).toBeHidden();
+  });
+
   for (const key of KEYS) {
     test(`${key} se muestra completo en español e inglés`, async ({ page }) => {
       const errors = await openMonth(page, key, 'es');

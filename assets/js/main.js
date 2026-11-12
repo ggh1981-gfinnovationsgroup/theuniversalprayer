@@ -5,7 +5,7 @@
 
 'use strict';
 
-const APP_VERSION = 'v2026.07.26-1';
+const APP_VERSION = 'v2026.11.12-1';
 
 function withAssetVersion(url) {
   if (!url) return url;
