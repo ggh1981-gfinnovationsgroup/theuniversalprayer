@@ -6,7 +6,7 @@ Sitio web catolico bilingue (ES/EN) publicado en GitHub Pages.
 
 - Produccion activa en `main`.
 - Sitio estatico con PWA (`sw.js`) y contenido en JSON.
-- Cache actual del Service Worker: `tup-v302`.
+- Cache actual del Service Worker: `tup-v303`.
 - Al entrar en `meses/`, se selecciona el mes de la fecha local y se abre y muestra automáticamente el día de hoy. Los enlaces a otro mes o a una sección conservan su destino.
 - Adoración: 7 jornadas de 33 días en `adoracion/33dias-*/` (la más reciente: `33dias-enemigos`, para bendecir a los enemigos y entregarlos a Dios).
 - `vuelvo-al-padre/#oseas-14`: Oseas 14 completo (Biblia CEE / New American Bible), los pasos para volver (vv. 2-4), la respuesta de Dios (v. 5), una meditación y una oración propia que se puede compartir.
@@ -143,6 +143,7 @@ Nota: el directorio `scripts/` ya no forma parte del repo runtime.
 - Service Worker en `sw.js` con estrategias de cache para mejorar rendimiento/offline.
 - El menu y otros recursos esenciales de interfaz se actualizan desde la red sin reutilizar una cache HTTP antigua y conservan copia para uso offline.
 - El menu compartido incluye un buscador bilingue de sus secciones, que ignora acentos y permite escribir varias palabras.
+- Cada sección del menú usa un icono propio, alineado y oculto a tecnologías de asistencia para evitar repeticiones confusas y mantener el nombre accesible.
 - Al instalar una nueva version del Service Worker se renuevan tambien los documentos precargados. Los enlaces a oraciones con idioma y los 33 dias de la jornada principal de Adoracion pueden abrirse sin conexion despues de una visita que haya activado y completado la cache.
 
 ## Contenido y Datos

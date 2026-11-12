@@ -3,6 +3,18 @@ const { test, expect } = require('@playwright/test');
 
 const PAGES = ['/', '/maria/', '/tentaciones/', '/intercesor/?intercesor=guadalupe', '/historias/'];
 
+test('cada sección del menú usa un icono distinto y decorativo', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('tup_lang', 'es'));
+  await page.goto('/');
+  await page.locator('#hamburgerBtn').click();
+
+  const icons = page.locator('#sideNav .side-nav-icon');
+  const values = await icons.allTextContents();
+  expect(values.length).toBeGreaterThan(30);
+  expect(new Set(values.map(value => value.replace(/\uFE0F/g, '').trim())).size).toBe(values.length);
+  await expect(icons.first()).toHaveAttribute('aria-hidden', 'true');
+});
+
 test.beforeEach(async ({ context }) => {
   await context.route(/^https?:\/\/(?!127\.0\.0\.1)/, route => route.abort());
 });

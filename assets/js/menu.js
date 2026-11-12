@@ -25,7 +25,7 @@
         return path === '/' || path === '/index.html' || path.endsWith('/theuniversalprayer/') ? '#oraciones-familia' : '/#oraciones-familia';
       },
       labels: { es: 'Oraciones en Familia', en: 'Family Prayers' },
-      icon: '🙏',
+      icon: '👪',
     },
     {
       id: 'saints',
@@ -35,21 +35,21 @@
       labels: { es: 'Intercesores', en: 'Intercessors' },
       icon: '✨',
     },
-    { id: 'adoracion', href: '/adoracion/', labels: { es: 'Adoración', en: 'Adoration' }, icon: '✝' },
+    { id: 'adoracion', href: '/adoracion/', labels: { es: 'Adoración', en: 'Adoration' }, icon: '🙇' },
     { id: 'desierto', href: '/desierto/', labels: { es: 'Silencio y Escucha', en: 'Silence & Listening' }, icon: '🏕️' },
     { id: 'cuaresmasanmiguel', href: '/cuaresma-san-miguel/', labels: { es: 'Cuaresma de San Miguel', en: "St. Michael's Lent" }, icon: '⚔️' },
     { id: 'difuntos', href: '/difuntos/', labels: { es: 'Difuntos', en: 'Departed' }, icon: '🕯️' },
-    { id: 'diospadre', href: '/diospadre/', labels: { es: 'Dios Padre', en: 'God the Father' }, icon: '☁️' },
-    { id: 'diablo', href: '/renacer-en-cristo/', labels: { es: 'Renacer en Cristo', en: 'Reborn in Christ' }, icon: '🛐' },
-    { id: 'gloriasuprema', href: '/gloria-suprema/', labels: { es: 'Acto de Adoración Suprema', en: 'Act of Supreme Adoration' }, icon: '✨' },
+    { id: 'diospadre', href: '/diospadre/', labels: { es: 'Dios Padre', en: 'God the Father' }, icon: '👑' },
+    { id: 'diablo', href: '/renacer-en-cristo/', labels: { es: 'Renacer en Cristo', en: 'Reborn in Christ' }, icon: '🌱' },
+    { id: 'gloriasuprema', href: '/gloria-suprema/', labels: { es: 'Acto de Adoración Suprema', en: 'Act of Supreme Adoration' }, icon: '🌠' },
     { id: 'dopamina', href: '/dopamina/', labels: { es: 'Dopamina y libertad', en: 'Dopamine and freedom' }, icon: '🧠' },
-    { id: 'controlyconfianza', href: '/control-y-confianza/', labels: { es: 'Control y Confianza', en: 'Control and Trust' }, icon: '🕊️' },
+    { id: 'controlyconfianza', href: '/control-y-confianza/', labels: { es: 'Control y Confianza', en: 'Control and Trust' }, icon: '⚓' },
     { id: 'enemigos', href: '/enemigos/', labels: { es: 'Bendecir enemigos', en: 'Bless enemies' }, icon: '🤍' },
     { id: 'espiritu', href: '/espiritu/', labels: { es: 'Espíritu Santo', en: 'Holy Spirit' }, icon: '🕊️' },
     { id: 'emergencias', href: '/emergencias/', labels: { es: 'Oraciones de Emergencia', en: 'Emergency Prayers' }, icon: '🆘' },
-    { id: 'insisteyliberate', href: '/insiste-y-liberate/', labels: { es: 'Insiste y libérate', en: 'Insist and be freed' }, icon: '🕊️' },
-    { id: 'nomascastigo', href: '/nomascastigo/', labels: { es: 'Señor, no más castigo', en: 'Lord, no more punishment' }, icon: '🙏' },
-    { id: 'tentaciones', href: '/tentaciones/', labels: { es: 'Tentaciones', en: 'Temptation' }, icon: '🛡️' },
+    { id: 'insisteyliberate', href: '/insiste-y-liberate/', labels: { es: 'Insiste y libérate', en: 'Insist and be freed' }, icon: '🔓' },
+    { id: 'nomascastigo', href: '/nomascastigo/', labels: { es: 'Señor, no más castigo', en: 'Lord, no more punishment' }, icon: '🙌' },
+    { id: 'tentaciones', href: '/tentaciones/', labels: { es: 'Tentaciones', en: 'Temptation' }, icon: '🐍' },
     { id: 'ninos', href: '/ninos/', labels: { es: 'Pequeños en Cristo', en: 'Little Ones in Christ' }, icon: '⭐' },
     { id: 'jovenes', href: '/jovenes/', labels: { es: 'Jóvenes en Cristo', en: 'Young in Christ' }, icon: '🔥' },
     { id: 'maria', href: '/maria/', labels: { es: 'Bajo el manto de María', en: "Under Mary's mantle" }, icon: '💙' },
@@ -57,16 +57,16 @@
     { id: 'meses', href: '/meses/', labels: { es: 'Meses Devocionales', en: 'Devotional Months' }, icon: '📅' },
     { id: 'musica', href: '/musica/', labels: { es: 'Música', en: 'Music' }, icon: '🎵' },
     { id: 'salmosdiarios', href: '/salmos-diarios/', labels: { es: 'Salmos para cada momento', en: 'Psalms for every moment' }, icon: '📖' },
-    { id: 'medallabenito', href: '/medalla-san-benito/', labels: { es: 'Medalla de San Benito', en: 'Medal of Saint Benedict' }, icon: '✝' },
+    { id: 'medallabenito', href: '/medalla-san-benito/', labels: { es: 'Medalla de San Benito', en: 'Medal of Saint Benedict' }, icon: '🪙' },
     { id: 'medallamilagrosa', href: '/medalla-milagrosa/', labels: { es: 'Medalla Milagrosa', en: 'Miraculous Medal' }, icon: '🌸' },
-    { id: 'misericordia', href: '/misericordia/', labels: { es: 'Misericordia', en: 'Mercy' }, icon: '🕯️' },
+    { id: 'misericordia', href: '/misericordia/', labels: { es: 'Misericordia', en: 'Mercy' }, icon: '🫂' },
     { id: 'novenasagradocorazon', href: '/novena-sagrado-corazon/', labels: { es: 'Novena del Sagrado Corazón (Padre Pío)', en: 'Sacred Heart Novena (Padre Pio)' }, icon: '❤️' },
     { id: 'oraciones', href: '/oraciones/', labels: { es: 'Oraciones Básicas', en: 'Basic Prayers' }, icon: '📜' },
     { id: 'bellavirtud', href: '/bella-virtud/', labels: { es: 'La Bella Virtud', en: 'The Beautiful Virtue' }, icon: '🌹' },
     { id: 'vuelvoalpadre', href: '/vuelvo-al-padre/', labels: { es: 'Caigo y vuelvo al Padre', en: 'I fall and return to the Father' }, icon: '🔄' },
-    { id: 'reconciliacion', href: '/reconciliacion/', labels: { es: 'Reconciliación', en: 'Reconciliation' }, icon: '🙏' },
+    { id: 'reconciliacion', href: '/reconciliacion/', labels: { es: 'Reconciliación', en: 'Reconciliation' }, icon: '🗝️' },
     { id: 'rosario', href: '/rosario/', labels: { es: 'Rosario Interactivo', en: 'Interactive Rosary' }, icon: '📿' },
-    { id: 'viacrucis', href: '/viacrucis/', labels: { es: 'Vía Crucis Guiado', en: 'Guided Stations' }, icon: '✝' },
+    { id: 'viacrucis', href: '/viacrucis/', labels: { es: 'Vía Crucis Guiado', en: 'Guided Stations' }, icon: '🛤️' },
     { id: 'salud', href: '/salud/', labels: { es: 'Salud integral', en: 'Whole-person health' }, icon: '💚' },
     { id: 'contacto', href: CONTACT_MAILTO, labels: { es: 'Contáctanos', en: 'Contact us' }, icon: '✉️' },
   ];
@@ -188,7 +188,7 @@
     list.innerHTML = items.map(function (item) {
       var href = typeof item.href === 'function' ? item.href(path) : item.href;
       var label = L ? item.labels.es : item.labels.en;
-      return '<li><a class="side-nav-link side-nav-' + item.id + '" href="' + href + '">' + item.icon + ' ' + label + '</a></li>';
+      return '<li><a class="side-nav-link side-nav-' + item.id + '" href="' + href + '"><span class="side-nav-icon" aria-hidden="true">' + item.icon + '</span> ' + label + '</a></li>';
     }).join('');
 
     // Update panel header title

@@ -1169,6 +1169,12 @@ body {
   border-left: 3px solid transparent;
   transition: all var(--transition);
 }
+.side-nav-icon {
+  display: inline-grid;
+  width: 1.55em;
+  place-items: center;
+  margin-right: 0.25rem;
+}
 .side-nav-link:hover {
   color: var(--gold-light);
   background: rgba(201,168,76,0.06);
