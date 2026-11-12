@@ -1,0 +1,667 @@
+{
+ "key": "septiembre",
+ "es": {
+  "topic": "Nuestra Señora de los Dolores",
+  "intro": "Septiembre nos invita a caminar junto a María por sus siete dolores: la profecía de Simeón, la huida a Egipto, la pérdida del Niño, el camino del Calvario, la cruz, el descendimiento y el sepulcro. Semana a semana los uniremos a dolores de hoy (la enfermedad, la migración, los hijos alejados, la injusticia y el duelo) para descubrir a una Madre que no explica el sufrimiento, sino que se queda, consuela y nos enseña a acompañar a otros.",
+  "method": {
+   "title": "Cómo vivir este mes",
+   "steps": [
+    "Cada día lee despacio el versículo y la reflexión, y pregúntate qué dolor de hoy, tuyo o ajeno, se parece al de María.",
+    "Lleva un cuaderno pequeño: anota los nombres de las personas que sufren y que quieres presentar a Dios durante el mes.",
+    "Reza al menos una avemaría por cada dolor de María; el día de su fiesta, el 15, puedes rezar los siete juntos.",
+    "No busques explicaciones para todo: aprende de María a guardar en el corazón lo que no entiendes.",
+    "Convierte la compasión en un gesto: una llamada, una visita o una ayuda concreta a alguien que sufre."
+   ],
+   "prayer": "Madre dolorosa, que permaneciste fiel desde la profecía de Simeón hasta el silencio del sepulcro, te ofrezco este día con sus alegrías y sus penas. Une mis dolores y los de quienes amo al amor de tu Hijo, y enséñame a acompañar a los que sufren como tú lo hiciste. Amén.",
+   "closing": "María, Consuelo de los afligidos, guarda esta noche a los que lloran, a los enfermos y a los que están lejos de casa. Que descansemos en el corazón de tu Hijo. Amén."
+  }
+ },
+ "en": {
+  "topic": "Our Lady of Sorrows",
+  "intro": "September invites us to walk with Mary through her seven sorrows: Simeon's prophecy, the flight into Egypt, the loss of the Child in the temple, the road to Calvary, the cross, the taking down from the cross, and the burial. Week by week we will link them to the sorrows of our own day (illness, migration, children who drift away, injustice, and grief) to meet a Mother who doesn't explain suffering away, but stays, consoles, and teaches us to accompany others.",
+  "method": {
+   "title": "How to live this month",
+   "steps": [
+    "Each day, slowly read the verse and the reflection, and ask yourself which sorrow of today, yours or someone else's, resembles Mary's.",
+    "Keep a small notebook: write down the names of people who are suffering and whom you want to bring to God this month.",
+    "Pray at least one Hail Mary for each of Mary's sorrows; on her feast, the 15th, you can pray all seven together.",
+    "Don't look for an explanation for everything: learn from Mary to keep in your heart what you don't understand.",
+    "Turn compassion into a gesture: a call, a visit, or some concrete help for someone who is suffering."
+   ],
+   "prayer": "Sorrowful Mother, faithful from Simeon's prophecy to the silence of the tomb, I offer you this day with its joys and its pains. Unite my sorrows and those of the people I love to the love of your Son, and teach me to accompany those who suffer as you did. Amen.",
+   "closing": "Mary, Comforter of the Afflicted, keep watch tonight over those who weep, the sick, and those far from home. May we rest in the heart of your Son. Amen."
+  }
+ },
+ "days": [
+  {
+   "day": 1,
+   "feast": null,
+   "es": {
+    "title": "Una bendición con una sombra",
+    "ref": "Lc 2,33-34",
+    "verse": "Su padre y su madre estaban admirados por lo que se decía del niño. Simeón los bendijo y dijo a María, su madre: Este ha sido puesto para que muchos en Israel caigan y se levanten; y será como un signo de contradicción…",
+    "reflection": "María y José subieron al templo con el corazón lleno, y un anciano los bendijo. Pero en la misma bendición apareció una sombra: aquel niño sería signo de contradicción. Así empieza septiembre: con María que escucha una palabra difícil sin huir. Este mes recorreremos sus siete dolores, no para hundirnos en la tristeza, sino para descubrir que ningún dolor nuestro le es ajeno. Ella sabe lo que es recibir una noticia que cambia la vida.",
+    "prayer": "María, Madre que escuchaste a Simeón en silencio, te entrego este mes y las preocupaciones que traigo. Enséñame a recibir lo que no entiendo sin cerrar el corazón, y llévame de tu mano hasta Jesús. Amén.",
+    "action": "Escribe en un cuaderno el nombre de tres personas que hoy cargan un dolor (una enfermedad, una ausencia, una injusticia). Durante este mes las llevarás contigo en la oración."
+   },
+   "en": {
+    "title": "A blessing with a shadow",
+    "ref": "Lk 2:33-34",
+    "verse": "The child's father and mother were amazed at what was said about him; and Simeon blessed them and said to Mary his mother, Behold, this child is destined for the fall and rise of many in Israel, and to be a sign that will be contradicted…",
+    "reflection": "Mary and Joseph went up to the temple with full hearts, and an old man blessed them. Yet within that blessing a shadow appeared: this child would be a sign that many would oppose. That is how September begins: with Mary hearing a hard word and not running away. This month we will walk through her seven sorrows, not to sink into sadness, but to discover that none of our pain is foreign to her. She knows what it is to receive news that changes everything.",
+    "prayer": "Mary, Mother who listened to Simeon in silence, I give you this month and the worries I carry. Teach me to receive what I do not understand without closing my heart, and lead me by the hand to Jesus. Amen.",
+    "action": "Write in a notebook the names of three people who are carrying pain right now (an illness, an absence, an injustice). Throughout this month, you will carry them with you in prayer."
+   }
+  },
+  {
+   "day": 2,
+   "feast": null,
+   "es": {
+    "title": "Cuando llega el diagnóstico",
+    "ref": "Sal 34,19",
+    "verse": "(Qof) el Señor está cerca de los atribulados, salva a los abatidos.",
+    "reflection": "Hay palabras que parten la vida en un antes y un después: un resultado médico, una llamada del hospital, un «tenemos que hablar». La espada que anunció Simeón tiene hoy muchos nombres. El salmo no promete que el golpe no llegará; promete algo más hondo: que el Señor está cerca de los atribulados. María no recibió explicaciones, recibió compañía. Si tú o alguien que amas enfrenta una enfermedad, no tienes que entenderlo todo para dejarte acompañar.",
+    "prayer": "Señor, cercano a los que tienen el corazón roto, mira a quienes hoy esperan un resultado o reciben una mala noticia. No te pido entenderlo todo, sino sentir que estás aquí. María, quédate a nuestro lado. Amén.",
+    "action": "Envía un mensaje breve a alguien que esté enfermo o esperando un diagnóstico. No des consejos ni explicaciones: dile simplemente que piensas en él y que rezas por él."
+   },
+   "en": {
+    "title": "When the diagnosis comes",
+    "ref": "Ps 34:19",
+    "verse": "The LORD is close to the brokenhearted, saves those whose spirit is crushed.",
+    "reflection": "Some words split life into a before and an after: a test result, a call from the hospital, a “we need to talk.” The sword Simeon foretold has many names in our time. The psalm does not promise that the blow will never come; it promises something deeper: that the Lord is close to the brokenhearted. Mary received no explanations; she received company. If you or someone you love is facing an illness, you don't have to understand everything to let yourself be accompanied.",
+    "prayer": "Lord, close to the brokenhearted, look upon those who are waiting for test results or receiving bad news today. I don't ask to understand it all, only to sense that You are here. Mary, stay by our side. Amen.",
+    "action": "Send a short message to someone who is ill or waiting for a diagnosis. Offer no advice or explanations: simply tell them you are thinking of them and praying for them."
+   }
+  },
+  {
+   "day": 3,
+   "feast": {
+    "es": "San Gregorio Magno",
+    "en": "Saint Gregory the Great"
+   },
+   "es": {
+    "title": "Un pastor que no se sentía fuerte",
+    "ref": "Jn 21,17",
+    "verse": "Por tercera vez le pregunta: Simón, hijo de Juan, ¿me quieres?. Se entristeció Pedro de que le preguntara por tercera vez: ¿Me quieres? y le contestó: Señor, tú conoces todo, tú sabes que te quiero. Jesús le dice: Apacienta mis ovejas.",
+    "reflection": "San Gregorio Magno no buscaba ser papa; prefería la vida tranquila del monasterio. Aceptó el servicio en una Roma golpeada por la peste, el hambre y la guerra, y a menudo lo ejerció enfermo. Organizó ayuda para los pobres, envió misioneros a Inglaterra y se presentaba como siervo de los siervos de Dios. Como a Pedro, Jesús no le preguntó si era fuerte, sino si lo amaba. También a ti, en medio del cansancio, te confía a alguien a quien cuidar.",
+    "prayer": "Señor Jesús, tú sabes que te quiero, aunque mis fuerzas sean pocas. Por intercesión de San Gregorio Magno, dame un corazón de pastor para cuidar a los que pones a mi lado, sin buscar ser el primero, sino el que sirve. Amén.",
+    "action": "Haz hoy, sin anunciarlo, un servicio humilde en casa o en el trabajo que normalmente evitas (lavar los platos, ordenar un espacio común, cubrir a un compañero), ofreciéndolo por alguien que está enfermo."
+   },
+   "en": {
+    "title": "A shepherd who did not feel strong",
+    "ref": "Jn 21:17",
+    "verse": "He said to him the third time, Simon, son of John, do you love me? Peter was distressed that he had said to him a third time, Do you love me? and he said to him, Lord, you know everything; you know that I love you. (Jesus) said to him, Feed my sheep.",
+    "reflection": "Saint Gregory the Great did not seek to become pope; he preferred the quiet life of the monastery. He accepted the task in a Rome battered by plague, hunger, and war, and he often carried it out while ill. He organized help for the poor, sent missionaries to England, and presented himself as the servant of the servants of God. As with Peter, Jesus did not ask him whether he was strong, but whether he loved Him. In the middle of your own tiredness, He also entrusts someone to your care.",
+    "prayer": "Lord Jesus, You know that I love You, even when my strength is small. Through the intercession of Saint Gregory the Great, give me a shepherd's heart to care for those You place beside me, seeking not to be first, but to serve. Amen.",
+    "action": "Quietly do a humble chore at home or at work that you usually avoid (washing dishes, tidying a shared space, covering for a coworker), offering it for someone who is sick."
+   }
+  },
+  {
+   "day": 4,
+   "feast": null,
+   "es": {
+    "title": "Segundo dolor: salir de noche",
+    "ref": "Mt 2,13-14",
+    "verse": "Cuando ellos se retiraron, el ángel del Señor se apareció en sueños a José y le dijo: «Levántate, toma al niño y a su madre y huye a Egipto; quédate allí hasta que yo te avise, porque Herodes va a buscar al niño para matarlo». José se levantó, tomó al niño y a su madre, de noche, se fue a Egipto…",
+    "reflection": "José se levantó y, de noche, tomó al niño y a su madre. No hubo tiempo para despedidas ni para empacar con calma. María conoció el miedo de huir para proteger a su hijo, la incertidumbre del camino y la tierra extraña. Hoy millones de familias viven esa misma noche: dejan su casa por la violencia o la pobreza. La Sagrada Familia fue una familia migrante. Cuando miramos a quienes huyen, miramos también a Jesús niño en brazos de su madre.",
+    "prayer": "María, Madre que huiste de noche con tu Hijo, protege a las familias que hoy dejan todo para salvar la vida. Sostén a las madres cansadas en el camino y abre nuestros corazones para recibirlas. Amén.",
+    "action": "Reza un misterio del rosario (o diez avemarías despacio) por las familias migrantes que hoy están en camino, nombrando en tu corazón algún país del que sepas que muchos huyen."
+   },
+   "en": {
+    "title": "Second sorrow: leaving by night",
+    "ref": "Mt 2:13-14",
+    "verse": "When they had departed, behold, the angel of the Lord appeared to Joseph in a dream and said, \"Rise, take the child and his mother, flee to Egypt, and stay there until I tell you. Herod is going to search for the child to destroy him.\" Joseph rose and took the child and his mother by night and departed for Egypt.",
+    "reflection": "Joseph rose and, by night, took the child and his mother. There was no time for goodbyes or for careful packing. Mary knew the fear of fleeing to protect her son, the uncertainty of the road, and the strangeness of a foreign land. Millions of families live that same night in our time, leaving home because of violence or poverty. The Holy Family was a migrant family. When we look at those who flee, we are also looking at the child Jesus in His mother's arms.",
+    "prayer": "Mary, Mother who fled by night with your Son, protect the families who are leaving everything behind to save their lives. Hold up weary mothers on the road and open our hearts to welcome them. Amen.",
+    "action": "Pray one decade of the rosary (or ten Hail Marys, slowly) for migrant families on the road, naming in your heart a country from which you know many people are fleeing."
+   }
+  },
+  {
+   "day": 5,
+   "feast": null,
+   "es": {
+    "title": "El extranjero que vive cerca",
+    "ref": "Dt 10,19",
+    "verse": "Amaréis al emigrante, porque emigrantes fuisteis en Egipto.",
+    "reflection": "Dios recuerda a su pueblo que también fue extranjero. Quien ha vivido lejos de su tierra sabe lo que pesa no entender el idioma, no tener los papeles en regla, comer lejos de la mesa de la propia madre. María vivió eso en Egipto. Tal vez tú mismo lo viviste, o lo vive alguien de tu familia. El amor al emigrante no es una idea lejana: empieza con el vecino nuevo, la compañera que habla con acento, el hombre que limpia la oficina cuando todos se van.",
+    "prayer": "Dios Padre, que amas al extranjero, dame ojos para ver a quien vive lejos de su tierra y cerca de mí. Que mi saludo, mi paciencia y mi ayuda le hagan sentir un poco en casa. María, peregrina en Egipto, camina con nosotros. Amén.",
+    "action": "Saluda hoy por su nombre (o pregúntaselo si no lo sabes) a alguien de otro país con quien te cruzas a menudo: un vecino, un compañero, quien te atiende en una tienda."
+   },
+   "en": {
+    "title": "The stranger who lives nearby",
+    "ref": "Dt 10:19",
+    "verse": "So you too must befriend the alien, for you were once aliens yourselves in the land of Egypt.",
+    "reflection": "God reminds His people that they, too, were once strangers. Anyone who has lived far from home knows the weight of not understanding the language, of uncertain papers, of eating far from one's mother's table. Mary lived that in Egypt. Maybe you lived it yourself, or someone in your family is living it now. Love for the migrant is not a distant idea: it begins with the new neighbor, the coworker with an accent, the man who cleans the office after everyone leaves.",
+    "prayer": "God our Father, who love the stranger, give me eyes to see those who live far from their homeland and close to me. May my greeting, my patience, and my help make them feel a little more at home. Mary, pilgrim in Egypt, walk with us. Amen.",
+    "action": "Greet by name (or ask their name if you don't know it) someone from another country whom you often cross paths with: a neighbor, a coworker, someone who serves you at a store."
+   }
+  },
+  {
+   "day": 6,
+   "feast": null,
+   "es": {
+    "title": "Entradas y salidas",
+    "ref": "Sal 121,7-8",
+    "verse": "El Señor te guarda de todo mal, él guarda tu alma; el Señor guarda tus entradas y salidas, ahora y por siempre.",
+    "reflection": "Mudanzas, cambios de trabajo, un hijo que se va a estudiar lejos, una casa que hay que dejar. La vida está hecha de entradas y salidas, y algunas duelen. En el camino a Egipto, José y María no sabían cuánto tiempo estarían fuera ni cómo volverían. Solo sabían que no iban solos. El salmo no describe un camino sin peligros, sino a un Dios que guarda cada paso. Lo que hoy te desarraiga no te aleja de su mirada.",
+    "prayer": "Señor, que guardas mis entradas y salidas, pongo en tus manos este cambio que me inquieta. Cuando no sepa adónde voy, recuérdame que voy contigo. San José y Santa María, cuiden de los que hoy están en camino. Amén.",
+    "action": "Antes de salir de casa, detente un momento en la puerta y reza en silencio: «Señor, guarda mi salida y mi regreso». Hazlo también por alguien que está viajando o mudándose."
+   },
+   "en": {
+    "title": "Comings and goings",
+    "ref": "Ps 121:7-8",
+    "verse": "The LORD will guard you from all evil, will always guard your life. The LORD will guard your coming and going both now and forever.",
+    "reflection": "Moving house, changing jobs, a child leaving to study far away, a home that has to be left behind. Life is made of comings and goings, and some of them hurt. On the road to Egypt, Joseph and Mary did not know how long they would be away or how they would return. They only knew they were not alone. The psalm does not describe a road without dangers, but a God who guards every step. Whatever uproots you now does not take you out of His sight.",
+    "prayer": "Lord, You who guard my coming and going, I place in Your hands this change that unsettles me. When I don't know where I'm going, remind me that I go with You. Saint Joseph and Holy Mary, watch over all who are on the road. Amen.",
+    "action": "Before leaving home, pause at the door and pray silently: “Lord, guard my going out and my coming back.” Do the same for someone who is traveling or moving."
+   }
+  },
+  {
+   "day": 7,
+   "feast": null,
+   "es": {
+    "title": "Para quien está agotado del camino",
+    "ref": "Is 43,2",
+    "verse": "Cuando cruces las aguas, yo estaré contigo, la corriente no te anegará; cuando pases por el fuego, no te quemarás, la llama no te abrasará.",
+    "reflection": "Quizá llegas al final de esta semana sin fuerzas. Tal vez has caído otra vez en lo mismo, o el cansancio de cuidar, trabajar y sostener a otros te ha dejado vacío. Dios no dice que no cruzarás aguas profundas; dice que estará contigo cuando las cruces. La Sagrada Familia también tuvo noches de desierto. Hoy no hace falta hacer grandes propósitos. Basta con dejarte llevar un poco, como el Niño en brazos de María.",
+    "prayer": "Padre bueno, estoy cansado y a veces siento que el agua me cubre. Tú prometiste estar conmigo en la corriente. Tómame como María tomaba a Jesús en el camino, y dame el descanso que hoy necesito. Amén.",
+    "action": "Regálate hoy veinte minutos de verdadero descanso: una siesta, un paseo lento o simplemente sentarte sin pantallas. Ofrécelo a Dios como oración, sin culpa."
+   },
+   "en": {
+    "title": "For the one worn out by the road",
+    "ref": "Is 43:2",
+    "verse": "When you pass through the water, I will be with you; in the rivers you shall not drown. When you walk through fire, you shall not be burned; the flames shall not consume you.",
+    "reflection": "Maybe you reach the end of this week with no strength left. Perhaps you have fallen into the same thing again, or the weariness of caring, working, and holding others up has left you empty. God does not say you will never cross deep waters; He says He will be with you when you do. The Holy Family had desert nights too. You don't need to make big resolutions right now. It's enough to let yourself be carried a little, like the Child in Mary's arms.",
+    "prayer": "Good Father, I am tired, and sometimes I feel the water rising over me. You promised to be with me in the current. Hold me the way Mary held Jesus on the road, and give me the rest I need. Amen.",
+    "action": "Give yourself twenty minutes of real rest: a nap, a slow walk, or simply sitting without screens. Offer it to God as a prayer, without guilt."
+   }
+  },
+  {
+   "day": 8,
+   "feast": {
+    "es": "Natividad de la Virgen María",
+    "en": "Nativity of the Blessed Virgin Mary"
+   },
+   "es": {
+    "title": "Una niña tejida con amor",
+    "ref": "Sal 139,13-14",
+    "verse": "Tú has creado mis entrañas, me has tejido en el seno materno. Te doy gracias porque me has plasmado portentosamente, porque son admirables tus obras: mi alma lo reconoce agradecida…",
+    "reflection": "En medio de un mes que contempla los dolores de María, la Iglesia celebra hoy su nacimiento. Antes de ser la Madre al pie de la cruz, fue una niña recibida en los brazos de sus padres, a quienes la tradición llama Joaquín y Ana. Dios la preparó con su gracia desde el primer instante para ser la Madre de su Hijo. Su nacimiento nos recuerda que toda vida, también la tuya, fue tejida con cuidado por Dios y es motivo de alegría.",
+    "prayer": "Padre, te doy gracias por el nacimiento de María, aurora de nuestra salvación. Gracias también por mi vida, tejida por ti en el seno de mi madre. Ayúdame a mirar cada vida con tu misma ternura. Amén.",
+    "action": "Celebra un pequeño cumpleaños para María: pon una flor junto a una imagen suya y da gracias a Dios por tu propia vida, nombrando en voz baja tres dones que has recibido."
+   },
+   "en": {
+    "title": "A little girl knit together with love",
+    "ref": "Ps 139:13-14",
+    "verse": "You formed my inmost being; you knit me in my mother's womb. I praise you, so wonderfully you made me; wonderful are your works! My very self you knew…",
+    "reflection": "In the middle of a month that contemplates Mary's sorrows, the Church celebrates her birth today. Before she was the Mother at the foot of the cross, she was a little girl received into the arms of her parents, whom tradition calls Joachim and Anne. God prepared her by His grace from the very first moment to be the Mother of His Son. Her birth reminds us that every life, yours included, was knit together with care by God and is a reason for joy.",
+    "prayer": "Father, thank You for the birth of Mary, the dawn of our salvation. Thank You, too, for my own life, knit together by You in my mother's womb. Help me to look at every life with Your same tenderness. Amen.",
+    "action": "Hold a little birthday celebration for Mary: place a flower beside an image of her and thank God for your own life, quietly naming three gifts you have received."
+   }
+  },
+  {
+   "day": 9,
+   "feast": null,
+   "es": {
+    "title": "Tercer dolor: el Niño que no está",
+    "ref": "Lc 2,44-45",
+    "verse": "Estos, creyendo que estaba en la caravana, anduvieron el camino de un día y se pusieron a buscarlo entre los parientes y conocidos; al no encontrarlo, se volvieron a Jerusalén buscándolo.",
+    "reflection": "Un día entero de camino creyendo que Jesús iba en la caravana, y de pronto el vacío: no está. Cualquier madre o padre que haya perdido de vista a un hijo, aunque sea unos minutos, conoce ese frío en el pecho. María y José no se quedaron paralizados: volvieron a buscarlo. Esta semana pensamos en los hijos que se alejan, en los que no sabemos dónde están, y también en esas temporadas en que sentimos que hemos perdido a Jesús.",
+    "prayer": "María, que buscaste a tu Hijo con angustia, acompaña a los padres que hoy buscan a un hijo perdido, desaparecido o alejado. Y cuando yo sienta que he perdido a Jesús, ayúdame a volver a buscarlo contigo. Amén.",
+    "action": "Reza hoy por las familias que buscan a un ser querido desaparecido. Si conoces a alguien que vive esa angustia, hazle saber con discreción que lo acompañas."
+   },
+   "en": {
+    "title": "Third sorrow: the Child who is missing",
+    "ref": "Lk 2:44-45",
+    "verse": "Thinking that he was in the caravan, they journeyed for a day and looked for him among their relatives and acquaintances, but not finding him, they returned to Jerusalem to look for him.",
+    "reflection": "A whole day's journey thinking Jesus was with the caravan, and then the emptiness: He isn't there. Any mother or father who has lost sight of a child, even for a few minutes, knows that cold feeling in the chest. Mary and Joseph did not freeze in place: they went back to search. This week we think of children who drift away, of those whose whereabouts are unknown, and also of those seasons when we feel we have lost Jesus.",
+    "prayer": "Mary, who searched for your Son in anguish, accompany parents who are looking for a lost, missing, or distant child. And when I feel I have lost Jesus, help me to go back and look for Him with you. Amen.",
+    "action": "Pray for families searching for a missing loved one. If you know someone living through that anguish, let them know discreetly that you are with them."
+   }
+  },
+  {
+   "day": 10,
+   "feast": null,
+   "es": {
+    "title": "Hijo, ¿por qué?",
+    "ref": "Lc 2,48",
+    "verse": "Al verlo, se quedaron atónitos, y le dijo su madre: «Hijo, ¿por qué nos has tratado así? Tu padre y yo te buscábamos angustiados».",
+    "reflection": "María no esconde su angustia ni la disfraza de serenidad: le dice a Jesús lo que sintió. Muchos padres viven hoy algo parecido con hijos que se fueron de casa enojados, que dejaron la fe o que toman decisiones que duelen. Se puede amar mucho y aun así no entender. La oración no exige callar la preocupación; puede empezar justamente ahí, con un «¿por qué?» dicho a Dios con confianza, como lo dijo la Madre.",
+    "prayer": "Señor, te presento a mis hijos, o a los hijos de quienes amo, sobre todo a los que están lejos. No sé qué palabras usar con ellos, pero tú conoces su corazón. Guárdalos, búscalos y dame paciencia para esperar. María, Madre angustiada, ruega por nosotros. Amén.",
+    "action": "Escribe una nota breve o un mensaje cariñoso a un hijo, sobrino o joven que esté alejado, sin reproches ni sermones: solo para decirle que lo quieres y que tu puerta está abierta."
+   },
+   "en": {
+    "title": "Son, why?",
+    "ref": "Lk 2:48",
+    "verse": "When his parents saw him, they were astonished, and his mother said to him, \"Son, why have you done this to us? Your father and I have been looking for you with great anxiety.\"",
+    "reflection": "Mary doesn't hide her anguish or dress it up as calm: she tells Jesus what she felt. Many parents live something similar with children who left home angry, who walked away from the faith, or who make choices that hurt. You can love deeply and still not understand. Prayer doesn't require silencing worry; it can begin right there, with a trusting “why?” spoken to God, just as the Mother did.",
+    "prayer": "Lord, I bring You my children, or the children of those I love, especially the ones who are far away. I don't know what words to use with them, but You know their hearts. Keep them, seek them, and give me patience to wait. Mary, anguished Mother, pray for us. Amen.",
+    "action": "Write a short note or a warm message to a son, daughter, nephew, or young person who has drifted away, with no reproach or lecture: just to say you love them and your door is open."
+   }
+  },
+  {
+   "day": 11,
+   "feast": null,
+   "es": {
+    "title": "Guardar lo que no se entiende",
+    "ref": "Lc 2,50-51",
+    "verse": "Pero ellos no comprendieron lo que les dijo. Él bajó con ellos y fue a Nazaret y estaba sujeto a ellos. Su madre conservaba todo esto en su corazón.",
+    "reflection": "El evangelio lo dice con sencillez: no comprendieron. Ni siquiera María entendió del todo la respuesta de Jesús. Pero no cerró el asunto con enojo ni con una explicación rápida; lo guardó en su corazón. Hay sufrimientos que hoy no tienen sentido para nosotros, y frases piadosas que no consuelan. La fe no siempre trae respuestas inmediatas. A veces consiste en llevar la pregunta dentro, con paciencia, mientras seguimos amando.",
+    "prayer": "Espíritu Santo, hay cosas en mi vida que no entiendo y que me duelen. No te pido que me lo expliques todo hoy. Dame el corazón de María, capaz de guardar y esperar sin endurecerse. Amén.",
+    "action": "Dedica diez minutos de silencio a presentar a Dios, sin palabras, una situación que no entiendes. Al terminar, escribe en tu cuaderno una sola línea: «Lo guardo contigo, Señor»."
+   },
+   "en": {
+    "title": "Keeping what we cannot understand",
+    "ref": "Lk 2:50-51",
+    "verse": "But they did not understand what he said to them. He went down with them and came to Nazareth, and was obedient to them; and his mother kept all these things in her heart.",
+    "reflection": "The Gospel says it plainly: they did not understand. Not even Mary fully grasped Jesus' answer. But she didn't close the matter with anger or a quick explanation; she kept it in her heart. Some sufferings make no sense to us right now, and some pious phrases bring no comfort. Faith does not always bring immediate answers. Sometimes it means carrying the question inside, patiently, while we keep on loving.",
+    "prayer": "Holy Spirit, there are things in my life that I don't understand and that hurt me. I don't ask You to explain everything now. Give me Mary's heart, able to keep and to wait without growing hard. Amen.",
+    "action": "Spend ten minutes in silence presenting to God, without words, a situation you don't understand. When you finish, write a single line in your notebook: “I keep this with You, Lord.”"
+   }
+  },
+  {
+   "day": 12,
+   "feast": null,
+   "es": {
+    "title": "Un Padre que corre",
+    "ref": "Lc 15,20",
+    "verse": "Se levantó y vino adonde estaba su padre; cuando todavía estaba lejos, su padre lo vio y se le conmovieron las entrañas; y, echando a correr, se le echó al cuello y lo cubrió de besos.",
+    "reflection": "El padre del hijo pródigo no esperaba sentado: miraba el camino. Cuando vio a su hijo todavía lejos, corrió a abrazarlo antes de escuchar su discurso. Así espera Dios a los que se fueron, y así te espera a ti si has caído o te has alejado. Si cargas una culpa que te pesa, la confesión no es un tribunal frío: es ese abrazo. Y si esperas a alguien que se fue, tu esperanza se parece a la del Padre.",
+    "prayer": "Padre misericordioso, gracias porque corres hacia mí cuando apenas doy un paso de regreso. Abrázame otra vez y abraza también a quienes espero. Que mi casa y mi corazón se parezcan a los tuyos. Amén.",
+    "action": "Si hace tiempo que no te confiesas, busca el horario de confesiones de tu parroquia y elige un día cercano para ir con calma. Si ya lo hiciste, reza por alguien que necesita volver a casa."
+   },
+   "en": {
+    "title": "The Father runs to meet you",
+    "ref": "Lk 15:20",
+    "verse": "So he got up and went back to his father. While he was still a long way off, his father caught sight of him, and was filled with compassion. He ran to his son, embraced him and kissed him.",
+    "reflection": "The father of the prodigal son wasn't waiting idly: he was watching the road. When he saw his son still a long way off, he ran to embrace him before hearing his speech. That is how God waits for those who have left, and how He waits for you if you have fallen or drifted away. If you carry guilt that weighs on you, confession is not a cold courtroom: it is that embrace. And if you are waiting for someone who left, your hope resembles the Father's.",
+    "prayer": "Merciful Father, thank You for running toward me when I take even one step back home. Embrace me once more, and embrace those I am waiting for. May my home and my heart become like Yours. Amen.",
+    "action": "If it's been a while since your last confession, look up your parish's confession times and choose a day soon to go, calmly. If you've already gone, pray for someone who needs to come home."
+   }
+  },
+  {
+   "day": 13,
+   "feast": {
+    "es": "San Juan Crisóstomo",
+    "en": "Saint John Chrysostom"
+   },
+   "es": {
+    "title": "La boca de oro y los pobres",
+    "ref": "Mt 25,40",
+    "verse": "Y el rey les dirá: “En verdad os digo que cada vez que lo hicisteis con uno de estos, mis hermanos más pequeños, conmigo lo hicisteis”.",
+    "reflection": "San Juan Crisóstomo fue un gran predicador; por la belleza de sus palabras lo llamaron «boca de oro». Como obispo de Constantinopla insistió en que no se puede honrar a Cristo en el altar y despreciarlo en el pobre de la calle. Su franqueza le costó el destierro, y murió lejos de su sede. Conoció el dolor del exilio, como la Sagrada Familia. Hoy nos recuerda que la compasión hacia los pequeños es el lugar donde encontramos a Jesús.",
+    "prayer": "Señor Jesús, que te escondes en los más pequeños, por intercesión de San Juan Crisóstomo dame palabras verdaderas y manos generosas. Que no te busque solo en el templo, sino también en quien sufre a mi lado. Amén.",
+    "action": "Haz hoy una limosna discreta: aparta algo de dinero o de comida para alguien que lo necesite y entrégalo sin contárselo a nadie, como un regalo hecho a Jesús."
+   },
+   "en": {
+    "title": "The golden mouth and the poor",
+    "ref": "Mt 25:40",
+    "verse": "And the king will say to them in reply, 'Amen, I say to you, whatever you did for one of these least brothers of mine, you did for me.'",
+    "reflection": "Saint John Chrysostom was a great preacher; because of the beauty of his words, people called him “golden mouth.” As bishop of Constantinople, he insisted that we cannot honor Christ at the altar and ignore Him in the poor on the street. His frankness cost him exile, and he died far from his see. He knew the pain of exile, as the Holy Family did. Today he reminds us that compassion for the least is where we find Jesus.",
+    "prayer": "Lord Jesus, You who hide in the least of Your brothers and sisters, through the intercession of Saint John Chrysostom give me truthful words and generous hands. May I seek You not only in church, but also in whoever suffers beside me. Amen.",
+    "action": "Give a quiet gift: set aside some money or food for someone in need and hand it over without telling anyone, as a gift made to Jesus."
+   }
+  },
+  {
+   "day": 14,
+   "feast": {
+    "es": "Exaltación de la Santa Cruz",
+    "en": "Exaltation of the Holy Cross"
+   },
+   "es": {
+    "title": "Mirar la cruz levantada",
+    "ref": "Jn 3,14-15",
+    "verse": "Lo mismo que Moisés elevó la serpiente en el desierto, así tiene que ser elevado el Hijo del hombre, para que todo el que cree en él tenga vida eterna.",
+    "reflection": "En el desierto, el pueblo herido miraba la serpiente levantada por Moisés y encontraba vida. Jesús toma esa imagen para hablar de su cruz. Hoy la Iglesia exalta la cruz, no porque ame el sufrimiento, sino porque en ella el amor de Dios llegó hasta el extremo y venció a la muerte. Al entrar en la semana más honda del mes, te invitamos a levantar la mirada: lo que más duele puede ser tocado por la misericordia.",
+    "prayer": "Señor Jesús, elevado en la cruz por amor, atrae hacia ti mi mirada cansada. Te entrego lo que hoy me hiere para que lo toques con tu vida. Te adoro y te bendigo, porque por tu santa cruz redimiste al mundo. Amén.",
+    "action": "Toma en tus manos un crucifijo (o dibuja una cruz sencilla en un papel) y quédate cinco minutos mirándolo en silencio. Luego besa la cruz o haz despacio la señal de la cruz."
+   },
+   "en": {
+    "title": "Looking up at the raised cross",
+    "ref": "Jn 3:14-15",
+    "verse": "And just as Moses lifted up the serpent in the desert, so must the Son of Man be lifted up, so that everyone who believes in him may have eternal life.",
+    "reflection": "In the desert, the wounded people looked at the serpent Moses had lifted up and found life. Jesus takes that image to speak of His cross. Today the Church exalts the cross, not because she loves suffering, but because on it God's love went to the very end and conquered death. As we enter the deepest week of the month, look up: what hurts most can be touched by mercy.",
+    "prayer": "Lord Jesus, lifted up on the cross out of love, draw my weary gaze to You. I hand over to You what wounds me, so You can touch it with Your life. I adore You and I bless You, because by Your holy cross You have redeemed the world. Amen.",
+    "action": "Hold a crucifix in your hands (or draw a simple cross on paper) and spend five minutes looking at it in silence. Then kiss the cross or slowly make the sign of the cross."
+   }
+  },
+  {
+   "day": 15,
+   "feast": {
+    "es": "Nuestra Señora de los Dolores",
+    "en": "Our Lady of Sorrows"
+   },
+   "es": {
+    "title": "La espada y la Madre que se queda",
+    "ref": "Lc 2,35",
+    "verse": "—y a ti misma una espada te traspasará el alma—, para que se pongan de manifiesto los pensamientos de muchos corazones.",
+    "reflection": "Lo que Simeón anunció al principio del mes se cumple al pie de la cruz. María no pudo evitar el dolor de su Hijo ni lo explicó con discursos. Hizo algo más humilde y más fuerte: se quedó. Por eso la llamamos Nuestra Señora de los Dolores. No es una madre lejana que mira el sufrimiento desde arriba; sabe lo que es tener el alma traspasada. A ella podemos llevarle el duelo, la enfermedad, la injusticia y el miedo sin adornarlos.",
+    "prayer": "Virgen de los Dolores, Madre que permaneciste junto a la cruz, quédate también junto a mí y junto a todos los que sufren hoy. No te pido que me quites toda pena, sino que no me dejes solo en ella. Amén.",
+    "action": "Reza los siete dolores de María nombrando cada uno con una avemaría: Simeón, Egipto, el templo, el camino, la cruz, el descendimiento y el sepulcro. Une a cada uno el dolor de una persona concreta."
+   },
+   "en": {
+    "title": "The sword and the Mother who stays",
+    "ref": "Lk 2:35",
+    "verse": "(and you yourself a sword will pierce) so that the thoughts of many hearts may be revealed.",
+    "reflection": "What Simeon foretold at the start of this month is fulfilled at the foot of the cross. Mary could not spare her Son His suffering, nor did she explain it away with speeches. She did something humbler and stronger: she stayed. That is why we call her Our Lady of Sorrows. She is not a distant mother looking at suffering from above; she knows what it is to have a pierced soul. We can bring her grief, illness, injustice, and fear without dressing them up.",
+    "prayer": "Our Lady of Sorrows, Mother who remained beside the cross, remain beside me too, and beside everyone who suffers. I don't ask you to take away every sorrow, only not to leave me alone in it. Amen.",
+    "action": "Pray the seven sorrows of Mary, naming each with a Hail Mary: Simeon, Egypt, the temple, the road, the cross, the taking down, and the tomb. Unite each one to the pain of a specific person."
+   }
+  },
+  {
+   "day": 16,
+   "feast": null,
+   "es": {
+    "title": "Cuarto dolor: un encuentro en el camino",
+    "ref": "Lc 23,27",
+    "verse": "Lo seguía un gran gentío del pueblo, y de mujeres que se golpeaban el pecho y lanzaban lamentos por él.",
+    "reflection": "El evangelio cuenta que muchas mujeres seguían a Jesús camino del Calvario, llorando por él. La piedad cristiana contempla en ese camino el encuentro de María con su Hijo. No podía quitarle la cruz, pero podía mirarlo. Lo vive quien acompaña a un familiar en quimioterapia, quien visita a un hijo en prisión, quien sostiene la mano de un padre con demencia. Estar presente, aunque no podamos arreglar nada, ya es amor.",
+    "prayer": "Jesús, que en el camino de la cruz encontraste la mirada de tu Madre, dame valor para no apartar los ojos de quien sufre. Cuando no pueda resolver nada, que al menos sepa quedarme y mirar con amor. Amén.",
+    "action": "Visita, llama o haz una videollamada a alguien que atraviesa una enfermedad larga. Escucha más de lo que hablas y no intentes animarlo a la fuerza: basta con estar."
+   },
+   "en": {
+    "title": "Fourth sorrow: a meeting on the road",
+    "ref": "Lk 23:27",
+    "verse": "A large crowd of people followed Jesus, including many women who mourned and lamented him.",
+    "reflection": "The Gospel tells us that many women followed Jesus on the way to Calvary, weeping for Him. Christian devotion contemplates on that road the meeting of Mary with her Son. She could not take away His cross, but she could look at Him. The same is lived by the one who accompanies a relative through chemotherapy, who visits a son in prison, who holds the hand of a parent with dementia. Being present, even when we can't fix anything, is already love.",
+    "prayer": "Jesus, who on the way of the cross met Your Mother's gaze, give me the courage not to look away from those who suffer. When I can't solve anything, may I at least know how to stay and look with love. Amen.",
+    "action": "Visit, call, or video-call someone going through a long illness. Listen more than you speak and don't try to cheer them up by force: simply being there is enough."
+   }
+  },
+  {
+   "day": 17,
+   "feast": null,
+   "es": {
+    "title": "Cargar un trozo de la cruz ajena",
+    "ref": "Lc 23,26",
+    "verse": "Mientras lo conducían, echaron mano de un cierto Simón de Cirene, que volvía del campo, y le cargaron la cruz, para que la llevase detrás de Jesús.",
+    "reflection": "Simón de Cirene volvía del campo, cansado, y le pusieron una cruz que no era suya. No eligió ese encuentro, pero quedó para siempre unido a Jesús. A veces el dolor de otro nos llega sin aviso: un compañero que se derrumba, una vecina sola, un amigo que perdió el trabajo. No podemos cargar toda su cruz, pero sí un trozo. Ayudar a llevar el peso ajeno es una forma muy concreta de estar con María junto a su Hijo.",
+    "prayer": "Señor Jesús, que aceptaste la ayuda de Simón, enséñame a dejar que otros me ayuden y a ofrecer mis hombros cuando alguien ya no puede más. Que no pase de largo ante la cruz de mi hermano. Amén.",
+    "action": "Ofrece hoy una ayuda práctica a alguien sobrecargado: cuidar a sus hijos un rato, hacerle un mandado, llevarle comida o encargarte de una tarea que le pesa."
+   },
+   "en": {
+    "title": "Carrying part of someone else's cross",
+    "ref": "Lk 23:26",
+    "verse": "As they led him away they took hold of a certain Simon, a Cyrenian, who was coming in from the country; and after laying the cross on him, they made him carry it behind Jesus.",
+    "reflection": "Simon of Cyrene was coming in from the fields, tired, when they laid on him a cross that wasn't his. He didn't choose that encounter, yet he remains forever joined to Jesus. Sometimes another person's pain reaches us without warning: a coworker who falls apart, a lonely neighbor, a friend who lost a job. We can't carry their whole cross, but we can carry a piece of it. Helping to bear another's burden is a very concrete way of standing with Mary beside her Son.",
+    "prayer": "Lord Jesus, who accepted Simon's help, teach me to let others help me and to offer my shoulders when someone can't go on. Let me not walk past the cross of my brother or sister. Amen.",
+    "action": "Offer practical help to someone who is overloaded: watch their children for a while, run an errand, bring them a meal, or take on a task that weighs on them."
+   }
+  },
+  {
+   "day": 18,
+   "feast": null,
+   "es": {
+    "title": "Llorar con los que lloran",
+    "ref": "Rom 12,15",
+    "verse": "Alegraos con los que están alegres; llorad con los que lloran.",
+    "reflection": "San Pablo no pide que expliquemos las lágrimas de otros ni que las sequemos rápido; pide que lloremos con ellos. Ante el dolor ajeno solemos buscar frases hechas: «todo pasa por algo», «ya verás que pronto se te pasa». Muchas veces hieren más de lo que consuelan. María en el camino del Calvario no ofreció teorías; su compañía silenciosa fue su consuelo. Hoy podemos aprender a callar a tiempo y a dejar que el otro llore sin prisa.",
+    "prayer": "Espíritu consolador, líbrame de las palabras fáciles que no ayudan. Dame un corazón capaz de alegrarse con quien se alegra y de llorar con quien llora, como María, que supo acompañar en silencio. Amén.",
+    "action": "En tu próxima conversación con alguien que sufre, evita dar consejos o explicaciones. Haz una sola pregunta sencilla, como «¿cómo estás de verdad?», y escucha hasta el final."
+   },
+   "en": {
+    "title": "Weeping with those who weep",
+    "ref": "Rom 12:15",
+    "verse": "Rejoice with those who rejoice, weep with those who weep.",
+    "reflection": "Saint Paul doesn't ask us to explain other people's tears or to dry them quickly; he asks us to weep with them. Faced with someone else's pain, we tend to reach for stock phrases: “everything happens for a reason,” “you'll get over it soon.” Often they hurt more than they comfort. On the road to Calvary, Mary offered no theories; her silent company was her comfort. We can learn to be quiet at the right time and let the other person cry without hurry.",
+    "prayer": "Spirit of comfort, free me from easy words that don't help. Give me a heart able to rejoice with those who rejoice and weep with those who weep, like Mary, who knew how to accompany in silence. Amen.",
+    "action": "In your next conversation with someone who is suffering, avoid giving advice or explanations. Ask one simple question, like “How are you, really?”, and listen all the way to the end."
+   }
+  },
+  {
+   "day": 19,
+   "feast": null,
+   "es": {
+    "title": "Quinto dolor: cuando no puedes acercarte",
+    "ref": "Lc 23,49",
+    "verse": "Todos sus conocidos y las mujeres que lo habían seguido desde Galilea se mantenían a distancia, viendo todo esto.",
+    "reflection": "En el Calvario hubo quienes miraban a distancia, sin poder hacer nada. El quinto dolor de María es ver morir a su Hijo. Hoy muchos viven una forma dolorosa de esa impotencia: el migrante que no puede viajar al funeral de su madre, la familia que no pudo despedirse en el hospital, quien ve sufrir a alguien y no puede intervenir. Esa distancia también puede ser oración. El amor que no llega con las manos llega a Dios por el corazón.",
+    "prayer": "Jesús crucificado, recibe el amor de quienes no pueden estar junto a sus seres queridos que sufren o mueren. Haz llegar su cariño adonde ellos no pueden llegar. María, Madre al pie de la cruz, acompaña a los que están lejos. Amén.",
+    "action": "Reza por alguien que está muriendo lejos de su familia o por una familia que no pudo despedirse. Si te toca vivir esa distancia, escribe una carta a esa persona y ofrécela a Dios."
+   },
+   "en": {
+    "title": "Fifth sorrow: when you can't come close",
+    "ref": "Lk 23:49",
+    "verse": "but all his acquaintances stood at a distance, including the women who had followed him from Galilee and saw these events.",
+    "reflection": "At Calvary there were those who watched from a distance, unable to do anything. Mary's fifth sorrow is seeing her Son die. Many people live a painful form of that helplessness: the migrant who can't travel to their mother's funeral, the family who couldn't say goodbye in the hospital, the one who watches someone suffer and cannot step in. That distance can also become prayer. Love that cannot reach with the hands reaches God through the heart.",
+    "prayer": "Crucified Jesus, receive the love of those who cannot be beside their loved ones who suffer or die. Carry their tenderness where they cannot go. Mary, Mother at the foot of the cross, stay with those who are far away. Amen.",
+    "action": "Pray for someone dying far from their family, or for a family who could not say goodbye. If you are living that distance yourself, write a letter to that person and offer it to God."
+   }
+  },
+  {
+   "day": 20,
+   "feast": null,
+   "es": {
+    "title": "Junto a la injusticia",
+    "ref": "Lc 23,34",
+    "verse": "Jesús decía: «Padre, perdónalos, porque no saben lo que hacen». Hicieron lotes con sus ropas y los echaron a suerte.",
+    "reflection": "Jesús muere injustamente, acusado sin culpa, y desde la cruz pide perdón para quienes lo crucifican. María escuchó esas palabras. El perdón no significa decir que la injusticia no importa: Jesús la nombra y la entrega al Padre. Hoy pensamos en quienes sufren abusos, despidos injustos, calumnias o violencia. María está con ellos. Y si a ti te cuesta perdonar, no tienes que forzarlo hoy: puedes empezar pidiendo a Dios que lo haga en ti.",
+    "prayer": "Padre, mira a las víctimas de la injusticia y defiéndelas. Yo no sé perdonar como tu Hijo; pon en mí el primer deseo de hacerlo y sana lo que la ofensa rompió. María, Madre de los inocentes, quédate con nosotros. Amén.",
+    "action": "Escribe en tu cuaderno el nombre de alguien que te hirió y, debajo, una frase sencilla: «Señor, bendícelo y sana mi herida». Si alguien cerca de ti sufre una injusticia, ofrécele un apoyo concreto."
+   },
+   "en": {
+    "title": "Standing beside injustice",
+    "ref": "Lk 23:34",
+    "verse": "[Then Jesus said, \"Father, forgive them, they know not what they do.\"] They divided his garments by casting lots.",
+    "reflection": "Jesus dies unjustly, accused though innocent, and from the cross He asks forgiveness for those who crucify Him. Mary heard those words. Forgiveness does not mean saying that injustice doesn't matter: Jesus names it and hands it over to the Father. We think of those who suffer abuse, unfair dismissals, slander, or violence. Mary is with them. And if forgiving is hard for you, you don't have to force it now: you can begin by asking God to do it in you.",
+    "prayer": "Father, look upon the victims of injustice and defend them. I don't know how to forgive as Your Son did; plant in me the first desire to do so, and heal what the offense broke. Mary, Mother of the innocent, walk with us. Amen.",
+    "action": "Write in your notebook the name of someone who hurt you and, beneath it, one simple line: “Lord, bless them and heal my wound.” If someone near you is suffering injustice, offer them concrete support."
+   }
+  },
+  {
+   "day": 21,
+   "feast": {
+    "es": "San Mateo, apóstol y evangelista",
+    "en": "Saint Matthew, Apostle and Evangelist"
+   },
+   "es": {
+    "title": "Una mirada en la mesa de impuestos",
+    "ref": "Mt 9,9",
+    "verse": "Al pasar vio Jesús a un hombre llamado Mateo sentado al mostrador de los impuestos, y le dijo: «Sígueme». Él se levantó y lo siguió.",
+    "reflection": "Mateo era recaudador de impuestos, un oficio que lo hacía despreciado por muchos. Jesús pasó, lo miró y le dijo: «Sígueme». No le exigió primero una vida perfecta. Mateo se levantó, lo siguió y más tarde nos dejó el evangelio que lleva su nombre. Cuando alguien se siente marcado por su pasado o por lo que otros dicen de él, la mirada de Jesús abre un camino nuevo. Esa mirada también te alcanza hoy, donde estás.",
+    "prayer": "Señor Jesús, que miraste a Mateo con amor cuando otros lo despreciaban, mírame también a mí en mi lugar de trabajo y en mis cansancios. Dame la libertad de levantarme y seguirte. San Mateo, ruega por mí. Amén.",
+    "action": "Lee despacio Mateo 9,9-13 y fíjate en una palabra que te toque. Después, trata hoy con especial respeto a alguien a quien otros suelen juzgar o ignorar."
+   },
+   "en": {
+    "title": "A gaze at the tax booth",
+    "ref": "Mt 9:9",
+    "verse": "As Jesus passed on from there, he saw a man named Matthew sitting at the customs post. He said to him, \"Follow me.\" And he got up and followed him.",
+    "reflection": "Matthew was a tax collector, a job that made him despised by many. Jesus passed by, looked at him, and said, “Follow me.” He didn't first demand a perfect life. Matthew got up, followed Him, and later left us the Gospel that bears his name. When someone feels marked by their past or by what others say about them, the gaze of Jesus opens a new path. That gaze reaches you too, right where you are.",
+    "prayer": "Lord Jesus, who looked at Matthew with love when others looked down on him, look at me too, in my workplace and in my weariness. Give me the freedom to get up and follow You. Saint Matthew, pray for me. Amen.",
+    "action": "Slowly read Matthew 9:9-13 and notice one word that touches you. Then treat with special respect someone whom others tend to judge or ignore."
+   }
+  },
+  {
+   "day": 22,
+   "feast": null,
+   "es": {
+    "title": "El grito que también es oración",
+    "ref": "Mc 15,34",
+    "verse": "Y a la hora nona, Jesús clamó con voz potente: Eloí Eloí, lemá sabaqtaní (que significa: «Dios mío, Dios mío, ¿por qué me has abandonado?»).",
+    "reflection": "Desde la cruz Jesús reza con las palabras de un salmo: «Dios mío, ¿por qué me has abandonado?». Es una pregunta lanzada hacia Dios, no lejos de él. María escuchó ese grito. A veces el dolor nos deja sin consuelo y sentimos el cielo cerrado. Decirlo no es falta de fe. Jesús nos enseña que también el desamparo puede convertirse en oración, y el salmo que rezó termina en confianza. El Padre no se aparta de quien sufre.",
+    "prayer": "Dios mío, a veces no te siento y me duele el silencio. Te lo digo con sinceridad, como tu Hijo en la cruz. Recibe mi grito como oración y sostenme aunque no lo note. María, quédate conmigo en esta hora oscura. Amén.",
+    "action": "Reza despacio el Salmo 22 completo, del lamento a la confianza. Si te cuesta, quédate con un solo versículo que exprese lo que sientes y repítelo durante el día."
+   },
+   "en": {
+    "title": "The cry that is also a prayer",
+    "ref": "Mk 15:34",
+    "verse": "And at three o'clock Jesus cried out in a loud voice, \"Eloi, Eloi, lema sabachthani?\" which is translated, \"My God, my God, why have you forsaken me?\"",
+    "reflection": "From the cross Jesus prays with the words of a psalm: “My God, my God, why have you forsaken me?” It is a question thrown toward God, not away from Him. Mary heard that cry. Sometimes pain leaves us without comfort and heaven seems closed. Saying so is not a lack of faith. Jesus teaches us that even desolation can become prayer, and the psalm He prayed ends in trust. The Father does not turn away from those who suffer.",
+    "prayer": "My God, sometimes I can't feel You, and the silence hurts. I tell You so honestly, as Your Son did on the cross. Receive my cry as a prayer and hold me even when I don't notice. Mary, stay with me in this dark hour. Amen.",
+    "action": "Slowly pray all of Psalm 22, from lament to trust. If it's hard, stay with a single verse that expresses what you feel and repeat it throughout the day."
+   }
+  },
+  {
+   "day": 23,
+   "feast": {
+    "es": "San Pío de Pietrelcina",
+    "en": "Saint Pius of Pietrelcina"
+   },
+   "es": {
+    "title": "Fuerza en la debilidad",
+    "ref": "2 Cor 12,9",
+    "verse": "«Te basta mi gracia: la fuerza se realiza en la debilidad». Así que muy a gusto me glorío de mis debilidades, para que resida en mí la fuerza de Cristo.",
+    "reflection": "San Pío de Pietrelcina, a quien muchos conocen como el Padre Pío, fue un fraile capuchino del sur de Italia. Pasó largas horas en el confesionario recibiendo a personas que llegaban cargadas de culpa, e impulsó un hospital para aliviar a los enfermos. Vivió enfermedades, incomprensiones y pruebas con paciencia, unido a la cruz de Cristo. Su vida recuerda que la gracia de Dios no espera a que seamos fuertes: en nuestra debilidad Cristo encuentra lugar.",
+    "prayer": "Señor, tu gracia me basta. Por intercesión de San Pío, ayúdame a confiarte mis pecados en la confesión sin miedo, y a ofrecerte mis debilidades sin vergüenza. Que tu fuerza habite en mi fragilidad. Amén.",
+    "action": "Haz un examen de conciencia breve y sereno, comenzando por dar gracias. Si te es posible, acércate a la confesión esta semana; si no, reza un acto de contrición con confianza."
+   },
+   "en": {
+    "title": "Strength in weakness",
+    "ref": "2 Cor 12:9",
+    "verse": "but he said to me, \"My grace is sufficient for you, for power is made perfect in weakness.\" I will rather boast most gladly of my weaknesses, in order that the power of Christ may dwell with me.",
+    "reflection": "Saint Pius of Pietrelcina, known to many as Padre Pio, was a Capuchin friar from southern Italy. He spent long hours in the confessional, receiving people who came burdened with guilt, and he promoted a hospital to relieve the sick. He endured illness, misunderstanding, and trials with patience, united to the cross of Christ. His life reminds us that God's grace doesn't wait for us to be strong: in our weakness, Christ finds room to dwell.",
+    "prayer": "Lord, Your grace is enough for me. Through the intercession of Saint Pius, help me to entrust my sins to You in confession without fear, and to offer You my weaknesses without shame. May Your strength dwell in my frailty. Amen.",
+    "action": "Make a short, peaceful examination of conscience, beginning with gratitude. If possible, go to confession this week; if not, pray an act of contrition with trust."
+   }
+  },
+  {
+   "day": 24,
+   "feast": null,
+   "es": {
+    "title": "Sexto dolor: recibir en los brazos",
+    "ref": "Lc 23,52-53",
+    "verse": "Este acudió a Pilato y le pidió el cuerpo de Jesús. Y, bajándolo, lo envolvió en una sábana y lo colocó en un sepulcro excavado en la roca, donde nadie había sido puesto todavía.",
+    "reflection": "José de Arimatea bajó el cuerpo de Jesús y lo envolvió en una sábana. La piedad cristiana, en tantas imágenes de la Piedad, contempla a María recibiendo a su Hijo en los brazos. Es el dolor de quien sostiene lo que ha perdido: la madre junto al féretro, el esposo que guarda la ropa de su esposa, los padres que perdieron a un bebé. María no huye de ese momento. Allí, en el silencio, su amor sigue siendo fiel.",
+    "prayer": "María, Madre que recibiste en tus brazos el cuerpo de Jesús, abraza a quienes hoy lloran a un ser querido, especialmente a los padres que han perdido un hijo. Que su amor no se rompa y encuentren consuelo en Dios. Amén.",
+    "action": "Reza por los difuntos de tu familia, nombrándolos uno a uno. Si conoces a alguien en duelo reciente, envíale unas palabras sencillas recordando con cariño a la persona que partió."
+   },
+   "en": {
+    "title": "Sixth sorrow: receiving Him into her arms",
+    "ref": "Lk 23:52-53",
+    "verse": "He went to Pilate and asked for the body of Jesus. After he had taken the body down, he wrapped it in a linen cloth and laid him in a rock-hewn tomb in which no one had yet been buried.",
+    "reflection": "Joseph of Arimathea took the body of Jesus down and wrapped it in linen. Christian devotion, in countless images of the Pieta, contemplates Mary receiving her Son into her arms. It is the sorrow of holding what has been lost: the mother beside the coffin, the husband who keeps his wife's clothes, the parents who lost a baby. Mary doesn't flee that moment. There, in silence, her love remains faithful.",
+    "prayer": "Mary, Mother who received the body of Jesus into your arms, embrace all who mourn a loved one, especially parents who have lost a child. May their love not break, and may they find comfort in God. Amen.",
+    "action": "Pray for the deceased of your family, naming them one by one. If you know someone recently bereaved, send them a few simple words fondly remembering the person who died."
+   }
+  },
+  {
+   "day": 25,
+   "feast": null,
+   "es": {
+    "title": "El valor de los gestos pequeños",
+    "ref": "Mc 15,43",
+    "verse": "vino José de Arimatea, miembro noble del Sanedrín, que también aguardaba el reino de Dios; se presentó decidido ante Pilato y le pidió el cuerpo de Jesús.",
+    "reflection": "José de Arimatea se presentó decidido ante Pilato para pedir el cuerpo de Jesús. Era un gesto arriesgado y, a la vez, muy sencillo: darle una sepultura digna. En el duelo, a menudo no sabemos qué decir y por eso no aparecemos. Pero lo que más consuela suele ser pequeño: ir al velorio, llevar comida, ayudar con los trámites, recordar el nombre del difunto meses después. El valor de José nos anima a no quedarnos lejos por miedo a no saber qué hacer.",
+    "prayer": "Señor, dame el valor de José de Arimatea para acercarme a quienes están de luto, aunque no sepa qué decir. Que mis gestos sencillos lleven tu consuelo y honren la memoria de los que han partido. Amén.",
+    "action": "Piensa en alguien que perdió a un ser querido hace meses y por quien quizá ya nadie pregunta. Llámalo o escríbele hoy, y menciona por su nombre a la persona que falleció."
+   },
+   "en": {
+    "title": "The courage of small gestures",
+    "ref": "Mk 15:43",
+    "verse": "Joseph of Arimathea, a distinguished member of the council, who was himself awaiting the kingdom of God, came and courageously went to Pilate and asked for the body of Jesus.",
+    "reflection": "Joseph of Arimathea courageously went before Pilate to ask for the body of Jesus. It was a risky gesture and, at the same time, a very simple one: to give Him a dignified burial. In grief we often don't know what to say, so we don't show up. But what comforts most is usually small: going to the wake, bringing food, helping with paperwork, remembering the name of the deceased months later. Joseph's courage encourages us not to stay away out of fear of not knowing what to do.",
+    "prayer": "Lord, give me the courage of Joseph of Arimathea to draw near to those who are mourning, even when I don't know what to say. May my simple gestures carry Your comfort and honor the memory of those who have died. Amen.",
+    "action": "Think of someone who lost a loved one months ago and whom perhaps no one asks about anymore. Call or write to them, and mention by name the person who died."
+   }
+  },
+  {
+   "day": 26,
+   "feast": null,
+   "es": {
+    "title": "Séptimo dolor: frente al sepulcro",
+    "ref": "Mt 27,61",
+    "verse": "María la Magdalena y la otra María se quedaron allí sentadas enfrente del sepulcro.",
+    "reflection": "Cuando la piedra cerró el sepulcro, algunas mujeres se quedaron allí sentadas. No había nada más que hacer y, sin embargo, no se fueron. El séptimo dolor de María es el silencio del sepulcro, ese tiempo en que todo parece terminado. La Iglesia lo vive cada Sábado Santo, esperando junto a la Madre. Hay duelos que necesitan tiempo, y no hay que apurarlos. La fe de María en ese silencio sostiene nuestra esperanza: el sepulcro no tiene la última palabra.",
+    "prayer": "Señor Jesús, que descansaste en el sepulcro, acompaña a quienes viven un duelo largo y silencioso. Dales paciencia consigo mismos y la esperanza de la resurrección. María, Madre que esperaste, espera con nosotros. Amén.",
+    "action": "Si te es posible, visita un cementerio y reza por los difuntos que encuentres. Si no puedes, reza desde casa un padrenuestro y un avemaría por quienes murieron sin nadie que los recuerde."
+   },
+   "en": {
+    "title": "Seventh sorrow: before the tomb",
+    "ref": "Mt 27:61",
+    "verse": "But Mary Magdalene and the other Mary remained sitting there, facing the tomb.",
+    "reflection": "When the stone sealed the tomb, some women stayed there, sitting. There was nothing left to do, and yet they didn't leave. Mary's seventh sorrow is the silence of the tomb, that time when everything seems over. The Church lives it every Holy Saturday, waiting with the Mother. Some griefs need time, and they shouldn't be rushed. Mary's faith in that silence sustains our hope: the tomb does not have the last word.",
+    "prayer": "Lord Jesus, who rested in the tomb, accompany those living through a long and silent grief. Give them patience with themselves and the hope of the resurrection. Mary, Mother who waited, wait with us. Amen.",
+    "action": "If you can, visit a cemetery and pray for the dead you find there. If you can't, pray an Our Father and a Hail Mary at home for those who died with no one to remember them."
+   }
+  },
+  {
+   "day": 27,
+   "feast": {
+    "es": "San Vicente de Paúl",
+    "en": "Saint Vincent de Paul"
+   },
+   "es": {
+    "title": "Una compasión que se organiza",
+    "ref": "Lc 4,18",
+    "verse": "El Espíritu del Señor está sobre mí, porque él me ha ungido. Me ha enviado a evangelizar a los pobres, a proclamar a los cautivos la libertad, y a los ciegos, la vista; a poner en libertad a los oprimidos…",
+    "reflection": "San Vicente de Paúl fue un sacerdote francés que descubrió con dolor el abandono de los pobres del campo y de la ciudad. No se quedó en la compasión: fundó la Congregación de la Misión y, con Santa Luisa de Marillac, las Hijas de la Caridad, para servir a enfermos, niños abandonados y presos. Unió la oración y la acción concreta. Después de contemplar los dolores de María, él nos muestra cómo convertir la compasión en un servicio que alivia.",
+    "prayer": "Señor Jesús, enviado a anunciar la buena noticia a los pobres, por intercesión de San Vicente de Paúl enciende en mí una caridad creativa y constante. Que no me conforme con sentir pena, sino que aprenda a servir. Amén.",
+    "action": "Dedica quince minutos a averiguar cómo podrías servir como voluntario en una obra cercana (un comedor, un banco de alimentos, tu parroquia, una residencia de ancianos) y anota en tu calendario una fecha para empezar."
+   },
+   "en": {
+    "title": "Compassion that gets organized",
+    "ref": "Lk 4:18",
+    "verse": "The Spirit of the Lord is upon me, because he has anointed me to bring glad tidings to the poor. He has sent me to proclaim liberty to captives and recovery of sight to the blind, to let the oppressed go free…",
+    "reflection": "Saint Vincent de Paul was a French priest who discovered, with sorrow, how abandoned the poor of the countryside and the city were. He didn't stop at compassion: he founded the Congregation of the Mission and, with Saint Louise de Marillac, the Daughters of Charity, to serve the sick, abandoned children, and prisoners. He joined prayer with concrete action. After contemplating Mary's sorrows, he shows us how to turn compassion into service that brings relief.",
+    "prayer": "Lord Jesus, sent to bring good news to the poor, through the intercession of Saint Vincent de Paul kindle in me a creative and steady charity. May I not settle for feeling sorry, but learn to serve. Amen.",
+    "action": "Spend fifteen minutes finding out how you could volunteer at a local work of charity (a soup kitchen, a food bank, your parish, a nursing home), and mark a start date on your calendar."
+   }
+  },
+  {
+   "day": 28,
+   "feast": null,
+   "es": {
+    "title": "Consolados para consolar",
+    "ref": "2 Cor 1,3-4",
+    "verse": "¡Bendito sea el Dios y Padre de nuestro Señor Jesucristo, Padre de las misericordias y Dios de todo consuelo, que nos consuela en cualquier tribulación nuestra hasta el punto de poder consolar nosotros a los demás en cualquier lucha, mediante el consuelo con que nosotros mismos somos consolados por Dios!",
+    "reflection": "Al final de este recorrido, San Pablo nos da una clave: Dios nos consuela en nuestras tribulaciones para que podamos consolar a otros. Las heridas que has atravesado, tu enfermedad, tus duelos o tus caídas no se pierden en las manos de Dios. María, que conoció siete espadas, es invocada como Consuelo de los afligidos. Quien ha sufrido y ha sido sostenido sabe acompañar con delicadeza. Tu historia, sanada poco a poco, puede ser refugio para alguien.",
+    "prayer": "Dios de todo consuelo, gracias por las veces que me sostuviste cuando ya no podía más. Usa mi historia, también mis heridas, para acompañar a otros con ternura. María, Consuelo de los afligidos, ruega por nosotros. Amén.",
+    "action": "Escribe en tu cuaderno un momento difícil en el que te sentiste acompañado por Dios o por alguien. Da gracias por ello y piensa a quién podrías ofrecer hoy ese mismo tipo de compañía."
+   },
+   "en": {
+    "title": "Comforted to comfort",
+    "ref": "2 Cor 1:3-4",
+    "verse": "Blessed be the God and Father of our Lord Jesus Christ, the Father of compassion and God of all encouragement, who encourages us in our every affliction, so that we may be able to encourage those who are in any affliction with the encouragement with which we ourselves are encouraged by God.",
+    "reflection": "At the end of this journey, Saint Paul gives us a key: God comforts us in our afflictions so that we can comfort others. The wounds you have been through, your illness, your grief, or your falls are not lost in God's hands. Mary, who knew seven swords, is invoked as Comforter of the Afflicted. Whoever has suffered and been held knows how to accompany gently. Your story, slowly healed, can become a refuge for someone.",
+    "prayer": "God of all comfort, thank You for the times You held me up when I couldn't go on. Use my story, even my wounds, to accompany others with tenderness. Mary, Comforter of the Afflicted, pray for us. Amen.",
+    "action": "Write in your notebook about a hard time when you felt accompanied by God or by someone. Give thanks for it and consider whom you could offer that same kind of company to today."
+   }
+  },
+  {
+   "day": 29,
+   "feast": {
+    "es": "Santos Miguel, Gabriel y Rafael, arcángeles",
+    "en": "Saints Michael, Gabriel and Raphael, Archangels"
+   },
+   "es": {
+    "title": "Mensajeros que acompañan el camino",
+    "ref": "Sal 91,11",
+    "verse": "porque a sus ángeles ha dado órdenes para que te guarden en tus caminos.",
+    "reflection": "Hoy la Iglesia celebra a los arcángeles Miguel, Gabriel y Rafael. En la Escritura, Miguel aparece defendiendo al pueblo de Dios en la lucha contra el mal; Gabriel anunció a María que sería la Madre del Salvador; Rafael acompañó a Tobías en su viaje y llevó curación a su familia. Los tres hablan de un Dios que no nos deja solos: protege, anuncia y sana. En un mes de dolores, nos recuerdan que el cielo se inclina sobre nuestra tierra herida.",
+    "prayer": "Padre, gracias por tus ángeles. San Miguel, defiéndenos en la lucha; San Gabriel, ayúdanos a escuchar la Palabra como María; San Rafael, acompaña a los enfermos y a los que viajan. Guárdennos en nuestros caminos. Amén.",
+    "action": "Reza hoy por alguien que necesite protección, por alguien que espere una buena noticia y por un enfermo, confiando a cada uno a uno de los tres arcángeles."
+   },
+   "en": {
+    "title": "Messengers who walk with us",
+    "ref": "Ps 91:11",
+    "verse": "For God commands the angels to guard you in all your ways.",
+    "reflection": "Today the Church celebrates the archangels Michael, Gabriel, and Raphael. In Scripture, Michael appears defending God's people in the struggle against evil; Gabriel announced to Mary that she would be the Mother of the Savior; Raphael accompanied Tobiah on his journey and brought healing to his family. All three speak of a God who doesn't leave us alone: He protects, He announces, He heals. In a month of sorrows, they remind us that heaven bends down over our wounded earth.",
+    "prayer": "Father, thank You for Your angels. Saint Michael, defend us in the struggle; Saint Gabriel, help us listen to the Word as Mary did; Saint Raphael, accompany the sick and those who travel. Guard us on our way. Amen.",
+    "action": "Pray for someone who needs protection, someone waiting for good news, and someone who is sick, entrusting each of them to one of the three archangels."
+   }
+  },
+  {
+   "day": 30,
+   "feast": {
+    "es": "San Jerónimo",
+    "en": "Saint Jerome"
+   },
+   "es": {
+    "title": "Una lámpara para seguir caminando",
+    "ref": "Sal 119,105",
+    "verse": "(Nun) Lámpara es tu palabra para mis pasos, luz en mi sendero…",
+    "reflection": "San Jerónimo dedicó buena parte de su vida a traducir la Sagrada Escritura al latín, para que el pueblo pudiera leerla. Tenía un carácter fuerte y lo sabía; aun así dejó que la Palabra lo fuera transformando, y pasó sus últimos años en Belén, cerca del lugar donde nació Jesús. Terminamos este mes como María: guardando la Palabra en el corazón. Ella no tuvo todas las respuestas, pero tuvo luz suficiente para dar el siguiente paso.",
+    "prayer": "Señor, tu Palabra es lámpara para mis pasos. Por intercesión de San Jerónimo, dame amor por la Escritura y paciencia con mi propio carácter. Con María, quiero guardar lo vivido este mes y seguir caminando contigo. Amén.",
+    "action": "Elige un pasaje del evangelio que te haya acompañado este mes y vuelve a leerlo despacio. Luego escribe en tu cuaderno qué dolor quieres seguir confiando a María."
+   },
+   "en": {
+    "title": "A lamp for the road ahead",
+    "ref": "Ps 119:105",
+    "verse": "Your word is a lamp for my feet, a light for my path.",
+    "reflection": "Saint Jerome devoted much of his life to translating Sacred Scripture into Latin so that ordinary people could read it. He had a strong temper and knew it; even so, he let the Word gradually transform him, and he spent his last years in Bethlehem, near the place where Jesus was born. We end this month as Mary did: keeping the Word in our hearts. She didn't have every answer, but she had enough light to take the next step.",
+    "prayer": "Lord, Your word is a lamp for my feet. Through the intercession of Saint Jerome, give me love for Scripture and patience with my own temperament. With Mary, I want to keep what I have lived this month and go on walking with You. Amen.",
+    "action": "Choose a Gospel passage that has accompanied you this month and read it again slowly. Then write in your notebook which sorrow you want to keep entrusting to Mary."
+   }
+  }
+ ]
+}

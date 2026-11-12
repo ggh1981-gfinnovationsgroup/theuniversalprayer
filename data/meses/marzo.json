@@ -1,0 +1,672 @@
+{
+ "key": "marzo",
+ "es": {
+  "topic": "San José",
+  "intro": "Marzo nos sienta junto a San José, el hombre justo que casi no habla en el Evangelio, pero que escucha, obedece, trabaja y protege. Caminaremos con él en cuatro tramos: su silencio justo, el trabajo y la provisión de cada día, las noches de huida y de miedo, y su corazón de padre valiente. En plena Cuaresma, de su mano, la oración, la limosna, el pequeño ayuno y la confesión se vuelven sencillos y confiados.",
+  "method": {
+   "title": "Cómo vivir este mes",
+   "steps": [
+    "Cada mañana lee despacio el versículo del día y quédate un minuto en silencio, como José, antes de decir nada.",
+    "Ofrece tu trabajo del día, pagado o invisible, poniéndolo en manos de Jesús, que también aprendió un oficio en Nazaret.",
+    "Elige para esta Cuaresma una práctica sencilla: un rato de oración, una limosna discreta o una pequeña renuncia si tu salud lo permite.",
+    "Cuando lleguen el miedo o la noche, pide a San José que custodie tu casa y a quienes amas.",
+    "Busca durante el mes un momento tranquilo para confesarte, como quien vuelve a casa después de un viaje largo."
+   ],
+   "prayer": "San José, custodio de Jesús y esposo de María, hoy me pongo bajo tu cuidado. Enséñame a escuchar a Dios en el silencio, a trabajar con honradez y a proteger con ternura a quienes me han sido confiados. Acompáñame en esta Cuaresma para que mi corazón vuelva entero al Señor. Amén.",
+   "closing": "Señor, gracias por este día y por lo que hicieron mis manos. Lo que quedó a medias lo dejo en las tuyas. San José, cuida mi descanso y el de mi casa. Amén."
+  }
+ },
+ "en": {
+  "topic": "Saint Joseph",
+  "intro": "March seats us beside Saint Joseph, the just man who barely speaks in the Gospel, yet listens, obeys, works, and protects. We will walk with him in four stretches: his quiet righteousness, the work and provision of each day, the nights of flight and fear, and his brave father's heart. In the middle of Lent, with his help, prayer, almsgiving, small fasts, and confession become simple and trusting.",
+  "method": {
+   "title": "How to live this month",
+   "steps": [
+    "Each morning, read the day's verse slowly and stay silent for a minute, like Joseph, before saying anything.",
+    "Offer the day's work, paid or unseen, placing it in the hands of Jesus, who also learned a trade in Nazareth.",
+    "Choose one simple Lenten practice: a set time of prayer, a quiet act of almsgiving, or a small sacrifice if your health allows.",
+    "When fear or the night comes, ask Saint Joseph to guard your home and the people you love.",
+    "Sometime this month, find a calm moment to go to confession, like someone coming home after a long journey."
+   ],
+   "prayer": "Saint Joseph, guardian of Jesus and spouse of Mary, I place myself in your care. Teach me to listen to God in silence, to work honestly, and to protect with tenderness those entrusted to me. Walk with me this Lent so that my whole heart may turn back to the Lord. Amen.",
+   "closing": "Lord, thank You for this day and for the work of my hands. Whatever is unfinished I leave in Yours. Saint Joseph, watch over my rest and my home. Amen."
+  }
+ },
+ "days": [
+  {
+   "day": 1,
+   "feast": null,
+   "es": {
+    "title": "Un hombre justo que no humilla",
+    "ref": "Mt 1,19",
+    "verse": "José, su esposo, como era justo y no quería difamarla, decidió repudiarla en privado.",
+    "reflection": "La primera palabra que el Evangelio dice de José es «justo». Y su justicia se nota en algo concreto: ante una situación que no entendía, no quiso exponer a María a la vergüenza. Podía tener razón y aun así eligió no herir. Ser justo, para él, no era señalar a otros, sino proteger su dignidad. Empezamos el mes aprendiendo de un hombre que supo callar para no hacer daño.",
+    "prayer": "San José, hombre justo, enséñame a mirar a los demás sin juzgarlos de prisa. Cuando sienta que tengo razón, dame también un corazón que no quiera humillar a nadie. Pide para mí la justicia mansa que tú viviste. Amén.",
+    "action": "Piensa en alguien de quien hablaste mal o con dureza en estos días. Hoy, si sale su nombre en una conversación, di algo bueno y verdadero sobre esa persona."
+   },
+   "en": {
+    "title": "A just man who does not shame",
+    "ref": "Mt 1:19",
+    "verse": "Joseph her husband, since he was a righteous man, yet unwilling to expose her to shame, decided to divorce her quietly.",
+    "reflection": "The first word the Gospel uses for Joseph is \"righteous.\" His righteousness shows in something concrete: facing a situation he did not understand, he refused to expose Mary to shame. He could have been in the right and still chose not to wound. For him, being just was not about pointing fingers but about protecting someone's dignity. We begin the month learning from a man who knew how to stay quiet so as not to cause harm.",
+    "prayer": "Saint Joseph, just man, teach me to look at others without rushing to judge. When I feel I am right, give me also a heart that refuses to humiliate anyone. Ask for me the gentle justice you lived. Amen.",
+    "action": "Think of someone you spoke about harshly in recent days. If their name comes up in conversation, say something good and true about them."
+   }
+  },
+  {
+   "day": 2,
+   "feast": null,
+   "es": {
+    "title": "Cuando Dios habla en la noche",
+    "ref": "Mt 1,20",
+    "verse": "Pero, apenas había tomado esta resolución, se le apareció en sueños un ángel del Señor que le dijo: José, hijo de David, no temas acoger a María, tu mujer, porque la criatura que hay en ella viene del Espíritu Santo.",
+    "reflection": "José ya había tomado una decisión cuando Dios le habló en sueños. No le reprochó nada; simplemente le dijo: «no temas». Dios entra en nuestros planes más pensados con una palabra de paz, no de presión. Quizá tú también cargas una decisión que te quita el sueño. Antes de cerrarla del todo, deja que el Señor tenga la última palabra. Él no viene a asustarte, viene a ampliar tu horizonte.",
+    "prayer": "Señor, tú hablaste a José en medio de su desvelo. Aquí te presento la decisión que me inquieta. Quita de mí el miedo que me cierra y dame luz para acoger lo que tú quieres. San José, ruega por mí. Amén.",
+    "action": "Escribe en un cuaderno una decisión pendiente que te preocupa. Debajo escribe: «no temas». Antes de dormir, léela y entrégasela a Dios en una breve oración."
+   },
+   "en": {
+    "title": "When God speaks in the night",
+    "ref": "Mt 1:20",
+    "verse": "Such was his intention when, behold, the angel of the Lord appeared to him in a dream and said, Joseph, son of David, do not be afraid to take Mary your wife into your home. For it is through the holy Spirit that this child has been conceived in her.",
+    "reflection": "Joseph had already made up his mind when God spoke to him in a dream. There was no reproach, only these words: \"do not be afraid.\" God enters our most carefully made plans with a word of peace, not pressure. Maybe you are carrying a decision that keeps you awake. Before you close it for good, let the Lord have the last word. He does not come to frighten you; He comes to widen your horizon.",
+    "prayer": "Lord, You spoke to Joseph in his sleepless worry. Here is the decision that troubles me. Take away the fear that closes me in and give me light to welcome what You desire. Saint Joseph, pray for me. Amen.",
+    "action": "In a notebook, write down a pending decision that worries you. Beneath it, write: \"do not be afraid.\" Before bed, read it and hand it to God in a short prayer."
+   }
+  },
+  {
+   "day": 3,
+   "feast": null,
+   "es": {
+    "title": "El silencio de Nazaret",
+    "ref": "Sal 62,2",
+    "verse": "Solo en Dios descansa mi alma, porque de él viene mi salvación…",
+    "reflection": "No conservamos ni una sola frase de José en los Evangelios. Su vida habla de otra manera: con gestos, con presencia, con fidelidad. Vivimos rodeados de ruido, notificaciones y opiniones, y a veces creemos que solo existe lo que se dice en voz alta. El salmo recuerda que el alma descansa en Dios, no en el ruido. El silencio no es vacío: es el lugar donde la palabra de Dios puede, por fin, ser escuchada.",
+    "prayer": "Dios mío, solo en ti descansa mi alma. Calma el ruido que llevo dentro y fuera. Como José en Nazaret, quiero aprender a estar contigo sin tantas palabras, sabiendo que me miras con amor. Amén.",
+    "action": "Haz diez minutos de silencio completo: sin música, sin teléfono y sin pantalla. Siéntate, respira despacio y repite de vez en cuando: «Solo en Dios descansa mi alma»."
+   },
+   "en": {
+    "title": "The silence of Nazareth",
+    "ref": "Ps 62:2",
+    "verse": "My soul rests in God alone, from whom comes my salvation.",
+    "reflection": "Not a single sentence of Joseph's has been preserved in the Gospels. His life speaks in another way: through deeds, presence, and faithfulness. We live surrounded by noise, notifications, and opinions, and sometimes we think only what is said out loud is real. The psalm reminds us that the soul rests in God, not in noise. Silence is not emptiness; it is the place where God's word can finally be heard.",
+    "prayer": "My God, my soul rests in You alone. Quiet the noise I carry inside and around me. Like Joseph in Nazareth, I want to learn to be with You without so many words, knowing You look at me with love. Amen.",
+    "action": "Spend ten minutes in complete silence: no music, no phone, no screen. Sit, breathe slowly, and now and then repeat: \"My soul rests in God alone.\""
+   }
+  },
+  {
+   "day": 4,
+   "feast": null,
+   "es": {
+    "title": "Despertar y hacer",
+    "ref": "Mt 1,24",
+    "verse": "Cuando José se despertó, hizo lo que le había mandado el ángel del Señor y acogió a su mujer.",
+    "reflection": "José se despertó e hizo lo que el ángel le había mandado. Sin discursos ni largas condiciones. Hay una santidad muy sencilla en eso: saber qué es lo bueno y empezar por hacerlo. Muchos de nuestros cansancios vienen de dar vueltas a lo que ya sabemos que Dios nos pide. La obediencia de José no fue fría; fue acoger a María en su casa. Obedecer a Dios casi siempre significa abrir la puerta a alguien.",
+    "prayer": "Señor, tantas veces sé lo que me pides y lo dejo para mañana. Dame la prontitud sencilla de San José. Que hoy no me pierda en excusas, sino que abra mi casa y mi corazón a lo que tú pones delante. Amén.",
+    "action": "Elige una tarea buena que llevas días posponiendo (una llamada, un trámite, un pedido de perdón) y hazla hoy antes del mediodía, sin dar más vueltas."
+   },
+   "en": {
+    "title": "To wake up and do it",
+    "ref": "Mt 1:24",
+    "verse": "When Joseph awoke, he did as the angel of the Lord had commanded him and took his wife into his home.",
+    "reflection": "Joseph woke up and did what the angel had commanded. No speeches, no long list of conditions. There is a very simple holiness in that: knowing what is good and starting to do it. Much of our weariness comes from circling around what we already know God is asking. Joseph's obedience was not cold; it meant welcoming Mary into his home. Obeying God almost always means opening the door to someone.",
+    "prayer": "Lord, so often I know what You are asking and put it off until tomorrow. Give me the simple readiness of Saint Joseph. Today, let me not get lost in excuses, but open my home and my heart to what You set before me. Amen.",
+    "action": "Choose one good task you have been putting off for days (a call, an errand, an apology) and do it before noon, without overthinking it."
+   }
+  },
+  {
+   "day": 5,
+   "feast": null,
+   "es": {
+    "title": "En el camino a Belén",
+    "ref": "Lc 2,4-5",
+    "verse": "También José, por ser de la casa y familia de David, subió desde la ciudad de Nazaret, en Galilea, a la ciudad de David, que se llama Belén, en Judea, para empadronarse con su esposa María, que estaba encinta.",
+    "reflection": "Un decreto lejano obligó a José a ponerse en camino con María embarazada. No eligió el momento ni las condiciones; solo eligió no dejarla sola. Muchas cosas que vivimos también vienen impuestas: un cambio en el trabajo, una mudanza, un diagnóstico. José nos enseña que, aunque no decidamos el camino, sí podemos decidir cómo acompañar a quien camina con nosotros. En esa fidelidad pequeña Dios estaba preparando la Navidad.",
+    "prayer": "San José, que caminaste hacia Belén cuidando a María, acompaña a quienes hoy recorren caminos que no eligieron. Y a mí, enséñame a no dejar solo a quien viaja a mi lado. Señor Jesús, haz fecundos estos caminos difíciles. Amén.",
+    "action": "Escríbele hoy un mensaje a alguien que está atravesando un cambio difícil (mudanza, enfermedad, nuevo trabajo) solo para decirle que piensas en él y rezas por él."
+   },
+   "en": {
+    "title": "On the road to Bethlehem",
+    "ref": "Lk 2:4-5",
+    "verse": "And Joseph too went up from Galilee from the town of Nazareth to Judea, to the city of David that is called Bethlehem, because he was of the house and family of David, to be enrolled with Mary, his betrothed, who was with child.",
+    "reflection": "A distant decree forced Joseph onto the road with a pregnant Mary. He did not choose the timing or the conditions; he only chose not to leave her alone. Much of what we live through is also imposed on us: a change at work, a move, a diagnosis. Joseph teaches us that even when we do not choose the road, we can choose how we accompany the one walking beside us. In that small faithfulness, God was preparing Christmas.",
+    "prayer": "Saint Joseph, you walked toward Bethlehem caring for Mary. Be with all who travel roads they did not choose. And teach me never to leave alone the one who journeys at my side. Lord Jesus, make these hard roads fruitful. Amen.",
+    "action": "Send a message to someone going through a difficult change (a move, an illness, a new job) simply to say you are thinking of them and praying for them."
+   }
+  },
+  {
+   "day": 6,
+   "feast": null,
+   "es": {
+    "title": "Cuando no hay lugar",
+    "ref": "Lc 2,7",
+    "verse": "y dio a luz a su hijo primogénito, lo envolvió en pañales y lo recostó en un pesebre, porque no había sitio para ellos en la posada.",
+    "reflection": "Imagina a José tocando puertas mientras María está a punto de dar a luz, y escuchando una y otra vez que no hay lugar. Es humillante sentirse rechazado justo cuando más se necesita. Sin embargo, en ese rincón pobre nació el Hijo de Dios. La Cuaresma nos invita a revisar nuestra propia posada interior: ¿qué cuartos están tan llenos que ya no queda sitio para Dios ni para los demás? Hacer lugar es el primer paso de la conversión.",
+    "prayer": "Jesús, que naciste donde no había sitio, perdona las veces que mi corazón estuvo lleno de otras cosas. Hoy quiero hacerte un rincón limpio y sencillo. San José, ayúdame a preparar ese lugar para él. Amén.",
+    "action": "Ordena un pequeño espacio de tu casa (un cajón, una mesa, un rincón) y deja allí una cruz, una vela o una imagen sencilla como lugar para rezar esta Cuaresma."
+   },
+   "en": {
+    "title": "When there is no room",
+    "ref": "Lk 2:7",
+    "verse": "and she gave birth to her firstborn son. She wrapped him in swaddling clothes and laid him in a manger, because there was no room for them in the inn.",
+    "reflection": "Picture Joseph knocking on doors while Mary is about to give birth, hearing again and again that there is no room. It is humiliating to be turned away just when you need help most. Yet in that poor corner the Son of God was born. Lent invites us to look at our own inner inn: which rooms are so full that there is no space left for God or for others? Making room is the first step of conversion.",
+    "prayer": "Jesus, You were born where there was no room. Forgive the times my heart was full of other things. I want to make a clean, simple corner for You. Saint Joseph, help me prepare that place for Him. Amen.",
+    "action": "Tidy a small space in your home (a drawer, a table, a corner) and place a cross, a candle, or a simple image there as a spot for prayer this Lent."
+   }
+  },
+  {
+   "day": 7,
+   "feast": {
+    "es": "Santas Perpetua y Felicidad",
+    "en": "Saints Perpetua and Felicity"
+   },
+   "es": {
+    "title": "Perpetua y Felicidad, unidas hasta el final",
+    "ref": "Rom 8,35",
+    "verse": "¿Quién nos separará del amor de Cristo?, ¿la tribulación?, ¿la angustia?, ¿la persecución?, ¿el hambre?, ¿la desnudez?, ¿el peligro?, ¿la espada?…",
+    "reflection": "Perpetua era una joven madre de buena familia; Felicidad, una esclava que dio a luz en la cárcel poco antes de morir. Fueron mártires en Cartago, al norte de África, en los primeros siglos de la Iglesia, y sus nombres se pronuncian todavía en la Plegaria Eucarística I. La sociedad las separaba; la fe en Cristo las hizo hermanas. Nada, ni el miedo ni la prisión, pudo separarlas del amor de Dios. Hoy pensamos en las madres que sufren y en los cristianos perseguidos.",
+    "prayer": "Santas Perpetua y Felicidad, que permanecieron unidas en Cristo hasta el final, intercedan por las madres que sufren y por los cristianos perseguidos. Señor, que nada me separe de tu amor ni de mis hermanos. Amén.",
+    "action": "Reza un Avemaría por una madre que conozcas que esté pasando un momento duro y otro por los cristianos perseguidos. Si puedes, envíale a esa madre unas palabras de ánimo."
+   },
+   "en": {
+    "title": "Perpetua and Felicity, together to the end",
+    "ref": "Rom 8:35",
+    "verse": "What will separate us from the love of Christ? Will anguish, or distress, or persecution, or famine, or nakedness, or peril, or the sword?",
+    "reflection": "Perpetua was a young mother from a respected family; Felicity was an enslaved woman who gave birth in prison shortly before her death. They were martyred in Carthage, in North Africa, in the early centuries of the Church, and their names are still spoken in Eucharistic Prayer I. Society kept them apart; faith in Christ made them sisters. Nothing, not fear or prison, could separate them from God's love. We remember suffering mothers and persecuted Christians.",
+    "prayer": "Saints Perpetua and Felicity, who stayed united in Christ to the very end, pray for mothers who suffer and for persecuted Christians. Lord, let nothing separate me from Your love or from my brothers and sisters. Amen.",
+    "action": "Pray a Hail Mary for a mother you know who is going through a hard time and another for persecuted Christians. If you can, send that mother a few words of encouragement."
+   }
+  },
+  {
+   "day": 8,
+   "feast": null,
+   "es": {
+    "title": "El hijo del carpintero",
+    "ref": "Mt 13,55",
+    "verse": "¿No es el hijo del carpintero? ¿No es su madre María, y sus hermanos Santiago, José, Simón y Judas?",
+    "reflection": "Comenzamos una semana dedicada al trabajo. Cuando la gente de Nazaret quiso rebajar a Jesús, lo llamó «el hijo del carpintero». Para Dios, en cambio, no fue una vergüenza: eligió crecer entre virutas, herramientas y encargos de vecinos. El trabajo de José, sencillo y sin aplausos, sostuvo la vida del Hijo de Dios. Tu trabajo, aunque nadie lo valore o aunque parezca pequeño, también puede ser lugar de encuentro con él.",
+    "prayer": "San José, obrero de Nazaret, te ofrezco mi trabajo de hoy, el visible y el que nadie nota. Ayúdame a hacerlo con honradez y paciencia. Jesús, que aprendiste un oficio en su taller, santifica mis manos. Amén.",
+    "action": "Antes de empezar tu jornada, sea en una oficina, en casa o estudiando, di en voz baja: «Señor, esto es para ti». Repítelo al empezar la tarde."
+   },
+   "en": {
+    "title": "The carpenter's son",
+    "ref": "Mt 13:55",
+    "verse": "Is he not the carpenter's son? Is not his mother named Mary and his brothers James, Joseph, Simon, and Judas?",
+    "reflection": "We begin a week dedicated to work. When the people of Nazareth wanted to cut Jesus down to size, they called Him \"the carpenter's son.\" For God, though, it was no embarrassment: He chose to grow up among wood shavings, tools, and neighbors' orders. Joseph's work, simple and unapplauded, sustained the life of the Son of God. Your work, even if no one values it or it seems small, can also be a place to meet Him.",
+    "prayer": "Saint Joseph, worker of Nazareth, I offer you my work, both what is seen and what no one notices. Help me do it honestly and patiently. Jesus, who learned a trade in his workshop, bless the work of my hands. Amen.",
+    "action": "Before you start your day, whether at an office, at home, or studying, say quietly: \"Lord, this is for You.\" Repeat it as the afternoon begins."
+   }
+  },
+  {
+   "day": 9,
+   "feast": null,
+   "es": {
+    "title": "Cultivar y cuidar",
+    "ref": "Gn 2,15",
+    "verse": "El Señor Dios tomó al hombre y lo colocó en el jardín de Edén, para que lo guardara y lo cultivara.",
+    "reflection": "Desde el principio, Dios confió al ser humano el jardín para que lo cultivara y lo guardara. El trabajo no nació como condena, sino como colaboración con el Creador. José vivió así su oficio: transformaba la madera y, al mismo tiempo, cuidaba a su familia. Cultivar y cuidar siguen siendo las dos caras de toda tarea buena: producir sin destruir, avanzar sin pisar a nadie, usar la creación sin agotarla.",
+    "prayer": "Dios creador, gracias por confiarme un pedazo de tu mundo. Que mi trabajo cultive y cuide, no que desgaste ni destruya. San José, enséñame a trabajar con respeto por las personas y por la creación. Amén.",
+    "action": "Haz hoy un gesto concreto de cuidado de la creación: riega una planta, separa la basura con atención o evita un plástico de un solo uso. Mientras lo haces, da gracias por el mundo."
+   },
+   "en": {
+    "title": "To cultivate and to care",
+    "ref": "Gen 2:15",
+    "verse": "The LORD God then took the man and settled him in the garden of Eden, to cultivate and care for it.",
+    "reflection": "From the beginning, God entrusted the garden to human beings so they would cultivate it and care for it. Work was not born as a sentence but as cooperation with the Creator. Joseph lived his trade that way: he shaped wood while caring for his family. Cultivating and caring are still the two sides of every good task: producing without destroying, moving forward without stepping on anyone, using creation without exhausting it.",
+    "prayer": "Creator God, thank You for entrusting me with a piece of Your world. May my work cultivate and care, not wear down or destroy. Saint Joseph, teach me to work with respect for people and for creation. Amen.",
+    "action": "Make one concrete gesture of care for creation: water a plant, sort your trash carefully, or skip a single-use plastic. As you do it, give thanks for the world."
+   }
+  },
+  {
+   "day": 10,
+   "feast": null,
+   "es": {
+    "title": "Con toda el alma, aunque nadie mire",
+    "ref": "Col 3,23",
+    "verse": "Lo que hacéis, hacedlo con toda el alma, como para servir al Señor, y no a los hombres…",
+    "reflection": "San Pablo pide hacer las cosas con toda el alma, como para el Señor. No dice «haz lo que te vean» ni «trabaja para que te feliciten». Hay tareas que nadie agradecerá: lavar platos, corregir un error ajeno, atender a un cliente difícil. Ahí se juega mucho de nuestra vida espiritual. José trabajó años en un pueblo pequeño, sin fama, y Dios lo miraba. La calidad del amor no depende del público.",
+    "prayer": "Señor, tú ves lo que nadie ve. Te ofrezco las tareas pequeñas y repetidas de este día. Dame ganas de hacerlas bien, con alegría y sin buscar aplausos. San José, trabajador fiel, acompáñame. Amén.",
+    "action": "Elige una tarea que sueles hacer de mala gana y hazla hoy despacio y con cuidado, como un regalo para Jesús. No le cuentes a nadie que lo hiciste."
+   },
+   "en": {
+    "title": "With your whole heart, even unseen",
+    "ref": "Col 3:23",
+    "verse": "Whatever you do, do from the heart, as for the Lord and not for others…",
+    "reflection": "Saint Paul asks us to do things from the heart, as for the Lord. He does not say \"do what people will notice\" or \"work so you get praise.\" Some tasks no one will ever thank you for: washing dishes, fixing someone else's mistake, serving a difficult customer. Much of our spiritual life is played out right there. Joseph worked for years in a small town, without fame, and God was watching. The quality of love does not depend on an audience.",
+    "prayer": "Lord, You see what no one else sees. I offer You the small, repeated tasks of this day. Give me the desire to do them well, joyfully, without seeking applause. Saint Joseph, faithful worker, stay with me. Amen.",
+    "action": "Pick a chore you usually do reluctantly and do it slowly and carefully, as a gift for Jesus. Don't tell anyone you did it."
+   }
+  },
+  {
+   "day": 11,
+   "feast": null,
+   "es": {
+    "title": "El pan de hoy, no el de todo el año",
+    "ref": "Mt 6,11",
+    "verse": "danos hoy nuestro pan de cada día…",
+    "reflection": "Jesús nos enseñó a pedir el pan de cada día, no la despensa llena para siempre. José conocía bien esa confianza: un trabajador de pueblo vive al día, entre encargos que llegan y otros que no. Pedir solo lo de hoy libera el corazón de la ansiedad por todo lo que vendrá. Y en Cuaresma, renunciar a algo pequeño en la mesa puede recordarnos que el verdadero alimento es Dios y que otros no tienen ni siquiera lo básico.",
+    "prayer": "Padre nuestro, danos hoy nuestro pan de cada día. Te confío lo que necesito para esta jornada, nada más. Quita de mí la angustia por el mañana y hazme agradecido por lo que hay en mi mesa. San José, proveedor de la Sagrada Familia, ruega por nosotros. Amén.",
+    "action": "Si tu salud lo permite, renuncia hoy a un antojo pequeño (un dulce, un refresco, un café extra). Antes de cada comida, reza despacio el Padrenuestro dando gracias por el pan."
+   },
+   "en": {
+    "title": "Bread for today, not for the year",
+    "ref": "Mt 6:11",
+    "verse": "Give us today our daily bread…",
+    "reflection": "Jesus taught us to ask for our daily bread, not a pantry stocked forever. Joseph knew that kind of trust well: a village tradesman lives day to day, between orders that come and orders that don't. Asking only for today frees the heart from anxiety about everything ahead. And in Lent, giving up something small at the table can remind us that God is our true food and that others lack even the basics.",
+    "prayer": "Our Father, give us this day our daily bread. I trust You with what I need for today, nothing more. Free me from worry about tomorrow and make me grateful for what is on my table. Saint Joseph, provider for the Holy Family, pray for us. Amen.",
+    "action": "If your health allows, give up one small treat (a sweet, a soda, an extra coffee). Before each meal, slowly pray the Our Father, giving thanks for your bread."
+   }
+  },
+  {
+   "day": 12,
+   "feast": null,
+   "es": {
+    "title": "Cuentas, deudas y confianza",
+    "ref": "Mt 6,33",
+    "verse": "Buscad sobre todo el reino de Dios y su justicia; y todo esto se os dará por añadidura.",
+    "reflection": "Las preocupaciones de dinero pesan mucho: el alquiler, las deudas, el miedo a perder el empleo. Jesús no las desprecia, pero nos invita a poner primero el reino de Dios. Eso no significa descuidar las cuentas, sino ordenarlas desde la confianza. José seguramente vivió meses buenos y meses difíciles, sobre todo en Egipto, lejos de su tierra. Buscar primero a Dios es también administrar con honradez, pedir ayuda cuando hace falta y no dejar que el miedo decida por nosotros.",
+    "prayer": "Señor, tú conoces mis cuentas y mis miedos. Te los entrego sin esconder nada. Dame sabiduría para administrar lo que tengo y humildad para pedir ayuda si la necesito. Que tu reino sea lo primero en mi vida. San José, intercede por mi familia. Amén.",
+    "action": "Dedica quince minutos a revisar con calma tus gastos de la semana. Al terminar, pon esa hoja o esa pantalla delante de Dios y reza: «Busco primero tu reino; cuida de nosotros»."
+   },
+   "en": {
+    "title": "Bills, debts, and trust",
+    "ref": "Mt 6:33",
+    "verse": "But seek first the kingdom (of God) and his righteousness, and all these things will be given you besides.",
+    "reflection": "Money worries weigh heavily: rent, debt, the fear of losing a job. Jesus does not dismiss them, but He invites us to seek the kingdom of God first. That does not mean neglecting the bills, but ordering them from a place of trust. Joseph surely lived through good months and lean ones, especially in Egypt, far from home. Seeking God first also means managing things honestly, asking for help when needed, and not letting fear make our decisions.",
+    "prayer": "Lord, You know my bills and my fears. I hand them to You without hiding anything. Give me wisdom to manage what I have and humility to ask for help if I need it. May Your kingdom come first in my life. Saint Joseph, intercede for my family. Amen.",
+    "action": "Spend fifteen minutes calmly reviewing this week's expenses. When you finish, place that page or screen before God and pray: \"I seek Your kingdom first; take care of us.\""
+   }
+  },
+  {
+   "day": 13,
+   "feast": null,
+   "es": {
+    "title": "Dios da a los suyos mientras duermen",
+    "ref": "Sal 127,2",
+    "verse": "Es inútil que madruguéis, que veléis hasta muy tarde, que comáis el pan de vuestros sudores: ¡Dios lo da a sus amigos mientras duermen!",
+    "reflection": "El salmo tiene una frase casi atrevida: es inútil madrugar y trasnochar comiendo un pan de fatiga, porque Dios da a sus amigos mientras duermen. No es una invitación a la pereza, sino un freno a la idea de que todo depende de nosotros. Quien trabaja sin descanso termina agotado, irritable y lejos de los suyos. José dormía, y Dios le hablaba en sueños. El descanso también es un acto de fe.",
+    "prayer": "Señor, a veces creo que si yo me detengo, todo se cae. Enséñame a descansar en ti. Cuida lo que dejo sin terminar y renueva mis fuerzas mientras duermo. San José, guardián del sueño de Jesús, protege mi descanso. Amén.",
+    "action": "Esta noche fija una hora para dejar de trabajar o de revisar pendientes y respétala. Deja el teléfono fuera del cuarto y acuéstate un poco antes de lo habitual."
+   },
+   "en": {
+    "title": "God gives to His beloved in sleep",
+    "ref": "Ps 127:2",
+    "verse": "It is vain for you to rise early and put off your rest at night, To eat bread earned by hard toil - all this God gives to his beloved in sleep.",
+    "reflection": "The psalm has an almost daring line: it is useless to rise early and stay up late eating bread earned by hard toil, because God gives to His beloved in sleep. This is not an invitation to laziness but a brake on the idea that everything depends on us. Whoever works without rest ends up exhausted, irritable, and distant from loved ones. Joseph slept, and God spoke to him in dreams. Rest is also an act of faith.",
+    "prayer": "Lord, sometimes I think that if I stop, everything will fall apart. Teach me to rest in You. Look after whatever I leave unfinished and renew my strength while I sleep. Saint Joseph, guardian of the sleep of Jesus, protect my rest. Amen.",
+    "action": "Tonight, set a time to stop working or checking tasks, and keep it. Leave your phone outside the bedroom and go to bed a little earlier than usual."
+   }
+  },
+  {
+   "day": 14,
+   "feast": null,
+   "es": {
+    "title": "El ayuno que Dios prefiere",
+    "ref": "Is 58,7",
+    "verse": "partir tu pan con el hambriento, hospedar a los pobres sin techo, cubrir a quien ves desnudo y no desentenderte de los tuyos.",
+    "reflection": "Isaías describe el ayuno que agrada a Dios: partir el pan con el hambriento, dar techo a quien no lo tiene, vestir al desnudo y no desentenderse de los propios. La limosna no es un gesto para sentirnos buenos, sino una forma de reconocer que lo que tenemos también es para otros. José y María conocieron la pobreza; quizá alguna vez recibieron ayuda de desconocidos. Cerramos la semana del trabajo recordando que el fruto de nuestras manos se multiplica cuando se comparte.",
+    "prayer": "Señor, abre mis manos y mi corazón. Que lo que ahorro en esta Cuaresma no se quede guardado, sino que llegue a quien lo necesita. San José, que conociste la escasez, enséñame a compartir con alegría y discreción. Amén.",
+    "action": "Separa hoy una cantidad discreta, quizá lo que ahorraste en antojos esta semana, y entrégala a un comedor, una parroquia o una persona necesitada que conozcas, sin publicarlo."
+   },
+   "en": {
+    "title": "The fast God prefers",
+    "ref": "Is 58:7",
+    "verse": "Sharing your bread with the hungry, sheltering the oppressed and the homeless; Clothing the naked when you see them, and not turning your back on your own.",
+    "reflection": "Isaiah describes the fast that pleases God: sharing bread with the hungry, sheltering the homeless, clothing the naked, and not turning your back on your own. Almsgiving is not a gesture to make us feel good, but a way of recognizing that what we have is also meant for others. Joseph and Mary knew poverty; perhaps strangers helped them at times. We close this week on work by remembering that the fruit of our hands multiplies when it is shared.",
+    "prayer": "Lord, open my hands and my heart. May what I save this Lent not stay tucked away but reach those who need it. Saint Joseph, you knew scarcity; teach me to share joyfully and quietly. Amen.",
+    "action": "Set aside a modest amount, perhaps what you saved on treats this week, and give it to a food pantry, a parish, or someone in need you know, without posting about it."
+   }
+  },
+  {
+   "day": 15,
+   "feast": null,
+   "es": {
+    "title": "Levántate y huye",
+    "ref": "Mt 2,13",
+    "verse": "Cuando ellos se retiraron, el ángel del Señor se apareció en sueños a José y le dijo: «Levántate, toma al niño y a su madre y huye a Egipto; quédate allí hasta que yo te avise, porque Herodes va a buscar al niño para matarlo».",
+    "reflection": "Empieza la semana de las noches difíciles. La vida de la Sagrada Familia se volvió de pronto peligrosa: un rey poderoso buscaba al niño. A José no se le dio un plan detallado, solo una orden urgente y una promesa: «quédate allí hasta que yo te avise». Hay momentos en que la vida se desordena de golpe. José no tenía todas las respuestas, pero tenía a Dios, que seguía hablándole. No estás solo cuando todo se mueve.",
+    "prayer": "Señor, cuando mi vida se desordena de golpe, recuérdame que tú sigues hablando y guiando. Dame la serenidad de José para dar el siguiente paso aunque no vea el camino entero. San José, protege a mi familia. Amén.",
+    "action": "Si estás atravesando una situación inestable, escribe solo el siguiente paso que puedes dar esta semana. Si tu vida está en calma, reza diez minutos por alguien que vive una emergencia."
+   },
+   "en": {
+    "title": "Rise and flee",
+    "ref": "Mt 2:13",
+    "verse": "When they had departed, behold, the angel of the Lord appeared to Joseph in a dream and said, \"Rise, take the child and his mother, flee to Egypt, and stay there until I tell you. Herod is going to search for the child to destroy him.\"",
+    "reflection": "Our week of hard nights begins. Suddenly the Holy Family's life became dangerous: a powerful king was searching for the child. Joseph was not given a detailed plan, only an urgent command and a promise: \"stay there until I tell you.\" There are moments when life is turned upside down all at once. Joseph did not have every answer, but he had God, who kept speaking to him. You are not alone when everything is shifting.",
+    "prayer": "Lord, when my life is suddenly thrown into disorder, remind me that You are still speaking and guiding. Give me Joseph's calm to take the next step even if I can't see the whole road. Saint Joseph, protect my family. Amen.",
+    "action": "If you are in an unstable situation, write down only the next step you can take this week. If life is calm right now, spend ten minutes praying for someone living through an emergency."
+   }
+  },
+  {
+   "day": 16,
+   "feast": null,
+   "es": {
+    "title": "Custodio en la oscuridad",
+    "ref": "Mt 2,14",
+    "verse": "José se levantó, tomó al niño y a su madre, de noche, se fue a Egipto…",
+    "reflection": "José se levantó de noche, tomó al niño y a su madre, y partió. La noche es la hora de los miedos, de los pensamientos que se agrandan, de las tentaciones que parecen más fuertes. Quizá conoces bien esas horas. José no esperó a que amaneciera para cuidar a los suyos: los protegió en plena oscuridad. Puedes pedirle que haga lo mismo contigo cuando la noche te pesa, cuando no puedes dormir o cuando sientes que vuelves a caer.",
+    "prayer": "San José, custodio en la noche, toma mi mano cuando la oscuridad me asusta o me tienta. Llévame junto a Jesús y a María. Señor, sé tú mi luz en las horas difíciles y no permitas que me sienta solo. Amén.",
+    "action": "Prepara junto a tu cama algo que te ayude en las noches difíciles: un rosario, una imagen o una frase escrita como «Jesús, en ti confío». Si te desvelas, tómalo y reza en lugar de mirar el teléfono."
+   },
+   "en": {
+    "title": "Guardian in the dark",
+    "ref": "Mt 2:14",
+    "verse": "Joseph rose and took the child and his mother by night and departed for Egypt.",
+    "reflection": "Joseph rose by night, took the child and his mother, and set out. Night is the hour of fears, of thoughts that grow larger, of temptations that seem stronger. Maybe you know those hours well. Joseph did not wait for sunrise to care for his own: he protected them in the dark. You can ask him to do the same for you when the night weighs on you, when you can't sleep, or when you feel yourself slipping again.",
+    "prayer": "Saint Joseph, guardian in the night, take my hand when the darkness frightens or tempts me. Lead me to Jesus and Mary. Lord, be my light in the hard hours and do not let me feel alone. Amen.",
+    "action": "Place something by your bed to help on difficult nights: a rosary, an image, or a written line such as \"Jesus, I trust in You.\" If you wake up, reach for it and pray instead of picking up your phone."
+   }
+  },
+  {
+   "day": 17,
+   "feast": {
+    "es": "San Patricio",
+    "en": "Saint Patrick"
+   },
+   "es": {
+    "title": "Patricio volvió a la tierra de su cautiverio",
+    "ref": "Mt 28,19",
+    "verse": "Id, pues, y haced discípulos a todos los pueblos, bautizándolos en el nombre del Padre y del Hijo y del Espíritu Santo…",
+    "reflection": "Siendo joven, Patricio fue llevado como cautivo a Irlanda, donde cuidó rebaños durante años y aprendió a rezar en la soledad. Logró escapar y volver a su casa, pero más tarde, ya como obispo, regresó a aquella tierra para anunciar el Evangelio. Volvió por amor al lugar donde había sufrido. Como José en Egipto, descubrió que Dios puede convertir el destierro en misión. Tus heridas también pueden volverse camino para otros.",
+    "prayer": "San Patricio, que regresaste por amor a la tierra donde fuiste esclavo, ayúdame a no huir de mi historia, sino a dejar que Dios la transforme. Señor Jesús, hazme testigo de tu Evangelio allí donde vivo. Amén.",
+    "action": "Piensa en una experiencia dolorosa de tu pasado que Dios ha ido sanando. Si te parece prudente, compártela hoy con alguien que esté viviendo algo parecido, para darle esperanza."
+   },
+   "en": {
+    "title": "Patrick returned to the land of his captivity",
+    "ref": "Mt 28:19",
+    "verse": "Go, therefore, and make disciples of all nations, baptizing them in the name of the Father, and of the Son, and of the holy Spirit…",
+    "reflection": "As a young man, Patrick was taken captive to Ireland, where he tended flocks for years and learned to pray in solitude. He managed to escape and return home, but later, as a bishop, he went back to that land to proclaim the Gospel. He returned out of love to the place where he had suffered. Like Joseph in Egypt, he discovered that God can turn exile into mission. Your wounds, too, can become a path for others.",
+    "prayer": "Saint Patrick, you returned out of love to the land where you had been a slave. Help me not to run from my story but to let God transform it. Lord Jesus, make me a witness to Your Gospel wherever I live. Amen.",
+    "action": "Think of a painful experience from your past that God has been healing. If it seems wise, share it with someone going through something similar, to give them hope."
+   }
+  },
+  {
+   "day": 18,
+   "feast": {
+    "es": "San Cirilo de Jerusalén",
+    "en": "Saint Cyril of Jerusalem"
+   },
+   "es": {
+    "title": "Cirilo, catequista de los que empiezan",
+    "ref": "1 Pe 2,2",
+    "verse": "Como niños recién nacidos, ansiad la leche espiritual, no adulterada, para que con ella vayáis progresando en la salvación…",
+    "reflection": "San Cirilo fue obispo de Jerusalén en el siglo IV. Se conservan las catequesis con las que preparaba a los adultos que iban a ser bautizados en Pascua y les explicaba después los sacramentos. Sufrió varios destierros por defender la fe, y la Iglesia lo reconoce como Doctor. Su tarea era alimentar a los nuevos creyentes como a niños que necesitan leche pura. En Cuaresma, todos volvemos a ser un poco catecúmenos: necesitamos aprender de nuevo lo esencial.",
+    "prayer": "San Cirilo, maestro paciente de los que comenzaban en la fe, intercede por los catecúmenos que se preparan para el Bautismo. Señor, dame hambre de tu Palabra y humildad para seguir aprendiendo. Amén.",
+    "action": "Lee hoy con calma un número del Catecismo sobre el Bautismo (por ejemplo, el 1213) o el Credo completo, y reza por quienes recibirán el Bautismo en la próxima Pascua."
+   },
+   "en": {
+    "title": "Cyril, teacher of beginners",
+    "ref": "1 Pt 2:2",
+    "verse": "like newborn infants, long for pure spiritual milk so that through it you may grow into salvation…",
+    "reflection": "Saint Cyril was bishop of Jerusalem in the fourth century. We still have the instructions he gave to adults preparing for baptism at Easter, explaining the sacraments to them afterward. He was exiled several times for defending the faith, and the Church honors him as a Doctor. His task was to nourish new believers like infants who need pure milk. In Lent, we all become catechumens again in a way: we need to relearn what is essential.",
+    "prayer": "Saint Cyril, patient teacher of those beginning in faith, pray for the catechumens preparing for Baptism. Lord, give me hunger for Your Word and humility to keep learning. Amen.",
+    "action": "Calmly read a paragraph of the Catechism on Baptism (for example, number 1213) or the whole Creed, and pray for those who will be baptized this coming Easter."
+   }
+  },
+  {
+   "day": 19,
+   "feast": {
+    "es": "San José, esposo de la Virgen María",
+    "en": "Saint Joseph, Spouse of the Blessed Virgin Mary"
+   },
+   "es": {
+    "title": "Tu padre y yo te buscábamos",
+    "ref": "Lc 2,48",
+    "verse": "Al verlo, se quedaron atónitos, y le dijo su madre: «Hijo, ¿por qué nos has tratado así? Tu padre y yo te buscábamos angustiados».",
+    "reflection": "En su gran fiesta, escuchamos a María llamar a José «tu padre». Él no engendró a Jesús, pero lo amó, lo cuidó y lo buscó angustiado durante tres días. Su paternidad fue real, hecha de presencia y de entrega. Hoy celebramos al esposo fiel de María, al custodio del Redentor, al patrono de la Iglesia entera. También celebramos a todos los que cuidan como padres sin que la sangre los obligue. Es un día para la alegría y la gratitud.",
+    "prayer": "Glorioso San José, esposo de la Virgen María y padre según el corazón de Jesús, te confío mi familia, mi trabajo y la Iglesia entera. Así como buscaste a Jesús con angustia, búscame cuando me pierda y llévame de vuelta a él. Amén.",
+    "action": "Si puedes, participa hoy en la Misa; si no, lee Mateo 1,18-24 en un rato de oración. Después agradece con un mensaje o una llamada a alguien que ha sido figura paterna para ti."
+   },
+   "en": {
+    "title": "Your father and I were looking for you",
+    "ref": "Lk 2:48",
+    "verse": "When his parents saw him, they were astonished, and his mother said to him, \"Son, why have you done this to us? Your father and I have been looking for you with great anxiety.\"",
+    "reflection": "On his great feast, we hear Mary call Joseph \"your father.\" He did not beget Jesus, yet he loved Him, cared for Him, and searched for Him anxiously for three days. His fatherhood was real, made of presence and self-giving. We celebrate Mary's faithful spouse, the guardian of the Redeemer, the patron of the whole Church. We also celebrate all who care like fathers without any bond of blood requiring it. It is a day for joy and gratitude.",
+    "prayer": "Glorious Saint Joseph, spouse of the Virgin Mary and father after the heart of Jesus, I entrust to you my family, my work, and the whole Church. As you searched for Jesus with anxious love, search for me when I am lost and bring me back to Him. Amen.",
+    "action": "If you can, go to Mass; if not, read Matthew 1:18-24 during a time of prayer. Afterward, thank someone who has been a father figure to you with a message or a call."
+   }
+  },
+  {
+   "day": 20,
+   "feast": null,
+   "es": {
+    "title": "Una familia migrante",
+    "ref": "Lv 19,34",
+    "verse": "El emigrante que reside entre vosotros será para vosotros como el indígena: lo amarás como a ti mismo, porque emigrantes fuisteis en Egipto. Yo soy el Señor vuestro Dios.",
+    "reflection": "La Sagrada Familia vivió como extranjera en Egipto: otro idioma, otras costumbres, la incertidumbre de no saber cuándo volver. La Ley de Israel pedía amar al emigrante como a uno mismo, porque el pueblo recordaba que también fue extranjero. Hoy millones de familias dejan su tierra por la violencia o la pobreza. Quizá tú mismo has vivido lejos de casa. En cada migrante podemos ver a José buscando trabajo para sostener a los suyos.",
+    "prayer": "San José, que fuiste extranjero en Egipto, protege a las familias migrantes y a quienes viven lejos de su tierra. Señor, quita de mi corazón la indiferencia y la desconfianza, y hazme hospitalario con quien llega de fuera. Amén.",
+    "action": "Saluda hoy con calidez a alguien que sea de otro país o hable otro idioma en tu entorno, o reza un misterio del Rosario por las familias migrantes que están en camino."
+   },
+   "en": {
+    "title": "A migrant family",
+    "ref": "Lev 19:34",
+    "verse": "You shall treat the alien who resides with you no differently than the natives born among you; have the same love for him as for yourself; for you too were once aliens in the land of Egypt. I, the LORD, am your God.",
+    "reflection": "The Holy Family lived as foreigners in Egypt: another language, other customs, the uncertainty of not knowing when they could return. The Law of Israel asked people to love the immigrant as themselves, because the people remembered that they too had been strangers. Today millions of families leave their homeland because of violence or poverty. Perhaps you have lived far from home yourself. In every migrant we can see Joseph looking for work to support his family.",
+    "prayer": "Saint Joseph, you were a foreigner in Egypt; protect migrant families and all who live far from their homeland. Lord, take indifference and suspicion from my heart and make me welcoming to those who arrive from elsewhere. Amen.",
+    "action": "Warmly greet someone around you who comes from another country or speaks another language, or pray one decade of the Rosary for migrant families who are on the road."
+   }
+  },
+  {
+   "day": 21,
+   "feast": null,
+   "es": {
+    "title": "José también tuvo miedo",
+    "ref": "Mt 2,22",
+    "verse": "Pero al enterarse de que Arquelao reinaba en Judea como sucesor de su padre Herodes tuvo miedo de ir allá. Y avisado en sueños se retiró a Galilea…",
+    "reflection": "El Evangelio no esconde que José tuvo miedo. Al enterarse de quién reinaba en Judea, no se sintió seguro de volver allí. El miedo no lo hizo menos santo; lo hizo más atento. Dejó que Dios le hablara en medio de ese temor y se fue a Galilea. Sentir miedo no es falta de fe. Lo importante es no dejar que el miedo decida solo. Puedes llevarlo a la oración tal como es y dejar que Dios te indique otro camino.",
+    "prayer": "San José, tú conociste el miedo y no te avergonzaste de él. Te presento mis temores de hoy. Señor, háblame en medio de ellos y muéstrame el camino que tú quieres para mí y para los míos. Amén.",
+    "action": "Nombra en voz baja, ante Dios, tres miedos concretos que llevas dentro. Después de cada uno, di: «San José, cuida esto». Si alguno es muy pesado, piensa en alguien de confianza con quien hablarlo."
+   },
+   "en": {
+    "title": "Joseph was afraid too",
+    "ref": "Mt 2:22",
+    "verse": "But when he heard that Archelaus was ruling over Judea in place of his father Herod, he was afraid to go back there. And because he had been warned in a dream, he departed for the region of Galilee.",
+    "reflection": "The Gospel does not hide that Joseph was afraid. When he heard who was ruling in Judea, he did not feel safe going back. Fear did not make him less holy; it made him more attentive. He let God speak to him in the middle of that fear and went to Galilee. Feeling afraid is not a lack of faith. What matters is not letting fear decide on its own. You can bring it to prayer as it is and let God show you another way.",
+    "prayer": "Saint Joseph, you knew fear and were not ashamed of it. I bring you my fears. Lord, speak to me in the middle of them and show me the path You want for me and for those I love. Amen.",
+    "action": "Quietly name before God three specific fears you carry. After each one, say: \"Saint Joseph, take care of this.\" If one feels very heavy, think of a trusted person you could talk to about it."
+   }
+  },
+  {
+   "day": 22,
+   "feast": null,
+   "es": {
+    "title": "Los años escondidos de Nazaret",
+    "ref": "Lc 2,51",
+    "verse": "Él bajó con ellos y fue a Nazaret y estaba sujeto a ellos. Su madre conservaba todo esto en su corazón.",
+    "reflection": "Comenzamos la última etapa: el corazón de padre de José. De los años en Nazaret el Evangelio dice muy poco: Jesús bajó con ellos y vivía sujeto a ellos. El Hijo de Dios obedecía a un carpintero y a una joven madre. Allí, en la rutina de comidas, trabajo, oraciones y fiestas, José formó un hogar. La santidad de una familia no se fabrica con momentos extraordinarios, sino con la fidelidad de cada día, incluso cuando parece que no pasa nada.",
+    "prayer": "Sagrada Familia de Nazaret, enseña a mi casa la paz de los días sencillos. San José, cabeza humilde de aquel hogar, ayúdame a cuidar a los míos con paciencia y presencia. Jesús, habita en nuestra rutina. Amén.",
+    "action": "Comparte hoy una comida sin pantallas con tu familia o con quienes vives. Si vives solo, prepara tu mesa con cuidado, reza antes de comer y llama a alguien después."
+   },
+   "en": {
+    "title": "The hidden years of Nazareth",
+    "ref": "Lk 2:51",
+    "verse": "He went down with them and came to Nazareth, and was obedient to them; and his mother kept all these things in her heart.",
+    "reflection": "We begin the last stage: Joseph's father's heart. The Gospel says very little about the years in Nazareth: Jesus went down with them and was obedient to them. The Son of God obeyed a carpenter and a young mother. There, in the routine of meals, work, prayers, and feasts, Joseph built a home. The holiness of a family is not manufactured from extraordinary moments, but from everyday faithfulness, even when it seems nothing is happening.",
+    "prayer": "Holy Family of Nazareth, teach my home the peace of ordinary days. Saint Joseph, humble head of that household, help me care for my own with patience and presence. Jesus, dwell in our routine. Amen.",
+    "action": "Share a screen-free meal with your family or the people you live with. If you live alone, set your table with care, pray before eating, and call someone afterward."
+   }
+  },
+  {
+   "day": 23,
+   "feast": null,
+   "es": {
+    "title": "Ayudar a crecer",
+    "ref": "Lc 2,40",
+    "verse": "El niño, por su parte, iba creciendo y robusteciéndose, lleno de sabiduría; y la gracia de Dios estaba con él.",
+    "reflection": "El niño iba creciendo, se fortalecía y se llenaba de sabiduría. Detrás de esa frase hay años de paciencia de José y María: enseñarle a caminar, a hablar, a rezar los salmos, a usar las herramientas. Un buen padre no fabrica copias de sí mismo; ayuda a que el otro llegue a ser quien Dios soñó. Todos tenemos a alguien a quien acompañar en su crecimiento: un hijo, un sobrino, un alumno, un compañero nuevo en el trabajo.",
+    "prayer": "San José, que enseñaste a Jesús con paciencia, dame un corazón que acompañe sin aplastar y corrija sin humillar. Señor, bendice a los niños y jóvenes que has puesto cerca de mí y hazlos crecer en tu gracia. Amén.",
+    "action": "Dedica hoy veinte minutos a enseñar algo útil a alguien más joven o más nuevo que tú: una receta, una tarea, una oración, un consejo práctico. Hazlo con paciencia y sin prisas."
+   },
+   "en": {
+    "title": "Helping someone grow",
+    "ref": "Lk 2:40",
+    "verse": "The child grew and became strong, filled with wisdom; and the favor of God was upon him.",
+    "reflection": "The child grew and became strong, filled with wisdom. Behind that line lie years of patience from Joseph and Mary: teaching Him to walk, to speak, to pray the psalms, to use tools. A good father does not produce copies of himself; he helps the other become who God dreamed. We all have someone to accompany as they grow: a child, a nephew or niece, a student, a new coworker.",
+    "prayer": "Saint Joseph, you taught Jesus with patience; give me a heart that accompanies without crushing and corrects without humiliating. Lord, bless the children and young people You have placed near me and let them grow in Your grace. Amen.",
+    "action": "Spend twenty minutes teaching something useful to someone younger or newer than you: a recipe, a task, a prayer, a piece of practical advice. Do it patiently and without hurry."
+   }
+  },
+  {
+   "day": 24,
+   "feast": null,
+   "es": {
+    "title": "Un Padre que sale corriendo",
+    "ref": "Lc 15,20",
+    "verse": "Se levantó y vino adonde estaba su padre; cuando todavía estaba lejos, su padre lo vio y se le conmovieron las entrañas; y, echando a correr, se le echó al cuello y lo cubrió de besos.",
+    "reflection": "El hijo volvió con un discurso preparado, pero el padre no lo dejó terminar: lo vio de lejos, se conmovió y corrió a abrazarlo. Así es Dios con nosotros. La confesión no es un tribunal frío, sino ese abrazo. Si llevas tiempo sin confesarte, o si has caído otra vez en lo mismo, no necesitas palabras perfectas. Basta con ponerte en camino. El Padre ya te está mirando desde lejos, y no con reproche, sino con entrañas de misericordia.",
+    "prayer": "Padre bueno, vuelvo a ti con mis caídas de siempre y con algunas nuevas. No sé explicarlo bien, pero quiero volver. Abrázame en tu misericordia y dame un corazón nuevo. San José, acompáñame en este regreso. Amén.",
+    "action": "Haz un examen de conciencia sereno de diez minutos y busca el horario de confesiones de tu parroquia. Si no puedes ir esta semana, decide un día concreto y anótalo."
+   },
+   "en": {
+    "title": "A Father who runs",
+    "ref": "Lk 15:20",
+    "verse": "So he got up and went back to his father. While he was still a long way off, his father caught sight of him, and was filled with compassion. He ran to his son, embraced him and kissed him.",
+    "reflection": "The son came home with a speech prepared, but the father did not let him finish: he saw him from far off, was moved with compassion, and ran to embrace him. That is how God is with us. Confession is not a cold courtroom; it is that embrace. If it has been a long time since your last confession, or if you have fallen into the same thing again, you do not need perfect words. Just start walking. The Father is already watching for you, not with reproach but with deep mercy.",
+    "prayer": "Good Father, I come back to You with my usual falls and some new ones. I can't explain it well, but I want to return. Hold me in Your mercy and give me a new heart. Saint Joseph, walk with me on the way home. Amen.",
+    "action": "Make a calm ten-minute examination of conscience and look up your parish's confession times. If you can't go this week, choose a specific day and write it down."
+   }
+  },
+  {
+   "day": 25,
+   "feast": {
+    "es": "Anunciación del Señor",
+    "en": "Annunciation of the Lord"
+   },
+   "es": {
+    "title": "El sí que hizo posible la Encarnación",
+    "ref": "Lc 1,38",
+    "verse": "María contestó: «He aquí la esclava del Señor; hágase en mí según tu palabra». Y el ángel se retiró.",
+    "reflection": "Hoy, nueve meses antes de Navidad, celebramos el momento en que el Hijo eterno de Dios se hizo hombre en el seno de María por obra del Espíritu Santo. Todo dependió de un sí humilde: «hágase en mí según tu palabra». Poco después, José dio también su propio sí en sueños, acogiendo a María y al niño. Dios no impone su plan: lo propone y espera la respuesta libre de corazones confiados. También hoy espera la tuya, en lo pequeño.",
+    "prayer": "Virgen María, que dijiste sí a Dios sin conocer todo el camino, ayúdame a responder con confianza a lo que hoy me pide. Señor Jesús, que te hiciste uno de nosotros, gracias por venir a mi vida tan de cerca. Amén.",
+    "action": "Si puedes, participa hoy en la Misa. Además, reza el Ángelus al mediodía o, si no lo sabes, repite despacio tres veces: «Hágase en mí según tu palabra», con una pausa entre cada una."
+   },
+   "en": {
+    "title": "The yes that opened the door to the Incarnation",
+    "ref": "Lk 1:38",
+    "verse": "Mary said, \"Behold, I am the handmaid of the Lord. May it be done to me according to your word.\" Then the angel departed from her.",
+    "reflection": "Nine months before Christmas, we celebrate the moment when the eternal Son of God became man in Mary's womb by the power of the Holy Spirit. Everything hinged on a humble yes: \"May it be done to me according to your word.\" Soon after, Joseph gave his own yes in a dream, welcoming Mary and the child. God does not impose His plan; He proposes it and awaits the free response of trusting hearts. He awaits yours too, in small things.",
+    "prayer": "Virgin Mary, you said yes to God without knowing the whole road; help me respond with trust to what He asks of me. Lord Jesus, You became one of us; thank You for coming so close to my life. Amen.",
+    "action": "If you can, go to Mass. Also pray the Angelus at noon, or if you don't know it, slowly repeat three times: \"May it be done to me according to your word,\" pausing between each."
+   }
+  },
+  {
+   "day": 26,
+   "feast": null,
+   "es": {
+    "title": "Obedecer sin ver el mapa completo",
+    "ref": "Heb 11,8",
+    "verse": "Por la fe obedeció Abrahán a la llamada y salió hacia la tierra que iba a recibir en heredad. Salió sin saber adónde iba.",
+    "reflection": "Abrahán salió sin saber adónde iba, y José, su descendiente, vivió de forma parecida: Belén, Egipto, Nazaret, siempre guiado paso a paso. La obediencia en la fe no es sumisión ciega, sino confianza en Alguien que nos ama y ve más lejos. A muchos nos cuesta avanzar sin certezas: queremos saber cómo terminará todo antes de dar un paso. Dios suele darnos luz para el tramo de hoy, y con eso basta para caminar.",
+    "prayer": "Señor, a veces quiero ver todo el mapa antes de moverme. Dame la fe de Abrahán y de José para seguirte paso a paso. Confío en que tú ves lo que yo no veo y caminas conmigo. Amén.",
+    "action": "Sal a caminar quince minutos, si puedes, sin rumbo fijo ni auriculares. En cada esquina repite: «Señor, guíame». Si no puedes salir, hazlo en una habitación, mirando por la ventana."
+   },
+   "en": {
+    "title": "Obeying without the whole map",
+    "ref": "Heb 11:8",
+    "verse": "By faith Abraham obeyed when he was called to go out to a place that he was to receive as an inheritance; he went out, not knowing where he was to go.",
+    "reflection": "Abraham set out not knowing where he was going, and Joseph, his descendant, lived much the same way: Bethlehem, Egypt, Nazareth, always guided step by step. Obedience in faith is not blind submission, but trust in Someone who loves us and sees further. Many of us struggle to move forward without certainty; we want to know how it all ends before taking a step. God usually gives light for today's stretch, and that is enough to walk.",
+    "prayer": "Lord, sometimes I want to see the whole map before I move. Give me the faith of Abraham and Joseph to follow You step by step. I trust that You see what I cannot and that You walk with me. Amen.",
+    "action": "If you can, take a fifteen-minute walk with no fixed route and no earbuds. At each corner, repeat: \"Lord, guide me.\" If you can't go out, do it in a room, looking out a window."
+   }
+  },
+  {
+   "day": 27,
+   "feast": null,
+   "es": {
+    "title": "Un corazón valiente y tierno",
+    "ref": "Jos 1,9",
+    "verse": "Lo que yo te mando es que tengas valor y seas valiente. No tengas miedo ni te acobardes, que contigo está el Señor, tu Dios, en cualquier cosa que emprendas.",
+    "reflection": "Dios no le dice a Josué que nunca tendrá dificultades, sino que sea valiente porque él estará a su lado. La valentía de José no fue la de un guerrero: fue la de quien da la cara por su familia, asume responsabilidades difíciles y no huye cuando las cosas se complican. Ser fuerte y tierno a la vez es posible. Hay valentías silenciosas: pedir perdón primero, decir la verdad con amor, cuidar a un enfermo durante meses.",
+    "prayer": "San José, hombre valiente y tierno, dame fuerza para no huir de mis responsabilidades y ternura para cumplirlas con amor. Señor, tú estás conmigo en cualquier cosa que emprenda; que eso me baste. Amén.",
+    "action": "Haz hoy algo que vienes evitando por miedo pero que sabes que es bueno: una conversación pendiente, decir una verdad con delicadeza, pedir ayuda. Antes, reza un Avemaría."
+   },
+   "en": {
+    "title": "A brave and tender heart",
+    "ref": "Jos 1:9",
+    "verse": "I command you: be firm and steadfast! Do not fear nor be dismayed, for the LORD, your God, is with you wherever you go.",
+    "reflection": "God does not tell Joshua he will never face difficulties, but to be strong because He will be at his side. Joseph's courage was not a warrior's: it was the courage of someone who stands up for his family, takes on hard responsibilities, and does not run when things get complicated. It is possible to be strong and tender at once. There are quiet forms of bravery: apologizing first, speaking the truth with love, caring for a sick person for months.",
+    "prayer": "Saint Joseph, brave and tender man, give me strength not to run from my responsibilities and tenderness to fulfill them with love. Lord, You are with me in whatever I undertake; let that be enough for me. Amen.",
+    "action": "Do something you have been avoiding out of fear but know is good: a pending conversation, speaking a truth gently, asking for help. Pray a Hail Mary first."
+   }
+  },
+  {
+   "day": 28,
+   "feast": null,
+   "es": {
+    "title": "Para el que está cansado de caer",
+    "ref": "Sal 103,13",
+    "verse": "Como un padre siente ternura por sus hijos, siente el Señor ternura por los que lo temen…",
+    "reflection": "Quizá llegas a este final de mes sintiendo que la Cuaresma no salió como querías: propósitos olvidados, las mismas caídas, poca oración. El salmo te recuerda algo esencial: Dios siente por ti la ternura de un padre por sus hijos. No te mira con decepción, sino con compasión. Un buen padre no lleva la cuenta de las caídas; se alegra cada vez que el hijo se levanta. Hoy no empieces desde la culpa, sino desde esa ternura.",
+    "prayer": "Padre, estoy cansado de mis caídas y a veces de mí mismo. Hoy no te traigo méritos, solo mi deseo de seguir contigo. Mírame con tu ternura y levántame otra vez. San José, padre paciente, ruega por mí. Amén.",
+    "action": "Escribe en tu cuaderno una sola cosa buena que hiciste este mes, por pequeña que sea, y agradécela a Dios. Luego elige un propósito muy sencillo para los últimos días de marzo."
+   },
+   "en": {
+    "title": "For the one tired of falling",
+    "ref": "Ps 103:13",
+    "verse": "As a father has compassion on his children, so the LORD has compassion on the faithful.",
+    "reflection": "Maybe you are reaching the end of the month feeling that Lent has not gone as you hoped: forgotten resolutions, the same falls, little prayer. The psalm reminds you of something essential: God feels for you the compassion a father has for his children. He does not look at you with disappointment but with tenderness. A good father does not keep count of the falls; he rejoices every time the child gets up. Don't start from guilt; start from that tenderness.",
+    "prayer": "Father, I am tired of my falls and sometimes of myself. I bring You no merits, only my desire to stay with You. Look at me with tenderness and lift me up again. Saint Joseph, patient father, pray for me. Amen.",
+    "action": "In your notebook, write down one good thing you did this month, however small, and thank God for it. Then choose one very simple resolution for the last days of March."
+   }
+  },
+  {
+   "day": 29,
+   "feast": null,
+   "es": {
+    "title": "Cuando la figura del padre duele",
+    "ref": "Ef 3,14-15",
+    "verse": "Por eso doblo las rodillas ante el Padre, de quien toma nombre toda paternidad en el cielo y en la tierra…",
+    "reflection": "No todos tienen buenos recuerdos de su padre. Para algunos, la palabra evoca ausencia, dureza o heridas que aún sangran. San Pablo dice que toda paternidad toma su nombre del Padre del cielo: él es la fuente, no la copia imperfecta. José puede ser para ti un modelo de lo que un padre debería ser, y Dios, el Padre que nunca abandona. Sanar lleva tiempo; no hace falta forzar nada. Solo empezar a poner esa herida en manos de Dios.",
+    "prayer": "Padre del cielo, tú conoces la historia de mi familia y las heridas que dejó en mí. Sana lo que todavía duele y enséñame a reconocerte como el Padre que nunca falla. San José, sé para mí un padre bueno. Amén.",
+    "action": "Si tienes una herida con tu padre, escribe en tu cuaderno lo que te gustaría haber recibido y entrégaselo a Dios en oración. Si tu padre ya murió, reza hoy por su descanso eterno."
+   },
+   "en": {
+    "title": "When the thought of a father hurts",
+    "ref": "Eph 3:14-15",
+    "verse": "For this reason I kneel before the Father, from whom every family in heaven and on earth is named…",
+    "reflection": "Not everyone has good memories of their father. For some, the word brings back absence, harshness, or wounds that are still raw. Saint Paul says that every family takes its name from the Father in heaven: He is the source, not the imperfect copy. Joseph can be for you a model of what a father should be, and God the Father who never abandons. Healing takes time; nothing needs to be forced. Just begin placing that wound in God's hands.",
+    "prayer": "Father in heaven, You know my family's story and the wounds it left in me. Heal what still hurts and teach me to know You as the Father who never fails. Saint Joseph, be a good father to me. Amen.",
+    "action": "If you carry a wound related to your father, write in your notebook what you wish you had received and offer it to God in prayer. If your father has died, pray for his eternal rest."
+   }
+  },
+  {
+   "day": 30,
+   "feast": null,
+   "es": {
+    "title": "Volver el corazón hacia los hijos",
+    "ref": "Lc 1,17",
+    "verse": "Irá delante del Señor, con el espíritu y poder de Elías, para convertir los corazones de los padres hacia los hijos, y a los desobedientes, a la sensatez de los justos, para preparar al Señor un pueblo bien dispuesto.",
+    "reflection": "Juan Bautista vendría a convertir los corazones de los padres hacia los hijos. Es una imagen preciosa de la reconciliación que Dios quiere en las familias: que los mayores miren con ternura a los jóvenes y que los jóvenes vuelvan a acercarse a los mayores. Muchas familias cargan silencios largos, distancias y orgullos heridos. La Cuaresma es tiempo propicio para dar el primer paso. A veces basta una palabra sencilla para que el hielo empiece a derretirse.",
+    "prayer": "Señor, convierte mi corazón hacia los que amo y de los que me he alejado. Dame humildad para dar el primer paso y paciencia si la respuesta tarda. San José, reconcilia a las familias divididas. Amén.",
+    "action": "Piensa en un familiar con quien hay distancia o tensión. Si es prudente y seguro, envíale hoy un mensaje sencillo y amable; si no lo es, reza un misterio del Rosario por esa persona."
+   },
+   "en": {
+    "title": "Turning hearts toward the children",
+    "ref": "Lk 1:17",
+    "verse": "He will go before him in the spirit and power of Elijah to turn the hearts of fathers toward children and the disobedient to the understanding of the righteous, to prepare a people fit for the Lord.",
+    "reflection": "John the Baptist would come to turn the hearts of fathers toward their children. It is a beautiful image of the reconciliation God desires in families: that elders look tenderly on the young, and the young draw close again to their elders. Many families carry long silences, distances, and wounded pride. Lent is a fitting time to take the first step. Sometimes one simple word is enough for the ice to start melting.",
+    "prayer": "Lord, turn my heart toward those I love and have drifted away from. Give me humility to take the first step and patience if the answer is slow to come. Saint Joseph, reconcile divided families. Amen.",
+    "action": "Think of a relative with whom there is distance or tension. If it is wise and safe, send them a simple, kind message; if not, pray a decade of the Rosary for that person."
+   }
+  },
+  {
+   "day": 31,
+   "feast": null,
+   "es": {
+    "title": "Fiel en lo poco",
+    "ref": "Mt 25,21",
+    "verse": "Su señor le dijo: “Bien, siervo bueno y fiel; como has sido fiel en lo poco, te daré un cargo importante; entra en el gozo de tu señor”.",
+    "reflection": "Cerramos el mes con estas palabras: «bien, siervo bueno y fiel; como has sido fiel en lo poco». Podrían resumir la vida de José: fue fiel en lo pequeño, en el taller, en las noches de huida, en el hogar de Nazaret. No hizo milagros ni escribió libros, pero cuidó lo que Dios le confió. Lo que hayas vivido este mes, aunque parezca poco, Dios lo recibe con alegría. Sigue caminando con José hacia la Pascua.",
+    "prayer": "San José, siervo bueno y fiel, gracias por acompañarme este mes. Sigue cuidando mi casa, mi trabajo y mi fe. Señor, recibe lo poco que he podido ofrecerte y llévame contigo hacia la alegría de la Pascua. Amén.",
+    "action": "Relee las notas de tu cuaderno de este mes y elige un hábito pequeño que quieras conservar. Escríbelo en un papel y déjalo donde lo veas cada mañana, junto a una imagen de San José si la tienes."
+   },
+   "en": {
+    "title": "Faithful in small matters",
+    "ref": "Mt 25:21",
+    "verse": "His master said to him, 'Well done, my good and faithful servant. Since you were faithful in small matters, I will give you great responsibilities. Come, share your master's joy.'",
+    "reflection": "We close the month with these words: \"Well done, my good and faithful servant. Since you were faithful in small matters.\" They could sum up Joseph's life: faithful in little things, in the workshop, in the nights of flight, in the home at Nazareth. He worked no miracles and wrote no books, but he cared for what God entrusted to him. Whatever you lived this month, even if it seems small, God receives with joy. Keep walking with Joseph toward Easter.",
+    "prayer": "Saint Joseph, good and faithful servant, thank you for walking with me this month. Keep watching over my home, my work, and my faith. Lord, receive the little I have been able to offer and lead me with You into the joy of Easter. Amen.",
+    "action": "Reread this month's notebook entries and choose one small habit you want to keep. Write it on a slip of paper and place it where you'll see it each morning, beside an image of Saint Joseph if you have one."
+   }
+  }
+ ]
+}

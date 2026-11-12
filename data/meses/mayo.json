@@ -1,0 +1,675 @@
+{
+ "key": "mayo",
+ "es": {
+  "topic": "Mes de María",
+  "intro": "Mayo es el mes de María. Durante estas semanas caminaremos con ella por el Evangelio: su sí en la Anunciación, su canto en la Visitación, el corazón que guarda en Belén y Nazaret, su palabra en Caná, su firmeza al pie de la cruz y su oración en el Cenáculo. No se trata de admirarla de lejos, sino de dejar que una madre nos enseñe a escuchar, a servir y a creer cuando todo está oscuro.",
+  "method": {
+   "title": "Cómo vivir este mes",
+   "steps": [
+    "Cada mañana lee despacio el versículo del día y fíjate en un gesto de María: qué escucha, qué dice, qué calla.",
+    "Reza al menos un misterio del Rosario (un Padrenuestro, diez Avemarías y un Gloria) sin prisa; si te distraes, vuelve con suavidad.",
+    "Pon una flor o una imagen sencilla de María en un rincón de tu casa o de tu mesa de trabajo como recordatorio.",
+    "Realiza la acción propuesta pensando en alguien concreto: María siempre mira primero a los demás.",
+    "Por la noche, entrégale a María lo vivido en el día, también lo que salió mal, y pídele que lo presente a Jesús."
+   ],
+   "prayer": "Santa María, Madre de Jesús y Madre mía, te ofrezco este día con todo lo que traiga. Enséñame a escuchar la Palabra como tú, a servir sin hacer ruido y a confiar cuando no entiendo. Llévame siempre a tu Hijo. Amén.",
+   "closing": "Madre, guarda en tu corazón lo que hoy viví y llévalo a Jesús. Bajo tu manto descanso esta noche. Amén."
+  }
+ },
+ "en": {
+  "topic": "Month of Mary",
+  "intro": "May is Mary's month. In these weeks we will walk with her through the Gospel: her yes at the Annunciation, her song at the Visitation, the heart that treasures in Bethlehem and Nazareth, her word at Cana, her strength at the foot of the cross, and her prayer in the Upper Room. The point is not to admire her from afar but to let a mother teach us to listen, to serve, and to believe when everything is dark.",
+  "method": {
+   "title": "How to live this month",
+   "steps": [
+    "Each morning, read the verse of the day slowly and notice one thing Mary does: what she hears, what she says, what she keeps silent.",
+    "Pray at least one mystery of the Rosary (an Our Father, ten Hail Marys, and a Glory Be) without hurrying; if your mind wanders, gently come back.",
+    "Place a flower or a simple image of Mary in a corner of your home or on your desk as a reminder.",
+    "Do the suggested action with a specific person in mind: Mary always looks to others first.",
+    "At night, give Mary everything you lived that day, including what went wrong, and ask her to bring it to Jesus."
+   ],
+   "prayer": "Holy Mary, Mother of Jesus and my Mother, I offer you this day with all it may bring. Teach me to listen to the Word as you did, to serve without fuss, and to trust when I don't understand. Always lead me to your Son. Amen.",
+   "closing": "Mother, keep in your heart what I lived today and bring it to Jesus. Under your mantle I rest tonight. Amen."
+  }
+ },
+ "days": [
+  {
+   "day": 1,
+   "feast": {
+    "es": "San José Obrero",
+    "en": "Saint Joseph the Worker"
+   },
+   "es": {
+    "title": "Las manos de José en el taller",
+    "ref": "Mt 13,55",
+    "verse": "¿No es el hijo del carpintero? ¿No es su madre María, y sus hermanos Santiago, José, Simón y Judas?",
+    "reflection": "La gente de Nazaret conocía a Jesús como «el hijo del carpintero». Durante años, el Hijo de Dios aprendió a trabajar junto a José, entre virutas, encargos y cansancio. Comenzamos el mes de María en su casa, al lado del hombre que la cuidó en silencio. Tu trabajo de hoy, visible o escondido, pagado o no, también puede ser lugar de encuentro con Dios si lo haces con amor y descansas cuando toca descansar.",
+    "prayer": "San José, trabajador fiel, tú cuidaste a María y a Jesús con el esfuerzo de tus manos. Intercede por mí y por quienes buscan empleo o trabajan agotados. Que mi trabajo de hoy sea ofrenda y no carga. Amén.",
+    "action": "Antes de empezar tu primera tarea, ofrécela en voz baja a Dios. Luego agradece, por escrito o en persona, a alguien cuyo trabajo suele pasar desapercibido: quien limpia, cocina, repara o atiende."
+   },
+   "en": {
+    "title": "Joseph's hands in the workshop",
+    "ref": "Mt 13:55",
+    "verse": "Is he not the carpenter's son? Is not his mother named Mary and his brothers James, Joseph, Simon, and Judas?",
+    "reflection": "The people of Nazareth knew Jesus as \"the carpenter's son.\" For years the Son of God learned to work beside Joseph, among wood shavings, orders, and tiredness. We begin Mary's month in her home, next to the man who quietly cared for her. Your work today, seen or hidden, paid or unpaid, can also be a place to meet God when you do it with love and rest when it is time to rest.",
+    "prayer": "Saint Joseph, faithful worker, you cared for Mary and Jesus with the labor of your hands. Pray for me and for all who are looking for work or are worn out by it. May my work today be an offering, not a burden. Amen.",
+    "action": "Before your first task, quietly offer it to God. Then thank someone whose work usually goes unnoticed, in writing or in person: someone who cleans, cooks, repairs, or serves."
+   }
+  },
+  {
+   "day": 2,
+   "feast": null,
+   "es": {
+    "title": "Llena de gracia antes de hacer nada",
+    "ref": "Lc 1,28",
+    "verse": "El ángel, entrando en su presencia, dijo: «Alégrate, llena de gracia, el Señor está contigo».",
+    "reflection": "El ángel no saluda a María por lo que ha logrado, sino por lo que Dios ha puesto en ella: «llena de gracia». Antes de cualquier tarea, antes de su respuesta, ya era amada. Con esta escena empieza nuestra primera semana, dedicada al sí de María. También tú existes, ante todo, como alguien mirado con ternura. Tu valor no depende de cómo te salga el día.",
+    "prayer": "Dios Padre, que llenaste de gracia a María, ayúdame a creer que también a mí me miras con amor antes de que haga nada. Quita de mi corazón la prisa por ganarme tu cariño. Amén.",
+    "action": "Reza despacio un Avemaría, deteniéndote en las palabras «llena de gracia». Después escribe en un cuaderno una frase sobre un don que Dios te ha dado y que pocas veces agradeces."
+   },
+   "en": {
+    "title": "Full of grace before doing anything",
+    "ref": "Lk 1:28",
+    "verse": "And coming to her, he said, \"Hail, favored one! The Lord is with you.\"",
+    "reflection": "The angel does not greet Mary for anything she has achieved but for what God has placed in her: \"full of grace.\" Before any task, before her answer, she was already loved. This scene opens our first week, devoted to Mary's yes. You too exist first of all as someone looked upon with tenderness. Your worth does not depend on how your day turns out.",
+    "prayer": "God our Father, You filled Mary with grace. Help me believe that You look at me with love too, before I do anything at all. Take from my heart the rush to earn Your affection. Amen.",
+    "action": "Pray one Hail Mary slowly, pausing on the words \"full of grace.\" Then write in a notebook one sentence about a gift God has given you that you seldom give thanks for."
+   }
+  },
+  {
+   "day": 3,
+   "feast": {
+    "es": "Santos Felipe y Santiago, apóstoles",
+    "en": "Saints Philip and James, Apostles"
+   },
+   "es": {
+    "title": "Felipe pide ver al Padre",
+    "ref": "Jn 14,8-9",
+    "verse": "Felipe le dice: Señor, muéstranos al Padre y nos basta. Jesús le replica: Hace tanto que estoy con vosotros, ¿y no me conoces, Felipe? Quien me ha visto a mí ha visto al Padre. ¿Cómo dices tú: “Muéstranos al Padre”?",
+    "reflection": "Felipe, el apóstol de Betsaida, se atreve a pedir lo que muchos callamos: «Muéstranos al Padre». Jesús le responde con paciencia que quien lo ve a él ve al Padre. Junto a Felipe celebramos a Santiago, hijo de Alfeo, testigo fiel del Resucitado. María, que contempló el rostro de su Hijo más que nadie, nos enseña lo mismo: mirar a Jesús es descubrir cómo es Dios. Tus preguntas honestas no lo alejan.",
+    "prayer": "Santos Felipe y Santiago, apóstoles, intercedan por mí para que no me canse de buscar el rostro de Dios. Jesús, cuando dude, muéstrame al Padre en tus gestos. Amén.",
+    "action": "Lee despacio Juan 14,1-9. Anota una pregunta sincera que tengas sobre Dios y preséntasela a Jesús en oración, sin miedo a que sea pequeña o difícil."
+   },
+   "en": {
+    "title": "Philip asks to see the Father",
+    "ref": "Jn 14:8-9",
+    "verse": "Philip said to him, Master, show us the Father, and that will be enough for us. Jesus said to him, Have I been with you for so long a time and you still do not know me, Philip? Whoever has seen me has seen the Father. How can you say, 'Show us the Father'?",
+    "reflection": "Philip, the apostle from Bethsaida, dares to ask what many of us keep silent: \"Show us the Father.\" Jesus patiently answers that whoever sees Him sees the Father. With Philip we celebrate James, son of Alphaeus, a faithful witness of the Risen Lord. Mary, who gazed on her Son's face more than anyone, teaches us the same thing: to look at Jesus is to discover what God is like. Your honest questions do not push Him away.",
+    "prayer": "Saints Philip and James, apostles, pray for me that I may never grow tired of seeking God's face. Jesus, when I doubt, show me the Father in the way You act. Amen.",
+    "action": "Slowly read John 14:1-9. Write down one honest question you have about God and bring it to Jesus in prayer, without worrying that it is too small or too hard."
+   }
+  },
+  {
+   "day": 4,
+   "feast": null,
+   "es": {
+    "title": "Cuando la noticia desconcierta",
+    "ref": "Lc 1,29-30",
+    "verse": "Ella se turbó grandemente ante estas palabras y se preguntaba qué saludo era aquel. El ángel le dijo: No temas, María, porque has encontrado gracia ante Dios.",
+    "reflection": "María se turbó. El Evangelio no esconde que la visita de Dios la desconcertó. No era una mujer sin preguntas, sino alguien que se quedó a escuchar en medio de la sorpresa. Y la primera palabra del cielo para ella fue «no temas». Si hoy algo te inquieta, una noticia, un cambio, una decisión, no necesitas fingir calma. Puedes temblar y quedarte, como ella.",
+    "prayer": "María, Madre serena, tú también conociste la turbación. Acompáñame en lo que hoy me inquieta y ayúdame a escuchar, en medio del ruido, la voz de Dios que me dice que no tema. Amén.",
+    "action": "Dedica cinco minutos de silencio a nombrar ante Dios lo que te preocupa. Al terminar, respira hondo tres veces repitiendo por dentro: «No temas, yo estoy contigo»."
+   },
+   "en": {
+    "title": "When the news unsettles you",
+    "ref": "Lk 1:29-30",
+    "verse": "But she was greatly troubled at what was said and pondered what sort of greeting this might be. Then the angel said to her, Do not be afraid, Mary, for you have found favor with God.",
+    "reflection": "Mary was troubled. The Gospel does not hide that God's visit unsettled her. She was not a woman without questions but someone who stayed to listen in the middle of her surprise. And heaven's first word to her was \"do not be afraid.\" If something is unsettling you today, a piece of news, a change, a decision, you don't need to pretend to be calm. You can tremble and stay, as she did.",
+    "prayer": "Mary, peaceful Mother, you too knew what it is to be troubled. Stay with me in what unsettles me today and help me hear, through all the noise, the voice of God telling me not to be afraid. Amen.",
+    "action": "Spend five minutes in silence naming before God what worries you. When you finish, take three deep breaths, repeating inwardly: \"Do not be afraid, I am with you.\""
+   }
+  },
+  {
+   "day": 5,
+   "feast": null,
+   "es": {
+    "title": "La sombra que protege",
+    "ref": "Lc 1,35",
+    "verse": "El ángel le contestó: El Espíritu Santo vendrá sobre ti, y la fuerza del Altísimo te cubrirá con su sombra; por eso el Santo que va a nacer será llamado Hijo de Dios.",
+    "reflection": "Para explicar lo imposible, el ángel habla de una sombra: la fuerza del Altísimo cubrirá a María. Lo que Dios hará en ella no depende de sus fuerzas, sino del Espíritu Santo. Jesús será concebido sin intervención de varón, como obra pura de Dios. Hay tareas en tu vida que te superan. No tienes que cargarlas solo: el mismo Espíritu puede cubrirte y obrar donde tú no llegas.",
+    "prayer": "Espíritu Santo, que cubriste a María con tu sombra, ven también sobre mí. Donde mis fuerzas no alcanzan, obra tú. Hazme dócil a tu paso, como ella. Amén.",
+    "action": "Elige una tarea que te supera o que llevas tiempo evitando. Antes de dar el primer paso pequeño, invoca al Espíritu Santo con una oración breve y luego da solo ese paso."
+   },
+   "en": {
+    "title": "The shadow that shelters",
+    "ref": "Lk 1:35",
+    "verse": "And the angel said to her in reply, The holy Spirit will come upon you, and the power of the Most High will overshadow you. Therefore the child to be born will be called holy, the Son of God.",
+    "reflection": "To explain the impossible, the angel speaks of a shadow: the power of the Most High will overshadow Mary. What God will do in her does not depend on her strength but on the Holy Spirit. Jesus will be conceived without a human father, purely as God's work. There are tasks in your life that are beyond you. You don't have to carry them alone: the same Spirit can overshadow you and work where you cannot reach.",
+    "prayer": "Holy Spirit, who overshadowed Mary, come upon me as well. Where my strength falls short, act in me. Make me open to Your movement, as she was. Amen.",
+    "action": "Choose one task that overwhelms you or that you have been avoiding. Before taking the first small step, call on the Holy Spirit with a short prayer, and then take only that step."
+   }
+  },
+  {
+   "day": 6,
+   "feast": null,
+   "es": {
+    "title": "Para Dios nada es imposible",
+    "ref": "Lc 1,37",
+    "verse": "porque para Dios nada hay imposible.",
+    "reflection": "Antes de escuchar la respuesta de María, el ángel le muestra una señal: Isabel, a quien llamaban estéril, espera un hijo. Dios no solo anuncia, también acompaña con signos. Quizás cargas una situación que parece cerrada: una relación rota, un hábito que vuelve, una tristeza antigua. Esta palabra no promete que todo saldrá como quieres, pero te recuerda que Dios no se ha quedado sin caminos.",
+    "prayer": "Señor, tú que hiciste fecunda la esterilidad de Isabel, mira lo que en mí parece cerrado. No te pido que se haga mi plan, sino que no deje de esperar en ti. Amén.",
+    "action": "Escribe en un papel aquello que te parece imposible y colócalo junto a una imagen de María o dentro de tu Biblia. Cada vez que lo veas este mes, repite: «Para ti nada es imposible»."
+   },
+   "en": {
+    "title": "Nothing is impossible for God",
+    "ref": "Lk 1:37",
+    "verse": "for nothing will be impossible for God.",
+    "reflection": "Before hearing Mary's answer, the angel shows her a sign: Elizabeth, who was called barren, is expecting a child. God does not only announce; He also accompanies with signs. Perhaps you carry a situation that seems closed: a broken relationship, a habit that keeps coming back, an old sadness. This word does not promise that everything will go your way, but it reminds you that God has not run out of paths.",
+    "prayer": "Lord, You made Elizabeth's barrenness fruitful. Look at what seems closed in me. I don't ask that my plan be done, but that I never stop hoping in You. Amen.",
+    "action": "Write on a slip of paper what seems impossible to you and place it beside an image of Mary or inside your Bible. Each time you see it this month, say: \"For You nothing is impossible.\""
+   }
+  },
+  {
+   "day": 7,
+   "feast": null,
+   "es": {
+    "title": "Un sí sin conocer todo el camino",
+    "ref": "Lc 1,38",
+    "verse": "María contestó: «He aquí la esclava del Señor; hágase en mí según tu palabra». Y el ángel se retiró.",
+    "reflection": "«Hágase en mí según tu palabra». María responde sin tener el mapa completo. No sabe cómo se lo explicará a José ni qué dirá la gente de Nazaret. Su sí no es resignación, sino confianza libre en quien la ama. Cerramos la semana de la Anunciación con su respuesta. Tal vez Dios no te pide hoy algo enorme, sino un sí pequeño en lo concreto: paciencia, perdón, una conversación pendiente.",
+    "prayer": "María, sierva del Señor, enséñame a decir sí sin exigir ver todo el camino. Que mi respuesta de hoy, aunque sea pequeña, sea libre y confiada como la tuya. Amén.",
+    "action": "Identifica un sí pequeño que has ido postergando, como una llamada, una disculpa o una tarea en casa, y hazlo hoy. Al terminarlo, reza un Avemaría en acción de gracias."
+   },
+   "en": {
+    "title": "A yes without seeing the whole road",
+    "ref": "Lk 1:38",
+    "verse": "Mary said, \"Behold, I am the handmaid of the Lord. May it be done to me according to your word.\" Then the angel departed from her.",
+    "reflection": "\"May it be done to me according to your word.\" Mary answers without the full map. She doesn't know how she will explain it to Joseph or what the people of Nazareth will say. Her yes is not resignation but free trust in the One who loves her. We close the week of the Annunciation with her answer. Perhaps God is not asking something huge of you today, just a small yes in something concrete: patience, forgiveness, a conversation you've been putting off.",
+    "prayer": "Mary, servant of the Lord, teach me to say yes without demanding to see the whole road. May my answer today, however small, be free and trusting like yours. Amen.",
+    "action": "Pick one small yes you have been postponing, such as a phone call, an apology, or a chore at home, and do it today. When it's done, pray a Hail Mary in thanksgiving."
+   }
+  },
+  {
+   "day": 8,
+   "feast": null,
+   "es": {
+    "title": "Una prisa que nace del amor",
+    "ref": "Lc 1,39",
+    "verse": "En aquellos mismos días, María se levantó y se puso en camino de prisa hacia la montaña, a una ciudad de Judá…",
+    "reflection": "Comienza la segunda semana: María que sale al encuentro. Apenas recibe la noticia, no se encierra en su experiencia; se pone en camino hacia la casa de Isabel. Su prisa no es ansiedad, sino caridad que no quiere hacer esperar a quien necesita ayuda. La fe auténtica nos saca de nosotros mismos. ¿Quién, cerca de ti, lleva un embarazo, una enfermedad o una carga y agradecería que llegaras?",
+    "prayer": "Virgen María, que corriste a servir a tu prima, quita de mí la pereza que me encierra. Dame una caridad ágil y delicada, que llegue a tiempo. Amén.",
+    "action": "Piensa en alguien que atraviesa un momento delicado y ofrécele hoy una ayuda concreta: llevarle comida, hacerle un recado o simplemente llamar para preguntar cómo está."
+   },
+   "en": {
+    "title": "A haste born of love",
+    "ref": "Lk 1:39",
+    "verse": "During those days Mary set out and traveled to the hill country in haste to a town of Judah…",
+    "reflection": "Our second week begins: Mary goes out to meet others. As soon as she receives the news, she doesn't close herself up in her own experience; she sets out for Elizabeth's house. Her haste is not anxiety but charity that won't keep someone in need waiting. Real faith draws us out of ourselves. Who near you is carrying a pregnancy, an illness, or some burden and would be grateful if you showed up?",
+    "prayer": "Virgin Mary, you hurried to serve your cousin. Take from me the sluggishness that closes me in. Give me a quick and gentle charity that arrives in time. Amen.",
+    "action": "Think of someone going through a delicate moment and offer them concrete help today: bring a meal, run an errand, or simply call to ask how they are doing."
+   }
+  },
+  {
+   "day": 9,
+   "feast": null,
+   "es": {
+    "title": "El alma que se ensancha",
+    "ref": "Lc 1,46-47",
+    "verse": "María dijo: Proclama mi alma la grandeza del Señor, se alegra mi espíritu en Dios, mi salvador…",
+    "reflection": "En casa de Isabel, María canta. El Magníficat brota de un corazón que ha reconocido la obra de Dios en su pequeña historia. No canta porque todo sea fácil, sino porque Dios es su salvador. La alegría cristiana no niega los problemas; los mira desde más arriba. Hoy puedes ensayar ese canto con tus propias palabras, aunque la voz te salga baja.",
+    "prayer": "Mi alma te alaba, Señor, porque me miras y me salvas. Con María quiero alegrarme en ti, aun en medio de lo que no entiendo. Ensancha mi corazón para la gratitud. Amén.",
+    "action": "Lee en voz alta el Magníficat (Lucas 1,46-55). Después escribe tres líneas propias de alabanza por cosas concretas que Dios ha hecho en tu vida este año."
+   },
+   "en": {
+    "title": "A soul that grows wide",
+    "ref": "Lk 1:46-47",
+    "verse": "And Mary said: My soul proclaims the greatness of the Lord; my spirit rejoices in God my savior.",
+    "reflection": "In Elizabeth's house, Mary sings. The Magnificat springs from a heart that has recognized God's work in her small story. She does not sing because everything is easy but because God is her savior. Christian joy does not deny problems; it sees them from higher up. Today you can practice that song in your own words, even if your voice comes out quiet.",
+    "prayer": "My soul praises You, Lord, because You see me and save me. With Mary I want to rejoice in You, even in the middle of what I don't understand. Widen my heart for gratitude. Amen.",
+    "action": "Read the Magnificat aloud (Luke 1:46-55). Then write three lines of your own praise for specific things God has done in your life this year."
+   }
+  },
+  {
+   "day": 10,
+   "feast": null,
+   "es": {
+    "title": "Una mirada sobre lo pequeño",
+    "ref": "Lc 1,48",
+    "verse": "porque ha mirado la humildad de su esclava. Desde ahora me felicitarán todas las generaciones…",
+    "reflection": "María se sabe pequeña y, precisamente por eso, mirada. Dios no se fija primero en los títulos ni en los logros, sino en los corazones que le dejan espacio. Si hoy te sientes poca cosa, cansado de compararte con otros o invisible en tu trabajo, este versículo es para ti. La humildad no es despreciarse, sino dejarse mirar por Dios tal como uno es.",
+    "prayer": "Señor, que miraste la pequeñez de María, mírame también hoy. Líbrame de la comparación que me roba la paz y enséñame a alegrarme de ser tuyo. Amén.",
+    "action": "Durante el día, cada vez que te descubras comparándote con alguien en redes o en el trabajo, cambia ese pensamiento por una breve acción de gracias por algo que sí tienes."
+   },
+   "en": {
+    "title": "A gaze upon little things",
+    "ref": "Lk 1:48",
+    "verse": "For he has looked upon his handmaid's lowliness; behold, from now on will all ages call me blessed.",
+    "reflection": "Mary knows she is small, and precisely for that reason she is seen. God does not look first at titles or achievements but at hearts that make room for Him. If today you feel insignificant, tired of comparing yourself with others, or invisible at work, this verse is for you. Humility is not despising yourself; it is letting God look at you just as you are.",
+    "prayer": "Lord, You looked upon Mary's lowliness; look upon me today as well. Free me from the comparison that steals my peace and teach me to rejoice in being Yours. Amen.",
+    "action": "Throughout the day, whenever you catch yourself comparing yourself to someone online or at work, replace that thought with a short word of thanks for something you do have."
+   }
+  },
+  {
+   "day": 11,
+   "feast": null,
+   "es": {
+    "title": "Los hambrientos, colmados de bienes",
+    "ref": "Lc 1,52-53",
+    "verse": "derriba del trono a los poderosos y enaltece a los humildes, a los hambrientos los colma de bienes y a los ricos los despide vacíos.",
+    "reflection": "El canto de María tiene también una fuerza profética: Dios enaltece a los humildes y colma de bienes a los hambrientos. Ella conoce a los pobres de su pueblo y sabe que Dios no es indiferente a su dolor. Rezar con María es dejar que su mirada se vuelva la nuestra: atenta a quien no tiene pan, trabajo o compañía. La devoción mariana auténtica siempre termina en caridad.",
+    "prayer": "Dios de los pobres, que levantas a los humildes, dame un corazón como el de María, sensible a quien pasa necesidad. Que mi oración se convierta en manos abiertas. Amén.",
+    "action": "Haz hoy una limosna discreta o separa algunos alimentos no perecederos para un banco de alimentos o tu parroquia. Si no puedes, reza un misterio del Rosario por quienes pasan hambre."
+   },
+   "en": {
+    "title": "The hungry filled with good things",
+    "ref": "Lk 1:52-53",
+    "verse": "He has thrown down the rulers from their thrones but lifted up the lowly. The hungry he has filled with good things; the rich he has sent away empty.",
+    "reflection": "Mary's song also has prophetic strength: God lifts up the lowly and fills the hungry with good things. She knows the poor of her people and knows God is not indifferent to their pain. To pray with Mary is to let her gaze become ours: attentive to those without bread, work, or company. Genuine devotion to Mary always ends in charity.",
+    "prayer": "God of the poor, who lift up the lowly, give me a heart like Mary's, sensitive to anyone in need. Let my prayer become open hands. Amen.",
+    "action": "Give a discreet donation today, or set aside some non-perishable food for a food bank or your parish. If you can't, pray one mystery of the Rosary for those who go hungry."
+   }
+  },
+  {
+   "day": 12,
+   "feast": null,
+   "es": {
+    "title": "Misericordia de generación en generación",
+    "ref": "Lc 1,50",
+    "verse": "y su misericordia llega a sus fieles de generación en generación.",
+    "reflection": "María canta que la misericordia de Dios no se agota: pasa de generación en generación. Si has vuelto a caer en lo mismo, si sientes que ya agotaste la paciencia del cielo, escucha este canto. La misericordia no tiene fecha de vencimiento. El sacramento de la confesión no es un tribunal que humilla, sino un encuentro donde Dios vuelve a levantarte, todas las veces que haga falta.",
+    "prayer": "Madre de misericordia, tú conoces mis caídas y no apartas la mirada. Llévame de la mano hacia Jesús, que perdona y levanta. Quita de mí la vergüenza que me paraliza. Amén.",
+    "action": "Si hace tiempo que no te confiesas, averigua el horario de confesiones de tu parroquia y elige un día de esta semana. Si no es posible, haz hoy un breve examen de conciencia y un acto de contrición sereno."
+   },
+   "en": {
+    "title": "Mercy from age to age",
+    "ref": "Lk 1:50",
+    "verse": "His mercy is from age to age to those who fear him.",
+    "reflection": "Mary sings that God's mercy never runs out: it passes from generation to generation. If you have fallen into the same thing again, if you feel you have used up heaven's patience, listen to this song. Mercy has no expiration date. The sacrament of confession is not a courtroom that humiliates but an encounter where God lifts you up again, as many times as it takes.",
+    "prayer": "Mother of mercy, you know my falls and you do not look away. Take me by the hand to Jesus, who forgives and lifts up. Take from me the shame that paralyzes me. Amen.",
+    "action": "If it has been a while since your last confession, find out your parish's confession times and choose a day this week. If that isn't possible, make a brief examination of conscience today and a calm act of contrition."
+   }
+  },
+  {
+   "day": 13,
+   "feast": {
+    "es": "Nuestra Señora de Fátima",
+    "en": "Our Lady of Fatima"
+   },
+   "es": {
+    "title": "Fátima: una madre que pide oración",
+    "ref": "Ap 12,1",
+    "verse": "Un gran signo apareció en el cielo: una mujer vestida del sol, y la luna bajo sus pies y una corona de doce estrellas sobre su cabeza…",
+    "reflection": "Según el relato de los videntes, a comienzos del siglo XX la Virgen se apareció en Fátima, Portugal, a tres niños pastores: Lucía, Francisco y Jacinta. La Iglesia ha aprobado estas apariciones, aunque no forman parte del dogma. Los niños contaron que la Señora pedía rezar el Rosario por la paz y por la conversión de los pecadores. Más que asombro, Fátima invita a algo sencillo: orar, ofrecer y confiar en la ternura de Dios.",
+    "prayer": "Nuestra Señora de Fátima, Madre de la paz, intercede por el mundo herido por la guerra y por quienes se han alejado de Dios. Enséñame a rezar con la sencillez de aquellos niños. Amén.",
+    "action": "Reza hoy un Rosario completo o, si no tienes tiempo, al menos un misterio, pidiendo por la paz en un país en guerra y por alguien que conozcas que se ha alejado de la fe."
+   },
+   "en": {
+    "title": "Fatima: a mother who asks for prayer",
+    "ref": "Rv 12:1",
+    "verse": "A great sign appeared in the sky, a woman clothed with the sun, with the moon under her feet, and on her head a crown of twelve stars.",
+    "reflection": "According to the account of the visionaries, in the early twentieth century the Virgin appeared at Fatima, Portugal, to three young shepherds: Lucia, Francisco, and Jacinta. The Church has approved these apparitions, though they are not part of dogma. The children said the Lady asked for the Rosary to be prayed for peace and for the conversion of sinners. More than amazement, Fatima invites something simple: to pray, to offer, and to trust in God's tenderness.",
+    "prayer": "Our Lady of Fatima, Mother of peace, pray for a world wounded by war and for those who have drifted away from God. Teach me to pray with the simplicity of those children. Amen.",
+    "action": "Pray a full Rosary today or, if you lack time, at least one mystery, asking for peace in a country at war and for someone you know who has drifted from the faith."
+   }
+  },
+  {
+   "day": 14,
+   "feast": {
+    "es": "San Matías, apóstol",
+    "en": "Saint Matthias, Apostle"
+   },
+   "es": {
+    "title": "Matías, elegido en la oración",
+    "ref": "Hch 1,26",
+    "verse": "Les repartieron suertes, le tocó a Matías, y lo asociaron a los once apóstoles.",
+    "reflection": "Tras la Ascensión, los Once necesitaban completar el grupo de los Doce. Buscaron a alguien que hubiera acompañado a Jesús desde el bautismo de Juan, oraron juntos y la suerte cayó sobre Matías. Era la misma comunidad que perseveraba en la oración con María. Matías no aparece antes en los Evangelios: fue un discípulo fiel en lo escondido hasta que llegó su hora. Tu fidelidad silenciosa también cuenta para Dios.",
+    "prayer": "San Matías, apóstol, que serviste con fidelidad antes de ser llamado, intercede por mí. Señor, cuando no vea frutos, ayúdame a seguir caminando contigo con constancia. Amén.",
+    "action": "Antes de una decisión que tengas pendiente, dedica diez minutos a orar por ella pidiendo luz al Espíritu Santo, y conversa luego con una persona de fe en quien confíes."
+   },
+   "en": {
+    "title": "Matthias, chosen in prayer",
+    "ref": "Acts 1:26",
+    "verse": "Then they gave lots to them, and the lot fell upon Matthias, and he was counted with the eleven apostles.",
+    "reflection": "After the Ascension, the Eleven needed to complete the circle of the Twelve. They looked for someone who had followed Jesus since John's baptism, prayed together, and the lot fell on Matthias. It was the same community that persevered in prayer with Mary. Matthias does not appear earlier in the Gospels: he was a faithful disciple in hidden ways until his hour came. Your quiet faithfulness also counts before God.",
+    "prayer": "Saint Matthias, apostle, you served faithfully before you were called; pray for me. Lord, when I don't see fruit, help me keep walking with You steadily. Amen.",
+    "action": "Before a decision you need to make, spend ten minutes praying about it and asking the Holy Spirit for light, then talk it over with a person of faith you trust."
+   }
+  },
+  {
+   "day": 15,
+   "feast": null,
+   "es": {
+    "title": "Belén: no había sitio",
+    "ref": "Lc 2,7",
+    "verse": "y dio a luz a su hijo primogénito, lo envolvió en pañales y lo recostó en un pesebre, porque no había sitio para ellos en la posada.",
+    "reflection": "Comienza la tercera semana: María que guarda y medita. En Belén no hubo sitio en la posada, y María recostó a su Hijo en un pesebre. No tuvo el lugar ideal, pero ofreció lo que tenía: sus brazos, unos pañales, su calor. Quizás tu vida tampoco es el lugar perfecto para recibir a Dios. No importa. Él vino a un pesebre y no le da miedo tu desorden.",
+    "prayer": "Madre de Belén, tú recibiste a Jesús en la pobreza de un establo. Ayúdame a abrirle mi vida tal como está, sin esperar a tenerlo todo en orden. Amén.",
+    "action": "Ordena un pequeño rincón de tu casa durante diez minutos y deja en él un signo sencillo: una vela, una cruz o una imagen de María con el Niño. Que sea tu lugar de oración este mes."
+   },
+   "en": {
+    "title": "Bethlehem: there was no room",
+    "ref": "Lk 2:7",
+    "verse": "and she gave birth to her firstborn son. She wrapped him in swaddling clothes and laid him in a manger, because there was no room for them in the inn.",
+    "reflection": "Our third week begins: Mary who treasures and ponders. In Bethlehem there was no room at the inn, and Mary laid her Son in a manger. She did not have the ideal place, but she offered what she had: her arms, swaddling clothes, her warmth. Perhaps your life isn't the perfect place to receive God either. It doesn't matter. He came to a manger, and your mess does not frighten Him.",
+    "prayer": "Mother of Bethlehem, you welcomed Jesus in the poverty of a stable. Help me open my life to Him just as it is, without waiting until everything is in order. Amen.",
+    "action": "Spend ten minutes tidying a small corner of your home and leave a simple sign there: a candle, a cross, or an image of Mary with the Child. Let it be your place of prayer this month."
+   }
+  },
+  {
+   "day": 16,
+   "feast": null,
+   "es": {
+    "title": "Guardar en el corazón",
+    "ref": "Lc 2,19",
+    "verse": "María, por su parte, conservaba todas estas cosas, meditándolas en su corazón.",
+    "reflection": "Los pastores llegan, cuentan lo que vieron y todos se asombran. María, en cambio, guarda y medita. No lo entiende todo, pero no lo descarta: lo conserva dentro, como quien guarda semillas. Vivimos rodeados de estímulos que pasan sin dejar huella. El Rosario prolonga esta actitud: repasar con María los misterios de Jesús hasta que echen raíces.",
+    "prayer": "María, que guardabas todo en tu corazón, enséñame a no dejar pasar de largo lo que Dios hace en mi vida. Dame un corazón atento y silencioso. Amén.",
+    "action": "Al final del día, deja el teléfono en otra habitación y dedica diez minutos a repasar la jornada en silencio. Anota en tu cuaderno un momento en que Dios estuvo presente."
+   },
+   "en": {
+    "title": "Treasuring in the heart",
+    "ref": "Lk 2:19",
+    "verse": "And Mary kept all these things, reflecting on them in her heart.",
+    "reflection": "The shepherds arrive, tell what they saw, and everyone is amazed. Mary, by contrast, keeps and ponders. She doesn't understand everything, but she doesn't discard it: she holds it within, like someone keeping seeds. We live surrounded by stimuli that pass without leaving a trace. The Rosary extends this attitude: going over the mysteries of Jesus with Mary until they take root.",
+    "prayer": "Mary, you kept all things in your heart. Teach me not to let what God does in my life slip by. Give me an attentive and quiet heart. Amen.",
+    "action": "At the end of the day, leave your phone in another room and spend ten minutes reviewing the day in silence. Write in your notebook one moment when God was present."
+   }
+  },
+  {
+   "day": 17,
+   "feast": null,
+   "es": {
+    "title": "Una espada que atraviesa",
+    "ref": "Lc 2,35",
+    "verse": "—y a ti misma una espada te traspasará el alma—, para que se pongan de manifiesto los pensamientos de muchos corazones.",
+    "reflection": "En el templo, el anciano Simeón bendice al Niño y anuncia a María que una espada le atravesará el alma. Desde muy pronto, su alegría convive con el dolor. Ser amada por Dios no la libró del sufrimiento, pero tampoco la dejó sola en él. Si hoy llevas una herida, una preocupación por un hijo, un duelo, una enfermedad, María entiende ese lenguaje. Puedes contárselo sin adornos.",
+    "prayer": "Madre dolorosa, tú supiste desde el principio que el amor puede doler. Acompaña mi herida de hoy y la de quienes amo. Ayúdame a no cerrarme y a seguir confiando. Amén.",
+    "action": "Reza un misterio del Rosario por alguien que esté sufriendo y envíale después un mensaje breve y cariñoso, sin consejos, solo para que sepa que lo tienes presente."
+   },
+   "en": {
+    "title": "A sword that pierces",
+    "ref": "Lk 2:35",
+    "verse": "(and you yourself a sword will pierce) so that the thoughts of many hearts may be revealed.",
+    "reflection": "In the Temple, old Simeon blesses the Child and tells Mary that a sword will pierce her soul. From very early on, her joy lives alongside pain. Being loved by God did not spare her from suffering, but it did not leave her alone in it either. If you carry a wound today, worry about a child, grief, an illness, Mary understands that language. You can tell her about it without dressing it up.",
+    "prayer": "Sorrowful Mother, you knew from the beginning that love can hurt. Stay with my wound today and with the wounds of those I love. Help me not to close up and to keep trusting. Amen.",
+    "action": "Pray one mystery of the Rosary for someone who is suffering, then send them a short, warm message with no advice, just to let them know you are thinking of them."
+   }
+  },
+  {
+   "day": 18,
+   "feast": null,
+   "es": {
+    "title": "Cuando Jesús parece perdido",
+    "ref": "Lc 2,48",
+    "verse": "Al verlo, se quedaron atónitos, y le dijo su madre: «Hijo, ¿por qué nos has tratado así? Tu padre y yo te buscábamos angustiados».",
+    "reflection": "Tres días buscando al Niño. María y José conocieron la angustia de no encontrar a Jesús. Hay etapas en que la oración se seca y Dios parece ausente; también la Madre pasó por algo así. No se quedó paralizada: volvió a Jerusalén y buscó. Y lo encontró en la casa del Padre. Si hoy sientes a Dios lejos, sigue buscando con paciencia: no te ha abandonado.",
+    "prayer": "María, que buscaste a Jesús con angustia, acompáñame cuando no lo siento cerca. Dame perseverancia para seguir buscándolo y la alegría de encontrarlo de nuevo. Amén.",
+    "action": "Si te es posible, visita una iglesia y pasa unos minutos ante el Santísimo. Si no puedes, busca un lugar tranquilo y lee despacio Lucas 2,41-52, imaginando la búsqueda de María."
+   },
+   "en": {
+    "title": "When Jesus seems lost",
+    "ref": "Lk 2:48",
+    "verse": "When his parents saw him, they were astonished, and his mother said to him, \"Son, why have you done this to us? Your father and I have been looking for you with great anxiety.\"",
+    "reflection": "Three days searching for the Child. Mary and Joseph knew the anguish of not finding Jesus. There are seasons when prayer dries up and God seems absent; the Mother went through something like that too. She did not freeze: she went back to Jerusalem and searched. And she found Him in His Father's house. If God feels far away today, keep looking with patience: He has not abandoned you.",
+    "prayer": "Mary, you searched for Jesus in distress. Stay with me when I don't feel Him near. Give me perseverance to keep seeking Him and the joy of finding Him again. Amen.",
+    "action": "If you can, visit a church and spend a few minutes before the Blessed Sacrament. If you can't, find a quiet place and slowly read Luke 2:41-52, imagining Mary's search."
+   }
+  },
+  {
+   "day": 19,
+   "feast": null,
+   "es": {
+    "title": "La santidad de los días comunes",
+    "ref": "Lc 2,51",
+    "verse": "Él bajó con ellos y fue a Nazaret y estaba sujeto a ellos. Su madre conservaba todo esto en su corazón.",
+    "reflection": "Después del templo vienen años de silencio en Nazaret: comidas, trabajo, vecinos, oración, rutina. El Evangelio los resume en una línea, pero fueron la mayor parte de la vida de Jesús junto a María y José. La santidad no está reservada a momentos extraordinarios. Lavar los platos, cuidar a un enfermo o terminar un informe con honestidad también es vivir en Nazaret con Dios.",
+    "prayer": "Sagrada Familia de Nazaret, enséñame a encontrar a Dios en lo ordinario. Que mi casa sea un lugar de paz, paciencia y oración sencilla. Amén.",
+    "action": "Haz hoy una tarea doméstica que normalmente evitas o que suele hacer otra persona, sin comentarlo. Mientras la haces, ofrécela por tu familia."
+   },
+   "en": {
+    "title": "The holiness of ordinary days",
+    "ref": "Lk 2:51",
+    "verse": "He went down with them and came to Nazareth, and was obedient to them; and his mother kept all these things in her heart.",
+    "reflection": "After the Temple come years of silence in Nazareth: meals, work, neighbors, prayer, routine. The Gospel sums them up in a single line, yet they made up most of Jesus' life with Mary and Joseph. Holiness is not reserved for extraordinary moments. Washing dishes, caring for someone sick, or honestly finishing a report is also living in Nazareth with God.",
+    "prayer": "Holy Family of Nazareth, teach me to find God in ordinary things. May my home be a place of peace, patience, and simple prayer. Amen.",
+    "action": "Today, do a household task you usually avoid or that someone else normally does, without mentioning it. While you do it, offer it up for your family."
+   }
+  },
+  {
+   "day": 20,
+   "feast": null,
+   "es": {
+    "title": "Ella se da cuenta de lo que falta",
+    "ref": "Jn 2,3",
+    "verse": "Faltó el vino, y la madre de Jesús le dice: «No tienen vino».",
+    "reflection": "En las bodas de Caná, nadie más parece notar el problema. María sí. Se da cuenta de que se acaba el vino y de la vergüenza que eso traerá a los novios. No hace un discurso: se lo dice a Jesús en pocas palabras. Así intercede ella también por nosotros. Hoy puedes presentarle a Jesús, con la misma sencillez, lo que falta en tu casa: paciencia, alegría, recursos o diálogo.",
+    "prayer": "Madre atenta de Caná, tú ves lo que nos falta antes que nosotros. Dile a Jesús lo que necesita mi familia y enséñame a fijarme en las necesidades de los demás. Amén.",
+    "action": "Durante una comida de hoy, presta atención a quien está contigo: sírvele primero, pregúntale cómo le fue y escúchalo sin mirar el teléfono."
+   },
+   "en": {
+    "title": "She notices what is missing",
+    "ref": "Jn 2:3",
+    "verse": "When the wine ran short, the mother of Jesus said to him, \"They have no wine.\"",
+    "reflection": "At the wedding in Cana, no one else seems to notice the problem. Mary does. She realizes the wine is running out and sees the embarrassment it will bring the couple. She doesn't make a speech: she tells Jesus in a few words. That is how she intercedes for us too. Today you can bring to Jesus, with the same simplicity, what is missing in your home: patience, joy, resources, or conversation.",
+    "prayer": "Attentive Mother of Cana, you see what we lack before we do. Tell Jesus what my family needs, and teach me to notice the needs of others. Amen.",
+    "action": "At one meal today, pay attention to whoever is with you: serve them first, ask how their day went, and listen without looking at your phone."
+   }
+  },
+  {
+   "day": 21,
+   "feast": null,
+   "es": {
+    "title": "Hagan lo que él les diga",
+    "ref": "Jn 2,5",
+    "verse": "Su madre dice a los sirvientes: «Haced lo que él os diga».",
+    "reflection": "Son las últimas palabras de María que recoge el Evangelio de Juan, y resumen toda su misión: señalar a Jesús. Ella no se pone en el centro; dirige la mirada hacia su Hijo. Los sirvientes obedecen una indicación extraña, llenar tinajas de agua, y el agua se convierte en vino. Toda verdadera devoción a María termina aquí: en escuchar a Jesús y hacer lo que él dice.",
+    "prayer": "María, tú me enseñas a mirar a Jesús. Ayúdame a obedecer su Palabra, aunque a veces me pida cosas que no entiendo, y a confiar en que él puede transformar mi agua en vino. Amén.",
+    "action": "Lee el Evangelio de la Misa de hoy y elige una frase de Jesús. Decide un gesto concreto para ponerla en práctica antes de que termine el día."
+   },
+   "en": {
+    "title": "Do whatever He tells you",
+    "ref": "Jn 2:5",
+    "verse": "His mother said to the servers, \"Do whatever he tells you.\"",
+    "reflection": "These are the last words of Mary recorded in John's Gospel, and they sum up her whole mission: pointing to Jesus. She does not put herself at the center; she turns our eyes toward her Son. The servants follow a strange instruction, filling jars with water, and the water becomes wine. All true devotion to Mary ends here: listening to Jesus and doing what He says.",
+    "prayer": "Mary, you teach me to look at Jesus. Help me obey His word, even when He asks things I don't understand, and to trust that He can turn my water into wine. Amen.",
+    "action": "Read the Gospel from today's Mass and choose one sentence of Jesus. Decide on one concrete gesture to put it into practice before the day ends."
+   }
+  },
+  {
+   "day": 22,
+   "feast": null,
+   "es": {
+    "title": "Dichosa porque escuchó",
+    "ref": "Lc 11,28",
+    "verse": "Pero él dijo: «Mejor, bienaventurados los que escuchan la palabra de Dios y la cumplen».",
+    "reflection": "Una mujer alaba a la madre de Jesús, y él responde que son dichosos los que escuchan la palabra de Dios y la cumplen. No es un desprecio a María: es el elogio más profundo. Ella es madre de Jesús porque antes escuchó y acogió la Palabra. Con este día cerramos la semana del corazón que guarda. La grandeza de María está al alcance de todos: escuchar y vivir lo escuchado.",
+    "prayer": "Jesús, Palabra del Padre, hazme oyente atento como tu Madre. Que lo que escucho de ti no se quede en ideas, sino que se vuelva vida concreta. Amén.",
+    "action": "Haz hoy diez minutos de lectio divina: lee despacio un pasaje del Evangelio, quédate con una palabra, conversa con Dios sobre ella y termina en silencio."
+   },
+   "en": {
+    "title": "Blessed because she listened",
+    "ref": "Lk 11:28",
+    "verse": "He replied, \"Rather, blessed are those who hear the word of God and observe it.\"",
+    "reflection": "A woman praises the mother of Jesus, and He answers that blessed are those who hear the word of God and keep it. This is no slight to Mary: it is the deepest praise. She is the mother of Jesus because she first heard and welcomed the Word. With this day we close the week of the heart that treasures. Mary's greatness is within everyone's reach: to listen and to live what we hear.",
+    "prayer": "Jesus, Word of the Father, make me an attentive listener like Your Mother. May what I hear from You not stay as ideas but become concrete life. Amen.",
+    "action": "Spend ten minutes in lectio divina today: slowly read a Gospel passage, stay with one word, talk with God about it, and end in silence."
+   }
+  },
+  {
+   "day": 23,
+   "feast": null,
+   "es": {
+    "title": "De pie junto a la cruz",
+    "ref": "2 Cor 1,3-4",
+    "verse": "¡Bendito sea el Dios y Padre de nuestro Señor Jesucristo, Padre de las misericordias y Dios de todo consuelo, que nos consuela en cualquier tribulación nuestra hasta el punto de poder consolar nosotros a los demás en cualquier lucha, mediante el consuelo con que nosotros mismos somos consolados por Dios!",
+    "reflection": "Empieza la cuarta semana: la Madre en la hora más oscura. El Evangelio cuenta que, cuando casi todos huyeron, María estaba de pie junto a la cruz. No podía impedir el dolor de su Hijo, pero no lo dejó solo. A veces no podemos arreglar el sufrimiento de quienes amamos; solo podemos quedarnos. El Dios de todo consuelo nos sostiene para que también nosotros sepamos consolar con una presencia fiel y silenciosa.",
+    "prayer": "Madre al pie de la cruz, dame fortaleza para acompañar a quienes sufren, aunque no tenga soluciones. Enséñame a quedarme con amor cuando sería más fácil huir. Amén.",
+    "action": "Visita, llama o escribe a alguien que esté enfermo, solo o en duelo. No intentes resolver nada: dedica al menos quince minutos a escucharle con calma."
+   },
+   "en": {
+    "title": "Standing by the cross",
+    "ref": "2 Cor 1:3-4",
+    "verse": "Blessed be the God and Father of our Lord Jesus Christ, the Father of compassion and God of all encouragement, who encourages us in our every affliction, so that we may be able to encourage those who are in any affliction with the encouragement with which we ourselves are encouraged by God.",
+    "reflection": "Our fourth week begins: the Mother in the darkest hour. The Gospel tells us that when almost everyone had fled, Mary was standing by the cross. She could not stop her Son's pain, but she did not leave Him alone. Sometimes we cannot fix the suffering of those we love; we can only stay. The God of all encouragement holds us up so that we too can comfort others with a faithful, silent presence.",
+    "prayer": "Mother at the foot of the cross, give me strength to stay with those who suffer, even when I have no solutions. Teach me to remain in love when it would be easier to run. Amen.",
+    "action": "Visit, call, or write to someone who is sick, alone, or grieving. Don't try to fix anything: spend at least fifteen minutes simply listening to them."
+   }
+  },
+  {
+   "day": 24,
+   "feast": null,
+   "es": {
+    "title": "Ahí tienes a tu madre",
+    "ref": "Jn 14,18",
+    "verse": "No os dejaré huérfanos, volveré a vosotros.",
+    "reflection": "Jesús prometió a los suyos que no los dejaría huérfanos. Desde la cruz, antes de morir, entregó a su Madre al discípulo amado y al discípulo a su Madre, y la Iglesia ha visto en ese gesto un regalo para todos. No eres huérfano en la fe. Si hoy llegas cansado, después de una caída o con la sensación de estar solo, recuerda que tienes una madre que te recibe sin reproches. El discípulo la llevó a su casa; tú también puedes hacerlo.",
+    "prayer": "Jesús, gracias por darme a tu Madre. María, recíbeme como hijo, con mis cansancios y mis caídas. Hoy te abro la puerta de mi casa y de mi corazón. Amén.",
+    "action": "Elige un momento tranquilo y confía tu día a María con tus propias palabras. Luego coloca su imagen en un lugar visible de tu casa o como fondo de pantalla del teléfono."
+   },
+   "en": {
+    "title": "Behold your mother",
+    "ref": "Jn 14:18",
+    "verse": "I will not leave you orphans; I will come to you.",
+    "reflection": "Jesus promised His friends that He would not leave them orphans. From the cross, before He died, He gave His Mother to the beloved disciple and the disciple to His Mother, and the Church has seen in that gesture a gift for all of us. You are not an orphan in the faith. If you arrive today tired, after a fall, or feeling alone, remember that you have a mother who welcomes you without reproach. The disciple took her into his home; you can do the same.",
+    "prayer": "Jesus, thank You for giving me Your Mother. Mary, welcome me as your child, with my weariness and my falls. Today I open the door of my home and my heart to you. Amen.",
+    "action": "Choose a quiet moment and entrust your day to Mary in your own words. Then place her image somewhere visible in your home or as the wallpaper on your phone."
+   }
+  },
+  {
+   "day": 25,
+   "feast": null,
+   "es": {
+    "title": "Creer cuando todo calla",
+    "ref": "Lc 1,45",
+    "verse": "Bienaventurada la que ha creído, porque lo que le ha dicho el Señor se cumplirá.",
+    "reflection": "Isabel llamó dichosa a María porque creyó. Esa fe se puso a prueba sobre todo después del Calvario, en el silencio del sepulcro. La tradición ha contemplado a María esperando, con fe firme, la mañana de la resurrección. Creer no siempre es sentir; a veces es seguir confiando cuando no hay respuestas. Si atraviesas una noche así, María conoce el camino.",
+    "prayer": "Virgen fiel, tú creíste cuando todo parecía terminado. Sostén mi fe en esta oscuridad y ayúdame a esperar la luz que Dios prepara, aunque todavía no la vea. Amén.",
+    "action": "Esta noche apaga las luces unos minutos, enciende con cuidado una vela si puedes y reza despacio el Credo. Detente en la frase que hoy más te cueste creer y entrégasela a Dios."
+   },
+   "en": {
+    "title": "Believing when everything is silent",
+    "ref": "Lk 1:45",
+    "verse": "Blessed are you who believed that what was spoken to you by the Lord would be fulfilled.",
+    "reflection": "Elizabeth called Mary blessed because she believed. That faith was tested above all after Calvary, in the silence of the tomb. Tradition has contemplated Mary waiting with steady faith for the morning of the resurrection. Believing is not always feeling; sometimes it is continuing to trust when there are no answers. If you are going through a night like that, Mary knows the way.",
+    "prayer": "Faithful Virgin, you believed when everything seemed finished. Hold up my faith in this darkness and help me wait for the light God is preparing, even if I can't see it yet. Amen.",
+    "action": "Tonight, turn off the lights for a few minutes, carefully light a candle if you can, and slowly pray the Creed. Pause on the phrase that is hardest to believe today and hand it over to God."
+   }
+  },
+  {
+   "day": 26,
+   "feast": {
+    "es": "San Felipe Neri",
+    "en": "Saint Philip Neri"
+   },
+   "es": {
+    "title": "Felipe Neri y la santidad alegre",
+    "ref": "Flp 4,4",
+    "verse": "Alegraos siempre en el Señor; os lo repito, alegraos.",
+    "reflection": "San Felipe Neri fue un sacerdote en la Roma del siglo XVI, conocido por su alegría, su buen humor y las largas horas que pasaba escuchando confesiones. Fundó la Congregación del Oratorio, donde reunía a laicos para orar, leer la Escritura y cantar. Tenía una gran devoción a María. Su vida recuerda que la santidad no es seriedad amarga: el corazón reconciliado con Dios se vuelve ligero.",
+    "prayer": "San Felipe Neri, amigo alegre de Dios, intercede por mí para que no pierda el buen humor en las dificultades. Señor, dame una alegría que nazca de saberme perdonado. Amén.",
+    "action": "Haz reír hoy a alguien que lo necesite con una broma amable, un recuerdo divertido o una sorpresa sencilla. Después da gracias a Dios por un momento alegre del día."
+   },
+   "en": {
+    "title": "Philip Neri and joyful holiness",
+    "ref": "Phil 4:4",
+    "verse": "Rejoice in the Lord always. I shall say it again: rejoice!",
+    "reflection": "Saint Philip Neri was a priest in sixteenth-century Rome, known for his joy, his sense of humor, and the long hours he spent hearing confessions. He founded the Congregation of the Oratory, where he gathered lay people to pray, read Scripture, and sing. He had a great devotion to Mary. His life reminds us that holiness is not bitter seriousness: a heart reconciled with God becomes light.",
+    "prayer": "Saint Philip Neri, joyful friend of God, pray for me that I may keep my good humor in hard times. Lord, give me a joy that comes from knowing I am forgiven. Amen.",
+    "action": "Make someone who needs it laugh today with a kind joke, a funny memory, or a simple surprise. Afterward, thank God for one joyful moment of your day."
+   }
+  },
+  {
+   "day": 27,
+   "feast": null,
+   "es": {
+    "title": "María en el Cenáculo",
+    "ref": "Hch 1,14",
+    "verse": "Todos ellos perseveraban unánimes en la oración, junto con algunas mujeres y María, la madre de Jesús, y con sus hermanos.",
+    "reflection": "Después de la Ascensión, los discípulos esperan el Espíritu prometido. No lo hacen dispersos ni solos: perseveran juntos en la oración, y María está en medio de ellos. La Madre de Jesús se vuelve madre de la Iglesia naciente. Esperar a Dios no es quedarse quieto; es orar con otros, sostenerse mutuamente y mantener la puerta abierta. Tu comunidad, con sus defectos, también es lugar de espera.",
+    "prayer": "María, Madre de la Iglesia, reúnenos en oración como en el Cenáculo. Enséñame a esperar al Espíritu junto a mis hermanos, sin aislarme ni desanimarme. Amén.",
+    "action": "Invita a alguien de tu familia o a un amigo a rezar contigo un misterio del Rosario, en persona o por teléfono. Si no es posible, únete hoy espiritualmente a la oración de tu parroquia."
+   },
+   "en": {
+    "title": "Mary in the Upper Room",
+    "ref": "Acts 1:14",
+    "verse": "All these devoted themselves with one accord to prayer, together with some women, and Mary the mother of Jesus, and his brothers.",
+    "reflection": "After the Ascension, the disciples wait for the promised Spirit. They do not wait scattered or alone: they persevere together in prayer, and Mary is among them. The Mother of Jesus becomes mother of the newborn Church. Waiting for God is not standing still; it is praying with others, holding each other up, and keeping the door open. Your community, flaws and all, is also a place of waiting.",
+    "prayer": "Mary, Mother of the Church, gather us in prayer as in the Upper Room. Teach me to wait for the Spirit together with my brothers and sisters, without isolating myself or losing heart. Amen.",
+    "action": "Invite a family member or friend to pray one mystery of the Rosary with you, in person or by phone. If that isn't possible, unite yourself in spirit today with the prayer of your parish."
+   }
+  },
+  {
+   "day": 28,
+   "feast": null,
+   "es": {
+    "title": "Llenos del Espíritu",
+    "ref": "Hch 2,4",
+    "verse": "Se llenaron todos de Espíritu Santo y empezaron a hablar en otras lenguas, según el Espíritu les concedía manifestarse.",
+    "reflection": "Llegó el día de Pentecostés y el Espíritu Santo llenó a todos los que oraban reunidos. María, que ya había sido cubierta por la sombra del Espíritu en Nazaret, lo recibe de nuevo junto a la Iglesia. El miedo se convierte en valentía y las palabras en anuncio. El mismo Espíritu que recibiste en el bautismo y la confirmación sigue vivo en ti, aunque a veces lo olvides.",
+    "prayer": "Ven, Espíritu Santo, llena mi corazón como llenaste a María y a los apóstoles. Enciende en mí el fuego de tu amor y dame valor para dar testimonio con sencillez. Amén.",
+    "action": "Reza despacio el «Ven, Espíritu Santo» y pide uno de sus dones para tu situación concreta: sabiduría, consejo, fortaleza o piedad. Escribe en tu cuaderno cuál pediste y por qué."
+   },
+   "en": {
+    "title": "Filled with the Spirit",
+    "ref": "Acts 2:4",
+    "verse": "And they were all filled with the holy Spirit and began to speak in different tongues, as the Spirit enabled them to proclaim.",
+    "reflection": "The day of Pentecost came, and the Holy Spirit filled all who were gathered in prayer. Mary, already overshadowed by the Spirit in Nazareth, receives Him again together with the Church. Fear becomes courage and words become proclamation. The same Spirit you received in baptism and confirmation is still alive in you, even when you forget it.",
+    "prayer": "Come, Holy Spirit, fill my heart as You filled Mary and the apostles. Kindle in me the fire of Your love and give me courage to bear witness simply. Amen.",
+    "action": "Slowly pray \"Come, Holy Spirit\" and ask for one of His gifts for your concrete situation: wisdom, counsel, fortitude, or piety. Write in your notebook which one you asked for and why."
+   }
+  },
+  {
+   "day": 29,
+   "feast": null,
+   "es": {
+    "title": "El Rosario, Evangelio en las manos",
+    "ref": "Col 3,16",
+    "verse": "La Palabra de Cristo habite entre vosotros en toda su riqueza; enseñaos unos a otros con toda sabiduría; exhortaos mutuamente. Cantad a Dios, dando gracias de corazón, con salmos, himnos y cánticos inspirados.",
+    "reflection": "Entramos en los últimos días del mes: aprender de María a vivir como ella. El Rosario es una forma sencilla de dejar que la palabra de Cristo habite en nosotros. Sus misterios gozosos, luminosos, dolorosos y gloriosos recorren la vida de Jesús con los ojos de su Madre. No importa si te distraes: la repetición serena es como un latido que sostiene la contemplación.",
+    "prayer": "Señor Jesús, que tu palabra habite en mí con abundancia. Que al rezar el Rosario con María aprenda a mirar tu vida y a dejar que transforme la mía. Amén.",
+    "action": "Elige el misterio del Rosario que más te hable hoy. Antes de rezar la decena, lee el pasaje del Evangelio que le corresponde y quédate un minuto en silencio imaginando la escena."
+   },
+   "en": {
+    "title": "The Rosary, the Gospel in your hands",
+    "ref": "Col 3:16",
+    "verse": "Let the word of Christ dwell in you richly, as in all wisdom you teach and admonish one another, singing psalms, hymns, and spiritual songs with gratitude in your hearts to God.",
+    "reflection": "We enter the last days of the month: learning from Mary how to live as she did. The Rosary is a simple way to let the word of Christ dwell in us. Its joyful, luminous, sorrowful, and glorious mysteries walk through the life of Jesus with the eyes of His Mother. It doesn't matter if you get distracted: the calm repetition is like a heartbeat that sustains contemplation.",
+    "prayer": "Lord Jesus, let Your word dwell richly in me. As I pray the Rosary with Mary, may I learn to look at Your life and let it transform mine. Amen.",
+    "action": "Choose the mystery of the Rosary that speaks to you most today. Before praying its decade, read the matching Gospel passage and stay one minute in silence imagining the scene."
+   }
+  },
+  {
+   "day": 30,
+   "feast": null,
+   "es": {
+    "title": "Como un niño en brazos de su madre",
+    "ref": "Sal 131,2",
+    "verse": "Sino que acallo y modero mis deseos, como un niño en brazos de su madre; como un niño saciado así está mi alma dentro de mí.",
+    "reflection": "Este salmo breve describe una paz que no nace de tenerlo todo resuelto, sino de dejarse sostener. Como un niño que descansa en brazos de su madre, el alma aprende a acallar la ansiedad. María vivió así: sin buscar grandezas, confiada en Dios. Imitar su humildad no es empequeñecerse, sino descansar. Si hoy cargas demasiadas preocupaciones, déjalas un rato en manos de Dios.",
+    "prayer": "Señor, no pretendo grandezas que me superan. Acallo mi corazón ante ti como un niño en brazos de su madre. Con María, me abandono a tu cuidado. Amén.",
+    "action": "Cuida hoy tu descanso: acuéstate media hora antes, deja el teléfono fuera del dormitorio y, ya en la cama, reza despacio el Salmo 131."
+   },
+   "en": {
+    "title": "Like a child in its mother's arms",
+    "ref": "Ps 131:2",
+    "verse": "Rather, I have stilled my soul, hushed it like a weaned child. Like a weaned child on its mother's lap, so is my soul within me.",
+    "reflection": "This short psalm describes a peace that does not come from having everything figured out but from letting yourself be held. Like a child resting with its mother, the soul learns to quiet its anxiety. Mary lived this way: not seeking great things, trusting in God. Imitating her humility does not mean making yourself small; it means resting. If you are carrying too many worries today, leave them in God's hands for a while.",
+    "prayer": "Lord, I do not reach for things too great for me. I quiet my heart before You like a child in its mother's arms. With Mary, I entrust myself to Your care. Amen.",
+    "action": "Take care of your rest today: go to bed half an hour earlier, leave your phone outside the bedroom, and once in bed, slowly pray Psalm 131."
+   }
+  },
+  {
+   "day": 31,
+   "feast": {
+    "es": "Visitación de la Virgen María",
+    "en": "Visitation of the Blessed Virgin Mary"
+   },
+   "es": {
+    "title": "La Visitación: dos madres que se alegran",
+    "ref": "Lc 1,41-42",
+    "verse": "Aconteció que, en cuanto Isabel oyó el saludo de María, saltó la criatura en su vientre. Se llenó Isabel de Espíritu Santo y, levantando la voz, exclamó: ¡Bendita tú entre las mujeres, y bendito el fruto de tu vientre!",
+    "reflection": "Cerramos el mes en casa de Isabel. Al oír el saludo de María, el niño salta de gozo en su seno e Isabel, llena del Espíritu Santo, la llama bendita entre las mujeres. María lleva a Jesús escondido y, con su sola presencia, trae alegría. Este es el resumen de todo mayo: escuchar como ella, servir como ella, creer como ella y llevar a Jesús a cada casa que visitemos.",
+    "prayer": "Virgen de la Visitación, que llevaste a Jesús a la casa de Isabel, acompáñame a llevarlo a los míos. Gracias por este mes caminando contigo. Sigue siendo mi Madre cada día. Amén.",
+    "action": "Visita o llama a una persona mayor de tu familia o de tu barrio. Antes del encuentro, reza un Avemaría por ella, y durante la conversación deja que te hable de su vida sin prisa."
+   },
+   "en": {
+    "title": "The Visitation: two mothers rejoicing",
+    "ref": "Lk 1:41-42",
+    "verse": "When Elizabeth heard Mary's greeting, the infant leaped in her womb, and Elizabeth, filled with the holy Spirit, cried out in a loud voice and said, Most blessed are you among women, and blessed is the fruit of your womb.",
+    "reflection": "We close the month in Elizabeth's house. At Mary's greeting the child leaps for joy in her womb, and Elizabeth, filled with the Holy Spirit, calls her blessed among women. Mary carries Jesus hidden within her, and her very presence brings joy. This sums up all of May: to listen like her, serve like her, believe like her, and bring Jesus to every home we visit.",
+    "prayer": "Virgin of the Visitation, you carried Jesus to Elizabeth's house; help me bring Him to my own people. Thank you for this month of walking with you. Remain my Mother every day. Amen.",
+    "action": "Visit or call an older person in your family or neighborhood. Before you meet, pray a Hail Mary for them, and during the conversation let them tell you about their life without rushing."
+   }
+  }
+ ]
+}

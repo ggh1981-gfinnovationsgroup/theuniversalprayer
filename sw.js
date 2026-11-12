@@ -3,7 +3,7 @@
    Offline support for precached and previously cached resources
    ===================================================== */
 
-const CACHE = 'tup-v299';
+const CACHE = 'tup-v300';
 const CRITICAL_CORE_URLS = new Set([
   '/assets/js/main.js',
   '/assets/js/menu.js',
@@ -129,6 +129,18 @@ const PRECACHE_URLS = [
   '/enemigos/index.html',
   '/meses/',
   '/meses/index.html',
+  '/data/meses/enero.json',
+  '/data/meses/febrero.json',
+  '/data/meses/marzo.json',
+  '/data/meses/abril.json',
+  '/data/meses/mayo.json',
+  '/data/meses/junio.json',
+  '/data/meses/julio.json',
+  '/data/meses/agosto.json',
+  '/data/meses/septiembre.json',
+  '/data/meses/octubre.json',
+  '/data/meses/noviembre.json',
+  '/data/meses/diciembre.json',
   '/musica/',
   '/musica/index.html',
   '/reconciliacion/',

@@ -1,0 +1,693 @@
+{
+ "key": "diciembre",
+ "es": {
+  "topic": "Adviento y Navidad",
+  "intro": "Diciembre es un mes de espera que desemboca en una sorpresa: Dios hecho niño. En las primeras semanas velamos con los profetas, con Juan el Bautista, con María y José, y preparamos el corazón con una confesión serena. Del 17 al 24 rezamos las antiguas antífonas «Oh», y en la Octava de Navidad contemplamos el pesebre, la familia y los mártires, hasta entregar el año en manos de Dios.",
+  "method": {
+   "title": "Cómo vivir este mes",
+   "steps": [
+    "Cada mañana lee despacio el versículo del día y deja que una sola palabra te acompañe hasta la noche.",
+    "Si puedes, prepara un rincón sencillo: una vela, una imagen de María o un pesebre que se irá completando.",
+    "Haz la acción del día sin perfeccionismo; si un día no puedes, retoma al siguiente sin culpas.",
+    "Del 17 al 24, repite la antífona «Oh» de cada jornada como una súplica breve: «Ven, Señor Jesús».",
+    "En la Octava de Navidad, vive la alegría con sencillez y recuerda a quienes pasan estas fiestas solos o en duelo."
+   ],
+   "prayer": "Señor Jesús, que vienes a nosotros en la humildad de Belén, te ofrezco este día con sus prisas, sus esperas y sus cansancios. Prepara mi corazón como preparaste el de María y el de José, para que sepa recibirte cuando llegues. Ven, Señor, no tardes. Amén.",
+   "closing": "María, Madre que esperaste en silencio, guarda lo que hoy viví y llévame de la mano hacia Belén. Amén."
+  }
+ },
+ "en": {
+  "topic": "Advent and Christmas",
+  "intro": "December is a month of waiting that opens onto a surprise: God made a child. In the first weeks we keep watch with the prophets, with John the Baptist, with Mary and Joseph, and we prepare our hearts with a peaceful confession. From the 17th to the 24th we pray the ancient “O” Antiphons, and in the Octave of Christmas we contemplate the manger, the family, and the martyrs, until we place the year in God's hands.",
+  "method": {
+   "title": "How to live this month",
+   "steps": [
+    "Each morning, slowly read the verse of the day and let a single word stay with you until night.",
+    "If you can, set up a simple corner: a candle, an image of Mary, or a Nativity scene you complete little by little.",
+    "Do the daily action without perfectionism; if you miss a day, pick up again the next without guilt.",
+    "From the 17th to the 24th, repeat each day's “O” Antiphon as a short plea: “Come, Lord Jesus.”",
+    "During the Octave of Christmas, live the joy simply and remember those who spend these days alone or grieving."
+   ],
+   "prayer": "Lord Jesus, You who come to us in the humility of Bethlehem, I offer You this day with its rushing, its waiting, and its weariness. Prepare my heart as You prepared the hearts of Mary and Joseph, so that I may welcome You when You come. Come, Lord, do not delay. Amen.",
+   "closing": "Mary, Mother who waited in silence, keep what I lived today and lead me by the hand toward Bethlehem. Amen."
+  }
+ },
+ "days": [
+  {
+   "day": 1,
+   "feast": null,
+   "es": {
+    "title": "Despiertos, pero sin miedo",
+    "ref": "Mc 13,33",
+    "verse": "Estad atentos, vigilad: pues no sabéis cuándo es el momento.",
+    "reflection": "El Adviento comienza con una palabra de Jesús: «Vigilad». No es una amenaza, sino una invitación a no vivir dormidos, arrastrados por la rutina y las prisas de fin de año. Vigilar es levantar la mirada y darte cuenta de que Alguien viene hacia ti. Quien espera a un amigo no está tenso, está atento. Este mes no se trata de hacer más cosas, sino de estar más presente en las que ya haces.",
+    "prayer": "Señor Jesús, que vienes a mi encuentro, despierta en mí una atención serena. Que no me pierda tu paso entre las prisas de estos días. Quiero esperarte con el corazón abierto, no con miedo. Amén.",
+    "action": "Prepara un pequeño rincón de Adviento: una vela, una imagen o simplemente un espacio despejado en tu mesa. Enciende la vela o detente allí un minuto y di: «Ven, Señor Jesús»."
+   },
+   "en": {
+    "title": "Awake, but not afraid",
+    "ref": "Mk 13:33",
+    "verse": "Be watchful! Be alert! You do not know when the time will come.",
+    "reflection": "Advent opens with a word from Jesus: “Be watchful.” It isn't a threat but an invitation not to sleepwalk through life, swept along by routine and the year-end rush. To keep watch is to lift your eyes and notice that Someone is coming toward you. A person waiting for a friend isn't tense, just attentive. This month isn't about doing more things, but about being more present in the things you already do.",
+    "prayer": "Lord Jesus, You who come to meet me, awaken in me a peaceful attentiveness. Don't let me miss Your steps amid the rush of these days. I want to wait for You with an open heart, not with fear. Amen.",
+    "action": "Set up a small Advent corner: a candle, an image, or simply a cleared space on your table. Light the candle or pause there for a minute and say: “Come, Lord Jesus.”"
+   }
+  },
+  {
+   "day": 2,
+   "feast": null,
+   "es": {
+    "title": "Espadas que se vuelven arados",
+    "ref": "Is 2,4",
+    "verse": "Juzgará entre las naciones, será árbitro de pueblos numerosos. De las espadas forjarán arados, de las lanzas, podaderas. No alzará la espada pueblo contra pueblo, no se adiestrarán para la guerra.",
+    "reflection": "Isaías sueña con un día en que las armas se convierten en herramientas para sembrar. Ese sueño no empieza en los grandes tratados, sino en la cocina, en el trabajo, en el chat familiar. Todos guardamos alguna espada: una respuesta cortante, un rencor que afilamos en silencio, una ironía que hiere. El Adviento te invita a transformar una de ellas en algo que haga crecer. La paz que viene con el Niño se prepara con gestos pequeños.",
+    "prayer": "Príncipe de la paz, mira las espadas que llevo escondidas en el corazón. Desármame con tu ternura y enséñame a convertir mis palabras duras en semillas de bien. Que mi casa sea un lugar donde se respire tu paz. Amén.",
+    "action": "Piensa en una conversación donde sueles responder con dureza. Hoy, antes de contestar, respira hondo y elige una frase amable o, simplemente, guarda silencio un momento más."
+   },
+   "en": {
+    "title": "Swords turned into plowshares",
+    "ref": "Is 2:4",
+    "verse": "He shall judge between the nations, and impose terms on many peoples. They shall beat their swords into plowshares and their spears into pruning hooks; One nation shall not raise the sword against another, nor shall they train for war again.",
+    "reflection": "Isaiah dreams of a day when weapons become tools for sowing. That dream doesn't begin with great treaties but in the kitchen, at work, in the family group chat. We all keep a sword or two: a cutting reply, a resentment we sharpen in silence, a sarcastic remark that wounds. Advent invites you to turn one of them into something that helps life grow. The peace that comes with the Child is prepared through small gestures.",
+    "prayer": "Prince of Peace, look at the swords I keep hidden in my heart. Disarm me with Your tenderness and teach me to turn my harsh words into seeds of good. Let my home be a place where Your peace can be felt. Amen.",
+    "action": "Think of a conversation where you tend to respond harshly. Today, before answering, take a deep breath and choose a kind sentence, or simply stay silent a moment longer."
+   }
+  },
+  {
+   "day": 3,
+   "feast": {
+    "es": "San Francisco Javier",
+    "en": "Saint Francis Xavier"
+   },
+   "es": {
+    "title": "Un corazón que no cabía en un mapa",
+    "ref": "Mc 16,15",
+    "verse": "Y les dijo: Id al mundo entero y proclamad el Evangelio a toda la creación.",
+    "reflection": "San Francisco Javier fue uno de los primeros compañeros de san Ignacio de Loyola y llevó el Evangelio a la India, a Japón y a otras tierras de Asia. Viajó en condiciones durísimas y murió cerca de las costas de China, deseando todavía anunciar a Cristo. Su celo no nacía de la ambición, sino del amor: no podía guardarse la alegría de haber sido encontrado. Tú también tienes un pequeño mundo a tu alrededor: tu familia, tus compañeros, tu barrio.",
+    "prayer": "San Francisco Javier, patrono de las misiones, intercede por todos los que anuncian a Jesús lejos de su tierra. Enciende en mí un deseo sencillo de compartir la fe con alegría, sin imponer y sin avergonzarme. Amén.",
+    "action": "Reza un padrenuestro por los misioneros. Luego envía a alguien un mensaje breve de esperanza, sin sermones: una palabra que le recuerde que Dios lo quiere."
+   },
+   "en": {
+    "title": "A heart too big for any map",
+    "ref": "Mk 16:15",
+    "verse": "He said to them, Go into the whole world and proclaim the gospel to every creature.",
+    "reflection": "Saint Francis Xavier was one of the first companions of Saint Ignatius of Loyola and carried the Gospel to India, Japan, and other lands of Asia. He traveled in very harsh conditions and died near the coast of China, still longing to proclaim Christ. His zeal was not born of ambition but of love: he couldn't keep to himself the joy of having been found. You too have a little world around you: your family, your coworkers, your neighborhood.",
+    "prayer": "Saint Francis Xavier, patron of the missions, pray for all who proclaim Jesus far from their homeland. Kindle in me a simple desire to share the faith with joy, without imposing and without being ashamed. Amen.",
+    "action": "Pray an Our Father for missionaries. Then send someone a short message of hope, no sermons: a word reminding them that God loves them."
+   }
+  },
+  {
+   "day": 4,
+   "feast": null,
+   "es": {
+    "title": "No estás olvidado",
+    "ref": "Is 49,15",
+    "verse": "¿Puede una madre olvidar al niño que amamanta, no tener compasión del hijo de sus entrañas? Pues, aunque ella se olvidara, yo no te olvidaré.",
+    "reflection": "A un pueblo que se sentía abandonado, Dios le responde con una imagen de madre: aunque una madre olvidara a su hijo, yo no te olvidaré. Quizá llegas a diciembre con una herida abierta: una pérdida, un diagnóstico, una relación rota, una mesa donde este año faltará alguien. Las luces de las calles pueden doler más que alegrar. Dios no te pide que finjas felicidad. Te mira con ternura de madre y te dice que no estás olvidado.",
+    "prayer": "Dios de todo consuelo, tú conoces lo que me pesa en estos días. No tengo que fingir contigo. Háblame al corazón, abrázame en mi tristeza y pon cerca de mí a alguien que me acompañe. Amén.",
+    "action": "Si estás viviendo un duelo o una tristeza, escribe en un cuaderno lo que sientes, sin corregirlo, y ofrécelo a Dios. Si estás bien, piensa en alguien que sufre y llámalo solo para escucharlo."
+   },
+   "en": {
+    "title": "You are not forgotten",
+    "ref": "Is 49:15",
+    "verse": "Can a mother forget her infant, be without tenderness for the child of her womb? Even should she forget, I will never forget you.",
+    "reflection": "To a people who felt abandoned, God answers with the image of a mother: even should a mother forget her child, I will never forget you. Maybe you arrive at December with an open wound: a loss, a diagnosis, a broken relationship, a table where someone will be missing this year. The lights in the streets can hurt more than they cheer. God doesn't ask you to fake happiness. He looks at you with a mother's tenderness and tells you that you are not forgotten.",
+    "prayer": "God of all comfort, You know what weighs on me these days. I don't have to pretend with You. Speak to my heart, hold me in my sadness, and place someone near me to walk with me. Amen.",
+    "action": "If you are grieving or feeling sad, write in a notebook what you feel, without correcting it, and offer it to God. If you are doing well, think of someone who is suffering and call just to listen."
+   }
+  },
+  {
+   "day": 5,
+   "feast": null,
+   "es": {
+    "title": "Cuando diciembre aprieta el bolsillo",
+    "ref": "Mt 6,34",
+    "verse": "Por tanto, no os agobiéis por el mañana, porque el mañana traerá su propio agobio. A cada día le basta su desgracia.",
+    "reflection": "Diciembre puede llenarse de cuentas, regalos que se esperan y comparaciones que agotan. Jesús conoce esa angustia y no la desprecia: invita a vivir el hoy sin cargar el peso de todos los mañanas. La Navidad no se mide por lo que gastas. El primer pesebre fue pobre y, sin embargo, allí estaba todo. Si este año te toca apretarte, no tienes que avergonzarte: el amor puede expresarse con tiempo, palabras y presencia.",
+    "prayer": "Padre bueno, tú sabes lo que necesito antes de que te lo pida. Libérame de la ansiedad por el dinero y de la presión de aparentar. Dame un corazón sencillo y creativo para amar a los míos con lo que tengo. Amén.",
+    "action": "Haz una lista sencilla de lo que de verdad puedes gastar en estas fiestas y respétala. Piensa en un regalo que no cueste dinero: una carta, una comida compartida o una tarde juntos."
+   },
+   "en": {
+    "title": "When December squeezes your wallet",
+    "ref": "Mt 6:34",
+    "verse": "Do not worry about tomorrow; tomorrow will take care of itself. Sufficient for a day is its own evil.",
+    "reflection": "December can fill up with bills, expected gifts, and exhausting comparisons. Jesus knows that anxiety and doesn't dismiss it: He invites us to live today without carrying the weight of every tomorrow. Christmas isn't measured by what you spend. The first manger was poor, and yet everything was there. If money is tight this year, there's no need for shame: love can be expressed through time, words, and presence.",
+    "prayer": "Good Father, You know what I need before I ask. Free me from anxiety about money and from the pressure to keep up appearances. Give me a simple, creative heart to love my own with what I have. Amen.",
+    "action": "Make a simple list of what you can truly spend this season and stick to it. Think of a gift that costs no money: a letter, a shared meal, or an afternoon together."
+   }
+  },
+  {
+   "day": 6,
+   "feast": {
+    "es": "San Nicolás",
+    "en": "Saint Nicholas"
+   },
+   "es": {
+    "title": "El obispo de los regalos escondidos",
+    "ref": "Mt 6,3-4",
+    "verse": "Tú, en cambio, cuando hagas limosna, que no sepa tu mano izquierda lo que hace tu derecha; así tu limosna quedará en secreto y tu Padre, que ve en lo secreto, te recompensará.",
+    "reflection": "San Nicolás fue obispo de Mira, en la actual Turquía, y su fama de generosidad ha cruzado los siglos. La tradición cuenta que ayudó en secreto a una familia pobre dejando monedas de noche, para no humillarla. De esa memoria nacieron muchas costumbres navideñas de regalos. Lo hermoso de su ejemplo no es la cantidad, sino la delicadeza: dar sin que el otro tenga que agradecer, sin buscar aplausos, como el Padre que ve en lo secreto.",
+    "prayer": "San Nicolás, amigo de los pobres y de los niños, enséñame a dar con discreción y alegría. Que mi generosidad no busque reconocimiento, sino el bien del otro. Amén.",
+    "action": "Haz un gesto de generosidad anónimo: deja una nota amable, paga en silencio algo pequeño para alguien o haz un donativo discreto. No se lo cuentes a nadie."
+   },
+   "en": {
+    "title": "The bishop of hidden gifts",
+    "ref": "Mt 6:3-4",
+    "verse": "But when you give alms, do not let your left hand know what your right is doing, so that your almsgiving may be secret. And your Father who sees in secret will repay you.",
+    "reflection": "Saint Nicholas was bishop of Myra, in present-day Turkey, and his reputation for generosity has crossed the centuries. Tradition tells that he secretly helped a poor family by leaving coins at night, so as not to humiliate them. Many Christmas gift customs grew from that memory. The beauty of his example lies not in the amount but in the delicacy: giving without the other needing to thank you, without seeking applause, like the Father who sees in secret.",
+    "prayer": "Saint Nicholas, friend of the poor and of children, teach me to give with discretion and joy. May my generosity seek not recognition but the good of the other. Amen.",
+    "action": "Make an anonymous gesture of generosity: leave a kind note, quietly pay for something small for someone, or make a discreet donation. Don't tell anyone."
+   }
+  },
+  {
+   "day": 7,
+   "feast": null,
+   "es": {
+    "title": "Allanar un tramo del sendero",
+    "ref": "Mc 1,3",
+    "verse": "voz del que grita en el desierto: “Preparad el camino del Señor, enderezad sus senderos”…",
+    "reflection": "Juan el Bautista aparece en el desierto con un mensaje claro: preparen el camino del Señor. Preparar no es hacerlo todo perfecto, sino quitar algunas piedras. Quizá hay en tu vida un obstáculo concreto que te hace tropezar siempre en el mismo lugar: una aplicación, una hora de la noche, una compañía, un lugar. No tienes que vencerlo todo hoy. Basta con allanar un tramo del sendero para que Jesús entre con más facilidad.",
+    "prayer": "Señor, que enviaste a Juan para preparar tu llegada, muéstrame con claridad qué piedra debo quitar del camino. Dame valentía para un paso pequeño y paciencia conmigo mismo. Ven a mi desierto. Amén.",
+    "action": "Identifica una ocasión que suele llevarte a caer y toma una medida práctica: mueve una aplicación, cambia una rutina nocturna o pide a alguien de confianza que te acompañe en ese momento."
+   },
+   "en": {
+    "title": "Clearing a stretch of the path",
+    "ref": "Mk 1:3",
+    "verse": "A voice of one crying out in the desert: 'Prepare the way of the Lord, make straight his paths.'",
+    "reflection": "John the Baptist appears in the desert with a clear message: prepare the way of the Lord. Preparing doesn't mean making everything perfect, but removing a few stones. Perhaps there's a concrete obstacle in your life that makes you stumble in the same place again and again: an app, a late hour of the night, certain company, a place. You don't have to conquer everything today. It's enough to clear one stretch of the path so that Jesus can come in more easily.",
+    "prayer": "Lord, You sent John to prepare for Your coming. Show me clearly which stone I need to remove from the path. Give me courage for one small step and patience with myself. Come into my desert. Amen.",
+    "action": "Identify a situation that usually leads you to fall and take one practical measure: move an app, change a nighttime routine, or ask someone you trust to support you at that time."
+   }
+  },
+  {
+   "day": 8,
+   "feast": {
+    "es": "Inmaculada Concepción de la Virgen María",
+    "en": "Immaculate Conception of the Blessed Virgin Mary"
+   },
+   "es": {
+    "title": "Llena de gracia desde el principio",
+    "ref": "Lc 1,28",
+    "verse": "El ángel, entrando en su presencia, dijo: «Alégrate, llena de gracia, el Señor está contigo».",
+    "reflection": "Hoy celebramos que María fue preservada del pecado original desde el primer instante de su concepción, por pura gracia y en previsión de los méritos de Cristo. No se trata de la concepción de Jesús, sino de la de María en el seno de su madre. Dios preparó una morada limpia para su Hijo. Esta fiesta no nos aleja de ella: nos muestra lo que la gracia puede hacer y lo que Dios sueña también para nosotros, que somos sanados poco a poco.",
+    "prayer": "María Inmaculada, llena de gracia, mira mi corazón tan necesitado de limpieza. Ruega por mí para que confíe en la gracia que también a mí me alcanza. Enséñame a decir sí a Dios como tú. Amén.",
+    "action": "Reza despacio un avemaría, deteniéndote en las palabras «llena de gracia». Participa en la Misa de esta solemnidad, que en muchos países es de precepto; si de verdad no puedes, lee en silencio el relato de la Anunciación en Lucas 1,26-38."
+   },
+   "en": {
+    "title": "Full of grace from the beginning",
+    "ref": "Lk 1:28",
+    "verse": "And coming to her, he said, \"Hail, favored one! The Lord is with you.\"",
+    "reflection": "Today we celebrate that Mary was preserved from original sin from the first moment of her conception, by pure grace and in view of the merits of Christ. This is not the conception of Jesus, but Mary's own conception in her mother's womb. God prepared a pure dwelling for His Son. This feast doesn't distance us from her: it shows what grace can do and what God dreams for us too, as we are healed little by little.",
+    "prayer": "Immaculate Mary, full of grace, look upon my heart that so needs cleansing. Pray for me, that I may trust in the grace that reaches me too. Teach me to say yes to God as you did. Amen.",
+    "action": "Slowly pray a Hail Mary, pausing on the words “full of grace.” Take part in Mass for this solemnity, a holy day of obligation in many countries; if you truly cannot, quietly read the account of the Annunciation in Luke 1:26-38."
+   }
+  },
+  {
+   "day": 9,
+   "feast": {
+    "es": "San Juan Diego",
+    "en": "Saint Juan Diego"
+   },
+   "es": {
+    "title": "Elegido entre los pequeños",
+    "ref": "1 Cor 1,27",
+    "verse": "sino que, lo necio del mundo lo ha escogido Dios para humillar a los sabios, y lo débil del mundo lo ha escogido Dios para humillar lo poderoso.",
+    "reflection": "San Juan Diego era un indígena laico y sencillo que vivía en el valle de México. La tradición cuenta que la Virgen se le apareció en el cerro del Tepeyac y le confió un mensaje para el obispo. Él se sentía poca cosa y pidió que enviaran a alguien más importante. Pero Dios suele escoger precisamente a quienes se creen insuficientes. Si alguna vez has pensado que no sirves para las cosas de Dios, este santo te dice lo contrario.",
+    "prayer": "San Juan Diego, mensajero humilde, intercede por mí cuando me sienta pequeño o incapaz. Que no me esconda detrás de mis límites, sino que confíe en que Dios puede obrar a través de mí. Amén.",
+    "action": "Piensa en una tarea que has evitado porque crees que no estás a la altura: un perdón, una ayuda, una conversación. Da hoy el primer paso, por pequeño que sea, y ofréceselo a Dios."
+   },
+   "en": {
+    "title": "Chosen among the little ones",
+    "ref": "1 Cor 1:27",
+    "verse": "Rather, God chose the foolish of the world to shame the wise, and God chose the weak of the world to shame the strong…",
+    "reflection": "Saint Juan Diego was a simple Indigenous layman who lived in the Valley of Mexico. Tradition tells that the Virgin appeared to him on the hill of Tepeyac and entrusted him with a message for the bishop. He felt insignificant and asked that someone more important be sent. But God often chooses precisely those who feel inadequate. If you've ever thought you're not cut out for the things of God, this saint tells you otherwise.",
+    "prayer": "Saint Juan Diego, humble messenger, pray for me when I feel small or incapable. Let me not hide behind my limits, but trust that God can work through me. Amen.",
+    "action": "Think of a task you've avoided because you feel you're not up to it: an act of forgiveness, some help, a conversation. Take the first step today, however small, and offer it to God."
+   }
+  },
+  {
+   "day": 10,
+   "feast": null,
+   "es": {
+    "title": "Quitarse el vestido de luto",
+    "ref": "Bar 5,1",
+    "verse": "Jerusalén, despójate del vestido de luto y aflicción que llevas, y vístete las galas perpetuas de la gloria que Dios te concede.",
+    "reflection": "Baruc habla a una ciudad que ha llorado mucho y le dice algo sorprendente: quítate el vestido de luto y vístete de la belleza que Dios te da. No es una orden para olvidar a quienes perdiste ni para dejar de sentir. Es una promesa de que el dolor no tendrá la última palabra. Si esta será tu primera Navidad sin alguien amado, puedes llevar a la vez lágrimas y esperanza. Dios no te apura; te acompaña a tu ritmo.",
+    "prayer": "Señor de la vida, pongo en tus manos a quienes ya no están en mi mesa. Dales tu luz y tu paz. Y a mí, que todavía los extraño, vísteme poco a poco de esperanza, sin prisa y sin olvido. Amén.",
+    "action": "Enciende una vela o detente un momento frente a la foto de un ser querido difunto. Reza por él o por ella un padrenuestro y da gracias a Dios por un recuerdo concreto que te dejó."
+   },
+   "en": {
+    "title": "Taking off the robe of mourning",
+    "ref": "Bar 5:1",
+    "verse": "Jerusalem, take off your robe of mourning and misery; put on the splendor of glory from God forever…",
+    "reflection": "Baruch speaks to a city that has wept a great deal and tells it something surprising: take off your robe of mourning and put on the splendor God gives you. This isn't a command to forget those you've lost or to stop feeling. It's a promise that sorrow will not have the last word. If this will be your first Christmas without someone you love, you can carry tears and hope at the same time. God doesn't rush you; He walks at your pace.",
+    "prayer": "Lord of life, I place in Your hands those who are no longer at my table. Give them Your light and Your peace. And clothe me, who still miss them, little by little in hope, without haste and without forgetting. Amen.",
+    "action": "Light a candle or pause before a photo of a loved one who has died. Pray an Our Father for them and thank God for one specific memory they left you."
+   }
+  },
+  {
+   "day": 11,
+   "feast": null,
+   "es": {
+    "title": "La paciencia del labrador",
+    "ref": "Sant 5,7",
+    "verse": "Por tanto, hermanos, esperad con paciencia hasta la venida del Señor. Mirad: el labrador aguarda el fruto precioso de la tierra, es- perando con paciencia hasta que recibe la lluvia temprana y la tardía.",
+    "reflection": "Santiago pone un ejemplo del campo: el labrador siembra y espera, sin arrancar la planta cada día para ver si crece. Así obra Dios en nosotros. Tal vez llevas tiempo luchando contra la misma debilidad y hoy volviste a caer. No significa que nada haya cambiado. Bajo tierra hay raíces que no ves. La paciencia que Dios tiene contigo es la que estás invitado a tener contigo mismo: levantarte, pedir perdón y seguir sembrando.",
+    "prayer": "Señor de la cosecha, dame tu paciencia conmigo mismo. Cuando caiga, que no me desespere; cuando el fruto tarde, que siga confiando. Tú terminas lo que empezaste en mí. Amén.",
+    "action": "Si te sientes desanimado por una caída, escribe en un cuaderno un pequeño avance que sí has visto este año. Luego di despacio: «Señor, sigue trabajando en mí»."
+   },
+   "en": {
+    "title": "The farmer's patience",
+    "ref": "Jas 5:7",
+    "verse": "Be patient, therefore, brothers, until the coming of the Lord. See how the farmer waits for the precious fruit of the earth, being patient with it until it receives the early and the late rains.",
+    "reflection": "James gives an example from the fields: the farmer sows and waits, without pulling up the plant every day to see whether it's growing. That's how God works in us. Maybe you've been struggling with the same weakness for a long time, and today you fell again. That doesn't mean nothing has changed. Underground there are roots you can't see. The patience God has with you is the patience you're invited to have with yourself: get up, ask forgiveness, and keep sowing.",
+    "prayer": "Lord of the harvest, give me Your patience with myself. When I fall, let me not despair; when the fruit is slow, let me keep trusting. You will complete what You began in me. Amen.",
+    "action": "If you feel discouraged by a fall, write in a notebook one small step forward you have seen this year. Then slowly say: “Lord, keep working in me.”"
+   }
+  },
+  {
+   "day": 12,
+   "feast": {
+    "es": "Nuestra Señora de Guadalupe",
+    "en": "Our Lady of Guadalupe"
+   },
+   "es": {
+    "title": "La Madre que se hizo cercana",
+    "ref": "Ap 12,1",
+    "verse": "Un gran signo apareció en el cielo: una mujer vestida del sol, y la luna bajo sus pies y una corona de doce estrellas sobre su cabeza…",
+    "reflection": "Según la tradición, Nuestra Señora de Guadalupe se presentó a Juan Diego con rostro moreno, hablándole en su propia lengua y llamándolo con ternura. Su imagen, con el manto de estrellas y el sol detrás, recuerda a la mujer vestida de sol del Apocalipsis. Sobre todo, recuerda que María viene como madre: no para imponer, sino para acercarnos a su Hijo. A millones de personas, especialmente a los pobres y a los migrantes, les dice que no están solos.",
+    "prayer": "Nuestra Señora de Guadalupe, Madre de las Américas, cúbreme con tu manto. Cuida a los migrantes, a los pobres y a las familias divididas. Llévame a Jesús, el fruto bendito de tu vientre. Amén.",
+    "action": "Reza un misterio del Rosario por los migrantes y por las familias separadas por la distancia. Si conoces a alguien que vive lejos de su tierra, envíale un saludo cariñoso."
+   },
+   "en": {
+    "title": "The Mother who came close",
+    "ref": "Rv 12:1",
+    "verse": "A great sign appeared in the sky, a woman clothed with the sun, with the moon under her feet, and on her head a crown of twelve stars.",
+    "reflection": "According to tradition, Our Lady of Guadalupe appeared to Juan Diego with a dark-skinned face, speaking to him in his own language and calling him tenderly. Her image, with its mantle of stars and the sun behind her, recalls the woman clothed with the sun in Revelation. Above all, it reminds us that Mary comes as a mother: not to impose, but to bring us close to her Son. To millions of people, especially the poor and migrants, she says they are not alone.",
+    "prayer": "Our Lady of Guadalupe, Mother of the Americas, cover me with your mantle. Watch over migrants, the poor, and divided families. Lead me to Jesus, the blessed fruit of your womb. Amen.",
+    "action": "Pray a decade of the Rosary for migrants and for families separated by distance. If you know someone living far from their homeland, send them a warm greeting."
+   }
+  },
+  {
+   "day": 13,
+   "feast": {
+    "es": "Santa Lucía",
+    "en": "Saint Lucy"
+   },
+   "es": {
+    "title": "Una luz en los días más oscuros",
+    "ref": "Mt 5,14",
+    "verse": "Vosotros sois la luz del mundo. No se puede ocultar una ciudad puesta en lo alto de un monte.",
+    "reflection": "Santa Lucía fue una joven cristiana de Siracusa, en Sicilia, que dio su vida por Cristo en tiempos de persecución. Su nombre evoca la luz, y por eso su fiesta, en pleno invierno del norte, se celebra en muchos lugares con velas. Jesús no nos pide que intentemos ser luz: afirma que ya lo somos. No es una exigencia agotadora, sino reflejar lo que hemos recibido. Una palabra amable o una presencia fiel pueden iluminar más de lo que imaginas.",
+    "prayer": "Santa Lucía, testigo valiente, intercede por mí para que mis ojos vean con fe y mi vida refleje la luz de Cristo. Protege también a quienes sufren de la vista y a los que atraviesan días oscuros. Amén.",
+    "action": "Regala descanso a tus ojos: aparta las pantallas veinte minutos y, si puedes, mira por la ventana o sal a recibir la luz del día. Reza por alguien que atraviesa un momento oscuro."
+   },
+   "en": {
+    "title": "A light in the darkest days",
+    "ref": "Mt 5:14",
+    "verse": "You are the light of the world. A city set on a mountain cannot be hidden.",
+    "reflection": "Saint Lucy was a young Christian woman from Syracuse, in Sicily, who gave her life for Christ in a time of persecution. Her name evokes light, which is why her feast, in the depth of the northern winter, is celebrated in many places with candles. Jesus doesn't ask us to try to be light: He says we already are. It isn't an exhausting demand but a matter of reflecting what we have received. A kind word or a faithful presence can shine more than you imagine.",
+    "prayer": "Saint Lucy, courageous witness, pray for me that my eyes may see with faith and my life may reflect the light of Christ. Protect also those who suffer from eye problems and those going through dark days. Amen.",
+    "action": "Give your eyes some rest: put screens away for twenty minutes and, if you can, look out a window or step outside into the daylight. Pray for someone going through a dark time."
+   }
+  },
+  {
+   "day": 14,
+   "feast": {
+    "es": "San Juan de la Cruz",
+    "en": "Saint John of the Cross"
+   },
+   "es": {
+    "title": "Confiar cuando no se ve nada",
+    "ref": "Is 50,10",
+    "verse": "Quien de vosotros teme al Señor y escucha la voz de su siervo, aunque camine en tinieblas, sin ninguna claridad, que confíe en el nombre del Señor, que se apoye en su Dios.",
+    "reflection": "San Juan de la Cruz fue un fraile carmelita que, junto con santa Teresa de Jesús, impulsó la reforma del Carmelo. Fue encarcelado por sus propios hermanos y, en aquella celda oscura, escribió algunos de los poemas más bellos de la lengua española. Enseñó que hay noches en que Dios parece ausente, pero está obrando en lo hondo. Si tu oración está seca y no sientes nada, no estás fallando: quizá Dios te está purificando en silencio.",
+    "prayer": "Señor, cuando camino a oscuras y no siento tu presencia, sostén mi confianza. Que no busque solo tus consuelos, sino a ti mismo. Por intercesión de san Juan de la Cruz, enséñame a amarte en la noche. Amén.",
+    "action": "Dedica diez minutos al silencio, sin pedir nada ni esperar sentir algo. Solo permanece ante Dios y di de vez en cuando: «Aquí estoy, Señor, aunque no te sienta»."
+   },
+   "en": {
+    "title": "Trusting when you can't see",
+    "ref": "Is 50:10",
+    "verse": "Who among you fears the LORD, heeds his servant's voice, And walks in darkness without any light, Trusting in the name of the LORD and relying on his God?",
+    "reflection": "Saint John of the Cross was a Carmelite friar who, together with Saint Teresa of Avila, worked for the reform of the Carmelite order. He was imprisoned by his own brothers, and in that dark cell he wrote some of the most beautiful poems in the Spanish language. He taught that there are nights when God seems absent yet is working in the depths. If your prayer feels dry and you sense nothing, you are not failing: perhaps God is purifying you in silence.",
+    "prayer": "Lord, when I walk in darkness and can't feel Your presence, uphold my trust. Let me seek not only Your consolations but You Yourself. Through the intercession of Saint John of the Cross, teach me to love You in the night. Amen.",
+    "action": "Spend ten minutes in silence, asking for nothing and not expecting to feel anything. Simply remain before God, saying now and then: “Here I am, Lord, even if I can't feel You.”"
+   }
+  },
+  {
+   "day": 15,
+   "feast": null,
+   "es": {
+    "title": "Una confesión antes de Belén",
+    "ref": "1 Jn 1,9",
+    "verse": "Pero, si confesamos nuestros pecados, él, que es fiel y justo, nos perdonará los pecados y nos limpiará de toda injusticia.",
+    "reflection": "Antes de una visita importante solemos ordenar la casa. El sacramento de la Reconciliación se parece a eso, pero con una diferencia: no limpias tú solo, es Jesús quien entra y hace nueva la casa. San Juan lo dice con sencillez: si confesamos, él es fiel y perdona. No hace falta llegar con una lista perfecta ni con miedo. Basta la verdad y el deseo de volver. La Navidad se vive distinto con el corazón aliviado.",
+    "prayer": "Jesús misericordioso, quiero prepararme para tu llegada con un corazón sincero. Quita de mí el miedo y la vergüenza que me alejan de la confesión. Gracias porque tu perdón es más grande que mis caídas. Amén.",
+    "action": "Busca el horario de confesiones de tu parroquia para estos días y apúntalo. Haz un examen breve y sereno de cinco minutos, sin agobiarte, y elige el día en que irás."
+   },
+   "en": {
+    "title": "A confession before Bethlehem",
+    "ref": "1 Jn 1:9",
+    "verse": "If we acknowledge our sins, he is faithful and just and will forgive our sins and cleanse us from every wrongdoing.",
+    "reflection": "Before an important visit, we usually tidy up the house. The sacrament of Reconciliation is something like that, but with a difference: you don't clean alone; Jesus Himself comes in and makes the house new. Saint John puts it simply: if we confess, He is faithful and forgives. You don't need to arrive with a perfect list or with fear. Truth and the desire to return are enough. Christmas feels different with a lighter heart.",
+    "prayer": "Merciful Jesus, I want to prepare for Your coming with a sincere heart. Take away the fear and shame that keep me from confession. Thank You, because Your forgiveness is greater than my falls. Amen.",
+    "action": "Look up your parish's confession times for these days and write them down. Make a brief, peaceful five-minute examination, without anxiety, and choose the day you will go."
+   }
+  },
+  {
+   "day": 16,
+   "feast": null,
+   "es": {
+    "title": "José, el hombre que no hizo ruido",
+    "ref": "Mt 1,20",
+    "verse": "Pero, apenas había tomado esta resolución, se le apareció en sueños un ángel del Señor que le dijo: José, hijo de David, no temas acoger a María, tu mujer, porque la criatura que hay en ella viene del Espíritu Santo.",
+    "reflection": "José tenía planes sensatos y, de pronto, todo cambió. No entendía del todo lo que pasaba, pero escuchó la voz de Dios en la noche y dijo sí sin pronunciar una sola palabra en el Evangelio. Acogió a María, cuidó al Niño, trabajó con sus manos. Muchos padres, abuelos y trabajadores viven así estos días: cansados, preocupados por llegar a fin de mes, pero fieles. José les recuerda que Dios confía en el amor silencioso.",
+    "prayer": "San José, custodio de la Sagrada Familia, ruega por los que cargan con preocupaciones que no cuentan a nadie. Enséñame a no tener miedo de acoger los planes de Dios, aunque no los entienda del todo. Amén.",
+    "action": "Agradece a alguien que trabaja sin hacer ruido por ti o por tu familia: díselo en persona, con una nota o con un gesto concreto de ayuda en sus tareas."
+   },
+   "en": {
+    "title": "Joseph, the man who made no noise",
+    "ref": "Mt 1:20",
+    "verse": "Such was his intention when, behold, the angel of the Lord appeared to him in a dream and said, Joseph, son of David, do not be afraid to take Mary your wife into your home. For it is through the holy Spirit that this child has been conceived in her.",
+    "reflection": "Joseph had sensible plans, and suddenly everything changed. He didn't fully understand what was happening, but he heard God's voice in the night and said yes without speaking a single word in the Gospel. He took Mary into his home, cared for the Child, and worked with his hands. Many parents, grandparents, and workers live these days the same way: tired, worried about making ends meet, yet faithful. Joseph reminds them that God trusts in quiet love.",
+    "prayer": "Saint Joseph, guardian of the Holy Family, pray for those who carry worries they tell no one about. Teach me not to be afraid of welcoming God's plans, even when I don't fully understand them. Amen.",
+    "action": "Thank someone who works quietly for you or your family: tell them in person, with a note, or with a concrete gesture of help in their tasks."
+   }
+  },
+  {
+   "day": 17,
+   "feast": null,
+   "es": {
+    "title": "Oh Sabiduría",
+    "ref": "Eclo 24,3",
+    "verse": "Yo salí de la boca del Altísimo, y como niebla cubrí la tierra.",
+    "reflection": "Hoy comienzan las antífonas «Oh», que la Iglesia canta en las vísperas de los últimos días antes de Navidad. La primera llama a Jesús Sabiduría salida de la boca del Altísimo, que lo ordena todo con fuerza y suavidad. Cuántas veces quisiéramos entenderlo todo antes de decidir. La sabiduría de Dios no consiste en saberlo todo, sino en saber amar en cada situación. Puedes pedirla para eso que hoy te inquieta.",
+    "prayer": "Oh Sabiduría, que saliste de la boca del Altísimo y lo gobiernas todo con firmeza y ternura, ven a enseñarme el camino de la prudencia. Ilumina la decisión que hoy me preocupa. Amén.",
+    "action": "Piensa en una decisión pendiente. Escribe en una hoja dos opciones y pregúntate ante cada una: ¿cuál me deja más paz y más amor? Pide luz al Espíritu Santo antes de elegir."
+   },
+   "en": {
+    "title": "O Wisdom",
+    "ref": "Sir 24:3",
+    "verse": "From the mouth of the Most High I came forth, and mistlike covered the earth.",
+    "reflection": "Today the “O” Antiphons begin, which the Church sings at Evening Prayer in the final days before Christmas. The first calls Jesus the Wisdom that came forth from the mouth of the Most High, ordering all things mightily and sweetly. How often we'd like to understand everything before deciding. God's wisdom is not knowing it all, but knowing how to love in each situation. You can ask for it in whatever is troubling you today.",
+    "prayer": "O Wisdom, who came forth from the mouth of the Most High and govern all things with strength and tenderness, come and teach me the way of prudence. Shed light on the decision that worries me today. Amen.",
+    "action": "Think of a decision you've been putting off. Write two options on a sheet of paper and ask of each: which leaves me with more peace and more love? Ask the Holy Spirit for light before choosing."
+   }
+  },
+  {
+   "day": 18,
+   "feast": null,
+   "es": {
+    "title": "Oh Adonai, que ves la opresión",
+    "ref": "Ex 3,7",
+    "verse": "El Señor le dijo: He visto la opresión de mi pueblo en Egipto y he oído sus quejas contra los opresores; conozco sus sufrimientos.",
+    "reflection": "La segunda antífona llama a Jesús Adonai, el Señor que se apareció a Moisés en la zarza ardiente y le dio la ley en el Sinaí. Ese Dios dice: he visto la opresión de mi pueblo, conozco sus sufrimientos. No es indiferente a tus cadenas, sean una adicción, una deuda, una relación que te ahoga o un miedo antiguo. La antífona suplica: ven a librarnos con el poder de tu brazo. Puedes decirlo con toda tu verdad.",
+    "prayer": "Oh Adonai, Señor que viste el sufrimiento de tu pueblo, mira también lo que me tiene atado. Ven a librarme con tu brazo extendido y no permitas que me rinda. Confío en tu fuerza más que en la mía. Amén.",
+    "action": "Nombra ante Dios, en voz baja o por escrito, aquello que sientes que te esclaviza. Luego da un paso concreto de libertad: busca un grupo de apoyo, un consejero o habla con alguien de confianza."
+   },
+   "en": {
+    "title": "O Adonai, who sees the oppression",
+    "ref": "Ex 3:7",
+    "verse": "But the LORD said, I have witnessed the affliction of my people in Egypt and have heard their cry of complaint against their slave drivers, so I know well what they are suffering.",
+    "reflection": "The second antiphon calls Jesus Adonai, the Lord who appeared to Moses in the burning bush and gave him the law on Sinai. This God says: I have seen the affliction of My people; I know their suffering. He is not indifferent to your chains, whether an addiction, a debt, a suffocating relationship, or an old fear. The antiphon pleads: come and set us free with Your outstretched arm. You can say it with all your truth.",
+    "prayer": "O Adonai, Lord who saw the suffering of Your people, look also at what holds me bound. Come and free me with Your outstretched arm, and do not let me give up. I trust in Your strength more than in my own. Amen.",
+    "action": "Name before God, quietly or in writing, whatever you feel enslaves you. Then take one concrete step toward freedom: look for a support group, a counselor, or talk with someone you trust."
+   }
+  },
+  {
+   "day": 19,
+   "feast": null,
+   "es": {
+    "title": "Oh Raíz de Jesé",
+    "ref": "Is 11,1",
+    "verse": "Pero brotará un renuevo del tronco de Jesé, y de su raíz florecerá un vástago.",
+    "reflection": "Isaías mira un tronco cortado, que todos darían por muerto, y anuncia que de allí brotará un retoño. La tercera antífona llama a Jesús Raíz de Jesé, alzado como signo para los pueblos. Quizá sientes que una parte de tu vida ya no tiene remedio: un matrimonio herido, una vocación apagada, una fe que se secó. Dios sabe hacer brotar vida de lo que parecía terminado. No subestimes un pequeño brote.",
+    "prayer": "Oh Raíz de Jesé, que hiciste florecer el tronco seco de David, mira lo que en mí parece muerto. Haz brotar en mí un retoño de esperanza y no tardes en venir. Amén.",
+    "action": "Piensa en algo de tu vida que creías terminado y ofréceselo a Dios por su nombre. Si tienes una planta en casa, riégala con calma mientras rezas por esa intención."
+   },
+   "en": {
+    "title": "O Root of Jesse",
+    "ref": "Is 11:1",
+    "verse": "But a shoot shall sprout from the stump of Jesse, and from his roots a bud shall blossom.",
+    "reflection": "Isaiah looks at a cut-down stump that everyone would consider dead and announces that a shoot will sprout from it. The third antiphon calls Jesus the Root of Jesse, set up as a sign for the peoples. Maybe you feel that some part of your life is beyond repair: a wounded marriage, a vocation that has faded, a faith that dried up. God knows how to bring life out of what seemed finished. Don't underestimate a small shoot.",
+    "prayer": "O Root of Jesse, who made the dry stump of David blossom, look at what seems dead in me. Make a shoot of hope spring up in me, and do not delay in coming. Amen.",
+    "action": "Think of something in your life you believed was over and offer it to God by name. If you have a plant at home, water it calmly while praying for that intention."
+   }
+  },
+  {
+   "day": 20,
+   "feast": null,
+   "es": {
+    "title": "Oh Llave de David",
+    "ref": "Is 22,22",
+    "verse": "Pongo sobre sus hombros la llave del palacio de David: abrirá y nadie cerrará; cerrará y nadie abrirá.",
+    "reflection": "La cuarta antífona llama a Jesús Llave de David: lo que él abre nadie lo cierra, y lo que él cierra nadie lo abre. Le suplica que saque de la prisión a los que viven en tinieblas. Hay cárceles con rejas y otras invisibles: la culpa que no se suelta, la vergüenza, un pasado que parece definirnos. Jesús tiene la llave de todas. Hoy también puedes recordar a los presos, que pasarán estas fiestas lejos de su familia.",
+    "prayer": "Oh Llave de David, abre las puertas que yo no puedo abrir. Saca de la prisión a quienes viven en tinieblas y libérame de la culpa que ya me perdonaste. Consuela a los presos y a sus familias. Amén.",
+    "action": "Reza por las personas encarceladas y por sus familias. Si conoces a alguien que está en prisión o tiene allí a un ser querido, envíale unas palabras de ánimo o ten un detalle con su familia."
+   },
+   "en": {
+    "title": "O Key of David",
+    "ref": "Is 22:22",
+    "verse": "I will place the key of the House of David on his shoulder; when he opens, no one shall shut, when he shuts, no one shall open.",
+    "reflection": "The fourth antiphon calls Jesus the Key of David: what He opens no one shuts, and what He shuts no one opens. It begs Him to lead out of prison those who dwell in darkness. Some prisons have bars; others are invisible: guilt we can't let go of, shame, a past that seems to define us. Jesus holds the key to them all. Today you can also remember those in prison, who will spend these holidays far from their families.",
+    "prayer": "O Key of David, open the doors I cannot open. Lead out of prison those who dwell in darkness, and free me from the guilt You have already forgiven. Comfort prisoners and their families. Amen.",
+    "action": "Pray for people in prison and for their families. If you know someone who is incarcerated or has a loved one behind bars, send them a few words of encouragement or show their family a kind gesture."
+   }
+  },
+  {
+   "day": 21,
+   "feast": null,
+   "es": {
+    "title": "Oh Sol que naces de lo alto",
+    "ref": "Lc 1,78",
+    "verse": "Por la entrañable misericordia de nuestro Dios, nos visitará el sol que nace de lo alto…",
+    "reflection": "En el hemisferio norte, estos son los días más cortos y las noches más largas del año. La Iglesia elige justamente ahora llamar a Jesús Sol naciente, resplandor de la luz eterna. Zacarías lo cantó al nacer su hijo Juan: nos visitará el sol que nace de lo alto. Tal vez tu noche interior se ha alargado. La luz de Dios no llega de golpe, sino como el amanecer: despacio, pero fiel. Ya está en camino.",
+    "prayer": "Oh Sol naciente, resplandor de la luz eterna, ven a iluminar a los que vivimos en tinieblas y en sombra de muerte. Disipa mi noche con tu claridad y guía mis pasos por el camino de la paz. Amén.",
+    "action": "Si puedes, contempla un amanecer o un atardecer durante cinco minutos, aunque sea desde una ventana. Mientras miras la luz, reza despacio el Benedictus o simplemente: «Ven, luz de mi vida»."
+   },
+   "en": {
+    "title": "O Rising Dawn",
+    "ref": "Lk 1:78",
+    "verse": "because of the tender mercy of our God by which the daybreak from on high will visit us…",
+    "reflection": "In the Northern Hemisphere, these are the shortest days and longest nights of the year. The Church chooses this very moment to call Jesus the Rising Dawn, radiance of eternal light. Zechariah sang of it when his son John was born: the daybreak from on high will visit us. Perhaps your inner night has grown long. God's light doesn't arrive all at once, but like the dawn: slowly, yet faithfully. It is already on its way.",
+    "prayer": "O Rising Dawn, radiance of eternal light, come and shine on us who dwell in darkness and the shadow of death. Scatter my night with Your brightness and guide my feet into the way of peace. Amen.",
+    "action": "If you can, watch a sunrise or sunset for five minutes, even from a window. As you look at the light, slowly pray the Canticle of Zechariah or simply say: “Come, light of my life.”"
+   }
+  },
+  {
+   "day": 22,
+   "feast": null,
+   "es": {
+    "title": "Oh Rey de las naciones",
+    "ref": "Ef 2,14",
+    "verse": "Él es nuestra paz: el que de los dos pueblos ha hecho uno, derribando en su cuerpo de carne el muro que los separaba: la enemistad.",
+    "reflection": "La antífona de hoy llama a Jesús Rey de las naciones y piedra angular que de dos pueblos hace uno solo. San Pablo dice que Cristo derribó el muro que nos separaba. En estos días se notan los muros: familias que no se hablan, vecinos de distinta procedencia, discusiones políticas en la cena. El Rey que viene no reina con armas, sino reconciliando. Tal vez no puedas derribar un muro entero, pero sí quitar un ladrillo.",
+    "prayer": "Oh Rey de las naciones, piedra angular que unes lo que estaba dividido, ven y salva al ser humano que formaste del barro. Derriba los muros que hay en mi familia y en mi corazón. Amén.",
+    "action": "Antes de las reuniones familiares de estos días, decide de qué temas no discutirás y prepara una pregunta amable para alguien con quien te cuesta convivir. Reza por esa persona."
+   },
+   "en": {
+    "title": "O King of the nations",
+    "ref": "Eph 2:14",
+    "verse": "For he is our peace, he who made both one and broke down the dividing wall of enmity, through his flesh…",
+    "reflection": "Today's antiphon calls Jesus King of the nations and the cornerstone who makes two peoples one. Saint Paul says Christ broke down the wall that divided us. These days the walls become visible: families who don't speak, neighbors from different backgrounds, political arguments at dinner. The King who is coming doesn't reign with weapons but by reconciling. Maybe you can't tear down a whole wall, but you can remove one brick.",
+    "prayer": "O King of the nations, cornerstone who unites what was divided, come and save the human race You fashioned from clay. Tear down the walls in my family and in my heart. Amen.",
+    "action": "Before this season's family gatherings, decide which topics you won't argue about and prepare a kind question for someone you find hard to be around. Pray for that person."
+   }
+  },
+  {
+   "day": 23,
+   "feast": null,
+   "es": {
+    "title": "Oh Emmanuel, Dios con nosotros",
+    "ref": "Is 7,14",
+    "verse": "Pues el Señor, por su cuenta, os dará un signo. Mirad: la virgen está encinta y da a luz un hijo, y le pondrá por nombre Enmanuel.",
+    "reflection": "La última antífona resume toda la espera: Emmanuel, Dios con nosotros. No un Dios lejano que mira desde arriba, sino uno que se acerca hasta compartir nuestra carne. Esta palabra es especialmente para quien pasará la Navidad solo: en un hospital, en otra ciudad, en una casa silenciosa. La soledad es real y duele. Pero el nombre de Jesús es una promesa cumplida: Dios ha querido estar contigo, precisamente allí.",
+    "prayer": "Oh Emmanuel, Dios con nosotros, esperanza de los pueblos, ven a salvarnos. Acompaña a quienes estarán solos esta Navidad y hazme instrumento de tu cercanía para alguien. Amén.",
+    "action": "Llama o visita a una persona que pasará la Navidad sola: un vecino mayor, un familiar lejano, un amigo enfermo. Si eres tú quien estará solo, busca el horario de Misa de tu parroquia o escribe a alguien de confianza."
+   },
+   "en": {
+    "title": "O Emmanuel, God with us",
+    "ref": "Is 7:14",
+    "verse": "Therefore the Lord himself will give you this sign: the virgin shall be with child, and bear a son, and shall name him Immanuel.",
+    "reflection": "The last antiphon sums up the whole season of waiting: Emmanuel, God with us. Not a distant God who looks down from above, but One who draws so near that He shares our flesh. This word is especially for anyone who will spend Christmas alone: in a hospital, in another city, in a silent house. Loneliness is real and it hurts. But the name of Jesus is a promise kept: God has chosen to be with you, right there.",
+    "prayer": "O Emmanuel, God with us, hope of the nations, come and save us. Stay close to those who will be alone this Christmas, and make me an instrument of Your closeness for someone. Amen.",
+    "action": "Call or visit someone who will spend Christmas alone: an elderly neighbor, a distant relative, a sick friend. If you are the one who will be alone, look up your parish's Mass times or reach out to someone you trust."
+   }
+  },
+  {
+   "day": 24,
+   "feast": null,
+   "es": {
+    "title": "Hacerle sitio esta noche",
+    "ref": "Lc 2,7",
+    "verse": "y dio a luz a su hijo primogénito, lo envolvió en pañales y lo recostó en un pesebre, porque no había sitio para ellos en la posada.",
+    "reflection": "Para María y José no hubo sitio en la posada. Dios llegó al mundo por la puerta de atrás, entre animales y paja. Quizá hoy tu casa está llena de prisas: la cena que no está lista, el regalo que falta, los nervios de las reuniones. No pasa nada si no todo sale perfecto. Jesús no busca una casa impecable, sino un corazón que le haga un poco de sitio. Esta noche, déjalo nacer en medio de lo que hay.",
+    "prayer": "Niño Jesús, que no encontraste sitio en la posada, entra en mi casa tal como está esta noche. Aquieta mis nervios, bendice a los que se sentarán a mi mesa y recuerda a los que no tienen techo. Amén.",
+    "action": "En algún momento de esta noche, detente cinco minutos en silencio ante el pesebre o una vela. Si puedes, participa en la Misa de Nochebuena y reza por quienes no tienen hogar."
+   },
+   "en": {
+    "title": "Making room tonight",
+    "ref": "Lk 2:7",
+    "verse": "and she gave birth to her firstborn son. She wrapped him in swaddling clothes and laid him in a manger, because there was no room for them in the inn.",
+    "reflection": "There was no room for Mary and Joseph in the inn. God came into the world through the back door, among animals and straw. Perhaps your home is full of rushing today: dinner not ready, a missing gift, nerves before family gatherings. It's all right if not everything turns out perfect. Jesus isn't looking for a spotless house, but for a heart that makes a little room for Him. Tonight, let Him be born in the middle of whatever is there.",
+    "prayer": "Infant Jesus, who found no room in the inn, come into my home just as it is tonight. Calm my nerves, bless those who will sit at my table, and remember those who have no roof over their heads. Amen.",
+    "action": "At some point tonight, stop for five minutes in silence before the Nativity scene or a candle. If you can, take part in Christmas Eve Mass and pray for those who have no home."
+   }
+  },
+  {
+   "day": 25,
+   "feast": {
+    "es": "Natividad del Señor",
+    "en": "Nativity of the Lord"
+   },
+   "es": {
+    "title": "Hoy nos ha nacido un Salvador",
+    "ref": "Lc 2,10-11",
+    "verse": "El ángel les dijo: No temáis, os anuncio una buena noticia que será de gran alegría para todo el pueblo: hoy, en la ciudad de David, os ha nacido un Salvador, el Mesías, el Señor.",
+    "reflection": "El primer anuncio de la Navidad no fue para los poderosos, sino para unos pastores que trabajaban de noche. El ángel les dijo: no teman, les traigo una gran alegría. Dios se hizo niño pequeño, frágil, necesitado de brazos. No llega para asustarnos, sino para que podamos acercarnos sin miedo. Si llegas a este día cansado, triste o con la fe apagada, la noticia también es para ti: hoy ha nacido un Salvador.",
+    "prayer": "Jesús, Niño de Belén, Hijo eterno del Padre hecho hombre por amor, te adoro y te doy gracias. Nace en mi corazón, en mi familia y en todos los lugares donde falta la paz. Gloria a Dios en el cielo. Amén.",
+    "action": "Haz un momento de adoración sencilla ante el pesebre: arrodíllate o inclínate y di tres veces «Gracias, Jesús, por venir». Participa en la Misa de Navidad y comparte una comida con alegría."
+   },
+   "en": {
+    "title": "Today a Savior is born for us",
+    "ref": "Lk 2:10-11",
+    "verse": "The angel said to them, Do not be afraid; for behold, I proclaim to you good news of great joy that will be for all the people. For today in the city of David a savior has been born for you who is Messiah and Lord.",
+    "reflection": "The first Christmas announcement wasn't for the powerful, but for shepherds working the night shift. The angel told them: do not be afraid, I bring you news of great joy. God became a little child, fragile, in need of arms to hold Him. He doesn't come to frighten us, but so that we can approach without fear. If you reach this day tired, sad, or with your faith burned low, this news is for you too: today a Savior is born.",
+    "prayer": "Jesus, Child of Bethlehem, eternal Son of the Father made man out of love, I adore You and I thank You. Be born in my heart, in my family, and in every place where peace is lacking. Glory to God in the highest. Amen.",
+    "action": "Take a moment of simple adoration before the Nativity scene: kneel or bow and say three times, “Thank You, Jesus, for coming.” Take part in Christmas Mass and share a meal with joy."
+   }
+  },
+  {
+   "day": 26,
+   "feast": {
+    "es": "San Esteban, protomártir",
+    "en": "Saint Stephen, First Martyr"
+   },
+   "es": {
+    "title": "El primer testigo perdonó",
+    "ref": "Hch 7,59-60",
+    "verse": "y se pusieron a apedrear a Esteban, que repetía esta invocación: «Señor Jesús, recibe mi espíritu». Luego, cayendo de rodillas y clamando con voz potente, dijo: «Señor, no les tengas en cuenta este pecado». Y, con estas palabras, murió.",
+    "reflection": "Al día siguiente de Navidad, la Iglesia recuerda a san Esteban, uno de los siete elegidos para servir a los pobres y el primer mártir cristiano. Mientras lo apedreaban, pidió perdón para quienes lo mataban, como Jesús en la cruz. La ternura del pesebre no es ingenua: ese Niño trae un amor capaz de perdonar incluso lo más duro. Quizá hay alguien a quien te cuesta perdonar. No tienes que sentirlo todavía; puedes empezar por desearlo.",
+    "prayer": "San Esteban, servidor de los pobres y testigo valiente, ruega por los cristianos que hoy son perseguidos. Y pide para mí un corazón capaz de perdonar, aunque me cueste. Señor, no tengas en cuenta el mal que me hicieron. Amén.",
+    "action": "Piensa en una persona que te ha herido y reza por ella un avemaría, pidiendo a Dios su bien. Añade una oración por los cristianos que sufren persecución en el mundo."
+   },
+   "en": {
+    "title": "The first witness forgave",
+    "ref": "Acts 7:59-60",
+    "verse": "As they were stoning Stephen, he called out, \"Lord Jesus, receive my spirit.\" Then he fell to his knees and cried out in a loud voice, \"Lord, do not hold this sin against them\"; and when he said this, he fell asleep.",
+    "reflection": "The day after Christmas, the Church remembers Saint Stephen, one of the seven chosen to serve the poor and the first Christian martyr. As he was being stoned, he asked forgiveness for those killing him, just as Jesus did on the cross. The tenderness of the manger is not naive: this Child brings a love capable of forgiving even the hardest things. Perhaps there's someone you find hard to forgive. You don't have to feel it yet; you can begin by wanting to.",
+    "prayer": "Saint Stephen, servant of the poor and courageous witness, pray for Christians who are persecuted today. And ask for me a heart able to forgive, even when it's hard. Lord, do not hold against them the harm they did to me. Amen.",
+    "action": "Think of a person who has hurt you and pray a Hail Mary for them, asking God for their good. Add a prayer for Christians suffering persecution around the world."
+   }
+  },
+  {
+   "day": 27,
+   "feast": {
+    "es": "San Juan, apóstol y evangelista",
+    "en": "Saint John, Apostle and Evangelist"
+   },
+   "es": {
+    "title": "El discípulo que se supo amado",
+    "ref": "1 Jn 4,16",
+    "verse": "Y nosotros hemos conocido el amor que Dios nos tiene y hemos creído en él. Dios es amor, y quien permanece en el amor permanece en Dios y Dios en él.",
+    "reflection": "San Juan, apóstol y evangelista, fue uno de los primeros llamados por Jesús, junto a su hermano Santiago. La tradición lo identifica con el discípulo amado, el que estuvo al pie de la cruz y recibió a María en su casa. En sus escritos repite una verdad sencilla: Dios es amor. Juan no se definía por sus logros, sino por ser amado. Esa es también tu identidad más profunda, más fuerte que cualquier caída.",
+    "prayer": "San Juan, discípulo amado, enséñame a reclinar la cabeza en el corazón de Jesús. Que crea de verdad que Dios es amor y que permanezca en ese amor cada día. Amén.",
+    "action": "Lee despacio el prólogo del Evangelio de Juan (Juan 1,1-14) o al menos sus primeros cinco versículos. Subraya o anota una frase que te toque y repítela durante el día."
+   },
+   "en": {
+    "title": "The disciple who knew he was loved",
+    "ref": "1 Jn 4:16",
+    "verse": "We have come to know and to believe in the love God has for us. God is love, and whoever remains in love remains in God and God in him.",
+    "reflection": "Saint John, Apostle and Evangelist, was one of the first called by Jesus, along with his brother James. Tradition identifies him with the beloved disciple, who stood at the foot of the cross and took Mary into his home. In his writings he repeats a simple truth: God is love. John didn't define himself by his achievements but by being loved. That is your deepest identity too, stronger than any fall.",
+    "prayer": "Saint John, beloved disciple, teach me to rest my head on the heart of Jesus. Help me truly believe that God is love and remain in that love every day. Amen.",
+    "action": "Slowly read the prologue of John's Gospel (John 1:1-14), or at least its first five verses. Underline or note a phrase that touches you and repeat it throughout the day."
+   }
+  },
+  {
+   "day": 28,
+   "feast": {
+    "es": "Santos Inocentes",
+    "en": "Holy Innocents"
+   },
+   "es": {
+    "title": "Raquel llora por sus hijos",
+    "ref": "Mt 2,18",
+    "verse": "«Un grito se oye en Ramá, llanto y lamentos grandes; es Raquel que llora por sus hijos y rehúsa el consuelo, porque ya no viven».",
+    "reflection": "La fiesta de los Santos Inocentes recuerda a los niños de Belén asesinados por la crueldad de Herodes. En plena Navidad, la Iglesia no esconde el dolor: escucha el llanto de las madres que no quieren consuelo. Hoy podemos acompañar a todos los padres que han perdido un hijo, también antes de nacer, y a los niños que sufren violencia, guerra o abandono. Dios no es indiferente a esas lágrimas; las recoge una a una.",
+    "prayer": "Señor Jesús, que siendo niño escapaste de la violencia, acoge en tu paz a los inocentes de todos los tiempos. Consuela a los padres que lloran a un hijo y protege a los niños en peligro. Amén.",
+    "action": "Reza por los niños que sufren y por los padres en duelo. Si puedes, colabora con una obra que proteja a la infancia o a madres en dificultad, o regala tiempo de calidad a un niño de tu entorno."
+   },
+   "en": {
+    "title": "Rachel weeping for her children",
+    "ref": "Mt 2:18",
+    "verse": "\"A voice was heard in Ramah, sobbing and loud lamentation; Rachel weeping for her children, and she would not be consoled, since they were no more.\"",
+    "reflection": "The feast of the Holy Innocents recalls the children of Bethlehem killed by the cruelty of Herod. In the middle of Christmas, the Church doesn't hide the pain: it listens to the weeping of mothers who refuse to be consoled. Today we can accompany every parent who has lost a child, including before birth, and the children who suffer violence, war, or abandonment. God is not indifferent to those tears; He gathers them one by one.",
+    "prayer": "Lord Jesus, who escaped violence as a child, welcome into Your peace the innocent of every age. Comfort parents who mourn a child and protect children in danger. Amen.",
+    "action": "Pray for children who suffer and for grieving parents. If you can, support a work that protects children or mothers in difficulty, or give quality time to a child in your life."
+   }
+  },
+  {
+   "day": 29,
+   "feast": null,
+   "es": {
+    "title": "La riqueza de un pesebre pobre",
+    "ref": "2 Cor 8,9",
+    "verse": "Pues conocéis la gracia de nuestro Señor Jesucristo, el cual, siendo rico, se hizo pobre por vosotros para enriqueceros con su pobreza.",
+    "reflection": "San Pablo resume la Navidad en una frase: siendo rico, se hizo pobre para enriquecernos con su pobreza. El Hijo de Dios eligió nacer sin comodidades, en un pesebre prestado. No es una idealización de la miseria, sino un modo de decir que nadie queda fuera de su alcance. Después de los días de fiesta, quizá sobran cosas en casa y falta espacio en el corazón. La pobreza de Belén nos invita a vivir más ligeros.",
+    "prayer": "Jesús pobre de Belén, gracias por hacerte pequeño para estar cerca de mí. Libérame del apego a las cosas y abre mis manos para compartir. Que no olvide a los que pasan frío esta noche. Amén.",
+    "action": "Revisa un armario o un cajón y separa ropa o un abrigo en buen estado que no usas. Llévalo esta semana a tu parroquia, a un albergue o a alguien que lo necesite."
+   },
+   "en": {
+    "title": "The riches of a poor manger",
+    "ref": "2 Cor 8:9",
+    "verse": "For you know the gracious act of our Lord Jesus Christ, that for your sake he became poor although he was rich, so that by his poverty you might become rich.",
+    "reflection": "Saint Paul sums up Christmas in one sentence: though He was rich, He became poor so that by His poverty we might become rich. The Son of God chose to be born without comforts, in a borrowed manger. This isn't an idealization of misery, but a way of saying that no one is beyond His reach. After the holiday feasts, perhaps there are too many things in the house and too little room in the heart. The poverty of Bethlehem invites us to live more lightly.",
+    "prayer": "Poor Jesus of Bethlehem, thank You for becoming small to be close to me. Free me from attachment to things and open my hands to share. Let me not forget those who are cold tonight. Amen.",
+    "action": "Go through a closet or drawer and set aside clothes or a coat in good condition that you don't use. Take them this week to your parish, a shelter, or someone who needs them."
+   }
+  },
+  {
+   "day": 30,
+   "feast": null,
+   "es": {
+    "title": "Nazaret, la santidad de lo cotidiano",
+    "ref": "Lc 2,51-52",
+    "verse": "Él bajó con ellos y fue a Nazaret y estaba sujeto a ellos. Su madre conservaba todo esto en su corazón. Y Jesús iba creciendo en sabiduría, en estatura y en gracia ante Dios y ante los hombres.",
+    "reflection": "Después de Belén vinieron muchos años escondidos en Nazaret: trabajo, comidas, oración, vecinos. Jesús crecía en sabiduría en medio de una vida normal de familia. Ninguna familia es perfecta, tampoco la tuya; algunas están heridas, separadas o lejos. Aun así, Dios eligió un hogar para crecer y bendice las casas tal como son. Lo santo no está solo en los grandes momentos, sino también en lavar los platos con amor.",
+    "prayer": "Jesús, María y José, bendigan mi casa y a todos los que la habitan. Sanen las heridas de mi familia y acompañen a quienes viven lejos o tienen relaciones rotas. Que nuestro hogar se parezca un poco al de Nazaret. Amén.",
+    "action": "Antes de una comida, bendice la mesa en voz alta y nombra a cada miembro de tu familia, presente o ausente, pidiendo por él. Luego ayuda en una tarea de la casa sin que te lo pidan."
+   },
+   "en": {
+    "title": "Nazareth, the holiness of everyday life",
+    "ref": "Lk 2:51-52",
+    "verse": "He went down with them and came to Nazareth, and was obedient to them; and his mother kept all these things in her heart. And Jesus advanced (in) wisdom and age and favor before God and man.",
+    "reflection": "After Bethlehem came many hidden years in Nazareth: work, meals, prayer, neighbors. Jesus grew in wisdom in the middle of ordinary family life. No family is perfect, yours included; some are wounded, separated, or far apart. Even so, God chose a home in which to grow, and He blesses households as they are. Holiness isn't found only in great moments, but also in washing the dishes with love.",
+    "prayer": "Jesus, Mary, and Joseph, bless my home and all who live in it. Heal the wounds of my family and stay with those who live far away or whose relationships are broken. May our home resemble a little the one in Nazareth. Amen.",
+    "action": "Before a meal, bless the table aloud and name each member of your family, present or absent, praying for them. Then help with a household chore without being asked."
+   }
+  },
+  {
+   "day": 31,
+   "feast": {
+    "es": "San Silvestre I",
+    "en": "Saint Sylvester I"
+   },
+   "es": {
+    "title": "Entregar el año en buenas manos",
+    "ref": "Sal 90,12",
+    "verse": "Enséñanos a calcular nuestros años, para que adquiramos un corazón sensato.",
+    "reflection": "San Silvestre I fue obispo de Roma en los años en que la Iglesia, después de largas persecuciones, empezó a vivir en libertad. Su fiesta cierra el año civil y nos invita a mirar atrás con gratitud y adelante con confianza. El salmo pide aprender a contar nuestros días para tener un corazón sensato. No se trata de un balance severo, sino de reconocer la mano de Dios en lo vivido y poner en ella lo que viene.",
+    "prayer": "Señor del tiempo, gracias por cada día de este año, también por los difíciles. Te entrego lo que no salió bien y lo que no entiendo. Pongo en tus manos el año nuevo: camina conmigo. Por intercesión de san Silvestre, guarda a tu Iglesia. Amén.",
+    "action": "Escribe en un cuaderno tres gracias que recibiste este año, una herida que entregas a Dios y un deseo sencillo para el año que comienza. Termina con un padrenuestro, en familia o a solas."
+   },
+   "en": {
+    "title": "Placing the year in good hands",
+    "ref": "Ps 90:12",
+    "verse": "Teach us to count our days aright, that we may gain wisdom of heart.",
+    "reflection": "Saint Sylvester I was bishop of Rome in the years when the Church, after long persecutions, began to live in freedom. His feast closes the calendar year and invites us to look back with gratitude and forward with trust. The psalm asks that we learn to count our days to gain a wise heart. It isn't about a harsh review, but about recognizing God's hand in what we have lived and placing what lies ahead into it.",
+    "prayer": "Lord of time, thank You for every day of this year, the hard ones too. I hand over to You what didn't go well and what I don't understand. I place the new year in Your hands: walk with me. Through the intercession of Saint Sylvester, keep Your Church. Amen.",
+    "action": "Write in a notebook three graces you received this year, one wound you hand over to God, and one simple hope for the year ahead. Finish with an Our Father, with your family or on your own."
+   }
+  }
+ ]
+}

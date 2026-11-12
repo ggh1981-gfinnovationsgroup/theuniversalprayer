@@ -1,0 +1,686 @@
+{
+ "key": "octubre",
+ "es": {
+  "topic": "Santo Rosario",
+  "intro": "Octubre es el mes del Rosario y también el mes de las misiones. Te proponemos recorrer con María, día a día, los veinte misterios de la vida de Jesús: primero los gozosos, luego los luminosos, los dolorosos y los gloriosos. Entre ellos encontrarás días para aprender a rezar cuando estás cansado o distraído, y para llevar en tus cuentas a la familia, a los enfermos, a los misioneros, la paz del mundo y a quien te cuesta perdonar.",
+  "method": {
+   "title": "Cómo vivir este mes",
+   "steps": [
+    "Ten a mano un rosario, o usa tus diez dedos: también sirven para contar avemarías.",
+    "Lee despacio la cita del día; es la puerta del misterio que vas a contemplar.",
+    "Reza al menos una decena con calma, mirando la escena como si estuvieras dentro de ella.",
+    "Pon una intención concreta en cada decena: un nombre, una situación, una herida.",
+    "Haz la acción propuesta; el misterio contemplado se vuelve vida en un gesto pequeño.",
+    "Si un día no llegas a todo, no te angusties: un avemaría dicha con amor también es oración."
+   ],
+   "prayer": "Virgen María, Madre del Rosario, toma mi mano en este mes. Enséñame a mirar a Jesús con tus ojos, a guardar su vida en mi corazón y a llevar en cada cuenta a las personas que amo y a las que me cuesta amar. Te ofrezco mis distracciones, mi cansancio y mi deseo sincero de rezar. Amén.",
+   "closing": "Gracias, Señor, por los misterios de tu vida que hoy he contemplado. Que María guarde lo que sembraste en mí y me ayude a descansar en ti. Amén."
+  }
+ },
+ "en": {
+  "topic": "Holy Rosary",
+  "intro": "October is the month of the Rosary and also the month of the missions. Day by day, we invite you to walk with Mary through the twenty mysteries of the life of Jesus: first the Joyful, then the Luminous, the Sorrowful, and the Glorious. Along the way there are days to learn how to pray when you are tired or distracted, and to carry on your beads your family, the sick, missionaries, peace in the world, and the person you find hard to forgive.",
+  "method": {
+   "title": "How to live this month",
+   "steps": [
+    "Keep a rosary close, or use your ten fingers: they work just as well for counting Hail Marys.",
+    "Read the verse of the day slowly; it is the doorway into the mystery you will contemplate.",
+    "Pray at least one decade calmly, looking at the scene as if you were standing inside it.",
+    "Give each decade a concrete intention: a name, a situation, a wound.",
+    "Do the suggested action; the mystery you contemplated becomes life in a small gesture.",
+    "If some day you can't do it all, don't worry: one Hail Mary said with love is real prayer."
+   ],
+   "prayer": "Virgin Mary, Mother of the Rosary, take my hand this month. Teach me to look at Jesus with your eyes, to keep His life in my heart, and to carry on every bead the people I love and the ones I find hard to love. I offer you my distractions, my tiredness, and my sincere desire to pray. Amen.",
+   "closing": "Thank You, Lord, for the mysteries of Your life I contemplated today. May Mary keep what You planted in me and help me rest in You. Amen."
+  }
+ },
+ "days": [
+  {
+   "day": 1,
+   "feast": {
+    "es": "Santa Teresa del Niño Jesús",
+    "en": "Saint Therese of the Child Jesus"
+   },
+   "es": {
+    "title": "Un Rosario para corazones pequeños",
+    "ref": "Mt 18,3-4",
+    "verse": "y dijo: En verdad os digo que, si no os convertís y os hacéis como niños, no entraréis en el reino de los cielos. Por tanto, el que se haga pequeño como este niño, ese es el más grande en el reino de los cielos.",
+    "reflection": "Abrimos el mes con Santa Teresita, la carmelita de Lisieux que enseñó el «caminito» de la confianza. Ella misma contó con sencillez que a veces le costaba rezar el Rosario y se distraía; no por eso dejó de amar a María. Jesús no pide oraciones perfectas, sino corazones de niño que vuelven una y otra vez a los brazos del Padre. Así queremos empezar octubre: sin exigencias de récord, con la humildad de quien reza como puede.",
+    "prayer": "Santa Teresita, tú que hallaste el camino de la pequeñez, enséñame a rezar sin miedo a hacerlo mal. Señor Jesús, hazme niño en tus manos y que cada avemaría de este mes sea un pequeño acto de confianza. Amén.",
+    "action": "Elige un rosario, o un lugar fijo de la casa, para este mes. Hoy reza allí una sola decena muy despacio, ofreciéndosela a Dios como haría un niño que entrega un dibujo hecho con cariño."
+   },
+   "en": {
+    "title": "A Rosary for small hearts",
+    "ref": "Mt 18:3-4",
+    "verse": "and said, Amen, I say to you, unless you turn and become like children, you will not enter the kingdom of heaven. Whoever humbles himself like this child is the greatest in the kingdom of heaven.",
+    "reflection": "We open the month with Saint Therese, the Carmelite of Lisieux who taught the \"little way\" of trust. She admitted quite simply that she sometimes found the Rosary hard and got distracted; that never stopped her from loving Mary. Jesus doesn't ask for perfect prayers, but for childlike hearts that keep returning to the Father's arms. That is how we want to begin October: no record-breaking, just the humility of praying as we can.",
+    "prayer": "Saint Therese, you who found the way of littleness, teach me to pray without fear of doing it badly. Lord Jesus, make me a child in Your hands, and let every Hail Mary this month be a small act of trust. Amen.",
+    "action": "Choose a rosary, or a set place at home, for this month. Today pray just one decade there very slowly, offering it to God the way a child hands over a drawing made with love."
+   }
+  },
+  {
+   "day": 2,
+   "feast": {
+    "es": "Santos Ángeles Custodios",
+    "en": "Holy Guardian Angels"
+   },
+   "es": {
+    "title": "La Anunciación y el ángel que te acompaña",
+    "ref": "Lc 1,26-28",
+    "verse": "En el mes sexto, el ángel Gabriel fue enviado por Dios a una ciudad de Galilea llamada Nazaret, a una virgen desposada con un hombre llamado José, de la casa de David; el nombre de la virgen era María. El ángel, entrando en su presencia, dijo: «Alégrate, llena de gracia, el Señor está contigo».",
+    "reflection": "El primer misterio gozoso comienza con un ángel que entra en una casa sencilla de Nazaret y saluda a María: «Alégrate». Hoy la Iglesia celebra a los ángeles custodios y nos recuerda que Dios tampoco te deja caminar solo: a cada persona le confía un ángel que la guarda. El Rosario repite una y otra vez el saludo de Gabriel; cada avemaría es unirse a la voz de los ángeles que alaban a Dios por lo que hizo en María.",
+    "prayer": "Ángel de mi guarda, tú que estás a mi lado aunque no te vea, acompáñame hoy cuando rece y cuando trabaje. Señor, gracias por tu cuidado tan delicado. Que, como María, sepa escuchar tus mensajes y responder con un sí. Amén.",
+    "action": "Reza el primer misterio gozoso imaginando el saludo del ángel en la casa de Nazaret. Al terminar, da gracias a tu ángel custodio y pídele que cuide a una persona de tu familia que hoy está lejos."
+   },
+   "en": {
+    "title": "The Annunciation and the angel beside you",
+    "ref": "Lk 1:26-28",
+    "verse": "In the sixth month, the angel Gabriel was sent from God to a town of Galilee called Nazareth, to a virgin betrothed to a man named Joseph, of the house of David, and the virgin's name was Mary. And coming to her, he said, \"Hail, favored one! The Lord is with you.\"",
+    "reflection": "The first Joyful Mystery begins with an angel entering a simple house in Nazareth and greeting Mary: \"Rejoice.\" Today the Church celebrates the guardian angels and reminds us that God doesn't let you walk alone either: He entrusts each person to an angel who watches over them. The Rosary repeats Gabriel's greeting again and again; each Hail Mary joins the voice of the angels praising God for what He did in Mary.",
+    "prayer": "My guardian angel, you are at my side even when I can't see you; stay with me today as I pray and as I work. Lord, thank You for such tender care. Like Mary, may I learn to listen to Your messages and answer with a yes. Amen.",
+    "action": "Pray the first Joyful Mystery, picturing the angel's greeting in the house at Nazareth. Then thank your guardian angel and ask him to watch over someone in your family who is far away today."
+   }
+  },
+  {
+   "day": 3,
+   "feast": null,
+   "es": {
+    "title": "La Visitación: una prisa que sirve",
+    "ref": "Lc 1,39-40",
+    "verse": "En aquellos mismos días, María se levantó y se puso en camino de prisa hacia la montaña, a una ciudad de Judá; entró en casa de Zacarías y saludó a Isabel.",
+    "reflection": "Apenas recibe el anuncio, María no se encierra a disfrutar su secreto: se pone en camino deprisa hacia la casa de Isabel, su pariente mayor que esperaba un hijo. La alegría de Dios no se queda quieta, se convierte en servicio. En este segundo misterio gozoso contemplamos a una joven que recorre montañas para ayudar, y a dos mujeres que se abrazan reconociendo la obra de Dios. A veces la mejor oración es salir de uno mismo hacia quien necesita compañía.",
+    "prayer": "María, mujer que caminas deprisa para servir, quita de mí la pereza que me encierra en mis cosas. Jesús, que llevaste alegría a la casa de Isabel, haz que mi presencia hoy sea un regalo para alguien. Amén.",
+    "action": "Reza el segundo misterio gozoso por una persona mayor que conozcas. Después llámala o envíale un mensaje solo para preguntarle cómo está y escucharla con paciencia, sin prisa por colgar."
+   },
+   "en": {
+    "title": "The Visitation: a haste that serves",
+    "ref": "Lk 1:39-40",
+    "verse": "During those days Mary set out and traveled to the hill country in haste to a town of Judah, where she entered the house of Zechariah and greeted Elizabeth.",
+    "reflection": "As soon as she receives the message, Mary doesn't shut herself away to enjoy her secret: she sets out in haste to the house of Elizabeth, her older relative who was expecting a child. God's joy doesn't sit still; it becomes service. In this second Joyful Mystery we contemplate a young woman crossing the hill country to help, and two women embracing as they recognize God's work. Sometimes the best prayer is stepping out of ourselves toward someone who needs company.",
+    "prayer": "Mary, woman who hurried to serve, take from me the laziness that locks me inside my own concerns. Jesus, who brought joy to Elizabeth's house, let my presence today be a gift for someone. Amen.",
+    "action": "Pray the second Joyful Mystery for an older person you know. Then call or text them just to ask how they are, and listen patiently, without rushing to hang up."
+   }
+  },
+  {
+   "day": 4,
+   "feast": {
+    "es": "San Francisco de Asís",
+    "en": "Saint Francis of Assisi"
+   },
+   "es": {
+    "title": "El Nacimiento con los ojos de Francisco",
+    "ref": "Lc 2,7",
+    "verse": "y dio a luz a su hijo primogénito, lo envolvió en pañales y lo recostó en un pesebre, porque no había sitio para ellos en la posada.",
+    "reflection": "San Francisco de Asís quedó tan conmovido por la pobreza del Niño de Belén que, en Greccio, quiso representar el nacimiento con un pesebre, un buey y un asno, para que la gente pudiera ver con sus ojos la humildad de Dios. En el tercer misterio gozoso contemplamos a un Dios que no encuentra sitio en la posada y se deja recostar en un comedero de animales. Francisco aprendió ahí a amar la pobreza, a los pobres y a toda criatura como hermana.",
+    "prayer": "Niño Jesús, que naciste pobre entre animales y pastores, dame un corazón sencillo como el de Francisco. Enséñame a recibirte en lo pequeño y a cuidar de tus criaturas con ternura. San Francisco, ruega por mí. Amén.",
+    "action": "Sal a caminar unos minutos, o asómate a una ventana, y reza el misterio del Nacimiento dando gracias por una criatura concreta que veas: un árbol, un pájaro, el cielo. Después recoge alguna basura que encuentres en tu camino."
+   },
+   "en": {
+    "title": "The Nativity through the eyes of Francis",
+    "ref": "Lk 2:7",
+    "verse": "and she gave birth to her firstborn son. She wrapped him in swaddling clothes and laid him in a manger, because there was no room for them in the inn.",
+    "reflection": "Saint Francis of Assisi was so moved by the poverty of the Child of Bethlehem that, at Greccio, he arranged a manger with an ox and a donkey so people could see with their own eyes the humility of God. In the third Joyful Mystery we contemplate a God who finds no room at the inn and lets Himself be laid in a feeding trough. There Francis learned to love poverty, the poor, and every creature as a brother or sister.",
+    "prayer": "Child Jesus, born poor among animals and shepherds, give me a simple heart like that of Francis. Teach me to welcome You in small things and to care for Your creatures with tenderness. Saint Francis, pray for me. Amen.",
+    "action": "Take a short walk, or look out a window, and pray the mystery of the Nativity, thanking God for one specific creature you see: a tree, a bird, the sky. Then pick up any litter you find along the way."
+   }
+  },
+  {
+   "day": 5,
+   "feast": null,
+   "es": {
+    "title": "La Presentación: los ojos que esperaron",
+    "ref": "Lc 2,29-30",
+    "verse": "Ahora, Señor, según tu promesa, puedes dejar a tu siervo irse en paz. Porque mis ojos han visto a tu Salvador…",
+    "reflection": "En el cuarto misterio gozoso, María y José llevan al Niño al Templo, y un anciano llamado Simeón lo toma en brazos. Había esperado toda la vida, y ahora puede irse en paz porque sus ojos han visto la salvación. Este misterio es un regalo para quien siente que la espera se hace larga: un diagnóstico, un trabajo, una conversión que no llega. Dios no olvida. A su tiempo, pone a Jesús en los brazos de quien lo aguarda con fidelidad.",
+    "prayer": "Señor, como Simeón, a veces me canso de esperar. Dame paciencia y una esperanza que no se apague. María y José, que presentaron a Jesús en el Templo, preséntenle también lo que yo aguardo. Amén.",
+    "action": "Escribe en un cuaderno una espera que llevas en el corazón. Reza el cuarto misterio gozoso ofreciéndola a Dios y termina con una frase de entrega: «Señor, en tus manos pongo mi espera»."
+   },
+   "en": {
+    "title": "The Presentation: eyes that waited",
+    "ref": "Lk 2:29-30",
+    "verse": "Now, Master, you may let your servant go in peace, according to your word, for my eyes have seen your salvation…",
+    "reflection": "In the fourth Joyful Mystery, Mary and Joseph bring the Child to the Temple, and an old man named Simeon takes Him in his arms. He had waited his whole life, and now he can go in peace because his eyes have seen salvation. This mystery is a gift for anyone who feels the wait is long: a diagnosis, a job, a conversion that hasn't come. God does not forget. In His time, He places Jesus in the arms of those who wait faithfully.",
+    "prayer": "Lord, like Simeon, I sometimes grow tired of waiting. Give me patience and a hope that doesn't go out. Mary and Joseph, who presented Jesus in the Temple, present to Him what I am waiting for too. Amen.",
+    "action": "Write in a notebook something you are waiting for deep in your heart. Pray the fourth Joyful Mystery offering it to God, and end with a sentence of surrender: \"Lord, I place my waiting in Your hands.\""
+   }
+  },
+  {
+   "day": 6,
+   "feast": null,
+   "es": {
+    "title": "El Niño perdido y hallado",
+    "ref": "Lc 2,48-49",
+    "verse": "Al verlo, se quedaron atónitos, y le dijo su madre: «Hijo, ¿por qué nos has tratado así? Tu padre y yo te buscábamos angustiados». Él les contestó: «¿Por qué me buscabais? ¿No sabíais que yo debía estar en las cosas de mi Padre?».",
+    "reflection": "Tres días de búsqueda angustiosa: María y José conocieron lo que es perder de vista a Jesús. En el quinto misterio gozoso lo encuentran en el Templo, en la casa de su Padre. Quizá tú también sientes que has perdido a Dios por el camino: la fe se enfrió, dejaste de rezar, te alejaste. Este misterio te dice que se le puede buscar de nuevo y que él se deja encontrar. No importa cuánto tiempo haya pasado; volver ya es empezar a hallarlo.",
+    "prayer": "Jesús, a veces te pierdo entre mis prisas y mis caídas. Quiero buscarte otra vez, como María y José. Déjate encontrar por mí y por quienes amo y se han alejado de ti. Amén.",
+    "action": "Reza el quinto misterio gozoso por alguien que se ha alejado de la fe, sin juzgarlo. Si puedes, entra unos minutos en una iglesia; si no, busca un rincón tranquilo y dile a Jesús: «Aquí estoy, te estaba buscando»."
+   },
+   "en": {
+    "title": "The Child lost and found",
+    "ref": "Lk 2:48-49",
+    "verse": "When his parents saw him, they were astonished, and his mother said to him, \"Son, why have you done this to us? Your father and I have been looking for you with great anxiety.\" And he said to them, \"Why were you looking for me? Did you not know that I must be in my Father's house?\"",
+    "reflection": "Three days of anxious searching: Mary and Joseph knew what it was to lose sight of Jesus. In the fifth Joyful Mystery they find Him in the Temple, in His Father's house. Maybe you feel you have lost God along the way: faith grew cold, you stopped praying, you drifted. This mystery tells you He can be sought again and that He lets Himself be found. No matter how much time has passed, turning back is already the beginning of finding Him.",
+    "prayer": "Jesus, sometimes I lose You amid my rushing and my falls. I want to look for You again, like Mary and Joseph. Let Yourself be found by me and by the people I love who have drifted away from You. Amen.",
+    "action": "Pray the fifth Joyful Mystery for someone who has drifted from the faith, without judging them. If you can, step into a church for a few minutes; if not, find a quiet corner and tell Jesus: \"Here I am, I was looking for You.\""
+   }
+  },
+  {
+   "day": 7,
+   "feast": {
+    "es": "Nuestra Señora del Rosario",
+    "en": "Our Lady of the Rosary"
+   },
+   "es": {
+    "title": "María, maestra de la contemplación",
+    "ref": "Lc 2,19",
+    "verse": "María, por su parte, conservaba todas estas cosas, meditándolas en su corazón.",
+    "reflection": "Hoy celebramos a Nuestra Señora del Rosario, fiesta que el papa San Pío V instituyó en acción de gracias tras la batalla de Lepanto, confiada a la oración del pueblo cristiano. Pero el corazón de esta fiesta está en el versículo de hoy: María guardaba todo y lo meditaba en su corazón. El Rosario es eso: hacer memoria de Jesús junto a su Madre. Al cerrar la semana de los misterios gozosos, aprendemos de ella a no dejar pasar la vida sin mirarla a la luz de Dios.",
+    "prayer": "Nuestra Señora del Rosario, tú que guardabas en el corazón cada palabra y cada gesto de tu Hijo, enséñame a meditar como tú. Toma mis días, con sus alegrías pequeñas, y ayúdame a descubrir en ellos el paso de Dios. Amén.",
+    "action": "Reza hoy los cinco misterios gozosos, o al menos uno, ante una imagen de María. Antes de empezar, recuerda un momento alegre de esta semana y ofrécelo dando gracias."
+   },
+   "en": {
+    "title": "Mary, teacher of contemplation",
+    "ref": "Lk 2:19",
+    "verse": "And Mary kept all these things, reflecting on them in her heart.",
+    "reflection": "Today we celebrate Our Lady of the Rosary, a feast that Pope Saint Pius V established in thanksgiving after the battle of Lepanto, which had been entrusted to the prayer of the Christian people. But the heart of this feast lies in today's verse: Mary kept all these things, reflecting on them in her heart. That is what the Rosary is: remembering Jesus together with His Mother. As we close the week of the Joyful Mysteries, we learn from her not to let life slip by without looking at it in God's light.",
+    "prayer": "Our Lady of the Rosary, you kept in your heart every word and gesture of your Son; teach me to ponder as you did. Take my days, with their small joys, and help me discover God passing through them. Amen.",
+    "action": "Today pray the five Joyful Mysteries, or at least one, before an image of Mary. Before you begin, recall a happy moment from this week and offer it in thanksgiving."
+   }
+  },
+  {
+   "day": 8,
+   "feast": null,
+   "es": {
+    "title": "Bautismo: escuchar que eres amado",
+    "ref": "Mt 3,16-17",
+    "verse": "Apenas se bautizó Jesús, salió del agua; se abrieron los cielos y vio que el Espíritu de Dios bajaba como una paloma y se posaba sobre él. Y vino una voz de los cielos que decía: «Este es mi Hijo amado, en quien me complazco».",
+    "reflection": "Comienza la semana de los misterios luminosos. Jesús se mete en la fila de los pecadores en el Jordán y, al salir del agua, el Padre lo llama «mi Hijo amado». En tu bautismo esas palabras también se dijeron sobre ti. Antes de cualquier logro, antes de cualquier caída, eres hijo amado. Muchos cargamos voces interiores que dicen lo contrario; este misterio deja que la voz del Padre sea la última palabra sobre tu vida.",
+    "prayer": "Padre bueno, que llamaste amado a tu Hijo en el Jordán, ayúdame a creer que también me miras así. Espíritu Santo, renueva en mí la gracia del bautismo y sana las voces que me hacen dudar de tu amor. Amén.",
+    "action": "Averigua o recuerda la fecha de tu bautismo y anótala donde la veas. Haz la señal de la cruz con agua bendita, o simplemente con calma, y reza el primer misterio luminoso dando gracias por haber sido bautizado."
+   },
+   "en": {
+    "title": "Baptism: hearing that you are loved",
+    "ref": "Mt 3:16-17",
+    "verse": "After Jesus was baptized, he came up from the water and behold, the heavens were opened (for him), and he saw the Spirit of God descending like a dove (and) coming upon him. And a voice came from the heavens, saying, \"This is my beloved Son, with whom I am well pleased.\"",
+    "reflection": "The week of the Luminous Mysteries begins. Jesus steps into the line of sinners at the Jordan and, as He comes up from the water, the Father calls Him \"my beloved Son.\" At your baptism those words were spoken over you as well. Before any achievement, before any fall, you are a beloved child. Many of us carry inner voices that say otherwise; this mystery lets the Father's voice have the last word about your life.",
+    "prayer": "Good Father, who called Your Son beloved at the Jordan, help me believe that You look at me that way too. Holy Spirit, renew in me the grace of baptism and heal the voices that make me doubt Your love. Amen.",
+    "action": "Find out or recall the date of your baptism and write it where you'll see it. Make the sign of the cross with holy water, or simply and slowly, and pray the first Luminous Mystery giving thanks for being baptized."
+   }
+  },
+  {
+   "day": 9,
+   "feast": null,
+   "es": {
+    "title": "Caná: cuando se acaba el vino",
+    "ref": "Jn 2,3-5",
+    "verse": "Faltó el vino, y la madre de Jesús le dice: «No tienen vino». Jesús le dice: «Mujer, ¿qué tengo yo que ver contigo? Todavía no ha llegado mi hora». Su madre dice a los sirvientes: «Haced lo que él os diga».",
+    "reflection": "En plena fiesta de bodas se acaba el vino, y María es la primera en darse cuenta. No hace un discurso: le presenta la necesidad a su Hijo y dice a los sirvientes que hagan lo que él les diga. En el segundo misterio luminoso aprendemos a rezar así: contarle a Jesús lo que falta, sin dictarle la solución. Quizá en tu casa se acabó la paciencia, la alegría o el dinero. María sigue atenta a esas faltas.",
+    "prayer": "María, que viste lo que faltaba en Caná, mira también lo que falta en mi casa. Jesús, aquí tienes mis tinajas vacías; haz con ellas lo que quieras. Dame la docilidad de hacer lo que tú me digas. Amén.",
+    "action": "Reza el segundo misterio luminoso por un matrimonio que conozcas y que esté pasando un momento difícil. Si es tu caso, prepara hoy un detalle sencillo para tu pareja o tu familia, como una comida o una nota de agradecimiento."
+   },
+   "en": {
+    "title": "Cana: when the wine runs out",
+    "ref": "Jn 2:3-5",
+    "verse": "When the wine ran short, the mother of Jesus said to him, \"They have no wine.\" (And) Jesus said to her, \"Woman, how does your concern affect me? My hour has not yet come.\" His mother said to the servers, \"Do whatever he tells you.\"",
+    "reflection": "In the middle of a wedding feast the wine runs out, and Mary is the first to notice. She gives no speech: she brings the need to her Son and tells the servants to do whatever He tells them. In the second Luminous Mystery we learn to pray like this: telling Jesus what is lacking, without dictating the solution. Perhaps in your home patience, joy, or money has run out. Mary is still attentive to those shortages.",
+    "prayer": "Mary, who saw what was missing at Cana, look at what is missing in my home too. Jesus, here are my empty jars; do with them what You will. Give me the humility to do whatever You tell me. Amen.",
+    "action": "Pray the second Luminous Mystery for a married couple you know who are going through a hard time. If that's your situation, prepare a simple gesture today for your spouse or family, such as a meal or a note of thanks."
+   }
+  },
+  {
+   "day": 10,
+   "feast": null,
+   "es": {
+    "title": "El Reino está cerca, también hoy",
+    "ref": "Mc 1,14-15",
+    "verse": "Después de que Juan fue entregado, Jesús se marchó a Galilea a proclamar el Evangelio de Dios; decía: «Se ha cumplido el tiempo y está cerca el reino de Dios. Convertíos y creed en el Evangelio».",
+    "reflection": "En el tercer misterio luminoso Jesús recorre Galilea anunciando que el Reino de Dios está cerca y llamando a la conversión. Convertirse no es hundirse en la culpa, sino dar media vuelta hacia alguien que ya viene a tu encuentro con los brazos abiertos. Jesús perdonaba a los pecadores, sanaba a los enfermos y comía con los excluidos. Su Reino sigue entrando en el mundo cada vez que alguien se deja perdonar y empieza de nuevo.",
+    "prayer": "Señor Jesús, que anunciaste el Reino con palabras y con gestos de misericordia, conviérteme otra vez a ti. No quiero vivir con miedo a mis pecados, sino con confianza en tu perdón. Amén.",
+    "action": "Haz un breve examen de conciencia mirando la última semana con serenidad. Si hace tiempo que no te confiesas, busca el horario de confesiones de tu parroquia y apúntalo; puede ser un encuentro de paz, no un trámite temido."
+   },
+   "en": {
+    "title": "The Kingdom is near, today as well",
+    "ref": "Mk 1:14-15",
+    "verse": "After John had been arrested, Jesus came to Galilee proclaiming the gospel of God: \"This is the time of fulfillment. The kingdom of God is at hand. Repent, and believe in the gospel.\"",
+    "reflection": "In the third Luminous Mystery Jesus travels through Galilee proclaiming that the Kingdom of God is at hand and calling people to repent. Conversion isn't sinking into guilt; it's turning around toward Someone who is already coming to meet you with open arms. Jesus forgave sinners, healed the sick, and ate with the excluded. His Kingdom still breaks into the world every time someone lets themselves be forgiven and begins again.",
+    "prayer": "Lord Jesus, who proclaimed the Kingdom with words and with gestures of mercy, turn me back to You once more. I don't want to live in fear of my sins, but in trust in Your forgiveness. Amen.",
+    "action": "Make a short examination of conscience, looking calmly at the past week. If it has been a while since your last confession, look up your parish's confession times and note them down; it can be an encounter of peace, not a dreaded chore."
+   }
+  },
+  {
+   "day": 11,
+   "feast": null,
+   "es": {
+    "title": "Transfiguración: luz para el valle",
+    "ref": "Mt 17,1-2",
+    "verse": "Seis días más tarde, Jesús tomó consigo a Pedro, a Santiago y a su hermano Juan, y subió con ellos aparte a un monte alto. Se transfiguró delante de ellos, y su rostro resplandecía como el sol, y sus vestidos se volvieron blancos como la luz.",
+    "reflection": "Jesús sube a un monte con tres amigos y allí su rostro brilla como el sol. Les regala esa luz antes de que lleguen los días oscuros de la Pasión, para que no olviden quién es él. En el cuarto misterio luminoso pedimos esos momentos de claridad que sostienen en el valle. Todos tenemos algún recuerdo en que Dios se hizo cercano: un retiro, una confesión, una Misa, una conversación. Guardarlos ayuda a atravesar las noches.",
+    "prayer": "Jesús transfigurado, gracias por las veces en que me dejaste ver un poco de tu luz. Cuando todo se oscurezca, recuérdame tu rostro y dame fuerza para seguir bajando contigo al valle de cada día. Amén.",
+    "action": "Escribe en tu cuaderno un momento de tu vida en que sentiste a Dios especialmente cerca. Léelo despacio y reza el cuarto misterio luminoso dando gracias por esa luz."
+   },
+   "en": {
+    "title": "Transfiguration: light for the valley",
+    "ref": "Mt 17:1-2",
+    "verse": "After six days Jesus took Peter, James, and John his brother, and led them up a high mountain by themselves. And he was transfigured before them; his face shone like the sun and his clothes became white as light.",
+    "reflection": "Jesus climbs a mountain with three friends, and there His face shines like the sun. He gives them that light before the dark days of the Passion arrive, so they won't forget who He is. In the fourth Luminous Mystery we ask for those moments of clarity that carry us through the valley. We all have some memory of God drawing near: a retreat, a confession, a Mass, a conversation. Keeping them helps us get through the nights.",
+    "prayer": "Transfigured Jesus, thank You for the times You let me glimpse a little of Your light. When everything grows dark, remind me of Your face and give me strength to keep walking down with You into the valley of each day. Amen.",
+    "action": "Write in your notebook about a moment in your life when you felt God especially close. Read it slowly and pray the fourth Luminous Mystery, giving thanks for that light."
+   }
+  },
+  {
+   "day": 12,
+   "feast": null,
+   "es": {
+    "title": "La Eucaristía: un amor que se queda",
+    "ref": "Lc 22,19-20",
+    "verse": "Y, tomando pan, después de pronunciar la acción de gracias, lo partió y se lo dio diciendo: Esto es mi cuerpo, que se entrega por vosotros; haced esto en memoria mía. Después de cenar, hizo lo mismo con el cáliz diciendo: Este cáliz es la nueva alianza en mi sangre, que es derramada por vosotros.",
+    "reflection": "La noche antes de morir, Jesús toma pan, da gracias y dice: «Esto es mi cuerpo, que se entrega por vosotros». El quinto misterio luminoso nos lleva al Cenáculo, donde el Señor inventa la manera de quedarse con nosotros para siempre. Cada Misa hace presente ese mismo amor. Aunque llegues distraído o cansado, él te espera en el altar y en el sagrario, no como premio para los perfectos, sino como alimento para el camino.",
+    "prayer": "Jesús, presente en la Eucaristía, gracias por quedarte con nosotros. Aumenta mi fe en tu presencia y mi deseo de recibirte. Que cada comunión me haga un poco más parecido a ti. Amén.",
+    "action": "Si puedes, participa hoy en la Misa o haz una visita breve al Santísimo. Si no te es posible, reza el quinto misterio luminoso haciendo una comunión espiritual: dile a Jesús que deseas recibirlo en tu corazón."
+   },
+   "en": {
+    "title": "The Eucharist: a love that stays",
+    "ref": "Lk 22:19-20",
+    "verse": "Then he took the bread, said the blessing, broke it, and gave it to them, saying, This is my body, which will be given for you; do this in memory of me. And likewise the cup after they had eaten, saying, This cup is the new covenant in my blood, which will be shed for you.",
+    "reflection": "On the night before He died, Jesus takes bread, gives thanks, and says: \"This is my body, which will be given for you.\" The fifth Luminous Mystery brings us to the Upper Room, where the Lord invents a way to remain with us forever. Every Mass makes that same love present. Even if you arrive distracted or tired, He waits for you on the altar and in the tabernacle, not as a prize for the perfect but as food for the journey.",
+    "prayer": "Jesus, present in the Eucharist, thank You for staying with us. Increase my faith in Your presence and my desire to receive You. May every Communion make me a little more like You. Amen.",
+    "action": "If you can, go to Mass today or make a short visit to the Blessed Sacrament. If that isn't possible, pray the fifth Luminous Mystery while making a spiritual communion: tell Jesus you long to receive Him into your heart."
+   }
+  },
+  {
+   "day": 13,
+   "feast": null,
+   "es": {
+    "title": "Rezar distraído o cansado",
+    "ref": "Rom 8,26",
+    "verse": "Del mismo modo, el Espíritu acude en ayuda de nuestra debilidad, pues nosotros no sabemos pedir como conviene; pero el Espíritu mismo intercede por nosotros con gemidos inefables.",
+    "reflection": "Antes de entrar en los misterios dolorosos, una pausa para quien llega agotado. Quizá empiezas una decena y a la tercera avemaría ya estás pensando en el trabajo o en la cena. No pasa nada. San Pablo dice que no sabemos pedir como conviene y que el Espíritu viene en ayuda de nuestra debilidad. La distracción no anula tu oración: basta con volver, sin enfadarte, cada vez que te des cuenta. Ese volver humilde también es amor.",
+    "prayer": "Espíritu Santo, tú conoces mi cansancio y mis distracciones. Reza tú en mí cuando yo no sé cómo hacerlo. Recibe mi buena voluntad, aunque mi mente se vaya a otra parte, y tráeme de vuelta con suavidad. Amén.",
+    "action": "Reza una decena acostado o sentado en tu lugar más cómodo, sin exigirte nada. Cada vez que notes una distracción, conviértela en intención: si pensaste en tu jefe o en tu hijo, reza el siguiente avemaría por esa persona."
+   },
+   "en": {
+    "title": "Praying when distracted or tired",
+    "ref": "Rom 8:26",
+    "verse": "In the same way, the Spirit too comes to the aid of our weakness; for we do not know how to pray as we ought, but the Spirit itself intercedes with inexpressible groanings.",
+    "reflection": "Before we enter the Sorrowful Mysteries, a pause for anyone who arrives worn out. Maybe you start a decade and by the third Hail Mary you're already thinking about work or dinner. That's all right. Saint Paul says we do not know how to pray as we ought, and that the Spirit comes to help us in our weakness. Distraction doesn't cancel your prayer: just come back, without getting upset, each time you notice. That humble return is also love.",
+    "prayer": "Holy Spirit, You know my tiredness and my distractions. Pray in me when I don't know how. Receive my good will even when my mind wanders off, and gently bring me back. Amen.",
+    "action": "Pray one decade lying down or sitting in your most comfortable spot, expecting nothing of yourself. Each time you notice a distraction, turn it into an intention: if you thought of your boss or your child, pray the next Hail Mary for that person."
+   }
+  },
+  {
+   "day": 14,
+   "feast": null,
+   "es": {
+    "title": "Un solo misterio, sin prisa",
+    "ref": "Lc 10,41-42",
+    "verse": "Respondiendo, le dijo el Señor: «Marta, Marta, andas inquieta y preocupada con muchas cosas; solo una es necesaria. María, pues, ha escogido la parte mejor, y no le será quitada».",
+    "reflection": "Marta corre de un lado a otro; María se sienta a los pies de Jesús y lo escucha. Jesús no desprecia el trabajo de Marta, pero le recuerda que una sola cosa es necesaria. A veces queremos rezar el Rosario completo y, por las prisas, no rezamos nada. Hoy te proponemos lo contrario: elegir un único misterio y quedarte en él, como quien se sienta a mirar con calma. Un misterio bien contemplado puede alimentar todo un día.",
+    "prayer": "Jesús, me agito por muchas cosas y me olvido de lo único necesario. Siéntame a tus pies, aunque sea unos minutos. Que tu palabra me baste hoy y ordene todo lo demás. Amén.",
+    "action": "Elige el misterio de esta quincena que más te haya tocado. Reza su decena muy despacio y luego quédate tres minutos en silencio imaginando la escena, sin palabras, solo mirando a Jesús."
+   },
+   "en": {
+    "title": "One mystery, unhurried",
+    "ref": "Lk 10:41-42",
+    "verse": "The Lord said to her in reply, \"Martha, Martha, you are anxious and worried about many things. There is need of only one thing. Mary has chosen the better part and it will not be taken from her.\"",
+    "reflection": "Martha rushes from one task to another; Mary sits at Jesus' feet and listens. Jesus doesn't despise Martha's work, but He reminds her that only one thing is needed. Sometimes we want to pray the whole Rosary and, in our hurry, end up praying nothing. Today we suggest the opposite: choose a single mystery and stay with it, like someone who sits down to look at something calmly. One mystery well contemplated can nourish a whole day.",
+    "prayer": "Jesus, I worry about many things and forget the one thing that matters. Sit me at Your feet, even for a few minutes. Let Your word be enough for me today and put everything else in order. Amen.",
+    "action": "Choose the mystery from these two weeks that touched you most. Pray its decade very slowly, then stay three minutes in silence picturing the scene, with no words, just looking at Jesus."
+   }
+  },
+  {
+   "day": 15,
+   "feast": {
+    "es": "Santa Teresa de Jesús",
+    "en": "Saint Teresa of Jesus (of Avila)"
+   },
+   "es": {
+    "title": "Getsemaní: acompañar al Amigo",
+    "ref": "Mt 26,38",
+    "verse": "Entonces les dijo: «Mi alma está triste hasta la muerte; quedaos aquí y velad conmigo».",
+    "reflection": "Santa Teresa de Jesús, reformadora del Carmelo y doctora de la Iglesia, entendía la oración como un trato de amistad con quien sabemos que nos ama. Insistía en no apartar la mirada de la humanidad de Cristo. Así entramos hoy en el primer misterio doloroso: Jesús, triste hasta la muerte, pide a sus amigos que se queden y velen con él. No pide grandes discursos; pide compañía. Tu oración, aunque sea pobre, puede ser esa compañía.",
+    "prayer": "Jesús, que en el huerto pediste a tus amigos que velaran contigo, quiero acompañarte hoy. Santa Teresa, enséñame a tratar con Jesús como con un amigo de verdad, con sencillez y confianza. Amén.",
+    "action": "Reza el primer misterio doloroso por la noche, con la luz baja, imaginando que te sientas junto a Jesús en Getsemaní. Antes de terminar, cuéntale con tus palabras una tristeza tuya, como a un amigo que también sabe de angustias."
+   },
+   "en": {
+    "title": "Gethsemane: keeping the Friend company",
+    "ref": "Mt 26:38",
+    "verse": "Then he said to them, \"My soul is sorrowful even to death. Remain here and keep watch with me.\"",
+    "reflection": "Saint Teresa of Jesus, reformer of Carmel and Doctor of the Church, understood prayer as a friendship with the One we know loves us. She insisted on never turning our gaze away from the humanity of Christ. That is how we enter the first Sorrowful Mystery today: Jesus, sorrowful even to death, asks His friends to stay and keep watch with Him. He doesn't ask for grand speeches; He asks for company. Your prayer, however poor, can be that company.",
+    "prayer": "Jesus, who asked Your friends in the garden to keep watch with You, I want to stay with You today. Saint Teresa, teach me to treat Jesus as a true friend, with simplicity and trust. Amen.",
+    "action": "Pray the first Sorrowful Mystery in the evening, with the lights low, imagining yourself sitting beside Jesus in Gethsemane. Before you finish, tell Him in your own words about a sorrow of yours, as you would a friend who also knows anguish."
+   }
+  },
+  {
+   "day": 16,
+   "feast": null,
+   "es": {
+    "title": "Heridas que sanan las nuestras",
+    "ref": "Is 53,5",
+    "verse": "pero él fue traspasado por nuestras rebeliones, triturado por nuestros crímenes. Nuestro castigo saludable cayó sobre él, sus cicatrices nos curaron.",
+    "reflection": "El segundo misterio doloroso es difícil de mirar: Jesús, atado y golpeado por los soldados. Isaías lo vio de lejos: sus heridas nos han curado. Si llevas una lucha que se repite, una caída que vuelve una y otra vez, este misterio no es para acusarte, sino para mostrarte hasta dónde llega el amor. Él cargó en su cuerpo lo que tú no puedes sanar solo. Mira sus heridas y deja que te digan: no estás perdido, sigues siendo amado.",
+    "prayer": "Jesús herido por mí, pongo ante ti esa lucha que se repite y que tanto me avergüenza. No me dejes escondido en la culpa. Que tus heridas sanen las mías y me den fuerza para levantarme otra vez. Amén.",
+    "action": "Si has caído recientemente, no te hundas en reproches: reza el segundo misterio doloroso repitiendo en cada avemaría el nombre de Jesús. Si llevas tiempo sin confesarte, considera hacerlo esta semana con serenidad."
+   },
+   "en": {
+    "title": "Wounds that heal our own",
+    "ref": "Is 53:5",
+    "verse": "But he was pierced for our offenses, crushed for our sins, Upon him was the chastisement that makes us whole, by his stripes we were healed.",
+    "reflection": "The second Sorrowful Mystery is hard to look at: Jesus, bound and beaten by the soldiers. Isaiah saw it from afar: by his wounds we were healed. If you carry a struggle that keeps repeating, a fall that comes back again and again, this mystery is not here to accuse you but to show you how far love goes. He bore in His body what you cannot heal on your own. Look at His wounds and let them tell you: you are not lost, you are still loved.",
+    "prayer": "Jesus, wounded for me, I set before You the struggle that keeps repeating and that shames me so much. Don't let me hide in guilt. May Your wounds heal mine and give me strength to rise once more. Amen.",
+    "action": "If you have fallen recently, don't beat yourself up: pray the second Sorrowful Mystery, gently repeating the name of Jesus in each Hail Mary. If it has been a while since confession, consider going this week, calmly."
+   }
+  },
+  {
+   "day": 17,
+   "feast": {
+    "es": "San Ignacio de Antioquía",
+    "en": "Saint Ignatius of Antioch"
+   },
+   "es": {
+    "title": "Coronado de espinas, Rey de los mártires",
+    "ref": "Mt 27,29",
+    "verse": "y trenzando una corona de espinas se la ciñeron a la cabeza y le pusieron una caña en la mano derecha. Y doblando ante él la rodilla, se burlaban de él diciendo: «¡Salve, rey de los judíos!».",
+    "reflection": "Los soldados se burlan de Jesús: le ponen una corona de espinas, una caña en la mano y se arrodillan entre risas. En el tercer misterio doloroso contemplamos a un Rey que no se defiende. San Ignacio, obispo de Antioquía, fue llevado encadenado a Roma para morir por Cristo y, durante el viaje, escribió cartas a las Iglesias animándolas a la unidad y a la Eucaristía. Supo a qué Rey pertenecía. También hoy muchos cristianos sufren burlas y persecución por su fe.",
+    "prayer": "Jesús, Rey coronado de espinas, cuando me humillen o se rían de mi fe, dame tu mansedumbre. San Ignacio de Antioquía, ruega por los cristianos perseguidos y por los obispos que hoy cuidan de la Iglesia. Amén.",
+    "action": "Reza el tercer misterio doloroso por los cristianos perseguidos en el mundo. Después escribe una nota breve de ánimo, en papel o por mensaje, a un sacerdote o catequista que conozcas, agradeciéndole su servicio."
+   },
+   "en": {
+    "title": "Crowned with thorns, King of martyrs",
+    "ref": "Mt 27:29",
+    "verse": "Weaving a crown out of thorns, they placed it on his head, and a reed in his right hand. And kneeling before him, they mocked him, saying, \"Hail, King of the Jews!\"",
+    "reflection": "The soldiers mock Jesus: they put a crown of thorns on His head, a reed in His hand, and kneel before Him laughing. In the third Sorrowful Mystery we contemplate a King who does not defend Himself. Saint Ignatius, bishop of Antioch, was taken in chains to Rome to die for Christ and, along the way, wrote letters to the Churches urging them toward unity and the Eucharist. He knew which King he belonged to. Today, too, many Christians endure ridicule and persecution for their faith.",
+    "prayer": "Jesus, King crowned with thorns, when people humiliate me or laugh at my faith, give me Your gentleness. Saint Ignatius of Antioch, pray for persecuted Christians and for the bishops who care for the Church today. Amen.",
+    "action": "Pray the third Sorrowful Mystery for Christians persecuted around the world. Then write a short note of encouragement, on paper or by message, to a priest or catechist you know, thanking them for their service."
+   }
+  },
+  {
+   "day": 18,
+   "feast": {
+    "es": "San Lucas, evangelista",
+    "en": "Saint Luke, Evangelist"
+   },
+   "es": {
+    "title": "Con la cruz, por el camino de Lucas",
+    "ref": "Lc 23,26-27",
+    "verse": "Mientras lo conducían, echaron mano de un cierto Simón de Cirene, que volvía del campo, y le cargaron la cruz, para que la llevase detrás de Jesús. Lo seguía un gran gentío del pueblo, y de mujeres que se golpeaban el pecho y lanzaban lamentos por él.",
+    "reflection": "Hoy celebramos a San Lucas, el evangelista que nos dejó los relatos de la infancia de Jesús que rezamos en los misterios gozosos y que tanto subraya la misericordia de Dios. Él es quien cuenta que Simón de Cirene fue obligado a cargar la cruz detrás de Jesús, y que un grupo de mujeres lo seguía llorando. En el cuarto misterio doloroso descubrimos que nadie lleva su cruz completamente solo: siempre hay un Cireneo, y a veces nos toca serlo.",
+    "prayer": "Jesús, que aceptaste la ayuda del Cireneo, enséñame a dejarme ayudar y a ayudar a otros a cargar su cruz. San Lucas, que escribiste con tanto cariño sobre la misericordia, ruega por nosotros. Amén.",
+    "action": "Lee despacio el relato del camino de la cruz en Lucas 23, versículos 26 al 32. Luego piensa en alguien que carga hoy algo pesado y ofrécele una ayuda concreta: un encargo, una comida, una hora de compañía."
+   },
+   "en": {
+    "title": "Carrying the cross, along Luke's road",
+    "ref": "Lk 23:26-27",
+    "verse": "As they led him away they took hold of a certain Simon, a Cyrenian, who was coming in from the country; and after laying the cross on him, they made him carry it behind Jesus. A large crowd of people followed Jesus, including many women who mourned and lamented him.",
+    "reflection": "Today we celebrate Saint Luke, the evangelist who gave us the accounts of Jesus' childhood that we pray in the Joyful Mysteries and who so strongly highlights God's mercy. He is the one who tells us that Simon of Cyrene was made to carry the cross behind Jesus, and that a group of women followed Him weeping. In the fourth Sorrowful Mystery we discover that no one carries their cross completely alone: there is always a Simon, and sometimes we are called to be one.",
+    "prayer": "Jesus, who accepted Simon's help, teach me to let others help me and to help others carry their cross. Saint Luke, who wrote so lovingly about mercy, pray for us. Amen.",
+    "action": "Slowly read the account of the way of the cross in Luke 23, verses 26 to 32. Then think of someone carrying something heavy today and offer them concrete help: an errand, a meal, an hour of company."
+   }
+  },
+  {
+   "day": 19,
+   "feast": null,
+   "es": {
+    "title": "La Cruz: un perdón más grande",
+    "ref": "Lc 23,33-34",
+    "verse": "Y cuando llegaron al lugar llamado «La Calavera», lo crucificaron allí, a él y a los malhechores, uno a la derecha y otro a la izquierda. Jesús decía: «Padre, perdónalos, porque no saben lo que hacen». Hicieron lotes con sus ropas y los echaron a suerte.",
+    "reflection": "Clavado en la cruz, cuando cualquiera gritaría de rabia, Jesús reza por quienes lo crucifican: «Padre, perdónalos, porque no saben lo que hacen». El quinto misterio doloroso es el centro de todo el Rosario: aquí se ve hasta dónde llega el amor de Dios. No hay pecado tuyo que quede fuera de esa oración. Al pie de la cruz está María, de pie, y Jesús nos la entrega como Madre. Ella nos enseña a quedarnos junto a él cuando duele.",
+    "prayer": "Jesús crucificado, tu perdón es más grande que mis pecados y que mis rencores. Gracias por amarme hasta el extremo. María, Madre al pie de la cruz, quédate conmigo en mis horas difíciles. Amén.",
+    "action": "Si tienes un crucifijo, tómalo en las manos mientras rezas el quinto misterio doloroso; si no, mira una imagen de la cruz. Al final, guarda un minuto de silencio y di solo: «Gracias, Jesús, por amarme así»."
+   },
+   "en": {
+    "title": "The Cross: a greater forgiveness",
+    "ref": "Lk 23:33-34",
+    "verse": "When they came to the place called the Skull, they crucified him and the criminals there, one on his right, the other on his left. [Then Jesus said, \"Father, forgive them, they know not what they do.\"] They divided his garments by casting lots.",
+    "reflection": "Nailed to the cross, when anyone would scream with rage, Jesus prays for those crucifying Him: \"Father, forgive them, they know not what they do.\" The fifth Sorrowful Mystery is the center of the whole Rosary: here we see how far God's love goes. No sin of yours lies outside that prayer. At the foot of the cross stands Mary, and Jesus gives her to us as our Mother. She teaches us to stay beside Him when it hurts.",
+    "prayer": "Crucified Jesus, Your forgiveness is greater than my sins and my grudges. Thank You for loving me to the end. Mary, Mother at the foot of the cross, stay with me in my hard hours. Amen.",
+    "action": "If you have a crucifix, hold it in your hands as you pray the fifth Sorrowful Mystery; if not, look at an image of the cross. At the end, keep a minute of silence and simply say: \"Thank You, Jesus, for loving me like this.\""
+   }
+  },
+  {
+   "day": 20,
+   "feast": null,
+   "es": {
+    "title": "Cuentas que siembran paz",
+    "ref": "Jn 14,27",
+    "verse": "La paz os dejo, mi paz os doy; no os la doy yo como la da el mundo. Que no se turbe vuestro corazón ni se acobarde.",
+    "reflection": "Tras recorrer la Pasión, hacemos un alto para rezar por la paz. Jesús no promete una paz como la del mundo, frágil y hecha de acuerdos, sino la suya, que nace de un corazón reconciliado con Dios. Muchas veces la Iglesia ha pedido a los fieles el Rosario por la paz en tiempos de guerra. Hoy también hay pueblos heridos por la violencia, y familias divididas. Tu decena no resolverá todo, pero une tu voz a la de muchos que piden lo mismo.",
+    "prayer": "Señor Jesús, Príncipe de la paz, mira a los pueblos que sufren la guerra y a las familias rotas por la violencia. Reina de la paz, intercede por nosotros. Empieza por pacificar mi propio corazón. Amén.",
+    "action": "Busca en las noticias, sin quedarte enganchado, el nombre de un país que sufre la guerra. Reza una decena por su gente y, si puedes, haz un donativo discreto a una organización católica que ayude allí."
+   },
+   "en": {
+    "title": "Beads that sow peace",
+    "ref": "Jn 14:27",
+    "verse": "Peace I leave with you; my peace I give to you. Not as the world gives do I give it to you. Do not let your hearts be troubled or afraid.",
+    "reflection": "Having walked through the Passion, we pause to pray for peace. Jesus doesn't promise a peace like the world's, fragile and built on deals, but His own, born of a heart reconciled with God. Many times the Church has asked the faithful to pray the Rosary for peace in times of war. Today, too, there are nations wounded by violence and families torn apart. Your decade won't fix everything, but it joins your voice to the many who ask for the same thing.",
+    "prayer": "Lord Jesus, Prince of Peace, look upon the nations suffering war and the families broken by violence. Queen of Peace, intercede for us. Begin by bringing peace to my own heart. Amen.",
+    "action": "Check the news, without getting hooked, for the name of a country suffering from war. Pray a decade for its people and, if you can, make a discreet donation to a Catholic organization helping there."
+   }
+  },
+  {
+   "day": 21,
+   "feast": null,
+   "es": {
+    "title": "Una decena junto a la cama",
+    "ref": "Sant 5,14-15",
+    "verse": "¿Está en- fermo alguno de vosotros? Llame a los presbíteros de la Iglesia, que recen por él y lo unjan con óleo en el nombre del Señor. La oración hecha con fe salvará al enfermo y el Señor lo restablecerá; y si hubiera cometido algún pecado, le será perdonado.",
+    "reflection": "Santiago anima a la comunidad a rezar por los enfermos y a llamar a los presbíteros para ungirlos en el nombre del Señor. La Iglesia nunca ha dejado solos a los que sufren. Muchos enfermos tienen el rosario entre las manos cuando ya no pueden rezar otra cosa; las cuentas se vuelven una compañía. Hoy pensamos en quienes están en un hospital, en casa sin poder salir, o cuidando de un familiar sin descanso. María, Salud de los enfermos, está cerca de ellos.",
+    "prayer": "Señor, que pasaste haciendo el bien y curando, mira a los enfermos que conozco y a quienes los cuidan. Dales alivio, paciencia y compañía. María, Salud de los enfermos, sostenlos con tu ternura. Amén.",
+    "action": "Reza una decena diciendo antes de cada avemaría el nombre de un enfermo. Si alguno no ha recibido la Unción de los enfermos y la desea, ayúdale a contactar con su parroquia. Si no puedes visitar, envía un mensaje de cariño."
+   },
+   "en": {
+    "title": "A decade at the bedside",
+    "ref": "Jas 5:14-15",
+    "verse": "Is anyone among you sick? He should summon the presbyters of the church, and they should pray over him and anoint (him) with oil in the name of the Lord, and the prayer of faith will save the sick person, and the Lord will raise him up. If he has committed any sins, he will be forgiven.",
+    "reflection": "James encourages the community to pray for the sick and to call the presbyters to anoint them in the name of the Lord. The Church has never left those who suffer alone. Many sick people hold a rosary in their hands when they can no longer pray anything else; the beads become companionship. Today we think of those in hospital, those confined at home, and those caring for a relative without rest. Mary, Health of the Sick, is close to them.",
+    "prayer": "Lord, who went about doing good and healing, look upon the sick people I know and those who care for them. Give them relief, patience, and company. Mary, Health of the Sick, hold them in your tenderness. Amen.",
+    "action": "Pray a decade, saying the name of a sick person before each Hail Mary. If someone wishes to receive the Anointing of the Sick and hasn't yet, help them contact their parish. If you can't visit, send a loving message."
+   }
+  },
+  {
+   "day": 22,
+   "feast": {
+    "es": "San Juan Pablo II",
+    "en": "Saint John Paul II"
+   },
+   "es": {
+    "title": "Resurrección: no tengas miedo",
+    "ref": "Mt 28,5-6",
+    "verse": "El ángel habló a las mujeres: Vosotras no temáis, ya sé que buscáis a Jesús el crucificado. No está aquí: ¡ha resucitado!, como había dicho. Venid a ver el sitio donde yacía…",
+    "reflection": "Comienza la semana de los misterios gloriosos con la mañana de Pascua: el ángel dice a las mujeres que no teman, porque Jesús ha resucitado. San Juan Pablo II repitió muchas veces a jóvenes y adultos esa invitación del Evangelio a no tener miedo de abrir las puertas a Cristo. Fue un gran enamorado del Rosario y propuso a la Iglesia los misterios luminosos que rezamos hace dos semanas. Su vida, marcada también por la enfermedad, mostró que la Resurrección sostiene hasta el final.",
+    "prayer": "Jesús resucitado, quita de mí los miedos que me paralizan. San Juan Pablo II, que amaste tanto a María y a los jóvenes, intercede por los muchachos que buscan sentido y por mí, para que viva con la esperanza de la Pascua. Amén.",
+    "action": "Reza el primer misterio glorioso por un joven concreto de tu entorno. Después escríbele unas palabras de ánimo o pregúntale por sus planes, mostrando interés sincero sin sermones."
+   },
+   "en": {
+    "title": "Resurrection: be not afraid",
+    "ref": "Mt 28:5-6",
+    "verse": "Then the angel said to the women in reply, Do not be afraid! I know that you are seeking Jesus the crucified. He is not here, for he has been raised just as he said. Come and see the place where he lay.",
+    "reflection": "The week of the Glorious Mysteries begins on Easter morning: the angel tells the women not to be afraid, for Jesus has been raised. Saint John Paul II often repeated to young people and adults this Gospel invitation not to be afraid to open the doors to Christ. He deeply loved the Rosary and gave the Church the Luminous Mysteries we prayed two weeks ago. His life, marked also by illness, showed that the Resurrection sustains us to the very end.",
+    "prayer": "Risen Jesus, take away the fears that paralyze me. Saint John Paul II, who loved Mary and young people so much, intercede for the young who are searching for meaning, and for me, that I may live with the hope of Easter. Amen.",
+    "action": "Pray the first Glorious Mystery for a specific young person in your life. Then write them a few words of encouragement or ask about their plans, showing sincere interest without lecturing."
+   }
+  },
+  {
+   "day": 23,
+   "feast": null,
+   "es": {
+    "title": "Ascensión: con los pies en la tierra",
+    "ref": "Hch 1,10-11",
+    "verse": "Cuando miraban fijos al cielo, mientras él se iba marchando, se les presentaron dos hombres vestidos de blanco, que les dijeron: «Galileos, ¿qué hacéis ahí plantados mirando al cielo? El mismo Jesús que ha sido tomado de entre vosotros y llevado al cielo, volverá como lo habéis visto marcharse al cielo».",
+    "reflection": "Jesús sube al cielo y los discípulos se quedan mirando hacia arriba, quizá con nostalgia. Dos hombres vestidos de blanco les preguntan por qué siguen allí plantados. En el segundo misterio glorioso aprendemos que esperar el cielo no es evadirse de la tierra. Jesús no se ha ido lejos: está junto al Padre preparándonos un lugar y, a la vez, nos envía a vivir el Evangelio en el trabajo, en casa, en la calle. Mirar arriba da fuerza para mirar alrededor.",
+    "prayer": "Señor Jesús, que subiste al cielo sin dejarnos solos, aviva en mí el deseo de estar contigo para siempre. Que esa esperanza no me aleje de las tareas de hoy, sino que me haga vivirlas con más amor. Amén.",
+    "action": "Reza el segundo misterio glorioso caminando, al aire libre si puedes, levantando la vista al cielo al comienzo de cada avemaría. Luego haz bien y con alegría una tarea pendiente que llevas días posponiendo."
+   },
+   "en": {
+    "title": "Ascension: feet on the ground",
+    "ref": "Acts 1:10-11",
+    "verse": "While they were looking intently at the sky as he was going, suddenly two men dressed in white garments stood beside them. They said, \"Men of Galilee, why are you standing there looking at the sky? This Jesus who has been taken up from you into heaven will return in the same way as you have seen him going into heaven.\"",
+    "reflection": "Jesus ascends into heaven, and the disciples stand gazing upward, perhaps with longing. Two men dressed in white ask them why they are still standing there. In the second Glorious Mystery we learn that hoping for heaven isn't escaping from earth. Jesus hasn't gone far: He is with the Father preparing a place for us, and at the same time He sends us to live the Gospel at work, at home, on the street. Looking up gives strength to look around.",
+    "prayer": "Lord Jesus, who ascended into heaven without leaving us alone, stir up in me the longing to be with You forever. May that hope not pull me away from today's tasks but help me live them with more love. Amen.",
+    "action": "Pray the second Glorious Mystery while walking, outdoors if you can, lifting your eyes to the sky at the start of each Hail Mary. Then cheerfully finish a pending task you have been putting off for days."
+   }
+  },
+  {
+   "day": 24,
+   "feast": null,
+   "es": {
+    "title": "Pentecostés: el fuego que da voz",
+    "ref": "Hch 2,3-4",
+    "verse": "Vieron aparecer unas lenguas, como llamaradas, que se dividían, posándose encima de cada uno de ellos. Se llenaron todos de Espíritu Santo y empezaron a hablar en otras lenguas, según el Espíritu les concedía manifestarse.",
+    "reflection": "Los apóstoles estaban encerrados con María, rezando y con miedo. Entonces llega el Espíritu Santo como lenguas de fuego y aquellos hombres temerosos empiezan a hablar de Jesús con valentía. El tercer misterio glorioso es para quien siente que no sabe hablar de su fe o que su fe se ha apagado. No hace falta tener las palabras preparadas: el Espíritu sigue soplando y enciende lo que parecía frío. María estaba allí, en medio de la Iglesia naciente, y sigue estando.",
+    "prayer": "Ven, Espíritu Santo, enciende en mí el fuego de tu amor. Dame palabras sencillas para hablar de Jesús y valentía para no esconder mi fe. María, Madre de la Iglesia, reza conmigo como en el Cenáculo. Amén.",
+    "action": "Antes de rezar el tercer misterio glorioso, invoca al Espíritu Santo con una oración breve. Después, si surge con naturalidad, comparte con alguien de confianza algo bueno que Dios ha hecho en tu vida, sin forzar."
+   },
+   "en": {
+    "title": "Pentecost: the fire that gives a voice",
+    "ref": "Acts 2:3-4",
+    "verse": "Then there appeared to them tongues as of fire, which parted and came to rest on each one of them. And they were all filled with the holy Spirit and began to speak in different tongues, as the Spirit enabled them to proclaim.",
+    "reflection": "The apostles were shut in with Mary, praying and afraid. Then the Holy Spirit comes like tongues of fire, and those fearful men begin to speak about Jesus with courage. The third Glorious Mystery is for anyone who feels they don't know how to talk about their faith, or that their faith has gone out. You don't need prepared words: the Spirit still blows and sets alight what seemed cold. Mary was there, at the heart of the newborn Church, and she still is.",
+    "prayer": "Come, Holy Spirit, kindle in me the fire of Your love. Give me simple words to speak of Jesus and courage not to hide my faith. Mary, Mother of the Church, pray with me as you did in the Upper Room. Amen.",
+    "action": "Before praying the third Glorious Mystery, call on the Holy Spirit with a short prayer. Afterward, if it comes up naturally, share with someone you trust one good thing God has done in your life, without forcing it."
+   }
+  },
+  {
+   "day": 25,
+   "feast": null,
+   "es": {
+    "title": "Asunción: el destino de nuestro cuerpo",
+    "ref": "Lc 1,48-49",
+    "verse": "porque ha mirado la humildad de su esclava. Desde ahora me felicitarán todas las generaciones, porque el Poderoso ha hecho obras grandes en mí: su nombre es santo…",
+    "reflection": "En el cuarto misterio glorioso contemplamos a María llevada en cuerpo y alma a la gloria del cielo al terminar su vida en la tierra. Ella misma lo había cantado en el Magníficat: el Poderoso ha hecho obras grandes en su humilde esclava. La Asunción nos dice que Dios ama también nuestro cuerpo, el cansado, el enfermo, el que envejece. Lo que hizo en María es una promesa para nosotros: no estamos hechos para el polvo, sino para la vida plena junto a él.",
+    "prayer": "María, llevada al cielo en cuerpo y alma, mira mi cuerpo cansado y mis días frágiles. Ayúdame a cuidar de mí con respeto y a esperar la resurrección. Señor, gracias por las obras grandes que haces en los humildes. Amén.",
+    "action": "Cuida hoy tu cuerpo como un don de Dios: acuéstate un poco antes, bebe agua, camina unos minutos o come con calma. Reza el cuarto misterio glorioso dando gracias por tu cuerpo, incluso con sus límites."
+   },
+   "en": {
+    "title": "Assumption: where our bodies are headed",
+    "ref": "Lk 1:48-49",
+    "verse": "For he has looked upon his handmaid's lowliness; behold, from now on will all ages call me blessed. The Mighty One has done great things for me, and holy is his name.",
+    "reflection": "In the fourth Glorious Mystery we contemplate Mary taken up body and soul into the glory of heaven at the end of her earthly life. She herself had sung it in the Magnificat: the Mighty One has done great things for His lowly servant. The Assumption tells us that God loves our bodies too, the tired one, the sick one, the one growing old. What He did in Mary is a promise for us: we are not made for dust but for full life with Him.",
+    "prayer": "Mary, taken up body and soul into heaven, look upon my tired body and my fragile days. Help me care for myself with respect and hope for the resurrection. Lord, thank You for the great things You do in the lowly. Amen.",
+    "action": "Today care for your body as a gift from God: go to bed a little earlier, drink water, take a short walk, or eat slowly. Pray the fourth Glorious Mystery giving thanks for your body, limits and all."
+   }
+  },
+  {
+   "day": 26,
+   "feast": null,
+   "es": {
+    "title": "Coronación: una Reina que sirve",
+    "ref": "Ap 12,1",
+    "verse": "Un gran signo apareció en el cielo: una mujer vestida del sol, y la luna bajo sus pies y una corona de doce estrellas sobre su cabeza…",
+    "reflection": "El Apocalipsis muestra una mujer vestida de sol, con la luna bajo sus pies y una corona de doce estrellas. La Iglesia ve en ella a María, Reina del cielo y de la tierra. En el quinto misterio glorioso cerramos el recorrido de los misterios. Pero su realeza no se parece a la de los poderosos: es la de la sierva que dijo sí en Nazaret, se dio prisa para servir y permaneció al pie de la cruz. Reina como reina su Hijo, amando y cuidando.",
+    "prayer": "María, Reina y Madre, te entrego mi vida entera, con lo que soy y con lo que me falta. Reina en mi corazón como reinas en el cielo, con ternura de madre, y llévame cada día más cerca de Jesús. Amén.",
+    "action": "Reza el quinto misterio glorioso y, al terminar, haz una consagración sencilla a María con tus propias palabras. Después ofrece un servicio escondido en casa que nadie note, como gesto de su realeza humilde."
+   },
+   "en": {
+    "title": "Coronation: a Queen who serves",
+    "ref": "Rv 12:1",
+    "verse": "A great sign appeared in the sky, a woman clothed with the sun, with the moon under her feet, and on her head a crown of twelve stars.",
+    "reflection": "Revelation shows a woman clothed with the sun, the moon under her feet, and a crown of twelve stars. The Church sees in her Mary, Queen of heaven and earth. In the fifth Glorious Mystery we complete our journey through the mysteries. Yet her queenship is nothing like that of the powerful: it belongs to the servant who said yes at Nazareth, hurried to help, and stood at the foot of the cross. She reigns as her Son reigns, by loving and caring.",
+    "prayer": "Mary, Queen and Mother, I entrust my whole life to you, with what I am and what I lack. Reign in my heart as you reign in heaven, with a mother's tenderness, and bring me closer to Jesus every day. Amen.",
+    "action": "Pray the fifth Glorious Mystery and, when you finish, make a simple consecration to Mary in your own words. Then offer a hidden service at home that no one will notice, as a sign of her humble queenship."
+   }
+  },
+  {
+   "day": 27,
+   "feast": null,
+   "es": {
+    "title": "Un Rosario que da la vuelta al mundo",
+    "ref": "Rom 10,14-15",
+    "verse": "Ahora bien, ¿cómo invocarán a aquel en quien no han creído?; ¿cómo creerán en aquel de quien no han oído hablar?; ¿cómo oirán hablar de él sin nadie que anuncie? y ¿cómo anunciarán si no los envían? Según está escrito: ¡Qué hermosos los pies de los que anuncia n la Buena Noticia del bien!",
+    "reflection": "Octubre es el mes misionero. San Pablo pregunta cómo van a creer si nadie les anuncia, y llama hermosos a los pies de quienes llevan la buena noticia. Hoy hay misioneros, religiosas, sacerdotes y laicos que dejaron su tierra para servir en lugares lejanos, a veces en medio de la pobreza o el peligro. Nosotros quizá no podamos viajar, pero sí sostenerlos. Hay quienes rezan cada decena por un continente: así el Rosario da la vuelta al mundo.",
+    "prayer": "Señor de la mies, envía obreros a tu campo y sostén a los misioneros cansados o en peligro. Que no les falte tu consuelo ni nuestro apoyo. María, Estrella de la evangelización, acompaña sus pasos. Amén.",
+    "action": "Reza cinco decenas, o al menos cinco avemarías, cada una por un continente: África, América, Asia, Europa y Oceanía. Si puedes, aparta una pequeña limosna para las misiones, por ejemplo en la colecta del Domingo Mundial de las Misiones."
+   },
+   "en": {
+    "title": "A Rosary that circles the world",
+    "ref": "Rom 10:14-15",
+    "verse": "But how can they call on him in whom they have not believed? And how can they believe in him of whom they have not heard? And how can they hear without someone to preach? And how can people preach unless they are sent? As it is written, \"How beautiful are the feet of those who bring (the) good news!\"",
+    "reflection": "October is mission month. Saint Paul asks how people will believe if no one preaches to them, and he calls beautiful the feet of those who bring good news. Today there are missionaries, sisters, priests, and lay people who left their homeland to serve in faraway places, sometimes amid poverty or danger. We may not be able to travel, but we can hold them up. Some people pray each decade for a continent: that way the Rosary circles the whole world.",
+    "prayer": "Lord of the harvest, send laborers into Your field and sustain missionaries who are weary or in danger. May they never lack Your comfort or our support. Mary, Star of evangelization, walk with them. Amen.",
+    "action": "Pray five decades, or at least five Hail Marys, each one for a continent: Africa, the Americas, Asia, Europe, and Oceania. If you can, set aside a small gift for the missions, for example in your parish's World Mission Sunday collection."
+   }
+  },
+  {
+   "day": 28,
+   "feast": {
+    "es": "Santos Simón y Judas, apóstoles",
+    "en": "Saints Simon and Jude, Apostles"
+   },
+   "es": {
+    "title": "Apóstoles discretos, fe entregada",
+    "ref": "Lc 6,15-16",
+    "verse": "Mateo, Tomás, Santiago el de Alfeo, Simón, llamado el Zelote; Judas el de Santiago y Judas Iscariote, que fue el traidor.",
+    "reflection": "Simón el Zelote y Judas Tadeo aparecen casi siempre al final de la lista de los Doce, y apenas sabemos detalles de su vida. Sin embargo, Jesús los eligió por su nombre y la tradición cuenta que llevaron el Evangelio lejos y dieron la vida por él. A San Judas Tadeo muchos fieles lo invocan en las causas difíciles. Su fiesta consuela a quien se siente poco visible: para Dios nadie es un nombre de relleno, y una fidelidad discreta puede dar mucho fruto.",
+    "prayer": "Santos Simón y Judas, apóstoles fieles, intercedan por esa causa que me parece imposible. Jesús, que me llamaste por mi nombre, dame la alegría de servirte aunque nadie lo vea. Amén.",
+    "action": "Reza una decena por una causa difícil que llevas en el corazón, poniéndola en manos de San Judas Tadeo. Después agradece a alguien que hace un trabajo poco visible en tu parroquia, tu casa o tu trabajo."
+   },
+   "en": {
+    "title": "Quiet apostles, faith poured out",
+    "ref": "Lk 6:15-16",
+    "verse": "Matthew, Thomas, James the son of Alphaeus, Simon who was called a Zealot, and Judas the son of James, and Judas Iscariot, who became a traitor.",
+    "reflection": "Simon the Zealot and Jude Thaddeus almost always appear at the end of the list of the Twelve, and we know few details of their lives. Yet Jesus chose them by name, and tradition holds that they carried the Gospel far away and gave their lives for Him. Many of the faithful call on Saint Jude in difficult causes. Their feast comforts anyone who feels unseen: to God no one is a filler name, and quiet faithfulness can bear much fruit.",
+    "prayer": "Saints Simon and Jude, faithful apostles, intercede for the cause that seems impossible to me. Jesus, who called me by name, give me the joy of serving You even when no one sees. Amen.",
+    "action": "Pray a decade for a difficult cause you carry in your heart, placing it in the hands of Saint Jude. Then thank someone who does unseen work in your parish, your home, or your workplace."
+   }
+  },
+  {
+   "day": 29,
+   "feast": null,
+   "es": {
+    "title": "Una decena en la mesa de casa",
+    "ref": "Mt 18,19-20",
+    "verse": "Os digo, además, que si dos de vosotros se ponen de acuerdo en la tierra para pedir algo, se lo dará mi Padre que está en los cielos. Porque donde dos o tres están reunidos en mi nombre, allí estoy yo en medio de ellos.",
+    "reflection": "Jesús promete estar en medio de dos o tres reunidos en su nombre. No hace falta una gran asamblea: basta una cocina, un sofá, un coche camino del colegio. Rezar juntos en familia no siempre es fácil; hay horarios cruzados, adolescentes que bostezan, cansancio. Pero una decena compartida, aunque sea corta e imperfecta, deja huella. Lo importante no es que salga bonita, sino que en casa se aprenda que Dios forma parte de la vida diaria.",
+    "prayer": "Señor Jesús, quédate en medio de mi familia, con sus alegrías y sus roces. Sagrada Familia de Nazaret, ayúdanos a rezar juntos con sencillez y a querernos con paciencia. Amén.",
+    "action": "Propón en casa rezar una sola decena juntos, después de cenar o en el coche. Deja que cada uno diga una intención en voz alta. Si vives solo, reza por tu familia y llama a uno de sus miembros para saludarlo."
+   },
+   "en": {
+    "title": "A decade at the kitchen table",
+    "ref": "Mt 18:19-20",
+    "verse": "Again, (amen,) I say to you, if two of you agree on earth about anything for which they are to pray, it shall be granted to them by my heavenly Father. For where two or three are gathered together in my name, there am I in the midst of them.",
+    "reflection": "Jesus promises to be in the midst of two or three gathered in His name. You don't need a big assembly: a kitchen, a couch, a car on the way to school will do. Praying together as a family isn't always easy; schedules clash, teenagers yawn, everyone is tired. But a shared decade, even short and imperfect, leaves its mark. What matters isn't that it comes out beautifully, but that home becomes a place where people learn that God is part of daily life.",
+    "prayer": "Lord Jesus, stay in the midst of my family, with its joys and its friction. Holy Family of Nazareth, teach us to pray together simply and to love one another patiently. Amen.",
+    "action": "Suggest praying just one decade together at home, after dinner or in the car. Let each person name an intention aloud. If you live alone, pray for your family and call one of them to say hello."
+   }
+  },
+  {
+   "day": 30,
+   "feast": null,
+   "es": {
+    "title": "Rezar por quien te cuesta",
+    "ref": "Mt 5,44-45",
+    "verse": "Pero yo os digo: amad a vuestros enemigos y rezad por los que os persiguen, para que seáis hijos de vuestro Padre celestial, que hace salir su sol sobre malos y buenos, y manda la lluvia a justos e injustos.",
+    "reflection": "Hay personas que nos han herido, o con las que estamos en conflicto: un compañero de trabajo, un vecino, alguien de la propia familia. Jesús pide algo que parece imposible: rezar por ellos. No significa fingir que no pasó nada ni ponerte en peligro; significa dejar que Dios entre en esa herida. Rezar un avemaría por alguien con quien estás enfadado suaviza el corazón poco a poco. A veces el perdón empieza así, con una oración dicha casi a regañadientes.",
+    "prayer": "Padre, que haces salir el sol sobre buenos y malos, te presento a esta persona con quien tengo un conflicto. Bendícela, y sana lo que hay en mí de rencor. María, Madre de misericordia, ablanda mi corazón. Amén.",
+    "action": "Reza una decena por la persona con quien estás en conflicto, diciendo su nombre en cada avemaría. No hace falta hablar con ella hoy; si llega el momento oportuno, que sea con serenidad y buscando la paz."
+   },
+   "en": {
+    "title": "Praying for the one you struggle with",
+    "ref": "Mt 5:44-45",
+    "verse": "But I say to you, love your enemies, and pray for those who persecute you, that you may be children of your heavenly Father, for he makes his sun rise on the bad and the good, and causes rain to fall on the just and the unjust.",
+    "reflection": "There are people who have hurt us, or with whom we are in conflict: a coworker, a neighbor, someone in our own family. Jesus asks something that seems impossible: to pray for them. It doesn't mean pretending nothing happened or putting yourself in danger; it means letting God into that wound. Praying a Hail Mary for someone you're angry with softens the heart little by little. Sometimes forgiveness begins just like that, with a prayer said almost reluctantly.",
+    "prayer": "Father, who make the sun rise on the good and the bad, I bring before You this person with whom I am in conflict. Bless them, and heal the resentment in me. Mary, Mother of mercy, soften my heart. Amen.",
+    "action": "Pray a decade for the person you are in conflict with, saying their name in each Hail Mary. You don't need to talk with them today; if the right moment comes, let it be calm and aimed at peace."
+   }
+  },
+  {
+   "day": 31,
+   "feast": null,
+   "es": {
+    "title": "Enseñar a otro a rezar",
+    "ref": "Lc 11,1",
+    "verse": "Una vez que estaba Jesús orando en cierto lugar, cuando terminó, uno de sus discípulos le dijo: «Señor, enséñanos a orar, como Juan enseñó a sus discípulos».",
+    "reflection": "Los discípulos ven a Jesús orar y le piden que les enseñe a orar. Así se transmite la fe: alguien nos enseñó un día a rezar, quizá una abuela, una catequista, un amigo. Al terminar este mes de los misterios, mañana celebramos a todos los santos, muchos de ellos personas sencillas que rezaron el Rosario sin hacer ruido. Lo que recibimos estas semanas no es para guardarlo solo: puede convertirse en un regalo para otro que no sabe por dónde empezar.",
+    "prayer": "Señor Jesús, gracias por este mes junto a tu Madre. Gracias por quienes me enseñaron a rezar. Hazme a mí también un puente para que otros descubran tu amor. María, sigue llevándome de la mano. Amén.",
+    "action": "Enseña a alguien, un niño, un amigo o un familiar, a rezar una decena: muéstrale cómo usar las cuentas y qué es un misterio. Reza con él la primera. Si no hay nadie cerca, da gracias por quien te enseñó a ti."
+   },
+   "en": {
+    "title": "Teaching someone else to pray",
+    "ref": "Lk 11:1",
+    "verse": "He was praying in a certain place, and when he had finished, one of his disciples said to him, \"Lord, teach us to pray just as John taught his disciples.\"",
+    "reflection": "The disciples watch Jesus pray and ask Him: \"Lord, teach us to pray.\" That is how faith is handed on: someone once taught us to pray, perhaps a grandmother, a catechist, a friend. As this month of the mysteries ends, tomorrow we celebrate all the saints, many of them ordinary people who quietly prayed the Rosary. What we received in these weeks isn't meant to be kept to ourselves: it can become a gift for someone who doesn't know where to begin.",
+    "prayer": "Lord Jesus, thank You for this month alongside Your Mother. Thank You for those who taught me to pray. Make me, too, a bridge so that others may discover Your love. Mary, keep holding my hand. Amen.",
+    "action": "Teach someone, a child, a friend, or a relative, to pray a decade: show them how to use the beads and what a mystery is. Pray the first one with them. If no one is nearby, give thanks for whoever taught you."
+   }
+  }
+ ]
+}

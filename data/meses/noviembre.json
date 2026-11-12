@@ -1,0 +1,664 @@
+{
+ "key": "noviembre",
+ "es": {
+  "topic": "Fieles difuntos y esperanza eterna",
+  "intro": "Noviembre se abre con todos los santos y con la memoria de nuestros difuntos. Este mes caminamos en cuatro etapas: la comunión de los santos y la oración por quienes partieron, el consuelo en el duelo, la esperanza en la resurrección y una vida vivida hoy con el corazón puesto en el cielo, hasta cerrar el año litúrgico con gratitud.",
+  "method": {
+   "title": "Cómo vivir este mes",
+   "steps": [
+    "Escribe en un cuaderno los nombres de tus difuntos y tenlos presentes en tu oración cada día.",
+    "Lee despacio la cita del día y quédate con una frase que te acompañe hasta la noche.",
+    "Si estás de duelo, no te exijas sentir paz: basta con traer tu dolor ante Dios tal como está.",
+    "Realiza la acción propuesta; cada una es distinta y está pensada para caber en un día normal.",
+    "Cuando puedas, ofrece una Misa, una comunión o un rosario por tus seres queridos difuntos."
+   ],
+   "prayer": "Señor de la vida, te ofrezco este día con sus trabajos y cansancios. Uno mi oración a la de toda tu Iglesia: los santos del cielo, los que se purifican en tu amor y los que aún caminamos. Da a nuestros difuntos el descanso eterno y a nosotros la esperanza que no defrauda. Amén.",
+   "closing": "Dales, Señor, el descanso eterno, y brille para ellos la luz perpetua. Que descansen en paz. Amén."
+  }
+ },
+ "en": {
+  "topic": "Holy Souls and Eternal Hope",
+  "intro": "November opens with All Saints and the memory of our beloved dead. This month we walk in four stages: the communion of saints and prayer for those who have gone before us, comfort in grief, hope in the resurrection, and a life lived today with our hearts set on heaven, closing the liturgical year in gratitude.",
+  "method": {
+   "title": "How to live this month",
+   "steps": [
+    "Write the names of your departed loved ones in a notebook and keep them in your prayer each day.",
+    "Read the day's verse slowly and hold on to one phrase that can stay with you until evening.",
+    "If you are grieving, don't demand peace of yourself: it is enough to bring your pain to God as it is.",
+    "Do the suggested action; each one is different and meant to fit into an ordinary day.",
+    "When you can, offer a Mass, a Communion, or a rosary for your departed loved ones."
+   ],
+   "prayer": "Lord of life, I offer You this day with its work and its weariness. I join my prayer to that of Your whole Church: the saints in heaven, those being purified in Your love, and all of us still on the way. Grant our departed eternal rest, and give us the hope that does not disappoint. Amen.",
+   "closing": "Eternal rest grant unto them, O Lord, and let perpetual light shine upon them. May they rest in peace. Amen."
+  }
+ },
+ "days": [
+  {
+   "day": 1,
+   "feast": {
+    "es": "Todos los Santos",
+    "en": "All Saints"
+   },
+   "es": {
+    "title": "Una multitud que nadie podría contar",
+    "ref": "Ap 7,9",
+    "verse": "Después de esto vi una muchedumbre inmensa, que nadie podría contar, de todas las naciones, razas, pueblos y lenguas, de pie delante del trono y delante del Cordero, vestidos con vestiduras blancas y con palmas en sus manos.",
+    "reflection": "Juan vio en el cielo una muchedumbre inmensa de toda nación y lengua. Ahí no están solo los santos de los altares: también, así lo esperamos, la abuela que rezaba el rosario en la cocina, el vecino que ayudaba sin hacer ruido, la maestra paciente. La santidad no es un club de héroes, sino la obra de Dios en gente común que se dejó amar. Esa multitud es tu familia, y te espera.",
+    "prayer": "Dios santo, gracias por todos los que ya gozan de tu presencia, conocidos y desconocidos. Que su ejemplo me anime a caminar contigo en lo pequeño de cada día. Todos los santos y santas de Dios, rueguen por nosotros. Amén.",
+    "action": "Piensa en una persona que conociste y que, a tu juicio, vivió con bondad sencilla. Escribe su nombre en tu cuaderno y una virtud suya que quisieras imitar esta semana. Participa en la Misa de esta solemnidad si en tu país es de precepto."
+   },
+   "en": {
+    "title": "A multitude no one could count",
+    "ref": "Rv 7:9",
+    "verse": "After this I had a vision of a great multitude, which no one could count, from every nation, race, people, and tongue. They stood before the throne and before the Lamb, wearing white robes and holding palm branches in their hands.",
+    "reflection": "John saw in heaven a great multitude from every nation and tongue. Not only the canonized saints are there: so too, we hope, the grandmother who prayed the rosary in the kitchen, the neighbor who helped without fuss, the patient teacher. Holiness is not a club for heroes but God's work in ordinary people who let themselves be loved. That multitude is your family, and it is waiting for you.",
+    "prayer": "Holy God, thank You for all who already rejoice in Your presence, known and unknown. May their example encourage me to walk with You in the small things of each day. All you holy men and women of God, pray for us. Amen.",
+    "action": "Think of someone you knew who, in your eyes, lived with simple goodness. Write their name in your notebook along with one of their virtues you would like to imitate this week. Attend Mass for this solemnity if it is a holy day of obligation where you live."
+   }
+  },
+  {
+   "day": 2,
+   "feast": {
+    "es": "Conmemoración de todos los fieles difuntos",
+    "en": "All Souls"
+   },
+   "es": {
+    "title": "Ellos están en paz",
+    "ref": "Sab 3,2-3",
+    "verse": "Los insensatos pensaban que habían muerto, y consideraban su tránsito como una desgracia, y su salida de entre nosotros, una ruina, pero ellos están en paz.",
+    "reflection": "Hoy la Iglesia entera reza por todos sus difuntos, también por aquellos a quienes nadie recuerda. El libro de la Sabiduría reconoce que, a los ojos de muchos, su partida parece una desgracia y una ruina, y sin embargo afirma: ellos están en paz. No en el olvido ni en la nada, sino en las manos de Dios. Rezar por ellos es un acto de amor que la muerte no interrumpe; seguimos unidos en Cristo y nuestra oración puede ayudarlos de verdad.",
+    "prayer": "Padre de misericordia, pongo en tus manos a todos mis difuntos y a quienes no tienen a nadie que rece por ellos. Purifícalos con tu amor y llévalos pronto a la luz de tu rostro. Amén.",
+    "action": "Si te es posible, visita un cementerio y reza un padrenuestro ante una tumba olvidada. Si no puedes salir, enciende una vela en casa y reza por los difuntos de tu familia y por los más olvidados."
+   },
+   "en": {
+    "title": "They are at peace",
+    "ref": "Wis 3:2-3",
+    "verse": "They seemed, in the view of the foolish, to be dead; and their passing away was thought an affliction and their going forth from us, utter destruction. But they are in peace.",
+    "reflection": "Today the whole Church prays for all her departed, including those no one remembers. The Book of Wisdom admits that, in the eyes of many, their passing looks like an affliction and utter destruction, and yet it declares: they are in peace. Not lost, not gone into nothing, but held in the hands of God. Praying for them is an act of love that death does not interrupt; we remain united in Christ, and our prayer can truly help them.",
+    "prayer": "Father of mercy, I place in Your hands all my departed loved ones and those who have no one to pray for them. Purify them with Your love and bring them soon into the light of Your face. Amen.",
+    "action": "If you can, visit a cemetery and pray an Our Father at a forgotten grave. If you cannot go out, light a candle at home and pray for your family's departed and for the most forgotten souls."
+   }
+  },
+  {
+   "day": 3,
+   "feast": null,
+   "es": {
+    "title": "Rodeados de testigos",
+    "ref": "Heb 12,1",
+    "verse": "En consecuencia: teniendo una nube tan ingente de testigos, corramos, con constancia, en la carrera que nos toca, renunciando a todo lo que nos estorba y al pecado que nos asedia…",
+    "reflection": "La carta a los Hebreos imagina nuestra vida como una carrera y, alrededor, una nube de testigos que nos anima. Es la comunión de los santos: los del cielo, los que se purifican y nosotros, unidos en un mismo Cuerpo. Cuando te sientes solo en tu lucha, recuerda que no corres en un estadio vacío. Hay quienes ya terminaron la carrera y ahora interceden por ti.",
+    "prayer": "Señor Jesús, gracias por no dejarme correr solo. Que la compañía de tus santos me dé ánimo cuando me canse y humildad cuando avance. Ayúdame a soltar el peso que me estorba y a fijar mis ojos en ti. Amén.",
+    "action": "Elige un santo patrono para este mes, quizá el de tu nombre o uno cuya historia te conmueva. Lee una breve biografía suya y pídele cada mañana que te acompañe."
+   },
+   "en": {
+    "title": "Surrounded by witnesses",
+    "ref": "Heb 12:1",
+    "verse": "Therefore, since we are surrounded by so great a cloud of witnesses, let us rid ourselves of every burden and sin that clings to us and persevere in running the race that lies before us…",
+    "reflection": "The Letter to the Hebrews pictures our life as a race, with a cloud of witnesses cheering us on. This is the communion of saints: those in heaven, those being purified, and us, all united in one Body. When you feel alone in your struggle, remember you are not running in an empty stadium. Some have already finished the race, and now they intercede for you.",
+    "prayer": "Lord Jesus, thank You for not letting me run alone. May the company of Your saints give me courage when I grow tired and humility when I move forward. Help me lay aside what weighs me down and keep my eyes fixed on You. Amen.",
+    "action": "Choose a patron saint for this month, perhaps your name saint or one whose story moves you. Read a short biography and ask them each morning to walk with you."
+   }
+  },
+  {
+   "day": 4,
+   "feast": {
+    "es": "San Carlos Borromeo",
+    "en": "Saint Charles Borromeo"
+   },
+   "es": {
+    "title": "Un pastor que se quedó",
+    "ref": "Jn 10,11",
+    "verse": "Yo soy el Buen Pastor. El buen pastor da su vida por las ovejas…",
+    "reflection": "San Carlos Borromeo fue arzobispo de Milán y se entregó con energía a renovar la Iglesia después del Concilio de Trento: cuidó la formación de los sacerdotes y la catequesis de los niños. Cuando una epidemia golpeó la ciudad, no huyó; permaneció junto a los enfermos y los pobres. Así se pareció al buen Pastor, que no abandona a las ovejas cuando llega el peligro. La fidelidad se demuestra en los días difíciles.",
+    "prayer": "Jesús, buen Pastor, por la intercesión de san Carlos Borromeo, cuida a los sacerdotes y a los obispos de tu Iglesia. Dales un corazón valiente y cercano a los que sufren, y a mí enséñame a no huir cuando alguien me necesita. Amén.",
+    "action": "Reza por tu párroco o por un sacerdote que haya sido importante en tu vida. Si puedes, envíale un mensaje breve de gratitud por su servicio."
+   },
+   "en": {
+    "title": "A shepherd who stayed",
+    "ref": "Jn 10:11",
+    "verse": "I am the good shepherd. A good shepherd lays down his life for the sheep.",
+    "reflection": "Saint Charles Borromeo was Archbishop of Milan and worked tirelessly to renew the Church after the Council of Trent, caring for the formation of priests and the catechesis of children. When an epidemic struck the city, he did not flee; he stayed with the sick and the poor. In this he resembled the Good Shepherd, who does not abandon the sheep when danger comes. Faithfulness shows itself on the hard days.",
+    "prayer": "Jesus, Good Shepherd, through the intercession of Saint Charles Borromeo, watch over the priests and bishops of Your Church. Give them courageous hearts close to those who suffer, and teach me not to run away when someone needs me. Amen.",
+    "action": "Pray for your pastor or for a priest who has been important in your life. If you can, send him a short message thanking him for his service."
+   }
+  },
+  {
+   "day": 5,
+   "feast": null,
+   "es": {
+    "title": "El fuego que purifica por amor",
+    "ref": "Mal 3,3",
+    "verse": "Se sentará como fundidor que refina la plata; refinará a los levitas y los acrisolará como oro y plata, y el Señor recibirá ofrenda y oblación justas.",
+    "reflection": "El profeta habla de un orfebre que refina la plata con paciencia, sin prisa, hasta que brilla. Así entiende la Iglesia el purgatorio: no como un lugar de tormento, sino como la purificación final de quienes mueren en la amistad de Dios pero aún necesitan ser sanados para entrar en la alegría del cielo (CIC 1030-1031). Es el amor de Dios que termina su obra en nosotros. De ahí nadie sale sino hacia la luz.",
+    "prayer": "Dios fiel, termina en mí y en mis difuntos la obra buena que comenzaste. Quita todo lo que nos impide amarte del todo y llévanos a tu luz. Confío en tu amor, que sana y no humilla. Amén.",
+    "action": "Ofrece una pequeña molestia sin quejarte, como una espera o una tarea pesada, por las almas del purgatorio. Al terminar, di en voz baja: «Señor, dales tu descanso»."
+   },
+   "en": {
+    "title": "The fire that purifies through love",
+    "ref": "Mal 3:3",
+    "verse": "He will sit refining and purifying (silver), and he will purify the sons of Levi, Refining them like gold or like silver that they may offer due sacrifice to the LORD.",
+    "reflection": "The prophet speaks of a refiner patiently purifying silver, unhurried, until it shines. This is how the Church understands purgatory: not a place of torment, but the final purification of those who die in God's friendship yet still need healing before entering the joy of heaven (CCC 1030-1031). It is God's love finishing its work in us. No one leaves it except toward the light.",
+    "prayer": "Faithful God, bring to completion in me and in my departed loved ones the good work You began. Remove whatever keeps us from loving You fully and lead us into Your light. I trust in Your love, which heals and never humiliates. Amen.",
+    "action": "Offer a small inconvenience without complaining, such as a wait or a tedious task, for the souls in purgatory. When it is over, whisper: \"Lord, grant them Your rest.\""
+   }
+  },
+  {
+   "day": 6,
+   "feast": null,
+   "es": {
+    "title": "Una oración que cruza la muerte",
+    "ref": "2 Tim 1,18",
+    "verse": "Que el Señor le conceda hallar misericordia de parte del Señor en aquel día. Tú conoces mejor que yo los buenos servicios que prestó en Éfeso.",
+    "reflection": "San Pablo recuerda con cariño a Onesíforo, que lo buscó en Roma sin avergonzarse de sus cadenas, y pide que encuentre misericordia ante el Señor en aquel día. Muchos han visto aquí una oración por alguien que ya había partido. La Iglesia, desde sus primeros siglos, ha rezado por los difuntos y ha ofrecido por ellos la Eucaristía (CIC 1032). Tu oración no es un gesto vacío: es amor que llega.",
+    "prayer": "Señor, concede a mis seres queridos difuntos encontrar misericordia ante ti. Recuerda el bien que hicieron y el amor que me dieron. Lo que quedó sin terminar, complétalo tú con tu bondad. Amén.",
+    "action": "Si te es posible, pide en tu parroquia que se ofrezca una Misa por un difunto de tu familia. Si no, participa en una Misa o reza un rosario ofreciéndolo por esa persona, llamándola por su nombre."
+   },
+   "en": {
+    "title": "A prayer that crosses death",
+    "ref": "2 Tm 1:18",
+    "verse": "May the Lord grant him to find mercy from the Lord on that day. And you know very well the services he rendered in Ephesus.",
+    "reflection": "Saint Paul fondly remembers Onesiphorus, who searched for him in Rome unashamed of his chains, and prays that he may find mercy from the Lord on that day. Many have seen here a prayer for someone who had already died. From her earliest centuries, the Church has prayed for the dead and offered the Eucharist for them (CCC 1032). Your prayer is not an empty gesture: it is love that reaches them.",
+    "prayer": "Lord, grant my departed loved ones to find mercy before You. Remember the good they did and the love they gave me. Whatever was left unfinished, complete it with Your goodness. Amen.",
+    "action": "If possible, ask your parish to offer a Mass for a deceased family member. If not, attend Mass or pray a rosary offering it for that person, calling them by name."
+   }
+  },
+  {
+   "day": 7,
+   "feast": null,
+   "es": {
+    "title": "Más fuerte que la muerte",
+    "ref": "Cant 8,6",
+    "verse": "Grábame como sello en tu corazón, grábame como sello en tu brazo, porque es fuerte el amor como la muerte, es cruel la pasión como el abismo; sus dardos son dardos de fuego, llamaradas divinas.",
+    "reflection": "El Cantar de los Cantares dice que el amor es fuerte como la muerte. En Cristo resucitado sabemos algo más: el amor es más fuerte. Los lazos que Dios tejió entre tú y tus seres queridos no se rompen en el cementerio; quedan guardados en Él. Por eso la nostalgia no es solo tristeza: es también la señal de un amor que sigue vivo y que espera el reencuentro.",
+    "prayer": "Dios, que eres amor, gracias por las personas que me enseñaron a amar. Guarda en tu corazón los lazos que nos unen y haz que un día nos encontremos en tu casa. Amén.",
+    "action": "Busca una fotografía de un ser querido difunto. Contémplala unos minutos en silencio, agradece a Dios tres cosas concretas que recibiste de esa persona y reza por ella."
+   },
+   "en": {
+    "title": "Stronger than death",
+    "ref": "Sg 8:6",
+    "verse": "B Set me as a seal on your heart, as a seal on your arm; For stern as death is love, relentless as the nether world is devotion; its flames are a blazing fire.",
+    "reflection": "The Song of Songs says that love is as stern as death. In the risen Christ we know something more: love is stronger than death. The bonds God wove between you and your loved ones are not broken at the graveside; they are kept safe in Him. That is why longing is not only sadness. It is also the sign of a love that is still alive and awaiting reunion.",
+    "prayer": "God who is love, thank You for the people who taught me how to love. Keep safe in Your heart the bonds that unite us, and bring us together one day in Your house. Amen.",
+    "action": "Find a photograph of a departed loved one. Look at it quietly for a few minutes, thank God for three specific things you received through that person, and pray for them."
+   }
+  },
+  {
+   "day": 8,
+   "feast": null,
+   "es": {
+    "title": "Tatuados en sus manos",
+    "ref": "Is 49,16",
+    "verse": "Mira, te llevo tatuada en mis palmas, tus muros están siempre ante mí.",
+    "reflection": "Hay difuntos de los que ya casi nadie se acuerda: un tío lejano, un compañero de escuela, el bebé que la abuela perdió y del que no se hablaba. Dios no olvida a ninguno. Por medio del profeta dice que nos lleva tatuados en las palmas de sus manos. Recordar sus nombres y rezar por ellos es una forma humilde de unirnos a esa memoria de Dios, que no deja caer a nadie en el olvido.",
+    "prayer": "Señor, tú que no olvidas a ninguno de tus hijos, acoge a los difuntos de mi familia que ya nadie nombra. Lo que yo no sé de ellos, tú lo conoces. Dales tu paz. Amén.",
+    "action": "Pregunta a un familiar mayor por los nombres de bisabuelos o parientes que ya murieron. Anótalos en tu cuaderno y reza por ellos un avemaría. Si no tienes a quién preguntar, reza por los difuntos desconocidos de tu familia."
+   },
+   "en": {
+    "title": "Engraved on His hands",
+    "ref": "Is 49:16",
+    "verse": "See, upon the palms of my hands I have written your name; your walls are ever before me.",
+    "reflection": "Some of the dead are hardly remembered anymore: a distant uncle, a school friend, the baby Grandma lost and no one spoke about. God forgets none of them. Through the prophet He says He has written our name on the palms of His hands. Remembering their names and praying for them is a humble way of joining God's own memory, which lets no one fall into oblivion.",
+    "prayer": "Lord, You who forget none of Your children, welcome the departed of my family whom no one names anymore. What I do not know about them, You know. Grant them Your peace. Amen.",
+    "action": "Ask an older relative for the names of great-grandparents or relatives who have died. Write them in your notebook and pray a Hail Mary for them. If there is no one to ask, pray for the unknown departed of your family."
+   }
+  },
+  {
+   "day": 9,
+   "feast": {
+    "es": "Dedicación de la Basílica de Letrán",
+    "en": "Dedication of the Lateran Basilica"
+   },
+   "es": {
+    "title": "La iglesia madre y el templo que eres",
+    "ref": "1 Cor 3,16",
+    "verse": "¿No sabéis que sois templo de Dios y que el Espíritu de Dios habita en vosotros?",
+    "reflection": "Celebramos la dedicación de la Basílica de San Juan de Letrán, la catedral del obispo de Roma, llamada madre de todas las iglesias. Es una fiesta de unidad: todas las parroquias del mundo, también la tuya, están unidas a ella. Pero san Pablo recuerda que el templo más querido por Dios eres tú, en quien habita su Espíritu. Cada iglesia de piedra existe para que las personas se conviertan en casa de Dios.",
+    "prayer": "Espíritu Santo, que habitas en mí, haz de mi vida una casa limpia y acogedora para Dios. Te pido por el Papa y por la unidad de tu Iglesia en todo el mundo. Amén.",
+    "action": "Haz una visita breve al Santísimo en una iglesia cercana y reza por el Papa. Si no puedes ir, dedica cinco minutos a ordenar un rincón de tu casa para la oración, con una cruz o una imagen."
+   },
+   "en": {
+    "title": "The mother church and the temple you are",
+    "ref": "1 Cor 3:16",
+    "verse": "Do you not know that you are the temple of God, and that the Spirit of God dwells in you?",
+    "reflection": "We celebrate the dedication of the Lateran Basilica, the cathedral of the Bishop of Rome, called the mother of all churches. It is a feast of unity: every parish in the world, yours included, is joined to it. Yet Saint Paul reminds us that the temple God loves most is you, in whom His Spirit dwells. Every church built of stone exists so that people may become a dwelling place for God.",
+    "prayer": "Holy Spirit, You who dwell in me, make my life a clean and welcoming home for God. I pray for the Pope and for the unity of Your Church throughout the world. Amen.",
+    "action": "Make a short visit to the Blessed Sacrament in a nearby church and pray for the Pope. If you cannot go, spend five minutes tidying a corner of your home for prayer, with a cross or a holy image."
+   }
+  },
+  {
+   "day": 10,
+   "feast": null,
+   "es": {
+    "title": "Jesús también lloró",
+    "ref": "Jn 11,35",
+    "verse": "Jesús se echó a llorar.",
+    "reflection": "Ante la tumba de su amigo Lázaro, Jesús lloró. Sabía que iba a resucitarlo, y aun así lloró. Eso significa que tus lágrimas no son falta de fe. El duelo no es un problema que hay que resolver deprisa, sino el precio del amor. Puedes creer en la resurrección y, al mismo tiempo, extrañar con todo el cuerpo a quien se fue. Jesús no te pide que dejes de llorar: llora contigo.",
+    "prayer": "Jesús, que lloraste por tu amigo, mira mis lágrimas y no me dejes solo con ellas. No te pido que me quites la tristeza de golpe, sino que me acompañes en ella. Amén.",
+    "action": "Regálate quince minutos sin prisas para recordar a quien perdiste: escucha una canción que le gustaba o escribe lo que te gustaría decirle. Si las lágrimas llegan, déjalas venir sin juzgarte."
+   },
+   "en": {
+    "title": "Jesus wept too",
+    "ref": "Jn 11:35",
+    "verse": "And Jesus wept.",
+    "reflection": "At the tomb of His friend Lazarus, Jesus wept. He knew He was about to raise him, and still He wept. That means your tears are not a lack of faith. Grief is not a problem to be solved quickly but the price of love. You can believe in the resurrection and, at the same time, miss with your whole body the one who is gone. Jesus does not ask you to stop crying: He cries with you.",
+    "prayer": "Jesus, You who wept for Your friend, look upon my tears and do not leave me alone with them. I do not ask You to take my sadness away all at once, only to stay with me in it. Amen.",
+    "action": "Give yourself fifteen unhurried minutes to remember the one you lost: listen to a song they loved or write what you would like to tell them. If tears come, let them come without judging yourself."
+   }
+  },
+  {
+   "day": 11,
+   "feast": {
+    "es": "San Martín de Tours",
+    "en": "Saint Martin of Tours"
+   },
+   "es": {
+    "title": "La capa partida en dos",
+    "ref": "Mt 25,36",
+    "verse": "estuve desnudo y me vestisteis, enfermo y me visitasteis, en la cárcel y vinisteis a verme.",
+    "reflection": "San Martín de Tours fue soldado antes de ser monje y obispo. La tradición cuenta que, en un invierno crudo, partió su capa con la espada para cubrir a un mendigo, y que después vio en sueños a Cristo vestido con ese pedazo. Jesús lo había dicho: estuve desnudo y me vestiste. Martín no lo dio todo de golpe; dio lo que tenía a mano. A veces la santidad empieza por compartir la mitad.",
+    "prayer": "Señor Jesús, por intercesión de san Martín, abre mis ojos para reconocerte en quien pasa frío o necesidad. Dame un corazón que comparta sin calcular demasiado. Amén.",
+    "action": "Revisa tu armario y separa una prenda de abrigo en buen estado que no uses. Llévala esta semana a una parroquia o a un centro de ayuda, o entrégala a alguien que la necesite."
+   },
+   "en": {
+    "title": "The cloak cut in two",
+    "ref": "Mt 25:36",
+    "verse": "naked and you clothed me, ill and you cared for me, in prison and you visited me.'",
+    "reflection": "Saint Martin of Tours was a soldier before he became a monk and a bishop. Tradition tells that on a bitter winter day he cut his cloak in two with his sword to cover a beggar, and later saw Christ in a dream wearing that half. Jesus had said it: I was naked and you clothed me. Martin did not give everything at once; he gave what was at hand. Sometimes holiness begins by sharing half.",
+    "prayer": "Lord Jesus, through the intercession of Saint Martin, open my eyes to recognize You in those who are cold or in need. Give me a heart that shares without calculating too much. Amen.",
+    "action": "Go through your closet and set aside a warm coat or sweater in good condition that you no longer use. Take it to a parish or a charity this week, or give it to someone who needs it."
+   }
+  },
+  {
+   "day": 12,
+   "feast": null,
+   "es": {
+    "title": "Consolar a quien llora",
+    "ref": "2 Cor 1,3-4",
+    "verse": "¡Bendito sea el Dios y Padre de nuestro Señor Jesucristo, Padre de las misericordias y Dios de todo consuelo, que nos consuela en cualquier tribulación nuestra hasta el punto de poder consolar nosotros a los demás en cualquier lucha, mediante el consuelo con que nosotros mismos somos consolados por Dios!",
+    "reflection": "San Pablo llama a Dios «Dios de todo consuelo», que nos consuela para que podamos consolar a otros. Muchas veces ese consuelo llega a través de personas: alguien que se sienta en silencio a tu lado, que lleva comida, que no dice frases hechas. Pasado el funeral, la mayoría vuelve a su rutina, y quien perdió a alguien se queda solo justo cuando más duele. Consolar al triste es una obra de misericordia que casi siempre empieza por escuchar.",
+    "prayer": "Dios de todo consuelo, acuérdate de los que lloran en hospitales, casas vacías y habitaciones en silencio. Hazme instrumento de tu ternura, con palabras sencillas o con mi sola presencia. Amén.",
+    "action": "Piensa en alguien que haya perdido a un ser querido en los últimos meses. Llámalo o escríbele, sin consejos: solo para decirle que lo recuerdas y preguntarle cómo está de verdad."
+   },
+   "en": {
+    "title": "Comforting those who mourn",
+    "ref": "2 Cor 1:3-4",
+    "verse": "Blessed be the God and Father of our Lord Jesus Christ, the Father of compassion and God of all encouragement, who encourages us in our every affliction, so that we may be able to encourage those who are in any affliction with the encouragement with which we ourselves are encouraged by God.",
+    "reflection": "Saint Paul calls God the \"God of all encouragement,\" who comforts us so that we can comfort others. Often that comfort arrives through people: someone who sits beside you in silence, brings a meal, avoids easy platitudes. After the funeral most people return to their routines, and the one who lost someone is left alone just when it hurts most. Comforting the sorrowful is a work of mercy that almost always begins with listening.",
+    "prayer": "God of all comfort, remember those who are weeping in hospitals, empty houses, and silent rooms. Make me an instrument of Your tenderness, with simple words or just my presence. Amen.",
+    "action": "Think of someone who has lost a loved one in recent months. Call or write to them, without advice, simply to say you remember and to ask how they are really doing."
+   }
+  },
+  {
+   "day": 13,
+   "feast": null,
+   "es": {
+    "title": "Para quien perdió a alguien hace poco",
+    "ref": "Sal 34,19",
+    "verse": "(Qof) el Señor está cerca de los atribulados, salva a los abatidos.",
+    "reflection": "Si la pérdida es reciente, quizá ni siquiera puedes rezar. Hay días en que levantarse, comer o contestar un mensaje ya es una hazaña. El salmo dice que el Señor está cerca de los atribulados: no lejos, esperando a que te recuperes, sino cerca, ahora, en medio del desorden. No tienes que ser fuerte ni dar testimonio de nada. Basta con dejar que Él esté.",
+    "prayer": "Señor, estoy roto y no sé qué decirte. Quédate cerca, aunque no te sienta. Sostenme hoy, solo hoy, y dame lo necesario para dar el siguiente paso. Amén.",
+    "action": "Cuida tu cuerpo como un acto de fe: come algo caliente, bebe agua y acuéstate un poco más temprano. Si sientes que el dolor te desborda, pide ayuda a alguien de confianza o a un profesional."
+   },
+   "en": {
+    "title": "For those whose loss is recent",
+    "ref": "Ps 34:19",
+    "verse": "The LORD is close to the brokenhearted, saves those whose spirit is crushed.",
+    "reflection": "If your loss is recent, perhaps you cannot even pray. Some days getting up, eating, or answering a message is already a feat. The psalm says the Lord is close to the brokenhearted: not far away waiting for you to recover, but close, now, in the middle of the mess. You don't have to be strong or prove anything. It is enough to let Him be there.",
+    "prayer": "Lord, I am broken and I don't know what to say to You. Stay close, even if I cannot feel You. Hold me up today, just today, and give me what I need to take the next step. Amen.",
+    "action": "Care for your body as an act of faith: eat something warm, drink water, and go to bed a little earlier. If the pain feels overwhelming, reach out to someone you trust or to a professional."
+   }
+  },
+  {
+   "day": 14,
+   "feast": null,
+   "es": {
+    "title": "Los hijos que no llegamos a abrazar",
+    "ref": "Jer 1,5",
+    "verse": "—Antes de formarte en el vientre, te elegí; antes de que salieras del seno materno, te consagré: te constituí profeta de las naciones.",
+    "reflection": "Hay padres que llevan en silencio la pérdida de un hijo durante el embarazo o al poco de nacer. A veces nadie supo su nombre, y el duelo parece no tener permiso. Dios dice a Jeremías que lo conocía antes de formarlo en el vientre. Esa vida breve fue conocida y amada por Él. La Iglesia confía a estos pequeños a la misericordia de Dios, que quiere que todos se salven (CIC 1261), y acompaña a sus padres.",
+    "prayer": "Padre, que conoces a cada niño desde el seno de su madre, acoge en tu amor a los hijos que partieron tan pronto. Consuela a sus padres y hermanos, y sana el dolor que nunca se dijo. Amén.",
+    "action": "Reza por los padres que han sufrido una pérdida perinatal. Si es tu caso, considera darle un nombre a ese hijo y escribirlo en tu cuaderno; si conoces a alguien que lo vivió, hazle saber con delicadeza que lo recuerdas."
+   },
+   "en": {
+    "title": "The children we never got to hold",
+    "ref": "Jer 1:5",
+    "verse": "Before I formed you in the womb I knew you, before you were born I dedicated you, a prophet to the nations I appointed you.",
+    "reflection": "Some parents silently carry the loss of a child during pregnancy or shortly after birth. Sometimes no one even knew the baby's name, and the grief seems to have no permission to exist. God tells Jeremiah that He knew him before forming him in the womb. That brief life was known and loved by Him. The Church entrusts these little ones to the mercy of God, who desires all to be saved (CCC 1261), and she walks with their parents.",
+    "prayer": "Father, You know every child from the mother's womb; welcome into Your love the children who left so soon. Console their parents and siblings, and heal the grief that was never spoken. Amen.",
+    "action": "Pray for parents who have suffered a pregnancy or infant loss. If this is your story, consider giving that child a name and writing it in your notebook; if you know someone who lived it, gently let them know you remember."
+   }
+  },
+  {
+   "day": 15,
+   "feast": null,
+   "es": {
+    "title": "Cuando alguien querido se quitó la vida",
+    "ref": "Rom 8,38-39",
+    "verse": "Pues estoy convencido de que ni muerte, ni vida, ni ángeles, ni principados, ni presente, ni futuro, ni potencias, ni altura, ni profundidad, ni ninguna otra criatura podrá separarnos del amor de Dios manifestado en Cristo Jesús, nuestro Señor.",
+    "reflection": "Pocas pérdidas duelen tanto como el suicidio de un ser querido: se mezclan el dolor, la culpa y las preguntas sin respuesta. La Iglesia enseña que no se debe desesperar de la salvación de quienes se han dado muerte, porque Dios, por caminos que solo Él conoce, puede darles ocasión de un arrepentimiento salvador, y reza por ellos (CIC 2283). Tampoco cargues tú con toda la culpa. Nada puede separarnos del amor de Dios en Cristo.",
+    "prayer": "Dios de misericordia, pongo en tus manos a quienes murieron por su propia mano, y en especial a quien llevo en el corazón. Tú conoces lo que nosotros no vimos. Abrázalos con tu ternura y sana a los que quedamos. Amén.",
+    "action": "Reza por las personas que han muerto por suicidio y por sus familias. Si tú mismo atraviesas pensamientos oscuros, habla con alguien de confianza o llama a una línea de ayuda de tu país; tu vida vale mucho."
+   },
+   "en": {
+    "title": "When a loved one took their own life",
+    "ref": "Rom 8:38-39",
+    "verse": "For I am convinced that neither death, nor life, nor angels, nor principalities, nor present things, nor future things, nor powers, nor height, nor depth, nor any other creature will be able to separate us from the love of God in Christ Jesus our Lord.",
+    "reflection": "Few losses hurt as much as the suicide of a loved one: grief, guilt, and unanswered questions all tangle together. The Church teaches that we should not despair of the salvation of those who have taken their own lives, because God, in ways known to Him alone, can provide the opportunity for salutary repentance, and she prays for them (CCC 2283). Nor should you carry all the blame yourself. Nothing can separate us from the love of God in Christ.",
+    "prayer": "God of mercy, I place in Your hands those who died by their own hand, especially the one I carry in my heart. You know what we did not see. Embrace them with Your tenderness and heal those of us left behind. Amen.",
+    "action": "Pray for people who have died by suicide and for their families. If you yourself are struggling with dark thoughts, talk with someone you trust or call a crisis line in your country; your life is precious."
+   }
+  },
+  {
+   "day": 16,
+   "feast": null,
+   "es": {
+    "title": "Él enjugará toda lágrima",
+    "ref": "Ap 21,4",
+    "verse": "Y enjugará toda lágrima de sus ojos, y ya no habrá muerte, ni duelo, ni llanto ni dolor, porque lo primero ha desaparecido.",
+    "reflection": "El último libro de la Biblia no termina en destrucción, sino en una boda: Dios habitando con su pueblo y secando con sus manos cada lágrima. Ya no habrá muerte, ni llanto, ni dolor. Esta promesa no anula tu tristeza de hoy, pero le pone un horizonte. Cada lágrima que derramas por amor está contada, y un día será recogida por las mismas manos que te crearon.",
+    "prayer": "Señor, que harás nuevas todas las cosas, sostén mi esperanza cuando el dolor me nuble la vista. Seca las lágrimas de los que sufren y enséñame a esperar tu consuelo. Amén.",
+    "action": "Lee despacio Apocalipsis 21,1-5 y subraya o anota la frase que más te consuele. Cópiala en un papel y déjala donde la veas a menudo durante esta semana."
+   },
+   "en": {
+    "title": "He will wipe away every tear",
+    "ref": "Rv 21:4",
+    "verse": "He will wipe every tear from their eyes, and there shall be no more death or mourning, wailing or pain, (for) the old order has passed away.",
+    "reflection": "The Bible's last book does not end in destruction but in a wedding: God dwelling with His people and drying every tear with His own hands. There will be no more death, no mourning, no pain. This promise does not cancel your sorrow today, but it gives it a horizon. Every tear you shed out of love is counted, and one day it will be gathered by the same hands that made you.",
+    "prayer": "Lord, You who make all things new, hold up my hope when grief clouds my sight. Dry the tears of those who suffer and teach me to wait for Your comfort. Amen.",
+    "action": "Slowly read Revelation 21:1-5 and underline or note the sentence that comforts you most. Copy it onto a slip of paper and leave it where you will see it often this week."
+   }
+  },
+  {
+   "day": 17,
+   "feast": {
+    "es": "Santa Isabel de Hungría",
+    "en": "Saint Elizabeth of Hungary"
+   },
+   "es": {
+    "title": "Una reina en la cocina de los pobres",
+    "ref": "Is 58,7",
+    "verse": "partir tu pan con el hambriento, hospedar a los pobres sin techo, cubrir a quien ves desnudo y no desentenderte de los tuyos.",
+    "reflection": "Santa Isabel de Hungría fue princesa y esposa de un noble de Turingia. Amó profundamente a su esposo y, al quedar viuda muy joven, entregó su vida al servicio de los enfermos y los pobres, fundando un hospital y atendiéndolos con sus propias manos. Conoció el duelo de cerca y no se encerró en él: lo convirtió en compasión. Isaías describe así el ayuno que agrada a Dios: partir el pan con el hambriento.",
+    "prayer": "Señor, por intercesión de santa Isabel de Hungría, consuela a las viudas y a los viudos que viven solos su duelo. Convierte mis heridas en compasión y mis manos en servicio. Amén.",
+    "action": "Compra o prepara algo de comida y entrégala a un banco de alimentos, a un comedor social o a una persona necesitada. Si no puedes, aparta una limosna discreta para ese fin esta semana."
+   },
+   "en": {
+    "title": "A queen in the kitchen of the poor",
+    "ref": "Is 58:7",
+    "verse": "Sharing your bread with the hungry, sheltering the oppressed and the homeless; Clothing the naked when you see them, and not turning your back on your own.",
+    "reflection": "Saint Elizabeth of Hungary was a princess and the wife of a nobleman of Thuringia. She loved her husband deeply and, widowed very young, gave her life to serving the sick and the poor, founding a hospital and caring for them with her own hands. She knew grief up close and did not shut herself away in it; she turned it into compassion. Isaiah describes the fast that pleases God: sharing your bread with the hungry.",
+    "prayer": "Lord, through the intercession of Saint Elizabeth of Hungary, comfort widows and widowers who bear their grief alone. Turn my wounds into compassion and my hands into service. Amen.",
+    "action": "Buy or prepare some food and give it to a food bank, a soup kitchen, or a person in need. If you cannot, set aside a discreet donation for that purpose this week."
+   }
+  },
+  {
+   "day": 18,
+   "feast": null,
+   "es": {
+    "title": "Yo soy la resurrección",
+    "ref": "Jn 11,25",
+    "verse": "Jesús le dijo: Yo soy la resurrección y la vida: el que cree en mí, aunque haya muerto, vivirá…",
+    "reflection": "Marta, con el corazón deshecho, le dice a Jesús que si hubiera estado allí su hermano no habría muerto. Él no le da una explicación; le da una persona: «Yo soy la resurrección y la vida». Nuestra esperanza no es una idea vaga de que algo habrá después, sino Alguien que ya venció a la muerte. Creemos en la resurrección de la carne: Dios no salva solo el alma, sino a la persona entera (CIC 988-990).",
+    "prayer": "Jesús, resurrección y vida, creo en ti; aumenta mi fe. Cuando la muerte me asuste o me hiera, pronuncia otra vez mi nombre y el de los que amo. Amén.",
+    "action": "Reza despacio el Credo y detente en las palabras «creo en la resurrección de la carne y en la vida eterna». Repítelas tres veces, pensando en un ser querido difunto."
+   },
+   "en": {
+    "title": "I am the resurrection",
+    "ref": "Jn 11:25",
+    "verse": "Jesus told her, I am the resurrection and the life; whoever believes in me, even if he dies, will live…",
+    "reflection": "Martha, heartbroken, tells Jesus that if He had been there her brother would not have died. He gives her no explanation; He gives her a person: \"I am the resurrection and the life.\" Our hope is not a vague idea that something comes after, but Someone who has already conquered death. We believe in the resurrection of the body: God saves not just the soul but the whole person (CCC 988-990).",
+    "prayer": "Jesus, resurrection and life, I believe in You; increase my faith. When death frightens or wounds me, speak my name again, and the names of those I love. Amen.",
+    "action": "Slowly pray the Creed and pause at the words \"the resurrection of the body and life everlasting.\" Repeat them three times, thinking of a departed loved one."
+   }
+  },
+  {
+   "day": 19,
+   "feast": null,
+   "es": {
+    "title": "Sé que mi Redentor vive",
+    "ref": "Job 19,25",
+    "verse": "Yo sé que mi redentor vive y que al fin se alzará sobre el polvo…",
+    "reflection": "Job lo había perdido casi todo: hijos, bienes, salud y hasta la comprensión de sus amigos. Discutió con Dios, gritó, se quejó, y en medio de esa noche brotó una certeza: mi Redentor vive. La fe no siempre es serena; a veces nace de la pelea honesta con Dios. Si estás enojado o confundido, puedes decírselo. Él prefiere tu verdad a tus frases correctas, y no se cansa de escucharte.",
+    "prayer": "Dios vivo, no siempre entiendo tus caminos y a veces me duele tu silencio. Aun así, quiero creer que vives y que te veré cara a cara. Recibe mis preguntas y mi confianza pequeña. Amén.",
+    "action": "Escribe en tu cuaderno una pregunta o una queja que tengas con Dios, con total sinceridad. Debajo, escribe una frase de confianza, aunque sea muy pequeña, y ofrécele ambas en oración."
+   },
+   "en": {
+    "title": "I know that my Redeemer lives",
+    "ref": "Jb 19:25",
+    "verse": "But as for me, I know that my Vindicator lives, and that he will at last stand forth upon the dust…",
+    "reflection": "Job had lost almost everything: his children, his property, his health, even the understanding of his friends. He argued with God, cried out, complained, and in the middle of that night a certainty sprang up: my vindicator lives. Faith is not always calm; sometimes it is born of an honest struggle with God. If you are angry or confused, you can tell Him. He prefers your truth to your polished phrases, and He never tires of listening.",
+    "prayer": "Living God, I don't always understand Your ways, and sometimes Your silence hurts. Even so, I want to believe that You live and that I will see You face to face. Receive my questions and my small trust. Amen.",
+    "action": "Write in your notebook a question or complaint you have for God, with complete honesty. Below it, write one sentence of trust, however small, and offer both to Him in prayer."
+   }
+  },
+  {
+   "day": 20,
+   "feast": null,
+   "es": {
+    "title": "Sembrados para florecer",
+    "ref": "1 Cor 15,42-43",
+    "verse": "Lo mismo es la resurrección de los muertos: se siembra un cuerpo corruptible, resucita incorruptible; se siembra un cuerpo sin gloria, resucita glorioso; se siembra un cuerpo débil, resucita lleno de fortaleza…",
+    "reflection": "San Pablo compara la muerte con una semilla que se siembra. Se siembra en debilidad y resucita en fortaleza; se siembra corruptible y resucita incorruptible. El cuerpo que amamos y que vimos enfermar no es desechado por Dios: será transformado. Por eso la Iglesia trata con tanto respeto los restos de los difuntos. No despedimos un envoltorio, sino a una persona que espera la mañana de la resurrección.",
+    "prayer": "Señor de la vida, cuando miro la fragilidad de mi cuerpo y la de los que amo, dame la esperanza de la semilla. Haz florecer a su tiempo lo que hoy sembramos con lágrimas. Amén.",
+    "action": "Si tienes plantas o un jardín, dedica unos minutos a cuidarlos mientras rezas por tus difuntos. Si no, planta una semilla en una maceta pequeña como signo de esperanza en la resurrección."
+   },
+   "en": {
+    "title": "Sown to blossom",
+    "ref": "1 Cor 15:42-43",
+    "verse": "So also is the resurrection of the dead. It is sown corruptible; it is raised incorruptible. It is sown dishonorable; it is raised glorious. It is sown weak; it is raised powerful.",
+    "reflection": "Saint Paul compares death to a seed that is sown. It is sown in weakness and raised in power; sown corruptible and raised incorruptible. The body we loved and watched grow ill is not discarded by God: it will be transformed. That is why the Church treats the remains of the dead with such reverence. We are not saying goodbye to a wrapper but to a person awaiting the morning of the resurrection.",
+    "prayer": "Lord of life, when I look at the frailty of my body and of those I love, give me the hope of the seed. In Your time, make blossom what we sow today in tears. Amen.",
+    "action": "If you have plants or a garden, spend a few minutes tending them while you pray for your departed. If not, plant a seed in a small pot as a sign of hope in the resurrection."
+   }
+  },
+  {
+   "day": 21,
+   "feast": {
+    "es": "Presentación de la Virgen María",
+    "en": "Presentation of the Blessed Virgin Mary"
+   },
+   "es": {
+    "title": "María, ofrecida desde niña",
+    "ref": "Lc 11,28",
+    "verse": "Pero él dijo: «Mejor, bienaventurados los que escuchan la palabra de Dios y la cumplen».",
+    "reflection": "La tradición cuenta que María fue presentada en el Templo siendo niña y consagrada a Dios. Más allá de los detalles, que los Evangelios no recogen, la fiesta celebra algo cierto: toda su vida fue un «sí» entregado. Jesús dirá que son dichosos los que escuchan la palabra de Dios y la cumplen, y nadie lo hizo como su Madre. Ella nos enseña que nunca es tarde para ofrecerse de nuevo.",
+    "prayer": "Virgen María, que te entregaste a Dios con un corazón disponible, ayúdame a ofrecerle mi vida tal como está, con sus luces y sombras. Enséñame a escuchar y a cumplir su palabra. Amén.",
+    "action": "Al empezar o terminar el día, reza tres avemarías y renueva con tus propias palabras tu ofrecimiento a Dios. Puedes escribirlo en tu cuaderno en una o dos líneas."
+   },
+   "en": {
+    "title": "Mary, offered from childhood",
+    "ref": "Lk 11:28",
+    "verse": "He replied, \"Rather, blessed are those who hear the word of God and observe it.\"",
+    "reflection": "Tradition tells that Mary was presented in the Temple as a child and consecrated to God. Beyond the details, which the Gospels do not record, the feast celebrates something certain: her whole life was a yes freely given. Jesus would say that blessed are those who hear the word of God and observe it, and no one did so like His Mother. She teaches us that it is never too late to offer ourselves again.",
+    "prayer": "Virgin Mary, you gave yourself to God with an open heart; help me offer Him my life just as it is, with its light and its shadows. Teach me to hear His word and to live it. Amen.",
+    "action": "At the start or end of the day, pray three Hail Marys and renew your offering to God in your own words. You can write it in your notebook in a line or two."
+   }
+  },
+  {
+   "day": 22,
+   "feast": {
+    "es": "Santa Cecilia",
+    "en": "Saint Cecilia"
+   },
+   "es": {
+    "title": "Cantar con el corazón",
+    "ref": "Col 3,16",
+    "verse": "La Palabra de Cristo habite entre vosotros en toda su riqueza; enseñaos unos a otros con toda sabiduría; exhortaos mutuamente. Cantad a Dios, dando gracias de corazón, con salmos, himnos y cánticos inspirados.",
+    "reflection": "Santa Cecilia fue una mártir romana de los primeros siglos, venerada desde muy antiguo. La tradición la relaciona con la música, y por eso es patrona de músicos y cantores. San Pablo invita a cantar a Dios salmos e himnos con gratitud. Cuando las palabras no alcanzan, el canto puede rezar por nosotros, incluso en el duelo. Muchas veces una canción sostiene la fe cuando la cabeza ya no puede más.",
+    "prayer": "Señor, por intercesión de santa Cecilia, pon un canto nuevo en mi corazón. Bendice a los músicos que sirven en tu Iglesia y haz que mi vida entera sea una alabanza. Amén.",
+    "action": "Escucha o canta con atención un canto religioso que te guste, como oración. Si alguien canta o toca en tu parroquia, agradécele su servicio la próxima vez que lo veas."
+   },
+   "en": {
+    "title": "Singing from the heart",
+    "ref": "Col 3:16",
+    "verse": "Let the word of Christ dwell in you richly, as in all wisdom you teach and admonish one another, singing psalms, hymns, and spiritual songs with gratitude in your hearts to God.",
+    "reflection": "Saint Cecilia was a Roman martyr of the early centuries, venerated from ancient times. Tradition links her with music, which is why she is the patron of musicians and singers. Saint Paul invites us to sing psalms and hymns to God with gratitude. When words fall short, song can pray for us, even in grief. Many times a hymn holds up our faith when the mind has nothing left.",
+    "prayer": "Lord, through the intercession of Saint Cecilia, put a new song in my heart. Bless the musicians who serve Your Church and make my whole life a hymn of praise. Amen.",
+    "action": "Listen to or sing a hymn you love, attentively, as a prayer. If someone sings or plays at your parish, thank them for their service the next time you see them."
+   }
+  },
+  {
+   "day": 23,
+   "feast": null,
+   "es": {
+    "title": "Los pies en la tierra, el corazón arriba",
+    "ref": "Col 3,2",
+    "verse": "aspirad a los bienes de arriba, no a los de la tierra.",
+    "reflection": "Pensar en el cielo no es huir de la vida, sino vivirla con otra medida. San Pablo invita a aspirar a los bienes de arriba, y eso se nota en lo pequeño: en cómo hablamos a los de casa, en lo que hacemos con el dinero, en el tiempo que damos a las pantallas. Quien sabe hacia dónde va camina distinto. Puedes preguntarte con serenidad qué cosas de tu agenda tienen sabor a eternidad.",
+    "prayer": "Cristo resucitado, levanta mi mirada cuando me pierdo en preocupaciones pequeñas. Que mis decisiones tengan el sabor del cielo y que mi corazón descanse en ti. Amén.",
+    "action": "Revisa tu agenda o el tiempo que pasaste ayer con el teléfono. Elige una actividad que podrías reducir y sustitúyela por diez minutos de conversación tranquila con alguien de tu casa."
+   },
+   "en": {
+    "title": "Feet on the ground, heart set above",
+    "ref": "Col 3:2",
+    "verse": "Think of what is above, not of what is on earth.",
+    "reflection": "Thinking about heaven is not escaping life but living it by a different measure. Saint Paul invites us to think of what is above, and that shows in small things: how we speak to those at home, what we do with money, how much time we give to screens. Whoever knows where they are going walks differently. You can calmly ask yourself which things on your schedule have a taste of eternity.",
+    "prayer": "Risen Christ, lift my gaze when I get lost in small worries. May my choices carry the taste of heaven, and may my heart find its rest in You. Amen.",
+    "action": "Look over your schedule or the time you spent on your phone yesterday. Choose one activity you could cut back and replace it with ten minutes of relaxed conversation with someone at home."
+   }
+  },
+  {
+   "day": 24,
+   "feast": null,
+   "es": {
+    "title": "Ciudadanos del cielo",
+    "ref": "Flp 3,20",
+    "verse": "Nosotros, en cambio, somos ciudadanos del cielo, de donde aguardamos un Salvador: el Señor Jesucristo.",
+    "reflection": "San Pablo escribe a los filipenses, orgullosos de su ciudadanía romana, que nuestra verdadera patria está en el cielo. No somos turistas sin rumbo: somos peregrinos con hogar. Eso da libertad frente a lo que pasa, y también responsabilidad, porque se nos nota el acento de nuestra tierra. Ser ciudadano del cielo significa tratar a cada persona como a un futuro vecino de la eternidad.",
+    "prayer": "Señor Jesucristo, a quien esperamos como Salvador, recuérdame que mi hogar definitivo está contigo. Libérame de los apegos que me pesan y hazme buen peregrino, atento a los que caminan a mi lado. Amén.",
+    "action": "Haz un pequeño acto de desprendimiento: regala, dona o recicla un objeto que guardas sin usar. Mientras lo haces, agradece a Dios que tu hogar definitivo no está en este mundo."
+   },
+   "en": {
+    "title": "Citizens of heaven",
+    "ref": "Phil 3:20",
+    "verse": "But our citizenship is in heaven, and from it we also await a savior, the Lord Jesus Christ.",
+    "reflection": "Saint Paul writes to the Philippians, proud of their Roman citizenship, that our true homeland is in heaven. We are not aimless tourists: we are pilgrims with a home. That gives us freedom in the face of passing things, and responsibility too, because others can hear the accent of our homeland. Being a citizen of heaven means treating every person as a future neighbor in eternity.",
+    "prayer": "Lord Jesus Christ, whom we await as Savior, remind me that my lasting home is with You. Free me from the attachments that weigh me down and make me a good pilgrim, attentive to those who walk beside me. Amen.",
+    "action": "Make a small act of detachment: give away, donate, or recycle something you keep but never use. As you do, thank God that your lasting home is not in this world."
+   }
+  },
+  {
+   "day": 25,
+   "feast": null,
+   "es": {
+    "title": "Aprender a contar los días",
+    "ref": "Sal 90,12",
+    "verse": "Enséñanos a calcular nuestros años, para que adquiramos un corazón sensato.",
+    "reflection": "El salmo pide a Dios que nos enseñe a calcular nuestros años para tener un corazón sensato. No es una invitación a la angustia, sino a la sabiduría. Recordar que la vida es breve ayuda a no dejar para mañana el perdón, la llamada pendiente o el «te quiero». Muchos cristianos han pedido la gracia de una buena muerte, no por miedo, sino para vivir cada día con lo esencial en orden.",
+    "prayer": "Señor del tiempo, enséñame a valorar cada día como un regalo. Que no deje pendiente el amor que puedo dar hoy, y que cuando llegue mi hora me encuentres en paz y confiado en ti. Amén.",
+    "action": "Haz un breve examen: ¿hay alguien a quien necesitas pedir perdón, perdonar o agradecer? Elige un gesto concreto y hazlo antes de que acabe el día, aunque sea pequeño."
+   },
+   "en": {
+    "title": "Learning to count our days",
+    "ref": "Ps 90:12",
+    "verse": "Teach us to count our days aright, that we may gain wisdom of heart.",
+    "reflection": "The psalm asks God to teach us to count our days so that we may gain a wise heart. It is not an invitation to anxiety but to wisdom. Remembering that life is short helps us not to put off until tomorrow the forgiveness, the overdue phone call, or the \"I love you.\" Many Christians have asked for the grace of a holy death, not out of fear, but to live each day with what matters most in order.",
+    "prayer": "Lord of time, teach me to treasure each day as a gift. May I not leave undone the love I can give today, and when my hour comes, may You find me at peace and trusting in You. Amen.",
+    "action": "Make a brief examination: is there someone you need to ask forgiveness from, forgive, or thank? Choose one concrete gesture and do it before the day ends, however small."
+   }
+  },
+  {
+   "day": 26,
+   "feast": null,
+   "es": {
+    "title": "Un tesoro que no se oxida",
+    "ref": "Mt 6,20",
+    "verse": "Haceos tesoros en el cielo, donde no hay polilla ni carcoma que los roen, ni ladrones que abren boquetes y roban.",
+    "reflection": "Jesús habla de tesoros que no roe la polilla ni la carcoma. Al morir no nos llevamos cuentas ni objetos, pero sí lo que amamos: cada acto de bondad, cada perdón dado, cada hora con quien estaba solo. El cielo empieza a construirse en lo cotidiano. No se trata de acumular méritos con ansiedad, sino de dejar que Dios convierta nuestra vida corriente en algo que dura para siempre.",
+    "prayer": "Jesús, tú eres mi verdadero tesoro. Libra mi corazón de la ansiedad por tener y llénalo del deseo de amar. Que lo que hago con amor quede guardado en ti. Amén.",
+    "action": "Ofrece una hora de tu semana a alguien que pasa mucho tiempo solo: un anciano de tu familia, un vecino o un enfermo. Si no puedes ir, llámalo y escúchalo sin prisa."
+   },
+   "en": {
+    "title": "A treasure that never rusts",
+    "ref": "Mt 6:20",
+    "verse": "But store up treasures in heaven, where neither moth nor decay destroys, nor thieves break in and steal.",
+    "reflection": "Jesus speaks of treasures that neither moth nor decay can destroy. When we die we take no bank accounts or possessions with us, but we do take what we have loved: every act of kindness, every forgiveness given, every hour spent with someone lonely. Heaven begins to be built in everyday life. It is not about anxiously piling up merits, but letting God turn our ordinary life into something that lasts forever.",
+    "prayer": "Jesus, You are my true treasure. Free my heart from the anxiety of having and fill it with the desire to love. May whatever I do with love be kept safe in You. Amen.",
+    "action": "Offer an hour of your week to someone who spends a lot of time alone: an elderly relative, a neighbor, or someone who is sick. If you cannot visit, call and listen without hurrying."
+   }
+  },
+  {
+   "day": 27,
+   "feast": null,
+   "es": {
+    "title": "Dar gracias también por lo vivido",
+    "ref": "1 Tes 5,18",
+    "verse": "Dad gracias en toda ocasión: esta es la voluntad de Dios en Cristo Jesús respecto de vosotros.",
+    "reflection": "Dar gracias en toda ocasión no significa fingir que todo fue bueno. Significa descubrir que, incluso en medio de las pérdidas, hubo regalos: años compartidos, una sonrisa, una enseñanza, el cuidado recibido. La gratitud no borra el duelo, pero poco a poco lo transforma en memoria agradecida. Al acercarse el final del año litúrgico, es bueno mirar atrás y reconocer las huellas de Dios en el camino.",
+    "prayer": "Padre bueno, te doy gracias por las personas que pusiste en mi vida, por las que siguen conmigo y por las que ya partieron. Gracias por lo que me dieron y por lo que tú me diste a través de ellas. Amén.",
+    "action": "Escribe en tu cuaderno diez regalos que recibiste este año, incluidos los que llegaron a través de personas que ya murieron. Lee la lista en voz alta como oración de acción de gracias."
+   },
+   "en": {
+    "title": "Giving thanks for what we have lived",
+    "ref": "1 Thes 5:18",
+    "verse": "In all circumstances give thanks, for this is the will of God for you in Christ Jesus.",
+    "reflection": "Giving thanks in all circumstances does not mean pretending everything was good. It means discovering that, even amid our losses, there were gifts: years shared, a smile, a lesson, the care we received. Gratitude does not erase grief, but little by little it turns it into grateful memory. As the liturgical year draws to a close, it is good to look back and recognize God's footprints along the way.",
+    "prayer": "Good Father, I thank You for the people You placed in my life, those still with me and those who have gone before me. Thank You for what they gave me and for what You gave me through them. Amen.",
+    "action": "Write in your notebook ten gifts you received this year, including those that came through people who have since died. Read the list aloud as a prayer of thanksgiving."
+   }
+  },
+  {
+   "day": 28,
+   "feast": null,
+   "es": {
+    "title": "Levanta la cabeza",
+    "ref": "Lc 21,28",
+    "verse": "Cuando empiece a suceder esto, levantaos, alzad la cabeza; se acerca vuestra liberación.",
+    "reflection": "En las últimas semanas del año litúrgico, el Evangelio habla del final de los tiempos con imágenes fuertes. Pero la palabra de Jesús a los suyos no es de miedo: levantaos, alzad la cabeza, se acerca vuestra liberación. Si llegas al final de este mes cansado, con caídas repetidas o con la sensación de no haber avanzado, escúchalo para ti. Dios no viene a aplastarte, sino a liberarte. Puedes volver a empezar.",
+    "prayer": "Señor Jesús, conoces mis caídas y mi cansancio. Levántame otra vez, como tantas veces lo has hecho. Quiero esperarte sin miedo, con la cabeza alta, porque confío en tu misericordia. Amén.",
+    "action": "Si llevas tiempo sin confesarte, busca el horario de confesiones de tu parroquia y elige un día. Mientras tanto, haz un examen breve y termina con un acto de contrición sencillo y confiado."
+   },
+   "en": {
+    "title": "Lift up your head",
+    "ref": "Lk 21:28",
+    "verse": "But when these signs begin to happen, stand erect and raise your heads because your redemption is at hand.",
+    "reflection": "In the last weeks of the liturgical year, the Gospel speaks of the end of time in powerful images. Yet Jesus' word to His disciples is not one of fear: stand erect and raise your heads, because your redemption is at hand. If you reach the end of this month tired, with repeated falls or the sense that you haven't moved forward, hear this for yourself. God does not come to crush you but to set you free. You can begin again.",
+    "prayer": "Lord Jesus, You know my falls and my weariness. Lift me up once more, as You have done so many times. I want to await You without fear, head held high, because I trust in Your mercy. Amen.",
+    "action": "If it has been a while since your last confession, look up your parish's confession times and pick a day. Meanwhile, make a brief examination and end with a simple, trusting act of contrition."
+   }
+  },
+  {
+   "day": 29,
+   "feast": null,
+   "es": {
+    "title": "Un Rey que abre el paraíso",
+    "ref": "Lc 23,42-43",
+    "verse": "Y decía: «Jesús, acuérdate de mí cuando llegues a tu reino». Jesús le dijo: «En verdad te digo: hoy estarás conmigo en el paraíso».",
+    "reflection": "El año litúrgico culmina con la solemnidad de Jesucristo, Rey del universo, el último domingo antes del Adviento. Su trono fue una cruz, y el primero a quien prometió el paraíso fue un ladrón que, al final, solo supo pedir: «Acuérdate de mí». Este es el Rey en quien esperamos para nosotros y para nuestros difuntos: uno que reina perdonando y que no rechaza a quien acude a Él, aunque sea en el último momento.",
+    "prayer": "Jesús, Rey de misericordia, acuérdate de mí cuando llegues a tu Reino. Acuérdate también de mis difuntos y de los que mueren hoy sin nadie a su lado. Reina en mi corazón con tu paz. Amén.",
+    "action": "Reza por las personas que están muriendo en este momento en el mundo, especialmente las que están solas. Repite despacio «Jesús, acuérdate de mí» diez veces a lo largo del día."
+   },
+   "en": {
+    "title": "A King who opens paradise",
+    "ref": "Lk 23:42-43",
+    "verse": "Then he said, \"Jesus, remember me when you come into your kingdom.\" He replied to him, \"Amen, I say to you, today you will be with me in Paradise.\"",
+    "reflection": "The liturgical year culminates in the Solemnity of Our Lord Jesus Christ, King of the Universe, on the last Sunday before Advent. His throne was a cross, and the first to whom He promised paradise was a thief who, at the very end, could only ask: \"Remember me.\" This is the King in whom we hope for ourselves and for our departed: one who reigns by forgiving and turns away no one who comes to Him, even at the last moment.",
+    "prayer": "Jesus, King of mercy, remember me when You come into Your Kingdom. Remember also my departed loved ones and those dying this very day with no one at their side. Reign in my heart with Your peace. Amen.",
+    "action": "Pray for those who are dying right now around the world, especially those who are alone. Slowly repeat \"Jesus, remember me\" ten times over the course of the day."
+   }
+  },
+  {
+   "day": 30,
+   "feast": {
+    "es": "San Andrés, apóstol",
+    "en": "Saint Andrew, Apostle"
+   },
+   "es": {
+    "title": "Dejar las redes y seguirlo",
+    "ref": "Mt 4,19-20",
+    "verse": "Les dijo: «Venid en pos de mí y os haré pescadores de hombres». Inmediatamente dejaron las redes y lo siguieron.",
+    "reflection": "San Andrés, hermano de Pedro, era pescador en el lago de Galilea. Cuando Jesús lo llamó, dejó las redes y lo siguió. El Evangelio de Juan cuenta además que fue él quien llevó a su hermano hasta Jesús. Su fiesta cierra noviembre y nos asoma al Adviento: después de mirar la eternidad, volvemos a lo cotidiano con una pregunta sencilla. ¿Qué red necesito soltar para seguir a Jesús más de cerca, y a quién puedo acercarle?",
+    "prayer": "Señor Jesús, por intercesión de san Andrés, dame un corazón disponible para dejar lo que me ata y seguirte. Hazme capaz de llevar a otros hacia ti con sencillez, como él llevó a su hermano. Amén.",
+    "action": "Invita a alguien de tu familia o a un amigo a acompañarte a Misa o a rezar contigo unos minutos al comenzar el Adviento. Hazlo con sencillez, sin insistir, como quien comparte algo bueno."
+   },
+   "en": {
+    "title": "Leaving the nets to follow Him",
+    "ref": "Mt 4:19-20",
+    "verse": "He said to them, \"Come after me, and I will make you fishers of men.\" At once they left their nets and followed him.",
+    "reflection": "Saint Andrew, Peter's brother, was a fisherman on the Sea of Galilee. When Jesus called him, he left his nets and followed. The Gospel of John adds that he was the one who brought his brother to Jesus. His feast closes November and opens a window onto Advent: after gazing at eternity, we return to everyday life with a simple question. What net do I need to let go of to follow Jesus more closely, and whom can I bring to Him?",
+    "prayer": "Lord Jesus, through the intercession of Saint Andrew, give me a ready heart to leave behind what binds me and follow You. Help me bring others to You simply, as he brought his brother. Amen.",
+    "action": "Invite a family member or friend to come to Mass with you or to pray together for a few minutes as Advent begins. Do it simply, without pressure, like someone sharing something good."
+   }
+  }
+ ]
+}

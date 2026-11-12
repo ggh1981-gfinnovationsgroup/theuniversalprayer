@@ -1,0 +1,667 @@
+{
+ "key": "junio",
+ "es": {
+  "topic": "Sagrado Corazón de Jesús",
+  "intro": "Junio mira al Corazón de Jesús: un corazón humano que ama primero, que se deja herir y sigue perdonando. Caminaremos cuatro semanas: el amor que se adelanta, el costado abierto y la Eucaristía, la mansedumbre y el consuelo que repara, y la confianza en el Pastor que sale a buscarnos. La solemnidad del Sagrado Corazón, que cambia de fecha cada año, será el centro silencioso de todo el mes.",
+  "method": {
+   "title": "Cómo vivir este mes",
+   "steps": [
+    "Cada mañana, pon la mano sobre tu pecho un instante y ofrece tu día al Corazón de Jesús con la oración del mes.",
+    "Lee despacio el versículo del día y quédate con una sola palabra que te acompañe hasta la noche.",
+    "Haz la acción propuesta sin perfeccionismo: si un día no puedes, retómala al siguiente sin culparte.",
+    "Si te es posible, busca un rato ante el Santísimo o participa en alguna Misa entre semana; si no, haz una comunión espiritual desde casa.",
+    "Por la noche, reza la oración de cierre y entrega al Señor lo que te pesó y lo que te alegró."
+   ],
+   "prayer": "Corazón de Jesús, que me amaste antes de que yo supiera amarte, te ofrezco este día: mis trabajos, mis alegrías, mis cansancios y también mis caídas. Haz mi corazón semejante al tuyo, manso y humilde, y enséñame a confiar en ti cuando no entienda. Amén.",
+   "closing": "Sagrado Corazón de Jesús, en ti confío. Guarda esta noche a los que amo y a los que todavía no sé amar. Amén."
+  }
+ },
+ "en": {
+  "topic": "Sacred Heart of Jesus",
+  "intro": "June turns our gaze to the Heart of Jesus: a human heart that loves first, lets itself be wounded, and keeps on forgiving. We will walk for four weeks: the love that goes first, the opened side and the Eucharist, the gentleness and comfort that make reparation, and trust in the Shepherd who comes looking for us. The solemnity of the Sacred Heart, whose date changes each year, is the quiet center of the whole month.",
+  "method": {
+   "title": "How to live this month",
+   "steps": [
+    "Each morning, place your hand over your heart for a moment and offer your day to the Heart of Jesus with this month's prayer.",
+    "Read the verse of the day slowly and carry a single word from it with you until evening.",
+    "Do the suggested action without perfectionism: if you miss a day, pick it up the next without blaming yourself.",
+    "If possible, spend some time before the Blessed Sacrament or attend a weekday Mass; if not, make a spiritual communion from home.",
+    "At night, pray the closing prayer and hand over to the Lord both what weighed on you and what brought you joy."
+   ],
+   "prayer": "Heart of Jesus, who loved me before I knew how to love You, I offer You this day: my work, my joys, my weariness, and even my falls. Make my heart like Yours, gentle and humble, and teach me to trust You when I do not understand. Amen.",
+   "closing": "Sacred Heart of Jesus, I trust in You. Watch over tonight those I love and those I have not yet learned to love. Amen."
+  }
+ },
+ "days": [
+  {
+   "day": 1,
+   "feast": {
+    "es": "San Justino",
+    "en": "Saint Justin"
+   },
+   "es": {
+    "title": "Un filósofo que encontró la Verdad",
+    "ref": "1 Pe 3,15",
+    "verse": "Más bien, glorificad a Cristo el Señor en vuestros corazones, dispuestos siempre para dar explicación a todo el que os pida una razón de vuestra esperanza…",
+    "reflection": "San Justino buscó la verdad en varias escuelas de filosofía hasta que encontró a Cristo. No dejó de pensar al convertirse: puso su inteligencia al servicio de la fe y explicó con sencillez cómo celebraban los cristianos la Eucaristía el domingo. Terminó dando la vida por Jesús en Roma. Empezamos junio con él, porque el Corazón de Jesús no teme nuestras preguntas: las recibe y las ilumina.",
+    "prayer": "San Justino, buscador incansable, intercede por mí. Que no tenga miedo de preguntar ni de pensar, y que mi búsqueda termine siempre en el Corazón de Jesús, que es la Verdad hecha amor. Amén.",
+    "action": "Escribe en un cuaderno una pregunta sobre la fe que llevas tiempo guardando. Busca la respuesta esta semana en el Catecismo o pregúntasela con calma a un sacerdote o catequista."
+   },
+   "en": {
+    "title": "A philosopher who found the Truth",
+    "ref": "1 Pt 3:15",
+    "verse": "but sanctify Christ as Lord in your hearts. Always be ready to give an explanation to anyone who asks you for a reason for your hope…",
+    "reflection": "Saint Justin searched for truth in several schools of philosophy until he met Christ. He did not stop thinking once he became a Christian: he put his mind at the service of faith and described in simple words how believers gathered for the Eucharist on Sunday. In the end he gave his life for Jesus in Rome. We begin June with him, because the Heart of Jesus is not afraid of our questions: it welcomes them and sheds light on them.",
+    "prayer": "Saint Justin, tireless seeker, pray for me. Let me not be afraid to ask or to think, and may my searching always lead me to the Heart of Jesus, who is Truth made love. Amen.",
+    "action": "Write in a notebook one question about the faith you have been carrying for a while. This week, look for the answer in the Catechism or calmly ask a priest or catechist about it."
+   }
+  },
+  {
+   "day": 2,
+   "feast": null,
+   "es": {
+    "title": "Él se adelantó",
+    "ref": "1 Jn 4,19",
+    "verse": "Nosotros amemos a Dios, porque él nos amó primero.",
+    "reflection": "Antes de que aprendieras a rezar, antes de tu primer acierto o tu primer error, ya eras amado. El Corazón de Jesús no espera a que estemos listos: se adelanta. Esto cambia la manera de vivir la fe, porque ya no amamos para ganarnos su cariño, sino porque lo hemos recibido. Si hoy te cuesta amar a alguien, empieza por dejarte amar tú primero.",
+    "prayer": "Señor Jesús, tú me amaste primero, sin condiciones y sin esperar a que yo mereciera nada. Ayúdame a creerlo de verdad hoy, y que de ese amor recibido nazca mi manera de tratar a los demás. Amén.",
+    "action": "Dedica cinco minutos en silencio a recordar tres momentos de tu vida en que fuiste amado sin haberlo merecido. Da gracias a Dios por cada uno, nombrándolo en voz baja."
+   },
+   "en": {
+    "title": "He went first",
+    "ref": "1 Jn 4:19",
+    "verse": "We love because he first loved us.",
+    "reflection": "Before you learned to pray, before your first success or your first mistake, you were already loved. The Heart of Jesus does not wait until we are ready: it goes first. This changes the way we live our faith, because we no longer love in order to earn His affection, but because we have already received it. If loving someone is hard for you right now, begin by letting yourself be loved first.",
+    "prayer": "Lord Jesus, You loved me first, without conditions and without waiting for me to deserve anything. Help me truly believe it today, and let the way I treat others grow out of the love I have received. Amen.",
+    "action": "Spend five quiet minutes remembering three moments in your life when you were loved without having earned it. Thank God for each one, naming it softly."
+   }
+  },
+  {
+   "day": 3,
+   "feast": {
+    "es": "San Carlos Lwanga y compañeros",
+    "en": "Saint Charles Lwanga and Companions"
+   },
+   "es": {
+    "title": "Jóvenes firmes en Uganda",
+    "ref": "Rom 8,35",
+    "verse": "¿Quién nos separará del amor de Cristo?, ¿la tribulación?, ¿la angustia?, ¿la persecución?, ¿el hambre?, ¿la desnudez?, ¿el peligro?, ¿la espada?…",
+    "reflection": "San Carlos Lwanga y sus compañeros eran, en su mayoría, jóvenes al servicio de la corte del rey de Buganda. Carlos, catequista, cuidaba de los más pequeños, los instruía en la fe y los protegía de los abusos. Cuando se les exigió renegar de Cristo, prefirieron la fidelidad, y muchos murieron en el fuego. Su valentía no nació de la dureza, sino de un corazón convencido de que nada podía separarlo del amor de Cristo. Hoy nos recuerdan a todos los jóvenes que resisten presiones injustas.",
+    "prayer": "San Carlos Lwanga y santos mártires de Uganda, rogad por los jóvenes que hoy son presionados a traicionar su conciencia. Dadles amigos fieles y un corazón firme y sereno, sostenido por Jesús. Amén.",
+    "action": "Reza un misterio del Rosario por un joven que conozcas y que esté pasando un momento difícil. Si puedes, envíale un mensaje breve de ánimo, sin sermones."
+   },
+   "en": {
+    "title": "Young and steadfast in Uganda",
+    "ref": "Rom 8:35",
+    "verse": "What will separate us from the love of Christ? Will anguish, or distress, or persecution, or famine, or nakedness, or peril, or the sword?",
+    "reflection": "Saint Charles Lwanga and his companions were mostly young men serving at the royal court of Buganda. Charles, a catechist, looked after the younger pages, taught them the faith, and shielded them from abuse. When they were ordered to deny Christ, they chose faithfulness, and many died by fire. Their courage came not from hardness but from hearts convinced that nothing could separate them from the love of Christ. They remind us of every young person who stands firm under unjust pressure.",
+    "prayer": "Saint Charles Lwanga and holy martyrs of Uganda, pray for the young people who are pressured to betray their conscience. Give them faithful friends and a heart that is firm, peaceful, and held by Jesus. Amen.",
+    "action": "Pray one decade of the Rosary for a young person you know who is going through a hard time. If you can, send them a short message of encouragement, without lecturing."
+   }
+  },
+  {
+   "day": 4,
+   "feast": null,
+   "es": {
+    "title": "Un amor que no caduca",
+    "ref": "Jer 31,3",
+    "verse": "El Señor se le apareció de lejos: Con amor eterno te amé, por eso prolongué mi misericordia para contigo.",
+    "reflection": "El profeta habla a un pueblo que lo había perdido casi todo: tierra, templo, orgullo. Y Dios no le reprocha nada; le dice que lo ama con amor eterno. En el Corazón de Jesús ese amor tomó carne y latido. No es un afecto que se gasta con tus fallos ni que depende de tu ánimo del día. Si hoy te sientes lejos, recuerda que la distancia no ha borrado ni una línea de esa promesa.",
+    "prayer": "Dios fiel, que me amas con amor eterno, cuando me sienta lejano o poca cosa, recuérdame que tu misericordia sigue extendiéndose hacia mí. Que el Corazón de tu Hijo sea mi casa. Amén.",
+    "action": "Escribe en un papel «Con amor eterno te amé» y ponlo donde lo veas varias veces al día: el espejo, la cartera o junto a tu computadora."
+   },
+   "en": {
+    "title": "A love that does not expire",
+    "ref": "Jer 31:3",
+    "verse": "the LORD appears to him from afar: With age-old love I have loved you; so I have kept my mercy toward you.",
+    "reflection": "The prophet speaks to a people who had lost almost everything: land, temple, pride. And God does not scold them; He tells them He loves them with an everlasting love. In the Heart of Jesus that love took flesh and a heartbeat. It is not an affection that wears out with your failures or depends on your mood. If you feel far away right now, remember that distance has not erased a single word of that promise.",
+    "prayer": "Faithful God, who love me with an everlasting love, when I feel distant or small, remind me that Your mercy keeps reaching toward me. Let the Heart of Your Son be my home. Amen.",
+    "action": "Write \"I have loved you with an everlasting love\" on a slip of paper and put it where you will see it several times a day: the mirror, your wallet, or next to your computer."
+   }
+  },
+  {
+   "day": 5,
+   "feast": {
+    "es": "San Bonifacio",
+    "en": "Saint Boniface"
+   },
+   "es": {
+    "title": "El monje que cruzó el mar",
+    "ref": "Rom 10,15",
+    "verse": "y ¿cómo anunciarán si no los envían? Según está escrito: ¡Qué hermosos los pies de los que anuncia n la Buena Noticia del bien!",
+    "reflection": "San Bonifacio fue un monje inglés que dejó su tierra para anunciar el Evangelio en las regiones germánicas. Organizó comunidades, fundó monasterios y pidió ayuda a monjes y monjas de su patria para enseñar la fe. Ya anciano, siguió predicando, y murió mártir junto a sus compañeros. Su vida muestra un corazón que no se queda encerrado: cuando el amor de Cristo llega de verdad, siempre quiere salir al encuentro de otros.",
+    "prayer": "San Bonifacio, misionero valiente, intercede por los que anuncian a Cristo en lugares difíciles. Y a mí dame pies dispuestos a acercarme a quien necesita una buena noticia, aunque sea en mi propia casa. Amén.",
+    "action": "Ofrece una pequeña limosna discreta para las misiones o para tu parroquia. Si no puedes dar dinero, reza un padrenuestro por un misionero que conozcas o de quien hayas oído hablar."
+   },
+   "en": {
+    "title": "The monk who crossed the sea",
+    "ref": "Rom 10:15",
+    "verse": "And how can people preach unless they are sent? As it is written, \"How beautiful are the feet of those who bring (the) good news!\"",
+    "reflection": "Saint Boniface was an English monk who left his homeland to proclaim the Gospel in the Germanic lands. He organized communities, founded monasteries, and asked monks and nuns from his own country to come and help teach the faith. Even in old age he kept preaching, and he died a martyr together with his companions. His life shows a heart that does not stay closed in on itself: when the love of Christ truly arrives, it always wants to go out and meet others.",
+    "prayer": "Saint Boniface, courageous missionary, pray for all who proclaim Christ in difficult places. And give me feet ready to approach anyone who needs good news, even within my own home. Amen.",
+    "action": "Give a small, quiet donation to the missions or to your parish. If you cannot give money, pray an Our Father for a missionary you know or have heard about."
+   }
+  },
+  {
+   "day": 6,
+   "feast": null,
+   "es": {
+    "title": "Amado en lo peor de ti",
+    "ref": "Rom 5,8",
+    "verse": "pues bien: Dios nos demostró su amor en que, siendo nosotros todavía pecadores, Cristo murió por nosotros.",
+    "reflection": "Pablo no dice que Cristo murió por nosotros cuando nos portamos bien, sino cuando todavía éramos pecadores. Es decir, el Corazón de Jesús te conoce en tu peor día y no cambia de opinión sobre ti. Si has vuelto a caer en lo mismo, no te escondas. La vergüenza susurra que debes arreglarte antes de volver; el Evangelio dice que ya fuiste amado justo ahí. Levántate despacio y vuelve.",
+    "prayer": "Jesús, tú me amaste cuando yo no te amaba. Hoy vengo con lo que he hecho y con lo que he dejado de hacer. No quiero esconderme más de ti. Levántame con tu misericordia y dame un corazón nuevo. Amén.",
+    "action": "Si llevas tiempo sin confesarte, busca el horario de confesiones de una parroquia cercana y anótalo. No hace falta ir hoy mismo: basta con dar ese primer paso sereno."
+   },
+   "en": {
+    "title": "Loved at your worst",
+    "ref": "Rom 5:8",
+    "verse": "But God proves his love for us in that while we were still sinners Christ died for us.",
+    "reflection": "Paul does not say that Christ died for us once we behaved well, but while we were still sinners. In other words, the Heart of Jesus knows you on your worst day and does not change His mind about you. If you have fallen into the same thing again, don't hide. Shame whispers that you must fix yourself before coming back; the Gospel says you were already loved right there. Get up slowly, and return.",
+    "prayer": "Jesus, You loved me when I did not love You. I come to You with what I have done and what I have failed to do. I don't want to hide from You anymore. Lift me up with Your mercy and give me a new heart. Amen.",
+    "action": "If it has been a while since your last confession, look up the confession times at a nearby parish and write them down. You don't need to go right away: taking that first calm step is enough."
+   }
+  },
+  {
+   "day": 7,
+   "feast": null,
+   "es": {
+    "title": "Lazos de ternura",
+    "ref": "Os 11,4",
+    "verse": "Con lazos humanos los atraje, con vínculos de amor. Fui para ellos como quien alza un niño hasta sus mejillas. Me incliné hacia él para darle de comer.",
+    "reflection": "Oseas describe a Dios como un padre que enseña a caminar a su hijo, lo levanta hasta su mejilla y se inclina para darle de comer. No lo arrastra con cadenas: lo atrae con lazos de amor. Así actúa el Corazón de Jesús contigo, no a empujones, sino con paciencia. Al cerrar esta primera semana, pregúntate dónde has sentido ese tirón suave que te devolvía a casa.",
+    "prayer": "Padre bueno, gracias por atraerme con lazos de amor y no con miedo. Cuando me aleje, inclínate otra vez hacia mí, y enséñame a tratar con esa misma ternura a las personas que me cuestan. Amén.",
+    "action": "Haz un gesto de ternura concreto en casa: prepara algo de comer o de beber para alguien de tu familia, sin que te lo pida y sin comentarlo."
+   },
+   "en": {
+    "title": "Bands of tenderness",
+    "ref": "Hos 11:4",
+    "verse": "I drew them with human cords, with bands of love; I fostered them like one who raises an infant to his cheeks; Yet, though I stooped to feed my child, they did not know that I was their healer.",
+    "reflection": "Hosea describes God as a father who teaches his child to walk, lifts him to his cheek, and bends down to feed him. He does not drag him with chains but draws him with bands of love. That is how the Heart of Jesus deals with you: not by shoving, but with patience. As this first week closes, ask yourself where you have felt that gentle pull bringing you back home.",
+    "prayer": "Good Father, thank You for drawing me with bands of love and not with fear. When I wander, bend down to me again, and teach me to treat with that same tenderness the people I find difficult. Amen.",
+    "action": "Make one concrete gesture of tenderness at home: prepare something to eat or drink for someone in your family, without being asked and without mentioning it."
+   }
+  },
+  {
+   "day": 8,
+   "feast": null,
+   "es": {
+    "title": "El costado abierto",
+    "ref": "Jn 20,27",
+    "verse": "Luego dijo a Tomás: «Trae tu dedo, aquí tienes mis manos; trae tu mano y métela en mi costado; y no seas incrédulo, sino creyente».",
+    "reflection": "Comienza la segunda semana ante una herida. En la cruz, la lanza abrió el costado de Jesús y brotaron sangre y agua, signos que la Iglesia ha unido al Bautismo y a la Eucaristía. Resucitado, Jesús no esconde esa herida: invita a Tomás a tocarla. El Corazón abierto no se cerró; se volvió puerta. Piensa en tus propias heridas: puestas junto a la suya, también ellas pueden convertirse en lugar de encuentro y no de rencor.",
+    "prayer": "Jesús de costado abierto, escóndeme en tu herida. Lava lo que hay de amargo en mi corazón con el agua y la sangre que brotaron por mí, y haz que de mis heridas nazca compasión y no rencor. Amén.",
+    "action": "Contempla durante cinco minutos un crucifijo, en casa o en una iglesia. Mira en silencio el costado de Jesús y deja allí, con una sola frase, la herida que más te duele."
+   },
+   "en": {
+    "title": "The opened side",
+    "ref": "Jn 20:27",
+    "verse": "Then he said to Thomas, \"Put your finger here and see my hands, and bring your hand and put it into my side, and do not be unbelieving, but believe.\"",
+    "reflection": "The second week begins before a wound. On the cross, the lance opened the side of Jesus, and blood and water flowed out, signs the Church has linked to Baptism and the Eucharist. Risen, Jesus does not hide that wound: He invites Thomas to touch it. The opened Heart did not close; it became a door. Think of your own wounds: placed beside His, they too can become a place of encounter rather than resentment.",
+    "prayer": "Jesus, whose side was opened, hide me in Your wound. Wash whatever is bitter in my heart with the blood and water that flowed for me, and let my wounds give birth to compassion rather than resentment. Amen.",
+    "action": "Spend five minutes looking at a crucifix, at home or in a church. Gaze quietly at the side of Jesus and leave there, in a single sentence, the wound that hurts you most."
+   }
+  },
+  {
+   "day": 9,
+   "feast": null,
+   "es": {
+    "title": "Mirar al traspasado",
+    "ref": "Zac 12,10",
+    "verse": "Derramaré sobre la casa de David y sobre los habitantes de Jerusalén un espíritu de perdón y de oración, y volverán sus ojos hacia mí, al que traspasaron. Le harán duelo como de hijo único, lo llorarán como se llora al primogénito.",
+    "reflection": "Zacarías anuncia un espíritu de perdón y de oración, y un pueblo que vuelve los ojos hacia el que traspasaron. El evangelista Juan vio cumplida esa palabra al pie de la cruz. No es una mirada de curiosidad ni de culpa paralizante, sino una mirada que sana. Quien contempla mucho tiempo el amor herido de Jesús empieza a mirar distinto a los demás: con menos juicio y más compasión. Basta con mirar y dejarse mirar.",
+    "prayer": "Señor traspasado, quiero mirarte y dejar que tú me mires. Sana mi manera de ver: que no busque primero los defectos de los demás, sino sus heridas, y que aprenda de ti a responder con misericordia. Amén.",
+    "action": "Cada vez que te descubras juzgando a alguien, detente y di por dentro: «Jesús, mira tú a esta persona con tu Corazón». Por la noche, recuerda cuántas veces lo hiciste, sin reproches."
+   },
+   "en": {
+    "title": "Looking on the One they pierced",
+    "ref": "Zec 12:10",
+    "verse": "I will pour out on the house of David and on the inhabitants of Jerusalem a spirit of grace and petition; and they shall look on him whom they have thrust through, and they shall mourn for him as one mourns for an only son, and they shall grieve over him as one grieves over a first-born.",
+    "reflection": "Zechariah foretells a spirit of grace and petition, and a people who look upon the one they have pierced. The evangelist John saw that word fulfilled at the foot of the cross. This is not a curious glance or a paralyzing guilt, but a gaze that heals. Whoever spends time contemplating the wounded love of Jesus begins to see others differently: with less judgment and more compassion. It is enough to look, and to let yourself be looked upon.",
+    "prayer": "Pierced Lord, I want to look at You and let You look at me. Heal the way I see: let me notice first not the faults of others but their wounds, and learn from You to answer with mercy. Amen.",
+    "action": "Whenever you catch yourself judging someone, pause and say inwardly: \"Jesus, look at this person with Your Heart.\" At night, recall how many times you did it, without blaming yourself."
+   }
+  },
+  {
+   "day": 10,
+   "feast": null,
+   "es": {
+    "title": "Perdón desde la cruz",
+    "ref": "Lc 23,34",
+    "verse": "Jesús decía: «Padre, perdónalos, porque no saben lo que hacen». Hicieron lotes con sus ropas y los echaron a suerte.",
+    "reflection": "Mientras lo clavaban, Jesús rezaba por los que lo herían. Su Corazón no esperó una disculpa para perdonar. Perdonar no es decir que lo ocurrido no importó, ni volver a ponerse en peligro; es renunciar a la venganza y entregar la herida al Padre. A veces solo podemos empezar pidiendo el deseo de perdonar. Eso también es oración, y Dios la escucha.",
+    "prayer": "Padre, como Jesús en la cruz, pongo en tus manos a quien me hizo daño. Todavía me cuesta perdonar del todo; dame al menos el deseo de hacerlo, y sana poco a poco lo que en mí quedó roto. Amén.",
+    "action": "Piensa en una persona a la que te cuesta perdonar y reza por ella un avemaría, aunque sea con el corazón frío. No tienes que hablar con ella ni contárselo a nadie."
+   },
+   "en": {
+    "title": "Forgiveness from the cross",
+    "ref": "Lk 23:34",
+    "verse": "[Then Jesus said, \"Father, forgive them, they know not what they do.\"] They divided his garments by casting lots.",
+    "reflection": "While they nailed Him to the cross, Jesus prayed for those who were hurting Him. His Heart did not wait for an apology in order to forgive. Forgiving does not mean saying that what happened did not matter, nor putting yourself in danger again; it means giving up revenge and handing the wound over to the Father. Sometimes we can only begin by asking for the desire to forgive. That, too, is prayer, and God hears it.",
+    "prayer": "Father, like Jesus on the cross, I place in Your hands the person who hurt me. I still find it hard to forgive completely; give me at least the desire to do so, and slowly heal what was broken in me. Amen.",
+    "action": "Think of someone you find it hard to forgive and pray a Hail Mary for them, even with a cold heart. You do not have to speak to them or tell anyone about it."
+   }
+  },
+  {
+   "day": 11,
+   "feast": {
+    "es": "San Bernabé, apóstol",
+    "en": "Saint Barnabas, Apostle"
+   },
+   "es": {
+    "title": "Hijo de la consolación",
+    "ref": "Hch 11,24",
+    "verse": "porque era un hombre bueno, lleno de Espíritu Santo y de fe. Y una multitud considerable se adhirió al Señor.",
+    "reflection": "Bernabé se llamaba José, pero los apóstoles le dieron un nombre que significa hijo de la consolación. Vendió un campo y entregó el dinero a la comunidad; fue el primero en confiar en Pablo cuando todos le tenían miedo, y en Antioquía se alegró al ver la gracia de Dios en los nuevos creyentes. Era un hombre bueno. A veces la santidad tiene esa forma sencilla: ser quien anima, quien da una segunda oportunidad.",
+    "prayer": "San Bernabé, apóstol del ánimo, intercede por mí. Que sepa ver la gracia de Dios en los demás antes que sus fallos, y que mi presencia consuele a quien está solo o desanimado. Amén.",
+    "action": "Envía un mensaje de ánimo a alguien que está empezando algo difícil: un trabajo, un tratamiento, un camino de fe. Dile una cosa buena y concreta que ves en esa persona."
+   },
+   "en": {
+    "title": "Son of encouragement",
+    "ref": "Acts 11:24",
+    "verse": "for he was a good man, filled with the holy Spirit and faith. And a large number of people was added to the Lord.",
+    "reflection": "Barnabas was named Joseph, but the apostles gave him a name meaning son of encouragement. He sold a field and gave the money to the community; he was the first to trust Paul when everyone else was afraid of him, and in Antioch he rejoiced to see God's grace in the new believers. He was a good man. Sometimes holiness takes that simple shape: being the one who encourages, the one who gives a second chance.",
+    "prayer": "Saint Barnabas, apostle of encouragement, pray for me. Help me see God's grace in others before their faults, and let my presence comfort anyone who is lonely or discouraged. Amen.",
+    "action": "Send a message of encouragement to someone starting something hard: a new job, a medical treatment, a journey of faith. Tell them one specific good thing you see in them."
+   }
+  },
+  {
+   "day": 12,
+   "feast": null,
+   "es": {
+    "title": "Pan para el camino",
+    "ref": "Jn 6,51",
+    "verse": "Yo soy el pan vivo que ha bajado del cielo; el que coma de este pan vivirá para siempre. Y el pan que yo daré es mi carne por la vida del mundo.",
+    "reflection": "Por estas semanas la Iglesia celebra el Cuerpo y la Sangre de Cristo, una fiesta que cambia de fecha cada año. Jesús no quiso quedarse solo en el recuerdo: se hizo pan vivo para entrar en nuestra vida cotidiana, en el cansancio del trabajo y en las mesas sencillas. En cada Eucaristía late el mismo Corazón que se dejó abrir en la cruz. Recibirlo es dejarse alimentar por su amor, no un premio para los perfectos.",
+    "prayer": "Jesús, pan vivo bajado del cielo, tengo hambre de ti aunque a veces no lo sepa. Alimenta mi debilidad, sostén mi esperanza y haz que mi vida se parta y se reparta como la tuya. Amén.",
+    "action": "Si te es posible, participa en una Misa entre semana. Si no, lee despacio Juan 6,51-58 y haz una comunión espiritual diciendo: «Jesús, ven a mi corazón como tú sabes»."
+   },
+   "en": {
+    "title": "Bread for the journey",
+    "ref": "Jn 6:51",
+    "verse": "I am the living bread that came down from heaven; whoever eats this bread will live forever; and the bread that I will give is my flesh for the life of the world.",
+    "reflection": "Around this time the Church celebrates the Body and Blood of Christ, a feast whose date changes each year. Jesus did not want to remain only a memory: He became living bread to enter our everyday life, the weariness of work and the simplest tables. In every Eucharist beats the same Heart that let itself be opened on the cross. Receiving Him means letting His love feed us; it is not a prize for the perfect.",
+    "prayer": "Jesus, living bread come down from heaven, I hunger for You even when I don't realize it. Feed my weakness, sustain my hope, and let my life be broken and shared like Yours. Amen.",
+    "action": "If you can, go to a weekday Mass. If not, slowly read John 6:51-58 and make a spiritual communion, saying: \"Jesus, come into my heart in the way You know best.\""
+   }
+  },
+  {
+   "day": 13,
+   "feast": {
+    "es": "San Antonio de Padua",
+    "en": "Saint Anthony of Padua"
+   },
+   "es": {
+    "title": "Lo que de verdad se pierde",
+    "ref": "Lc 15,8",
+    "verse": "O ¿qué mujer que tiene diez monedas, si se le pierde una, no enciende una lámpara y barre la casa y busca con cuidado, hasta que la encuentra?",
+    "reflection": "San Antonio de Padua nació en Lisboa, se hizo franciscano y llegó a ser un predicador incansable que hablaba de Dios a los sencillos y defendía a los pobres. La devoción popular lo invoca cuando perdemos algo, y es bueno pedirle ayuda. Pero el Evangelio recuerda que Dios es el primero que busca, como la mujer que barre la casa hasta encontrar su moneda. Lo que más desea encontrar eres tú.",
+    "prayer": "San Antonio, amigo de los pobres y de los que buscan, intercede por mí. Ayúdame a encontrar lo que he perdido y, sobre todo, a dejarme encontrar por Dios, que me busca con cuidado y con alegría. Amén.",
+    "action": "Comparte algo de comida o de dinero con alguien necesitado, recordando la tradición del pan de San Antonio. Si no puedes, ordena un rincón de tu casa y aparta algo útil para regalar."
+   },
+   "en": {
+    "title": "What is truly lost",
+    "ref": "Lk 15:8",
+    "verse": "Or what woman having ten coins and losing one would not light a lamp and sweep the house, searching carefully until she finds it?",
+    "reflection": "Saint Anthony of Padua was born in Lisbon, became a Franciscan, and grew into a tireless preacher who spoke of God to simple people and defended the poor. Popular devotion calls on him when we lose things, and it is good to ask for his help. But the Gospel reminds us that God is the first one searching, like the woman who sweeps the house until she finds her coin. What He most wants to find is you.",
+    "prayer": "Saint Anthony, friend of the poor and of all who search, pray for me. Help me find what I have lost and, above all, let myself be found by God, who seeks me carefully and joyfully. Amen.",
+    "action": "Share some food or money with someone in need, remembering the tradition known as Saint Anthony's bread. If you cannot, tidy a corner of your home and set aside something useful to give away."
+   }
+  },
+  {
+   "day": 14,
+   "feast": null,
+   "es": {
+    "title": "Lo reconocieron al partir el pan",
+    "ref": "Lc 24,30-31",
+    "verse": "Sentado a la mesa con ellos, tomó el pan, pronunció la bendición, lo partió y se lo iba dando. A ellos se les abrieron los ojos y lo reconocieron. Pero él desapareció de su vista.",
+    "reflection": "Los discípulos de Emaús caminaban tristes, convencidos de que todo había terminado. Jesús los acompañó sin que lo reconocieran, les explicó las Escrituras y, sentado a la mesa, partió el pan. Entonces se les abrieron los ojos. Tal vez tú también caminas desanimado y no ves a Jesús a tu lado. Él sigue sentándose a tu mesa. Así termina esta semana del costado abierto: el Corazón herido se hace compañía.",
+    "prayer": "Quédate conmigo, Señor, porque a veces en mi vida se hace de noche. Camina a mi lado aunque no te reconozca, ábreme los ojos al partir el pan y vuelve a encender mi corazón. Amén.",
+    "action": "Comparte una comida sin teléfonos con alguien de tu casa. Si vives solo, bendice tu comida en voz alta y da gracias por una persona que te acompañó en un momento oscuro."
+   },
+   "en": {
+    "title": "Known in the breaking of the bread",
+    "ref": "Lk 24:30-31",
+    "verse": "And it happened that, while he was with them at table, he took bread, said the blessing, broke it, and gave it to them. With that their eyes were opened and they recognized him, but he vanished from their sight.",
+    "reflection": "The disciples on the road to Emmaus walked in sadness, convinced that everything was over. Jesus walked with them unrecognized, opened the Scriptures to them, and at table He broke the bread. Then their eyes were opened. Perhaps you too are walking along discouraged and do not see Jesus beside you. He still sits down at your table. This is how the week of the opened side ends: the wounded Heart becomes companionship.",
+    "prayer": "Stay with me, Lord, because at times night falls in my life. Walk beside me even when I don't recognize You, open my eyes in the breaking of the bread, and set my heart on fire again. Amen.",
+    "action": "Share a meal without phones with someone at home. If you live alone, bless your food out loud and give thanks for a person who stayed with you during a dark time."
+   }
+  },
+  {
+   "day": 15,
+   "feast": null,
+   "es": {
+    "title": "La escuela de la mansedumbre",
+    "ref": "Mt 11,29",
+    "verse": "Tomad mi yugo sobre vosotros y aprended de mí, que soy manso y humilde de corazón, y encontraréis descanso para vuestras almas.",
+    "reflection": "Empieza la tercera semana. De todo lo que Jesús podía pedirnos que aprendiéramos de Él, eligió dos cosas: mansedumbre y humildad de corazón. No es debilidad ni dejarse pisotear; es una fuerza que no necesita imponerse. El manso no responde a gritos con gritos, y el humilde no vive pendiente de quedar bien. Imagina cómo cambiaría tu casa o tu trabajo si hoy dieras un solo paso en esa escuela.",
+    "prayer": "Jesús, manso y humilde de corazón, haz mi corazón semejante al tuyo. Cuando me irrite, dame calma; cuando quiera tener la razón a toda costa, dame humildad para escuchar. Amén.",
+    "action": "Elige una situación que suela ponerte tenso, como el tráfico, una reunión o una conversación difícil. Antes de entrar en ella, respira hondo tres veces y repite: «Jesús manso, ven conmigo»."
+   },
+   "en": {
+    "title": "The school of meekness",
+    "ref": "Mt 11:29",
+    "verse": "Take my yoke upon you and learn from me, for I am meek and humble of heart; and you will find rest for your selves.",
+    "reflection": "The third week begins. Of everything Jesus could have asked us to learn from Him, He chose two things: meekness and humility of heart. This is not weakness or letting yourself be walked over; it is a strength that has no need to impose itself. The meek do not answer shouting with shouting, and the humble do not live anxious about looking good. Imagine how your home or workplace would change if you took a single step in that school today.",
+    "prayer": "Jesus, meek and humble of heart, make my heart like Yours. When I get irritated, give me calm; when I want to be right at any cost, give me the humility to listen. Amen.",
+    "action": "Choose a situation that usually makes you tense, like traffic, a meeting, or a difficult conversation. Before stepping into it, take three deep breaths and repeat: \"Gentle Jesus, come with me.\""
+   }
+  },
+  {
+   "day": 16,
+   "feast": null,
+   "es": {
+    "title": "Se hizo pequeño",
+    "ref": "Flp 2,7",
+    "verse": "al contrario, se despojó de sí mismo tomando la condición de esclavo, hecho semejante a los hombres. Y así, reconocido como hombre por su presencia…",
+    "reflection": "Pablo dice que Cristo se despojó de sí mismo y tomó la condición de esclavo. El Hijo de Dios no se aferró a su grandeza: eligió bajar, hacerse cercano, compartir nuestra fragilidad. Su Corazón es humilde porque ama, y quien ama no compite. Vivimos rodeados de mensajes que nos piden destacar y aparentar. Hoy puedes probar la libertad de no tener que ser el centro de nada.",
+    "prayer": "Señor Jesús, que te hiciste pequeño por amor, libérame de la necesidad de aparentar. Que no busque el aplauso, sino servir con una alegría escondida, como tú en Nazaret. Amén.",
+    "action": "Haz en casa un servicio que normalmente nadie nota, como limpiar, recoger u ordenar algo, y no lo menciones a nadie. Ofrécelo en silencio a Jesús."
+   },
+   "en": {
+    "title": "He made Himself small",
+    "ref": "Phil 2:7",
+    "verse": "Rather, he emptied himself, taking the form of a slave, coming in human likeness; and found human in appearance…",
+    "reflection": "Paul says that Christ emptied himself, taking the form of a slave. The Son of God did not cling to His greatness: He chose to come down, to draw near, to share our frailty. His Heart is humble because it loves, and those who love do not compete. We live surrounded by messages urging us to stand out and keep up appearances. You can taste the freedom of not having to be the center of anything.",
+    "prayer": "Lord Jesus, who made Yourself small out of love, free me from the need to impress. Let me seek not applause, but to serve with a hidden joy, as You did in Nazareth. Amen.",
+    "action": "Do a household task that usually goes unnoticed, like cleaning, tidying, or putting something in order, and don't mention it to anyone. Offer it silently to Jesus."
+   }
+  },
+  {
+   "day": 17,
+   "feast": null,
+   "es": {
+    "title": "El Maestro de rodillas",
+    "ref": "Jn 13,5",
+    "verse": "luego echa agua en la jofaina y se pone a lavarles los pies a los discípulos, secándoselos con la toalla que se había ceñido.",
+    "reflection": "La noche antes de morir, Jesús tomó una jofaina y se arrodilló ante sus amigos para lavarles los pies, también a Pedro, que se resistía, y a Judas, que lo iba a entregar. El Corazón de Jesús no sirve solo a quienes lo merecen. A veces nos cuesta más dejarnos servir que servir: aceptar ayuda, reconocer que necesitamos a otros. Ambas cosas forman parte de la humildad que Él enseña.",
+    "prayer": "Jesús, que te arrodillaste ante tus discípulos, enséñame a servir sin humillar a nadie y a dejarme servir sin vergüenza. Lava mis pies cansados y hazme humilde de verdad. Amén.",
+    "action": "Acepta con sencillez una ayuda que normalmente rechazarías, o pide ayuda a alguien en algo pequeño. Después, da las gracias de forma explícita y con una sonrisa."
+   },
+   "en": {
+    "title": "The Teacher on His knees",
+    "ref": "Jn 13:5",
+    "verse": "Then he poured water into a basin and began to wash the disciples' feet and dry them with the towel around his waist.",
+    "reflection": "The night before He died, Jesus took a basin and knelt before His friends to wash their feet, including Peter, who resisted, and Judas, who was about to betray Him. The Heart of Jesus does not serve only those who deserve it. Sometimes it is harder to let ourselves be served than to serve: to accept help, to admit we need others. Both are part of the humility He teaches.",
+    "prayer": "Jesus, who knelt before Your disciples, teach me to serve without belittling anyone and to let myself be served without shame. Wash my tired feet and make me truly humble. Amen.",
+    "action": "Simply accept some help you would normally turn down, or ask someone for help with something small. Afterward, thank them out loud and with a smile."
+   }
+  },
+  {
+   "day": 18,
+   "feast": null,
+   "es": {
+    "title": "Consolar al que consuela",
+    "ref": "Sal 69,21",
+    "verse": "La afrenta me destroza el corazón, y desfallezco. Espero compasión, y no la hay; consoladores, y no los encuentro.",
+    "reflection": "El salmista se lamenta: buscaba consoladores y no los encontró. La tradición cristiana ha leído este verso pensando en Jesús. Santa Margarita María Alacoque, religiosa en Francia, vivió una experiencia espiritual, devoción privada aprobada por la Iglesia, en la que el Señor pedía amor para su Corazón. De ahí nace la reparación: no un intento de calmar a un Dios enojado, sino el deseo de un amigo que quiere acompañar a quien ama y ha sido olvidado.",
+    "prayer": "Corazón de Jesús, tantas veces olvidado, quiero hacerte compañía. No tengo mucho que ofrecerte, pero te doy mi atención y mi cariño de este momento. Recibe este poco como consuelo. Amén.",
+    "action": "Dedica diez minutos a estar con Jesús sin pedir nada: en una iglesia ante el Sagrario o, si no puedes, en un rincón tranquilo de tu casa. Solo hazle compañía."
+   },
+   "en": {
+    "title": "Comforting the One who comforts",
+    "ref": "Ps 69:21",
+    "verse": "Insult has broken my heart, and I am weak; I looked for compassion, but there was none, for comforters, but found none.",
+    "reflection": "The psalmist laments: he looked for comforters and found none. Christian tradition has read this verse with Jesus in mind. Saint Margaret Mary Alacoque, a religious sister in France, had a spiritual experience, a private devotion approved by the Church, in which the Lord asked for love for His Heart. This is where reparation comes from: not an attempt to calm an angry God, but the desire of a friend who wants to keep company with someone he loves who has been forgotten.",
+    "prayer": "Heart of Jesus, so often forgotten, I want to keep You company. I don't have much to offer, but I give You my attention and my affection in this moment. Receive this little bit as comfort. Amen.",
+    "action": "Spend ten minutes with Jesus without asking for anything: in a church before the tabernacle or, if you can't, in a quiet corner of your home. Simply keep Him company."
+   }
+  },
+  {
+   "day": 19,
+   "feast": null,
+   "es": {
+    "title": "Velar con Él",
+    "ref": "Mt 26,38",
+    "verse": "Entonces les dijo: «Mi alma está triste hasta la muerte; quedaos aquí y velad conmigo».",
+    "reflection": "En Getsemaní, Jesús pidió a sus amigos algo muy humano: quedaos y velad conmigo. Ellos se durmieron, agotados por la tristeza, y Él no los rechazó por eso. La devoción de la hora santa nace de este deseo de acompañarlo en su angustia. Y tiene otra cara: cuando tú atraviesas tu propio Getsemaní, Él también vela contigo. Si estás pasando una noche difícil, no estás solo.",
+    "prayer": "Jesús en el huerto, yo también me duermo a menudo cuando me pides compañía. Gracias porque no te cansas de mí. En mis noches de angustia, quédate a mi lado y dame tu paz. Amén.",
+    "action": "Esta noche, antes de acostarte, quédate quince minutos en silencio con Jesús, como una pequeña hora santa. Si te vence el sueño, ofrécele también eso y descansa tranquilo."
+   },
+   "en": {
+    "title": "Keeping watch with Him",
+    "ref": "Mt 26:38",
+    "verse": "Then he said to them, \"My soul is sorrowful even to death. Remain here and keep watch with me.\"",
+    "reflection": "In Gethsemane, Jesus asked His friends for something very human: remain here and keep watch with me. They fell asleep, worn out by sorrow, and He did not reject them for it. The devotion of the holy hour grows from this desire to accompany Him in His anguish. And it has another side: when you go through your own Gethsemane, He keeps watch with you. If you are passing through a hard night, you are not alone.",
+    "prayer": "Jesus in the garden, I too often fall asleep when You ask for my company. Thank You for never tiring of me. In my nights of anguish, stay by my side and give me Your peace. Amen.",
+    "action": "Tonight, before going to bed, spend fifteen minutes in silence with Jesus, like a small holy hour. If sleep overtakes you, offer Him that as well and rest peacefully."
+   }
+  },
+  {
+   "day": 20,
+   "feast": null,
+   "es": {
+    "title": "Porque amó mucho",
+    "ref": "Lc 7,47",
+    "verse": "Por eso te digo: sus muchos pecados han quedado perdonados, porque ha amado mucho, pero al que poco se le perdona, ama poco.",
+    "reflection": "Una mujer conocida por sus pecados entra en casa de un fariseo y llora a los pies de Jesús. Los demás solo ven su pasado; Jesús ve su amor. Ahí está el corazón de la reparación: no se trata de pagar una deuda con angustia, sino de responder con amor al amor recibido. Si sientes que tu historia pesa demasiado, recuerda que el perdón de Dios es más grande. La confesión es el lugar donde ese encuentro sucede.",
+    "prayer": "Señor, como aquella mujer, me acerco a tus pies con mis lágrimas y mi historia. No vengo a justificarme, sino a amarte. Perdona mis pecados y enséñame a amar mucho. Amén.",
+    "action": "Haz un examen de conciencia sereno de diez minutos, empezando por dar gracias. Si lo deseas, prepara una confesión para estos días y anota lo que quieras decir, sin angustia."
+   },
+   "en": {
+    "title": "Because she loved much",
+    "ref": "Lk 7:47",
+    "verse": "So I tell you, her many sins have been forgiven; hence, she has shown great love. But the one to whom little is forgiven, loves little.",
+    "reflection": "A woman known for her sins enters a Pharisee's house and weeps at the feet of Jesus. The others see only her past; Jesus sees her love. Here is the heart of reparation: it is not about anxiously paying off a debt, but about answering love with love. If you feel your story weighs too much, remember that God's forgiveness is greater still. Confession is the place where that encounter happens.",
+    "prayer": "Lord, like that woman, I come to Your feet with my tears and my story. I do not come to justify myself, but to love You. Forgive my sins and teach me to love much. Amen.",
+    "action": "Make a calm ten-minute examination of conscience, beginning with thanksgiving. If you wish, prepare for confession in the coming days and jot down what you want to say, without anxiety."
+   }
+  },
+  {
+   "day": 21,
+   "feast": {
+    "es": "San Luis Gonzaga",
+    "en": "Saint Aloysius Gonzaga"
+   },
+   "es": {
+    "title": "Un joven que eligió servir",
+    "ref": "Mt 25,36",
+    "verse": "estuve desnudo y me vestisteis, enfermo y me visitasteis, en la cárcel y vinisteis a verme.",
+    "reflection": "San Luis Gonzaga nació en una familia noble del norte de Italia y estaba destinado a heredar poder y riquezas. Renunció a todo para entrar en la Compañía de Jesús. Siendo todavía estudiante, durante una epidemia en Roma, se dedicó a cuidar a los enfermos, se contagió y murió muy joven. Su pureza de corazón no era frialdad: era un amor que se arremangaba para atender a quienes nadie quería tocar.",
+    "prayer": "San Luis Gonzaga, patrono de los jóvenes, intercede por mí. Alcánzame un corazón limpio y libre, capaz de soltar lo que me ata y de servir a los enfermos y olvidados con la ternura de Jesús. Amén.",
+    "action": "Llama o visita a alguien que esté enfermo o convaleciente. Si no conoces a nadie en esa situación, reza por los enfermeros, médicos y cuidadores que trabajan esta noche."
+   },
+   "en": {
+    "title": "A young man who chose to serve",
+    "ref": "Mt 25:36",
+    "verse": "naked and you clothed me, ill and you cared for me, in prison and you visited me.'",
+    "reflection": "Saint Aloysius Gonzaga was born into a noble family in northern Italy and was meant to inherit power and wealth. He gave it all up to join the Society of Jesus. While still a student, during an epidemic in Rome, he devoted himself to caring for the sick, caught the disease, and died very young. His purity of heart was not coldness: it was a love that rolled up its sleeves to care for those no one wanted to touch.",
+    "prayer": "Saint Aloysius Gonzaga, patron of young people, pray for me. Obtain for me a clean and free heart, able to let go of what binds me and to serve the sick and the forgotten with the tenderness of Jesus. Amen.",
+    "action": "Call or visit someone who is sick or recovering. If you don't know anyone in that situation, pray for the nurses, doctors, and caregivers working tonight."
+   }
+  },
+  {
+   "day": 22,
+   "feast": {
+    "es": "Santos Juan Fisher y Tomás Moro",
+    "en": "Saints John Fisher and Thomas More"
+   },
+   "es": {
+    "title": "Fieles a la conciencia",
+    "ref": "Hch 5,29",
+    "verse": "Pedro y los apóstoles replicaron: Hay que obedecer a Dios antes que a los hombres.",
+    "reflection": "Juan Fisher era obispo de Rochester, y Tomás Moro, abogado, padre de familia y canciller de Inglaterra. Cuando el rey exigió ser reconocido como cabeza de la Iglesia en su reino, ambos se negaron con serenidad, por fidelidad a Cristo y a la unidad de la Iglesia, y lo pagaron con la vida. Moro es recordado también por su buen humor y su amor a los suyos. Con ellos entramos en la última semana: la confianza en Dios da una libertad que nadie puede quitar.",
+    "prayer": "Santos Juan Fisher y Tomás Moro, rogad por los que trabajan en la política, en el derecho y en la educación. Que yo también sea fiel a mi conciencia, con firmeza y sin perder la alegría ni la caridad. Amén.",
+    "action": "Reza por los gobernantes de tu país y de tu ciudad, también por aquellos a quienes no votaste. Pide para ellos sabiduría, honestidad y amor por los más débiles."
+   },
+   "en": {
+    "title": "Faithful to conscience",
+    "ref": "Acts 5:29",
+    "verse": "But Peter and the apostles said in reply, We must obey God rather than men.",
+    "reflection": "John Fisher was Bishop of Rochester, and Thomas More was a lawyer, a family man, and Lord Chancellor of England. When the king demanded to be recognized as head of the Church in his realm, both calmly refused, out of fidelity to Christ and to the unity of the Church, and it cost them their lives. More is also remembered for his good humor and his love for his family. With them we enter the last week: trust in God gives a freedom no one can take away.",
+    "prayer": "Saints John Fisher and Thomas More, pray for those who work in politics, law, and education. Help me also to be faithful to my conscience, firmly and without losing joy or charity. Amen.",
+    "action": "Pray for the leaders of your country and your city, including those you did not vote for. Ask that they receive wisdom, honesty, and love for the most vulnerable."
+   }
+  },
+  {
+   "day": 23,
+   "feast": null,
+   "es": {
+    "title": "Jesús, en ti confío",
+    "ref": "Sal 56,4",
+    "verse": "En el día terrible, yo confío en ti.",
+    "reflection": "El salmista no niega que hay días terribles; dice que en ellos confía. La confianza no es la ausencia de temor, sino el lugar adonde lo llevamos. Muchos cristianos repiten una oración muy breve: «Jesús, en ti confío». Cabe en un suspiro y puede acompañar una espera en el hospital, una noticia difícil o una noche de insomnio. No hace falta sentir confianza para decirla; decirla ya es empezar a confiar.",
+    "prayer": "Jesús, en ti confío. Te entrego lo que me asusta y lo que no puedo controlar. Cuando el miedo vuelva, recuérdame que estoy en tus manos y que tu Corazón no me suelta. Amén.",
+    "action": "Escribe en tu cuaderno las tres preocupaciones que más te quitan la paz. Junto a cada una, escribe «Jesús, en ti confío» y repítelo despacio en voz baja."
+   },
+   "en": {
+    "title": "Jesus, I trust in You",
+    "ref": "Ps 56:4",
+    "verse": "when I am afraid, in you I place my trust.",
+    "reflection": "The psalmist does not deny being afraid; he says that when he is afraid, he trusts. Trust is not the absence of fear but the place where we bring it. Many Christians repeat a very short prayer: \"Jesus, I trust in You.\" It fits in a single breath and can accompany a wait at the hospital, hard news, or a sleepless night. You don't need to feel trust in order to say it; saying it is already the beginning of trust.",
+    "prayer": "Jesus, I trust in You. I hand over to You what frightens me and what I cannot control. When fear returns, remind me that I am in Your hands and that Your Heart does not let go of me. Amen.",
+    "action": "In your notebook, write down the three worries that most steal your peace. Next to each one, write \"Jesus, I trust in You,\" and repeat it slowly under your breath."
+   }
+  },
+  {
+   "day": 24,
+   "feast": {
+    "es": "Natividad de San Juan Bautista",
+    "en": "Nativity of Saint John the Baptist"
+   },
+   "es": {
+    "title": "Su nombre es Juan",
+    "ref": "Lc 1,63-64",
+    "verse": "Él pidió una tablilla y escribió: «Juan es su nombre». Y todos se quedaron maravillados. Inmediatamente se le soltó la boca y la lengua, y empezó a hablar bendiciendo a Dios.",
+    "reflection": "La Iglesia celebra el nacimiento de muy pocos santos, y el de Juan Bautista es uno de ellos, porque preparó el camino del Señor. Zacarías había quedado mudo tras dudar del anuncio del ángel; cuando escribe el nombre que Dios había dado al niño, se le suelta la lengua para bendecir. El nombre de Juan habla de la misericordia de Dios. A veces nuestra boca también se abre de nuevo cuando dejamos de discutir con Dios y aceptamos su regalo.",
+    "prayer": "San Juan Bautista, que naciste como un regalo inesperado, intercede por mí. Que mi vida prepare el camino de Jesús, y que mi boca, a veces cerrada por la duda, se abra para bendecir a Dios. Amén.",
+    "action": "Antes de terminar el día, di en voz alta tres bendiciones por cosas concretas que Dios te ha dado esta semana. Si hay niños en casa, hazlo junto con ellos."
+   },
+   "en": {
+    "title": "His name is John",
+    "ref": "Lk 1:63-64",
+    "verse": "He asked for a tablet and wrote, \"John is his name,\" and all were amazed. Immediately his mouth was opened, his tongue freed, and he spoke blessing God.",
+    "reflection": "The Church celebrates the birth of very few saints, and John the Baptist is one of them, because he prepared the way of the Lord. Zechariah had become mute after doubting the angel's message; when he writes the name God had given the child, his tongue is freed to bless. The name John speaks of God's mercy. Sometimes our own mouths open again when we stop arguing with God and accept His gift.",
+    "prayer": "Saint John the Baptist, born as an unexpected gift, pray for me. Let my life prepare the way for Jesus, and let my mouth, sometimes closed by doubt, open to bless God. Amen.",
+    "action": "Before the day ends, speak aloud three blessings for specific things God has given you this week. If there are children at home, do it together with them."
+   }
+  },
+  {
+   "day": 25,
+   "feast": null,
+   "es": {
+    "title": "El Pastor que venda heridas",
+    "ref": "Ez 34,11",
+    "verse": "Porque esto dice el Señor Dios: Yo mismo buscaré mi rebaño y lo cuidaré.",
+    "reflection": "Por boca de Ezequiel, Dios promete ser Él mismo el pastor de su pueblo: buscar su rebaño y cuidarlo. Poco después el profeta enumera los gestos de ese cuidado: buscar a la oveja perdida, traer a la descarriada, vendar a la herida, fortalecer a la enferma. El Corazón de Jesús es ese corazón de pastor que no se cansa de buscar. Tal vez te reconoces en alguna de esas ovejas. No importa cuál: para cada una tiene una respuesta personal.",
+    "prayer": "Buen Pastor, búscame cuando me pierda, tráeme de vuelta cuando me desvíe, venda mis heridas y fortalece lo que en mí está débil. Me dejo cuidar por ti. Amén.",
+    "action": "Haz una obra de misericordia sencilla: ofrece tu tiempo a alguien que pasa por un mal momento y escúchalo al menos quince minutos, sin interrumpir ni dar consejos."
+   },
+   "en": {
+    "title": "The Shepherd who binds up wounds",
+    "ref": "Ez 34:11",
+    "verse": "For thus says the Lord GOD: I myself will look after and tend my sheep.",
+    "reflection": "Through Ezekiel, God promises to be the shepherd of His people Himself: to look after His flock and tend it. A little later the prophet lists the gestures of that care: seeking out the lost, bringing back the strays, binding up the injured, healing the sick. The Heart of Jesus is that shepherd's heart which never tires of searching. Perhaps you recognize yourself in one of those sheep. It does not matter which: for each one He has a personal response.",
+    "prayer": "Good Shepherd, seek me out when I am lost, bring me back when I stray, bind up my wounds and strengthen what is weak in me. I let You care for me. Amen.",
+    "action": "Do a simple work of mercy: offer your time to someone going through a rough patch and listen to them for at least fifteen minutes, without interrupting or giving advice."
+   }
+  },
+  {
+   "day": 26,
+   "feast": null,
+   "es": {
+    "title": "Sobre sus hombros",
+    "ref": "Lc 15,4-5",
+    "verse": "¿Quién de vosotros que tiene cien ovejas y pierde una de ellas, no deja las noventa y nueve en el desierto y va tras la descarriada, hasta que la encuentra? Y, cuando la encuentra, se la carga sobre los hombros, muy contento…",
+    "reflection": "El pastor deja a las noventa y nueve y va tras la que se perdió. Cuando la encuentra, no la regaña ni la obliga a volver caminando: la carga sobre sus hombros, lleno de alegría. Si estás cansado de luchar contra lo mismo, si sientes que no tienes fuerzas para regresar, esta imagen es para ti. No tienes que hacer solo el camino de vuelta. Él te lleva.",
+    "prayer": "Jesús, Buen Pastor, hoy no tengo fuerzas para caminar. Cárgame sobre tus hombros y llévame a casa. Gracias por la alegría con que me buscas, aun cuando yo me canso de buscarte. Amén.",
+    "action": "Regálate un descanso de verdad: acuéstate un poco antes, o toma veinte minutos sin pantallas para caminar, estirarte o simplemente estar. Cuidar tu cuerpo también es dejarte cuidar."
+   },
+   "en": {
+    "title": "On His shoulders",
+    "ref": "Lk 15:4-5",
+    "verse": "What man among you having a hundred sheep and losing one of them would not leave the ninety-nine in the desert and go after the lost one until he finds it? And when he does find it, he sets it on his shoulders with great joy…",
+    "reflection": "The shepherd leaves the ninety-nine and goes after the one that was lost. When he finds it, he does not scold it or make it walk back on its own: he lifts it onto his shoulders, full of joy. If you are tired of fighting the same battle, if you feel you have no strength left to return, this image is for you. You do not have to make the journey back alone. He carries you.",
+    "prayer": "Jesus, Good Shepherd, I have no strength to walk today. Carry me on Your shoulders and bring me home. Thank You for the joy with which You seek me, even when I grow tired of seeking You. Amen.",
+    "action": "Give yourself some real rest: go to bed a little earlier, or take twenty minutes away from screens to walk, stretch, or simply be. Caring for your body is also a way of letting yourself be cared for."
+   }
+  },
+  {
+   "day": 27,
+   "feast": null,
+   "es": {
+    "title": "Conocido por tu nombre",
+    "ref": "Jn 10,14",
+    "verse": "Yo soy el Buen Pastor, que conozco a las mías, y las mías me conocen…",
+    "reflection": "Jesús no dice solo que es el Buen Pastor; dice que conoce a los suyos y que ellos lo conocen. No te conoce como un número ni como un caso, sino como alguien con historia, nombre y heridas propias. En un mundo donde muchos se sienten invisibles, saberse conocido por el Corazón de Cristo devuelve la dignidad. Y también invita a conocerlo más: escuchar su voz en la Palabra y en la oración.",
+    "prayer": "Señor Jesús, tú me conoces mejor que yo mismo, y me amas. Dame oídos para reconocer tu voz entre tantos ruidos, y ayúdame a mirar a quienes se sienten invisibles como tú me miras a mí. Amén.",
+    "action": "Aprende el nombre de alguien a quien ves a menudo pero no conoces, como el vigilante, la cajera o un vecino, y salúdalo por su nombre. Reza brevemente por esa persona."
+   },
+   "en": {
+    "title": "Known by name",
+    "ref": "Jn 10:14",
+    "verse": "I am the good shepherd, and I know mine and mine know me…",
+    "reflection": "Jesus does not only say that He is the Good Shepherd; He says that He knows His own and they know Him. He does not know you as a number or a case, but as someone with your own story, name, and wounds. In a world where so many feel invisible, knowing you are known by the Heart of Christ restores your dignity. It also invites you to know Him more: to listen for His voice in Scripture and in prayer.",
+    "prayer": "Lord Jesus, You know me better than I know myself, and You love me. Give me ears to recognize Your voice amid so much noise, and help me see those who feel invisible the way You see me. Amen.",
+    "action": "Learn the name of someone you see often but don't really know, like a security guard, a cashier, or a neighbor, and greet them by name. Say a short prayer for them."
+   }
+  },
+  {
+   "day": 28,
+   "feast": {
+    "es": "San Ireneo",
+    "en": "Saint Irenaeus"
+   },
+   "es": {
+    "title": "Una fe que da vida",
+    "ref": "Jn 10,10",
+    "verse": "El ladrón no entra sino para robar y matar y hacer estragos; yo he venido para que tengan vida y la tengan abundante.",
+    "reflection": "San Ireneo fue obispo de Lyon. En su juventud había conocido a San Policarpo, discípulo del apóstol Juan, y por eso se sentía unido a la fe de los apóstoles. Escribió para defender esa fe frente a doctrinas que despreciaban el cuerpo y la creación, y enseñó que Dios quiere al ser humano entero y lleno de vida. Su testimonio recuerda que el Corazón de Jesús no vino a quitarnos humanidad, sino a dárnosla en abundancia.",
+    "prayer": "San Ireneo, maestro de la verdad y de la unidad, intercede por la Iglesia. Que no separe mi fe de mi vida diaria, y que viva con gratitud en este cuerpo y en este mundo que Dios creó y ama. Amén.",
+    "action": "Sal unos minutos al aire libre o asómate a una ventana, mira con calma algo de la creación y da gracias por ello. Si puedes, recoge algo de basura en tu calle o en un parque."
+   },
+   "en": {
+    "title": "A faith that gives life",
+    "ref": "Jn 10:10",
+    "verse": "A thief comes only to steal and slaughter and destroy; I came so that they might have life and have it more abundantly.",
+    "reflection": "Saint Irenaeus was Bishop of Lyons. In his youth he had known Saint Polycarp, a disciple of the apostle John, and so he felt bound to the faith of the apostles. He wrote to defend that faith against teachings that despised the body and creation, and he taught that God wants the whole human person, fully alive. His witness reminds us that the Heart of Jesus did not come to take away our humanity, but to give it to us abundantly.",
+    "prayer": "Saint Irenaeus, teacher of truth and unity, pray for the Church. Let me never separate my faith from my daily life, and help me live with gratitude in this body and this world that God created and loves. Amen.",
+    "action": "Step outside for a few minutes or look out a window, calmly notice something in creation, and give thanks for it. If you can, pick up some litter on your street or in a park."
+   }
+  },
+  {
+   "day": 29,
+   "feast": {
+    "es": "Santos Pedro y Pablo, apóstoles",
+    "en": "Saints Peter and Paul, Apostles"
+   },
+   "es": {
+    "title": "Dos columnas, un mismo amor",
+    "ref": "Jn 21,17",
+    "verse": "Por tercera vez le pregunta: Simón, hijo de Juan, ¿me quieres?. Se entristeció Pedro de que le preguntara por tercera vez: ¿Me quieres? y le contestó: Señor, tú conoces todo, tú sabes que te quiero. Jesús le dice: Apacienta mis ovejas.",
+    "reflection": "Pedro negó tres veces a Jesús, y tres veces Jesús le preguntó si lo amaba. No le pidió explicaciones: le devolvió la misión. Pablo había perseguido a los cristianos y fue alcanzado por Cristo en el camino. Los dos fueron pecadores perdonados, y los dos dieron la vida por el Evangelio en Roma. La Iglesia se apoya en ellos para recordarnos que el Corazón de Jesús construye con piedras que un día estuvieron rotas.",
+    "prayer": "Santos Pedro y Pablo, rogad por el Papa y por toda la Iglesia. Señor, tú lo sabes todo: conoces mis caídas y sabes que te quiero. Confírmame en tu amor y envíame a servir. Amén.",
+    "action": "Reza un padrenuestro por el Papa y otro por tu obispo. Después, lee despacio Juan 21,15-19 y escucha la pregunta de Jesús como si te la hiciera a ti."
+   },
+   "en": {
+    "title": "Two pillars, one love",
+    "ref": "Jn 21:17",
+    "verse": "He said to him the third time, Simon, son of John, do you love me? Peter was distressed that he had said to him a third time, Do you love me? and he said to him, Lord, you know everything; you know that I love you. (Jesus) said to him, Feed my sheep.",
+    "reflection": "Peter denied Jesus three times, and three times Jesus asked him whether he loved Him. He did not demand explanations: He gave him back his mission. Paul had persecuted Christians and was seized by Christ on the road. Both were forgiven sinners, and both gave their lives for the Gospel in Rome. The Church leans on them to remind us that the Heart of Jesus builds with stones that were once broken.",
+    "prayer": "Saints Peter and Paul, pray for the Pope and for the whole Church. Lord, You know everything: You know my falls and You know that I love You. Strengthen me in Your love and send me out to serve. Amen.",
+    "action": "Pray an Our Father for the Pope and another for your bishop. Then slowly read John 21:15-19 and hear the question of Jesus as if He were asking it of you."
+   }
+  },
+  {
+   "day": 30,
+   "feast": null,
+   "es": {
+    "title": "Un amor sin medida",
+    "ref": "Ef 3,18-19",
+    "verse": "de modo que así, con todos los santos, logréis abarcar lo ancho, lo largo, lo alto y lo profundo, comprendiendo el amor de Cristo, que trasciende todo conocimiento. Así llegaréis a vuestra plenitud, según la plenitud total de Dios.",
+    "reflection": "Pablo pide que podamos comprender la anchura, la longitud, la altura y la profundidad del amor de Cristo, un amor que supera todo conocimiento. Este mes hemos contemplado ese Corazón que ama primero, que se deja herir, que se hace pan, que es manso y que sale a buscarnos. No lo hemos comprendido del todo, y está bien: es más grande que nosotros. Lo que importa es seguir habitando en él cuando junio termine.",
+    "prayer": "Corazón de Jesús, gracias por todo lo que me has mostrado este mes. Arráigame en tu amor, para que no lo olvide en la rutina. Te consagro mi vida, mis días buenos y mis días difíciles, y confío en ti. Amén.",
+    "action": "Relee lo que escribiste en tu cuaderno durante el mes y subraya la frase que más te ha tocado. Elige un gesto de este mes que quieras seguir viviendo en julio."
+   },
+   "en": {
+    "title": "A love beyond measure",
+    "ref": "Eph 3:18-19",
+    "verse": "may have strength to comprehend with all the holy ones what is the breadth and length and height and depth, and to know the love of Christ that surpasses knowledge, so that you may be filled with all the fullness of God.",
+    "reflection": "Paul prays that we may grasp the breadth, length, height, and depth of the love of Christ, a love that surpasses knowledge. This month we have contemplated that Heart which loves first, lets itself be wounded, becomes bread, is gentle, and goes out to find us. We have not understood it completely, and that is fine: it is greater than we are. What matters is to keep dwelling in it when June comes to an end.",
+    "prayer": "Heart of Jesus, thank You for all You have shown me this month. Root me in Your love so that I do not forget it in the routine of daily life. I consecrate to You my life, my good days and my hard days, and I trust in You. Amen.",
+    "action": "Reread what you wrote in your notebook this month and underline the sentence that touched you most. Choose one practice from this month that you want to keep living in July."
+   }
+  }
+ ]
+}

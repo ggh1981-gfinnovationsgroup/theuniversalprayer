@@ -4,16 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Calendario Devocional por Meses | The Universal Prayer</title>
-  <meta name="description" content="Calendario devocional católico por meses. Plan mensual con reflexiones, santos y oraciones para cada día del año." />
+  <meta name="description" content="Calendario devocional católico: un camino para cada día del año con Palabra de Dios, reflexión, oración y un paso concreto." />
   <meta name="theme-color" content="#c9a84c" />
   <link rel="manifest" href="/manifest.json" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/styles.css" />
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(error => {
+          console.error('No se pudo registrar el service worker:', error);
+        });
+      });
+    }
+  </script>
   <style>
     .months-hero {
       text-align: center;
-      padding: 4.8rem 1.25rem 2.6rem;
+      padding: 4.8rem 1.25rem 2.4rem;
       background: radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.12) 0%, transparent 70%);
     }
     .months-badge {
@@ -44,17 +53,19 @@
       width: min(1150px, 100% - 2rem);
       margin: 0 auto 3.2rem;
       display: grid;
-      grid-template-columns: 1.1fr 1.4fr;
+      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.6fr);
       gap: 1.2rem;
+      align-items: start;
     }
     @media (max-width: 900px) {
-      .months-wrap { grid-template-columns: 1fr; }
+      .months-wrap { grid-template-columns: minmax(0, 1fr); }
     }
     .months-card {
       background: var(--bg-card);
       border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1rem;
+      border-radius: 14px;
+      padding: 1.1rem;
+      min-width: 0;
     }
     .months-card h2 {
       font-family: var(--font-serif);
@@ -65,25 +76,30 @@
     .month-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0.55rem;
+      gap: 0.5rem;
+    }
+    @media (max-width: 900px) {
+      .month-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     }
     @media (max-width: 560px) {
-      .month-grid { grid-template-columns: 1fr; }
+      .month-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
     .month-btn {
       border: 1px solid rgba(201,168,76,0.2);
       background: rgba(201,168,76,0.04);
       color: var(--white);
-      border-radius: 9px;
-      padding: 0.7rem 0.75rem;
+      border-radius: 10px;
+      padding: 0.65rem 0.7rem;
       text-align: left;
       cursor: pointer;
       transition: 0.2s ease;
+      min-width: 0;
     }
     .month-btn:hover { border-color: rgba(201,168,76,0.45); }
+    .month-btn:focus-visible { outline: 2px solid rgba(201,168,76,0.6); outline-offset: 2px; }
     .month-btn.active {
       background: rgba(201,168,76,0.14);
-      border-color: rgba(201,168,76,0.58);
+      border-color: rgba(201,168,76,0.6);
     }
     .month-btn .name {
       display: block;
@@ -94,163 +110,230 @@
     }
     .month-btn .topic {
       display: block;
-      font-size: 0.78rem;
+      font-size: 0.76rem;
       color: var(--white-dim);
-      line-height: 1.45;
+      line-height: 1.4;
     }
     .planner-head {
       display: flex;
-      gap: 0.65rem;
+      gap: 0.6rem;
       align-items: center;
       flex-wrap: wrap;
-      margin-bottom: 0.8rem;
+      margin-bottom: 0.6rem;
     }
-    .planner-head label {
-      color: var(--white-dim);
-      font-size: 0.84rem;
-    }
-    .planner-head select {
+    .planner-head label { color: var(--white-dim); font-size: 0.84rem; }
+    .planner-head select, .today-btn {
       background: var(--bg-surface);
       color: var(--gold-light);
-      border: 1px solid rgba(201,168,76,0.28);
+      border: 1px solid rgba(201,168,76,0.3);
       border-radius: 8px;
-      padding: 0.35rem 0.5rem;
+      padding: 0.4rem 0.6rem;
+      font: inherit;
+      font-size: 0.85rem;
     }
+    .today-btn { cursor: pointer; margin-left: auto; }
+    .today-btn[hidden] { display: none; }
     .planner-title {
       font-family: var(--font-serif);
       color: var(--gold-light);
-      margin: 0.3rem 0 0.25rem;
-      font-size: 1.28rem;
+      margin: 0.3rem 0 0.15rem;
+      font-size: 1.45rem;
     }
     .planner-topic {
-      color: var(--white-dim);
-      margin-bottom: 0.9rem;
+      color: var(--gold);
+      margin-bottom: 0.7rem;
       font-size: 0.9rem;
-      line-height: 1.6;
+      letter-spacing: 0.04em;
     }
-    .planner-note {
-      background: rgba(201,168,76,0.08);
-      border: 1px solid rgba(201,168,76,0.25);
-      border-radius: 8px;
-      padding: 0.8rem;
+    .planner-intro {
       color: var(--white-dim);
-      font-size: 0.84rem;
-      line-height: 1.6;
-      margin-bottom: 0.8rem;
+      font-size: 0.92rem;
+      line-height: 1.7;
+      margin-bottom: 0.9rem;
     }
-    .method-box {
+    .progress {
+      display: grid;
+      gap: 0.35rem;
+      margin-bottom: 0.9rem;
+    }
+    .progress-label { font-size: 0.8rem; color: var(--white-dim); }
+    .progress-bar {
+      height: 6px;
+      border-radius: 99px;
+      background: rgba(201,168,76,0.12);
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, rgba(201,168,76,0.6), var(--gold-light));
+      transition: width 0.3s ease;
+    }
+    .method-box, .movable-box {
       border: 1px solid rgba(201,168,76,0.22);
-      border-radius: 10px;
+      border-radius: 12px;
       background: rgba(201,168,76,0.05);
-      padding: 0.85rem;
+      padding: 0.2rem 0.9rem;
       margin-bottom: 0.8rem;
     }
-    .method-title {
+    .method-box > summary, .movable-box > summary {
+      cursor: pointer;
       font-family: var(--font-serif);
       color: var(--gold-light);
-      font-size: 1.02rem;
-      margin: 0 0 0.45rem;
+      font-size: 1rem;
+      padding: 0.65rem 0;
     }
     .method-steps {
-      margin: 0 0 0.65rem 1.1rem;
+      margin: 0 0 0.6rem 1.1rem;
       color: var(--white-dim);
-      font-size: 0.84rem;
+      font-size: 0.86rem;
       line-height: 1.65;
       display: grid;
-      gap: 0.25rem;
+      gap: 0.3rem;
     }
     .method-prayer {
       border-top: 1px solid rgba(201,168,76,0.16);
-      padding-top: 0.55rem;
-      margin-top: 0.55rem;
+      padding: 0.6rem 0;
       color: rgba(255,255,255,0.86);
-      font-size: 0.84rem;
-      line-height: 1.62;
-      white-space: pre-line;
+      font-size: 0.86rem;
+      line-height: 1.65;
     }
-    .days-list {
-      max-height: 480px;
-      overflow: auto;
-      border: 1px solid rgba(201,168,76,0.16);
-      border-radius: 10px;
-      background: rgba(0,0,0,0.12);
-      padding: 0.35rem;
+    .method-prayer strong {
+      display: block;
+      color: var(--gold);
+      font-size: 0.74rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 400;
+      margin-bottom: 0.2rem;
     }
+    .movable-list {
+      list-style: none;
+      margin: 0 0 0.7rem;
+      padding: 0;
+      display: grid;
+      gap: 0.35rem;
+      color: var(--white-dim);
+      font-size: 0.85rem;
+    }
+    .movable-list b { color: var(--gold-light); font-weight: 400; }
+    .days-status { color: var(--white-dim); font-size: 0.88rem; padding: 0.8rem 0.2rem; }
+    .days-list { display: grid; gap: 0.45rem; }
     .day-item {
-      padding: 0.25rem 0.4rem;
-      border-bottom: 1px solid rgba(201,168,76,0.09);
+      border: 1px solid rgba(201,168,76,0.14);
+      border-radius: 12px;
+      background: rgba(0,0,0,0.14);
+      scroll-margin-top: 5.5rem;
+      transition: border-color 0.2s ease;
     }
-    .day-item:last-child { border-bottom: 0; }
+    .day-item.today { border-color: rgba(201,168,76,0.55); }
+    .day-item.open { background: rgba(201,168,76,0.05); border-color: rgba(201,168,76,0.4); }
     .day-toggle {
       width: 100%;
       display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 0.5rem;
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      gap: 0.75rem;
       align-items: center;
       border: 0;
       background: transparent;
       cursor: pointer;
       text-align: left;
-      padding: 0.4rem 0.2rem;
+      padding: 0.65rem 0.75rem;
       color: inherit;
+      font: inherit;
+      border-radius: 12px;
     }
-    .day-toggle:hover {
-      background: rgba(201,168,76,0.06);
-      border-radius: 8px;
+    .day-toggle:focus-visible { outline: 2px solid rgba(201,168,76,0.55); outline-offset: 1px; }
+    .day-date {
+      display: grid;
+      justify-items: center;
+      min-width: 2.6rem;
+      padding: 0.25rem 0.3rem;
+      border-radius: 9px;
+      border: 1px solid rgba(201,168,76,0.25);
     }
-    .day-toggle:focus-visible {
-      outline: 2px solid rgba(201,168,76,0.5);
-      border-radius: 8px;
-      outline-offset: 1px;
+    .day-item.done .day-date { background: rgba(201,168,76,0.18); }
+    .day-num { font-family: var(--font-serif); color: var(--gold-light); font-size: 1.15rem; line-height: 1.1; }
+    .day-wd { font-size: 0.64rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--white-dim); }
+    .day-head { display: grid; gap: 0.25rem; min-width: 0; }
+    .day-title { color: var(--white); font-size: 0.95rem; line-height: 1.35; }
+    .day-chips { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+    .chip {
+      display: inline-block;
+      font-size: 0.7rem;
+      line-height: 1.3;
+      padding: 0.12rem 0.5rem;
+      border-radius: 99px;
+      border: 1px solid rgba(201,168,76,0.35);
+      color: var(--gold-light);
     }
-    .day-head {
-      display: flex;
-      align-items: baseline;
-      gap: 0.5rem;
-    }
-    .day-num {
-      font-size: 0.8rem;
-      color: var(--gold);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-    .day-summary {
-      font-size: 0.79rem;
-      color: rgba(255,255,255,0.72);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 100%;
-    }
-    .day-icon {
-      font-size: 0.9rem;
-      color: rgba(201,168,76,0.92);
-      transition: transform 0.2s ease;
-      transform: rotate(-90deg);
-    }
+    .chip.movable { border-style: dashed; color: var(--white-dim); }
+    .chip.today-chip { background: rgba(201,168,76,0.2); }
+    .day-side { display: flex; align-items: center; gap: 0.4rem; color: var(--gold); }
+    .day-done-mark { font-size: 0.85rem; visibility: hidden; }
+    .day-item.done .day-done-mark { visibility: visible; }
+    .day-icon { font-size: 0.9rem; transition: transform 0.2s ease; transform: rotate(-90deg); }
     .day-item.open .day-icon { transform: rotate(0deg); }
-    .day-panel {
-      display: none;
-      padding: 0 0.2rem 0.5rem;
-    }
+    .day-panel { display: none; padding: 0 0.95rem 1rem; }
     .day-item.open .day-panel { display: block; }
-    .day-text {
-      color: var(--white-dim);
-      font-size: 0.86rem;
-      line-height: 1.56;
+    .day-verse {
+      margin: 0.2rem 0 0.9rem;
+      padding: 0.75rem 0.9rem;
+      border-left: 3px solid var(--gold);
+      background: rgba(201,168,76,0.07);
+      border-radius: 0 10px 10px 0;
     }
-    .month-links {
-      margin-top: 1rem;
+    .day-verse p {
+      font-family: var(--font-serif);
+      font-style: italic;
+      color: var(--white);
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 0 0 0.35rem;
+    }
+    .day-verse cite { font-style: normal; color: var(--gold); font-size: 0.8rem; letter-spacing: 0.04em; }
+    .day-reflection { color: var(--white-dim); font-size: 0.92rem; line-height: 1.75; margin: 0 0 0.9rem; }
+    .day-block {
+      border-radius: 10px;
+      padding: 0.7rem 0.85rem;
+      margin-bottom: 0.65rem;
+      border: 1px solid rgba(201,168,76,0.18);
+    }
+    .day-block h4 {
+      margin: 0 0 0.3rem;
+      font-family: var(--font-sans, inherit);
+      font-weight: 400;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .day-block p { margin: 0; font-size: 0.9rem; line-height: 1.7; color: rgba(255,255,255,0.88); }
+    .day-prayer p { font-style: italic; }
+    .day-action { background: rgba(201,168,76,0.08); border-color: rgba(201,168,76,0.32); }
+    .day-footer {
       display: flex;
-      gap: 0.5rem;
       flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0.8rem;
     }
-    .month-links-title {
-      margin-top: 1rem;
-      color: var(--white-dim);
-      font-size: 0.8rem;
-      letter-spacing: 0.03em;
+    .day-saint-link { color: var(--gold-light); font-size: 0.84rem; }
+    .done-btn {
+      margin-left: auto;
+      border: 1px solid rgba(201,168,76,0.4);
+      background: transparent;
+      color: var(--gold-light);
+      border-radius: 99px;
+      padding: 0.42rem 0.9rem;
+      font: inherit;
+      font-size: 0.84rem;
+      cursor: pointer;
     }
+    .done-btn[aria-pressed="true"] { background: rgba(201,168,76,0.22); }
+    .month-links-title { margin-top: 1.2rem; color: var(--white-dim); font-size: 0.8rem; letter-spacing: 0.03em; }
+    .month-links { margin-top: 0.5rem; display: flex; gap: 0.5rem; flex-wrap: wrap; }
     .month-link {
       display: inline-block;
       text-decoration: none;
@@ -260,88 +343,24 @@
       border-radius: 999px;
       padding: 0.35rem 0.7rem;
     }
-    .months-title,
-    .months-subtitle,
-    .planner-title,
-    .planner-topic,
-    .planner-note,
-    .method-title,
-    .method-prayer,
-    .day-text,
-    .day-summary {
+    .months-title, .months-subtitle, .planner-title, .planner-intro, .method-steps,
+    .method-prayer, .day-title, .day-verse, .day-reflection, .day-block, .chip, .movable-list {
       overflow-wrap: anywhere;
       word-break: normal;
     }
-
     @media (max-width: 640px) {
-      .months-hero {
-        padding: 4.2rem 0.85rem 1.8rem;
-      }
-      .months-title {
-        font-size: clamp(1.6rem, 8.5vw, 2.1rem);
-      }
-      .months-subtitle {
-        font-size: 0.9rem;
-        line-height: 1.65;
-      }
-      .months-wrap {
-        width: min(1150px, 100% - 1rem);
-        gap: 0.8rem;
-        margin-bottom: 2rem;
-      }
-      .months-card {
-        padding: 0.78rem;
-      }
-      .planner-head {
-        gap: 0.45rem;
-      }
-      .planner-head select {
-        min-width: 110px;
-      }
-      .method-box {
-        padding: 0.72rem;
-      }
-      .method-steps {
-        margin-left: 1rem;
-        font-size: 0.82rem;
-      }
-      .days-list {
-        max-height: 56vh;
-        -webkit-overflow-scrolling: touch;
-        padding: 0.25rem;
-      }
-      .day-item {
-        padding: 0.2rem;
-      }
-      .day-toggle {
-        padding: 0.62rem 0.24rem;
-      }
-      .day-head {
-        min-width: 0;
-        flex-wrap: wrap;
-        gap: 0.25rem 0.5rem;
-      }
-      .day-num {
-        font-size: 0.76rem;
-      }
-      .day-summary {
-        white-space: normal;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
-        line-clamp: 2;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-size: 0.78rem;
-      }
-      .day-text {
-        font-size: 0.84rem;
-      }
-      .month-link {
-        width: 100%;
-        text-align: center;
-        padding: 0.48rem 0.7rem;
-      }
+      .months-hero { padding: 4.2rem 0.85rem 1.6rem; }
+      .months-title { font-size: clamp(1.6rem, 8.5vw, 2.1rem); }
+      .months-subtitle { font-size: 0.9rem; line-height: 1.65; }
+      .months-wrap { width: min(1150px, 100% - 1rem); gap: 0.8rem; margin-bottom: 2rem; }
+      .months-card { padding: 0.8rem; }
+      .day-toggle { gap: 0.55rem; padding: 0.6rem 0.55rem; }
+      .day-panel { padding: 0 0.6rem 0.85rem; }
+      .day-verse { padding: 0.65rem 0.7rem; }
+      .day-verse p { font-size: 0.95rem; }
+      .day-reflection, .day-block p { font-size: 0.88rem; }
+      .done-btn { width: 100%; margin-left: 0; }
+      .month-link { width: 100%; text-align: center; padding: 0.48rem 0.7rem; }
     }
   </style>
 </head>
@@ -362,42 +381,53 @@
   </header>
 
   <section class="months-hero">
+    <div class="months-badge" data-lang="es">Camino devocional anual</div>
+    <div class="months-badge" data-lang="en" style="display:none">Yearly devotional path</div>
 
-    <div class="months-badge" data-lang="es">Camino Devocional Anual</div>
-    <div class="months-badge" data-lang="en" style="display:none">Yearly Devotional Path</div>
-
-    <h1 class="months-title" data-lang="es">Calendario Devocional por Meses</h1>
+    <h1 class="months-title" data-lang="es">Calendario devocional por meses</h1>
     <h1 class="months-title" data-lang="en" style="display:none">Monthly Devotional Calendar</h1>
 
-    <p class="months-subtitle" data-lang="es">Cada mes tiene un enfoque central. Puedes actualizar su contenido y el calendario se ajusta automaticamente al ano seleccionado, incluyendo meses variables como febrero.</p>
-    <p class="months-subtitle" data-lang="en" style="display:none">Each month has a central devotional focus. You can update month content anytime, and the calendar adjusts automatically to the selected year, including variable months like February.</p>
+    <p class="months-subtitle" data-lang="es">Cada mes tiene un enfoque y cada día un camino propio: una Palabra de Dios, una reflexión, una oración y un paso concreto para vivirlo. El calendario se ajusta al año elegido, con años bisiestos y fiestas móviles.</p>
+    <p class="months-subtitle" data-lang="en" style="display:none">Each month has its own focus and each day its own path: a word from Scripture, a reflection, a prayer, and one concrete step to live it. The calendar adjusts to the selected year, including leap years and movable feasts.</p>
   </section>
 
   <main class="months-wrap">
     <section class="months-card">
-      <h2 data-lang="es">Meses del Ano</h2>
-      <h2 data-lang="en" style="display:none">Months of the Year</h2>
+      <h2 data-lang="es">Meses del año</h2>
+      <h2 data-lang="en" style="display:none">Months of the year</h2>
       <div class="month-grid" id="monthGrid"></div>
     </section>
 
-    <section class="months-card">
+    <section class="months-card" aria-live="polite">
       <div class="planner-head">
-        <label for="yearSelect" data-lang="es">Ano:</label>
+        <label for="yearSelect" data-lang="es">Año:</label>
         <label for="yearSelect" data-lang="en" style="display:none">Year:</label>
         <select id="yearSelect"></select>
+        <button type="button" class="today-btn" id="todayBtn" hidden></button>
       </div>
 
       <h2 class="planner-title" id="plannerTitle"></h2>
       <p class="planner-topic" id="plannerTopic"></p>
-      <div class="planner-note" id="plannerNote"></div>
+      <p class="planner-intro" id="plannerIntro"></p>
 
-      <div class="method-box">
-        <h3 class="method-title" id="methodTitle"></h3>
+      <div class="progress" id="progress" hidden>
+        <span class="progress-label" id="progressLabel"></span>
+        <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+      </div>
+
+      <details class="method-box" id="methodBox" hidden>
+        <summary id="methodTitle"></summary>
         <ol class="method-steps" id="methodSteps"></ol>
         <div class="method-prayer" id="methodPrayer"></div>
         <div class="method-prayer" id="methodClosing"></div>
-      </div>
+      </details>
 
+      <details class="movable-box" id="movableBox" hidden>
+        <summary id="movableTitle"></summary>
+        <ul class="movable-list" id="movableList"></ul>
+      </details>
+
+      <div class="days-status" id="daysStatus"></div>
       <div class="days-list" id="daysList"></div>
 
       <div class="month-links-title" id="monthLinksTitle"></div>
@@ -406,8 +436,8 @@
   </main>
 
   <footer class="site-footer">
-    <p data-lang="es">Plan mensual catolico actualizable: oracion, sacramentos, reparacion y caridad.</p>
-    <p data-lang="en" style="display:none">Updatable Catholic monthly plan: prayer, sacraments, reparation, and charity.</p>
+    <p data-lang="es">Un día a la vez: Palabra, oración y un paso concreto de amor.</p>
+    <p data-lang="en" style="display:none">One day at a time: the Word, prayer, and one concrete step of love.</p>
   </footer>
 
   <script>
@@ -415,903 +445,179 @@
       'use strict';
 
       const LANG_KEY = 'tup_lang';
-      let lang = localStorage.getItem(LANG_KEY) || 'es';
+      const DONE_KEY = 'tup_meses_done';
+      let lang = localStorage.getItem(LANG_KEY) === 'en' ? 'en' : 'es';
 
       const months = [
-        { key: 'enero', es: 'Enero', en: 'January', topicEs: 'Nombre de Jesus', topicEn: 'Holy Name of Jesus' },
+        { key: 'enero', es: 'Enero', en: 'January', topicEs: 'Santísimo Nombre de Jesús', topicEn: 'Holy Name of Jesus' },
         { key: 'febrero', es: 'Febrero', en: 'February', topicEs: 'Sagrada Familia', topicEn: 'Holy Family' },
-        { key: 'marzo', es: 'Marzo', en: 'March', topicEs: 'San Jose', topicEn: 'Saint Joseph' },
-        { key: 'abril', es: 'Abril', en: 'April', topicEs: 'Pasion y Pascua', topicEn: 'Passion and Easter' },
-        { key: 'mayo', es: 'Mayo', en: 'May', topicEs: 'Virgen Maria', topicEn: 'Blessed Virgin Mary' },
-        { key: 'junio', es: 'Junio', en: 'June', topicEs: 'Sagrado Corazon de Jesus', topicEn: 'Sacred Heart of Jesus' },
-        { key: 'julio', es: 'Julio', en: 'July', topicEs: 'Preciosisima Sangre de Cristo', topicEn: 'Most Precious Blood of Christ' },
-        { key: 'agosto', es: 'Agosto', en: 'August', topicEs: 'Transfiguración, Asunción e Inmaculado Corazón', topicEn: 'Transfiguration, Assumption & Immaculate Heart' },
-        { key: 'septiembre', es: 'Septiembre', en: 'September', topicEs: 'Dolores de Maria', topicEn: 'Our Lady of Sorrows' },
+        { key: 'marzo', es: 'Marzo', en: 'March', topicEs: 'San José', topicEn: 'Saint Joseph' },
+        { key: 'abril', es: 'Abril', en: 'April', topicEs: 'Pasión y Resurrección', topicEn: 'Passion and Resurrection' },
+        { key: 'mayo', es: 'Mayo', en: 'May', topicEs: 'Mes de María', topicEn: 'Month of Mary' },
+        { key: 'junio', es: 'Junio', en: 'June', topicEs: 'Sagrado Corazón de Jesús', topicEn: 'Sacred Heart of Jesus' },
+        { key: 'julio', es: 'Julio', en: 'July', topicEs: 'Preciosísima Sangre de Cristo', topicEn: 'Most Precious Blood of Christ' },
+        { key: 'agosto', es: 'Agosto', en: 'August', topicEs: 'Transfiguración y Asunción', topicEn: 'Transfiguration and Assumption' },
+        { key: 'septiembre', es: 'Septiembre', en: 'September', topicEs: 'Nuestra Señora de los Dolores', topicEn: 'Our Lady of Sorrows' },
         { key: 'octubre', es: 'Octubre', en: 'October', topicEs: 'Santo Rosario', topicEn: 'Holy Rosary' },
-        { key: 'noviembre', es: 'Noviembre', en: 'November', topicEs: 'Difuntos y Esperanza Eterna', topicEn: 'Holy Souls and Eternal Hope' },
+        { key: 'noviembre', es: 'Noviembre', en: 'November', topicEs: 'Fieles difuntos y esperanza eterna', topicEn: 'Holy Souls and Eternal Hope' },
         { key: 'diciembre', es: 'Diciembre', en: 'December', topicEs: 'Adviento y Navidad', topicEn: 'Advent and Christmas' }
       ];
 
+      const UI = {
+        es: {
+          day: 'Día', today: 'Hoy', goToday: 'Ir a hoy', prayer: 'Oración', step: 'Paso de hoy',
+          markDone: 'Marcar como vivido', done: 'Vivido ✓', offering: 'Ofrecimiento diario', closing: 'Para cerrar el día',
+          progress: function (n, t) { return n + ' de ' + t + ' días vividos este mes'; },
+          loading: 'Cargando el camino del mes…',
+          error: 'No se pudo cargar este mes. Revisa tu conexión e inténtalo de nuevo.',
+          movable: 'Fechas móviles de este mes en ', saint: 'Conoce más y reza con ',
+          links: 'Recursos de la app para este mes'
+        },
+        en: {
+          day: 'Day', today: 'Today', goToday: 'Go to today', prayer: 'Prayer', step: 'Today’s step',
+          markDone: 'Mark as lived', done: 'Lived ✓', offering: 'Daily offering', closing: 'To close the day',
+          progress: function (n, t) { return n + ' of ' + t + ' days lived this month'; },
+          loading: 'Loading this month’s path…',
+          error: 'This month could not be loaded. Check your connection and try again.',
+          movable: 'Movable dates this month in ', saint: 'Learn more and pray with ',
+          links: 'In-app resources for this month'
+        }
+      };
+
+      const saintPages = {
+        '1-21': 'santaines', '1-24': 'sanfranciscodesales', '1-28': 'santotomasdeaquino', '1-31': 'sanjuanbosco',
+        '2-3': 'sanblas', '2-11': 'lourdes',
+        '3-19': 'sanjose',
+        '4-23': 'sanjorge', '4-29': 'santacatalina',
+        '5-13': 'fatima', '5-26': 'sanfelipeneri',
+        '6-3': 'sancarloslwanga', '6-5': 'sanbonifacio', '6-11': 'sanbarnabes', '6-13': 'sanantonio',
+        '6-21': 'sanluisgonzaga', '6-24': 'sanjuanbautista', '6-28': 'sanireneolyon', '6-29': 'sanpedro',
+        '7-1': 'preciosisimasangre', '7-3': 'santomasapostol', '7-11': 'sanbenito', '7-16': 'nuestrasenoracarmen', '7-26': 'santaana',
+        '8-10': 'sanlorenzo', '8-11': 'santaclara', '8-14': 'sanmaximiliano', '8-27': 'santamonica', '8-28': 'sanagustin', '8-29': 'sanjuanbautista',
+        '9-23': 'padrepio', '9-27': 'sanvicente', '9-29': 'sanmiguel',
+        '10-1': 'santateresita', '10-2': 'angelguarda', '10-4': 'sanfrancisco', '10-22': 'juanpablo', '10-28': 'sanjudas',
+        '11-4': 'sancarlos', '11-17': 'santaisabel',
+        '12-3': 'sanfranciscojavier', '12-6': 'sannicolas', '12-9': 'sanjuandiego', '12-12': 'guadalupe', '12-13': 'santalucia', '12-27': 'sanjuanapostol'
+      };
+
       const defaultMonthLinks = {
         es: [
-          { href: '/oraciones/', label: 'Oraciones Basicas' },
-          { href: '/rosario/', label: 'Rosario Interactivo' },
-          { href: '/intercesor/', label: 'Intercesores' }
+          { href: '/oraciones/', label: 'Oraciones básicas' },
+          { href: '/rosario/', label: 'Rosario interactivo' },
+          { href: '/reconciliacion/', label: 'Preparación para la confesión' }
         ],
         en: [
-          { href: '/oraciones/', label: 'Basic Prayers' },
+          { href: '/oraciones/', label: 'Basic prayers' },
           { href: '/rosario/', label: 'Interactive Rosary' },
-          { href: '/intercesor/', label: 'Intercessors' }
+          { href: '/reconciliacion/', label: 'Preparing for Confession' }
         ]
       };
 
       const monthSpecificLinks = {
-        julio: {
-          es: [
-            { href: '/intercesor/?intercesor=preciosisimasangre', label: 'Preciosisima Sangre' },
-            { href: '/adoracion/', label: 'Adoracion' },
-            { href: '/espiritu/', label: 'Espiritu Santo' }
-          ],
-          en: [
-            { href: '/intercesor/?intercesor=preciosisimasangre', label: 'Precious Blood' },
-            { href: '/adoracion/', label: 'Adoration' },
-            { href: '/espiritu/', label: 'Holy Spirit' }
-          ]
-        },
-        junio: {
-          es: [{ href: '/intercesor/?intercesor=sagradocorazon', label: 'Sagrado Corazon' }],
-          en: [{ href: '/intercesor/?intercesor=sagradocorazon', label: 'Sacred Heart' }]
-        },
-        octubre: {
-          es: [
-            { href: '/rosario/', label: 'Rosario Interactivo' },
-            { href: '/intercesor/?intercesor=guadalupe', label: 'Letanías — Guadalupe' },
-            { href: '/intercesor/?intercesor=fatima', label: 'Letanías — Fátima' }
-          ],
-          en: [
-            { href: '/rosario/', label: 'Interactive Rosary' },
-            { href: '/intercesor/?intercesor=guadalupe', label: 'Litany — Guadalupe' },
-            { href: '/intercesor/?intercesor=fatima', label: 'Litany — Fátima' }
-          ]
-        }
+        enero: [['/intercesor/?intercesor=sanfranciscodesales', 'San Francisco de Sales', 'Saint Francis de Sales'], ['/intercesor/?intercesor=sanjuanbosco', 'San Juan Bosco', 'Saint John Bosco']],
+        febrero: [['/matrimonio/', 'Matrimonio', 'Marriage'], ['/intercesor/?intercesor=lourdes', 'Nuestra Señora de Lourdes', 'Our Lady of Lourdes'], ['/salud/', 'Salud y enfermedad', 'Health and illness']],
+        marzo: [['/intercesor/?intercesor=sanjose', 'San José', 'Saint Joseph'], ['/viacrucis/', 'Vía Crucis', 'Stations of the Cross'], ['/cuaresma-san-miguel/', 'Cuaresma de San Miguel', 'Saint Michael’s Lent']],
+        abril: [['/viacrucis/', 'Vía Crucis', 'Stations of the Cross'], ['/misericordia/', 'Divina Misericordia', 'Divine Mercy'], ['/renacer-en-cristo/', 'Renacer en Cristo', 'Reborn in Christ']],
+        mayo: [['/maria/', 'María', 'Mary'], ['/intercesor/?intercesor=fatima', 'Virgen de Fátima', 'Our Lady of Fatima']],
+        junio: [['/intercesor/?intercesor=sagradocorazon', 'Sagrado Corazón', 'Sacred Heart'], ['/novena-sagrado-corazon/', 'Novena al Sagrado Corazón', 'Sacred Heart Novena'], ['/adoracion/', 'Adoración', 'Adoration']],
+        julio: [['/intercesor/?intercesor=preciosisimasangre', 'Preciosísima Sangre', 'Precious Blood'], ['/adoracion/', 'Adoración', 'Adoration'], ['/espiritu/', 'Espíritu Santo', 'Holy Spirit']],
+        agosto: [['/intercesor/?intercesor=inmaculadocorazon', 'Inmaculado Corazón de María', 'Immaculate Heart of Mary'], ['/maria/', 'María', 'Mary']],
+        septiembre: [['/maria/', 'María', 'Mary'], ['/viacrucis/', 'Vía Crucis', 'Stations of the Cross'], ['/intercesor/?intercesor=sanmiguel', 'San Miguel Arcángel', 'Saint Michael the Archangel']],
+        octubre: [['/intercesor/?intercesor=guadalupe', 'Virgen de Guadalupe', 'Our Lady of Guadalupe'], ['/intercesor/?intercesor=fatima', 'Virgen de Fátima', 'Our Lady of Fatima']],
+        noviembre: [['/difuntos/', 'Oración por los difuntos', 'Prayer for the dead'], ['/misericordia/', 'Divina Misericordia', 'Divine Mercy'], ['/salmos-diarios/', 'Salmos diarios', 'Daily Psalms']],
+        diciembre: [['/intercesor/?intercesor=guadalupe', 'Virgen de Guadalupe', 'Our Lady of Guadalupe'], ['/intercesor/?intercesor=sanjuandiego', 'San Juan Diego', 'Saint Juan Diego'], ['/ninos/', 'Niños', 'Children']]
       };
 
-      const julyDailyEs = [
-        'Comienza el mes ofreciendo tu vida al Senor: hoy haz una consagracion sencilla y escribe por que necesitas ser redimido en esta etapa.',
-        'Contempla Getsemani y reconoce donde te cuesta obedecer a Dios; la Sangre de Cristo te ensena a decir "si" incluso con temor.',
-        'Medita la flagelacion y piensa en las heridas que causas con tus palabras; pide gracia para hablar con verdad y caridad hoy.',
-        'Mira la coronacion de espinas y entrega tus pensamientos de orgullo, juicio o desesperanza para que Cristo reine en tu mente.',
-        'En el camino al Calvario, Jesus cae y se levanta; haz hoy una decision concreta de volver a empezar en lo que has abandonado.',
-        'Detente ante la Cruz y agradece el precio de tu salvacion; convierte esa gratitud en una obra real de misericordia en casa.',
-        'La Sangre de Cristo habla perdon; revisa una relacion herida y da el primer paso humilde para reconciliarte.',
-        'Hoy ora por tu familia nombrando a cada persona; pide proteccion, paz y conversion sin controlar la vida de nadie.',
-        'Recuerda que la redencion no es teoria; examina tu conciencia con sinceridad y prepara una buena confesion si la necesitas.',
-        'Vuelve a la Eucaristia con hambre espiritual: la Sangre de la Nueva Alianza te sostiene cuando tu fe se enfria.',
-        'Ofrece tus cansancios unidos al sacrificio de Cristo; lo pequeno de hoy puede ser ofrenda santa si se vive con amor.',
-        'Reza por quienes viven lejos de Dios; la Sangre derramada por todos te ensena a interceder sin excluir a nadie.',
-        'Mira tus miedos de frente y ponles nombre en oracion; pide libertad interior para no vivir gobernado por la ansiedad.',
-        'Haz silencio cinco minutos ante el Senor y deja que su misericordia ordene tu corazon antes de tomar decisiones importantes.',
-        'Contempla el costado abierto de Cristo: de ahi nacen Iglesia y sacramentos; hoy agradece pertenecer a una comunidad de fe.',
-        'Une tu amor a Maria con la redencion de Cristo: pide a Nuestra Senora del Carmen que te ensene fidelidad diaria.',
-        'Si cargas culpas antiguas, recuerda que la Sangre de Jesus limpia de verdad; rechaza la autoacusacion estancada y camina en gracia.',
-        'Practica una penitencia concreta y sobria; no para castigarte, sino para entrenar el corazon en libertad y obediencia.',
-        'Hoy reza por enfermos y afligidos; pide que la Sangre del Senor sea consuelo, fortaleza y esperanza en su prueba.',
-        'Intercede por los que sufren violencia o injusticia; que la redencion transforme tambien estructuras y ambientes de pecado.',
-        'Revisa tu uso del tiempo, pantallas y palabras; entrega a Cristo los habitos que drenan tu alma.',
-        'Haz memoria de una gracia recibida este ano y responde con gratitud activa: servir, visitar, escuchar o compartir.',
-        'La Sangre de Cristo vence el mal con amor; renuncia hoy a toda forma de odio, venganza o dureza deliberada.',
-        'Ora por sacerdotes y consagrados para que vivan con santidad; la Iglesia necesita testigos transparentes del Evangelio.',
-        'Dedica este dia a los jovenes y ninos de tu familia; pide proteccion espiritual y ejemplo coherente de tu parte.',
-        'Vigila la pureza de tus intenciones: no busques solo favores, busca sobre todo conversion y amistad con Cristo.',
-        'Haz hoy un acto de justicia pendiente: pedir perdon, reparar un dano o cumplir una promesa atrasada.',
-        'Reza por difuntos y almas olvidadas; la esperanza cristiana nace de la Pascua, no del olvido del dolor.',
-        'Mira el mes casi terminado y discierne frutos concretos: donde creciste, donde fallaste y que necesitas corregir.',
-        'Renueva tu confianza: la Sangre preciosa no humilla, levanta; entrega de nuevo lo que aun no logras soltar.',
-        'Cierra julio con accion de gracias y proposito estable: perseverar en oracion, sacramentos y caridad durante todo el ano.'
-      ];
-
-      const julyDailyEn = [
-        'Begin the month by offering your life to the Lord: make a simple consecration and write why you need redemption in this season.',
-        'Contemplate Gethsemane and notice where obedience is hard for you; Christ\'s Blood teaches you to say "yes" even in fear.',
-        'Meditate on the scourging and examine the wounds caused by your words; ask for grace to speak with truth and charity today.',
-        'Look at the crowning with thorns and surrender thoughts of pride, judgment, or despair so Christ may reign in your mind.',
-        'On the way to Calvary, Jesus falls and rises; make one concrete decision today to restart what you have abandoned.',
-        'Stand before the Cross and thank God for the price of your salvation; turn gratitude into one real work of mercy at home.',
-        'The Blood of Christ speaks forgiveness; review one wounded relationship and take the first humble step toward reconciliation.',
-        'Pray for your family by naming each person; ask for protection, peace, and conversion without trying to control others.',
-        'Remember redemption is not theory; examine your conscience sincerely and prepare a good confession if needed.',
-        'Return to the Eucharist with spiritual hunger: the Blood of the New Covenant sustains you when faith grows cold.',
-        'Offer your fatigue united to Christ\'s sacrifice; even small duties become holy offerings when done in love.',
-        'Pray for people far from God; the Blood shed for all teaches you to intercede without excluding anyone.',
-        'Face your fears and name them in prayer; ask for interior freedom so anxiety does not rule your decisions.',
-        'Keep five minutes of silence before the Lord and let mercy reorder your heart before important choices.',
-        'Contemplate Christ\'s opened side: from there come Church and sacraments; give thanks today for belonging to a faith community.',
-        'Unite Marian devotion with Christ\'s redemption: ask Our Lady of Mount Carmel to teach you daily fidelity.',
-        'If you carry old guilt, remember Jesus\' Blood truly cleanses; reject stagnant self-accusation and walk in grace.',
-        'Practice one concrete and sober penance; not to punish yourself, but to train the heart in freedom and obedience.',
-        'Pray today for the sick and afflicted; ask that the Lord\'s Blood be their consolation, strength, and hope.',
-        'Intercede for those suffering violence or injustice; may redemption transform structures and environments of sin.',
-        'Review your use of time, screens, and speech; surrender habits that quietly drain your soul.',
-        'Remember one grace received this year and respond with active gratitude: serve, visit, listen, or share.',
-        'Christ\'s Blood overcomes evil through love; renounce every form of hatred, revenge, and chosen hardness.',
-        'Pray for priests and consecrated men and women to live holy lives; the Church needs transparent Gospel witnesses.',
-        'Offer this day for the young people and children in your family; ask for spiritual protection and your own coherent example.',
-        'Watch the purity of your intentions: do not seek only favors, seek conversion and friendship with Christ.',
-        'Do one pending act of justice today: ask forgiveness, repair damage, or fulfill a delayed promise.',
-        'Pray for the dead and forgotten souls; Christian hope is born from Easter, not from ignoring sorrow.',
-        'As the month nears its end, discern concrete fruits: where you grew, where you failed, and what must be corrected.',
-        'Renew your trust: the Precious Blood does not humiliate, it raises up; surrender again what you still resist giving.',
-        'Close July with thanksgiving and a stable resolution: persevere in prayer, sacraments, and charity all year long.'
-      ];
-
-      const julyActionsEs = [
-        'Escribe tu intencion principal del mes y repitela en voz alta al iniciar tu oracion.',
-        'Lee Mateo 26:36-46 y anota una obediencia concreta que vas a vivir hoy.',
-        'Guarda una hora sin queja ni critica en casa o trabajo.',
-        'Evita una comparacion o juicio interno y reemplazalo con una jaculatoria breve.',
-        'Retoma hoy una practica que habias dejado: rosario, lectura biblica o examen.',
-        'Haz una obra de misericordia concreta por alguien cercano.',
-        'Envía un mensaje de paz o pide perdon a una persona con la que hay distancia.',
-        'Nombra y bendice a cada miembro de tu familia en una oracion de 2 minutos.',
-        'Haz examen de conciencia escrito en 5 puntos antes de dormir.',
-        'Asiste a Misa o visita el Santisimo al menos 10 minutos.',
-        'Ofrece tu tarea mas pesada del dia sin postergarla.',
-        'Ora por una persona alejada de la fe y menciona su nombre tres veces.',
-        'Renuncia hoy a una distraccion que te roba paz (pantalla, ruido o impulso).',
-        'Haz 5 minutos de silencio real sin telefono.',
-        'Agradece por escrito tres gracias recibidas en la Iglesia.',
-        'Reza un Ave Maria extra por fidelidad diaria y pureza de corazon.',
-        'Corta hoy una frase de autoacusacion y reemplazala por un acto de confianza.',
-        'Realiza una pequena penitencia (sobriedad en comida, tiempo o comodidad).',
-        'Llama o visita a un enfermo, o intercede por el con nombre propio.',
-        'Ofrece una decena del rosario por victimas de violencia e injusticia.',
-        'Limita tu consumo digital nocturno y termina el dia en oracion.',
-        'Comparte una palabra de aliento con alguien que este cansado.',
-        'Renuncia hoy a responder con dureza en una conversacion dificil.',
-        'Reza por un sacerdote concreto y ofrece un sacrificio breve por el.',
-        'Dedica 10 minutos de escucha real a un joven o nino de tu familia.',
-        'Antes de pedir favores, di primero: "Senor, convierteme a Ti".',
-        'Repara hoy una deuda moral pequena: disculpa, devolucion o cumplimiento.',
-        'Ofrece un Padre Nuestro por un difunto y recuerda una esperanza cristiana.',
-        'Escribe un balance espiritual del mes en tres lineas: gracia, caida y proposito.',
-        'Entrega en oracion aquello que todavia te cuesta soltar.',
-        'Define una regla breve para agosto: oracion fija, sacramento y obra de caridad semanal.'
-      ];
-
-      const julyActionsEn = [
-        'Write your main intention for the month and repeat it out loud at the start of prayer.',
-        'Read Matthew 26:36-46 and note one concrete obedience you will live today.',
-        'Keep one hour today without complaining or criticizing at home or work.',
-        'Refuse one comparison or inner judgment and replace it with a short aspiration.',
-        'Resume one practice you had dropped: rosary, Scripture reading, or examen.',
-        'Do one concrete work of mercy for someone close to you.',
-        'Send a peace message or ask forgiveness from someone with whom there is distance.',
-        'Name and bless each family member in a two-minute prayer.',
-        'Do a written five-point examination of conscience before sleep.',
-        'Attend Mass or visit the Blessed Sacrament for at least ten minutes.',
-        'Offer your hardest task today without postponing it.',
-        'Pray for one person far from faith and say their name three times.',
-        'Give up one distraction that steals your peace (screen, noise, or impulse).',
-        'Keep five real minutes of silence without your phone.',
-        'Write down three graces received through the Church and thank God for them.',
-        'Pray one extra Hail Mary for daily fidelity and purity of heart.',
-        'Stop one sentence of self-accusation and replace it with an act of trust.',
-        'Practice a small penance (sobriety in food, time, or comfort).',
-        'Call or visit someone sick, or intercede by name for them.',
-        'Offer one decade of the rosary for victims of violence and injustice.',
-        'Limit nighttime digital consumption and end the day in prayer.',
-        'Share one word of encouragement with someone tired today.',
-        'Refuse to answer harshly in one difficult conversation.',
-        'Pray for one specific priest and offer a brief sacrifice for him.',
-        'Give ten minutes of real listening to a young person or child in your family.',
-        'Before asking favors, say first: "Lord, convert me to You."',
-        'Repair one small moral debt today: apology, restitution, or fulfilled promise.',
-        'Offer one Our Father for a departed soul and recall one Christian hope.',
-        'Write a three-line spiritual month review: grace, fall, and resolution.',
-        'Surrender in prayer what you still struggle to let go.',
-        'Set one short rule for August: fixed prayer, sacrament, and weekly charity.'
-      ];
-
-      const julyPlanEs = {
-        note: 'Julio se vive como mes de la Preciosisima Sangre. El objetivo es la conversion, la limpieza del pecado y la confianza en la redencion de Cristo.',
-        dayText: function (d) {
-          const i = d - 1;
-          const reflection = julyDailyEs[i] || julyDailyEs[julyDailyEs.length - 1];
-          const action = julyActionsEs[i] || julyActionsEs[julyActionsEs.length - 1];
-          return reflection + '\n\nAccion de hoy: ' + action;
-        }
-      };
-
-      const julyPlanEn = {
-        note: 'July is lived as the month of the Most Precious Blood. The focus is conversion, cleansing from sin, and trust in Christ\'s redemption.',
-        dayText: function (d) {
-          const i = d - 1;
-          const reflection = julyDailyEn[i] || julyDailyEn[julyDailyEn.length - 1];
-          const action = julyActionsEn[i] || julyActionsEn[julyActionsEn.length - 1];
-          return reflection + '\n\nToday\'s action: ' + action;
-        }
-      };
-
-      const eneroDailyEs = [
-        'Comienza el año en el nombre de Jesús: escribe tres propósitos concretos y únelos al poder de Su nombre que salva.',
-        'Medita: Jesús significa "Dios salva". Hoy reconoce dónde necesitas ser salvado en 2025: pecado, miedo, soledad.',
-        'Reza lentamente el nombre "Jesús" 33 veces; cada invocación es un acto de confianza en Su poder redentor.',
-        'En el Nombre de Jesús hay poder para cambiar costumbres; elige hoy una sola y ofrécela en Su nombre.',
-        'Contempla a María en la circuncisión: ella guardaba todo en su corazón. Hoy guarda silencio una hora y ora.',
-        'Jesús fue circuncidado por obediencia; tú tienes ocasión de circuncidar tu corazón de dureza hoy.',
-        'Escribe el nombre "Jesús" en un papel y llévalo contigo como recordatorio de Su presencia todo el día.',
-        'En el nombre de Jesús se perdonan pecados; examina hoy una culpa antigua y pídele limpieza.',
-        'Visita un enfermo o una persona sola en el nombre de Jesús: Su nombre trae consuelo y esperanza.',
-        'Reza por un alejado de la fe invocando el nombre de Jesús; en Su nombre hay poder para conversiones.',
-        'El nombre es poder: hoy calla una crítica y reemplázala con una palabra que edifique en Su nombre.',
-        'Consagra tu trabajo del día al nombre de Jesús; que todo sea testimonio de Su presencia.',
-        'Medita Flp 2:9-11: en el nombre de Jesús toda rodilla se doblará. Hoy cede tu orgullo ante Él.',
-        'Enseña a un niño a rezar el nombre "Jesús"; que crezca conociendo Su poder desde pequeño.',
-        'En el nombre de Jesús hay sanación; ora por un enfermedad personal o de alguien cercano.',
-        'El año es nuevo pero Jesús es eterno; no busques novedad en fórmulas, busca profundidad en Su nombre.',
-        'Canta o escucha un cántico devoto al nombre de Jesús; que la música penetre tu alma.',
-        'Hoy afronta una tentación recurrente invocando el nombre de Jesús; Él vence la tentación.',
-        'Escribe una carta a Jesús en la que confieses lo que temes del año; firma con Su santo nombre.',
-        'En el nombre de Jesús se expulsan demonios; renuncia hoy a toda forma de oscuridad en tu vida.',
-        'Reza por tu familia: que cada uno conozca y ame el nombre de Jesús sin hipocresía.',
-        'Medita: ¿cómo digo el nombre de Jesús? ¿Con prisa, con fe, con gratitud? Hoy reza con presencia.',
-        'El nombre es sellador de alianza; renueva hoy tu pacto personal con Jesús en oración.',
-        'Busca una iglesia y permanece en silencio ante la Eucaristía; Jesús está allí en cuerpo y sangre.',
-        'Hoy practica una obra de misericordia en el nombre de Jesús; que el mundo vea Su bondad en ti.',
-        'Reza el Nombre de Jesús cuando sientas ansiedad; que Su presencia calme tu corazón.',
-        'Ama a un enemigo en el nombre de Jesús; que Su amor supere tu resistencia natural.',
-        'Medita Jn 1:1-14: el Verbo se hizo carne y habitó entre nosotros. Hoy celebra Su Encarnación.',
-        'En el nombre de Jesús hay perdón; perdona a quien te ha herido, aunque sea doloroso.',
-        'Reflexiona: ¿cuál es mi relación personal con el nombre de Jesús? ¿Intimidad o costumbre? Profundiza hoy.',
-        'Cierra enero renovando tu compromiso: en el nombre de Jesús, viviré en gracia durante todo este año.'
-      ];
-
-      const eneroActionsEs = [
-        'Escribe 3 propósitos en el nombre de Jesús y guárdalos en un lugar visible.',
-        'Reza 33 veces el nombre "Jesús" con presencia y fe.',
-        'Elige una costumbre mala y ofrécela a Jesús para ser sanado.',
-        'Guarda una hora en silencio meditando el nombre sagrado.',
-        'Pide perdón a una persona en el nombre de la paz de Jesús.',
-        'Visita un enfermo y ora con él invocando a Jesús.',
-        'Intercede por una persona alejada de la fe todos los días del mes.',
-        'Enseña a un niño a rezar: "Jesús, te amo".',
-        'Evita una crítica y reemplázala con un elogio sincero.',
-        'Consagra tu jornada laboral al nombre de Jesús cada mañana.',
-        'Escucha o canta un himno devoto al nombre de Jesús.',
-        'Afronta una tentación con la invocación: "Jesús, ayúdame".',
-        'Lee Filipenses 2:9-11 y medita sobre el poder del nombre.',
-        'Reza por tu familia que conozca a Jesús sin fingimiento.',
-        'Haz una obra de misericordia consciente en el nombre de Jesús.',
-        'Afronta la ansiedad con invocaciones al nombre sagrado.',
-        'Ama a alguien que te desagrada en el nombre de Jesús.',
-        'Lee el Evangelio de la Encarnación (Jn 1:1-14).',
-        'Perdona a quien te lastimó, aunque duela, en el nombre de la paz.',
-        'Reflexiona por escrito: ¿cuál es mi vínculo real con Jesús?',
-        'Examina tu conciencia y confiesa con sinceridad en Su nombre.',
-        'Renueva cada mañana tu consagración al nombre sagrado.',
-        'Rechazo activo de una tentación mediante el nombre de Jesús.',
-        'Comparte el Evangelio con alguien: habla del poder del nombre.',
-        'Permanece 15 minutos en silencio ante el Santísimo.',
-        'Crea una frase personal de invocación al nombre de Jesús.',
-        'Ayuda a alguien sin que se entere, en nombre de Jesús.',
-        'Lee y medita 1 Pedro 1:23-25 sobre la Palabra que permanece.',
-        'Evalúa: ¿viví enero en el nombre de Jesús? ¿Qué cambió?',
-        'Propósito final: llevar el nombre de Jesús a todo febrero.'
-      ];
-
-      const eneroPlanEs = {
-        note: 'Enero es el mes del Nombre de Jesús. Comenzamos el año con Su poder salvador, Su presencia eterna y nuestra consagración personal a Él.',
-        dayText: function (d) {
-          const i = d - 1;
-          const reflection = eneroDailyEs[i] || eneroDailyEs[eneroDailyEs.length - 1];
-          const action = eneroActionsEs[i] || eneroActionsEs[eneroActionsEs.length - 1];
-          return reflection + '\n\nAccion de hoy: ' + action;
-        }
-      };
-
-      const eneroPlanEn = {
-        note: 'January is the month of the Name of Jesus. We begin the year with His saving power, His eternal presence, and our personal consecration to Him.',
-        dayText: function (d) {
-          const dailyEn = [
-            'Begin the year in the Name of Jesus: write three concrete resolutions and unite them to His saving power.',
-            'Meditate: Jesus means "God saves." Today recognize where you need salvation in 2025: sin, fear, loneliness.',
-            'Pray the name "Jesus" slowly 33 times; each invocation is an act of trust in His redemptive power.',
-            'In the Name of Jesus there is power to change habits; choose one today and offer it in His name.',
-            'Contemplate Mary at the circumcision: she kept all things in her heart. Today keep silent for one hour and pray.',
-            'Jesus was circumcised in obedience; you have the chance today to circumcise your heart of hardness.',
-            'Write the name "Jesus" on paper and carry it as a reminder of His presence throughout the day.',
-            'In the name of Jesus sins are forgiven; examine today an old guilt and ask Him for cleansing.',
-            'Visit a sick person or someone alone in the name of Jesus: His name brings consolation and hope.',
-            'Pray for someone far from faith invoking the name of Jesus; in His name there is power for conversions.',
-            'The name is power: today silence a criticism and replace it with a word that builds in His name.',
-            'Consecrate your day\'s work to the name of Jesus; let everything be testimony to His presence.',
-            'Meditate Php 2:9-11: at the name of Jesus every knee will bow. Today surrender your pride before Him.',
-            'Teach a child to pray the name "Jesus"; let them grow knowing His power from small.',
-            'In the name of Jesus there is healing; pray for an illness, yours or someone close to you.',
-            'The year is new but Jesus is eternal; do not seek novelty in formulas, seek depth in His name.',
-            'Sing or listen to a hymn devoted to the name of Jesus; let music penetrate your soul.',
-            'Today face a recurring temptation invoking the name of Jesus; He overcomes temptation.',
-            'Write a letter to Jesus confessing what you fear about the year; sign it with His holy name.',
-            'In the name of Jesus demons are expelled; renounce today every form of darkness in your life.',
-            'Pray for your family: that each one knows and loves the name of Jesus without hypocrisy.',
-            'Meditate: How do I say the name of Jesus? In haste, with faith, with gratitude? Pray with presence today.',
-            'The name is a covenant seal; renew today your personal pact with Jesus in prayer.',
-            'Go to church and remain in silence before the Eucharist; Jesus is there in body and blood.',
-            'Today practice a work of mercy in the name of Jesus; let the world see His goodness in you.',
-            'Pray the Name of Jesus when you feel anxiety; let His presence calm your heart.',
-            'Love an enemy in the name of Jesus; let His love overcome your natural resistance.',
-            'Meditate Jn 1:1-14: the Word became flesh and dwelled among us. Today celebrate His Incarnation.',
-            'In the name of Jesus there is forgiveness; forgive the one who hurt you, even if painful.',
-            'Reflect: What is my personal relationship with the name of Jesus? Intimacy or habit? Deepen today.',
-            'Close January renewing your commitment: in the name of Jesus, I will live in grace throughout this year.'
-          ];
-          const actionEn = [
-            'Write 3 resolutions in the name of Jesus and keep them in a visible place.',
-            'Pray 33 times the name "Jesus" with presence and faith.',
-            'Choose one bad habit and offer it to Jesus for healing.',
-            'Keep one hour in silence meditating on the sacred name.',
-            'Ask forgiveness from someone in the name of the peace of Jesus.',
-            'Visit a sick person and pray with them invoking Jesus.',
-            'Intercede for someone far from faith every day this month.',
-            'Teach a child to pray: "Jesus, I love You."',
-            'Avoid one criticism and replace it with sincere praise.',
-            'Consecrate your work each morning to the name of Jesus.',
-            'Listen to or sing a hymn devoted to the name of Jesus.',
-            'Face a temptation with the invocation: "Jesus, help me."',
-            'Read Philippians 2:9-11 and meditate on the power of the name.',
-            'Pray for your family to know Jesus without pretense.',
-            'Do one work of mercy consciously in the name of Jesus.',
-            'Face anxiety with invocations of the sacred name.',
-            'Love someone you dislike in the name of Jesus.',
-            'Read the Gospel of the Incarnation (Jn 1:1-14).',
-            'Forgive the one who hurt you, even if it hurts, in the name of peace.',
-            'Reflect in writing: What is my real bond with Jesus?',
-            'Examine your conscience and confess sincerely in His name.',
-            'Renew each morning your consecration to the sacred name.',
-            'Active rejection of a temptation through the name of Jesus.',
-            'Share the Gospel with someone: speak of the power of the name.',
-            'Spend 15 minutes in silence before the Blessed Sacrament.',
-            'Create a personal phrase invoking the name of Jesus.',
-            'Help someone secretly, in the name of Jesus.',
-            'Read and meditate 1 Peter 1:23-25 on the Word that endures.',
-            'Evaluate: Did I live January in the name of Jesus? What changed?',
-            'Final resolution: carry the name of Jesus into all of February.'
-          ];
-          const i = d - 1;
-          const reflection = dailyEn[i] || dailyEn[dailyEn.length - 1];
-          const action = actionEn[i] || actionEn[actionEn.length - 1];
-          return reflection + '\n\nToday\'s action: ' + action;
-        }
-      };
-
-      const agostoDailyEs = [
-        'Agosto comienza con la Transfiguración: Jesús brilló en gloria ante Sus discípulos. Hoy pide ver a Jesús con claridad en tu fe.',
-        'Contempla el monte Tabor: Moisés y Elías hablan con Jesús. Tu vida también tiene encuentros sagrados si buscas la presencia.',
-        'Pedro, Santiago y Juan vieron la gloria. Hoy reza para que tus ojos espirituales se abran a la gloria escondida de Dios.',
-        'La nube cubrió a Jesús en el Tabor. Cuando la niebla espiritual es densa, confía que Dios sigue presente.',
-        'Del Tabor bajaron a la realidad de los endemoniados. La gloria no nos saca del mundo, nos prepara para servirlo.',
-        'Transfiguración es adelanto de Pascua: la gloria venida. En tu pequeña cruz hay Resurrección escondida.',
-        'El 15 de agosto, la Asunción de María: ella es elevada en cuerpo y alma a los cielos. Espera tu gloria eterna.',
-        'María es madre de la Iglesia desde el trono celestial. Hoy confía en su intercesión maternal por ti.',
-        'Contempla el cielo abierto: María reina, intercede, cuida. Su gloria es signo de nuestra esperanza.',
-        'En la Asunción, María vence la muerte. Tu cuerpo mortal será también resucitado si perseveras en gracia.',
-        'La Gloria de María nos invita a vivir sin apego al mundo. ¿Dónde está tu tesoro: en lo temporal o en lo eterno?',
-        'Transfiguración + Asunción = esperanza. Agosto te recuerda: no somos de este mundo, sino del cielo.',
-        'Reza hoy para que tu cuerpo y alma se transformen por la gracia. No es fantasía: es promesa de Dios.',
-        'Mira a Jesús en Su gloria: Ese es Tu destino si crees y perseveras en la fe durante toda la vida.',
-        'La Asunción de María nos enseña: la maternidad de María no termina en la tierra, continúa en el cielo.',
-        'Contempla los misterios gozosos del Rosario: María también fue transfigurada, elevada, glorificada.',
-        'En agosto, agradece por los siete dones del Espíritu Santo que te preparan para la gloria eterna.',
-        'Transfiguración es revelación breve de la realidad última: gloria para los fieles, poder para los apóstoles.',
-        'Pide hoy la gracia de vivir en el Tabor antes de bajar: o sea, conexión con lo divino antes de actuar.',
-        'La muerte de María fue asunción, no descenso. Tu muerte será coronación si vives en gracia.',
-        'Agosto es puente: del ardor de julio a la sobriedad de septiembre. Mantén vivo el fuego sagrado.',
-        'Reza por enfermos graves en agosto: la Asunción es esperanza de resurrección y sanación eterna.',
-        'María Asunta es reina de los ángeles. Pídele protección celestial contra toda asechanza.',
-        'Contempla tu propio cuerpo: será glorificado o corrompido según tus actos. Cuida lo que es templo.',
-        'En agosto medita: ¿qué me transfigura hacia la gloria? ¿Oración, sacrificio, caridad, penitencia?',
-        'La Asunción de María es fiesta de esperanza para los que sufren: vuestra prueba tiene sentido eterno.',
-        'Agosto es tiempo de silencio antes de la fiesta de septiembre. Recógete, contempla, prepárate.',
-        'Transfiguración nos muestra que la gloria no anula lo humano, lo transfigura, lo eleva, lo completa.',
-        'En la Asunción, María es Madre de la Iglesia: pide que protejas a tu familia como Ella protege la Iglesia.',
-        'Evoca agosto del año pasado. ¿Cuánto avanzaste en santidad? ¿Cuánta gloria has vivido?',
-        'Cierra agosto mirando al cielo: Septiembre trae nuevos misterios, pero la gloria vista aquí permanece.'
-      ];
-
-      const agostoActionsEs = [
-        'Lee Mt 17:1-9 (Transfiguración) y medita 10 minutos en silencio.',
-        'Sube a un lugar alto y ora contemplando la gloria de Dios en la naturaleza.',
-        'Reza 5 misterios gozosos del Rosario, enfocado en la Asunción.',
-        'Ayuna una comida en honor a la Asunción de María.',
-        'Visita una iglesia y contempla una imagen de la Transfiguración o Asunción.',
-        'Escribe: ¿cuál es mi "Tabor"? ¿Dónde me encuentro con Dios?',
-        'Reza por alguien que sufre ansiedad por la muerte con confianza en la Asunción.',
-        'Lee la Secuencia de la Asunción de María en la Misa.',
-        'Canta o escucha "Magnificat" meditando en María Asunta.',
-        'Pídele a María que te enseñe a vivir en la gloria de Dios escondida.',
-        'Cuidar tu cuerpo hoy: es futuro templo de gloria resucitado.',
-        'Reza por los difuntos para que lleguen a la gloria como María.',
-        'Lee 1 Co 15:42-44 sobre los cuerpos resucitados.',
-        'Ofrece una obra de caridad en honor a la gloria de María.',
-        'Medita: ¿dónde está mi corazón? ¿En lo temporal o lo eterno?',
-        'Reza una Letanía de la Virgen con presencia contemplativa.',
-        'Ayuda a alguien en su enfermedad, recordando la Asunción.',
-        'Examina: ¿qué me distrae de buscar a Dios? Corta una cosa hoy.',
-        'Contempla la luna (símbolo mariano) y reza a María en silencio.',
-        'Lee Ap 12:1 (Mujer vestida del sol, sobre la luna): María Asunta.',
-        'Prepara tu alma para septiembre: penitencia breve cada día.',
-        'Escribe una carta a María agradeciendo Su protección este mes.',
-        'Reza novena a la Asunción si no lo hiciste aún.',
-        'Guarda 15 minutos de silencio ante el Santísimo contemplando la gloria.',
-        'Lee la vida de un santo que vivió en presencia de la gloria de Dios.',
-        'Rechaza hoy toda vanidad: eres hecho para la gloria eterna, no terrenal.',
-        'Enseña a un niño: "María subió al cielo y tú también irás si amas a Jesús".',
-        'Reza por sacerdotes para que transformen almas hacia la gloria.',
-        'Evalúa agosto: ¿viví en el Tabor? ¿Preparé mi alma para la gloria?',
-        'Propósito final: llevar la esperanza de gloria a todo septiembre.'
-      ];
-
-      const agostoPlanEs = {
-        note: 'AGOSTO EN LA IGLESIA CATÓLICA\n\n✦ 6 de agosto — Transfiguración del Señor (Fiesta): Jesús se muestra en gloria en el monte Tabor. Es un adelanto de Su Resurrección y de la gloria que espera a los fieles.\n\n✦ 15 de agosto — Asunción de la Virgen María (Solemnidad, día de precepto): María es elevada en cuerpo y alma al cielo. Es la fiesta más importante de agosto y una de las cuatro solemnidades marianas del año.\n\n✦ 22 de agosto — Inmaculado Corazón de María (Memoria obligatoria en muchos países): Por tradición centenaria, agosto también es el mes del Inmaculado Corazón de María, cuya devoción une el amor maternal de María con el Sagrado Corazón de Jesús.\n\nEl tema del mes es la GLORIA: Dios que se revela en esplendor (Transfiguración), María que es llevada a esa gloria (Asunción), y el corazón que la acogió (Inmaculado Corazón). Agosto nos recuerda que no somos de este mundo sino del cielo.',
-        dayText: function (d) {
-          const i = d - 1;
-          const reflection = agostoDailyEs[i] || agostoDailyEs[agostoDailyEs.length - 1];
-          const action = agostoActionsEs[i] || agostoActionsEs[agostoActionsEs.length - 1];
-          return reflection + '\n\nAccion de hoy: ' + action;
-        }
-      };
-
-      const agostoMethodEs = {
-        title: 'Cómo hacerlo (guía pastoral breve de agosto)',
-        steps: [
-          'Comienza con la Señal de la Cruz e invoca a María en Su Asunción.',
-          'Lee brevemente Mt 17:1-9 (Transfiguración) o un pasaje sobre la gloria.',
-          'Reza lentamente el Rosario, enfocándose en misterios gozosos de gloria.',
-          'Completa con invocaciones: "Reina de los Cielos, ruega por nosotros".',
-          'Termina con petición de gracia para vivir en esperanza de gloria eterna.'
-        ],
-        prayer: 'Oración de ofrenda diaria:\n"Madre santísima, por tu Asunción gloriosa, presento este día a tu hijo Jesús. Transfigura mi alma hacia Tu gloria; guarda mi cuerpo como templo; prepárame para la eternidad. Amén."',
-        closing: 'Oración de cierre:\n"María asunta, reina del cielo, mira con ojos misericordiosos a tu Iglesia. Que llegemos todos a tu Gloria junto a tu Hijo Jesús. Amén."'
-      };
-
-      const septiembre = [
-        'Septiembre comienza con la fiesta de la Virgen de Dolores (15 de septiembre). Su corazón traspasado es signo de compasión.',
-        'María presenció la agonía de Jesús en el Calvario. Su dolor es modelo de compasión en el sufrimiento.',
-        'La espada que predijo Simeón atravesó el corazón de María. Hoy acéptate como espada de Dios en tu propia prueba.',
-        'María "está de pie" al pie de la Cruz. Su firmeza es tu ejemplo: permanece fiel incluso cuando todo duele.',
-        'Contempla la Piedad: Jesús muerto en brazos de María. Todo sufrimiento encuentra sentido en Cristo crucificado.',
-        'Los siete dolores de María son puerta a la compasión. ¿Dónde está tu compasión? ¿A quién consolas?',
-        'Septiembre es mes de reparación. La muerte de Jesús te llama a reparar con tu corazón herido.',
-        'María sufre con Cristo, y Su sufrimiento es redentivo. Tu dolor, unido al de Cristo, salva almas.',
-        'La Virgen de Dolores enseña: no huyas del sufrimiento, no niegues el dolor. Acéptalo, transfórmalo en amor.',
-        'Contempla el sacrificio: Jesús dio todo. ¿Qué das tú de verdad en este mes?',
-        'La Cruz es árbol de la vida. Lo que mata en el mundo mata, pero lo que mata en la fe vivifica.',
-        'María acompaña a los afligidos en septiembre. Acude a Ella: "Madre de Dolores, ruega por nosotros".',
-        'El velo de Verónica seca el rostro ensangrentado de Jesús. Hoy sé "Verónica" para alguien que sufre.',
-        'Jesús cae tres veces. La caída no es final, es oportunidad de levantarse en gracia.',
-        'Simón ayuda a Jesús a llevar la Cruz. Hoy sé Simón: ayuda a quien sufre a llevar Su cruz.',
-        'Las mujeres de Jerusalén lloran. Hoy llora con los que lloran; no des la espalda al dolor.',
-        'Jesús es crucificado entre malhechores. En tu cruz hay gracia incluso cuando todo parece perdición.',
-        'Madre, he aquí a tu hijo. Hoy cuida de aquello que Jesús te encomienda desde Su cruz.',
-        'Sitio, sitio: Jesús clama abandonado. El silencio de Dios enseña fe más profunda que la palabra.',
-        'La lanza traspasa el corazón de Jesús y María. Hoy abre Tu corazón al dolor del mundo.',
-        'Se oscureció el sol. En tu noche espiritual, Dios sigue presente, aunque no lo sientas.',
-        'Sepultado en la cruz: Jesús muere. Tu viejo yo muere en septiembre. Prepárate para la resurrección.',
-        'María es Madre de Dolores para todas las madres. Si eres madre en sangre o espíritu, acude a Ella.',
-        'Los Salmos de lamentación (como Sal 22) no son desesperanza, son honestidad ante Dios.',
-        'Septiembre enseña: la vida no es comodidad, es batalla. Pelea con el arma del amor.',
-        'Contempl la desolación de María: Su Hijo muerto, desgarrada, sola. Acompaña a los desgarrados.',
-        'La redención costó sangre y muerte. Vive como quien entiende el precio de su salvación.',
-        'Enfrenta tu propio Calvario en septiembre. No es maldición, es elevación si lo vives en gracia.',
-        'María en Dolores es Reina: la realeza de Dios está en la Cruz, no en el trono terrenal.',
-        'Reflexiona: ¿cuánto sufro por amor? ¿Ofrendo mi dolor, o sólo lo padezco sin sentido?',
-        'Cierra septiembre enraizado en la Cruz: octubre trae gloria, pero esta está plantada aquí, en el Calvario.'
-      ];
-
-      const septiembre2 = [
-        'Lee Is 53 (Siervo Sufriente) y medita en los dolores de Jesús y María.',
-        'Reza la Corona de los Siete Dolores de María lentamente. Cómo: 1 Padre Nuestro + 7 Avemarías por cada uno de los 7 Dolores (= 7 grupos). Al final, 3 Avemarías por las lágrimas de María. Total: ~20 min.',
-        'Visita a alguien que sufre; lleva consuelo en nombre de María.',
-        'Ayuna medio día en reparación por los pecados.',
-        'Lee la Pasión en el Evangelio y visualiza cada paso de Jesús.',
-        'Escribe: ¿cuál es mi Calvario personal? ¿Cómo lo ofrezco?',
-        'Reza por quien sufre enfermedad terminal o dolor crónico.',
-        'Practica mortificación breve: cede en algo que quieres para imitar a Jesús.',
-        'Lee un testimonio de un mártir o santa que sufrió con gracia.',
-        'Compadécete de alguien que está pasando mal; llévalo a Jesús en oración.',
-        'Reza el Vía Crucis meditando cada misterio con presencia.',
-        'Sacrifica algo que amas en honor a los Dolores de María.',
-        'Escucha música sacra melancólica (Un Stabat Mater) contemplando.',
-        'Escribe una carta a María: cómo Ella te ayuda en tu dolor.',
-        'Lee el último Evangelio (crucifixión) cada mañana de septiembre.',
-        'Abraza la cruz de tu vida hoy; deja de negarla o huir de ella.',
-        'Reza por sacerdotes para que prediquen el valor redentor del sufrimiento.',
-        'Ofrece tu trabajo duro en reparación por los pecados del mundo.',
-        'Reza novena a la Virgen de Dolores con sinceridad.',
-        'Contempla una imagen de la Piedad o Virgen de Dolores 15 minutos.',
-        'Ayuda sin que se sepa: anónima caridad en honor al sufrimiento callado de María.',
-        'Rechaza la murmuración; ofrece en su lugar paciencia unida al Calvario.',
-        'Lee Lam (Lamentaciones) meditando en los dolores de Dios.',
-        'Visita a los enfermos en un hospital y reza por cada uno.',
-        'Educa a tus hijos: "Jesús sufrió para salvarnos. Nuestro sufrimiento tiene sentido".',
-        'Ofrece a María tus miedos; ponlos al pie de la Cruz.',
-        'Busca en la Cruz Tu paz, no en el bienestar terrenal.',
-        'Reza por perseguidos y mártires de hoy; une su dolor al de Cristo.',
-        'Termina septiembre: ¿He comprendido el valor redentor del sufrimiento?',
-        'Propósito: Llevar octubre en espíritu de Cruz unida a Cristo Resucitado.'
-      ];
-
-      const septiembrePlanEs = {
-        note: 'Septiembre es el mes de la Virgen de Dolores. Contemplamos la Pasión, el sufrimiento redentor, la compasión de María y el valor del sacrificio unido a Cristo.',
-        dayText: function (d) {
-          const i = d - 1;
-          const reflection = septiembre[i] || septiembre[septiembre.length - 1];
-          const action = septiembre2[i] || septiembre2[septiembre2.length - 1];
-          return reflection + '\n\nAccion de hoy: ' + action;
-        }
-      };
-
-      const septiembreMethodEs = {
-        title: 'Cómo hacerlo (guía pastoral breve de septiembre)',
-        steps: [
-          'Comienza con la Señal de la Cruz e invoca a la Virgen de Dolores.',
-          'Lee brevemente la Pasión de Jesús (Mc 15 o Jn 19).',
-          'Reza el Vía Crucis o la Corona de los Siete Dolores. Estructura: 1 Padre Nuestro + 7 Avemarías por cada dolor; termina con 3 Avemarías por las lágrimas de María.',
-          'Los 7 Dolores de María: 1) Profecía de Simeón (Lc 2,35) · 2) Huida a Egipto (Mt 2,13) · 3) Pérdida del Niño en el Templo (Lc 2,48) · 4) Encuentro con Jesús camino al Calvario (Lc 23,28) · 5) Crucifixión y muerte (Jn 19,25) · 6) Descendimiento de la Cruz (Mt 27,59) · 7) Sepultura (Jn 19,42).',
-          'Completa con ofrecimiento de tu propio sufrimiento unido a Cristo.',
-          'Termina pidiendo gracia para vivir el sufrimiento con redención.'
-        ],
-        prayer: 'Oración de ofrenda diaria:\n"Madre de Dolores, tu corazón fue traspasado por mi salvación. Hoy ofrezco mis sufrimientos unidos a la Pasión de tu Hijo. Que mi dolor redima, que mi Cruz glorifique a Dios. Amén."',
-        closing: 'Oración de cierre:\n"Virgen María, en tus brazos descansa el Cordero inmolado. Protege mi fe en la Cruz. Que llegue a la Resurrección pasando por el Calvario. Amén."'
-      };
-
-      const septiembreMethodEn = {
-        title: 'How to do it (brief pastoral guide for September)',
-        steps: [
-          'Begin with the Sign of the Cross and invoke Our Lady of Sorrows.',
-          'Read briefly from the Passion of Jesus (Mk 15 or Jn 19).',
-          'Pray the Stations of the Cross or the Chaplet of the Seven Sorrows. Structure: 1 Our Father + 7 Hail Marys for each sorrow; close with 3 Hail Marys for Our Lady\'s tears.',
-          'The 7 Sorrows of Mary: 1) Simeon\'s prophecy (Lk 2:35) · 2) Flight into Egypt (Mt 2:13) · 3) Loss of the Child Jesus (Lk 2:48) · 4) Meeting Jesus on the Way of the Cross (Lk 23:28) · 5) Crucifixion and death (Jn 19:25) · 6) Taking down from the Cross (Mt 27:59) · 7) Burial of Jesus (Jn 19:42).',
-          'Complete with an offering of your own suffering united to Christ.',
-          'End asking for grace to live suffering with redemptive meaning.'
-        ],
-        prayer: 'Daily offering prayer:\n"Mother of Sorrows, your heart was pierced for my salvation. Today I offer my sufferings united to the Passion of Your Son. May my pain redeem, may my Cross glorify God. Amen."',
-        closing: 'Closing prayer:\n"Virgin Mary, in your arms the slain Lamb rests. Protect my faith in the Cross. May I reach the Resurrection by way of Calvary. Amen."'
-      };
-
-      const octubreMethodEs = {
-        title: 'Cómo hacerlo (guía pastoral breve de octubre)',
-        steps: [
-          'Comienza con la Señal de la Cruz e invoca a la Virgen del Rosario.',
-          'Lee brevemente el Misterio del día (gozoso, luminoso, doloroso o glorioso).',
-          'Reza un Rosario completo o al menos una decena con presencia contemplativa.',
-          'Completa con las Letanías Lauretanas (Letanía de Loreto). Las encontrarás en el Rosario Interactivo (/rosario/) o en la pestaña Letanías de cualquier intercesor mariano: Guadalupe, Fátima o Lourdes.',
-          'Termina ofreciendo el Rosario por la paz del mundo y tus intenciones personales.'
-        ],
-        prayer: 'Oración de ofrenda diaria:\n"Virgen del Rosario, te ofrezco este Rosario. Cada Ave María es una rosa de amor para ti. Intercede por nosotros ante tu Hijo. Amén."',
-        closing: 'Oración de cierre:\n"Reina del Rosario, escucha nuestra plegaria. Que el Rosario sea arma de paz. Que todos lo recemos con fe. Amén."'
-      };
-
-      const octubrePlanEs = {
-        note: 'Octubre es el mes del Santo Rosario. Contemplamos los misterios de la fe a través de la Virgen María, meditación evangélica completa y arma apostólica de la Iglesia.',
-        dayText: function (d) {
-          const daily = ['Octubre es el mes del Santo Rosario.', 'El Rosario es cadena de rosas:', 'Misterios gozosos: Encarnación, Visitación, Nacimiento, Presentación, Reencuentro.', 'Misterios luminosos: Bautismo, Bodas de Caná, Proclamación, Transfiguración, Eucaristía.', 'Misterios dolorosos: Agonía, Flagelación, Coronación de espinas, Carga de la cruz, Crucifixión.', 'Misterios gloriosos: Resurrección, Ascensión, Pentecostés, Asunción, Coronación de María.', 'Reza el Rosario completo en octubre.', 'El Rosario ha salvado naciones y convertido almas.', 'Cada Padre Nuestro es puerta al trono de Dios.', 'Las cuentas son testigos de tu fidelidad.'];
-          const i = d - 1;
-          const base = daily[i % daily.length] || daily[0];
-          return base + ' [Día ' + d + ' de Octubre]\n\nAcción: Reza un Rosario hoy con presencia.';
-        }
-      };
-
-      const noviembreMethodEs = {
-        title: 'Cómo hacerlo (guía pastoral breve de noviembre)',
-        steps: [
-          'Comienza con la Señal de la Cruz e invoca a los Santos y a las almas en purgatorio.',
-          'Lee brevemente Ap 21 u otro pasaje sobre la vida eterna.',
-          'Reza Padrenuestro, Avemaría y Gloria por una intención de difuntos.',
-          'Completa con Requiescat in Pace (Que descansen en paz).',
-          'Termina meditando sobre tu propia muerte y preparación espiritual.'
-        ],
-        prayer: 'Oración de ofrenda diaria:\n"Eterno Padre, por los méritos de la Pasión de Tu Hijo, concede descanso eterno a los difuntos. Por la intercesión de María, lleva paz a las almas en purgatorio. Amén."',
-        closing: 'Oración de cierre:\n"Que todos los fieles difuntos descansen en paz. Que lleguen a la gloria eterna por Tu misericordia. Amén."'
-      };
-
-      const noviembrePlanEs = {
-        note: 'Noviembre es el mes de los Difuntos y los Santos. Oramos por quienes han partido, intercedemos por las almas en purgatorio, y celebramos la Comunión de los Santos.',
-        dayText: function (d) {
-          const daily = ['Noviembre es el mes de los Difuntos.', 'Fiesta de todos los Santos.', 'Conmemoración de Fieles Difuntos.', 'Los vivos pueden ayudar a los muertos.', 'Visita un cementerio y reza.', 'El Purgatorio existe y purifica.', 'Reza por las almas olvidadas.', 'Contempla tu propia muerte.', 'Reza el Rosario por un difunto.', 'La muerte fue vencida por Cristo.'];
-          const i = d - 1;
-          const base = daily[i % daily.length] || daily[0];
-          return base + ' [Día ' + d + ' de Noviembre]\n\nAcción: Reza por un alma en purgatorio hoy.';
-        }
-      };
-
-      const diciembreMethodEs = {
-        title: 'Cómo hacerlo (guía pastoral breve de diciembre)',
-        steps: [
-          'Comienza con la Señal de la Cruz e invoca al Verbo Encarnado.',
-          'Lee un pasaje profético de Isaías o el Evangelio de la Infancia.',
-          'Reza las Ó Antífonas en la última semana de Adviento.',
-          'Completa con Padrenuestro, Avemaría y Gloria por la paz en Navidad.',
-          'Termina en contemplación silenciosa: Dios llega en silencio.'
-        ],
-        prayer: 'Oración de ofrenda diaria:\n"Verbo Encarnado, Jesús que vienes a nosotros, prepara mi corazón. Que sea para ti establo puro. Que tu venida traiga paz. Amén."',
-        closing: 'Oración de cierre:\n"Emmanuel, Dios con nosotros, eres la esperanza del mundo. Que Navidad sea verdadera celebración de Tu Encarnación. Amén."'
-      };
-
-      const diciembrePlanEs = {
-        note: 'Diciembre es Adviento y Navidad. Esperamos la Encarnación, la llegada de Jesús. Preparamos nuestros corazones para recibirlo en la Eucaristía y en la vida cotidiana.',
-        dayText: function (d) {
-          const daily = ['Diciembre comienza el Adviento.', 'Adviento significa "llegada".', 'Cuatro domingos de preparación.', 'Primera semana: esperanza.', 'Segunda semana: paz.', 'Tercera semana: gozo.', 'Cuarta semana: amor.', 'En Adviento se acelera comercialización.', 'Navidad es Encarnación.', 'María da a luz en pobreza.'];
-          const i = d - 1;
-          const base = daily[i % daily.length] || daily[0];
-          return base + ' [Día ' + d + ' de Diciembre]\n\nAcción: Hoy prepara tu corazón para Navidad.';
-        }
-      };
-
-      const octubreMethodEn = {
-        title: 'How to do it (brief pastoral October guide)',
-        steps: [
-          'Begin with the Sign of the Cross and invoke the Virgin of the Rosary.',
-          'Read briefly the Mystery of the day (joyful, luminous, sorrowful, or glorious).',
-          'Pray a complete Rosary or at least one decade with contemplative presence.',
-          'Complete with the Litany of Loreto. You will find it in the Interactive Rosary (/rosario/) or in the Litany tab of any Marian intercessor: Guadalupe, Fátima, or Lourdes.',
-          'End by offering the Rosary for the peace of the world and your personal intentions.'
-        ],
-        prayer: 'Daily offering prayer:\n"Virgin of the Rosary, I offer you this Rosary. Each Hail Mary is a rose of love for you. Intercede for us before your Son. Amen."',
-        closing: 'Closing prayer:\n"Queen of the Rosary, hear our prayer. May the Rosary be a weapon of peace. May all pray it with faith. Amen."'
-      };
-
-      const octubrePlanEn = {
-        note: 'October is the month of the Holy Rosary. We contemplate the mysteries of faith through the Virgin Mary, complete evangelical meditation and apostolic weapon of the Church.',
-        dayText: function (d) {
-          const daily = ['October is the month of the Holy Rosary.', 'The Rosary is a chain of roses.', 'Joyful Mysteries: Incarnation, Visitation, Birth, Presentation, Finding.', 'Luminous Mysteries: Baptism, Wedding at Cana, Proclamation, Transfiguration, Eucharist.', 'Sorrowful Mysteries: Agony, Scourging, Crowning of thorns, Carrying the cross, Crucifixion.', 'Glorious Mysteries: Resurrection, Ascension, Pentecost, Assumption, Coronation of Mary.', 'Pray the complete Rosary in October.', 'The Rosary has saved nations and converted souls.', 'Each Our Father is a door to God\'s throne.', 'The beads are witnesses to your faithfulness.'];
-          const i = d - 1;
-          const base = daily[i % daily.length] || daily[0];
-          return base + ' [Day ' + d + ' of October]\n\nAction: Pray a Rosary today with presence.';
-        }
-      };
-
-      const noviembreMethodEn = {
-        title: 'How to do it (brief pastoral November guide)',
-        steps: [
-          'Begin with the Sign of the Cross and invoke the Saints and souls in purgatory.',
-          'Read briefly Rv 21 or another passage about eternal life.',
-          'Pray Our Father, Hail Mary, and Glory Be for an intention of the deceased.',
-          'Complete with Requiescat in Pace (May they rest in peace).',
-          'End meditating on your own death and spiritual preparation.'
-        ],
-        prayer: 'Daily offering prayer:\n"Eternal Father, by the merits of the Passion of Your Son, grant eternal rest to the deceased. By the intercession of Mary, bring peace to the souls in purgatory. Amen."',
-        closing: 'Closing prayer:\n"May all the faithful deceased rest in peace. May they reach eternal glory by Your mercy. Amen."'
-      };
-
-      const noviembrePlanEn = {
-        note: 'November is the month of the Faithful Departed and Saints. We pray for those who have passed, intercede for souls in purgatory, and celebrate the Communion of Saints.',
-        dayText: function (d) {
-          const daily = ['November is the month of the Faithful Departed.', 'Feast of All Saints.', 'Commemoration of All the Faithful Departed.', 'The living can help the dead.', 'Visit a cemetery and pray.', 'Purgatory exists and purifies.', 'Pray for forgotten souls.', 'Contemplate your own death.', 'Pray the Rosary for a deceased person.', 'Death was conquered by Christ.'];
-          const i = d - 1;
-          const base = daily[i % daily.length] || daily[0];
-          return base + ' [Day ' + d + ' of November]\n\nAction: Pray for a soul in purgatory today.';
-        }
-      };
-
-      const diciembreMethodEn = {
-        title: 'How to do it (brief pastoral December guide)',
-        steps: [
-          'Begin with the Sign of the Cross and invoke the Incarnate Word.',
-          'Read a prophetic passage from Isaiah or the Gospel of the Infancy.',
-          'Pray the O Antiphons in the final week of Advent.',
-          'Complete with Our Father, Hail Mary, and Glory Be for peace at Christmas.',
-          'End in silent contemplation: God comes in silence.'
-        ],
-        prayer: 'Daily offering prayer:\n"Incarnate Word, Jesus who comes to us, prepare my heart. Let it be for you a pure stable. Let your coming bring peace. Amen."',
-        closing: 'Closing prayer:\n"Emmanuel, God with us, you are the hope of the world. May Christmas be a true celebration of Your Incarnation. Amen."'
-      };
-
-      const diciembrePlanEn = {
-        note: 'December is Advent and Christmas. We await the Incarnation, the coming of Jesus. We prepare our hearts to receive Him in the Eucharist and in daily life.',
-        dayText: function (d) {
-          const daily = ['December begins Advent.', 'Advent means "coming".', 'Four Sundays of preparation.', 'First week: hope.', 'Second week: peace.', 'Third week: joy.', 'Fourth week: love.', 'In Advent commercialization accelerates.', 'Christmas is Incarnation.', 'Mary gives birth in poverty.'];
-          const i = d - 1;
-          const base = daily[i % daily.length] || daily[0];
-          return base + ' [Day ' + d + ' of December]\n\nAction: Today prepare your heart for Christmas.';
-        }
-      };
-
-      let selectedMonth = (new Date()).getMonth(); // auto-detect current month
-      const currentYear = (new Date()).getFullYear();
-
-      const eneroMethodEs = {
-        title: 'Cómo hacerlo (guía pastoral breve de enero)',
-        steps: [
-          'Comienza con la Señal de la Cruz e invoca el nombre "Jesús" como tu primer acto consciente del día.',
-          'Lee brevemente el Evangelio de la Circuncisión (Lc 2:21) o la Encarnación (Jn 1:1-14).',
-          'Reza 33 invocaciones del nombre sagrado con fe y lentitud, uniendo tu intención al poder salvador.',
-          'Completa con Letanía (o parte de ella), Padre Nuestro, Ave María y Gloria.',
-          'Termina con examen de conciencia y acto de contrición en el nombre de Jesús.'
-        ],
-        prayer: 'Oración de ofrenda diaria:\n"Jesús, en Tu nombre sagrado entrego este día. Salva lo que en mí es frágil, sana lo que está herido, guía lo que está perdido. Que Tu nombre sea poder en mis palabras, paz en mis actos, y misericordia en mi corazón. Amén."',
-        closing: 'Oración de cierre:\n"En el nombre de Jesús, sellador de mi año, cierro este día con acción de gracias. Que todos los días de 2025 lleven Tu nombre en mi frente y Tu amor en mi corazón. Amén."'
-      };
-
-      const eneroMethodEn = {
-        title: 'How to do it (brief pastoral January guide)',
-        steps: [
-          'Begin with the Sign of the Cross and invoke the name "Jesus" as your first conscious act of the day.',
-          'Read briefly the Gospel of the Circumcision (Lk 2:21) or the Incarnation (Jn 1:1-14).',
-          'Pray 33 invocations of the sacred name with faith and slowness, uniting your intention to His saving power.',
-          'Complete with the Litany (or part of it), then Our Father, Hail Mary, and Glory Be.',
-          'End with examination of conscience and an act of contrition in the name of Jesus.'
-        ],
-        prayer: 'Daily offering prayer:\n"Jesus, in Your sacred name I offer this day. Save what is fragile in me, heal what is wounded, guide what is lost. Let Your name be power in my words, peace in my acts, and mercy in my heart. Amen."',
-        closing: 'Closing prayer:\n"In the name of Jesus, seal of my year, I close this day with thanksgiving. May all the days of 2025 bear Your name on my brow and Your love in my heart. Amen."'
-      };
-
-      const julyMethodEs = {
-        title: 'Cómo hacerlo (guía pastoral breve de julio)',
-        steps: [
-          'Comienza con la Señal de la Cruz y ofrece el día por una intención concreta de conversión.',
-          'Lee brevemente la Pasión (Getsemaní, flagelación o Calvario) y guarda un minuto de silencio.',
-          'Reza con fe una fórmula fija (por ejemplo, 33 invocaciones) y une tu petición a la redención de Cristo.',
-          'Completa con Letanía (o una parte), Padre Nuestro, Ave María y Gloria.',
-          'Termina con examen de conciencia, acto de contrición y una obra concreta de caridad.'
-        ],
-        prayer: 'Oración de ofrenda diaria:\n"Señor Jesús, por tu Preciosísima Sangre te entrego este día. Concédeme conversión, limpieza interior y fidelidad a tu voluntad. Amén."',
-        closing: 'Oración de cierre:\n"Jesús, por tu Sangre derramada en la Cruz, ten misericordia de mí y del mundo entero. Guárdame en tu gracia y hazme perseverar en una vida santa. Amén."'
-      };
-
-      const julyMethodEn = {
-        title: 'How to do it (brief pastoral July guide)',
-        steps: [
-          'Begin with the Sign of the Cross and offer one concrete intention of conversion.',
-          'Read a short Passion passage (Gethsemane, scourging, or Calvary) and keep one minute of silence.',
-          'Pray a fixed formula with faith (for example, 33 invocations), uniting your petition to Christ\'s redemption.',
-          'Complete with the Litany (or part of it), then one Our Father, Hail Mary, and Glory Be.',
-          'End with examination of conscience, an act of contrition, and one concrete work of charity.'
-        ],
-        prayer: 'Daily offering prayer:\n"Lord Jesus, through Your Most Precious Blood I offer You this day. Grant me conversion, interior cleansing, and fidelity to Your will. Amen."',
-        closing: 'Closing prayer:\n"Jesus, by Your Blood shed on the Cross, have mercy on me and on the whole world. Keep me in Your grace and make me persevere in a holy life. Amen."'
-      };
-
-      const genericMethod = {
-        es: {
-          title: 'Como hacerlo (estructura base)',
-          steps: [
-            'Senal de la Cruz + intencion del dia.',
-            'Lectura breve del Evangelio o vida del santo del mes.',
-            'Oracion principal del mes (10-15 minutos).',
-            'Padre Nuestro, Ave Maria, Gloria.',
-            'Acto concreto de caridad y cierre en accion de gracias.'
-          ],
-          prayer: 'Formula breve sugerida:\n"Senor, recibeme en este tiempo de oracion. Concedeme conversion, fidelidad y caridad. Amen."',
-          closing: 'Cierre sugerido:\n"Todo sea para tu gloria, Senor. Amen."'
-        },
-        en: {
-          title: 'How to do it (base structure)',
-          steps: [
-            'Sign of the Cross + daily intention.',
-            'Short Gospel reading or life of the month saint.',
-            'Main prayer of the month (10-15 minutes).',
-            'Our Father, Hail Mary, Glory Be.',
-            'One concrete act of charity and closing thanksgiving.'
-          ],
-          prayer: 'Suggested short formula:\n"Lord, receive me in this prayer time. Grant me conversion, fidelity, and charity. Amen."',
-          closing: 'Suggested closing:\n"May everything be for Your glory, Lord. Amen."'
-        }
-      };
-
-      function daysInMonth(year, monthIndex) {
-        return new Date(year, monthIndex + 1, 0).getDate();
-      }
+      const params = new URLSearchParams(location.search);
+      const now = new Date();
+      const currentYear = now.getFullYear();
+      const paramMonth = months.findIndex(function (m) { return m.key === params.get('mes'); });
+      let selectedMonth = paramMonth >= 0 ? paramMonth : now.getMonth();
+      let openDay = null;
+      let renderToken = 0;
+      const monthCache = {};
 
       function el(id) { return document.getElementById(id); }
+      function make(tag, className, text) {
+        const node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text !== undefined) node.textContent = text;
+        return node;
+      }
+      function daysInMonth(year, monthIndex) { return new Date(year, monthIndex + 1, 0).getDate(); }
+      function addDays(date, n) { return new Date(date.getFullYear(), date.getMonth(), date.getDate() + n); }
 
-      const scriptureReadings = {
-        es: {
-          'Mateo 26:36-46': '"Padre mío, si es posible, que pase de mí este cáliz; pero no sea como yo quiero, sino como quieres tú." (Mt 26:39). Jesús ora en agonía y se abandona a la voluntad del Padre.',
-          'Mt 17:1-9': '"Este es mi Hijo amado, en quien me complazco: escuchadlo." (Mt 17:5). En la Transfiguración, el Padre revela la gloria de Cristo y llama a obedecer su palabra.',
-          'Flp 2:9-11': '"Dios lo exaltó sobre todo y le otorgó el Nombre sobre todo nombre, para que al nombre de Jesús toda rodilla se doble en el cielo, en la tierra y en los abismos, y toda lengua confiese que Jesucristo es Señor." (Flp 2:9-11).',
-          'Filipenses 2:9-11': '"Dios lo exaltó sobre todo y le otorgó el Nombre sobre todo nombre, para que al nombre de Jesús toda rodilla se doble en el cielo, en la tierra y en los abismos, y toda lengua confiese que Jesucristo es Señor." (Flp 2:9-11).',
-          'Jn 1:1-14': '"Y el Verbo se hizo carne y habitó entre nosotros." (Jn 1:14). Cristo, Palabra eterna, entra en nuestra historia para salvarnos.',
-          '1 Co 15:42-44': '"Se siembra en corrupción y resucita en incorrupción; se siembra en deshonra y resucita en gloria; se siembra en debilidad y resucita en poder; se siembra un cuerpo natural y resucita un cuerpo espiritual." (1 Co 15:42-44).',
-          'Ap 12:1': '"Apareció una gran señal en el cielo: una mujer vestida del sol, con la luna bajo sus pies, y una corona de doce estrellas sobre su cabeza." (Ap 12:1).',
-          'Is 53': '"Él soportó nuestros sufrimientos y cargó con nuestros dolores; fue herido por nuestras rebeldías, triturado por nuestras culpas: por sus heridas hemos sido sanados." (Is 53:4-5).',
-          'Sal 22': '"Dios mío, Dios mío, ¿por qué me has abandonado?" (Sal 22:2). El salmo pasa del clamor al acto de confianza en Dios.',
-          'Ap 21': '"Él enjugará toda lágrima de sus ojos, y no habrá muerte, ni duelo, ni llanto, ni dolor." (Ap 21:4).',
-          'Lc 2:21': '"Al cumplirse los ocho días para circuncidar al niño, le pusieron por nombre Jesús, como lo había llamado el ángel antes de su concepción." (Lc 2:21).',
-          '1 Pedro 1:23-25': '"La palabra del Señor permanece para siempre." (1 Pe 1:25). Nuestra esperanza se apoya en una Palabra que no pasa.'
-        },
-        en: {
-          'Matthew 26:36-46': '"My Father, if it is possible, let this cup pass from me; yet not as I will, but as you will." (Mt 26:39). Jesus prays in agony and surrenders to the Father.',
-          'Mt 17:1-9': '"This is my beloved Son, with whom I am well pleased; listen to him." (Mt 17:5). At the Transfiguration, the Father reveals Christ\'s glory.',
-          'Php 2:9-11': '"God highly exalted him and bestowed on him the name above every name, that at the name of Jesus every knee should bend, in heaven and on earth and under the earth, and every tongue confess that Jesus Christ is Lord." (Php 2:9-11).',
-          'Jn 1:1-14': '"And the Word became flesh and dwelt among us." (Jn 1:14). Christ, the eternal Word, enters history to save us.',
-          '1 Cor 15:42-44': '"What is sown is perishable, what is raised is imperishable. It is sown in dishonor, raised in glory; sown in weakness, raised in power; sown a natural body, raised a spiritual body." (1 Cor 15:42-44).',
-          'Rv 21': '"He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore." (Rv 21:4).',
-          'Lk 2:21': '"When eight days were completed for his circumcision, he was named Jesus, the name given by the angel before he was conceived in the womb." (Lk 2:21).',
-          '1 Peter 1:23-25': '"The word of the Lord remains forever." (1 Pt 1:25). Our hope rests on a Word that does not pass away.'
-        }
-      };
-
-      const prayerReadings = {
-        es: {
-          'Magnificat': '"Proclama mi alma la grandeza del Señor, se alegra mi espíritu en Dios, mi salvador; porque ha mirado la humillación de su esclava. Desde ahora me felicitarán todas las generaciones, porque el Poderoso ha hecho obras grandes por mí: su nombre es santo." (Lc 1:46-49).',
-          'Padre Nuestro': '"Padre nuestro, que estás en el cielo, santificado sea tu nombre; venga a nosotros tu reino; hágase tu voluntad en la tierra como en el cielo. Danos hoy nuestro pan de cada día; perdona nuestras ofensas, como también nosotros perdonamos a los que nos ofenden; no nos dejes caer en tentación y líbranos del mal. Amén."',
-          'Padrenuestro': '"Padre nuestro, que estás en el cielo, santificado sea tu nombre; venga a nosotros tu reino; hágase tu voluntad en la tierra como en el cielo. Danos hoy nuestro pan de cada día; perdona nuestras ofensas, como también nosotros perdonamos a los que nos ofenden; no nos dejes caer en tentación y líbranos del mal. Amén."',
-          'Ave María': '"Dios te salve, María, llena eres de gracia, el Señor es contigo; bendita tú eres entre todas las mujeres y bendito es el fruto de tu vientre, Jesús. Santa María, Madre de Dios, ruega por nosotros pecadores, ahora y en la hora de nuestra muerte. Amén."',
-          'Avemaría': '"Dios te salve, María, llena eres de gracia, el Señor es contigo; bendita tú eres entre todas las mujeres y bendito es el fruto de tu vientre, Jesús. Santa María, Madre de Dios, ruega por nosotros pecadores, ahora y en la hora de nuestra muerte. Amén."',
-          'Gloria': '"Gloria al Padre, y al Hijo, y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén."',
-          'Señal de la Cruz': '"En el nombre del Padre, y del Hijo, y del Espíritu Santo. Amén."'
-        },
-        en: {
-          'Magnificat': '"My soul proclaims the greatness of the Lord, my spirit rejoices in God my Savior; for he has looked with favor on his lowly servant. From this day all generations will call me blessed: the Almighty has done great things for me, and holy is his Name." (Lk 1:46-49).',
-          'Our Father': '"Our Father, who art in heaven, hallowed be Thy name; Thy kingdom come; Thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses, as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen."',
-          'Hail Mary': '"Hail Mary, full of grace, the Lord is with thee; blessed art thou among women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen."',
-          'Glory Be': '"Glory be to the Father, and to the Son, and to the Holy Spirit. As it was in the beginning, is now, and ever shall be, world without end. Amen."',
-          'Sign of the Cross': '"In the name of the Father, and of the Son, and of the Holy Spirit. Amen."'
-        }
-      };
-
-      function appendReferencedReadings(text, lang) {
-        if (!text) return text;
-        const readingMap = scriptureReadings[lang] || {};
-        const refs = Object.keys(readingMap).filter(function (ref) {
-          return text.indexOf(ref) >= 0;
-        });
-        if (!refs.length) return text;
-        const seen = new Set();
-        const lines = refs.filter(function (ref) {
-          if (seen.has(ref)) return false;
-          seen.add(ref);
-          return true;
-        }).map(function (ref) {
-          return '[' + ref + '] ' + readingMap[ref];
-        });
-        const title = lang === 'es' ? 'Texto para leer hoy:' : 'Reading text for today:';
-        return text + '\n\n' + title + '\n' + lines.join('\n\n');
+      function easterSunday(y) {
+        const a = y % 19, b = Math.floor(y / 100), c = y % 100, d = Math.floor(b / 4), e = b % 4;
+        const f = Math.floor((b + 8) / 25), g = Math.floor((b - f + 1) / 3);
+        const h = (19 * a + b - d - g + 15) % 30, i = Math.floor(c / 4), k = c % 4;
+        const l = (32 + 2 * e + 2 * i - h - k) % 7, m = Math.floor((a + 11 * h + 22 * l) / 451);
+        const month = Math.floor((h + l - 7 * m + 114) / 31), day = ((h + l - 7 * m + 114) % 31) + 1;
+        return new Date(y, month - 1, day);
       }
 
-      function appendReferencedPrayers(text, lang) {
-        if (!text) return text;
-        const prayerMap = prayerReadings[lang] || {};
-        const refs = Object.keys(prayerMap).filter(function (ref) {
-          return text.indexOf(ref) >= 0;
-        });
-        if (!refs.length) return text;
-        const seen = new Set();
-        const lines = refs.filter(function (ref) {
-          if (seen.has(ref)) return false;
-          seen.add(ref);
-          return true;
-        }).map(function (ref) {
-          return '[' + ref + '] ' + prayerMap[ref];
-        });
-        const title = lang === 'es' ? 'Oración para rezar hoy:' : 'Prayer text for today:';
-        return text + '\n\n' + title + '\n' + lines.join('\n\n');
-      }
-
-      function summarizeDayText(text, lang) {
-        if (!text) return lang === 'es' ? 'Accion del dia' : 'Daily action';
-        const actionMarker = lang === 'es' ? 'Accion de hoy: ' : 'Today\'s action: ';
-        const markerIndex = text.indexOf(actionMarker);
-        if (markerIndex >= 0) {
-          const actionText = text.slice(markerIndex + actionMarker.length).split('\n')[0].trim();
-          if (actionText) {
-            if (actionText.length <= 88) return actionText;
-            return actionText.slice(0, 85).trimEnd() + '...';
+      function movableFeasts(y) {
+        const easter = easterSunday(y);
+        const christmas = new Date(y, 11, 25);
+        const advent = addDays(christmas, -(christmas.getDay() || 7) - 21);
+        const holyFamily = christmas.getDay() === 0 ? new Date(y, 11, 30) : addDays(christmas, 7 - christmas.getDay());
+        const list = [
+          [addDays(easter, -46), 'Miércoles de Ceniza', 'Ash Wednesday'],
+          [addDays(easter, -7), 'Domingo de Ramos', 'Palm Sunday'],
+          [addDays(easter, -3), 'Jueves Santo', 'Holy Thursday'],
+          [addDays(easter, -2), 'Viernes Santo', 'Good Friday'],
+          [easter, 'Domingo de Resurrección', 'Easter Sunday'],
+          [addDays(easter, 7), 'Domingo de la Divina Misericordia', 'Divine Mercy Sunday'],
+          [addDays(easter, 39), 'Ascensión del Señor (en muchos países, el domingo siguiente)', 'Ascension of the Lord (in many places, the following Sunday)'],
+          [addDays(easter, 49), 'Pentecostés', 'Pentecost'],
+          [addDays(easter, 56), 'Santísima Trinidad', 'Most Holy Trinity'],
+          [addDays(easter, 60), 'Corpus Christi (en muchos países, el domingo siguiente)', 'Corpus Christi (in many places, the following Sunday)'],
+          [addDays(easter, 68), 'Sagrado Corazón de Jesús', 'Sacred Heart of Jesus'],
+          [addDays(easter, 69), 'Inmaculado Corazón de María', 'Immaculate Heart of Mary'],
+          [addDays(advent, -7), 'Jesucristo, Rey del Universo', 'Christ the King'],
+          [advent, 'Primer domingo de Adviento', 'First Sunday of Advent'],
+          [holyFamily, 'Sagrada Familia', 'Holy Family']
+        ];
+        const holyWeekStart = addDays(easter, -7);
+        const octaveEnd = addDays(easter, 7);
+        [[new Date(y, 2, 19), 'San José', 'Saint Joseph', addDays(easter, -1)], [new Date(y, 2, 25), 'Anunciación', 'Annunciation', octaveEnd]].forEach(function (s) {
+          if (s[0] >= holyWeekStart && s[0] <= s[3]) {
+            list.push([s[0], 'Este año la solemnidad de ' + s[1] + ' se traslada en la liturgia', 'This year the solemnity of the ' + s[2] + ' is transferred in the liturgy']);
           }
-        }
-        const firstChunk = text.split(/[.;]/)[0].trim();
-        const compact = firstChunk || text;
-        if (compact.length <= 88) return compact;
-        return compact.slice(0, 85).trimEnd() + '...';
+        });
+        return list.map(function (f) { return { date: f[0], es: f[1], en: f[2] }; });
       }
+
+      function readDone() {
+        try { return JSON.parse(localStorage.getItem(DONE_KEY) || '{}') || {}; } catch (e) { return {}; }
+      }
+      function writeDone(map) {
+        try { localStorage.setItem(DONE_KEY, JSON.stringify(map)); } catch (e) { /* almacenamiento no disponible */ }
+      }
+      function dayKey(year, monthIndex, day) {
+        return year + '-' + String(monthIndex + 1).padStart(2, '0') + '-' + String(day).padStart(2, '0');
+      }
+
+      function loadMonth(key) {
+        if (!monthCache[key]) {
+          monthCache[key] = fetch('/data/meses/' + key + '.json').then(function (res) {
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            return res.json();
+          }).catch(function (err) {
+            delete monthCache[key];
+            throw err;
+          });
+        }
+        return monthCache[key];
+      }
+
+      function selectedYear() { return parseInt(el('yearSelect').value, 10); }
 
       function applyLang(newLang) {
         lang = newLang;
         localStorage.setItem(LANG_KEY, lang);
-        document.documentElement.lang = lang === 'en' ? 'en' : 'es';
-        const langLabel = el('langLabel');
-        if (langLabel) langLabel.textContent = lang === 'en' ? 'ES' : 'EN';
+        document.documentElement.lang = lang;
+        el('langLabel').textContent = lang === 'en' ? 'ES' : 'EN';
         document.querySelectorAll('[data-lang]').forEach(function (node) {
           node.style.display = node.getAttribute('data-lang') === lang ? '' : 'none';
         });
@@ -1322,29 +628,28 @@
 
       function buildYearSelect() {
         const select = el('yearSelect');
-        select.innerHTML = '';
         for (let y = currentYear - 1; y <= currentYear + 4; y++) {
-          const opt = document.createElement('option');
+          const opt = make('option', '', String(y));
           opt.value = String(y);
-          opt.textContent = String(y);
           if (y === currentYear) opt.selected = true;
           select.appendChild(opt);
         }
-        select.addEventListener('change', renderPlanner);
+        select.addEventListener('change', function () { openDay = null; renderPlanner(); });
       }
 
       function renderMonthGrid() {
         const grid = el('monthGrid');
         grid.innerHTML = '';
         months.forEach(function (m, idx) {
-          const btn = document.createElement('button');
+          const btn = make('button', 'month-btn' + (idx === selectedMonth ? ' active' : ''));
           btn.type = 'button';
-          btn.className = 'month-btn' + (idx === selectedMonth ? ' active' : '');
-          btn.innerHTML =
-            '<span class="name">' + (lang === 'es' ? m.es : m.en) + '</span>' +
-            '<span class="topic">' + (lang === 'es' ? m.topicEs : m.topicEn) + '</span>';
+          btn.setAttribute('aria-pressed', idx === selectedMonth ? 'true' : 'false');
+          btn.dataset.month = m.key;
+          btn.appendChild(make('span', 'name', lang === 'es' ? m.es : m.en));
+          btn.appendChild(make('span', 'topic', lang === 'es' ? m.topicEs : m.topicEn));
           btn.addEventListener('click', function () {
             selectedMonth = idx;
+            openDay = null;
             renderMonthGrid();
             renderPlanner();
           });
@@ -1352,144 +657,219 @@
         });
       }
 
-      function renderPlanner() {
-        const year = parseInt(el('yearSelect').value, 10);
-        const m = months[selectedMonth];
-        const totalDays = daysInMonth(year, selectedMonth);
-        const now = new Date();
-        const openDay = Math.min(now.getDate(), totalDays);
+      function updateProgress(year, total) {
+        const done = readDone();
+        let count = 0;
+        for (let d = 1; d <= total; d++) if (done[dayKey(year, selectedMonth, d)]) count++;
+        el('progress').hidden = false;
+        el('progressLabel').textContent = UI[lang].progress(count, total);
+        el('progressFill').style.width = Math.round((count / total) * 100) + '%';
+      }
 
-        el('plannerTitle').textContent = (lang === 'es' ? m.es : m.en) + ' ' + year;
-        el('plannerTopic').textContent = (lang === 'es' ? m.topicEs : m.topicEn);
+      function setOpen(row, open) {
+        row.classList.toggle('open', open);
+        row.querySelector('.day-toggle').setAttribute('aria-expanded', open ? 'true' : 'false');
+      }
 
-        let plan, method;
-        
-        if (m.key === 'julio') {
-          plan = lang === 'es' ? julyPlanEs : julyPlanEn;
-          method = lang === 'es' ? julyMethodEs : julyMethodEn;
-        } else if (m.key === 'enero') {
-          plan = lang === 'es' ? eneroPlanEs : eneroPlanEn;
-          method = lang === 'es' ? eneroMethodEs : eneroMethodEn;
-        } else if (m.key === 'agosto') {
-          plan = agostoPlanEs;
-          method = agostoMethodEs;
-        } else if (m.key === 'septiembre') {
-          plan = septiembrePlanEs;
-          method = lang === 'es' ? septiembreMethodEs : septiembreMethodEn;
-        } else if (m.key === 'octubre') {
-          plan = lang === 'es' ? octubrePlanEs : octubrePlanEn;
-          method = lang === 'es' ? octubreMethodEs : octubreMethodEn;
-        } else if (m.key === 'noviembre') {
-          plan = lang === 'es' ? noviembrePlanEs : noviembrePlanEn;
-          method = lang === 'es' ? noviembreMethodEs : noviembreMethodEn;
-        } else if (m.key === 'diciembre') {
-          plan = lang === 'es' ? diciembrePlanEs : diciembrePlanEn;
-          method = lang === 'es' ? diciembreMethodEs : diciembreMethodEn;
-        } else {
-          plan = genericPlan[lang];
-          method = genericMethod[lang];
-        }
-        
-        el('plannerNote').textContent = plan.note;
-        el('methodTitle').textContent = method.title;
-        const methodSteps = el('methodSteps');
-        methodSteps.innerHTML = '';
-        method.steps.forEach(function (s) {
-          const li = document.createElement('li');
-          li.textContent = s;
-          methodSteps.appendChild(li);
+      function renderMethod(info) {
+        const t = UI[lang];
+        el('methodBox').hidden = false;
+        el('methodTitle').textContent = info.method.title;
+        const steps = el('methodSteps');
+        steps.innerHTML = '';
+        info.method.steps.forEach(function (s) { steps.appendChild(make('li', '', s)); });
+        [['methodPrayer', t.offering, info.method.prayer], ['methodClosing', t.closing, info.method.closing]].forEach(function (p) {
+          const box = el(p[0]);
+          box.innerHTML = '';
+          box.appendChild(make('strong', '', p[1]));
+          box.appendChild(document.createTextNode(p[2]));
         });
-        el('methodPrayer').textContent = method.prayer;
-        el('methodClosing').textContent = method.closing;
+      }
 
+      function renderMovable(year, feasts) {
+        const inMonth = feasts.filter(function (f) { return f.date.getFullYear() === year && f.date.getMonth() === selectedMonth; });
+        const list = el('movableList');
+        list.innerHTML = '';
+        el('movableBox').hidden = inMonth.length === 0;
+        el('movableTitle').textContent = UI[lang].movable + year;
+        inMonth.forEach(function (f) {
+          const li = make('li');
+          li.appendChild(make('b', '', f.date.getDate() + ' ' + (lang === 'es' ? months[selectedMonth].es.toLowerCase() : months[selectedMonth].en) + ': '));
+          li.appendChild(document.createTextNode(f[lang]));
+          list.appendChild(li);
+        });
+        return inMonth;
+      }
+
+      function renderDays(data, year) {
+        const t = UI[lang];
+        const total = daysInMonth(year, selectedMonth);
+        const isCurrent = year === currentYear && selectedMonth === now.getMonth();
+        const todayNum = isCurrent ? now.getDate() : null;
+        const feasts = renderMovable(year, movableFeasts(year));
+        const done = readDone();
         const list = el('daysList');
         list.innerHTML = '';
-        for (let d = 1; d <= totalDays; d++) {
-          const text = plan.dayText(d);
-          const withReadings = appendReferencedReadings(text, lang);
-          const expandedText = appendReferencedPrayers(withReadings, lang);
-          const isOpen = d === openDay;
-          const row = document.createElement('div');
-          row.className = 'day-item' + (isOpen ? ' open' : '');
+        if (openDay === null) openDay = todayNum || 1;
 
-          const toggle = document.createElement('button');
+        for (let d = 1; d <= total; d++) {
+          const entry = data.days[d - 1];
+          const c = entry[lang];
+          const date = new Date(year, selectedMonth, d);
+          const key = dayKey(year, selectedMonth, d);
+          const row = make('article', 'day-item');
+          row.id = 'dia-' + d;
+          if (d === todayNum) row.classList.add('today');
+          if (done[key]) row.classList.add('done');
+
+          const toggle = make('button', 'day-toggle');
           toggle.type = 'button';
-          toggle.className = 'day-toggle';
-          toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-          toggle.setAttribute('aria-label', (lang === 'es' ? 'Dia ' : 'Day ') + d);
+          toggle.setAttribute('aria-controls', 'panel-' + d);
+          toggle.setAttribute('aria-expanded', 'false');
 
-          const head = document.createElement('div');
-          head.className = 'day-head';
+          const dateBox = make('span', 'day-date');
+          dateBox.appendChild(make('span', 'day-num', String(d)));
+          dateBox.appendChild(make('span', 'day-wd', date.toLocaleDateString(lang === 'es' ? 'es' : 'en', { weekday: 'short' }).replace('.', '')));
+          dateBox.setAttribute('aria-label', t.day + ' ' + d);
 
-          const dNum = document.createElement('div');
-          dNum.className = 'day-num';
-          dNum.textContent = (lang === 'es' ? 'Dia ' : 'Day ') + d;
+          const head = make('span', 'day-head');
+          head.appendChild(make('span', 'day-title', c.title));
+          const chips = make('span', 'day-chips');
+          if (d === todayNum) chips.appendChild(make('span', 'chip today-chip', t.today));
+          if (entry.feast) chips.appendChild(make('span', 'chip feast', entry.feast[lang]));
+          feasts.filter(function (f) { return f.date.getDate() === d; }).forEach(function (f) {
+            chips.appendChild(make('span', 'chip movable', f[lang]));
+          });
+          if (chips.childNodes.length) head.appendChild(chips);
 
-          const dSummary = document.createElement('div');
-          dSummary.className = 'day-summary';
-          dSummary.textContent = summarizeDayText(text, lang);
+          const side = make('span', 'day-side');
+          side.appendChild(make('span', 'day-done-mark', '✓'));
+          const icon = make('span', 'day-icon', '▾');
+          icon.setAttribute('aria-hidden', 'true');
+          side.appendChild(icon);
 
-          const icon = document.createElement('span');
-          icon.className = 'day-icon';
-          icon.textContent = '▾';
-
-          head.appendChild(dNum);
-          head.appendChild(dSummary);
+          toggle.appendChild(dateBox);
           toggle.appendChild(head);
-          toggle.appendChild(icon);
+          toggle.appendChild(side);
 
-          const panel = document.createElement('div');
-          panel.className = 'day-panel';
+          const panel = make('div', 'day-panel');
+          panel.id = 'panel-' + d;
+          panel.setAttribute('role', 'region');
+          panel.setAttribute('aria-label', t.day + ' ' + d + ': ' + c.title);
 
-          const dText = document.createElement('div');
-          dText.className = 'day-text';
-          dText.textContent = expandedText;
+          const verse = make('blockquote', 'day-verse');
+          verse.appendChild(make('p', '', c.verse));
+          verse.appendChild(make('cite', '', c.ref));
+          panel.appendChild(verse);
+          panel.appendChild(make('p', 'day-reflection', c.reflection));
 
-          panel.appendChild(dText);
+          const prayer = make('div', 'day-block day-prayer');
+          prayer.appendChild(make('h4', '', t.prayer));
+          prayer.appendChild(make('p', '', c.prayer));
+          panel.appendChild(prayer);
+
+          const action = make('div', 'day-block day-action');
+          action.appendChild(make('h4', '', t.step));
+          action.appendChild(make('p', '', c.action));
+          panel.appendChild(action);
+
+          const footer = make('div', 'day-footer');
+          const saint = entry.feast && saintPages[(selectedMonth + 1) + '-' + d];
+          if (saint) {
+            const a = make('a', 'day-saint-link', t.saint + entry.feast[lang]);
+            a.href = '/intercesor/?intercesor=' + saint;
+            footer.appendChild(a);
+          }
+          const doneBtn = make('button', 'done-btn', done[key] ? t.done : t.markDone);
+          doneBtn.type = 'button';
+          doneBtn.setAttribute('aria-pressed', done[key] ? 'true' : 'false');
+          doneBtn.addEventListener('click', function () {
+            const map = readDone();
+            const value = !map[key];
+            if (value) map[key] = 1; else delete map[key];
+            writeDone(map);
+            row.classList.toggle('done', value);
+            doneBtn.setAttribute('aria-pressed', value ? 'true' : 'false');
+            doneBtn.textContent = value ? t.done : t.markDone;
+            updateProgress(year, total);
+          });
+          footer.appendChild(doneBtn);
+          panel.appendChild(footer);
 
           toggle.addEventListener('click', function () {
-            const alreadyOpen = row.classList.contains('open');
-            list.querySelectorAll('.day-item.open').forEach(function (openRow) {
-              openRow.classList.remove('open');
-              const openToggle = openRow.querySelector('.day-toggle');
-              if (openToggle) openToggle.setAttribute('aria-expanded', 'false');
-            });
-            if (!alreadyOpen) {
-              row.classList.add('open');
-              toggle.setAttribute('aria-expanded', 'true');
+            const wasOpen = row.classList.contains('open');
+            list.querySelectorAll('.day-item.open').forEach(function (r) { setOpen(r, false); });
+            openDay = wasOpen ? -1 : d;
+            if (!wasOpen) {
+              setOpen(row, true);
               row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             }
           });
 
           row.appendChild(toggle);
           row.appendChild(panel);
+          if (d === openDay) setOpen(row, true);
           list.appendChild(row);
         }
 
-        const initiallyOpenRow = list.querySelector('.day-item.open');
-        if (initiallyOpenRow) {
-          initiallyOpenRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }
-
-        const linksTitle = el('monthLinksTitle');
-        if (linksTitle) {
-          linksTitle.textContent = lang === 'es' ? 'Recursos de la app para este mes' : 'In-app resources for this month';
-        }
-
-        const linksBox = el('monthLinks');
-        if (linksBox) {
-          linksBox.innerHTML = '';
-          const specific = monthSpecificLinks[m.key] && monthSpecificLinks[m.key][lang] ? monthSpecificLinks[m.key][lang] : [];
-          const allLinks = specific.concat(defaultMonthLinks[lang]);
-          allLinks.forEach(function (item) {
-            const a = document.createElement('a');
-            a.className = 'month-link';
-            a.href = item.href;
-            a.textContent = item.label;
-            linksBox.appendChild(a);
-          });
-        }
+        const todayBtn = el('todayBtn');
+        todayBtn.hidden = !isCurrent;
+        todayBtn.textContent = t.goToday;
+        updateProgress(year, total);
       }
+
+      function renderPlanner() {
+        const token = ++renderToken;
+        const year = selectedYear();
+        const m = months[selectedMonth];
+        el('plannerTitle').textContent = (lang === 'es' ? m.es : m.en) + ' ' + year;
+        el('plannerTopic').textContent = lang === 'es' ? m.topicEs : m.topicEn;
+        el('daysStatus').textContent = UI[lang].loading;
+        el('daysList').setAttribute('aria-busy', 'true');
+        renderLinks(m);
+
+        loadMonth(m.key).then(function (data) {
+          if (token !== renderToken) return;
+          const info = data[lang];
+          el('plannerIntro').textContent = info.intro;
+          renderMethod(info);
+          renderDays(data, year);
+          el('daysStatus').textContent = '';
+          el('daysList').removeAttribute('aria-busy');
+        }).catch(function () {
+          if (token !== renderToken) return;
+          el('daysList').innerHTML = '';
+          el('daysList').removeAttribute('aria-busy');
+          el('plannerIntro').textContent = '';
+          el('methodBox').hidden = true;
+          el('movableBox').hidden = true;
+          el('progress').hidden = true;
+          el('todayBtn').hidden = true;
+          el('daysStatus').textContent = UI[lang].error;
+        });
+      }
+
+      function renderLinks(m) {
+        el('monthLinksTitle').textContent = UI[lang].links;
+        const box = el('monthLinks');
+        box.innerHTML = '';
+        const specific = (monthSpecificLinks[m.key] || []).map(function (l) { return { href: l[0], label: lang === 'es' ? l[1] : l[2] }; });
+        specific.concat(defaultMonthLinks[lang]).forEach(function (item) {
+          const a = make('a', 'month-link', item.label);
+          a.href = item.href;
+          box.appendChild(a);
+        });
+      }
+
+      el('todayBtn').addEventListener('click', function () {
+        const row = el('dia-' + now.getDate());
+        if (!row) return;
+        el('daysList').querySelectorAll('.day-item.open').forEach(function (r) { setOpen(r, false); });
+        setOpen(row, true);
+        openDay = now.getDate();
+        row.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        row.querySelector('.day-toggle').focus({ preventScroll: true });
+      });
 
       el('langToggle').addEventListener('click', function () {
         applyLang(lang === 'es' ? 'en' : 'es');

@@ -6,12 +6,13 @@ Sitio web catolico bilingue (ES/EN) publicado en GitHub Pages.
 
 - Produccion activa en `main`.
 - Sitio estatico con PWA (`sw.js`) y contenido en JSON.
-- Cache actual del Service Worker: `tup-v299`.
+- Cache actual del Service Worker: `tup-v300`.
 - Adoración: 7 jornadas de 33 días en `adoracion/33dias-*/` (la más reciente: `33dias-enemigos`, para bendecir a los enemigos y entregarlos a Dios).
 - `vuelvo-al-padre/#oseas-14`: Oseas 14 completo (Biblia CEE / New American Bible), los pasos para volver (vv. 2-4), la respuesta de Dios (v. 5), una meditación y una oración propia que se puede compartir.
 - `vuelvo-al-padre/#validez-confesion`: respuesta directa sobre el temor de recaer, el arrepentimiento y el propósito sincero de enmienda.
 - Fuentes sin conexión: las páginas no enlazan a fuentes externas (Vaticano, etc.); los pasajes bíblicos, párrafos del Catecismo y extractos de documentos de la Iglesia citados se incluyen en desplegables `details.tup-ref`, marcados como «selección» cuando solo se reproduce una parte.
-- Archivos de datos JSON: 106 en `data/`.
+- `meses/`: calendario devocional con 366 días propios (ES/EN), uno por fecha, en `data/meses/<mes>.json`. Cada día trae su versículo (Biblia CEE / New American Bible), reflexión, oración y un paso concreto; ningún título, reflexión, oración ni paso se repite en el año. La página calcula la Pascua y las fiestas móviles del año elegido, muestra el 29 de febrero solo en años bisiestos, guarda en el dispositivo los días marcados como vividos y funciona sin conexión.
+- Archivos de datos JSON: 118 en `data/` (incluye los 12 meses de `data/meses/`).
 - Historias para ninos: fuente principal en `data/ninos-cuentos.json`.
 - Wake Lock API activo en todas las paginas con TTS (evita standby durante audio).
 
