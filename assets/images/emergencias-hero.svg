@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-labelledby="emT">
+  <title id="emT">Faro con una cruz que ilumina las olas en la tormenta / Lighthouse with a cross shining over the stormy waves</title>
+  <defs>
+    <radialGradient id="emGlow" cx="50%" cy="34%" r="50%">
+      <stop offset="0%" stop-color="#fff8dc" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#e8c97a" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="emLamp" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#fff3a0" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f5a623" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="emBeamR" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fff3a0" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#fff3a0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="emBeamL" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0%" stop-color="#fff3a0" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#fff3a0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="emTower" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fff8dc"/>
+      <stop offset="100%" stop-color="#d9cfae"/>
+    </linearGradient>
+    <linearGradient id="emGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8c97a"/>
+      <stop offset="100%" stop-color="#c9a84c"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="120" cy="100" r="96" fill="url(#emGlow)"/>
+
+  <!-- Beams -->
+  <path d="M120 70 L236 34 L236 112 Z" fill="url(#emBeamR)"/>
+  <path d="M120 70 L4 44 L4 98 Z" fill="url(#emBeamL)"/>
+
+  <!-- Cross atop -->
+  <line x1="120" y1="12" x2="120" y2="40" stroke="#e8c97a" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="111" y1="21" x2="129" y2="21" stroke="#e8c97a" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Dome and lantern -->
+  <path d="M104 52 C104 44 112 38 120 38 C128 38 136 44 136 52 Z" fill="url(#emGold)" stroke="#fff3a0" stroke-width="1"/>
+  <rect x="106" y="52" width="28" height="26" rx="2" fill="#142447" stroke="#c9a84c" stroke-width="2"/>
+  <circle cx="120" cy="65" r="20" fill="url(#emLamp)"/>
+  <line x1="120" y1="53" x2="120" y2="77" stroke="#c9a84c" stroke-width="1.2" opacity="0.7"/>
+  <rect x="100" y="78" width="40" height="5" rx="1.5" fill="url(#emGold)"/>
+  <path d="M100 83 L140 83" stroke="#fff3a0" stroke-width="1" opacity="0.6"/>
+
+  <!-- Tower -->
+  <path d="M106 83 L134 83 L144 178 L96 178 Z" fill="url(#emTower)" stroke="#c9a84c" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M104 104 L136 104 L138 120 L102 120 Z" fill="#c9a84c" opacity="0.85"/>
+  <path d="M100 140 L140 140 L142 156 L98 156 Z" fill="#c9a84c" opacity="0.85"/>
+  <path d="M116 166 L116 160 A4 4 0 0 1 124 160 L124 178 L116 178 Z" fill="#142447"/>
+
+  <!-- Rock -->
+  <path d="M70 196 C76 182 88 176 100 176 L142 176 C156 176 166 184 172 196 Z" fill="#142447" stroke="#4a6fa5" stroke-width="1.5" stroke-linejoin="round"/>
+
+  <!-- Waves -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M8 196 C20 184 32 184 40 192 C46 198 56 198 62 190" stroke="#7fa3d6" stroke-width="3"/>
+    <path d="M178 192 C186 182 198 182 206 190 C212 196 222 196 232 186" stroke="#7fa3d6" stroke-width="3"/>
+    <path d="M12 212 C28 202 44 202 60 210 C76 218 92 218 108 210 C124 202 140 202 156 210 C172 218 188 218 204 210 C214 205 222 204 230 206" stroke="#4a6fa5" stroke-width="3"/>
+    <path d="M28 228 C44 220 60 220 76 226 C92 232 108 232 124 226 C140 220 156 220 172 226 C188 232 204 230 214 226" stroke="#4a6fa5" stroke-width="2.5" opacity="0.7"/>
+    <path d="M40 192 C44 188 48 188 50 190" stroke="#fff8dc" stroke-width="1.5" opacity="0.7"/>
+    <path d="M206 190 C210 186 214 186 216 188" stroke="#fff8dc" stroke-width="1.5" opacity="0.7"/>
+  </g>
+  <path d="M96 208 C110 204 130 204 144 208" stroke="#fff3a0" stroke-width="2" opacity="0.55" stroke-linecap="round" fill="none"/>
+</svg>

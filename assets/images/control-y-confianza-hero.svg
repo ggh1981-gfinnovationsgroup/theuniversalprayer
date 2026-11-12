@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-labelledby="ccT">
+  <title id="ccT">Barca con mástil en forma de cruz en la tormenta y luz que rompe las nubes / Boat with a cross-shaped mast in the storm as light breaks through the clouds (Mc 4)</title>
+  <defs>
+    <radialGradient id="ccGlow" cx="50%" cy="22%" r="55%">
+      <stop offset="0%" stop-color="#fff8dc" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#e8c97a" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ccBeam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff3a0" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#fff3a0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ccCloud" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b4a6b"/>
+      <stop offset="100%" stop-color="#142447"/>
+    </linearGradient>
+    <linearGradient id="ccHull" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8c97a"/>
+      <stop offset="100%" stop-color="#8a6d3a"/>
+    </linearGradient>
+    <linearGradient id="ccMast" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e8c97a"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="120" cy="100" r="98" fill="url(#ccGlow)"/>
+
+  <!-- Light breaking through -->
+  <path d="M108 40 L132 40 L176 176 L64 176 Z" fill="url(#ccBeam)" opacity="0.6"/>
+  <g stroke="#fff3a0" stroke-linecap="round" stroke-width="2" opacity="0.5">
+    <line x1="120" y1="8" x2="120" y2="22"/>
+    <line x1="100" y1="12" x2="104" y2="24"/>
+    <line x1="140" y1="12" x2="136" y2="24"/>
+  </g>
+
+  <!-- Clouds parting -->
+  <path d="M6 64 C4 50 16 40 28 44 C32 30 50 26 60 36 C68 24 88 26 92 40 C102 40 106 50 100 58 C96 64 88 66 80 64 L14 64 C10 64 7 64 6 64 Z" fill="url(#ccCloud)" stroke="#7fa3d6" stroke-width="1.2" stroke-opacity="0.6"/>
+  <path d="M234 64 C236 50 224 40 212 44 C208 30 190 26 180 36 C172 24 152 26 148 40 C138 40 134 50 140 58 C144 64 152 66 160 64 L226 64 C230 64 233 64 234 64 Z" fill="url(#ccCloud)" stroke="#7fa3d6" stroke-width="1.2" stroke-opacity="0.6"/>
+  <path d="M96 42 C100 36 106 34 110 36" stroke="#fff3a0" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M144 42 C140 36 134 34 130 36" stroke="#fff3a0" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Cross-shaped mast -->
+  <rect x="117" y="72" width="6" height="86" rx="2.5" fill="url(#ccMast)" stroke="#c9a84c" stroke-width="0.8"/>
+  <rect x="100" y="90" width="40" height="6" rx="2.5" fill="url(#ccMast)" stroke="#c9a84c" stroke-width="0.8"/>
+  <path d="M123 98 L123 146 L148 146 Z" fill="#fff8dc" opacity="0.85" stroke="#c9a84c" stroke-width="1"/>
+
+  <!-- Boat -->
+  <path d="M70 156 L170 156 C166 170 154 178 140 178 L100 178 C86 178 74 170 70 156 Z" fill="url(#ccHull)" stroke="#fff3a0" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M78 164 L162 164" stroke="#fff3a0" stroke-width="1" opacity="0.6"/>
+
+  <!-- Stormy waves (sides) and calmer water near the boat -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M6 186 C14 166 30 160 40 172 C44 178 40 184 34 182" stroke="#7fa3d6" stroke-width="3"/>
+    <path d="M234 186 C226 166 210 160 200 172 C196 178 200 184 206 182" stroke="#7fa3d6" stroke-width="3"/>
+    <path d="M6 196 C24 184 42 184 58 192 C74 200 88 186 104 184 C116 182 124 182 136 184 C152 186 166 200 182 192 C198 184 216 184 234 196" stroke="#4a6fa5" stroke-width="3"/>
+    <path d="M20 214 C40 204 60 204 80 212 C100 220 140 220 160 212 C180 204 200 204 220 214" stroke="#4a6fa5" stroke-width="2.5" opacity="0.75"/>
+    <path d="M50 230 C80 222 160 222 190 230" stroke="#4a6fa5" stroke-width="2" opacity="0.5"/>
+    <path d="M100 190 C112 187 128 187 140 190" stroke="#fff3a0" stroke-width="2" opacity="0.6"/>
+  </g>
+</svg>

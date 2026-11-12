@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-labelledby="vpT">
+  <title id="vpT">Puerta abierta de la casa del Padre con luz sobre el camino de regreso / Open door of the Father's house with light on the path home</title>
+  <defs>
+    <radialGradient id="vpGlow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#fff8dc" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#e8c97a" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vpDoor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#fff3a0"/>
+      <stop offset="100%" stop-color="#f5a623"/>
+    </linearGradient>
+    <linearGradient id="vpSpill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff3a0" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#fff3a0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="vpPath" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#fff3a0" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="vpLeaf" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8a6d3a"/>
+      <stop offset="100%" stop-color="#c9a84c"/>
+    </linearGradient>
+    <filter id="vpBlur" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <circle cx="120" cy="104" r="104" fill="url(#vpGlow)"/>
+
+  <g stroke="#e8c97a" stroke-linecap="round" stroke-width="2" opacity="0.45">
+    <line x1="120" y1="8" x2="120" y2="20"/>
+    <line x1="80" y1="18" x2="86" y2="29"/>
+    <line x1="160" y1="18" x2="154" y2="29"/>
+    <line x1="46" y1="48" x2="57" y2="54"/>
+    <line x1="194" y1="48" x2="183" y2="54"/>
+  </g>
+
+  <!-- House front -->
+  <path d="M56 152 L56 82 L120 40 L184 82 L184 152" fill="#142447" fill-opacity="0.55" stroke="#c9a84c" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M48 86 L120 36 L192 86" fill="none" stroke="#e8c97a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Small cross on roof -->
+  <line x1="120" y1="14" x2="120" y2="36" stroke="#e8c97a" stroke-width="3" stroke-linecap="round"/>
+  <line x1="113" y1="21" x2="127" y2="21" stroke="#e8c97a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Light glow from door -->
+  <path d="M96 152 L96 96 A24 24 0 0 1 144 96 L144 152 Z" fill="#fff3a0" filter="url(#vpBlur)" opacity="0.8"/>
+  <!-- Doorway -->
+  <path d="M96 152 L96 96 A24 24 0 0 1 144 96 L144 152 Z" fill="url(#vpDoor)" stroke="#c9a84c" stroke-width="2"/>
+  <!-- Open door leaf -->
+  <path d="M144 96 L160 88 L160 160 L144 152 Z" fill="#8a6d3a" stroke="#c9a84c" stroke-width="1.5" stroke-linejoin="round"/>
+  <circle cx="155" cy="125" r="1.8" fill="#fff3a0"/>
+
+  <!-- Light spilling on the ground -->
+  <path d="M96 152 L144 152 L176 196 L64 196 Z" fill="url(#vpSpill)" opacity="0.6"/>
+
+  <!-- Winding path home -->
+  <path d="M104 152 L136 152 C150 168 112 176 128 196 C138 210 152 222 168 236 L104 236 C98 222 96 210 100 198 C106 182 92 168 104 152 Z" fill="url(#vpPath)"/>
+  <path d="M104 152 C92 168 106 182 100 198 C96 210 98 222 104 236" fill="none" stroke="#e8c97a" stroke-width="1.5" opacity="0.7" stroke-linecap="round"/>
+  <path d="M136 152 C150 168 112 176 128 196 C138 210 152 222 168 236" fill="none" stroke="#e8c97a" stroke-width="1.5" opacity="0.7" stroke-linecap="round"/>
+
+  <!-- Ground line and grasses -->
+  <path d="M30 152 L210 152" stroke="#c9a84c" stroke-width="1.5" opacity="0.5" stroke-linecap="round"/>
+  <g stroke="url(#vpLeaf)" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.8">
+    <path d="M60 176 C60 168 58 164 54 160"/>
+    <path d="M64 176 C64 168 66 164 70 160"/>
+    <path d="M176 186 C176 178 174 174 170 170"/>
+    <path d="M180 186 C180 178 182 174 186 170"/>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img"><title>Medalla Milagrosa, reverso / Miraculous Medal, reverse</title>
+<defs><radialGradient id="mmGlow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#fff8dc" stop-opacity="0.7"/><stop offset="55%" stop-color="#e8c97a" stop-opacity="0.22"/><stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/></radialGradient><linearGradient id="mmGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#fff3a0"/><stop offset="50%" stop-color="#e8c97a"/><stop offset="100%" stop-color="#c9a84c"/></linearGradient>
+<radialGradient id="mmFace" cx="45%" cy="40%" r="65%"><stop offset="0%" stop-color="#fff8dc"/><stop offset="65%" stop-color="#f1d995"/><stop offset="100%" stop-color="#c9a84c"/></radialGradient>
+<linearGradient id="mmFlame" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#f5a623"/><stop offset="100%" stop-color="#fff3a0"/></linearGradient></defs>
+<ellipse cx="120" cy="120" rx="112" ry="118" fill="url(#mmGlow)"/>
+<g fill="url(#mmGold)" stroke="#c9a84c" stroke-width="0.5"><polygon points="120,7.5 121.6,11.8 126.2,12 122.6,14.8 123.8,19.3 120,16.7 116.2,19.3 117.4,14.8 113.8,12 118.4,11.8"/><polygon points="161,21.7 162.6,26 167.2,26.2 163.6,29 164.8,33.5 161,30.9 157.2,33.5 158.4,29 154.8,26.2 159.4,26"/><polygon points="191,60.5 192.6,64.8 197.2,65 193.6,67.8 194.8,72.3 191,69.7 187.2,72.3 188.4,67.8 184.8,65 189.4,64.8"/><polygon points="202,113.5 203.6,117.8 208.2,118 204.6,120.8 205.8,125.3 202,122.7 198.2,125.3 199.4,120.8 195.8,118 200.4,117.8"/><polygon points="191,166.5 192.6,170.8 197.2,171 193.6,173.8 194.8,178.3 191,175.7 187.2,178.3 188.4,173.8 184.8,171 189.4,170.8"/><polygon points="161,205.3 162.6,209.6 167.2,209.8 163.6,212.6 164.8,217.1 161,214.5 157.2,217.1 158.4,212.6 154.8,209.8 159.4,209.6"/><polygon points="120,219.5 121.6,223.8 126.2,224 122.6,226.8 123.8,231.3 120,228.7 116.2,231.3 117.4,226.8 113.8,224 118.4,223.8"/><polygon points="79,205.3 80.6,209.6 85.2,209.8 81.6,212.6 82.8,217.1 79,214.5 75.2,217.1 76.4,212.6 72.8,209.8 77.4,209.6"/><polygon points="49,166.5 50.6,170.8 55.2,171 51.6,173.8 52.8,178.3 49,175.7 45.2,178.3 46.4,173.8 42.8,171 47.4,170.8"/><polygon points="38,113.5 39.6,117.8 44.2,118 40.6,120.8 41.8,125.3 38,122.7 34.2,125.3 35.4,120.8 31.8,118 36.4,117.8"/><polygon points="49,60.5 50.6,64.8 55.2,65 51.6,67.8 52.8,72.3 49,69.7 45.2,72.3 46.4,67.8 42.8,65 47.4,64.8"/><polygon points="79,21.7 80.6,26 85.2,26.2 81.6,29 82.8,33.5 79,30.9 75.2,33.5 76.4,29 72.8,26.2 77.4,26"/></g>
+<ellipse cx="120" cy="120" rx="64" ry="88" fill="url(#mmGold)" stroke="#c9a84c" stroke-width="1.5"/>
+<ellipse cx="120" cy="120" rx="57" ry="81" fill="url(#mmFace)" stroke="#fff8dc" stroke-width="1"/>
+<ellipse cx="120" cy="120" rx="53" ry="77" fill="none" stroke="#c9a84c" stroke-width="0.8" opacity="0.7"/>
+<g fill="none" stroke="#142447" stroke-linecap="round" stroke-linejoin="round">
+<path d="M120,52 L120,96 M110,62 L130,62" stroke-width="4"/>
+<path d="M92,96 L148,96" stroke-width="3.5"/>
+<path d="M96,140 L96,104 L120,130 L144,104 L144,140" stroke-width="5"/>
+<path d="M90,140 L102,140 M138,140 L150,140" stroke-width="2.5"/></g>
+<path d="M100,166 C95,161 98,156 100,152 C102,156 105,161 100,166 Z M140,166 C135,161 138,156 140,152 C142,156 145,161 140,166 Z" fill="url(#mmFlame)" stroke="#f5a623" stroke-width="0.5"/>
+<path d="M100,186 C86,177 85,164 93,164 C97,164 100,167 100,169 C100,167 103,164 107,164 C115,164 114,177 100,186 Z" fill="#8b1e2d" stroke="#5a1020" stroke-width="0.8"/>
+<path d="M140,186 C126,177 125,164 133,164 C137,164 140,167 140,169 C140,167 143,164 147,164 C155,164 154,177 140,186 Z" fill="#8b1e2d" stroke="#5a1020" stroke-width="0.8"/>
+<ellipse cx="100" cy="171" rx="14" ry="3" fill="none" stroke="#3b5a2a" stroke-width="1.6"/>
+<path d="M88,172 l-1.6,3 M92,168 l-1.6,-3 M96,172 l-1.6,3 M100,168 l-1.6,-3 M104,172 l-1.6,3 M108,168 l-1.6,-3 M112,172 l-1.6,3 " fill="none" stroke="#3b5a2a" stroke-width="0.9" stroke-linecap="round"/>
+<path d="M126,188 L156,160 M150,162 L156,168" fill="none" stroke="#142447" stroke-width="2" stroke-linecap="round"/>
+</svg>

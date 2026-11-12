@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-labelledby="tnT">
+  <title id="tnT">Escudo de la fe con la cruz que apaga las flechas / Shield of faith with the cross quenching the arrows (Ef 6,16)</title>
+  <defs>
+    <radialGradient id="tnGlow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#fff8dc" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#e8c97a" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tnShield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff3a0"/>
+      <stop offset="45%" stop-color="#e8c97a"/>
+      <stop offset="100%" stop-color="#c9a84c"/>
+    </linearGradient>
+    <linearGradient id="tnInner" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c3060"/>
+      <stop offset="100%" stop-color="#0a1327"/>
+    </linearGradient>
+    <linearGradient id="tnCross" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fff3a0"/>
+    </linearGradient>
+    <filter id="tnBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <circle cx="120" cy="112" r="104" fill="url(#tnGlow)"/>
+
+  <g stroke="#e8c97a" stroke-linecap="round" opacity="0.45" stroke-width="2">
+    <line x1="120" y1="8" x2="120" y2="26"/>
+    <line x1="84" y1="14" x2="90" y2="30"/>
+    <line x1="156" y1="14" x2="150" y2="30"/>
+    <line x1="54" y1="32" x2="64" y2="44"/>
+    <line x1="186" y1="32" x2="176" y2="44"/>
+  </g>
+
+  <!-- Shield -->
+  <path d="M120 40 C146 50 166 52 182 50 C184 112 166 160 120 196 C74 160 56 112 58 50 C74 52 94 50 120 40 Z" fill="url(#tnShield)" stroke="#fff8dc" stroke-width="2"/>
+  <path d="M120 52 C142 60 158 62 170 61 C170 112 156 150 120 180 C84 150 70 112 70 61 C82 62 98 60 120 52 Z" fill="url(#tnInner)" stroke="#c9a84c" stroke-width="1.5"/>
+
+  <!-- Luminous cross -->
+  <g filter="url(#tnBlur)" opacity="0.9">
+    <rect x="113" y="68" width="14" height="96" rx="5" fill="#fff3a0"/>
+    <rect x="86" y="94" width="68" height="14" rx="5" fill="#fff3a0"/>
+  </g>
+  <rect x="115" y="70" width="10" height="92" rx="4" fill="url(#tnCross)"/>
+  <rect x="88" y="96" width="64" height="10" rx="4" fill="url(#tnCross)"/>
+  <circle cx="120" cy="101" r="4" fill="#f5a623" opacity="0.8"/>
+
+
+  <defs>
+    <g id="tnHead" stroke="#a0a6ba" stroke-width="0.8" stroke-linejoin="round">
+      <path d="M0 -1.8 L16 -1.8 L18 0 L16 1.8 L0 1.8 L-2 0.6 L0 -0.4 L-2 -1.2 Z" fill="#4a5068"/>
+      <path d="M16 -6 L28 0 L16 6 L18 0 Z" fill="#4a5068"/>
+    </g>
+    <g id="tnTail" stroke="#a0a6ba" stroke-width="0.8" stroke-linejoin="round">
+      <path d="M0 -1.8 L18 -1.8 L20 -0.6 L18 0.4 L20 1.2 L18 1.8 L0 1.8 Z" fill="#4a5068"/>
+      <path d="M-2 0 L-8 -7 L4 -7 L8 -1.8 Z M-2 0 L-8 7 L4 7 L8 1.8 Z" fill="#5d6480"/>
+    </g>
+  </defs>
+
+  <!-- Broken arrows falling away from the shield -->
+  <use href="#tnTail" transform="translate(22 112) rotate(-28) scale(1.5)"/>
+  <use href="#tnHead" transform="translate(34 146) rotate(62) scale(1.5)"/>
+  <use href="#tnTail" transform="translate(212 74) rotate(200) scale(1.5)"/>
+  <use href="#tnHead" transform="translate(204 120) rotate(112) scale(1.5)"/>
+
+  <!-- Sparks where the arrows are quenched -->
+  <g stroke="#fff3a0" stroke-width="1.8" stroke-linecap="round" opacity="0.9">
+    <line x1="50" y1="100" x2="42" y2="96"/>
+    <line x1="50" y1="108" x2="41" y2="110"/>
+    <line x1="53" y1="116" x2="47" y2="123"/>
+    <line x1="190" y1="86" x2="198" y2="82"/>
+    <line x1="190" y1="94" x2="199" y2="96"/>
+    <line x1="187" y1="102" x2="193" y2="109"/>
+  </g>
+</svg>

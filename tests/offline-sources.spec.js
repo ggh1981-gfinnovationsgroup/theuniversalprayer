@@ -4,7 +4,7 @@ const path = require('path');
 const { test, expect } = require('@playwright/test');
 
 const ROOT = path.resolve(__dirname, '..');
-const SOURCE_PAGES = ['index.html', 'vuelvo-al-padre/index.html', 'maria/index.html', 'novena-sagrado-corazon/index.html', 'tentaciones/index.html'];
+const SOURCE_PAGES = ['index.html', 'vuelvo-al-padre/index.html', 'maria/index.html', 'novena-sagrado-corazon/index.html', 'tentaciones/index.html', 'espiritu/index.html'];
 
 test.beforeEach(async ({ context }) => {
   await context.route(/^https?:\/\/(?!127\.0\.0\.1)/, route => route.abort());

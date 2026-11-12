@@ -3,7 +3,7 @@
    Offline support for precached and previously cached resources
    ===================================================== */
 
-const CACHE = 'tup-v300';
+const CACHE = 'tup-v301';
 const CRITICAL_CORE_URLS = new Set([
   '/assets/js/main.js',
   '/assets/js/menu.js',
@@ -266,6 +266,26 @@ const PRECACHE_URLS = [
   '/desierto/33dias/',
   '/desierto/33dias/index.html',
   '/assets/images/desierto-33-hero.svg',
+  '/assets/images/bella-virtud-hero.svg',
+  '/assets/images/control-y-confianza-hero.svg',
+  '/assets/images/diablo-hero.svg',
+  '/assets/images/dopamina-hero.svg',
+  '/assets/images/emergencias-hero.svg',
+  '/assets/images/insiste-y-liberate-hero.svg',
+  '/assets/images/maria-hero.svg',
+  '/assets/images/medalla-milagrosa-hero.svg',
+  '/assets/images/medalla-san-benito-hero.svg',
+  '/assets/images/meses-hero.svg',
+  '/assets/images/musica-hero.svg',
+  '/assets/images/nomascastigo-hero.svg',
+  '/assets/images/novena-sagrado-corazon-hero.svg',
+  '/assets/images/oraciones-hero.svg',
+  '/assets/images/renacer-en-cristo-hero.svg',
+  '/assets/images/rosario-hero.svg',
+  '/assets/images/salmos-diarios-hero.svg',
+  '/assets/images/tentaciones-hero.svg',
+  '/assets/images/viacrucis-hero.svg',
+  '/assets/images/vuelvo-al-padre-hero.svg',
   '/desierto/33dias/svgs/silencio.svg',
   '/desierto/33dias/svgs/palabra.svg',
   '/desierto/33dias/svgs/oracion.svg',

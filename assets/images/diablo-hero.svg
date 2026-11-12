@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Victoria de Cristo sobre el mal / Christ’s victory over evil">
+<title>Victoria de Cristo sobre el mal / Christ’s victory over evil</title>
+<defs><radialGradient id="diaGlow"><stop offset="0" stop-color="#fff8dc" stop-opacity="0.95"/><stop offset="0.45" stop-color="#e8c97a" stop-opacity="0.38"/><stop offset="1" stop-color="#c9a84c" stop-opacity="0"/></radialGradient><linearGradient id="diaGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3a0"/><stop offset="0.5" stop-color="#e8c97a"/><stop offset="1" stop-color="#c9a84c"/></linearGradient><linearGradient id="diaBlade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff3a0"/><stop offset="0.5" stop-color="#e8c97a"/><stop offset="1" stop-color="#c9a84c"/></linearGradient>
+<linearGradient id="diaSnake" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#142447"/><stop offset="0.5" stop-color="#3a4a6b"/><stop offset="1" stop-color="#142447"/></linearGradient></defs>
+<circle cx="120" cy="58" r="66" fill="url(#diaGlow)"/>
+<g stroke="#e8c97a" stroke-width="1.4" stroke-linecap="round" opacity="0.45"><line x1="156" y1="50" x2="182" y2="50"/><line x1="154.2" y1="61.1" x2="168.4" y2="65.7"/><line x1="149.1" y1="71.2" x2="170.2" y2="86.4"/><line x1="90.9" y1="71.2" x2="69.8" y2="86.4"/><line x1="85.8" y1="61.1" x2="71.6" y2="65.7"/><line x1="84" y1="50" x2="58" y2="50"/><line x1="85.8" y1="38.9" x2="71.6" y2="34.3"/><line x1="90.9" y1="28.8" x2="69.8" y2="13.6"/><line x1="98.8" y1="20.9" x2="90.1" y2="8.9"/><line x1="108.9" y1="15.8" x2="100.8" y2="-9"/><line x1="120" y1="14" x2="120" y2="-0.8"/><line x1="131.1" y1="15.8" x2="139.2" y2="-9"/><line x1="141.2" y1="20.9" x2="149.9" y2="8.9"/><line x1="149.1" y1="28.8" x2="170.2" y2="13.6"/><line x1="154.2" y1="38.9" x2="168.4" y2="34.3"/></g>
+<g>
+<rect x="114" y="10" width="12" height="76" rx="3" fill="url(#diaGold)" stroke="#fff8dc" stroke-width="1"/>
+<rect x="94" y="30" width="52" height="12" rx="3" fill="url(#diaGold)" stroke="#fff8dc" stroke-width="1"/>
+<circle cx="120" cy="36" r="4" fill="#fff8dc"/>
+</g>
+<ellipse cx="120" cy="212" rx="78" ry="14" fill="#e8c97a" opacity="0.22"/>
+<ellipse cx="120" cy="212" rx="50" ry="8" fill="#fff8dc" opacity="0.18"/>
+<g stroke-linecap="round" fill="none">
+<path d="M80 209 C70 213 60 212 52 206" stroke="#142447" stroke-width="7"/>
+<path d="M80 209 C70 213 60 212 52 206" stroke="#5a6a8c" stroke-width="1" opacity="0.8"/>
+<ellipse cx="118" cy="207" rx="38" ry="9" stroke="#0a1327" stroke-width="9"/>
+<ellipse cx="118" cy="207" rx="38" ry="9" stroke="url(#diaSnake)" stroke-width="6.5"/>
+<ellipse cx="120" cy="202" rx="25" ry="6" stroke="#0a1327" stroke-width="8"/>
+<ellipse cx="120" cy="202" rx="25" ry="6" stroke="url(#diaSnake)" stroke-width="5.5"/>
+<path d="M155 208 C164 212 172 214 180 212" stroke="#0a1327" stroke-width="8"/>
+<path d="M155 208 C164 212 172 214 180 212" stroke="#3a4a6b" stroke-width="5.5"/>
+</g>
+<path d="M178 208 C186 206 194 208 195 212 C194 216 186 217 178 215 Z" fill="#2a3a5c" stroke="#0a1327" stroke-width="1.2"/>
+<path d="M98 205 Q120 199 142 205" stroke="#c9a84c" stroke-width="0.8" fill="none" opacity="0.45"/>
+<g>
+<rect x="117" y="104" width="6" height="24" rx="2" fill="#c9a84c" stroke="#fff8dc" stroke-width="0.6"/>
+<circle cx="120" cy="101" r="5" fill="url(#diaGold)" stroke="#fff8dc" stroke-width="0.8"/>
+<path d="M92 129 Q120 124 148 129 L148 134 Q120 130 92 134 Z" fill="url(#diaGold)" stroke="#fff8dc" stroke-width="0.6"/>
+<circle cx="92" cy="131.5" r="3" fill="#e8c97a"/><circle cx="148" cy="131.5" r="3" fill="#e8c97a"/>
+<path d="M113 134 L127 134 L125 192 L120 203 L115 192 Z" fill="url(#diaBlade)" stroke="#c9a84c" stroke-width="0.8"/>
+<line x1="120" y1="137" x2="120" y2="196" stroke="#fff8dc" stroke-width="1" opacity="0.9"/>
+</g>
+<circle cx="120" cy="203" r="7" fill="#fff3a0" opacity="0.35"/>
+<g fill="#fff8dc" opacity="0.75"><circle cx="56" cy="96" r="1.6"/><circle cx="186" cy="92" r="1.6"/><circle cx="44" cy="150" r="1.2"/><circle cx="198" cy="150" r="1.2"/></g>
+</svg>

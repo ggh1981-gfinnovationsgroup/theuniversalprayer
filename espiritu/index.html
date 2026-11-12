@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Espíritu Santo | The Universal Prayer</title>
-  <meta name="description" content="Guía para hablarle al Espíritu Santo: cómo invocarlo, qué pedirle y cómo orar por sus siete dones y carismas." />
+  <meta name="description" content="El Espíritu Santo es Dios: cómo hablarle como al Padre y al Hijo, oraciones de la Iglesia, su acción en la Biblia y los sacramentos, frutos, dones y carismas." />
   <meta name="theme-color" content="#c9a84c" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Espíritu Santo" />
@@ -27,6 +27,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/styles.css" />
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(error => {
+          console.error('No se pudo registrar el service worker:', error);
+        });
+      });
+    }
+  </script>
   <style>
     /* ── Page-specific overrides ── */
     .esp-hero {
@@ -233,6 +242,28 @@
     .esp-speech-item strong {
       color: var(--gold-light);
     }
+    .esp-toc { margin: 0 0 2.5rem; padding: 1rem 1.1rem; border: 1px solid rgba(201,168,76,0.2); border-radius: 12px; background: rgba(201,168,76,0.04); }
+    .esp-toc-label { font-family: var(--font-sans); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin: 0 0 0.6rem; }
+    .esp-toc-links { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+    .esp-toc-links a { font-family: var(--font-sans); font-size: 0.8rem; color: rgba(255,255,255,0.82); text-decoration: none; border: 1px solid rgba(201,168,76,0.25); border-radius: 999px; padding: 0.3em 0.8em; }
+    .esp-toc-links a:hover, .esp-toc-links a:focus-visible { border-color: var(--gold); color: var(--gold-light); }
+    .esp-section { scroll-margin-top: 80px; }
+    .esp-section p { font-family: var(--font-serif); color: rgba(255,255,255,0.85); line-height: 1.8; }
+    .esp-section a { color: var(--gold-light); }
+    .esp-lead { font-size: 1.04rem; }
+    .esp-lead strong, .esp-section p strong { color: var(--gold-light); }
+    .esp-note { font-family: var(--font-sans) !important; font-size: 0.82rem; color: rgba(255,255,255,0.6) !important; margin-top: 1rem; }
+    .esp-source-note { font-family: var(--font-sans) !important; font-size: 0.78rem; color: rgba(255,255,255,0.55) !important; margin: 0.6rem 0 0; }
+    .esp-practical-card .tup-ref { margin-top: 0.8rem; }
+    .esp-practical-card p.esp-practical-text { font-family: var(--font-sans); }
+    .esp-timeline { list-style: none; margin: 1.25rem 0; padding: 0 0 0 1.1rem; border-left: 2px solid rgba(201,168,76,0.3); display: grid; gap: 1.1rem; }
+    .esp-tl-item { position: relative; }
+    .esp-tl-item::before { content: ""; position: absolute; left: calc(-1.1rem - 6px); top: 0.35rem; width: 10px; height: 10px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 10px rgba(201,168,76,0.6); }
+    .esp-tl-kicker { display: block; font-family: var(--font-serif); color: var(--gold-light); font-size: 1.02rem; }
+    .esp-tl-item p { margin: 0.25rem 0 0.4rem; }
+    .esp-fruits { list-style: none; padding: 0; margin: 1rem 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(130px, 100%), 1fr)); gap: 0.5rem; }
+    .esp-fruits li { text-align: center; font-family: var(--font-serif); color: var(--gold-light); background: rgba(201,168,76,0.07); border: 1px solid rgba(201,168,76,0.2); border-radius: 999px; padding: 0.4em 0.6em; text-transform: capitalize; }
+    .esp-creed { border-left-color: var(--gold); }
   </style>
 </head>
 <body>
@@ -260,33 +291,212 @@
 
     <img src="/assets/images/espiritu.svg" alt="Espíritu Santo" class="esp-dove" />
 
-    <div class="esp-badge" data-lang="es">🕊 Dones y Carismas</div>
-    <div class="esp-badge" data-lang="en" style="display:none">🕊 Gifts &amp; Charisms</div>
+    <div class="esp-badge" data-lang="es">🕊 Señor y dador de vida</div>
+    <div class="esp-badge" data-lang="en" style="display:none">🕊 Lord and giver of life</div>
 
     <h1 class="esp-title" data-lang="es">Espíritu Santo</h1>
     <h1 class="esp-title" data-lang="en" style="display:none">Holy Spirit</h1>
 
-    <p class="esp-subtitle" data-lang="es">Cómo hablarle con sencillez, qué pedirle en lo concreto y cómo abrirle el corazón para que te conduzca en verdad.</p>
-    <p class="esp-subtitle" data-lang="en" style="display:none">How to speak to Him simply, what to ask for in concrete situations, and how to open your heart so He can lead you in truth.</p>
+    <p class="esp-subtitle" data-lang="es">Es Dios, igual al Padre y al Hijo, y vive en ti. Aprende a hablarle como a Dios: con confianza, adoración y sencillez.</p>
+    <p class="esp-subtitle" data-lang="en" style="display:none">He is God, equal to the Father and the Son, and He dwells in you. Learn to speak to Him as God: with trust, adoration, and simplicity.</p>
   </section>
 
   <!-- CONTENT -->
   <main class="esp-content">
+
+    <nav class="esp-toc" aria-label="Secciones">
+      <p class="esp-toc-label" data-lang="es">En esta página</p>
+      <p class="esp-toc-label" data-lang="en" style="display:none">On this page</p>
+      <div class="esp-toc-links">
+        <a href="#es-dios" data-lang="es">Él es Dios</a><a href="#es-dios" data-lang="en" style="display:none">He is God</a>
+        <a href="#persona" data-lang="es">Una Persona</a><a href="#persona" data-lang="en" style="display:none">A Person</a>
+        <a href="#hablarle-como-dios" data-lang="es">Háblale como a Dios</a><a href="#hablarle-como-dios" data-lang="en" style="display:none">Speak to Him as God</a>
+        <a href="#oraciones-iglesia" data-lang="es">Oraciones de la Iglesia</a><a href="#oraciones-iglesia" data-lang="en" style="display:none">Prayers of the Church</a>
+        <a href="#saludo-diario" data-lang="es">Saludo diario</a><a href="#saludo-diario" data-lang="en" style="display:none">Daily greeting</a>
+        <a href="#en-la-biblia" data-lang="es">En la Biblia</a><a href="#en-la-biblia" data-lang="en" style="display:none">In the Bible</a>
+        <a href="#sacramentos" data-lang="es">Sacramentos</a><a href="#sacramentos" data-lang="en" style="display:none">Sacraments</a>
+        <a href="#frutos" data-lang="es">Los frutos</a><a href="#frutos" data-lang="en" style="display:none">The fruits</a>
+        <a href="#en-la-tentacion" data-lang="es">En la tentación</a><a href="#en-la-tentacion" data-lang="en" style="display:none">In temptation</a>
+        <a href="#papas" data-lang="es">Los papas</a><a href="#papas" data-lang="en" style="display:none">The popes</a>
+        <a href="#pecado-contra" data-lang="es">¿Pecado contra Él?</a><a href="#pecado-contra" data-lang="en" style="display:none">Sin against Him?</a>
+        <a href="#dones" data-lang="es">Los siete dones</a><a href="#dones" data-lang="en" style="display:none">The seven gifts</a>
+        <a href="#sequedad" data-lang="es">Cuando no siento nada</a><a href="#sequedad" data-lang="en" style="display:none">When I feel nothing</a>
+      </div>
+    </nav>
+
+    <section class="esp-section" id="es-dios">
+      <h2 class="esp-section-title" data-lang="es">Él es Dios</h2>
+      <h2 class="esp-section-title" data-lang="en" style="display:none">He is God</h2>
+      <p class="esp-lead" data-lang="es">El Espíritu Santo no es una energía, ni un ayudante de Dios, ni un «algo» que Dios envía. <strong>Es Dios</strong>: la tercera Persona de la Santísima Trinidad, igual al Padre y al Hijo, con la misma dignidad, la misma gloria y la misma divinidad.</p>
+      <p class="esp-lead" data-lang="en" style="display:none">The Holy Spirit is not an energy, nor an assistant to God, nor a "something" God sends. <strong>He is God</strong>: the third Person of the Most Holy Trinity, equal to the Father and the Son, with the same dignity, the same glory, and the same divinity.</p>
+      <blockquote class="esp-scripture esp-creed" data-lang="es">«Creemos en el Espíritu Santo, Señor y dador de vida, que procede del Padre […]. Con el Padre y el Hijo recibe una misma adoración y gloria.»<cite>— Credo del Concilio de Constantinopla (381), citado en el Catecismo, n. 245</cite></blockquote>
+      <blockquote class="esp-scripture esp-creed" data-lang="en" style="display:none">"We believe in the Holy Spirit, the Lord and giver of life, who proceeds from the Father […]. With the Father and the Son, he is worshipped and glorified."<cite>— Creed of the Council of Constantinople (381), quoted in the Catechism, no. 245</cite></blockquote>
+      <details class="tup-ref" data-lang="es"><summary>Leer Catecismo, nn. 245, 689</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>245.</b> La fe apostólica relativa al Espíritu fue proclamada por el segundo Concilio Ecuménico en el año 381 en Constantinopla: "Creemos en el Espíritu Santo, Señor y dador de vida, que procede del Padre" (DS 150). La Iglesia reconoce así al Padre como "la fuente y el origen de toda la divinidad" (Concilio de Toledo VI, año 638: DS 490). Sin embargo, el origen eterno del Espíritu Santo está en conexión con el del Hijo: "El Espíritu Santo, que es la tercera persona de la Trinidad, es Dios, uno e igual al Padre y al Hijo, de la misma sustancia y también de la misma naturaleza [...] por eso, no se dice que es sólo el Espíritu del Padre, sino a la vez el espíritu del Padre y del Hijo" (Concilio de Toledo XI, año 675: DS 527). El Credo del Concilio de Constantinopla (año 381) confiesa: "Con el Padre y el Hijo recibe una misma adoración y gloria" (DS 150).<cite>— Catecismo de la Iglesia Católica, n. 245</cite></blockquote><blockquote class="tup-ref-verse"><b>689.</b> Aquel al que el Padre ha enviado a nuestros corazones, el Espíritu de su Hijo (cf. Ga 4, 6) es realmente Dios. Consubstancial con el Padre y el Hijo, es inseparable de ellos, tanto en la vida íntima de la Trinidad como en su don de amor para el mundo. Pero al adorar a la Santísima Trinidad vivificante, consubstancial e indivisible, la fe de la Iglesia profesa también la distinción de las Personas. Cuando el Padre envía su Verbo, envía también su Aliento: misión conjunta en la que el Hijo y el Espíritu Santo son distintos pero inseparables. Sin ninguna duda, Cristo es quien se manifiesta, Imagen visible de Dios invisible, pero es el Espíritu Santo quien lo revela.<cite>— Catecismo de la Iglesia Católica, n. 689</cite></blockquote></div></details>
+      <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Catechism, nos. 245, 689</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>245.</b> The apostolic faith concerning the Spirit was confessed by the second ecumenical council at Constantinople (381): "We believe in the Holy Spirit, the Lord and giver of life, who proceeds from the Father." By this confession, the Church recognizes the Father as "the source and origin of the whole divinity". But the eternal origin of the Spirit is not unconnected with the Son's origin: "The Holy Spirit, the third person of the Trinity, is God, one and equal with the Father and the Son, of the same substance and also of the same nature... Yet he is not called the Spirit of the Father alone,... but the Spirit of both the Father and the Son." The Creed of the Church from the Council of Constantinople confesses: "With the Father and the Son, he is worshipped and glorified."<cite>— Catechism of the Catholic Church, no. 245</cite></blockquote><blockquote class="tup-ref-verse"><b>689.</b> The One whom the Father has sent into our hearts, the Spirit of his Son, is truly God. Consubstantial with the Father and the Son, the Spirit is inseparable from them, in both the inner life of the Trinity and his gift of love for the world. In adoring the Holy Trinity, life-giving, consubstantial, and indivisible, the Church's faith also professes the distinction of persons. When the Father sends his Word, he always sends his Breath. In their joint mission, the Son and the Holy Spirit are distinct but inseparable. To be sure, it is Christ who is seen, the visible image of the invisible God, but it is the Spirit who reveals him.<cite>— Catechism of the Catholic Church, no. 689</cite></blockquote></div></details>
+      <p data-lang="es">Cada vez que rezas el Gloria —«Gloria al Padre, y al Hijo, y al Espíritu Santo»— le das al Espíritu la misma gloria que al Padre y al Hijo. Las tres Personas no se reparten la divinidad: cada una es Dios por entero, y son un solo Dios.</p>
+      <p data-lang="en" style="display:none">Every time you pray the Glory Be —"Glory be to the Father, and to the Son, and to the Holy Spirit"— you give the Spirit the same glory as the Father and the Son. The three Persons do not divide divinity among themselves: each is wholly God, and they are one God.</p>
+      <details class="tup-ref" data-lang="es"><summary>Leer Catecismo, n. 253</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>253.</b> La Trinidad es una. No confesamos tres dioses sino un solo Dios en tres personas: "la Trinidad consubstancial" (Concilio de Constantinopla II, año 553: DS 421). Las personas divinas no se reparten la única divinidad, sino que cada una de ellas es enteramente Dios: "El Padre es lo mismo que es el Hijo, el Hijo lo mismo que es el Padre, el Padre y el Hijo lo mismo que el Espíritu Santo, es decir, un solo Dios por naturaleza" (Concilio de Toledo XI, año 675: DS 530). "Cada una de las tres personas es esta realidad, es decir, la substancia, la esencia o la naturaleza divina" (Concilio de Letrán IV, año 1215: DS 804).<cite>— Catecismo de la Iglesia Católica, n. 253</cite></blockquote></div></details>
+      <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Catechism, no. 253</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>253.</b> The Trinity is One. We do not confess three Gods, but one God in three persons, the "consubstantial Trinity". The divine persons do not share the one divinity among themselves but each of them is God whole and entire: "The Father is that which the Son is, the Son that which the Father is, the Father and the Son that which the Holy Spirit is, i.e. by nature one God." In the words of the Fourth Lateran Council (1215), "Each of the persons is that supreme reality, viz., the divine substance, essence or nature."<cite>— Catechism of the Catholic Church, no. 253</cite></blockquote></div></details>
+      <div class="esp-practical-grid">
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">En la Escritura</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">In Scripture</div>
+          <h3 class="esp-practical-title" data-lang="es">Mentirle a Él es mentirle a Dios</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">Lying to Him is lying to God</h3>
+          <p class="esp-practical-text" data-lang="es">Cuando Ananías miente «al Espíritu Santo», Pedro le dice: «No has engañado a hombres, sino a Dios».</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">When Ananias lies "to the holy Spirit", Peter tells him: "You have lied not to human beings, but to God."</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Hechos 5,3-4</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Pero Pedro le dijo: «Ananías, ¿cómo es que Satanás se ha adueñado de tu corazón para que mientas al Espíritu Santo y retengas parte del precio de la propiedad? ¿Es que no la podías retener cuando la tenías? Y, una vez vendida, ¿no eras dueño legítimo del precio? ¿Por qué has puesto en tu corazón esta deci-sión? No has engañado a hombres, sino a Dios».»<cite>— Hechos 5,3-4 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Acts 5:3-4</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«But Peter said, "Ananias, why has Satan filled your heart so that you lied to the holy Spirit and retained part of the price of the land? While it remained unsold, did it not remain yours? And when it was sold, was it not still under your control? Why did you contrive this deed? You have lied not to human beings, but to God."»<cite>— Acts 5:3-4 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </div>
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">Un solo nombre</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">One name</div>
+          <h3 class="esp-practical-title" data-lang="es">Bautizados en su nombre</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">Baptized in His name</h3>
+          <p class="esp-practical-text" data-lang="es">Jesús manda bautizar «en el nombre» —en singular— del Padre, del Hijo y del Espíritu Santo.</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">Jesus commands baptism "in the name" —singular— of the Father, the Son, and the Holy Spirit.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Mateo 28,19</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Id, pues, y haced discípulos a todos los pueblos, bautizándolos en el nombre del Padre y del Hijo y del Espíritu Santo…»<cite>— Mateo 28,19 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Matthew 28:19</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Go, therefore, and make disciples of all nations, baptizing them in the name of the Father, and of the Son, and of the holy Spirit…»<cite>— Matthew 28:19 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </div>
+      </div>
+      <details class="tup-ref" data-lang="es"><summary>Leer 2 Corintios 13,13</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«La gracia del Señor Jesucristo, el amor de Dios y la comunión del Espíritu Santo estén siempre con todos vosotros.»<cite>— 2 Corintios 13,13 (Biblia CEE)</cite></blockquote></div></details>
+      <details class="tup-ref" data-lang="en" style="display:none"><summary>Read 2 Corinthians 13:13</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«The grace of the Lord Jesus Christ and the love of God and the fellowship of the holy Spirit be with all of you.»<cite>— 2 Corinthians 13:13 (New American Bible, vatican.va)</cite></blockquote></div></details>
+    </section>
+
+    <section class="esp-section" id="persona">
+      <h2 class="esp-section-title" data-lang="es">Una Persona, no una fuerza</h2>
+      <h2 class="esp-section-title" data-lang="en" style="display:none">A Person, not a force</h2>
+      <p class="esp-lead" data-lang="es">Jesús no habla del Espíritu como de un poder impersonal. Lo llama <strong>«otro Paráclito»</strong>: alguien que, como Él, está a tu lado, te defiende y te consuela. «Paráclito» significa literalmente «aquel que es llamado junto a uno».</p>
+      <p class="esp-lead" data-lang="en" style="display:none">Jesus does not speak of the Spirit as an impersonal power. He calls Him <strong>"another Advocate"</strong>: someone who, like Him, stands beside you, defends you, and consoles you. "Paraclete" literally means "he who is called to one's side."</p>
+      <blockquote class="esp-scripture" data-lang="es">«Y yo le pediré al Padre que os dé otro Paráclito, que esté siempre con vosotros, el Espíritu de la verdad. El mundo no puede recibirlo, porque no lo ve ni lo conoce; vosotros, en cambio, lo conocéis, porque mora con vosotros y está en vosotros.»<cite>— Juan 14,16-17</cite></blockquote>
+      <blockquote class="esp-scripture" data-lang="en" style="display:none">«And I will ask the Father, and he will give you another Advocate to be with you always, the Spirit of truth, which the world cannot accept, because it neither sees nor knows it. But you know it, because it remains with you, and will be in you.»<cite>— John 14:16-17</cite></blockquote>
+      <details class="tup-ref" data-lang="es"><summary>Leer Catecismo, nn. 691, 692</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>691.</b> "Espíritu Santo", tal es el nombre propio de Aquel que adoramos y glorificamos con el Padre y el Hijo. La Iglesia ha recibido este nombre del Señor y lo profesa en el Bautismo de sus nuevos hijos (cf. Mt 28, 19). El término "Espíritu" traduce el término hebreo Ruah, que en su primera acepción significa soplo, aire, viento. Jesús utiliza precisamente la imagen sensible del viento para sugerir a Nicodemo la novedad transcendente del que es personalmente el Soplo de Dios, el Espíritu divino (Jn 3, 5-8). Por otra parte, Espíritu y Santo son atributos divinos comunes a las Tres Personas divinas. Pero, uniendo ambos términos, la Escritura, la liturgia y el lenguaje teológico designan la persona inefable del Espíritu Santo, sin equívoco posible con los demás empleos de los términos "espíritu" y "santo".<cite>— Catecismo de la Iglesia Católica, n. 691</cite></blockquote><blockquote class="tup-ref-verse"><b>692.</b> Jesús, cuando anuncia y promete la Venida del Espíritu Santo, le llama el "Paráclito", literalmente "aquel que es llamado junto a uno", advocatus (Jn 14, 16. 26; 15, 26; 16, 7). "Paráclito" se traduce habitualmente por "Consolador", siendo Jesús el primer consolador (cf. 1 Jn 2, 1). El mismo Señor llama al Espíritu Santo "Espíritu de Verdad" (Jn 16, 13).<cite>— Catecismo de la Iglesia Católica, n. 692</cite></blockquote></div></details>
+      <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Catechism, nos. 691, 692</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>691.</b> "Holy Spirit" is the proper name of the one whom we adore and glorify with the Father and the Son. The Church has received this name from the Lord and professes it in the Baptism of her new children. The term "Spirit" translates the Hebrew word ruah, which, in its primary sense, means breath, air, wind. Jesus indeed uses the sensory image of the wind to suggest to Nicodemus the transcendent newness of him who is personally God's breath, the divine Spirit. On the other hand, "Spirit" and "Holy" are divine attributes common to the three divine persons. By joining the two terms, Scripture, liturgy, and theological language designate the inexpressible person of the Holy Spirit, without any possible equivocation with other uses of the terms "spirit" and "holy."<cite>— Catechism of the Catholic Church, no. 691</cite></blockquote><blockquote class="tup-ref-verse"><b>692.</b> When he proclaims and promises the coming of the Holy Spirit, Jesus calls him the "Paraclete," literally, "he who is called to one's side," advocatus. "Paraclete" is commonly translated by "consoler," and Jesus is the first consoler. The Lord also called the Holy Spirit "the Spirit of truth."<cite>— Catechism of the Catholic Church, no. 692</cite></blockquote></div></details>
+      <p data-lang="es">Solo una persona puede hacer lo que la Escritura dice del Espíritu Santo:</p>
+      <p data-lang="en" style="display:none">Only a person can do what Scripture says of the Holy Spirit:</p>
+      <div class="esp-practical-grid">
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">Enseña</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">He teaches</div>
+          <h3 class="esp-practical-title" data-lang="es">Te recuerda lo que Jesús dijo</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">He reminds you of what Jesus said</h3>
+          <p class="esp-practical-text" data-lang="es">No solo da información: te enseña y te recuerda las palabras de Jesús en el momento en que las necesitas.</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">He does not just give information: He teaches you and reminds you of Jesus' words when you need them.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Juan 14,26</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«…pero el Paráclito, el Espíritu Santo, que enviará el Padre en mi nombre, será quien os lo enseñe todo y os vaya recordando todo lo que os he dicho.»<cite>— Juan 14,26 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read John 14:26</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«The Advocate, the holy Spirit that the Father will send in my name - he will teach you everything and remind you of all that (I) told you.»<cite>— John 14:26 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </div>
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">Guía</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">He guides</div>
+          <h3 class="esp-practical-title" data-lang="es">Te lleva hacia la verdad</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">He leads you into truth</h3>
+          <p class="esp-practical-text" data-lang="es">Te guía «hasta la verdad plena», no de golpe, sino paso a paso, como un compañero de camino.</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">He guides you "to all truth", not all at once but step by step, as a companion on the road.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Juan 16,13</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«…cuando venga él, el Espíritu de la verdad, os guiará hasta la verdad plena. Pues no hablará por cuenta propia, sino que hablará de lo que oye y os comunicará lo que está por venir.»<cite>— Juan 16,13 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read John 16:13</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«But when he comes, the Spirit of truth, he will guide you to all truth. He will not speak on his own, but he will speak what he hears, and will declare to you the things that are coming.»<cite>— John 16:13 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </div>
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">Intercede</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">He intercedes</div>
+          <h3 class="esp-practical-title" data-lang="es">Ora en ti cuando no puedes</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">He prays in you when you cannot</h3>
+          <p class="esp-practical-text" data-lang="es">Cuando no sabes qué pedir, Él intercede por ti con gemidos que no caben en palabras.</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">When you do not know what to ask for, He intercedes for you with groanings too deep for words.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Romanos 8,26</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Del mismo modo, el Espíritu acude en ayuda de nuestra debilidad, pues nosotros no sabemos pedir como conviene; pero el Espíritu mismo intercede por nosotros con gemidos inefables.»<cite>— Romanos 8,26 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Romans 8:26</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«In the same way, the Spirit too comes to the aid of our weakness; for we do not know how to pray as we ought, but the Spirit itself intercedes with inexpressible groanings.»<cite>— Romans 8:26 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </div>
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">Se entristece</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">He can be grieved</div>
+          <h3 class="esp-practical-title" data-lang="es">Le importa lo que vives</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">What you live matters to Him</h3>
+          <p class="esp-practical-text" data-lang="es">Una fuerza no se entristece; una Persona que ama, sí. Por eso san Pablo dice: «No entristezcáis al Espíritu Santo».</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">A force cannot be grieved; a Person who loves can. That is why St. Paul says: "Do not grieve the holy Spirit."</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Efesios 4,30</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«No entristezcáis al Espíritu Santo de Dios con que él os ha sellado para el día de la liberación final.»<cite>— Efesios 4,30 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Ephesians 4:30</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«And do not grieve the holy Spirit of God, with which you were sealed for the day of redemption.»<cite>— Ephesians 4:30 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="esp-section" id="hablarle-como-dios">
+      <h2 class="esp-section-title" data-lang="es">Háblale como a Dios</h2>
+      <h2 class="esp-section-title" data-lang="en" style="display:none">Speak to Him as God</h2>
+      <p class="esp-lead" data-lang="es">Si hablas con Jesús y con el Padre, también puedes hablar con el Espíritu Santo: con la misma confianza, el mismo respeto y el mismo amor. El Catecismo lo dice con sencillez: puesto que Él nos enseña a orar, <em>¿cómo no dirigirnos también a Él orando?</em></p>
+      <p class="esp-lead" data-lang="en" style="display:none">If you speak with Jesus and with the Father, you can also speak with the Holy Spirit: with the same trust, the same reverence, and the same love. The Catechism says it simply: since He teaches us to pray, <em>how could we not pray to the Spirit too?</em></p>
+      <details class="tup-ref" data-lang="es"><summary>Leer Catecismo, n. 2670</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>2670.</b> «Nadie puede decir: “¡Jesús es Señor!” sino por influjo del Espíritu Santo» (1 Co 12, 3). Cada vez que en la oración nos dirigimos a Jesús, es el Espíritu Santo quien, con su gracia preveniente, nos atrae al camino de la oración. Puesto que Él nos enseña a orar recordándonos a Cristo, ¿cómo no dirigirnos también a él orando? Por eso, la Iglesia nos invita a implorar todos los días al Espíritu Santo, especialmente al comenzar y al terminar cualquier acción importante. «Si el Espíritu no debe ser adorado, ¿cómo me diviniza él por el Bautismo? Y si debe ser adorado, ¿no debe ser objeto de un culto particular?» (San Gregorio Nacianceno, Oratio [teológica 5], 28).<cite>— Catecismo de la Iglesia Católica, n. 2670</cite></blockquote></div></details>
+      <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Catechism, no. 2670</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>2670.</b> "No one can say 'Jesus is Lord' except by the Holy Spirit." Every time we begin to pray to Jesus it is the Holy Spirit who draws us on the way of prayer by his prevenient grace. Since he teaches us to pray by recalling Christ, how could we not pray to the Spirit too? That is why the Church invites us to call upon the Holy Spirit every day, especially at the beginning and the end of every important action.<cite>— Catechism of the Catholic Church, no. 2670</cite></blockquote></div></details>
+      <div class="esp-practical-grid">
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">1. Adóralo</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">1. Adore Him</div>
+          <h3 class="esp-practical-title" data-lang="es">Dile que lo adoras</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">Tell Him you adore Him</h3>
+          <p class="esp-practical-text" data-lang="es">«Espíritu Santo, te adoro. Eres mi Dios y mi Señor, igual al Padre y al Hijo.»</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">"Holy Spirit, I adore You. You are my God and my Lord, equal to the Father and the Son."</p>
+        </div>
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">2. Háblale de tú</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">2. Speak to Him personally</div>
+          <h3 class="esp-practical-title" data-lang="es">No a «algo», sino a Alguien</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">Not to "something", but to Someone</h3>
+          <p class="esp-practical-text" data-lang="es">«Espíritu Santo, Tú estás aquí. Quiero hablar contigo, no solo de Ti.»</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">"Holy Spirit, You are here. I want to speak with You, not only about You."</p>
+        </div>
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">3. Recuerda dónde vive</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">3. Remember where He dwells</div>
+          <h3 class="esp-practical-title" data-lang="es">Eres su templo</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">You are His temple</h3>
+          <p class="esp-practical-text" data-lang="es">«Dulce huésped de mi alma, gracias por quedarte en mí, aun cuando yo no te recuerdo.»</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">"Sweet guest of my soul, thank You for staying in me, even when I forget You."</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer 1 Corintios 6,19</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«¿Acaso no sabéis que vuestro cuerpo es templo del Espíritu Santo, que habita en vosotros y habéis recibido de Dios? Y no os pertenecéis…»<cite>— 1 Corintios 6,19 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read 1 Corinthians 6:19</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Do you not know that your body is a temple of the holy Spirit within you, whom you have from God, and that you are not your own?»<cite>— 1 Corinthians 6:19 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </div>
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">4. Déjate llevar al Padre</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">4. Let Him lead you to the Father</div>
+          <h3 class="esp-practical-title" data-lang="es">Él te enseña a decir «Abba»</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">He teaches you to say "Abba"</h3>
+          <p class="esp-practical-text" data-lang="es">«Espíritu de mi Padre, enséñame a decir “Abba” con confianza y a decir “Jesús es Señor” con el corazón.»</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">"Spirit of my Father, teach me to say “Abba” with trust and to say “Jesus is Lord” with my heart."</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Gálatas 4,6</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Como sois hijos, Dios envió a nuestros corazones el Espíritu de su Hijo, que clama: «¡Abba, Padre!».»<cite>— Gálatas 4,6 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Galatians 4:6</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«As proof that you are children, God sent the spirit of his Son into our hearts, crying out, "Abba, Father!"»<cite>— Galatians 4:6 (New American Bible, vatican.va)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="es"><summary>Leer 1 Corintios 12,3</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Por ello os hago saber que nadie que hable por el Espíritu de Dios dice: «¡Anatema sea Jesús!»; y nadie puede decir: «¡Jesús es Señor!», sino por el Espíritu Santo.»<cite>— 1 Corintios 12,3 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read 1 Corinthians 12:3</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Therefore, I tell you that nobody speaking by the spirit of God says, "Jesus be accursed." And no one can say, "Jesus is Lord," except by the holy Spirit.»<cite>— 1 Corinthians 12:3 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </div>
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">5. Agradécele y pídele perdón</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">5. Thank Him and ask forgiveness</div>
+          <h3 class="esp-practical-title" data-lang="es">Como a un Amigo que es Dios</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">As to a Friend who is God</h3>
+          <p class="esp-practical-text" data-lang="es">«Gracias por todo lo que haces en mí sin que yo lo note. Perdóname por las veces que te he entristecido.»</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">"Thank You for all You do in me without my noticing. Forgive me for the times I have grieved You."</p>
+        </div>
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">También es católico</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">Also Catholic</div>
+          <h3 class="esp-practical-title" data-lang="es">Pedir al Padre que lo envíe</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">Asking the Father to send Him</h3>
+          <p class="esp-practical-text" data-lang="es">La forma tradicional es pedir al Padre, por Cristo, que nos dé el Espíritu. Las dos maneras —hablarle a Él y pedirlo al Padre— son oración católica.</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">The traditional form is to ask the Father, through Christ, to give us the Spirit. Both ways —speaking to Him and asking the Father for Him— are Catholic prayer.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Lucas 11,13</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Si vosotros, pues, que sois malos, sabéis dar cosas buenas a vuestros hijos, ¿cuánto más el Padre del cielo dará el Espíritu Santo a los que le piden?»<cite>— Lucas 11,13 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Luke 11:13</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«If you then, who are wicked, know how to give good gifts to your children, how much more will the Father in heaven give the holy Spirit to those who ask him?»<cite>— Luke 11:13 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </div>
+      </div>
+      <p class="esp-note" data-lang="es">Las frases entre comillas de esta sección son oraciones propias de esta página, sugeridas como ejemplo.</p>
+      <p class="esp-note" data-lang="en" style="display:none">The quoted phrases in this section are this page's own prayers, offered as examples.</p>
+    </section>
+
 
     <!-- Invocación -->
     <section class="esp-section">
       <h2 class="esp-section-title" data-lang="es">Invocación</h2>
       <h2 class="esp-section-title" data-lang="en" style="display:none">Invocation</h2>
 
-      <blockquote class="esp-scripture" data-lang="es">
-        «Ven, Espíritu Santo, llena los corazones de Tus fieles y enciende en ellos el fuego de Tu amor.»
-        <cite>— Secuencia de Pentecostés</cite>
-      </blockquote>
-      <blockquote class="esp-scripture" data-lang="en" style="display:none">
-        "Come, Holy Spirit, fill the hearts of Your faithful and kindle in them the fire of Your love."
-        <cite>— Pentecost Sequence</cite>
-      </blockquote>
+      <blockquote class="esp-scripture" data-lang="es">«Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor.»<cite>— Antífona de Pentecostés (cf. Catecismo, n. 2671)</cite></blockquote>
+      <blockquote class="esp-scripture" data-lang="en" style="display:none">"Come, Holy Spirit, fill the hearts of your faithful and enkindle in them the fire of your love."<cite>— Pentecost antiphon (cf. Catechism, no. 2671)</cite></blockquote>
 
+      <p class="esp-note" data-lang="es">Oración propia de esta página.</p>
       <p class="esp-invocation" data-lang="es">Ven, Espíritu Santo,
 rayo de luz celestial;
 Dios de amor, en Ti confío,
@@ -303,6 +513,7 @@ concédeme la gracia santa
 de vivir en Tu comunión.
 
 Amén.</p>
+      <p class="esp-note" data-lang="en" style="display:none">This page's own prayer.</p>
       <p class="esp-invocation" data-lang="en" style="display:none">Come, Holy Spirit,
 ray of heavenly light;
 God of love, in You I trust,
@@ -321,19 +532,616 @@ in Your communion, ever free.
 Amen.</p>
     </section>
 
+<!-- NUEVAS SECCIONES B -->
+    <section class="esp-section" id="oraciones-iglesia">
+      <h2 class="esp-section-title" data-lang="es">Oraciones de la Iglesia</h2>
+      <h2 class="esp-section-title" data-lang="en" style="display:none">Prayers of the Church</h2>
+      <p class="esp-lead" data-lang="es">Desde hace siglos la Iglesia le habla directamente al Espíritu Santo. El Catecismo recuerda que la oración más sencilla es también la más tradicional: <strong>«Ven, Espíritu Santo»</strong>.</p>
+      <p class="esp-lead" data-lang="en" style="display:none">For centuries the Church has spoken directly to the Holy Spirit. The Catechism recalls that the simplest prayer is also the most traditional: <strong>"Come, Holy Spirit."</strong></p>
+      <details class="tup-ref" data-lang="es"><summary>Leer Catecismo, n. 2671</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>2671.</b> La forma tradicional para pedir el Espíritu es invocar al Padre por medio de Cristo nuestro Señor para que nos dé el Espíritu Consolador (cf Lc 11, 13). Jesús insiste en esta petición en su nombre en el momento mismo en que promete el don del Espíritu de Verdad (cf Jn 14, 17; 15, 26; 16, 13). Pero la oración más sencilla y la más directa es también la más tradicional: “Ven, Espíritu Santo”, y cada tradición litúrgica la ha desarrollado en antífonas e himnos: «Ven, Espíritu Santo, llena los corazones de tus fieles y enciende en ellos el fuego de tu amor» (Solemnidad de Pentecostés, Antífona del «Magnificat» in I Vísperas: Liturgia de las Horas; cf. Solemnidad de Pentecostés, misa del día, Secuencia: Leccionario, V, 1). «Rey celeste, Espíritu Consolador, Espíritu de Verdad, que estás presente en todas partes y lo llenas todo, tesoro de todo bien y fuente de la vida, ven, habita en nosotros, purifícanos y sálvanos. ¡Tú que eres bueno!» (Oficio Bizantino de las Horas, Oficio Vespertino del día de Pentecostés, capítulo 4: «Pentekostárion»).<cite>— Catecismo de la Iglesia Católica, n. 2671</cite></blockquote></div></details>
+      <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Catechism, no. 2671</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>2671.</b> The traditional form of petition to the Holy Spirit is to invoke the Father through Christ our Lord to give us the Consoler Spirit. Jesus insists on this petition to be made in his name at the very moment when he promises the gift of the Spirit of Truth. But the simplest and most direct prayer is also traditional, "Come, Holy Spirit," and every liturgical tradition has developed it in antiphons and hymns. Come, Holy Spirit, fill the hearts of your faithful and enkindle in them the fire of your love. Heavenly King, Consoler Spirit, Spirit of Truth, present everywhere and filling all things, treasure of all good and source of all life, come dwell in us, cleanse and save us, you who are All Good.<cite>— Catechism of the Catholic Church, no. 2671</cite></blockquote></div></details>
+      <details class="tup-ref" data-lang="es"><summary>Leer el himno Veni Creator Spiritus</summary><div class="tup-ref-body"><p class="tup-ref-title">Veni Creator Spiritus — traducción propia</p><p class="tup-ref-prayer">Ven, Espíritu Creador,
+visita las mentes de los tuyos;
+llena de gracia celestial
+los corazones que Tú creaste.
+
+Tú, a quien llamamos Paráclito,
+don del Dios altísimo,
+fuente viva, fuego, caridad
+y unción espiritual.
+
+Tú, que das siete dones,
+dedo de la diestra del Padre,
+Tú, el prometido del Padre,
+que pones la palabra en nuestros labios.
+
+Enciende tu luz en nuestros sentidos,
+derrama tu amor en nuestros corazones,
+y lo débil de nuestro cuerpo
+sostenlo con tu fuerza constante.
+
+Aleja lejos al enemigo,
+danos pronto la paz;
+y así, yendo Tú delante como guía,
+evitemos todo lo que daña.
+
+Concédenos conocer por Ti al Padre
+y conocer también al Hijo,
+y creer en todo tiempo en Ti,
+Espíritu de ambos.
+
+Gloria a Dios Padre,
+y al Hijo, que resucitó de entre los muertos,
+y al Paráclito,
+por los siglos de los siglos. Amén.</p><p class="esp-source-note">Himno latino del siglo IX. Traducción literal propia de esta página; no es el texto litúrgico oficial.</p></div></details>
+      <details class="tup-ref" data-lang="en" style="display:none"><summary>Read the hymn Veni Creator Spiritus</summary><div class="tup-ref-body"><p class="tup-ref-title">Veni Creator Spiritus — our own translation</p><p class="tup-ref-prayer">Come, Creator Spirit,
+visit the minds of those who are yours;
+fill with heavenly grace
+the hearts that you have made.
+
+You who are called the Paraclete,
+gift of God most high,
+living spring, fire, love,
+and spiritual anointing.
+
+You who give seven gifts,
+finger of the Father's right hand,
+you, the Father's promised one,
+who place the word upon our lips.
+
+Kindle your light in our senses,
+pour your love into our hearts,
+and strengthen what is weak in our body
+with your lasting power.
+
+Drive the enemy far away,
+grant us peace without delay;
+with you going before us as our guide,
+may we avoid all that harms.
+
+Grant that through you we may know the Father
+and come to know the Son,
+and believe at all times in you,
+the Spirit of them both.
+
+Glory be to God the Father,
+and to the Son, who rose from the dead,
+and to the Paraclete,
+for ever and ever. Amen.</p><p class="esp-source-note">Ninth-century Latin hymn. This page's own literal translation; not the official liturgical text.</p></div></details>
+      <details class="tup-ref" data-lang="es"><summary>Leer el texto latino del Veni Creator</summary><div class="tup-ref-body"><p class="tup-ref-title">Veni Creator Spiritus (latín)</p><p class="tup-ref-prayer">Veni, Creator Spiritus,
+mentes tuorum visita,
+imple superna gratia,
+quae tu creasti pectora.
+
+Qui diceris Paraclitus,
+altissimi donum Dei,
+fons vivus, ignis, caritas,
+et spiritalis unctio.
+
+Tu septiformis munere,
+digitus paternae dexterae,
+tu rite promissum Patris,
+sermone ditans guttura.
+
+Accende lumen sensibus,
+infunde amorem cordibus,
+infirma nostri corporis
+virtute firmans perpeti.
+
+Hostem repellas longius,
+pacemque dones protinus;
+ductore sic te praevio
+vitemus omne noxium.
+
+Per te sciamus da Patrem,
+noscamus atque Filium,
+teque utriusque Spiritum
+credamus omni tempore.
+
+Deo Patri sit gloria,
+et Filio, qui a mortuis
+surrexit, ac Paraclito,
+in saeculorum saecula. Amen.</p></div></details>
+      <details class="tup-ref" data-lang="en" style="display:none"><summary>Read the Latin text of the Veni Creator</summary><div class="tup-ref-body"><p class="tup-ref-title">Veni Creator Spiritus (Latin)</p><p class="tup-ref-prayer">Veni, Creator Spiritus,
+mentes tuorum visita,
+imple superna gratia,
+quae tu creasti pectora.
+
+Qui diceris Paraclitus,
+altissimi donum Dei,
+fons vivus, ignis, caritas,
+et spiritalis unctio.
+
+Tu septiformis munere,
+digitus paternae dexterae,
+tu rite promissum Patris,
+sermone ditans guttura.
+
+Accende lumen sensibus,
+infunde amorem cordibus,
+infirma nostri corporis
+virtute firmans perpeti.
+
+Hostem repellas longius,
+pacemque dones protinus;
+ductore sic te praevio
+vitemus omne noxium.
+
+Per te sciamus da Patrem,
+noscamus atque Filium,
+teque utriusque Spiritum
+credamus omni tempore.
+
+Deo Patri sit gloria,
+et Filio, qui a mortuis
+surrexit, ac Paraclito,
+in saeculorum saecula. Amen.</p></div></details>
+      <details class="tup-ref" data-lang="es"><summary>Leer la secuencia de Pentecostés</summary><div class="tup-ref-body"><p class="tup-ref-title">Veni, Sancte Spiritus — traducción propia</p><p class="tup-ref-prayer">Ven, Espíritu Santo,
+y envía desde el cielo
+un rayo de tu luz.
+
+Ven, padre de los pobres;
+ven, dador de los dones;
+ven, luz de los corazones.
+
+Consolador el mejor,
+dulce huésped del alma,
+dulce alivio.
+
+Descanso en el trabajo,
+frescor en el calor,
+consuelo en el llanto.
+
+Oh luz dichosísima,
+llena lo más íntimo del corazón
+de tus fieles.
+
+Sin tu ayuda divina
+no hay nada en el hombre,
+nada que sea inocente.
+
+Lava lo que está manchado,
+riega lo que está árido,
+sana lo que está herido.
+
+Doblega lo que está rígido,
+calienta lo que está frío,
+endereza lo que se ha desviado.
+
+Da a tus fieles,
+que en Ti confían,
+tus siete dones sagrados.
+
+Da el mérito de la virtud,
+da el puerto de la salvación,
+da el gozo eterno.
+Amén. Aleluya.</p><p class="esp-source-note">Secuencia de la Misa de Pentecostés (siglo XIII). Traducción literal propia de esta página; no es el texto del Leccionario.</p></div></details>
+      <details class="tup-ref" data-lang="en" style="display:none"><summary>Read the Pentecost Sequence</summary><div class="tup-ref-body"><p class="tup-ref-title">Veni, Sancte Spiritus — our own translation</p><p class="tup-ref-prayer">Come, Holy Spirit,
+and send from heaven
+the ray of your light.
+
+Come, father of the poor;
+come, giver of gifts;
+come, light of hearts.
+
+Best of consolers,
+sweet guest of the soul,
+sweet refreshment.
+
+In labor, rest;
+in heat, cool relief;
+in weeping, comfort.
+
+O most blessed light,
+fill the inmost hearts
+of your faithful.
+
+Without your divine help
+there is nothing in us,
+nothing that is free of harm.
+
+Wash what is stained,
+water what is dry,
+heal what is wounded.
+
+Bend what is rigid,
+warm what is cold,
+guide what has gone astray.
+
+Give to your faithful,
+who trust in you,
+your sacred sevenfold gifts.
+
+Give the reward of virtue,
+give the haven of salvation,
+give everlasting joy.
+Amen. Alleluia.</p><p class="esp-source-note">Sequence of the Pentecost Mass (13th century). This page's own literal translation; not the Lectionary text.</p></div></details>
+      <details class="tup-ref" data-lang="es"><summary>Leer el texto latino de la secuencia</summary><div class="tup-ref-body"><p class="tup-ref-title">Veni, Sancte Spiritus (latín)</p><p class="tup-ref-prayer">Veni, Sancte Spiritus,
+et emitte caelitus
+lucis tuae radium.
+
+Veni, pater pauperum,
+veni, dator munerum,
+veni, lumen cordium.
+
+Consolator optime,
+dulcis hospes animae,
+dulce refrigerium.
+
+In labore requies,
+in aestu temperies,
+in fletu solatium.
+
+O lux beatissima,
+reple cordis intima
+tuorum fidelium.
+
+Sine tuo numine,
+nihil est in homine,
+nihil est innoxium.
+
+Lava quod est sordidum,
+riga quod est aridum,
+sana quod est saucium.
+
+Flecte quod est rigidum,
+fove quod est frigidum,
+rege quod est devium.
+
+Da tuis fidelibus,
+in te confidentibus,
+sacrum septenarium.
+
+Da virtutis meritum,
+da salutis exitum,
+da perenne gaudium.
+Amen. Alleluia.</p></div></details>
+      <details class="tup-ref" data-lang="en" style="display:none"><summary>Read the Latin text of the Sequence</summary><div class="tup-ref-body"><p class="tup-ref-title">Veni, Sancte Spiritus (Latin)</p><p class="tup-ref-prayer">Veni, Sancte Spiritus,
+et emitte caelitus
+lucis tuae radium.
+
+Veni, pater pauperum,
+veni, dator munerum,
+veni, lumen cordium.
+
+Consolator optime,
+dulcis hospes animae,
+dulce refrigerium.
+
+In labore requies,
+in aestu temperies,
+in fletu solatium.
+
+O lux beatissima,
+reple cordis intima
+tuorum fidelium.
+
+Sine tuo numine,
+nihil est in homine,
+nihil est innoxium.
+
+Lava quod est sordidum,
+riga quod est aridum,
+sana quod est saucium.
+
+Flecte quod est rigidum,
+fove quod est frigidum,
+rege quod est devium.
+
+Da tuis fidelibus,
+in te confidentibus,
+sacrum septenarium.
+
+Da virtutis meritum,
+da salutis exitum,
+da perenne gaudium.
+Amen. Alleluia.</p></div></details>
+    </section>
+
+    <section class="esp-section" id="saludo-diario">
+      <h2 class="esp-section-title" data-lang="es">Saludo diario al Espíritu Santo</h2>
+      <h2 class="esp-section-title" data-lang="en" style="display:none">Daily greeting to the Holy Spirit</h2>
+      <p class="esp-lead" data-lang="es">La Iglesia nos invita a invocar al Espíritu Santo todos los días, especialmente al comenzar y al terminar cualquier acción importante (cf. Catecismo, n. 2670). No hace falta mucho: basta un saludo, como el que le das a alguien que vive contigo.</p>
+      <p class="esp-lead" data-lang="en" style="display:none">The Church invites us to call upon the Holy Spirit every day, especially at the beginning and the end of every important action (cf. Catechism, no. 2670). It does not take much: just a greeting, like the one you give someone who lives with you.</p>
+      <div class="esp-practical-grid">
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">🌅 Al despertar</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">🌅 On waking</div>
+          <h3 class="esp-practical-title" data-lang="es">Buenos días, Espíritu Santo</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">Good morning, Holy Spirit</h3>
+          <p class="esp-practical-text" data-lang="es">«Buenos días, Espíritu Santo. Eres mi Dios y estás conmigo. Te entrego este día: mis pensamientos, mis palabras y mis decisiones. Guíame.»</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">"Good morning, Holy Spirit. You are my God and You are with me. I give You this day: my thoughts, my words, and my decisions. Guide me."</p>
+        </div>
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">☀️ A mediodía</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">☀️ At midday</div>
+          <h3 class="esp-practical-title" data-lang="es">Una pausa contigo</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">A pause with You</h3>
+          <p class="esp-practical-text" data-lang="es">«Espíritu Santo, aquí estoy en medio de todo. Ordena lo que está agitado en mí y dame paz para seguir.»</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">"Holy Spirit, here I am in the middle of everything. Order what is restless in me and give me peace to continue."</p>
+        </div>
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">🧭 Antes de decidir</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">🧭 Before deciding</div>
+          <h3 class="esp-practical-title" data-lang="es">Luz para elegir</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">Light to choose</h3>
+          <p class="esp-practical-text" data-lang="es">«Espíritu de consejo, no quiero decidir solo. Muéstrame lo que agrada al Padre.»</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">"Spirit of counsel, I do not want to decide alone. Show me what pleases the Father."</p>
+        </div>
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">🌙 Al terminar el día</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">🌙 At day's end</div>
+          <h3 class="esp-practical-title" data-lang="es">Gracias y perdón</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">Thanks and forgiveness</h3>
+          <p class="esp-practical-text" data-lang="es">«Gracias, Espíritu Santo, por lo que hiciste hoy en mí. Perdona donde no te escuché. Quédate conmigo esta noche.»</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">"Thank You, Holy Spirit, for what You did in me today. Forgive me where I did not listen. Stay with me tonight."</p>
+        </div>
+      </div>
+      <p class="esp-note" data-lang="es">Oraciones propias de esta página.</p>
+      <p class="esp-note" data-lang="en" style="display:none">This page's own prayers.</p>
+    </section>
+
+    <section class="esp-section" id="en-la-biblia">
+      <h2 class="esp-section-title" data-lang="es">El Espíritu Santo en la Biblia</h2>
+      <h2 class="esp-section-title" data-lang="en" style="display:none">The Holy Spirit in the Bible</h2>
+      <p class="esp-lead" data-lang="es">El Espíritu Santo no aparece de repente en Pentecostés. Recorre toda la historia de la salvación, desde la primera página de la Biblia.</p>
+      <p class="esp-lead" data-lang="en" style="display:none">The Holy Spirit does not appear suddenly at Pentecost. He runs through the whole history of salvation, from the first page of the Bible.</p>
+      <ol class="esp-timeline">
+        <li class="esp-tl-item">
+          <strong class="esp-tl-kicker" data-lang="es">La creación</strong>
+          <strong class="esp-tl-kicker" data-lang="en" style="display:none">Creation</strong>
+          <p data-lang="es">Al principio, el espíritu de Dios aleteaba sobre las aguas.</p>
+          <p data-lang="en" style="display:none">In the beginning, the spirit of God moved over the waters.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Génesis 1,2</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«La tierra estaba informe y vacía; la tiniebla cubría la superficie del abismo, mientras el espíritu de Dios se cernía sobre la faz de las aguas.»<cite>— Génesis 1,2 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Genesis 1:2</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«…the earth was a formless wasteland, and darkness covered the abyss, while a mighty wind swept over the waters.»<cite>— Genesis 1:2 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </li>
+        <li class="esp-tl-item">
+          <strong class="esp-tl-kicker" data-lang="es">Los profetas</strong>
+          <strong class="esp-tl-kicker" data-lang="en" style="display:none">The prophets</strong>
+          <p data-lang="es">Dios promete un corazón nuevo y un espíritu nuevo.</p>
+          <p data-lang="en" style="display:none">God promises a new heart and a new spirit.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Ezequiel 36,26-27</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«…y os daré un corazón nuevo, y os infundiré un espíritu nuevo; arrancaré de vuestra carne el corazón de piedra, y os daré un corazón de carne. Os infundiré mi espíritu, y haré que caminéis según mis preceptos, y que guardéis y cumpláis mis mandatos.»<cite>— Ezequiel 36,26-27 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Ezekiel 36:26-27</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«I will give you a new heart and place a new spirit within you, taking from your bodies your stony hearts and giving you natural hearts. I will put my spirit within you and make you live by my statutes, careful to observe my decrees.»<cite>— Ezekiel 36:26-27 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </li>
+        <li class="esp-tl-item">
+          <strong class="esp-tl-kicker" data-lang="es">La promesa</strong>
+          <strong class="esp-tl-kicker" data-lang="en" style="display:none">The promise</strong>
+          <p data-lang="es">Dios anuncia que derramará su espíritu sobre todos.</p>
+          <p data-lang="en" style="display:none">God announces that He will pour out His spirit on all.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Joel 3,2</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Incluso sobre vuestros siervos y siervas derramaré mi espíritu en aquellos días.»<cite>— Joel 3,2 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Joel 3:2</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Even upon the servants and the handmaids, in those days, I will pour out my spirit.»<cite>— Joel 3:2 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </li>
+        <li class="esp-tl-item">
+          <strong class="esp-tl-kicker" data-lang="es">La Encarnación</strong>
+          <strong class="esp-tl-kicker" data-lang="en" style="display:none">The Incarnation</strong>
+          <p data-lang="es">El Espíritu Santo viene sobre María y el Hijo de Dios se hace hombre.</p>
+          <p data-lang="en" style="display:none">The Holy Spirit comes upon Mary and the Son of God becomes man.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Lucas 1,35</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«El ángel le contestó: «El Espíritu Santo vendrá sobre ti, y la fuerza del Altísimo te cubrirá con su sombra; por eso el Santo que va a nacer será llamado Hijo de Dios.»<cite>— Lucas 1,35 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Luke 1:35</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«And the angel said to her in reply, The holy Spirit will come upon you, and the power of the Most High will overshadow you. Therefore the child to be born will be called holy, the Son of God.»<cite>— Luke 1:35 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </li>
+        <li class="esp-tl-item">
+          <strong class="esp-tl-kicker" data-lang="es">El Bautismo de Jesús</strong>
+          <strong class="esp-tl-kicker" data-lang="en" style="display:none">Jesus' Baptism</strong>
+          <p data-lang="es">El Espíritu baja como una paloma y el Padre habla: la Trinidad se manifiesta.</p>
+          <p data-lang="en" style="display:none">The Spirit descends like a dove and the Father speaks: the Trinity is revealed.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Lucas 3,22</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«…bajó el Espíritu Santo sobre él con apariencia corporal semejante a una paloma y vino una voz del cielo: «Tú eres mi Hijo, el amado; en ti me complazco».»<cite>— Lucas 3,22 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Luke 3:22</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«…and the holy Spirit descended upon him in bodily form like a dove. And a voice came from heaven, "You are my beloved Son; with you I am well pleased."»<cite>— Luke 3:22 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </li>
+        <li class="esp-tl-item">
+          <strong class="esp-tl-kicker" data-lang="es">El desierto</strong>
+          <strong class="esp-tl-kicker" data-lang="en" style="display:none">The desert</strong>
+          <p data-lang="es">El mismo Espíritu lleva a Jesús al desierto, donde vence la tentación.</p>
+          <p data-lang="en" style="display:none">The same Spirit leads Jesus into the desert, where He overcomes temptation.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Marcos 1,12</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«A continuación, el Espíritu lo empujó al desierto.»<cite>— Marcos 1,12 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Mark 1:12</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«At once the Spirit drove him out into the desert…»<cite>— Mark 1:12 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </li>
+        <li class="esp-tl-item">
+          <strong class="esp-tl-kicker" data-lang="es">La Pascua</strong>
+          <strong class="esp-tl-kicker" data-lang="en" style="display:none">Easter</strong>
+          <p data-lang="es">Jesús resucitado sopla sobre los apóstoles y les da el poder de perdonar.</p>
+          <p data-lang="en" style="display:none">The risen Jesus breathes on the apostles and gives them the power to forgive.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Juan 20,22-23</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Y, dicho esto, sopló sobre ellos y les dijo: «Recibid el Espíritu Santo; a quienes les perdonéis los pecados, les quedan perdonados; a quienes se los retengáis, les quedan retenidos».»<cite>— Juan 20,22-23 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read John 20:22-23</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«And when he had said this, he breathed on them and said to them, "Receive the holy Spirit. Whose sins you forgive are forgiven them, and whose sins you retain are retained."»<cite>— John 20:22-23 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </li>
+        <li class="esp-tl-item">
+          <strong class="esp-tl-kicker" data-lang="es">Pentecostés</strong>
+          <strong class="esp-tl-kicker" data-lang="en" style="display:none">Pentecost</strong>
+          <p data-lang="es">Viento, fuego y lenguas: nace la misión de la Iglesia.</p>
+          <p data-lang="en" style="display:none">Wind, fire, and tongues: the Church's mission is born.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Hechos 2,2-4</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«De repente, se produjo desde el cielo un estruendo, como de viento que soplaba fuertemente, y llenó toda la casa donde se encontraban sentados. Vieron aparecer unas lenguas, como llamaradas, que se dividían, posándose encima de cada uno de ellos. Se llenaron todos de Espíritu Santo y empezaron a hablar en otras lenguas, según el Espíritu les concedía manifestarse.»<cite>— Hechos 2,2-4 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Acts 2:2-4</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«And suddenly there came from the sky a noise like a strong driving wind, and it filled the entire house in which they were. Then there appeared to them tongues as of fire, which parted and came to rest on each one of them. And they were all filled with the holy Spirit and began to speak in different tongues, as the Spirit enabled them to proclaim.»<cite>— Acts 2:2-4 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </li>
+        <li class="esp-tl-item">
+          <strong class="esp-tl-kicker" data-lang="es">La Iglesia</strong>
+          <strong class="esp-tl-kicker" data-lang="en" style="display:none">The Church</strong>
+          <p data-lang="es">Los apóstoles imponen las manos y los creyentes reciben el Espíritu Santo.</p>
+          <p data-lang="en" style="display:none">The apostles lay on hands and believers receive the Holy Spirit.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Hechos 8,17</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Entonces les imponían las manos y recibían el Espíritu Santo.»<cite>— Hechos 8,17 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Acts 8:17</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Then they laid hands on them and they received the holy Spirit.»<cite>— Acts 8:17 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </li>
+      </ol>
+      <details class="tup-ref" data-lang="es"><summary>Leer Catecismo, n. 731</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>731.</b> El día de Pentecostés (al término de las siete semanas pascuales), la Pascua de Cristo se consuma con la efusión del Espíritu Santo que se manifiesta, da y comunica como Persona divina: desde su plenitud, Cristo, el Señor (cf. Hch 2, 36), derrama profusamente el Espíritu.<cite>— Catecismo de la Iglesia Católica, n. 731</cite></blockquote></div></details>
+      <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Catechism, no. 731</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>731.</b> On the day of Pentecost when the seven weeks of Easter had come to an end, Christ's Passover is fulfilled in the outpouring of the Holy Spirit, manifested, given, and communicated as a divine person: of his fullness, Christ, the Lord, pours out the Spirit in abundance.<cite>— Catechism of the Catholic Church, no. 731</cite></blockquote></div></details>
+    </section>
+
+    <section class="esp-section" id="sacramentos">
+      <h2 class="esp-section-title" data-lang="es">Dónde actúa hoy: los sacramentos</h2>
+      <h2 class="esp-section-title" data-lang="en" style="display:none">Where He acts today: the sacraments</h2>
+      <p class="esp-lead" data-lang="es">El Espíritu Santo no es un recuerdo del pasado. Hoy actúa de manera real en los sacramentos de la Iglesia.</p>
+      <p class="esp-lead" data-lang="en" style="display:none">The Holy Spirit is not a memory of the past. Today He acts truly in the sacraments of the Church.</p>
+      <div class="esp-practical-grid">
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">Bautismo</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">Baptism</div>
+          <h3 class="esp-practical-title" data-lang="es">Te hace templo suyo</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">He makes you His temple</h3>
+          <p class="esp-practical-text" data-lang="es">En el Bautismo naces «de agua y de Espíritu» y te conviertes en hijo de Dios y templo del Espíritu Santo.</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">In Baptism you are born "of water and Spirit" and become a child of God and a temple of the Holy Spirit.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Juan 3,5</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Jesús le contestó: «En verdad, en verdad te digo: el que no nazca de agua y de Espíritu no puede entrar en el reino de Dios.»<cite>— Juan 3,5 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read John 3:5</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Jesus answered, Amen, amen, I say to you, no one can enter the kingdom of God without being born of water and Spirit.»<cite>— John 3:5 (New American Bible, vatican.va)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="es"><summary>Leer Catecismo, n. 1265</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>1265.</b> El Bautismo no solamente purifica de todos los pecados, hace también del neófito "una nueva creatura" (2 Co 5,17), un hijo adoptivo de Dios (cf Ga 4,5-7) que ha sido hecho "partícipe de la naturaleza divina" (2 P 1,4), miembro de Cristo (cf 1 Co 6,15; 12,27), coheredero con Él (Rm 8,17) y templo del Espíritu Santo (cf 1 Co 6,19).<cite>— Catecismo de la Iglesia Católica, n. 1265</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Catechism, no. 1265</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>1265.</b> Baptism not only purifies from all sins, but also makes the neophyte "a new creature," an adopted son of God, who has become a "partaker of the divine nature," member of Christ and coheir with him, and a temple of the Holy Spirit.<cite>— Catechism of the Catholic Church, no. 1265</cite></blockquote></div></details>
+        </div>
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">Confirmación</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">Confirmation</div>
+          <h3 class="esp-practical-title" data-lang="es">Su efusión especial</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">His full outpouring</h3>
+          <p class="esp-practical-text" data-lang="es">La Confirmación da la efusión especial del Espíritu Santo, como en Pentecostés.</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">Confirmation gives the full outpouring of the Holy Spirit, as at Pentecost.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Catecismo, n. 1302</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>1302.</b> De la celebración se deduce que el efecto del sacramento de la Confirmación es la efusión especial del Espíritu Santo, como fue concedida en otro tiempo a los Apóstoles el día de Pentecostés.<cite>— Catecismo de la Iglesia Católica, n. 1302</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Catechism, no. 1302</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>1302.</b> It is evident from its celebration that the effect of the sacrament of Confirmation is the full outpouring of the Holy Spirit as once granted to the apostles on the day of Pentecost.<cite>— Catechism of the Catholic Church, no. 1302</cite></blockquote></div></details>
+        </div>
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">Eucaristía</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">Eucharist</div>
+          <h3 class="esp-practical-title" data-lang="es">La epíclesis</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">The epiclesis</h3>
+          <p class="esp-practical-text" data-lang="es">En la Misa, la Iglesia pide al Padre que envíe su Espíritu sobre el pan y el vino para que se conviertan en el Cuerpo y la Sangre de Cristo.</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">At Mass, the Church asks the Father to send His Spirit on the bread and wine so that they become the Body and Blood of Christ.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Catecismo, n. 1353</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>1353.</b> En la epíclesis, la Iglesia pide al Padre que envíe su Espíritu Santo (o el poder de su bendición (cf Plegaria Eucarística I o Canon romano, 90; Misal Romano) sobre el pan y el vino, para que se conviertan por su poder, en el Cuerpo y la Sangre de Jesucristo, y que quienes toman parte en la Eucaristía sean un solo cuerpo y un solo espíritu (algunas tradiciones litúrgicas colocan la epíclesis después de la anámnesis). En el relato de la institución, la fuerza de las palabras y de la acción de Cristo y el poder del Espíritu Santo hacen sacramentalmente presentes bajo las especies de pan y de vino su Cuerpo y su Sangre, su sacrificio ofrecido en la cruz de una vez para siempre.<cite>— Catecismo de la Iglesia Católica, n. 1353</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Catechism, no. 1353</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>1353.</b> In the epiclesis, the Church asks the Father to send his Holy Spirit (or the power of his blessing) on the bread and wine, so that by his power they may become the body and blood of Jesus Christ and so that those who take part in the Eucharist may be one body and one spirit (some liturgical traditions put the epiclesis after the anamnesis). In the institution narrative, the power of the words and the action of Christ, and the power of the Holy Spirit, make sacramentally present under the species of bread and wine Christ's body and blood, his sacrifice offered on the cross once for all.<cite>— Catechism of the Catholic Church, no. 1353</cite></blockquote></div></details>
+        </div>
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">Reconciliación</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">Reconciliation</div>
+          <h3 class="esp-practical-title" data-lang="es">El Espíritu del perdón</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">The Spirit of forgiveness</h3>
+          <p class="esp-practical-text" data-lang="es">Jesús resucitado dio el Espíritu Santo a los apóstoles para perdonar los pecados. Cada absolución es obra suya. <a href="/reconciliacion/">Prepararte para confesarte</a></p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">The risen Jesus gave the Holy Spirit to the apostles to forgive sins. Every absolution is His work. <a href="/reconciliacion/">Prepare for confession</a></p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Juan 20,22-23</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Y, dicho esto, sopló sobre ellos y les dijo: «Recibid el Espíritu Santo; a quienes les perdonéis los pecados, les quedan perdonados; a quienes se los retengáis, les quedan retenidos».»<cite>— Juan 20,22-23 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read John 20:22-23</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«And when he had said this, he breathed on them and said to them, "Receive the holy Spirit. Whose sins you forgive are forgiven them, and whose sins you retain are retained."»<cite>— John 20:22-23 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </div>
+      </div>
+      <p data-lang="es">Y en la oración de cada día, Él es el Maestro interior que te enseña a orar.</p>
+      <p data-lang="en" style="display:none">And in everyday prayer, He is the interior Master who teaches you to pray.</p>
+      <details class="tup-ref" data-lang="es"><summary>Leer Catecismo, n. 2672</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>2672.</b> El Espíritu Santo, cuya unción impregna todo nuestro ser, es el Maestro interior de la oración cristiana. Es el artífice de la tradición viva de la oración. Ciertamente hay tantos caminos en la oración como orantes, pero es el mismo Espíritu el que actúa en todos y con todos. En la comunión en el Espíritu Santo la oración cristiana es oración en la Iglesia.<cite>— Catecismo de la Iglesia Católica, n. 2672</cite></blockquote></div></details>
+      <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Catechism, no. 2672</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>2672.</b> The Holy Spirit, whose anointing permeates our whole being, is the interior Master of Christian prayer. He is the artisan of the living tradition of prayer. To be sure, there are as many paths of prayer as there are persons who pray, but it is the same Spirit acting in all and with all. It is in the communion of the Holy Spirit that Christian prayer is prayer in the Church.<cite>— Catechism of the Catholic Church, no. 2672</cite></blockquote></div></details>
+    </section>
+
+    <section class="esp-section" id="frutos">
+      <h2 class="esp-section-title" data-lang="es">Los frutos del Espíritu</h2>
+      <h2 class="esp-section-title" data-lang="en" style="display:none">The fruits of the Spirit</h2>
+      <p class="esp-lead" data-lang="es">Los dones son lo que el Espíritu te da; los frutos son lo que Él va haciendo crecer en ti. La tradición de la Iglesia enumera doce.</p>
+      <p class="esp-lead" data-lang="en" style="display:none">The gifts are what the Spirit gives you; the fruits are what He makes grow in you. The tradition of the Church lists twelve.</p>
+      <ul class="esp-fruits" data-lang="es"><li>caridad</li><li>gozo</li><li>paz</li><li>paciencia</li><li>longanimidad</li><li>bondad</li><li>benignidad</li><li>mansedumbre</li><li>fidelidad</li><li>modestia</li><li>continencia</li><li>castidad</li></ul>
+      <ul class="esp-fruits" data-lang="en" style="display:none"><li>charity</li><li>joy</li><li>peace</li><li>patience</li><li>kindness</li><li>goodness</li><li>generosity</li><li>gentleness</li><li>faithfulness</li><li>modesty</li><li>self-control</li><li>chastity</li></ul>
+      <details class="tup-ref" data-lang="es"><summary>Leer Catecismo, n. 1832</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>1832.</b> Los frutos del Espíritu son perfecciones que forma en nosotros el Espíritu Santo como primicias de la gloria eterna. La tradición de la Iglesia enumera doce: “caridad, gozo, paz, paciencia, longanimidad, bondad, benignidad, mansedumbre, fidelidad, modestia, continencia, castidad” (Ga 5,22-23, vulg.).<cite>— Catecismo de la Iglesia Católica, n. 1832</cite></blockquote></div></details>
+      <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Catechism, no. 1832</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>1832.</b> The fruits of the Spirit are perfections that the Holy Spirit forms in us as the first fruits of eternal glory. The tradition of the Church lists twelve of them: "charity, joy, peace, patience, kindness, goodness, generosity, gentleness, faithfulness, modesty, self-control, chastity."<cite>— Catechism of the Catholic Church, no. 1832</cite></blockquote></div></details>
+      <details class="tup-ref" data-lang="es"><summary>Leer Gálatas 5,22-23</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«En cambio, el fruto del Espíritu es: amor, alegría, paz, paciencia, afabilidad, bondad, lealtad, modestia, dominio de sí. Contra estas cosas no hay ley.»<cite>— Gálatas 5,22-23 (Biblia CEE)</cite></blockquote></div></details>
+      <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Galatians 5:22-23</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«In contrast, the fruit of the Spirit is love, joy, peace, patience, kindness, generosity, faithfulness, gentleness, self-control. Against such there is no law.»<cite>— Galatians 5:22-23 (New American Bible, vatican.va)</cite></blockquote></div></details>
+      <p data-lang="es">Un fruto no se fabrica a fuerza de voluntad: crece despacio cuando el árbol está unido a la vid. Si hoy no ves estos frutos en ti, no te desanimes. Pide al Espíritu que los haga crecer y déjate acompañar (cf. Catecismo, n. 736).</p>
+      <p data-lang="en" style="display:none">A fruit is not manufactured by willpower: it grows slowly when the branch stays joined to the vine. If today you do not see these fruits in yourself, do not lose heart. Ask the Spirit to make them grow and let yourself be accompanied (cf. Catechism, no. 736).</p>
+      <details class="tup-ref" data-lang="es"><summary>Leer Catecismo, n. 736</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>736.</b> Gracias a este poder del Espíritu Santo los hijos de Dios pueden dar fruto. El que nos ha injertado en la Vid verdadera hará que demos "el fruto del Espíritu, que es caridad, alegría, paz, paciencia, afabilidad, bondad, fidelidad, mansedumbre, templanza"(Ga 5, 22-23). "El Espíritu es nuestra Vida": cuanto más renunciamos a nosotros mismos (cf. Mt 16, 24-26), más "obramos también según el Espíritu" (Ga 5, 25): «Por el Espíritu Santo se nos concede de nuevo la entrada en el paraíso, la posesión del reino de los cielos, la recuperación de la adopción de hijos: se nos da la confianza de invocar a Dios como Padre, la participación de la gracia de Cristo, el podernos llamar hijos de la luz, el compartir la gloria eterna (San Basilio Magno, Liber de Spiritu Sancto, 15, 36: PG 32, 132).<cite>— Catecismo de la Iglesia Católica, n. 736</cite></blockquote></div></details>
+      <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Catechism, no. 736</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>736.</b> By this power of the Spirit, God's children can bear much fruit. He who has grafted us onto the true vine will make us bear "the fruit of the Spirit:... love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control." "We live by the Spirit"; the more we renounce ourselves, the more we "walk by the Spirit." Through the Holy Spirit we are restored to paradise, led back to the Kingdom of heaven, and adopted as children, given confidence to call God "Father" and to share in Christ's grace, called children of light and given a share in eternal glory.<cite>— Catechism of the Catholic Church, no. 736</cite></blockquote></div></details>
+    </section>
+
+    <section class="esp-section" id="en-la-tentacion">
+      <h2 class="esp-section-title" data-lang="es">El Espíritu Santo en la tentación</h2>
+      <h2 class="esp-section-title" data-lang="en" style="display:none">The Holy Spirit in temptation</h2>
+      <p class="esp-lead" data-lang="es">El mismo Espíritu que llevó a Jesús al desierto está contigo cuando eres tentado. No estás solo en la lucha: Él viene en ayuda de tu debilidad.</p>
+      <p class="esp-lead" data-lang="en" style="display:none">The same Spirit who led Jesus into the desert is with you when you are tempted. You are not alone in the struggle: He comes to the aid of your weakness.</p>
+      <details class="tup-ref" data-lang="es"><summary>Leer Marcos 1,12</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«A continuación, el Espíritu lo empujó al desierto.»<cite>— Marcos 1,12 (Biblia CEE)</cite></blockquote></div></details>
+      <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Mark 1:12</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«At once the Spirit drove him out into the desert…»<cite>— Mark 1:12 (New American Bible, vatican.va)</cite></blockquote></div></details>
+      <div class="esp-practical-grid">
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">Cuando llega el impulso</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">When the urge comes</div>
+          <h3 class="esp-practical-title" data-lang="es">Invócalo en ese momento</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">Call on Him in that moment</h3>
+          <p class="esp-practical-text" data-lang="es">«Espíritu Santo, ven ahora. Esto me supera. Dame tu fortaleza para esta hora.» Sentir la tentación no es pecar.</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">"Holy Spirit, come now. This is too much for me. Give me Your strength for this hour." Feeling temptation is not sinning.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Gálatas 5,16</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Frente a ello, yo os digo: caminad según el Espíritu y no realizaréis los deseos de la carne…»<cite>— Gálatas 5,16 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Galatians 5:16</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«I say, then: live by the Spirit and you will certainly not gratify the desire of the flesh.»<cite>— Galatians 5:16 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </div>
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">Cuando no sabes qué decir</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">When you do not know what to say</div>
+          <h3 class="esp-practical-title" data-lang="es">Deja que ore en ti</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">Let Him pray in you</h3>
+          <p class="esp-practical-text" data-lang="es">No necesitas una oración perfecta. Basta decir su nombre: «Espíritu Santo». Él intercede por ti.</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">You do not need a perfect prayer. Just say His name: "Holy Spirit." He intercedes for you.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Romanos 8,26</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Del mismo modo, el Espíritu acude en ayuda de nuestra debilidad, pues nosotros no sabemos pedir como conviene; pero el Espíritu mismo intercede por nosotros con gemidos inefables.»<cite>— Romanos 8,26 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Romans 8:26</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«In the same way, the Spirit too comes to the aid of our weakness; for we do not know how to pray as we ought, but the Spirit itself intercedes with inexpressible groanings.»<cite>— Romans 8:26 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </div>
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">Cuando parece demasiado</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">When it seems too much</div>
+          <h3 class="esp-practical-title" data-lang="es">Dios es fiel</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">God is faithful</h3>
+          <p class="esp-practical-text" data-lang="es">Pide también ayuda concreta: aléjate de lo que te expone, llama a alguien de confianza, sal a caminar.</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">Also ask for concrete help: step away from what exposes you, call someone you trust, go for a walk.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer 1 Corintios 10,13</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«No os ha sobrevenido ninguna tentación que no sea de medida humana. Dios es fiel, y él no permitirá que seáis tentados por encima de vuestras fuerzas, sino que con la tentación hará que encontréis también el modo de poder soportarla.»<cite>— 1 Corintios 10,13 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read 1 Corinthians 10:13</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«No trial has come to you but what is human. God is faithful and will not let you be tried beyond your strength; but with the trial he will also provide a way out, so that you may be able to bear it.»<cite>— 1 Corinthians 10:13 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </div>
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">Si caes</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">If you fall</div>
+          <h3 class="esp-practical-title" data-lang="es">Él te lleva de vuelta</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">He leads you back</h3>
+          <p class="esp-practical-text" data-lang="es">El Espíritu no te abandona después de una caída: te mueve a volver. Pide perdón y, si fue algo grave, acude a la confesión.</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">The Spirit does not abandon you after a fall: He moves you to return. Ask forgiveness and, if it was something grave, go to confession.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer Romanos 8,14</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Cuantos se dejan llevar por el Espíritu de Dios, esos son hijos de Dios.»<cite>— Romanos 8,14 (Biblia CEE)</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Romans 8:14</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«For those who are led by the Spirit of God are children of God.»<cite>— Romans 8:14 (New American Bible, vatican.va)</cite></blockquote></div></details>
+        </div>
+      </div>
+      <p class="esp-note" data-lang="es">Más ayuda: <a href="/tentaciones/">Guía contra tentaciones</a> · <a href="/emergencias/">Emergencias espirituales</a></p>
+      <p class="esp-note" data-lang="en" style="display:none">More help: <a href="/tentaciones/">Guide against temptations</a> · <a href="/emergencias/">Spiritual emergencies</a></p>
+    </section>
+
+    <section class="esp-section" id="papas">
+      <h2 class="esp-section-title" data-lang="es">Lo que enseñaron los papas</h2>
+      <h2 class="esp-section-title" data-lang="en" style="display:none">What the popes taught</h2>
+      <div class="esp-practical-grid">
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">León XIII · 1897</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">Leo XIII · 1897</div>
+          <h3 class="esp-practical-title" data-lang="es">Amarlo porque es Dios</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">Love Him because He is God</h3>
+          <p class="esp-practical-text" data-lang="es">En su encíclica sobre el Espíritu Santo, León XIII enseña que le debemos amor porque es Dios, y que debemos invocarlo porque todos necesitamos su ayuda.</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">In his encyclical on the Holy Spirit, Leo XIII teaches that we owe Him love because He is God, and that we must call on Him because we all need His help.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer a León XIII</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Debemos amar al Espíritu Santo, porque es Dios […]. Conviene rogar y pedir al Espíritu Santo, cuyo auxilio y protección todos necesitamos en extremo. Somos pobres, débiles, atribulados, inclinados al mal: luego recurramos a Él, fuente inexhausta de luz, de consuelo y de gracia.»<cite>— León XIII, encíclica <em>Divinum illud munus</em> (1897), texto de vatican.va</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Leo XIII</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Now we owe to the Holy Ghost […] love, because He is God […]. We ought to pray to and invoke the Holy Spirit, for each one of us greatly needs His protection and His help. The more a man is deficient in wisdom, weak in strength, borne down with trouble, prone to sin, so ought he the more to fly to Him who is the never-ceasing fount of light, strength, consolation, and holiness.»<cite>— Leo XIII, encyclical <em>Divinum illud munus</em> (1897), text from vatican.va</cite></blockquote></div></details>
+        </div>
+        <div class="esp-practical-card">
+          <div class="esp-practical-kicker" data-lang="es">San Juan Pablo II · 1986</div>
+          <div class="esp-practical-kicker" data-lang="en" style="display:none">St. John Paul II · 1986</div>
+          <h3 class="esp-practical-title" data-lang="es">Persona-amor, Persona-don</h3>
+          <h3 class="esp-practical-title" data-lang="en" style="display:none">Person-Love, Person-Gift</h3>
+          <p class="esp-practical-text" data-lang="es">Juan Pablo II dedicó una encíclica entera al Espíritu Santo. En ella explica que el Espíritu es el amor del Padre y del Hijo hecho Persona, y el Don del que nacen todos los dones.</p>
+          <p class="esp-practical-text" data-lang="en" style="display:none">John Paul II devoted an entire encyclical to the Holy Spirit. In it he explains that the Spirit is the love of the Father and the Son as a Person, and the Gift from whom every gift comes.</p>
+          <details class="tup-ref" data-lang="es"><summary>Leer a Juan Pablo II</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«El Espíritu Santo es pues la expresión personal de esta donación, de este ser-amor. Es Persona-amor. Es Persona-don.»<cite>— San Juan Pablo II, encíclica <em>Dominum et vivificantem</em> (1986), n. 10</cite></blockquote></div></details>
+          <details class="tup-ref" data-lang="en" style="display:none"><summary>Read John Paul II</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«It is the Holy Spirit who is the personal expression of this self-giving, of this being-love. He is Person-Love. He is Person-Gift.»<cite>— St. John Paul II, encyclical <em>Dominum et vivificantem</em> (1986), no. 10</cite></blockquote></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="esp-section" id="pecado-contra">
+      <h2 class="esp-section-title" data-lang="es">¿Qué es el pecado contra el Espíritu Santo?</h2>
+      <h2 class="esp-section-title" data-lang="en" style="display:none">What is the sin against the Holy Spirit?</h2>
+      <p class="esp-lead" data-lang="es">Muchas personas se angustian con esta frase de Jesús. La Iglesia la explica con claridad y sin miedo.</p>
+      <p class="esp-lead" data-lang="en" style="display:none">Many people are distressed by these words of Jesus. The Church explains them clearly and without fear.</p>
+      <details class="tup-ref" data-lang="es"><summary>Leer Mateo 12,31-32</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Por eso os digo que cualquier pecado o blasfemia serán perdonados a los hombres, pero la blasfemia contra el Espíritu no será perdonada. Y quien diga una palabra contra el Hijo del hombre será perdonado, pero quien hable contra el Espíritu Santo no será perdonado ni en este mundo ni en el otro.»<cite>— Mateo 12,31-32 (Biblia CEE)</cite></blockquote></div></details>
+      <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Matthew 12:31-32</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Therefore, I say to you, every sin and blasphemy will be forgiven people, but blasphemy against the Spirit will not be forgiven. And whoever speaks a word against the Son of Man will be forgiven; but whoever speaks against the holy Spirit will not be forgiven, either in this age or in the age to come.»<cite>— Matthew 12:31-32 (New American Bible, vatican.va)</cite></blockquote></div></details>
+      <p data-lang="es">El Catecismo enseña que <strong>no hay límites a la misericordia de Dios</strong>. Lo que Jesús describe es negarse <em>deliberadamente</em> a acoger esa misericordia mediante el arrepentimiento. No es una palabra dicha en un momento de rabia, ni un pensamiento que llega sin querer, ni una duda.</p>
+      <p data-lang="en" style="display:none">The Catechism teaches that <strong>there are no limits to the mercy of God</strong>. What Jesus describes is <em>deliberately</em> refusing to accept that mercy by repenting. It is not a word said in a moment of anger, nor a thought that comes unbidden, nor a doubt.</p>
+      <details class="tup-ref" data-lang="es"><summary>Leer Catecismo, n. 1864</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>1864.</b> “Todo pecado y blasfemia será perdonado a los hombres pero la blasfemia contra el Espíritu Santo no será perdonada” (Mc 3, 29; cf Mt 12, 32; Lc 12, 10). No hay límites a la misericordia de Dios, pero quien se niega deliberadamente a acoger la misericordia de Dios mediante el arrepentimiento rechaza el perdón de sus pecados y la salvación ofrecida por el Espíritu Santo (cf DeV 46). Semejante endurecimiento puede conducir a la condenación final y a la perdición eterna.<cite>— Catecismo de la Iglesia Católica, n. 1864</cite></blockquote></div></details>
+      <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Catechism, no. 1864</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>1864.</b> "Whoever blasphemes against the Holy Spirit never has forgiveness, but is guilty of an eternal sin." There are no limits to the mercy of God, but anyone who deliberately refuses to accept his mercy by repenting, rejects the forgiveness of his sins and the salvation offered by the Holy Spirit. Such hardness of heart can lead to final impenitence and eternal loss.<cite>— Catechism of the Catholic Church, no. 1864</cite></blockquote></div></details>
+      <p data-lang="es">Si te preocupa haberlo cometido, fíjate en esto: quien rechaza deliberadamente la misericordia no busca el perdón. Tu inquietud muestra que quieres a Dios. Si esta duda te angustia o vuelve una y otra vez, háblalo con un confesor; no tienes que resolverla solo.</p>
+      <p data-lang="en" style="display:none">If you worry that you have committed it, notice this: whoever deliberately refuses mercy does not seek forgiveness. Your concern shows that you want God. If this doubt distresses you or keeps returning, talk to a confessor; you do not have to resolve it alone.</p>
+    </section>
+
     <!-- Los 7 Dones -->
-    <section class="esp-section">
+    <section class="esp-section" id="dones">
       <h2 class="esp-section-title" data-lang="es">Los Siete Dones</h2>
       <h2 class="esp-section-title" data-lang="en" style="display:none">The Seven Gifts</h2>
 
-      <blockquote class="esp-scripture" data-lang="es">
-        «Reposará sobre él el Espíritu del Señor: espíritu de sabiduría e inteligencia, espíritu de consejo y fortaleza, espíritu de ciencia y temor del Señor.»
-        <cite>— Isaías 11, 2</cite>
-      </blockquote>
-      <blockquote class="esp-scripture" data-lang="en" style="display:none">
-        "The Spirit of the LORD will rest on him — the Spirit of wisdom and of understanding, the Spirit of counsel and of might, the Spirit of the knowledge and fear of the LORD."
-        <cite>— Isaiah 11:2</cite>
-      </blockquote>
+      <blockquote class="esp-scripture" data-lang="es">«Sobre él se posará el espíritu del Señor: espíritu de sabiduría y entendimiento, espíritu de consejo y fortaleza, espíritu de ciencia y temor del Señor.»<cite>— Isaías 11,2</cite></blockquote>
+      <blockquote class="esp-scripture" data-lang="en" style="display:none">«The spirit of the LORD shall rest upon him: a spirit of wisdom and of understanding, A spirit of counsel and of strength, a spirit of knowledge and of fear of the LORD…»<cite>— Isaiah 11:2</cite></blockquote>
+      <details class="tup-ref" data-lang="es"><summary>Leer Isaías 11,2</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«Sobre él se posará el espíritu del Señor: espíritu de sabiduría y entendimiento, espíritu de consejo y fortaleza, espíritu de ciencia y temor del Señor.»<cite>— Isaías 11,2 (Biblia CEE)</cite></blockquote></div></details>
+      <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Isaiah 11:2</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse">«The spirit of the LORD shall rest upon him: a spirit of wisdom and of understanding, A spirit of counsel and of strength, a spirit of knowledge and of fear of the LORD…»<cite>— Isaiah 11:2 (New American Bible, vatican.va)</cite></blockquote></div></details>
+      <details class="tup-ref" data-lang="es"><summary>Leer Catecismo, nn. 1830, 1831</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>1830.</b> La vida moral de los cristianos está sostenida por los dones del Espíritu Santo. Estos son disposiciones permanentes que hacen al hombre dócil para seguir los impulsos del Espíritu Santo.<cite>— Catecismo de la Iglesia Católica, n. 1830</cite></blockquote><blockquote class="tup-ref-verse"><b>1831.</b> Los siete dones del Espíritu Santo son: sabiduría, inteligencia, consejo, fortaleza, ciencia, piedad y temor de Dios. Pertenecen en plenitud a Cristo, Hijo de David (cf Is 11, 1-2). Completan y llevan a su perfección las virtudes de quienes los reciben. Hacen a los fieles dóciles para obedecer con prontitud a las inspiraciones divinas. «Tu espíritu bueno me guíe por una tierra llana» (Sal 143,10). «Todos los que son guiados por el Espíritu de Dios son hijos de Dios [...] Y, si hijos, también herederos; herederos de Dios y coherederos de Cristo» (Rm 8, 14.17)<cite>— Catecismo de la Iglesia Católica, n. 1831</cite></blockquote></div></details>
+      <details class="tup-ref" data-lang="en" style="display:none"><summary>Read Catechism, nos. 1830, 1831</summary><div class="tup-ref-body"><blockquote class="tup-ref-verse"><b>1830.</b> The moral life of Christians is sustained by the gifts of the Holy Spirit. These are permanent dispositions which make man docile in following the promptings of the Holy Spirit.<cite>— Catechism of the Catholic Church, no. 1830</cite></blockquote><blockquote class="tup-ref-verse"><b>1831.</b> The seven gifts of the Holy Spirit are wisdom, understanding, counsel, fortitude, knowledge, piety, and fear of the Lord. They belong in their fullness to Christ, Son of David. They complete and perfect the virtues of those who receive them. They make the faithful docile in readily obeying divine inspirations. Let your good spirit lead me on a level path. For all who are led by the Spirit of God are sons of God... If children, then heirs, heirs of God and fellow heirs with Christ.<cite>— Catechism of the Catholic Church, no. 1831</cite></blockquote></div></details>
 
       <div class="esp-gifts-grid" id="giftsGrid">
         <!-- filled by JS -->
@@ -345,14 +1153,8 @@ Amen.</p>
       <h2 class="esp-section-title" data-lang="es">Cómo hablarle al Espíritu Santo</h2>
       <h2 class="esp-section-title" data-lang="en" style="display:none">How to speak to the Holy Spirit</h2>
 
-      <blockquote class="esp-scripture" data-lang="es">
-        «Cuando venga Él, el Espíritu de la verdad, los guiará hasta la verdad completa.»
-        <cite>— Juan 16, 13</cite>
-      </blockquote>
-      <blockquote class="esp-scripture" data-lang="en" style="display:none">
-        "When He comes, the Spirit of truth, He will guide you to all truth."
-        <cite>— John 16:13</cite>
-      </blockquote>
+      <blockquote class="esp-scripture" data-lang="es">«…cuando venga él, el Espíritu de la verdad, os guiará hasta la verdad plena. Pues no hablará por cuenta propia, sino que hablará de lo que oye y os comunicará lo que está por venir.»<cite>— Juan 16,13</cite></blockquote>
+      <blockquote class="esp-scripture" data-lang="en" style="display:none">«But when he comes, the Spirit of truth, he will guide you to all truth. He will not speak on his own, but he will speak what he hears, and will declare to you the things that are coming.»<cite>— John 16:13</cite></blockquote>
 
       <p class="esp-invocation" data-lang="es">No hace falta hablarle con palabras complicadas. El Espíritu Santo entiende el suspiro, la duda, la herida y el deseo de hacer el bien. Puedes hablarle como a un Consolador, un Maestro interior y un Amigo de tu alma.</p>
       <p class="esp-invocation" data-lang="en" style="display:none">You do not need complicated words. The Holy Spirit understands a sigh, a doubt, a wound, and the desire to do good. You can speak to Him as Consoler, interior Teacher, and Friend of your soul.</p>
@@ -413,14 +1215,8 @@ Amen.</p>
       <h2 class="esp-section-title" data-lang="es">Los Carismas</h2>
       <h2 class="esp-section-title" data-lang="en" style="display:none">The Charisms</h2>
 
-      <blockquote class="esp-scripture" data-lang="es">
-        «A cada uno se le da la manifestación del Espíritu para provecho de todos.»
-        <cite>— 1 Corintios 12, 7</cite>
-      </blockquote>
-      <blockquote class="esp-scripture" data-lang="en" style="display:none">
-        "To each one the manifestation of the Spirit is given for the common good."
-        <cite>— 1 Corinthians 12:7</cite>
-      </blockquote>
+      <blockquote class="esp-scripture" data-lang="es">«Pero a cada cual se le otorga la manifestación del Espíritu para el bien común.»<cite>— 1 Corintios 12,7</cite></blockquote>
+      <blockquote class="esp-scripture" data-lang="en" style="display:none">«To each individual the manifestation of the Spirit is given for some benefit.»<cite>— 1 Corinthians 12:7</cite></blockquote>
 
       <div class="esp-charisms-grid" id="charismsGrid"></div>
     </section>
@@ -434,41 +1230,35 @@ Amen.</p>
     </section>
 
     <!-- CUANDO NO SIENTO NADA DE DIOS -->
-    <section class="esp-section">
+    <section class="esp-section" id="sequedad">
       <h2 class="esp-section-title" data-lang="es">Cuando no siento nada de Dios</h2>
       <h2 class="esp-section-title" data-lang="en" style="display:none">When I feel nothing from God</h2>
 
-      <blockquote class="esp-scripture" data-lang="es">
-        «Señor, ¿hasta cuándo me olvidarás? ¿Hasta cuándo esconderás tu rostro? ¿Hasta cuándo andaré ansioso?» — «Pero yo espero en tu misericordia; mi corazón se alegra en tu salvación.»
-        <cite>— Salmo 13, 1 y 5</cite>
-      </blockquote>
-      <blockquote class="esp-scripture" data-lang="en" style="display:none">
-        "How long, LORD? Will you forget me forever? How long will you hide your face from me? How long must I wrestle with my thoughts?" — "But I trust in your unfailing love; my heart rejoices in your salvation."
-        <cite>— Psalm 13:1 & 5</cite>
-      </blockquote>
+      <blockquote class="esp-scripture" data-lang="es">«¿Hasta cuándo, Señor, seguirás olvidándome? ¿Hasta cuándo me esconderás tu rostro?» […] «Porque yo confío en tu misericordia: mi alma gozará con tu salvación, y cantaré al Señor por el bien que me ha hecho.»<cite>— Salmo 13,2.6</cite></blockquote>
+      <blockquote class="esp-scripture" data-lang="en" style="display:none">«How long, LORD? Will you utterly forget me? How long will you hide your face from me?» […] «I trust in your faithfulness. Grant my heart joy in your help, That I may sing of the LORD, "How good our God has been to me!"»<cite>— Psalm 13:2, 6</cite></blockquote>
 
-      <p style="font-family: var(--font-serif); font-size: 1rem; color: rgba(255,255,255,0.88); line-height: 1.8; margin-bottom: 1.2rem;" data-lang="es">La <strong>sequedad espiritual</strong> es una experiencia común en la vida de fe. No es fracaso tuyo. Es cuando Dios te invita a confiar sin sentir su presencia. En estos momentos, tu fe es más pura, porque descansa sólo en Él, no en tus emociones.</p>
-      <p style="font-family: var(--font-serif); font-size: 1rem; color: rgba(255,255,255,0.88); line-height: 1.8; margin-bottom: 1.2rem; display: none;" data-lang="en">Spiritual <strong>dryness</strong> is a common experience in the life of faith. It is not your failure. It is when God invites you to trust without feeling His presence. In these moments, your faith is purer, because it rests only in Him, not in your emotions.</p>
+      <p style="font-family: var(--font-serif); font-size: 1rem; color: rgba(255,255,255,0.88); line-height: 1.8; margin-bottom: 1.2rem;" data-lang="es">La <strong>sequedad espiritual</strong> es una experiencia común en la vida de fe. No significa por sí sola que hayas fallado. Puede ser un tiempo en que Dios te invita a confiar sin sentir su presencia: tu fe descansa en Él y no en tus emociones.</p>
+      <p style="font-family: var(--font-serif); font-size: 1rem; color: rgba(255,255,255,0.88); line-height: 1.8; margin-bottom: 1.2rem; display: none;" data-lang="en">Spiritual <strong>dryness</strong> is a common experience in the life of faith. It does not by itself mean that you have failed. It can be a time when God invites you to trust without feeling His presence: your faith rests in Him and not in your emotions.</p>
 
       <div style="background: rgba(201,168,76,0.07); border: 1px solid rgba(201,168,76,0.22); border-radius: 12px; padding: 1.75rem 1.5rem; margin-bottom: 1.5rem;">
         <h3 style="font-family: var(--font-serif); font-size: 1.1rem; color: var(--gold-light); margin: 0 0 1rem;" data-lang="es">🕯 Tres cosas que recuerda en la sequedad:</h3>
         <h3 style="font-family: var(--font-serif); font-size: 1.1rem; color: var(--gold-light); margin: 0 0 1rem; display: none;" data-lang="en">🕯 Three things to remember in dryness:</h3>
 
         <div style="font-family: var(--font-serif); font-size: 0.95rem; color: rgba(255,255,255,0.85); line-height: 1.9;" data-lang="es">
-          <p><strong>1. Dios no se fue.</strong> Sólo está callado. Su silencio es también su voz — te enseña a amarlo sin recompensa emocional.</p>
-          <p><strong>2. Tu fe ahora es más fuerte.</strong> Cuando rezas sin sentir nada, tu acto es puro amor, no dependencia de emociones. Es sacrificio genuino.</p>
-          <p><strong>3. Esto pasará.</strong> La sequedad espiritual siempre es temporal. Los santos más grandes atravesaron desiertos largos. Tú también saldrás.</p>
+          <p><strong>1. No sentir a Dios no significa que se haya ido.</strong> El Espíritu Santo habita en ti aunque no lo sientas (cf. 1 Cor 6,19). El silencio puede enseñarte a amarlo sin buscar solo consuelo.</p>
+          <p><strong>2. Tu oración sigue valiendo.</strong> Cuando rezas sin sentir nada, sigues eligiendo a Dios. Eso es fe y amor, aunque no lo notes.</p>
+          <p><strong>3. No estás solo en esto.</strong> Muchos santos atravesaron largos desiertos. Si la sequedad se junta con tristeza profunda, cansancio o falta de esperanza, habla con un sacerdote y, si hace falta, con un profesional de la salud.</p>
         </div>
-        <div style=\"font-family: var(--font-serif); font-size: 0.95rem; color: rgba(255,255,255,0.85); line-height: 1.9; display: none;\" data-lang=\"en\">
-          <p><strong>1. God did not leave.</strong> He is only silent. His silence is also His voice — it teaches you to love Him without emotional reward.</p>
-          <p><strong>2. Your faith is now stronger.</strong> When you pray without feeling anything, your act is pure love, not emotional dependency. It is genuine sacrifice.</p>
-          <p><strong>3. This will pass.</strong> Spiritual dryness is always temporary. The greatest saints endured long deserts. You will too.</p>
+        <div style="font-family: var(--font-serif); font-size: 0.95rem; color: rgba(255,255,255,0.85); line-height: 1.9; display: none;" data-lang="en">
+          <p><strong>1. Not feeling God does not mean He has left.</strong> The Holy Spirit dwells in you even when you do not feel Him (cf. 1 Cor 6:19). Silence can teach you to love Him without seeking only consolation.</p>
+          <p><strong>2. Your prayer still counts.</strong> When you pray without feeling anything, you are still choosing God. That is faith and love, even if you do not notice it.</p>
+          <p><strong>3. You are not alone in this.</strong> Many saints went through long deserts. If dryness comes with deep sadness, exhaustion, or loss of hope, talk to a priest and, if needed, to a health professional.</p>
         </div>
       </div>
 
       <div class="esp-closing-prayer" style="background: rgba(201,168,76,0.07); border: 1px solid rgba(201,168,76,0.22); border-radius: 12px; padding: 1.75rem 1.5rem; font-family: var(--font-serif); font-size: 0.95rem; color: rgba(255,255,255,0.88); line-height: 1.8; white-space: pre-line;">
-        <p data-lang="es">«Señor, aunque no te siento, creo en ti. Aunque el camino es oscuro, confío en ti. Mi corazón te busca en el silencio. Mi fe te adoración en la noche. Ven, aunque sea en el silencio. Te amo incluso cuando no te siento. Amén.»</p>
-        <p data-lang="en" style="display: none;">\"Lord, though I do not feel You, I believe in You. Though the path is dark, I trust in You. My heart seeks You in silence. My faith adorns You in the night. Come, even if in silence. I love You even when I do not feel You. Amen.\"</p>
+        <p data-lang="es">«Señor, aunque no te siento, creo en ti. Aunque el camino es oscuro, confío en ti. Mi corazón te busca en el silencio. Mi fe te adora en la noche. Ven, aunque sea en el silencio. Te amo incluso cuando no te siento. Amén.»</p>
+        <p data-lang="en" style="display: none;">"Lord, though I do not feel You, I believe in You. Though the path is dark, I trust in You. My heart seeks You in silence. My faith adores You in the night. Come, even if in silence. I love You even when I do not feel You. Amen."</p>
       </div>
     </section>
 

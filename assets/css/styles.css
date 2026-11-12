@@ -4000,3 +4000,14 @@ body {
   font-style: normal;
   opacity: 0.8;
 }
+
+/* ── Shared static hero illustrations ── */
+.tup-hero-art {
+  display: block;
+  width: min(220px, 58vw);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  margin: 0.5rem auto 1.25rem;
+  filter: drop-shadow(0 0 18px rgba(201,168,76,0.32));
+  animation: none;
+}

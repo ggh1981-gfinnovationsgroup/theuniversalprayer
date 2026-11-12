@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-labelledby="isT">
+  <title id="isT">Manos en oración perseverante y cuerda que se rompe bajo la luz / Hands in persevering prayer as the cord snaps beneath the light</title>
+  <defs>
+    <radialGradient id="isGlow" cx="50%" cy="38%" r="52%">
+      <stop offset="0%" stop-color="#fff8dc" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#e8c97a" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="isHand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#eadfbf"/>
+    </linearGradient>
+    <linearGradient id="isBeam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff3a0" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#fff3a0" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#fff3a0" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="120" cy="100" r="96" fill="url(#isGlow)"/>
+  <path d="M104 0 L136 0 L150 110 L90 110 Z" fill="url(#isBeam)" opacity="0.55"/>
+
+  <g stroke="#e8c97a" stroke-linecap="round" stroke-width="2" opacity="0.45">
+    <line x1="120" y1="6" x2="120" y2="20"/>
+    <line x1="86" y1="14" x2="92" y2="27"/>
+    <line x1="154" y1="14" x2="148" y2="27"/>
+    <line x1="58" y1="34" x2="68" y2="44"/>
+    <line x1="182" y1="34" x2="172" y2="44"/>
+  </g>
+
+  <!-- Praying hands -->
+  <g stroke="#c9a84c" stroke-width="1.5" stroke-linejoin="round" fill="url(#isHand)">
+    <path d="M119.5 34 C112 34 107 42 106 52 C99 52 95 60 94 70 C88 72 85 80 85 92 C80 96 79 104 80 114 C81 130 84 146 92 160 L95 172 L119.5 172 Z"/>
+    <path d="M120.5 34 C128 34 133 42 134 52 C141 52 145 60 146 70 C152 72 155 80 155 92 C160 96 161 104 160 114 C159 130 156 146 148 160 L145 172 L120.5 172 Z"/>
+    <path d="M100 160 C96 146 98 130 108 120 C114 114 119 116 119 122 C119 134 112 150 106 162 Z"/>
+    <path d="M140 160 C144 146 142 130 132 120 C126 114 121 116 121 122 C121 134 128 150 134 162 Z"/>
+  </g>
+  <g stroke="#c9a84c" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.75">
+    <path d="M106 52 C106 64 107 76 108 88"/>
+    <path d="M94 70 C95 82 96 92 97 104"/>
+    <path d="M85 92 C86 100 87 108 88 116"/>
+    <path d="M134 52 C134 64 133 76 132 88"/>
+    <path d="M146 70 C145 82 144 92 143 104"/>
+    <path d="M155 92 C154 100 153 108 152 116"/>
+  </g>
+
+  <!-- Sleeves -->
+  <path d="M92 174 L148 174 C156 190 166 204 178 216 C150 224 90 224 62 216 C74 204 84 190 92 174 Z" fill="#142447" stroke="#c9a84c" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M120 176 L120 220" stroke="#c9a84c" stroke-width="1.2" opacity="0.6"/>
+  <line x1="90" y1="175" x2="150" y2="175" stroke="#e8c97a" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Snapped cord around the wrists -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M96 166 Q104 171 112 172" stroke="#8a6d3a" stroke-width="5"/>
+    <path d="M128 172 Q136 171 144 166" stroke="#8a6d3a" stroke-width="5"/>
+    <path d="M96 166 C84 160 72 168 58 186" stroke="#8a6d3a" stroke-width="5"/>
+    <path d="M144 166 C156 160 168 168 182 186" stroke="#8a6d3a" stroke-width="5"/>
+    <g stroke="#e8c97a" stroke-width="1.4" stroke-dasharray="3 4" opacity="0.85">
+      <path d="M96 166 Q104 171 112 172"/>
+      <path d="M128 172 Q136 171 144 166"/>
+      <path d="M96 166 C84 160 72 168 58 186"/>
+      <path d="M144 166 C156 160 168 168 182 186"/>
+    </g>
+    <g stroke="#8a6d3a" stroke-width="1.6">
+      <line x1="112" y1="172" x2="116" y2="168"/>
+      <line x1="112" y1="172" x2="117" y2="174"/>
+      <line x1="128" y1="172" x2="124" y2="168"/>
+      <line x1="128" y1="172" x2="123" y2="174"/>
+      <line x1="58" y1="186" x2="52" y2="188"/>
+      <line x1="58" y1="186" x2="56" y2="193"/>
+      <line x1="182" y1="186" x2="188" y2="188"/>
+      <line x1="182" y1="186" x2="184" y2="193"/>
+    </g>
+  </g>
+  <g stroke="#fff3a0" stroke-width="1.8" stroke-linecap="round">
+    <line x1="120" y1="178" x2="120" y2="188"/>
+    <line x1="113" y1="182" x2="108" y2="190"/>
+    <line x1="127" y1="182" x2="132" y2="190"/>
+  </g>
+</svg>
