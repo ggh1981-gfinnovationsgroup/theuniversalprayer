@@ -32,6 +32,9 @@ test('el HTML del Espíritu Santo no tiene enlaces externos ni barras escapadas'
     expect(html.match(new RegExp(`id="${id}"`, 'g')), id).toHaveLength(1);
     expect(html, `índice → ${id}`).toContain(`href="#${id}"`);
   }
+  expect(html).toContain('El Espíritu Santo no es un ayudante subordinado: es Dios');
+  expect(html).toContain('When He helps you, God Himself is personally at work in you');
+  expect(html).toContain('La Trinidad no son tres dioses, sino un solo Dios en tres Personas');
 });
 
 for (const lang of ['es', 'en']) {
@@ -44,6 +47,10 @@ for (const lang of ['es', 'en']) {
       await expect(section.locator(`h2[data-lang="${lang}"]`).first(), id).toBeVisible();
       await expect(section.locator(`h2[data-lang="${other}"]`).first(), id).toBeHidden();
     }
+    const subtitle = page.locator(`.esp-subtitle[data-lang="${lang}"]`);
+    await expect(subtitle).toBeVisible();
+    await expect(subtitle).toContainText(lang === 'es' ? 'no es un ayudante subordinado' : 'not a subordinate assistant');
+    await expect(subtitle).toContainText(lang === 'es' ? 'Los tres son un solo Dios' : 'The three are one God');
     await expect(page.locator(`.esp-toc-links a[data-lang="${lang}"]`)).toHaveCount(SECTIONS.length);
     await expect(page.locator(`#sequedad div[data-lang="${lang}"]`).first()).toBeVisible();
     await expect(page.locator(`#sequedad div[data-lang="${other}"]`).first()).toBeHidden();

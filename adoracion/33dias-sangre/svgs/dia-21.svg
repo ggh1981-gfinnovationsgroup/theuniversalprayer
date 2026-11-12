@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<defs><radialGradient id="h"><stop stop-color="#c9a84c" stop-opacity=".24"/><stop offset="1" stop-color="#c9a84c" stop-opacity="0"/></radialGradient></defs>
+<circle cx="50" cy="50" r="46" fill="url(#h)"/>
+<g stroke="#c9a84c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M25 65V27L34 33L40 22L50 31L60 22L66 33L75 27V65M20 67H80V75H20Z" fill="#34485c"/>
+<path d="M33 49Q27 38 39 37Q45 29 52 37Q64 32 66 44L60 56H37Z" fill="#f6f0df"/>
+<path d="M60 39Q73 34 72 44L66 50H61M39 55V62M57 55V62" fill="#f6f0df"/>
+<path d="M41 75H59Q58 84 50 84Q42 84 41 75ZM50 84V91M44 91H56" fill="#9e4f48"/>
+<path d="M17 16V24M13 20H21M83 16V24M79 20H87M50 7V15M46 11H54" fill="none"/>
+</g></svg>

@@ -1370,6 +1370,11 @@
         card.className = 'a33-card' + (done ? ' a33-card--done' : '') + (!avail ? ' a33-card--soon' : '');
         card.disabled  = !avail;
         card.dataset.day = i;
+        if (avail && data.svg) {
+          const iw = document.createElement('span'); iw.className = 'a33-card-icon';
+          const img = document.createElement('img'); img.src = data.svg; img.alt = ''; img.width = img.height = 48;
+          iw.appendChild(img); card.appendChild(iw);
+        }
         const num = document.createElement('span'); num.className = 'a33-card-num'; num.textContent = String(i).padStart(2, '0');
         const st  = document.createElement('span'); st.className  = 'a33-card-status'; st.textContent = done ? '✓' : (!avail ? '…' : '○');
         const ttl = document.createElement('span'); ttl.className = 'a33-card-title';
@@ -1529,6 +1534,11 @@
         const card  = document.createElement('button');
         card.className = 'a33-card' + (done ? ' a33-card--done' : '') + (!avail ? ' a33-card--soon' : '');
         card.disabled  = !avail;
+        if (avail && data.svg) {
+          const iw = document.createElement('span'); iw.className = 'a33-card-icon';
+          const img = document.createElement('img'); img.src = data.svg; img.alt = ''; img.width = img.height = 48;
+          iw.appendChild(img); card.appendChild(iw);
+        }
         const num = document.createElement('span'); num.className = 'a33-card-num'; num.textContent = String(i).padStart(2, '0');
         const st  = document.createElement('span'); st.className  = 'a33-card-status'; st.textContent = done ? '✓' : (!avail ? '…' : '○');
         const ttl = document.createElement('span'); ttl.className = 'a33-card-title';
@@ -1673,6 +1683,11 @@
         const card  = document.createElement('button');
         card.className = 'a33-card' + (done ? ' a33-card--done' : '') + (!avail ? ' a33-card--soon' : '');
         card.disabled  = !avail;
+        if (avail && data.svg) {
+          const iw = document.createElement('span'); iw.className = 'a33-card-icon';
+          const img = document.createElement('img'); img.src = data.svg; img.alt = ''; img.width = img.height = 48;
+          iw.appendChild(img); card.appendChild(iw);
+        }
         const num = document.createElement('span'); num.className = 'a33-card-num'; num.textContent = String(i).padStart(2, '0');
         const st  = document.createElement('span'); st.className  = 'a33-card-status'; st.textContent = done ? '✓' : (!avail ? '…' : '○');
         const ttl = document.createElement('span'); ttl.className = 'a33-card-title';
@@ -1817,6 +1832,11 @@
         const card  = document.createElement('button');
         card.className = 'a33-card' + (done ? ' a33-card--done' : '') + (!avail ? ' a33-card--soon' : '');
         card.disabled  = !avail;
+        if (avail && data.svg) {
+          const iw = document.createElement('span'); iw.className = 'a33-card-icon';
+          const img = document.createElement('img'); img.src = data.svg; img.alt = ''; img.width = img.height = 48;
+          iw.appendChild(img); card.appendChild(iw);
+        }
         const num = document.createElement('span'); num.className = 'a33-card-num'; num.textContent = String(i).padStart(2, '0');
         const st  = document.createElement('span'); st.className  = 'a33-card-status'; st.textContent = done ? '✓' : (!avail ? '…' : '○');
         const ttl = document.createElement('span'); ttl.className = 'a33-card-title';
@@ -1961,6 +1981,11 @@
         const card  = document.createElement('button');
         card.className = 'a33-card' + (done ? ' a33-card--done' : '') + (!avail ? ' a33-card--soon' : '');
         card.disabled  = !avail;
+        if (avail && data.svg) {
+          const iw = document.createElement('span'); iw.className = 'a33-card-icon';
+          const img = document.createElement('img'); img.src = data.svg; img.alt = ''; img.width = img.height = 48;
+          iw.appendChild(img); card.appendChild(iw);
+        }
         const num = document.createElement('span'); num.className = 'a33-card-num'; num.textContent = String(i).padStart(2, '0');
         const st  = document.createElement('span'); st.className  = 'a33-card-status'; st.textContent = done ? '✓' : (!avail ? '…' : '○');
         const ttl = document.createElement('span'); ttl.className = 'a33-card-title';
@@ -2105,6 +2130,11 @@
         const card  = document.createElement('button');
         card.className = 'a33-card' + (done ? ' a33-card--done' : '') + (!avail ? ' a33-card--soon' : '');
         card.disabled  = !avail;
+        if (avail && data.svg) {
+          const iw = document.createElement('span'); iw.className = 'a33-card-icon';
+          const img = document.createElement('img'); img.src = data.svg; img.alt = ''; img.width = img.height = 48;
+          iw.appendChild(img); card.appendChild(iw);
+        }
         const num = document.createElement('span'); num.className = 'a33-card-num'; num.textContent = String(i).padStart(2, '0');
         const st  = document.createElement('span'); st.className  = 'a33-card-status'; st.textContent = done ? '✓' : (!avail ? '…' : '○');
         const ttl = document.createElement('span'); ttl.className = 'a33-card-title';
