@@ -57,6 +57,7 @@
     { id: 'meses', href: '/meses/', labels: { es: 'Meses Devocionales', en: 'Devotional Months' }, icon: '📅' },
     { id: 'musica', href: '/musica/', labels: { es: 'Música', en: 'Music' }, icon: '🎵' },
     { id: 'salmosdiarios', href: '/salmos-diarios/', labels: { es: 'Salmos para cada momento', en: 'Psalms for every moment' }, icon: '📖' },
+    { id: 'sabiduria', href: '/sabiduria/', labels: { es: 'Sabiduría para cada situación', en: 'Wisdom for every situation' }, icon: '🧭' },
     { id: 'medallabenito', href: '/medalla-san-benito/', labels: { es: 'Medalla de San Benito', en: 'Medal of Saint Benedict' }, icon: '🪙' },
     { id: 'medallamilagrosa', href: '/medalla-milagrosa/', labels: { es: 'Medalla Milagrosa', en: 'Miraculous Medal' }, icon: '🌸' },
     { id: 'misericordia', href: '/misericordia/', labels: { es: 'Misericordia', en: 'Mercy' }, icon: '🫂' },

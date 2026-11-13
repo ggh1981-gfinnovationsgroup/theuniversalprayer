@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabiduría para cada situación | The Universal Prayer</title>
+  <meta name="description" content="Orientación bíblica católica para decisiones, ansiedad, duelo, familia y otras situaciones, con referencias a Proverbios, Sabiduría y Sirácida." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
+  <meta name="theme-color" content="#c9a84c" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sabiduría para cada situación | The Universal Prayer" />
+  <meta property="og:description" content="Busca una situación y encuentra pasajes de la Biblia para leer, meditar y poner en práctica." />
+  <meta property="og:url" content="https://www.theuniversalprayer.com/sabiduria/" />
+  <link rel="canonical" href="https://www.theuniversalprayer.com/sabiduria/" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" href="/assets/images/icon.svg" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23c9a84c'>✝</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    body.wis-page {
+      min-height: 100dvh;
+      background:
+        radial-gradient(900px 500px at 50% -100px, rgba(201,168,76,0.13), transparent 58%),
+        var(--bg);
+    }
+    .wis-hero { text-align: center; padding: 4.5rem 1.2rem 2rem; }
+    .wis-symbol { font-size: 4rem; line-height: 1; margin: 0 0 1rem; filter: drop-shadow(0 0 16px rgba(201,168,76,0.35)); }
+    .wis-badge { display: inline-block; color: var(--gold); border: 1px solid rgba(201,168,76,0.34); border-radius: 999px; padding: 0.32em 0.92em; margin-bottom: 0.95rem; font-size: 0.7rem; letter-spacing: 0.13em; text-transform: uppercase; }
+    .wis-title { font-family: var(--font-serif); color: #fff; font-size: clamp(2rem, 6vw, 3rem); line-height: 1.12; margin: 0 0 0.72rem; }
+    .wis-subtitle { color: rgba(255,255,255,0.66); max-width: 700px; margin: 0 auto; line-height: 1.72; font-size: 0.95rem; }
+    .wis-content { max-width: 900px; margin: 0 auto; padding: 0 1.2rem 4rem; }
+    .wis-intro { border: 1px solid rgba(201,168,76,0.2); border-radius: 14px; background: rgba(201,168,76,0.055); padding: 1.2rem 1.35rem; margin-bottom: 1.4rem; color: rgba(255,255,255,0.72); line-height: 1.75; }
+    .wis-intro p { margin: 0 0 0.7rem; }
+    .wis-intro p:last-child { margin-bottom: 0; }
+    .wis-intro strong { color: var(--gold-light); }
+    .wis-search-wrap { margin: 1.5rem 0 1rem; }
+    .wis-search-label { display: block; color: var(--gold-light); font-size: 0.85rem; margin-bottom: 0.45rem; }
+    .wis-search { width: 100%; padding: 0.8rem 1rem; border: 1px solid rgba(201,168,76,0.32); border-radius: 10px; background: rgba(255,255,255,0.055); color: #fff; font: inherit; }
+    .wis-search::placeholder { color: rgba(255,255,255,0.43); }
+    .wis-search:focus { outline: 2px solid var(--gold); outline-offset: 2px; }
+    .wis-count { min-height: 1.4em; color: rgba(255,255,255,0.58); font-size: 0.8rem; margin: 0.45rem 0 0.9rem; }
+    .wis-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.85rem; }
+    .wis-card { align-self: start; border: 1px solid rgba(201,168,76,0.2); border-radius: 13px; background: rgba(255,255,255,0.025); overflow: hidden; }
+    .wis-card[open] { border-color: rgba(201,168,76,0.43); background: rgba(255,255,255,0.04); }
+    .wis-summary { display: flex; align-items: center; gap: 0.75rem; padding: 1rem 1.05rem; cursor: pointer; list-style: none; }
+    .wis-summary::-webkit-details-marker { display: none; }
+    .wis-icon { flex: 0 0 2rem; text-align: center; font-size: 1.35rem; }
+    .wis-summary-text { flex: 1; }
+    .wis-card-title { display: block; font-family: var(--font-serif); color: var(--gold-light); font-size: 1.02rem; line-height: 1.35; }
+    .wis-card-hint { display: block; color: rgba(255,255,255,0.48); font-size: 0.77rem; margin-top: 0.22rem; }
+    .wis-chevron { color: var(--gold-dim); transition: transform 0.2s; }
+    .wis-card[open] .wis-chevron { transform: rotate(180deg); }
+    .wis-panel { padding: 0 1.05rem 1.1rem; }
+    .wis-panel p { color: rgba(255,255,255,0.72); font-size: 0.87rem; line-height: 1.68; margin: 0 0 0.8rem; }
+    .wis-refs { border-left: 3px solid rgba(201,168,76,0.45); padding: 0.6rem 0.85rem; background: rgba(201,168,76,0.045); }
+    .wis-refs strong, .wis-practice strong { color: var(--gold-light); }
+    .wis-practice { border: 1px solid rgba(255,255,255,0.08); border-radius: 9px; padding: 0.7rem 0.8rem; }
+    .wis-empty { color: rgba(255,255,255,0.65); padding: 1rem 0; }
+    .wis-note { border-top: 1px solid rgba(201,168,76,0.16); margin-top: 1.6rem; padding-top: 1.1rem; color: rgba(255,255,255,0.54); font-size: 0.82rem; line-height: 1.65; }
+    .wis-footer-links { margin-top: 1.7rem; display: flex; flex-wrap: wrap; gap: 0.55rem; }
+    .wis-pill { display: inline-flex; align-items: center; gap: 0.35rem; text-decoration: none; color: var(--gold-light); border: 1px solid rgba(201,168,76,0.24); background: rgba(201,168,76,0.05); border-radius: 20px; padding: 0.38rem 0.78rem; font-size: 0.78rem; }
+    .wis-pill:hover { background: rgba(201,168,76,0.12); }
+    @media (max-width: 620px) { .wis-grid { grid-template-columns: 1fr; } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; } }
+  </style>
+</head>
+<body class="wis-page">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link"><span class="cross">✝</span><span class="logo-text">The Universal Prayer</span></a>
+      <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma"><span id="langLabel">EN</span></button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="wis-hero">
+    <a href="/" class="ador-back-link" data-lang="es">← Inicio</a>
+    <a href="/" class="ador-back-link" data-lang="en" style="display:none">← Home</a>
+    <p class="wis-symbol" aria-hidden="true">📖</p>
+    <div class="wis-badge" data-lang="es">✦ Escucha, discierne y vive la Palabra</div>
+    <div class="wis-badge" data-lang="en" style="display:none">✦ Listen, discern, and live the Word</div>
+    <h1 class="wis-title" data-lang="es">Sabiduría para cada situación</h1>
+    <h1 class="wis-title" data-lang="en" style="display:none">Biblical wisdom for every situation</h1>
+    <p class="wis-subtitle" data-lang="es">Cuando no sabes qué hacer, empieza por una situación, lee los pasajes completos en tu Biblia y deja que la Palabra te ayude a dar un paso concreto.</p>
+    <p class="wis-subtitle" data-lang="en" style="display:none">When you are unsure what to do, start with a situation, read the full passages in your Bible, and let the Word guide one concrete next step.</p>
+  </section>
+
+  <main class="wis-content">
+    <aside class="wis-intro">
+      <p data-lang="es"><strong>¿Qué libros son?</strong> Proverbios, Sabiduría y Eclesiástico (también llamado Sirácida) son libros sapienciales. A menudo se agrupan con Job, Salmos, Eclesiastés (Qohelet) y Cantar de los Cantares; la clasificación puede variar según la tradición.</p>
+      <p data-lang="en" style="display:none"><strong>Which books are these?</strong> Proverbs, Wisdom, and Sirach (also called Ecclesiasticus) are wisdom books. They are often grouped with Job, Psalms, Ecclesiastes (Qoheleth), and Song of Songs; classifications can vary by tradition.</p>
+      <p data-lang="es">Las recomendaciones son una guía de lectura y reflexión, no sustituyen el consejo pastoral, médico, legal o de seguridad que puedas necesitar.</p>
+      <p data-lang="en" style="display:none">These recommendations are a guide for reading and reflection; they do not replace pastoral, medical, legal, or safety support you may need.</p>
+    </aside>
+
+    <div class="wis-search-wrap">
+      <label class="wis-search-label" for="wisSearch" data-lang="es">¿Qué estás viviendo? Busca una situación</label>
+      <label class="wis-search-label" for="wisSearch" data-lang="en" style="display:none">What are you facing? Search for a situation</label>
+      <input class="wis-search" id="wisSearch" type="search" autocomplete="off" data-placeholder-es="Ej.: miedo, duelo, decisiones, familia…" data-placeholder-en="e.g. fear, grief, decisions, family…" placeholder="Ej.: miedo, duelo, decisiones, familia…" />
+      <p class="wis-count" id="wisCount" role="status" aria-live="polite"></p>
+    </div>
+
+    <section class="wis-grid" id="wisGrid" aria-label="Recomendaciones bíblicas por situación">
+      <details class="wis-card" data-search-es="decisiones discernir elegir consejo prudencia" data-search-en="decisions discernment choosing advice prudence">
+        <summary class="wis-summary"><span class="wis-icon" aria-hidden="true">🧭</span><span class="wis-summary-text"><span class="wis-card-title" data-lang="es">Cuando debes tomar una decisión</span><span class="wis-card-title" data-lang="en" style="display:none">When you need to make a decision</span><span class="wis-card-hint" data-lang="es">Discernimiento y consejo</span><span class="wis-card-hint" data-lang="en" style="display:none">Discernment and counsel</span></span><span class="wis-chevron" aria-hidden="true">▼</span></summary>
+        <div class="wis-panel"><p data-lang="es">Pide sabiduría, busca consejo sensato y examina si tus opciones te acercan al bien. La confianza en Dios no elimina la responsabilidad de pensar y elegir.</p><p data-lang="en" style="display:none">Ask for wisdom, seek sound counsel, and consider whether your options lead toward what is good. Trust in God does not remove the responsibility to think and choose.</p><p class="wis-refs"><strong data-lang="es">Lee:</strong><strong data-lang="en" style="display:none">Read:</strong><span data-lang="es"> Proverbios 3,5-6; Sirácida 37,15-18; Santiago 1,5.</span><span data-lang="en" style="display:none"> Proverbs 3:5-6; Sirach 37:15-18; James 1:5.</span></p><p class="wis-practice"><strong data-lang="es">Práctica:</strong><strong data-lang="en" style="display:none">Practice:</strong> <span data-lang="es">Escribe las opciones, pide consejo a alguien prudente y dedica un momento a orar antes de decidir.</span><span data-lang="en" style="display:none">Write down your options, ask a wise person for counsel, and take time to pray before deciding.</span></p></div>
+      </details>
+
+      <details class="wis-card" data-search-es="ansiedad miedo preocupación angustia incertidumbre" data-search-en="anxiety fear worry distress uncertainty">
+        <summary class="wis-summary"><span class="wis-icon" aria-hidden="true">🕊️</span><span class="wis-summary-text"><span class="wis-card-title" data-lang="es">Cuando sientes miedo o ansiedad</span><span class="wis-card-title" data-lang="en" style="display:none">When you feel afraid or anxious</span><span class="wis-card-hint" data-lang="es">Confianza sin negar lo que sientes</span><span class="wis-card-hint" data-lang="en" style="display:none">Trust without denying what you feel</span></span><span class="wis-chevron" aria-hidden="true">▼</span></summary>
+        <div class="wis-panel"><p data-lang="es">La Biblia no te exige fingir que todo está bien. Lleva a Dios lo que te preocupa, busca apoyo y concéntrate en el paso de hoy.</p><p data-lang="en" style="display:none">The Bible does not ask you to pretend everything is fine. Bring your worries to God, seek support, and focus on today's next step.</p><p class="wis-refs"><strong data-lang="es">Lee:</strong><strong data-lang="en" style="display:none">Read:</strong><span data-lang="es"> Salmo 55,23; Sirácida 2,1-6; Mateo 6,25-34; Filipenses 4,6-9.</span><span data-lang="en" style="display:none"> Psalm 55:23; Sirach 2:1-6; Matthew 6:25-34; Philippians 4:6-9.</span></p><p class="wis-practice"><strong data-lang="es">Práctica:</strong><strong data-lang="en" style="display:none">Practice:</strong> <span data-lang="es">Nombra en una oración lo que temes y comparte tu carga con una persona de confianza.</span><span data-lang="en" style="display:none">Name what you fear in a prayer and share your burden with someone you trust.</span></p></div>
+      </details>
+
+      <details class="wis-card" data-search-es="duelo muerte pérdida tristeza consuelo" data-search-en="grief death loss sadness comfort">
+        <summary class="wis-summary"><span class="wis-icon" aria-hidden="true">🕯️</span><span class="wis-summary-text"><span class="wis-card-title" data-lang="es">Cuando atraviesas un duelo</span><span class="wis-card-title" data-lang="en" style="display:none">When you are grieving</span><span class="wis-card-hint" data-lang="es">Esperanza y compañía en el dolor</span><span class="wis-card-hint" data-lang="en" style="display:none">Hope and companionship in sorrow</span></span><span class="wis-chevron" aria-hidden="true">▼</span></summary>
+        <div class="wis-panel"><p data-lang="es">El duelo necesita tiempo. La esperanza cristiana acompaña el llanto; no te obliga a apresurar la tristeza ni a vivirla en soledad.</p><p data-lang="en" style="display:none">Grief takes time. Christian hope accompanies tears; it does not ask you to rush your sorrow or carry it alone.</p><p class="wis-refs"><strong data-lang="es">Lee:</strong><strong data-lang="en" style="display:none">Read:</strong><span data-lang="es"> Sabiduría 3,1-9; Salmo 34,18-19; Juan 11,25-36; 1 Tesalonicenses 4,13-14.</span><span data-lang="en" style="display:none"> Wisdom 3:1-9; Psalm 34:18-19; John 11:25-36; 1 Thessalonians 4:13-14.</span></p><p class="wis-practice"><strong data-lang="es">Práctica:</strong><strong data-lang="en" style="display:none">Practice:</strong> <span data-lang="es">Recuerda a quien extrañas con gratitud y pide a alguien que te acompañe hoy.</span><span data-lang="en" style="display:none">Remember the person you miss with gratitude and ask someone to be with you today.</span></p></div>
+      </details>
+
+      <details class="wis-card" data-search-es="enojo ira conflicto discusión perdonar reconciliar" data-search-en="anger conflict argument forgiveness reconciliation">
+        <summary class="wis-summary"><span class="wis-icon" aria-hidden="true">🤝</span><span class="wis-summary-text"><span class="wis-card-title" data-lang="es">Cuando hay enojo o un conflicto</span><span class="wis-card-title" data-lang="en" style="display:none">When anger or conflict arises</span><span class="wis-card-hint" data-lang="es">Hablar con verdad y mansedumbre</span><span class="wis-card-hint" data-lang="en" style="display:none">Speak with truth and gentleness</span></span><span class="wis-chevron" aria-hidden="true">▼</span></summary>
+        <div class="wis-panel"><p data-lang="es">La prudencia invita a escuchar antes de responder, evitar palabras hirientes y buscar la paz sin llamar bueno a lo que hace daño.</p><p data-lang="en" style="display:none">Wisdom invites you to listen before responding, avoid hurtful words, and seek peace without calling harmful behavior good.</p><p class="wis-refs"><strong data-lang="es">Lee:</strong><strong data-lang="en" style="display:none">Read:</strong><span data-lang="es"> Proverbios 15,1; Sirácida 28,1-7; Santiago 1,19-20; Efesios 4,26-32.</span><span data-lang="en" style="display:none"> Proverbs 15:1; Sirach 28:1-7; James 1:19-20; Ephesians 4:26-32.</span></p><p class="wis-practice"><strong data-lang="es">Práctica:</strong><strong data-lang="en" style="display:none">Practice:</strong> <span data-lang="es">Haz una pausa, escucha para comprender y, si es seguro, expresa con claridad qué necesitas.</span><span data-lang="en" style="display:none">Pause, listen to understand, and, if it is safe, clearly express what you need.</span></p></div>
+      </details>
+
+      <details class="wis-card" data-search-es="familia pareja matrimonio amistad relaciones amor" data-search-en="family spouse marriage friendship relationships love">
+        <summary class="wis-summary"><span class="wis-icon" aria-hidden="true">🏠</span><span class="wis-summary-text"><span class="wis-card-title" data-lang="es">Cuando te cuesta una relación o la vida familiar</span><span class="wis-card-title" data-lang="en" style="display:none">When a relationship or family life is difficult</span><span class="wis-card-hint" data-lang="es">Respeto, paciencia y cuidado mutuo</span><span class="wis-card-hint" data-lang="en" style="display:none">Respect, patience, and mutual care</span></span><span class="wis-chevron" aria-hidden="true">▼</span></summary>
+        <div class="wis-panel"><p data-lang="es">La sabiduría bíblica valora la fidelidad, la bondad y el respeto mutuo. Amar no significa aceptar violencia, control o humillación.</p><p data-lang="en" style="display:none">Biblical wisdom values faithfulness, kindness, and mutual respect. Love does not mean accepting violence, control, or humiliation.</p><p class="wis-refs"><strong data-lang="es">Lee:</strong><strong data-lang="en" style="display:none">Read:</strong><span data-lang="es"> Sirácida 3,2-6; Tobías 8,5-8; Efesios 4,2-3; 1 Corintios 13,4-7.</span><span data-lang="en" style="display:none"> Sirach 3:2-6; Tobit 8:5-8; Ephesians 4:2-3; 1 Corinthians 13:4-7.</span></p><p class="wis-practice"><strong data-lang="es">Práctica:</strong><strong data-lang="en" style="display:none">Practice:</strong> <span data-lang="es">Elige un gesto concreto de escucha o reparación. Si hay peligro, prioriza tu seguridad y busca ayuda.</span><span data-lang="en" style="display:none">Choose one concrete act of listening or repair. If you are in danger, prioritize safety and seek help.</span></p></div>
+      </details>
+
+      <details class="wis-card" data-search-es="enfermedad salud dolor médico sanación" data-search-en="illness health pain doctor healing">
+        <summary class="wis-summary"><span class="wis-icon" aria-hidden="true">💚</span><span class="wis-summary-text"><span class="wis-card-title" data-lang="es">Cuando tú o alguien cercano está enfermo</span><span class="wis-card-title" data-lang="en" style="display:none">When you or someone close is ill</span><span class="wis-card-hint" data-lang="es">Orar y recibir atención</span><span class="wis-card-hint" data-lang="en" style="display:none">Pray and receive care</span></span><span class="wis-chevron" aria-hidden="true">▼</span></summary>
+        <div class="wis-panel"><p data-lang="es">Sirácida reconoce el trabajo de quienes cuidan la salud. La oración puede sostenerte mientras recibes atención médica; no tienes que escoger entre ambas.</p><p data-lang="en" style="display:none">Sirach honors the work of those who care for health. Prayer can sustain you while you receive medical care; you do not have to choose between them.</p><p class="wis-refs"><strong data-lang="es">Lee:</strong><strong data-lang="en" style="display:none">Read:</strong><span data-lang="es"> Sirácida 38,1-15; Salmo 41,2-4; Santiago 5,13-16.</span><span data-lang="en" style="display:none"> Sirach 38:1-15; Psalm 41:2-4; James 5:13-16.</span></p><p class="wis-practice"><strong data-lang="es">Práctica:</strong><strong data-lang="en" style="display:none">Practice:</strong> <span data-lang="es">Pide la ayuda médica que necesitas y deja que alguien de confianza te acompañe.</span><span data-lang="en" style="display:none">Seek the medical help you need and let someone you trust accompany you.</span></p></div>
+      </details>
+
+      <details class="wis-card" data-search-es="dinero trabajo pobreza justicia generosidad ambición" data-search-en="money work poverty justice generosity ambition">
+        <summary class="wis-summary"><span class="wis-icon" aria-hidden="true">⚖️</span><span class="wis-summary-text"><span class="wis-card-title" data-lang="es">Cuando te preocupa el dinero o el trabajo</span><span class="wis-card-title" data-lang="en" style="display:none">When money or work weighs on you</span><span class="wis-card-hint" data-lang="es">Honestidad, esfuerzo y generosidad</span><span class="wis-card-hint" data-lang="en" style="display:none">Honesty, diligence, and generosity</span></span><span class="wis-chevron" aria-hidden="true">▼</span></summary>
+        <div class="wis-panel"><p data-lang="es">Los libros sapienciales advierten contra la riqueza injusta y la codicia. Invitan a trabajar con honestidad, vivir con sensatez y no olvidar a quien necesita ayuda.</p><p data-lang="en" style="display:none">The wisdom books warn against unjust wealth and greed. They invite honest work, prudent living, and care for those in need.</p><p class="wis-refs"><strong data-lang="es">Lee:</strong><strong data-lang="en" style="display:none">Read:</strong><span data-lang="es"> Proverbios 11,1; 13,11; Sirácida 31,1-11; 1 Timoteo 6,6-10; Santiago 5,1-6.</span><span data-lang="en" style="display:none"> Proverbs 11:1; 13:11; Sirach 31:1-11; 1 Timothy 6:6-10; James 5:1-6.</span></p><p class="wis-practice"><strong data-lang="es">Práctica:</strong><strong data-lang="en" style="display:none">Practice:</strong> <span data-lang="es">Revisa tus necesidades reales, actúa con justicia y pide orientación práctica si enfrentas una dificultad económica.</span><span data-lang="en" style="display:none">Review your real needs, act justly, and seek practical guidance if you face financial hardship.</span></p></div>
+      </details>
+
+      <details class="wis-card" data-search-es="culpa arrepentimiento perdón reconciliación volver a Dios" data-search-en="guilt repentance forgiveness reconciliation return to God">
+        <summary class="wis-summary"><span class="wis-icon" aria-hidden="true">🗝️</span><span class="wis-summary-text"><span class="wis-card-title" data-lang="es">Cuando cargas culpa y quieres volver a empezar</span><span class="wis-card-title" data-lang="en" style="display:none">When you carry guilt and want a new beginning</span><span class="wis-card-hint" data-lang="es">Arrepentirse, reparar y recibir misericordia</span><span class="wis-card-hint" data-lang="en" style="display:none">Repent, make amends, and receive mercy</span></span><span class="wis-chevron" aria-hidden="true">▼</span></summary>
+        <div class="wis-panel"><p data-lang="es">La Escritura llama a no desesperar de la misericordia: reconoce el daño, vuelve a Dios y, cuando sea posible, repara lo que hiciste.</p><p data-lang="en" style="display:none">Scripture calls you not to despair of mercy: acknowledge the harm, return to God, and make amends where possible.</p><p class="wis-refs"><strong data-lang="es">Lee:</strong><strong data-lang="en" style="display:none">Read:</strong><span data-lang="es"> Sirácida 5,5-8; Sabiduría 11,23-12,2; Salmo 51; Lucas 15,11-32.</span><span data-lang="en" style="display:none"> Sirach 5:5-8; Wisdom 11:23-12:2; Psalm 51; Luke 15:11-32.</span></p><p class="wis-practice"><strong data-lang="es">Práctica:</strong><strong data-lang="en" style="display:none">Practice:</strong> <span data-lang="es">Da un paso honesto: pide perdón, busca reconciliación o acércate al sacramento de la Reconciliación.</span><span data-lang="en" style="display:none">Take one honest step: apologize, seek reconciliation, or approach the Sacrament of Reconciliation.</span></p></div>
+      </details>
+
+      <details class="wis-card" data-search-es="soledad amistad aislamiento compañía comunidad" data-search-en="loneliness friendship isolation companionship community">
+        <summary class="wis-summary"><span class="wis-icon" aria-hidden="true">🫂</span><span class="wis-summary-text"><span class="wis-card-title" data-lang="es">Cuando te sientes solo</span><span class="wis-card-title" data-lang="en" style="display:none">When you feel lonely</span><span class="wis-card-hint" data-lang="es">Cuidar amistades y pedir compañía</span><span class="wis-card-hint" data-lang="en" style="display:none">Nurture friendship and ask for company</span></span><span class="wis-chevron" aria-hidden="true">▼</span></summary>
+        <div class="wis-panel"><p data-lang="es">La amistad verdadera se cultiva con tiempo, lealtad y sinceridad. Pedir compañía no es una carga: es una forma de abrir espacio al cuidado mutuo.</p><p data-lang="en" style="display:none">True friendship grows through time, loyalty, and honesty. Asking for company is not a burden; it makes room for mutual care.</p><p class="wis-refs"><strong data-lang="es">Lee:</strong><strong data-lang="en" style="display:none">Read:</strong><span data-lang="es"> Sirácida 6,5-17; Salmo 25,16-18; Romanos 12,15; Hebreos 10,24-25.</span><span data-lang="en" style="display:none"> Sirach 6:5-17; Psalm 25:16-18; Romans 12:15; Hebrews 10:24-25.</span></p><p class="wis-practice"><strong data-lang="es">Práctica:</strong><strong data-lang="en" style="display:none">Practice:</strong> <span data-lang="es">Escribe o llama hoy a alguien de confianza y dile con sencillez que necesitas hablar.</span><span data-lang="en" style="display:none">Message or call someone you trust today and simply tell them you need to talk.</span></p></div>
+      </details>
+
+      <details class="wis-card" data-search-es="injusticia abuso violencia peligro protección dignidad" data-search-en="injustice abuse violence danger protection dignity">
+        <summary class="wis-summary"><span class="wis-icon" aria-hidden="true">🛡️</span><span class="wis-summary-text"><span class="wis-card-title" data-lang="es">Cuando sufres una injusticia o estás en peligro</span><span class="wis-card-title" data-lang="en" style="display:none">When you face injustice or danger</span><span class="wis-card-hint" data-lang="es">Proteger la dignidad y buscar ayuda</span><span class="wis-card-hint" data-lang="en" style="display:none">Protect dignity and seek help</span></span><span class="wis-chevron" aria-hidden="true">▼</span></summary>
+        <div class="wis-panel"><p data-lang="es">La sabiduría bíblica llama a defender a quien es vulnerable y a obrar con justicia. Perdonar no significa permanecer en una situación violenta o insegura.</p><p data-lang="en" style="display:none">Biblical wisdom calls us to defend the vulnerable and act justly. Forgiveness does not mean remaining in a violent or unsafe situation.</p><p class="wis-refs"><strong data-lang="es">Lee:</strong><strong data-lang="en" style="display:none">Read:</strong><span data-lang="es"> Sabiduría 2,10-20; Sirácida 4,1-10; Miqueas 6,8; Salmo 82,3-4.</span><span data-lang="en" style="display:none"> Wisdom 2:10-20; Sirach 4:1-10; Micah 6:8; Psalm 82:3-4.</span></p><p class="wis-practice"><strong data-lang="es">Práctica:</strong><strong data-lang="en" style="display:none">Practice:</strong> <span data-lang="es">Si hay riesgo inmediato, aléjate a un lugar seguro y contacta los servicios de emergencia o una persona que pueda ayudarte.</span><span data-lang="en" style="display:none">If you are in immediate danger, get to a safe place and contact emergency services or someone who can help.</span></p></div>
+      </details>
+
+      <details class="wis-card" data-search-es="esperanza paciencia espera incertidumbre sufrimiento" data-search-en="hope patience waiting uncertainty suffering">
+        <summary class="wis-summary"><span class="wis-icon" aria-hidden="true">🌱</span><span class="wis-summary-text"><span class="wis-card-title" data-lang="es">Cuando necesitas paciencia y esperanza</span><span class="wis-card-title" data-lang="en" style="display:none">When you need patience and hope</span><span class="wis-card-hint" data-lang="es">Acompañar cada tiempo sin rendirte</span><span class="wis-card-hint" data-lang="en" style="display:none">Meet each season without giving up</span></span><span class="wis-chevron" aria-hidden="true">▼</span></summary>
+        <div class="wis-panel"><p data-lang="es">Eclesiastés recuerda que la vida tiene distintas etapas. La esperanza no promete que todo cambiará enseguida: invita a perseverar y a buscar el bien posible hoy.</p><p data-lang="en" style="display:none">Ecclesiastes reminds us that life has different seasons. Hope does not promise everything will change at once; it invites perseverance and doing the good possible today.</p><p class="wis-refs"><strong data-lang="es">Lee:</strong><strong data-lang="en" style="display:none">Read:</strong><span data-lang="es"> Eclesiastés 3,1-8; Sabiduría 11,23-12,2; Romanos 8,18-28; Sirácida 2,1-6.</span><span data-lang="en" style="display:none"> Ecclesiastes 3:1-8; Wisdom 11:23-12:2; Romans 8:18-28; Sirach 2:1-6.</span></p><p class="wis-practice"><strong data-lang="es">Práctica:</strong><strong data-lang="en" style="display:none">Practice:</strong> <span data-lang="es">Elige una acción pequeña y buena para hoy, y pide compañía para sostenerla.</span><span data-lang="en" style="display:none">Choose one small, good action for today and ask someone to support you in it.</span></p></div>
+      </details>
+
+      <details class="wis-card" data-search-es="tentación hábito impulso adicción libertad recaída" data-search-en="temptation habit impulse addiction freedom relapse">
+        <summary class="wis-summary"><span class="wis-icon" aria-hidden="true">🔓</span><span class="wis-summary-text"><span class="wis-card-title" data-lang="es">Cuando luchas con una tentación o un hábito</span><span class="wis-card-title" data-lang="en" style="display:none">When you struggle with temptation or a habit</span><span class="wis-card-hint" data-lang="es">Preparar un paso concreto y pedir apoyo</span><span class="wis-card-hint" data-lang="en" style="display:none">Plan one concrete step and ask for support</span></span><span class="wis-chevron" aria-hidden="true">▼</span></summary>
+        <div class="wis-panel"><p data-lang="es">La prudencia propone apartarse de lo que conduce al mal y buscar ayuda. Una lucha persistente no te quita dignidad; no tienes que enfrentarla a solas.</p><p data-lang="en" style="display:none">Prudence suggests turning away from what leads to harm and seeking help. A persistent struggle does not take away your dignity; you do not have to face it alone.</p><p class="wis-refs"><strong data-lang="es">Lee:</strong><strong data-lang="en" style="display:none">Read:</strong><span data-lang="es"> Proverbios 4,14-15; Sirácida 18,30-32; 1 Corintios 10,13; Gálatas 6,1-2.</span><span data-lang="en" style="display:none"> Proverbs 4:14-15; Sirach 18:30-32; 1 Corinthians 10:13; Galatians 6:1-2.</span></p><p class="wis-practice"><strong data-lang="es">Práctica:</strong><strong data-lang="en" style="display:none">Practice:</strong> <span data-lang="es">Identifica qué te expone al hábito, cambia una condición concreta y busca apoyo confiable o profesional si lo necesitas.</span><span data-lang="en" style="display:none">Identify what makes the habit more likely, change one concrete condition, and seek trusted or professional support if needed.</span></p></div>
+      </details>
+    </section>
+
+    <p class="wis-empty" id="wisEmpty" hidden data-lang="es">No encontramos esa situación. Prueba con otra palabra, como «familia», «miedo» o «decisión».</p>
+    <p class="wis-empty" id="wisEmptyEn" hidden data-lang="en" style="display:none">No situation found. Try another word, such as “family,” “fear,” or “decision.”</p>
+
+    <p class="wis-note" data-lang="es">Las referencias sirven para localizar cada pasaje en tu Biblia. Los breves comentarios son orientaciones propias para la reflexión, no citas literales de una traducción bíblica.</p>
+    <p class="wis-note" data-lang="en" style="display:none">The references help you find each passage in your Bible. The brief notes are original reflections, not direct quotations from a Bible translation.</p>
+
+    <nav class="wis-footer-links" aria-label="Más recursos">
+      <a href="/salmos-diarios/" class="wis-pill" data-lang="es">📖 Salmos para cada momento</a>
+      <a href="/salmos-diarios/" class="wis-pill" data-lang="en" style="display:none">📖 Psalms for every moment</a>
+      <a href="/oraciones/" class="wis-pill" data-lang="es">🙏 Oraciones básicas</a>
+      <a href="/oraciones/" class="wis-pill" data-lang="en" style="display:none">🙏 Basic prayers</a>
+      <a href="/espiritu/" class="wis-pill" data-lang="es">🕊️ Espíritu Santo</a>
+      <a href="/espiritu/" class="wis-pill" data-lang="en" style="display:none">🕊️ Holy Spirit</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p data-lang="es">Un recurso devocional católico gratuito. Sin anuncios. Sin rastreo.</p>
+    <p data-lang="en" style="display:none">A free Catholic devotional resource. No ads. No tracking.</p>
+  </footer>
+
+  <script src="../assets/js/menu.js"></script>
+  <script>
+    (function () {
+      'use strict';
+      const langKey = 'tup_lang';
+      let lang = localStorage.getItem(langKey) || 'es';
+      const toggle = document.getElementById('langToggle');
+      const search = document.getElementById('wisSearch');
+      const cards = Array.from(document.querySelectorAll('.wis-card'));
+      const count = document.getElementById('wisCount');
+      const emptyEs = document.getElementById('wisEmpty');
+      const emptyEn = document.getElementById('wisEmptyEn');
+
+      function normalize(value) {
+        return value.toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      }
+
+      function applyLanguage() {
+        document.documentElement.lang = lang;
+        document.querySelectorAll('[data-lang]').forEach(element => {
+          element.style.display = element.dataset.lang === lang ? '' : 'none';
+        });
+        toggle.setAttribute('aria-label', lang === 'es' ? 'Cambiar idioma' : 'Switch language');
+        document.getElementById('langLabel').textContent = lang === 'es' ? 'EN' : 'ES';
+        search.placeholder = search.dataset['placeholder' + (lang === 'es' ? 'Es' : 'En')];
+        filterCards();
+      }
+
+      function filterCards() {
+        const query = normalize(search.value.trim());
+        const key = lang === 'es' ? 'searchEs' : 'searchEn';
+        let visible = 0;
+        cards.forEach(card => {
+          const matches = !query || normalize(card.dataset[key] + ' ' + card.textContent).includes(query);
+          card.hidden = !matches;
+          if (matches) visible++;
+        });
+        count.textContent = lang === 'es'
+          ? visible + (visible === 1 ? ' situación' : ' situaciones')
+          : visible + (visible === 1 ? ' situation' : ' situations');
+        emptyEs.hidden = visible > 0;
+        emptyEn.hidden = visible > 0;
+      }
+
+      toggle.addEventListener('click', () => {
+        lang = lang === 'es' ? 'en' : 'es';
+        localStorage.setItem(langKey, lang);
+        applyLanguage();
+        window.dispatchEvent(new CustomEvent('tup:langchange', { detail: lang }));
+      });
+      search.addEventListener('input', filterCards);
+      applyLanguage();
+    })();
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
+    }
+  </script>
+</body>
+</html>
