@@ -14,6 +14,23 @@ test.describe('Sabiduría para cada situación', () => {
     await expect(page.locator('.wis-card')).toHaveCount(12);
   });
 
+  test('incluye un fragmento bíblico en español e inglés para cada situación', async ({ page }) => {
+    const cards = page.locator('.wis-card');
+    await expect(cards).toHaveCount(12);
+    for (let index = 0; index < 12; index += 1) {
+      await expect(cards.nth(index).locator('.wis-verse[data-lang="es"]')).toHaveCount(1);
+      await expect(cards.nth(index).locator('.wis-verse[data-lang="en"]')).toHaveCount(1);
+    }
+
+    await expect(page.locator('.wis-intro')).toContainText('Biblia CEE');
+    await expect(page.locator('.wis-intro')).toContainText('NABRE');
+    await cards.first().locator('summary').click();
+    await expect(cards.first().locator('.wis-verse[data-lang="es"]')).toBeVisible();
+    await page.locator('#langToggle').click();
+    await expect(cards.first().locator('.wis-verse[data-lang="es"]')).toBeHidden();
+    await expect(cards.first().locator('.wis-verse[data-lang="en"]')).toBeVisible();
+  });
+
   test('filtra situaciones ignorando tildes y muestra sus referencias', async ({ page }) => {
     await page.locator('#wisSearch').fill('decisión');
     await expect(page.locator('.wis-card:visible')).toHaveCount(1);
@@ -31,6 +48,7 @@ test.describe('Sabiduría para cada situación', () => {
     const griefCard = page.locator('.wis-card:visible');
     await expect(griefCard).toHaveCount(1);
     await griefCard.locator('summary').click();
+    await expect(griefCard.locator('.wis-verse[data-lang="en"]')).toContainText('The souls of the righteous');
     await expect(griefCard.locator('.wis-refs span[data-lang="en"]')).toContainText('Wisdom 3:1-9');
   });
 

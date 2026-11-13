@@ -6,8 +6,8 @@ Sitio web catolico bilingue (ES/EN) publicado en GitHub Pages.
 
 - Produccion activa en `main`.
 - Sitio estatico con PWA (`sw.js`) y contenido en JSON.
-- Cache actual del Service Worker: `tup-v305`.
-- `sabiduria/`: recomendaciones de lectura bíblica por situación, con Proverbios, Sabiduría, Sirácida/Eclesiástico y los demás libros sapienciales; buscador bilingüe y uso sin conexión.
+- Cache actual del Service Worker: `tup-v306`.
+- `sabiduria/`: recomendaciones de lectura bíblica para 12 situaciones, con fragmentos breves de la Biblia CEE y la New American Bible (NABRE), referencias para leer los pasajes completos, buscador bilingüe y uso sin conexión.
 - Al entrar en `meses/`, se selecciona el mes de la fecha local y se abre y muestra automáticamente el día de hoy. Los enlaces a otro mes o a una sección conservan su destino.
 - Adoración: 7 jornadas de 33 días en `adoracion/33dias-*/` (la más reciente: `33dias-enemigos`, para bendecir a los enemigos y entregarlos a Dios); cada uno de los 231 días tiene su propia ilustración SVG relacionada con el tema, visible en la tarjeta y en el día completo, con datos e imágenes precargados para uso sin conexión.
 - `vuelvo-al-padre/#oseas-14`: Oseas 14 completo (Biblia CEE / New American Bible), los pasos para volver (vv. 2-4), la respuesta de Dios (v. 5), una meditación y una oración propia que se puede compartir.
