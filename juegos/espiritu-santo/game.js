@@ -14,6 +14,10 @@
     document.querySelectorAll('[data-es][data-en]').forEach((element) => {
       element.innerHTML = element.dataset[language];
     });
+    const titleEl = document.getElementById('gameTitle');
+    if (titleEl && titleEl.dataset[language]) {
+      document.title = `${titleEl.dataset[language]} — The Universal Prayer`;
+    }
     if (languageToggle) {
       languageToggle.textContent = language === 'es' ? 'EN' : 'ES';
       languageToggle.setAttribute('aria-label', language === 'es' ? 'Switch language' : 'Cambiar idioma');

@@ -98,6 +98,8 @@
       welcomeBack: 'El Espíritu te espera. Sigue a la paloma de luz.',
       you: 'Tú',
       next: 'Seguir',
+      pointsTitle: 'Puntos de gracia',
+      flamesLabel: 'Dones del Espíritu Santo',
       talk: 'HABLAR',
       prayTouch: 'ORAR',
       talkWith: (name) => `Hablar con ${name}`,
@@ -150,6 +152,8 @@
       welcomeBack: 'The Spirit is waiting for you. Follow the dove of light.',
       you: 'You',
       next: 'Continue',
+      pointsTitle: 'Grace points',
+      flamesLabel: 'Gifts of the Holy Spirit',
       talk: 'TALK',
       prayTouch: 'PRAY',
       talkWith: (name) => `Talk with ${name}`,
@@ -330,6 +334,9 @@
     let choiceActive = false;
     let stepActive = false;
     let bannerOpen = false;
+    let activeStepIndex = -1;
+    let activeChoice = null;
+    let lastBannerBuild = null;
     let bannerCallback = null;
     let pendingInteract = null;
     let activeQuest = null;
@@ -435,6 +442,7 @@
       return t(GIFT_NAMES[index]);
     }
     function renderFlames() {
+      flamesHud.setAttribute('aria-label', text().flamesLabel);
       flamesHud.innerHTML = '';
       for (let i = 0; i < 7; i++) {
         const slot = document.createElement('div');
@@ -453,6 +461,7 @@
       }
     }
     function renderPoints() {
+      if (progressCount.parentElement) progressCount.parentElement.title = text().pointsTitle;
       progressCount.textContent = String(save.points);
       gameStatus.textContent = text().status(giftsDoneCount(), charismsDoneCount(), save.points);
     }
@@ -563,6 +572,12 @@
       }
     }
     function choose(prompt, options, cb) {
+      activeChoice = { prompt, options: options || [], cb: cb || null };
+      renderActiveChoice();
+    }
+    function renderActiveChoice() {
+      if (!activeChoice) return;
+      const { prompt, options, cb } = activeChoice;
       choiceActive = true;
       const promptText = prompt && prompt.text !== undefined ? prompt.text : prompt;
       if (prompt && prompt.speaker) npcName.textContent = speakerName(prompt);
@@ -571,7 +586,7 @@
       interactButton.hidden = true;
       choiceBox.innerHTML = '';
       choiceBox.hidden = false;
-      (options || []).forEach((option, index) => {
+      options.forEach((option, index) => {
         const button = document.createElement('button');
         button.type = 'button';
         button.className = 'choice-button';
@@ -580,6 +595,7 @@
           choiceBox.hidden = true;
           choiceBox.innerHTML = '';
           choiceActive = false;
+          activeChoice = null;
           if (cb) cb(index, option);
         });
         choiceBox.appendChild(button);
@@ -588,6 +604,7 @@
 
     // ---------- Tarjeta de anuncio ----------
     function showBanner(build, cb) {
+      lastBannerBuild = build;
       bannerContent.innerHTML = '';
       if (typeof build === 'string') bannerContent.innerHTML = build;
       else if (typeof build === 'function') build(bannerContent);
@@ -599,6 +616,7 @@
     function closeBanner() {
       if (!bannerOpen) return;
       bannerOpen = false;
+      lastBannerBuild = null;
       bannerCard.hidden = true;
       const cb = bannerCallback;
       bannerCallback = null;
@@ -618,9 +636,19 @@
     }
 
     // ---------- Tutorial: los cinco pasos ----------
+    function renderStepTexts(index) {
+      const step = steps[index];
+      if (!step) return;
+      stepCount.textContent = `${text().stepOf} ${index + 1} / ${steps.length}`;
+      stepTitle.textContent = t(step.title);
+      stepLine.textContent = step.line ? t(step.line) : text().stepPrompt;
+      stepPhrase.textContent = t(step.phrase);
+      sayItButton.textContent = text().sayIt;
+    }
     function runStep(index) {
       if (index >= steps.length) {
         stepActive = false;
+        activeStepIndex = -1;
         stepCard.hidden = true;
         save.tutorialDone = true;
         saveGame();
@@ -630,13 +658,9 @@
         restoreFreeHud();
         return;
       }
-      const step = steps[index];
       stepActive = true;
-      stepCount.textContent = `${text().stepOf} ${index + 1} / ${steps.length}`;
-      stepTitle.textContent = t(step.title);
-      stepLine.textContent = step.line ? t(step.line) : text().stepPrompt;
-      stepPhrase.textContent = t(step.phrase);
-      sayItButton.textContent = text().sayIt;
+      activeStepIndex = index;
+      renderStepTexts(index);
       stepCard.hidden = false;
       sayItButton.onclick = () => {
         chime(2);
@@ -1519,6 +1543,9 @@
       if (overlayOpen === 'end') {
         endStats.textContent = text().endStats(giftsDoneCount(), charismsDoneCount(), save.points);
       }
+      if (stepActive && activeStepIndex >= 0) renderStepTexts(activeStepIndex);
+      if (choiceActive && activeChoice) renderActiveChoice();
+      if (bannerOpen && lastBannerBuild) showBanner(lastBannerBuild, bannerCallback);
       updateInteractPrompt();
     }
 
