@@ -51,14 +51,17 @@ test('quien soy: en inglés la declaración y el botón cambian de idioma', asyn
   await expect(page.getByText('Share on WhatsApp')).toBeVisible();
 });
 
-test('quien soy: tocar una declaración muestra su explicación personalizada', async ({ page }) => {
+test('quien soy: cada declaración se expande en su propio cuadro con la explicación personalizada', async ({ page }) => {
   await page.goto('/quien-soy/');
   await page.fill('#qs-name', 'Guillermo');
   await page.getByRole('button', { name: 'Soy libre' }).click();
-  await expect(page.locator('#qs-explain')).toBeVisible();
-  await expect(page.locator('#qs-explain-title')).toHaveText('Soy libre');
-  await expect(page.locator('#qs-explain-body')).toContainText('Guillermo, esto quiere decir');
-  await expect(page.locator('#qs-explain-body')).toContainText('ninguna cadena define tu futuro');
+  const card4 = page.locator('.qs-aff-card[data-card="4"]');
+  await expect(card4.locator('.qs-aff-explain')).toBeVisible();
+  await expect(card4.locator('.qs-aff-explain')).toContainText('Guillermo, esto quiere decir');
+  await expect(card4.locator('.qs-aff-explain')).toContainText('ninguna cadena define tu futuro');
+  await page.getByRole('button', { name: 'Soy fuerte' }).click();
+  await expect(card4.locator('.qs-aff-explain')).toBeHidden();
+  await expect(page.locator('.qs-aff-card[data-card="6"] .qs-aff-explain')).toBeVisible();
 });
 
 test('quien soy: el nombre se guarda en el dispositivo y se recuerda al volver', async ({ page }) => {

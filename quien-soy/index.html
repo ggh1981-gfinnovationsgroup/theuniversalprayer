@@ -20,7 +20,10 @@
 .qs-cite{color:var(--gold);font-size:.92rem}
 .qs-practice{margin-top:.8rem;padding:.7rem .9rem;border-left:3px solid var(--gold);background:rgba(201,168,76,.07);border-radius:0 10px 10px 0}
 .qs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.8rem;margin:1rem 0}
-.qs-aff{padding:1rem .8rem;border-radius:14px;text-align:center;background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.25);font-family:var(--font-serif);font-size:1.12rem;color:var(--gold-light)}
+.qs-aff-card{padding:1rem .8rem;border-radius:14px;background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.25)}
+.qs-aff-card.active{outline:2px solid var(--gold);background:rgba(201,168,76,.12)}
+button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;color:var(--gold-light);background:none;border:none;width:100%;text-align:center;padding:0}
+.qs-aff-explain{margin-top:.7rem;padding-top:.7rem;border-top:1px solid rgba(201,168,76,.25);font-size:.98rem;line-height:1.65;text-align:left}
 .qs-tool{margin:1.4rem 0;padding:1.5rem;border-radius:18px;background:linear-gradient(160deg,rgba(37,211,102,.10),rgba(201,168,76,.06));border:1px solid var(--gold-dim)}
 .qs-tool h2{font-family:var(--font-serif);color:var(--gold-light);margin:.2rem 0 .6rem;font-size:1.5rem}
 .qs-tool label{display:block;font-weight:700;margin:.8rem 0 .35rem}
@@ -28,11 +31,6 @@
 .qs-preview{margin:1rem 0;padding:1.1rem 1.2rem;border-radius:14px;background:rgba(0,0,0,.28);border:1px dashed rgba(201,168,76,.45);font-family:var(--font-serif);font-size:1.12rem;line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere}
 .qs-wa{display:inline-block;margin-top:.4rem;padding:.9rem 1.6rem;border-radius:999px;background:#25d366;color:#06281a;font-weight:800;font-size:1.08rem;text-decoration:none;font-family:var(--font-sans)}
 .qs-note{margin-top:1rem;color:var(--gold-light);font-size:.95rem}
-.qs-explain{margin:1rem 0;padding:1.2rem 1.3rem;border-radius:14px;background:rgba(201,168,76,.08);border:1px solid var(--gold-dim)}
-.qs-explain h3{font-family:var(--font-serif);color:var(--gold-light);margin:.1rem 0 .5rem;font-size:1.3rem}
-.qs-explain p{line-height:1.7;margin:.2rem 0}
-button.qs-aff{cursor:pointer;font-family:var(--font-serif);width:100%}
-button.qs-aff.active{outline:2px solid var(--gold);background:rgba(201,168,76,.16)}
 .qs-steps{margin:.6rem 0 .6rem 1.2rem;line-height:1.75}
 .qs-close{margin:1.6rem 0;padding:1.3rem 1.4rem;border-radius:16px;background:rgba(201,168,76,.05);border:1px solid rgba(201,168,76,.2);font-family:var(--font-serif);font-size:1.1rem;line-height:1.7}
 </style>
@@ -102,28 +100,51 @@ button.qs-aff.active{outline:2px solid var(--gold);background:rgba(201,168,76,.1
 <p data-lang="es">Léelo despacio, en primera persona, como una verdad que se declara hasta que el corazón la cree. Toca cada declaración para ver qué significa, explicado con tu nombre.</p>
 <p data-lang="en">Read it slowly, in the first person, as a truth declared until the heart believes it. Tap each declaration to see what it means, explained with your name.</p>
 <div class="qs-grid">
+<div class="qs-aff-card" data-card="1">
 <button type="button" class="qs-aff" data-aff="1" data-lang="es">Soy amado por Dios</button>
 <button type="button" class="qs-aff" data-aff="1" data-lang="en">I am loved by God</button>
+<div class="qs-aff-explain" hidden></div>
+</div>
+<div class="qs-aff-card" data-card="2">
 <button type="button" class="qs-aff" data-aff="2" data-lang="es">Soy escogido</button>
 <button type="button" class="qs-aff" data-aff="2" data-lang="en">I am chosen</button>
+<div class="qs-aff-explain" hidden></div>
+</div>
+<div class="qs-aff-card" data-card="3">
 <button type="button" class="qs-aff" data-aff="3" data-lang="es">Soy perdonado</button>
 <button type="button" class="qs-aff" data-aff="3" data-lang="en">I am forgiven</button>
+<div class="qs-aff-explain" hidden></div>
+</div>
+<div class="qs-aff-card" data-card="4">
 <button type="button" class="qs-aff" data-aff="4" data-lang="es">Soy libre</button>
 <button type="button" class="qs-aff" data-aff="4" data-lang="en">I am free</button>
+<div class="qs-aff-explain" hidden></div>
+</div>
+<div class="qs-aff-card" data-card="5">
 <button type="button" class="qs-aff" data-aff="5" data-lang="es">Soy obra maestra de Dios</button>
 <button type="button" class="qs-aff" data-aff="5" data-lang="en">I am God's masterpiece</button>
+<div class="qs-aff-explain" hidden></div>
+</div>
+<div class="qs-aff-card" data-card="6">
 <button type="button" class="qs-aff" data-aff="6" data-lang="es">Soy fuerte</button>
 <button type="button" class="qs-aff" data-aff="6" data-lang="en">I am strong</button>
+<div class="qs-aff-explain" hidden></div>
+</div>
+<div class="qs-aff-card" data-card="7">
 <button type="button" class="qs-aff" data-aff="7" data-lang="es">Soy capaz</button>
 <button type="button" class="qs-aff" data-aff="7" data-lang="en">I am capable</button>
+<div class="qs-aff-explain" hidden></div>
+</div>
+<div class="qs-aff-card" data-card="8">
 <button type="button" class="qs-aff" data-aff="8" data-lang="es">Soy hijo de Dios</button>
 <button type="button" class="qs-aff" data-aff="8" data-lang="en">I am a child of God</button>
+<div class="qs-aff-explain" hidden></div>
+</div>
+<div class="qs-aff-card" data-card="9">
 <button type="button" class="qs-aff" data-aff="9" data-lang="es">Nunca estoy solo</button>
 <button type="button" class="qs-aff" data-aff="9" data-lang="en">I am never alone</button>
+<div class="qs-aff-explain" hidden></div>
 </div>
-<div class="qs-explain" id="qs-explain" hidden>
-<h3 id="qs-explain-title"></h3>
-<p id="qs-explain-body"></p>
 </div>
 <p data-lang="es">Lee también: <a href="/talentos/">Talentos que dan fruto</a>, <a href="/renacer-en-cristo/">Renacer en Cristo</a> y <a href="/control-y-confianza/">Soltar el control y confiar</a>.</p>
 <p data-lang="en">Read also: <a href="/talentos/">Talents That Bear Fruit</a>, <a href="/renacer-en-cristo/">Born Again in Christ</a> and <a href="/control-y-confianza/">Letting Go of Control and Trusting</a>.</p>
@@ -191,9 +212,6 @@ button.qs-aff.active{outline:2px solid var(--gold);background:rgba(201,168,76,.1
   var input = document.getElementById('qs-name');
   var preview = document.getElementById('qs-preview');
   var wa = document.getElementById('qs-wa');
-  var box = document.getElementById('qs-explain');
-  var boxTitle = document.getElementById('qs-explain-title');
-  var boxBody = document.getElementById('qs-explain-body');
   var currentAff = null;
   var EXPLAIN = {
     es: {
@@ -234,16 +252,23 @@ button.qs-aff.active{outline:2px solid var(--gold);background:rgba(201,168,76,.1
       '\u00ABSomos, pues, obra suya. Dios nos ha creado en Cristo Jes\u00FAs\u00BB (Efesios 2,10).\n' +
       'Haz tu propia declaraci\u00F3n aqu\u00ED: ' + PAGE_URL;
   }
+  function closeAll(){
+    document.querySelectorAll('.qs-aff-card').forEach(function(card){
+      card.classList.remove('active');
+      card.querySelector('.qs-aff-explain').hidden = true;
+    });
+  }
   function renderExplain(){
+    closeAll();
     if (!currentAff) return;
+    var card = document.querySelector('.qs-aff-card[data-card="' + currentAff + '"]');
+    if (!card) return;
     var item = EXPLAIN[lang()][currentAff];
     var n = name();
-    boxTitle.textContent = item[0];
-    boxBody.textContent = (n ? n + ', ' : '') + item[1];
-    box.hidden = false;
-    document.querySelectorAll('.qs-aff').forEach(function(b){
-      b.classList.toggle('active', b.getAttribute('data-aff') === currentAff);
-    });
+    var ex = card.querySelector('.qs-aff-explain');
+    ex.textContent = (n ? n + ', ' : '') + item[1];
+    ex.hidden = false;
+    card.classList.add('active');
   }
   function update(){
     var t = buildText();
@@ -265,7 +290,8 @@ button.qs-aff.active{outline:2px solid var(--gold);background:rgba(201,168,76,.1
   });
   document.querySelectorAll('.qs-aff').forEach(function(b){
     b.addEventListener('click', function(){
-      currentAff = b.getAttribute('data-aff');
+      var aff = b.getAttribute('data-aff');
+      currentAff = (currentAff === aff) ? null : aff;
       renderExplain();
     });
   });
