@@ -28,6 +28,11 @@
 .qs-preview{margin:1rem 0;padding:1.1rem 1.2rem;border-radius:14px;background:rgba(0,0,0,.28);border:1px dashed rgba(201,168,76,.45);font-family:var(--font-serif);font-size:1.12rem;line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere}
 .qs-wa{display:inline-block;margin-top:.4rem;padding:.9rem 1.6rem;border-radius:999px;background:#25d366;color:#06281a;font-weight:800;font-size:1.08rem;text-decoration:none;font-family:var(--font-sans)}
 .qs-note{margin-top:1rem;color:var(--gold-light);font-size:.95rem}
+.qs-explain{margin:1rem 0;padding:1.2rem 1.3rem;border-radius:14px;background:rgba(201,168,76,.08);border:1px solid var(--gold-dim)}
+.qs-explain h3{font-family:var(--font-serif);color:var(--gold-light);margin:.1rem 0 .5rem;font-size:1.3rem}
+.qs-explain p{line-height:1.7;margin:.2rem 0}
+button.qs-aff{cursor:pointer;font-family:var(--font-serif);width:100%}
+button.qs-aff.active{outline:2px solid var(--gold);background:rgba(201,168,76,.16)}
 .qs-steps{margin:.6rem 0 .6rem 1.2rem;line-height:1.75}
 .qs-close{margin:1.6rem 0;padding:1.3rem 1.4rem;border-radius:16px;background:rgba(201,168,76,.05);border:1px solid rgba(201,168,76,.2);font-family:var(--font-serif);font-size:1.1rem;line-height:1.7}
 </style>
@@ -80,29 +85,45 @@
 </section>
 
 <section class="qs-card">
+<h2 data-lang="es">Primero, tu nombre</h2>
+<h2 data-lang="en">First, your name</h2>
+<p data-lang="es">Dios te llama por tu nombre. Escríbelo aquí y todo lo que sigue se personaliza para ti: las explicaciones de cada declaración y el mensaje para compartir. Tu nombre se guarda solo en este teléfono o computadora, para que la página te recuerde la próxima vez que entres.</p>
+<p data-lang="en">God calls you by your name. Write it here and everything that follows becomes personal: the explanation of each declaration and the message you will share. Your name is saved only on this phone or computer, so the page remembers you next time you visit.</p>
+<label for="qs-name" data-lang="es" style="display:block;font-weight:700;margin:.8rem 0 .35rem">Tu nombre</label>
+<label for="qs-name" data-lang="en" style="display:block;font-weight:700;margin:.8rem 0 .35rem">Your name</label>
+<input id="qs-name" type="text" maxlength="40" autocomplete="name" placeholder="Escribe tu nombre" style="width:100%;box-sizing:border-box;padding:.8rem 1rem;border-radius:12px;border:1px solid var(--gold-dim);background:rgba(0,0,0,.25);color:inherit;font-size:1.1rem;font-family:var(--font-sans)">
+<p class="qs-note" data-lang="es">Con tu nombre, cada explicación y la declaración para compartir salen personalizadas. Si lo dejas vacío, todo se muestra en forma general.</p>
+<p class="qs-note" data-lang="en">With your name, every explanation and the declaration you share come out personalized. If you leave it empty, everything is shown in its general form.</p>
+</section>
+
+<section class="qs-card">
 <h2 data-lang="es">Esto es lo que Dios dice de ti</h2>
 <h2 data-lang="en">This is what God says about you</h2>
-<p data-lang="es">Léelo despacio, en primera persona, como una verdad que se declara hasta que el corazón la cree:</p>
-<p data-lang="en">Read it slowly, in the first person, as a truth declared until the heart believes it:</p>
+<p data-lang="es">Léelo despacio, en primera persona, como una verdad que se declara hasta que el corazón la cree. Toca cada declaración para ver qué significa, explicado con tu nombre.</p>
+<p data-lang="en">Read it slowly, in the first person, as a truth declared until the heart believes it. Tap each declaration to see what it means, explained with your name.</p>
 <div class="qs-grid">
-<div class="qs-aff" data-lang="es">Soy amado por Dios</div>
-<div class="qs-aff" data-lang="en">I am loved by God</div>
-<div class="qs-aff" data-lang="es">Soy escogido</div>
-<div class="qs-aff" data-lang="en">I am chosen</div>
-<div class="qs-aff" data-lang="es">Soy perdonado</div>
-<div class="qs-aff" data-lang="en">I am forgiven</div>
-<div class="qs-aff" data-lang="es">Soy libre</div>
-<div class="qs-aff" data-lang="en">I am free</div>
-<div class="qs-aff" data-lang="es">Soy obra maestra de Dios</div>
-<div class="qs-aff" data-lang="en">I am God's masterpiece</div>
-<div class="qs-aff" data-lang="es">Soy fuerte</div>
-<div class="qs-aff" data-lang="en">I am strong</div>
-<div class="qs-aff" data-lang="es">Soy capaz</div>
-<div class="qs-aff" data-lang="en">I am capable</div>
-<div class="qs-aff" data-lang="es">Soy hijo de Dios</div>
-<div class="qs-aff" data-lang="en">I am a child of God</div>
-<div class="qs-aff" data-lang="es">Nunca estoy solo</div>
-<div class="qs-aff" data-lang="en">I am never alone</div>
+<button type="button" class="qs-aff" data-aff="1" data-lang="es">Soy amado por Dios</button>
+<button type="button" class="qs-aff" data-aff="1" data-lang="en">I am loved by God</button>
+<button type="button" class="qs-aff" data-aff="2" data-lang="es">Soy escogido</button>
+<button type="button" class="qs-aff" data-aff="2" data-lang="en">I am chosen</button>
+<button type="button" class="qs-aff" data-aff="3" data-lang="es">Soy perdonado</button>
+<button type="button" class="qs-aff" data-aff="3" data-lang="en">I am forgiven</button>
+<button type="button" class="qs-aff" data-aff="4" data-lang="es">Soy libre</button>
+<button type="button" class="qs-aff" data-aff="4" data-lang="en">I am free</button>
+<button type="button" class="qs-aff" data-aff="5" data-lang="es">Soy obra maestra de Dios</button>
+<button type="button" class="qs-aff" data-aff="5" data-lang="en">I am God's masterpiece</button>
+<button type="button" class="qs-aff" data-aff="6" data-lang="es">Soy fuerte</button>
+<button type="button" class="qs-aff" data-aff="6" data-lang="en">I am strong</button>
+<button type="button" class="qs-aff" data-aff="7" data-lang="es">Soy capaz</button>
+<button type="button" class="qs-aff" data-aff="7" data-lang="en">I am capable</button>
+<button type="button" class="qs-aff" data-aff="8" data-lang="es">Soy hijo de Dios</button>
+<button type="button" class="qs-aff" data-aff="8" data-lang="en">I am a child of God</button>
+<button type="button" class="qs-aff" data-aff="9" data-lang="es">Nunca estoy solo</button>
+<button type="button" class="qs-aff" data-aff="9" data-lang="en">I am never alone</button>
+</div>
+<div class="qs-explain" id="qs-explain" hidden>
+<h3 id="qs-explain-title"></h3>
+<p id="qs-explain-body"></p>
 </div>
 <p data-lang="es">Lee también: <a href="/talentos/">Talentos que dan fruto</a>, <a href="/renacer-en-cristo/">Renacer en Cristo</a> y <a href="/control-y-confianza/">Soltar el control y confiar</a>.</p>
 <p data-lang="en">Read also: <a href="/talentos/">Talents That Bear Fruit</a>, <a href="/renacer-en-cristo/">Born Again in Christ</a> and <a href="/control-y-confianza/">Letting Go of Control and Trusting</a>.</p>
@@ -111,17 +132,12 @@
 <section class="qs-tool">
 <h2 data-lang="es">Hazlo tuyo y compártelo</h2>
 <h2 data-lang="en">Make it yours and share it</h2>
-<p data-lang="es">Escribe tu nombre y mira tu declaración personalizada. Después mándala por WhatsApp a tus amigos junto con el enlace de esta página, para que ellos también puedan hacer la suya.</p>
-<p data-lang="en">Write your name and see your personalized declaration. Then send it on WhatsApp to your friends together with the link to this page, so they can make their own too.</p>
-<label for="qs-name" data-lang="es">Tu nombre</label>
-<label for="qs-name" data-lang="en">Your name</label>
-<input id="qs-name" type="text" maxlength="40" autocomplete="name" placeholder="Escribe tu nombre">
-<p class="qs-note" data-lang="es">Con tu nombre, la declaración sale personalizada. Si lo dejas vacío, se comparte en forma general.</p>
-<p class="qs-note" data-lang="en">With your name, the declaration comes out personalized. If you leave it empty, it is shared in its general form.</p>
+<p data-lang="es">Esta es tu declaración, ya personalizada con el nombre que escribiste arriba. Mándala por WhatsApp a tus amigos junto con el enlace de esta página, para que ellos también puedan hacer la suya.</p>
+<p data-lang="en">This is your declaration, already personalized with the name you wrote above. Send it on WhatsApp to your friends together with the link to this page, so they can make their own too.</p>
 <div class="qs-preview" id="qs-preview"></div>
 <a class="qs-wa" id="qs-wa" href="https://wa.me/?text=" target="_blank" rel="noopener"><span data-lang="es">Compartir por WhatsApp</span><span data-lang="en">Share on WhatsApp</span></a>
-<p class="qs-note" data-lang="es">Tu nombre no sale de tu teléfono y no se guarda en ningún servidor: solo viaja dentro del mensaje que tú decidas enviar.</p>
-<p class="qs-note" data-lang="en">Your name never leaves your phone and is not stored on any server: it only travels inside the message you choose to send.</p>
+<p class="qs-note" data-lang="es">Tu nombre se guarda solo en tu dispositivo, para recordarte en tu próxima visita, y nunca se envía a ningún servidor: solo viaja dentro del mensaje que tú decidas compartir.</p>
+<p class="qs-note" data-lang="en">Your name is saved only on your device, to remember you on your next visit, and is never sent to any server: it only travels inside the message you choose to share.</p>
 </section>
 
 <section class="qs-close">
@@ -171,12 +187,42 @@
 <script>
 (function(){
   var PAGE_URL = 'https://www.theuniversalprayer.com/quien-soy/';
+  var NAME_KEY = 'tup_nombre';
   var input = document.getElementById('qs-name');
   var preview = document.getElementById('qs-preview');
   var wa = document.getElementById('qs-wa');
+  var box = document.getElementById('qs-explain');
+  var boxTitle = document.getElementById('qs-explain-title');
+  var boxBody = document.getElementById('qs-explain-body');
+  var currentAff = null;
+  var EXPLAIN = {
+    es: {
+      1: ['Soy amado por Dios', 'esto quiere decir que el amor de Dios por ti no depende de tu día, de tu humor ni de tu historial. Él te amó primero, cuando aún no tenías nada que ofrecerle, y ese amor no se retira cuando fallas. Eres precioso ante sus ojos, de gran precio, y él te ama, como dice Isaías 43.'],
+      2: ['Soy escogido', 'esto quiere decir que no llegaste a Dios por accidente. Él te pensó, te buscó y te llamó por tu nombre antes de que tú lo buscaras a él. Ser escogido no es ser mejor que otros: es tener un lugar y un propósito que nadie te puede quitar.'],
+      3: ['Soy perdonado', 'esto quiere decir que tu pasado ya no te persigue. En Isaías 43 Dios lo dice sin rodeos: él mismo cancela tus crímenes y olvida tus pecados. El perdón no borra la memoria de lo que pasó, pero sí rompe su poder sobre tu presente.'],
+      4: ['Soy libre', 'esto quiere decir que ninguna cadena define tu futuro: ni un hábito, ni la culpa, ni la opinión de otros, ni el miedo. Cristo no te libera para que vivas escondido, sino para que camines ligero, con la frente en alto.'],
+      5: ['Soy obra maestra de Dios', 'esto quiere decir que eres una obra hecha por las manos de Dios, no un producto en serie. Como dice Efesios 2,10, fuiste creado en Cristo Jesús para buenas obras que Dios preparó de antemano. Tu vida tiene diseño y destino.'],
+      6: ['Soy fuerte', 'esto quiere decir que tu fuerza no depende de que nunca te canses. La fuerza verdadera aparece cuando reconoces tu debilidad y dejas que Dios sostenga lo que tú ya no puedes. Ser fuerte es seguir de pie con su ayuda, no aparentar que no te duele nada.'],
+      7: ['Soy capaz', 'esto quiere decir que Dios no te llama a algo sin darte lo necesario para caminarlo. Capaz no significa autosuficiente: significa equipado por él, paso a paso, para las buenas obras que preparó para ti.'],
+      8: ['Soy hijo de Dios', 'esto quiere decir que perteneces a una familia y a una casa. Ya no eres extranjero ni forastero, como dice Efesios 2: eres de la familia de Dios. Un hijo no se gana el apellido, lo recibe, y nadie se lo puede quitar.'],
+      9: ['Nunca estoy solo', 'esto quiere decir que no hay agua ni fuego que atravieses sin compañía. Isaías 43 lo promete así: cuando cruces las aguas, yo estaré contigo. La soledad puede visitarte, pero no es tu dirección permanente: Dios está contigo.']
+    },
+    en: {
+      1: ['I am loved by God', 'this means that God\u2019s love for you does not depend on your day, your mood or your record. He loved you first, when you still had nothing to offer him, and that love is not withdrawn when you fail. You are precious in his eyes, of great price, and he loves you, as Isaiah 43 says.'],
+      2: ['I am chosen', 'this means you did not come to God by accident. He thought of you, sought you and called you by name before you ever sought him. Being chosen is not being better than others: it is having a place and a purpose no one can take from you.'],
+      3: ['I am forgiven', 'this means your past no longer hunts you. In Isaiah 43 God says it plainly: he himself wipes out your offenses and remembers your sins no more. Forgiveness does not erase the memory of what happened, but it breaks its power over your present.'],
+      4: ['I am free', 'this means no chain defines your future: not a habit, not guilt, not the opinion of others, not fear. Christ does not set you free so you can live in hiding, but so you can walk lightly, with your head held high.'],
+      5: ['I am God\u2019s masterpiece', 'this means you are a work made by God\u2019s own hands, not a mass produced item. As Ephesians 2:10 says, you were created in Christ Jesus for good works that God prepared in advance. Your life has design and destiny.'],
+      6: ['I am strong', 'this means your strength does not depend on never getting tired. True strength appears when you admit your weakness and let God hold what you can no longer carry. Being strong is standing with his help, not pretending nothing hurts.'],
+      7: ['I am capable', 'this means God never calls you to something without giving you what you need to walk it. Capable does not mean self sufficient: it means equipped by him, step by step, for the good works he prepared for you.'],
+      8: ['I am a child of God', 'this means you belong to a family and a home. You are no longer a stranger or a foreigner, as Ephesians 2 says: you are a member of God\u2019s household. A child does not earn the family name, he receives it, and no one can take it away.'],
+      9: ['I am never alone', 'this means there is no water and no fire you will cross without company. Isaiah 43 promises it this way: when you pass through waters, I will be with you. Loneliness may visit you, but it is not your permanent address: God is with you.']
+    }
+  };
   function lang(){ try { return localStorage.getItem('tup_lang') || 'es'; } catch(e){ return 'es'; } }
+  function name(){ return (input.value || '').trim(); }
   function buildText(){
-    var n = (input.value || '').trim();
+    var n = name();
     if (lang() === 'en') {
       return (n ? 'I am ' + n + '.\n' : '') +
         'In Christ, I am loved by God. I am chosen. I am forgiven. I am free. I am God\u2019s masterpiece. I am never alone.\n' +
@@ -188,14 +234,42 @@
       '\u00ABSomos, pues, obra suya. Dios nos ha creado en Cristo Jes\u00FAs\u00BB (Efesios 2,10).\n' +
       'Haz tu propia declaraci\u00F3n aqu\u00ED: ' + PAGE_URL;
   }
+  function renderExplain(){
+    if (!currentAff) return;
+    var item = EXPLAIN[lang()][currentAff];
+    var n = name();
+    boxTitle.textContent = item[0];
+    boxBody.textContent = (n ? n + ', ' : '') + item[1];
+    box.hidden = false;
+    document.querySelectorAll('.qs-aff').forEach(function(b){
+      b.classList.toggle('active', b.getAttribute('data-aff') === currentAff);
+    });
+  }
   function update(){
     var t = buildText();
     preview.textContent = t;
     wa.href = 'https://wa.me/?text=' + encodeURIComponent(t);
     input.placeholder = lang() === 'en' ? 'Write your name' : 'Escribe tu nombre';
+    renderExplain();
   }
+  try {
+    var saved = localStorage.getItem(NAME_KEY);
+    if (saved) input.value = saved;
+  } catch(e){}
+  input.addEventListener('input', function(){
+    try {
+      var v = name();
+      if (v) localStorage.setItem(NAME_KEY, v); else localStorage.removeItem(NAME_KEY);
+    } catch(e){}
+    update();
+  });
+  document.querySelectorAll('.qs-aff').forEach(function(b){
+    b.addEventListener('click', function(){
+      currentAff = b.getAttribute('data-aff');
+      renderExplain();
+    });
+  });
   window.addEventListener('tup:langchange', update);
-  input.addEventListener('input', update);
   update();
 })();
 </script>

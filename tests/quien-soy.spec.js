@@ -51,6 +51,24 @@ test('quien soy: en inglés la declaración y el botón cambian de idioma', asyn
   await expect(page.getByText('Share on WhatsApp')).toBeVisible();
 });
 
+test('quien soy: tocar una declaración muestra su explicación personalizada', async ({ page }) => {
+  await page.goto('/quien-soy/');
+  await page.fill('#qs-name', 'Guillermo');
+  await page.getByRole('button', { name: 'Soy libre' }).click();
+  await expect(page.locator('#qs-explain')).toBeVisible();
+  await expect(page.locator('#qs-explain-title')).toHaveText('Soy libre');
+  await expect(page.locator('#qs-explain-body')).toContainText('Guillermo, esto quiere decir');
+  await expect(page.locator('#qs-explain-body')).toContainText('ninguna cadena define tu futuro');
+});
+
+test('quien soy: el nombre se guarda en el dispositivo y se recuerda al volver', async ({ page }) => {
+  await page.goto('/quien-soy/');
+  await page.fill('#qs-name', 'Guillermo');
+  await page.reload();
+  await expect(page.locator('#qs-name')).toHaveValue('Guillermo');
+  await expect(page.locator('#qs-preview')).toContainText('Yo soy Guillermo.');
+});
+
 test('quien soy: el menú incluye la página', async ({ page }) => {
   await page.goto('/quien-soy/');
   await page.evaluate(() => window.scrollTo(0, 0));
