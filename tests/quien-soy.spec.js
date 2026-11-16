@@ -96,6 +96,16 @@ test('quien soy: la imagen de la declaración se crea en la página', async ({ p
   expect(href).toContain('blob:');
 });
 
+test('quien soy: la imagen rediseñada conserva el formato vertical completo', async ({ page }) => {
+  await page.goto('/quien-soy/');
+  await page.fill('#qs-name', 'Guillermo');
+  await page.locator('#qs-share-main').click();
+  await expect(page.locator('#qs-img-preview')).toBeVisible();
+  const dims = await page.locator('#qs-img-preview').evaluate(img => ({ w: img.naturalWidth, h: img.naturalHeight }));
+  expect(dims.w).toBe(1080);
+  expect(dims.h).toBe(1350);
+});
+
 test('quien soy: el menú incluye la página', async ({ page }) => {
   await page.goto('/quien-soy/');
   await page.evaluate(() => window.scrollTo(0, 0));
