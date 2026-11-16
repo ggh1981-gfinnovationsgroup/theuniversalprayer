@@ -378,7 +378,15 @@
       const hair = child.hair || '#533c32';
       const tunic = child.color || '#547da5';
       this.draw('sphere', [x, y + 0.02, z], [0.31, 0.025, 0.23], [0.12, 0.2, 0.24]);
-      this.draw('sphere', [x, y + 0.38, z], [0.19, 0.28, 0.18], tunic);
+      if (child.gender === 'girl') {
+        this.draw('cone', [x, y + 0.4, z], [0.54, 0.76, 0.48], child.dress || tunic);
+        this.draw('sphere', [x, y + 0.52, z], [0.17, 0.21, 0.16], tunic);
+        this.draw('cube', [x, y + 0.38, z - 0.01], [0.34, 0.07, 0.34], '#e8c67b');
+        this.draw('sphere', [x - 0.12, y + 0.8, z], [0.075, 0.2, 0.11], hair);
+        this.draw('sphere', [x + 0.12, y + 0.8, z], [0.075, 0.2, 0.11], hair);
+      } else {
+        this.draw('sphere', [x, y + 0.38, z], [0.19, 0.28, 0.18], tunic);
+      }
       this.draw('sphere', [x, y + 0.78, z], [0.19, 0.2, 0.18], '#d9a77f');
       this.draw('sphere', [x, y + 0.91, z + 0.01], [0.2, 0.1, 0.19], hair);
       if (child.joined && child.singing) {
@@ -386,37 +394,55 @@
       }
     }
 
-    drawOratoryScene(player, children, time, singing) {
-      this.draw('cube', [0, -0.5, 0], [100, 1, 100], '#b99b71');
-      this.draw('cube', [0, 0.02, -10], [4.2, 0.12, 23], '#d8c29a');
-      for (let z = -2; z >= -22; z -= 4) {
-        this.draw('cube', [0, 0.1, z], [3.1, 0.025, 0.12], '#bca77f');
-      }
+    drawMaze(maze) {
+      const cellSize = 4;
+      const wallColor = '#b88f69';
+      const trimColor = '#d1ae84';
+      const hasCell = (column, row) => maze.cells.has(`${column},${row}`);
 
-      for (const side of [-1, 1]) {
-        this.draw('cube', [side * 9, 3.5, -8], [5, 7, 26], side < 0 ? '#d5b894' : '#c9aa87');
-        for (let z = -1; z >= -19; z -= 4.5) {
-          this.draw('cube', [side * 9, 3.45, z], [0.12, 1.55, 1.05], '#83b9c3');
-          this.draw('cube', [side * 9, 4.3, z], [0.3, 0.12, 1.25], '#765347');
-        }
-        this.draw('cone', [side * 9, 8.2, -8], [6.8, 2.4, 28], side < 0 ? '#a55749' : '#9d4e43');
+      for (const cell of maze.cells) {
+        const [column, row] = cell.split(',').map(Number);
+        const x = -12 + column * cellSize;
+        const z = -row * cellSize;
+        const isGoal = column === 5 && row === 7;
+        this.draw('cube', [x, 0.015, z], [cellSize - 0.12, 0.04, cellSize - 0.12], '#d8c29a');
+        const edges = [
+          { column: column - 1, row, position: [x - 2, 1.35, z], size: [0.28, 2.7, cellSize + 0.12] },
+          { column: column + 1, row, position: [x + 2, 1.35, z], size: [0.28, 2.7, cellSize + 0.12] },
+          { column, row: row - 1, position: [x, 1.35, z + 2], size: [cellSize + 0.12, 2.7, 0.28] },
+          { column, row: row + 1, position: [x, 1.35, z - 2], size: [cellSize + 0.12, 2.7, 0.28] },
+        ];
+        edges.forEach((edge, index) => {
+          if (hasCell(edge.column, edge.row) || (isGoal && index === 3)) return;
+          this.draw('cube', edge.position, edge.size, wallColor);
+          const capPosition = [...edge.position];
+          capPosition[1] = 2.78;
+          this.draw('cube', capPosition, [edge.size[0] * 0.88, 0.12, edge.size[2] * 0.88], trimColor);
+        });
       }
+    }
 
-      this.draw('cube', [0, 2.4, -26], [18, 5, 3], '#d9c09a');
-      this.draw('cube', [0, 1.4, -24.35], [3, 2.8, 0.18], '#654a38');
-      this.draw('cube', [-5.4, 2.4, -24.3], [1.25, 2.05, 0.18], '#83b9c3');
-      this.draw('cube', [5.4, 2.4, -24.3], [1.25, 2.05, 0.18], '#83b9c3');
-      this.draw('cone', [0, 6.4, -26], [20, 3.5, 5.5], '#a84e40');
-      this.draw('cylinder', [0, 9.1, -26], [0.2, 1.5, 0.2], '#d7ad50');
-      this.draw('cube', [0, 9.65, -26], [1.1, 0.18, 0.18], '#d7ad50');
+    drawOratoryScene(player, children, time, singing, maze) {
+      this.draw('cube', [0, -0.5, -14], [100, 1, 100], '#b99b71');
+      this.drawMaze(maze);
+
+      const oratoryX = 8;
+      const oratoryZ = -32;
+      this.draw('cube', [oratoryX, 2.2, oratoryZ], [8, 4.4, 1.1], '#d9c09a');
+      this.draw('cube', [oratoryX, 1.35, oratoryZ + 0.57], [1.7, 2.7, 0.1], '#654a38');
+      this.draw('cube', [oratoryX - 2.7, 2.3, oratoryZ + 0.58], [1.05, 1.5, 0.1], '#83b9c3');
+      this.draw('cube', [oratoryX + 2.7, 2.3, oratoryZ + 0.58], [1.05, 1.5, 0.1], '#83b9c3');
+      this.draw('cone', [oratoryX, 4.8, oratoryZ], [9, 2.3, 2.2], '#a84e40');
+      this.draw('cylinder', [oratoryX, 6.35, oratoryZ], [0.16, 1.1, 0.16], '#d7ad50');
+      this.draw('cube', [oratoryX, 6.75, oratoryZ], [0.9, 0.14, 0.14], '#d7ad50');
 
       for (const child of children) this.drawChild(child, time);
       this.drawFelipe(player, time);
 
       if (singing) {
         const notePositions = [
-          [-2.4, 2.6, -21.2], [0, 3.1, -20.8], [2.4, 2.6, -21.2],
-          [-3.6, 2.2, -22.4], [3.6, 2.2, -22.4],
+          [5.6, 2.6, -26], [8, 3.1, -25.6], [10.4, 2.6, -26],
+          [4.4, 2.2, -27.2], [11.6, 2.2, -27.2],
         ];
         notePositions.forEach(([x, y, z], index) => {
           const float = Math.sin(time / 240 + index) * 0.18;
@@ -482,9 +508,9 @@
       this.drawCharacter(player, time);
     }
 
-    renderFelipeNeri(player, children, time, singing) {
+    renderFelipeNeri(player, children, time, singing, maze) {
       this.beginScene(player, time);
-      this.drawOratoryScene(player, children, time, singing);
+      this.drawOratoryScene(player, children, time, singing, maze);
     }
   }
 

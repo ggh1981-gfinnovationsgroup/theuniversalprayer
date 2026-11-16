@@ -6,7 +6,7 @@ Sitio web catolico bilingue (ES/EN) publicado en GitHub Pages.
 
 - Produccion activa en `main`.
 - Sitio estatico con PWA (`sw.js`) y contenido en JSON.
-- Cache actual del Service Worker: `tup-v322`.
+- Cache actual del Service Worker: `tup-v323`.
 - `sabiduria/`: recomendaciones de lectura bíblica para 12 situaciones, con fragmentos breves de la Biblia CEE y la New American Bible (NABRE), referencias para leer los pasajes completos, buscador bilingüe y uso sin conexión.
 - Al entrar en `meses/`, se selecciona el mes de la fecha local y se abre y muestra automáticamente el día de hoy. Los enlaces a otro mes o a una sección conservan su destino.
 - Adoración: 7 jornadas de 33 días en `adoracion/33dias-*/` (la más reciente: `33dias-enemigos`, para bendecir a los enemigos y entregarlos a Dios); cada uno de los 231 días tiene su propia ilustración SVG relacionada con el tema, visible en la tarjeta y en el día completo, con datos e imágenes precargados para uso sin conexión.
@@ -19,7 +19,7 @@ Sitio web catolico bilingue (ES/EN) publicado en GitHub Pages.
 - Archivos de datos JSON: 118 en `data/` (incluye los 12 meses de `data/meses/`).
 - Historias para ninos: fuente principal en `data/ninos-cuentos.json`.
 - Wake Lock API activo en todas las paginas con TTS (evita standby durante audio).
-- `juegos/`: catálogo bilingüe para reunir las aventuras interactivas del sitio; incluye «Camino de la esperanza» y «Felipe y el Oratorio», donde Felipe comparte pan, ofrece oración y Biblia, y acompaña a los niños —que deciden libremente unirse— hasta cantar juntos en el Oratorio. Enlazado desde Pequeños en Cristo y Jóvenes en Cristo.
+- `juegos/`: catálogo bilingüe para reunir las aventuras interactivas del sitio; incluye «Camino de la esperanza» y «Felipe y el Oratorio», donde Felipe comparte pan, ofrece oración y Biblia, y guía a niños y niñas por un laberinto hasta cantar juntos «Prefiero el Paraíso» con una melodía original. Enlazado desde Pequeños en Cristo y Jóvenes en Cristo.
 - `juego/`: «Camino de la esperanza», aventura cristiana de plataformas 3D con WebGL, peregrino, cruces luminosas, capilla y controles de teclado/táctiles. El motor y los modelos low-poly se generan localmente sin librerías externas.
 
 ## Cuentos para Ninos — Progreso de Reescritura Artesanal

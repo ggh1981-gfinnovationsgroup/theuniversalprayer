@@ -102,11 +102,26 @@ test('Felipe acompaña a los niños hasta el Oratorio y todos cantan', async ({ 
   await page.goto('/juegos/felipe-neri/');
   await expect(page).toHaveTitle(/Felipe y el Oratorio/);
   await expect(page.locator('#gameCanvas')).toBeVisible();
+  await expect(page.locator('.game-hint')).toContainText('laberinto');
   await page.locator('#playButton').click();
 
+  const move = async (direction, duration) => {
+    await page.keyboard.down(direction);
+    await page.waitForTimeout(duration);
+    await page.keyboard.up(direction);
+    await page.waitForTimeout(250);
+  };
+  const moveCells = async (direction, cells, duration = 850) => {
+    for (let cell = 0; cell < cells; cell++) await move(direction, duration);
+  };
+
+  await move('ArrowRight', 800);
+  await expect(page.locator('#interactButton')).toBeHidden();
   await page.keyboard.down('ArrowUp');
-  await page.waitForTimeout(1000);
+  await page.waitForTimeout(1700);
   await page.keyboard.up('ArrowUp');
+  await page.waitForTimeout(250);
+  await move('ArrowLeft', 1700);
   await expect(page.locator('#interactButton')).toBeVisible();
   await expect(page.locator('#interactButton')).toHaveText('Compartir pan');
   await page.locator('#interactButton').click();
@@ -119,12 +134,16 @@ test('Felipe acompaña a los niños hasta el Oratorio y todos cantan', async ({ 
   await page.locator('#languageToggle').click();
   await expect(page.locator('#childDialogue')).toContainText('Sí, quiero ir al Oratorio contigo');
 
-  for (const expectedCount of ['2', '3']) {
-    await page.keyboard.down('ArrowUp');
-    await page.waitForTimeout(1300);
-    await page.keyboard.up('ArrowUp');
+  const nextChildrenRoute = [
+    [['ArrowUp', 1, 500], ['ArrowRight', 4]],
+    [['ArrowUp', 2], ['ArrowLeft', 3]],
+  ];
+  for (const [index, expectedCount] of ['2', '3'].entries()) {
+    for (const [direction, cells, duration] of nextChildrenRoute[index]) {
+      await moveCells(direction, cells, duration);
+    }
+    await expect(page.locator('#childName')).toHaveText(expectedCount === '2' ? 'Lucía' : 'Rosa');
     await expect(page.locator('#interactButton')).toBeVisible();
-    await expect(page.locator('#childName')).toHaveText(expectedCount === '2' ? 'Luca' : 'Rosa');
     await expect(page.locator('#interactButton')).toHaveText('Compartir pan');
     await page.locator('#interactButton').click();
     await expect(page.locator('#interactButton')).toHaveText('Ofrecer una Biblia y rezar');
@@ -132,11 +151,12 @@ test('Felipe acompaña a los niños hasta el Oratorio y todos cantan', async ({ 
     await expect(page.locator('#childrenCount')).toHaveText(expectedCount);
   }
 
-  await page.keyboard.down('ArrowUp');
-  await page.waitForTimeout(2200);
-  await page.keyboard.up('ArrowUp');
+  for (const [direction, cells] of [['ArrowUp', 1], ['ArrowRight', 3], ['ArrowUp', 1]]) {
+    await moveCells(direction, cells);
+  }
   await expect(page.locator('#choirBanner')).toBeVisible();
   await expect(page.locator('#choirBanner')).toContainText('¡Todos cantan en el Oratorio!');
+  await expect(page.locator('.choir-song')).toContainText('Prefiero el Paraíso');
   expect(await page.locator('#gameCanvas').evaluate(canvas => canvas.getContext('webgl')?.getError())).toBe(0);
   expect(errors).toEqual([]);
 });

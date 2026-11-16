@@ -23,10 +23,11 @@
   const strings = {
     es: {
       startTitle: 'Un camino hacia el Oratorio',
-      startMessage: 'Camina con Felipe. Comparte pan, ofrece una Biblia y una oración, y deja que cada niño decida si quiere acompañarte.',
+      startMessage: 'Encuentra la salida del laberinto con Felipe. Comparte pan, ofrece una Biblia y una oración, y deja que cada niño o niña decida si quiere acompañarte.',
       start: 'Comenzar',
       finishTitle: '¡La alegría se comparte!',
-      finishMessage: 'Los niños llegaron por su propia voluntad. Ahora todos cantan juntos en el Oratorio.',
+      finishMessage: 'Los niños y las niñas llegaron por su propia voluntad. Ahora cantan juntos en el Oratorio.',
+      audioUnavailable: 'El canto sigue en el Oratorio, aunque este dispositivo no pudo reproducir la melodía.',
       restart: 'Volver a jugar',
       breadAction: 'Compartir pan',
       bibleAction: 'Ofrecer una Biblia y rezar',
@@ -35,21 +36,22 @@
       breadShared: (name) => `Felipe comparte el pan con ${name}.`,
       bibleOffered: (name) => `Felipe ofrece una Biblia y le invita a rezar, sin obligarle.`,
       joined: (name) => `${name}: «Gracias por compartir conmigo. Sí, quiero ir al Oratorio contigo».`,
-      status: (count) => `Niños que eligieron acompañar a Felipe: ${count} de 3`,
+      status: (count) => `Niños y niñas que eligieron acompañar a Felipe: ${count} de 3`,
       children: [
-        { name: 'Tomás', greeting: 'Tengo hambre y hace rato que no como.', response: 'Gracias, Felipe. Me gustaría conocer el Oratorio.', color: '#5891a6', hair: '#514035' },
-        { name: 'Luca', greeting: '¿Puedo aprender una oración contigo?', response: 'Sí, quiero ir con ustedes y aprender a rezar.', color: '#be8554', hair: '#393238' },
-        { name: 'Rosa', greeting: 'Me gusta cantar, pero no conozco el camino.', response: '¡Sí! Me encantaría cantar con los demás.', color: '#8e719d', hair: '#593e36' },
+        { name: 'Tomás', greeting: 'Tengo hambre y hace rato que no como.', response: 'Gracias, Felipe. Me gustaría conocer el Oratorio.', color: '#5891a6', hair: '#514035', gender: 'boy' },
+        { name: 'Lucía', greeting: '¿Puedo aprender una oración contigo?', response: 'Sí, quiero ir con ustedes y aprender a rezar.', color: '#be8554', hair: '#393238', gender: 'girl', dress: '#c76f75' },
+        { name: 'Rosa', greeting: 'Me gusta cantar, pero no conozco el camino.', response: '¡Sí! Me encantaría cantar con los demás.', color: '#8e719d', hair: '#593e36', gender: 'girl', dress: '#9472a2' },
       ],
       actionHint: 'Pulsa E o el botón para acercarte y ayudar.',
       helpFirst: (name) => `Comparte pan con ${name}.`,
     },
     en: {
       startTitle: 'A walk to the Oratory',
-      startMessage: 'Walk with Philip. Share bread, offer a Bible and a prayer, and let each child decide whether to join you.',
+      startMessage: 'Find your way through the maze with Philip. Share bread, offer a Bible and a prayer, and let each child decide whether to join you.',
       start: 'Begin',
       finishTitle: 'Joy is meant to be shared!',
       finishMessage: 'The children came by their own choice. Now everyone is singing together at the Oratory.',
+      audioUnavailable: 'The choir is still singing at the Oratory, but this device could not play the melody.',
       restart: 'Play again',
       breadAction: 'Share bread',
       bibleAction: 'Offer a Bible and pray',
@@ -60,20 +62,33 @@
       joined: (name) => `${name}: “Thank you for sharing with me. Yes, I would like to visit the Oratory with you.”`,
       status: (count) => `Children who chose to join Philip: ${count} of 3`,
       children: [
-        { name: 'Thomas', greeting: "I'm hungry; I haven't eaten in a while.", response: "Thank you, Philip. I'd like to see the Oratory.", color: '#5891a6', hair: '#514035' },
-        { name: 'Luca', greeting: 'Could you teach me a prayer?', response: 'Yes, I would like to come and learn to pray.', color: '#be8554', hair: '#393238' },
-        { name: 'Rosa', greeting: "I like to sing, but I don't know the way.", response: "Yes! I'd love to sing with everyone.", color: '#8e719d', hair: '#593e36' },
+        { name: 'Thomas', greeting: "I'm hungry; I haven't eaten in a while.", response: "Thank you, Philip. I'd like to see the Oratory.", color: '#5891a6', hair: '#514035', gender: 'boy' },
+        { name: 'Lucia', greeting: 'Could you teach me a prayer?', response: 'Yes, I would like to come and learn to pray.', color: '#be8554', hair: '#393238', gender: 'girl', dress: '#c76f75' },
+        { name: 'Rosa', greeting: "I like to sing, but I don't know the way.", response: "Yes! I'd love to sing with everyone.", color: '#8e719d', hair: '#593e36', gender: 'girl', dress: '#9472a2' },
       ],
       actionHint: 'Press E or the button to greet and help.',
       helpFirst: (name) => `Share bread with ${name}.`,
     },
   };
 
+  const maze = {
+    columns: 7,
+    rows: 8,
+    cells: new Set([
+      '3,0', '3,1', '3,2', '2,2', '1,2',
+      '1,3', '2,3', '3,3', '4,3', '5,3',
+      '5,4', '5,5', '4,5', '3,5', '2,5',
+      '2,6', '3,6', '4,6', '5,6', '5,7',
+      '4,1', '5,1', '5,2',
+      '1,4', '1,5',
+    ]),
+  };
   const startingChildren = [
-    { x: 1.6, z: -5.2 },
-    { x: -1.6, z: -11.2 },
-    { x: 1.5, z: -17.2 },
+    { x: -8, z: -8 },
+    { x: 8, z: -12 },
+    { x: -4, z: -20 },
   ];
+  const oratory = { x: 8, z: -28 };
   const player = { x: 0, z: 0, y: 0, vy: 0, vx: 0, vz: 0, grounded: true, facing: 0 };
   const keys = new Set();
   let children = [];
@@ -82,6 +97,8 @@
   let language = localStorage.getItem('tup_lang') === 'en' ? 'en' : 'es';
   let lastTime = 0;
   let toastTimer;
+  let audioContext = null;
+  let choirCloseTimer;
   let nearbyChild = null;
   let greetingChild = null;
 
@@ -110,6 +127,63 @@
     toast.classList.add('is-visible');
     clearTimeout(toastTimer);
     toastTimer = setTimeout(() => toast.classList.remove('is-visible'), 1900);
+  }
+
+  function prepareAudio() {
+    if (audioContext || !window.AudioContext) return;
+    try {
+      audioContext = new window.AudioContext();
+      audioContext.resume().catch((error) => {
+        console.error('No se pudo iniciar el audio del Oratorio.', error);
+        showToast(text().audioUnavailable);
+      });
+    } catch (error) {
+      console.error('No se pudo preparar el audio del Oratorio.', error);
+    }
+  }
+
+  function playOriginalChoir() {
+    if (!audioContext) {
+      showToast(text().audioUnavailable);
+      return;
+    }
+    const melody = [
+      [60, 0.32], [64, 0.32], [67, 0.56], [72, 0.32], [71, 0.32], [69, 0.56],
+      [67, 0.32], [69, 0.32], [71, 0.56], [72, 0.32], [76, 0.32], [74, 0.56],
+      [72, 0.32], [71, 0.32], [69, 0.56], [67, 0.32], [69, 0.32], [72, 0.56],
+      [71, 0.32], [69, 0.32], [67, 0.8],
+    ];
+    const context = audioContext;
+    const startAt = context.currentTime + 0.12;
+    let offset = 0;
+
+    melody.forEach(([midi, duration]) => {
+      const start = startAt + offset;
+      const end = start + duration * 0.92;
+      for (const [pitch, volume, type] of [[midi, 0.055, 'triangle'], [midi - 5, 0.022, 'sine']]) {
+        const oscillator = context.createOscillator();
+        const gain = context.createGain();
+        oscillator.type = type;
+        oscillator.frequency.value = 440 * 2 ** ((pitch - 69) / 12);
+        gain.gain.setValueAtTime(0.0001, start);
+        gain.gain.linearRampToValueAtTime(volume, start + 0.06);
+        gain.gain.setValueAtTime(volume, Math.max(start + 0.06, end - 0.08));
+        gain.gain.exponentialRampToValueAtTime(0.0001, end);
+        oscillator.connect(gain);
+        gain.connect(context.destination);
+        oscillator.start(start);
+        oscillator.stop(end + 0.03);
+      }
+      offset += duration;
+    });
+
+    clearTimeout(choirCloseTimer);
+    choirCloseTimer = setTimeout(() => {
+      if (audioContext === context) {
+        context.close().catch((error) => console.error('No se pudo cerrar el audio del Oratorio.', error));
+        audioContext = null;
+      }
+    }, (offset + 1) * 1000);
   }
 
   function renderNearby(child) {
@@ -168,6 +242,10 @@
       step: 0,
       joined: false,
       singing: false,
+      gender: strings.es.children[index].gender,
+      dress: strings.es.children[index].dress,
+      hair: strings.es.children[index].hair,
+      color: strings.es.children[index].color,
     }));
     greetingChild = null;
     nearbyChild = null;
@@ -189,6 +267,7 @@
 
   function startGame() {
     if (finished) resetGame();
+    prepareAudio();
     running = true;
     overlay.classList.add('is-hidden');
     canvas.focus({ preventScroll: true });
@@ -200,6 +279,7 @@
     keys.clear();
     children.forEach((child) => { child.singing = true; });
     choirBanner.hidden = false;
+    playOriginalChoir();
     overlayTitle.textContent = text().finishTitle;
     overlayMessage.textContent = text().finishMessage;
     playButton.textContent = text().restart;
@@ -245,6 +325,39 @@
     });
   }
 
+  function cellAt(x, z) {
+    return {
+      column: Math.floor((x + 14) / 4),
+      row: Math.floor((2 - z) / 4),
+    };
+  }
+
+  function canOccupy(x, z) {
+    const { column, row } = cellAt(x, z);
+    if (!maze.cells.has(`${column},${row}`)) return false;
+    const localX = x - (-12 + column * 4);
+    const localZ = z - (-row * 4);
+    const clearance = 0.42;
+    return (localX >= -2 + clearance || maze.cells.has(`${column - 1},${row}`)) &&
+      (localX <= 2 - clearance || maze.cells.has(`${column + 1},${row}`)) &&
+      (localZ >= -2 + clearance || maze.cells.has(`${column},${row + 1}`)) &&
+      (localZ <= 2 - clearance || maze.cells.has(`${column},${row - 1}`));
+  }
+
+  function movePlayer(delta) {
+    const steps = Math.max(1, Math.ceil(Math.max(Math.abs(player.vx), Math.abs(player.vz)) * delta / 0.12));
+    const stepX = player.vx * delta / steps;
+    const stepZ = player.vz * delta / steps;
+    for (let step = 0; step < steps; step++) {
+      const nextX = player.x + stepX;
+      if (canOccupy(nextX, player.z)) player.x = nextX;
+      else player.vx = 0;
+      const nextZ = player.z + stepZ;
+      if (canOccupy(player.x, nextZ)) player.z = nextZ;
+      else player.vz = 0;
+    }
+  }
+
   function update(delta) {
     if (!running) return;
     const up = keys.has('ArrowUp') || keys.has('KeyW');
@@ -268,10 +381,7 @@
       player.vz = player.vz / speed * 5.2;
     }
     if (inputX || inputZ) player.facing = Math.atan2(inputX, inputZ);
-    player.x += player.vx * delta;
-    player.z += player.vz * delta;
-    player.x = Math.max(-4.2, Math.min(4.2, player.x));
-    player.z = Math.max(-27, Math.min(2, player.z));
+    movePlayer(delta);
     player.vy -= 22 * delta;
     player.y += player.vy * delta;
     if (player.y <= 0) {
@@ -281,7 +391,8 @@
     }
     moveFollowers(delta);
     updateNearby();
-    if (children.every((child) => child.joined) && player.z < -23.2 && Math.abs(player.x) < 7) {
+    if (children.every((child) => child.joined) &&
+      Math.hypot(player.x - oratory.x, player.z - oratory.z) < 2.2) {
       completeGame();
     }
   }
@@ -290,7 +401,7 @@
     const delta = Math.min(0.035, (time - (lastTime || time)) / 1000);
     lastTime = time;
     update(delta);
-    renderer.renderFelipeNeri(player, children, time, finished);
+    renderer.renderFelipeNeri(player, children, time, finished, maze);
     window.requestAnimationFrame(frame);
   }
 

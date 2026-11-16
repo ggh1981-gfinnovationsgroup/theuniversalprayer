@@ -85,6 +85,7 @@
 }
 
 .choir-banner strong { font: 700 .95rem var(--font-sans, sans-serif); }
+.choir-song { color: #ffe2a1; font: 700 .82rem var(--font-sans, sans-serif); }
 .choir-banner > span:last-child { color: rgba(255, 255, 255, .8); font: .78rem var(--font-sans, sans-serif); }
 .choir-notes { color: #f3d16f; font-size: 1.2rem; letter-spacing: .3em; animation: choir-float 1.8s ease-in-out infinite; }
 
