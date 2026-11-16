@@ -287,34 +287,34 @@
         const angle = i * TAU / 10;
         const distance = 52 + (i % 3) * 9;
         const x = Math.cos(angle) * distance;
-        const z = Math.sin(angle) * distance + 7;
+        const z = Math.sin(angle) * distance - 7;
         this.draw('cone', [x, -1, z], [13 + (i % 2) * 5, 12 + (i % 3) * 2, 14 + (i % 2) * 4], i % 2 ? '#6aa9ad' : '#7fb8b2');
       }
       this.draw('sphere', [18, 30, 42], [3.2, 3.2, 3.2], '#ffe49a', [0, 0, 0], 0.55);
-      this.drawCloud(-15, 13 + Math.sin(time / 1600), 1, 5);
-      this.drawCloud(14, 17 + Math.cos(time / 2100), 20, 6);
-      this.drawCloud(-11, 12, 31, 4);
+      this.drawCloud(-15, 13 + Math.sin(time / 1600), -1, 5);
+      this.drawCloud(14, 17 + Math.cos(time / 2100), -20, 6);
+      this.drawCloud(-11, 12, -31, 4);
     }
 
     drawDecorations() {
-      this.drawTree(-1.9, 0, -1.6, 0.9);
-      this.drawTree(1.9, 0, 1.8, 0.72);
-      this.drawTree(-1.3, 1.15, 6.5, 0.72);
-      this.drawTree(4.5, 2.3, 10.1, 0.8);
-      this.drawTree(2.2, 4.6, 16.8, 0.73);
-      this.drawTree(-4.2, 5.75, 22.1, 0.9);
-      this.draw('sphere', [1.6, 0.12, -0.6], [0.28, 0.2, 0.26], '#e97865');
-      this.draw('sphere', [-0.7, 0.12, 1.8], [0.28, 0.2, 0.26], '#f0d26c');
-      this.draw('sphere', [-1, 1.28, 5.4], [0.25, 0.18, 0.23], '#ed8e81');
-      this.draw('sphere', [5.3, 3.58, 13.2], [0.27, 0.19, 0.23], '#f0d26c');
+      this.drawTree(-1.9, 0, 1.6, 0.9);
+      this.drawTree(1.9, 0, -1.8, 0.72);
+      this.drawTree(-1.3, 1.15, -6.5, 0.72);
+      this.drawTree(4.5, 2.3, -10.1, 0.8);
+      this.drawTree(2.2, 4.6, -16.8, 0.73);
+      this.drawTree(-4.2, 5.75, -22.1, 0.9);
+      this.draw('sphere', [1.6, 0.12, 0.6], [0.28, 0.2, 0.26], '#e97865');
+      this.draw('sphere', [-0.7, 0.12, -1.8], [0.28, 0.2, 0.26], '#f0d26c');
+      this.draw('sphere', [-1, 1.28, -5.4], [0.25, 0.18, 0.23], '#ed8e81');
+      this.draw('sphere', [5.3, 3.58, -13.2], [0.27, 0.19, 0.23], '#f0d26c');
     }
 
     drawChapel(goal, collected) {
       const { x, z, h } = goal;
       this.draw('cube', [x, h + 1.15, z], [2.8, 2.3, 2.35], '#f2dfb6');
-      this.draw('cube', [x, h + 1.22, z - 1.2], [0.72, 1.45, 0.12], '#654c3d');
-      this.draw('cube', [x - 0.86, h + 1.45, z - 1.2], [0.32, 0.48, 0.14], '#8fc9d0');
-      this.draw('cube', [x + 0.86, h + 1.45, z - 1.2], [0.32, 0.48, 0.14], '#8fc9d0');
+      this.draw('cube', [x, h + 1.22, z + 1.2], [0.72, 1.45, 0.12], '#654c3d');
+      this.draw('cube', [x - 0.86, h + 1.45, z + 1.2], [0.32, 0.48, 0.14], '#8fc9d0');
+      this.draw('cube', [x + 0.86, h + 1.45, z + 1.2], [0.32, 0.48, 0.14], '#8fc9d0');
       this.draw('cone', [x, h + 2.65, z], [3.4, 1.45, 3.0], '#b95845');
       this.draw('cylinder', [x, h + 3.65, z], [0.12, 0.65, 0.12], '#d7ad50');
       this.draw('cube', [x, h + 3.76, z], [0.5, 0.12, 0.12], '#d7ad50');
@@ -360,8 +360,8 @@
       const gl = this.gl;
       const aspect = this.width / this.height;
       const distance = aspect < 0.9 ? 15.5 : 12.5;
-      const eye = [player.x + 0.35, player.y + distance * 0.56, player.z - distance];
-      const target = [player.x, player.y + 0.7, player.z + (aspect < 0.9 ? 1.2 : 2.7)];
+      const eye = [player.x + 0.35, player.y + distance * 0.56, player.z + distance];
+      const target = [player.x, player.y + 0.7, player.z - (aspect < 0.9 ? 1.2 : 2.7)];
       const viewProjection = multiply(
         perspective(0.88, aspect, 0.1, 120),
         lookAt(eye, target, [0, 1, 0]),

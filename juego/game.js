@@ -47,20 +47,20 @@
 
   const platforms = [
     { x: 0, z: 0, w: 6, d: 6, h: 0, color: '#62c89d' },
-    { x: 0, z: 5.7, w: 4.2, d: 4.2, h: 1.15, color: '#70d4a0' },
-    { x: 3.2, z: 9.4, w: 4.2, d: 4.2, h: 2.3, color: '#8bd18a' },
-    { x: 4.2, z: 13.8, w: 4.4, d: 4.2, h: 3.45, color: '#8bd18a' },
-    { x: 0.8, z: 17.3, w: 4.4, d: 4.2, h: 4.6, color: '#a4ce7c' },
-    { x: -3.2, z: 20.7, w: 5.4, d: 5.2, h: 5.75, color: '#b7cc72' },
+    { x: 0, z: -5.7, w: 4.2, d: 4.2, h: 1.15, color: '#70d4a0' },
+    { x: 3.2, z: -9.4, w: 4.2, d: 4.2, h: 2.3, color: '#8bd18a' },
+    { x: 4.2, z: -13.8, w: 4.4, d: 4.2, h: 3.45, color: '#8bd18a' },
+    { x: 0.8, z: -17.3, w: 4.4, d: 4.2, h: 4.6, color: '#a4ce7c' },
+    { x: -3.2, z: -20.7, w: 5.4, d: 5.2, h: 5.75, color: '#b7cc72' },
   ];
   const stars = [
-    { x: 0, z: 1.4, h: 1.45, collected: false },
-    { x: 0, z: 5.7, h: 2.6, collected: false },
-    { x: 3.2, z: 9.4, h: 3.75, collected: false },
-    { x: 4.2, z: 13.8, h: 4.9, collected: false },
-    { x: -3.2, z: 20.7, h: 7.15, collected: false },
+    { x: 0, z: -1.4, h: 1.45, collected: false },
+    { x: 0, z: -5.7, h: 2.6, collected: false },
+    { x: 3.2, z: -9.4, h: 3.75, collected: false },
+    { x: 4.2, z: -13.8, h: 4.9, collected: false },
+    { x: -3.2, z: -20.7, h: 7.15, collected: false },
   ];
-  const goal = { x: -3.2, z: 20.7, h: 5.75 };
+  const goal = { x: -3.2, z: -20.7, h: 5.75 };
   const player = { x: 0, z: 0, y: 0, vy: 0, vx: 0, vz: 0, grounded: true, facing: 0 };
   const keys = new Set();
   let running = false;
@@ -142,9 +142,8 @@
     const down = keys.has('ArrowDown') || keys.has('KeyS');
     const left = keys.has('ArrowLeft') || keys.has('KeyA');
     const right = keys.has('ArrowRight') || keys.has('KeyD');
-    // The camera looks toward +Z from behind, so world +X appears on screen-left.
-    let inputX = (left ? 1 : 0) - (right ? 1 : 0);
-    let inputZ = (up ? 1 : 0) - (down ? 1 : 0);
+    let inputX = (right ? 1 : 0) - (left ? 1 : 0);
+    let inputZ = (down ? 1 : 0) - (up ? 1 : 0);
     const inputLength = Math.hypot(inputX, inputZ) || 1;
     inputX /= inputLength;
     inputZ /= inputLength;

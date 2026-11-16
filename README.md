@@ -6,7 +6,7 @@ Sitio web catolico bilingue (ES/EN) publicado en GitHub Pages.
 
 - Produccion activa en `main`.
 - Sitio estatico con PWA (`sw.js`) y contenido en JSON.
-- Cache actual del Service Worker: `tup-v320`.
+- Cache actual del Service Worker: `tup-v321`.
 - `sabiduria/`: recomendaciones de lectura bíblica para 12 situaciones, con fragmentos breves de la Biblia CEE y la New American Bible (NABRE), referencias para leer los pasajes completos, buscador bilingüe y uso sin conexión.
 - Al entrar en `meses/`, se selecciona el mes de la fecha local y se abre y muestra automáticamente el día de hoy. Los enlaces a otro mes o a una sección conservan su destino.
 - Adoración: 7 jornadas de 33 días en `adoracion/33dias-*/` (la más reciente: `33dias-enemigos`, para bendecir a los enemigos y entregarlos a Dios); cada uno de los 231 días tiene su propia ilustración SVG relacionada con el tema, visible en la tarjeta y en el día completo, con datos e imágenes precargados para uso sin conexión.
