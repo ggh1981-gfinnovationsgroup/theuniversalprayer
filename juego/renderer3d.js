@@ -452,14 +452,16 @@
       }
     }
 
-    beginScene(player, time) {
+    beginScene(player, time, fixedYaw = null) {
       this.resize();
       const gl = this.gl;
       const aspect = this.width / this.height;
-      const speed = Math.hypot(player.vx, player.vz);
       const baseDistance = aspect < 0.9 ? 12.8 : 10.8;
-      const desiredDistance = baseDistance + Math.min(speed / 5.8, 1) * 1.8 + Math.min(Math.max(player.vy, 0) / 10.2, 1) * 0.7;
-      const desiredYaw = Number.isFinite(player.facing) ? player.facing : Math.PI;
+      const speed = Math.hypot(player.vx, player.vz);
+      const desiredDistance = fixedYaw === null
+        ? baseDistance + Math.min(speed / 5.8, 1) * 1.8 + Math.min(Math.max(player.vy, 0) / 10.2, 1) * 0.7
+        : baseDistance;
+      const desiredYaw = fixedYaw ?? (Number.isFinite(player.facing) ? player.facing : Math.PI);
       const lookAhead = aspect < 0.9 ? 1.5 : 3.1;
       const desiredCamera = [
         player.x - Math.sin(desiredYaw) * desiredDistance,
@@ -472,8 +474,12 @@
         this.camera = { x: desiredCamera[0], y: desiredCamera[1], z: desiredCamera[2], yaw: desiredYaw };
       } else {
         const smoothing = 1 - Math.exp(-delta * 5.5);
-        const yawDifference = ((desiredYaw - this.camera.yaw + Math.PI) % (Math.PI * 2) + Math.PI * 2) % (Math.PI * 2) - Math.PI;
-        this.camera.yaw += yawDifference * smoothing;
+        if (fixedYaw === null) {
+          const yawDifference = ((desiredYaw - this.camera.yaw + Math.PI) % (Math.PI * 2) + Math.PI * 2) % (Math.PI * 2) - Math.PI;
+          this.camera.yaw += yawDifference * smoothing;
+        } else {
+          this.camera.yaw = fixedYaw;
+        }
         this.camera.x += (desiredCamera[0] - this.camera.x) * smoothing;
         this.camera.y += (desiredCamera[1] - this.camera.y) * smoothing;
         this.camera.z += (desiredCamera[2] - this.camera.z) * smoothing;
@@ -514,7 +520,7 @@
     }
 
     renderFelipeNeri(player, children, time, singing, maze) {
-      this.beginScene(player, time);
+      this.beginScene(player, time, Math.PI);
       this.drawOratoryScene(player, children, time, singing, maze);
     }
   }

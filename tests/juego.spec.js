@@ -99,11 +99,29 @@ test('el catálogo incluye la aventura de Felipe Neri', async ({ page }) => {
 test('Felipe acompaña a los niños hasta el Oratorio y todos cantan', async ({ page }) => {
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
+  await page.addInitScript(() => {
+    Object.defineProperty(window, 'Game3DRenderer', {
+      configurable: true,
+      set(Renderer) {
+        const renderFelipeNeri = Renderer.prototype.renderFelipeNeri;
+        Renderer.prototype.renderFelipeNeri = function (...args) {
+          renderFelipeNeri.apply(this, args);
+          window.felipeCameraYaw = this.camera.yaw;
+        };
+        Object.defineProperty(window, 'Game3DRenderer', {
+          configurable: true,
+          value: Renderer,
+          writable: true,
+        });
+      },
+    });
+  });
   await page.goto('/juegos/felipe-neri/');
   await expect(page).toHaveTitle(/Felipe y el Oratorio/);
   await expect(page.locator('#gameCanvas')).toBeVisible();
   await expect(page.locator('.game-hint')).toContainText('laberinto');
   await page.locator('#playButton').click();
+  await expect(page.locator('#gameOverlay')).toHaveClass(/is-hidden/);
 
   const move = async (direction, duration) => {
     await page.keyboard.down(direction);
@@ -116,12 +134,14 @@ test('Felipe acompaña a los niños hasta el Oratorio y todos cantan', async ({ 
   };
 
   await move('ArrowRight', 800);
+  expect(await page.evaluate(() => window.felipeCameraYaw)).toBeCloseTo(Math.PI);
   await expect(page.locator('#interactButton')).toBeHidden();
   await page.keyboard.down('ArrowUp');
   await page.waitForTimeout(1700);
   await page.keyboard.up('ArrowUp');
   await page.waitForTimeout(250);
   await move('ArrowLeft', 1700);
+  expect(await page.evaluate(() => window.felipeCameraYaw)).toBeCloseTo(Math.PI);
   await expect(page.locator('#interactButton')).toBeVisible();
   await expect(page.locator('#interactButton')).toHaveText('Compartir pan');
   await page.locator('#interactButton').click();
