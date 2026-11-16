@@ -216,6 +216,8 @@
       this.geometries = new Map();
       this.width = 0;
       this.height = 0;
+      this.camera = null;
+      this.lastRenderTime = null;
       this.createGeometry('cube', createCube());
       this.createGeometry('sphere', createSphere());
       this.createGeometry('cone', createCylinder(9, 0, 0.5));
@@ -355,13 +357,102 @@
       this.draw('sphere', [x + frontX + sideX, footY + 1.08, z + frontZ + sideZ], [0.055, 0.075, 0.045], '#253746');
     }
 
-    render(player, platforms, stars, goal, time, collected) {
+    drawFelipe(player, time) {
+      const { x, z, y, vx, vz, grounded } = player;
+      const bob = grounded ? Math.sin(time / 130) * (Math.abs(vx) + Math.abs(vz) > 0.3 ? 0.045 : 0.008) : 0;
+      const base = y + bob;
+      this.draw('sphere', [x, y + 0.02, z], [0.48, 0.035, 0.31], [0.12, 0.2, 0.24]);
+      this.draw('sphere', [x, base + 0.62, z], [0.36, 0.58, 0.3], '#30333d');
+      this.draw('cube', [x, base + 1.04, z - 0.28], [0.22, 0.11, 0.055], '#f3e7d2');
+      this.draw('sphere', [x, base + 1.28, z], [0.29, 0.3, 0.27], '#dfb18a');
+      this.draw('sphere', [x, base + 1.49, z], [0.3, 0.1, 0.29], '#262934');
+      this.draw('sphere', [x, base + 1.2, z - 0.22], [0.25, 0.12, 0.1], '#45404a');
+      this.draw('cube', [x - 0.3, base + 0.2, z - 0.02], [0.25, 0.14, 0.4], '#40343a');
+      this.draw('cube', [x + 0.3, base + 0.2, z - 0.02], [0.25, 0.14, 0.4], '#40343a');
+    }
+
+    drawChild(child, time) {
+      const bob = child.joined && child.singing ? Math.abs(Math.sin(time / 180 + child.index)) * 0.11 : Math.sin(time / 320 + child.index) * 0.025;
+      const y = (child.y || 0) + bob;
+      const { x, z } = child;
+      const hair = child.hair || '#533c32';
+      const tunic = child.color || '#547da5';
+      this.draw('sphere', [x, y + 0.02, z], [0.31, 0.025, 0.23], [0.12, 0.2, 0.24]);
+      this.draw('sphere', [x, y + 0.38, z], [0.19, 0.28, 0.18], tunic);
+      this.draw('sphere', [x, y + 0.78, z], [0.19, 0.2, 0.18], '#d9a77f');
+      this.draw('sphere', [x, y + 0.91, z + 0.01], [0.2, 0.1, 0.19], hair);
+      if (child.joined && child.singing) {
+        this.draw('sphere', [x, y + 0.76, z - 0.16], [0.045, 0.07, 0.035], '#5a2524');
+      }
+    }
+
+    drawOratoryScene(player, children, time, singing) {
+      this.draw('cube', [0, -0.5, 0], [100, 1, 100], '#b99b71');
+      this.draw('cube', [0, 0.02, -10], [4.2, 0.12, 23], '#d8c29a');
+      for (let z = -2; z >= -22; z -= 4) {
+        this.draw('cube', [0, 0.1, z], [3.1, 0.025, 0.12], '#bca77f');
+      }
+
+      for (const side of [-1, 1]) {
+        this.draw('cube', [side * 9, 3.5, -8], [5, 7, 26], side < 0 ? '#d5b894' : '#c9aa87');
+        for (let z = -1; z >= -19; z -= 4.5) {
+          this.draw('cube', [side * 9, 3.45, z], [0.12, 1.55, 1.05], '#83b9c3');
+          this.draw('cube', [side * 9, 4.3, z], [0.3, 0.12, 1.25], '#765347');
+        }
+        this.draw('cone', [side * 9, 8.2, -8], [6.8, 2.4, 28], side < 0 ? '#a55749' : '#9d4e43');
+      }
+
+      this.draw('cube', [0, 2.4, -26], [18, 5, 3], '#d9c09a');
+      this.draw('cube', [0, 1.4, -24.35], [3, 2.8, 0.18], '#654a38');
+      this.draw('cube', [-5.4, 2.4, -24.3], [1.25, 2.05, 0.18], '#83b9c3');
+      this.draw('cube', [5.4, 2.4, -24.3], [1.25, 2.05, 0.18], '#83b9c3');
+      this.draw('cone', [0, 6.4, -26], [20, 3.5, 5.5], '#a84e40');
+      this.draw('cylinder', [0, 9.1, -26], [0.2, 1.5, 0.2], '#d7ad50');
+      this.draw('cube', [0, 9.65, -26], [1.1, 0.18, 0.18], '#d7ad50');
+
+      for (const child of children) this.drawChild(child, time);
+      this.drawFelipe(player, time);
+
+      if (singing) {
+        const notePositions = [
+          [-2.4, 2.6, -21.2], [0, 3.1, -20.8], [2.4, 2.6, -21.2],
+          [-3.6, 2.2, -22.4], [3.6, 2.2, -22.4],
+        ];
+        notePositions.forEach(([x, y, z], index) => {
+          const float = Math.sin(time / 240 + index) * 0.18;
+          this.draw('sphere', [x, y + float, z], [0.16, 0.21, 0.12], index % 2 ? '#f2cc63' : '#fff1b1', [0, 0, index % 2 ? -0.5 : 0.5], 0.5);
+        });
+      }
+    }
+
+    beginScene(player, time) {
       this.resize();
       const gl = this.gl;
       const aspect = this.width / this.height;
-      const distance = aspect < 0.9 ? 15.5 : 12.5;
-      const eye = [player.x + 0.35, player.y + distance * 0.56, player.z + distance];
-      const target = [player.x, player.y + 0.7, player.z - (aspect < 0.9 ? 1.2 : 2.7)];
+      const speed = Math.hypot(player.vx, player.vz);
+      const baseDistance = aspect < 0.9 ? 12.8 : 10.8;
+      const desiredDistance = baseDistance + Math.min(speed / 5.8, 1) * 1.8 + Math.min(Math.max(player.vy, 0) / 10.2, 1) * 0.7;
+      const target = [
+        player.x + player.vx * 0.18,
+        player.y + 0.7 + Math.max(player.vy, 0) * 0.035,
+        player.z - (aspect < 0.9 ? 1.5 : 3.1) + player.vz * 0.18,
+      ];
+      const desiredCamera = [
+        player.x + 0.35 - player.vx * 0.2,
+        player.y + desiredDistance * 0.56,
+        player.z + desiredDistance - player.vz * 0.2,
+      ];
+      const delta = this.lastRenderTime === null ? 0 : Math.min(0.05, (time - this.lastRenderTime) / 1000);
+      this.lastRenderTime = time;
+      if (!this.camera) {
+        this.camera = { x: desiredCamera[0], y: desiredCamera[1], z: desiredCamera[2] };
+      } else {
+        const smoothing = 1 - Math.exp(-delta * 5.5);
+        this.camera.x += (desiredCamera[0] - this.camera.x) * smoothing;
+        this.camera.y += (desiredCamera[1] - this.camera.y) * smoothing;
+        this.camera.z += (desiredCamera[2] - this.camera.z) * smoothing;
+      }
+      const eye = [this.camera.x, this.camera.y, this.camera.z];
       const viewProjection = multiply(
         perspective(0.88, aspect, 0.1, 120),
         lookAt(eye, target, [0, 1, 0]),
@@ -371,6 +462,11 @@
       gl.useProgram(this.program);
       gl.uniformMatrix4fv(this.locations.viewProjection, false, viewProjection);
       gl.uniform3fv(this.locations.camera, eye);
+      return { gl, aspect };
+    }
+
+    render(player, platforms, stars, goal, time, collected) {
+      this.beginScene(player, time);
 
       this.drawScenery(time);
       for (const platform of platforms) this.drawIsland(platform);
@@ -384,6 +480,11 @@
         }
       }
       this.drawCharacter(player, time);
+    }
+
+    renderFelipeNeri(player, children, time, singing) {
+      this.beginScene(player, time);
+      this.drawOratoryScene(player, children, time, singing);
     }
   }
 

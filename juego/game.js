@@ -81,6 +81,9 @@
     document.querySelectorAll('[data-es][data-en]').forEach((element) => {
       element.innerHTML = element.dataset[language];
     });
+    document.querySelectorAll('[data-aria-es][data-aria-en]').forEach((element) => {
+      element.setAttribute('aria-label', element.dataset[`aria${language === 'es' ? 'Es' : 'En'}`]);
+    });
     languageToggle.textContent = language === 'es' ? 'EN' : 'ES';
     languageToggle.setAttribute('aria-label', language === 'es' ? 'Switch language' : 'Cambiar idioma');
     if (!running && !won) {

@@ -1,0 +1,104 @@
+.oratory-counter {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border: 1px solid rgba(255, 216, 144, .34);
+  border-radius: 14px;
+  background: rgba(15, 25, 45, .68);
+  color: #ffe2a1;
+  font-size: 1.1rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.count-divider { color: #8793a7; }
+
+.oratory-hud {
+  position: absolute;
+  z-index: 2;
+  top: 16px;
+  left: 16px;
+  width: min(390px, calc(100% - 32px));
+  padding: 12px 15px;
+  border: 1px solid rgba(255, 255, 255, .19);
+  border-radius: 15px;
+  background: rgba(17, 29, 43, .82);
+  backdrop-filter: blur(7px);
+}
+
+.child-name {
+  margin: 0;
+  color: #ffe2a1;
+  font: 700 .88rem var(--font-sans, sans-serif);
+}
+
+.child-dialogue {
+  margin: 5px 0 0;
+  color: rgba(255, 255, 255, .86);
+  font: .8rem/1.5 var(--font-sans, sans-serif);
+}
+
+.help-button {
+  margin-top: 9px;
+  border: 1px solid rgba(255, 221, 143, .6);
+  border-radius: 999px;
+  background: #e5bf68;
+  padding: 8px 14px;
+  color: #25313b;
+  font: 700 .78rem var(--font-sans, sans-serif);
+  cursor: pointer;
+}
+
+.help-button[hidden], .interact-touch[hidden], .choir-banner[hidden] { display: none; }
+.help-button:hover { background: #f1d68e; }
+
+.interact-touch {
+  width: 82px !important;
+  height: 82px !important;
+  border-radius: 50% !important;
+  background: rgba(224, 188, 99, .94) !important;
+  color: #27313a !important;
+  font-size: .68rem;
+  font-weight: 800;
+  pointer-events: auto !important;
+  touch-action: none;
+}
+
+.choir-banner {
+  position: absolute;
+  z-index: 2;
+  right: 16px;
+  bottom: 18px;
+  left: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 12px;
+  border: 1px solid rgba(255, 223, 144, .45);
+  border-radius: 15px;
+  background: rgba(27, 38, 45, .8);
+  color: #fff3cf;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+.choir-banner strong { font: 700 .95rem var(--font-sans, sans-serif); }
+.choir-banner > span:last-child { color: rgba(255, 255, 255, .8); font: .78rem var(--font-sans, sans-serif); }
+.choir-notes { color: #f3d16f; font-size: 1.2rem; letter-spacing: .3em; animation: choir-float 1.8s ease-in-out infinite; }
+
+@keyframes choir-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@media (max-width: 640px) {
+  .oratory-hud { top: 10px; left: 10px; width: min(320px, calc(100% - 20px)); padding: 9px 11px; }
+  .child-dialogue { font-size: .73rem; }
+  .choir-banner { right: 10px; bottom: 112px; left: 10px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .choir-notes { animation: none; }
+}
