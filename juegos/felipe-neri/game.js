@@ -89,7 +89,7 @@
     { x: -4, z: -20 },
   ];
   const oratory = { x: 8, z: -28 };
-  const player = { x: 0, z: 0, y: 0, vy: 0, vx: 0, vz: 0, grounded: true, facing: 0 };
+  const player = { x: 0, z: 0, y: 0, vy: 0, vx: 0, vz: 0, grounded: true, facing: Math.PI };
   const keys = new Set();
   let children = [];
   let running = false;
@@ -235,6 +235,7 @@
     player.vz = 0;
     player.vy = 0;
     player.grounded = true;
+    player.facing = Math.PI;
     children = startingChildren.map((position, index) => ({
       ...position,
       index,

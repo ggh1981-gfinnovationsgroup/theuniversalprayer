@@ -61,7 +61,7 @@
     { x: -3.2, z: -20.7, h: 7.15, collected: false },
   ];
   const goal = { x: -3.2, z: -20.7, h: 5.75 };
-  const player = { x: 0, z: 0, y: 0, vy: 0, vx: 0, vz: 0, grounded: true, facing: 0 };
+  const player = { x: 0, z: 0, y: 0, vy: 0, vx: 0, vz: 0, grounded: true, facing: Math.PI };
   const keys = new Set();
   let running = false;
   let won = false;
@@ -110,6 +110,7 @@
     player.vz = 0;
     player.vy = 0;
     player.grounded = true;
+    player.facing = Math.PI;
     collected = 0;
     won = false;
     stars.forEach((star) => { star.collected = false; });
@@ -194,6 +195,7 @@
       player.vz = 0;
       player.vy = 0;
       player.grounded = true;
+      player.facing = Math.PI;
       showToast(currentLanguageStrings().fall);
     }
 

@@ -396,6 +396,7 @@
 
     drawMaze(maze) {
       const cellSize = 4;
+      const wallHeight = 0.48;
       const wallColor = '#b88f69';
       const trimColor = '#d1ae84';
       const hasCell = (column, row) => maze.cells.has(`${column},${row}`);
@@ -407,16 +408,16 @@
         const isGoal = column === 5 && row === 7;
         this.draw('cube', [x, 0.015, z], [cellSize - 0.12, 0.04, cellSize - 0.12], '#d8c29a');
         const edges = [
-          { column: column - 1, row, position: [x - 2, 1.35, z], size: [0.28, 2.7, cellSize + 0.12] },
-          { column: column + 1, row, position: [x + 2, 1.35, z], size: [0.28, 2.7, cellSize + 0.12] },
-          { column, row: row - 1, position: [x, 1.35, z + 2], size: [cellSize + 0.12, 2.7, 0.28] },
-          { column, row: row + 1, position: [x, 1.35, z - 2], size: [cellSize + 0.12, 2.7, 0.28] },
+          { column: column - 1, row, position: [x - 2, wallHeight / 2, z], size: [0.28, wallHeight, cellSize + 0.12] },
+          { column: column + 1, row, position: [x + 2, wallHeight / 2, z], size: [0.28, wallHeight, cellSize + 0.12] },
+          { column, row: row - 1, position: [x, wallHeight / 2, z + 2], size: [cellSize + 0.12, wallHeight, 0.28] },
+          { column, row: row + 1, position: [x, wallHeight / 2, z - 2], size: [cellSize + 0.12, wallHeight, 0.28] },
         ];
         edges.forEach((edge, index) => {
           if (hasCell(edge.column, edge.row) || (isGoal && index === 3)) return;
           this.draw('cube', edge.position, edge.size, wallColor);
           const capPosition = [...edge.position];
-          capPosition[1] = 2.78;
+          capPosition[1] = wallHeight + 0.07;
           this.draw('cube', capPosition, [edge.size[0] * 0.88, 0.12, edge.size[2] * 0.88], trimColor);
         });
       }
@@ -458,26 +459,30 @@
       const speed = Math.hypot(player.vx, player.vz);
       const baseDistance = aspect < 0.9 ? 12.8 : 10.8;
       const desiredDistance = baseDistance + Math.min(speed / 5.8, 1) * 1.8 + Math.min(Math.max(player.vy, 0) / 10.2, 1) * 0.7;
-      const target = [
-        player.x + player.vx * 0.18,
-        player.y + 0.7 + Math.max(player.vy, 0) * 0.035,
-        player.z - (aspect < 0.9 ? 1.5 : 3.1) + player.vz * 0.18,
-      ];
+      const desiredYaw = Number.isFinite(player.facing) ? player.facing : Math.PI;
+      const lookAhead = aspect < 0.9 ? 1.5 : 3.1;
       const desiredCamera = [
-        player.x + 0.35 - player.vx * 0.2,
+        player.x - Math.sin(desiredYaw) * desiredDistance,
         player.y + desiredDistance * 0.56,
-        player.z + desiredDistance - player.vz * 0.2,
+        player.z - Math.cos(desiredYaw) * desiredDistance,
       ];
       const delta = this.lastRenderTime === null ? 0 : Math.min(0.05, (time - this.lastRenderTime) / 1000);
       this.lastRenderTime = time;
       if (!this.camera) {
-        this.camera = { x: desiredCamera[0], y: desiredCamera[1], z: desiredCamera[2] };
+        this.camera = { x: desiredCamera[0], y: desiredCamera[1], z: desiredCamera[2], yaw: desiredYaw };
       } else {
         const smoothing = 1 - Math.exp(-delta * 5.5);
+        const yawDifference = ((desiredYaw - this.camera.yaw + Math.PI) % (Math.PI * 2) + Math.PI * 2) % (Math.PI * 2) - Math.PI;
+        this.camera.yaw += yawDifference * smoothing;
         this.camera.x += (desiredCamera[0] - this.camera.x) * smoothing;
         this.camera.y += (desiredCamera[1] - this.camera.y) * smoothing;
         this.camera.z += (desiredCamera[2] - this.camera.z) * smoothing;
       }
+      const target = [
+        player.x + Math.sin(this.camera.yaw) * lookAhead,
+        player.y + 0.7 + Math.max(player.vy, 0) * 0.035,
+        player.z + Math.cos(this.camera.yaw) * lookAhead,
+      ];
       const eye = [this.camera.x, this.camera.y, this.camera.z];
       const viewProjection = multiply(
         perspective(0.88, aspect, 0.1, 120),
