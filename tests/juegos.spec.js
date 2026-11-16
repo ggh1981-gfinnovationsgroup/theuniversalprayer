@@ -11,14 +11,15 @@ async function sinErrores(page) {
   return errores;
 }
 
-test('el catálogo muestra los siete juegos con su género y cambia de idioma', async ({ page }) => {
+test('el catálogo muestra los ocho juegos con su género y cambia de idioma', async ({ page }) => {
   const errores = await sinErrores(page);
   await page.setViewportSize({ width: 320, height: 640 });
   await page.goto('/juegos/');
-  await expect(page.locator('.games-card')).toHaveCount(7);
-  for (const slug of ['misericordia', 'san-judas', 'divino-nino', 'inmaculado-corazon', 'sagrado-corazon']) {
+  await expect(page.locator('.games-card')).toHaveCount(8);
+  for (const slug of ['misericordia', 'san-judas', 'divino-nino', 'inmaculado-corazon', 'sagrado-corazon', 'espiritu-santo']) {
     await expect(page.locator(`.games-card[href="/juegos/${slug}/"]`)).toHaveCount(1);
   }
+  await expect(page.locator('.games-card[href="/juegos/espiritu-santo/"] .games-card-label[data-lang="es"]')).toHaveText('RPG 3D · AVENTURA COMPLETA');
   await expect(page.locator('.games-card[href="/juegos/misericordia/"] .games-card-label[data-lang="es"]')).toHaveText('CORREDOR 3D');
   await expect(page.locator('.games-card[href="/juegos/san-judas/"] .games-card-label[data-lang="es"]')).toHaveText('SUPERVIVENCIA 3D');
   await expect(page.locator('.games-card[href="/juegos/divino-nino/"] .games-card-label[data-lang="es"]')).toHaveText('PUZZLE');

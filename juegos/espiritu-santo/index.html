@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#2a1a10" />
+  <meta name="description" content="El Camino del Espíritu: un RPG 3D del Espíritu Santo. Recorre siete regiones, aprende a hablarle como le hablas a Jesús y al Padre, y recibe sus siete dones." />
+  <title>El Camino del Espíritu — The Universal Prayer</title>
+  <link rel="canonical" href="https://www.theuniversalprayer.com/juegos/espiritu-santo/" />
+  <link rel="stylesheet" href="/juego/game.css" />
+  <link rel="stylesheet" href="/juegos/quest.css" />
+  <link rel="stylesheet" href="/juegos/espiritu-santo/game.css" />
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
+    }
+  </script>
+</head>
+<body>
+  <main class="game-shell">
+    <header class="game-header">
+      <a class="back-link" href="/juegos/"><span data-es="← Juegos" data-en="← Games">← Juegos</span></a>
+      <div class="game-brand">
+        <span class="brand-mark" aria-hidden="true">🔥</span>
+        <span>THE UNIVERSAL PRAYER</span>
+      </div>
+      <button class="language-toggle" id="languageToggle" type="button" aria-label="Cambiar idioma">EN</button>
+    </header>
+
+    <section class="game-content" aria-labelledby="gameTitle">
+      <div class="title-row">
+        <div>
+          <p class="eyebrow" data-es="PENTECOSTÉS · LOS SIETE DONES" data-en="PENTECOST · THE SEVEN GIFTS">PENTECOSTÉS · LOS SIETE DONES</p>
+          <h1 id="gameTitle" data-es="El Camino del Espíritu" data-en="The Way of the Spirit">El Camino del Espíritu</h1>
+        </div>
+        <div class="quest-counter" aria-live="polite" title="Puntos de gracia"><span aria-hidden="true">✦</span> <span id="progressCount">0</span></div>
+      </div>
+
+      <div class="rpg-hudbar">
+        <div class="flames-hud" id="flamesHud" aria-label="Dones del Espíritu Santo"></div>
+        <div class="hud-actions">
+          <button class="hud-button" id="bookButton" type="button">📖 <span data-es="Libro de oración" data-en="Prayer book">Libro de oración</span></button>
+          <button class="hud-button" id="pauseButton" type="button">⏸ <span data-es="Pausa" data-en="Pause">Pausa</span></button>
+        </div>
+      </div>
+
+      <div class="objective-banner" id="objectiveBanner">
+        <span aria-hidden="true">🕊</span> <span id="objectiveText"></span>
+      </div>
+
+      <div class="game-frame">
+        <canvas id="gameCanvas" aria-label="Mundo 3D de El Camino del Espíritu Santo"></canvas>
+
+        <div class="quest-hud" id="dialogueBox">
+          <p class="npc-name" id="npcName"></p>
+          <p class="npc-dialogue" id="npcDialogue" aria-live="polite"></p>
+          <div class="choice-box" id="choiceBox" hidden></div>
+          <button class="help-button" id="interactButton" type="button" hidden></button>
+          <button class="help-button dialogue-next" id="dialogueNext" type="button" hidden>Seguir</button>
+        </div>
+
+        <div class="step-card" id="stepCard" hidden>
+          <p class="step-count" id="stepCount"></p>
+          <h3 id="stepTitle"></h3>
+          <p class="step-line" id="stepLine"></p>
+          <blockquote class="step-phrase" id="stepPhrase"></blockquote>
+          <button class="play-button" id="sayItButton" type="button">Decirlo</button>
+        </div>
+
+        <div class="banner-card" id="bannerCard" hidden>
+          <div class="banner-inner" id="bannerContent"></div>
+          <button class="play-button" id="bannerClose" type="button">Amén</button>
+        </div>
+
+        <div class="game-overlay" id="gameOverlay">
+          <div class="overlay-card">
+            <div class="overlay-icon" aria-hidden="true">🕊</div>
+            <p class="eyebrow" data-es="UN RPG DEL ESPÍRITU SANTO" data-en="A HOLY SPIRIT RPG">UN RPG DEL ESPÍRITU SANTO</p>
+            <h2 id="overlayTitle">El Camino del Espíritu</h2>
+            <p id="overlayMessage">El Espíritu Santo es una Persona y Dios, igual al Padre y al Hijo. Recorre las siete regiones, aprende a hablarle como le hablas a Jesús y al Padre, y recibe sus siete dones.</p>
+            <button class="play-button" id="playButton" type="button">Comenzar</button>
+            <button class="secondary-button" id="newGameButton" type="button" hidden>Nueva partida</button>
+          </div>
+        </div>
+
+        <div class="game-overlay is-hidden" id="pauseOverlay">
+          <div class="overlay-card">
+            <div class="overlay-icon" aria-hidden="true">⏸</div>
+            <h2 data-es="Pausa" data-en="Pause">Pausa</h2>
+            <p data-es="Tu partida se guarda sola en este dispositivo." data-en="Your game saves itself on this device.">Tu partida se guarda sola en este dispositivo.</p>
+            <button class="play-button" id="resumeButton" type="button" data-es="Seguir jugando" data-en="Keep playing">Seguir jugando</button>
+            <button class="secondary-button" id="restartButton" type="button" data-es="Reiniciar partida" data-en="Restart game">Reiniciar partida</button>
+            <p class="overlay-note" data-es="El idioma se cambia con el botón ES/EN del encabezado." data-en="The language is changed with the ES/EN button in the header.">El idioma se cambia con el botón ES/EN del encabezado.</p>
+          </div>
+        </div>
+
+        <div class="game-overlay is-hidden" id="bookOverlay">
+          <div class="overlay-card book-card">
+            <div class="overlay-icon" aria-hidden="true">📖</div>
+            <h2 data-es="Libro de oración" data-en="Prayer book">Libro de oración</h2>
+            <p class="book-intro" data-es="Hablarle así, con tus palabras y con estas, en el Cenáculo y en los altares suma puntos de gracia la primera vez." data-en="Speaking to Him like this, in your words and in these, at the Upper Room and at the altars earns grace points the first time.">Hablarle así, con tus palabras y con estas, en el Cenáculo y en los altares suma puntos de gracia la primera vez.</p>
+            <div class="book-content" id="bookContent"></div>
+            <button class="play-button" id="bookCloseButton" type="button" data-es="Cerrar" data-en="Close">Cerrar</button>
+          </div>
+        </div>
+
+        <div class="game-overlay is-hidden" id="endOverlay">
+          <div class="overlay-card">
+            <div class="overlay-icon" aria-hidden="true">🔥</div>
+            <h2 data-es="¡Pentecostés!" data-en="Pentecost!">¡Pentecostés!</h2>
+            <p id="endStats"></p>
+            <button class="play-button" id="endPrayButton" type="button" data-es="Rezar la oración de cierre" data-en="Pray the closing prayer">Rezar la oración de cierre</button>
+            <button class="secondary-button" id="endExploreButton" type="button" data-es="Seguir explorando" data-en="Keep exploring">Seguir explorando</button>
+          </div>
+        </div>
+
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+        <div class="touch-controls" aria-label="Controles táctiles">
+          <div class="touch-pad">
+            <button type="button" data-key="ArrowUp" aria-label="Avanzar">▲</button>
+            <div>
+              <button type="button" data-key="ArrowLeft" aria-label="Mover a la izquierda">◀</button>
+              <button type="button" data-key="ArrowDown" aria-label="Retroceder">▼</button>
+              <button type="button" data-key="ArrowRight" aria-label="Mover a la derecha">▶</button>
+            </div>
+          </div>
+          <button class="interact-touch" id="interactTouch" type="button" aria-label="Hablar">HABLAR</button>
+        </div>
+      </div>
+
+      <div class="game-footer">
+        <p data-es="Mueve: WASD o flechas <span>·</span> Hablar: E o Espacio <span>·</span> Libro: P <span>·</span> Pausa: Esc" data-en="Move: WASD or arrows <span>·</span> Talk: E or Space <span>·</span> Book: P <span>·</span> Pause: Esc">Mueve: WASD o flechas <span>·</span> Hablar: E o Espacio <span>·</span> Libro: P <span>·</span> Pausa: Esc</p>
+        <p class="game-hint" data-es="Sigue a la paloma de luz: marca tu objetivo con una columna de luz." data-en="Follow the dove of light: it marks your goal with a column of light.">Sigue a la paloma de luz: marca tu objetivo con una columna de luz.</p>
+      </div>
+      <p class="visually-hidden" id="gameStatus" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+  <script src="/juego/renderer3d.js"></script>
+  <script src="/juegos/espiritu-santo/rpg-engine.js"></script>
+  <script src="/juegos/espiritu-santo/rpg-challenges.js"></script>
+  <script src="/juegos/espiritu-santo/content-world.js"></script>
+  <script src="/juegos/espiritu-santo/content-gifts.js"></script>
+  <script src="/juegos/espiritu-santo/content-charisms.js"></script>
+  <script src="/juegos/espiritu-santo/game.js"></script>
+</body>
+</html>

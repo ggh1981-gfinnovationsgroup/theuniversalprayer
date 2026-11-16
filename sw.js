@@ -3,7 +3,7 @@
    Offline support for precached and previously cached resources
    ===================================================== */
 
-const CACHE = 'tup-v330';
+const CACHE = 'tup-v331';
 const CRITICAL_CORE_URLS = new Set([
   '/assets/js/main.js',
   '/assets/js/menu.js',
@@ -58,6 +58,14 @@ const PRECACHE_URLS = [
   '/juegos/sagrado-corazon/',
   '/juegos/sagrado-corazon/game.css',
   '/juegos/sagrado-corazon/game.js',
+  '/juegos/espiritu-santo/',
+  '/juegos/espiritu-santo/game.css',
+  '/juegos/espiritu-santo/game.js',
+  '/juegos/espiritu-santo/rpg-engine.js',
+  '/juegos/espiritu-santo/rpg-challenges.js',
+  '/juegos/espiritu-santo/content-world.js',
+  '/juegos/espiritu-santo/content-gifts.js',
+  '/juegos/espiritu-santo/content-charisms.js',
   '/assets/css/games-promo.css',
   '/adoracion/',
   '/adoracion/index.html',
