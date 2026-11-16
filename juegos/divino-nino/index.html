@@ -37,6 +37,7 @@
       </div>
 
       <div class="game-frame">
+        <div class="scene-strip"><canvas id="gameCanvas" aria-label="Barrio de Bogotá en 3D con la capillita del Divino Niño"></canvas></div>
         <div class="game-stage" id="gameStage" aria-label="Tablero del juego"></div>
         <div class="quest-hud">
           <p class="npc-name" id="npcName"></p>
@@ -58,7 +59,7 @@
             <div class="overlay-icon" aria-hidden="true">★</div>
             <p class="eyebrow" data-es="EL NIÑO QUE SONRÍE" data-en="THE SMILING CHILD">EL NIÑO QUE SONRÍE</p>
             <h2 id="overlayTitle" data-es="La canasta del barrio" data-en="The neighborhood basket">La canasta del barrio</h2>
-            <p id="overlayMessage" data-es="Bogotá, 1935. El padre Juan quiere llenar una canasta de alegría para compartir con los vecinos que llegan a la capillita del Divino Niño. Junta tres o más fichas iguales para sumar puntos: llega a 700 en 22 movimientos." data-en="Bogotá, 1935. Father Juan wants to fill a basket of joy to share with the neighbors who come to the little chapel of the Divine Child. Match three or more tiles to score: reach 700 in 22 moves.">Bogotá, 1935. El padre Juan quiere llenar una canasta de alegría para compartir con los vecinos que llegan a la capillita del Divino Niño. Junta tres o más fichas iguales para sumar puntos: llega a 700 en 22 movimientos.</p>
+            <p id="overlayMessage" data-es="Bogotá, 1935. El padre Juan del Rizzo, salesiano italiano, llevó una imagen pequeña del Niño Jesús de pie y con los brazos abiertos al barrio Veinte de Julio, uno de los más pobres de la ciudad. Ese Niño, Dios hecho pequeño, prometía cercanía a todos, y bajo la imagen se leía: «Yo reinaré». Ayúdalo a llenar la canasta de alegría para los vecinos que llegan a la capillita: junta tres o más fichas iguales para sumar puntos, llega a 700 en 22 movimientos." data-en="Bogotá, 1935. Father Juan del Rizzo, an Italian Salesian, brought a small image of the Child Jesus, standing with open arms, to the Veinte de Julio neighborhood, one of the poorest in the city. That Child, God made small, promised closeness to everyone, and beneath the image were the words: &quot;I will reign&quot;. Help him fill the basket of joy for the neighbors who come to the little chapel: match three or more tiles to score, reach 700 in 22 moves.">Bogotá, 1935. El padre Juan del Rizzo, salesiano italiano, llevó una imagen pequeña del Niño Jesús de pie y con los brazos abiertos al barrio Veinte de Julio, uno de los más pobres de la ciudad. Ese Niño, Dios hecho pequeño, prometía cercanía a todos, y bajo la imagen se leía: «Yo reinaré». Ayúdalo a llenar la canasta de alegría para los vecinos que llegan a la capillita: junta tres o más fichas iguales para sumar puntos, llega a 700 en 22 movimientos.</p>
             <button class="play-button" id="playButton" type="button" data-es="Comenzar" data-en="Begin">Comenzar</button>
           </div>
         </div>
@@ -72,6 +73,7 @@
       <p class="visually-hidden" id="gameStatus" role="status" aria-live="polite"></p>
     </section>
   </main>
+  <script src="/juego/renderer3d.js"></script>
   <script src="/juegos/match3-engine.js"></script>
   <script src="/juegos/divino-nino/game.js"></script>
 </body>

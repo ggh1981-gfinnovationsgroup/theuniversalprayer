@@ -29,10 +29,10 @@ window.RunnerGame({
   strings: {
     es: {
       startTitle: 'Corre tras la luz',
-      startMessage: 'Sor Faustina recibió un encargo de Jesús: pintar su imagen con dos rayos de luz. Corre por el camino del convento, cambia de carril, salta los charcos oscuros y las piedras, y reúne los cinco rayos hasta llegar al cuadro.',
+      startMessage: 'En 1931, Jesús se apareció a sor Faustina Kowalska, una joven monja polaca, vestido de blanco y con dos rayos brotando de su Corazón. Le pidió pintar una imagen de lo que veía. Corre con Faustina, junta los rayos en el camino y llega hasta la imagen.',
       start: 'Comenzar',
       finishTitle: '«Jesús, en Ti confío»',
-      finishMessage: 'La imagen está completa: el rayo pálido recuerda el agua que limpia y el rayo rojo, la sangre que da vida.',
+      finishMessage: 'La imagen está completa: el rayo pálido recuerda el agua que limpia y el rayo rojo, la sangre que da vida. Debajo de la imagen quedaron las palabras que Jesús pidió como leyenda: «Jesús, en Ti confío».',
       finishMessageShort: 'Llegaste a la imagen. Te faltaron rayos por el camino: vuelve a correr para reunirlos todos.',
       restart: 'Volver a jugar',
       retry: 'Intentar de nuevo',
@@ -48,10 +48,10 @@ window.RunnerGame({
     },
     en: {
       startTitle: 'Run toward the light',
-      startMessage: 'Sister Faustina received a mission from Jesus: to paint his image with two rays of light. Run along the convent path, switch lanes, jump over the dark puddles and the stones, and gather the five rays on your way to the painting.',
+      startMessage: 'In 1931, Jesus appeared to Sister Faustina Kowalska, a young Polish nun, dressed in white with two rays streaming from his Heart. He asked her to paint an image of what she saw. Run with Faustina, gather the rays along the way, and reach the image.',
       start: 'Begin',
       finishTitle: '“Jesus, I trust in You”',
-      finishMessage: 'The image is complete: the pale ray recalls the water that cleanses, and the red ray, the blood that gives life.',
+      finishMessage: 'The image is complete: the pale ray recalls the water that cleanses, and the red ray, the blood that gives life. Beneath the image are the words Jesus asked for as its inscription: "Jesus, I trust in You."',
       finishMessageShort: 'You reached the image. Some rays were left behind: run again to gather them all.',
       restart: 'Play again',
       retry: 'Try again',
@@ -65,5 +65,27 @@ window.RunnerGame({
       jump: 'JUMP',
       audioUnavailable: 'This device could not play the sound.',
     },
+    itemStories: [
+      {
+        es: 'En 1931, en su celda de Plock, Jesús se apareció a Faustina vestido de blanco y le pidió pintar lo que veía.',
+        en: 'In 1931, in her cell in Plock, Jesus appeared to Faustina dressed in white and asked her to paint what she saw.',
+      },
+      {
+        es: 'El rayo pálido es el Agua que limpia las almas; el rayo rojo es la Sangre de su Corazón.',
+        en: 'The pale ray is the Water that cleanses souls; the red ray is the Blood of his Heart.',
+      },
+      {
+        es: 'En 1934, el pintor Kazimirowski terminó el primer cuadro, guiado personalmente por Faustina.',
+        en: 'In 1934, the painter Kazimirowski finished the first painting, personally guided by Faustina.',
+      },
+      {
+        es: 'Jesús le enseñó la Coronilla: «Por Su dolorosa Pasión, ten misericordia de nosotros y del mundo entero».',
+        en: 'Jesus taught her the Chaplet: "For the sake of His sorrowful Passion, have mercy on us and on the whole world."',
+      },
+      {
+        es: 'Al morir en la cruz, de su Corazón brotó la fuente de la vida: un océano de misericordia para el mundo entero.',
+        en: 'Dying on the cross, from his Heart flowed the fount of life: an ocean of mercy for the whole world.',
+      },
+    ],
   },
 });

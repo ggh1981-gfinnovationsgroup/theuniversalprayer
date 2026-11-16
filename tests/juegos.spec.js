@@ -22,7 +22,7 @@ test('el catálogo muestra los siete juegos con su género y cambia de idioma', 
   await expect(page.locator('.games-card[href="/juegos/misericordia/"] .games-card-label[data-lang="es"]')).toHaveText('CORREDOR 3D');
   await expect(page.locator('.games-card[href="/juegos/san-judas/"] .games-card-label[data-lang="es"]')).toHaveText('SUPERVIVENCIA 3D');
   await expect(page.locator('.games-card[href="/juegos/divino-nino/"] .games-card-label[data-lang="es"]')).toHaveText('PUZZLE');
-  await expect(page.locator('.games-card[href="/juegos/inmaculado-corazon/"] .games-card-label[data-lang="es"]')).toHaveText('RITMO');
+  await expect(page.locator('.games-card[href="/juegos/inmaculado-corazon/"] .games-card-label[data-lang="es"]')).toHaveText('JARDÍN 3D');
   await expect(page.locator('.games-card[href="/juegos/sagrado-corazon/"] .games-card-label[data-lang="es"]')).toHaveText('PRECISIÓN 3D');
   expect(await overflowX(page)).toBeLessThanOrEqual(0);
   await page.click('#langToggle');
@@ -67,11 +67,14 @@ test('san judas supervivencia: carga a 320px, sin desborde y pulsa su luz', asyn
   expect(errores).toEqual([]);
 });
 
-test('divino niño puzzle: tablero de 56 fichas a 320px, sin desborde y selecciona', async ({ page }) => {
+test('divino niño puzzle: escena 3D y tablero de 56 fichas a 320px, sin desborde y selecciona', async ({ page }) => {
   const errores = await sinErrores(page);
   await page.setViewportSize({ width: 320, height: 640 });
   await page.goto('/juegos/divino-nino/');
   await expect(page.locator('#gameTitle')).toHaveText('Divino Niño Jesús');
+  const escena = await page.locator('#gameCanvas').boundingBox();
+  expect(escena.width).toBeGreaterThan(100);
+  expect(escena.height).toBeGreaterThan(80);
   await expect(page.locator('#gameStage .tile')).toHaveCount(56);
   expect(await overflowX(page)).toBeLessThanOrEqual(0);
   await page.click('#playButton');
@@ -82,19 +85,22 @@ test('divino niño puzzle: tablero de 56 fichas a 320px, sin desborde y seleccio
   expect(errores).toEqual([]);
 });
 
-test('inmaculado ritmo: pista visible a 320px, sin desborde y responde al toque', async ({ page }) => {
+test('inmaculado jardín 3D: tarjeta de historia a 320px, sin desborde y Lucía camina', async ({ page }) => {
   const errores = await sinErrores(page);
   await page.setViewportSize({ width: 320, height: 640 });
   await page.goto('/juegos/inmaculado-corazon/');
   await expect(page.locator('#gameTitle')).toHaveText('Inmaculado Corazón de María');
-  await expect(page.locator('.rhythm-track')).toBeVisible();
-  await expect(page.locator('.rhythm-ring')).toBeVisible();
+  const box = await page.locator('#gameCanvas').boundingBox();
+  expect(box.width).toBeGreaterThan(100);
   expect(await overflowX(page)).toBeLessThanOrEqual(0);
-  await expect(page.locator('.quest-counter')).toContainText('15');
+  await expect(page.locator('.quest-counter')).toContainText('22');
   await page.click('#playButton');
   await expect(page.locator('#gameOverlay')).toHaveClass(/is-hidden/);
-  await page.waitForTimeout(1500);
-  await page.click('#interactTouch');
+  await expect(page.locator('#npcName')).toContainText('13 de mayo de 1917');
+  await page.waitForTimeout(4200);
+  await page.keyboard.down('ArrowUp');
+  await page.waitForTimeout(500);
+  await page.keyboard.up('ArrowUp');
   expect(errores).toEqual([]);
 });
 

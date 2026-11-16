@@ -54,10 +54,121 @@
     let lost = false;
     let overlayState = 'start';
     let dialogueState = { kind: 'hint' };
+    let shownMilestones = new Set();
     let language = localStorage.getItem('tup_lang') === 'en' ? 'en' : 'es';
     let toastTimer;
     let audioContext = null;
     let melodyCloseTimer;
+
+    // Escena 3D opcional: si la página trae un lienzo #gameCanvas y la
+    // configuración trae tema, el barrio vive sobre el tablero y recibe
+    // un vecino nuevo con cada hito de la historia. Sin lienzo o sin
+    // tema, el motor sigue funcionando solo con el tablero.
+    const theme = config.theme || null;
+    const sceneCanvas = document.getElementById('gameCanvas');
+    let renderer = null;
+    let neighbors = [];
+    let sceneCompleted = false;
+    let lastSceneTime = 0;
+    const SHRINE_GOAL = { x: 0, z: -6 };
+    const NEIGHBOR_ROBES = ['#c96a4a', '#5a7fb0', '#7a9a5b', '#b0623f', '#8a5a7a', '#4a7a8a'];
+    const NEIGHBOR_SKINS = ['#eec39a', '#c98d64', '#8a5a3b', '#6b4230'];
+    const NEIGHBOR_HAIRS = ['#2e2019', '#4a3423', '#17120e', '#5a4030'];
+    const NEIGHBOR_SPOTS = [
+      [-1.6, -3.2], [1.6, -3.2], [-2.6, -2.4],
+      [2.6, -2.4], [-0.8, -2.2], [0.8, -2.2],
+    ];
+
+    function syncNeighborCount() {
+      stage.dataset.neighbors = String(neighbors.length);
+    }
+
+    function spawnNeighbor() {
+      const n = neighbors.length;
+      const spot = NEIGHBOR_SPOTS[n % NEIGHBOR_SPOTS.length];
+      neighbors.push({
+        x: n % 2 === 0 ? -10 : 10,
+        z: 2,
+        tx: spot[0],
+        tz: spot[1],
+        robe: NEIGHBOR_ROBES[n % NEIGHBOR_ROBES.length],
+        skin: NEIGHBOR_SKINS[n % NEIGHBOR_SKINS.length],
+        hair: NEIGHBOR_HAIRS[n % NEIGHBOR_HAIRS.length],
+        index: 60 + n,
+        arrived: false,
+      });
+      syncNeighborCount();
+    }
+
+    function resetScene() {
+      neighbors = [];
+      sceneCompleted = false;
+      syncNeighborCount();
+    }
+
+    function drawHouse(x, z, w, h, d) {
+      renderer.draw('cube', [x, h / 2, z], [w, h, d], theme.wall);
+      renderer.draw('cone', [x, h + 0.8, z], [w + 0.9, 1.6, d + 0.9], theme.roof);
+      renderer.draw('cube', [x, 0.8, z + d / 2 + 0.04], [0.85, 1.6, 0.08], theme.door || '#7a4a30');
+    }
+
+    function drawScene(time) {
+      if (!renderer) return;
+      const delta = lastSceneTime ? Math.min(0.05, (time - lastSceneTime) / 1000) : 0;
+      lastSceneTime = time;
+      renderer.beginScene({ x: 0, y: 0, z: 7, vx: 0, vz: 0, vy: 0, facing: Math.PI }, time, Math.PI);
+      renderer.draw('cube', [0, -0.5, -8], [70, 1, 70], theme.ground);
+      renderer.draw('cube', [0, 0.02, 1], [6, 0.04, 10], theme.floor);
+      drawHouse(-7, -4, 3.6, 2.2, 3.2);
+      drawHouse(7.5, -5, 3.4, 2.2, 3);
+      drawHouse(-8, 1, 3.2, 2.0, 2.8);
+      renderer.drawTree(-11, 0, -2, 1);
+      renderer.drawTree(11.5, 0, -3, 0.9);
+      renderer.drawTree(-5.5, 0, 3.5, 0.8);
+      renderer.drawTree(6, 0, 4, 0.85);
+      renderer.drawTree(12, 0, 2, 1.1);
+      renderer.drawShrine(SHRINE_GOAL, theme, time, sceneCompleted);
+      renderer.drawFigure(
+        { x: 2.8, z: -3.4, robe: '#2e2a26', skin: '#c98d64', hair: '#3a3a3a', accessory: 'cross', index: 50 },
+        time,
+      );
+      for (const neighbor of neighbors) {
+        if (!neighbor.arrived && delta > 0) {
+          const dx = neighbor.tx - neighbor.x;
+          const dz = neighbor.tz - neighbor.z;
+          const dist = Math.hypot(dx, dz);
+          const step = 2.0 * delta;
+          if (dist <= step) {
+            neighbor.x = neighbor.tx;
+            neighbor.z = neighbor.tz;
+            neighbor.arrived = true;
+          } else {
+            neighbor.x += (dx / dist) * step;
+            neighbor.z += (dz / dist) * step;
+          }
+        }
+        renderer.drawFigure(
+          {
+            x: neighbor.x, z: neighbor.z,
+            robe: neighbor.robe, skin: neighbor.skin, hair: neighbor.hair,
+            index: neighbor.index, singing: sceneCompleted,
+          },
+          time,
+        );
+      }
+      if (sceneCompleted) renderer.drawEndingFx(theme, SHRINE_GOAL, time);
+      window.requestAnimationFrame(drawScene);
+    }
+
+    if (theme && sceneCanvas && typeof window.Game3DRenderer === 'function') {
+      try {
+        renderer = new window.Game3DRenderer(sceneCanvas);
+        window.requestAnimationFrame(drawScene);
+      } catch (error) {
+        renderer = null;
+      }
+    }
+    syncNeighborCount();
 
     function text() { return strings[language]; }
 
@@ -144,9 +255,36 @@
       gameStatus.textContent = text().status(score, moves);
     }
 
+    function milestoneText(milestone) {
+      return language === 'en' ? milestone.en : milestone.es;
+    }
+
+    function checkMilestones() {
+      const milestones = strings.milestones || [];
+      let highest = -1;
+      let freshCount = 0;
+      milestones.forEach((milestone, i) => {
+        if (!shownMilestones.has(i) && score >= milestone.at) {
+          shownMilestones.add(i);
+          freshCount++;
+          if (i > highest) highest = i;
+        }
+      });
+      if (highest >= 0) {
+        dialogueState = { kind: 'milestone', milestoneIndex: highest };
+        renderDialogue();
+        showToast(milestoneText(milestones[highest]));
+        for (let k = 0; k < freshCount; k++) spawnNeighbor();
+      }
+    }
+
     function renderDialogue() {
       if (dialogueState.kind === 'chain') {
         npcDialogue.textContent = text().chain(dialogueState.chain);
+      } else if (dialogueState.kind === 'milestone') {
+        const milestones = strings.milestones || [];
+        const milestone = milestones[dialogueState.milestoneIndex];
+        npcDialogue.textContent = milestone ? milestoneText(milestone) : text().hint;
       } else if (dialogueState.kind === 'finish') {
         npcDialogue.textContent = text().finishMessage;
       } else if (dialogueState.kind === 'lose') {
@@ -258,6 +396,8 @@
       lost = false;
       overlayState = 'start';
       dialogueState = { kind: 'hint' };
+      shownMilestones = new Set();
+      resetScene();
       board = generateBoard();
       endBanner.hidden = true;
       gameFrame.classList.remove('is-finished');
@@ -288,6 +428,9 @@
       renderDialogue();
       gameStatus.textContent = text().finishTitle;
       playMelody();
+      sceneCompleted = true;
+      spawnNeighbor();
+      spawnNeighbor();
     }
 
     function loseGame() {
@@ -342,6 +485,7 @@
           dialogueState = { kind: 'chain', chain };
           renderDialogue();
         }
+        checkMilestones();
         matches.tiles.forEach((i) => tileButtons[i].classList.add('is-clearing'));
         await wait(180);
         matches.tiles.forEach((i) => { board[i] = null; });

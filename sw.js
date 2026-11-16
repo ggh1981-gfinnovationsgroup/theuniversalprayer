@@ -3,7 +3,7 @@
    Offline support for precached and previously cached resources
    ===================================================== */
 
-const CACHE = 'tup-v329';
+const CACHE = 'tup-v330';
 const CRITICAL_CORE_URLS = new Set([
   '/assets/js/main.js',
   '/assets/js/menu.js',
@@ -41,7 +41,7 @@ const PRECACHE_URLS = [
   '/juegos/runner-engine.js',
   '/juegos/arena-engine.js',
   '/juegos/match3-engine.js',
-  '/juegos/rhythm-engine.js',
+  '/juegos/garden-engine.js',
   '/juegos/stack-engine.js',
   '/juegos/misericordia/',
   '/juegos/misericordia/game.css',

@@ -18,6 +18,20 @@
   .game-frame { aspect-ratio: auto; min-height: 0; }
 }
 
+/* Franja con la escena 3D del barrio, sobre el tablero: la capillita,
+   el padre Juan y los vecinos que llegan conforme avanza la historia. */
+.scene-strip {
+  width: 100%;
+  height: clamp(150px, 34vw, 210px);
+  border-bottom: 1px solid rgba(255, 255, 255, .12);
+}
+
+.scene-strip canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .game-stage {
   display: grid;
   grid-template-columns: repeat(7, 1fr);

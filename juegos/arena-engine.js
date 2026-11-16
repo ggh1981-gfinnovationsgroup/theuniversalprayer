@@ -53,6 +53,7 @@
     let finished = false;
     let over = false;
     let completed = false;
+    let dialogueState = { kind: 'hint' };
     let language = localStorage.getItem('tup_lang') === 'en' ? 'en' : 'es';
     let lastTime = 0;
     let toastTimer;
@@ -68,6 +69,18 @@
 
     function renderHope() {
       npcName.textContent = `${text().hopeLabel} ${'♥'.repeat(Math.max(0, hope))}`;
+    }
+
+    function renderDialogue() {
+      if (dialogueState.kind === 'cause') {
+        npcDialogue.textContent = text().convertedCause(text().causes[dialogueState.index]);
+      } else if (dialogueState.kind === 'converted') {
+        npcDialogue.textContent = text().converted(conversions);
+      } else if (dialogueState.kind === 'finish') {
+        npcDialogue.textContent = text().finishMessage;
+      } else {
+        npcDialogue.textContent = text().hint;
+      }
     }
 
     function setLanguage(nextLanguage) {
@@ -94,6 +107,7 @@
         playButton.textContent = text().start;
       }
       if (!finished) renderHope();
+      if (!finished && !over) renderDialogue();
       gameStatus.textContent = text().status(conversions, TOTAL);
     }
 
@@ -185,6 +199,7 @@
       finished = false;
       over = false;
       completed = false;
+      dialogueState = { kind: 'hint' };
       keys.clear();
       progressCount.textContent = '0';
       gameStatus.textContent = text().status(0, TOTAL);
@@ -222,6 +237,7 @@
       overlayMessage.textContent = text().finishMessage;
       playButton.textContent = text().restart;
       gameStatus.textContent = text().finishTitle;
+      dialogueState = { kind: 'finish' };
       npcName.textContent = '';
       npcDialogue.textContent = text().finishMessage;
     }
@@ -306,10 +322,18 @@
             progressCount.textContent = String(conversions);
             gameStatus.textContent = text().status(conversions, TOTAL);
             playChime();
-            npcDialogue.textContent = text().converted(conversions);
+            if (text().causes && text().causes[conversions - 1]) {
+              dialogueState = { kind: 'cause', index: conversions - 1 };
+            } else {
+              dialogueState = { kind: 'converted' };
+            }
+            renderDialogue();
             clearTimeout(hintTimer);
             hintTimer = setTimeout(() => {
-              if (running && !finished) npcDialogue.textContent = text().hint;
+              if (running && !finished) {
+                dialogueState = { kind: 'hint' };
+                renderDialogue();
+              }
             }, 2600);
             if (conversions >= TOTAL) {
               completeGame();

@@ -66,6 +66,7 @@
     let invulnerable = 0;
     let completed = false;
     let state = 'ready';
+    let dialogueState = { kind: 'hint' };
     let running = false;
     let language = localStorage.getItem('tup_lang') === 'en' ? 'en' : 'es';
     let lastTime = 0;
@@ -79,6 +80,21 @@
 
     function updateHearts() {
       npcName.textContent = `${text().heartsLabel} ${'♥'.repeat(Math.max(0, lives))}`;
+    }
+
+    function renderDialogue() {
+      if (dialogueState.kind === 'story') {
+        const story = Array.isArray(strings.itemStories)
+          ? strings.itemStories[dialogueState.index]
+          : null;
+        npcDialogue.textContent = story && story[language]
+          ? story[language]
+          : text().itemFound(dialogueState.index + 1, TOTAL);
+      } else if (dialogueState.kind === 'hit') {
+        npcDialogue.textContent = text().hit;
+      } else {
+        npcDialogue.textContent = text().hint;
+      }
     }
 
     function setLanguage(nextLanguage) {
@@ -107,6 +123,8 @@
         overlayTitle.textContent = text().gameOverTitle;
         overlayMessage.textContent = text().gameOverMessage;
         playButton.textContent = text().retry;
+      } else if (state === 'running') {
+        renderDialogue();
       }
       gameStatus.textContent = text().status(count, TOTAL);
     }
@@ -187,6 +205,7 @@
       rays = RAYS.map((ray) => ({ ...ray, type: 'ray', taken: false }));
       running = false;
       state = 'ready';
+      dialogueState = { kind: 'hint' };
       progressCount.textContent = '0';
       gameStatus.textContent = text().status(0, TOTAL);
       interactButton.hidden = true;
@@ -241,6 +260,7 @@
       speed = 7;
       invulnerable = 1.3;
       showToast(text().hit);
+      dialogueState = { kind: 'hit' };
       npcDialogue.textContent = text().hit;
       if (lives <= 0) gameOver();
     }
@@ -270,13 +290,25 @@
           playChime();
           progressCount.textContent = String(count);
           gameStatus.textContent = text().status(count, TOTAL);
-          const message = text().itemFound(count, TOTAL);
-          npcDialogue.textContent = message;
-          showToast(message);
+          const story = Array.isArray(strings.itemStories)
+            ? strings.itemStories[count - 1]
+            : null;
           clearTimeout(hintTimer);
-          hintTimer = setTimeout(() => {
-            if (state === 'running') npcDialogue.textContent = text().hint;
-          }, 2600);
+          if (story && story[language]) {
+            dialogueState = { kind: 'story', index: count - 1 };
+            npcDialogue.textContent = story[language];
+            showToast(story[language]);
+          } else {
+            const message = text().itemFound(count, TOTAL);
+            npcDialogue.textContent = message;
+            showToast(message);
+            hintTimer = setTimeout(() => {
+              if (state === 'running') {
+                dialogueState = { kind: 'hint' };
+                npcDialogue.textContent = text().hint;
+              }
+            }, 2600);
+          }
         }
       }
     }

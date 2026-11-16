@@ -46,6 +46,7 @@
     let cameraY = BASE_TOP;
     let completed = false;
     let state = 'ready';
+    let dialogueState = { kind: 'hint' };
     let language = localStorage.getItem('tup_lang') === 'en' ? 'en' : 'es';
     let lastTime = 0;
     let toastTimer;
@@ -60,6 +61,23 @@
 
     function updateCandles() {
       npcName.textContent = `${text().candlesLabel} ${Math.max(0, candles)}`;
+    }
+
+    function renderDialogue() {
+      if (dialogueState.kind === 'promise') {
+        const promise = Array.isArray(strings.promises)
+          ? strings.promises[dialogueState.index]
+          : null;
+        npcDialogue.textContent = promise && promise[language]
+          ? promise[language]
+          : text().hint;
+      } else if (dialogueState.kind === 'miss') {
+        npcDialogue.textContent = text().miss(dialogueState.candles);
+      } else if (dialogueState.kind === 'perfect') {
+        npcDialogue.textContent = text().perfect;
+      } else {
+        npcDialogue.textContent = text().hint;
+      }
     }
 
     function setLanguage(nextLanguage) {
@@ -87,6 +105,8 @@
         overlayTitle.textContent = text().loseTitle;
         overlayMessage.textContent = text().loseMessage;
         playButton.textContent = text().retry;
+      } else if (state === 'running') {
+        renderDialogue();
       }
       gameStatus.textContent = text().status(level, TOTAL);
     }
@@ -172,6 +192,7 @@
       completed = false;
       cameraY = BASE_TOP;
       state = 'ready';
+      dialogueState = { kind: 'hint' };
       spawnCurrent();
       progressCount.textContent = '0';
       gameStatus.textContent = text().status(0, TOTAL);
@@ -238,6 +259,7 @@
           return;
         }
         const message = text().miss(candles);
+        dialogueState = { kind: 'miss', candles };
         npcDialogue.textContent = message;
         showToast(message);
         spawnCurrent();
@@ -267,6 +289,15 @@
       if (perfect) {
         playChime();
         showToast(text().perfect);
+      }
+      const promise = Array.isArray(strings.promises)
+        ? strings.promises[level - 1]
+        : null;
+      if (promise && promise[language]) {
+        dialogueState = { kind: 'promise', index: level - 1 };
+        npcDialogue.textContent = promise[language];
+      } else if (perfect) {
+        dialogueState = { kind: 'perfect' };
         npcDialogue.textContent = text().perfect;
       }
       if (level >= TOTAL) {
