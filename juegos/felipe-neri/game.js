@@ -16,6 +16,8 @@
   const interactButton = document.getElementById('interactButton');
   const interactTouch = document.getElementById('interactTouch');
   const choirBanner = document.getElementById('choirBanner');
+  const choirRestartButton = document.getElementById('choirRestartButton');
+  const gameFrame = document.querySelector('.game-frame');
   const gameStatus = document.getElementById('gameStatus');
   const toast = document.getElementById('toast');
   const languageToggle = document.getElementById('languageToggle');
@@ -258,6 +260,7 @@
     interactButton.hidden = true;
     interactTouch.hidden = true;
     choirBanner.hidden = true;
+    gameFrame.classList.remove('is-singing');
     childName.textContent = '';
     childDialogue.textContent = '';
     overlayTitle.textContent = text().startTitle;
@@ -280,11 +283,12 @@
     keys.clear();
     children.forEach((child) => { child.singing = true; });
     choirBanner.hidden = false;
+    gameFrame.classList.add('is-singing');
     playOriginalChoir();
     overlayTitle.textContent = text().finishTitle;
     overlayMessage.textContent = text().finishMessage;
     playButton.textContent = text().restart;
-    overlay.classList.remove('is-hidden');
+    overlay.classList.add('is-hidden');
     gameStatus.textContent = text().finishTitle;
   }
 
@@ -429,6 +433,7 @@
   function keyUp(event) { keys.delete(event.code); }
 
   playButton.addEventListener('click', startGame);
+  choirRestartButton.addEventListener('click', startGame);
   interactButton.addEventListener('click', helpChild);
   interactTouch.addEventListener('pointerdown', (event) => {
     event.preventDefault();

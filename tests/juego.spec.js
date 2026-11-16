@@ -157,8 +157,15 @@ test('Felipe acompaña a los niños hasta el Oratorio y todos cantan', async ({ 
   await expect(page.locator('#choirBanner')).toBeVisible();
   await expect(page.locator('#choirBanner')).toContainText('¡Todos cantan en el Oratorio!');
   await expect(page.locator('.choir-song')).toContainText('Prefiero el Paraíso');
+  await expect(page.locator('#gameOverlay')).toHaveClass(/is-hidden/);
+  await expect(page.locator('.music-note-field')).toBeVisible();
+  await expect(page.locator('.oratory-hud')).toBeHidden();
   expect(await page.locator('#gameCanvas').evaluate(canvas => canvas.getContext('webgl')?.getError())).toBe(0);
   expect(errors).toEqual([]);
+  await page.locator('#choirRestartButton').click();
+  await expect(page.locator('#choirBanner')).toBeHidden();
+  await expect(page.locator('#childrenCount')).toHaveText('0');
+  await expect(page.locator('#gameOverlay')).toHaveClass(/is-hidden/);
 });
 
 for (const section of ['ninos', 'jovenes']) {
