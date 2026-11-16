@@ -270,12 +270,12 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
   function name(){ return (input.value || '').trim(); }
   function declLines(){
     if (lang() === 'en') {
-      return ['I am loved by God', 'I am chosen', 'I am forgiven', 'I am free', 'I am God\u2019s masterpiece', 'I am never alone'];
+      return ['I am loved by God', 'I am chosen', 'I am forgiven', 'I am free', 'I am God\u2019s masterpiece', 'I am strong', 'I am capable', 'I am a child of God', 'I am never alone'];
     }
     if (isFem()) {
-      return ['Soy amada por Dios', 'Soy escogida', 'Soy perdonada', 'Soy libre', 'Soy obra maestra de Dios', 'Nunca estoy sola'];
+      return ['Soy amada por Dios', 'Soy escogida', 'Soy perdonada', 'Soy libre', 'Soy obra maestra de Dios', 'Soy fuerte', 'Soy capaz', 'Soy hija de Dios', 'Nunca estoy sola'];
     }
-    return ['Soy amado por Dios', 'Soy escogido', 'Soy perdonado', 'Soy libre', 'Soy obra maestra de Dios', 'Nunca estoy solo'];
+    return ['Soy amado por Dios', 'Soy escogido', 'Soy perdonado', 'Soy libre', 'Soy obra maestra de Dios', 'Soy fuerte', 'Soy capaz', 'Soy hijo de Dios', 'Nunca estoy solo'];
   }
   function declText(){
     var n = name();
@@ -414,62 +414,62 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
       ctx.lineTo(c[0], c[1] + 44 * c[3]);
       ctx.stroke();
     });
-    ctx.beginPath(); ctx.arc(540, 150, 58, 0, Math.PI * 2);
+    ctx.beginPath(); ctx.arc(540, 140, 54, 0, Math.PI * 2);
     ctx.fillStyle = 'rgba(201,168,76,0.10)'; ctx.fill();
     ctx.strokeStyle = '#e8c97a'; ctx.lineWidth = 2; ctx.stroke();
     ctx.strokeStyle = '#e8c97a'; ctx.lineWidth = 6; ctx.lineCap = 'round';
     ctx.shadowColor = 'rgba(232,201,122,0.8)'; ctx.shadowBlur = 16;
-    ctx.beginPath(); ctx.moveTo(540, 118); ctx.lineTo(540, 182); ctx.moveTo(517, 141); ctx.lineTo(563, 141); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(540, 110); ctx.lineTo(540, 170); ctx.moveTo(519, 133); ctx.lineTo(561, 133); ctx.stroke();
     ctx.shadowBlur = 0; ctx.lineCap = 'butt';
     ctx.textAlign = 'center';
     ctx.fillStyle = '#f3e5c3';
-    ctx.font = '64px Georgia, "Times New Roman", serif';
-    ctx.fillText(en ? 'Who I Am in Christ' : 'Quién soy en Cristo', 540, 300);
-    ornament(344);
+    ctx.font = '62px Georgia, "Times New Roman", serif';
+    ctx.fillText(en ? 'Who I Am in Christ' : 'Quién soy en Cristo', 540, 284);
+    ornament(326);
     var badge = en ? 'IN CHRIST' : 'EN CRISTO';
     ctx.font = '600 29px Roboto, "Segoe UI", Arial, sans-serif';
     try { ctx.letterSpacing = '7px'; } catch(e){}
     var btw = ctx.measureText(badge).width + 84;
-    rr(540 - btw / 2, 384, btw, 58, 29);
+    rr(540 - btw / 2, 362, btw, 54, 27);
     ctx.fillStyle = 'rgba(201,168,76,0.12)'; ctx.fill();
     ctx.strokeStyle = '#c9a84c'; ctx.lineWidth = 1.5; ctx.stroke();
     ctx.fillStyle = '#e8c97a';
-    ctx.fillText(badge, 540, 424);
+    ctx.fillText(badge, 540, 398);
     try { ctx.letterSpacing = '0px'; } catch(e){}
     var lines = declLines();
-    ctx.font = '43px Roboto, "Segoe UI", Arial, sans-serif';
+    ctx.font = '41px Roboto, "Segoe UI", Arial, sans-serif';
     var tw = 0;
     lines.forEach(function(l){ tw = Math.max(tw, ctx.measureText(l).width); });
     var bx = 540 - (tw + 36) / 2;
     ctx.textAlign = 'left';
-    var y = 528;
+    var y = 472;
     lines.forEach(function(l){
       ctx.fillStyle = '#e8c97a';
       ctx.beginPath(); ctx.arc(bx + 8, y - 13, 7, 0, Math.PI * 2); ctx.fill();
       ctx.fillStyle = '#f7efdb';
       ctx.fillText(l, bx + 36, y);
-      y += 64;
+      y += 53;
     });
     ctx.textAlign = 'center';
-    ornament(y + 22);
+    ornament(y + 20);
     var n = name();
     var vy;
     if (n) {
-      var ng = ctx.createLinearGradient(0, y + 60, 0, y + 170);
+      var ng = ctx.createLinearGradient(0, y + 50, 0, y + 150);
       ng.addColorStop(0, '#f0d488'); ng.addColorStop(1, '#c9a84c');
       ctx.fillStyle = ng;
-      ctx.font = '84px Georgia, "Times New Roman", serif';
+      ctx.font = '80px Georgia, "Times New Roman", serif';
       ctx.shadowColor = 'rgba(232,201,122,0.45)'; ctx.shadowBlur = 22;
-      ctx.fillText((en ? 'I am ' : 'Soy ') + n, 540, y + 128);
+      ctx.fillText((en ? 'I am ' : 'Soy ') + n, 540, y + 118);
       ctx.shadowBlur = 0;
-      vy = y + 128 + 108;
+      vy = y + 118 + 94;
     } else {
-      vy = y + 22 + 84;
+      vy = y + 20 + 80;
     }
     ctx.fillStyle = '#e9d9ae';
     ctx.font = 'italic 35px Georgia, "Times New Roman", serif';
     var verse = en ? '\u201CFor we are his handiwork, created in Christ Jesus\u201D (Ephesians 2:10)' : '\u00ABSomos, pues, obra suya. Dios nos ha creado en Cristo Jes\u00FAs\u00BB (Efesios 2,10)';
-    wrapText(ctx, verse, 840).forEach(function(l){ ctx.fillText(l, 540, vy); vy += 50; });
+    wrapText(ctx, verse, 840).forEach(function(l){ ctx.fillText(l, 540, vy); vy += 48; });
     ctx.fillStyle = '#a8873f';
     ctx.font = '24px Roboto, "Segoe UI", Arial, sans-serif';
     try { ctx.letterSpacing = '4px'; } catch(e){}

@@ -96,6 +96,16 @@ test('quien soy: la imagen de la declaración se crea en la página', async ({ p
   expect(href).toContain('blob:');
 });
 
+test('quien soy: la declaración compartida trae las nueve afirmaciones completas', async ({ page }) => {
+  await page.goto('/quien-soy/');
+  await page.fill('#qs-name', 'Guillermo');
+  for (const t of ['• Soy amado por Dios', '• Soy escogido', '• Soy perdonado', '• Soy libre',
+    '• Soy obra maestra de Dios', '• Soy fuerte', '• Soy capaz', '• Soy hijo de Dios',
+    '• Nunca estoy solo', '• Soy Guillermo']) {
+    await expect(page.locator('#qs-preview')).toContainText(t);
+  }
+});
+
 test('quien soy: la imagen rediseñada conserva el formato vertical completo', async ({ page }) => {
   await page.goto('/quien-soy/');
   await page.fill('#qs-name', 'Guillermo');
