@@ -24,6 +24,9 @@
 .qs-aff-card.active{outline:2px solid var(--gold);background:rgba(201,168,76,.12)}
 button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;color:var(--gold-light);background:none;border:none;width:100%;text-align:center;padding:0}
 .qs-aff-explain{margin-top:.7rem;padding-top:.7rem;border-top:1px solid rgba(201,168,76,.25);font-size:.98rem;line-height:1.65;text-align:left}
+.qs-final{margin:1.2rem 0 .5rem;padding:1.4rem 1.3rem;border-radius:14px;text-align:center;background:rgba(201,168,76,.1);border:1px solid var(--gold)}
+.qs-final-name{font-family:var(--font-serif);font-size:1.9rem;color:var(--gold-light);margin:.1rem 0 .4rem}
+.qs-final p{line-height:1.65;margin:.2rem 0}
 .qs-tool{margin:1.4rem 0;padding:1.5rem;border-radius:18px;background:linear-gradient(160deg,rgba(37,211,102,.10),rgba(201,168,76,.06));border:1px solid var(--gold-dim)}
 .qs-tool h2{font-family:var(--font-serif);color:var(--gold-light);margin:.2rem 0 .6rem;font-size:1.5rem}
 .qs-tool label{display:block;font-weight:700;margin:.8rem 0 .35rem}
@@ -146,6 +149,11 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
 <div class="qs-aff-explain" hidden></div>
 </div>
 </div>
+<div class="qs-final">
+<p class="qs-final-name" id="qs-final-name">Soy ______</p>
+<p data-lang="es">Tu nombre cierra la lista porque tu identidad no es una lista de cualidades: eres tú, y Dios te llama por tu nombre.</p>
+<p data-lang="en">Your name closes the list because your identity is not a list of qualities: it is you, and God calls you by your name.</p>
+</div>
 <p data-lang="es">Lee también: <a href="/talentos/">Talentos que dan fruto</a>, <a href="/renacer-en-cristo/">Renacer en Cristo</a> y <a href="/control-y-confianza/">Soltar el control y confiar</a>.</p>
 <p data-lang="en">Read also: <a href="/talentos/">Talents That Bear Fruit</a>, <a href="/renacer-en-cristo/">Born Again in Christ</a> and <a href="/control-y-confianza/">Letting Go of Control and Trusting</a>.</p>
 </section>
@@ -242,13 +250,11 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
   function buildText(){
     var n = name();
     if (lang() === 'en') {
-      return (n ? 'I am ' + n + '.\n' : '') +
-        'In Christ, I am loved by God. I am chosen. I am forgiven. I am free. I am God\u2019s masterpiece. I am never alone.\n' +
+      return 'In Christ, I am loved by God. I am chosen. I am forgiven. I am free. I am God\u2019s masterpiece. I am never alone.' + (n ? ' I am ' + n + '.' : '') + '\n' +
         '\u201CFor we are his handiwork, created in Christ Jesus\u201D (Ephesians 2:10).\n' +
         'Make your own declaration here: ' + PAGE_URL;
     }
-    return (n ? 'Yo soy ' + n + '.\n' : '') +
-      'En Cristo, soy amado por Dios. Soy escogido. Soy perdonado. Soy libre. Soy obra maestra de Dios. Nunca estoy solo.\n' +
+    return 'En Cristo, soy amado por Dios. Soy escogido. Soy perdonado. Soy libre. Soy obra maestra de Dios. Nunca estoy solo.' + (n ? ' Soy ' + n + '.' : '') + '\n' +
       '\u00ABSomos, pues, obra suya. Dios nos ha creado en Cristo Jes\u00FAs\u00BB (Efesios 2,10).\n' +
       'Haz tu propia declaraci\u00F3n aqu\u00ED: ' + PAGE_URL;
   }
@@ -275,6 +281,8 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
     preview.textContent = t;
     wa.href = 'https://wa.me/?text=' + encodeURIComponent(t);
     input.placeholder = lang() === 'en' ? 'Write your name' : 'Escribe tu nombre';
+    document.getElementById('qs-final-name').textContent = n2();
+    function n2(){ var v = name(); return v ? ((lang() === 'en' ? 'I am ' : 'Soy ') + v) : (lang() === 'en' ? 'I am ______' : 'Soy ______'); }
     renderExplain();
   }
   try {
