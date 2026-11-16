@@ -3,7 +3,7 @@
    Offline support for precached and previously cached resources
    ===================================================== */
 
-const CACHE = 'tup-v319';
+const CACHE = 'tup-v320';
 const CRITICAL_CORE_URLS = new Set([
   '/assets/js/main.js',
   '/assets/js/menu.js',
@@ -28,6 +28,13 @@ const OFFLINE_ADORATION_DAYS = new Set(
 // All files to pre-cache on install
 const PRECACHE_URLS = [
   '/',
+  '/juego/',
+  '/juego/game.css',
+  '/juego/renderer3d.js',
+  '/juego/game.js',
+  '/juegos/',
+  '/juegos/games.css',
+  '/assets/css/games-promo.css',
   '/adoracion/',
   '/adoracion/index.html',
   '/adoracion/33dias/',

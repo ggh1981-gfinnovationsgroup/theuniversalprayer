@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101a30" />
+  <meta name="description" content="Juegos interactivos inspirados en la fe, las virtudes y las historias de The Universal Prayer." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Juegos — The Universal Prayer" />
+  <meta property="og:description" content="Aventuras, retos y juegos para aprender y divertirse." />
+  <meta property="og:url" content="https://www.theuniversalprayer.com/juegos/" />
+  <title>Juegos — The Universal Prayer</title>
+  <link rel="canonical" href="https://www.theuniversalprayer.com/juegos/" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="stylesheet" href="/assets/css/games-promo.css" />
+  <link rel="stylesheet" href="/juegos/games.css" />
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
+    }
+  </script>
+</head>
+<body class="games-page">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo back-link"><span class="cross">✝</span><span class="logo-text">The Universal Prayer</span></a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language"><span id="langLabel">EN</span></button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="games-main">
+    <a class="games-back" href="/" data-lang="es">← Inicio</a>
+    <a class="games-back" href="/" data-lang="en" style="display:none">← Home</a>
+    <header class="games-hero">
+      <span class="games-hero-icon" aria-hidden="true">🎮</span>
+      <p class="games-kicker" data-lang="es">APRENDER · JUGAR · CRECER</p>
+      <p class="games-kicker" data-lang="en" style="display:none">LEARN · PLAY · GROW</p>
+      <h1 data-lang="es">Juegos</h1>
+      <h1 data-lang="en" style="display:none">Games</h1>
+      <p data-lang="es">Aventuras y retos inspirados en la fe, las virtudes y las historias que compartimos en esta página. Iremos agregando juegos nuevos aquí.</p>
+      <p data-lang="en" style="display:none">Adventures and challenges inspired by faith, virtues, and the stories we share on this site. New games will be added here.</p>
+    </header>
+
+    <section class="games-list" aria-labelledby="availableGames">
+      <h2 id="availableGames" data-lang="es">Juega ahora</h2>
+      <h2 id="availableGamesEn" data-lang="en" style="display:none">Play now</h2>
+      <a class="games-card" href="/juego/">
+        <span class="games-card-art" aria-hidden="true">✝</span>
+        <span class="games-card-copy">
+          <span class="games-card-label" data-lang="es">AVENTURA 3D</span>
+          <span class="games-card-label" data-lang="en" style="display:none">3D ADVENTURE</span>
+          <strong data-lang="es">Camino de la esperanza</strong>
+          <strong data-lang="en" style="display:none">Path of Hope</strong>
+          <span data-lang="es">Guía al peregrino por las plataformas, encuentra las cinco luces y llega a la capilla.</span>
+          <span data-lang="en" style="display:none">Guide the pilgrim across the platforms, find all five lights, and reach the chapel.</span>
+          <span class="games-card-action" data-lang="es">Jugar ahora <span aria-hidden="true">→</span></span>
+          <span class="games-card-action" data-lang="en" style="display:none">Play now <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+    </section>
+
+    <p class="games-note" data-lang="es">Más juegos llegarán a esta sección.</p>
+    <p class="games-note" data-lang="en" style="display:none">More games are on the way.</p>
+  </main>
+  <script src="/assets/js/menu.js"></script>
+  <script>
+    (() => {
+      const key = 'tup_lang';
+      const toggle = document.getElementById('langToggle');
+      const label = document.getElementById('langLabel');
+      function setLanguage(language) {
+        const lang = language === 'en' ? 'en' : 'es';
+        document.documentElement.lang = lang;
+        document.querySelectorAll('[data-lang]').forEach((element) => {
+          element.style.display = element.dataset.lang === lang ? '' : 'none';
+        });
+        label.textContent = lang === 'es' ? 'EN' : 'ES';
+        localStorage.setItem(key, lang);
+        window.dispatchEvent(new CustomEvent('tup:langchange', { detail: lang }));
+      }
+      setLanguage(localStorage.getItem(key) || 'es');
+      toggle.addEventListener('click', () => setLanguage(document.documentElement.lang === 'es' ? 'en' : 'es'));
+    })();
+  </script>
+</body>
+</html>
