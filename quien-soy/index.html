@@ -40,7 +40,7 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
 .qs-tool label{display:block;font-weight:700;margin:.8rem 0 .35rem}
 .qs-tool input{width:100%;box-sizing:border-box;padding:.8rem 1rem;border-radius:12px;border:1px solid var(--gold-dim);background:rgba(0,0,0,.25);color:inherit;font-size:1.1rem;font-family:var(--font-sans)}
 .qs-preview{margin:1rem 0;padding:1.1rem 1.2rem;border-radius:14px;background:rgba(0,0,0,.28);border:1px dashed rgba(201,168,76,.45);font-family:var(--font-serif);font-size:1.12rem;line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere}
-.qs-wa{display:inline-block;margin-top:.4rem;padding:.9rem 1.6rem;border-radius:999px;background:#25d366;color:#06281a;font-weight:800;font-size:1.08rem;text-decoration:none;font-family:var(--font-sans)}
+.qs-wa{display:inline-block;margin-top:.4rem;padding:.9rem 1.6rem;border-radius:999px;background:#25d366;color:#06281a;font-weight:800;font-size:1.08rem;text-decoration:none;font-family:var(--font-sans);border:none;cursor:pointer}
 .qs-note{margin-top:1rem;color:var(--gold-light);font-size:.95rem}
 .qs-steps{margin:.6rem 0 .6rem 1.2rem;line-height:1.75}
 .qs-close{margin:1.6rem 0;padding:1.3rem 1.4rem;border-radius:16px;background:rgba(201,168,76,.05);border:1px solid rgba(201,168,76,.2);font-family:var(--font-serif);font-size:1.1rem;line-height:1.7}
@@ -174,22 +174,17 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
 <section class="qs-tool">
 <h2 data-lang="es">Hazlo tuyo y compártelo</h2>
 <h2 data-lang="en">Make it yours and share it</h2>
-<p data-lang="es">Esta es tu declaración, ya personalizada con el nombre que escribiste arriba. Mándala por WhatsApp a tus amigos junto con el enlace de esta página, para que ellos también puedan hacer la suya.</p>
-<p data-lang="en">This is your declaration, already personalized with the name you wrote above. Send it on WhatsApp to your friends together with the link to this page, so they can make their own too.</p>
+<p data-lang="es">Esta es tu declaración, ya personalizada con el nombre que escribiste arriba. Con un solo toque se crea tu imagen y se comparte por WhatsApp junto con este texto y el enlace de la página, para que tus amigos también hagan la suya. La imagen se dibuja en tu propio teléfono, sin servidores.</p>
+<p data-lang="en">This is your declaration, already personalized with the name you wrote above. With one tap your image is created and shared on WhatsApp together with this text and the link to this page, so your friends can make their own too. The image is drawn on your own phone, with no servers involved.</p>
 <div class="qs-preview" id="qs-preview"></div>
-<a class="qs-wa" id="qs-wa" href="https://wa.me/?text=" target="_blank" rel="noopener"><span data-lang="es">Compartir por WhatsApp</span><span data-lang="en">Share on WhatsApp</span></a>
-<p class="qs-note" data-lang="es">Tu nombre se guarda solo en tu dispositivo, para recordarte en tu próxima visita, y nunca se envía a ningún servidor: solo viaja dentro del mensaje que tú decidas compartir.</p>
-<p class="qs-note" data-lang="en">Your name is saved only on your device, to remember you on your next visit, and is never sent to any server: it only travels inside the message you choose to share.</p>
-<div class="qs-imgbox">
-<p data-lang="es">¿Prefieres compartir una imagen en vez de solo texto? Créala aquí mismo, con tu declaración y tu nombre, en los colores de esta página. Se dibuja en tu propio teléfono, sin servidores.</p>
-<p data-lang="en">Would you rather share an image instead of plain text? Create it right here, with your declaration and your name, in the colors of this page. It is drawn on your own phone, with no servers involved.</p>
-<button type="button" class="qs-imgbtn" id="qs-img-make"><span data-lang="es">Crear mi imagen</span><span data-lang="en">Create my image</span></button>
+<button type="button" class="qs-wa" id="qs-share-main"><span data-lang="es">Crear imagen y compartir en WhatsApp</span><span data-lang="en">Create image and share on WhatsApp</span></button>
 <img id="qs-img-preview" class="qs-img-preview" alt="Imagen de mi declaración" hidden>
 <div id="qs-img-actions" hidden>
-<button type="button" class="qs-imgbtn" id="qs-img-share"><span data-lang="es">Compartir imagen</span><span data-lang="en">Share image</span></button>
 <a class="qs-imgbtn" id="qs-img-download" download="quien-soy.png"><span data-lang="es">Descargar imagen</span><span data-lang="en">Download image</span></a>
+<p class="qs-note"><span data-lang="es">Si tu teléfono no abre el menú de compartir, descarga la imagen y envíala tú mismo desde WhatsApp.</span><span data-lang="en">If your phone does not open the share menu, download the image and send it yourself from WhatsApp.</span></p>
 </div>
-</div>
+<p class="qs-note" data-lang="es">Tu nombre se guarda solo en tu dispositivo, para recordarte en tu próxima visita, y nunca se envía a ningún servidor: solo viaja dentro del mensaje que tú decidas compartir.</p>
+<p class="qs-note" data-lang="en">Your name is saved only on your device, to remember you on your next visit, and is never sent to any server: it only travels inside the message you choose to share.</p>
 </section>
 
 <section class="qs-close">
@@ -242,7 +237,6 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
   var NAME_KEY = 'tup_nombre';
   var input = document.getElementById('qs-name');
   var preview = document.getElementById('qs-preview');
-  var wa = document.getElementById('qs-wa');
   var currentAff = null;
   var GENDER_KEY = 'tup_genero';
   var gender = '';
@@ -324,12 +318,12 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
   function update(){
     var t = buildText();
     preview.textContent = t;
-    wa.href = 'https://wa.me/?text=' + encodeURIComponent(t);
     input.placeholder = lang() === 'en' ? 'Write your name' : 'Escribe tu nombre';
     document.getElementById('qs-final-name').textContent = n2();
     function n2(){ var v = name(); return v ? ((lang() === 'en' ? 'I am ' : 'Soy ') + v) : (lang() === 'en' ? 'I am ______' : 'Soy ______'); }
     applyGender();
     renderExplain();
+    refreshImage();
   }
   try {
     var saved = localStorage.getItem(NAME_KEY);
@@ -426,25 +420,29 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
     ctx.fillText('theuniversalprayer.com/quien-soy', 540, 1248);
     return canvas;
   }
-  document.getElementById('qs-img-make').addEventListener('click', function(){
-    var make = function(){
-      drawImage().toBlob(function(blob){
-        imgBlob = blob;
-        var url = URL.createObjectURL(blob);
-        var prev = document.getElementById('qs-img-preview');
-        prev.src = url; prev.hidden = false;
-        document.getElementById('qs-img-download').href = url;
-        document.getElementById('qs-img-actions').hidden = false;
-        var f = new File([blob], 'quien-soy.png', { type: 'image/png' });
-        document.getElementById('qs-img-share').hidden = !(navigator.canShare && navigator.canShare({ files: [f] }));
-      }, 'image/png');
-    };
-    if (document.fonts && document.fonts.ready) document.fonts.ready.then(make); else make();
-  });
-  document.getElementById('qs-img-share').addEventListener('click', function(){
-    if (!imgBlob) return;
+  var imgURL = null;
+  function refreshImage(){
+    drawImage().toBlob(function(blob){
+      if (!blob) return;
+      imgBlob = blob;
+      if (imgURL) URL.revokeObjectURL(imgURL);
+      imgURL = URL.createObjectURL(blob);
+      var prev = document.getElementById('qs-img-preview');
+      if (!prev.hidden) prev.src = imgURL;
+      document.getElementById('qs-img-download').href = imgURL;
+    }, 'image/png');
+  }
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ refreshImage(); });
+  document.getElementById('qs-share-main').addEventListener('click', function(){
+    var prev = document.getElementById('qs-img-preview');
+    if (imgURL) prev.src = imgURL;
+    prev.hidden = false;
+    document.getElementById('qs-img-actions').hidden = false;
+    if (!imgBlob) { refreshImage(); return; }
     var f = new File([imgBlob], 'quien-soy.png', { type: 'image/png' });
-    navigator.share({ files: [f], text: buildText() }).catch(function(){});
+    if (navigator.canShare && navigator.canShare({ files: [f] })) {
+      navigator.share({ files: [f], text: buildText() }).catch(function(){});
+    }
   });
   window.addEventListener('tup:langchange', update);
   update();

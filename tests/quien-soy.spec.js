@@ -35,11 +35,7 @@ test('quien soy: el nombre personaliza la declaración y el enlace de WhatsApp',
   await expect(page.locator('#qs-preview')).toContainText('• Soy Guillermo');
   await expect(page.locator('#qs-final-name')).toHaveText('Soy Guillermo');
   await expect(page.locator('#qs-preview')).toContainText('Nunca estoy solo');
-  const href = await page.locator('#qs-wa').getAttribute('href');
-  expect(href).toContain('https://wa.me/?text=');
-  expect(href).toContain('Guillermo');
-  expect(href).toContain('theuniversalprayer.com%2Fquien-soy');
-  await expect(page.getByText('Compartir por WhatsApp')).toBeVisible();
+  await expect(page.locator('#qs-share-main')).toContainText('Crear imagen y compartir en WhatsApp');
 });
 
 test('quien soy: en inglés la declaración y el botón cambian de idioma', async ({ page }) => {
@@ -50,7 +46,7 @@ test('quien soy: en inglés la declaración y el botón cambian de idioma', asyn
   await page.fill('#qs-name', 'William');
   await expect(page.locator('#qs-preview')).toContainText('• I am William');
   await expect(page.locator('#qs-preview')).toContainText('I am never alone');
-  await expect(page.getByText('Share on WhatsApp')).toBeVisible();
+  await expect(page.getByText('Create image and share on WhatsApp')).toBeVisible();
 });
 
 test('quien soy: cada declaración se expande en su propio cuadro con la explicación personalizada', async ({ page }) => {
@@ -92,7 +88,7 @@ test('quien soy: si es mujer, la declaración sale en femenino y se guarda', asy
 test('quien soy: la imagen de la declaración se crea en la página', async ({ page }) => {
   await page.goto('/quien-soy/');
   await page.fill('#qs-name', 'Guillermo');
-  await page.locator('#qs-img-make').click();
+  await page.locator('#qs-share-main').click();
   await expect(page.locator('#qs-img-preview')).toBeVisible();
   const w = await page.locator('#qs-img-preview').evaluate(img => img.naturalWidth);
   expect(w).toBe(1080);
