@@ -458,9 +458,7 @@
       const aspect = this.width / this.height;
       const baseDistance = aspect < 0.9 ? 12.8 : 10.8;
       const speed = Math.hypot(player.vx, player.vz);
-      const desiredDistance = fixedYaw === null
-        ? baseDistance + Math.min(speed / 5.8, 1) * 1.8 + Math.min(Math.max(player.vy, 0) / 10.2, 1) * 0.7
-        : baseDistance;
+      const desiredDistance = baseDistance + Math.min(speed / 5.8, 1) * 1.8 + Math.min(Math.max(player.vy, 0) / 10.2, 1) * 0.7;
       const desiredYaw = fixedYaw ?? (Number.isFinite(player.facing) ? player.facing : Math.PI);
       const lookAhead = aspect < 0.9 ? 1.5 : 3.1;
       const desiredCamera = [
@@ -471,7 +469,7 @@
       const delta = this.lastRenderTime === null ? 0 : Math.min(0.05, (time - this.lastRenderTime) / 1000);
       this.lastRenderTime = time;
       if (!this.camera) {
-        this.camera = { x: desiredCamera[0], y: desiredCamera[1], z: desiredCamera[2], yaw: desiredYaw };
+        this.camera = { x: desiredCamera[0], y: desiredCamera[1], z: desiredCamera[2], yaw: desiredYaw, distance: desiredDistance };
       } else {
         const smoothing = 1 - Math.exp(-delta * 5.5);
         if (fixedYaw === null) {
@@ -483,6 +481,7 @@
         this.camera.x += (desiredCamera[0] - this.camera.x) * smoothing;
         this.camera.y += (desiredCamera[1] - this.camera.y) * smoothing;
         this.camera.z += (desiredCamera[2] - this.camera.z) * smoothing;
+        this.camera.distance += (desiredDistance - this.camera.distance) * smoothing;
       }
       const target = [
         player.x + Math.sin(this.camera.yaw) * lookAhead,

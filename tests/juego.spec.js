@@ -188,6 +188,38 @@ test('Felipe acompaña a los niños hasta el Oratorio y todos cantan', async ({ 
   await expect(page.locator('#gameOverlay')).toHaveClass(/is-hidden/);
 });
 
+test('el zoom de la cámara sigue el movimiento sin cambiar su orientación', async ({ page }) => {
+  await page.addInitScript(() => {
+    Object.defineProperty(window, 'Game3DRenderer', {
+      configurable: true,
+      set(Renderer) {
+        const renderFelipeNeri = Renderer.prototype.renderFelipeNeri;
+        Renderer.prototype.renderFelipeNeri = function (...args) {
+          renderFelipeNeri.apply(this, args);
+          window.felipeCameraState = {
+            yaw: this.camera.yaw,
+            distance: this.camera.distance,
+          };
+        };
+        Object.defineProperty(window, 'Game3DRenderer', {
+          configurable: true,
+          value: Renderer,
+          writable: true,
+        });
+      },
+    });
+  });
+  await page.goto('/juegos/felipe-neri/');
+  await page.locator('#playButton').click();
+  await expect.poll(() => page.evaluate(() => window.felipeCameraState?.distance)).toBeGreaterThan(0);
+  const initialDistance = await page.evaluate(() => window.felipeCameraState.distance);
+  await page.keyboard.down('ArrowUp');
+  await page.waitForTimeout(1000);
+  await page.keyboard.up('ArrowUp');
+  await expect.poll(() => page.evaluate(() => window.felipeCameraState.distance)).toBeGreaterThan(initialDistance + 0.5);
+  expect(await page.evaluate(() => window.felipeCameraState.yaw)).toBeCloseTo(Math.PI);
+});
+
 for (const section of ['ninos', 'jovenes']) {
   test(`${section} enlaza al catálogo de juegos`, async ({ page }) => {
     await page.goto(`/${section}/`);
