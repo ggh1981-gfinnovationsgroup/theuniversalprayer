@@ -96,6 +96,17 @@ test('quien soy: la imagen de la declaración se crea en la página', async ({ p
   expect(href).toContain('blob:');
 });
 
+test('quien soy: las tarjetas se entienden tocables, aviso, flecha y clic en toda la tarjeta', async ({ page }) => {
+  await page.goto('/quien-soy/');
+  await expect(page.locator('.qs-tap-hint[data-lang="es"]')).toContainText('Toca una declaración');
+  const flecha = await page.locator('.qs-aff-card[data-card="1"] .qs-aff[data-lang="es"]').evaluate(el => getComputedStyle(el, '::after').content);
+  expect(flecha).toContain('▾');
+  await page.locator('.qs-aff-card[data-card="5"]').click({ position: { x: 4, y: 4 } });
+  await expect(page.locator('.qs-aff-card[data-card="5"]')).toHaveClass(/active/);
+  await expect(page.locator('.qs-aff-card[data-card="5"] .qs-aff-explain')).toBeVisible();
+  await expect(page.locator('.qs-grid')).toHaveClass(/qs-touched/);
+});
+
 test('quien soy: la declaración compartida trae las nueve afirmaciones completas', async ({ page }) => {
   await page.goto('/quien-soy/');
   await page.fill('#qs-name', 'Guillermo');

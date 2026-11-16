@@ -24,6 +24,12 @@
 .qs-aff-card.active{outline:2px solid var(--gold);background:rgba(201,168,76,.12)}
 button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;color:var(--gold-light);background:none;border:none;width:100%;text-align:center;padding:0}
 .qs-aff-explain{margin-top:.7rem;padding-top:.7rem;border-top:1px solid rgba(201,168,76,.25);font-size:.98rem;line-height:1.65;text-align:left}
+.qs-aff-card{cursor:pointer}
+button.qs-aff::after{content:'▾';display:inline-block;margin-left:.55rem;color:var(--gold);font-size:.95em;transition:transform .25s ease}
+.qs-aff-card.active button.qs-aff::after{transform:rotate(180deg)}
+.qs-grid:not(.qs-touched) .qs-aff-card:first-child button.qs-aff::after{animation:qs-bounce 1.2s ease-in-out infinite}
+@keyframes qs-bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+.qs-tap-hint{display:inline-block;margin:.4rem 0 0;padding:.5rem 1.1rem;border:1px solid var(--gold);border-radius:999px;background:rgba(201,168,76,.14);color:var(--gold-light);font-weight:700;text-align:center}
 .qs-final{margin:1.2rem 0 .5rem;padding:1.4rem 1.3rem;border-radius:14px;text-align:center;background:rgba(201,168,76,.1);border:1px solid var(--gold)}
 .qs-final-name{font-family:var(--font-serif);font-size:1.9rem;color:var(--gold-light);margin:.1rem 0 .4rem}
 .qs-final p{line-height:1.65;margin:.2rem 0}
@@ -115,6 +121,7 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
 <h2 data-lang="en">This is what God says about you</h2>
 <p data-lang="es">Léelo despacio, en primera persona, como una verdad que se declara hasta que el corazón la cree. Toca cada declaración para ver qué significa, explicado con tu nombre.</p>
 <p data-lang="en">Read it slowly, in the first person, as a truth declared until the heart believes it. Tap each declaration to see what it means, explained with your name.</p>
+<p style="text-align:center"><span class="qs-tap-hint" data-lang="es">👆 Toca una declaración y se abre su significado</span><span class="qs-tap-hint" data-lang="en">👆 Tap a declaration to open what it means</span></p>
 <div class="qs-grid">
 <div class="qs-aff-card" data-card="1">
 <button type="button" class="qs-aff" data-aff="1" data-lang="es" data-masc="Soy amado por Dios" data-fem="Soy amada por Dios">Soy amado por Dios</button>
@@ -341,6 +348,17 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
       var aff = b.getAttribute('data-aff');
       currentAff = (currentAff === aff) ? null : aff;
       renderExplain();
+    });
+  });
+  document.querySelectorAll('.qs-aff-card').forEach(function(card){
+    card.addEventListener('click', function(e){
+      var grid = document.querySelector('.qs-grid');
+      if (grid) grid.classList.add('qs-touched');
+      if (e.target.closest('.qs-aff')) return;
+      var btns = card.querySelectorAll('.qs-aff');
+      for (var i = 0; i < btns.length; i++) {
+        if (btns[i].offsetParent !== null) { btns[i].click(); break; }
+      }
     });
   });
   function applyGender(){
