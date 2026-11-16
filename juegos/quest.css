@@ -1,0 +1,162 @@
+/* Estilos compartidos de los juegos de búsqueda (motor quest-engine.js).
+   Cada juego ajusta su acento con las variables --q-accent y afines. */
+:root {
+  --q-accent: #e5bf68;
+  --q-accent-border: rgba(255, 216, 144, .34);
+  --q-accent-text: #ffe2a1;
+}
+
+.quest-counter {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border: 1px solid var(--q-accent-border);
+  border-radius: 14px;
+  background: rgba(15, 25, 45, .68);
+  color: var(--q-accent-text);
+  font-size: 1.1rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.count-divider { color: #8793a7; }
+
+.quest-hud {
+  position: absolute;
+  z-index: 2;
+  top: 16px;
+  left: 16px;
+  width: min(390px, calc(100% - 32px));
+  padding: 12px 15px;
+  border: 1px solid rgba(255, 255, 255, .19);
+  border-radius: 15px;
+  background: rgba(17, 29, 43, .82);
+  backdrop-filter: blur(7px);
+}
+
+.npc-name {
+  margin: 0;
+  color: var(--q-accent-text);
+  font: 700 .88rem var(--font-sans, sans-serif);
+}
+
+.npc-dialogue {
+  margin: 5px 0 0;
+  color: rgba(255, 255, 255, .86);
+  font: .8rem/1.5 var(--font-sans, sans-serif);
+}
+
+.help-button {
+  margin-top: 9px;
+  border: 1px solid var(--q-accent-border);
+  border-radius: 999px;
+  background: var(--q-accent);
+  padding: 8px 14px;
+  color: #25313b;
+  font: 700 .78rem var(--font-sans, sans-serif);
+  cursor: pointer;
+}
+
+.help-button[hidden], .interact-touch[hidden], .end-banner[hidden] { display: none; }
+.help-button:hover { filter: brightness(1.08); }
+
+.interact-touch {
+  width: 82px !important;
+  height: 82px !important;
+  border-radius: 50% !important;
+  background: var(--q-accent) !important;
+  color: #27313a !important;
+  font-size: .68rem;
+  font-weight: 800;
+  pointer-events: auto !important;
+  touch-action: none;
+  opacity: .94;
+}
+
+.end-banner {
+  position: absolute;
+  z-index: 2;
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  width: min(320px, calc(100% - 32px));
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  overflow: hidden;
+  padding: 10px 14px;
+  border: 1px solid var(--q-accent-border);
+  border-radius: 15px;
+  background: rgba(27, 38, 45, .72);
+  color: #fff3cf;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+.game-frame.is-finished .quest-hud { display: none; }
+.end-banner strong { font: 700 .95rem var(--font-sans, sans-serif); }
+.end-banner .end-line { color: var(--q-accent-text); font: 700 .82rem var(--font-sans, sans-serif); }
+.end-banner > span:last-of-type { color: rgba(255, 255, 255, .8); font: .78rem var(--font-sans, sans-serif); }
+.end-glyphs { color: var(--q-accent-text); font-size: 1.2rem; letter-spacing: .3em; animation: quest-float 1.8s ease-in-out infinite; }
+
+.particle-field {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.particle-field span {
+  position: absolute;
+  bottom: -20px;
+  color: var(--q-accent-text);
+  font-size: 1.5rem;
+  opacity: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, .35);
+  animation: quest-rise 3.2s ease-in infinite;
+}
+
+.particle-field span:nth-child(1) { left: 12%; animation-delay: 0s; }
+.particle-field span:nth-child(2) { left: 32%; animation-delay: 1.2s; font-size: 1.8rem; }
+.particle-field span:nth-child(3) { left: 58%; animation-delay: .6s; }
+.particle-field span:nth-child(4) { left: 76%; animation-delay: 1.8s; font-size: 1.7rem; }
+.particle-field span:nth-child(5) { left: 90%; animation-delay: 2.4s; }
+
+.end-restart {
+  position: relative;
+  z-index: 1;
+  margin-top: 5px;
+  border: 1px solid var(--q-accent-border);
+  border-radius: 999px;
+  background: var(--q-accent);
+  padding: 6px 12px;
+  color: #25313b;
+  font: 700 .75rem var(--font-sans, sans-serif);
+  cursor: pointer;
+}
+
+.end-restart:hover { filter: brightness(1.08); }
+
+@keyframes quest-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@keyframes quest-rise {
+  0% { opacity: 0; transform: translateY(0) rotate(-8deg) scale(.8); }
+  15% { opacity: .9; }
+  85% { opacity: .75; }
+  100% { opacity: 0; transform: translateY(-145px) rotate(16deg) scale(1.15); }
+}
+
+@media (max-width: 640px) {
+  .quest-hud { top: 10px; left: 10px; width: min(320px, calc(100% - 20px)); padding: 9px 11px; }
+  .npc-dialogue { font-size: .73rem; }
+  .end-banner { right: 10px; bottom: 10px; width: min(300px, calc(100% - 20px)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .end-glyphs, .particle-field span { animation: none; }
+  .particle-field span { bottom: 65%; opacity: .8; }
+}

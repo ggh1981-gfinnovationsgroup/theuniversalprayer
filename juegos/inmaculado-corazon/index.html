@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#1d3247" />
+  <meta name="description" content="Camina con Lucía por el jardín de Fátima, reúne cinco rosas y llévalas al Inmaculado Corazón de María." />
+  <title>Inmaculado Corazón de María — The Universal Prayer</title>
+  <link rel="canonical" href="https://www.theuniversalprayer.com/juegos/inmaculado-corazon/" />
+  <link rel="stylesheet" href="/juego/game.css" />
+  <link rel="stylesheet" href="/juegos/quest.css" />
+  <link rel="stylesheet" href="/juegos/inmaculado-corazon/game.css" />
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
+    }
+  </script>
+</head>
+<body>
+  <main class="game-shell">
+    <header class="game-header">
+      <a class="back-link" href="/juegos/"><span data-es="← Juegos" data-en="← Games">← Juegos</span></a>
+      <div class="game-brand">
+        <span class="brand-mark" aria-hidden="true">✿</span>
+        <span>THE UNIVERSAL PRAYER</span>
+      </div>
+      <button class="language-toggle" id="languageToggle" type="button" aria-label="Cambiar idioma">EN</button>
+    </header>
+
+    <section class="game-content" aria-labelledby="gameTitle">
+      <div class="title-row">
+        <div>
+          <p class="eyebrow" data-es="FÁTIMA · LOS PASTORCITOS" data-en="FATIMA · THE LITTLE SHEPHERDS">FÁTIMA · LOS PASTORCITOS</p>
+          <h1 id="gameTitle" data-es="Inmaculado Corazón de María" data-en="Immaculate Heart of Mary">Inmaculado Corazón de María</h1>
+        </div>
+        <div class="quest-counter" aria-live="polite"><span aria-hidden="true">✿</span> <span id="progressCount">0</span><span class="count-divider">/</span>5</div>
+      </div>
+
+      <div class="game-frame">
+        <canvas id="gameCanvas" aria-label="Aventura 3D del Inmaculado Corazón de María en Fátima"></canvas>
+        <div class="quest-hud">
+          <p class="npc-name" id="npcName"></p>
+          <p class="npc-dialogue" id="npcDialogue" aria-live="polite"></p>
+          <button class="help-button" id="interactButton" type="button" hidden></button>
+        </div>
+        <div class="end-banner" id="endBanner" hidden>
+          <div class="particle-field" aria-hidden="true">
+            <span>✿</span><span>✿</span><span>✿</span><span>✿</span><span>✿</span>
+          </div>
+          <span class="end-glyphs" aria-hidden="true">✿ ✿ ✿</span>
+          <strong data-es="¡Las rosas ya rodean su Corazón!" data-en="The roses now surround her Heart!">¡Las rosas ya rodean su Corazón!</strong>
+          <span class="end-line" data-es="«Inmaculado Corazón de María»" data-en="&quot;Immaculate Heart of Mary&quot;">«Inmaculado Corazón de María»</span>
+          <span data-es="Su Corazón es refugio y camino." data-en="Her Heart is refuge and path.">Su Corazón es refugio y camino.</span>
+          <button class="end-restart" id="endRestartButton" type="button" data-es="Volver a jugar" data-en="Play again">Volver a jugar</button>
+        </div>
+        <div class="game-overlay" id="gameOverlay">
+          <div class="overlay-card">
+            <div class="overlay-icon" aria-hidden="true">✿</div>
+            <p class="eyebrow" data-es="UN CORAZÓN SIN MANCHA" data-en="A HEART WITHOUT STAIN">UN CORAZÓN SIN MANCHA</p>
+            <h2 id="overlayTitle" data-es="Rosas para el Corazón de María" data-en="Roses for the Heart of Mary">Rosas para el Corazón de María</h2>
+            <p id="overlayMessage" data-es="En Fátima, la Virgen pidió a los pastorcitos rezar el rosario y ofrecerle su amor. Camina con Lucía por el jardín, reúne cinco rosas y llévalas al Corazón Inmaculado de María." data-en="At Fatima, Our Lady asked the little shepherds to pray the rosary and offer her their love. Walk with Lucia through the garden, gather five roses, and bring them to the Immaculate Heart of Mary.">En Fátima, la Virgen pidió a los pastorcitos rezar el rosario y ofrecerle su amor. Camina con Lucía por el jardín, reúne cinco rosas y llévalas al Corazón Inmaculado de María.</p>
+            <button class="play-button" id="playButton" type="button" data-es="Comenzar" data-en="Begin">Comenzar</button>
+          </div>
+        </div>
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+        <div class="touch-controls" aria-label="Controles táctiles">
+          <div class="touch-pad">
+            <button type="button" data-key="ArrowUp" aria-label="Avanzar">▲</button>
+            <div>
+              <button type="button" data-key="ArrowLeft" aria-label="Mover a la izquierda">◀</button>
+              <button type="button" data-key="ArrowDown" aria-label="Retroceder">▼</button>
+              <button type="button" data-key="ArrowRight" aria-label="Mover a la derecha">▶</button>
+            </div>
+          </div>
+          <button class="interact-touch" id="interactTouch" type="button" aria-label="Interactuar" hidden>AYUDAR</button>
+        </div>
+      </div>
+
+      <div class="game-footer">
+        <p data-es="Mueve: WASD o flechas <span>·</span> Reiniciar: R" data-en="Move: WASD or arrows <span>·</span> Restart: R">Mueve: WASD o flechas <span>·</span> Reiniciar: R</p>
+        <p class="game-hint" data-es="Cada rosa es una oración ofrecida con amor, como el rosario de los pastorcitos." data-en="Each rose is a prayer offered with love, like the rosary of the little shepherds.">Cada rosa es una oración ofrecida con amor, como el rosario de los pastorcitos.</p>
+      </div>
+      <p class="visually-hidden" id="gameStatus" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+  <script src="/juego/renderer3d.js"></script>
+  <script src="/juegos/quest-engine.js"></script>
+  <script src="/juegos/inmaculado-corazon/game.js"></script>
+</body>
+</html>

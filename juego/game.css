@@ -299,6 +299,10 @@ h1 {
   .game-hint { text-align: left; }
 }
 
+@media (max-width: 420px) {
+  .game-frame { min-height: 330px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }

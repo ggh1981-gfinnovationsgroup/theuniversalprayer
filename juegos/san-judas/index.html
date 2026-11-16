@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#1d3a24" />
+  <meta name="description" content="Acompaña a san Judas Tadeo, el santo de las causas imposibles, a devolver la esperanza a tres personas de su pueblo y llevarlas a la iglesia." />
+  <title>San Judas Tadeo — The Universal Prayer</title>
+  <link rel="canonical" href="https://www.theuniversalprayer.com/juegos/san-judas/" />
+  <link rel="stylesheet" href="/juego/game.css" />
+  <link rel="stylesheet" href="/juegos/quest.css" />
+  <link rel="stylesheet" href="/juegos/san-judas/game.css" />
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
+    }
+  </script>
+</head>
+<body>
+  <main class="game-shell">
+    <header class="game-header">
+      <a class="back-link" href="/juegos/"><span data-es="← Juegos" data-en="← Games">← Juegos</span></a>
+      <div class="game-brand">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>THE UNIVERSAL PRAYER</span>
+      </div>
+      <button class="language-toggle" id="languageToggle" type="button" aria-label="Cambiar idioma">EN</button>
+    </header>
+
+    <section class="game-content" aria-labelledby="gameTitle">
+      <div class="title-row">
+        <div>
+          <p class="eyebrow" data-es="APÓSTOL · CAUSAS IMPOSIBLES" data-en="APOSTLE · IMPOSSIBLE CAUSES">APÓSTOL · CAUSAS IMPOSIBLES</p>
+          <h1 id="gameTitle" data-es="San Judas Tadeo" data-en="Saint Jude Thaddeus">San Judas Tadeo</h1>
+        </div>
+        <div class="quest-counter" aria-live="polite"><span aria-hidden="true">♥</span> <span id="progressCount">0</span><span class="count-divider">/</span>3</div>
+      </div>
+
+      <div class="game-frame">
+        <canvas id="gameCanvas" aria-label="Aventura 3D de san Judas Tadeo en el pueblo"></canvas>
+        <div class="quest-hud">
+          <p class="npc-name" id="npcName"></p>
+          <p class="npc-dialogue" id="npcDialogue" aria-live="polite"></p>
+          <button class="help-button" id="interactButton" type="button" hidden></button>
+        </div>
+        <div class="end-banner" id="endBanner" hidden>
+          <div class="particle-field" aria-hidden="true">
+            <span>✦</span><span>✦</span><span>✦</span><span>✦</span><span>✦</span>
+          </div>
+          <span class="end-glyphs" aria-hidden="true">✦ ✦ ✦</span>
+          <strong data-es="¡La esperanza volvió al pueblo!" data-en="Hope returned to the village!">¡La esperanza volvió al pueblo!</strong>
+          <span class="end-line" data-es="«Nada es imposible para Dios»" data-en="&quot;Nothing is impossible for God&quot;">«Nada es imposible para Dios»</span>
+          <span data-es="Los tres caminan juntos a la iglesia." data-en="All three walk together to the church.">Los tres caminan juntos a la iglesia.</span>
+          <button class="end-restart" id="endRestartButton" type="button" data-es="Volver a jugar" data-en="Play again">Volver a jugar</button>
+        </div>
+        <div class="game-overlay" id="gameOverlay">
+          <div class="overlay-card">
+            <div class="overlay-icon" aria-hidden="true">✦</div>
+            <p class="eyebrow" data-es="EL SANTO DE LO IMPOSIBLE" data-en="THE SAINT OF THE IMPOSSIBLE">EL SANTO DE LO IMPOSIBLE</p>
+            <h2 id="overlayTitle" data-es="El santo de lo imposible" data-en="The saint of the impossible">El santo de lo imposible</h2>
+            <p id="overlayMessage" data-es="San Judas Tadeo, el apóstol que lleva la imagen de Jesús en el pecho, ayuda a quienes ya no ven salida. Recorre el pueblo, ayuda a tres personas y llévalas a la iglesia." data-en="Saint Jude Thaddeus, the apostle who carries the image of Jesus on his chest, helps those who see no way out. Walk through the village, help three people, and bring them to the church.">San Judas Tadeo, el apóstol que lleva la imagen de Jesús en el pecho, ayuda a quienes ya no ven salida. Recorre el pueblo, ayuda a tres personas y llévalas a la iglesia.</p>
+            <button class="play-button" id="playButton" type="button" data-es="Comenzar" data-en="Begin">Comenzar</button>
+          </div>
+        </div>
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+        <div class="touch-controls" aria-label="Controles táctiles">
+          <div class="touch-pad">
+            <button type="button" data-key="ArrowUp" aria-label="Avanzar">▲</button>
+            <div>
+              <button type="button" data-key="ArrowLeft" aria-label="Mover a la izquierda">◀</button>
+              <button type="button" data-key="ArrowDown" aria-label="Retroceder">▼</button>
+              <button type="button" data-key="ArrowRight" aria-label="Mover a la derecha">▶</button>
+            </div>
+          </div>
+          <button class="interact-touch" id="interactTouch" type="button" aria-label="Interactuar" hidden>AYUDAR</button>
+        </div>
+      </div>
+
+      <div class="game-footer">
+        <p data-es="Mueve: WASD o flechas <span>·</span> Ayudar: E o el botón <span>·</span> Reiniciar: R" data-en="Move: WASD or arrows <span>·</span> Help: E or the button <span>·</span> Restart: R">Mueve: WASD o flechas <span>·</span> Ayudar: E o el botón <span>·</span> Reiniciar: R</p>
+        <p class="game-hint" data-es="San Judas lleva la imagen de Jesús en el pecho y una llama sobre la cabeza, señal del Espíritu Santo." data-en="Saint Jude carries the image of Jesus on his chest and a flame above his head, a sign of the Holy Spirit.">San Judas lleva la imagen de Jesús en el pecho y una llama sobre la cabeza, señal del Espíritu Santo.</p>
+      </div>
+      <p class="visually-hidden" id="gameStatus" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+  <script src="/juego/renderer3d.js"></script>
+  <script src="/juegos/quest-engine.js"></script>
+  <script src="/juegos/san-judas/game.js"></script>
+</body>
+</html>

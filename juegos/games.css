@@ -94,6 +94,41 @@
   color: #ffe4a0;
 }
 
+.games-card-art--mercy {
+  background:
+    radial-gradient(circle at 50% 44%, rgba(255, 233, 176, .36), transparent 22%),
+    linear-gradient(155deg, #a83232, #5f2a20 60%, #2e1a24);
+  color: #ffe9b0;
+}
+
+.games-card-art--judas {
+  background:
+    radial-gradient(circle at 50% 44%, rgba(223, 240, 200, .3), transparent 22%),
+    linear-gradient(155deg, #2e7d46, #1d4030 60%, #14261e);
+  color: #dff0c8;
+}
+
+.games-card-art--nino {
+  background:
+    radial-gradient(circle at 50% 44%, rgba(255, 217, 226, .34), transparent 22%),
+    linear-gradient(155deg, #c96a86, #6e3a4a 58%, #33202e);
+  color: #ffd9e2;
+}
+
+.games-card-art--immaculate {
+  background:
+    radial-gradient(circle at 50% 44%, rgba(216, 236, 255, .32), transparent 22%),
+    linear-gradient(155deg, #4a86c5, #274a6e 58%, #1a2c44);
+  color: #d8ecff;
+}
+
+.games-card-art--sacred {
+  background:
+    radial-gradient(circle at 50% 44%, rgba(255, 217, 201, .32), transparent 22%),
+    linear-gradient(155deg, #b03a30, #5f1f1a 60%, #2c1214);
+  color: #ffd9c9;
+}
+
 .games-card-copy {
   display: flex;
   flex-direction: column;

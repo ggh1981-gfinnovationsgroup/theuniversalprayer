@@ -522,6 +522,202 @@
       this.beginScene(player, time, Math.PI);
       this.drawOratoryScene(player, children, time, singing, maze);
     }
+
+    drawMazeThemed(maze, theme) {
+      const cellSize = 4;
+      const wallHeight = 0.48;
+      const hasCell = (column, row) => maze.cells.has(`${column},${row}`);
+      const goalCell = theme.goalCell || '5,7';
+
+      for (const cell of maze.cells) {
+        const [column, row] = cell.split(',').map(Number);
+        const x = -12 + column * cellSize;
+        const z = -row * cellSize;
+        const isGoal = `${column},${row}` === goalCell;
+        const floor = (column + row) % 2 ? theme.floor : theme.floorAlt;
+        this.draw('cube', [x, 0.015, z], [cellSize - 0.12, 0.04, cellSize - 0.12], floor);
+        const edges = [
+          { column: column - 1, row, position: [x - 2, wallHeight / 2, z], size: [0.28, wallHeight, cellSize + 0.12] },
+          { column: column + 1, row, position: [x + 2, wallHeight / 2, z], size: [0.28, wallHeight, cellSize + 0.12] },
+          { column, row: row - 1, position: [x, wallHeight / 2, z + 2], size: [cellSize + 0.12, wallHeight, 0.28] },
+          { column, row: row + 1, position: [x, wallHeight / 2, z - 2], size: [cellSize + 0.12, wallHeight, 0.28] },
+        ];
+        edges.forEach((edge, index) => {
+          if (hasCell(edge.column, edge.row) || (isGoal && index === 3)) return;
+          this.draw('cube', edge.position, edge.size, theme.wall);
+          const capPosition = [...edge.position];
+          capPosition[1] = wallHeight + 0.07;
+          this.draw('cube', capPosition, [edge.size[0] * 0.88, 0.12, edge.size[2] * 0.88], theme.trim);
+        });
+      }
+    }
+
+    drawFigure(fig, time) {
+      const { x, z } = fig;
+      const bob = fig.singing
+        ? Math.abs(Math.sin(time / 180 + (fig.index || 0))) * 0.11
+        : Math.sin(time / 320 + (fig.index || 0)) * 0.025;
+      const y = (fig.y || 0) + bob;
+      const skin = fig.skin || '#d9a77f';
+      const hair = fig.hair || '#4a3423';
+      const robe = fig.robe || '#547da5';
+
+      if (fig.size === 'child') {
+        this.draw('sphere', [x, y + 0.02, z], [0.31, 0.025, 0.23], [0.12, 0.2, 0.24]);
+        if (fig.dress) {
+          this.draw('cone', [x, y + 0.4, z], [0.54, 0.76, 0.48], fig.dress);
+          this.draw('sphere', [x, y + 0.52, z], [0.17, 0.21, 0.16], robe);
+          this.draw('sphere', [x - 0.12, y + 0.8, z], [0.075, 0.2, 0.11], hair);
+          this.draw('sphere', [x + 0.12, y + 0.8, z], [0.075, 0.2, 0.11], hair);
+        } else {
+          this.draw('sphere', [x, y + 0.38, z], [0.19, 0.28, 0.18], robe);
+        }
+        this.draw('sphere', [x, y + 0.78, z], [0.19, 0.2, 0.18], skin);
+        this.draw('sphere', [x, y + 0.91, z + 0.01], [0.2, 0.1, 0.19], hair);
+        if (fig.singing) this.draw('sphere', [x, y + 0.76, z - 0.16], [0.045, 0.07, 0.035], '#5a2524');
+        return;
+      }
+
+      this.draw('sphere', [x, y + 0.02, z], [0.48, 0.035, 0.31], [0.12, 0.2, 0.24]);
+      this.draw('sphere', [x, y + 0.62, z], [0.36, 0.58, 0.3], robe);
+      this.draw('sphere', [x, y + 1.28, z], [0.29, 0.3, 0.27], skin);
+      if (fig.hairStyle === 'veil') {
+        const veil = fig.veilColor || '#f2ede2';
+        this.draw('sphere', [x, y + 1.38, z], [0.33, 0.2, 0.32], veil);
+        this.draw('cube', [x, y + 1.05, z + 0.26], [0.44, 0.55, 0.07], veil);
+      } else if (fig.hairStyle === 'hat') {
+        this.draw('cylinder', [x, y + 1.52, z], [0.36, 0.1, 0.36], hair);
+        this.draw('sphere', [x, y + 1.47, z], [0.27, 0.16, 0.26], hair);
+      } else {
+        this.draw('sphere', [x, y + 1.49, z], [0.3, 0.1, 0.29], hair);
+        this.draw('sphere', [x, y + 1.2, z + 0.22], [0.25, 0.12, 0.1], hair);
+      }
+      if (fig.beard) this.draw('sphere', [x, y + 1.14, z - 0.2], [0.2, 0.14, 0.09], hair);
+      const accessories = Array.isArray(fig.accessory) ? fig.accessory : [fig.accessory];
+      if (accessories.includes('medallion')) {
+        this.draw('cylinder', [x, y + 0.82, z - 0.28], [0.3, 0.05, 0.3], '#d7ad50', [Math.PI / 2, 0, 0], 0.35);
+        this.draw('sphere', [x, y + 0.82, z - 0.31], [0.09, 0.11, 0.04], '#f6e3ae', [0, 0, 0], 0.3);
+      }
+      if (accessories.includes('cross')) {
+        this.draw('cube', [x, y + 0.86, z - 0.29], [0.07, 0.3, 0.04], '#d7ad50', [0, 0, 0], 0.3);
+        this.draw('cube', [x, y + 0.92, z - 0.29], [0.2, 0.07, 0.04], '#d7ad50', [0, 0, 0], 0.3);
+      }
+      if (accessories.includes('book')) {
+        this.draw('cube', [x - 0.3, y + 0.2, z - 0.02], [0.25, 0.14, 0.4], '#40343a');
+        this.draw('cube', [x + 0.3, y + 0.2, z - 0.02], [0.25, 0.14, 0.4], '#40343a');
+      }
+      if (accessories.includes('flame')) {
+        const flicker = 1 + Math.sin(time / 110 + x) * 0.1;
+        this.draw('cone', [x, y + 1.78, z], [0.17, 0.34 * flicker, 0.17], '#ff8a3c', [0, 0, 0], 0.55);
+        this.draw('sphere', [x, y + 1.72, z], [0.08, 0.1, 0.08], '#ffd23c', [0, 0, 0], 0.7);
+      }
+      if (fig.singing) this.draw('sphere', [x, y + 1.22, z - 0.26], [0.05, 0.08, 0.04], '#5a2524');
+    }
+
+    drawShrine(goal, theme, time, completed) {
+      const gx = goal.x;
+      const gz = goal.z - 4;
+      this.draw('cube', [gx, 2.2, gz], [8, 4.4, 1.1], theme.shrineWall || '#d9c09a');
+      this.draw('cube', [gx, 1.35, gz + 0.57], [1.7, 2.7, 0.1], '#654a38');
+      this.draw('cube', [gx - 2.7, 2.3, gz + 0.58], [1.05, 1.5, 0.1], theme.shrineWindow || '#83b9c3');
+      this.draw('cube', [gx + 2.7, 2.3, gz + 0.58], [1.05, 1.5, 0.1], theme.shrineWindow || '#83b9c3');
+      this.draw('cone', [gx, 4.8, gz], [9, 2.3, 2.2], theme.shrineRoof || '#a84e40');
+      this.draw('cylinder', [gx, 6.35, gz], [0.16, 1.1, 0.16], '#d7ad50');
+      this.draw('cube', [gx, 6.75, gz], [0.9, 0.14, 0.14], '#d7ad50');
+
+      const sz = goal.z - 1.6;
+      const front = sz + 0.12;
+      const glow = completed ? 0.8 : 0.3;
+      this.draw('cube', [gx, 0.5, sz], [1.7, 1.0, 0.7], theme.pedestal || '#9a8a72');
+
+      if (theme.emblem === 'mercy') {
+        this.draw('cube', [gx, 2.35, sz], [2.0, 2.5, 0.1], '#f7f3e6');
+        this.draw('sphere', [gx, 2.4, front], [0.4, 0.72, 0.13], '#fdfaf0');
+        this.draw('sphere', [gx, 3.2, front], [0.19, 0.21, 0.13], '#eec39a');
+        this.draw('sphere', [gx, 3.38, front], [0.21, 0.1, 0.14], '#7a5230');
+        if (completed) {
+          this.draw('cube', [gx - 0.85, 1.05, front + 0.05], [0.32, 2.7, 0.07], '#fdf6d8', [0, 0, 0.45], 0.9);
+          this.draw('cube', [gx + 0.85, 1.05, front + 0.05], [0.32, 2.7, 0.07], '#e5484d', [0, 0, -0.45], 0.9);
+        }
+      } else if (theme.emblem === 'sacredHeart' || theme.emblem === 'immaculateHeart') {
+        const heartColor = theme.emblem === 'sacredHeart' ? '#c62f3b' : '#f3e9f6';
+        if (theme.emblem === 'immaculateHeart') {
+          this.draw('cube', [gx, 2.35, sz], [2.3, 2.7, 0.08], '#7fb2d9');
+          for (let i = 0; i < 8; i++) {
+            const angle = i / 8 * Math.PI * 2;
+            this.draw('sphere', [gx + Math.cos(angle) * 1.32, 2.35 + Math.sin(angle) * 1.5, front], [0.16, 0.14, 0.14], i % 2 ? '#e86a8a' : '#f6f1e7', [0, 0, 0], 0.3);
+          }
+        }
+        this.draw('sphere', [gx - 0.28, 2.5, front], [0.5, 0.48, 0.18], heartColor, [0, 0, 0], glow);
+        this.draw('sphere', [gx + 0.28, 2.5, front], [0.5, 0.48, 0.18], heartColor, [0, 0, 0], glow);
+        this.draw('cone', [gx, 1.98, front], [1.0, 1.1, 0.38], heartColor, [Math.PI, 0, 0], glow);
+        this.draw('cone', [gx, 3.05, front], [0.26, 0.5, 0.26], '#ff8a3c', [0, 0, 0], 0.6);
+        this.draw('cube', [gx, 3.42, front], [0.08, 0.4, 0.08], '#d7ad50');
+        this.draw('cube', [gx, 3.48, front], [0.28, 0.08, 0.08], '#d7ad50');
+      } else if (theme.emblem === 'medallion') {
+        this.draw('cylinder', [gx, 2.3, sz], [1.7, 0.1, 1.7], '#d7ad50', [Math.PI / 2, 0, 0], glow);
+        this.draw('sphere', [gx, 2.3, front], [0.36, 0.44, 0.12], '#eec39a');
+        this.draw('sphere', [gx, 2.68, front], [0.38, 0.16, 0.13], '#4a3423');
+        this.draw('sphere', [gx, 2.08, front], [0.3, 0.18, 0.1], '#6b4a2f');
+      } else if (theme.emblem === 'divinoNino') {
+        if (completed) this.draw('sphere', [gx, 2.32, sz - 0.14], [0.32, 0.32, 0.06], '#ffe9a0', [0, 0, 0], 0.85);
+        this.drawFigure({ x: gx, z: front, y: 1.0, size: 'child', robe: '#e8a0b4', dress: '#e8a0b4', hair: '#4a3423', index: 9 }, time);
+        this.draw('sphere', [gx - 0.3, 2.2, front], [0.09, 0.24, 0.08], '#e8a0b4', [0, 0, -0.7]);
+        this.draw('sphere', [gx + 0.3, 2.2, front], [0.09, 0.24, 0.08], '#e8a0b4', [0, 0, 0.7]);
+      }
+    }
+
+    drawCollectible(item, time) {
+      const bob = Math.sin(time / 300 + item.x * 1.7 + item.z) * 0.14;
+      const base = 0.62 + bob;
+      if (item.type === 'ray') {
+        this.draw('sphere', [item.x, base + 0.25, item.z], [0.17, 0.55, 0.17], item.color, [0, 0, 0], 0.8);
+        this.draw('sphere', [item.x, base + 0.25, item.z], [0.08, 0.3, 0.08], '#fffbe8', [0, 0, 0], 0.9);
+      } else if (item.type === 'flame') {
+        const flicker = 1 + Math.sin(time / 100 + item.x * 2.1) * 0.09;
+        this.draw('cone', [item.x, base + 0.28, item.z], [0.36, 0.66 * flicker, 0.36], '#ff7a33', [0, 0, 0], 0.55);
+        this.draw('sphere', [item.x, base + 0.2, item.z], [0.15, 0.2, 0.15], '#ffd23c', [0, 0, 0], 0.85);
+        this.draw('cylinder', [item.x, 0.16, item.z], [0.3, 0.32, 0.3], '#8a6a42');
+      } else if (item.type === 'rose') {
+        this.draw('cylinder', [item.x, 0.3, item.z], [0.05, 0.6, 0.05], '#3f7a3a');
+        this.draw('sphere', [item.x - 0.12, 0.42, item.z], [0.14, 0.07, 0.1], '#4a9d68');
+        this.draw('sphere', [item.x + 0.12, 0.5, item.z], [0.14, 0.07, 0.1], '#4a9d68');
+        this.draw('sphere', [item.x, base + 0.18, item.z], [0.25, 0.21, 0.25], item.color, [0, 0, 0], 0.35);
+        this.draw('sphere', [item.x, base + 0.3, item.z], [0.15, 0.12, 0.15], item.color, [0, 0, 0], 0.4);
+      }
+    }
+
+    drawEndingFx(theme, goal, time) {
+      const positions = [
+        [-2.2, 3.4], [-1.1, 3.9], [0, 4.2], [1.1, 3.9], [2.2, 3.4],
+      ];
+      positions.forEach(([dx, y], index) => {
+        const float = Math.sin(time / 240 + index * 1.3) * 0.18;
+        if (theme.particle === 'flame') {
+          this.draw('cone', [goal.x + dx, y + float, goal.z - 1.2], [0.2, 0.4, 0.2], '#ff8a3c', [0, 0, 0], 0.6);
+        } else if (theme.particle === 'heart') {
+          this.draw('sphere', [goal.x + dx, y + float, goal.z - 1.2], [0.17, 0.17, 0.17], '#e5484d', [0, 0, 0], 0.55);
+        } else if (theme.particle === 'petal') {
+          this.draw('sphere', [goal.x + dx, y + float, goal.z - 1.2], [0.16, 0.1, 0.16], index % 2 ? '#e86a8a' : '#f6f1e7', [0, 0, 0], 0.4);
+        } else {
+          this.draw('sphere', [goal.x + dx, y + float, goal.z - 1.2], [0.15, 0.2, 0.12], index % 2 ? '#f2cc63' : '#fff1b1', [0, 0, index % 2 ? -0.5 : 0.5], 0.5);
+        }
+      });
+    }
+
+    renderMazeQuest(player, world, time, maze, theme) {
+      this.beginScene(player, time, Math.PI);
+      this.draw('cube', [0, -0.5, -14], [100, 1, 100], theme.ground);
+      this.drawMazeThemed(maze, theme);
+      (theme.trees || []).forEach(([x, z, size]) => this.drawTree(x, 0, z, size || 0.9));
+      this.drawShrine(world.goal, theme, time, world.completed);
+      for (const item of world.items) {
+        if (!item.taken) this.drawCollectible(item, time);
+      }
+      for (const npc of world.npcs) this.drawFigure(npc.figure, time);
+      this.drawFigure(world.playerFigure, time);
+      if (world.completed) this.drawEndingFx(theme, world.goal, time);
+    }
   }
 
   window.Game3DRenderer = Renderer;
