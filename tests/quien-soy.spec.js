@@ -29,6 +29,7 @@ test('quien soy: las nueve declaraciones en español', async ({ page }) => {
 
 test('quien soy: el nombre personaliza la declaración y el enlace de WhatsApp', async ({ page }) => {
   await page.goto('/quien-soy/');
+  await expect(page.locator('#qs-name')).toHaveAttribute('placeholder', 'Escribe tu nombre');
   await page.fill('#qs-name', 'Guillermo');
   await expect(page.locator('#qs-preview')).toContainText('Yo soy Guillermo.');
   await expect(page.locator('#qs-preview')).toContainText('Nunca estoy solo');

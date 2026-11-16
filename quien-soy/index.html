@@ -115,7 +115,9 @@
 <p data-lang="en">Write your name and see your personalized declaration. Then send it on WhatsApp to your friends together with the link to this page, so they can make their own too.</p>
 <label for="qs-name" data-lang="es">Tu nombre</label>
 <label for="qs-name" data-lang="en">Your name</label>
-<input id="qs-name" type="text" maxlength="40" autocomplete="name" placeholder="Guillermo">
+<input id="qs-name" type="text" maxlength="40" autocomplete="name" placeholder="Escribe tu nombre">
+<p class="qs-note" data-lang="es">Con tu nombre, la declaración sale personalizada. Si lo dejas vacío, se comparte en forma general.</p>
+<p class="qs-note" data-lang="en">With your name, the declaration comes out personalized. If you leave it empty, it is shared in its general form.</p>
 <div class="qs-preview" id="qs-preview"></div>
 <a class="qs-wa" id="qs-wa" href="https://wa.me/?text=" target="_blank" rel="noopener"><span data-lang="es">Compartir por WhatsApp</span><span data-lang="en">Share on WhatsApp</span></a>
 <p class="qs-note" data-lang="es">Tu nombre no sale de tu teléfono y no se guarda en ningún servidor: solo viaja dentro del mensaje que tú decidas enviar.</p>
@@ -190,6 +192,7 @@
     var t = buildText();
     preview.textContent = t;
     wa.href = 'https://wa.me/?text=' + encodeURIComponent(t);
+    input.placeholder = lang() === 'en' ? 'Write your name' : 'Escribe tu nombre';
   }
   window.addEventListener('tup:langchange', update);
   input.addEventListener('input', update);
