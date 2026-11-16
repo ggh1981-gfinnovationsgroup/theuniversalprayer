@@ -59,6 +59,7 @@
     { id: 'salmosdiarios', href: '/salmos-diarios/', labels: { es: 'Salmos para cada momento', en: 'Psalms for every moment' }, icon: '📖' },
     { id: 'sabiduria', href: '/sabiduria/', labels: { es: 'Sabiduría para cada situación', en: 'Wisdom for every situation' }, icon: '🧭' },
     { id: 'talentos', href: '/talentos/', labels: { es: 'Talentos que dan fruto', en: 'Talents That Bear Fruit' }, icon: '🎁' },
+    { id: 'quien-soy', href: '/quien-soy/', labels: { es: 'Quién soy', en: 'Who I Am' }, icon: '🪞' },
     { id: 'medallabenito', href: '/medalla-san-benito/', labels: { es: 'Medalla de San Benito', en: 'Medal of Saint Benedict' }, icon: '🪙' },
     { id: 'medallamilagrosa', href: '/medalla-milagrosa/', labels: { es: 'Medalla Milagrosa', en: 'Miraculous Medal' }, icon: '🌸' },
     { id: 'misericordia', href: '/misericordia/', labels: { es: 'Misericordia', en: 'Mercy' }, icon: '🫂' },

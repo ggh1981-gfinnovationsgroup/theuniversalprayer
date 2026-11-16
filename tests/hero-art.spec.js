@@ -6,7 +6,7 @@ const { test, expect } = require('@playwright/test');
 const ROOT = path.resolve(__dirname, '..');
 const PAGES = ['tentaciones', 'dopamina', 'insiste-y-liberate', 'vuelvo-al-padre', 'nomascastigo', 'emergencias', 'control-y-confianza',
   'maria', 'rosario', 'medalla-milagrosa', 'medalla-san-benito', 'novena-sagrado-corazon', 'viacrucis', 'salmos-diarios',
-  'diablo', 'renacer-en-cristo', 'oraciones', 'musica', 'meses', 'bella-virtud', 'talentos'];
+  'diablo', 'renacer-en-cristo', 'oraciones', 'musica', 'meses', 'bella-virtud', 'talentos', 'quien-soy'];
 const SW = fs.readFileSync(path.join(ROOT, 'sw.js'), 'utf8');
 
 test('cada ilustración es un SVG estático, ligero y precacheado', () => {
