@@ -74,6 +74,29 @@ test('quien soy: el nombre se guarda en el dispositivo y se recuerda al volver',
   await expect(page.locator('#qs-final-name')).toHaveText('Soy Guillermo');
 });
 
+test('quien soy: si es mujer, la declaración sale en femenino y se guarda', async ({ page }) => {
+  await page.goto('/quien-soy/');
+  await page.fill('#qs-name', 'María');
+  await page.locator('#qs-gf').click();
+  await expect(page.locator('#qs-preview')).toContainText('soy amada por Dios');
+  await expect(page.locator('#qs-preview')).toContainText('Nunca estoy sola. Soy María.');
+  await expect(page.getByRole('button', { name: 'Soy amada por Dios' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Soy hija de Dios' })).toBeVisible();
+  await page.reload();
+  await expect(page.locator('#qs-preview')).toContainText('soy amada por Dios');
+});
+
+test('quien soy: la imagen de la declaración se crea en la página', async ({ page }) => {
+  await page.goto('/quien-soy/');
+  await page.fill('#qs-name', 'Guillermo');
+  await page.locator('#qs-img-make').click();
+  await expect(page.locator('#qs-img-preview')).toBeVisible();
+  const w = await page.locator('#qs-img-preview').evaluate(img => img.naturalWidth);
+  expect(w).toBe(1080);
+  const href = await page.locator('#qs-img-download').getAttribute('href');
+  expect(href).toContain('blob:');
+});
+
 test('quien soy: el menú incluye la página', async ({ page }) => {
   await page.goto('/quien-soy/');
   await page.evaluate(() => window.scrollTo(0, 0));

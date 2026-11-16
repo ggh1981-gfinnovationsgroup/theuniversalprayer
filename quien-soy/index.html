@@ -27,6 +27,14 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
 .qs-final{margin:1.2rem 0 .5rem;padding:1.4rem 1.3rem;border-radius:14px;text-align:center;background:rgba(201,168,76,.1);border:1px solid var(--gold)}
 .qs-final-name{font-family:var(--font-serif);font-size:1.9rem;color:var(--gold-light);margin:.1rem 0 .4rem}
 .qs-final p{line-height:1.65;margin:.2rem 0}
+.qs-gender{margin-top:1rem}
+.qs-gender-label{margin:.2rem 0 .5rem}
+.qs-gbtn{padding:.5rem 1.3rem;border-radius:999px;border:1px solid var(--gold-dim);background:rgba(201,168,76,.06);color:var(--gold-light);font-family:var(--font-sans);font-size:1rem;cursor:pointer;margin:0 .4rem .4rem 0}
+.qs-gbtn.active{background:rgba(201,168,76,.22);outline:2px solid var(--gold)}
+.qs-imgbox{margin-top:1.8rem;text-align:center}
+.qs-imgbtn{display:inline-block;margin:.4rem;padding:.8rem 1.4rem;border-radius:999px;border:1px solid var(--gold);background:rgba(201,168,76,.1);color:var(--gold-light);font-family:var(--font-sans);font-size:1rem;cursor:pointer;text-decoration:none}
+.qs-img-preview{max-width:320px;width:100%;border-radius:12px;border:1px solid var(--gold-dim);margin:1rem auto;display:block}
+.qs-img-preview[hidden]{display:none}
 .qs-tool{margin:1.4rem 0;padding:1.5rem;border-radius:18px;background:linear-gradient(160deg,rgba(37,211,102,.10),rgba(201,168,76,.06));border:1px solid var(--gold-dim)}
 .qs-tool h2{font-family:var(--font-serif);color:var(--gold-light);margin:.2rem 0 .6rem;font-size:1.5rem}
 .qs-tool label{display:block;font-weight:700;margin:.8rem 0 .35rem}
@@ -95,6 +103,11 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
 <input id="qs-name" type="text" maxlength="40" autocomplete="name" placeholder="Escribe tu nombre" style="width:100%;box-sizing:border-box;padding:.8rem 1rem;border-radius:12px;border:1px solid var(--gold-dim);background:rgba(0,0,0,.25);color:inherit;font-size:1.1rem;font-family:var(--font-sans)">
 <p class="qs-note" data-lang="es">Con tu nombre, cada explicación y la declaración para compartir salen personalizadas. Si lo dejas vacío, todo se muestra en forma general.</p>
 <p class="qs-note" data-lang="en">With your name, every explanation and the declaration you share come out personalized. If you leave it empty, everything is shown in its general form.</p>
+<div class="qs-gender">
+<p class="qs-gender-label"><span data-lang="es">La declaración se ajusta a ti:</span><span data-lang="en">The declaration adjusts to you:</span></p>
+<button type="button" class="qs-gbtn" id="qs-gm"><span data-lang="es">Hombre</span><span data-lang="en">Man</span></button>
+<button type="button" class="qs-gbtn" id="qs-gf"><span data-lang="es">Mujer</span><span data-lang="en">Woman</span></button>
+</div>
 </section>
 
 <section class="qs-card">
@@ -104,17 +117,17 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
 <p data-lang="en">Read it slowly, in the first person, as a truth declared until the heart believes it. Tap each declaration to see what it means, explained with your name.</p>
 <div class="qs-grid">
 <div class="qs-aff-card" data-card="1">
-<button type="button" class="qs-aff" data-aff="1" data-lang="es">Soy amado por Dios</button>
+<button type="button" class="qs-aff" data-aff="1" data-lang="es" data-masc="Soy amado por Dios" data-fem="Soy amada por Dios">Soy amado por Dios</button>
 <button type="button" class="qs-aff" data-aff="1" data-lang="en">I am loved by God</button>
 <div class="qs-aff-explain" hidden></div>
 </div>
 <div class="qs-aff-card" data-card="2">
-<button type="button" class="qs-aff" data-aff="2" data-lang="es">Soy escogido</button>
+<button type="button" class="qs-aff" data-aff="2" data-lang="es" data-masc="Soy escogido" data-fem="Soy escogida">Soy escogido</button>
 <button type="button" class="qs-aff" data-aff="2" data-lang="en">I am chosen</button>
 <div class="qs-aff-explain" hidden></div>
 </div>
 <div class="qs-aff-card" data-card="3">
-<button type="button" class="qs-aff" data-aff="3" data-lang="es">Soy perdonado</button>
+<button type="button" class="qs-aff" data-aff="3" data-lang="es" data-masc="Soy perdonado" data-fem="Soy perdonada">Soy perdonado</button>
 <button type="button" class="qs-aff" data-aff="3" data-lang="en">I am forgiven</button>
 <div class="qs-aff-explain" hidden></div>
 </div>
@@ -139,12 +152,12 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
 <div class="qs-aff-explain" hidden></div>
 </div>
 <div class="qs-aff-card" data-card="8">
-<button type="button" class="qs-aff" data-aff="8" data-lang="es">Soy hijo de Dios</button>
+<button type="button" class="qs-aff" data-aff="8" data-lang="es" data-masc="Soy hijo de Dios" data-fem="Soy hija de Dios">Soy hijo de Dios</button>
 <button type="button" class="qs-aff" data-aff="8" data-lang="en">I am a child of God</button>
 <div class="qs-aff-explain" hidden></div>
 </div>
 <div class="qs-aff-card" data-card="9">
-<button type="button" class="qs-aff" data-aff="9" data-lang="es">Nunca estoy solo</button>
+<button type="button" class="qs-aff" data-aff="9" data-lang="es" data-masc="Nunca estoy solo" data-fem="Nunca estoy sola">Nunca estoy solo</button>
 <button type="button" class="qs-aff" data-aff="9" data-lang="en">I am never alone</button>
 <div class="qs-aff-explain" hidden></div>
 </div>
@@ -167,6 +180,16 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
 <a class="qs-wa" id="qs-wa" href="https://wa.me/?text=" target="_blank" rel="noopener"><span data-lang="es">Compartir por WhatsApp</span><span data-lang="en">Share on WhatsApp</span></a>
 <p class="qs-note" data-lang="es">Tu nombre se guarda solo en tu dispositivo, para recordarte en tu próxima visita, y nunca se envía a ningún servidor: solo viaja dentro del mensaje que tú decidas compartir.</p>
 <p class="qs-note" data-lang="en">Your name is saved only on your device, to remember you on your next visit, and is never sent to any server: it only travels inside the message you choose to share.</p>
+<div class="qs-imgbox">
+<p data-lang="es">¿Prefieres compartir una imagen en vez de solo texto? Créala aquí mismo, con tu declaración y tu nombre, en los colores de esta página. Se dibuja en tu propio teléfono, sin servidores.</p>
+<p data-lang="en">Would you rather share an image instead of plain text? Create it right here, with your declaration and your name, in the colors of this page. It is drawn on your own phone, with no servers involved.</p>
+<button type="button" class="qs-imgbtn" id="qs-img-make"><span data-lang="es">Crear mi imagen</span><span data-lang="en">Create my image</span></button>
+<img id="qs-img-preview" class="qs-img-preview" alt="Imagen de mi declaración" hidden>
+<div id="qs-img-actions" hidden>
+<button type="button" class="qs-imgbtn" id="qs-img-share"><span data-lang="es">Compartir imagen</span><span data-lang="en">Share image</span></button>
+<a class="qs-imgbtn" id="qs-img-download" download="quien-soy.png"><span data-lang="es">Descargar imagen</span><span data-lang="en">Download image</span></a>
+</div>
+</div>
 </section>
 
 <section class="qs-close">
@@ -221,6 +244,10 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
   var preview = document.getElementById('qs-preview');
   var wa = document.getElementById('qs-wa');
   var currentAff = null;
+  var GENDER_KEY = 'tup_genero';
+  var gender = '';
+  try { gender = localStorage.getItem(GENDER_KEY) || ''; } catch(e){}
+  function isFem(){ return gender === 'f'; }
   var EXPLAIN = {
     es: {
       1: ['Soy amado por Dios', 'esto quiere decir que el amor de Dios por ti no depende de tu día, de tu humor ni de tu historial. Él te amó primero, cuando aún no tenías nada que ofrecerle, y ese amor no se retira cuando fallas. Eres precioso ante sus ojos, de gran precio, y él te ama, como dice Isaías 43.'],
@@ -247,14 +274,28 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
   };
   function lang(){ try { return localStorage.getItem('tup_lang') || 'es'; } catch(e){ return 'es'; } }
   function name(){ return (input.value || '').trim(); }
-  function buildText(){
-    var n = name();
+  function declBase(){
     if (lang() === 'en') {
-      return 'In Christ, I am loved by God. I am chosen. I am forgiven. I am free. I am God\u2019s masterpiece. I am never alone.' + (n ? ' I am ' + n + '.' : '') + '\n' +
+      return 'In Christ, I am loved by God. I am chosen. I am forgiven. I am free. I am God\u2019s masterpiece. I am never alone.';
+    }
+    if (isFem()) {
+      return 'En Cristo, soy amada por Dios. Soy escogida. Soy perdonada. Soy libre. Soy obra maestra de Dios. Nunca estoy sola.';
+    }
+    return 'En Cristo, soy amado por Dios. Soy escogido. Soy perdonado. Soy libre. Soy obra maestra de Dios. Nunca estoy solo.';
+  }
+  function declText(){
+    var n = name();
+    var b = declBase();
+    if (n) b += (lang() === 'en' ? ' I am ' : ' Soy ') + n + '.';
+    return b;
+  }
+  function buildText(){
+    if (lang() === 'en') {
+      return declText() + '\n' +
         '\u201CFor we are his handiwork, created in Christ Jesus\u201D (Ephesians 2:10).\n' +
         'Make your own declaration here: ' + PAGE_URL;
     }
-    return 'En Cristo, soy amado por Dios. Soy escogido. Soy perdonado. Soy libre. Soy obra maestra de Dios. Nunca estoy solo.' + (n ? ' Soy ' + n + '.' : '') + '\n' +
+    return declText() + '\n' +
       '\u00ABSomos, pues, obra suya. Dios nos ha creado en Cristo Jes\u00FAs\u00BB (Efesios 2,10).\n' +
       'Haz tu propia declaraci\u00F3n aqu\u00ED: ' + PAGE_URL;
   }
@@ -272,7 +313,11 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
     var item = EXPLAIN[lang()][currentAff];
     var n = name();
     var ex = card.querySelector('.qs-aff-explain');
-    ex.textContent = (n ? n + ', ' : '') + item[1];
+    var body = item[1];
+    if (isFem() && lang() === 'es') {
+      body = body.replace('Eres precioso', 'Eres preciosa').replace('Ser escogido', 'Ser escogida').replace('extranjero ni forastero', 'extranjera ni forastera');
+    }
+    ex.textContent = (n ? n + ', ' : '') + body;
     ex.hidden = false;
     card.classList.add('active');
   }
@@ -283,6 +328,7 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
     input.placeholder = lang() === 'en' ? 'Write your name' : 'Escribe tu nombre';
     document.getElementById('qs-final-name').textContent = n2();
     function n2(){ var v = name(); return v ? ((lang() === 'en' ? 'I am ' : 'Soy ') + v) : (lang() === 'en' ? 'I am ______' : 'Soy ______'); }
+    applyGender();
     renderExplain();
   }
   try {
@@ -302,6 +348,93 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
       currentAff = (currentAff === aff) ? null : aff;
       renderExplain();
     });
+  });
+  function applyGender(){
+    document.getElementById('qs-gm').classList.toggle('active', gender === 'm');
+    document.getElementById('qs-gf').classList.toggle('active', gender === 'f');
+    document.querySelectorAll('.qs-aff[data-fem]').forEach(function(b){
+      b.textContent = isFem() ? b.getAttribute('data-fem') : b.getAttribute('data-masc');
+    });
+  }
+  function setGender(g){
+    gender = g;
+    try { localStorage.setItem(GENDER_KEY, g); } catch(e){}
+    update();
+  }
+  document.getElementById('qs-gm').addEventListener('click', function(){ setGender('m'); });
+  document.getElementById('qs-gf').addEventListener('click', function(){ setGender('f'); });
+  var imgBlob = null;
+  function wrapText(ctx, text, maxWidth){
+    var words = text.split(' ');
+    var lines = [];
+    var line = '';
+    words.forEach(function(w){
+      var test = line ? line + ' ' + w : w;
+      if (ctx.measureText(test).width > maxWidth && line) { lines.push(line); line = w; }
+      else line = test;
+    });
+    if (line) lines.push(line);
+    return lines;
+  }
+  function drawImage(){
+    var canvas = document.createElement('canvas');
+    canvas.width = 1080; canvas.height = 1350;
+    var ctx = canvas.getContext('2d');
+    var en = lang() === 'en';
+    var grad = ctx.createLinearGradient(0, 0, 0, 1350);
+    grad.addColorStop(0, '#1a160e'); grad.addColorStop(1, '#0d0b07');
+    ctx.fillStyle = grad; ctx.fillRect(0, 0, 1080, 1350);
+    ctx.strokeStyle = '#c9a84c'; ctx.lineWidth = 4; ctx.strokeRect(36, 36, 1008, 1278);
+    ctx.lineWidth = 1.5; ctx.strokeRect(52, 52, 976, 1246);
+    ctx.strokeStyle = '#e8c97a'; ctx.lineWidth = 6;
+    ctx.beginPath(); ctx.moveTo(540, 108); ctx.lineTo(540, 188); ctx.moveTo(502, 138); ctx.lineTo(578, 138); ctx.stroke();
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#e8c97a';
+    ctx.font = '58px Georgia, "Times New Roman", serif';
+    ctx.fillText(en ? 'Who I Am in Christ' : 'Qui\u00E9n soy en Cristo', 540, 268);
+    ctx.strokeStyle = '#c9a84c'; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(340, 302); ctx.lineTo(740, 302); ctx.stroke();
+    ctx.fillStyle = '#f5ead2';
+    ctx.font = '43px Georgia, "Times New Roman", serif';
+    var y = 392;
+    wrapText(ctx, declBase(), 860).forEach(function(l){ ctx.fillText(l, 540, y); y += 62; });
+    var n = name();
+    if (n) {
+      y += 18;
+      ctx.fillStyle = '#e8c97a';
+      ctx.font = '76px Georgia, "Times New Roman", serif';
+      ctx.fillText((en ? 'I am ' : 'Soy ') + n, 540, y);
+      y += 62;
+    }
+    y += 10;
+    ctx.fillStyle = '#e8c97a';
+    ctx.font = 'italic 35px Georgia, "Times New Roman", serif';
+    var verse = en ? '\u201CFor we are his handiwork, created in Christ Jesus\u201D (Ephesians 2:10)' : '\u00ABSomos, pues, obra suya. Dios nos ha creado en Cristo Jes\u00FAs\u00BB (Efesios 2,10)';
+    wrapText(ctx, verse, 820).forEach(function(l){ ctx.fillText(l, 540, y); y += 50; });
+    ctx.fillStyle = '#c9a84c';
+    ctx.font = '30px Verdana, sans-serif';
+    ctx.fillText('theuniversalprayer.com/quien-soy', 540, 1248);
+    return canvas;
+  }
+  document.getElementById('qs-img-make').addEventListener('click', function(){
+    var make = function(){
+      drawImage().toBlob(function(blob){
+        imgBlob = blob;
+        var url = URL.createObjectURL(blob);
+        var prev = document.getElementById('qs-img-preview');
+        prev.src = url; prev.hidden = false;
+        document.getElementById('qs-img-download').href = url;
+        document.getElementById('qs-img-actions').hidden = false;
+        var f = new File([blob], 'quien-soy.png', { type: 'image/png' });
+        document.getElementById('qs-img-share').hidden = !(navigator.canShare && navigator.canShare({ files: [f] }));
+      }, 'image/png');
+    };
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(make); else make();
+  });
+  document.getElementById('qs-img-share').addEventListener('click', function(){
+    if (!imgBlob) return;
+    var f = new File([imgBlob], 'quien-soy.png', { type: 'image/png' });
+    navigator.share({ files: [f], text: buildText() }).catch(function(){});
   });
   window.addEventListener('tup:langchange', update);
   update();
