@@ -2593,7 +2593,7 @@ body {
   border: 1px solid var(--border);
   cursor: pointer;
   font-size: 0.95rem;
-  font-family: var(--font-body);
+  font-family: var(--font-sans);
   transition: all var(--transition);
   background: var(--bg-card);
   color: var(--white);
