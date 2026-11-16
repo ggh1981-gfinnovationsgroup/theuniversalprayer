@@ -31,7 +31,8 @@ test('quien soy: el nombre personaliza la declaración y el enlace de WhatsApp',
   await page.goto('/quien-soy/');
   await expect(page.locator('#qs-name')).toHaveAttribute('placeholder', 'Escribe tu nombre');
   await page.fill('#qs-name', 'Guillermo');
-  await expect(page.locator('#qs-preview')).toContainText('Nunca estoy solo. Soy Guillermo.');
+  await expect(page.locator('#qs-preview')).toContainText('• Nunca estoy solo');
+  await expect(page.locator('#qs-preview')).toContainText('• Soy Guillermo');
   await expect(page.locator('#qs-final-name')).toHaveText('Soy Guillermo');
   await expect(page.locator('#qs-preview')).toContainText('Nunca estoy solo');
   const href = await page.locator('#qs-wa').getAttribute('href');
@@ -47,7 +48,7 @@ test('quien soy: en inglés la declaración y el botón cambian de idioma', asyn
   await page.locator('#langToggle').click();
   await expect(page.getByText('For we are his handiwork, created in Christ Jesus for the good works')).toBeVisible();
   await page.fill('#qs-name', 'William');
-  await expect(page.locator('#qs-preview')).toContainText('I am William.');
+  await expect(page.locator('#qs-preview')).toContainText('• I am William');
   await expect(page.locator('#qs-preview')).toContainText('I am never alone');
   await expect(page.getByText('Share on WhatsApp')).toBeVisible();
 });
@@ -70,7 +71,8 @@ test('quien soy: el nombre se guarda en el dispositivo y se recuerda al volver',
   await page.fill('#qs-name', 'Guillermo');
   await page.reload();
   await expect(page.locator('#qs-name')).toHaveValue('Guillermo');
-  await expect(page.locator('#qs-preview')).toContainText('Nunca estoy solo. Soy Guillermo.');
+  await expect(page.locator('#qs-preview')).toContainText('• Nunca estoy solo');
+  await expect(page.locator('#qs-preview')).toContainText('• Soy Guillermo');
   await expect(page.locator('#qs-final-name')).toHaveText('Soy Guillermo');
 });
 
@@ -78,12 +80,13 @@ test('quien soy: si es mujer, la declaración sale en femenino y se guarda', asy
   await page.goto('/quien-soy/');
   await page.fill('#qs-name', 'María');
   await page.locator('#qs-gf').click();
-  await expect(page.locator('#qs-preview')).toContainText('soy amada por Dios');
-  await expect(page.locator('#qs-preview')).toContainText('Nunca estoy sola. Soy María.');
+  await expect(page.locator('#qs-preview')).toContainText('Soy amada por Dios');
+  await expect(page.locator('#qs-preview')).toContainText('• Nunca estoy sola');
+  await expect(page.locator('#qs-preview')).toContainText('• Soy María');
   await expect(page.getByRole('button', { name: 'Soy amada por Dios' })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Soy hija de Dios' })).toBeVisible();
   await page.reload();
-  await expect(page.locator('#qs-preview')).toContainText('soy amada por Dios');
+  await expect(page.locator('#qs-preview')).toContainText('Soy amada por Dios');
 });
 
 test('quien soy: la imagen de la declaración se crea en la página', async ({ page }) => {

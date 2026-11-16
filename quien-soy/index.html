@@ -274,28 +274,28 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
   };
   function lang(){ try { return localStorage.getItem('tup_lang') || 'es'; } catch(e){ return 'es'; } }
   function name(){ return (input.value || '').trim(); }
-  function declBase(){
+  function declLines(){
     if (lang() === 'en') {
-      return 'In Christ, I am loved by God. I am chosen. I am forgiven. I am free. I am God\u2019s masterpiece. I am never alone.';
+      return ['I am loved by God', 'I am chosen', 'I am forgiven', 'I am free', 'I am God\u2019s masterpiece', 'I am never alone'];
     }
     if (isFem()) {
-      return 'En Cristo, soy amada por Dios. Soy escogida. Soy perdonada. Soy libre. Soy obra maestra de Dios. Nunca estoy sola.';
+      return ['Soy amada por Dios', 'Soy escogida', 'Soy perdonada', 'Soy libre', 'Soy obra maestra de Dios', 'Nunca estoy sola'];
     }
-    return 'En Cristo, soy amado por Dios. Soy escogido. Soy perdonado. Soy libre. Soy obra maestra de Dios. Nunca estoy solo.';
+    return ['Soy amado por Dios', 'Soy escogido', 'Soy perdonado', 'Soy libre', 'Soy obra maestra de Dios', 'Nunca estoy solo'];
   }
   function declText(){
     var n = name();
-    var b = declBase();
-    if (n) b += (lang() === 'en' ? ' I am ' : ' Soy ') + n + '.';
-    return b;
+    var lines = declLines().map(function(l){ return '\u2022 ' + l; });
+    if (n) lines.push('\u2022 ' + (lang() === 'en' ? 'I am ' : 'Soy ') + n);
+    return (lang() === 'en' ? 'In Christ:' : 'En Cristo:') + '\n' + lines.join('\n');
   }
   function buildText(){
     if (lang() === 'en') {
-      return declText() + '\n' +
+      return declText() + '\n\n' +
         '\u201CFor we are his handiwork, created in Christ Jesus\u201D (Ephesians 2:10).\n' +
         'Make your own declaration here: ' + PAGE_URL;
     }
-    return declText() + '\n' +
+    return declText() + '\n\n' +
       '\u00ABSomos, pues, obra suya. Dios nos ha creado en Cristo Jes\u00FAs\u00BB (Efesios 2,10).\n' +
       'Haz tu propia declaraci\u00F3n aqu\u00ED: ' + PAGE_URL;
   }
@@ -394,10 +394,20 @@ button.qs-aff{cursor:pointer;font-family:var(--font-serif);font-size:1.12rem;col
     ctx.fillText(en ? 'Who I Am in Christ' : 'Qui\u00E9n soy en Cristo', 540, 268);
     ctx.strokeStyle = '#c9a84c'; ctx.lineWidth = 2;
     ctx.beginPath(); ctx.moveTo(340, 302); ctx.lineTo(740, 302); ctx.stroke();
+    var y = 380;
+    ctx.fillStyle = '#c9a84c';
+    ctx.font = '40px Georgia, "Times New Roman", serif';
+    ctx.fillText(en ? 'In Christ:' : 'En Cristo:', 540, y);
+    y += 74;
     ctx.fillStyle = '#f5ead2';
     ctx.font = '43px Georgia, "Times New Roman", serif';
-    var y = 392;
-    wrapText(ctx, declBase(), 860).forEach(function(l){ ctx.fillText(l, 540, y); y += 62; });
+    var blines = declLines().map(function(l){ return '\u2022 ' + l; });
+    var bw = 0;
+    blines.forEach(function(l){ bw = Math.max(bw, ctx.measureText(l).width); });
+    var bx = 540 - bw / 2;
+    ctx.textAlign = 'left';
+    blines.forEach(function(l){ ctx.fillText(l, bx, y); y += 62; });
+    ctx.textAlign = 'center';
     var n = name();
     if (n) {
       y += 18;
