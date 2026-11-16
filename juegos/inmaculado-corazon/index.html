@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#1d3247" />
-  <meta name="description" content="Camina con Lucía por el jardín de Fátima, reúne cinco rosas y llévalas al Inmaculado Corazón de María." />
+  <meta name="description" content="Reza el rosario con Lucía en Fátima: toca cada cuenta al cruzar el aro dorado y conviértela en una rosa para el Inmaculado Corazón de María." />
   <title>Inmaculado Corazón de María — The Universal Prayer</title>
   <link rel="canonical" href="https://www.theuniversalprayer.com/juegos/inmaculado-corazon/" />
   <link rel="stylesheet" href="/juego/game.css" />
@@ -33,11 +33,15 @@
           <p class="eyebrow" data-es="FÁTIMA · LOS PASTORCITOS" data-en="FATIMA · THE LITTLE SHEPHERDS">FÁTIMA · LOS PASTORCITOS</p>
           <h1 id="gameTitle" data-es="Inmaculado Corazón de María" data-en="Immaculate Heart of Mary">Inmaculado Corazón de María</h1>
         </div>
-        <div class="quest-counter" aria-live="polite"><span aria-hidden="true">✿</span> <span id="progressCount">0</span><span class="count-divider">/</span>5</div>
+        <div class="quest-counter" aria-live="polite"><span aria-hidden="true">✿</span> <span id="progressCount">0</span><span class="count-divider">/</span>15</div>
       </div>
 
       <div class="game-frame">
         <canvas id="gameCanvas" aria-label="Aventura 3D del Inmaculado Corazón de María en Fátima"></canvas>
+        <div class="rhythm-track" aria-hidden="true">
+          <div class="rhythm-line"></div>
+          <div class="rhythm-ring"></div>
+        </div>
         <div class="quest-hud">
           <p class="npc-name" id="npcName"></p>
           <p class="npc-dialogue" id="npcDialogue" aria-live="polite"></p>
@@ -57,8 +61,8 @@
           <div class="overlay-card">
             <div class="overlay-icon" aria-hidden="true">✿</div>
             <p class="eyebrow" data-es="UN CORAZÓN SIN MANCHA" data-en="A HEART WITHOUT STAIN">UN CORAZÓN SIN MANCHA</p>
-            <h2 id="overlayTitle" data-es="Rosas para el Corazón de María" data-en="Roses for the Heart of Mary">Rosas para el Corazón de María</h2>
-            <p id="overlayMessage" data-es="En Fátima, la Virgen pidió a los pastorcitos rezar el rosario y ofrecerle su amor. Camina con Lucía por el jardín, reúne cinco rosas y llévalas al Corazón Inmaculado de María." data-en="At Fatima, Our Lady asked the little shepherds to pray the rosary and offer her their love. Walk with Lucia through the garden, gather five roses, and bring them to the Immaculate Heart of Mary.">En Fátima, la Virgen pidió a los pastorcitos rezar el rosario y ofrecerle su amor. Camina con Lucía por el jardín, reúne cinco rosas y llévalas al Corazón Inmaculado de María.</p>
+            <h2 id="overlayTitle" data-es="El rosario de las rosas" data-en="The rosary of roses">El rosario de las rosas</h2>
+            <p id="overlayMessage" data-es="En Fátima, la Virgen pidió rezar el rosario. Cada cuenta que pasa es una Ave María: tócala justo cuando cruce el aro dorado y se volverá una rosa para el Corazón de María. Junta 10 rosas o más." data-en="At Fatima, Our Lady asked for the rosary to be prayed. Each passing bead is a Hail Mary: tap it just as it crosses the golden ring and it will become a rose for the Heart of Mary. Gather 10 roses or more.">En Fátima, la Virgen pidió rezar el rosario. Cada cuenta que pasa es una Ave María: tócala justo cuando cruce el aro dorado y se volverá una rosa para el Corazón de María. Junta 10 rosas o más.</p>
             <button class="play-button" id="playButton" type="button" data-es="Comenzar" data-en="Begin">Comenzar</button>
           </div>
         </div>
@@ -72,19 +76,19 @@
               <button type="button" data-key="ArrowRight" aria-label="Mover a la derecha">▶</button>
             </div>
           </div>
-          <button class="interact-touch" id="interactTouch" type="button" aria-label="Interactuar" hidden>AYUDAR</button>
+          <button class="interact-touch" id="interactTouch" type="button" aria-label="Rezar">REZAR</button>
         </div>
       </div>
 
       <div class="game-footer">
-        <p data-es="Mueve: WASD o flechas <span>·</span> Reiniciar: R" data-en="Move: WASD or arrows <span>·</span> Restart: R">Mueve: WASD o flechas <span>·</span> Reiniciar: R</p>
+        <p data-es="Rezar: botón REZAR o Espacio <span>·</span> Reiniciar: R" data-en="Pray: PRAY button or Space <span>·</span> Restart: R">Rezar: botón REZAR o Espacio <span>·</span> Reiniciar: R</p>
         <p class="game-hint" data-es="Cada rosa es una oración ofrecida con amor, como el rosario de los pastorcitos." data-en="Each rose is a prayer offered with love, like the rosary of the little shepherds.">Cada rosa es una oración ofrecida con amor, como el rosario de los pastorcitos.</p>
       </div>
       <p class="visually-hidden" id="gameStatus" role="status" aria-live="polite"></p>
     </section>
   </main>
   <script src="/juego/renderer3d.js"></script>
-  <script src="/juegos/quest-engine.js"></script>
+  <script src="/juegos/rhythm-engine.js"></script>
   <script src="/juegos/inmaculado-corazon/game.js"></script>
 </body>
 </html>

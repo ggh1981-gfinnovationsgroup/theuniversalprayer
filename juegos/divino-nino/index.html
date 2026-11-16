@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#4a2c34" />
-  <meta name="description" content="Camina con el padre Juan del Rizzo por un barrio de Bogotá y acompaña a tres vecinos hasta la capillita del Divino Niño." />
+  <meta name="description" content="Ayuda al padre Juan del Rizzo a llenar una canasta de alegría combinando fichas, junto a la capillita del Divino Niño en un barrio de Bogotá." />
   <title>Divino Niño Jesús — The Universal Prayer</title>
   <link rel="canonical" href="https://www.theuniversalprayer.com/juegos/divino-nino/" />
   <link rel="stylesheet" href="/juego/game.css" />
@@ -33,11 +33,11 @@
           <p class="eyebrow" data-es="BOGOTÁ · 1935" data-en="BOGOTÁ · 1935">BOGOTÁ · 1935</p>
           <h1 id="gameTitle" data-es="Divino Niño Jesús" data-en="Divine Child Jesus">Divino Niño Jesús</h1>
         </div>
-        <div class="quest-counter" aria-live="polite"><span aria-hidden="true">♥</span> <span id="progressCount">0</span><span class="count-divider">/</span>3</div>
+        <div class="quest-counter" aria-live="polite"><span aria-hidden="true">★</span> <span id="progressCount">0</span></div>
       </div>
 
       <div class="game-frame">
-        <canvas id="gameCanvas" aria-label="Aventura 3D del Divino Niño en un barrio de Bogotá"></canvas>
+        <div class="game-stage" id="gameStage" aria-label="Tablero del juego"></div>
         <div class="quest-hud">
           <p class="npc-name" id="npcName"></p>
           <p class="npc-dialogue" id="npcDialogue" aria-live="polite"></p>
@@ -57,34 +57,22 @@
           <div class="overlay-card">
             <div class="overlay-icon" aria-hidden="true">★</div>
             <p class="eyebrow" data-es="EL NIÑO QUE SONRÍE" data-en="THE SMILING CHILD">EL NIÑO QUE SONRÍE</p>
-            <h2 id="overlayTitle" data-es="La capillita del barrio" data-en="The little chapel of the neighborhood">La capillita del barrio</h2>
-            <p id="overlayMessage" data-es="Bogotá, 1935. El padre Juan del Rizzo puso la imagen del Divino Niño en una capillita de un barrio pobre, y la gente empezó a llegar con sus penas. Acompaña a tres vecinos hasta la imagen." data-en="Bogotá, 1935. Father Juan del Rizzo placed the image of the Divine Child in a small chapel in a poor neighborhood, and people began to arrive with their sorrows. Walk with three neighbors to the image.">Bogotá, 1935. El padre Juan del Rizzo puso la imagen del Divino Niño en una capillita de un barrio pobre, y la gente empezó a llegar con sus penas. Acompaña a tres vecinos hasta la imagen.</p>
+            <h2 id="overlayTitle" data-es="La canasta del barrio" data-en="The neighborhood basket">La canasta del barrio</h2>
+            <p id="overlayMessage" data-es="Bogotá, 1935. El padre Juan quiere llenar una canasta de alegría para compartir con los vecinos que llegan a la capillita del Divino Niño. Junta tres o más fichas iguales para sumar puntos: llega a 700 en 22 movimientos." data-en="Bogotá, 1935. Father Juan wants to fill a basket of joy to share with the neighbors who come to the little chapel of the Divine Child. Match three or more tiles to score: reach 700 in 22 moves.">Bogotá, 1935. El padre Juan quiere llenar una canasta de alegría para compartir con los vecinos que llegan a la capillita del Divino Niño. Junta tres o más fichas iguales para sumar puntos: llega a 700 en 22 movimientos.</p>
             <button class="play-button" id="playButton" type="button" data-es="Comenzar" data-en="Begin">Comenzar</button>
           </div>
         </div>
         <div class="toast" id="toast" role="status" aria-live="polite"></div>
-        <div class="touch-controls" aria-label="Controles táctiles">
-          <div class="touch-pad">
-            <button type="button" data-key="ArrowUp" aria-label="Avanzar">▲</button>
-            <div>
-              <button type="button" data-key="ArrowLeft" aria-label="Mover a la izquierda">◀</button>
-              <button type="button" data-key="ArrowDown" aria-label="Retroceder">▼</button>
-              <button type="button" data-key="ArrowRight" aria-label="Mover a la derecha">▶</button>
-            </div>
-          </div>
-          <button class="interact-touch" id="interactTouch" type="button" aria-label="Interactuar" hidden>AYUDAR</button>
-        </div>
       </div>
 
       <div class="game-footer">
-        <p data-es="Mueve: WASD o flechas <span>·</span> Ayudar: E o el botón <span>·</span> Reiniciar: R" data-en="Move: WASD or arrows <span>·</span> Help: E or the button <span>·</span> Restart: R">Mueve: WASD o flechas <span>·</span> Ayudar: E o el botón <span>·</span> Reiniciar: R</p>
+        <p data-es="Juega tocando dos fichas vecinas · Reiniciar: R" data-en="Play by tapping two neighboring tiles · Restart: R">Juega tocando dos fichas vecinas · Reiniciar: R</p>
         <p class="game-hint" data-es="Debajo de la imagen del Divino Niño se leen dos palabras: «Yo reinaré»." data-en="Beneath the image of the Divine Child are two words: &quot;I will reign&quot;.">Debajo de la imagen del Divino Niño se leen dos palabras: «Yo reinaré».</p>
       </div>
       <p class="visually-hidden" id="gameStatus" role="status" aria-live="polite"></p>
     </section>
   </main>
-  <script src="/juego/renderer3d.js"></script>
-  <script src="/juegos/quest-engine.js"></script>
+  <script src="/juegos/match3-engine.js"></script>
   <script src="/juegos/divino-nino/game.js"></script>
 </body>
 </html>

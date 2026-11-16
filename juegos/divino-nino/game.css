@@ -3,3 +3,88 @@
   --q-accent-border: rgba(232, 160, 180, .5);
   --q-accent-text: #ffd9e2;
 }
+
+/* Este juego es de combinar fichas: el marco se adapta al tablero
+   en lugar de guardar la proporción panorámica de los juegos 3D. */
+.game-frame {
+  aspect-ratio: auto;
+  min-height: 0;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(232, 160, 180, .16), transparent 55%),
+    linear-gradient(180deg, #412634, #2a1822);
+}
+
+@media (max-width: 640px) {
+  .game-frame { aspect-ratio: auto; min-height: 0; }
+}
+
+.game-stage {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  width: min(430px, 100%);
+  margin: 0 auto;
+  padding: 14px 14px 10px;
+}
+
+.tile {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 12px;
+  padding: 0;
+  font-size: clamp(20px, 6vw, 30px);
+  line-height: 1;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform .12s ease;
+}
+
+.tile-0 { background: #5a2330; color: #ff8f9a; }
+.tile-1 { background: #5a4a1f; color: #ffd968; }
+.tile-2 { background: #4a2c44; color: #f2a0c0; }
+.tile-3 { background: #59331a; color: #ffb066; }
+.tile-4 { background: #23402a; color: #8fe0a0; }
+.tile-5 { background: #22384f; color: #8fc3f0; }
+
+.tile.is-selected {
+  outline: 3px solid #ffd968;
+  outline-offset: -1px;
+  transform: scale(1.06);
+}
+
+.tile:focus-visible {
+  outline: 3px solid #fff3bb;
+  outline-offset: 2px;
+}
+
+.tile.is-clearing { animation: tile-pop .18s ease forwards; }
+.tile.is-new { animation: tile-in .28s ease; }
+.tile.is-shake { animation: tile-shake .25s ease; }
+
+@keyframes tile-pop {
+  to { transform: scale(1.25); opacity: 0; }
+}
+
+@keyframes tile-in {
+  from { opacity: 0; transform: translateY(-10px) scale(.7); }
+}
+
+@keyframes tile-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+/* El panel de estado va debajo del tablero, sin tapar las fichas. */
+.quest-hud {
+  position: static;
+  width: auto;
+  margin: 0 14px 14px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tile.is-clearing, .tile.is-new, .tile.is-shake { animation: none; }
+  .tile.is-clearing { opacity: 0; }
+}

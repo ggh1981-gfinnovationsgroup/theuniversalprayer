@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#4a2320" />
-  <meta name="description" content="Ayuda a sor Faustina a reunir los rayos de la Divina Misericordia en el jardín del convento y a completar la imagen de Jesús Misericordioso." />
+  <meta name="description" content="Corre con sor Faustina por el camino del convento, salta los charcos oscuros, reúne los cinco rayos de la Divina Misericordia y completa la imagen de Jesús Misericordioso." />
   <title>Jesús Misericordioso — The Universal Prayer</title>
   <link rel="canonical" href="https://www.theuniversalprayer.com/juegos/misericordia/" />
   <link rel="stylesheet" href="/juego/game.css" />
@@ -57,8 +57,8 @@
           <div class="overlay-card">
             <div class="overlay-icon" aria-hidden="true">☀</div>
             <p class="eyebrow" data-es="EL ENCARGO DE JESÚS" data-en="THE MISSION FROM JESUS">EL ENCARGO DE JESÚS</p>
-            <h2 id="overlayTitle" data-es="Los rayos de la misericordia" data-en="The rays of mercy">Los rayos de la misericordia</h2>
-            <p id="overlayMessage" data-es="Sor Faustina recibió un encargo de Jesús: pintar su imagen con dos rayos de luz. Recorre el jardín del convento, reúne los cinco rayos y llévalos hasta el cuadro." data-en="Sister Faustina received a mission from Jesus: to paint his image with two rays of light. Walk through the convent garden, gather the five rays, and bring them to the painting.">Sor Faustina recibió un encargo de Jesús: pintar su imagen con dos rayos de luz. Recorre el jardín del convento, reúne los cinco rayos y llévalos hasta el cuadro.</p>
+            <h2 id="overlayTitle" data-es="Corre tras la luz" data-en="Run toward the light">Corre tras la luz</h2>
+            <p id="overlayMessage" data-es="Sor Faustina recibió un encargo de Jesús: pintar su imagen con dos rayos de luz. Corre por el camino del convento, cambia de carril, salta los charcos oscuros y las piedras, y reúne los cinco rayos hasta llegar al cuadro." data-en="Sister Faustina received a mission from Jesus: to paint his image with two rays of light. Run along the convent path, switch lanes, jump over the dark puddles and the stones, and gather the five rays on your way to the painting.">Sor Faustina recibió un encargo de Jesús: pintar su imagen con dos rayos de luz. Corre por el camino del convento, cambia de carril, salta los charcos oscuros y las piedras, y reúne los cinco rayos hasta llegar al cuadro.</p>
             <button class="play-button" id="playButton" type="button" data-es="Comenzar" data-en="Begin">Comenzar</button>
           </div>
         </div>
@@ -72,19 +72,19 @@
               <button type="button" data-key="ArrowRight" aria-label="Mover a la derecha">▶</button>
             </div>
           </div>
-          <button class="interact-touch" id="interactTouch" type="button" aria-label="Interactuar" hidden>AYUDAR</button>
+          <button class="interact-touch" id="interactTouch" type="button" aria-label="Saltar">SALTAR</button>
         </div>
       </div>
 
       <div class="game-footer">
-        <p data-es="Mueve: WASD o flechas <span>·</span> Reiniciar: R" data-en="Move: WASD or arrows <span>·</span> Restart: R">Mueve: WASD o flechas <span>·</span> Reiniciar: R</p>
+        <p data-es="Carriles: flechas o deslizar <span>·</span> Saltar: flecha arriba o el botón <span>·</span> Reiniciar: R" data-en="Lanes: arrows or swipe <span>·</span> Jump: up arrow or the button <span>·</span> Restart: R">Carriles: flechas o deslizar <span>·</span> Saltar: flecha arriba o el botón <span>·</span> Reiniciar: R</p>
         <p class="game-hint" data-es="El rayo pálido recuerda el agua que limpia; el rayo rojo, la sangre que da vida." data-en="The pale ray recalls the water that cleanses; the red ray, the blood that gives life.">El rayo pálido recuerda el agua que limpia; el rayo rojo, la sangre que da vida.</p>
       </div>
       <p class="visually-hidden" id="gameStatus" role="status" aria-live="polite"></p>
     </section>
   </main>
   <script src="/juego/renderer3d.js"></script>
-  <script src="/juegos/quest-engine.js"></script>
+  <script src="/juegos/runner-engine.js"></script>
   <script src="/juegos/misericordia/game.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#1d3a24" />
-  <meta name="description" content="Acompaña a san Judas Tadeo, el santo de las causas imposibles, a devolver la esperanza a tres personas de su pueblo y llevarlas a la iglesia." />
+  <meta name="description" content="Defiende la esperanza con san Judas Tadeo, el santo de las causas imposibles: pulsa su luz, convierte las sombras de la desesperanza y lleva la esperanza de vuelta a la iglesia del pueblo." />
   <title>San Judas Tadeo — The Universal Prayer</title>
   <link rel="canonical" href="https://www.theuniversalprayer.com/juegos/san-judas/" />
   <link rel="stylesheet" href="/juego/game.css" />
@@ -33,7 +33,7 @@
           <p class="eyebrow" data-es="APÓSTOL · CAUSAS IMPOSIBLES" data-en="APOSTLE · IMPOSSIBLE CAUSES">APÓSTOL · CAUSAS IMPOSIBLES</p>
           <h1 id="gameTitle" data-es="San Judas Tadeo" data-en="Saint Jude Thaddeus">San Judas Tadeo</h1>
         </div>
-        <div class="quest-counter" aria-live="polite"><span aria-hidden="true">♥</span> <span id="progressCount">0</span><span class="count-divider">/</span>3</div>
+        <div class="quest-counter" aria-live="polite"><span aria-hidden="true">♥</span> <span id="progressCount">0</span><span class="count-divider">/</span>12</div>
       </div>
 
       <div class="game-frame">
@@ -57,8 +57,8 @@
           <div class="overlay-card">
             <div class="overlay-icon" aria-hidden="true">✦</div>
             <p class="eyebrow" data-es="EL SANTO DE LO IMPOSIBLE" data-en="THE SAINT OF THE IMPOSSIBLE">EL SANTO DE LO IMPOSIBLE</p>
-            <h2 id="overlayTitle" data-es="El santo de lo imposible" data-en="The saint of the impossible">El santo de lo imposible</h2>
-            <p id="overlayMessage" data-es="San Judas Tadeo, el apóstol que lleva la imagen de Jesús en el pecho, ayuda a quienes ya no ven salida. Recorre el pueblo, ayuda a tres personas y llévalas a la iglesia." data-en="Saint Jude Thaddeus, the apostle who carries the image of Jesus on his chest, helps those who see no way out. Walk through the village, help three people, and bring them to the church.">San Judas Tadeo, el apóstol que lleva la imagen de Jesús en el pecho, ayuda a quienes ya no ven salida. Recorre el pueblo, ayuda a tres personas y llévalas a la iglesia.</p>
+            <h2 id="overlayTitle" data-es="Defiende la esperanza" data-en="Defend hope">Defiende la esperanza</h2>
+            <p id="overlayMessage" data-es="Sombras de desesperanza avanzan hacia la iglesia del pueblo. Camina con san Judas y pulsa su luz cuando las sombras estén cerca: cada sombra tocada por la luz recupera la esperanza y entra a la iglesia." data-en="Shadows of despair advance toward the village church. Walk with Saint Jude and release his light when the shadows are close: every shadow touched by the light finds hope again and enters the church.">Sombras de desesperanza avanzan hacia la iglesia del pueblo. Camina con san Judas y pulsa su luz cuando las sombras estén cerca: cada sombra tocada por la luz recupera la esperanza y entra a la iglesia.</p>
             <button class="play-button" id="playButton" type="button" data-es="Comenzar" data-en="Begin">Comenzar</button>
           </div>
         </div>
@@ -72,19 +72,19 @@
               <button type="button" data-key="ArrowRight" aria-label="Mover a la derecha">▶</button>
             </div>
           </div>
-          <button class="interact-touch" id="interactTouch" type="button" aria-label="Interactuar" hidden>AYUDAR</button>
+          <button class="interact-touch" id="interactTouch" type="button" aria-label="Pulso de luz">LUZ</button>
         </div>
       </div>
 
       <div class="game-footer">
-        <p data-es="Mueve: WASD o flechas <span>·</span> Ayudar: E o el botón <span>·</span> Reiniciar: R" data-en="Move: WASD or arrows <span>·</span> Help: E or the button <span>·</span> Restart: R">Mueve: WASD o flechas <span>·</span> Ayudar: E o el botón <span>·</span> Reiniciar: R</p>
+        <p data-es="Mueve: WASD o flechas <span>·</span> Luz: E, Espacio o el botón <span>·</span> Reiniciar: R" data-en="Move: WASD or arrows <span>·</span> Light: E, Space or the button <span>·</span> Restart: R">Mueve: WASD o flechas <span>·</span> Luz: E, Espacio o el botón <span>·</span> Reiniciar: R</p>
         <p class="game-hint" data-es="San Judas lleva la imagen de Jesús en el pecho y una llama sobre la cabeza, señal del Espíritu Santo." data-en="Saint Jude carries the image of Jesus on his chest and a flame above his head, a sign of the Holy Spirit.">San Judas lleva la imagen de Jesús en el pecho y una llama sobre la cabeza, señal del Espíritu Santo.</p>
       </div>
       <p class="visually-hidden" id="gameStatus" role="status" aria-live="polite"></p>
     </section>
   </main>
   <script src="/juego/renderer3d.js"></script>
-  <script src="/juegos/quest-engine.js"></script>
+  <script src="/juegos/arena-engine.js"></script>
   <script src="/juegos/san-judas/game.js"></script>
 </body>
 </html>

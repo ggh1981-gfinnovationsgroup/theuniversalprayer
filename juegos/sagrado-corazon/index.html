@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#401d16" />
-  <meta name="description" content="Acompaña a santa Margarita María a reunir las cinco llamas del Sagrado Corazón en el jardín de Paray-le-Monial." />
+  <meta name="description" content="Suelta cada pieza en el momento justo y levanta con santa Margarita María la capilla del Sagrado Corazón en Paray-le-Monial." />
   <title>Sagrado Corazón de Jesús — The Universal Prayer</title>
   <link rel="canonical" href="https://www.theuniversalprayer.com/juegos/sagrado-corazon/" />
   <link rel="stylesheet" href="/juego/game.css" />
@@ -33,7 +33,7 @@
           <p class="eyebrow" data-es="PARAY-LE-MONIAL · SANTA MARGARITA MARÍA" data-en="PARAY-LE-MONIAL · SAINT MARGARET MARY">PARAY-LE-MONIAL · SANTA MARGARITA MARÍA</p>
           <h1 id="gameTitle" data-es="Sagrado Corazón de Jesús" data-en="Sacred Heart of Jesus">Sagrado Corazón de Jesús</h1>
         </div>
-        <div class="quest-counter" aria-live="polite"><span aria-hidden="true">♥</span> <span id="progressCount">0</span><span class="count-divider">/</span>5</div>
+        <div class="quest-counter" aria-live="polite"><span aria-hidden="true">♥</span> <span id="progressCount">0</span><span class="count-divider">/</span>10</div>
       </div>
 
       <div class="game-frame">
@@ -57,8 +57,8 @@
           <div class="overlay-card">
             <div class="overlay-icon" aria-hidden="true">♥</div>
             <p class="eyebrow" data-es="UN CORAZÓN EN LLAMAS" data-en="A HEART ON FIRE">UN CORAZÓN EN LLAMAS</p>
-            <h2 id="overlayTitle" data-es="Las llamas del Corazón" data-en="The flames of the Heart">Las llamas del Corazón</h2>
-            <p id="overlayMessage" data-es="En Paray-le-Monial, Jesús mostró su Corazón en llamas de amor a santa Margarita María. Recorre el jardín del convento, reúne las cinco llamas y llévalas hasta la capilla." data-en="In Paray-le-Monial, Jesus showed his Heart burning with love to Saint Margaret Mary. Walk through the convent garden, gather the five flames, and bring them to the chapel.">En Paray-le-Monial, Jesús mostró su Corazón en llamas de amor a santa Margarita María. Recorre el jardín del convento, reúne las cinco llamas y llévalas hasta la capilla.</p>
+            <h2 id="overlayTitle" data-es="Levanta la capilla del Corazón" data-en="Raise the chapel of the Heart">Levanta la capilla del Corazón</h2>
+            <p id="overlayMessage" data-es="Santa Margarita María quiere levantar una capilla para el Sagrado Corazón. Suelta cada pieza en el momento justo para que la torre suba firme hasta encender el Corazón." data-en="Saint Margaret Mary wants to raise a chapel for the Sacred Heart. Drop each piece at the right moment so the tower rises steady until the Heart is lit on top.">Santa Margarita María quiere levantar una capilla para el Sagrado Corazón. Suelta cada pieza en el momento justo para que la torre suba firme hasta encender el Corazón.</p>
             <button class="play-button" id="playButton" type="button" data-es="Comenzar" data-en="Begin">Comenzar</button>
           </div>
         </div>
@@ -72,19 +72,19 @@
               <button type="button" data-key="ArrowRight" aria-label="Mover a la derecha">▶</button>
             </div>
           </div>
-          <button class="interact-touch" id="interactTouch" type="button" aria-label="Interactuar" hidden>AYUDAR</button>
+          <button class="interact-touch" id="interactTouch" type="button" aria-label="Soltar la pieza">SOLTAR</button>
         </div>
       </div>
 
       <div class="game-footer">
-        <p data-es="Mueve: WASD o flechas <span>·</span> Reiniciar: R" data-en="Move: WASD or arrows <span>·</span> Restart: R">Mueve: WASD o flechas <span>·</span> Reiniciar: R</p>
+        <p data-es="Soltar pieza: tocar la pantalla o Espacio <span>·</span> Reiniciar: R" data-en="Drop piece: tap the screen or Space <span>·</span> Restart: R">Soltar pieza: tocar la pantalla o Espacio <span>·</span> Reiniciar: R</p>
         <p class="game-hint" data-es="La imagen del Sagrado Corazón lleva una cruz y una llama: su amor sufrió y nunca dejó de amar." data-en="The image of the Sacred Heart carries a cross and a flame: his love suffered and never stopped loving.">La imagen del Sagrado Corazón lleva una cruz y una llama: su amor sufrió y nunca dejó de amar.</p>
       </div>
       <p class="visually-hidden" id="gameStatus" role="status" aria-live="polite"></p>
     </section>
   </main>
   <script src="/juego/renderer3d.js"></script>
-  <script src="/juegos/quest-engine.js"></script>
+  <script src="/juegos/stack-engine.js"></script>
   <script src="/juegos/sagrado-corazon/game.js"></script>
 </body>
 </html>
