@@ -3,7 +3,7 @@
    Offline support for precached and previously cached resources
    ===================================================== */
 
-const CACHE = 'tup-v335';
+const CACHE = 'tup-v336';
 const CRITICAL_CORE_URLS = new Set([
   '/assets/js/main.js',
   '/assets/js/menu.js',
@@ -669,6 +669,7 @@ const PRECACHE_URLS = [
   '/data/santotomasdeaquino.json',
   '/data/sancarlosacutis.json',
   '/data/cristorey.json',
+  '/data/sanmartindelporres.json',
   '/data/sanbenito.json',
   '/data/nuestrasenoracarmen.json',
   '/data/divinonino.json',
