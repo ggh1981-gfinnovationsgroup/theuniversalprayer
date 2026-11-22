@@ -2855,6 +2855,34 @@
       },
       "readMin": 14,
       "bedtime": true
+    },
+    {
+      "id": "cristorey",
+      "saintId": "cristorey",
+      "icon": "/assets/images/cristorey.svg",
+      "accent": "#5a2a82",
+      "title": {
+        "es": "Jesús, el Rey que sirve",
+        "en": "Jesus, the King Who Serves"
+      },
+      "hook": {
+        "es": "Un Rey que no manda con gritos: reina lavando pies y perdonando desde la cruz.",
+        "en": "A King who does not rule with shouts: he reigns by washing feet and forgiving from the cross."
+      },
+      "story": {
+        "es": "Había una vez un Rey muy distinto a todos los reyes del mundo. No vivía en un palacio de oro ni tenía ejércitos ni carros de guerra. Su nombre era Jesús, y su corona no brillaba con piedras preciosas: estaba hecha de espinas, porque Él quiso compartir el dolor de su pueblo.\n\nUn día, antes de la cena, Jesús hizo algo que dejó a sus amigos sin palabras. Se quitó el manto, se ató una toalla a la cintura, tomó agua y una palangana, y se arrodilló delante de cada uno para lavarles los pies. Pedro, sorprendido, le dijo que no, que eso no lo debía hacer un maestro. Pero Jesús le sonrió y le explicó: «El que quiera ser grande entre ustedes, que se haga servidor de todos».\n\nAsí era su reino: un reino donde el Rey sirve, donde el primero es el último, donde nadie es demasiado pequeño para ser amado.\n\nCuando lo llevaron ante Pilato, el gobernador romano le preguntó: «¿Eres tú el rey de los judíos?». Jesús le contestó con calma: «Mi reino no es de este mundo». No era un reino de soldados ni de castillos. Era un reino de verdad, de justicia, de amor y de paz, un reino que empieza dentro del corazón.\n\nEn la cruz, sobre su cabeza pusieron un letrero que decía: «Jesús de Nazaret, Rey de los judíos». Muchos pensaron que era una burla. Pero desde la cruz, Jesús perdonó a quienes lo habían clavado y prometió el paraíso a un ladrón arrepentido. Su trono era la cruz y su corona, el amor.\n\nMuchos años después, el papa Pío XI quiso que toda la Iglesia recordara cada año que Jesús es Rey del universo. La fiesta se celebra el último domingo del año, para cerrar el año mirando hacia Él, como quien termina un libro y recuerda cuál fue el personaje más importante de la historia.\n\nEn México, en tiempos difíciles, muchos cristianos gritaron con valentía: «¡Viva Cristo Rey!». Entre ellos estaba el padre Miguel Pro, un sacerdote alegre que repartía dulces a los niños y ayudaba a los pobres, y José Sánchez del Río, un niño de catorce años que no quiso negar su fe. Los dos murieron gritando ese grito, no con odio, sino con amor, porque sabían que Jesús era su Rey y su amigo.\n\nHoy, cada año, la Iglesia celebra a Cristo Rey con cantos y con alegría. Y tú también puedes ser parte de su reino. No necesitas una corona ni un castillo. Solo necesitas dejar que Jesús reine en tu corazón: cuando ayudas en casa sin que te lo pidan, cuando perdonas a un amigo, cuando compartes lo que tienes, cuando dices la verdad aunque cueste.\n\nEsta noche, antes de dormir, puedes decirle bajito:\n\n«Jesús, Rey mío, reina en mi corazón. Enséñame a servir como Tú serviste, a perdonar como Tú perdonaste y a amar como Tú amaste.»\n\nÉl escucha. Y su reino, que es de paz y de amor, crece cada vez que un niño decide hacer el bien.",
+        "en": "Once upon a time there was a King very different from all the kings of the world. He did not live in a palace of gold, and he had no armies or war chariots. His name was Jesus, and his crown did not shine with precious stones: it was made of thorns, because he wanted to share the pain of his people.\n\nOne day, before supper, Jesus did something that left his friends speechless. He took off his outer garment, tied a towel around his waist, took water and a basin, and knelt before each of them to wash their feet. Peter, surprised, told him no, that a teacher should not do that. But Jesus smiled and explained: \"Whoever wants to be great among you must become the servant of all.\"\n\nThat was his kingdom: a kingdom where the King serves, where the first is the last, where no one is too small to be loved.\n\nWhen they brought him before Pilate, the Roman governor asked him: \"Are you the King of the Jews?\" Jesus answered calmly: \"My kingdom does not belong to this world.\" It was not a kingdom of soldiers or castles. It was a kingdom of truth, justice, love, and peace, a kingdom that begins inside the heart.\n\nOn the cross, above his head they placed a sign that read: \"Jesus of Nazareth, King of the Jews.\" Many thought it was mockery. But from the cross, Jesus forgave those who had nailed him there and promised paradise to a repentant thief. His throne was the cross and his crown was love.\n\nMany years later, Pope Pius XI wanted the whole Church to remember each year that Jesus is King of the universe. The feast is celebrated on the last Sunday of the year, to close the year looking toward him, like someone finishing a book and remembering who was the most important person in the story.\n\nIn Mexico, in difficult times, many Christians cried out with courage: \"Long live Christ the King!\" Among them was Father Miguel Pro, a joyful priest who gave sweets to children and helped the poor, and José Sánchez del Río, a fourteen year old boy who refused to deny his faith. Both died shouting that cry, not with hatred, but with love, because they knew Jesus was their King and their friend.\n\nToday, every year, the Church celebrates Christ the King with songs and joy. And you too can be part of his kingdom. You do not need a crown or a castle. You only need to let Jesus reign in your heart: when you help at home without being asked, when you forgive a friend, when you share what you have, when you tell the truth even when it is hard.\n\nTonight, before you sleep, you can whisper to him:\n\n\"Jesus, my King, reign in my heart. Teach me to serve as You served, to forgive as You forgave, and to love as You loved.\"\n\nHe listens. And his kingdom, which is of peace and love, grows every time a child decides to do good."
+      },
+      "moral": {
+        "es": "El reino de Jesús crece cuando servimos, perdonamos y amamos como Él.",
+        "en": "The kingdom of Jesus grows when we serve, forgive, and love as he did."
+      },
+      "activity": {
+        "es": "Haz hoy un gesto de servicio en casa sin que nadie te lo pida.",
+        "en": "Do one act of service at home today without being asked."
+      },
+      "readMin": 14,
+      "bedtime": true
     }
   ]
 }
