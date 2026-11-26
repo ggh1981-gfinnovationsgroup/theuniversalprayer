@@ -34,7 +34,7 @@ test('muestra el título y todas las devociones', async ({ page }) => {
 
 test('el índice rápido lleva a las devociones y al acompañamiento', async ({ page }) => {
   const hrefs = await page.locator('.maria-index a').evaluateAll(as => as.map(a => a.getAttribute('href')));
-  expect(hrefs.sort()).toEqual([...DEVOTIONS.map(id => `#${id}`), '#acompanamiento'].sort());
+  expect(hrefs.sort()).toEqual([...DEVOTIONS.map(id => `#${id}`), '#acompanamiento', '#poderosa'].sort());
 });
 
 test('ofrece acompañamiento breve y enlaza a las guías completas', async ({ page }) => {
