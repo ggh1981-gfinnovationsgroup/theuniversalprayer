@@ -3,7 +3,7 @@
    Offline support for precached and previously cached resources
    ===================================================== */
 
-const CACHE = 'tup-v340';
+const CACHE = 'tup-v341';
 const CRITICAL_CORE_URLS = new Set([
   '/assets/js/main.js',
   '/assets/js/menu.js',
@@ -432,6 +432,7 @@ const PRECACHE_URLS = [
   '/404.html',
   '/manifest.json',
   '/assets/css/styles.css',
+  '/assets/css/games-promo.css',
   '/assets/js/main.js',
   '/assets/js/menu.js',
   '/assets/images/icon.svg',
