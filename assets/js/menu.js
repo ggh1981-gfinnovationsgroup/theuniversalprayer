@@ -61,6 +61,7 @@
     { id: 'sabiduria', href: '/sabiduria/', labels: { es: 'Sabiduría para cada situación', en: 'Wisdom for every situation' }, icon: '🧭' },
     { id: 'talentos', href: '/talentos/', labels: { es: 'Talentos que dan fruto', en: 'Talents That Bear Fruit' }, icon: '🎁' },
     { id: 'quien-soy', href: '/quien-soy/', labels: { es: 'Quién soy', en: 'Who I Am' }, icon: '🪞' },
+    { id: 'ezequiel16', href: '/ezequiel-16/', labels: { es: 'Ezequiel 16: ¡Vive!', en: 'Ezekiel 16: Live!' }, icon: '🧣' },
     { id: 'medallabenito', href: '/medalla-san-benito/', labels: { es: 'Medalla de San Benito', en: 'Medal of Saint Benedict' }, icon: '🪙' },
     { id: 'medallamilagrosa', href: '/medalla-milagrosa/', labels: { es: 'Medalla Milagrosa', en: 'Miraculous Medal' }, icon: '🌸' },
     { id: 'misericordia', href: '/misericordia/', labels: { es: 'Misericordia', en: 'Mercy' }, icon: '🫂' },
