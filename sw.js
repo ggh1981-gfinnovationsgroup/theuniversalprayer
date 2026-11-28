@@ -3,13 +3,14 @@
    Offline support for precached and previously cached resources
    ===================================================== */
 
-const CACHE = 'tup-v339';
+const CACHE = 'tup-v340';
 const CRITICAL_CORE_URLS = new Set([
   '/assets/js/main.js',
   '/assets/js/menu.js',
   '/assets/js/adoracion-share.js',
   '/assets/js/native-share.js',
   '/assets/js/prayer-share.js',
+  '/assets/js/share.js',
   '/assets/js/private-access.js',
   '/assets/js/private-search-data.js',
   '/assets/js/private-search.js',
@@ -66,7 +67,6 @@ const PRECACHE_URLS = [
   '/juegos/espiritu-santo/content-world.js',
   '/juegos/espiritu-santo/content-gifts.js',
   '/juegos/espiritu-santo/content-charisms.js',
-  '/assets/css/games-promo.css',
   '/adoracion/',
   '/adoracion/index.html',
   '/adoracion/33dias/',
@@ -306,6 +306,7 @@ const PRECACHE_URLS = [
   '/assets/js/adoracion-share.js',
   '/assets/js/native-share.js',
   '/assets/js/prayer-share.js',
+  '/assets/js/share.js',
   '/assets/js/private-access.js',
   '/assets/js/private-search-data.js',
   '/assets/js/private-search.js',

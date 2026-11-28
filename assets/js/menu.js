@@ -6,6 +6,29 @@
 (function () {
   'use strict';
 
+  // Load the shared page share button (share.js) from this script's own
+  // directory, so every page that loads menu.js also gets the share control
+  // without editing each page. Runs during initial execution so that
+  // document.currentScript is still available.
+  (function loadShareScript() {
+    var src = '';
+    var current = document.currentScript;
+    if (current && current.src) src = current.src;
+    if (!src) {
+      var tags = document.getElementsByTagName('script');
+      for (var i = 0; i < tags.length; i++) {
+        if (/\/menu\.js($|\?)/.test(tags[i].src)) { src = tags[i].src; break; }
+      }
+    }
+    if (!src) return;
+    var base = src.split('?')[0];
+    if (base.slice(-'menu.js'.length) !== 'menu.js') return;
+    var share = document.createElement('script');
+    share.src = base.slice(0, base.length - 'menu.js'.length) + 'share.js';
+    share.async = true;
+    (document.head || document.documentElement).appendChild(share);
+  })();
+
   const CONTACT_EMAIL = 'gf.innovations.group.llc@gmail.com';
   const CONTACT_MAILTO = 'mailto:' + CONTACT_EMAIL + '?subject=The%20Universal%20Prayer';
 

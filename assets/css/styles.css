@@ -3596,6 +3596,67 @@ body {
 .tup-prayer-share-status:empty { margin: 0; }
 [data-share-prayer] { scroll-margin-top: 5.5rem; }
 
+.tup-page-share {
+  margin: 1.75rem auto 0;
+  padding: 0 1.25rem 1.75rem;
+  max-width: 42rem;
+  text-align: center;
+}
+.tup-page-share-button {
+  min-height: 44px;
+  padding: .7rem 1.25rem;
+  border: 1px solid var(--gold-dim);
+  border-radius: 8px;
+  background: rgba(201,168,76,.08);
+  color: var(--gold-light);
+  font: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.tup-page-share-button:hover { background: rgba(201,168,76,.18); }
+.tup-page-share-button:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 3px;
+}
+.tup-page-share-panel {
+  margin-top: .9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  justify-content: center;
+}
+.tup-page-share-panel[hidden] { display: none; }
+.tup-page-share-link,
+.tup-page-share-copy {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: .55rem .95rem;
+  border: 1px solid var(--gold-dim);
+  border-radius: 8px;
+  background: rgba(201,168,76,.08);
+  color: var(--gold-light);
+  font: inherit;
+  font-size: .92rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.tup-page-share-link:hover,
+.tup-page-share-copy:hover { background: rgba(201,168,76,.18); }
+.tup-page-share-link:focus-visible,
+.tup-page-share-copy:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 3px;
+}
+.tup-page-share-status {
+  margin: .5rem 0 0;
+  color: rgba(255,255,255,.82);
+  font-size: .85rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.tup-page-share-status:empty { margin: 0; }
+
 /* Act of the day */
 .a33-act-box {
   background: linear-gradient(135deg,#0f1f45,#0c1530);
